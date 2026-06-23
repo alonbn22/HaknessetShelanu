@@ -1,0 +1,50 @@
+# Keeps the site's data fresh by pulling the latest Knesset open data on a
+# schedule. Vote sync is incremental (cursor stored in sync_state inside the
+# committed DB), so each run only fetches what changed since the last sync.
+#
+# For this to stay incremental, data/knesset.db must be committed to the repo.
+# If the DB is missing on checkout the first run performs a full backfill
+# (slower, but still works). After syncing, the workflow commits the updated DB
+# so a git-based host (Vercel, Netlify, etc.) redeploys with fresh data.
+name: Sync Knesset data
+
+on:
+  schedule:
+    # Every 6 hours (UTC). Adjust as needed.
+    - cron: "0 */6 * * *"
+  workflow_dispatch: {} # allow manual runs from the Actions tab
+
+# Prevent overlapping runs from racing on the DB / the commit.
+concurrency:
+  group: sync-data
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # needed to commit the refreshed DB
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Run incremental sync
+        run: npm run sync
+
+      - name: Commit refreshed database
+        run: |
+          git config user.name "knesset-data-bot"
+          git config user.email "actions@github.com"
+          if [ -n "$(git status --porcelain data/knesset.db)" ]; then
+            git add data/knesset.db
+            git commit -m "chore(data): scheduled sync $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          else
+            echo "No data changes to commit."
+          fi

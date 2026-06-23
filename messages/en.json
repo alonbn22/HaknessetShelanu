@@ -20,7 +20,8 @@
     "ministers": "Ministers",
     "quiz": "Election compass",
     "budget": "Budget",
-    "lobbyists": "Lobbyists"
+    "lobbyists": "Lobbyists",
+    "tickets": "Tickets"
   },
   "common": {
     "knessetNum": "{num}th Knesset",
@@ -36,7 +37,9 @@
     "photoBy": "Photo: {attribution}",
     "previous": "Previous",
     "next": "Next",
-    "page": "Page {page} of {total}"
+    "page": "Page {page} of {total}",
+    "source": "Source",
+    "knesset": "Knesset"
   },
   "home": {
     "title": "My Knesset",
@@ -114,7 +117,8 @@
   "parties": {
     "title": "Knesset Factions",
     "members": "Members",
-    "seats": "Seats"
+    "seats": "Seats",
+    "coalitionNote": "Coalition / opposition labeling as of {asOf}. Source:"
   },
   "party": {
     "membersTitle": "Faction members",
@@ -128,7 +132,8 @@
     "spectrum": "Political position",
     "editorialNote": "Position summaries are written by this site for explanatory purposes and may be incomplete. They do not represent the faction's official stance.",
     "ballot": "Ballot letters",
-    "ballotEra": "In the 2022 (25th Knesset) election. The 2026 ballot letters are set closer to the vote."
+    "ballotEra": "In the 2022 (25th Knesset) election. The 2026 ballot letters are set closer to the vote.",
+    "basedOn": "Spectrum and positions are based on:"
   },
   "spectrum": {
     "left": "Left",
@@ -228,7 +233,7 @@
     "lastSync": "Data last updated: {date}",
     "accessibility": "Accessibility statement",
     "sources": "Data sources",
-    "feedback": "Report / suggest"
+    "tickets": "Tickets"
   },
   "a11y": {
     "skipToContent": "Skip to main content",
@@ -317,7 +322,8 @@
     "cat_economy": "Economy",
     "cat_government": "Government & system",
     "cat_electoral": "Elections",
-    "cat_israel": "Israeli terms"
+    "cat_israel": "Israeli terms",
+    "source": "Source"
   },
   "electionsHistory": {
     "title": "Knesset Elections History",
@@ -396,7 +402,8 @@
     },
     "why": "Why this match?",
     "youSaid": "You",
-    "partyStance": "Party"
+    "partyStance": "Party",
+    "sourcesNote": "Party stances are the site's reading of platforms, public statements, and Knesset voting records. Each party's page lists its sources."
   },
   "budget": {
     "title": "State Budget",
@@ -475,10 +482,23 @@
     "reportAria": "Report incorrect information about {context}",
     "suggestAria": "Suggest new information about {context}",
     "theSite": "the site",
-    "ticketHint": "Opens a review ticket — nothing changes on the site automatically.",
-    "title": "Corrections & contributions",
-    "intro": "Spotted a mistake, or have well-sourced information to add? You can report incorrect information or suggest new information — about a specific Knesset member or the site in general.",
-    "note": "Every submission opens a ticket that a maintainer reviews before anything is published. Please include a reputable source so we can verify it; information about people is only published when backed by a source.",
-    "needGithub": "Submitting requires a free GitHub account."
+    "ticketHint": "Opens a review ticket — nothing changes on the site automatically."
+  },
+  "tickets": {
+    "title": "Tickets & corrections",
+    "intro": "Spotted a mistake, or have well-sourced information to add? Open a ticket — report incorrect information or suggest new information — and track open tickets here.",
+    "openNew": "Open a new ticket",
+    "note": "Every submission opens a ticket reviewed by the team before anything is published. Please include a reputable source; information about people is only published when backed by a source.",
+    "needGithub": "Submitting requires a free GitHub account; the ticket opens in the project's public repository.",
+    "openTickets": "Open tickets",
+    "empty": "No open tickets right now. Be the first to open one.",
+    "unavailable": "Couldn't load tickets right now.",
+    "viewOnGithub": "View on GitHub",
+    "viewAllOnGithub": "View all tickets on GitHub",
+    "kind": {
+      "report": "Report",
+      "suggestion": "Suggestion",
+      "other": "Ticket"
+    }
   }
 }

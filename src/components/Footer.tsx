@@ -29,8 +29,8 @@ export async function Footer() {
           <Link href="/accessibility" className="text-accent hover:underline">
             {t("accessibility")}
           </Link>
-          <Link href="/feedback" className="text-accent hover:underline">
-            {t("feedback")}
+          <Link href="/tickets" className="text-accent hover:underline">
+            {t("tickets")}
           </Link>
         </p>
       </div>

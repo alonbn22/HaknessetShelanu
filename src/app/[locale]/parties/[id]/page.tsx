@@ -154,6 +154,34 @@ export default async function PartyPage({
             </div>
           )}
 
+          {/* The spectrum, tags and positions are editorial; cite what they draw on. */}
+          {(profile.wikipediaEn || profile.website) && (
+            <p className="text-xs text-muted">
+              {t("party.basedOn")}{" "}
+              {profile.wikipediaEn && (
+                <a
+                  className="underline hover:text-accent"
+                  href={profile.wikipediaEn}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t("member.wikipedia")}
+                </a>
+              )}
+              {profile.wikipediaEn && profile.website && " · "}
+              {profile.website && (
+                <a
+                  className="underline hover:text-accent"
+                  href={profile.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t("party.officialSite")}
+                </a>
+              )}
+            </p>
+          )}
+
           <div className="flex flex-wrap gap-4 text-sm pt-1">
             {profile.website && (
               <a

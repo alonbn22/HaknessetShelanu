@@ -123,6 +123,7 @@ terms:
     def:
       he: "החוק שמאשר את תקציב המדינה. אם לא מאושר במועד, הכנסת מתפזרת ונקבעות בחירות. עובר שלוש קריאות במליאה."
       en: "The law that approves the state budget. If it isn't passed on time, the Knesset is dissolved and elections are called. It passes three plenum readings."
+    sourceUrl: "https://en.wikipedia.org/wiki/Basic_Law:_The_State_Economy"
   - category: economy
     term: { he: "גירעון תקציבי", en: "Budget deficit" }
     def:
@@ -175,6 +176,7 @@ terms:
     def:
       he: "איחוד של סיעות שיחד מהוות רוב (61+ מתוך 120) ומקימות את הממשלה."
       en: "An alliance of factions that together hold a majority (61+ of 120) and form the government."
+    sourceUrl: "https://en.wikipedia.org/wiki/Basic_Law:_The_Government_(2001)"
   - category: government
     term: { he: "אופוזיציה", en: "Opposition" }
     def:
@@ -185,11 +187,13 @@ terms:
     def:
       he: "הצבעה שמטרתה להפיל את הממשלה. בישראל נדרש \"אי־אמון קונסטרוקטיבי\" — רוב של 61 שתומך בממשלה חלופית."
       en: "A vote aimed at toppling the government. In Israel a \"constructive\" no-confidence is required — 61 MKs backing an alternative government."
+    sourceUrl: "https://en.wikipedia.org/wiki/Constructive_vote_of_no_confidence"
   - category: government
     term: { he: "החוק הנורווגי", en: "The Norwegian Law" }
     def:
       he: "חוק שמאפשר לשר או לסגן שר להתפטר ממושבו בכנסת ולהתפנות לעבודת הממשלה, והמועמד הבא ברשימת מפלגתו נכנס לכנסת במקומו. אם השר מסיים את כהונתו הוא יכול לחזור למושבו. לכן יכולים לכהן בכנסת יותר מ-120 אנשים לאורך הקדנציה, אף שבכל רגע יש 120 חברי כנסת מכהנים."
       en: "A law that lets a minister or deputy minister resign their Knesset seat to focus on government work, with the next candidate on their party list entering the Knesset in their place. If the minister later leaves office they can reclaim their seat. This is why more than 120 people can serve over a term, even though there are always exactly 120 sitting members at any moment."
+    sourceUrl: "https://en.wikipedia.org/wiki/Norwegian_Law_(Israel)"
   - category: government
     term: { he: "לובי / שדלן", en: "Lobby / lobbyist" }
     def:
@@ -222,6 +226,7 @@ terms:
     def:
       he: "אחוז הקולות המינימלי שרשימה חייבת לעבור כדי להיכנס לכנסת. בישראל הוא 3.25%."
       en: "The minimum share of the vote a list must pass to enter the Knesset. In Israel it is 3.25%."
+    sourceUrl: "https://en.wikipedia.org/wiki/Elections_in_Israel"
   - category: electoral
     term: { he: "אות הפתק", en: "Ballot letters" }
     def:

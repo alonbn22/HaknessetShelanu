@@ -18,6 +18,9 @@ const httpUrl = z
 const coalitionSchema = z.object({
   knesset: z.number(),
   coalitionFactionIds: z.array(z.number()),
+  asOf: z.string().optional(), // when this composition was last verified
+  sourceUrl: httpUrl.optional(),
+  sourceLabel: z.string().optional(),
 });
 
 let _coalition: z.infer<typeof coalitionSchema> | null = null;
@@ -230,6 +233,7 @@ const glossaryTermSchema = z.object({
   category: z.enum(GLOSSARY_CATEGORIES),
   term: localizedText,
   def: localizedText,
+  sourceUrl: httpUrl.optional(), // for entries stating specific legal figures/rules
 });
 export type GlossaryTerm = z.infer<typeof glossaryTermSchema>;
 

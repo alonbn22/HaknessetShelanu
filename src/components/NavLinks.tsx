@@ -18,6 +18,7 @@ const navItems = [
   { href: "/elections", key: "electionsHistory" },
   { href: "/quiz", key: "quiz" },
   { href: "/glossary", key: "glossary" },
+  { href: "/tickets", key: "tickets" },
 ] as const;
 
 export function NavLinks() {

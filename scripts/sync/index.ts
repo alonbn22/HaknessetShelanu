@@ -1,9 +1,13 @@
 // Sync CLI: pulls Knesset open data + Wikidata into the local SQLite DB.
 //
-//   npm run sync              full sync (members + votes + stats)
-//   npm run sync -- --members only members/factions/positions + Wikidata
+//   npm run update            update EVERYTHING (members, bios, votes, bills,
+//                             activity, budget, lobbyists, stats) — same as a
+//                             bare `npm run sync`
+//   npm run sync -- --members only members/factions/positions + Wikidata + bios
+//   npm run sync -- --bio     only refresh Wikidata biographies
 //   npm run sync -- --votes   only votes + totals + stats
 //   npm run sync -- --stats   only recompute stats/totals
+//   npm run sync -- --budget / --activity / --lobbyists  the named section
 //
 // Vote sync is incremental after the first run (cursor in sync_state).
 
@@ -16,6 +20,9 @@ import {
   markSyncState,
 } from "./members";
 import { enrichFromWikidata } from "./wikidata";
+import { syncBiography } from "./biography";
+import { getDb } from "../../src/db";
+import { sql } from "drizzle-orm";
 import {
   syncVoteHeaders,
   syncVoteResults,
@@ -51,6 +58,12 @@ async function main() {
     await syncMkSiteCodes(personIds);
     await enrichFromWikidata();
     markSyncState("members", new Date().toISOString());
+  }
+
+  // Wikidata biographies (born/education/military/career timeline). Runs with
+  // members (uses the QIDs the enrich step just stored) or standalone via --bio.
+  if (all || args.has("--members") || args.has("--bio")) {
+    await syncBiography();
   }
 
   if (all || args.has("--votes")) {
@@ -89,6 +102,10 @@ async function main() {
 
   // Data text (vote titles, law/committee/budget names) is translated lazily
   // on first view via the unified cache (src/lib/i18n-data.ts) — no batch step.
+
+  // Fold the WAL back into the main DB file so the committed data/knesset.db is
+  // self-contained (the deploy/CI commits just that file).
+  getDb().run(sql`PRAGMA wal_checkpoint(TRUNCATE)`);
 
   console.log(`Sync finished in ${Math.round((Date.now() - started) / 1000)}s`);
 }

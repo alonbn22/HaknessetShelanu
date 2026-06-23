@@ -101,7 +101,15 @@
       "acquitted": "Acquitted",
       "overturned": "Overturned on appeal",
       "settled": "Settled"
-    }
+    },
+    "bioTitle": "Biography & background",
+    "born": "Born",
+    "education": "Education",
+    "occupation": "Occupation",
+    "military": "Military service",
+    "career": "Career & positions",
+    "bioSource": "Background data: Wikidata",
+    "present": "present"
   },
   "parties": {
     "title": "Knesset Factions",

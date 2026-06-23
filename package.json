@@ -11,6 +11,7 @@
     "test:qa": "node --import tsx --test \"tests/qa/*.test.ts\"",
     "test:security": "node --import tsx --test \"tests/security/*.test.ts\"",
     "sync": "tsx scripts/sync/index.ts",
+    "update": "tsx scripts/sync/index.ts",
     "db:push": "drizzle-kit push --force"
   },
   "dependencies": {

@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { notFound } from "next/navigation";
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
@@ -20,6 +21,7 @@ import {
   getMemberRecentQuestions,
   getMemberAgendaCount,
   getMemberCommittees,
+  getMemberBio,
   personName,
   factionName,
   isCurrentMk,
@@ -97,10 +99,22 @@ export default async function MemberPage({
   );
   const serving = isCurrentMk(positions);
 
-  // Translate the page's free-text Hebrew (bill names, question subjects, and the
-  // committee long-tail not covered by the curated gov-terms map) on the fly:
-  // resolve from the unified cache now, translate misses post-response.
+  const bio = getMemberBio(personId);
+  const bioParts = bio
+    ? [
+        bio.birthPlaceHe,
+        ...(bio.educationHe?.split(" · ") ?? []),
+        ...(bio.occupationsHe?.split(" · ") ?? []),
+        ...(bio.militaryHe?.split(" · ") ?? []),
+        ...bio.career.map((c) => c.title),
+      ]
+    : [];
+
+  // Translate the page's free-text Hebrew (biography facts, bill names, question
+  // subjects, committee long-tail, faction names) on the fly: resolve from the
+  // unified cache now, translate misses post-response.
   const dataHe = [
+    ...bioParts,
     ...sponsoredBills.map((b) => b.nameHe),
     ...recentQuestions.map((q) => q.nameHe),
     ...committees.map((c) => c.committeeNameHe),
@@ -113,6 +127,19 @@ export default async function MemberPage({
     const key = (he ?? "").trim();
     if (!key) return { text: "", translated: false, rtl: false };
     return dataMap.get(key) ?? { text: key, translated: false, rtl: true };
+  };
+  // Localize a " · "-joined Hebrew list into per-item localized chunks.
+  const localList = (joined: string | null) =>
+    (joined ?? "")
+      .split(" · ")
+      .map((s) => s.trim())
+      .filter(Boolean)
+      .map(localOf);
+  const year = (d: string | null) => (d ? d.slice(0, 4) : "");
+  const fmtRange = (r: { start: string | null; end: string | null }) => {
+    const s = year(r.start);
+    const e = r.end === null ? t("member.present") : year(r.end);
+    return s && e ? `${s}–${e}` : s || e;
   };
 
   return (
@@ -181,6 +208,94 @@ export default async function MemberPage({
           )}
         </div>
       </section>
+
+      {bio &&
+        (bio.dateOfBirth ||
+          bio.educationHe ||
+          bio.occupationsHe ||
+          bio.militaryHe ||
+          bio.career.length > 0) && (
+        <section className="rounded-xl bg-white p-6 shadow-sm space-y-4">
+          <h2 className="text-xl font-semibold">{t("member.bioTitle")}</h2>
+          <dl className="grid gap-x-4 gap-y-2 text-sm sm:grid-cols-[max-content_1fr]">
+            {(bio.dateOfBirth || bio.birthPlaceHe) && (
+              <>
+                <dt className="font-medium text-black/60">{t("member.born")}</dt>
+                <dd className="flex flex-wrap gap-x-2">
+                  {bio.dateOfBirth && <span>{formatDate(bio.dateOfBirth, locale)}</span>}
+                  {bio.birthPlaceHe &&
+                    (() => {
+                      const b = localOf(bio.birthPlaceHe);
+                      return (
+                        <span dir={b.rtl ? "rtl" : undefined} lang={b.rtl ? "he" : undefined}>
+                          {bio.dateOfBirth ? "· " : ""}
+                          {b.text}
+                        </span>
+                      );
+                    })()}
+                </dd>
+              </>
+            )}
+            {[
+              { label: t("member.education"), items: localList(bio.educationHe) },
+              { label: t("member.occupation"), items: localList(bio.occupationsHe) },
+              { label: t("member.military"), items: localList(bio.militaryHe) },
+            ]
+              .filter((row) => row.items.length > 0)
+              .map((row) => (
+                <Fragment key={row.label}>
+                  <dt className="font-medium text-black/60">{row.label}</dt>
+                  <dd className="flex flex-wrap gap-x-1.5">
+                    {row.items.map((it, i) => (
+                      <span key={i} dir={it.rtl ? "rtl" : undefined} lang={it.rtl ? "he" : undefined}>
+                        {i > 0 ? "· " : ""}
+                        {it.text}
+                      </span>
+                    ))}
+                  </dd>
+                </Fragment>
+              ))}
+          </dl>
+
+          {bio.career.length > 0 && (
+            <div className="space-y-1.5">
+              <h3 className="text-sm font-medium text-black/60">{t("member.career")}</h3>
+              <ul className="space-y-1 text-sm">
+                {bio.career.map((role, i) => {
+                  const r = localOf(role.title);
+                  return (
+                    <li key={i} className="flex flex-wrap gap-x-2">
+                      <span
+                        className="font-medium"
+                        dir={r.rtl ? "rtl" : undefined}
+                        lang={r.rtl ? "he" : undefined}
+                      >
+                        {r.text}
+                      </span>
+                      <span className="text-muted">
+                        {role.ranges.map(fmtRange).filter(Boolean).join(", ")}
+                      </span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          )}
+
+          {bio.wikidataId && (
+            <p className="text-xs text-muted">
+              <a
+                className="text-accent hover:underline"
+                href={`https://www.wikidata.org/wiki/${bio.wikidataId}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t("member.bioSource")}
+              </a>
+            </p>
+          )}
+        </section>
+      )}
 
       {stats && stats.votesHeld > 0 && (
         <section className="rounded-xl bg-white p-6 shadow-sm space-y-4">

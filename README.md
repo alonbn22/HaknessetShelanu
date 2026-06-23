@@ -76,29 +76,44 @@ Current scope: **the 25th Knesset** (`CURRENT_KNESSET = 25` in
 `src/lib/constants.ts`). Vote records exist from ~2004; physical attendance is not
 published anywhere (we derive participation from votes).
 
-## The sync job (how data gets in)
+## Updating the data (how data gets in)
 
-`npm run sync` (CLI: `scripts/sync/`) pulls OData + Wikidata into SQLite. It is
-idempotent (upserts) and incremental on each table's `LastUpdatedDate` (cursor in
-the `sync_state` table); the large `KNS_PlenumVoteResult` backfill (~480k rows)
-**checkpoints every 10k rows so it resumes after interruption**. Run it on a
-schedule (cron / GitHub Actions) to keep data fresh.
+**`npm run update` refreshes everything** — members, biographies, votes, bills,
+parliamentary activity, the law book, budget, lobbyists, and recomputed stats —
+in one command. Run it whenever you want fresh data. (`npm run sync` is the same
+thing; `update` is just the friendly name.) It is idempotent (upserts) and
+incremental on each table's `LastUpdatedDate` (cursor in `sync_state`); the large
+`KNS_PlenumVoteResult` backfill (~480k rows) **checkpoints every 10k rows so it
+resumes after interruption**, and the run ends by folding the WAL back into
+`data/knesset.db` so the committed file is self-contained. Run it on a schedule
+(the bundled GitHub Action does this every 6h) to keep data fresh.
+
+Data text (vote/law/committee/budget names, bios) is **not** translated in the
+sync — it translates lazily on first view via the unified cache, so new data
+auto-localizes with no batch step.
 
 ```
-npm run sync                # full: members + votes + stats
-npm run sync -- --members   # persons/factions/positions + Wikidata enrichment
+npm run update              # everything (recommended)
+npm run sync -- --members   # persons/factions/positions + Wikidata + biographies
+npm run sync -- --bio       # just refresh Wikidata biographies
 npm run sync -- --votes     # vote headers + results + subjects, then totals + stats
+npm run sync -- --budget    # Ministry of Finance budget (data.gov.il)
 npm run sync -- --stats     # recompute mk_vote_stats + vote totals only
 ```
 
 Sync modules: `members.ts` (persons/factions/positions), `wikidata.ts`
-(enrichment), `votes.ts` (votes/results/subjects + `forDesc` reading stage),
-`stats.ts` (per-MK participation), `odata.ts` (paged fetch helper).
+(enrichment + QID capture), `biography.ts` (Wikidata bio: born/education/military/
+career timeline), `votes.ts` (votes/results/subjects + `forDesc` reading stage),
+`bills.ts`, `activity.ts` (queries/agendas/committees/law book), `budget.ts`,
+`lobbyists.ts`, `stats.ts` (per-MK participation), `odata.ts` (paged fetch helper).
 
 ## Data model (key tables)
 
 - `persons` — MK id (PK), Hebrew name, en/ar/ru names, photo + license +
-  attribution, Wikipedia link, `is_current`, `mk_site_code`.
+  attribution, Wikipedia link, `wikidata_id`, `is_current`, `mk_site_code`.
+- `person_bio` — Wikidata-sourced biography per member: date/place of birth,
+  education, occupations, military service, and a dated career timeline
+  (`career_json`). Rendered as the "Biography & background" section.
 - `factions` — faction id (PK), Hebrew name, `knesset_num`, `is_current`.
 - `person_positions` — person↔faction↔role per Knesset, with date ranges and
   `is_current` (drives "who's an MK now", ministers, committee roles).

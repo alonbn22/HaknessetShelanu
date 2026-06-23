@@ -101,7 +101,15 @@
       "acquitted": "זוכה",
       "overturned": "בוטל בערעור",
       "settled": "הסדר/פשרה"
-    }
+    },
+    "bioTitle": "ביוגרפיה ורקע",
+    "born": "נולד/ה",
+    "education": "השכלה",
+    "occupation": "עיסוק",
+    "military": "שירות צבאי",
+    "career": "קריירה ותפקידים",
+    "bioSource": "נתוני רקע: ויקינתונים",
+    "present": "בהווה"
   },
   "parties": {
     "title": "הסיעות בכנסת",

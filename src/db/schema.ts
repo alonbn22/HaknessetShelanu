@@ -27,6 +27,23 @@ export const persons = sqliteTable("persons", {
   lastUpdated: text("last_updated"),
 });
 
+// Structured biography pulled from Wikidata (the member's full history backbone:
+// birth, education, occupations, military service, and a dated career timeline).
+// Free-text values are stored in Hebrew where available so they localize via the
+// unified on-the-fly translation cache. Sourced to the linked Wikidata entity.
+export const personBio = sqliteTable("person_bio", {
+  personId: integer("person_id").primaryKey(),
+  wikidataId: text("wikidata_id"), // QID the facts came from (e.g. Q123)
+  dateOfBirth: text("date_of_birth"), // ISO date string
+  birthPlaceHe: text("birth_place_he"),
+  educationHe: text("education_he"), // "|"-joined institution labels
+  occupationsHe: text("occupations_he"), // "|"-joined
+  militaryHe: text("military_he"), // "|"-joined branch/unit/rank
+  // JSON array of { title (he/en), start, end } position-held tenures, sorted.
+  careerJson: text("career_json"),
+  lastUpdated: text("last_updated"),
+});
+
 // Faction (KNS_Faction) per Knesset.
 export const factions = sqliteTable("factions", {
   id: integer("id").primaryKey(), // FactionID

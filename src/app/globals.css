@@ -1,26 +1,186 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8f7f4;
+  --foreground: #1a1a1a;
+  --accent: #0b3d91;
+  --accent-deep: #06245a;
+  --accent-sky: #3f7fd4;
+  --coalition: #0b3d91;
+  --opposition: #b03a2e;
+  /* Muted text that still meets WCAG AA (≥4.5:1) on --background. */
+  --muted: #595959;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-accent: var(--accent);
+  --color-accent-deep: var(--accent-deep);
+  --color-accent-sky: var(--accent-sky);
+  --color-coalition: var(--coalition);
+  --color-opposition: var(--opposition);
+  --color-muted: var(--muted);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:
+    var(--font-heebo), "Noto Sans Hebrew", "Noto Sans Arabic", "Noto Sans",
+    -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+:lang(ar) {
+  font-family: "Noto Sans Arabic", var(--font-heebo), sans-serif;
+}
+:lang(ru) {
+  font-family: "Noto Sans", var(--font-heebo), sans-serif;
+}
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* Flag-filled wordmark logo: fills the Hebrew letters with the Israeli-flag
+   texture, with a thin white stroke to stay crisp on the blue header. */
+.logo-flag {
+  background-image: url("/assets/flag-fill.png");
+  background-size: 100% 100%;
+  background-position: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  -webkit-text-stroke: 0.6px rgba(255, 255, 255, 0.9);
+  filter: drop-shadow(0 1px 1.5px rgba(0, 0, 0, 0.35));
+}
+
+/* ---------- Accessibility (Israeli Standard 5568 / WCAG 2.0 AA) ---------- */
+
+/* Visible keyboard focus everywhere. */
+:focus-visible {
+  outline: 3px solid #ffbf00;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Skip-to-content link: hidden until focused. */
+.skip-link {
+  position: fixed;
+  inset-block-start: -100px;
+  inset-inline-start: 1rem;
+  z-index: 100;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  transition: inset-block-start 0.15s ease;
+}
+.skip-link:focus {
+  inset-block-start: 0;
+}
+
+/* Text size is scaled by an inline font-size % set on <html> by the
+   accessibility menu (unlimited steps), which scales the whole rem-based UI. */
+
+/* High-contrast mode. */
+html.a11y-contrast {
+  --background: #000000;
+  --foreground: #ffffff;
+  --accent: #ffff00;
+}
+html.a11y-contrast body { background: #000 !important; color: #fff !important; }
+html.a11y-contrast .bg-white,
+html.a11y-contrast .bg-accent,
+html.a11y-contrast section,
+html.a11y-contrast header,
+html.a11y-contrast footer {
+  background: #000 !important;
+  color: #fff !important;
+  border-color: #fff !important;
+}
+html.a11y-contrast a { color: #ffff00 !important; }
+html.a11y-contrast .shadow-sm,
+html.a11y-contrast .shadow-md { box-shadow: 0 0 0 1px #fff !important; }
+
+/* Keep the accessibility menu's toggle switches visible in high contrast
+   (the broad black-on-black overrides above would otherwise hide them). */
+html.a11y-contrast #a11y-dialog [role="switch"] > span:first-child {
+  background: #333 !important;
+  border: 2px solid #fff !important;
+}
+html.a11y-contrast #a11y-dialog [role="switch"][aria-checked="true"] > span:first-child {
+  background: #ffff00 !important;
+}
+html.a11y-contrast #a11y-dialog [role="switch"] > span:first-child > span {
+  background: #fff !important;
+}
+
+/* Grayscale / monochrome. */
+html.a11y-grayscale { filter: grayscale(100%); }
+
+/* Highlight links (strong yellow marker) and buttons (clear outline). */
+html.a11y-links a {
+  background-color: #fff2a8 !important;
+  color: #1a1a1a !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+  box-shadow: 0 0 0 2px #b8860b;
+  border-radius: 3px;
+}
+html.a11y-links button {
+  outline: 2px solid #b8860b !important;
+  outline-offset: 1px;
+}
+/* In high contrast, the highlight uses the contrast palette instead. */
+html.a11y-contrast.a11y-links a {
+  background-color: #ffff00 !important;
+  color: #000 !important;
+  box-shadow: none;
+}
+
+/* Highlight headings. */
+html.a11y-headings :is(h1, h2, h3) {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+}
+
+/* Keyboard-navigation mode: strong, always-visible focus on any focused
+   element, and keep focused items clear of sticky edges when scrolled to. */
+html.a11y-keyboard :is(a, button, input, select, textarea, [tabindex]):focus {
+  outline: 3px solid var(--accent) !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 0 3px #fff, 0 0 0 6px var(--accent) !important;
+}
+html.a11y-keyboard :is(a, button, input, select, textarea, [tabindex]) {
+  scroll-margin: 6rem;
+}
+
+/* Readable, simpler font + looser spacing. */
+html.a11y-readable body,
+html.a11y-readable body * {
+  font-family: Arial, "Noto Sans Hebrew", "Noto Sans Arabic", sans-serif !important;
+  letter-spacing: 0.02em;
+  line-height: 1.7 !important;
+}
+
+/* Pause animations & transitions. */
+html.a11y-no-motion *,
+html.a11y-no-motion *::before,
+html.a11y-no-motion *::after {
+  animation-duration: 0s !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0s !important;
+  scroll-behavior: auto !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
 }

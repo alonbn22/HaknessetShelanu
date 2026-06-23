@@ -3,7 +3,7 @@ import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { MemberAvatar } from "@/components/MemberCard";
 import { VoteResultBadge } from "@/components/VoteResultBadge";
-import { ReportButton } from "@/components/ReportButton";
+import { FeedbackActions } from "@/components/FeedbackActions";
 import { RecordSection } from "./RecordSection";
 import { formatDate } from "@/lib/format";
 import { govDuty, govMinistry } from "@/lib/gov-terms";
@@ -439,7 +439,7 @@ export default async function MemberPage({
       )}
 
       <div className="pt-2">
-        <ReportButton context={personName(member, locale)} />
+        <FeedbackActions context={personName(member, locale)} subject="member" />
       </div>
     </div>
   );

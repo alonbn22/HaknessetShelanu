@@ -1,6 +1,5 @@
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { ReportButton } from "./ReportButton";
 import { getLastSyncDate } from "@/lib/queries";
 
 export async function Footer() {
@@ -30,7 +29,9 @@ export async function Footer() {
           <Link href="/accessibility" className="text-accent hover:underline">
             {t("accessibility")}
           </Link>
-          <ReportButton variant="link" />
+          <Link href="/feedback" className="text-accent hover:underline">
+            {t("feedback")}
+          </Link>
         </p>
       </div>
     </footer>

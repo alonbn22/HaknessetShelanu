@@ -1,0 +1,42 @@
+name: Report incorrect information
+description: Report something on the site that you believe is inaccurate. This creates a ticket for review — changes are not applied automatically.
+title: "[Report] "
+labels: ["report", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping keep **הכנסת שלי / My Knesset** accurate.
+        This opens a **ticket** that a maintainer reviews before anything is changed on the site.
+  - type: input
+    id: page
+    attributes:
+      label: Page URL
+      description: The page where you saw the incorrect information.
+      placeholder: https://...
+    validations:
+      required: true
+  - type: input
+    id: subject
+    attributes:
+      label: Subject
+      description: The person, party, or topic this is about.
+  - type: textarea
+    id: incorrect
+    attributes:
+      label: What is incorrect?
+      description: Describe exactly what you believe is wrong.
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: What is the correct information?
+  - type: input
+    id: source
+    attributes:
+      label: Source / supporting link
+      description: A reputable source (URL) that supports the correction. Required so we can verify before changing anything.
+      placeholder: https://...
+    validations:
+      required: true

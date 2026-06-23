@@ -4,7 +4,7 @@ import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { MemberAvatar } from "@/components/MemberAvatar";
 import { ReadingBadge, VoteMeaning } from "@/components/ReadingBadge";
-import { ReportButton } from "@/components/ReportButton";
+import { FeedbackActions } from "@/components/FeedbackActions";
 import { VoteRollCall, type Voter } from "./VoteRollCall";
 import { formatDateTime } from "@/lib/format";
 import { govVoteItemType } from "@/lib/gov-terms";
@@ -216,7 +216,7 @@ export default async function VotePage({
       </section>
 
       <div className="pt-2">
-        <ReportButton context={vote.titleHe ?? `Vote ${vote.id}`} />
+        <FeedbackActions context={vote.titleHe ?? `Vote ${vote.id}`} subject="vote" />
       </div>
     </div>
   );

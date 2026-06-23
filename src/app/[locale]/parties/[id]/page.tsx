@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { getTranslations, getLocale } from "next-intl/server";
 import { MemberCard } from "@/components/MemberCard";
 import { SpectrumBar } from "@/components/SpectrumBar";
-import { ReportButton } from "@/components/ReportButton";
+import { FeedbackActions } from "@/components/FeedbackActions";
 import { PartyEmblem } from "@/components/PartyEmblem";
 import {
   isCoalitionFaction,
@@ -190,7 +190,10 @@ export default async function PartyPage({
       </section>
 
       <div className="pt-2">
-        <ReportButton context={factionName(factionId, faction.nameHe, locale)} />
+        <FeedbackActions
+          context={factionName(factionId, faction.nameHe, locale)}
+          subject="party"
+        />
       </div>
     </div>
   );

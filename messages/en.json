@@ -219,7 +219,8 @@
     "disclaimer": "This is not an official Knesset website. Inaccuracies are possible; where data conflicts, the Knesset website prevails.",
     "lastSync": "Data last updated: {date}",
     "accessibility": "Accessibility statement",
-    "sources": "Data sources"
+    "sources": "Data sources",
+    "feedback": "Report / suggest"
   },
   "a11y": {
     "skipToContent": "Skip to main content",
@@ -280,13 +281,6 @@
     "title": "Most Active Legislators",
     "subtitle": "Ranked by number of bills sponsored",
     "bills": "bills"
-  },
-  "report": {
-    "button": "Report wrong information",
-    "aria": "Report wrong information on this page",
-    "email": "corrections@example.com",
-    "subject": "Wrong information report — {context}",
-    "body": "Page: {url}\n\nWhat is incorrect?\n\n\nWhat is the correct information (if known)?\n\n\nSupporting source/link (if any):\n"
   },
   "sources": {
     "title": "Data Sources",
@@ -466,5 +460,17 @@
     "foreignMoreLinks": "Official sources for detailed tracking:",
     "usAidTitle": "U.S. military aid — past 10 years",
     "usAidTotal": "Cumulative: ~${total}B"
+  },
+  "feedback": {
+    "reportButton": "Report incorrect information",
+    "suggestButton": "Suggest new information",
+    "reportAria": "Report incorrect information about {context}",
+    "suggestAria": "Suggest new information about {context}",
+    "theSite": "the site",
+    "ticketHint": "Opens a review ticket — nothing changes on the site automatically.",
+    "title": "Corrections & contributions",
+    "intro": "Spotted a mistake, or have well-sourced information to add? You can report incorrect information or suggest new information — about a specific Knesset member or the site in general.",
+    "note": "Every submission opens a ticket that a maintainer reviews before anything is published. Please include a reputable source so we can verify it; information about people is only published when backed by a source.",
+    "needGithub": "Submitting requires a free GitHub account."
   }
 }

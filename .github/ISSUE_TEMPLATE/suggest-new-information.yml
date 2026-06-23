@@ -1,0 +1,36 @@
+name: Suggest new information
+description: Suggest information to add — about a specific person or the site in general. This creates a ticket for review; it is not added automatically.
+title: "[Suggestion] "
+labels: ["suggestion", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing to **הכנסת שלי / My Knesset**.
+        This opens a **ticket** that a maintainer reviews. Suggestions are only published after they are verified against the source you provide.
+  - type: input
+    id: subject
+    attributes:
+      label: Subject
+      description: The person, party, or topic this is about (leave blank for a general site suggestion).
+  - type: input
+    id: page
+    attributes:
+      label: Related page URL
+      description: The page this relates to, if any.
+      placeholder: https://...
+  - type: textarea
+    id: info
+    attributes:
+      label: Information to add
+      description: Describe the information you think should be added.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source / supporting link
+      description: A reputable source (URL) supporting the information. Required — claims about people are only added when backed by a verifiable source.
+      placeholder: https://...
+    validations:
+      required: true

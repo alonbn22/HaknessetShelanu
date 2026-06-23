@@ -1,0 +1,71 @@
+# PersonID 30833. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30833
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: כיהן כסגן שר במשרד ראש הממשלה
+      en: Served as Deputy Minister in the Prime Minister's Office
+    description:
+      he: ב-2 באפריל 2025 מונה אלמוג כהן, מטעם מפלגת עוצמה יהודית, לסגן שר במשרד ראש
+        הממשלה, והתפטר מהכנסת מכוח החוק הנורבגי. במסגרת תפקידו הופקד על ריכוז
+        קידום הקמתו של שדה תעופה משלים לנמל התעופה בן-גוריון בנגב.
+      en: On 2 April 2025, Almog Cohen of the Otzma Yehudit party was appointed Deputy
+        Minister in the Prime Minister's Office, resigning from the Knesset
+        under the Norwegian Law. In this role he was tasked with advancing the
+        planning and establishment of a supplementary airport to Ben Gurion
+        Airport in the Negev.
+    date: 2025-04-02
+    sources:
+      - url: https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%9E%D7%95%D7%92_%D7%9B%D7%94%D7%9F_(%D7%97%D7%91%D7%A8_%D7%94%D7%9B%D7%A0%D7%A1%D7%AA)
+        title: אלמוג כהן (חבר הכנסת)
+        publisher: Wikipedia (Hebrew)
+      - url: https://www.jpost.com/israel-news/article-859391
+        title: Otzma Yehudit Deputy Minister Almog Cohen resigns from Israeli gov't
+        publisher: The Jerusalem Post
+  - kind: positive
+    category: achievement
+    title:
+      he: רקע בשירות צבאי ובמשטרת ישראל
+      en: Background in military and police service
+    description:
+      he: טרם כניסתו לפוליטיקה שירת אלמוג כהן בצה"ל ביחידת מודיעין מטרות, ולאחר מכן
+        שירת במשטרת ישראל במשך כ-11 שנים, בין היתר ביחידות מבצעיות.
+      en: Before entering politics, Almog Cohen served in the IDF's Target
+        Intelligence Unit and subsequently served in the Israel Police for
+        approximately 11 years, including in operational units.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Almog_Cohen_(politician)
+        title: Almog Cohen (politician)
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%9E%D7%95%D7%92_%D7%9B%D7%94%D7%9F_(%D7%97%D7%91%D7%A8_%D7%94%D7%9B%D7%A0%D7%A1%D7%AA)
+        title: אלמוג כהן (חבר הכנסת)
+        publisher: Wikipedia (Hebrew)
+  - kind: negative
+    category: controversy
+    status: settled
+    title:
+      he: ננזף וננקטו נגדו סנקציות בידי ועדת האתיקה של הכנסת
+      en: Reprimanded and sanctioned by the Knesset Ethics Committee
+    description:
+      he: בעקבות התבטאויות והתנהגות כלפי חברי כנסת ערבים מסיעת חד"ש-תע"ל שנמצאו
+        פוגעניות, הטילה ועדת האתיקה של הכנסת על אלמוג כהן בתחילת 2023 נזיפה
+        רשמית וסנקציות, ובהן הרחקה מנאומים במליאה ובוועדות למשך חמישה ימים
+        ואיסור להגיש הצעות חוק ושאילתות עד תום מושב החורף.
+      en: Following remarks and conduct toward Arab Knesset members from the
+        Hadash-Ta'al faction that were found to be offensive, the Knesset Ethics
+        Committee imposed an official reprimand and sanctions on Almog Cohen in
+        early 2023, including a five-day ban on speaking in the plenum and
+        committees and a bar on submitting bills and queries until the end of
+        the winter session.
+    date: 2023-03-01
+    sources:
+      - url: https://www.timesofisrael.com/knesset-ethics-panel-reprimands-far-right-mk-who-likened-arab-party-mks-to-sheep/
+        title: Knesset ethics panel reprimands far-right MK who likened Arab party MKs
+          to sheep
+        publisher: The Times of Israel
+      - url: https://en.wikipedia.org/wiki/Almog_Cohen_(politician)
+        title: Almog Cohen (politician)
+        publisher: Wikipedia

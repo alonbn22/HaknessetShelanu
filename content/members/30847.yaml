@@ -1,0 +1,60 @@
+# PersonID 30847. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30847
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר הכנסת הצעיר ביותר בכנסת ה-25
+      en: Youngest member of the 25th Knesset
+    description:
+      he: יצחק וסרלאוף, יליד 14 באוגוסט 1992, הושבע לכנסת ה-25 ב-15 בנובמבר 2022 מטעם
+        מפלגת עוצמה יהודית, והיה לחבר הכנסת הצעיר ביותר בכנסת זו.
+      en: Born on 14 August 1992, Yitzhak Wasserlauf was sworn into the 25th Knesset
+        on 15 November 2022 as a member of the Otzma Yehudit party, becoming the
+        youngest member of that Knesset.
+    date: 2022-11-15
+    sources:
+      - url: https://en.wikipedia.org/wiki/Yitzhak_Wasserlauf
+        title: Yitzhak Wasserlauf
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%95%D7%A1%D7%A8%D7%9C%D7%90%D7%95%D7%A3
+        title: יצחק וסרלאוף
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: achievement
+    title:
+      he: שירות קרבי בחטיבת גולני
+      en: Combat service in the Golani Brigade
+    description:
+      he: וסרלאוף התגייס לצה"ל בשנת 2012 ושירת כלוחם בחטיבת גולני.
+      en: Wasserlauf enlisted in the Israel Defense Forces in 2012 and served as a
+        combat soldier in the Golani Brigade.
+    sources:
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%95%D7%A1%D7%A8%D7%9C%D7%90%D7%95%D7%A3
+        title: יצחק וסרלאוף
+        publisher: Wikipedia (Hebrew)
+      - url: https://en.wikipedia.org/wiki/Yitzhak_Wasserlauf
+        title: Yitzhak Wasserlauf
+        publisher: Wikipedia
+  - kind: positive
+    category: volunteering
+    title:
+      he: שותף בהקמת ישיבת הסדר בדרום תל אביב
+      en: Co-founded a hesder yeshiva in south Tel Aviv
+    description:
+      he: וסרלאוף היה שותף בהקמת ישיבת ההסדר "עוז ואמונה" בדרום תל אביב יחד עם הרב
+        אחיעד אטינגר, ולאחר רצח אטינגר ב-2019 הקים את עמותת "אחיעד" לחיזוק הזהות
+        היהודית בשכונות דרום תל אביב.
+      en: Wasserlauf co-founded the Oz VeEmuna hesder yeshiva in south Tel Aviv
+        together with Rabbi Ahiad Ettinger, and after Ettinger's killing in 2019
+        established the Ahiad association to promote Jewish identity in south
+        Tel Aviv neighborhoods.
+    sources:
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%95%D7%A1%D7%A8%D7%9C%D7%90%D7%95%D7%A3
+        title: יצחק וסרלאוף
+        publisher: Wikipedia (Hebrew)
+      - url: https://en.wikipedia.org/wiki/Yitzhak_Wasserlauf
+        title: Yitzhak Wasserlauf
+        publisher: Wikipedia

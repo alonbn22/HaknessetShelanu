@@ -1,0 +1,63 @@
+# PersonID 468. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 468
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: מונה לשר הביטחון של ישראל
+      en: Appointed Minister of Defense of Israel
+    description:
+      he: בנובמבר 2024 מונה ישראל כץ לשר הביטחון של ישראל, לאחר שראש הממשלה בנימין
+        נתניהו הדיח את שר הביטחון הקודם יואב גלנט. מליאת הכנסת אישרה את המינוי.
+      en: In November 2024, Israel Katz was appointed Minister of Defense of Israel
+        after Prime Minister Benjamin Netanyahu dismissed the previous defense
+        minister, Yoav Gallant. The Knesset plenum approved the appointment.
+    date: 2024-11-05
+    sources:
+      - url: https://en.wikipedia.org/wiki/Israel_Katz
+        title: Israel Katz
+        publisher: Wikipedia
+      - url: https://www.npr.org/2024/11/05/nx-s1-5179904/israel-defense-minister-gallant-fired-netanyahu
+        title: Benjamin Netanyahu fires Defense Minister Yoav Gallant, replaces him with
+          Israel Katz
+        publisher: NPR
+      - url: https://www.timesofisrael.com/knesset-approves-katz-as-defense-minister-saar-as-fm-after-gallants-firing/
+        title: Knesset approves Katz as defense minister, Sa'ar as FM after Gallant's
+          firing
+        publisher: The Times of Israel
+  - kind: positive
+    category: achievement
+    title:
+      he: קריירה ממשלתית ארוכה בתפקידי שר בכירים
+      en: Long government career in senior ministerial posts
+    description:
+      he: ישראל כץ, חבר כנסת מטעם הליכוד, כיהן לאורך השנים במגוון תפקידי שר בכירים,
+        ובהם שר החוץ, שר התחבורה, שר האוצר, שר האנרגיה, שר המודיעין ושר החקלאות.
+      en: Israel Katz, a Likud member of the Knesset, has over the years held a range
+        of senior ministerial posts, including Minister of Foreign Affairs,
+        Minister of Transport, Minister of Finance, Minister of Energy, Minister
+        of Intelligence, and Minister of Agriculture.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Israel_Katz
+        title: Israel Katz
+        publisher: Wikipedia
+      - url: https://www.aljazeera.com/news/2024/11/6/who-is-israel-katz-israels-new-defence-minister
+        title: Who Is Israel Katz, Israel's new defence minister?
+        publisher: Al Jazeera
+  - kind: positive
+    category: achievement
+    title:
+      he: שירות צבאי כקצין בחטיבת הצנחנים
+      en: Military service as an officer in the Paratroopers Brigade
+    description:
+      he: כץ גויס לצה"ל בשנת 1973 ושירת בחטיבת הצנחנים, השלים קורס קצינים בשנת 1976
+        ושירת כמפקד מחלקה, עד לשחרורו בשנת 1977.
+      en: Katz was drafted into the Israel Defense Forces in 1973 and served in the
+        Paratroopers Brigade, completed Officer Candidate School in 1976, and
+        served as a platoon leader before his discharge in 1977.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Israel_Katz
+        title: Israel Katz
+        publisher: Wikipedia

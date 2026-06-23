@@ -1,0 +1,51 @@
+# Foreign aid & funding to Israel / Israeli organizations from abroad.
+# EDITORIAL (not from an API): widely-documented public figures (chiefly the
+# Congressional Research Service), written to be factual and neutral. REVIEW &
+# update; cite sources. Amounts are approximate fiscal-year figures.
+
+# U.S. military aid (Foreign Military Financing + missile defense) by fiscal year.
+# 2007 MOU (~$3.1B/yr) through FY2018; 2016 MOU ($3.8B/yr = $3.3B FMF + $0.5B
+# missile defense) from FY2019; plus post-Oct-2023 wartime supplementals.
+usMilitaryAid:
+  source:
+    label: { he: "Congressional Research Service (RL33222)", en: "Congressional Research Service (RL33222)" }
+    url: "https://www.congress.gov/crs-product/RL33222"
+  note:
+    he: "סיוע צבאי אמריקאי לפי שנת תקציב (מימון צבאי FMF + הגנה מפני טילים). מ-2019 לפי מזכר ההבנות 2016 (3.8 מיליארד$ לשנה). בנוסף, מאז אוקטובר 2023 הועברו לפחות 16.3 מיליארד$ סיוע צבאי ישיר במסגרת חוקי סיוע חירום."
+    en: "U.S. military aid by fiscal year (FMF + missile defense). From 2019 under the 2016 MOU ($3.8B/yr). On top of this, at least $16.3B in direct military aid has been enacted since October 2023 via emergency-aid laws."
+  years:
+    - { year: 2016, billion: 3.1 }
+    - { year: 2017, billion: 3.1 }
+    - { year: 2018, billion: 3.1 }
+    - { year: 2019, billion: 3.8 }
+    - { year: 2020, billion: 3.8 }
+    - { year: 2021, billion: 3.8 }
+    - { year: 2022, billion: 3.8 }
+    - { year: 2023, billion: 3.8 }
+    - { year: 2024, billion: 12.5, note: { he: "3.8 מיליארד$ קבוע + ~8.7 מיליארד$ סיוע חירום (אפריל 2024)", en: "$3.8B base + ~$8.7B emergency supplemental (April 2024)" } }
+    - { year: 2025, billion: 3.8, note: { he: "בסיס המזכר; בנוסף לסיוע החירום המתמשך של המלחמה", en: "MOU base; plus ongoing wartime emergency aid" } }
+
+# Other documented foreign funding (standing / multi-year).
+flows:
+  - kind: aid-to-state
+    donor: { he: "גרמניה", en: "Germany" }
+    recipient: { he: "שורדי שואה (ועידת התביעות) ומדינת ישראל", en: "Holocaust survivors (Claims Conference) & Israel" }
+    amount: { he: "מאות מיליוני $ בשנה (מתמשך)", en: "Hundreds of $M per year (ongoing)" }
+    period: { he: "מ-1952 (הסכם השילומים) ועד היום", en: "From 1952 (Reparations Agreement) to today" }
+    purpose:
+      he: "פיצויים ותשלומי רווחה לשורדי שואה (מנוהל בעיקר דרך ועידת התביעות), בנוסף לשילומים ההיסטוריים למדינה."
+      en: "Compensation and welfare payments to Holocaust survivors (mostly via the Claims Conference), on top of the historic reparations to the state."
+    source:
+      label: { he: "ועידת התביעות", en: "Claims Conference" }
+      url: "https://www.claimscon.org/"
+  - kind: ngo-donations
+    donor: { he: "ממשלות וגופים זרים (האיחוד האירופי ומדינות שונות)", en: "Foreign governments & bodies (EU and various states)" }
+    recipient: { he: "עמותות וארגוני חברה אזרחית בישראל", en: "Israeli NGOs & civil-society organizations" }
+    amount: { he: "מיליוני שקלים בשנה (מדווח לרשם)", en: "Millions of NIS per year (reported to the Registrar)" }
+    period: { he: "מתמשך; דיווח רבעוני לפי חוק העמותות", en: "Ongoing; reported quarterly under the NGO law" }
+    purpose:
+      he: "מימון פעילות של ארגוני חברה אזרחית מכל קצוות המפה (זכויות אדם, התיישבות, סביבה ועוד). החוק מחייב דיווח על תרומות מישות מדינית זרה — הפירוט לפי תורם וסכום מתפרסם אצל רשם העמותות ובגיידסטאר."
+      en: "Funding civil-society organizations across the spectrum (human rights, settlements, environment, etc.). The law requires reporting donations from foreign political entities — the per-donor, per-amount detail is published by the Registrar and on GuideStar."
+    source:
+      label: { he: "רשם העמותות / גיידסטאר", en: "Registrar of Non-Profits / GuideStar" }
+      url: "https://www.guidestar.org.il/"

@@ -1,0 +1,305 @@
+# Editorial party profiles — political position and what each faction supports.
+# NOT from the Knesset API. Written to be factual and neutral; PLEASE REVIEW and
+# update before publishing. spectrum: left | center-left | center | center-right
+# | right | far-right. Text falls back locale -> en -> he when a language is missing.
+profiles:
+  - id: 1096 # Likud
+    spectrum: right
+    ballotLetters: "מחל"
+    leaderHe: בנימין נתניהו
+    leaderEn: Benjamin Netanyahu
+    founded: 1973
+    website: https://www.likud.org.il
+    wikipediaEn: https://en.wikipedia.org/wiki/Likud
+    tags: [national-liberal, conservative, secular-right]
+    summary:
+      he: מפלגת הימין הגדולה בישראל, בעלת אוריינטציה לאומית-ליברלית ושמרנית.
+      en: Israel's largest right-wing party, national-liberal and conservative in orientation.
+      ar: أكبر أحزاب اليمين في إسرائيل، ذات توجه قومي-ليبرالي ومحافظ.
+      ru: Крупнейшая правая партия Израиля, национально-либеральная и консервативная.
+    positions:
+      he:
+        - שמירה על ביטחון לאומי וגישה תקיפה בנושאים מדיניים-ביטחוניים
+        - תמיכה בכלכלת שוק חופשי והפחתת רגולציה
+        - עמדה ניצית כלפי ויתורים טריטוריאליים
+      en:
+        - Strong national security and a hawkish foreign-policy posture
+        - Support for free-market economics and deregulation
+        - Opposition to territorial concessions
+  - id: 1102 # Yesh Atid
+    spectrum: center
+    ballotLetters: "פה"
+    leaderHe: יאיר לפיד
+    leaderEn: Yair Lapid
+    founded: 2012
+    website: https://www.yeshatid.org.il
+    wikipediaEn: https://en.wikipedia.org/wiki/Yesh_Atid
+    tags: [liberal, secular, centrist]
+    summary:
+      he: מפלגת מרכז ליברלית-חילונית המייצגת בעיקר את מעמד הביניים.
+      en: A liberal, secular centrist party representing mainly the middle class.
+      ar: حزب وسطي ليبرالي علماني يمثّل أساسًا الطبقة الوسطى.
+      ru: Либеральная светская центристская партия, представляющая в основном средний класс.
+    positions:
+      he:
+        - הפרדת דת ומדינה ושוויון בנטל (גיוס חרדים)
+        - חיזוק החינוך הממלכתי ומעמד הביניים
+        - תמיכה בפתרון מדיני מול הפלסטינים
+      en:
+        - Separation of religion and state and equal sharing of the draft burden
+        - Strengthening public education and the middle class
+        - Support for a negotiated settlement with the Palestinians
+  - id: 1095 # Shas
+    spectrum: right
+    ballotLetters: "שס"
+    leaderHe: אריה דרעי
+    leaderEn: Aryeh Deri
+    founded: 1984
+    wikipediaEn: https://en.wikipedia.org/wiki/Shas
+    tags: [ultra-orthodox, sephardic, religious]
+    summary:
+      he: מפלגה חרדית-ספרדית המייצגת יהדות המזרח ושומרי מסורת.
+      en: A Sephardic ultra-Orthodox party representing Mizrahi Jews and the traditionally observant.
+      ar: حزب حريدي شرقي يمثّل اليهود الشرقيين والمحافظين دينيًا.
+      ru: Сефардская ультраортодоксальная партия, представляющая восточных евреев и соблюдающих традиции.
+    positions:
+      he:
+        - שמירה על מעמד הדת היהודית במרחב הציבורי
+        - תקצוב מוסדות חינוך תורניים ורווחה לאוכלוסיות חלשות
+        - הגנה על מעמד החינוך החרדי ופטור מגיוס לבני ישיבות
+      en:
+        - Preserving the status of Jewish religion in the public sphere
+        - Funding for Torah education and welfare for weaker populations
+        - Protecting Haredi education and yeshiva students' draft exemptions
+  - id: 1110 # Blue & White – National Unity
+    spectrum: center
+    ballotLetters: "כן"
+    leaderHe: בני גנץ
+    leaderEn: Benny Gantz
+    founded: 2019
+    wikipediaEn: https://en.wikipedia.org/wiki/National_Unity_(Israel)
+    tags: [centrist, liberal-conservative, security]
+    summary:
+      he: מפלגת מרכז בראשות בכירים לשעבר במערכת הביטחון.
+      en: A centrist party led by former senior figures from the defense establishment.
+      ar: حزب وسطي يقوده مسؤولون أمنيون سابقون كبار.
+      ru: Центристская партия во главе с бывшими высокопоставленными силовиками.
+    positions:
+      he:
+        - ממלכתיות, שמירה על מוסדות הדמוקרטיה ומערכת המשפט
+        - מדיניות ביטחונית אחראית ומרכזית
+        - ממשלת אחדות רחבה
+      en:
+        - Statesmanship and protecting democratic and judicial institutions
+        - A responsible, centrist security policy
+        - A broad unity government
+  - id: 1105 # Religious Zionism
+    spectrum: far-right
+    ballotLetters: "ט"
+    ballotNote:
+      he: רצה במסגרת הרשימה המשותפת "הציונות הדתית" (ט) ב-2022.
+      en: Ran on the joint 'Religious Zionism' list (ט) in 2022.
+    leaderHe: בצלאל סמוטריץ'
+    leaderEn: Bezalel Smotrich
+    founded: 2021
+    wikipediaEn: https://en.wikipedia.org/wiki/Religious_Zionist_Party
+    tags: [religious-zionist, nationalist, conservative]
+    summary:
+      he: מפלגה ימנית דתית-לאומית התומכת בהתיישבות ובזהות יהודית של המדינה.
+      en: A religious-nationalist right-wing party supporting settlement and the state's Jewish identity.
+      ar: حزب يميني ديني-قومي يدعم الاستيطان والهوية اليهودية للدولة.
+      ru: Религиозно-националистическая правая партия, поддерживающая поселения и еврейскую идентичность государства.
+    positions:
+      he:
+        - תמיכה בהתיישבות ביהודה ושומרון והחלת ריבונות
+        - חיזוק הזהות היהודית והדתית של המדינה
+        - רפורמות במערכת המשפט
+      en:
+        - Support for settlement in the West Bank and applying sovereignty
+        - Strengthening the state's Jewish and religious identity
+        - Reform of the judicial system
+  - id: 1101 # United Torah Judaism
+    spectrum: right
+    ballotLetters: "ג"
+    leaderHe: יצחק גולדקנופף
+    leaderEn: Yitzhak Goldknopf
+    founded: 1992
+    wikipediaEn: https://en.wikipedia.org/wiki/United_Torah_Judaism
+    tags: [ultra-orthodox, ashkenazi, religious]
+    summary:
+      he: ברית מפלגות חרדיות אשכנזיות (אגודת ישראל ודגל התורה).
+      en: An alliance of Ashkenazi ultra-Orthodox parties (Agudat Yisrael and Degel HaTorah).
+      ar: تحالف أحزاب حريدية أشكنازية (أغودات يسرائيل ودِغل هتوراة).
+      ru: Союз ашкеназских ультраортодоксальных партий (Агудат Исраэль и Дегель ха-Тора).
+    positions:
+      he:
+        - שמירה על אורח חיים חרדי ותקצוב מוסדות תורה
+        - פטור מגיוס לבני ישיבות
+        - שמירת שבת וכשרות במרחב הציבורי
+      en:
+        - Preserving the Haredi way of life and funding Torah institutions
+        - Draft exemptions for yeshiva students
+        - Sabbath and kashrut observance in the public sphere
+  - id: 1104 # Yisrael Beiteinu
+    spectrum: right
+    ballotLetters: "ל"
+    leaderHe: אביגדור ליברמן
+    leaderEn: Avigdor Lieberman
+    founded: 1999
+    wikipediaEn: https://en.wikipedia.org/wiki/Yisrael_Beiteinu
+    tags: [nationalist, secular, russian-speaking]
+    summary:
+      he: מפלגה לאומית-חילונית המזוהה עם ציבור דוברי הרוסית.
+      en: A secular-nationalist party associated with the Russian-speaking community.
+      ar: حزب قومي علماني مرتبط بالجالية الناطقة بالروسية.
+      ru: Светско-националистическая партия, связанная с русскоязычной общиной.
+    positions:
+      he:
+        - הפרדת דת ומדינה ונישואין אזרחיים
+        - גיוס חובה לכלל המגזרים, כולל חרדים
+        - קו ביטחוני נוקשה
+      en:
+        - Separation of religion and state and civil marriage
+        - Mandatory conscription for all sectors, including Haredim
+        - A tough security line
+  - id: 1106 # Otzma Yehudit
+    spectrum: far-right
+    ballotLetters: "ט"
+    ballotNote:
+      he: רצה במסגרת רשימת "הציונות הדתית" (ט) ב-2022.
+      en: Ran within the 'Religious Zionism' list (ט) in 2022.
+    leaderHe: איתמר בן גביר
+    leaderEn: Itamar Ben-Gvir
+    founded: 2012
+    wikipediaEn: https://en.wikipedia.org/wiki/Otzma_Yehudit
+    tags: [far-right, religious-nationalist, kahanist-roots]
+    summary:
+      he: מפלגת ימין קיצוני דתית-לאומית, מדגישה ביטחון אישי ואכיפה תקיפה.
+      en: A far-right religious-nationalist party emphasizing personal security and tough enforcement.
+      ar: حزب يميني متطرف ديني-قومي يركّز على الأمن الشخصي والإنفاذ الصارم.
+      ru: Крайне правая религиозно-националистическая партия с упором на личную безопасность и жёсткое правоприменение.
+    positions:
+      he:
+        - מדיניות ביטחון פנים ואכיפה תקיפה
+        - תמיכה בהתיישבות והחלת ריבונות
+        - עמדות לאומיות בנושאי זהות יהודית
+      en:
+        - A hardline internal-security and law-enforcement policy
+        - Support for settlement and applying sovereignty
+        - Nationalist positions on Jewish identity
+  - id: 1099 # Ra'am
+    spectrum: center
+    ballotLetters: "עם"
+    leaderHe: מנסור עבאס
+    leaderEn: Mansour Abbas
+    founded: 1996
+    wikipediaEn: https://en.wikipedia.org/wiki/United_Arab_List
+    tags: [arab, islamist, conservative]
+    summary:
+      he: מפלגה ערבית אסלאמית-שמרנית; הראשונה שהצטרפה לקואליציה ציונית (2021).
+      en: An Arab Islamist-conservative party; the first to join a Zionist-led coalition (2021).
+      ar: حزب عربي إسلامي محافظ؛ أول حزب عربي ينضم إلى ائتلاف بقيادة صهيونية (2021).
+      ru: Арабская исламистско-консервативная партия; первая вошедшая в коалицию под сионистским руководством (2021).
+    positions:
+      he:
+        - קידום זכויות ותקציבים לאוכלוסייה הערבית
+        - מאבק בפשיעה ובאלימות בחברה הערבית
+        - שמירה על ערכים דתיים-שמרניים
+      en:
+        - Advancing rights and budgets for the Arab population
+        - Fighting crime and violence in Arab society
+        - Upholding conservative religious values
+  - id: 1103 # Hadash-Ta'al
+    spectrum: left
+    ballotLetters: "ום"
+    leaderHe: איימן עודה
+    leaderEn: Ayman Odeh
+    founded: 2015
+    wikipediaEn: https://en.wikipedia.org/wiki/Hadash
+    tags: [arab-jewish, socialist, left]
+    summary:
+      he: רשימה משותפת של חד"ש (סוציאליסטית יהודית-ערבית) ותע"ל (ערבית).
+      en: A joint list of Hadash (a Jewish-Arab socialist party) and Ta'al (Arab).
+      ar: قائمة مشتركة من الجبهة (حزب اشتراكي يهودي-عربي) والعربية للتغيير.
+      ru: Совместный список Хадаш (еврейско-арабская социалистическая партия) и Тааль (арабская).
+    positions:
+      he:
+        - שוויון אזרחי מלא בין יהודים לערבים
+        - פתרון שתי מדינות וסיום הכיבוש
+        - צדק חברתי וזכויות עובדים
+      en:
+        - Full civic equality between Jews and Arabs
+        - A two-state solution and ending the occupation
+        - Social justice and workers' rights
+  - id: 1100 # Labor
+    spectrum: center-left
+    ballotLetters: "אמת"
+    leaderHe: יאיר גולן
+    leaderEn: Yair Golan
+    founded: 1968
+    wikipediaEn: https://en.wikipedia.org/wiki/Israeli_Labor_Party
+    tags: [social-democratic, zionist-left]
+    summary:
+      he: מפלגת השמאל-מרכז הוותיקה, סוציאל-דמוקרטית וציונית.
+      en: The veteran center-left party — social-democratic and Zionist.
+      ar: حزب يسار-الوسط العريق، اشتراكي-ديمقراطي وصهيوني.
+      ru: Ветеранская левоцентристская партия — социал-демократическая и сионистская.
+    positions:
+      he:
+        - מדינת רווחה וצדק חברתי
+        - פתרון מדיני מבוסס משא ומתן
+        - הגנה על הדמוקרטיה וזכויות אדם
+      en:
+        - A welfare state and social justice
+        - A negotiated political settlement
+        - Defending democracy and human rights
+  - id: 1108 # New Hope – The National Right
+    spectrum: right
+    ballotLetters: "כן"
+    ballotNote:
+      he: רצה במסגרת "המחנה הממלכתי" (כן) ב-2022.
+      en: Ran within 'National Unity' (כן) in 2022.
+    leaderHe: גדעון סער
+    leaderEn: Gideon Sa'ar
+    founded: 2020
+    wikipediaEn: https://en.wikipedia.org/wiki/New_Hope_(Israel)
+    tags: [national-liberal, conservative]
+    summary:
+      he: מפלגת ימין ממלכתית בראשות גדעון סער.
+      en: A statesmanlike right-wing party led by Gideon Sa'ar.
+      ar: حزب يميني رسمي بقيادة غدعون ساعر.
+      ru: Государственническая правая партия во главе с Гидеоном Сааром.
+    positions:
+      he:
+        - קו ימני ביטחוני לצד שמירה על מוסדות המדינה
+        - שלטון החוק וממלכתיות
+        - כלכלה ליברלית
+      en:
+        - A security-minded right-wing line alongside respect for state institutions
+        - Rule of law and statesmanship
+        - Liberal economics
+  - id: 1107 # Noam
+    spectrum: far-right
+    ballotLetters: "ט"
+    ballotNote:
+      he: רצה במסגרת רשימת "הציונות הדתית" (ט) ב-2022.
+      en: Ran within the 'Religious Zionism' list (ט) in 2022.
+    leaderHe: אבי מעוז
+    leaderEn: Avi Maoz
+    founded: 2019
+    wikipediaEn: https://en.wikipedia.org/wiki/Noam_(political_party)
+    tags: [religious, ultra-conservative]
+    summary:
+      he: מפלגה דתית אולטרה-שמרנית המתמקדת בזהות יהודית ובנושאי משפחה.
+      en: An ultra-conservative religious party focused on Jewish identity and family issues.
+      ar: حزب ديني محافظ جدًا يركّز على الهوية اليهودية وقضايا الأسرة.
+      ru: Ультраконсервативная религиозная партия, сосредоточенная на еврейской идентичности и семейных вопросах.
+    positions:
+      he:
+        - שמירה על "צביון יהודי" ומשפחה מסורתית
+        - התנגדות לקידום זכויות להט"ב במרחב הציבורי
+        - חיזוק החינוך היהודי
+      en:
+        - Preserving a "Jewish character" and the traditional family
+        - Opposition to promoting LGBT rights in the public sphere
+        - Strengthening Jewish education

@@ -1,0 +1,90 @@
+# PersonID 30786. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30786
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: שירות קרבי ביחידות מובחרות בצה"ל
+      en: Combat service in elite IDF units
+    description:
+      he: עמיחי שיקלי שירת בצה"ל בחטיבת גולני וביחידת שייטת 13, ולאחר לימודיו שימש
+        מפקד פלוגה ביחידת אגוז.
+      en: Amichai Chikli served in the Israel Defense Forces in the Golani Brigade and
+        the Shayetet 13 naval unit, and after his studies became a company
+        commander in the Egoz reconnaissance unit.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Amichai_Chikli
+        title: Amichai Chikli
+        publisher: Wikipedia
+      - url: https://www.jewishvirtuallibrary.org/Amichai-Chikli
+        title: Amichai Chikli
+        publisher: Jewish Virtual Library
+  - kind: positive
+    category: volunteering
+    title:
+      he: ייסוד מכינה קדם-צבאית בנוף הגליל
+      en: Founded a pre-military academy in Nof HaGalil
+    description:
+      he: בשנת 2010 ייסד שיקלי את אקדמיית תבור למנהיגות חברתית, מכינה קדם-צבאית בנוף
+        הגליל (נצרת עילית), שהכשירה בוגרים רבים לקראת שירותם הצבאי.
+      en: In 2010 Chikli founded the Tavor Academy for Social Leadership, a
+        pre-military academy in Nof HaGalil (Nazareth Illit), which prepared
+        many graduates ahead of their military service.
+    date: 2010-01-01
+    sources:
+      - url: https://en.wikipedia.org/wiki/Amichai_Chikli
+        title: Amichai Chikli
+        publisher: Wikipedia
+      - url: https://www.jewishvirtuallibrary.org/Amichai-Chikli
+        title: Amichai Chikli
+        publisher: Jewish Virtual Library
+  - kind: positive
+    category: achievement
+    title:
+      he: מינוי לשר התפוצות והמאבק באנטישמיות
+      en: Appointed Minister of Diaspora Affairs and Combating Antisemitism
+    description:
+      he: בינואר 2023 מונה שיקלי, מטעם הליכוד, לשר התפוצות. עם כניסתו לתפקיד הודיע על
+        שינוי שם המשרד כך שיכלול את המאבק באנטישמיות.
+      en: In January 2023 Chikli, representing Likud, was appointed Minister of
+        Diaspora Affairs. Upon taking office he announced that the ministry
+        would change its name to add the mission of combating antisemitism.
+    date: 2023-01-01
+    sources:
+      - url: https://en.wikipedia.org/wiki/Amichai_Chikli
+        title: Amichai Chikli
+        publisher: Wikipedia
+      - url: https://www.haaretz.com/israel-news/2023-01-06/ty-article/meet-amichai-chikli-israels-new-diaspora-minister-who-opposes-bds-and-reform-judaism/00000185-85c4-d9f4-abf7-85ef8f160000
+        title: Meet Amichai Chikli, Israel's New Diaspora Minister, Who Opposes BDS and
+          Reform Judaism
+        publisher: Haaretz
+  - kind: negative
+    category: controversy
+    status: settled
+    title:
+      he: ועדת הכנסת קראה לשיקלי להתנצל בעקבות הזמנת טומי רובינסון
+      en: Knesset committee called on Chikli to apologize over Tommy Robinson
+        invitation
+    description:
+      he: באוקטובר 2025 הורתה ועדת הכנסת לקשרים עם יהדות התפוצות לשר שיקלי להתנצל בפני
+        מנהיגי הקהילה היהודית בבריטניה, לאחר שהזמין את הפעיל הימני-קיצוני הבריטי
+        טומי רובינסון לביקור רשמי בישראל מבלי להיוועץ בקהילה היהודית בבריטניה.
+        ההזמנה עוררה ביקורת מצד ארגונים יהודיים בבריטניה.
+      en: In October 2025 the Knesset committee responsible for relations with
+        Diaspora Jewish communities instructed Minister Chikli to apologize to
+        leaders of the UK Jewish community after he invited British far-right
+        activist Tommy Robinson on an official visit to Israel without
+        consulting the UK Jewish community. The invitation drew criticism from
+        British Jewish organizations.
+    date: 2025-10-21
+    sources:
+      - url: https://www.haaretz.com/israel-news/2025-10-21/ty-article/.premium/israeli-minister-ordered-to-apologize-for-inviting-british-extremist-tommy-robinson/0000019a-0706-dfc6-a3bf-f726ede20000
+        title: "'Slap in the Face': Israeli Minister Ordered to Apologize for Inviting
+          British Far-right Agitator Tommy Robinson"
+        publisher: Haaretz
+      - url: https://www.timesofisrael.com/disgrace-knesset-diaspora-panel-chair-pans-chikli-for-inviting-british-firebrand/
+        title: "'Disgrace': Knesset Diaspora panel chair pans Chikli for inviting
+          British firebrand"
+        publisher: The Times of Israel

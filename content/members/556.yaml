@@ -1,0 +1,78 @@
+# PersonID 556. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 556
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: רקע בהתאגדות עובדים בתעשייה האווירית לפני הקריירה הפוליטית
+      en: Labor-organizing background at Israel Aerospace Industries before entering
+        politics
+    description:
+      he: לפני כניסתו לכנסת היה לחיים כץ רקע בולט בהתאגדות עובדים. הוא הצטרף לוועד
+        עובדי התעשייה האווירית לישראל בשנת 1983, כיהן כיושב ראש ועד הטכנאים
+        והמהנדסים, ובשנת 1996 מונה ליושב ראש צוות מדיניות קרנות הפנסיה של
+        ההסתדרות.
+      en: Before entering the Knesset, Haim Katz had a prominent labor-organizing
+        background. He joined the Israel Aerospace Industries workers' council
+        in 1983, served as chairman of its technicians and engineers' union, and
+        in 1996 was appointed chairman of the Histadrut's pension funds policy
+        team.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Haim_Katz
+        title: Haim Katz
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: השר הישראלי הראשון שקיים ביקור פומבי בערב הסעודית
+      en: First Israeli cabinet minister to make a public visit to Saudi Arabia
+    description:
+      he: ב-26 בספטמבר 2023, בתפקידו כשר התיירות, הפך חיים כץ לחבר הקבינט הישראלי
+        הראשון שביקר בפומבי בערב הסעודית, בעת שהוביל משלחת רשמית לכנס של ארגון
+        התיירות העולמי של האו"ם.
+      en: On 26 September 2023, in his role as Minister of Tourism, Haim Katz became
+        the first Israeli cabinet member to make a public visit to Saudi Arabia,
+        leading an official delegation to a UN World Tourism Organization
+        conference.
+    date: 2023-09-26
+    sources:
+      - url: https://www.aljazeera.com/news/2023/9/26/israeli-minister-arrives-in-saudi-arabia-in-first-ever-public-visit
+        title: Israeli minister arrives in Saudi Arabia in first public visit
+        publisher: Al Jazeera
+      - url: https://en.wikipedia.org/wiki/Haim_Katz
+        title: Haim Katz
+        publisher: Wikipedia
+  - kind: negative
+    category: conviction
+    status: convicted
+    title:
+      he: הורשע בעבירה פלילית במסגרת הסדר טיעון
+      en: Convicted of a criminal offense under a plea bargain
+    description:
+      he: בדצמבר 2021 הורשע חיים כץ, במסגרת הסדר טיעון, בעבירה של קשירת קשר להשגת מטרה
+        כשרה באמצעים פסולים, בקשר לשימוש בסמכותו כיושב ראש ועדת העבודה והרווחה
+        של הכנסת. כתב האישום המקורי כלל עבירות של מרמה והפרת אמונים. במסגרת
+        ההסדר הומלץ על עונש מאסר על תנאי וקנס. כץ התפטר מתפקידו כשר הרווחה
+        באוגוסט 2019, לאחר שהיועץ המשפטי לממשלה הודיע על כוונתו להעמידו לדין.
+      en: In December 2021, Haim Katz was convicted, under a plea bargain, of
+        conspiracy to achieve a goal that was in itself legal but by improper
+        means, in connection with the use of his authority as chairman of the
+        Knesset Labor and Welfare Committee. The original indictment had
+        included fraud and breach of trust. Under the plea deal a suspended
+        prison term and a fine were recommended. Katz resigned as Welfare
+        Minister in August 2019 after the Attorney General announced his
+        intention to indict him.
+    date: 2021-12-27
+    sources:
+      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-689866
+        title: Haim Katz convicted of minor fraud in plea deal, asks for suspended
+          sentence
+        publisher: The Jerusalem Post
+      - url: https://www.haaretz.com/israel-news/2019-08-14/ty-article/.premium/israels-labor-minister-indicted-for-fraud-breach-of-trust/0000017f-efda-d8a1-a5ff-ffda92d30000
+        title: Israel's Labor Minister Indicted for Fraud, Breach of Trust
+        publisher: Haaretz
+      - url: https://www.timesofisrael.com/welfare-minister-resigns-from-cabinet-as-graft-charges-loom/
+        title: Welfare minister resigns from cabinet as graft charges loom
+        publisher: The Times of Israel

@@ -1,0 +1,97 @@
+# PersonID 30704. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30704
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר כנסת ושר התקשורת מטעם הליכוד
+      en: Member of Knesset and Minister of Communications (Likud)
+    description:
+      he: שלמה קרעי נבחר לכנסת לראשונה בבחירות אפריל 2019 מטעם מפלגת הליכוד. לאחר
+        בחירות 2022 מונה לשר התקשורת בממשלה השלושים ושבע של ישראל, תפקיד שבו הוא
+        מכהן מאז דצמבר 2022.
+      en: Shlomo Karhi was first elected to the Knesset in the April 2019 elections as
+        a member of the Likud party. Following the 2022 elections he was
+        appointed Minister of Communications in Israel's thirty-seventh
+        government, a post he has held since December 2022.
+    date: 2022-12-29
+    sources:
+      - url: https://en.wikipedia.org/wiki/Shlomo_Karhi
+        title: Shlomo Karhi
+        publisher: Wikipedia
+      - url: https://www.jpost.com/Israel-News/Meet-the-new-MK-Shlomo-Karhi-of-Likud-587471
+        title: "Meet the new MK: Shlomo Karhi of Likud"
+        publisher: The Jerusalem Post
+  - kind: positive
+    category: achievement
+    title:
+      he: שירות צבאי בגדוד נצח יהודה ותואר דוקטור
+      en: Military service in the Netzah Yehuda Battalion and doctoral degree
+    description:
+      he: קרעי שירת בשירותו הצבאי בגדוד נצח יהודה (הנח"ל החרדי) בצה"ל. לאחר מכן השלים
+        תואר ראשון בראיית חשבון ניהולית ומערכות מידע במרכז האקדמי לב, ותואר שני
+        ודוקטורט בהנדסת תעשייה וניהול באוניברסיטת בן-גוריון בנגב.
+      en: Karhi served in the IDF's Netzah Yehuda Battalion (the Haredi Nahal track)
+        during his national military service. He went on to earn a BA in
+        managerial accounting and information systems at the Lev Academic Center
+        (Jerusalem College of Technology), and a master's degree and a PhD in
+        industrial engineering and management at Ben-Gurion University of the
+        Negev.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Shlomo_Karhi
+        title: Shlomo Karhi
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%9E%D7%94_%D7%A7%D7%A8%D7%A2%D7%99
+        title: שלמה קרעי
+        publisher: Hebrew Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: מתן רישיון להפעלת שירות הלוויין Starlink בישראל
+      en: Licensed Starlink satellite internet service to operate in Israel
+    description:
+      he: בפברואר 2024, כשר התקשורת, העניק קרעי רישיון להפעלת שירות האינטרנט הלווייני
+        Starlink של חברת SpaceX בישראל, לאחר שהחברה הסכימה לסדרת אמצעים
+        ביטחוניים והשירות הוגבל בתחילה לרשימת לקוחות מוגדרת.
+      en: In February 2024, as Communications Minister, Karhi granted a license for
+        SpaceX's Starlink satellite internet service to operate in Israel, after
+        the company agreed to a set of security measures and the service was
+        initially limited to a defined list of customers.
+    date: 2024-02-14
+    sources:
+      - url: https://www.ynetnews.com/business/article/rjhzstcop
+        title: Elon Musk's Starlink is coming to Israel, Gaza
+        publisher: Ynetnews
+      - url: https://www.gov.il/en/pages/10082025
+        title: Elon Musk's 'Starlink' has started operating in Israel
+        publisher: Israel Ministry of Communications (gov.il)
+  - kind: negative
+    category: controversy
+    status: settled
+    title:
+      he: חתימה על צו לסגירת פעילות אל-ג'זירה בישראל
+      en: Signed order shutting down Al Jazeera's operations in Israel
+    description:
+      he: במאי 2024, לאחר החלטת ממשלה פה אחד, חתם שר התקשורת קרעי על צווים לסגירת
+        פעילות רשת אל-ג'זירה בישראל ולהחרמת ציוד השידור שלה, מכוח חוק שאושר
+        בכנסת באפריל 2024 המאפשר סגירה זמנית של כלי תקשורת זרים מטעמי ביטחון.
+        ארגוני חופש העיתונות מתחו ביקורת על המהלך. מדובר בפעולה מנהלית-שלטונית
+        ולא בהליך פלילי הנוגע לקרעי עצמו.
+      en: In May 2024, following a unanimous government decision, Communications
+        Minister Karhi signed orders to shut down Al Jazeera's operations in
+        Israel and seize its broadcasting equipment, under a law passed by the
+        Knesset in April 2024 permitting the temporary closure of foreign media
+        outlets on security grounds. Press-freedom organizations criticized the
+        move. This is an official administrative ministerial action and not a
+        criminal matter concerning Karhi personally.
+    date: 2024-05-05
+    sources:
+      - url: https://www.aljazeera.com/news/2024/5/5/netanyahu-government-votes-to-close-al-jazeera-channel-in-israel
+        title: Al Jazeera condemns Israeli government decision to shut down local
+          offices
+        publisher: Al Jazeera
+      - url: https://www.washingtonpost.com/world/2024/05/05/al-jazeera-israel-shut-down-gaza/
+        title: Israel shuts down Al Jazeera's operations, raids Jerusalem office
+        publisher: The Washington Post

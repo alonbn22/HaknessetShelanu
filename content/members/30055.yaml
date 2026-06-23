@@ -1,0 +1,19 @@
+# Bezalel Smotrich (PersonID 30055). Factual reporting from reputable public
+# sources, cited per claim. Neutral language. REVIEW before launch.
+personId: 30055
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: "שר האוצר ומנהיג מפלגת הציונות הדתית"
+      en: "Minister of Finance and leader of the Religious Zionist party"
+    description:
+      he: "עורך דין במקצועו שהנהיג את מפלגת הציונות הדתית, כיהן כשר התחבורה ולאחר מכן כשר האוצר בממשלה שהוקמה ב-2022."
+      en: "A lawyer by profession who led the Religious Zionist party, served as Minister of Transport and subsequently as Minister of Finance in the government formed in 2022."
+    sources:
+      - url: "https://en.wikipedia.org/wiki/Bezalel_Smotrich"
+        title: "Bezalel Smotrich"
+        publisher: "Wikipedia"
+      - url: "https://www.britannica.com/biography/Bezalel-Smotrich"
+        title: "Bezalel Smotrich — Biography"
+        publisher: "Encyclopædia Britannica"

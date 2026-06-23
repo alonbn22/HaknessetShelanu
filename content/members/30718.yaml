@@ -1,0 +1,67 @@
+# PersonID 30718. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30718
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: מונתה לשרה להגנת הסביבה
+      en: Appointed Minister of Environmental Protection
+    description:
+      he: ב-29 בדצמבר 2022 מונתה עידית סילמן לשרה להגנת הסביבה בממשלה השלושים ושבע
+        בראשות בנימין נתניהו, תפקיד שבו היא מכהנת מטעם הליכוד.
+      en: On 29 December 2022, Idit Silman was appointed Minister of Environmental
+        Protection in the thirty-seventh government of Israel led by Benjamin
+        Netanyahu, a post she holds on behalf of Likud.
+    date: 2022-12-29
+    sources:
+      - url: https://en.wikipedia.org/wiki/Idit_Silman
+        title: Idit Silman
+        publisher: Wikipedia
+      - url: https://www.jewishvirtuallibrary.org/Idit-Silman
+        title: Idit Silman
+        publisher: Jewish Virtual Library
+  - kind: positive
+    category: achievement
+    title:
+      he: כיהנה כיושבת ראש הקואליציה ויושבת ראש ועדת הבריאות
+      en: Served as coalition whip and chair of the Health Committee
+    description:
+      he: בכנסת ה-24 כיהנה סילמן כיושבת ראש הקואליציה וכיושבת ראש ועדת הבריאות, ולקחה
+        חלק מרכזי בהעברת תקציב המדינה הראשון של ישראל מזה למעלה משלוש שנים.
+      en: In the 24th Knesset, Silman served as coalition whip and chair of the Health
+        Committee, and played a central role in the passage of Israel's first
+        state budget in more than three years.
+    date: 2021-04-01
+    sources:
+      - url: https://en.wikipedia.org/wiki/Idit_Silman
+        title: Idit Silman
+        publisher: Wikipedia
+      - url: https://www.jewishvirtuallibrary.org/Idit-Silman
+        title: Idit Silman
+        publisher: Jewish Virtual Library
+  - kind: negative
+    category: controversy
+    status: settled
+    title:
+      he: פרישה מהקואליציה שהביאה לאובדן הרוב של ממשלת בנט-לפיד
+      en: Coalition resignation that cost the Bennett-Lapid government its majority
+    description:
+      he: ב-6 באפריל 2022 הודיעה סילמן, ששימשה אז יושבת ראש הקואליציה, על פרישתה
+        מהקואליציה. צעד זה הותיר את ממשלת בנט-לפיד ללא רוב בכנסת ותרם להתפרקותה
+        ולפיזור הכנסת בהמשך אותה שנה. סילמן נימקה את החלטתה בחילוקי דעות בנושאי
+        זהות יהודית ומדיניות דתית.
+      en: On 6 April 2022, Silman, then serving as coalition whip, announced her
+        resignation from the coalition. The move left the Bennett-Lapid
+        government without a Knesset majority and contributed to its eventual
+        collapse and the dissolution of the Knesset later that year. Silman
+        cited disagreements over Jewish identity and religious policy.
+    date: 2022-04-06
+    sources:
+      - url: https://en.wikipedia.org/wiki/Idit_Silman
+        title: Idit Silman
+        publisher: Wikipedia
+      - url: https://www.haaretz.com/israel-news/2022-04-06/ty-article/israels-ruling-coalition-loses-majority-as-whip-steps-down/00000180-5ba6-d718-afd9-dfbe97720000
+        title: Israel's Ruling Coalition Loses Majority as Whip Steps Down
+        publisher: Haaretz

@@ -1,0 +1,19 @@
+# Merav Michaeli (PersonID 23565). Factual reporting from reputable public sources,
+# cited per claim. Neutral language. REVIEW before launch.
+personId: 23565
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: "הנהיגה את מפלגת העבודה וכיהנה כשרת התחבורה"
+      en: "Led the Labor party and served as Minister of Transport"
+    description:
+      he: "עיתונאית ופעילה לזכויות נשים שנבחרה לראשות מפלגת העבודה ב-2021 וכיהנה כשרת התחבורה והבטיחות בדרכים."
+      en: "A journalist and women's-rights advocate who was elected leader of the Labor party in 2021 and served as Minister of Transport and Road Safety."
+    sources:
+      - url: "https://en.wikipedia.org/wiki/Merav_Michaeli"
+        title: "Merav Michaeli"
+        publisher: "Wikipedia"
+      - url: "https://www.timesofisrael.com/topic/merav-michaeli/"
+        title: "Merav Michaeli — topic coverage"
+        publisher: "The Times of Israel"

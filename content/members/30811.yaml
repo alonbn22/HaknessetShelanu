@@ -1,0 +1,33 @@
+# Itamar Ben-Gvir (PersonID 30811). Factual reporting from reputable public
+# sources, cited per claim. Neutral language; legal status marked. REVIEW before launch.
+personId: 30811
+claims:
+  - kind: negative
+    category: conviction
+    status: convicted
+    title:
+      he: "הורשע בעבר בהסתה לגזענות ובתמיכה בארגון טרור"
+      en: "Convicted of incitement to racism and supporting a terrorist organization"
+    date: "2007-01-01"
+    description:
+      he: "לאורך השנים הורשע במספר עבירות, ובהן הסתה לגזענות ותמיכה בתנועת כ\"ך שהוכרזה בישראל כארגון טרור. לפי הדיווחים הוגשו נגדו עשרות כתבי אישום, שרובם הסתיימו בזיכוי או בדחייה."
+      en: "Over the years he has been convicted on several counts, including incitement to racism and supporting the Kach movement, which Israel has designated a terrorist organization. He is reported to have faced dozens of indictments, most of which ended in acquittal or dismissal."
+    sources:
+      - url: "https://en.wikipedia.org/wiki/Itamar_Ben-Gvir"
+        title: "Itamar Ben-Gvir"
+        publisher: "Wikipedia"
+      - url: "https://www.britannica.com/biography/Itamar-Ben-Gvir"
+        title: "Itamar Ben-Gvir — Biography"
+        publisher: "Encyclopædia Britannica"
+  - kind: positive
+    category: achievement
+    title:
+      he: "מנהיג עוצמה יהודית ושר לביטחון לאומי"
+      en: "Leader of Otzma Yehudit and Minister of National Security"
+    description:
+      he: "הוביל את מפלגת עוצמה יהודית לכניסה משמעותית לכנסת ומונה לשר לביטחון לאומי בממשלה שהוקמה ב-2022."
+      en: "Led the Otzma Yehudit party to a significant Knesset presence and was appointed Minister of National Security in the government formed in 2022."
+    sources:
+      - url: "https://en.wikipedia.org/wiki/Itamar_Ben-Gvir"
+        title: "Itamar Ben-Gvir"
+        publisher: "Wikipedia"

@@ -1,0 +1,75 @@
+# PersonID 1025. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 1025
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: האישה הראשונה שכיהנה כיושבת ראש התאחדות הסטודנטים הארצית
+      en: First woman to chair the National Union of Israeli Students
+    description:
+      he: לפני כניסתה לפוליטיקה הארצית, גילה גמליאל הייתה האישה הראשונה שכיהנה כיושבת
+        ראש התאחדות הסטודנטים הארצית בישראל.
+      en: Before entering national politics, Gila Gamliel was the first woman to serve
+        as chair of the National Union of Israeli Students.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Gila_Gamliel
+        title: Gila Gamliel
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: קריירה שרותית ענפה בליכוד; כיום שרת החדשנות, המדע והטכנולוגיה
+      en: Extensive ministerial career in Likud; currently Minister of Innovation,
+        Science and Technology
+    description:
+      he: "גמליאל, חברת כנסת מטעם הליכוד, כיהנה במגוון תפקידי שר: השרה לשוויון חברתי
+        (2015–2020), השרה להגנת הסביבה (2020–2021) והשרה למודיעין (2023–2024).
+        מאז מרץ 2024 היא מכהנת כשרת החדשנות, המדע והטכנולוגיה."
+      en: "A Likud member of the Knesset, Gamliel has held multiple cabinet posts:
+        Minister for Social Equality (2015–2020), Minister of Environmental
+        Protection (2020–2021), and Minister of Intelligence (2023–2024). Since
+        March 2024 she has served as Minister of Innovation, Science and
+        Technology."
+    date: 2024-03-01
+    sources:
+      - url: https://en.wikipedia.org/wiki/Gila_Gamliel
+        title: Gila Gamliel
+        publisher: Wikipedia
+      - url: https://www.jpost.com/business-and-innovation/article-794095
+        title: Israel's new innovation minister aims to lead in AI revolution
+        publisher: The Jerusalem Post
+  - kind: negative
+    category: controversy
+    status: acquitted
+    title:
+      he: הפרת סגר הקורונה ביום כיפור 2020; היועץ המשפטי לא פתח בחקירה
+      en: COVID-19 lockdown breach on Yom Kippur 2020; no criminal probe opened
+    description:
+      he: באוקטובר 2020, בעת כהונתה כשרה להגנת הסביבה, נסעה גמליאל מביתה בתל אביב
+        לטבריה לתפילות יום כיפור בעת הסגר הארצי השני, ולאחר מכן אובחנה כחיובית
+        לקורונה. בעקבות דיווחים שלפיהם מסרה מידע שגוי לחוקרים האפידמיולוגיים,
+        נבחנה האפשרות לפתוח בחקירה פלילית. היועץ המשפטי לממשלה אביחי מנדלבליט
+        החליט שלא לפתוח בחקירה, קבע כי 'אין בסיס' לטענה שמסרה מידע כוזב ואמר כי
+        שיתפה פעולה ומסרה עובדות אמת; הפער יוחס לתקלה במערכת המחשוב של משרד
+        הבריאות.
+      en: In October 2020, while serving as Minister of Environmental Protection,
+        Gamliel travelled from her Tel Aviv home to Tiberias for Yom Kippur
+        prayers during Israel's second national lockdown, and was subsequently
+        diagnosed with COVID-19. Following reports that she had given incorrect
+        information to epidemiological contact tracers, the possibility of a
+        criminal investigation was examined. Attorney General Avichai Mandelblit
+        decided not to open a probe, finding 'no basis' for the allegation that
+        she misled tracers and stating she had 'fully cooperated and provided
+        true facts'; the discrepancy was attributed to a Health Ministry
+        computer glitch.
+    date: 2020-10-05
+    sources:
+      - url: https://www.timesofisrael.com/minister-broke-lockdown-for-yom-kippur-prayers-days-before-virus-diagnosis/
+        title: Calls to fire minister who broke lockdown to visit family, then fell ill
+        publisher: The Times of Israel
+      - url: https://www.timesofisrael.com/computer-glitch-said-to-blame-for-suspicions-minister-lied-to-contact-tracers/
+        title: Computer glitch said to blame for suspicions minister lied to contact
+          tracers
+        publisher: The Times of Israel

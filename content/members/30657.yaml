@@ -1,0 +1,19 @@
+# Benny Gantz (PersonID 30657). Factual reporting from reputable public sources,
+# cited per claim. Neutral language. REVIEW before launch.
+personId: 30657
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: "הרמטכ\"ל ה-20 של צה\"ל ולימים שר הביטחון"
+      en: "20th Chief of the General Staff of the IDF, later Defense Minister"
+    description:
+      he: "כיהן כרמטכ\"ל בין 2011 ל-2015. נכנס לפוליטיקה בראש מפלגת כחול לבן וכיהן כשר הביטחון וכראש ממשלה חלופי."
+      en: "Served as IDF Chief of Staff from 2011 to 2015. Entered politics leading the Blue and White party and served as Defense Minister and Alternate Prime Minister."
+    sources:
+      - url: "https://en.wikipedia.org/wiki/Benny_Gantz"
+        title: "Benny Gantz"
+        publisher: "Wikipedia"
+      - url: "https://www.britannica.com/biography/Benny-Gantz"
+        title: "Benny Gantz — Biography"
+        publisher: "Encyclopædia Britannica"

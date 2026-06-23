@@ -1,0 +1,66 @@
+# PersonID 4395. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 4395
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: ראש השב"כ בתקופת האינתיפאדה השנייה (2000–2005)
+      en: Director of the Shin Bet during the Second Intifada (2000–2005)
+    description:
+      he: אבי דיכטר שירת כראש שירות הביטחון הכללי (שב"כ) בין השנים 2000 ל-2005, בתקופת
+        האינתיפאדה השנייה. במהלך כהונתו הוביל שינוי בדרכי הפעולה של הארגון
+        ובמיקודו במאמצי לוחמה בטרור ובמודיעין.
+      en: Avi Dichter served as Director of the Shin Bet (Israel Security Agency) from
+        2000 to 2005, during the Second Intifada. He led a restructuring of the
+        organization toward counter-terrorism and intelligence operations during
+        one of its most active periods.
+    date: 2000-01-01
+    sources:
+      - url: https://en.wikipedia.org/wiki/Avi_Dichter
+        title: Avi Dichter
+        publisher: Wikipedia
+      - url: https://www.timesofisrael.com/netanyahu-appoints-ex-shin-bet-head-avi-dichter-deputy-defense-minister/
+        title: Netanyahu appoints ex-Shin Bet head Avi Dichter deputy defense minister
+        publisher: The Times of Israel
+  - kind: positive
+    category: achievement
+    title:
+      he: שר לביטחון פנים (2006–2009)
+      en: Minister of Internal Security (2006–2009)
+    description:
+      he: דיכטר נבחר לכנסת ברשימת קדימה בשנת 2006 ומונה לשר לביטחון פנים, תפקיד
+        שבמסגרתו פיקח על משטרת ישראל ושירות בתי הסוהר. בתקופת כהונתו הוקמה
+        היחידה הארצית לחקירות פשיעה חמורה ובינלאומית (להב 433).
+      en: Dichter was elected to the Knesset on the Kadima list in 2006 and appointed
+        Minister of Internal Security, overseeing the Israel Police and the
+        Prison Service. During his tenure the national serious-crime unit Lahav
+        433 was established.
+    date: 2006-05-04
+    sources:
+      - url: https://en.wikipedia.org/wiki/Avi_Dichter
+        title: Avi Dichter
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: שר החקלאות וביטחון המזון (מ-2022)
+      en: Minister of Agriculture and Food Security (since 2022)
+    description:
+      he: עם חזרת הליכוד לשלטון בסוף 2022 מונה אבי דיכטר לשר החקלאות וביטחון המזון,
+        התפקיד שבו הוא מכהן כיום. קודם לכן כיהן גם כיושב ראש ועדת החוץ והביטחון
+        של הכנסת (2016–2019).
+      en: Following the Likud's return to power in late 2022, Avi Dichter was
+        appointed Minister of Agriculture and Food Security, the office he
+        currently holds. He had earlier chaired the Knesset's Foreign Affairs
+        and Defense Committee (2016–2019).
+    date: 2022-12-29
+    sources:
+      - url: https://en.wikipedia.org/wiki/Avi_Dichter
+        title: Avi Dichter
+        publisher: Wikipedia
+      - url: https://www.timesofisrael.com/ex-shin-bet-chief-dichter-now-a-likud-minister-said-among-pms-candidates-to-head-agency/
+        title: Ex-Shin Bet chief Dichter, now a Likud minister, said among PM's
+          candidates to head agency
+        publisher: The Times of Israel

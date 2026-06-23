@@ -1,0 +1,73 @@
+# PersonID 23564. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 23564
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר הכנסת מטעם הליכוד מאז 2015
+      en: Member of Knesset for Likud since 2015
+    description:
+      he: דודי אמסלם נבחר לראשונה לכנסת ה-20 בשנת 2015 ברשימת הליכוד, ומכהן כחבר כנסת
+        ברציפות מאז. לפני כניסתו לפוליטיקה הארצית עבד שנים רבות בשירות הציבורי,
+        בין היתר כלכלן באגף התקציבים במשרד האוצר, בביטוח הלאומי וברשות המסים,
+        וכן בעיריית ירושלים, וכיהן כיושב ראש סניף הליכוד בירושלים.
+      en: Dudi Amsalem was first elected to the 20th Knesset in 2015 on the Likud list
+        and has served continuously as a member of Knesset since then. Before
+        entering national politics he spent many years in public service,
+        including economist roles in the Finance Ministry budget department, the
+        National Insurance Institute and the Tax Authority, as well as in the
+        Jerusalem Municipality, and chaired Likud's Jerusalem branch.
+    date: 2015-03-17
+    sources:
+      - url: https://en.wikipedia.org/wiki/Dudi_Amsalem
+        title: Dudi Amsalem
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%93%D7%99_%D7%90%D7%9E%D7%A1%D7%9C%D7%9D
+        title: דודי אמסלם
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: achievement
+    title:
+      he: שר שיתוף פעולה אזורי ושר נוסף במשרד המשפטים
+      en: Minister of Regional Cooperation and additional minister in the Justice
+        Ministry
+    description:
+      he: בפברואר 2023 החליטה ממשלת נתניהו לצרף את אמסלם כשר שיתוף הפעולה האזורי, שר
+        נוסף במשרד המשפטים והשר המקשר בין הממשלה לכנסת. בין תחומי אחריותו נכללה
+        גם רשות החברות הממשלתיות.
+      en: In February 2023, the Netanyahu government decided to add Amsalem as
+        Minister of Regional Cooperation, an additional minister in the Justice
+        Ministry, and the minister liaising between the government and the
+        Knesset. His portfolios included oversight of the Government Companies
+        Authority.
+    date: 2023-02-12
+    sources:
+      - url: https://en.wikipedia.org/wiki/Dudi_Amsalem
+        title: Dudi Amsalem
+        publisher: Wikipedia
+      - url: https://www.timesofisrael.com/supreme-court-critic-amsalem-installed-as-second-minister-in-justice-ministry/
+        title: Supreme Court critic Amsalem installed as second minister in Justice
+          Ministry
+        publisher: The Times of Israel
+  - kind: positive
+    category: achievement
+    title:
+      he: כיהן כשר התקשורת (2019–2020)
+      en: Served as Minister of Communications (2019-2020)
+    description:
+      he: אמסלם כיהן כשר התקשורת מיולי 2019 עד שנת 2020, ולאחר מכן כשר במשרד הדיגיטל
+        הלאומי. בעת מינויו לשר התקשורת שימש כיושב ראש הקואליציה בכנסת.
+      en: Amsalem served as Minister of Communications from July 2019 to 2020, and
+        subsequently as minister for national digital matters. At the time of
+        his appointment as communications minister he was serving as chairman of
+        the coalition in the Knesset.
+    date: 2019-07-01
+    sources:
+      - url: https://en.wikipedia.org/wiki/Dudi_Amsalem
+        title: Dudi Amsalem
+        publisher: Wikipedia
+      - url: https://www.jns.org/netanyahu-names-likud-mk-david-amsalem-communications-minister/
+        title: Netanyahu names Knesset member David Amsalem as communications minister
+        publisher: JNS

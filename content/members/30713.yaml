@@ -1,0 +1,19 @@
+# Mansour Abbas (PersonID 30713). Factual reporting from reputable public sources,
+# cited per claim. Neutral language. REVIEW before launch.
+personId: 30713
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: "ראש מפלגה ערבית עצמאית ראשון שהצטרף לקואליציה שלטת (2021)"
+      en: "First leader of an independent Arab party to join a governing coalition (2021)"
+    description:
+      he: "כראש הרשימה הערבית המאוחדת (רע\"ם) הוביל ב-2021 צעד היסטורי שבו מפלגה ערבית עצמאית הצטרפה לקואליציה שלטת בישראל."
+      en: "As leader of the United Arab List (Ra'am), in 2021 he led a historic step in which an independent Arab party joined a governing coalition in Israel."
+    sources:
+      - url: "https://en.wikipedia.org/wiki/Mansour_Abbas"
+        title: "Mansour Abbas"
+        publisher: "Wikipedia"
+      - url: "https://www.reuters.com/world/middle-east/an-arab-party-helped-form-israeli-government-now-comes-hard-part-2021-06-14/"
+        title: "An Arab party helped form Israel's government"
+        publisher: "Reuters"

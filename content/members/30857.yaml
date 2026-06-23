@@ -1,0 +1,67 @@
+# PersonID 30857. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30857
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: מכהן כשר המורשת של ישראל
+      en: Serves as Israel's Minister of Heritage
+    description:
+      he: עמיחי אליהו, חבר הכנסת מטעם מפלגת עוצמה יהודית, מונה לשר ירושלים ומורשת ב-29
+        בדצמבר 2022 בממשלה השלישית בראשות בנימין נתניהו. הוא בנו של הרב שמואל
+        אליהו ונכדו של הראשון לציון הרב מרדכי אליהו, ששימש הרב הראשי הספרדי
+        לישראל.
+      en: Amihai Eliyahu, a Knesset member for the Otzma Yehudit party, was appointed
+        Minister of Jerusalem Affairs and Heritage on 29 December 2022 in the
+        third government led by Benjamin Netanyahu. He is the son of Rabbi
+        Shmuel Eliyahu and grandson of Rabbi Mordechai Eliyahu, who served as
+        the Sephardi Chief Rabbi of Israel.
+    date: 2022-12-29
+    sources:
+      - url: https://en.wikipedia.org/wiki/Amihai_Eliyahu
+        title: Amihai Eliyahu
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: שירת בחטיבת הצנחנים ובמלחמת לבנון השנייה
+      en: Served in the IDF Paratroopers Brigade, including the 2006 Lebanon War
+    description:
+      he: אליהו שירת בצבא ההגנה לישראל בחטיבת הצנחנים ולקח חלק במלחמת לבנון השנייה
+        בשנת 2006.
+      en: Eliyahu served in the Israel Defense Forces' Paratroopers Brigade and took
+        part in the 2006 Second Lebanon War.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Amihai_Eliyahu
+        title: Amihai Eliyahu
+        publisher: Wikipedia
+  - kind: negative
+    category: controversy
+    title:
+      he: השעיה מישיבות הממשלה לאחר אמירה על פצצה גרעינית בעזה
+      en: Suspended from cabinet meetings after remark about a nuclear bomb on Gaza
+    description:
+      he: בריאיון לרדיו 'כל ברמה' בנובמבר 2023, כשנשאל אם הטלת פצצה גרעינית על רצועת
+        עזה היא אופציה, השיב אליהו 'זו אחת האפשרויות'. ראש הממשלה בנימין נתניהו
+        אמר שדבריו 'מנותקים מהמציאות' והשעה אותו מישיבות הממשלה עד להודעה חדשה.
+        אליהו טען מאוחר יותר כי כוונתו הייתה מטאפורית. ההתבטאות גררה גינויים
+        בינלאומיים.
+      en: In a November 2023 interview with Kol Berama radio, when asked whether
+        dropping a nuclear bomb on the Gaza Strip was an option, Eliyahu replied
+        that it was 'one of the possibilities.' Prime Minister Benjamin
+        Netanyahu said the remarks were 'detached from reality' and suspended
+        him from cabinet meetings until further notice. Eliyahu later said his
+        comment was 'metaphorical.' The statement drew international
+        condemnation.
+    date: 2023-11-05
+    sources:
+      - url: https://thebulletin.org/2023/11/israels-netanyahu-suspends-minister-for-suggesting-a-nuclear-weapons-option-in-gaza/
+        title: Israel's Netanyahu suspends minister for suggesting a nuclear weapons
+          option in Gaza
+        publisher: Bulletin of the Atomic Scientists
+      - url: https://www.haaretz.com/israel-news/2023-11-14/ty-article/china-iran-arab-nations-condemn-israeli-ministers-nuclear-bomb-statement/0000018b-cce6-df9a-ab8b-deeeb98f0000
+        title: China, Iran, Arab Nations Condemn Israeli Minister's Statement About
+          Dropping a Nuclear Bomb on Gaza
+        publisher: Haaretz

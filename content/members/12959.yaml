@@ -1,0 +1,74 @@
+# PersonID 12959. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 12959
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: כיהנה כדוברת צה"ל בדרגת תת-אלוף
+      en: Served as IDF Spokesperson at the rank of Brigadier General
+    description:
+      he: מירי רגב שירתה בצה"ל למעלה מ-25 שנה (1983–2008) והגיעה לדרגת תת-אלוף. בשנים
+        2005–2007 כיהנה כדוברת צה"ל, ובכלל זה בתקופת ההתנתקות מרצועת עזה (2005)
+        ומלחמת לבנון השנייה (2006).
+      en: Miri Regev served in the IDF for over 25 years (1983–2008), reaching the
+        rank of Brigadier General. From 2005 to 2007 she served as the IDF
+        Spokesperson, including during the 2005 Gaza disengagement and the 2006
+        Second Lebanon War.
+    date: 2005-06-01
+    sources:
+      - url: https://en.wikipedia.org/wiki/Miri_Regev
+        title: Miri Regev
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: כיהנה כשרת התרבות והספורט (2015–2020)
+      en: Served as Minister of Culture and Sport (2015–2020)
+    description:
+      he: לאחר היבחרה לכנסת מטעם הליכוד בבחירות 2009, מונתה רגב בשנת 2015 על ידי ראש
+        הממשלה בנימין נתניהו לשרת התרבות והספורט בממשלת ישראל, תפקיד בו כיהנה עד
+        שנת 2020.
+      en: After being elected to the Knesset for Likud in the 2009 elections, Regev
+        was appointed Minister of Culture and Sport by Prime Minister Benjamin
+        Netanyahu in 2015, a post she held until 2020.
+    date: 2015-05-14
+    sources:
+      - url: https://en.wikipedia.org/wiki/Miri_Regev
+        title: Miri Regev
+        publisher: Wikipedia
+  - kind: negative
+    category: investigation
+    status: ongoing
+    title:
+      he: חקירת משטרה בעניין משרד התחבורה ("פרשת הרמזור")
+      en: Police investigation into the Transport Ministry ("Traffic Light" affair)
+    description:
+      he: ביוני 2024, בהנחיית היועצת המשפטית לממשלה, פתחה יחידת להב 433 בחקירה פלילית
+        בחשד למרמה והפרת אמונים בנוגע להקצאת תקציבים במשרד התחבורה, בעקבות תחקיר
+        תקשורתי שלפיו הועדפו רשויות מקומיות הקשורות לרגב פוליטית. חוקרים ערכו
+        חיפוש במשרדי המשרד בירושלים ותפסו מסמכים. רגב הכחישה כל עוול. ממצאי
+        החקירה הועברו לפרקליטות המדינה להכרעה אם להגיש כתב אישום; על פי דיווחים
+        בתקשורת הסיכוי להגשת כתב אישום נמוך. טרם הוגש כתב אישום, ויש לראות
+        בעניין חשד בלבד שטרם הוכרע.
+      en: In June 2024, at the direction of Israel's attorney general, the Lahav 433
+        unit opened a criminal investigation on suspicion of fraud and breach of
+        trust over budget allocations at the Transport Ministry, following a
+        media report alleging that localities politically linked to Regev were
+        favored. Investigators searched the ministry's Jerusalem offices and
+        seized documents. Regev denied any wrongdoing. The investigation's
+        findings were transferred to the State Attorney's Office for a decision
+        on whether to file charges; media reports indicated an indictment was
+        unlikely. No indictment has been filed, and the matter remains an
+        unadjudicated suspicion.
+    date: 2024-06-10
+    sources:
+      - url: https://www.haaretz.com/israel-news/2024-06-10/ty-article/.premium/israel-police-launches-investigation-into-transportation-ministers-corruption-allegations/00000190-0195-da02-a1dc-fddf14af0001
+        title: Israel Police Launch Investigation Into Possible Fraud, Breach of Trust
+          at Transportation Ministry
+        publisher: Haaretz
+      - url: https://www.timesofisrael.com/police-raid-transportation-ministry-offices-amid-probe-of-alleged-corruption/
+        title: Police raid Transportation Ministry offices amid probe of alleged
+          corruption
+        publisher: The Times of Israel

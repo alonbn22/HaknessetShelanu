@@ -1,0 +1,261 @@
+# Political dictionary — plain-language explanations of political terms.
+# Editorial content written by the site. Hebrew + English provided; ar/ru fall
+# back to en then he. category: spectrum | ideology | economy | government | electoral | israel
+# Add freely — every term should have an easy, neutral explanation.
+terms:
+  # ---------- spectrum ----------
+  - category: spectrum
+    term: { he: "שמאל", en: "Left" }
+    def:
+      he: "צד במפה הפוליטית שמדגיש שוויון חברתי, מעורבות ממשלתית בכלכלה וזכויות פרט, ובישראל לרוב גם נכונות לפשרה מדינית."
+      en: "The side of politics that emphasizes social equality, an active government role in the economy, and individual rights — in Israel, usually also openness to territorial compromise."
+  - category: spectrum
+    term: { he: "מרכז", en: "Center" }
+    def:
+      he: "עמדה ממוצעת בין ימין לשמאל, שמשלבת רעיונות משני הצדדים ונמנעת מקיצוניות."
+      en: "A middle position between left and right that mixes ideas from both sides and avoids extremes."
+  - category: spectrum
+    term: { he: "ימין", en: "Right" }
+    def:
+      he: "צד במפה הפוליטית שמדגיש שוק חופשי, מסורת וזהות לאומית, ובישראל לרוב גם עמדה ביטחונית תקיפה."
+      en: "The side of politics that emphasizes free markets, tradition and national identity — in Israel, usually also a tough security stance."
+  - category: spectrum
+    term: { he: "מרכז־שמאל / מרכז־ימין", en: "Center-left / Center-right" }
+    def:
+      he: "עמדות מתונות הנוטות מעט לשמאל או לימין — קרובות למרכז אך עם הטיה ברורה."
+      en: "Moderate positions leaning slightly toward the left or the right — close to the center but with a clear tilt."
+  - category: spectrum
+    term: { he: "ימין קיצוני", en: "Far-right" }
+    def:
+      he: "עמדות לאומיות נוקשות מאוד, לעיתים עם יחס שלילי למיעוטים או למוסדות. \"קיצוני\" מציין מרחק רב מהמרכז, לא בהכרח אלימות."
+      en: "Very hardline nationalist positions, sometimes hostile to minorities or institutions. \"Far\" means far from the center — not necessarily violent."
+
+  # ---------- ideology ----------
+  - category: ideology
+    term: { he: "ליברליזם", en: "Liberalism" }
+    def:
+      he: "תפיסה שמעמידה במרכז את חירות הפרט, זכויות אדם, שוק חופשי ושלטון החוק, והגבלת כוחה של הממשלה על חיי הפרט."
+      en: "A worldview centered on individual freedom, human rights, free markets and the rule of law, limiting the government's power over private life."
+  - category: ideology
+    term: { he: "שמרנות", en: "Conservatism" }
+    def:
+      he: "תפיסה שמעדיפה לשמר מסורת, דת ומוסדות קיימים, ונזהרת משינויים מהירים."
+      en: "A worldview that prefers to preserve tradition, religion and existing institutions, and is wary of rapid change."
+  - category: ideology
+    term: { he: "סוציאליזם", en: "Socialism" }
+    def:
+      he: "תפיסה ששואפת לצמצם פערים כלכליים באמצעות בעלות ציבורית או פיקוח על משאבים ושירותים."
+      en: "A worldview that seeks to reduce economic gaps through public ownership or control of resources and services."
+  - category: ideology
+    term: { he: "סוציאל־דמוקרטיה", en: "Social democracy" }
+    def:
+      he: "שילוב של כלכלת שוק עם מדינת רווחה חזקה — שוק חופשי לצד מסים ושירותים ציבוריים נרחבים."
+      en: "A blend of a market economy with a strong welfare state — free markets alongside high taxes and broad public services."
+  - category: ideology
+    term: { he: "קומוניזם", en: "Communism" }
+    def:
+      he: "אידאולוגיה שמבקשת חברה ללא מעמדות שבה אמצעי הייצור בבעלות משותפת. גרסה רדיקלית של סוציאליזם."
+      en: "An ideology aiming for a classless society in which the means of production are commonly owned — a radical form of socialism."
+  - category: ideology
+    term: { he: "ליברטריאניזם", en: "Libertarianism" }
+    def:
+      he: "תפיסה הדוגלת בממשלה קטנה ככל האפשר, חירות אישית וכלכלית מרבית ומעט מאוד התערבות מדינתית."
+      en: "A view favoring the smallest possible government, maximum personal and economic freedom, and minimal state intervention."
+  - category: ideology
+    term: { he: "לאומיות", en: "Nationalism" }
+    def:
+      he: "תפיסה שמעמידה את האומה ואת האינטרס הלאומי במרכז, ולעיתים מדגישה ריבונות וזהות תרבותית."
+      en: "A view that places the nation and the national interest at the center, often stressing sovereignty and cultural identity."
+  - category: ideology
+    term: { he: "פופוליזם", en: "Populism" }
+    def:
+      he: "סגנון פוליטי שמציג מאבק בין \"העם\" לבין \"האליטות\", לרוב במסרים פשוטים ורגשיים."
+      en: "A political style that frames a struggle between \"the people\" and \"the elites\", usually with simple, emotional messaging."
+  - category: ideology
+    term: { he: "פרוגרסיביות", en: "Progressivism" }
+    def:
+      he: "תפיסה שדוחפת לשינוי ולרפורמות חברתיות — קידום שוויון, זכויות מיעוטים וצדק חברתי."
+      en: "A view that pushes for social change and reform — advancing equality, minority rights and social justice."
+  - category: ideology
+    term: { he: "חילוניות", en: "Secularism" }
+    def:
+      he: "הפרדה בין דת למדינה — מדיניות שאינה נשענת על כללים דתיים ומכבדת חופש דת ומצפון."
+      en: "Separation of religion and state — policy not based on religious rules, respecting freedom of religion and conscience."
+  - category: ideology
+    term: { he: "תאוקרטיה", en: "Theocracy" }
+    def:
+      he: "שלטון שמבוסס על חוק דתי, שבו מנהיגים או כללים דתיים קובעים את המדיניות."
+      en: "Rule based on religious law, where religious leaders or rules determine policy."
+
+  # ---------- economy ----------
+  - category: economy
+    term: { he: "קפיטליזם", en: "Capitalism" }
+    def:
+      he: "שיטה כלכלית של שוק חופשי שבה עסקים ונכסים בבעלות פרטית, והמחירים נקבעים לפי היצע וביקוש."
+      en: "A free-market economic system where businesses and assets are privately owned and prices are set by supply and demand."
+  - category: economy
+    term: { he: "כלכלת שוק חופשי", en: "Free-market economy" }
+    def:
+      he: "כלכלה שבה הממשלה מתערבת מעט, והשוק (קונים ומוכרים) קובע מחירים וייצור."
+      en: "An economy where the government intervenes little and the market (buyers and sellers) sets prices and production."
+  - category: economy
+    term: { he: "מדינת רווחה", en: "Welfare state" }
+    def:
+      he: "מדינה שמספקת שירותים חברתיים נרחבים — בריאות, חינוך, קצבאות — הממומנים ממסים."
+      en: "A state that provides broad social services — health, education, benefits — funded by taxes."
+  - category: economy
+    term: { he: "פרטה", en: "Privatization" }
+    def:
+      he: "העברת שירותים או חברות מבעלות הממשלה לידיים פרטיות."
+      en: "Transferring services or companies from government ownership to private hands."
+  - category: economy
+    term: { he: "רגולציה", en: "Regulation" }
+    def:
+      he: "כללים שהממשלה קובעת כדי לפקח על שווקים, עסקים או מקצועות (למשל בטיחות, מחירים)."
+      en: "Rules the government sets to oversee markets, businesses or professions (e.g. safety, pricing)."
+  - category: economy
+    term: { he: "תקציב המדינה", en: "State budget" }
+    def:
+      he: "תוכנית ההוצאות וההכנסות של הממשלה לשנה (ולעיתים לשנתיים), המתקבלת בחוק. קובעת כמה כסף יקבל כל משרד ולמה."
+      en: "The government's plan of spending and revenue for the year (sometimes two years), enacted in law. It sets how much money each ministry gets and for what."
+  - category: economy
+    term: { he: "חוק התקציב", en: "Budget Law" }
+    def:
+      he: "החוק שמאשר את תקציב המדינה. אם לא מאושר במועד, הכנסת מתפזרת ונקבעות בחירות. עובר שלוש קריאות במליאה."
+      en: "The law that approves the state budget. If it isn't passed on time, the Knesset is dissolved and elections are called. It passes three plenum readings."
+  - category: economy
+    term: { he: "גירעון תקציבי", en: "Budget deficit" }
+    def:
+      he: "מצב שבו הוצאות הממשלה גדולות מהכנסותיה בשנה נתונה; הפער מכוסה בדרך כלל בהלוואות (חוב)."
+      en: "When the government spends more than it takes in during a year; the gap is usually covered by borrowing (debt)."
+  - category: economy
+    term: { he: "תקציב נטו וברוטו", en: "Net vs gross budget" }
+    def:
+      he: "תקציב ברוטו הוא סך ההוצאה כולל הוצאות הממומנות מהכנסות מיועדות; תקציב נטו הוא ההוצאה ללא אותן הכנסות. הברוטו תמיד גבוה יותר."
+      en: "The gross budget is total spending including spending funded by designated income; the net budget excludes that income. Gross is always higher."
+  - category: economy
+    term: { he: "סעיף תקציבי", en: "Budget section / line" }
+    def:
+      he: "יחידת התקציב. התקציב בנוי בהיררכיה: סעיף (בדרך כלל משרד) → תחום → תוכנית → תקנה (הסעיף הקטן ביותר)."
+      en: "A unit of the budget. The budget is hierarchical: section (usually a ministry) → area → program → line item (the smallest unit)."
+  - category: economy
+    term: { he: "תקציב דו-שנתי", en: "Biennial budget" }
+    def:
+      he: "תקציב הנקבע לשנתיים במקום לשנה אחת. בישראל נעשה בו שימוש בכמה ממשלות כדי להגביר יציבות."
+      en: "A budget set for two years instead of one. Israel has used it under several governments to increase stability."
+
+  # ---------- government ----------
+  - category: government
+    term: { he: "דמוקרטיה", en: "Democracy" }
+    def:
+      he: "שיטת ממשל שבה הכוח נובע מהעם — בעיקר באמצעות בחירות חופשיות והוגנות."
+      en: "A system of government in which power comes from the people — mainly through free and fair elections."
+  - category: government
+    term: { he: "משטר פרלמנטרי", en: "Parliamentary system" }
+    def:
+      he: "שיטה שבה הממשלה (הרשות המבצעת) נשענת על אמון הפרלמנט ונבחרת מתוכו, כמו בישראל."
+      en: "A system where the government (the executive) depends on the parliament's confidence and is drawn from it — as in Israel."
+  - category: government
+    term: { he: "הפרדת רשויות", en: "Separation of powers" }
+    def:
+      he: "חלוקת הכוח בין שלוש רשויות — מחוקקת (הכנסת), מבצעת (הממשלה) ושופטת (בתי המשפט) — כדי לאזן ביניהן."
+      en: "Dividing power between three branches — legislative (Knesset), executive (government) and judicial (courts) — to balance them."
+  - category: government
+    term: { he: "שלטון החוק", en: "Rule of law" }
+    def:
+      he: "העיקרון שהכול — כולל הממשלה ונבחרי הציבור — כפופים לחוק באופן שווה."
+      en: "The principle that everyone — including the government and elected officials — is equally subject to the law."
+  - category: government
+    term: { he: "ביקורת שיפוטית", en: "Judicial review" }
+    def:
+      he: "סמכות בית המשפט לבחון אם חוקים או החלטות ממשלה עומדים בחוקי היסוד, ולפסול אותם אם לא."
+      en: "The court's power to check whether laws or government decisions comply with the Basic Laws, and to strike them down if not."
+  - category: government
+    term: { he: "קואליציה", en: "Coalition" }
+    def:
+      he: "איחוד של סיעות שיחד מהוות רוב (61+ מתוך 120) ומקימות את הממשלה."
+      en: "An alliance of factions that together hold a majority (61+ of 120) and form the government."
+  - category: government
+    term: { he: "אופוזיציה", en: "Opposition" }
+    def:
+      he: "הסיעות שאינן בקואליציה ואינן חלק מהממשלה; תפקידן לבקר ולפקח על הממשלה."
+      en: "The factions not in the coalition and not part of the government; their role is to criticize and oversee it."
+  - category: government
+    term: { he: "אי־אמון", en: "No confidence" }
+    def:
+      he: "הצבעה שמטרתה להפיל את הממשלה. בישראל נדרש \"אי־אמון קונסטרוקטיבי\" — רוב של 61 שתומך בממשלה חלופית."
+      en: "A vote aimed at toppling the government. In Israel a \"constructive\" no-confidence is required — 61 MKs backing an alternative government."
+  - category: government
+    term: { he: "החוק הנורווגי", en: "The Norwegian Law" }
+    def:
+      he: "חוק שמאפשר לשר או לסגן שר להתפטר ממושבו בכנסת ולהתפנות לעבודת הממשלה, והמועמד הבא ברשימת מפלגתו נכנס לכנסת במקומו. אם השר מסיים את כהונתו הוא יכול לחזור למושבו. לכן יכולים לכהן בכנסת יותר מ-120 אנשים לאורך הקדנציה, אף שבכל רגע יש 120 חברי כנסת מכהנים."
+      en: "A law that lets a minister or deputy minister resign their Knesset seat to focus on government work, with the next candidate on their party list entering the Knesset in their place. If the minister later leaves office they can reclaim their seat. This is why more than 120 people can serve over a term, even though there are always exactly 120 sitting members at any moment."
+  - category: government
+    term: { he: "לובי / שדלן", en: "Lobby / lobbyist" }
+    def:
+      he: "לובי הוא קבוצת אינטרס שמנסה להשפיע על מחוקקים. שדלן (לוביסט) הוא אדם שמקבל תשלום מלקוח — חברה, ארגון או קבוצה — כדי לקדם את האינטרסים שלו מול חברי הכנסת והוועדות. בישראל שדלנים חייבים להירשם ולהצהיר את לקוחותיהם."
+      en: "A lobby is an interest group that tries to influence lawmakers. A lobbyist is a person paid by a client — a company, organization or group — to advance its interests with MKs and committees. In Israel lobbyists must register and disclose their clients."
+  - category: government
+    term: { he: "תרומה מישות מדינית זרה", en: "Foreign (state) donation" }
+    def:
+      he: "תרומה לעמותה או לארגון בישראל ממדינה זרה או מגוף ציבורי זר. החוק מחייב ארגונים לדווח על תרומות כאלה, כדי שהציבור יידע מי מממן פעילות פוליטית או ציבורית ולמה. הדיווחים מתפרסמים אצל רשם העמותות."
+      en: "A donation to an Israeli NGO or organization from a foreign state or foreign public body. The law requires organizations to report such donations so the public can see who funds political or public activity and for what. The reports are published by the Registrar of Non-Profits."
+
+  # ---------- electoral ----------
+  - category: electoral
+    term: { he: "מנדט", en: "Mandate (seat)" }
+    def:
+      he: "מושב אחד בכנסת. בכנסת 120 מנדטים, המחולקים בין הסיעות לפי אחוז הקולות."
+      en: "A single seat in the Knesset. There are 120 seats, split among factions by their share of the vote."
+  - category: electoral
+    term: { he: "סיעה / רשימה", en: "Faction / list" }
+    def:
+      he: "קבוצת חברי כנסת מאותה מפלגה או ברית מפלגות. \"רשימה\" היא מי שמתמודדת בבחירות."
+      en: "A group of MKs from the same party or alliance. A \"list\" is what runs in the election."
+  - category: electoral
+    term: { he: "ייצוג יחסי", en: "Proportional representation" }
+    def:
+      he: "שיטת בחירות שבה כל רשימה מקבלת מנדטים ביחס לאחוז הקולות שקיבלה. כל הארץ היא מחוז בחירה אחד."
+      en: "An electoral system where each list gets seats in proportion to its share of the vote. The whole country is one constituency."
+  - category: electoral
+    term: { he: "אחוז החסימה", en: "Electoral threshold" }
+    def:
+      he: "אחוז הקולות המינימלי שרשימה חייבת לעבור כדי להיכנס לכנסת. בישראל הוא 3.25%."
+      en: "The minimum share of the vote a list must pass to enter the Knesset. In Israel it is 3.25%."
+  - category: electoral
+    term: { he: "אות הפתק", en: "Ballot letters" }
+    def:
+      he: "האותיות שעל פתק ההצבעה המזהות כל רשימה (למשל מחל לליכוד). מטילים את הפתק במעטפה."
+      en: "The letters on the ballot slip that identify each list (e.g. מחל for Likud). You place the slip in the envelope."
+  - category: electoral
+    term: { he: "הסכם עודפים", en: "Surplus-vote agreement" }
+    def:
+      he: "הסכם בין שתי רשימות לאחד את עודפי הקולות שלהן, כדי לא לאבד מנדט שנותר \"באוויר\"."
+      en: "An agreement between two lists to pool their leftover votes, so a remaining seat isn't \"wasted\"."
+
+  # ---------- israel-specific ----------
+  - category: israel
+    term: { he: "ציונות", en: "Zionism" }
+    def:
+      he: "התנועה הלאומית של העם היהודי, ששאפה להקים ולקיים מדינה יהודית בארץ ישראל."
+      en: "The national movement of the Jewish people that sought to establish and sustain a Jewish state in the Land of Israel."
+  - category: israel
+    term: { he: "ציונות דתית", en: "Religious Zionism" }
+    def:
+      he: "זרם המשלב ציונות עם אורח חיים דתי־יהודי, ורואה במדינה ערך דתי ולאומי כאחד."
+      en: "A stream combining Zionism with a religious Jewish lifestyle, seeing the state as both a religious and national value."
+  - category: israel
+    term: { he: "חרדים", en: "Haredim (ultra-Orthodox)" }
+    def:
+      he: "ציבור יהודי שומר מצוות באדיקות, השומר על אורח חיים מסורתי ומופרד ברובו מהחברה החילונית."
+      en: "Strictly observant Jews who maintain a traditional lifestyle, largely separate from secular society."
+  - category: israel
+    term: { he: "חוק יסוד", en: "Basic Law" }
+    def:
+      he: "חוק בעל מעמד חוקתי בישראל. אוסף חוקי היסוד משמש כחוקה לא־כתובה של המדינה."
+      en: "A law with constitutional status in Israel. Together, the Basic Laws serve as the state's unwritten constitution."
+  - category: israel
+    term: { he: "סטטוס קוו", en: "Status quo (religion & state)" }
+    def:
+      he: "הסדר היסטורי לא־כתוב שמסדיר את יחסי דת ומדינה בישראל (שבת, כשרות, נישואין ועוד)."
+      en: "An unwritten historical arrangement governing religion-and-state matters in Israel (Sabbath, kashrut, marriage, etc.)."

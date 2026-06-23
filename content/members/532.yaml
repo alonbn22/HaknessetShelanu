@@ -1,0 +1,19 @@
+# Yuli Edelstein (PersonID 532). Factual reporting from reputable public sources,
+# cited per claim. Neutral language. REVIEW before launch.
+personId: 532
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: "אסיר ציון לשעבר וכיהן כיו\"ר הכנסת"
+      en: "Former Prisoner of Zion who served as Speaker of the Knesset"
+    description:
+      he: "נאסר בברית המועצות בשנות ה-80 בשל פעילותו הציונית ולימוד עברית. לאחר עלייתו לישראל כיהן כשר וכיו\"ר הכנסת לאורך שנים."
+      en: "Imprisoned in the Soviet Union in the 1980s for his Zionist activity and teaching Hebrew. After immigrating to Israel he served as a minister and for several years as Speaker of the Knesset."
+    sources:
+      - url: "https://en.wikipedia.org/wiki/Yuli_Edelstein"
+        title: "Yuli Edelstein"
+        publisher: "Wikipedia"
+      - url: "https://www.britannica.com/biography/Yuli-Edelstein"
+        title: "Yuli Edelstein — Biography"
+        publisher: "Encyclopædia Britannica"

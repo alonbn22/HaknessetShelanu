@@ -1,0 +1,485 @@
+# History of Israeli Knesset elections. Editorial/curated (not from the Knesset
+# API). Figures are widely-documented results; review before publishing.
+# turnout = % of eligible voters; winnerSeats = seats won by the largest list.
+# date is ISO. "pm" = who ultimately formed/led the government after the election.
+elections:
+  - knesset: 25
+    date: "2022-11-01"
+    turnout: 70.6
+    winner: { he: "הליכוד", en: "Likud" }
+    winnerSeats: 32
+    pm: { he: "בנימין נתניהו", en: "Benjamin Netanyahu" }
+    note: { he: "הקואליציה הימנית-דתית בראשות נתניהו זכתה ב-64 מושבים.", en: "The right-religious bloc led by Netanyahu won 64 seats." }
+    summary:
+      he: "הכנסת ה-25 נבחרה לאחר חמש מערכות בחירות בארבע שנים, והקימה קואליציה ימנית-דתית בת 64 מושבים. כהונתה התאפיינה ברפורמה המשפטית השנויה במחלוקת ובמלחמת חרבות ברזל שפרצה ב-7 באוקטובר 2023."
+      en: "The 25th Knesset was elected after five elections in four years and formed a right-religious coalition of 64 seats. Its term has been shaped by the contested judicial reform and the Swords of Iron war that began on 7 October 2023."
+    events:
+      - kind: bad
+        date: "2023-01-04"
+        text: { he: "השקת הרפורמה המשפטית עוררה גל מחאות המוני שנמשך חודשים.", en: "The launch of the judicial overhaul triggered months of mass protests." }
+      - kind: bad
+        date: "2023-10-07"
+        text: { he: "מתקפת הפתע של חמאס וגרירת המדינה למלחמת חרבות ברזל.", en: "Hamas's surprise attack and the start of the Swords of Iron war." }
+      - kind: neutral
+        date: "2023-03-27"
+        text: { he: "השעיית חקיקת הרפורמה והקמת ממשלת חירום בעת המלחמה.", en: "Suspension of the reform legislation and formation of an emergency wartime government." }
+      - kind: bad
+        date: "2024-09-17"
+        text: { he: "הסלמה בחזית הצפון מול חיזבאללה, מבצע הביפרים והתקיפות בלבנון.", en: "Escalation on the northern front with Hezbollah, the pager operation and strikes in Lebanon." }
+      - kind: good
+        date: "2025-01-19"
+        text: { he: "עסקאות לשחרור חטופים והפסקות אש לסירוגין בעזה.", en: "Hostage-release deals and intermittent ceasefires in Gaza." }
+    ended: { he: "הכנסת מכהנת (נכון ל-2026).", en: "Currently in session (as of 2026)." }
+  - knesset: 24
+    date: "2021-03-23"
+    turnout: 67.4
+    winner: { he: "הליכוד", en: "Likud" }
+    winnerSeats: 30
+    pm: { he: "נפתלי בנט ← יאיר לפיד", en: "Naftali Bennett → Yair Lapid" }
+    note: { he: "ממשלת השינוי (בנט-לפיד) קמה למרות שהליכוד היה הגדול ביותר.", en: "The \"change government\" (Bennett-Lapid) formed despite Likud being largest." }
+    summary:
+      he: "ממשלת השינוי איחדה שמונה מפלגות מימין, ממרכז ומשמאל כדי להחליף את נתניהו, עם רוטציה מתוכננת בין בנט ללפיד."
+      en: "The \"change government\" united eight parties from right, centre and left to replace Netanyahu, with a planned rotation between Bennett and Lapid."
+    events:
+      - kind: good
+        date: "2021-06-13"
+        text: { he: "לראשונה מפלגה ערבית (רע\"ם) הצטרפה לקואליציה שלטת.", en: "For the first time an Arab party (Ra'am) joined a governing coalition." }
+      - kind: good
+        date: "2021-11-04"
+        text: { he: "אישור תקציב מדינה ראשון מזה למעלה משלוש שנים.", en: "Passage of the first state budget in over three years." }
+      - kind: bad
+        date: "2022-04-06"
+        text: { he: "איבוד הרוב בכנסת לאחר פרישת חברי קואליציה.", en: "Loss of the Knesset majority after coalition members defected." }
+      - kind: bad
+        date: "2021-05-10"
+        text: { he: "מבצע \"שומר החומות\" מול חמאס בעזה ומהומות בערים מעורבות.", en: "Operation Guardian of the Walls against Hamas in Gaza and unrest in mixed cities." }
+    ended: { he: "הכנסת התפזרה ביוני 2022 לאחר שאיבדה את הרוב; לפיד הפך לראש ממשלה מעבר.", en: "Dissolved in June 2022 after losing its majority; Lapid became caretaker PM." }
+  - knesset: 23
+    date: "2020-03-02"
+    turnout: 71.5
+    winner: { he: "הליכוד", en: "Likud" }
+    winnerSeats: 36
+    pm: { he: "בנימין נתניהו", en: "Benjamin Netanyahu" }
+    note: { he: "הבחירות השלישיות בתוך שנה; ממשלת אחדות נתניהו-גנץ.", en: "The third election within a year; a Netanyahu-Gantz unity government." }
+    summary:
+      he: "לאחר שלוש מערכות בחירות הוקמה ממשלת אחדות-חירום בצל מגפת הקורונה, עם הסכם רוטציה בין נתניהו לגנץ שלא מומש."
+      en: "After three elections, a unity emergency government formed amid the COVID-19 pandemic, with a Netanyahu-Gantz rotation deal that was never fulfilled."
+    events:
+      - kind: bad
+        date: "2020-03-19"
+        text: { he: "ניהול משבר מגפת הקורונה וסגרים חוזרים ונשנים.", en: "Managing the COVID-19 crisis and repeated lockdowns." }
+      - kind: bad
+        date: "2020-12-22"
+        text: { he: "אי-העברת תקציב מדינה הביאה לפיזור אוטומטי של הכנסת.", en: "Failure to pass a state budget triggered the Knesset's automatic dissolution." }
+      - kind: good
+        date: "2020-09-15"
+        text: { he: "הסכמי אברהם — נורמליזציה עם איחוד האמירויות, בחריין, מרוקו וסודאן.", en: "The Abraham Accords — normalization with the UAE, Bahrain, Morocco and Sudan." }
+    ended: { he: "פוזרה בדצמבר 2020 כי לא אושר תקציב מדינה במועד.", en: "Dissolved in December 2020 because no state budget was passed in time." }
+  - knesset: 22
+    date: "2019-09-17"
+    turnout: 69.8
+    winner: { he: "כחול לבן", en: "Blue & White" }
+    winnerSeats: 33
+    pm: { he: "לא הוקמה ממשלה", en: "No government formed" }
+    note: { he: "אף גוש לא הצליח להרכיב ממשלה — הובלה לבחירות חוזרות.", en: "Neither bloc could form a government — led to another election." }
+    summary:
+      he: "בבחירות החוזרות כחול לבן הפכה לסיעה הגדולה ביותר, אך שוב אף מחנה לא הגיע לרוב של 61 ולא הצליח להרכיב ממשלה."
+      en: "In the repeat election Blue & White became the largest party, but again neither camp reached a 61-seat majority or managed to form a government."
+    events:
+      - kind: bad
+        date: "2019-11-21"
+        text: { he: "גם גנץ וגם נתניהו נכשלו בהרכבת ממשלה.", en: "Both Gantz and Netanyahu failed to form a government." }
+    ended: { he: "פוזרה בדצמבר 2019 לאחר שלא הורכבה ממשלה — בחירות שלישיות.", en: "Dissolved in December 2019 after no government formed — a third election." }
+  - knesset: 21
+    date: "2019-04-09"
+    turnout: 68.5
+    winner: { he: "הליכוד", en: "Likud" }
+    winnerSeats: 35
+    pm: { he: "לא הוקמה ממשלה", en: "No government formed" }
+    note: { he: "הכנסת פיזרה את עצמה לראשונה בהיסטוריה במקום להקים ממשלה.", en: "The Knesset dissolved itself for the first time ever instead of forming a government." }
+    summary:
+      he: "אף שהליכוד והגוש הימני זכו ברוב, המשא ומתן הקואליציוני נכשל סביב חוק הגיוס, והכנסת בחרה להתפזר במקום לאפשר למישהו אחר להרכיב ממשלה."
+      en: "Although Likud and the right won a majority, coalition talks collapsed over the conscription law, and the Knesset chose to dissolve itself rather than let anyone else try to form a government."
+    events:
+      - kind: bad
+        date: "2019-05-30"
+        text: { he: "כישלון המו\"מ הקואליציוני בעיקר סביב חוק הגיוס.", en: "Collapse of coalition talks, chiefly over the conscription law." }
+    ended: { he: "פוזרה במאי 2019 — לראשונה בהיסטוריה הכנסת פיזרה את עצמה במקום להקים ממשלה.", en: "Dissolved in May 2019 — the first time the Knesset dissolved itself instead of forming a government." }
+  - knesset: 20
+    date: "2015-03-17"
+    turnout: 72.3
+    winner: { he: "הליכוד", en: "Likud" }
+    winnerSeats: 30
+    pm: { he: "בנימין נתניהו", en: "Benjamin Netanyahu" }
+    summary:
+      he: "נתניהו הקים תחילה קואליציה ימנית-דתית צרה של 61 מושבים בלבד, שהורחבה מאוחר יותר. בכהונה זו התחילו חקירות פליליות נגד ראש הממשלה."
+      en: "Netanyahu first formed a narrow right-religious coalition of just 61 seats, later broadened. Criminal investigations into the prime minister opened during this term."
+    events:
+      - kind: bad
+        date: "2016-12-01"
+        text: { he: "פתיחת חקירות פליליות נגד נתניהו (תיקים 1000, 2000, 4000).", en: "Criminal investigations into Netanyahu opened (Cases 1000, 2000, 4000)." }
+      - kind: neutral
+        date: "2017-01-01"
+        text: { he: "יציבות כלכלית והמשך צמיחה.", en: "Economic stability and continued growth." }
+      - kind: neutral
+        date: "2018-07-19"
+        text: { he: "חקיקת חוק יסוד: ישראל — מדינת הלאום של העם היהודי.", en: "Passage of Basic Law: Israel as the Nation-State of the Jewish People." }
+    ended: { he: "פוזרה בדצמבר 2018 על רקע המחלוקת על חוק הגיוס — לבחירות מוקדמות.", en: "Dissolved in December 2018 amid the conscription-law dispute — to early elections." }
+  - knesset: 19
+    date: "2013-01-22"
+    turnout: 67.8
+    winner: { he: "הליכוד ישראל ביתנו", en: "Likud Yisrael Beiteinu" }
+    winnerSeats: 31
+    pm: { he: "בנימין נתניהו", en: "Benjamin Netanyahu" }
+    summary:
+      he: "לראשונה מזה שנים הוקמה קואליציה ללא המפלגות החרדיות, עם דגש על \"שוויון בנטל\" (גיוס חרדים) ויוקר המחיה."
+      en: "For the first time in years a coalition formed without the Haredi parties, focused on \"sharing the burden\" (Haredi conscription) and the cost of living."
+    events:
+      - kind: good
+        date: "2014-03-12"
+        text: { he: "חקיקת חוק השוויון בנטל לגיוס בני ישיבות.", en: "Passage of the 'equal burden' law on yeshiva-student conscription." }
+      - kind: bad
+        date: "2014-07-08"
+        text: { he: "מבצע \"צוק איתן\" — מלחמה בת 50 יום מול חמאס בעזה.", en: "Operation Protective Edge — a 50-day war against Hamas in Gaza." }
+    ended: { he: "התפרקה בדצמבר 2014 כשנתניהו פיטר את לפיד ולבני — לבחירות מוקדמות.", en: "Collapsed in December 2014 when Netanyahu dismissed Lapid and Livni — to early elections." }
+  - knesset: 18
+    date: "2009-02-10"
+    turnout: 64.7
+    winner: { he: "קדימה", en: "Kadima" }
+    winnerSeats: 28
+    pm: { he: "בנימין נתניהו", en: "Benjamin Netanyahu" }
+    note: { he: "קדימה היתה הגדולה ביותר אך נתניהו (הליכוד) הרכיב את הממשלה.", en: "Kadima was largest, but Netanyahu (Likud) formed the government." }
+    summary:
+      he: "אף שקדימה (לבני) היתה הסיעה הגדולה ביותר, נתניהו הצליח להרכיב קואליציה ימנית והקים את ממשלתו השנייה, שכיהנה כמעט קדנציה מלאה."
+      en: "Although Kadima (Livni) was the largest party, Netanyahu assembled a right-wing coalition and formed his second government, which served nearly a full term."
+    events:
+      - kind: bad
+        date: "2011-07-14"
+        text: { he: "מחאת קיץ 2011 (\"מחאת האוהלים\") על יוקר המחיה.", en: "The summer 2011 social-justice (\"tent\") protests over the cost of living." }
+      - kind: neutral
+        date: "2011-10-18"
+        text: { he: "עסקת שליט — שחרור גלעד שליט תמורת אסירים.", en: "The Shalit deal — Gilad Shalit released in a prisoner exchange." }
+      - kind: bad
+        date: "2012-11-14"
+        text: { he: "מבצע \"עמוד ענן\" מול חמאס בעזה.", en: "Operation Pillar of Defense against Hamas in Gaza." }
+    ended: { he: "הוקדמו הבחירות; הכנסת פוזרה ב-2012 על רקע אי-הסכמה על התקציב.", en: "Elections were brought forward; the Knesset dissolved in 2012 over a budget disagreement." }
+  - knesset: 17
+    date: "2006-03-28"
+    turnout: 63.5
+    winner: { he: "קדימה", en: "Kadima" }
+    winnerSeats: 29
+    pm: { he: "אהוד אולמרט", en: "Ehud Olmert" }
+    summary:
+      he: "קדימה, שהוקמה בידי שרון, הובילה את הממשלה בראשות אולמרט לאחר שבץ שעבר שרון. הקדנציה לוותה בשתי מלחמות ובחקירות שהפילו את ראש הממשלה."
+      en: "Kadima, founded by Sharon, led the government under Olmert after Sharon's stroke. The term was marked by two wars and the investigations that brought down the prime minister."
+    events:
+      - kind: bad
+        date: "2006-07-12"
+        text: { he: "מלחמת לבנון השנייה.", en: "The Second Lebanon War." }
+      - kind: neutral
+        date: "2008-12-27"
+        text: { he: "מבצע \"עופרת יצוקה\" ברצועת עזה.", en: "Operation Cast Lead in the Gaza Strip." }
+      - kind: bad
+        date: "2008-07-30"
+        text: { he: "חקירות שחיתות הביאו להתפטרות אולמרט.", en: "Corruption investigations led to Olmert's resignation." }
+    ended: { he: "אולמרט התפטר על רקע חקירות שחיתות — לבחירות 2009.", en: "Olmert resigned amid corruption probes — to the 2009 election." }
+  - knesset: 16
+    date: "2003-01-28"
+    turnout: 67.8
+    winner: { he: "הליכוד", en: "Likud" }
+    winnerSeats: 38
+    pm: { he: "אריאל שרון", en: "Ariel Sharon" }
+    summary:
+      he: "ממשלת שרון החזקה ביצעה את תוכנית ההתנתקות מרצועת עזה ב-2005, צעד שפילג את הליכוד והוביל להקמת קדימה."
+      en: "Sharon's strong government carried out the 2005 Disengagement from the Gaza Strip, a move that split Likud and led to the founding of Kadima."
+    events:
+      - kind: neutral
+        date: "2005-08-15"
+        text: { he: "תוכנית ההתנתקות — פינוי כל היישובים מרצועת עזה.", en: "The Disengagement — evacuation of all settlements from the Gaza Strip." }
+      - kind: bad
+        date: "2003-09-01"
+        text: { he: "שיא פיגועי האינתיפאדה השנייה והקמת גדר ההפרדה.", en: "The peak of Second Intifada attacks and construction of the separation barrier." }
+    ended: { he: "שרון פיזר את הכנסת ועזב להקים את קדימה; לאחר מכן לקה בשבץ — בחירות 2006.", en: "Sharon dissolved the Knesset and left to found Kadima; he then suffered a stroke — 2006 election." }
+  - knesset: 15
+    date: "1999-05-17"
+    turnout: 78.7
+    winner: { he: "ישראל אחת (העבודה)", en: "One Israel (Labor)" }
+    winnerSeats: 26
+    pm: { he: "אהוד ברק", en: "Ehud Barak" }
+    summary:
+      he: "ברק נבחר בבחירה ישירה והוביל מהלך מדיני נרחב, אך שיחות השלום קרסו ופרצה האינתיפאדה השנייה."
+      en: "Barak was elected directly and pursued an ambitious peace push, but the talks collapsed and the Second Intifada erupted."
+    events:
+      - kind: neutral
+        date: "2000-05-24"
+        text: { he: "נסיגת צה\"ל מדרום לבנון.", en: "The IDF's withdrawal from southern Lebanon." }
+      - kind: bad
+        date: "2000-07-25"
+        text: { he: "כישלון שיחות קמפ דייוויד.", en: "The collapse of the Camp David talks." }
+      - kind: bad
+        date: "2000-09-28"
+        text: { he: "פרוץ האינתיפאדה השנייה.", en: "The outbreak of the Second Intifada." }
+    ended: { he: "ברק התפטר; בבחירה ישירה מיוחדת ב-2001 ניצח שרון, אך הכנסת המשיכה עד 2003.", en: "Barak resigned; Sharon won a special direct PM election in 2001, but the Knesset continued until 2003." }
+  - knesset: 14
+    date: "1996-05-29"
+    turnout: 79.3
+    winner: { he: "העבודה", en: "Labor" }
+    winnerSeats: 34
+    pm: { he: "בנימין נתניהו", en: "Benjamin Netanyahu" }
+    note: { he: "הבחירה הישירה הראשונה לראש ממשלה; נתניהו ניצח את פרס.", en: "First direct election for PM; Netanyahu narrowly beat Peres." }
+    summary:
+      he: "הבחירות הראשונות בשיטת הבחירה הישירה לראש ממשלה. נתניהו ניצח את פרס בהפרש זעום, חודשים לאחר רצח רבין."
+      en: "The first elections under the direct-election-for-PM system. Netanyahu narrowly beat Peres, months after Rabin's assassination."
+    events:
+      - kind: neutral
+        date: "1997-01-15"
+        text: { he: "פרוטוקול חברון והסכם וואי — המשך תהליך אוסלו.", en: "The Hebron Protocol and Wye River Memorandum — continuing the Oslo process." }
+    ended: { he: "הכנסת הצביעה על פיזור עצמי ב-1998 על רקע התפרקות הקואליציה — בחירות 1999.", en: "The Knesset voted to dissolve in 1998 as the coalition fell apart — 1999 election." }
+  - knesset: 13
+    date: "1992-06-23"
+    turnout: 77.4
+    winner: { he: "העבודה", en: "Labor" }
+    winnerSeats: 44
+    pm: { he: "יצחק רבין", en: "Yitzhak Rabin" }
+    summary:
+      he: "ממשלת רבין הובילה את תהליך אוסלו וחתמה על הסכם שלום עם ירדן. הקדנציה הסתיימה בטרגדיה עם רצח רבין."
+      en: "Rabin's government led the Oslo process and signed a peace treaty with Jordan. The term ended in tragedy with Rabin's assassination."
+    events:
+      - kind: good
+        date: "1993-09-13"
+        text: { he: "הסכמי אוסלו — הסכם הביניים עם אש\"ף.", en: "The Oslo Accords — the interim agreement with the PLO." }
+      - kind: good
+        date: "1994-10-26"
+        text: { he: "הסכם השלום עם ירדן.", en: "The peace treaty with Jordan." }
+      - kind: bad
+        date: "1995-11-04"
+        text: { he: "רצח ראש הממשלה יצחק רבין; פרס החליפו.", en: "The assassination of PM Yitzhak Rabin; Peres succeeded him." }
+      - kind: bad
+        date: "1994-02-25"
+        text: { he: "הטבח במערת המכפלה בחברון.", en: "The Cave of the Patriarchs massacre in Hebron." }
+      - kind: bad
+        date: "1996-04-11"
+        text: { he: "מבצע \"ענבי זעם\" בלבנון.", en: "Operation Grapes of Wrath in Lebanon." }
+    ended: { he: "השלימה כהונה כמעט מלאה — בחירות 1996.", en: "Served a nearly full term — 1996 election." }
+  - knesset: 12
+    date: "1988-11-01"
+    turnout: 79.7
+    winner: { he: "הליכוד", en: "Likud" }
+    winnerSeats: 40
+    pm: { he: "יצחק שמיר", en: "Yitzhak Shamir" }
+    summary:
+      he: "תחילה ממשלת אחדות ואז ממשלה צרה בראשות שמיר. הקדנציה כללה את מלחמת המפרץ הראשונה ותחילת גל העלייה הגדול מברית המועצות."
+      en: "First a unity government, then a narrow government under Shamir. The term spanned the First Gulf War and the start of the great wave of Soviet immigration."
+    events:
+      - kind: bad
+        date: "1991-01-17"
+        text: { he: "מלחמת המפרץ — ירי טילי סקאד על ישראל.", en: "The Gulf War — Scud missiles fired at Israel." }
+      - kind: good
+        date: "1991-10-30"
+        text: { he: "ועידת מדריד וגל עלייה המוני מברית המועצות.", en: "The Madrid Conference and mass immigration from the USSR." }
+      - kind: bad
+        date: "1987-12-09"
+        text: { he: "האינתיפאדה הראשונה (שהחלה ב-1987) נמשכה לאורך הקדנציה.", en: "The First Intifada (begun in 1987) continued throughout the term." }
+      - kind: good
+        date: "1991-05-24"
+        text: { he: "מבצע שלמה — מבצע אווירי להעלאת יהודי אתיופיה.", en: "Operation Solomon — the airlift of Ethiopian Jews." }
+    ended: { he: "השלימה כהונה — בחירות 1992.", en: "Served its term — 1992 election." }
+  - knesset: 11
+    date: "1984-07-23"
+    turnout: 78.8
+    winner: { he: "המערך", en: "Alignment" }
+    winnerSeats: 44
+    pm: { he: "שמעון פרס ← יצחק שמיר (רוטציה)", en: "Shimon Peres → Yitzhak Shamir (rotation)" }
+    summary:
+      he: "ממשלת אחדות לאומית עם רוטציה בין פרס (המערך) לשמיר (הליכוד). הצליחה לבלום את האינפלציה הדוהרת ולצמצם את הנוכחות בלבנון."
+      en: "A national-unity government with a rotation between Peres (Alignment) and Shamir (Likud). It tamed runaway inflation and reduced the presence in Lebanon."
+    events:
+      - kind: good
+        date: "1985-07-01"
+        text: { he: "התוכנית הכלכלית לייצוב — בלימת ההיפר-אינפלציה.", en: "The Economic Stabilization Plan — halting hyperinflation." }
+      - kind: good
+        date: "1984-11-21"
+        text: { he: "מבצע משה — עליית יהודי אתיופיה.", en: "Operation Moses — the immigration of Ethiopian Jews." }
+      - kind: bad
+        date: "1987-12-09"
+        text: { he: "פרוץ האינתיפאדה הראשונה בשטחים בדצמבר 1987.", en: "The outbreak of the First Intifada in the territories in December 1987." }
+    ended: { he: "השלימה כהונה — בחירות 1988.", en: "Served its term — 1988 election." }
+  - knesset: 10
+    date: "1981-06-30"
+    turnout: 78.5
+    winner: { he: "הליכוד", en: "Likud" }
+    winnerSeats: 48
+    pm: { he: "מנחם בגין", en: "Menachem Begin" }
+    summary:
+      he: "ממשלתו השנייה של בגין. כללה את הפצצת הכור בעיראק, את השלמת הנסיגה מסיני ואת מלחמת לבנון הראשונה."
+      en: "Begin's second government. It included the bombing of the Iraqi reactor, the completion of the Sinai withdrawal, and the First Lebanon War."
+    events:
+      - kind: neutral
+        date: "1981-06-07"
+        text: { he: "הפצצת הכור הגרעיני בעיראק (מבצע אופרה).", en: "The bombing of Iraq's nuclear reactor (Operation Opera)." }
+      - kind: bad
+        date: "1982-06-06"
+        text: { he: "מלחמת לבנון הראשונה.", en: "The First Lebanon War." }
+      - kind: neutral
+        date: "1981-12-14"
+        text: { he: "החלת החוק הישראלי על רמת הגולן.", en: "Application of Israeli law to the Golan Heights." }
+      - kind: bad
+        date: "1982-09-16"
+        text: { he: "טבח סברה ושתילה וועדת כהן בעקבותיו.", en: "The Sabra and Shatila massacre and the ensuing Kahan Commission." }
+    ended: { he: "בגין התפטר ב-1983 (שמיר החליפו) — בחירות מוקדמות 1984.", en: "Begin resigned in 1983 (Shamir succeeded) — early elections in 1984." }
+  - knesset: 9
+    date: "1977-05-17"
+    turnout: 79.2
+    winner: { he: "הליכוד", en: "Likud" }
+    winnerSeats: 43
+    pm: { he: "מנחם בגין", en: "Menachem Begin" }
+    note: { he: "\"המהפך\" — הימין עלה לשלטון לראשונה אחרי שנים של שלטון מפא\"י/המערך.", en: "\"The Upheaval\" — the right took power for the first time after decades of Mapai/Alignment rule." }
+    summary:
+      he: "\"המהפך\" — הליכוד עלה לשלטון לראשונה. בגין חתם על הסכם השלום ההיסטורי עם מצרים."
+      en: "\"The Upheaval\" — Likud rose to power for the first time. Begin signed the historic peace treaty with Egypt."
+    events:
+      - kind: good
+        date: "1977-11-19"
+        text: { he: "ביקור סאדאת בירושלים.", en: "Sadat's visit to Jerusalem." }
+      - kind: good
+        date: "1979-03-26"
+        text: { he: "הסכם השלום בין ישראל למצרים.", en: "The Egypt-Israel peace treaty." }
+      - kind: bad
+        date: "1978-03-14"
+        text: { he: "מבצע ליטני בדרום לבנון.", en: "Operation Litani in southern Lebanon." }
+      - kind: good
+        date: "1978-09-17"
+        text: { he: "הסכמי קמפ דייוויד עם מצרים.", en: "The Camp David Accords with Egypt." }
+    ended: { he: "השלימה כהונה — בחירות 1981.", en: "Served its term — 1981 election." }
+  - knesset: 8
+    date: "1973-12-31"
+    turnout: 78.6
+    winner: { he: "המערך", en: "Alignment" }
+    winnerSeats: 51
+    pm: { he: "גולדה מאיר ← יצחק רבין", en: "Golda Meir → Yitzhak Rabin" }
+    note: { he: "נדחו בשל מלחמת יום הכיפורים.", en: "Postponed due to the Yom Kippur War." }
+    summary:
+      he: "הבחירות נדחו בשל מלחמת יום הכיפורים. ועדת אגרנט והביקורת הציבורית הפילו את גולדה מאיר, ורבין מונה לראש ממשלה."
+      en: "The election was postponed by the Yom Kippur War. The Agranat Commission and public criticism brought down Golda Meir, and Rabin became prime minister."
+    events:
+      - kind: bad
+        date: "1973-10-06"
+        text: { he: "מלחמת יום הכיפורים והמחדל שקדם לה.", en: "The Yom Kippur War and the failure that preceded it." }
+      - kind: neutral
+        date: "1974-04-10"
+        text: { he: "ועדת אגרנט; התפטרות גולדה מאיר ומינוי רבין.", en: "The Agranat Commission; Golda Meir's resignation and Rabin's appointment." }
+      - kind: good
+        date: "1976-07-04"
+        text: { he: "מבצע אנטבה — חילוץ חטופי המטוס באוגנדה.", en: "Operation Entebbe — the rescue of hijacked-flight hostages in Uganda." }
+    ended: { he: "רבין התפטר ב-1977 על רקע פרשת חשבון הבנק — מה שהוביל ל\"מהפך\".", en: "Rabin resigned in 1977 over a foreign bank-account affair — leading to \"the Upheaval\"." }
+  - knesset: 7
+    date: "1969-10-28"
+    turnout: 81.7
+    winner: { he: "המערך", en: "Alignment" }
+    winnerSeats: 56
+    pm: { he: "גולדה מאיר", en: "Golda Meir" }
+    summary:
+      he: "ממשלת גולדה מאיר עם רוב גדול. הקדנציה לוותה במלחמת ההתשה ובטרור בינלאומי נגד ישראלים."
+      en: "Golda Meir's government with a large majority. The term was marked by the War of Attrition and international terrorism against Israelis."
+    events:
+      - kind: bad
+        date: "1969-03-08"
+        text: { he: "מלחמת ההתשה מול מצרים בתעלת סואץ.", en: "The War of Attrition with Egypt along the Suez Canal." }
+      - kind: bad
+        date: "1972-09-05"
+        text: { he: "הטבח בספורטאי ישראל באולימפיאדת מינכן.", en: "The massacre of Israeli athletes at the Munich Olympics." }
+    ended: { he: "הוקדמו הבחירות; נדחו בפועל לדצמבר 1973 בשל מלחמת יום הכיפורים.", en: "Elections were brought forward and in practice postponed to December 1973 by the Yom Kippur War." }
+  - knesset: 6
+    date: "1965-11-02"
+    turnout: 83.0
+    winner: { he: "המערך", en: "Alignment" }
+    winnerSeats: 45
+    pm: { he: "לוי אשכול", en: "Levi Eshkol" }
+    summary:
+      he: "ממשלת אשכול. הניצחון המהיר במלחמת ששת הימים שינה את גבולות המדינה ואת המזרח התיכון."
+      en: "Eshkol's government. The swift victory in the Six-Day War reshaped the country's borders and the Middle East."
+    events:
+      - kind: neutral
+        date: "1967-06-05"
+        text: { he: "מלחמת ששת הימים — תפיסת יו\"ש, עזה, סיני והגולן.", en: "The Six-Day War — capture of the West Bank, Gaza, Sinai and the Golan." }
+    ended: { he: "אשכול נפטר בפברואר 1969 (מאיר החליפתו) — בחירות אוקטובר 1969.", en: "Eshkol died in February 1969 (Meir succeeded him) — October 1969 election." }
+  - knesset: 5
+    date: "1961-08-15"
+    turnout: 81.6
+    winner: { he: "מפא\"י", en: "Mapai" }
+    winnerSeats: 42
+    pm: { he: "דוד בן־גוריון", en: "David Ben-Gurion" }
+    summary:
+      he: "ממשלתו האחרונה של בן-גוריון, שהתפטר ב-1963 על רקע \"פרשת לבון\". משפט אייכמן התקיים בתקופה זו."
+      en: "Ben-Gurion's last government; he resigned in 1963 over the \"Lavon Affair.\" The Eichmann trial took place during this period."
+    events:
+      - kind: neutral
+        date: "1961-04-11"
+        text: { he: "משפט אדולף אייכמן בירושלים.", en: "The trial of Adolf Eichmann in Jerusalem." }
+      - kind: bad
+        date: "1963-06-16"
+        text: { he: "התפטרות בן-גוריון על רקע פרשת לבון; אשכול מונה לראש ממשלה.", en: "Ben-Gurion's resignation over the Lavon Affair; Eshkol became prime minister." }
+    ended: { he: "בן-גוריון פרש ממפא\"י (הקים את רפ\"י) — בחירות 1965.", en: "Ben-Gurion broke from Mapai (founding Rafi) — 1965 election." }
+  - knesset: 4
+    date: "1959-11-03"
+    turnout: 81.6
+    winner: { he: "מפא\"י", en: "Mapai" }
+    winnerSeats: 47
+    pm: { he: "דוד בן־גוריון", en: "David Ben-Gurion" }
+    summary:
+      he: "מפא\"י בשיא כוחה תחת בן-גוריון, אך הקדנציה היתה קצרה והופלה בשל \"פרשת לבון\"."
+      en: "Mapai at its peak under Ben-Gurion, but the term was short and brought down by the \"Lavon Affair.\""
+    events:
+      - kind: bad
+        date: "1960-12-01"
+        text: { he: "התפרצות מחודשת של \"פרשת לבון\" שזעזעה את הקואליציה.", en: "A renewed eruption of the \"Lavon Affair\" that shook the coalition." }
+    ended: { he: "פוזרה ב-1961 על רקע פרשת לבון — בחירות מוקדמות.", en: "Dissolved in 1961 over the Lavon Affair — early elections." }
+  - knesset: 3
+    date: "1955-07-26"
+    turnout: 82.8
+    winner: { he: "מפא\"י", en: "Mapai" }
+    winnerSeats: 40
+    pm: { he: "דוד בן־גוריון", en: "David Ben-Gurion" }
+    summary:
+      he: "בן-גוריון שב לראשות הממשלה. הקדנציה כללה את מבצע סיני (מלחמת קדש) ב-1956."
+      en: "Ben-Gurion returned to the premiership. The term included the Sinai Campaign (Suez War) of 1956."
+    events:
+      - kind: neutral
+        date: "1956-10-29"
+        text: { he: "מבצע קדש — מלחמת סיני.", en: "The Sinai Campaign (Suez War)." }
+    ended: { he: "השלימה כהונה — בחירות 1959.", en: "Served its term — 1959 election." }
+  - knesset: 2
+    date: "1951-07-30"
+    turnout: 75.1
+    winner: { he: "מפא\"י", en: "Mapai" }
+    winnerSeats: 45
+    pm: { he: "דוד בן־גוריון", en: "David Ben-Gurion" }
+    summary:
+      he: "שנות העיצוב של המדינה הצעירה. הסכם השילומים מגרמניה עורר מחאות סוערות."
+      en: "The formative years of the young state. The reparations agreement with Germany sparked stormy protests."
+    events:
+      - kind: bad
+        date: "1952-01-07"
+        text: { he: "הסכם השילומים מגרמניה ומחאות סוערות נגדו.", en: "The reparations agreement with Germany and fierce protests against it." }
+    ended: { he: "השלימה כהונה — בחירות 1955.", en: "Served its term — 1955 election." }
+  - knesset: 1
+    date: "1949-01-25"
+    turnout: 86.9
+    winner: { he: "מפא\"י", en: "Mapai" }
+    winnerSeats: 46
+    pm: { he: "דוד בן־גוריון", en: "David Ben-Gurion" }
+    note: { he: "הבחירות הראשונות למדינת ישראל (לאספה המכוננת).", en: "The first elections of the State of Israel (to the Constituent Assembly)." }
+    summary:
+      he: "הכנסת הראשונה (שכונתה תחילה האספה המכוננת) הניחה את יסודות המדינה בתקופת קליטת עלייה המונית וצנע."
+      en: "The first Knesset (initially the Constituent Assembly) laid the state's foundations during mass immigration and austerity."
+    events:
+      - kind: good
+        date: "1950-07-05"
+        text: { he: "חקיקת חוק השבות.", en: "The enactment of the Law of Return." }
+      - kind: bad
+        date: "1949-04-01"
+        text: { he: "תקופת הצנע וקליטת עלייה המונית.", en: "The austerity (tzena) period and mass-immigration absorption." }
+      - kind: neutral
+        date: "1949-02-24"
+        text: { he: "הסכמי שביתת הנשק שסיימו את מלחמת העצמאות.", en: "The Armistice Agreements that ended the War of Independence." }
+    ended: { he: "פוזרה ב-1951 על רקע משבר החינוך הדתי — בחירות מוקדמות.", en: "Dissolved in 1951 over the religious-education crisis — early elections." }

@@ -1,0 +1,33 @@
+# Avigdor Lieberman (PersonID 427). Factual reporting from reputable public
+# sources, cited per claim. Neutral language; legal status marked. REVIEW before launch.
+personId: 427
+claims:
+  - kind: negative
+    category: investigation
+    status: acquitted
+    title:
+      he: "הועמד לדין בחשד למרמה והפרת אמונים — וזוכה (2013)"
+      en: "Tried for fraud and breach of trust — acquitted (2013)"
+    date: "2013-11-06"
+    description:
+      he: "הואשם במרמה והפרת אמונים בנוגע לקידום מינוי שגריר. בנובמבר 2013 זוכה פה אחד על ידי בית משפט השלום בירושלים; השופטים קבעו שלא הוכחה עבירה פלילית."
+      en: "Charged with fraud and breach of trust over the promotion of an ambassadorial appointment. In November 2013 he was unanimously acquitted by the Jerusalem Magistrate's Court, which found no criminal offense was proven."
+    sources:
+      - url: "https://www.washingtonpost.com/world/middle_east/israeli-politician-avigdor-lieberman-acquitted-of-corruption-charges/2013/11/06/ac7c6fec-46ef-11e3-95a9-3f15b5618ba8_story.html"
+        title: "Avigdor Lieberman acquitted of corruption charges"
+        publisher: "The Washington Post"
+      - url: "https://en.wikipedia.org/wiki/Avigdor_Lieberman"
+        title: "Avigdor Lieberman"
+        publisher: "Wikipedia"
+  - kind: positive
+    category: achievement
+    title:
+      he: "מייסד ישראל ביתנו וכיהן כשר חוץ וכשר ביטחון"
+      en: "Founder of Yisrael Beiteinu; served as Foreign Minister and Defense Minister"
+    description:
+      he: "הקים את מפלגת ישראל ביתנו (1999) וכיהן בתפקידים בכירים, בהם שר החוץ ושר הביטחון."
+      en: "Founded the Yisrael Beiteinu party (1999) and held senior posts, including Foreign Minister and Defense Minister."
+    sources:
+      - url: "https://en.wikipedia.org/wiki/Avigdor_Lieberman"
+        title: "Avigdor Lieberman"
+        publisher: "Wikipedia"

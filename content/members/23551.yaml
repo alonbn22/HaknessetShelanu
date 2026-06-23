@@ -1,0 +1,58 @@
+# PersonID 23551. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 23551
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: השרה הראשונה להתיישבות ולמשימות לאומיות
+      en: First Minister of Settlements and National Missions
+    description:
+      he: בדצמבר 2022 מונתה אורית סטרוק לשרה להתיישבות ולמשימות לאומיות בממשלה השלושים
+        ושבע, ובכך הפכה לראשונה שמכהנת בתפקיד זה עם הקמת המשרד.
+      en: In December 2022 Orit Strock was appointed Minister of Settlements and
+        National Missions in Israel's thirty-seventh government, becoming the
+        first person to hold the newly created post.
+    date: 2022-12-29
+    sources:
+      - url: https://www.haaretz.com/israel-news/2022-12-07/ty-article/.premium/far-right-lawmaker-named-israels-first-national-missions-minister/00000184-ebe0-d523-a3bc-effb32af0000
+        title: Far-right Lawmaker Named Israel's First 'National Missions Minister'
+        publisher: Haaretz
+      - url: https://en.wikipedia.org/wiki/Orit_Strook
+        title: Orit Strook
+        publisher: Wikipedia
+  - kind: positive
+    category: volunteering
+    title:
+      he: ייסוד וניהול ארגון זכויות האדם ביהודה ושומרון
+      en: Founded and led the Human Rights Organization of Judea and Samaria
+    description:
+      he: סטרוק ייסדה את ארגון זכויות האדם ביהודה ושומרון, עמותה ישראלית לזכויות תושבי
+        ההתנחלויות, ועמדה בראשו בין השנים 2004 ל-2012.
+      en: Strock established the Human Rights Organization of Judea and Samaria, an
+        Israeli NGO advocating for settler residents' rights, and headed it from
+        2004 to 2012.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Orit_Strook
+        title: Orit Strook
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: חברת כנסת מטעם הציונות הדתית
+      en: Member of Knesset for the Religious Zionist Party
+    description:
+      he: סטרוק נבחרה לראשונה לכנסת בשנת 2013 ברשימת הבית היהודי (סיעת תקומה), וכיהנה
+        עד 2015. היא שבה לכנסת ב-2021 מטעם מפלגת הציונות הדתית ומכהנת מאז.
+      en: Strock was first elected to the Knesset in 2013 on the Jewish Home list
+        (Tkuma faction), serving until 2015. She returned to the Knesset in 2021
+        with the Religious Zionist Party and has served since.
+    date: 2013-01-22
+    sources:
+      - url: https://en.wikipedia.org/wiki/Orit_Strook
+        title: Orit Strook
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q3593944
+        title: Orit Strock (Wikidata, Knesset MK ID 884)
+        publisher: Wikidata

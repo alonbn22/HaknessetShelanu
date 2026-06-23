@@ -1,0 +1,19 @@
+# Yair Lapid (PersonID 23594). Factual reporting from reputable public sources,
+# cited per claim. Neutral language. REVIEW before launch.
+personId: 23594
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: "כיהן כראש ממשלת ישראל (2022)"
+      en: "Served as Prime Minister of Israel (2022)"
+    description:
+      he: "ייסד את מפלגת יש עתיד (2012). כיהן כשר האוצר וכשר החוץ, ובשנת 2022 כיהן כראש הממשלה במסגרת הסכם רוטציה."
+      en: "Founded the Yesh Atid party (2012). Served as Finance Minister and Foreign Minister, and in 2022 served as Prime Minister under a rotation agreement."
+    sources:
+      - url: "https://en.wikipedia.org/wiki/Yair_Lapid"
+        title: "Yair Lapid"
+        publisher: "Wikipedia"
+      - url: "https://www.britannica.com/biography/Yair-Lapid"
+        title: "Yair Lapid — Biography"
+        publisher: "Encyclopædia Britannica"

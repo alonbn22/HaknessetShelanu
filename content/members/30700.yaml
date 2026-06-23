@@ -1,0 +1,62 @@
+# PersonID 30700. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30700
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: ראש עיריית ירושלים במשך עשור (2008-2018)
+      en: Mayor of Jerusalem for a decade (2008-2018)
+    description:
+      he: ניר ברקת כיהן כראש עיריית ירושלים מ-11 בנובמבר 2008 ועד 4 בדצמבר 2018, לאחר
+        שזכה בבחירות 2008 ונבחר מחדש ב-2013.
+      en: Nir Barkat served as Mayor of Jerusalem from 11 November 2008 to 4 December
+        2018, after winning the 2008 election and being re-elected in 2013.
+    date: 2008-11-11
+    sources:
+      - url: https://en.wikipedia.org/wiki/Nir_Barkat
+        title: Nir Barkat
+        publisher: Wikipedia
+      - url: https://www.jpost.com/breaking-news/article-726064
+        title: Former Jerusalem Mayor Nir Barkat named Economy Minister
+        publisher: The Jerusalem Post
+  - kind: positive
+    category: achievement
+    title:
+      he: שר הכלכלה והתעשייה
+      en: Minister of Economy and Industry
+    description:
+      he: ברקת מונה לשר הכלכלה והתעשייה בממשלה ה-37 של ישראל מטעם הליכוד, ונכנס לתפקיד
+        ב-1 בינואר 2023.
+      en: Barkat was appointed Minister of Economy and Industry in Israel's 37th
+        government on behalf of the Likud party, taking office on 1 January
+        2023.
+    date: 2023-01-01
+    sources:
+      - url: https://en.wikipedia.org/wiki/Nir_Barkat
+        title: Nir Barkat
+        publisher: Wikipedia
+      - url: https://www.jpost.com/breaking-news/article-726064
+        title: Former Jerusalem Mayor Nir Barkat named Economy Minister
+        publisher: The Jerusalem Post
+  - kind: positive
+    category: achievement
+    title:
+      he: יזם הייטק ומשקיע מוקדם בצ'ק פוינט
+      en: Tech entrepreneur and early investor in Check Point
+    description:
+      he: לפני כניסתו לפוליטיקה היה ברקת יזם הייטק. ב-1988 הקים את חברת התוכנה BRM,
+        שהתמחתה בתוכנות אנטי-וירוס ולימים הפכה לחברת השקעות שהשקיעה בחברות כמו
+        צ'ק פוינט. על פי דירוג פורבס 2013 הוא נמנה עם הפוליטיקאים העשירים
+        בישראל.
+      en: Before entering politics, Barkat was a high-tech entrepreneur. In 1988 he
+        founded the software company BRM, which specialized in antivirus
+        software and later became a venture investment firm that invested in
+        companies such as Check Point. According to a 2013 Forbes ranking he was
+        among Israel's wealthiest politicians.
+    date: 1988-01-01
+    sources:
+      - url: https://en.wikipedia.org/wiki/Nir_Barkat
+        title: Nir Barkat
+        publisher: Wikipedia

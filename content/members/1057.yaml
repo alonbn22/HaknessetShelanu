@@ -1,0 +1,81 @@
+# PersonID 1057. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 1057
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: עיתונאי ועורך "המחנה החרדי"
+      en: Journalist and editor of HaMahane HaHaredi
+    description:
+      he: לפני כניסתו לפוליטיקה עבד ישראל אייכלר כסופר ועיתונאי. בשנת 1980 מונה לעורך
+        העיתון החרדי "המחנה החרדי", ובשנת 1996 הפך ליושב ראש המרכז לפרסום יהודי.
+      en: Before entering politics, Yisrael Eichler worked as an author and
+        journalist. In 1980 he became editor of the Haredi newspaper HaMahane
+        HaHaredi, and in 1996 he became chairman of the Centre for Jewish
+        Publicity.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Yisrael_Eichler
+        title: Yisrael Eichler
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר כנסת ותיק מטעם אגודת ישראל
+      en: Veteran Knesset member for Agudat Yisrael
+    description:
+      he: "אייכלר כיהן כחבר הכנסת מטעם אגודת ישראל במסגרת רשימת יהדות התורה במספר
+        תקופות: בשנים 2003–2005, 2011–2019 ו-2019–2026. במהלך כהונתו עמד בראש
+        הסיעה וכן בראש ועדת העבודה והרווחה."
+      en: "Eichler served as a member of the Knesset for Agudat Yisrael within the
+        United Torah Judaism alliance across several terms: 2003-2005, 2011-2019
+        and 2019-2026. During his service he chaired the parliamentary faction
+        and headed the Labor and Welfare Committee."
+    sources:
+      - url: https://en.wikipedia.org/wiki/Yisrael_Eichler
+        title: Yisrael Eichler
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: נבחר לוועדה למינוי דייני בתי הדין הרבניים
+      en: Elected to the Rabbinical Judicial Appointments Committee
+    description:
+      he: ב-23 ביולי 2025 נבחר אייכלר לאחד משני המושבים השמורים לחברי כנסת בוועדה
+        למינוי דיינים, ברוב של 66 קולות מול 38 מתנגדים. הוועדה אחראית על מינוי
+        דייני בתי הדין הרבניים.
+      en: On 23 July 2025, Eichler was elected to one of the two Knesset seats on the
+        Rabbinical Judicial Appointments Committee, by a vote of 66 in favor and
+        38 against. The committee is responsible for selecting and appointing
+        rabbinical court judges.
+    date: 2025-07-23
+    sources:
+      - url: https://www.timesofisrael.com/utjs-eichler-elected-to-rabbinical-judicial-appointments-committee/
+        title: UTJ's Eichler elected to rabbinical judicial appointments committee
+        publisher: The Times of Israel
+      - url: https://en.wikipedia.org/wiki/Yisrael_Eichler
+        title: Yisrael Eichler
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: מונה לסגן שר התקשורת
+      en: Appointed deputy communications minister
+    description:
+      he: בינואר 2026 התפטר אייכלר מהכנסת ומונה לסגן שר התקשורת בממשלה, ואת מקומו
+        בכנסת תפס יצחק פינדרוס. המינוי נעשה במסגרת מהלך פוליטי שנועד לקדם את חוק
+        גיוס בני הישיבות.
+      en: In January 2026, Eichler resigned from the Knesset and was appointed deputy
+        communications minister in the government, with Yitzhak Pindrus taking
+        his Knesset seat. The appointment was part of a political move intended
+        to advance the Haredi conscription (draft) bill.
+    date: 2026-01-15
+    sources:
+      - url: https://www.jpost.com/israel-news/article-883472
+        title: Netanyahu to appoint UTJ's Yisrael Eichler to gov't role to pass
+          contentious haredi draft bill
+        publisher: The Jerusalem Post
+      - url: https://en.wikipedia.org/wiki/Yisrael_Eichler
+        title: Yisrael Eichler
+        publisher: Wikipedia

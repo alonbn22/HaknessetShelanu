@@ -1,0 +1,100 @@
+# Curated display names (short), translations, and chart colors for factions.
+# The Knesset API only provides long official Hebrew names.
+# id = KNS_Faction Id.
+factions:
+  - id: 1095
+    he: ש"ס
+    en: Shas
+    ar: شاس
+    ru: ШАС
+    color: "#1a1a2e"
+  - id: 1096
+    he: הליכוד
+    en: Likud
+    ar: الليكود
+    ru: Ликуд
+    color: "#1166b2"
+  - id: 1097
+    he: הציונות הדתית
+    en: Religious Zionism
+    ar: الصهيونية الدينية
+    ru: Религиозный сионизм
+    color: "#37745b"
+  - id: 1098
+    he: המחנה הממלכתי
+    en: National Unity
+    ar: المعسكر الرسمي
+    ru: Государственный лагерь
+    color: "#16355c"
+  - id: 1099
+    he: רע"ם
+    en: Ra'am
+    ar: القائمة العربية الموحدة
+    ru: РААМ
+    color: "#007a3d"
+  - id: 1100
+    he: העבודה
+    en: Labor
+    ar: حزب العمل
+    ru: Авода
+    color: "#e4002b"
+  - id: 1101
+    he: יהדות התורה
+    en: United Torah Judaism
+    ar: يهدوت هتوراة
+    ru: Яхадут ха-Тора
+    color: "#2e2e6e"
+  - id: 1102
+    he: יש עתיד
+    en: Yesh Atid
+    ar: يوجد مستقبل
+    ru: Еш Атид
+    color: "#0f9bd7"
+  - id: 1103
+    he: חד"ש-תע"ל
+    en: Hadash-Ta'al
+    ar: الجبهة - العربية للتغيير
+    ru: Хадаш — Тааль
+    color: "#c0392b"
+  - id: 1104
+    he: ישראל ביתנו
+    en: Yisrael Beiteinu
+    ar: إسرائيل بيتنا
+    ru: Наш дом Израиль
+    color: "#5b7fbd"
+  - id: 1105
+    he: הציונות הדתית
+    en: Religious Zionism
+    ar: الصهيونية الدينية
+    ru: Религиозный сионизм
+    color: "#37745b"
+  - id: 1106
+    he: עוצמה יהודית
+    en: Otzma Yehudit
+    ar: عوتسما يهوديت
+    ru: Оцма Иегудит
+    color: "#f2a900"
+  - id: 1107
+    he: נעם
+    en: Noam
+    ar: نوعام
+    ru: Ноам
+    color: "#7d5ba6"
+  - id: 1108
+    he: הימין הממלכתי
+    en: New Hope
+    ar: اليمين الرسمي
+    ru: Новая надежда
+    color: "#1d6a96"
+  - id: 1109
+    he: עידן רול (סיעת יחיד)
+    en: Idan Roll (single member)
+    ar: عيدان رول
+    ru: Идан Ролл
+    color: "#888888"
+  - id: 1110
+    he: כחול לבן - המחנה הממלכתי
+    en: Blue & White - National Unity
+    ar: أزرق أبيض - المعسكر الرسمي
+    ru: Кахоль-лаван — Гос. лагерь
+    color: "#16355c"

@@ -1,0 +1,19 @@
+# Gideon Sa'ar (PersonID 1027). Factual reporting from reputable public sources,
+# cited per claim. Neutral language. REVIEW before launch.
+personId: 1027
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: "כיהן כשר בכיר ומייסד מפלגת תקווה חדשה"
+      en: "Senior cabinet minister and founder of the New Hope party"
+    description:
+      he: "כיהן בתפקידי שר בכירים, בהם שר הפנים, שר החינוך ושר המשפטים, ולימים ייסד את מפלגת תקווה חדשה."
+      en: "Held senior ministerial posts including Interior, Education and Justice, and later founded the New Hope party."
+    sources:
+      - url: "https://en.wikipedia.org/wiki/Gideon_Sa%27ar"
+        title: "Gideon Sa'ar"
+        publisher: "Wikipedia"
+      - url: "https://www.britannica.com/biography/Gideon-Saar"
+        title: "Gideon Sa'ar — Biography"
+        publisher: "Encyclopædia Britannica"

@@ -1,0 +1,26 @@
+# Coalition membership is not available in the Knesset API — it is maintained
+# by hand here. Faction IDs are KNS_Faction Ids for the given Knesset.
+# PLEASE REVIEW after political changes (resignations, new agreements).
+#
+# Knesset 25 faction IDs for reference:
+#   1095 ש"ס                     1102 יש עתיד
+#   1096 הליכוד                  1103 חד"ש-תע"ל
+#   1099 רע"ם                    1104 ישראל ביתנו
+#   1100 העבודה                  1105 הציונות הדתית (סמוטריץ')
+#   1101 יהדות התורה             1106 עוצמה יהודית (בן גביר)
+#                                1107 נעם (אבי מעוז)
+#                                1108 הימין הממלכתי (סער)
+#                                1110 כחול לבן - המחנה הממלכתי
+#
+# Status reflected below (June 2026): UTJ (יהדות התורה) left the coalition in
+# July 2025 over the draft law. Shas resigned its ministries but announced it
+# remains part of the coalition. Verify before publishing.
+
+knesset: 25
+coalitionFactionIds:
+  - 1096 # הליכוד
+  - 1095 # ש"ס
+  - 1105 # הציונות הדתית
+  - 1106 # עוצמה יהודית
+  - 1107 # נעם
+  - 1108 # הימין הממלכתי

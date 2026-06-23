@@ -1,0 +1,37 @@
+# Benjamin Netanyahu (PersonID 965). Seed entry — expand/verify before publishing.
+# Every claim must cite at least one source (enforced by the content schema).
+personId: 965
+claims:
+  - kind: negative
+    category: investigation
+    status: ongoing
+    title:
+      he: "משפט פלילי בעניין שחיתות (תיקים 1000, 2000, 4000)"
+      en: "Ongoing corruption trial (Cases 1000, 2000, 4000)"
+      ar: "محاكمة جنائية بتهم فساد (الملفات 1000، 2000، 4000)"
+      ru: "Уголовный процесс по делам о коррупции (дела 1000, 2000, 4000)"
+    date: "2020-05-24"
+    description:
+      he: "הואשם ב-2019 בשוחד, מרמה והפרת אמונים בשלושה תיקים. המשפט נפתח במאי 2020 ומתנהל בבית המשפט המחוזי בירושלים. נתניהו מכחיש את כל האשמות."
+      en: "Indicted in 2019 for bribery, fraud and breach of trust across three cases. The trial opened in May 2020 at the Jerusalem District Court and is ongoing. Netanyahu denies all charges."
+    sources:
+      - url: "https://en.wikipedia.org/wiki/Trial_of_Benjamin_Netanyahu"
+        title: "Trial of Benjamin Netanyahu"
+        publisher: "Wikipedia"
+      - url: "https://www.timesofisrael.com/topic/benjamin-netanyahus-trial/"
+        title: "Benjamin Netanyahu's trial — topic coverage"
+        publisher: "The Times of Israel"
+  - kind: positive
+    category: achievement
+    title:
+      he: "ראש הממשלה המכהן הזמן הרב ביותר בתולדות ישראל"
+      en: "Longest-serving prime minister in Israel's history"
+      ar: "رئيس الوزراء الأطول خدمةً في تاريخ إسرائيل"
+      ru: "Дольше всех занимавший пост премьер-министра в истории Израиля"
+    description:
+      he: "כיהן כראש ממשלה למעלה מ-17 שנים במצטבר, יותר מכל ראש ממשלה אחר."
+      en: "Has served as prime minister for over 17 cumulative years, more than any other premier."
+    sources:
+      - url: "https://en.wikipedia.org/wiki/Benjamin_Netanyahu"
+        title: "Benjamin Netanyahu"
+        publisher: "Wikipedia"

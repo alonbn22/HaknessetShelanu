@@ -1,0 +1,22 @@
+# Aryeh Deri (PersonID 2291). Seed entry — expand/verify before publishing.
+personId: 2291
+claims:
+  - kind: negative
+    category: conviction
+    status: convicted
+    title:
+      he: "הורשע בעבירות מס (2022) ובעבר בלקיחת שוחד (1999)"
+      en: "Convicted of tax offenses (2022); earlier convicted of bribery (1999)"
+      ar: "أُدين بجرائم ضريبية (2022) وسبق أن أُدين بالرشوة (1999)"
+      ru: "Осуждён за налоговые преступления (2022); ранее — за взяточничество (1999)"
+    date: "2022-02-08"
+    description:
+      he: "הורשע ב-1999 בלקיחת שוחד וריצה מאסר בפועל. ב-2022 הורשע במסגרת הסדר טיעון בעבירות מס והתפטר מהכנסת. בינואר 2023 פסל בג\"ץ את מינויו לשר בשל הרשעותיו."
+      en: "Convicted of bribery in 1999 and served prison time. In 2022 he was convicted of tax offenses under a plea deal and resigned from the Knesset. In January 2023 the High Court of Justice disqualified his appointment as a minister due to his convictions."
+    sources:
+      - url: "https://en.wikipedia.org/wiki/Aryeh_Deri"
+        title: "Aryeh Deri"
+        publisher: "Wikipedia"
+      - url: "https://www.timesofisrael.com/topic/aryeh-deri/"
+        title: "Aryeh Deri — topic coverage"
+        publisher: "The Times of Israel"

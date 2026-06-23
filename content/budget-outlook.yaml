@@ -1,0 +1,26 @@
+# Outlook / news for budgets not yet in the itemized open data (the open-data
+# feed lags by a few years). EDITORIAL — written by the site; verify and UPDATE
+# with the real status and news as each budget moves through the process.
+# Add an entry per budget year. he/en provided; ar/ru fall back to en then he.
+# status: pending | proposed | in-knesset | approved
+entries:
+  - year: 2026
+    status: pending
+    headline:
+      he: "תקציב 2026 — בתהליך."
+      en: "The 2026 budget — in progress."
+    timing:
+      he: "תקציב המדינה מאושר בדרך כלל בחוק תקציב שנתי (לעיתים דו-שנתי). הצעת התקציב נדונה בוועדת הכספים של הכנסת ועוברת שלוש קריאות במליאה. תקציב 2026 צפוי לעבור סביב סוף 2025–תחילת 2026; הנתונים המפורטים יופיעו כאן לאחר פרסומם כנתונים פתוחים."
+      en: "The state budget is normally enacted as an annual Budget Law (sometimes biennial). The bill is debated in the Knesset Finance Committee and passes three plenum readings. The 2026 budget is expected to be enacted around late 2025–early 2026; the detailed figures will appear here once published as open data."
+    news:
+      - date: "2025-01-01"
+        text:
+          he: "מעקב אחר ההתקדמות: אישור הממשלה, דיוני ועדת הכספים והקריאות במליאה."
+          en: "Track the milestones: government approval, Finance Committee deliberations, and the plenum readings."
+    links:
+      - label: { he: "אתר משרד האוצר", en: "Ministry of Finance" }
+        url: "https://www.gov.il/he/departments/ministry_of_finance"
+      - label: { he: "ועדת הכספים של הכנסת", en: "Knesset Finance Committee" }
+        url: "https://main.knesset.gov.il/Activity/committees/Finance/Pages/default.aspx"
+      - label: { he: "התקציב הפתוח", en: "Open Budget portal" }
+        url: "https://next.obudget.org/"

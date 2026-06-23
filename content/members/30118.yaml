@@ -1,0 +1,62 @@
+# PersonID 30118. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30118
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: מכהנת כסגנית שרת החוץ של ישראל
+      en: Serves as Israel's Deputy Minister of Foreign Affairs
+    description:
+      he: שרן השכל נכנסה לכנסת לראשונה בשנת 2015 ובשנת 2024 הושבעה כסגנית שרת החוץ של
+        מדינת ישראל מטעם מפלגת 'תקווה חדשה'.
+      en: Sharren Haskel first entered the Knesset in 2015 and in 2024 was sworn in as
+        Israel's Deputy Minister of Foreign Affairs, representing the New Hope
+        party.
+    date: 2024-01-01
+    sources:
+      - url: https://en.wikipedia.org/wiki/Sharren_Haskel
+        title: Sharren Haskel
+        publisher: Wikipedia
+      - url: https://www.jns.org/feature/israeli-elections-2026-meet-the-parliament-sharren-haskel
+        title: "Israeli elections 2026: Meet the parliament—Deputy FM Sharren Haskel"
+        publisher: JNS
+  - kind: positive
+    category: achievement
+    title:
+      he: שירות במשמר הגבול בתקופת האינתיפאדה השנייה
+      en: Served in the Israel Border Police during the Second Intifada
+    description:
+      he: בגיל 18 התגייסה השכל למשמר הגבול ושירתה בתקופת האינתיפאדה השנייה, בין היתר
+        באבטחת מחסומים באזור ירושלים.
+      en: At age 18, Haskel enlisted in the Israel Border Police and served during the
+        Second Intifada, including duty at checkpoints in the Jerusalem area.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Sharren_Haskel
+        title: Sharren Haskel
+        publisher: Wikipedia
+      - url: https://www.jns.org/feature/israeli-elections-2026-meet-the-parliament-sharren-haskel
+        title: "Israeli elections 2026: Meet the parliament—Deputy FM Sharren Haskel"
+        publisher: JNS
+  - kind: positive
+    category: achievement
+    title:
+      he: יזמה חקיקה להרחבת הנגישות לקנאביס רפואי
+      en: Sponsored legislation to expand access to medical cannabis
+    description:
+      he: כראש סיעת 'תקווה חדשה', יזמה השכל הצעת חוק לרפורמה בתחום הקנאביס הרפואי
+        שנועדה להקל על מטופלים בישראל לקבל קנאביס רפואי. ההצעה עברה בקריאה
+        ראשונה בכנסת ב-13 באוקטובר 2021 ברוב של 54 מול 42.
+      en: As head of the New Hope faction, Haskel sponsored a medical cannabis reform
+        bill intended to make it easier for Israeli patients to obtain medical
+        cannabis. The bill passed its first reading in the Knesset on 13 October
+        2021 by a vote of 54-42.
+    date: 2021-10-13
+    sources:
+      - url: https://www.jpost.com/breaking-news/cannabis-bill-passes-first-reading-in-knesset-681868
+        title: Medical cannabis bill passes first reading with Ra'am's support
+        publisher: The Jerusalem Post
+      - url: https://en.wikipedia.org/wiki/Sharren_Haskel
+        title: Sharren Haskel
+        publisher: Wikipedia

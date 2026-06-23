@@ -1,0 +1,80 @@
+# Party-fit quiz — editorial. Each statement carries a stance per faction on a
+# scale of -2 (strongly oppose) .. +2 (strongly support). These are SIMPLIFIED,
+# good-faith characterizations of well-documented party positions, written by
+# this site for educational use — NOT official party platforms. PLEASE REVIEW.
+#
+# Faction IDs: 1096 Likud · 1102 Yesh Atid · 1095 Shas · 1110 National Unity ·
+# 1105 Religious Zionism · 1101 United Torah Judaism · 1106 Otzma Yehudit ·
+# 1104 Yisrael Beiteinu · 1103 Hadash-Ta'al · 1099 Ra'am · 1108 New Hope ·
+# 1100 Labor · 1107 Noam
+questions:
+  - id: judicial-reform
+    text:
+      he: "יש לבצע רפורמה משפטית משמעותית שתגביל את כוחו של בית המשפט העליון."
+      en: "Israel should carry out a major judicial reform that limits the Supreme Court's power."
+      ar: "يجب إجراء إصلاح قضائي كبير يحدّ من صلاحيات المحكمة العليا."
+      ru: "Следует провести масштабную судебную реформу, ограничивающую полномочия Верховного суда."
+    stances: { 1096: 2, 1105: 2, 1106: 2, 1107: 2, 1095: 1, 1101: 1, 1104: -1, 1108: -1, 1102: -2, 1110: -1, 1100: -2, 1103: -2, 1099: -1 }
+  - id: religion-state
+    text:
+      he: "יש להפריד יותר בין דת למדינה (תחבורה ציבורית בשבת, נישואין אזרחיים)."
+      en: "Religion and state should be more separated (public transport on Shabbat, civil marriage)."
+      ar: "يجب الفصل أكثر بين الدين والدولة (مواصلات عامة يوم السبت، زواج مدني)."
+      ru: "Следует сильнее отделить религию от государства (транспорт в шаббат, гражданский брак)."
+    stances: { 1104: 2, 1102: 2, 1100: 2, 1103: 2, 1110: 0, 1108: 0, 1096: -1, 1095: -2, 1101: -2, 1105: -2, 1106: -2, 1107: -2, 1099: -1 }
+  - id: haredi-draft
+    text:
+      he: "בחורי ישיבה חרדים צריכים להתגייס לצבא ככל אזרח אחר."
+      en: "Haredi yeshiva students should serve in the military like any other citizen."
+      ar: "يجب على طلاب المدارس الدينية الحريديين أداء الخدمة العسكرية كأي مواطن آخر."
+      ru: "Учащиеся ультраортодоксальных ешив должны служить в армии, как все граждане."
+    stances: { 1104: 2, 1102: 2, 1100: 2, 1108: 1, 1110: 1, 1096: 0, 1106: 0, 1105: -1, 1095: -2, 1101: -2, 1107: -2, 1103: 0, 1099: 0 }
+  - id: palestinian-state
+    text:
+      he: "ישראל צריכה לתמוך בהקמת מדינה פלסטינית כחלק מהסכם שלום."
+      en: "Israel should support establishing a Palestinian state as part of a peace agreement."
+      ar: "يجب أن تدعم إسرائيل إقامة دولة فلسطينية كجزء من اتفاق سلام."
+      ru: "Израиль должен поддержать создание палестинского государства в рамках мирного соглашения."
+    stances: { 1103: 2, 1100: 1, 1099: 1, 1102: 0, 1110: -1, 1096: -2, 1105: -2, 1106: -2, 1095: -1, 1101: -1, 1104: -1, 1108: -1, 1107: -2 }
+  - id: settlements-sovereignty
+    text:
+      he: "יש להרחיב את ההתיישבות ביהודה ושומרון ולהחיל ריבונות."
+      en: "Israel should expand settlement in the West Bank and apply sovereignty."
+      ar: "يجب توسيع الاستيطان في الضفة الغربية وفرض السيادة."
+      ru: "Следует расширять поселения на Западном берегу и распространять суверенитет."
+    stances: { 1105: 2, 1106: 2, 1107: 2, 1096: 1, 1095: 0, 1101: 0, 1108: 0, 1110: -1, 1102: -1, 1104: 0, 1100: -2, 1103: -2, 1099: -2 }
+  - id: welfare-periphery
+    text:
+      he: "על הממשלה להגדיל את התקצוב והרווחה לאוכלוסיות חלשות ולפריפריה."
+      en: "The government should increase funding and welfare for weaker populations and the periphery."
+      ar: "على الحكومة زيادة التمويل والرفاه للفئات الضعيفة والأطراف."
+      ru: "Правительство должно увеличить финансирование и соцпомощь малообеспеченным и периферии."
+    stances: { 1095: 2, 1100: 2, 1103: 2, 1099: 2, 1102: 1, 1096: 1, 1105: 1, 1106: 1, 1101: 1, 1110: 1, 1108: 0, 1104: 0, 1107: 0 }
+  - id: free-market
+    text:
+      he: "יש להעדיף כלכלת שוק חופשי והפחתת רגולציה על פני התערבות ממשלתית."
+      en: "Free-market economics and less regulation should be preferred over government intervention."
+      ar: "يجب تفضيل اقتصاد السوق الحر وتقليل التنظيم على تدخل الحكومة."
+      ru: "Следует предпочесть свободный рынок и дерегуляцию государственному вмешательству."
+    stances: { 1096: 2, 1104: 1, 1108: 1, 1102: 1, 1110: 1, 1105: 1, 1107: 0, 1106: 0, 1101: 0, 1095: -1, 1099: -1, 1100: -2, 1103: -2 }
+  - id: lgbtq-rights
+    text:
+      he: "יש להרחיב ולהגן בחוק על זכויות הקהילה הגאה."
+      en: "LGBTQ rights should be expanded and protected by law."
+      ar: "يجب توسيع حقوق مجتمع الميم وحمايتها بالقانون."
+      ru: "Права ЛГБТК следует расширять и защищать законом."
+    stances: { 1100: 2, 1102: 2, 1103: 2, 1104: 1, 1110: 1, 1096: 0, 1108: 0, 1095: -2, 1101: -2, 1105: -2, 1106: -2, 1107: -2, 1099: -2 }
+  - id: arab-parties-coalition
+    text:
+      he: "מפלגות ערביות הן שותפות לגיטימיות לקואליציה שלטת."
+      en: "Arab parties are legitimate partners for a governing coalition."
+      ar: "الأحزاب العربية شريكة شرعية في الائتلاف الحاكم."
+      ru: "Арабские партии — легитимные партнёры по правящей коалиции."
+    stances: { 1099: 2, 1103: 2, 1100: 2, 1102: 1, 1110: 0, 1104: -1, 1096: -2, 1105: -2, 1106: -2, 1095: -1, 1101: -1, 1108: -1, 1107: -2 }
+  - id: security-first
+    text:
+      he: "ביטחון לאומי וקו צבאי תקיף צריכים לגבור על פשרה מדינית."
+      en: "National security and a firm military line should take priority over diplomatic compromise."
+      ar: "يجب تقديم الأمن القومي والخط العسكري الحازم على التسوية الدبلوماسية."
+      ru: "Национальная безопасность и жёсткая военная линия важнее дипломатических компромиссов."
+    stances: { 1106: 2, 1105: 2, 1096: 2, 1107: 2, 1104: 1, 1108: 1, 1095: 1, 1101: 1, 1110: 1, 1102: 0, 1100: -1, 1099: -2, 1103: -2 }

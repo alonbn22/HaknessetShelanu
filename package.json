@@ -12,6 +12,7 @@
     "test:security": "node --import tsx --test \"tests/security/*.test.ts\"",
     "sync": "tsx scripts/sync/index.ts",
     "update": "tsx scripts/sync/index.ts",
+    "warm": "tsx scripts/sync/warm-translations.ts",
     "db:push": "drizzle-kit push --force"
   },
   "dependencies": {

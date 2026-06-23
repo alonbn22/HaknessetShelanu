@@ -100,13 +100,14 @@ export default async function MemberPage({
   const serving = isCurrentMk(positions);
 
   const bio = getMemberBio(personId);
+  // Career/positions are shown in the Roles section below (Knesset source), so the
+  // biography keeps only the background blocks: born, education, occupation, military.
   const bioParts = bio
     ? [
         bio.birthPlaceHe,
         ...(bio.educationHe?.split(" · ") ?? []),
         ...(bio.occupationsHe?.split(" · ") ?? []),
         ...(bio.militaryHe?.split(" · ") ?? []),
-        ...bio.career.map((c) => c.title),
       ]
     : [];
 
@@ -135,12 +136,6 @@ export default async function MemberPage({
       .map((s) => s.trim())
       .filter(Boolean)
       .map(localOf);
-  const year = (d: string | null) => (d ? d.slice(0, 4) : "");
-  const fmtRange = (r: { start: string | null; end: string | null }) => {
-    const s = year(r.start);
-    const e = r.end === null ? t("member.present") : year(r.end);
-    return s && e ? `${s}–${e}` : s || e;
-  };
 
   return (
     <div className="space-y-8">
@@ -210,11 +205,7 @@ export default async function MemberPage({
       </section>
 
       {bio &&
-        (bio.dateOfBirth ||
-          bio.educationHe ||
-          bio.occupationsHe ||
-          bio.militaryHe ||
-          bio.career.length > 0) && (
+        (bio.dateOfBirth || bio.educationHe || bio.occupationsHe || bio.militaryHe) && (
         <section className="rounded-xl bg-white p-6 shadow-sm space-y-4">
           <h2 className="text-xl font-semibold">{t("member.bioTitle")}</h2>
           <dl className="grid gap-x-4 gap-y-2 text-sm sm:grid-cols-[max-content_1fr]">
@@ -256,31 +247,6 @@ export default async function MemberPage({
                 </Fragment>
               ))}
           </dl>
-
-          {bio.career.length > 0 && (
-            <div className="space-y-1.5">
-              <h3 className="text-sm font-medium text-black/60">{t("member.career")}</h3>
-              <ul className="space-y-1 text-sm">
-                {bio.career.map((role, i) => {
-                  const r = localOf(role.title);
-                  return (
-                    <li key={i} className="flex flex-wrap gap-x-2">
-                      <span
-                        className="font-medium"
-                        dir={r.rtl ? "rtl" : undefined}
-                        lang={r.rtl ? "he" : undefined}
-                      >
-                        {r.text}
-                      </span>
-                      <span className="text-muted">
-                        {role.ranges.map(fmtRange).filter(Boolean).join(", ")}
-                      </span>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          )}
 
           {bio.wikidataId && (
             <p className="text-xs text-muted">

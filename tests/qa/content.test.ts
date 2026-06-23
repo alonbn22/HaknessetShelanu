@@ -1,0 +1,30 @@
+import { test } from "node:test";
+import assert from "node:assert/strict";
+import { getElectionsHistory, getGlossary } from "../../src/lib/content";
+
+test("elections history covers all 25 Knessets", () => {
+  const e = getElectionsHistory();
+  assert.equal(e.length, 25);
+  const nums = new Set(e.map((x) => x.knesset));
+  for (let k = 1; k <= 25; k++) assert.ok(nums.has(k), `missing Knesset ${k}`);
+});
+
+test("every Knesset term has summary, events and 'ended'", () => {
+  for (const e of getElectionsHistory()) {
+    assert.ok(e.summary, `K${e.knesset} missing summary`);
+    assert.ok(e.events && e.events.length > 0, `K${e.knesset} missing events`);
+    assert.ok(e.ended, `K${e.knesset} missing ended`);
+    for (const ev of e.events!) {
+      assert.ok(["good", "bad", "neutral"].includes(ev.kind), "valid event kind");
+      assert.ok(ev.text.he, "event has Hebrew text");
+    }
+  }
+});
+
+test("glossary includes the Norwegian Law term", () => {
+  const terms = getGlossary();
+  const found = terms.some(
+    (t) => t.term.he.includes("נורווגי") || (t.term.en ?? "").includes("Norwegian"),
+  );
+  assert.ok(found, "Norwegian Law term should exist in the glossary");
+});

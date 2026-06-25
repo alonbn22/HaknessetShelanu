@@ -65,6 +65,45 @@ export async function syncPersonPositions(): Promise<Set<number>> {
   return personIds;
 }
 
+// Pull the FULL position history (all Knessets) for the given persons — so a
+// member's profile shows their complete role + faction history, not just the
+// current term. Only fetches for the current members we track (by PersonID),
+// so it doesn't bloat the DB with every historical person. Upserts into the same
+// table; historical rows carry IsCurrent=false and their own KnessetNum.
+export async function syncMemberPositionHistory(personIds: Set<number>) {
+  const db = getDb();
+  console.log("Syncing full position history for current members…");
+  const ids = [...personIds];
+  let n = 0;
+  for (let i = 0; i < ids.length; i += 40) {
+    const batch = ids.slice(i, i + 40);
+    for await (const row of fetchAllRows<Row>(
+      entityUrl("KNS_PersonToPosition", { $filter: `PersonID in (${batch.join(",")})` }),
+    )) {
+      const values = {
+        personId: row.PersonID,
+        positionId: row.PositionID,
+        knessetNum: row.KnessetNum,
+        factionId: row.FactionID,
+        factionNameHe: row.FactionName?.trim() ?? null,
+        govMinistryNameHe: row.GovMinistryName ?? null,
+        committeeId: row.CommitteeID ?? null,
+        committeeNameHe: row.CommitteeName ?? null,
+        startDate: row.StartDate,
+        finishDate: row.FinishDate,
+        isCurrent: !!row.IsCurrent,
+        lastUpdated: row.LastUpdatedDate,
+      };
+      db.insert(schema.personPositions)
+        .values({ id: row.Id, ...values })
+        .onConflictDoUpdate({ target: schema.personPositions.id, set: values })
+        .run();
+      n++;
+    }
+  }
+  console.log(`  ${n} historical position rows upserted`);
+}
+
 // Fill positionDescHe from the KNS_Position lookup table.
 export async function syncPositionDescriptions() {
   const db = getDb();

@@ -320,16 +320,13 @@ export function getMemberBio(personId: number): MemberBio | null {
 
 export type PositionRow = typeof schema.personPositions.$inferSelect;
 
+// All positions across ALL Knessets (the member's full role + faction history),
+// newest first. ("Current MK" detection still works via the isCurrent flag.)
 export function getMemberPositions(personId: number): PositionRow[] {
   return getDb()
     .select()
     .from(schema.personPositions)
-    .where(
-      and(
-        eq(schema.personPositions.personId, personId),
-        eq(schema.personPositions.knessetNum, CURRENT_KNESSET),
-      ),
-    )
+    .where(eq(schema.personPositions.personId, personId))
     .all()
     .sort((a, b) => (b.startDate ?? "").localeCompare(a.startDate ?? ""));
 }

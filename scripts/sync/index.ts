@@ -14,6 +14,7 @@
 import {
   syncFactions,
   syncPersonPositions,
+  syncMemberPositionHistory,
   syncPositionDescriptions,
   syncPersons,
   syncMkSiteCodes,
@@ -53,6 +54,7 @@ async function main() {
   if (all || args.has("--members")) {
     await syncFactions();
     const personIds = await syncPersonPositions();
+    await syncMemberPositionHistory(personIds);
     await syncPositionDescriptions();
     await syncPersons(personIds);
     await syncMkSiteCodes(personIds);

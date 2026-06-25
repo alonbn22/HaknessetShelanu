@@ -21,7 +21,8 @@
     "quiz": "Election compass",
     "budget": "Budget",
     "lobbyists": "Lobbyists",
-    "tickets": "Tickets"
+    "tickets": "Tickets",
+    "menu": "Menu"
   },
   "common": {
     "knessetNum": "{num}th Knesset",

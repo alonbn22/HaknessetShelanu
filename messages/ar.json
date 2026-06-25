@@ -21,7 +21,8 @@
     "quiz": "بوصلة الانتخابات",
     "budget": "الميزانية",
     "lobbyists": "اللوبيون",
-    "tickets": "التذاكر"
+    "tickets": "التذاكر",
+    "menu": "القائمة"
   },
   "common": {
     "knessetNum": "الكنيست الـ{num}",

@@ -21,7 +21,8 @@
     "quiz": "מצפן בחירות",
     "budget": "תקציב",
     "lobbyists": "לוביסטים",
-    "tickets": "פניות"
+    "tickets": "פניות",
+    "menu": "תפריט"
   },
   "common": {
     "knessetNum": "הכנסת ה־{num}",

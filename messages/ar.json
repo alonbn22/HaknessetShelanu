@@ -56,7 +56,9 @@
     "participation": "المشاركة",
     "heroBadge": "الكنيست الـ25 · استنادًا إلى بيانات عامة",
     "searchPlaceholder": "ابحث عن تصويتات أو أعضاء أو كتل…",
-    "totalMinisters": "وزراء الحكومة"
+    "totalMinisters": "وزراء الحكومة",
+    "controversialTitle": "قوانين مثيرة للجدل",
+    "controversialSubtitle": "تشريعات أثارت جدلاً عامًا واسعًا — مع مصدر لكل بند."
   },
   "members": {
     "title": "أعضاء الكنيست",
@@ -324,7 +326,9 @@
     "cat_government": "الحكم والنظام",
     "cat_electoral": "الانتخابات",
     "cat_israel": "مصطلحات إسرائيلية",
-    "source": "المصدر"
+    "source": "المصدر",
+    "cat_rights": "الحقوق والقانون",
+    "cat_international": "الشؤون الدولية"
   },
   "electionsHistory": {
     "title": "تاريخ انتخابات الكنيست",
@@ -475,7 +479,8 @@
     "kind_ngo-donations": "تبرعات للجمعيات",
     "foreignMoreLinks": "مصادر رسمية للمتابعة التفصيلية:",
     "usAidTitle": "المساعدات العسكرية الأمريكية — آخر 10 سنوات",
-    "usAidTotal": "الإجمالي التراكمي: ~{total} مليار $"
+    "usAidTotal": "الإجمالي التراكمي: ~{total} مليار $",
+    "sortHint": "اضغط على رقم للترتيب"
   },
   "feedback": {
     "reportButton": "الإبلاغ عن معلومة غير صحيحة",
@@ -483,7 +488,17 @@
     "reportAria": "الإبلاغ عن معلومة غير صحيحة بخصوص {context}",
     "suggestAria": "اقتراح معلومة جديدة بخصوص {context}",
     "theSite": "الموقع",
-    "ticketHint": "يفتح تذكرة للمراجعة — لا يتغيّر أي شيء في الموقع تلقائيًا."
+    "ticketHint": "يفتح تذكرة للمراجعة — لا يتغيّر أي شيء في الموقع تلقائيًا.",
+    "modalReportTitle": "الإبلاغ عن معلومة غير صحيحة",
+    "modalSuggestTitle": "اقتراح معلومة جديدة",
+    "modalNote": "يفتح هذا تذكرة تُراجَع قبل النشر. يلزم إرفاق مصدر موثوق.",
+    "fieldIncorrect": "ما هي المعلومة غير الصحيحة؟",
+    "fieldInfo": "المعلومة المراد إضافتها",
+    "fieldCorrect": "المعلومة الصحيحة (إن وُجدت)",
+    "fieldSource": "رابط المصدر (إلزامي)",
+    "submit": "فتح تذكرة على GitHub",
+    "cancel": "إلغاء",
+    "needGithub": "يتطلّب الإرسال حساب GitHub مجاني."
   },
   "tickets": {
     "title": "التذاكر والتصحيحات",

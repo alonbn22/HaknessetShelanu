@@ -56,7 +56,9 @@
     "participation": "השתתפות",
     "heroBadge": "הכנסת ה־25 · מבוסס על נתונים ציבוריים",
     "searchPlaceholder": "חיפוש הצבעות, חברי כנסת או סיעות…",
-    "totalMinisters": "שרים בממשלה"
+    "totalMinisters": "שרים בממשלה",
+    "controversialTitle": "חוקים שנויים במחלוקת",
+    "controversialSubtitle": "חקיקה שעוררה ויכוח ציבורי נרחב — עם מקור לכל פריט."
   },
   "members": {
     "title": "חברי הכנסת",
@@ -324,7 +326,9 @@
     "cat_government": "ממשל ומשטר",
     "cat_electoral": "בחירות",
     "cat_israel": "מונחים ישראליים",
-    "source": "מקור"
+    "source": "מקור",
+    "cat_rights": "זכויות ומשפט",
+    "cat_international": "יחסים בינלאומיים"
   },
   "electionsHistory": {
     "title": "היסטוריית הבחירות לכנסת",
@@ -475,7 +479,8 @@
     "kind_ngo-donations": "תרומות לעמותות",
     "foreignMoreLinks": "מקורות רשמיים למעקב מפורט:",
     "usAidTitle": "סיוע צבאי אמריקאי — 10 השנים האחרונות",
-    "usAidTotal": "סך מצטבר: ~{total} מיליארד $"
+    "usAidTotal": "סך מצטבר: ~{total} מיליארד $",
+    "sortHint": "לחצו על נתון כדי למיין"
   },
   "feedback": {
     "reportButton": "דיווח על מידע שגוי",
@@ -483,7 +488,17 @@
     "reportAria": "דיווח על מידע שגוי בנוגע ל{context}",
     "suggestAria": "הצעת מידע חדש בנוגע ל{context}",
     "theSite": "האתר",
-    "ticketHint": "נפתחת פנייה לבדיקה — שום דבר לא משתנה באתר באופן אוטומטי."
+    "ticketHint": "נפתחת פנייה לבדיקה — שום דבר לא משתנה באתר באופן אוטומטי.",
+    "modalReportTitle": "דיווח על מידע שגוי",
+    "modalSuggestTitle": "הצעת מידע חדש",
+    "modalNote": "הפנייה נפתחת ככרטיס שנבדק לפני פרסום. חובה לצרף מקור אמין.",
+    "fieldIncorrect": "מה המידע השגוי?",
+    "fieldInfo": "המידע להוספה",
+    "fieldCorrect": "המידע הנכון (אם ידוע)",
+    "fieldSource": "קישור למקור (חובה)",
+    "submit": "פתיחת פנייה ב‑GitHub",
+    "cancel": "ביטול",
+    "needGithub": "לשליחה נדרש חשבון GitHub חינמי."
   },
   "tickets": {
     "title": "פניות ותיקונים",

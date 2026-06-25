@@ -1091,10 +1091,13 @@ export function getLobbyistStats() {
 }
 
 // Searchable, paginated lobbyists, each with the clients they represent.
+export type LobbyistSort = "name" | "firm" | "clients";
+
 export function getLobbyistsPage(opts: {
   search?: string;
   searchHe?: string;
   page?: number;
+  sort?: LobbyistSort;
 }) {
   const db = getDb();
   const page = Math.max(1, opts.page ?? 1);
@@ -1117,11 +1120,19 @@ export function getLobbyistsPage(opts: {
   const total =
     db.select({ n: sql<number>`COUNT(*)` }).from(schema.lobbyists).where(where).get()?.n ?? 0;
 
+  // Sort: by lobbyist name (default), by firm, or by number of clients (desc).
+  const orderBy =
+    opts.sort === "clients"
+      ? sql`(SELECT COUNT(*) FROM lobbyist_clients lc WHERE lc.lobbyist_id = ${schema.lobbyists.id}) DESC, ${schema.lobbyists.fullName}`
+      : opts.sort === "firm"
+        ? sql`${schema.lobbyists.corporationName} IS NULL, ${schema.lobbyists.corporationName}, ${schema.lobbyists.fullName}`
+        : schema.lobbyists.fullName;
+
   const items = db
     .select()
     .from(schema.lobbyists)
     .where(where)
-    .orderBy(schema.lobbyists.fullName)
+    .orderBy(orderBy)
     .limit(LOBBYIST_PAGE_SIZE)
     .offset((page - 1) * LOBBYIST_PAGE_SIZE)
     .all();

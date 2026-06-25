@@ -344,3 +344,26 @@ export function getForeignAid(): ForeignAid {
   }
   return _foreignAid;
 }
+
+// ---------- controversial laws (editorial, sourced) ----------
+
+const controversialLawSchema = z.object({
+  year: z.number(),
+  title: localizedText,
+  summary: localizedText,
+  sourceUrl: httpUrl,
+});
+export type ControversialLaw = z.infer<typeof controversialLawSchema>;
+
+let _controversialLaws: ControversialLaw[] | null = null;
+
+export function getControversialLaws(): ControversialLaw[] {
+  if (!_controversialLaws) {
+    const raw = fs.readFileSync(path.join(CONTENT_DIR, "controversial-laws.yaml"), "utf8");
+    _controversialLaws = z
+      .object({ laws: z.array(controversialLawSchema) })
+      .parse(parse(raw))
+      .laws.sort((a, b) => b.year - a.year);
+  }
+  return _controversialLaws;
+}

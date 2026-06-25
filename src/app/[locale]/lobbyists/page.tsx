@@ -1,7 +1,8 @@
 import { getTranslations, getLocale } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import { Pagination } from "@/components/Pagination";
 import { LobbyistSearch } from "./LobbyistSearch";
-import { getLobbyistStats, getLobbyistsPage } from "@/lib/queries";
+import { getLobbyistStats, getLobbyistsPage, type LobbyistSort } from "@/lib/queries";
 import { getForeignAid, partyText } from "@/lib/content";
 import { translateQueryToHebrew } from "@/lib/translate-query";
 import { localizeData, queueDataTranslations } from "@/lib/i18n-data";
@@ -12,15 +13,23 @@ export const dynamic = "force-dynamic";
 export default async function LobbyistsPage({
   searchParams,
 }: {
-  searchParams: Promise<{ q?: string; page?: string }>;
+  searchParams: Promise<{ q?: string; page?: string; sort?: string }>;
 }) {
   const t = await getTranslations("lobbyists");
   const locale = await getLocale();
   const params = await searchParams;
   const page = Math.max(1, parseInt(params.page ?? "1", 10) || 1);
+  const sort: LobbyistSort = (["name", "firm", "clients"] as const).includes(
+    params.sort as LobbyistSort,
+  )
+    ? (params.sort as LobbyistSort)
+    : "name";
   const stats = getLobbyistStats();
   const searchHe = await translateQueryToHebrew(params.q, locale);
-  const { items, total, pages } = getLobbyistsPage({ search: params.q, searchHe, page });
+  const { items, total, pages } = getLobbyistsPage({ search: params.q, searchHe, page, sort });
+  // Link to a sort, preserving the search query (and resetting to page 1).
+  const sortHref = (s: LobbyistSort) =>
+    `/lobbyists?${new URLSearchParams({ ...(params.q ? { q: params.q } : {}), sort: s })}`;
 
   // Permit type ("permanent"/"temporary lobbyist") is a small enum → translate on
   // the fly. Personal/firm/client names are proper nouns and intentionally stay Hebrew.
@@ -30,7 +39,10 @@ export default async function LobbyistsPage({
   const permitOf = (he: string | null) => (he && permitMap.get(he.trim())) || null;
 
   const nf = new Intl.NumberFormat(locale);
-  const query: Record<string, string> = params.q ? { q: params.q } : {};
+  const query: Record<string, string> = {
+    ...(params.q ? { q: params.q } : {}),
+    ...(sort !== "name" ? { sort } : {}),
+  };
   const foreignAid = getForeignAid();
 
   return (
@@ -46,19 +58,34 @@ export default async function LobbyistsPage({
         <p className="text-muted">{t("whatForNote")}</p>
       </div>
 
-      <div className="grid grid-cols-3 gap-3">
-        {[
-          { v: stats.lobbyists, l: t("statLobbyists") },
-          { v: stats.firms, l: t("statFirms") },
-          { v: stats.clients, l: t("statClients") },
-        ].map((s) => (
-          <div key={s.l} className="rounded-xl bg-white p-4 text-center shadow-sm">
-            <div className="text-2xl font-extrabold text-accent tabular-nums">
-              {nf.format(s.v)}
-            </div>
-            <div className="text-xs text-muted mt-1">{s.l}</div>
-          </div>
-        ))}
+      <div className="space-y-1.5">
+        <div className="grid grid-cols-3 gap-3">
+          {(
+            [
+              { v: stats.lobbyists, l: t("statLobbyists"), s: "name" },
+              { v: stats.firms, l: t("statFirms"), s: "firm" },
+              { v: stats.clients, l: t("statClients"), s: "clients" },
+            ] as const
+          ).map((c) => {
+            const active = sort === c.s;
+            return (
+              <Link
+                key={c.l}
+                href={sortHref(c.s)}
+                aria-pressed={active}
+                className={`rounded-xl bg-white p-4 text-center shadow-sm ring-2 transition-colors hover:bg-black/[.02] ${
+                  active ? "ring-accent" : "ring-transparent"
+                }`}
+              >
+                <div className="text-2xl font-extrabold text-accent tabular-nums">
+                  {nf.format(c.v)}
+                </div>
+                <div className="text-xs text-muted mt-1">{c.l}</div>
+              </Link>
+            );
+          })}
+        </div>
+        <p className="text-xs text-muted">{t("sortHint")}</p>
       </div>
 
       <LobbyistSearch />

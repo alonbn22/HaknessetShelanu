@@ -56,7 +56,9 @@
     "participation": "Participation",
     "heroBadge": "25th Knesset · based on public data",
     "searchPlaceholder": "Search votes, members or factions…",
-    "totalMinisters": "Government ministers"
+    "totalMinisters": "Government ministers",
+    "controversialTitle": "Controversial laws",
+    "controversialSubtitle": "Legislation that sparked major public debate — each with a source."
   },
   "members": {
     "title": "Knesset Members",
@@ -324,7 +326,9 @@
     "cat_government": "Government & system",
     "cat_electoral": "Elections",
     "cat_israel": "Israeli terms",
-    "source": "Source"
+    "source": "Source",
+    "cat_rights": "Rights & law",
+    "cat_international": "International affairs"
   },
   "electionsHistory": {
     "title": "Knesset Elections History",
@@ -475,7 +479,8 @@
     "kind_ngo-donations": "NGO donations",
     "foreignMoreLinks": "Official sources for detailed tracking:",
     "usAidTitle": "U.S. military aid — past 10 years",
-    "usAidTotal": "Cumulative: ~${total}B"
+    "usAidTotal": "Cumulative: ~${total}B",
+    "sortHint": "Tap a stat to sort"
   },
   "feedback": {
     "reportButton": "Report incorrect information",
@@ -483,7 +488,17 @@
     "reportAria": "Report incorrect information about {context}",
     "suggestAria": "Suggest new information about {context}",
     "theSite": "the site",
-    "ticketHint": "Opens a review ticket — nothing changes on the site automatically."
+    "ticketHint": "Opens a review ticket — nothing changes on the site automatically.",
+    "modalReportTitle": "Report incorrect information",
+    "modalSuggestTitle": "Suggest new information",
+    "modalNote": "This opens a ticket reviewed before anything is published. A reputable source is required.",
+    "fieldIncorrect": "What is incorrect?",
+    "fieldInfo": "Information to add",
+    "fieldCorrect": "Correct information (if known)",
+    "fieldSource": "Source link (required)",
+    "submit": "Open ticket on GitHub",
+    "cancel": "Cancel",
+    "needGithub": "Submitting requires a free GitHub account."
   },
   "tickets": {
     "title": "Tickets & corrections",

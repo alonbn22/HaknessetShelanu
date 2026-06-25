@@ -14,6 +14,7 @@ import {
   personName,
 } from "@/lib/queries";
 import { localizeData, queueDataTranslations } from "@/lib/i18n-data";
+import { getControversialLaws, partyText } from "@/lib/content";
 
 export const dynamic = "force-dynamic";
 
@@ -21,6 +22,7 @@ export default async function HomePage() {
   const t = await getTranslations();
   const locale = await getLocale();
   const { mks, ministers, factions, voteCount } = getDashboardStats();
+  const controversialLaws = getControversialLaws();
   const latestVotes = getLatestVotes(6);
   const latestTitles = localizeData(latestVotes.map((v) => v.titleHe), locale);
   const latestTitleOf = (he: string | null) =>
@@ -140,6 +142,36 @@ export default async function HomePage() {
           </span>
         </div>
       </section>
+
+      {controversialLaws.length > 0 && (
+        <section className="rounded-xl bg-white p-6 shadow-sm space-y-4">
+          <div>
+            <h2 className="text-xl font-semibold">{t("home.controversialTitle")}</h2>
+            <p className="text-sm text-muted">{t("home.controversialSubtitle")}</p>
+          </div>
+          <ul className="space-y-3">
+            {controversialLaws.map((law, i) => (
+              <li key={i} className="border-s-2 border-amber-400 ps-3">
+                <div className="flex flex-wrap items-baseline gap-x-2">
+                  <span className="font-semibold">{partyText(law.title, locale)}</span>
+                  <span className="text-xs text-muted">{law.year}</span>
+                </div>
+                <p className="text-sm leading-relaxed text-foreground/80">
+                  {partyText(law.summary, locale)}
+                </p>
+                <a
+                  href={law.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-accent hover:underline"
+                >
+                  {t("common.source")}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       {voteCount > 0 && (
         <section className="space-y-4">

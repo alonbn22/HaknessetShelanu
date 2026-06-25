@@ -1,0 +1,78 @@
+# PersonID 30719. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30719
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר הכנסת היהודי היחיד בסיעת חד"ש
+      en: The sole Jewish member of the Hadash faction in the Knesset
+    description:
+      he: עופר כסיף נבחר לכנסת לראשונה באפריל 2019 ברשימת חד"ש (במסגרת חד"ש-תע"ל) והוא
+        חבר הכנסת היהודי היחיד במפלגה הערבית-יהודית. כסיף, חבר המפלגה
+        הקומוניסטית הישראלית, נבחר מחדש בבחירות ספטמבר 2019, 2020 ו-2021.
+      en: Ofer Cassif was first elected to the Knesset in April 2019 on the Hadash
+        list (within the Hadash-Ta'al alliance) and is the only Jewish member of
+        the Arab-Jewish party. A member of the Communist Party of Israel, he was
+        re-elected in the September 2019, 2020 and 2021 elections.
+    date: 2019-04-09
+    sources:
+      - url: https://en.wikipedia.org/wiki/Ofer_Cassif
+        title: Ofer Cassif
+        publisher: Wikipedia
+      - url: https://www.aljazeera.com/news/2024/1/11/who-is-israeli-mp-ofer-cassif-why-is-he-backing-south-africa-at-the-icj
+        title: Who is Israeli MP Ofer Cassif, why is he backing South Africa at the ICJ?
+        publisher: Al Jazeera
+  - kind: positive
+    category: achievement
+    title:
+      he: בית המשפט העליון אישר את מועמדותו לאחר פסילה
+      en: Supreme Court reinstated his candidacy after disqualification
+    description:
+      he: במרץ 2019 פסלה ועדת הבחירות המרכזית את מועמדותו של כסיף לכנסת, אך בית המשפט
+        העליון של ישראל ביטל את ההחלטה ואיפשר לו להתמודד. כסיף בעל תואר דוקטור
+        בפילוסופיה פוליטית מ-London School of Economics ולימד מדע המדינה
+        ופילוסופיה פוליטית במוסדות אקדמיים בישראל לפני כניסתו לפוליטיקה.
+      en: In March 2019 the Central Elections Committee disqualified Cassif's
+        candidacy, but the Supreme Court of Israel overturned the decision and
+        allowed him to run. Cassif holds a PhD in political philosophy from the
+        London School of Economics and taught political science and political
+        philosophy at Israeli academic institutions before entering politics.
+    date: 2019-03-17
+    sources:
+      - url: https://en.wikipedia.org/wiki/Ofer_Cassif
+        title: Ofer Cassif
+        publisher: Wikipedia
+  - kind: negative
+    category: controversy
+    status: settled
+    title:
+      he: ועדת האתיקה של הכנסת השעתה אותו לשישה חודשים
+      en: Knesset Ethics Committee suspended him for six months
+    description:
+      he: ב-11 בנובמבר 2024 החליטה ועדת האתיקה של הכנסת פה אחד להשעות את חבר הכנסת
+        עופר כסיף למשך שישה חודשים מהשתתפות במליאה ובוועדות (למעט הצבעות), וכן
+        לעכב את שכרו לשבועיים. ההחלטה התקבלה בעקבות תלונות על אמירותיו בנוגע
+        לצה"ל ולמלחמה בעזה. בנפרד, בפברואר 2024 נכשלה בכנסת הצעה להדיחו לאחר
+        שזכתה ל-85 קולות בלבד מתוך 90 הנדרשים.
+      en: On 11 November 2024 the Knesset Ethics Committee voted unanimously to
+        suspend MK Ofer Cassif for six months from participating in plenary and
+        committee sessions (except to vote), and to withhold two weeks' salary.
+        The decision followed complaints over his remarks concerning the IDF and
+        the Gaza war. Separately, a February 2024 motion to expel him from the
+        Knesset failed, securing only 85 of the 90 votes required.
+    date: 2024-11-11
+    sources:
+      - url: https://www.haaretz.com/israel-news/2024-11-12/ty-article/.premium/left-wing-mk-banned-from-knesset-floor-for-six-months-following-complaints-against-him/00000193-1fbd-d76d-a7db-5ffd52a60000
+        title: Left-wing MK Banned From Knesset Floor for Six Months Following
+          Complaints Against Him
+        publisher: Haaretz
+      - url: https://www.timesofisrael.com/knesset-suspends-far-left-mk-ofer-cassif-for-six-months-over-comments-on-gaza-war/
+        title: Knesset suspends far-left MK Ofer Cassif for six months over comments on
+          Gaza war
+        publisher: The Times of Israel
+      - url: https://www.haaretz.com/israel-news/2024-02-19/ty-article/.premium/knesset-to-vote-on-expulsion-of-mk-ofer-cassif-over-signing-icj-petition/0000018d-bdec-dc8c-a3df-fffdab8b0000
+        title: Knesset Narrowly Votes Against Expelling Left-wing Lawmaker for His
+          Support of ICJ Genocide Case Against Israel
+        publisher: Haaretz

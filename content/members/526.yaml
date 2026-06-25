@@ -1,0 +1,61 @@
+# PersonID 526. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 526
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: יושב ראש ועדת הכספים של הכנסת
+      en: Chairman of the Knesset Finance Committee
+    description:
+      he: משה גפני כיהן כיושב ראש ועדת הכספים של הכנסת, אחת הוועדות רבות ההשפעה בבית
+        המחוקקים, החל מהכנסת ה-18 (2009). נכון לתחילת 2021 המשיך לכהן בתפקיד.
+      en: Moshe Gafni served as chairman of the Knesset Finance Committee, one of the
+        parliament's most influential committees, beginning in the 18th Knesset
+        (2009). As of early 2021 he continued to hold the post.
+    date: "2009"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Moshe_Gafni
+        title: Moshe Gafni
+        publisher: Wikipedia
+      - url: https://www.jpost.com/breaking-news/moshe-gafni-to-replace-yaakov-litzman-as-united-torah-judaism-chairman-657447
+        title: Gafni to head UTJ, Litzman bumped to No. 2
+        publisher: The Jerusalem Post
+  - kind: positive
+    category: achievement
+    title:
+      he: יושב ראש סיעת יהדות התורה
+      en: Leader of United Torah Judaism
+    description:
+      he: בפברואר 2021 משה גפני, ראש סיעת דגל התורה, התמנה ליושב ראש סיעת יהדות התורה
+        והחליף את יעקב ליצמן, במסגרת הסכם רוטציה שלפיו ראשות הרשימה מתחלפת בין
+        ראשי דגל התורה ואגודת ישראל.
+      en: In February 2021 Moshe Gafni, head of the Degel HaTorah faction, became
+        leader of the United Torah Judaism slate, replacing Yaakov Litzman,
+        under a rotation agreement whereby chairmanship of the joint list
+        alternates between the heads of Degel HaTorah and Agudat Yisrael.
+    date: "2021"
+    sources:
+      - url: https://www.jpost.com/breaking-news/moshe-gafni-to-replace-yaakov-litzman-as-united-torah-judaism-chairman-657447
+        title: Gafni to head UTJ, Litzman bumped to No. 2
+        publisher: The Jerusalem Post
+  - kind: positive
+    category: achievement
+    title:
+      he: סגן שר הדתות וחבר כנסת ותיק
+      en: Deputy Minister of Religious Affairs and veteran legislator
+    description:
+      he: משה גפני נבחר לראשונה לכנסת ברשימת דגל התורה בשנת 1988. בשנת 1990 התמנה לסגן
+        שר הדתות בממשלתו של יצחק שמיר. לאחר שהפסיד את מושבו, שב לכנסת בשנת 1994
+        במסגרת הסכם רוטציה, ומאז הוא מהדמויות הוותיקות בפוליטיקה החרדית בישראל.
+      en: Moshe Gafni was first elected to the Knesset on the Degel HaTorah list in
+        1988. In 1990 he was appointed Deputy Minister of Religious Affairs in
+        Yitzhak Shamir's government. After losing his seat he returned to the
+        Knesset in 1994 under a rotation agreement, and has since been one of
+        the most veteran figures in Israeli Haredi politics.
+    date: "1988"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Moshe_Gafni
+        title: Moshe Gafni
+        publisher: Wikipedia

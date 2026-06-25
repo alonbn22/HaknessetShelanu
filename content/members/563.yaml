@@ -1,0 +1,72 @@
+# PersonID 563. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 563
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: קריירה פרלמנטרית ארוכה ותפקידי שר וסגן שר
+      en: Long parliamentary career and ministerial offices
+    description:
+      he: מאיר פרוש מכהן כחבר הכנסת מטעם סיעת אגודת ישראל (יהדות התורה) במספר קדנציות
+        מאז 1996. במהלך השנים שימש בתפקידים בכירים, ובהם סגן שר השיכון, סגן שר
+        החינוך, ושר ירושלים ומסורת ישראל (2023-2025).
+      en: Meir Porush has served as a member of the Knesset for the Agudat Yisrael
+        faction of United Torah Judaism across several terms since 1996. Over
+        the years he has held senior posts, including Deputy Minister of
+        Housing, Deputy Minister of Education, and Minister of Jerusalem Affairs
+        and Jewish Tradition (2023-2025).
+    date: "1996"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Meir_Porush
+        title: Meir Porush
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q1391548
+        title: Meir Porush (Q1391548)
+        publisher: Wikidata
+  - kind: positive
+    category: achievement
+    title:
+      he: מועמד מוביל לראשות עיריית ירושלים בבחירות 2008
+      en: Leading candidate for Mayor of Jerusalem in 2008
+    description:
+      he: בבחירות לראשות עיריית ירושלים בנובמבר 2008 היה פרוש אחד משני המועמדים
+        המובילים. הוא הפסיד לניר ברקת, כאשר ברקת זכה בכ-55% מהקולות לעומת כ-44%
+        לפרוש.
+      en: In the November 2008 Jerusalem mayoral election, Porush was one of the two
+        front-runners. He lost to Nir Barkat, who won roughly 55% of the vote
+        compared with about 44% for Porush.
+    date: 2008-11-11
+    sources:
+      - url: https://en.wikipedia.org/wiki/Meir_Porush
+        title: Meir Porush
+        publisher: Wikipedia
+      - url: https://en.wikipedia.org/wiki/Mayoral_elections_in_Jerusalem
+        title: Mayoral elections in Jerusalem
+        publisher: Wikipedia
+  - kind: negative
+    category: controversy
+    status: settled
+    title:
+      he: נזיפה מוועדת האתיקה של הכנסת על התבטאות (2016)
+      en: Knesset Ethics Committee reprimand over remarks (2016)
+    description:
+      he: במרץ 2016 נזפה ועדת האתיקה של הכנסת בפרוש בעקבות התבטאות שאמר בנוגע לקבוצת
+        'נשות הכותל'. הוועדה קבעה כי דבריו 'חרגו באופן קיצוני ובוטה' מדרך
+        ההתבטאות המקובלת בכנסת. מדובר בנזיפה אתית פרלמנטרית ולא בהליך פלילי.
+      en: In March 2016 the Knesset Ethics Committee reprimanded Porush over remarks
+        he made concerning the 'Women of the Wall' group. The committee found
+        that his language 'deviated radically and blatantly' from the accepted
+        way of expressing oneself in the Knesset. This was a parliamentary
+        ethics reprimand, not a criminal proceeding.
+    date: 2016-03-29
+    sources:
+      - url: https://www.jta.org/2016/03/29/default/knesset-ethics-panel-reprimands-haredi-lawmaker-who-slammed-women-of-the-wall
+        title: Knesset ethics panel reprimands haredi lawmaker who slammed Women of the
+          Wall
+        publisher: Jewish Telegraphic Agency
+      - url: https://www.jpost.com/Israel-News/Politics-And-Diplomacy/Knesset-reprimands-haredi-MK-for-biblical-insult-to-Women-of-the-Wall-449618
+        title: Knesset Ethics Committee reprimands haredi MK for biblical insult to
+          Women of the Wall
+        publisher: The Jerusalem Post

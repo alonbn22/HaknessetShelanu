@@ -1,0 +1,65 @@
+# PersonID 30849. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30849
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: נבחרה לכנסת ה-25 מטעם עוצמה יהודית
+      en: Elected to the 25th Knesset for Otzma Yehudit
+    description:
+      he: בבחירות לכנסת ה-25 בנובמבר 2022 נבחרה לימור סון הר מלך לכנסת מהמקום ה-13
+        ברשימת הציונות הדתית-עוצמה יהודית, והייתה האישה היחידה מבין חברי הכנסת
+        של סיעת עוצמה יהודית.
+      en: In the November 2022 election, Limor Son Har-Melech was elected to the
+        Knesset from the 13th spot on the Religious Zionist Party-Otzma Yehudit
+        joint list, and was the only woman among Otzma Yehudit's Knesset
+        members.
+    date: 2022-11-01
+    sources:
+      - url: https://en.wikipedia.org/wiki/Limor_Son_Har-Melech
+        title: Limor Son Har-Melech
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%9C%D7%99%D7%9E%D7%95%D7%A8_%D7%A1%D7%95%D7%9F_%D7%94%D7%A8_%D7%9E%D7%9C%D7%9A
+        title: לימור סון הר מלך
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: achievement
+    title:
+      he: מונתה לסגנית יושב ראש הכנסת
+      en: Appointed Deputy Speaker of the Knesset
+    description:
+      he: ב-26 במאי 2025 אישרה מליאת הכנסת את מינויה של סון הר מלך לסגנית יושב ראש
+        הכנסת, במקומו של חבר הכנסת משה רוט.
+      en: On 26 May 2025, the Knesset plenum approved Son Har-Melech's appointment as
+        Deputy Speaker of the Knesset, replacing MK Moshe Roth.
+    date: 2025-05-26
+    sources:
+      - url: https://www.ynetnews.com/article/sqw5jwd0q
+        title: MK Limor Son Har-Melech appointed as Deputy Knesset Speaker
+        publisher: Ynetnews
+      - url: https://he.wikipedia.org/wiki/%D7%9C%D7%99%D7%9E%D7%95%D7%A8_%D7%A1%D7%95%D7%9F_%D7%94%D7%A8_%D7%9E%D7%9C%D7%9A
+        title: לימור סון הר מלך
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: achievement
+    title:
+      he: שרדה פיגוע ירי שבו נרצח בעלה (2003)
+      en: Survived a 2003 terror attack in which her husband was killed
+    description:
+      he: ב-28 באוגוסט 2003, בהיותה בחודש השביעי להריונה, נפצעה לימור הר מלך באורח
+        אנוש בפיגוע ירי בשומרון שבו נרצח בעלה הראשון, שלום (שולי) הר מלך; בתה
+        נולדה בלידת חירום בניתוח קיסרי שעות לאחר מכן.
+      en: On 28 August 2003, while seven months pregnant, Limor Har-Melech was
+        critically wounded in a shooting attack in Samaria in which her first
+        husband, Shalom (Shuli) Har-Melech, was killed; her daughter was
+        delivered by emergency caesarean section hours later.
+    date: 2003-08-28
+    sources:
+      - url: https://en.wikipedia.org/wiki/Limor_Son_Har-Melech
+        title: Limor Son Har-Melech
+        publisher: Wikipedia
+      - url: https://jns.org/terrorist-responsible-for-2003-murder-of-mks-husband-eliminated
+        title: Terrorist responsible for 2003 murder of MK's husband eliminated
+        publisher: JNS (Jewish News Syndicate)

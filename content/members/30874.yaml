@@ -1,0 +1,66 @@
+# PersonID 30874. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30874
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר הכנסת ה-25 מטעם הציונות הדתית
+      en: Member of the 25th Knesset for the Religious Zionist Party
+    description:
+      he: צבי ידידיה סוכות נכנס לכנסת ה-25 בפברואר 2023 כחבר כנסת מטעם סיעת הציונות
+        הדתית, במקומו של בצלאל סמוטריץ' מכוח 'החוק הנורבגי'. קודם לכן שימש
+        כמנכ"ל מפלגת עוצמה יהודית וכעוזרו של ראש המועצה האזורית שומרון.
+      en: Zvi Yedidia Succot entered the 25th Knesset in February 2023 as a member of
+        the Religious Zionist Party, replacing Bezalel Smotrich under Israel's
+        'Norwegian Law.' He had previously served as director-general of the
+        Otzma Yehudit party and as an aide to the head of the Samaria Regional
+        Council.
+    date: 2023-02-08
+    sources:
+      - url: https://en.wikipedia.org/wiki/Zvi_Sukkot
+        title: Zvi Sukkot
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%A6%D7%91%D7%99_%D7%A1%D7%95%D7%9B%D7%95%D7%AA
+        title: צבי סוכות
+        publisher: Hebrew Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: יו"ר ועדת המשנה ליהודה ושומרון
+      en: Chairman of the Knesset Subcommittee for Judea and Samaria
+    description:
+      he: ב-1 בנובמבר 2023 מונה סוכות ליו"ר ועדת המשנה ליהודה ושומרון, הפועלת תחת ועדת
+        החוץ והביטחון של הכנסת.
+      en: On 1 November 2023, Succot was appointed chairman of the Knesset's
+        Subcommittee for Judea and Samaria, which operates under the Foreign
+        Affairs and Defense Committee.
+    date: 2023-11-01
+    sources:
+      - url: https://he.wikipedia.org/wiki/%D7%A6%D7%91%D7%99_%D7%A1%D7%95%D7%9B%D7%95%D7%AA
+        title: צבי סוכות
+        publisher: Hebrew Wikipedia
+      - url: https://www.haaretz.com/israel-news/2023-11-01/ty-article/.premium/far-right-israeli-knesset-member-zvi-sukkot-to-head-subcommittee-on-the-west-bank/0000018b-8b93-db71-a7df-ffdfd1ea0000
+        title: Israeli Knesset Member Zvi Sukkot to Head Subcommittee on the West Bank
+        publisher: Haaretz
+  - kind: positive
+    category: achievement
+    title:
+      he: יו"ר ועדת החינוך, התרבות והספורט של הכנסת
+      en: Chairman of the Knesset Education, Culture and Sports Committee
+    description:
+      he: בדצמבר 2025 מונה סוכות לכהן כיו"ר ועדת החינוך, התרבות והספורט של הכנסת, אחת
+        מוועדות הקבע המרכזיות של הכנסת.
+      en: In December 2025, Succot was appointed chairman of the Knesset's Education,
+        Culture and Sports Committee, one of the Knesset's principal standing
+        committees.
+    date: 2025-12-23
+    sources:
+      - url: https://he.wikipedia.org/wiki/%D7%A6%D7%91%D7%99_%D7%A1%D7%95%D7%9B%D7%95%D7%AA
+        title: צבי סוכות
+        publisher: Hebrew Wikipedia
+      - url: https://www.haaretz.com/israel-news/2025-12-17/ty-article/.premium/lawmakers-from-ben-gvirs-far-right-party-set-to-take-control-of-key-knesset-committees/0000019b-2ce0-d8f0-a9db-6dfc6bec0000
+        title: Lawmakers From Ben-Gvir's Far-right Party Set to Take Control of Key
+          Knesset Committees
+        publisher: Haaretz

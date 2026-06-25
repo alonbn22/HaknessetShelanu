@@ -1,0 +1,66 @@
+# PersonID 30772. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30772
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: סגן יושב ראש הכנסת
+      en: Deputy Speaker of the Knesset
+    description:
+      he: ניסים ואטורי, חבר כנסת מטעם הליכוד, מכהן כסגן יושב ראש הכנסת. הוא נכנס
+        לראשונה לכנסת בדצמבר 2020 (במקומו של גדעון סער), נבחר שוב בבחירות 2022,
+        ומכהן גם כחבר ועדת החוץ והביטחון.
+      en: Nissim Vaturi, a member of the Knesset for Likud, serves as a Deputy Speaker
+        of the Knesset. He first entered the Knesset in December 2020 (replacing
+        Gideon Sa'ar), was re-elected in the 2022 election, and is also a member
+        of the Knesset's Foreign Affairs and Defense Committee.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Nissim_Vaturi
+        title: Nissim Vaturi
+        publisher: Wikipedia
+      - url: https://m.knesset.gov.il/en/mk/pages/MKPersonalDetails.aspx?mkid=1045
+        title: Knesset Member Nissim Vaturi
+        publisher: The Knesset
+  - kind: positive
+    category: achievement
+    title:
+      he: שירות צבאי בחיל האוויר
+      en: Military service in the Air Force
+    description:
+      he: במהלך שירותו הצבאי בצה"ל פיקד ואטורי על צוות חילוץ מטוסים בחיל האוויר
+        הישראלי.
+      en: During his national service in the Israel Defense Forces, Vaturi commanded
+        an Israeli Air Force aircraft recovery team.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Nissim_Vaturi
+        title: Nissim Vaturi
+        publisher: Wikipedia
+  - kind: negative
+    category: investigation
+    status: ongoing
+    title:
+      he: חקירת משטרה בפרשת הכניסה לבסיס שדה תימן
+      en: Police investigation over the Sde Teiman base break-in
+    description:
+      he: במרץ 2025 אישרו היועצת המשפטית לממשלה והפרקליטות פתיחת חקירת משטרה נגד
+        ואטורי, השר עמיחי אליהו וחבר הכנסת צבי סוכות, בחשד למעורבותם בכניסה ללא
+        רשות לבסיס צה"ל שדה תימן ביולי 2024, על רקע מעצר חיילי מילואים. ואטורי
+        זומן לחקירה ומסר כי לא יתייצב. החקירה מתנהלת ולא הוגש כתב אישום.
+      en: In March 2025 the Attorney General and State Attorney approved a police
+        investigation into Vaturi, Heritage Minister Amichai Eliyahu, and MK Zvi
+        Sukkot over their alleged involvement in the unauthorized entry into the
+        IDF's Sde Teiman base in July 2024, amid the detention of reservist
+        soldiers. Vaturi was summoned for questioning and stated he would not
+        appear. The investigation is ongoing and no indictment has been filed.
+    date: 2025-03-26
+    sources:
+      - url: https://www.jpost.com/breaking-news/article-847740
+        title: A-G approves investigation into MKs Sukkot, Vaturi over breaking into Sde
+          Teiman base
+        publisher: The Jerusalem Post
+      - url: https://www.timesofisrael.com/three-coalition-members-summoned-for-questioning-over-july-riot-at-idf-holding-facility/
+        title: Three coalition members summoned for questioning over July riot at IDF
+          holding facility
+        publisher: The Times of Israel

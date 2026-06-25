@@ -1,0 +1,71 @@
+# PersonID 30300. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30300
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: שר המשפטים הראשון בישראל הגלוי כהומו
+      en: Israel's first openly gay government minister
+    description:
+      he: ביוני 2019 מינה ראש הממשלה בנימין נתניהו את אמיר אוחנה לשר המשפטים, ובכך הפך
+        אוחנה לאדם הגלוי הראשון כהומו שכיהן כשר בממשלת ישראל. הוא כיהן כשר
+        המשפטים בשנים 2019–2020.
+      en: In June 2019, Prime Minister Benjamin Netanyahu appointed Amir Ohana as
+        Minister of Justice, making him the first openly gay person to serve as
+        a government minister in Israel. He held the justice portfolio from 2019
+        to 2020.
+    date: 2019-06-05
+    sources:
+      - url: https://en.wikipedia.org/wiki/Amir_Ohana
+        title: Amir Ohana
+        publisher: Wikipedia
+      - url: https://www.timesofisrael.com/netanyahu-appoints-loyalist-amir-ohana-as-justice-minister/
+        title: Netanyahu appoints Amir Ohana justice minister, first openly gay cabinet
+          member
+        publisher: The Times of Israel
+  - kind: positive
+    category: achievement
+    title:
+      he: יושב ראש הכנסת הגלוי הראשון כהומו בתולדות ישראל
+      en: First openly gay Speaker of the Knesset
+    description:
+      he: ב-29 בדצמבר 2022 נבחר אמיר אוחנה ליושב ראש הכנסת, ובכך הפך ליושב הראש הגלוי
+        הראשון כהומו בתולדות הכנסת. הוא נבחר עם השבעת הממשלה ה-37 בראשות בנימין
+        נתניהו.
+      en: On 29 December 2022, Amir Ohana was elected Speaker of the Knesset, becoming
+        the first openly gay person to hold the post in the parliament's
+        history. He was elected alongside the swearing-in of Benjamin
+        Netanyahu's 37th government.
+    date: 2022-12-29
+    sources:
+      - url: https://en.wikipedia.org/wiki/Amir_Ohana
+        title: Amir Ohana
+        publisher: Wikipedia
+      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-726094
+        title: Ohana becomes first gay Knesset Speaker as Benjamin Netanyahu retakes
+          office
+        publisher: The Jerusalem Post
+  - kind: positive
+    category: achievement
+    title:
+      he: רקע בשירות צבאי, בשירות הביטחון הכללי ובעריכת דין פלילית
+      en: Military, Shin Bet, and criminal-law background before politics
+    description:
+      he: לפני כניסתו לפוליטיקה שירת אוחנה כשוטר צבאי בצה"ל, ולאחר מכן בשירות הביטחון
+        הכללי (שב"כ). הוא למד משפטים, התמחה בפרקליטות המדינה ועסק בעריכת דין
+        פלילית במשך כעשור. הוא נכנס לכנסת מטעם הליכוד בדצמבר 2015.
+      en: Before entering politics, Ohana served as a military police officer in the
+        IDF and then in the Shin Bet security service. He studied law, interned
+        at the State Prosecutor's Office, and worked as a criminal-defence
+        lawyer for roughly a decade. He entered the Knesset for Likud in
+        December 2015.
+    date: 2015-12-27
+    sources:
+      - url: https://en.wikipedia.org/wiki/Amir_Ohana
+        title: Amir Ohana
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q21794010
+        title: Amir Ohana (Q21794010)
+        publisher: Wikidata

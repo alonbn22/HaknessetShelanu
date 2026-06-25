@@ -1,0 +1,65 @@
+# PersonID 30066. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30066
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: נבחר למנהיג חד"ש ועמד בראש הרשימה המשותפת
+      en: Elected leader of Hadash and head of the Joint List
+    description:
+      he: בשנת 2015, לאחר פרישתו של מוחמד ברכה, נבחר איימן עודה לעמוד בראש רשימת חד"ש
+        ובראש הרשימה המשותפת של המפלגות הערביות, ונכנס לכנסת ה-20. קודם לכן כיהן
+        כחבר מועצת העיר חיפה בשנים 1998–2005 וכמזכ"ל חד"ש מ-2006.
+      en: In 2015, following Mohammed Barakeh's resignation, Ayman Odeh was placed at
+        the head of Hadash and of the Joint List, an alliance of Arab parties,
+        entering the 20th Knesset. He had previously served on Haifa City
+        Council (1998-2005) and became Hadash secretary-general in 2006.
+    date: 2015-03-17
+    sources:
+      - url: https://en.wikipedia.org/wiki/Ayman_Odeh
+        title: Ayman Odeh
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: הוביל את הרשימה המשותפת למפלגה השלישית בגודלה בכנסת
+      en: Led the Joint List to become the third-largest party in the Knesset
+    description:
+      he: בבחירות מרץ 2020 זכתה הרשימה המשותפת ב-15 מנדטים (כ-12.67% מהקולות) ונותרה
+        המפלגה השלישית בגודלה בכנסת — ההישג האלקטורלי הגדול ביותר של מפלגה ערבית
+        בישראל מבחינת אחוז הקולות ומספר המנדטים.
+      en: In the March 2020 election the Joint List won 15 seats (about 12.67% of the
+        vote), remaining the third-largest party in the Knesset — a record for
+        an Arab party in both vote share and number of seats.
+    date: 2020-03-02
+    sources:
+      - url: https://en.wikipedia.org/wiki/Joint_List
+        title: Joint List
+        publisher: Wikipedia
+  - kind: negative
+    category: controversy
+    status: acquitted
+    title:
+      he: הצעה להדחתו מהכנסת נכשלה (2025)
+      en: Motion to expel him from the Knesset failed (2025)
+    description:
+      he: 'ב-14 ביולי 2025 קיימה מליאת הכנסת הצבעה על הדחתו של עודה, בעקבות הצעה
+        שהוגשה בעקבות אמירות פוליטיות שלו על שחרור חטופים ואסירים. ההצעה נכשלה:
+        73 ח"כים תמכו ו-15 התנגדו, מתחת לרוב המיוחד של 90 קולות הנדרש להדחה.
+        עודה נותר חבר כנסת.'
+      en: "On 14 July 2025 the Knesset plenum voted on a motion to expel Odeh, brought
+        over political statements he made about the release of hostages and
+        prisoners. The motion failed: 73 MKs voted in favor and 15 against,
+        short of the 90-vote supermajority required for expulsion. Odeh remained
+        a member of the Knesset."
+    date: 2025-07-14
+    sources:
+      - url: https://www.timesofisrael.com/motion-to-expel-odeh-from-knesset-fails-to-pass-amid-heckling-by-coalition-members/
+        title: Motion to expel Arab party head Odeh from Knesset fails; coalition MKs
+          heckle him
+        publisher: The Times of Israel
+      - url: https://en.wikipedia.org/wiki/Ayman_Odeh
+        title: Ayman Odeh
+        publisher: Wikipedia

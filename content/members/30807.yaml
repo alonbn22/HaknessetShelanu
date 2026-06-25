@@ -1,0 +1,86 @@
+# PersonID 30807. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30807
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: הרב הרפורמי הראשון שנבחר לכנסת
+      en: First Reform rabbi elected to the Knesset
+    description:
+      he: בבחירות מרץ 2021 נבחר גלעד קריב לכנסת מטעם מפלגת העבודה, ובכך הפך לרב
+        הרפורמי הראשון שמכהן בכנסת ישראל.
+      en: In the March 2021 election Gilad Kariv was elected to the Knesset on the
+        Labor party slate, becoming the first Reform rabbi to serve in Israel's
+        parliament.
+    date: 2021-03-23
+    sources:
+      - url: https://www.haaretz.com/israel-news/elections/2021-04-11/ty-article/.premium/where-the-first-reform-rabbi-to-serve-in-the-knesset-gilad-kariv-draws-the-line/0000017f-e19b-d804-ad7f-f1fb27b00002
+        title: Where the First Reform Rabbi to Serve in the Knesset, Gilad Kariv, Draws
+          the Line
+        publisher: Haaretz
+      - url: https://www.jta.org/2021/03/24/israel/its-official-gilad-kariv-will-be-the-first-reform-rabbi-in-israels-parliament
+        title: "It's official: Gilad Kariv will be the first Reform rabbi in Israel's
+          parliament"
+        publisher: Jewish Telegraphic Agency
+  - kind: positive
+    category: achievement
+    title:
+      he: יושב ראש ועדת החוקה, חוק ומשפט
+      en: Chaired the Constitution, Law and Justice Committee
+    description:
+      he: ביוני 2021 נבחר קריב לעמוד בראש ועדת החוקה, חוק ומשפט של הכנסת, אחת הוועדות
+        המרכזיות בכנסת, בתקופת הממשלה ה-36.
+      en: In June 2021 Kariv was elected to head the Knesset's Constitution, Law and
+        Justice Committee, one of the parliament's most influential committees,
+        during the 36th government.
+    date: 2021-06-29
+    sources:
+      - url: https://www.jpost.com/breaking-news/labor-mk-gilad-kariv-elected-to-constitution-law-and-justice-committee-672326
+        title: Labor MK Gilad Kariv elected to head Constitution, Law and Justice
+          Committee
+        publisher: The Jerusalem Post
+      - url: https://www.timesofisrael.com/ultra-orthodox-vow-to-boycott-new-knesset-committee-over-reform-rabbi-chairman/
+        title: Ultra-Orthodox to boycott Knesset committee because its chair is a Reform
+          rabbi
+        publisher: The Times of Israel
+  - kind: positive
+    category: achievement
+    title:
+      he: 'רקע מקצועי: עורך דין, רב ומנכ"ל התנועה הרפורמית'
+      en: "Professional background: attorney, rabbi and head of the Reform movement"
+    description:
+      he: קריב הוא עורך דין ורב רפורמי, בעל תואר במשפטים ובמדעי היהדות מהאוניברסיטה
+        העברית והסמכה לרבנות מהיברו יוניון קולג'. בין 2009 ל-2021 כיהן כמנכ"ל
+        התנועה ליהדות מתקדמת בישראל, ושירת בעבר בחיל המודיעין של צה"ל.
+      en: Kariv is an attorney and Reform rabbi with a degree in law and Jewish
+        studies from the Hebrew University and rabbinic ordination from Hebrew
+        Union College. From 2009 to 2021 he served as executive director of the
+        Israel Movement for Reform and Progressive Judaism, and earlier served
+        in the IDF Intelligence Corps.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Gilad_Kariv
+        title: Gilad Kariv
+        publisher: Wikipedia
+  - kind: negative
+    category: investigation
+    status: ongoing
+    title:
+      he: נחקר בחשד להדלפת חומר מוועדת החוץ והביטחון
+      en: Questioned by police over alleged leak of committee material
+    description:
+      he: באפריל 2025 נחקר קריב במשטרה כחשוד בהדלפת חומר מישיבה סגורה של ועדת החוץ
+        והביטחון מיוני 2023. נכון לאמצע 2026 לא הוגש נגדו כתב אישום.
+      en: In April 2025 Kariv was questioned by police as a suspect over the alleged
+        leak of material from a closed June 2023 Foreign Affairs and Defense
+        Committee meeting. As of mid-2026 no indictment had been filed.
+    date: 2025-04-07
+    sources:
+      - url: https://www.haaretz.com/israel-news/2025-04-07/ty-article/.premium/police-question-israeli-opposition-mk-over-alleged-leak-of-knesset-security-briefing/00000196-0ed0-ddaf-a5f6-9fd4fc490001
+        title: Police Question Israeli Opposition MK Over Alleged Leak of Knesset
+          Security Briefing With Netanyahu
+        publisher: Haaretz
+      - url: https://www.jpost.com/breaking-news/article-849149
+        title: Israel Police summons MK Gilad Kariv over suspected protocol leak
+        publisher: The Jerusalem Post

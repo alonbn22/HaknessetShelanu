@@ -1,0 +1,63 @@
+# PersonID 30121. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30121
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: שר החקלאות ופיתוח הכפר והשר לפיתוח הנגב והגליל
+      en: Minister of Agriculture and Rural Development, and Minister for the
+        Development of the Negev and Galilee
+    description:
+      he: עודד פורר כיהן כשר החקלאות ופיתוח הכפר וכשר לפיתוח הנגב והגליל בממשלה ה-36,
+        מ-13 ביוני 2021 ועד סוף דצמבר 2022.
+      en: Oded Forer served as Minister of Agriculture and Rural Development and as
+        Minister for the Development of the Negev and the Galilee in Israel's
+        36th government, from 13 June 2021 until late December 2022.
+    date: 2021-06-13
+    sources:
+      - url: https://en.wikipedia.org/wiki/Oded_Forer
+        title: Oded Forer
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q20898016
+        title: Oded Forer (Q20898016)
+        publisher: Wikidata
+  - kind: positive
+    category: achievement
+    title:
+      he: הובלת חקיקה לאיסור כלובי סוללה לתרנגולות מטילות
+      en: Led legislation to ban battery cages for egg-laying hens
+    description:
+      he: כשר החקלאות קידם פורר רפורמה לרווחת בעלי חיים שאסרה את השימוש בכלובי סוללה
+        ובכלובים מאוכלסים לתרנגולות מטילות והובילה להפסקתם ההדרגתית. החקיקה
+        אושרה בכנסת ביוני 2022.
+      en: As Agriculture Minister, Forer advanced an animal-welfare reform prohibiting
+        the use of battery cages and colony cages for egg-laying hens and
+        providing for their gradual phase-out. The legislation was approved by
+        the Knesset in June 2022.
+    date: 2022-06-01
+    sources:
+      - url: https://en.wikipedia.org/wiki/Oded_Forer
+        title: Oded Forer
+        publisher: Wikipedia
+      - url: https://www.timesofisrael.com/cages-for-laying-hens-banned-from-new-coops-to-be-phased-out-in-existing-ones/
+        title: Cages for laying hens banned from new coops, to be phased out in existing
+          ones
+        publisher: The Times of Israel
+  - kind: positive
+    category: achievement
+    title:
+      he: קצין בחיל הים ומנכ"ל המשרד לקליטת העלייה
+      en: Navy officer and Director-General of the Ministry of Immigrant Absorption
+    description:
+      he: לפני כהונתו בכנסת שירת פורר כקצין בחיל הים הישראלי, וב-2013 מונה למנכ"ל
+        המשרד לקליטת העלייה.
+      en: Before his Knesset service, Forer served as an officer in the Israeli Navy,
+        and in 2013 was appointed Director-General of the Ministry of Immigrant
+        Absorption.
+    date: 2013-01-01
+    sources:
+      - url: https://en.wikipedia.org/wiki/Oded_Forer
+        title: Oded Forer
+        publisher: Wikipedia

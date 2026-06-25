@@ -1,0 +1,88 @@
+# PersonID 30835. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30835
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר הכנסת ה-25 מטעם הליכוד
+      en: Member of the 25th Knesset for Likud
+    description:
+      he: בועז ביסמוט נבחר לכנסת ה-25 בבחירות נובמבר 2022 מטעם מפלגת הליכוד, לאחר שזכה
+        במקום ה-19 ברשימת המפלגה.
+      en: Boaz Bismuth was elected to the 25th Knesset in the November 2022 election
+        as a member of the Likud party, having secured the 19th spot on the
+        party's list.
+    date: 2022-11-15
+    sources:
+      - url: https://en.wikipedia.org/wiki/Boaz_Bismuth
+        title: Boaz Bismuth
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q12404410
+        title: Boaz Bismuth (Q12404410)
+        publisher: Wikidata
+  - kind: positive
+    category: achievement
+    title:
+      he: יושב ראש ועדת החוץ והביטחון של הכנסת
+      en: Chair of the Knesset Foreign Affairs and Defense Committee
+    description:
+      he: ביסמוט נבחר ביולי 2025 ומונה באוגוסט 2025 לעמוד בראש ועדת החוץ והביטחון של
+        הכנסת, אחת הוועדות הבכירות בכנסת, והחליף בתפקיד את יולי אדלשטיין. קודם
+        לכן כיהן בקצרה כיושב ראש ועדת הביטחון הלאומי בתחילת 2025.
+      en: In July 2025 Bismuth was elected, and in August 2025 appointed, to chair the
+        Knesset's Foreign Affairs and Defense Committee, one of the parliament's
+        most senior committees, replacing Yuli Edelstein. He had earlier briefly
+        chaired the National Security Committee in early 2025.
+    date: 2025-08-01
+    sources:
+      - url: https://en.wikipedia.org/wiki/Boaz_Bismuth
+        title: Boaz Bismuth
+        publisher: Wikipedia
+      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-862000
+        title: Boaz Bismuth elected to replace Edelstein
+        publisher: The Jerusalem Post
+      - url: https://www.haaretz.com/israel-news/2025-07-23/ty-article/.premium/mk-backed-by-netanyahu-to-replace-haredi-draft-exemption-bill-opponent-in-key-knesset-role/00000198-3704-dce9-abfd-7fa68a0c0000
+        title: Likud Appoints Boaz Bismuth as Head of Knesset Defense Committee
+        publisher: Haaretz
+  - kind: positive
+    category: achievement
+    title:
+      he: עורך ראשי של עיתון 'ישראל היום'
+      en: Editor-in-chief of Israel Hayom
+    description:
+      he: לפני כניסתו לפוליטיקה היה ביסמוט עיתונאי ותיק. הוא כיהן כעורך הראשי של
+        העיתון 'ישראל היום' מאפריל 2017 ועד ינואר 2022, ולפני כן שימש שנים רבות
+        ככתב ועורך לענייני חוץ, בין היתר ככתב בפריז עבור 'ידיעות אחרונות'.
+      en: Before entering politics, Bismuth had a long career in journalism. He served
+        as editor-in-chief of the daily newspaper Israel Hayom from April 2017
+        until January 2022, and earlier worked for many years as a
+        foreign-affairs correspondent and editor, including as a Paris
+        correspondent for Yedioth Ahronoth.
+    date: 2017-04-30
+    sources:
+      - url: https://en.wikipedia.org/wiki/Boaz_Bismuth
+        title: Boaz Bismuth
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q12404410
+        title: Boaz Bismuth (Q12404410)
+        publisher: Wikidata
+  - kind: positive
+    category: achievement
+    title:
+      he: שגריר ישראל במאוריטניה
+      en: Israeli Ambassador to Mauritania
+    description:
+      he: במסגרת שירותו הציבורי כיהן ביסמוט כשגריר ישראל במאוריטניה בין השנים 2004
+        ל-2008.
+      en: As part of his public service, Bismuth served as Israel's Ambassador to
+        Mauritania between 2004 and 2008.
+    date: 2004-07-01
+    sources:
+      - url: https://en.wikipedia.org/wiki/Boaz_Bismuth
+        title: Boaz Bismuth
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q12404410
+        title: Boaz Bismuth (Q12404410)
+        publisher: Wikidata

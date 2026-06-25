@@ -1,0 +1,70 @@
+# PersonID 30814. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30814
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: מייסד ומנהיג מפלגת נוֹעם
+      en: Founder and leader of the Noam party
+    description:
+      he: אבי מעוז הוא מייסד מפלגת נוֹעם, מפלגה ציונית-דתית שמרנית שהוקמה בשנת 2019,
+        ומכהן כראשהּ. הוא נבחר לראשונה לכנסת בבחירות 2021 (הכנסת ה-24) כשהיה
+        במקום השישי ברשימת הציונות הדתית, ומאז הוא נציגהּ היחיד של נוֹעם בכנסת.
+      en: Avi Maoz is the founder and leader of Noam, a religious-Zionist conservative
+        party established in 2019. He was first elected to the Knesset in the
+        2021 election (24th Knesset), placed sixth on the Religious Zionist
+        Party list, and serves as Noam's sole representative in the Knesset.
+    date: "2019"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Avi_Maoz
+        title: Avi Maoz
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q105103347
+        title: Avi Maoz (Q105103347)
+        publisher: Wikidata
+  - kind: positive
+    category: achievement
+    title:
+      he: מינוי לסגן שר ולראש הרשות לזהות יהודית לאומית
+      en: Appointed deputy minister and head of the National Jewish Identity Authority
+    description:
+      he: במסגרת ההסכם הקואליציוני שנחתם ב-27 בנובמבר 2022 מונה מעוז לסגן שר במשרד ראש
+        הממשלה, והופקד על רשות חדשה לזהות יהודית לאומית וכן על נתיב. המינוי נכנס
+        לתוקף בתחילת 2023. מעוז התפטר מתפקידו פעמיים — במרץ 2023 ושוב ב-24 במרץ
+        2025 — בטענה שההסכם הקואליציוני לא קוים.
+      en: Under the coalition agreement signed on 27 November 2022, Maoz was appointed
+        a deputy minister in the Prime Minister's Office, heading a new National
+        Jewish Identity Authority and overseeing Nativ. The appointment took
+        effect in early 2023. He resigned from the role twice — in March 2023
+        and again on 24 March 2025 — saying the coalition agreement had not been
+        honored.
+    date: 2022-11-27
+    sources:
+      - url: https://en.wikipedia.org/wiki/Avi_Maoz
+        title: Avi Maoz
+        publisher: Wikipedia
+      - url: https://www.jpost.com/breaking-news/article-847410
+        title: Far-right MK Avi Maoz resigns from government
+        publisher: The Jerusalem Post
+  - kind: positive
+    category: achievement
+    title:
+      he: קריירה בשירות הציבורי כמנהל בכיר במשרדי ממשלה
+      en: Public-service career as a senior government administrator
+    description:
+      he: לפני כניסתו לפוליטיקה צבר מעוז ניסיון רב בשירות הציבורי. בשנת 1999 מונה
+        למנהל משרד הפנים על ידי השר נתן שרנסקי, ולאחר מכן שימש כמנהל משרד הבינוי
+        והשיכון וכמנכ"ל ישראל בעלייה. בשנת 1975 התגייס לצה"ל, ובשנת 1977 היה
+        שותף בהקמת היישוב מגדל עוז בגוש עציון.
+      en: Before entering politics, Maoz had an extensive public-service career. In
+        1999 he was appointed Director of the Ministry of the Interior by
+        minister Natan Sharansky, and he later served as director of the
+        Ministry of Construction and Housing and as director-general of Yisrael
+        BaAliyah. He enlisted in the IDF in 1975 and in 1977 was a partner in
+        establishing the Migdal Oz settlement in Gush Etzion.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Avi_Maoz
+        title: Avi Maoz
+        publisher: Wikipedia

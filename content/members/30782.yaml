@@ -1,0 +1,68 @@
+# PersonID 30782. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30782
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חברת הכנסת מטעם יש עתיד
+      en: Member of Knesset for Yesh Atid
+    description:
+      he: טטיאנה מזרסקי נכנסה לכנסת ה-24 ב-15 ביוני 2021 מטעם סיעת יש עתיד, כמחליפה של
+        יואל רזבוזוב במסגרת 'החוק הנורווגי', והמשיכה לכהן גם בכנסת ה-25. מזרסקי
+        עלתה לישראל מברית המועצות בגיל 17 במסגרת עליית הנוער, ובעלת תואר ראשון
+        ושני בהיסטוריה מאוניברסיטת חיפה.
+      en: Tania Mazarsky entered the 24th Knesset on 15 June 2021 as a member of the
+        Yesh Atid faction, replacing Yoel Razvozov under the 'Norwegian Law,'
+        and has continued to serve in the 25th Knesset. Mazarsky immigrated to
+        Israel from the Soviet Union at age 17 through the Youth Aliyah program
+        and holds bachelor's and master's degrees in history from the University
+        of Haifa.
+    date: 2021-06-15
+    sources:
+      - url: https://en.wikipedia.org/wiki/Tania_Mazarsky
+        title: Tania Mazarsky
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q107224738
+        title: Tania Mazarsky (Q107224738)
+        publisher: Wikidata
+  - kind: positive
+    category: volunteering
+    title:
+      he: סגנית ומ"מ ראש עיריית כרמיאל
+      en: Deputy and acting mayor of Karmiel
+    description:
+      he: בין השנים 2018 ל-2021 כיהנה מזרסקי כסגנית וממלאת-מקום ראש עיריית כרמיאל,
+        לאחר שנים של פעילות ציבורית בעיר, ובהן ניהול מרכזים רפואיים של 'לאומית
+        שירותי בריאות' והקמת מערך מתנדבים לסיוע לניצולי שואה ולקשישים.
+      en: Between 2018 and 2021 Mazarsky served as deputy mayor and acting mayor of
+        Karmiel, following years of community work in the city that included
+        directing Leumit Health Care Services medical centers and founding a
+        volunteer network supporting Holocaust survivors and the elderly.
+    sources:
+      - url: https://he.wikipedia.org/wiki/%D7%98%D7%98%D7%99%D7%90%D7%A0%D7%94_%D7%9E%D7%96%D7%A8%D7%A1%D7%A7%D7%99
+        title: טטיאנה מזרסקי
+        publisher: Hebrew Wikipedia
+      - url: https://en.wikipedia.org/wiki/Tania_Mazarsky
+        title: Tania Mazarsky
+        publisher: Wikipedia
+  - kind: positive
+    category: award
+    title:
+      he: מבין 50 הפעילים הציבוריים המשפיעים (ידיעות אחרונות, 2016)
+      en: Named among 50 most influential public activists (Yediot Ahronot, 2016)
+    description:
+      he: בשנת 2016 נכללה מזרסקי ברשימת 50 הפעילים הציבוריים המשפיעים של השנה מטעם
+        'ידיעות אחרונות', בעקבות פעילותה הקהילתית בכרמיאל ובתחום שירותי הבריאות.
+      en: In 2016 Mazarsky was named by the newspaper Yediot Ahronot as one of the 50
+        most influential Israeli public activists of the year, in recognition of
+        her community and health-services work in Karmiel.
+    date: "2016"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Tania_Mazarsky
+        title: Tania Mazarsky
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%98%D7%98%D7%99%D7%90%D7%A0%D7%94_%D7%9E%D7%96%D7%A8%D7%A1%D7%A7%D7%99
+        title: טטיאנה מזרסקי
+        publisher: Hebrew Wikipedia

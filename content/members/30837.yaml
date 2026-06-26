@@ -1,0 +1,72 @@
+# PersonID 30837. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30837
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חברת הכנסת ה-25 מטעם יש עתיד
+      en: Member of the 25th Knesset for Yesh Atid
+    description:
+      he: דבורה (דבי) ביטון, ילידת שדרות 1965, נבחרה לכנסת ה-25 ברשימת יש עתיד והושבעה
+        כחברת כנסת ב-15 בנובמבר 2022, לאחר שהוצבה במקום ה-21 ברשימה. לפני כן
+        עמדה בראש סניף יש עתיד בשדרות החל משנת 2013.
+      en: Dvora (Debbie) Biton, born in Sderot in 1965, was elected to the 25th
+        Knesset on the Yesh Atid list and sworn in as a Member of Knesset on 15
+        November 2022, after being placed 21st on the list. She had previously
+        led Yesh Atid's local branch in Sderot from 2013.
+    date: 2022-11-15
+    sources:
+      - url: https://en.wikipedia.org/wiki/Debbie_Biton
+        title: Debbie Biton
+        publisher: English Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%93%D7%91%D7%95%D7%A8%D7%94_%D7%91%D7%99%D7%98%D7%95%D7%9F
+        title: דבורה ביטון
+        publisher: Hebrew Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: קריירה משפטית בסיוע המשפטי למען נוער בסיכון וקטינים
+      en: Legal career in public legal aid for at-risk youth and minors
+    description:
+      he: ביטון, בעלת תואר שני במשפטים והוסמכה כעורכת דין ב-2008, עבדה החל מאותה שנה
+        ועד היבחרה לכנסת בלשכת הסיוע המשפטי במחוז הדרום. במסגרת תפקידה ייצגה
+        נוער בסיכון וקטינים, שימשה אפוטרופוס לבדיקת כשרות משפטית וטיפלה בהליכי
+        הוצאת ילדים מהבית.
+      en: Biton, who holds a master's degree in law and was licensed as an attorney in
+        2008, worked from that year until her election to the Knesset at the
+        Southern District Legal Aid Bureau. In that role she represented at-risk
+        youth and minors, served as a court-appointed guardian for
+        legal-capacity determinations, and handled child-removal proceedings.
+    sources:
+      - url: https://he.wikipedia.org/wiki/%D7%93%D7%91%D7%95%D7%A8%D7%94_%D7%91%D7%99%D7%98%D7%95%D7%9F
+        title: דבורה ביטון
+        publisher: Hebrew Wikipedia
+      - url: https://en.wikipedia.org/wiki/Debbie_Biton
+        title: Debbie Biton
+        publisher: English Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: פעילות למען תושבי שדרות ועוטף עזה
+      en: Advocacy for residents of Sderot and the Gaza border communities
+    description:
+      he: כתושבת שדרות, קידמה ביטון הצעת חוק להקמת חדר מיון ממוגן בעיר, בעלות כוללת של
+        20 מיליון ש"ח, ומתחה ביקורת על דחיית ההצעה בקריאה טרומית בידי הקואליציה
+        ב-31 במאי 2023, כשבועיים לאחר מבצע 'מגן וחץ'. בכנסת היא מובילה שדולות
+        בנושאי קטינים בסיכון, זכויות נפגעי עבירה ופיתוח הנגב ויישובי עוטף עזה.
+      en: As a Sderot resident, Biton promoted a bill to build a fortified emergency
+        room in the city at a total cost of NIS 20 million, and criticized the
+        coalition when it rejected the bill in a preliminary reading on 31 May
+        2023, roughly two weeks after Operation Shield and Arrow. In the Knesset
+        she chairs caucuses on at-risk minors, crime victims' rights, and
+        development of the Negev and Gaza border communities.
+    date: 2023-05
+    sources:
+      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-744738
+        title: Israel shoots down bill to build fortified emergency room in Sderot
+        publisher: The Jerusalem Post
+      - url: https://he.wikipedia.org/wiki/%D7%93%D7%91%D7%95%D7%A8%D7%94_%D7%91%D7%99%D7%98%D7%95%D7%9F
+        title: דבורה ביטון
+        publisher: Hebrew Wikipedia

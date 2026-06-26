@@ -1,0 +1,66 @@
+# PersonID 30840. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30840
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: נבחר לכנסת ה-25 מטעם רע"מ במקום השלישי ברשימה
+      en: Elected to the 25th Knesset for Ra'am, third on the list
+    description:
+      he: וליד אלהואשלה נבחר לכנסת ה-25 בבחירות נובמבר 2022 מטעם רשימת רע"מ (הרשימה
+        הערבית המאוחדת), במקום השלישי ברשימה לאחר הפריימריז של אוגוסט 2022. הוא
+        יליד הנגב, חבר התנועה האסלאמית, וקודם לכן שימש כיועצו של ח"כ סעיד
+        אלחרומי.
+      en: Walid al-Huashla was elected to the 25th Knesset in the November 2022
+        elections on the United Arab List (Ra'am), placed third on the party's
+        list following the August 2022 primaries. A native of the Negev and a
+        member of the Islamic Movement in Israel, he had previously served as an
+        advisor to MK Sa'id al-Khurumi.
+    date: 2022-11-15
+    sources:
+      - url: https://en.wikipedia.org/wiki/Walid_al-Huashla
+        title: Waleed Alhwashla
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%95%D7%9C%D7%99%D7%93_%D7%90%D7%9C%D7%94%D7%95%D7%90%D7%A9%D7%9C%D7%94
+        title: וליד אלהואשלה
+        publisher: Wikipedia (Hebrew)
+      - url: https://www.wikidata.org/wiki/Q115051875
+        title: Walid al-Huashla (Q115051875)
+        publisher: Wikidata
+  - kind: positive
+    category: achievement
+    title:
+      he: שופט כדורגל בהתאחדות לכדורגל בישראל (2000-2013)
+      en: Football referee in the Israel Football Association (2000-2013)
+    description:
+      he: לפני כניסתו לפוליטיקה שימש אלהואשלה כשופט כדורגל בהתאחדות לכדורגל בישראל בין
+        השנים 2000 ל-2013, כולל שיפוט בליגות הבכירות.
+      en: Before entering politics, al-Huashla served as a football referee within the
+        Israel Football Association between 2000 and 2013, including officiating
+        in the top divisions.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Walid_al-Huashla
+        title: Waleed Alhwashla
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%95%D7%9C%D7%99%D7%93_%D7%90%D7%9C%D7%94%D7%95%D7%90%D7%A9%D7%9C%D7%94
+        title: וליד אלהואשלה
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: achievement
+    title:
+      he: "השכלה אקדמית: תואר ראשון ושני מאוניברסיטת חיפה"
+      en: "Academic background: BA and MA from the University of Haifa"
+    description:
+      he: אלהואשלה בעל תואר ראשון בלימודי המזרח התיכון ותואר שני במדע המדינה
+        מאוניברסיטת חיפה.
+      en: Al-Huashla holds a bachelor's degree in Middle Eastern studies and a
+        master's degree in political science from the University of Haifa.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Walid_al-Huashla
+        title: Waleed Alhwashla
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%95%D7%9C%D7%99%D7%93_%D7%90%D7%9C%D7%94%D7%95%D7%90%D7%A9%D7%9C%D7%94
+        title: וליד אלהואשלה
+        publisher: Wikipedia (Hebrew)

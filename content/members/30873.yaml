@@ -1,0 +1,64 @@
+# PersonID 30873. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30873
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר הכנסת ה-25 מטעם ש"ס
+      en: Member of the 25th Knesset for Shas
+    description:
+      he: ארז מלול נכנס לכנסת ה-25 ב-2 בפברואר 2023 מטעם סיעת ש"ס במסגרת 'החוק
+        הנורבגי', לאחר התפטרותו של יעקב מרגי. כהונתו הסתיימה ב-20 ביולי 2025 עם
+        פרישת שרי ש"ס מהממשלה, והוא שב לכנסת ב-19 במאי 2026 כמחליפו של משה ארבל.
+      en: Erez Malul entered the 25th Knesset on 2 February 2023 as a member of the
+        Shas faction under the so-called Norwegian Law, succeeding Jacob Margi.
+        His term ended on 20 July 2025 when Shas ministers resigned from the
+        government, and he returned to the Knesset on 19 May 2026 as a
+        replacement for Moshe Arbel.
+    date: 2023-02-02
+    sources:
+      - url: https://en.wikipedia.org/wiki/Erez_Malul
+        title: Erez Malul
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%90%D7%A8%D7%96_%D7%9E%D7%9C%D7%95%D7%9C
+        title: ארז מלול
+        publisher: Wikipedia (Hebrew)
+      - url: https://www.ynetnews.com/article/h2aio6lwh
+        title: Shas MK Moshe Arbel resigns from Knesset, Erez Malul to replace him
+        publisher: Ynetnews
+  - kind: positive
+    category: achievement
+    title:
+      he: כיהן כסגן יושב ראש הכנסת ה-25
+      en: Served as Deputy Speaker of the 25th Knesset
+    description:
+      he: במהלך כהונתו בכנסת ה-25 כיהן ארז מלול כסגן יושב ראש הכנסת.
+      en: During his term in the 25th Knesset, Erez Malul served as a Deputy Speaker
+        of the Knesset.
+    sources:
+      - url: https://he.wikipedia.org/wiki/%D7%90%D7%A8%D7%96_%D7%9E%D7%9C%D7%95%D7%9C
+        title: ארז מלול
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: achievement
+    title:
+      he: רקע מקצועי כעורך דין ובשירות הציבורי הדתי
+      en: Professional background as a lawyer and in religious public service
+    description:
+      he: מלול הוא עורך דין בעל תארי בוגר ומוסמך במשפטים מהמכללה האקדמית אונו. משנת
+        2015 שימש כיועץ לחקיקה לשר לשירותי דת דוד אזולאי, וב-2016 כראש מטה מנכ"ל
+        המשרד לשירותי דת. כן שימש כמנהל מוסד 'יחווה דעת'.
+      en: Malul is a licensed attorney who earned bachelor's and master's degrees in
+        law from Ono Academic College. From 2015 he served as a legislative
+        adviser to Minister of Religious Services David Azulai, and in 2016 as
+        head of the director-general's bureau in the Ministry of Religious
+        Services. He also directed the Yihaveh Da'at institute.
+    sources:
+      - url: https://he.wikipedia.org/wiki/%D7%90%D7%A8%D7%96_%D7%9E%D7%9C%D7%95%D7%9C
+        title: ארז מלול
+        publisher: Wikipedia (Hebrew)
+      - url: https://en.wikipedia.org/wiki/Erez_Malul
+        title: Erez Malul
+        publisher: Wikipedia

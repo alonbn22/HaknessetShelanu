@@ -1,0 +1,72 @@
+# PersonID 30863. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30863
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חברת הכנסת ה-25 מטעם ישראל ביתנו
+      en: Member of the 25th Knesset for Yisrael Beiteinu
+    description:
+      he: שרון ניר הצטרפה למפלגת ישראל ביתנו, שובצה במקום הרביעי ברשימה לבחירות לכנסת
+        ה-25, נבחרה והושבעה כחברת הכנסת ב-15 בנובמבר 2022. בין היתר היא חברה
+        בוועדת החוץ והביטחון ובוועדת האתיקה.
+      en: Sharon Nir joined the Yisrael Beiteinu party, was placed fourth on its list
+        for the 2022 election to the 25th Knesset, was elected, and was sworn in
+        as a Member of Knesset on 15 November 2022. She serves on Knesset
+        committees including the Foreign Affairs and Defense Committee and the
+        Ethics Committee.
+    date: 2022-11-15
+    sources:
+      - url: https://en.wikipedia.org/wiki/Sharon_Nir
+        title: Sharon Nir
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%A9%D7%A8%D7%95%D7%9F_%D7%A0%D7%99%D7%A8
+        title: שרון ניר
+        publisher: Wikipedia (Hebrew)
+      - url: https://www.wikidata.org/wiki/Q21789584
+        title: Sharon Nir (Q21789584)
+        publisher: Wikidata
+  - kind: positive
+    category: achievement
+    title:
+      he: קצינה בכירה בצה"ל בדרגת תת-אלוף
+      en: Senior IDF officer with the rank of Brigadier General (Tat Aluf)
+    description:
+      he: ניר התגייסה לצה"ל בשנת 1989 לחיל הקשר (לימים חיל התקשוב), שירתה כשלושים שנה
+        עד 2019 והגיעה לדרגת תת-אלוף. בין תפקידיה פיקדה על בית הספר הלאומי
+        לתקשוב, סייבר ותקשורת (בה"ד 7) וכיהנה כיועצת הרמטכ"ל לענייני מגדר בשנים
+        2016–2019.
+      en: Nir enlisted in the IDF in 1989 in the Signal/C4I Corps, served for about
+        thirty years until 2019, and rose to the rank of Brigadier General (tat
+        aluf). Her roles included commanding the C4I national training base
+        (Bahad 7) and serving as the Chief of Staff's advisor on Gender Affairs
+        from 2016 to 2019.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Sharon_Nir
+        title: Sharon Nir
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%A9%D7%A8%D7%95%D7%9F_%D7%A0%D7%99%D7%A8
+        title: שרון ניר
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: achievement
+    title:
+      he: פורצת דרך לנשים בחיל התקשוב
+      en: Trailblazer for women in the IDF's C4I Corps
+    description:
+      he: במהלך שירותה הצבאי הייתה ניר האישה הראשונה שהכשירה קצינים בחיל התקשוב, האישה
+        הראשונה שפיקדה על גדוד תקשורת מבצעי, והאישה הראשונה שפיקדה על בית הספר
+        הלאומי לתקשוב (בה"ד 7).
+      en: During her military service Nir was the first woman to train officers for
+        the C4I Corps, the first woman to command an operational communications
+        battalion, and the first woman to command the C4I national training base
+        (Bahad 7).
+    sources:
+      - url: https://en.wikipedia.org/wiki/Sharon_Nir
+        title: Sharon Nir
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%A9%D7%A8%D7%95%D7%9F_%D7%A0%D7%99%D7%A8
+        title: שרון ניר
+        publisher: Wikipedia (Hebrew)

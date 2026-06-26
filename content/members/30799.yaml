@@ -1,0 +1,67 @@
+# PersonID 30799. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30799
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר הכנסת ה-24 וה-25 מטעם תקווה חדשה / הימין הממלכתי
+      en: Member of the 24th and 25th Knesset for New Hope / National Right
+    description:
+      he: מישל בוסקילה כיהן כחבר הכנסת ה-24 בין אוגוסט לנובמבר 2022, ושב לכהן כחבר
+        הכנסת ה-25 ב-5 ביולי 2024, לאחר התפטרותה של יפעת שאשא-ביתון. הוא נכנס
+        לכנסת מטעם מפלגת תקווה חדשה (לימים הימין הממלכתי) בראשות גדעון סער.
+      en: Michel Buskila served as a member of the 24th Knesset from August to
+        November 2022, and returned to the 25th Knesset on 5 July 2024 following
+        the resignation of Yifat Shasha-Biton. He entered the Knesset on behalf
+        of the New Hope party (later National Right), led by Gideon Sa'ar.
+    date: 2024-07-05
+    sources:
+      - url: https://en.wikipedia.org/wiki/Michel_Buskila
+        title: Michel Buskila
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q105628745
+        title: Michael Buskila (Q105628745)
+        publisher: Wikidata
+      - url: https://he.wikipedia.org/wiki/%D7%9E%D7%99%D7%A9%D7%9C_%D7%91%D7%95%D7%A1%D7%A7%D7%99%D7%9C%D7%94
+        title: מישל בוסקילה
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר מועצת העיר אשקלון ומשנה לראש העיר
+      en: Ashkelon city council member and deputy mayor
+    description:
+      he: בטרם כניסתו לכנסת כיהן בוסקילה כחבר מועצת העיר אשקלון החל ממאי 2009 וכמשנה
+        לראש העיר אשקלון. הוא עמד בראש סניף הליכוד באשקלון.
+      en: Before entering the Knesset, Buskila served as a member of the Ashkelon city
+        council from May 2009 and as deputy mayor of Ashkelon. He led the Likud
+        branch in Ashkelon.
+    date: 2009-05-01
+    sources:
+      - url: https://en.wikipedia.org/wiki/Michel_Buskila
+        title: Michel Buskila
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%9E%D7%99%D7%A9%D7%9C_%D7%91%D7%95%D7%A1%D7%A7%D7%99%D7%9C%D7%94
+        title: מישל בוסקילה
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: achievement
+    title:
+      he: יושב ראש הוועדה המיוחדת ליישובים בגבול המזרחי ויו"ר סיעת הימין הממלכתי
+      en: Chair of the Special Committee for Eastern Border Settlements and head of
+        the National Right faction
+    description:
+      he: במהלך כהונתו בכנסת ה-25 נבחר בוסקילה ליושב ראש הוועדה המיוחדת ליישובים בגבול
+        המזרחי, וכן משמש יושב ראש סיעת הימין הממלכתי.
+      en: During his term in the 25th Knesset, Buskila was elected chair of the
+        Special Committee for Eastern Border Settlements, and he also serves as
+        head of the National Right (HaYamin HaMamlachti) faction.
+    sources:
+      - url: https://he.wikipedia.org/wiki/%D7%9E%D7%99%D7%A9%D7%9C_%D7%91%D7%95%D7%A1%D7%A7%D7%99%D7%9C%D7%94
+        title: מישל בוסקילה
+        publisher: Wikipedia (Hebrew)
+      - url: https://www.knesset.tv/knesset-members/70270/
+        title: חבר הכנסת מישל בוסקילה
+        publisher: Knesset Channel (ערוץ כנסת)

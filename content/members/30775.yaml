@@ -1,0 +1,68 @@
+# PersonID 30775. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30775
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חברת הכנסת מטעם המחנה הממלכתי (כחול לבן)
+      en: Member of Knesset for the National Unity (Blue and White) party
+    description:
+      he: יעל רון בן משה מכהנת כחברת הכנסת מטעם כחול לבן (המחנה הממלכתי). היא נכנסה
+        לראשונה לכנסת ה-23 בדצמבר 2020 (במקומו של עפר שלח), כיהנה בכנסת ה-24,
+        ושבה לכהן בכנסת ה-25 ב-8 ביולי 2025 לאחר התפטרותו של ח"כ מתן כהנא.
+      en: Yael Ron Ben-Moshe serves as a Member of Knesset for Blue and White
+        (National Unity). She first entered the 23rd Knesset in December 2020
+        (replacing Ofer Shelah), served in the 24th Knesset, and returned to the
+        25th Knesset on 8 July 2025 following the resignation of MK Matan
+        Kahana.
+    date: 2025-07-08
+    sources:
+      - url: https://en.wikipedia.org/wiki/Yael_Ron_Ben-Moshe
+        title: Yael Ron Ben-Moshe
+        publisher: Wikipedia (English)
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%9C_%D7%A8%D7%95%D7%9F_%D7%91%D7%9F_%D7%9E%D7%A9%D7%94
+        title: יעל רון בן משה
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: achievement
+    title:
+      he: יושבת ראש ועדות בכנסת ה-23 וה-24
+      en: Committee chair in the 23rd and 24th Knesset
+    description:
+      he: בכנסת ה-23 כיהנה רון בן משה כיושבת ראש ועדת המדע והטכנולוגיה, ובכנסת ה-24
+        כיהנה כיושבת ראש הוועדה המיוחדת לפניות הציבור.
+      en: In the 23rd Knesset, Ron Ben-Moshe chaired the Science and Technology
+        Committee, and in the 24th Knesset she chaired the Special Committee for
+        Public Petitions.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Yael_Ron_Ben-Moshe
+        title: Yael Ron Ben-Moshe
+        publisher: Wikipedia (English)
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%9C_%D7%A8%D7%95%D7%9F_%D7%91%D7%9F_%D7%9E%D7%A9%D7%94
+        title: יעל רון בן משה
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: achievement
+    title:
+      he: מנכ"לית אשכול הרשויות הראשון בישראל ורקע בשירות הציבורי
+      en: CEO of Israel's first regional authorities cluster and public-service
+        background
+    description:
+      he: לפני כניסתה לפוליטיקה ניהלה רון בן משה תוכניות תעסוקה בג'וינט ישראל, ובשנת
+        2015 מונתה למנכ"לית אשכול רשויות מקומיות בגליל המערבי, שתואר כאשכול
+        האזורי הראשון מסוגו בישראל. כן עבדה בעברה בשירות הביטחון הכללי (שב"כ).
+      en: Before entering politics, Ron Ben-Moshe managed employment programs at JDC
+        Israel (the Joint Distribution Committee) and, in 2015, was appointed
+        CEO of the Western Galilee regional authorities cluster, described as
+        the first such cluster in Israel. She had also previously worked for the
+        Shin Bet (Israel Security Agency).
+    date: "2015"
+    sources:
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%9C_%D7%A8%D7%95%D7%9F_%D7%91%D7%9F_%D7%9E%D7%A9%D7%94
+        title: יעל רון בן משה
+        publisher: Wikipedia (Hebrew)
+      - url: https://en.wikipedia.org/wiki/Yael_Ron_Ben-Moshe
+        title: Yael Ron Ben-Moshe
+        publisher: Wikipedia (English)

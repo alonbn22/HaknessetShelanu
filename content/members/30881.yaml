@@ -1,0 +1,66 @@
+# PersonID 30881. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30881
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: אלוף ישראל בג'ודו וספורטאי תחרותי
+      en: Israeli judo champion and competitive athlete
+    description:
+      he: לפני כניסתו לפוליטיקה היה ירון לוי ספורטאי ג'ודו תחרותי שהיה חבר בנבחרת
+        ישראל בג'ודו וזכה באליפות ישראל. הוא פרש מהתחרויות בשנת 2002 בעקבות
+        פציעות חוזרות, והוא בוגר קורס מאמני ספורט במכון וינגייט.
+      en: Before entering politics, Yaron Levy was a competitive judoka who was a
+        member of Israel's national judo team and won the Israel Judo
+        Championship. He retired from competition in 2002 due to recurring
+        injuries and is a graduate of the sports-coaching course at the Wingate
+        Institute.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Yaron_Levi
+        title: Yaron Levi
+        publisher: English Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%A8%D7%95%D7%9F_%D7%9C%D7%95%D7%99_(%D7%A4%D7%95%D7%9C%D7%99%D7%98%D7%99%D7%A7%D7%90%D7%99)
+        title: ירון לוי (פוליטיקאי)
+        publisher: Hebrew Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: סגן ראש עיריית בת ים ונבחר ציבור מקומי
+      en: Deputy Mayor of Bat Yam and local elected official
+    description:
+      he: ירון לוי נבחר למועצת העיר בת ים בבחירות המקומיות ב-2018 מטעם 'יש עתיד' וכיהן
+        כסגן ראש העירייה, כשהוא מחזיק בתיקי הספורט, הנוער והחופים.
+      en: Yaron Levy was elected to the Bat Yam City Council in the 2018 municipal
+        elections on behalf of Yesh Atid and served as Deputy Mayor, holding the
+        sports, youth and beaches portfolios.
+    date: 2018-10-30
+    sources:
+      - url: https://en.wikipedia.org/wiki/Yaron_Levi
+        title: Yaron Levi
+        publisher: English Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%A8%D7%95%D7%9F_%D7%9C%D7%95%D7%99_(%D7%A4%D7%95%D7%9C%D7%99%D7%98%D7%99%D7%A7%D7%90%D7%99)
+        title: ירון לוי (פוליטיקאי)
+        publisher: Hebrew Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר הכנסת ה-25 מטעם 'יש עתיד'
+      en: Member of the 25th Knesset for Yesh Atid
+    description:
+      he: ירון לוי נכנס לכנסת ה-25 ב-1 באוגוסט 2023 מטעם 'יש עתיד', לאחר שחברת הכנסת
+        אורנה ברביבאי התפטרה כדי להתמודד על ראשות עיריית תל אביב-יפו.
+      en: Yaron Levy entered the 25th Knesset on 1 August 2023 as a member of Yesh
+        Atid, after MK Orna Barbivai resigned to run for Mayor of Tel Aviv-Yafo.
+    date: 2023-08-01
+    sources:
+      - url: https://en.wikipedia.org/wiki/Yaron_Levi
+        title: Yaron Levi
+        publisher: English Wikipedia
+      - url: https://www.wikidata.org/wiki/Q121076655
+        title: Yaron Levy (Q121076655)
+        publisher: Wikidata
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%A8%D7%95%D7%9F_%D7%9C%D7%95%D7%99_(%D7%A4%D7%95%D7%9C%D7%99%D7%98%D7%99%D7%A7%D7%90%D7%99)
+        title: ירון לוי (פוליטיקאי)
+        publisher: Hebrew Wikipedia

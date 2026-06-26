@@ -1,0 +1,59 @@
+# PersonID 30808. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30808
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: מקריירה של שחקנית ושדרנית טלוויזיה לעריכת דין
+      en: Career path from actress and TV presenter to practicing lawyer
+    description:
+      he: אפרת רייטן עבדה תחילה כשחקנית ומגישת טלוויזיה, בין היתר בערוץ הילדים ובערוץ
+        10, ולאחר מכן עברה לתחום המשפט. היא סיימה תואר ראשון במשפטים בשנת 2004,
+        הוסמכה כעורכת דין בשנת 2012 והפכה לשותפה במשרד עורכי הדין גולדפרב זליגמן
+        ושות'.
+      en: Efrat Rayten began her career as an actress and television presenter,
+        including on the Children's Channel and Channel 10, before moving into
+        law. She earned an LLB in 2004, was called to the bar in 2012, and
+        became a partner at the law firm Goldfarb Seligman & Co.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Efrat_Rayten
+        title: Efrat Rayten - Wikipedia
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q6864478
+        title: Efrat Rayten - Wikidata
+        publisher: Wikidata
+  - kind: positive
+    category: achievement
+    title:
+      he: יושבת ראש ועדת העבודה והרווחה בכנסת
+      en: Chaired the Knesset Labor, Welfare and Health Committee
+    description:
+      he: במהלך כהונתה בכנסת שימשה אפרת רייטן כיושבת ראש ועדת העבודה, הרווחה והבריאות.
+      en: During her Knesset service, Efrat Rayten served as chair of the Labor,
+        Welfare and Health Committee.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Efrat_Rayten
+        title: Efrat Rayten - Wikipedia
+        publisher: Wikipedia
+      - url: https://womenpoliticalleaders.org/member/efrat-raytan-marom/
+        title: Efrat Rayten-Marom - Women Political Leaders
+        publisher: Women Political Leaders
+  - kind: positive
+    category: achievement
+    title:
+      he: יושבת ראש סיעת העבודה בכנסת
+      en: Chaired the Labor Party's Knesset faction
+    description:
+      he: לאחר בחירות 2022 נבחרה אפרת רייטן לשמש כיושבת ראש סיעת מפלגת העבודה בכנסת.
+      en: Following the 2022 election, Efrat Rayten was selected to chair the Labor
+        Party's faction in the Knesset.
+    date: "2022"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Efrat_Rayten
+        title: Efrat Rayten - Wikipedia
+        publisher: Wikipedia
+      - url: https://womenpoliticalleaders.org/member/efrat-raytan-marom/
+        title: Efrat Rayten-Marom - Women Political Leaders
+        publisher: Women Political Leaders

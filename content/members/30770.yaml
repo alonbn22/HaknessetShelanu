@@ -1,0 +1,70 @@
+# PersonID 30770. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30770
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר הכנסת הישראלי הראשון שנולד בצרפת
+      en: First Israeli Knesset member born in France
+    description:
+      he: יוסף (יוסי) טייב, נציג מפלגת ש"ס, נולד ב-15 בפברואר 1981 ברובע ה-15 של פריז
+        למשפחה ממוצא יהודי-תוניסאי. הוא עלה לישראל בגיל 17 ללימודים בישיבת מיר
+        בירושלים. עם כניסתו לכנסת ב-1 ביולי 2020 צוין כחבר הכנסת הישראלי הראשון
+        שנולד בצרפת.
+      en: Joseph (Yossi) Taieb, a representative of the Shas party, was born on 15
+        February 1981 in the 15th arrondissement of Paris to a family of
+        Tunisian-Jewish descent. He immigrated to Israel at the age of 17 to
+        study at the Mir Yeshiva in Jerusalem. Upon entering the Knesset on 1
+        July 2020 he was noted as the first Israeli member of Knesset born in
+        France.
+    date: 2020-07-01
+    sources:
+      - url: https://fr.timesofisrael.com/yossi-taieb-du-shas-le-premier-depute-israelien-ne-en-france/
+        title: Yossi Taieb du Shas, le premier député israélien né en France
+        publisher: The Times of Israel (French edition)
+      - url: https://en.wikipedia.org/wiki/Yosef_Taieb
+        title: Yosef Taieb
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: יו"ר ועדת החינוך, התרבות והספורט של הכנסת
+      en: Chair of the Knesset Committee on Education, Culture and Sports
+    description:
+      he: עם הקמת הממשלה ה-37, נבחר יוסף טייב לכהן כיו"ר ועדת החינוך, התרבות והספורט
+        של הכנסת. הוא התפטר מהתפקיד ב-23 באוקטובר 2025.
+      en: Following the formation of Israel's thirty-seventh government, Joseph Taieb
+        was selected to chair the Knesset Committee on Education, Culture and
+        Sports. He resigned from the chairmanship on 23 October 2025.
+    date: 2023-01-01
+    sources:
+      - url: https://en.wikipedia.org/wiki/Yosef_Taieb
+        title: Yosef Taieb
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%99_%D7%98%D7%99%D7%99%D7%91
+        title: יוסי טייב
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: volunteering
+    title:
+      he: רב קהילה ושליח חינוכי, ופעיל בקליטת עולים מצרפת
+      en: Community rabbi, educational emissary, and worker for the integration of
+        French immigrants
+    description:
+      he: טייב כיהן כרב קהילה ויצא לשליחות חינוכית מטעם הסוכנות היהודית ומשרד החינוך
+        בעיר טולוז שבצרפת. בין השנים 2008–2020 ניהל בישראל מיזמים לקליטת עולים
+        מצרפת בעמותת "שלבים" של קרן וולפסון.
+      en: Taieb served as a community rabbi and as an educational emissary on behalf
+        of the Jewish Agency and the Education Ministry in Toulouse, France.
+        Between 2008 and 2020 he managed projects for the integration of French
+        immigrants in Israel through the Wolfson Foundation's Shalavim
+        organization.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Yosef_Taieb
+        title: Yosef Taieb
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%99_%D7%98%D7%99%D7%99%D7%91
+        title: יוסי טייב
+        publisher: Wikipedia (Hebrew)

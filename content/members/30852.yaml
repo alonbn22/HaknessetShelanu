@@ -1,0 +1,89 @@
+# PersonID 30852. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30852
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: עולה מאתיופיה וקצין בכיר בצנחנים שנבחר לכנסת ה-25
+      en: Ethiopian-born immigrant and senior IDF paratrooper officer elected to the
+        25th Knesset
+    description:
+      he: משה סולומון נולד ב-1975 בעיר שירה שבאזור תיגראי באתיופיה, ועלה לישראל כילד
+        לאחר מסע רגלי ארוך מאתיופיה לסודאן. הוא שירת בחטיבת הצנחנים של צה"ל
+        ומחזיק בדרגת סגן-אלוף (מיל'). סולומון נבחר לכנסת ה-25 ברשימת הציונות
+        הדתית לאחר בחירות נובמבר 2022.
+      en: Moshe Solomon was born in 1975 in Shire, in Ethiopia's Tigray region, and
+        immigrated to Israel as a child after a long overland journey from
+        Ethiopia to Sudan. He served in the IDF Paratroopers Brigade and holds
+        the reserve rank of lieutenant colonel (sgan aluf). Solomon was elected
+        to the 25th Knesset on the Religious Zionism list following the November
+        2022 election.
+    date: 2022-11-15
+    sources:
+      - url: https://en.wikipedia.org/wiki/Moshe_Solomon
+        title: Moshe Solomon
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q115051897
+        title: Moshe Solomon (Q115051897)
+        publisher: Wikidata
+      - url: https://www.israelnationalnews.com/news/364337
+        title: "A Must Read: The inaugural Knesset speech of MK Moshe Solomon"
+        publisher: Israel National News
+  - kind: positive
+    category: achievement
+    title:
+      he: קידום תוכנית ממשלתית לקליטת יוצאי אתיופיה
+      en: Led a government plan for the integration of Ethiopian-Israelis
+    description:
+      he: ב-15 ביולי 2025 אישרה ממשלת ישראל הארכה של תוכנית "דרך חדשה" לקליטת יוצאי
+        אתיופיה בהיקף של כ-214 מיליון ש"ח (כ-58 מיליון דולר), המכסה תחומי חינוך,
+        תרבות, רווחה, תעסוקה, ביטחון ובריאות. לפי הדיווח, ח"כ משה סולומון, בעצמו
+        יוצא אתיופיה, הוביל את קידום התוכנית לצד משרד ראש הממשלה ושר האוצר.
+      en: On 15 July 2025 the Israeli government approved an extension of the "New
+        Way" plan for the integration of Ethiopian immigrants, worth roughly NIS
+        214 million (about $58 million), covering education, culture, welfare,
+        employment, security and health. According to reporting, MK Moshe
+        Solomon, himself an Ethiopian immigrant, led the effort to advance the
+        plan alongside the Prime Minister's Office and the Finance Minister.
+    date: 2025-07-15
+    sources:
+      - url: https://www.jns.org/israeli-govt-oks-58m-plan-to-advance-ethiopian-jews/
+        title: Israeli gov't OKs $58m plan to advance Ethiopian Jews
+        publisher: JNS (Jewish News Syndicate)
+      - url: https://www.jns.org/feature/israeli-elections-2026-meet-the-parliament-mk-moshe-solomon
+        title: "Israeli elections 2026: Meet the parliament—MK Moshe Solomon"
+        publisher: JNS (Jewish News Syndicate)
+  - kind: negative
+    category: controversy
+    status: settled
+    title:
+      he: הודח מתפקידיו בוועדות הכנסת לאחר שהצביע נגד חוק לימוד התורה
+      en: Removed from Knesset committee roles after voting against the Torah Study
+        Basic Law
+    description:
+      he: ביוני 2026 הצביע ח"כ משה סולומון נגד הקריאה הטרומית של הצעת חוק יסוד שביקשה
+        לעגן את לימוד התורה כערך יסוד, בניגוד לעמדת סיעתו; הצעת החוק עברה ברוב
+        של 56 מול 43. סולומון נימק את הצבעתו בעמדתו בדבר שילוב לימוד תורה ושירות
+        צבאי. בעקבות ההצבעה הודיע יו"ר הציונות הדתית בצלאל סמוטריץ' על הדחתו
+        מתפקידיו בוועדות הכנסת מטעם הסיעה. מדובר בצעד משמעתי מפלגתי פנימי ולא
+        בהליך פלילי או משפטי.
+      en: In June 2026, MK Moshe Solomon voted against the preliminary reading of a
+        Basic Law bill seeking to enshrine Torah study as a foundational value,
+        against his faction's position; the bill passed 56-43. Solomon cited his
+        views on the integration of Torah study and military service. Following
+        the vote, Religious Zionism leader Bezalel Smotrich announced he was
+        removing Solomon from his roles on Knesset committees on behalf of the
+        faction. This was an internal party disciplinary measure, not a criminal
+        or legal proceeding.
+    date: 2026-06-10
+    sources:
+      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-898980
+        title: Knesset advances bill to enshrine Torah study into Basic Law, supporting
+          haredi draft evaders
+        publisher: The Jerusalem Post
+      - url: https://www.ynetnews.com/article/rjnsejvbze
+        title: Basic law enshrining Torah study as 'fundamental value' passes
+          preliminary reading
+        publisher: Ynetnews

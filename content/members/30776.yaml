@@ -1,0 +1,89 @@
+# PersonID 30776. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30776
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: רואה חשבון מוסמך ובעל תואר שני במשפטים
+      en: Certified public accountant with a master's degree in law
+    description:
+      he: לפני כניסתו לפוליטיקה היה ולדימיר בליאק רואה חשבון מוסמך (משנת 2005), שותף
+        במשרד רואי חשבון, ויועץ ליזמות עסקית במשרד העלייה והקליטה. הוא בעל השכלה
+        בראיית חשבון מאוניברסיטת תל אביב ותואר שני במשפטים מאוניברסיטת בר אילן
+        (2008).
+      en: Before entering politics, Vladimir Beliak worked as a certified public
+        accountant (licensed 2005), an accounting-firm partner, and a
+        business-entrepreneurship consultant for the Ministry of Immigrant
+        Absorption. He studied accounting at Tel Aviv University and earned a
+        master's degree in law from Bar-Ilan University (2008).
+    sources:
+      - url: https://he.wikipedia.org/wiki/%D7%95%D7%9C%D7%93%D7%99%D7%9E%D7%99%D7%A8_%D7%91%D7%9C%D7%99%D7%90%D7%A7
+        title: ולדימיר בליאק
+        publisher: Hebrew Wikipedia
+      - url: https://en.wikipedia.org/wiki/Vladimir_Beliak
+        title: Vladimir Beliak
+        publisher: English Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר כנסת מטעם יש עתיד וחבר ועדת הכספים
+      en: Member of Knesset for Yesh Atid and member of the Finance Committee
+    description:
+      he: בליאק נכנס לכנסת ה-23 בינואר 2021 מטעם סיעת יש עתיד, ונבחר מחדש לכנסת ה-24
+        ולכנסת ה-25. הוא משמש כחבר בוועדת הכספים של הכנסת ועוסק בהרחבה בנושאי
+        תקציב המדינה ופיקוח על הוצאות הממשלה.
+      en: Beliak entered the 23rd Knesset in January 2021 as a member of the Yesh Atid
+        faction and was re-elected to the 24th and 25th Knessets. He serves on
+        the Knesset Finance Committee and works extensively on the state budget
+        and oversight of government spending.
+    date: 2021-01-05
+    sources:
+      - url: https://en.wikipedia.org/wiki/Vladimir_Beliak
+        title: Vladimir Beliak
+        publisher: English Wikipedia
+      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-883995
+        title: State budget offers 'no good news,' will likely pass Knesset vote, says
+          MK Beliak
+        publisher: The Jerusalem Post
+  - kind: positive
+    category: award
+    title:
+      he: אות אביר איכות השלטון (2023)
+      en: Knight of Quality Government award (2023)
+    description:
+      he: ב-2023 הוענק לבליאק אות אביר איכות השלטון מטעם התנועה לאיכות השלטון בישראל,
+        בקטגוריית הרשות המחוקקת, על פעילותו הפרלמנטרית, ובכלל זה חשיפת העברות
+        תקציביות והפעילות סביב חקיקה בנושא תשלומים לחטופים ולשבים.
+      en: In 2023 Beliak received the 'Knight of Quality Government' award from the
+        Movement for Quality Government in Israel, in the legislative-authority
+        category, recognizing his parliamentary work, including scrutiny of
+        budget transfers and his involvement in legislation on payments to
+        released hostages and captives.
+    date: "2023"
+    sources:
+      - url: https://mqg.org.il/abirim/%D7%97%D7%9B-%D7%95%D7%9C%D7%93%D7%99%D7%9E%D7%99%D7%A8-%D7%91%D7%9C%D7%99%D7%90%D7%A7-%D7%9E%D7%A4%D7%9C%D7%92%D7%AA-%D7%99%D7%A9-%D7%A2%D7%AA%D7%99%D7%93-%D7%9E%D7%A8%D7%9B%D7%96-%D7%94%D7%90/
+        title: ח"כ ורו"ח ולדימיר בליאק - אביר איכות השלטון
+        publisher: Movement for Quality Government in Israel
+      - url: https://he.wikipedia.org/wiki/%D7%95%D7%9C%D7%93%D7%99%D7%9E%D7%99%D7%A8_%D7%91%D7%9C%D7%99%D7%90%D7%A7
+        title: ולדימיר בליאק
+        publisher: Hebrew Wikipedia
+  - kind: negative
+    category: controversy
+    status: settled
+    title:
+      he: הגבלות מטעם ועדת האתיקה של הכנסת (מרץ 2023)
+      en: Restrictions imposed by the Knesset Ethics Committee (March 2023)
+    description:
+      he: במרץ 2023 הטילה ועדת האתיקה של הכנסת הגבלות על עבודתו הפרלמנטרית של בליאק
+        (יחד עם ח"כ יוראי להב הרצנו) בעקבות הפרעה לדיון בוועדה בנושא הרפורמה
+        במערכת המשפט.
+      en: In March 2023 the Knesset Ethics Committee imposed restrictions on Beliak's
+        parliamentary work (alongside MK Yorai Lahav-Hertzanu) over the
+        disruption of a committee meeting on the government's judicial overhaul.
+    date: 2023-03-06
+    sources:
+      - url: https://www.haaretz.com/israel-news/2023-03-06/ty-article/.premium/knesset-ethics-committee-imposes-sanctions-on-three-lawmakers/00000186-b623-d9eb-abce-beef7f2c0000
+        title: Knesset Ethics Committee Imposes Sanctions on Three Lawmakers
+        publisher: Haaretz

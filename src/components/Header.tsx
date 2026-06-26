@@ -26,6 +26,16 @@ export function Header() {
         </Link>
         <NavLinks />
         <div className="ms-auto flex items-center gap-1">
+          <Link
+            href="/search"
+            aria-label={t("search.title")}
+            className="inline-flex h-10 w-10 items-center justify-center rounded-lg hover:bg-white/10"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" aria-hidden>
+              <circle cx="11" cy="11" r="7" />
+              <path d="M21 21l-4.3-4.3" />
+            </svg>
+          </Link>
           <MobileNav />
           {/* useSearchParams inside → needs a Suspense boundary for static prerender */}
           <Suspense fallback={null}>

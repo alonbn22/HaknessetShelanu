@@ -1372,3 +1372,113 @@ export function getFactionAvgParticipation(factionId: number): number | null {
     .get();
   return row?.avg ?? null;
 }
+
+// ---------- global search ----------
+
+export type SearchResults = {
+  members: { id: number; name: string; sub: string | null }[];
+  parties: { id: number; name: string }[];
+  votes: { id: number; titleHe: string | null }[];
+  laws: { id: number; nameHe: string | null }[];
+  committees: { id: number; nameHe: string | null }[];
+  lobbyists: { id: number; name: string }[];
+};
+
+const SEARCH_LIMIT = 8;
+
+// One query across all entity types. `searchHe` is the query translated to Hebrew
+// (so cross-language search matches the always-present Hebrew columns); names also
+// match the locale columns directly. Each group is capped at SEARCH_LIMIT.
+export function searchAll(query: string, searchHe: string, locale: string): SearchResults {
+  const db = getDb();
+  const trimmed = query.trim();
+  if (!trimmed) {
+    return { members: [], parties: [], votes: [], laws: [], committees: [], lobbyists: [] };
+  }
+  const q = `%${trimmed}%`;
+  const qHe = `%${(searchHe || trimmed).trim()}%`;
+
+  const factionIds = matchFactionIds(trimmed);
+
+  const memberRows = db
+    .selectDistinct({ person: schema.persons })
+    .from(schema.persons)
+    .innerJoin(
+      schema.personPositions,
+      eq(schema.personPositions.personId, schema.persons.id),
+    )
+    .where(
+      and(
+        eq(schema.personPositions.knessetNum, CURRENT_KNESSET),
+        or(
+          like(sql`${schema.persons.firstNameHe} || ' ' || ${schema.persons.lastNameHe}`, qHe),
+          like(schema.persons.nameEn, q),
+          like(schema.persons.nameAr, q),
+          like(schema.persons.nameRu, q),
+        )!,
+      ),
+    )
+    .limit(SEARCH_LIMIT)
+    .all()
+    .map((r) => r.person);
+  const facMap = getLatestFactionMap(memberRows.map((p) => p.id));
+  const members = memberRows.map((p) => {
+    const f = facMap.get(p.id);
+    return {
+      id: p.id,
+      name: personName(p, locale),
+      sub: f ? factionName(f.id, f.nameHe ?? "", locale) : null,
+    };
+  });
+
+  const parties = db
+    .select()
+    .from(schema.factions)
+    .where(
+      and(
+        eq(schema.factions.isCurrent, true),
+        or(
+          like(schema.factions.nameHe, qHe),
+          like(schema.factions.nameEn, q),
+          like(schema.factions.nameAr, q),
+          like(schema.factions.nameRu, q),
+          factionIds.length ? inArray(schema.factions.id, factionIds) : sql`0`,
+        )!,
+      ),
+    )
+    .limit(SEARCH_LIMIT)
+    .all()
+    .map((f) => ({ id: f.id, name: factionName(f.id, f.nameHe, locale) }));
+
+  const votes = db
+    .select({ id: schema.votes.id, titleHe: schema.votes.titleHe })
+    .from(schema.votes)
+    .where(like(schema.votes.titleHe, qHe))
+    .orderBy(desc(schema.votes.dateTime))
+    .limit(SEARCH_LIMIT)
+    .all();
+
+  const laws = db
+    .select({ id: schema.israelLaws.id, nameHe: schema.israelLaws.nameHe })
+    .from(schema.israelLaws)
+    .where(like(schema.israelLaws.nameHe, qHe))
+    .limit(SEARCH_LIMIT)
+    .all();
+
+  const committees = db
+    .select({ id: schema.committees.id, nameHe: schema.committees.nameHe })
+    .from(schema.committees)
+    .where(like(schema.committees.nameHe, qHe))
+    .limit(SEARCH_LIMIT)
+    .all();
+
+  const lobbyists = db
+    .select({ id: schema.lobbyists.id, name: schema.lobbyists.fullName })
+    .from(schema.lobbyists)
+    .where(like(schema.lobbyists.fullName, qHe))
+    .limit(SEARCH_LIMIT)
+    .all()
+    .map((l) => ({ id: l.id, name: l.name ?? "" }));
+
+  return { members, parties, votes, laws, committees, lobbyists };
+}

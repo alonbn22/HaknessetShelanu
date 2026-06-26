@@ -516,5 +516,13 @@
       "suggestion": "Suggestion",
       "other": "Ticket"
     }
+  },
+  "search": {
+    "title": "Search",
+    "placeholder": "Search members, parties, votes, laws…",
+    "button": "Search",
+    "prompt": "Type to search across the whole site.",
+    "noResults": "No results for \"{q}\".",
+    "resultsFor": "Results for \"{q}\""
   }
 }

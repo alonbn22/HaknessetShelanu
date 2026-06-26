@@ -11,7 +11,7 @@ export function HeroSearch() {
 
   function submit(e: React.FormEvent) {
     e.preventDefault();
-    router.push(q.trim() ? `/votes?q=${encodeURIComponent(q.trim())}` : "/votes");
+    router.push(q.trim() ? `/search?q=${encodeURIComponent(q.trim())}` : "/search");
   }
 
   return (

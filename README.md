@@ -1,5 +1,8 @@
 # הכנסת שלי · My Knesset
 
+[![Code license: AGPL-3.0](https://img.shields.io/badge/code-AGPL--3.0-blue.svg)](LICENSE)
+[![Content: CC BY-SA 4.0](https://img.shields.io/badge/content-CC--BY--SA--4.0-lightgrey.svg)](LICENSING.md)
+
 A multilingual, public-transparency website that helps people understand the
 **Israeli Knesset** (parliament): its members, factions, the coalition/opposition
 balance, full plenum voting records with per-member participation statistics,
@@ -172,3 +175,13 @@ The site targets **Israeli Standard IS 5568 (≈ WCAG 2.0 AA)**:
 Phases 1–3 done (foundation, members/factions, votes/stats, curated records,
 party profiles, accessibility). Next: the 2026 elections section + party-fit quiz.
 See `.claude/plans/wise-churning-wall.md` for the living plan.
+
+## License & contributing
+
+- **Code:** [AGPL-3.0-or-later](LICENSE) — run a modified hosted copy, share your
+  source. **Editorial content:** CC BY-SA 4.0. Third-party data keeps its upstream
+  license. Full details + attribution in [LICENSING.md](LICENSING.md).
+- How to contribute: [CONTRIBUTING.md](CONTRIBUTING.md) ·
+  Conduct: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) ·
+  Security: [SECURITY.md](SECURITY.md).
+- This is not an official Knesset site; see `/sources` for data provenance.

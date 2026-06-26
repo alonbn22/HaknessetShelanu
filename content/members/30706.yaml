@@ -1,0 +1,67 @@
+# PersonID 30706. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30706
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חברת הכנסת מטעם הליכוד
+      en: Member of Knesset for Likud
+    description:
+      he: קטי (קטרין) שטרית מכהנת כחברת הכנסת מטעם מפלגת הליכוד. היא נבחרה לראשונה
+        לכנסת ה-21 בשנת 2019 וכיהנה ברציפות עד 2022, וחזרה לכנסת ה-25 ב-15
+        בפברואר 2023 במסגרת החוק הנורווגי לאחר התפטרותה של מירי רגב.
+      en: Keti (Katrin) Shitrit serves as a member of the Knesset for the Likud party.
+        She was first elected to the 21st Knesset in 2019 and served through
+        2022, returning to the 25th Knesset on 15 February 2023 under the
+        Norwegian Law following the resignation of Miri Regev.
+    date: 2023-02-15
+    sources:
+      - url: https://en.wikipedia.org/wiki/Keti_Shitrit
+        title: Keti Shitrit
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q63166467
+        title: Cathy Sheetrit (Q63166467)
+        publisher: Wikidata
+  - kind: positive
+    category: achievement
+    title:
+      he: יושבת ראש הוועדה לזכויות הילד
+      en: Chairwoman of the Committee for the Rights of the Child
+    description:
+      he: באוגוסט 2025 מונתה שטרית לוועדה המיוחדת לזכויות הילד של הכנסת, והיא מכהנת
+        כיושבת ראש הוועדה. במסגרת תפקידה היא מובילה דיונים בנושאי רווחת ילדים,
+        ובהם פיקוח על מעונות יום, אלימות נוער ובטיחות ילדים.
+      en: In August 2025 Shitrit was appointed to the Knesset's Special Committee for
+        the Rights of the Child, which she chairs. In this role she leads
+        hearings on child welfare issues, including daycare supervision, youth
+        violence, and children's safety.
+    date: 2025-08-04
+    sources:
+      - url: https://en.wikipedia.org/wiki/Keti_Shitrit
+        title: Keti Shitrit
+        publisher: Wikipedia
+      - url: https://www.jpost.com/israel-news/article-871109
+        title: Roblox making children more violent, early childhood org. warns at
+          Knesset cm'tee
+        publisher: The Jerusalem Post
+  - kind: positive
+    category: achievement
+    title:
+      he: רקע ארוך בשירות הציבורי ובמינהל מקומי
+      en: Extensive public-service and local-government background
+    description:
+      he: "לפני כניסתה לכנסת צברה שטרית ניסיון רב בשירות הציבורי: היא עמדה בראש לשכת
+        ראש עיריית בית שמש בין השנים 1993 ל-2008 וכיהנה כמנהלת הכספים של העירייה
+        בין 2008 ל-2010, ובהמשך שימשה כיועצת לראש עיריית ירושלים ניר ברקת בין
+        השנים 2016 ל-2019."
+      en: "Before entering the Knesset, Shitrit accumulated extensive public-service
+        experience: she headed the office of the mayor of Beit Shemesh from 1993
+        to 2008 and served as the municipality's Financial Director from 2008 to
+        2010, and later worked as an adviser to Jerusalem mayor Nir Barkat
+        between 2016 and 2019."
+    sources:
+      - url: https://en.wikipedia.org/wiki/Keti_Shitrit
+        title: Keti Shitrit
+        publisher: Wikipedia

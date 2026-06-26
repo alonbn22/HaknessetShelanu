@@ -1,0 +1,67 @@
+# PersonID 30683. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30683
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: שר התרבות והספורט (2020–2022)
+      en: Minister of Culture and Sport (2020–2022)
+    description:
+      he: חילי טרופר כיהן כשר התרבות והספורט בממשלות ה-35 וה-36, החל ממאי 2020 ועד
+        2022. בתקופת מגפת הקורונה פעל לתמיכה במוסדות התרבות והספורט שנפגעו
+        מהמגבלות.
+      en: Hili Tropper served as Israel's Minister of Culture and Sport in the 35th
+        and 36th governments, from May 2020 until 2022. During the COVID-19
+        pandemic he worked to support cultural and sports institutions affected
+        by lockdown restrictions.
+    date: 2020-05
+    sources:
+      - url: https://en.wikipedia.org/wiki/Hili_Tropper
+        title: Hili Tropper
+        publisher: Wikipedia
+      - url: https://www.jpost.com/israel-elections/israel-elections-chili-tropper-the-nice-guy-determined-to-last-661642
+        title: "Israel Elections: Chili Tropper - The nice guy determined to last"
+        publisher: The Jerusalem Post
+  - kind: positive
+    category: achievement
+    title:
+      he: שר בממשלת החירום (2023–2024)
+      en: Minister in the emergency government (2023–2024)
+    description:
+      he: ב-12 באוקטובר 2023, לאחר מתקפת ה-7 באוקטובר ופרוץ המלחמה בעזה, הושבע טרופר
+        כשר ללא תיק בממשלה ה-37 במסגרת הצטרפות המחנה הממלכתי לממשלת החירום. הוא
+        כיהן בתפקיד עד התפטרותו ביוני 2024.
+      en: On 12 October 2023, following the 7 October attack and the outbreak of the
+        Gaza war, Tropper was sworn in as a minister without portfolio in the
+        37th government as part of National Unity's entry into an emergency
+        government. He held the post until his resignation in June 2024.
+    date: 2023-10-12
+    sources:
+      - url: https://en.wikipedia.org/wiki/Hili_Tropper
+        title: Hili Tropper
+        publisher: Wikipedia
+      - url: https://en.wikipedia.org/wiki/Thirty-seventh_government_of_Israel
+        title: Thirty-seventh government of Israel
+        publisher: Wikipedia
+  - kind: positive
+    category: volunteering
+    title:
+      he: רקע בחינוך, עבודה סוציאלית ושירות צבאי
+      en: Background in education, social work and military service
+    description:
+      he: לפני כניסתו לפוליטיקה עסק טרופר כשני עשורים בחינוך ובעבודה סוציאלית, שימש
+        מנהל בית הספר ע"ש ברנקו וייס ברמלה והקים ארגונים חברתיים, ביניהם 'במעגלי
+        צדק' ו'שכן טוב'. בשירותו הצבאי שירת ביחידת דובדבן.
+      en: Before entering politics, Tropper spent about two decades as an educator and
+        social worker, served as principal of the Branco Weiss school in Ramla
+        and co-founded social NGOs, including B'Maagalei Tzedek and Shachen Tov.
+        In his military service he served in the IDF's Duvdevan unit.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Hili_Tropper
+        title: Hili Tropper
+        publisher: Wikipedia
+      - url: https://www.jpost.com/israel-elections/israel-elections-chili-tropper-the-nice-guy-determined-to-last-661642
+        title: "Israel Elections: Chili Tropper - The nice guy determined to last"
+        publisher: The Jerusalem Post

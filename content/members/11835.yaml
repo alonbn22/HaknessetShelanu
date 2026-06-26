@@ -1,0 +1,62 @@
+# PersonID 11835. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 11835
+claims:
+  - kind: positive
+    category: award
+    title:
+      he: פרס חבר הכנסת המצטיין מטעם המכון הישראלי לדמוקרטיה
+      en: Israel Democracy Institute Outstanding Parliamentarian Award
+    description:
+      he: אורי מקלב היה בין שלושה חברי כנסת שזכו בפרס חבר הכנסת המצטיין מטעם המכון
+        הישראלי לדמוקרטיה, בטקס שנערך ב-2 בפברואר 2012 לציון פעילותו הפרלמנטרית
+        בשנת 2011.
+      en: Uri Maklev was one of three Knesset members honoured with the Israel
+        Democracy Institute's Outstanding Parliamentarian Award, presented at a
+        ceremony on 2 February 2012 in recognition of his parliamentary work
+        during 2011.
+    date: 2012-02-02
+    sources:
+      - url: https://en.idi.org.il/events/7251
+        title: Outstanding Parliamentarian Award 2011
+        publisher: The Israel Democracy Institute
+      - url: https://en.wikipedia.org/wiki/Uri_Maklev
+        title: Uri Maklev
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: סגן שר התחבורה והבטיחות בדרכים
+      en: Deputy Minister of Transport and Road Safety
+    description:
+      he: אורי מקלב כיהן כסגן שר התחבורה והבטיחות בדרכים בממשלה השלושים וחמש, מ-25
+        במאי 2020 עד 13 ביוני 2021, מטעם יהדות התורה.
+      en: Uri Maklev served as Deputy Minister of Transport and Road Safety in the
+        thirty-fifth government of Israel, from 25 May 2020 to 13 June 2021, on
+        behalf of United Torah Judaism.
+    date: 2020-05-25
+    sources:
+      - url: https://en.wikipedia.org/wiki/Ministry_of_Transport_and_Road_Safety
+        title: Ministry of Transport and Road Safety
+        publisher: Wikipedia
+      - url: https://en.wikipedia.org/wiki/Uri_Maklev
+        title: Uri Maklev
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: סגן ראש עיריית ירושלים וחבר מועצת העיר
+      en: Deputy Mayor of Jerusalem and City Council member
+    description:
+      he: לפני כניסתו לכנסת, אורי מקלב כיהן כחבר מועצת עיריית ירושלים וכסגן ראש העיר
+        בין השנים 1993 ל-2008, ובין היתר היה אחראי על תיק החינוך. הוא נכנס לכנסת
+        ב-31 ביולי 2008 מטעם דגל התורה במסגרת הסכם רוטציה.
+      en: Before entering the Knesset, Uri Maklev served on the Jerusalem City Council
+        and as a Deputy Mayor of Jerusalem from 1993 to 2008, holding
+        responsibilities including the education portfolio. He entered the
+        Knesset on 31 July 2008 for Degel HaTorah under a rotation agreement.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Uri_Maklev
+        title: Uri Maklev
+        publisher: Wikipedia

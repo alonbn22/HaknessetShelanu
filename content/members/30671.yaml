@@ -1,0 +1,81 @@
+# PersonID 30671. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30671
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר הכנסת מטעם יהדות התורה
+      en: Member of the Knesset for United Torah Judaism
+    description:
+      he: יעקב טסלר נבחר לראשונה לכנסת באפריל 2019 ברשימת יהדות התורה (אגודת ישראל,
+        נציג חסידות ויז'ניץ), ומכהן כחבר כנסת על פני מספר כהונות. קודם לכן כיהן
+        כחבר מועצת העיר אשדוד מטעם אגודת ישראל וכעוזר לשר הבריאות יעקב ליצמן.
+      en: Ya'akov Tessler was first elected to the Knesset in April 2019 on the United
+        Torah Judaism (Agudat Yisrael) list, representing the Vizhnitz Hasidic
+        community, and has served across multiple Knesset terms. He previously
+        served on the Ashdod city council for Agudat Yisrael and as an assistant
+        to Health Minister Ya'akov Litzman.
+    date: 2019-04-30
+    sources:
+      - url: https://en.wikipedia.org/wiki/Ya'akov_Tessler
+        title: Ya'akov Tessler
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q61359772
+        title: Jacob Tessler (Q61359772)
+        publisher: Wikidata
+  - kind: positive
+    category: achievement
+    title:
+      he: סגן שר התרבות והספורט
+      en: Deputy Minister of Culture and Sport
+    description:
+      he: טסלר כיהן כסגן שר התרבות והספורט בממשלה השלושים ושבע. הוא פרש מתפקידו
+        ומהכנסת באמצע 2025 במסגרת פרישת סיעת יהדות התורה מהקואליציה על רקע
+        המחלוקת בעניין חוק גיוס תלמידי הישיבות.
+      en: Tessler served as Deputy Minister of Culture and Sport in Israel's
+        thirty-seventh government. He resigned from the post and from the
+        Knesset in mid-2025 as part of United Torah Judaism's withdrawal from
+        the coalition over the dispute on the Haredi military draft exemption
+        legislation.
+    date: 2022-12-29
+    sources:
+      - url: https://en.wikipedia.org/wiki/Ya'akov_Tessler
+        title: Ya'akov Tessler
+        publisher: Wikipedia
+      - url: https://www.ynetnews.com/article/hkbamuxlll
+        title: Coalition braces for instability after Haredi ministers quit
+        publisher: Ynetnews
+  - kind: negative
+    category: investigation
+    status: ongoing
+    title:
+      he: חקירה בחשד למעורבות בהשתקת תלונות נגד אביו
+      en: Under investigation over alleged role in silencing complaints against his
+        father
+    description:
+      he: באוגוסט 2024 דווח כי פרקליט המדינה דאז עמית איסמן הורה למשטרה לחדש את החקירה
+        נגד סגן השר וחבר הכנסת יעקב טסלר, בחשד למעורבות בהשתקת תלונות על תקיפה
+        מינית שיוחסו לאביו, הרב אפרים טסלר, ששימש בעבר ראש ישיבה בירושלים. על פי
+        הדיווחים החקירה עוסקת בחשד למעורבות במניעת הליכי החקירה ובתשלום לאחד
+        המתלוננים. נכון לפרסומים לא הוגש כתב אישום והוא לא הורשע, ועומדת לו חזקת
+        החפות.
+      en: In August 2024 it was reported that then-State Prosecutor Amit Aisman
+        ordered police to reopen an investigation into Deputy Minister and MK
+        Ya'akov Tessler over his alleged involvement in silencing sexual-assault
+        complaints against his father, Rabbi Efraim Tessler, a former head of a
+        Jerusalem yeshiva. According to the reports, the investigation concerns
+        suspected involvement in obstructing the proceedings and an alleged
+        payment to one of the complainants. As reported, no indictment has been
+        filed and he has not been convicted; the presumption of innocence
+        applies.
+    date: 2024-08-18
+    sources:
+      - url: https://www.haaretz.com/israel-news/2024-08-18/ty-article/.premium/probe-reopened-into-lawmaker-who-allegedly-helped-squelch-dads-sexual-assault-case/00000191-66d5-d3bf-a3b1-eff76eaf0000
+        title: Probe Reopened Into Israeli Lawmaker Who Allegedly Helped Squelch
+          Father's Sexual Assault Case
+        publisher: Haaretz
+      - url: https://www.jpost.com/israel-news/article-726829
+        title: Haredi deputy minister involved in closing father's sexual assault case
+        publisher: The Jerusalem Post

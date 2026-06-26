@@ -1,0 +1,53 @@
+# PersonID 12938. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 12938
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר כנסת ותיק מטעם ישראל ביתנו
+      en: Veteran Knesset member for Yisrael Beiteinu
+    description:
+      he: חמד עמאר, פוליטיקאי דרוזי יליד שפרעם (1964), משמש חבר הכנסת מטעם מפלגת ישראל
+        ביתנו החל משנת 2009, לאחר שירות בצה"ל בשנים 1982-1986. הוא כיהן בכנסות
+        ה-18 עד ה-20 וממשיך לכהן מאז.
+      en: Hamad Amar, a Druze politician born in Shfaram (1964), has served as a
+        Knesset member for the Yisrael Beiteinu party since 2009, following IDF
+        service from 1982 to 1986. He served in the 18th through 20th Knessets
+        and has continued to serve since.
+    date: 2009-02-24
+    sources:
+      - url: https://en.wikipedia.org/wiki/Hamad_Amar
+        title: Hamad Amar
+        publisher: Wikipedia (English)
+      - url: https://he.wikipedia.org/wiki/%D7%97%D7%9E%D7%93_%D7%A2%D7%9E%D7%90%D7%A8
+        title: Hamad Amar
+        publisher: Wikipedia (Hebrew)
+      - url: https://www.wikidata.org/wiki/Q1572575
+        title: Hamad Amar (Q1572575)
+        publisher: Wikidata
+  - kind: positive
+    category: achievement
+    title:
+      he: שר במשרד האוצר ומשנה ליושב ראש הכנסת
+      en: Minister in the Finance Ministry and Deputy Speaker of the Knesset
+    description:
+      he: ב-13 ביוני 2021 הושבע חמד עמאר כשר במשרד האוצר, אחד משני שרים לא-יהודים
+        בממשלה דאז, וכיהן בתפקיד עד דצמבר 2022. כן כיהן כמשנה ליושב ראש הכנסת
+        בכנסת ה-20 ובכנסת ה-23.
+      en: On 13 June 2021, Hamad Amar was sworn in as a minister in the Finance
+        Ministry, one of two non-Jewish ministers in the government at the time,
+        serving until December 2022. He also served as a Deputy Speaker of the
+        Knesset in the 20th and 23rd Knessets.
+    date: 2021-06-13
+    sources:
+      - url: https://www.jpost.com/breaking-news/rift-in-yisrael-beytenu-causes-tension-670862
+        title: New government to include Druze minister after dispute
+        publisher: The Jerusalem Post
+      - url: https://he.wikipedia.org/wiki/%D7%97%D7%9E%D7%93_%D7%A2%D7%9E%D7%90%D7%A8
+        title: Hamad Amar
+        publisher: Wikipedia (Hebrew)
+      - url: https://www.wikidata.org/wiki/Q1572575
+        title: Hamad Amar (Q1572575)
+        publisher: Wikidata

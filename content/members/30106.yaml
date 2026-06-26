@@ -1,0 +1,71 @@
+# PersonID 30106. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30106
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חברת הכנסת מטעם מפלגת העבודה ולאחר מכן 'הדמוקרטים'
+      en: Member of the Knesset for Labor and later The Democrats
+    description:
+      he: נעמה לזימי, ילידת מגדל העמק (11 בינואר 1986), נכנסה לכנסת ה-24 ב-2021 מטעם
+        מפלגת העבודה לאחר התפטרותו של עמר בר-לב במסגרת החוק הנורווגי. בבחירות
+        לכנסת ה-25 (2022) דורגה במקום השני ברשימת העבודה, אחרי יושבת ראש המפלגה
+        מרב מיכאלי. ביוני 2024 המשיכה לכהן כחברת כנסת מטעם מפלגת 'הדמוקרטים'
+        שהוקמה באיחוד העבודה ומרצ.
+      en: Naama Lazimi, born in Migdal HaEmek (11 January 1986), entered the 24th
+        Knesset in 2021 for the Labor Party following Omer Bar-Lev's resignation
+        under the Norwegian Law. In the 2022 election for the 25th Knesset she
+        was ranked second on the Labor list, behind party leader Merav Michaeli.
+        In June 2024 she continued as a Knesset member for The Democrats, formed
+        by the merger of Labor and Meretz.
+    date: 2021-06-22
+    sources:
+      - url: https://en.wikipedia.org/wiki/Naama_Lazimi
+        title: Naama Lazimi
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q107264625
+        title: Naama Lazimi (Q107264625)
+        publisher: Wikidata
+  - kind: positive
+    category: achievement
+    title:
+      he: יושבת ראש הוועדה המיוחדת לצעירים בישראל
+      en: Chair of the Special Committee on Young Israelis
+    description:
+      he: במהלך כהונתה בכנסת ה-25 כיהנה נעמה לזימי כיושבת ראש הוועדה המיוחדת לצעירים
+        בישראל, ובמסגרתה עסקה בין היתר בחסמי השתלבות של צעירים.
+      en: During the 25th Knesset, Naama Lazimi served as chair of the Knesset's
+        Special Committee on Young Israelis, in which capacity she addressed
+        issues including integration barriers facing young people.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Naama_Lazimi
+        title: Naama Lazimi
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%A0%D7%A2%D7%9E%D7%94_%D7%9C%D7%96%D7%99%D7%9E%D7%99
+        title: נעמה לזימי
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: achievement
+    title:
+      he: רקע של שירות צבאי ועשייה ציבורית-חברתית
+      en: Military service and public-service background
+    description:
+      he: לזימי שירתה בצה"ל כקצינה במשרד הביטחון ולאחר מכן כקצינת מילואים בפיקוד
+        העורף, ולמדה מדע המדינה והיסטוריה של עם ישראל באוניברסיטת חיפה. לפני
+        כניסתה לכנסת כיהנה כחברת מועצת העיר חיפה וכמשנה ליושב ראש אגודת
+        הסטודנטים. כחברת כנסת קידמה מאבקים חברתיים בתחומי הדיור וזכויות העובדים.
+      en: Lazimi served in the IDF as an officer in the Ministry of Defense and later
+        as a reserve officer in the Home Front Command, and studied political
+        science and Jewish history at the University of Haifa. Before entering
+        the Knesset she served on the Haifa City Council and as vice-chair of
+        the student association. As a legislator she has promoted social
+        campaigns in the areas of housing and workers' rights.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Naama_Lazimi
+        title: Naama Lazimi
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%A0%D7%A2%D7%9E%D7%94_%D7%9C%D7%96%D7%99%D7%9E%D7%99
+        title: נעמה לזימי
+        publisher: Wikipedia (Hebrew)

@@ -1,0 +1,57 @@
+# PersonID 23635. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 23635
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: האישה הראשונה ילידת אתיופיה שנבחרה לכנסת
+      en: First Ethiopian-born woman elected to the Knesset
+    description:
+      he: פנינה תמנו-שטה נכנסה לכנסת ב-2013 מטעם מפלגת יש עתיד, והפכה לאישה הראשונה
+        ילידת אתיופיה שנבחרה לכנסת ישראל.
+      en: Pnina Tamano-Shata entered the Knesset in 2013 with the Yesh Atid party,
+        becoming the first Ethiopian-born woman elected to the Israeli Knesset.
+    date: 2013-01-22
+    sources:
+      - url: https://en.wikipedia.org/wiki/Pnina_Tamano-Shata
+        title: Pnina Tamano-Shata
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: השרה הראשונה ילידת אתיופיה בממשלת ישראל
+      en: First Ethiopian-born cabinet minister in Israel
+    description:
+      he: ב-2020 מונתה תמנו-שטה לשרת העלייה והקליטה והפכה לחברת הממשלה הראשונה ילידת
+        אתיופיה בתולדות ישראל. היא כיהנה בתפקיד עד שנת 2022.
+      en: In 2020 Tamano-Shata was appointed Minister of Aliyah and Integration
+        (Immigrant Absorption), becoming the first Ethiopian-born cabinet member
+        in Israel's history. She served in the role until 2022.
+    date: 2020-05-17
+    sources:
+      - url: https://en.wikipedia.org/wiki/Pnina_Tamano-Shata
+        title: Pnina Tamano-Shata
+        publisher: Wikipedia
+      - url: https://globalvoices.org/2020/06/08/israel-appoints-its-first-ethiopian-born-minister-pnina-tamano-shata/
+        title: Israel appoints its first Ethiopian-born minister, Pnina Tamano-Shata
+        publisher: Global Voices
+  - kind: positive
+    category: award
+    title:
+      he: כלת פרס מגן בגין למנהיגות
+      en: Recipient of the Magen Begin Prize for Leadership
+    description:
+      he: ביוני 2021 הוענק לתמנו-שטה פרס מגן בגין מטעם מרכז מורשת בגין, על פועלה למען
+        עלייה וקליטה ועל קידום צדק חברתי, שוויון ומאבק באפליה.
+      en: In June 2021 Tamano-Shata was awarded the Magen Begin Prize for Leadership
+        by the Begin Heritage Center, recognizing her work on aliyah and
+        integration and her efforts to promote social justice, equality and the
+        fight against discrimination.
+    date: 2021-06-09
+    sources:
+      - url: https://www.jpost.com/israel-news/aliyah-and-integration-minister-pnina-tamano-shata-awarded-magen-begin-prize-670296
+        title: Aliyah & Integration Minister Pnina Tamano-Shata awarded Magen Begin
+          Prize
+        publisher: The Jerusalem Post

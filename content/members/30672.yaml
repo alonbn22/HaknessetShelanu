@@ -1,0 +1,62 @@
+# PersonID 30672. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30672
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: ראש עיריית ביתר עילית (2001–2007)
+      en: Mayor of Beitar Illit (2001–2007)
+    description:
+      he: יצחק פינדרוס נבחר לראשות עיריית ביתר עילית בשנת 2001, כשהביס את ראש העירייה
+        המכהן יהודה גרליץ בהפרש של 162 קולות בלבד. הוא כיהן בתפקיד עד שהפסיד
+        בבחירות 2007.
+      en: Yitzhak Pindrus was elected mayor of Beitar Illit in 2001, defeating the
+        incumbent mayor Yehuda Gerlitz by a margin of just 162 votes. He served
+        until losing the 2007 mayoral election.
+    date: "2001"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Yitzhak_Pindrus
+        title: Yitzhak Pindrus
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: סגן ראש עיריית ירושלים וממלא מקום ראש העיר
+      en: Deputy Mayor of Jerusalem and acting mayor
+    description:
+      he: פינדרוס נבחר למועצת עיריית ירושלים בשנת 2008 וכיהן כסגן ראש העיר ומחזיק תיק
+        התברואה ושיפור פני העיר. בשנת 2016 שימש כממלא מקום ראש עיריית ירושלים.
+      en: Pindrus became a member of the Jerusalem City Council in 2008 and served as
+        deputy mayor with the portfolio for sanitation and city improvements. In
+        2016 he served as acting mayor of Jerusalem.
+    date: "2008"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Yitzhak_Pindrus
+        title: Yitzhak Pindrus
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר הכנסת מטעם יהדות התורה
+      en: Member of Knesset for United Torah Judaism
+    description:
+      he: פינדרוס נבחר לראשונה לכנסת בבחירות אפריל 2019, כשהוצב במקום השמיני ברשימת
+        יהדות התורה, וכיהן בכנסת במספר תקופות בשנים שלאחר מכן. בכנסת ה-25 מונה
+        ליו"ר הוועדה המיוחדת לפניות הציבור.
+      en: Pindrus was first elected to the Knesset in the April 2019 election, placed
+        eighth on the United Torah Judaism list, and served across several terms
+        in the years that followed. During the 25th Knesset he was appointed
+        chair of the Special Committee for Public Petitions.
+    date: "2019"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Yitzhak_Pindrus
+        title: Yitzhak Pindrus
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q7007279
+        title: Isaac Pindrus (Q7007279)
+        publisher: Wikidata
+      - url: https://main.knesset.gov.il/EN/News/PressReleases/Pages/press11123q.aspx
+        title: MK Pindrus appointed as chair of Special Committee for Public Petitions
+        publisher: Knesset (official)

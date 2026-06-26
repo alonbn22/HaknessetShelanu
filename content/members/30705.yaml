@@ -1,0 +1,66 @@
+# PersonID 30705. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30705
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חברת הכנסת מטעם הליכוד (2019–2020)
+      en: Member of Knesset for Likud (2019–2020)
+    description:
+      he: מיכל שיר נבחרה לכנסת ה-21 בבחירות אפריל 2019 ברשימת הליכוד, ונבחרה שוב לכנסת
+        ה-22 וה-23. לפני כניסתה לפוליטיקה עבדה לצד גדעון סער בתקופת כהונתו כיו"ר
+        הליכוד וכשר החינוך.
+      en: Michal Shir was elected to the 21st Knesset on the Likud list in the April
+        2019 election and was re-elected to the 22nd and 23rd Knessets. Before
+        entering politics she worked alongside Gideon Sa'ar during his time as
+        Likud chairman and Minister of Education.
+    date: 2019-04-09
+    sources:
+      - url: https://en.wikipedia.org/wiki/Michal_Shir
+        title: Michal Shir
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q63092488
+        title: Michelle Shir (Q63092488)
+        publisher: Wikidata
+  - kind: positive
+    category: achievement
+    title:
+      he: מעבר ל'תקווה חדשה' וחזרה לכנסת ה-24
+      en: Joined New Hope and returned to the 24th Knesset
+    description:
+      he: בדצמבר 2020 התפטרה שיר מהכנסת ומהליכוד כדי להצטרף למפלגתו החדשה של גדעון
+        סער, 'תקווה חדשה'. היא חזרה לכהן בכנסת ה-24 ביולי 2021 כמחליפה של סער
+        מכוח 'החוק הנורבגי'.
+      en: In December 2020 Shir resigned from the Knesset and from Likud to join
+        Gideon Sa'ar's new party, New Hope. She returned to serve in the 24th
+        Knesset in July 2021 as a replacement for Sa'ar under the so-called
+        Norwegian Law provision.
+    date: 2020-12-22
+    sources:
+      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/likud-mk-michal-shir-quits-knesset-to-run-with-gideon-saar-652903
+        title: Likud MK Michal Shir quits Knesset to run with Gideon Sa'ar
+        publisher: The Jerusalem Post
+      - url: https://en.wikipedia.org/wiki/Michal_Shir
+        title: Michal Shir
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: חברת הכנסת מטעם 'יש עתיד' בכנסת ה-25
+      en: Member of Knesset for Yesh Atid in the 25th Knesset
+    description:
+      he: ביולי 2022 עברה שיר מ'תקווה חדשה' למפלגת 'יש עתיד' בראשות יאיר לפיד. היא
+        מוקמה במקום ה-13 ברשימה לבחירות 2022 ונבחרה לכנסת ה-25, שבה היא מכהנת.
+      en: In July 2022 Shir moved from New Hope to Yair Lapid's Yesh Atid party. She
+        was placed 13th on the party's list for the 2022 election and was
+        elected to the 25th Knesset, where she serves.
+    date: 2022-07-31
+    sources:
+      - url: https://www.jpost.com/breaking-news/article-713551
+        title: MK Michal Shir leaves New Hope for Yesh Atid
+        publisher: The Jerusalem Post
+      - url: https://en.wikipedia.org/wiki/Michal_Shir
+        title: Michal Shir
+        publisher: Wikipedia

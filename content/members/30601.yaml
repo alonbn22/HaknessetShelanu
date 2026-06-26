@@ -1,0 +1,58 @@
+# PersonID 30601. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30601
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר הכנסת מטעם ש"ס
+      en: Member of Knesset for Shas
+    description:
+      he: ינון אזולאי החל לכהן כחבר הכנסת מטעם ש"ס ב-14 במרץ 2018, לאחר שאביו, השר דוד
+        אזולאי, התפטר מהכנסת. מאז הוא מכהן כחבר כנסת ומשמש כיושב ראש סיעת ש"ס.
+      en: Yinon Azulai began serving as a Member of Knesset for Shas on 14 March 2018,
+        after his father, Minister David Azulai, resigned his Knesset seat. He
+        has since served as an MK and as chairman of the Shas faction.
+    date: 2018-03-14
+    sources:
+      - url: https://en.wikipedia.org/wiki/Yinon_Azulai
+        title: Yinon Azulai
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%A0%D7%95%D7%9F_%D7%90%D7%96%D7%95%D7%9C%D7%90%D7%99
+        title: ינון אזולאי
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: volunteering
+    title:
+      he: חובש ויועץ בכיר לשר אריה דרעי
+      en: Paramedic and senior advisor to Minister Aryeh Deri
+    description:
+      he: לצד פעילותו הציבורית, אזולאי הוא חובש ושימש כראש סניף איחוד הצלה לכיש. בנוסף
+        שימש כיועץ בכיר לשר אריה דרעי בשנים 2015-2017.
+      en: Alongside his public activity, Azulai is a paramedic and previously headed
+        the United Hatzalah (Ichud Hatzala) Lachish branch. He also served as a
+        senior advisor to Minister Aryeh Deri from 2015 to 2017.
+    sources:
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%A0%D7%95%D7%9F_%D7%90%D7%96%D7%95%D7%9C%D7%90%D7%99
+        title: ינון אזולאי
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: achievement
+    title:
+      he: יושב ראש ועדת האתיקה של הכנסת
+      en: Chairman of the Knesset Ethics Committee
+    description:
+      he: בשנת 2023 מונה ינון אזולאי ליושב ראש ועדת האתיקה של הכנסת, הוועדה האחראית על
+        אכיפת כללי האתיקה החלים על חברי הכנסת.
+      en: In 2023, Yinon Azulai was appointed chairman of the Knesset Ethics
+        Committee, the body responsible for enforcing the ethics rules that
+        apply to members of the Knesset.
+    date: "2023"
+    sources:
+      - url: https://www.calcalist.co.il/local_news/article/r1qzw2psi
+        title: ועדת האתיקה בכנסת תוקם מחדש - ח"כ ינון אזולאי ישמש כיו"ר
+        publisher: Calcalist
+      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-754186
+        title: Knesset Ethics Committee probes Lapid's trip to Italy
+        publisher: The Jerusalem Post

@@ -1,0 +1,70 @@
+# PersonID 30470. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30470
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר הכנסת מטעם ש"ס
+      en: Member of Knesset for Shas
+    description:
+      he: מיכאל מלכיאלי מכהן כחבר הכנסת מטעם מפלגת ש"ס החרדית-הספרדית. הוא נכנס לכנסת
+        לראשונה ב-2 בנובמבר 2016, כמחליפו של יו"ר ש"ס אריה דרעי שהתפטר מהכנסת,
+        ומאז כיהן ברציפות בכנסות ה-20 עד ה-25.
+      en: Michael Malchieli serves as a member of the Knesset for the Sephardi
+        ultra-Orthodox Shas party. He first entered the Knesset on 2 November
+        2016 as a replacement for Shas leader Aryeh Deri, who had resigned from
+        the Knesset, and has since served continuously from the 20th through the
+        25th Knesset.
+    date: 2016-11-02
+    sources:
+      - url: https://en.wikipedia.org/wiki/Michael_Malchieli
+        title: Michael Malchieli
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q27670547
+        title: Michael Malchieli (Q27670547)
+        publisher: Wikidata
+  - kind: positive
+    category: achievement
+    title:
+      he: שר הדתות בממשלה ה-37
+      en: Minister of Religious Affairs in the 37th government
+    description:
+      he: מלכיאלי מונה לשר הדתות (שירותי דת) בממשלה ה-37 בראשות בנימין נתניהו בדצמבר
+        2022, וכיהן בתפקיד עד 2025. במהלך כהונתו עסק משרדו בין היתר בהסדרת מינוי
+        רבני ערים.
+      en: Malchieli was appointed Minister of Religious Affairs (Religious Services)
+        in Benjamin Netanyahu's 37th government in December 2022, serving in the
+        role until 2025. During his tenure his ministry addressed matters such
+        as the appointment of city rabbis.
+    date: 2022-12-29
+    sources:
+      - url: https://en.wikipedia.org/wiki/Michael_Malchieli
+        title: Michael Malchieli
+        publisher: Wikipedia
+      - url: https://www.timesofisrael.com/religious-services-minister-backs-down-from-bid-to-control-city-rabbi-appointments/
+        title: Religious Services minister backs down from bid to control appointments
+          of city rabbis
+        publisher: The Times of Israel
+  - kind: positive
+    category: achievement
+    title:
+      he: שר הפנים בפועל וחבר מועצת עיריית ירושלים
+      en: Acting Minister of Interior and Jerusalem city councilman
+    description:
+      he: מלכיאלי כיהן כשר הפנים בפועל בין ינואר לאפריל 2023, בעקבות הדחתו של אריה
+        דרעי. קודם לכניסתו לכנסת נבחר בשנת 2013 למועצת עיריית ירושלים, שם החזיק
+        בתיק הספורט החרדי.
+      en: Malchieli served as acting Minister of Interior between January and April
+        2023, following the dismissal of Aryeh Deri. Before entering the
+        Knesset, he was elected to the Jerusalem City Council in 2013, where he
+        held the ultra-Orthodox sports portfolio.
+    date: 2023-01-24
+    sources:
+      - url: https://en.wikipedia.org/wiki/Michael_Malchieli
+        title: Michael Malchieli
+        publisher: Wikipedia
+      - url: https://www.haaretz.com/israel-news/2023-01-24/ty-article/.premium/shas-lawmakers-to-serve-as-acting-health-and-interior-ministers/00000185-e30d-d922-a1d5-f73d06070000
+        title: Shas Lawmakers to Serve as Acting Health and Interior Ministers
+        publisher: Haaretz

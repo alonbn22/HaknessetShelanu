@@ -1,0 +1,59 @@
+# PersonID 23641. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 23641
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: ראש עיריית בני ברק (2008–2013)
+      en: Mayor of Bnei Brak (2008–2013)
+    description:
+      he: יעקב אשר כיהן כראש העיר ה-13 של בני ברק החל משנת 2008, לפני כניסתו לכנסת.
+        הוא הוכרז כראש העיר ללא קיום בחירות, בהיותו מועמד הרשימה היחידה שהתמודדה
+        בעיר.
+      en: Ya'akov Asher served as the 13th mayor of Bnei Brak, taking office in 2008
+        before entering the Knesset. He was declared mayor without elections
+        being held, as he was the candidate of the sole list contesting the
+        city.
+    date: "2008"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Ya'akov_Asher
+        title: Ya'akov Asher
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר הכנסת מטעם יהדות התורה
+      en: Member of Knesset for United Torah Judaism
+    description:
+      he: אשר מכהן כחבר הכנסת מטעם יהדות התורה (סיעת דגל התורה) במספר כהונות החל משנת
+        2013, לרבות בכנסת ה-25.
+      en: Asher has served as a member of the Knesset for the United Torah Judaism
+        alliance (Degel HaTorah faction) across several terms beginning in 2013,
+        including the 25th Knesset.
+    date: "2013"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Ya'akov_Asher
+        title: Ya'akov Asher
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q2899261
+        title: Jacob Asher (Q2899261)
+        publisher: Wikidata
+  - kind: positive
+    category: achievement
+    title:
+      he: סגן יושב ראש הכנסת ויושב ראש ועדת הפנים והגנת הסביבה
+      en: Deputy Speaker of the Knesset and Chair of the Interior and Environment
+        Committee
+    description:
+      he: ביום 28 בפברואר 2022 מונה אשר לסגן יושב ראש הכנסת. בכנסת ה-25 הוא משמש כיושב
+        ראש ועדת הפנים והגנת הסביבה.
+      en: On 28 February 2022, Asher was appointed Deputy Speaker of the Knesset. In
+        the 25th Knesset he serves as chair of the Interior and Environment
+        Committee.
+    date: 2022-02-28
+    sources:
+      - url: https://en.wikipedia.org/wiki/Ya'akov_Asher
+        title: Ya'akov Asher
+        publisher: Wikipedia

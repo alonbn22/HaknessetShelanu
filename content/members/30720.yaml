@@ -1,0 +1,91 @@
+# PersonID 30720. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30720
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: מחברי הכנסת הגאים הראשונים בישראל
+      en: Among Israel's openly gay Knesset members
+    description:
+      he: יוראי להב-הרצנו, חבר כנסת מטעם יש עתיד, הצהיר בגלוי על היותו גאה ועם השבעתו
+        ביוני 2020 הפך לחבר הכנסת הגאי השישי בתולדות הכנסת בת 120 המושבים. הוא
+        הכריז על מחויבותו לקדם שוויון זכויות לקהילה הגאה.
+      en: Yorai Lahav-Hertzanu, a Yesh Atid lawmaker, is openly gay. When he was sworn
+        in in June 2020 he became the sixth openly gay member in the history of
+        the 120-seat Knesset, publicly affirming his identity and pledging to
+        advance equal rights for the LGBTQ+ community.
+    date: 2020-06-19
+    sources:
+      - url: https://www.ynetnews.com/article/H1R35bZ08
+        title: "'I'm gay and I'm proud': Israeli MK pledges fight for equality"
+        publisher: Ynetnews
+      - url: https://en.wikipedia.org/wiki/Yorai_Lahav-Hertzano
+        title: Yorai Lahav-Hertzanu
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: יו"ר השדולה הגאה וקידום הכרה בבני זוג של חללי צה"ל
+      en: LGBTQ+ caucus chair advancing recognition of same-sex partners of fallen
+        soldiers
+    description:
+      he: כיו"ר השדולה הגאה בכנסת, להב-הרצנו פעל לקידום חקיקה שמכירה רשמית בבני זוג
+        מאותו מין של חיילי צה"ל שנפלו, ומעניקה להם מעמד של בן/בת זוג. החקיקה
+        קודמה בעקבות נפילתו של סרן סגי גולן, שנהרג בקיבוץ בארי באוקטובר 2023.
+      en: As chair of the Knesset's LGBTQ+ caucus, Lahav-Hertzanu helped advance
+        legislation formally recognizing same-sex partners of fallen IDF
+        soldiers, granting them spousal status. The measure followed the death
+        of Capt. Sagi Golan, killed at Kibbutz Be'eri in October 2023.
+    sources:
+      - url: https://www.i24news.tv/en/news/israel/society/1698845508-knesset-approves-formal-recognition-of-same-sex-partners-of-idf-fallen-soldiers
+        title: Knesset approves formal recognition of same-sex partners of IDF fallen
+          soldiers
+        publisher: i24NEWS
+      - url: https://en.wikipedia.org/wiki/Yorai_Lahav-Hertzano
+        title: Yorai Lahav-Hertzanu
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: מתנדב בצה"ל ובוגר תארים במשפטים והיסטוריה
+      en: IDF volunteer and graduate in law and history
+    description:
+      he: לאחר שקיבל פטור מטעמי בריאות, התנדב להב-הרצנו לשירות בצה"ל ושירת כשש שנים.
+        הוא בעל תואר ראשון משולב במשפטים ובהיסטוריה של המזרח התיכון ואפריקה
+        מאוניברסיטת תל אביב, ותואר שני למנהלים במשפט ציבורי מאוניברסיטת תל אביב
+        ונורת'ווסטרן.
+      en: After receiving a medical exemption, Lahav-Hertzanu volunteered for the IDF
+        and served about six years. He holds a combined LLB and BA in Middle
+        Eastern and African history from Tel Aviv University and an executive
+        master's of law in public law from Tel Aviv University and Northwestern
+        University.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Yorai_Lahav-Hertzano
+        title: Yorai Lahav-Hertzanu
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A8%D7%90%D7%99_%D7%9C%D7%94%D7%91-%D7%94%D7%A8%D7%A6%D7%A0%D7%95
+        title: יוראי להב-הרצנו
+        publisher: Wikipedia (Hebrew)
+  - kind: negative
+    category: controversy
+    status: settled
+    title:
+      he: מגבלות מטעם ועדת האתיקה של הכנסת (2023)
+      en: Knesset Ethics Committee sanction (2023)
+    description:
+      he: במרץ 2023 הטילה ועדת האתיקה של הכנסת מגבלות על עבודתו הפרלמנטרית של
+        להב-הרצנו ושל חבר הכנסת ולדימיר בליאק מיש עתיד, בעקבות הפרעה לדיון
+        בוועדה בנושא הרפורמה במערכת המשפט, שבמהלכה עלו על שולחנות. מדובר בהליך
+        אתי פנים-פרלמנטרי ולא בהליך פלילי.
+      en: In March 2023 the Knesset Ethics Committee imposed restrictions on the
+        parliamentary work of Lahav-Hertzanu and fellow Yesh Atid MK Vladimir
+        Beliak after they disrupted a committee session on the judicial overhaul
+        by climbing onto tables. This was an internal parliamentary ethics
+        matter, not a criminal proceeding.
+    date: 2023-03-06
+    sources:
+      - url: https://www.haaretz.com/israel-news/2023-03-06/ty-article/.premium/knesset-ethics-committee-imposes-sanctions-on-three-lawmakers/00000186-b623-d9eb-abce-beef7f2c0000
+        title: Knesset Ethics Committee Imposes Sanctions on Three Lawmakers
+        publisher: Haaretz

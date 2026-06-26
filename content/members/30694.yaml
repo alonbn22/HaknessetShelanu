@@ -1,0 +1,80 @@
+# PersonID 30694. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30694
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: שר החקלאות ופיתוח הכפר (2020–2021)
+      en: Minister of Agriculture and Rural Development (2020–2021)
+    description:
+      he: אלון שוסטר כיהן כשר החקלאות ופיתוח הכפר של ישראל בשנים 2020–2021, לאחר שמונה
+        לתפקיד במאי 2020 מטעם מפלגת כחול לבן.
+      en: Alon Schuster served as Israel's Minister of Agriculture and Rural
+        Development from 2020 to 2021, having been appointed to the post in May
+        2020 as a member of the Blue and White party.
+    date: 2020-05
+    sources:
+      - url: https://en.wikipedia.org/wiki/Alon_Schuster
+        title: Alon Schuster
+        publisher: Wikipedia
+      - url: https://www.jns.org/feature/israeli-elections-2026-meet-the-parliament-mk-alon-schuster
+        title: "Israeli elections 2026: Meet the parliament—MK Alon Schuster"
+        publisher: JNS
+  - kind: positive
+    category: achievement
+    title:
+      he: סגן שר הביטחון (2021–2022)
+      en: Deputy Minister of Defense (2021–2022)
+    description:
+      he: שוסטר כיהן כסגן שר הביטחון של ישראל בין השנים 2021 ל-2022.
+      en: Schuster served as Israel's Deputy Minister of Defense between 2021 and
+        2022.
+    date: 2021-06-28
+    sources:
+      - url: https://en.wikipedia.org/wiki/Alon_Schuster
+        title: Alon Schuster
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q6965078
+        title: Alon Schuster (Q6965078)
+        publisher: Wikidata
+  - kind: positive
+    category: achievement
+    title:
+      he: ראש המועצה האזורית שער הנגב (2002–2018)
+      en: Head of the Sha'ar HaNegev Regional Council (2002–2018)
+    description:
+      he: טרם כניסתו לפוליטיקה הארצית, שימש שוסטר כראש המועצה האזורית שער הנגב במשך
+        כ-16 שנה, בין 2002 ל-2018.
+      en: Before entering national politics, Schuster headed the Sha'ar HaNegev
+        Regional Council for some 16 years, from 2002 to 2018.
+    date: "2002"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Alon_Schuster
+        title: Alon Schuster
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%95%D7%9F_%D7%A9%D7%95%D7%A1%D7%98%D7%A8
+        title: אלון שוסטר
+        publisher: Hebrew Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: שירות צבאי ופציעה בקרב ונכות צה"ל
+      en: Military service and combat injury (disabled IDF veteran)
+    description:
+      he: שוסטר שירת בצה"ל מ-1976 והשתחרר ממילואים בדרגת סגן-אלוף. הוא איבד את הראייה
+        באחת מעיניו לאחר שנפצע בהכנות למלחמת לבנון הראשונה ב-1981 ומוכר כנכה
+        צה"ל.
+      en: Schuster served in the IDF from 1976 and was discharged from reserve duty
+        with the rank of lieutenant colonel. He lost the sight in one eye after
+        being wounded during preparations for the First Lebanon War in 1981 and
+        is recognized as a disabled IDF veteran.
+    date: "1981"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Alon_Schuster
+        title: Alon Schuster
+        publisher: Wikipedia
+      - url: https://www.jns.org/feature/israeli-elections-2026-meet-the-parliament-mk-alon-schuster
+        title: "Israeli elections 2026: Meet the parliament—MK Alon Schuster"
+        publisher: JNS

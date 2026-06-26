@@ -1,0 +1,67 @@
+# PersonID 30749. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30749
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: ראש עיריית בית שמש (2008–2018)
+      en: Mayor of Beit Shemesh (2008–2018)
+    description:
+      he: משה אבוטבול כיהן כראש עיריית בית שמש מ-11 בנובמבר 2008 ועד 20 בנובמבר 2018,
+        שתי כהונות. הוא נבחר לראשונה ב-2008 כנציג ש"ס ונבחר מחדש ב-2013. לאחר
+        ערעור על תוצאות הבחירות הורה בית המשפט על בחירות חוזרות, שנערכו ב-11
+        במרץ 2014 ובהן זכה שוב.
+      en: Moshe Abutbul served as mayor of Beit Shemesh from 11 November 2008 to 20
+        November 2018, across two terms. First elected in 2008 as the Shas
+        candidate, he was re-elected in 2013; after a challenge to the result,
+        the court ordered a re-run, held on 11 March 2014, which he again won.
+    date: 2008-11-11
+    sources:
+      - url: https://en.wikipedia.org/wiki/Moshe_Abutbul_(politician)
+        title: Moshe Abutbul (politician)
+        publisher: English Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%90%D7%91%D7%95%D7%98%D7%91%D7%95%D7%9C
+        title: משה אבוטבול
+        publisher: Hebrew Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר הכנסת מטעם ש"ס מאז 2019
+      en: Member of Knesset for Shas since 2019
+    description:
+      he: אבוטבול נכנס לכנסת ב-3 באוקטובר 2019 כנציג מפלגת ש"ס, וכיהן בכנסות ה-22 עד
+        ה-25. הוא היה יושב ראש השדולה לשמירת השבת בכנסת.
+      en: Abutbul entered the Knesset on 3 October 2019 as a member of the Shas party,
+        serving across the 22nd through 25th Knessets. He chaired the Knesset
+        lobby for the preservation of the Sabbath.
+    date: 2019-10-03
+    sources:
+      - url: https://en.wikipedia.org/wiki/Moshe_Abutbul_(politician)
+        title: Moshe Abutbul (politician)
+        publisher: English Wikipedia
+      - url: https://www.wikidata.org/wiki/Q7054034
+        title: Moshe Abutbul (Q7054034)
+        publisher: Wikidata
+  - kind: positive
+    category: achievement
+    title:
+      he: סגן שר החקלאות וביטחון המזון (2022–2025)
+      en: Deputy Minister of Agriculture and Food Security (2022–2025)
+    description:
+      he: עם הקמת הממשלה ה-37 בסוף דצמבר 2022 מונה אבוטבול לסגן שר החקלאות וביטחון
+        המזון, ובין השאר קיבל אחריות לנושא צער בעלי חיים. ביולי 2025 התפטר
+        מתפקידו.
+      en: With the formation of Israel's 37th government in late December 2022,
+        Abutbul was appointed Deputy Minister of Agriculture and Food Security,
+        and was given responsibility for animal welfare matters among other
+        areas. He resigned from the post in July 2025.
+    date: 2022-12-29
+    sources:
+      - url: https://en.wikipedia.org/wiki/Moshe_Abutbul_(politician)
+        title: Moshe Abutbul (politician)
+        publisher: English Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%90%D7%91%D7%95%D7%98%D7%91%D7%95%D7%9C
+        title: משה אבוטבול
+        publisher: Hebrew Wikipedia

@@ -1,0 +1,71 @@
+# PersonID 30702. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30702
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חברת הכנסת מטעם הליכוד מאז 2019
+      en: Member of the Knesset for Likud since 2019
+    description:
+      he: אתי (חוה) עטייה נבחרה לכנסת מטעם מפלגת הליכוד ומכהנת כחברת כנסת מאז 2019,
+        לאורך מספר כנסות. היא שבה לכהן בכנסת ה-25 בינואר 2023 מכוח החוק הנורבגי,
+        לאחר שעידית סילמן התפטרה ממושבה בכנסת.
+      en: Eti (Hava) Atia was elected to the Knesset on the Likud list and has served
+        as a Member of the Knesset since 2019, across several Knessets. She
+        returned to the 25th Knesset in January 2023 under the Norwegian Law
+        provision, after Idit Silman resigned her Knesset seat.
+    date: 2019-04-30
+    sources:
+      - url: https://en.wikipedia.org/wiki/Eti_Atiya
+        title: Eti Atiya
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%90%D7%AA%D7%99_%D7%A2%D7%98%D7%99%D7%99%D7%94
+        title: אתי עטייה
+        publisher: Wikipedia (Hebrew)
+      - url: https://m.knesset.gov.il/en/mk/pages/MKPersonalDetails.aspx?mkid=992
+        title: Knesset Member Etty Hava Atia - Likud
+        publisher: The Knesset
+  - kind: positive
+    category: achievement
+    title:
+      he: יושבת ראש הוועדה המיוחדת לעובדים זרים
+      en: Chair of the Special Committee on Foreign Workers
+    description:
+      he: עטייה מכהנת כיושבת ראש הוועדה המיוחדת של הכנסת לעובדים זרים. בתפקידה זה היא
+        מובילה דיונים בסוגיות הנוגעות להעסקת עובדים זרים בישראל.
+      en: Atia serves as chair of the Knesset's Special Committee on Foreign Workers.
+        In this role she leads deliberations on issues relating to the
+        employment of foreign workers in Israel.
+    date: 2025-02-01
+    sources:
+      - url: https://en.wikipedia.org/wiki/Eti_Atiya
+        title: Eti Atiya
+        publisher: Wikipedia
+      - url: https://www.jns.org/news/israel-news/israel-faces-surge-in-unauthorized-foreign-workers-knesset-told
+        title: Israel faces surge in unauthorized foreign workers, Knesset told
+        publisher: JNS
+  - kind: positive
+    category: achievement
+    title:
+      he: רקע מקצועי בשירות הציבורי ובתחום הרווחה
+      en: Professional background in public service and welfare
+    description:
+      he: טרם כניסתה לפוליטיקה צברה עטייה ניסיון בשירות הציבורי ובתחום הרווחה. היא
+        שימשה כראש לשכת מזכיר הארגון הארצי של עובדי התעשייה האווירית, וכן כראש
+        לשכת שר העבודה, הרווחה והשירותים החברתיים בשנים 2015-2018, שם עסקה
+        בסוגיות רווחה, ביטחון סוציאלי ושירותי סיעוד.
+      en: Before entering politics, Atia accumulated public-service and welfare
+        experience. She served as chief of staff to the secretary of the
+        national union of Israel Aerospace Industries workers, and as chief of
+        staff to the Minister of Labor, Social Affairs and Social Services from
+        2015 to 2018, where she handled welfare, social security and
+        nursing-care matters.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Eti_Atiya
+        title: Eti Atiya
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%90%D7%AA%D7%99_%D7%A2%D7%98%D7%99%D7%99%D7%94
+        title: אתי עטייה
+        publisher: Wikipedia (Hebrew)

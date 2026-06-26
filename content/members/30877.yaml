@@ -1,0 +1,60 @@
+# PersonID 30877. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30877
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר הכנסת ה-25 מטעם הליכוד
+      en: Member of the 25th Knesset for Likud
+    description:
+      he: משה (מושיקו) פסל נכנס לכנסת ב-12 במרץ 2023 כחבר כנסת מטעם הליכוד, לאחר שדורג
+        במקום ה-40 ברשימת המפלגה, במקומה של השרה גלית דיסטל אטבריאן שהתפטרה
+        מהכנסת מכוח 'החוק הנורווגי'.
+      en: Moshe (Moshiko) Passal entered the Knesset on 12 March 2023 as a Likud
+        member, after placing 40th on the party list, replacing Minister Galit
+        Distel-Atbaryan, who resigned from the Knesset under the Norwegian Law.
+    date: 2023-03-12
+    sources:
+      - url: https://en.wikipedia.org/wiki/Moshe_Passal
+        title: Moshe Passal
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%A4%D7%A1%D7%9C
+        title: משה פסל
+        publisher: Hebrew Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: שירות בצה"ל בחיל התותחנים
+      en: Military service in the IDF Artillery Corps
+    description:
+      he: פסל שירת בצבא ההגנה לישראל בחיל התותחנים, ובהמשך במדור התקציבים של זרוע
+        היבשה.
+      en: Passal served in the Israel Defense Forces' Artillery Corps and later in the
+        Budget Division of the IDF Ground Forces.
+    sources:
+      - url: https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%A4%D7%A1%D7%9C
+        title: משה פסל
+        publisher: Hebrew Wikipedia
+      - url: https://www.jns.org/feature/israeli-elections-2026-meet-the-parliament-mk-moshe-passal
+        title: "Israeli elections 2026: Meet the parliament—MK Moshe Passal"
+        publisher: JNS
+  - kind: positive
+    category: achievement
+    title:
+      he: פעילות מקצועית בתקשורת לפני הכניסה לכנסת
+      en: Media career prior to entering the Knesset
+    description:
+      he: טרם כניסתו לכנסת עבד פסל כשדרן ברדיו וכפרשן בתקשורת. בשנת 2018 השתתף בעונה
+        התשיעית של תוכנית המציאות 'האח הגדול'.
+      en: Before entering the Knesset, Passal worked as a radio broadcaster and as a
+        media commentator. In 2018 he took part in the ninth season of the
+        reality television program 'Big Brother'.
+    sources:
+      - url: https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%A4%D7%A1%D7%9C
+        title: משה פסל
+        publisher: Hebrew Wikipedia
+      - url: https://en.wikipedia.org/wiki/Moshe_Passal
+        title: Moshe Passal
+        publisher: Wikipedia

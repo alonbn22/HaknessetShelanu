@@ -1,0 +1,59 @@
+# PersonID 30780. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30780
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר הכנסת מטעם יש עתיד
+      en: Member of Knesset for Yesh Atid
+    description:
+      he: רון כץ, עורך דין יליד 1985 מעפולה, נבחר לכנסת ה-24 בשנת 2021 מטעם מפלגת יש
+        עתיד ונבחר מחדש לכנסת ה-25. במהלך כהונתו קידם הצעות חוק בתחומים שונים,
+        ובהם הגנה על בני נוער עובדים ורגולציה על מעונות יום.
+      en: Ron Katz, a lawyer born in 1985 in Afula, was elected to the 24th Knesset in
+        2021 on the Yesh Atid list and re-elected to the 25th Knesset. During
+        his term he advanced bills in several areas, including protection of
+        working youth and regulation of daycare centers.
+    date: 2021-04-06
+    sources:
+      - url: https://en.wikipedia.org/wiki/Ron_Katz
+        title: Ron Katz
+        publisher: Wikipedia (English)
+      - url: https://he.wikipedia.org/wiki/%D7%A8%D7%95%D7%9F_%D7%9B%D7%A5
+        title: רון כץ
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: achievement
+    title:
+      he: סגן ראש עיריית פתח תקווה וראש מינהל החינוך
+      en: Deputy Mayor of Petah Tikva and head of the education administration
+    description:
+      he: לפני כניסתו לכנסת כיהן רון כץ כסגן ראש עיריית פתח תקווה וכראש מינהל החינוך
+        העירוני.
+      en: Before entering the Knesset, Ron Katz served as deputy mayor of Petah Tikva
+        and head of the municipal education administration.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Ron_Katz
+        title: Ron Katz
+        publisher: Wikipedia (English)
+      - url: https://he.wikipedia.org/wiki/%D7%A8%D7%95%D7%9F_%D7%9B%D7%A5
+        title: רון כץ
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: achievement
+    title:
+      he: שירות צבאי בפרקליטות הצבאית בדרגת סרן
+      en: Military service in the Military Advocate General's Corps, rank of captain
+    description:
+      he: כץ שירת בפרקליטות הצבאית של צה"ל והשתחרר בדרגת סרן. במקצועו הוא עורך דין.
+      en: Katz served in the IDF Military Advocate General's Corps and was discharged
+        with the rank of captain. By profession he is a lawyer.
+    sources:
+      - url: https://he.wikipedia.org/wiki/%D7%A8%D7%95%D7%9F_%D7%9B%D7%A5
+        title: רון כץ
+        publisher: Wikipedia (Hebrew)
+      - url: https://en.wikipedia.org/wiki/Ron_Katz
+        title: Ron Katz
+        publisher: Wikipedia (English)

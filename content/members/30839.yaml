@@ -1,0 +1,96 @@
+# PersonID 30839. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30839
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר הכנסת מטעם הליכוד
+      en: Member of Knesset for Likud
+    description:
+      he: דן אילוז מכהן כחבר הכנסת מטעם סיעת הליכוד החל מ-6 בינואר 2023, אז נכנס לכנסת
+        ה-25 במסגרת 'החוק הנורבגי' במקומו של מיקי זוהר.
+      en: Dan Illouz has served as a Member of Knesset for the Likud party since 6
+        January 2023, when he entered the 25th Knesset under the 'Norwegian Law'
+        replacing Miki Zohar.
+    date: 2023-01-06
+    sources:
+      - url: https://en.wikipedia.org/wiki/Dan_Illouz
+        title: Dan Illouz
+        publisher: Wikipedia (English)
+      - url: https://he.wikipedia.org/wiki/%D7%93%D7%9F_%D7%90%D7%99%D7%9C%D7%95%D7%96
+        title: דן אילוז
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: volunteering
+    title:
+      he: חבר מועצת עיריית ירושלים ויו"ר ועדת הביקורת
+      en: Jerusalem City Council member and head of the audit committee
+    description:
+      he: לפני כניסתו לכנסת כיהן אילוז כחבר מועצת עיריית ירושלים מטעם רשימת 'התעוררות
+        בירושלים', נבחר בבחירות 2018 ועמד בראש ועדת הביקורת המקומית, עד התפטרותו
+        ב-2021 במסגרת הסכם רוטציה.
+      en: Before entering the Knesset, Illouz served on the Jerusalem City Council on
+        the 'Hitorerut (Awakening) in Jerusalem' slate, elected in the 2018
+        municipal elections, and headed the city's local audit committee until
+        resigning in 2021 under a rotation agreement.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Dan_Illouz
+        title: Dan Illouz
+        publisher: Wikipedia (English)
+      - url: https://he.wikipedia.org/wiki/%D7%93%D7%9F_%D7%90%D7%99%D7%9C%D7%95%D7%96
+        title: דן אילוז
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: achievement
+    title:
+      he: עולה מקנדה, עורך דין ובוגר מקגיל והאוניברסיטה העברית
+      en: Canadian-born oleh, lawyer and graduate of McGill and Hebrew University
+    description:
+      he: אילוז נולד במונטריאול שבקנדה בשנת 1986 ועלה לישראל בשנת 2009. הוא בעל תואר
+        במשפטים מאוניברסיטת מקגיל ותואר שני במדיניות ציבורית מהאוניברסיטה העברית
+        בירושלים, והוסמך כעורך דין.
+      en: Illouz was born in Montreal, Canada, in 1986 and immigrated to Israel in
+        2009. He holds a law degree from McGill University and a master's degree
+        in public policy from the Hebrew University of Jerusalem, and is a
+        licensed attorney.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Dan_Illouz
+        title: Dan Illouz
+        publisher: Wikipedia (English)
+      - url: https://he.wikipedia.org/wiki/%D7%93%D7%9F_%D7%90%D7%99%D7%9C%D7%95%D7%96
+        title: דן אילוז
+        publisher: Wikipedia (Hebrew)
+  - kind: negative
+    category: controversy
+    status: settled
+    title:
+      he: הוחלף בשתי ועדות כנסת בעקבות הפרת משמעת קואליציונית
+      en: Replaced on two Knesset committees following a breach of coalition
+        discipline
+    description:
+      he: בנובמבר 2024 הודיע יו"ר הקואליציה אופיר כץ כי אילוז יוחלף בוועדת הכלכלה
+        ובוועדת החוץ והביטחון ולא יוכל להגיש הצעות חוק פרטיות למשך כחודש וחצי,
+        בעקבות התבטאויותיו הפומביות נגד חקיקה הנוגעת לפטור מגיוס לחרדים והפרת
+        המשמעת הקואליציונית. מדובר בסנקציה מפלגתית-קואליציונית פנימית, ולא בהליך
+        משפטי.
+      en: In November 2024 coalition chairman Ofir Katz announced that Illouz would be
+        replaced on the Knesset's Economic Affairs Committee and Foreign Affairs
+        and Defense Committee and barred from submitting private member's bills
+        for about a month and a half, following his public statements against
+        legislation related to military-service exemptions for Haredim and a
+        breach of coalition discipline. This was an internal party/coalition
+        sanction, not a legal proceeding.
+    date: 2024-11-06
+    sources:
+      - url: https://www.timesofisrael.com/likud-clamps-down-on-dissent-over-haredi-draft-bills-after-gallant-pushed-out/
+        title: Likud clamps down on dissent over Haredi draft bills after Gallant pushed
+          out
+        publisher: The Times of Israel
+      - url: https://www.themarker.com/news/2024-11-06/ty-article/00000193-01fb-de12-adbb-83ff447d0000
+        title: נתניהו סילק משתי ועדות את ח"כ דן אילוז שהתנגד לחוקי ההשתמטות
+        publisher: TheMarker
+      - url: https://en.wikipedia.org/wiki/Dan_Illouz
+        title: Dan Illouz
+        publisher: Wikipedia (English)

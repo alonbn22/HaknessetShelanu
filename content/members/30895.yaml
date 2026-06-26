@@ -1,0 +1,71 @@
+# PersonID 30895. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30895
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חברת הכנסת ה-25 מטעם יש עתיד
+      en: Member of the 25th Knesset for Yesh Atid
+    description:
+      he: עדי עזוז, עורכת דין ופעילה חברתית, נכנסה לכנסת ה-25 ב-13 באוגוסט 2025 מטעם
+        מפלגת יש עתיד, במקומו של חבר הכנסת עידן רול שהתפטר.
+      en: Adi Azuz, a lawyer and social activist, entered the 25th Knesset on 13
+        August 2025 as a member of the Yesh Atid party, replacing MK Idan Roll,
+        who had resigned.
+    date: 2025-08-13
+    sources:
+      - url: https://en.wikipedia.org/wiki/Adi_Azuz
+        title: Adi Azuz
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q135686494
+        title: Adi Azuz (Q135686494)
+        publisher: Wikidata
+      - url: https://he.wikipedia.org/wiki/%D7%A2%D7%93%D7%99_%D7%A2%D7%96%D7%95%D7%96
+        title: עדי עזוז
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: volunteering
+    title:
+      he: מייסדת תנועת "צדק צדק רודפות" לקידום ענישה הולמת בעבירות מין
+      en: Founder of the "Tzedek Tzedek Rodfot" movement promoting appropriate
+        penalties for sex offenses
+    description:
+      he: עזוז ייסדה את תנועת "צדק צדק רודפות", המקדמת ענישה הולמת לעברייני מין,
+        בעקבות פסיקה מקלה בפרשת תקיפה מינית. היא פעילה חברתית הידועה בעיסוקה
+        בזכויות נשים.
+      en: Azuz founded the "Tzedek Tzedek Rodfot" advocacy movement, which promotes
+        appropriate penalties for sexual offenders, following a lenient ruling
+        in a sexual-assault case. She is a social activist known for her work on
+        women's rights.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Adi_Azuz
+        title: Adi Azuz
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%A2%D7%93%D7%99_%D7%A2%D7%96%D7%95%D7%96
+        title: עדי עזוז
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: achievement
+    title:
+      he: מנכ"לית "החצר הנשית" ויועצת לראש הממשלה בתחום מוגבלויות
+      en: CEO of "The Women's Courtyard" and adviser to the Prime Minister on
+        disabilities
+    description:
+      he: עזוז כיהנה כמנכ"לית עמותת "החצר הנשית" לנערות וצעירות במצוקה (החל מ-2021),
+        ובעבר ניהלה את אגף קידום הזכויות בעמותת אלו"ט (לילדים ובוגרים עם
+        אוטיזם). לאחר שיאיר לפיד נעשה לראש הממשלה ב-2022, מונתה ליועצת בתחום
+        אנשים עם מוגבלות.
+      en: Azuz served as CEO of "The Women's Courtyard," a nonprofit serving young
+        women in distress (from 2021), and previously led the rights-advancement
+        department at ALUT (the national association for children and adults
+        with autism). After Yair Lapid became Prime Minister in 2022, she was
+        appointed an adviser on people with disabilities.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Adi_Azuz
+        title: Adi Azuz
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%A2%D7%93%D7%99_%D7%A2%D7%96%D7%95%D7%96
+        title: עדי עזוז
+        publisher: Wikipedia (Hebrew)

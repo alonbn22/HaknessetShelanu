@@ -1,0 +1,60 @@
+# PersonID 30809. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30809
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: סופרת ומועמדת לפרס ספיר
+      en: Author and Sapir Prize nominee
+    description:
+      he: לפני כניסתה לפוליטיקה הייתה גלית דיסטל אטבריאן סופרת. ספרה השני, 'טווס
+        במדרגות' (2014), היה מועמד לפרס ספיר לשנת 2015.
+      en: Before entering politics, Galit Distel Atbaryan was a novelist. Her second
+        novel, 'Peacock in the Stairwell' (2014), was nominated for the 2015
+        Sapir Prize, one of Israel's leading literary awards.
+    date: "2015"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Galit_Distel-Atbaryan
+        title: Galit Distel-Atbaryan
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: כיהנה כשרת ההסברה בממשלת ישראל
+      en: Served as Israel's Minister of Public Diplomacy
+    description:
+      he: דיסטל אטבריאן מונתה לשרת ההסברה בממשלת ישראל בינואר 2023. היא התפטרה מתפקידה
+        ב-12 באוקטובר 2023, בתחילת המלחמה, בנימוק שמשרדה מהווה 'בזבוז של כספי
+        ציבור'.
+      en: Distel Atbaryan was appointed Israel's Minister of Public Diplomacy in
+        January 2023. She resigned from the post on 12 October 2023, at the
+        outset of the war, stating that her ministry was a 'waste of public
+        funds.'
+    date: 2023-01
+    sources:
+      - url: https://en.wikipedia.org/wiki/Galit_Distel-Atbaryan
+        title: Galit Distel-Atbaryan
+        publisher: Wikipedia
+      - url: https://www.timesofisrael.com/public-diplomacy-minister-quits-post-amid-war-citing-waste-of-public-funds/
+        title: Public diplomacy minister quits post amid war, citing 'waste of public
+          funds'
+        publisher: The Times of Israel
+  - kind: positive
+    category: achievement
+    title:
+      he: חברת כנסת מטעם הליכוד ושירות בחיל האוויר
+      en: Likud Knesset member and Air Force veteran
+    description:
+      he: דיסטל אטבריאן נבחרה לכנסת מטעם מפלגת הליכוד (לכנסת ה-24 וה-25). היא ילידת
+        ירושלים (1971) למשפחת עולים מאיראן, שירתה בחיל האוויר הישראלי ובעלת תואר
+        שני בפילוסופיה מהאוניברסיטה העברית.
+      en: Distel Atbaryan was elected to the Knesset for the Likud party (24th and
+        25th Knessets). Born in Jerusalem in 1971 to an Iranian Jewish immigrant
+        family, she served in the Israeli Air Force and holds an MA in
+        Philosophy from the Hebrew University of Jerusalem.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Galit_Distel-Atbaryan
+        title: Galit Distel-Atbaryan
+        publisher: Wikipedia

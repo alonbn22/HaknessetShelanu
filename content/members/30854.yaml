@@ -1,0 +1,46 @@
+# PersonID 30854. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30854
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: נבחר לכנסת ה-25 מטעם יש עתיד
+      en: Elected to the 25th Knesset for Yesh Atid
+    description:
+      he: נאור שירי נבחר לכנסת ה-25 בנובמבר 2022, לאחר שמוקם במקום ה-24 ברשימת יש
+        עתיד. בעבר התמודד בבחירות 2015 (במקום ה-46 ברשימת יש עתיד) ובבחירות
+        אפריל 2019 (ברשימת כחול לבן) אך לא נבחר.
+      en: Naor Shiri was elected to the 25th Knesset in November 2022, after being
+        placed 24th on the Yesh Atid list. He had previously run in the 2015
+        election (46th on the Yesh Atid list) and in the April 2019 election (on
+        the Blue and White list) without being elected.
+    date: 2022-11-15
+    sources:
+      - url: https://en.wikipedia.org/wiki/Naor_Shiri
+        title: Naor Shiri
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%A0%D7%90%D7%95%D7%A8_%D7%A9%D7%99%D7%A8%D7%99
+        title: נאור שירי
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: achievement
+    title:
+      he: סגן ראש עיריית הוד השרון ושירות צבאי בחיל הים
+      en: Deputy mayor of Hod HaSharon and naval service
+    description:
+      he: לפני כניסתו לכנסת כיהן שירי כחבר מועצת העיר הוד השרון וכסגן ראש העירייה, וכן
+        כיו"ר דירקטוריון חברת אלומה העירונית העוסקת בחינוך ובתרבות. את שירותו
+        הצבאי עשה בחיל הים.
+      en: Before entering the Knesset, Shiri served on the Hod HaSharon city council
+        and as deputy mayor, as well as chairman of the board of the municipal
+        Alumah company, which deals with education and culture. He performed his
+        military service in the Israeli Navy.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Naor_Shiri
+        title: Naor Shiri
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%A0%D7%90%D7%95%D7%A8_%D7%A9%D7%99%D7%A8%D7%99
+        title: נאור שירי
+        publisher: Wikipedia (Hebrew)

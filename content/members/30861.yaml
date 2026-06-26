@@ -1,0 +1,74 @@
+# PersonID 30861. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30861
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: נבחר לכנסת ה-25 מטעם הליכוד
+      en: Elected to the 25th Knesset for Likud
+    description:
+      he: שלום דנינו, יליד אופקים, נבחר לכנסת ה-25 לאחר שמוקם במקום ה-22 ברשימת
+        הליכוד, מקום ששוריין למועמדים מאזור הנגב. הוא נכנס לכנסת ב-15 בנובמבר
+        2022, לאחר שהליכוד זכה ב-32 מנדטים.
+      en: Shalom Danino, a native of Ofakim, was elected to the 25th Knesset after
+        being placed 22nd on the Likud list, a slot reserved for candidates from
+        the Negev. He entered the Knesset on 15 November 2022, after Likud won
+        32 seats.
+    date: 2022-11-15
+    sources:
+      - url: https://en.wikipedia.org/wiki/Shalom_Danino
+        title: Shalom Danino
+        publisher: Wikipedia
+      - url: https://m.knesset.gov.il/en/mk/pages/MKPersonalDetails.aspx?mkid=1101
+        title: Knesset Member Shalom Danino
+        publisher: The Knesset
+  - kind: positive
+    category: achievement
+    title:
+      he: עשור של שירות בחיל האוויר הישראלי
+      en: A decade of service in the Israeli Air Force
+    description:
+      he: דנינו שירת בחיל האוויר הישראלי במשך כעשר שנים לפני שפנה לקריירה אזרחית.
+      en: Danino served in the Israeli Air Force for about ten years before pursuing a
+        civilian career.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Shalom_Danino
+        title: Shalom Danino
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: רקע אקדמי ועסקי לפני הפוליטיקה
+      en: Academic and business background before politics
+    description:
+      he: דנינו בעל תואר ראשון מאוניברסיטת בן-גוריון בנגב ותעודת ניהול מאוניברסיטת
+        בר-אילן. הוא איש עסקים שהיה בעלים של בית אבות וחברת נדל"ן לפני כניסתו
+        לכנסת.
+      en: Danino holds a bachelor's degree from Ben-Gurion University of the Negev and
+        a certificate of management from Bar-Ilan University. He is a
+        businessman who owns a nursing home and a real estate company.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Shalom_Danino
+        title: Shalom Danino
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q114071116
+        title: Shalom Danino (Q114071116)
+        publisher: Wikidata
+  - kind: positive
+    category: achievement
+    title:
+      he: מכהן כיו"ר בפועל של ועדת החוץ והביטחון
+      en: Serves as Acting Chair of the Foreign Affairs and Defense Committee
+    description:
+      he: דנינו מכהן כיושב ראש בפועל של ועדת החוץ והביטחון של הכנסת, אחת הוועדות
+        הבכירות בכנסת, וניהל בה דיונים בנושאי ביטחון.
+      en: Danino serves as Acting Chair of the Knesset Foreign Affairs and Defense
+        Committee, one of the parliament's most senior committees, and has led
+        discussions there on security matters.
+    sources:
+      - url: https://www.ynetnews.com/article/hkw93mptgl
+        title: Drones smuggling heavy weapons into Israel from Egypt 'with impunity,'
+          officials sound alarm
+        publisher: Ynetnews

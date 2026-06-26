@@ -1,0 +1,67 @@
+# PersonID 30893. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30893
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר הכנסת הדרוזי היחיד בקואליציה של נתניהו
+      en: Only Druze MK in Netanyahu's governing coalition
+    description:
+      he: עפיף עבד, פוליטיקאי דרוזי מהליכוד, נכנס לכנסת ה-25 בינואר 2025 במקומו של
+        יואב גלנט שהתפטר. כלי תקשורת מובילים תיארו אותו כחבר הכנסת הדרוזי היחיד
+        בקואליציה הימנית-דתית של ראש הממשלה בנימין נתניהו.
+      en: Afif (Afef) Abed, a Druze politician from Likud, entered the 25th Knesset in
+        January 2025, replacing Yoav Gallant, who had resigned. Leading outlets
+        described him as the only Druze member of Prime Minister Benjamin
+        Netanyahu's right-wing and religious governing coalition.
+    date: 2025-01-05
+    sources:
+      - url: https://www.jns.org/afef-abed-takes-gallants-knesset-seat-becoming-first-druze-coalition-mk/
+        title: Afef Abed takes Gallant's Knesset seat, becoming first Druze coalition MK
+        publisher: JNS - Jewish News Syndicate
+      - url: https://www.jpost.com/breaking-news/article-836345
+        title: Druze Likud member Afif Abed enters Knesset, following Gallant's
+          resignation
+        publisher: The Jerusalem Post
+  - kind: positive
+    category: achievement
+    title:
+      he: כניסה לכנסת ה-25 כחבר כנסת מטעם הליכוד
+      en: Sworn in as a Member of the 25th Knesset for Likud
+    description:
+      he: עבד, יליד 1974 ותושב הכפר ירכא בגליל, הושבע כחבר הכנסת בתחילת ינואר 2025
+        לאחר התפטרותו של יואב גלנט, והצהיר אמונים במליאת הכנסת. הוא נכנס לכנסת
+        ה-25 מתוך רשימת הליכוד.
+      en: Abed, born in 1974 and a resident of the Galilee village of Yarka, was sworn
+        in as a Member of the Knesset in early January 2025 following Yoav
+        Gallant's resignation, declaring his allegiance in the Knesset plenum.
+        He took his seat from the Likud list to the 25th Knesset.
+    date: 2025-01-06
+    sources:
+      - url: https://en.wikipedia.org/wiki/Afif_Abed
+        title: Afif Abed
+        publisher: Wikipedia
+      - url: https://www.jpost.com/breaking-news/article-836345
+        title: Druze Likud member Afif Abed enters Knesset, following Gallant's
+          resignation
+        publisher: The Jerusalem Post
+  - kind: positive
+    category: achievement
+    title:
+      he: פעיל ותיק בליכוד וחבר מזכירות המפלגה
+      en: Veteran Likud activist and member of the party Secretariat
+    description:
+      he: עבד פעיל בליכוד מאז תחילת שנות ה-2000 והוא חבר מזכירות המפלגה. על פי
+        הדיווחים כיהן בעבר כסגן יושב ראש תנועת הנוער של הליכוד.
+      en: Abed has been active in Likud since the early 2000s and is a member of the
+        party's Secretariat. He is reported to have previously served as deputy
+        chairman of its youth movement.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Afif_Abed
+        title: Afif Abed
+        publisher: Wikipedia
+      - url: https://www.jns.org/afef-abed-takes-gallants-knesset-seat-becoming-first-druze-coalition-mk/
+        title: Afef Abed takes Gallant's Knesset seat, becoming first Druze coalition MK
+        publisher: JNS - Jewish News Syndicate

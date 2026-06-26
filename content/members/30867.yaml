@@ -1,0 +1,65 @@
+# PersonID 30867. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30867
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: לוחם צה"ל ותיק מלחמת לבנון השנייה
+      en: IDF combat veteran of the Second Lebanon War
+    description:
+      he: קרויזר שירת בצה"ל כלוחם ולחם במלחמת לבנון השנייה. לפני כניסתו לפוליטיקה עסק
+        בחקלאות ובהמשך ניהל חברת בנייה ברמת הגולן.
+      en: Kroizer served in the Israel Defense Forces as a combat soldier and fought
+        in the Second Lebanon War. Before entering politics he worked in
+        agriculture and later ran a construction company in the Golan Heights.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Yitzhak_Kroizer
+        title: Yitzhak Kroizer
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%A7%D7%A8%D7%95%D7%99%D7%96%D7%A8
+        title: יצחק קרויזר
+        publisher: Hebrew Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: נבחר לוועדה לבחירת שופטים
+      en: Elected to the Judicial Selection Committee
+    description:
+      he: ביולי 2023 נבחר קרויזר כנציג הקואליציה בוועדה לבחירת שופטים, אחד מתפקידי
+        המפתח של חברי הכנסת במערכת המינויים השיפוטיים בישראל.
+      en: In July 2023, Kroizer was elected as a coalition representative to the
+        Judicial Selection Committee, one of the key roles Knesset members hold
+        in Israel's system of judicial appointments.
+    date: 2023-07-12
+    sources:
+      - url: https://www.haaretz.com/israel-news/2023-07-12/ty-article/.premium/israeli-lawmakers-vote-to-elect-second-representative-to-judicial-appointments-committee/00000189-4933-de83-adc9-cfb32dcf0000
+        title: Israeli Lawmaker Elected Representative to Judicial Appointments
+          Committee
+        publisher: Haaretz
+      - url: https://en.wikipedia.org/wiki/Yitzhak_Kroizer
+        title: Yitzhak Kroizer
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: יו"ר ועדת הפנים והגנת הסביבה של הכנסת
+      en: Chair of the Knesset Internal Affairs and Environment Committee
+    description:
+      he: באוגוסט 2025 מונה קרויזר ליושב ראש ועדת הפנים והגנת הסביבה של הכנסת, בהחליפו
+        את ח"כ יעקב אשר.
+      en: In August 2025, Kroizer was appointed chair of the Knesset's Internal
+        Affairs and Environment Committee, replacing MK Ya'akov Asher.
+    date: 2025-08-04
+    sources:
+      - url: https://www.israelnationalnews.com/flashes/663648
+        title: MK Yitzhak Kroizer appointed chair of the Interior and Environmental
+          Protection Committee
+        publisher: Israel National News (Arutz Sheva)
+      - url: https://en.wikipedia.org/wiki/Yitzhak_Kroizer
+        title: Yitzhak Kroizer
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%A7%D7%A8%D7%95%D7%99%D7%96%D7%A8
+        title: יצחק קרויזר
+        publisher: Hebrew Wikipedia

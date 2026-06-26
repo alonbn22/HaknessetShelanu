@@ -1,0 +1,48 @@
+# PersonID 30868. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30868
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר הכנסת ה-25 מטעם ש"ס
+      en: Member of the 25th Knesset for Shas
+    description:
+      he: יונתן (יוני) מישרקי, יליד ירושלים (17 באוגוסט 1984), נכנס לכנסת העשרים וחמש
+        ב-3 בינואר 2023 מטעם מפלגת ש"ס במסגרת החוק הנורווגי, בעקבות התפטרותו של
+        השר יואב בן צור. לפני כניסתו לכנסת מילא תפקידי ייעוץ וניהול בזירה
+        המוניציפלית בירושלים.
+      en: Jonathan (Yoni) Misharki, born in Jerusalem on 17 August 1984, entered the
+        25th Knesset on 3 January 2023 as a Shas party representative under the
+        Norwegian Law, replacing Minister Yoav Ben-Tzur. Before the Knesset he
+        held advisory and administrative posts in the Jerusalem municipal arena.
+    date: 2023-01-03
+    sources:
+      - url: https://www.wikidata.org/wiki/Q115974304
+        title: Jonathan Misharki
+        publisher: Wikidata
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A0%D7%AA%D7%9F_%D7%9E%D7%99%D7%A9%D7%A8%D7%A7%D7%99
+        title: יונתן מישרקי
+        publisher: Hebrew Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: יושב-ראש ועדת הבריאות של הכנסת
+      en: Chairman of the Knesset Health Committee
+    description:
+      he: ב-12 באוקטובר 2023 מונה מישרקי ליושב-ראש ועדת הבריאות של הכנסת, לאחר שאוריאל
+        בוסו מונה לשר הבריאות. הוא פרש מהתפקיד באוקטובר 2025 ובפברואר 2026 שב
+        לכהן כיושב-ראש הוועדה.
+      en: On 12 October 2023 Misharki was appointed chairman of the Knesset Health
+        Committee, following Uriel Bosso's appointment as Health Minister. He
+        stepped down in October 2025 and resumed the chairmanship in February
+        2026.
+    date: 2023-10-12
+    sources:
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A0%D7%AA%D7%9F_%D7%9E%D7%99%D7%A9%D7%A8%D7%A7%D7%99
+        title: יונתן מישרקי
+        publisher: Hebrew Wikipedia
+      - url: https://www.timesofisrael.com/liveblog_entry/shas-mk-resumes-chairmanship-of-knesset-health-committee/
+        title: Shas MK resumes chairmanship of Knesset health committee
+        publisher: The Times of Israel

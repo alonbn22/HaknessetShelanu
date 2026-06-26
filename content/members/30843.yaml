@@ -1,0 +1,77 @@
+# PersonID 30843. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30843
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר הכנסת ה-25 מטעם רע"מ (הרשימה הערבית המאוחדת)
+      en: Member of the 25th Knesset for Ra'am (United Arab List)
+    description:
+      he: יאסר חוג'יראת נבחר לכנסת ה-25 בבחירות נובמבר 2022 מטעם הרשימה הערבית המאוחדת
+        (רע"מ), במקום החמישי ברשימת המפלגה.
+      en: Yasir Hujeirat was elected to the 25th Knesset in the November 2022 election
+        on behalf of the United Arab List (Ra'am), where he was placed fifth on
+        the party's list.
+    date: 2022-11-15
+    sources:
+      - url: https://en.wikipedia.org/wiki/Yasir_Hujeirat
+        title: Yasir Hujeirat
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%90%D7%A1%D7%A8_%D7%97%D7%95%D7%92'%D7%99%D7%A8%D7%90%D7%AA
+        title: יאסר חוג'יראת
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: achievement
+    title:
+      he: יושב ראש ועדת המדע והטכנולוגיה של הכנסת
+      en: Chair of the Knesset Science and Technology Committee
+    description:
+      he: בינואר 2025 אישרה ועדת הכנסת את מינויו של חוג'יראת ליושב ראש ועדת המדע
+        והטכנולוגיה, בהחליפו את ח"כ איימן עודה.
+      en: In January 2025 the Knesset House Committee approved Hujeirat's appointment
+        as chair of the Science and Technology Committee, taking over from MK
+        Ayman Odeh.
+    date: 2025-01-20
+    sources:
+      - url: https://www.jpost.com/israel-news/article-838360
+        title: Knesset approves reshuffling of committee chairman roles
+        publisher: The Jerusalem Post
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%90%D7%A1%D7%A8_%D7%97%D7%95%D7%92'%D7%99%D7%A8%D7%90%D7%AA
+        title: יאסר חוג'יראת
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: achievement
+    title:
+      he: דוקטור לגנטיקה וחוקר בתחום גנטיקת הסרטן
+      en: Doctor of genetics and cancer-genetics researcher
+    description:
+      he: לחוג'יראת תואר דוקטור בגנטיקה מהאוניברסיטה העברית בירושלים, ובתר-דוקטורט
+        בגנטיקה של הסרטן מהטכניון וממכון המחקר הבריטי לחקר הסרטן. הוא הקים מעבדה
+        לגנטיקה מולקולרית במרכז הרפואי העמק ולימד בטכניון ובמוסדות נוספים.
+      en: Hujeirat holds a doctorate in genetics from the Hebrew University of
+        Jerusalem and a post-doctorate in cancer genetics from the Technion and
+        Cancer Research UK. He established a molecular genetics laboratory at
+        Emek Medical Center and lectured at the Technion and other institutions.
+    sources:
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%90%D7%A1%D7%A8_%D7%97%D7%95%D7%92'%D7%99%D7%A8%D7%90%D7%AA
+        title: יאסר חוג'יראת
+        publisher: Wikipedia (Hebrew)
+      - url: https://en.wikipedia.org/wiki/Yasir_Hujeirat
+        title: Yasir Hujeirat
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: ראש המועצה המקומית ביר אל-מכסור (2008–2013)
+      en: Head of the Bir al-Maksur local council (2008–2013)
+    description:
+      he: לפני כניסתו לכנסת כיהן חוג'יראת כראש המועצה המקומית ביר אל-מכסור בצפון הארץ
+        בין השנים 2008 ל-2013.
+      en: Before entering the Knesset, Hujeirat served as head of the Bir al-Maksur
+        local council in northern Israel from 2008 to 2013.
+    sources:
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%90%D7%A1%D7%A8_%D7%97%D7%95%D7%92'%D7%99%D7%A8%D7%90%D7%AA
+        title: יאסר חוג'יראת
+        publisher: Wikipedia (Hebrew)

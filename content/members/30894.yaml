@@ -1,0 +1,51 @@
+# PersonID 30894. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30894
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: כניסה לכנסת ה-25 כחבר כנסת מטעם תע"ל (חד"ש-תע"ל)
+      en: Entered the 25th Knesset as a Ta'al MK (Hadash-Ta'al)
+    description:
+      he: סמיר בן סעיד (מתועתק גם סמיר אבו סעיד) הושבע כחבר הכנסת ה-25 ב-20 ביוני 2025
+        מטעם מפלגת תע"ל במסגרת סיעת חד"ש-תע"ל, במסגרת הסכם רוטציה, לאחר התפטרותו
+        של ח"כ יוסף עטאונה.
+      en: Samir Bin Said (also transliterated Samir Abu Said) was sworn in as a member
+        of the 25th Knesset on 20 June 2025, representing the Ta'al party within
+        the Hadash-Ta'al faction, under a rotation agreement, after the
+        resignation of MK Youssef Atauna.
+    date: 2025-06
+    sources:
+      - url: https://en.wikipedia.org/wiki/Samir_Bin_Said
+        title: Samir Bin Said
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q134973008
+        title: Samir Abu Said (Q134973008)
+        publisher: Wikidata
+      - url: https://he.wikipedia.org/wiki/%D7%A1%D7%9E%D7%99%D7%A8_%D7%91%D7%9F_%D7%A1%D7%A2%D7%99%D7%93
+        title: סמיר בן סעיד
+        publisher: Hebrew Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: "רקע מקצועי בחינוך: מורה ומנהל מחלקת החינוך בשגב שלום"
+      en: "Career in education: teacher and head of the Segev Shalom education
+        department"
+    description:
+      he: "טרם כניסתו לכנסת עסק בן סעיד בחינוך: שימש מורה ומחנך, ובהם בתיכון המקיף
+        בשגב שלום (שקיב א-סלאם), וכן כיהן כמנהל מחלקת (אגף) החינוך במועצה
+        המקומית שגב שלום בשנים 2014–2018. הוא בעל תואר דוקטור בתחום ההוראה."
+      en: Before entering the Knesset, Bin Said worked in education. He served as a
+        teacher and educator, including at the Segev Shalom (Shaqib al-Salam)
+        comprehensive high school, and headed the education department of the
+        Segev Shalom local council between 2014 and 2018. He holds a doctorate
+        in the field of teaching.
+    sources:
+      - url: https://he.wikipedia.org/wiki/%D7%A1%D7%9E%D7%99%D7%A8_%D7%91%D7%9F_%D7%A1%D7%A2%D7%99%D7%93
+        title: סמיר בן סעיד
+        publisher: Hebrew Wikipedia
+      - url: https://www.knesset.tv/knesset-members/84720/
+        title: סמיר בן סעיד
+        publisher: Knesset Channel (ערוץ הכנסת)

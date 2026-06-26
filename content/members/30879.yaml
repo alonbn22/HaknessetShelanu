@@ -1,0 +1,73 @@
+# PersonID 30879. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30879
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר הכנסת ה-25 מטעם הליכוד
+      en: Member of the 25th Knesset for Likud
+    description:
+      he: ששון (ששי) גואטה נכנס לכנסת ה-25 ב-26 במרץ 2023 מטעם סיעת הליכוד, במסגרת
+        החוק הנורווגי, במקומו של יואב קיש שהתפטר מהכנסת.
+      en: Sasson (Sassi) Guetta was sworn in as a member of the 25th Knesset for the
+        Likud party on 26 March 2023, entering under the Norwegian Law to
+        replace Yoav Kisch, who resigned his Knesset seat.
+    date: 2023-03-26
+    sources:
+      - url: https://en.wikipedia.org/wiki/Sasson_Guetta
+        title: Sasson Guetta
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q117284084
+        title: Sasson Guetta (Q117284084)
+        publisher: Wikidata
+  - kind: positive
+    category: achievement
+    title:
+      he: יושב-ראש ועדת המשנה לתחבורה ציבורית ופעיל למען המגזר החקלאי
+      en: Chair of the Subcommittee for Public Transportation and advocate for the
+        agricultural sector
+    description:
+      he: גואטה, חקלאי ובעל לול לשעבר ממושב גורן ולשעבר חבר הנהלת ארגון מגדלי העופות,
+        מכהן כיושב-ראש ועדת המשנה לתחבורה ציבורית בכנסת ופועל בעיקר למען החקלאות
+        והפריפריה.
+      en: Guetta, a farmer and former poultry-farm owner from Moshav Goren and a
+        former board member of the poultry breeders' association, chairs the
+        Knesset Subcommittee for Public Transportation and is active mainly on
+        behalf of agriculture and Israel's periphery.
+    sources:
+      - url: https://www.jns.org/feature/israeli-elections-2026-meet-the-parliament-mk-sasson-guetta
+        title: "Israeli elections 2026: Meet the parliament—MK Sasson Guetta"
+        publisher: JNS
+      - url: https://he.wikipedia.org/wiki/%D7%A9%D7%A9%D7%95%D7%9F_%D7%92%D7%95%D7%90%D7%98%D7%94
+        title: ששון גואטה
+        publisher: Hebrew Wikipedia
+  - kind: negative
+    category: controversy
+    status: settled
+    title:
+      he: החלטת ועדת האתיקה בנוגע למעורבותו בחקיקה בענף הלול
+      en: Knesset Ethics Committee ruling on his role in poultry-sector legislation
+    description:
+      he: בפברואר 2025, לאחר פניית התנועה לאיכות השלטון בטענה לניגוד עניינים בקידום
+        חקיקה בענף הלול שממנה הוא עשוי ליהנות (גואטה מחזיק במכסה לייצור של יותר
+        ממיליון ביצים בשנה), קבעה ועדת האתיקה של הכנסת כי אין מדובר בניגוד
+        עניינים אסור, אך החליטה שגואטה לא יצביע על החוק בוועדת הכלכלה.
+      en: In February 2025, following a complaint by the Movement for Quality
+        Government alleging a conflict of interest in his advancing
+        poultry-sector legislation from which he could benefit (Guetta holds a
+        quota to produce over one million eggs a year), the Knesset Ethics
+        Committee ruled that it did not constitute a prohibited conflict of
+        interest, but decided that Guetta would not vote on the bill in the
+        Economics Committee.
+    date: 2025-02-25
+    sources:
+      - url: https://www.themarker.com/news/2025-02-25/ty-article/.premium/00000195-391e-d507-abd7-3f5ff4ff0000
+        title: Ethics Committee permitted MK Sasson Guetta to advance poultry-sector
+          legislation though he would benefit from it
+        publisher: TheMarker (Haaretz Group)
+      - url: https://www.themarker.com/consumer/2025-02-02/ty-article/.premium/00000194-c642-d533-a3b6-cf4fcd000000
+        title: MK Sasson Guetta voted for an amendment poultry farmers said would
+          strengthen tycoons
+        publisher: TheMarker (Haaretz Group)

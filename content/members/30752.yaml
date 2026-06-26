@@ -1,0 +1,68 @@
+# PersonID 30752. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30752
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר הכנסת מטעם רע"ם (נבחר לראשונה ב-2019)
+      en: Member of Knesset for the United Arab List (Ra'am), first elected 2019
+    description:
+      he: וליד טאהא, פוליטיקאי ערבי-ישראלי יליד כפר קאסם (1968) וחבר התנועה האסלאמית,
+        נבחר לראשונה לכנסת בבחירות ספטמבר 2019 ושב ונבחר בבחירות 2021 ו-2022.
+        הוא מכהן כיו"ר סיעת רע"ם בכנסת.
+      en: Walid Taha, an Arab-Israeli politician born in Kafr Qasim (1968) and a
+        member of the Islamic Movement, was first elected to the Knesset in the
+        September 2019 election and was re-elected in 2021 and 2022. He serves
+        as chairman of the Ra'am Knesset faction.
+    date: 2019-10-03
+    sources:
+      - url: https://en.wikipedia.org/wiki/Walid_Taha
+        title: Walid Taha
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/וליד_טאהא
+        title: וליד טאהא
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: יו"ר ועדת הפנים והגנת הסביבה של הכנסת
+      en: Chairman of the Knesset Internal Affairs and Environment Committee
+    description:
+      he: בספטמבר 2021 נבחר טאהא ליו"ר ועדת הפנים והגנת הסביבה של הכנסת, לאחר שמינויו
+        אושר ברוב של 6 מול 4. הוא החליף בתפקיד את חברו לסיעה סעיד אלחרומי שנפטר.
+      en: In September 2021 Taha was selected as chairman of the Knesset Internal
+        Affairs and Environment Committee, with his nomination approved by a 6-4
+        vote. He took over the role following the death of his faction colleague
+        Said al-Harumi.
+    date: 2021-09-12
+    sources:
+      - url: https://www.timesofisrael.com/raam-mk-selected-to-head-knesset-internal-affairs-committee/
+        title: Ra'am MK selected to head Knesset Internal Affairs Committee
+        publisher: The Times of Israel
+      - url: https://he.wikipedia.org/wiki/וליד_טאהא
+        title: וליד טאהא
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: יזם וקידם את "חוק החשמל" לחיבור בתים ערביים לרשת
+      en: Sponsored the "Electricity Law" connecting Arab homes to the power grid
+    description:
+      he: כיו"ר ועדת הפנים, טאהא יזם וקידם את "חוק החשמל", שאיפשר חיבור לרשת החשמל של
+        בתים שנבנו ללא היתר ביישובים ערביים. החוק עבר בקריאה סופית ב-5 בינואר
+        2022 ברוב של 61 מול 0, לאחר שסיעות האופוזיציה פרשו מההצבעה.
+      en: As chairman of the Internal Affairs Committee, Taha sponsored and advanced
+        the "Electricity Law," which allowed homes built without permits in Arab
+        communities to be connected to the power grid. The law passed its final
+        reading on 5 January 2022 by a vote of 61-0 after opposition factions
+        walked out of the vote.
+    date: 2022-01-05
+    sources:
+      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-691593
+        title: Naftali Bennett confronts opposition as electricity bill passes into law
+        publisher: The Jerusalem Post
+      - url: https://en.wikipedia.org/wiki/Walid_Taha
+        title: Walid Taha
+        publisher: Wikipedia

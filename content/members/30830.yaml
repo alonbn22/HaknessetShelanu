@@ -1,0 +1,59 @@
+# PersonID 30830. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30830
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר הכנסת ה-25 מטעם הציונות הדתית
+      en: Member of the 25th Knesset for the Religious Zionist Party
+    description:
+      he: אוהד טל נבחר לכנסת ה-25 בנובמבר 2022 כחבר סיעת הציונות הדתית, לאחר שמוקם
+        במקום ה-12 ברשימת המפלגה שזכתה ב-14 מנדטים.
+      en: Ohad Tal was elected to the 25th Knesset in November 2022 as a member of the
+        Religious Zionist Party, after being placed 12th on the party list,
+        which won 14 seats.
+    date: 2022-11-15
+    sources:
+      - url: https://en.wikipedia.org/wiki/Ohad_Tal
+        title: Ohad Tal
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q115051874
+        title: Ohad Tal (Q115051874)
+        publisher: Wikidata
+  - kind: positive
+    category: achievement
+    title:
+      he: יושב ראש סיעת הציונות הדתית בכנסת
+      en: Chairman of the Religious Zionism faction in the Knesset
+    description:
+      he: בנובמבר 2024 מינה יושב ראש מפלגת הציונות הדתית, בצלאל סמוטריץ', את חבר הכנסת
+        אוהד טל ליושב ראש סיעת המפלגה בכנסת.
+      en: In November 2024, Religious Zionist Party leader Bezalel Smotrich appointed
+        MK Ohad Tal as chairman of the party's faction in the Knesset.
+    date: 2024-11
+    sources:
+      - url: https://en.wikipedia.org/wiki/Ohad_Tal
+        title: Ohad Tal
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: מנכ"ל בני עקיבא העולמית ושליחות בתפוצות
+      en: Director of World Bnei Akiva and public service in the Diaspora
+    description:
+      he: לפני כניסתו לכנסת שימש טל במגוון תפקידים ציבוריים בתחום הקשר עם יהדות
+        התפוצות, ובהם מנכ"ל תנועת בני עקיבא העולמית (2021), סגן מנכ"ל המזרחי
+        העולמי ושליח של הסוכנות היהודית בהולנד.
+      en: Before entering the Knesset, Tal held a range of public roles in Diaspora
+        relations, including Director of World Bnei Akiva (2021), Deputy
+        Director of World Mizrachi, and emissary of the Jewish Agency to the
+        Netherlands.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Ohad_Tal
+        title: Ohad Tal
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q115051874
+        title: Ohad Tal (Q115051874)
+        publisher: Wikidata

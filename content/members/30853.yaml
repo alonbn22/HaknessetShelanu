@@ -1,0 +1,119 @@
+# PersonID 30853. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30853
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: סגן ראש המחלקה לחקירות שוטרים (מח"ש)
+      en: Deputy head of the Police Internal Investigations Department
+    description:
+      he: לפני כניסתו לפוליטיקה שירת משה סעדה שנים רבות במחלקה לחקירות שוטרים (מח"ש)
+        שבמשרד המשפטים, בהן כסגן ראש המחלקה, ובשנת 2016 אף מילא בפועל את מקום
+        ראש המחלקה. סעדה הוא עורך דין בהכשרתו.
+      en: Before entering politics, Moshe Saada served for years in the Justice
+        Ministry's Police Internal Investigations Department (Mahash), including
+        as deputy head of the department, and in 2016 also served as acting
+        head. Saada is a lawyer by training.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Moshe_Saada
+        title: Moshe Saada
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/משה_סעדה
+        title: משה סעדה
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר הכנסת ה-25 מטעם הליכוד
+      en: Member of the 25th Knesset for Likud
+    description:
+      he: סעדה נבחר לכנסת ה-25 בנובמבר 2022 מטעם מפלגת הליכוד, לאחר שהוצב במקום ה-28
+        ברשימת המפלגה.
+      en: Saada was elected to the 25th Knesset in November 2022 on behalf of the
+        Likud party, after being placed 28th on the party's list.
+    date: 2022-11-15
+    sources:
+      - url: https://en.wikipedia.org/wiki/Moshe_Saada
+        title: Moshe Saada
+        publisher: Wikipedia
+      - url: https://en.wikipedia.org/wiki/List_of_members_of_the_twenty-fifth_Knesset
+        title: List of members of the twenty-fifth Knesset
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: יוזם חוק הכפפת מח"ש למשרד המשפטים
+      en: Initiated law placing police investigations unit under the Justice Ministry
+    description:
+      he: ביוני 2026 אישרה הכנסת תיקון חקיקה שיזם סעדה, המעביר את המחלקה לחקירות
+        שוטרים (מח"ש) מאחריות פרקליטות המדינה לאחריות משרד המשפטים. החוק היה
+        שנוי במחלוקת ועבר ברוב של 43 תומכים מול 39 מתנגדים.
+      en: In June 2026 the Knesset approved a legislative amendment initiated by Saada
+        that transfers the Police Internal Investigations Department (Mahash)
+        from the authority of the State Attorney's Office to that of the Justice
+        Ministry. The law was controversial and passed by a vote of 43 in favor
+        to 39 against.
+    date: 2026-06-11
+    sources:
+      - url: https://www.jpost.com/israel-news/article-899033
+        title: Knesset passes law placing internal police investigations under Justice
+          Ministry's authority
+        publisher: The Jerusalem Post
+  - kind: negative
+    category: controversy
+    status: settled
+    title:
+      he: ניגוד עניינים בקידום חוק מח"ש - קביעת ועדת האתיקה
+      en: Conflict of interest in advancing the Mahash bill - Ethics Committee finding
+    description:
+      he: ביולי 2023 קבעה ועדת האתיקה של הכנסת, בעקבות פנייה, כי קידום הצעת חוק על ידי
+        חבר כנסת המנהל הליך משפטי נגד גורם הקשור להצעה מהווה ניגוד עניינים -
+        בהתייחס לכך שסעדה קידם את חוק מח"ש בעודו מנהל תביעה נגד אותה מחלקה בטענת
+        התעמרות. בעקבות הקביעה הודיע סעדה כי לא ימשיך לקדם את ההצעה וכי חבר כנסת
+        אחר יקדם אותה.
+      en: In July 2023 the Knesset Ethics Committee, acting on a complaint, found that
+        for an MK to advance a bill while pursuing legal proceedings against an
+        entity connected to that bill constitutes a conflict of interest -
+        referring to Saada advancing the Mahash bill while pursuing a lawsuit
+        against that same department over a workplace-harassment claim.
+        Following the finding, Saada announced he would no longer advance the
+        bill and that another MK would do so instead.
+    date: 2023-07-30
+    sources:
+      - url: https://www.haaretz.co.il/news/politi/2023-07-30/ty-article/00000189-a72d-d6a5-a3e9-f73d49e80000
+        title: 'סעדה לא יקדם את חוק מח"ש בשל ניגוד עניינים, אך הבהיר: "ח"כ אחר יקדם
+          אותו"'
+        publisher: Haaretz
+      - url: https://www.ynet.co.il/news/article/sygvcrxin
+        title: '"מנוף לחץ פסול": ח"כ משה סעדה לא יוכל לקדם את חוק מח"ש'
+        publisher: Ynet
+  - kind: negative
+    category: controversy
+    status: ongoing
+    title:
+      he: ביקורת בית המשפט על התנהלותו כחוקר בפרשת רונאל פישר
+      en: Court criticism of his conduct as an investigator in the Ronel Fisher case
+    description:
+      he: בגזר הדין בעניין עו"ד רונאל פישר, שפורסם בינואר 2026, מתח בית המשפט ביקורת
+        על התנהלות החקירה שהוביל סעדה במח"ש שנים קודם לכן, וקבע בין היתר כי
+        הוסתר חומר חקירה מהנאשמים ומבית המשפט וכי בית המשפט הוטעה. הביקורת
+        מתייחסת לתפקודו בעבר כחוקר במח"ש ואינה הליך פלילי נגדו אישית. סעדה דחה
+        את הביקורת ומתח ביקורת נגדית על אופן ניהול ההליך.
+      en: In the January 2026 sentencing ruling in the case of attorney Ronel Fisher,
+        the court criticized the conduct of the investigation that Saada had led
+        at Mahash years earlier, finding among other things that investigative
+        material had been concealed from defendants and the court and that the
+        court had been misled. The criticism relates to his past work as a
+        Mahash investigator and is not a criminal proceeding against him
+        personally. Saada rejected the criticism and in turn criticized the way
+        the case was handled.
+    date: 2026-01-20
+    sources:
+      - url: https://www.haaretz.co.il/news/magazine/2026-01-20/ty-article-magazine/.premium/0000019b-d6a8-dd98-a7df-fefad9b90000
+        title: גזר הדין של רונאל פישר הוא גם כתב אישום נגד משה סעדה
+        publisher: Haaretz
+      - url: https://www.ynet.co.il/news/article/b1gzcyvhzl
+        title: הביקורת על הכשל של סעדה בתיק רונאל פישר
+        publisher: Ynet

@@ -1,0 +1,84 @@
+# PersonID 30880. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30880
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר הכנסת ה-25 מטעם הליכוד
+      en: Member of the 25th Knesset for Likud
+    description:
+      he: אביחי בוארון מכהן כחבר הכנסת ה-25 מטעם מפלגת הליכוד. כיהן לראשונה מאפריל
+        2023 עד 14 באוקטובר 2023, לאחר שנכנס לכנסת במסגרת החוק הנורבגי במקום
+        דודי אמסלם, ושב לכהן ביולי 2024 לאחר התפטרותו של דני דנון.
+      en: Avichai Boaron serves as a member of the 25th Knesset for the Likud party.
+        He first served from April 2023 to 14 October 2023, entering under the
+        'Norwegian Law' to replace Dudi Amsalem, and returned to the Knesset in
+        July 2024 following the resignation of Danny Danon.
+    date: 2024-07-01
+    sources:
+      - url: https://en.wikipedia.org/wiki/Avihai_Boaron
+        title: Avihai Boaron
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q117323692
+        title: Avichai Boaron (Q117323692)
+        publisher: Wikidata
+  - kind: positive
+    category: achievement
+    title:
+      he: לוחם בחטיבת גולני
+      en: Combat soldier in the Golani Brigade
+    description:
+      he: בוארון התגייס לצה"ל ושירת שלוש שנים כלוחם בחטיבת גולני.
+      en: Boaron enlisted in the Israel Defense Forces and served three years as a
+        combat soldier in the Golani Brigade.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Avihai_Boaron
+        title: Avihai Boaron
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%99%D7%97%D7%99_%D7%91%D7%95%D7%90%D7%A8%D7%95%D7%9F
+        title: אביחי בוארון
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: achievement
+    title:
+      he: עורך דין ובעל משרד עצמאי בירושלים
+      en: Lawyer with an independent firm in Jerusalem
+    description:
+      he: בוארון למד משפטים לתואר ראשון ושני, עבר את בחינות לשכת עורכי הדין, ופתח משרד
+        עורכי דין עצמאי בירושלים.
+      en: Boaron studied law at the undergraduate and graduate levels, passed the
+        Israel Bar examinations, and opened an independent law firm in
+        Jerusalem.
+    sources:
+      - url: https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%99%D7%97%D7%99_%D7%91%D7%95%D7%90%D7%A8%D7%95%D7%9F
+        title: אביחי בוארון
+        publisher: Wikipedia (Hebrew)
+      - url: https://en.wikipedia.org/wiki/Avihai_Boaron
+        title: Avihai Boaron
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: פעיל התיישבות והקמת היישוב עמיחי
+      en: Settlement activist and founding of Amichai
+    description:
+      he: בוארון פעל למען ההתיישבות ביהודה ושומרון, עמד בראש מטה המאבק נגד הריסת
+        ופינוי עמונה והיה ממנסחי חוק ההסדרה. בשנת 2017 סיכם עם ראש הממשלה בנימין
+        נתניהו על הקמת היישוב עמיחי למפוני עמונה, ובפברואר 2018 עלו התושבים
+        לבתיהם הזמניים ביישוב החדש.
+      en: Boaron was an activist for settlement in Judea and Samaria, led the campaign
+        headquarters against the demolition and evacuation of Amona, and was
+        among the drafters of the Regularization Law. In 2017 he reached an
+        agreement with Prime Minister Benjamin Netanyahu to establish the
+        settlement of Amichai for Amona's evacuees, and in February 2018
+        residents moved into temporary homes in the new community.
+    date: 2017-03-01
+    sources:
+      - url: https://en.wikipedia.org/wiki/Avihai_Boaron
+        title: Avihai Boaron
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%99%D7%97%D7%99_%D7%91%D7%95%D7%90%D7%A8%D7%95%D7%9F
+        title: אביחי בוארון
+        publisher: Wikipedia (Hebrew)

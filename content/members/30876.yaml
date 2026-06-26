@@ -1,0 +1,71 @@
+# PersonID 30876. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30876
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר הכנסת ה-25 מטעם הליכוד
+      en: Member of the 25th Knesset for Likud
+    description:
+      he: אושר שקלים נכנס לכנסת ה-25 ב-15 בפברואר 2023 כחבר כנסת מטעם הליכוד, במסגרת
+        'החוק הנורבגי', במקומו של אלי כהן שהתפטר עם מינויו לשר. כיהן במספר
+        ועדות, ובהן ועדת ביקורת המדינה.
+      en: Osher Shekalim entered the 25th Knesset on 15 February 2023 as a Likud
+        member of parliament under the 'Norwegian Law', replacing Eli Cohen, who
+        resigned upon his appointment as a minister. He has served on several
+        committees, including the State Control Committee.
+    date: 2023-02-15
+    sources:
+      - url: https://en.wikipedia.org/wiki/Osher_Shekalim
+        title: Osher Shekalim
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%A9%D7%A8_%D7%A9%D7%A7%D7%9C%D7%99%D7%9D
+        title: אושר שקלים
+        publisher: Hebrew Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: יושב ראש הוועדה המיוחדת לפניות הציבור
+      en: Chair of the Special Committee for Public Petitions
+    description:
+      he: ב-28 בינואר 2026 מונה אושר שקלים פה אחד ליושב ראש הוועדה המיוחדת לפניות
+        הציבור של הכנסת, במקומו של יצחק פינדרוס. הוועדה עוסקת בסיוע לאזרחים מול
+        רשויות המדינה.
+      en: On 28 January 2026, Osher Shekalim was appointed unanimously as chair of the
+        Knesset's Special Committee for Public Petitions, replacing Yitzhak
+        Pindros. The committee handles assisting citizens in their dealings with
+        state authorities.
+    date: 2026-01-28
+    sources:
+      - url: https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%A9%D7%A8_%D7%A9%D7%A7%D7%9C%D7%99%D7%9D
+        title: אושר שקלים
+        publisher: Hebrew Wikipedia
+      - url: https://israel.com/knesset-news/mk-shkalim-appointed-as-chair-of-the-special-committee-for-public-petitions/
+        title: MK Shkalim appointed as chair of the Special Committee for Public
+          Petitions
+        publisher: Israel.com
+  - kind: positive
+    category: achievement
+    title:
+      he: שירות צבאי ורקע ציבורי
+      en: Military service and public background
+    description:
+      he: שקלים, יליד חולון 1974 להורים שעלו מאיראן, שירת בצה"ל בחיל התותחנים בשנים
+        1992–1995. בעל תואר ראשון מאוניברסיטת בר-אילן בכלכלה, מדע המדינה
+        וסוציולוגיה ותואר שני בתקשורת פוליטית מבר-אילן, והיה פעיל בתחומי הפרסום
+        והשיווק לפני כניסתו לכנסת.
+      en: Shekalim, born in Holon in 1974 to parents who immigrated from Iran, served
+        in the IDF artillery corps from 1992 to 1995. He holds a bachelor's
+        degree from Bar-Ilan University in economics, political science and
+        sociology and a master's degree in political communication from
+        Bar-Ilan, and worked in advertising and marketing before entering the
+        Knesset.
+    sources:
+      - url: https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%A9%D7%A8_%D7%A9%D7%A7%D7%9C%D7%99%D7%9D
+        title: אושר שקלים
+        publisher: Hebrew Wikipedia
+      - url: https://en.wikipedia.org/wiki/Osher_Shekalim
+        title: Osher Shekalim
+        publisher: Wikipedia

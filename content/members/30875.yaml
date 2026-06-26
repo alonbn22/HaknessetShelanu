@@ -1,0 +1,90 @@
+# PersonID 30875. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30875
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: המנהלת הראשונה של רשת א' של קול ישראל
+      en: First woman and Ethiopian immigrant to direct Reshet Aleph
+    description:
+      he: צגה מלקו מונתה בשנת 2008 למנהלת רשת א' של קול ישראל, והייתה האישה הראשונה
+        והעולה הראשונה מאתיופיה לכהן בתפקיד זה. היא גם הגישה תוכנית רדיו
+        באמהרית.
+      en: In 2008 Tsega Melaku became director of Kol Yisrael's Reshet Aleph (Network
+        A) radio station, the first woman and first Ethiopian immigrant to hold
+        the post. She also presented radio programming in Amharic.
+    date: "2008"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Tsega_Melaku
+        title: Tsega Melaku
+        publisher: Wikipedia
+      - url: https://www.ynetnews.com/articles/0,7340,L-4619287,00.html
+        title: Ethiopian-born Tsega Melaku disqualified from running on Kahlon's list
+        publisher: Ynetnews
+  - kind: positive
+    category: achievement
+    title:
+      he: חברת הכנסת ה-25 מטעם הליכוד
+      en: Member of the 25th Knesset for Likud
+    description:
+      he: צגה מלקו נכנסה לכנסת ה-25 ב-9 בפברואר 2023 מטעם סיעת הליכוד, כמחליפה של
+        אופיר אקוניס שהתפטר מכוח החוק הנורווגי.
+      en: Tsega Melaku entered the 25th Knesset on 9 February 2023 as a member of the
+        Likud faction, replacing Ofir Akunis, who resigned under the Norwegian
+        Law.
+    date: 2023-02-09
+    sources:
+      - url: https://en.wikipedia.org/wiki/List_of_members_of_the_twenty-fifth_Knesset
+        title: List of members of the twenty-fifth Knesset
+        publisher: Wikipedia
+      - url: https://en.wikipedia.org/wiki/Tsega_Melaku
+        title: Tsega Melaku
+        publisher: Wikipedia
+  - kind: positive
+    category: volunteering
+    title:
+      he: פעילות ציבורית למען הקהילה האתיופית בישראל
+      en: Public activism for Israel's Ethiopian community
+    description:
+      he: מלקו פעילה רבת שנים למען הקהילה האתיופית בישראל, בין היתר במחאות 1996 נגד
+        מדיניות מגן דוד אדום בנוגע לתרומות דם של יוצאי אתיופיה. בפברואר 2016
+        מינה אותה משרד המשפטים להוביל צוות משנה להסברה במסגרת צוות בין-משרדי
+        למאבק בגזענות כלפי יוצאי אתיופיה.
+      en: Melaku has long been active on behalf of Israel's Ethiopian community,
+        including participating in the 1996 protests over Magen David Adom's
+        policy on Ethiopian-Israeli blood donations. In February 2016 the
+        Justice Ministry appointed her to lead a public-awareness sub-team
+        within an inter-ministerial task force against racism toward
+        Ethiopian-Israelis.
+    date: 2016-02
+    sources:
+      - url: https://en.wikipedia.org/wiki/Tsega_Melaku
+        title: Tsega Melaku
+        publisher: Wikipedia
+  - kind: negative
+    category: controversy
+    status: settled
+    title:
+      he: נפסלה ממועמדות לבחירות 2015 בשל אי-השלמת תקופת צינון
+      en: Disqualified from 2015 candidacy over cooling-off period
+    description:
+      he: בינואר 2015 פסל יו"ר ועדת הבחירות המרכזית, השופט סלים ג'ובראן, את מועמדותה
+        של מלקו ברשימת מפלגת כולנו לבחירות לכנסת ה-20, בקביעה שלא השלימה את
+        תקופת הצינון בת 100 הימים הנדרשת לאחר סיום תפקידה כמנהלת רשת א' ברשות
+        השידור. מדובר בהחלטה מנהלית של ועדת הבחירות ולא בהליך פלילי.
+      en: In January 2015 the chairman of the Central Elections Committee, Judge Salim
+        Joubran, disqualified Melaku's candidacy on the Kulanu party list for
+        the 20th Knesset election, ruling that she had not completed the
+        mandatory 100-day cooling-off period after leaving her post as director
+        of Reshet Aleph at the Israeli Broadcasting Authority. This was an
+        administrative elections-committee ruling, not a criminal proceeding.
+    date: 2015-01-26
+    sources:
+      - url: https://www.ynetnews.com/articles/0,7340,L-4619287,00.html
+        title: Ethiopian-born Tsega Melaku disqualified from running on Kahlon's list
+        publisher: Ynetnews
+      - url: https://www.timesofisrael.com/kulanu-candidate-barred-from-running-in-march-elections/
+        title: Kulanu candidate barred from running in March elections
+        publisher: The Times of Israel

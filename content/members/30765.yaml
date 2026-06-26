@@ -1,0 +1,86 @@
+# PersonID 30765. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30765
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: כיהן כשר הבריאות של ישראל
+      en: Served as Israel's Minister of Health
+    description:
+      he: אוריאל בוסו, חבר הכנסת מטעם ש"ס, מונה לשר הבריאות ב-12 באוקטובר 2023 במסגרת
+        שינוי בהרכב הממשלה ה-37. הוא כיהן בתפקיד עד יולי 2025, אז התפטר יחד עם
+        שאר שרי ש"ס.
+      en: Uriel Buso, a Knesset member for Shas, was appointed Minister of Health on
+        12 October 2023 as part of a reshuffle of Israel's 37th government. He
+        held the post until July 2025, when he resigned alongside other Shas
+        cabinet ministers.
+    date: 2023-10-12
+    sources:
+      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-767900
+        title: Arye Deri appoints Shas MK as new Israeli health minister
+        publisher: The Jerusalem Post
+      - url: https://en.wikipedia.org/wiki/Thirty-seventh_government_of_Israel
+        title: Thirty-seventh government of Israel
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: יו"ר ועדת הבריאות של הכנסת
+      en: Chairman of the Knesset Health Committee
+    description:
+      he: בטרם מינויו לשר, כיהן בוסו כיו"ר ועדת הבריאות של הכנסת. בעת מינויו לשר
+        הבריאות ציין יו"ר ש"ס אריה דרעי את ניסיונו בתפקיד זה.
+      en: Before his ministerial appointment, Buso served as chairman of the Knesset's
+        Health Committee. When announcing his appointment as Health Minister,
+        Shas leader Arye Deri cited Buso's experience in that role.
+    sources:
+      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-767900
+        title: Arye Deri appoints Shas MK as new Israeli health minister
+        publisher: The Jerusalem Post
+      - url: https://en.wikipedia.org/wiki/Uriel_Buso
+        title: Uriel Buso
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: שנים של שירות ציבורי מוניציפלי בפתח תקווה
+      en: Years of municipal public service in Petah Tikva
+    description:
+      he: לפני כניסתו לכנסת כיהן בוסו במשך שנים רבות בעיריית פתח תקווה, בין היתר כסגן
+        ראש העיר וכראש סיעת ש"ס במועצת העיר, עד כניסתו לכנסת בשנת 2020.
+      en: Before entering the Knesset, Buso served for many years in the Petah Tikva
+        municipality, including as deputy mayor and head of the Shas faction on
+        the city council, until he entered the Knesset in 2020.
+    sources:
+      - url: https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%A8%D7%99%D7%90%D7%9C_%D7%91%D7%95%D7%A1%D7%95
+        title: אוריאל בוסו
+        publisher: Hebrew Wikipedia
+      - url: https://en.wikipedia.org/wiki/Uriel_Buso
+        title: Uriel Buso
+        publisher: Wikipedia
+  - kind: negative
+    category: investigation
+    status: acquitted
+    title:
+      he: חקירת שוחד מ-2011 בפתח תקווה שנסגרה בהיעדר ראיות
+      en: 2011 Petah Tikva bribery investigation closed for lack of evidence
+    description:
+      he: בפברואר 2011, בעת כהונתו כסגן ראש עיריית פתח תקווה, נעצר בוסו לצד ראש העיר
+        בחשד לשוחד הקשור לבחירות המוניציפליות של 2008, והמשטרה המליצה להעמידו
+        לדין. באוקטובר 2013 הודיעה פרקליטות המדינה על סגירת התיק נגדו מחמת היעדר
+        ראיות מספיקות; בוסו לא הואשם ולא הורשע.
+      en: In February 2011, while serving as deputy mayor of Petah Tikva, Buso was
+        arrested alongside the mayor on suspicion of bribery connected to the
+        2008 municipal elections, and police recommended prosecution. In October
+        2013 the State Prosecutor's Office announced the case against him was
+        closed for insufficient evidence; Buso was never indicted or convicted.
+    date: 2013-10-15
+    sources:
+      - url: https://www.globes.co.il/news/article.aspx?did=1000886058
+        title: ראש עיריית פתח-תקווה לשעבר וסגנו לא יועמדו לדין
+        publisher: Globes
+      - url: https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%A8%D7%99%D7%90%D7%9C_%D7%91%D7%95%D7%A1%D7%95
+        title: אוריאל בוסו
+        publisher: Hebrew Wikipedia

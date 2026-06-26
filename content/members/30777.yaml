@@ -1,0 +1,57 @@
+# PersonID 30777. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30777
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: קצין בכיר במילואים ששירת 85 ימים בעזה לאחר ה-7 באוקטובר
+      en: Senior IDF reserve officer who served 85 days in Gaza after October 7
+    description:
+      he: טור-פז, סגן-אלוף במילואים ומפקד גדוד לשעבר בחטיבת הצנחנים, חזר לשירות
+        מילואים לאחר מתקפת ה-7 באוקטובר 2023 ושירת כ-85 ימים כאחד מראשי מדור
+        המבצעים באוגדת עזה, במקביל לכהונתו כחבר כנסת.
+      en: Tur-Paz, a lieutenant colonel in the IDF reserves and former battalion
+        commander in the Paratroopers Brigade, returned to reserve duty after
+        the October 7, 2023 attack and served roughly 85 days as one of the
+        chiefs of operations for the IDF's Gaza Division, while simultaneously
+        serving as a member of Knesset.
+    date: 2023-10
+    sources:
+      - url: https://jewishinsider.com/2025/01/mk-tur-paz-yesh-atid-opposition-idf-reserve-duty-gaza/
+        title: "Officer, lawmaker, now author: MK Tur-Paz publishes his war diary"
+        publisher: Jewish Insider
+  - kind: positive
+    category: achievement
+    title:
+      he: מנהל מינהל החינוך של עיריית ירושלים ומחנך ותיק
+      en: Director of Education for the Jerusalem Municipality and veteran educator
+    description:
+      he: "לפני כניסתו לפוליטיקה היה טור-פז איש חינוך: ניהל את בית הספר התיכון 'שקד'
+        בשדה אליהו (2007–2012), כיהן כמנהל מינהל החינוך של עיריית ירושלים
+        (2012–2017), ובהמשך הוביל את מערך החינוך של התנועה הקיבוצית הדתית."
+      en: "Before entering politics, Tur-Paz built a career in education: he managed
+        the Shaked secondary school in Sde Eliyahu (2007–2012), served as
+        Director of Education for the Jerusalem Municipality (2012–2017), and
+        later led the education network of the Religious Kibbutz Movement."
+    sources:
+      - url: https://en.wikipedia.org/wiki/Moshe_Tur-Paz
+        title: Moshe Tur-Paz
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: נבחר ליו"ר משותף של השדולה הנוצרית בכנסת
+      en: Selected as co-chair of the Knesset Christian Allies Caucus
+    description:
+      he: בדצמבר 2024 נבחר טור-פז ליו"ר משותף של השדולה הנוצרית בכנסת (Christian
+        Allies Caucus), יחד עם ח"כ יולי אדלשטיין, וירש בתפקיד את שרן השכל.
+      en: In December 2024, Tur-Paz was selected as co-chair of the Knesset's
+        Christian Allies Caucus, sharing the role with MK Yuli Edelstein and
+        succeeding Sharren Haskel.
+    date: 2024-12-01
+    sources:
+      - url: https://www.jns.org/son-of-british-olim-chosen-to-lead-christian-allies-caucus/
+        title: Son of British olim chosen to lead Christian Allies Caucus
+        publisher: JNS.org

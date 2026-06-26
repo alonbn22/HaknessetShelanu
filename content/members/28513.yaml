@@ -1,0 +1,76 @@
+# PersonID 28513. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 28513
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: כיהן כשר וכסגן שר בממשלת ישראל
+      en: Served as a government minister and deputy minister in Israel
+    description:
+      he: יואב בן צור, חבר כנסת מטעם ש"ס שנכנס לכנסת ביוני 2014, כיהן בממשלה ה-37 כשר
+        העבודה, הרווחה והשירותים החברתיים (החל מדצמבר 2022 ועד התפטרותו ביולי
+        2025) וכן כממלא מקום שר הבריאות בין ינואר לאפריל 2023. במאי 2020 מונה
+        לסגן השר לפיתוח הפריפריה, הנגב והגליל ולסגן שר הפנים.
+      en: Yoav Ben-Tzur, a Knesset member for the Shas party who entered the Knesset
+        in June 2014, served in the 37th government as Minister of Labor, Social
+        Affairs and Social Services (from December 2022 until his resignation in
+        July 2025) and as acting Minister of Health between January and April
+        2023. In May 2020 he was appointed Deputy Minister for the Development
+        of the Periphery, Negev and Galilee and Deputy Minister of the Interior.
+    date: 2022-12-29
+    sources:
+      - url: https://en.wikipedia.org/wiki/Yoav_Ben-Tzur
+        title: Yoav Ben-Tzur
+        publisher: Wikipedia (English)
+      - url: https://www.ynetnews.com/article/q4moer0u2
+        title: Labor Minister Ben Tzur announces resignation
+        publisher: Ynetnews
+  - kind: positive
+    category: achievement
+    title:
+      he: קריירה ניהולית בשירות הציבורי ובחינוך
+      en: Management career in public service and education
+    description:
+      he: טרם כניסתו לכנסת ב-2014 צבר בן צור ניסיון ניהולי בשירות הציבורי, ובכלל זה
+        כמנכ"ל החברה הממשלתית "המשקם" וכמנכ"ל רשת החינוך "מעיין החינוך התורני"
+        בשנים 2007–2013. הוא בעל תואר שני במינהל ציבורי ומינהל עסקים מאוניברסיטת
+        מנצ'סטר.
+      en: Before entering the Knesset in 2014, Ben-Tzur held management roles in
+        public service, including CEO of the government company HaMeshakem and
+        Director-General of the Ma'ayan HaChinuch HaTorani education network
+        (2007-2013). He holds a master's degree in public administration and
+        business administration from the University of Manchester.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Yoav_Ben-Tzur
+        title: Yoav Ben-Tzur
+        publisher: Wikipedia (English)
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%90%D7%91_%D7%91%D7%9F_%D7%A6%D7%95%D7%A8
+        title: יואב בן צור
+        publisher: Wikipedia (Hebrew)
+  - kind: negative
+    category: investigation
+    status: acquitted
+    title:
+      he: ביקורת מבקר המדינה על תקופתו כמנכ"ל "המשקם"
+      en: State Comptroller criticism of his tenure as CEO of HaMeshakem
+    description:
+      he: בדוח שפרסם מבקר המדינה במאי 2008 נמתחה ביקורת על התנהלות החברה הממשלתית
+        "המשקם" בתקופת כהונתו של בן צור כמנכ"ל, ובכלל זה תנאי שכר והטבות חריגים
+        לבכירים, ניגודי עניינים והעדפת מקורבים. הליך פלילי שנפתח נגדו בשנת 2007
+        נסגר בידי הפרקליטות בשל היעדר ראיות מספיקות, ולא הוגש נגדו כתב אישום.
+      en: A State Comptroller report published in May 2008 criticized the conduct of
+        the government company HaMeshakem during Ben-Tzur's tenure as CEO,
+        including irregular compensation and benefits for senior staff,
+        conflicts of interest and favoritism toward associates. A criminal
+        investigation opened against him in 2007 was closed by the prosecution
+        for lack of sufficient evidence, and no indictment was filed.
+    date: 2008-05-20
+    sources:
+      - url: https://www.calcalist.co.il/local/articles/0,7340,L-3067942,00.html
+        title: 'המבקר: במקום לעזור לנכים - "המשקם" ריפדה את בכיריה'
+        publisher: Calcalist
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%90%D7%91_%D7%91%D7%9F_%D7%A6%D7%95%D7%A8
+        title: יואב בן צור
+        publisher: Wikipedia (Hebrew)

@@ -4,6 +4,21 @@ import { formatDate } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
 
+// Per-Knesset English Wikipedia article — the source for each term's summary,
+// events, "how it ended", and figures (the editorial narrative is drawn from it).
+const ORDINALS = [
+  "First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth",
+  "Ninth", "Tenth", "Eleventh", "Twelfth", "Thirteenth", "Fourteenth", "Fifteenth",
+  "Sixteenth", "Seventeenth", "Eighteenth", "Nineteenth", "Twentieth",
+  "Twenty-first", "Twenty-second", "Twenty-third", "Twenty-fourth", "Twenty-fifth",
+];
+const knessetWikiUrl = (n: number) =>
+  ORDINALS[n - 1]
+    ? `https://en.wikipedia.org/wiki/${ORDINALS[n - 1].replace(/ /g, "_")}_Knesset`
+    : null;
+const KNESSET_HISTORY_URL =
+  "https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx";
+
 export default async function ElectionsHistoryPage() {
   const t = await getTranslations("electionsHistory");
   const tc = await getTranslations("common");
@@ -108,6 +123,30 @@ export default async function ElectionsHistoryPage() {
                 </div>
               </details>
             )}
+            <p className="mt-2 text-xs text-muted">
+              {tc("source")}:{" "}
+              {knessetWikiUrl(e.knesset) && (
+                <>
+                  <a
+                    className="hover:text-accent underline"
+                    href={knessetWikiUrl(e.knesset)!}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Wikipedia
+                  </a>
+                  {" · "}
+                </>
+              )}
+              <a
+                className="hover:text-accent underline"
+                href={KNESSET_HISTORY_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {tc("knesset")}
+              </a>
+            </p>
           </li>
         ))}
       </ol>

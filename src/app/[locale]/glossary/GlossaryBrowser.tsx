@@ -7,7 +7,12 @@ import {
   type GlossaryCategory,
 } from "@/lib/glossary-categories";
 
-type Item = { category: GlossaryCategory; term: string; def: string };
+type Item = {
+  category: GlossaryCategory;
+  term: string;
+  def: string;
+  source?: string | null;
+};
 
 export function GlossaryBrowser({ items }: { items: Item[] }) {
   const t = useTranslations("glossary");
@@ -68,6 +73,18 @@ export function GlossaryBrowser({ items }: { items: Item[] }) {
                 </span>
               </dt>
               <dd className="mt-1.5 leading-relaxed text-foreground/90">{it.def}</dd>
+              {it.source && (
+                <dd className="mt-1.5 text-xs text-muted">
+                  <a
+                    className="underline hover:text-accent"
+                    href={it.source}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {t("source")}
+                  </a>
+                </dd>
+              )}
             </div>
           ))}
         </dl>

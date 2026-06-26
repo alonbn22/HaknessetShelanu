@@ -44,6 +44,7 @@ export default async function QuizPage() {
       <PartyQuiz questions={qs} factions={factions} />
 
       <p className="text-xs text-muted">{t("disclaimer")}</p>
+      <p className="text-xs text-muted">{t("sourcesNote")}</p>
     </div>
   );
 }

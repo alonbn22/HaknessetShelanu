@@ -1,0 +1,60 @@
+# PersonID 30691. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30691
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: סגן ראש המוסד (2009–2011)
+      en: Deputy Director of the Mossad (2009–2011)
+    description:
+      he: רם בן ברק שירת כסגן ראש המוסד בין השנים 2009 ל-2011, לאחר קריירה ארוכה
+        בשירות החשאי הישראלי. בהמשך הושאל לצה"ל ושימש כמתאם פעולות מיוחדות.
+      en: Ram Ben-Barak served as deputy director of the Mossad from 2009 to 2011,
+        following a long career in Israel's intelligence service. He was
+        subsequently loaned to the IDF as coordinator of special operations.
+    date: "2009"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Ram_Ben-Barak
+        title: Ram Ben-Barak
+        publisher: Wikipedia
+      - url: https://www.timesofisrael.com/ex-deputy-mossad-chief-joins-centrist-yesh-atid-party/
+        title: Ex-deputy Mossad chief joins centrist Yesh Atid party
+        publisher: The Times of Israel
+  - kind: positive
+    category: achievement
+    title:
+      he: מנכ"ל המשרד למודיעין והמשרד לעניינים אסטרטגיים
+      en: Director-General of the Ministries of Intelligence and Strategic Affairs
+    description:
+      he: בן ברק כיהן כמנכ"ל המשרד לשירותי מודיעין וכמנכ"ל המשרד לעניינים אסטרטגיים,
+        לאחר שירותו הבכיר במוסד. הוא החל את שירותו הצבאי ב-1976 ושירת כלוחם
+        וכקצין ביחידת סיירת מטכ"ל.
+      en: Ben-Barak served as director-general of both the Ministry of Intelligence
+        Services and the Ministry of Strategic Affairs. He began his military
+        career in 1976, serving as a combat soldier and officer in the elite
+        Sayeret Matkal commando unit.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Ram_Ben-Barak
+        title: Ram Ben-Barak
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: יו"ר ועדת החוץ והביטחון של הכנסת
+      en: Chair of the Knesset Foreign Affairs and Defense Committee
+    description:
+      he: בן ברק, חבר כנסת מטעם יש עתיד מאז אפריל 2019, כיהן כיו"ר ועדת החוץ והביטחון
+        של הכנסת, אחת הוועדות החזקות בבית המחוקקים.
+      en: Ben-Barak, a member of the Knesset for Yesh Atid since April 2019, served as
+        chair of the Knesset Foreign Affairs and Defense Committee, one of the
+        parliament's most powerful committees.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Ram_Ben-Barak
+        title: Ram Ben-Barak
+        publisher: Wikipedia
+      - url: https://www.timesofisrael.com/knesset-defense-panel-chief-suspends-aide-over-meeting-with-extremist-cleric/
+        title: Knesset defense panel chief suspends aide for meeting with extremist
+          cleric
+        publisher: The Times of Israel

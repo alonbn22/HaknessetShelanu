@@ -6,7 +6,7 @@ import {
   factionName,
   factionColor,
 } from "@/lib/queries";
-import { getPartyProfile } from "@/lib/content";
+import { getPartyProfile, getCoalitionConfig } from "@/lib/content";
 import { PartyEmblem } from "@/components/PartyEmblem";
 
 export const dynamic = "force-dynamic";
@@ -16,6 +16,7 @@ export default async function PartiesPage() {
   const locale = await getLocale();
   const factions = getCurrentFactionsWithSeats();
   const participation = getAllFactionAvgParticipation();
+  const coalition = getCoalitionConfig();
 
   return (
     <div className="space-y-6">
@@ -73,6 +74,19 @@ export default async function PartiesPage() {
           </Link>
         ))}
       </div>
+      {coalition.sourceUrl && (
+        <p className="text-xs text-muted">
+          {t("parties.coalitionNote", { asOf: coalition.asOf ?? "" })}{" "}
+          <a
+            className="underline hover:text-accent"
+            href={coalition.sourceUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {coalition.sourceLabel ?? t("common.source")}
+          </a>
+        </p>
+      )}
     </div>
   );
 }

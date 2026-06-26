@@ -6,6 +6,8 @@ export const GLOSSARY_CATEGORIES = [
   "economy",
   "government",
   "electoral",
+  "rights",
+  "international",
   "israel",
 ] as const;
 export type GlossaryCategory = (typeof GLOSSARY_CATEGORIES)[number];

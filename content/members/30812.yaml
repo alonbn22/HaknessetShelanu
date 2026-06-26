@@ -1,0 +1,66 @@
+# PersonID 30812. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30812
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: נבחר לכנסת מטעם הציונות הדתית
+      en: Elected to the Knesset for the Religious Zionism party
+    description:
+      he: עורך דין במקצועו, נבחר לכנסת ה-24 בשנת 2021 כשהיה במקום הרביעי ברשימת מפלגת
+        הציונות הדתית, ושב ונבחר לכנסת ה-25 בשנת 2022.
+      en: A lawyer by profession, Rothman was first elected to the 24th Knesset in
+        2021 from the fourth slot on the Religious Zionism party list, and was
+        re-elected to the 25th Knesset in 2022.
+    date: 2021-04-06
+    sources:
+      - url: https://en.wikipedia.org/wiki/Simcha_Rothman
+        title: Simcha Rothman
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q105127281
+        title: Simcha Rothman (Q105127281)
+        publisher: Wikidata
+  - kind: positive
+    category: achievement
+    title:
+      he: יושב ראש ועדת החוקה, חוק ומשפט של הכנסת
+      en: Chair of the Knesset Constitution, Law and Justice Committee
+    description:
+      he: בעקבות הקמת הממשלה ה-37 של ישראל בשנת 2023, מונה רוטמן ליושב ראש ועדת החוקה,
+        חוק ומשפט של הכנסת, אחד מתפקידי המפתח בעבודת החקיקה של הכנסת.
+      en: Following the formation of Israel's 37th government in 2023, Rothman was
+        appointed chairman of the Knesset's Constitution, Law and Justice
+        Committee, one of the key positions in the Knesset's legislative work.
+    date: 2023-01-01
+    sources:
+      - url: https://en.wikipedia.org/wiki/Simcha_Rothman
+        title: Simcha Rothman
+        publisher: Wikipedia
+  - kind: negative
+    category: controversy
+    status: settled
+    title:
+      he: אוסטרליה ביטלה את אשרת הכניסה שלו והטילה איסור כניסה לשלוש שנים
+      en: Australia cancelled his entry visa, with a three-year entry ban
+    description:
+      he: באוגוסט 2025 ביטל שר הפנים האוסטרלי טוני בורק את אשרת הכניסה של רוטמן ימים
+        אחדים לפני ביקור מתוכנן, בנימוק של התבטאויות שייחס לו. לצד ביטול האשרה
+        נאסר על רוטמן להיכנס לאוסטרליה למשך שלוש שנים. הפרשה לוותה במתיחות
+        דיפלומטית בין ישראל לאוסטרליה.
+      en: In August 2025, Australian Home Affairs Minister Tony Burke cancelled
+        Rothman's entry visa days before a planned visit, citing remarks
+        attributed to him. Alongside the cancellation, Rothman was barred from
+        entering Australia for three years. The episode was accompanied by
+        diplomatic tension between Israel and Australia.
+    date: 2025-08-18
+    sources:
+      - url: https://www.sbs.com.au/news/article/australia-bans-israeli-politician-who-once-described-palestinian-children-as-enemies/few28mk2w
+        title: Australia bans Israeli politician who described Palestinian children as
+          'enemies'
+        publisher: SBS News
+      - url: https://www.rnz.co.nz/news/world/570334/australia-cancels-far-right-israeli-politician-s-visa-ahead-of-speaking-tour
+        title: Australia cancels far-right Israeli politician's visa ahead of speaking
+          tour
+        publisher: RNZ

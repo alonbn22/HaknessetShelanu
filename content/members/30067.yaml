@@ -1,0 +1,71 @@
+# PersonID 30067. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30067
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: האישה הערבייה הראשונה שעמדה בראש ועדת כנסת קבועה
+      en: First Arab woman to chair a permanent Knesset committee
+    description:
+      he: ב-4 ביוני 2015 נבחרה חברת הכנסת עאידה תומא-סלימאן (הרשימה המשותפת) פה אחד
+        לעמוד בראש ועדת הכנסת למעמד האישה ולשוויון מגדרי, ובכך הפכה לחברת הכנסת
+        הראשונה ממפלגה ערבית שעומדת בראש ועדה קבועה של הכנסת.
+      en: On 4 June 2015, MK Aida Touma-Sliman (Joint List) was elected unanimously to
+        chair the Knesset Committee on the Status of Women and Gender Equality,
+        becoming the first MK from an Arab party to head a permanent Knesset
+        committee.
+    date: 2015-06-04
+    sources:
+      - url: https://www.haaretz.com/2015-06-04/ty-article/.premium/first-female-arab-mk-to-run-knesset-committee/0000017f-e157-d75c-a7ff-fddf8fd90000
+        title: First Female Arab MK to Run Knesset Committee
+        publisher: Haaretz
+      - url: https://en.wikipedia.org/wiki/Aida_Touma-Sliman
+        title: Aida Touma-Sliman
+        publisher: Wikipedia
+  - kind: positive
+    category: volunteering
+    title:
+      he: מייסדת ומנכ"לית ארגון "נשים נגד אלימות"
+      en: Founder and director of Women Against Violence
+    description:
+      he: בשנת 1992 ייסדה עאידה תומא-סלימאן את הארגון הפמיניסטי הערבי "נשים נגד
+        אלימות", הפועל למאבק באלימות נגד נשים בחברה הערבית בישראל, ושימשה
+        מנכ"לית הארגון מאז הקמתו.
+      en: In 1992 Aida Touma-Sliman founded the Arab feminist organization Women
+        Against Violence, which works against violence toward women in Arab
+        society in Israel, and has served as its director-general since its
+        founding.
+    date: "1992"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Aida_Touma-Sliman
+        title: Aida Touma-Sliman
+        publisher: Wikipedia
+  - kind: negative
+    category: controversy
+    status: settled
+    title:
+      he: השעיה על ידי ועדת האתיקה של הכנסת (נובמבר 2023)
+      en: Suspended by the Knesset Ethics Committee (November 2023)
+    description:
+      he: בנובמבר 2023 השעתה ועדת האתיקה של הכנסת את חברת הכנסת עאידה תומא-סלימאן למשך
+        חודשיים מהשתתפות במליאה ובוועדות, והטילה עליה ניכוי שכר של שבועיים,
+        בעקבות פרסום שבו האשימה את צה"ל בביצוע "פשע מלחמה" במהלך המלחמה ברצועת
+        עזה. הוועדה ציינה כי לא חזרה בה מדבריה. מפלגתה דחתה את ההחלטה ותיארה
+        אותה כפוליטית.
+      en: In November 2023 the Knesset Ethics Committee suspended MK Aida Touma-Sliman
+        for two months from plenum and committee sessions and imposed a two-week
+        pay deduction, following a post in which she accused the IDF of
+        committing a "war crime" during the war in the Gaza Strip. The committee
+        said she had not retracted the statements. Her party rejected the
+        decision, calling it politically motivated.
+    date: 2023-11
+    sources:
+      - url: https://www.timesofisrael.com/knesset-sanctions-2-arab-mks-for-denying-oct-7-atrocities-alleging-idf-war-crimes/
+        title: Knesset sanctions 2 Arab MKs for 'denying' Oct. 7 atrocities, alleging
+          IDF war crimes
+        publisher: The Times of Israel
+      - url: https://en.wikipedia.org/wiki/Aida_Touma-Sliman
+        title: Aida Touma-Sliman
+        publisher: Wikipedia

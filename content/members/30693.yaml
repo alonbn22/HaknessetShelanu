@@ -1,0 +1,64 @@
+# PersonID 30693. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30693
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: ראש העיר הגלוי הראשון בישראל
+      en: Israel's first openly gay mayor
+    description:
+      he: ב-16 במרץ 2018 נבחר איתן גינזבורג על ידי מועצת העיר רעננה לכהן כראש העיר,
+        ובכך הפך לראש העיר הגלוי (הומוסקסואל) הראשון בישראל. הוא החליף את זאב
+        בילסקי שעזב את התפקיד.
+      en: On 16 March 2018, Eitan Ginzburg was elected by the Ra'anana city council to
+        serve as mayor, becoming Israel's first openly gay mayor. He succeeded
+        Ze'ev Bielski, who had left the post.
+    date: 2018-03-16
+    sources:
+      - url: https://www.jpost.com/Israel-News/Raanana-gets-countrys-first-gay-mayor-546533
+        title: Tel Aviv suburb gets country's first gay mayor
+        publisher: The Jerusalem Post
+      - url: https://en.wikipedia.org/wiki/Eitan_Ginzburg
+        title: Eitan Ginzburg
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: מונה לשר התקשורת
+      en: Appointed Minister of Communications
+    description:
+      he: ב-3 במאי 2021 הושבע איתן גינזבורג כשר התקשורת מטעם סיעת כחול לבן. עם מינויו
+        מנתה ישראל שלושה שרים גלויים מקהילת הלהט"ב, שיא באותה עת.
+      en: On 3 May 2021, Eitan Ginzburg was sworn in as Minister of Communications on
+        behalf of the Blue and White faction. With his appointment Israel had a
+        record three openly LGBT cabinet ministers at the time.
+    date: 2021-05-03
+    sources:
+      - url: https://www.jpost.com/israel-news/israel-to-get-its-third-gay-cabinet-minister-later-today-667052
+        title: Eitan Ginzburg to become Israel's third gay cabinet minister on Monday
+        publisher: The Jerusalem Post
+      - url: https://en.wikipedia.org/wiki/Eitan_Ginzburg
+        title: Eitan Ginzburg
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: רקע של שירות ציבורי וצבאי
+      en: Public service and military background
+    description:
+      he: איתן גינזבורג שירת בצה"ל בחיל המשטרה הצבאית והשתחרר בדרגת רב-סרן ב-1999. הוא
+        בעל תואר ראשון במשפטים ובממשל מהמרכז הבינתחומי הרצליה (אוניברסיטת
+        רייכמן) ותואר שני במדע המדינה מאוניברסיטת תל אביב, וכיהן שנים רבות כחבר
+        מועצת העיר וסגן ראש עיריית רעננה.
+      en: Eitan Ginzburg served in the IDF Military Police Corps and was discharged
+        with the rank of major in 1999. He holds an LLB in law and a BA in
+        government from the Interdisciplinary Center Herzliya (Reichman
+        University) and an MA in political science from Tel Aviv University, and
+        served for many years as a Ra'anana city council member and deputy
+        mayor.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Eitan_Ginzburg
+        title: Eitan Ginzburg
+        publisher: Wikipedia

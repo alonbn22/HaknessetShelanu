@@ -1,0 +1,74 @@
+# PersonID 23560. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 23560
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חברת כנסת מטעם ישראל ביתנו, עורכת דין
+      en: Member of Knesset for Yisrael Beiteinu and a lawyer
+    description:
+      he: יוליה מלינובסקי, ילידת לוהנסק שבאוקראינה (1975) שעלתה לישראל ב-1998, היא
+        עורכת דין בהשכלתה (תואר במשפטים מאוניברסיטת דאל במזרח אוקראינה) ושירתה
+        כקצינת כוח אדם בכוח משטרה מקומי באוקראינה. היא נכנסה לכנסת לראשונה ב-1
+        ביוני 2016 כחברת כנסת מטעם מפלגת ישראל ביתנו, כשהחליפה את אביגדור ליברמן
+        מכוח 'החוק הנורווגי' עם מינויו לשר הביטחון, ומאז כיהנה במספר כנסות.
+      en: Yulia (Julia) Malinovsky, born in Luhansk, Ukraine (1975) and immigrated to
+        Israel in 1998, is a lawyer by training (law degree from East Ukrainian
+        Volodymyr Dahl National University) who also served as a manpower
+        officer in a local police force in Ukraine. She first entered the
+        Knesset on 1 June 2016 as a member for the Yisrael Beiteinu party,
+        replacing Avigdor Lieberman under the 'Norwegian Law' upon his
+        appointment as Defense Minister, and has since served across several
+        Knesset terms.
+    date: 2016-06-01
+    sources:
+      - url: https://en.wikipedia.org/wiki/Yulia_Malinovsky
+        title: Yulia Malinovsky
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q24276432
+        title: Julia Malinovsky (Q24276432)
+        publisher: Wikidata
+  - kind: positive
+    category: volunteering
+    title:
+      he: חברת מועצת העיר חולון
+      en: Member of the Holon City Council
+    description:
+      he: טרם כניסתה לכנסת, מלינובסקי נבחרה בשנת 2003 למועצת העיר חולון ברשימת ישראל
+        ביתנו, ושימשה בכך בתפקיד ציבורי ברמה המקומית.
+      en: Before entering the Knesset, Malinovsky was elected in 2003 to the Holon
+        City Council on the Yisrael Beiteinu list, serving in local public
+        office.
+    date: 2003-01-01
+    sources:
+      - url: https://en.wikipedia.org/wiki/Yulia_Malinovsky
+        title: Yulia Malinovsky
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: ממנסחי החקיקה בכנסת בעניין אונר"א
+      en: Among the sponsors of the Knesset's UNRWA legislation
+    description:
+      he: מלינובסקי נמנתה עם מנסחי ויוזמי החקיקה בכנסת בעניין אונר"א (סוכנות הסעד
+        והתעסוקה של האו"ם לפליטים פלסטינים). ב-28 באוקטובר 2024 אישרה הכנסת ברוב
+        של 92 מול 10 חוק האוסר על אונר"א לפעול בשטח הריבוני של מדינת ישראל, וכן
+        חוק נוסף שמלינובסקי נמנתה עם מחבריו האוסר על רשויות המדינה לקיים מגע עם
+        הסוכנות.
+      en: Malinovsky was among the sponsors and co-authors of Knesset legislation
+        concerning UNRWA (the UN Relief and Works Agency for Palestine
+        Refugees). On 28 October 2024 the Knesset approved, by a vote of 92 to
+        10, a law barring UNRWA from operating in sovereign Israeli territory,
+        as well as an accompanying law she co-authored prohibiting state
+        authorities from any contact with the agency.
+    date: 2024-10-28
+    sources:
+      - url: https://www.jns.org/knesset-bans-unrwa-in-israel-outlaws-all-official-contacts/
+        title: Knesset bans UNRWA, outlaws all official contact
+        publisher: JNS
+      - url: https://www.timesofisrael.com/knesset-approves-laws-barring-unrwa-from-israel-limiting-it-in-gaza-and-west-bank/
+        title: Knesset approves laws barring UNRWA from Israel, limiting it in Gaza and
+          West Bank
+        publisher: The Times of Israel

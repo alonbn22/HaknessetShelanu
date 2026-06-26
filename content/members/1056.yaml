@@ -1,0 +1,66 @@
+# PersonID 1056. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 1056
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: כיהן כשר השירותים הדתיים וכשר הרווחה
+      en: Served as Minister of Religious Services and Minister of Welfare
+    description:
+      he: יעקב מרגי, חבר כנסת מטעם ש"ס, כיהן כשר השירותים הדתיים בין השנים 2009
+        ל-2013, ומאוחר יותר כשר הרווחה והביטחון החברתי החל מסוף 2022 ועד
+        התפטרותו ביולי 2025 בעקבות פרישת ש"ס מהממשלה.
+      en: Yaakov Margi, a Knesset member for Shas, served as Minister of Religious
+        Services from 2009 to 2013, and later as Minister of Welfare and Social
+        Affairs from late 2022 until his resignation in July 2025 following
+        Shas's withdrawal from the government.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Ya'akov_Margi
+        title: Ya'akov Margi
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q2330483
+        title: Ya'akov Margi (Q2330483)
+        publisher: Wikidata
+      - url: https://www.timesofisrael.com/liveblog_entry/shas-ministers-file-resignations-as-party-withdraws-from-government/
+        title: Shas ministers file resignations as party withdraws from government
+        publisher: The Times of Israel
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר כנסת ותיק החל משנת 2003
+      en: Veteran Knesset member since 2003
+    description:
+      he: מרגי נבחר לראשונה לכנסת ה-16 בשנת 2003 וכיהן ברציפות לאורך מספר כהונות כנסת
+        מטעם ש"ס, ובהן שימש בין היתר כיושב ראש ועדת הכנסת.
+      en: Margi was first elected to the 16th Knesset in 2003 and served continuously
+        across multiple Knesset terms as a member of Shas, including a period
+        chairing the House Committee.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Ya'akov_Margi
+        title: Ya'akov Margi
+        publisher: Wikipedia
+      - url: https://www.jewishvirtuallibrary.org/yakov-margi
+        title: Yakov Margi
+        publisher: Jewish Virtual Library
+  - kind: positive
+    category: achievement
+    title:
+      he: רקע בשירות ציבורי ודתי בבאר שבע
+      en: Public and religious service background in Beersheba
+    description:
+      he: לפני כניסתו לכנסת כיהן מרגי כיושב ראש המועצה הדתית בבאר שבע בין השנים 1993
+        ל-2003, ושימש כמנכ"ל תנועת ש"ס החל משנת 2001. הוא נולד ברבאט שבמרוקו
+        ועלה לישראל עם משפחתו ב-1962 במסגרת מבצע יכין.
+      en: Before entering the Knesset, Margi chaired the Beersheba local religious
+        council from 1993 to 2003 and served as director general of the Shas
+        movement from 2001. He was born in Rabat, Morocco, and immigrated to
+        Israel with his family in 1962 as part of Operation Yachin.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Ya'akov_Margi
+        title: Ya'akov Margi
+        publisher: Wikipedia
+      - url: https://www.jewishvirtuallibrary.org/yakov-margi
+        title: Yakov Margi
+        publisher: Jewish Virtual Library

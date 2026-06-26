@@ -17,6 +17,9 @@
 # remains part of the coalition. Verify before publishing.
 
 knesset: 25
+asOf: "2026-06"
+sourceUrl: "https://en.wikipedia.org/wiki/Thirty-seventh_government_of_Israel"
+sourceLabel: "Thirty-seventh government of Israel (Wikipedia)"
 coalitionFactionIds:
   - 1096 # הליכוד
   - 1095 # ש"ס

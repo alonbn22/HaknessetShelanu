@@ -1,0 +1,83 @@
+# PersonID 23597. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 23597
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: ראש עיריית דימונה (2003–2013)
+      en: Mayor of Dimona (2003–2013)
+    description:
+      he: מאיר כהן כיהן כראש עיריית דימונה משנת 2003, לאחר שנבחר ב-2003 ונבחר מחדש
+        ב-2008, ועד 2013, אז התפטר עם השבעתו כחבר הכנסת. קודם לכן עבד בעיר כמורה
+        וכמנהל בית ספר.
+      en: Meir Cohen served as Mayor of Dimona from 2003, having been elected in 2003
+        and re-elected in 2008, until 2013, when he resigned upon being sworn in
+        as a member of the Knesset. Before entering politics he worked in the
+        city as a teacher and school principal.
+    date: "2003"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Meir_Cohen_(politician)
+        title: Meir Cohen (politician)
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%9E%D7%90%D7%99%D7%A8_%D7%9B%D7%94%D7%9F
+        title: מאיר כהן
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: שר הרווחה והשירותים החברתיים (שתי כהונות)
+      en: Minister of Welfare and Social Affairs (two terms)
+    description:
+      he: "כהן כיהן כשר הרווחה והשירותים החברתיים בישראל בשתי תקופות נפרדות מטעם יש
+        עתיד: מ-2013 עד 2014 ושוב מ-2021 עד 2022."
+      en: "Cohen served as Israel's Minister of Welfare and Social Affairs in two
+        separate terms on behalf of Yesh Atid: from 2013 to 2014 and again from
+        2021 to 2022."
+    date: "2013"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Meir_Cohen_(politician)
+        title: Meir Cohen (politician)
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q3663051
+        title: Meir Cohen (Q3663051)
+        publisher: Wikidata
+  - kind: positive
+    category: achievement
+    title:
+      he: צנחן ולוחם במלחמת יום הכיפורים
+      en: Paratrooper who fought in the Yom Kippur War
+    description:
+      he: כהן, יליד מרוקו (אסווירה, מוגדור) שעלה לישראל עם משפחתו בילדותו, גויס לצה"ל
+        ב-1973, התנדב לחטיבת הצנחנים ולחם במלחמת יום הכיפורים.
+      en: Cohen, who was born in Morocco (Essaouira/Mogador) and immigrated to Israel
+        with his family as a child, was drafted into the IDF in 1973,
+        volunteered for the Paratroopers Brigade, and fought in the Yom Kippur
+        War.
+    date: "1973"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Meir_Cohen_(politician)
+        title: Meir Cohen (politician)
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%9E%D7%90%D7%99%D7%A8_%D7%9B%D7%94%D7%9F
+        title: מאיר כהן
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: מועמד מטעם כחול לבן לתפקיד יושב-ראש הכנסת (מרץ 2020)
+      en: Blue and White candidate for Speaker of the Knesset (March 2020)
+    description:
+      he: במרץ 2020 הוצב מאיר כהן כמועמד מטעם גוש כחול לבן לתפקיד יושב-ראש הכנסת, אך
+        משך את מועמדותו לאחר שבני גנץ הציג את מועמדותו שלו, וגנץ נבחר בסופו של
+        דבר לתפקיד.
+      en: In March 2020 Meir Cohen was put forward as the Blue and White bloc's
+        candidate for Speaker of the Knesset, but he withdrew his candidacy
+        after Benny Gantz presented his own bid, and Gantz was ultimately
+        elected to the post.
+    date: 2020-03
+    sources:
+      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/knesset-speaker-in-waiting-moroccan-immigrant-who-studied-pluralism-622192
+        title: "Knesset speaker in-waiting: Moroccan immigrant who studied pluralism"
+        publisher: The Jerusalem Post

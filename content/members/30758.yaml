@@ -1,0 +1,76 @@
+# PersonID 30758. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30758
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חברת הכנסת הראשונה החובשת חיג'אב
+      en: First hijab-wearing woman elected to the Knesset
+    description:
+      he: בבחירות מרץ 2020 נבחרה אימאן ח'טיב יאסין לכנסת מטעם הרשימה המשותפת, והפכה
+        לאישה הראשונה החובשת חיג'אב שנבחרה לכנסת, וכן לאישה הראשונה מטעם הרשימה
+        הערבית המאוחדת (רע"ם) שנבחרה לפרלמנט.
+      en: In the March 2020 election, Iman Khatib-Yassin was elected to the Knesset on
+        the Joint List, becoming the first hijab-wearing woman elected to the
+        Knesset and the first woman from the United Arab List (Ra'am) to serve
+        in parliament.
+    date: 2020-03-02
+    sources:
+      - url: https://en.wikipedia.org/wiki/Iman_Khatib-Yassin
+        title: Iman Khatib-Yassin
+        publisher: Wikipedia
+      - url: https://www.csmonitor.com/World/Middle-East/2020/0727/In-Israel-first-hijab-wearing-lawmaker-hopes-to-build-bridges
+        title: In Israel, first hijab-wearing lawmaker hopes to build bridges
+        publisher: The Christian Science Monitor
+  - kind: positive
+    category: achievement
+    title:
+      he: רקע מקצועי בעבודה סוציאלית ובמנהיגות קהילתית
+      en: Career in social work and community leadership
+    description:
+      he: לפני כניסתה לפוליטיקה עבדה ח'טיב יאסין כעובדת סוציאלית וניהלה מרכז קהילתי
+        ביפיע שבגליל התחתון. היא בעלת תואר ראשון בעבודה סוציאלית מאוניברסיטת
+        חיפה ותואר שני בלימודי נשים מאוניברסיטת תל אביב, ובוגרת מכללת מנדל
+        למנהיגות.
+      en: Before entering politics, Khatib-Yassin worked as a social worker and
+        directed a community centre in Yafa an-Naseriyye in the Lower Galilee.
+        She holds a bachelor's degree in social work from the University of
+        Haifa, a master's degree in women's studies from Tel Aviv University,
+        and is a graduate of the Mandel College for Leadership.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Iman_Khatib-Yassin
+        title: Iman Khatib-Yassin
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q87125690
+        title: Iman Khatib-Yasin (Q87125690)
+        publisher: Wikidata
+  - kind: negative
+    category: controversy
+    status: settled
+    title:
+      he: השעיה על ידי ועדת האתיקה של הכנסת בעקבות התבטאות על מתקפת 7 באוקטובר
+      en: Suspended by the Knesset Ethics Committee over remarks on the October 7
+        attack
+    description:
+      he: בנובמבר 2023 השעתה ועדת האתיקה של הכנסת את ח'טיב יאסין לחודש, מתוכו שבועיים
+        ללא שכר, לאחר שאמרה כי לא נשחטו תינוקות ולא נאנסו נשים, לפחות לא בתיעוד
+        שהוצג לחברי הכנסת, במתקפת חמאס ב-7 באוקטובר 2023. הוועדה קבעה כי בדבריה
+        הכחישה את הזוועות. ח'טיב יאסין התנצלה בפני הוועדה ובמליאת הכנסת ואמרה כי
+        לא התכוונה להמעיט בחומרת הטבח.
+      en: In November 2023 the Knesset Ethics Committee suspended Khatib-Yassin for
+        one month, including two weeks without pay, after she said that babies
+        were not slaughtered and women were not raped, at least not in the
+        footage shown to members, during the October 7, 2023 Hamas attack. The
+        committee found that her comments denied the atrocities. Khatib-Yassin
+        apologised to the committee and the Knesset plenum, saying she had not
+        intended to belittle the massacre.
+    date: 2023-11-15
+    sources:
+      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-773329
+        title: Knesset Ethics Committee sanctions Arab MKs for comments on Hamas war
+        publisher: The Jerusalem Post
+      - url: https://en.wikipedia.org/wiki/Iman_Khatib-Yassin
+        title: Iman Khatib-Yassin
+        publisher: Wikipedia

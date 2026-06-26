@@ -1,0 +1,59 @@
+# PersonID 23591. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 23591
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: אלוף בצה"ל וראש אגף כוח האדם
+      en: IDF Major General and Head of the Manpower Directorate
+    description:
+      he: 'אלעזר שטרן שירת בצה"ל כ-34 שנים (1974–2008) והגיע לדרגת אלוף. בין תפקידיו
+        הבכירים: ראש אגף כוח האדם, מפקד בית הספר לקצינים (בה"ד 1), קצין חינוך
+        ראשי ותפקידי פיקוד בחטיבת הצנחנים.'
+      en: Elazar Stern served in the IDF for some 34 years (1974–2008), reaching the
+        rank of major general (aluf). His senior posts included Head of the
+        Manpower Directorate, commander of the IDF Officers Training School
+        (Bahad 1), Chief Education Officer, and command roles in the
+        Paratroopers Brigade.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Elazar_Stern
+        title: Elazar Stern
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: שר המודיעין (2021–2022)
+      en: Minister of Intelligence (2021–2022)
+    description:
+      he: שטרן, חבר סיעת יש עתיד, כיהן כשר המודיעין בין השנים 2021 ל-2022.
+      en: A member of the Yesh Atid faction, Stern served as Minister of Intelligence
+        between 2021 and 2022.
+    date: 2021-06
+    sources:
+      - url: https://en.wikipedia.org/wiki/Elazar_Stern
+        title: Elazar Stern
+        publisher: Wikipedia
+      - url: https://www.jpost.com/diaspora/intel-minister-stern-talks-ambitions-of-chairing-jewish-agency-681376
+        title: Intel Minister Stern talks ambitions of chairing Jewish Agency
+        publisher: The Jerusalem Post
+  - kind: positive
+    category: achievement
+    title:
+      he: ייסד את פרויקט הגיור 'נתיב' ואת בדיקות ההתאמה לתרומת מח עצם בצה"ל
+      en: Established the IDF 'Nativ' conversion program and IDF bone-marrow donor
+        matching
+    description:
+      he: כראש אגף כוח האדם ייסד שטרן את פרויקט הגיור 'נתיב', שבמסגרתו התגיירו אלפי
+        אנשים, בעיקר עולים מברית המועצות לשעבר. כן הוביל את הכנסת בדיקות ההתאמה
+        לתרומת מח עצם להליך הגיוס לצה"ל, מהלך שתרם להצלת חיים.
+      en: As head of the Manpower Directorate, Stern established the 'Nativ'
+        conversion program, through which thousands of people — mainly
+        immigrants from the former Soviet Union — converted to Judaism. He also
+        led the introduction of bone-marrow donor match testing into the IDF
+        enlistment procedure, an effort credited with helping save lives.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Elazar_Stern
+        title: Elazar Stern
+        publisher: Wikipedia

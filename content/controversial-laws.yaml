@@ -1,0 +1,45 @@
+# Editorial — a curated, neutral, sourced list of especially controversial laws
+# and legislative episodes in Israel. Each entry links a reputable source.
+# Describe factually what the law does AND why it was contested (both sides),
+# without taking a position. REVIEW before launch.
+laws:
+  - year: 2023
+    title:
+      he: "הרפורמה המשפטית והצעת חוק הסבירות (2023)"
+      en: "The judicial reform and the reasonableness bill (2023)"
+    summary:
+      he: "חבילת שינויים שנועדה לצמצם את כוחו של בית המשפט העליון ולשנות את מאזן הכוחות בין הרשויות. תיקון 'עילת הסבירות' אושר ביולי 2023 ועורר את גל המחאות הגדול בתולדות המדינה; תומכים ראו בו חיזוק נבחרי הציבור, מתנגדים ראו בו פגיעה באיזונים ובבלמים. בג\"ץ ביטל את התיקון בינואר 2024."
+      en: "A package meant to curb the Supreme Court's power and shift the balance among the branches of government. The 'reasonableness' amendment passed in July 2023 and triggered the largest protest wave in the country's history; supporters saw it as strengthening elected officials, opponents as weakening checks and balances. The High Court struck the amendment down in January 2024."
+    sourceUrl: "https://en.wikipedia.org/wiki/2023_Israeli_judicial_reform"
+  - year: 2018
+    title:
+      he: "חוק הלאום (2018)"
+      en: "The Nation-State Law (2018)"
+    summary:
+      he: "חוק יסוד המגדיר את ישראל כמדינת הלאום של העם היהודי. תומכים ראו בו עיגון אופייה היהודי של המדינה; מבקרים, ובהם בני העדה הדרוזית ואזרחים ערבים, טענו שהוא פוגע במעמד המיעוטים ואינו מזכיר שוויון. בג\"ץ דחה ב-2021 עתירות לביטולו."
+      en: "A Basic Law defining Israel as the nation-state of the Jewish people. Supporters saw it as anchoring the state's Jewish character; critics — including Druze and Arab citizens — argued it downgrades minorities and omits any mention of equality. The High Court rejected petitions against it in 2021."
+    sourceUrl: "https://en.wikipedia.org/wiki/Basic_Law:_Israel_as_the_Nation-State_of_the_Jewish_People"
+  - year: 2011
+    title:
+      he: "חוק הנכבה (2011)"
+      en: "The Nakba Law (2011)"
+    summary:
+      he: "תיקון המסמיך את שר האוצר לשלול מימון ממוסדות הממומנים על ידי המדינה המציינים את יום העצמאות כיום אֵבל או שוללים את היות ישראל מדינה יהודית ודמוקרטית. מבקרים טענו שהוא מגביל את חופש הביטוי של אזרחים ערבים; תומכים טענו שאין לממן פעולות נגד המדינה."
+      en: "An amendment authorizing the Finance Minister to withhold funding from state-funded bodies that mark Independence Day as a day of mourning or deny Israel's status as a Jewish and democratic state. Critics said it curbs Arab citizens' freedom of expression; supporters argued state funds should not support delegitimization."
+    sourceUrl: "https://en.wikipedia.org/wiki/Nakba_Law"
+  - year: 2005
+    title:
+      he: "חוק יישום ההתנתקות (2005)"
+      en: "The Gaza Disengagement Law (2005)"
+    summary:
+      he: "החוק שהסדיר את פינוי כל היישובים הישראליים ואת נסיגת הצבא מרצועת עזה (ומארבעה יישובים בצפון השומרון). מהלך שחילק עמוקות את החברה: תומכים ראו בו צמצום חיכוך, ומתנגדים — בעיקר תושבי היישובים — התנגדו לעקירת קהילות."
+      en: "The law that implemented the evacuation of all Israeli settlements and the military withdrawal from the Gaza Strip (and four communities in the northern West Bank). It deeply split Israeli society: supporters saw it as reducing friction, while opponents — chiefly the settlers — objected to uprooting communities."
+    sourceUrl: "https://en.wikipedia.org/wiki/Israeli_disengagement_from_the_Gaza_Strip"
+  - year: 2003
+    title:
+      he: "חוק האזרחות והכניסה לישראל (2003)"
+      en: "The Citizenship and Entry into Israel Law (2003)"
+    summary:
+      he: "הוראת שעה המגבילה איחוד משפחות והענקת מעמד לפלסטינים מהגדה ומעזה הנשואים לאזרחי ישראל. תומכים נימקו אותה בשיקולי ביטחון; מבקרים, ובהם ארגוני זכויות אדם, טענו שהיא פוגעת בזכות לחיי משפחה ובעיקר במשפחות ערביות."
+      en: "A temporary order restricting family reunification and the granting of status to Palestinians from the West Bank and Gaza who are married to Israeli citizens. Supporters justified it on security grounds; critics, including human-rights groups, argued it harms the right to family life, mainly for Arab families."
+    sourceUrl: "https://en.wikipedia.org/wiki/Citizenship_and_Entry_into_Israel_Law"

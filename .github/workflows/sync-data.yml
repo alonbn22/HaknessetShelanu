@@ -29,10 +29,13 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 24
           cache: npm
 
-      - run: npm ci
+      # Resilient install: `npm ci` is strict about lockfile↔resolution match,
+      # which can drift across npm versions (a transitive @swc/helpers range).
+      # The sync job just needs working deps, so fall back to `npm install`.
+      - run: npm ci || npm install
 
       - name: Run incremental sync
         run: npm run sync

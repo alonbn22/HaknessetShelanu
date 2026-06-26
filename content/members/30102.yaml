@@ -1,0 +1,57 @@
+# PersonID 30102. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30102
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: האישה הראשונה שמונתה ליושבת ראש ועדת הביטחון הלאומי של הכנסת
+      en: First woman appointed chair of the Knesset's National Security Committee
+    description:
+      he: בשנת 2021 מונתה מירב בן ארי ליושבת ראש ועדת הביטחון הלאומי של הכנסת, והייתה
+        האישה הראשונה שמונתה לתפקיד זה.
+      en: In 2021 Meirav Ben-Ari was appointed chair of the Knesset's National
+        Security Committee, becoming the first woman to be appointed to that
+        position.
+    date: "2021"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Meirav_Ben-Ari
+        title: Meirav Ben-Ari
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: שירות צבאי כקצינת חינוך בחטיבת גולני
+      en: Military service as education officer of the Golani Brigade
+    description:
+      he: בן ארי שירתה בצה"ל בחיל החינוך והנוער, ותפקידה האחרון היה קצינת החינוך של
+        חטיבת גולני.
+      en: Ben-Ari served in the IDF Education and Youth Corps, with her last post
+        being education officer of the Golani Brigade.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Meirav_Ben-Ari
+        title: Meirav Ben-Ari
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: חברת כנסת מכהנת שהפכה לאם יחידנית מתוך בחירה
+      en: Sitting MK who became a single mother by choice
+    description:
+      he: במרץ 2017 ילדה בן ארי, אז חברת כנסת מטעם כולנו, את בתה והפכה לאם יחידנית
+        מתוך בחירה, לאחר שהרתה בהסכם הורות משותפת בכתב עם חבר קרוב. על פי
+        הדיווחים הייתה חברת הכנסת היחידנית הראשונה שעשתה כן.
+      en: In March 2017 Ben-Ari, then a Kulanu MK, gave birth to her daughter and
+        became a single mother by choice, having conceived under a written
+        co-parenting agreement with a close friend. She was reported to be the
+        first single Knesset member to pursue shared parenting out of wedlock in
+        this way.
+    date: 2017-03
+    sources:
+      - url: https://www.haaretz.com/israel-news/2017-03-26/ty-article/mazal-tov-mk-merav-ben-ari-gives-birth-to-baby-girl-with-gay-father/0000017f-e15c-d9aa-afff-f95cb9500000
+        title: "Mazal Tov: MK Merav Ben-Ari Gives Birth to Baby Girl With Gay Father"
+        publisher: Haaretz
+      - url: https://www.timesofisrael.com/lawmaker-gives-birth-to-baby-girl-conceived-with-gay-friend/
+        title: MK gives birth to baby girl conceived with gay friend
+        publisher: The Times of Israel

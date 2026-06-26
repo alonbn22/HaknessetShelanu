@@ -1,0 +1,62 @@
+# PersonID 30701. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30701
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר הכנסת מטעם הליכוד מאז 2019
+      en: Member of Knesset for Likud since 2019
+    description:
+      he: אופיר כץ, יליד עפולה (19 במאי 1980), נבחר לכנסת ברשימת הליכוד בבחירות אפריל
+        2019 ומכהן כחבר כנסת ברציפות מאז (הכנסת ה-21 ואילך). בעבר עבד במשרדו של
+        בנימין נתניהו וכיועץ לשרים מטעם הליכוד.
+      en: Ofir Katz, born in Afula on 19 May 1980, was elected to the Knesset on the
+        Likud list in the April 2019 election and has served continuously since
+        (21st Knesset onward). He previously worked in Benjamin Netanyahu's
+        office and as an adviser to Likud ministers.
+    date: 2019-04-30
+    sources:
+      - url: https://en.wikipedia.org/wiki/Ofir_Katz
+        title: Ofir Katz
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q63107922
+        title: Ofir Katz (Q63107922)
+        publisher: Wikidata
+  - kind: positive
+    category: achievement
+    title:
+      he: יו"ר ועדת הכנסת ומנהל הקואליציה
+      en: Chair of the Knesset House Committee and coalition whip
+    description:
+      he: כץ מכהן כיו"ר ועדת הכנסת (ועדת הבית) מאז 2023 וכמנהל הקואליציה בכנסת ה-25
+        שהושבעה בנובמבר 2022, תפקידים מרכזיים בניהול עבודת המליאה והקואליציה.
+      en: Katz has served as chair of the Knesset House Committee since 2023 and as
+        the coalition's parliamentary whip in the 25th Knesset, which was sworn
+        in in November 2022 — central roles in managing the work of the plenum
+        and the governing coalition.
+    date: 2023-01-01
+    sources:
+      - url: https://en.wikipedia.org/wiki/Ofir_Katz
+        title: Ofir Katz
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: נציג הכנסת בוועדה לבחירת נציב תלונות הציבור על שופטים
+      en: Knesset representative on the panel selecting the judicial ombudsman
+    description:
+      he: באפריל 2025 הצביעה ועדת הכנסת למנות את אופיר כץ לשמש כנציג הכנסת בוועדה
+        האחראית על בחירת נציב תלונות הציבור על שופטים, מינוי שהקנה לקואליציה רוב
+        של 4 מול 3 בוועדה זו.
+      en: In April 2025 the Knesset House Committee voted to appoint Ofir Katz to
+        serve as the Knesset's representative on the committee responsible for
+        selecting the judicial ombudsman (the official who handles public
+        complaints against judges), giving the coalition a 4-3 majority on that
+        panel.
+    date: 2025-04-08
+    sources:
+      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-849340
+        title: Likud MK Ofir Katz to act as Knesset rep. in judicial watchdog committee
+        publisher: The Jerusalem Post

@@ -1,0 +1,56 @@
+# PersonID 30685. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30685
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: יושבת ראש רשות החשמל
+      en: Chairwoman of the Electricity Authority
+    description:
+      he: אורית פרקש הכהן כיהנה כיושבת ראש רשות החשמל (מונתה באופן זמני בספטמבר 2011
+        ובאופן קבוע במרץ 2012), והייתה מהרגולטוריות הבכירות במשק האנרגיה
+        הישראלי. ב-2015 הודחה מתפקידה בהוראת ראש הממשלה בנימין נתניהו, לאחר
+        שהתנגדה בפומבי למתווה הגז ולמונופול בשוק הגז הטבעי.
+      en: Orit Farkash-Hacohen served as chairwoman of Israel's Electricity Authority
+        (appointed temporarily in September 2011 and permanently in March 2012),
+        one of the senior regulators in the Israeli energy sector. In 2015 she
+        was dismissed by order of Prime Minister Benjamin Netanyahu after she
+        publicly opposed the natural gas framework agreement and the monopoly in
+        the natural gas market.
+    date: 2015-08-07
+    sources:
+      - url: https://www.haaretz.com/israel-news/business/electricity-authority-head-is-dismissed-1.5384256
+        title: Electricity Authority Head Is Dismissed
+        publisher: Haaretz
+      - url: https://en.wikipedia.org/wiki/Orit_Farkash-Hacohen
+        title: Orit Farkash-Hacohen
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: שרה בכמה תיקים בממשלות ישראל
+      en: Government minister across multiple portfolios
+    description:
+      he: "פרקש הכהן כיהנה כשרה במספר תיקים: שרת הנושאים האסטרטגיים (מונתה במאי 2020),
+        שרת התיירות (מאוקטובר 2020, לאחר התפטרותו של אסף זמיר) ושרת המדע,
+        הטכנולוגיה והחלל (מ-2021). את הקריירה הציבורית שלה בנתה על רקע של עורכת
+        דין ורגולטורית בתחומי האנרגיה וההגבלים העסקיים."
+      en: "Farkash-Hacohen served as a government minister in several portfolios:
+        Minister of Strategic Affairs (appointed May 2020), Minister of Tourism
+        (from October 2020, after the resignation of Assaf Zamir), and Minister
+        of Science, Technology and Space (from 2021). Her public career was
+        built on a background as a lawyer and regulator in the fields of energy
+        and antitrust."
+    date: 2020-05-14
+    sources:
+      - url: https://www.jpost.com/breaking-news/mk-orit-farkash-hacohen-to-serve-as-strategic-affairs-minister-628047
+        title: MK Orit Farkash Hacohen to serve as strategic affairs minister
+        publisher: The Jerusalem Post
+      - url: https://www.timesofisrael.com/farkash-hacohen-tapped-as-tourism-minister-after-zamir-resignation/
+        title: Farkash-Hacohen tapped as tourism minister after Zamir resignation
+        publisher: The Times of Israel
+      - url: https://en.wikipedia.org/wiki/Orit_Farkash-Hacohen
+        title: Orit Farkash-Hacohen
+        publisher: Wikipedia

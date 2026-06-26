@@ -18,6 +18,9 @@ const httpUrl = z
 const coalitionSchema = z.object({
   knesset: z.number(),
   coalitionFactionIds: z.array(z.number()),
+  asOf: z.string().optional(), // when this composition was last verified
+  sourceUrl: httpUrl.optional(),
+  sourceLabel: z.string().optional(),
 });
 
 let _coalition: z.infer<typeof coalitionSchema> | null = null;
@@ -230,6 +233,7 @@ const glossaryTermSchema = z.object({
   category: z.enum(GLOSSARY_CATEGORIES),
   term: localizedText,
   def: localizedText,
+  sourceUrl: httpUrl.optional(), // for entries stating specific legal figures/rules
 });
 export type GlossaryTerm = z.infer<typeof glossaryTermSchema>;
 
@@ -339,4 +343,27 @@ export function getForeignAid(): ForeignAid {
     _foreignAid = parsed;
   }
   return _foreignAid;
+}
+
+// ---------- controversial laws (editorial, sourced) ----------
+
+const controversialLawSchema = z.object({
+  year: z.number(),
+  title: localizedText,
+  summary: localizedText,
+  sourceUrl: httpUrl,
+});
+export type ControversialLaw = z.infer<typeof controversialLawSchema>;
+
+let _controversialLaws: ControversialLaw[] | null = null;
+
+export function getControversialLaws(): ControversialLaw[] {
+  if (!_controversialLaws) {
+    const raw = fs.readFileSync(path.join(CONTENT_DIR, "controversial-laws.yaml"), "utf8");
+    _controversialLaws = z
+      .object({ laws: z.array(controversialLawSchema) })
+      .parse(parse(raw))
+      .laws.sort((a, b) => b.year - a.year);
+  }
+  return _controversialLaws;
 }

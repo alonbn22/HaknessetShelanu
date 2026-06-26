@@ -1,0 +1,59 @@
+# PersonID 30686. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30686
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: שרת השוויון החברתי של ישראל
+      en: Israel's Minister for Social Equality
+    description:
+      he: מירב כהן מונתה לשרת השוויון החברתי במאי 2020, וכיהנה בתפקיד שוב מיוני 2021
+        ועד דצמבר 2022. בתקופת כהונתה היתה אחראית, בין היתר, על קידום תוכניות
+        ממשלתיות לצמצום פערים חברתיים-כלכליים.
+      en: Meirav Cohen was appointed Minister for Social Equality in May 2020 and
+        served again in the role from June 2021 until December 2022, overseeing
+        government programs aimed at reducing socio-economic gaps.
+    date: 2020-05-17
+    sources:
+      - url: https://www.jpost.com/breaking-news/meirav-cohen-to-be-made-social-equality-minister-628019
+        title: Meirav Cohen to be made social equality minister
+        publisher: The Jerusalem Post
+      - url: https://en.wikipedia.org/wiki/Meirav_Cohen
+        title: Meirav Cohen
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: יושבת ראש הוועדה לקידום מעמד האישה ולשוויון מגדרי
+      en: Chair of the Committee on the Status of Women and Gender Equality
+    description:
+      he: כחברת הכנסת מטעם יש עתיד, מירב כהן מכהנת כיושבת ראש הוועדה לקידום מעמד האישה
+        ולשוויון מגדרי בכנסת, ומובילה דיונים בנושאים כגון פגיעות מיניות ורצח
+        נשים.
+      en: As a Knesset member for Yesh Atid, Meirav Cohen serves as chair of the
+        Committee on the Status of Women and Gender Equality, leading hearings
+        on issues such as sexual assault and femicide.
+    sources:
+      - url: https://www.jpost.com/tags/meirav-cohen
+        title: Meirav Cohen articles and latest stories
+        publisher: The Jerusalem Post
+  - kind: positive
+    category: volunteering
+    title:
+      he: פעילות ציבורית במאבק בהונאת קשישים
+      en: Public-service work against fraud targeting the elderly
+    description:
+      he: לפני כניסתה לפוליטיקה הארצית כיהנה מירב כהן כחברת מועצת עיריית ירושלים
+        (נבחרה ב-2011 מטעם תנועת התעוררות ירושלים) כאחראית תיק הנוער, וייסדה
+        עמותה הפועלת למאבק בהונאות המכוונות נגד אזרחים ותיקים.
+      en: Before her national political career, Meirav Cohen served on the Jerusalem
+        City Council (elected in 2011 as part of the Jerusalem Hitorerut party)
+        as youth portfolio holder, and founded a nonprofit that fights fraud
+        targeting elderly citizens.
+    date: "2011"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Meirav_Cohen
+        title: Meirav Cohen
+        publisher: Wikipedia

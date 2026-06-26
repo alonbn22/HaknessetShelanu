@@ -8,7 +8,7 @@ const USER_AGENT =
 // (plus anyone carrying a Knesset member website ID), with labels in our
 // four languages, photo, and Hebrew Wikipedia article.
 const SPARQL = `
-SELECT ?siteId ?labelHe ?labelEn ?labelAr ?labelRu ?image ?heArticle WHERE {
+SELECT ?item ?siteId ?labelHe ?labelEn ?labelAr ?labelRu ?image ?heArticle WHERE {
   { ?item p:P39/ps:P39 wd:Q4047513 . } UNION { ?item wdt:P9770 ?anyId . }
   OPTIONAL { ?item wdt:P9770 ?siteId . }
   OPTIONAL { ?item wdt:P18 ?image . }
@@ -20,6 +20,7 @@ SELECT ?siteId ?labelHe ?labelEn ?labelAr ?labelRu ?image ?heArticle WHERE {
 }`;
 
 type WikidataRow = {
+  qid?: string; // Wikidata entity id, e.g. "Q123"
   siteId: number | null;
   nameHe?: string;
   nameEn?: string;
@@ -28,6 +29,11 @@ type WikidataRow = {
   imageFile?: string; // Commons file name
   wikipediaHe?: string;
 };
+
+// Entity URI (…/entity/Q123) -> "Q123". Wikidata returns the identifier with an
+// http scheme; we only read the QID after "/entity/", so the scheme is irrelevant.
+const qidFromUri = (uri?: string): string | undefined =>
+  uri ? uri.split("/entity/")[1] : undefined;
 
 const normalizeName = (s: string) =>
   s.replace(/["'׳״]/g, "").replace(/\s+/g, " ").trim();
@@ -47,6 +53,7 @@ async function fetchWikidata(): Promise<WikidataRow[]> {
       const siteId = parseInt(b.siteId?.value, 10);
       const imageUrl: string | undefined = b.image?.value;
       return {
+        qid: qidFromUri(b.item?.value),
         siteId: Number.isNaN(siteId) ? null : siteId,
         nameHe: b.labelHe?.value,
         nameEn: b.labelEn?.value,
@@ -118,6 +125,7 @@ async function searchWikidataPerson(
     if (!isMk) continue;
     const label = (lang: string) => entity.labels?.[lang]?.value as string | undefined;
     return {
+      qid: id,
       siteId: null,
       nameHe: label("he"),
       nameEn: label("en"),
@@ -249,6 +257,7 @@ export async function enrichFromWikidata() {
     const img = row.imageFile ? commons.get(row.imageFile) : undefined;
     db.update(schema.persons)
       .set({
+        wikidataId: row.qid ?? null,
         nameEn: row.nameEn ?? null,
         nameAr: row.nameAr ?? null,
         nameRu: row.nameRu ?? null,

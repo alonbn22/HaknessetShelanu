@@ -123,6 +123,7 @@ terms:
     def:
       he: "החוק שמאשר את תקציב המדינה. אם לא מאושר במועד, הכנסת מתפזרת ונקבעות בחירות. עובר שלוש קריאות במליאה."
       en: "The law that approves the state budget. If it isn't passed on time, the Knesset is dissolved and elections are called. It passes three plenum readings."
+    sourceUrl: "https://en.wikipedia.org/wiki/Basic_Law:_The_State_Economy"
   - category: economy
     term: { he: "גירעון תקציבי", en: "Budget deficit" }
     def:
@@ -175,6 +176,7 @@ terms:
     def:
       he: "איחוד של סיעות שיחד מהוות רוב (61+ מתוך 120) ומקימות את הממשלה."
       en: "An alliance of factions that together hold a majority (61+ of 120) and form the government."
+    sourceUrl: "https://en.wikipedia.org/wiki/Basic_Law:_The_Government_(2001)"
   - category: government
     term: { he: "אופוזיציה", en: "Opposition" }
     def:
@@ -185,11 +187,13 @@ terms:
     def:
       he: "הצבעה שמטרתה להפיל את הממשלה. בישראל נדרש \"אי־אמון קונסטרוקטיבי\" — רוב של 61 שתומך בממשלה חלופית."
       en: "A vote aimed at toppling the government. In Israel a \"constructive\" no-confidence is required — 61 MKs backing an alternative government."
+    sourceUrl: "https://en.wikipedia.org/wiki/Constructive_vote_of_no_confidence"
   - category: government
     term: { he: "החוק הנורווגי", en: "The Norwegian Law" }
     def:
       he: "חוק שמאפשר לשר או לסגן שר להתפטר ממושבו בכנסת ולהתפנות לעבודת הממשלה, והמועמד הבא ברשימת מפלגתו נכנס לכנסת במקומו. אם השר מסיים את כהונתו הוא יכול לחזור למושבו. לכן יכולים לכהן בכנסת יותר מ-120 אנשים לאורך הקדנציה, אף שבכל רגע יש 120 חברי כנסת מכהנים."
       en: "A law that lets a minister or deputy minister resign their Knesset seat to focus on government work, with the next candidate on their party list entering the Knesset in their place. If the minister later leaves office they can reclaim their seat. This is why more than 120 people can serve over a term, even though there are always exactly 120 sitting members at any moment."
+    sourceUrl: "https://en.wikipedia.org/wiki/Norwegian_Law_(Israel)"
   - category: government
     term: { he: "לובי / שדלן", en: "Lobby / lobbyist" }
     def:
@@ -222,6 +226,7 @@ terms:
     def:
       he: "אחוז הקולות המינימלי שרשימה חייבת לעבור כדי להיכנס לכנסת. בישראל הוא 3.25%."
       en: "The minimum share of the vote a list must pass to enter the Knesset. In Israel it is 3.25%."
+    sourceUrl: "https://en.wikipedia.org/wiki/Elections_in_Israel"
   - category: electoral
     term: { he: "אות הפתק", en: "Ballot letters" }
     def:
@@ -259,3 +264,790 @@ terms:
     def:
       he: "הסדר היסטורי לא־כתוב שמסדיר את יחסי דת ומדינה בישראל (שבת, כשרות, נישואין ועוד)."
       en: "An unwritten historical arrangement governing religion-and-state matters in Israel (Sabbath, kashrut, marriage, etc.)."
+  - category: ideology
+    term:
+      he: סוציאל-דמוקרטיה
+      en: Social democracy
+    def:
+      he: גישה פוליטית המשלבת כלכלת שוק עם מדינת רווחה רחבה ושירותים ציבוריים, במטרה
+        לצמצם אי-שוויון במסגרת המשטר הדמוקרטי.
+      en: A political approach that combines a market economy with a broad welfare
+        state and public services, aiming to reduce inequality within a democratic
+        framework.
+    sourceUrl: https://en.wikipedia.org/wiki/Social_democracy
+  - category: ideology
+    term:
+      he: פשיזם
+      en: Fascism
+    def:
+      he: אידאולוגיה לאומנית סמכותנית מהמאה ה-20, המאדירה את המדינה והמנהיג, מדכאת
+        התנגדות ושוללת דמוקרטיה ופלורליזם.
+      en: An authoritarian, ultranationalist 20th-century ideology that glorifies the
+        state and a single leader, suppresses opposition, and rejects democracy
+        and pluralism.
+    sourceUrl: https://en.wikipedia.org/wiki/Fascism
+  - category: ideology
+    term:
+      he: אנרכיזם
+      en: Anarchism
+    def:
+      he: אידאולוגיה השוללת שלטון כפוי והיררכיה, ודוגלת בארגון חברתי וולונטרי המבוסס
+        על שיתוף פעולה חופשי בין בני אדם.
+      en: An ideology that rejects coercive rule and hierarchy, advocating voluntary
+        social organization based on free cooperation among people.
+    sourceUrl: https://en.wikipedia.org/wiki/Anarchism
+  - category: ideology
+    term:
+      he: פמיניזם
+      en: Feminism
+    def:
+      he: תנועה חברתית ופוליטית הפועלת לשוויון זכויות והזדמנויות בין נשים לגברים בכל
+        תחומי החיים.
+      en: A social and political movement that works for equal rights and
+        opportunities between women and men in all areas of life.
+    sourceUrl: https://en.wikipedia.org/wiki/Feminism
+  - category: spectrum
+    term:
+      he: ימין ושמאל פוליטיים
+      en: Left–Right Political Spectrum
+    def:
+      he: 'דרך נפוצה למקם דעות פוליטיות על ציר אחד: ה"שמאל" נוטה לתמוך בשוויון חברתי
+        ובמעורבות ממשלתית רחבה, וה"ימין" נוטה להדגיש מסורת, סדר ושוק חופשי. זהו
+        כלי כללי לתיאור עמדות, ולא חלוקה מדויקת.'
+      en: 'A common way to place political views along a single line: the "left" tends
+        to favor social equality and a larger role for government, while the
+        "right" tends to emphasize tradition, order, and free markets. It is a
+        broad descriptive tool rather than a precise classification.'
+    sourceUrl: https://en.wikipedia.org/wiki/Left%E2%80%93right_political_spectrum
+  - category: spectrum
+    term:
+      he: מרכז פוליטי
+      en: Centrism
+    def:
+      he: עמדה פוליטית הממוקמת בין הימין לשמאל, המעדיפה לרוב פשרה, מתינות ושינוי
+        הדרגתי על פני שינויים קיצוניים לכל כיוון.
+      en: A political position located between the left and the right, generally
+        favoring compromise, moderation, and gradual change over sweeping shifts
+        in either direction.
+    sourceUrl: https://en.wikipedia.org/wiki/Centrism
+  - category: spectrum
+    term:
+      he: מתינות פוליטית
+      en: Moderate
+    def:
+      he: אדם או עמדה הנמנעים מדעות קיצוניות ופתוחים לפשרה ולגישות מתונות, גם כאשר הם
+        משתייכים לימין או לשמאל.
+      en: A person or stance that avoids extreme positions and is open to compromise
+        and tempered approaches, even when broadly aligned with the right or the
+        left.
+    sourceUrl: https://en.wikipedia.org/wiki/Moderate
+  - category: spectrum
+    term:
+      he: רדיקליזם פוליטי
+      en: Political Radicalism
+    def:
+      he: תמיכה בשינוי מהותי ועמוק של החברה או של השלטון מן היסוד, ולא רק בתיקונים
+        קטנים. רדיקליות יכולה להופיע בכל קצה של המפה הפוליטית.
+      en: Support for deep, fundamental change to society or government from the roots
+        up, rather than small adjustments. Radicalism can appear at either end of
+        the political map.
+    sourceUrl: https://en.wikipedia.org/wiki/Radical_politics
+  - category: spectrum
+    term:
+      he: אקסטרמיזם (קיצוניות)
+      en: Extremism
+    def:
+      he: החזקה בעמדות רחוקות מאוד מן ההסכמה המקובלת בחברה, ולעיתים נכונות להשתמש
+        באמצעים קיצוניים כדי לקדם אותן. המונח חל על קיצוניות בימין ובשמאל כאחד.
+      en: Holding views that are far removed from a society's mainstream consensus,
+        and sometimes a willingness to use extreme means to advance them. The term
+        applies to extremes on both the right and the left.
+    sourceUrl: https://en.wikipedia.org/wiki/Extremism
+  - category: spectrum
+    term:
+      he: פרוגרסיביות (קדמה)
+      en: Progressivism
+    def:
+      he: גישה פוליטית הדוגלת בקידום שינויים חברתיים ורפורמות במטרה לשפר את מצב החברה,
+        לעיתים תוך הרחבת זכויות ושוויון.
+      en: A political outlook that favors advancing social change and reforms in order
+        to improve society, often by expanding rights and equality.
+    sourceUrl: https://en.wikipedia.org/wiki/Progressivism
+  - category: spectrum
+    term:
+      he: ריאקציה (שמרנות מחזירה)
+      en: Reactionary
+    def:
+      he: עמדה השואפת לחזור למצב חברתי או פוליטי קודם שנתפס בעיני מצדדיה כעדיף,
+        ומתנגדת לשינויים מתקדמים שהתרחשו.
+      en: A position that seeks to return to an earlier social or political order seen
+        by its supporters as preferable, opposing progressive changes that have
+        already taken place.
+    sourceUrl: https://en.wikipedia.org/wiki/Reactionary
+  - category: government
+    term:
+      he: שיטה פרלמנטרית
+      en: Parliamentary System
+    def:
+      he: שיטת ממשל שבה הרשות המבצעת (הממשלה) נשענת על אמון הפרלמנט ויכולה לכהן רק כל
+        עוד יש לה רוב התומך בה. ראש הממשלה מוביל את הממשלה ומגיע בדרך כלל מתוך
+        הסיעה הגדולה בפרלמנט.
+      en: A system of government in which the executive (the government) draws its
+        authority from, and remains accountable to, the parliament, staying in
+        office only as long as it holds the parliament's confidence. The head of
+        government usually comes from the largest group in parliament.
+    sourceUrl: https://en.wikipedia.org/wiki/Parliamentary_system
+  - category: government
+    term:
+      he: שיטה נשיאותית
+      en: Presidential System
+    def:
+      he: שיטת ממשל שבה הנשיא נבחר בנפרד מהפרלמנט ומשמש גם כראש המדינה וגם כראש הרשות
+        המבצעת, ואינו תלוי באמון הפרלמנט כדי לכהן.
+      en: A system of government in which the president is elected separately from the
+        legislature and serves as both head of state and head of the executive
+        branch, without depending on the legislature's confidence to stay in
+        office.
+    sourceUrl: https://en.wikipedia.org/wiki/Presidential_system
+  - category: government
+    term:
+      he: איזונים ובלמים
+      en: Checks and Balances
+    def:
+      he: מנגנונים שבהם כל רשות שלטונית מסוגלת לפקח על הרשויות האחרות ולהגביל אותן,
+        כדי למנוע ריכוז כוח וניצול לרעה של סמכויות.
+      en: Mechanisms by which each branch of government can monitor and limit the
+        others, in order to prevent the concentration of power and abuse of
+        authority.
+    sourceUrl: https://en.wikipedia.org/wiki/Checks_and_balances
+  - category: government
+    term:
+      he: ריבונות
+      en: Sovereignty
+    def:
+      he: הסמכות העליונה והעצמאית של מדינה לשלוט בשטחה ובאזרחיה ולקבל החלטות ללא
+        כפיפות לגורם חיצוני.
+      en: The supreme and independent authority of a state to govern its territory and
+        people and to make decisions free from outside control.
+    sourceUrl: https://en.wikipedia.org/wiki/Sovereignty
+  - category: government
+    term:
+      he: פדרליזם
+      en: Federalism
+    def:
+      he: שיטת ממשל שבה הכוח השלטוני מחולק בין שלטון מרכזי לבין יחידות אזוריות (כמו
+        מדינות או מחוזות), שלכל אחת מהן סמכויות משלה המעוגנות בחוקה.
+      en: A system of government in which power is divided between a central authority
+        and regional units (such as states or provinces), each holding its own
+        powers anchored in the constitution.
+    sourceUrl: https://en.wikipedia.org/wiki/Federalism
+  - category: government
+    term:
+      he: מדינה ריכוזית (אוניטרית)
+      en: Unitary State
+    def:
+      he: מדינה שבה הסמכות השלטונית מרוכזת בידי השלטון המרכזי, שיכול להאציל סמכויות
+        ליחידות מקומיות אך גם לבטלן או לשנותן.
+      en: A state in which governing authority is concentrated in the central
+        government, which may delegate powers to local units but can also revoke
+        or change them.
+    sourceUrl: https://en.wikipedia.org/wiki/Unitary_state
+  - category: government
+    term:
+      he: ביורוקרטיה (מנהל ציבורי)
+      en: Bureaucracy
+    def:
+      he: מערך הפקידות והמשרדים הקבועים שמנהלים את עבודת המדינה בפועל ומיישמים את
+        מדיניות הממשלה לפי כללים ונהלים אחידים.
+      en: The system of permanent officials and offices that carry out the day-to-day
+        work of the state and implement government policy according to uniform
+        rules and procedures.
+    sourceUrl: https://en.wikipedia.org/wiki/Bureaucracy
+  - category: government
+    term:
+      he: ממשלת מעבר
+      en: Caretaker Government
+    def:
+      he: ממשלה זמנית המכהנת בתקופת ביניים — בדרך כלל לאחר פיזור הפרלמנט ועד הקמת
+        ממשלה חדשה — ופעולותיה מוגבלות לרוב לניהול שוטף בלבד.
+      en: A temporary government that serves during an interim period — usually after
+        a parliament is dissolved and until a new government is formed — and whose
+        actions are generally limited to routine administration.
+    sourceUrl: https://en.wikipedia.org/wiki/Caretaker_government
+  - category: government
+    term:
+      he: פיזור הפרלמנט
+      en: Dissolution of Parliament
+    def:
+      he: סיום כהונתו של הפרלמנט הקיים לפני תום תקופתו או בסיומה, צעד שמוביל בדרך כלל
+        לקיום בחירות חדשות.
+      en: The termination of the current parliament's term, either before or at its
+        end, a step that typically leads to the holding of new elections.
+    sourceUrl: https://en.wikipedia.org/wiki/Dissolution_of_parliament
+  - category: electoral
+    term:
+      he: שיטת בחירות רובנית
+      en: Majoritarian System
+    def:
+      he: שיטת בחירות שבה הזוכה הוא המועמד או הרשימה שקיבלו את מרב הקולות, לרוב באזורי
+        בחירה נפרדים. קולות שלא הביאו לניצחון אינם מתורגמים לייצוג.
+      en: An electoral system in which the candidate or party with the most votes
+        wins, usually within separate districts, so votes that do not produce a
+        winner are not translated into representation.
+    sourceUrl: https://en.wikipedia.org/wiki/Majoritarian_representation
+  - category: electoral
+    term:
+      he: אזור בחירה
+      en: Electoral District
+    def:
+      he: יחידה גאוגרפית שבה נבחר נציג אחד או יותר לפרלמנט. גבולות האזור קובעים אילו
+        בוחרים מיוצגים על ידי אילו נבחרים.
+      en: A geographic area that elects one or more representatives to a legislature.
+        The district's boundaries determine which voters are represented by which
+        elected officials.
+    sourceUrl: https://en.wikipedia.org/wiki/Electoral_district
+  - category: electoral
+    term:
+      he: מנדט (מושב)
+      en: Seat (Mandate)
+    def:
+      he: מקום אחד בפרלמנט שמקבל נבחר ציבור. מספר המנדטים שזכתה בהם מפלגה משקף את כוחה
+        היחסי בבית המחוקקים.
+      en: A single place in parliament held by an elected representative. The number
+        of seats a party wins reflects its relative strength in the legislature.
+    sourceUrl: https://en.wikipedia.org/wiki/Legislator
+  - category: electoral
+    term:
+      he: הסכם עודפי קולות (בדר-עופר)
+      en: Surplus-Vote (Apparentment) Agreement
+    def:
+      he: הסכם בין שתי רשימות לחלק ביניהן את הקולות העודפים שלא הספיקו למנדט שלם, כדי
+        למצותם בצורה טובה יותר. בישראל הוא מיושם בשיטת בדר-עופר.
+      en: An agreement between two electoral lists to pool the leftover votes that did
+        not add up to a full seat, so those votes are used more efficiently. In
+        Israel it is applied through the Bader-Ofer method.
+    sourceUrl: https://en.wikipedia.org/wiki/Apparentment
+  - category: electoral
+    term:
+      he: בחירות מקדימות (פריימריז)
+      en: Primary Election
+    def:
+      he: הליך פנימי שבו חברי מפלגה בוחרים את מועמדיה לקראת הבחירות הכלליות, כגון
+        רשימת מועמדיה לפרלמנט. כך נקבעת זהות הנציגים שתציע המפלגה.
+      en: An internal process in which a party's members select its candidates ahead
+        of the general election, such as its list of candidates for parliament. It
+        determines who the party will field as its representatives.
+    sourceUrl: https://en.wikipedia.org/wiki/Primary_election
+  - category: electoral
+    term:
+      he: מדגם בקלפי (אקזיט פול)
+      en: Exit Poll
+    def:
+      he: סקר הנערך ביום הבחירות בקרב מצביעים מיד לאחר שהצביעו, כדי לאמוד את התוצאות
+        לפני הספירה הרשמית. זוהי הערכה בלבד ולא התוצאה הסופית.
+      en: A survey conducted on election day among voters right after they cast their
+        ballots, used to estimate the results before the official count. It is
+        only an estimate, not the final outcome.
+    sourceUrl: https://en.wikipedia.org/wiki/Exit_poll
+  - category: electoral
+    term:
+      he: אחוז הצבעה
+      en: Voter Turnout
+    def:
+      he: שיעור בעלי זכות הבחירה שאכן הצביעו בבחירות, מתוך כלל הזכאים להצביע. זהו מדד
+        מרכזי למידת ההשתתפות הציבורית בבחירות.
+      en: The share of eligible voters who actually cast a ballot in an election, out
+        of all those entitled to vote. It is a key measure of public participation
+        in the vote.
+    sourceUrl: https://en.wikipedia.org/wiki/Voter_turnout
+  - category: electoral
+    term:
+      he: זכות בחירה
+      en: Suffrage
+    def:
+      he: הזכות החוקית של אדם להצביע בבחירות. הרחבת זכות הבחירה לכלל האוכלוסייה הבוגרת
+        היא עיקרון יסוד בדמוקרטיה מודרנית.
+      en: The legal right of a person to vote in elections. Extending the right to
+        vote to all adults is a foundational principle of modern democracy.
+    sourceUrl: https://en.wikipedia.org/wiki/Suffrage
+  - category: electoral
+    term:
+      he: ניפוח גבולות בחירה (ג'רימנדרינג)
+      en: Gerrymandering
+    def:
+      he: התווייה מכוונת של גבולות אזורי בחירה כדי להיטיב עם צד פוליטי מסוים. השיטה
+        עשויה לעוות את היחס בין הקולות לבין מספר הנבחרים.
+      en: Deliberately drawing the boundaries of electoral districts to favor a
+        particular political side. The practice can distort the relationship
+        between votes cast and the number of representatives elected.
+    sourceUrl: https://en.wikipedia.org/wiki/Gerrymandering
+  - category: electoral
+    term:
+      he: בחירות חוזרות (בחירות ביניים)
+      en: By-election
+    def:
+      he: בחירות נקודתיות הנערכות כדי לאייש מושב יחיד שהתפנה בין מערכות בחירות כלליות,
+        למשל עקב התפטרות או מותו של נבחר. הן אינן בחירות לכלל הפרלמנט.
+      en: A targeted election held to fill a single seat that became vacant between
+        general elections, for example due to a representative's resignation or
+        death. It is not an election for the entire parliament.
+    sourceUrl: https://en.wikipedia.org/wiki/By-election
+  - category: economy
+    term:
+      he: תוצר מקומי גולמי (תמ"ג)
+      en: Gross Domestic Product (GDP)
+    def:
+      he: הערך הכספי הכולל של כל הסחורות והשירותים שמיוצרים במדינה בתקופה נתונה. מדד
+        מרכזי לגודל הכלכלה ולקצב הצמיחה שלה.
+      en: The total monetary value of all goods and services produced within a country
+        during a given period. It is a primary measure of the size of an economy
+        and its growth.
+    sourceUrl: https://en.wikipedia.org/wiki/Gross_domestic_product
+  - category: economy
+    term:
+      he: חוב לאומי
+      en: National Debt
+    def:
+      he: סך הכסף שממשלת המדינה חייבת למלווים, שנצבר לאורך שנים של גירעונות תקציביים.
+        החוב ממומן בדרך כלל בהנפקת אגרות חוב.
+      en: The total amount of money a country's government owes to its lenders,
+        accumulated over years of budget deficits. It is typically financed by
+        issuing government bonds.
+    sourceUrl: https://en.wikipedia.org/wiki/Government_debt
+  - category: economy
+    term:
+      he: אינפלציה
+      en: Inflation
+    def:
+      he: עלייה כללית ומתמשכת במחירי הסחורות והשירותים במשק, שמפחיתה את כוח הקנייה של
+        הכסף. כלומר, באותו סכום כסף ניתן לקנות פחות לאורך זמן.
+      en: A general and sustained rise in the prices of goods and services in an
+        economy, which reduces the purchasing power of money. In other words, the
+        same amount of money buys less over time.
+    sourceUrl: https://en.wikipedia.org/wiki/Inflation
+  - category: economy
+    term:
+      he: מיתון
+      en: Recession
+    def:
+      he: תקופה של ירידה משמעותית בפעילות הכלכלית הנמשכת חודשים אחדים, המתבטאת בדרך
+        כלל בירידה בתוצר ובעלייה באבטלה.
+      en: A period of significant decline in economic activity lasting several months,
+        usually marked by falling output and rising unemployment.
+    sourceUrl: https://en.wikipedia.org/wiki/Recession
+  - category: economy
+    term:
+      he: הפרטה
+      en: Privatization
+    def:
+      he: העברת בעלות או ניהול של נכסים ושירותים מהמדינה לידיים פרטיות, למשל מכירת
+        חברה ממשלתית למשקיעים פרטיים.
+      en: The transfer of ownership or management of assets and services from the
+        state to private hands, for example selling a state-owned company to
+        private investors.
+    sourceUrl: https://en.wikipedia.org/wiki/Privatization
+  - category: economy
+    term:
+      he: הלאמה
+      en: Nationalization
+    def:
+      he: העברת נכסים, תעשיות או חברות מבעלות פרטית לבעלות או לשליטת המדינה. זהו ההיפך
+        מהפרטה.
+      en: The transfer of assets, industries, or companies from private ownership into
+        state ownership or control. It is the opposite of privatization.
+    sourceUrl: https://en.wikipedia.org/wiki/Nationalization
+  - category: economy
+    term:
+      he: שוק חופשי
+      en: Free Market
+    def:
+      he: שיטה כלכלית שבה מחירים, ייצור והחלפת סחורות נקבעים בעיקר על ידי היצע וביקוש,
+        עם התערבות ממשלתית מועטה.
+      en: An economic system in which prices, production, and the exchange of goods
+        are determined mainly by supply and demand, with little government
+        intervention.
+    sourceUrl: https://en.wikipedia.org/wiki/Free_market
+  - category: economy
+    term:
+      he: מיסוי פרוגרסיבי
+      en: Progressive Taxation
+    def:
+      he: שיטת מס שבה שיעור המס עולה ככל שההכנסה גדלה, כך שבעלי הכנסות גבוהות משלמים
+        אחוז גבוה יותר מהכנסתם מאשר בעלי הכנסות נמוכות.
+      en: A tax system in which the tax rate rises as income increases, so that higher
+        earners pay a larger percentage of their income than lower earners.
+    sourceUrl: https://en.wikipedia.org/wiki/Progressive_tax
+  - category: economy
+    term:
+      he: מדיניות מוניטרית מול מדיניות פיסקלית
+      en: Monetary vs. Fiscal Policy
+    def:
+      he: מדיניות מוניטרית מנוהלת בידי הבנק המרכזי באמצעות שליטה בריבית ובכמות הכסף,
+        ואילו מדיניות פיסקלית מנוהלת בידי הממשלה באמצעות החלטות על מסים והוצאות
+        ציבוריות.
+      en: Monetary policy is run by the central bank through control of interest rates
+        and the money supply, while fiscal policy is run by the government through
+        decisions on taxes and public spending.
+    sourceUrl: https://en.wikipedia.org/wiki/Monetary_policy
+  - category: rights
+    term:
+      he: זכויות אדם
+      en: Human Rights
+    def:
+      he: זכויות בסיסיות המגיעות לכל אדם באשר הוא אדם, ללא קשר למוצאו, מינו, דתו או
+        אמונותיו, כגון הזכות לחיים, לחירות ולכבוד.
+      en: Basic rights that belong to every person simply for being human, regardless
+        of origin, sex, religion or beliefs, such as the right to life, liberty
+        and dignity.
+    sourceUrl: https://en.wikipedia.org/wiki/Human_rights
+  - category: rights
+    term:
+      he: זכויות אזרח
+      en: Civil Rights
+    def:
+      he: זכויות המבטיחות לאדם השתתפות שווה בחיים האזרחיים והפוליטיים ללא אפליה, כגון
+        הזכות להצביע, לקבל שירות ציבורי ולהיות מוגן מפני הפליה.
+      en: Rights that guarantee a person equal participation in civic and political
+        life without discrimination, such as the right to vote, to receive public
+        services and to be protected from discrimination.
+    sourceUrl: https://en.wikipedia.org/wiki/Civil_and_political_rights
+  - category: rights
+    term:
+      he: הליך הוגן
+      en: Due Process
+    def:
+      he: הדרישה שהמדינה תנהג כלפי אדם לפי כללים הוגנים וברורים לפני שתפגע בזכויותיו,
+        למשל הזכות לדעת על האשמה ולהשמיע טענות בפני גורם נייטרלי.
+      en: The requirement that the state treat a person according to fair and clear
+        procedures before affecting their rights, such as the right to know the
+        charges and to be heard by a neutral body.
+    sourceUrl: https://en.wikipedia.org/wiki/Due_process
+  - category: rights
+    term:
+      he: חוקה
+      en: Constitution
+    def:
+      he: מסמך יסוד או מערכת כללים עליונים הקובעים את מבנה השלטון, סמכויותיו
+        וגבולותיו, ואת זכויות היסוד של האזרחים.
+      en: A foundational document or set of supreme rules that defines the structure,
+        powers and limits of government and the basic rights of citizens.
+    sourceUrl: https://en.wikipedia.org/wiki/Constitution
+  - category: rights
+    term:
+      he: חוקי יסוד
+      en: Basic Laws
+    def:
+      he: בישראל, חוקים בעלי מעמד מיוחד שנועדו לשמש פרקים של חוקה עתידית ולעגן את מבנה
+        השלטון וזכויות היסוד, בהיעדר חוקה כתובה אחת.
+      en: In Israel, laws with special status meant to serve as chapters of a future
+        constitution, anchoring the structure of government and basic rights in
+        the absence of a single written constitution.
+    sourceUrl: https://en.wikipedia.org/wiki/Basic_Laws_of_Israel
+  - category: rights
+    term:
+      he: חופש הביטוי
+      en: Freedom of Expression
+    def:
+      he: הזכות להביע דעות, רעיונות ומידע בכתב, בעל פה או בכל דרך אחרת, ללא צנזורה או
+        ענישה מצד השלטון, בכפוף למגבלות מסוימות שנקבעות בחוק.
+      en: The right to express opinions, ideas and information in writing, speech or
+        any other form without government censorship or punishment, subject to
+        certain limits set by law.
+    sourceUrl: https://en.wikipedia.org/wiki/Freedom_of_speech
+  - category: rights
+    term:
+      he: חופש הדת
+      en: Freedom of Religion
+    def:
+      he: הזכות של כל אדם להאמין, לקיים פולחן או להימנע מדת לפי בחירתו, ללא כפייה או
+        הפליה מצד המדינה.
+      en: The right of every person to hold beliefs, practice worship, or refrain from
+        religion according to their own choice, free from state coercion or
+        discrimination.
+    sourceUrl: https://en.wikipedia.org/wiki/Freedom_of_religion
+  - category: rights
+    term:
+      he: שוויון בפני החוק
+      en: Equality Before the Law
+    def:
+      he: העיקרון שלפיו החוק חל על כל בני האדם באופן שווה והם זכאים להגנה שווה שלו,
+        ללא העדפה או אפליה.
+      en: The principle that the law applies equally to all people and that everyone
+        is entitled to its equal protection, without favor or discrimination.
+    sourceUrl: https://en.wikipedia.org/wiki/Equality_before_the_law
+  - category: rights
+    term:
+      he: חזקת החפות
+      en: Presumption of Innocence
+    def:
+      he: הכלל שלפיו אדם נחשב חף מפשע עד שהוכחה אשמתו, והנטל להוכיח את האשמה מוטל על
+        התביעה ולא על הנאשם.
+      en: The rule that a person is considered innocent until proven guilty, with the
+        burden of proving guilt resting on the prosecution rather than the
+        accused.
+    sourceUrl: https://en.wikipedia.org/wiki/Presumption_of_innocence
+  - category: international
+    term:
+      he: דיפלומטיה
+      en: Diplomacy
+    def:
+      he: ניהול היחסים בין מדינות באמצעות משא ומתן ושיחות, במטרה לקדם אינטרסים ולפתור
+        מחלוקות בלי שימוש בכוח.
+      en: The practice of managing relations between countries through negotiation and
+        dialogue, aiming to advance interests and resolve disputes without the use
+        of force.
+    sourceUrl: https://en.wikipedia.org/wiki/Diplomacy
+  - category: international
+    term:
+      he: אמנה (הסכם בין-לאומי)
+      en: Treaty
+    def:
+      he: הסכם רשמי ומחייב מבחינה משפטית בין שתי מדינות או יותר, הקובע זכויות וחובות
+        בנושאים כגון שלום, סחר או ביטחון.
+      en: A formal, legally binding agreement between two or more countries that sets
+        out rights and obligations on matters such as peace, trade, or security.
+    sourceUrl: https://en.wikipedia.org/wiki/Treaty
+  - category: international
+    term:
+      he: יחסים רב-צדדיים
+      en: Multilateral relations
+    def:
+      he: שיתוף פעולה מתואם בין שלוש מדינות או יותר, לרוב במסגרת ארגונים בין-לאומיים,
+        לקידום מטרות משותפות.
+      en: Coordinated cooperation among three or more countries, often through
+        international organizations, to pursue shared goals.
+    sourceUrl: https://en.wikipedia.org/wiki/Multilateralism
+  - category: international
+    term:
+      he: סנקציות
+      en: Sanctions
+    def:
+      he: אמצעי לחץ שמדינה או ארגון בין-לאומי מטילים על גורם אחר, כגון הגבלות סחר או
+        כספים, כדי להניעו לשנות התנהגות.
+      en: Pressure measures imposed by a country or international body on another
+        actor, such as trade or financial restrictions, intended to change its
+        behavior.
+    sourceUrl: https://en.wikipedia.org/wiki/International_sanctions
+  - category: international
+    term:
+      he: שגרירות וקונסוליה
+      en: Embassy and consulate
+    def:
+      he: נציגויות רשמיות של מדינה בשטח מדינה אחרת; השגרירות מנהלת את היחסים המדיניים,
+        והקונסוליה מטפלת בעיקר בשירותים לאזרחים ובאשרות.
+      en: Official offices of one country located in another; an embassy handles
+        political relations, while a consulate mainly provides services to
+        citizens and issues visas.
+    sourceUrl: https://en.wikipedia.org/wiki/Diplomatic_mission
+  - category: international
+    term:
+      he: האו"ם (ארגון האומות המאוחדות)
+      en: United Nations
+    def:
+      he: ארגון בין-לאומי שרוב מדינות העולם חברות בו, שנועד לשמור על השלום והביטחון
+        העולמיים ולקדם שיתוף פעולה בין מדינות.
+      en: An international organization with most of the world's countries as members,
+        created to maintain global peace and security and promote cooperation
+        among nations.
+    sourceUrl: https://en.wikipedia.org/wiki/United_Nations
+  - category: international
+    term:
+      he: פתרון שתי המדינות
+      en: Two-state solution
+    def:
+      he: מתווה מוצע ליישוב הסכסוך הישראלי-פלסטיני, שלפיו תקום מדינה פלסטינית עצמאית
+        לצד מדינת ישראל.
+      en: A proposed framework for resolving the Israeli-Palestinian conflict, in
+        which an independent Palestinian state would exist alongside the State of
+        Israel.
+    sourceUrl: https://en.wikipedia.org/wiki/Two-state_solution
+  - category: international
+    term:
+      he: סיפוח
+      en: Annexation
+    def:
+      he: החלת ריבונות של מדינה על שטח שלא היה בעבר חלק ממנה, לעיתים תוך מחלוקת לגבי
+        תוקפו המשפטי הבין-לאומי.
+      en: The act of a state extending its sovereignty over territory that was not
+        previously part of it, sometimes amid dispute over its validity under
+        international law.
+    sourceUrl: https://en.wikipedia.org/wiki/Annexation
+  - category: international
+    term:
+      he: כיבוש (במשפט הבין-לאומי)
+      en: Military occupation
+    def:
+      he: מצב שבו צבא של מדינה שולט בפועל בשטח שאינו בריבונותה; המשפט הבין-לאומי קובע
+        כללים לזכויות התושבים ולחובות הצד השולט.
+      en: A situation in which a state's military exercises effective control over
+        territory that is not under its sovereignty; international law sets rules
+        for residents' rights and the controlling party's duties.
+    sourceUrl: https://en.wikipedia.org/wiki/Military_occupation
+  - category: international
+    term:
+      he: הפסקת אש והסכם שביתת נשק
+      en: Ceasefire and armistice
+    def:
+      he: הסכמה להפסקת הלחימה; הפסקת אש היא לרוב זמנית ומקומית, ואילו הסכם שביתת נשק
+        הוא הסדר רשמי ורחב יותר לעצירת המלחמה.
+      en: An agreement to stop fighting; a ceasefire is usually temporary and local,
+        while an armistice is a more formal, broader arrangement to halt a war.
+    sourceUrl: https://en.wikipedia.org/wiki/Ceasefire
+  - category: international
+    term:
+      he: נורמליזציה (כינון יחסים)
+      en: Normalization
+    def:
+      he: תהליך שבו שתי מדינות שלא קיימו ביניהן יחסים תקינים יוצרות קשרים דיפלומטיים
+        וכלכליים רשמיים.
+      en: The process by which two countries that previously lacked normal relations
+        establish formal diplomatic and economic ties.
+    sourceUrl: https://en.wikipedia.org/wiki/Normalization_(international_relations)
+  - category: israel
+    term:
+      he: בית המשפט הגבוה לצדק (בג"ץ)
+      en: High Court of Justice (Bagatz)
+    def:
+      he: כינוי לבית המשפט העליון בישראל כשהוא דן כערכאה ראשונה בעתירות נגד רשויות
+        השלטון. אזרחים יכולים לפנות אליו ישירות כדי לבקש סעד נגד החלטות של גופים
+        ציבוריים.
+      en: The name for Israel's Supreme Court when it sits as a court of first
+        instance hearing petitions against government authorities. Citizens can
+        turn to it directly to seek relief against decisions of public bodies.
+    sourceUrl: https://en.wikipedia.org/wiki/Supreme_Court_of_Israel
+  - category: israel
+    term:
+      he: היועץ המשפטי לממשלה
+      en: Attorney General of Israel
+    def:
+      he: ראש מערך הייעוץ המשפטי של הרשות המבצעת והתובע הכללי של המדינה. תפקידו לייעץ
+        לממשלה, לייצג אותה בבתי המשפט ולפקח על שמירת החוק בפעולות השלטון.
+      en: The head of the legal advisory system for the executive branch and the
+        state's chief public prosecutor. The role is to advise the government,
+        represent it in court, and oversee that government actions comply with the
+        law.
+    sourceUrl: https://en.wikipedia.org/wiki/Attorney_General_of_Israel
+  - category: israel
+    term:
+      he: מבקר המדינה
+      en: State Comptroller
+    def:
+      he: גוף ביקורת עצמאי הבודק את חוקיות, היעילות והתקינות של פעילות הגופים
+        הציבוריים, ומפרסם דוחות לציבור. המבקר משמש גם כנציב תלונות הציבור.
+      en: An independent oversight body that examines the legality, efficiency, and
+        integrity of public bodies' activities and publishes reports to the
+        public. The Comptroller also serves as the national Ombudsman for public
+        complaints.
+    sourceUrl: https://en.wikipedia.org/wiki/State_Comptroller_of_Israel
+  - category: israel
+    term:
+      he: ועדות הכנסת
+      en: Knesset Committees
+    def:
+      he: צוותי עבודה קבועים של חברי כנסת המתמחים בתחומים מסוימים, כמו כספים, חוץ
+        וביטחון או חוקה. הוועדות דנות בהצעות חוק, מפקחות על הממשלה ומכינות חקיקה
+        לקראת ההצבעה במליאה.
+      en: Standing working groups of members of Knesset that specialize in specific
+        areas, such as finance, foreign affairs and defense, or constitution. The
+        committees debate bills, oversee the government, and prepare legislation
+        before votes in the plenum.
+    sourceUrl: https://en.wikipedia.org/wiki/Knesset
+  - category: israel
+    term:
+      he: הקו הירוק
+      en: Green Line
+    def:
+      he: קו שביתת הנשק שנקבע בהסכמים בשנת 1949 בין ישראל למדינות שכנותיה, לאחר מלחמת
+        העצמאות. הוא משמש כקו ייחוס נפוץ בין שטח ישראל לבין השטחים שנכבשו במלחמת
+        1967.
+      en: The armistice line set in the 1949 agreements between Israel and its
+        neighboring states after the War of Independence. It serves as a common
+        reference line between Israel's territory and the areas captured in the
+        1967 war.
+    sourceUrl: https://en.wikipedia.org/wiki/Green_Line_(Israel)
+  - category: israel
+    term:
+      he: חוק השבות
+      en: Law of Return
+    def:
+      he: חוק ישראלי משנת 1950 המעניק לכל יהודי את הזכות לעלות לישראל ולקבל אזרחות.
+        החוק הורחב מאוחר יותר לבני זוג, ילדים ונכדים של יהודים.
+      en: A 1950 Israeli law granting every Jew the right to immigrate to Israel and
+        obtain citizenship. The law was later extended to spouses, children, and
+        grandchildren of Jews.
+    sourceUrl: https://en.wikipedia.org/wiki/Law_of_Return
+  - category: israel
+    term:
+      he: חוק הלאום
+      en: Nation-State Law
+    def:
+      he: חוק יסוד שהתקבל ב-2018 המגדיר את ישראל כמדינת הלאום של העם היהודי וקובע
+        סמלים, שפה ועקרונות לאומיים. החוק עורר ויכוח ציבורי לגבי מעמדם של אזרחים
+        שאינם יהודים.
+      en: A Basic Law passed in 2018 that defines Israel as the nation-state of the
+        Jewish people and sets out national symbols, language, and principles. The
+        law sparked public debate over the status of non-Jewish citizens.
+    sourceUrl: https://en.wikipedia.org/wiki/Basic_Law:_Israel_as_the_Nation-State_of_the_Jewish_People
+  - category: israel
+    term:
+      he: הוועדה לבחירת שופטים
+      en: Judicial Selection Committee
+    def:
+      he: ועדה המוסמכת למנות שופטים בישראל, המורכבת מנציגי הרשות השופטת, הממשלה, הכנסת
+        ולשכת עורכי הדין. הרכבה ואופן עבודתה נמצאים במוקד דיונים ציבוריים על
+        האיזון בין הרשויות.
+      en: The committee authorized to appoint judges in Israel, made up of
+        representatives of the judiciary, the government, the Knesset, and the bar
+        association. Its composition and procedures are at the center of public
+        debate over the balance between the branches of government.
+    sourceUrl: https://en.wikipedia.org/wiki/Judicial_Selection_Committee_(Israel)
+  - category: israel
+    term:
+      he: פסקת ההתגברות
+      en: Override Clause
+    def:
+      he: הצעה משפטית המאפשרת לכנסת לחוקק מחדש חוק שבית המשפט פסל, או לחסן חוק מפני
+        ביקורת שיפוטית, ברוב מסוים. ההצעה נמצאת במחלוקת משום שהיא משנה את היחס בין
+        הכנסת לבית המשפט.
+      en: A proposed legal mechanism allowing the Knesset to re-enact a law that the
+        court struck down, or to shield a law from judicial review, by a certain
+        majority. The proposal is contested because it changes the relationship
+        between the Knesset and the courts.
+    sourceUrl: https://en.wikipedia.org/wiki/Notwithstanding_clause
+  - category: israel
+    term:
+      he: עילת הסבירות
+      en: Reasonableness Standard
+    def:
+      he: כלל משפטי שלפיו בית המשפט יכול לבטל החלטה של רשות שלטונית אם היא חורגת באופן
+        קיצוני ממתחם ההחלטות הסבירות. הכלי נועד לבדוק אם הרשות שקלה כראוי את כלל
+        השיקולים הרלוונטיים.
+      en: A legal principle under which a court can annul a decision by a government
+        authority if it falls extremely outside the range of reasonable decisions.
+        The tool is meant to check whether the authority properly weighed all
+        relevant considerations.
+    sourceUrl: https://en.wikipedia.org/wiki/Reasonableness_(law)
+  - category: israel
+    term:
+      he: חסינות חברי הכנסת
+      en: Parliamentary Immunity (MK Immunity)
+    def:
+      he: הגנה משפטית המעניקה לחברי הכנסת חופש פעולה במילוי תפקידם, כדי שלא ייחשפו
+        לתביעות בשל דעותיהם והצבעותיהם. חסינות מסוימת ניתנת להסרה על ידי הכנסת
+        בנסיבות מוגדרות.
+      en: A legal protection that gives members of Knesset freedom to perform their
+        duties without facing lawsuits over their opinions and votes. Certain
+        types of immunity can be lifted by the Knesset under defined
+        circumstances.
+    sourceUrl: https://en.wikipedia.org/wiki/Parliamentary_immunity
+  - category: israel
+    term:
+      he: אי-אמון בונה (קונסטרוקטיבי)
+      en: Constructive Vote of No Confidence
+    def:
+      he: הליך שבו הכנסת יכולה להפיל ממשלה רק אם רוב חבריה תומכים בו-זמנית בהקמת ממשלה
+        חלופית. הכלל נועד למנוע משברים ולהבטיח יציבות שלטונית.
+      en: A procedure in which the Knesset can remove a government only if a majority
+        of its members simultaneously support forming an alternative government.
+        The rule is designed to prevent crises and ensure governmental stability.
+    sourceUrl: https://en.wikipedia.org/wiki/Motion_of_no_confidence

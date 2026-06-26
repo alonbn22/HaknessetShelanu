@@ -1,0 +1,65 @@
+# PersonID 30722. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30722
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: עיתונאי בתקשורת דוברת הרוסית לפני כניסתו לפוליטיקה
+      en: Russian-language journalist before entering politics
+    description:
+      he: טרם כניסתו לכנסת עבד יבגני סובה כעיתונאי ותחקירן בעיתון 'וסטי', שימש מ-2014
+        מגיש תוכנית האקטואליה 'השבוע בישראל' בערוץ הבין-לאומי דובר הרוסית RTVI,
+        ולפי ויקיפדיה האנגלית עבד גם ככתב השירות הרוסי של ה-BBC בישראל.
+      en: Before entering the Knesset, Evgeny Sova worked as a reporter and researcher
+        at the Russian-language newspaper Vesti, presented the current-affairs
+        program 'Week in Israel' on the international Russian-language channel
+        RTVI from 2014, and, per English Wikipedia, also served as the BBC
+        Russian Service correspondent in Israel.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Evgeny_Sova
+        title: Evgeny Sova
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%91%D7%92%D7%A0%D7%99_%D7%A1%D7%95%D7%91%D7%94
+        title: יבגני סובה
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר הכנסת מטעם ישראל ביתנו החל מ-2019
+      en: Member of Knesset for Yisrael Beiteinu since 2019
+    description:
+      he: בפברואר 2019 הכריז סובה על הצטרפותו לישראל ביתנו, הוצב במקום השלישי ברשימת
+        המפלגה ונבחר לכנסת בבחירות אפריל 2019. הוא כיהן ברציפות בכנסות ה-21 עד
+        ה-25.
+      en: In February 2019 Sova announced he was joining Yisrael Beiteinu, was placed
+        third on the party list, and was elected to the Knesset in the April
+        2019 election. He has served continuously from the 21st through the 25th
+        Knesset.
+    date: 2019-04
+    sources:
+      - url: https://en.wikipedia.org/wiki/Evgeny_Sova
+        title: Evgeny Sova
+        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%91%D7%92%D7%A0%D7%99_%D7%A1%D7%95%D7%91%D7%94
+        title: יבגני סובה
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: achievement
+    title:
+      he: סגן יושב ראש הכנסת
+      en: Deputy Speaker of the Knesset
+    description:
+      he: סובה שימש יושב ראש סיעת ישראל ביתנו וסגן יושב ראש הכנסת בכנסת ה-24, וכיהן
+        כסגן יושב ראש הכנסת גם בכנסת ה-25.
+      en: Sova served as chair of the Yisrael Beiteinu faction and as a Deputy Speaker
+        of the Knesset in the 24th Knesset, and also served as a Deputy Speaker
+        of the Knesset in the 25th Knesset.
+    sources:
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%91%D7%92%D7%A0%D7%99_%D7%A1%D7%95%D7%91%D7%94
+        title: יבגני סובה
+        publisher: Wikipedia (Hebrew)
+      - url: https://www.israelnationalnews.com/news/401919
+        title: "Deputy Knesset Speaker: 'Everyone must serve, it's not about haredim'"
+        publisher: Israel National News

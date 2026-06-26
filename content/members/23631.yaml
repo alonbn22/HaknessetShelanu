@@ -1,0 +1,79 @@
+# PersonID 23631. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 23631
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: כיהנה כשרת האנרגיה של ישראל (2021–2022)
+      en: Served as Israel's Minister of Energy (2021–2022)
+    description:
+      he: קארין אלהרר מונתה לשרת התשתיות הלאומיות, האנרגיה והמים בממשלת בנט–לפיד
+        שהושבעה ביוני 2021, וכיהנה בתפקיד עד שנת 2022. אלהרר, עורכת דין מסיעת יש
+        עתיד, משתמשת בכיסא גלגלים בשל ניוון שרירים.
+      en: Karine Elharrar was appointed Minister of National Infrastructures, Energy
+        and Water Resources in the Bennett–Lapid government sworn in in June
+        2021, serving until 2022. A lawyer from the Yesh Atid party, Elharrar
+        uses a wheelchair due to muscular dystrophy.
+    date: 2021-06-13
+    sources:
+      - url: https://en.wikipedia.org/wiki/Karine_Elharrar
+        title: Karine Elharrar
+        publisher: Wikipedia
+      - url: https://www.npr.org/2021/11/01/1051225424/cop26-inaccessible-israeli-energy-minister-wheelchair
+        title: Israel's energy minister Karine Elharrar left out of COP26 for
+          inaccessibility
+        publisher: NPR
+  - kind: positive
+    category: achievement
+    title:
+      he: חברת כנסת מטעם יש עתיד מאז 2013
+      en: Member of Knesset for Yesh Atid since 2013
+    description:
+      he: אלהרר נבחרה לראשונה לכנסת בשנת 2013 ברשימת יש עתיד ושבה ונבחרה במערכות
+        בחירות שלאחר מכן. בכנסת כיהנה בתפקידי מפתח, ובהם יושבת ראש ועדת הכנסת,
+        והיא מזוהה עם קידום זכויות אנשים עם מוגבלות. לפני כניסתה לפוליטיקה ניהלה
+        את הקליניקה המשפטית באוניברסיטת בר-אילן.
+      en: Elharrar was first elected to the Knesset in 2013 on the Yesh Atid list and
+        has been re-elected in subsequent elections. In the Knesset she has held
+        senior roles, including chairing the Knesset Arrangements Committee, and
+        is associated with advancing the rights of people with disabilities.
+        Before entering politics she headed the legal clinic at Bar-Ilan
+        University.
+    date: 2013-01-22
+    sources:
+      - url: https://en.wikipedia.org/wiki/Karine_Elharrar
+        title: Karine Elharrar
+        publisher: Wikipedia
+      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/mk-with-muscular-dystrophy-to-chair-powerful-committee-667305
+        title: MK with muscular dystrophy to chair powerful committee
+        publisher: The Jerusalem Post
+  - kind: positive
+    category: achievement
+    title:
+      he: קיבלה התנצלות מראש ממשלת בריטניה בעקבות אי-הנגישות בוועידת האקלים COP26
+      en: Received an apology from the UK Prime Minister over inaccessibility at the
+        COP26 climate summit
+    description:
+      he: בנובמבר 2021, בעת כהונתה כשרת האנרגיה, נמנע מאלהרר להיכנס לוועידת האקלים
+        COP26 בגלזגו משום שהאתר לא היה נגיש לכיסא גלגלים. ראש ממשלת בריטניה דאז
+        בוריס ג'ונסון התנצל בפניה אישית, אלהרר קיבלה את ההתנצלות, והשתתפה
+        בוועידה למחרת לצד ראש הממשלה נפתלי בנט. האירוע עורר דיון בינלאומי בנושא
+        נגישות.
+      en: In November 2021, while serving as energy minister, Elharrar was unable to
+        enter the COP26 climate summit in Glasgow because the venue was not
+        wheelchair-accessible. Then-UK Prime Minister Boris Johnson personally
+        apologized to her, Elharrar accepted the apology, and she attended the
+        summit the following day alongside Prime Minister Naftali Bennett. The
+        episode sparked an international discussion about accessibility.
+    date: 2021-11-02
+    sources:
+      - url: https://edition.cnn.com/2021/11/02/middleeast/israel-cop26-wheelchair-access-intl/index.html
+        title: Israeli minister who couldn't attend COP26 due to wheelchair access issue
+          accepts UK leader's apology
+        publisher: CNN
+      - url: https://www.timesofisrael.com/elharrar-in-wheelchair-joins-bennett-at-cop26-after-mondays-entry-debacle/
+        title: Johnson apologizes to wheelchair-using Elharrar as she joins Bennett at
+          COP26
+        publisher: The Times of Israel

@@ -1,0 +1,81 @@
+# PersonID 23632. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 23632
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: יושב ראש הכנסת ה-24
+      en: Speaker of the 24th Knesset
+    description:
+      he: מיקי לוי מסיעת יש עתיד נבחר ליושב ראש הכנסת ה-24 ב-13 ביוני 2021, במסגרת
+        הקמת 'ממשלת השינוי', וכיהן בתפקיד עד 13 בדצמבר 2022.
+      en: Mickey Levy of Yesh Atid was elected Speaker of the 24th Knesset on 13 June
+        2021, in connection with the formation of the 'change government', and
+        served in the role until 13 December 2022.
+    date: 2021-06-13
+    sources:
+      - url: https://en.wikipedia.org/wiki/Mickey_Levy
+        title: Mickey Levy
+        publisher: Wikipedia
+      - url: https://www.jpost.com/israel-elections/yesh-atids-mickey-levy-elected-as-new-knesset-speaker-670923
+        title: Yesh Atid's Mickey Levy elected as new Knesset speaker
+        publisher: The Jerusalem Post
+  - kind: positive
+    category: achievement
+    title:
+      he: קצין משטרה בכיר ומפקד מחוז ירושלים
+      en: Senior police officer and Jerusalem District commander
+    description:
+      he: לפני כניסתו לפוליטיקה שירת מיקי לוי שנים רבות במשטרת ישראל בדרגת ניצב, ועמד
+        בראש מחוז ירושלים בין השנים 2000 ל-2004. לאחר פרישתו כיהן כנציג המשטרה
+        בוושינגטון עד 2007.
+      en: Before entering politics, Mickey Levy served for many years in the Israel
+        Police at the rank of Nitzav (Commissioner), and headed the Jerusalem
+        District between 2000 and 2004. After retiring he served as the Israeli
+        police attaché in Washington, D.C. until 2007.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Mickey_Levy
+        title: Mickey Levy
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q3701621
+        title: Mickey Levy (Q3701621)
+        publisher: Wikidata
+  - kind: positive
+    category: achievement
+    title:
+      he: סגן שר האוצר
+      en: Deputy Minister of Finance
+    description:
+      he: מיקי לוי נכנס לכנסת ה-19 בשנת 2013 מטעם יש עתיד, וכיהן כסגן שר האוצר בין
+        השנים 2013 ל-2014.
+      en: Mickey Levy entered the 19th Knesset in 2013 on behalf of Yesh Atid and
+        served as Deputy Minister of Finance between 2013 and 2014.
+    date: "2013"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Mickey_Levy
+        title: Mickey Levy
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q3701621
+        title: Mickey Levy (Q3701621)
+        publisher: Wikidata
+  - kind: positive
+    category: award
+    title:
+      he: אביר איכות השלטון
+      en: Knight of Quality Government award
+    description:
+      he: בשנת 2002, בעת עמידתו בראש מחוז ירושלים במשטרה, הוענק למיקי לוי עיטור 'אביר
+        איכות השלטון' מטעם התנועה לאיכות השלטון.
+      en: In 2002, while heading the Jerusalem Police District, Mickey Levy received
+        the 'Knight of Quality Government' award from the Movement for Quality
+        Government.
+    date: "2002"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Mickey_Levy
+        title: Mickey Levy
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q3701621
+        title: Mickey Levy (Q3701621)
+        publisher: Wikidata

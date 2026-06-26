@@ -1,0 +1,91 @@
+# PersonID 30711. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30711
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: מייסד שותף וראש המכללה למדינאות
+      en: Co-founder and head of the Jewish Statesmanship Center
+    description:
+      he: עמית הלוי הקים בשנת 2007 יחד עם ד"ר אסף מלאך את המכללה למדינאות, מוסד חינוכי
+        שמטרתו הכשרת מנהיגות ציבורית על בסיס מחשבת ישראל הציונית, ועמד בראשה
+        כשלוש-עשרה שנים לפני כניסתו לכנסת.
+      en: Amit Halevi co-founded the Jewish Statesmanship Center in 2007 together with
+        Dr. Assaf Malakh, an educational institution aimed at training public
+        leaders on the basis of Zionist Jewish thought, and headed it for about
+        13 years before entering the Knesset.
+    date: "2007"
+    sources:
+      - url: https://en.wikipedia.org/wiki/Amit_Halevi
+        title: Amit Halevi
+        publisher: English Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%AA_%D7%94%D7%9C%D7%95%D7%99
+        title: עמית הלוי
+        publisher: Hebrew Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: חבר כנסת מטעם הליכוד וחבר ועדת החוץ והביטחון
+      en: Member of Knesset for Likud and member of the Foreign Affairs and Defense
+        Committee
+    description:
+      he: הלוי מכהן כחבר הכנסת מטעם מפלגת הליכוד; כיהן לראשונה בכנסת ה-23 (2020-2021)
+        ושב לכנסת ב-17 בינואר 2023 בכנסת ה-25. הוא כיהן כחבר ועדת החוץ והביטחון
+        של הכנסת.
+      en: Halevi serves as a member of the Knesset for the Likud party; he first
+        served in the 23rd Knesset (2020-2021) and returned to the Knesset on 17
+        January 2023 in the 25th Knesset. He served as a member of the Foreign
+        Affairs and Defense Committee.
+    date: 2023-01-17
+    sources:
+      - url: https://en.wikipedia.org/wiki/Amit_Halevi
+        title: Amit Halevi
+        publisher: English Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%AA_%D7%94%D7%9C%D7%95%D7%99
+        title: עמית הלוי
+        publisher: Hebrew Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: שירות צבאי בחטיבה השביעית
+      en: Military service in the 7th Armored Brigade
+    description:
+      he: במהלך שירותו בצה"ל שירת עמית הלוי בחטיבה השביעית (חטיבת השריון).
+      en: During his service in the Israel Defense Forces, Amit Halevi served in the
+        7th Armored Brigade (an armored brigade).
+    sources:
+      - url: https://en.wikipedia.org/wiki/Amit_Halevi
+        title: Amit Halevi
+        publisher: English Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%AA_%D7%94%D7%9C%D7%95%D7%99
+        title: עמית הלוי
+        publisher: Hebrew Wikipedia
+  - kind: negative
+    category: controversy
+    status: settled
+    title:
+      he: הודח מוועדת החוץ והביטחון לאחר הצבעה נגד הארכת צווי המילואים
+      en: Removed from the Foreign Affairs and Defense Committee after voting against
+        extending reservist call-up orders
+    description:
+      he: במאי 2025 הודח עמית הלוי על ידי הנהגת הקואליציה מוועדת החוץ והביטחון לאחר
+        שהצביע נגד הארכת צווי קריאה לשירות מילואים הקשורים להרחבת הלחימה ברצועת
+        עזה, והוחלף בוועדה על ידי יו"ר הקואליציה ח"כ אופיר כץ. מדובר בצעד
+        פרלמנטרי-פוליטי פנים-קואליציוני ולא בהליך משפטי.
+      en: In May 2025, Amit Halevi was removed by the coalition leadership from the
+        Foreign Affairs and Defense Committee after he voted against extending
+        emergency reservist call-up orders related to the expansion of fighting
+        in the Gaza Strip, and was replaced on the committee by coalition
+        chairman MK Ofir Katz. This was an internal parliamentary-political
+        action and not a legal proceeding.
+    date: 2025-05-19
+    sources:
+      - url: https://www.ynetnews.com/article/ibqeo01ia
+        title: MK Amit Halevi removed from Foreign Affairs and Defense Committee after
+          voting against Emergency Orders expansion, Ofir Katz to replace him
+        publisher: Ynetnews
+      - url: https://en.wikipedia.org/wiki/Amit_Halevi
+        title: Amit Halevi
+        publisher: English Wikipedia

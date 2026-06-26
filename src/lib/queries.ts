@@ -242,18 +242,91 @@ export function getMember(id: number): Person | undefined {
   return getDb().select().from(schema.persons).where(eq(schema.persons.id, id)).get();
 }
 
+type CareerEntry = { title: string; start: string | null; end: string | null };
+export type CareerRange = { start: string | null; end: string | null };
+export type CareerRole = { title: string; ranges: CareerRange[] };
+export type MemberBio = {
+  wikidataId: string | null;
+  dateOfBirth: string | null;
+  birthPlaceHe: string | null;
+  educationHe: string | null;
+  occupationsHe: string | null;
+  militaryHe: string | null;
+  career: CareerRole[];
+};
+
+// Collapse the raw position tenures into one entry per role, merging contiguous
+// terms (e.g. consecutive Knesset terms) but keeping genuinely separate stints
+// (e.g. non-consecutive PM terms) as distinct ranges. Most-recent role first.
+function groupCareer(entries: CareerEntry[]): CareerRole[] {
+  const byTitle = new Map<string, CareerRange[]>();
+  for (const e of entries) {
+    const arr = byTitle.get(e.title) ?? [];
+    arr.push({ start: e.start, end: e.end });
+    byTitle.set(e.title, arr);
+  }
+  const contiguous = (prevEnd: string, nextStart: string) =>
+    (Date.parse(nextStart) - Date.parse(prevEnd)) / 86_400_000 <= 45; // election gap
+  const roles: CareerRole[] = [];
+  for (const [title, raw] of byTitle) {
+    raw.sort((a, b) => (a.start ?? "9999").localeCompare(b.start ?? "9999"));
+    const ranges: CareerRange[] = [];
+    for (const r of raw) {
+      const last = ranges[ranges.length - 1];
+      if (last && (last.end === null || (r.start && contiguous(last.end, r.start)))) {
+        if (r.end === null) last.end = null; // open/"present" wins
+        else if (last.end !== null && r.end > last.end) last.end = r.end;
+      } else {
+        ranges.push({ ...r });
+      }
+    }
+    roles.push({ title, ranges });
+  }
+  const latest = (r: CareerRole) =>
+    r.ranges.reduce((m, x) => (x.start && x.start > m ? x.start : m), "");
+  roles.sort((a, b) => latest(b).localeCompare(latest(a)));
+  return roles;
+}
+
+// Wikidata-sourced biography (born/education/military/career timeline). Returns
+// null if the member has no bio yet (or the table predates a sync).
+export function getMemberBio(personId: number): MemberBio | null {
+  try {
+    const row = getDb()
+      .select()
+      .from(schema.personBio)
+      .where(eq(schema.personBio.personId, personId))
+      .get();
+    if (!row) return null;
+    let raw: CareerEntry[] = [];
+    try {
+      raw = row.careerJson ? (JSON.parse(row.careerJson) as CareerEntry[]) : [];
+    } catch {
+      raw = [];
+    }
+    return {
+      wikidataId: row.wikidataId,
+      dateOfBirth: row.dateOfBirth,
+      birthPlaceHe: row.birthPlaceHe,
+      educationHe: row.educationHe,
+      occupationsHe: row.occupationsHe,
+      militaryHe: row.militaryHe,
+      career: groupCareer(raw),
+    };
+  } catch {
+    return null; // table not present yet (pre-sync DB)
+  }
+}
+
 export type PositionRow = typeof schema.personPositions.$inferSelect;
 
+// All positions across ALL Knessets (the member's full role + faction history),
+// newest first. ("Current MK" detection still works via the isCurrent flag.)
 export function getMemberPositions(personId: number): PositionRow[] {
   return getDb()
     .select()
     .from(schema.personPositions)
-    .where(
-      and(
-        eq(schema.personPositions.personId, personId),
-        eq(schema.personPositions.knessetNum, CURRENT_KNESSET),
-      ),
-    )
+    .where(eq(schema.personPositions.personId, personId))
     .all()
     .sort((a, b) => (b.startDate ?? "").localeCompare(a.startDate ?? ""));
 }
@@ -1018,10 +1091,13 @@ export function getLobbyistStats() {
 }
 
 // Searchable, paginated lobbyists, each with the clients they represent.
+export type LobbyistSort = "name" | "firm" | "clients";
+
 export function getLobbyistsPage(opts: {
   search?: string;
   searchHe?: string;
   page?: number;
+  sort?: LobbyistSort;
 }) {
   const db = getDb();
   const page = Math.max(1, opts.page ?? 1);
@@ -1044,11 +1120,19 @@ export function getLobbyistsPage(opts: {
   const total =
     db.select({ n: sql<number>`COUNT(*)` }).from(schema.lobbyists).where(where).get()?.n ?? 0;
 
+  // Sort: by lobbyist name (default), by firm, or by number of clients (desc).
+  const orderBy =
+    opts.sort === "clients"
+      ? sql`(SELECT COUNT(*) FROM lobbyist_clients lc WHERE lc.lobbyist_id = ${schema.lobbyists.id}) DESC, ${schema.lobbyists.fullName}`
+      : opts.sort === "firm"
+        ? sql`${schema.lobbyists.corporationName} IS NULL, ${schema.lobbyists.corporationName}, ${schema.lobbyists.fullName}`
+        : schema.lobbyists.fullName;
+
   const items = db
     .select()
     .from(schema.lobbyists)
     .where(where)
-    .orderBy(schema.lobbyists.fullName)
+    .orderBy(orderBy)
     .limit(LOBBYIST_PAGE_SIZE)
     .offset((page - 1) * LOBBYIST_PAGE_SIZE)
     .all();

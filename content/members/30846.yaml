@@ -1,0 +1,60 @@
+# PersonID 30846. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
+personId: 30846
+claims:
+  - kind: positive
+    category: achievement
+    title:
+      he: יושב ראש אגודת ישראל ויהדות התורה
+      en: Chairman of Agudat Yisrael and United Torah Judaism
+    description:
+      he: ביוני 2022 מונה יצחק גולדקנופ, בהוראת האדמו"ר מגור, לעמוד בראש סיעת אגודת
+        ישראל במקומו של יעקב ליצמן, ועמד בראש רשימת יהדות התורה. הוא נכנס לכנסת
+        ה-25 ב-15 בנובמבר 2022.
+      en: In June 2022 Yitzhak Goldknopf was appointed — at the direction of the
+        Gerrer Rebbe — to lead the Agudat Yisrael faction in place of Yaakov
+        Litzman, and headed the United Torah Judaism list. He entered the 25th
+        Knesset on 15 November 2022.
+    date: 2022-06
+    sources:
+      - url: https://en.wikipedia.org/wiki/Yitzhak_Goldknopf
+        title: Yitzhak Goldknopf
+        publisher: Wikipedia
+      - url: https://www.wikidata.org/wiki/Q113045208
+        title: Isaac Goldknopf (Q113045208)
+        publisher: Wikidata
+  - kind: positive
+    category: achievement
+    title:
+      he: שר הבינוי והשיכון (2022–2025)
+      en: Minister of Construction and Housing (2022-2025)
+    description:
+      he: גולדקנופ כיהן כשר הבינוי והשיכון בממשלה ה-37 בראשות בנימין נתניהו, מ-29
+        בדצמבר 2022 ועד התפטרותו ב-12 ביוני 2025.
+      en: Goldknopf served as Minister of Construction and Housing in Israel's 37th
+        government under Benjamin Netanyahu, from 29 December 2022 until his
+        resignation on 12 June 2025.
+    date: 2022-12-29
+    sources:
+      - url: https://en.wikipedia.org/wiki/Yitzhak_Goldknopf
+        title: Yitzhak Goldknopf
+        publisher: Wikipedia
+      - url: https://www.jpost.com/israel-news/article-857497
+        title: Ultra-Orthodox minister Yitzhak Goldknopf resigns over IDF draft laws
+        publisher: The Jerusalem Post
+  - kind: positive
+    category: achievement
+    title:
+      he: מנכ"ל רשת גני הילדים בית יעקב ובית פתחיה
+      en: CEO of the Beit Yaakov and Beit Petahia early-education network
+    description:
+      he: לפני כניסתו לפוליטיקה הארצית שימש גולדקנופ כמנכ"ל רשת גני הילדים והמעונות
+        בית יעקב ובית פתחיה, מוסדות חינוך לגיל הרך שירש מאביו.
+      en: Before entering national politics, Goldknopf was CEO of the Beit Yaakov and
+        Beit Petahia network of kindergartens and daycare centers,
+        early-childhood education institutions he inherited from his father.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Yitzhak_Goldknopf
+        title: Yitzhak Goldknopf
+        publisher: Wikipedia

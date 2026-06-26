@@ -2,35 +2,18 @@
 
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
+import { navItems } from "./nav-items";
 
-const navItems = [
-  { href: "/", key: "home" },
-  { href: "/members", key: "members" },
-  { href: "/ministers", key: "ministers" },
-  { href: "/parties", key: "parties" },
-  { href: "/votes", key: "votes" },
-  { href: "/laws", key: "laws" },
-  { href: "/committees", key: "committees" },
-  { href: "/lawbook", key: "lawbook" },
-  { href: "/budget", key: "budget" },
-  { href: "/lobbyists", key: "lobbyists" },
-  { href: "/attendance", key: "attendance" },
-  { href: "/elections", key: "electionsHistory" },
-  { href: "/quiz", key: "quiz" },
-  { href: "/glossary", key: "glossary" },
-] as const;
-
+// Desktop nav (inline row). On small screens it is hidden in favor of MobileNav.
 export function NavLinks() {
   const t = useTranslations("nav");
   const pathname = usePathname();
 
   return (
-    <nav className="flex flex-wrap items-center gap-x-5 gap-y-1 text-sm">
+    <nav className="hidden md:flex flex-wrap items-center gap-x-5 gap-y-1 text-sm">
       {navItems.map((item) => {
         const active =
-          item.href === "/"
-            ? pathname === "/"
-            : pathname.startsWith(item.href);
+          item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
         return (
           <Link
             key={item.key}

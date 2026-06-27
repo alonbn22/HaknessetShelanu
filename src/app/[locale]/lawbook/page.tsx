@@ -4,7 +4,7 @@ import { Pagination } from "@/components/Pagination";
 import { LawBookFilters } from "./LawBookFilters";
 import { getLawBookPage } from "@/lib/queries";
 import { translateQueryToHebrew } from "@/lib/translate-query";
-import { localizeData, queueDataTranslations } from "@/lib/i18n-data";
+import { localizeData, queueDataTranslations, resolveLocalized } from "@/lib/i18n-data";
 import { formatDate } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
@@ -27,8 +27,7 @@ export default async function LawBookPage({
   });
 
   const names = localizeData(items.map((l) => l.nameHe), locale);
-  const nameOf = (he: string | null) =>
-    (he && names.get(he.trim())) || { text: he ?? "", translated: false, rtl: true };
+  const nameOf = (he: string | null) => resolveLocalized(names, he);
   if (locale !== "he") after(() => queueDataTranslations(items.map((l) => l.nameHe), locale));
 
   const query: Record<string, string> = {};

@@ -30,9 +30,9 @@ import {
   localizeData,
   queueDataTranslations,
   committeeLabel,
-  type Localized,
+  resolveLocalized,
 } from "@/lib/i18n-data";
-import { POSITION_FACTION_MEMBER, MK_POSITION_IDS } from "@/lib/constants";
+import { POSITION_FACTION_MEMBER, MK_POSITION_IDS, CURRENT_KNESSET } from "@/lib/constants";
 import { after } from "next/server";
 
 export const dynamic = "force-dynamic";
@@ -97,7 +97,19 @@ export default async function MemberPage({
       !MK_POSITION_IDS.includes(p.positionId) &&
       p.positionId !== POSITION_FACTION_MEMBER,
   );
-  const serving = isCurrentMk(positions);
+  // Serving = a current MK, OR a current minister who vacated their seat under
+  // the Norwegian Law (a current-Knesset position with a ministry/faction but no
+  // MK seat). Otherwise they'd be wrongly labeled "former MK".
+  const serving =
+    isCurrentMk(positions) ||
+    positions.some(
+      (p) =>
+        p.knessetNum === CURRENT_KNESSET &&
+        p.isCurrent &&
+        (MK_POSITION_IDS.includes(p.positionId) ||
+          p.positionId === POSITION_FACTION_MEMBER ||
+          p.govMinistryNameHe != null),
+    );
 
   const bio = getMemberBio(personId);
   // Career/positions are shown in the Roles section below (Knesset source), so the
@@ -124,11 +136,7 @@ export default async function MemberPage({
   ];
   const dataMap = localizeData(dataHe, locale);
   if (locale !== "he") after(() => queueDataTranslations(dataHe, locale));
-  const localOf = (he: string | null | undefined): Localized => {
-    const key = (he ?? "").trim();
-    if (!key) return { text: "", translated: false, rtl: false };
-    return dataMap.get(key) ?? { text: key, translated: false, rtl: true };
-  };
+  const localOf = (he: string | null | undefined) => resolveLocalized(dataMap, he);
   // Localize a " · "-joined Hebrew list into per-item localized chunks.
   const localList = (joined: string | null) =>
     (joined ?? "")

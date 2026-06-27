@@ -14,7 +14,7 @@ import {
 } from "@/lib/queries";
 import { getBudgetOutlook, partyText } from "@/lib/content";
 import { translateQueryToHebrew } from "@/lib/translate-query";
-import { localizeData, queueDataTranslations } from "@/lib/i18n-data";
+import { localizeData, queueDataTranslations, resolveLocalized } from "@/lib/i18n-data";
 
 export const dynamic = "force-dynamic";
 
@@ -67,8 +67,7 @@ export default async function BudgetPage({
     ...items.flatMap((l) => [l.takanaNameHe, l.programNameHe, l.sectionNameHe]),
   ];
   const nameMap = localizeData(shownNames, locale);
-  const ln = (he: string | null | undefined) =>
-    (he && nameMap.get(he.trim())) || { text: he ?? "", translated: false, rtl: true };
+  const ln = (he: string | null | undefined) => resolveLocalized(nameMap, he);
   if (locale !== "he") after(() => queueDataTranslations(shownNames, locale));
 
   // Amounts are in NIS thousands. Auto-scale: ≥1,000B → trillions, ≥1B → billions,

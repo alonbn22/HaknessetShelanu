@@ -2,17 +2,14 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
-
-// Repo that receives the tickets. Override per-deployment with
-// NEXT_PUBLIC_GITHUB_REPO (inlined at build time for this client component).
-const REPO = process.env.NEXT_PUBLIC_GITHUB_REPO || "alonbn22/HaKnessetSheli";
+import { GITHUB_REPO } from "@/lib/constants";
 
 function issueUrl(
   template: string,
   title: string,
   fields: Record<string, string | undefined>,
 ): string {
-  const u = new URL(`https://github.com/${REPO}/issues/new`);
+  const u = new URL(`https://github.com/${GITHUB_REPO}/issues/new`);
   u.searchParams.set("template", template);
   if (title) u.searchParams.set("title", title);
   // Field ids must match the issue-form template so GitHub pre-fills them.
@@ -35,13 +32,24 @@ export function FeedbackActions({
   const t = useTranslations("feedback");
   const [mode, setMode] = useState<Mode | null>(null);
   const label = context || t("theSite");
+  // The button that opened the modal, so we can return focus to it on close.
+  const openerRef = useRef<HTMLButtonElement | null>(null);
+
+  const open = (e: React.MouseEvent<HTMLButtonElement>, m: Mode) => {
+    openerRef.current = e.currentTarget;
+    setMode(m);
+  };
+  const close = () => {
+    setMode(null);
+    openerRef.current?.focus();
+  };
 
   return (
     <>
       <div className="flex flex-wrap items-center gap-2">
         <button
           type="button"
-          onClick={() => setMode("report")}
+          onClick={(e) => open(e, "report")}
           aria-label={t("reportAria", { context: label })}
           className="inline-flex items-center gap-1.5 rounded-lg border border-black/15 bg-white px-3 py-1.5 text-sm text-black/70 hover:bg-black/5"
         >
@@ -50,7 +58,7 @@ export function FeedbackActions({
         </button>
         <button
           type="button"
-          onClick={() => setMode("suggest")}
+          onClick={(e) => open(e, "suggest")}
           aria-label={t("suggestAria", { context: label })}
           className="inline-flex items-center gap-1.5 rounded-lg border border-black/15 bg-white px-3 py-1.5 text-sm text-black/70 hover:bg-black/5"
         >
@@ -64,7 +72,7 @@ export function FeedbackActions({
           mode={mode}
           context={context}
           subject={subject}
-          onClose={() => setMode(null)}
+          onClose={close}
         />
       )}
     </>
@@ -87,11 +95,34 @@ function FeedbackModal({
   const [correct, setCorrect] = useState("");
   const [source, setSource] = useState("");
   const firstRef = useRef<HTMLTextAreaElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => firstRef.current?.focus(), []);
+  // Focus the first field on open (focus returns to the opener in the parent).
+  useEffect(() => {
+    firstRef.current?.focus();
+  }, []);
+
+  // Escape closes; Tab/Shift+Tab is trapped within the dialog (aria-modal).
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
+      if (e.key === "Escape") {
+        onClose();
+        return;
+      }
+      if (e.key !== "Tab" || !dialogRef.current) return;
+      const f = dialogRef.current.querySelectorAll<HTMLElement>(
+        'button, a[href], input, textarea, select, [tabindex]:not([tabindex="-1"])',
+      );
+      if (!f.length) return;
+      const first = f[0];
+      const last = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
     };
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
@@ -125,6 +156,7 @@ function FeedbackModal({
         className="absolute inset-0 cursor-default bg-black/40"
       />
       <div
+        ref={dialogRef}
         role="dialog"
         aria-modal="true"
         aria-labelledby="fb-title"

@@ -14,7 +14,8 @@
     "sync": "tsx scripts/sync/index.ts",
     "update": "tsx scripts/sync/index.ts",
     "warm": "tsx scripts/sync/warm-translations.ts",
-    "db:push": "drizzle-kit push --force"
+    "db:push": "drizzle-kit push --force",
+    "db:clean": "node scripts/db-clean.mjs"
   },
   "dependencies": {
     "better-sqlite3": "^12.10.0",

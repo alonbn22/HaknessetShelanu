@@ -3,8 +3,8 @@
 // pre-filled issue on GitHub. No token needed — public repo issues are readable
 // unauthenticated. Cached so we don't hit GitHub's rate limit on every request.
 
-export const GITHUB_REPO =
-  process.env.NEXT_PUBLIC_GITHUB_REPO || "alonbn22/HaKnessetSheli";
+import { GITHUB_REPO } from "./constants";
+export { GITHUB_REPO };
 
 export type Ticket = {
   number: number;

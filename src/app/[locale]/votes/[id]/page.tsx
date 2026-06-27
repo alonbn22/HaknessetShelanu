@@ -17,7 +17,7 @@ import {
   factionName,
   factionColor,
 } from "@/lib/queries";
-import { localizeData, queueDataTranslations, type Localized } from "@/lib/i18n-data";
+import { localizeData, queueDataTranslations, resolveLocalized, type Localized } from "@/lib/i18n-data";
 
 export const dynamic = "force-dynamic";
 
@@ -48,11 +48,7 @@ export default async function VotePage({
   ];
   const dataMap = localizeData(dataHe, locale);
   if (locale !== "he") after(() => queueDataTranslations(dataHe, locale));
-  const localOf = (he: string | null | undefined): Localized => {
-    const key = (he ?? "").trim();
-    if (!key) return { text: "", translated: false, rtl: false };
-    return dataMap.get(key) ?? { text: key, translated: false, rtl: true };
-  };
+  const localOf = (he: string | null | undefined) => resolveLocalized(dataMap, he);
   const title = localOf(vote.titleHe);
   const itemName = localOf(vote.itemName);
   const subType = localOf(bill?.subTypeDesc);

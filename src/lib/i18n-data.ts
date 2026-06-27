@@ -49,10 +49,15 @@ export function localizeData(
   return map;
 }
 
-export function localizeOne(he: string | null | undefined, locale: string): Localized {
+// Resolve one Hebrew string against a localizeData() map (the common per-page
+// pattern): cache hit, else the Hebrew RTL fallback. Empty input → empty/LTR.
+export function resolveLocalized(
+  map: Map<string, Localized>,
+  he: string | null | undefined,
+): Localized {
   const key = (he ?? "").trim();
   if (!key) return { text: "", translated: false, rtl: false };
-  return localizeData([key], locale).get(key) ?? hebrew(key);
+  return map.get(key) ?? hebrew(key);
 }
 
 // Committee names: prefer the curated standing-committee translation (gov-terms),

@@ -17,3 +17,8 @@ export const VOTE_AGAINST = 2;
 export const VOTE_ABSTAIN = 3;
 export const VOTE_DID_NOT_VOTE = 4;
 export const VOTE_CANCELLED = 0;
+
+// GitHub repo that receives feedback tickets and backs the /tickets page.
+// Override per-deployment; NEXT_PUBLIC_ is inlined for client components too.
+export const GITHUB_REPO =
+  process.env.NEXT_PUBLIC_GITHUB_REPO || "alonbn22/HaKnessetSheli";

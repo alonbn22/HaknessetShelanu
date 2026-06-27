@@ -2,12 +2,20 @@ import { useTranslations } from "next-intl";
 import type { MemberRecord, MemberClaim } from "@/lib/content";
 import { formatDate } from "@/lib/format";
 
+// Deliberate locale -> Hebrew fallback (no en intermediate): legal member-record
+// text is authored per locale, and the page fills missing ar/ru from the cache.
 function localized(
   text: { he: string; en?: string; ar?: string; ru?: string },
   locale: string,
 ): string {
   return (text[locale as keyof typeof text] as string | undefined) ?? text.he;
 }
+
+// Mark untranslated Hebrew (e.g. a not-yet-translated claim or a Hebrew source
+// title) so it renders right-to-left under a non-Hebrew document language.
+const HEBREW = /[\u0590-\u05FF]/;
+const rtlProps = (s: string) =>
+  HEBREW.test(s) ? ({ dir: "rtl", lang: "he" } as const) : {};
 
 function ClaimList({
   claims,
@@ -40,7 +48,9 @@ function ClaimList({
             }`}
           >
             <div className="flex flex-wrap items-center gap-2">
-              <span className="font-medium">{localized(c.title, locale)}</span>
+              <span className="font-medium" {...rtlProps(localized(c.title, locale))}>
+                {localized(c.title, locale)}
+              </span>
               {c.status && (
                 <span
                   className={`rounded-full px-2 py-0.5 text-[11px] font-medium ${
@@ -56,7 +66,9 @@ function ClaimList({
               )}
             </div>
             {c.description && (
-              <p className="mt-1 text-black/70">{localized(c.description, locale)}</p>
+              <p className="mt-1 text-black/70" {...rtlProps(localized(c.description, locale))}>
+                {localized(c.description, locale)}
+              </p>
             )}
             <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted">
               {c.date && <span>{formatDate(c.date, locale)}</span>}
@@ -67,6 +79,7 @@ function ClaimList({
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline hover:text-accent"
+                  {...rtlProps(s.title)}
                 >
                   {s.title}
                   {s.publisher ? ` (${s.publisher})` : ""}

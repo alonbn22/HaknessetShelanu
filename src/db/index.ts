@@ -17,32 +17,31 @@ function openSqlite() {
 
 function createDb() {
   fs.mkdirSync(path.dirname(DB_PATH), { recursive: true });
-  let sqlite = openSqlite();
+  const sqlite = openSqlite();
   try {
-    // Touch the catalog to force WAL replay up front, surfacing a stale-sidecar
-    // mismatch here rather than mid-request.
+    // Touch the catalog so a bad open surfaces here with a clear message rather
+    // than mid-request deep in a query.
     sqlite.prepare("SELECT 1 FROM sqlite_master LIMIT 1").get();
   } catch (err) {
-    // A leftover -wal/-shm from a prior connection that no longer matches the
-    // .db (e.g. the file was swapped by a git pull) makes SQLite report the
-    // database "malformed", even though the committed .db is fine. Drop the
-    // stale sidecars and reopen so the site self-heals instead of 500ing.
     const msg = String((err as Error)?.message ?? "");
     if (!/malformed|not a database/i.test(msg)) throw err;
+    // Almost always a stale -wal/-shm left next to data/knesset.db after the
+    // file was swapped underneath an open connection (e.g. a git pull). The
+    // committed .db is fine; the sidecars just need removing. We deliberately do
+    // NOT delete them here: a sidecar is shared memory for the WAL, and removing
+    // one that a live connection (dev server, sync) holds corrupts the database
+    // for that writer. Cleanup must happen while nothing has the DB open, so we
+    // surface an actionable error instead.
     try {
       sqlite.close();
     } catch {
       /* already broken */
     }
-    for (const ext of ["-wal", "-shm", "-journal"]) {
-      try {
-        fs.rmSync(DB_PATH + ext, { force: true });
-      } catch {
-        /* best effort */
-      }
-    }
-    sqlite = openSqlite();
-    sqlite.prepare("SELECT 1 FROM sqlite_master LIMIT 1").get(); // rethrow if truly corrupt
+    throw new Error(
+      `data/knesset.db could not be opened ("${msg}"). This is usually a stale ` +
+        `WAL left after the .db was replaced. Stop every dev/sync process, then ` +
+        `run: npm run db:clean (or: rm -f data/knesset.db-wal data/knesset.db-shm).`,
+    );
   }
   return drizzle(sqlite, { schema });
 }

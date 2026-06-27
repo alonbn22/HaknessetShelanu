@@ -484,7 +484,12 @@ export function getMemberRecentVotes(personId: number, limit = 10) {
     .select({ vote: schema.votes, resultCode: schema.voteResults.resultCode })
     .from(schema.voteResults)
     .innerJoin(schema.votes, eq(schema.votes.id, schema.voteResults.voteId))
-    .where(eq(schema.voteResults.personId, personId))
+    .where(
+      and(
+        eq(schema.voteResults.personId, personId),
+        eq(schema.votes.knessetNum, CURRENT_KNESSET),
+      ),
+    )
     .orderBy(desc(schema.votes.dateTime))
     .limit(limit)
     .all();
@@ -627,7 +632,9 @@ export function getVoteResults(voteId: number): VoterRow[] {
     sql`${schema.personPositions.startDate} <= ${vote.dateTime}`,
     or(
       sql`${schema.personPositions.finishDate} IS NULL`,
-      sql`${schema.personPositions.finishDate} >= ${vote.dateTime}`,
+      // Half-open [start, finish): at an exact boundary the member belongs to the
+      // faction tenure that *starts* then, not the one ending — avoids a double-match.
+      sql`${schema.personPositions.finishDate} > ${vote.dateTime}`,
     ),
   );
 
@@ -1453,7 +1460,7 @@ export function searchAll(query: string, searchHe: string, locale: string): Sear
   const votes = db
     .select({ id: schema.votes.id, titleHe: schema.votes.titleHe })
     .from(schema.votes)
-    .where(like(schema.votes.titleHe, qHe))
+    .where(and(eq(schema.votes.knessetNum, CURRENT_KNESSET), like(schema.votes.titleHe, qHe)))
     .orderBy(desc(schema.votes.dateTime))
     .limit(SEARCH_LIMIT)
     .all();
@@ -1468,7 +1475,12 @@ export function searchAll(query: string, searchHe: string, locale: string): Sear
   const committees = db
     .select({ id: schema.committees.id, nameHe: schema.committees.nameHe })
     .from(schema.committees)
-    .where(like(schema.committees.nameHe, qHe))
+    .where(
+      and(
+        eq(schema.committees.isCurrent, true),
+        like(schema.committees.nameHe, qHe),
+      ),
+    )
     .limit(SEARCH_LIMIT)
     .all();
 

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { useRouter } from "@/i18n/navigation";
+import { SearchIcon } from "./icons/SearchIcon";
 
 export function HeroSearch() {
   const t = useTranslations();
@@ -20,10 +21,7 @@ export function HeroSearch() {
       className="flex items-center gap-2 bg-white rounded-full p-1.5 ps-5 shadow-lg mx-auto"
       style={{ maxWidth: "520px" }}
     >
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0b3d91" strokeWidth="2.2" strokeLinecap="round" aria-hidden>
-        <circle cx="11" cy="11" r="7" />
-        <path d="M21 21l-4.3-4.3" />
-      </svg>
+      <SearchIcon size={20} className="text-accent" />
       <input
         value={q}
         onChange={(e) => setQ(e.target.value)}

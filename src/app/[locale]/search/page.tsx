@@ -4,7 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { GlobalSearch } from "@/components/GlobalSearch";
 import { searchAll } from "@/lib/queries";
 import { translateQueryToHebrew } from "@/lib/translate-query";
-import { localizeData, queueDataTranslations, type Localized } from "@/lib/i18n-data";
+import { localizeData, queueDataTranslations, resolveLocalized } from "@/lib/i18n-data";
 import { getGlossary, partyText } from "@/lib/content";
 
 export const dynamic = "force-dynamic";
@@ -46,11 +46,7 @@ export default async function SearchPage({
   ];
   const map = localizeData(dataHe, locale);
   if (locale !== "he") after(() => queueDataTranslations(dataHe, locale));
-  const loc = (he: string | null): Localized => {
-    const k = (he ?? "").trim();
-    if (!k) return { text: "", translated: false, rtl: false };
-    return map.get(k) ?? { text: k, translated: false, rtl: true };
-  };
+  const loc = (he: string | null) => resolveLocalized(map, he);
 
   const total =
     r.members.length +

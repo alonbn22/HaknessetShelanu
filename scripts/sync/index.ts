@@ -28,6 +28,7 @@ import {
   syncVoteHeaders,
   syncVoteResults,
   syncVoteSubjects,
+  remapVoteResultMkIds,
   computeVoteTotals,
 } from "./votes";
 import { computeMkStats } from "./stats";
@@ -72,6 +73,7 @@ async function main() {
     await syncVoteHeaders();
     await syncVoteResults();
     await syncVoteSubjects();
+    await remapVoteResultMkIds(); // rebuild mk_id_map + heal raw-MkId rows before stats
   }
 
   if (args.has("--subjects")) {

@@ -191,7 +191,8 @@
     "sponsors": "Bill sponsors",
     "billType": "Bill type",
     "tapToFilter": "Tap a result to see who voted that way",
-    "showingWho": "Showing who voted: {result}"
+    "showingWho": "Showing who voted: {result}",
+    "notInRollCall": "Official Knesset tally. {n} of those who voted are former members, not shown in the breakdown below."
   },
   "voteResult": {
     "r1": "For",

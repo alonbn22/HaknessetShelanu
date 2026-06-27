@@ -18,6 +18,7 @@ import {
   factionColor,
 } from "@/lib/queries";
 import { localizeData, queueDataTranslations, resolveLocalized, type Localized } from "@/lib/i18n-data";
+import { VOTE_FOR, VOTE_AGAINST, VOTE_ABSTAIN } from "@/lib/constants";
 
 export const dynamic = "force-dynamic";
 
@@ -208,7 +209,14 @@ export default async function VotePage({
 
       <section className="space-y-4">
         <h2 className="text-xl font-semibold">{t("votes.breakdown")}</h2>
-        <VoteRollCall voters={voters} />
+        <VoteRollCall
+          voters={voters}
+          official={{
+            [VOTE_FOR]: vote.totalFor ?? 0,
+            [VOTE_AGAINST]: vote.totalAgainst ?? 0,
+            [VOTE_ABSTAIN]: vote.totalAbstain ?? 0,
+          }}
+        />
       </section>
 
       <div className="pt-2">

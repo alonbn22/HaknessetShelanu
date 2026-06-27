@@ -102,9 +102,71 @@ function loadMkIdMap(): Map<number, number> {
     );
     for (const r of rows) map.set(r.mk_id, r.person_id);
   } catch {
-    /* table may not exist yet (run fix-mkids once) */
+    /* table may not exist yet (first run before db:push declares it) */
   }
   return map;
+}
+
+const normName = (s: string | null) =>
+  (s ?? "").replace(/["'׳״]/g, "").replace(/\s+/g, " ").trim();
+
+// Rebuild mk_id_map from the denormalized names on the OData vote feed and move
+// any vote_results still stored under a raw MkId onto the real PersonID. Runs in
+// the pipeline after syncVoteResults so freshly-inserted rows (which the
+// insert-time loadMkIdMap could only fix for already-known MkIds) are healed
+// before stats recompute. Idempotent: once a row is on its PersonID the
+// `WHERE person_id = mkId` UPDATE matches nothing, and INSERT OR REPLACE is stable.
+export async function remapVoteResultMkIds() {
+  const db = getDb();
+  console.log("Remapping vote_results MkId -> PersonID…");
+  const persons = db
+    .select({
+      id: schema.persons.id,
+      first: schema.persons.firstNameHe,
+      last: schema.persons.lastNameHe,
+    })
+    .from(schema.persons)
+    .all();
+  const nameToPerson = new Map<string, number>();
+  for (const p of persons) nameToPerson.set(`${normName(p.first)}|${normName(p.last)}`, p.id);
+
+  // Newest-first; ~12k rows (~100 recent votes) covers every sitting MK's name.
+  const mkToName = new Map<number, string>();
+  let fetched = 0;
+  for await (const r of fetchAllRows<Row>(
+    entityUrl("KNS_PlenumVoteResult", {
+      $orderby: "VoteDate desc",
+      $select: "MkId,FirstName,LastName",
+    }),
+  )) {
+    if (!mkToName.has(r.MkId)) mkToName.set(r.MkId, `${normName(r.FirstName)}|${normName(r.LastName)}`);
+    if (++fetched >= 12000) break;
+  }
+
+  const client = db.$client;
+  // Self-sufficient: create the table if a fresh DB hasn't had db:push yet.
+  // Definition matches schema.ts exactly so a later db:push sees it in-sync.
+  client.exec(
+    "CREATE TABLE IF NOT EXISTS mk_id_map (mk_id integer PRIMARY KEY, person_id integer NOT NULL)",
+  );
+  const insMap = client.prepare(
+    "INSERT OR REPLACE INTO mk_id_map (mk_id, person_id) VALUES (?, ?)",
+  );
+  const upd = client.prepare(
+    "UPDATE OR REPLACE vote_results SET person_id = ? WHERE person_id = ?",
+  );
+  let remapped = 0;
+  const txn = client.transaction(() => {
+    for (const [mkId, name] of mkToName) {
+      const personId = nameToPerson.get(name);
+      if (personId == null || personId === mkId) continue;
+      insMap.run(mkId, personId);
+      upd.run(personId, mkId);
+      remapped++;
+    }
+  });
+  txn();
+  console.log(`  mk_id_map: ${mkToName.size} MkIds scanned, ${remapped} mapped to a PersonID`);
 }
 
 export async function syncVoteResults() {

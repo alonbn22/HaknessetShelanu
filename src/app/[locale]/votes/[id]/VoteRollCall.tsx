@@ -32,7 +32,17 @@ const TILES = [
   { code: VOTE_DID_NOT_VOTE, key: "didNotVote", cls: "text-muted", active: "ring-gray-500 bg-black/5" },
 ] as const;
 
-export function VoteRollCall({ voters }: { voters: Voter[] }) {
+// `official` carries the authoritative plenum tally (votes.total_for/against/
+// abstain), which counts every recorded voter — including former members not in
+// the per-party breakdown below. We show it on the tiles so the numbers always
+// match the Knesset record, even when a few voters can't be listed individually.
+export function VoteRollCall({
+  voters,
+  official,
+}: {
+  voters: Voter[];
+  official?: Record<number, number>;
+}) {
   const t = useTranslations("votes");
   const [filter, setFilter] = useState<number | null>(null);
 
@@ -46,6 +56,19 @@ export function VoteRollCall({ voters }: { voters: Voter[] }) {
     for (const v of voters) if (v.resultCode in c) c[v.resultCode]++;
     return c;
   }, [voters]);
+
+  // Tile number = the authoritative tally when we have it (For/Against/Abstain);
+  // "did not vote" has no header equivalent, so it stays roster-based.
+  const tally = (code: number) =>
+    code !== VOTE_DID_NOT_VOTE && official?.[code] != null ? official[code] : counts[code];
+
+  // How many recorded voters can't be listed individually (former members).
+  const notListed = official
+    ? [VOTE_FOR, VOTE_AGAINST, VOTE_ABSTAIN].reduce(
+        (sum, code) => sum + Math.max(0, (official[code] ?? 0) - counts[code]),
+        0,
+      )
+    : 0;
 
   // Filter, then group by faction (faction order by group size).
   const groups = useMemo(() => {
@@ -81,7 +104,7 @@ export function VoteRollCall({ voters }: { voters: Voter[] }) {
                 selected ? tile.active : "ring-transparent"
               }`}
             >
-              <div className={`text-3xl font-bold ${tile.cls}`}>{counts[tile.code]}</div>
+              <div className={`text-3xl font-bold ${tile.cls}`}>{tally(tile.code)}</div>
               <div className="text-sm text-muted">{t(tile.key)}</div>
             </button>
           );
@@ -90,6 +113,9 @@ export function VoteRollCall({ voters }: { voters: Voter[] }) {
       <p className="text-xs text-muted">
         {filter == null ? t("tapToFilter") : t("showingWho", { result: t(TILES.find((x) => x.code === filter)!.key) })}
       </p>
+      {notListed > 0 && (
+        <p className="text-xs text-muted">{t("notInRollCall", { n: notListed })}</p>
+      )}
 
       <div className="grid gap-4 md:grid-cols-2">
         {groups.map((g) => (

@@ -153,6 +153,16 @@ export const mkVoteStats = sqliteTable(
   (t) => [primaryKey({ columns: [t.personId, t.knessetNum] })],
 );
 
+// Maps KNS_PlenumVoteResult.MkId -> the real KNS_Person.Id for MKs whose vote
+// id-space differs from their PersonID (e.g. Kallner MkId 32037 -> Person 30710).
+// Rebuilt each vote sync from the denormalized names on the OData vote feed; the
+// vote_results.person_id remap depends on this table surviving `db:push`, so it
+// MUST stay declared here (drizzle-kit push --force drops any table it doesn't see).
+export const mkIdMap = sqliteTable("mk_id_map", {
+  mkId: integer("mk_id").primaryKey(),
+  personId: integer("person_id").notNull(),
+});
+
 // Bills (KNS_Bill). For bill-reading votes, votes.itemId === bills.id.
 export const bills = sqliteTable("bills", {
   id: integer("id").primaryKey(), // BillID

@@ -6,12 +6,12 @@ what data we could still surface.
 
 ## Next up (build queue)
 
-- [ ] **Bill journey** — a per-bill view of its path through the readings
-  (preliminary → committee → 1st → 2nd/3rd → published), built from the bill's
-  votes and documents we already sync.
 - [ ] **Party-discipline metrics** — how often each MK votes with their faction
   majority (a "rebellion rate"), reusing the vote-results self-join behind the
   member-comparison agreement rate.
+- [ ] **Decode status codes** — `bills.status_desc` (and other `StatusID`s) are
+  raw numbers; sync the `KNS_Status` lookup so the bill page can show a real
+  status instead of hiding it. Quick win surfaced while building the bill journey.
 - [ ] **Dark mode** — theme toggle over the existing CSS-variable token layer.
 
 ## Untapped API data — what more we could build
@@ -82,6 +82,8 @@ socio-economic indices by municipality (data.gov.il) for context.
 
 ## Done (recent)
 
+- **Bill-journey view** (`/laws/[id]`): a bill's votes grouped into milestone
+  reading stages, linked from vote pages and MKs' sponsored bills.
 - Durable MkId→PersonID vote remap (vote breakdowns were showing empty).
 - Global search across all entities; hemicycle seating chart (bar/hemicycle
   toggle, bar default); side-by-side **member comparison** with a voting-agreement

@@ -22,7 +22,8 @@
     "budget": "Budget",
     "lobbyists": "Lobbyists",
     "tickets": "Tickets",
-    "menu": "Menu"
+    "menu": "Menu",
+    "compare": "Compare"
   },
   "common": {
     "knessetNum": "{num}th Knesset",
@@ -535,5 +536,17 @@
   },
   "wip": {
     "notice": "Work in progress — some information may be incomplete, inaccurate, or out of date. Always verify against official Knesset sources."
+  },
+  "compare": {
+    "title": "Compare members",
+    "subtitle": "Pick two MKs and compare their voting records side by side.",
+    "selectMember": "Select a member",
+    "memberA": "First member",
+    "memberB": "Second member",
+    "vs": "vs",
+    "prompt": "Pick two members to compare them.",
+    "agreementTitle": "Voting agreement",
+    "agreementDetail": "Voted the same way on {agreed} of {total} shared votes",
+    "notEnough": "Not enough shared votes to compare"
   }
 }

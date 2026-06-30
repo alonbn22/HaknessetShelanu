@@ -273,7 +273,15 @@ export default async function MemberPage({
 
       {stats && stats.votesHeld > 0 && (
         <section className="rounded-xl bg-white p-6 shadow-sm space-y-4">
-          <h2 className="text-xl font-semibold">{t("member.voteStats")}</h2>
+          <div className="flex items-center justify-between gap-3">
+            <h2 className="text-xl font-semibold">{t("member.voteStats")}</h2>
+            <Link
+              href={`/compare?a=${personId}`}
+              className="whitespace-nowrap text-sm text-accent hover:underline"
+            >
+              {t("compare.title")} →
+            </Link>
+          </div>
           <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 text-center">
             <div>
               <div className="text-2xl font-bold text-accent">

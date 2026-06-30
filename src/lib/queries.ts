@@ -8,6 +8,9 @@ import {
   POSITION_FACTION_MEMBER,
   POSITION_MK_MALE,
   POSITION_MK_FEMALE,
+  VOTE_FOR,
+  VOTE_AGAINST,
+  VOTE_ABSTAIN,
   VOTE_DID_NOT_VOTE,
 } from "./constants";
 
@@ -352,6 +355,35 @@ export function getMemberStats(personId: number): MkStats | undefined {
       ),
     )
     .get();
+}
+
+export type VotingAgreement = {
+  bothVoted: number; // votes where both cast a real (for/against/abstain) vote
+  agreed: number; // of those, how many matched
+  agreementPct: number; // 0..100, or 0 when bothVoted === 0
+};
+
+// How often two members voted the same way, over votes where BOTH cast a real
+// vote (for/against/abstain — "did not vote" is excluded). Self-joins
+// vote_results on vote_id; each side uses the vr_person_idx index.
+export function getVotingAgreement(idA: number, idB: number): VotingAgreement {
+  const row = getDb().get<{ both_voted: number; agreed: number }>(sql`
+    SELECT
+      COUNT(*) AS both_voted,
+      COALESCE(SUM(CASE WHEN va.result_code = vb.result_code THEN 1 ELSE 0 END), 0) AS agreed
+    FROM vote_results va
+    JOIN vote_results vb ON vb.vote_id = va.vote_id
+    WHERE va.person_id = ${idA} AND vb.person_id = ${idB}
+      AND va.result_code IN (${VOTE_FOR}, ${VOTE_AGAINST}, ${VOTE_ABSTAIN})
+      AND vb.result_code IN (${VOTE_FOR}, ${VOTE_AGAINST}, ${VOTE_ABSTAIN})
+  `);
+  const bothVoted = row?.both_voted ?? 0;
+  const agreed = row?.agreed ?? 0;
+  return {
+    bothVoted,
+    agreed,
+    agreementPct: bothVoted > 0 ? Math.round((1000 * agreed) / bothVoted) / 10 : 0,
+  };
 }
 
 export type LeaderboardEntry = MkStats & { person: Person };

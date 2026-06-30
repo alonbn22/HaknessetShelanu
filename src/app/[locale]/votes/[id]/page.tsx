@@ -158,9 +158,17 @@ export default async function VotePage({
         <VoteMeaning forDesc={vote.forDesc} titleHe={vote.titleHe} />
       </section>
 
-      {bill && (billDocs.length > 0 || sponsors.length > 0) && (
+      {bill && (
         <section className="rounded-xl bg-white p-6 shadow-sm space-y-4">
-          <h2 className="text-xl font-semibold">{t("votes.whatItSays")}</h2>
+          <div className="flex items-center justify-between gap-3">
+            <h2 className="text-xl font-semibold">{t("votes.whatItSays")}</h2>
+            <Link
+              href={`/laws/${bill.id}`}
+              className="whitespace-nowrap text-sm text-accent hover:underline"
+            >
+              {t("bill.journey")} →
+            </Link>
+          </div>
           {bill.subTypeDesc && (
             <div
               className="text-sm text-muted"

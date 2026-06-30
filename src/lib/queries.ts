@@ -724,6 +724,21 @@ export function getBillForVote(vote: Vote): Bill | undefined {
   return getDb().select().from(schema.bills).where(eq(schema.bills.id, vote.itemId)).get();
 }
 
+export function getBill(id: number): Bill | undefined {
+  return getDb().select().from(schema.bills).where(eq(schema.bills.id, id)).get();
+}
+
+// All plenum votes on a bill (its readings, reservations, etc.), oldest first —
+// the raw material for the bill-journey timeline.
+export function getBillVotes(billId: number): Vote[] {
+  return getDb()
+    .select()
+    .from(schema.votes)
+    .where(eq(schema.votes.itemId, billId))
+    .orderBy(schema.votes.dateTime)
+    .all();
+}
+
 export function getBillSponsors(billId: number): Person[] {
   const db = getDb();
   return db

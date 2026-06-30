@@ -352,7 +352,6 @@ export default async function MemberPage({
           </h2>
           <ul className="space-y-1.5">
             {sponsoredBills.map((b) => {
-              const url = b.finalLawUrl ?? b.explanatoryUrl;
               const bt = localOf(b.nameHe);
               return (
                 <li
@@ -361,18 +360,9 @@ export default async function MemberPage({
                   dir={bt.rtl ? "rtl" : undefined}
                   lang={bt.rtl ? "he" : undefined}
                 >
-                  {url ? (
-                    <a
-                      href={url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-accent hover:underline"
-                    >
-                      {bt.text}
-                    </a>
-                  ) : (
-                    <span>{bt.text}</span>
-                  )}
+                  <Link href={`/laws/${b.id}`} className="text-accent hover:underline">
+                    {bt.text}
+                  </Link>
                 </li>
               );
             })}

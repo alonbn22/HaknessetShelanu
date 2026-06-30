@@ -548,5 +548,12 @@
     "agreementTitle": "Voting agreement",
     "agreementDetail": "Voted the same way on {agreed} of {total} shared votes",
     "notEnough": "Not enough shared votes to compare"
+  },
+  "bill": {
+    "journey": "Legislative journey",
+    "noJourney": "No recorded reading votes for this bill yet.",
+    "atStage": "{count} votes at this stage",
+    "relatedVotes": "+ {count} related votes (reservations, clause votes, etc.)",
+    "firstReadingText": "First-reading text"
   }
 }

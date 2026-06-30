@@ -19,6 +19,7 @@ import {
 } from "@/lib/queries";
 import { localizeData, queueDataTranslations } from "@/lib/i18n-data";
 import { getControversialLaws, partyText } from "@/lib/content";
+import { isHebrew } from "@/lib/text";
 
 export const dynamic = "force-dynamic";
 
@@ -46,13 +47,12 @@ export default async function HomePage() {
 
   // Pre-resolve color + localized name server-side (the resolvers read content
   // YAML that isn't available in the client Hemicycle).
-  const HEBREW = /[\u0590-\u05FF]/;
   const hemiFactions: HemiFaction[] = factions.map((f) => {
     const name = factionName(f.id, f.nameHe, locale);
     return {
       id: f.id,
       name,
-      nameRtl: HEBREW.test(name),
+      nameRtl: isHebrew(name),
       color: factionColor(f.id),
       seats: f.seats,
       isCoalition: f.isCoalition,

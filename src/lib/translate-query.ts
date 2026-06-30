@@ -9,8 +9,8 @@
 // Only import from server components / server code (it performs a network fetch).
 
 import { gtxTranslate } from "./gtx";
+import { isHebrew } from "./text";
 
-const HE_RANGE = /[֐-׿]/;
 const cache = new Map<string, string>();
 
 export async function translateQueryToHebrew(
@@ -19,7 +19,7 @@ export async function translateQueryToHebrew(
 ): Promise<string> {
   const q = (query ?? "").trim();
   // Already Hebrew, or the Hebrew UI — nothing to translate.
-  if (!q || locale === "he" || HE_RANGE.test(q)) return q;
+  if (!q || locale === "he" || isHebrew(q)) return q;
 
   const key = `${locale}:${q}`;
   const hit = cache.get(key);

@@ -15,10 +15,9 @@ import {
   factionColor,
 } from "@/lib/queries";
 import { POSITION_FACTION_MEMBER } from "@/lib/constants";
+import { isHebrew } from "@/lib/text";
 
 export const dynamic = "force-dynamic";
-
-const HEBREW = /[\u0590-\u05FF]/;
 
 function loadMember(id: number, locale: string) {
   const person = getMember(id);
@@ -32,7 +31,7 @@ function loadMember(id: number, locale: string) {
     id,
     person,
     name,
-    nameRtl: HEBREW.test(name),
+    nameRtl: isHebrew(name),
     factionId: faction?.factionId ?? null,
     factionLabel: faction?.factionId
       ? factionName(faction.factionId, faction.factionNameHe ?? "", locale)

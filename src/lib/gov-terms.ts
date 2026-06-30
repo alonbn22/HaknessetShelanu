@@ -5,12 +5,12 @@
 //
 // No node:fs here — safe to import from client components.
 
+import { isHebrew } from "./text";
+
 type Loc = "he" | "en" | "ar" | "ru";
 type T = { en: string; ar: string; ru: string };
 
 export type GovTerm = { text: string; rtl: boolean };
-
-const HE_RANGE = /[֐-׿]/;
 
 // ---------- duties / roles (KNS position descriptions) ----------
 const DUTIES: Record<string, T> = {
@@ -302,7 +302,7 @@ function localize(map: Record<string, T>, he: string | null | undefined, locale:
   if (locale === "he") return { text: he as string, rtl: true };
   const t = map[key];
   const text = t ? t[locale as Exclude<Loc, "he">] ?? (he as string) : (he as string);
-  return { text, rtl: HE_RANGE.test(text) };
+  return { text, rtl: isHebrew(text) };
 }
 
 export const govDuty = (he: string | null | undefined, locale: string): GovTerm =>

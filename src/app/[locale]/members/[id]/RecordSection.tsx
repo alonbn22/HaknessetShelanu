@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import type { MemberRecord, MemberClaim } from "@/lib/content";
 import { formatDate } from "@/lib/format";
+import { isHebrew } from "@/lib/text";
 
 // Deliberate locale -> Hebrew fallback (no en intermediate): legal member-record
 // text is authored per locale, and the page fills missing ar/ru from the cache.
@@ -13,9 +14,8 @@ function localized(
 
 // Mark untranslated Hebrew (e.g. a not-yet-translated claim or a Hebrew source
 // title) so it renders right-to-left under a non-Hebrew document language.
-const HEBREW = /[\u0590-\u05FF]/;
 const rtlProps = (s: string) =>
-  HEBREW.test(s) ? ({ dir: "rtl", lang: "he" } as const) : {};
+  isHebrew(s) ? ({ dir: "rtl", lang: "he" } as const) : {};
 
 function ClaimList({
   claims,

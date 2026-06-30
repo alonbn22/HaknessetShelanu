@@ -18,16 +18,16 @@ export type HemiFaction = {
 
 type Seat = { x: number; y: number; factionId: number };
 
-const OUTER_R = 100; // svg units
-const SEAT_R = 3.1;
-const ROWS = 8;
-const INNER_RATIO = 0.62;
-const PAD = SEAT_R + 2;
+const OUTER_R = 100; // svg units; seats are centred at (OUTER_R, OUTER_R)
+const ROWS = 7;
+const INNER_RATIO = 0.4; // inner arc radius as a fraction of OUTER_R
 
 // Distribute `total` seats across concentric semicircle rows (seats per row ∝
-// radius — the standard parliament-arch layout), then order every seat by angle
-// so the factions assigned in sequence form contiguous wedges.
-function layout(total: number): { seats: Omit<Seat, "factionId">[] } {
+// radius — the standard parliament-arch layout), order every seat by angle so
+// factions assigned in sequence form contiguous wedges, and size each seat from
+// the smallest gap between any two seats so dots are as large as possible while
+// never overlapping (the previous fixed radius meshed adjacent rows together).
+function layout(total: number): { seats: Omit<Seat, "factionId">[]; seatR: number } {
   const radii: number[] = [];
   for (let r = 0; r < ROWS; r++) {
     radii.push(INNER_RATIO + (1 - INNER_RATIO) * (r / (ROWS - 1)));
@@ -48,8 +48,6 @@ function layout(total: number): { seats: Omit<Seat, "factionId">[] } {
     diff++;
   }
 
-  const cx = OUTER_R + PAD;
-  const baseY = OUTER_R + PAD;
   const raw: { x: number; y: number; angle: number; radius: number }[] = [];
   for (let r = 0; r < ROWS; r++) {
     const n = counts[r];
@@ -57,20 +55,35 @@ function layout(total: number): { seats: Omit<Seat, "factionId">[] } {
     for (let s = 0; s < n; s++) {
       const angle = n === 1 ? Math.PI / 2 : Math.PI * (s / (n - 1));
       raw.push({
-        x: cx - rad * Math.cos(angle), // angle 0 → left, π → right
-        y: baseY - rad * Math.sin(angle),
+        x: OUTER_R - rad * Math.cos(angle), // angle 0 → left, π → right
+        y: OUTER_R - rad * Math.sin(angle), // dome rises above the base at y = OUTER_R
         angle,
         radius: rad,
       });
     }
   }
   raw.sort((a, b) => a.angle - b.angle || a.radius - b.radius);
+
+  // Largest dot that still leaves a gap: 38% of the closest pair's distance.
+  // Compare squared distances (Math.sqrt is correctly-rounded/deterministic,
+  // unlike Math.hypot) so the derived radius matches between SSR and the client.
+  let minSq = Infinity;
+  for (let i = 0; i < raw.length; i++) {
+    for (let j = i + 1; j < raw.length; j++) {
+      const dx = raw[i].x - raw[j].x;
+      const dy = raw[i].y - raw[j].y;
+      const sq = dx * dx + dy * dy;
+      if (sq < minSq) minSq = sq;
+    }
+  }
+  const seatR = Math.sqrt(minSq) * 0.38;
+
   // Round to 2 decimals: Math.cos/sin are implementation-defined in ECMAScript,
   // so the server (Node) and client (browser) can produce coordinates that differ
   // in the last float digit — rounding makes them identical and avoids a React
   // hydration mismatch. 0.01-unit precision is far finer than the ~200-unit chart.
   const round = (v: number) => Math.round(v * 100) / 100;
-  return { seats: raw.map(({ x, y }) => ({ x: round(x), y: round(y) })) };
+  return { seats: raw.map(({ x, y }) => ({ x: round(x), y: round(y) })), seatR: round(seatR) };
 }
 
 export function Hemicycle({ factions }: { factions: HemiFaction[] }) {
@@ -87,8 +100,8 @@ export function Hemicycle({ factions }: { factions: HemiFaction[] }) {
     return [...opp, ...coal];
   }, [factions]);
 
-  const seats = useMemo(() => {
-    const { seats: pts } = layout(total);
+  const { seats, seatR } = useMemo(() => {
+    const { seats: pts, seatR } = layout(total);
     const out: Seat[] = [];
     let i = 0;
     for (const f of ordered) {
@@ -96,7 +109,7 @@ export function Hemicycle({ factions }: { factions: HemiFaction[] }) {
         out.push({ ...pts[i], factionId: f.id });
       }
     }
-    return out;
+    return { seats: out, seatR };
   }, [ordered, total]);
 
   const colorById = useMemo(
@@ -105,24 +118,24 @@ export function Hemicycle({ factions }: { factions: HemiFaction[] }) {
   );
   const coalitionSeats = factions.filter((f) => f.isCoalition).reduce((s, f) => s + f.seats, 0);
   const oppositionSeats = total - coalitionSeats;
-  const width = (OUTER_R + PAD) * 2;
-  const height = OUTER_R + PAD * 2;
+  // Seats span x∈[0, 2·OUTER_R], y∈[0, OUTER_R]; pad the viewBox by the dot radius.
+  const pad = seatR + 2;
 
   // SVG coordinates are absolute, so the dome (coalition on the right — a fixed
   // seating convention) does not mirror under an RTL UI; no dir override needed.
   return (
     <div className="space-y-4">
       <svg
-        viewBox={`0 0 ${width} ${height}`}
-        className="w-full"
+        viewBox={`${-pad} ${-pad} ${OUTER_R * 2 + pad * 2} ${OUTER_R + pad * 2}`}
+        className="mx-auto block w-full max-w-2xl"
         role="img"
         aria-label={t("hemicycle.aria", { coalition: coalitionSeats, opposition: oppositionSeats })}
       >
         <text
-          x={OUTER_R + PAD}
-          y={OUTER_R + PAD - 4}
+          x={OUTER_R}
+          y={OUTER_R - 14}
           textAnchor="middle"
-          className="fill-black/70 text-[13px] font-bold"
+          className="fill-black/70 text-[16px] font-bold"
         >
           {total}
         </text>
@@ -133,7 +146,7 @@ export function Hemicycle({ factions }: { factions: HemiFaction[] }) {
               key={idx}
               cx={seat.x}
               cy={seat.y}
-              r={SEAT_R}
+              r={seatR}
               fill={colorById.get(seat.factionId)}
               opacity={dim ? 0.2 : 1}
               className="transition-opacity"

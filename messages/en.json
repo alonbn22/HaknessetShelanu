@@ -525,5 +525,9 @@
     "prompt": "Type to search across the whole site.",
     "noResults": "No results for \"{q}\".",
     "resultsFor": "Results for \"{q}\""
+  },
+  "hemicycle": {
+    "aria": "Knesset seating chart: {coalition} coalition seats, {opposition} opposition seats",
+    "legend": "Factions"
   }
 }

@@ -1,7 +1,7 @@
 import { after } from "next/server";
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { SeatsBar } from "@/components/SeatsBar";
+import { Hemicycle, type HemiFaction } from "@/components/Hemicycle";
 import { VoteCard } from "@/components/VoteCard";
 import { HomeVoteSearch } from "@/components/HomeVoteSearch";
 import { HeroSearch } from "@/components/HeroSearch";
@@ -12,6 +12,8 @@ import {
   getParticipationLeaderboard,
   getMostActiveLegislators,
   personName,
+  factionColor,
+  factionName,
 } from "@/lib/queries";
 import { localizeData, queueDataTranslations } from "@/lib/i18n-data";
 import { getControversialLaws, partyText } from "@/lib/content";
@@ -33,12 +35,20 @@ export default async function HomePage() {
   const laggards = getParticipationLeaderboard("bottom", 5);
   const activeLegislators = getMostActiveLegislators(5);
 
-  const coalitionSeats = factions
-    .filter((f) => f.isCoalition)
-    .reduce((s, f) => s + f.seats, 0);
-  const oppositionSeats = factions
-    .filter((f) => !f.isCoalition)
-    .reduce((s, f) => s + f.seats, 0);
+  // Pre-resolve color + localized name server-side (the resolvers read content
+  // YAML that isn't available in the client Hemicycle).
+  const HEBREW = /[\u0590-\u05FF]/;
+  const hemiFactions: HemiFaction[] = factions.map((f) => {
+    const name = factionName(f.id, f.nameHe, locale);
+    return {
+      id: f.id,
+      name,
+      nameRtl: HEBREW.test(name),
+      color: factionColor(f.id),
+      seats: f.seats,
+      isCoalition: f.isCoalition,
+    };
+  });
 
   const heroStats = [
     { value: mks, label: t("home.totalMks"), href: "/members" as const },
@@ -132,15 +142,7 @@ export default async function HomePage() {
 
       <section className="rounded-xl bg-white p-6 shadow-sm space-y-4">
         <h2 className="text-xl font-semibold">{t("home.seatsByParty")}</h2>
-        <SeatsBar factions={factions} locale={locale} />
-        <div className="flex justify-between text-sm font-medium pt-2 border-t border-black/5">
-          <span className="text-coalition">
-            {t("common.coalition")}: {coalitionSeats}
-          </span>
-          <span className="text-opposition">
-            {t("common.opposition")}: {oppositionSeats}
-          </span>
-        </div>
+        <Hemicycle factions={hemiFactions} />
       </section>
 
       {controversialLaws.length > 0 && (

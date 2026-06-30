@@ -6,8 +6,10 @@
 A multilingual, public-transparency website that helps people understand the
 **Israeli Knesset** (parliament): its members, factions, the coalition/opposition
 balance, full plenum voting records with per-member participation statistics,
-curated and sourced "public record" notes per member, and party political
-profiles. Hebrew-first, with English, Arabic, and Russian.
+side-by-side member comparison, bills and the law book, committees, the state
+budget, the lobbyist registry, a political dictionary, curated and sourced
+"public record" notes per member, and party political profiles. Hebrew-first,
+with English, Arabic, and Russian.
 
 > **For AI agents / designers reading this:** this file is the canonical context
 > for the project. It tells you what the site is, who it's for, how it's built,
@@ -33,12 +35,22 @@ profiles. Hebrew-first, with English, Arabic, and Russian.
 
 | Area | Page(s) | Notes |
 |---|---|---|
-| Dashboard | `/` | Seats-by-faction bar, coalition vs. opposition totals, latest votes + **vote search**, participation leaderboards |
-| Members | `/members`, `/members/[id]` | Filter by faction / bloc / **search by name or party** (any language). Profile: photo (+license), roles, faction history, **participation stats (present vs. absent)**, recent votes, **curated public record with sources** |
-| Factions | `/parties`, `/parties/[id]` | Seats, coalition badge, avg participation; **political spectrum bar, summary, key positions, leader** (editorial) |
-| Votes | `/votes`, `/votes/[id]` | Searchable list; detail shows **reading stage** (preliminary/1st/2nd/3rd), **"what a 'for' vote means"**, the official agenda subject, and **every MK's vote incl. absentees**, grouped by faction with turnout |
-| Accessibility | `/accessibility` + floating widget | Israeli Standard IS 5568 / WCAG 2.0 AA |
-| Elections + quiz | *planned* | 2026 election (date volatile), party-fit quiz |
+| Dashboard | `/` | **Seats-by-faction with a bar/hemicycle toggle** (bar default), coalition vs. opposition totals, latest votes + search, participation leaderboards, most-active legislators, a controversial-laws section |
+| Global search | `/search` | One box across members, factions, votes, laws, committees, lobbyists, and the dictionary; cross-language (query is translated to Hebrew to match the data) |
+| Members | `/members`, `/members/[id]` | Filter by faction / bloc / **search by name or party** (any language). Profile: photo (+license), roles, **full multi-Knesset faction history**, biography (Wikidata), **participation stats**, parliamentary questions, sponsored bills, committees, recent votes, **curated public record with sources** |
+| Compare | `/compare` | Pick two MKs → side-by-side stats **plus a voting-agreement rate** (how often they voted the same way) |
+| Factions | `/parties`, `/parties/[id]` | Seats, coalition badge, avg participation; **political spectrum bar, summary, key positions, leader, ballot letters** (editorial) |
+| Ministers | `/ministers` | The sitting government; explains the "Norwegian Law" (ministers who vacated their seat) |
+| Votes | `/votes`, `/votes/[id]` | Searchable list; detail shows **reading stage**, "what a 'for' vote means", the agenda subject, and **every MK's vote incl. absentees** grouped by faction, with the authoritative tally + a reconciliation note when a voter is a former member |
+| Bills & laws | `/laws`, `/lawbook` | Bills with documents + sponsors; the full **Israel law book** |
+| Committees | `/committees`, `/committees/[id]` | Standing/special committees + memberships |
+| Budget | `/budget` | Ministry of Finance budget by ministry/area/line, with history + search |
+| Lobbyists | `/lobbyists` | The official lobbyist registry (firms, clients), sortable; foreign-funding context |
+| Attendance | `/attendance` | Serving-members participation leaderboard |
+| Elections + quiz | `/elections`, `/quiz` | Knesset election history; an election-compass party-fit quiz (editorial) |
+| Dictionary | `/glossary` | Plain-language political terms, grouped by topic, each sourced |
+| Transparency | `/sources`, `/tickets` | Every data source listed; report-wrong / suggest-new flows open GitHub tickets. A site-wide work-in-progress notice sits at the top of every page |
+| Accessibility | `/accessibility` + floating widget | Israeli Standard IS 5568 / WCAG 2.1 AA |
 
 ## Tech stack
 
@@ -67,13 +79,23 @@ Other scripts: `npm run build`, `npm run lint`.
 - **Knesset OData V4** — `https://knesset.gov.il/OdataV4/ParliamentInfo/` (no auth,
   JSON, 100 rows/page). Members (`KNS_Person`), positions (`KNS_PersonToPosition`,
   `KNS_Position`), factions (`KNS_Faction`), plenum votes (`KNS_PlenumVote`),
-  per-MK results (`KNS_PlenumVoteResult`), agenda items (`KNS_PlmSessionItem`).
+  per-MK results (`KNS_PlenumVoteResult`), agenda items (`KNS_PlmSessionItem`),
+  bills + documents + initiators (`KNS_Bill`, `KNS_DocumentBill`, `KNS_BillInitiator`),
+  committees (`KNS_Committee`), parliamentary questions (`KNS_Query`), agenda
+  motions (`KNS_Agenda`), the Israel law book (`KNS_IsraelLaw`), and the lobbyist
+  registry (`V_Lobbyist*`).
+- **Ministry of Finance via data.gov.il** — the detailed state budget (by ministry,
+  area, program, and budget line) and execution reports. Powers `/budget`.
 - **Wikidata** (SPARQL) — multilingual names (he/en/ar/ru), photos via P18 (with
-  per-file Commons license + attribution), Hebrew Wikipedia links. Joined to
-  Knesset IDs via P9770, with a name-search fallback.
+  per-file Commons license + attribution), Hebrew Wikipedia links, and biographies
+  (born/education/occupations/military/career). Joined to Knesset IDs via P9770,
+  with a name-search fallback.
+- **Google Translate (unofficial `gtx` endpoint)** — lazy on-the-fly translation
+  of Hebrew data text (vote/law/committee/budget names), cached in a unified
+  `translations` table. Labeled "automatic translation" in the UI.
 - **Editorial (curated) content** — anything the API doesn't provide. **Coalition
-  membership, party political positions, and per-member good/bad records are NOT
-  in any API** and are maintained by hand in `content/` (see below).
+  membership, party political positions + ballot letters, and per-member good/bad
+  records are NOT in any API** and are maintained by hand in `content/` (see below).
 
 Current scope: **the 25th Knesset** (`CURRENT_KNESSET = 25` in
 `src/lib/constants.ts`). Vote records exist from ~2004; physical attendance is not
@@ -125,8 +147,15 @@ career timeline), `votes.ts` (votes/results/subjects + `forDesc` reading stage),
   stage), totals, `is_accepted`.
 - `vote_results` — (voteId, personId) → result code: 1 for, 2 against, 3 abstain,
   4 did-not-vote, 0 cancelled (see `src/lib/constants.ts`).
+- `mk_id_map` — maps `KNS_PlenumVoteResult.MkId` to the real `KNS_Person.Id` for
+  MKs whose vote id-space differs (rebuilt every vote sync; declared in the schema
+  so `db:push` keeps it — see `remapVoteResultMkIds` in `votes.ts`).
 - `mk_vote_stats` — precomputed per-MK: votes held while serving, participated,
   for/against/abstain, missed, participation %.
+- `bills` / `bill_initiators`, `committees`, `queries`, `agendas`, `israel_laws`,
+  `lobbyists`, `budget_lines` — bills + sponsors, committees, parliamentary
+  questions, agenda motions, the law book, the lobbyist registry, and the budget.
+- `translations` — unified lazy-translation cache (`source_he` PK → en/ar/ru).
 - `sync_state` — incremental-sync cursors.
 
 ## Editorial content (where humans/AI add the non-API knowledge)
@@ -172,9 +201,12 @@ The site targets **Israeli Standard IS 5568 (≈ WCAG 2.0 AA)**:
 
 ## Project status
 
-Phases 1–3 done (foundation, members/factions, votes/stats, curated records,
-party profiles, accessibility). Next: the 2026 elections section + party-fit quiz.
-See `.claude/plans/wise-churning-wall.md` for the living plan.
+Live and broad: members/factions, votes + per-MK stats, member comparison, bills
++ the law book, committees, the budget, lobbyists, the dictionary, elections
+history + the party-fit quiz, global search, curated member records, party
+profiles, accessibility, and the transparency pages. Remaining roadmap (bill
+journey, party-discipline metrics, dark mode) and **ideas for data we could still
+surface from the APIs** are tracked in [`ROADMAP.md`](ROADMAP.md).
 
 ## License & contributing
 

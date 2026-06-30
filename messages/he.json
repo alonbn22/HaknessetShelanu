@@ -58,7 +58,10 @@
     "searchPlaceholder": "חיפוש הצבעות, חברי כנסת או סיעות…",
     "totalMinisters": "שרים בממשלה",
     "controversialTitle": "חוקים שנויים במחלוקת",
-    "controversialSubtitle": "חקיקה שעוררה ויכוח ציבורי נרחב — עם מקור לכל פריט."
+    "controversialSubtitle": "חקיקה שעוררה ויכוח ציבורי נרחב — עם מקור לכל פריט.",
+    "seatsView": "תצוגה",
+    "seatsViewBar": "פס",
+    "seatsViewHemicycle": "חצי-גורן"
   },
   "members": {
     "title": "חברי הכנסת",
@@ -529,5 +532,8 @@
   "hemicycle": {
     "aria": "מפת מושבי הכנסת: {coalition} מושבי קואליציה, {opposition} מושבי אופוזיציה",
     "legend": "סיעות"
+  },
+  "wip": {
+    "notice": "האתר בבנייה — ייתכן שמידע מסוים חסר, אינו מדויק או אינו מעודכן. יש לאמת מול המקורות הרשמיים של הכנסת."
   }
 }

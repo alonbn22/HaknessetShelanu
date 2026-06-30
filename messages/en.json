@@ -58,7 +58,10 @@
     "searchPlaceholder": "Search votes, members or factions…",
     "totalMinisters": "Government ministers",
     "controversialTitle": "Controversial laws",
-    "controversialSubtitle": "Legislation that sparked major public debate — each with a source."
+    "controversialSubtitle": "Legislation that sparked major public debate — each with a source.",
+    "seatsView": "View",
+    "seatsViewBar": "Bar",
+    "seatsViewHemicycle": "Hemicycle"
   },
   "members": {
     "title": "Knesset Members",
@@ -529,5 +532,8 @@
   "hemicycle": {
     "aria": "Knesset seating chart: {coalition} coalition seats, {opposition} opposition seats",
     "legend": "Factions"
+  },
+  "wip": {
+    "notice": "Work in progress — some information may be incomplete, inaccurate, or out of date. Always verify against official Knesset sources."
   }
 }

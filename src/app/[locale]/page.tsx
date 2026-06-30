@@ -2,6 +2,8 @@ import { after } from "next/server";
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Hemicycle, type HemiFaction } from "@/components/Hemicycle";
+import { SeatsBar } from "@/components/SeatsBar";
+import { SeatsToggle } from "@/components/SeatsToggle";
 import { VoteCard } from "@/components/VoteCard";
 import { HomeVoteSearch } from "@/components/HomeVoteSearch";
 import { HeroSearch } from "@/components/HeroSearch";
@@ -34,6 +36,13 @@ export default async function HomePage() {
   const leaders = getParticipationLeaderboard("top", 5);
   const laggards = getParticipationLeaderboard("bottom", 5);
   const activeLegislators = getMostActiveLegislators(5);
+
+  const coalitionSeats = factions
+    .filter((f) => f.isCoalition)
+    .reduce((s, f) => s + f.seats, 0);
+  const oppositionSeats = factions
+    .filter((f) => !f.isCoalition)
+    .reduce((s, f) => s + f.seats, 0);
 
   // Pre-resolve color + localized name server-side (the resolvers read content
   // YAML that isn't available in the client Hemicycle).
@@ -142,7 +151,22 @@ export default async function HomePage() {
 
       <section className="rounded-xl bg-white p-6 shadow-sm space-y-4">
         <h2 className="text-xl font-semibold">{t("home.seatsByParty")}</h2>
-        <Hemicycle factions={hemiFactions} />
+        <SeatsToggle
+          bar={
+            <div className="space-y-4">
+              <SeatsBar factions={factions} locale={locale} />
+              <div className="flex justify-between text-sm font-medium pt-2 border-t border-black/5">
+                <span className="text-coalition">
+                  {t("common.coalition")}: {coalitionSeats}
+                </span>
+                <span className="text-opposition">
+                  {t("common.opposition")}: {oppositionSeats}
+                </span>
+              </div>
+            </div>
+          }
+          dome={<Hemicycle factions={hemiFactions} />}
+        />
       </section>
 
       {controversialLaws.length > 0 && (

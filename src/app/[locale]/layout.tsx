@@ -50,6 +50,7 @@ export default async function LocaleLayout({
 
   const dir = rtlLocales.has(locale) ? "rtl" : "ltr";
   const t = await getTranslations("a11y");
+  const tWip = await getTranslations("wip");
 
   return (
     <html lang={locale} dir={dir} className={`${heebo.variable} h-full antialiased`}>
@@ -58,6 +59,12 @@ export default async function LocaleLayout({
           <a href="#main-content" className="skip-link">
             {t("skipToContent")}
           </a>
+          <div
+            role="note"
+            className="bg-amber-50 border-b border-amber-200 px-4 py-1.5 text-center text-xs leading-snug text-amber-900"
+          >
+            {tWip("notice")}
+          </div>
           <Header />
           <main
             id="main-content"

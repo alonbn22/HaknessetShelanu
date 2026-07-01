@@ -6,9 +6,6 @@ what data we could still surface.
 
 ## Next up (build queue)
 
-- [ ] **Party-discipline metrics** — how often each MK votes with their faction
-  majority (a "rebellion rate"), reusing the vote-results self-join behind the
-  member-comparison agreement rate.
 - [ ] **Decode status codes** — `bills.status_desc` (and other `StatusID`s) are
   raw numbers; sync the `KNS_Status` lookup so the bill page can show a real
   status instead of hiding it. Quick win surfaced while building the bill journey.
@@ -82,6 +79,8 @@ socio-economic indices by municipality (data.gov.il) for context.
 
 ## Done (recent)
 
+- **Party-discipline metric**: how often each MK voted with their faction
+  majority — a callout on the member page and a row on `/compare`.
 - **Bill-journey view** (`/laws/[id]`): a bill's votes grouped into milestone
   reading stages, linked from vote pages and MKs' sponsored bills.
 - Durable MkId→PersonID vote remap (vote breakdowns were showing empty).

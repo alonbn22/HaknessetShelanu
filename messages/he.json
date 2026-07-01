@@ -119,7 +119,9 @@
     "military": "שירות צבאי",
     "career": "קריירה ותפקידים",
     "bioSource": "נתוני רקע: ויקינתונים",
-    "present": "בהווה"
+    "present": "בהווה",
+    "partyLine": "הצבעה עם הסיעה",
+    "partyLineDetail": "הצביע/ה עם רוב הסיעה ב-{withParty} מתוך {total} הצבעות מתועדות."
   },
   "parties": {
     "title": "הסיעות בכנסת",

@@ -119,7 +119,9 @@
     "military": "Military service",
     "career": "Career & positions",
     "bioSource": "Background data: Wikidata",
-    "present": "present"
+    "present": "present",
+    "partyLine": "Party-line voting",
+    "partyLineDetail": "Voted with the faction majority on {withParty} of {total} recorded votes."
   },
   "parties": {
     "title": "Knesset Factions",

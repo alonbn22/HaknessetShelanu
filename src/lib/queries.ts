@@ -386,6 +386,52 @@ export function getVotingAgreement(idA: number, idB: number): VotingAgreement {
   };
 }
 
+export type PartyDiscipline = { total: number; withParty: number; pct: number };
+
+// How often a member voted with their faction's majority — a party-loyalty (or,
+// inverted, rebellion) metric. Over votes where the member cast a real vote, we
+// take their faction's majority position (among current faction members who cast
+// a real vote on that vote) and check whether the member matched it. Faction is
+// the member's current one, or their most-recent (so ministers who vacated their
+// seat under the Norwegian Law still resolve). Null if no faction / no votes.
+export function getPartyDiscipline(personId: number): PartyDiscipline | null {
+  const row = getDb().get<{ total: number; with_party: number }>(sql`
+    WITH me AS (
+      SELECT faction_id AS fid FROM person_positions
+      WHERE person_id = ${personId} AND position_id = ${POSITION_FACTION_MEMBER}
+        AND knesset_num = ${CURRENT_KNESSET} AND faction_id IS NOT NULL
+      ORDER BY is_current DESC, start_date DESC LIMIT 1
+    ),
+    members AS (
+      SELECT DISTINCT person_id FROM person_positions
+      WHERE position_id = ${POSITION_FACTION_MEMBER} AND knesset_num = ${CURRENT_KNESSET}
+        AND is_current = 1 AND faction_id = (SELECT fid FROM me)
+    ),
+    fac AS (
+      SELECT vr.vote_id, vr.result_code, COUNT(*) AS cnt
+      FROM vote_results vr
+      WHERE vr.person_id IN (SELECT person_id FROM members)
+        AND vr.result_code IN (${VOTE_FOR}, ${VOTE_AGAINST}, ${VOTE_ABSTAIN})
+      GROUP BY vr.vote_id, vr.result_code
+    ),
+    maj AS (
+      SELECT vote_id, result_code AS maj_code,
+        ROW_NUMBER() OVER (PARTITION BY vote_id ORDER BY cnt DESC, result_code) AS rn
+      FROM fac
+    )
+    SELECT COUNT(*) AS total,
+      COALESCE(SUM(CASE WHEN p.result_code = m.maj_code THEN 1 ELSE 0 END), 0) AS with_party
+    FROM vote_results p
+    JOIN maj m ON m.vote_id = p.vote_id AND m.rn = 1
+    WHERE p.person_id = ${personId}
+      AND p.result_code IN (${VOTE_FOR}, ${VOTE_AGAINST}, ${VOTE_ABSTAIN})
+  `);
+  const total = row?.total ?? 0;
+  if (total === 0) return null;
+  const withParty = row?.with_party ?? 0;
+  return { total, withParty, pct: Math.round((1000 * withParty) / total) / 10 };
+}
+
 export type LeaderboardEntry = MkStats & { person: Person };
 
 // SQL predicate: the person currently holds a Knesset seat (faction-member or

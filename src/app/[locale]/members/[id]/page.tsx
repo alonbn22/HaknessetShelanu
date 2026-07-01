@@ -14,6 +14,7 @@ import {
   getMember,
   getMemberPositions,
   getMemberStats,
+  getPartyDiscipline,
   getMemberRecentVotes,
   getMemberSponsoredBills,
   getMemberSponsoredCount,
@@ -51,6 +52,7 @@ export default async function MemberPage({
   const locale = await getLocale();
   const positions = getMemberPositions(personId);
   const stats = getMemberStats(personId);
+  const discipline = getPartyDiscipline(personId);
   const recentVotes = getMemberRecentVotes(personId, 10);
   const voteTitles = localizeData(recentVotes.map((r) => r.vote.titleHe), locale);
   const voteTitleOf = (he: string | null) =>
@@ -335,6 +337,20 @@ export default async function MemberPage({
           <p className="text-sm text-muted">
             {t("member.ofVotesHeld", { total: stats.votesHeld.toLocaleString(locale) })}
           </p>
+          {discipline && (
+            <div className="rounded-lg bg-black/3 px-4 py-3">
+              <div className="flex items-baseline gap-2">
+                <span className="text-xl font-bold text-accent">{discipline.pct}%</span>
+                <span className="text-sm font-semibold">{t("member.partyLine")}</span>
+              </div>
+              <p className="mt-0.5 text-xs text-muted">
+                {t("member.partyLineDetail", {
+                  withParty: discipline.withParty.toLocaleString(locale),
+                  total: discipline.total.toLocaleString(locale),
+                })}
+              </p>
+            </div>
+          )}
         </section>
       )}
 

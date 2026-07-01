@@ -10,6 +10,7 @@ import {
   getMemberCommittees,
   getMemberPositions,
   getVotingAgreement,
+  getPartyDiscipline,
   personName,
   factionName,
   factionColor,
@@ -37,6 +38,7 @@ function loadMember(id: number, locale: string) {
       ? factionName(faction.factionId, faction.factionNameHe ?? "", locale)
       : "",
     stats: getMemberStats(id),
+    discipline: getPartyDiscipline(id),
     bills: getMemberSponsoredCount(id),
     committees: getMemberCommittees(id).length,
   };
@@ -119,6 +121,12 @@ export default async function ComparePage({
           },
           { label: t("member.abstained"), a: dataA.stats?.abstained ?? 0, b: dataB.stats?.abstained ?? 0 },
           { label: t("member.missed"), a: dataA.stats?.missed ?? 0, b: dataB.stats?.missed ?? 0 },
+          {
+            label: t("member.partyLine"),
+            a: dataA.discipline?.pct ?? 0,
+            b: dataB.discipline?.pct ?? 0,
+            suffix: "%",
+          },
           { label: t("member.billsProposed"), a: dataA.bills, b: dataB.bills },
           { label: t("member.committees"), a: dataA.committees, b: dataB.committees },
         ]

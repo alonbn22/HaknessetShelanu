@@ -16,7 +16,8 @@ export default async function SearchPage({
 }) {
   const t = await getTranslations();
   const locale = await getLocale();
-  const query = ((await searchParams).q ?? "").trim();
+  // Same 200-char cap as translateQueryToHebrew — bounds the LIKE scans too.
+  const query = ((await searchParams).q ?? "").trim().slice(0, 200);
   const searchHe = await translateQueryToHebrew(query, locale);
 
   const r = searchAll(query, searchHe, locale);

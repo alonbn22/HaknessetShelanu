@@ -127,8 +127,17 @@ export async function remapVoteResultMkIds() {
     })
     .from(schema.persons)
     .all();
+  // Names are the only join key, so two persons normalizing to the same name
+  // would make the remap ambiguous — track and skip those instead of letting
+  // one MK silently absorb another's votes (all 156 names are unique today).
   const nameToPerson = new Map<string, number>();
-  for (const p of persons) nameToPerson.set(`${normName(p.first)}|${normName(p.last)}`, p.id);
+  const ambiguous = new Set<string>();
+  for (const p of persons) {
+    const key = `${normName(p.first)}|${normName(p.last)}`;
+    const prev = nameToPerson.get(key);
+    if (prev != null && prev !== p.id) ambiguous.add(key);
+    else nameToPerson.set(key, p.id);
+  }
 
   // Newest-first; ~12k rows (~100 recent votes) covers every sitting MK's name.
   const mkToName = new Map<number, string>();
@@ -158,6 +167,10 @@ export async function remapVoteResultMkIds() {
   let remapped = 0;
   const txn = client.transaction(() => {
     for (const [mkId, name] of mkToName) {
+      if (ambiguous.has(name)) {
+        console.warn(`  skipping ambiguous name (maps to multiple persons): MkId ${mkId}`);
+        continue;
+      }
       const personId = nameToPerson.get(name);
       if (personId == null || personId === mkId) continue;
       insMap.run(mkId, personId);

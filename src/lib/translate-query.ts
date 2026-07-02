@@ -17,7 +17,9 @@ export async function translateQueryToHebrew(
   query: string | undefined | null,
   locale: string,
 ): Promise<string> {
-  const q = (query ?? "").trim();
+  // Cap the length: a search query has no business being longer, and the cap
+  // bounds both the gtx fetch payload and the LIKE scans downstream.
+  const q = (query ?? "").trim().slice(0, 200);
   // Already Hebrew, or the Hebrew UI — nothing to translate.
   if (!q || locale === "he" || isHebrew(q)) return q;
 

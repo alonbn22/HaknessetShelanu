@@ -268,8 +268,12 @@ function groupCareer(entries: CareerEntry[]): CareerRole[] {
     arr.push({ start: e.start, end: e.end });
     byTitle.set(e.title, arr);
   }
-  const contiguous = (prevEnd: string, nextStart: string) =>
-    (Date.parse(nextStart) - Date.parse(prevEnd)) / 86_400_000 <= 45; // election gap
+  // A malformed date parses to NaN → gap is NaN → not contiguous (ranges shown
+  // separately, never wrongly merged). The isFinite check makes that explicit.
+  const contiguous = (prevEnd: string, nextStart: string) => {
+    const gapDays = (Date.parse(nextStart) - Date.parse(prevEnd)) / 86_400_000;
+    return Number.isFinite(gapDays) && gapDays <= 45; // election gap
+  };
   const roles: CareerRole[] = [];
   for (const [title, raw] of byTitle) {
     raw.sort((a, b) => (a.start ?? "9999").localeCompare(b.start ?? "9999"));
@@ -1497,6 +1501,11 @@ export function searchAll(query: string, searchHe: string, locale: string): Sear
   }
   const q = `%${trimmed}%`;
   const qHe = `%${(searchHe || trimmed).trim()}%`;
+  // Hebrew-text columns: match the translated query, and — when the translation
+  // actually changed it — also the raw query, so a wrong/partial translation
+  // can't hide rows the user typed verbatim (mirrors titleSearchCondition).
+  const likeHe = (col: Parameters<typeof like>[0]) =>
+    qHe !== q ? or(like(col, qHe), like(col, q))! : like(col, qHe);
 
   const factionIds = matchFactionIds(trimmed);
 
@@ -1553,7 +1562,7 @@ export function searchAll(query: string, searchHe: string, locale: string): Sear
   const votes = db
     .select({ id: schema.votes.id, titleHe: schema.votes.titleHe })
     .from(schema.votes)
-    .where(and(eq(schema.votes.knessetNum, CURRENT_KNESSET), like(schema.votes.titleHe, qHe)))
+    .where(and(eq(schema.votes.knessetNum, CURRENT_KNESSET), likeHe(schema.votes.titleHe)))
     .orderBy(desc(schema.votes.dateTime))
     .limit(SEARCH_LIMIT)
     .all();
@@ -1561,7 +1570,7 @@ export function searchAll(query: string, searchHe: string, locale: string): Sear
   const laws = db
     .select({ id: schema.israelLaws.id, nameHe: schema.israelLaws.nameHe })
     .from(schema.israelLaws)
-    .where(like(schema.israelLaws.nameHe, qHe))
+    .where(likeHe(schema.israelLaws.nameHe))
     .limit(SEARCH_LIMIT)
     .all();
 
@@ -1571,7 +1580,7 @@ export function searchAll(query: string, searchHe: string, locale: string): Sear
     .where(
       and(
         eq(schema.committees.isCurrent, true),
-        like(schema.committees.nameHe, qHe),
+        likeHe(schema.committees.nameHe),
       ),
     )
     .limit(SEARCH_LIMIT)
@@ -1580,7 +1589,7 @@ export function searchAll(query: string, searchHe: string, locale: string): Sear
   const lobbyists = db
     .select({ id: schema.lobbyists.id, name: schema.lobbyists.fullName })
     .from(schema.lobbyists)
-    .where(like(schema.lobbyists.fullName, qHe))
+    .where(likeHe(schema.lobbyists.fullName))
     .limit(SEARCH_LIMIT)
     .all()
     .map((l) => ({ id: l.id, name: l.name ?? "" }));

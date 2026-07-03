@@ -39,6 +39,14 @@ jobs:
 
       - name: Run incremental sync
         run: npm run sync
+        # A hung OData pagination would otherwise run until the job's 6h cap,
+        # blocking the concurrency slot for the next scheduled sync.
+        timeout-minutes: 45
+
+      # Never commit a damaged DB: removes stale WAL sidecars and runs
+      # PRAGMA integrity_check, exiting non-zero if the file is corrupt.
+      - name: Verify database integrity
+        run: node scripts/db-clean.mjs
 
       - name: Commit refreshed database
         run: |
@@ -47,6 +55,9 @@ jobs:
           if [ -n "$(git status --porcelain data/knesset.db)" ]; then
             git add data/knesset.db
             git commit -m "chore(data): scheduled sync $(date -u +%Y-%m-%dT%H:%MZ)"
+            # A manual push may have landed while the sync ran — rebase our
+            # single data commit on top of it instead of failing the push.
+            git pull --rebase --autostash origin master
             git push
           else
             echo "No data changes to commit."

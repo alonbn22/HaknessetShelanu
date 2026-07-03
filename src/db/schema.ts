@@ -118,6 +118,10 @@ export const votes = sqliteTable(
   (t) => [
     index("votes_date_idx").on(t.dateTime),
     index("votes_knesset_date_idx").on(t.knessetNum, t.dateTime),
+    // Bill pages look up all votes on a bill via item_id (getBillVotes) — a
+    // full scan without this. Also created IF NOT EXISTS by the vote sync so
+    // an un-pushed DB self-heals on the next scheduled run.
+    index("votes_item_idx").on(t.itemId),
   ],
 );
 

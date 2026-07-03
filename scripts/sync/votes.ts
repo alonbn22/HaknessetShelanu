@@ -153,11 +153,12 @@ export async function remapVoteResultMkIds() {
   }
 
   const client = db.$client;
-  // Self-sufficient: create the table if a fresh DB hasn't had db:push yet.
-  // Definition matches schema.ts exactly so a later db:push sees it in-sync.
+  // Self-sufficient: create the table/index if a fresh DB hasn't had db:push
+  // yet. Definitions match schema.ts exactly so a later db:push sees them in-sync.
   client.exec(
     "CREATE TABLE IF NOT EXISTS mk_id_map (mk_id integer PRIMARY KEY, person_id integer NOT NULL)",
   );
+  client.exec("CREATE INDEX IF NOT EXISTS votes_item_idx ON votes (item_id)");
   const insMap = client.prepare(
     "INSERT OR REPLACE INTO mk_id_map (mk_id, person_id) VALUES (?, ?)",
   );

@@ -39,10 +39,11 @@ export default async function SearchPage({
         .slice(0, 8)
     : [];
 
-  // Translate the Hebrew data text shown (vote/law/committee names) on the fly.
+  // Translate the Hebrew data text shown (vote/law/bill/committee names) on the fly.
   const dataHe = [
     ...r.votes.map((v) => v.titleHe),
     ...r.laws.map((l) => l.nameHe),
+    ...r.bills.map((b) => b.nameHe),
     ...r.committees.map((c) => c.nameHe),
   ];
   const map = localizeData(dataHe, locale);
@@ -54,33 +55,48 @@ export default async function SearchPage({
     r.parties.length +
     r.votes.length +
     r.laws.length +
+    r.bills.length +
     r.committees.length +
     r.lobbyists.length +
     glossary.length;
 
   // Each group: heading + list of links. Hebrew-data items carry dir/lang.
-  const groups: { key: string; heading: string; items: { href: string; label: string; sub?: string | null; rtl?: boolean }[] }[] = [
+  // `more` = the group hit the search cap; a "showing top N" hint is rendered.
+  const groups: { key: string; heading: string; more?: boolean; items: { href: string; label: string; sub?: string | null; rtl?: boolean }[] }[] = [
     {
       key: "members",
       heading: t("nav.members"),
+      more: r.hasMore.members,
       items: r.members.map((m) => ({ href: `/members/${m.id}`, label: m.name, sub: m.sub })),
     },
     {
       key: "parties",
       heading: t("nav.parties"),
+      more: r.hasMore.parties,
       items: r.parties.map((p) => ({ href: `/parties/${p.id}`, label: p.name })),
     },
     {
       key: "votes",
       heading: t("nav.votes"),
+      more: r.hasMore.votes,
       items: r.votes.map((v) => {
         const l = loc(v.titleHe);
         return { href: `/votes/${v.id}`, label: l.text, rtl: l.rtl };
       }),
     },
     {
+      key: "bills",
+      heading: t("nav.laws"),
+      more: r.hasMore.bills,
+      items: r.bills.map((b) => {
+        const l = loc(b.nameHe);
+        return { href: `/laws/${b.id}`, label: l.text, rtl: l.rtl };
+      }),
+    },
+    {
       key: "laws",
       heading: t("nav.lawbook"),
+      more: r.hasMore.laws,
       items: r.laws.map((law) => {
         const l = loc(law.nameHe);
         return { href: `/lawbook?q=${encodeURIComponent(law.nameHe ?? "")}`, label: l.text, rtl: l.rtl };
@@ -89,6 +105,7 @@ export default async function SearchPage({
     {
       key: "committees",
       heading: t("nav.committees"),
+      more: r.hasMore.committees,
       items: r.committees.map((c) => {
         const l = loc(c.nameHe);
         return { href: `/committees/${c.id}`, label: l.text, rtl: l.rtl };
@@ -97,6 +114,7 @@ export default async function SearchPage({
     {
       key: "lobbyists",
       heading: t("nav.lobbyists"),
+      more: r.hasMore.lobbyists,
       items: r.lobbyists.map((l) => ({
         href: `/lobbyists?q=${encodeURIComponent(l.name)}`,
         label: l.name,
@@ -107,7 +125,8 @@ export default async function SearchPage({
       key: "glossary",
       heading: t("nav.glossary"),
       items: glossary.map((g) => ({
-        href: "/glossary",
+        // Deep-link to the term itself (GlossaryBrowser scrolls + highlights it).
+        href: `/glossary#g-${encodeURIComponent(g.term.he)}`,
         label: partyText(g.term, locale),
         sub: partyText(g.def, locale),
       })),
@@ -148,6 +167,11 @@ export default async function SearchPage({
                   </li>
                 ))}
               </ul>
+              {g.more && (
+                <p className="text-xs text-muted">
+                  {t("search.showingTop", { count: g.items.length })}
+                </p>
+              )}
             </section>
           ))}
         </>

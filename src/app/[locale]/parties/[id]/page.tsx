@@ -20,6 +20,23 @@ import {
 
 export const dynamic = "force-dynamic";
 
+// Page title/description/OG for search results and social shares (getFaction
+// is cache()-wrapped, so this and the page body share one lookup).
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string; locale: string }>;
+}) {
+  const { id, locale } = await params;
+  const factionId = parseInt(id, 10);
+  const faction = Number.isNaN(factionId) ? undefined : getFaction(factionId);
+  if (!faction) return {};
+  const t = await getTranslations({ locale, namespace: "meta" });
+  const name = factionName(faction.id, faction.nameHe, locale);
+  const description = t("party", { name });
+  return { title: name, description, openGraph: { title: name, description } };
+}
+
 export default async function PartyPage({
   params,
 }: {
@@ -64,7 +81,7 @@ export default async function PartyPage({
           </span>
         </div>
         {locale !== "he" && (
-          <div className="text-black/60" dir="rtl" lang="he">
+          <div className="text-muted" dir="rtl" lang="he">
             {faction.nameHe}
           </div>
         )}
@@ -90,12 +107,12 @@ export default async function PartyPage({
         <div className="flex flex-wrap gap-6 pt-2">
           <div>
             <div className="text-2xl font-bold text-accent">{members.length}</div>
-            <div className="text-sm text-black/60">{t("parties.seats")}</div>
+            <div className="text-sm text-muted">{t("parties.seats")}</div>
           </div>
           {avgParticipation != null && (
             <div>
               <div className="text-2xl font-bold text-accent">{avgParticipation}%</div>
-              <div className="text-sm text-black/60">{t("party.avgParticipation")}</div>
+              <div className="text-sm text-muted">{t("party.avgParticipation")}</div>
             </div>
           )}
           {profile?.leaderHe && (
@@ -103,13 +120,13 @@ export default async function PartyPage({
               <div className="text-2xl font-bold text-accent">
                 {locale === "he" ? profile.leaderHe : profile.leaderEn ?? profile.leaderHe}
               </div>
-              <div className="text-sm text-black/60">{t("party.leader")}</div>
+              <div className="text-sm text-muted">{t("party.leader")}</div>
             </div>
           )}
           {profile?.founded && (
             <div>
               <div className="text-2xl font-bold text-accent">{profile.founded}</div>
-              <div className="text-sm text-black/60">{t("party.founded")}</div>
+              <div className="text-sm text-muted">{t("party.founded")}</div>
             </div>
           )}
         </div>

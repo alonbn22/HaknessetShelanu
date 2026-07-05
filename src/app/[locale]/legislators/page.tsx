@@ -15,7 +15,7 @@ export default async function LegislatorsPage() {
     <div className="space-y-6">
       <div>
         <h1 className="text-3xl font-bold">{t("title")}</h1>
-        <p className="text-black/60">{t("subtitle")}</p>
+        <p className="text-muted">{t("subtitle")}</p>
       </div>
 
       <ol className="space-y-2">

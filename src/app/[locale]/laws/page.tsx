@@ -51,7 +51,7 @@ export default async function LawsPage({
       <p className="text-sm text-muted">{t("resultsCount", { count: total })}</p>
 
       {items.length === 0 ? (
-        <p className="text-black/60">{t("noResults")}</p>
+        <p className="text-muted">{t("noResults")}</p>
       ) : (
         <div className="grid gap-3 sm:grid-cols-2">
           {items.map((v) => (

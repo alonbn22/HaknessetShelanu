@@ -31,17 +31,17 @@ export default async function AccessibilityPage({
         <h2 className="text-xl font-semibold">{t("contactTitle")}</h2>
         <p className="leading-relaxed">{t("contact")}</p>
         <dl className="grid grid-cols-[auto_1fr] gap-x-4 gap-y-1 text-sm pt-2">
-          <dt className="font-medium text-black/60">{t("coordinator")}</dt>
+          <dt className="font-medium text-muted">{t("coordinator")}</dt>
           <dd>{t("coordinatorName")}</dd>
-          <dt className="font-medium text-black/60">{t("email")}</dt>
+          <dt className="font-medium text-muted">{t("email")}</dt>
           <dd>
             <a className="text-accent hover:underline" href={`mailto:${t("emailValue")}`}>
               {t("emailValue")}
             </a>
           </dd>
-          <dt className="font-medium text-black/60">{t("phone")}</dt>
+          <dt className="font-medium text-muted">{t("phone")}</dt>
           <dd>{t("phoneValue")}</dd>
-          <dt className="font-medium text-black/60">{t("updated")}</dt>
+          <dt className="font-medium text-muted">{t("updated")}</dt>
           <dd>{t("updatedValue")}</dd>
         </dl>
       </section>

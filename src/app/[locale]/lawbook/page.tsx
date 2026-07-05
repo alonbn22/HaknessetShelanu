@@ -41,7 +41,7 @@ export default async function LawBookPage({
       <p className="text-sm text-muted">{t("results", { count: total })}</p>
 
       {items.length === 0 ? (
-        <p className="text-black/60">{t("noResults")}</p>
+        <p className="text-muted">{t("noResults")}</p>
       ) : (
         <ul className="divide-y divide-black/5 rounded-xl bg-white shadow-sm">
           {items.map((law) => {

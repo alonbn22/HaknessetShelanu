@@ -7,6 +7,7 @@ import { ReadingBadge } from "@/components/ReadingBadge";
 import { getBill, getBillVotes, getBillSponsors, personName } from "@/lib/queries";
 import { voteKind, type VoteKind } from "@/lib/votes-meta";
 import { localizeData, queueDataTranslations, resolveLocalized } from "@/lib/i18n-data";
+import { localizedAttrs } from "@/lib/text";
 import { formatDate } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
@@ -20,6 +21,23 @@ const MILESTONES: VoteKind[] = [
   "second_third",
   "third",
 ];
+
+// Page title/description/OG for search results and social shares (getBill is
+// cache()-wrapped; the title localizes via the unified translation cache).
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string; locale: string }>;
+}) {
+  const { id, locale } = await params;
+  const billId = parseInt(id, 10);
+  const bill = Number.isNaN(billId) ? undefined : getBill(billId);
+  if (!bill) return {};
+  const t = await getTranslations({ locale, namespace: "meta" });
+  const title = resolveLocalized(localizeData([bill.nameHe], locale), bill.nameHe).text;
+  const description = t("bill", { title });
+  return { title, description, openGraph: { title, description } };
+}
 
 export default async function BillPage({
   params,
@@ -73,8 +91,7 @@ export default async function BillPage({
       <section className="rounded-xl bg-white p-6 shadow-sm space-y-3">
         <h1
           className="text-2xl font-bold leading-snug"
-          dir={name.rtl ? "rtl" : undefined}
-          lang={name.rtl ? "he" : undefined}
+          {...localizedAttrs(name)}
         >
           {name.text}
         </h1>
@@ -82,8 +99,7 @@ export default async function BillPage({
           {subType.text && (
             <span
               className="rounded-full bg-black/5 px-3 py-1 text-muted"
-              dir={subType.rtl ? "rtl" : undefined}
-              lang={subType.rtl ? "he" : undefined}
+              {...localizedAttrs(subType)}
             >
               {subType.text}
             </span>
@@ -93,8 +109,7 @@ export default async function BillPage({
           {status.text && !/^\d+$/.test(status.text) && (
             <span
               className="rounded-full bg-accent/10 px-3 py-1 font-medium text-accent"
-              dir={status.rtl ? "rtl" : undefined}
-              lang={status.rtl ? "he" : undefined}
+              {...localizedAttrs(status)}
             >
               {status.text}
             </span>

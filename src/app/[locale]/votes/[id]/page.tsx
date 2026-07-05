@@ -18,9 +18,28 @@ import {
   factionColor,
 } from "@/lib/queries";
 import { localizeData, queueDataTranslations, resolveLocalized, type Localized } from "@/lib/i18n-data";
+import { localizedAttrs } from "@/lib/text";
 import { VOTE_FOR, VOTE_AGAINST, VOTE_ABSTAIN } from "@/lib/constants";
 
 export const dynamic = "force-dynamic";
+
+// Page title/description/OG for search results and social shares. getVote is
+// cache()-wrapped, so this and the page body share one lookup; the title uses
+// the unified translation cache (Hebrew fallback when untranslated).
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string; locale: string }>;
+}) {
+  const { id, locale } = await params;
+  const voteId = parseInt(id, 10);
+  const vote = Number.isNaN(voteId) ? undefined : getVote(voteId);
+  if (!vote) return {};
+  const t = await getTranslations({ locale, namespace: "meta" });
+  const title = resolveLocalized(localizeData([vote.titleHe], locale), vote.titleHe).text;
+  const description = t("vote", { title });
+  return { title, description, openGraph: { title, description } };
+}
 
 export default async function VotePage({
   params,
@@ -136,8 +155,7 @@ export default async function VotePage({
                 return (
                   <div
                     className="text-xs text-muted"
-                    dir={g.rtl ? "rtl" : undefined}
-                    lang={g.rtl ? "he" : undefined}
+                    {...localizedAttrs(g)}
                   >
                     {g.text}
                   </div>
@@ -146,8 +164,7 @@ export default async function VotePage({
             {vote.itemName && (
               <p
                 className="leading-snug"
-                dir={itemName.rtl ? "rtl" : undefined}
-                lang={itemName.rtl ? "he" : undefined}
+                {...localizedAttrs(itemName)}
               >
                 {itemName.text}
               </p>
@@ -172,8 +189,7 @@ export default async function VotePage({
           {bill.subTypeDesc && (
             <div
               className="text-sm text-muted"
-              dir={subType.rtl ? "rtl" : undefined}
-              lang={subType.rtl ? "he" : undefined}
+              {...localizedAttrs(subType)}
             >
               {subType.text}
             </div>
@@ -195,7 +211,7 @@ export default async function VotePage({
           )}
           {sponsors.length > 0 && (
             <div className="space-y-2">
-              <h3 className="text-sm font-semibold text-black/60">
+              <h3 className="text-sm font-semibold text-muted">
                 {t("votes.sponsors")}
               </h3>
               <div className="flex flex-wrap gap-2">

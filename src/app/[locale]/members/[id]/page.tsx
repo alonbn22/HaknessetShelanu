@@ -33,10 +33,36 @@ import {
   committeeLabel,
   resolveLocalized,
 } from "@/lib/i18n-data";
+import { localizedAttrs } from "@/lib/text";
 import { POSITION_FACTION_MEMBER, MK_POSITION_IDS, CURRENT_KNESSET } from "@/lib/constants";
 import { after } from "next/server";
 
 export const dynamic = "force-dynamic";
+
+// Page title/description/OG for search results and social shares. getMember is
+// cache()-wrapped, so this and the page body share one lookup.
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string; locale: string }>;
+}) {
+  const { id, locale } = await params;
+  const personId = parseInt(id, 10);
+  const member = Number.isNaN(personId) ? undefined : getMember(personId);
+  if (!member) return {};
+  const t = await getTranslations({ locale, namespace: "meta" });
+  const name = personName(member, locale);
+  const description = t("member", { name });
+  return {
+    title: name,
+    description,
+    openGraph: {
+      title: name,
+      description,
+      ...(member.photoUrl ? { images: [member.photoUrl] } : {}),
+    },
+  };
+}
 
 export default async function MemberPage({
   params,
@@ -221,7 +247,7 @@ export default async function MemberPage({
           <dl className="grid gap-x-4 gap-y-2 text-sm sm:grid-cols-[max-content_1fr]">
             {(bio.dateOfBirth || bio.birthPlaceHe) && (
               <>
-                <dt className="font-medium text-black/60">{t("member.born")}</dt>
+                <dt className="font-medium text-muted">{t("member.born")}</dt>
                 <dd className="flex flex-wrap gap-x-2">
                   {bio.dateOfBirth && <span>{formatDate(bio.dateOfBirth, locale)}</span>}
                   {bio.birthPlaceHe &&
@@ -245,7 +271,7 @@ export default async function MemberPage({
               .filter((row) => row.items.length > 0)
               .map((row) => (
                 <Fragment key={row.label}>
-                  <dt className="font-medium text-black/60">{row.label}</dt>
+                  <dt className="font-medium text-muted">{row.label}</dt>
                   <dd className="flex flex-wrap gap-x-1.5">
                     {row.items.map((it, i) => (
                       <span key={i} dir={it.rtl ? "rtl" : undefined} lang={it.rtl ? "he" : undefined}>
@@ -289,27 +315,27 @@ export default async function MemberPage({
               <div className="text-2xl font-bold text-accent">
                 {stats.participationPct}%
               </div>
-              <div className="text-sm text-black/60">{t("member.participated")}</div>
+              <div className="text-sm text-muted">{t("member.participated")}</div>
             </div>
             <div>
               <div className="text-2xl font-bold text-green-700">{stats.votedFor}</div>
-              <div className="text-sm text-black/60">{t("member.votesFor")}</div>
+              <div className="text-sm text-muted">{t("member.votesFor")}</div>
             </div>
             <div>
               <div className="text-2xl font-bold text-red-700">
                 {stats.votedAgainst}
               </div>
-              <div className="text-sm text-black/60">{t("member.votesAgainst")}</div>
+              <div className="text-sm text-muted">{t("member.votesAgainst")}</div>
             </div>
             <div>
               <div className="text-2xl font-bold text-yellow-700">
                 {stats.abstained}
               </div>
-              <div className="text-sm text-black/60">{t("member.abstained")}</div>
+              <div className="text-sm text-muted">{t("member.abstained")}</div>
             </div>
             <div>
               <div className="text-2xl font-bold text-muted">{stats.missed}</div>
-              <div className="text-sm text-black/60">{t("member.missed")}</div>
+              <div className="text-sm text-muted">{t("member.missed")}</div>
             </div>
           </div>
           <div className="space-y-1">
@@ -373,8 +399,7 @@ export default async function MemberPage({
                 <li
                   key={b.id}
                   className="text-sm"
-                  dir={bt.rtl ? "rtl" : undefined}
-                  lang={bt.rtl ? "he" : undefined}
+                  {...localizedAttrs(bt)}
                 >
                   <Link href={`/laws/${b.id}`} className="text-accent hover:underline">
                     {bt.text}
@@ -392,15 +417,15 @@ export default async function MemberPage({
           <div className="grid grid-cols-3 gap-4 text-center">
             <div>
               <div className="text-2xl font-bold text-accent">{sponsoredCount}</div>
-              <div className="text-sm text-black/60">{t("member.billsProposed")}</div>
+              <div className="text-sm text-muted">{t("member.billsProposed")}</div>
             </div>
             <div>
               <div className="text-2xl font-bold text-accent">{questionCount}</div>
-              <div className="text-sm text-black/60">{t("member.questions")}</div>
+              <div className="text-sm text-muted">{t("member.questions")}</div>
             </div>
             <div>
               <div className="text-2xl font-bold text-accent">{agendaCount}</div>
-              <div className="text-sm text-black/60">{t("member.agendaMotions")}</div>
+              <div className="text-sm text-muted">{t("member.agendaMotions")}</div>
             </div>
           </div>
           {recentQuestions.length > 0 && (
@@ -411,8 +436,7 @@ export default async function MemberPage({
                   <li
                     key={q.id}
                     className="py-2 text-sm"
-                    dir={qt.rtl ? "rtl" : undefined}
-                    lang={qt.rtl ? "he" : undefined}
+                    {...localizedAttrs(qt)}
                   >
                     {qt.text}
                   </li>
@@ -434,8 +458,7 @@ export default async function MemberPage({
                   key={c.committeeId}
                   href={`/committees/${c.committeeId}`}
                   className="rounded-full bg-black/5 px-3 py-1 text-sm hover:bg-black/10"
-                  dir={g.rtl ? "rtl" : undefined}
-                  lang={g.rtl ? "he" : undefined}
+                  {...localizedAttrs(g)}
                 >
                   {g.text}
                 </Link>
@@ -457,7 +480,7 @@ export default async function MemberPage({
               ].filter((x): x is NonNullable<typeof x> => x != null && x.text !== "");
               return (
                 <li key={p.id} className="flex flex-wrap gap-x-2 text-sm">
-                  <span className={p.isCurrent ? "font-medium" : "text-black/60"}>
+                  <span className={p.isCurrent ? "font-medium" : "text-muted"}>
                     {parts.map((g, i) => (
                       <span key={i} dir={g.rtl ? "rtl" : undefined} lang={g.rtl ? "he" : undefined}>
                         {i > 0 ? " — " : ""}
@@ -496,9 +519,8 @@ export default async function MemberPage({
               return (
               <li key={p.id} className="flex flex-wrap gap-x-2 text-sm">
                 <span
-                  className={p.isCurrent ? "font-medium" : "text-black/60"}
-                  dir={fl.rtl ? "rtl" : undefined}
-                  lang={fl.rtl ? "he" : undefined}
+                  className={p.isCurrent ? "font-medium" : "text-muted"}
+                  {...localizedAttrs(fl)}
                 >
                   {fl.text}
                 </span>

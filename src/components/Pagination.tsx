@@ -29,7 +29,7 @@ export function Pagination({
       ) : (
         <span className="text-black/30">← {t("previous")}</span>
       )}
-      <span className="text-black/60">{t("page", { page, total: pages })}</span>
+      <span className="text-muted">{t("page", { page, total: pages })}</span>
       {page < pages ? (
         <Link href={href(page + 1)} className="text-accent hover:underline">
           {t("next")} →

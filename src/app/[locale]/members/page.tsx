@@ -47,7 +47,7 @@ export default async function MembersPage({
       </p>
 
       {members.length === 0 ? (
-        <p className="text-black/60">{t("members.noResults")}</p>
+        <p className="text-muted">{t("members.noResults")}</p>
       ) : (
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {members.map((m) => (

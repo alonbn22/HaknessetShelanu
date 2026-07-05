@@ -15,6 +15,7 @@ import {
 import { getBudgetOutlook, partyText } from "@/lib/content";
 import { translateQueryToHebrew } from "@/lib/translate-query";
 import { localizeData, queueDataTranslations, resolveLocalized } from "@/lib/i18n-data";
+import { localizedAttrs } from "@/lib/text";
 
 export const dynamic = "force-dynamic";
 
@@ -193,8 +194,7 @@ export default async function BudgetPage({
                   <div className="flex items-baseline justify-between gap-3">
                     <span
                       className="font-medium"
-                      dir={nm.rtl ? "rtl" : undefined}
-                      lang={nm.rtl ? "he" : undefined}
+                      {...localizedAttrs(nm)}
                     >
                       {nm.text}
                     </span>
@@ -252,8 +252,7 @@ export default async function BudgetPage({
                           {sub && sub.text !== primary.text && (
                             <span
                               className="block text-xs text-muted"
-                              dir={sub.rtl ? "rtl" : undefined}
-                              lang={sub.rtl ? "he" : undefined}
+                              {...localizedAttrs(sub)}
                             >
                               {sub.text}
                             </span>
@@ -261,8 +260,7 @@ export default async function BudgetPage({
                         </td>
                         <td
                           className="px-3 py-2 hidden md:table-cell text-muted"
-                          dir={min.rtl ? "rtl" : undefined}
-                          lang={min.rtl ? "he" : undefined}
+                          {...localizedAttrs(min)}
                         >
                           {min.text}
                         </td>

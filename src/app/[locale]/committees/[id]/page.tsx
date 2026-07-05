@@ -9,6 +9,23 @@ import { localizeData, committeeLabel, queueDataTranslations } from "@/lib/i18n-
 
 export const dynamic = "force-dynamic";
 
+// Page title/description/OG for search results and social shares (getCommittee
+// is cache()-wrapped; the name resolves via the shared committee-label helper).
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string; locale: string }>;
+}) {
+  const { id, locale } = await params;
+  const committeeId = parseInt(id, 10);
+  const committee = Number.isNaN(committeeId) ? undefined : getCommittee(committeeId);
+  if (!committee) return {};
+  const t = await getTranslations({ locale, namespace: "meta" });
+  const name = committeeLabel(committee.nameHe, locale, localizeData([committee.nameHe], locale)).text;
+  const description = t("committee", { name });
+  return { title: name, description, openGraph: { title: name, description } };
+}
+
 export default async function CommitteePage({
   params,
 }: {
@@ -50,7 +67,7 @@ export default async function CommitteePage({
       <section className="space-y-3">
         <h2 className="text-xl font-semibold">{t("committees.members")}</h2>
         {members.length === 0 ? (
-          <p className="text-black/60">{t("committees.noMembers")}</p>
+          <p className="text-muted">{t("committees.noMembers")}</p>
         ) : (
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {members.map(({ person, roleHe }) => (
@@ -67,7 +84,7 @@ export default async function CommitteePage({
                       const r = govDuty(roleHe, locale);
                       return (
                         <div
-                          className="text-sm text-black/60 truncate"
+                          className="text-sm text-muted truncate"
                           dir={r.rtl ? "rtl" : undefined}
                           lang={r.rtl ? "he" : undefined}
                         >

@@ -14,6 +14,7 @@ export default async function GlossaryPage() {
     .map((g) => ({
       category: g.category,
       term: partyText(g.term, locale),
+      termHe: g.term.he, // stable anchor key across locales (#g-<termHe>)
       def: partyText(g.def, locale),
       source: g.sourceUrl ?? null,
     }))

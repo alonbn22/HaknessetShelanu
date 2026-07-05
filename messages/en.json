@@ -39,7 +39,7 @@
     "photoBy": "Photo: {attribution}",
     "previous": "Previous",
     "next": "Next",
-    "page": "Page {page} of {total}",
+    "page": "Page {page, number} of {total, number}",
     "source": "Source",
     "knesset": "Knesset"
   },
@@ -530,7 +530,8 @@
     "button": "Search",
     "prompt": "Type to search across the whole site.",
     "noResults": "No results for \"{q}\".",
-    "resultsFor": "Results for \"{q}\""
+    "resultsFor": "Results for \"{q}\"",
+    "showingTop": "Showing the top {count} results — refine your search for more"
   },
   "hemicycle": {
     "aria": "Knesset seating chart: {coalition} coalition seats, {opposition} opposition seats",
@@ -557,5 +558,12 @@
     "atStage": "{count} votes at this stage",
     "relatedVotes": "+ {count} related votes (reservations, clause votes, etc.)",
     "firstReadingText": "First-reading text"
+  },
+  "meta": {
+    "member": "{name}: voting record, roles, and parliamentary activity in the Knesset",
+    "vote": "How every Knesset member voted: {title}",
+    "bill": "The legislative journey, sponsors, and documents of {title}",
+    "party": "{name}: seats, members, positions, and voting patterns in the Knesset",
+    "committee": "{name}: committee members and their roles in the Knesset"
   }
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import {
   GLOSSARY_CATEGORIES,
@@ -10,14 +10,35 @@ import {
 type Item = {
   category: GlossaryCategory;
   term: string;
+  termHe: string; // anchor key — stable across locales
   def: string;
   source?: string | null;
 };
+
+// Anchor id for a term; search results deep-link with /glossary#g-<termHe>.
+const anchorId = (termHe: string) => `g-${encodeURIComponent(termHe)}`;
 
 export function GlossaryBrowser({ items }: { items: Item[] }) {
   const t = useTranslations("glossary");
   const [q, setQ] = useState("");
   const [cat, setCat] = useState<GlossaryCategory | "all">("all");
+  const [highlight, setHighlight] = useState<string | null>(null);
+
+  // Deep link (#g-<termHe>): scroll to the term and highlight it briefly.
+  // Filters start empty on mount, so the term is guaranteed to be rendered.
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (!hash.startsWith("#g-")) return;
+    const id = hash.slice(1);
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- one-time deep-link highlight after hydration
+    setHighlight(id);
+    // After paint, so the grid has laid out before we scroll.
+    requestAnimationFrame(() => {
+      document.getElementById(id)?.scrollIntoView({ block: "center" });
+    });
+    const timer = setTimeout(() => setHighlight(null), 2500);
+    return () => clearTimeout(timer);
+  }, []);
 
   const filtered = useMemo(() => {
     const query = q.trim().toLowerCase();
@@ -65,7 +86,13 @@ export function GlossaryBrowser({ items }: { items: Item[] }) {
       ) : (
         <dl className="grid gap-3 sm:grid-cols-2">
           {filtered.map((it, i) => (
-            <div key={i} className="rounded-xl bg-white p-4 shadow-sm">
+            <div
+              key={i}
+              id={anchorId(it.termHe)}
+              className={`rounded-xl bg-white p-4 shadow-sm transition-shadow ${
+                highlight === anchorId(it.termHe) ? "ring-2 ring-accent" : ""
+              }`}
+            >
               <dt className="flex items-baseline justify-between gap-2">
                 <span className="font-bold text-lg">{it.term}</span>
                 <span className="shrink-0 rounded-full bg-accent/10 px-2 py-0.5 text-xs text-accent">

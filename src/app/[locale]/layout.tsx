@@ -30,6 +30,8 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "site" });
   return {
+    // Resolves relative OG/canonical URLs; set NEXT_PUBLIC_SITE_URL in prod.
+    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
     title: { default: t("name"), template: `%s · ${t("name")}` },
     description: t("tagline"),
   };

@@ -100,9 +100,10 @@ export function getCurrentFactionsWithSeats(): FactionWithSeats[] {
     .sort((a, b) => b.seats - a.seats);
 }
 
-export function getFaction(id: number): Faction | undefined {
+// cache(): generateMetadata and the page body both fetch the entity — one query.
+export const getFaction = cache((id: number): Faction | undefined => {
   return getDb().select().from(schema.factions).where(eq(schema.factions.id, id)).get();
-}
+});
 
 // ---------- members ----------
 
@@ -241,9 +242,9 @@ export function getCurrentMembers(filters?: {
   );
 }
 
-export function getMember(id: number): Person | undefined {
+export const getMember = cache((id: number): Person | undefined => {
   return getDb().select().from(schema.persons).where(eq(schema.persons.id, id)).get();
-}
+});
 
 type CareerEntry = { title: string; start: string | null; end: string | null };
 export type CareerRange = { start: string | null; end: string | null };
@@ -774,9 +775,9 @@ export function getBillForVote(vote: Vote): Bill | undefined {
   return getDb().select().from(schema.bills).where(eq(schema.bills.id, vote.itemId)).get();
 }
 
-export function getBill(id: number): Bill | undefined {
+export const getBill = cache((id: number): Bill | undefined => {
   return getDb().select().from(schema.bills).where(eq(schema.bills.id, id)).get();
-}
+});
 
 // All plenum votes on a bill (its readings, reservations, etc.), oldest first —
 // the raw material for the bill-journey timeline.
@@ -957,9 +958,9 @@ export function getCurrentCommittees(): Committee[] {
     .sort((a, b) => (a.nameHe ?? "").localeCompare(b.nameHe ?? "", "he"));
 }
 
-export function getCommittee(id: number): Committee | undefined {
+export const getCommittee = cache((id: number): Committee | undefined => {
   return getDb().select().from(schema.committees).where(eq(schema.committees.id, id)).get();
-}
+});
 
 export function getCommitteeMembers(committeeId: number) {
   const db = getDb();
@@ -1484,11 +1485,46 @@ export type SearchResults = {
   parties: { id: number; name: string }[];
   votes: { id: number; titleHe: string | null }[];
   laws: { id: number; nameHe: string | null }[];
+  bills: { id: number; nameHe: string | null }[];
   committees: { id: number; nameHe: string | null }[];
   lobbyists: { id: number; name: string }[];
+  // Groups that hit SEARCH_LIMIT (more rows exist) — the page shows a
+  // "showing top N, refine your search" hint for these.
+  hasMore: Partial<Record<keyof Omit<SearchResults, "hasMore">, boolean>>;
 };
 
-const SEARCH_LIMIT = 8;
+const SEARCH_LIMIT = 10;
+
+// Detail-page ids for the sitemap — one cheap id-only select per entity type.
+export function getSitemapEntityIds() {
+  const db = getDb();
+  const ids = (rows: { id: number }[]) => rows.map((r) => r.id);
+  return {
+    members: ids(db.select({ id: schema.persons.id }).from(schema.persons).all()),
+    parties: ids(
+      db
+        .select({ id: schema.factions.id })
+        .from(schema.factions)
+        .where(eq(schema.factions.isCurrent, true))
+        .all(),
+    ),
+    committees: ids(
+      db
+        .select({ id: schema.committees.id })
+        .from(schema.committees)
+        .where(eq(schema.committees.isCurrent, true))
+        .all(),
+    ),
+    bills: ids(db.select({ id: schema.bills.id }).from(schema.bills).all()),
+    votes: ids(
+      db
+        .select({ id: schema.votes.id })
+        .from(schema.votes)
+        .where(eq(schema.votes.knessetNum, CURRENT_KNESSET))
+        .all(),
+    ),
+  };
+}
 
 // One query across all entity types. `searchHe` is the query translated to Hebrew
 // (so cross-language search matches the always-present Hebrew columns); names also
@@ -1497,8 +1533,27 @@ export function searchAll(query: string, searchHe: string, locale: string): Sear
   const db = getDb();
   const trimmed = query.trim();
   if (!trimmed) {
-    return { members: [], parties: [], votes: [], laws: [], committees: [], lobbyists: [] };
+    return {
+      members: [],
+      parties: [],
+      votes: [],
+      laws: [],
+      bills: [],
+      committees: [],
+      lobbyists: [],
+      hasMore: {},
+    };
   }
+  // Fetch one extra row per group: row LIMIT+1 present => the group is capped.
+  const OVER = SEARCH_LIMIT + 1;
+  const hasMore: SearchResults["hasMore"] = {};
+  const cap = <T>(key: keyof SearchResults["hasMore"] & string, rows: T[]): T[] => {
+    if (rows.length > SEARCH_LIMIT) {
+      hasMore[key as keyof typeof hasMore] = true;
+      return rows.slice(0, SEARCH_LIMIT);
+    }
+    return rows;
+  };
   const q = `%${trimmed}%`;
   const qHe = `%${(searchHe || trimmed).trim()}%`;
   // Hebrew-text columns: match the translated query, and — when the translation
@@ -1509,27 +1564,29 @@ export function searchAll(query: string, searchHe: string, locale: string): Sear
 
   const factionIds = matchFactionIds(trimmed);
 
-  const memberRows = db
-    .selectDistinct({ person: schema.persons })
-    .from(schema.persons)
-    .innerJoin(
-      schema.personPositions,
-      eq(schema.personPositions.personId, schema.persons.id),
-    )
-    .where(
-      and(
-        eq(schema.personPositions.knessetNum, CURRENT_KNESSET),
-        or(
-          like(sql`${schema.persons.firstNameHe} || ' ' || ${schema.persons.lastNameHe}`, qHe),
-          like(schema.persons.nameEn, q),
-          like(schema.persons.nameAr, q),
-          like(schema.persons.nameRu, q),
-        )!,
-      ),
-    )
-    .limit(SEARCH_LIMIT)
-    .all()
-    .map((r) => r.person);
+  const memberRows = cap(
+    "members",
+    db
+      .selectDistinct({ person: schema.persons })
+      .from(schema.persons)
+      .innerJoin(
+        schema.personPositions,
+        eq(schema.personPositions.personId, schema.persons.id),
+      )
+      .where(
+        and(
+          eq(schema.personPositions.knessetNum, CURRENT_KNESSET),
+          or(
+            like(sql`${schema.persons.firstNameHe} || ' ' || ${schema.persons.lastNameHe}`, qHe),
+            like(schema.persons.nameEn, q),
+            like(schema.persons.nameAr, q),
+            like(schema.persons.nameRu, q),
+          )!,
+        ),
+      )
+      .limit(OVER)
+      .all(),
+  ).map((r) => r.person);
   const facMap = getLatestFactionMap(memberRows.map((p) => p.id));
   const members = memberRows.map((p) => {
     const f = facMap.get(p.id);
@@ -1540,59 +1597,85 @@ export function searchAll(query: string, searchHe: string, locale: string): Sear
     };
   });
 
-  const parties = db
-    .select()
-    .from(schema.factions)
-    .where(
-      and(
-        eq(schema.factions.isCurrent, true),
-        or(
-          like(schema.factions.nameHe, qHe),
-          like(schema.factions.nameEn, q),
-          like(schema.factions.nameAr, q),
-          like(schema.factions.nameRu, q),
-          factionIds.length ? inArray(schema.factions.id, factionIds) : sql`0`,
-        )!,
-      ),
-    )
-    .limit(SEARCH_LIMIT)
-    .all()
-    .map((f) => ({ id: f.id, name: factionName(f.id, f.nameHe, locale) }));
+  const parties = cap(
+    "parties",
+    db
+      .select()
+      .from(schema.factions)
+      .where(
+        and(
+          eq(schema.factions.isCurrent, true),
+          or(
+            like(schema.factions.nameHe, qHe),
+            like(schema.factions.nameEn, q),
+            like(schema.factions.nameAr, q),
+            like(schema.factions.nameRu, q),
+            factionIds.length ? inArray(schema.factions.id, factionIds) : sql`0`,
+          )!,
+        ),
+      )
+      .limit(OVER)
+      .all(),
+  ).map((f) => ({ id: f.id, name: factionName(f.id, f.nameHe, locale) }));
 
-  const votes = db
-    .select({ id: schema.votes.id, titleHe: schema.votes.titleHe })
-    .from(schema.votes)
-    .where(and(eq(schema.votes.knessetNum, CURRENT_KNESSET), likeHe(schema.votes.titleHe)))
-    .orderBy(desc(schema.votes.dateTime))
-    .limit(SEARCH_LIMIT)
-    .all();
+  const votes = cap(
+    "votes",
+    db
+      .select({ id: schema.votes.id, titleHe: schema.votes.titleHe })
+      .from(schema.votes)
+      .where(and(eq(schema.votes.knessetNum, CURRENT_KNESSET), likeHe(schema.votes.titleHe)))
+      .orderBy(desc(schema.votes.dateTime))
+      .limit(OVER)
+      .all(),
+  );
 
-  const laws = db
-    .select({ id: schema.israelLaws.id, nameHe: schema.israelLaws.nameHe })
-    .from(schema.israelLaws)
-    .where(likeHe(schema.israelLaws.nameHe))
-    .limit(SEARCH_LIMIT)
-    .all();
+  const laws = cap(
+    "laws",
+    db
+      .select({ id: schema.israelLaws.id, nameHe: schema.israelLaws.nameHe })
+      .from(schema.israelLaws)
+      .where(likeHe(schema.israelLaws.nameHe))
+      .limit(OVER)
+      .all(),
+  );
 
-  const committees = db
-    .select({ id: schema.committees.id, nameHe: schema.committees.nameHe })
-    .from(schema.committees)
-    .where(
-      and(
-        eq(schema.committees.isCurrent, true),
-        likeHe(schema.committees.nameHe),
-      ),
-    )
-    .limit(SEARCH_LIMIT)
-    .all();
+  // Bills (proposed legislation with a journey page) — distinct from the
+  // consolidated law book above.
+  const bills = cap(
+    "bills",
+    db
+      .select({ id: schema.bills.id, nameHe: schema.bills.nameHe })
+      .from(schema.bills)
+      .where(likeHe(schema.bills.nameHe))
+      .orderBy(desc(schema.bills.lastUpdated))
+      .limit(OVER)
+      .all(),
+  );
 
-  const lobbyists = db
-    .select({ id: schema.lobbyists.id, name: schema.lobbyists.fullName })
-    .from(schema.lobbyists)
-    .where(likeHe(schema.lobbyists.fullName))
-    .limit(SEARCH_LIMIT)
-    .all()
-    .map((l) => ({ id: l.id, name: l.name ?? "" }));
+  const committees = cap(
+    "committees",
+    db
+      .select({ id: schema.committees.id, nameHe: schema.committees.nameHe })
+      .from(schema.committees)
+      .where(
+        and(
+          eq(schema.committees.isCurrent, true),
+          likeHe(schema.committees.nameHe),
+        ),
+      )
+      .limit(OVER)
+      .all(),
+  );
 
-  return { members, parties, votes, laws, committees, lobbyists };
+  const lobbyists = cap(
+    "lobbyists",
+    db
+      .select({ id: schema.lobbyists.id, name: schema.lobbyists.fullName })
+      .from(schema.lobbyists)
+      .where(likeHe(schema.lobbyists.fullName))
+      .limit(OVER)
+      .all(),
+  ).map((l) => ({ id: l.id, name: l.name ?? "" }));
+
+  return { members, parties, votes, laws, bills, committees, lobbyists, hasMore };
 }

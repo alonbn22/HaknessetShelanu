@@ -33,7 +33,7 @@ export default async function VotesPage({
       <h1 className="text-3xl font-bold">{t("votes.title")}</h1>
       <VoteSearch />
       {items.length === 0 ? (
-        <p className="text-black/60">{t("votes.noResults")}</p>
+        <p className="text-muted">{t("votes.noResults")}</p>
       ) : (
         <div className="grid gap-3 sm:grid-cols-2">
           {items.map((v) => (

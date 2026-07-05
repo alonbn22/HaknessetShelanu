@@ -29,3 +29,26 @@ test("mk_id_map exists and is populated", () => {
   const row = db.get<{ c: number }>(sql`SELECT COUNT(*) AS c FROM mk_id_map`);
   assert.ok((row?.c ?? 0) > 0, "mk_id_map is empty or missing");
 });
+
+// The precomputed pairwise-agreement table must stay symmetric and must agree
+// with the on-the-fly getVotingAgreement calculation it mirrors.
+test("mk_agreement is symmetric and matches getVotingAgreement", async () => {
+  const asym = db.get<{ c: number }>(sql`
+    SELECT COUNT(*) AS c FROM mk_agreement a
+    WHERE NOT EXISTS (
+      SELECT 1 FROM mk_agreement b
+      WHERE b.person_a = a.person_b AND b.person_b = a.person_a
+        AND b.pct = a.pct AND b.both_voted = a.both_voted
+    )`);
+  assert.equal(asym?.c, 0, `${asym?.c} rows lack a matching mirror row`);
+
+  const sample = db.get<{ person_a: number; person_b: number; both_voted: number; agreed: number }>(
+    sql`SELECT person_a, person_b, both_voted, agreed FROM mk_agreement
+        ORDER BY both_voted DESC LIMIT 1`,
+  );
+  assert.ok(sample, "mk_agreement is empty");
+  const { getVotingAgreement } = await import("../../src/lib/queries");
+  const live = getVotingAgreement(sample!.person_a, sample!.person_b);
+  assert.equal(live.bothVoted, sample!.both_voted);
+  assert.equal(live.agreed, sample!.agreed);
+});

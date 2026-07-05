@@ -31,7 +31,7 @@ import {
   remapVoteResultMkIds,
   computeVoteTotals,
 } from "./votes";
-import { computeMkStats } from "./stats";
+import { computeMkStats, computeMkAgreement } from "./stats";
 import { syncBills } from "./bills";
 import {
   syncQueries,
@@ -83,6 +83,7 @@ async function main() {
   if (all || args.has("--votes") || args.has("--stats")) {
     computeVoteTotals();
     computeMkStats();
+    computeMkAgreement(); // pairwise agreement — feeds "voted most/least similarly"
   }
 
   if (all || args.has("--votes") || args.has("--bills")) {

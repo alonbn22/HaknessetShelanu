@@ -42,7 +42,8 @@ with English, Arabic, and Russian.
 | Factions | `/parties`, `/parties/[id]` | Seats, coalition badge, avg participation; **political spectrum bar, summary, key positions, leader, ballot letters** (editorial) |
 | Ministers | `/ministers` | The sitting government; explains the "Norwegian Law" (ministers who vacated their seat) |
 | Votes | `/votes`, `/votes/[id]` | Searchable list; detail shows **reading stage**, "what a 'for' vote means", the agenda subject, and **every MK's vote incl. absentees** grouped by faction, with the authoritative tally + a reconciliation note when a voter is a former member |
-| Bills & laws | `/laws`, `/lawbook` | Bills with documents + sponsors; the full **Israel law book** |
+| Bills & laws | `/laws`, `/laws/[id]`, `/lawbook` | Bills that reached plenum votes (with documents + sponsors) and a per-bill **legislative journey**; `/lawbook` is the separate consolidated Israel law book |
+| Legislators | `/legislators` | Most-active legislators, ranked by bills sponsored |
 | Committees | `/committees`, `/committees/[id]` | Standing/special committees + memberships |
 | Budget | `/budget` | Ministry of Finance budget by ministry/area/line, with history + search |
 | Lobbyists | `/lobbyists` | The official lobbyist registry (firms, clients), sortable; foreign-funding context |
@@ -50,7 +51,7 @@ with English, Arabic, and Russian.
 | Elections + quiz | `/elections`, `/quiz` | Knesset election history; an election-compass party-fit quiz (editorial) |
 | Dictionary | `/glossary` | Plain-language political terms, grouped by topic, each sourced |
 | Transparency | `/sources`, `/tickets` | Every data source listed; report-wrong / suggest-new flows open GitHub tickets. A site-wide work-in-progress notice sits at the top of every page |
-| Accessibility | `/accessibility` + floating widget | Israeli Standard IS 5568 / WCAG 2.1 AA |
+| Accessibility | `/accessibility` + floating widget | Israeli Standard IS 5568 / WCAG 2.0 AA |
 
 ## Tech stack
 
@@ -58,8 +59,11 @@ with English, Arabic, and Russian.
 - **next-intl** for i18n. Locales: `he` (default, served at `/`), `en`, `ar`,
   `ru` (prefixed). `he`/`ar` render RTL. UI strings live in `messages/<locale>.json`.
   Routing/middleware: `src/i18n/`, `src/proxy.ts`.
-- **SQLite via Drizzle ORM** (`better-sqlite3`). DB file: `data/knesset.db`
-  (gitignored, read-only at request time). Schema: `src/db/schema.ts`.
+- **SQLite via Drizzle ORM** (`better-sqlite3`). DB file: `data/knesset.db` —
+  **committed to the repo** (that's how deploys and the scheduled sync stay
+  incremental); only the transient `*.db-wal/-shm/-journal` sidecars are
+  gitignored. Read-only at request time except the lazy-translation cache.
+  Schema: `src/db/schema.ts`.
 - Data access lives in `src/lib/queries.ts`; editorial content loading + Zod
   validation in `src/lib/content.ts`.
 
@@ -72,7 +76,11 @@ npm run sync             # pull data from the Knesset API + Wikidata (takes a wh
 npm run dev              # http://localhost:3000
 ```
 
-Other scripts: `npm run build`, `npm run lint`.
+Other scripts: `npm run build`, `npm run lint`, `npm test`,
+`npm run db:clean` (drop stale WAL sidecars + integrity-check the DB).
+
+Env: set `NEXT_PUBLIC_SITE_URL` to the production origin (no trailing slash) so
+the sitemap, robots.txt, and OpenGraph URLs resolve to the real domain.
 
 ## Data sources (all verified working)
 
@@ -107,11 +115,14 @@ published anywhere (we derive participation from votes).
 parliamentary activity, the law book, budget, lobbyists, and recomputed stats —
 in one command. Run it whenever you want fresh data. (`npm run sync` is the same
 thing; `update` is just the friendly name.) It is idempotent (upserts) and
-incremental on each table's `LastUpdatedDate` (cursor in `sync_state`); the large
-`KNS_PlenumVoteResult` backfill (~480k rows) **checkpoints every 10k rows so it
-resumes after interruption**, and the run ends by folding the WAL back into
-`data/knesset.db` so the committed file is self-contained. Run it on a schedule
-(the bundled GitHub Action does this every 6h) to keep data fresh.
+incremental on each table's `LastUpdatedDate` (cursor in `sync_state`). The
+initial `KNS_PlenumVoteResult` backfill (~480k rows) fetches the term in
+parallel date windows; if it's interrupted it restarts on the next run (only
+the first-ever sync is a backfill — after that everything is incremental). The
+run ends by folding the WAL back into `data/knesset.db` so the committed file
+is self-contained. Run it on a schedule (the bundled GitHub Action does this
+every 6h, verifies DB integrity, and commits the refreshed file) to keep data
+fresh.
 
 Data text (vote/law/committee/budget names, bios) is **not** translated in the
 sync — it translates lazily on first view via the unified cache, so new data
@@ -201,12 +212,14 @@ The site targets **Israeli Standard IS 5568 (≈ WCAG 2.0 AA)**:
 
 ## Project status
 
-Live and broad: members/factions, votes + per-MK stats, member comparison, bills
-+ the law book, committees, the budget, lobbyists, the dictionary, elections
-history + the party-fit quiz, global search, curated member records, party
-profiles, accessibility, and the transparency pages. Remaining roadmap (bill
-journey, party-discipline metrics, dark mode) and **ideas for data we could still
-surface from the APIs** are tracked in [`ROADMAP.md`](ROADMAP.md).
+Live and broad: members/factions, votes + per-MK stats, member comparison with
+a voting-agreement rate, party-discipline metrics, bill journeys + the law
+book, committees, the budget, lobbyists, the dictionary, elections history +
+the party-fit quiz, global search, per-page metadata + a full sitemap, curated
+member records, party profiles, accessibility, and the transparency pages. The
+remaining roadmap (dark mode, committee calendars, status-code decoding) and
+**ideas for data we could still surface from the APIs** are tracked in
+[`ROADMAP.md`](ROADMAP.md).
 
 ## License & contributing
 

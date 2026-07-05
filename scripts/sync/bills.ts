@@ -37,6 +37,20 @@ export async function syncBills() {
   const db = getDb();
   console.log("Syncing bills (legislation referenced by votes)…");
 
+  // KNS_Status decodes the numeric StatusID into its official Hebrew label
+  // (which then localizes via the unified translation cache). Fetched fresh
+  // each run — it's one small page and the statuses rarely change.
+  const statusMap = new Map<number, string>();
+  try {
+    for (const s of await fetchAll<Row>(entityUrl("KNS_Status"))) {
+      if (s.Id != null && s.Desc) statusMap.set(s.Id, String(s.Desc).trim());
+    }
+    console.log(`  ${statusMap.size} status labels loaded`);
+  } catch (err) {
+    // Non-fatal: bills fall back to the numeric id (the UI hides numerics).
+    console.warn("  KNS_Status fetch failed; keeping numeric statuses", err);
+  }
+
   // Distinct bill IDs = item ids of bill-reading votes.
   const billIds = db
     .selectDistinct({ id: schema.votes.itemId })
@@ -71,7 +85,9 @@ export async function syncBills() {
         knessetNum: b.KnessetNum,
         nameHe: (b.Name ?? "").trim(),
         subTypeDesc: b.SubTypeDesc ?? null,
-        statusDesc: b.StatusID ? String(b.StatusID) : null,
+        // Official Hebrew status label; numeric fallback only if the lookup
+        // failed (the bill page hides pure-numeric statuses).
+        statusDesc: b.StatusID ? (statusMap.get(b.StatusID) ?? String(b.StatusID)) : null,
         ...docs,
         lastUpdated: b.LastUpdatedDate,
       };

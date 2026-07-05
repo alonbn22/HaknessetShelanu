@@ -437,6 +437,63 @@ export function getPartyDiscipline(personId: number): PartyDiscipline | null {
   return { total, withParty, pct: Math.round((1000 * withParty) / total) / 10 };
 }
 
+export type AgreementPartner = {
+  person: Person;
+  bothVoted: number;
+  agreed: number;
+  pct: number;
+};
+
+// The members who voted most (or least) like this one, from the precomputed
+// mk_agreement table (rebuilt each sync by computeMkAgreement). Only pairs
+// with a meaningful sample (>= 100 shared votes) and currently-serving
+// partners. Returns [] until the table is first materialized by a sync.
+export function getTopAgreements(
+  personId: number,
+  order: "top" | "bottom",
+  limit = 5,
+): AgreementPartner[] {
+  try {
+    const rows = getDb().all<{
+      person_b: number;
+      both_voted: number;
+      agreed: number;
+      pct: number;
+    }>(sql`
+      SELECT ma.person_b, ma.both_voted, ma.agreed, ma.pct
+      FROM mk_agreement ma
+      WHERE ma.person_a = ${personId}
+        AND ma.both_voted >= 100
+        AND EXISTS (
+          SELECT 1 FROM person_positions pp
+          WHERE pp.person_id = ma.person_b
+            AND pp.knesset_num = ${CURRENT_KNESSET}
+            AND pp.is_current = 1
+            AND pp.position_id IN (${POSITION_FACTION_MEMBER}, ${POSITION_MK_MALE}, ${POSITION_MK_FEMALE})
+        )
+      ORDER BY ma.pct ${order === "top" ? sql`DESC` : sql`ASC`}, ma.both_voted DESC
+      LIMIT ${limit}
+    `);
+    if (rows.length === 0) return [];
+    const people = new Map(
+      getDb()
+        .select()
+        .from(schema.persons)
+        .where(inArray(schema.persons.id, rows.map((r) => r.person_b)))
+        .all()
+        .map((p) => [p.id, p]),
+    );
+    return rows.flatMap((r) => {
+      const person = people.get(r.person_b);
+      return person
+        ? [{ person, bothVoted: r.both_voted, agreed: r.agreed, pct: r.pct }]
+        : [];
+    });
+  } catch {
+    return []; // table not materialized yet (first run before db:push/sync)
+  }
+}
+
 export type LeaderboardEntry = MkStats & { person: Person };
 
 // SQL predicate: the person currently holds a Knesset seat (faction-member or

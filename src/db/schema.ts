@@ -167,6 +167,21 @@ export const mkIdMap = sqliteTable("mk_id_map", {
   personId: integer("person_id").notNull(),
 });
 
+// Precomputed pairwise voting agreement between MKs (both directions stored,
+// so reads are a PK-prefix scan on person_a). Rebuilt by computeMkAgreement()
+// after stats each sync; ~19k rows. Declared here so `db:push` keeps it.
+export const mkAgreement = sqliteTable(
+  "mk_agreement",
+  {
+    personA: integer("person_a").notNull(),
+    personB: integer("person_b").notNull(),
+    bothVoted: integer("both_voted").notNull(),
+    agreed: integer("agreed").notNull(),
+    pct: real("pct").notNull(),
+  },
+  (t) => [primaryKey({ columns: [t.personA, t.personB] })],
+);
+
 // Bills (KNS_Bill). For bill-reading votes, votes.itemId === bills.id.
 export const bills = sqliteTable("bills", {
   id: integer("id").primaryKey(), // BillID

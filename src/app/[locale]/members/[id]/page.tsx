@@ -15,6 +15,7 @@ import {
   getMemberPositions,
   getMemberStats,
   getPartyDiscipline,
+  getTopAgreements,
   getMemberRecentVotes,
   getMemberSponsoredBills,
   getMemberSponsoredCount,
@@ -79,6 +80,8 @@ export default async function MemberPage({
   const positions = getMemberPositions(personId);
   const stats = getMemberStats(personId);
   const discipline = getPartyDiscipline(personId);
+  const mostAligned = getTopAgreements(personId, "top", 5);
+  const leastAligned = getTopAgreements(personId, "bottom", 5);
   const recentVotes = getMemberRecentVotes(personId, 10);
   const voteTitles = localizeData(recentVotes.map((r) => r.vote.titleHe), locale);
   const voteTitleOf = (he: string | null) =>
@@ -377,6 +380,43 @@ export default async function MemberPage({
               </p>
             </div>
           )}
+        </section>
+      )}
+
+      {(mostAligned.length > 0 || leastAligned.length > 0) && (
+        <section className="rounded-xl bg-white p-6 shadow-sm space-y-4">
+          <div className="grid gap-6 sm:grid-cols-2">
+            {(
+              [
+                { key: "member.mostAligned", rows: mostAligned },
+                { key: "member.leastAligned", rows: leastAligned },
+              ] as const
+            ).map(
+              ({ key, rows }) =>
+                rows.length > 0 && (
+                  <div key={key} className="space-y-2">
+                    <h2 className="text-lg font-semibold">{t(key)}</h2>
+                    <ul className="space-y-1">
+                      {rows.map((a) => (
+                        <li key={a.person.id}>
+                          <Link
+                            href={`/compare?a=${personId}&b=${a.person.id}`}
+                            className="flex items-center gap-2 rounded-lg px-2 py-1.5 text-sm hover:bg-black/[.03]"
+                          >
+                            <MemberAvatar person={a.person} size={28} alt={personName(a.person, locale)} />
+                            <span className="min-w-0 flex-1 truncate">
+                              {personName(a.person, locale)}
+                            </span>
+                            <span className="font-bold tabular-nums text-accent">{a.pct}%</span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ),
+            )}
+          </div>
+          <p className="text-xs text-muted">{t("member.alignmentNote")}</p>
         </section>
       )}
 

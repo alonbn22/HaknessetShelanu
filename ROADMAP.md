@@ -6,10 +6,19 @@ what data we could still surface.
 
 ## Next up (build queue)
 
-- [ ] **Decode status codes** — `bills.status_desc` (and other `StatusID`s) are
-  raw numbers; sync the `KNS_Status` lookup so the bill page can show a real
-  status instead of hiding it. Quick win surfaced while building the bill journey.
+- [ ] **Committee meeting calendar** — the biggest untapped feature (P0 below):
+  sync `KNS_CommitteeSession` (+ items + protocol docs) and show per-committee
+  upcoming/past meetings with agendas and transcript links.
 - [ ] **Dark mode** — theme toggle over the existing CSS-variable token layer.
+- [ ] **Backfill checkpointing** — the first-ever `KNS_PlenumVoteResult`
+  backfill restarts if interrupted (windows run concurrently, so mid-run
+  cursoring is unsound); persist per-window completion if this ever bites.
+- [ ] **Budget page NaN guards** — `budget/page.tsx` passes an unvalidated
+  year/section param through (degrades to empty results, never crashes); add
+  the two-line guard when touching that page.
+- [ ] **Sitemap alternates** — per-URL `alternates.languages` entries (hreflang)
+  once a production domain exists; the sitemap currently lists each locale URL
+  separately.
 
 ## Untapped API data — what more we could build
 
@@ -74,11 +83,22 @@ socio-economic indices by municipality (data.gov.il) for context.
 
 - Accessibility-coordinator name / email / phone (`a11y.statement.*` placeholders).
 - Corrections email placeholder.
+- `NEXT_PUBLIC_SITE_URL` once a production domain exists (sitemap/OG URLs).
 - Editorial sign-off on curated member records, coalition.yaml, party-profiles,
   and the elections/quiz figures.
 
 ## Done (recent)
 
+- **Full review pass**: search resilience (raw-query fallback + length caps),
+  remap ambiguity guard, `votes(item_id)` index, CI integrity check before the
+  bot commits, per-page metadata + OG on all five detail pages, sitemap +
+  robots, search bills group + "showing top N" hints, glossary deep links,
+  localized pagination numbers, persisted seats toggle, shared RTL-attr
+  helpers, +10 regression tests (203 total).
+- **Bill status decode** (`KNS_Status`): bills carry a real status text instead
+  of a hidden numeric code.
+- **"Voted most/least similarly"** lists on member pages, precomputed per sync
+  into `mk_agreement`.
 - **Party-discipline metric**: how often each MK voted with their faction
   majority — a callout on the member page and a row on `/compare`.
 - **Bill-journey view** (`/laws/[id]`): a bill's votes grouped into milestone
@@ -87,4 +107,4 @@ socio-economic indices by municipality (data.gov.il) for context.
 - Global search across all entities; hemicycle seating chart (bar/hemicycle
   toggle, bar default); side-by-side **member comparison** with a voting-agreement
   rate; site-wide work-in-progress notice; ballot letters; `/sources` page.
-- Accessibility rebuild to IS 5568 / WCAG 2.1 AA; AGPL-3.0 + CC-BY-SA-4.0 licensing.
+- Accessibility rebuild to IS 5568 / WCAG 2.0 AA; AGPL-3.0 + CC-BY-SA-4.0 licensing.

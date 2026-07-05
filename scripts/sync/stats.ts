@@ -65,3 +65,52 @@ export function computeMkStats() {
   );
   console.log(`  stats for ${row?.n} members`);
 }
+
+// Pairwise voting agreement between every two MKs in mk_vote_stats (~9.4k
+// pairs, stored in both directions so reads are PK-prefix scans). One
+// set-based self-join over real votes (for/against/abstain); measured ~30s —
+// fine inside the 6-hourly sync. Powers the "voted most/least similarly"
+// lists on member pages.
+export function computeMkAgreement() {
+  const db = getDb();
+  console.log("Computing pairwise MK voting agreement…");
+
+  // Self-sufficient DDL: matches schema.ts exactly so db:push sees it in-sync.
+  db.run(sql`
+    CREATE TABLE IF NOT EXISTS mk_agreement (
+      person_a integer NOT NULL,
+      person_b integer NOT NULL,
+      both_voted integer NOT NULL,
+      agreed integer NOT NULL,
+      pct real NOT NULL,
+      PRIMARY KEY (person_a, person_b)
+    )
+  `);
+  db.run(sql`DELETE FROM mk_agreement`);
+
+  db.run(sql`
+    INSERT INTO mk_agreement (person_a, person_b, both_voted, agreed, pct)
+    SELECT
+      a.person_id,
+      b.person_id,
+      COUNT(*),
+      SUM(CASE WHEN a.result_code = b.result_code THEN 1 ELSE 0 END),
+      ROUND(100.0 * SUM(CASE WHEN a.result_code = b.result_code THEN 1 ELSE 0 END) / COUNT(*), 1)
+    FROM vote_results a
+    JOIN vote_results b
+      ON b.vote_id = a.vote_id AND b.person_id > a.person_id
+    WHERE a.result_code IN (${VOTE_FOR}, ${VOTE_AGAINST}, ${VOTE_ABSTAIN})
+      AND b.result_code IN (${VOTE_FOR}, ${VOTE_AGAINST}, ${VOTE_ABSTAIN})
+      AND a.person_id IN (SELECT person_id FROM mk_vote_stats WHERE knesset_num = ${CURRENT_KNESSET})
+      AND b.person_id IN (SELECT person_id FROM mk_vote_stats WHERE knesset_num = ${CURRENT_KNESSET})
+    GROUP BY a.person_id, b.person_id
+  `);
+  // Mirror direction so any member's rows are one PK-prefix scan.
+  db.run(sql`
+    INSERT INTO mk_agreement (person_a, person_b, both_voted, agreed, pct)
+    SELECT person_b, person_a, both_voted, agreed, pct FROM mk_agreement
+  `);
+
+  const row = db.get<{ n: number }>(sql`SELECT COUNT(*) AS n FROM mk_agreement`);
+  console.log(`  ${row?.n} agreement pairs (both directions)`);
+}

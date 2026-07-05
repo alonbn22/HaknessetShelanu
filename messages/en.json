@@ -121,7 +121,10 @@
     "bioSource": "Background data: Wikidata",
     "present": "present",
     "partyLine": "Party-line voting",
-    "partyLineDetail": "Voted with the faction majority on {withParty} of {total} recorded votes."
+    "partyLineDetail": "Voted with the faction majority on {withParty} of {total} recorded votes.",
+    "mostAligned": "Voted most similarly",
+    "leastAligned": "Voted least similarly",
+    "alignmentNote": "The share of shared plenum votes where both members voted the same way (for/against/abstain), from the official vote records. Click a name for a full comparison."
   },
   "parties": {
     "title": "Knesset Factions",

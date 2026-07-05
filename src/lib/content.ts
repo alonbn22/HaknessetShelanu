@@ -172,6 +172,9 @@ const claimSchema = z.object({
 
 const memberRecordSchema = z.object({
   personId: z.number(),
+  // When the record was last editorially verified (YYYY-MM-DD). Shown to the
+  // reader — for ongoing legal matters, "as of when" is part of being accurate.
+  lastReviewed: z.string().optional(),
   claims: z.array(claimSchema),
 });
 

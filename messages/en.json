@@ -124,7 +124,18 @@
     "partyLineDetail": "Voted with the faction majority on {withParty} of {total} recorded votes.",
     "mostAligned": "Voted most similarly",
     "leastAligned": "Voted least similarly",
-    "alignmentNote": "The share of shared plenum votes where both members voted the same way (for/against/abstain), from the official vote records. Click a name for a full comparison."
+    "alignmentNote": "The share of shared plenum votes where both members voted the same way (for/against/abstain), from the official vote records. Click a name for a full comparison.",
+    "recordCategory": {
+      "award": "Award",
+      "volunteering": "Volunteering",
+      "achievement": "Achievement",
+      "conviction": "Conviction",
+      "investigation": "Investigation",
+      "controversy": "Controversy"
+    },
+    "recordSources": "Sources",
+    "recordReviewed": "Record last reviewed: {date}",
+    "recordNone": "No items documented in this database."
   },
   "parties": {
     "title": "Knesset Factions",

@@ -55,7 +55,15 @@ export default async function LocaleLayout({
   const tWip = await getTranslations("wip");
 
   return (
-    <html lang={locale} dir={dir} className={`${heebo.variable} h-full antialiased`}>
+    // suppressHydrationWarning: the pre-paint theme script (below) toggles the
+    // `dark` class on <html> before React hydrates, so the class attribute
+    // intentionally differs from the server render — scoped to this element only.
+    <html
+      lang={locale}
+      dir={dir}
+      className={`${heebo.variable} h-full antialiased`}
+      suppressHydrationWarning
+    >
       <head>
         {/* Set the theme class before paint to avoid a light-mode flash. */}
         <script

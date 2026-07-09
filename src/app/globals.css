@@ -72,6 +72,7 @@ html.dark .bg-black\/2 { background-color: rgba(255, 255, 255, 0.03); }
 html.dark .bg-black\/3 { background-color: rgba(255, 255, 255, 0.04); }
 html.dark .bg-black\/5 { background-color: rgba(255, 255, 255, 0.06); }
 html.dark .bg-black\/10 { background-color: rgba(255, 255, 255, 0.09); }
+html.dark .hover\:bg-black\/2:hover { background-color: rgba(255, 255, 255, 0.04); }
 html.dark .border-black\/5 { border-color: rgba(255, 255, 255, 0.07); }
 html.dark .border-black\/10 { border-color: rgba(255, 255, 255, 0.1); }
 html.dark .border-black\/15 { border-color: rgba(255, 255, 255, 0.14); }

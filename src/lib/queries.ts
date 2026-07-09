@@ -1079,6 +1079,55 @@ export function getCommitteeSessions(committeeId: number, nowIso: string, limit 
   }
 }
 
+export type CommitteeSessionItem = typeof schema.committeeSessionItems.$inferSelect;
+export type CommitteeSessionDoc = typeof schema.committeeSessionDocs.$inferSelect;
+
+// Agenda items + documents for a set of committee meetings, grouped by session
+// id. One query per relation (no N+1) — the committee page passes only the ~16
+// sessions it actually renders. Items are ordered by their agenda ordinal.
+// try/catch → empty maps when the tables aren't materialized yet.
+export function getCommitteeSessionDetails(sessionIds: number[]) {
+  const empty = {
+    items: new Map<number, CommitteeSessionItem[]>(),
+    docs: new Map<number, CommitteeSessionDoc[]>(),
+  };
+  if (sessionIds.length === 0) return empty;
+  try {
+    const db = getDb();
+    const itemRows = db
+      .select()
+      .from(schema.committeeSessionItems)
+      .where(inArray(schema.committeeSessionItems.sessionId, sessionIds))
+      .orderBy(asc(schema.committeeSessionItems.ordinal), asc(schema.committeeSessionItems.id))
+      .all();
+    const docRows = db
+      .select()
+      .from(schema.committeeSessionDocs)
+      .where(inArray(schema.committeeSessionDocs.sessionId, sessionIds))
+      // Protocol/transcript (group_type_id 23) first, then the rest by id — the
+      // transcript is the headline document. Ordering by id (not the mixed-offset
+      // timestamp string) keeps it deterministic.
+      .orderBy(
+        sql`CASE WHEN ${schema.committeeSessionDocs.groupTypeId} = 23 THEN 0 ELSE 1 END`,
+        asc(schema.committeeSessionDocs.id),
+      )
+      .all();
+    const groupBySession = <T extends { sessionId: number | null }>(rows: T[]) => {
+      const m = new Map<number, T[]>();
+      for (const r of rows) {
+        if (r.sessionId == null) continue;
+        const list = m.get(r.sessionId);
+        if (list) list.push(r);
+        else m.set(r.sessionId, [r]);
+      }
+      return m;
+    };
+    return { items: groupBySession(itemRows), docs: groupBySession(docRows) };
+  } catch {
+    return empty;
+  }
+}
+
 // ---------- Israel law book ----------
 
 export type IsraelLaw = typeof schema.israelLaws.$inferSelect;

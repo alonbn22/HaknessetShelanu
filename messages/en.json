@@ -309,7 +309,11 @@
     "recent": "Recent",
     "agenda": "Agenda",
     "broadcast": "Broadcast",
-    "meetingsNote": "Source: Knesset Open Data (KNS_CommitteeSession). Scheduled meetings may change."
+    "meetingsNote": "Source: Knesset open data (KNS_CommitteeSession, KNS_CmtSessionItem, KNS_DocumentCommitteeSession). Future meetings may change; protocols are published after the meeting.",
+    "agendaItems": "On the agenda",
+    "agendaCount": "{count} items",
+    "documents": "Documents",
+    "document": "Document"
   },
   "lawbook": {
     "title": "Israel's Law Book",

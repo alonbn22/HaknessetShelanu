@@ -309,7 +309,11 @@
     "recent": "ישיבות אחרונות",
     "agenda": "סדר יום",
     "broadcast": "שידור",
-    "meetingsNote": "מקור: נתוני הכנסת הפתוחים (KNS_CommitteeSession). ישיבות עתידיות עשויות להשתנות."
+    "meetingsNote": "מקור: נתוני הכנסת הפתוחים (KNS_CommitteeSession, KNS_CmtSessionItem, KNS_DocumentCommitteeSession). ישיבות עתידיות עשויות להשתנות; פרוטוקולים מתפרסמים לאחר הישיבה.",
+    "agendaItems": "על סדר היום",
+    "agendaCount": "{count} נושאים",
+    "documents": "מסמכים",
+    "document": "מסמך"
   },
   "lawbook": {
     "title": "ספר החוקים של ישראל",

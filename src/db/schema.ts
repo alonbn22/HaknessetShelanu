@@ -277,6 +277,43 @@ export const committeeSessions = sqliteTable(
   (t) => [index("cmt_session_committee_idx").on(t.committeeId)],
 );
 
+// Agenda items discussed in each committee meeting (KNS_CmtSessionItem) — the
+// "what was on the table" for a sitting. Attaches to committee_sessions by
+// session_id. The source entity has no KnessetNum, so the sync batches by the
+// CommitteeSessionID values we already hold (current-Knesset sittings). Indexed
+// on session_id for the per-meeting lookup.
+export const committeeSessionItems = sqliteTable(
+  "committee_session_items",
+  {
+    id: integer("id").primaryKey(),
+    sessionId: integer("session_id"),
+    ordinal: integer("ordinal"), // order on the agenda (may be null)
+    nameHe: text("name_he"), // item title (Hebrew; localizes lazily)
+    itemTypeId: integer("item_type_id"),
+    lastUpdated: text("last_updated"),
+  },
+  (t) => [index("cmt_item_session_idx").on(t.sessionId)],
+);
+
+// Documents attached to each committee meeting (KNS_DocumentCommitteeSession) —
+// the protocol/transcript (פרוטוקול ועדה), background material, decisions, press
+// releases. file_path is a direct link on fs.knesset.gov.il (https for the
+// current Knesset). Same bulk-by-session-id-range sync as the items above.
+export const committeeSessionDocs = sqliteTable(
+  "committee_session_docs",
+  {
+    id: integer("id").primaryKey(),
+    sessionId: integer("session_id"),
+    groupTypeId: integer("group_type_id"),
+    groupTypeDesc: text("group_type_desc"), // doc kind (Hebrew; localizes lazily)
+    nameHe: text("name_he"), // document title (Hebrew)
+    applicationDesc: text("application_desc"), // PDF / DOC
+    filePath: text("file_path"), // direct https link
+    lastUpdated: text("last_updated"),
+  },
+  (t) => [index("cmt_doc_session_idx").on(t.sessionId)],
+);
+
 // The active laws of Israel (KNS_IsraelLaw) — the consolidated law book.
 export const israelLaws = sqliteTable(
   "israel_laws",

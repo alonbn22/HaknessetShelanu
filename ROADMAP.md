@@ -6,9 +6,11 @@ what data we could still surface.
 
 ## Next up (build queue)
 
-- [ ] **Committee agendas + transcripts** — extend the shipped meeting calendar
-  with `KNS_CmtSessionItem` (what each meeting discussed) and
-  `KNS_DocumentCommitteeSession` (protocol/minutes links).
+- [ ] **Committee agendas backfill** — the agenda/transcript sync (below) covers
+  a rolling ~120-day window (recent + upcoming meetings) to stay within the ~6h
+  sync budget, since the source API is slow. A one-off full backfill of older
+  meetings is available via `syncCommitteeSessionDetails(null)` if we want the
+  complete history materialized.
 - [ ] **Plenum sitting calendar** — the other half of the session layer
   (`KNS_PlenumSession` + order paper + Divrei HaKnesset transcripts).
 - [ ] **Backfill checkpointing** — the first-ever `KNS_PlenumVoteResult`
@@ -90,6 +92,12 @@ socio-economic indices by municipality (data.gov.il) for context.
 
 ## Done (recent)
 
+- **Committee agendas + transcripts** (`/committees/[id]`): each meeting expands
+  to its agenda items (`KNS_CmtSessionItem`) and documents
+  (`KNS_DocumentCommitteeSession`) — protocol/transcript, background material,
+  decisions — as direct links, protocol first. Synced over a rolling ~120-day
+  window (recent + upcoming) to fit the sync budget; localizes lazily and
+  degrades to a plain row when a meeting has no agenda/docs yet.
 - **Dark mode**: a header toggle (persists to `localStorage`, respects the OS
   preference, no light-flash via a pre-paint script) layered over the existing
   CSS-variable tokens — the semantic tokens are remapped and the hardcoded light

@@ -38,6 +38,7 @@ import {
   syncAgendas,
   syncCommittees,
   syncCommitteeSessions,
+  syncCommitteeSessionDetails,
   syncIsraelLaws,
 } from "./activity";
 import { syncBudget } from "./budget";
@@ -96,6 +97,7 @@ async function main() {
     await syncAgendas();
     await syncCommittees();
     await syncCommitteeSessions();
+    await syncCommitteeSessionDetails();
     await syncIsraelLaws();
   }
 

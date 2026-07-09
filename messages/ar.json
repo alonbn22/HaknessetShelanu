@@ -309,7 +309,11 @@
     "recent": "الأخيرة",
     "agenda": "جدول الأعمال",
     "broadcast": "بث",
-    "meetingsNote": "المصدر: بيانات الكنيست المفتوحة (KNS_CommitteeSession). قد تتغيّر الجلسات المجدولة."
+    "meetingsNote": "المصدر: البيانات المفتوحة للكنيست (KNS_CommitteeSession، KNS_CmtSessionItem، KNS_DocumentCommitteeSession). قد تتغير الجلسات المستقبلية؛ تُنشر المحاضر بعد الجلسة.",
+    "agendaItems": "على جدول الأعمال",
+    "agendaCount": "{count} بنود",
+    "documents": "مستندات",
+    "document": "مستند"
   },
   "lawbook": {
     "title": "كتاب قوانين إسرائيل",

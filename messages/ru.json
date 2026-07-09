@@ -309,7 +309,11 @@
     "recent": "Недавние",
     "agenda": "Повестка",
     "broadcast": "Трансляция",
-    "meetingsNote": "Источник: открытые данные Кнессета (KNS_CommitteeSession). Запланированные заседания могут измениться."
+    "meetingsNote": "Источник: открытые данные Кнессета (KNS_CommitteeSession, KNS_CmtSessionItem, KNS_DocumentCommitteeSession). Будущие заседания могут измениться; протоколы публикуются после заседания.",
+    "agendaItems": "Повестка дня",
+    "agendaCount": "{count} пунктов",
+    "documents": "Документы",
+    "document": "Документ"
   },
   "lawbook": {
     "title": "Свод законов Израиля",

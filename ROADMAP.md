@@ -11,7 +11,6 @@ what data we could still surface.
   `KNS_DocumentCommitteeSession` (protocol/minutes links).
 - [ ] **Plenum sitting calendar** — the other half of the session layer
   (`KNS_PlenumSession` + order paper + Divrei HaKnesset transcripts).
-- [ ] **Dark mode** — theme toggle over the existing CSS-variable token layer.
 - [ ] **Backfill checkpointing** — the first-ever `KNS_PlenumVoteResult`
   backfill restarts if interrupted (windows run concurrently, so mid-run
   cursoring is unsound); persist per-window completion if this ever bites.
@@ -91,6 +90,11 @@ socio-economic indices by municipality (data.gov.il) for context.
 
 ## Done (recent)
 
+- **Dark mode**: a header toggle (persists to `localStorage`, respects the OS
+  preference, no light-flash via a pre-paint script) layered over the existing
+  CSS-variable tokens — the semantic tokens are remapped and the hardcoded light
+  utilities (surfaces, overlays, status-badge tints) overridden, so no component
+  markup changed and high-contrast a11y mode still wins.
 - **Committee meeting calendar** (`/committees/[id]`): all 10,753 current-Knesset
   committee sittings (past + upcoming) with date, open/closed type, location, and
   official agenda/broadcast links, from `KNS_CommitteeSession`.

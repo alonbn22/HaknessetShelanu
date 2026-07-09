@@ -1,6 +1,3 @@
-# PersonID 30772. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
 personId: 30772
 claims:
   - kind: positive
@@ -9,13 +6,8 @@ claims:
       he: סגן יושב ראש הכנסת
       en: Deputy Speaker of the Knesset
     description:
-      he: ניסים ואטורי, חבר כנסת מטעם הליכוד, מכהן כסגן יושב ראש הכנסת. הוא נכנס
-        לראשונה לכנסת בדצמבר 2020 (במקומו של גדעון סער), נבחר שוב בבחירות 2022,
-        ומכהן גם כחבר ועדת החוץ והביטחון.
-      en: Nissim Vaturi, a member of the Knesset for Likud, serves as a Deputy Speaker
-        of the Knesset. He first entered the Knesset in December 2020 (replacing
-        Gideon Sa'ar), was re-elected in the 2022 election, and is also a member
-        of the Knesset's Foreign Affairs and Defense Committee.
+      he: ניסים ואטורי, חבר כנסת מטעם הליכוד, מכהן כסגן יושב ראש הכנסת. הוא נכנס לראשונה לכנסת בדצמבר 2020 (במקומו של גדעון סער), נבחר שוב בבחירות 2022, ומכהן גם כחבר ועדת החוץ והביטחון.
+      en: Nissim Vaturi, a member of the Knesset for Likud, serves as a Deputy Speaker of the Knesset. He first entered the Knesset in December 2020 (replacing Gideon Sa'ar), was re-elected in the 2022 election, and is also a member of the Knesset's Foreign Affairs and Defense Committee.
     sources:
       - url: https://en.wikipedia.org/wiki/Nissim_Vaturi
         title: Nissim Vaturi
@@ -29,10 +21,8 @@ claims:
       he: שירות צבאי בחיל האוויר
       en: Military service in the Air Force
     description:
-      he: במהלך שירותו הצבאי בצה"ל פיקד ואטורי על צוות חילוץ מטוסים בחיל האוויר
-        הישראלי.
-      en: During his national service in the Israel Defense Forces, Vaturi commanded
-        an Israeli Air Force aircraft recovery team.
+      he: במהלך שירותו הצבאי בצה"ל פיקד ואטורי על צוות חילוץ מטוסים בחיל האוויר הישראלי.
+      en: During his national service in the Israel Defense Forces, Vaturi commanded an Israeli Air Force aircraft recovery team.
     sources:
       - url: https://en.wikipedia.org/wiki/Nissim_Vaturi
         title: Nissim Vaturi
@@ -40,27 +30,31 @@ claims:
   - kind: negative
     category: investigation
     status: ongoing
+    date: 2026-03-23
     title:
-      he: חקירת משטרה בפרשת הכניסה לבסיס שדה תימן
+      he: חקירת משטרה בפרשת הפריצה לבסיס שדה תימן
       en: Police investigation over the Sde Teiman base break-in
+      ar: تحقيق شرطي في قضية اقتحام قاعدة سديه تيمان
+      ru: Полицейское расследование по делу о проникновении на базу Сде-Тейман
     description:
-      he: במרץ 2025 אישרו היועצת המשפטית לממשלה והפרקליטות פתיחת חקירת משטרה נגד
-        ואטורי, השר עמיחי אליהו וחבר הכנסת צבי סוכות, בחשד למעורבותם בכניסה ללא
-        רשות לבסיס צה"ל שדה תימן ביולי 2024, על רקע מעצר חיילי מילואים. ואטורי
-        זומן לחקירה ומסר כי לא יתייצב. החקירה מתנהלת ולא הוגש כתב אישום.
-      en: In March 2025 the Attorney General and State Attorney approved a police
-        investigation into Vaturi, Heritage Minister Amichai Eliyahu, and MK Zvi
-        Sukkot over their alleged involvement in the unauthorized entry into the
-        IDF's Sde Teiman base in July 2024, amid the detention of reservist
-        soldiers. Vaturi was summoned for questioning and stated he would not
-        appear. The investigation is ongoing and no indictment has been filed.
-    date: 2025-03-26
+      he: ב-26 במרץ 2025 אישרו היועצת המשפטית לממשלה ופרקליט המדינה לזמן לחקירה באזהרה את השר אמיחי אליהו ואת חברי הכנסת ניסים ואטורי וצבי סוכות בחשד למעורבות בפריצה לבסיס שדה תימן ביולי 2024. ואטורי הודיע שלא יתייצב לחקירה וטען שמדובר במהלך פוליטי סלקטיבי. נכון למרץ 2026 החקירה המשטרתית הסתיימה והתיק הועבר להכרעת הפרקליטות; לא הוגש כתב אישום.
+      en: On 26 March 2025 the Attorney General and State Prosecutor authorized questioning under caution of Minister Amichai Eliyahu and MKs Nissim Vaturi and Zvi Sukkot over suspected involvement in the July 2024 break-in to the Sde Teiman military base. Vaturi announced he would not appear for questioning, calling it politically selective. As of March 2026 the police investigation had concluded and the file was transferred to the State Prosecutor for a decision; no indictment has been filed.
+      ar: في 26 مارس 2025، أذنت المستشارة القضائية للحكومة ونائب المدعي العام باستدعاء الوزير أميحاي إلياهو وعضوي الكنيست نيسيم فاتوري وتسفي سوكوت للتحقيق معهم تحت طائلة الاشتباه في تورطهم في اقتحام قاعدة سديه تيمان العسكرية في يوليو 2024. أعلن فاتوري أنه لن يمثل للتحقيق واعتبره خطوة سياسية انتقائية. وحتى مارس 2026، كان التحقيق الشرطي قد انتهى وأُحيل الملف إلى النيابة لاتخاذ قرار؛ ولم تُقدَّم لائحة اتهام.
+      ru: 26 марта 2025 года юридический советник правительства и государственный прокурор санкционировали допрос под предупреждением министра Амихая Элияху и депутатов Кнессета Нисима Ватури и Цви Суккота по подозрению в причастности к проникновению на военную базу Сде-Тейман в июле 2024 года. Ватури заявил, что не явится на допрос, назвав это политически избирательным шагом. По состоянию на март 2026 года полицейское расследование завершено, а материалы дела переданы государственному прокурору для принятия решения; обвинительное заключение не предъявлено.
     sources:
+      - url: https://www.haaretz.co.il/news/politics/2025-03-26/ty-article/00000195-d3de-da7e-adb7-fbde210f0000
+        title: היועמ"שית ופרקליט המדינה אישרו לחקור את השר והח"כים שפרצו לשדה תימן
+        publisher: Haaretz
+      - url: https://www.maariv.co.il/news/law/article-1183499
+        title: היועמ"שית אישרה לחקור באזהרה את הח"כים שפרצו לבסיס שדה תימן
+        publisher: Maariv
       - url: https://www.jpost.com/breaking-news/article-847740
-        title: A-G approves investigation into MKs Sukkot, Vaturi over breaking into Sde
-          Teiman base
+        title: A-G approves investigation into MKs Sukkot, Vaturi over breaking into Sde Teiman base
         publisher: The Jerusalem Post
-      - url: https://www.timesofisrael.com/three-coalition-members-summoned-for-questioning-over-july-riot-at-idf-holding-facility/
-        title: Three coalition members summoned for questioning over July riot at IDF
-          holding facility
-        publisher: The Times of Israel
+      - url: https://news.walla.co.il/item/3748656
+        title: "השר אליהו וחברי הכנסת ואטורי וסוכות: קיבלנו זימון לחקירה בפרשת הפריצה לשדה תימן"
+        publisher: Walla
+      - url: https://www.maariv.co.il/news/law/article-1299872
+        title: הפרקליטות עדיין לא השלימה את החקירה בפרשת הפריצה לשדה תימן
+        publisher: Maariv
+lastReviewed: 2026-07-05

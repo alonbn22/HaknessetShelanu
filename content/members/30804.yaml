@@ -1,6 +1,3 @@
-# PersonID 30804. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
 personId: 30804
 claims:
   - kind: positive
@@ -9,16 +6,8 @@ claims:
       he: כיהן כשר במשרד החינוך בממשלה ה-37
       en: Served as a minister in the Ministry of Education
     description:
-      he: חיים ביטון, מטעם ש"ס, מונה לשר במשרד החינוך בממשלה ה-37 בראשות בנימין נתניהו
-        ב-29 בדצמבר 2022, ובמסגרת תפקידו היה ממונה בין היתר על החינוך החרדי
-        והחברה למתנ"סים. הוא התפטר מתפקידו כשר ביולי 2025, במסגרת התפטרות שרי
-        ש"ס על רקע משבר חוק הגיוס.
-      en: Chaim Biton of Shas was appointed a minister in the Ministry of Education in
-        the 37th government led by Benjamin Netanyahu on 29 December 2022, with
-        responsibilities that included the Haredi education sector and the
-        community-centers authority. He resigned from the ministerial post in
-        July 2025, as part of the resignation of Shas ministers amid the dispute
-        over the military-conscription (draft) law.
+      he: חיים ביטון, מטעם ש"ס, מונה לשר במשרד החינוך בממשלה ה-37 בראשות בנימין נתניהו ב-29 בדצמבר 2022, ובמסגרת תפקידו היה ממונה בין היתר על החינוך החרדי והחברה למתנ"סים. הוא התפטר מתפקידו כשר ביולי 2025, במסגרת התפטרות שרי ש"ס על רקע משבר חוק הגיוס.
+      en: Chaim Biton of Shas was appointed a minister in the Ministry of Education in the 37th government led by Benjamin Netanyahu on 29 December 2022, with responsibilities that included the Haredi education sector and the community-centers authority. He resigned from the ministerial post in July 2025, as part of the resignation of Shas ministers amid the dispute over the military-conscription (draft) law.
     date: 2022-12-29
     sources:
       - url: https://en.wikipedia.org/wiki/Haim_Biton
@@ -33,16 +22,8 @@ claims:
       he: מנכ"ל תנועת ש"ס וראש רשת החינוך התורני של התנועה
       en: Director-general of Shas and head of the party's Torah education network
     description:
-      he: 'טרם כניסתו לכנסת בנה ביטון קריירה ארוכה בניהול חינוכי וארגוני: כיהן כמנכ"ל
-        רשת מוסדות מגדל אור, מונה למנכ"ל תנועת ש"ס ב-2014, ועמד בראש רשת החינוך
-        התורני של ש"ס (מעיין החינוך התורני / בני יוסף). לפי הדיווחים גדל מספר
-        התלמידים ברשת בעשרת אלפים בתוך שנתיים בתקופת ניהולו.'
-      en: "Before entering the Knesset, Biton built a long career in educational and
-        organizational management: he served as CEO of the Migdal Or
-        institutions network, was appointed director-general (CEO) of the Shas
-        party in 2014, and headed the party's Torah education network (Ma'ayan
-        HaChinuch HaTorani / Bnei Yosef), whose enrollment reportedly grew by
-        10,000 pupils within two years during his tenure."
+      he: 'טרם כניסתו לכנסת בנה ביטון קריירה ארוכה בניהול חינוכי וארגוני: כיהן כמנכ"ל רשת מוסדות מגדל אור, מונה למנכ"ל תנועת ש"ס ב-2014, ועמד בראש רשת החינוך התורני של ש"ס (מעיין החינוך התורני / בני יוסף). לפי הדיווחים גדל מספר התלמידים ברשת בעשרת אלפים בתוך שנתיים בתקופת ניהולו.'
+      en: "Before entering the Knesset, Biton built a long career in educational and organizational management: he served as CEO of the Migdal Or institutions network, was appointed director-general (CEO) of the Shas party in 2014, and headed the party's Torah education network (Ma'ayan HaChinuch HaTorani / Bnei Yosef), whose enrollment reportedly grew by 10,000 pupils within two years during his tenure."
     date: "2014"
     sources:
       - url: https://en.wikipedia.org/wiki/Haim_Biton
@@ -54,33 +35,28 @@ claims:
   - kind: negative
     category: investigation
     status: ongoing
+    date: 2025-03
     title:
-      he: נחקר בחשד להעברת כספי חינוך ציבוריים לעיתון 'הדרך'
-      en: Under criminal investigation over alleged diversion of public education
-        funds to the 'HaDerech' newspaper
+      he: נחקר בחשד להסטת כספי חינוך ציבוריים למימון עיתון 'הדרך'
+      en: Under criminal investigation over alleged diversion of public education funds to the 'HaDerech' newspaper
+      ar: قيد التحقيق الجنائي بشبهة تحويل أموال تعليم عامة لتمويل صحيفة 'هادرَّخ'
+      ru: Под уголовным расследованием по подозрению в перенаправлении государственных средств на образование для финансирования газеты «Га-Дерех»
     description:
-      he: באוקטובר 2024 דווח כי ביטון זומן לחקירה במשטרה, לאחר שהיועצת המשפטית לממשלה
-        אישרה פתיחת חקירה פלילית בחשד שכספי ציבור שיועדו לרשת מעיין החינוך
-        התורני, בתקופת כהונתו כראש הרשת (בשנים 2018–2019 על פי הדיווח), הועברו
-        למימון העיתון 'הדרך' המזוהה עם ש"ס. על פי הדיווחים נחקרים חשדות לעבירות
-        מרמה והפרת אמונים. מדובר בחקירה בלבד; לא הוגש כתב אישום ולא ניתנה הרשעה,
-        וחזקת החפות עומדת לזכותו.
-      en: In October 2024 it was reported that Biton was summoned for police
-        questioning, after the Attorney General authorized a criminal
-        investigation on suspicion that public funds earmarked for the Ma'ayan
-        HaChinuch HaTorani school network were diverted, during his tenure as
-        head of the network (in 2018–2019 according to the reporting), to
-        finance the Shas-affiliated newspaper 'HaDerech'. Reports described
-        suspected offenses including fraud and breach of trust. This is an
-        investigation only; no indictment has been filed and no conviction
-        reached, and Biton retains the presumption of innocence.
-    date: 2024-10
+      he: משטרת ישראל פתחה באוקטובר 2024 בחקירה נגד חיים ביטון ואחרים בחשד שכספי ציבור שיועדו לחינוך ברשת 'מעיין החינוך התורני' של ש"ס הופנו למימון מוסף ילדים בעיתון המפלגתי 'הדרך', בתקופה שבה כיהן כמנכ"ל הרשת. במרץ 2025 עברה החקירה לשלב גלוי, ביטון זומן לחקירה וארבעה חשודים עוכבו. המשטרה מייחסת למעורבים עבירות קבלת דבר במרמה, מרמה והפרת אמונים, רישום כוזב במסמכי תאגיד והלבנת הון. נכון ליולי 2026 לא הוגש כתב אישום והחקירה לא נסגרה; חלה חזקת החפות.
+      en: "In October 2024, Israel Police opened an investigation into Haim Biton and others on suspicion that public funds earmarked for education in the Shas-affiliated 'Ma'ayan HaChinuch HaTorani' school network were diverted to finance a children's supplement in the party newspaper 'HaDerech' during the period he headed the network. In March 2025 the probe moved to an overt phase: Biton was summoned for questioning and four suspects were detained. Police attribute to those involved suspected offenses of obtaining by fraud, fraud and breach of trust, false corporate records, and money laundering. As of July 2026 no indictment had been filed and the case had not closed; the presumption of innocence applies."
+      ar: في تشرين الأول 2024 فتحت الشرطة الإسرائيلية تحقيقًا مع حاييم بيتون وآخرين بشبهة تحويل أموال عامة مخصصة للتعليم في شبكة 'معيان هاتوراني' التابعة لحركة شاس لتمويل ملحق للأطفال في صحيفة الحزب 'هادرَّخ'، خلال فترة ترؤسه للشبكة. وفي آذار 2025 انتقل التحقيق إلى مرحلة علنية واستُدعي بيتون للتحقيق. تنسب الشرطة للمتورطين شبهة ارتكاب جرائم احتيال وخيانة أمانة وتزوير وغسيل أموال. حتى تموز 2026 لم تُقدّم لائحة اتهام ولم يُغلَق الملف؛ وتسري قرينة البراءة.
+      ru: В октябре 2024 года полиция Израиля начала расследование в отношении Хаима Битона и других по подозрению в том, что государственные средства, предназначенные на образование в сети «Мааян а-Хинух а-Торани», связанной с ПАС, были направлены на финансирование детского приложения партийной газеты «Га-Дерех» в период, когда он возглавлял эту сеть. В марте 2025 года расследование перешло в открытую фазу, Битон был вызван на допрос. Полиция вменяет подозреваемым мошенничество, злоупотребление доверием, подлог и отмывание денег. По состоянию на июль 2026 года обвинительное заключение не предъявлено и дело не закрыто; действует презумпция невиновности.
     sources:
-      - url: https://www.timesofisrael.com/police-grill-shas-minister-for-alleged-funneling-of-taxpayer-money-to-party-paper/
-        title: Police grill Shas minister for alleged funneling of taxpayer money to
-          party paper
-        publisher: The Times of Israel
+      - url: https://www.ynet.co.il/news/article/syvexqlnke
+        title: 'השר חיים ביטון זומן לחקירה – החשד: כספי ציבור שימשו למימון עיתון של ש"ס'
+        publisher: Ynet
       - url: https://www.jpost.com/israel-news/article-823827
-        title: Shas minister accused of using taxpayer money to fund party newspaper -
-          report
+        title: Shas's Haim Biton probed for using taxes to fund party newspaper
         publisher: The Jerusalem Post
+      - url: https://www.haaretz.co.il/news/2025-03-18/ty-article/00000195-a7f9-d922-af9d-bfffe86d0000
+        title: השר חיים ביטון ייחקר במשטרה בחשד שהעביר כספי ציבור למימון עיתון ש"ס
+        publisher: Haaretz
+      - url: https://www.timesofisrael.com/police-grill-shas-minister-for-alleged-funneling-of-taxpayer-money-to-party-paper/
+        title: Police grill Shas minister for alleged funneling of taxpayer money to party paper
+        publisher: The Times of Israel
+lastReviewed: 2026-07-05

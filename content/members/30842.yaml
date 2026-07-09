@@ -1,0 +1,84 @@
+# Hanoch Dov Milwidsky (PersonID 30842). Researched + adversarially verified 2026-07-05.
+# Every claim cites >=1 reputable source (enforced by the content schema).
+personId: 30842
+lastReviewed: 2026-07-05
+claims:
+  - kind: positive
+    category: achievement
+    date: 2022-11-15
+    title:
+      he: סגן ראש עיריית פתח תקווה, חבר הכנסת ה-25 וסגן יו"ר הכנסת
+      en: Deputy Mayor of Petah Tikva, Member of the 25th Knesset and Deputy Knesset Speaker
+      ar: نائب رئيس بلدية بيتح تكفا وعضو الكنيست الـ25 ونائب رئيس الكنيست
+      ru: Заместитель мэра Петах-Тиквы, депутат Кнессета 25-го созыва и заместитель спикера Кнессета
+    description:
+      he: מילביצקי, עורך דין בהשכלתו, נבחר ב-2013 למועצת עיריית פתח תקווה ומ-2018 כיהן כסגן ראש העירייה. בנובמבר 2022 נכנס לכנסת ה-25 מטעם הליכוד, וכיהן בה כסגן יושב ראש הכנסת וכחבר בוועדות הכספים, הפנים והחוקה, חוק ומשפט.
+      en: Milwidsky, a lawyer by training, was elected to the Petah Tikva city council in 2013 and served as deputy mayor from 2018. In November 2022 he entered the 25th Knesset for the Likud party, serving as a Deputy Speaker of the Knesset and as a member of the Finance, Interior, and Constitution, Law and Justice committees.
+    sources:
+      - url: https://he.wikipedia.org/wiki/%D7%97%D7%A0%D7%95%D7%9A_%D7%9E%D7%99%D7%9C%D7%91%D7%99%D7%A6%D7%A7%D7%99
+        title: חנוך מילביצקי – ויקיפדיה
+        publisher: Wikipedia (Hebrew)
+      - url: https://en.wikipedia.org/wiki/Hanoch_Milwidsky
+        title: Hanoch Milwidsky - Wikipedia
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    date: 2025-07-29
+    title:
+      he: נבחר ליושב ראש ועדת הכספים של הכנסת
+      en: Elected Chairman of the Knesset Finance Committee
+      ar: انتُخب رئيسًا للجنة المالية في الكنيست
+      ru: Избран председателем финансовой комиссии Кнессета
+    description:
+      he: ב-29 ביולי 2025 אישרה ועדת הכספים של הכנסת ברוב של 10 מול 7 את מינויו של מילביצקי ליושב ראש הוועדה, אחת הוועדות החזקות בכנסת המפקחת על תקציב המדינה, מיסוי ובנקאות. הוא החליף בתפקיד את ח"כ משה גפני, שפרש מהקואליציה, ומועמדותו נתמכה על ידי ראש הממשלה בנימין נתניהו; לפי הדיווחים המינוי הוא זמני ואמור לחזור לגפני אם ישוב לקואליציה.
+      en: On July 29, 2025, the Knesset Finance Committee voted 10-7 to approve Milwidsky as its chairman, heading one of parliament's most powerful panels, which oversees the state budget, taxation and banking. He took over from UTJ MK Moshe Gafni, who had left the coalition, and his candidacy was backed by Prime Minister Benjamin Netanyahu; the appointment was reported to be temporary, to revert to Gafni should he rejoin the coalition.
+    sources:
+      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-862601
+        title: Netanyahu-picked Milwidsky appointed head of Knesset Finance cmtee despite rape allegations
+        publisher: The Jerusalem Post
+      - url: https://www.ynetnews.com/article/bkvzbiuvgx
+        title: Despite rape allegations, Likud lawmaker Hanoch Milwidsky appointed head of Knesset Finance Committee
+        publisher: Ynetnews
+      - url: https://he.wikipedia.org/wiki/%D7%97%D7%A0%D7%95%D7%9A_%D7%9E%D7%99%D7%9C%D7%91%D7%99%D7%A6%D7%A7%D7%99
+        title: חנוך מילביצקי – ויקיפדיה
+        publisher: Wikipedia (Hebrew)
+  - kind: negative
+    category: investigation
+    status: ongoing
+    date: 2025-07
+    title:
+      he: חקירת משטרה בחשד לאונס, מעשים מגונים והדחת עדה — מכחיש את החשדות
+      en: Police investigation on suspicion of rape, indecent acts and witness tampering — he denies the allegations
+      ar: تحقيق للشرطة للاشتباه بالاغتصاب وأفعال مخلة وتحريض شاهدة على شهادة زور — وهو ينفي الشبهات
+      ru: Полицейское расследование по подозрению в изнасиловании, непристойных действиях и склонении свидетельницы к лжесвидетельству — он отрицает подозрения
+    description:
+      he: ביולי 2025 נחקר מילביצקי באזהרה בלהב 433 בחשד לאונס, מעשים מגונים, הדחת עדה לעדות שקר ושיבוש הליכי משפט, בפרשה הקשורה לתקופתו כיועץ משפטי של עמותת "בני ברוך – קבלה לעם", בטרם נבחר לכנסת. לפי חשדות המשטרה, אישה שלטענת החוקרים שודלה למסור עדות שקר מסרה כי מילביצקי אנס אותה בבית מלון. מילביצקי הכחיש את כל החשדות, טען כי מדובר ב"רדיפה פוליטית" ודרש לסגור את התיק; נכון לאמצע 2026 החקירה הסתיימה אך טרם התקבלה החלטה של הפרקליטות, לא הוגש כתב אישום, המתלוננת אינה משתפת פעולה עם החוקרים ובדיווחים צוינו קשיים ראייתיים בתיק.
+      en: In July 2025, Milwidsky was questioned under caution by the Lahav 433 police unit on suspicion of rape, indecent acts, suborning false testimony and obstruction of justice, in a case relating to his pre-Knesset role as legal adviser to the Bnei Baruch – Kabbalah La'Am association. According to the police suspicions, a woman whom investigators say he coached to give false testimony told them that Milwidsky raped her in a hotel. Milwidsky has denied all the allegations, calling the investigation "political persecution" and demanding the case be closed. As of mid-2026 questioning has concluded but the state prosecution has not announced a decision and no indictment has been filed; the complainant is not cooperating with investigators and reports cite significant evidentiary difficulties in the case.
+    sources:
+      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-862601
+        title: Netanyahu-picked Milwidsky appointed head of Knesset Finance cmtee despite rape allegations
+        publisher: The Jerusalem Post
+      - url: https://www.ynet.co.il/news/article/ryx7pybvgx
+        title: 'החוקרים הטיחו בח"כ מילביצקי את החשד: אנסת אישה ששידלת לעדות שקר'
+        publisher: Ynet
+      - url: https://www.israelhayom.co.il/news/crime/article/19072743
+        title: תיק החשד לאונס נגד ח"כ מילביצקי נתקל בקושי משפטי משמעותי
+        publisher: Israel Hayom
+  - kind: negative
+    category: controversy
+    date: 2023-01-09
+    title:
+      he: 'התבטאות בוועדת הכנסת: "מעדיף רוצחים יהודים על רוצחים ערבים"'
+      en: 'Knesset committee remark: "I prefer Jewish murderers over Arab murderers"'
+      ar: 'تصريح في لجنة الكنيست: "أفضّل القتلة اليهود على القتلة العرب"'
+      ru: "Высказывание в комиссии Кнессета: «Я предпочитаю еврейских убийц арабским убийцам»"
+    description:
+      he: 'בדיון בוועדת הכנסת ב-9 בינואר 2023 על הצעת חוק לשלילת אזרחות ממחבלים המקבלים תשלומים מהרשות הפלסטינית, אמר מילביצקי לח"כ אחמד טיבי: "אני לא מרגיש שום צורך להצטדק על כך שאני, במדינה היהודית, מעדיף יהודים. כן, אחמד טיבי, רוצחים יהודים על רוצחים ערבים". הדברים עוררו ביקורת מצד חברי אופוזיציה.'
+      en: 'During a January 9, 2023 Knesset House Committee debate on a bill to revoke the citizenship of terrorists receiving payments from the Palestinian Authority, Milwidsky told MK Ahmad Tibi: "I do not feel any need to justify myself for the fact that I, in the Jewish state, prefer Jews. Yes, Ahmad Tibi, Jewish murderers over Arab murderers." The remarks drew criticism from opposition lawmakers.'
+    sources:
+      - url: https://www.timesofisrael.com/likud-mk-in-the-jewish-state-i-prefer-jewish-murderers-over-arab-murderers/
+        title: "Likud MK: 'In the Jewish state, I prefer Jewish murderers over Arab murderers'"
+        publisher: The Times of Israel
+      - url: https://www.ynet.co.il/news/article/rkaq9uf9o
+        title: 'ח"כ מהליכוד לטיבי: "מעדיף רוצחים יהודים על פני רוצחים ערבים"'
+        publisher: Ynet

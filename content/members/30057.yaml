@@ -1,6 +1,3 @@
-# PersonID 30057. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
 personId: 30057
 claims:
   - kind: positive
@@ -9,14 +6,8 @@ claims:
       he: טייס קרב וסגן אלוף בחיל האוויר
       en: Fighter pilot and Lieutenant Colonel in the Israeli Air Force
     description:
-      he: קיש התגייס לחיל האוויר ב-1985, סיים קורס טיס כטייס קרב ב-1988 ושירת על מטוסי
-        F-16. הוא הגיע לדרגת סגן אלוף וסיים את שירות המילואים ב-2016. עד היבחרו
-        לכנסת עבד מספר שנים כטייס בחברת אל על.
-      en: Kisch enlisted in the Israeli Air Force in 1985, completed fighter pilot
-        training in 1988 and served on F-16 aircraft. He reached the rank of
-        Lieutenant Colonel and ended his reserve service in 2016. Before his
-        election to the Knesset he worked for several years as a civil airline
-        pilot for El Al.
+      he: קיש התגייס לחיל האוויר ב-1985, סיים קורס טיס כטייס קרב ב-1988 ושירת על מטוסי F-16. הוא הגיע לדרגת סגן אלוף וסיים את שירות המילואים ב-2016. עד היבחרו לכנסת עבד מספר שנים כטייס בחברת אל על.
+      en: Kisch enlisted in the Israeli Air Force in 1985, completed fighter pilot training in 1988 and served on F-16 aircraft. He reached the rank of Lieutenant Colonel and ended his reserve service in 2016. Before his election to the Knesset he worked for several years as a civil airline pilot for El Al.
     sources:
       - url: https://en.wikipedia.org/wiki/Yoav_Kisch
         title: Yoav Kisch
@@ -30,11 +21,8 @@ claims:
       he: חבר כנסת מטעם הליכוד ושר החינוך
       en: Likud Knesset member and Minister of Education
     description:
-      he: קיש נבחר לכנסת מטעם הליכוד ב-2015. הוא כיהן כשר שיתוף פעולה אזורי, וב-29
-        בדצמבר 2022 התמנה לשר החינוך, תפקיד בו הוא מכהן מאז.
-      en: Kisch was elected to the Knesset for the Likud party in 2015. He served as
-        Minister of Regional Cooperation, and on 29 December 2022 was appointed
-        Minister of Education, a post he has held since.
+      he: קיש נבחר לכנסת מטעם הליכוד ב-2015. הוא כיהן כשר שיתוף פעולה אזורי, וב-29 בדצמבר 2022 התמנה לשר החינוך, תפקיד בו הוא מכהן מאז.
+      en: Kisch was elected to the Knesset for the Likud party in 2015. He served as Minister of Regional Cooperation, and on 29 December 2022 was appointed Minister of Education, a post he has held since.
     date: 2022-12-29
     sources:
       - url: https://en.wikipedia.org/wiki/Yoav_Kisch
@@ -49,14 +37,8 @@ claims:
       he: יזם את תיקון 35 לחוק מימון מפלגות
       en: Initiated Amendment 35 to the Party Financing Law
     description:
-      he: במרץ 2017 יזם קיש, יחד עם חברי כנסת נוספים, את תיקון 35 לחוק מימון מפלגות
-        (המכונה 'חוק V15'), המחייב ארגונים ויחידים הפועלים בבחירות כדי לשכנע
-        מצביעים שלא להצביע לרשימה מסוימת להירשם אצל מבקר המדינה.
-      en: In March 2017 Kisch, together with other Knesset members, initiated
-        Amendment 35 to the Party Financing Law (known as the 'V15 law'), which
-        requires organizations and individuals campaigning during elections to
-        persuade voters not to vote for a particular list to register with the
-        State Comptroller.
+      he: במרץ 2017 יזם קיש, יחד עם חברי כנסת נוספים, את תיקון 35 לחוק מימון מפלגות (המכונה 'חוק V15'), המחייב ארגונים ויחידים הפועלים בבחירות כדי לשכנע מצביעים שלא להצביע לרשימה מסוימת להירשם אצל מבקר המדינה.
+      en: In March 2017 Kisch, together with other Knesset members, initiated Amendment 35 to the Party Financing Law (known as the 'V15 law'), which requires organizations and individuals campaigning during elections to persuade voters not to vote for a particular list to register with the State Comptroller.
     date: 2017-03-01
     sources:
       - url: https://en.wikipedia.org/wiki/Yoav_Kisch
@@ -65,30 +47,25 @@ claims:
   - kind: negative
     category: investigation
     status: ongoing
+    date: 2025-12-28
     title:
-      he: חקירת חשד למינוי פוליטי ואי-סדרים במשרד החינוך
-      en: Investigation into suspected political favoritism at the Education Ministry
+      he: בדיקת משטרה בחשד לעבירות טוהר המידות במשרד החינוך
+      en: Police examination over suspected integrity offenses at the Education Ministry
+      ar: فحص شرطي في شبهات مخالفات نزاهة في وزارة التربية والتعليم
+      ru: Полицейская проверка по подозрению в нарушениях добросовестности в Министерстве образования
     description:
-      he: במרץ 2025 פנתה התנועה לאיכות השלטון לרשויות אכיפת החוק בדרישה לפתוח בחקירה
-        פלילית נגד קיש, בעקבות פרסומים לפיהם נחשד כי הקצה משאבים תקציביים של
-        משרד החינוך לרשויות מקומיות בעלות ראשי ערים מהליכוד באופן שעשוי לסייע
-        למעמדו הפוליטי. דווח כי המשטרה בוחנת את החשדות. קיש הכחיש את הטענות.
-        נכון למועד הדיווחים, מדובר בבדיקה ראשונית וקיש לא הואשם בכל עבירה.
-      en: In March 2025 the Movement for Quality Government in Israel asked
-        law-enforcement authorities to open a criminal investigation against
-        Kisch, following reports alleging he directed Education Ministry
-        budgetary resources to local authorities with Likud mayors in a manner
-        that could benefit his political standing. Police were reported to be
-        examining the allegations. Kisch denied the allegations. As reported,
-        the matter is at a preliminary stage and Kisch has not been charged with
-        any offense.
-    date: 2025-03-10
+      he: בעקבות תחקירי תקשורת (כאן 11 / ערוץ 12), פנתה התנועה לאיכות השלטון ב-10 במרץ 2025 בדרישה לחקירה פלילית בטענה שקיש העדיף הקצאות משאבים לרשויות מקומיות משיקולים פוליטיים ובקשר לזוטרות שונות במשרד. ב-28 בדצמבר 2025 מסרה חטיבת החקירות והמודיעין של משטרת ישראל כי הבקשה לפתוח בחקירה נגד קיש ואחרים בחשד לעבירות בתחום טוהר המידות (מרמה, הפרת אמונים ושימוש במשאבי המשרד) נמצאת בבדיקה. קיש דחה את הטענות. ההליך מתנהל וטרם הוגש כתב אישום; חזקת החפות עומדת לו.
+      en: Following media investigations (KAN 11 / Channel 12), the Movement for Quality Government demanded a criminal investigation on 10 March 2025, alleging Kisch allocated Education Ministry resources to local authorities on political grounds and citing various ministry irregularities. On 28 December 2025 the Israel Police Investigation and Intelligence Division stated that the request to investigate Kisch and others on suspicion of integrity offenses (fraud, breach of trust, and misuse of ministry resources) was under examination. Kisch rejected the allegations. The matter is ongoing and no indictment has been filed; the presumption of innocence applies.
+      ar: في أعقاب تحقيقات إعلامية (كان 11 / القناة 12)، طالبت حركة جودة الحكم في 10 آذار/مارس 2025 بفتح تحقيق جنائي، مدعيةً أن كيش خصّص موارد وزارة التربية للسلطات المحلية لاعتبارات سياسية. وفي 28 كانون الأول/ديسمبر 2025 أفادت شعبة التحقيقات والاستخبارات في الشرطة الإسرائيلية بأن طلب فتح تحقيق ضد كيش وآخرين للاشتباه بمخالفات نزاهة (احتيال وخيانة أمانة واستخدام موارد الوزارة) قيد الفحص. نفى كيش الادعاءات. الإجراء جارٍ ولم تُقدَّم لائحة اتهام؛ وتُطبَّق قرينة البراءة.
+      ru: После журналистских расследований (KAN 11 / 12-й канал) Движение за качество власти 10 марта 2025 года потребовало уголовного расследования, утверждая, что Киш распределял ресурсы Министерства образования между местными органами власти по политическим соображениям. 28 декабря 2025 года Следственно-разведывательное управление полиции Израиля сообщило, что запрос о расследовании в отношении Киша и других по подозрению в нарушениях добросовестности (мошенничество, злоупотребление доверием и использование ресурсов министерства) находится на рассмотрении. Киш отверг обвинения. Дело продолжается, обвинительное заключение не предъявлено; действует презумпция невиновности.
     sources:
+      - url: https://www.maariv.co.il/news/law/article-1267026
+        title: המשטרה בוחנת פתיחת חקירה פלילית נגד שר החינוך יואב קיש
+        publisher: Maariv
+      - url: https://mqg.org.il/%D7%9E%D7%A9%D7%98%D7%A8%D7%AA-%D7%99%D7%A9%D7%A8%D7%90%D7%9C-%D7%A4%D7%AA%D7%97%D7%94-%D7%AA%D7%99%D7%A7-%D7%91%D7%9E%D7%A9%D7%98%D7%A8%D7%94-%D7%A0%D7%92%D7%93-%D7%A9%D7%A8-%D7%94%D7%97%D7%99%D7%A0/
+        title: משטרת ישראל פתחה תיק נגד שר החינוך יואב קיש ועובדי ציבור נוספים
+        publisher: The Movement for Quality Government in Israel
       - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-845499
-        title: NGO demands investigation of Education Minister Kisch over alleged
-          cronyism
+        title: NGO demands investigation of Yoav Kisch over alleged cronyism
         publisher: The Jerusalem Post
-      - url: https://www.timesofisrael.com/liveblog_entry/police-probing-allegations-of-misconduct-in-office-of-education-minister-yoav-kisch/
-        title: Police probing allegations of misconduct in office of education minister
-          Yoav Kisch
-        publisher: The Times of Israel
+lastReviewed: 2026-07-05

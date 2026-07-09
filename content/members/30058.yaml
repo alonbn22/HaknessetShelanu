@@ -1,6 +1,3 @@
-# PersonID 30058. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
 personId: 30058
 claims:
   - kind: positive
@@ -9,13 +6,8 @@ claims:
       he: מכהן כשר התרבות והספורט
       en: Serving as Minister of Culture and Sport
     description:
-      he: מיקי זוהר, חבר מפלגת הליכוד, מונה לשר התרבות והספורט בממשלה ה-37 ב-29 בדצמבר
-        2022. קודם לכן כיהן כחבר הכנסת מטעם הליכוד החל משנת 2015, ובין היתר שימש
-        כסגן יושב ראש הכנסת ויושב ראש הקואליציה.
-      en: Miki Zohar, a member of the Likud party, was appointed Minister of Culture
-        and Sport in Israel's 37th government on 29 December 2022. He previously
-        served as a Likud member of the Knesset from 2015, including roles as
-        Deputy Speaker of the Knesset and coalition whip.
+      he: מיקי זוהר, חבר מפלגת הליכוד, מונה לשר התרבות והספורט בממשלה ה-37 ב-29 בדצמבר 2022. קודם לכן כיהן כחבר הכנסת מטעם הליכוד החל משנת 2015, ובין היתר שימש כסגן יושב ראש הכנסת ויושב ראש הקואליציה.
+      en: Miki Zohar, a member of the Likud party, was appointed Minister of Culture and Sport in Israel's 37th government on 29 December 2022. He previously served as a Likud member of the Knesset from 2015, including roles as Deputy Speaker of the Knesset and coalition whip.
     date: 2022-12-29
     sources:
       - url: https://en.wikipedia.org/wiki/Miki_Zohar
@@ -27,13 +19,8 @@ claims:
       he: יזם את חוק יום העלייה
       en: Initiated the Yom HaAliyah (Aliyah Day) law
     description:
-      he: כחבר כנסת, זוהר היה בין יוזמי החוק שקבע את יום העלייה כחג לאומי בלוח השנה
-        הישראלי. הכנסת אישרה את החוק ב-21 ביוני 2016, וזוהי דוגמה לחקיקה שזכתה
-        לתמיכה חוצת מפלגות מהקואליציה והאופוזיציה.
-      en: As a member of the Knesset, Zohar was among the initiators of the law adding
-        Yom HaAliyah (Aliyah Day) as a national holiday to the Israeli calendar.
-        The Knesset approved the law on 21 June 2016, in a cross-party effort
-        supported by both coalition and opposition members.
+      he: כחבר כנסת, זוהר היה בין יוזמי החוק שקבע את יום העלייה כחג לאומי בלוח השנה הישראלי. הכנסת אישרה את החוק ב-21 ביוני 2016, וזוהי דוגמה לחקיקה שזכתה לתמיכה חוצת מפלגות מהקואליציה והאופוזיציה.
+      en: As a member of the Knesset, Zohar was among the initiators of the law adding Yom HaAliyah (Aliyah Day) as a national holiday to the Israeli calendar. The Knesset approved the law on 21 June 2016, in a cross-party effort supported by both coalition and opposition members.
     date: 2016-06-21
     sources:
       - url: https://en.wikipedia.org/wiki/Miki_Zohar
@@ -57,29 +44,25 @@ claims:
   - kind: negative
     category: investigation
     status: ongoing
-    title:
-      he: נחקר בחשד לשחיתות בפרשת ההסתדרות
-      en: Questioned under suspicion in the Histadrut corruption probe
-    description:
-      he: באפריל 2026 נחקר זוהר על ידי יחידת להב 433 במשך שעות רבות בחשד לשוחד, מרמה
-        והפרת אמונים, במסגרת חקירת שחיתות רחבה בהסתדרות. החקירה נוגעת לקשריו עם
-        החשוד המרכזי בפרשה, סוכן הביטוח עזרא גבאי. זוהר הכחיש כל מעורבות ואמר כי
-        אין לו כל קשר לפרשה. נכון למועד הדיווחים לא הוגש נגדו כתב אישום והחקירה
-        נמשכת. חלה עליו חזקת החפות.
-      en: In April 2026, Zohar was questioned for many hours by the Lahav 433
-        anti-corruption unit on suspicion of bribery, fraud, and breach of
-        trust, as part of a wider corruption investigation into the Histadrut
-        labor federation. The questioning concerned his ties to the main suspect
-        in the affair, insurance agent Ezra Gabay. Zohar denied any wrongdoing,
-        saying he has no connection to the case. As of the reporting, no charges
-        or indictment had been filed and the investigation was ongoing. He is
-        presumed innocent.
     date: 2026-04-19
+    title:
+      he: נחקר באזהרה בפרשת השחיתות בהסתדרות
+      en: Questioned under caution in the Histadrut corruption probe
+      ar: استُجوب تحت طائلة المسؤولية في قضية الفساد في الهستدروت
+      ru: Допрошен под предупреждением по делу о коррупции в Гистадруте
+    description:
+      he: באפריל 2026 נחקר מיקי זוהר באזהרה בלהב 433 בחשד לשוחד, מרמה והפרת אמונים במסגרת פרשת השחיתות בהסתדרות ("יד רוחצת יד"), בקשר לזיקתו לסוכן הביטוח עזרא גבאי. זוהר הכחיש כל קשר לפרשה ואמר כי "אין לי כל קשר לעניין". נכון ליולי 2026 מדובר בחקירה בלבד ולא הוגש כתב אישום; חלה חזקת החפות.
+      en: In April 2026 Miki Zohar was questioned under caution by the Lahav 433 unit on suspicion of bribery, fraud and breach of trust as part of the Histadrut corruption probe ("One Hand Washes the Other"), over his ties to insurance agent Ezra Gabay. Zohar denied any connection, stating he has "no connection whatsoever to the case." As of July 2026 the matter remains at the investigation stage with no indictment filed; the presumption of innocence applies.
+      ar: في أبريل 2026 استُجوب ميكي زوهر تحت طائلة المسؤولية من قبل وحدة لاهف 433 للاشتباه بالرشوة والاحتيال وخيانة الأمانة ضمن قضية الفساد في الهستدروت، على خلفية علاقته بوكيل التأمين عزرا غباي. نفى زوهر أي صلة بالقضية. حتى يوليو 2026 لا تزال القضية في مرحلة التحقيق دون توجيه لائحة اتهام، وتُطبَّق قرينة البراءة.
+      ru: В апреле 2026 года Мики Зохар был допрошен под предупреждением подразделением «Лахав 433» по подозрению во взяточничестве, мошенничестве и злоупотреблении доверием в рамках дела о коррупции в Гистадруте, в связи с его связями со страховым агентом Эзрой Габаем. Зохар отрицает какую-либо причастность. По состоянию на июль 2026 года дело находится на стадии расследования, обвинительное заключение не предъявлено; действует презумпция невиновности.
     sources:
-      - url: https://www.timesofisrael.com/culture-minister-miki-zohar-questioned-by-police-in-histadrut-corruption-probe/
-        title: Culture Minister Miki Zohar questioned for 11 hours in Histadrut
-          corruption probe
-        publisher: The Times of Israel
       - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-893529
         title: Miki Zohar questioned by police regarding Histadrut corruption affair
         publisher: The Jerusalem Post
+      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-893915
+        title: Miki Zohar summoned for Lahav 433 questioning in Histadrut affair
+        publisher: The Jerusalem Post
+      - url: https://www.ynetnews.com/article/u6shg9uzv
+        title: Minister Miki Zohar questioned again in Histadrut corruption probe
+        publisher: Ynetnews
+lastReviewed: 2026-07-05

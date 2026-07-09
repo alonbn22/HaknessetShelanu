@@ -1,37 +1,44 @@
-# Benjamin Netanyahu (PersonID 965). Seed entry — expand/verify before publishing.
-# Every claim must cite at least one source (enforced by the content schema).
 personId: 965
 claims:
   - kind: negative
     category: investigation
     status: ongoing
+    date: 2026-06-24
     title:
-      he: "משפט פלילי בעניין שחיתות (תיקים 1000, 2000, 4000)"
-      en: "Ongoing corruption trial (Cases 1000, 2000, 4000)"
-      ar: "محاكمة جنائية بتهم فساد (الملفات 1000، 2000، 4000)"
-      ru: "Уголовный процесс по делам о коррупции (дела 1000, 2000, 4000)"
-    date: "2020-05-24"
+      he: משפט פלילי בעניין שחיתות (תיקים 1000, 2000, 4000)
+      en: Ongoing corruption trial (Cases 1000, 2000, 4000)
+      ar: محاكمة فساد جارية (القضايا 1000، 2000، 4000)
+      ru: Продолжающийся коррупционный судебный процесс (дела 1000, 2000, 4000)
     description:
-      he: "הואשם ב-2019 בשוחד, מרמה והפרת אמונים בשלושה תיקים. המשפט נפתח במאי 2020 ומתנהל בבית המשפט המחוזי בירושלים. נתניהו מכחיש את כל האשמות."
-      en: "Indicted in 2019 for bribery, fraud and breach of trust across three cases. The trial opened in May 2020 at the Jerusalem District Court and is ongoing. Netanyahu denies all charges."
+      he: נתניהו עומד למשפט באשמות שוחד, מרמה והפרת אמונים בשלושה תיקים (1000, 2000, 4000). ביולי 2020 הואשם רשמית, וב-24 ביוני 2026 השלים את עדותו לאחר 98 דיונים; המשפט נמשך לעבר שלב הסיכומים, וטרם ניתן פסק דין. נתניהו מכחיש את כל האשמות ומתאר את ההליך כמונע פוליטית.
+      en: Netanyahu is on trial on charges of bribery, fraud and breach of trust across three cases (1000, 2000, 4000). He was formally indicted in 2020, and on 24 June 2026 concluded his testimony after 98 hearings; the trial is moving toward the closing-arguments phase and no verdict has been reached. Netanyahu denies all charges and calls the proceedings politically motivated.
+      ar: يمثل نتنياهو أمام المحكمة بتهم الرشوة والاحتيال وخيانة الأمانة في ثلاث قضايا (1000، 2000، 4000). وجهت له الاتهامات رسميًا عام 2020، وفي 24 يونيو 2026 أنهى شهادته بعد 98 جلسة؛ والمحاكمة تتجه إلى مرحلة المرافعات الختامية دون صدور حكم. ينفي نتنياهو جميع التهم ويصف الإجراءات بأنها ذات دوافع سياسية.
+      ru: Нетаньяху предстал перед судом по обвинениям в взяточничестве, мошенничестве и злоупотреблении доверием по трём делам (1000, 2000, 4000). Официальное обвинение было предъявлено в 2020 году, а 24 июня 2026 года он завершил дачу показаний после 98 заседаний; процесс переходит к стадии заключительных прений, приговор ещё не вынесен. Нетаньяху отрицает все обвинения и называет процесс политически мотивированным.
     sources:
-      - url: "https://en.wikipedia.org/wiki/Trial_of_Benjamin_Netanyahu"
-        title: "Trial of Benjamin Netanyahu"
-        publisher: "Wikipedia"
-      - url: "https://www.timesofisrael.com/topic/benjamin-netanyahus-trial/"
-        title: "Benjamin Netanyahu's trial — topic coverage"
-        publisher: "The Times of Israel"
+      - url: https://en.wikipedia.org/wiki/Trial_of_Benjamin_Netanyahu
+        title: Trial of Benjamin Netanyahu
+        publisher: Wikipedia
+      - url: https://www.jns.org/news/israel-news/netanyahu-concludes-testimony-as-corruption-trial-advances-to-next-stage
+        title: Netanyahu concludes testimony as corruption trial advances to next stage
+        publisher: JNS
+      - url: https://www.aa.com.tr/en/middle-east/netanyahus-corruption-case-testimony-concludes-after-98-hearings/3976713
+        title: Netanyahu's corruption case testimony concludes after 98 hearings
+        publisher: Anadolu Agency
+      - url: https://www.haaretz.com/israel-news/israel-crime/2026-06-24/ty-article/.premium/1-5-years-98-hearings-netanyahus-testimony-in-his-graft-trial-comes-to-an-end/0000019e-f998-db5e-a59e-fffab8de0000
+        title: After 98 Hearings Over More Than a Year, Netanyahu Gives His Final Testimony in the Criminal Trial Against Him
+        publisher: Haaretz
   - kind: positive
     category: achievement
     title:
-      he: "ראש הממשלה המכהן הזמן הרב ביותר בתולדות ישראל"
-      en: "Longest-serving prime minister in Israel's history"
-      ar: "رئيس الوزراء الأطول خدمةً في تاريخ إسرائيل"
-      ru: "Дольше всех занимавший пост премьер-министра в истории Израиля"
+      he: ראש הממשלה המכהן הזמן הרב ביותר בתולדות ישראל
+      en: Longest-serving prime minister in Israel's history
+      ar: رئيس الوزراء الأطول خدمةً في تاريخ إسرائيل
+      ru: Дольше всех занимавший пост премьер-министра в истории Израиля
     description:
-      he: "כיהן כראש ממשלה למעלה מ-17 שנים במצטבר, יותר מכל ראש ממשלה אחר."
-      en: "Has served as prime minister for over 17 cumulative years, more than any other premier."
+      he: כיהן כראש ממשלה למעלה מ-17 שנים במצטבר, יותר מכל ראש ממשלה אחר.
+      en: Has served as prime minister for over 17 cumulative years, more than any other premier.
     sources:
-      - url: "https://en.wikipedia.org/wiki/Benjamin_Netanyahu"
-        title: "Benjamin Netanyahu"
-        publisher: "Wikipedia"
+      - url: https://en.wikipedia.org/wiki/Benjamin_Netanyahu
+        title: Benjamin Netanyahu
+        publisher: Wikipedia
+lastReviewed: 2026-07-05

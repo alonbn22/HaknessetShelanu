@@ -1,6 +1,3 @@
-# PersonID 30860. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
 personId: 30860
 claims:
   - kind: positive
@@ -9,15 +6,8 @@ claims:
       he: חברת הכנסת ה-25 מטעם הליכוד
       en: Member of the 25th Knesset for Likud
     description:
-      he: טלי גוטליב (רויטל גוטליב), עורכת דין במקצוע, נבחרה לכנסת ה-25 במסגרת רשימת
-        הליכוד בבחירות 2022. היא מכהנת בכמה ועדות, ובהן ועדת החוקה, חוק ומשפט,
-        וביום 29 באוקטובר 2025 הצטרפה לוועדת החוץ והביטחון במקום ח"כ יולי
-        אדלשטיין.
-      en: Tally Gotliv (Revital Gotliv), a lawyer by profession, was elected to the
-        25th Knesset on the Likud list in the 2022 election. She serves on
-        several committees, including the Constitution, Law and Justice
-        Committee, and on 29 October 2025 joined the Foreign Affairs and Defense
-        Committee, replacing MK Yuli Edelstein.
+      he: טלי גוטליב (רויטל גוטליב), עורכת דין במקצוע, נבחרה לכנסת ה-25 במסגרת רשימת הליכוד בבחירות 2022. היא מכהנת בכמה ועדות, ובהן ועדת החוקה, חוק ומשפט, וביום 29 באוקטובר 2025 הצטרפה לוועדת החוץ והביטחון במקום ח"כ יולי אדלשטיין.
+      en: Tally Gotliv (Revital Gotliv), a lawyer by profession, was elected to the 25th Knesset on the Likud list in the 2022 election. She serves on several committees, including the Constitution, Law and Justice Committee, and on 29 October 2025 joined the Foreign Affairs and Defense Committee, replacing MK Yuli Edelstein.
     date: 2022-11-15
     sources:
       - url: https://en.wikipedia.org/wiki/Tally_Gotliv
@@ -32,12 +22,8 @@ claims:
       he: האישה הראשונה שהתמודדה על ראשות לשכת עורכי הדין
       en: First woman to run for chair of the Israel Bar Association
     description:
-      he: לפני כניסתה לפוליטיקה עסקה גוטליב בעריכת דין. בהתמודדות על ראשות לשכת עורכי
-        הדין בישראל בשנת 2015 הייתה לאישה הראשונה שהציגה מועמדות לתפקיד, אם כי
-        לא נבחרה.
-      en: Before entering politics, Gotliv worked as a lawyer. In her 2015 bid for the
-        chairmanship of the Israel Bar Association she became the first woman to
-        run for the office, although she was not elected.
+      he: לפני כניסתה לפוליטיקה עסקה גוטליב בעריכת דין. בהתמודדות על ראשות לשכת עורכי הדין בישראל בשנת 2015 הייתה לאישה הראשונה שהציגה מועמדות לתפקיד, אם כי לא נבחרה.
+      en: Before entering politics, Gotliv worked as a lawyer. In her 2015 bid for the chairmanship of the Israel Bar Association she became the first woman to run for the office, although she was not elected.
     sources:
       - url: https://en.wikipedia.org/wiki/Tally_Gotliv
         title: Tally Gotliv
@@ -49,51 +35,38 @@ claims:
       he: נזיפה וסנקציה של ועדת האתיקה של הכנסת (2023)
       en: Knesset Ethics Committee reprimand and sanction (2023)
     description:
-      he: במרץ 2023 הטילה ועדת האתיקה של הכנסת על גוטליב סנקציה בעקבות פרסומים ברשתות
-        החברתיות שבהם תלתה את האחריות לפיגוע טרור בירושלים בנשיאת בית המשפט
-        העליון אסתר חיות. הוועדה נזפה בה נזיפה חמורה ואסרה עליה לנאום במליאה
-        במשך שתי ישיבות ובוועדות במשך שלושה ימי פעילות.
-      en: In March 2023 the Knesset Ethics Committee sanctioned Gotliv over
-        social-media posts in which she blamed Supreme Court President Esther
-        Hayut for a deadly terror attack in Jerusalem. The committee issued a
-        severe reprimand and barred her from speaking in the plenum for two
-        sessions and in committees for three days of parliamentary activity.
+      he: במרץ 2023 הטילה ועדת האתיקה של הכנסת על גוטליב סנקציה בעקבות פרסומים ברשתות החברתיות שבהם תלתה את האחריות לפיגוע טרור בירושלים בנשיאת בית המשפט העליון אסתר חיות. הוועדה נזפה בה נזיפה חמורה ואסרה עליה לנאום במליאה במשך שתי ישיבות ובוועדות במשך שלושה ימי פעילות.
+      en: In March 2023 the Knesset Ethics Committee sanctioned Gotliv over social-media posts in which she blamed Supreme Court President Esther Hayut for a deadly terror attack in Jerusalem. The committee issued a severe reprimand and barred her from speaking in the plenum for two sessions and in committees for three days of parliamentary activity.
     date: 2023-03-21
     sources:
       - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-735003
-        title: Likud's Tally Gotliv sanctioned for blaming Chief Justice Hayut for
-          terror attack
+        title: Likud's Tally Gotliv sanctioned for blaming Chief Justice Hayut for terror attack
         publisher: The Jerusalem Post
       - url: https://en.wikipedia.org/wiki/Tally_Gotliv
         title: Tally Gotliv
         publisher: Wikipedia
   - kind: negative
     category: investigation
-    status: indicted
-    title:
-      he: כתב אישום על חשיפת זהות עובד שב"כ; הכנסת העניקה חסינות
-      en: Charged with disclosing a Shin Bet officer's identity; Knesset granted
-        immunity
-    description:
-      he: במאי 2026 הגישה היועצת המשפטית לממשלה כתב אישום נגד גוטליב בגין חשיפה ופרסום
-        של מידע חסוי בניגוד לחוק השב"כ, לאחר שלפי כתב האישום פרסמה את זהותו של
-        בן זוגה של מנהיגת המחאה שקמה ברסלר כעובד השב"כ. ב-17 ביוני 2026 העניקה
-        מליאת הכנסת לגוטליב חסינות מהעמדה לדין (בהצבעות 61-48 ו-62-48). התיק טרם
-        הוכרע לגופו וחלה חזקת החפות.
-      en: In May 2026 the Attorney General filed an indictment against Gotliv for
-        disclosing and publishing classified information in violation of the
-        Shin Bet law, after she allegedly published the identity of protest
-        leader Shikma Bressler's partner as a Shin Bet employee. On 17 June 2026
-        the Knesset plenum granted Gotliv immunity from prosecution (by votes of
-        61-48 and 62-48). The case has not been adjudicated on the merits and
-        the presumption of innocence applies.
+    status: ongoing
     date: 2026-06-17
+    title:
+      he: כתב אישום על חשיפת זהות איש שב"כ; הכנסת העניקה חסינות
+      en: Indicted over exposing a Shin Bet officer's identity; Knesset granted immunity
+      ar: لائحة اتهام بكشف هوية ضابط في الشاباك؛ الكنيست منحها الحصانة
+      ru: Обвинение в раскрытии личности сотрудника ШАБАКа; Кнессет предоставил иммунитет
+    description:
+      he: במאי 2026 הגישה היועצת המשפטית לממשלה כתב אישום נגד גוטליב בגין גילוי ופרסום מידע חסוי בניגוד לחוק שירות הביטחון הכללי, לאחר פרסום ברשתות החברתיות שחשף את זהותו של איש שב"כ. ב-17 ביוני 2026 העניקה מליאת הכנסת לגוטליב חסינות (ברוב של 61-48 ו-62-48) המונעת את העמדתה לדין; לאחר מכן הוגשו לבג"ץ עתירות לביטול החסינות. גוטליב מכחישה ביצוע עבירה וטוענת כי פעלה במסגרת תפקידה הפרלמנטרי.
+      en: In May 2026 the Attorney General filed an indictment against Gotliv for disclosing and publishing classified information in violation of the General Security Service (Shin Bet) law, over a social-media post that exposed the identity of a Shin Bet officer. On 17 June 2026 the Knesset plenum granted Gotliv parliamentary immunity (by votes of 61-48 and 62-48), blocking her prosecution; petitions to overturn the immunity were then filed with the High Court of Justice. Gotliv denies wrongdoing, saying she acted within her parliamentary role and only reshared an already-published post.
+      ar: في مايو 2026 قدّمت المستشارة القضائية للحكومة لائحة اتهام ضد غوتليب بتهمة كشف ونشر معلومات سرية بالمخالفة لقانون جهاز الأمن العام (الشاباك)، على خلفية منشور على وسائل التواصل كشف هوية ضابط في الشاباك. وفي 17 يونيو 2026 منحت الهيئة العامة للكنيست غوتليب حصانة برلمانية (بأصوات 61-48 و62-48) تمنع محاكمتها؛ ثم قُدّمت التماسات إلى محكمة العدل العليا لإلغاء الحصانة. تنفي غوتليب ارتكاب أي مخالفة وتقول إنها تصرفت ضمن دورها البرلماني.
+      ru: В мае 2026 года юридический советник правительства предъявил Готлив обвинение в раскрытии и публикации секретной информации в нарушение закона о Службе общей безопасности (ШАБАК) из-за поста в соцсетях, раскрывшего личность сотрудника ШАБАКа. 17 июня 2026 года пленум Кнессета предоставил Готлив депутатский иммунитет (голосами 61-48 и 62-48), блокирующий её судебное преследование; затем в Высший суд справедливости были поданы петиции об отмене иммунитета. Готлив отрицает вину, заявляя, что действовала в рамках депутатских полномочий и лишь репостнула уже опубликованное сообщение.
     sources:
       - url: https://www.jpost.com/israel-news/article-899707
-        title: Knesset approves MK Tally Gotliv's immunity in Shin Bet officer identity
-          exposure case
+        title: Knesset approves MK Tally Gotliv's immunity in Shin Bet officer identity exposure case
         publisher: The Jerusalem Post
-      - url: https://www.haaretz.com/israel-news/2025-10-29/ty-article/.premium/likud-mk-appointed-to-key-knesset-defense-committee-despite-leak-allegations/0000019a-319c-d804-a9df-39bcbfe90000
-        title: Likud's Tally Gotliv Appointed to Key Knesset Defense Committee Despite
-          Classified Information Leak Allegations
-        publisher: Haaretz
+      - url: https://www.jpost.com/israel-news/article-899729
+        title: Shin Bet officer challenges Tally Gotliv immunity decision
+        publisher: The Jerusalem Post
+      - url: https://www.ynet.co.il/news/article/hkmnniygmx
+        title: הכנסת אישרה חסינות לגוטליב אחרי שחשפה זהות איש שב"כ
+        publisher: Ynet
+lastReviewed: 2026-07-05

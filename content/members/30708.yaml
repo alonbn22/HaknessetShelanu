@@ -1,6 +1,3 @@
-# PersonID 30708. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
 personId: 30708
 claims:
   - kind: positive
@@ -9,14 +6,8 @@ claims:
       he: מונתה לשרה לקידום מעמד האישה ולשרה לשוויון חברתי
       en: Appointed government minister (Women's Advancement, then Social Equality)
     description:
-      he: מאי גולן, חברת הכנסת מטעם הליכוד שנבחרה בבחירות 2022, מונתה במאי 2023 לשרה
-        לקידום מעמד האישה. בינואר 2024 אישרה מליאת הכנסת את מינויה לשרה לשוויון
-        חברתי, לאחר שמשרד קידום מעמד האישה צורף למשרד השוויון החברתי.
-      en: May Golan, a Likud Knesset member elected in the 2022 elections, was
-        appointed Minister for the Advancement of Women's Status in May 2023. In
-        January 2024 the Knesset plenum approved her appointment as Minister of
-        Social Equality, after the Women's Advancement Ministry was folded into
-        the Social Equality Ministry.
+      he: מאי גולן, חברת הכנסת מטעם הליכוד שנבחרה בבחירות 2022, מונתה במאי 2023 לשרה לקידום מעמד האישה. בינואר 2024 אישרה מליאת הכנסת את מינויה לשרה לשוויון חברתי, לאחר שמשרד קידום מעמד האישה צורף למשרד השוויון החברתי.
+      en: May Golan, a Likud Knesset member elected in the 2022 elections, was appointed Minister for the Advancement of Women's Status in May 2023. In January 2024 the Knesset plenum approved her appointment as Minister of Social Equality, after the Women's Advancement Ministry was folded into the Social Equality Ministry.
     date: 2024-01-21
     sources:
       - url: https://en.wikipedia.org/wiki/May_Golan
@@ -26,35 +17,31 @@ claims:
         title: May Golan appointed Israel's women's advancement minister
         publisher: The Jerusalem Post
       - url: https://www.timesofisrael.com/liveblog_entry/knesset-okays-may-golan-as-social-equality-minister-trashing-short-lived-ministry-for-advancement-of-women/
-        title: Knesset okays May Golan as social equality minister, trashing short-lived
-          ministry for advancement of women
+        title: Knesset okays May Golan as social equality minister, trashing short-lived ministry for advancement of women
         publisher: The Times of Israel
   - kind: negative
     category: investigation
     status: ongoing
-    title:
-      he: חקירה פלילית בחשד לשוחד, מרמה והפרת אמונים
-      en: Criminal investigation over alleged bribery, fraud and breach of trust
-    description:
-      he: בפברואר 2025 הורו היועצת המשפטית לממשלה ופרקליט המדינה על פתיחת חקירה
-        בעניינה של גולן בעקבות תחקיר של חדשות 12, וביולי 2025 הורחבה לחקירה
-        פלילית מלאה בחשד לשוחד, מרמה והפרת אמונים בנוגע לפעילותה בעמותה
-        ולמינויים במשרד הממשלתי. ביוני 2026 השלימה המשטרה את החקירה והמליצה
-        להעמידה לדין. גולן מכחישה את החשדות, טרם הוגש נגדה כתב אישום, ועומדת לה
-        חזקת החפות.
-      en: In February 2025 the attorney general and state attorney ordered an
-        investigation into Golan following a Channel 12 report, and in July 2025
-        it was expanded into a full criminal investigation on suspicion of
-        bribery, fraud and breach of trust relating to her nonprofit activity
-        and ministry appointments. In June 2026 police completed the
-        investigation and recommended that she be prosecuted. Golan denies the
-        allegations; no indictment has been filed and she retains the
-        presumption of innocence.
     date: 2026-06-10
+    title:
+      he: חקירה פלילית בחשד לשוחד, מרמה והפרת אמונים – המשטרה המליצה להעמיד לדין
+      en: Criminal investigation over alleged bribery, fraud and breach of trust – police recommend indictment
+      ar: تحقيق جنائي في شبهة رشوة واحتيال وخيانة الأمانة – الشرطة توصي بتقديم لائحة اتهام
+      ru: Уголовное расследование по подозрению в взятках, мошенничестве и злоупотреблении доверием – полиция рекомендует предъявить обвинение
+    description:
+      he: ב-10 ביוני 2026 הודיעה משטרת ישראל (להב 433) כי סיימה את החקירה בעניינה של השרה מאי גולן וגיבשה תשתית ראייתית להמלצה על הגשת כתב אישום בעבירות שוחד, מרמה והפרת אמונים ועבירות נוספות, והתיק הועבר לפרקליטות. נכון ל-5 ביולי 2026 טרם הוגש כתב אישום, וההחלטה בעניין נתונה ליועצת המשפטית לממשלה בכפוף לשימוע. גולן דוחה את החשדות וטוענת כי מדובר ברדיפה פוליטית.
+      en: On 10 June 2026 Israel Police's National Fraud Investigation Unit (Lahav 433) announced it had completed its investigation of Minister May Golan, concluding there was a sufficient evidentiary basis to recommend indicting her for bribery, fraud and breach of trust and additional offenses, and transferred the case to the State Attorney. As of 5 July 2026 no indictment has been filed; the decision rests with the Attorney General, subject to a hearing. Golan denies the allegations and has called the case political persecution.
     sources:
-      - url: https://en.wikipedia.org/wiki/May_Golan
-        title: May Golan
-        publisher: Wikipedia
+      - url: https://www.timesofisrael.com/police-recommend-minister-golan-stand-trial-over-job-fixing-allegations/
+        title: Police recommend Minister Golan stand trial over job-fixing allegations
+        publisher: The Times of Israel
       - url: https://www.haaretz.com/israel-news/israel-politics/2026-06-10/ty-article/.premium/police-recommend-corruption-charges-against-likud-minister-may-golan/0000019e-b2e5-d0c7-a5fe-b6f7caa70000
         title: Police Recommend Corruption Charges Against Likud Minister May Golan
         publisher: Haaretz
+      - url: https://www.timesofisrael.com/liveblog_entry/after-police-say-she-should-be-indicted-for-fake-jobs-may-golan-decries-political-witch-hunt-on-steroids/
+        title: After police say she should be indicted for fake jobs, May Golan decries 'political witch hunt on steroids'
+        publisher: The Times of Israel
+      - url: https://www.israelhayom.co.il/news/crime/article/20730780
+        title: "הסתיימה חקירת מאי גולן: גובשה תשתית ראייתית להגשת כתב אישום"
+        publisher: Israel Hayom
+lastReviewed: 2026-07-05

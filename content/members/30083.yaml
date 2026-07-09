@@ -1,6 +1,3 @@
-# PersonID 30083. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
 personId: 30083
 claims:
   - kind: positive
@@ -9,24 +6,15 @@ claims:
       he: כיהן כשר הכלכלה, שר החוץ ושר האנרגיה
       en: Served as Minister of Economy, Foreign Affairs, and Energy
     description:
-      he: "אלי כהן, רואה חשבון ואיש עסקים מחולון שכיהן כקצין בחיל האוויר, נכנס לכנסת
-        ב-2015 ומילא שורה של תפקידי שר בכירים: שר הכלכלה והתעשייה (2017–2020),
-        שר המודיעין (2020–2021), שר החוץ (2022/2023 ועד ינואר 2024) ושר האנרגיה
-        והתשתיות (מינואר 2024 ואילך)."
-      en: "Eli Cohen, an accountant and businessman from Holon who served as an
-        officer in the Israeli Air Force, entered the Knesset in 2015 and has
-        held a series of senior cabinet posts: Minister of Economy and Industry
-        (2017–2020), Minister of Intelligence (2020–2021), Minister of Foreign
-        Affairs (2022/2023 to January 2024), and Minister of Energy and
-        Infrastructure (since January 2024)."
+      he: "אלי כהן, רואה חשבון ואיש עסקים מחולון שכיהן כקצין בחיל האוויר, נכנס לכנסת ב-2015 ומילא שורה של תפקידי שר בכירים: שר הכלכלה והתעשייה (2017–2020), שר המודיעין (2020–2021), שר החוץ (2022/2023 ועד ינואר 2024) ושר האנרגיה והתשתיות (מינואר 2024 ואילך)."
+      en: "Eli Cohen, an accountant and businessman from Holon who served as an officer in the Israeli Air Force, entered the Knesset in 2015 and has held a series of senior cabinet posts: Minister of Economy and Industry (2017–2020), Minister of Intelligence (2020–2021), Minister of Foreign Affairs (2022/2023 to January 2024), and Minister of Energy and Infrastructure (since January 2024)."
     date: 2024-01-01
     sources:
       - url: https://en.wikipedia.org/wiki/Eli_Cohen_(politician,_born_1972)
         title: Eli Cohen (politician, born 1972)
         publisher: Wikipedia
       - url: https://www.timesofisrael.com/cabinet-okays-israel-katz-replacing-eli-cohen-as-foreign-minister-in-planned-move/
-        title: Cabinet okays Israel Katz replacing Eli Cohen as foreign minister, in
-          planned move
+        title: Cabinet okays Israel Katz replacing Eli Cohen as foreign minister, in planned move
         publisher: The Times of Israel
   - kind: positive
     category: achievement
@@ -34,15 +22,8 @@ claims:
       he: הובלת כניסת ישראל לתוכנית הפטור מאשרה של ארה"ב
       en: Led Israel's entry into the US Visa Waiver Program
     description:
-      he: במהלך כהונתו כשר החוץ, בספטמבר 2023, הכריז כהן על הצטרפות ישראל לתוכנית
-        הפטור מאשרה של ארצות הברית, מהלך שישראל ביקשה להשיג במשך עשרות שנים.
-        ישראל התקבלה רשמית לתוכנית באוקטובר 2023, ואפשרה לאזרחים ישראלים לנסוע
-        לארה"ב ללא אשרה.
-      en: During his tenure as foreign minister, in September 2023 Cohen announced
-        Israel's entry into the United States Visa Waiver Program, a goal Israel
-        had sought for decades. Israel was formally admitted to the program in
-        October 2023, allowing Israeli citizens to travel to the US without a
-        visa.
+      he: במהלך כהונתו כשר החוץ, בספטמבר 2023, הכריז כהן על הצטרפות ישראל לתוכנית הפטור מאשרה של ארצות הברית, מהלך שישראל ביקשה להשיג במשך עשרות שנים. ישראל התקבלה רשמית לתוכנית באוקטובר 2023, ואפשרה לאזרחים ישראלים לנסוע לארה"ב ללא אשרה.
+      en: During his tenure as foreign minister, in September 2023 Cohen announced Israel's entry into the United States Visa Waiver Program, a goal Israel had sought for decades. Israel was formally admitted to the program in October 2023, allowing Israeli citizens to travel to the US without a visa.
     date: 2023-10-01
     sources:
       - url: https://www.aljazeera.com/news/2023/9/25/israel-foreign-minister-says-us-will-allow-visa-free-travel-for-israelis
@@ -54,30 +35,28 @@ claims:
   - kind: negative
     category: investigation
     status: ongoing
+    date: 2026-06-17
     title:
       he: חקירה בפרשת הדרכונים הדיפלומטיים
       en: Investigation in the diplomatic passports affair
+      ar: تحقيق في قضية جوازات السفر الدبلوماسية
+      ru: Расследование по делу о дипломатических паспортах
     description:
-      he: כהן נחקר על ידי המשטרה בחשד שבעת כהונתו כשר החוץ הורה להנפיק שלא כדין
-        דרכונים דיפלומטיים לבכירים בליכוד ולבני משפחת ראש הממשלה נתניהו. ב-17
-        ביוני 2026 הודיעה משטרת ישראל כי סיימה את החקירה וכי לדעתה קיימת תשתית
-        ראייתית להעמדתו לדין בעבירת הפרת אמונים. נכון למועד זה לא הוגש נגדו כתב
-        אישום, וההחלטה על העמדה לדין נתונה בידי הפרקליטות. כהן הכחיש את החשדות.
-      en: Cohen was questioned by police on suspicion that, while serving as foreign
-        minister, he ordered the unlawful issuance of diplomatic passports to
-        senior Likud members and to relatives of Prime Minister Netanyahu. On 17
-        June 2026, Israel Police announced they had concluded the investigation
-        and believe there is sufficient evidence to indict him on breach of
-        trust. As of that date no indictment had been filed, and the decision on
-        prosecution rests with the State Attorney. Cohen has denied the
-        suspicions.
-    date: 2026-06-17
+      he: אלי כהן נחקר בחשד להפרת אמונים בקשר להנפקת דרכונים דיפלומטיים בתקופת כהונתו כשר החוץ. ב-17 ביוני 2026 הודיעה המשטרה שסיימה את החקירה וכי לעמדתה קיימת תשתית ראייתית להעמדתו לדין, והתיק הועבר לפרקליטות; נכון ל-5 ביולי 2026 טרם הוגש כתב אישום וההחלטה מצויה בידי הפרקליטות. כהן מכחיש עבירה ומסר כי הכל נעשה בהתאם לנהלים וכי הוא בטוח שהצדק יצא לאור.
+      en: Eli Cohen was questioned on suspicion of breach of trust over the issuance of diplomatic passports during his tenure as foreign minister. On 17 June 2026 Israel Police announced they had completed the investigation and that, in their view, there was an evidentiary basis to charge him; the file was transferred to the state prosecution. As of 5 July 2026 no indictment had been filed and the decision rests with the prosecution. Cohen denies wrongdoing, saying everything was done in accordance with procedures and that he is confident justice will prevail.
+      ar: تم استجواب إيلي كوهين للاشتباه في خيانة الأمانة بشأن إصدار جوازات سفر دبلوماسية خلال فترة توليه منصب وزير الخارجية. في 17 يونيو 2026 أعلنت الشرطة أنها أنهت التحقيق وأن هناك أساسًا ثبوتيًا لاتهامه، وأُحيل الملف إلى النيابة. حتى 5 يوليو 2026 لم تُقدم لائحة اتهام والقرار بيد النيابة. ينفي كوهين ارتكاب أي مخالفة ويقول إن كل شيء تم وفق الإجراءات.
+      ru: Эли Коэн был допрошен по подозрению в злоупотреблении доверием в связи с выдачей дипломатических паспортов в период его работы министром иностранных дел. 17 июня 2026 года полиция заявила о завершении расследования и о наличии доказательной базы для предъявления обвинения; дело передано в прокуратуру. По состоянию на 5 июля 2026 года обвинительное заключение не предъявлено. Коэн отрицает вину, заявляя, что всё было сделано в соответствии с процедурами.
     sources:
       - url: https://www.haaretz.com/israel-news/israel-crime/2026-06-17/ty-article/.premium/police-say-enough-evidence-gathered-to-charge-minister-over-diplomatic-passports/0000019e-d4bd-d015-a3be-d6ff34a80000
-        title: Police Say Sufficient Evidence Gathered to Indict Netanyahu Minister Over
-          Unlawful Diplomatic Passports
+        title: Police Say Sufficient Evidence Gathered to Indict Netanyahu Minister Over Unlawful Diplomatic Passports
         publisher: Haaretz
-      - url: https://www.haaretz.com/israel-news/2025-09-10/ty-article/.premium/likud-minister-questioned-for-ordering-diplomatic-passports-for-key-party-members/00000199-32b4-dd15-a1dd-feb609a30000
-        title: Likud Minister Eli Cohen Questioned Over Diplomatic Passports, Suspected
-          of Fraud, Breach of Trust
-        publisher: Haaretz
+      - url: https://www.calcalist.co.il/local_news/article/hkj0jxggfe
+        title: "פרשת הדרכונים: במשטרה סבורים - יש תשתית ראייתית נגד השר אלי כהן"
+        publisher: Calcalist
+      - url: https://www.ynet.co.il/news/article/b1hsir1fme
+        title: "פרשת הדרכונים ויאיר נתניהו: במשטרה סבורים - יש תשתית ראייתית נגד השר אלי כהן"
+        publisher: Ynet
+      - url: https://www.mako.co.il/news-law/2026_q2/Article-a68efdc2dbbce91027.htm
+        title: הסתיימה חקירת המשטרה בפרשת הדרכונים הדיפלומטיים
+        publisher: N12 (Mako)
+lastReviewed: 2026-07-05

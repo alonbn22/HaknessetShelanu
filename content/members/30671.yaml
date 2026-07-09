@@ -1,6 +1,3 @@
-# PersonID 30671. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
 personId: 30671
 claims:
   - kind: positive
@@ -9,14 +6,8 @@ claims:
       he: חבר הכנסת מטעם יהדות התורה
       en: Member of the Knesset for United Torah Judaism
     description:
-      he: יעקב טסלר נבחר לראשונה לכנסת באפריל 2019 ברשימת יהדות התורה (אגודת ישראל,
-        נציג חסידות ויז'ניץ), ומכהן כחבר כנסת על פני מספר כהונות. קודם לכן כיהן
-        כחבר מועצת העיר אשדוד מטעם אגודת ישראל וכעוזר לשר הבריאות יעקב ליצמן.
-      en: Ya'akov Tessler was first elected to the Knesset in April 2019 on the United
-        Torah Judaism (Agudat Yisrael) list, representing the Vizhnitz Hasidic
-        community, and has served across multiple Knesset terms. He previously
-        served on the Ashdod city council for Agudat Yisrael and as an assistant
-        to Health Minister Ya'akov Litzman.
+      he: יעקב טסלר נבחר לראשונה לכנסת באפריל 2019 ברשימת יהדות התורה (אגודת ישראל, נציג חסידות ויז'ניץ), ומכהן כחבר כנסת על פני מספר כהונות. קודם לכן כיהן כחבר מועצת העיר אשדוד מטעם אגודת ישראל וכעוזר לשר הבריאות יעקב ליצמן.
+      en: Ya'akov Tessler was first elected to the Knesset in April 2019 on the United Torah Judaism (Agudat Yisrael) list, representing the Vizhnitz Hasidic community, and has served across multiple Knesset terms. He previously served on the Ashdod city council for Agudat Yisrael and as an assistant to Health Minister Ya'akov Litzman.
     date: 2019-04-30
     sources:
       - url: https://en.wikipedia.org/wiki/Ya'akov_Tessler
@@ -31,14 +22,8 @@ claims:
       he: סגן שר התרבות והספורט
       en: Deputy Minister of Culture and Sport
     description:
-      he: טסלר כיהן כסגן שר התרבות והספורט בממשלה השלושים ושבע. הוא פרש מתפקידו
-        ומהכנסת באמצע 2025 במסגרת פרישת סיעת יהדות התורה מהקואליציה על רקע
-        המחלוקת בעניין חוק גיוס תלמידי הישיבות.
-      en: Tessler served as Deputy Minister of Culture and Sport in Israel's
-        thirty-seventh government. He resigned from the post and from the
-        Knesset in mid-2025 as part of United Torah Judaism's withdrawal from
-        the coalition over the dispute on the Haredi military draft exemption
-        legislation.
+      he: טסלר כיהן כסגן שר התרבות והספורט בממשלה השלושים ושבע. הוא פרש מתפקידו ומהכנסת באמצע 2025 במסגרת פרישת סיעת יהדות התורה מהקואליציה על רקע המחלוקת בעניין חוק גיוס תלמידי הישיבות.
+      en: Tessler served as Deputy Minister of Culture and Sport in Israel's thirty-seventh government. He resigned from the post and from the Knesset in mid-2025 as part of United Torah Judaism's withdrawal from the coalition over the dispute on the Haredi military draft exemption legislation.
     date: 2022-12-29
     sources:
       - url: https://en.wikipedia.org/wiki/Ya'akov_Tessler
@@ -50,32 +35,25 @@ claims:
   - kind: negative
     category: investigation
     status: ongoing
-    title:
-      he: חקירה בחשד למעורבות בהשתקת תלונות נגד אביו
-      en: Under investigation over alleged role in silencing complaints against his
-        father
-    description:
-      he: באוגוסט 2024 דווח כי פרקליט המדינה דאז עמית איסמן הורה למשטרה לחדש את החקירה
-        נגד סגן השר וחבר הכנסת יעקב טסלר, בחשד למעורבות בהשתקת תלונות על תקיפה
-        מינית שיוחסו לאביו, הרב אפרים טסלר, ששימש בעבר ראש ישיבה בירושלים. על פי
-        הדיווחים החקירה עוסקת בחשד למעורבות במניעת הליכי החקירה ובתשלום לאחד
-        המתלוננים. נכון לפרסומים לא הוגש כתב אישום והוא לא הורשע, ועומדת לו חזקת
-        החפות.
-      en: In August 2024 it was reported that then-State Prosecutor Amit Aisman
-        ordered police to reopen an investigation into Deputy Minister and MK
-        Ya'akov Tessler over his alleged involvement in silencing sexual-assault
-        complaints against his father, Rabbi Efraim Tessler, a former head of a
-        Jerusalem yeshiva. According to the reports, the investigation concerns
-        suspected involvement in obstructing the proceedings and an alleged
-        payment to one of the complainants. As reported, no indictment has been
-        filed and he has not been convicted; the presumption of innocence
-        applies.
     date: 2024-08-18
+    title:
+      he: נחקר בחשד למעורבות בהשתקת תלונות נגד אביו
+      en: Under investigation over alleged role in silencing complaints against his father
+      ar: قيد التحقيق بشبهة التورط في إسكات شكاوى ضد والده
+      ru: Под следствием по подозрению в причастности к сокрытию жалоб против его отца
+    description:
+      he: על פי דיווחי "הארץ", טסלר נחקר בחשד למעורבות בהסכם להשתקת מתלוננים שטענו כי אביו, הרב אפרים טסלר, תקף אותם מינית בעת שעמד בראש ישיבה בירושלים. ב-18 באוגוסט 2024 הורה פרקליט המדינה עמית איסמן על חידוש החקירה, לאחר שהמשטרה המליצה שלא לחקור אותו בחשד לשיבוש הליכים. טסלר הכחיש וטען כי "לדברים אין שחר". נכון ליולי 2026 לא הוגש כתב אישום וההליך פתוח, וחלה חזקת החפות.
+      en: According to reporting by Haaretz, Tessler is under investigation over alleged involvement in an agreement to silence complainants who said his father, Rabbi Efraim Tessler, sexually assaulted them while heading a Jerusalem yeshiva. On 18 August 2024, State Prosecutor Amit Aisman ordered the investigation reopened after police had recommended against investigating him for obstruction. Tessler denied the allegations, saying they "have no basis." As of July 2026 no indictment has been filed, the proceeding is open, and the presumption of innocence applies.
+      ar: وفقًا لتقارير صحيفة هآرتس، يخضع تسلر للتحقيق بشبهة التورط في اتفاق لإسكات مشتكين قالوا إن والده، الحاخام إفرايم تسلر، اعتدى عليهم جنسيًا أثناء ترؤسه معهدًا دينيًا في القدس. في 18 آب/أغسطس 2024، أمر المدعي العام للدولة عميت أيسمان بإعادة فتح التحقيق بعد أن أوصت الشرطة بعدم التحقيق معه بشبهة عرقلة الإجراءات. نفى تسلر الاتهامات قائلًا إنها "لا أساس لها". حتى تموز/يوليو 2026 لم تُقدَّم لائحة اتهام والإجراء مفتوح، وتنطبق قرينة البراءة.
+      ru: По сообщениям газеты Haaretz, Теслер находится под следствием по подозрению в причастности к соглашению о сокрытии жалоб лиц, заявивших, что его отец, раввин Эфраим Теслер, совершал в отношении них сексуальное насилие в период, когда он возглавлял иешиву в Иерусалиме. 18 августа 2024 года государственный прокурор Амит Айсман распорядился возобновить расследование после того, как полиция рекомендовала не расследовать его по подозрению в воспрепятствовании правосудию. Теслер отверг обвинения, заявив, что они "безосновательны". По состоянию на июль 2026 года обвинительное заключение не предъявлено, производство открыто, и действует презумпция невиновности.
     sources:
       - url: https://www.haaretz.com/israel-news/2024-08-18/ty-article/.premium/probe-reopened-into-lawmaker-who-allegedly-helped-squelch-dads-sexual-assault-case/00000191-66d5-d3bf-a3b1-eff76eaf0000
-        title: Probe Reopened Into Israeli Lawmaker Who Allegedly Helped Squelch
-          Father's Sexual Assault Case
+        title: Probe Reopened Into Israeli Lawmaker Who Allegedly Helped Squelch Father's Sexual Assault Case
         publisher: Haaretz
-      - url: https://www.jpost.com/israel-news/article-726829
-        title: Haredi deputy minister involved in closing father's sexual assault case
-        publisher: The Jerusalem Post
+      - url: https://www.haaretz.co.il/news/law/2024-08-18/ty-article/.premium/00000191-64b5-d5bb-adfb-f6ff583a0000
+        title: איסמן הורה לחדש את חקירת מעורבות סגן השר טסלר בהשתקת תקיפות מיניות שביצע אביו
+        publisher: Haaretz (Hebrew)
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%A7%D7%91_%D7%98%D7%A1%D7%9C%D7%A8
+        title: יעקב טסלר
+        publisher: Wikipedia (Hebrew)
+lastReviewed: 2026-07-05

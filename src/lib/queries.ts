@@ -1,5 +1,5 @@
 import { cache } from "react";
-import { and, desc, eq, inArray, like, or, sql } from "drizzle-orm";
+import { and, asc, desc, eq, gt, inArray, lte, like, or, sql } from "drizzle-orm";
 import { getDb, schema } from "@/db";
 import { getCoalitionConfig, getFactionMeta } from "./content";
 import {
@@ -1033,6 +1033,50 @@ export function getCommitteeMembers(committeeId: number) {
     )
     .all();
   return rows.map((r) => ({ person: r.person, roleHe: r.roleHe }));
+}
+
+export type CommitteeSession = typeof schema.committeeSessions.$inferSelect;
+
+// A committee's meeting calendar: the next scheduled sittings and the most
+// recent past ones, plus the total meeting count (an activity signal). `nowIso`
+// splits future/past. try/catch → empty when the table isn't materialized yet.
+export function getCommitteeSessions(committeeId: number, nowIso: string, limit = 8) {
+  try {
+    const db = getDb();
+    const upcoming = db
+      .select()
+      .from(schema.committeeSessions)
+      .where(
+        and(
+          eq(schema.committeeSessions.committeeId, committeeId),
+          gt(schema.committeeSessions.startDate, nowIso),
+        ),
+      )
+      .orderBy(asc(schema.committeeSessions.startDate))
+      .limit(limit)
+      .all();
+    const recent = db
+      .select()
+      .from(schema.committeeSessions)
+      .where(
+        and(
+          eq(schema.committeeSessions.committeeId, committeeId),
+          lte(schema.committeeSessions.startDate, nowIso),
+        ),
+      )
+      .orderBy(desc(schema.committeeSessions.startDate))
+      .limit(limit)
+      .all();
+    const total =
+      db
+        .select({ n: sql<number>`COUNT(*)` })
+        .from(schema.committeeSessions)
+        .where(eq(schema.committeeSessions.committeeId, committeeId))
+        .get()?.n ?? 0;
+    return { upcoming, recent, total };
+  } catch {
+    return { upcoming: [] as CommitteeSession[], recent: [] as CommitteeSession[], total: 0 };
+  }
 }
 
 // ---------- Israel law book ----------

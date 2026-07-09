@@ -3,9 +3,22 @@ import { after } from "next/server";
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { MemberAvatar } from "@/components/MemberCard";
-import { getCommittee, getCommitteeMembers, personName } from "@/lib/queries";
+import {
+  getCommittee,
+  getCommitteeMembers,
+  getCommitteeSessions,
+  personName,
+  type CommitteeSession,
+} from "@/lib/queries";
 import { govDuty } from "@/lib/gov-terms";
-import { localizeData, committeeLabel, queueDataTranslations } from "@/lib/i18n-data";
+import {
+  localizeData,
+  committeeLabel,
+  queueDataTranslations,
+  resolveLocalized,
+} from "@/lib/i18n-data";
+import { localizedAttrs } from "@/lib/text";
+import { formatDateTime } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
 
@@ -39,8 +52,64 @@ export default async function CommitteePage({
   const t = await getTranslations();
   const locale = await getLocale();
   const members = getCommitteeMembers(committeeId);
-  const cache = localizeData([committee.nameHe], locale);
-  if (locale !== "he") after(() => queueDataTranslations([committee.nameHe], locale));
+  const sessions = getCommitteeSessions(committeeId, new Date().toISOString());
+
+  // Localize the committee name + every session's Hebrew location/type on the fly.
+  const heStrings = [
+    committee.nameHe,
+    ...[...sessions.upcoming, ...sessions.recent].flatMap((s) => [s.location, s.typeDesc]),
+  ];
+  const cache = localizeData(heStrings, locale);
+  if (locale !== "he") after(() => queueDataTranslations(heStrings, locale));
+  const loc = (he: string | null) => resolveLocalized(cache, he);
+
+  const sessionList = (list: CommitteeSession[]) => (
+    <ul className="divide-y divide-black/5 rounded-xl bg-white shadow-sm">
+      {list.map((s) => {
+        const type = loc(s.typeDesc);
+        const place = loc(s.location);
+        return (
+          <li key={s.id} className="flex flex-wrap items-center gap-x-3 gap-y-1 px-4 py-3 text-sm">
+            <span className="whitespace-nowrap font-medium tabular-nums">
+              {formatDateTime(s.startDate!, locale)}
+            </span>
+            {type.text && (
+              <span className="rounded-full bg-black/5 px-2 py-0.5 text-xs text-muted" {...localizedAttrs(type)}>
+                {type.text}
+              </span>
+            )}
+            {place.text && (
+              <span className="min-w-0 flex-1 truncate text-muted" {...localizedAttrs(place)}>
+                {place.text}
+              </span>
+            )}
+            <span className="ms-auto flex gap-3">
+              {s.broadcastUrl && (
+                <a
+                  href={s.broadcastUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="whitespace-nowrap text-accent hover:underline"
+                >
+                  {t("committees.broadcast")}
+                </a>
+              )}
+              {s.sessionUrl && (
+                <a
+                  href={s.sessionUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="whitespace-nowrap text-accent hover:underline"
+                >
+                  {t("committees.agenda")}
+                </a>
+              )}
+            </span>
+          </li>
+        );
+      })}
+    </ul>
+  );
 
   return (
     <div className="space-y-6">
@@ -98,6 +167,32 @@ export default async function CommitteePage({
           </div>
         )}
       </section>
+
+      {(sessions.upcoming.length > 0 || sessions.recent.length > 0) && (
+        <section className="space-y-4">
+          <h2 className="text-xl font-semibold">
+            {t("committees.meetings")}
+            {sessions.total > 0 && (
+              <span className="ms-2 text-sm font-normal text-muted">
+                {t("committees.meetingCount", { count: sessions.total })}
+              </span>
+            )}
+          </h2>
+          {sessions.upcoming.length > 0 && (
+            <div className="space-y-2">
+              <h3 className="text-sm font-semibold text-muted">{t("committees.upcoming")}</h3>
+              {sessionList(sessions.upcoming)}
+            </div>
+          )}
+          {sessions.recent.length > 0 && (
+            <div className="space-y-2">
+              <h3 className="text-sm font-semibold text-muted">{t("committees.recent")}</h3>
+              {sessionList(sessions.recent)}
+            </div>
+          )}
+          <p className="text-xs text-muted">{t("committees.meetingsNote")}</p>
+        </section>
+      )}
     </div>
   );
 }

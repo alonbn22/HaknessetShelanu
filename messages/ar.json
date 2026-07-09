@@ -302,7 +302,14 @@
     "title": "لجان الكنيست",
     "members": "أعضاء اللجنة",
     "category": "الفئة",
-    "noMembers": "لا يوجد أعضاء"
+    "noMembers": "لا يوجد أعضاء",
+    "meetings": "جلسات اللجنة",
+    "meetingCount": "{count} جلسات إجمالاً",
+    "upcoming": "القادمة",
+    "recent": "الأخيرة",
+    "agenda": "جدول الأعمال",
+    "broadcast": "بث",
+    "meetingsNote": "المصدر: بيانات الكنيست المفتوحة (KNS_CommitteeSession). قد تتغيّر الجلسات المجدولة."
   },
   "lawbook": {
     "title": "كتاب قوانين إسرائيل",

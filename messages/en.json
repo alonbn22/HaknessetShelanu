@@ -302,7 +302,14 @@
     "title": "Knesset Committees",
     "members": "Committee members",
     "category": "Category",
-    "noMembers": "No members found"
+    "noMembers": "No members found",
+    "meetings": "Committee meetings",
+    "meetingCount": "{count} meetings in total",
+    "upcoming": "Upcoming",
+    "recent": "Recent",
+    "agenda": "Agenda",
+    "broadcast": "Broadcast",
+    "meetingsNote": "Source: Knesset Open Data (KNS_CommitteeSession). Scheduled meetings may change."
   },
   "lawbook": {
     "title": "Israel's Law Book",

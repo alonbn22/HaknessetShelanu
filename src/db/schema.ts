@@ -255,6 +255,28 @@ export const committees = sqliteTable("committees", {
   lastUpdated: text("last_updated"),
 });
 
+// Committee meetings (KNS_CommitteeSession) — past and future scheduled sittings.
+// Powers the per-committee meeting calendar. Indexed on committee_id for the
+// per-committee lookup; created IF NOT EXISTS by the sync so an un-pushed DB
+// self-heals on the next scheduled run.
+export const committeeSessions = sqliteTable(
+  "committee_sessions",
+  {
+    id: integer("id").primaryKey(),
+    committeeId: integer("committee_id"),
+    knessetNum: integer("knesset_num"),
+    startDate: text("start_date"),
+    finishDate: text("finish_date"),
+    typeDesc: text("type_desc"), // open / closed (Hebrew)
+    statusDesc: text("status_desc"), // active / cancelled (Hebrew)
+    location: text("location"),
+    sessionUrl: text("session_url"),
+    broadcastUrl: text("broadcast_url"),
+    lastUpdated: text("last_updated"),
+  },
+  (t) => [index("cmt_session_committee_idx").on(t.committeeId)],
+);
+
 // The active laws of Israel (KNS_IsraelLaw) — the consolidated law book.
 export const israelLaws = sqliteTable(
   "israel_laws",

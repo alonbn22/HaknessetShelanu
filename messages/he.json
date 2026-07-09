@@ -302,7 +302,14 @@
     "title": "ועדות הכנסת",
     "members": "חברי הוועדה",
     "category": "סוג",
-    "noMembers": "לא נמצאו חברים"
+    "noMembers": "לא נמצאו חברים",
+    "meetings": "ישיבות הוועדה",
+    "meetingCount": "{count} ישיבות בסך הכול",
+    "upcoming": "ישיבות קרובות",
+    "recent": "ישיבות אחרונות",
+    "agenda": "סדר יום",
+    "broadcast": "שידור",
+    "meetingsNote": "מקור: נתוני הכנסת הפתוחים (KNS_CommitteeSession). ישיבות עתידיות עשויות להשתנות."
   },
   "lawbook": {
     "title": "ספר החוקים של ישראל",

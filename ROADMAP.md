@@ -6,9 +6,11 @@ what data we could still surface.
 
 ## Next up (build queue)
 
-- [ ] **Committee meeting calendar** — the biggest untapped feature (P0 below):
-  sync `KNS_CommitteeSession` (+ items + protocol docs) and show per-committee
-  upcoming/past meetings with agendas and transcript links.
+- [ ] **Committee agendas + transcripts** — extend the shipped meeting calendar
+  with `KNS_CmtSessionItem` (what each meeting discussed) and
+  `KNS_DocumentCommitteeSession` (protocol/minutes links).
+- [ ] **Plenum sitting calendar** — the other half of the session layer
+  (`KNS_PlenumSession` + order paper + Divrei HaKnesset transcripts).
 - [ ] **Dark mode** — theme toggle over the existing CSS-variable token layer.
 - [ ] **Backfill checkpointing** — the first-ever `KNS_PlenumVoteResult`
   backfill restarts if interrupted (windows run concurrently, so mid-run
@@ -89,6 +91,9 @@ socio-economic indices by municipality (data.gov.il) for context.
 
 ## Done (recent)
 
+- **Committee meeting calendar** (`/committees/[id]`): all 10,753 current-Knesset
+  committee sittings (past + upcoming) with date, open/closed type, location, and
+  official agenda/broadcast links, from `KNS_CommitteeSession`.
 - **Full review pass**: search resilience (raw-query fallback + length caps),
   remap ambiguity guard, `votes(item_id)` index, CI integrity check before the
   bot commits, per-page metadata + OG on all five detail pages, sitemap +

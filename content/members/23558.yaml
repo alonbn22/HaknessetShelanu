@@ -1,6 +1,3 @@
-# PersonID 23558. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
 personId: 23558
 claims:
   - kind: positive
@@ -9,11 +6,8 @@ claims:
       he: יושב ראש הקואליציה בכנסת ה-20
       en: Chairman of the Coalition in the 20th Knesset
     description:
-      he: דוד ביטן, חבר כנסת מטעם הליכוד, מונה ביוני 2016 לתפקיד יושב ראש הקואליציה
-        בכנסת ה-20, תפקיד מרכזי בניהול הרוב הפרלמנטרי של הממשלה.
-      en: David Bitan, a Likud Member of Knesset, was appointed Chairman of the
-        Coalition in the 20th Knesset in May 2016, a central role in managing
-        the government's parliamentary majority.
+      he: דוד ביטן, חבר כנסת מטעם הליכוד, מונה ביוני 2016 לתפקיד יושב ראש הקואליציה בכנסת ה-20, תפקיד מרכזי בניהול הרוב הפרלמנטרי של הממשלה.
+      en: David Bitan, a Likud Member of Knesset, was appointed Chairman of the Coalition in the 20th Knesset in May 2016, a central role in managing the government's parliamentary majority.
     sources:
       - url: https://en.wikipedia.org/wiki/David_Bitan
         title: David Bitan
@@ -24,11 +18,8 @@ claims:
       he: יושב ראש ועדת העלייה והקליטה
       en: Chairman of the Immigration and Absorption Committee
     description:
-      he: ביטן מונה במאי 2020 ליושב ראש ועדת העלייה והקליטה בכנסת ה-23, ועדה העוסקת
-        במדיניות העלייה לישראל ובקליטת עולים.
-      en: Bitan was appointed in May 2020 as Chairman of the Immigration and
-        Absorption Committee in the 23rd Knesset, a committee dealing with
-        immigration to Israel and the integration of new immigrants.
+      he: ביטן מונה במאי 2020 ליושב ראש ועדת העלייה והקליטה בכנסת ה-23, ועדה העוסקת במדיניות העלייה לישראל ובקליטת עולים.
+      en: Bitan was appointed in May 2020 as Chairman of the Immigration and Absorption Committee in the 23rd Knesset, a committee dealing with immigration to Israel and the integration of new immigrants.
     sources:
       - url: https://en.wikipedia.org/wiki/David_Bitan
         title: David Bitan
@@ -42,13 +33,8 @@ claims:
       he: עורך דין ופעיל ציבור ברישון לציון
       en: Lawyer and local public servant in Rishon LeZion
     description:
-      he: ביטן, יליד מרוקו שעלה לישראל בגיל חמש, סיים תואר במשפטים באוניברסיטת תל אביב
-        בשנת 1987. הוא כיהן כחבר מועצת העיר רישון לציון משנת 1988 ולאחר מכן כסגן
-        ראש העיר, לפני שהושבע כחבר כנסת בשנת 2015.
-      en: Bitan, born in Morocco and immigrating to Israel at age five, earned a law
-        degree (LL.B) from Tel Aviv University in 1987. He served as a member of
-        the Rishon LeZion City Council from 1988 and later as Deputy Mayor,
-        before being sworn in as a Member of Knesset in 2015.
+      he: ביטן, יליד מרוקו שעלה לישראל בגיל חמש, סיים תואר במשפטים באוניברסיטת תל אביב בשנת 1987. הוא כיהן כחבר מועצת העיר רישון לציון משנת 1988 ולאחר מכן כסגן ראש העיר, לפני שהושבע כחבר כנסת בשנת 2015.
+      en: Bitan, born in Morocco and immigrating to Israel at age five, earned a law degree (LL.B) from Tel Aviv University in 1987. He served as a member of the Rishon LeZion City Council from 1988 and later as Deputy Mayor, before being sworn in as a Member of Knesset in 2015.
     sources:
       - url: https://en.wikipedia.org/wiki/David_Bitan
         title: David Bitan
@@ -58,35 +44,26 @@ claims:
         publisher: Wikidata
   - kind: negative
     category: investigation
-    status: ongoing
-    title:
-      he: כתב אישום בעבירות שוחד והליך משפטי מתמשך
-      en: Indictment on bribery charges and ongoing trial
-    description:
-      he: ביולי 2021 אישר היועץ המשפטי לממשלה הגשת כתב אישום נגד ביטן בגין שבעה
-        אישומים שכללו עבירות של שוחד, מרמה והפרת אמונים, הלבנת הון ועבירות מס,
-        בהיקף של כ-715,000 ש"ח, מהתקופה בה כיהן כסגן ראש עיריית רישון לציון
-        וכחבר כנסת. ביטן כופר בכל המיוחס לו. המשפט מתנהל בבית המשפט המחוזי בלוד,
-        ובספטמבר 2025 העיד ביטן לראשונה והכחיש כי קיבל שוחד. ההליך טרם הוכרע
-        וחזקת החפות עומדת לו.
-      en: In July 2021 Israel's Attorney-General approved an indictment against Bitan
-        on seven counts including bribery, fraud and breach of trust, money
-        laundering and tax offenses, totaling roughly NIS 715,000, relating to
-        his tenure as Deputy Mayor of Rishon LeZion and as a Member of Knesset.
-        Bitan denies all charges. The trial is being heard at the Lod District
-        Court, and in September 2025 he took the stand for the first time,
-        denying that he received bribes. The case has not been adjudicated and
-        he is presumed innocent.
+    status: indicted
     date: 2021-07-06
+    title:
+      he: כתב אישום בעבירות שוחד ומשפט מתנהל
+      en: Indictment on bribery charges and ongoing trial
+      ar: لائحة اتهام بجرائم رشوة ومحاكمة جارية
+      ru: Обвинительное заключение о взяточничестве и продолжающийся судебный процесс
+    description:
+      he: 'ב-6 ביולי 2021 הוגש נגד דוד ביטן כתב אישום בעבירות שוחד, מרמה, הפרת אמונים, הלבנת הון ועבירות מס בהיקף כולל של כ-715 אלף ש"ח, והמשפט מתנהל בבית המשפט המחוזי בלוד. בספטמבר 2025 החל ביטן להעיד להגנתו והכחיש את כל האישומים, באומרו: "מעולם לא ביקשתי ולא קיבלתי שוחד". נכון ליולי 2026 טרם ניתנה הכרעת דין.'
+      en: 'On July 6, 2021, an indictment was filed against David Bitan on charges of bribery, fraud, breach of trust, money laundering and tax offenses totaling approximately NIS 715,000, and the trial is being conducted at the Lod District Court. In September 2025 Bitan began testifying in his defense and denied all charges, stating: "I never asked for or received bribes in my life." As of July 2026, no verdict has been rendered.'
+      ar: في 6 يوليو 2021 قُدمت لائحة اتهام ضد ديفيد بيتان بتهم الرشوة والاحتيال وخيانة الأمانة وغسل الأموال ومخالفات ضريبية بمجموع نحو 715 ألف شيكل، وتجري المحاكمة في المحكمة المركزية في اللد. في سبتمبر 2025 بدأ بيتان الإدلاء بشهادته للدفاع عن نفسه ونفى جميع التهم. حتى يوليو 2026 لم يصدر حكم في القضية.
+      ru: 6 июля 2021 года против Давида Битана было выдвинуто обвинительное заключение по обвинениям во взяточничестве, мошенничестве, злоупотреблении доверием, отмывании денег и налоговых нарушениях на общую сумму около 715 тысяч шекелей; процесс проходит в окружном суде Лода. В сентябре 2025 года Битан начал давать показания в свою защиту и отверг все обвинения. По состоянию на июль 2026 года приговор не вынесен.
     sources:
       - url: https://en.wikipedia.org/wiki/David_Bitan
         title: David Bitan
         publisher: Wikipedia
       - url: https://www.haaretz.com/israel-news/2025-09-09/ty-article/.premium/likud-lawmaker-david-bitan-denies-bribery-in-first-court-testimony-after-four-years/00000199-2d8d-d7a2-a9bf-3d9ddeac0000
-        title: Likud Lawmaker David Bitan Denies Bribery in First Court Testimony After
-          Four Years
+        title: Likud Lawmaker David Bitan Denies Bribery in First Court Testimony After Four Years
         publisher: Haaretz
-      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/israels-a-g-files-indictment-against-ex-likud-chair-david-bitan-676241
-        title: Israel's Attorney-General files indictment against ex-Likud chair David
-          Bitan
-        publisher: The Jerusalem Post
+      - url: https://www.ynet.co.il/news/article/rkjesup5xg
+        title: 'דוד ביטן מעיד בפרשת השוחד: "טעיתי. לא רציתי שהפועל ראשון לציון תתפרק"'
+        publisher: Ynet
+lastReviewed: 2026-07-05

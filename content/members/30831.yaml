@@ -1,0 +1,75 @@
+# Eli Dallal (PersonID 30831). Researched + adversarially verified 2026-07-05.
+# Every claim cites >=1 reputable source (enforced by the content schema).
+personId: 30831
+lastReviewed: 2026-07-05
+claims:
+  - kind: positive
+    category: achievement
+    date: 2023-01-31
+    title:
+      he: יושב ראש הוועדה המיוחדת לזכויות הילד בכנסת ה-25
+      en: Chair of the Knesset Special Committee on the Rights of the Child
+      ar: رئيس اللجنة الخاصة لحقوق الطفل في الكنيست الخامس والعشرين
+      ru: Председатель специальной комиссии Кнессета по правам ребёнка
+    description:
+      he: ב-31 בינואר 2023 נבחר ח"כ אלי דלל פה אחד ליושב ראש הוועדה המיוחדת לזכויות הילד של הכנסת ה-25. לצד תפקיד זה הוא חבר בוועדת הכספים ובוועדה לקידום מעמד האישה ולשוויון מגדרי.
+      en: On 31 January 2023, MK Eli Dallal was elected unanimously as chair of the 25th Knesset's Special Committee on the Rights of the Child. He also serves as a member of the Finance Committee and the Committee on the Status of Women and Gender Equality.
+      ru: 31 января 2023 года депутат Эли Далаль был единогласно избран председателем специальной комиссии Кнессета 25-го созыва по правам ребёнка. Он также является членом финансовой комиссии и комиссии по улучшению статуса женщин и гендерному равенству.
+    sources:
+      - url: https://oknesset.org/meetings/2/1/2199263.html
+        title: בחירת יושב ראש הוועדה המיוחדת לזכויות הילד
+        publisher: Open Knesset (Knesset committee protocol)
+      - url: https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99_%D7%93%D7%9C%D7%9C
+        title: אלי דלל – ויקיפדיה
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: achievement
+    date: 2022-11
+    title:
+      he: 'קריירה מוניציפלית בנתניה: מנכ"ל העירייה, סגן וממלא מקום ראש העיר'
+      en: "Municipal career in Netanya: municipality CEO, deputy and acting mayor"
+      ar: "مسيرة بلدية في نتانيا: مدير عام البلدية ونائب رئيس البلدية والقائم بأعماله"
+      ru: "Муниципальная карьера в Нетании: гендиректор мэрии, заместитель и и.о. мэра"
+    description:
+      he: לפני היבחרו לכנסת ה-25 בבחירות 2022 (מקום 29 ברשימת הליכוד, לאחר שזכה במקום המחוזי בפריימריז) כיהן דלל כמנכ"ל עיריית נתניה והחברה לפיתוח נתניה החל מ-1999, ולאחר מכן כסגן וממלא מקום ראש העיר מרים פיירברג, עם אחריות לתחומי תחבורה, היערכות לחירום, אזורי תעשייה ופיתוח עסקי. ב-2008 היה שותף להקמת רשימה מקומית שזכתה בכשליש ממושבי מועצת העיר.
+      en: Before his election to the 25th Knesset in 2022 (29th on the Likud list, via the district slot he won in the party primaries), Dallal served from 1999 as CEO of the Netanya Municipality and the Netanya Development Company, and later as deputy and acting mayor under Miriam Feirberg, responsible for transportation, emergency preparedness, industrial zones and business development. In 2008 he co-founded a local party that won roughly a third of the city council seats.
+      ru: До избрания в Кнессет 25-го созыва в 2022 году (29-е место в списке «Ликуда») Далаль с 1999 года был гендиректором мэрии Нетании и городской компании развития, а затем заместителем и исполняющим обязанности мэра Мирьям Фейерберг, отвечая за транспорт, готовность к чрезвычайным ситуациям, промышленные зоны и развитие бизнеса.
+    sources:
+      - url: https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99_%D7%93%D7%9C%D7%9C
+        title: אלי דלל – ויקיפדיה
+        publisher: Wikipedia (Hebrew)
+      - url: https://en.wikipedia.org/wiki/Eli_Dellal
+        title: Eli Dellal - Wikipedia
+        publisher: Wikipedia (English)
+  - kind: negative
+    category: controversy
+    date: 2023-07
+    title:
+      he: משיכת הצעת החוק לפיצול סמכויות היועץ המשפטי לממשלה
+      en: Withdrawal of bill to split the attorney general's powers
+      ar: سحب مشروع قانون لتقسيم صلاحيات المستشار القضائي للحكومة
+      ru: Отзыв законопроекта о разделении полномочий юридического советника правительства
+    description:
+      he: ביולי 2023 הגיש דלל הצעת חוק להעברת סמכויות האכיפה הפלילית כלפי חברי ממשלה מהיועץ המשפטי לממשלה לפרקליט המדינה. לאחר ביקורת ציבורית, ולאחר שהליכוד הבהיר כי ההצעה לא תואמה עם ראשות הקואליציה ולא תקודם ללא אישורה, הודיע דלל על משיכת ההצעה, ומסר כי הדבר נעשה בהיעדר כוונה לקדם את החוק בכנסת הנוכחית ו"מתוך רצון אמיתי וכן לשיח, פשרות והסכמות" עם חברי האופוזיציה.
+      en: In July 2023, Dallal submitted a bill to transfer criminal-enforcement powers over government members from the attorney general to the state prosecutor. Following public criticism, and after Likud stated the bill had not been coordinated with the coalition leadership and would not advance without its approval, Dallal announced he was withdrawing it, saying he did not intend to advance the law in the current Knesset and citing "a genuine desire for dialogue, compromises and agreements" with opposition colleagues.
+      ru: В июле 2023 года Далаль внёс законопроект о передаче полномочий уголовного преследования членов правительства от юридического советника правительства государственному прокурору. После публичной критики и заявления «Ликуда», что законопроект не был согласован с руководством коалиции, Далаль объявил об отзыве инициативы, сославшись на стремление к диалогу и договорённостям с оппозицией.
+    sources:
+      - url: https://www.calcalist.co.il/local_news/article/rkdw11exin
+        title: 'בעקבות הביקורת: ח"כ דלל משך ההצעה לפיצול תפקיד היועמ"ש'
+        publisher: Calcalist
+  - kind: negative
+    category: controversy
+    date: 2024-12
+    title:
+      he: ביקורת על הצעת חוק לסגן ראש עיר נוסף בשכר
+      en: Criticism over bill enabling an additional salaried deputy mayor
+      ar: انتقادات لمشروع قانون يتيح نائب رئيس بلدية إضافي بأجر
+      ru: Критика законопроекта о дополнительном оплачиваемом заместителе мэра
+    description:
+      he: דלל קידם הצעת חוק פרטית שתאפשר לרשויות מקומיות שבהן 100–150 אלף תושבים למנות סגן ראש עיר נוסף בשכר; בדצמבר 2024 אישרה ועדת הפנים של הכנסת את ההצעה לקריאה שנייה. דה-מרקר דיווח כי ההצעה תיטיב בפועל עם נתניה, עירו של דלל — שהצהיר על כוונתו להתמודד על ראשות העיר — בעלות של מאות אלפי שקלים בשנה, והעלה טענות לניגוד עניינים. בכתבה לא הובאה תגובה מטעם דלל.
+      en: Dallal advanced a private bill allowing municipalities with 100,000–150,000 residents to appoint an additional salaried deputy mayor; in December 2024 the Knesset Interior Committee approved it for its second reading. TheMarker reported that the bill would in practice benefit Netanya — Dallal's home city, where he had declared his intention to run for mayor — at a cost of hundreds of thousands of shekels a year, and raised conflict-of-interest concerns. The report did not include a response from Dallal.
+      ru: Далаль продвигал частный законопроект, позволяющий городам со 100–150 тыс. жителей назначать дополнительного оплачиваемого заместителя мэра; в декабре 2024 года комиссия Кнессета по внутренним делам одобрила его ко второму чтению. Газета TheMarker сообщила, что закон фактически выгоден Нетании — родному городу Далаля, где он заявил о намерении баллотироваться в мэры, — и указала на вопросы конфликта интересов. Ответ Далаля в публикации не приводился.
+    sources:
+      - url: https://www.themarker.com/allnews/2024-12-10/ty-article/.premium/00000193-afc7-d7c9-afdf-ffcff2130000
+        title: 'הצעת החוק של ח"כ אלי דלל: סגן נוסף בשכר לראשי עיריות — דווקא בנתניה, שממנה הוא מגיע'
+        publisher: TheMarker

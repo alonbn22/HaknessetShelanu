@@ -1,6 +1,3 @@
-# PersonID 12951. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
 personId: 12951
 claims:
   - kind: positive
@@ -9,14 +6,8 @@ claims:
       he: כהונה ארוכת שנים בכנסת, יו"ר הכנסת ושורת תפקידי שר
       en: Long parliamentary career, Knesset Speaker and multiple ministerial posts
     description:
-      he: יריב לוין מכהן כחבר הכנסת מטעם הליכוד מאז 2009. הוא שימש יושב ראש הכנסת
-        (2020-2021 ושוב בדצמבר 2022), שר התיירות, השר לביטחון פנים ושר העלייה
-        והקליטה בפועל, ומאז 2022 מכהן כסגן ראש הממשלה ושר המשפטים.
-      en: Yariv Levin has served as a Likud member of the Knesset since 2009. He held
-        the office of Speaker of the Knesset (2020-2021 and again in December
-        2022), and served as Minister of Tourism, Minister of Public Security
-        and acting Minister of Aliyah and Integration. Since 2022 he has served
-        as Deputy Prime Minister and Minister of Justice.
+      he: יריב לוין מכהן כחבר הכנסת מטעם הליכוד מאז 2009. הוא שימש יושב ראש הכנסת (2020-2021 ושוב בדצמבר 2022), שר התיירות, השר לביטחון פנים ושר העלייה והקליטה בפועל, ומאז 2022 מכהן כסגן ראש הממשלה ושר המשפטים.
+      en: Yariv Levin has served as a Likud member of the Knesset since 2009. He held the office of Speaker of the Knesset (2020-2021 and again in December 2022), and served as Minister of Tourism, Minister of Public Security and acting Minister of Aliyah and Integration. Since 2022 he has served as Deputy Prime Minister and Minister of Justice.
     date: 2009-02-24
     sources:
       - url: https://en.wikipedia.org/wiki/Yariv_Levin
@@ -31,12 +22,8 @@ claims:
       he: שירות צבאי בחיל המודיעין כמתרגם ערבית
       en: Military service in the Intelligence Corps as an Arabic translator
     description:
-      he: לוין שירת בצבא ההגנה לישראל בחיל המודיעין כמתרגם מערבית ובהמשך כמפקד קורס
-        תרגום ערבית. בשנת 1995 פרסם מילון מונחים כלכליים בעברית, ערבית ואנגלית.
-      en: Levin served in the Israel Defense Forces' Intelligence Corps as an Arabic
-        translator and later as commander of an Arabic translation course. In
-        1995 he published a dictionary of economic terms in Hebrew, Arabic and
-        English.
+      he: לוין שירת בצבא ההגנה לישראל בחיל המודיעין כמתרגם מערבית ובהמשך כמפקד קורס תרגום ערבית. בשנת 1995 פרסם מילון מונחים כלכליים בעברית, ערבית ואנגלית.
+      en: Levin served in the Israel Defense Forces' Intelligence Corps as an Arabic translator and later as commander of an Arabic translation course. In 1995 he published a dictionary of economic terms in Hebrew, Arabic and English.
     sources:
       - url: https://en.wikipedia.org/wiki/Yariv_Levin
         title: Yariv Levin
@@ -50,13 +37,8 @@ claims:
       he: תפקידי הנהגה בלשכת עורכי הדין בישראל
       en: Leadership roles in the Israel Bar Association
     description:
-      he: לפני כניסתו לפוליטיקה עסק לוין במשפט אזרחי-מסחרי. הוא היה ממקימי סיעת עורכי
-        הדין הצעירים החדשה ונבחר לסגן יושב ראש לשכת עורכי הדין בישראל, תפקיד בו
-        כיהן בשנים 2003-2005.
-      en: Before entering politics, Levin practiced civil-commercial law. He
-        co-founded the New Young Lawyers Faction and was elected Deputy Chairman
-        (Vice Chairman) of the Israel Bar Association, a role he held in
-        2003-2005.
+      he: לפני כניסתו לפוליטיקה עסק לוין במשפט אזרחי-מסחרי. הוא היה ממקימי סיעת עורכי הדין הצעירים החדשה ונבחר לסגן יושב ראש לשכת עורכי הדין בישראל, תפקיד בו כיהן בשנים 2003-2005.
+      en: Before entering politics, Levin practiced civil-commercial law. He co-founded the New Young Lawyers Faction and was elected Deputy Chairman (Vice Chairman) of the Israel Bar Association, a role he held in 2003-2005.
     sources:
       - url: https://en.wikipedia.org/wiki/Yariv_Levin
         title: Yariv Levin
@@ -67,27 +49,26 @@ claims:
   - kind: negative
     category: controversy
     status: ongoing
-    title:
-      he: יוזם הרפורמה המשפטית השנויה במחלוקת של 2023
-      en: Architect of the controversial 2023 judicial reform
-    description:
-      he: ב-4 בינואר 2023, בתפקידו כשר המשפטים, הציג לוין תכנית לשינוי מערכת המשפט
-        בישראל, שכללה בין היתר שינוי הרכב הוועדה לבחירת שופטים, הגבלת הביקורת
-        השיפוטית של בית המשפט העליון וסעיף התגברות. התכנית עוררה מחלוקת ציבורית
-        נרחבת והפגנות המוניות ברחבי הארץ. מדובר בפעולת מדיניות פומבית ולא בהליך
-        פלילי; לא הוגש נגד לוין כתב אישום ולא הורשע בפלילים בהקשר זה.
-      en: On 4 January 2023, in his capacity as Minister of Justice, Levin presented a
-        plan to overhaul Israel's judicial system, including changing the
-        composition of the Judicial Selection Committee, limiting the Supreme
-        Court's judicial review, and an override clause. The plan sparked
-        widespread public controversy and large-scale nationwide protests. This
-        refers to a public policy action, not a criminal proceeding; Levin has
-        not been indicted or convicted in connection with it.
     date: 2023-01-04
+    title:
+      he: אדריכל הרפורמה המשפטית של 2023
+      en: Architect of the 2023 judicial reform
+      ar: مهندس الإصلاح القضائي لعام 2023
+      ru: Архитектор судебной реформы 2023 года
+    description:
+      he: בינואר 2023, כשר המשפטים, הציג לוין תוכנית מקיפה לשינוי מערכת המשפט שעוררה מחאות נרחבות; בינואר 2024 פסל בית המשפט העליון את תיקון עילת הסבירות שנחקק במסגרתה. במרץ 2025 אישרה הכנסת את התיקון שקידם לשינוי הרכב הוועדה לבחירת שופטים, שייכנס לתוקף עם כינון הכנסת הבאה. ביוני 2026 הורה בג"ץ ללוין לכנס את הוועדה לבחירת שופטים וקבע פה אחד כי עליו לשתף פעולה עם נשיא בית המשפט העליון יצחק עמית, שבמינויו סירב לוין להכיר; בהמשך אותו חודש התכנסה הוועדה ובחרה 68 בעלי תפקידים שיפוטיים לאחר הקפאה של כשנה וחצי.
+      en: In January 2023, as Justice Minister, Levin announced a sweeping program to change Israel's judicial system, prompting widespread protests; in January 2024 the Supreme Court struck down the reasonableness amendment enacted under it. In March 2025 the Knesset passed his amendment changing the composition of the Judicial Selection Committee, set to take effect when the next Knesset convenes. In June 2026 the High Court of Justice ordered Levin to convene the Judicial Selection Committee and ruled unanimously that he must cooperate with Supreme Court President Isaac Amit, whose appointment Levin had declined to recognize; later that month the committee convened and selected 68 judicial officials after a freeze of about a year and a half.
     sources:
       - url: https://en.wikipedia.org/wiki/2023_Israeli_judicial_reform
         title: 2023 Israeli judicial reform
         publisher: Wikipedia
-      - url: https://en.wikipedia.org/wiki/Yariv_Levin
-        title: Yariv Levin
-        publisher: Wikipedia
+      - url: https://www.timesofisrael.com/in-scathing-rebuke-high-court-rules-levin-must-cooperate-with-court-president-amit/
+        title: In scathing rebuke, High Court rules Levin must cooperate with Court President Amit
+        publisher: The Times of Israel
+      - url: https://www.jpost.com/israel-news/article-898628
+        title: High Court rules that Justice Minister Yariv Levin must cooperate with Court President Amit
+        publisher: The Jerusalem Post
+      - url: https://www.jpost.com/israel-news/article-900747
+        title: Judicial Selection Committee selects 68 officials for court system after year-and-a-half freeze
+        publisher: The Jerusalem Post
+lastReviewed: 2026-07-05

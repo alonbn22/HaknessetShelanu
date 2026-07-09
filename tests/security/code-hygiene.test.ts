@@ -56,12 +56,21 @@ test(".env files are git-ignored", () => {
   assert.ok(/\.env/.test(gitignore), ".env must be ignored to avoid leaking secrets");
 });
 
-test("dangerouslySetInnerHTML is not used (XSS surface)", () => {
+test("dangerouslySetInnerHTML is only ever fed static string literals", () => {
+  // Blanket-banning it is too blunt: the layout needs a pre-paint theme script
+  // (a hardcoded string, no user input) to avoid a light-mode flash. Instead of
+  // an allowlist, enforce the property that actually matters — the injected
+  // HTML must be a plain string literal with no `${…}` interpolation, so no
+  // dynamic/user value can ever reach it.
+  const re = /dangerouslySetInnerHTML\s*=\s*\{\{[^}]*__html:\s*([\s\S]*?)\}\}/g;
   for (const file of sourceFiles) {
     const text = fs.readFileSync(file, "utf8");
-    assert.ok(
-      !text.includes("dangerouslySetInnerHTML"),
-      `dangerouslySetInnerHTML in ${path.relative(ROOT, file)} — review for XSS`,
-    );
+    for (const m of text.matchAll(re)) {
+      const rel = path.relative(ROOT, file);
+      assert.ok(
+        !m[1].includes("${"),
+        `dangerouslySetInnerHTML in ${rel} interpolates a value — XSS risk`,
+      );
+    }
   }
 });

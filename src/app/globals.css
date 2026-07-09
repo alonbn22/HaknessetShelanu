@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+/* Class-based dark mode: the `dark:` variant activates under html.dark, which a
+   pre-paint inline script (in the layout) toggles from the saved theme or the OS
+   preference. Used only for the toggle's icon swap — page colours are themed via
+   the token remap + utility overrides in the "Dark mode" block below. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #f8f7f4;
   --foreground: #1a1a1a;
@@ -40,6 +46,80 @@ body {
   background: var(--accent);
   color: #fff;
 }
+
+/* ---------- Dark mode ---------- */
+/* Retrofit theme: remap the semantic tokens, then override the fixed light
+   utilities the components hardcode (bg-white, black/white overlays, and the
+   fixed status-badge tints) — so no component markup changes. High-contrast
+   a11y mode uses !important and therefore still wins over all of this. */
+html.dark {
+  --background: #14181e;
+  --foreground: #e7e9ec;
+  --muted: #9aa2ad; /* ~6:1 on --background — AA */
+  /* --accent stays a surface blue that keeps white text readable (header,
+     buttons); links use the lighter --accent-sky via the override below. */
+  --accent: #2a63bd;
+  --accent-deep: #1e4a92;
+  --accent-sky: #6aa8f5;
+  --coalition: #4a86d8;
+  --opposition: #e28a7a;
+  color-scheme: dark;
+}
+
+/* Surfaces + neutral overlays */
+html.dark .bg-white { background-color: #1b212b; }
+html.dark .bg-black\/2 { background-color: rgba(255, 255, 255, 0.03); }
+html.dark .bg-black\/3 { background-color: rgba(255, 255, 255, 0.04); }
+html.dark .bg-black\/5 { background-color: rgba(255, 255, 255, 0.06); }
+html.dark .bg-black\/10 { background-color: rgba(255, 255, 255, 0.09); }
+html.dark .border-black\/5 { border-color: rgba(255, 255, 255, 0.07); }
+html.dark .border-black\/10 { border-color: rgba(255, 255, 255, 0.1); }
+html.dark .border-black\/15 { border-color: rgba(255, 255, 255, 0.14); }
+html.dark .text-black\/70 { color: rgba(255, 255, 255, 0.72); }
+html.dark .text-black\/30 { color: rgba(255, 255, 255, 0.34); }
+html.dark .divide-black\/5 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgba(255, 255, 255, 0.07);
+}
+/* Links: the surface --accent is too dark to read on the dark bg. */
+html.dark .text-accent { color: var(--accent-sky); }
+html.dark .hover\:text-accent:hover { color: #93c0fa; }
+/* Cards get a faint hairline since shadows don't read on dark. */
+html.dark .shadow-sm { box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06); }
+html.dark .shadow-md { box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.06); }
+
+/* Status/tint palette: translucent fills + lightened text so the green/red/
+   amber semantics survive on the dark surface. */
+html.dark .bg-green-50 { background-color: rgba(34, 197, 94, 0.12); }
+html.dark .bg-green-100 { background-color: rgba(34, 197, 94, 0.16); }
+html.dark .bg-green-200 { background-color: rgba(34, 197, 94, 0.24); }
+html.dark .bg-red-50 { background-color: rgba(239, 68, 68, 0.12); }
+html.dark .bg-red-100 { background-color: rgba(239, 68, 68, 0.16); }
+html.dark .bg-red-200 { background-color: rgba(239, 68, 68, 0.24); }
+html.dark .bg-amber-50 { background-color: rgba(245, 158, 11, 0.12); }
+html.dark .bg-amber-100 { background-color: rgba(245, 158, 11, 0.18); }
+html.dark .bg-yellow-50 { background-color: rgba(234, 179, 8, 0.12); }
+html.dark .bg-yellow-100 { background-color: rgba(234, 179, 8, 0.18); }
+html.dark .bg-blue-100 { background-color: rgba(59, 130, 246, 0.18); }
+html.dark .bg-sky-100 { background-color: rgba(14, 165, 233, 0.18); }
+html.dark .bg-orange-100 { background-color: rgba(249, 115, 22, 0.18); }
+html.dark .bg-gray-100 { background-color: rgba(255, 255, 255, 0.08); }
+html.dark .text-green-700 { color: #5edb96; }
+html.dark .text-green-800 { color: #6fe3a3; }
+html.dark .text-green-900 { color: #8bedb6; }
+html.dark .text-red-700 { color: #f2998f; }
+html.dark .text-red-800 { color: #f2998f; }
+html.dark .text-red-900 { color: #f6b3ab; }
+html.dark .text-amber-800 { color: #fcd34d; }
+html.dark .text-amber-900 { color: #fcd34d; }
+html.dark .text-yellow-700 { color: #fde047; }
+html.dark .text-yellow-800 { color: #fde047; }
+html.dark .text-blue-800 { color: #93b8f5; }
+html.dark .text-sky-800 { color: #7dd3fc; }
+html.dark .text-orange-800 { color: #fdba74; }
+html.dark .text-gray-700 { color: #cbd0d8; }
+html.dark .border-green-200 { border-color: rgba(34, 197, 94, 0.32); }
+html.dark .border-red-200 { border-color: rgba(239, 68, 68, 0.32); }
+html.dark .border-amber-200 { border-color: rgba(245, 158, 11, 0.32); }
 
 /* Flag-filled wordmark logo: fills the Hebrew letters with the Israeli-flag
    texture, with a thin white stroke to stay crisp on the blue header. */

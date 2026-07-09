@@ -56,6 +56,15 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} dir={dir} className={`${heebo.variable} h-full antialiased`}>
+      <head>
+        {/* Set the theme class before paint to avoid a light-mode flash. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "(function(){try{var t=localStorage.getItem('theme');var d=t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches);document.documentElement.classList.toggle('dark',d);}catch(e){}})();",
+          }}
+        />
+      </head>
       <body className="min-h-screen flex flex-col">
         <NextIntlClientProvider>
           <a href="#main-content" className="skip-link">

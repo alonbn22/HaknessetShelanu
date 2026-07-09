@@ -586,5 +586,8 @@
     "bill": "The legislative journey, sponsors, and documents of {title}",
     "party": "{name}: seats, members, positions, and voting patterns in the Knesset",
     "committee": "{name}: committee members and their roles in the Knesset"
+  },
+  "theme": {
+    "toggle": "Toggle dark mode"
   }
 }

@@ -4,6 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { NavLinks } from "./NavLinks";
 import { MobileNav } from "./MobileNav";
+import { ThemeToggle } from "./ThemeToggle";
 import { SearchIcon } from "./icons/SearchIcon";
 
 export function Header() {
@@ -34,6 +35,7 @@ export function Header() {
           >
             <SearchIcon size={20} />
           </Link>
+          <ThemeToggle />
           <MobileNav />
           {/* useSearchParams inside → needs a Suspense boundary for static prerender */}
           <Suspense fallback={null}>

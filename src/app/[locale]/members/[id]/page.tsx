@@ -34,7 +34,7 @@ import {
   committeeLabel,
   resolveLocalized,
 } from "@/lib/i18n-data";
-import { localizedAttrs } from "@/lib/text";
+import { localizedAttrs, rtlAttrs } from "@/lib/text";
 import { POSITION_FACTION_MEMBER, MK_POSITION_IDS, CURRENT_KNESSET } from "@/lib/constants";
 import { after } from "next/server";
 
@@ -181,7 +181,9 @@ export default async function MemberPage({
       <section className="flex flex-wrap items-center gap-6 rounded-xl bg-white p-6 shadow-sm">
         <MemberAvatar person={member} size={112} alt={personName(member, locale)} />
         <div className="space-y-1 min-w-0">
-          <h1 className="text-3xl font-bold">{personName(member, locale)}</h1>
+          <h1 className="text-3xl font-bold" {...rtlAttrs(personName(member, locale))}>
+            {personName(member, locale)}
+          </h1>
           {locale !== "he" && (
             <div className="text-muted" dir="rtl" lang="he">
               {member.firstNameHe} {member.lastNameHe}
@@ -404,7 +406,7 @@ export default async function MemberPage({
                             className="flex items-center gap-2 rounded-lg px-2 py-1.5 text-sm hover:bg-black/[.03]"
                           >
                             <MemberAvatar person={a.person} size={28} alt={personName(a.person, locale)} />
-                            <span className="min-w-0 flex-1 truncate">
+                            <span className="min-w-0 flex-1 truncate" {...rtlAttrs(personName(a.person, locale))}>
                               {personName(a.person, locale)}
                             </span>
                             <span className="font-bold tabular-nums text-accent">{a.pct}%</span>

@@ -304,14 +304,14 @@
     "category": "סוג",
     "noMembers": "לא נמצאו חברים",
     "meetings": "ישיבות הוועדה",
-    "meetingCount": "{count} ישיבות בסך הכול",
+    "meetingCount": "{count, plural, one {ישיבה אחת בסך הכול} other {# ישיבות בסך הכול}}",
     "upcoming": "ישיבות קרובות",
     "recent": "ישיבות אחרונות",
     "agenda": "סדר יום",
     "broadcast": "שידור",
     "meetingsNote": "מקור: נתוני הכנסת הפתוחים (KNS_CommitteeSession, KNS_CmtSessionItem, KNS_DocumentCommitteeSession). ישיבות עתידיות עשויות להשתנות; פרוטוקולים מתפרסמים לאחר הישיבה.",
     "agendaItems": "על סדר היום",
-    "agendaCount": "{count} נושאים",
+    "agendaCount": "{count, plural, one {נושא אחד} other {# נושאים}}",
     "documents": "מסמכים",
     "document": "מסמך"
   },
@@ -592,6 +592,8 @@
     "committee": "{name}: חברי הוועדה ותפקידיהם בכנסת"
   },
   "theme": {
-    "toggle": "החלפת מצב כהה"
+    "toggle": "החלפת מצב כהה",
+    "switchToDark": "מעבר למצב כהה",
+    "switchToLight": "מעבר למצב בהיר"
   }
 }

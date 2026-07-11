@@ -1,6 +1,7 @@
 import { getTranslations, getLocale } from "next-intl/server";
 import { AttendanceList, type AttendanceListRow } from "./AttendanceList";
 import { getAttendanceTable, personName, factionName } from "@/lib/queries";
+import { isHebrew } from "@/lib/text";
 
 export const dynamic = "force-dynamic";
 
@@ -12,6 +13,7 @@ export default async function AttendancePage() {
   const listRows: AttendanceListRow[] = rows.map((r) => ({
     id: r.personId,
     name: personName(r.person, locale),
+    nameRtl: isHebrew(personName(r.person, locale)),
     faction:
       r.factionId != null ? factionName(r.factionId, r.factionNameHe ?? "", locale) : "",
     participationPct: r.participationPct,

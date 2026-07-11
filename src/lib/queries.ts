@@ -1,6 +1,7 @@
 import { cache } from "react";
 import { and, asc, desc, eq, inArray, or, sql, type SQL, type AnyColumn } from "drizzle-orm";
 import { getDb, schema } from "@/db";
+import { isHebrew } from "./text";
 import { getCoalitionConfig, getFactionMeta } from "./content";
 import {
   CURRENT_KNESSET,
@@ -1640,13 +1641,15 @@ export function getFactionAvgParticipation(factionId: number): number | null {
 // ---------- global search ----------
 
 export type SearchResults = {
-  members: { id: number; name: string; sub: string | null }[];
-  parties: { id: number; name: string }[];
+  // rtl: the name fell back to Hebrew (untranslated proper noun) and needs
+  // dir="rtl" lang="he" when rendered in an LTR locale.
+  members: { id: number; name: string; rtl: boolean; sub: string | null }[];
+  parties: { id: number; name: string; rtl: boolean }[];
   votes: { id: number; titleHe: string | null }[];
   laws: { id: number; nameHe: string | null }[];
   bills: { id: number; nameHe: string | null }[];
   committees: { id: number; nameHe: string | null }[];
-  lobbyists: { id: number; name: string }[];
+  lobbyists: { id: number; name: string; rtl: boolean }[];
   // Groups that hit SEARCH_LIMIT (more rows exist) — the page shows a
   // "showing top N, refine your search" hint for these.
   hasMore: Partial<Record<keyof Omit<SearchResults, "hasMore">, boolean>>;
@@ -1751,9 +1754,11 @@ export function searchAll(query: string, searchHe: string, locale: string): Sear
   const facMap = getLatestFactionMap(memberRows.map((p) => p.id));
   const members = memberRows.map((p) => {
     const f = facMap.get(p.id);
+    const name = personName(p, locale);
     return {
       id: p.id,
-      name: personName(p, locale),
+      name,
+      rtl: isHebrew(name),
       sub: f ? factionName(f.id, f.nameHe ?? "", locale) : null,
     };
   });
@@ -1777,7 +1782,10 @@ export function searchAll(query: string, searchHe: string, locale: string): Sear
       )
       .limit(OVER)
       .all(),
-  ).map((f) => ({ id: f.id, name: factionName(f.id, f.nameHe, locale) }));
+  ).map((f) => {
+    const name = factionName(f.id, f.nameHe, locale);
+    return { id: f.id, name, rtl: isHebrew(name) };
+  });
 
   const votes = cap(
     "votes",
@@ -1836,7 +1844,10 @@ export function searchAll(query: string, searchHe: string, locale: string): Sear
       .where(likeHe(schema.lobbyists.fullName))
       .limit(OVER)
       .all(),
-  ).map((l) => ({ id: l.id, name: l.name ?? "" }));
+  ).map((l) => {
+    const name = l.name ?? "";
+    return { id: l.id, name, rtl: isHebrew(name) };
+  });
 
   return { members, parties, votes, laws, bills, committees, lobbyists, hasMore };
 }

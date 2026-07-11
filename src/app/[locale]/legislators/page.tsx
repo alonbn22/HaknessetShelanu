@@ -2,6 +2,7 @@ import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { MemberAvatar } from "@/components/MemberCard";
 import { getMostActiveLegislators, personName, factionName } from "@/lib/queries";
+import { rtlAttrs } from "@/lib/text";
 
 export const dynamic = "force-dynamic";
 
@@ -28,7 +29,9 @@ export default async function LegislatorsPage() {
               <span className="w-6 text-center text-muted">{i + 1}</span>
               <MemberAvatar person={r.person} size={40} />
               <div className="min-w-0 flex-1">
-                <div className="font-semibold truncate">{personName(r.person, locale)}</div>
+                <div className="font-semibold truncate" {...rtlAttrs(personName(r.person, locale))}>
+                  {personName(r.person, locale)}
+                </div>
                 {r.factionId != null && (
                   <div className="text-sm text-muted truncate">
                     {factionName(r.factionId, r.factionNameHe ?? "", locale)}

@@ -67,13 +67,13 @@ export default async function SearchPage({
       key: "members",
       heading: t("nav.members"),
       more: r.hasMore.members,
-      items: r.members.map((m) => ({ href: `/members/${m.id}`, label: m.name, sub: m.sub })),
+      items: r.members.map((m) => ({ href: `/members/${m.id}`, label: m.name, sub: m.sub, rtl: m.rtl })),
     },
     {
       key: "parties",
       heading: t("nav.parties"),
       more: r.hasMore.parties,
-      items: r.parties.map((p) => ({ href: `/parties/${p.id}`, label: p.name })),
+      items: r.parties.map((p) => ({ href: `/parties/${p.id}`, label: p.name, rtl: p.rtl })),
     },
     {
       key: "votes",
@@ -118,7 +118,7 @@ export default async function SearchPage({
       items: r.lobbyists.map((l) => ({
         href: `/lobbyists?q=${encodeURIComponent(l.name)}`,
         label: l.name,
-        rtl: true,
+        rtl: l.rtl,
       })),
     },
     {

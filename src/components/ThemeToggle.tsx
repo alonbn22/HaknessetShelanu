@@ -1,6 +1,18 @@
 "use client";
 
+import { useSyncExternalStore } from "react";
 import { useTranslations } from "next-intl";
+
+// Subscribe to html.dark itself (via a MutationObserver) so aria-pressed always
+// reflects the real theme — including the pre-paint script's result and any change
+// from elsewhere — with no setState-in-effect. getServerSnapshot returns false on
+// the server; React reconciles the real value on hydration without a mismatch.
+function subscribeTheme(onChange: () => void) {
+  const obs = new MutationObserver(onChange);
+  obs.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+  return () => obs.disconnect();
+}
+const isDarkNow = () => document.documentElement.classList.contains("dark");
 
 // Flips html.dark and persists the choice. The pre-paint script in the layout
 // applies the saved/OS theme before first paint; this only toggles it. The icon
@@ -8,22 +20,27 @@ import { useTranslations } from "next-intl";
 // there is no server/client hydration mismatch.
 export function ThemeToggle() {
   const t = useTranslations("theme");
+  const isDark = useSyncExternalStore(subscribeTheme, isDarkNow, () => false);
 
   const toggle = () => {
-    const isDark = document.documentElement.classList.toggle("dark");
+    const next = document.documentElement.classList.toggle("dark");
+    // The MutationObserver above re-renders with the new state.
     try {
-      localStorage.setItem("theme", isDark ? "dark" : "light");
+      localStorage.setItem("theme", next ? "dark" : "light");
     } catch {
       /* storage unavailable — the class still flips for this session */
     }
   };
 
+  const label = isDark ? t("switchToLight") : t("switchToDark");
+
   return (
     <button
       type="button"
       onClick={toggle}
-      aria-label={t("toggle")}
-      title={t("toggle")}
+      aria-pressed={isDark}
+      aria-label={label}
+      title={label}
       className="inline-flex h-10 w-10 items-center justify-center rounded-lg hover:bg-white/10"
     >
       {/* Moon in light mode (→ dark); sun in dark mode (→ light). */}

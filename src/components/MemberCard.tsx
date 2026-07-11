@@ -3,6 +3,7 @@ import { Link } from "@/i18n/navigation";
 import { personName, factionName, type MemberListItem } from "@/lib/queries";
 import { formatDate } from "@/lib/format";
 import { govMinistry } from "@/lib/gov-terms";
+import { rtlAttrs } from "@/lib/text";
 import { MemberAvatar } from "./MemberAvatar";
 
 // Re-exported so existing server-side imports of MemberAvatar via MemberCard keep working.
@@ -26,7 +27,9 @@ export function MemberCard({
       <MemberAvatar person={member} alt={personName(member, locale)} />
       <div className="min-w-0 flex-1">
         <div className="flex items-center gap-2">
-          <span className="font-semibold truncate">{personName(member, locale)}</span>
+          <span className="font-semibold truncate" {...rtlAttrs(personName(member, locale))}>
+            {personName(member, locale)}
+          </span>
           {!member.isSitting && member.ministryHe && (
             <span className="shrink-0 rounded-full bg-accent/15 text-accent px-2 py-0.5 text-[11px] font-medium">
               {t("minister")}

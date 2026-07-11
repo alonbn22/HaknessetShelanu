@@ -100,7 +100,7 @@ const partyProfileSchema = z.object({
   tags: z.array(z.string()).optional(),
   summary: localizedText,
   positions: localizedList.optional(),
-  // Ballot-slip letters (אות הפתק) assigned per election list.
+  // Ballot-slip letters assigned per election list.
   ballotLetters: z.string().optional(),
   ballotNote: localizedText.optional(),
 });

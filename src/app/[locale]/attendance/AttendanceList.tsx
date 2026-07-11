@@ -9,6 +9,7 @@ import type { Person } from "@/lib/queries";
 export type AttendanceListRow = {
   id: number;
   name: string;
+  nameRtl: boolean; // Hebrew fallback name (no localized name) → dir=rtl
   faction: string;
   participationPct: number;
   missed: number;
@@ -80,7 +81,13 @@ export function AttendanceList({
                       className="flex items-center gap-2 hover:underline"
                     >
                       <MemberAvatar person={r.person} size={28} />
-                      <span className="truncate">{r.name}</span>
+                      <span
+                        className="truncate"
+                        dir={r.nameRtl ? "rtl" : undefined}
+                        lang={r.nameRtl ? "he" : undefined}
+                      >
+                        {r.name}
+                      </span>
                     </Link>
                   </td>
                   <td className="px-3 py-2 hidden sm:table-cell text-muted truncate">

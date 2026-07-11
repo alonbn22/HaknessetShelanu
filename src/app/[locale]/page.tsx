@@ -19,7 +19,7 @@ import {
 } from "@/lib/queries";
 import { localizeData, queueDataTranslations } from "@/lib/i18n-data";
 import { getControversialLaws, partyText } from "@/lib/content";
-import { isHebrew } from "@/lib/text";
+import { isHebrew, rtlAttrs } from "@/lib/text";
 
 export const dynamic = "force-dynamic";
 
@@ -234,7 +234,7 @@ export default async function HomePage() {
                       className="flex items-center gap-3 hover:bg-black/2 rounded-lg"
                     >
                       <MemberAvatar person={e.person} size={40} />
-                      <span className="flex-1 truncate">
+                      <span className="flex-1 truncate" {...rtlAttrs(personName(e.person, locale))}>
                         {personName(e.person, locale)}
                       </span>
                       <span className="font-semibold text-accent">
@@ -265,7 +265,9 @@ export default async function HomePage() {
                   className="flex items-center gap-3 hover:bg-black/2 rounded-lg"
                 >
                   <MemberAvatar person={e.person} size={40} />
-                  <span className="flex-1 truncate">{personName(e.person, locale)}</span>
+                  <span className="flex-1 truncate" {...rtlAttrs(personName(e.person, locale))}>
+                    {personName(e.person, locale)}
+                  </span>
                   <span className="font-semibold text-accent">
                     {e.billCount} {t("legislators.bills")}
                   </span>

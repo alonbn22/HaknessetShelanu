@@ -18,7 +18,7 @@ import {
   queueDataTranslations,
   resolveLocalized,
 } from "@/lib/i18n-data";
-import { localizedAttrs } from "@/lib/text";
+import { localizedAttrs, rtlAttrs } from "@/lib/text";
 import { formatDateTime } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
@@ -172,8 +172,16 @@ export default async function CommitteePage({
                       {t("committees.documents")}
                     </h4>
                     <ul className="space-y-1">
-                      {docs.map((d) => {
+                      {docs.map((d, i) => {
                         const kind = loc(d.groupTypeDesc);
+                        const kindText = kind.text || t("committees.document");
+                        // Several docs of one meeting can share a type label
+                        // ("background material" ×9). Give each link a distinct
+                        // accessible name (index when >1, plus the file kind) so a
+                        // screen-reader link list isn't a run of identical names.
+                        const label =
+                          `${kindText}${docs.length > 1 ? ` ${i + 1}` : ""}` +
+                          `${d.applicationDesc ? ` (${d.applicationDesc})` : ""}`;
                         return d.filePath ? (
                           <li key={d.id}>
                             <a
@@ -181,9 +189,10 @@ export default async function CommitteePage({
                               target="_blank"
                               rel="noopener noreferrer"
                               className="text-accent hover:underline"
+                              aria-label={label}
                               {...localizedAttrs(kind)}
                             >
-                              {kind.text || t("committees.document")}
+                              {kindText}
                             </a>
                             {d.applicationDesc && (
                               <span className="text-muted"> ({d.applicationDesc})</span>
@@ -238,7 +247,9 @@ export default async function CommitteePage({
               >
                 <MemberAvatar person={person} />
                 <div className="min-w-0">
-                  <div className="font-semibold truncate">{personName(person, locale)}</div>
+                  <div className="font-semibold truncate" {...rtlAttrs(personName(person, locale))}>
+                    {personName(person, locale)}
+                  </div>
                   {roleHe &&
                     (() => {
                       const r = govDuty(roleHe, locale);

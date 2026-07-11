@@ -3,6 +3,7 @@ import { Link } from "@/i18n/navigation";
 import { MemberAvatar } from "@/components/MemberCard";
 import { getMinisters, personName, factionName } from "@/lib/queries";
 import { govDuty, govMinistry } from "@/lib/gov-terms";
+import { rtlAttrs } from "@/lib/text";
 
 export const dynamic = "force-dynamic";
 
@@ -33,7 +34,9 @@ export default async function MinistersPage() {
             <MemberAvatar person={m} size={48} />
             <div className="min-w-0 flex-1">
               <div className="flex items-center gap-2">
-                <span className="font-semibold truncate">{personName(m, locale)}</span>
+                <span className="font-semibold truncate" {...rtlAttrs(personName(m, locale))}>
+                  {personName(m, locale)}
+                </span>
                 {!m.isSitting && (
                   <span
                     className="shrink-0 rounded-full bg-amber-100 text-amber-800 px-2 py-0.5 text-[11px] font-medium"
@@ -65,7 +68,16 @@ export default async function MinistersPage() {
               </ul>
               {m.dutiesHe.length > 0 && (
                 <div className="mt-0.5 text-xs text-muted">
-                  {m.dutiesHe.map((d) => govDuty(d, locale).text).join(", ")}
+                  {/* Per-duty dir/lang: an untranslated duty stays Hebrew RTL. */}
+                  {m.dutiesHe.map((d, i) => {
+                    const g = govDuty(d, locale);
+                    return (
+                      <span key={d} dir={g.rtl ? "rtl" : undefined} lang={g.rtl ? "he" : undefined}>
+                        {i > 0 ? ", " : ""}
+                        {g.text}
+                      </span>
+                    );
+                  })}
                 </div>
               )}
             </div>

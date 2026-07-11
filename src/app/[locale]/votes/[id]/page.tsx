@@ -18,7 +18,7 @@ import {
   factionColor,
 } from "@/lib/queries";
 import { localizeData, queueDataTranslations, resolveLocalized, type Localized } from "@/lib/i18n-data";
-import { localizedAttrs } from "@/lib/text";
+import { localizedAttrs, rtlAttrs, isHebrew } from "@/lib/text";
 import { VOTE_FOR, VOTE_AGAINST, VOTE_ABSTAIN } from "@/lib/constants";
 
 export const dynamic = "force-dynamic";
@@ -94,9 +94,11 @@ export default async function VotePage({
   // Serializable voter list for the interactive (clickable) roll-call.
   const voters: Voter[] = results.map((r) => {
     const fl = factionLabelOf(r.factionId, r.factionNameHe);
+    const name = personName(r.person, locale);
     return {
       id: r.person.id,
-      name: personName(r.person, locale),
+      name,
+      nameRtl: isHebrew(name), // Hebrew fallback (no localized name) → dir=rtl
       firstNameHe: r.person.firstNameHe,
       lastNameHe: r.person.lastNameHe,
       photoUrl: r.person.photoUrl,
@@ -224,7 +226,7 @@ export default async function VotePage({
                     className="inline-flex items-center gap-1.5 rounded-full bg-black/5 py-1 pe-3 ps-1 text-sm hover:bg-black/10"
                   >
                     <MemberAvatar person={p} size={24} />
-                    {personName(p, locale)}
+                    <span {...rtlAttrs(personName(p, locale))}>{personName(p, locale)}</span>
                   </Link>
                 ))}
               </div>

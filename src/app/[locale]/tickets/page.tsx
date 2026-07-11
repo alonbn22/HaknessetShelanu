@@ -2,6 +2,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { FeedbackActions } from "@/components/FeedbackActions";
 import { fetchOpenTickets, GITHUB_REPO } from "@/lib/github";
 import { formatDate } from "@/lib/format";
+import { rtlAttrs } from "@/lib/text";
 
 // On-site ticket page: shows the open tickets (read from the public GitHub Issues
 // queue) and lets anyone open a new one. Submissions create a ticket reviewed
@@ -70,6 +71,7 @@ export default async function TicketsPage({
                   target="_blank"
                   rel="noopener noreferrer"
                   className="min-w-0 flex-1 truncate font-medium hover:underline"
+                  {...rtlAttrs(tk.title)}
                 >
                   {tk.title}
                 </a>

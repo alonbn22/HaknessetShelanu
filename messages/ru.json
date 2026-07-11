@@ -304,14 +304,14 @@
     "category": "Категория",
     "noMembers": "Члены не найдены",
     "meetings": "Заседания комиссии",
-    "meetingCount": "Всего заседаний: {count}",
+    "meetingCount": "{count, plural, one {# заседание всего} few {# заседания всего} many {# заседаний всего} other {# заседания всего}}",
     "upcoming": "Предстоящие",
     "recent": "Недавние",
     "agenda": "Повестка",
     "broadcast": "Трансляция",
     "meetingsNote": "Источник: открытые данные Кнессета (KNS_CommitteeSession, KNS_CmtSessionItem, KNS_DocumentCommitteeSession). Будущие заседания могут измениться; протоколы публикуются после заседания.",
     "agendaItems": "Повестка дня",
-    "agendaCount": "{count} пунктов",
+    "agendaCount": "{count, plural, one {# пункт} few {# пункта} many {# пунктов} other {# пунктов}}",
     "documents": "Документы",
     "document": "Документ"
   },
@@ -592,6 +592,8 @@
     "committee": "{name}: члены комиссии и их роли в Кнессете"
   },
   "theme": {
-    "toggle": "Переключить тёмный режим"
+    "toggle": "Переключить тёмный режим",
+    "switchToDark": "Переключить на тёмный режим",
+    "switchToLight": "Переключить на светлый режим"
   }
 }

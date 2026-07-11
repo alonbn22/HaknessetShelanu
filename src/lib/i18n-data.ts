@@ -12,7 +12,7 @@ import { getDb, schema } from "@/db";
 import { govCommittee } from "./gov-terms";
 import { gtxTranslate } from "./gtx";
 
-const RTL = /[֐-؏ؐ-ۿ]/; // Hebrew or Arabic → render rtl
+const RTL = /[\u0590-\u06ff]/; // Hebrew or Arabic → render rtl
 const T = schema.translations;
 const COL = { en: T.en, ar: T.ar, ru: T.ru } as const;
 const FIELD = { en: "en", ar: "ar", ru: "ru" } as const;

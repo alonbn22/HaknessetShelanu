@@ -304,14 +304,14 @@
     "category": "الفئة",
     "noMembers": "لا يوجد أعضاء",
     "meetings": "جلسات اللجنة",
-    "meetingCount": "{count} جلسات إجمالاً",
+    "meetingCount": "{count, plural, zero {# جلسة إجمالاً} one {جلسة واحدة إجمالاً} two {جلستان إجمالاً} few {# جلسات إجمالاً} many {# جلسة إجمالاً} other {# جلسة إجمالاً}}",
     "upcoming": "القادمة",
     "recent": "الأخيرة",
     "agenda": "جدول الأعمال",
     "broadcast": "بث",
     "meetingsNote": "المصدر: البيانات المفتوحة للكنيست (KNS_CommitteeSession، KNS_CmtSessionItem، KNS_DocumentCommitteeSession). قد تتغير الجلسات المستقبلية؛ تُنشر المحاضر بعد الجلسة.",
     "agendaItems": "على جدول الأعمال",
-    "agendaCount": "{count} بنود",
+    "agendaCount": "{count, plural, zero {# بنود} one {بند واحد} two {بندان} few {# بنود} many {# بنداً} other {# بند}}",
     "documents": "مستندات",
     "document": "مستند"
   },
@@ -592,6 +592,8 @@
     "committee": "{name}: أعضاء اللجنة وأدوارهم في الكنيست"
   },
   "theme": {
-    "toggle": "تبديل الوضع الداكن"
+    "toggle": "تبديل الوضع الداكن",
+    "switchToDark": "التبديل إلى الوضع الداكن",
+    "switchToLight": "التبديل إلى الوضع الفاتح"
   }
 }

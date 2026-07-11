@@ -7,7 +7,7 @@ import { ReadingBadge } from "@/components/ReadingBadge";
 import { getBill, getBillVotes, getBillSponsors, personName } from "@/lib/queries";
 import { voteKind, type VoteKind } from "@/lib/votes-meta";
 import { localizeData, queueDataTranslations, resolveLocalized } from "@/lib/i18n-data";
-import { localizedAttrs } from "@/lib/text";
+import { localizedAttrs, rtlAttrs } from "@/lib/text";
 import { formatDate } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
@@ -148,7 +148,7 @@ export default async function BillPage({
                 className="inline-flex items-center gap-1.5 rounded-full bg-black/5 py-1 pe-3 ps-1 text-sm hover:bg-black/10"
               >
                 <MemberAvatar person={p} size={24} alt={personName(p, locale)} />
-                {personName(p, locale)}
+                <span {...rtlAttrs(personName(p, locale))}>{personName(p, locale)}</span>
               </Link>
             ))}
           </div>

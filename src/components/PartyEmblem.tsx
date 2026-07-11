@@ -49,9 +49,10 @@ export function PartyEmblem({
       }}
       dir="rtl"
       lang="he"
+      role="img"
       aria-label={label}
     >
-      {nameHe}
+      <span aria-hidden>{nameHe}</span>
     </div>
   );
 }

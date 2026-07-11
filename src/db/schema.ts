@@ -100,7 +100,7 @@ export const votes = sqliteTable(
     itemName: text("item_name"),
     itemTypeDesc: text("item_type_desc"),
     // What a "for"/"against" vote does procedurally — also carries the
-    // legislative reading stage (e.g. "לקבל את הצעת החוק בקריאה שלישית").
+    // legislative reading stage (e.g. "approve the bill in third reading").
     forDesc: text("for_desc"),
     againstDesc: text("against_desc"),
     sessionId: integer("session_id"),
@@ -298,7 +298,7 @@ export const committeeSessionItems = sqliteTable(
 );
 
 // Documents attached to each committee meeting (KNS_DocumentCommitteeSession) —
-// the protocol/transcript (פרוטוקול ועדה), background material, decisions, press
+// the protocol/transcript, background material, decisions, press
 // releases. file_path is a direct link on fs.knesset.gov.il (https for the
 // current Knesset). Same bulk-by-session-id-range sync as the items above.
 export const committeeSessionDocs = sqliteTable(

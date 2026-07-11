@@ -4,9 +4,11 @@
 // parser, and the nikud-strip rule in ONE place means a change to the (unofficial)
 // API shape or the strip rule is a one-line edit. Server-only (network fetch).
 
-// Hebrew nikud / cantillation marks. The endpoint sometimes returns vocalized
-// Hebrew (נָשִׁים); stored/compared text is unvocalized (נשים), so strip them.
-export const NIKUD = /[֑-ׇ]/g;
+// Nikud = Hebrew vowel points / cantillation marks (U+0591–U+05C7). The
+// endpoint sometimes returns vocalized Hebrew, but stored/compared text is
+// unvocalized, so strip these before matching. Escaped per the no-hardcoded-
+// Hebrew rule (same style as the HEBREW regex in src/lib/text.ts).
+export const NIKUD = /[\u0591-\u05c7]/g;
 
 export function stripNikud(s: string): string {
   return s.replace(NIKUD, "");

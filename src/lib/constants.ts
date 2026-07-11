@@ -5,9 +5,9 @@ export const CURRENT_KNESSET = 25;
 export const CURRENT_KNESSET_START = "2022-11-15T00:00:00+02:00";
 
 // KNS_Position ids.
-export const POSITION_MK_MALE = 43; // חבר הכנסת
-export const POSITION_MK_FEMALE = 61; // חברת הכנסת
-export const POSITION_FACTION_MEMBER = 54; // חבר/ת סיעה
+export const POSITION_MK_MALE = 43; // Knesset member (male)
+export const POSITION_MK_FEMALE = 61; // Knesset member (female)
+export const POSITION_FACTION_MEMBER = 54; // faction member
 
 export const MK_POSITION_IDS = [POSITION_MK_MALE, POSITION_MK_FEMALE];
 

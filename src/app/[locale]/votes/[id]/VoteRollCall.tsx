@@ -15,6 +15,7 @@ import {
 export type Voter = {
   id: number;
   name: string;
+  nameRtl: boolean;
   firstNameHe: string;
   lastNameHe: string;
   photoUrl: string | null;
@@ -142,7 +143,12 @@ export function VoteRollCall({
                 .map((v) => (
                   <li key={v.id} className="flex items-center gap-2 text-sm">
                     <MemberAvatar person={v} size={28} alt={v.name} />
-                    <Link href={`/members/${v.id}`} className="flex-1 truncate hover:underline">
+                    <Link
+                      href={`/members/${v.id}`}
+                      className="flex-1 truncate hover:underline"
+                      dir={v.nameRtl ? "rtl" : undefined}
+                      lang={v.nameRtl ? "he" : undefined}
+                    >
                       {v.name}
                     </Link>
                     <VoteResultBadge code={v.resultCode} />

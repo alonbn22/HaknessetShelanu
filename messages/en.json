@@ -304,14 +304,14 @@
     "category": "Category",
     "noMembers": "No members found",
     "meetings": "Committee meetings",
-    "meetingCount": "{count} meetings in total",
+    "meetingCount": "{count, plural, one {# meeting in total} other {# meetings in total}}",
     "upcoming": "Upcoming",
     "recent": "Recent",
     "agenda": "Agenda",
     "broadcast": "Broadcast",
     "meetingsNote": "Source: Knesset open data (KNS_CommitteeSession, KNS_CmtSessionItem, KNS_DocumentCommitteeSession). Future meetings may change; protocols are published after the meeting.",
     "agendaItems": "On the agenda",
-    "agendaCount": "{count} items",
+    "agendaCount": "{count, plural, one {# item} other {# items}}",
     "documents": "Documents",
     "document": "Document"
   },
@@ -592,6 +592,8 @@
     "committee": "{name}: committee members and their roles in the Knesset"
   },
   "theme": {
-    "toggle": "Toggle dark mode"
+    "toggle": "Toggle dark mode",
+    "switchToDark": "Switch to dark mode",
+    "switchToLight": "Switch to light mode"
   }
 }

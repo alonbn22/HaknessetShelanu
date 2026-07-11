@@ -2,7 +2,14 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { sql } from "drizzle-orm";
 import { getDb } from "../../src/db";
-import { getCommitteeSessions, getCommitteeSessionDetails } from "../../src/lib/queries";
+import {
+  getCommitteeSessions,
+  getCommitteeSessionDetails,
+  getUpcomingMeetings,
+  getCommitteeMeetingCounts,
+  getVotesPage,
+  CLOSE_VOTE_MARGIN,
+} from "../../src/lib/queries";
 
 // Committee sessions are the newest feature and had a timezone bug: stored
 // start_date carries a local +02:00/+03:00 offset while the caller passes a UTC
@@ -96,4 +103,42 @@ test("empty session id list yields empty maps (no query)", () => {
   const { items, docs } = getCommitteeSessionDetails([]);
   assert.equal(items.size, 0);
   assert.equal(docs.size, 0);
+});
+
+// --- Stage-5 feature queries ---
+
+test("getUpcomingMeetings returns only future meetings inside the window, with names", () => {
+  const now = new Date().toISOString();
+  const nowMs = Date.parse(now);
+  const windowMs = 7 * 86_400_000;
+  const rows = getUpcomingMeetings(now, 7, 25);
+  for (const m of rows) {
+    const t = Date.parse(m.startDate!);
+    assert.ok(t > nowMs, `meeting ${m.id} is not in the future`);
+    assert.ok(t <= nowMs + windowMs, `meeting ${m.id} is beyond the 7-day window`);
+    assert.ok(m.committeeId != null, "meeting should carry its committee id");
+  }
+  assert.ok(rows.length <= 25, "respects the limit");
+});
+
+test("getCommitteeMeetingCounts sums to the sessions total", () => {
+  const counts = getCommitteeMeetingCounts();
+  const summed = [...counts.values()].reduce((s, n) => s + n, 0);
+  const total = db.get<{ n: number }>(
+    sql`SELECT COUNT(*) n FROM committee_sessions WHERE committee_id IS NOT NULL`,
+  )!.n;
+  assert.equal(summed, total, "per-committee counts must cover every sitting");
+  for (const n of counts.values()) assert.ok(n > 0, "counts are positive");
+});
+
+test("close-votes filter returns only narrowly-decided votes", () => {
+  const { items } = getVotesPage(1, undefined, undefined, true);
+  assert.ok(items.length > 0, "expected some close votes in K25");
+  for (const v of items) {
+    assert.ok(v.totalFor + v.totalAgainst > 0, "a close vote must have recorded voters");
+    assert.ok(
+      Math.abs(v.totalFor - v.totalAgainst) <= CLOSE_VOTE_MARGIN,
+      `vote ${v.id} margin exceeds ${CLOSE_VOTE_MARGIN}`,
+    );
+  }
 });

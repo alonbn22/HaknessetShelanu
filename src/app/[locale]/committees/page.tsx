@@ -1,7 +1,7 @@
 import { after } from "next/server";
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { getCurrentCommittees } from "@/lib/queries";
+import { getCurrentCommittees, getCommitteeMeetingCounts } from "@/lib/queries";
 import { localizeData, committeeLabel, queueDataTranslations } from "@/lib/i18n-data";
 
 export const dynamic = "force-dynamic";
@@ -10,6 +10,12 @@ export default async function CommitteesPage() {
   const t = await getTranslations("committees");
   const locale = await getLocale();
   const committees = getCurrentCommittees();
+  const counts = getCommitteeMeetingCounts();
+  // Most-active first — turns the directory into an activity view. Committees with
+  // no materialized sittings (count 0) fall to the bottom, keeping their alpha order.
+  const sorted = [...committees].sort(
+    (a, b) => (counts.get(b.id) ?? 0) - (counts.get(a.id) ?? 0),
+  );
   const cache = localizeData(committees.map((c) => c.nameHe), locale);
   if (locale !== "he")
     after(() => queueDataTranslations(committees.map((c) => c.nameHe), locale));
@@ -18,8 +24,9 @@ export default async function CommitteesPage() {
     <div className="space-y-6">
       <h1 className="text-3xl font-bold">{t("title")}</h1>
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        {committees.map((c) => {
+        {sorted.map((c) => {
           const name = committeeLabel(c.nameHe, locale, cache);
+          const n = counts.get(c.id) ?? 0;
           return (
             <Link
               key={c.id}
@@ -33,6 +40,9 @@ export default async function CommitteesPage() {
               >
                 {name.text}
               </div>
+              {n > 0 && (
+                <div className="mt-1 text-xs text-muted">{t("meetingCount", { count: n })}</div>
+              )}
             </Link>
           );
         })}

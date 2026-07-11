@@ -688,11 +688,21 @@ function titleSearchCondition(search: string, searchHe?: string) {
   return or(...terms)!;
 }
 
-export function getVotesPage(page: number, search?: string, searchHe?: string) {
+// A vote is "close" when at least one side was recorded and the for/against
+// margin is within CLOSE_VOTE_MARGIN — where a handful of absent MKs swings it.
+export const CLOSE_VOTE_MARGIN = 5;
+
+export function getVotesPage(page: number, search?: string, searchHe?: string, closeOnly = false) {
   const db = getDb();
   const conditions = [eq(schema.votes.knessetNum, CURRENT_KNESSET)];
   if (search) {
     conditions.push(titleSearchCondition(search, searchHe));
+  }
+  if (closeOnly) {
+    conditions.push(
+      sql`${schema.votes.totalFor} + ${schema.votes.totalAgainst} > 0
+          AND ABS(${schema.votes.totalFor} - ${schema.votes.totalAgainst}) <= ${CLOSE_VOTE_MARGIN}`,
+    );
   }
   const where = and(...conditions);
   const total =
@@ -1058,6 +1068,66 @@ export function getCommitteeMembers(committeeId: number) {
 }
 
 export type CommitteeSession = typeof schema.committeeSessions.$inferSelect;
+
+export type UpcomingMeeting = {
+  id: number;
+  committeeId: number | null;
+  committeeNameHe: string | null;
+  startDate: string | null;
+  typeDesc: string | null;
+  location: string | null;
+  sessionUrl: string | null;
+  broadcastUrl: string | null;
+};
+
+// All committee sittings scheduled from nowIso up to `days` ahead, across every
+// committee, with the committee name — powers the home "this week" strip. Instant
+// comparison (datetime()) for the same offset-safety reason as getCommitteeSessions.
+// try/catch → empty when the table isn't materialized yet.
+export function getUpcomingMeetings(nowIso: string, days = 7, limit = 25): UpcomingMeeting[] {
+  try {
+    const until = new Date(Date.parse(nowIso) + days * 86_400_000).toISOString();
+    return getDb()
+      .select({
+        id: schema.committeeSessions.id,
+        committeeId: schema.committeeSessions.committeeId,
+        committeeNameHe: schema.committees.nameHe,
+        startDate: schema.committeeSessions.startDate,
+        typeDesc: schema.committeeSessions.typeDesc,
+        location: schema.committeeSessions.location,
+        sessionUrl: schema.committeeSessions.sessionUrl,
+        broadcastUrl: schema.committeeSessions.broadcastUrl,
+      })
+      .from(schema.committeeSessions)
+      .leftJoin(schema.committees, eq(schema.committees.id, schema.committeeSessions.committeeId))
+      .where(
+        sql`datetime(${schema.committeeSessions.startDate}) > datetime(${nowIso})
+            AND datetime(${schema.committeeSessions.startDate}) <= datetime(${until})`,
+      )
+      .orderBy(asc(schema.committeeSessions.startDate))
+      .limit(limit)
+      .all();
+  } catch {
+    return [];
+  }
+}
+
+// Meetings-held count per committee (an activity signal for the committees list).
+// try/catch → empty map when the table isn't materialized yet.
+export function getCommitteeMeetingCounts(): Map<number, number> {
+  try {
+    const rows = getDb()
+      .select({ id: schema.committeeSessions.committeeId, n: sql<number>`COUNT(*)` })
+      .from(schema.committeeSessions)
+      .groupBy(schema.committeeSessions.committeeId)
+      .all();
+    const m = new Map<number, number>();
+    for (const r of rows) if (r.id != null) m.set(r.id, r.n);
+    return m;
+  } catch {
+    return new Map();
+  }
+}
 
 // A committee's meeting calendar: the next scheduled sittings and the most
 // recent past ones, plus the total meeting count (an activity signal). `nowIso`

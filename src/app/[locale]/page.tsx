@@ -13,13 +13,15 @@ import {
   getLatestVotes,
   getParticipationLeaderboard,
   getMostActiveLegislators,
+  getUpcomingMeetings,
   personName,
   factionColor,
   factionName,
 } from "@/lib/queries";
-import { localizeData, queueDataTranslations } from "@/lib/i18n-data";
+import { localizeData, queueDataTranslations, committeeLabel, resolveLocalized } from "@/lib/i18n-data";
 import { getControversialLaws, partyText } from "@/lib/content";
-import { isHebrew, rtlAttrs } from "@/lib/text";
+import { isHebrew, rtlAttrs, localizedAttrs } from "@/lib/text";
+import { formatDateTime } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
 
@@ -37,6 +39,13 @@ export default async function HomePage() {
   const leaders = getParticipationLeaderboard("top", 5);
   const laggards = getParticipationLeaderboard("bottom", 5);
   const activeLegislators = getMostActiveLegislators(5);
+
+  // "This week in the Knesset": committee sittings scheduled over the next 7 days.
+  const upcoming = getUpcomingMeetings(new Date().toISOString(), 7, 12);
+  const upHe = upcoming.flatMap((m) => [m.committeeNameHe, m.typeDesc, m.location]);
+  const upCache = localizeData(upHe, locale);
+  const upLoc = (he: string | null) => resolveLocalized(upCache, he);
+  if (locale !== "he") after(() => queueDataTranslations(upHe, locale));
 
   const coalitionSeats = factions
     .filter((f) => f.isCoalition)
@@ -168,6 +177,54 @@ export default async function HomePage() {
           dome={<Hemicycle factions={hemiFactions} />}
         />
       </section>
+
+      {upcoming.length > 0 && (
+        <section className="rounded-xl bg-white p-6 shadow-sm space-y-3">
+          <div className="flex items-baseline justify-between gap-2">
+            <h2 className="text-xl font-semibold">{t("home.thisWeekTitle")}</h2>
+            <Link href="/committees" className="text-sm text-accent hover:underline">
+              {t("common.viewAll")}
+            </Link>
+          </div>
+          <p className="text-sm text-muted">{t("home.thisWeekSubtitle")}</p>
+          <ul className="divide-y divide-black/5">
+            {upcoming.map((m) => {
+              const cname = committeeLabel(m.committeeNameHe, locale, upCache);
+              const type = upLoc(m.typeDesc);
+              return (
+                <li key={m.id} className="flex flex-wrap items-center gap-x-3 gap-y-1 py-2 text-sm">
+                  <span className="whitespace-nowrap font-medium tabular-nums">
+                    {formatDateTime(m.startDate!, locale)}
+                  </span>
+                  <Link
+                    href={`/committees/${m.committeeId}`}
+                    className="min-w-0 flex-1 truncate font-medium text-accent hover:underline"
+                    dir={cname.rtl ? "rtl" : undefined}
+                    lang={cname.rtl ? "he" : undefined}
+                  >
+                    {cname.text}
+                  </Link>
+                  {type.text && (
+                    <span className="rounded-full bg-black/5 px-2 py-0.5 text-xs text-muted" {...localizedAttrs(type)}>
+                      {type.text}
+                    </span>
+                  )}
+                  {m.broadcastUrl && (
+                    <a
+                      href={m.broadcastUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="whitespace-nowrap text-accent hover:underline"
+                    >
+                      {t("committees.broadcast")}
+                    </a>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      )}
 
       {controversialLaws.length > 0 && (
         <section className="rounded-xl bg-white p-6 shadow-sm space-y-4">

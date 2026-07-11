@@ -25,17 +25,20 @@ jobs:
     permissions:
       contents: write # needed to commit the refreshed DB
     steps:
-      - uses: actions/checkout@v4
+      # Actions pinned to a commit SHA (not a mutable tag): this job holds a
+      # contents:write token, so a hijacked tag must not be able to run code here.
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: 24
           cache: npm
 
-      # Resilient install: `npm ci` is strict about lockfile↔resolution match,
-      # which can drift across npm versions (a transitive @swc/helpers range).
-      # The sync job just needs working deps, so fall back to `npm install`.
-      - run: npm ci || npm install
+      # `npm ci` only — the lockfile is authoritative. The old `|| npm install`
+      # fallback silently installed whatever latest in-range versions the registry
+      # served (and ran their build scripts) with a contents:write token on any
+      # lockfile drift. If `npm ci` fails, fix the lockfile rather than bypass it.
+      - run: npm ci
 
       - name: Run incremental sync
         run: npm run sync

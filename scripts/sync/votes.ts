@@ -35,11 +35,25 @@ function getSyncCursor(table: string): string | null {
   return row?.lastUpdatedDate ?? null;
 }
 
+// Re-scan a small overlap before the stored cursor on the next incremental run.
+// Offset paging ordered by LastUpdatedDate can skip a row that is updated
+// mid-pagination; re-fetching the boundary closes that gap (upserts make it
+// idempotent). Applied only to the query lower bound — the stored cursor stays
+// the true high-water mark, so it never drifts backwards across empty runs.
+function backoffCursor(iso: string, minutes = 5): string {
+  const t = Date.parse(iso);
+  return Number.isNaN(t) ? iso : new Date(t - minutes * 60_000).toISOString();
+}
+
 export async function syncVoteHeaders() {
   const db = getDb();
   const cursor = getSyncCursor("KNS_PlenumVote");
+  // KNS_PlenumVote spans every Knesset, and a retro-edit to an old vote bumps
+  // LastUpdatedDate — so the incremental filter MUST also gate on VoteDateTime,
+  // or such a row is ingested and mislabeled as the current Knesset (we stamp
+  // knessetNum: CURRENT_KNESSET below). The full branch already gates by date.
   const filter = cursor
-    ? `LastUpdatedDate ge ${cursor}`
+    ? `LastUpdatedDate ge ${backoffCursor(cursor)} and VoteDateTime ge ${CURRENT_KNESSET_START}`
     : `VoteDateTime ge ${CURRENT_KNESSET_START}`;
   console.log(`Syncing vote headers (${cursor ? "incremental" : "full"})…`);
 
@@ -201,7 +215,7 @@ async function syncVoteResultsIncremental(cursor: string) {
   let n = 0;
   for await (const row of fetchAllRows<Row>(
     entityUrl("KNS_PlenumVoteResult", {
-      $filter: `LastUpdatedDate ge ${cursor}`,
+      $filter: `LastUpdatedDate ge ${backoffCursor(cursor)}`,
       $orderby: "LastUpdatedDate",
     }),
   )) {

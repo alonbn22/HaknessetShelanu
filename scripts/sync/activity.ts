@@ -11,7 +11,7 @@ export async function syncCommitteeSessions() {
   // Self-sufficient DDL (schema-exact) so an un-pushed DB still works.
   db.$client.exec(
     `CREATE TABLE IF NOT EXISTS committee_sessions (
-       id integer PRIMARY KEY, committee_id integer, knesset_num integer,
+       id integer PRIMARY KEY NOT NULL, committee_id integer, knesset_num integer,
        start_date text, finish_date text, type_desc text, status_desc text,
        location text, session_url text, broadcast_url text, last_updated text
      )`,
@@ -77,7 +77,7 @@ export async function syncCommitteeSessionDetails(sinceDays: number | null = 120
   // Self-sufficient DDL (schema-exact) so an un-pushed DB still works.
   db.$client.exec(
     `CREATE TABLE IF NOT EXISTS committee_session_items (
-       id integer PRIMARY KEY, session_id integer, ordinal integer,
+       id integer PRIMARY KEY NOT NULL, session_id integer, ordinal integer,
        name_he text, item_type_id integer, last_updated text
      )`,
   );
@@ -86,7 +86,7 @@ export async function syncCommitteeSessionDetails(sinceDays: number | null = 120
   );
   db.$client.exec(
     `CREATE TABLE IF NOT EXISTS committee_session_docs (
-       id integer PRIMARY KEY, session_id integer, group_type_id integer,
+       id integer PRIMARY KEY NOT NULL, session_id integer, group_type_id integer,
        group_type_desc text, name_he text, application_desc text,
        file_path text, last_updated text
      )`,

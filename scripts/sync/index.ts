@@ -44,14 +44,27 @@ import {
 import { syncBudget } from "./budget";
 import { syncLobbyists } from "./lobbyists";
 
+// Run a slow, slow-moving section (budget, biographies). In a full sync a
+// transient upstream failure must NOT discard the whole run — votes/members are
+// already synced and the previously-committed values for this section stay
+// valid — so log and continue. When the section is invoked on its own, rethrow
+// so the caller gets a non-zero exit.
+async function softSection(name: string, fn: () => Promise<void>, soft: boolean) {
+  try {
+    await fn();
+  } catch (e) {
+    if (!soft) throw e;
+    console.error(`  ${name} sync failed (keeping previously-committed data): ${(e as Error).message}`);
+  }
+}
+
 async function main() {
   const args = new Set(process.argv.slice(2));
-  const all =
-    !args.has("--members") &&
-    !args.has("--votes") &&
-    !args.has("--stats") &&
-    !args.has("--bills") &&
-    !args.has("--activity");
+  // A bare `npm run sync` (no flags) runs EVERYTHING; any section flag runs only
+  // that section. Enumerating just the "big" flags here used to leave `all` true
+  // for --budget/--lobbyists/--bio/--subjects, silently kicking off a full sync
+  // (and running syncVoteSubjects twice under --subjects).
+  const all = args.size === 0;
   const started = Date.now();
 
   if (all || args.has("--members")) {
@@ -68,7 +81,7 @@ async function main() {
   // Wikidata biographies (born/education/military/career timeline). Runs with
   // members (uses the QIDs the enrich step just stored) or standalone via --bio.
   if (all || args.has("--members") || args.has("--bio")) {
-    await syncBiography();
+    await softSection("biography", syncBiography, all);
   }
 
   if (all || args.has("--votes")) {
@@ -102,7 +115,7 @@ async function main() {
   }
 
   if (all || args.has("--budget")) {
-    await syncBudget();
+    await softSection("budget", syncBudget, all);
   }
 
   if (all || args.has("--lobbyists")) {

@@ -26,6 +26,29 @@ export async function fetchJson(url: string): Promise<Record<string, unknown>> {
   }
 }
 
+// Fetch with retry + exponential backoff, returning the raw Response. For
+// callers outside the OData service (Wikidata SPARQL, Commons, data.gov.il CKAN)
+// that parse the body themselves but still want fetchJson's resilience policy.
+export async function fetchRetry(
+  url: string,
+  init: RequestInit = {},
+  opts: { retries?: number; timeoutMs?: number } = {},
+): Promise<Response> {
+  const { retries = MAX_RETRIES, timeoutMs = 60_000 } = opts;
+  for (let attempt = 0; ; attempt++) {
+    try {
+      const res = await fetch(url, { ...init, signal: AbortSignal.timeout(timeoutMs) });
+      if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
+      return res;
+    } catch (err) {
+      if (attempt >= retries) throw err;
+      const backoff = 2_000 * 2 ** attempt;
+      console.warn(`  retry ${attempt + 1}/${retries} in ${backoff}ms: ${err}`);
+      await sleep(backoff);
+    }
+  }
+}
+
 export function entityUrl(entity: string, query: Record<string, string> = {}): string {
   const params = new URLSearchParams(query);
   const qs = params.toString();

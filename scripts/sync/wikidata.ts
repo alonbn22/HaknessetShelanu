@@ -1,5 +1,6 @@
 import { eq } from "drizzle-orm";
 import { getDb, schema } from "../../src/db";
+import { fetchRetry } from "./odata";
 
 const USER_AGENT =
   "HaKnessetSheli/1.0 (https://github.com/alonbn22/HaKnessetSheli; civic transparency site)";
@@ -42,11 +43,11 @@ async function fetchWikidata(): Promise<WikidataRow[]> {
   const url =
     "https://query.wikidata.org/sparql?format=json&query=" +
     encodeURIComponent(SPARQL);
-  const res = await fetch(url, {
-    headers: { "User-Agent": USER_AGENT, Accept: "application/sparql-results+json" },
-    signal: AbortSignal.timeout(120_000),
-  });
-  if (!res.ok) throw new Error(`Wikidata SPARQL HTTP ${res.status}`);
+  const res = await fetchRetry(
+    url,
+    { headers: { "User-Agent": USER_AGENT, Accept: "application/sparql-results+json" } },
+    { timeoutMs: 120_000 },
+  );
   const data = (await res.json()) as any;
   return data.results.bindings
     .map((b: any) => {
@@ -157,15 +158,21 @@ async function fetchCommonsInfo(files: string[]): Promise<Map<string, ImageInfo>
       iiurlwidth: "400",
       titles: batch.map((f) => `File:${f}`).join("|"),
     });
-    const res = await fetch(`https://commons.wikimedia.org/w/api.php?${params}`, {
-      headers: { "User-Agent": USER_AGENT },
-      signal: AbortSignal.timeout(60_000),
-    });
-    if (!res.ok) {
-      console.warn(`  Commons API HTTP ${res.status}, skipping batch`);
+    let data: any;
+    try {
+      const res = await fetchRetry(
+        `https://commons.wikimedia.org/w/api.php?${params}`,
+        { headers: { "User-Agent": USER_AGENT } },
+        { timeoutMs: 60_000 },
+      );
+      data = await res.json();
+    } catch (err) {
+      // After retries a batch may still fail. Skipping it is safe now that the
+      // enrich step only overwrites photo columns when it HAS a new value
+      // (COALESCE semantics) — committed photos survive a Commons outage.
+      console.warn(`  Commons batch failed after retries, skipping ${batch.length} files: ${err}`);
       continue;
     }
-    const data = (await res.json()) as any;
     const normalized = new Map<string, string>(
       (data.query?.normalized ?? []).map((n: any) => [n.to, n.from]),
     );
@@ -255,19 +262,24 @@ export async function enrichFromWikidata() {
   let updated = 0;
   for (const [personId, row] of matched) {
     const img = row.imageFile ? commons.get(row.imageFile) : undefined;
-    db.update(schema.persons)
-      .set({
-        wikidataId: row.qid ?? null,
-        nameEn: row.nameEn ?? null,
-        nameAr: row.nameAr ?? null,
-        nameRu: row.nameRu ?? null,
-        wikipediaHe: row.wikipediaHe ?? null,
-        photoUrl: img?.thumbUrl ?? null,
-        photoLicense: img?.license ?? null,
-        photoAttribution: img?.attribution ?? null,
-      })
-      .where(eq(schema.persons.id, personId))
-      .run();
+    // COALESCE semantics: only overwrite a column when this run actually produced
+    // a value for it. A partial upstream miss — a dropped Commons batch, or a
+    // label absent from this SPARQL response — must NOT null out good data that is
+    // already committed (previously every field was set unconditionally, so one
+    // flaky Commons batch wiped up to 50 members' photos and the bot committed it).
+    const set: Partial<typeof schema.persons.$inferInsert> = {};
+    if (row.qid) set.wikidataId = row.qid;
+    if (row.nameEn) set.nameEn = row.nameEn;
+    if (row.nameAr) set.nameAr = row.nameAr;
+    if (row.nameRu) set.nameRu = row.nameRu;
+    if (row.wikipediaHe) set.wikipediaHe = row.wikipediaHe;
+    if (img?.thumbUrl) {
+      set.photoUrl = img.thumbUrl;
+      set.photoLicense = img.license || null;
+      set.photoAttribution = img.attribution || null;
+    }
+    if (Object.keys(set).length === 0) continue;
+    db.update(schema.persons).set(set).where(eq(schema.persons.id, personId)).run();
     updated++;
   }
   console.log(`  ${updated} persons enriched`);

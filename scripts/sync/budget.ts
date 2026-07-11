@@ -1,5 +1,6 @@
 import { sql } from "drizzle-orm";
 import { getDb, schema } from "../../src/db";
+import { fetchRetry } from "./odata";
 
 // State budget from the Ministry of Finance open data on data.gov.il.
 //
@@ -43,8 +44,8 @@ async function fetchFiltered(res: string, filters: Record<string, unknown>): Pro
   let offset = 0;
   for (;;) {
     const url = `https://data.gov.il/api/3/action/datastore_search?resource_id=${res}&limit=10000&offset=${offset}&filters=${encodeURIComponent(JSON.stringify(filters))}`;
-    const res2 = await fetch(url, { signal: AbortSignal.timeout(60_000) });
-    if (!res2.ok) throw new Error(`data.gov.il HTTP ${res2.status}`);
+    // Retry/backoff so a single transient data.gov.il blip doesn't abort the sync.
+    const res2 = await fetchRetry(url, {}, { timeoutMs: 60_000 });
     const json = (await res2.json()) as { result: { records: Row[]; total: number } };
     out.push(...json.result.records);
     offset += 10000;
@@ -75,49 +76,56 @@ export async function syncBudget() {
   ensureTables();
 
   // ---- detailed years (net, itemized) ----
+  // Each year is independent: a failure on one (after fetchRetry has exhausted
+  // its backoff) is logged and skipped so the remaining years still load — the
+  // same tolerance the RECENT loop already has.
   for (const { res, years } of DETAILED) {
     for (const year of years) {
-      // Prefer the approved budget; fall back to the original.
-      let budType = "מאושר";
-      let lines = await fetchFiltered(res, {
-        שנה: year,
-        "הוצאה/הכנסה": "הוצאה",
-        "סוג תקציב": budType,
-      });
-      if (lines.length === 0) {
-        budType = "מקורי";
-        lines = await fetchFiltered(res, {
+      try {
+        // Prefer the approved budget; fall back to the original.
+        let budType = "מאושר";
+        let lines = await fetchFiltered(res, {
           שנה: year,
           "הוצאה/הכנסה": "הוצאה",
           "סוג תקציב": budType,
         });
+        if (lines.length === 0) {
+          budType = "מקורי";
+          lines = await fetchFiltered(res, {
+            שנה: year,
+            "הוצאה/הכנסה": "הוצאה",
+            "סוג תקציב": budType,
+          });
+        }
+        if (lines.length === 0) {
+          console.log(`  ${year}: no expenditure rows`);
+          continue;
+        }
+        db.run(sql`DELETE FROM budget_lines WHERE year = ${year}`);
+        const rows = lines.map((r) => ({
+          year,
+          sectionCode: num(r["קוד סעיף"]),
+          sectionNameHe: str(r["שם סעיף"]),
+          areaCode: num(r["קוד תחום"]),
+          areaNameHe: str(r["שם תחום"]),
+          programCode: num(r["קוד תכנית"]),
+          programNameHe: str(r["שם תכנית"]),
+          takanaCode: num(r["קוד תקנה"]),
+          takanaNameHe: str(r["שם תקנה"]),
+          netThousands: num(r["הוצאה נטו"]),
+        }));
+        for (let i = 0; i < rows.length; i += 500) {
+          db.insert(schema.budgetLines).values(rows.slice(i, i + 500)).run();
+        }
+        const total = Math.round(rows.reduce((s, r) => s + (r.netThousands ?? 0), 0));
+        db.run(
+          sql`INSERT INTO budget_totals (year, total_thousands, basis, detailed) VALUES (${year}, ${total}, 'net', 1)
+              ON CONFLICT(year) DO UPDATE SET total_thousands=${total}, basis='net', detailed=1`,
+        );
+        console.log(`  ${year} (${budType}): ${rows.length} lines · net ≈ ₪${(total / 1e6).toFixed(1)}B`);
+      } catch (e) {
+        console.warn(`  ${year}: ${(e as Error).message}`);
       }
-      if (lines.length === 0) {
-        console.log(`  ${year}: no expenditure rows`);
-        continue;
-      }
-      db.run(sql`DELETE FROM budget_lines WHERE year = ${year}`);
-      const rows = lines.map((r) => ({
-        year,
-        sectionCode: num(r["קוד סעיף"]),
-        sectionNameHe: str(r["שם סעיף"]),
-        areaCode: num(r["קוד תחום"]),
-        areaNameHe: str(r["שם תחום"]),
-        programCode: num(r["קוד תכנית"]),
-        programNameHe: str(r["שם תכנית"]),
-        takanaCode: num(r["קוד תקנה"]),
-        takanaNameHe: str(r["שם תקנה"]),
-        netThousands: num(r["הוצאה נטו"]),
-      }));
-      for (let i = 0; i < rows.length; i += 500) {
-        db.insert(schema.budgetLines).values(rows.slice(i, i + 500)).run();
-      }
-      const total = Math.round(rows.reduce((s, r) => s + (r.netThousands ?? 0), 0));
-      db.run(
-        sql`INSERT INTO budget_totals (year, total_thousands, basis, detailed) VALUES (${year}, ${total}, 'net', 1)
-            ON CONFLICT(year) DO UPDATE SET total_thousands=${total}, basis='net', detailed=1`,
-      );
-      console.log(`  ${year} (${budType}): ${rows.length} lines · net ≈ ₪${(total / 1e6).toFixed(1)}B`);
     }
   }
 
@@ -192,7 +200,12 @@ export async function syncBudget() {
 
 if (process.argv[1] && process.argv[1].endsWith("budget.ts")) {
   syncBudget()
-    .then(() => process.exit(0))
+    .then(() => {
+      // Fold the WAL into the main .db so a standalone run leaves a
+      // self-contained file (the committed DB is just data/knesset.db).
+      getDb().run(sql`PRAGMA wal_checkpoint(TRUNCATE)`);
+      process.exit(0);
+    })
     .catch((e) => {
       console.error(e);
       process.exit(1);

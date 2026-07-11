@@ -17,6 +17,23 @@ if (!fs.existsSync(DB)) {
   process.exit(1);
 }
 
+// Fold any live WAL back into the main .db FIRST. A standalone sync runner can
+// exit while its -wal still holds committed-but-uncheckpointed transactions;
+// opening read-write replays the WAL and a TRUNCATE checkpoint empties it. The
+// previous order rm'd the -wal before opening, silently discarding those writes
+// (integrity_check on the resulting file still passes — it's internally
+// consistent, just missing recent data).
+try {
+  const rw = new Database(DB);
+  const cp = rw.pragma("wal_checkpoint(TRUNCATE)");
+  rw.close();
+  console.log("wal_checkpoint:", JSON.stringify(cp));
+} catch (e) {
+  // A genuinely damaged DB may fail to open read-write — fall through to the
+  // integrity_check below, which reports it with recovery guidance.
+  console.warn("wal_checkpoint skipped:", e.message);
+}
+
 let removed = 0;
 for (const ext of ["-wal", "-shm", "-journal"]) {
   if (fs.existsSync(DB + ext)) {

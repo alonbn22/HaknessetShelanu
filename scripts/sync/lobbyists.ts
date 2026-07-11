@@ -71,7 +71,12 @@ export async function syncLobbyists() {
 
 if (process.argv[1] && process.argv[1].endsWith("lobbyists.ts")) {
   syncLobbyists()
-    .then(() => process.exit(0))
+    .then(() => {
+      // Fold the WAL into the main .db so a standalone run leaves a
+      // self-contained file (the committed DB is just data/knesset.db).
+      getDb().run(sql`PRAGMA wal_checkpoint(TRUNCATE)`);
+      process.exit(0);
+    })
     .catch((e) => {
       console.error(e);
       process.exit(1);

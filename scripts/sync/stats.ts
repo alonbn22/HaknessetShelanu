@@ -16,6 +16,22 @@ export function computeMkStats() {
   const db = getDb();
   console.log("Computing per-MK vote statistics…");
 
+  // Self-sufficient DDL (schema-exact) so a fresh, un-pushed DB self-heals like
+  // its sibling tables instead of crashing on the DELETE/INSERT below.
+  db.run(sql`
+    CREATE TABLE IF NOT EXISTS mk_vote_stats (
+      person_id integer NOT NULL,
+      knesset_num integer NOT NULL,
+      votes_held integer NOT NULL DEFAULT 0,
+      participated integer NOT NULL DEFAULT 0,
+      voted_for integer NOT NULL DEFAULT 0,
+      voted_against integer NOT NULL DEFAULT 0,
+      abstained integer NOT NULL DEFAULT 0,
+      missed integer NOT NULL DEFAULT 0,
+      participation_pct real NOT NULL DEFAULT 0,
+      PRIMARY KEY (person_id, knesset_num)
+    )
+  `);
   db.run(sql`DELETE FROM mk_vote_stats WHERE knesset_num = ${CURRENT_KNESSET}`);
 
   db.run(sql`

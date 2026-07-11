@@ -6,22 +6,70 @@ what data we could still surface.
 
 ## Next up (build queue)
 
-- [ ] **Committee agendas backfill** — the agenda/transcript sync (below) covers
-  a rolling ~120-day window (recent + upcoming meetings) to stay within the ~6h
-  sync budget, since the source API is slow. A one-off full backfill of older
-  meetings is available via `syncCommitteeSessionDetails(null)` if we want the
-  complete history materialized.
+Ordered roughly by value/effort. Grounded in tables that already exist unless noted.
+
+- [ ] **Per-ministry question accountability** — the per-MK "answered vs.
+  unanswered questions + response time" ships now (zero new sync: `queries` has
+  `submit_date`/`reply_date`, 1,079 of 1,587 answered). The per-*ministry*
+  breakdown needs a tiny `gov_ministries` lookup sync (`KNS_GovMinistry`) to
+  resolve the bare `gov_ministry_id`. Small, near-static; declare in schema.ts +
+  `CREATE IF NOT EXISTS` in sync, query try/catches to empty. (Roadmap note: the
+  old P1 text overstated what's synced — only `submit_date`/`reply_date` exist,
+  **not** `ReplyDatePlanned`/`StatusID`.)
+- [ ] **Rebellion drill-down** — the party-discipline % ships on member pages and
+  `/compare`, but not *which* votes an MK broke with their faction (the most
+  interesting part). A per-member expandable list computed from the same
+  `vote_results` + faction-membership join; precompute at sync like `mk_agreement`.
+- [ ] **Agenda-motion subjects on member pages** — `agendas` holds 800 motions
+  (all `name_he` populated) but they're displayed nowhere; the member page shows
+  only a count. Render recent motions like sponsored bills, via
+  `localizeData`/`queueDataTranslations` + `rtlAttrs`.
+- [ ] **Voting-days-per-period stat** — derive "how many days did the Knesset
+  vote this month/year" from `votes.session_id` (346 distinct sessions) +
+  `date_time` (415 distinct voting days) today — a home-dashboard accountability
+  number and a bridge to the plenum calendar below.
+- [ ] **Committee documents in global search** — `committee_session_docs` has
+  2,867 named protocols/materials with direct links, but search doesn't span
+  them. Let a citizen find "who discussed X in committee" and land on the meeting.
+- [ ] **Committee agendas backfill** — the agenda/transcript sync covers a rolling
+  ~120-day window (recent + upcoming) for the ~6h budget. A one-off full backfill
+  of older meetings is available via `syncCommitteeSessionDetails(null)`
+  (materialized: 1,396 items / 2,867 docs against 10,756 sittings).
 - [ ] **Plenum sitting calendar** — the other half of the session layer
   (`KNS_PlenumSession` + order paper + Divrei HaKnesset transcripts).
-- [ ] **Backfill checkpointing** — the first-ever `KNS_PlenumVoteResult`
-  backfill restarts if interrupted (windows run concurrently, so mid-run
-  cursoring is unsound); persist per-window completion if this ever bites.
-- [ ] **Budget page NaN guards** — `budget/page.tsx` passes an unvalidated
-  year/section param through (degrades to empty results, never crashes); add
-  the two-line guard when touching that page.
-- [ ] **Sitemap alternates** — per-URL `alternates.languages` entries (hreflang)
-  once a production domain exists; the sitemap currently lists each locale URL
-  separately.
+- [ ] **`KNS_KnessetDates` term metadata** — replace the hardcoded
+  `CURRENT_KNESSET = 25` (`src/lib/constants.ts`, used across 7 files incl. 4 sync
+  scripts) with a synced term table + dynamic current-term flag, so Knesset 26
+  doesn't require a manual edit of every query and sync.
+- [ ] **Chair-vs-member roles** — the ministers directory + committee rosters
+  ship; still to surface: chair badges (position_id 41, 143 rows), faction chairs
+  (position_id 48, 26 rows), deputy speakers (positions 70/71, 22 rows).
+- [ ] **Sitemap alternates** — per-URL `alternates.languages` (hreflang) once a
+  production domain exists; the sitemap currently lists each locale URL separately.
+- [ ] **Backfill checkpointing** — the `KNS_PlenumVoteResult` backfill writes its
+  cursor only after all concurrent windows finish, so an interrupted *from-scratch*
+  rebuild restarts from zero. Dormant (the K25 cursor is set); persist per-window
+  completion if a from-scratch rebuild ever bites.
+
+### Quality / infra follow-ups (from the review pass)
+
+- [ ] **Shared search + localize helpers** — extract a `SearchInput` client
+  component (the debounced input is copy-pasted across 6 filter components and has
+  drifted on width classes; the RTL-direction drift is already fixed) and a
+  server `localizePage(heStrings, locale)` helper (the `localizeData` +
+  `after(queueDataTranslations)` pair + three ad-hoc `titleOf` closures repeat
+  across ~13 pages). Pure maintainability; deferred to avoid churn mid-review.
+- [ ] **Nonce-based CSP** — baseline security headers ship (nosniff, Referrer-
+  Policy, X-Frame-Options, Permissions-Policy in `next.config.ts`); a real CSP
+  needs nonces because the pre-paint theme script is inline (a middleware change).
+- [ ] **Orphaned message keys** — ~27 keys look unreferenced after excluding the
+  dynamic `t(\`ns.${x}\`)` families; prune carefully (a wrongly-removed dynamic key
+  fails silently at runtime, so verify each before deleting).
+- [ ] **`safeHttpUrl` for DB-sourced hrefs (defense-in-depth)** — committee/bill
+  document links render OData URLs into `href` without the `httpUrl` scheme guard
+  that editorial YAML gets. **Not a live vuln** — React 19 sanitizes `javascript:`
+  hrefs unconditionally — so this is optional consistency + upgrading the one
+  remaining `http:` broadcast URL to https at sync time.
 
 ## Untapped API data — what more we could build
 
@@ -44,18 +92,19 @@ don't expose the agenda) + `KNS_DocumentPlenumSession` (Divrei HaKnesset / Hansa
 transcript links). → A **plenum calendar** ("how many days did the Knesset sit"),
 "what was on the floor today," and links to the official verbatim record.
 
-**P1 — Question accountability.** `KNS_Query` already carries `SubmitDate`,
-`ReplyMinisterDate`, `ReplyDatePlanned`, `StatusID` (we sync but under-use them) +
-`KNS_GovMinistry` (ministry registry → resolve the bare `GovMinistryID` we show
-today). → **"Answered vs. unanswered parliamentary questions" and response-time**
-per ministry/MK — a strong accountability metric with *zero new sync*. Add
-`KNS_DocumentQuerie` for the reply document (verify it returns rows with a
-`KnessetNum` filter — its default page came back empty).
+**P1 — Question accountability.** Correction after auditing the DB: the `queries`
+table only holds `submit_date` and `reply_date` — **not** `ReplyDatePlanned` or
+`StatusID`. Those two still suffice for **"answered vs. unanswered questions +
+response time" per MK with zero new sync** (1,079 of 1,587 answered, `type_desc`
+distinguishes urgent 205 / regular 1,382). The per-*ministry* breakdown is the
+only blocked part: `gov_ministry_id` has 36 distinct values and no name table, so
+it needs a tiny `KNS_GovMinistry` lookup sync. See "Next up" above. (`KNS_DocumentQuerie`
+for reply docs is still untried — verify it returns rows with a `KnessetNum` filter.)
 
-**P1 — Roles we already pull but don't surface.** `KNS_PersonToPosition` rows carry
-`DutyDesc`, `GovMinistryName`, `GovernmentNum`, `CommitteeName`, `FactionName`. →
-**Ministers directory, committee chairs/members roster, faction chairs** — no new
-sync, just expose the fields (label chairs vs. members by `PositionID`/`DutyDesc`).
+**P1 — Roles (largely shipped).** The ministers directory (`/ministers`) ships,
+and committee detail renders each member's `roleHe` (chair text included). Still to
+surface distinctly: chair badges (`position_id` 41), faction chairs (48), deputy
+speakers (70/71) — see "Chair-vs-member roles" in the queue. No new sync needed.
 
 **P1 — Term metadata.** `KNS_KnessetDates` (term name, assembly, plenum start/finish,
 `IsCurrent`). → A **Knesset-term timeline** and a dynamic current-term flag instead
@@ -92,6 +141,36 @@ socio-economic indices by municipality (data.gov.il) for context.
 
 ## Done (recent)
 
+- **Full review + hardening pass** (51-agent adversarial review, verified findings):
+  - *Sync correctness:* incremental vote-header fetch now gates on `VoteDateTime`
+    so a retro-edited pre-K25 vote can't be mislabeled current-Knesset;
+    LastUpdatedDate overlap so offset paging can't skip mid-pagination rows;
+    Wikidata enrichment uses COALESCE semantics (a dropped Commons batch no longer
+    nulls committed photos) + shared retry/backoff; section flags run only their
+    section (was silently a full sync); budget/bio non-fatal in a full run;
+    `db:clean` + standalone runners checkpoint the WAL before removing sidecars;
+    CI pins actions to SHAs and drops the `npm ci || npm install` lockfile bypass.
+  - *Query/page:* timezone-safe committee upcoming/recent split (`datetime()`
+    instants, not offset strings); out-of-range `?page=` clamps to the last page;
+    user search escapes LIKE `%`/`_` wildcards; budget `?year=` NaN guard;
+    roll-call faction grouping keyed by id not label.
+  - *i18n/a11y:* Hebrew-fallback member names (Regev, Smotrich, +3 with no
+    localized name) render `dir="rtl" lang="he"` everywhere via `rtlAttrs`;
+    theme toggle exposes `aria-pressed` + a state-aware label; committee doc links
+    get distinct accessible names; `meetingCount`/`agendaCount` are real ICU
+    plurals in all four locales.
+  - *Tests (+34, now 241):* DDL-parity (sync `CREATE TABLE` vs `schema.ts`, guarding
+    the documented `push --force` data-loss incident); committee-sessions timezone
+    split; dark-mode script parses+runs; Norwegian-Law serving/former + record
+    localizer; the three new feature queries. Extracted `isServingMember` +
+    `localizeMemberRecord` out of the 600-line member page to make them testable.
+  - *Safety:* token-bucket + LRU on the search-query translator (anti-proxy-abuse);
+    party-profile URLs use the `httpUrl` scheme guard; baseline security headers.
+- **This week in the Knesset** (home): committee sittings in the next 7 days.
+- **Committee activity ranking** (`/committees`): meetings-held per committee,
+  sorted most-active first.
+- **Close-votes filter** (`/votes?close=1`): votes decided by ≤5 — where a few
+  absent MKs swing the result.
 - **Committee agendas + transcripts** (`/committees/[id]`): each meeting expands
   to its agenda items (`KNS_CmtSessionItem`) and documents
   (`KNS_DocumentCommitteeSession`) — protocol/transcript, background material,

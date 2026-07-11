@@ -8,7 +8,7 @@ import { FeedbackActions } from "@/components/FeedbackActions";
 import { RecordSection } from "./RecordSection";
 import { formatDate } from "@/lib/format";
 import { govDuty, govMinistry } from "@/lib/gov-terms";
-import { getMemberRecord } from "@/lib/content";
+import { getMemberRecord, memberRecordHeStrings, localizeMemberRecord } from "@/lib/content";
 import { isCoalitionFaction } from "@/lib/content";
 import {
   getMember,
@@ -26,7 +26,7 @@ import {
   getMemberBio,
   personName,
   factionName,
-  isCurrentMk,
+  isServingMember,
 } from "@/lib/queries";
 import {
   localizeData,
@@ -35,7 +35,7 @@ import {
   resolveLocalized,
 } from "@/lib/i18n-data";
 import { localizedAttrs, rtlAttrs } from "@/lib/text";
-import { POSITION_FACTION_MEMBER, MK_POSITION_IDS, CURRENT_KNESSET } from "@/lib/constants";
+import { POSITION_FACTION_MEMBER, MK_POSITION_IDS } from "@/lib/constants";
 import { after } from "next/server";
 
 export const dynamic = "force-dynamic";
@@ -88,30 +88,14 @@ export default async function MemberPage({
     (he && voteTitles.get(he.trim())) || { text: he ?? "", translated: false };
   if (locale !== "he")
     after(() => queueDataTranslations(recentVotes.map((r) => r.vote.titleHe), locale));
+  // Translate record claims on the fly (curated locale text wins, else the unified
+  // cache). Extraction + transform live in content.ts; localizeData + the after()
+  // queue stay here because they're request-scoped.
   const rawRecord = getMemberRecord(personId);
-  // Translate record claims on the fly: curated locale text wins, otherwise we
-  // fall back to the unified translation cache so newly-added records (which may
-  // only carry he/en) still localize to ar/ru without per-record hand-editing.
-  let record = rawRecord;
-  if (rawRecord && locale !== "he") {
-    const heStrings = rawRecord.claims.flatMap((c) =>
-      [c.title.he, c.description?.he].filter((s): s is string => Boolean(s)),
-    );
-    const recMap = localizeData(heStrings, locale);
-    after(() => queueDataTranslations(heStrings, locale));
-    const resolve = (txt: { he: string; en?: string; ar?: string; ru?: string }) =>
-      (txt[locale as "en" | "ar" | "ru"] ?? recMap.get(txt.he.trim())?.text ?? txt.he);
-    record = {
-      ...rawRecord,
-      claims: rawRecord.claims.map((c) => ({
-        ...c,
-        title: { ...c.title, [locale]: resolve(c.title) },
-        description: c.description
-          ? { ...c.description, [locale]: resolve(c.description) }
-          : undefined,
-      })),
-    };
-  }
+  const recordHe = locale === "he" ? [] : memberRecordHeStrings(rawRecord);
+  const recMap = localizeData(recordHe, locale);
+  if (recordHe.length) after(() => queueDataTranslations(recordHe, locale));
+  const record = localizeMemberRecord(rawRecord, locale, recMap);
   const sponsoredBills = getMemberSponsoredBills(personId, 12);
   const sponsoredCount = getMemberSponsoredCount(personId);
   const questionCount = getMemberQuestionCount(personId);
@@ -128,19 +112,7 @@ export default async function MemberPage({
       !MK_POSITION_IDS.includes(p.positionId) &&
       p.positionId !== POSITION_FACTION_MEMBER,
   );
-  // Serving = a current MK, OR a current minister who vacated their seat under
-  // the Norwegian Law (a current-Knesset position with a ministry/faction but no
-  // MK seat). Otherwise they'd be wrongly labeled "former MK".
-  const serving =
-    isCurrentMk(positions) ||
-    positions.some(
-      (p) =>
-        p.knessetNum === CURRENT_KNESSET &&
-        p.isCurrent &&
-        (MK_POSITION_IDS.includes(p.positionId) ||
-          p.positionId === POSITION_FACTION_MEMBER ||
-          p.govMinistryNameHe != null),
-    );
+  const serving = isServingMember(positions);
 
   const bio = getMemberBio(personId);
   // Career/positions are shown in the Roles section below (Knesset source), so the

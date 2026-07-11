@@ -369,6 +369,24 @@ export function isCurrentMk(positions: PositionRow[]): boolean {
   );
 }
 
+// Serving = a current MK, OR a current minister who vacated their seat under the
+// Norwegian Law (a current-Knesset position with a ministry/faction but no MK
+// seat). Anyone else with only past positions is a former MK. Extracted from the
+// member page so this legally-sensitive "former vs serving" call is unit-tested.
+export function isServingMember(positions: PositionRow[]): boolean {
+  return (
+    isCurrentMk(positions) ||
+    positions.some(
+      (p) =>
+        p.knessetNum === CURRENT_KNESSET &&
+        p.isCurrent &&
+        (MK_POSITION_IDS.includes(p.positionId) ||
+          p.positionId === POSITION_FACTION_MEMBER ||
+          p.govMinistryNameHe != null),
+    )
+  );
+}
+
 // ---------- vote stats ----------
 
 export type MkStats = typeof schema.mkVoteStats.$inferSelect;

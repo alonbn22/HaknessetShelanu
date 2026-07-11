@@ -95,8 +95,8 @@ const partyProfileSchema = z.object({
   leaderHe: z.string().optional(),
   leaderEn: z.string().optional(),
   founded: z.number().optional(),
-  website: z.string().url().optional(),
-  wikipediaEn: z.string().url().optional(),
+  website: httpUrl.optional(),
+  wikipediaEn: httpUrl.optional(),
   tags: z.array(z.string()).optional(),
   summary: localizedText,
   positions: localizedList.optional(),
@@ -185,6 +185,40 @@ export function getMemberRecord(personId: number): MemberRecord | null {
   const file = path.join(CONTENT_DIR, "members", `${personId}.yaml`);
   if (!fs.existsSync(file)) return null;
   return memberRecordSchema.parse(parse(fs.readFileSync(file, "utf8")));
+}
+
+// The Hebrew claim strings a record renders — the caller passes these to
+// localizeData / queueDataTranslations before calling localizeMemberRecord.
+export function memberRecordHeStrings(record: MemberRecord | null): string[] {
+  if (!record) return [];
+  return record.claims.flatMap((c) =>
+    [c.title.he, c.description?.he].filter((s): s is string => Boolean(s)),
+  );
+}
+
+// Localize a record's claim text into `locale`: curated locale text wins, else
+// fall back to the unified translation cache (so a record authored only he/en
+// still reaches ar/ru without hand-editing every file). Pure transform — the
+// caller supplies the resolved cache (and queues any misses in after()). Kept
+// beside getMemberRecord so this legally-sensitive text handling is testable.
+export function localizeMemberRecord(
+  record: MemberRecord | null,
+  locale: string,
+  cache: Map<string, { text: string }>,
+): MemberRecord | null {
+  if (!record || locale === "he") return record;
+  const resolve = (txt: { he: string; en?: string; ar?: string; ru?: string }) =>
+    txt[locale as "en" | "ar" | "ru"] ?? cache.get(txt.he.trim())?.text ?? txt.he;
+  return {
+    ...record,
+    claims: record.claims.map((c) => ({
+      ...c,
+      title: { ...c.title, [locale]: resolve(c.title) },
+      description: c.description
+        ? { ...c.description, [locale]: resolve(c.description) }
+        : undefined,
+    })),
+  };
 }
 
 // ---------- elections history ----------

@@ -25,7 +25,7 @@ export default async function LawsPage({
     : "all") as LawStatus;
 
   const searchHe = await translateQueryToHebrew(params.q, locale);
-  const { items, total, pages } = getLawVotesPage({
+  const { items, total, pages, page: curPage } = getLawVotesPage({
     search: params.q,
     searchHe,
     status,
@@ -60,7 +60,7 @@ export default async function LawsPage({
         </div>
       )}
 
-      <Pagination page={page} pages={pages} basePath="/laws" query={query} />
+      <Pagination page={curPage} pages={pages} basePath="/laws" query={query} />
     </div>
   );
 }

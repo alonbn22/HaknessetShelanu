@@ -73,11 +73,12 @@ export function VoteRollCall({
   // Filter, then group by faction (faction order by group size).
   const groups = useMemo(() => {
     const shown = filter == null ? voters : voters.filter((v) => v.resultCode === filter);
-    const map = new Map<string, { label: string; rtl: boolean; color: string; rows: Voter[] }>();
+    const map = new Map<string, { key: string; label: string; rtl: boolean; color: string; rows: Voter[] }>();
     for (const v of shown) {
       const key = String(v.factionId ?? v.factionLabel ?? "?");
       if (!map.has(key))
         map.set(key, {
+          key,
           label: v.factionLabel,
           rtl: v.factionLabelRtl,
           color: v.factionColor,
@@ -120,7 +121,7 @@ export function VoteRollCall({
       <div className="grid gap-4 md:grid-cols-2">
         {groups.map((g) => (
           <div
-            key={g.label}
+            key={g.key}
             className="rounded-xl bg-white p-4 shadow-sm border-s-4"
             style={{ borderInlineStartColor: g.color }}
           >

@@ -19,7 +19,7 @@ export default async function VotesPage({
   const params = await searchParams;
   const page = Math.max(1, parseInt(params.page ?? "1", 10) || 1);
   const searchHe = await translateQueryToHebrew(params.q, locale);
-  const { items, pages } = getVotesPage(page, params.q, searchHe);
+  const { items, pages, page: curPage } = getVotesPage(page, params.q, searchHe);
 
   const titles = localizeData(items.map((v) => v.titleHe), locale);
   const titleOf = (he: string | null) =>
@@ -42,7 +42,7 @@ export default async function VotesPage({
         </div>
       )}
       <Pagination
-        page={page}
+        page={curPage}
         pages={pages}
         basePath="/votes"
         query={params.q ? { q: params.q } : {}}

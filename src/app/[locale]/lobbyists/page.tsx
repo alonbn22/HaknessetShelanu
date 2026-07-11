@@ -26,7 +26,7 @@ export default async function LobbyistsPage({
     : "name";
   const stats = getLobbyistStats();
   const searchHe = await translateQueryToHebrew(params.q, locale);
-  const { items, total, pages } = getLobbyistsPage({ search: params.q, searchHe, page, sort });
+  const { items, total, pages, page: curPage } = getLobbyistsPage({ search: params.q, searchHe, page, sort });
   // Link to a sort, preserving the search query (and resetting to page 1).
   const sortHref = (s: LobbyistSort) =>
     `/lobbyists?${new URLSearchParams({ ...(params.q ? { q: params.q } : {}), sort: s })}`;
@@ -144,7 +144,7 @@ export default async function LobbyistsPage({
         </ul>
       )}
 
-      <Pagination page={page} pages={pages} basePath="/lobbyists" query={query} />
+      <Pagination page={curPage} pages={pages} basePath="/lobbyists" query={query} />
 
       {/* Foreign aid / foreign donations explainer (no clean per-record open data). */}
       <section className="rounded-xl border border-black/10 bg-white p-5 shadow-sm space-y-3">

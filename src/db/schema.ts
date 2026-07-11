@@ -274,7 +274,9 @@ export const committeeSessions = sqliteTable(
     broadcastUrl: text("broadcast_url"),
     lastUpdated: text("last_updated"),
   },
-  (t) => [index("cmt_session_committee_idx").on(t.committeeId)],
+  // Composite (committee_id, start_date): the per-committee lookup AND the
+  // upcoming/recent split's ORDER BY start_date, without a TEMP B-TREE sort.
+  (t) => [index("cmt_session_committee_idx").on(t.committeeId, t.startDate)],
 );
 
 // Agenda items discussed in each committee meeting (KNS_CmtSessionItem) — the
@@ -327,7 +329,12 @@ export const israelLaws = sqliteTable(
     validityDesc: text("validity_desc"),
     lastUpdated: text("last_updated"),
   },
-  (t) => [index("law_name_idx").on(t.nameHe)],
+  // law_name_idx: name search. law_pubdate_idx: the law-book list's default
+  // ORDER BY publication_date DESC (was a full scan + TEMP B-TREE sort).
+  (t) => [
+    index("law_name_idx").on(t.nameHe),
+    index("law_pubdate_idx").on(t.publicationDate),
+  ],
 );
 
 // State budget line items (Ministry of Finance open data, via data.gov.il).

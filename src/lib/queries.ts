@@ -1,5 +1,5 @@
 import { cache } from "react";
-import { and, asc, desc, eq, gt, inArray, lte, like, or, sql } from "drizzle-orm";
+import { and, asc, desc, eq, inArray, or, sql, type SQL, type AnyColumn } from "drizzle-orm";
 import { getDb, schema } from "@/db";
 import { getCoalitionConfig, getFactionMeta } from "./content";
 import {
@@ -39,6 +39,29 @@ export function factionColor(factionId: number): string {
 }
 
 // Vote/data titles are localized via the unified cache (src/lib/i18n-data.ts).
+
+// LIKE-metacharacter-safe "contains" matching. SQLite's LIKE treats % and _ as
+// wildcards and has no default escape char, so a user searching "50%" or "a_b"
+// would otherwise get wildcard behaviour. `escapeLikePattern` escapes % _ and the
+// backslash, and `likeContains` pairs the escaped pattern with `ESCAPE '\'`. The
+// pattern is still bound as a parameter (injection-safe — only the term's own
+// wildcards are neutralized). `col` may be a column or a SQL expression.
+function escapeLikePattern(term: string): string {
+  return `%${term.replace(/[\\%_]/g, (c) => `\\${c}`)}%`;
+}
+function likeContains(col: AnyColumn | SQL, term: string): SQL {
+  return sql`${col} like ${escapeLikePattern(term)} escape '\\'`;
+}
+
+// Clamp a requested page into [1, pages] given the total row count, so an
+// out-of-range ?page= (e.g. ?page=9999) returns the LAST page's rows instead of
+// an empty "no results" screen that looks identical to a search with no matches.
+// Returns the effective page (callers pass it to <Pagination>) and its offset.
+function paginate(total: number, size: number, page: number) {
+  const pages = Math.max(1, Math.ceil(total / size));
+  const current = Math.min(Math.max(1, page), pages);
+  return { pages, current, offset: (current - 1) * size };
+}
 
 // Faction ids whose display name (any language) contains the query —
 // lets the member search match by party name across locales.
@@ -179,15 +202,15 @@ export function getCurrentMembers(filters?: {
     eq(schema.persons.isCurrent, true),
   ];
   if (filters?.search) {
-    const q = `%${filters.search}%`;
-    const factionIds = matchFactionIds(filters.search);
+    const s = filters.search;
+    const factionIds = matchFactionIds(s);
     conditions.push(
       or(
-        like(sql`${schema.persons.firstNameHe} || ' ' || ${schema.persons.lastNameHe}`, q),
-        like(schema.persons.nameEn, q),
-        like(schema.persons.nameAr, q),
-        like(schema.persons.nameRu, q),
-        like(schema.personPositions.factionNameHe, q),
+        likeContains(sql`${schema.persons.firstNameHe} || ' ' || ${schema.persons.lastNameHe}`, s),
+        likeContains(schema.persons.nameEn, s),
+        likeContains(schema.persons.nameAr, s),
+        likeContains(schema.persons.nameRu, s),
+        likeContains(schema.personPositions.factionNameHe, s),
         factionIds.length
           ? inArray(schema.personPositions.factionId, factionIds)
           : sql`0`,
@@ -641,8 +664,8 @@ const VOTES_PAGE_SIZE = 25;
 // query is translated to Hebrew (searchHe) and matched against the always-present
 // titleHe, plus the raw query (for names/numbers that shouldn't be translated).
 function titleSearchCondition(search: string, searchHe?: string) {
-  const terms = [like(schema.votes.titleHe, `%${searchHe || search}%`)];
-  if (searchHe && searchHe !== search) terms.push(like(schema.votes.titleHe, `%${search}%`));
+  const terms = [likeContains(schema.votes.titleHe, searchHe || search)];
+  if (searchHe && searchHe !== search) terms.push(likeContains(schema.votes.titleHe, search));
   return or(...terms)!;
 }
 
@@ -659,15 +682,16 @@ export function getVotesPage(page: number, search?: string, searchHe?: string) {
       .from(schema.votes)
       .where(where)
       .get()?.n ?? 0;
+  const { pages, current, offset } = paginate(total, VOTES_PAGE_SIZE, page);
   const items = db
     .select()
     .from(schema.votes)
     .where(where)
     .orderBy(desc(schema.votes.dateTime))
     .limit(VOTES_PAGE_SIZE)
-    .offset((page - 1) * VOTES_PAGE_SIZE)
+    .offset(offset)
     .all();
-  return { items, total, pages: Math.max(1, Math.ceil(total / VOTES_PAGE_SIZE)) };
+  return { items, total, pages, page: current };
 }
 
 // Cached per-request: the vote-detail page calls this directly and again via
@@ -675,28 +699,6 @@ export function getVotesPage(page: number, search?: string, searchHe?: string) {
 export const getVote = cache((id: number): Vote | undefined => {
   return getDb().select().from(schema.votes).where(eq(schema.votes.id, id)).get();
 });
-
-// Recent legislation: bill-reading votes (the "for" option mentions a reading
-// stage), split into passed and rejected. These are the votes that make law.
-export function getRecentLawVotes(limit = 15): { passed: Vote[]; rejected: Vote[] } {
-  const db = getDb();
-  const isReading = sql`${schema.votes.forDesc} LIKE '%קריאה%'`;
-  const base = (accepted: boolean) =>
-    db
-      .select()
-      .from(schema.votes)
-      .where(
-        and(
-          eq(schema.votes.knessetNum, CURRENT_KNESSET),
-          isReading,
-          eq(schema.votes.isAccepted, accepted),
-        ),
-      )
-      .orderBy(desc(schema.votes.dateTime))
-      .limit(limit)
-      .all();
-  return { passed: base(true), rejected: base(false) };
-}
 
 export type LawStatus = "all" | "passed" | "rejected" | "raised" | "final";
 
@@ -738,15 +740,16 @@ export function getLawVotesPage(opts: {
   const where = and(...conditions);
   const total =
     db.select({ n: sql<number>`COUNT(*)` }).from(schema.votes).where(where).get()?.n ?? 0;
+  const { pages, current, offset } = paginate(total, LAWS_PAGE_SIZE, page);
   const items = db
     .select()
     .from(schema.votes)
     .where(where)
     .orderBy(desc(schema.votes.dateTime))
     .limit(LAWS_PAGE_SIZE)
-    .offset((page - 1) * LAWS_PAGE_SIZE)
+    .offset(offset)
     .all();
-  return { items, total, pages: Math.max(1, Math.ceil(total / LAWS_PAGE_SIZE)) };
+  return { items, total, pages, page: current };
 }
 
 export type VoterRow = {
@@ -1049,7 +1052,10 @@ export function getCommitteeSessions(committeeId: number, nowIso: string, limit 
       .where(
         and(
           eq(schema.committeeSessions.committeeId, committeeId),
-          gt(schema.committeeSessions.startDate, nowIso),
+          // start_date carries a local +02:00/+03:00 offset; nowIso is UTC 'Z'.
+          // Compare as normalized instants (datetime() converts to UTC) so a
+          // meeting isn't misfiled upcoming/recent within the offset window.
+          sql`datetime(${schema.committeeSessions.startDate}) > datetime(${nowIso})`,
         ),
       )
       .orderBy(asc(schema.committeeSessions.startDate))
@@ -1061,7 +1067,7 @@ export function getCommitteeSessions(committeeId: number, nowIso: string, limit 
       .where(
         and(
           eq(schema.committeeSessions.committeeId, committeeId),
-          lte(schema.committeeSessions.startDate, nowIso),
+          sql`datetime(${schema.committeeSessions.startDate}) <= datetime(${nowIso})`,
         ),
       )
       .orderBy(desc(schema.committeeSessions.startDate))
@@ -1148,22 +1154,23 @@ export function getLawBookPage(opts: {
     const he = opts.searchHe || opts.search;
     conditions.push(
       he !== opts.search
-        ? or(like(schema.israelLaws.nameHe, `%${he}%`), like(schema.israelLaws.nameHe, `%${opts.search}%`))!
-        : like(schema.israelLaws.nameHe, `%${opts.search}%`),
+        ? or(likeContains(schema.israelLaws.nameHe, he), likeContains(schema.israelLaws.nameHe, opts.search))!
+        : likeContains(schema.israelLaws.nameHe, opts.search),
     );
   }
   const where = and(...conditions);
   const total =
     db.select({ n: sql<number>`COUNT(*)` }).from(schema.israelLaws).where(where).get()?.n ?? 0;
+  const { pages, current, offset } = paginate(total, LAWBOOK_PAGE_SIZE, page);
   const items = db
     .select()
     .from(schema.israelLaws)
     .where(where)
     .orderBy(desc(schema.israelLaws.publicationDate))
     .limit(LAWBOOK_PAGE_SIZE)
-    .offset((page - 1) * LAWBOOK_PAGE_SIZE)
+    .offset(offset)
     .all();
-  return { items, total, pages: Math.max(1, Math.ceil(total / LAWBOOK_PAGE_SIZE)) };
+  return { items, total, pages, page: current };
 }
 
 // ---------- state budget ----------
@@ -1277,21 +1284,20 @@ export function getBudgetLines(opts: {
 }) {
   const db = getDb();
   const year = resolveYear(opts.year);
-  if (year == null) return { items: [], total: 0, pages: 1, year: null };
+  if (year == null) return { items: [], total: 0, pages: 1, page: 1, year: null };
   const page = Math.max(1, opts.page ?? 1);
 
   const conditions = [eq(schema.budgetLines.year, year)];
   if (opts.section != null) conditions.push(eq(schema.budgetLines.sectionCode, opts.section));
   if (opts.search) {
-    const terms: ReturnType<typeof like>[] = [];
+    const terms: SQL[] = [];
     for (const term of [opts.searchHe || opts.search, opts.search]) {
-      const q = `%${term}%`;
       terms.push(
-        like(schema.budgetLines.takanaNameHe, q),
-        like(schema.budgetLines.programNameHe, q),
-        like(schema.budgetLines.sectionNameHe, q),
-        like(schema.budgetLines.areaNameHe, q),
-        like(sql`CAST(${schema.budgetLines.takanaCode} AS TEXT)`, q),
+        likeContains(schema.budgetLines.takanaNameHe, term),
+        likeContains(schema.budgetLines.programNameHe, term),
+        likeContains(schema.budgetLines.sectionNameHe, term),
+        likeContains(schema.budgetLines.areaNameHe, term),
+        likeContains(sql`CAST(${schema.budgetLines.takanaCode} AS TEXT)`, term),
       );
     }
     conditions.push(or(...terms)!);
@@ -1308,16 +1314,17 @@ export function getBudgetLines(opts: {
         ? schema.budgetLines.takanaCode
         : desc(schema.budgetLines.netThousands);
 
+  const { pages, current, offset } = paginate(total, BUDGET_PAGE_SIZE, page);
   const items = db
     .select()
     .from(schema.budgetLines)
     .where(where)
     .orderBy(order)
     .limit(BUDGET_PAGE_SIZE)
-    .offset((page - 1) * BUDGET_PAGE_SIZE)
+    .offset(offset)
     .all();
 
-  return { items, total, pages: Math.max(1, Math.ceil(total / BUDGET_PAGE_SIZE)), year };
+  return { items, total, pages, page: current, year };
 }
 
 // ---------- lobbyists ----------
@@ -1359,13 +1366,13 @@ export function getLobbyistsPage(opts: {
 
   const conditions = [];
   if (opts.search) {
-    const terms = [];
+    const terms: SQL[] = [];
     for (const term of [opts.searchHe || opts.search, opts.search]) {
-      const q = `%${term}%`;
+      const pattern = escapeLikePattern(term);
       terms.push(
-        like(schema.lobbyists.fullName, q),
-        like(schema.lobbyists.corporationName, q),
-        sql`EXISTS (SELECT 1 FROM lobbyist_clients lc WHERE lc.lobbyist_id = ${schema.lobbyists.id} AND lc.client_name LIKE ${q})`,
+        likeContains(schema.lobbyists.fullName, term),
+        likeContains(schema.lobbyists.corporationName, term),
+        sql`EXISTS (SELECT 1 FROM lobbyist_clients lc WHERE lc.lobbyist_id = ${schema.lobbyists.id} AND lc.client_name LIKE ${pattern} ESCAPE '\\')`,
       );
     }
     conditions.push(or(...terms)!);
@@ -1374,6 +1381,7 @@ export function getLobbyistsPage(opts: {
 
   const total =
     db.select({ n: sql<number>`COUNT(*)` }).from(schema.lobbyists).where(where).get()?.n ?? 0;
+  const { pages, current, offset } = paginate(total, LOBBYIST_PAGE_SIZE, page);
 
   // Sort: by lobbyist name (default), by firm, or by number of clients (desc).
   const orderBy =
@@ -1389,7 +1397,7 @@ export function getLobbyistsPage(opts: {
     .where(where)
     .orderBy(orderBy)
     .limit(LOBBYIST_PAGE_SIZE)
-    .offset((page - 1) * LOBBYIST_PAGE_SIZE)
+    .offset(offset)
     .all();
 
   // Attach clients per lobbyist.
@@ -1426,7 +1434,8 @@ export function getLobbyistsPage(opts: {
   return {
     items: withClients,
     total,
-    pages: Math.max(1, Math.ceil(total / LOBBYIST_PAGE_SIZE)),
+    pages,
+    page: current,
   };
 }
 
@@ -1704,13 +1713,15 @@ export function searchAll(query: string, searchHe: string, locale: string): Sear
     }
     return rows;
   };
-  const q = `%${trimmed}%`;
-  const qHe = `%${(searchHe || trimmed).trim()}%`;
+  const term = trimmed;
+  const termHe = (searchHe || trimmed).trim();
   // Hebrew-text columns: match the translated query, and — when the translation
   // actually changed it — also the raw query, so a wrong/partial translation
   // can't hide rows the user typed verbatim (mirrors titleSearchCondition).
-  const likeHe = (col: Parameters<typeof like>[0]) =>
-    qHe !== q ? or(like(col, qHe), like(col, q))! : like(col, qHe);
+  const likeHe = (col: AnyColumn | SQL) =>
+    termHe !== term
+      ? or(likeContains(col, termHe), likeContains(col, term))!
+      : likeContains(col, termHe);
 
   const factionIds = matchFactionIds(trimmed);
 
@@ -1727,10 +1738,10 @@ export function searchAll(query: string, searchHe: string, locale: string): Sear
         and(
           eq(schema.personPositions.knessetNum, CURRENT_KNESSET),
           or(
-            like(sql`${schema.persons.firstNameHe} || ' ' || ${schema.persons.lastNameHe}`, qHe),
-            like(schema.persons.nameEn, q),
-            like(schema.persons.nameAr, q),
-            like(schema.persons.nameRu, q),
+            likeContains(sql`${schema.persons.firstNameHe} || ' ' || ${schema.persons.lastNameHe}`, termHe),
+            likeContains(schema.persons.nameEn, term),
+            likeContains(schema.persons.nameAr, term),
+            likeContains(schema.persons.nameRu, term),
           )!,
         ),
       )
@@ -1756,10 +1767,10 @@ export function searchAll(query: string, searchHe: string, locale: string): Sear
         and(
           eq(schema.factions.isCurrent, true),
           or(
-            like(schema.factions.nameHe, qHe),
-            like(schema.factions.nameEn, q),
-            like(schema.factions.nameAr, q),
-            like(schema.factions.nameRu, q),
+            likeContains(schema.factions.nameHe, termHe),
+            likeContains(schema.factions.nameEn, term),
+            likeContains(schema.factions.nameAr, term),
+            likeContains(schema.factions.nameRu, term),
             factionIds.length ? inArray(schema.factions.id, factionIds) : sql`0`,
           )!,
         ),

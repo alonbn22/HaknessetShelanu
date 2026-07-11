@@ -19,7 +19,7 @@ export default async function LawBookPage({
   const params = await searchParams;
   const page = Math.max(1, parseInt(params.page ?? "1", 10) || 1);
   const searchHe = await translateQueryToHebrew(params.q, locale);
-  const { items, total, pages } = getLawBookPage({
+  const { items, total, pages, page: curPage } = getLawBookPage({
     search: params.q,
     searchHe,
     basicOnly: params.basic === "1",
@@ -73,7 +73,7 @@ export default async function LawBookPage({
         </ul>
       )}
 
-      <Pagination page={page} pages={pages} basePath="/lawbook" query={query} />
+      <Pagination page={curPage} pages={pages} basePath="/lawbook" query={query} />
       <p className="text-xs text-muted">{t("note")}</p>
     </div>
   );

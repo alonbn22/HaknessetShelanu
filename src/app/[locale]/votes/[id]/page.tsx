@@ -133,8 +133,10 @@ export default async function VotePage({
           {title.text}
         </h1>
         {title.translated && (
-          <p className="text-sm text-muted" dir="rtl" lang="he">
-            {t("votes.autoTranslated")} · {t("votes.originalHebrew")}: {vote.titleHe}
+          <p className="text-sm text-muted">
+            {/* Labels are in the UI language; only the original title is Hebrew. */}
+            {t("votes.autoTranslated")} · {t("votes.originalHebrew")}:{" "}
+            <span dir="rtl" lang="he">{vote.titleHe}</span>
           </p>
         )}
         {/* When the vote took place */}

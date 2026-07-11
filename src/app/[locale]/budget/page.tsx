@@ -37,7 +37,9 @@ export default async function BudgetPage({
   const params = await searchParams;
 
   const years = getBudgetDetailedYears();
-  const reqYear = params.year ? parseInt(params.year, 10) : undefined;
+  // Guard against ?year=abc → NaN reaching the query (degrades to empty results).
+  const parsedYear = params.year ? parseInt(params.year, 10) : NaN;
+  const reqYear = Number.isNaN(parsedYear) ? undefined : parsedYear;
   const meta = getBudgetMeta(reqYear);
   const year = meta.year;
   const sections = getBudgetSections(year ?? undefined);
@@ -52,7 +54,7 @@ export default async function BudgetPage({
     : "amount") as SortKey;
   const searchHe = await translateQueryToHebrew(params.q, locale);
 
-  const { items, total, pages } = getBudgetLines({
+  const { items, total, pages, page: curPage } = getBudgetLines({
     year: year ?? undefined,
     search: params.q,
     searchHe,
@@ -278,7 +280,7 @@ export default async function BudgetPage({
             </div>
           )}
 
-          <Pagination page={page} pages={pages} basePath="/budget" query={query} />
+          <Pagination page={curPage} pages={pages} basePath="/budget" query={query} />
         </div>
       </section>
 

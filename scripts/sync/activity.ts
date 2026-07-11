@@ -17,7 +17,7 @@ export async function syncCommitteeSessions() {
      )`,
   );
   db.$client.exec(
-    "CREATE INDEX IF NOT EXISTS cmt_session_committee_idx ON committee_sessions (committee_id)",
+    "CREATE INDEX IF NOT EXISTS cmt_session_committee_idx ON committee_sessions (committee_id, start_date)",
   );
   console.log("Syncing committee sessions…");
   let n = 0;

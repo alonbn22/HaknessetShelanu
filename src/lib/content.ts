@@ -339,6 +339,72 @@ export function getBudgetOutlook(): BudgetOutlook[] {
   return _budgetOutlook;
 }
 
+// ---------- upcoming election (editorial) ----------
+
+// A sourced editorial "fact" line: label + value/detail + at least one citation.
+// Reused for key facts, rules, and statistics on the upcoming-election section.
+// `status` keeps the site honest about certainty (an official announcement vs.
+// the statutory default vs. a media report).
+const electionFactSchema = z.object({
+  key: z.string(),
+  label: localizedText,
+  value: localizedText.optional(),
+  detail: localizedText.optional(),
+  status: z.enum(["confirmed", "scheduled-by-law", "reported"]).optional(),
+  sources: z
+    .array(z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() }))
+    .min(1, "every election fact must cite at least one source"),
+});
+
+// A party expected to run. Lists are only final once submitted to the Central
+// Elections Committee — `note` carries that framing; every entry is sourced.
+const electionPartySchema = z.object({
+  name: localizedText,
+  leader: localizedText.optional(),
+  note: localizedText.optional(),
+  factionId: z.number().optional(), // links to /parties/<id> when it maps to a sitting faction
+  sources: z
+    .array(z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() }))
+    .min(1, "every party entry must cite at least one source"),
+});
+
+const electionOutlookSchema = z.object({
+  knesset: z.number(), // the Knesset being elected (26)
+  expectedDate: z.string().optional(), // ISO date when known
+  dateStatus: z.enum(["set", "scheduled-by-law", "reported"]),
+  lastReviewed: z.string(), // YYYY-MM-DD editorial verification date
+  headline: localizedText,
+  intro: localizedText,
+  facts: z.array(electionFactSchema),
+  parties: z.array(electionPartySchema),
+  rules: z.array(electionFactSchema),
+  stats: z.array(electionFactSchema),
+  news: z
+    .array(z.object({ date: z.string().optional(), text: localizedText }))
+    .optional(),
+  links: z.array(z.object({ label: localizedText, url: httpUrl })),
+  disclaimer: localizedText.optional(),
+});
+export type ElectionOutlook = z.infer<typeof electionOutlookSchema>;
+export type ElectionFact = z.infer<typeof electionFactSchema>;
+export type ElectionParty = z.infer<typeof electionPartySchema>;
+
+let _electionOutlook: ElectionOutlook | null | undefined;
+
+// null when the file is absent or invalid — the section simply doesn't render,
+// so a not-yet-written or mid-edit YAML can never break the site.
+export function getElectionOutlook(): ElectionOutlook | null {
+  if (_electionOutlook === undefined) {
+    try {
+      const raw = fs.readFileSync(path.join(CONTENT_DIR, "election.yaml"), "utf8");
+      _electionOutlook = electionOutlookSchema.parse(parse(raw));
+    } catch {
+      _electionOutlook = null;
+    }
+  }
+  return _electionOutlook;
+}
+
 // ---------- foreign aid & funding (editorial) ----------
 
 const foreignAidSchema = z.object({

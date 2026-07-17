@@ -366,6 +366,23 @@
     "cat_rights": "Rights & law",
     "cat_international": "International affairs"
   },
+  "election": {
+    "title": "The upcoming Knesset election",
+    "expectedDate": "Expected date",
+    "statusSet": "Date set",
+    "statusByLaw": "Statutory date",
+    "statusReported": "Per reports",
+    "keyFacts": "Key facts",
+    "parties": "Who is expected to run",
+    "partiesNote": "Candidate lists are final only once submitted to the Central Elections Committee; until then the field may change.",
+    "rules": "Election rules",
+    "stats": "Facts & figures",
+    "news": "Updates",
+    "leader": "Led by",
+    "lastReviewed": "Last reviewed: {date}",
+    "homeTitle": "2026 election",
+    "homeCta": "Everything about the upcoming election"
+  },
   "electionsHistory": {
     "title": "Knesset Elections History",
     "subtitle": "Every Israeli election — when, who led, and how many seats.",

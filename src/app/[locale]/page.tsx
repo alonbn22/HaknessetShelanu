@@ -19,9 +19,9 @@ import {
   factionName,
 } from "@/lib/queries";
 import { localizeData, queueDataTranslations, committeeLabel, resolveLocalized } from "@/lib/i18n-data";
-import { getControversialLaws, partyText } from "@/lib/content";
+import { getControversialLaws, getElectionOutlook, partyText } from "@/lib/content";
 import { isHebrew, rtlAttrs, localizedAttrs } from "@/lib/text";
-import { formatDateTime } from "@/lib/format";
+import { formatDateTime, formatDate } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
 
@@ -30,6 +30,7 @@ export default async function HomePage() {
   const locale = await getLocale();
   const { mks, ministers, factions, voteCount } = getDashboardStats();
   const controversialLaws = getControversialLaws();
+  const electionOutlook = getElectionOutlook();
   const latestVotes = getLatestVotes(6);
   const latestTitles = localizeData(latestVotes.map((v) => v.titleHe), locale);
   const latestTitleOf = (he: string | null) =>
@@ -157,6 +158,25 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Upcoming-election banner — renders only once content/election.yaml exists. */}
+      {electionOutlook && (
+        <Link
+          href="/elections#upcoming"
+          className="block rounded-xl border border-accent/30 bg-accent/5 p-5 shadow-sm transition-shadow hover:shadow-md"
+        >
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+            <span className="text-xl font-bold">{t("election.homeTitle")}</span>
+            {electionOutlook.expectedDate && (
+              <span className="font-semibold text-accent">
+                {t("election.expectedDate")}: {formatDate(electionOutlook.expectedDate, locale)}
+              </span>
+            )}
+            <span className="text-sm text-muted">{t("election.homeCta")} →</span>
+          </div>
+          <p className="mt-1 text-sm">{partyText(electionOutlook.headline, locale)}</p>
+        </Link>
+      )}
 
       <section className="rounded-xl bg-white p-6 shadow-sm space-y-4">
         <h2 className="text-xl font-semibold">{t("home.seatsByParty")}</h2>

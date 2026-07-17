@@ -1,0 +1,453 @@
+# Upcoming Knesset election (EDITORIAL). Every claim below was researched and
+# re-verified against its cited sources on lastReviewed; statuses are honest:
+#   confirmed        = an official source states it
+#   scheduled-by-law = the statutory default
+#   reported         = media reports (may change)
+# Party line-ups are NOT final until lists are submitted to the Central
+# Elections Committee (~47 days before election day) — keep the "expected"
+# framing. he/en authored; ar/ru fall back to en. UPDATE as the campaign moves:
+# re-verify each item, bump lastReviewed, and prune anything that changed.
+knesset: 26
+expectedDate: "2026-10-27"
+dateStatus: set
+lastReviewed: "2026-07-17"
+
+headline:
+  he: "הבחירות לכנסת ה-26 יתקיימו ביום שלישי, 27 באוקטובר 2026."
+  en: "The 26th Knesset election is set for Tuesday, October 27, 2026."
+
+intro:
+  he: "הכנסת ה-25 השלימה קדנציה מלאה והתפזרה ב-17 ביולי 2026, והבחירות יתקיימו במועד הקבוע בחוק. בעמוד זה: המועדים, מי צפוי להתמודד, כללי הבחירות והנתונים — כל פריט עם מקור."
+  en: "The 25th Knesset completed a full term and dispersed on July 17, 2026; the election will be held on its statutory date. This page covers the timeline, who is expected to run, the rules, and the numbers — every item with a source."
+
+facts:
+  - key: election-date
+    label: { he: "מועד הבחירות", en: "Election date" }
+    value: { he: "יום שלישי, ט\"ז בחשוון התשפ\"ז — 27 באוקטובר 2026", en: "Tuesday, 16 Cheshvan 5787 — October 27, 2026" }
+    detail:
+      he: "המועד נקבע על ידי יו\"ר ועדת הבחירות המרכזית, שופט בית המשפט העליון נעם סולברג, ועוגן גם בחקיקה במליאת הכנסת ביולי 2026."
+      en: "The date was set by Central Elections Committee chair Justice Noam Sohlberg and was also anchored in legislation by the Knesset plenum in July 2026."
+    status: confirmed
+    sources:
+      - url: "https://www.gov.il/he/departments/central-elections-committee/govil-landing-page"
+        title: "ועדת הבחירות המרכזית לכנסת — הבחירות לכנסת ה-26"
+        publisher: "gov.il / ועדת הבחירות"
+      - url: "https://www.timesofisrael.com/judge-sets-date-for-next-scheduled-elections-for-october-2026/"
+        title: "October 27, 2026: Judge sets date for next scheduled elections"
+        publisher: "The Times of Israel"
+      - url: "https://www.zman.co.il/live/705042/"
+        title: "לוח הזמנים לבחירות לכנסת"
+        publisher: "Zman Yisrael"
+  - key: full-term
+    label: { he: "קדנציה מלאה", en: "A full term" }
+    detail:
+      he: "הכנסת ה-25 (נבחרה ב-1.11.2022, הושבעה ב-15.11.2022) השלימה קדנציה מלאה והתפזרה ב-17 ביולי 2026 — על פי דיווחים, הפעם הראשונה מאז 1988 שהבחירות מתקיימות במועדן החוקי המלא."
+      en: "The 25th Knesset (elected Nov 1, 2022, sworn in Nov 15, 2022) completed a full term and dispersed on July 17, 2026 — per reports, the first time since 1988 that elections are held on their full statutory date."
+    status: reported
+    sources:
+      - url: "https://www.aljazeera.com/news/2026/7/17/knesset-dissolves-how-will-israel-vote-in-octobers-general-election"
+        title: "Knesset dissolves: How will Israel vote in October's general election?"
+        publisher: "Al Jazeera"
+      - url: "https://www.timesofisrael.com/knesset-expected-to-dissolve-july-17-paving-way-for-october-27-election/"
+        title: "Knesset expected to dissolve July 17, paving way for October 27 election"
+        publisher: "The Times of Israel"
+  - key: statutory-basis
+    label: { he: "הבסיס החוקי למועד", en: "Statutory basis for the date" }
+    detail:
+      he: "לפי חוק-יסוד: הכנסת (סעיפים 8–9), בתום כהונה מלאה הבחירות מתקיימות ביום שלישי בחודש חשוון; מכאן נגזר המועד 27 באוקטובר 2026 — המועד המאוחר ביותר המותר בחוק."
+      en: "Under Basic Law: The Knesset (sections 8–9), after a full term elections are held on a Tuesday in the Hebrew month of Cheshvan; this yields October 27, 2026 — the latest date permitted by law."
+    status: scheduled-by-law
+    sources:
+      - url: "https://en.wikipedia.org/wiki/2026_Israeli_legislative_election"
+        title: "2026 Israeli legislative election"
+        publisher: "Wikipedia"
+      - url: "https://www.timesofisrael.com/judge-sets-date-for-next-scheduled-elections-for-october-2026/"
+        title: "October 27, 2026: Judge sets date for next scheduled elections"
+        publisher: "The Times of Israel"
+  - key: list-deadline
+    label: { he: "הגשת רשימות המועמדים", en: "Candidate-list submission" }
+    value: { he: "צפוי בסביבות 10-9 בספטמבר 2026", en: "Expected around September 9–10, 2026" }
+    detail:
+      he: "הרשימות מוגשות לוועדת הבחירות המרכזית בסביבות היום ה-47 שלפני הבחירות; יש דיווח אחד (i24NEWS) על 7 בספטמבר — המועד המדויק טעון פרסום רשמי של ועדת הבחירות."
+      en: "Lists are submitted to the Central Elections Committee around the 47th day before election day; one report (i24NEWS) says September 7 — the exact date awaits the CEC's official timetable."
+    status: reported
+    sources:
+      - url: "https://www.zman.co.il/live/705042/"
+        title: "לוח הזמנים לבחירות לכנסת: המועד האחרון להגשת מועמדות"
+        publisher: "Zman Yisrael"
+      - url: "https://www.i24news.tv/he/news/israel-elections-2026/artc-8c8f593a"
+        title: "הלו\"ז המלא לבחירות 2026"
+        publisher: "i24NEWS"
+  - key: cec-chair
+    label: { he: "יו\"ר ועדת הבחירות", en: "Elections Committee chair" }
+    value: { he: "השופט נעם סולברג", en: "Justice Noam Sohlberg" }
+    detail:
+      he: "שופט בית המשפט העליון נעם סולברג עומד בראש ועדת הבחירות המרכזית לכנסת ה-26."
+      en: "Supreme Court Justice Noam Sohlberg chairs the Central Elections Committee for the 26th Knesset."
+    status: reported
+    sources:
+      - url: "https://www.timesofisrael.com/judge-sets-date-for-next-scheduled-elections-for-october-2026/"
+        title: "October 27, 2026: Judge sets date for next scheduled elections"
+        publisher: "The Times of Israel"
+      - url: "https://www.gov.il/he/departments/central-elections-committee/govil-landing-page"
+        title: "ועדת הבחירות המרכזית לכנסת"
+        publisher: "gov.il"
+  - key: results-timeline
+    label: { he: "תוצאות וכינוס הכנסת", en: "Results & convening" }
+    detail:
+      he: "לפי דיווחים, התוצאות הרשמיות צפויות עד 4 בנובמבר 2026 (שמונה ימים אחרי הבחירות), ערעורים עד 18 בנובמבר, וישיבתה הראשונה של הכנסת ה-26 צפויה ב-10 בנובמבר 2026."
+      en: "Per reports, official results are expected by November 4, 2026 (eight days after the election), appeals by November 18, and the 26th Knesset's first sitting is expected on November 10, 2026."
+    status: reported
+    sources:
+      - url: "https://www.i24news.tv/he/news/israel-elections-2026/artc-8c8f593a"
+        title: "הלו\"ז המלא לבחירות 2026"
+        publisher: "i24NEWS"
+      - url: "https://www.zman.co.il/live/705042/"
+        title: "לוח הזמנים לבחירות לכנסת"
+        publisher: "Zman Yisrael"
+
+parties:
+  - name: { he: "הליכוד", en: "Likud" }
+    leader: { he: "בנימין נתניהו", en: "Benjamin Netanyahu" }
+    factionId: 1096
+    note:
+      he: "צפוי להתמודד בראשות ראש הממשלה נתניהו, לאחר שמפלגת תקווה חדשה בראשות גדעון סער התמזגה לתוכו באוגוסט 2025."
+      en: "Expected to run under Prime Minister Netanyahu, after Gideon Sa'ar's New Hope merged into Likud in August 2025."
+    sources:
+      - url: "https://www.timesofisrael.com/ruling-likud-party-approves-merger-with-gideon-saars-new-hope/"
+        title: "Ruling Likud party approves merger with Gideon Sa'ar's New Hope"
+        publisher: "The Times of Israel"
+      - url: "https://www.aljazeera.com/news/2026/7/17/knesset-dissolves-how-will-israel-vote-in-octobers-general-election"
+        title: "Knesset dissolves: How will Israel vote?"
+        publisher: "Al Jazeera"
+  - name: { he: "ביחד (בנט 2026 – יש עתיד)", en: "Together (Bennett 2026 – Yesh Atid)" }
+    leader: { he: "נפתלי בנט", en: "Naftali Bennett" }
+    note:
+      he: "רשימה משותפת של בנט 2026 ויש עתיד בראשות יאיר לפיד, שהוכרזה ב-26 באפריל 2026; בנט עומד בראשה כמועמד לראשות הממשלה."
+      en: "A joint list of Bennett 2026 and Yair Lapid's Yesh Atid, announced April 26, 2026, with Bennett heading the slate as its candidate for prime minister."
+    sources:
+      - url: "https://www.timesofisrael.com/naftali-bennett-and-yair-lapid-announce-united-run-under-bennett-in-2026-elections/"
+        title: "Naftali Bennett and Yair Lapid announce united run under Bennett"
+        publisher: "The Times of Israel"
+  - name: { he: "ישר", en: "Yashar" }
+    leader: { he: "גדי איזנקוט", en: "Gadi Eisenkot" }
+    note:
+      he: "מפלגה שהקים הרמטכ\"ל לשעבר גדי איזנקוט בספטמבר 2025; פתחה את קמפיין הבחירות ב-30 ביוני 2026."
+      en: "Founded by former IDF chief of staff Gadi Eisenkot in September 2025; launched its campaign on June 30, 2026."
+    sources:
+      - url: "https://www.thenationalnews.com/news/mena/2026/07/14/who-are-the-key-players-as-israel-heads-to-elections-in-october/"
+        title: "Who are the key players as Israel heads to elections in October?"
+        publisher: "The National"
+  - name: { he: "הדמוקרטים", en: "The Democrats" }
+    leader: { he: "יאיר גולן", en: "Yair Golan" }
+    factionId: 1100
+    note:
+      he: "מפלגת האיחוד של העבודה ומרצ; לפי דיווחים, יו\"ר העבודה לשעבר מרב מיכאלי פורשת מהכנסת."
+      en: "The merged Labor–Meretz party; former Labor leader Merav Michaeli is reportedly retiring from the Knesset."
+    sources:
+      - url: "https://www.mako.co.il/news-israel-elections/2026/Article-37275a925e7dd91026.htm"
+        title: "חצי שנה לבחירות: המפלגות, המצטרפים החדשים והסקרים"
+        publisher: "N12"
+  - name: { he: "ש\"ס", en: "Shas" }
+    leader: { he: "אריה דרעי", en: "Aryeh Deri" }
+    factionId: 1095
+    note: { he: "צפויה להתמודד.", en: "Expected to run." }
+    sources:
+      - url: "https://www.ynetnews.com/article/hjqfh3euxe"
+        title: "Staring down the barrel of elections, Shas' Deri weighs whom he shall serve"
+        publisher: "Ynetnews"
+  - name: { he: "יהדות התורה", en: "United Torah Judaism" }
+    leader: { he: "יצחק גולדקנופף", en: "Yitzhak Goldknopf" }
+    factionId: 1101
+    note: { he: "צפויה להתמודד.", en: "Expected to run." }
+    sources:
+      - url: "https://www.thenationalnews.com/news/mena/2026/07/14/who-are-the-key-players-as-israel-heads-to-elections-in-october/"
+        title: "Who are the key players as Israel heads to elections in October?"
+        publisher: "The National"
+  - name: { he: "הציונות הדתית", en: "Religious Zionism" }
+    leader: { he: "בצלאל סמוטריץ'", en: "Bezalel Smotrich" }
+    factionId: 1097
+    note:
+      he: "צפויה להתמודד; מהלך לריצה משותפת עם עוצמה יהודית, המקודם לפי דיווחים על ידי נתניהו, לא הבשיל נכון ליולי 2026."
+      en: "Expected to run; a reported Netanyahu-backed push for a joint run with Otzma Yehudit had not materialized as of July 2026."
+    sources:
+      - url: "https://www.jns.org/news/israel-news/netanyahu-pushes-smotrich-ben-gvir-merger-to-protect-right-wing-bloc"
+        title: "Netanyahu pushes Smotrich–Ben Gvir merger"
+        publisher: "JNS"
+      - url: "https://www.thenationalnews.com/news/mena/2026/07/14/who-are-the-key-players-as-israel-heads-to-elections-in-october/"
+        title: "Who are the key players as Israel heads to elections in October?"
+        publisher: "The National"
+  - name: { he: "עוצמה יהודית", en: "Otzma Yehudit" }
+    leader: { he: "איתמר בן גביר", en: "Itamar Ben Gvir" }
+    factionId: 1106
+    note:
+      he: "צפויה להתמודד; בן גביר הצהיר ביוני 2026 כי בכוונתו לרוץ עצמאית ולא במשותף עם סמוטריץ'."
+      en: "Expected to run; Ben Gvir said in June 2026 he intends to run independently rather than jointly with Smotrich."
+    sources:
+      - url: "https://www.srugim.co.il/101004735"
+        title: "בן גביר מבהיר: זו הסיבה שלא ארוץ עם סמוטריץ'"
+        publisher: "Srugim"
+  - name: { he: "כחול לבן", en: "Blue and White" }
+    leader: { he: "בני גנץ", en: "Benny Gantz" }
+    factionId: 1110
+    note:
+      he: "לשעבר המחנה הממלכתי; צפויה להתמודד, כאשר לפי דיווחים גנץ דוחה לחצים לפרוש מהמרוץ."
+      en: "Formerly National Unity; expected to run, with Gantz reportedly rejecting pressure to withdraw from the race."
+    sources:
+      - url: "https://www.ynet.co.il/news/article/hjnrm2uxml"
+        title: "מי עם מי: המפלגות שעשויות להכריע את הבחירות"
+        publisher: "Ynet"
+  - name: { he: "ישראל ביתנו", en: "Yisrael Beiteinu" }
+    leader: { he: "אביגדור ליברמן", en: "Avigdor Liberman" }
+    factionId: 1104
+    note:
+      he: "צפויה להתמודד; ליברמן הצהיר במאי 2026 כי מטרתו להחליף את הממשלה ולכהן כראש ממשלה."
+      en: "Expected to run; Liberman said in May 2026 his goal is to replace the government and become prime minister."
+    sources:
+      - url: "https://www.timesofisrael.com/liberman-says-his-goal-for-the-upcoming-election-is-to-become-prime-minister/"
+        title: "Liberman says his goal for the upcoming election is to become prime minister"
+        publisher: "The Times of Israel"
+  - name: { he: "רע\"ם", en: "Ra'am" }
+    leader: { he: "מנסור עבאס", en: "Mansour Abbas" }
+    factionId: 1099
+    note:
+      he: "צפויה להתמודד בנפרד מהרשימה המשותפת לאחר שמגעים לאיחוד לא צלחו; עבאס אמר כי זו צפויה להיות מערכת הבחירות האחרונה שלו."
+      en: "Expected to run separately from the Joint List after unity talks failed; Abbas has said this is expected to be his final election."
+    sources:
+      - url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-899019"
+        title: "Arab parties intend to reestablish Joint List, leaving out Abbas's Ra'am"
+        publisher: "The Jerusalem Post"
+      - url: "https://www.timesofisrael.com/raam-chief-mansour-abbas-says-he-wont-run-for-knesset-beyond-the-next-election/"
+        title: "Ra'am chief Mansour Abbas says he won't run beyond the next election"
+        publisher: "The Times of Israel"
+  - name: { he: "הרשימה המשותפת (חד\"ש, תע\"ל, בל\"ד)", en: "The Joint List (Hadash, Ta'al, Balad)" }
+    leader: { he: "ד\"ר יוסף ג'בארין (יו\"ר חד\"ש)", en: "Dr. Yousef Jabareen (Hadash chair)" }
+    factionId: 1103
+    note:
+      he: "חד\"ש — בראשות יו\"ר חדש, ד\"ר יוסף ג'בארין, שהחליף במאי 2026 את איימן עודה הפורש — יחד עם תע\"ל ובל\"ד הודיעו על כוונה להקים מחדש את הרשימה המשותפת."
+      en: "Hadash — under new chair Dr. Yousef Jabareen, who in May 2026 replaced the retiring Ayman Odeh — together with Ta'al and Balad announced their intention to reestablish the Joint List."
+    sources:
+      - url: "https://www.ynet.co.il/news/article/rjofrtsjfl"
+        title: "יחליף את איימן עודה: ד\"ר יוסף ג'בארין נבחר ליו\"ר חד\"ש"
+        publisher: "Ynet"
+      - url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-899019"
+        title: "Arab parties intend to reestablish Joint List"
+        publisher: "The Jerusalem Post"
+  - name: { he: "המילואימניקים – טרופר", en: "The Reservists – Tropper alliance" }
+    leader: { he: "יועז הנדל וחילי טרופר", en: "Yoaz Hendel & Hili Tropper" }
+    note:
+      he: "ברית בחירות חדשה בין מפלגת המילואימניקים של יועז הנדל לסיעתו של חילי טרופר, שדווחה בתחילת יולי 2026."
+      en: "A new electoral alliance between Yoaz Hendel's Reservists party and Hili Tropper's faction, reported in early July 2026."
+    sources:
+      - url: "https://www.ynet.co.il/news/article/hjnrm2uxml"
+        title: "מי עם מי: המפלגות שעשויות להכריע את הבחירות"
+        publisher: "Ynet"
+  - name: { he: "מפלגה חדשה בהקמה: אדלשטיין–שקד", en: "Possible new party: Edelstein–Shaked" }
+    leader: { he: "יולי אדלשטיין ואיילת שקד", en: "Yuli Edelstein & Ayelet Shaked" }
+    note:
+      he: "יולי אדלשטיין, שפרש מהליכוד בתחילת יולי 2026, מנהל לפי דיווחים מגעים עם איילת שקד להקמת מפלגת ימין חדשה; טרם הוכרזה רשמית."
+      en: "Yuli Edelstein, who left Likud in early July 2026, is reportedly in talks with Ayelet Shaked on a new right-wing party; not yet formally announced."
+    sources:
+      - url: "https://www.ynet.co.il/news/article/hjnrm2uxml"
+        title: "מי עם מי: המפלגות שעשויות להכריע את הבחירות"
+        publisher: "Ynet"
+  - name: { he: "נעם", en: "Noam" }
+    leader: { he: "אבי מעוז", en: "Avi Maoz" }
+    factionId: 1107
+    note:
+      he: "עזבה את הקואליציה במרץ 2025; מתכונת ריצתה (עצמאית או במסגרת רשימה אחרת) טרם הובהרה."
+      en: "Left the coalition in March 2025; whether it runs independently or within another list has not yet been clarified."
+    sources:
+      - url: "https://en.wikipedia.org/wiki/2026_Israeli_legislative_election"
+        title: "2026 Israeli legislative election"
+        publisher: "Wikipedia"
+
+rules:
+  - key: system
+    label: { he: "שיטת הבחירות", en: "The electoral system" }
+    detail:
+      he: "הבחירות כלליות, ארציות, ישירות, שוות, חשאיות ויחסיות; המדינה כולה אזור בחירה אחד. מצביעים לרשימות סגורות, והמושבים מחולקים בין הרשימות שעברו את אחוז החסימה בשיטת בדר-עופר, כולל הסכמי עודפים."
+      en: "Elections are general, nationwide, direct, equal, secret and proportional; the whole country is one district. Voters choose closed party lists, and seats are allocated among lists that pass the threshold by the Bader-Ofer method, including surplus-vote agreements."
+    status: confirmed
+    sources:
+      - url: "https://m.knesset.gov.il/en/about/lexicon/pages/electoralsystem.aspx"
+        title: "Electoral System in Israel (Knesset Lexicon)"
+        publisher: "The Knesset"
+  - key: seats
+    label: { he: "מושבים", en: "Seats" }
+    value: { he: "120", en: "120" }
+    detail:
+      he: "בכנסת 120 חברים; כל המושבים מחולקים בחלוקה ארצית-יחסית בין הרשימות שעברו את אחוז החסימה."
+      en: "The Knesset has 120 members; all seats are allocated by nationwide proportional distribution among lists that passed the threshold."
+    status: confirmed
+    sources:
+      - url: "https://m.knesset.gov.il/EN/activity/documents/BasicLawsPDF/BasicLawTheKnesset.pdf"
+        title: "Basic Law: The Knesset (art. 3)"
+        publisher: "The Knesset"
+  - key: threshold
+    label: { he: "אחוז החסימה", en: "Electoral threshold" }
+    value: { he: "3.25%", en: "3.25%" }
+    detail:
+      he: "רשימה שלא הגיעה ל-3.25% מהקולות הכשרים אינה זוכה בייצוג. האחוז הועלה ל-3.25% במרץ 2014; קודם לכן — 1% עד בחירות 1992, 1.5% מבחירות 1992, ו-2% שנחקק ב-2004 והוחל מבחירות 2006."
+      en: "A list below 3.25% of valid votes wins no seats. The threshold was raised to 3.25% in March 2014; previously 1% until the 1992 election, 1.5% from 1992, and 2% legislated in 2004 and first applied in the 2006 election."
+    status: confirmed
+    sources:
+      - url: "https://main.knesset.gov.il/EN/About/Lexicon/Pages/ElectoralThreshold.aspx"
+        title: "Electoral Threshold (Knesset Lexicon)"
+        publisher: "The Knesset"
+      - url: "https://m.knesset.gov.il/EN/activity/mmm/wastedvotes.pdf"
+        title: "Wasted votes (Knesset Research and Information Center)"
+        publisher: "The Knesset"
+  - key: voting-eligibility
+    label: { he: "מי רשאי להצביע", en: "Who may vote" }
+    detail:
+      he: "כל אזרח ישראלי בן 18 ומעלה הרשום במרשם האוכלוסין, אלא אם בית משפט שלל זאת לפי חוק. ההצבעה אישית ובישראל בלבד; קבוצות מוגדרות (חיילים, שליחי מדינה בחו\"ל, מאושפזים, אסירים, מלחים ועוד) מצביעות במעטפות כפולות."
+      en: "Every Israeli citizen aged 18+ registered in the Population Register, unless a court has removed the right by law. Voting is in person and in Israel only; defined groups (soldiers, state emissaries abroad, hospital patients, prisoners, ship crews and more) vote by double envelope."
+    status: confirmed
+    sources:
+      - url: "https://m.knesset.gov.il/EN/activity/documents/BasicLawsPDF/BasicLawTheKnesset.pdf"
+        title: "Basic Law: The Knesset (art. 5)"
+        publisher: "The Knesset"
+      - url: "https://main.knesset.gov.il/EN/Documents/2022-10-24%20Fact%20sheet%2002%20-%2025th%20Knesset%20elections%20-%20updated.pdf"
+        title: "Fact sheet: The 25th Knesset elections"
+        publisher: "The Knesset"
+  - key: candidacy
+    label: { he: "מי רשאי להיבחר", en: "Who may run" }
+    detail:
+      he: "אזרח ישראלי בן 21 ומעלה ביום הגשת הרשימות, בכפוף לסייגים: מי שנידון ליותר משלושה חודשי מאסר בפועל מנוע מלהתמודד שבע שנים מתום ריצוי העונש (ובעבירת טרור/ביטחון חמורה שנגזרו עליה מעל שבע שנות מאסר — 14 שנים), אלא אם נקבע שאין קלון. נושאי משרה בכירים (שופטים, קצינים בכירים, עובדי מדינה בכירים ועוד) חייבים לפרוש מראש במועדים הקבועים בחוק. לפי סעיף 7א, רשימה או מועמד ייפסלו בשל שלילת קיומה של ישראל כמדינה יהודית ודמוקרטית, הסתה לגזענות או תמיכה במאבק מזוין נגד ישראל; פסילת מועמד טעונה אישור בית המשפט העליון."
+      en: "An Israeli citizen aged 21+ on list-submission day, with restrictions: a person sentenced to over three months' actual imprisonment is barred for seven years after completing the sentence (14 years where a serious terror/security offence drew over seven years' imprisonment), unless ruled free of moral turpitude. Senior officials (judges, senior officers, senior civil servants and others) must resign by statutory deadlines. Under article 7A, a list or candidate is barred for negating Israel's existence as a Jewish and democratic state, incitement to racism, or support for armed struggle against Israel; barring a candidate requires Supreme Court approval."
+    status: confirmed
+    sources:
+      - url: "https://m.knesset.gov.il/EN/activity/documents/BasicLawsPDF/BasicLawTheKnesset.pdf"
+        title: "Basic Law: The Knesset (arts. 6, 7, 7A)"
+        publisher: "The Knesset"
+  - key: election-day
+    label: { he: "יום הבחירות", en: "Election day" }
+    detail:
+      he: "יום הבחירות הוא יום שבתון, אך התחבורה ושירותים ציבוריים פועלים כסדרם. הקלפיות פתוחות בדרך כלל 7:00–22:00 (ביישובים קטנים 8:00–20:00), ומי שבתור בשעת הסגירה מצביע."
+      en: "Election day is a public day of rest, but transport and public services operate. Polls are generally open 7:00–22:00 (8:00–20:00 in small communities), and anyone in line at closing still votes."
+    status: confirmed
+    sources:
+      - url: "https://m.knesset.gov.il/EN/activity/documents/BasicLawsPDF/BasicLawTheKnesset.pdf"
+        title: "Basic Law: The Knesset (art. 10)"
+        publisher: "The Knesset"
+  - key: government-formation
+    label: { he: "הרכבת ממשלה אחרי הבחירות", en: "Forming a government" }
+    detail:
+      he: "הנשיא מטיל את הרכבת הממשלה על חבר כנסת בתוך שבעה ימים מפרסום התוצאות, לאחר התייעצות עם הסיעות. למוטל 28 ימים בתוספת עד 14; אם נכשל — חבר כנסת אחר (28 ימים), ואז רוב חברי הכנסת רשאים לבקש הטלה על חבר מסוים (14 ימים). מוצו השלבים — הכנסת מתפזרת ונערכות בחירות חוזרות."
+      en: "Within seven days of the results, after consulting the factions, the President tasks an MK with forming a government: 28 days plus up to 14 more; failing that, another MK (28 days), then a majority of MKs may request a specific member (14 days). If all stages fail, the Knesset dissolves and new elections are held."
+    status: confirmed
+    sources:
+      - url: "https://m.knesset.gov.il/EN/activity/documents/BasicLawsPDF/BasicLawTheGovernment.pdf"
+        title: "Basic Law: The Government (arts. 7–11)"
+        publisher: "The Knesset"
+  - key: campaign-finance
+    label: { he: "מימון ופיקוח", en: "Financing & oversight" }
+    detail:
+      he: "מימון מפלגות ובחירות מוסדר בעיקר בחוק מימון מפלגות התשל\"ג-1973; מבקר המדינה מפקח, מפרסם דוחות ורשאי לחייב החזר כספים. תעמולת הבחירות מוסדרת בחוק דרכי תעמולה התשי\"ט-1959, שאכיפתו בידי יו\"ר ועדת הבחירות."
+      en: "Party and campaign financing are governed mainly by the Political Parties (Financing) Law, 1973; the State Comptroller oversees, publishes reports and can order repayment. Campaign propaganda is governed by the Elections (Modes of Propaganda) Law, 1959, enforced by the CEC chair."
+    status: confirmed
+    sources:
+      - url: "https://main.knesset.gov.il/EN/activity/mmm/me00636.pdf"
+        title: "Party Financing and Elections Financing in Israel (Knesset RIC)"
+        publisher: "The Knesset"
+
+stats:
+  - key: eligible-voters
+    label: { he: "בעלי זכות בחירה", en: "Eligible voters" }
+    value: { he: "6,788,804 (בבחירות 2022)", en: "6,788,804 (2022 election)" }
+    detail:
+      he: "הנתון הרשמי העדכני ביותר; מספר בעלי זכות הבחירה לכנסת ה-26 יפורסם לאחר סגירת פנקס הבוחרים בספטמבר 2026."
+      en: "The most recent official figure; the 26th-Knesset count will be published once the voter roll closes in September 2026."
+    status: confirmed
+    sources:
+      - url: "https://main.knesset.gov.il/EN/Documents/2022-10-24%20Fact%20sheet%2002%20-%2025th%20Knesset%20elections%20-%20updated.pdf"
+        title: "Fact sheet: The 25th Knesset elections (Knesset RIC)"
+        publisher: "The Knesset"
+  - key: turnout
+    label: { he: "שיעור הצבעה אחרון", en: "Most recent turnout" }
+    value: { he: "כ-70.6% (2022)", en: "~70.6% (2022)" }
+    detail:
+      he: "לשם השוואה: 67.4% ב-2021 (הנמוך במחזור 2019–2021), 71.5% ב-2020, 69.8% בספטמבר 2019 ו-68.5% באפריל 2019. שיעורי ההצבעה לכל מערכות הבחירות — בהיסטוריית הבחירות שבהמשך העמוד."
+      en: "For comparison: 67.4% in 2021 (the lowest of the 2019–2021 cycle), 71.5% in 2020, 69.8% in September 2019 and 68.5% in April 2019. Turnout for every election appears in the history below."
+    status: confirmed
+    sources:
+      - url: "https://main.knesset.gov.il/EN/Documents/2022-10-24%20Fact%20sheet%2002%20-%2025th%20Knesset%20elections%20-%20updated.pdf"
+        title: "Fact sheet: The 25th Knesset elections (Knesset RIC)"
+        publisher: "The Knesset"
+      - url: "https://www.jewishvirtuallibrary.org/israeli-central-elections-committee"
+        title: "Israeli Elections: Voter Turnout"
+        publisher: "Jewish Virtual Library"
+  - key: polling-stations
+    label: { he: "קלפיות", en: "Polling stations" }
+    value: { he: "11,707 (2022)", en: "11,707 (2022)" }
+    detail:
+      he: "מהן 5,116 נגישות לאנשים עם מוגבלות; בנוסף קלפיות מיוחדות — 222 בבתי חולים, 232 בבתי אבות ו-55 בבתי סוהר ומעצר."
+      en: "Of which 5,116 accessible to people with disabilities; plus special stations — 222 in hospitals, 232 in retirement homes and 55 in prisons and detention facilities."
+    status: confirmed
+    sources:
+      - url: "https://main.knesset.gov.il/EN/Documents/2022-10-24%20Fact%20sheet%2002%20-%2025th%20Knesset%20elections%20-%20updated.pdf"
+        title: "Fact sheet: The 25th Knesset elections (Knesset RIC)"
+        publisher: "The Knesset"
+  - key: lists-2022
+    label: { he: "רשימות בבחירות הקודמות", en: "Lists in the last election" }
+    value: { he: "40 התמודדו, 10 עברו", en: "40 ran, 10 passed" }
+    detail:
+      he: "בבחירות 2022 התמודדו 40 רשימות ו-10 עברו את אחוז החסימה; מרצ ובל\"ד לא עברו, וכ-300 אלף קולות ירדו לטמיון."
+      en: "In 2022, 40 lists ran and 10 passed the threshold; Meretz and Balad fell short, and some 300,000 votes were wasted."
+    status: confirmed
+    sources:
+      - url: "https://main.knesset.gov.il/EN/Documents/2022-10-24%20Fact%20sheet%2002%20-%2025th%20Knesset%20elections%20-%20updated.pdf"
+        title: "Fact sheet: The 25th Knesset elections (Knesset RIC)"
+        publisher: "The Knesset"
+      - url: "https://en.idi.org.il/articles/46229"
+        title: "The 2022 Elections: Results Analysis"
+        publisher: "Israel Democracy Institute"
+  - key: election-cost
+    label: { he: "כמה עולות בחירות", en: "What an election costs" }
+    value: { he: "כ-2.7 מיליארד ש\"ח (2022, אומדן)", en: "~NIS 2.7 billion (2022, est.)" }
+    detail:
+      he: "מתוכם כ-1.5 מיליארד ש\"ח עלות יום השבתון; תקציב ועדת הבחירות שאושר בוועדת הכספים עמד על כ-538 מיליון ש\"ח — כ-79 ש\"ח לבוחר."
+      en: "Of which ~NIS 1.5 billion was the election-day holiday; the CEC budget approved by the Finance Committee was ~NIS 538 million — roughly NIS 79 per voter."
+    status: reported
+    sources:
+      - url: "https://www.calcalist.co.il/local_news/article/bj4w2taf9"
+        title: "עלות הבחירות — לפחות 2.7 מיליארד שקל"
+        publisher: "Calcalist"
+      - url: "https://www.ynet.co.il/economy/article/syqde5zno"
+        title: "אושר תקציב ועדת הבחירות בסך 538 מיליון שקל"
+        publisher: "Ynet"
+
+news:
+  - date: "2026-07-17"
+    text:
+      he: "הכנסת ה-25 התפזרה רשמית בתום קדנציה מלאה; הבחירות יתקיימו במועדן החוקי, 27 באוקטובר 2026."
+      en: "The 25th Knesset formally dispersed at the end of a full term; the election will be held on its statutory date, October 27, 2026."
+  - date: "2026-07-05"
+    text:
+      he: "מליאת הכנסת עיגנה בחקיקה (בקריאה שנייה ושלישית) את מועד הבחירות — 27 באוקטובר 2026."
+      en: "The Knesset plenum anchored the election date — October 27, 2026 — in legislation (second and third readings)."
+  - date: "2026-04-26"
+    text:
+      he: "בנט ולפיד הכריזו על ריצה משותפת ('ביחד') בראשות בנט."
+      en: "Bennett and Lapid announced a joint run (\"Together\") headed by Bennett."
+
+links:
+  - label: { he: "ועדת הבחירות המרכזית", en: "Central Elections Committee" }
+    url: "https://www.bechirot.gov.il/home/"
+  - label: { he: "עמוד הוועדה ב-gov.il", en: "CEC on gov.il" }
+    url: "https://www.gov.il/he/departments/central-elections-committee/govil-landing-page"
+  - label: { he: "הבחירות לכנסת — אתר הכנסת", en: "Knesset elections page" }
+    url: "https://main.knesset.gov.il/mk/elections/Pages/default.aspx"
+  - label: { he: "מידע לבוחר (מהדורת הכנסת ה-25)", en: "Voter information (25th-Knesset edition)" }
+    url: "https://www.gov.il/he/departments/guides/knesset25-elections-info"
+  - label: { he: "מימון מפלגות — מבקר המדינה", en: "Party finance — State Comptroller" }
+    url: "https://www.mevaker.gov.il/state-audit/elections"
+  - label: { he: "בחירות, כנסת וממשל — הלמ\"ס", en: "Elections statistics — CBS" }
+    url: "https://www.cbs.gov.il/he/subjects/Pages/%D7%91%D7%97%D7%99%D7%A8%D7%95%D7%AA-%D7%95%D7%94%D7%9B%D7%A0%D7%A1%D7%AA.aspx"
+  - label: { he: "ארכיון תוצאות הבחירות", en: "Election results archive" }
+    url: "https://www.gov.il/he/Departments/DynamicCollectors/knessetarchive?skip=0"
+
+disclaimer:
+  he: "עמוד זה נערך על ידי האתר על בסיס המקורות המצוינים לצד כל פריט ומתעדכן ככל שהמערכה מתקדמת. הרכבי הרשימות אינם סופיים עד הגשתן לוועדת הבחירות המרכזית. מצאתם אי-דיוק? דווחו לנו ונתקן."
+  en: "This page is edited by the site from the sources cited beside each item and is updated as the campaign develops. List line-ups are not final until submitted to the Central Elections Committee. Spotted an inaccuracy? Report it and we will fix it."

@@ -1,5 +1,11 @@
 import { getTranslations, getLocale } from "next-intl/server";
-import { getElectionsHistory, partyText } from "@/lib/content";
+import { Link } from "@/i18n/navigation";
+import {
+  getElectionsHistory,
+  getElectionOutlook,
+  partyText,
+  type ElectionFact,
+} from "@/lib/content";
 import { formatDate } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
@@ -19,11 +25,56 @@ const knessetWikiUrl = (n: number) =>
 const KNESSET_HISTORY_URL =
   "https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx";
 
+// Small "source · source" suffix used across the upcoming-election section —
+// keeps the site's always-cite-sources rule visible on every fact.
+function SourceLinks({ sources, label }: {
+  sources: { url: string; title: string; publisher?: string }[];
+  label: string;
+}) {
+  return (
+    <span className="text-xs text-muted">
+      {label}:{" "}
+      {sources.map((s, i) => (
+        <span key={s.url}>
+          {i > 0 && " · "}
+          <a
+            className="underline hover:text-accent"
+            href={s.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {s.publisher ?? s.title}
+          </a>
+        </span>
+      ))}
+    </span>
+  );
+}
+
 export default async function ElectionsHistoryPage() {
   const t = await getTranslations("electionsHistory");
+  const te = await getTranslations("election");
   const tc = await getTranslations("common");
   const locale = await getLocale();
   const elections = getElectionsHistory();
+  const outlook = getElectionOutlook();
+
+  // A sourced fact row (key facts / rules / stats share the shape).
+  const factRow = (f: ElectionFact) => (
+    <div key={f.key} className="rounded-lg bg-black/[.03] p-3 space-y-1">
+      <div className="text-muted text-xs">{partyText(f.label, locale)}</div>
+      {f.value && <div className="font-semibold">{partyText(f.value, locale)}</div>}
+      {f.detail && <p className="text-sm leading-relaxed">{partyText(f.detail, locale)}</p>}
+      <div className="flex flex-wrap items-center gap-2">
+        {f.status && f.status !== "confirmed" && (
+          <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[11px] font-medium text-amber-800">
+            {te(f.status === "scheduled-by-law" ? "statusByLaw" : "statusReported")}
+          </span>
+        )}
+        <SourceLinks sources={f.sources} label={tc("source")} />
+      </div>
+    </div>
+  );
 
   return (
     <div className="space-y-6">
@@ -31,6 +82,143 @@ export default async function ElectionsHistoryPage() {
         <h1 className="text-3xl font-bold">{t("title")}</h1>
         <p className="text-muted">{t("subtitle")}</p>
       </div>
+
+      {outlook && (
+        <section
+          id="upcoming"
+          className="rounded-xl border border-accent/30 bg-accent/5 p-6 space-y-5"
+        >
+          <div className="space-y-1">
+            <div className="flex flex-wrap items-center gap-2">
+              <h2 className="text-2xl font-bold">{te("title")}</h2>
+              <span
+                className={`rounded-full px-2.5 py-0.5 text-xs font-medium ${
+                  outlook.dateStatus === "set"
+                    ? "bg-green-100 text-green-800"
+                    : "bg-amber-100 text-amber-800"
+                }`}
+              >
+                {te(
+                  outlook.dateStatus === "set"
+                    ? "statusSet"
+                    : outlook.dateStatus === "scheduled-by-law"
+                      ? "statusByLaw"
+                      : "statusReported",
+                )}
+              </span>
+            </div>
+            <p className="text-lg font-semibold">{partyText(outlook.headline, locale)}</p>
+            {outlook.expectedDate && (
+              <p className="text-muted">
+                {te("expectedDate")}: <strong>{formatDate(outlook.expectedDate, locale)}</strong>
+              </p>
+            )}
+            <p className="text-sm leading-relaxed">{partyText(outlook.intro, locale)}</p>
+          </div>
+
+          {outlook.facts.length > 0 && (
+            <div className="space-y-2">
+              <h3 className="text-sm font-semibold uppercase tracking-wide text-muted">
+                {te("keyFacts")}
+              </h3>
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {outlook.facts.map(factRow)}
+              </div>
+            </div>
+          )}
+
+          {outlook.parties.length > 0 && (
+            <div className="space-y-2">
+              <h3 className="text-sm font-semibold uppercase tracking-wide text-muted">
+                {te("parties")}
+              </h3>
+              <p className="text-xs text-muted">{te("partiesNote")}</p>
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {outlook.parties.map((p) => (
+                  <div key={p.name.he} className="rounded-lg bg-white p-3 shadow-sm space-y-1">
+                    <div className="font-semibold">
+                      {p.factionId != null ? (
+                        <Link className="hover:underline" href={`/parties/${p.factionId}`}>
+                          {partyText(p.name, locale)}
+                        </Link>
+                      ) : (
+                        partyText(p.name, locale)
+                      )}
+                    </div>
+                    {p.leader && (
+                      <div className="text-sm text-muted">
+                        {te("leader")}: {partyText(p.leader, locale)}
+                      </div>
+                    )}
+                    {p.note && (
+                      <p className="text-xs leading-relaxed">{partyText(p.note, locale)}</p>
+                    )}
+                    <SourceLinks sources={p.sources} label={tc("source")} />
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {outlook.rules.length > 0 && (
+            <div className="space-y-2">
+              <h3 className="text-sm font-semibold uppercase tracking-wide text-muted">
+                {te("rules")}
+              </h3>
+              <div className="grid gap-3 sm:grid-cols-2">{outlook.rules.map(factRow)}</div>
+            </div>
+          )}
+
+          {outlook.stats.length > 0 && (
+            <div className="space-y-2">
+              <h3 className="text-sm font-semibold uppercase tracking-wide text-muted">
+                {te("stats")}
+              </h3>
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {outlook.stats.map(factRow)}
+              </div>
+            </div>
+          )}
+
+          {outlook.news && outlook.news.length > 0 && (
+            <div className="space-y-2">
+              <h3 className="text-sm font-semibold uppercase tracking-wide text-muted">
+                {te("news")}
+              </h3>
+              <ul className="space-y-1 text-sm">
+                {outlook.news.map((n, i) => (
+                  <li key={i} className="flex flex-wrap gap-2">
+                    {n.date && (
+                      <span className="whitespace-nowrap text-muted">
+                        {formatDate(n.date, locale)}
+                      </span>
+                    )}
+                    <span className="min-w-0 flex-1">{partyText(n.text, locale)}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-1 border-t border-black/5 pt-3">
+            {outlook.links.map((l) => (
+              <a
+                key={l.url}
+                className="text-sm text-accent hover:underline"
+                href={l.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {partyText(l.label, locale)}
+              </a>
+            ))}
+          </div>
+          <p className="text-xs text-muted">
+            {outlook.disclaimer && <>{partyText(outlook.disclaimer, locale)} </>}
+            {te("lastReviewed", { date: formatDate(outlook.lastReviewed, locale) })}
+          </p>
+        </section>
+      )}
 
       <ol className="space-y-3">
         {elections.map((e) => (

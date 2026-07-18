@@ -21,6 +21,7 @@ import {
 import { localizeData, queueDataTranslations, committeeLabel, resolveLocalized } from "@/lib/i18n-data";
 import { getControversialLaws, getElectionOutlook, partyText } from "@/lib/content";
 import { isHebrew, rtlAttrs, localizedAttrs } from "@/lib/text";
+import { rtlLocales } from "@/i18n/routing";
 import { formatDateTime, formatDate } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
@@ -172,7 +173,10 @@ export default async function HomePage() {
                 {t("election.expectedDate")}: {formatDate(electionOutlook.expectedDate, locale)}
               </span>
             )}
-            <span className="text-sm text-muted">{t("election.homeCta")} →</span>
+            <span className="text-sm text-muted">
+              {/* Arrow follows the reading direction (he/ar are RTL). */}
+              {t("election.homeCta")} {rtlLocales.has(locale) ? "←" : "→"}
+            </span>
           </div>
           <p className="mt-1 text-sm">{partyText(electionOutlook.headline, locale)}</p>
         </Link>

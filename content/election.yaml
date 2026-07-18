@@ -26,7 +26,7 @@ keyDates:
     date: "2026-09-10"
     label: { he: "הגשת רשימות המועמדים — ההרכבים הופכים סופיים", en: "Candidate lists submitted — line-ups become final" }
     detail:
-      he: "צפוי בסביבות 10-9 בספטמבר 2026 (דיווח אחד: 7 בספטמבר). מרגע ההגשה לוועדת הבחירות המרכזית הרשימות סופיות — ואז יופיעו כאן כל המתמודדים."
+      he: "צפוי בסביבות 9-10 בספטמבר 2026 (דיווח אחד: 7 בספטמבר). מרגע ההגשה לוועדת הבחירות המרכזית הרשימות סופיות — ואז יופיעו כאן כל המתמודדים."
       en: "Expected around September 9–10, 2026 (one report: September 7). Once submitted to the Central Elections Committee the lists are final — and the full candidate rosters will appear here."
     status: reported
     sources:
@@ -114,7 +114,7 @@ facts:
         publisher: "The Times of Israel"
   - key: list-deadline
     label: { he: "הגשת רשימות המועמדים", en: "Candidate-list submission" }
-    value: { he: "צפוי בסביבות 10-9 בספטמבר 2026", en: "Expected around September 9–10, 2026" }
+    value: { he: "צפוי בסביבות 9-10 בספטמבר 2026", en: "Expected around September 9–10, 2026" }
     detail:
       he: "הרשימות מוגשות לוועדת הבחירות המרכזית בסביבות היום ה-47 שלפני הבחירות; יש דיווח אחד (i24NEWS) על 7 בספטמבר — המועד המדויק טעון פרסום רשמי של ועדת הבחירות."
       en: "Lists are submitted to the Central Elections Committee around the 47th day before election day; one report (i24NEWS) says September 7 — the exact date awaits the CEC's official timetable."

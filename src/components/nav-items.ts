@@ -13,7 +13,9 @@ export const navItems = [
   { href: "/budget", key: "budget" },
   { href: "/lobbyists", key: "lobbyists" },
   { href: "/attendance", key: "attendance" },
-  { href: "/elections", key: "electionsHistory" },
+  // "2026 Elections" — the page carries the upcoming-election section on top of
+  // the full elections history.
+  { href: "/elections", key: "elections" },
   { href: "/quiz", key: "quiz" },
   { href: "/glossary", key: "glossary" },
   { href: "/tickets", key: "tickets" },

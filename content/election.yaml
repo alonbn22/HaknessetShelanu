@@ -20,6 +20,54 @@ intro:
   he: "הכנסת ה-25 השלימה קדנציה מלאה והתפזרה ב-17 ביולי 2026, והבחירות יתקיימו במועד הקבוע בחוק. בעמוד זה: המועדים, מי צפוי להתמודד, כללי הבחירות והנתונים — כל פריט עם מקור."
   en: "The 25th Knesset completed a full term and dispersed on July 17, 2026; the election will be held on its statutory date. This page covers the timeline, who is expected to run, the rules, and the numbers — every item with a source."
 
+# The road to the 26th Knesset — when each thing becomes known/final.
+keyDates:
+  - key: kd-lists
+    date: "2026-09-10"
+    label: { he: "הגשת רשימות המועמדים — ההרכבים הופכים סופיים", en: "Candidate lists submitted — line-ups become final" }
+    detail:
+      he: "צפוי בסביבות 10-9 בספטמבר 2026 (דיווח אחד: 7 בספטמבר). מרגע ההגשה לוועדת הבחירות המרכזית הרשימות סופיות — ואז יופיעו כאן כל המתמודדים."
+      en: "Expected around September 9–10, 2026 (one report: September 7). Once submitted to the Central Elections Committee the lists are final — and the full candidate rosters will appear here."
+    status: reported
+    sources:
+      - url: "https://www.zman.co.il/live/705042/"
+        title: "לוח הזמנים לבחירות לכנסת: המועד האחרון להגשת מועמדות"
+        publisher: "Zman Yisrael"
+      - url: "https://www.i24news.tv/he/news/israel-elections-2026/artc-8c8f593a"
+        title: "הלו\"ז המלא לבחירות 2026"
+        publisher: "i24NEWS"
+  - key: kd-election
+    date: "2026-10-27"
+    label: { he: "יום הבחירות", en: "Election day" }
+    detail: { he: "יום שלישי, ט\"ז בחשוון התשפ\"ז. יום שבתון.", en: "Tuesday, 16 Cheshvan 5787. A public day of rest." }
+    status: confirmed
+    sources:
+      - url: "https://www.gov.il/he/departments/central-elections-committee/govil-landing-page"
+        title: "ועדת הבחירות המרכזית לכנסת — הבחירות לכנסת ה-26"
+        publisher: "gov.il / ועדת הבחירות"
+  - key: kd-results
+    date: "2026-11-04"
+    label: { he: "תוצאות רשמיות", en: "Official results" }
+    detail:
+      he: "לפי דיווחים, התוצאות הסופיות צפויות עד 4 בנובמבר (שמונה ימים אחרי הבחירות); ערעורים עד 18 בנובמבר."
+      en: "Per reports, final results are expected by November 4 (eight days after the election); appeals by November 18."
+    status: reported
+    sources:
+      - url: "https://www.i24news.tv/he/news/israel-elections-2026/artc-8c8f593a"
+        title: "הלו\"ז המלא לבחירות 2026"
+        publisher: "i24NEWS"
+  - key: kd-convene
+    date: "2026-11-10"
+    label: { he: "כינוס הכנסת ה-26", en: "The 26th Knesset convenes" }
+    detail:
+      he: "ישיבתה הראשונה של הכנסת ה-26 צפויה ב-10 בנובמבר 2026; לאחר מכן מתחיל תהליך הרכבת הממשלה."
+      en: "The 26th Knesset's first sitting is expected on November 10, 2026; government formation begins thereafter."
+    status: reported
+    sources:
+      - url: "https://www.zman.co.il/live/705042/"
+        title: "לוח הזמנים לבחירות לכנסת"
+        publisher: "Zman Yisrael"
+
 facts:
   - key: election-date
     label: { he: "מועד הבחירות", en: "Election date" }
@@ -109,6 +157,7 @@ facts:
 parties:
   - name: { he: "הליכוד", en: "Likud" }
     leader: { he: "בנימין נתניהו", en: "Benjamin Netanyahu" }
+    leaderPersonId: 965
     factionId: 1096
     note:
       he: "צפוי להתמודד בראשות ראש הממשלה נתניהו, לאחר שמפלגת תקווה חדשה בראשות גדעון סער התמזגה לתוכו באוגוסט 2025."
@@ -131,6 +180,7 @@ parties:
         publisher: "The Times of Israel"
   - name: { he: "ישר", en: "Yashar" }
     leader: { he: "גדי איזנקוט", en: "Gadi Eisenkot" }
+    leaderPersonId: 30836
     note:
       he: "מפלגה שהקים הרמטכ\"ל לשעבר גדי איזנקוט בספטמבר 2025; פתחה את קמפיין הבחירות ב-30 ביוני 2026."
       en: "Founded by former IDF chief of staff Gadi Eisenkot in September 2025; launched its campaign on June 30, 2026."
@@ -150,6 +200,7 @@ parties:
         publisher: "N12"
   - name: { he: "ש\"ס", en: "Shas" }
     leader: { he: "אריה דרעי", en: "Aryeh Deri" }
+    leaderPersonId: 2291
     factionId: 1095
     note: { he: "צפויה להתמודד.", en: "Expected to run." }
     sources:
@@ -158,6 +209,7 @@ parties:
         publisher: "Ynetnews"
   - name: { he: "יהדות התורה", en: "United Torah Judaism" }
     leader: { he: "יצחק גולדקנופף", en: "Yitzhak Goldknopf" }
+    leaderPersonId: 30846
     factionId: 1101
     note: { he: "צפויה להתמודד.", en: "Expected to run." }
     sources:
@@ -166,6 +218,7 @@ parties:
         publisher: "The National"
   - name: { he: "הציונות הדתית", en: "Religious Zionism" }
     leader: { he: "בצלאל סמוטריץ'", en: "Bezalel Smotrich" }
+    leaderPersonId: 30055
     factionId: 1097
     note:
       he: "צפויה להתמודד; מהלך לריצה משותפת עם עוצמה יהודית, המקודם לפי דיווחים על ידי נתניהו, לא הבשיל נכון ליולי 2026."
@@ -179,6 +232,7 @@ parties:
         publisher: "The National"
   - name: { he: "עוצמה יהודית", en: "Otzma Yehudit" }
     leader: { he: "איתמר בן גביר", en: "Itamar Ben Gvir" }
+    leaderPersonId: 30811
     factionId: 1106
     note:
       he: "צפויה להתמודד; בן גביר הצהיר ביוני 2026 כי בכוונתו לרוץ עצמאית ולא במשותף עם סמוטריץ'."
@@ -189,6 +243,7 @@ parties:
         publisher: "Srugim"
   - name: { he: "כחול לבן", en: "Blue and White" }
     leader: { he: "בני גנץ", en: "Benny Gantz" }
+    leaderPersonId: 30657
     factionId: 1110
     note:
       he: "לשעבר המחנה הממלכתי; צפויה להתמודד, כאשר לפי דיווחים גנץ דוחה לחצים לפרוש מהמרוץ."
@@ -199,6 +254,7 @@ parties:
         publisher: "Ynet"
   - name: { he: "ישראל ביתנו", en: "Yisrael Beiteinu" }
     leader: { he: "אביגדור ליברמן", en: "Avigdor Liberman" }
+    leaderPersonId: 427
     factionId: 1104
     note:
       he: "צפויה להתמודד; ליברמן הצהיר במאי 2026 כי מטרתו להחליף את הממשלה ולכהן כראש ממשלה."
@@ -209,6 +265,7 @@ parties:
         publisher: "The Times of Israel"
   - name: { he: "רע\"ם", en: "Ra'am" }
     leader: { he: "מנסור עבאס", en: "Mansour Abbas" }
+    leaderPersonId: 30713
     factionId: 1099
     note:
       he: "צפויה להתמודד בנפרד מהרשימה המשותפת לאחר שמגעים לאיחוד לא צלחו; עבאס אמר כי זו צפויה להיות מערכת הבחירות האחרונה שלו."
@@ -253,6 +310,7 @@ parties:
         publisher: "Ynet"
   - name: { he: "נעם", en: "Noam" }
     leader: { he: "אבי מעוז", en: "Avi Maoz" }
+    leaderPersonId: 30814
     factionId: 1107
     note:
       he: "עזבה את הקואליציה במרץ 2025; מתכונת ריצתה (עצמאית או במסגרת רשימה אחרת) טרם הובהרה."

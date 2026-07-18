@@ -8,6 +8,23 @@ what data we could still surface.
 
 Ordered roughly by value/effort. Grounded in tables that already exist unless noted.
 
+- [ ] **⏰ Sept 2026 — official candidate lists → database** (time-critical: lists
+  are submitted to the CEC around **2026-09-09/10** and become final then).
+  Individual candidates don't exist as official data before submission, so today
+  the site shows the sourced editorial layer (`content/election.yaml`: expected
+  parties + leaders linked to their member pages via `leaderPersonId`). Once the
+  CEC publishes the submitted lists: (1) new `election_candidates` table —
+  declared in `src/db/schema.ts` AND `CREATE IF NOT EXISTS` in the sync with
+  matching DDL per house rules; columns ≈ list name/letter, position, name_he,
+  person_id (nullable link into `persons` for current/former MKs — Wikidata
+  enrichment then gives photos+bios "like Knesset members" for the rest);
+  (2) ingestion script from the CEC's published lists (verify the format when
+  live — likely bechirot.gov.il/gov.il pages or PDFs, NOT the Knesset OData API);
+  (3) full-roster rendering in the `/elections` upcoming section (the
+  `kd-lists` timeline entry + `finalListsNote` UI already promise it); (4) after
+  results (Nov 4): mark elected candidates and wire the K26 transition (see the
+  `KNS_KnessetDates` item below — `CURRENT_KNESSET` must flip to 26).
+
 - [ ] **Per-ministry question accountability** — the per-MK "answered vs.
   unanswered questions + response time" ships now (zero new sync: `queries` has
   `submit_date`/`reply_date`, 1,079 of 1,587 answered). The per-*ministry*

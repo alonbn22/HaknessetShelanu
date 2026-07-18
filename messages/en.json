@@ -374,6 +374,8 @@
     "statusReported": "Per reports",
     "keyFacts": "Key facts",
     "parties": "Who is expected to run",
+    "keyDates": "Key dates on the road to the 26th Knesset",
+    "finalListsNote": "The full candidate rosters will appear here once submitted — expected {date}.",
     "partiesNote": "Candidate lists are final only once submitted to the Central Elections Committee; until then the field may change.",
     "rules": "Election rules",
     "stats": "Facts & figures",

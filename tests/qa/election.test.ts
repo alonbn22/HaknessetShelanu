@@ -67,4 +67,43 @@ if (outlook) {
       assert.ok(l.label.he, "link label missing Hebrew");
     }
   });
+
+  test("key dates are ISO-dated, sourced, and in chronological order", () => {
+    const kd = outlook.keyDates ?? [];
+    assert.ok(kd.length >= 2, "expected a key-dates timeline");
+    let prev = "";
+    for (const d of kd) {
+      assert.match(d.date ?? "", /^\d{4}-\d{2}-\d{2}$/, `${d.key}: keyDates entry must carry an ISO date`);
+      assert.ok(d.sources.length >= 1, `${d.key}: no sources`);
+      assert.ok(d.date! >= prev, `${d.key}: keyDates out of order`);
+      prev = d.date!;
+    }
+    assert.ok(kd.some((d) => d.key === "kd-lists"), "must include the lists-final milestone");
+  });
+
+  test("every leaderPersonId resolves to the RIGHT person in the DB", async () => {
+    // Legal safety: a mistyped id would link a party card to the wrong person's
+    // record. Cross-check the id AND that the stored name matches the leader.
+    const { getDb } = await import("../../src/db");
+    const { sql } = await import("drizzle-orm");
+    const db = getDb();
+    for (const p of outlook.parties) {
+      if (p.leaderPersonId == null) continue;
+      const row = db.get<{ n: string; en: string | null }>(
+        sql`SELECT first_name_he || ' ' || last_name_he AS n, name_en AS en
+            FROM persons WHERE id = ${p.leaderPersonId}`,
+      );
+      assert.ok(row, `${p.name.he}: leaderPersonId ${p.leaderPersonId} not in persons`);
+      const norm = (s: string) => s.replace(/['׳]/g, "");
+      const leaderHe = p.leader?.he ?? "";
+      const lastNameHe = norm(leaderHe.split(" ").slice(-1)[0]);
+      const rowLastHe = norm(row!.n.split(" ").slice(-1)[0]);
+      // Containment either way tolerates minor spelling variants between the
+      // editorial name and the registry name (e.g. גולדקנופ / גולדקנופף).
+      assert.ok(
+        lastNameHe.includes(rowLastHe) || rowLastHe.includes(lastNameHe),
+        `${p.name.he}: person ${p.leaderPersonId} is "${row!.n}" — does not match leader "${leaderHe}"`,
+      );
+    }
+  });
 }

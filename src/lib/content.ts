@@ -350,6 +350,7 @@ const electionFactSchema = z.object({
   label: localizedText,
   value: localizedText.optional(),
   detail: localizedText.optional(),
+  date: z.string().optional(), // ISO date — set on keyDates timeline entries
   status: z.enum(["confirmed", "scheduled-by-law", "reported"]).optional(),
   sources: z
     .array(z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() }))
@@ -361,6 +362,10 @@ const electionFactSchema = z.object({
 const electionPartySchema = z.object({
   name: localizedText,
   leader: localizedText.optional(),
+  // Links the named leader to their existing member page (photo, bio, record,
+  // votes) when they are in the site's persons DB. Only set after verifying the
+  // id resolves to the RIGHT person — a QA test cross-checks id + name.
+  leaderPersonId: z.number().optional(),
   note: localizedText.optional(),
   factionId: z.number().optional(), // links to /parties/<id> when it maps to a sitting faction
   sources: z
@@ -375,6 +380,8 @@ const electionOutlookSchema = z.object({
   lastReviewed: z.string(), // YYYY-MM-DD editorial verification date
   headline: localizedText,
   intro: localizedText,
+  // The road to election day and beyond, in order — each entry dated + sourced.
+  keyDates: z.array(electionFactSchema).optional(),
   facts: z.array(electionFactSchema),
   parties: z.array(electionPartySchema),
   rules: z.array(electionFactSchema),

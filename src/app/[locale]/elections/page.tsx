@@ -116,6 +116,39 @@ export default async function ElectionsHistoryPage() {
             <p className="text-sm leading-relaxed">{partyText(outlook.intro, locale)}</p>
           </div>
 
+          {/* The road to the 26th Knesset — when line-ups become final, election
+              day, results, convening. Each entry dated + sourced. */}
+          {outlook.keyDates && outlook.keyDates.length > 0 && (
+            <div className="space-y-2">
+              <h3 className="text-sm font-semibold uppercase tracking-wide text-muted">
+                {te("keyDates")}
+              </h3>
+              <ol className="relative space-y-4 border-s-2 border-accent/30 ps-4">
+                {outlook.keyDates.map((d) => (
+                  <li key={d.key} className="space-y-0.5">
+                    <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
+                      {d.date && (
+                        <span className="font-bold tabular-nums text-accent">
+                          {formatDate(d.date, locale)}
+                        </span>
+                      )}
+                      <span className="font-semibold">{partyText(d.label, locale)}</span>
+                      {d.status && d.status !== "confirmed" && (
+                        <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[11px] font-medium text-amber-800">
+                          {te(d.status === "scheduled-by-law" ? "statusByLaw" : "statusReported")}
+                        </span>
+                      )}
+                    </div>
+                    {d.detail && (
+                      <p className="text-sm leading-relaxed">{partyText(d.detail, locale)}</p>
+                    )}
+                    <SourceLinks sources={d.sources} label={tc("source")} />
+                  </li>
+                ))}
+              </ol>
+            </div>
+          )}
+
           {outlook.facts.length > 0 && (
             <div className="space-y-2">
               <h3 className="text-sm font-semibold uppercase tracking-wide text-muted">
@@ -132,7 +165,17 @@ export default async function ElectionsHistoryPage() {
               <h3 className="text-sm font-semibold uppercase tracking-wide text-muted">
                 {te("parties")}
               </h3>
-              <p className="text-xs text-muted">{te("partiesNote")}</p>
+              <p className="text-xs text-muted">
+                {te("partiesNote")}{" "}
+                {(() => {
+                  // "The full rosters appear here on <date>" — dated from the
+                  // kd-lists timeline entry so the UI never hardcodes a date.
+                  const kd = outlook.keyDates?.find((d) => d.key === "kd-lists");
+                  return kd?.date
+                    ? te("finalListsNote", { date: formatDate(kd.date, locale) })
+                    : null;
+                })()}
+              </p>
               <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {outlook.parties.map((p) => (
                   <div key={p.name.he} className="rounded-lg bg-white p-3 shadow-sm space-y-1">
@@ -147,7 +190,19 @@ export default async function ElectionsHistoryPage() {
                     </div>
                     {p.leader && (
                       <div className="text-sm text-muted">
-                        {te("leader")}: {partyText(p.leader, locale)}
+                        {te("leader")}:{" "}
+                        {p.leaderPersonId != null ? (
+                          // Leader is in the site's DB — link to their member
+                          // page (photo, bio, record, votes).
+                          <Link
+                            className="text-accent hover:underline"
+                            href={`/members/${p.leaderPersonId}`}
+                          >
+                            {partyText(p.leader, locale)}
+                          </Link>
+                        ) : (
+                          partyText(p.leader, locale)
+                        )}
                       </div>
                     )}
                     {p.note && (

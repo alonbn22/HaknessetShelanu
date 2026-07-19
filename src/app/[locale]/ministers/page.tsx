@@ -1,7 +1,7 @@
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { MemberAvatar } from "@/components/MemberCard";
-import { getMinisters, personName, factionName } from "@/lib/queries";
+import { getMinisters, getMinistryQuestionStats, personName, factionName } from "@/lib/queries";
 import { govDuty, govMinistry } from "@/lib/gov-terms";
 import { rtlAttrs } from "@/lib/text";
 
@@ -11,6 +11,8 @@ export default async function MinistersPage() {
   const t = await getTranslations("ministers");
   const locale = await getLocale();
   const ministers = getMinisters();
+  // Per-ministry question accountability (empty until gov_ministries is synced).
+  const qaStats = getMinistryQuestionStats();
 
   return (
     <div className="space-y-6">
@@ -84,6 +86,53 @@ export default async function MinistersPage() {
           </Link>
         ))}
       </div>
+
+      {/* Which ministries answer parliamentary questions — and how fast. From
+          the official submit/reply dates on every question this Knesset. */}
+      {qaStats.length > 0 && (
+        <section className="rounded-xl bg-white p-6 shadow-sm space-y-3">
+          <div>
+            <h2 className="text-xl font-semibold">{t("qaTitle")}</h2>
+            <p className="text-sm text-muted">{t("qaSubtitle")}</p>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-black/10 text-start text-muted">
+                  <th className="px-3 py-2 text-start font-medium">{t("qaMinistry")}</th>
+                  <th className="px-3 py-2 text-end font-medium">{t("qaQuestions")}</th>
+                  <th className="px-3 py-2 text-end font-medium">{t("qaAnswered")}</th>
+                  <th className="px-3 py-2 text-end font-medium">{t("qaAvgDays")}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {qaStats.map((s) => {
+                  const g = govMinistry(s.ministryHe, locale);
+                  return (
+                    <tr key={s.ministryHe} className="border-b border-black/5 last:border-0">
+                      <td
+                        className="px-3 py-2"
+                        dir={g.rtl ? "rtl" : undefined}
+                        lang={g.rtl ? "he" : undefined}
+                      >
+                        {g.text}
+                      </td>
+                      <td className="px-3 py-2 text-end tabular-nums">{s.total}</td>
+                      <td className="px-3 py-2 text-end tabular-nums">
+                        {s.answered}
+                        <span className="text-muted"> ({Math.round((100 * s.answered) / s.total)}%)</span>
+                      </td>
+                      <td className="px-3 py-2 text-end tabular-nums">
+                        {s.avgResponseDays ?? "—"}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      )}
 
       <p className="text-xs text-muted">{t("note")}</p>
     </div>

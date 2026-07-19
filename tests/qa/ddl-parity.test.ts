@@ -21,6 +21,7 @@ const TABLES: Record<string, unknown> = {
   committee_sessions: schema.committeeSessions,
   committee_session_items: schema.committeeSessionItems,
   committee_session_docs: schema.committeeSessionDocs,
+  gov_ministries: schema.govMinistries,
   mk_id_map: schema.mkIdMap,
   mk_agreement: schema.mkAgreement,
   mk_vote_stats: schema.mkVoteStats,

@@ -443,6 +443,12 @@
     "norwegianNote": "The Knesset has 120 members. However, under the \"Norwegian Law\" a minister or deputy minister may resign their Knesset seat to focus on government work, and the next candidate on their party list takes their place. That is why more than 120 people have served in the 25th Knesset: 120 sitting members, plus ministers who vacated their seats.",
     "norwegianBadge": "Left the Knesset",
     "norwegianTag": "Resigned their Knesset seat under the Norwegian Law and serves as a minister",
+    "qaTitle": "Question response by ministry",
+    "qaSubtitle": "How many parliamentary questions each ministry received, how many it answered, and the average response time — from the official submit and reply dates.",
+    "qaMinistry": "Ministry",
+    "qaQuestions": "Questions",
+    "qaAnswered": "Answered",
+    "qaAvgDays": "Avg. days to reply",
     "note": "Source: Knesset Open Data (KNS_PersonToPosition). Ministry names are shown in Hebrew as in the source."
   },
   "quiz": {

@@ -24,6 +24,7 @@ import {
   getMemberQuestionStats,
   getMemberAgendaCount,
   getMemberRecentAgendas,
+  getMinistryNames,
   getMemberCommittees,
   getMemberBio,
   personName,
@@ -103,6 +104,8 @@ export default async function MemberPage({
   const questionCount = getMemberQuestionCount(personId);
   const recentQuestions = getMemberRecentQuestions(personId, 6);
   const questionStats = getMemberQuestionStats(personId);
+  // Which ministry each question went to (empty until gov_ministries syncs).
+  const ministryNames = getMinistryNames(recentQuestions.map((q) => q.govMinistryId));
   const agendaCount = getMemberAgendaCount(personId);
   const recentAgendas = getMemberRecentAgendas(personId, 6);
   const committees = getMemberCommittees(personId);
@@ -464,10 +467,21 @@ export default async function MemberPage({
             <ul className="divide-y divide-black/5 pt-2">
               {recentQuestions.map((q) => {
                 const qt = localOf(q.nameHe);
+                const ministryHe = q.govMinistryId != null ? ministryNames.get(q.govMinistryId) : undefined;
+                const ministry = ministryHe ? govMinistry(ministryHe, locale) : null;
                 return (
                   <li key={q.id} className="flex items-start gap-2 py-2 text-sm">
                     <span className="min-w-0 flex-1" {...localizedAttrs(qt)}>
                       {qt.text}
+                      {ministry && (
+                        <span
+                          className="ms-2 whitespace-nowrap rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-muted"
+                          dir={ministry.rtl ? "rtl" : undefined}
+                          lang={ministry.rtl ? "he" : undefined}
+                        >
+                          {ministry.text}
+                        </span>
+                      )}
                     </span>
                     <span
                       className={`shrink-0 rounded-full px-2 py-0.5 text-[11px] font-medium ${

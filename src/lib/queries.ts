@@ -1025,6 +1025,61 @@ export function getMemberQuestionStats(
   };
 }
 
+// Per-ministry question accountability: how many parliamentary questions each
+// ministry received, how many it answered, and its average response time.
+// try/catch → empty while gov_ministries isn't materialized yet (house rule).
+export type MinistryQuestionStats = {
+  ministryHe: string;
+  total: number;
+  answered: number;
+  avgResponseDays: number | null;
+};
+
+export function getMinistryQuestionStats(minQuestions = 10): MinistryQuestionStats[] {
+  try {
+    return getDb()
+      .select({
+        ministryHe: schema.govMinistries.nameHe,
+        total: sql<number>`COUNT(*)`,
+        answered: sql<number>`SUM(${schema.queries.replyDate} IS NOT NULL)`,
+        avg: sql<number | null>`AVG(julianday(${schema.queries.replyDate}) - julianday(${schema.queries.submitDate}))`,
+      })
+      .from(schema.queries)
+      .innerJoin(schema.govMinistries, eq(schema.govMinistries.id, schema.queries.govMinistryId))
+      // Ministries repeat per government under the same name — group by name so
+      // one row per ministry, and skip tiny tallies that would read as noise.
+      .groupBy(schema.govMinistries.nameHe)
+      .having(sql`COUNT(*) >= ${minQuestions} AND ${schema.govMinistries.nameHe} IS NOT NULL`)
+      .orderBy(sql`COUNT(*) DESC`)
+      .all()
+      .map((r) => ({
+        ministryHe: r.ministryHe!,
+        total: r.total,
+        answered: r.answered ?? 0,
+        avgResponseDays: r.avg == null ? null : Math.round(r.avg),
+      }));
+  } catch {
+    return [];
+  }
+}
+
+// Resolve gov_ministry_ids to names for a question list. try/catch → empty map
+// while the lookup table isn't materialized yet.
+export function getMinistryNames(ids: (number | null)[]): Map<number, string> {
+  const wanted = [...new Set(ids.filter((x): x is number => x != null))];
+  if (wanted.length === 0) return new Map();
+  try {
+    const rows = getDb()
+      .select({ id: schema.govMinistries.id, nameHe: schema.govMinistries.nameHe })
+      .from(schema.govMinistries)
+      .where(inArray(schema.govMinistries.id, wanted))
+      .all();
+    return new Map(rows.filter((r) => r.nameHe).map((r) => [r.id, r.nameHe!]));
+  } catch {
+    return new Map();
+  }
+}
+
 // The MK's recent agenda motions (KNS_Agenda) — synced since day one but never
 // displayed anywhere; names are Hebrew and localize lazily like bill names.
 export function getMemberRecentAgendas(personId: number, limit = 6) {

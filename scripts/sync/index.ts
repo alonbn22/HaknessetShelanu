@@ -36,6 +36,7 @@ import { syncBills } from "./bills";
 import {
   syncQueries,
   syncAgendas,
+  syncGovMinistries,
   syncCommittees,
   syncCommitteeSessions,
   syncCommitteeSessionDetails,
@@ -105,6 +106,10 @@ async function main() {
     await syncBills();
   }
 
+  if (all || args.has("--activity") || args.has("--ministries")) {
+    // Tiny near-static registry; also standalone via --ministries.
+    await syncGovMinistries();
+  }
   if (all || args.has("--activity")) {
     await syncQueries();
     await syncAgendas();

@@ -316,6 +316,17 @@ export const committeeSessionDocs = sqliteTable(
   (t) => [index("cmt_doc_session_idx").on(t.sessionId)],
 );
 
+// Government-ministry registry (KNS_GovMinistry) — resolves the bare
+// gov_ministry_id on parliamentary questions to a ministry name. Ministries
+// repeat per government (same name, new id), so this is a plain id lookup.
+// Created IF NOT EXISTS by the sync so an un-pushed DB self-heals.
+export const govMinistries = sqliteTable("gov_ministries", {
+  id: integer("id").primaryKey(),
+  nameHe: text("name_he"),
+  isActive: integer("is_active", { mode: "boolean" }),
+  lastUpdated: text("last_updated"),
+});
+
 // The active laws of Israel (KNS_IsraelLaw) — the consolidated law book.
 export const israelLaws = sqliteTable(
   "israel_laws",

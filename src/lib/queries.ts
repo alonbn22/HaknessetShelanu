@@ -1003,6 +1003,47 @@ export function getMemberAgendaCount(personId: number): number {
   );
 }
 
+// Accountability: how many of the MK's parliamentary questions were answered,
+// and how long the ministry took on average (submit_date → reply_date, days).
+export function getMemberQuestionStats(
+  personId: number,
+): { total: number; answered: number; avgResponseDays: number | null } | null {
+  const row = getDb()
+    .select({
+      total: sql<number>`COUNT(*)`,
+      answered: sql<number>`SUM(${schema.queries.replyDate} IS NOT NULL)`,
+      avg: sql<number | null>`AVG(julianday(${schema.queries.replyDate}) - julianday(${schema.queries.submitDate}))`,
+    })
+    .from(schema.queries)
+    .where(eq(schema.queries.personId, personId))
+    .get();
+  if (!row || row.total === 0) return null;
+  return {
+    total: row.total,
+    answered: row.answered ?? 0,
+    avgResponseDays: row.avg == null ? null : Math.round(row.avg),
+  };
+}
+
+// The MK's recent agenda motions (KNS_Agenda) — synced since day one but never
+// displayed anywhere; names are Hebrew and localize lazily like bill names.
+export function getMemberRecentAgendas(personId: number, limit = 6) {
+  return getDb()
+    .select()
+    .from(schema.agendas)
+    .where(
+      and(
+        eq(schema.agendas.initiatorPersonId, personId),
+        // The sync stores Name trimmed but keeps "" — an empty subject renders
+        // as a blank row, so skip those.
+        sql`${schema.agendas.nameHe} IS NOT NULL AND ${schema.agendas.nameHe} != ''`,
+      ),
+    )
+    .orderBy(desc(schema.agendas.lastUpdated))
+    .limit(limit)
+    .all();
+}
+
 export type CommitteeMembership = {
   committeeId: number;
   committeeNameHe: string | null;

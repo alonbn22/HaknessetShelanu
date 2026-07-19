@@ -21,7 +21,9 @@ import {
   getMemberSponsoredCount,
   getMemberQuestionCount,
   getMemberRecentQuestions,
+  getMemberQuestionStats,
   getMemberAgendaCount,
+  getMemberRecentAgendas,
   getMemberCommittees,
   getMemberBio,
   personName,
@@ -100,7 +102,9 @@ export default async function MemberPage({
   const sponsoredCount = getMemberSponsoredCount(personId);
   const questionCount = getMemberQuestionCount(personId);
   const recentQuestions = getMemberRecentQuestions(personId, 6);
+  const questionStats = getMemberQuestionStats(personId);
   const agendaCount = getMemberAgendaCount(personId);
+  const recentAgendas = getMemberRecentAgendas(personId, 6);
   const committees = getMemberCommittees(personId);
 
   const factionRows = positions.filter(
@@ -133,6 +137,7 @@ export default async function MemberPage({
     ...bioParts,
     ...sponsoredBills.map((b) => b.nameHe),
     ...recentQuestions.map((q) => q.nameHe),
+    ...recentAgendas.map((a) => a.nameHe),
     ...committees.map((c) => c.committeeNameHe),
     ...roleRows.map((p) => p.committeeNameHe),
     ...factionRows.map((p) => p.factionNameHe),
@@ -442,21 +447,58 @@ export default async function MemberPage({
               <div className="text-sm text-muted">{t("member.agendaMotions")}</div>
             </div>
           </div>
+          {/* Question accountability: answered rate + ministry response time,
+              straight from the official submit/reply dates. */}
+          {questionStats && (
+            <p className="text-center text-sm text-muted">
+              {t("member.questionsAnswered", {
+                answered: questionStats.answered,
+                total: questionStats.total,
+              })}
+              {questionStats.avgResponseDays != null && (
+                <> · {t("member.avgResponse", { days: questionStats.avgResponseDays })}</>
+              )}
+            </p>
+          )}
           {recentQuestions.length > 0 && (
             <ul className="divide-y divide-black/5 pt-2">
               {recentQuestions.map((q) => {
                 const qt = localOf(q.nameHe);
                 return (
-                  <li
-                    key={q.id}
-                    className="py-2 text-sm"
-                    {...localizedAttrs(qt)}
-                  >
-                    {qt.text}
+                  <li key={q.id} className="flex items-start gap-2 py-2 text-sm">
+                    <span className="min-w-0 flex-1" {...localizedAttrs(qt)}>
+                      {qt.text}
+                    </span>
+                    <span
+                      className={`shrink-0 rounded-full px-2 py-0.5 text-[11px] font-medium ${
+                        q.replyDate
+                          ? "bg-green-100 text-green-800"
+                          : "bg-amber-100 text-amber-800"
+                      }`}
+                    >
+                      {q.replyDate ? t("member.answered") : t("member.unanswered")}
+                    </span>
                   </li>
                 );
               })}
             </ul>
+          )}
+          {recentAgendas.length > 0 && (
+            <div className="pt-2">
+              <h3 className="mb-1 text-sm font-semibold text-muted">
+                {t("member.agendaMotions")}
+              </h3>
+              <ul className="divide-y divide-black/5">
+                {recentAgendas.map((a) => {
+                  const at = localOf(a.nameHe);
+                  return (
+                    <li key={a.id} className="py-2 text-sm" {...localizedAttrs(at)}>
+                      {at.text}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           )}
         </section>
       )}

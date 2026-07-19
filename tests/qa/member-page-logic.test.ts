@@ -1,6 +1,13 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { isServingMember, type PositionRow } from "../../src/lib/queries";
+import {
+  isServingMember,
+  getMemberQuestionStats,
+  getMemberRecentAgendas,
+  type PositionRow,
+} from "../../src/lib/queries";
+import { getDb } from "../../src/db";
+import { sql } from "drizzle-orm";
 import { localizeMemberRecord, type MemberRecord } from "../../src/lib/content";
 import {
   CURRENT_KNESSET,
@@ -108,4 +115,36 @@ test("localizeMemberRecord falls back to Hebrew when neither locale nor cache ha
 test("localizeMemberRecord never drops the Hebrew source text", () => {
   const out = localizeMemberRecord(rec(), "ru", new Map())!;
   for (const c of out.claims) assert.ok(c.title.he, "he text must survive");
+});
+
+// --- question accountability + agenda motions (live DB) ---
+
+test("getMemberQuestionStats: answered <= total and sane response times", () => {
+  const db = getDb();
+  const pid = db.get<{ p: number }>(
+    sql`SELECT person_id p FROM queries WHERE reply_date IS NOT NULL GROUP BY person_id ORDER BY COUNT(*) DESC LIMIT 1`,
+  )?.p;
+  assert.ok(pid, "no MK with answered questions in the DB");
+  const s = getMemberQuestionStats(pid!)!;
+  assert.ok(s.total > 0 && s.answered > 0);
+  assert.ok(s.answered <= s.total, "answered cannot exceed total");
+  assert.ok(s.avgResponseDays != null && s.avgResponseDays >= 0, "avg days must be non-negative");
+  // No questions → null, not a zero-filled object.
+  assert.equal(getMemberQuestionStats(-1), null);
+});
+
+test("getMemberRecentAgendas returns the MK's motions with Hebrew names", () => {
+  const db = getDb();
+  const pid = db.get<{ p: number }>(
+    sql`SELECT initiator_person_id p FROM agendas
+        WHERE initiator_person_id IS NOT NULL AND name_he != ''
+        GROUP BY initiator_person_id ORDER BY COUNT(*) DESC LIMIT 1`,
+  )?.p;
+  assert.ok(pid, "no agenda motions in the DB");
+  const rows = getMemberRecentAgendas(pid!, 6);
+  assert.ok(rows.length > 0 && rows.length <= 6);
+  for (const r of rows) {
+    assert.equal(r.initiatorPersonId, pid);
+    assert.ok(r.nameHe, "motion must carry its Hebrew subject");
+  }
 });

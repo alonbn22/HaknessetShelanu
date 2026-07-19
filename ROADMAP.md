@@ -25,14 +25,12 @@ Ordered roughly by value/effort. Grounded in tables that already exist unless no
   results (Nov 4): mark elected candidates and wire the K26 transition (see the
   `KNS_KnessetDates` item below — `CURRENT_KNESSET` must flip to 26).
 
-- [ ] **Per-ministry question accountability** — the per-MK "answered vs.
-  unanswered questions + response time" ships now (zero new sync: `queries` has
-  `submit_date`/`reply_date`, 1,079 of 1,587 answered). The per-*ministry*
-  breakdown needs a tiny `gov_ministries` lookup sync (`KNS_GovMinistry`) to
-  resolve the bare `gov_ministry_id`. Small, near-static; declare in schema.ts +
-  `CREATE IF NOT EXISTS` in sync, query try/catches to empty. (Roadmap note: the
-  old P1 text overstated what's synced — only `submit_date`/`reply_date` exist,
-  **not** `ReplyDatePlanned`/`StatusID`.)
+- [x] **Question accountability — SHIPPED end to end**: member pages show the
+  answered rate + average ministry response time with per-question
+  Answered/Unanswered badges and the addressee-ministry chip; `/ministers`
+  carries the per-ministry response table (received / answered % / avg days,
+  ≥10 questions), powered by the new `gov_ministries` lookup
+  (`KNS_GovMinistry`, 922 rows, `--ministries` flag, DDL-parity-tested).
 - [ ] **Rebellion drill-down** — the party-discipline % ships on member pages and
   `/compare`, but not *which* votes an MK broke with their faction (the most
   interesting part). A per-member expandable list computed from the same

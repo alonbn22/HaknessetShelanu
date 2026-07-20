@@ -35,10 +35,9 @@ Ordered roughly by value/effort. Grounded in tables that already exist unless no
   pages expands to the actual votes the MK cast against their faction majority
   (title, date, their vote vs. the faction's, linked to the vote page), computed
   with the same CTEs as the % so the list always reconciles (test-enforced).
-- [ ] **Agenda-motion subjects on member pages** — `agendas` holds 800 motions
-  (all `name_he` populated) but they're displayed nowhere; the member page shows
-  only a count. Render recent motions like sponsored bills, via
-  `localizeData`/`queueDataTranslations` + `rtlAttrs`.
+- [x] **Agenda-motion subjects on member pages — SHIPPED**: recent motions render
+  in the activity section (localized lazily, RTL fallback, empty subjects
+  filtered at the query).
 - [ ] **Voting-days-per-period stat** — derive "how many days did the Knesset
   vote this month/year" from `votes.session_id` (346 distinct sessions) +
   `date_time` (415 distinct voting days) today — a home-dashboard accountability

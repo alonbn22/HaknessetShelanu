@@ -4,6 +4,8 @@ import {
   isServingMember,
   getMemberQuestionStats,
   getMemberRecentAgendas,
+  getMemberRebellions,
+  getPartyDiscipline,
   type PositionRow,
 } from "../../src/lib/queries";
 import { getDb } from "../../src/db";
@@ -131,6 +133,27 @@ test("getMemberQuestionStats: answered <= total and sane response times", () => 
   assert.ok(s.avgResponseDays != null && s.avgResponseDays >= 0, "avg days must be non-negative");
   // No questions → null, not a zero-filled object.
   assert.equal(getMemberQuestionStats(-1), null);
+});
+
+test("getMemberRebellions reconciles with the party-discipline metric", () => {
+  const db = getDb();
+  // A current MK with recorded votes (highest participation → stable fixture).
+  const pid = db.get<{ p: number }>(
+    sql`SELECT person_id p FROM mk_vote_stats WHERE knesset_num = 25
+        ORDER BY participated DESC LIMIT 1`,
+  )!.p;
+  const d = getPartyDiscipline(pid);
+  assert.ok(d, "expected discipline stats for the fixture MK");
+  const expectedBreaks = d!.total - d!.withParty;
+  const rebels = getMemberRebellions(pid, 100000);
+  // Same CTEs on both sides — the list length must equal total - withParty.
+  assert.equal(rebels.length, expectedBreaks, "rebellion list must reconcile with the %");
+  for (const r of rebels.slice(0, 20)) {
+    assert.notEqual(r.mkCode, r.factionCode, "every listed vote must be an actual break");
+    assert.ok(r.dateTime, "vote must carry its date");
+  }
+  // The default limit caps the list.
+  assert.ok(getMemberRebellions(pid, 10).length <= 10);
 });
 
 test("getMemberRecentAgendas returns the MK's motions with Hebrew names", () => {

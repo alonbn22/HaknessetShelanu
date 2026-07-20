@@ -31,10 +31,10 @@ Ordered roughly by value/effort. Grounded in tables that already exist unless no
   carries the per-ministry response table (received / answered % / avg days,
   ≥10 questions), powered by the new `gov_ministries` lookup
   (`KNS_GovMinistry`, 922 rows, `--ministries` flag, DDL-parity-tested).
-- [ ] **Rebellion drill-down** — the party-discipline % ships on member pages and
-  `/compare`, but not *which* votes an MK broke with their faction (the most
-  interesting part). A per-member expandable list computed from the same
-  `vote_results` + faction-membership join; precompute at sync like `mk_agreement`.
+- [x] **Rebellion drill-down — SHIPPED**: the party-discipline callout on member
+  pages expands to the actual votes the MK cast against their faction majority
+  (title, date, their vote vs. the faction's, linked to the vote page), computed
+  with the same CTEs as the % so the list always reconciles (test-enforced).
 - [ ] **Agenda-motion subjects on member pages** — `agendas` holds 800 motions
   (all `name_he` populated) but they're displayed nowhere; the member page shows
   only a count. Render recent motions like sponsored bills, via

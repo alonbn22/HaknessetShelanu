@@ -24,6 +24,7 @@ import {
   getMemberQuestionStats,
   getMemberAgendaCount,
   getMemberRecentAgendas,
+  getMemberRebellions,
   getMinistryNames,
   getMemberCommittees,
   getMemberBio,
@@ -83,6 +84,8 @@ export default async function MemberPage({
   const positions = getMemberPositions(personId);
   const stats = getMemberStats(personId);
   const discipline = getPartyDiscipline(personId);
+  // The receipts behind the discipline %: recent votes against the faction line.
+  const rebellions = discipline ? getMemberRebellions(personId, 10) : [];
   const mostAligned = getTopAgreements(personId, "top", 5);
   const leastAligned = getTopAgreements(personId, "bottom", 5);
   const recentVotes = getMemberRecentVotes(personId, 10);
@@ -141,6 +144,7 @@ export default async function MemberPage({
     ...sponsoredBills.map((b) => b.nameHe),
     ...recentQuestions.map((q) => q.nameHe),
     ...recentAgendas.map((a) => a.nameHe),
+    ...rebellions.map((r) => r.titleHe),
     ...committees.map((c) => c.committeeNameHe),
     ...roleRows.map((p) => p.committeeNameHe),
     ...factionRows.map((p) => p.factionNameHe),
@@ -360,6 +364,48 @@ export default async function MemberPage({
                   total: discipline.total.toLocaleString(locale),
                 })}
               </p>
+              {/* The receipts: which votes broke with the faction majority. */}
+              {rebellions.length > 0 && (
+                <details className="group mt-2">
+                  <summary className="cursor-pointer list-none text-sm font-medium text-accent hover:underline [&::-webkit-details-marker]:hidden">
+                    <span aria-hidden className="select-none">
+                      <span className="group-open:hidden">+</span>
+                      <span className="hidden group-open:inline">&minus;</span>
+                    </span>{" "}
+                    {t("member.rebellions", { count: discipline.total - discipline.withParty })}
+                  </summary>
+                  <ul className="mt-2 divide-y divide-black/5">
+                    {rebellions.map((r) => {
+                      const rt = localOf(r.titleHe);
+                      return (
+                        <li key={r.voteId} className="space-y-1 py-2 text-sm">
+                          <Link
+                            href={`/votes/${r.voteId}`}
+                            className="hover:underline"
+                            {...localizedAttrs(rt)}
+                          >
+                            {rt.text}
+                          </Link>
+                          <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted">
+                            <span className="whitespace-nowrap">{formatDate(r.dateTime, locale)}</span>
+                            <span className="flex items-center gap-1">
+                              {t("member.mkVoted")} <VoteResultBadge code={r.mkCode} />
+                            </span>
+                            <span className="flex items-center gap-1">
+                              {t("member.factionVoted")} <VoteResultBadge code={r.factionCode} />
+                            </span>
+                          </div>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                  {discipline.total - discipline.withParty > rebellions.length && (
+                    <p className="mt-1 text-xs text-muted">
+                      {t("member.rebellionsShowing", { shown: rebellions.length })}
+                    </p>
+                  )}
+                </details>
+              )}
             </div>
           )}
         </section>

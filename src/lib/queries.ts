@@ -479,6 +479,55 @@ export function getPartyDiscipline(personId: number): PartyDiscipline | null {
   return { total, withParty, pct: Math.round((1000 * withParty) / total) / 10 };
 }
 
+// The receipts behind the party-discipline %: the recent votes where this MK
+// voted differently from their faction's majority. Same faction/majority CTEs
+// as getPartyDiscipline so the list always reconciles with the percentage.
+export type Rebellion = {
+  voteId: number;
+  titleHe: string | null;
+  dateTime: string;
+  mkCode: number;
+  factionCode: number;
+};
+
+export function getMemberRebellions(personId: number, limit = 10): Rebellion[] {
+  return getDb().all<Rebellion>(sql`
+    WITH me AS (
+      SELECT faction_id AS fid FROM person_positions
+      WHERE person_id = ${personId} AND position_id = ${POSITION_FACTION_MEMBER}
+        AND knesset_num = ${CURRENT_KNESSET} AND faction_id IS NOT NULL
+      ORDER BY is_current DESC, start_date DESC LIMIT 1
+    ),
+    members AS (
+      SELECT DISTINCT person_id FROM person_positions
+      WHERE position_id = ${POSITION_FACTION_MEMBER} AND knesset_num = ${CURRENT_KNESSET}
+        AND is_current = 1 AND faction_id = (SELECT fid FROM me)
+    ),
+    fac AS (
+      SELECT vr.vote_id, vr.result_code, COUNT(*) AS cnt
+      FROM vote_results vr
+      WHERE vr.person_id IN (SELECT person_id FROM members)
+        AND vr.result_code IN (${VOTE_FOR}, ${VOTE_AGAINST}, ${VOTE_ABSTAIN})
+      GROUP BY vr.vote_id, vr.result_code
+    ),
+    maj AS (
+      SELECT vote_id, result_code AS maj_code,
+        ROW_NUMBER() OVER (PARTITION BY vote_id ORDER BY cnt DESC, result_code) AS rn
+      FROM fac
+    )
+    SELECT p.vote_id AS voteId, v.title_he AS titleHe, v.date_time AS dateTime,
+           p.result_code AS mkCode, m.maj_code AS factionCode
+    FROM vote_results p
+    JOIN maj m ON m.vote_id = p.vote_id AND m.rn = 1
+    JOIN votes v ON v.id = p.vote_id
+    WHERE p.person_id = ${personId}
+      AND p.result_code IN (${VOTE_FOR}, ${VOTE_AGAINST}, ${VOTE_ABSTAIN})
+      AND p.result_code != m.maj_code
+    ORDER BY v.date_time DESC
+    LIMIT ${limit}
+  `);
+}
+
 export type AgreementPartner = {
   person: Person;
   bothVoted: number;

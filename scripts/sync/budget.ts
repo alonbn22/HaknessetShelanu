@@ -2,15 +2,10 @@ import { sql } from "drizzle-orm";
 import { getDb, schema } from "../../src/db";
 import { fetchRetry } from "./odata";
 
-// State budget from the Ministry of Finance open data on data.gov.il.
-//
-// Detailed itemized budgets (ministry→area→program→line, WITH names) are
-// published as open data through 2018. We load the last 10 such years
-// (2009–2018) at line level (net expenditure, NIS thousands).
-//
-// For more recent years (2019→) only the Accountant-General execution reports
-// are open (program codes, no names, in shekels). From those we take the
-// approved gross total per year for the timeline + the current-Knesset total.
+// State budget from Ministry of Finance open data on data.gov.il.
+// Detailed itemized budgets (with names) are open through 2018 — loaded at line
+// level (net, NIS thousands). 2019→ only execution reports (program codes, no
+// names, in shekels) are open — we take the approved gross total per year.
 
 // data.gov.il records have dynamic Hebrew keys.
 type Row = Record<string, string | number | null>;
@@ -76,9 +71,7 @@ export async function syncBudget() {
   ensureTables();
 
   // ---- detailed years (net, itemized) ----
-  // Each year is independent: a failure on one (after fetchRetry has exhausted
-  // its backoff) is logged and skipped so the remaining years still load — the
-  // same tolerance the RECENT loop already has.
+  // Each year is independent: a failure is logged and skipped so the rest load.
   for (const { res, years } of DETAILED) {
     for (const year of years) {
       try {
@@ -130,9 +123,8 @@ export async function syncBudget() {
   }
 
   // ---- code → name dictionaries from the detailed years (newest wins) ----
-  // Recent execution reports carry program codes but no names; the budget
-  // structure is stable enough that we can resolve names from the detailed
-  // years (83% of recent programs match by code; 100% match a ministry).
+  // Recent reports have program codes but no names; resolve them from the
+  // detailed years (~83% match by code, 100% by ministry).
   const dictRows = db
     .select({
       programCode: schema.budgetLines.programCode,

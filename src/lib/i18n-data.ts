@@ -1,11 +1,7 @@
-// Unified data-translation layer. One deduplicated cache (`translations`), keyed
-// by the Hebrew source string and shared across ALL data (vote titles, law names,
-// committees, budget lines, …). Resolve from cache; translate misses lazily in
-// Next's after() and cache them. New data auto-translates on first view — no
-// per-table columns, no manual backfill.
-//
-// Server-only (DB + network). Enumerated UI terms (ministries, duties, vote
-// types) stay in gov-terms.ts; this handles free-text names.
+// Unified data-translation layer: one dedup cache (`translations`) keyed by the
+// Hebrew source, shared across ALL data. Resolve from cache; translate misses
+// lazily in Next's after(). No per-table columns, no manual backfill.
+// Server-only (DB + network). Enumerated UI terms live in gov-terms.ts.
 
 import { after } from "next/server";
 import { and, inArray, isNotNull, sql } from "drizzle-orm";
@@ -50,10 +46,8 @@ export function localizeData(
   return map;
 }
 
-// Per-page convenience: build the localized cache for a page's Hebrew strings and
-// schedule the lazy translation of any misses after the response. Returns the
-// cache plus a bound resolver `loc(he)`. Collapses the localizeData +
-// after(queueDataTranslations) boilerplate the list pages all repeated.
+// Per-page convenience: build the cache for a page's Hebrew strings and queue
+// lazy translation of misses in after(). Returns the cache + a bound `loc(he)`.
 export function localizePage(heList: (string | null | undefined)[], locale: string) {
   const cache = localizeData(heList, locale);
   if (locale !== "he") after(() => queueDataTranslations(heList, locale));

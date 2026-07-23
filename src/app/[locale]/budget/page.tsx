@@ -63,19 +63,16 @@ export default async function BudgetPage({
     page,
   });
 
-  // Resolve Hebrew names → the active locale via the unified cache (sections +
-  // line names on this page), then lazily translate any misses after the response.
+  // Resolve Hebrew names via the unified cache; misses translate lazily after the response.
   const shownNames = [
     ...sections.map((s) => s.nameHe),
     ...items.flatMap((l) => [l.takanaNameHe, l.programNameHe, l.sectionNameHe]),
   ];
   const { loc: ln } = localizePage(shownNames, locale);
 
-  // Amounts are in NIS thousands. Auto-scale: ≥1,000B → trillions, ≥1B → billions,
-  // else millions. (1,000 billion = 1 trillion.)
+  // Amounts are NIS thousands. Auto-scale: ≥1,000B → trillions, ≥1B → billions, else millions.
   const nf = new Intl.NumberFormat(locale, { maximumFractionDigits: 2 });
   const nf1 = new Intl.NumberFormat(locale, { maximumFractionDigits: 1 });
-  // One auto-scaling money formatter (input is NIS thousands).
   const money = (k: number) => {
     // ≥ 1 trillion: show trillions with the billions in parentheses.
     if (k >= 1e9) return `₪${nf.format(k / 1e9)}${t("tr")} (₪${nf1.format(k / 1e6)}${t("b")})`;

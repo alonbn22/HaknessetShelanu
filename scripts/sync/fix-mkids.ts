@@ -1,10 +1,7 @@
-// One-time repair for the CURRENT committed DB: KNS_PlenumVoteResult.MkId is a
-// different identifier space from KNS_Person.Id for many MKs (e.g. Kallner =
-// Person 30710 but MkId 32037), so vote_results stored under raw MkIds never join
-// to persons → those votes show "did not vote" for everyone. The durable fix now
-// lives in scripts/sync/votes.ts (remapVoteResultMkIds, run every vote sync) and
-// the mk_id_map table is declared in the Drizzle schema so db:push keeps it. This
-// script just applies that same remap once and recomputes totals/stats.
+// One-time repair: KNS_PlenumVoteResult.MkId is a different id space from
+// KNS_Person.Id for many MKs, so vote_results under raw MkIds never join to
+// persons (they show as "did not vote"). The durable fix lives in votes.ts
+// (remapVoteResultMkIds); this just applies that remap once + recomputes stats.
 //
 //   npm run db:push          # creates mk_id_map (now in the schema)
 //   npx tsx scripts/sync/fix-mkids.ts

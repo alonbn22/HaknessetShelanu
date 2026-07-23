@@ -3,8 +3,8 @@ import type { MemberRecord, MemberClaim } from "@/lib/content";
 import { formatDate } from "@/lib/format";
 import { isHebrew } from "@/lib/text";
 
-// Deliberate locale -> Hebrew fallback (no en intermediate): legal member-record
-// text is authored per locale, and the page fills missing ar/ru from the cache.
+// Locale -> Hebrew fallback (no en intermediate): legal record text is authored
+// per locale; the page fills missing ar/ru from the cache.
 function localized(
   text: { he: string; en?: string; ar?: string; ru?: string },
   locale: string,
@@ -12,8 +12,7 @@ function localized(
   return (text[locale as keyof typeof text] as string | undefined) ?? text.he;
 }
 
-// Mark untranslated Hebrew (e.g. a not-yet-translated claim or a Hebrew source
-// title) so it renders right-to-left under a non-Hebrew document language.
+// Mark untranslated Hebrew so it renders RTL under a non-Hebrew document language.
 const rtlProps = (s: string) =>
   isHebrew(s) ? ({ dir: "rtl", lang: "he" } as const) : {};
 

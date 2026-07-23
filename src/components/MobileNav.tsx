@@ -5,15 +5,13 @@ import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import { navItems } from "./nav-items";
 
-// Hamburger menu for small screens (the desktop NavLinks is hidden there).
-// Renders a toggle button + a dropdown panel positioned below the header bar.
+// Hamburger menu for small screens (desktop uses NavLinks).
 export function MobileNav() {
   const t = useTranslations("nav");
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
-  // Close on Escape. (Links close the menu via their onClick, so no route-change
-  // effect is needed.)
+  // Close on Escape (links close via their onClick, so no route-change effect needed).
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => {
@@ -44,8 +42,7 @@ export function MobileNav() {
 
       {open && (
         <>
-          {/* Click-away backdrop. The header (z-40) sits above it, so only the
-              content below is dimmed; clicking it closes the menu. */}
+          {/* Click-away backdrop; header (z-40) stays above it. */}
           <button
             type="button"
             aria-hidden

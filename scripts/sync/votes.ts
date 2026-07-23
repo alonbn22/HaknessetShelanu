@@ -35,11 +35,10 @@ function getSyncCursor(table: string): string | null {
   return row?.lastUpdatedDate ?? null;
 }
 
-// Re-scan a small overlap before the stored cursor on the next incremental run.
-// Offset paging ordered by LastUpdatedDate can skip a row that is updated
-// mid-pagination; re-fetching the boundary closes that gap (upserts make it
-// idempotent). Applied only to the query lower bound — the stored cursor stays
-// the true high-water mark, so it never drifts backwards across empty runs.
+// Re-scan a small overlap before the stored cursor. Offset paging by
+// LastUpdatedDate can skip a row updated mid-pagination; re-fetching the boundary
+// closes that gap (upserts idempotent). Only the query lower bound moves — the
+// stored cursor stays the true high-water mark.
 function backoffCursor(iso: string, minutes = 5): string {
   const t = Date.parse(iso);
   return Number.isNaN(t) ? iso : new Date(t - minutes * 60_000).toISOString();
@@ -48,10 +47,9 @@ function backoffCursor(iso: string, minutes = 5): string {
 export async function syncVoteHeaders() {
   const db = getDb();
   const cursor = getSyncCursor("KNS_PlenumVote");
-  // KNS_PlenumVote spans every Knesset, and a retro-edit to an old vote bumps
-  // LastUpdatedDate — so the incremental filter MUST also gate on VoteDateTime,
-  // or such a row is ingested and mislabeled as the current Knesset (we stamp
-  // knessetNum: CURRENT_KNESSET below). The full branch already gates by date.
+  // KNS_PlenumVote spans every Knesset; a retro-edit bumps LastUpdatedDate, so
+  // the incremental filter MUST also gate on VoteDateTime or an old row gets
+  // mislabeled as the current Knesset (we stamp CURRENT_KNESSET below).
   const filter = cursor
     ? `LastUpdatedDate ge ${backoffCursor(cursor)} and VoteDateTime ge ${CURRENT_KNESSET_START}`
     : `VoteDateTime ge ${CURRENT_KNESSET_START}`;
@@ -104,9 +102,8 @@ const insertResult = () => {
     .prepare();
 };
 
-// KNS_PlenumVoteResult.MkId is a different id space from KNS_Person.Id for
-// newer MKs (see scripts/sync/fix-mkids.ts). Resolve it to the real PersonID
-// via the mk_id_map table so vote rows join to persons correctly.
+// KNS_PlenumVoteResult.MkId is a different id space from KNS_Person.Id for newer
+// MKs (see fix-mkids.ts). Resolve to the real PersonID via mk_id_map so rows join.
 function loadMkIdMap(): Map<number, number> {
   const db = getDb();
   const map = new Map<number, number>();
@@ -124,12 +121,9 @@ function loadMkIdMap(): Map<number, number> {
 const normName = (s: string | null) =>
   (s ?? "").replace(/["'׳״]/g, "").replace(/\s+/g, " ").trim();
 
-// Rebuild mk_id_map from the denormalized names on the OData vote feed and move
-// any vote_results still stored under a raw MkId onto the real PersonID. Runs in
-// the pipeline after syncVoteResults so freshly-inserted rows (which the
-// insert-time loadMkIdMap could only fix for already-known MkIds) are healed
-// before stats recompute. Idempotent: once a row is on its PersonID the
-// `WHERE person_id = mkId` UPDATE matches nothing, and INSERT OR REPLACE is stable.
+// Rebuild mk_id_map from the denormalized names on the vote feed and move any
+// vote_results still under a raw MkId onto the real PersonID. Runs after
+// syncVoteResults so freshly-inserted rows are healed before stats. Idempotent.
 export async function remapVoteResultMkIds() {
   const db = getDb();
   console.log("Remapping vote_results MkId -> PersonID…");
@@ -141,9 +135,8 @@ export async function remapVoteResultMkIds() {
     })
     .from(schema.persons)
     .all();
-  // Names are the only join key, so two persons normalizing to the same name
-  // would make the remap ambiguous — track and skip those instead of letting
-  // one MK silently absorb another's votes (all 156 names are unique today).
+  // Names are the only join key, so two persons with the same normalized name
+  // are ambiguous — skip them rather than let one MK absorb another's votes.
   const nameToPerson = new Map<string, number>();
   const ambiguous = new Set<string>();
   for (const p of persons) {
@@ -231,10 +224,9 @@ async function syncVoteResultsIncremental(cursor: string) {
   console.log(`  ${n} result rows (incremental)`);
 }
 
-// Full backfill: the server uses offset paging in nextLink, so deep pages get
-// very slow. We avoid deep offsets by splitting the term into short fixed date
-// windows (so within-window paging stays shallow) and fetching them in
-// parallel. 5-day windows keep even budget-marathon periods manageable.
+// Full backfill: the server's offset paging makes deep pages very slow, so we
+// split the term into short fixed date windows (shallow within-window paging)
+// fetched in parallel. 5-day windows keep even busy periods manageable.
 async function syncVoteResultsBackfill() {
   console.log("Syncing vote results (windowed backfill)…");
   const insert = insertResult();
@@ -271,9 +263,8 @@ async function syncVoteResultsBackfill() {
   console.log(`  ${total} result rows (backfill)`);
 }
 
-// Fetch the agenda-item subject (KNS_PlmSessionItem.Name + type) for each
-// distinct ItemID referenced by our votes. This is the official description of
-// what the vote was about — the bill or topic on the agenda.
+// Fetch the agenda-item subject (KNS_PlmSessionItem.Name + type) for each distinct
+// ItemID referenced by our votes — the official description of what the vote was about.
 export async function syncVoteSubjects() {
   const db = getDb();
   console.log("Syncing vote subjects (agenda items)…");

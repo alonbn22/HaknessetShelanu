@@ -9,9 +9,8 @@ import {
   VOTE_ABSTAIN,
 } from "../../src/lib/constants";
 
-// Per-MK voting stats. "Votes held" counts plenum votes that took place
-// during the member's MK tenure (positions 43/61), so members who joined
-// or left mid-term aren't penalized for votes they couldn't attend.
+// Per-MK voting stats. "Votes held" counts only plenum votes during the member's
+// MK tenure (positions 43/61), so mid-term joiners/leavers aren't penalized.
 export function computeMkStats() {
   const db = getDb();
   console.log("Computing per-MK vote statistics…");
@@ -82,11 +81,9 @@ export function computeMkStats() {
   console.log(`  stats for ${row?.n} members`);
 }
 
-// Pairwise voting agreement between every two MKs in mk_vote_stats (~9.4k
-// pairs, stored in both directions so reads are PK-prefix scans). One
-// set-based self-join over real votes (for/against/abstain); measured ~30s —
-// fine inside the 6-hourly sync. Powers the "voted most/least similarly"
-// lists on member pages.
+// Pairwise voting agreement between every two MKs in mk_vote_stats, stored both
+// directions so reads are PK-prefix scans. One set-based self-join (~30s).
+// Powers the "voted most/least similarly" lists on member pages.
 export function computeMkAgreement() {
   const db = getDb();
   console.log("Computing pairwise MK voting agreement…");

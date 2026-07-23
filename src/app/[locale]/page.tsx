@@ -153,9 +153,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Upcoming-election banner — the site's most time-sensitive content, so it
-          gets a bold accent frame + an explicit CTA button. Renders only once
-          content/election.yaml exists. */}
+      {/* Upcoming-election banner. Renders only once content/election.yaml exists. */}
       {electionOutlook && (
         <section className="rounded-xl border-2 border-accent/40 bg-accent/10 p-6 shadow-sm">
           <div className="flex flex-wrap items-center justify-between gap-4">

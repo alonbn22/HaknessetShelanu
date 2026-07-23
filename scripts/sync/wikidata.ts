@@ -167,9 +167,8 @@ async function fetchCommonsInfo(files: string[]): Promise<Map<string, ImageInfo>
       );
       data = await res.json();
     } catch (err) {
-      // After retries a batch may still fail. Skipping it is safe now that the
-      // enrich step only overwrites photo columns when it HAS a new value
-      // (COALESCE semantics) — committed photos survive a Commons outage.
+      // A batch may still fail after retries; skipping is safe because enrich only
+      // overwrites photo columns when it HAS a value (COALESCE) — committed photos survive.
       console.warn(`  Commons batch failed after retries, skipping ${batch.length} files: ${err}`);
       continue;
     }
@@ -262,11 +261,9 @@ export async function enrichFromWikidata() {
   let updated = 0;
   for (const [personId, row] of matched) {
     const img = row.imageFile ? commons.get(row.imageFile) : undefined;
-    // COALESCE semantics: only overwrite a column when this run actually produced
-    // a value for it. A partial upstream miss — a dropped Commons batch, or a
-    // label absent from this SPARQL response — must NOT null out good data that is
-    // already committed (previously every field was set unconditionally, so one
-    // flaky Commons batch wiped up to 50 members' photos and the bot committed it).
+    // COALESCE semantics: only overwrite a column when this run produced a value.
+    // A partial upstream miss (dropped Commons batch, absent label) must NOT null
+    // out already-committed data — unconditional sets once wiped ~50 members' photos.
     const set: Partial<typeof schema.persons.$inferInsert> = {};
     if (row.qid) set.wikidataId = row.qid;
     if (row.nameEn) set.nameEn = row.nameEn;

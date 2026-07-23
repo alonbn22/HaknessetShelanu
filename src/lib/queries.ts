@@ -41,12 +41,9 @@ export function factionColor(factionId: number): string {
 
 // Vote/data titles are localized via the unified cache (src/lib/i18n-data.ts).
 
-// LIKE-metacharacter-safe "contains" matching. SQLite's LIKE treats % and _ as
-// wildcards and has no default escape char, so a user searching "50%" or "a_b"
-// would otherwise get wildcard behaviour. `escapeLikePattern` escapes % _ and the
-// backslash, and `likeContains` pairs the escaped pattern with `ESCAPE '\'`. The
-// pattern is still bound as a parameter (injection-safe — only the term's own
-// wildcards are neutralized). `col` may be a column or a SQL expression.
+// LIKE-safe "contains" matching. SQLite's LIKE treats % and _ as wildcards with no
+// default escape, so escape them and pair with `ESCAPE '\'`. Still bound as a
+// parameter (injection-safe). `col` may be a column or a SQL expression.
 function escapeLikePattern(term: string): string {
   return `%${term.replace(/[\\%_]/g, (c) => `\\${c}`)}%`;
 }
@@ -54,10 +51,9 @@ function likeContains(col: AnyColumn | SQL, term: string): SQL {
   return sql`${col} like ${escapeLikePattern(term)} escape '\\'`;
 }
 
-// Clamp a requested page into [1, pages] given the total row count, so an
-// out-of-range ?page= (e.g. ?page=9999) returns the LAST page's rows instead of
-// an empty "no results" screen that looks identical to a search with no matches.
-// Returns the effective page (callers pass it to <Pagination>) and its offset.
+// Clamp a requested page into [1, pages] so an out-of-range ?page= returns the
+// LAST page's rows, not an empty screen that looks like "no matches". Returns the
+// effective page and its offset.
 function paginate(total: number, size: number, page: number) {
   const pages = Math.max(1, Math.ceil(total / size));
   const current = Math.min(Math.max(1, page), pages);
@@ -145,9 +141,8 @@ export type SeatStatus = {
   ministryHe: string | null; // current ministry, if they serve as a minister
 };
 
-// Seat status per person for the current Knesset. A minister who vacated their
-// seat under the Norwegian Law is NOT a sitting MK, but is a serving minister —
-// so we capture the current ministry rather than calling them "former".
+// Seat status per person (current Knesset). A minister who vacated their seat under
+// the Norwegian Law is a serving minister, not a sitting MK — so keep the ministry.
 function getSeatStatusMap(personIds: number[]): Map<number, SeatStatus> {
   const map = new Map<number, SeatStatus>();
   if (personIds.length === 0) return map;
@@ -283,9 +278,8 @@ export type MemberBio = {
   career: CareerRole[];
 };
 
-// Collapse the raw position tenures into one entry per role, merging contiguous
-// terms (e.g. consecutive Knesset terms) but keeping genuinely separate stints
-// (e.g. non-consecutive PM terms) as distinct ranges. Most-recent role first.
+// Collapse raw tenures into one entry per role: merge contiguous terms, keep
+// non-consecutive stints (e.g. separate PM terms) distinct. Most-recent role first.
 function groupCareer(entries: CareerEntry[]): CareerRole[] {
   const byTitle = new Map<string, CareerRange[]>();
   for (const e of entries) {
@@ -293,8 +287,8 @@ function groupCareer(entries: CareerEntry[]): CareerRole[] {
     arr.push({ start: e.start, end: e.end });
     byTitle.set(e.title, arr);
   }
-  // A malformed date parses to NaN → gap is NaN → not contiguous (ranges shown
-  // separately, never wrongly merged). The isFinite check makes that explicit.
+  // Malformed date → NaN gap → not contiguous, so ranges stay separate (never
+  // wrongly merged). isFinite makes that explicit.
   const contiguous = (prevEnd: string, nextStart: string) => {
     const gapDays = (Date.parse(nextStart) - Date.parse(prevEnd)) / 86_400_000;
     return Number.isFinite(gapDays) && gapDays <= 45; // election gap
@@ -369,10 +363,9 @@ export function isCurrentMk(positions: PositionRow[]): boolean {
   );
 }
 
-// Serving = a current MK, OR a current minister who vacated their seat under the
-// Norwegian Law (a current-Knesset position with a ministry/faction but no MK
-// seat). Anyone else with only past positions is a former MK. Extracted from the
-// member page so this legally-sensitive "former vs serving" call is unit-tested.
+// Serving = a current MK, or a current minister who vacated their seat under the
+// Norwegian Law. Everyone else (only past positions) is a former MK. Extracted so
+// this legally-sensitive "former vs serving" call is unit-tested.
 export function isServingMember(positions: PositionRow[]): boolean {
   return (
     isCurrentMk(positions) ||
@@ -410,9 +403,8 @@ export type VotingAgreement = {
   agreementPct: number; // 0..100, or 0 when bothVoted === 0
 };
 
-// How often two members voted the same way, over votes where BOTH cast a real
-// vote (for/against/abstain — "did not vote" is excluded). Self-joins
-// vote_results on vote_id; each side uses the vr_person_idx index.
+// How often two members voted the same way, over votes where BOTH cast a real vote
+// (for/against/abstain; "did not vote" excluded). Self-join on vote_id (vr_person_idx).
 export function getVotingAgreement(idA: number, idB: number): VotingAgreement {
   const row = getDb().get<{ both_voted: number; agreed: number }>(sql`
     SELECT
@@ -435,12 +427,10 @@ export function getVotingAgreement(idA: number, idB: number): VotingAgreement {
 
 export type PartyDiscipline = { total: number; withParty: number; pct: number };
 
-// How often a member voted with their faction's majority — a party-loyalty (or,
-// inverted, rebellion) metric. Over votes where the member cast a real vote, we
-// take their faction's majority position (among current faction members who cast
-// a real vote on that vote) and check whether the member matched it. Faction is
-// the member's current one, or their most-recent (so ministers who vacated their
-// seat under the Norwegian Law still resolve). Null if no faction / no votes.
+// How often a member voted with their faction's majority (party-loyalty / inverted
+// rebellion). Over real votes, take the faction majority (current members' real
+// votes) and check the member matched it. Faction = current, else most-recent (so
+// Norwegian-Law ministers still resolve). Null if no faction / no votes.
 export function getPartyDiscipline(personId: number): PartyDiscipline | null {
   const row = getDb().get<{ total: number; with_party: number }>(sql`
     WITH me AS (
@@ -479,9 +469,8 @@ export function getPartyDiscipline(personId: number): PartyDiscipline | null {
   return { total, withParty, pct: Math.round((1000 * withParty) / total) / 10 };
 }
 
-// The receipts behind the party-discipline %: the recent votes where this MK
-// voted differently from their faction's majority. Same faction/majority CTEs
-// as getPartyDiscipline so the list always reconciles with the percentage.
+// The votes behind the party-discipline %: recent votes where this MK differed
+// from their faction's majority. Same CTEs as getPartyDiscipline so they reconcile.
 export type Rebellion = {
   voteId: number;
   titleHe: string | null;
@@ -535,10 +524,9 @@ export type AgreementPartner = {
   pct: number;
 };
 
-// The members who voted most (or least) like this one, from the precomputed
-// mk_agreement table (rebuilt each sync by computeMkAgreement). Only pairs
-// with a meaningful sample (>= 100 shared votes) and currently-serving
-// partners. Returns [] until the table is first materialized by a sync.
+// Members who voted most (or least) like this one, from the precomputed
+// mk_agreement table (rebuilt each sync). Only pairs with >= 100 shared votes and
+// currently-serving partners. [] until the table is first materialized.
 export function getTopAgreements(
   personId: number,
   order: "top" | "bottom",
@@ -587,9 +575,8 @@ export function getTopAgreements(
 
 export type LeaderboardEntry = MkStats & { person: Person };
 
-// SQL predicate: the person currently holds a Knesset seat (faction-member or
-// MK position) — i.e. a serving MK, excluding those who left their seat under
-// the Norwegian Law. Shared by every attendance/participation query so all
+// SQL predicate: the person currently holds a Knesset seat (serving MK, excluding
+// Norwegian-Law leavers). Shared by every attendance/participation query so all
 // stats reflect only currently-serving members.
 const isSittingSql = sql`EXISTS (
   SELECT 1 FROM person_positions pp
@@ -635,10 +622,9 @@ export type AttendanceRow = MkStats & {
   ministryHe: string | null;
 };
 
-// Full attendance ranking for ALL currently-serving MKs, in one list ordered by
-// participation (most present first). Only members who currently hold a seat are
-// included — every attendance statistic on the site reflects serving members
-// only (members who left their seat, e.g. Norwegian-Law ministers, are excluded).
+// Full attendance ranking for all currently-serving MKs, ordered by participation
+// (most present first). Only current seat-holders — Norwegian-Law ministers who
+// left their seat are excluded, as everywhere.
 export function getAttendanceTable(): AttendanceRow[] {
   const db = getDb();
   const rows = db
@@ -728,9 +714,8 @@ export function getMemberRecentVotes(personId: number, limit = 10) {
 
 const VOTES_PAGE_SIZE = 25;
 
-// Build a vote-title search predicate that works in any language: the user's
-// query is translated to Hebrew (searchHe) and matched against the always-present
-// titleHe, plus the raw query (for names/numbers that shouldn't be translated).
+// Vote-title search predicate for any language: match the Hebrew-translated query
+// against the always-present titleHe, plus the raw query (untranslated names/numbers).
 function titleSearchCondition(search: string, searchHe?: string) {
   const terms = [likeContains(schema.votes.titleHe, searchHe || search)];
   if (searchHe && searchHe !== search) terms.push(likeContains(schema.votes.titleHe, search));
@@ -782,9 +767,8 @@ export type LawStatus = "all" | "passed" | "rejected" | "raised" | "final";
 
 const LAWS_PAGE_SIZE = 20;
 
-// Searchable, filterable legislation list.
-// status: passed / rejected (outcome), raised (preliminary/first reading),
-// final (second/third reading — the bill's final approval stage).
+// Searchable, filterable legislation list. status: passed/rejected (outcome),
+// raised (preliminary/first reading), final (second/third reading).
 export function getLawVotesPage(opts: {
   search?: string;
   searchHe?: string; // query translated to Hebrew (matches the always-present titleHe)
@@ -837,9 +821,8 @@ export type VoterRow = {
   factionNameHe: string | null;
 };
 
-// Everyone serving as an MK at the time of the vote, with how they voted —
-// including members who were absent (no recorded result → "did not vote").
-// Each voter is tagged with the faction they belonged to at vote time.
+// Everyone serving as an MK at vote time and how they voted — including the absent
+// (no result → "did not vote"), each tagged with their faction at vote time.
 export function getVoteResults(voteId: number): VoterRow[] {
   const db = getDb();
   const vote = getVote(voteId);
@@ -1074,9 +1057,8 @@ export function getMemberQuestionStats(
   };
 }
 
-// Per-ministry question accountability: how many parliamentary questions each
-// ministry received, how many it answered, and its average response time.
-// try/catch → empty while gov_ministries isn't materialized yet (house rule).
+// Per-ministry question accountability: count received, answered, and avg response
+// time. try/catch → empty while gov_ministries isn't materialized yet (house rule).
 export type MinistryQuestionStats = {
   ministryHe: string;
   total: number;
@@ -1225,10 +1207,9 @@ export type UpcomingMeeting = {
   broadcastUrl: string | null;
 };
 
-// All committee sittings scheduled from nowIso up to `days` ahead, across every
-// committee, with the committee name — powers the home "this week" strip. Instant
-// comparison (datetime()) for the same offset-safety reason as getCommitteeSessions.
-// try/catch → empty when the table isn't materialized yet.
+// Committee sittings from nowIso up to `days` ahead, across all committees, with
+// name — powers the home "this week" strip. datetime() compares instants (offset-
+// safe, like getCommitteeSessions). try/catch → empty until the table exists.
 export function getUpcomingMeetings(nowIso: string, days = 7, limit = 25): UpcomingMeeting[] {
   try {
     const until = new Date(Date.parse(nowIso) + days * 86_400_000).toISOString();
@@ -1274,9 +1255,8 @@ export function getCommitteeMeetingCounts(): Map<number, number> {
   }
 }
 
-// A committee's meeting calendar: the next scheduled sittings and the most
-// recent past ones, plus the total meeting count (an activity signal). `nowIso`
-// splits future/past. try/catch → empty when the table isn't materialized yet.
+// A committee's meeting calendar: next sittings + most recent past ones + total
+// count. `nowIso` splits future/past. try/catch → empty until the table exists.
 export function getCommitteeSessions(committeeId: number, nowIso: string, limit = 8) {
   try {
     const db = getDb();
@@ -1286,9 +1266,8 @@ export function getCommitteeSessions(committeeId: number, nowIso: string, limit 
       .where(
         and(
           eq(schema.committeeSessions.committeeId, committeeId),
-          // start_date carries a local +02:00/+03:00 offset; nowIso is UTC 'Z'.
-          // Compare as normalized instants (datetime() converts to UTC) so a
-          // meeting isn't misfiled upcoming/recent within the offset window.
+          // start_date has a local +02:00/+03:00 offset, nowIso is UTC 'Z'; compare
+          // as instants (datetime() → UTC) so meetings aren't misfiled in the window.
           sql`datetime(${schema.committeeSessions.startDate}) > datetime(${nowIso})`,
         ),
       )
@@ -1322,10 +1301,9 @@ export function getCommitteeSessions(committeeId: number, nowIso: string, limit 
 export type CommitteeSessionItem = typeof schema.committeeSessionItems.$inferSelect;
 export type CommitteeSessionDoc = typeof schema.committeeSessionDocs.$inferSelect;
 
-// Agenda items + documents for a set of committee meetings, grouped by session
-// id. One query per relation (no N+1) — the committee page passes only the ~16
-// sessions it actually renders. Items are ordered by their agenda ordinal.
-// try/catch → empty maps when the tables aren't materialized yet.
+// Agenda items + documents for a set of meetings, grouped by session id. One query
+// per relation (no N+1), items ordered by agenda ordinal. try/catch → empty maps
+// when the tables aren't materialized yet.
 export function getCommitteeSessionDetails(sessionIds: number[]) {
   const empty = {
     items: new Map<number, CommitteeSessionItem[]>(),
@@ -1344,9 +1322,8 @@ export function getCommitteeSessionDetails(sessionIds: number[]) {
       .select()
       .from(schema.committeeSessionDocs)
       .where(inArray(schema.committeeSessionDocs.sessionId, sessionIds))
-      // Protocol/transcript (group_type_id 23) first, then the rest by id — the
-      // transcript is the headline document. Ordering by id (not the mixed-offset
-      // timestamp string) keeps it deterministic.
+      // Protocol/transcript (group_type_id 23) first as the headline doc, then by
+      // id — id (not the mixed-offset timestamp) keeps ordering deterministic.
       .orderBy(
         sql`CASE WHEN ${schema.committeeSessionDocs.groupTypeId} = 23 THEN 0 ELSE 1 END`,
         asc(schema.committeeSessionDocs.id),
@@ -1415,9 +1392,8 @@ const BUDGET_PAGE_SIZE = 50;
 // The 25th Knesset's budget years (budgets passed during this Knesset).
 const CURRENT_KNESSET_BUDGET_YEARS = [2023, 2024, 2025];
 
-// Years that have full itemized data (a year selector lists these), newest first.
-// Wrapped in React.cache so the several resolveYear() calls in one budget render
-// share a single query.
+// Years with full itemized data (the year selector lists these), newest first.
+// React.cache so the several resolveYear() calls in one render share one query.
 export const getBudgetDetailedYears = cache((): number[] =>
   getDb()
     .selectDistinct({ y: schema.budgetLines.year })
@@ -1678,9 +1654,8 @@ export function getLobbyistsPage(opts: {
 export function getDashboardStats() {
   const db = getDb();
   // Sitting MKs = people currently holding an MK seat (constitutionally 120).
-  // Note: COUNT(persons.isCurrent) is larger (~132) because it also includes
-  // ministers who vacated their seat under the Norwegian Law but remain active
-  // in government — see getMinisters().
+  // persons.isCurrent counts more (~132): it also includes Norwegian-Law ministers
+  // who vacated their seat but remain in government — see getMinisters().
   const mks =
     db
       .select({ n: sql<number>`COUNT(DISTINCT ${schema.personPositions.personId})` })
@@ -1921,9 +1896,9 @@ export function getSitemapEntityIds() {
   };
 }
 
-// One query across all entity types. `searchHe` is the query translated to Hebrew
-// (so cross-language search matches the always-present Hebrew columns); names also
-// match the locale columns directly. Each group is capped at SEARCH_LIMIT.
+// Search across all entity types. `searchHe` (query translated to Hebrew) matches
+// the always-present Hebrew columns; names also match locale columns directly.
+// Each group capped at SEARCH_LIMIT.
 export function searchAll(query: string, searchHe: string, locale: string): SearchResults {
   const db = getDb();
   const trimmed = query.trim();
@@ -1951,9 +1926,8 @@ export function searchAll(query: string, searchHe: string, locale: string): Sear
   };
   const term = trimmed;
   const termHe = (searchHe || trimmed).trim();
-  // Hebrew-text columns: match the translated query, and — when the translation
-  // actually changed it — also the raw query, so a wrong/partial translation
-  // can't hide rows the user typed verbatim (mirrors titleSearchCondition).
+  // Hebrew-text columns: match the translated query, plus the raw query when the
+  // translation changed it, so a bad translation can't hide verbatim matches.
   const likeHe = (col: AnyColumn | SQL) =>
     termHe !== term
       ? or(likeContains(col, termHe), likeContains(col, term))!

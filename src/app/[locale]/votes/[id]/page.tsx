@@ -22,9 +22,8 @@ import { VOTE_FOR, VOTE_AGAINST, VOTE_ABSTAIN } from "@/lib/constants";
 
 export const dynamic = "force-dynamic";
 
-// Page title/description/OG for search results and social shares. getVote is
-// cache()-wrapped, so this and the page body share one lookup; the title uses
-// the unified translation cache (Hebrew fallback when untranslated).
+// getVote is cache()-wrapped, so metadata + page body share one lookup; the
+// title uses the unified cache (Hebrew fallback when untranslated).
 export async function generateMetadata({
   params,
 }: {
@@ -56,9 +55,8 @@ export default async function VotePage({
   const bill = getBillForVote(vote);
   const sponsors = bill ? getBillSponsors(bill.id) : [];
 
-  // Translate the free-text Hebrew on this page (vote title, item name, bill
-  // sub-type, and any uncurated faction names) on the fly — one batched lookup,
-  // one post-response fill.
+  // Translate the page's free-text Hebrew on the fly — one batched lookup, one
+  // post-response fill.
   const dataHe = [
     vote.titleHe,
     vote.itemName,
@@ -69,8 +67,8 @@ export default async function VotePage({
   const title = localOf(vote.titleHe);
   const itemName = localOf(vote.itemName);
   const subType = localOf(bill?.subTypeDesc);
-  // Faction label: curated metadata first; for an uncurated or null-id faction
-  // fall back to the unified cache so non-he users don't see raw Hebrew.
+  // Faction label: curated metadata first; else the unified cache, so non-he
+  // users don't see raw Hebrew.
   const factionLabelOf = (fid: number | null, fhe: string | null): Localized => {
     const he = (fhe ?? "").trim();
     if (locale === "he")
@@ -138,7 +136,6 @@ export default async function VotePage({
             <span dir="rtl" lang="he">{vote.titleHe}</span>
           </p>
         )}
-        {/* When the vote took place */}
         <div className="rounded-lg bg-black/3 px-4 py-2">
           <div className="text-xs font-semibold text-muted">{t("votes.when")}</div>
           <div className="text-lg font-medium">

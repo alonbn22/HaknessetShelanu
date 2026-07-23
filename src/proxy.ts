@@ -4,14 +4,11 @@ import { routing } from "./i18n/routing";
 
 const intl = createMiddleware(routing);
 
-// Per-request Content-Security-Policy (Next.js CSP guide). script-src is the real
-// defense: 'strict-dynamic' + a per-request nonce blocks any injected <script>.
-// Next auto-stamps the nonce onto its framework/bundle scripts AND onto the one
-// hand-written inline script (the pre-paint theme snippet); the layout declares
-// the same nonce on that script so React hydrates it without a mismatch warning.
-// style-src keeps 'unsafe-inline' (Tailwind/next-font inline styles; style
-// injection is a far smaller surface). Nonces force dynamic rendering, which this
-// site already uses on virtually every page.
+// Per-request CSP. script-src 'strict-dynamic' + a per-request nonce blocks any
+// injected <script>. Next stamps the nonce onto its own scripts and the inline
+// theme snippet; the layout declares the same nonce so hydration doesn't warn.
+// style-src keeps 'unsafe-inline' (Tailwind/next-font). Nonces force dynamic
+// rendering, already the norm here.
 export default function proxy(request: NextRequest) {
   const nonce = Buffer.from(crypto.randomUUID()).toString("base64");
   const isDev = process.env.NODE_ENV === "development";
@@ -35,10 +32,9 @@ export default function proxy(request: NextRequest) {
   requestHeaders.set("x-nonce", nonce);
   requestHeaders.set("Content-Security-Policy", csp);
 
-  // next-intl's middleware forwards the (modified) request headers into its
-  // rewrite, so the render sees x-nonce + the CSP header; the response carries
-  // the CSP for the browser. A QA test asserts the nonce actually lands on the
-  // rendered scripts, so a regression here fails loudly.
+  // next-intl forwards the modified request headers into its rewrite, so the
+  // render sees x-nonce + CSP; set CSP on the response too for the browser.
+  // A test asserts the nonce lands on rendered scripts.
   const response = intl(new NextRequest(request, { headers: requestHeaders }));
   response.headers.set("Content-Security-Policy", csp);
   return response;

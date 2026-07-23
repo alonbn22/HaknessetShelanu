@@ -20,8 +20,7 @@ import {
 
 export const dynamic = "force-dynamic";
 
-// Page title/description/OG for search results and social shares (getFaction
-// is cache()-wrapped, so this and the page body share one lookup).
+// getFaction is cache()-wrapped, so metadata + page body share one lookup.
 export async function generateMetadata({
   params,
 }: {

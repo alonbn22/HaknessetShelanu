@@ -5,11 +5,8 @@ import { useTranslations } from "next-intl";
 
 const STORAGE_KEY = "seats-view";
 
-// Switches the "Seats by faction" section between the proportional bar (default)
-// and the hemicycle. Both views are rendered server-side and passed in as nodes,
-// so this thin client wrapper only holds the toggle state. The choice persists
-// in localStorage; the SSR frame always starts as "bar" and switches after
-// hydration (a state update in an effect — no hydration mismatch).
+// Toggles the seats section between bar (default) and hemicycle; both are rendered
+// server-side and passed in. SSR starts as "bar", switches after hydration (no mismatch).
 export function SeatsToggle({ bar, dome }: { bar: React.ReactNode; dome: React.ReactNode }) {
   const t = useTranslations("home");
   const [view, setView] = useState<"bar" | "dome">("bar"); // bar = default

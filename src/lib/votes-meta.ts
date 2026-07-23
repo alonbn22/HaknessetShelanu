@@ -1,8 +1,6 @@
-// Classify a plenum vote from its option description (Hebrew, from the Knesset
-// API). Not every vote is a bill reading — many are agenda motions,
-// no-confidence votes, reservations, etc. — so we classify the *kind* of vote
-// and, for bills, the legislative reading stage. The "for" option text is the
-// reliable signal (it states what passing the vote does).
+// Classify a plenum vote from its "for" option description (Hebrew, from the
+// Knesset API): the kind of vote and, for bills, the reading stage. The "for"
+// text is the reliable signal for what passing does.
 
 export type VoteKind =
   | "preliminary"

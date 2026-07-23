@@ -1,7 +1,5 @@
-// Reads the public ticket queue (GitHub Issues) for the on-site /tickets page.
-// Server-only fetch (works on localhost); the create flow still opens a
-// pre-filled issue on GitHub. No token needed — public repo issues are readable
-// unauthenticated. Cached so we don't hit GitHub's rate limit on every request.
+// Reads the public ticket queue (GitHub Issues) for the /tickets page. Server-only,
+// unauthenticated (public repo), cached to stay under GitHub's rate limit.
 
 import { GITHUB_REPO } from "./constants";
 export { GITHUB_REPO };

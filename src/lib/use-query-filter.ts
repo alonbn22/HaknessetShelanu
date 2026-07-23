@@ -4,11 +4,9 @@ import { useEffect, useRef } from "react";
 import { useRouter, usePathname } from "@/i18n/navigation";
 import { useSearchParams } from "next/navigation";
 
-// Shared search/filter URL-param logic for the list pages (votes, laws, members,
-// budget, law book, lobbyists). Centralizes the debounce delay, the "reset to
-// page 1 on any filter change" rule, and — importantly — the unmount cleanup that
-// most copies were missing (a pending setTimeout could call router.replace after
-// the component unmounted).
+// Shared search/filter URL-param logic for the list pages. Centralizes the
+// debounce, the reset-to-page-1 rule, and the unmount cleanup a pending setTimeout
+// needs (else router.replace can fire after unmount).
 export const SEARCH_DEBOUNCE_MS = 300;
 
 export function useQueryFilter() {

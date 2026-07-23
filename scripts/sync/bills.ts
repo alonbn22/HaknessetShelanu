@@ -37,9 +37,8 @@ export async function syncBills() {
   const db = getDb();
   console.log("Syncing bills (legislation referenced by votes)…");
 
-  // KNS_Status decodes the numeric StatusID into its official Hebrew label
-  // (which then localizes via the unified translation cache). Fetched fresh
-  // each run — it's one small page and the statuses rarely change.
+  // KNS_Status maps numeric StatusID to its Hebrew label (localizes via the
+  // translation cache). Refetched each run — small page, rarely changes.
   const statusMap = new Map<number, string>();
   try {
     for (const s of await fetchAll<Row>(entityUrl("KNS_Status"))) {
@@ -85,8 +84,7 @@ export async function syncBills() {
         knessetNum: b.KnessetNum,
         nameHe: (b.Name ?? "").trim(),
         subTypeDesc: b.SubTypeDesc ?? null,
-        // Official Hebrew status label; numeric fallback only if the lookup
-        // failed (the bill page hides pure-numeric statuses).
+        // Hebrew status label; numeric fallback if lookup failed (UI hides numerics).
         statusDesc: b.StatusID ? (statusMap.get(b.StatusID) ?? String(b.StatusID)) : null,
         ...docs,
         lastUpdated: b.LastUpdatedDate,

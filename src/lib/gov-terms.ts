@@ -1,9 +1,6 @@
-// Client-safe translations of official Knesset / government terms that the API
-// only provides in Hebrew: position duties, government ministries, and the main
-// standing committees. Unknown values (e.g. long ad-hoc / joint committees) fall
-// back to the Hebrew original, flagged rtl so the UI can render them correctly.
-//
-// No node:fs here — safe to import from client components.
+// Client-safe translations of official Knesset terms the API only gives in Hebrew:
+// duties, ministries, main standing committees. Unknown values fall back to the
+// Hebrew original, flagged rtl. No node:fs — safe to import from client components.
 
 import { isHebrew } from "./text";
 
@@ -314,6 +311,5 @@ export const govCommittee = (he: string | null | undefined, locale: string): Gov
 export const govVoteItemType = (he: string | null | undefined, locale: string): GovTerm =>
   localize(VOTE_ITEM_TYPES, he, locale);
 
-// Free-text data names (committees, law book, budget lines, vote titles) are
-// localized via the unified cache in src/lib/i18n-data.ts, which layers the
-// curated govCommittee() translations on top for standing committees.
+// Free-text data names are localized via the unified cache in i18n-data.ts, which
+// layers these curated govCommittee() translations on top for standing committees.

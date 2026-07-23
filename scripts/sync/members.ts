@@ -65,11 +65,9 @@ export async function syncPersonPositions(): Promise<Set<number>> {
   return personIds;
 }
 
-// Pull the FULL position history (all Knessets) for the given persons — so a
-// member's profile shows their complete role + faction history, not just the
-// current term. Only fetches for the current members we track (by PersonID),
-// so it doesn't bloat the DB with every historical person. Upserts into the same
-// table; historical rows carry IsCurrent=false and their own KnessetNum.
+// Full position history (all Knessets) for the tracked persons, so a profile
+// shows complete role + faction history (not just the current term). Upserts
+// into the same table; historical rows carry IsCurrent=false + own KnessetNum.
 export async function syncMemberPositionHistory(personIds: Set<number>) {
   const db = getDb();
   console.log("Syncing full position history for current members…");

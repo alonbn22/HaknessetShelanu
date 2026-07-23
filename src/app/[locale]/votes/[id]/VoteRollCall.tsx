@@ -33,10 +33,9 @@ const TILES = [
   { code: VOTE_DID_NOT_VOTE, key: "didNotVote", cls: "text-muted", active: "ring-gray-500 bg-black/5" },
 ] as const;
 
-// `official` carries the authoritative plenum tally (votes.total_for/against/
-// abstain), which counts every recorded voter — including former members not in
-// the per-party breakdown below. We show it on the tiles so the numbers always
-// match the Knesset record, even when a few voters can't be listed individually.
+// `official` is the authoritative plenum tally — it counts every recorded voter
+// (incl. former members absent from the per-party breakdown), so the tiles always
+// match the Knesset record even when a few voters can't be listed individually.
 export function VoteRollCall({
   voters,
   official,

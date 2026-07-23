@@ -1,9 +1,8 @@
 // Shared text helpers.
 
-// Hebrew Unicode block. Detects Hebrew text so we can set dir="rtl"/lang="he" on
-// untranslated data (member/faction names, vote titles, …) that may still be
-// Hebrew regardless of the UI locale. Defined once here (escaped, so it carries
-// no literal Hebrew) and reused everywhere instead of re-declaring the regex.
+// Hebrew Unicode block — detects Hebrew so we can set dir="rtl"/lang="he" on
+// untranslated data (names, vote titles) still in Hebrew regardless of UI locale.
+// Escaped, so it carries no literal Hebrew.
 const HEBREW = /[\u0590-\u05FF]/;
 
 export function isHebrew(s: string | null | undefined): boolean {
@@ -12,7 +11,6 @@ export function isHebrew(s: string | null | undefined): boolean {
 
 // Spreadable dir/lang props for text that may be untranslated Hebrew:
 //   <span {...rtlAttrs(name)}>{name}</span>
-// Replaces the hand-rolled `dir={x ? "rtl" : undefined} lang={...}` ternaries.
 export function rtlAttrs(s: string | null | undefined): { dir?: "rtl"; lang?: "he" } {
   return isHebrew(s) ? { dir: "rtl", lang: "he" } : {};
 }

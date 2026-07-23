@@ -21,8 +21,7 @@ const MILESTONES: VoteKind[] = [
   "third",
 ];
 
-// Page title/description/OG for search results and social shares (getBill is
-// cache()-wrapped; the title localizes via the unified translation cache).
+// getBill is cache()-wrapped; the title localizes via the unified cache.
 export async function generateMetadata({
   params,
 }: {

@@ -1,13 +1,8 @@
-// Shared client for the unofficial Google Translate ("gtx") endpoint used across
-// the app (lazy data translation in i18n-data.ts; search-query translation in
-// translate-query.ts). Keeping the endpoint URL, the nested-array response
-// parser, and the nikud-strip rule in ONE place means a change to the (unofficial)
-// API shape or the strip rule is a one-line edit. Server-only (network fetch).
+// Shared client for the unofficial Google Translate ("gtx") endpoint (used by
+// i18n-data.ts and translate-query.ts). Server-only (network fetch).
 
-// Nikud = Hebrew vowel points / cantillation marks (U+0591–U+05C7). The
-// endpoint sometimes returns vocalized Hebrew, but stored/compared text is
-// unvocalized, so strip these before matching. Escaped per the no-hardcoded-
-// Hebrew rule (same style as the HEBREW regex in src/lib/text.ts).
+// Nikud (Hebrew vowel points, U+0591–U+05C7): the endpoint sometimes returns
+// vocalized Hebrew but stored text is unvocalized, so strip before matching.
 export const NIKUD = /[\u0591-\u05c7]/g;
 
 export function stripNikud(s: string): string {

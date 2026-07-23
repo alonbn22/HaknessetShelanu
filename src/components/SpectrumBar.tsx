@@ -3,8 +3,8 @@
 import { useTranslations } from "next-intl";
 import type { Spectrum } from "@/lib/content";
 
-// Marker position along a left→right axis (kept LTR in every locale to avoid
-// confusing the political left/right with text direction).
+// Marker position on a left→right axis (kept LTR in every locale so political
+// left/right isn't confused with text direction).
 const POSITION: Record<Spectrum, number> = {
   left: 8,
   "center-left": 29,

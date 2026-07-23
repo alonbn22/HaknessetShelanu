@@ -4,9 +4,8 @@ import { fetchOpenTickets, GITHUB_REPO } from "@/lib/github";
 import { formatDate } from "@/lib/format";
 import { rtlAttrs } from "@/lib/text";
 
-// On-site ticket page: shows the open tickets (read from the public GitHub Issues
-// queue) and lets anyone open a new one. Submissions create a ticket reviewed
-// before anything is published; nothing is written to the site/DB directly.
+// Lists open tickets from the public GitHub Issues queue and lets anyone open
+// one. Submissions are reviewed before publishing; nothing writes to the site/DB.
 export const revalidate = 300;
 
 export default async function TicketsPage({

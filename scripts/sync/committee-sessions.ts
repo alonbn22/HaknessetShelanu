@@ -36,8 +36,7 @@ export async function syncCommitteeSessions() {
       typeDesc: row.TypeDesc ?? null,
       statusDesc: row.StatusDesc ?? null,
       location: row.Location ?? null,
-      // These URLs sometimes use http; upgrade so links aren't blocked as
-      // mixed content (and upgrade-insecure-requests has nothing to rewrite).
+      // Upgrade http→https so links aren't blocked as mixed content.
       sessionUrl: row.SessionUrl ? row.SessionUrl.replace(/^http:/, "https:") : null,
       broadcastUrl: row.BroadcastUrl ? row.BroadcastUrl.replace(/^http:/, "https:") : null,
       lastUpdated: row.LastUpdatedDate,
@@ -52,27 +51,20 @@ export async function syncCommitteeSessions() {
   console.log(`  ${n} committee sessions`);
 }
 
-// Normalize a Knesset file link: fix backslashes, force https, and collapse the
-// accidental double slash some paths carry (e.g. fs.knesset.gov.il//16/…)
-// without touching the protocol separator.
+// Normalize a Knesset file link: backslashes→/, force https, collapse accidental
+// double slashes (but not the protocol separator).
 const fixDocUrl = (p: string | null | undefined) =>
   p ? p.replace(/\\/g, "/").replace(/^http:/, "https:").replace(/([^:])\/\/+/g, "$1/") : null;
 
 // Agenda items + documents for committee meetings (KNS_CmtSessionItem,
-// KNS_DocumentCommitteeSession). Neither entity carries KnessetNum, and only
-// eq/in() filters are supported on them — so we batch by the CommitteeSessionID
-// values we hold (current-Knesset sittings), mirroring bills.ts. Rows per
-// meeting are tiny (≈1 agenda item, ≈1-2 docs), so a 50-id batch is usually a
-// single page.
+// KNS_DocumentCommitteeSession). Neither carries KnessetNum and only eq/in()
+// filters work, so we batch by the CommitteeSessionID values we hold, like bills.ts.
 //
-// SCOPE: by default only recent + upcoming meetings (`sinceDays`), because the
-// source API is slow (multi-second latency spikes) and a full 10.7k-meeting pass
-// runs ~30-40 min — too long for the ~6h sync's budget. That window is exactly
-// what the UI surfaces (each committee shows its most-recent + next meetings);
-// older meetings are finalized, so their agendas/protocols are captured once and
-// don't change. Pass `sinceDays: null` for a one-off full backfill. Protocols
-// lag the meeting by days-to-weeks; a meeting with no docs yet is "not finalized
-// yet", not an error — a later sync backfills it while it's still in-window.
+// SCOPE: by default only recent + upcoming meetings (`sinceDays`) — the source
+// API is slow and a full 10.7k-meeting pass runs ~30-40 min (too long for the
+// ~6h sync). That window is what the UI surfaces; older meetings are finalized.
+// Pass `sinceDays: null` for a full backfill. A meeting with no docs yet is "not
+// finalized", not an error — a later sync backfills it while still in-window.
 export async function syncCommitteeSessionDetails(sinceDays: number | null = 120) {
   const db = getDb();
   // Self-sufficient DDL (schema-exact) so an un-pushed DB still works.
@@ -96,11 +88,9 @@ export async function syncCommitteeSessionDetails(sinceDays: number | null = 120
     "CREATE INDEX IF NOT EXISTS cmt_doc_session_idx ON committee_session_docs (session_id)",
   );
 
-  // The session ids we hold are already current-Knesset only. Restrict to the
-  // recency window (recent past + all future) unless a full backfill is asked
-  // for. start_date is ISO text, compared lexically against the cutoff — the
-  // same coarse string compare getCommitteeSessions() uses (offset skew is
-  // irrelevant across a 120-day window).
+  // Restrict to the recency window unless a full backfill is asked for.
+  // start_date is ISO text, compared lexically against the cutoff (offset skew
+  // is irrelevant across a 120-day window).
   const ids = (
     sinceDays == null
       ? db.$client.prepare("SELECT id FROM committee_sessions").all()

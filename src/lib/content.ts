@@ -6,10 +6,9 @@ import { GLOSSARY_CATEGORIES } from "./glossary-categories";
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
 
-// Any URL rendered into an href must be http(s). zod's .url() validates shape
-// but not scheme, so it would let javascript:/data: through; this trims first to
-// block a leading-whitespace bypass (browsers tolerate "\tjavascript:…"). The
-// data is trusted committed YAML, so this is defense-in-depth, applied uniformly.
+// href URLs must be http(s): zod's .url() checks shape not scheme, so block
+// javascript:/data: (trim first — browsers tolerate "\tjavascript:…"). Defense-in-depth
+// over trusted committed YAML.
 const httpUrl = z
   .string()
   .trim()
@@ -196,11 +195,10 @@ export function memberRecordHeStrings(record: MemberRecord | null): string[] {
   );
 }
 
-// Localize a record's claim text into `locale`: curated locale text wins, else
-// fall back to the unified translation cache (so a record authored only he/en
-// still reaches ar/ru without hand-editing every file). Pure transform — the
-// caller supplies the resolved cache (and queues any misses in after()). Kept
-// beside getMemberRecord so this legally-sensitive text handling is testable.
+// Localize a record's claim text: curated locale text wins, else the unified
+// translation cache (so a he/en-only record still reaches ar/ru). Pure transform;
+// caller supplies the resolved cache and queues misses in after(). Kept beside
+// getMemberRecord so this legally-sensitive text handling is testable.
 export function localizeMemberRecord(
   record: MemberRecord | null,
   locale: string,
@@ -308,9 +306,8 @@ export function getQuiz(): QuizQuestion[] {
   return _quiz;
 }
 
-// State budget figures are sourced from the Ministry of Finance open data and
-// live in the DB (see scripts/sync/budget.ts and getBudget* in queries.ts).
-// The outlook/news for budgets not yet in the open data is editorial:
+// Budget figures come from Ministry of Finance open data in the DB (sync/budget.ts,
+// getBudget* in queries.ts). The outlook/news for not-yet-published budgets is editorial:
 
 const budgetOutlookSchema = z.object({
   year: z.number(),
@@ -341,10 +338,8 @@ export function getBudgetOutlook(): BudgetOutlook[] {
 
 // ---------- upcoming election (editorial) ----------
 
-// A sourced editorial "fact" line: label + value/detail + at least one citation.
-// Reused for key facts, rules, and statistics on the upcoming-election section.
-// `status` keeps the site honest about certainty (an official announcement vs.
-// the statutory default vs. a media report).
+// A sourced editorial "fact" line: label + value/detail + >=1 citation. Reused for
+// facts, rules, and stats. `status` marks certainty (confirmed vs. by-law vs. reported).
 const electionFactSchema = z.object({
   key: z.string(),
   label: localizedText,
@@ -362,9 +357,8 @@ const electionFactSchema = z.object({
 const electionPartySchema = z.object({
   name: localizedText,
   leader: localizedText.optional(),
-  // Links the named leader to their existing member page (photo, bio, record,
-  // votes) when they are in the site's persons DB. Only set after verifying the
-  // id resolves to the RIGHT person — a QA test cross-checks id + name.
+  // Links leader to their member page when in the persons DB. Set only after
+  // verifying the id is the RIGHT person — a QA test cross-checks id + name.
   leaderPersonId: z.number().optional(),
   note: localizedText.optional(),
   factionId: z.number().optional(), // links to /parties/<id> when it maps to a sitting faction

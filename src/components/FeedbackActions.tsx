@@ -19,9 +19,8 @@ function issueUrl(
 
 type Mode = "report" | "suggest";
 
-// "Report incorrect information" / "Suggest new information". Each opens an
-// in-page modal (a popup) that collects the details and then opens a PRE-FILLED
-// GitHub issue (a ticket reviewed before anything is published). No backend.
+// Two buttons; each opens a modal that then opens a pre-filled GitHub issue
+// (reviewed before anything is published). No backend.
 export function FeedbackActions({
   context = "",
   subject = "",

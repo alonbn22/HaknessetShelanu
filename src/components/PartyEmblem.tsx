@@ -17,9 +17,8 @@ export function PartyEmblem({
   nameHe: string;
   color: string;
   size?: number;
-  // Localized accessible name; falls back to the Hebrew name. The visible tile
-  // text stays Hebrew (it is a brand-style wordmark), but the announced name
-  // should match the page language where available (WCAG 3.1.2).
+  // Localized accessible name (falls back to Hebrew). Visible tile stays Hebrew;
+  // announced name matches the page language (WCAG 3.1.2).
   alt?: string;
 }) {
   const label = alt ?? nameHe;

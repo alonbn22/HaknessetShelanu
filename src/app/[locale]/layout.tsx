@@ -55,18 +55,15 @@ export default async function LocaleLayout({
   const dir = rtlLocales.has(locale) ? "rtl" : "ltr";
   const t = await getTranslations("a11y");
   const tWip = await getTranslations("wip");
-  // Reading a request header forces dynamic rendering on every route, which
-  // nonce-based CSP requires: Next stamps the per-request nonce onto its inline
-  // framework scripts at render time (static pages have no nonce and would be
-  // blocked by 'strict-dynamic'). We also read the nonce ourselves to stamp it on
-  // the hand-written theme script below — declaring it in the React tree so the
-  // client hydrates that <script> without a nonce-mismatch warning.
+  // Reading a header forces dynamic rendering, which nonce-CSP requires: Next
+  // stamps the nonce onto its inline scripts at render time (static pages get
+  // none and 'strict-dynamic' blocks them). We reuse the nonce on the theme
+  // script below so hydration doesn't warn.
   const nonce = (await headers()).get("x-nonce") ?? undefined;
 
   return (
-    // suppressHydrationWarning: the pre-paint theme script (below) toggles the
-    // `dark` class on <html> before React hydrates, so the class attribute
-    // intentionally differs from the server render — scoped to this element only.
+    // suppressHydrationWarning: the pre-paint theme script toggles the `dark`
+    // class on <html> before hydration, so its class attribute differs from SSR.
     <html
       lang={locale}
       dir={dir}
@@ -75,10 +72,9 @@ export default async function LocaleLayout({
     >
       <head>
         {/* Set the theme class before paint to avoid a light-mode flash. Next
-            stamps the per-request CSP nonce onto this inline script server-side,
-            but React strips nonces from the client (Flight) payload for security,
-            so the nonce attribute legitimately differs server vs client —
-            suppressHydrationWarning silences that one expected mismatch. */}
+            stamps the CSP nonce here server-side; React strips nonces from the
+            client payload, so the attribute differs server vs client —
+            suppressHydrationWarning silences that expected mismatch. */}
         <script
           nonce={nonce}
           suppressHydrationWarning

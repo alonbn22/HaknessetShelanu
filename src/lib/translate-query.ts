@@ -1,27 +1,19 @@
-// Server-only: translate a user's search query into Hebrew so it can match the
-// always-populated Hebrew titles, even when a row's machine-translated title is
-// missing. This makes search work in every language regardless of how much of
-// the translated-title backfill has completed.
-//
-// Uses the same public Google endpoint as the title sync (no key). Results are
-// cached in-memory per (locale, query) and degrade gracefully: on any failure
-// we return the original query, so search still works against the locale column.
-// Only import from server components / server code (it performs a network fetch).
+// Server-only: translate a search query to Hebrew so it matches the always-
+// populated Hebrew titles even when a row's translated title is missing. Cached
+// in-memory per (locale, query); on any failure returns the original query so
+// search still works against the locale column. Performs a network fetch.
 
 import { gtxTranslate } from "./gtx";
 import { isHebrew } from "./text";
 
-// LRU-ish success cache (Map keeps insertion order; a hit is re-inserted to mark
-// it recent, and we evict the oldest when full — so hot queries survive instead
-// of the old wholesale clear()).
+// LRU-ish success cache: Map preserves insertion order; hits are re-inserted and
+// the oldest is evicted when full, so hot queries survive.
 const CACHE_MAX = 500;
 const cache = new Map<string, string>();
 
-// Token bucket over the outbound Google-translate calls: every unique non-Hebrew
-// ?q= would otherwise trigger one server-side fetch, so a bot sending random
-// queries could use the site as an unauthenticated translation proxy/amplifier.
-// When the bucket is empty we skip translation — search still works against the
-// locale column. Per server instance; refills continuously.
+// Token bucket over outbound translate calls: without it a bot sending random ?q=
+// could use the site as an unauthenticated translation proxy/amplifier. When empty
+// we skip translation (search still works against the locale column).
 const BUCKET_MAX = 30;
 const REFILL_PER_SEC = 1;
 let tokens = BUCKET_MAX;
@@ -37,8 +29,8 @@ function takeToken(): boolean {
   return false;
 }
 
-// At least one letter (any script)? Pure digits/punctuation — a bill number, a
-// year — never need translating, so don't spend a token on them.
+// Pure digits/punctuation (bill number, year) never need translating — don't
+// spend a token on them.
 const HAS_LETTER = /\p{L}/u;
 
 export async function translateQueryToHebrew(

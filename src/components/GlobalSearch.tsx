@@ -5,9 +5,8 @@ import { useTranslations } from "next-intl";
 import { useRouter } from "@/i18n/navigation";
 import { SearchIcon } from "./icons/SearchIcon";
 
-// Site-wide search box → navigates to /search. Used on the search page (and
-// reusable elsewhere). The query is translated to Hebrew server-side so it
-// matches the data regardless of the UI language.
+// Site-wide search box → /search. The query is translated to Hebrew server-side
+// so it matches the data regardless of the UI language.
 export function GlobalSearch({
   initial = "",
   autoFocus = false,

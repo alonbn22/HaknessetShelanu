@@ -1,10 +1,7 @@
-// Pulls each member's structured biography from Wikidata (the full-history
-// backbone): date/place of birth, education, occupations, military service, and
-// a dated career timeline (positions held). Keyed by the QID captured during
-// the Wikidata enrich step. Free-text values are stored in Hebrew where
-// available so they localize via the unified on-the-fly translation cache.
-//
-// Sourced to the linked Wikidata entity (shown + linked on the member page).
+// Structured biography per member from Wikidata (birth, education, occupations,
+// military, career timeline), keyed by the QID from the enrich step. Hebrew
+// free-text localizes via the unified translation cache. Sourced to the linked
+// Wikidata entity (shown + linked on the member page).
 import { sql } from "drizzle-orm";
 import { getDb, schema } from "../../src/db";
 import { fetchRetry } from "./odata";

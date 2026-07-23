@@ -40,8 +40,7 @@ import { POSITION_FACTION_MEMBER, MK_POSITION_IDS } from "@/lib/constants";
 
 export const dynamic = "force-dynamic";
 
-// Page title/description/OG for search results and social shares. getMember is
-// cache()-wrapped, so this and the page body share one lookup.
+// getMember is cache()-wrapped, so metadata + page body share one lookup.
 export async function generateMetadata({
   params,
 }: {
@@ -86,8 +85,7 @@ export default async function MemberPage({
   const leastAligned = getTopAgreements(personId, "bottom", 5);
   const recentVotes = getMemberRecentVotes(personId, 10);
   const { loc: voteTitleOf } = localizePage(recentVotes.map((r) => r.vote.titleHe), locale);
-  // Record claims: curated locale text wins, else the unified cache. Extraction +
-  // transform live in content.ts; the request-scoped localize stays here.
+  // Record claims: curated locale text wins, else the unified cache.
   const rawRecord = getMemberRecord(personId);
   const recordHe = locale === "he" ? [] : memberRecordHeStrings(rawRecord);
   const { cache: recMap } = localizePage(recordHe, locale);
@@ -111,8 +109,8 @@ export default async function MemberPage({
   const serving = isServingMember(positions);
 
   const bio = getMemberBio(personId);
-  // Career/positions render in the Roles section (Knesset source), so the biography
-  // keeps only the background blocks: born, education, occupation, military.
+  // Roles section already shows career/positions, so bio keeps only background:
+  // born, education, occupation, military.
   const bioParts = bio
     ? [
         bio.birthPlaceHe,
@@ -122,8 +120,8 @@ export default async function MemberPage({
       ]
     : [];
 
-  // Resolve the page's free-text Hebrew from the unified cache now; translate
-  // misses post-response (localizePage owns the after() queue).
+  // Resolve the page's free-text Hebrew from the unified cache; misses translate
+  // post-response (localizePage owns the after() queue).
   const dataHe = [
     ...bioParts,
     ...sponsoredBills.map((b) => b.nameHe),
@@ -411,8 +409,8 @@ export default async function MemberPage({
           <h2 className="text-xl font-semibold">{t("member.factionHistory")}</h2>
           <ul className="space-y-2">
             {factionRows.map((p) => {
-              // Curated faction metadata first; fall back to the unified cache for an
-              // uncurated or null-id faction so non-he users don't see raw Hebrew.
+              // Curated faction name first; else the unified cache, so non-he
+              // users don't see raw Hebrew.
               const fhe = (p.factionNameHe ?? "").trim();
               const curated = p.factionId != null ? factionName(p.factionId, fhe, locale) : null;
               const fl =

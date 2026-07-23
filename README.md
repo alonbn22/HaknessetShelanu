@@ -11,11 +11,9 @@ budget, the lobbyist registry, a political dictionary, curated and sourced
 "public record" notes per member, and party political profiles. Hebrew-first,
 with English, Arabic, and Russian.
 
-> **For AI agents / designers reading this:** this file is the canonical context
-> for the project. It tells you what the site is, who it's for, how it's built,
-> where data comes from, and how to extend it — so you can work on it without
-> further explanation. Read [`AGENTS.md`](AGENTS.md) too (it warns that this
-> Next.js version has breaking changes — consult `node_modules/next/dist/docs/`
+> **For AI agents / designers:** this is the canonical project context — what the
+> site is, how it's built, and how to extend it. Also read [`AGENTS.md`](AGENTS.md)
+> (this Next.js version has breaking changes; consult `node_modules/next/dist/docs/`
 > before writing Next-specific code).
 
 ## What this site is (purpose & audience)
@@ -115,37 +113,32 @@ published anywhere (we derive participation from votes).
 
 ## Updating the data (how data gets in)
 
-**`npm run update` refreshes everything** — members, biographies, votes, bills,
-parliamentary activity, the law book, budget, lobbyists, and recomputed stats —
-in one command. Run it whenever you want fresh data. (`npm run sync` is the same
-thing; `update` is just the friendly name.) It is idempotent (upserts) and
-incremental on each table's `LastUpdatedDate` (cursor in `sync_state`). The
-initial `KNS_PlenumVoteResult` backfill (~480k rows) fetches the term in
-parallel date windows; if it's interrupted it restarts on the next run (only
-the first-ever sync is a backfill — after that everything is incremental). The
-run ends by folding the WAL back into `data/knesset.db` so the committed file
-is self-contained. Run it on a schedule (the bundled GitHub Action does this
-every 6h, verifies DB integrity, and commits the refreshed file) to keep data
-fresh.
+**`npm run update` refreshes everything** in one command (`npm run sync` is an
+alias): members, biographies, votes, bills, parliamentary activity, the law book,
+budget, lobbyists, and recomputed stats. It upserts and is incremental per table's
+`LastUpdatedDate` (cursor in `sync_state`) — only the first-ever run is a full
+backfill — and ends by folding the WAL into `data/knesset.db` so the committed
+file is self-contained. The bundled GitHub Action runs it every ~6h.
 
-Data text (vote/law/committee/budget names, bios) is **not** translated in the
-sync — it translates lazily on first view via the unified cache, so new data
-auto-localizes with no batch step.
+Data text (vote/law/committee names, bios) is **not** translated in the sync — it
+localizes lazily on first view via the unified cache. `npm run warm` pre-fills that
+cache (needed for a read-only deploy; see [DEPLOY.md](DEPLOY.md)).
 
 ```
 npm run update              # everything (recommended)
 npm run sync -- --members   # persons/factions/positions + Wikidata + biographies
-npm run sync -- --bio       # just refresh Wikidata biographies
 npm run sync -- --votes     # vote headers + results + subjects, then totals + stats
+npm run sync -- --activity  # committees, sessions, questions, agendas, law book
 npm run sync -- --budget    # Ministry of Finance budget (data.gov.il)
 npm run sync -- --stats     # recompute mk_vote_stats + vote totals only
+npm run warm                # pre-translate all data into en/ar/ru
 ```
 
-Sync modules: `members.ts` (persons/factions/positions), `wikidata.ts`
-(enrichment + QID capture), `biography.ts` (Wikidata bio: born/education/military/
-career timeline), `votes.ts` (votes/results/subjects + `forDesc` reading stage),
-`bills.ts`, `activity.ts` (queries/agendas/committees/law book), `budget.ts`,
-`lobbyists.ts`, `stats.ts` (per-MK participation), `odata.ts` (paged fetch helper).
+Sync modules (`scripts/sync/`): `members.ts`, `wikidata.ts` (enrichment + QID),
+`biography.ts`, `votes.ts`, `bills.ts`, one module per activity entity
+(`committees.ts`, `committee-sessions.ts`, `queries.ts`, `agendas.ts`, `laws.ts`,
+`ministries.ts`), `budget.ts`, `lobbyists.ts`, `stats.ts`, and `odata.ts` (the
+paged-fetch helper). `index.ts` orchestrates; flags run a single section.
 
 ## Data model (key tables)
 

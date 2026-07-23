@@ -21,8 +21,7 @@ import { formatDateTime } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
 
-// Page title/description/OG for search results and social shares (getCommittee
-// is cache()-wrapped; the name resolves via the shared committee-label helper).
+// getCommittee is cache()-wrapped, so metadata + page body share one lookup.
 export async function generateMetadata({
   params,
 }: {
@@ -171,10 +170,9 @@ export default async function CommitteePage({
                       {docs.map((d, i) => {
                         const kind = loc(d.groupTypeDesc);
                         const kindText = kind.text || t("committees.document");
-                        // Several docs of one meeting can share a type label
-                        // ("background material" ×9). Give each link a distinct
-                        // accessible name (index when >1, plus the file kind) so a
-                        // screen-reader link list isn't a run of identical names.
+                        // Docs of one meeting can share a type label; give each a
+                        // distinct accessible name (index + kind) so a screen-reader
+                        // link list isn't a run of identical names.
                         const label =
                           `${kindText}${docs.length > 1 ? ` ${i + 1}` : ""}` +
                           `${d.applicationDesc ? ` (${d.applicationDesc})` : ""}`;

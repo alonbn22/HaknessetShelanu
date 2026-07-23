@@ -14,8 +14,8 @@ import { rtlAttrs } from "@/lib/text";
 
 export const dynamic = "force-dynamic";
 
-// Per-Knesset English Wikipedia article — the source for each term's summary,
-// events, "how it ended", and figures (the editorial narrative is drawn from it).
+// Per-Knesset English Wikipedia article — the cited source for each term's
+// summary, events, and figures.
 const ORDINALS = [
   "First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth",
   "Ninth", "Tenth", "Eleventh", "Twelfth", "Thirteenth", "Fourteenth", "Fifteenth",
@@ -29,8 +29,7 @@ const knessetWikiUrl = (n: number) =>
 const KNESSET_HISTORY_URL =
   "https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx";
 
-// Small "source · source" suffix used across the upcoming-election section —
-// keeps the site's always-cite-sources rule visible on every fact.
+// "source · source" suffix — keeps always-cite-sources visible on every fact.
 function SourceLinks({ sources, label }: {
   sources: { url: string; title: string; publisher?: string }[];
   label: string;
@@ -121,8 +120,7 @@ export default async function ElectionsHistoryPage() {
             <p className="text-sm leading-relaxed">{partyText(outlook.intro, locale)}</p>
           </div>
 
-          {/* The road to the 26th Knesset — when line-ups become final, election
-              day, results, convening. Each entry dated + sourced. */}
+          {/* Timeline to the 26th Knesset — each entry dated + sourced. */}
           {outlook.keyDates && outlook.keyDates.length > 0 && (
             <div className="space-y-2">
               <h3 className="text-sm font-semibold uppercase tracking-wide text-muted">
@@ -173,8 +171,8 @@ export default async function ElectionsHistoryPage() {
               <p className="text-xs text-muted">
                 {te("partiesNote")}{" "}
                 {(() => {
-                  // "The full rosters appear here on <date>" — dated from the
-                  // kd-lists timeline entry so the UI never hardcodes a date.
+                  // Date pulled from the kd-lists timeline entry so the UI never
+                  // hardcodes it.
                   const kd = outlook.keyDates?.find((d) => d.key === "kd-lists");
                   return kd?.date
                     ? te("finalListsNote", { date: formatDate(kd.date, locale) })
@@ -183,8 +181,8 @@ export default async function ElectionsHistoryPage() {
               </p>
               <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {outlook.parties.map((p) => {
-                  // Pull the party's editorial profile (spectrum, positions, ballot
-                  // letters) so the card previews it and deep-links to the full page.
+                  // Party's editorial profile — the card previews it and deep-links
+                  // to the full page.
                   const profile = p.factionId != null ? getPartyProfile(p.factionId) : undefined;
                   const positions = profile ? partyList(profile.positions, locale).slice(0, 2) : [];
                   return (
@@ -213,8 +211,7 @@ export default async function ElectionsHistoryPage() {
                       <div className="text-sm text-muted">
                         {te("leader")}:{" "}
                         {p.leaderPersonId != null ? (
-                          // Leader is in the site's DB — link to their member
-                          // page (photo, bio, record, votes).
+                          // Leader is in the DB — link to their member page.
                           <Link
                             className="text-accent hover:underline"
                             href={`/members/${p.leaderPersonId}`}

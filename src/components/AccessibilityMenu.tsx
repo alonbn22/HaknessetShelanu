@@ -28,8 +28,7 @@ const DEFAULTS: Settings = {
 
 const STORAGE_KEY = "a11y-settings";
 
-// A single switch row: label + icon + ARIA switch. Module-scope so it isn't
-// re-created on every render of the menu.
+// A switch row. Module-scope so it isn't re-created on every render.
 function SwitchRow({
   label,
   icon,
@@ -71,8 +70,7 @@ function SwitchRow({
 
 function apply(s: Settings) {
   const el = document.documentElement;
-  // Unlimited text scaling: each step is +10%, floored at 70%. The inline
-  // font-size on <html> scales the whole rem-based layout.
+  // Each step +10%, floored at 70%; inline font-size on <html> scales the rem layout.
   el.style.fontSize = s.font ? `${100 + s.font * 10}%` : "";
   el.classList.toggle("a11y-keyboard", s.keyboard);
   el.classList.toggle("a11y-no-motion", s.noMotion);
@@ -118,8 +116,7 @@ export function AccessibilityMenu() {
     });
   }, []);
 
-  // Text size: step by ±1 from the latest value (functional update, so rapid
-  // or held clicks accumulate). No upper limit; floored at -3 (70%).
+  // Step ±1 via functional update so rapid clicks accumulate; floored at -3 (70%).
   const bumpFont = useCallback((delta: number) => {
     setSettings((prev) => {
       const next = { ...prev, font: Math.max(-3, prev.font + delta) };
@@ -145,7 +142,7 @@ export function AccessibilityMenu() {
 
   function close() {
     setOpen(false);
-    triggerRef.current?.focus(); // return focus to the trigger
+    triggerRef.current?.focus();
   }
 
   // When open: focus the first control, trap Tab within the dialog, Escape closes.

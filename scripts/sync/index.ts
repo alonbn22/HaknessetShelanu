@@ -1,12 +1,10 @@
 // Sync CLI: pulls Knesset open data + Wikidata into the local SQLite DB.
 //
-//   npm run update            update EVERYTHING (members, bios, votes, bills,
-//                             activity, budget, lobbyists, stats) — same as a
-//                             bare `npm run sync`
-//   npm run sync -- --members only members/factions/positions + Wikidata + bios
-//   npm run sync -- --bio     only refresh Wikidata biographies
-//   npm run sync -- --votes   only votes + totals + stats
-//   npm run sync -- --stats   only recompute stats/totals
+//   npm run update / npm run sync   update EVERYTHING
+//   npm run sync -- --members       members/factions/positions + Wikidata + bios
+//   npm run sync -- --bio           only Wikidata biographies
+//   npm run sync -- --votes         only votes + totals + stats
+//   npm run sync -- --stats         only recompute stats/totals
 //   npm run sync -- --budget / --activity / --lobbyists  the named section
 //
 // Vote sync is incremental after the first run (cursor in sync_state).
@@ -42,11 +40,9 @@ import { syncIsraelLaws } from "./laws";
 import { syncBudget } from "./budget";
 import { syncLobbyists } from "./lobbyists";
 
-// Run a slow, slow-moving section (budget, biographies). In a full sync a
-// transient upstream failure must NOT discard the whole run — votes/members are
-// already synced and the previously-committed values for this section stay
-// valid — so log and continue. When the section is invoked on its own, rethrow
-// so the caller gets a non-zero exit.
+// A slow, slow-moving section (budget, biographies). In a full sync a transient
+// failure must NOT discard the whole run (votes/members already synced, old
+// values stay valid) — log and continue. Standalone, rethrow for a non-zero exit.
 async function softSection(name: string, fn: () => Promise<void>, soft: boolean) {
   try {
     await fn();
@@ -58,10 +54,9 @@ async function softSection(name: string, fn: () => Promise<void>, soft: boolean)
 
 async function main() {
   const args = new Set(process.argv.slice(2));
-  // A bare `npm run sync` (no flags) runs EVERYTHING; any section flag runs only
-  // that section. Enumerating just the "big" flags here used to leave `all` true
-  // for --budget/--lobbyists/--bio/--subjects, silently kicking off a full sync
-  // (and running syncVoteSubjects twice under --subjects).
+  // Bare `npm run sync` (no flags) runs EVERYTHING; any flag runs only that
+  // section. (Enumerating just the "big" flags once left `all` true for the
+  // others, silently kicking off a full sync.)
   const all = args.size === 0;
   const started = Date.now();
 

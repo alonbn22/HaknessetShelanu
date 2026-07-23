@@ -3,10 +3,8 @@
 import { useSyncExternalStore } from "react";
 import { useTranslations } from "next-intl";
 
-// Subscribe to html.dark itself (via a MutationObserver) so aria-pressed always
-// reflects the real theme — including the pre-paint script's result and any change
-// from elsewhere — with no setState-in-effect. getServerSnapshot returns false on
-// the server; React reconciles the real value on hydration without a mismatch.
+// Subscribe to html.dark via MutationObserver so aria-pressed always reflects the real
+// theme (pre-paint script included). getServerSnapshot=false on the server; hydration reconciles it — no mismatch.
 function subscribeTheme(onChange: () => void) {
   const obs = new MutationObserver(onChange);
   obs.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
@@ -14,10 +12,8 @@ function subscribeTheme(onChange: () => void) {
 }
 const isDarkNow = () => document.documentElement.classList.contains("dark");
 
-// Flips html.dark and persists the choice. The pre-paint script in the layout
-// applies the saved/OS theme before first paint; this only toggles it. The icon
-// swaps via the `dark:` CSS variant (both icons are in the DOM, one hidden), so
-// there is no server/client hydration mismatch.
+// Flips html.dark and persists it (the layout's pre-paint script sets the initial theme).
+// Icons swap via the `dark:` CSS variant — both are in the DOM — so no hydration mismatch.
 export function ThemeToggle() {
   const t = useTranslations("theme");
   const isDark = useSyncExternalStore(subscribeTheme, isDarkNow, () => false);

@@ -1,8 +1,6 @@
 // Pre-warm the unified translation cache so non-Hebrew locales ship fully
-// translated instead of filling in lazily on first view. Gathers every Hebrew
-// free-text string the site renders, and for each target locale translates the
-// ones missing from the `translations` cache (gtx, with retry/backoff) and
-// stores them. Safe to re-run — only missing strings are translated.
+// translated instead of lazily. Gathers every Hebrew free-text string the site
+// renders and translates the ones missing per locale (gtx). Safe to re-run.
 //
 //   npm run warm            warm en, ar, ru
 //   npm run warm -- en      warm only en

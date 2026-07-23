@@ -3,9 +3,8 @@
 import { useState } from "react";
 import { useQueryFilter } from "@/lib/use-query-filter";
 
-// Debounced free-text search box wired to a URL query param (default `q`). The
-// one input the six list-filter components share; pass `className` for the
-// per-page width. Direction is inherited from the document (cross-language search).
+// Debounced free-text search box wired to a URL query param (default `q`); shared
+// by the list filters. Direction inherits from the document (cross-language search).
 export function SearchInput({
   placeholder,
   className = "",

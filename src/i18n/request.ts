@@ -23,8 +23,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
     : routing.defaultLocale;
 
   const messages = (await import(`../../messages/${locale}.json`)).default as Messages;
-  // Belt-and-suspenders: fall back to the default locale for any key that is ever
-  // missing (the parity test should prevent this, but production stays resilient).
+  // Fall back to the default locale for any missing key (the parity test should
+  // prevent this, but production stays resilient).
   const merged =
     locale === routing.defaultLocale
       ? messages

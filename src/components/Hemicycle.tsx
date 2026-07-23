@@ -4,9 +4,8 @@ import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
-// One faction, pre-resolved server-side (color/name need content YAML that isn't
-// available in the client, so the page passes plain serializable data — same
-// pattern as VoteRollCall's voters).
+// One faction, pre-resolved server-side (color/name come from content YAML);
+// passed to the client as plain serializable data.
 export type HemiFaction = {
   id: number;
   name: string;
@@ -22,11 +21,8 @@ const OUTER_R = 100; // svg units; seats are centred at (OUTER_R, OUTER_R)
 const ROWS = 7;
 const INNER_RATIO = 0.4; // inner arc radius as a fraction of OUTER_R
 
-// Distribute `total` seats across concentric semicircle rows (seats per row ∝
-// radius — the standard parliament-arch layout), order every seat by angle so
-// factions assigned in sequence form contiguous wedges, and size each seat from
-// the smallest gap between any two seats so dots are as large as possible while
-// never overlapping (the previous fixed radius meshed adjacent rows together).
+// Lay out `total` seats across concentric semicircle rows (seats per row ∝ radius),
+// ordered by angle so factions form contiguous wedges; dot size from the closest pair.
 function layout(total: number): { seats: Omit<Seat, "factionId">[]; seatR: number } {
   const radii: number[] = [];
   for (let r = 0; r < ROWS; r++) {
@@ -34,8 +30,7 @@ function layout(total: number): { seats: Omit<Seat, "factionId">[]; seatR: numbe
   }
   const weight = radii.reduce((a, b) => a + b, 0);
   const counts = radii.map((rad) => Math.max(1, Math.round((total * rad) / weight)));
-  // Correct rounding drift to hit `total` exactly: surplus to the roomy outer
-  // rows, deficit from the inner rows.
+  // Fix rounding drift to hit `total` exactly: surplus to outer rows, deficit from inner.
   let diff = total - counts.reduce((a, b) => a + b, 0);
   while (diff > 0) {
     counts[counts.length - 1]++;
@@ -64,9 +59,8 @@ function layout(total: number): { seats: Omit<Seat, "factionId">[]; seatR: numbe
   }
   raw.sort((a, b) => a.angle - b.angle || a.radius - b.radius);
 
-  // Largest dot that still leaves a gap: 38% of the closest pair's distance.
-  // Compare squared distances (Math.sqrt is correctly-rounded/deterministic,
-  // unlike Math.hypot) so the derived radius matches between SSR and the client.
+  // Dot radius = 38% of the closest-pair distance. Squared distances + Math.sqrt
+  // (deterministic, unlike Math.hypot) so SSR and client agree — no hydration mismatch.
   let minSq = Infinity;
   for (let i = 0; i < raw.length; i++) {
     for (let j = i + 1; j < raw.length; j++) {
@@ -78,10 +72,8 @@ function layout(total: number): { seats: Omit<Seat, "factionId">[]; seatR: numbe
   }
   const seatR = Math.sqrt(minSq) * 0.38;
 
-  // Round to 2 decimals: Math.cos/sin are implementation-defined in ECMAScript,
-  // so the server (Node) and client (browser) can produce coordinates that differ
-  // in the last float digit — rounding makes them identical and avoids a React
-  // hydration mismatch. 0.01-unit precision is far finer than the ~200-unit chart.
+  // Round to 2 decimals: Math.cos/sin are implementation-defined, so Node and the
+  // browser can differ in the last digit — rounding keeps SSR/client identical (no hydration mismatch).
   const round = (v: number) => Math.round(v * 100) / 100;
   return { seats: raw.map(({ x, y }) => ({ x: round(x), y: round(y) })), seatR: round(seatR) };
 }
@@ -92,8 +84,7 @@ export function Hemicycle({ factions }: { factions: HemiFaction[] }) {
 
   const total = factions.reduce((s, f) => s + f.seats, 0);
 
-  // Opposition fills the left of the arc, coalition the right, each ordered so
-  // the largest bloc of each side sits nearest the centre aisle.
+  // Opposition left, coalition right; largest bloc of each side nearest the centre aisle.
   const ordered = useMemo(() => {
     const opp = factions.filter((f) => !f.isCoalition).sort((a, b) => a.seats - b.seats);
     const coal = factions.filter((f) => f.isCoalition).sort((a, b) => b.seats - a.seats);
@@ -121,8 +112,7 @@ export function Hemicycle({ factions }: { factions: HemiFaction[] }) {
   // Seats span x∈[0, 2·OUTER_R], y∈[0, OUTER_R]; pad the viewBox by the dot radius.
   const pad = seatR + 2;
 
-  // SVG coordinates are absolute, so the dome (coalition on the right — a fixed
-  // seating convention) does not mirror under an RTL UI; no dir override needed.
+  // Absolute SVG coords: the dome (coalition on the right) doesn't mirror under RTL, so no dir override.
   return (
     <div className="space-y-4">
       <svg

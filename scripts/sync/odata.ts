@@ -26,9 +26,8 @@ export async function fetchJson(url: string): Promise<Record<string, unknown>> {
   }
 }
 
-// Fetch with retry + exponential backoff, returning the raw Response. For
-// callers outside the OData service (Wikidata SPARQL, Commons, data.gov.il CKAN)
-// that parse the body themselves but still want fetchJson's resilience policy.
+// Fetch with retry + backoff, returning the raw Response — for non-OData callers
+// (Wikidata, Commons, data.gov.il) that parse the body themselves.
 export async function fetchRetry(
   url: string,
   init: RequestInit = {},

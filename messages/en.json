@@ -364,7 +364,8 @@
     "leader": "Led by",
     "lastReviewed": "Last reviewed: {date}",
     "homeTitle": "2026 election",
-    "homeCta": "Everything about the upcoming election"
+    "homeCta": "Everything about the upcoming election",
+    "morePartyInfo": "More about the party"
   },
   "electionsHistory": {
     "title": "Knesset Elections History",

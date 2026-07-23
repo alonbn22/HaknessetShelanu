@@ -153,26 +153,32 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Upcoming-election banner — renders only once content/election.yaml exists. */}
+      {/* Upcoming-election banner — the site's most time-sensitive content, so it
+          gets a bold accent frame + an explicit CTA button. Renders only once
+          content/election.yaml exists. */}
       {electionOutlook && (
-        <Link
-          href="/elections#upcoming"
-          className="block rounded-xl border border-accent/30 bg-accent/5 p-5 shadow-sm transition-shadow hover:shadow-md"
-        >
-          <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
-            <span className="text-xl font-bold">{t("election.homeTitle")}</span>
-            {electionOutlook.expectedDate && (
-              <span className="font-semibold text-accent">
-                {t("election.expectedDate")}: {formatDate(electionOutlook.expectedDate, locale)}
-              </span>
-            )}
-            <span className="text-sm text-muted">
+        <section className="rounded-xl border-2 border-accent/40 bg-accent/10 p-6 shadow-sm">
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <div className="min-w-0 space-y-1">
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="text-xl font-bold">{t("election.homeTitle")}</span>
+                {electionOutlook.expectedDate && (
+                  <span className="rounded-full bg-accent/15 px-2.5 py-0.5 text-sm font-semibold text-accent">
+                    {t("election.expectedDate")}: {formatDate(electionOutlook.expectedDate, locale)}
+                  </span>
+                )}
+              </div>
+              <p className="text-sm">{partyText(electionOutlook.headline, locale)}</p>
+            </div>
+            <Link
+              href="/elections#upcoming"
+              className="shrink-0 rounded-lg bg-accent px-5 py-2.5 font-semibold text-white shadow-sm transition-opacity hover:opacity-90"
+            >
               {/* Arrow follows the reading direction (he/ar are RTL). */}
               {t("election.homeCta")} {rtlLocales.has(locale) ? "←" : "→"}
-            </span>
+            </Link>
           </div>
-          <p className="mt-1 text-sm">{partyText(electionOutlook.headline, locale)}</p>
-        </Link>
+        </section>
       )}
 
       <section className="rounded-xl bg-white p-6 shadow-sm space-y-4">

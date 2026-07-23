@@ -364,7 +364,8 @@
     "leader": "בראשות",
     "lastReviewed": "נבדק לאחרונה: {date}",
     "homeTitle": "בחירות 2026",
-    "homeCta": "כל המידע על הבחירות הקרובות"
+    "homeCta": "כל המידע על הבחירות הקרובות",
+    "morePartyInfo": "עוד על המפלגה"
   },
   "electionsHistory": {
     "title": "היסטוריית הבחירות לכנסת",

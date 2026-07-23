@@ -1,12 +1,16 @@
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import { rtlLocales } from "@/i18n/routing";
 import {
   getElectionsHistory,
   getElectionOutlook,
+  getPartyProfile,
   partyText,
+  partyList,
   type ElectionFact,
 } from "@/lib/content";
 import { formatDate } from "@/lib/format";
+import { rtlAttrs } from "@/lib/text";
 
 export const dynamic = "force-dynamic";
 
@@ -55,6 +59,7 @@ export default async function ElectionsHistoryPage() {
   const t = await getTranslations("electionsHistory");
   const te = await getTranslations("election");
   const tc = await getTranslations("common");
+  const ts = await getTranslations("spectrum");
   const locale = await getLocale();
   const elections = getElectionsHistory();
   const outlook = getElectionOutlook();
@@ -177,15 +182,31 @@ export default async function ElectionsHistoryPage() {
                 })()}
               </p>
               <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                {outlook.parties.map((p) => (
-                  <div key={p.name.he} className="rounded-lg bg-white p-3 shadow-sm space-y-1">
-                    <div className="font-semibold">
-                      {p.factionId != null ? (
-                        <Link className="hover:underline" href={`/parties/${p.factionId}`}>
-                          {partyText(p.name, locale)}
-                        </Link>
-                      ) : (
-                        partyText(p.name, locale)
+                {outlook.parties.map((p) => {
+                  // Pull the party's editorial profile (spectrum, positions, ballot
+                  // letters) so the card previews it and deep-links to the full page.
+                  const profile = p.factionId != null ? getPartyProfile(p.factionId) : undefined;
+                  const positions = profile ? partyList(profile.positions, locale).slice(0, 2) : [];
+                  return (
+                  <div key={p.name.he} className="rounded-lg bg-white p-3 shadow-sm space-y-1.5">
+                    <div className="flex items-start justify-between gap-2">
+                      <div className="font-semibold">
+                        {p.factionId != null ? (
+                          <Link className="hover:underline" href={`/parties/${p.factionId}`}>
+                            {partyText(p.name, locale)}
+                          </Link>
+                        ) : (
+                          partyText(p.name, locale)
+                        )}
+                      </div>
+                      {profile?.ballotLetters && (
+                        <span
+                          dir="rtl"
+                          lang="he"
+                          className="shrink-0 rounded bg-black/5 px-1.5 py-0.5 text-xs font-bold tracking-wide"
+                        >
+                          {profile.ballotLetters}
+                        </span>
                       )}
                     </div>
                     {p.leader && (
@@ -205,12 +226,35 @@ export default async function ElectionsHistoryPage() {
                         )}
                       </div>
                     )}
+                    {profile?.spectrum && (
+                      <span className="inline-block rounded-full bg-accent/10 px-2 py-0.5 text-xs font-medium text-accent">
+                        {ts(profile.spectrum)}
+                      </span>
+                    )}
+                    {positions.length > 0 && (
+                      <ul className="list-disc space-y-0.5 ps-4 text-xs leading-relaxed text-foreground/75">
+                        {positions.map((pos, i) => (
+                          <li key={i} {...rtlAttrs(pos)}>
+                            {pos}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                     {p.note && (
                       <p className="text-xs leading-relaxed">{partyText(p.note, locale)}</p>
                     )}
                     <SourceLinks sources={p.sources} label={tc("source")} />
+                    {profile && p.factionId != null && (
+                      <Link
+                        href={`/parties/${p.factionId}`}
+                        className="block text-xs font-medium text-accent hover:underline"
+                      >
+                        {te("morePartyInfo")} {rtlLocales.has(locale) ? "←" : "→"}
+                      </Link>
+                    )}
                   </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
           )}

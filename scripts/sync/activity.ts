@@ -36,9 +36,10 @@ export async function syncCommitteeSessions() {
       typeDesc: row.TypeDesc ?? null,
       statusDesc: row.StatusDesc ?? null,
       location: row.Location ?? null,
-      // The agenda URL uses http; upgrade so the link isn't blocked/mixed-content.
+      // These URLs sometimes use http; upgrade so links aren't blocked as
+      // mixed content (and upgrade-insecure-requests has nothing to rewrite).
       sessionUrl: row.SessionUrl ? row.SessionUrl.replace(/^http:/, "https:") : null,
-      broadcastUrl: row.BroadcastUrl ?? null,
+      broadcastUrl: row.BroadcastUrl ? row.BroadcastUrl.replace(/^http:/, "https:") : null,
       lastUpdated: row.LastUpdatedDate,
     };
     db.insert(schema.committeeSessions)

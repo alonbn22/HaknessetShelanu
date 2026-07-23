@@ -11,9 +11,8 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "commons.wikimedia.org" },
     ],
   },
-  // Baseline security headers (defense-in-depth). No CSP yet: the pre-paint theme
-  // script is inline, so a strict CSP needs nonces (a middleware change) — tracked
-  // in the roadmap. These four are pure wins with no breakage risk.
+  // Static security headers. The Content-Security-Policy is NOT here — it needs
+  // a per-request nonce, so it's set by the middleware (src/proxy.ts).
   async headers() {
     return [
       {
@@ -23,6 +22,8 @@ const nextConfig: NextConfig = {
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
           { key: "X-Frame-Options", value: "SAMEORIGIN" },
           { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
+          // 2 years, preload-eligible; a no-op over plain http (dev).
+          { key: "Strict-Transport-Security", value: "max-age=63072000; includeSubDomains; preload" },
         ],
       },
     ];

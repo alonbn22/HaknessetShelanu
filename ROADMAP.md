@@ -1,6 +1,6 @@
 # Roadmap
 
-The living plan for **הכנסת שלי · My Knesset**. Shipped features are summarized in
+The living plan for **הכנסת שלנו · Our Knesset**. Shipped features are summarized in
 the [README feature map](README.md#feature-map); this file tracks what's next and
 what data we could still surface.
 

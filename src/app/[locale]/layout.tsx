@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { headers } from "next/headers";
 import { Heebo } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing, rtlLocales } from "@/i18n/routing";
+import { THEME_SCRIPT } from "@/lib/theme-script";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { AccessibilityMenu } from "@/components/AccessibilityMenu";
@@ -53,6 +55,13 @@ export default async function LocaleLayout({
   const dir = rtlLocales.has(locale) ? "rtl" : "ltr";
   const t = await getTranslations("a11y");
   const tWip = await getTranslations("wip");
+  // Reading a request header forces dynamic rendering on every route, which
+  // nonce-based CSP requires: Next stamps the per-request nonce onto its inline
+  // framework scripts at render time (static pages have no nonce and would be
+  // blocked by 'strict-dynamic'). We also read the nonce ourselves to stamp it on
+  // the hand-written theme script below — declaring it in the React tree so the
+  // client hydrates that <script> without a nonce-mismatch warning.
+  const nonce = (await headers()).get("x-nonce") ?? undefined;
 
   return (
     // suppressHydrationWarning: the pre-paint theme script (below) toggles the
@@ -65,12 +74,15 @@ export default async function LocaleLayout({
       suppressHydrationWarning
     >
       <head>
-        {/* Set the theme class before paint to avoid a light-mode flash. */}
+        {/* Set the theme class before paint to avoid a light-mode flash. Next
+            stamps the per-request CSP nonce onto this inline script server-side,
+            but React strips nonces from the client (Flight) payload for security,
+            so the nonce attribute legitimately differs server vs client —
+            suppressHydrationWarning silences that one expected mismatch. */}
         <script
-          dangerouslySetInnerHTML={{
-            __html:
-              "(function(){try{var t=localStorage.getItem('theme');var d=t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches);document.documentElement.classList.toggle('dark',d);}catch(e){}})();",
-          }}
+          nonce={nonce}
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }}
         />
       </head>
       <body className="min-h-screen flex flex-col">

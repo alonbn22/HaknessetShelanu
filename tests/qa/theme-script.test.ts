@@ -1,23 +1,14 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import fs from "node:fs";
-import path from "node:path";
+import { THEME_SCRIPT } from "../../src/lib/theme-script";
 
 // The pre-paint theme script is a hand-written JS string injected via
-// dangerouslySetInnerHTML in the layout. tsc/next build never parse its contents,
-// so a typo would ship silently and reintroduce the light-mode flash (or throw in
-// the browser). Extract the exact string from source and prove it (1) parses and
-// (2) sets html.dark correctly for each saved preference / OS setting.
-
-const LAYOUT = path.join(process.cwd(), "src", "app", "[locale]", "layout.tsx");
-
-function extractThemeScript(): string {
-  const src = fs.readFileSync(LAYOUT, "utf8");
-  // __html: "....."  — the string has no embedded double quotes (uses single).
-  const m = src.match(/__html:\s*"([^"]*)"/);
-  assert.ok(m, "could not find the pre-paint theme script (__html: \"...\") in layout.tsx");
-  return m![1];
-}
+// dangerouslySetInnerHTML in the layout (the layout imports THEME_SCRIPT from
+// src/lib/theme-script.ts — the same constant this test imports, so we're proving
+// the exact string that ships). tsc/next build never parse its contents, so a typo
+// would ship silently and reintroduce the light-mode flash (or throw in the
+// browser). Prove it (1) parses and (2) sets html.dark correctly for each saved
+// preference / OS setting.
 
 // Run the script against stubbed globals; return whether 'dark' ended up applied.
 function runScript(
@@ -53,7 +44,7 @@ function runScript(
   return cls.has("dark");
 }
 
-const script = extractThemeScript();
+const script = THEME_SCRIPT;
 
 test("theme script parses as valid JavaScript", () => {
   assert.doesNotThrow(() => new Function(script));

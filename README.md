@@ -1,4 +1,4 @@
-# הכנסת שלי · My Knesset
+# הכנסת שלנו · Our Knesset
 
 [![Code license: AGPL-3.0](https://img.shields.io/badge/code-AGPL--3.0-blue.svg)](LICENSE)
 [![Content: CC BY-SA 4.0](https://img.shields.io/badge/content-CC--BY--SA--4.0-lightgrey.svg)](LICENSING.md)
@@ -37,7 +37,7 @@ with English, Arabic, and Russian.
 |---|---|---|
 | Dashboard | `/` | **Seats-by-faction with a bar/hemicycle toggle** (bar default), coalition vs. opposition totals, latest votes + search, participation leaderboards, most-active legislators, a controversial-laws section |
 | Global search | `/search` | One box across members, factions, votes, laws, committees, lobbyists, and the dictionary; cross-language (query is translated to Hebrew to match the data) |
-| Members | `/members`, `/members/[id]` | Filter by faction / bloc / **search by name or party** (any language). Profile: photo (+license), roles, **full multi-Knesset faction history**, biography (Wikidata), **participation stats**, parliamentary questions, sponsored bills, committees, recent votes, **curated public record with sources** |
+| Members | `/members`, `/members/[id]` | Filter by faction / bloc / **search by name or party** (any language). Profile: photo (+license), roles, **full multi-Knesset faction history**, biography (Wikidata), **participation stats**, **party-discipline % with a rebellion drill-down** (the exact votes where the MK broke with their faction), parliamentary questions **with answered/unanswered + response-time accountability**, sponsored bills, committees, recent votes, **curated public record with sources** |
 | Compare | `/compare` | Pick two MKs → side-by-side stats **plus a voting-agreement rate** (how often they voted the same way) |
 | Factions | `/parties`, `/parties/[id]` | Seats, coalition badge, avg participation; **political spectrum bar, summary, key positions, leader, ballot letters** (editorial) |
 | Ministers | `/ministers` | The sitting government; explains the "Norwegian Law" (ministers who vacated their seat) |
@@ -199,6 +199,27 @@ The site targets **Israeli Standard IS 5568 (≈ WCAG 2.0 AA)**:
   ensure contrast, and on statically rendered pages call `setRequestLocale(locale)`
   (otherwise next-intl falls back to the default locale).
 
+## Security posture
+
+The app is read-only with no visitor accounts, so the surface is small; it's still
+locked down defensively:
+
+- **Strict Content-Security-Policy** set per request in `src/proxy.ts`:
+  `script-src` uses `'strict-dynamic'` + a fresh per-request **nonce**, so only
+  first-party scripts Next.js emits (and the one nonce-stamped inline theme
+  snippet) run — an injected `<script>` is refused. `object-src 'none'`,
+  `base-uri`/`form-action`/`frame-ancestors 'self'`; `'unsafe-eval'` is dev-only.
+- **Static hardening headers** in `next.config.ts`: HSTS (2-year, preload),
+  `X-Content-Type-Options: nosniff`, `Referrer-Policy`, `X-Frame-Options`, and a
+  camera/mic/geolocation-denying `Permissions-Policy`.
+- SQL goes through parameterized Drizzle queries with `LIKE` wildcards escaped;
+  outbound sync requests are HTTPS-only; `target="_blank"` links carry
+  `rel="noopener"`.
+- `tests/security/` locks this in (SQL-injection, HTTPS-only, no hardcoded
+  secrets, XSS surface, translation-proxy limits, and the header/CSP posture).
+
+Full details and how to report a vulnerability: [SECURITY.md](SECURITY.md).
+
 ## Conventions for contributors (and AI agents)
 
 - **Don't hardcode user-facing strings** — add keys to all four
@@ -213,10 +234,12 @@ The site targets **Israeli Standard IS 5568 (≈ WCAG 2.0 AA)**:
 ## Project status
 
 Live and broad: members/factions, votes + per-MK stats, member comparison with
-a voting-agreement rate, party-discipline metrics, bill journeys + the law
-book, committees, the budget, lobbyists, the dictionary, elections history +
-the party-fit quiz, global search, per-page metadata + a full sitemap, curated
-member records, party profiles, accessibility, and the transparency pages. The
+a voting-agreement rate, party-discipline metrics with a rebellion drill-down,
+question-response accountability, bill journeys + the law book, committees, the
+budget, lobbyists, the dictionary, elections history + the party-fit quiz,
+global search, per-page metadata + a full sitemap, curated member records, party
+profiles, a hardened CSP/security-header posture, accessibility, and the
+transparency pages. The
 remaining roadmap (dark mode, committee calendars, status-code decoding) and
 **ideas for data we could still surface from the APIs** are tracked in
 [`ROADMAP.md`](ROADMAP.md).

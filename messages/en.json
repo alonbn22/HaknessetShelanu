@@ -1,6 +1,6 @@
 {
   "site": {
-    "name": "My Knesset",
+    "name": "Our Knesset",
     "tagline": "Understand the Knesset: members, parties, votes and transparency"
   },
   "nav": {
@@ -44,7 +44,7 @@
     "knesset": "Knesset"
   },
   "home": {
-    "title": "My Knesset",
+    "title": "Our Knesset",
     "subtitle": "Everything about the 25th Knesset — members, factions and votes — in one place, based on public data.",
     "seatsByParty": "Seats by faction",
     "thisWeekTitle": "This week in the Knesset",
@@ -287,7 +287,7 @@
     "close": "Close",
     "statement": {
       "title": "Accessibility Statement",
-      "intro": "\"My Knesset\" strives to provide a convenient and equal experience for all users, including people with disabilities, and works to make its content accessible in the spirit of equality and human dignity.",
+      "intro": "\"Our Knesset\" strives to provide a convenient and equal experience for all users, including people with disabilities, and works to make its content accessible in the spirit of equality and human dignity.",
       "conformanceTitle": "Level of accessibility",
       "conformance": "The site is built to conform, as far as possible, to Israeli Standard IS 5568 and the WCAG 2.0 Level AA guidelines. It supports keyboard navigation, a semantic heading structure, image descriptions, and directionality (Hebrew and Arabic right-to-left).",
       "featuresTitle": "Accessibility features",

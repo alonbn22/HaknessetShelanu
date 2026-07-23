@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for helping improve **הכנסת שלי / My Knesset** — a public, multilingual
+Thanks for helping improve **הכנסת שלנו / Our Knesset** — a public, multilingual
 (he/en/ar/ru, RTL) Knesset transparency site.
 
 ## Ground rules

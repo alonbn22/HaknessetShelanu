@@ -82,6 +82,10 @@ Other scripts: `npm run build`, `npm run lint`, `npm test`,
 Env: set `NEXT_PUBLIC_SITE_URL` to the production origin (no trailing slash) so
 the sitemap, robots.txt, and OpenGraph URLs resolve to the real domain.
 
+**Deploying to production:** see [DEPLOY.md](DEPLOY.md) — the free, one-command
+path (Vercel) and a persistent-server alternative, plus how the committed DB and
+pre-warmed translations make it "just work".
+
 ## Data sources (all verified working)
 
 - **Knesset OData V4** — `https://knesset.gov.il/OdataV4/ParliamentInfo/` (no auth,

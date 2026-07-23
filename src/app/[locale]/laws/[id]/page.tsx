@@ -1,12 +1,11 @@
 import { notFound } from "next/navigation";
-import { after } from "next/server";
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { MemberAvatar } from "@/components/MemberCard";
 import { ReadingBadge } from "@/components/ReadingBadge";
 import { getBill, getBillVotes, getBillSponsors, personName } from "@/lib/queries";
 import { voteKind, type VoteKind } from "@/lib/votes-meta";
-import { localizeData, queueDataTranslations, resolveLocalized } from "@/lib/i18n-data";
+import { localizeData, resolveLocalized, localizePage } from "@/lib/i18n-data";
 import { localizedAttrs, rtlAttrs } from "@/lib/text";
 import { formatDate } from "@/lib/format";
 
@@ -57,11 +56,10 @@ export default async function BillPage({
 
   // Localize the Hebrew free-text (name + type + status) via the unified cache.
   const heStrings = [bill.nameHe, bill.subTypeDesc, bill.statusDesc];
-  const loc = localizeData(heStrings, locale);
-  const name = resolveLocalized(loc, bill.nameHe);
-  const subType = resolveLocalized(loc, bill.subTypeDesc);
-  const status = resolveLocalized(loc, bill.statusDesc);
-  if (locale !== "he") after(() => queueDataTranslations(heStrings, locale));
+  const { loc } = localizePage(heStrings, locale);
+  const name = loc(bill.nameHe);
+  const subType = loc(bill.subTypeDesc);
+  const status = loc(bill.statusDesc);
 
   // Group the bill's votes into milestone reading stages (chronological); the
   // rest (reservations, clause votes, …) are collapsed into a single count.

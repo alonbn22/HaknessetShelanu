@@ -1,10 +1,9 @@
-import { after } from "next/server";
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { GlobalSearch } from "@/components/GlobalSearch";
 import { searchAll } from "@/lib/queries";
 import { translateQueryToHebrew } from "@/lib/translate-query";
-import { localizeData, queueDataTranslations, resolveLocalized } from "@/lib/i18n-data";
+import { localizePage } from "@/lib/i18n-data";
 import { getGlossary, partyText } from "@/lib/content";
 
 export const dynamic = "force-dynamic";
@@ -46,9 +45,7 @@ export default async function SearchPage({
     ...r.bills.map((b) => b.nameHe),
     ...r.committees.map((c) => c.nameHe),
   ];
-  const map = localizeData(dataHe, locale);
-  if (locale !== "he") after(() => queueDataTranslations(dataHe, locale));
-  const loc = (he: string | null) => resolveLocalized(map, he);
+  const { loc } = localizePage(dataHe, locale);
 
   const total =
     r.members.length +

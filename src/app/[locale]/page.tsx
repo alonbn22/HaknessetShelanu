@@ -1,4 +1,3 @@
-import { after } from "next/server";
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Hemicycle, type HemiFaction } from "@/components/Hemicycle";
@@ -18,7 +17,7 @@ import {
   factionColor,
   factionName,
 } from "@/lib/queries";
-import { localizeData, queueDataTranslations, committeeLabel, resolveLocalized } from "@/lib/i18n-data";
+import { committeeLabel, localizePage } from "@/lib/i18n-data";
 import { getControversialLaws, getElectionOutlook, partyText } from "@/lib/content";
 import { isHebrew, rtlAttrs, localizedAttrs } from "@/lib/text";
 import { rtlLocales } from "@/i18n/routing";
@@ -33,11 +32,7 @@ export default async function HomePage() {
   const controversialLaws = getControversialLaws();
   const electionOutlook = getElectionOutlook();
   const latestVotes = getLatestVotes(6);
-  const latestTitles = localizeData(latestVotes.map((v) => v.titleHe), locale);
-  const latestTitleOf = (he: string | null) =>
-    (he && latestTitles.get(he.trim())) || { text: he ?? "", translated: false };
-  if (locale !== "he")
-    after(() => queueDataTranslations(latestVotes.map((v) => v.titleHe), locale));
+  const { loc: latestTitleOf } = localizePage(latestVotes.map((v) => v.titleHe), locale);
   const leaders = getParticipationLeaderboard("top", 5);
   const laggards = getParticipationLeaderboard("bottom", 5);
   const activeLegislators = getMostActiveLegislators(5);
@@ -45,9 +40,7 @@ export default async function HomePage() {
   // "This week in the Knesset": committee sittings scheduled over the next 7 days.
   const upcoming = getUpcomingMeetings(new Date().toISOString(), 7, 12);
   const upHe = upcoming.flatMap((m) => [m.committeeNameHe, m.typeDesc, m.location]);
-  const upCache = localizeData(upHe, locale);
-  const upLoc = (he: string | null) => resolveLocalized(upCache, he);
-  if (locale !== "he") after(() => queueDataTranslations(upHe, locale));
+  const { cache: upCache, loc: upLoc } = localizePage(upHe, locale);
 
   const coalitionSeats = factions
     .filter((f) => f.isCoalition)

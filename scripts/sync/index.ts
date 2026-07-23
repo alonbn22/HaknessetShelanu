@@ -33,15 +33,12 @@ import {
 } from "./votes";
 import { computeMkStats, computeMkAgreement } from "./stats";
 import { syncBills } from "./bills";
-import {
-  syncQueries,
-  syncAgendas,
-  syncGovMinistries,
-  syncCommittees,
-  syncCommitteeSessions,
-  syncCommitteeSessionDetails,
-  syncIsraelLaws,
-} from "./activity";
+import { syncQueries } from "./queries";
+import { syncAgendas } from "./agendas";
+import { syncGovMinistries } from "./ministries";
+import { syncCommittees } from "./committees";
+import { syncCommitteeSessions, syncCommitteeSessionDetails } from "./committee-sessions";
+import { syncIsraelLaws } from "./laws";
 import { syncBudget } from "./budget";
 import { syncLobbyists } from "./lobbyists";
 

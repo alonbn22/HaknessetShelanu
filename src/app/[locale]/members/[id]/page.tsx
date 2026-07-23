@@ -6,6 +6,8 @@ import { MemberAvatar } from "@/components/MemberCard";
 import { VoteResultBadge } from "@/components/VoteResultBadge";
 import { FeedbackActions } from "@/components/FeedbackActions";
 import { RecordSection } from "./RecordSection";
+import { MemberVoteStats } from "./MemberVoteStats";
+import { MemberActivity } from "./MemberActivity";
 import { formatDate } from "@/lib/format";
 import { govDuty, govMinistry } from "@/lib/gov-terms";
 import { getMemberRecord, memberRecordHeStrings, localizeMemberRecord } from "@/lib/content";
@@ -32,15 +34,9 @@ import {
   factionName,
   isServingMember,
 } from "@/lib/queries";
-import {
-  localizeData,
-  queueDataTranslations,
-  committeeLabel,
-  resolveLocalized,
-} from "@/lib/i18n-data";
+import { localizePage, committeeLabel } from "@/lib/i18n-data";
 import { localizedAttrs, rtlAttrs } from "@/lib/text";
 import { POSITION_FACTION_MEMBER, MK_POSITION_IDS } from "@/lib/constants";
-import { after } from "next/server";
 
 export const dynamic = "force-dynamic";
 
@@ -89,18 +85,12 @@ export default async function MemberPage({
   const mostAligned = getTopAgreements(personId, "top", 5);
   const leastAligned = getTopAgreements(personId, "bottom", 5);
   const recentVotes = getMemberRecentVotes(personId, 10);
-  const voteTitles = localizeData(recentVotes.map((r) => r.vote.titleHe), locale);
-  const voteTitleOf = (he: string | null) =>
-    (he && voteTitles.get(he.trim())) || { text: he ?? "", translated: false };
-  if (locale !== "he")
-    after(() => queueDataTranslations(recentVotes.map((r) => r.vote.titleHe), locale));
-  // Translate record claims on the fly (curated locale text wins, else the unified
-  // cache). Extraction + transform live in content.ts; localizeData + the after()
-  // queue stay here because they're request-scoped.
+  const { loc: voteTitleOf } = localizePage(recentVotes.map((r) => r.vote.titleHe), locale);
+  // Record claims: curated locale text wins, else the unified cache. Extraction +
+  // transform live in content.ts; the request-scoped localize stays here.
   const rawRecord = getMemberRecord(personId);
   const recordHe = locale === "he" ? [] : memberRecordHeStrings(rawRecord);
-  const recMap = localizeData(recordHe, locale);
-  if (recordHe.length) after(() => queueDataTranslations(recordHe, locale));
+  const { cache: recMap } = localizePage(recordHe, locale);
   const record = localizeMemberRecord(rawRecord, locale, recMap);
   const sponsoredBills = getMemberSponsoredBills(personId, 12);
   const sponsoredCount = getMemberSponsoredCount(personId);
@@ -113,20 +103,16 @@ export default async function MemberPage({
   const recentAgendas = getMemberRecentAgendas(personId, 6);
   const committees = getMemberCommittees(personId);
 
-  const factionRows = positions.filter(
-    (p) => p.positionId === POSITION_FACTION_MEMBER,
-  );
+  const factionRows = positions.filter((p) => p.positionId === POSITION_FACTION_MEMBER);
   const currentFaction = factionRows.find((p) => p.isCurrent);
   const roleRows = positions.filter(
-    (p) =>
-      !MK_POSITION_IDS.includes(p.positionId) &&
-      p.positionId !== POSITION_FACTION_MEMBER,
+    (p) => !MK_POSITION_IDS.includes(p.positionId) && p.positionId !== POSITION_FACTION_MEMBER,
   );
   const serving = isServingMember(positions);
 
   const bio = getMemberBio(personId);
-  // Career/positions are shown in the Roles section below (Knesset source), so the
-  // biography keeps only the background blocks: born, education, occupation, military.
+  // Career/positions render in the Roles section (Knesset source), so the biography
+  // keeps only the background blocks: born, education, occupation, military.
   const bioParts = bio
     ? [
         bio.birthPlaceHe,
@@ -136,9 +122,8 @@ export default async function MemberPage({
       ]
     : [];
 
-  // Translate the page's free-text Hebrew (biography facts, bill names, question
-  // subjects, committee long-tail, faction names) on the fly: resolve from the
-  // unified cache now, translate misses post-response.
+  // Resolve the page's free-text Hebrew from the unified cache now; translate
+  // misses post-response (localizePage owns the after() queue).
   const dataHe = [
     ...bioParts,
     ...sponsoredBills.map((b) => b.nameHe),
@@ -149,9 +134,7 @@ export default async function MemberPage({
     ...roleRows.map((p) => p.committeeNameHe),
     ...factionRows.map((p) => p.factionNameHe),
   ];
-  const dataMap = localizeData(dataHe, locale);
-  if (locale !== "he") after(() => queueDataTranslations(dataHe, locale));
-  const localOf = (he: string | null | undefined) => resolveLocalized(dataMap, he);
+  const { cache: dataMap, loc: localOf } = localizePage(dataHe, locale);
   // Localize a " · "-joined Hebrew list into per-item localized chunks.
   const localList = (joined: string | null) =>
     (joined ?? "")
@@ -178,11 +161,7 @@ export default async function MemberPage({
               href={`/parties/${currentFaction.factionId}`}
               className="text-accent hover:underline block"
             >
-              {factionName(
-                currentFaction.factionId,
-                currentFaction.factionNameHe ?? "",
-                locale,
-              )}
+              {factionName(currentFaction.factionId, currentFaction.factionNameHe ?? "", locale)}
               {" · "}
               {isCoalitionFaction(currentFaction.factionId)
                 ? t("common.coalition")
@@ -229,8 +208,7 @@ export default async function MemberPage({
         </div>
       </section>
 
-      {bio &&
-        (bio.dateOfBirth || bio.educationHe || bio.occupationsHe || bio.militaryHe) && (
+      {bio && (bio.dateOfBirth || bio.educationHe || bio.occupationsHe || bio.militaryHe) && (
         <section className="rounded-xl bg-white p-6 shadow-sm space-y-4">
           <h2 className="text-xl font-semibold">{t("member.bioTitle")}</h2>
           <dl className="grid gap-x-4 gap-y-2 text-sm sm:grid-cols-[max-content_1fr]">
@@ -289,126 +267,14 @@ export default async function MemberPage({
       )}
 
       {stats && stats.votesHeld > 0 && (
-        <section className="rounded-xl bg-white p-6 shadow-sm space-y-4">
-          <div className="flex items-center justify-between gap-3">
-            <h2 className="text-xl font-semibold">{t("member.voteStats")}</h2>
-            <Link
-              href={`/compare?a=${personId}`}
-              className="whitespace-nowrap text-sm text-accent hover:underline"
-            >
-              {t("compare.title")} →
-            </Link>
-          </div>
-          <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 text-center">
-            <div>
-              <div className="text-2xl font-bold text-accent">
-                {stats.participationPct}%
-              </div>
-              <div className="text-sm text-muted">{t("member.participated")}</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-green-700">{stats.votedFor}</div>
-              <div className="text-sm text-muted">{t("member.votesFor")}</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-red-700">
-                {stats.votedAgainst}
-              </div>
-              <div className="text-sm text-muted">{t("member.votesAgainst")}</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-yellow-700">
-                {stats.abstained}
-              </div>
-              <div className="text-sm text-muted">{t("member.abstained")}</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-muted">{stats.missed}</div>
-              <div className="text-sm text-muted">{t("member.missed")}</div>
-            </div>
-          </div>
-          <div className="space-y-1">
-            <div className="flex h-3 w-full overflow-hidden rounded-full" dir="ltr">
-              <div
-                className="bg-accent"
-                style={{ width: `${stats.participationPct}%` }}
-                title={`${t("member.participated")} ${stats.participationPct}%`}
-              />
-              <div
-                className="bg-black/15"
-                style={{ width: `${100 - stats.participationPct}%` }}
-                title={`${t("member.missed")} ${stats.missed}`}
-              />
-            </div>
-            <div className="flex justify-between text-xs text-muted">
-              <span>
-                {t("member.participated")}: {stats.participated.toLocaleString(locale)}
-              </span>
-              <span>
-                {t("member.missed")}: {stats.missed.toLocaleString(locale)}
-              </span>
-            </div>
-          </div>
-          <p className="text-sm text-muted">
-            {t("member.ofVotesHeld", { total: stats.votesHeld.toLocaleString(locale) })}
-          </p>
-          {discipline && (
-            <div className="rounded-lg bg-black/3 px-4 py-3">
-              <div className="flex items-baseline gap-2">
-                <span className="text-xl font-bold text-accent">{discipline.pct}%</span>
-                <span className="text-sm font-semibold">{t("member.partyLine")}</span>
-              </div>
-              <p className="mt-0.5 text-xs text-muted">
-                {t("member.partyLineDetail", {
-                  withParty: discipline.withParty.toLocaleString(locale),
-                  total: discipline.total.toLocaleString(locale),
-                })}
-              </p>
-              {/* The receipts: which votes broke with the faction majority. */}
-              {rebellions.length > 0 && (
-                <details className="group mt-2">
-                  <summary className="cursor-pointer list-none text-sm font-medium text-accent hover:underline [&::-webkit-details-marker]:hidden">
-                    <span aria-hidden className="select-none">
-                      <span className="group-open:hidden">+</span>
-                      <span className="hidden group-open:inline">&minus;</span>
-                    </span>{" "}
-                    {t("member.rebellions", { count: discipline.total - discipline.withParty })}
-                  </summary>
-                  <ul className="mt-2 divide-y divide-black/5">
-                    {rebellions.map((r) => {
-                      const rt = localOf(r.titleHe);
-                      return (
-                        <li key={r.voteId} className="space-y-1 py-2 text-sm">
-                          <Link
-                            href={`/votes/${r.voteId}`}
-                            className="hover:underline"
-                            {...localizedAttrs(rt)}
-                          >
-                            {rt.text}
-                          </Link>
-                          <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted">
-                            <span className="whitespace-nowrap">{formatDate(r.dateTime, locale)}</span>
-                            <span className="flex items-center gap-1">
-                              {t("member.mkVoted")} <VoteResultBadge code={r.mkCode} />
-                            </span>
-                            <span className="flex items-center gap-1">
-                              {t("member.factionVoted")} <VoteResultBadge code={r.factionCode} />
-                            </span>
-                          </div>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                  {discipline.total - discipline.withParty > rebellions.length && (
-                    <p className="mt-1 text-xs text-muted">
-                      {t("member.rebellionsShowing", { shown: rebellions.length })}
-                    </p>
-                  )}
-                </details>
-              )}
-            </div>
-          )}
-        </section>
+        <MemberVoteStats
+          personId={personId}
+          stats={stats}
+          discipline={discipline}
+          rebellions={rebellions}
+          locale={locale}
+          localOf={localOf}
+        />
       )}
 
       {(mostAligned.length > 0 || leastAligned.length > 0) && (
@@ -448,9 +314,7 @@ export default async function MemberPage({
         </section>
       )}
 
-      {record && record.claims.length > 0 && (
-        <RecordSection record={record} locale={locale} />
-      )}
+      {record && record.claims.length > 0 && <RecordSection record={record} locale={locale} />}
 
       {sponsoredCount > 0 && (
         <section className="rounded-xl bg-white p-6 shadow-sm space-y-3">
@@ -464,11 +328,7 @@ export default async function MemberPage({
             {sponsoredBills.map((b) => {
               const bt = localOf(b.nameHe);
               return (
-                <li
-                  key={b.id}
-                  className="text-sm"
-                  {...localizedAttrs(bt)}
-                >
+                <li key={b.id} className="text-sm" {...localizedAttrs(bt)}>
                   <Link href={`/laws/${b.id}`} className="text-accent hover:underline">
                     {bt.text}
                   </Link>
@@ -480,87 +340,17 @@ export default async function MemberPage({
       )}
 
       {(questionCount > 0 || agendaCount > 0) && (
-        <section className="rounded-xl bg-white p-6 shadow-sm space-y-4">
-          <h2 className="text-xl font-semibold">{t("member.activity")}</h2>
-          <div className="grid grid-cols-3 gap-4 text-center">
-            <div>
-              <div className="text-2xl font-bold text-accent">{sponsoredCount}</div>
-              <div className="text-sm text-muted">{t("member.billsProposed")}</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-accent">{questionCount}</div>
-              <div className="text-sm text-muted">{t("member.questions")}</div>
-            </div>
-            <div>
-              <div className="text-2xl font-bold text-accent">{agendaCount}</div>
-              <div className="text-sm text-muted">{t("member.agendaMotions")}</div>
-            </div>
-          </div>
-          {/* Question accountability: answered rate + ministry response time,
-              straight from the official submit/reply dates. */}
-          {questionStats && (
-            <p className="text-center text-sm text-muted">
-              {t("member.questionsAnswered", {
-                answered: questionStats.answered,
-                total: questionStats.total,
-              })}
-              {questionStats.avgResponseDays != null && (
-                <> · {t("member.avgResponse", { days: questionStats.avgResponseDays })}</>
-              )}
-            </p>
-          )}
-          {recentQuestions.length > 0 && (
-            <ul className="divide-y divide-black/5 pt-2">
-              {recentQuestions.map((q) => {
-                const qt = localOf(q.nameHe);
-                const ministryHe = q.govMinistryId != null ? ministryNames.get(q.govMinistryId) : undefined;
-                const ministry = ministryHe ? govMinistry(ministryHe, locale) : null;
-                return (
-                  <li key={q.id} className="flex items-start gap-2 py-2 text-sm">
-                    <span className="min-w-0 flex-1" {...localizedAttrs(qt)}>
-                      {qt.text}
-                      {ministry && (
-                        <span
-                          className="ms-2 whitespace-nowrap rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-muted"
-                          dir={ministry.rtl ? "rtl" : undefined}
-                          lang={ministry.rtl ? "he" : undefined}
-                        >
-                          {ministry.text}
-                        </span>
-                      )}
-                    </span>
-                    <span
-                      className={`shrink-0 rounded-full px-2 py-0.5 text-[11px] font-medium ${
-                        q.replyDate
-                          ? "bg-green-100 text-green-800"
-                          : "bg-amber-100 text-amber-800"
-                      }`}
-                    >
-                      {q.replyDate ? t("member.answered") : t("member.unanswered")}
-                    </span>
-                  </li>
-                );
-              })}
-            </ul>
-          )}
-          {recentAgendas.length > 0 && (
-            <div className="pt-2">
-              <h3 className="mb-1 text-sm font-semibold text-muted">
-                {t("member.agendaMotions")}
-              </h3>
-              <ul className="divide-y divide-black/5">
-                {recentAgendas.map((a) => {
-                  const at = localOf(a.nameHe);
-                  return (
-                    <li key={a.id} className="py-2 text-sm" {...localizedAttrs(at)}>
-                      {at.text}
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          )}
-        </section>
+        <MemberActivity
+          sponsoredCount={sponsoredCount}
+          questionCount={questionCount}
+          agendaCount={agendaCount}
+          questionStats={questionStats}
+          recentQuestions={recentQuestions}
+          recentAgendas={recentAgendas}
+          ministryNames={ministryNames}
+          locale={locale}
+          localOf={localOf}
+        />
       )}
 
       {committees.length > 0 && (
@@ -621,11 +411,10 @@ export default async function MemberPage({
           <h2 className="text-xl font-semibold">{t("member.factionHistory")}</h2>
           <ul className="space-y-2">
             {factionRows.map((p) => {
-              // Curated faction metadata first; fall back to the unified cache for
-              // an uncurated or null-id faction so non-he users don't see raw Hebrew.
+              // Curated faction metadata first; fall back to the unified cache for an
+              // uncurated or null-id faction so non-he users don't see raw Hebrew.
               const fhe = (p.factionNameHe ?? "").trim();
-              const curated =
-                p.factionId != null ? factionName(p.factionId, fhe, locale) : null;
+              const curated = p.factionId != null ? factionName(p.factionId, fhe, locale) : null;
               const fl =
                 locale === "he"
                   ? { text: curated ?? fhe, rtl: true }
@@ -633,19 +422,16 @@ export default async function MemberPage({
                     ? { text: curated, rtl: false }
                     : localOf(fhe);
               return (
-              <li key={p.id} className="flex flex-wrap gap-x-2 text-sm">
-                <span
-                  className={p.isCurrent ? "font-medium" : "text-muted"}
-                  {...localizedAttrs(fl)}
-                >
-                  {fl.text}
-                </span>
-                <span className="text-muted">
-                  {formatDate(p.startDate, locale)}
-                  {" – "}
-                  {p.finishDate ? formatDate(p.finishDate, locale) : ""}
-                </span>
-              </li>
+                <li key={p.id} className="flex flex-wrap gap-x-2 text-sm">
+                  <span className={p.isCurrent ? "font-medium" : "text-muted"} {...localizedAttrs(fl)}>
+                    {fl.text}
+                  </span>
+                  <span className="text-muted">
+                    {formatDate(p.startDate, locale)}
+                    {" – "}
+                    {p.finishDate ? formatDate(p.finishDate, locale) : ""}
+                  </span>
+                </li>
               );
             })}
           </ul>
@@ -659,20 +445,20 @@ export default async function MemberPage({
             {recentVotes.map(({ vote, resultCode }) => {
               const vt = voteTitleOf(vote.titleHe);
               return (
-              <li key={vote.id} className="py-2 flex items-center gap-3">
-                <span className="text-sm text-muted whitespace-nowrap">
-                  {formatDate(vote.dateTime, locale)}
-                </span>
-                <Link
-                  href={`/votes/${vote.id}`}
-                  className="flex-1 min-w-0 truncate hover:underline text-sm"
-                  dir={vt.translated ? undefined : "rtl"}
-                  lang={vt.translated ? locale : "he"}
-                >
-                  {vt.text}
-                </Link>
-                <VoteResultBadge code={resultCode} />
-              </li>
+                <li key={vote.id} className="py-2 flex items-center gap-3">
+                  <span className="text-sm text-muted whitespace-nowrap">
+                    {formatDate(vote.dateTime, locale)}
+                  </span>
+                  <Link
+                    href={`/votes/${vote.id}`}
+                    className="flex-1 min-w-0 truncate hover:underline text-sm"
+                    dir={vt.translated ? undefined : "rtl"}
+                    lang={vt.translated ? locale : "he"}
+                  >
+                    {vt.text}
+                  </Link>
+                  <VoteResultBadge code={resultCode} />
+                </li>
               );
             })}
           </ul>

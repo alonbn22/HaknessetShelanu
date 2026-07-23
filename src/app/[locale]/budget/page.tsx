@@ -1,4 +1,3 @@
-import { after } from "next/server";
 import { getTranslations, getLocale } from "next-intl/server";
 import { Pagination } from "@/components/Pagination";
 import { BudgetFilters } from "./BudgetFilters";
@@ -14,7 +13,8 @@ import {
 } from "@/lib/queries";
 import { getBudgetOutlook, partyText } from "@/lib/content";
 import { translateQueryToHebrew } from "@/lib/translate-query";
-import { localizeData, queueDataTranslations, resolveLocalized } from "@/lib/i18n-data";
+import { localizePage } from "@/lib/i18n-data";
+import { pageParam } from "@/lib/params";
 import { localizedAttrs } from "@/lib/text";
 
 export const dynamic = "force-dynamic";
@@ -47,7 +47,7 @@ export default async function BudgetPage({
   const currentKnesset = getCurrentKnessetBudget();
   const outlook = getBudgetOutlook();
 
-  const page = Math.max(1, parseInt(params.page ?? "1", 10) || 1);
+  const page = pageParam(params.page);
   const sectionFilter = params.section ? parseInt(params.section, 10) : undefined;
   const sort = (["amount", "name", "code"].includes(params.sort ?? "")
     ? params.sort
@@ -69,9 +69,7 @@ export default async function BudgetPage({
     ...sections.map((s) => s.nameHe),
     ...items.flatMap((l) => [l.takanaNameHe, l.programNameHe, l.sectionNameHe]),
   ];
-  const nameMap = localizeData(shownNames, locale);
-  const ln = (he: string | null | undefined) => resolveLocalized(nameMap, he);
-  if (locale !== "he") after(() => queueDataTranslations(shownNames, locale));
+  const { loc: ln } = localizePage(shownNames, locale);
 
   // Amounts are in NIS thousands. Auto-scale: ≥1,000B → trillions, ≥1B → billions,
   // else millions. (1,000 billion = 1 trillion.)

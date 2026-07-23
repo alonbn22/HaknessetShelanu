@@ -7,6 +7,7 @@
 // Sourced to the linked Wikidata entity (shown + linked on the member page).
 import { sql } from "drizzle-orm";
 import { getDb, schema } from "../../src/db";
+import { fetchRetry } from "./odata";
 
 const USER_AGENT =
   "HaKnessetSheli/1.0 (https://github.com/alonbn22/HaKnessetSheli; civic transparency site)";
@@ -17,11 +18,12 @@ type Career = { title: string; start: string | null; end: string | null };
 
 async function runSparql(query: string): Promise<Record<string, { value: string }>[]> {
   const url = `${ENDPOINT}?format=json&query=${encodeURIComponent(query)}`;
-  const res = await fetch(url, {
-    headers: { "User-Agent": USER_AGENT, Accept: "application/sparql-results+json" },
-    signal: AbortSignal.timeout(120_000),
-  });
-  if (!res.ok) throw new Error(`Wikidata SPARQL HTTP ${res.status}`);
+  // Retry/backoff so a transient Wikidata blip doesn't abort the bio sync.
+  const res = await fetchRetry(
+    url,
+    { headers: { "User-Agent": USER_AGENT, Accept: "application/sparql-results+json" } },
+    { timeoutMs: 120_000 },
+  );
   const data = (await res.json()) as { results: { bindings: Record<string, { value: string }>[] } };
   return data.results.bindings;
 }

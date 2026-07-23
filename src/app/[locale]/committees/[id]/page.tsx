@@ -1,5 +1,4 @@
 import { notFound } from "next/navigation";
-import { after } from "next/server";
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { MemberAvatar } from "@/components/MemberCard";
@@ -15,8 +14,7 @@ import { govDuty } from "@/lib/gov-terms";
 import {
   localizeData,
   committeeLabel,
-  queueDataTranslations,
-  resolveLocalized,
+  localizePage,
 } from "@/lib/i18n-data";
 import { localizedAttrs, rtlAttrs } from "@/lib/text";
 import { formatDateTime } from "@/lib/format";
@@ -69,9 +67,7 @@ export default async function CommitteePage({
       ...(detail.docs.get(s.id) ?? []).map((d) => d.groupTypeDesc),
     ]),
   ];
-  const cache = localizeData(heStrings, locale);
-  if (locale !== "he") after(() => queueDataTranslations(heStrings, locale));
-  const loc = (he: string | null) => resolveLocalized(cache, he);
+  const { cache, loc } = localizePage(heStrings, locale);
 
   // The compact meeting row (date · type · location · item count · links).
   // Shared between plain rows and the <summary> of expandable meetings.

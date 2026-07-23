@@ -5,8 +5,8 @@ import { LobbyistSearch } from "./LobbyistSearch";
 import { getLobbyistStats, getLobbyistsPage, type LobbyistSort } from "@/lib/queries";
 import { getForeignAid, partyText } from "@/lib/content";
 import { translateQueryToHebrew } from "@/lib/translate-query";
-import { localizeData, queueDataTranslations } from "@/lib/i18n-data";
-import { after } from "next/server";
+import { localizePage } from "@/lib/i18n-data";
+import { pageParam } from "@/lib/params";
 
 export const dynamic = "force-dynamic";
 
@@ -18,7 +18,7 @@ export default async function LobbyistsPage({
   const t = await getTranslations("lobbyists");
   const locale = await getLocale();
   const params = await searchParams;
-  const page = Math.max(1, parseInt(params.page ?? "1", 10) || 1);
+  const page = pageParam(params.page);
   const sort: LobbyistSort = (["name", "firm", "clients"] as const).includes(
     params.sort as LobbyistSort,
   )
@@ -34,8 +34,7 @@ export default async function LobbyistsPage({
   // Permit type ("permanent"/"temporary lobbyist") is a small enum → translate on
   // the fly. Personal/firm/client names are proper nouns and intentionally stay Hebrew.
   const permitTypes = items.map((l) => l.permitType);
-  const permitMap = localizeData(permitTypes, locale);
-  if (locale !== "he") after(() => queueDataTranslations(permitTypes, locale));
+  const { cache: permitMap } = localizePage(permitTypes, locale);
   const permitOf = (he: string | null) => (he && permitMap.get(he.trim())) || null;
 
   const nf = new Intl.NumberFormat(locale);

@@ -1,8 +1,7 @@
-import { after } from "next/server";
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { getCurrentCommittees, getCommitteeMeetingCounts } from "@/lib/queries";
-import { localizeData, committeeLabel, queueDataTranslations } from "@/lib/i18n-data";
+import { localizePage, committeeLabel } from "@/lib/i18n-data";
 
 export const dynamic = "force-dynamic";
 
@@ -16,9 +15,7 @@ export default async function CommitteesPage() {
   const sorted = [...committees].sort(
     (a, b) => (counts.get(b.id) ?? 0) - (counts.get(a.id) ?? 0),
   );
-  const cache = localizeData(committees.map((c) => c.nameHe), locale);
-  if (locale !== "he")
-    after(() => queueDataTranslations(committees.map((c) => c.nameHe), locale));
+  const { cache } = localizePage(committees.map((c) => c.nameHe), locale);
 
   return (
     <div className="space-y-6">

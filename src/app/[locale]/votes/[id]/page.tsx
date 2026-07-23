@@ -1,5 +1,4 @@
 import { notFound } from "next/navigation";
-import { after } from "next/server";
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { MemberAvatar } from "@/components/MemberAvatar";
@@ -17,7 +16,7 @@ import {
   factionName,
   factionColor,
 } from "@/lib/queries";
-import { localizeData, queueDataTranslations, resolveLocalized, type Localized } from "@/lib/i18n-data";
+import { localizeData, localizePage, resolveLocalized, type Localized } from "@/lib/i18n-data";
 import { localizedAttrs, rtlAttrs, isHebrew } from "@/lib/text";
 import { VOTE_FOR, VOTE_AGAINST, VOTE_ABSTAIN } from "@/lib/constants";
 
@@ -66,9 +65,7 @@ export default async function VotePage({
     bill?.subTypeDesc,
     ...results.map((r) => r.factionNameHe),
   ];
-  const dataMap = localizeData(dataHe, locale);
-  if (locale !== "he") after(() => queueDataTranslations(dataHe, locale));
-  const localOf = (he: string | null | undefined) => resolveLocalized(dataMap, he);
+  const { loc: localOf } = localizePage(dataHe, locale);
   const title = localOf(vote.titleHe);
   const itemName = localOf(vote.itemName);
   const subType = localOf(bill?.subTypeDesc);

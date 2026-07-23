@@ -73,9 +73,6 @@ Ordered roughly by value/effort. Grounded in tables that already exist unless no
   server `localizePage(heStrings, locale)` helper (the `localizeData` +
   `after(queueDataTranslations)` pair + three ad-hoc `titleOf` closures repeat
   across ~13 pages). Pure maintainability; deferred to avoid churn mid-review.
-- [ ] **Nonce-based CSP** — baseline security headers ship (nosniff, Referrer-
-  Policy, X-Frame-Options, Permissions-Policy in `next.config.ts`); a real CSP
-  needs nonces because the pre-paint theme script is inline (a middleware change).
 - [ ] **Orphaned message keys** — ~27 keys look unreferenced after excluding the
   dynamic `t(\`ns.${x}\`)` families; prune carefully (a wrongly-removed dynamic key
   fails silently at runtime, so verify each before deleting).
@@ -84,6 +81,14 @@ Ordered roughly by value/effort. Grounded in tables that already exist unless no
   that editorial YAML gets. **Not a live vuln** — React 19 sanitizes `javascript:`
   hrefs unconditionally — so this is optional consistency + upgrading the one
   remaining `http:` broadcast URL to https at sync time.
+- [ ] **Workflow binary-rebase handling** — the DB-commit runbook says to
+  `git reset --hard origin/master` and redo when the sync bot lands first (never
+  rebase a binary). Encode that as a documented step/helper so a DB push that
+  races the bot recovers deterministically.
+- [ ] **Batch-translation API upgrade** (needs a maintainer OK) — swap the
+  unofficial per-string `gtx` calls for the official batched Cloud Translation
+  API behind the lazy data-translation cache: fewer round-trips, a supported
+  endpoint. Needs a billing account, hence the sign-off.
 
 ## Untapped API data — what more we could build
 
@@ -155,6 +160,10 @@ socio-economic indices by municipality (data.gov.il) for context.
 
 ## Done (recent)
 
+- **Nonce-based CSP + hardened headers**: a real Content-Security-Policy set per
+  request in the middleware (`script-src 'strict-dynamic'` + a fresh nonce, so only
+  first-party scripts run), plus HSTS and a `tests/security/headers.test.ts` that
+  locks the posture in. Every route renders dynamically to carry the nonce.
 - **Full review + hardening pass** (51-agent adversarial review, verified findings):
   - *Sync correctness:* incremental vote-header fetch now gates on `VoteDateTime`
     so a retro-edited pre-K25 vote can't be mislabeled current-Knesset;

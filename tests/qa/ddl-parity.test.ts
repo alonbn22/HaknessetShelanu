@@ -14,7 +14,10 @@ import { schema } from "../../src/db";
 // DB and compares the real columns against what drizzle declares.
 
 const SYNC_DIR = path.join(process.cwd(), "scripts", "sync");
-const SYNC_FILES = ["activity.ts", "votes.ts", "stats.ts", "budget.ts", "lobbyists.ts", "biography.ts"];
+const SYNC_FILES = [
+  "committee-sessions.ts", "ministries.ts", "laws.ts",
+  "votes.ts", "stats.ts", "budget.ts", "lobbyists.ts", "biography.ts",
+];
 
 // table name -> the drizzle schema object it must match.
 const TABLES: Record<string, unknown> = {
@@ -30,6 +33,7 @@ const TABLES: Record<string, unknown> = {
   lobbyists: schema.lobbyists,
   lobbyist_clients: schema.lobbyistClients,
   person_bio: schema.personBio,
+  israel_laws: schema.israelLaws,
 };
 
 // Pull every `CREATE TABLE IF NOT EXISTS <name> ( ... )` out of the sync source,

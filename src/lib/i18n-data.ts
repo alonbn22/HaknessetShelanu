@@ -7,6 +7,7 @@
 // Server-only (DB + network). Enumerated UI terms (ministries, duties, vote
 // types) stay in gov-terms.ts; this handles free-text names.
 
+import { after } from "next/server";
 import { and, inArray, isNotNull, sql } from "drizzle-orm";
 import { getDb, schema } from "@/db";
 import { govCommittee } from "./gov-terms";
@@ -47,6 +48,17 @@ export function localizeData(
     map.set(he, tr ? { text: tr, translated: true, rtl: RTL.test(tr) } : hebrew(he));
   }
   return map;
+}
+
+// Per-page convenience: build the localized cache for a page's Hebrew strings and
+// schedule the lazy translation of any misses after the response. Returns the
+// cache plus a bound resolver `loc(he)`. Collapses the localizeData +
+// after(queueDataTranslations) boilerplate the list pages all repeated.
+export function localizePage(heList: (string | null | undefined)[], locale: string) {
+  const cache = localizeData(heList, locale);
+  if (locale !== "he") after(() => queueDataTranslations(heList, locale));
+  const loc = (he: string | null | undefined) => resolveLocalized(cache, he);
+  return { cache, loc };
 }
 
 // Resolve one Hebrew string against a localizeData() map (the common per-page

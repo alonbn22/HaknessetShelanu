@@ -1,8 +1,8 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { useState } from "react";
 import { useQueryFilter } from "@/lib/use-query-filter";
+import { SearchInput } from "@/components/SearchInput";
 
 export function MemberFilters({
   factions,
@@ -10,22 +10,11 @@ export function MemberFilters({
   factions: { id: number; name: string }[];
 }) {
   const t = useTranslations();
-  const { searchParams, setParam, setParamDebounced } = useQueryFilter();
-  const [q, setQ] = useState(searchParams.get("q") ?? "");
+  const { searchParams, setParam } = useQueryFilter();
 
   return (
     <div className="flex flex-wrap gap-3">
-      <input
-        type="search"
-        value={q}
-        onChange={(e) => {
-          setQ(e.target.value);
-          setParamDebounced("q", e.target.value);
-        }}
-        placeholder={t("members.searchPlaceholder")}
-        aria-label={t("members.searchPlaceholder")}
-        className="rounded-lg border border-black/15 bg-white px-3 py-2 text-sm w-full sm:w-64"
-      />
+      <SearchInput placeholder={t("members.searchPlaceholder")} className="w-full sm:w-64" />
       <select
         value={searchParams.get("faction") ?? ""}
         onChange={(e) => setParam("faction", e.target.value)}

@@ -1,11 +1,11 @@
-import { after } from "next/server";
 import { getTranslations, getLocale } from "next-intl/server";
 import { VoteCard } from "@/components/VoteCard";
 import { Pagination } from "@/components/Pagination";
 import { LawFilters } from "./LawFilters";
 import { getLawVotesPage, type LawStatus } from "@/lib/queries";
 import { translateQueryToHebrew } from "@/lib/translate-query";
-import { localizeData, queueDataTranslations } from "@/lib/i18n-data";
+import { localizePage } from "@/lib/i18n-data";
+import { pageParam } from "@/lib/params";
 
 export const dynamic = "force-dynamic";
 
@@ -19,7 +19,7 @@ export default async function LawsPage({
   const t = await getTranslations("votes");
   const locale = await getLocale();
   const params = await searchParams;
-  const page = Math.max(1, parseInt(params.page ?? "1", 10) || 1);
+  const page = pageParam(params.page);
   const status = (STATUSES.includes(params.status as LawStatus)
     ? params.status
     : "all") as LawStatus;
@@ -33,12 +33,7 @@ export default async function LawsPage({
     locale,
   });
 
-  const titles = localizeData(items.map((v) => v.titleHe), locale);
-  const titleOf = (he: string | null) =>
-    (he && titles.get(he.trim())) || { text: he ?? "", translated: false };
-
-  // Lazy-translate the bill titles shown here (active locale) after the response.
-  if (locale !== "he") after(() => queueDataTranslations(items.map((v) => v.titleHe), locale));
+  const { loc: titleOf } = localizePage(items.map((v) => v.titleHe), locale);
 
   const query: Record<string, string> = {};
   if (params.q) query.q = params.q;

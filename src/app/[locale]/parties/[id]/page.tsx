@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { getTranslations, getLocale } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import { MemberCard } from "@/components/MemberCard";
 import { SpectrumBar } from "@/components/SpectrumBar";
 import { FeedbackActions } from "@/components/FeedbackActions";
@@ -7,6 +8,7 @@ import { PartyEmblem } from "@/components/PartyEmblem";
 import {
   isCoalitionFaction,
   getPartyProfile,
+  getElectionOutlook,
   partyText,
   partyList,
 } from "@/lib/content";
@@ -53,6 +55,15 @@ export default async function PartyPage({
   const isCoalition = isCoalitionFaction(factionId);
   const profile = getPartyProfile(factionId);
   const positions = partyList(profile?.positions, locale);
+  // Link the leader to their member page, but only when the election outlook holds
+  // a *verified* leaderPersonId for this faction whose Hebrew name matches the
+  // profile's — so a leadership change never points us at the wrong person.
+  const electionParty = getElectionOutlook()?.parties.find((p) => p.factionId === factionId);
+  const leaderPersonId =
+    electionParty?.leaderPersonId != null &&
+    electionParty.leader?.he?.trim() === profile?.leaderHe?.trim()
+      ? electionParty.leaderPersonId
+      : null;
 
   return (
     <div className="space-y-6">
@@ -117,7 +128,15 @@ export default async function PartyPage({
           {profile?.leaderHe && (
             <div>
               <div className="text-2xl font-bold text-accent">
-                {locale === "he" ? profile.leaderHe : profile.leaderEn ?? profile.leaderHe}
+                {leaderPersonId != null ? (
+                  <Link href={`/members/${leaderPersonId}`} className="hover:underline">
+                    {locale === "he" ? profile.leaderHe : profile.leaderEn ?? profile.leaderHe}
+                  </Link>
+                ) : locale === "he" ? (
+                  profile.leaderHe
+                ) : (
+                  profile.leaderEn ?? profile.leaderHe
+                )}
               </div>
               <div className="text-sm text-muted">{t("party.leader")}</div>
             </div>

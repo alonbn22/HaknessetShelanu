@@ -106,23 +106,34 @@ export async function syncCommitteeSessionDetails(sinceDays: number | null = 120
   console.log(`Syncing committee agendas + documents for ${ids.length} meetings…`);
   let items = 0;
   let docs = 0;
+  let skipped = 0;
   for (let i = 0; i < ids.length; i += 50) {
     const inList = `(${ids.slice(i, i + 50).join(",")})`;
-    const [itemRows, docRows] = await Promise.all([
-      fetchAll<Row>(
-        entityUrl("KNS_CmtSessionItem", {
-          $filter: `CommitteeSessionID in ${inList}`,
-          $select: "Id,CommitteeSessionID,Ordinal,Name,ItemTypeID,LastUpdatedDate",
-        }),
-      ),
-      fetchAll<Row>(
-        entityUrl("KNS_DocumentCommitteeSession", {
-          $filter: `CommitteeSessionID in ${inList}`,
-          $select:
-            "Id,CommitteeSessionID,GroupTypeID,GroupTypeDesc,DocumentName,ApplicationDesc,FilePath,LastUpdatedDate",
-        }),
-      ),
-    ]);
+    let itemRows: Row[];
+    let docRows: Row[];
+    try {
+      [itemRows, docRows] = await Promise.all([
+        fetchAll<Row>(
+          entityUrl("KNS_CmtSessionItem", {
+            $filter: `CommitteeSessionID in ${inList}`,
+            $select: "Id,CommitteeSessionID,Ordinal,Name,ItemTypeID,LastUpdatedDate",
+          }),
+        ),
+        fetchAll<Row>(
+          entityUrl("KNS_DocumentCommitteeSession", {
+            $filter: `CommitteeSessionID in ${inList}`,
+            $select:
+              "Id,CommitteeSessionID,GroupTypeID,GroupTypeDesc,DocumentName,ApplicationDesc,FilePath,LastUpdatedDate",
+          }),
+        ),
+      ]);
+    } catch (err) {
+      // The API 500s persistently on some historical id ranges — one flaky
+      // batch must not abort the section. Skip it; the next run retries it.
+      skipped++;
+      console.warn(`  skipping batch at ${i} (50 meetings): ${err}`);
+      continue;
+    }
 
     for (const row of itemRows) {
       const values = {
@@ -156,5 +167,8 @@ export async function syncCommitteeSessionDetails(sinceDays: number | null = 120
     }
     if (i > 0 && i % 2000 === 0) console.log(`  …${i}/${ids.length} meetings`);
   }
-  console.log(`  ${items} agenda items, ${docs} committee documents`);
+  console.log(
+    `  ${items} agenda items, ${docs} committee documents` +
+      (skipped ? ` (${skipped} batches skipped — retried next run)` : ""),
+  );
 }

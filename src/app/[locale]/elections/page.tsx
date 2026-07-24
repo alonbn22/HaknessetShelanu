@@ -228,6 +228,13 @@ export default async function ElectionsHistoryPage() {
                         {ts(profile.spectrum)}
                       </span>
                     )}
+                    {/* New lists aren't sitting factions — say so instead of
+                        silently omitting the party-page link. */}
+                    {p.factionId == null && (
+                      <span className="inline-block rounded-full bg-black/5 px-2 py-0.5 text-xs font-medium text-muted">
+                        {te("newList")}
+                      </span>
+                    )}
                     {positions.length > 0 && (
                       <ul className="list-disc space-y-0.5 ps-4 text-xs leading-relaxed text-foreground/75">
                         {positions.map((pos, i) => (

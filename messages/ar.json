@@ -365,7 +365,8 @@
     "lastReviewed": "آخر مراجعة: {date}",
     "homeTitle": "انتخابات 2026",
     "homeCta": "كل المعلومات عن الانتخابات المقبلة",
-    "morePartyInfo": "المزيد عن الحزب"
+    "morePartyInfo": "المزيد عن الحزب",
+    "newList": "قائمة جديدة — غير ممثلة في الكنيست بعد"
   },
   "electionsHistory": {
     "title": "تاريخ انتخابات الكنيست",

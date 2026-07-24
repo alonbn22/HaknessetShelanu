@@ -365,7 +365,8 @@
     "lastReviewed": "Last reviewed: {date}",
     "homeTitle": "2026 election",
     "homeCta": "Everything about the upcoming election",
-    "morePartyInfo": "More about the party"
+    "morePartyInfo": "More about the party",
+    "newList": "New list — not yet in the Knesset"
   },
   "electionsHistory": {
     "title": "Knesset Elections History",

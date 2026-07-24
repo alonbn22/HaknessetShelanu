@@ -172,12 +172,15 @@ parties:
   - name: { he: "ביחד (בנט 2026 – יש עתיד)", en: "Together (Bennett 2026 – Yesh Atid)" }
     leader: { he: "נפתלי בנט", en: "Naftali Bennett" }
     note:
-      he: "רשימה משותפת של בנט 2026 ויש עתיד בראשות יאיר לפיד, שהוכרזה ב-26 באפריל 2026; בנט עומד בראשה כמועמד לראשות הממשלה."
-      en: "A joint list of Bennett 2026 and Yair Lapid's Yesh Atid, announced April 26, 2026, with Bennett heading the slate as its candidate for prime minister."
+      he: "רשימה משותפת של בנט 2026 ויש עתיד בראשות יאיר לפיד, שהוכרזה ב-26 באפריל 2026; בנט עומד בראשה כמועמד לראשות הממשלה. בנט כיהן כראש הממשלה ה-13 של ישראל (2021–2022), ולפני כן עמד בראש ימינה והבית היהודי וכיהן כשר הביטחון, שר החינוך ושר הכלכלה."
+      en: "A joint list of Bennett 2026 and Yair Lapid's Yesh Atid, announced April 26, 2026, with Bennett heading the slate as its candidate for prime minister. Bennett served as Israel's 13th prime minister (2021–2022); he previously led Yamina and the Jewish Home and served as defense, education and economy minister."
     sources:
       - url: "https://www.timesofisrael.com/naftali-bennett-and-yair-lapid-announce-united-run-under-bennett-in-2026-elections/"
         title: "Naftali Bennett and Yair Lapid announce united run under Bennett"
         publisher: "The Times of Israel"
+      - url: "https://en.wikipedia.org/wiki/Naftali_Bennett"
+        title: "Naftali Bennett (Wikipedia)"
+        publisher: "Wikipedia"
   - name: { he: "ישר", en: "Yashar" }
     leader: { he: "גדי איזנקוט", en: "Gadi Eisenkot" }
     leaderPersonId: 30836

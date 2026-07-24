@@ -1857,6 +1857,7 @@ export type SearchResults = {
   laws: { id: number; nameHe: string | null }[];
   bills: { id: number; nameHe: string | null }[];
   committees: { id: number; nameHe: string | null }[];
+  committeeDocs: { id: number; nameHe: string | null; filePath: string | null; committeeId: number | null }[];
   lobbyists: { id: number; name: string; rtl: boolean }[];
   // Groups that hit SEARCH_LIMIT (more rows exist) — the page shows a
   // "showing top N, refine your search" hint for these.
@@ -1910,6 +1911,7 @@ export function searchAll(query: string, searchHe: string, locale: string): Sear
       laws: [],
       bills: [],
       committees: [],
+      committeeDocs: [],
       lobbyists: [],
       hasMore: {},
     };
@@ -2056,5 +2058,32 @@ export function searchAll(query: string, searchHe: string, locale: string): Sear
     return { id: l.id, name, rtl: isHebrew(name) };
   });
 
-  return { members, parties, votes, laws, bills, committees, lobbyists, hasMore };
+  // Committee documents (position papers, bill drafts, decisions). try/catch so a
+  // pre-agendas DB still searches. Joined to the session for the committee id.
+  const committeeDocs = cap(
+    "committeeDocs",
+    (() => {
+      try {
+        return db
+          .select({
+            id: schema.committeeSessionDocs.id,
+            nameHe: schema.committeeSessionDocs.nameHe,
+            filePath: schema.committeeSessionDocs.filePath,
+            committeeId: schema.committeeSessions.committeeId,
+          })
+          .from(schema.committeeSessionDocs)
+          .innerJoin(
+            schema.committeeSessions,
+            eq(schema.committeeSessions.id, schema.committeeSessionDocs.sessionId),
+          )
+          .where(likeHe(schema.committeeSessionDocs.nameHe))
+          .limit(OVER)
+          .all();
+      } catch {
+        return [];
+      }
+    })(),
+  );
+
+  return { members, parties, votes, laws, bills, committees, committeeDocs, lobbyists, hasMore };
 }

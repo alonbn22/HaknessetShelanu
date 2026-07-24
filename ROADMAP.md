@@ -42,9 +42,6 @@ Ordered roughly by value/effort. Grounded in tables that already exist unless no
   vote this month/year" from `votes.session_id` (346 distinct sessions) +
   `date_time` (415 distinct voting days) today — a home-dashboard accountability
   number and a bridge to the plenum calendar below.
-- [ ] **Committee documents in global search** — `committee_session_docs` has
-  2,867 named protocols/materials with direct links, but search doesn't span
-  them. Let a citizen find "who discussed X in committee" and land on the meeting.
 - [ ] **Committee agendas backfill** — the agenda/transcript sync covers a rolling
   ~120-day window (recent + upcoming) for the ~6h budget. A one-off full backfill
   of older meetings is available via `syncCommitteeSessionDetails(null)`
@@ -160,6 +157,12 @@ socio-economic indices by municipality (data.gov.il) for context.
 
 ## Done (recent)
 
+- **Committee documents in global search**: `/search` now spans the
+  `committee_session_docs` corpus (position papers, bill drafts, decisions), each
+  result linking straight to the document file.
+- **Party leaders link to their member page** on `/parties/[id]` (verified
+  `leaderPersonId` + name match), and election party cards preview the party's
+  spectrum, ballot letters, and top positions.
 - **Nonce-based CSP + hardened headers**: a real Content-Security-Policy set per
   request in the middleware (`script-src 'strict-dynamic'` + a fresh nonce, so only
   first-party scripts run), plus HSTS and a `tests/security/headers.test.ts` that

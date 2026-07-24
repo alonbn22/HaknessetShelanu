@@ -566,7 +566,8 @@
     "prompt": "Type to search across the whole site.",
     "noResults": "No results for \"{q}\".",
     "resultsFor": "Results for \"{q}\"",
-    "showingTop": "Showing the top {count} results — refine your search for more"
+    "showingTop": "Showing the top {count} results — refine your search for more",
+    "committeeDocs": "Committee documents"
   },
   "hemicycle": {
     "aria": "Knesset seating chart: {coalition} coalition seats, {opposition} opposition seats",

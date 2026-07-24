@@ -44,6 +44,7 @@ export default async function SearchPage({
     ...r.laws.map((l) => l.nameHe),
     ...r.bills.map((b) => b.nameHe),
     ...r.committees.map((c) => c.nameHe),
+    ...r.committeeDocs.map((d) => d.nameHe),
   ];
   const { loc } = localizePage(dataHe, locale);
 
@@ -54,12 +55,13 @@ export default async function SearchPage({
     r.laws.length +
     r.bills.length +
     r.committees.length +
+    r.committeeDocs.length +
     r.lobbyists.length +
     glossary.length;
 
   // Each group: heading + list of links. Hebrew-data items carry dir/lang.
   // `more` = the group hit the search cap; a "showing top N" hint is rendered.
-  const groups: { key: string; heading: string; more?: boolean; items: { href: string; label: string; sub?: string | null; rtl?: boolean }[] }[] = [
+  const groups: { key: string; heading: string; more?: boolean; items: { href: string; label: string; sub?: string | null; rtl?: boolean; external?: boolean }[] }[] = [
     {
       key: "members",
       heading: t("nav.members"),
@@ -109,6 +111,22 @@ export default async function SearchPage({
       }),
     },
     {
+      key: "committeeDocs",
+      heading: t("search.committeeDocs"),
+      more: r.hasMore.committeeDocs,
+      // Link straight to the document; fall back to the committee page if it has
+      // no file. Doc names are Hebrew data → localize + carry dir/lang.
+      items: r.committeeDocs.map((d) => {
+        const l = loc(d.nameHe);
+        return {
+          href: d.filePath ?? (d.committeeId != null ? `/committees/${d.committeeId}` : "/committees"),
+          label: l.text,
+          rtl: l.rtl,
+          external: !!d.filePath,
+        };
+      }),
+    },
+    {
       key: "lobbyists",
       heading: t("nav.lobbyists"),
       more: r.hasMore.lobbyists,
@@ -148,21 +166,32 @@ export default async function SearchPage({
                 {g.heading}
               </h2>
               <ul className="divide-y divide-black/5 rounded-xl bg-white shadow-sm">
-                {g.items.map((it, i) => (
-                  <li key={i}>
-                    <Link
-                      href={it.href}
-                      className="block px-4 py-2.5 hover:bg-black/[.02]"
-                      dir={it.rtl ? "rtl" : undefined}
-                      lang={it.rtl ? "he" : undefined}
-                    >
+                {g.items.map((it, i) => {
+                  const cls = "block px-4 py-2.5 hover:bg-black/[.02]";
+                  const dir = it.rtl ? "rtl" : undefined;
+                  const lang = it.rtl ? "he" : undefined;
+                  const inner = (
+                    <>
                       <span className="font-medium">{it.label}</span>
                       {it.sub && (
                         <span className="ms-2 text-sm text-muted line-clamp-1">{it.sub}</span>
                       )}
-                    </Link>
-                  </li>
-                ))}
+                    </>
+                  );
+                  return (
+                    <li key={i}>
+                      {it.external ? (
+                        <a href={it.href} target="_blank" rel="noopener noreferrer" className={cls} dir={dir} lang={lang}>
+                          {inner}
+                        </a>
+                      ) : (
+                        <Link href={it.href} className={cls} dir={dir} lang={lang}>
+                          {inner}
+                        </Link>
+                      )}
+                    </li>
+                  );
+                })}
               </ul>
               {g.more && (
                 <p className="text-xs text-muted">

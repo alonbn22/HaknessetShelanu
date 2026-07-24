@@ -16,9 +16,12 @@ import {
   getFaction,
   getCurrentMembers,
   getFactionAvgParticipation,
+  getFactionChair,
   factionName,
   factionColor,
+  personName,
 } from "@/lib/queries";
+import { rtlAttrs } from "@/lib/text";
 
 export const dynamic = "force-dynamic";
 
@@ -68,6 +71,15 @@ export default async function PartyPage({
   // Wikipedia fallback for leaders who aren't 25th-Knesset members (no member page).
   const leaderWiki =
     leaderPersonId == null && leaderMatches ? electionParty?.leaderWiki ?? null : null;
+  // The faction's chair in the Knesset (position 48) — distinct from the party
+  // leader (e.g. Netanyahu leads Likud; Ofir Katz chairs its Knesset faction).
+  // Skipped when they're the same person (e.g. Noam) to avoid a duplicate stat.
+  const chairRow = getFactionChair(factionId);
+  const factionChair =
+    chairRow &&
+    `${chairRow.firstNameHe} ${chairRow.lastNameHe}`.trim() !== profile?.leaderHe?.trim()
+      ? chairRow
+      : null;
 
   return (
     <div className="space-y-6">
@@ -147,6 +159,19 @@ export default async function PartyPage({
                 )}
               </div>
               <div className="text-sm text-muted">{t("party.leader")}</div>
+            </div>
+          )}
+          {factionChair && (
+            <div>
+              <div
+                className="text-2xl font-bold text-accent"
+                {...rtlAttrs(personName(factionChair, locale))}
+              >
+                <Link href={`/members/${factionChair.id}`} className="hover:underline">
+                  {personName(factionChair, locale)}
+                </Link>
+              </div>
+              <div className="text-sm text-muted">{t("party.factionChair")}</div>
             </div>
           )}
           {profile?.founded && (

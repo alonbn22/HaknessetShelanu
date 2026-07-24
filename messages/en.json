@@ -154,7 +154,8 @@
     "editorialNote": "Position summaries are written by this site for explanatory purposes and may be incomplete. They do not represent the faction's official stance.",
     "ballot": "Ballot letters",
     "ballotEra": "In the 2022 (25th Knesset) election. The 2026 ballot letters are set closer to the vote.",
-    "basedOn": "Spectrum and positions are based on:"
+    "basedOn": "Spectrum and positions are based on:",
+    "factionChair": "Faction chair in the Knesset"
   },
   "spectrum": {
     "left": "Left",
@@ -298,7 +299,8 @@
     "agendaItems": "On the agenda",
     "agendaCount": "{count, plural, one {# item} other {# items}}",
     "documents": "Documents",
-    "document": "Document"
+    "document": "Document",
+    "chair": "Chair"
   },
   "lawbook": {
     "title": "Israel's Law Book",

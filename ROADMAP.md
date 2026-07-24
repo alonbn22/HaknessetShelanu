@@ -52,10 +52,6 @@ Ordered roughly by value/effort. Grounded in tables that already exist unless no
   `CURRENT_KNESSET = 25` (`src/lib/constants.ts`, used across 7 files incl. 4 sync
   scripts) with a synced term table + dynamic current-term flag, so Knesset 26
   doesn't require a manual edit of every query and sync.
-- [ ] **Chairs on committee/party pages** — member pages now show a header
-  leadership badge (Speaker, opposition leader, committee/faction chair, deputy
-  Speaker). Still to surface: *who* chairs each committee on `/committees` +
-  `/committees/[id]`, and the faction chair on `/parties/[id]`.
 - [ ] **Sitemap alternates** — per-URL `alternates.languages` (hreflang) once a
   production domain exists; the sitemap currently lists each locale URL separately.
 - [ ] **Backfill checkpointing** — the `KNS_PlenumVoteResult` backfill writes its
@@ -158,6 +154,10 @@ socio-economic indices by municipality (data.gov.il) for context.
 
 ## Done (recent)
 
+- **Chairs everywhere they belong**: member pages carry leadership header badges
+  (Speaker, opposition leader, committee/faction chair, deputy Speaker);
+  `/committees` names each committee's chair; `/parties/[id]` shows the faction's
+  Knesset chair (linked, hidden when it's the party leader).
 - **Committee documents in global search**: `/search` now spans the
   `committee_session_docs` corpus (position papers, bill drafts, decisions), each
   result linking straight to the document file.

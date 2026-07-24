@@ -1,7 +1,13 @@
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { getCurrentCommittees, getCommitteeMeetingCounts } from "@/lib/queries";
+import {
+  getCurrentCommittees,
+  getCommitteeMeetingCounts,
+  getCommitteeChairs,
+  personName,
+} from "@/lib/queries";
 import { localizePage, committeeLabel } from "@/lib/i18n-data";
+import { rtlAttrs } from "@/lib/text";
 
 export const dynamic = "force-dynamic";
 
@@ -10,6 +16,7 @@ export default async function CommitteesPage() {
   const locale = await getLocale();
   const committees = getCurrentCommittees();
   const counts = getCommitteeMeetingCounts();
+  const chairs = getCommitteeChairs();
   // Most-active first — turns the directory into an activity view. Committees with
   // no materialized sittings (count 0) fall to the bottom, keeping their alpha order.
   const sorted = [...committees].sort(
@@ -24,6 +31,7 @@ export default async function CommitteesPage() {
         {sorted.map((c) => {
           const name = committeeLabel(c.nameHe, locale, cache);
           const n = counts.get(c.id) ?? 0;
+          const chair = chairs.get(c.id);
           return (
             <Link
               key={c.id}
@@ -37,6 +45,12 @@ export default async function CommitteesPage() {
               >
                 {name.text}
               </div>
+              {chair && (
+                <div className="mt-1 text-sm text-muted">
+                  {t("chair")}:{" "}
+                  <span {...rtlAttrs(personName(chair, locale))}>{personName(chair, locale)}</span>
+                </div>
+              )}
               {n > 0 && (
                 <div className="mt-1 text-xs text-muted">{t("meetingCount", { count: n })}</div>
               )}

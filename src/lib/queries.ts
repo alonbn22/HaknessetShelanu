@@ -9,6 +9,8 @@ import {
   POSITION_FACTION_MEMBER,
   POSITION_MK_MALE,
   POSITION_MK_FEMALE,
+  POSITION_COMMITTEE_CHAIR,
+  POSITION_FACTION_CHAIR,
   VOTE_FOR,
   VOTE_AGAINST,
   VOTE_ABSTAIN,
@@ -1236,6 +1238,42 @@ export function getUpcomingMeetings(nowIso: string, days = 7, limit = 25): Upcom
   } catch {
     return [];
   }
+}
+
+// Current committee chairs (position 41), one per committee — for the list page.
+export function getCommitteeChairs(): Map<number, Person> {
+  const rows = getDb()
+    .select({ committeeId: schema.personPositions.committeeId, person: schema.persons })
+    .from(schema.personPositions)
+    .innerJoin(schema.persons, eq(schema.persons.id, schema.personPositions.personId))
+    .where(
+      and(
+        eq(schema.personPositions.positionId, POSITION_COMMITTEE_CHAIR),
+        eq(schema.personPositions.isCurrent, true),
+      ),
+    )
+    .all();
+  const m = new Map<number, Person>();
+  for (const r of rows) if (r.committeeId != null && !m.has(r.committeeId)) m.set(r.committeeId, r.person);
+  return m;
+}
+
+// The faction's current chair in the Knesset (position 48), if any.
+export function getFactionChair(factionId: number): Person | null {
+  const row = getDb()
+    .select({ person: schema.persons })
+    .from(schema.personPositions)
+    .innerJoin(schema.persons, eq(schema.persons.id, schema.personPositions.personId))
+    .where(
+      and(
+        eq(schema.personPositions.positionId, POSITION_FACTION_CHAIR),
+        eq(schema.personPositions.factionId, factionId),
+        eq(schema.personPositions.isCurrent, true),
+      ),
+    )
+    .limit(1)
+    .all();
+  return row[0]?.person ?? null;
 }
 
 // Meetings-held count per committee (an activity signal for the committees list).

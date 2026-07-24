@@ -6,7 +6,7 @@ import { ReadingBadge } from "@/components/ReadingBadge";
 import { getBill, getBillVotes, getBillSponsors, personName } from "@/lib/queries";
 import { voteKind, type VoteKind } from "@/lib/votes-meta";
 import { localizeData, resolveLocalized, localizePage } from "@/lib/i18n-data";
-import { localizedAttrs, rtlAttrs } from "@/lib/text";
+import { localizedAttrs, rtlAttrs, safeHttpUrl } from "@/lib/text";
 import { formatDate } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
@@ -75,9 +75,9 @@ export default async function BillPage({
   // so we don't render a duplicate button (and collide on the React key).
   const seenDoc = new Set<string>();
   const docs = [
-    { url: bill.explanatoryUrl, label: t("votes.explanatoryNotes") },
-    { url: bill.firstReadingUrl, label: t("bill.firstReadingText") },
-    { url: bill.finalLawUrl, label: t("votes.publishedLaw") },
+    { url: safeHttpUrl(bill.explanatoryUrl), label: t("votes.explanatoryNotes") },
+    { url: safeHttpUrl(bill.firstReadingUrl), label: t("bill.firstReadingText") },
+    { url: safeHttpUrl(bill.finalLawUrl), label: t("votes.publishedLaw") },
   ].filter(
     (d): d is { url: string; label: string } =>
       Boolean(d.url) && !seenDoc.has(d.url!) && (seenDoc.add(d.url!), true),

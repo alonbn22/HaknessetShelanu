@@ -70,11 +70,6 @@ Ordered roughly by value/effort. Grounded in tables that already exist unless no
 - [ ] **Orphaned message keys** — ~27 keys look unreferenced after excluding the
   dynamic `t(\`ns.${x}\`)` families; prune carefully (a wrongly-removed dynamic key
   fails silently at runtime, so verify each before deleting).
-- [ ] **`safeHttpUrl` for DB-sourced hrefs (defense-in-depth)** — committee/bill
-  document links render OData URLs into `href` without the `httpUrl` scheme guard
-  that editorial YAML gets. **Not a live vuln** — React 19 sanitizes `javascript:`
-  hrefs unconditionally — so this is optional consistency + upgrading the one
-  remaining `http:` broadcast URL to https at sync time.
 - [ ] **Workflow binary-rebase handling** — the DB-commit runbook says to
   `git reset --hard origin/master` and redo when the sync bot lands first (never
   rebase a binary). Encode that as a documented step/helper so a DB push that
@@ -154,6 +149,10 @@ socio-economic indices by municipality (data.gov.il) for context.
 
 ## Done (recent)
 
+- **`safeHttpUrl` scheme guard** on every DB-sourced href (committee docs,
+  broadcast/agenda links, bill PDFs, Wikipedia links, search results): only
+  http(s) renders; anything else is dropped. Unit-tested; defense-in-depth over
+  React's own `javascript:` sanitization.
 - **Chairs everywhere they belong**: member pages carry leadership header badges
   (Speaker, opposition leader, committee/faction chair, deputy Speaker);
   `/committees` names each committee's chair; `/parties/[id]` shows the faction's

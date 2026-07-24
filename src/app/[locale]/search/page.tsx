@@ -4,6 +4,7 @@ import { GlobalSearch } from "@/components/GlobalSearch";
 import { searchAll } from "@/lib/queries";
 import { translateQueryToHebrew } from "@/lib/translate-query";
 import { localizePage } from "@/lib/i18n-data";
+import { safeHttpUrl } from "@/lib/text";
 import { getGlossary, partyText } from "@/lib/content";
 
 export const dynamic = "force-dynamic";
@@ -115,14 +116,15 @@ export default async function SearchPage({
       heading: t("search.committeeDocs"),
       more: r.hasMore.committeeDocs,
       // Link straight to the document; fall back to the committee page if it has
-      // no file. Doc names are Hebrew data → localize + carry dir/lang.
+      // no (valid) file. Doc names are Hebrew data → localize + carry dir/lang.
       items: r.committeeDocs.map((d) => {
         const l = loc(d.nameHe);
+        const fileUrl = safeHttpUrl(d.filePath);
         return {
-          href: d.filePath ?? (d.committeeId != null ? `/committees/${d.committeeId}` : "/committees"),
+          href: fileUrl ?? (d.committeeId != null ? `/committees/${d.committeeId}` : "/committees"),
           label: l.text,
           rtl: l.rtl,
-          external: !!d.filePath,
+          external: !!fileUrl,
         };
       }),
     },

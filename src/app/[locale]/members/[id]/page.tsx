@@ -35,7 +35,7 @@ import {
   isServingMember,
 } from "@/lib/queries";
 import { localizePage, committeeLabel } from "@/lib/i18n-data";
-import { localizedAttrs, rtlAttrs } from "@/lib/text";
+import { localizedAttrs, rtlAttrs, safeHttpUrl } from "@/lib/text";
 import { POSITION_FACTION_MEMBER, MK_POSITION_IDS, LEADERSHIP_POSITION_IDS } from "@/lib/constants";
 
 export const dynamic = "force-dynamic";
@@ -211,10 +211,10 @@ export default async function MemberPage({
                 {t("member.knessetSite")}
               </a>
             )}
-            {member.wikipediaHe && (
+            {safeHttpUrl(member.wikipediaHe) && (
               <a
                 className="text-accent hover:underline"
-                href={member.wikipediaHe}
+                href={safeHttpUrl(member.wikipediaHe)!}
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -20,3 +20,12 @@ export function rtlAttrs(s: string | null | undefined): { dir?: "rtl"; lang?: "h
 export function localizedAttrs(l: { rtl: boolean }): { dir?: "rtl"; lang?: "he" } {
   return l.rtl ? { dir: "rtl", lang: "he" } : {};
 }
+
+// Scheme guard for DB-sourced URLs rendered into href (committee docs, broadcast
+// links, Wikipedia links): only http(s) passes; anything else → null. Trim first —
+// browsers tolerate "\tjavascript:…". Defense-in-depth: React already sanitizes
+// javascript: hrefs, and the sync normalizes these, but data is data.
+export function safeHttpUrl(url: string | null | undefined): string | null {
+  const u = (url ?? "").trim();
+  return /^https?:\/\//i.test(u) ? u : null;
+}

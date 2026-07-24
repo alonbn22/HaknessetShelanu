@@ -19,7 +19,7 @@ import {
 } from "@/lib/queries";
 import { committeeLabel, localizePage } from "@/lib/i18n-data";
 import { getControversialLaws, getElectionOutlook, partyText } from "@/lib/content";
-import { isHebrew, rtlAttrs, localizedAttrs } from "@/lib/text";
+import { isHebrew, rtlAttrs, localizedAttrs, safeHttpUrl } from "@/lib/text";
 import { rtlLocales } from "@/i18n/routing";
 import { formatDateTime, formatDate } from "@/lib/format";
 
@@ -212,6 +212,7 @@ export default async function HomePage() {
             {upcoming.map((m) => {
               const cname = committeeLabel(m.committeeNameHe, locale, upCache);
               const type = upLoc(m.typeDesc);
+              const broadcast = safeHttpUrl(m.broadcastUrl);
               return (
                 <li key={m.id} className="flex flex-wrap items-center gap-x-3 gap-y-1 py-2 text-sm">
                   <span className="whitespace-nowrap font-medium tabular-nums">
@@ -230,9 +231,9 @@ export default async function HomePage() {
                       {type.text}
                     </span>
                   )}
-                  {m.broadcastUrl && (
+                  {broadcast && (
                     <a
-                      href={m.broadcastUrl}
+                      href={broadcast}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="whitespace-nowrap text-accent hover:underline"

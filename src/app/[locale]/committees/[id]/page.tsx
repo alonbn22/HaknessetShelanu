@@ -16,7 +16,7 @@ import {
   committeeLabel,
   localizePage,
 } from "@/lib/i18n-data";
-import { localizedAttrs, rtlAttrs } from "@/lib/text";
+import { localizedAttrs, rtlAttrs, safeHttpUrl } from "@/lib/text";
 import { formatDateTime } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
@@ -73,6 +73,8 @@ export default async function CommitteePage({
   const summaryRow = (s: CommitteeSession, itemCount: number) => {
     const type = loc(s.typeDesc);
     const place = loc(s.location);
+    const broadcast = safeHttpUrl(s.broadcastUrl);
+    const agenda = safeHttpUrl(s.sessionUrl);
     return (
       <>
         <span className="whitespace-nowrap font-medium tabular-nums">
@@ -94,9 +96,9 @@ export default async function CommitteePage({
           </span>
         )}
         <span className="ms-auto flex gap-3">
-          {s.broadcastUrl && (
+          {broadcast && (
             <a
-              href={s.broadcastUrl}
+              href={broadcast}
               target="_blank"
               rel="noopener noreferrer"
               className="whitespace-nowrap text-accent hover:underline"
@@ -104,9 +106,9 @@ export default async function CommitteePage({
               {t("committees.broadcast")}
             </a>
           )}
-          {s.sessionUrl && (
+          {agenda && (
             <a
-              href={s.sessionUrl}
+              href={agenda}
               target="_blank"
               rel="noopener noreferrer"
               className="whitespace-nowrap text-accent hover:underline"
@@ -176,10 +178,11 @@ export default async function CommitteePage({
                         const label =
                           `${kindText}${docs.length > 1 ? ` ${i + 1}` : ""}` +
                           `${d.applicationDesc ? ` (${d.applicationDesc})` : ""}`;
-                        return d.filePath ? (
+                        const fileUrl = safeHttpUrl(d.filePath);
+                        return fileUrl ? (
                           <li key={d.id}>
                             <a
-                              href={d.filePath}
+                              href={fileUrl}
                               target="_blank"
                               rel="noopener noreferrer"
                               className="text-accent hover:underline"

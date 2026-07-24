@@ -74,3 +74,18 @@ test("dangerouslySetInnerHTML is only ever fed static string literals", () => {
     }
   }
 });
+
+test("safeHttpUrl only passes http(s) URLs", async () => {
+  const { safeHttpUrl } = await import("../../src/lib/text");
+  assert.equal(safeHttpUrl("https://fs.knesset.gov.il/doc.pdf"), "https://fs.knesset.gov.il/doc.pdf");
+  assert.equal(safeHttpUrl("http://example.com/x"), "http://example.com/x");
+  assert.equal(safeHttpUrl("  https://a.b/c  "), "https://a.b/c"); // trimmed
+  assert.equal(safeHttpUrl("javascript:alert(1)"), null);
+  assert.equal(safeHttpUrl("\tjavascript:alert(1)"), null); // browsers tolerate the tab
+  assert.equal(safeHttpUrl("data:text/html,x"), null);
+  assert.equal(safeHttpUrl("//protocol-relative.example"), null);
+  assert.equal(safeHttpUrl("relative/path.pdf"), null);
+  assert.equal(safeHttpUrl(""), null);
+  assert.equal(safeHttpUrl(null), null);
+  assert.equal(safeHttpUrl(undefined), null);
+});

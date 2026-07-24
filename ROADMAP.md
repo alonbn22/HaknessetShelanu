@@ -57,15 +57,6 @@ Ordered roughly by value/effort. Grounded in tables that already exist unless no
 
 ### Quality / infra follow-ups (from the review pass)
 
-- [ ] **Shared search + localize helpers** — extract a `SearchInput` client
-  component (the debounced input is copy-pasted across 6 filter components and has
-  drifted on width classes; the RTL-direction drift is already fixed) and a
-  server `localizePage(heStrings, locale)` helper (the `localizeData` +
-  `after(queueDataTranslations)` pair + three ad-hoc `titleOf` closures repeat
-  across ~13 pages). Pure maintainability; deferred to avoid churn mid-review.
-- [ ] **Orphaned message keys** — ~27 keys look unreferenced after excluding the
-  dynamic `t(\`ns.${x}\`)` families; prune carefully (a wrongly-removed dynamic key
-  fails silently at runtime, so verify each before deleting).
 - [ ] **Workflow binary-rebase handling** — the DB-commit runbook says to
   `git reset --hard origin/master` and redo when the sync bot lands first (never
   rebase a binary). Encode that as a documented step/helper so a DB push that
@@ -145,6 +136,11 @@ socio-economic indices by municipality (data.gov.il) for context.
 
 ## Done (recent)
 
+- **Refactor pass (adversarially reviewed, zero regressions)**: shared
+  `SearchInput` across the 6 filter components, `localizePage()` + `pageParam()`
+  helpers across the pages, the sync layer split per entity, the member page
+  split into presentational components, and 29 verified-orphaned message keys
+  pruned.
 - **Voting-days stat** (home): "the plenum held votes on N days this Knesset —
   M of them this year", from distinct `date(votes.date_time)`.
 - **`safeHttpUrl` scheme guard** on every DB-sourced href (committee docs,

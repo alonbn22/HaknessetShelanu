@@ -11,6 +11,11 @@ export const POSITION_FACTION_MEMBER = 54; // faction member
 
 export const MK_POSITION_IDS = [POSITION_MK_MALE, POSITION_MK_FEMALE];
 
+// Leadership positions, ordered most→least prominent — surfaced as header badges
+// on the member page: Speaker, Opposition Leader, committee chair, faction chair,
+// deputy Speaker (70/71).
+export const LEADERSHIP_POSITION_IDS = [122, 131, 41, 48, 70, 71];
+
 // Canonical vote result codes (ours; the API's raw codes vary by service).
 export const VOTE_FOR = 1;
 export const VOTE_AGAINST = 2;

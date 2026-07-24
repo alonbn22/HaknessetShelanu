@@ -36,7 +36,7 @@ import {
 } from "@/lib/queries";
 import { localizePage, committeeLabel } from "@/lib/i18n-data";
 import { localizedAttrs, rtlAttrs } from "@/lib/text";
-import { POSITION_FACTION_MEMBER, MK_POSITION_IDS } from "@/lib/constants";
+import { POSITION_FACTION_MEMBER, MK_POSITION_IDS, LEADERSHIP_POSITION_IDS } from "@/lib/constants";
 
 export const dynamic = "force-dynamic";
 
@@ -108,6 +108,23 @@ export default async function MemberPage({
   );
   const serving = isServingMember(positions);
 
+  // Leadership roles (Speaker, opposition leader, committee/faction chair, deputy
+  // Speaker) as at-a-glance header badges, most-prominent first, deduped by label.
+  const leaderSeen = new Set<string>();
+  const leadershipBadges = positions
+    .filter((p) => p.isCurrent && LEADERSHIP_POSITION_IDS.includes(p.positionId))
+    .sort(
+      (a, b) =>
+        LEADERSHIP_POSITION_IDS.indexOf(a.positionId) -
+        LEADERSHIP_POSITION_IDS.indexOf(b.positionId),
+    )
+    .map((p) => govDuty(p.positionDescHe ?? "", locale))
+    .filter((g) => {
+      if (!g.text || leaderSeen.has(g.text)) return false;
+      leaderSeen.add(g.text);
+      return true;
+    });
+
   const bio = getMemberBio(personId);
   // Roles section already shows career/positions, so bio keeps only background:
   // born, education, occupation, military.
@@ -169,6 +186,20 @@ export default async function MemberPage({
           <div className="text-sm text-muted">
             {serving ? t("member.currentMk") : t("member.formerMk")}
           </div>
+          {leadershipBadges.length > 0 && (
+            <div className="flex flex-wrap gap-1.5 pt-1">
+              {leadershipBadges.map((g, i) => (
+                <span
+                  key={i}
+                  className="rounded-full bg-accent/10 px-2.5 py-0.5 text-xs font-semibold text-accent"
+                  dir={g.rtl ? "rtl" : undefined}
+                  lang={g.rtl ? "he" : undefined}
+                >
+                  {g.text}
+                </span>
+              ))}
+            </div>
+          )}
           <div className="flex flex-wrap gap-3 pt-1 text-sm">
             {member.mkSiteCode && (
               <a

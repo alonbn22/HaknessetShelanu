@@ -171,6 +171,7 @@ parties:
         publisher: "Al Jazeera"
   - name: { he: "ביחד (בנט 2026 – יש עתיד)", en: "Together (Bennett 2026 – Yesh Atid)" }
     leader: { he: "נפתלי בנט", en: "Naftali Bennett" }
+    leaderWiki: "https://en.wikipedia.org/wiki/Naftali_Bennett"
     note:
       he: "רשימה משותפת של בנט 2026 ויש עתיד בראשות יאיר לפיד, שהוכרזה ב-26 באפריל 2026; בנט עומד בראשה כמועמד לראשות הממשלה. בנט כיהן כראש הממשלה ה-13 של ישראל (2021–2022), ולפני כן עמד בראש ימינה והבית היהודי וכיהן כשר הביטחון, שר החינוך ושר הכלכלה."
       en: "A joint list of Bennett 2026 and Yair Lapid's Yesh Atid, announced April 26, 2026, with Bennett heading the slate as its candidate for prime minister. Bennett served as Israel's 13th prime minister (2021–2022); he previously led Yamina and the Jewish Home and served as defense, education and economy minister."
@@ -193,14 +194,18 @@ parties:
         publisher: "The National"
   - name: { he: "הדמוקרטים", en: "The Democrats" }
     leader: { he: "יאיר גולן", en: "Yair Golan" }
+    leaderWiki: "https://en.wikipedia.org/wiki/Yair_Golan"
     factionId: 1100
     note:
-      he: "מפלגת האיחוד של העבודה ומרצ; לפי דיווחים, יו\"ר העבודה לשעבר מרב מיכאלי פורשת מהכנסת."
-      en: "The merged Labor–Meretz party; former Labor leader Merav Michaeli is reportedly retiring from the Knesset."
+      he: "מפלגת האיחוד של העבודה ומרצ; לפי דיווחים, יו\"ר העבודה לשעבר מרב מיכאלי פורשת מהכנסת. גולן, סגן הרמטכ\"ל לשעבר וחבר הכנסת ה-24 מטעם מרצ, נבחר לראשות העבודה במאי 2024 והוביל את מיזוגה עם מרצ להקמת הדמוקרטים."
+      en: "The merged Labor–Meretz party; former Labor leader Merav Michaeli is reportedly retiring from the Knesset. Golan, a former IDF deputy chief of staff and Meretz MK in the 24th Knesset, was elected Labor leader in May 2024 and led its merger with Meretz to form The Democrats."
     sources:
       - url: "https://www.mako.co.il/news-israel-elections/2026/Article-37275a925e7dd91026.htm"
         title: "חצי שנה לבחירות: המפלגות, המצטרפים החדשים והסקרים"
         publisher: "N12"
+      - url: "https://en.wikipedia.org/wiki/Yair_Golan"
+        title: "Yair Golan (Wikipedia)"
+        publisher: "Wikipedia"
   - name: { he: "ש\"ס", en: "Shas" }
     leader: { he: "אריה דרעי", en: "Aryeh Deri" }
     leaderPersonId: 2291
@@ -282,10 +287,11 @@ parties:
         publisher: "The Times of Israel"
   - name: { he: "הרשימה המשותפת (חד\"ש, תע\"ל, בל\"ד)", en: "The Joint List (Hadash, Ta'al, Balad)" }
     leader: { he: "ד\"ר יוסף ג'בארין (יו\"ר חד\"ש)", en: "Dr. Yousef Jabareen (Hadash chair)" }
+    leaderWiki: "https://en.wikipedia.org/wiki/Yousef_Jabareen"
     factionId: 1103
     note:
-      he: "חד\"ש — בראשות יו\"ר חדש, ד\"ר יוסף ג'בארין, שהחליף במאי 2026 את איימן עודה הפורש — יחד עם תע\"ל ובל\"ד הודיעו על כוונה להקים מחדש את הרשימה המשותפת."
-      en: "Hadash — under new chair Dr. Yousef Jabareen, who in May 2026 replaced the retiring Ayman Odeh — together with Ta'al and Balad announced their intention to reestablish the Joint List."
+      he: "חד\"ש — בראשות יו\"ר חדש, ד\"ר יוסף ג'בארין, שהחליף במאי 2026 את איימן עודה הפורש — יחד עם תע\"ל ובל\"ד הודיעו על כוונה להקים מחדש את הרשימה המשותפת. ג'בארין, מרצה למשפטים, כיהן כחבר הכנסת מטעם חד\"ש והרשימה המשותפת בשנים 2015–2022."
+      en: "Hadash — under new chair Dr. Yousef Jabareen, who in May 2026 replaced the retiring Ayman Odeh — together with Ta'al and Balad announced their intention to reestablish the Joint List. Jabareen, a law lecturer, served as an MK for Hadash and the Joint List from 2015 to 2022."
     sources:
       - url: "https://www.ynet.co.il/news/article/rjofrtsjfl"
         title: "יחליף את איימן עודה: ד\"ר יוסף ג'בארין נבחר ליו\"ר חד\"ש"
@@ -296,21 +302,27 @@ parties:
   - name: { he: "המילואימניקים – טרופר", en: "The Reservists – Tropper alliance" }
     leader: { he: "יועז הנדל וחילי טרופר", en: "Yoaz Hendel & Hili Tropper" }
     note:
-      he: "ברית בחירות חדשה בין מפלגת המילואימניקים של יועז הנדל לסיעתו של חילי טרופר, שדווחה בתחילת יולי 2026."
-      en: "A new electoral alliance between Yoaz Hendel's Reservists party and Hili Tropper's faction, reported in early July 2026."
+      he: "ברית בחירות חדשה בין מפלגת המילואימניקים של יועז הנדל לסיעתו של חילי טרופר, שדווחה בתחילת יולי 2026. הנדל כיהן כשר התקשורת וכחבר כנסת; טרופר, שר התרבות והספורט לשעבר, מכהן כחבר הכנסת ה-25."
+      en: "A new electoral alliance between Yoaz Hendel's Reservists party and Hili Tropper's faction, reported in early July 2026. Hendel is a former communications minister and MK; Tropper, a former culture and sport minister, sits in the 25th Knesset."
     sources:
       - url: "https://www.ynet.co.il/news/article/hjnrm2uxml"
         title: "מי עם מי: המפלגות שעשויות להכריע את הבחירות"
         publisher: "Ynet"
+      - url: "https://en.wikipedia.org/wiki/Yoaz_Hendel"
+        title: "Yoaz Hendel (Wikipedia)"
+        publisher: "Wikipedia"
   - name: { he: "מפלגה חדשה בהקמה: אדלשטיין–שקד", en: "Possible new party: Edelstein–Shaked" }
     leader: { he: "יולי אדלשטיין ואיילת שקד", en: "Yuli Edelstein & Ayelet Shaked" }
     note:
-      he: "יולי אדלשטיין, שפרש מהליכוד בתחילת יולי 2026, מנהל לפי דיווחים מגעים עם איילת שקד להקמת מפלגת ימין חדשה; טרם הוכרזה רשמית."
-      en: "Yuli Edelstein, who left Likud in early July 2026, is reportedly in talks with Ayelet Shaked on a new right-wing party; not yet formally announced."
+      he: "יולי אדלשטיין, שפרש מהליכוד בתחילת יולי 2026, מנהל לפי דיווחים מגעים עם איילת שקד להקמת מפלגת ימין חדשה; טרם הוכרזה רשמית. אדלשטיין, יו\"ר הכנסת לשעבר ושר הבריאות לשעבר, מכהן כחבר הכנסת ה-25; שקד כיהנה כשרת המשפטים וכשרת הפנים."
+      en: "Yuli Edelstein, who left Likud in early July 2026, is reportedly in talks with Ayelet Shaked on a new right-wing party; not yet formally announced. Edelstein, a former Knesset Speaker and health minister, sits in the 25th Knesset; Shaked previously served as justice and interior minister."
     sources:
       - url: "https://www.ynet.co.il/news/article/hjnrm2uxml"
         title: "מי עם מי: המפלגות שעשויות להכריע את הבחירות"
         publisher: "Ynet"
+      - url: "https://en.wikipedia.org/wiki/Yuli-Yoel_Edelstein"
+        title: "Yuli Edelstein (Wikipedia)"
+        publisher: "Wikipedia"
   - name: { he: "נעם", en: "Noam" }
     leader: { he: "אבי מעוז", en: "Avi Maoz" }
     leaderPersonId: 30814

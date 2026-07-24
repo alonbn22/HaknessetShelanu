@@ -59,11 +59,15 @@ export default async function PartyPage({
   // a *verified* leaderPersonId for this faction whose Hebrew name matches the
   // profile's — so a leadership change never points us at the wrong person.
   const electionParty = getElectionOutlook()?.parties.find((p) => p.factionId === factionId);
+  const leaderMatches =
+    electionParty?.leader?.he?.trim() === profile?.leaderHe?.trim();
   const leaderPersonId =
-    electionParty?.leaderPersonId != null &&
-    electionParty.leader?.he?.trim() === profile?.leaderHe?.trim()
+    leaderMatches && electionParty?.leaderPersonId != null
       ? electionParty.leaderPersonId
       : null;
+  // Wikipedia fallback for leaders who aren't 25th-Knesset members (no member page).
+  const leaderWiki =
+    leaderPersonId == null && leaderMatches ? electionParty?.leaderWiki ?? null : null;
 
   return (
     <div className="space-y-6">
@@ -132,6 +136,10 @@ export default async function PartyPage({
                   <Link href={`/members/${leaderPersonId}`} className="hover:underline">
                     {locale === "he" ? profile.leaderHe : profile.leaderEn ?? profile.leaderHe}
                   </Link>
+                ) : leaderWiki ? (
+                  <a href={leaderWiki} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                    {locale === "he" ? profile.leaderHe : profile.leaderEn ?? profile.leaderHe}
+                  </a>
                 ) : locale === "he" ? (
                   profile.leaderHe
                 ) : (

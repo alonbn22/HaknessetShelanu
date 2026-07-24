@@ -218,6 +218,17 @@ export default async function ElectionsHistoryPage() {
                           >
                             {partyText(p.leader, locale)}
                           </Link>
+                        ) : p.leaderWiki ? (
+                          // Not a 25th-Knesset member (no member page) — link
+                          // their Wikipedia article instead.
+                          <a
+                            className="text-accent hover:underline"
+                            href={p.leaderWiki}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {partyText(p.leader, locale)}
+                          </a>
                         ) : (
                           partyText(p.leader, locale)
                         )}

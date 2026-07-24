@@ -360,6 +360,9 @@ const electionPartySchema = z.object({
   // Links leader to their member page when in the persons DB. Set only after
   // verifying the id is the RIGHT person — a QA test cross-checks id + name.
   leaderPersonId: z.number().optional(),
+  // Fallback link for leaders NOT in the persons DB (the table only holds
+  // 25th-Knesset members): their Wikipedia article.
+  leaderWiki: httpUrl.optional(),
   note: localizedText.optional(),
   factionId: z.number().optional(), // links to /parties/<id> when it maps to a sitting faction
   sources: z

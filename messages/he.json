@@ -59,7 +59,8 @@
     "controversialSubtitle": "חקיקה שעוררה ויכוח ציבורי נרחב — עם מקור לכל פריט.",
     "seatsView": "תצוגה",
     "seatsViewBar": "פס",
-    "seatsViewHemicycle": "חצי-גורן"
+    "seatsViewHemicycle": "חצי-גורן",
+    "votingDays": "המליאה קיימה הצבעות ב־{term} ימים מאז תחילת הכנסת ה־25, מתוכם {inYear} ימים ב־{year}"
   },
   "members": {
     "title": "חברי הכנסת",

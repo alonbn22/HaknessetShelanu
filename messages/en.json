@@ -59,7 +59,8 @@
     "controversialSubtitle": "Legislation that sparked major public debate — each with a source.",
     "seatsView": "View",
     "seatsViewBar": "Bar",
-    "seatsViewHemicycle": "Hemicycle"
+    "seatsViewHemicycle": "Hemicycle",
+    "votingDays": "The plenum held votes on {term} days this Knesset — {inYear} of them in {year}"
   },
   "members": {
     "title": "Knesset Members",

@@ -1689,6 +1689,22 @@ export function getLobbyistsPage(opts: {
 
 // ---------- dashboard ----------
 
+// Distinct plenum voting days — a dashboard accountability number: on how many
+// days the plenum actually voted this term, and within `year`.
+export function getVotingDays(year: number): { term: number; inYear: number } {
+  const db = getDb();
+  const days = (extra?: SQL) =>
+    db
+      .select({ n: sql<number>`COUNT(DISTINCT date(${schema.votes.dateTime}))` })
+      .from(schema.votes)
+      .where(and(eq(schema.votes.knessetNum, CURRENT_KNESSET), extra))
+      .get()?.n ?? 0;
+  return {
+    term: days(),
+    inYear: days(sql`strftime('%Y', ${schema.votes.dateTime}) = ${String(year)}`),
+  };
+}
+
 export function getDashboardStats() {
   const db = getDb();
   // Sitting MKs = people currently holding an MK seat (constitutionally 120).

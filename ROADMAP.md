@@ -38,10 +38,6 @@ Ordered roughly by value/effort. Grounded in tables that already exist unless no
 - [x] **Agenda-motion subjects on member pages — SHIPPED**: recent motions render
   in the activity section (localized lazily, RTL fallback, empty subjects
   filtered at the query).
-- [ ] **Voting-days-per-period stat** — derive "how many days did the Knesset
-  vote this month/year" from `votes.session_id` (346 distinct sessions) +
-  `date_time` (415 distinct voting days) today — a home-dashboard accountability
-  number and a bridge to the plenum calendar below.
 - [ ] **Committee agendas backfill** — the agenda/transcript sync covers a rolling
   ~120-day window (recent + upcoming) for the ~6h budget. A one-off full backfill
   of older meetings is available via `syncCommitteeSessionDetails(null)`
@@ -149,6 +145,8 @@ socio-economic indices by municipality (data.gov.il) for context.
 
 ## Done (recent)
 
+- **Voting-days stat** (home): "the plenum held votes on N days this Knesset —
+  M of them this year", from distinct `date(votes.date_time)`.
 - **`safeHttpUrl` scheme guard** on every DB-sourced href (committee docs,
   broadcast/agenda links, bill PDFs, Wikipedia links, search results): only
   http(s) renders; anything else is dropped. Unit-tested; defense-in-depth over

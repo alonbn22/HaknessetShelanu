@@ -59,7 +59,8 @@
     "controversialSubtitle": "Законы, вызвавшие широкие общественные споры — с источником по каждому.",
     "seatsView": "Вид",
     "seatsViewBar": "Полоса",
-    "seatsViewHemicycle": "Полукруг"
+    "seatsViewHemicycle": "Полукруг",
+    "votingDays": "Пленум голосовал в {term} днях с начала 25-го созыва, из них {inYear} — в {year} году"
   },
   "members": {
     "title": "Депутаты Кнессета",

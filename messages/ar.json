@@ -59,7 +59,8 @@
     "controversialSubtitle": "تشريعات أثارت جدلاً عامًا واسعًا — مع مصدر لكل بند.",
     "seatsView": "عرض",
     "seatsViewBar": "شريط",
-    "seatsViewHemicycle": "نصف دائرة"
+    "seatsViewHemicycle": "نصف دائرة",
+    "votingDays": "صوّتت الهيئة العامة في {term} يومًا منذ بداية الكنيست الـ25، منها {inYear} يومًا في {year}"
   },
   "members": {
     "title": "أعضاء الكنيست",

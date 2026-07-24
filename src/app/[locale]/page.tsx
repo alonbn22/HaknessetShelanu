@@ -9,6 +9,7 @@ import { HeroSearch } from "@/components/HeroSearch";
 import { MemberAvatar } from "@/components/MemberCard";
 import {
   getDashboardStats,
+  getVotingDays,
   getLatestVotes,
   getParticipationLeaderboard,
   getMostActiveLegislators,
@@ -29,6 +30,8 @@ export default async function HomePage() {
   const t = await getTranslations();
   const locale = await getLocale();
   const { mks, ministers, factions, voteCount } = getDashboardStats();
+  const year = new Date().getFullYear();
+  const votingDays = getVotingDays(year);
   const controversialLaws = getControversialLaws();
   const electionOutlook = getElectionOutlook();
   const latestVotes = getLatestVotes(6);
@@ -289,6 +292,16 @@ export default async function HomePage() {
               </Link>
             </div>
           </div>
+          {/* Accountability: on how many days the plenum actually voted. */}
+          {votingDays.term > 0 && (
+            <p className="text-sm text-muted">
+              {t("home.votingDays", {
+                term: votingDays.term,
+                inYear: votingDays.inYear,
+                year: String(year),
+              })}
+            </p>
+          )}
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {latestVotes.map((v) => (
               <VoteCard key={v.id} vote={v} title={latestTitleOf(v.titleHe)} />

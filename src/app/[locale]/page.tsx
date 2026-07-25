@@ -7,6 +7,7 @@ import { VoteCard } from "@/components/VoteCard";
 import { HomeVoteSearch } from "@/components/HomeVoteSearch";
 import { HeroSearch } from "@/components/HeroSearch";
 import { MemberAvatar } from "@/components/MemberCard";
+import { KeyDatesTimeline } from "@/components/KeyDatesTimeline";
 import {
   getDashboardStats,
   getVotingDays,
@@ -179,6 +180,15 @@ export default async function HomePage() {
               {t("election.homeCta")} {rtlLocales.has(locale) ? "←" : "→"}
             </Link>
           </div>
+          {/* Key dates ahead — compact timeline (chips + labels; election day bold). */}
+          {electionOutlook.keyDates && electionOutlook.keyDates.length > 0 && (
+            <div className="mt-5 border-t border-accent/20 pt-4">
+              <h3 className="mb-3 text-xs font-semibold uppercase tracking-wide text-muted">
+                {t("election.keyDates")}
+              </h3>
+              <KeyDatesTimeline dates={electionOutlook.keyDates} variant="compact" />
+            </div>
+          )}
         </section>
       )}
 

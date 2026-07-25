@@ -369,7 +369,8 @@
     "homeTitle": "2026 election",
     "homeCta": "Everything about the upcoming election",
     "morePartyInfo": "More about the party",
-    "newList": "New list — not yet in the Knesset"
+    "newList": "New list — not yet in the Knesset",
+    "inDays": "{days, plural, =0 {happening today} one {in # day} other {in # days}}"
   },
   "electionsHistory": {
     "title": "Knesset Elections History",

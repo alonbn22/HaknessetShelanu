@@ -11,6 +11,7 @@ import {
 } from "@/lib/content";
 import { formatDate } from "@/lib/format";
 import { rtlAttrs } from "@/lib/text";
+import { KeyDatesTimeline } from "@/components/KeyDatesTimeline";
 
 export const dynamic = "force-dynamic";
 
@@ -122,33 +123,11 @@ export default async function ElectionsHistoryPage() {
 
           {/* Timeline to the 26th Knesset — each entry dated + sourced. */}
           {outlook.keyDates && outlook.keyDates.length > 0 && (
-            <div className="space-y-2">
+            <div className="space-y-3">
               <h3 className="text-sm font-semibold uppercase tracking-wide text-muted">
                 {te("keyDates")}
               </h3>
-              <ol className="relative space-y-4 border-s-2 border-accent/30 ps-4">
-                {outlook.keyDates.map((d) => (
-                  <li key={d.key} className="space-y-0.5">
-                    <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
-                      {d.date && (
-                        <span className="font-bold tabular-nums text-accent">
-                          {formatDate(d.date, locale)}
-                        </span>
-                      )}
-                      <span className="font-semibold">{partyText(d.label, locale)}</span>
-                      {d.status && d.status !== "confirmed" && (
-                        <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[11px] font-medium text-amber-800">
-                          {te(d.status === "scheduled-by-law" ? "statusByLaw" : "statusReported")}
-                        </span>
-                      )}
-                    </div>
-                    {d.detail && (
-                      <p className="text-sm leading-relaxed">{partyText(d.detail, locale)}</p>
-                    )}
-                    <SourceLinks sources={d.sources} label={tc("source")} />
-                  </li>
-                ))}
-              </ol>
+              <KeyDatesTimeline dates={outlook.keyDates} variant="full" />
             </div>
           )}
 

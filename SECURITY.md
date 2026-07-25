@@ -44,9 +44,13 @@ The site ships a strict, mostly self-only security posture. Two layers set it:
   geolocation denied).
 
 Every external link opened with `target="_blank"` carries `rel="noopener"` to
-block reverse-tabnabbing. `tests/security/headers.test.ts` locks all of the above
-in — the header set, the CSP shape, the nonce actually reaching the theme script,
-and the `rel="noopener"` rule — so a refactor can't silently weaken it.
+block reverse-tabnabbing, and every DB-sourced URL rendered into an `href`
+(committee documents, broadcast/agenda links, bill PDFs, Wikipedia links) passes
+the `safeHttpUrl` scheme guard — trimmed, http/https only, anything else dropped
+(defense-in-depth over React's own `javascript:`-href sanitization).
+`tests/security/` locks all of the above in — the header set, the CSP shape, the
+nonce actually reaching the theme script, the `rel="noopener"` rule, and the
+scheme guard — so a refactor can't silently weaken it.
 
 ## Supported versions
 

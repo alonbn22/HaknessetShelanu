@@ -38,10 +38,6 @@ Ordered roughly by value/effort. Grounded in tables that already exist unless no
 - [x] **Agenda-motion subjects on member pages — SHIPPED**: recent motions render
   in the activity section (localized lazily, RTL fallback, empty subjects
   filtered at the query).
-- [ ] **Committee agendas backfill** — the agenda/transcript sync covers a rolling
-  ~120-day window (recent + upcoming) for the ~6h budget. A one-off full backfill
-  of older meetings is available via `syncCommitteeSessionDetails(null)`
-  (materialized: 1,396 items / 2,867 docs against 10,756 sittings).
 - [ ] **Plenum sitting calendar** — the other half of the session layer
   (`KNS_PlenumSession` + order paper + Divrei HaKnesset transcripts).
 - [ ] **`KNS_KnessetDates` term metadata** — replace the hardcoded
@@ -136,6 +132,15 @@ socio-economic indices by municipality (data.gov.il) for context.
 
 ## Done (recent)
 
+- **Committee agendas full backfill**: 13,119 agenda items / 26,620 documents —
+  ~96% of the term's 10,792 sittings (was a rolling 120-day window). The 7
+  batches the API persistently 500s on are skipped non-fatally and retried by
+  each scheduled sync.
+- **2026-election deepening**: key-dates timeline with live countdowns on home +
+  `/elections` (next step highlighted, election day always prominent); party
+  cards preview spectrum/ballot-letters/positions; every leader linked (member
+  page, else Wikipedia) with sourced backgrounds; "new list" labels for
+  not-yet-seated slates.
 - **Refactor pass (adversarially reviewed, zero regressions)**: shared
   `SearchInput` across the 6 filter components, `localizePage()` + `pageParam()`
   helpers across the pages, the sync layer split per entity, the member page
@@ -194,9 +199,9 @@ socio-economic indices by municipality (data.gov.il) for context.
 - **Committee agendas + transcripts** (`/committees/[id]`): each meeting expands
   to its agenda items (`KNS_CmtSessionItem`) and documents
   (`KNS_DocumentCommitteeSession`) — protocol/transcript, background material,
-  decisions — as direct links, protocol first. Synced over a rolling ~120-day
-  window (recent + upcoming) to fit the sync budget; localizes lazily and
-  degrades to a plain row when a meeting has no agenda/docs yet.
+  decisions — as direct links, protocol first. Fully backfilled across the term
+  (see above); the scheduled sync maintains a rolling ~120-day window on top;
+  localizes lazily and degrades to a plain row when a meeting has no docs yet.
 - **Dark mode**: a header toggle (persists to `localStorage`, respects the OS
   preference, no light-flash via a pre-paint script) layered over the existing
   CSS-variable tokens — the semantic tokens are remapped and the hardcoded light

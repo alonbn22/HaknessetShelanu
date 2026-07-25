@@ -33,20 +33,20 @@ with English, Arabic, and Russian.
 
 | Area | Page(s) | Notes |
 |---|---|---|
-| Dashboard | `/` | **Seats-by-faction with a bar/hemicycle toggle** (bar default), coalition vs. opposition totals, latest votes + search, participation leaderboards, most-active legislators, a controversial-laws section |
-| Global search | `/search` | One box across members, factions, votes, laws, committees, lobbyists, and the dictionary; cross-language (query is translated to Hebrew to match the data) |
-| Members | `/members`, `/members/[id]` | Filter by faction / bloc / **search by name or party** (any language). Profile: photo (+license), roles, **full multi-Knesset faction history**, biography (Wikidata), **participation stats**, **party-discipline % with a rebellion drill-down** (the exact votes where the MK broke with their faction), parliamentary questions **with answered/unanswered + response-time accountability**, sponsored bills, committees, recent votes, **curated public record with sources** |
+| Dashboard | `/` | **Seats-by-faction with a bar/hemicycle toggle** (bar default), a **2026-election banner with a key-dates countdown timeline**, coalition vs. opposition totals, "this week in the Knesset", latest votes + search, a **voting-days accountability stat**, participation leaderboards, most-active legislators, a controversial-laws section |
+| Global search | `/search` | One box across members, factions, votes, laws, committees, **committee documents** (protocols, position papers, decisions — linked straight to the file), lobbyists, and the dictionary; cross-language (query is translated to Hebrew to match the data) |
+| Members | `/members`, `/members/[id]` | Filter by faction / bloc / **search by name or party** (any language). Profile: photo (+license), roles, **full multi-Knesset faction history**, biography (Wikidata), **participation stats**, **party-discipline % with a rebellion drill-down** (the exact votes where the MK broke with their faction), **leadership badges** (Speaker, opposition leader, committee/faction chair, deputy Speaker), parliamentary questions **with answered/unanswered + response-time accountability**, sponsored bills, committees, recent votes, **curated public record with sources** |
 | Compare | `/compare` | Pick two MKs → side-by-side stats **plus a voting-agreement rate** (how often they voted the same way) |
-| Factions | `/parties`, `/parties/[id]` | Seats, coalition badge, avg participation; **political spectrum bar, summary, key positions, leader, ballot letters** (editorial) |
+| Factions | `/parties`, `/parties/[id]` | Seats, coalition badge, avg participation; **political spectrum bar, summary, key positions, leader (linked to their member page or Wikipedia), the faction's Knesset chair, ballot letters** (editorial) |
 | Ministers | `/ministers` | The sitting government; explains the "Norwegian Law" (ministers who vacated their seat) |
 | Votes | `/votes`, `/votes/[id]` | Searchable list; detail shows **reading stage**, "what a 'for' vote means", the agenda subject, and **every MK's vote incl. absentees** grouped by faction, with the authoritative tally + a reconciliation note when a voter is a former member |
 | Bills & laws | `/laws`, `/laws/[id]`, `/lawbook` | Bills that reached plenum votes (with documents + sponsors) and a per-bill **legislative journey**; `/lawbook` is the separate consolidated Israel law book |
 | Legislators | `/legislators` | Most-active legislators, ranked by bills sponsored |
-| Committees | `/committees`, `/committees/[id]` | Standing/special committees + memberships |
+| Committees | `/committees`, `/committees/[id]` | Standing/special committees ranked by activity, **each with its chair**; detail pages show memberships and **every meeting's agenda + documents** (protocols, transcripts, decisions — ~96% of the term's 10,700+ sittings backfilled) |
 | Budget | `/budget` | Ministry of Finance budget by ministry/area/line, with history + search |
 | Lobbyists | `/lobbyists` | The official lobbyist registry (firms, clients), sortable; foreign-funding context |
 | Attendance | `/attendance` | Serving-members participation leaderboard |
-| Elections + quiz | `/elections`, `/quiz` | Knesset election history; an election-compass party-fit quiz (editorial) |
+| Elections + quiz | `/elections`, `/quiz` | **The 2026 election front and center**: a key-dates timeline with live countdowns (next step highlighted), expected party line-ups with spectrum/ballot-letters/positions previews, every leader linked (member page, or Wikipedia when they're not a sitting MK) — every item sourced; plus full Knesset election history and an election-compass party-fit quiz (editorial) |
 | Dictionary | `/glossary` | Plain-language political terms, grouped by topic, each sourced |
 | Transparency | `/sources`, `/tickets` | Every data source listed; report-wrong / suggest-new flows open GitHub tickets. A site-wide work-in-progress notice sits at the top of every page |
 | Accessibility | `/accessibility` + floating widget | Israeli Standard IS 5568 / WCAG 2.0 AA |
@@ -163,6 +163,10 @@ paged-fetch helper). `index.ts` orchestrates; flags run a single section.
 - `bills` / `bill_initiators`, `committees`, `queries`, `agendas`, `israel_laws`,
   `lobbyists`, `budget_lines` — bills + sponsors, committees, parliamentary
   questions, agenda motions, the law book, the lobbyist registry, and the budget.
+- `committee_sessions` / `committee_session_items` / `committee_session_docs` —
+  every committee sitting (incl. future scheduled ones) with its agenda items and
+  documents; `gov_ministries` — the ministry registry resolving `queries`'
+  addressees; `mk_agreement` — precomputed pairwise voting agreement.
 - `translations` — unified lazy-translation cache (`source_he` PK → en/ar/ru).
 - `sync_state` — incremental-sync cursors.
 
@@ -211,9 +215,11 @@ locked down defensively:
   camera/mic/geolocation-denying `Permissions-Policy`.
 - SQL goes through parameterized Drizzle queries with `LIKE` wildcards escaped;
   outbound sync requests are HTTPS-only; `target="_blank"` links carry
-  `rel="noopener"`.
+  `rel="noopener"`; every DB-sourced URL rendered into an `href` passes the
+  `safeHttpUrl` scheme guard (http/https only).
 - `tests/security/` locks this in (SQL-injection, HTTPS-only, no hardcoded
-  secrets, XSS surface, translation-proxy limits, and the header/CSP posture).
+  secrets, XSS surface, URL-scheme guard, translation-proxy limits, and the
+  header/CSP posture).
 
 Full details and how to report a vulnerability: [SECURITY.md](SECURITY.md).
 
@@ -230,16 +236,17 @@ Full details and how to report a vulnerability: [SECURITY.md](SECURITY.md).
 
 ## Project status
 
-Live and broad: members/factions, votes + per-MK stats, member comparison with
-a voting-agreement rate, party-discipline metrics with a rebellion drill-down,
-question-response accountability, bill journeys + the law book, committees, the
-budget, lobbyists, the dictionary, elections history + the party-fit quiz,
-global search, per-page metadata + a full sitemap, curated member records, party
-profiles, a hardened CSP/security-header posture, accessibility, and the
-transparency pages. The
-remaining roadmap (dark mode, committee calendars, status-code decoding) and
-**ideas for data we could still surface from the APIs** are tracked in
-[`ROADMAP.md`](ROADMAP.md).
+Live and broad: members/factions (with leadership badges + chairs), votes +
+per-MK stats, member comparison with a voting-agreement rate, party-discipline
+metrics with a rebellion drill-down, question-response accountability, bill
+journeys + the law book, committees with agendas/documents for ~96% of the
+term's sittings, the budget, lobbyists, the dictionary, the **2026-election
+section with a countdown timeline and sourced party line-ups**, elections
+history + the party-fit quiz, global search spanning committee documents,
+per-page metadata + a full sitemap, curated member records, party profiles, a
+hardened CSP/security-header posture, dark mode, accessibility, and the
+transparency pages. What's next (plenum calendar, dynamic term metadata,
+candidate-list ingestion) is tracked in [`ROADMAP.md`](ROADMAP.md).
 
 ## License & contributing
 

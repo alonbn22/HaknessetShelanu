@@ -581,6 +581,18 @@
   "wip": {
     "notice": "Work in progress — some information may be incomplete, inaccurate, or out of date. Always verify against official Knesset sources."
   },
+  "notFound": {
+    "title": "Page not found",
+    "body": "The link may be wrong, the page may have been removed, or the item you were looking for may not exist in the data.",
+    "backHome": "Go to the home page",
+    "toSearch": "Search the site"
+  },
+  "error": {
+    "title": "Something went wrong",
+    "body": "This page failed to load. You can try again, or go back to the home page.",
+    "retry": "Try again",
+    "backHome": "Go to the home page"
+  },
   "compare": {
     "title": "Compare members",
     "subtitle": "Pick two MKs and compare their voting records side by side.",

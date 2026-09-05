@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
 import { headers } from "next/headers";
 import { Heebo, Noto_Sans_Arabic, Noto_Sans } from "next/font/google";
@@ -39,6 +39,16 @@ const notoSans = Noto_Sans({
   display: "swap",
   preload: false,
 });
+
+// Colours the mobile browser chrome. These must track --background in globals.css.
+// The site's theme toggle is class-based, so a manual override can't be expressed
+// here; prefers-color-scheme is the closest the platform allows.
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f8f7f4" },
+    { media: "(prefers-color-scheme: dark)", color: "#14181e" },
+  ],
+};
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));

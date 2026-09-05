@@ -42,7 +42,7 @@ export function SeatsBar({
               style={{ backgroundColor: factionColor(f.id) }}
             />
             {factionName(f.id, f.nameHe, locale)}
-            <span className="text-muted">{f.seats}</span>
+            <span className="tabular-nums text-muted">{f.seats}</span>
           </Link>
         ))}
       </div>

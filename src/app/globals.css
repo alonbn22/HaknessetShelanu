@@ -44,6 +44,25 @@ body {
 :lang(ru) {
   font-family: var(--font-noto-sans), "Noto Sans", var(--font-heebo), sans-serif;
 }
+/* Headings balance across lines instead of orphaning a word; prose avoids a
+   lone last word. Matters most in ru and ar, whose strings run longest. */
+h1, h2, h3, h4 {
+  text-wrap: balance;
+}
+p {
+  text-wrap: pretty;
+}
+
+/* Removes the ~300ms double-tap-zoom delay and the default blue tap flash on
+   touch devices, replacing it with a tint drawn from the accent. */
+a,
+button,
+summary,
+[role="button"] {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: color-mix(in srgb, var(--accent) 18%, transparent);
+}
+
 ::selection {
   background: var(--accent);
   color: #fff;

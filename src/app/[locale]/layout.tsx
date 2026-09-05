@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { headers } from "next/headers";
-import { Heebo } from "next/font/google";
+import { Heebo, Noto_Sans_Arabic, Noto_Sans } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing, rtlLocales } from "@/i18n/routing";
@@ -11,13 +11,33 @@ import { Footer } from "@/components/Footer";
 import { AccessibilityMenu } from "@/components/AccessibilityMenu";
 import "../globals.css";
 
-// Heebo — the brand face (covers Hebrew + Latin). ar/ru fall back via the
-// font stack in globals.css.
+// Heebo — the brand face (covers Hebrew + Latin). Loaded as a VARIABLE font:
+// the previous static list omitted 600 while loading an unused 300, and 600
+// (font-semibold) is the site's most-used weight — so the browser was
+// synthesizing it. A weight axis covers every step and cannot drift out of
+// sync with the utilities the components actually use.
 const heebo = Heebo({
   subsets: ["hebrew", "latin"],
-  weight: ["300", "400", "500", "700", "800", "900"],
   variable: "--font-heebo",
   display: "swap",
+});
+
+// globals.css named "Noto Sans Arabic" and "Noto Sans" in its :lang(ar)/:lang(ru)
+// stacks but nothing ever loaded them, so those locales rendered in whatever the
+// OS happened to have. Both are attached per-locale below; preload is off because
+// they serve one locale each and would otherwise be fetched for every visitor.
+const notoArabic = Noto_Sans_Arabic({
+  subsets: ["arabic"],
+  variable: "--font-noto-arabic",
+  display: "swap",
+  preload: false,
+});
+
+const notoSans = Noto_Sans({
+  subsets: ["cyrillic", "latin"],
+  variable: "--font-noto-sans",
+  display: "swap",
+  preload: false,
 });
 
 export function generateStaticParams() {
@@ -53,6 +73,15 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   const dir = rtlLocales.has(locale) ? "rtl" : "ltr";
+  // Attach only the face this locale needs — Hebrew/English ship Heebo alone,
+  // and ar/ru add their script's Noto on top of it as the CSS stacks expect.
+  const fontVars = [
+    heebo.variable,
+    locale === "ar" ? notoArabic.variable : "",
+    locale === "ru" ? notoSans.variable : "",
+  ]
+    .filter(Boolean)
+    .join(" ");
   const t = await getTranslations("a11y");
   const tWip = await getTranslations("wip");
   // Reading a header forces dynamic rendering, which nonce-CSP requires: Next
@@ -67,7 +96,7 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       dir={dir}
-      className={`${heebo.variable} h-full antialiased`}
+      className={`${fontVars} h-full antialiased`}
       suppressHydrationWarning
     >
       <head>

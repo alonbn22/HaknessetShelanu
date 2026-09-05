@@ -89,3 +89,53 @@ test("safeHttpUrl only passes http(s) URLs", async () => {
   assert.equal(safeHttpUrl(null), null);
   assert.equal(safeHttpUrl(undefined), null);
 });
+
+// Tailwind's font-weight utilities are just numbers; nothing checks that the
+// number is a weight the font actually ships. It once wasn't: the Heebo config
+// listed 300/400/500/700/800/900 while `font-semibold` (600) was the site's
+// most-used weight, so every one of those 99 usages was synthesized by the
+// browser. A variable font makes all weights real; a static list must cover
+// every weight the components use.
+test("every font-weight utility used in src is actually loaded", () => {
+  const WEIGHTS: Record<string, string> = {
+    thin: "100",
+    extralight: "200",
+    light: "300",
+    normal: "400",
+    medium: "500",
+    semibold: "600",
+    bold: "700",
+    extrabold: "800",
+    black: "900",
+  };
+  const layout = fs.readFileSync(
+    path.join(ROOT, "src/app/[locale]/layout.tsx"),
+    "utf8",
+  );
+
+  // A next/font call with no `weight` key loads the variable font (all weights).
+  const heebo = layout.match(/const heebo = Heebo\(\{[\s\S]*?\n\}\);/)?.[0];
+  assert.ok(heebo, "could not find the Heebo font config in layout.tsx");
+  const declared = heebo.match(/weight:\s*\[([^\]]*)\]/);
+
+  if (!declared) return; // variable axis — every weight is available.
+
+  const loaded = new Set(declared[1].match(/\d{3}/g) ?? []);
+  const used = new Map<string, string>();
+  for (const file of sourceFiles) {
+    if (!file.endsWith(".tsx")) continue;
+    for (const m of fs.readFileSync(file, "utf8").matchAll(/font-([a-z]+)\b/g)) {
+      const w = WEIGHTS[m[1]];
+      if (w && !used.has(w)) used.set(w, path.relative(ROOT, file));
+    }
+  }
+  const missing = [...used]
+    .filter(([w]) => !loaded.has(w))
+    .map(([w, file]) => `${w} (font-${Object.keys(WEIGHTS).find((k) => WEIGHTS[k] === w)}, e.g. ${file})`);
+  assert.equal(
+    missing.length,
+    0,
+    `Weights used in src but not loaded in layout.tsx — the browser will fake them. ` +
+      `Add them to the weight array, or drop the array to load the variable font: ${missing.join(", ")}`,
+  );
+});

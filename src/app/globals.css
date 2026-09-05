@@ -36,11 +36,13 @@ body {
     var(--font-heebo), "Noto Sans Hebrew", "Noto Sans Arabic", "Noto Sans",
     -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
+/* The bare family names stay as a fallback for locally-installed copies; the
+   variables are the webfonts the layout attaches per-locale. */
 :lang(ar) {
-  font-family: "Noto Sans Arabic", var(--font-heebo), sans-serif;
+  font-family: var(--font-noto-arabic), "Noto Sans Arabic", var(--font-heebo), sans-serif;
 }
 :lang(ru) {
-  font-family: "Noto Sans", var(--font-heebo), sans-serif;
+  font-family: var(--font-noto-sans), "Noto Sans", var(--font-heebo), sans-serif;
 }
 ::selection {
   background: var(--accent);

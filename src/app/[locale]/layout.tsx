@@ -125,12 +125,12 @@ export default async function LocaleLayout({
           <a href="#main-content" className="skip-link">
             {t("skipToContent")}
           </a>
-          <div
-            role="note"
-            className="bg-amber-50 border-b border-amber-200 px-4 py-1.5 text-center text-xs leading-snug text-amber-900"
-          >
+          {/* <aside> (complementary landmark), not role="note" — a note is not a
+              landmark, so this banner was the one bit of content on every page
+              that sat outside every region. */}
+          <aside className="bg-amber-50 border-b border-amber-200 px-4 py-1.5 text-center text-xs leading-snug text-amber-900">
             {tWip("notice")}
-          </div>
+          </aside>
           <Header />
           <main
             id="main-content"

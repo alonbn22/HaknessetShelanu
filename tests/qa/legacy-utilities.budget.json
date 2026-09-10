@@ -45,7 +45,6 @@
   "components/MemberCard.tsx": 5,
   "components/MobileNav.tsx": 6,
   "components/NavLinks.tsx": 1,
-  "components/Pagination.tsx": 2,
   "components/ReadingBadge.tsx": 30,
   "components/SearchInput.tsx": 2,
   "components/SeatsBar.tsx": 1,

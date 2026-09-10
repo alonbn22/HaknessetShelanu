@@ -82,7 +82,9 @@ html.dark {
   --accent: #2a63bd;
   --accent-deep: #1e4a92;
   --accent-sky: #6aa8f5;
-  --coalition: #4a86d8;
+  /* Lightened from #4a86d8, which measured 4.38:1 as text on the dark card
+     surface — just under AA. Hue and saturation held; only lightness raised. */
+  --coalition: #578fdb;
   --opposition: #e28a7a;
   color-scheme: dark;
 }

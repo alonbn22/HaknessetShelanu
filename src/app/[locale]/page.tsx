@@ -183,9 +183,9 @@ export default async function HomePage() {
           {/* Key dates ahead — compact timeline (chips + labels; election day bold). */}
           {electionOutlook.keyDates && electionOutlook.keyDates.length > 0 && (
             <div className="mt-5 border-t border-accent/20 pt-4">
-              <h3 className="mb-3 text-xs font-semibold uppercase tracking-wide text-muted">
+              <h2 className="mb-3 text-xs font-semibold uppercase tracking-wide text-muted">
                 {t("election.keyDates")}
-              </h3>
+              </h2>
               <KeyDatesTimeline dates={electionOutlook.keyDates} variant="compact" />
             </div>
           )}
@@ -281,7 +281,7 @@ export default async function HomePage() {
                   href={law.sourceUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs text-accent hover:underline"
+                  className="text-xs text-accent underline"
                 >
                   {t("common.source")}
                 </a>

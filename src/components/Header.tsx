@@ -11,7 +11,7 @@ export function Header() {
   const t = useTranslations();
 
   return (
-    <header className="bg-accent text-white shadow-md sticky top-0 z-40">
+    <header className="bg-chrome text-on-chrome shadow-md sticky top-0 z-40">
       {/* relative: anchors the mobile dropdown panel (absolute top-full inset-x-0) */}
       <div className="relative max-w-6xl mx-auto px-4 py-3 flex flex-wrap items-center gap-x-6 gap-y-2">
         <Link

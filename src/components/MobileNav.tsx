@@ -52,7 +52,7 @@ export function MobileNav() {
           />
           <nav
             id="mobile-nav"
-            className="absolute inset-x-0 top-full z-40 max-h-[70vh] overflow-y-auto border-t border-white/15 bg-accent shadow-lg"
+            className="absolute inset-x-0 top-full z-40 max-h-[70vh] overflow-y-auto border-t border-white/15 bg-chrome shadow-lg"
           >
             <ul className="mx-auto flex max-w-6xl flex-col px-4 py-2">
               {navItems.map((item) => {

@@ -210,7 +210,7 @@ export function AccessibilityMenu() {
           style={{ insetInlineStart: "1rem" }}
         >
           {/* Header */}
-          <div className="flex items-center justify-between bg-accent px-4 py-3 text-white">
+          <div className="flex items-center justify-between bg-chrome px-4 py-3 text-on-chrome">
             <button
               type="button"
               onClick={close}

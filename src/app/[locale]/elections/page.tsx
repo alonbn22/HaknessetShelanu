@@ -347,7 +347,7 @@ export default async function ElectionsHistoryPage() {
         {elections.map((e) => (
           <li
             key={e.knesset}
-            className="rounded-xl bg-white p-5 shadow-sm border-s-4 border-accent"
+            className="rounded-card border border-line bg-surface p-5"
           >
             <div className="flex flex-wrap items-baseline justify-between gap-2">
               <h2 className="text-lg font-bold">

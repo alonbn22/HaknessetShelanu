@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
-import { navItems } from "./nav-items";
+import { navItems, isActive } from "./nav-items";
 
 // Hamburger menu for small screens (desktop uses NavLinks).
 export function MobileNav() {
@@ -29,7 +29,7 @@ export function MobileNav() {
         aria-expanded={open}
         aria-controls="mobile-nav"
         aria-label={t("menu")}
-        className="inline-flex h-10 w-10 items-center justify-center rounded-lg hover:bg-white/10"
+        className="inline-flex h-10 w-10 items-center justify-center rounded-control hover:bg-chrome-hover"
       >
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
           {open ? (
@@ -52,12 +52,11 @@ export function MobileNav() {
           />
           <nav
             id="mobile-nav"
-            className="absolute inset-x-0 top-full z-40 max-h-[70vh] overflow-y-auto border-t border-white/15 bg-chrome shadow-lg"
+            className="absolute inset-x-0 top-full z-40 max-h-[70vh] overflow-y-auto border-t border-on-chrome/20 bg-chrome shadow-float"
           >
             <ul className="mx-auto flex max-w-6xl flex-col px-4 py-2">
               {navItems.map((item) => {
-                const active =
-                  item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
+                const active = isActive(pathname, item.href);
                 return (
                   <li key={item.key}>
                     <Link
@@ -65,7 +64,7 @@ export function MobileNav() {
                       aria-current={active ? "page" : undefined}
                       onClick={() => setOpen(false)}
                       className={`block rounded-lg px-3 py-2.5 text-sm ${
-                        active ? "bg-white/15 font-bold" : "text-white/90 hover:bg-white/10"
+                        active ? "bg-chrome-hover font-semibold" : "text-on-chrome/90 hover:bg-chrome-hover"
                       }`}
                     >
                       {t(item.key)}

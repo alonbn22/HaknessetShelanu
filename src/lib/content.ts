@@ -133,6 +133,20 @@ export function partyText(
   );
 }
 
+// Direction/lang attributes for an editorial string that may have fallen back to
+// another language (ar/ru pages fall back to en, then he). An English sentence
+// inside an RTL layout needs dir="ltr" or its punctuation lands at the wrong
+// end; Hebrew inside an LTR layout needs dir="rtl".
+export function partyTextAttrs(
+  text: { he: string; en?: string; ar?: string; ru?: string } | undefined,
+  locale: string,
+): { dir?: "ltr" | "rtl"; lang?: string } {
+  if (!text) return {};
+  const resolved = (text[locale as keyof typeof text] as string | undefined) != null ? locale : text.en != null ? "en" : "he";
+  if (resolved === locale) return {};
+  return resolved === "he" ? { dir: "rtl", lang: "he" } : { dir: "ltr", lang: resolved };
+}
+
 export function partyList(
   list: { he: string[]; en?: string[]; ar?: string[]; ru?: string[] } | undefined,
   locale: string,
@@ -364,6 +378,16 @@ const electionPartySchema = z.object({
   // 25th-Knesset members): their Wikipedia article.
   leaderWiki: httpUrl.optional(),
   note: localizedText.optional(),
+  // What the list has said about blocs and partners, as reported by the entry's
+  // sources — never inferred from ideology.
+  stance: localizedText.optional(),
+  // The submitted candidate list in ballot order, as published. Hebrew is the
+  // record; `en` is optional and never machine-generated. `personId` links a
+  // 25th-Knesset member to their page and is set only on an exact name match
+  // (a QA test cross-checks every id against the registry name).
+  candidates: z
+    .array(z.object({ he: z.string(), en: z.string().optional(), personId: z.number().optional() }))
+    .optional(),
   factionId: z.number().optional(), // links to /parties/<id> when it maps to a sitting faction
   sources: z
     .array(z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() }))

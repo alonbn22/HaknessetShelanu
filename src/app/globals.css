@@ -10,24 +10,23 @@
    :root, html.dark, html.a11y-contrast — and tests/qa/design-tokens.test.ts
    fails the build if one is missing or a text/surface pair drops under AA. */
 :root {
-  /* Canvas and ink. --chrome is the header/nav bar: the site's structural
-     furniture is ink, and the navy further down is reserved for things you
-     can act on — links, buttons, focus. That split is what lets political
-     colour (coalition/opposition, faction fills) be the only saturated thing
-     on a page. */
-  --background: #f8f7f4;
+  /* The identity is the flag's: its blue (#0038b8) on white, standing on the
+     warm cream of Jerusalem stone — the Knesset building's cladding. National
+     symbols, not any faction's, are how the site says "for everyone". The
+     chrome IS the flag's blue field; nothing else on a page competes with it. */
+  --background: #f4efe4;
   --foreground: #1a1a1a;
-  --chrome: #1a1a1a;
+  --chrome: #0038b8;
   --on-chrome: #ffffff;
-  --chrome-hover: rgba(255, 255, 255, 0.1);
+  --chrome-hover: rgba(255, 255, 255, 0.12);
 
   /* Surfaces and lines. Cards are pure white on the warm canvas on purpose:
      that, plus the --line hairline, is what separates a card from the page. */
   --surface: #ffffff;
-  --surface-sunken: #f1efea;
-  --surface-hover: #f4f3ef;
-  --line: #e3e1da;
-  --line-strong: #c7c4bb;
+  --surface-sunken: #ece5d6;
+  --surface-hover: #f7f3ea;
+  --line: #e2dbcb;
+  --line-strong: #c9bfa8;
 
   /* Muted text; ≥6:1 on every surface above. */
   --muted: #595959;
@@ -35,19 +34,21 @@
   /* Brand blue, split by role: --accent is a FILL (buttons, active states),
      --accent-ink is TEXT. Identical here; they diverge in dark mode, where a
      fill dark enough to carry white text is too dark to read as text. */
-  --accent: #0b3d91;
-  --accent-ink: #0b3d91;
-  --accent-soft: #e8eef8;
-  --accent-line: #b9c9e6;
+  --accent: #0038b8;
+  --accent-ink: #0038b8;
+  --accent-soft: #e6ecf8;
+  --accent-line: #b3c2e8;
   --on-accent: #ffffff;
-  --accent-deep: #06245a; /* legacy alias — retired in Stage D */
+  --accent-deep: #002a8c; /* legacy alias — retired in Stage D */
   --accent-sky: #3f7fd4; /* legacy alias — retired in Stage D */
 
-  /* The political pair is data, not decoration. Same fill/ink split. */
-  --coalition: #0b3d91;
-  --coalition-ink: #0b3d91;
-  --opposition: #b03a2e;
-  --opposition-ink: #b03a2e;
+  /* Coalition and opposition are both Israel: the same blue, split by the
+     aisle, never blue-versus-red. Two tokens remain so the split can be
+     expressed by position and form; their values are identical by design. */
+  --coalition: #0038b8;
+  --coalition-ink: #0038b8;
+  --opposition: #0038b8;
+  --opposition-ink: #0038b8;
 
   /* Status ramp: five tones × {base, soft, ink, line}. Every ink clears
      4.5:1 on its own soft and on --surface. */
@@ -63,10 +64,10 @@
   --warn-soft: #fdf3dc;
   --warn-ink: #7c3a00;
   --warn-line: #f5cf7a;
-  --info: #0b3d91;
-  --info-soft: #e8eef8;
-  --info-ink: #0b3d91;
-  --info-line: #b9c9e6;
+  --info: #0038b8;
+  --info-soft: #e6ecf8;
+  --info-ink: #0038b8;
+  --info-line: #b3c2e8;
   --neutral: #595959;
   --neutral-soft: #eeece7;
   --neutral-ink: #404040;
@@ -125,6 +126,13 @@
   --color-focus: var(--focus);
   --color-focus-ring: var(--focus-ring);
 
+  /* Display face: Frank Ruhl Libre, the face of the state's own documents
+     (the Declaration of Independence is set in Frank-Rühl). Hebrew + Latin;
+     ar/ru headings fall back to their Noto faces via the stack. */
+  /* Every var() carries a fallback: --font-noto-arabic/-sans are attached per
+     locale, and one undefined var() invalidates the whole declaration. */
+  --font-display: var(--font-frank, "Frank Ruhl Libre"), var(--font-noto-arabic, "Noto Sans Arabic"), var(--font-noto-sans, "Noto Sans"), serif;
+
   /* One radius scale: cards, controls, chips. Nesting a chip inside a card
      stays geometrically sane because the inner radius is always smaller. */
   --radius-card: 0.75rem;
@@ -176,7 +184,20 @@ summary,
 
 ::selection {
   background: var(--accent);
-  color: #fff;
+  color: var(--on-accent);
+}
+html {
+  caret-color: var(--accent);
+  accent-color: var(--accent);
+}
+a {
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+/* The flag's two stripes, as the rule beneath the chrome. */
+.stripe-rule {
+  border-block-end: 3px solid var(--on-chrome);
+  box-shadow: 0 3px 0 var(--chrome);
 }
 
 /* ---------- Dark mode ---------- */
@@ -187,11 +208,11 @@ summary,
 html.dark {
   --background: #14181e;
   --foreground: #e7e9ec;
-  /* The bar goes deeper than the canvas so it still reads as a bar; the
-     hairline the .shadow-md override draws below it does the rest. */
-  --chrome: #0e1116;
-  --on-chrome: #f4f5f7;
-  --chrome-hover: rgba(255, 255, 255, 0.1);
+  /* The flag's blue, deep enough to carry white text at 12.9:1 and to read
+     as a bar against the near-black canvas. */
+  --chrome: #0a2a7a;
+  --on-chrome: #ffffff;
+  --chrome-hover: rgba(255, 255, 255, 0.12);
 
   /* --surface equals the value the retrofit gave .bg-white, so migrating a
      card to bg-surface is visually a no-op. --surface-sunken is LIGHTER than
@@ -219,8 +240,8 @@ html.dark {
   /* Lightened from #4a86d8, which measured 4.38:1 as text on the card. */
   --coalition: #578fdb;
   --coalition-ink: #578fdb;
-  --opposition: #e28a7a;
-  --opposition-ink: #e28a7a;
+  --opposition: #578fdb;
+  --opposition-ink: #578fdb;
 
   --pass: #3ddc84;
   --pass-soft: #12291d;
@@ -304,20 +325,6 @@ html.dark .border-green-200 { border-color: rgba(34, 197, 94, 0.32); }
 html.dark .border-red-200 { border-color: rgba(239, 68, 68, 0.32); }
 html.dark .border-amber-200 { border-color: rgba(245, 158, 11, 0.32); }
 
-/* Flag-filled wordmark logo: fills the Hebrew letters with the Israeli-flag
-   texture, with a thin white stroke to stay crisp on the dark header. */
-.logo-flag {
-  background-image: url("/assets/flag-fill.png");
-  background-size: 100% 100%;
-  background-position: center;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  -webkit-text-stroke: 0.6px rgba(255, 255, 255, 0.9);
-  filter: drop-shadow(0 1px 1.5px rgba(0, 0, 0, 0.35));
-}
-
 /* ---------- Accessibility (Israeli Standard 5568 / WCAG 2.0 AA) ---------- */
 
 /* Visible keyboard focus everywhere. */
@@ -367,12 +374,11 @@ html.a11y-contrast {
   --on-accent: #000000;
   --accent-deep: #ffff00;
   --accent-sky: #ffff00;
-  /* The political pair must stay distinguishable from each other and from the
-     yellow accent: light blue vs. salmon, both >10:1 on black. */
+  /* One blue for both blocs here too; the aisle carries the split. */
   --coalition: #8ab4ff;
   --coalition-ink: #8ab4ff;
-  --opposition: #ff9d8a;
-  --opposition-ink: #ff9d8a;
+  --opposition: #8ab4ff;
+  --opposition-ink: #8ab4ff;
   --pass: #6fe3a3;
   --pass-soft: #000000;
   --pass-ink: #6fe3a3;

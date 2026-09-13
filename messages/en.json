@@ -23,7 +23,8 @@
     "lobbyists": "Lobbyists",
     "tickets": "Tickets",
     "menu": "Menu",
-    "compare": "Compare"
+    "compare": "Compare",
+    "more": "More"
   },
   "common": {
     "knessetNum": "{num}th Knesset",
@@ -60,7 +61,9 @@
     "seatsView": "View",
     "seatsViewBar": "Bar",
     "seatsViewHemicycle": "Hemicycle",
-    "votingDays": "The plenum held votes on {term} days this Knesset — {inYear} of them in {year}"
+    "votingDays": "The plenum held votes on {term} days this Knesset — {inYear} of them in {year}",
+    "thisWeekEmpty": "No committee sittings are scheduled in the next seven days.",
+    "figuresSource": "Source: Knesset open-data API · as of {date}"
   },
   "members": {
     "title": "Knesset Members",
@@ -202,7 +205,9 @@
     "sponsors": "Bill sponsors",
     "tapToFilter": "Tap a result to see who voted that way",
     "showingWho": "Showing who voted: {result}",
-    "notInRollCall": "Official Knesset tally. {n} of those who voted are former members, not shown in the breakdown below."
+    "notInRollCall": "Official Knesset tally. {n} of those who voted are former members, not shown in the breakdown below.",
+    "date": "Date",
+    "result": "Result"
   },
   "voteResult": {
     "r1": "For",
@@ -359,8 +364,8 @@
     "keyFacts": "Key facts",
     "parties": "Who is expected to run",
     "keyDates": "Key dates on the road to the 26th Knesset",
-    "finalListsNote": "The full candidate rosters will appear here once submitted — expected {date}.",
-    "partiesNote": "Candidate lists are final only once submitted to the Central Elections Committee; until then the field may change.",
+    "finalListsNote": "Lists whose rosters are not yet published will be added when the approved lists are published — expected {date}.",
+    "partiesNote": "The lists as submitted to the Central Elections Committee on September 7–8, 2026; submission is not approval, and final approval is expected by September 27.",
     "rules": "Election rules",
     "stats": "Facts & figures",
     "news": "Updates",
@@ -370,7 +375,10 @@
     "homeCta": "Everything about the upcoming election",
     "morePartyInfo": "More about the party",
     "newList": "New list — not yet in the Knesset",
-    "inDays": "{days, plural, =0 {happening today} one {in # day} other {in # days}}"
+    "inDays": "{days, plural, =0 {happening today} one {in # day} other {in # days}}",
+    "candidates": "Candidate list",
+    "stance": "Stated position on partners",
+    "showAll": "Show the full list"
   },
   "electionsHistory": {
     "title": "Knesset Elections History",

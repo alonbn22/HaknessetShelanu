@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
 import { headers } from "next/headers";
-import { Heebo, Noto_Sans_Arabic, Noto_Sans } from "next/font/google";
+import { Heebo, Noto_Sans_Arabic, Noto_Sans, Frank_Ruhl_Libre } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing, rtlLocales } from "@/i18n/routing";
@@ -26,6 +26,14 @@ const heebo = Heebo({
 // stacks but nothing ever loaded them, so those locales rendered in whatever the
 // OS happened to have. Both are attached per-locale below; preload is off because
 // they serve one locale each and would otherwise be fetched for every visitor.
+// Display face for headings and the aisle numerals: Frank Ruhl Libre, the
+// state's own document face. Loaded on every locale — it carries the identity.
+const frank = Frank_Ruhl_Libre({
+  subsets: ["hebrew", "latin"],
+  variable: "--font-frank",
+  display: "swap",
+});
+
 const notoArabic = Noto_Sans_Arabic({
   subsets: ["arabic"],
   variable: "--font-noto-arabic",
@@ -45,7 +53,7 @@ const notoSans = Noto_Sans({
 // here; prefers-color-scheme is the closest the platform allows.
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f8f7f4" },
+    { media: "(prefers-color-scheme: light)", color: "#f4efe4" },
     { media: "(prefers-color-scheme: dark)", color: "#14181e" },
   ],
 };
@@ -87,6 +95,7 @@ export default async function LocaleLayout({
   // and ar/ru add their script's Noto on top of it as the CSS stacks expect.
   const fontVars = [
     heebo.variable,
+    frank.variable,
     locale === "ar" ? notoArabic.variable : "",
     locale === "ru" ? notoSans.variable : "",
   ]

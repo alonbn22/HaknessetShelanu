@@ -6,6 +6,7 @@ import {
   getElectionOutlook,
   getPartyProfile,
   partyText,
+  partyTextAttrs,
   partyList,
   type ElectionFact,
 } from "@/lib/content";
@@ -235,7 +236,36 @@ export default async function ElectionsHistoryPage() {
                       </ul>
                     )}
                     {p.note && (
-                      <p className="text-xs leading-relaxed">{partyText(p.note, locale)}</p>
+                      <p className="text-xs leading-relaxed" {...partyTextAttrs(p.note, locale)}>{partyText(p.note, locale)}</p>
+                    )}
+                    {p.stance && (
+                      <p className="text-xs leading-relaxed" {...partyTextAttrs(p.stance, locale)}>
+                        <span className="font-semibold">{te("stance")}: </span>
+                        {partyText(p.stance, locale)}
+                      </p>
+                    )}
+                    {p.candidates && p.candidates.length > 0 && (
+                      // The submitted roster, in ballot order. Names are the
+                      // Hebrew record in every locale (never machine-transliterated);
+                      // sitting members link to their page.
+                      <details className="text-xs" open={p.candidates.length <= 8}>
+                        <summary className="cursor-pointer font-semibold">
+                          {te("candidates")} <span className="font-normal text-muted tabular-nums">({p.candidates.length})</span>
+                        </summary>
+                        <ol className="mt-1 columns-2 gap-x-4 ps-4 leading-relaxed [&>li]:break-inside-avoid" dir="rtl" lang="he">
+                          {p.candidates.map((c, i) => (
+                            <li key={c.he} value={i + 1} className="list-decimal">
+                              {c.personId != null ? (
+                                <Link href={`/members/${c.personId}`} className="text-accent-ink underline">
+                                  {c.he}
+                                </Link>
+                              ) : (
+                                c.he
+                              )}
+                            </li>
+                          ))}
+                        </ol>
+                      </details>
                     )}
                     <SourceLinks sources={p.sources} label={tc("source")} />
                     {profile && p.factionId != null && (

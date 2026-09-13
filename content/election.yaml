@@ -10,32 +10,46 @@
 knesset: 26
 expectedDate: "2026-10-27"
 dateStatus: set
-lastReviewed: "2026-07-17"
+lastReviewed: "2026-09-13"
 
 headline:
   he: "הבחירות לכנסת ה-26 יתקיימו ביום שלישי, 27 באוקטובר 2026."
   en: "The 26th Knesset election is set for Tuesday, October 27, 2026."
 
 intro:
-  he: "הכנסת ה-25 השלימה קדנציה מלאה והתפזרה ב-17 ביולי 2026, והבחירות יתקיימו במועד הקבוע בחוק. בעמוד זה: המועדים, מי צפוי להתמודד, כללי הבחירות והנתונים — כל פריט עם מקור."
-  en: "The 25th Knesset completed a full term and dispersed on July 17, 2026; the election will be held on its statutory date. This page covers the timeline, who is expected to run, the rules, and the numbers — every item with a source."
+  he: "הכנסת ה-25 השלימה קדנציה מלאה והתפזרה ב-17 ביולי 2026, והבחירות יתקיימו במועד הקבוע בחוק. הרשימות הוגשו ב-7–8 בספטמבר 2026. בעמוד זה: המועדים, מי מתמודד ועם מי, כללי הבחירות והנתונים — כל פריט עם מקור."
+  en: "The 25th Knesset completed a full term and dispersed on July 17, 2026; the election will be held on its statutory date. The lists were submitted on September 7–8, 2026. This page covers the timeline, who is running and with whom, the rules, and the numbers — every item with a source."
 
 # The road to the 26th Knesset — when each thing becomes known/final.
 keyDates:
   - key: kd-lists
-    date: "2026-09-10"
-    label: { he: "הגשת רשימות המועמדים — ההרכבים הופכים סופיים", en: "Candidate lists submitted — line-ups become final" }
+    date: "2026-09-08"
+    label: { he: "הגשת רשימות המועמדים — ההרכבים סופיים", en: "Candidate lists submitted — line-ups are final" }
     detail:
-      he: "צפוי בסביבות 9-10 בספטמבר 2026 (דיווח אחד: 7 בספטמבר). מרגע ההגשה לוועדת הבחירות המרכזית הרשימות סופיות — ואז יופיעו כאן כל המתמודדים."
-      en: "Expected around September 9–10, 2026 (one report: September 7). Once submitted to the Central Elections Committee the lists are final — and the full candidate rosters will appear here."
+      he: "38 רשימות הוגשו ליו\"ר ועדת הבחירות המרכזית, השופט נעם סולברג, במשכן הכנסת ב-7–8 בספטמבר 2026. ההגשה אינה אישור: הרשימות, הכינויים והאותיות נבדקים כעת."
+      en: "38 lists were submitted to the chair of the Central Elections Committee, Justice Noam Sohlberg, at the Knesset on September 7–8, 2026. Submission is not approval: the lists, names and ballot letters are now under review."
+    status: confirmed
+    sources:
+      - url: "https://ch10.co.il/news/1100694/"
+        title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26"
+        publisher: "חרדים10"
+      - url: "https://www.emess.co.il/radio/1927478"
+        title: "תם המרוץ: 38 רשימות הגישו מועמדות לכנסת ה-26"
+        publisher: "אמס"
+      - url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm"
+        title: "כל העדכונים מסגירת הרשימות לכנסת ה-26"
+        publisher: "N12"
+  - key: kd-approval
+    date: "2026-09-27"
+    label: { he: "אישור הרשימות הסופי", en: "Final approval of the lists" }
+    detail:
+      he: "לפי הדיווח, ועדת הבחירות המרכזית צפויה לאשר סופית את הרשימות עד 27 בספטמבר 2026."
+      en: "Per reporting, the Central Elections Committee is expected to give final approval to the lists by September 27, 2026."
     status: reported
     sources:
-      - url: "https://www.zman.co.il/live/705042/"
-        title: "לוח הזמנים לבחירות לכנסת: המועד האחרון להגשת מועמדות"
-        publisher: "Zman Yisrael"
-      - url: "https://www.i24news.tv/he/news/israel-elections-2026/artc-8c8f593a"
-        title: "הלו\"ז המלא לבחירות 2026"
-        publisher: "i24NEWS"
+      - url: "https://ch10.co.il/news/1100694/"
+        title: "הרשימות נסגרו: מי יהיו 120 הח\"כים?"
+        publisher: "חרדים10"
   - key: kd-election
     date: "2026-10-27"
     label: { he: "יום הבחירות", en: "Election day" }
@@ -160,180 +174,372 @@ parties:
     leaderPersonId: 965
     factionId: 1096
     note:
-      he: "צפוי להתמודד בראשות ראש הממשלה נתניהו, לאחר שמפלגת תקווה חדשה בראשות גדעון סער התמזגה לתוכו באוגוסט 2025."
-      en: "Expected to run under Prime Minister Netanyahu, after Gideon Sa'ar's New Hope merged into Likud in August 2025."
+      he: "הרשימה הוגשה ב-8 בספטמבר 2026 בראשות ראש הממשלה נתניהו; אלי כהן, אמיר אוחנה, יריב לוין, מירי רגב וישראל כץ בחמישייה הפותחת, גדעון סער במקום השביעי. לפי N12, אמיר אביבי ויתר על המקום ה-35 ברשימה."
+      en: "Submitted September 8, 2026 under Prime Minister Netanyahu; Eli Cohen, Amir Ohana, Yariv Levin, Miri Regev and Yisrael Katz fill the top five, Gideon Sa'ar is seventh. Per N12, Amir Avivi gave up the 35th slot."
+    candidates:
+      - { he: "בנימין נתניהו", personId: 965 }
+      - { he: "אליהו כהן" }
+      - { he: "אמיר אוחנה", personId: 30300 }
+      - { he: "יריב גדעון לוין" }
+      - { he: "מרים רגב" }
+      - { he: "ישראל כץ", personId: 468 }
+      - { he: "גדעון משה סער" }
+      - { he: "אופיר כץ", personId: 30701 }
+      - { he: "טלי גואילי" }
+      - { he: "יואב קיש", personId: 30057 }
+      - { he: "יעקב ברדוגו" }
+      - { he: "מכלוף זוהר" }
+      - { he: "אלמוג כהן", personId: 30833 }
+      - { he: "עמיחי שיקלי", personId: 30786 }
+      - { he: "אלישע מדן" }
+      - { he: "דוד פטר" }
+      - { he: "משה סעדה", personId: 30853 }
+      - { he: "חיים כץ", personId: 556 }
+      - { he: "דוד אמסלם", personId: 23564 }
+      - { he: "אתי-חוה עטייה" }
+      - { he: "בועז ביסמוט", personId: 30835 }
+      - { he: "דוד ביטן", personId: 23558 }
+      - { he: "שלמה קרעי", personId: 30704 }
+      - { he: "ניר ברקת", personId: 30700 }
+      - { he: "גילה גמליאל דמרי" }
+      - { he: "אלי גולדשמידט" }
+      - { he: "ארז תדמור" }
+      - { he: "שלמה יוסף לרנר" }
+      - { he: "יצחק בונצל" }
+      - { he: "משה בנימין פרץ" }
     sources:
-      - url: "https://www.timesofisrael.com/ruling-likud-party-approves-merger-with-gideon-saars-new-hope/"
-        title: "Ruling Likud party approves merger with Gideon Sa'ar's New Hope"
-        publisher: "The Times of Israel"
-      - url: "https://www.aljazeera.com/news/2026/7/17/knesset-dissolves-how-will-israel-vote-in-octobers-general-election"
-        title: "Knesset dissolves: How will Israel vote?"
-        publisher: "Al Jazeera"
-  - name: { he: "ביחד (בנט 2026 – יש עתיד)", en: "Together (Bennett 2026 – Yesh Atid)" }
+      - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
+      - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
+  - name: { he: "ביחד", en: "Together" }
     leader: { he: "נפתלי בנט", en: "Naftali Bennett" }
     leaderWiki: "https://en.wikipedia.org/wiki/Naftali_Bennett"
     note:
-      he: "רשימה משותפת של בנט 2026 ויש עתיד בראשות יאיר לפיד, שהוכרזה ב-26 באפריל 2026; בנט עומד בראשה כמועמד לראשות הממשלה. בנט כיהן כראש הממשלה ה-13 של ישראל (2021–2022), ולפני כן עמד בראש ימינה והבית היהודי וכיהן כשר הביטחון, שר החינוך ושר הכלכלה."
-      en: "A joint list of Bennett 2026 and Yair Lapid's Yesh Atid, announced April 26, 2026, with Bennett heading the slate as its candidate for prime minister. Bennett served as Israel's 13th prime minister (2021–2022); he previously led Yamina and the Jewish Home and served as defense, education and economy minister."
+      he: "הרשימה המשותפת של בנט 2026 ויש עתיד הייתה הראשונה להגיש, ב-7 בספטמבר 2026; יאיר לפיד במקום השני. מגעים לאיחוד עם ישר! של איזנקוט לא הבשילו לרשימה משותפת."
+      en: "The Bennett 2026–Yesh Atid joint list was the first to submit, on September 7, 2026; Yair Lapid is second. Talks on a merger with Eisenkot's Yashar! did not produce a joint list."
+    candidates:
+      - { he: "נפתלי בנט" }
+      - { he: "יאיר לפיד", personId: 23594 }
+      - { he: "קרן טרנר אייל" }
+      - { he: "מירב בן ארי", personId: 30102 }
+      - { he: "לירן אבישר בן חורין" }
+      - { he: "נעם תיבון" }
+      - { he: "מיכל הירש נגרי" }
+      - { he: "איתן גינזבורג", personId: 30693 }
+      - { he: "מירב כהן", personId: 30686 }
+      - { he: "יונתן שלו" }
+      - { he: "ברוריה נעים ארמן" }
+      - { he: "רם בן ברק", personId: 30691 }
+      - { he: "אמיר סטרוגו" }
+      - { he: "נאור שירי", personId: 30854 }
+      - { he: "ניסן זאבי" }
+      - { he: "ולדימיר בליאק", personId: 30776 }
+      - { he: "אורלי אלידן-הראל" }
+      - { he: "יוראי להב הרצנו", personId: 30720 }
+      - { he: "שחר ורון" }
+      - { he: "יסמין פרידמן", personId: 30783 }
     sources:
-      - url: "https://www.timesofisrael.com/naftali-bennett-and-yair-lapid-announce-united-run-under-bennett-in-2026-elections/"
-        title: "Naftali Bennett and Yair Lapid announce united run under Bennett"
-        publisher: "The Times of Israel"
-      - url: "https://en.wikipedia.org/wiki/Naftali_Bennett"
-        title: "Naftali Bennett (Wikipedia)"
-        publisher: "Wikipedia"
-  - name: { he: "ישר", en: "Yashar" }
+      - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
+      - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
+      - { url: "https://www.timesofisrael.com/naftali-bennett-and-yair-lapid-announce-united-run-under-bennett-in-2026-elections/", title: "Naftali Bennett and Yair Lapid announce united run under Bennett", publisher: "The Times of Israel" }
+  - name: { he: "ישר!", en: "Yashar!" }
     leader: { he: "גדי איזנקוט", en: "Gadi Eisenkot" }
     leaderPersonId: 30836
     note:
-      he: "מפלגה שהקים הרמטכ\"ל לשעבר גדי איזנקוט בספטמבר 2025; פתחה את קמפיין הבחירות ב-30 ביוני 2026."
-      en: "Founded by former IDF chief of staff Gadi Eisenkot in September 2025; launched its campaign on June 30, 2026."
+      he: "הוגשה ב-7 בספטמבר 2026. ברשימה, בין השאר, ראש השב\"כ לשעבר יורם כהן (2), אורית פרקש-הכהן (3), מתן כהנא (5) וחילי טרופר (6), שהוכרז קודם לכן במסגרת ברית עם יועז הנדל."
+      en: "Submitted September 7, 2026. The list includes former Shin Bet chief Yoram Cohen (2), Orit Farkash-Hacohen (3), Matan Kahana (5) and Hili Tropper (6), previously announced in an alliance with Yoaz Hendel."
+    stance:
+      he: "שאול מרידור, מספר 7 ברשימה, הגדיר את גוש השינוי כך: \"כל מי שהוא לא ישר, ביחד, ישראל ביתנו והדמוקרטים – הוא של נתניהו\" (N12, 7.9.2026)."
+      en: "Shaul Meridor, seventh on the list, framed the change bloc as: \"anyone who is not Yashar, Together, Yisrael Beiteinu or the Democrats — is Netanyahu's\" (N12, Sept 7, 2026)."
+    candidates:
+      - { he: "גדי איזנקוט" }
+      - { he: "יורם כהן" }
+      - { he: "אורית פרקש-הכהן" }
+      - { he: "עדי אלטשולר" }
+      - { he: "מתן כהנא" }
+      - { he: "חילי טרופר", personId: 30683 }
+      - { he: "שאול מרידור" }
+      - { he: "תאיר איפרגן" }
+      - { he: "אושרת גני גונן" }
+      - { he: "שירה שפירא" }
+      - { he: "ענבר הרוש גיטי" }
+      - { he: "אלעזר שטרן", personId: 23591 }
+      - { he: "כמיל אבו רוקן" }
+      - { he: "דבורה בכר" }
+      - { he: "אלקס ריף" }
+      - { he: "ענבר יחזקאלי בליליוס" }
+      - { he: "רועי פולקמן" }
+      - { he: "ישראל דרי" }
+      - { he: "טל אוחנה" }
+      - { he: "אליסף פרץ" }
+      - { he: "יפה טבג'ה" }
+      - { he: "ניר חג'בי" }
+      - { he: "רון ברקאי" }
+      - { he: "שי אנדראה פישר" }
+      - { he: "ליאן פולק-דוד" }
+      - { he: "רועי כהן" }
+      - { he: "זיו רונן" }
+      - { he: "ג'וסלין באש" }
+      - { he: "אלון צבי פוטרמן" }
+      - { he: "טלי מולנר" }
     sources:
-      - url: "https://www.thenationalnews.com/news/mena/2026/07/14/who-are-the-key-players-as-israel-heads-to-elections-in-october/"
-        title: "Who are the key players as Israel heads to elections in October?"
-        publisher: "The National"
+      - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
+      - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "הדמוקרטים", en: "The Democrats" }
     leader: { he: "יאיר גולן", en: "Yair Golan" }
     leaderWiki: "https://en.wikipedia.org/wiki/Yair_Golan"
     factionId: 1100
     note:
-      he: "מפלגת האיחוד של העבודה ומרצ; לפי דיווחים, יו\"ר העבודה לשעבר מרב מיכאלי פורשת מהכנסת. גולן, סגן הרמטכ\"ל לשעבר וחבר הכנסת ה-24 מטעם מרצ, נבחר לראשות העבודה במאי 2024 והוביל את מיזוגה עם מרצ להקמת הדמוקרטים."
-      en: "The merged Labor–Meretz party; former Labor leader Merav Michaeli is reportedly retiring from the Knesset. Golan, a former IDF deputy chief of staff and Meretz MK in the 24th Knesset, was elected Labor leader in May 2024 and led its merger with Meretz to form The Democrats."
+      he: "מפלגת האיחוד של העבודה ומרצ הגישה את רשימתה ב-7 בספטמבר 2026; נעמה לזימי, גלעד קריב ואפרת רייטן במקומות 2–4."
+      en: "The merged Labor–Meretz party submitted on September 7, 2026; Naama Lazimi, Gilad Kariv and Efrat Rayten hold slots 2–4."
+    candidates:
+      - { he: "יאיר גולן" }
+      - { he: "נעמה לזימי", personId: 30106 }
+      - { he: "גלעד קריב", personId: 30807 }
+      - { he: "אפרת רייטן" }
+      - { he: "יאיא פינק" }
+      - { he: "גבי לסקי" }
+      - { he: "עמרי רונן" }
+      - { he: "מיכל רוזין" }
+      - { he: "משה רדמן" }
+      - { he: "סומיה בשיר" }
+      - { he: "נמרוד שפר" }
+      - { he: "מורן זר קצנשטיין" }
+      - { he: "אבי דאבוש" }
+      - { he: "אמילי מואטי" }
+      - { he: "תומר אביטל" }
     sources:
-      - url: "https://www.mako.co.il/news-israel-elections/2026/Article-37275a925e7dd91026.htm"
-        title: "חצי שנה לבחירות: המפלגות, המצטרפים החדשים והסקרים"
-        publisher: "N12"
-      - url: "https://en.wikipedia.org/wiki/Yair_Golan"
-        title: "Yair Golan (Wikipedia)"
-        publisher: "Wikipedia"
-  - name: { he: "ש\"ס", en: "Shas" }
-    leader: { he: "אריה דרעי", en: "Aryeh Deri" }
-    leaderPersonId: 2291
-    factionId: 1095
-    note: { he: "צפויה להתמודד.", en: "Expected to run." }
-    sources:
-      - url: "https://www.ynetnews.com/article/hjqfh3euxe"
-        title: "Staring down the barrel of elections, Shas' Deri weighs whom he shall serve"
-        publisher: "Ynetnews"
-  - name: { he: "יהדות התורה", en: "United Torah Judaism" }
-    leader: { he: "יצחק גולדקנופף", en: "Yitzhak Goldknopf" }
-    leaderPersonId: 30846
-    factionId: 1101
-    note: { he: "צפויה להתמודד.", en: "Expected to run." }
-    sources:
-      - url: "https://www.thenationalnews.com/news/mena/2026/07/14/who-are-the-key-players-as-israel-heads-to-elections-in-october/"
-        title: "Who are the key players as Israel heads to elections in October?"
-        publisher: "The National"
-  - name: { he: "הציונות הדתית", en: "Religious Zionism" }
-    leader: { he: "בצלאל סמוטריץ'", en: "Bezalel Smotrich" }
-    leaderPersonId: 30055
-    factionId: 1097
-    note:
-      he: "צפויה להתמודד; מהלך לריצה משותפת עם עוצמה יהודית, המקודם לפי דיווחים על ידי נתניהו, לא הבשיל נכון ליולי 2026."
-      en: "Expected to run; a reported Netanyahu-backed push for a joint run with Otzma Yehudit had not materialized as of July 2026."
-    sources:
-      - url: "https://www.jns.org/news/israel-news/netanyahu-pushes-smotrich-ben-gvir-merger-to-protect-right-wing-bloc"
-        title: "Netanyahu pushes Smotrich–Ben Gvir merger"
-        publisher: "JNS"
-      - url: "https://www.thenationalnews.com/news/mena/2026/07/14/who-are-the-key-players-as-israel-heads-to-elections-in-october/"
-        title: "Who are the key players as Israel heads to elections in October?"
-        publisher: "The National"
-  - name: { he: "עוצמה יהודית", en: "Otzma Yehudit" }
-    leader: { he: "איתמר בן גביר", en: "Itamar Ben Gvir" }
-    leaderPersonId: 30811
-    factionId: 1106
-    note:
-      he: "צפויה להתמודד; בן גביר הצהיר ביוני 2026 כי בכוונתו לרוץ עצמאית ולא במשותף עם סמוטריץ'."
-      en: "Expected to run; Ben Gvir said in June 2026 he intends to run independently rather than jointly with Smotrich."
-    sources:
-      - url: "https://www.srugim.co.il/101004735"
-        title: "בן גביר מבהיר: זו הסיבה שלא ארוץ עם סמוטריץ'"
-        publisher: "Srugim"
+      - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
+      - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "כחול לבן", en: "Blue and White" }
     leader: { he: "בני גנץ", en: "Benny Gantz" }
     leaderPersonId: 30657
     factionId: 1110
     note:
-      he: "לשעבר המחנה הממלכתי; צפויה להתמודד, כאשר לפי דיווחים גנץ דוחה לחצים לפרוש מהמרוץ."
-      en: "Formerly National Unity; expected to run, with Gantz reportedly rejecting pressure to withdraw from the race."
+      he: "הוגשה ב-8 בספטמבר 2026. לפי N12, פנינה תמנו-שטה במקום השני ואלון שוסטר בשלישייה הפותחת; הרשימה המלאה טרם פורסמה במקורות שבידינו."
+      en: "Submitted September 8, 2026. Per N12, Pnina Tamano-Shata is second and Alon Schuster is in the top three; the full roster has not yet appeared in the sources we hold."
+    stance:
+      he: "המפלגה דחתה את הגדרת גוש השינוי של ישר! וכינתה את דרכו של איזנקוט \"ממשלת מיעוט שנשענת על המפלגות הערביות\" (N12, 7.9.2026)."
+      en: "The party rejected Yashar!'s framing of the change bloc, calling Eisenkot's path \"a minority government leaning on the Arab parties\" (N12, Sept 7, 2026)."
     sources:
-      - url: "https://www.ynet.co.il/news/article/hjnrm2uxml"
-        title: "מי עם מי: המפלגות שעשויות להכריע את הבחירות"
-        publisher: "Ynet"
+      - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
+      - { url: "https://www.emess.co.il/radio/1927478", title: "תם המרוץ: 38 רשימות הגישו מועמדות לכנסת ה-26", publisher: "אמס" }
   - name: { he: "ישראל ביתנו", en: "Yisrael Beiteinu" }
     leader: { he: "אביגדור ליברמן", en: "Avigdor Liberman" }
     leaderPersonId: 427
     factionId: 1104
     note:
-      he: "צפויה להתמודד; ליברמן הצהיר במאי 2026 כי מטרתו להחליף את הממשלה ולכהן כראש ממשלה."
-      en: "Expected to run; Liberman said in May 2026 his goal is to replace the government and become prime minister."
+      he: "הוגשה בספטמבר 2026; עודד פורר (4), יוליה מלינובסקי (5), חמד עמאר (7) ויבגני סובה (8) בין חברי הכנסת המכהנים ברשימה."
+      en: "Submitted September 2026; sitting MKs Oded Forer (4), Yulia Malinovsky (5), Hamad Amar (7) and Evgeny Sova (8) are on the list."
+    candidates:
+      - { he: "אביגדור ליברמן", personId: 427 }
+      - { he: "רפי בן שטרית" }
+      - { he: "טליה לנקרי" }
+      - { he: "עודד פורר", personId: 30121 }
+      - { he: "יוליה מלינובסקי", personId: 23560 }
+      - { he: "שרון שרעבי" }
+      - { he: "חמד עמאר", personId: 12938 }
+      - { he: "יבגני סובה", personId: 30722 }
+      - { he: "אלוירה קוליחמן" }
+      - { he: "דן אילוז", personId: 30839 }
+      - { he: "לילי בן עמי" }
+      - { he: "יעל בנבנישתי" }
+      - { he: "דוד אזולאי" }
+      - { he: "לימור מגן תלם" }
+      - { he: "ישראל בן שטרית" }
     sources:
-      - url: "https://www.timesofisrael.com/liberman-says-his-goal-for-the-upcoming-election-is-to-become-prime-minister/"
-        title: "Liberman says his goal for the upcoming election is to become prime minister"
-        publisher: "The Times of Israel"
+      - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
+      - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
+  - name: { he: "ש\"ס", en: "Shas" }
+    leader: { he: "אריה דרעי", en: "Aryeh Deri" }
+    leaderPersonId: 2291
+    factionId: 1095
+    note:
+      he: "הוגשה ב-8 בספטמבר 2026; ינון אזולאי, מיכאל מלכיאלי ויואב בן צור במקומות 2–4."
+      en: "Submitted September 8, 2026; Yinon Azulai, Michael Malkieli and Yoav Ben-Tzur hold slots 2–4."
+    candidates:
+      - { he: "אריה דרעי" }
+      - { he: "ינון אזולאי", personId: 30601 }
+      - { he: "מיכאל מלכיאלי", personId: 30470 }
+      - { he: "יואב בן צור", personId: 28513 }
+      - { he: "חיים ביטון", personId: 30804 }
+      - { he: "דרור עמוס" }
+      - { he: "משה אבוטבול", personId: 30749 }
+      - { he: "אוריאל בוסו", personId: 30765 }
+      - { he: "יוסף טייב", personId: 30770 }
+      - { he: "יונתן משריקי" }
+    sources:
+      - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
+      - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
+  - name: { he: "יהדות התורה", en: "United Torah Judaism" }
+    leader: { he: "יעקב אשר", en: "Yaakov Asher" }
+    leaderPersonId: 23641
+    factionId: 1101
+    note:
+      he: "הוגשה ב-7 בספטמבר 2026 בראשות יעקב אשר; יצחק גולדקנופף, שעמד בראש הסיעה בכנסת ה-25, במקום השני, ומאיר פרוש ברביעי."
+      en: "Submitted September 7, 2026 under Yaakov Asher; Yitzhak Goldknopf, who led the faction in the 25th Knesset, is second, Meir Porush fourth."
+    candidates:
+      - { he: "יעקב אשר", personId: 23641 }
+      - { he: "יצחק גולדקנופף" }
+      - { he: "יצחק פינדרוס", personId: 30672 }
+      - { he: "מאיר פרוש", personId: 563 }
+      - { he: "משה רוזנטל" }
+      - { he: "אליקים שטארק" }
+      - { he: "יהודה וייספיש" }
+      - { he: "יעקב טסלר", personId: 30671 }
+      - { he: "דוד זלץ" }
+      - { he: "דוד אוחנה" }
+      - { he: "משה רוט" }
+      - { he: "אליהו ברוכי" }
+    sources:
+      - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
+      - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
+  - name: { he: "הציונות הדתית–זהות", en: "Religious Zionism–Zehut" }
+    leader: { he: "בצלאל סמוטריץ'", en: "Bezalel Smotrich" }
+    leaderPersonId: 30055
+    factionId: 1097
+    note:
+      he: "הציונות הדתית וזהות של משה פייגלין התאחדו לרשימה אחת שהוגשה ב-8 בספטמבר 2026: סמוטריץ' בראשה, פייגלין במקום השני, אורית סטרוק ושמחה רוטמן אחריהם."
+      en: "Religious Zionism and Moshe Feiglin's Zehut merged into one list, submitted September 8, 2026: Smotrich leads, Feiglin is second, followed by Orit Strock and Simcha Rothman."
+    stance:
+      he: "סמוטריץ' תקף את ריצתו העצמאית של עופר וינטר וטען כי דחה \"כל הצעה לאחדות במחנה הלאומי\" (N12, 8.9.2026) — הרשימה ממקמת עצמה במחנה הימין."
+      en: "Smotrich attacked Ofer Winter's independent run, saying Winter had refused \"every proposal for unity in the national camp\" (N12, Sept 8, 2026) — the list places itself in the right-wing camp."
+    candidates:
+      - { he: "בצלאל סמוטריץ'", personId: 30055 }
+      - { he: "משה פייגלין" }
+      - { he: "אורית סטרוק" }
+      - { he: "שמחה רוטמן", personId: 30812 }
+      - { he: "צבי מור" }
+      - { he: "איתמר איתם" }
+      - { he: "צבי סוכות" }
+      - { he: "יצחק זאגא" }
+      - { he: "רעות בן חיים" }
+      - { he: "עומר פציניאש וולדמן" }
+    sources:
+      - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
+      - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
+  - name: { he: "עוצמה יהודית", en: "Otzma Yehudit" }
+    leader: { he: "איתמר בן גביר", en: "Itamar Ben Gvir" }
+    leaderPersonId: 30811
+    factionId: 1106
+    note:
+      he: "הוגשה ב-7 בספטמבר 2026; טלי גוטליב במקום השני, ראש הסגל חנמאל דורפמן בשביעי."
+      en: "Submitted September 7, 2026; Tali Gotliv is second, chief of staff Hanamel Dorfman seventh."
+    candidates:
+      - { he: "איתמר בן גביר", personId: 30811 }
+      - { he: "טלי גוטליב", personId: 30860 }
+      - { he: "יצחק וסרלאוף" }
+      - { he: "עמיחי אליהו", personId: 30857 }
+      - { he: "לימור סון הר-מלך" }
+      - { he: "יצחק קרויזר", personId: 30867 }
+      - { he: "חנמאל דורפמן" }
+      - { he: "צחי אליהו" }
+      - { he: "יוסי גולדברגר" }
+      - { he: "איתיאל ניימן" }
+      - { he: "דוד בבלי" }
+      - { he: "ישי פליישר" }
+      - { he: "שירן מירואי" }
+      - { he: "שימי גולן" }
+      - { he: "יניב בדלוב" }
+    sources:
+      - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
+      - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "רע\"ם", en: "Ra'am" }
     leader: { he: "מנסור עבאס", en: "Mansour Abbas" }
     leaderPersonId: 30713
     factionId: 1099
     note:
-      he: "צפויה להתמודד בנפרד מהרשימה המשותפת לאחר שמגעים לאיחוד לא צלחו; עבאס אמר כי זו צפויה להיות מערכת הבחירות האחרונה שלו."
-      en: "Expected to run separately from the Joint List after unity talks failed; Abbas has said this is expected to be his final election."
+      he: "הוגשה ב-7 בספטמבר 2026; יואב סגלוביץ', לשעבר חבר הכנסת מטעם יש עתיד, במקום השני."
+      en: "Submitted September 7, 2026; Yoav Segalovitz, formerly a Yesh Atid MK, is second."
+    candidates:
+      - { he: "מנסור עבאס", personId: 30713 }
+      - { he: "יואב סגלוביץ'", personId: 30695 }
+      - { he: "ווליד טאהא", personId: 30752 }
+      - { he: "ואליד אל הואשלה" }
+      - { he: "אימאן יאסין חטיב" }
+      - { he: "יאסר חוגיראת", personId: 30843 }
+      - { he: "איברהים אל טורי" }
+      - { he: "עבד אל כרים מסרי" }
+      - { he: "עבד אל כרים עזאם" }
+      - { he: "אבראהים אבו לבן" }
     sources:
-      - url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-899019"
-        title: "Arab parties intend to reestablish Joint List, leaving out Abbas's Ra'am"
-        publisher: "The Jerusalem Post"
-      - url: "https://www.timesofisrael.com/raam-chief-mansour-abbas-says-he-wont-run-for-knesset-beyond-the-next-election/"
-        title: "Ra'am chief Mansour Abbas says he won't run beyond the next election"
-        publisher: "The Times of Israel"
+      - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
+      - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "הרשימה המשותפת (חד\"ש, תע\"ל, בל\"ד)", en: "The Joint List (Hadash, Ta'al, Balad)" }
-    leader: { he: "ד\"ר יוסף ג'בארין (יו\"ר חד\"ש)", en: "Dr. Yousef Jabareen (Hadash chair)" }
+    leader: { he: "ד\"ר יוסף ג'בארין", en: "Dr. Yousef Jabareen" }
     leaderWiki: "https://en.wikipedia.org/wiki/Yousef_Jabareen"
     factionId: 1103
     note:
-      he: "חד\"ש — בראשות יו\"ר חדש, ד\"ר יוסף ג'בארין, שהחליף במאי 2026 את איימן עודה הפורש — יחד עם תע\"ל ובל\"ד הודיעו על כוונה להקים מחדש את הרשימה המשותפת. ג'בארין, מרצה למשפטים, כיהן כחבר הכנסת מטעם חד\"ש והרשימה המשותפת בשנים 2015–2022."
-      en: "Hadash — under new chair Dr. Yousef Jabareen, who in May 2026 replaced the retiring Ayman Odeh — together with Ta'al and Balad announced their intention to reestablish the Joint List. Jabareen, a law lecturer, served as an MK for Hadash and the Joint List from 2015 to 2022."
+      he: "שלוש המפלגות הערביות רצות שוב ברשימה אחת: ג'בארין בראשה, אחמד טיבי (תע\"ל) במקום השני וסאמי אבו שחאדה (בל\"ד) בשלישי."
+      en: "The three Arab parties run again on one list: Jabareen leads, Ahmad Tibi (Ta'al) is second and Sami Abu Shehadeh (Balad) third."
+    candidates:
+      - { he: "יוסף גבארין" }
+      - { he: "אחמד טיבי", personId: 560 }
+      - { he: "סאמי אבו שחאדה" }
+      - { he: "פאתן ג'טאס" }
+      - { he: "בכר עודה" }
+      - { he: "עופר כסיף", personId: 30719 }
+      - { he: "יוסף אלעטאונה" }
+      - { he: "מהא כרכבי סבאח" }
+      - { he: "אחמד דראושה" }
+      - { he: "נהאיה וישאחי" }
+      - { he: "חסן אלנסאסרה" }
+      - { he: "היתם דחאלקה" }
+      - { he: "איאס נאטור" }
+      - { he: "ג'סאן עבדאללה" }
+      - { he: "אורלי נוי" }
+      - { he: "מור שושן סטולר" }
+      - { he: "אעתמאד קעדאן" }
+      - { he: "עומר ואקד" }
+      - { he: "מואייד מיעארי" }
+      - { he: "אחמד ג'זאווי גאנם" }
     sources:
-      - url: "https://www.ynet.co.il/news/article/rjofrtsjfl"
-        title: "יחליף את איימן עודה: ד\"ר יוסף ג'בארין נבחר ליו\"ר חד\"ש"
-        publisher: "Ynet"
-      - url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-899019"
-        title: "Arab parties intend to reestablish Joint List"
-        publisher: "The Jerusalem Post"
-  - name: { he: "המילואימניקים – טרופר", en: "The Reservists – Tropper alliance" }
-    leader: { he: "יועז הנדל וחילי טרופר", en: "Yoaz Hendel & Hili Tropper" }
+      - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
+      - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
+  - name: { he: "עמך ישראל", en: "Amkha Yisrael" }
+    leader: { he: "עופר וינטר", en: "Ofer Winter" }
+    leaderWiki: "https://en.wikipedia.org/wiki/Ofer_Winter"
     note:
-      he: "ברית בחירות חדשה בין מפלגת המילואימניקים של יועז הנדל לסיעתו של חילי טרופר, שדווחה בתחילת יולי 2026. הנדל כיהן כשר התקשורת וכחבר כנסת; טרופר, שר התרבות והספורט לשעבר, מכהן כחבר הכנסת ה-25."
-      en: "A new electoral alliance between Yoaz Hendel's Reservists party and Hili Tropper's faction, reported in early July 2026. Hendel is a former communications minister and MK; Tropper, a former culture and sport minister, sits in the 25th Knesset."
+      he: "רשימה חדשה בראשות האלוף במיל' עופר וינטר, שהוגשה ב-7 בספטמבר 2026 לאחר שמגעי איחוד עם הציונות הדתית ועם 'הציבור החרדי' לא צלחו; יוסף חדאד במקום השני."
+      en: "A new list led by reserve Maj. Gen. Ofer Winter, submitted September 7, 2026 after merger talks with Religious Zionism and with 'The Haredi Public' failed; Yoseph Haddad is second."
+    stance:
+      he: "לפי N12, וינטר דחה הצעות לאיחוד במחנה הימין ובחר בריצה עצמאית."
+      en: "Per N12, Winter turned down unification offers within the right-wing camp and chose to run independently."
+    candidates:
+      - { he: "עופר וינטר" }
+      - { he: "יוסף חדאד" }
+      - { he: "נטעלי שם טוב" }
+      - { he: "ערן בן ארי" }
+      - { he: "פלר חסון-נחום" }
+      - { he: "ללי דרעי" }
+      - { he: "רונן בודנרו" }
     sources:
-      - url: "https://www.ynet.co.il/news/article/hjnrm2uxml"
-        title: "מי עם מי: המפלגות שעשויות להכריע את הבחירות"
-        publisher: "Ynet"
-      - url: "https://en.wikipedia.org/wiki/Yoaz_Hendel"
-        title: "Yoaz Hendel (Wikipedia)"
-        publisher: "Wikipedia"
-  - name: { he: "מפלגה חדשה בהקמה: אדלשטיין–שקד", en: "Possible new party: Edelstein–Shaked" }
-    leader: { he: "יולי אדלשטיין ואיילת שקד", en: "Yuli Edelstein & Ayelet Shaked" }
+      - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
+      - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
+  - name: { he: "המילואימניקים והכלכלית", en: "The Reservists and the Economic list" }
+    leader: { he: "יועז הנדל", en: "Yoaz Hendel" }
+    leaderWiki: "https://en.wikipedia.org/wiki/Yoaz_Hendel"
     note:
-      he: "יולי אדלשטיין, שפרש מהליכוד בתחילת יולי 2026, מנהל לפי דיווחים מגעים עם איילת שקד להקמת מפלגת ימין חדשה; טרם הוכרזה רשמית. אדלשטיין, יו\"ר הכנסת לשעבר ושר הבריאות לשעבר, מכהן כחבר הכנסת ה-25; שקד כיהנה כשרת המשפטים וכשרת הפנים."
-      en: "Yuli Edelstein, who left Likud in early July 2026, is reportedly in talks with Ayelet Shaked on a new right-wing party; not yet formally announced. Edelstein, a former Knesset Speaker and health minister, sits in the 25th Knesset; Shaked previously served as justice and interior minister."
+      he: "הוגשה בספטמבר 2026 בראשות יועז הנדל; הכלכלן ירון זליכה במקום השני ועינת וילף בשלישי. חילי טרופר, שהוכרז קודם כשותף, מופיע ברשימת ישר!."
+      en: "Submitted September 2026 under Yoaz Hendel; economist Yaron Zelekha is second and Einat Wilf third. Hili Tropper, earlier announced as a partner, appears on the Yashar! list."
+    candidates:
+      - { he: "יועז הנדל" }
+      - { he: "ירון זליכה" }
+      - { he: "עינת וילף" }
+      - { he: "חביב ווליבוביץ" }
+      - { he: "יואב שלמה אדומי" }
+      - { he: "אופיר לנגמן" }
+      - { he: "שלומי דמרי" }
     sources:
-      - url: "https://www.ynet.co.il/news/article/hjnrm2uxml"
-        title: "מי עם מי: המפלגות שעשויות להכריע את הבחירות"
-        publisher: "Ynet"
-      - url: "https://en.wikipedia.org/wiki/Yuli-Yoel_Edelstein"
-        title: "Yuli Edelstein (Wikipedia)"
-        publisher: "Wikipedia"
-  - name: { he: "נעם", en: "Noam" }
-    leader: { he: "אבי מעוז", en: "Avi Maoz" }
-    leaderPersonId: 30814
-    factionId: 1107
+      - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
+      - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
+  - name: { he: "הציבור החרדי", en: "The Haredi Public" }
+    leader: { he: "מוטי לייטנר", en: "Moti Leitner" }
     note:
-      he: "עזבה את הקואליציה במרץ 2025; מתכונת ריצתה (עצמאית או במסגרת רשימה אחרת) טרם הובהרה."
-      en: "Left the coalition in March 2025; whether it runs independently or within another list has not yet been clarified."
+      he: "רשימה חדשה שהגישה את מועמדותה ב-8 בספטמבר 2026 וביקשה להתמודד תחת האותיות זך; הרכבה המלא טרם פורסם במקורות שבידינו."
+      en: "A new list that submitted on September 8, 2026 and requested the ballot letters זך; its full roster has not yet appeared in the sources we hold."
     sources:
-      - url: "https://en.wikipedia.org/wiki/2026_Israeli_legislative_election"
-        title: "2026 Israeli legislative election"
-        publisher: "Wikipedia"
+      - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
+      - { url: "https://www.jdn.co.il/news/2724915/", title: "סיכום ביניים מהיום הראשון להגשת הרשימות לכנסת ה-26", publisher: "JDN" }
 
 rules:
   - key: system
@@ -492,6 +698,10 @@ stats:
         publisher: "Ynet"
 
 news:
+  - date: "2026-09-08"
+    text:
+      he: "38 רשימות הוגשו לוועדת הבחירות המרכזית. בעמוד זה מופיעות הרשימות שהרכבן פורסם; רשימות נוספות יתווספו עם פרסום הרשימות המאושרות (צפוי עד 27 בספטמבר)."
+      en: "38 lists were submitted to the Central Elections Committee. This page shows the lists whose rosters have been published; further lists will be added when the approved lists are published (expected by September 27)."
   - date: "2026-07-17"
     text:
       he: "הכנסת ה-25 התפזרה רשמית בתום קדנציה מלאה; הבחירות יתקיימו במועדן החוקי, 27 באוקטובר 2026."

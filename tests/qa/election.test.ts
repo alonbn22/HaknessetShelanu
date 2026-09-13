@@ -107,3 +107,38 @@ if (outlook) {
     }
   });
 }
+
+if (outlook) {
+  test("every candidate personId resolves to the SAME name in the registry", async () => {
+    // Legal safety, as for leaders: a candidate link must never open the wrong
+    // person's record. Candidates are linked only on an exact Hebrew full-name
+    // match, so the check is equality, not containment.
+    const { getDb } = await import("../../src/db");
+    const { sql } = await import("drizzle-orm");
+    const db = getDb();
+    const norm = (s: string) => s.replace(/['׳]/g, "").replace(/\s+/g, " ").trim();
+    let linked = 0;
+    for (const p of outlook.parties) {
+      for (const c of p.candidates ?? []) {
+        if (c.personId == null) continue;
+        linked++;
+        const row = db.get<{ n: string }>(
+          sql`SELECT first_name_he || ' ' || last_name_he AS n FROM persons WHERE id = ${c.personId}`,
+        );
+        assert.ok(row, `${p.name.he}: candidate ${c.he} → personId ${c.personId} not in persons`);
+        assert.equal(norm(row!.n), norm(c.he), `${p.name.he}: personId ${c.personId} is "${row!.n}", not "${c.he}"`);
+      }
+    }
+    assert.ok(linked > 0, "expected at least one linked candidate");
+  });
+
+  test("candidate rosters are in ballot order with the leader first", () => {
+    for (const p of outlook.parties) {
+      if (!p.candidates?.length || !p.leader) continue;
+      // Surname only, apostrophes stripped: editorial names carry titles and
+      // spelling variants (ד"ר יוסף ג'בארין vs the roster's יוסף גבארין).
+      const last = (s: string) => s.replace(/['׳]/g, "").trim().split(" ").slice(-1)[0];
+      assert.equal(last(p.candidates[0].he), last(p.leader.he), `${p.name.he}: first candidate must be the leader`);
+    }
+  });
+}

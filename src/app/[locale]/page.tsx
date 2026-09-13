@@ -22,7 +22,7 @@ import {
   factionName,
 } from "@/lib/queries";
 import { committeeLabel, localizePage } from "@/lib/i18n-data";
-import { getControversialLaws, getElectionOutlook, partyText, partyTextAttrs } from "@/lib/content";
+import { getControversialLaws, getElectionOutlook, partyText, partyTextAttrs, partyTextClass } from "@/lib/content";
 import { isHebrew, rtlAttrs, localizedAttrs, safeHttpUrl } from "@/lib/text";
 import { rtlLocales } from "@/i18n/routing";
 import { formatDate, formatDateTime } from "@/lib/format";
@@ -373,7 +373,7 @@ export default async function HomePage() {
                       <span className="font-semibold" {...partyTextAttrs(law.title, locale)}>{partyText(law.title, locale)}</span>
                       <span className="text-xs tabular-nums text-muted">{law.year}</span>
                     </div>
-                    <p className="mt-1 text-sm leading-relaxed text-muted" {...partyTextAttrs(law.summary, locale)}>{partyText(law.summary, locale)}</p>
+                    <p className={`mt-1 text-sm leading-relaxed text-muted ${partyTextClass(law.summary, locale)}`} {...partyTextAttrs(law.summary, locale)}>{partyText(law.summary, locale)}</p>
                   </div>
                   {/* The source sits in the margin beside the claim it supports. */}
                   <a

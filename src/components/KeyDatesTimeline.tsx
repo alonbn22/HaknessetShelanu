@@ -1,5 +1,5 @@
 import { getTranslations, getLocale } from "next-intl/server";
-import { partyText, partyTextAttrs, type ElectionOutlook } from "@/lib/content";
+import { partyText, partyTextAttrs, partyTextClass, type ElectionOutlook } from "@/lib/content";
 
 type KeyDate = NonNullable<ElectionOutlook["keyDates"]>[number];
 
@@ -59,9 +59,7 @@ export async function KeyDatesTimeline({
             <div className="min-w-0 space-y-0.5">
               <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
                 <span
-                  className={
-                    isElection ? "text-lg font-bold leading-tight" : "font-medium text-foreground/80"
-                  }
+                  className={`${isElection ? "text-lg font-bold leading-tight" : "font-medium text-foreground/80"} ${partyTextClass(d.label, locale)}`}
                   {...partyTextAttrs(d.label, locale)}
                 >
                   {partyText(d.label, locale)}
@@ -82,7 +80,7 @@ export async function KeyDatesTimeline({
                 )}
               </div>
               {variant === "full" && d.detail && (
-                <p className="text-sm leading-relaxed" {...partyTextAttrs(d.detail, locale)}>{partyText(d.detail, locale)}</p>
+                <p className={`text-sm leading-relaxed ${partyTextClass(d.detail, locale)}`} {...partyTextAttrs(d.detail, locale)}>{partyText(d.detail, locale)}</p>
               )}
               {variant === "full" && d.sources.length > 0 && (
                 <span className="text-xs text-muted">

@@ -216,7 +216,7 @@ export function Plenum({
 
         {/* The same hall on a phone: two blocks across the aisle. */}
         <svg
-          viewBox={`-2 -18 ${strip.width + 4} ${strip.height + 20}`}
+          viewBox={`-2 -18 ${strip.width + 4} ${strip.height + 30}`}
           className="mx-auto block w-full sm:hidden"
           style={{ direction: "ltr" }}
           role="img"
@@ -240,6 +240,12 @@ export function Plenum({
             style={{ fontSize: 13 }}
           >
             {coalitionSeats}
+          </text>
+          <text x={strip.oppAisleX - 2} y={strip.height + 8} textAnchor="end" className="fill-muted" style={{ fontSize: 5 }}>
+            {t("common.opposition")}
+          </text>
+          <text x={strip.coalStartX + 2} y={strip.height + 8} textAnchor="start" className="fill-muted" style={{ fontSize: 5 }}>
+            {t("common.coalition")}
           </text>
         </svg>
       </div>

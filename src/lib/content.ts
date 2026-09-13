@@ -147,6 +147,17 @@ export function partyTextAttrs(
   return resolved === "he" ? { dir: "rtl", lang: "he" } : { dir: "ltr", lang: resolved };
 }
 
+// Class to pair with partyTextAttrs: a run whose direction differs from the
+// page must still hug the page's start edge when it wraps. text-align:end is
+// the right side of an LTR run (an RTL page's start) and the left side of an
+// RTL run (an LTR page's start), so one class serves both cases.
+export function partyTextClass(
+  text: { he: string; en?: string; ar?: string; ru?: string } | undefined,
+  locale: string,
+): string {
+  return partyTextAttrs(text, locale).dir ? "text-end" : "";
+}
+
 export function partyList(
   list: { he: string[]; en?: string[]; ar?: string[]; ru?: string[] } | undefined,
   locale: string,

@@ -4,7 +4,10 @@ import { personName, factionName, type MemberListItem } from "@/lib/queries";
 import { formatDate } from "@/lib/format";
 import { govMinistry } from "@/lib/gov-terms";
 import { rtlAttrs } from "@/lib/text";
+import { cx } from "@/lib/cx";
 import { MemberAvatar } from "./MemberAvatar";
+import { Badge } from "./ui/Badge";
+import { interactiveCardClass } from "./ui/Card";
 
 // Re-exported so existing server-side imports of MemberAvatar via MemberCard keep working.
 export { MemberAvatar };
@@ -20,9 +23,7 @@ export function MemberCard({
   return (
     <Link
       href={`/members/${member.id}`}
-      className={`flex items-center gap-3 rounded-xl bg-white p-3 shadow-sm hover:shadow-md transition-shadow ${
-        member.isSitting ? "" : "opacity-90"
-      }`}
+      className={interactiveCardClass("xs", cx("flex items-center gap-3", !member.isSitting && "opacity-90"))}
     >
       <MemberAvatar person={member} alt={personName(member, locale)} />
       <div className="min-w-0 flex-1">
@@ -31,14 +32,14 @@ export function MemberCard({
             {personName(member, locale)}
           </span>
           {!member.isSitting && member.ministryHe && (
-            <span className="shrink-0 rounded-full bg-accent/15 text-accent px-2 py-0.5 text-[11px] font-medium">
+            <Badge tone="accent" className="shrink-0">
               {t("minister")}
-            </span>
+            </Badge>
           )}
           {!member.isSitting && !member.ministryHe && (
-            <span className="shrink-0 rounded-full bg-amber-100 text-amber-800 px-2 py-0.5 text-[11px] font-medium">
+            <Badge tone="warn" className="shrink-0">
               {t("former")}
-            </span>
+            </Badge>
           )}
         </div>
         {member.factionId != null && (

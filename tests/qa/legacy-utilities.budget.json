@@ -42,7 +42,6 @@
   "components/HomeVoteSearch.tsx": 2,
   "components/KeyDatesTimeline.tsx": 5,
   "components/LanguageSwitcher.tsx": 2,
-  "components/MemberCard.tsx": 5,
   "components/MobileNav.tsx": 6,
   "components/NavLinks.tsx": 1,
   "components/ReadingBadge.tsx": 30,
@@ -50,6 +49,5 @@
   "components/SeatsBar.tsx": 1,
   "components/SeatsToggle.tsx": 2,
   "components/ThemeToggle.tsx": 1,
-  "components/VoteCard.tsx": 4,
   "components/VoteResultBadge.tsx": 6
 }

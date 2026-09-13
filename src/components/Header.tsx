@@ -5,13 +5,12 @@ import { LanguageSwitcher } from "./LanguageSwitcher";
 import { NavLinks } from "./NavLinks";
 import { MobileNav } from "./MobileNav";
 import { ThemeToggle } from "./ThemeToggle";
-import { FlagMark } from "./FlagMark";
 import { SearchIcon } from "./icons/SearchIcon";
 
-// The chrome is the flag's blue field; the flag mark sits beside a white
-// wordmark in the display face, and the flag's stripes rule the bar's bottom
-// edge. Elevation belongs to things that float, so the bar carries a rule,
-// not a shadow.
+// The chrome is the flag's blue field; the wordmark carries the flag inside
+// its letters (see .wordmark in globals.css), and the flag's stripes rule the
+// bar's bottom edge. Elevation belongs to things that float, so the bar
+// carries a rule, not a shadow.
 export function Header() {
   const t = useTranslations();
 
@@ -21,11 +20,12 @@ export function Header() {
       <div className="relative mx-auto flex max-w-6xl items-center gap-x-6 px-4 py-3">
         <Link
           href="/"
-          className="flex shrink-0 items-center gap-2.5 whitespace-nowrap"
+          className="flex shrink-0 items-center whitespace-nowrap"
           aria-label={t("site.name")}
         >
-          <FlagMark height={18} className="rounded-[2px]" />
-          <span className="font-display text-2xl font-bold leading-none">{t("site.name")}</span>
+          <span className="wordmark font-display text-[1.75rem] font-bold leading-none" style={{ paddingBottom: "0.08em" }}>
+            {t("site.name")}
+          </span>
         </Link>
         <NavLinks />
         <div className="ms-auto flex items-center gap-1">

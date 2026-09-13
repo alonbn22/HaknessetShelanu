@@ -325,6 +325,42 @@ html.dark .border-green-200 { border-color: rgba(34, 197, 94, 0.32); }
 html.dark .border-red-200 { border-color: rgba(239, 68, 68, 0.32); }
 html.dark .border-amber-200 { border-color: rgba(245, 158, 11, 0.32); }
 
+/* The wordmark: the flag inside the letters. Two inline SVG layers — the
+   stripes repeat along the word, the Star of David sits once near the start —
+   are clipped to the glyphs, so the geometry is fixed in every locale (the old
+   raster stretched to each string's width). The stripes are the bar's own
+   blue, so in light mode they read as the flag seen through letter-shaped
+   windows. Fallback first: browsers without background-clip:text, and the
+   a11y overrides, get plain white type. */
+.wordmark {
+  color: var(--on-chrome);
+}
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .wordmark {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 28 28%22%3E%3Crect width=%2228%22 height=%2228%22 fill=%22%23fff%22/%3E%3Crect y=%225.5%22 width=%2228%22 height=%223%22 fill=%22%230038b8%22/%3E%3Crect y=%2219.5%22 width=%2228%22 height=%223%22 fill=%22%230038b8%22/%3E%3Cg fill=%22none%22 stroke=%22%230038b8%22 stroke-width=%221.9%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M14 8.2 19.6 18H8.4Z%22/%3E%3Cpath d=%22M14 19.8 8.4 10H19.6Z%22/%3E%3C/g%3E%3C/svg%3E"), url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 4 28%22%3E%3Crect width=%224%22 height=%2228%22 fill=%22%23fff%22/%3E%3Crect y=%225.5%22 width=%224%22 height=%223%22 fill=%22%230038b8%22/%3E%3Crect y=%2219.5%22 width=%224%22 height=%223%22 fill=%22%230038b8%22/%3E%3C/svg%3E");
+    background-repeat: no-repeat, repeat-x;
+    background-size: 1.05em 1.05em, 4px 1.05em;
+    background-position: 0.62em 0.02em, 0 0.02em;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    -webkit-text-stroke: 0.55px var(--on-chrome);
+    paint-order: stroke fill;
+  }
+  [dir="rtl"] .wordmark {
+    background-position: right 0.62em top 0.02em, 0 0.02em;
+  }
+  /* High contrast and the readable-font mode want plain type. */
+  html.a11y-contrast .wordmark,
+  html.a11y-readable .wordmark {
+    background-image: none;
+    -webkit-text-fill-color: currentColor;
+    color: var(--on-chrome);
+    -webkit-text-stroke: 0;
+  }
+}
+
 /* ---------- Accessibility (Israeli Standard 5568 / WCAG 2.0 AA) ---------- */
 
 /* Visible keyboard focus everywhere. */

@@ -3,10 +3,12 @@
 #   confirmed        = an official source states it
 #   scheduled-by-law = the statutory default
 #   reported         = media reports (may change)
-# Party line-ups are NOT final until lists are submitted to the Central
-# Elections Committee (~47 days before election day) — keep the "expected"
-# framing. he/en authored; ar/ru fall back to en. UPDATE as the campaign moves:
-# re-verify each item, bump lastReviewed, and prune anything that changed.
+# The lists were submitted on 7–8 September 2026 and are final subject to the
+# CEC's approval (reported for 27 September). Every list carries a stable
+# `slug` — the identity polls.yaml and quiz.yaml key on. he/en authored; ar/ru
+# fall back to en. UPDATE as the campaign moves: re-verify each item, bump
+# lastReviewed, and prune anything that changed. Rule: every datum verified,
+# from a trusted primary source — never an aggregator or a paraphrase.
 knesset: 26
 expectedDate: "2026-10-27"
 dateStatus: set
@@ -128,15 +130,18 @@ facts:
         publisher: "The Times of Israel"
   - key: list-deadline
     label: { he: "הגשת רשימות המועמדים", en: "Candidate-list submission" }
-    value: { he: "צפוי בסביבות 9-10 בספטמבר 2026", en: "Expected around September 9–10, 2026" }
+    value: { he: "הוגשו ב-7–8 בספטמבר 2026", en: "Submitted September 7–8, 2026" }
     detail:
-      he: "הרשימות מוגשות לוועדת הבחירות המרכזית בסביבות היום ה-47 שלפני הבחירות; יש דיווח אחד (i24NEWS) על 7 בספטמבר — המועד המדויק טעון פרסום רשמי של ועדת הבחירות."
-      en: "Lists are submitted to the Central Elections Committee around the 47th day before election day; one report (i24NEWS) says September 7 — the exact date awaits the CEC's official timetable."
-    status: reported
+      he: "38 רשימות הוגשו ליו\"ר ועדת הבחירות המרכזית, השופט נעם סולברג, במשכן הכנסת. ההגשה אינה אישור: הרשימות, הכינויים והאותיות נבדקים, והאישור הסופי דווח ל-27 בספטמבר."
+      en: "38 lists were submitted to the chair of the Central Elections Committee, Justice Noam Sohlberg, at the Knesset. Submission is not approval: the lists, names and ballot letters are under review, with final approval reported for September 27."
+    status: confirmed
     sources:
-      - url: "https://www.zman.co.il/live/705042/"
-        title: "לוח הזמנים לבחירות לכנסת: המועד האחרון להגשת מועמדות"
-        publisher: "Zman Yisrael"
+      - url: "https://ch10.co.il/news/1100694/"
+        title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26"
+        publisher: "חרדים10"
+      - url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm"
+        title: "כל העדכונים מסגירת הרשימות לכנסת ה-26"
+        publisher: "N12"
       - url: "https://www.i24news.tv/he/news/israel-elections-2026/artc-8c8f593a"
         title: "הלו\"ז המלא לבחירות 2026"
         publisher: "i24NEWS"
@@ -170,6 +175,7 @@ facts:
 
 parties:
   - name: { he: "הליכוד", en: "Likud" }
+    slug: likud
     leader: { he: "בנימין נתניהו", en: "Benjamin Netanyahu" }
     leaderPersonId: 965
     factionId: 1096
@@ -211,6 +217,7 @@ parties:
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "ביחד", en: "Together" }
+    slug: together
     leader: { he: "נפתלי בנט", en: "Naftali Bennett" }
     leaderWiki: "https://en.wikipedia.org/wiki/Naftali_Bennett"
     note:
@@ -242,6 +249,7 @@ parties:
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
       - { url: "https://www.timesofisrael.com/naftali-bennett-and-yair-lapid-announce-united-run-under-bennett-in-2026-elections/", title: "Naftali Bennett and Yair Lapid announce united run under Bennett", publisher: "The Times of Israel" }
   - name: { he: "ישר!", en: "Yashar!" }
+    slug: yashar
     leader: { he: "גדי איזנקוט", en: "Gadi Eisenkot" }
     leaderPersonId: 30836
     note:
@@ -285,6 +293,7 @@ parties:
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "הדמוקרטים", en: "The Democrats" }
+    slug: democrats
     leader: { he: "יאיר גולן", en: "Yair Golan" }
     leaderWiki: "https://en.wikipedia.org/wiki/Yair_Golan"
     factionId: 1100
@@ -311,6 +320,7 @@ parties:
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "כחול לבן", en: "Blue and White" }
+    slug: blue-white
     leader: { he: "בני גנץ", en: "Benny Gantz" }
     leaderPersonId: 30657
     factionId: 1110
@@ -324,6 +334,7 @@ parties:
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
       - { url: "https://www.emess.co.il/radio/1927478", title: "תם המרוץ: 38 רשימות הגישו מועמדות לכנסת ה-26", publisher: "אמס" }
   - name: { he: "ישראל ביתנו", en: "Yisrael Beiteinu" }
+    slug: yisrael-beiteinu
     leader: { he: "אביגדור ליברמן", en: "Avigdor Liberman" }
     leaderPersonId: 427
     factionId: 1104
@@ -350,6 +361,7 @@ parties:
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "ש\"ס", en: "Shas" }
+    slug: shas
     leader: { he: "אריה דרעי", en: "Aryeh Deri" }
     leaderPersonId: 2291
     factionId: 1095
@@ -371,6 +383,7 @@ parties:
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "יהדות התורה", en: "United Torah Judaism" }
+    slug: utj
     leader: { he: "יעקב אשר", en: "Yaakov Asher" }
     leaderPersonId: 23641
     factionId: 1101
@@ -394,9 +407,10 @@ parties:
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "הציונות הדתית–זהות", en: "Religious Zionism–Zehut" }
+    slug: rz-zehut
     leader: { he: "בצלאל סמוטריץ'", en: "Bezalel Smotrich" }
     leaderPersonId: 30055
-    factionId: 1097
+    factionId: 1105 # the Smotrich faction of the 25th Knesset; 1097 is the defunct 2022 joint list
     note:
       he: "הציונות הדתית וזהות של משה פייגלין התאחדו לרשימה אחת שהוגשה ב-8 בספטמבר 2026: סמוטריץ' בראשה, פייגלין במקום השני, אורית סטרוק ושמחה רוטמן אחריהם."
       en: "Religious Zionism and Moshe Feiglin's Zehut merged into one list, submitted September 8, 2026: Smotrich leads, Feiglin is second, followed by Orit Strock and Simcha Rothman."
@@ -418,6 +432,7 @@ parties:
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "עוצמה יהודית", en: "Otzma Yehudit" }
+    slug: otzma
     leader: { he: "איתמר בן גביר", en: "Itamar Ben Gvir" }
     leaderPersonId: 30811
     factionId: 1106
@@ -444,6 +459,7 @@ parties:
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "רע\"ם", en: "Ra'am" }
+    slug: raam
     leader: { he: "מנסור עבאס", en: "Mansour Abbas" }
     leaderPersonId: 30713
     factionId: 1099
@@ -465,6 +481,7 @@ parties:
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "הרשימה המשותפת (חד\"ש, תע\"ל, בל\"ד)", en: "The Joint List (Hadash, Ta'al, Balad)" }
+    slug: joint-list
     leader: { he: "ד\"ר יוסף ג'בארין", en: "Dr. Yousef Jabareen" }
     leaderWiki: "https://en.wikipedia.org/wiki/Yousef_Jabareen"
     factionId: 1103
@@ -496,6 +513,7 @@ parties:
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "עמך ישראל", en: "Amkha Yisrael" }
+    slug: amkha
     leader: { he: "עופר וינטר", en: "Ofer Winter" }
     leaderWiki: "https://en.wikipedia.org/wiki/Ofer_Winter"
     note:
@@ -516,6 +534,7 @@ parties:
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "המילואימניקים והכלכלית", en: "The Reservists and the Economic list" }
+    slug: reservists
     leader: { he: "יועז הנדל", en: "Yoaz Hendel" }
     leaderWiki: "https://en.wikipedia.org/wiki/Yoaz_Hendel"
     note:
@@ -533,6 +552,7 @@ parties:
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "הציבור החרדי", en: "The Haredi Public" }
+    slug: haredi-public
     leader: { he: "מוטי לייטנר", en: "Moti Leitner" }
     note:
       he: "רשימה חדשה שהגישה את מועמדותה ב-8 בספטמבר 2026 וביקשה להתמודד תחת האותיות זך; הרכבה המלא טרם פורסם במקורות שבידינו."
@@ -722,7 +742,7 @@ links:
     url: "https://www.gov.il/he/departments/central-elections-committee/govil-landing-page"
   - label: { he: "הבחירות לכנסת — אתר הכנסת", en: "Knesset elections page" }
     url: "https://main.knesset.gov.il/mk/elections/Pages/default.aspx"
-  - label: { he: "מידע לבוחר (מהדורת הכנסת ה-25)", en: "Voter information (25th-Knesset edition)" }
+  - label: { he: "מידע לבוחר — gov.il (מהדורת הכנסת ה-25; מהדורת 2026 תקושר עם פרסומה)", en: "Voter information — gov.il (25th-Knesset edition; the 2026 edition will be linked when published)" }
     url: "https://www.gov.il/he/departments/guides/knesset25-elections-info"
   - label: { he: "מימון מפלגות — מבקר המדינה", en: "Party finance — State Comptroller" }
     url: "https://www.mevaker.gov.il/state-audit/elections"
@@ -732,5 +752,5 @@ links:
     url: "https://www.gov.il/he/Departments/DynamicCollectors/knessetarchive?skip=0"
 
 disclaimer:
-  he: "עמוד זה נערך על ידי האתר על בסיס המקורות המצוינים לצד כל פריט ומתעדכן ככל שהמערכה מתקדמת. הרכבי הרשימות אינם סופיים עד הגשתן לוועדת הבחירות המרכזית. מצאתם אי-דיוק? דווחו לנו ונתקן."
-  en: "This page is edited by the site from the sources cited beside each item and is updated as the campaign develops. List line-ups are not final until submitted to the Central Elections Committee. Spotted an inaccuracy? Report it and we will fix it."
+  he: "עמוד זה נערך על ידי האתר על בסיס המקורות המצוינים לצד כל פריט ומתעדכן ככל שהמערכה מתקדמת. הרשימות מוצגות כפי שהוגשו ב-7–8 בספטמבר 2026, בכפוף לאישור ועדת הבחירות המרכזית. סקרים ועמדות מוצגים עם מקורם ואינם המלצה. מצאתם אי-דיוק? דווחו לנו ונתקן."
+  en: "This page is edited by the site from the sources cited beside each item and is updated as the campaign develops. Lists are shown as submitted on September 7–8, 2026, subject to the Central Elections Committee's approval. Polls and positions are shown with their sources and are not a recommendation. Spotted an inaccuracy? Report it and we will fix it."

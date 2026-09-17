@@ -142,3 +142,28 @@ if (outlook) {
     }
   });
 }
+
+if (outlook) {
+  test("every running list has a unique kebab-case slug, and factionIds are live factions", async () => {
+    // The slug is the identity polls and compass stances key on; a duplicate
+    // would merge two lists' data, a bad factionId would link a card to a
+    // defunct faction (Religious Zionism once pointed at the 2022 joint list).
+    const seen = new Set<string>();
+    for (const p of outlook.parties) {
+      assert.match(p.slug, /^[a-z0-9]+(?:-[a-z0-9]+)*$/, `${p.name.he}: slug "${p.slug}" is not kebab-case`);
+      assert.ok(!seen.has(p.slug), `duplicate slug ${p.slug}`);
+      seen.add(p.slug);
+    }
+    const { getDb } = await import("../../src/db");
+    const { sql } = await import("drizzle-orm");
+    const db = getDb();
+    for (const p of outlook.parties) {
+      if (p.factionId == null) continue;
+      const row = db.get<{ cur: number; name: string }>(
+        sql`SELECT is_current AS cur, name_he AS name FROM factions WHERE id = ${p.factionId}`,
+      );
+      assert.ok(row, `${p.name.he}: factionId ${p.factionId} not in factions`);
+      assert.equal(row!.cur, 1, `${p.name.he}: factionId ${p.factionId} ("${row!.name}") is not a current faction`);
+    }
+  });
+}

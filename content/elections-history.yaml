@@ -29,7 +29,7 @@ elections:
       - kind: good
         date: "2025-01-19"
         text: { he: "עסקאות לשחרור חטופים והפסקות אש לסירוגין בעזה.", en: "Hostage-release deals and intermittent ceasefires in Gaza." }
-    ended: { he: "הכנסת מכהנת (נכון ל-2026).", en: "Currently in session (as of 2026)." }
+    ended: { he: "הכנסת ה-25 השלימה קדנציה מלאה והתפזרה ב-17 ביולי 2026; הבחירות לכנסת ה-26 — 27 באוקטובר 2026.", en: "The 25th Knesset completed a full term and dispersed on July 17, 2026; the 26th Knesset election is on October 27, 2026." }
   - knesset: 24
     date: "2021-03-23"
     turnout: 67.4

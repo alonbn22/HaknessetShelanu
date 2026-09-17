@@ -26,9 +26,15 @@ profiles:
         - Strong national security and a hawkish foreign-policy posture
         - Support for free-market economics and deregulation
         - Opposition to territorial concessions
-  - id: 1102 # Yesh Atid
+  - id: 1102 # Yesh Atid — in 2026 runs inside the joint list "Together" (ביחד) headed by Naftali Bennett
     spectrum: center
     ballotLetters: "פה"
+    ballotNote:
+      he: ב-2026 יש עתיד רצה ברשימה המשותפת "ביחד" בראשות נפתלי בנט; יאיר לפיד במקום השני. האותיות מבחירות 2022.
+      en: In 2026 Yesh Atid runs on the joint "Together" list headed by Naftali Bennett; Yair Lapid is second. Letters are from 2022.
+    sources:
+      - { url: "https://www.timesofisrael.com/naftali-bennett-and-yair-lapid-announce-united-run-under-bennett-in-2026-elections/", title: "Naftali Bennett and Yair Lapid announce united run under Bennett", publisher: "The Times of Israel" }
+      - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
     leaderHe: יאיר לפיד
     leaderEn: Yair Lapid
     founded: 2012
@@ -121,9 +127,13 @@ profiles:
   - id: 1101 # United Torah Judaism
     spectrum: right
     ballotLetters: "ג"
-    leaderHe: יצחק גולדקנופף
-    leaderEn: Yitzhak Goldknopf
+    leaderHe: יעקב אשר
+    leaderEn: Yaakov Asher
     founded: 1992
+    # 2026: the submitted list is headed by Yaakov Asher; Yitzhak Goldknopf,
+    # who led the faction in the 25th Knesset, is second.
+    sources:
+      - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
     wikipediaEn: https://en.wikipedia.org/wiki/United_Torah_Judaism
     tags: [ultra-orthodox, ashkenazi, religious]
     summary:
@@ -212,9 +222,14 @@ profiles:
   - id: 1103 # Hadash-Ta'al
     spectrum: left
     ballotLetters: "ום"
-    leaderHe: איימן עודה
-    leaderEn: Ayman Odeh
+    leaderHe: יוסף ג'בארין
+    leaderEn: Yousef Jabareen
     founded: 2015
+    # 2026: Hadash, Ta'al and Balad run again as the Joint List, headed by Hadash
+    # chair Dr. Yousef Jabareen; Ahmad Tibi (Ta'al) is second.
+    sources:
+      - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
+      - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
     wikipediaEn: https://en.wikipedia.org/wiki/Hadash
     tags: [arab-jewish, socialist, left]
     summary:
@@ -231,19 +246,22 @@ profiles:
         - Full civic equality between Jews and Arabs
         - A two-state solution and ending the occupation
         - Social justice and workers' rights
-  - id: 1100 # Labor
+  - id: 1100 # The Democrats (Labor–Meretz); the Knesset faction is still registered as Labor
     spectrum: center-left
     ballotLetters: "אמת"
     leaderHe: יאיר גולן
     leaderEn: Yair Golan
     founded: 1968
-    wikipediaEn: https://en.wikipedia.org/wiki/Israeli_Labor_Party
+    wikipediaEn: https://en.wikipedia.org/wiki/The_Democrats_(Israel)
     tags: [social-democratic, zionist-left]
     summary:
-      he: מפלגת השמאל-מרכז הוותיקה, סוציאל-דמוקרטית וציונית.
-      en: The veteran center-left party — social-democratic and Zionist.
-      ar: حزب يسار-الوسط العريق، اشتراكي-ديمقراطي وصهيوني.
-      ru: Ветеранская левоцентристская партия — социал-демократическая и сионистская.
+      he: מפלגת האיחוד של העבודה ומרצ (מ-2024), סוציאל-דמוקרטית וציונית; רצה ב-2026 כ"הדמוקרטים" בראשות יאיר גולן.
+      en: The merged Labor–Meretz party (since 2024), social-democratic and Zionist; runs in 2026 as The Democrats under Yair Golan.
+      ar: حزب اندماج العمل وميرتس (منذ 2024)، اشتراكي-ديمقراطي وصهيوني؛ يخوض انتخابات 2026 باسم «الديمقراطيون» بقيادة يائير غولان.
+      ru: Объединённая партия Аводы и Мереца (с 2024 года), социал-демократическая и сионистская; на выборах 2026 года идёт как «Демократы» во главе с Яиром Голаном.
+    sources:
+      - { url: "https://en.wikipedia.org/wiki/The_Democrats_(Israel)", title: "The Democrats (Israel) — Wikipedia", publisher: "Wikipedia" }
+      - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
     positions:
       he:
         - מדינת רווחה וצדק חברתי
@@ -257,8 +275,11 @@ profiles:
     spectrum: right
     ballotLetters: "כן"
     ballotNote:
-      he: רצה במסגרת "המחנה הממלכתי" (כן) ב-2022.
-      en: Ran within 'National Unity' (כן) in 2022.
+      he: רצה במסגרת "המחנה הממלכתי" (כן) ב-2022. באוגוסט 2025 התמזגה לתוך הליכוד; ב-2026 גדעון סער במקום השביעי ברשימת הליכוד.
+      en: Ran within 'National Unity' (כן) in 2022. Merged into Likud in August 2025; in 2026 Gideon Sa'ar is seventh on the Likud list.
+    sources:
+      - { url: "https://www.timesofisrael.com/ruling-likud-party-approves-merger-with-gideon-saars-new-hope/", title: "Ruling Likud party approves merger with Gideon Sa'ar's New Hope", publisher: "The Times of Israel" }
+      - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
     leaderHe: גדעון סער
     leaderEn: Gideon Sa'ar
     founded: 2020
@@ -282,8 +303,10 @@ profiles:
     spectrum: far-right
     ballotLetters: "ט"
     ballotNote:
-      he: רצה במסגרת רשימת "הציונות הדתית" (ט) ב-2022.
-      en: Ran within the 'Religious Zionism' list (ט) in 2022.
+      he: רצה במסגרת רשימת "הציונות הדתית" (ט) ב-2022. נכון לספטמבר 2026 אינה מופיעה ברשימות שהרכבן פורסם לכנסת ה-26.
+      en: Ran within the 'Religious Zionism' list (ט) in 2022. As of September 2026 it does not appear among the published 26th-Knesset rosters.
+    sources:
+      - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
     leaderHe: אבי מעוז
     leaderEn: Avi Maoz
     founded: 2019

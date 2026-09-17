@@ -149,14 +149,18 @@ export default async function ElectionsHistoryPage() {
                 {te("parties")}
               </h3>
               <p className="text-xs text-muted">
-                {te("partiesNote")}{" "}
                 {(() => {
-                  // Date pulled from the kd-lists timeline entry so the UI never
-                  // hardcodes it.
-                  const kd = outlook.keyDates?.find((d) => d.key === "kd-lists");
-                  return kd?.date
-                    ? te("finalListsNote", { date: formatDate(kd.date, locale) })
-                    : null;
+                  // Both dates come from the timeline entries so the UI never
+                  // hardcodes them: approval for the note, approval again for
+                  // the rosters still to be published.
+                  const approval = outlook.keyDates?.find((d) => d.key === "kd-approval")?.date;
+                  const dateText = approval ? formatDate(approval, locale) : "";
+                  return (
+                    <>
+                      {te("partiesNote", { date: dateText })}{" "}
+                      {approval ? te("finalListsNote", { date: dateText }) : null}
+                    </>
+                  );
                 })()}
               </p>
               <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

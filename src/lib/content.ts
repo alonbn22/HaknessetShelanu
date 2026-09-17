@@ -18,6 +18,7 @@ const coalitionSchema = z.object({
   knesset: z.number(),
   coalitionFactionIds: z.array(z.number()),
   asOf: z.string().optional(), // when this composition was last verified
+  caretakerSince: z.string().optional(), // ISO date the Knesset dispersed; the government is a caretaker from then
   sourceUrl: httpUrl.optional(),
   sourceLabel: z.string().optional(),
 });
@@ -102,6 +103,8 @@ const partyProfileSchema = z.object({
   // Ballot-slip letters assigned per election list.
   ballotLetters: z.string().optional(),
   ballotNote: localizedText.optional(),
+  // Where a profile states a 2026 fact (leader, merger, running status).
+  sources: z.array(z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() })).optional(),
 });
 
 export type PartyProfile = z.infer<typeof partyProfileSchema>;
@@ -379,7 +382,13 @@ const electionFactSchema = z.object({
 
 // A party expected to run. Lists are only final once submitted to the Central
 // Elections Committee — `note` carries that framing; every entry is sourced.
+// Every running list has a stable kebab-case slug. It is THE identity a list
+// carries across content: polls and compass stances key on it, and it survives
+// name changes, mergers and the absence of a Knesset faction id (new lists).
+const listSlug = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, "slug must be kebab-case");
+
 const electionPartySchema = z.object({
+  slug: listSlug,
   name: localizedText,
   leader: localizedText.optional(),
   // Links leader to their member page when in the persons DB. Set only after
@@ -427,6 +436,13 @@ const electionOutlookSchema = z.object({
 export type ElectionOutlook = z.infer<typeof electionOutlookSchema>;
 export type ElectionFact = z.infer<typeof electionFactSchema>;
 export type ElectionParty = z.infer<typeof electionPartySchema>;
+
+// The registry: slug → running list, in the file's (registry) order. Empty when
+// election.yaml is absent or invalid, like getElectionOutlook().
+export function getRunningLists(): Map<string, ElectionParty> {
+  const outlook = getElectionOutlook();
+  return new Map((outlook?.parties ?? []).map((p) => [p.slug, p]));
+}
 
 let _electionOutlook: ElectionOutlook | null | undefined;
 

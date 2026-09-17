@@ -12,12 +12,16 @@
 #                                1108 הימין הממלכתי (סער)
 #                                1110 כחול לבן - המחנה הממלכתי
 #
-# Status reflected below (June 2026): UTJ (יהדות התורה) left the coalition in
-# July 2025 over the draft law. Shas resigned its ministries but announced it
-# remains part of the coalition. Verify before publishing.
+# Status reflected below: UTJ (יהדות התורה) left the coalition in July 2025
+# over the draft law; Shas resigned its ministries but announced it remains
+# part of the coalition. The 25th Knesset dispersed on 17 July 2026 (the
+# dissolution law, second and third readings); the government continues as a
+# caretaker (ממשלת מעבר) until the 26th Knesset's government is sworn in, so
+# coalition membership is held as it stood at dissolution.
 
 knesset: 25
-asOf: "2026-06"
+asOf: "2026-07-17"
+caretakerSince: "2026-07-17"
 sourceUrl: "https://en.wikipedia.org/wiki/Thirty-seventh_government_of_Israel"
 sourceLabel: "Thirty-seventh government of Israel (Wikipedia)"
 coalitionFactionIds:

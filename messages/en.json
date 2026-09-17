@@ -144,7 +144,7 @@
   "parties": {
     "title": "Knesset Factions",
     "seats": "Seats",
-    "coalitionNote": "Coalition / opposition labeling as of {asOf}. Source:"
+    "coalitionNote": "Coalition / opposition labeling as it stood when the Knesset dispersed on {asOf}; a caretaker government serves until the 26th Knesset's government is sworn in. Source:"
   },
   "party": {
     "membersTitle": "Faction members",
@@ -157,7 +157,7 @@
     "spectrum": "Political position",
     "editorialNote": "Position summaries are written by this site for explanatory purposes and may be incomplete. They do not represent the faction's official stance.",
     "ballot": "Ballot letters",
-    "ballotEra": "In the 2022 (25th Knesset) election. The 2026 ballot letters are set closer to the vote.",
+    "ballotEra": "Ballot letters from the 2022 (25th Knesset) election. The 2026 letters were requested at list submission and are approved by the Central Elections Committee; they will be updated here on approval.",
     "basedOn": "Spectrum and positions are based on:",
     "factionChair": "Faction chair in the Knesset"
   },
@@ -362,10 +362,10 @@
     "statusByLaw": "Statutory date",
     "statusReported": "Per reports",
     "keyFacts": "Key facts",
-    "parties": "Who is expected to run",
+    "parties": "Who is running",
     "keyDates": "Key dates on the road to the 26th Knesset",
     "finalListsNote": "Lists whose rosters are not yet published will be added when the approved lists are published — expected {date}.",
-    "partiesNote": "The lists as submitted to the Central Elections Committee on September 7–8, 2026; submission is not approval, and final approval is expected by September 27.",
+    "partiesNote": "The lists as submitted to the Central Elections Committee on September 7–8, 2026; submission is not approval, and final approval is reported for {date}.",
     "rules": "Election rules",
     "stats": "Facts & figures",
     "news": "Updates",

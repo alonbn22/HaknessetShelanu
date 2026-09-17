@@ -8,8 +8,10 @@ what data we could still surface.
 
 Ordered roughly by value/effort. Grounded in tables that already exist unless noted.
 
-- [ ] **⏰ Sept 2026 — official candidate lists → database** (time-critical: lists
-  are submitted to the CEC around **2026-09-09/10** and become final then).
+- [ ] **⏰ Sept 2026 — official candidate lists → database** (lists were submitted
+  to the CEC on **2026-09-07/08**; 13 sourced rosters now live in
+  `content/election.yaml` as `candidates`; the CEC's approved lists are reported
+  for 2026-09-27).
   Individual candidates don't exist as official data before submission, so today
   the site shows the sourced editorial layer (`content/election.yaml`: expected
   parties + leaders linked to their member pages via `leaderPersonId`). Once the

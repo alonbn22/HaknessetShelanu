@@ -409,6 +409,9 @@ const electionPartySchema = z.object({
     .array(z.object({ he: z.string(), en: z.string().optional(), personId: z.number().optional() }))
     .optional(),
   factionId: z.number().optional(), // links to /parties/<id> when it maps to a sitting faction
+  // Chart colour for lists with no sitting faction (sitting factions use
+  // content/factions.yaml). Party colour appears only where a list is the subject.
+  color: z.string().regex(/^#[0-9a-f]{6}$/i).optional(),
   sources: z
     .array(z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() }))
     .min(1, "every party entry must cite at least one source"),
@@ -524,4 +527,90 @@ export function getControversialLaws(): ControversialLaw[] {
       .laws.sort((a, b) => b.year - a.year);
   }
   return _controversialLaws;
+}
+
+// ---------- seat polls (editorial, verified poll by poll) ----------
+
+// One published seat poll. Every figure was checked against the outlet's own
+// article (the `verification` line says how); seats are keyed by registry slug
+// so a list keeps its identity across name changes; blocs are exactly what the
+// outlet counted — the site never assigns a list to a bloc.
+const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "must be YYYY-MM-DD");
+
+const pollSchema = z.object({
+  id: z.string().regex(/^\d{4}-\d{2}-\d{2}-[a-z0-9]+(?:-[a-z0-9]+)*$/, "id is <published>-<outlet>-<institute>"),
+  published: isoDate,
+  fieldwork: z.object({ from: isoDate, to: isoDate }).optional(),
+  outlet: localizedText,
+  // Dedupe key for the poll of polls (latest poll per institute counts once).
+  instituteId: listSlug,
+  institute: localizedText,
+  sample: z.number().int().positive(),
+  marginOfError: z.number().positive().optional(), // percentage points, when reported
+  seats: z.record(listSlug, z.number().int().nonnegative()),
+  belowThreshold: z.array(listSlug).default([]),
+  belowThresholdNote: z.string().optional(), // the outlet's own wording/percentages
+  blocs: z
+    .array(z.object({ label: localizedText, seats: z.number().int().positive() }))
+    .default([]),
+  note: z.string().optional(),
+  verification: z.string().optional(),
+  sources: z
+    .array(z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() }))
+    .min(1, "every poll must cite the outlet's own article"),
+});
+
+const pollsFileSchema = z.object({
+  lastReviewed: isoDate,
+  cutoff: isoDate, // polls published before this day are out of scope
+  threshold: z.number().positive(), // % of valid votes
+  thresholdSources: z
+    .array(z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() }))
+    .min(1, "the threshold is a legal fact — cite it"),
+  // Polls known to exist that could not be verified from a text source.
+  notEntered: z
+    .array(
+      z.object({
+        published: isoDate,
+        outlet: localizedText,
+        institute: localizedText,
+        url: httpUrl,
+        reason: localizedText,
+      }),
+    )
+    .default([]),
+  // Averages published elsewhere, shown for comparison under their own name.
+  externalAverages: z
+    .array(
+      z.object({
+        name: localizedText,
+        publisher: localizedText,
+        url: httpUrl,
+        asOf: isoDate,
+        method: localizedText,
+        values: z.record(listSlug, z.number().nonnegative()),
+      }),
+    )
+    .default([]),
+  polls: z.array(pollSchema),
+});
+export type Poll = z.infer<typeof pollSchema>;
+export type PollsFile = z.infer<typeof pollsFileSchema>;
+
+let _polls: PollsFile | null | undefined;
+
+// null when the file is absent or invalid — the polls section simply doesn't
+// render. Polls come back newest first regardless of file order.
+export function getPolls(): PollsFile | null {
+  if (_polls === undefined) {
+    try {
+      const raw = fs.readFileSync(path.join(CONTENT_DIR, "polls.yaml"), "utf8");
+      const parsed = pollsFileSchema.parse(parse(raw));
+      parsed.polls.sort((a, b) => b.published.localeCompare(a.published) || a.id.localeCompare(b.id));
+      _polls = parsed;
+    } catch {
+      _polls = null;
+    }
+  }
+  return _polls;
 }

@@ -15,6 +15,9 @@ const ALLOW = new Set<string>([
   // Political left↔right is a fixed semantic axis, not text flow. The component
   // sets dir="ltr" on its own root so the scale reads identically in every locale.
   "components/SpectrumBar.tsx",
+  // A time axis reads left-to-right in every locale; the SVG sets
+  // direction:ltr on itself, and its padding names are SVG geometry, not layout.
+  "components/polls/PollTrend.tsx",
 ]);
 
 // Each rule is [label, regex]. Class-name rules anchor on a token boundary

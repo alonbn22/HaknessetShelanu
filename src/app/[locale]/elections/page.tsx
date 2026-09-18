@@ -13,6 +13,7 @@ import {
 import { formatDate } from "@/lib/format";
 import { rtlAttrs } from "@/lib/text";
 import { KeyDatesTimeline } from "@/components/KeyDatesTimeline";
+import { PollsSection } from "@/components/polls/PollsSection";
 
 export const dynamic = "force-dynamic";
 
@@ -142,6 +143,10 @@ export default async function ElectionsHistoryPage() {
               </div>
             </div>
           )}
+
+          {/* Seat polls since the lists closed — every figure verified against
+              the outlet's own article; see content/polls.yaml. */}
+          <PollsSection />
 
           {outlook.parties.length > 0 && (
             <div className="space-y-2">

@@ -12,7 +12,7 @@
 knesset: 26
 expectedDate: "2026-10-27"
 dateStatus: set
-lastReviewed: "2026-09-13"
+lastReviewed: "2026-09-18"
 
 headline:
   he: "הבחירות לכנסת ה-26 יתקיימו ביום שלישי, 27 באוקטובר 2026."
@@ -218,6 +218,7 @@ parties:
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "ביחד", en: "Together" }
     slug: together
+    color: "#0097a7" # chart colour — no sitting faction to inherit one from
     leader: { he: "נפתלי בנט", en: "Naftali Bennett" }
     leaderWiki: "https://en.wikipedia.org/wiki/Naftali_Bennett"
     note:
@@ -250,6 +251,7 @@ parties:
       - { url: "https://www.timesofisrael.com/naftali-bennett-and-yair-lapid-announce-united-run-under-bennett-in-2026-elections/", title: "Naftali Bennett and Yair Lapid announce united run under Bennett", publisher: "The Times of Israel" }
   - name: { he: "ישר!", en: "Yashar!" }
     slug: yashar
+    color: "#c2185b" # chart colour — no sitting faction to inherit one from
     leader: { he: "גדי איזנקוט", en: "Gadi Eisenkot" }
     leaderPersonId: 30836
     note:
@@ -514,6 +516,7 @@ parties:
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "עמך ישראל", en: "Amkha Yisrael" }
     slug: amkha
+    color: "#8d6e63" # chart colour — no sitting faction to inherit one from
     leader: { he: "עופר וינטר", en: "Ofer Winter" }
     leaderWiki: "https://en.wikipedia.org/wiki/Ofer_Winter"
     note:
@@ -535,6 +538,7 @@ parties:
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "המילואימניקים והכלכלית", en: "The Reservists and the Economic list" }
     slug: reservists
+    color: "#7b1fa2" # chart colour — no sitting faction to inherit one from
     leader: { he: "יועז הנדל", en: "Yoaz Hendel" }
     leaderWiki: "https://en.wikipedia.org/wiki/Yoaz_Hendel"
     note:
@@ -553,6 +557,7 @@ parties:
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "הציבור החרדי", en: "The Haredi Public" }
     slug: haredi-public
+    color: "#455a64" # chart colour — no sitting faction to inherit one from
     leader: { he: "מוטי לייטנר", en: "Moti Leitner" }
     note:
       he: "רשימה חדשה שהגישה את מועמדותה ב-8 בספטמבר 2026 וביקשה להתמודד תחת האותיות זך; הרכבה המלא טרם פורסם במקורות שבידינו."

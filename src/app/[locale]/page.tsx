@@ -4,6 +4,7 @@ import { Plenum, type PlenumFaction, type PlenumSeat } from "@/components/Plenum
 import { GlobalSearch } from "@/components/GlobalSearch";
 import { MemberAvatar } from "@/components/MemberCard";
 import { KeyDatesTimeline } from "@/components/KeyDatesTimeline";
+import { PollAverageTeaser } from "@/components/polls/PollAverageTeaser";
 import { ReadingBadge } from "@/components/ReadingBadge";
 import { Badge } from "@/components/ui/Badge";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -136,6 +137,9 @@ export default async function HomePage() {
               </Link>
             </div>
           )}
+
+          {/* The poll of polls — the average with its count and method, never a lone poll. */}
+          <PollAverageTeaser />
 
           <div className="space-y-2">
             <SectionHeading

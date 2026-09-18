@@ -1,7 +1,8 @@
-# PersonID 30691. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30691 (Ram Ben-Barak). Researched from reputable public sources and
+# source-verified (every cited URL re-fetched 2026-09-18). Neutral language;
+# legal status marked where relevant. REVIEW before launch.
 personId: 30691
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -9,10 +10,10 @@ claims:
       he: סגן ראש המוסד (2009–2011)
       en: Deputy Director of the Mossad (2009–2011)
     description:
-      he: רם בן ברק שירת כסגן ראש המוסד בין השנים 2009 ל-2011, לאחר קריירה ארוכה
+      he: רם בן ברק שירת כסגן ראש המוסד בין השנים 2009 ל-2011, לאחר קריירה של כ-27 שנים
         בשירות החשאי הישראלי. בהמשך הושאל לצה"ל ושימש כמתאם פעולות מיוחדות.
       en: Ram Ben-Barak served as deputy director of the Mossad from 2009 to 2011,
-        following a long career in Israel's intelligence service. He was
+        following a roughly 27-year career in Israel's intelligence service. He was
         subsequently loaned to the IDF as coordinator of special operations.
     date: "2009"
     sources:
@@ -39,17 +40,21 @@ claims:
       - url: https://en.wikipedia.org/wiki/Ram_Ben-Barak
         title: Ram Ben-Barak
         publisher: Wikipedia
+      - url: https://www.timesofisrael.com/ex-deputy-mossad-chief-joins-centrist-yesh-atid-party/
+        title: Ex-deputy Mossad chief joins centrist Yesh Atid party
+        publisher: The Times of Israel
   - kind: positive
     category: achievement
     title:
-      he: יו"ר ועדת החוץ והביטחון של הכנסת
-      en: Chair of the Knesset Foreign Affairs and Defense Committee
+      he: יו"ר ועדת החוץ והביטחון של הכנסת (הכנסת ה-24)
+      en: Chair of the Knesset Foreign Affairs and Defense Committee (24th Knesset)
     description:
-      he: בן ברק, חבר כנסת מטעם יש עתיד מאז אפריל 2019, כיהן כיו"ר ועדת החוץ והביטחון
-        של הכנסת, אחת הוועדות החזקות בבית המחוקקים.
-      en: Ben-Barak, a member of the Knesset for Yesh Atid since April 2019, served as
-        chair of the Knesset Foreign Affairs and Defense Committee, one of the
-        parliament's most powerful committees.
+      he: בן ברק, חבר כנסת מטעם יש עתיד מאז אפריל 2019, כיהן בכנסת ה-24 כיו"ר ועדת החוץ והביטחון
+        של הכנסת, אחת הוועדות החזקות בבית המחוקקים, ובכנסת ה-25 המשיך לכהן כחבר בוועדה.
+      en: Ben-Barak, a member of the Knesset for Yesh Atid since April 2019, chaired
+        the Knesset Foreign Affairs and Defense Committee in the 24th Knesset, one of the
+        parliament's most powerful committees, and continued as a member of the committee in the 25th Knesset.
+    date: 2021-06-13
     sources:
       - url: https://en.wikipedia.org/wiki/Ram_Ben-Barak
         title: Ram Ben-Barak
@@ -57,4 +62,36 @@ claims:
       - url: https://www.timesofisrael.com/knesset-defense-panel-chief-suspends-aide-over-meeting-with-extremist-cleric/
         title: Knesset defense panel chief suspends aide for meeting with extremist
           cleric
+        publisher: The Times of Israel
+  - kind: positive
+    category: achievement
+    date: 2025-07-09
+    title:
+      he: ממייסדי השדולה לקידום הסדר ביטחוני אזורי בכנסת
+      en: Co-founder of the Knesset caucus for a regional security agreement
+    description:
+      he: ביולי 2025 הקים בן ברק יחד עם חברי הכנסת גלעד קריב ואלון שוסטר את השדולה לקידום הסדר ביטחוני אזורי, הקוראת להרחבת הסכמי אברהם ולתרגום ההישגים הצבאיים להסדר מדיני. בישיבת הפתיחה השתתפו יו"ר האופוזיציה יאיר לפיד ופעילים סורים וסעודים.
+      en: In July 2025 Ben-Barak, together with MKs Gilad Kariv and Alon Schuster, founded the Knesset caucus for the advancement of a regional security agreement, which calls for extending the Abraham Accords and turning military achievements into a diplomatic settlement. Opposition leader Yair Lapid and Syrian and Saudi activists took part in its inaugural session.
+    sources:
+      - url: https://www.jpost.com/middle-east/article-860504
+        title: Middle East regional security lobby calls to extend Abraham Accords
+        publisher: The Jerusalem Post
+      - url: https://www.ynetnews.com/article/sjjikqy8xg
+        title: "'Unprecedented moment for peace:' Arab voices at Knesset call for regional security"
+        publisher: Ynetnews
+  - kind: neutral
+    category: news
+    date: 2026-09-05
+    title:
+      he: במקום החמישי בנציגות יש עתיד ברשימת "ביחד" לבחירות 2026
+      en: Fifth among Yesh Atid's representatives on the "Together" slate for the 2026 election
+    description:
+      he: ב-26 באפריל 2026 הודיעו יאיר לפיד ונפתלי בנט על ריצה משותפת של יש עתיד ומפלגתו של בנט ברשימת "ביחד" בראשות בנט. ב-5 בספטמבר 2026 הציג לפיד את נציגי יש עתיד ברשימה המשותפת, ובן ברק שובץ במקום החמישי מביניהם, בעוד שישה חברי כנסת של המפלגה הודיעו כי לא יתמודדו.
+      en: On 26 April 2026 Yair Lapid and Naftali Bennett announced that Yesh Atid and Bennett's party would run jointly on the "Together" slate led by Bennett. On 5 September 2026 Lapid unveiled Yesh Atid's representatives on the joint slate, with Ben-Barak placed fifth among them, while six of the party's MKs announced they would not run.
+    sources:
+      - url: https://www.timesofisrael.com/lapid-unveils-yesh-atid-lineup-for-byachad-electoral-slate/
+        title: Lapid unveils Yesh Atid lineup for B'Yachad electoral slate
+        publisher: The Times of Israel
+      - url: https://www.timesofisrael.com/naftali-bennett-and-yair-lapid-announce-united-run-under-bennett-in-2026-elections/
+        title: Naftali Bennett and Yair Lapid announce united run under Bennett in 2026 elections
         publisher: The Times of Israel

@@ -1,7 +1,8 @@
-# PersonID 23631. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 23631. Researched from reputable public sources and source-verified
+# (every cited URL re-fetched on the review date). Neutral language; legal
+# status marked. REVIEW before launch.
 personId: 23631
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -52,6 +53,31 @@ claims:
   - kind: positive
     category: achievement
     title:
+      he: יזמה את חוק האומנה לילדים (2016)
+      en: Initiated the Foster Care Law for children (2016)
+    description:
+      he: חוק האומנה לילדים, שאלהרר יזמה וקידמה מיום כניסתה לכנסת, אושר בקריאה שנייה
+        ושלישית ב-23 בפברואר 2016. החוק מעגן לראשונה את זכויות ילדי האומנה,
+        משפחות האומנה וההורים הביולוגיים, קובע חובת רישוי למשפחות אומנה ומנגנוני
+        פיקוח ותלונות. החוק הוקדש לזכרה של דפנה מאיר, שהייתה ילדת אומנה ואם אומנה.
+      en: The Foster Care Law for children, which Elharrar initiated and promoted from
+        her first day in the Knesset, passed its second and third readings on 23
+        February 2016. The law anchors for the first time the rights of foster
+        children, foster families and biological parents, and sets licensing
+        requirements for foster families and oversight and complaint mechanisms.
+        It was dedicated to the memory of Dafna Meir, who had been both a foster
+        child and a foster mother.
+    date: 2016-02-23
+    sources:
+      - url: https://www.ynet.co.il/articles/0,7340,L-4770065,00.html
+        title: אושר חוק האומנה לזכר דפנה מאיר, ח"כ אלהרר דמעה
+        publisher: Ynet
+      - url: https://news.walla.co.il/item/2938105
+        title: 'חוק האומנה אושר והוקדש לדפנה מאיר: "להנציח את מפעל חייה"'
+        publisher: Walla
+  - kind: positive
+    category: achievement
+    title:
       he: קיבלה התנצלות מראש ממשלת בריטניה בעקבות אי-הנגישות בוועידת האקלים COP26
       en: Received an apology from the UK Prime Minister over inaccessibility at the
         COP26 climate summit
@@ -77,3 +103,25 @@ claims:
         title: Johnson apologizes to wheelchair-using Elharrar as she joins Bennett at
           COP26
         publisher: The Times of Israel
+  - kind: neutral
+    category: news
+    date: 2026-09-03
+    title:
+      he: הודיעה כי לא תתמודד בבחירות 2026
+      en: Announced she will not run in the 2026 election
+    description:
+      he: ב-3 בספטמבר 2026 הודיעה אלהרר לחברי יש עתיד כי לאחר 14 שנים בכנסת ובממשלה
+        לא תתמודד ברשימת המפלגה לכנסת ה-26, וכי היא פונה "לאתגר חדש". היא הדגישה
+        שהיא נשארת חברה ביש עתיד ותשתתף במערכת הבחירות של המפלגה.
+      en: On 3 September 2026 Elharrar informed Yesh Atid members that after 14 years
+        in the Knesset and government she would not run on the party's list for
+        the 26th Knesset, saying she was moving on to "a new challenge". She
+        stressed that she remains a Yesh Atid member and will take part in the
+        party's election campaign.
+    sources:
+      - url: https://www.haaretz.co.il/news/elections/2026-09-03/ty-article/.premium/000001a0-6735-dd0d-a1f7-6f3719e80000
+        title: ח"כ קארין אלהרר הודיעה כי לא תתמודד בבחירות הקרובות
+        publisher: Haaretz
+      - url: https://news.walla.co.il/item/3865367
+        title: "עזיבה נוספת ביש עתיד: קארין אלהרר לא תתמודד לכנסת הבאה"
+        publisher: Walla

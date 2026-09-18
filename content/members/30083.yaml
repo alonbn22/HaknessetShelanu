@@ -1,4 +1,5 @@
 personId: 30083
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -6,8 +7,8 @@ claims:
       he: כיהן כשר הכלכלה, שר החוץ ושר האנרגיה
       en: Served as Minister of Economy, Foreign Affairs, and Energy
     description:
-      he: "אלי כהן, רואה חשבון ואיש עסקים מחולון שכיהן כקצין בחיל האוויר, נכנס לכנסת ב-2015 ומילא שורה של תפקידי שר בכירים: שר הכלכלה והתעשייה (2017–2020), שר המודיעין (2020–2021), שר החוץ (2022/2023 ועד ינואר 2024) ושר האנרגיה והתשתיות (מינואר 2024 ואילך)."
-      en: "Eli Cohen, an accountant and businessman from Holon who served as an officer in the Israeli Air Force, entered the Knesset in 2015 and has held a series of senior cabinet posts: Minister of Economy and Industry (2017–2020), Minister of Intelligence (2020–2021), Minister of Foreign Affairs (2022/2023 to January 2024), and Minister of Energy and Infrastructure (since January 2024)."
+      he: "אלי כהן, רואה חשבון ואיש עסקים מחולון שכיהן כקצין בחיל האוויר, נכנס לכנסת ב-2015 ומילא שורה של תפקידי שר בכירים: שר הכלכלה והתעשייה (2017–2020), שר המודיעין (2020–2021), שר החוץ (דצמבר 2022 עד ינואר 2024) ושר האנרגיה והתשתיות (מ-1 בינואר 2024 ואילך; ממשלת מעבר מאז פיזור הכנסת ה-25 ביולי 2026)."
+      en: "Eli Cohen, an accountant and businessman from Holon who served as an officer in the Israeli Air Force, entered the Knesset in 2015 and has held a series of senior cabinet posts: Minister of Economy and Industry (2017–2020), Minister of Intelligence (2020–2021), Minister of Foreign Affairs (December 2022 to January 2024), and Minister of Energy and Infrastructure (since 1 January 2024; a caretaker government since the 25th Knesset dispersed in July 2026)."
     date: 2024-01-01
     sources:
       - url: https://en.wikipedia.org/wiki/Eli_Cohen_(politician,_born_1972)
@@ -16,6 +17,9 @@ claims:
       - url: https://www.timesofisrael.com/cabinet-okays-israel-katz-replacing-eli-cohen-as-foreign-minister-in-planned-move/
         title: Cabinet okays Israel Katz replacing Eli Cohen as foreign minister, in planned move
         publisher: The Times of Israel
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30083
+        title: MK Eli Cohen — personal details and positions
+        publisher: Knesset (official)
   - kind: positive
     category: achievement
     title:
@@ -42,10 +46,10 @@ claims:
       ar: تحقيق في قضية جوازات السفر الدبلوماسية
       ru: Расследование по делу о дипломатических паспортах
     description:
-      he: אלי כהן נחקר בחשד להפרת אמונים בקשר להנפקת דרכונים דיפלומטיים בתקופת כהונתו כשר החוץ. ב-17 ביוני 2026 הודיעה המשטרה שסיימה את החקירה וכי לעמדתה קיימת תשתית ראייתית להעמדתו לדין, והתיק הועבר לפרקליטות; נכון ל-5 ביולי 2026 טרם הוגש כתב אישום וההחלטה מצויה בידי הפרקליטות. כהן מכחיש עבירה ומסר כי הכל נעשה בהתאם לנהלים וכי הוא בטוח שהצדק יצא לאור.
-      en: Eli Cohen was questioned on suspicion of breach of trust over the issuance of diplomatic passports during his tenure as foreign minister. On 17 June 2026 Israel Police announced they had completed the investigation and that, in their view, there was an evidentiary basis to charge him; the file was transferred to the state prosecution. As of 5 July 2026 no indictment had been filed and the decision rests with the prosecution. Cohen denies wrongdoing, saying everything was done in accordance with procedures and that he is confident justice will prevail.
-      ar: تم استجواب إيلي كوهين للاشتباه في خيانة الأمانة بشأن إصدار جوازات سفر دبلوماسية خلال فترة توليه منصب وزير الخارجية. في 17 يونيو 2026 أعلنت الشرطة أنها أنهت التحقيق وأن هناك أساسًا ثبوتيًا لاتهامه، وأُحيل الملف إلى النيابة. حتى 5 يوليو 2026 لم تُقدم لائحة اتهام والقرار بيد النيابة. ينفي كوهين ارتكاب أي مخالفة ويقول إن كل شيء تم وفق الإجراءات.
-      ru: Эли Коэн был допрошен по подозрению в злоупотреблении доверием в связи с выдачей дипломатических паспортов в период его работы министром иностранных дел. 17 июня 2026 года полиция заявила о завершении расследования и о наличии доказательной базы для предъявления обвинения; дело передано в прокуратуру. По состоянию на 5 июля 2026 года обвинительное заключение не предъявлено. Коэн отрицает вину, заявляя, что всё было сделано в соответствии с процедурами.
+      he: אלי כהן נחקר בחשד להפרת אמונים בקשר להנפקת דרכונים דיפלומטיים בתקופת כהונתו כשר החוץ (החקירה נפתחה בינואר 2024 באישור היועצת המשפטית לממשלה). ב-17 ביוני 2026 הודיעה המשטרה שסיימה את החקירה וכי לעמדתה קיימת תשתית ראייתית להעמדתו לדין, והתיק הועבר לפרקליטות המדינה; נכון ל-18 בספטמבר 2026 לא דווח על שימוע או על כתב אישום, וההחלטה מצויה בידי הפרקליטות והיועצת המשפטית לממשלה. כהן מכחיש עבירה, מסר כי החקירה "לא הייתה צריכה להיפתח כלל", כי בתקופתו הונפקו ארבעה דרכונים דיפלומטיים בלבד על ידי מנכ"ל המשרד ובסמכות, וכי הוא בטוח שהצדק יצא לאור.
+      en: Eli Cohen was questioned on suspicion of breach of trust over the issuance of diplomatic passports during his tenure as foreign minister (the investigation was opened in January 2024 with the Attorney General's approval). On 17 June 2026 Israel Police announced they had completed the investigation and that, in their view, there was an evidentiary basis to charge him; the file was transferred to the State Attorney's Office. As of 18 September 2026 no pre-indictment hearing or indictment had been reported, and the decision rests with the State Attorney and the Attorney General. Cohen denies wrongdoing, said the investigation "should not have been opened at all", that only four diplomatic passports were issued in his time, all by the ministry's director-general within his authority, and that he is confident justice will prevail.
+      ar: تم استجواب إيلي كوهين للاشتباه في خيانة الأمانة بشأن إصدار جوازات سفر دبلوماسية خلال فترة توليه منصب وزير الخارجية. في 17 يونيو 2026 أعلنت الشرطة أنها أنهت التحقيق وأن هناك أساسًا ثبوتيًا لاتهامه، وأُحيل الملف إلى النيابة. حتى 18 سبتمبر 2026 لم يُبلَّغ عن جلسة استماع أو لائحة اتهام، والقرار بيد النيابة والمستشارة القضائية للحكومة. ينفي كوهين ارتكاب أي مخالفة ويقول إن التحقيق ما كان ينبغي أن يُفتح أصلًا وإن كل شيء تم وفق الصلاحيات.
+      ru: Эли Коэн был допрошен по подозрению в злоупотреблении доверием в связи с выдачей дипломатических паспортов в период его работы министром иностранных дел. 17 июня 2026 года полиция заявила о завершении расследования и о наличии доказательной базы для предъявления обвинения; дело передано в прокуратуру. По состоянию на 18 сентября 2026 года о слушании или обвинительном заключении не сообщалось; решение остаётся за прокуратурой и юридическим советником правительства. Коэн отрицает вину, заявляя, что расследование вообще не следовало открывать и что всё было сделано в рамках полномочий.
     sources:
       - url: https://www.haaretz.com/israel-news/israel-crime/2026-06-17/ty-article/.premium/police-say-enough-evidence-gathered-to-charge-minister-over-diplomatic-passports/0000019e-d4bd-d015-a3be-d6ff34a80000
         title: Police Say Sufficient Evidence Gathered to Indict Netanyahu Minister Over Unlawful Diplomatic Passports
@@ -59,4 +63,35 @@ claims:
       - url: https://www.mako.co.il/news-law/2026_q2/Article-a68efdc2dbbce91027.htm
         title: הסתיימה חקירת המשטרה בפרשת הדרכונים הדיפלומטיים
         publisher: N12 (Mako)
-lastReviewed: 2026-07-05
+      - url: https://www.maariv.co.il/news/law/article-1334101
+        title: "אלי כהן הסתבך? פרשת הדרכונים מגיעה לרגע האמת"
+        publisher: Maariv
+  - kind: neutral
+    category: news
+    date: 2026-08-17
+    title:
+      he: המקום הראשון בפריימריז הליכוד לקראת בחירות 2026
+      en: First place in the Likud primary ahead of the 2026 election
+    description:
+      he: בפריימריז הליכוד לרשימה לכנסת ה-26, שתוצאותיו פורסמו ב-17 באוגוסט 2026, דורג כהן במקום הראשון (כ-46 אלף קולות), לפני אמיר אוחנה ויריב לוין — כלומר במקום השני ברשימת הליכוד, אחרי בנימין נתניהו.
+      en: In the Likud primary for the 26th Knesset list, whose results were published on 17 August 2026, Cohen was ranked first (about 46,000 votes), ahead of Amir Ohana and Yariv Levin — the second slot on the Likud list after Benjamin Netanyahu.
+    sources:
+      - url: https://www.haaretz.co.il/news/elections/2026-08-17/ty-article/.premium/000001a0-10eb-d0aa-abfb-befb92a40000
+        title: "הסתיימה ספירת הקולות בפריימריז: אלי כהן, אמיר אוחנה ויריב לוין בצמרת הליכוד"
+        publisher: Haaretz
+      - url: https://news.walla.co.il/item/3861207
+        title: "ספירת הקולות בליכוד נגמרה: אלי כהן במקום הראשון, אוחנה ולוין אחריו - ומי נשאר בחוץ?"
+        publisher: Walla
+  - kind: neutral
+    category: news
+    date: 2026-09-03
+    title:
+      he: הצהיר כי הוא שואף לכהן כשר האוצר בממשלה הבאה
+      en: Said he aims to serve as Finance Minister in the next government
+    description:
+      he: בריאיון ב-3 בספטמבר 2026, לאחר זכייתו במקום הראשון בפריימריז, אמר כהן כי הוא מבקש לכהן כשר האוצר בממשלה הבאה, וכי תפקידו העיקרי של שר אוצר הוא "יצירת מנועי צמיחה". בריאיון קרא גם להפחתת המס על הדלק והציע להעביר את בתי הזיקוק מחיפה לנגב.
+      en: In an interview on 3 September 2026, after winning first place in the primary, Cohen said he wants to serve as Finance Minister in the next government, describing a finance minister's main task as "creating growth engines". He also called for lowering fuel tax and proposed relocating the Haifa refineries to the Negev.
+    sources:
+      - url: https://finance.walla.co.il/item/3865219
+        title: 'אחרי המקום הראשון בפריימריז, אלי כהן מכוון לתפקיד הבא: "רוצה להיות שר האוצר"'
+        publisher: Walla

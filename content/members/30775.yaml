@@ -1,7 +1,8 @@
-# PersonID 30775. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30775. Researched from reputable public sources and source-verified
+# (every cited URL re-fetched on the review date). Neutral language; legal
+# status marked. REVIEW before launch.
 personId: 30775
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -25,6 +26,9 @@ claims:
       - url: https://he.wikipedia.org/wiki/%D7%99%D7%A2%D7%9C_%D7%A8%D7%95%D7%9F_%D7%91%D7%9F_%D7%9E%D7%A9%D7%94
         title: יעל רון בן משה
         publisher: Wikipedia (Hebrew)
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30775
+        title: MK Yael Ron Ben-Moshe — personal details and positions
+        publisher: Knesset (official)
   - kind: positive
     category: achievement
     title:
@@ -66,3 +70,57 @@ claims:
       - url: https://en.wikipedia.org/wiki/Yael_Ron_Ben-Moshe
         title: Yael Ron Ben-Moshe
         publisher: Wikipedia (English)
+  - kind: neutral
+    category: role
+    date: 2026-06-23
+    title:
+      he: סגנית יושב ראש ועדת הבחירות המרכזית לכנסת ה-26
+      en: Deputy chair of the Central Elections Committee for the 26th Knesset
+    description:
+      he: רון בן משה מכהנת כסגנית יו"ר ועדת הבחירות המרכזית מטעם כחול לבן. בדיון
+        הוועדה ב-23 ביוני 2026, שבו הציג יו"ר הוועדה השופט נעם סולברג עקרונות
+        לדחיית בחירות בשעת חירום, ביקשה מסולברג פירוט על ההיערכות מול איומים על
+        טוהר הבחירות, ובהם התערבות זרה, קמפייני דיסאינפורמציה ושימוש מניפולטיבי
+        בבינה מלאכותית.
+      en: Ron Ben-Moshe serves as deputy chair of the Central Elections Committee on
+        behalf of Blue and White. At the committee's session on 23 June 2026,
+        in which its chair, Justice Noam Sohlberg, presented principles for
+        postponing an election in an emergency, she asked Sohlberg for details
+        on preparations against threats to election integrity, including foreign
+        interference, disinformation campaigns and manipulative use of
+        artificial intelligence.
+    sources:
+      - url: https://www.ynet.co.il/news/article/r1h7mu00zgg
+        title: 'סולברג: "בשעת חירום, דחייה מוגבלת של הבחירות עשויה להיות מוצדקת"'
+        publisher: Ynet
+  - kind: neutral
+    category: news
+    date: "2026-08-25"
+    title:
+      he: הודיעה על פרישתה מכחול לבן
+      en: Announced her departure from Blue and White
+    description:
+      he: >-
+        ב-25 באוגוסט 2026 הודיעה רון בן משה, לשעבר מנכ"לית המפלגה, ליו"ר בני גנץ על
+        פרישתה מכחול לבן, ואמרה כי לא תיקח חלק "במסגרת הפוליטית החדשה שהוא פועל
+        להקים". לדבריה, "המאמץ לייצר אחדות הוא ראוי מאין כמוהו, אלא שלטעמי בדרך
+        הנוכחית ובעת הזו, לא רק שהמאמץ עלול להיות לשווא - אלא אף עלול לגרום נזק",
+        ותרחיש של אי-הצטרפות לממשלה בראשות גדי איזנקוט הוא בעיניה "קו אדום בוהק".
+        הדיווחים לא ציינו אם תתמודד ברשימה אחרת.
+      en: >-
+        On 25 August 2026 Ron Ben-Moshe, formerly the party's director-general,
+        informed chairman Benny Gantz that she was leaving Blue and White, saying
+        she would not take part in "the new political framework he is working to
+        establish". She said that "the effort to create unity is worthy beyond
+        measure, but in my view, on the current path and at this time, the
+        effort may not only be in vain but may even cause damage", and that a
+        scenario of not joining a government headed by Gadi Eisenkot was for her
+        "a bright red line". The reports did not say whether she would run on
+        another list.
+    sources:
+      - url: https://www.ynet.co.il/news/elections2026/article/rys40aqvme
+        title: "יעל רון בן משה פורשת מכחול לבן, במפלגה מזהירים: בני גנץ לוקח בני ערובה"
+        publisher: Ynet
+      - url: https://www.davar1.co.il/694514/
+        title: "ח\"כ יעל רון בן משה עוזבת את כחול לבן: \"בדרך הנוכחית, המאמץ לאחדות עלול להיות לשווא\""
+        publisher: Davar

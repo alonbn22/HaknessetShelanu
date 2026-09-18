@@ -1,6 +1,7 @@
 # Itamar Ben-Gvir (PersonID 30811). Factual reporting from reputable public
 # sources, cited per claim. Neutral language; legal status marked. REVIEW before launch.
 personId: 30811
+lastReviewed: "2026-09-18"
 claims:
   - kind: negative
     category: conviction
@@ -8,11 +9,14 @@ claims:
     title:
       he: "הורשע בעבר בהסתה לגזענות ובתמיכה בארגון טרור"
       en: "Convicted of incitement to racism and supporting a terrorist organization"
-    date: "2007-01-01"
+    date: "2007-06-25"
     description:
-      he: "לאורך השנים הורשע במספר עבירות, ובהן הסתה לגזענות ותמיכה בתנועת כ\"ך שהוכרזה בישראל כארגון טרור. לפי הדיווחים הוגשו נגדו עשרות כתבי אישום, שרובם הסתיימו בזיכוי או בדחייה."
-      en: "Over the years he has been convicted on several counts, including incitement to racism and supporting the Kach movement, which Israel has designated a terrorist organization. He is reported to have faced dozens of indictments, most of which ended in acquittal or dismissal."
+      he: "ביוני 2007 הורשע בן גביר בהסתה לגזענות, לאחר שנשא שלטים ובהם הכיתובים \"לגרש את האויב הערבי\" ו\"הרב כהנא צדק\"; לפי הדיווחים הורשע גם בתמיכה בתנועת כ\"ך שהוכרזה בישראל כארגון טרור. לפי הדיווחים הוגשו נגדו לאורך השנים עשרות כתבי אישום, שרובם הסתיימו בזיכוי או בדחייה."
+      en: "In June 2007 Ben-Gvir was convicted of incitement to racism after carrying signs reading \"Expel the Arab enemy\" and \"Rabbi Kahane was right\"; he is also reported to have been convicted of supporting the Kach movement, which Israel has designated a terrorist organization. He is reported to have faced dozens of indictments over the years, most of which ended in acquittal or dismissal."
     sources:
+      - url: "https://www.jpost.com/israel/ben-gvir-convicted-of-inciting-to-racism/article-66231"
+        title: "Ben-Gvir convicted of inciting to racism"
+        publisher: "The Jerusalem Post"
       - url: "https://en.wikipedia.org/wiki/Itamar_Ben-Gvir"
         title: "Itamar Ben-Gvir"
         publisher: "Wikipedia"
@@ -25,9 +29,80 @@ claims:
       he: "מנהיג עוצמה יהודית ושר לביטחון לאומי"
       en: "Leader of Otzma Yehudit and Minister of National Security"
     description:
-      he: "הוביל את מפלגת עוצמה יהודית לכניסה משמעותית לכנסת ומונה לשר לביטחון לאומי בממשלה שהוקמה ב-2022."
-      en: "Led the Otzma Yehudit party to a significant Knesset presence and was appointed Minister of National Security in the government formed in 2022."
+      he: "הוביל את מפלגת עוצמה יהודית לכניסה משמעותית לכנסת ומונה לשר לביטחון לאומי בממשלה שהוקמה ב-2022. בינואר 2025 התפטר מהממשלה במחאה על הסכם הפסקת האש בעזה ושב לתפקידו במרץ 2025; הוא מכהן בתפקיד גם בממשלת המעבר."
+      en: "Led the Otzma Yehudit party to a significant Knesset presence and was appointed Minister of National Security in the government formed in 2022. In January 2025 he resigned from the government in protest at the Gaza ceasefire deal and returned to the post in March 2025; he continues to hold it in the caretaker government."
     sources:
       - url: "https://en.wikipedia.org/wiki/Itamar_Ben-Gvir"
         title: "Itamar Ben-Gvir"
         publisher: "Wikipedia"
+      - url: "https://www.jpost.com/israel-election-2026/article-909070"
+        title: "Itamar Ben-Gvir says Benjamin Netanyahu not answering his phone calls as tensions grow"
+        publisher: "The Jerusalem Post"
+  - kind: negative
+    category: controversy
+    status: ongoing
+    date: "2026-07-20"
+    title:
+      he: "בג\"ץ הגביל את מעורבותו בפעילות המבצעית של המשטרה; היועצת המשפטית לממשלה דיווחה כי ההסדר לא קוים"
+      en: "The High Court limited his involvement in operational policing; the Attorney General reported that the arrangement was not honored"
+    description:
+      he: "ב-16 באפריל 2026 דחה בג\"ץ עתירות להורות על פיטוריו, אך הפך למחייב מסמך עקרונות המבחין בין קביעת מדיניות (מותרת) לבין מעורבות בפעילות מבצעית (אסורה): מינויים בכירים במשטרה מחייבים המלצת המפכ\"ל והודעה מראש ליועצת המשפטית לממשלה, והשר נדרש להימנע מהתבטאויות על שימוש בכוח נגד אזרחים ומכל מעורבות בשיטור הפגנות ובחקירות ספציפיות. ב-20 ביולי 2026 עדכנה היועצת המשפטית לממשלה את בית המשפט כי בן גביר סירב לאשר את הנוסח הסופי של המסמך וכי המאמצים למנוע פגיעה בעצמאות המשטרה נכשלו. בן גביר כינה את הניסיון להדיחו אבסורדי, הצהיר כי ימשיך למנות לפי מי שמיישם את המדיניות, וכתב כי היועצת תמשיך לנסות להפיל את ממשלת הימין."
+      en: "On 16 April 2026 the High Court of Justice declined to order his dismissal but made binding a principles document distinguishing policy-setting (permitted) from involvement in operational policing (prohibited): senior police appointments require the commissioner's recommendation and advance notice to the Attorney General, and the minister must refrain from statements on police use of force against civilians and from any involvement in protest policing or specific investigations. On 20 July 2026 the Attorney General updated the court that Ben-Gvir had refused to approve the final version of the document and that efforts to prevent harm to police independence had failed. Ben-Gvir called the attempt to remove him \"absurd\", said he would continue to make appointments \"according to who implements the policy\", and wrote that the Attorney General would \"keep trying to bring down the right-wing government\"."
+    sources:
+      - url: "https://www.jpost.com/israel-news/article-893272"
+        title: "High Court stops short of ousting Itamar Ben-Gvir, limits police influence"
+        publisher: "The Jerusalem Post"
+      - url: "https://www.ynetnews.com/article/h1w6ldahbx"
+        title: "High Court blocks Ben-Gvir firing, imposes limits pending talks"
+        publisher: "Ynetnews"
+      - url: "https://www.timesofisrael.com/ag-tells-court-efforts-to-stop-ben-gvir-from-undermining-police-independence-have-failed/"
+        title: "AG tells court efforts to stop Ben Gvir from undermining police independence have failed"
+        publisher: "The Times of Israel"
+  - kind: negative
+    category: controversy
+    date: "2026-05-20"
+    title:
+      he: "סרטון שבו לעג לפעילי המשט העצורים עורר גינוי בישראל ובעולם, כולל מראש הממשלה"
+      en: "A video in which he taunted detained flotilla activists drew condemnation in Israel and abroad, including from the Prime Minister"
+    description:
+      he: "ב-20 במאי 2026 פרסם בן גביר סרטון מנמל אשדוד שבו נראים מאות פעילי משט לעזה עצורים, כורעים וידיהם קשורות, בעוד הוא מנופף בדגל ישראל ואומר לעברם, לפי הדיווחים, כי הם הגיעו לישראל וכי ישראל היא בעלת הבית. ראש הממשלה נתניהו אמר כי האופן שבו טיפל השר בן גביר בפעילי המשט אינו עולה בקנה אחד עם ערכי ישראל ונורמותיה, שר החוץ סער אמר כי בן גביר גרם במכוון נזק למדינה, וממשלות בהן צרפת, איטליה, ספרד וארה\"ב גינו את הסרטון. בדיווחים שצוטטו כאן לא הובאה תגובה של בן גביר לביקורת."
+      en: "On 20 May 2026 Ben-Gvir posted a video from Ashdod port showing hundreds of detained Gaza-flotilla activists kneeling with their hands bound while he waved an Israeli flag and called out \"Welcome to Israel, we are in charge here\". Prime Minister Netanyahu said that \"the way that Minister Ben Gvir dealt with the flotilla activists is not in line with Israel's values and norms\", Foreign Minister Sa'ar said \"you deliberately caused damage to the state\", and governments including France, Italy, Spain and the United States condemned the video. The reports cited here carried no response from Ben-Gvir to the criticism."
+    sources:
+      - url: "https://www.timesofisrael.com/ben-gvir-posts-video-of-himself-taunting-bound-and-detained-gaza-flotilla-activists/"
+        title: "Ben Gvir posts video of himself taunting bound and detained Gaza flotilla activists, sparks global outcry"
+        publisher: "The Times of Israel"
+      - url: "https://www.jta.org/2026/05/20/israel/itamar-ben-gvir-draws-criticism-from-netanyahu-for-video-taunting-detained-flotilla-activists"
+        title: "Itamar Ben-Gvir under fire, including from Netanyahu, over video taunting flotilla detainees"
+        publisher: "JTA"
+      - url: "https://www.aljazeera.com/news/2026/5/21/outrage-over-israels-ben-gvir-flotilla-abuse-video-what-we-know"
+        title: "Outrage over Israel's Ben-Gvir flotilla abuse video: What we know"
+        publisher: "Al Jazeera"
+  - kind: neutral
+    category: news
+    date: "2026-09-18"
+    title:
+      he: "אמר כי נתניהו אינו עונה לשיחותיו וכי הוא מבקש להישאר בממשלה בראשות נתניהו לאחר הבחירות"
+      en: "Said Netanyahu is not answering his calls and that he wants to remain in a Netanyahu-led government after the election"
+    description:
+      he: "לקראת בחירות 2026 אמר בן גביר כי נתניהו לא בדיוק ענה לשיחות הטלפון שלו בשבועות האחרונים, והביע חשש שנתניהו יקים לאחר הבחירות ממשלה רחבה שתותיר את עוצמה יהודית מחוץ לקואליציה. עם זאת אמר כי הוא מבקש להישאר בממשלה בראשות נתניהו ולהתמקד בנושאי מדיניות, ובהם מינוי שופטים. בדיווח לא הובאה תגובה מהליכוד."
+      en: "Ahead of the 2026 election Ben-Gvir said Netanyahu \"hasn't exactly answered my phone calls in recent weeks\" and voiced concern that Netanyahu would form a broad government after the election leaving Otzma Yehudit outside the coalition. He nonetheless said he wants to remain in a Netanyahu-led government and to focus on policy issues, including judicial appointments. The report carried no response from Likud."
+    sources:
+      - url: "https://www.jpost.com/israel-election-2026/article-909070"
+        title: "Itamar Ben-Gvir says Benjamin Netanyahu not answering his phone calls as tensions grow"
+        publisher: "The Jerusalem Post"
+      - url: "https://www.haaretz.com/israel-news/elections/2026-09-17/ty-article/.premium/as-netanyahu-eyes-centrist-voters-ben-gvir-hopes-to-become-patron-of-the-right/000001a0-aef7-df5b-adf2-fef7c45a0000"
+        title: "As Netanyahu Eyes Centrist Voters, Ben-Gvir Hopes to Become Champion of the Right"
+        publisher: "Haaretz"
+  - kind: neutral
+    category: news
+    date: "2026-09-18"
+    title:
+      he: "המשרד לביטחון לאומי והמשטרה הורו לבכיריהם שלא להיפגש, על רקע העימות עם המפכ\"ל דני לוי"
+      en: "The National Security Ministry and the police told their senior officials not to meet, amid his clash with Commissioner Danny Levy"
+    description:
+      he: "לפי הארץ, ב-18 בספטמבר 2026 הוציאו המשרד לביטחון לאומי והמשטרה הנחיות פנימיות האוסרות על בכיריהם להיפגש עם בכירי הגוף השני, על רקע החרפת המתיחות בין בן גביר למפכ\"ל דני לוי, בין השאר סביב עיכוב תקציבי משטרה. בדיווח לא הובאו תגובות רשמיות מלשכת השר או מהמשטרה."
+      en: "According to Haaretz, on 18 September 2026 the National Security Ministry and the Israel Police issued internal guidelines barring their senior officials from meeting senior figures of the other body, amid deepening tensions between Ben-Gvir and Commissioner Danny Levy, including over held-up police budgets. The report carried no official responses from the minister's office or the police."
+    sources:
+      - url: "https://www.haaretz.com/israel-news/israel-politics/2026-09-18/ty-article/.premium/police-national-security-ministry-refusing-to-meet-amid-tensions-with-ben-gvir/000001a0-aff1-d3b8-a7f4-bffb69a40000"
+        title: "Police, National Security Ministry Reps Refusing to Meet Amid Commissioner's Clash With Ben-Gvir"
+        publisher: "Haaretz"

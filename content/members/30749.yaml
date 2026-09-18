@@ -1,7 +1,8 @@
 # PersonID 30749. Auto-researched from reputable public sources and
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# legal status marked. Reviewed 2026-09-18.
 personId: 30749
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -50,14 +51,17 @@ claims:
       he: סגן שר החקלאות וביטחון המזון (2022–2025)
       en: Deputy Minister of Agriculture and Food Security (2022–2025)
     description:
-      he: עם הקמת הממשלה ה-37 בסוף דצמבר 2022 מונה אבוטבול לסגן שר החקלאות וביטחון
-        המזון, ובין השאר קיבל אחריות לנושא צער בעלי חיים. ביולי 2025 התפטר
-        מתפקידו.
-      en: With the formation of Israel's 37th government in late December 2022,
-        Abutbul was appointed Deputy Minister of Agriculture and Food Security,
-        and was given responsibility for animal welfare matters among other
-        areas. He resigned from the post in July 2025.
-    date: 2022-12-29
+      he: עם הקמת הממשלה ה-37 מונה אבוטבול לסגן שר החקלאות וביטחון המזון (לפי נתוני
+        הכנסת, מ-3 בינואר 2023), ובין השאר קיבל אחריות לנושא צער בעלי חיים. ביולי
+        2025 התפטר מתפקידו במסגרת פרישת ש"ס מהממשלה על רקע משבר חוק הגיוס;
+        כהונתו הסתיימה ב-20 ביולי 2025.
+      en: With the formation of Israel's 37th government, Abutbul was appointed
+        Deputy Minister of Agriculture and Food Security (per Knesset data, from
+        3 January 2023), and was given responsibility for animal welfare matters
+        among other areas. In July 2025 he resigned as part of Shas's withdrawal
+        from the government amid the draft-law crisis; his term ended on 20 July
+        2025.
+    date: 2023-01-03
     sources:
       - url: https://en.wikipedia.org/wiki/Moshe_Abutbul_(politician)
         title: Moshe Abutbul (politician)
@@ -65,3 +69,41 @@ claims:
       - url: https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%90%D7%91%D7%95%D7%98%D7%91%D7%95%D7%9C
         title: משה אבוטבול
         publisher: Hebrew Wikipedia
+      - url: https://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_PersonToPosition?$filter=PersonID%20eq%2030749%20and%20KnessetNum%20eq%2025&$format=json
+        title: KNS_PersonToPosition (PersonID 30749, 25th Knesset)
+        publisher: Knesset OData
+  - kind: neutral
+    category: role
+    date: "2025-07-20"
+    title:
+      he: חבר הכנסת ה-25 מטעם ש"ס; אינו מכהן עוד כסגן שר
+      en: Member of the 25th Knesset for Shas; no longer a deputy minister
+    description:
+      he: מאז סיום כהונתו כסגן שר החקלאות ב-20 ביולי 2025, עם פרישת ש"ס מהממשלה,
+        אבוטבול מכהן כחבר כנסת מן השורה מטעם ש"ס וחבר בוועדות הכנסת.
+      en: Since his term as deputy agriculture minister ended on 20 July 2025, with
+        Shas's withdrawal from the government, Abutbul has served as a regular
+        Knesset member for Shas and a member of Knesset committees.
+    sources:
+      - url: https://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_PersonToPosition?$filter=PersonID%20eq%2030749%20and%20KnessetNum%20eq%2025&$format=json
+        title: KNS_PersonToPosition (PersonID 30749, 25th Knesset)
+        publisher: Knesset OData
+      - url: https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%90%D7%91%D7%95%D7%98%D7%91%D7%95%D7%9C
+        title: משה אבוטבול
+        publisher: Hebrew Wikipedia
+  - kind: neutral
+    category: news
+    date: "2026-09-08"
+    title:
+      he: במקום השביעי ברשימת ש"ס לבחירות 2026
+      en: Placed seventh on the Shas list for the 2026 election
+    description:
+      he: ב-8 בספטמבר 2026 אישרה מועצת חכמי התורה את רשימת ש"ס לבחירות לכנסת ה-26
+        ב-27 באוקטובר 2026, ובה שובץ אבוטבול במקום השביעי.
+      en: On 8 September 2026 the Council of Torah Sages approved the Shas list for
+        the 27 October 2026 election to the 26th Knesset, placing Abutbul
+        seventh.
+    sources:
+      - url: https://www.ynet.co.il/news/elections2026/article/hkjzuqtofe
+        title: 'עם סגן אלוף במילואים במקום ריאלי: זו רשימת ש"ס לכנסת'
+        publisher: Ynet

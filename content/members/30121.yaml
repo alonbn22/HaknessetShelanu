@@ -1,7 +1,8 @@
 # PersonID 30121. Auto-researched from reputable public sources and
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# legal status marked. Reviewed 2026-09-18.
 personId: 30121
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -61,3 +62,66 @@ claims:
       - url: https://en.wikipedia.org/wiki/Oded_Forer
         title: Oded Forer
         publisher: Wikipedia
+  - kind: neutral
+    category: role
+    date: "2026-08-04"
+    title:
+      he: יו"ר סיעת ישראל ביתנו ויו"ר הוועדה המיוחדת לחיזוק ופיתוח הנגב והגליל
+      en: Yisrael Beytenu faction chairman and chair of the Special Committee for the Negev and Galilee
+    description:
+      he: בכנסת ה-25 פורר הוא יו"ר סיעת ישראל ביתנו (לפי נתוני הכנסת, מ-15 בנובמבר
+        2022), ונכון לאוגוסט 2026 הוא מכהן כיו"ר הוועדה המיוחדת לחיזוק ופיתוח הנגב
+        והגליל, בין היתר בדיונים על שיקום בתים שנפגעו מטילים איראניים בבאר שבע.
+      en: In the 25th Knesset Forer is chairman of the Yisrael Beytenu faction
+        (according to Knesset data, since 15 November 2022), and as of August 2026
+        he chairs the Special Committee for Strengthening and Developing the
+        Negev and Galilee, including hearings on rebuilding homes hit by Iranian
+        missiles in Beersheba.
+    sources:
+      - url: https://www.ynet.co.il/news/article/bkvkymklzg
+        title: "הח\"כים היריבים צעקו זה על זה: 'אתם מבזים את התורה!' | ראש בראש בזירת הבחירות"
+        publisher: Ynet
+      - url: https://www.ynet.co.il/news/article/h1vjfyv111l
+        title: "הטיל האיראני הותיר 36 משפחות ללא בית: 'בני 80 לא יכולים לחכות שנים לשיקום'"
+        publisher: Ynet
+      - url: https://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_PersonToPosition?$filter=PersonID%20eq%2030121%20and%20KnessetNum%20eq%2025&$format=json
+        title: KNS_PersonToPosition (PersonID 30121, 25th Knesset)
+        publisher: Knesset OData
+  - kind: neutral
+    category: news
+    date: "2026-08-04"
+    title:
+      he: עימות בחירות מול ח"כ מלכיאלי בנושא גיוס חרדים ויוקר המחיה
+      en: Election debate with MK Malkieli on Haredi conscription and the cost of living
+    description:
+      he: ב-4 באוגוסט 2026, ב"זירת הבחירות" של ynet, התעמת פורר עם ח"כ מיכאל מלכיאלי
+        מש"ס. פורר טען כי אי-גיוס החרדים אינו צודק, קרא לשירות חובה לכולם ומתח
+        ביקורת על מה שכינה "חוק ההשתמטות" שקידמה הממשלה, וכן על עליית יוקר המחיה.
+      en: On 4 August 2026, in ynet's "Election Arena", Forer debated Shas MK Michael
+        Malkieli. Forer argued that the non-conscription of Haredim is unjust,
+        called for mandatory service for all, and criticized what he called the
+        government's "evasion law" as well as the rising cost of living.
+    sources:
+      - url: https://www.ynet.co.il/news/article/bkvkymklzg
+        title: "הח\"כים היריבים צעקו זה על זה: 'אתם מבזים את התורה!' | ראש בראש בזירת הבחירות"
+        publisher: Ynet
+  - kind: neutral
+    category: news
+    date: "2026-09-06"
+    title:
+      he: במקום הרביעי ברשימת ישראל ביתנו לבחירות 2026
+      en: Placed fourth on the Yisrael Beytenu list for the 2026 election
+    description:
+      he: ב-6 בספטמבר 2026 הציג אביגדור ליברמן את רשימת ישראל ביתנו לבחירות לכנסת ה-26
+        ב-27 באוקטובר 2026, ובה שובץ פורר במקום הרביעי, אחרי ליברמן, רפי בן שטרית
+        וטליה לנקרי.
+      en: On 6 September 2026 Avigdor Liberman unveiled the Yisrael Beytenu list for
+        the 27 October 2026 election to the 26th Knesset, placing Forer fourth,
+        after Liberman, Rafi Ben Shitrit and Talya Lankri.
+    sources:
+      - url: https://www.jpost.com/israel-election-2026/article-907744
+        title: Liberman unveils Yisrael Beytenu's election list with Rafi Ben Shitrit second, Sharon Sharabi sixth
+        publisher: The Jerusalem Post
+      - url: https://www.israelnationalnews.com/news/432800
+        title: Yisrael Beytenu unveils election slate as key figures exit
+        publisher: Israel National News

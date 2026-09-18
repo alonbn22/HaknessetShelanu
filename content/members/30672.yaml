@@ -1,7 +1,8 @@
-# PersonID 30672. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30672. Researched from reputable public sources and source-verified
+# (every cited URL re-fetched on the review date). Neutral language; legal
+# status marked. REVIEW before launch.
 personId: 30672
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -43,20 +44,113 @@ claims:
       en: Member of Knesset for United Torah Judaism
     description:
       he: פינדרוס נבחר לראשונה לכנסת בבחירות אפריל 2019, כשהוצב במקום השמיני ברשימת
-        יהדות התורה, וכיהן בכנסת במספר תקופות בשנים שלאחר מכן. בכנסת ה-25 מונה
-        ליו"ר הוועדה המיוחדת לפניות הציבור.
+        יהדות התורה, וכיהן בכנסת במספר תקופות בשנים שלאחר מכן. לכנסת ה-25 נכנס
+        ב-6 בינואר 2023 במסגרת "החוק הנורווגי", ומונה ליו"ר הוועדה המיוחדת לפניות
+        הציבור. ב-17 ביולי 2025 עזב את הכנסת עם התפטרות שרי יהדות התורה מהממשלה
+        ושובם לכנסת, וב-21 בינואר 2026 שב לכנסת לאחר התפטרותו של ח"כ ישראל
+        אייכלר במסגרת החוק הנורווגי.
       en: Pindrus was first elected to the Knesset in the April 2019 election, placed
         eighth on the United Torah Judaism list, and served across several terms
-        in the years that followed. During the 25th Knesset he was appointed
-        chair of the Special Committee for Public Petitions.
-    date: "2019"
+        in the years that followed. He entered the 25th Knesset on 6 January
+        2023 under the "Norwegian Law" and was appointed chair of the Special
+        Committee for Public Petitions. On 17 July 2025 he left the Knesset when
+        UTJ's ministers resigned from the government and returned to their
+        seats, and on 21 January 2026 he re-entered the Knesset following MK
+        Israel Eichler's resignation under the Norwegian Law.
+    date: 2026-01-21
     sources:
       - url: https://en.wikipedia.org/wiki/Yitzhak_Pindrus
         title: Yitzhak Pindrus
         publisher: Wikipedia
-      - url: https://www.wikidata.org/wiki/Q7007279
-        title: Isaac Pindrus (Q7007279)
-        publisher: Wikidata
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%A4%D7%99%D7%A0%D7%93%D7%A8%D7%95%D7%A1
+        title: יצחק פינדרוס
+        publisher: Wikipedia (Hebrew)
+      - url: https://www.israelhayom.co.il/israelnow/article/19730743
+        title: ח"כ פינדרוס שב לסיעת דגל התורה
+        publisher: Israel Hayom
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30672
+        title: MK Yitzhak Pindrus — personal details and positions
+        publisher: Knesset (official)
       - url: https://main.knesset.gov.il/EN/News/PressReleases/Pages/press11123q.aspx
         title: MK Pindrus appointed as chair of Special Committee for Public Petitions
         publisher: Knesset (official)
+  - kind: negative
+    category: controversy
+    title:
+      he: התבטאות נגד הקהילה הלהט"בית בריאיון טלוויזיה (2023)
+      en: Remarks against the LGBT community in a television interview (2023)
+    description:
+      he: בריאיון לתוכנית "אנשים" בערוץ 12 ביוני 2023 אמר פינדרוס כי "הדבר הכי מסוכן
+        למדינת ישראל, יותר מדאע"ש וחיזבאללה", הוא התנועה הלהט"בית, וכי לתפיסתו יש
+        למנוע לא רק את מצעד הגאווה אלא את התנועה בכלל. הדברים עוררו ביקורת
+        ציבורית, ובכלל זה מלשכת ראש הממשלה. פינדרוס דחה את הטענה שהוא חסר סובלנות,
+        אמר כי עמדתו נובעת מדרישות התורה וכי הוא מכבד את הזולת, וכי אינו מבקש
+        להחיל הגבלות מעבר לסטטוס קוו.
+      en: In a June 2023 interview on Channel 12's "Anashim" programme, Pindrus said
+        that "the most dangerous thing for the State of Israel, more than ISIS
+        and Hezbollah", is the LGBT movement, and that in his view not only the
+        Pride parade but the movement itself should be prevented. The remarks
+        drew public criticism, including from the Prime Minister's Office.
+        Pindrus rejected accusations of intolerance, said his position stems
+        from the Torah's requirements and that he respects others, and that he
+        was not seeking restrictions beyond the status quo.
+    date: 2023-06-21
+    sources:
+      - url: https://www.maariv.co.il/news/israel/Article-1016629
+        title: 'ח"כ מיהדות התורה: "הדבר הכי מסוכן למדינת ישראל, יותר מדאע"ש וחזבאללה, זה התנועה הלהט"בית"'
+        publisher: Maariv
+      - url: https://www.mako.co.il/tv-people/articles/Article-0fc26d494fed881026.htm
+        title: '"מי שיפסיד מהדיון זה לא אני, כי אני במעמד מספרי הרבה יותר טוב משהייתי ב-48"'
+        publisher: N12 (Mako)
+  - kind: negative
+    category: controversy
+    title:
+      he: אמירה כלפי ח"כ נעמה לזימי בדיון בוועדת החינוך (יוני 2026)
+      en: Remark toward MK Naama Lazimi during an Education Committee debate (June 2026)
+    description:
+      he: ב-29 ביוני 2026, בדיון בוועדת החינוך, כשנשאל על עמדתו בעניין ירי לעבר רגליהם
+        של חוסמי כבישים, אמר פינדרוס "אבל להתחיל עם נעמה לזימי". ח"כ לזימי
+        (הדמוקרטים) הגיבה כי מדובר בהסתה, קראה לו "מסית ובריון", והגישה נגדו
+        תלונה במשטרה. ח"כ טלי גוטליב (הליכוד) אמרה כי דבריו הוצאו מהקשרם; בדיווחים
+        המצוטטים לא נכללה תגובה של פינדרוס עצמו.
+      en: On 29 June 2026, during an Education Committee debate, when asked about his
+        stance on firing at the legs of road-blocking protesters, Pindrus said
+        "but start with Naama Lazimi". MK Lazimi (The Democrats) called the
+        remark incitement, described him as "an inciter and a bully", and filed
+        a police complaint against him. MK Tali Gotliv (Likud) said his words
+        were taken out of context; the cited reports did not include a response
+        from Pindrus himself.
+    date: 2026-06-29
+    sources:
+      - url: https://www.ynet.co.il/news/article/h18tmpyqgx
+        title: פינדרוס עורר סערה בנושא הירי לרגלי המפגינים
+        publisher: Ynet
+      - url: https://www.maariv.co.il/news/politics/article-1338720
+        title: 'נעמה לזימי הפציצה את הדיון: "חבר כנסת אמר שצריך לירות לי ברגליים"'
+        publisher: Maariv
+      - url: https://kikar.co.il/haredim-news/pindrus-lazzimi-incitement-knesset-committee
+        title: "עימות חריג בכנסת: הסערה, התלונה במשטרה וההגנה הבלתי צפויה"
+        publisher: Kikar HaShabbat
+  - kind: neutral
+    category: news
+    date: 2026-09-15
+    title:
+      he: נכלל ברשימת יהדות התורה לכנסת ה-26
+      en: Included on the United Torah Judaism list for the 26th Knesset
+    description:
+      he: לקראת בחירות 27 באוקטובר 2026 נכלל פינדרוס ברשימה המשותפת של יהדות התורה
+        (דגל התורה ואגודת ישראל) בראשות יעקב אשר, לאחר שהוחלט כי ח"כים משה גפני
+        ואורי מקלב לא ימשיכו לכהן. ברשימה שהוגשה לוועדת הבחירות הוא מוצב במקום
+        השלישי.
+      en: Ahead of the 27 October 2026 election, Pindrus was included on the joint
+        United Torah Judaism list (Degel HaTorah and Agudat Yisrael) headed by
+        Yaakov Asher, after it was decided that MKs Moshe Gafni and Uri Maklev
+        would not continue. On the list submitted to the Central Elections
+        Committee he is placed third.
+    sources:
+      - url: https://kikar.co.il/haredim-news/tle0yi
+        title: "המודחים לצד החדשים: נציגי יהדות התורה התכנסו יחד לראשונה"
+        publisher: Kikar HaShabbat
+      - url: https://he.wikipedia.org/wiki/%D7%94%D7%91%D7%97%D7%99%D7%A8%D7%95%D7%AA_%D7%9C%D7%9B%D7%A0%D7%A1%D7%AA_%D7%94%D7%A2%D7%A9%D7%A8%D7%99%D7%9D_%D7%95%D7%A9%D7%A9
+        title: הבחירות לכנסת העשרים ושש
+        publisher: Wikipedia (Hebrew)

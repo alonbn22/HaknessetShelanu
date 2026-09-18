@@ -1,7 +1,8 @@
 # PersonID 28513. Auto-researched from reputable public sources and
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# legal status marked. Reviewed 2026-09-18.
 personId: 28513
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -10,16 +11,21 @@ claims:
       en: Served as a government minister and deputy minister in Israel
     description:
       he: יואב בן צור, חבר כנסת מטעם ש"ס שנכנס לכנסת ביוני 2014, כיהן בממשלה ה-37 כשר
-        העבודה, הרווחה והשירותים החברתיים (החל מדצמבר 2022 ועד התפטרותו ביולי
-        2025) וכן כממלא מקום שר הבריאות בין ינואר לאפריל 2023. במאי 2020 מונה
-        לסגן השר לפיתוח הפריפריה, הנגב והגליל ולסגן שר הפנים.
+        הרווחה והביטחון החברתי (29 בדצמבר 2022 – 30 בינואר 2023) ולאחר מכן כשר
+        העבודה (30 בינואר 2023 – 20 ביולי 2025), וכן כממלא מקום שר הבריאות בין
+        ינואר לאפריל 2023. ביולי 2025 התפטר מהממשלה יחד עם שרי ש"ס על רקע משבר
+        חוק הגיוס. במאי 2020 מונה לסגן השר לפיתוח הפריפריה, הנגב והגליל ולסגן שר
+        הפנים.
       en: Yoav Ben-Tzur, a Knesset member for the Shas party who entered the Knesset
-        in June 2014, served in the 37th government as Minister of Labor, Social
-        Affairs and Social Services (from December 2022 until his resignation in
-        July 2025) and as acting Minister of Health between January and April
-        2023. In May 2020 he was appointed Deputy Minister for the Development
-        of the Periphery, Negev and Galilee and Deputy Minister of the Interior.
-    date: 2022-12-29
+        in June 2014, served in the 37th government as Minister of Welfare and
+        Social Security (29 December 2022 - 30 January 2023) and then as
+        Minister of Labor (30 January 2023 - 20 July 2025), and as acting
+        Minister of Health between January and April 2023. In July 2025 he
+        resigned from the government together with the other Shas ministers
+        amid the military-draft law crisis. In May 2020 he was appointed Deputy
+        Minister for the Development of the Periphery, Negev and Galilee and
+        Deputy Minister of the Interior.
+    date: "2022-12-29"
     sources:
       - url: https://en.wikipedia.org/wiki/Yoav_Ben-Tzur
         title: Yoav Ben-Tzur
@@ -27,6 +33,9 @@ claims:
       - url: https://www.ynetnews.com/article/q4moer0u2
         title: Labor Minister Ben Tzur announces resignation
         publisher: Ynetnews
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%90%D7%91_%D7%91%D7%9F_%D7%A6%D7%95%D7%A8
+        title: יואב בן צור
+        publisher: Wikipedia (Hebrew)
   - kind: positive
     category: achievement
     title:
@@ -51,26 +60,105 @@ claims:
         publisher: Wikipedia (Hebrew)
   - kind: negative
     category: investigation
-    status: acquitted
+    status: settled
     title:
-      he: ביקורת מבקר המדינה על תקופתו כמנכ"ל "המשקם"
-      en: State Comptroller criticism of his tenure as CEO of HaMeshakem
+      he: חקירה משטרתית (2007) ודוח מבקר המדינה (2008) על תקופתו כמנכ"ל "המשקם"; לא הוגש כתב אישום
+      en: Police investigation (2007) and State Comptroller report (2008) on his tenure as CEO of HaMeshakem; no indictment was filed
     description:
-      he: בדוח שפרסם מבקר המדינה במאי 2008 נמתחה ביקורת על התנהלות החברה הממשלתית
-        "המשקם" בתקופת כהונתו של בן צור כמנכ"ל, ובכלל זה תנאי שכר והטבות חריגים
-        לבכירים, ניגודי עניינים והעדפת מקורבים. הליך פלילי שנפתח נגדו בשנת 2007
-        נסגר בידי הפרקליטות בשל היעדר ראיות מספיקות, ולא הוגש נגדו כתב אישום.
-      en: A State Comptroller report published in May 2008 criticized the conduct of
-        the government company HaMeshakem during Ben-Tzur's tenure as CEO,
-        including irregular compensation and benefits for senior staff,
-        conflicts of interest and favoritism toward associates. A criminal
-        investigation opened against him in 2007 was closed by the prosecution
-        for lack of sufficient evidence, and no indictment was filed.
-    date: 2008-05-20
+      he: בדצמבר 2007, בעת שכיהן כמנכ"ל החברה הממשלתית "המשקם", נעצר בן צור לחקירה
+        בחשד לעבירות שוחד, מרמה ורישום כוזב במסמכי תאגיד, על בסיס מידע שהעביר
+        משרד מבקר המדינה למשטרה. בדוח שפרסם מבקר המדינה במאי 2008 נמתחה ביקורת
+        חריפה על התנהלות החברה בתקופת כהונתו, ובכלל זה תנאי שכר והטבות חריגים
+        לבכירים, ניגודי עניינים והעדפת מקורבים. לפי הדיווחים (אתר "המקום הכי חם
+        בגיהנום", דצמבר 2022, והוויקיפדיה העברית), התיק נסגר בידי הפרקליטות מחוסר
+        ראיות; כתב אישום לא הוגש נגדו, והוא כיהן מאז כסגן שר וכשר.
+      en: In December 2007, while CEO of the government company HaMeshakem, Ben-Tzur
+        was arrested for questioning on suspicion of bribery, fraud and false
+        entries in corporate records, following information the State
+        Comptroller's office passed to the police. A State Comptroller report
+        published in May 2008 sharply criticized the company's conduct during
+        his tenure, including irregular pay and benefits for senior staff,
+        conflicts of interest and favoritism toward associates. According to
+        reports (the Ha-Makom news site, December 2022, and Hebrew Wikipedia), the
+        prosecution closed the case for lack of evidence; no indictment was ever
+        filed against him, and he has since served as a deputy minister and
+        minister.
+    date: "2008-05-20"
     sources:
+      - url: https://www.haaretz.co.il/misc/2008-05-20/ty-article/0000017f-f40f-d497-a1ff-f68f674b0000
+        title: 'דו"ח המבקר: מנכ"ל "המשקם" זכה במכרז של החברה והעדיף מקורבים'
+        publisher: Haaretz
+      - url: https://www.haaretz.co.il/misc/2008-05-21/ty-article/0000017f-f5a6-d47e-a37f-fdbe7dd90000
+        title: מנכ"ל "המשקם" קיבל הטבות חריגות והעדיף מקורבים
+        publisher: Haaretz
+      - url: https://www.ha-makom.co.il/post-shavim-yoav-1/
+        title: 'השר במשרד הרווחה: נחשד בעבירות טוהר מידות כששימש מנכ"ל חברה לאנשים עם מוגבלות'
+        publisher: Ha-Makom
       - url: https://www.calcalist.co.il/local/articles/0,7340,L-3067942,00.html
         title: 'המבקר: במקום לעזור לנכים - "המשקם" ריפדה את בכיריה'
         publisher: Calcalist
       - url: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%90%D7%91_%D7%91%D7%9F_%D7%A6%D7%95%D7%A8
         title: יואב בן צור
         publisher: Wikipedia (Hebrew)
+  - kind: neutral
+    category: role
+    date: "2025-07-20"
+    title:
+      he: חבר הכנסת ה-25 מטעם ש"ס מאז 20 ביולי 2025, לאחר התפטרותו מהממשלה
+      en: Member of the 25th Knesset for Shas since 20 July 2025, after resigning from the government
+    description:
+      he: עם התפטרותו מתפקיד שר העבודה ב-20 ביולי 2025, במסגרת פרישת שרי ש"ס
+        מהממשלה על רקע משבר חוק הגיוס, שב בן צור לכהן כחבר הכנסת (לאחר שהתפטר
+        מהכנסת בינואר 2023 מכוח "החוק הנורווגי"). הוא אינו מכהן כיום בתפקיד
+        ממשלתי.
+      en: Upon resigning as Minister of Labor on 20 July 2025, as part of the Shas
+        ministers' withdrawal from the government amid the draft-law crisis,
+        Ben-Tzur returned to serve as a Knesset member (having resigned his seat
+        in January 2023 under the "Norwegian Law"). He currently holds no
+        government post.
+    sources:
+      - url: https://www.ynetnews.com/article/q4moer0u2
+        title: Labor Minister Ben Tzur announces resignation
+        publisher: Ynetnews
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%90%D7%91_%D7%91%D7%9F_%D7%A6%D7%95%D7%A8
+        title: יואב בן צור
+        publisher: Wikipedia (Hebrew)
+  - kind: neutral
+    category: news
+    date: "2026-08-27"
+    title:
+      he: "בן צור: ש\"ס תדרוש חוק גיוס לפני השבעת הממשלה הבאה"
+      en: "Ben-Tzur: Shas will demand a draft law before the next government is sworn in"
+    description:
+      he: בריאיון לפודקאסט של ynet ב-27 באוגוסט 2026 אמר בן צור כי כתנאי להצטרפות
+        ש"ס לממשלה הבאה תדרוש המפלגה העברת חוק גיוס עוד לפני ההשבעה, כי ש"ס
+        "הולכת עם הגוש הימני", וכי הייתה זו טעות שלא לעגן זאת בהסכם הקואליציוני
+        הקודם.
+      en: In an interview with a ynet podcast on 27 August 2026, Ben-Tzur said that
+        as a condition for joining the next government Shas would demand that a
+        draft law be passed before the swearing-in, that Shas "is going with the
+        right-wing bloc", and that not anchoring this in the previous coalition
+        agreement had been a mistake.
+    sources:
+      - url: https://www.ynet.co.il/news/120andone/article/b1sg1117wfe
+        title: 'יואב בן צור מש"ס: "כדי שנצטרף לממשלה הבאה נדרוש חוק גיוס עוד לפני ההשבעה"'
+        publisher: Ynet
+  - kind: neutral
+    category: news
+    date: "2026-09-08"
+    title:
+      he: במקום הרביעי ברשימת ש"ס לבחירות 2026
+      en: Placed fourth on the Shas list for the 2026 election
+    description:
+      he: ב-8 בספטמבר 2026 אישרה מועצת חכמי התורה את רשימת ש"ס לבחירות לכנסת ה-26,
+        ובה שובץ בן צור במקום הרביעי, אחרי אריה דרעי, ינון אזולאי ומיכאל מלכיאלי.
+      en: On 8 September 2026 the Council of Torah Sages approved the Shas list for
+        the 26th Knesset election, placing Ben-Tzur fourth, after Aryeh Deri,
+        Yinon Azoulay and Michael Malkieli.
+    sources:
+      - url: https://www.ynet.co.il/news/elections2026/article/hkjzuqtofe
+        title: 'עם סגן אלוף במילואים במקום ריאלי: זו רשימת ש"ס לכנסת'
+        publisher: Ynet
+      - url: https://www.haaretz.co.il/news/elections/2026-09-08/ty-article/000001a0-7fc4-da8b-afbe-7fe5c7ba0000
+        title: 'רשימת ש"ס לכנסת: מיכאל מלכיאלי קודם למקום השלישי, סגן אלוף במקום השישי'
+        publisher: Haaretz

@@ -1,22 +1,109 @@
-# Aryeh Deri (PersonID 2291). Seed entry — expand/verify before publishing.
+# Aryeh Deri (PersonID 2291). Researched from reputable public sources and
+# source-verified (every cited URL re-fetched). Neutral language; legal status
+# marked. Reviewed 2026-09-18.
 personId: 2291
+lastReviewed: "2026-09-18"
 claims:
   - kind: negative
     category: conviction
     status: convicted
     title:
-      he: "הורשע בעבירות מס (2022) ובעבר בלקיחת שוחד (1999)"
-      en: "Convicted of tax offenses (2022); earlier convicted of bribery (1999)"
-      ar: "أُدين بجرائم ضريبية (2022) وسبق أن أُدين بالرشوة (1999)"
-      ru: "Осуждён за налоговые преступления (2022); ранее — за взяточничество (1999)"
-    date: "2022-02-08"
+      he: "הורשע בלקיחת שוחד (1999) וריצה מאסר בפועל"
+      en: "Convicted of accepting bribes (1999) and served a prison term"
+      ar: "أُدين بتلقي الرشوة (1999) وقضى عقوبة السجن"
+      ru: "Осуждён за получение взяток (1999) и отбыл тюремный срок"
+    date: "1999-03-17"
     description:
-      he: "הורשע ב-1999 בלקיחת שוחד וריצה מאסר בפועל. ב-2022 הורשע במסגרת הסדר טיעון בעבירות מס והתפטר מהכנסת. בינואר 2023 פסל בג\"ץ את מינויו לשר בשל הרשעותיו."
-      en: "Convicted of bribery in 1999 and served prison time. In 2022 he was convicted of tax offenses under a plea deal and resigned from the Knesset. In January 2023 the High Court of Justice disqualified his appointment as a minister due to his convictions."
+      he: "ב-1999 הורשע דרעי בבית המשפט המחוזי בירושלים בלקיחת שוחד בתקופת כהונתו כשר הפנים ונדון באפריל 1999 לארבע שנות מאסר וקנס; העונש קוצר בערעור. הוא ריצה 22 חודשי מאסר בין 2000 ל-2002, ושב לפוליטיקה ב-2013."
+      en: "In 1999 the Jerusalem District Court convicted Deri of accepting bribes while serving as interior minister and in April 1999 sentenced him to four years in prison and a fine; the sentence was reduced on appeal. He served 22 months in prison between 2000 and 2002 and returned to politics in 2013."
+    sources:
+      - url: "https://www.timesofisrael.com/court-sentences-deri-in-plea-bargain-conviction-on-tax-offenses/"
+        title: "Court sentences Deri in plea bargain conviction on tax offenses"
+        publisher: "The Times of Israel"
+      - url: "https://www.irishtimes.com/news/deri-jailed-for-four-years-1.174222"
+        title: "Deri jailed for four years"
+        publisher: "The Irish Times"
+      - url: "https://en.wikipedia.org/wiki/Aryeh_Deri"
+        title: "Aryeh Deri"
+        publisher: "Wikipedia"
+  - kind: negative
+    category: conviction
+    status: convicted
+    title:
+      he: "הורשע בעבירות מס במסגרת הסדר טיעון (2022) והתפטר מהכנסת"
+      en: "Convicted of tax offenses under a plea bargain (2022) and resigned from the Knesset"
+      ar: "أُدين بجرائم ضريبية في إطار صفقة ادعاء (2022) واستقال من الكنيست"
+      ru: "Осуждён за налоговые преступления по сделке со следствием (2022) и ушёл из Кнессета"
+    date: "2022-02-01"
+    description:
+      he: "ב-1 בפברואר 2022 אישר בית משפט השלום בירושלים הסדר טיעון שבמסגרתו הודה דרעי בעבירות מס (אי-דיווח על הכנסה ממכירת דירה והצהרות כוזבות), והוא נדון ל-12 חודשי מאסר על תנאי ולקנס של 180 אלף ש\"ח, ללא קביעת קלון. במסגרת ההסדר התפטר מהכנסת בשבוע שקדם לגזר הדין."
+      en: "On 1 February 2022 the Jerusalem Magistrate's Court approved a plea bargain in which Deri admitted tax offenses (failing to report income from an apartment sale and making false statements); he received a 12-month suspended sentence and a NIS 180,000 fine, with no finding of moral turpitude. As part of the deal he resigned from the Knesset the week before sentencing."
+    sources:
+      - url: "https://www.timesofisrael.com/court-sentences-deri-in-plea-bargain-conviction-on-tax-offenses/"
+        title: "Court sentences Deri in plea bargain conviction on tax offenses"
+        publisher: "The Times of Israel"
+      - url: "https://www.israelhayom.com/2022/01/26/shas-chief-deri-convicted-of-tax-offenses-in-plea-deal/"
+        title: "Shas chief Deri convicted of tax offenses in plea deal"
+        publisher: "Israel Hayom"
+  - kind: negative
+    category: controversy
+    status: settled
+    title:
+      he: "בג\"ץ פסל את מינויו לשר הפנים והבריאות (ינואר 2023)"
+      en: "High Court of Justice disqualified his appointment as interior and health minister (January 2023)"
+    date: "2023-01-18"
+    description:
+      he: "ב-18 בינואר 2023 קבע בג\"ץ, בהרכב של 11 שופטים וברוב של 10 מול 1, כי מינויו של דרעי לשר הפנים ולשר הבריאות בממשלה ה-37 הוא \"בלתי סביר באופן קיצוני\" בשל עברו הפלילי ובשל הצהרתו לבית המשפט ב-2022 על פרישה מהחיים הפוליטיים, והורה לראש הממשלה להעבירו מתפקידו. ב-22 בינואר 2023 הודיע נתניהו על הדחתו; דרעי נותר חבר כנסת ויו\"ר ש\"ס."
+      en: "On 18 January 2023 the High Court of Justice, sitting as an 11-justice panel, ruled 10-1 that Deri's appointment as interior and health minister in the 37th government was \"unreasonable in the extreme\" given his criminal record and his 2022 statement to a court that he was retiring from political life, and ordered the prime minister to remove him. On 22 January 2023 Netanyahu dismissed him; Deri remained a Knesset member and Shas chairman."
+    sources:
+      - url: "https://www.timesofisrael.com/in-bombshell-ruling-high-court-nixes-shas-head-deri-from-serving-as-minister/"
+        title: "In bombshell ruling, High Court nixes Shas head Deri from serving as minister"
+        publisher: "The Times of Israel"
+      - url: "https://www.jpost.com/israel-news/article-728898"
+        title: "Israel's High Court blocks Arye Deri from serving as minister"
+        publisher: "The Jerusalem Post"
+  - kind: positive
+    category: achievement
+    title:
+      he: "יו\"ר ש\"ס ושר הפנים לשעבר"
+      en: "Chairman of Shas and former Minister of the Interior"
+    date: "2013-05-01"
+    description:
+      he: "דרעי עומד בראש תנועת ש\"ס מאז 2013. הוא כיהן כשר הפנים בשנים 1988–1993 ושוב בשנים 2016–2021, וכשר הכלכלה ב-2015."
+      en: "Deri has led the Shas movement since 2013. He served as Minister of the Interior in 1988-1993 and again in 2016-2021, and as Minister of the Economy in 2015."
     sources:
       - url: "https://en.wikipedia.org/wiki/Aryeh_Deri"
         title: "Aryeh Deri"
         publisher: "Wikipedia"
-      - url: "https://www.timesofisrael.com/topic/aryeh-deri/"
-        title: "Aryeh Deri — topic coverage"
+      - url: "https://www.timesofisrael.com/court-sentences-deri-in-plea-bargain-conviction-on-tax-offenses/"
+        title: "Court sentences Deri in plea bargain conviction on tax offenses"
         publisher: "The Times of Israel"
+  - kind: neutral
+    category: news
+    date: "2026-08-20"
+    title:
+      he: "הסכמה עם הרב יצחק יוסף על הנהגה משותפת של ש\"ס"
+      en: "Agreement with Rabbi Yitzhak Yosef on joint leadership of Shas"
+    description:
+      he: "ב-20 באוגוסט 2026 דווח כי דרעי והרב יצחק יוסף נפגשו והגיעו להסכמות שלפיהן לרב יוסף יהיה משקל רב יותר בקבלת ההחלטות בש\"ס לצד דרעי, לאחר דיווחים על קרע ביניהם; בסיום הפגישה פרסמו השניים סרטון שבו קרא הרב יוסף להצביע לש\"ס."
+      en: "On 20 August 2026 it was reported that Deri and Rabbi Yitzhak Yosef met and agreed that Rabbi Yosef would have greater weight in Shas decision-making alongside Deri, following reports of a rift between them; after the meeting the two released a video in which Rabbi Yosef urged voters to support Shas."
+    sources:
+      - url: "https://www.haaretz.co.il/news/elections/2026-08-20/ty-article/.premium/000001a0-1e74-d129-a3ba-5e7ee0b00000"
+        title: "אריה דרעי והרב יצחק יוסף נפגשו: יובילו במשותף את הנהגת ש\"ס"
+        publisher: "Haaretz"
+  - kind: neutral
+    category: news
+    date: "2026-09-08"
+    title:
+      he: "עומד בראש רשימת ש\"ס לבחירות לכנסת ה-26"
+      en: "Heads the Shas list for the 26th Knesset election"
+    description:
+      he: "ב-8 בספטמבר 2026 אישרה מועצת חכמי התורה את רשימת ש\"ס לבחירות ב-27 באוקטובר 2026: דרעי במקום הראשון, ינון אזולאי במקום השני, מיכאל מלכיאלי בשלישי, יואב בן צור ברביעי וחיים ביטון בחמישי."
+      en: "On 8 September 2026 the Council of Torah Sages approved the Shas list for the 27 October 2026 election: Deri in first place, Yinon Azoulay second, Michael Malkieli third, Yoav Ben-Tzur fourth and Haim Biton fifth."
+    sources:
+      - url: "https://www.ynet.co.il/news/elections2026/article/hkjzuqtofe"
+        title: "עם סגן אלוף במילואים במקום ריאלי: זו רשימת ש\"ס לכנסת"
+        publisher: "Ynet"
+      - url: "https://www.haaretz.co.il/news/elections/2026-09-08/ty-article/000001a0-7fc4-da8b-afbe-7fe5c7ba0000"
+        title: "רשימת ש\"ס לכנסת: מיכאל מלכיאלי קודם למקום השלישי, סגן אלוף במקום השישי"
+        publisher: "Haaretz"

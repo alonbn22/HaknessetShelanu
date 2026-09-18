@@ -1,7 +1,8 @@
-# PersonID 4395. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 4395 (Avi Dichter). Researched from reputable public sources and
+# source-verified (every cited URL re-fetched 2026-09-18). Neutral language;
+# legal status marked where relevant. REVIEW before launch.
 personId: 4395
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -10,12 +11,9 @@ claims:
       en: Director of the Shin Bet during the Second Intifada (2000–2005)
     description:
       he: אבי דיכטר שירת כראש שירות הביטחון הכללי (שב"כ) בין השנים 2000 ל-2005, בתקופת
-        האינתיפאדה השנייה. במהלך כהונתו הוביל שינוי בדרכי הפעולה של הארגון
-        ובמיקודו במאמצי לוחמה בטרור ובמודיעין.
+        האינתיפאדה השנייה, לפני כניסתו לפוליטיקה.
       en: Avi Dichter served as Director of the Shin Bet (Israel Security Agency) from
-        2000 to 2005, during the Second Intifada. He led a restructuring of the
-        organization toward counter-terrorism and intelligence operations during
-        one of its most active periods.
+        2000 to 2005, during the Second Intifada, before entering politics.
     date: 2000-01-01
     sources:
       - url: https://en.wikipedia.org/wiki/Avi_Dichter
@@ -23,6 +21,9 @@ claims:
         publisher: Wikipedia
       - url: https://www.timesofisrael.com/netanyahu-appoints-ex-shin-bet-head-avi-dichter-deputy-defense-minister/
         title: Netanyahu appoints ex-Shin Bet head Avi Dichter deputy defense minister
+        publisher: The Times of Israel
+      - url: https://www.timesofisrael.com/ex-shin-bet-chief-dichter-now-a-likud-minister-said-among-pms-candidates-to-head-agency/
+        title: Ex-Shin Bet chief Dichter, now a Likud minister, said among PM's candidates to head agency
         publisher: The Times of Israel
   - kind: positive
     category: achievement
@@ -45,16 +46,32 @@ claims:
   - kind: positive
     category: achievement
     title:
+      he: יוזם חוק יסוד "ישראל – מדינת הלאום של העם היהודי" (התקבל ב-2018)
+      en: Initiator of Basic Law "Israel as the Nation-State of the Jewish People" (passed 2018)
+    description:
+      he: דיכטר הניח לראשונה את הצעת חוק הלאום על שולחן הכנסת ב-2011, כחבר כנסת מסיעת קדימה באופוזיציה. לאחר גלגולים רבים אושר החוק כחוק יסוד ב-19 ביולי 2018 ברוב של 62 מול 55, כשדיכטר, אז ח"כ מהליכוד, בין מקדמיו העיקריים. החוק שנוי במחלוקת ציבורית וזכה לביקורת מצד האופוזיציה ומהציבור הערבי.
+      en: Dichter first tabled the nation-state bill in 2011 as an opposition Knesset member for Kadima. After many rewrites it was enacted as a Basic Law on 19 July 2018 by a vote of 62–55, with Dichter, by then a Likud MK, among its main sponsors. The law is publicly contested and drew criticism from the opposition and from Arab citizens.
+    date: 2018-07-19
+    sources:
+      - url: https://www.timesofisrael.com/knesset-votes-contentious-jewish-nation-state-bill-into-law/
+        title: Israel passes Jewish state law, enshrining 'national home of the Jewish people'
+        publisher: The Times of Israel
+      - url: https://en.wikipedia.org/wiki/Basic_Law:_Israel_as_the_Nation-State_of_the_Jewish_People
+        title: "Basic Law: Israel as the Nation-State of the Jewish People"
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
       he: שר החקלאות וביטחון המזון (מ-2022)
       en: Minister of Agriculture and Food Security (since 2022)
     description:
       he: עם חזרת הליכוד לשלטון בסוף 2022 מונה אבי דיכטר לשר החקלאות וביטחון המזון,
-        התפקיד שבו הוא מכהן כיום. קודם לכן כיהן גם כיושב ראש ועדת החוץ והביטחון
-        של הכנסת (2016–2019).
+        התפקיד שבו הוא מכהן גם בממשלת המעבר. קודם לכן כיהן כשר להגנת העורף (2012–2013), כיושב ראש ועדת החוץ והביטחון
+        של הכנסת (2016–2019), ובאוקטובר 2019 מונה לסגן שר הביטחון.
       en: Following the Likud's return to power in late 2022, Avi Dichter was
         appointed Minister of Agriculture and Food Security, the office he
-        currently holds. He had earlier chaired the Knesset's Foreign Affairs
-        and Defense Committee (2016–2019).
+        continues to hold in the caretaker government. He had earlier served as Minister of Home Front Defence (2012–2013), chaired the Knesset's Foreign Affairs
+        and Defense Committee (2016–2019), and in October 2019 was appointed deputy defense minister.
     date: 2022-12-29
     sources:
       - url: https://en.wikipedia.org/wiki/Avi_Dichter
@@ -64,3 +81,41 @@ claims:
         title: Ex-Shin Bet chief Dichter, now a Likud minister, said among PM's
           candidates to head agency
         publisher: The Times of Israel
+      - url: https://www.timesofisrael.com/netanyahu-appoints-ex-shin-bet-head-avi-dichter-deputy-defense-minister/
+        title: Netanyahu appoints ex-Shin Bet head Avi Dichter deputy defense minister
+        publisher: The Times of Israel
+  - kind: negative
+    category: controversy
+    date: 2023-11-11
+    title:
+      he: 'התבטאות "נכבה של עזה 2023" בראיון טלוויזיוני במהלך המלחמה'
+      en: '"Gaza Nakba 2023" remark in a television interview during the war'
+    description:
+      he: 'בראיון לחדשות 12 ב-11 בנובמבר 2023, כשנשאל אם תמונות הפינוי מצפון רצועת עזה מזכירות את הנכבה, אמר דיכטר: "אנחנו עכשיו מגלגלים את נכבה עזה... נכבה עזה 2023, ככה זה ייגמר", והסביר זאת בצורך מבצעי לפנות אוכלוסייה אזרחית משטח הלחימה. למחרת אמר ראש הממשלה נתניהו בישיבת הממשלה כי "לכל מילה יש משמעות" וכי שרים צריכים להיזהר בדבריהם, על רקע התבטאויות שנתפסו כפוגעות בלגיטימציה הבינלאומית של ישראל.'
+      en: 'In a Channel 12 interview on 11 November 2023, asked whether images of the evacuation of northern Gaza resembled the Nakba, Dichter said: "We are now rolling out the Gaza Nakba... Gaza Nakba 2023. That is how it will end," framing it as an operational need to move civilians out of the combat zone. The next day Prime Minister Netanyahu told the cabinet that "every word has meaning" and that ministers should speak with care, against the backdrop of remarks seen as damaging Israel''s international legitimacy.'
+    sources:
+      - url: https://www.haaretz.com/israel-news/2023-11-12/ty-article/israeli-security-cabinet-member-calls-north-gaza-evacuation-nakba-2023/0000018b-c2be-dea2-a9bf-d2be7b670000
+        title: "'We're Rolling Out Nakba 2023,' Israeli Minister Says on Northern Gaza Strip Evacuation"
+        publisher: Haaretz
+      - url: https://www.timesofisrael.com/pm-warns-ministers-to-pipe-down-after-comments-on-new-nakba-and-nuking-gaza/
+        title: PM warns ministers to pipe down after comments on new 'Nakba' and nuking Gaza
+        publisher: The Times of Israel
+  - kind: neutral
+    category: news
+    date: 2026-08-17
+    title:
+      he: בפריימריז הליכוד לא זכה במקום ריאלי ואינו ברשימת הליכוד לכנסת ה-26
+      en: Did not win a realistic slot in the Likud primary and is not on Likud's slate for the 26th Knesset
+    description:
+      he: בפריימריז הליכוד שנערכו ב-17 באוגוסט 2026 דורג דיכטר במקום ה-27 בהצבעה, מחוץ לטווח הריאלי. לפי ג'רוזלם פוסט, בכירים בליכוד לחצו על נתניהו להשתמש במנגנון ה"החלפה" כדי לקדם אותו למקום ריאלי בשל הרקע הביטחוני שלו. ברשימת הליכוד שהוגשה לוועדת הבחירות ב-9 בספטמבר 2026, כפי שפורסמה ב-JNS, דיכטר אינו נמנה עם 35 המקומות הראשונים.
+      en: In the Likud primary held on 17 August 2026 Dichter finished 27th in the vote, outside the realistic range. According to The Jerusalem Post, senior Likud figures pressed Netanyahu to use the "swap" mechanism to move him into a realistic slot because of his security background. In the Likud slate filed with the elections committee on 9 September 2026, as published by JNS, Dichter is not among the first 35 places.
+    sources:
+      - url: https://www.globes.co.il/news/article.aspx?did=1001552600
+        title: "ספירת הקולות הסתיימה: כך נראית רשימת הליכוד החדשה"
+        publisher: Globes
+      - url: https://www.jpost.com/israel-election-2026/article-905868
+        title: Likud pressuring Benjamin Netanyahu to 'swap' Avi Dichter into realistic slate position
+        publisher: The Jerusalem Post
+      - url: https://www.jns.org/news/israel-news/likud-files-26th-knesset-election-slate
+        title: Likud files 26th Knesset election slate
+        publisher: JNS

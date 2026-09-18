@@ -2,6 +2,7 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 30874
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -64,3 +65,107 @@ claims:
         title: Lawmakers From Ben-Gvir's Far-right Party Set to Take Control of Key
           Knesset Committees
         publisher: Haaretz
+  - kind: negative
+    category: investigation
+    status: ongoing
+    date: 2025-11-11
+    title:
+      he: נחקר באזהרה בחשד למעורבות בפריצה לבסיס שדה תימן ביולי 2024
+      en: Questioned under caution on suspicion of involvement in the July 2024 break-in at the Sde Teiman base
+    description:
+      he: ב-29 ביולי 2024 פרצו מפגינים וכמה חברי כנסת לבסיס שדה תימן, לאחר מעצרם של
+        חיילי מילואים בחשד להתעללות בעצור מעזה; סוכות תועד נדחק דרך שערי הבסיס
+        למרות ניסיונות צה"ל לחסום את כניסתו. באוקטובר 2025 זומן לחקירה, וב-11
+        בנובמבר 2025 נחקר באזהרה בידי מחלקת ההונאה של משטרת מחוז דרום. לפי דיווח
+        ממרץ 2026 החקירה טרם הושלמה ולא הוגש כתב אישום נגד איש מהמעורבים. סוכות
+        כינה את החקירה הסחת דעת פוליטית, אמר כי הגיע לשדה תימן כדי להגן על
+        החיילים וכי לא היה עושה זאת לו ידע שאזרחים ייכנסו לבסיס, וטען כי לחברי
+        כנסת זכות להיכנס למתקנים צבאיים לצורכי פיקוח.
+      en: On 29 July 2024 protesters and several MKs broke into the Sde Teiman base
+        after reservists were arrested on suspicion of abusing a Gazan detainee;
+        Sukkot was filmed pushing through the base's gates despite IDF attempts
+        to block him. He was summoned in October 2025 and on 11 November 2025 was
+        questioned under caution by the Southern District police fraud unit. As of
+        a March 2026 report the investigation had not been completed and no one
+        involved had been indicted. Sukkot called the probe a political
+        distraction, said "I came to Sde Teiman to defend our soldiers" and that
+        he "would not have done so had I known civilians would enter the base",
+        and argued that MKs have the right to enter military facilities for
+        oversight.
+    sources:
+      - url: https://www.timesofisrael.com/police-question-mk-zvi-sukkot-over-sde-teiman-base-break-in/
+        title: Police question MK Zvi Sukkot over Sde Teiman base break-in
+        publisher: The Times of Israel
+      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-871755
+        title: MK Zvi Sukkot summoned for questioning due to role in Sde Teiman riots
+        publisher: The Jerusalem Post
+      - url: https://www.maariv.co.il/news/law/article-1299872
+        title: הפרקליטות עדיין לא השלימה את החקירה בפרשת הפריצה לשדה תימן
+        publisher: Maariv
+  - kind: negative
+    category: controversy
+    date: 2026-08-25
+    title:
+      he: ניפץ אנדרטה לפלסטינים שנהרגו בכפר מאדמא במהלך סיור באבטחת צה"ל; לשכת ראש הממשלה וצה"ל גינו
+      en: Smashed a memorial to Palestinians killed, in the village of Madama, during an IDF-escorted tour; the Prime Minister's Office and the IDF condemned the act
+    description:
+      he: ב-25 באוגוסט 2026 ניפצו סוכות וכמה מעוזריו אנדרטה בכפר מאדמא שליד שכם,
+        שהנציחה פלסטינים שנהרגו, ובהם מעורבים בפיגועים, במהלך סיור מתואם באבטחת
+        צה"ל. צה"ל מסר כי המשתתפים פעלו בהטעיה ובמניפולציה ובניגוד למתווה הסיור
+        המאושר, ולשכת ראש הממשלה הודיעה כי לקיחת החוק לידיים, בפרט בידי נבחרי
+        ציבור, אינה מקובלת; שר החוץ סער אמר כי סוכות אינו הריבון בשטחים. סוכות
+        השיב כי פעל לאחר פניות חוזרות להסרת אנדרטאות טרור שלא נענו, וכי לא ייתן
+        יד להנצחת מי שפגעו ביהודים ובחיילי צה"ל כגיבורים.
+      en: On 25 August 2026 Sukkot and several aides smashed a memorial in the village
+        of Madama near Nablus commemorating Palestinians who were killed,
+        including people involved in attacks, during a coordinated IDF-escorted
+        tour. The IDF said the participants acted "deceptively and
+        manipulatively" and in violation of the approved tour outline, and the
+        Prime Minister's Office said that "taking the law into one's own hands,
+        particularly by public officials, is unacceptable"; Foreign Minister
+        Sa'ar said Sukkot "is not the sovereign in the territories". Sukkot
+        replied that he acted after repeated requests to remove "terror
+        monuments" went unanswered and that "we will not lend a hand to a
+        situation in which those who harmed Jews and IDF soldiers are
+        commemorated as heroes".
+    sources:
+      - url: https://www.timesofisrael.com/far-right-mk-smashes-monument-for-palestinian-martyrs-during-idf-escorted-west-bank-tour/
+        title: Far-right MK smashes monument for Palestinian 'martyrs' during IDF-escorted West Bank tour
+        publisher: The Times of Israel
+      - url: https://www.jpost.com/israel-news/article-906496
+        title: MK Sukkot smashes monument in Palestinian town while guarded by Israeli forces
+        publisher: The Jerusalem Post
+  - kind: neutral
+    category: news
+    date: 2026-07-26
+    title:
+      he: זכה במקום השלישי בפריימריז של הציונות הדתית לבחירות 2026
+      en: Won third place in the Religious Zionism primary for the 2026 election
+    description:
+      he: בפריימריז של הציונות הדתית שתוצאותיהם פורסמו ב-26 ביולי 2026 זכה סוכות
+        במקום השלישי, אחרי השרה אורית סטרוק וח"כ שמחה רוטמן.
+      en: In the Religious Zionism primary whose results were published on 26 July
+        2026, Sukkot won third place, after Minister Orit Strock and MK Simcha
+        Rothman.
+    sources:
+      - url: https://www.haaretz.co.il/news/elections/2026-07-26/ty-article/0000019f-9f89-d114-a59f-df9d0a4a0000
+        title: 'תוצאות הפריימריז בציונות הדתית: סטרוק ורוטמן במקומות הראשונים'
+        publisher: Haaretz
+  - kind: neutral
+    category: news
+    date: 2026-09-08
+    title:
+      he: שובץ במקום השביעי ברשימת הציונות הדתית הסופית, לאחר האיחוד עם פייגלין
+      en: Placed seventh on the final Religious Zionism list, after the merger with Feiglin
+    description:
+      he: ברשימה הסופית של הציונות הדתית לכנסת ה-26, שהוגשה ב-8 בספטמבר 2026 לאחר
+        האיחוד עם משה פייגלין, שובץ סוכות, יו"ר ועדת החינוך, במקום השביעי;
+        בראש הרשימה בצלאל סמוטריץ', אחריו פייגלין, אורית סטרוק ושמחה רוטמן.
+      en: On the final Religious Zionism list for the 26th Knesset, submitted on 8
+        September 2026 after the merger with Moshe Feiglin, Sukkot, chair of
+        the Education Committee, was placed seventh; Bezalel Smotrich heads the
+        list, followed by Feiglin, Orit Strock and Simcha Rothman.
+    sources:
+      - url: https://www.ynet.co.il/news/elections2026/article/hytc0wadmx
+        title: רשימת הציונות הדתית ופייגלין - והח"כים שנדחקו
+        publisher: Ynet

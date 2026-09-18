@@ -1,7 +1,8 @@
 # PersonID 30840. Auto-researched from reputable public sources and
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# legal status marked. Reviewed 2026-09-18.
 personId: 30840
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -64,3 +65,30 @@ claims:
       - url: https://he.wikipedia.org/wiki/%D7%95%D7%9C%D7%99%D7%93_%D7%90%D7%9C%D7%94%D7%95%D7%90%D7%A9%D7%9C%D7%94
         title: וליד אלהואשלה
         publisher: Wikipedia (Hebrew)
+  - kind: neutral
+    category: news
+    date: "2026-08-22"
+    title:
+      he: דורג במקום השלישי בפריימריז של רע"ם לבחירות 2026
+      en: Ranked third in the Ra'am primary for the 2026 election
+    description:
+      he: >-
+        ב-22 באוגוסט 2026, בוועידה הארצית ה-28 של רע"ם בטייבה, נבחרו חמשת המקומות
+        הראשונים ברשימת המפלגה לכנסת ה-26: מנסור עבאס בראש, ואליד טאהא שני,
+        אלהואשלה שלישי, אימאן ח'טיב-יאסין במקום השמור לאישה ויאסר חוג'יראת חמישי.
+        ב-31 באוגוסט 2026 דווח כי חבר הכנסת לשעבר יואב סגלוביץ' יצטרף לרשימה
+        וצפוי לקבל את המקום השני.
+      en: >-
+        On 22 August 2026, at Ra'am's 28th national conference in Tayibe, the first
+        five places on the party's list for the 26th Knesset were chosen: Mansour
+        Abbas first, Walid Taha second, al-Huashla third, Iman Khatib-Yasin in the
+        slot reserved for a woman and Yasser Hujirat fifth. On 31 August 2026 it
+        was reported that former MK Yoav Segalovitz would join the list and was
+        expected to receive the second slot.
+    sources:
+      - url: https://www.ynetnews.com/article/mnpvs6cf0
+        title: Ra'am Selects Candidate List for Upcoming Elections
+        publisher: Ynetnews
+      - url: https://www.jpost.com/israel-election-2026/article-907172
+        title: Ra'am's Abbas announces former Yesh Atid MK Yoav Segalovich will join Arab party slate
+        publisher: The Jerusalem Post

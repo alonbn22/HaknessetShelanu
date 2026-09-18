@@ -1,7 +1,7 @@
-# Oz Chaim (PersonID 30916). Researched + adversarially verified 2026-07-05.
+# Oz Chaim (PersonID 30916). Researched + adversarially verified 2026-07-05; re-verified 2026-09-18.
 # Every claim cites >=1 reputable source (enforced by the content schema).
 personId: 30916
-lastReviewed: 2026-07-05
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -32,10 +32,10 @@ claims:
       ar: مدير عام المجلس الصهيوني في إسرائيل
       ru: Генеральный директор Сионистского совета в Израиле
     description:
-      he: לפני כניסתו לכנסת כיהן חיים למעלה מארבע שנים כמנכ"ל המועצה הציונית בישראל, זרוע של ההסתדרות הציונית העולמית העוסקת בחינוך ובזהות יהודית-ציונית. במסגרת תפקידו הוביל מיזמים חינוכיים וחברתיים, בהם תערוכת הצילומים "חיבוק אחרון" שהוצגה בערים בישראל ובעולם. קודם לכן עבד כ-16 שנים כעורך דין.
-      en: Before entering the Knesset, Haim served for over four years as director-general of the Zionist Council in Israel, a branch of the World Zionist Organization focused on Jewish-Zionist identity and education. In this role he led educational and social projects, including the "Last Hug" photography exhibition shown in cities in Israel and abroad. He previously worked for about 16 years as a lawyer.
-      ar: قبل دخوله الكنيست، شغل حاييم لأكثر من أربع سنوات منصب المدير العام للمجلس الصهيوني في إسرائيل، وهو ذراع للمنظمة الصهيونية العالمية يُعنى بالتربية والهوية اليهودية-الصهيونية. وفي إطار منصبه قاد مشاريع تربوية واجتماعية، منها معرض الصور «العناق الأخير» الذي عُرض في مدن في إسرائيل والخارج. وقبل ذلك عمل نحو 16 عاماً محامياً.
-      ru: До прихода в Кнессет Хаим более четырёх лет занимал пост генерального директора Сионистского совета в Израиле — подразделения Всемирной сионистской организации, занимающегося образованием и еврейско-сионистской идентичностью. На этом посту он руководил образовательными и социальными проектами, включая фотовыставку «Последнее объятие», показанную в городах Израиля и за рубежом. Ранее около 16 лет работал адвокатом.
+      he: לפני כניסתו לכנסת כיהן חיים למעלה מארבע שנים כמנכ"ל המועצה הציונית בישראל, זרוע של ההסתדרות הציונית העולמית העוסקת בחינוך ובזהות יהודית-ציונית. במסגרת תפקידו הוביל מיזמים חינוכיים וחברתיים, בהם תערוכת הצילומים "חיבוק אחרון" שהוצגה בערים בישראל ובעולם. קודם לכן עבד כעורך דין.
+      en: Before entering the Knesset, Haim served for over four years as director-general of the Zionist Council in Israel, a branch of the World Zionist Organization focused on Jewish-Zionist identity and education. In this role he led educational and social projects, including the "Last Hug" photography exhibition shown in cities in Israel and abroad. He previously worked as a lawyer.
+      ar: قبل دخوله الكنيست، شغل حاييم لأكثر من أربع سنوات منصب المدير العام للمجلس الصهيوني في إسرائيل، وهو ذراع للمنظمة الصهيونية العالمية يُعنى بالتربية والهوية اليهودية-الصهيونية. وفي إطار منصبه قاد مشاريع تربوية واجتماعية، منها معرض الصور «العناق الأخير» الذي عُرض في مدن في إسرائيل والخارج. وقبل ذلك عمل محامياً.
+      ru: До прихода в Кнессет Хаим более четырёх лет занимал пост генерального директора Сионистского совета в Израиле — подразделения Всемирной сионистской организации, занимающегося образованием и еврейско-сионистской идентичностью. На этом посту он руководил образовательными и социальными проектами, включая фотовыставку «Последнее объятие», показанную в городах Израиля и за рубежом. Ранее работал адвокатом.
     sources:
       - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-897550
         title: WZO Zionist Council head Oz Haim appointed by Yesh Atid to Knesset post
@@ -43,20 +43,3 @@ claims:
       - url: https://www.maariv.co.il/news/israel/article-1237596
         title: ראיון עם עו"ד עוז חיים שמנסה לחזק בקרב ישראלים את תחושת השייכות
         publisher: מעריב
-  - kind: positive
-    category: volunteering
-    date: "2020"
-    title:
-      he: ייסוד מיזם "מחברים את ילדי ישראל" לצמצום הפער הדיגיטלי
-      en: Founded the "Connecting Israel's Children" digital-gap initiative
-      ar: تأسيس مبادرة لتقليص الفجوة الرقمية لدى أطفال إسرائيل
-      ru: Основал инициативу по сокращению цифрового разрыва среди детей Израиля
-    description:
-      he: בשנת 2020 ייסד חיים את מיזם "מחברים את ילדי ישראל", שבמסגרתו חולקו אלפי מחשבים לילדים בתקופת מגפת הקורונה ולאחריה, במטרה לצמצם פערים דיגיטליים.
-      en: In 2020 Haim founded the "Connecting Israel's Children" initiative, through which thousands of computers were distributed to children during and after the COVID-19 pandemic, aiming to reduce digital gaps.
-      ar: في عام 2020 أسس حاييم مبادرة وُزّعت في إطارها آلاف أجهزة الحاسوب على الأطفال خلال جائحة كورونا وبعدها، بهدف تقليص الفجوات الرقمية.
-      ru: В 2020 году Хаим основал инициативу, в рамках которой тысячи компьютеров были переданы детям во время пандемии COVID-19 и после неё с целью сокращения цифрового неравенства.
-    sources:
-      - url: https://he.wikipedia.org/wiki/%D7%A2%D7%95%D7%96_%D7%97%D7%99%D7%99%D7%9D
-        title: עוז חיים – ויקיפדיה
-        publisher: ויקיפדיה

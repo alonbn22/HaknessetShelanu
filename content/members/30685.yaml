@@ -2,6 +2,7 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 30685
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -54,3 +55,68 @@ claims:
       - url: https://en.wikipedia.org/wiki/Orit_Farkash-Hacohen
         title: Orit Farkash-Hacohen
         publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    date: 2023-07-11
+    title:
+      he: סגנית יושב ראש הכנסת ויושבת ראש ועדת המשנה לבינה מלאכותית
+      en: Deputy Speaker of the Knesset and chair of the Subcommittee on Artificial Intelligence
+    description:
+      he: ביולי 2023 הוקמה בכנסת ועדת משנה לבינה מלאכותית תחת ועדת המדע והטכנולוגיה,
+        ופרקש הכהן עומדת בראשה. לפי אתר הכנסת, כיהנה גם כסגנית יושב ראש הכנסת
+        מ-23 באוקטובר 2023 עד 22 באוקטובר 2025.
+      en: In July 2023 the Knesset established a Subcommittee on Artificial
+        Intelligence under the Science and Technology Committee, which
+        Farkash-Hacohen chairs. According to the Knesset website, she also served
+        as a Deputy Speaker of the Knesset from 23 October 2023 to 22 October
+        2025.
+    sources:
+      - url: https://www.pc.co.il/featured/390128/
+        title: ח"כ אורית פרקש הכהן תעמוד בראש ועדת משנה חדשה ל-AI
+        publisher: People and Computers
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30685
+        title: אורית פרקש הכהן - אתר הכנסת
+        publisher: The Knesset
+      - url: https://en.wikipedia.org/wiki/Orit_Farkash-Hacohen
+        title: Orit Farkash-Hacohen
+        publisher: Wikipedia
+  - kind: neutral
+    category: news
+    date: 2026-05-10
+    title:
+      he: עברה מכחול לבן למפלגת "ישר" של גדי איזנקוט, ונשארה בכנסת
+      en: Moved from Blue and White to Gadi Eisenkot's "Yashar" party, and stayed in the Knesset
+    description:
+      he: לפי ויקיפדיה, ביולי 2025 הודיעה פרקש הכהן על פרישתה מכחול לבן והצטרפה
+        למפלגת "ישר" בראשות גדי איזנקוט, תוך שמירה על מקומה בכנסת. ב-10 במאי
+        2026 דיווח ynet כי בני גנץ חזר בו וביקש ממנה שלא להתפטר מהכנסת.
+      en: According to Wikipedia, in July 2025 Farkash-Hacohen announced she was
+        leaving Blue and White and joined Gadi Eisenkot's "Yashar" party while
+        keeping her Knesset seat. On 10 May 2026 Ynet reported that Benny Gantz
+        had reversed course and asked her not to resign from the Knesset.
+    sources:
+      - url: https://www.ynet.co.il/news/article/bjlnjhtcwx
+        title: 'גנץ חזר בו: ביקש מח"כ פרקש-הכהן לא להתפטר מהכנסת'
+        publisher: Ynet
+      - url: https://en.wikipedia.org/wiki/Orit_Farkash-Hacohen
+        title: Orit Farkash-Hacohen
+        publisher: Wikipedia
+  - kind: neutral
+    category: news
+    date: 2026-09-07
+    title:
+      he: מוצבת במקום השלישי ברשימת "ישר" לכנסת ה-26
+      en: Placed third on the "Yashar" list for the 26th Knesset
+    description:
+      he: ברשימת "ישר" בראשות גדי איזנקוט, שהוגשה לוועדת הבחירות ב-7 בספטמבר 2026,
+        מוצבת פרקש הכהן במקום השלישי, אחרי איזנקוט ויורם כהן.
+      en: On the "Yashar" list headed by Gadi Eisenkot, submitted to the Central
+        Elections Committee on 7 September 2026, Farkash-Hacohen is in third
+        place, after Eisenkot and Yoram Cohen.
+    sources:
+      - url: https://www.maariv.co.il/news/politics/article-1364024
+        title: 'ראש חץ של 4 מפלגות - וזאת שתישאר בחוץ: גדי איזנקוט הציג את המתווה הפוליטי שלו'
+        publisher: Maariv
+      - url: https://www.kipa.co.il/%D7%97%D7%93%D7%A9%D7%95%D7%AA/1231179-0/
+        title: 'טרופר במקום השישי: הרשימה המלאה של איזנקוט לכנסת'
+        publisher: Kipa

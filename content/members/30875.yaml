@@ -1,7 +1,8 @@
-# PersonID 30875. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30875. Researched from reputable public sources and source-verified
+# (every cited URL re-fetched). Neutral language; legal status marked where
+# relevant. Reviewed 2026-09-18.
 personId: 30875
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -9,17 +10,25 @@ claims:
       he: המנהלת הראשונה של רשת א' של קול ישראל
       en: First woman and Ethiopian immigrant to direct Reshet Aleph
     description:
-      he: צגה מלקו מונתה בשנת 2008 למנהלת רשת א' של קול ישראל, והייתה האישה הראשונה
-        והעולה הראשונה מאתיופיה לכהן בתפקיד זה. היא גם הגישה תוכנית רדיו
-        באמהרית.
-      en: In 2008 Tsega Melaku became director of Kol Yisrael's Reshet Aleph (Network
-        A) radio station, the first woman and first Ethiopian immigrant to hold
-        the post. She also presented radio programming in Amharic.
+      he: >-
+        צגה מלקו, עיתונאית וסופרת ילידת גונדר שעלתה לישראל ב-1984, מונתה בשנת 2008
+        למנהלת רשת א' של קול ישראל, והייתה האישה הראשונה והעולה הראשונה מאתיופיה
+        לכהן בתפקיד זה. קודם לכן ניהלה את מחלקת השידורים באמהרית והגישה תוכניות
+        רדיו וטלוויזיה באמהרית.
+      en: >-
+        Tsega Melaku, a journalist and author born in Gondar who immigrated to Israel
+        in 1984, became director of Kol Yisrael's Reshet Aleph (Network A) radio
+        station in 2008, the first woman and first Ethiopian immigrant to hold the
+        post. She had earlier headed the Amharic broadcasting department and
+        presented radio and television programmes in Amharic.
     date: "2008"
     sources:
       - url: https://en.wikipedia.org/wiki/Tsega_Melaku
         title: Tsega Melaku
         publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%A6%D7%92%D7%94_%D7%9E%D7%9C%D7%A7%D7%95
+        title: צגה מלקו
+        publisher: Wikipedia (Hebrew)
       - url: https://www.ynetnews.com/articles/0,7340,L-4619287,00.html
         title: Ethiopian-born Tsega Melaku disqualified from running on Kahlon's list
         publisher: Ynetnews
@@ -29,58 +38,84 @@ claims:
       he: חברת הכנסת ה-25 מטעם הליכוד
       en: Member of the 25th Knesset for Likud
     description:
-      he: צגה מלקו נכנסה לכנסת ה-25 ב-9 בפברואר 2023 מטעם סיעת הליכוד, כמחליפה של
-        אופיר אקוניס שהתפטר מכוח החוק הנורווגי.
-      en: Tsega Melaku entered the 25th Knesset on 9 February 2023 as a member of the
-        Likud faction, replacing Ofir Akunis, who resigned under the Norwegian
-        Law.
-    date: 2023-02-09
+      he: >-
+        בספטמבר 2022 שריין יו"ר הליכוד בנימין נתניהו את מלקו במקום ה-37 ברשימת
+        הליכוד לכנסת ה-25. היא נכנסה לכנסת בפברואר 2023 (לפי רישומי הכנסת, מ-10
+        בפברואר 2023) כמחליפה של אופיר אקוניס שהתפטר מכוח החוק הנורווגי, ומאז
+        מכהנת כחברת כנסת מטעם סיעת הליכוד.
+      en: >-
+        In September 2022 Likud chairman Benjamin Netanyahu placed Melaku in a
+        reserved 37th slot on the Likud list for the 25th Knesset. She entered the
+        Knesset in February 2023 (from 10 February 2023 according to the Knesset
+        record), replacing Ofir Akunis, who resigned under the Norwegian Law, and
+        has since served as a Likud MK.
+    date: "2023-02-10"
     sources:
-      - url: https://en.wikipedia.org/wiki/List_of_members_of_the_twenty-fifth_Knesset
-        title: List of members of the twenty-fifth Knesset
-        publisher: Wikipedia
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30875
+        title: Tsega Melaku - personal details (Knesset website)
+        publisher: Knesset
+      - url: https://www.israelhayom.co.il/news/politics/article/13066288
+        title: הירש בחוץ, שיקלי שוריין במקום ה-14 - זו רשימת הליכוד המלאה
+        publisher: Israel Hayom
       - url: https://en.wikipedia.org/wiki/Tsega_Melaku
         title: Tsega Melaku
         publisher: Wikipedia
   - kind: positive
     category: volunteering
     title:
-      he: פעילות ציבורית למען הקהילה האתיופית בישראל
-      en: Public activism for Israel's Ethiopian community
+      he: פעילות ציבורית למען יוצאי אתיופיה; יו"ר צוות "הנכחה חיובית" בצוות פלמור (2016)
+      en: Public activism for Ethiopian-Israelis; chaired the "positive presence" sub-team of the Palmor task force (2016)
     description:
-      he: מלקו פעילה רבת שנים למען הקהילה האתיופית בישראל, בין היתר במחאות 1996 נגד
-        מדיניות מגן דוד אדום בנוגע לתרומות דם של יוצאי אתיופיה. בפברואר 2016
-        מינה אותה משרד המשפטים להוביל צוות משנה להסברה במסגרת צוות בין-משרדי
-        למאבק בגזענות כלפי יוצאי אתיופיה.
-      en: Melaku has long been active on behalf of Israel's Ethiopian community,
-        including participating in the 1996 protests over Magen David Adom's
-        policy on Ethiopian-Israeli blood donations. In February 2016 the
-        Justice Ministry appointed her to lead a public-awareness sub-team
-        within an inter-ministerial task force against racism toward
-        Ethiopian-Israelis.
-    date: 2016-02
+      he: >-
+        מלקו פעילה רבת שנים למען שוויון ליוצאי אתיופיה, בין היתר במחאות 1996 בעקבות
+        פרשת תרומות הדם. ב-2016 כיהנה כיו"ר צוות "הנכחה חיובית" בצוות הבין-משרדי
+        למיגור הגזענות נגד יוצאי אתיופיה בראשות מנכ"לית משרד המשפטים אמי פלמור,
+        שדוחו המסכם הוגש ביולי 2016. ספרה האוטוביוגרפי "לא בבית ספרנו" ראה אור
+        ב-2014.
+      en: >-
+        Melaku has long campaigned for equality for Ethiopian-Israelis, including in
+        the 1996 protests over the blood-donation affair. In 2016 she chaired the
+        "positive presence" sub-team of the inter-ministerial task force against
+        racism toward Ethiopian-Israelis, headed by Justice Ministry
+        director-general Emi Palmor, whose final report was submitted in July 2016.
+        Her autobiographical book "Not in Our School" was published in 2014.
+    date: "2016-07"
     sources:
+      - url: https://fs.knesset.gov.il/25/law/25_ls_bk_4169558.pdf
+        title: הצוות למיגור הגזענות נגד יוצאי אתיופיה - דוח מסכם, יולי 2016
+        publisher: Knesset (Justice Ministry report)
       - url: https://en.wikipedia.org/wiki/Tsega_Melaku
         title: Tsega Melaku
         publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%A6%D7%92%D7%94_%D7%9E%D7%9C%D7%A7%D7%95
+        title: צגה מלקו
+        publisher: Wikipedia (Hebrew)
   - kind: negative
     category: controversy
-    status: settled
     title:
       he: נפסלה ממועמדות לבחירות 2015 בשל אי-השלמת תקופת צינון
-      en: Disqualified from 2015 candidacy over cooling-off period
+      en: Disqualified from 2015 candidacy over the cooling-off period
     description:
-      he: בינואר 2015 פסל יו"ר ועדת הבחירות המרכזית, השופט סלים ג'ובראן, את מועמדותה
-        של מלקו ברשימת מפלגת כולנו לבחירות לכנסת ה-20, בקביעה שלא השלימה את
-        תקופת הצינון בת 100 הימים הנדרשת לאחר סיום תפקידה כמנהלת רשת א' ברשות
-        השידור. מדובר בהחלטה מנהלית של ועדת הבחירות ולא בהליך פלילי.
-      en: In January 2015 the chairman of the Central Elections Committee, Judge Salim
-        Joubran, disqualified Melaku's candidacy on the Kulanu party list for
-        the 20th Knesset election, ruling that she had not completed the
-        mandatory 100-day cooling-off period after leaving her post as director
-        of Reshet Aleph at the Israeli Broadcasting Authority. This was an
-        administrative elections-committee ruling, not a criminal proceeding.
-    date: 2015-01-26
+      he: >-
+        ב-26 בינואר 2015 פסל יו"ר ועדת הבחירות המרכזית, השופט סלים ג'ובראן, את
+        מועמדותה של מלקו במקום השלישי ברשימת "כולנו" לכנסת ה-20, בקביעה שכעובדת
+        בכירה ברשות השידור לא השלימה את תקופת הצינון בת 100 הימים הנדרשת בחוק
+        לפני מועד הבחירות. השופט ציין כי הוא מודע לפגיעה בזכותה להיבחר וכי הציבור,
+        ובפרט יוצאי אתיופיה, היה מרוויח מבחירתה. "כולנו" הביעה צער על ההחלטה
+        ומסרה כי הסתמכה על חוות דעת שלפיה מותר לה להתמודד. מדובר בהחלטה מנהלית
+        של ועדת הבחירות ולא בהליך פלילי.
+      en: >-
+        On 26 January 2015 the chairman of the Central Elections Committee, Justice
+        Salim Joubran, disqualified Melaku's candidacy in the third slot on the
+        Kulanu list for the 20th Knesset, ruling that as a senior employee of the
+        Israel Broadcasting Authority she had not completed the 100-day cooling-off
+        period the law requires before an election. The judge noted that he was
+        aware the decision harmed her right to run and that the public, especially
+        the Ethiopian community, would have benefited from her election. Kulanu said
+        it regretted the decision and had relied on advice that she was allowed to
+        run. This was an administrative elections-committee ruling, not a criminal
+        proceeding.
+    date: "2015-01-26"
     sources:
       - url: https://www.ynetnews.com/articles/0,7340,L-4619287,00.html
         title: Ethiopian-born Tsega Melaku disqualified from running on Kahlon's list
@@ -88,3 +123,61 @@ claims:
       - url: https://www.timesofisrael.com/kulanu-candidate-barred-from-running-in-march-elections/
         title: Kulanu candidate barred from running in March elections
         publisher: The Times of Israel
+      - url: https://www.haaretz.co.il/news/elections/1.2548823
+        title: נפסלה מועמדותה של צגה מלקו, שמוקמה שלישית ברשימת כולנו של כחלון
+        publisher: Haaretz
+  - kind: neutral
+    category: news
+    date: "2026-01-05"
+    title:
+      he: יזמה פגישה בין ראש הממשלה למשפחת הילדה הנעדרת היימנות קסאו
+      en: Arranged a meeting between the prime minister and the family of missing girl Haymanot Kasau
+    description:
+      he: >-
+        ב-5 בינואר 2026 יזמה מלקו פגישה בין ראש הממשלה בנימין נתניהו למשפחתה של
+        היימנות קסאו, ילדה בת תשע מצפת שנעלמה בפברואר 2024. לדבריה בריאיון ל"ג'רוזלם
+        פוסט", המקרה לא זכה לתשומת לב תקשורתית וציבורית מספקת, והיא פועלת לסיווגו
+        כחטיפה ולהגברת המאמצים לאיתור הילדה.
+      en: >-
+        On 5 January 2026 Melaku arranged a meeting between Prime Minister Benjamin
+        Netanyahu and the family of Haymanot Kasau, a nine-year-old girl from Safed
+        who disappeared in February 2024. In an interview with The Jerusalem Post
+        she said the case had received too little media and public attention, and
+        that she was pressing for it to be classified as a kidnapping and for
+        greater efforts to find the girl.
+    sources:
+      - url: https://www.jpost.com/israel-news/article-883026
+        title: "MK Tsega Melaku: Missing girl Haymanut Kasau ignored for nearly two years - interview"
+        publisher: The Jerusalem Post
+  - kind: neutral
+    category: news
+    date: "2026-08-14"
+    title:
+      he: פרשה מהפריימריז של הליכוד לכנסת ה-26 ולא נכללה ברשימת הליכוד
+      en: Withdrew from the Likud primary for the 26th Knesset and was not included on the Likud list
+    description:
+      he: >-
+        ב-14 באוגוסט 2026 הודיעה מלקו כי לא תתמודד בפריימריז של הליכוד שנערכו ב-17
+        באוגוסט, לאחר שלא קיבלה שריון ברשימה חרף פניות של מנהיגים רוחניים של יוצאי
+        אתיופיה, ובהם מכתב של 32 קייסים לנתניהו. לדבריה, "לא נשארה שום קונסטלציה
+        פוליטית סבירה מבחינתי להיבחר... ציפיתי לשריון אחרי העבודה הקשה בכנסת
+        הנוכחית אבל זה לא קרה". ברשימת הליכוד הסופית שפורסמה ב-8 בספטמבר 2026 היא
+        אינה מופיעה.
+      en: >-
+        On 14 August 2026 Melaku announced she would not run in the Likud primary held
+        on 17 August, after not receiving a reserved slot despite appeals by
+        Ethiopian-Israeli spiritual leaders, including a letter from 32 kessim to
+        Netanyahu. She said that "no reasonable political constellation remained for
+        me to be elected... I expected a reserved slot after the hard work in the
+        current Knesset, but it did not happen". She does not appear on the final
+        Likud list published on 8 September 2026.
+    sources:
+      - url: https://www.ynet.co.il/news/article/bkg11uuh8ge
+        title: ח"כ צגה מלקו פרשה מהפריימריז; גורמים בליכוד גיששו עם פנינה תמנו-שטה
+        publisher: Ynet
+      - url: https://www.jpost.com/israel-election-2026/article-905843
+        title: What do Netanyahu's reserved slots mean for Likud's Knesset list?
+        publisher: The Jerusalem Post
+      - url: https://www.mako.co.il/news-politics/2026_q3/Article-2ddf4a5b99180a1027.htm
+        title: זו הרשימה הסופית של הליכוד לבחירות 2026
+        publisher: N12

@@ -1,17 +1,22 @@
 personId: 23558
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
+    date: 2016-05-22
     title:
       he: יושב ראש הקואליציה בכנסת ה-20
       en: Chairman of the Coalition in the 20th Knesset
     description:
-      he: דוד ביטן, חבר כנסת מטעם הליכוד, מונה ביוני 2016 לתפקיד יושב ראש הקואליציה בכנסת ה-20, תפקיד מרכזי בניהול הרוב הפרלמנטרי של הממשלה.
-      en: David Bitan, a Likud Member of Knesset, was appointed Chairman of the Coalition in the 20th Knesset in May 2016, a central role in managing the government's parliamentary majority.
+      he: דוד ביטן, חבר כנסת מטעם הליכוד, מונה במאי 2016 לתפקיד יושב ראש הקואליציה בכנסת ה-20, תפקיד מרכזי בניהול הרוב הפרלמנטרי של הממשלה, וכיהן בו עד סוף 2017.
+      en: David Bitan, a Likud Member of Knesset, was appointed Chairman of the Coalition in the 20th Knesset in May 2016, a central role in managing the government's parliamentary majority, and held it until the end of 2017.
     sources:
       - url: https://en.wikipedia.org/wiki/David_Bitan
         title: David Bitan
         publisher: Wikipedia
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/23558
+        title: דוד ביטן - אתר הכנסת
+        publisher: The Knesset
   - kind: positive
     category: achievement
     title:
@@ -42,6 +47,25 @@ claims:
       - url: https://www.wikidata.org/wiki/Q18755548
         title: David Bitan (Q18755548)
         publisher: Wikidata
+  - kind: positive
+    category: achievement
+    date: 2023-01-10
+    title:
+      he: יושב ראש ועדת הכלכלה של הכנסת ה-25
+      en: Chairman of the Economic Affairs Committee in the 25th Knesset
+    description:
+      he: ב-10 בינואר 2023 נבחר ביטן פה אחד על ידי חברי ועדת הכלכלה ליושב ראש הוועדה בכנסת ה-25, תפקיד שבו הוא מכהן גם לאחר פיזור הכנסת.
+      en: On 10 January 2023 Bitan was elected unanimously by the members of the Knesset Economic Affairs Committee as its chairman in the 25th Knesset, a post he continues to hold after the Knesset's dissolution.
+    sources:
+      - url: https://www.calcalist.co.il/local_news/article/hypcjkocs
+        title: 'ברקע האישומים נגדו: ח"כ דוד ביטן נבחר ליו"ר ועדת הכלכלה'
+        publisher: Calcalist
+      - url: https://www.inn.co.il/flashes/905471
+        title: 'ח"כ דוד ביטן ימונה ליו"ר ועדת הכלכלה'
+        publisher: Arutz 7
+      - url: https://www.the7eye.org.il/588498
+        title: 'משפט ביטן: אחרי קרוב ל-40 דיונים, יו"ר ועדת הכלכלה של הכנסת סיים להיחקר במשפט השוחד שלו'
+        publisher: The Seventh Eye
   - kind: negative
     category: investigation
     status: indicted
@@ -52,10 +76,10 @@ claims:
       ar: لائحة اتهام بجرائم رشوة ومحاكمة جارية
       ru: Обвинительное заключение о взяточничестве и продолжающийся судебный процесс
     description:
-      he: 'ב-6 ביולי 2021 הוגש נגד דוד ביטן כתב אישום בעבירות שוחד, מרמה, הפרת אמונים, הלבנת הון ועבירות מס בהיקף כולל של כ-715 אלף ש"ח, והמשפט מתנהל בבית המשפט המחוזי בלוד. בספטמבר 2025 החל ביטן להעיד להגנתו והכחיש את כל האישומים, באומרו: "מעולם לא ביקשתי ולא קיבלתי שוחד". נכון ליולי 2026 טרם ניתנה הכרעת דין.'
-      en: 'On July 6, 2021, an indictment was filed against David Bitan on charges of bribery, fraud, breach of trust, money laundering and tax offenses totaling approximately NIS 715,000, and the trial is being conducted at the Lod District Court. In September 2025 Bitan began testifying in his defense and denied all charges, stating: "I never asked for or received bribes in my life." As of July 2026, no verdict has been rendered.'
-      ar: في 6 يوليو 2021 قُدمت لائحة اتهام ضد ديفيد بيتان بتهم الرشوة والاحتيال وخيانة الأمانة وغسل الأموال ومخالفات ضريبية بمجموع نحو 715 ألف شيكل، وتجري المحاكمة في المحكمة المركزية في اللد. في سبتمبر 2025 بدأ بيتان الإدلاء بشهادته للدفاع عن نفسه ونفى جميع التهم. حتى يوليو 2026 لم يصدر حكم في القضية.
-      ru: 6 июля 2021 года против Давида Битана было выдвинуто обвинительное заключение по обвинениям во взяточничестве, мошенничестве, злоупотреблении доверием, отмывании денег и налоговых нарушениях на общую сумму около 715 тысяч шекелей; процесс проходит в окружном суде Лода. В сентябре 2025 года Битан начал давать показания в свою защиту и отверг все обвинения. По состоянию на июль 2026 года приговор не вынесен.
+      he: 'ב-6 ביולי 2021 הוגש נגד דוד ביטן כתב אישום בעבירות שוחד, מרמה, הפרת אמונים, הלבנת הון ועבירות מס בהיקף כולל של כ-715 אלף ש"ח, והמשפט מתנהל בבית המשפט המחוזי בלוד. בספטמבר 2025 החל ביטן להעיד להגנתו והכחיש את כל האישומים, באומרו: "מעולם לא ביקשתי ולא קיבלתי שוחד". לפי "העין השביעית", עדותו הסתיימה ביוני 2026 לאחר כ-39 דיונים, ועדי ההגנה צפויים להעיד מיולי 2026. נכון לספטמבר 2026 טרם ניתנה הכרעת דין, וחזקת החפות עומדת לו.'
+      en: 'On July 6, 2021, an indictment was filed against David Bitan on charges of bribery, fraud, breach of trust, money laundering and tax offenses totaling approximately NIS 715,000, and the trial is being conducted at the Lod District Court. In September 2025 Bitan began testifying in his defense and denied all charges, stating: "I never asked for or received bribes in my life." According to The Seventh Eye, his testimony ended in June 2026 after about 39 hearings, with defense witnesses expected from July 2026. As of September 2026 no verdict has been rendered, and he is presumed innocent.'
+      ar: في 6 يوليو 2021 قُدمت لائحة اتهام ضد ديفيد بيتان بتهم الرشوة والاحتيال وخيانة الأمانة وغسل الأموال ومخالفات ضريبية بمجموع نحو 715 ألف شيكل، وتجري المحاكمة في المحكمة المركزية في اللد. في سبتمبر 2025 بدأ بيتان الإدلاء بشهادته للدفاع عن نفسه ونفى جميع التهم، وانتهت شهادته في يونيو 2026. حتى سبتمبر 2026 لم يصدر حكم في القضية.
+      ru: 6 июля 2021 года против Давида Битана было выдвинуто обвинительное заключение по обвинениям во взяточничестве, мошенничестве, злоупотреблении доверием, отмывании денег и налоговых нарушениях на общую сумму около 715 тысяч шекелей; процесс проходит в окружном суде Лода. В сентябре 2025 года Битан начал давать показания в свою защиту и отверг все обвинения; его показания завершились в июне 2026 года. По состоянию на сентябрь 2026 года приговор не вынесен.
     sources:
       - url: https://en.wikipedia.org/wiki/David_Bitan
         title: David Bitan
@@ -66,4 +90,22 @@ claims:
       - url: https://www.ynet.co.il/news/article/rkjesup5xg
         title: 'דוד ביטן מעיד בפרשת השוחד: "טעיתי. לא רציתי שהפועל ראשון לציון תתפרק"'
         publisher: Ynet
-lastReviewed: 2026-07-05
+      - url: https://www.the7eye.org.il/588498
+        title: 'משפט ביטן: אחרי קרוב ל-40 דיונים, יו"ר ועדת הכלכלה של הכנסת סיים להיחקר במשפט השוחד שלו'
+        publisher: The Seventh Eye
+  - kind: neutral
+    category: news
+    date: 2026-09-08
+    title:
+      he: מוקם במקום ה-22 ברשימת הליכוד לבחירות 2026 לאחר הפריימריז
+      en: Placed 22nd on the Likud list for the 2026 election after the primary
+    description:
+      he: בפריימריז הליכוד שנערכו ב-17 באוגוסט 2026 נבחר ביטן למקום ריאלי ברשימה; ברשימה הסופית שפורסמה ב-8 בספטמבר 2026, לאחר שיבוץ השריונים, הוא מוצב במקום ה-22.
+      en: In the Likud primary held on 17 August 2026 Bitan won a realistic slot; in the final list published on 8 September 2026, after the reserved slots were placed, he is in 22nd place.
+    sources:
+      - url: https://www.haaretz.co.il/news/elections/2026-08-17/ty-article/.premium/000001a0-10eb-d0aa-abfb-befb92a40000
+        title: 'הסתיימה ספירת הקולות בפריימריז: אלי כהן, אמיר אוחנה ויריב לוין בצמרת הליכוד'
+        publisher: Haaretz
+      - url: https://www.mako.co.il/news-politics/2026_q3/Article-2ddf4a5b99180a1027.htm
+        title: זו הרשימה הסופית של הליכוד לבחירות 2026
+        publisher: N12

@@ -1,7 +1,8 @@
-# PersonID 30752. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# PersonID 30752 (Walid Taha). Researched from reputable public sources and
+# source-verified (every cited URL re-fetched 2026-09-18). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 30752
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -27,15 +28,15 @@ claims:
   - kind: positive
     category: achievement
     title:
-      he: יו"ר ועדת הפנים והגנת הסביבה של הכנסת
-      en: Chairman of the Knesset Internal Affairs and Environment Committee
+      he: יו"ר ועדת הפנים והגנת הסביבה של הכנסת (2021–2022)
+      en: Chairman of the Knesset Internal Affairs and Environment Committee (2021–2022)
     description:
       he: בספטמבר 2021 נבחר טאהא ליו"ר ועדת הפנים והגנת הסביבה של הכנסת, לאחר שמינויו
         אושר ברוב של 6 מול 4. הוא החליף בתפקיד את חברו לסיעה סעיד אלחרומי שנפטר.
       en: In September 2021 Taha was selected as chairman of the Knesset Internal
         Affairs and Environment Committee, with his nomination approved by a 6-4
         vote. He took over the role following the death of his faction colleague
-        Said al-Harumi.
+        Said al-Harumi, and held the post until the end of the 24th Knesset in November 2022.
     date: 2021-09-12
     sources:
       - url: https://www.timesofisrael.com/raam-mk-selected-to-head-knesset-internal-affairs-committee/

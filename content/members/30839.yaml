@@ -2,18 +2,21 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 30839
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: חבר הכנסת מטעם הליכוד
-      en: Member of Knesset for Likud
+      he: חבר הכנסת מטעם הליכוד (2023–2026)
+      en: Member of Knesset for Likud (2023–2026)
     description:
-      he: דן אילוז מכהן כחבר הכנסת מטעם סיעת הליכוד החל מ-6 בינואר 2023, אז נכנס לכנסת
-        ה-25 במסגרת 'החוק הנורבגי' במקומו של מיקי זוהר.
-      en: Dan Illouz has served as a Member of Knesset for the Likud party since 6
+      he: דן אילוז כיהן כחבר הכנסת מטעם סיעת הליכוד מ-6 בינואר 2023, אז נכנס לכנסת
+        ה-25 במסגרת 'החוק הנורבגי' במקומו של מיקי זוהר, ועד להתפטרותו מהכנסת
+        באוגוסט 2026.
+      en: Dan Illouz served as a Member of Knesset for the Likud party from 6
         January 2023, when he entered the 25th Knesset under the 'Norwegian Law'
-        replacing Miki Zohar.
+        replacing Miki Zohar, until his resignation from the Knesset in August
+        2026.
     date: 2023-01-06
     sources:
       - url: https://en.wikipedia.org/wiki/Dan_Illouz
@@ -22,6 +25,9 @@ claims:
       - url: https://he.wikipedia.org/wiki/%D7%93%D7%9F_%D7%90%D7%99%D7%9C%D7%95%D7%96
         title: דן אילוז
         publisher: Wikipedia (Hebrew)
+      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-905165
+        title: Former Likud MK Dan Illouz quits Knesset after switch to Yisrael Beytenu
+        publisher: The Jerusalem Post
   - kind: positive
     category: volunteering
     title:
@@ -94,3 +100,68 @@ claims:
       - url: https://en.wikipedia.org/wiki/Dan_Illouz
         title: Dan Illouz
         publisher: Wikipedia (English)
+  - kind: neutral
+    category: news
+    date: 2026-07-11
+    title:
+      he: הודיע כי לא יתמודד בפריימריז של הליכוד ויפרוש מהמפלגה
+      en: Announced he would not run in the Likud primary and would leave the party
+    description:
+      he: ב-11 ביולי 2026 דווח כי אילוז הודיע שלא יתמודד בפריימריז של הליכוד ויעזוב
+        את המפלגה, לאחר שהתנגד בעקביות לעמדותיה בנושאי דת ומדינה, ובהם חוק
+        הגיוס. יו"ר הקואליציה אופיר כץ אמר לו בדיון בוועדה כי כל דבריו מכוונים נגד
+        הליכוד ונגד נתניהו.
+      en: On 11 July 2026 it was reported that Illouz announced he would not run in
+        the Likud primary and would leave the party, after consistently opposing
+        its positions on religion-and-state issues, including the draft
+        exemption bill. Coalition chairman Ofir Katz told him in a committee
+        debate that "everything you say is against Likud and against Netanyahu".
+    sources:
+      - url: https://www.mako.co.il/news-politics/2026_q3/Article-221296b9a325f91027.htm
+        title: 'פרסום ראשון: ח"כ דן אילוז פורש מהליכוד'
+        publisher: N12
+  - kind: neutral
+    category: role
+    date: 2026-08-13
+    title:
+      he: התפטר מהכנסת לאחר שהצטרף לישראל ביתנו; הוחלף על ידי שבתאי קטש
+      en: Resigned from the Knesset after joining Yisrael Beytenu; replaced by Shabtai Katash
+    description:
+      he: ב-11 באוגוסט 2026 הגיש אילוז את התפטרותו מהכנסת לאחר שהודיע על הצטרפותו
+        לישראל ביתנו בראשות אביגדור ליברמן; ההתפטרות נכנסה לתוקף ב-13 באוגוסט
+        2026 ובמקומו נכנס לכנסת שבתאי קטש, הבא ברשימת הליכוד. אילוז אמר כי
+        נתניהו נכשל ולא לקח אחריות וכי עליו ללכת הביתה. הוא אינו מכהן עוד
+        כחבר הכנסת.
+      en: On 11 August 2026 Illouz submitted his resignation from the Knesset after
+        announcing he had joined Avigdor Liberman's Yisrael Beytenu; the
+        resignation took effect on 13 August 2026 and Shabtai Katash, next on
+        the Likud list, entered the Knesset in his place. Illouz said that
+        "Netanyahu failed and did not take responsibility. He must go home". He
+        no longer serves as a Member of Knesset.
+    sources:
+      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-905165
+        title: Former Likud MK Dan Illouz quits Knesset after switch to Yisrael Beytenu
+        publisher: The Jerusalem Post
+      - url: https://en.wikipedia.org/wiki/Dan_Illouz
+        title: Dan Illouz
+        publisher: Wikipedia (English)
+  - kind: neutral
+    category: news
+    date: 2026-09-06
+    title:
+      he: שובץ במקום העשירי ברשימת ישראל ביתנו לבחירות 2026
+      en: Placed tenth on the Yisrael Beytenu list for the 2026 election
+    description:
+      he: ב-6 בספטמבר 2026 הציג אביגדור ליברמן את רשימת ישראל ביתנו לכנסת ה-26,
+        ובה שובץ אילוז במקום העשירי; במקום השני רפי בן שטרית ובמקום השלישי טליה
+        לנקרי.
+      en: On 6 September 2026 Avigdor Liberman presented the Yisrael Beytenu list for
+        the 26th Knesset, on which Illouz was placed tenth; Rafi Ben Shetreet is
+        second and Talia Lankri third.
+    sources:
+      - url: https://www.ynet.co.il/news/elections2026/article/bki6ywjdge
+        title: 'ליברמן הוצג כ"רה"מ הבא" והפתיע: רפי בן שטרית במקום השני, טליה לנקרי שלישית'
+        publisher: Ynet
+      - url: https://www.haaretz.co.il/news/elections/2026-09-06/ty-article/.premium/000001a0-76fd-db00-afb5-f6ff8b250000
+        title: 'ליברמן הציג את רשימת ישראל ביתנו: רפי בן שטרית במקום השני, שרון שרעבי במקום השישי'
+        publisher: Haaretz

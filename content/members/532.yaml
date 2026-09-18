@@ -1,19 +1,119 @@
 # Yuli Edelstein (PersonID 532). Factual reporting from reputable public sources,
-# cited per claim. Neutral language. REVIEW before launch.
+# cited per claim. Neutral language. Sources re-verified 2026-09-18.
 personId: 532
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
+    date: "1987-05-13"
     title:
-      he: "אסיר ציון לשעבר וכיהן כיו\"ר הכנסת"
-      en: "Former Prisoner of Zion who served as Speaker of the Knesset"
+      he: "אסיר ציון לשעבר: נכלא בברית המועצות על הוראת עברית"
+      en: "Former Prisoner of Zion, jailed in the Soviet Union for teaching Hebrew"
     description:
-      he: "נאסר בברית המועצות בשנות ה-80 בשל פעילותו הציונית ולימוד עברית. לאחר עלייתו לישראל כיהן כשר וכיו\"ר הכנסת לאורך שנים."
-      en: "Imprisoned in the Soviet Union in the 1980s for his Zionist activity and teaching Hebrew. After immigrating to Israel he served as a minister and for several years as Speaker of the Knesset."
+      he: "אדלשטיין, מסורבי העלייה הבולטים במוסקבה, נעצר ב-1984 באשמת החזקת סמים שלפי הדיווחים בוימה על ידי הק.ג.ב בשל הוראת עברית, ונידון לשלוש שנות עבודת פרך. הוא ריצה כשנתיים ושמונה חודשים במחנות עבודה בסיביר, שוחרר במאי 1987 ועלה לישראל כחודשיים לאחר מכן."
+      en: "Edelstein, a prominent Moscow refusenik, was arrested in 1984 on a drug-possession charge that reports describe as fabricated by the KGB because he taught Hebrew, and was sentenced to three years of hard labour. He served about two years and eight months in Siberian labour camps, was released in May 1987 and immigrated to Israel roughly two months later."
+    sources:
+      - url: "https://www.timesofisrael.com/now-a-knesset-leader-former-prisoner-of-zion-returns-to-his-moscow-cell/"
+        title: "Now a Knesset leader, former prisoner of Zion returns to his Moscow cell"
+        publisher: "The Times of Israel"
+      - url: "https://www.jpost.com/Israel-News/Politics-And-Diplomacy/Knesset-speaker-to-address-Russian-parliament-30-years-after-gulag-release-490838"
+        title: "Knesset speaker to address Russian parliament 30 years after gulag release"
+        publisher: "The Jerusalem Post"
+      - url: "https://en.wikipedia.org/wiki/Yuli_Edelstein"
+        title: "Yuli Edelstein"
+        publisher: "Wikipedia"
+  - kind: positive
+    category: achievement
+    date: "2013-03-18"
+    title:
+      he: "יושב ראש הכנסת (2013–2020) ושר בשלוש ממשלות"
+      en: "Speaker of the Knesset (2013–2020) and minister in three governments"
+    description:
+      he: "אדלשטיין כיהן כשר לקליטת העלייה (1996–1999), כשר ההסברה והתפוצות (2009–2013) וכשר הבריאות (2020–2021). ב-18 במרץ 2013 נבחר ליושב ראש הכנסת, נבחר מחדש ב-2015 וב-2019 וכיהן בתפקיד עד 25 במרץ 2020."
+      en: "Edelstein served as Minister of Immigrant Absorption (1996–1999), Minister of Public Diplomacy and Diaspora Affairs (2009–2013) and Minister of Health (2020–2021). On 18 March 2013 he was elected Speaker of the Knesset, was re-elected in 2015 and 2019, and held the post until 25 March 2020."
     sources:
       - url: "https://en.wikipedia.org/wiki/Yuli_Edelstein"
         title: "Yuli Edelstein"
         publisher: "Wikipedia"
-      - url: "https://www.britannica.com/biography/Yuli-Edelstein"
-        title: "Yuli Edelstein — Biography"
-        publisher: "Encyclopædia Britannica"
+      - url: "https://www.timesofisrael.com/in-bombshell-yuli-edelstein-resigns-to-avoid-calling-vote-on-new-speaker/"
+        title: "In bombshell, Yuli Edelstein resigns to avoid calling vote on new speaker"
+        publisher: "The Times of Israel"
+      - url: "https://www.jta.org/2017/06/28/israel/knesset-speaker-yuli-edelstein-a-former-soviet-refusenik-addresses-russian-parliament"
+        title: "Knesset Speaker Yuli Edelstein, a former Soviet refusenik, addresses Russian parliament"
+        publisher: "JTA"
+  - kind: neutral
+    category: role
+    date: "2025-07-23"
+    title:
+      he: "הודח מראשות ועדת החוץ והביטחון והוחלף בבועז ביסמוט"
+      en: "Removed as chair of the Foreign Affairs and Defense Committee, replaced by Boaz Bismuth"
+    description:
+      he: "ב-23 ביולי 2025 בחרה סיעת הליכוד ברוב של 29 מול 4 בבועז ביסמוט ליו\"ר ועדת החוץ והביטחון במקום אדלשטיין, על רקע המחלוקת על חוק הגיוס לחרדים: אדלשטיין סירב לקדם נוסח שלפי הדיווחים היה פוטר את רוב הגברים החרדים משירות. ב-29 באוקטובר 2025 הודיע הליכוד כי הוא מוצא גם מחברות בוועדה בשל הצבעה בניגוד לעמדת הסיעה, וטלי גוטליב החליפה אותו."
+      en: "On 23 July 2025 the Likud faction voted 29–4 to install Boaz Bismuth as chair of the Foreign Affairs and Defense Committee in place of Edelstein, amid the dispute over the Haredi conscription bill: Edelstein had refused to advance a version that reports said would exempt most Haredi men from service. On 29 October 2025 Likud announced he was also being removed from the committee's membership for voting against the faction line, and Tally Gotliv replaced him."
+    sources:
+      - url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-862000"
+        title: "Bismuth elected new Foreign Affairs and Defense Committee head"
+        publisher: "The Jerusalem Post"
+      - url: "https://www.timesofisrael.com/amid-haredi-draft-controversy-likud-votes-for-mk-boaz-bismuth-to-head-key-knesset-panel/"
+        title: "Ousting Edelstein, Likud elects Bismuth to head key panel, advance Haredi draft exemption law"
+        publisher: "The Times of Israel"
+      - url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-872046"
+        title: "MK Tally Gotliv to replace ousted MK Edelstein in Foreign Affairs Defense Cm'tee"
+        publisher: "The Jerusalem Post"
+  - kind: neutral
+    category: news
+    date: "2026-07-03"
+    title:
+      he: "הודיע על פרישה מהליכוד: \"לא אתמודד בפריימריז, יוצא לדרך פוליטית חדשה\""
+      en: "Announced he is leaving Likud: will not run in the primary, \"setting off on a new political path\""
+    description:
+      he: "ב-3 ביולי 2026 הודיע אדלשטיין, לאחר 23 שנים בליכוד, כי לא יתמודד בפריימריז של המפלגה ויצא לדרך פוליטית חדשה. לדבריו, אינו יכול להמשיך לייצג מפלגה התומכת בפטור מגיוס לגברים חרדים."
+      en: "On 3 July 2026, after 23 years in Likud, Edelstein announced he would not run in the party primary and would set off on a new political path. He said he could no longer campaign for a party that backs draft exemptions for Haredi men."
+    sources:
+      - url: "https://www.timesofisrael.com/senior-likud-renegade-yuli-edelstein-leaving-party-to-forge-a-new-political-path/"
+        title: "Senior Likud renegade Yuli Edelstein leaving party to forge a 'new political path'"
+        publisher: "The Times of Israel"
+      - url: "https://www.ynet.co.il/news/article/sy5rlhsxfl"
+        title: "יולי אדלשטיין פורש מהליכוד: \"יוצא לדרך פוליטית חדשה\""
+        publisher: "Ynet"
+      - url: "https://www.haaretz.com/israel-news/elections/2026-07-03/ty-article/.premium/top-netanyahu-rival-within-likud-says-he-will-not-run-in-partys-primary/0000019f-2868-da12-afbf-a86d84c80000"
+        title: "Top Netanyahu Rival Within Likud Says He Will Not Run in Party's Primary"
+        publisher: "Haaretz"
+  - kind: neutral
+    category: news
+    date: "2026-08-06"
+    title:
+      he: "הקים עם גלעד ארדן את מפלגת \"אחדות\" לקראת בחירות 2026"
+      en: "Co-founded the \"Unity\" party with Gilad Erdan ahead of the 2026 election"
+    description:
+      he: "ב-6 באוגוסט 2026 השיקו אדלשטיין וגלעד ארדן בתל אביב מפלגה ימנית חדשה, שקיבלה ב-11 באוגוסט את השם \"אחדות\". המפלגה התחייבה לגיוס אוניברסלי לצה\"ל ולהצטרפות לממשלה רחבה בלבד, לא לממשלה צרה של אחד הגושים."
+      en: "On 6 August 2026 Edelstein and Gilad Erdan launched a new right-wing party in Tel Aviv, named \"Unity\" on 11 August. The party pledged universal IDF service and to join only a broad consensus government rather than a narrow government of either bloc."
+    sources:
+      - url: "https://www.timesofisrael.com/erdan-and-edelstein-unveil-still-unnamed-party-likud-no-longer-represents-its-voters/"
+        title: "Erdan and Edelstein unveil still-unnamed party: 'Likud no longer represents its voters'"
+        publisher: "The Times of Israel"
+      - url: "https://www.timesofisrael.com/liveblog_entry/erdan-and-edelsteins-new-party-unveils-its-name-unity/"
+        title: "Erdan and Edelstein's new party unveils its name: 'Unity'"
+        publisher: "The Times of Israel"
+      - url: "https://www.jpost.com/israel-election-2026/article-904799"
+        title: "'Right, enlistment, unity': Ex-UN ambassador Gilad Erdan launches new party with Edelstein"
+        publisher: "The Jerusalem Post"
+  - kind: neutral
+    category: news
+    date: "2026-09-04"
+    title:
+      he: "\"אחדות\" פרשה מהמרוץ; אדלשטיין לא יתמודד לכנסת הבאה ונותר חבר כנסת"
+      en: "Unity quit the race; Edelstein will not run for the next Knesset and remains an MK"
+    description:
+      he: "ב-4 בספטמבר 2026 הודיע ארדן כי \"אחדות\" לא תתמודד בבחירות 27 באוקטובר, לאחר שסקרים הראו שלא תעבור את אחוז החסימה, ובכך הסתיים גם מהלכו של אדלשטיין, שלא יתמודד לכנסת הבאה. אף שב-7 באוגוסט הודיע כי יגיש \"בימים הקרובים\" מכתב התפטרות מהכנסת, לפי וואלה נכון ל-4 בספטמבר המכתב טרם הוגש והוא ממשיך לכהן כחבר כנסת."
+      en: "On 4 September 2026 Erdan announced that Unity would not run in the 27 October election after polls showed it failing to cross the threshold, ending Edelstein's bid as well; he will not run for the next Knesset. Although on 7 August he said he would submit a resignation letter from the Knesset \"in the coming days\", Walla reported on 4 September that no letter had been submitted and he remains a serving MK."
+    sources:
+      - url: "https://www.timesofisrael.com/erdans-unity-quits-election-race-as-parties-scramble-to-finalize-slates-ahead-of-deadline/"
+        title: "Erdan's Unity quits election race as parties scramble to finalize slates ahead of deadline"
+        publisher: "The Times of Israel"
+      - url: "https://news.walla.co.il/item/3865060"
+        title: "הבטיח לפרוש \"בימים הקרובים\" - ארבעה שבועות אחרי: אדלשטיין עדיין חבר כנסת"
+        publisher: "Walla"
+      - url: "https://www.zman.co.il/live/711048/"
+        title: "אדלשטיין: בימים הקרובים אפרוש מהליכוד ומהכנסת"
+        publisher: "Zman Yisrael"

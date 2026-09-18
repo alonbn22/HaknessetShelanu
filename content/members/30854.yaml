@@ -2,6 +2,7 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 30854
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -44,3 +45,44 @@ claims:
       - url: https://he.wikipedia.org/wiki/%D7%A0%D7%90%D7%95%D7%A8_%D7%A9%D7%99%D7%A8%D7%99
         title: נאור שירי
         publisher: Wikipedia (Hebrew)
+  - kind: neutral
+    category: news
+    date: 2026-08-27
+    title:
+      he: אמר בפודקאסט של מעריב כי אי אפשר לשבת בממשלה עם נתניהו ותמך בקואליציה ציונית רחבה בלעדיו
+      en: Said on a Maariv podcast that one cannot sit in a government with Netanyahu, backing a broad Zionist coalition without him
+    description:
+      he: בראיון לפודקאסט של מעריב שפורסם ב-27 באוגוסט 2026 אמר שירי כי "אי אפשר לעשות
+        שום דבר עם נתניהו" וכי גם בממשלה ציונית רחבה אין לשבת עם בנימין נתניהו;
+        לדבריו, רוב של 61 למחנה השינוי אפשרי בלי נתניהו, והוא תמך ביאיר לפיד
+        כמנהיג המחנה.
+      en: In a Maariv podcast interview published on 27 August 2026, Shiri said that
+        "it's impossible to do anything with Netanyahu" and that in a broad
+        Zionist government "you can't sit with Benjamin Netanyahu"; he argued
+        that a 61-seat majority for the change camp is achievable without
+        Netanyahu and backed Yair Lapid as the camp's leader.
+    sources:
+      - url: https://www.maariv.co.il/news/politics/article-1358789
+        title: 'נאור שירי טרק את הדלת: "אי אפשר לעשות שום דבר עם נתניהו"'
+        publisher: Maariv
+  - kind: neutral
+    category: news
+    date: 2026-09-06
+    title:
+      he: שובץ במקום ה-14 ברשימת "ביחד" המשותפת של בנט ולפיד לבחירות 2026
+      en: Placed 14th on the joint Bennett–Lapid "Beyahad" list for the 2026 election
+    description:
+      he: ב-6 בספטמבר 2026 הוצגה רשימת "ביחד" המשותפת של נפתלי בנט ויאיר לפיד לכנסת
+        ה-26, ובה שובץ שירי, מטעם יש עתיד, במקום ה-14. בראש הרשימה בנט, אחריו
+        לפיד ובמקום השלישי קרן טרנר.
+      en: On 6 September 2026 the joint "Beyahad" (Together) list of Naftali Bennett
+        and Yair Lapid for the 26th Knesset was presented, with Shiri, from Yesh
+        Atid, placed 14th. Bennett heads the list, followed by Lapid and, in
+        third place, Keren Turner.
+    sources:
+      - url: https://www.maariv.co.il/news/politics/article-1363684
+        title: 'בחירות 2026: רשימת מפלגת ביחד לכנסת ה-26 בראשות בנט ולפיד'
+        publisher: Maariv
+      - url: https://www.i24news.tv/he/news/israel-elections-2026/artc-583d3c1a
+        title: '"ביחד" עם "יש עתיד": נפתלי בנט חושף את רשימת המפלגה לבחירות'
+        publisher: i24NEWS

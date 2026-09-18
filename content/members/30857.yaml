@@ -1,67 +1,297 @@
-# PersonID 30857. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30857. Researched from reputable public sources and source-verified
+# (every cited URL re-fetched). Neutral language; legal status marked where
+# relevant. Reviewed 2026-09-18.
 personId: 30857
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: מכהן כשר המורשת של ישראל
-      en: Serves as Israel's Minister of Heritage
+      he: שר המורשת בממשלה ה-37 (מכהן; ממשלת מעבר)
+      en: Minister of Heritage in the 37th government (serving; caretaker government)
     description:
-      he: עמיחי אליהו, חבר הכנסת מטעם מפלגת עוצמה יהודית, מונה לשר ירושלים ומורשת ב-29
-        בדצמבר 2022 בממשלה השלישית בראשות בנימין נתניהו. הוא בנו של הרב שמואל
-        אליהו ונכדו של הראשון לציון הרב מרדכי אליהו, ששימש הרב הראשי הספרדי
-        לישראל.
-      en: Amihai Eliyahu, a Knesset member for the Otzma Yehudit party, was appointed
-        Minister of Jerusalem Affairs and Heritage on 29 December 2022 in the
-        third government led by Benjamin Netanyahu. He is the son of Rabbi
-        Shmuel Eliyahu and grandson of Rabbi Mordechai Eliyahu, who served as
-        the Sephardi Chief Rabbi of Israel.
-    date: 2022-12-29
+      he: >-
+        עמיחי אליהו, חבר הכנסת מטעם עוצמה יהודית, מונה ב-29 בדצמבר 2022 לשר ירושלים
+        ומורשת, ומ-22 בינואר 2023 מכהן כשר המורשת. ב-19 בינואר 2025 התפטר יחד עם
+        שרי עוצמה יהודית במחאה על הסכם הפסקת האש בעזה, וב-19 במרץ 2025 שב לתפקיד
+        עם חזרת המפלגה לממשלה. לפי אתר הכנסת הוא מכהן כשר המורשת גם בממשלת המעבר
+        שלאחר פיזור הכנסת ה-25.
+      en: >-
+        Amichai Eliyahu, a Knesset member for Otzma Yehudit, was appointed Minister of
+        Jerusalem Affairs and Heritage on 29 December 2022 and has served as Minister
+        of Heritage since 22 January 2023. On 19 January 2025 he resigned together
+        with the other Otzma Yehudit ministers in protest at the Gaza ceasefire
+        agreement, and on 19 March 2025 he returned to the post when the party
+        rejoined the government. According to the Knesset website he continues to
+        serve as Minister of Heritage in the caretaker government that followed the
+        dissolution of the 25th Knesset.
+    date: "2025-03-19"
     sources:
-      - url: https://en.wikipedia.org/wiki/Amihai_Eliyahu
-        title: Amihai Eliyahu
-        publisher: Wikipedia
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30857
+        title: Amichai Eliyahu - personal details (Knesset website)
+        publisher: Knesset
+      - url: https://www.timesofisrael.com/far-right-otzma-yehudit-returning-to-the-government-after-resumption-of-war-in-gaza/
+        title: Far-right Otzma Yehudit returning to the government after resumption of war in Gaza
+        publisher: The Times of Israel
+      - url: https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%90%D7%9C%D7%99%D7%94%D7%95
+        title: עמיחי אליהו
+        publisher: Wikipedia (Hebrew)
   - kind: positive
     category: achievement
     title:
       he: שירת בחטיבת הצנחנים ובמלחמת לבנון השנייה
       en: Served in the IDF Paratroopers Brigade, including the 2006 Lebanon War
     description:
-      he: אליהו שירת בצבא ההגנה לישראל בחטיבת הצנחנים ולקח חלק במלחמת לבנון השנייה
-        בשנת 2006.
-      en: Eliyahu served in the Israel Defense Forces' Paratroopers Brigade and took
-        part in the 2006 Second Lebanon War.
+      he: >-
+        אליהו שירת כלוחם בגדוד 202 של חטיבת הצנחנים, ובמילואים לחם במלחמת לבנון
+        השנייה בשנת 2006. לאחר מכן לימד בישיבה התיכונית בחיספין (2009-2013).
+      en: >-
+        Eliyahu served as a combat soldier in the Paratroopers Brigade's 202nd
+        Battalion and fought as a reservist in the 2006 Second Lebanon War. He later
+        taught at the Hispin yeshiva high school (2009-2013).
     sources:
       - url: https://en.wikipedia.org/wiki/Amihai_Eliyahu
         title: Amihai Eliyahu
         publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%90%D7%9C%D7%99%D7%94%D7%95
+        title: עמיחי אליהו
+        publisher: Wikipedia (Hebrew)
+      - url: https://www.jdn.co.il/news/1811040/
+        title: מספר 4 של עוצמה יהודית - הרב עמיחי אליהו בנו של הרב שמואל אליהו
+        publisher: JDN
+  - kind: positive
+    category: volunteering
+    title:
+      he: ייסד את איגוד רבני קהילות ואת ארגון "צו אחד"
+      en: Founded the Union of Community Rabbis and the "Tzav Echad" organization
+    description:
+      he: >-
+        בשנת 2014 ייסד אליהו את "איגוד רבני קהילות", המאגד מאות רבני בתי כנסת
+        וקהילות ברחבי הארץ, ועמד בראשו עד 2022. כשנתיים לאחר מכן ייסד את ארגון
+        "צו אחד" הפועל למען חיילים מסורתיים בצה"ל, והיה שותף בהקמת ארגון
+        "שד"רים" לחיבור בין ישראל ליהדות התפוצות.
+      en: >-
+        In 2014 Eliyahu founded the Union of Community Rabbis, which brings together
+        hundreds of synagogue and community rabbis across Israel, and led it until
+        2022. About two years later he founded "Tzav Echad", an organization working
+        on behalf of traditional soldiers in the IDF, and co-founded "Shadarim",
+        which works on Israel-Diaspora ties.
+    date: "2014"
+    sources:
+      - url: https://www.jdn.co.il/news/1811040/
+        title: מספר 4 של עוצמה יהודית - הרב עמיחי אליהו בנו של הרב שמואל אליהו
+        publisher: JDN
+      - url: https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%97%D7%99_%D7%90%D7%9C%D7%99%D7%94%D7%95
+        title: עמיחי אליהו
+        publisher: Wikipedia (Hebrew)
   - kind: negative
     category: controversy
     title:
-      he: השעיה מישיבות הממשלה לאחר אמירה על פצצה גרעינית בעזה
+      he: הושעה מישיבות הממשלה לאחר אמירה על פצצה גרעינית בעזה
       en: Suspended from cabinet meetings after remark about a nuclear bomb on Gaza
     description:
-      he: בריאיון לרדיו 'כל ברמה' בנובמבר 2023, כשנשאל אם הטלת פצצה גרעינית על רצועת
-        עזה היא אופציה, השיב אליהו 'זו אחת האפשרויות'. ראש הממשלה בנימין נתניהו
-        אמר שדבריו 'מנותקים מהמציאות' והשעה אותו מישיבות הממשלה עד להודעה חדשה.
-        אליהו טען מאוחר יותר כי כוונתו הייתה מטאפורית. ההתבטאות גררה גינויים
-        בינלאומיים.
-      en: In a November 2023 interview with Kol Berama radio, when asked whether
-        dropping a nuclear bomb on the Gaza Strip was an option, Eliyahu replied
-        that it was 'one of the possibilities.' Prime Minister Benjamin
-        Netanyahu said the remarks were 'detached from reality' and suspended
-        him from cabinet meetings until further notice. Eliyahu later said his
-        comment was 'metaphorical.' The statement drew international
-        condemnation.
-    date: 2023-11-05
+      he: >-
+        בריאיון לרדיו "קול ברמה" ב-5 בנובמבר 2023, כשנשאל אם הטלת פצצה גרעינית על
+        רצועת עזה היא אופציה, השיב אליהו "זו אחת הדרכים". ראש הממשלה בנימין נתניהו
+        אמר שדבריו "מנותקים מהמציאות" והשעה אותו מישיבות הממשלה עד להודעה חדשה.
+        אליהו טען מאוחר יותר כי "ברור לכל בר דעת שהאמירה על האטום היא מטאפורית".
+        ההתבטאות גררה גינויים בינלאומיים.
+      en: >-
+        In an interview with the Kol Barama radio station on 5 November 2023, asked
+        whether dropping a nuclear bomb on the Gaza Strip was an option, Eliyahu
+        replied that it was "one way". Prime Minister Benjamin Netanyahu said the
+        remarks were "detached from reality" and suspended him from cabinet meetings
+        until further notice. Eliyahu later said it was "clear to all sensible
+        people that the statement about the atom is metaphorical". The statement
+        drew international condemnation.
+    date: "2023-11-05"
     sources:
-      - url: https://thebulletin.org/2023/11/israels-netanyahu-suspends-minister-for-suggesting-a-nuclear-weapons-option-in-gaza/
-        title: Israel's Netanyahu suspends minister for suggesting a nuclear weapons
-          option in Gaza
-        publisher: Bulletin of the Atomic Scientists
+      - url: https://www.timesofisrael.com/far-right-minister-says-nuking-gaza-an-option-pm-suspends-him-from-cabinet-meetings/
+        title: Far-right minister says nuking Gaza an option, PM suspends him from cabinet meetings
+        publisher: The Times of Israel
       - url: https://www.haaretz.com/israel-news/2023-11-14/ty-article/china-iran-arab-nations-condemn-israeli-ministers-nuclear-bomb-statement/0000018b-cce6-df9a-ab8b-deeeb98f0000
-        title: China, Iran, Arab Nations Condemn Israeli Minister's Statement About
-          Dropping a Nuclear Bomb on Gaza
+        title: China, Iran, Arab Nations Condemn Israeli Minister's Statement About Dropping a Nuclear Bomb on Gaza
         publisher: Haaretz
+  - kind: negative
+    category: controversy
+    title:
+      he: אמר כי הממשלה "רצה למחוק את עזה" וכי "אין רעב בעזה"; נתניהו הבהיר שאינו מדבר בשם הממשלה
+      en: Said the government was "racing ahead for Gaza to be wiped out" and that "there's no hunger in Gaza"; Netanyahu said he does not speak for the government
+    description:
+      he: >-
+        בריאיון לרדיו "קול ברמה" ב-24 ביולי 2025 אמר אליהו כי "הממשלה רצה למחוק את
+        עזה", כי "כל עזה תהיה יהודית" וכי "אין רעב בעזה". ראש הממשלה נתניהו פרסם
+        הודעה באנגלית ולפיה אליהו "אינו מדבר בשם הממשלה שאני עומד בראשה" ואינו חבר
+        בקבינט הביטחוני, אך לא נקט צעד משמעתי; שגריר ישראל בארה"ב יחיאל לייטר כינה
+        את הציטוטים "שגויים, טיפשיים ולא מייצגים". ראש האופוזיציה יאיר לפיד כינה את
+        הדברים "אסון הסברתי".
+      en: >-
+        In a Kol Barama radio interview on 24 July 2025 Eliyahu said "the government
+        is racing ahead for Gaza to be wiped out", that "all Gaza will be Jewish" and
+        that "there's no hunger in Gaza". Prime Minister Netanyahu posted in English
+        that Eliyahu "does not speak for the government I lead" and is not a member
+        of the security cabinet, but took no disciplinary step; Israel's ambassador
+        to the US, Yechiel Leiter, called the quotes "wrong, foolish and totally
+        unrepresentative". Opposition leader Yair Lapid called the remarks a "public
+        relations disaster".
+    date: "2025-07-24"
+    sources:
+      - url: https://www.timesofisrael.com/far-right-minister-says-israel-pushing-to-wipe-out-gaza-will-make-it-jewish/
+        title: Far-right minister says Israel pushing to 'wipe out' Gaza, will make it Jewish
+        publisher: The Times of Israel
+      - url: https://www.jpost.com/israel-news/article-862117
+        title: "'All of Gaza will be Jewish': Heritage minister claims Israel working to resettle Gaza"
+        publisher: The Jerusalem Post
+      - url: https://www.jns.org/israel-news/netanyahu-eliyahus-remarks-on-gaza-being-wiped-out-not-govt-policy
+        title: Netanyahu - Eliyahu's remarks on Gaza being 'wiped out' not gov't policy
+        publisher: JNS
+  - kind: negative
+    category: controversy
+    title:
+      he: שלח הודעת וואטסאפ לשופט העליון יחיאל כשר בעניין עתירה תלויה ועומדת - וננזף
+      en: Sent a WhatsApp message to Justice Yechiel Kasher about a pending petition against his nominee, and was rebuked
+    description:
+      he: >-
+        ב-1 ביוני 2026 חשף השופט יחיאל כשר בהחלטתו כי קיבל הודעת וואטסאפ ממי שהזדהה
+        כשר המורשת, ובה ביקש אליהו שלא לעכב את מינוי אסתי שרייבר למנכ"לית רשות
+        העתיקות, שנגדו עתרו עשרות ארכיאולוגים. השופט כתב כי "פנייה באופן המתואר
+        לעיל אינה הדרך הנאותה להגשת עמדה לבית המשפט ומשכך בכוונתי להתעלם ממנה",
+        ודחה את הבקשה לצו ארעי. לפי הדיווחים, אליהו אישר לאחר נחיתתו מניו יורק כי
+        אכן פנה לשופט.
+      en: >-
+        On 1 June 2026 Justice Yechiel Kasher disclosed in a ruling that he had
+        received a WhatsApp message from someone identifying himself as the heritage
+        minister, in which Eliyahu asked that the appointment of Esther Schreiber as
+        director-general of the Israel Antiquities Authority - challenged in a
+        petition by dozens of archaeologists - not be delayed. The justice wrote
+        that this "is not the proper way to present a position to the court" and
+        that he would disregard it, and declined to issue an interim order. According
+        to the reports, Eliyahu confirmed after landing from New York that he had
+        contacted the justice.
+    date: "2026-06-01"
+    sources:
+      - url: https://www.ynet.co.il/environment-science/article/skxsnr5emg
+        title: '"זו לא הדרך": השר אליהו שלח הודעת וואטסאפ לשופט העליון - וננזף'
+        publisher: Ynet
+      - url: https://news.walla.co.il/item/3842374
+        title: '"זה לא נאות - ועל כן אתעלם": שר המורשת פנה לשופט בוואטסאפ - וננזף'
+        publisher: Walla
+      - url: https://www.haaretz.co.il/news/law/2026-06-01/ty-article/.premium/0000019e-82ba-d0a9-a7df-b3ba442b0000
+        title: השר אליהו ניסה לשכנע את השופט כשר שלא לפסול מינוי שלו
+        publisher: Haaretz
+      - url: https://www.inn.co.il/news/698076
+        title: השופט יחיאל כשר חשף - קיבלתי הודעת וואטסאפ ממי שהזדהה כשר אליהו
+        publisher: Arutz 7
+  - kind: negative
+    category: controversy
+    title:
+      he: פרסומים ממומנים של משרד המורשת בערוץ 14 שקידמו את השר בתקופת הבחירות הוסרו לאחר פניית "הארץ"
+      en: Heritage Ministry sponsored posts on Channel 14 promoting the minister during the election period were removed after a Haaretz inquiry
+    description:
+      he: >-
+        ב-19 באוגוסט 2026 דיווח "הארץ" כי משרד המורשת מימן פרסומים ממומנים באתר ערוץ
+        14 על אתרי ארכיאולוגיה ביהודה ושומרון, שכללו תמונות וציטוטים של השר אליהו,
+        וזאת לאחר 29 ביולי - תחילת 90 הימים שלפני הבחירות שבהם חוק הבחירות אוסר
+        שימוש בנכסי משרדי ממשלה לתעמולה. הפרסומים הוסרו לאחר פניית העיתון ומכתב
+        התרעה של ארגון "עמק שווה". ב-22 באוגוסט דווח כי הארגון פנה ליועצת המשפטית
+        לממשלה בדרישה לבדוק את העניין; לא דווח על תגובה מהמשרד או על החלטה של
+        היועצת.
+      en: >-
+        On 19 August 2026 Haaretz reported that the Heritage Ministry had funded
+        sponsored posts on the Channel 14 website about archaeological sites in the
+        West Bank that included photos and quotes of Minister Eliyahu, published
+        after 29 July - the start of the 90-day pre-election period in which the
+        Elections Law bars the use of government-ministry assets for campaigning.
+        The posts were taken down after the newspaper's inquiry and a warning letter
+        from the NGO Emek Shaveh. On 22 August it was reported that the NGO had asked
+        the Attorney General to examine the matter; no response from the ministry
+        and no decision by the Attorney General have been reported.
+    date: "2026-08-19"
+    sources:
+      - url: https://www.haaretz.co.il/news/elections/2026-08-19/ty-article/.premium/000001a0-1918-dfad-a3a1-bdbfb97b0000
+        title: משרד המורשת קידם את השר עמיחי אליהו בפרסומים ממומנים בערוץ 14
+        publisher: Haaretz
+      - url: https://www.haaretz.com/israel-news/elections/2026-08-19/ty-article/.premium/channel-14-ran-govt-funded-articles-promoting-likud-minister-before-election/000001a0-1a4b-dd2f-a1b6-7bcbd1270000
+        title: Channel 14 Ran Government-funded Articles Promoting Likud Minister Before Election (the article concerns Heritage Minister Eliyahu)
+        publisher: Haaretz (English)
+      - url: https://www.zman.co.il/719372/
+        title: מיליון שקל ציבורי, שתי "חשיפות" פוליטיות - ומנגנון ציות שלא עצר אף אחת מהן
+        publisher: Zman Yisrael
+  - kind: neutral
+    category: news
+    date: "2026-06-26"
+    title:
+      he: ועדת המינויים פסלה את מועמדתו לתפקיד מנכ"לית רשות העתיקות
+      en: Appointments committee disqualified his nominee for director-general of the Antiquities Authority
+    description:
+      he: >-
+        ב-12 במאי 2026 הודיע אליהו על בחירת אסתי שרייבר, מנכ"לית ארגון "הדור הבא"
+        (INEXTG) ללא רקע בארכיאולוגיה, למנכ"לית רשות העתיקות. ב-26 ביוני 2026 פסלה
+        ועדת המינויים בראשות השופטת בדימוס שולמית דותן את המינוי, בקביעה שתנאי הסף
+        במכרז נקבעו נמוך מהנדרש בחוק ושהמועמדת אינה עומדת בדרישת חמש שנות ניסיון
+        ניהולי בכיר. השר איתמר בן גביר, חברו למפלגה, טען כי הסיבה האמיתית היא
+        התנגדות "הדיפ סטייט" למנכ"לית דתייה.
+      en: >-
+        On 12 May 2026 Eliyahu announced the selection of Esther Schreiber, CEO of
+        the INEXTG organization and without an archaeology background, as
+        director-general of the Israel Antiquities Authority. On 26 June 2026 the
+        governmental appointments committee, headed by retired judge Shulamit Dotan,
+        disqualified the appointment, finding that the tender's threshold
+        requirements were set lower than the law requires and that the nominee
+        lacked the mandated five years of senior managerial experience. His party
+        colleague, Minister Itamar Ben Gvir, said the real reason was "deep state"
+        opposition to a religious director-general.
+    sources:
+      - url: https://www.timesofisrael.com/vetting-panel-disqualifies-heritage-ministers-nominee-for-antiquities-authority-chief/
+        title: Vetting panel disqualifies heritage minister's nominee for Antiquities Authority chief
+        publisher: The Times of Israel
+      - url: https://www.ynetnews.com/article/iyk45526v
+        title: Esther Schreiber's appointment as CEO of Israel Antiquities Authority disqualified
+        publisher: Ynetnews
+      - url: https://www.timesofisrael.com/liveblog_entry/heritage-minister-taps-new-antiquities-authority-head-with-no-archaeological-experience/
+        title: Heritage Minister taps new Antiquities Authority head with no archaeological experience
+        publisher: The Times of Israel
+  - kind: neutral
+    category: news
+    date: "2026-09-07"
+    title:
+      he: שובץ במקום הרביעי ברשימת עוצמה יהודית לכנסת ה-26
+      en: Placed fourth on the Otzma Yehudit list for the 26th Knesset
+    description:
+      he: >-
+        ב-7 בספטמבר 2026 פרסמה עוצמה יהודית את רשימתה לבחירות 27 באוקטובר 2026:
+        איתמר בן גביר בראש, טלי גוטליב שנייה, יצחק וסרלאוף שלישי ואליהו במקום
+        הרביעי.
+      en: >-
+        On 7 September 2026 Otzma Yehudit published its list for the 27 October 2026
+        election: Itamar Ben Gvir first, Tali Gotliv second, Yitzhak Wasserlauf third
+        and Eliyahu fourth.
+    sources:
+      - url: https://www.inn.co.il/news/705828
+        title: כך נראית רשימת עוצמה יהודית
+        publisher: Arutz 7
+      - url: https://www.haaretz.co.il/news/elections/2026-09-07/ty-article/.premium/000001a0-7bea-d5e7-a7a0-7bfebd3a0000
+        title: רשימת עוצמה יהודית - דורפמן במקום השביעי, פעיל עם קעקוע "כך" במקום השמיני
+        publisher: Haaretz
+  - kind: neutral
+    category: news
+    date: "2026-09-15"
+    title:
+      he: בפאנל בחירות אמר כי אינו רוצה לגייס "מישהו מקפלן" לקרבי
+      en: At an election panel said he does not want to draft "someone from Kaplan" into combat
+    description:
+      he: >-
+        בפאנל בחירות בבית ספר בתל אביב, ב-15 בספטמבר 2026, אמר אליהו בהקשר של שאלת
+        הגיוס: "אני לא רוצה לגייס מישהו מקפלן, שיתגייס לקרבי, ובסוף הוא לא יקום
+        להסתער", והוסיף כי הוא רוצה "לשנות את מערכת החינוך כדי שאנשים ייתנו את
+        רוחם ואת נפשם".
+      en: >-
+        At an election panel at a Tel Aviv school on 15 September 2026, speaking about
+        the draft, Eliyahu said "I don't want to draft someone from Kaplan, who
+        enlists in a combat unit and in the end won't get up and charge", adding that
+        he wants to "change the education system so that people give their spirit
+        and soul".
+    sources:
+      - url: https://www.ynet.co.il/news/elections2026/article/sk7fbklkgg
+        title: 'השר מעוצמה יהודית: "לא רוצה לגייס מקפלן לקרבי, בסוף הוא לא יקום להסתער"'
+        publisher: Ynet

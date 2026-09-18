@@ -1,19 +1,158 @@
 # Bezalel Smotrich (PersonID 30055). Factual reporting from reputable public
-# sources, cited per claim. Neutral language. REVIEW before launch.
+# sources, cited per claim. Neutral language; legal status marked. Sources
+# re-verified 2026-09-18. REVIEW before launch.
 personId: 30055
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
+    date: "2022-12-29"
     title:
-      he: "שר האוצר ומנהיג מפלגת הציונות הדתית"
-      en: "Minister of Finance and leader of the Religious Zionist party"
+      he: "שר האוצר ושר במשרד הביטחון; מנהיג מפלגת הציונות הדתית"
+      en: "Minister of Finance and minister in the Defense Ministry; leader of the Religious Zionist Party"
     description:
-      he: "עורך דין במקצועו שהנהיג את מפלגת הציונות הדתית, כיהן כשר התחבורה ולאחר מכן כשר האוצר בממשלה שהוקמה ב-2022."
-      en: "A lawyer by profession who led the Religious Zionist party, served as Minister of Transport and subsequently as Minister of Finance in the government formed in 2022."
+      he: "עורך דין במקצועו, סמוטריץ' נכנס לכנסת ב-2015 ועומד בראש מפלגת הציונות הדתית. כיהן כשר התחבורה (2019–2020), ומאז 29 בדצמבר 2022 מכהן כשר האוצר ה-27 של ישראל וכשר במשרד הביטחון האחראי על מנהלת ההתיישבות ביהודה ושומרון, גם בממשלת המעבר."
+      en: "A lawyer by profession, Smotrich entered the Knesset in 2015 and leads the Religious Zionist Party. He served as Minister of Transport (2019–2020) and since 29 December 2022 has been Israel's 27th Minister of Finance and a minister in the Defense Ministry responsible for the Settlement Administration in the West Bank, including in the caretaker government."
     sources:
       - url: "https://en.wikipedia.org/wiki/Bezalel_Smotrich"
         title: "Bezalel Smotrich"
         publisher: "Wikipedia"
-      - url: "https://www.britannica.com/biography/Bezalel-Smotrich"
-        title: "Bezalel Smotrich — Biography"
-        publisher: "Encyclopædia Britannica"
+      - url: "https://he.wikipedia.org/wiki/%D7%91%D7%A6%D7%9C%D7%90%D7%9C_%D7%A1%D7%9E%D7%95%D7%98%D7%A8%D7%99%D7%A5%27"
+        title: "בצלאל סמוטריץ'"
+        publisher: "Wikipedia (Hebrew)"
+      - url: "https://www.timesofisrael.com/ag-gives-smotrich-go-ahead-to-slash-fuel-tax-leading-to-lower-prices-at-pump/"
+        title: "AG gives Smotrich go-ahead to slash fuel tax, leading to lower prices at pump"
+        publisher: "The Times of Israel"
+  - kind: neutral
+    category: role
+    date: "2023-02-07"
+    title:
+      he: "התפטר מהכנסת במסגרת \"החוק הנורווגי\" וממשיך לכהן כשר בלבד"
+      en: "Resigned his Knesset seat under the \"Norwegian Law\" and serves as a minister only"
+    description:
+      he: "ב-7 בפברואר 2023 התפטר סמוטריץ' מחברותו בכנסת במסגרת \"החוק הנורווגי\", ובמקומו הושבע צבי סוכות. מאז הוא מכהן כשר האוצר וכשר במשרד הביטחון מבלי להיות חבר כנסת, ועומד בראש הרשימה של הציונות הדתית לבחירות 2026."
+      en: "On 7 February 2023 Smotrich resigned his Knesset seat under the \"Norwegian Law\", and Zvi Sukkot was sworn in in his place. Since then he has served as Finance Minister and minister in the Defense Ministry without being a member of Knesset, and heads the Religious Zionist list for the 2026 election."
+    sources:
+      - url: "https://www.inn.co.il/news/591709"
+        title: "צבי סוכות הושבע לכנסת"
+        publisher: "Arutz 7 / Israel National News"
+      - url: "https://www.srugim.co.il/761004-%D7%A6%D7%91%D7%99-%D7%A1%D7%95%D7%9B%D7%95%D7%AA-%D7%91%D7%93%D7%A8%D7%9A-%D7%A1%D7%9E%D7%95%D7%98%D7%A8%D7%99%D7%A5-%D7%9E%D7%AA%D7%A4%D7%98%D7%A8-%D7%9E%D7%94%D7%9B%D7%A0%D7%A1%D7%AA"
+        title: "צבי סוכות בדרך: בצלאל סמוטריץ' התפטר מהכנסת"
+        publisher: "Srugim"
+  - kind: negative
+    category: investigation
+    status: acquitted
+    date: "2005-07-14"
+    title:
+      he: "נעצר על ידי השב\"כ ב-2005 במחאה נגד ההתנתקות ושוחרר ללא כתב אישום"
+      en: "Detained by the Shin Bet in 2005 during the disengagement protests and released without charges"
+    description:
+      he: "ביולי 2005 נעצר סמוטריץ' עם ארבעה פעילי ימין נוספים בחשד לקשירת קשר לחסימות כבישים ופגיעה בתשתיות במסגרת המחאה נגד תוכנית ההתנתקות. הוא הוחזק כשלושה שבועות ושוחרר מבלי שהוגש נגדו כתב אישום. ב-2019 טען סגן ראש השב\"כ לשעבר יצחק אילן בכנס פוליטי כי החשד היה חמור יותר; סמוטריץ' הכחיש זאת מכל וכל ואמר כי שחרורו ללא אישום מוכיח את חפותו."
+      en: "In July 2005 Smotrich was detained with four other right-wing activists on suspicion of conspiring to block roads and damage infrastructure as part of the protest against the disengagement plan. He was held for about three weeks and released without any indictment. In 2019 former Shin Bet deputy chief Yitzhak Ilan claimed at a political rally that the suspicion had been graver; Smotrich flatly denied this and said his release without charges vindicated him."
+    sources:
+      - url: "https://www.globes.co.il/news/article.aspx?did=934444"
+        title: "השב\"כ והמשטרה: עצרנו 5 פעילי ימין שתכננו את חסימות הכבישים והצמתים"
+        publisher: "Globes"
+      - url: "https://www.timesofisrael.com/former-shin-bet-deputy-chief-said-to-call-hardline-mk-smotrich-a-terrorist/"
+        title: "Former Shin Bet deputy chief said to call hardline MK Smotrich 'a terrorist'"
+        publisher: "The Times of Israel"
+  - kind: negative
+    category: controversy
+    date: "2023-03-01"
+    title:
+      he: "אמר כי \"המדינה צריכה למחוק את חווארה\" — ולאחר מכן אמר \"כשלתי\" והבהיר את דבריו"
+      en: "Said \"the state should wipe out Huwara\" — later said \"I failed\" and clarified the remark"
+    description:
+      he: "ב-1 במרץ 2023, לאחר פיגוע ירי בחווארה ומהומות של מתנחלים בכפר, אמר סמוטריץ' בכנס דה-מרקר כי \"הכפר חווארה צריך להימחק\" וכי \"מדינת ישראל היא שצריכה למחוק את חווארה\". הדברים גררו גינויים בעולם, ובכללם ממחלקת המדינה האמריקאית. ב-8 במרץ 2023 אמר סמוטריץ' כי \"כשלתי\" באחריותו וכי הוא מזועזע מהמחשבה שדבריו הובנו כקריאה לפגיעה בנפש, והבהיר כי התכוון לפעולה של המדינה נגד טרור ולא לפגיעה באזרחים."
+      en: "On 1 March 2023, after a shooting attack in Huwara and a settler rampage in the village, Smotrich said at a TheMarker conference that \"the village of Huwara needs to be wiped out\" and that \"the State of Israel should do it\". The remarks drew condemnation abroad, including from the US State Department. On 8 March 2023 Smotrich said he had \"failed\" in his responsibility and was shaken that his words could be understood as a call to harm people, clarifying that he meant state action against terror, not harm to civilians."
+    sources:
+      - url: "https://www.ynet.co.il/news/article/62795350"
+        title: "סמוטריץ': \"המדינה צריכה למחוק את חווארה\""
+        publisher: "Ynet"
+      - url: "https://www.mako.co.il/news-politics/2023_q1/Article-9820f3733e2c681027.htm"
+        title: "סמוטריץ': \"למחוק את חווארה? כשלתי, אני נדרש לחשבון נפש\""
+        publisher: "N12 / Mako"
+  - kind: negative
+    category: controversy
+    date: "2025-06-10"
+    title:
+      he: "סנקציות אישיות של בריטניה, קנדה, אוסטרליה, ניו זילנד ונורווגיה; איסורי כניסה במדינות אירופה נוספות"
+      en: "Personal sanctions by the UK, Canada, Australia, New Zealand and Norway; entry bans by additional European states"
+    description:
+      he: "ב-10 ביוני 2025 הודיעו בריטניה, קנדה, אוסטרליה, ניו זילנד ונורווגיה על הקפאת נכסים ואיסור כניסה נגד סמוטריץ' ונגד השר איתמר בן גביר, בטענה שהם \"הסיתו לאלימות קיצונית\" נגד פלסטינים בגדה המערבית. סמוטריץ' כינה את הצעדים \"ספר לבן\" ואמר כי בריטניה החליטה להטיל עליו סנקציות \"כי סיכלתי הקמת מדינה פלסטינית\". ביולי 2025 אסרה הולנד על כניסתו לשטחה ובספטמבר 2025 הודיעה ספרד על איסור דומה."
+      en: "On 10 June 2025 the UK, Canada, Australia, New Zealand and Norway announced asset freezes and travel bans on Smotrich and on Minister Itamar Ben Gvir, saying they had \"incited extremist violence\" against Palestinians in the West Bank. Smotrich likened the measures to a \"White Paper\" and said Britain sanctioned him \"because I've thwarted the establishment of a Palestinian state\". In July 2025 the Netherlands barred him from entering its territory and in September 2025 Spain announced a similar ban."
+    sources:
+      - url: "https://www.timesofisrael.com/uk-and-four-other-nations-sanction-ben-gvir-and-smotrich-over-settler-violence/"
+        title: "UK and four other nations sanction Ben Gvir and Smotrich over settler violence"
+        publisher: "The Times of Israel"
+      - url: "https://www.ynet.co.il/news/article/rkc2bthwge"
+        title: "הולנד אוסרת על כניסת בן גביר וסמוטריץ' לשטחה"
+        publisher: "Ynet"
+      - url: "https://www.ynet.co.il/news/article/rkdcpupqlg"
+        title: "משמעות הצעדים החריפים של ספרד - ואיסור הכניסה החדש לבן גביר וסמוטריץ'"
+        publisher: "Ynet"
+  - kind: negative
+    category: investigation
+    status: ongoing
+    date: "2026-05-19"
+    title:
+      he: "לדבריו, תובע בית הדין הפלילי הבינלאומי ביקש נגדו צו מעצר חסוי; בית הדין סירב להגיב"
+      en: "Says the ICC prosecutor has requested a sealed arrest warrant against him; the court declined to comment"
+    description:
+      he: "ב-19 במאי 2026 אמר סמוטריץ' כי נמסר לו שתובע בית הדין הפלילי הבינלאומי בהאג הגיש בקשה לצו מעצר חסוי נגדו, מבלי לפרט את החשדות. בית הדין סירב להגיב; לפי ה-BBC, הליך בקשת הצווים חסוי וטעון אישור שופטי בית הדין, ולא אושר כי הוצא צו. סמוטריץ' כינה את המהלך \"הכרזת מלחמה\", האשים את הרשות הפלסטינית והורה על פינוי הכפר הבדואי ח'אן אל-אחמר."
+      en: "On 19 May 2026 Smotrich said he had been told that the prosecutor of the International Criminal Court in The Hague had filed a request for a sealed arrest warrant against him, without specifying the accusations. The court declined to comment; according to the BBC the warrant process is confidential and requires approval by ICC judges, and no warrant was confirmed to have been issued. Smotrich called the move \"a declaration of war\", blamed the Palestinian Authority and ordered the evacuation of the Bedouin village of Khan al-Ahmar."
+    sources:
+      - url: "https://www.bbc.com/news/articles/c5y9jq2r907o"
+        title: "Israeli minister Smotrich says ICC prosecutor seeking warrant for his arrest"
+        publisher: "BBC News"
+      - url: "https://www.france24.com/en/middle-east/20260519-israel-far-right-finance-minister-icc-arrest-warrant"
+        title: "Israel far-right finance minister says ICC prosecutor seeks arrest warrant against him"
+        publisher: "France 24"
+  - kind: neutral
+    category: news
+    date: "2026-09-01"
+    title:
+      he: "הציונות הדתית תרוץ בבלוק טכני עם \"זהות\" של משה פייגלין"
+      en: "Religious Zionism to run in a technical bloc with Moshe Feiglin's Zehut"
+    description:
+      he: "ב-1 בספטמבר 2026 הודיעו סמוטריץ' ומשה פייגלין על ריצה משותפת של הציונות הדתית ו\"זהות\" בבלוק טכני לבחירות 27 באוקטובר, כדי שקולות הימין לא יאבדו אם אחת המפלגות לא תעבור את אחוז החסימה. סמוטריץ' אמר כי \"הגיעה שעת האחריות\" וקרא למפלגות ימין נוספות להצטרף; לפי הדיווח, הציונות הדתית נמצאת בסקרים על סף אחוז החסימה."
+      en: "On 1 September 2026 Smotrich and Moshe Feiglin announced that Religious Zionism and Zehut would run together as a technical bloc in the 27 October election, so that right-wing votes are not lost if either party fails to cross the threshold. Smotrich said \"the time for responsibility has come\" and urged other right-wing parties to join; according to the report, Religious Zionism polls on the cusp of the threshold."
+    sources:
+      - url: "https://www.timesofisrael.com/smotrich-feiglin-announce-joint-election-run-urge-other-right-wing-parties-to-join/"
+        title: "Smotrich, Feiglin announce joint election run, urge other right-wing parties to join"
+        publisher: "The Times of Israel"
+      - url: "https://en.wikipedia.org/wiki/Religious_Zionist_Party"
+        title: "Religious Zionist Party"
+        publisher: "Wikipedia"
+  - kind: neutral
+    category: news
+    date: "2026-09-03"
+    title:
+      he: "היועצת המשפטית לממשלה אישרה את הפחתת הבלו על הדלק שיזם"
+      en: "Attorney General cleared his cut to the fuel excise tax"
+    description:
+      he: "ב-3 בספטמבר 2026 דווח כי היועצת המשפטית לממשלה גלי בהרב-מיארה אישרה את הפחתת הבלו על הבנזין שיזם סמוטריץ', שצפויה להוריד את מחיר הליטר מ-8.25 ל-7.75 ש\"ח בעלות של כ-300 מיליון ש\"ח לחודש לקופת המדינה, זאת על רקע זינוק מחירי הדלק בעולם. האישור ניתן חרף ההערכות שהמהלך עלול להיחשב תעמולת בחירות."
+      en: "On 3 September 2026 it was reported that Attorney General Gali Baharav-Miara approved Smotrich's cut to the excise tax on gasoline, expected to lower the price per litre from NIS 8.25 to NIS 7.75 at a cost of about NIS 300 million a month to the treasury, against the backdrop of a global spike in fuel prices. The approval came despite speculation that the step could be deemed improper electioneering."
+    sources:
+      - url: "https://www.timesofisrael.com/ag-gives-smotrich-go-ahead-to-slash-fuel-tax-leading-to-lower-prices-at-pump/"
+        title: "AG gives Smotrich go-ahead to slash fuel tax, leading to lower prices at pump"
+        publisher: "The Times of Israel"
+      - url: "https://www.jpost.com/business-and-innovation/all-news/article-907724"
+        title: "Israel cuts gasoline prices by 50 agorot after Smotrich approves temporary excise relief"
+        publisher: "The Jerusalem Post"
+  - kind: negative
+    category: controversy
+    date: "2026-09-15"
+    title:
+      he: "סרטון בחירות מבוסס בינה מלאכותית המציג את נשיא העליון והיועמ\"שית נגררים מהפגנה; לשכת עורכי הדין דרשה להסירו"
+      en: "AI-generated campaign video showing Chief Justice Isaac Amit and the Attorney General being dragged from a protest; the Bar Association demanded its removal"
+    description:
+      he: "ב-15 בספטמבר 2026 פרסם סמוטריץ' סרטון בחירות של הציונות הדתית שנוצר בבינה מלאכותית ובו נראים אנשי ביטחון מפנים בכוח את נשיא בית המשפט העליון יצחק עמית, השופטת דפנה ברק-ארז והיועצת המשפטית לממשלה גלי בהרב-מיארה מהפגנה. הנשיא יצחק הרצוג אמר כי \"בחירות אינן מלחמת אזרחים\", וראשי אופוזיציה וראש לשכת עורכי הדין גינו את הסרטון. ב-17 בספטמבר דרשה לשכת עורכי הדין להסיר את הסרטון ואיימה בעתירה לוועדת הבחירות המרכזית. בדיווחים לא הובאה תגובה מסמוטריץ' או ממפלגתו."
+      en: "On 15 September 2026 Smotrich released an AI-generated Religious Zionism campaign video depicting security personnel forcibly removing Supreme Court President Isaac Amit, Justice Daphne Barak-Erez and Attorney General Gali Baharav-Miara from a protest. President Isaac Herzog said \"elections are not a civil war\", and opposition leaders and the head of the Israel Bar Association condemned the video. On 17 September the Israel Bar Association demanded the video be taken down and threatened to petition the Central Elections Committee. The reports carried no response from Smotrich or his party."
+    sources:
+      - url: "https://www.timesofisrael.com/smotrich-assailed-for-ai-video-of-high-court-chief-ag-being-dragged-at-protest/"
+        title: "Smotrich assailed for AI video of High Court chief, AG being dragged at protest"
+        publisher: "The Times of Israel"
+      - url: "https://www.jpost.com/israel-election-2026/article-908986"
+        title: "'Dangerous incitement': Bar Association demands Smotrich remove AI video featuring justices, A-G"
+        publisher: "The Jerusalem Post"

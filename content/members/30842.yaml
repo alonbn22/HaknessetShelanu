@@ -1,7 +1,8 @@
-# Hanoch Dov Milwidsky (PersonID 30842). Researched + adversarially verified 2026-07-05.
+# Hanoch Dov Milwidsky (PersonID 30842). Researched + adversarially verified 2026-07-05;
+# sources re-verified and record updated 2026-09-18.
 # Every claim cites >=1 reputable source (enforced by the content schema).
 personId: 30842
-lastReviewed: 2026-07-05
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -30,8 +31,8 @@ claims:
       ar: انتُخب رئيسًا للجنة المالية في الكنيست
       ru: Избран председателем финансовой комиссии Кнессета
     description:
-      he: ב-29 ביולי 2025 אישרה ועדת הכספים של הכנסת ברוב של 10 מול 7 את מינויו של מילביצקי ליושב ראש הוועדה, אחת הוועדות החזקות בכנסת המפקחת על תקציב המדינה, מיסוי ובנקאות. הוא החליף בתפקיד את ח"כ משה גפני, שפרש מהקואליציה, ומועמדותו נתמכה על ידי ראש הממשלה בנימין נתניהו; לפי הדיווחים המינוי הוא זמני ואמור לחזור לגפני אם ישוב לקואליציה.
-      en: On July 29, 2025, the Knesset Finance Committee voted 10-7 to approve Milwidsky as its chairman, heading one of parliament's most powerful panels, which oversees the state budget, taxation and banking. He took over from UTJ MK Moshe Gafni, who had left the coalition, and his candidacy was backed by Prime Minister Benjamin Netanyahu; the appointment was reported to be temporary, to revert to Gafni should he rejoin the coalition.
+      he: ב-29 ביולי 2025 אישרה ועדת הכספים של הכנסת ברוב של 10 מול 7 את מינויו של מילביצקי ליושב ראש הוועדה, אחת הוועדות החזקות בכנסת המפקחת על תקציב המדינה, מיסוי ובנקאות. הוא החליף בתפקיד את ח"כ משה גפני, שפרש מהקואליציה, ומועמדותו נתמכה על ידי ראש הממשלה בנימין נתניהו; לפי הדיווחים המינוי הוא זמני ואמור לחזור לגפני אם ישוב לקואליציה. הוא מכהן בתפקיד גם לאחר פיזור הכנסת ביולי 2026.
+      en: On July 29, 2025, the Knesset Finance Committee voted 10-7 to approve Milwidsky as its chairman, heading one of parliament's most powerful panels, which oversees the state budget, taxation and banking. He took over from UTJ MK Moshe Gafni, who had left the coalition, and his candidacy was backed by Prime Minister Benjamin Netanyahu; the appointment was reported to be temporary, to revert to Gafni should he rejoin the coalition. He continues in the post after the Knesset's dissolution in July 2026.
     sources:
       - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-862601
         title: Netanyahu-picked Milwidsky appointed head of Knesset Finance cmtee despite rape allegations
@@ -47,13 +48,13 @@ claims:
     status: ongoing
     date: 2025-07
     title:
-      he: חקירת משטרה בחשד לאונס, מעשים מגונים והדחת עדה — מכחיש את החשדות
-      en: Police investigation on suspicion of rape, indecent acts and witness tampering — he denies the allegations
-      ar: تحقيق للشرطة للاشتباه بالاغتصاب وأفعال مخلة وتحريض شاهدة على شهادة زور — وهو ينفي الشبهات
-      ru: Полицейское расследование по подозрению в изнасиловании, непристойных действиях и склонении свидетельницы к лжесвидетельству — он отрицает подозрения
+      he: חקירת משטרה בחשד לאונס, מעשים מגונים והדחת עדה — מכחיש את החשדות; דווח כי התיק צפוי להיסגר
+      en: Police investigation on suspicion of rape, indecent acts and witness tampering — he denies the allegations; the case was reported to be heading for closure
+      ar: تحقيق للشرطة للاشتباه بالاغتصاب وأفعال مخلة وتحريض شاهدة على شهادة زور — وهو ينفي الشبهات؛ وأفيد بأن الملف يتجه نحو الإغلاق
+      ru: Полицейское расследование по подозрению в изнасиловании, непристойных действиях и склонении свидетельницы к лжесвидетельству — он отрицает подозрения; сообщалось, что дело будет закрыто
     description:
-      he: ביולי 2025 נחקר מילביצקי באזהרה בלהב 433 בחשד לאונס, מעשים מגונים, הדחת עדה לעדות שקר ושיבוש הליכי משפט, בפרשה הקשורה לתקופתו כיועץ משפטי של עמותת "בני ברוך – קבלה לעם", בטרם נבחר לכנסת. לפי חשדות המשטרה, אישה שלטענת החוקרים שודלה למסור עדות שקר מסרה כי מילביצקי אנס אותה בבית מלון. מילביצקי הכחיש את כל החשדות, טען כי מדובר ב"רדיפה פוליטית" ודרש לסגור את התיק; נכון לאמצע 2026 החקירה הסתיימה אך טרם התקבלה החלטה של הפרקליטות, לא הוגש כתב אישום, המתלוננת אינה משתפת פעולה עם החוקרים ובדיווחים צוינו קשיים ראייתיים בתיק.
-      en: In July 2025, Milwidsky was questioned under caution by the Lahav 433 police unit on suspicion of rape, indecent acts, suborning false testimony and obstruction of justice, in a case relating to his pre-Knesset role as legal adviser to the Bnei Baruch – Kabbalah La'Am association. According to the police suspicions, a woman whom investigators say he coached to give false testimony told them that Milwidsky raped her in a hotel. Milwidsky has denied all the allegations, calling the investigation "political persecution" and demanding the case be closed. As of mid-2026 questioning has concluded but the state prosecution has not announced a decision and no indictment has been filed; the complainant is not cooperating with investigators and reports cite significant evidentiary difficulties in the case.
+      he: ביולי 2025 נחקר מילביצקי באזהרה בלהב 433 בחשד לאונס, מעשים מגונים, הדחת עדה לעדות שקר ושיבוש הליכי משפט, בפרשה הקשורה לתקופתו כיועץ משפטי של עמותת "בני ברוך – קבלה לעם", בטרם נבחר לכנסת. לפי חשדות המשטרה, אישה שלטענת החוקרים שודלה למסור עדות שקר מסרה כי מילביצקי אנס אותה בבית מלון. מילביצקי הכחיש את כל החשדות, טען כי מדובר ב"רדיפה פוליטית" ודרש לסגור את התיק. ב-24 בנובמבר 2025 דווח (לראשונה ב-i24NEWS) כי התיק צפוי להיסגר משום שהמתלוננת, שעדותה היא הראיה המרכזית, עזבה את הארץ ולא אותרה; באו כוחו לא הגיבו לדיווח. נכון לספטמבר 2026 לא פורסמה החלטה רשמית של הפרקליטות ולא הוגש כתב אישום.
+      en: In July 2025, Milwidsky was questioned under caution by the Lahav 433 police unit on suspicion of rape, indecent acts, suborning false testimony and obstruction of justice, in a case relating to his pre-Knesset role as legal adviser to the Bnei Baruch – Kabbalah La'Am association. According to the police suspicions, a woman whom investigators say he coached to give false testimony told them that Milwidsky raped her in a hotel. Milwidsky has denied all the allegations, calling the investigation "political persecution" and demanding the case be closed. On 24 November 2025 it was reported (first by i24NEWS) that the case was expected to be closed because the complainant, whose testimony is the central evidence, had left the country and could not be located; his lawyers did not comment on the report. As of September 2026 no official prosecution decision has been published and no indictment has been filed.
     sources:
       - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-862601
         title: Netanyahu-picked Milwidsky appointed head of Knesset Finance cmtee despite rape allegations
@@ -64,6 +65,12 @@ claims:
       - url: https://www.israelhayom.co.il/news/crime/article/19072743
         title: תיק החשד לאונס נגד ח"כ מילביצקי נתקל בקושי משפטי משמעותי
         publisher: Israel Hayom
+      - url: https://www.kikar.co.il/political-news/milevitzky-investigation-closure
+        title: 'החקירה קרסה: מה גרם לסגירת התיק הפלילי נגד חה"כ מילביצקי?'
+        publisher: Kikar HaShabbat
+      - url: https://www.srugim.co.il/1268282-%D7%91%D7%A2%D7%A7%D7%91%D7%95%D7%AA-%D7%9E%D7%97%D7%93%D7%9C-%D7%A9%D7%9C-%D7%94%D7%99%D7%95%D7%A2%D7%9E%D7%A9%D7%99%D7%AA-%D7%AA%D7%99%D7%A7-%D7%94%D7%90%D7%95%D7%A0%D7%A1-%D7%A0%D7%92%D7%93
+        title: 'בעקבות מחדל של היועמ"שית: תיק האונס נגד ח"כ מילביצקי יסגר'
+        publisher: Srugim
   - kind: negative
     category: controversy
     date: 2023-01-09
@@ -81,4 +88,58 @@ claims:
         publisher: The Times of Israel
       - url: https://www.ynet.co.il/news/article/rkaq9uf9o
         title: 'ח"כ מהליכוד לטיבי: "מעדיף רוצחים יהודים על פני רוצחים ערבים"'
+        publisher: Ynet
+  - kind: negative
+    category: controversy
+    date: "2026-07-05"
+    title:
+      he: 'כינה את היועצת המשפטית לממשלה "אישה ארורה, אישה נוראה" בריאיון רדיו'
+      en: 'Called the Attorney General "a cursed woman, a terrible woman" in a radio interview'
+    description:
+      he: 'בריאיון לרדיו "קול ברמה" ב-5 ביולי 2026, על רקע הודעת רשות המסים לישיבות שתלמידיהן לא הסדירו את מעמדם הצבאי כי לא יוכרו עוד לזיכוי מס על תרומות, אמר מילביצקי כי היועצת המשפטית לממשלה גלי בהרב-מיארה מנהלת "ציד" נגד לומדי תורה כדי להרתיעם מלהצביע, וכינה אותה "אישה ארורה, אישה נוראה" שתיתן את הדין. בדיווחים לא הובאה תגובה מלשכת היועצת המשפטית או הבהרה מצדו.'
+      en: 'In an interview with the Kol Barama radio station on 5 July 2026, against the backdrop of the Tax Authority notifying yeshivas whose students had not regularised their military status that donations to them would no longer qualify for tax credits, Milwidsky said Attorney General Gali Baharav-Miara was conducting a "hunt" against Torah students to deter them from voting, and called her "a cursed woman, a terrible woman" who would be held to account. The reports carried no response from the Attorney General''s office and no clarification from him.'
+    sources:
+      - url: https://www.inn.co.il/news/700652
+        title: 'מתקפה על היועמ"שית: "אישה ארורה"'
+        publisher: Arutz 7 / Israel National News
+      - url: https://www.zman.co.il/live/701002/
+        title: 'חנוך מילביצקי: היועמ"שית אישה ארורה, אישה נוראה'
+        publisher: Zman Yisrael (The Times of Israel, Hebrew)
+      - url: https://www.davar1.co.il/687376/
+        title: 'יו"ר ועדת הכספים במתקפה על היועמ"שית: "זו אישה ארורה"'
+        publisher: Davar
+  - kind: negative
+    category: controversy
+    date: "2026-07-08"
+    title:
+      he: עיכב העברה של 1.1 מיליארד ש"ח לשיקום עוטף עזה כמנוף למענקים לעסקים בצפון — ההעברה אושרה פה אחד לאחר כשבוע
+      en: Held up a NIS 1.1 billion transfer for Gaza-border rehabilitation as leverage for grants to northern businesses — the transfer was approved unanimously about a week later
+    description:
+      he: 'ביולי 2026 דיווחו ynet וכלכליסט כי מילביצקי, כיו"ר ועדת הכספים, מעכב העברה של כ-1.1 מיליארד ש"ח למנהלת תקומה לשיקום יישובי העוטף — ובהם סלי קליטה לתושבים החוזרים ל-13 יישובים שנפגעו — עד שיוקצו כ-500 מיליון ש"ח למענקים לעסקים בצפון, שבועות ספורים לפני הפריימריז בליכוד. תנועת "עתיד לעוטף" אמרה כי "לא ייתכן ששיקום העוטף יהיה ערובה או מנוף תקציבי". ב-13 ביולי אישרה הוועדה את ההעברה פה אחד; מילביצקי אמר כי עיכב את ההעברה "כצעד טקטי" כדי לקבל דוחות ביצוע מהמנהלת, וכי עסקי הצפון סובלים מנזק מתמשך.'
+      en: 'In July 2026 Ynet and Calcalist reported that Milwidsky, as Finance Committee chair, was holding up a transfer of about NIS 1.1 billion to the Tekuma authority for rehabilitating the Gaza-border communities — including absorption packages for residents returning to 13 damaged communities — until about NIS 500 million was allocated for grants to northern businesses, weeks before the Likud primary. The "Future for the Otef" movement said "the Otef''s rehabilitation cannot be collateral or budgetary leverage". On 13 July the committee approved the transfer unanimously; Milwidsky said he had held it up "as a tactical step" to obtain performance reports from the authority, and that northern businesses were suffering ongoing damage.'
+    sources:
+      - url: https://www.ynet.co.il/news/article/ryqeuaoxze
+        title: 'רגע לפני הפריימריז: מילביצקי מעכב כספי שיקום לעוטף - כדי לחלק מענקים בצפון'
+        publisher: Ynet
+      - url: https://www.calcalist.co.il/local_news/article/hy00cmtoqzx
+        title: מילביצקי מעכב יותר ממיליארד שקל לשיקום העוטף - כדי לרשום הישג פוליטי בצפון
+        publisher: Calcalist
+      - url: https://finance.walla.co.il/item/3853113
+        title: 'סוף למשבר בוועדת הכספים: אושרו 1.1 מיליארד שקל לדרום'
+        publisher: Walla
+  - kind: neutral
+    category: news
+    date: "2026-08-17"
+    title:
+      he: הגיע למקום ה-22 בפריימריז הליכוד — מקום שאינו ריאלי ברשימה לכנסת ה-26
+      en: Finished 22nd in the Likud primary — an unrealistic slot on the list for the 26th Knesset
+    description:
+      he: בפריימריז הליכוד ב-17 באוגוסט 2026 הגיע מילביצקי למקום ה-22 בהצבעה הארצית. לפי גלובס ו-ynet, מדובר במקום שאינו ריאלי ברשימת הליכוד לבחירות 27 באוקטובר, לצד שרים וחברי כנסת נוספים שנדחקו מחוץ למקומות הריאליים.
+      en: In the Likud primary on 17 August 2026 Milwidsky finished 22nd in the national vote. According to Globes and Ynet this is an unrealistic slot on the Likud list for the 27 October election, alongside other ministers and MKs pushed out of realistic places.
+    sources:
+      - url: https://www.globes.co.il/news/article.aspx?did=1001552600
+        title: 'ספירת הקולות הסתיימה: כך נראית רשימת הליכוד החדשה'
+        publisher: Globes
+      - url: https://www.ynet.co.il/news/article/sy6ibjzdze
+        title: התוצאות הסופיות בפריימריז הליכוד - והרשימה המסתמנת
         publisher: Ynet

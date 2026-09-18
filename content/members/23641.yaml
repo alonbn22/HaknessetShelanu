@@ -2,6 +2,7 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 23641
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -47,13 +48,40 @@ claims:
       en: Deputy Speaker of the Knesset and Chair of the Interior and Environment
         Committee
     description:
-      he: ביום 28 בפברואר 2022 מונה אשר לסגן יושב ראש הכנסת. בכנסת ה-25 הוא משמש כיושב
-        ראש ועדת הפנים והגנת הסביבה.
+      he: ביום 28 בפברואר 2022 מונה אשר לסגן יושב ראש הכנסת. בכנסת ה-25 כיהן כיושב
+        ראש ועדת הפנים והגנת הסביבה, עד שהודיע ב-15 ביולי 2025 על התפטרותו
+        מראשות הוועדה, במסגרת פרישת יהדות התורה מהקואליציה.
       en: On 28 February 2022, Asher was appointed Deputy Speaker of the Knesset. In
-        the 25th Knesset he serves as chair of the Interior and Environment
-        Committee.
+        the 25th Knesset he chaired the Interior and Environment Committee until
+        he announced on 15 July 2025 that he was resigning the chairmanship, as
+        part of United Torah Judaism's departure from the coalition.
     date: 2022-02-28
     sources:
       - url: https://en.wikipedia.org/wiki/Ya'akov_Asher
         title: Ya'akov Asher
         publisher: Wikipedia
+      - url: https://www.maariv.co.il/breaking-news/article-1214749
+        title: 'ביחד עם יהדות התורה: יו"ר ועדת הפנים, יעקב אשר, הודיע על התפטרותו מהוועדה'
+        publisher: Maariv
+  - kind: neutral
+    category: role
+    date: 2026-09-08
+    title:
+      he: יושב ראש דגל התורה ומוביל רשימת יהדות התורה לכנסת ה-26
+      en: Chairman of Degel HaTorah and head of the United Torah Judaism list for the 26th Knesset
+    description:
+      he: 'ב-5 בספטמבר 2026 החליטה הנהגת דגל התורה להדיח את משה גפני ואורי מקלב מהרשימה לכנסת ולמנות את אשר ליושב ראש הסיעה במקומו של גפני. ברשימת יהדות התורה שהוגשה ב-8 בספטמבר 2026 אשר מוצב במקום הראשון. עם הגשת הרשימה אמר: "אנו יוצאים היום לדרך חדשה בברכת רבותינו, זו שליחות גדולה ואחריות כבדה".'
+      en: 'On 5 September 2026 the Degel HaTorah leadership decided to drop Moshe Gafni and Uri Maklev from the Knesset list and to appoint Asher as faction chairman in Gafni''s place. On the United Torah Judaism list submitted on 8 September 2026, Asher is in first place. On submitting the list he said: "We set out today on a new path with the blessing of our rabbis; this is a great mission and a heavy responsibility".'
+    sources:
+      - url: https://www.haaretz.co.il/news/elections/2026-09-05/ty-article/.premium/000001a0-7317-d542-a3f1-777f27ce0000
+        title: הנהגת דגל התורה הדיחה את גפני ומקלב מהרשימה לכנסת
+        publisher: Haaretz
+      - url: https://www.calcalist.co.il/local_news/article/s126rxcogg
+        title: 'זעזוע בדגל התורה: הרבנים הדיחו את הח"כים גפני ומקלב'
+        publisher: Calcalist
+      - url: https://www.kikar.co.il/political-news/tl2c04
+        title: 'אחרי הפיצול והסערה: יהדות התורה הגישה את הרשימה לכנסת'
+        publisher: Kikar HaShabbat
+      - url: https://www.ynet.co.il/news/elections2026/article/hjfept9uge
+        title: יעקב אשר, המנהיג החדש של יהדות התורה | פרופיל
+        publisher: Ynet

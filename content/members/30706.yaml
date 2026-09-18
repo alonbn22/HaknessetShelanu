@@ -1,7 +1,8 @@
 # PersonID 30706. Auto-researched from reputable public sources and
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# legal status marked. Reviewed 2026-09-18.
 personId: 30706
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -30,18 +31,20 @@ claims:
       he: יושבת ראש הוועדה לזכויות הילד
       en: Chairwoman of the Committee for the Rights of the Child
     description:
-      he: באוגוסט 2025 מונתה שטרית לוועדה המיוחדת לזכויות הילד של הכנסת, והיא מכהנת
-        כיושבת ראש הוועדה. במסגרת תפקידה היא מובילה דיונים בנושאי רווחת ילדים,
-        ובהם פיקוח על מעונות יום, אלימות נוער ובטיחות ילדים.
-      en: In August 2025 Shitrit was appointed to the Knesset's Special Committee for
-        the Rights of the Child, which she chairs. In this role she leads
-        hearings on child welfare issues, including daycare supervision, youth
-        violence, and children's safety.
+      he: ב-4 באוגוסט 2025 נבחרה שטרית ליושבת ראש הוועדה המיוחדת לזכויות הילד של
+        הכנסת (במקום ח"כ אליהו רביבו, על פי הוויקיפדיה העברית), והיא מכהנת בתפקיד
+        זה גם נכון לספטמבר 2026. במסגרת תפקידה היא מובילה דיונים בנושאי רווחת
+        ילדים, ובהם פיקוח על מעונות יום, אלימות נוער ובטיחות ילדים ברשת.
+      en: On 4 August 2025 Shitrit was elected chair of the Knesset's Special
+        Committee for the Rights of the Child (succeeding MK Eliyahu Revivo,
+        according to Hebrew Wikipedia), a post she still holds as of September
+        2026. In this role she leads hearings on child welfare issues, including
+        daycare supervision, youth violence and children's online safety.
     date: 2025-08-04
     sources:
-      - url: https://en.wikipedia.org/wiki/Keti_Shitrit
-        title: Keti Shitrit
-        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%A7%D7%98%D7%99_%D7%A9%D7%98%D7%A8%D7%99%D7%AA
+        title: קטי שטרית
+        publisher: Wikipedia (Hebrew)
       - url: https://www.jpost.com/israel-news/article-871109
         title: Roblox making children more violent, early childhood org. warns at
           Knesset cm'tee
@@ -65,3 +68,31 @@ claims:
       - url: https://en.wikipedia.org/wiki/Keti_Shitrit
         title: Keti Shitrit
         publisher: Wikipedia
+  - kind: neutral
+    category: news
+    date: "2026-08-17"
+    title:
+      he: דורגה במקום ה-24 בפריימריז של הליכוד; לא במקום ריאלי ברשימה הסופית לבחירות 2026
+      en: Ranked 24th in the Likud primary; not in a realistic slot on the final list for the 2026 election
+    description:
+      he: בפריימריז של הליכוד שנערכו ב-17 באוגוסט 2026 (שיעור הצבעה של כ-53%) דורגה
+        שטרית במקום ה-24 ברשימה הארצית; בראש הדירוג אלי כהן, אמיר אוחנה ויריב
+        לוין. ברשימה הסופית בת 35 המועמדים שהגיש הליכוד ב-8 בספטמבר 2026, לאחר
+        שיבוץ המקומות השמורים, שטרית אינה נמנית עם 30 המקומות הראשונים, וג'רוזלם
+        פוסט תיאר אותה כמי שלא הגיעה למקום ריאלי.
+      en: In the Likud primary held on 17 August 2026 (about 53% turnout) Shitrit was
+        ranked 24th on the national list; Eli Cohen, Amir Ohana and Yariv Levin
+        topped the ranking. On the final 35-candidate slate Likud submitted on 8
+        September 2026, after reserved slots were filled, Shitrit is not among
+        the first 30 places, and The Jerusalem Post described her as not having
+        reached a realistic slot.
+    sources:
+      - url: https://www.jpost.com/israel-election-2026/article-905846
+        title: "Netanyahu's new list: Eli Cohen wins top slot in tense Likud primaries"
+        publisher: The Jerusalem Post
+      - url: https://13tv.co.il/item/news/politics/politics/d1hh3-905316292/
+        title: "הסתיימה ספירת הקולות בליכוד: אלי כהן בראש, ברקת במיקום גבולי"
+        publisher: Channel 13 News
+      - url: https://www.timesofisrael.com/liveblog_entry/likud-submits-35-person-knesset-slate-featuring-9-netanyahu-appointees-just-4-women/
+        title: Likud submits 35-person Knesset slate featuring 9 Netanyahu appointees, just 4 women
+        publisher: The Times of Israel

@@ -2,6 +2,7 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 30705
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -64,3 +65,37 @@ claims:
       - url: https://en.wikipedia.org/wiki/Michal_Shir
         title: Michal Shir
         publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    date: 2025-12-17
+    title:
+      he: הצעת חוק למחיקת תוכן פוגעני ברשת ("הזכות להישכח" לקטינים) עברה בקריאה טרומית
+      en: Bill granting minors a "right to be forgotten" online passed its preliminary reading
+    description:
+      he: ב-17 בדצמבר 2025 אישרה מליאת הכנסת בקריאה טרומית הצעת חוק ביוזמת שיר סגמן,
+        שנועדה לאפשר לקטינים לדרוש הסרה מהירה של תוכן פוגעני או משפיל שפורסם
+        עליהם ברשתות החברתיות.
+      en: On 17 December 2025 the Knesset plenum approved in a preliminary reading a
+        bill sponsored by Shir Segman intended to let minors demand the prompt
+        removal of harmful or humiliating content posted about them on social
+        media.
+    sources:
+      - url: https://www.ynet.co.il/digital/technews/article/bjetlmgm11l
+        title: 'פוסט אחד יכול להרוס חיים: הכנסת מקדמת חוק למחיקת שיימינג ברשת'
+        publisher: Ynet
+  - kind: neutral
+    category: news
+    date: 2026-09-04
+    title:
+      he: הודיעה כי לא תתמודד בבחירות 2026
+      en: Announced she will not run in the 2026 election
+    description:
+      he: 'ב-4 בספטמבר 2026 הודיעה שיר סגמן כי הודיעה ליו"ר יש עתיד יאיר לפיד על החלטתה שלא להתמודד בבחירות לכנסת ה-26, ואמרה: "אמשיך לשרת את ישראל ואתכם בדרכים רבות נוספות. אני גאה בכל ההישגים שלי".'
+      en: 'On 4 September 2026 Shir Segman announced that she had informed Yesh Atid chairman Yair Lapid of her decision not to run in the election for the 26th Knesset, saying: "I will continue serving Israel and you in many other ways. I am proud of all my achievements".'
+    sources:
+      - url: https://www.maariv.co.il/news/elections-2026/article-1363066
+        title: 'אחת אחרי השנייה: חברת כנסת נוספת פורשת מ"יש עתיד"'
+        publisher: Maariv
+      - url: https://www.zman.co.il/live/720876/
+        title: חברת סיעת יש עתיד, מיכל שיר, הודיעה שלא תתמודד בבחירות לכנסת
+        publisher: Zman Yisrael

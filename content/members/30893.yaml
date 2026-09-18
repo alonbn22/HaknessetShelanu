@@ -1,7 +1,8 @@
-# PersonID 30893. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30893. Researched from reputable public sources and source-verified
+# (every cited URL re-fetched on the review date). Neutral language; legal
+# status marked. REVIEW before launch.
 personId: 30893
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -9,53 +10,63 @@ claims:
       he: חבר הכנסת הדרוזי היחיד בקואליציה של נתניהו
       en: Only Druze MK in Netanyahu's governing coalition
     description:
-      he: עפיף עבד, פוליטיקאי דרוזי מהליכוד, נכנס לכנסת ה-25 בינואר 2025 במקומו של
-        יואב גלנט שהתפטר. כלי תקשורת מובילים תיארו אותו כחבר הכנסת הדרוזי היחיד
-        בקואליציה הימנית-דתית של ראש הממשלה בנימין נתניהו.
-      en: Afif (Afef) Abed, a Druze politician from Likud, entered the 25th Knesset in
-        January 2025, replacing Yoav Gallant, who had resigned. Leading outlets
-        described him as the only Druze member of Prime Minister Benjamin
-        Netanyahu's right-wing and religious governing coalition.
-    date: 2025-01-05
+      he: >-
+        עפיף עבד, פוליטיקאי דרוזי מהליכוד, נכנס לכנסת ה-25 ב-5 בינואר 2025 במסגרת
+        החוק הנורווגי במקומו של יואב גלנט שהתפטר. כלי תקשורת מובילים תיארו אותו
+        כחבר הכנסת הדרוזי היחיד בקואליציה של ראש הממשלה בנימין נתניהו.
+      en: >-
+        Afif (Afef) Abed, a Druze politician from Likud, entered the 25th Knesset
+        on 5 January 2025 under the Norwegian Law in place of Yoav Gallant, who
+        had resigned. Leading outlets described him as the only Druze member of
+        Prime Minister Benjamin Netanyahu's governing coalition.
+    date: "2025-01-05"
     sources:
       - url: https://www.jns.org/afef-abed-takes-gallants-knesset-seat-becoming-first-druze-coalition-mk/
         title: Afef Abed takes Gallant's Knesset seat, becoming first Druze coalition MK
         publisher: JNS - Jewish News Syndicate
       - url: https://www.jpost.com/breaking-news/article-836345
-        title: Druze Likud member Afif Abed enters Knesset, following Gallant's
-          resignation
+        title: Druze Likud member Afif Abed enters Knesset, following Gallant's resignation
         publisher: The Jerusalem Post
+      - url: https://www.timesofisrael.com/liveblog_entry/abed-afif-becomes-only-druze-mk-in-coalition-as-he-replaces-gallant/
+        title: Afef Abed becomes only Druze MK in coalition as he replaces Gallant
+        publisher: The Times of Israel
   - kind: positive
     category: achievement
     title:
       he: כניסה לכנסת ה-25 כחבר כנסת מטעם הליכוד
       en: Sworn in as a Member of the 25th Knesset for Likud
     description:
-      he: עבד, יליד 1974 ותושב הכפר ירכא בגליל, הושבע כחבר הכנסת בתחילת ינואר 2025
-        לאחר התפטרותו של יואב גלנט, והצהיר אמונים במליאת הכנסת. הוא נכנס לכנסת
-        ה-25 מתוך רשימת הליכוד.
-      en: Abed, born in 1974 and a resident of the Galilee village of Yarka, was sworn
-        in as a Member of the Knesset in early January 2025 following Yoav
-        Gallant's resignation, declaring his allegiance in the Knesset plenum.
-        He took his seat from the Likud list to the 25th Knesset.
-    date: 2025-01-06
+      he: >-
+        עבד, יליד 1974 ותושב הכפר ירכא בגליל, הושבע כחבר הכנסת ב-6 בינואר 2025
+        לאחר התפטרותו של יואב גלנט. בבחירות 2022 הוצב במקום ה-44 ברשימת הליכוד,
+        וממנו נכנס לכנסת ה-25.
+      en: >-
+        Abed, born in 1974 and a resident of the Galilee village of Yarka, was
+        sworn in as a Member of the Knesset on 6 January 2025 following Yoav
+        Gallant's resignation. He had been placed 44th on the Likud list in the
+        2022 election, from which he entered the 25th Knesset.
+    date: "2025-01-06"
     sources:
       - url: https://en.wikipedia.org/wiki/Afif_Abed
         title: Afif Abed
         publisher: Wikipedia
-      - url: https://www.jpost.com/breaking-news/article-836345
-        title: Druze Likud member Afif Abed enters Knesset, following Gallant's
-          resignation
-        publisher: The Jerusalem Post
+      - url: https://www.timesofisrael.com/liveblog_entry/likuds-afef-abed-sworn-in-as-mk-to-replace-replacing-former-defense-minister-gallant/
+        title: Likud's Afef Abed sworn in as MK to replace former defense minister Gallant
+        publisher: The Times of Israel
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30893
+        title: MK Afif Abed — personal details and positions
+        publisher: Knesset (official)
   - kind: positive
     category: achievement
     title:
       he: פעיל ותיק בליכוד וחבר מזכירות המפלגה
       en: Veteran Likud activist and member of the party Secretariat
     description:
-      he: עבד פעיל בליכוד מאז תחילת שנות ה-2000 והוא חבר מזכירות המפלגה. על פי
+      he: >-
+        עבד פעיל בליכוד מאז תחילת שנות ה-2000 והוא חבר מזכירות המפלגה. על פי
         הדיווחים כיהן בעבר כסגן יושב ראש תנועת הנוער של הליכוד.
-      en: Abed has been active in Likud since the early 2000s and is a member of the
+      en: >-
+        Abed has been active in Likud since the early 2000s and is a member of the
         party's Secretariat. He is reported to have previously served as deputy
         chairman of its youth movement.
     sources:
@@ -65,3 +76,85 @@ claims:
       - url: https://www.jns.org/afef-abed-takes-gallants-knesset-seat-becoming-first-druze-coalition-mk/
         title: Afef Abed takes Gallant's Knesset seat, becoming first Druze coalition MK
         publisher: JNS - Jewish News Syndicate
+  - kind: positive
+    category: achievement
+    title:
+      he: חצה לסוריה כדי לסייע בהשבת צעירים דרוזים לישראל
+      en: Crossed into Syria to help bring Israeli Druze youths back
+    description:
+      he: >-
+        ב-16 ביולי 2025, לאחר שאלפי צעירים דרוזים חצו מישראל לסוריה על רקע הלחימה
+        בדרוזים בסוריה, חצו עבד וח"כ חמד עמאר (ישראל ביתנו) את הגבול לשטח סוריה,
+        לפי הדיווחים בליווי כוחות הביטחון, במטרה לשכנע את הצעירים לשוב לישראל.
+        עבד אמר כי הוא "בקשר רציף עם ראש הממשלה" בעניין.
+      en: >-
+        On 16 July 2025, after thousands of young Israeli Druze had crossed from
+        Israel into Syria amid the fighting against Druze in Syria, Abed and MK
+        Hamad Amar (Yisrael Beytenu) crossed the border into Syrian territory,
+        reportedly accompanied by security forces, to persuade the youths to
+        return to Israel. Abed said he was "in continuous contact with the Prime
+        Minister" on the matter.
+    date: "2025-07-16"
+    sources:
+      - url: https://www.ynet.co.il/news/article/s1km8ubige
+        title: "חברי הכנסת שחצו את הגבול עם סוריה: \"מאמצים להשיב את הדרוזים לישראל\""
+        publisher: Ynet
+      - url: https://www.maariv.co.il/news/politics/article-1215380
+        title: חברי הכנסת הדרוזים חמד עמאר ועפיף עבד חצו מישראל לשטח סוריה
+        publisher: Maariv
+  - kind: neutral
+    category: news
+    date: "2026-08-12"
+    title:
+      he: עתירתו נגד בית הדין של הליכוד בעניין התמודדות ח"כים במחוזות נדחתה
+      en: His petition against the Likud tribunal over MKs running in district slots was rejected
+    description:
+      he: >-
+        לקראת הפריימריז בליכוד עתר עבד לבית המשפט המחוזי בתל אביב, בהצטרפות
+        המפלגה, נגד החלטת בית הדין של הליכוד שלא לאפשר לשרים ולחברי כנסת מכהנים
+        להתמודד במשבצות המחוזות. ב-10 באוגוסט 2026 דחה בית המשפט המחוזי את
+        העתירה; עבד אמר כי "ההחלטה מבטלת את קביעת חברי הליכוד, שהם הריבון בתהליך
+        הזה" והודיע על ערעור לעליון. ב-12 באוגוסט 2026, לאחר שהשופטים בבית המשפט
+        העליון אותתו כי לא יתערבו, משך עבד את ערעורו וההחלטה הפכה סופית.
+      en: >-
+        Ahead of the Likud primary, Abed petitioned the Tel Aviv District Court,
+        joined by the party, against the Likud tribunal's decision not to let
+        sitting ministers and MKs compete in the district slots. On 10 August
+        2026 the District Court rejected the petition; Abed said the ruling
+        "overturns the decision of Likud members, who are the sovereign in this
+        process" and announced an appeal to the Supreme Court. On 12 August 2026,
+        after the Supreme Court justices signalled they would not intervene, Abed
+        withdrew his appeal and the decision became final.
+    sources:
+      - url: https://www.ynet.co.il/news/article/rk4y1lwigx
+        title: "מכה לנתניהו: העתירה נדחתה - והח\"כים מהליכוד לא יוכלו להתמודד במחוזות"
+        publisher: Ynet
+      - url: https://www.ynet.co.il/news/article/rjrgesqlgg
+        title: "השופטים אותתו שלא יתערבו, הערעור נמשך: הח\"כים בליכוד לא יתמודדו במחוזות"
+        publisher: Ynet
+      - url: https://www.maariv.co.il/news/politics/article-1355229
+        title: "העליון: תגובות עד 16:30 לבקשת הליכוד להכריע בערעור הח\"כ עפיף עבד"
+        publisher: Maariv
+  - kind: neutral
+    category: news
+    date: "2026-09-08"
+    title:
+      he: לא נכלל במקומות הראשונים ברשימת הליכוד לבחירות 2026
+      en: Not among the top places on the Likud list for the 2026 election
+    description:
+      he: >-
+        עבד התמודד ברשימה הארצית בפריימריז הליכוד ב-17 באוגוסט 2026 (מועמד מספר
+        145 בפתק ההצבעה). ברשימת הליכוד הסופית לבחירות 2026, שפורסמה ב-8
+        בספטמבר 2026, אינו מופיע ב-35 המקומות הראשונים.
+      en: >-
+        Abed ran on the national list in the Likud primary on 17 August 2026
+        (candidate number 145 on the ballot). On Likud's final list for the 2026
+        election, published on 8 September 2026, he does not appear among the
+        first 35 places.
+    sources:
+      - url: https://www.mako.co.il/news-politics/2026_q3/Article-2ddf4a5b99180a1027.htm
+        title: "שעות לדדליין: זו הרשימה הסופית של הליכוד לבחירות 2026"
+        publisher: N12
+      - url: https://he.wikipedia.org/wiki/%D7%94%D7%91%D7%97%D7%99%D7%A8%D7%95%D7%AA_%D7%94%D7%9E%D7%A7%D7%93%D7%99%D7%9E%D7%95%D7%AA_%D7%91%D7%9C%D7%99%D7%9B%D7%95%D7%93_(2026)
+        title: הבחירות המקדימות בליכוד (2026)
+        publisher: Wikipedia (Hebrew)

@@ -126,6 +126,21 @@ socio-economic indices by municipality (data.gov.il) for context.
 
 ## Needs a human before launch
 
+- **Re-run the Knesset sync** (`gh workflow enable "Sync Knesset data"` or a
+  manual sync) — the DB is from 23 Jul 2026 and the member-record research
+  (18–19 Sep 2026) found positions it no longer reflects: Dan Illouz, Ron
+  Katz, Elazar Stern and Yoav Segalovich left the Knesset (Aug–Sep 2026);
+  Haim Katz (4 ministries) and Yariv Levin (3 added ministries) hold more
+  portfolios; Edelstein's committee chair is stale; Yaakov Asher, Idan Roll's
+  successor and Yoav Hasson gained faction/deputy-Speaker roles; Solomon was
+  removed from committees. Each is recorded as a dated `role` item in the
+  member's record with sources, so the pages are right even before the sync.
+- **Ballot letters** for the 2026 lists once the CEC publishes the approved
+  lists (27 Sep 2026) — `content/party-profiles.yaml` still shows 2022 letters
+  labelled as such.
+- Weekly re-review of `content/polls.yaml` and `content/quiz.yaml` until
+  27 Oct 2026 (bump `lastReviewed`; add new polls from the outlets' own
+  articles; the Channel 16 polls stay out unless a written publication appears).
 - Accessibility-coordinator name / email / phone (`a11y.statement.*` placeholders).
 - Corrections email placeholder.
 - `NEXT_PUBLIC_SITE_URL` once a production domain exists (sitemap/OG URLs).

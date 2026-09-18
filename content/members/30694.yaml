@@ -2,6 +2,7 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 30694
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -14,7 +15,7 @@ claims:
       en: Alon Schuster served as Israel's Minister of Agriculture and Rural
         Development from 2020 to 2021, having been appointed to the post in May
         2020 as a member of the Blue and White party.
-    date: 2020-05
+    date: "2020-05-17"
     sources:
       - url: https://en.wikipedia.org/wiki/Alon_Schuster
         title: Alon Schuster
@@ -31,7 +32,7 @@ claims:
       he: שוסטר כיהן כסגן שר הביטחון של ישראל בין השנים 2021 ל-2022.
       en: Schuster served as Israel's Deputy Minister of Defense between 2021 and
         2022.
-    date: 2021-06-28
+    date: "2021-06-28"
     sources:
       - url: https://en.wikipedia.org/wiki/Alon_Schuster
         title: Alon Schuster
@@ -49,7 +50,6 @@ claims:
         כ-16 שנה, בין 2002 ל-2018.
       en: Before entering national politics, Schuster headed the Sha'ar HaNegev
         Regional Council for some 16 years, from 2002 to 2018.
-    date: "2002"
     sources:
       - url: https://en.wikipedia.org/wiki/Alon_Schuster
         title: Alon Schuster
@@ -70,7 +70,6 @@ claims:
         with the rank of lieutenant colonel. He lost the sight in one eye after
         being wounded during preparations for the First Lebanon War in 1981 and
         is recognized as a disabled IDF veteran.
-    date: "1981"
     sources:
       - url: https://en.wikipedia.org/wiki/Alon_Schuster
         title: Alon Schuster
@@ -78,3 +77,51 @@ claims:
       - url: https://www.jns.org/feature/israeli-elections-2026-meet-the-parliament-mk-alon-schuster
         title: "Israeli elections 2026: Meet the parliament—MK Alon Schuster"
         publisher: JNS
+  - kind: positive
+    category: achievement
+    title:
+      he: יושב ראש הוועדה לענייני ביקורת המדינה בכנסת ה-25
+      en: Chairman of the State Control Committee in the 25th Knesset
+    description:
+      he: "שוסטר מכהן כיושב ראש הוועדה לענייני ביקורת המדינה של הכנסת מ-5 בנובמבר 2025, ולפי נתוני הכנסת הוא גם חבר בוועדת הכלכלה, בוועדת הכספים ובוועדה לביטחון לאומי. במסגרת עבודתו הפרלמנטרית עסק בין היתר בחקלאות, בביטחון המזון ובחקיקה למען המשרתים ובני משפחותיהם."
+      en: "Schuster has chaired the Knesset's State Control Committee since 5 November 2025, and according to Knesset records also sits on the Economic Affairs, Finance and National Security committees. His parliamentary work has focused on agriculture, food security and legislation for those serving in the military and their families."
+    date: "2025-11-05"
+    sources:
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030694%20and%20KnessetNum%20eq%2025"
+        title: "Knesset OData: positions of PersonID 30694 in the 25th Knesset"
+        publisher: The Knesset
+      - url: https://news.walla.co.il/item/3866496
+        title: "גנץ לא מוותר: תמנו-שטה במקום השני, שוסטר ומרעי ימשיכו בכחול לבן"
+        publisher: Walla
+  - kind: neutral
+    category: news
+    date: "2026-08-13"
+    title:
+      he: "יצא נגד מסר הקמפיין של כחול לבן: \"קודם להזיז את נתניהו\""
+      en: "Publicly disagreed with Blue and White's campaign message: \"first remove Netanyahu\""
+    description:
+      he: "ב-13 באוגוסט 2026 אמר שוסטר, ממקורביו של יו\"ר כחול לבן בני גנץ, כי המטרה הראשונה צריכה להיות סילוקו של בנימין נתניהו מראשות הממשלה, ורק לאחר מכן הקמת ממשלה יציבה – עמדה השונה ממסר \"ממשלת ההסכמות\" של גנץ, שאינו שולל ישיבה עם נתניהו."
+      en: "On 13 August 2026 Schuster, a close associate of Blue and White leader Benny Gantz, said the first goal should be removing Benjamin Netanyahu from the premiership and only then forming a stable government — a stance differing from Gantz's \"government of agreements\" campaign message, which does not rule out sitting with Netanyahu."
+    sources:
+      - url: https://www.ynet.co.il/news/article/bkatlwiugx
+        title: "הבלגן בכחול לבן, והח\"כ שיצא נגד הקמפיין: \"לא לשבת עם נתניהו. קודם להזיז אותו\""
+        publisher: Ynet
+  - kind: neutral
+    category: news
+    date: "2026-09-08"
+    title:
+      he: ממשיך בכחול לבן ושובץ במקום השישי ברשימתה לכנסת ה-26
+      en: Staying with Blue and White and placed sixth on its list for the 26th Knesset
+    description:
+      he: "ב-8 בספטמבר 2026, ערב סגירת הרשימות, הודיעה כחול לבן כי שוסטר ימשיך במפלגה וישובץ בצמרת רשימתה לבחירות לכנסת ה-26, לצד פנינה תמנו-שטה במקום השני ומופיד מרעי. ברשימה שהוגשה שובץ שוסטר במקום השישי, אחרי גנץ, תמנו-שטה, עליזה בלוך, רועי קונקול ורתם אבידר צאליק."
+      en: "On 8 September 2026, on the eve of the deadline for submitting lists, Blue and White announced that Schuster would remain with the party and be placed in the top tier of its list for the 26th Knesset election, alongside Pnina Tamano-Shata in second place and Mufid Mar'i. On the list as submitted, Schuster is sixth, after Gantz, Tamano-Shata, Aliza Bloch, Roy Konkol and Rotem Avidar Tzalik."
+    sources:
+      - url: https://news.walla.co.il/item/3866496
+        title: "גנץ לא מוותר: תמנו-שטה במקום השני, שוסטר ומרעי ימשיכו בכחול לבן"
+        publisher: Walla
+      - url: https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm
+        title: "כל העדכונים מסגירת הרשימות לכנסת ה-26"
+        publisher: N12
+      - url: https://www.jdn.co.il/news/2726035/
+        title: "38 רשימות, שלושה מועמדים לראשות הממשלה: מפת הבחירות לכנסת ה-26"
+        publisher: JDN

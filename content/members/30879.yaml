@@ -2,6 +2,7 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 30879
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -14,7 +15,7 @@ claims:
       en: Sasson (Sassi) Guetta was sworn in as a member of the 25th Knesset for the
         Likud party on 26 March 2023, entering under the Norwegian Law to
         replace Yoav Kisch, who resigned his Knesset seat.
-    date: 2023-03-26
+    date: "2023-03-26"
     sources:
       - url: https://en.wikipedia.org/wiki/Sasson_Guetta
         title: Sasson Guetta
@@ -22,6 +23,9 @@ claims:
       - url: https://www.wikidata.org/wiki/Q117284084
         title: Sasson Guetta (Q117284084)
         publisher: Wikidata
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030879%20and%20KnessetNum%20eq%2025"
+        title: "Knesset OData: positions of PersonID 30879 in the 25th Knesset"
+        publisher: The Knesset
   - kind: positive
     category: achievement
     title:
@@ -30,12 +34,13 @@ claims:
         agricultural sector
     description:
       he: גואטה, חקלאי ובעל לול לשעבר ממושב גורן ולשעבר חבר הנהלת ארגון מגדלי העופות,
-        מכהן כיושב-ראש ועדת המשנה לתחבורה ציבורית בכנסת ופועל בעיקר למען החקלאות
+        מכהן כיושב-ראש ועדת המשנה לתחבורה ציבורית בכנסת (לפי נתוני הכנסת, מ-10 בדצמבר 2025) וחבר בוועדת הכלכלה, בוועדת הפנים והגנת הסביבה ובוועדת העלייה, הקליטה והתפוצות, ופועל בעיקר למען החקלאות
         והפריפריה.
       en: Guetta, a farmer and former poultry-farm owner from Moshav Goren and a
         former board member of the poultry breeders' association, chairs the
-        Knesset Subcommittee for Public Transportation and is active mainly on
+        Knesset Subcommittee for Public Transportation (per Knesset records, since 10 December 2025) and sits on the Economic Affairs, Interior and Environment, and Immigration and Absorption committees; he is active mainly on
         behalf of agriculture and Israel's periphery.
+    date: "2025-12-10"
     sources:
       - url: https://www.jns.org/feature/israeli-elections-2026-meet-the-parliament-mk-sasson-guetta
         title: "Israeli elections 2026: Meet the parliament—MK Sasson Guetta"
@@ -43,6 +48,9 @@ claims:
       - url: https://he.wikipedia.org/wiki/%D7%A9%D7%A9%D7%95%D7%9F_%D7%92%D7%95%D7%90%D7%98%D7%94
         title: ששון גואטה
         publisher: Hebrew Wikipedia
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030879%20and%20KnessetNum%20eq%2025"
+        title: "Knesset OData: positions of PersonID 30879 in the 25th Knesset"
+        publisher: The Knesset
   - kind: negative
     category: controversy
     status: settled
@@ -50,18 +58,16 @@ claims:
       he: החלטת ועדת האתיקה בנוגע למעורבותו בחקיקה בענף הלול
       en: Knesset Ethics Committee ruling on his role in poultry-sector legislation
     description:
-      he: בפברואר 2025, לאחר פניית התנועה לאיכות השלטון בטענה לניגוד עניינים בקידום
-        חקיקה בענף הלול שממנה הוא עשוי ליהנות (גואטה מחזיק במכסה לייצור של יותר
-        ממיליון ביצים בשנה), קבעה ועדת האתיקה של הכנסת כי אין מדובר בניגוד
-        עניינים אסור, אך החליטה שגואטה לא יצביע על החוק בוועדת הכלכלה.
-      en: In February 2025, following a complaint by the Movement for Quality
-        Government alleging a conflict of interest in his advancing
-        poultry-sector legislation from which he could benefit (Guetta holds a
+      he: בפברואר 2025 דיווח דה-מרקר כי גואטה הצביע בעד תיקון חקיקה בענף הלול שלטענת מגדלי עופות יחזק גורמים גדולים בענף, ובהם בן דודו, וכי הוא מקדם הצעת חוק להארכת היתרי תכנון בענף הביצים עד 2050. בעקבות פניית התנועה לאיכות השלטון בטענה לניגוד עניינים (גואטה מחזיק במכסה לייצור של יותר
+        ממיליון ביצים בשנה), קבעה ועדת האתיקה של הכנסת ב-25 בפברואר 2025 כי אין מדובר בניגוד
+        עניינים אסור, אך החליטה שגואטה לא יצביע על החוק בוועדת הכלכלה. התנועה לאיכות השלטון ביקרה את ההחלטה; תגובה של גואטה לא הובאה בכתבות. אין מדובר בהליך משפטי.
+      en: In February 2025 TheMarker reported that Guetta had voted for a poultry-sector legislative amendment that poultry farmers said would strengthen large players in the sector, among them his cousin, and that he was sponsoring a bill to extend planning permits in the egg sector until 2050. Following a complaint by the Movement for Quality
+        Government alleging a conflict of interest (Guetta holds a
         quota to produce over one million eggs a year), the Knesset Ethics
-        Committee ruled that it did not constitute a prohibited conflict of
+        Committee ruled on 25 February 2025 that this did not constitute a prohibited conflict of
         interest, but decided that Guetta would not vote on the bill in the
-        Economics Committee.
-    date: 2025-02-25
+        Economics Committee. The Movement for Quality Government criticised the decision; no response from Guetta was quoted in the reports. This was not a legal proceeding.
+    date: "2025-02-25"
     sources:
       - url: https://www.themarker.com/news/2025-02-25/ty-article/.premium/00000195-391e-d507-abd7-3f5ff4ff0000
         title: Ethics Committee permitted MK Sasson Guetta to advance poultry-sector
@@ -71,3 +77,22 @@ claims:
         title: MK Sasson Guetta voted for an amendment poultry farmers said would
           strengthen tycoons
         publisher: TheMarker (Haaretz Group)
+  - kind: neutral
+    category: news
+    date: "2026-08-17"
+    title:
+      he: דורג במקום ה-28 בפריימריז הליכוד לקראת בחירות 2026
+      en: Ranked 28th in the Likud primary ahead of the 2026 election
+    description:
+      he: "בפריימריז הליכוד שנערכו ב-17 באוגוסט 2026 דורג גואטה במקום ה-28 בהצבעת חברי המפלגה (לפני שיבוץ המקומות המשוריינים). N12 מנה אותו בין חברי הכנסת המכהנים ש\"נדחקו\" למקומות שאינם נחשבים ריאליים, והוא אינו נכלל ב-35 המקומות הראשונים ברשימת הליכוד הסופית שפורסמה ב-8 בספטמבר 2026."
+      en: "In the Likud primary held on 17 August 2026, Guetta was ranked 28th in the members' vote (before reserved slots were inserted). N12 listed him among the sitting MKs \"pushed\" to places not considered realistic, and he is not among the first 35 places on the final Likud list published on 8 September 2026."
+    sources:
+      - url: https://www.mako.co.il/news-politics/2026_q3/Article-15386d724c310a1026.htm
+        title: "ספירת הקולות הסתיימה: כך נראית רשימת הליכוד החדשה"
+        publisher: N12
+      - url: https://www.mako.co.il/news-politics/2026_q3/Article-2ddf4a5b99180a1027.htm
+        title: "זו הרשימה הסופית של הליכוד לבחירות 2026"
+        publisher: N12
+      - url: https://www.haaretz.co.il/news/elections/2026-08-17/ty-article/.premium/000001a0-10eb-d0aa-abfb-befb92a40000
+        title: "הסתיימה ספירת הקולות בפריימריז: אלי כהן, אמיר אוחנה ויריב לוין בצמרת הליכוד"
+        publisher: Haaretz

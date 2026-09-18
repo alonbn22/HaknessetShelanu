@@ -1,4 +1,8 @@
+# PersonID 30058. Auto-researched from reputable public sources and
+# adversarially source-verified (every cited URL re-fetched). Neutral language;
+# legal status marked. REVIEW before launch.
 personId: 30058
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -6,9 +10,9 @@ claims:
       he: מכהן כשר התרבות והספורט
       en: Serving as Minister of Culture and Sport
     description:
-      he: מיקי זוהר, חבר מפלגת הליכוד, מונה לשר התרבות והספורט בממשלה ה-37 ב-29 בדצמבר 2022. קודם לכן כיהן כחבר הכנסת מטעם הליכוד החל משנת 2015, ובין היתר שימש כסגן יושב ראש הכנסת ויושב ראש הקואליציה.
-      en: Miki Zohar, a member of the Likud party, was appointed Minister of Culture and Sport in Israel's 37th government on 29 December 2022. He previously served as a Likud member of the Knesset from 2015, including roles as Deputy Speaker of the Knesset and coalition whip.
-    date: 2022-12-29
+      he: מיקי זוהר, חבר מפלגת הליכוד, מונה לשר התרבות והספורט בממשלה ה-37 ב-29 בדצמבר 2022, ומכהן בתפקיד גם בממשלת המעבר לאחר פיזור הכנסת ה-25. קודם לכן כיהן כחבר הכנסת מטעם הליכוד החל משנת 2015, ובין היתר שימש כסגן יושב ראש הכנסת ויושב ראש הקואליציה.
+      en: Miki Zohar, a member of the Likud party, was appointed Minister of Culture and Sport in Israel's 37th government on 29 December 2022, and continues in the post in the caretaker government following the dissolution of the 25th Knesset. He previously served as a Likud member of the Knesset from 2015, including roles as Deputy Speaker of the Knesset and coalition whip.
+    date: "2022-12-29"
     sources:
       - url: https://en.wikipedia.org/wiki/Miki_Zohar
         title: Miki Zohar
@@ -21,7 +25,7 @@ claims:
     description:
       he: כחבר כנסת, זוהר היה בין יוזמי החוק שקבע את יום העלייה כחג לאומי בלוח השנה הישראלי. הכנסת אישרה את החוק ב-21 ביוני 2016, וזוהי דוגמה לחקיקה שזכתה לתמיכה חוצת מפלגות מהקואליציה והאופוזיציה.
       en: As a member of the Knesset, Zohar was among the initiators of the law adding Yom HaAliyah (Aliyah Day) as a national holiday to the Israeli calendar. The Knesset approved the law on 21 June 2016, in a cross-party effort supported by both coalition and opposition members.
-    date: 2016-06-21
+    date: "2016-06-21"
     sources:
       - url: https://en.wikipedia.org/wiki/Miki_Zohar
         title: Miki Zohar
@@ -44,18 +48,21 @@ claims:
   - kind: negative
     category: investigation
     status: ongoing
-    date: 2026-04-19
+    date: "2026-05-25"
     title:
       he: נחקר באזהרה בפרשת השחיתות בהסתדרות
       en: Questioned under caution in the Histadrut corruption probe
       ar: استُجوب تحت طائلة المسؤولية في قضية الفساد في الهستدروت
       ru: Допрошен под предупреждением по делу о коррупции в Гистадруте
     description:
-      he: באפריל 2026 נחקר מיקי זוהר באזהרה בלהב 433 בחשד לשוחד, מרמה והפרת אמונים במסגרת פרשת השחיתות בהסתדרות ("יד רוחצת יד"), בקשר לזיקתו לסוכן הביטוח עזרא גבאי. זוהר הכחיש כל קשר לפרשה ואמר כי "אין לי כל קשר לעניין". נכון ליולי 2026 מדובר בחקירה בלבד ולא הוגש כתב אישום; חלה חזקת החפות.
-      en: In April 2026 Miki Zohar was questioned under caution by the Lahav 433 unit on suspicion of bribery, fraud and breach of trust as part of the Histadrut corruption probe ("One Hand Washes the Other"), over his ties to insurance agent Ezra Gabay. Zohar denied any connection, stating he has "no connection whatsoever to the case." As of July 2026 the matter remains at the investigation stage with no indictment filed; the presumption of innocence applies.
-      ar: في أبريل 2026 استُجوب ميكي زوهر تحت طائلة المسؤولية من قبل وحدة لاهف 433 للاشتباه بالرشوة والاحتيال وخيانة الأمانة ضمن قضية الفساد في الهستدروت، على خلفية علاقته بوكيل التأمين عزرا غباي. نفى زوهر أي صلة بالقضية. حتى يوليو 2026 لا تزال القضية في مرحلة التحقيق دون توجيه لائحة اتهام، وتُطبَّق قرينة البراءة.
-      ru: В апреле 2026 года Мики Зохар был допрошен под предупреждением подразделением «Лахав 433» по подозрению во взяточничестве, мошенничестве и злоупотреблении доверием в рамках дела о коррупции в Гистадруте, в связи с его связями со страховым агентом Эзрой Габаем. Зохар отрицает какую-либо причастность. По состоянию на июль 2026 года дело находится на стадии расследования, обвинительное заключение не предъявлено; действует презумпция невиновности.
+      he: ב-19 באפריל 2026 נחקר מיקי זוהר באזהרה בלהב 433, במשך כ-12 שעות, בחשד לשוחד, מרמה והפרת אמונים במסגרת פרשת השחיתות בהסתדרות ("יד רוחצת יד"), בקשר לזיקתו לסוכן הביטוח עזרא גבאי; לפי החשד סייע זוהר לגבאי בגיוס לקוחות בתמורה לסיוע פוליטי בפריימריז בליכוד. זוהר נחקר פעם נוספת ב-25 במאי 2026 (חקירה שלישית). זוהר מכחיש כל קשר לפרשה, ובאמצעות בא כוחו מסר כי "החקירה עוסקת בסוגיות פוליטיות טהורות" שאין להן קשר לעבירה פלילית. נכון לדיווחים האחרונים (מאי 2026) מדובר בחקירה בלבד ולא הוגש כתב אישום; חלה חזקת החפות.
+      en: On 19 April 2026 Miki Zohar was questioned under caution by the Lahav 433 unit, for some 12 hours, on suspicion of bribery, fraud and breach of trust as part of the Histadrut corruption probe ("One Hand Washes the Other"), over his ties to insurance agent Ezra Gabay; the suspicion is that Zohar helped Gabay recruit clients in return for political help in the Likud primaries. Zohar was questioned again on 25 May 2026 (his third questioning). Zohar denies any connection to the affair, and through his lawyer stated that "the investigation concerns purely political matters" unrelated to any criminal offence. As of the latest reports (May 2026) the matter remains at the investigation stage with no indictment filed; the presumption of innocence applies.
+      ar: في 19 أبريل 2026 استُجوب ميكي زوهر تحت طائلة المسؤولية من قبل وحدة لاهف 433 للاشتباه بالرشوة والاحتيال وخيانة الأمانة ضمن قضية الفساد في الهستدروت، على خلفية علاقته بوكيل التأمين عزرا غباي، واستُجوب مجددًا في 25 مايو 2026. ينفي زوهر أي صلة بالقضية. حتى آخر التقارير (مايو 2026) لا تزال القضية في مرحلة التحقيق دون توجيه لائحة اتهام، وتُطبَّق قرينة البراءة.
+      ru: 19 апреля 2026 года Мики Зохар был допрошен под предупреждением подразделением «Лахав 433» по подозрению во взяточничестве, мошенничестве и злоупотреблении доверием в рамках дела о коррупции в Гистадруте, в связи с его связями со страховым агентом Эзрой Габаем; повторный допрос состоялся 25 мая 2026 года. Зохар отрицает какую-либо причастность. По последним сообщениям (май 2026 года) дело находится на стадии расследования, обвинительное заключение не предъявлено; действует презумпция невиновности.
     sources:
+      - url: https://www.haaretz.co.il/news/law/2026-04-19/ty-article/0000019d-a628-d31c-a1df-ae2bd8790000
+        title: "השר מיקי זוהר נחקר בלהב 433 בחשד לשוחד, מרמה והפרת אמונים בפרשת ההסתדרות"
+        publisher: Haaretz
       - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-893529
         title: Miki Zohar questioned by police regarding Histadrut corruption affair
         publisher: The Jerusalem Post
@@ -65,4 +72,25 @@ claims:
       - url: https://www.ynetnews.com/article/u6shg9uzv
         title: Minister Miki Zohar questioned again in Histadrut corruption probe
         publisher: Ynetnews
-lastReviewed: 2026-07-05
+      - url: https://www.themarker.com/news/2026-05-25/ty-article/0000019e-5fa2-dde7-a1df-ffeaf1b70000
+        title: "השר מיקי זוהר נחקר בלהב 433 במסגרת פרשת ההסתדרות"
+        publisher: TheMarker
+  - kind: neutral
+    category: news
+    date: "2026-08-17"
+    title:
+      he: דורג במקום השביעי בפריימריז הליכוד לקראת בחירות 2026
+      en: Ranked seventh in the Likud primary ahead of the 2026 election
+    description:
+      he: בפריימריז הליכוד שנערכו ב-17 באוגוסט 2026 דורג זוהר במקום השביעי בהצבעת חברי המפלגה (לפני שיבוץ המקומות המשוריינים), אחרי אלי כהן, אמיר אוחנה, יריב לוין, מירי רגב, אופיר כץ ויואב קיש. ברשימת הליכוד הסופית לכנסת ה-26, שפורסמה ב-8 בספטמבר 2026 לאחר שיבוץ המשוריינים, הוא במקום ה-12.
+      en: In the Likud primary held on 17 August 2026, Zohar was ranked seventh in the members' vote (before reserved slots were inserted), after Eli Cohen, Amir Ohana, Yariv Levin, Miri Regev, Ofir Katz and Yoav Kisch. On the final Likud list for the 26th Knesset, published on 8 September 2026 after the reserved slots were inserted, he is 12th.
+    sources:
+      - url: https://www.haaretz.co.il/news/elections/2026-08-17/ty-article/.premium/000001a0-10eb-d0aa-abfb-befb92a40000
+        title: "הסתיימה ספירת הקולות בפריימריז: אלי כהן, אמיר אוחנה ויריב לוין בצמרת הליכוד"
+        publisher: Haaretz
+      - url: https://www.mako.co.il/news-politics/2026_q3/Article-15386d724c310a1026.htm
+        title: "ספירת הקולות הסתיימה: כך נראית רשימת הליכוד החדשה"
+        publisher: N12
+      - url: https://www.mako.co.il/news-politics/2026_q3/Article-2ddf4a5b99180a1027.htm
+        title: "זו הרשימה הסופית של הליכוד לבחירות 2026"
+        publisher: N12

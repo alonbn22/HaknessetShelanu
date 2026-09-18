@@ -2,6 +2,7 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 30846
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -16,7 +17,7 @@ claims:
         Gerrer Rebbe — to lead the Agudat Yisrael faction in place of Yaakov
         Litzman, and headed the United Torah Judaism list. He entered the 25th
         Knesset on 15 November 2022.
-    date: 2022-06
+    date: "2022-11-15"
     sources:
       - url: https://en.wikipedia.org/wiki/Yitzhak_Goldknopf
         title: Yitzhak Goldknopf
@@ -31,11 +32,11 @@ claims:
       en: Minister of Construction and Housing (2022-2025)
     description:
       he: גולדקנופ כיהן כשר הבינוי והשיכון בממשלה ה-37 בראשות בנימין נתניהו, מ-29
-        בדצמבר 2022 ועד התפטרותו ב-12 ביוני 2025.
+        בדצמבר 2022 ועד התפטרותו, עליה הודיע ב-12 ביוני 2025 על רקע אי-קידום חקיקת חוק הגיוס; לפי נתוני הכנסת כהונתו כשר הסתיימה ב-15 ביוני 2025, ובאותו יום שב לכהן כחבר כנסת. במקביל כיהן כשר במשרד ראש הממשלה עד 26 במרץ 2025.
       en: Goldknopf served as Minister of Construction and Housing in Israel's 37th
         government under Benjamin Netanyahu, from 29 December 2022 until his
-        resignation on 12 June 2025.
-    date: 2022-12-29
+        resignation, announced on 12 June 2025 over the lack of progress on draft-exemption legislation; Knesset records date the end of his ministerial term to 15 June 2025, the day he returned to serve as an MK. He concurrently served as a minister in the Prime Minister's Office until 26 March 2025.
+    date: "2022-12-29"
     sources:
       - url: https://en.wikipedia.org/wiki/Yitzhak_Goldknopf
         title: Yitzhak Goldknopf
@@ -43,6 +44,9 @@ claims:
       - url: https://www.jpost.com/israel-news/article-857497
         title: Ultra-Orthodox minister Yitzhak Goldknopf resigns over IDF draft laws
         publisher: The Jerusalem Post
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030846%20and%20KnessetNum%20eq%2025"
+        title: "Knesset OData: positions of PersonID 30846 in the 25th Knesset"
+        publisher: The Knesset
   - kind: positive
     category: achievement
     title:
@@ -58,3 +62,16 @@ claims:
       - url: https://en.wikipedia.org/wiki/Yitzhak_Goldknopf
         title: Yitzhak Goldknopf
         publisher: Wikipedia
+  - kind: neutral
+    category: news
+    date: "2026-09-09"
+    title:
+      he: שובץ במקום השני ברשימת יהדות התורה לכנסת ה-26
+      en: Placed second on the United Torah Judaism list for the 26th Knesset
+    description:
+      he: "ברשימת יהדות התורה לבחירות לכנסת ה-26, שהוגשה בספטמבר 2026, שובץ גולדקנופ, יו\"ר אגודת ישראל, במקום השני אחרי ח\"כ יעקב אשר מדגל התורה, שהוצב בראש הרשימה; אחריהם שובצו יצחק פינדרוס, מאיר פרוש ומשה רוזנטל."
+      en: "On the United Torah Judaism list for the 26th Knesset election, submitted in September 2026, Goldknopf, chairman of Agudat Yisrael, was placed second after MK Yaakov Asher of Degel HaTorah, who heads the list; they are followed by Yitzhak Pindrus, Meir Porush and Moshe Rosenthal."
+    sources:
+      - url: https://www.jdn.co.il/news/2726035/
+        title: "38 רשימות, שלושה מועמדים לראשות הממשלה: מפת הבחירות לכנסת ה-26"
+        publisher: JDN

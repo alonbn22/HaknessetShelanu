@@ -2,6 +2,7 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 30711
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -16,7 +17,6 @@ claims:
         Dr. Assaf Malakh, an educational institution aimed at training public
         leaders on the basis of Zionist Jewish thought, and headed it for about
         13 years before entering the Knesset.
-    date: "2007"
     sources:
       - url: https://en.wikipedia.org/wiki/Amit_Halevi
         title: Amit Halevi
@@ -33,12 +33,12 @@ claims:
     description:
       he: הלוי מכהן כחבר הכנסת מטעם מפלגת הליכוד; כיהן לראשונה בכנסת ה-23 (2020-2021)
         ושב לכנסת ב-17 בינואר 2023 בכנסת ה-25. הוא כיהן כחבר ועדת החוץ והביטחון
-        של הכנסת.
+        של הכנסת, ולפי נתוני הכנסת הוא חבר בוועדת החוקה, חוק ומשפט ובוועדת הבריאות וממלא מקום חבר בוועדת החוץ והביטחון.
       en: Halevi serves as a member of the Knesset for the Likud party; he first
         served in the 23rd Knesset (2020-2021) and returned to the Knesset on 17
         January 2023 in the 25th Knesset. He served as a member of the Foreign
-        Affairs and Defense Committee.
-    date: 2023-01-17
+        Affairs and Defense Committee, and according to Knesset records sits on the Constitution, Law and Justice Committee and the Health Committee and is a substitute member of the Foreign Affairs and Defense Committee.
+    date: "2023-01-17"
     sources:
       - url: https://en.wikipedia.org/wiki/Amit_Halevi
         title: Amit Halevi
@@ -46,6 +46,9 @@ claims:
       - url: https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%AA_%D7%94%D7%9C%D7%95%D7%99
         title: עמית הלוי
         publisher: Hebrew Wikipedia
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030711%20and%20KnessetNum%20eq%2025"
+        title: "Knesset OData: positions of PersonID 30711 in the 25th Knesset"
+        publisher: The Knesset
   - kind: positive
     category: achievement
     title:
@@ -72,15 +75,15 @@ claims:
     description:
       he: במאי 2025 הודח עמית הלוי על ידי הנהגת הקואליציה מוועדת החוץ והביטחון לאחר
         שהצביע נגד הארכת צווי קריאה לשירות מילואים הקשורים להרחבת הלחימה ברצועת
-        עזה, והוחלף בוועדה על ידי יו"ר הקואליציה ח"כ אופיר כץ. מדובר בצעד
+        עזה, והוחלף בוועדה על ידי יו"ר הקואליציה ח"כ אופיר כץ. לפי נתוני הכנסת חברותו בוועדה הסתיימה ב-19 במאי 2025, וביוני 2025 שב אליה כממלא מקום חבר. מדובר בצעד
         פרלמנטרי-פוליטי פנים-קואליציוני ולא בהליך משפטי.
       en: In May 2025, Amit Halevi was removed by the coalition leadership from the
         Foreign Affairs and Defense Committee after he voted against extending
         emergency reservist call-up orders related to the expansion of fighting
         in the Gaza Strip, and was replaced on the committee by coalition
-        chairman MK Ofir Katz. This was an internal parliamentary-political
+        chairman MK Ofir Katz. Knesset records show his committee membership ended on 19 May 2025, and in June 2025 he rejoined it as a substitute member. This was an internal parliamentary-political
         action and not a legal proceeding.
-    date: 2025-05-19
+    date: "2025-05-19"
     sources:
       - url: https://www.ynetnews.com/article/ibqeo01ia
         title: MK Amit Halevi removed from Foreign Affairs and Defense Committee after
@@ -89,3 +92,25 @@ claims:
       - url: https://en.wikipedia.org/wiki/Amit_Halevi
         title: Amit Halevi
         publisher: English Wikipedia
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030711%20and%20KnessetNum%20eq%2025"
+        title: "Knesset OData: positions of PersonID 30711 in the 25th Knesset"
+        publisher: The Knesset
+  - kind: neutral
+    category: news
+    date: "2026-08-17"
+    title:
+      he: דורג במקום ה-19 בפריימריז הליכוד לקראת בחירות 2026
+      en: Ranked 19th in the Likud primary ahead of the 2026 election
+    description:
+      he: "בפריימריז הליכוד שנערכו ב-17 באוגוסט 2026 דורג הלוי במקום ה-19 בהצבעת חברי המפלגה (לפני שיבוץ המקומות המשוריינים). N12 מנה אותו בין חברי הכנסת המכהנים ש\"נדחקו\" למקומות שאינם נחשבים ריאליים ברשימה. ברשימת הליכוד הסופית, שפורסמה ב-8 בספטמבר 2026 לאחר שיבוץ המשוריינים, הוא במקום ה-33."
+      en: "In the Likud primary held on 17 August 2026, Halevi was ranked 19th in the members' vote (before reserved slots were inserted). N12 listed him among the sitting MKs \"pushed\" to places on the list not considered realistic. On the final Likud list, published on 8 September 2026 after the reserved slots were inserted, he is 33rd."
+    sources:
+      - url: https://www.mako.co.il/news-politics/2026_q3/Article-15386d724c310a1026.htm
+        title: "ספירת הקולות הסתיימה: כך נראית רשימת הליכוד החדשה"
+        publisher: N12
+      - url: https://www.haaretz.co.il/news/elections/2026-08-17/ty-article/.premium/000001a0-10eb-d0aa-abfb-befb92a40000
+        title: "הסתיימה ספירת הקולות בפריימריז: אלי כהן, אמיר אוחנה ויריב לוין בצמרת הליכוד"
+        publisher: Haaretz
+      - url: https://www.mako.co.il/news-politics/2026_q3/Article-2ddf4a5b99180a1027.htm
+        title: "זו הרשימה הסופית של הליכוד לבחירות 2026"
+        publisher: N12

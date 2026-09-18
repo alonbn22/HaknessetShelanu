@@ -2,6 +2,7 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 23591
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -27,10 +28,10 @@ claims:
       he: שר המודיעין (2021–2022)
       en: Minister of Intelligence (2021–2022)
     description:
-      he: שטרן, חבר סיעת יש עתיד, כיהן כשר המודיעין בין השנים 2021 ל-2022.
+      he: שטרן, חבר סיעת יש עתיד, כיהן כשר המודיעין בממשלה ה-36 מ-13 ביוני 2021 ועד 29 בדצמבר 2022.
       en: A member of the Yesh Atid faction, Stern served as Minister of Intelligence
-        between 2021 and 2022.
-    date: 2021-06
+        in the 36th government from 13 June 2021 until 29 December 2022.
+    date: "2021-06-13"
     sources:
       - url: https://en.wikipedia.org/wiki/Elazar_Stern
         title: Elazar Stern
@@ -57,3 +58,71 @@ claims:
       - url: https://en.wikipedia.org/wiki/Elazar_Stern
         title: Elazar Stern
         publisher: Wikipedia
+  - kind: negative
+    category: controversy
+    status: settled
+    date: "2021-10-12"
+    title:
+      he: "פרש ממרוץ ליו\"ר הסוכנות היהודית לאחר דבריו על גריסת תלונות אנונימיות בצה\"ל"
+      en: "Withdrew from the Jewish Agency chairmanship race after remarks about shredding anonymous complaints in the IDF"
+    description:
+      he: "באוקטובר 2021, בעודו המועמד המועדף של ראש הממשלה בנט ושר החוץ לפיד לראשות הסוכנות היהודית, אמר שטרן בריאיון רדיו כי בתקופתו כראש אגף כוח האדם \"גרס תלונות אנונימיות רבות\"; הדברים עוררו סערה ציבורית לאחר שהובנו כמתייחסים גם לתלונות על הטרדה מינית. שטרן הבהיר כי אף תלונה שגרס לא עסקה בפגיעה מינית, התנצל בפני מי שנפגע מדבריו, וב-12 באוקטובר 2021 הודיע על פרישתו מהמועמדות, תוך שהוא מציין כי פעל \"בידיים נקיות\". הוא נותר בתפקידו כשר וכחבר כנסת."
+      en: "In October 2021, while the preferred candidate of Prime Minister Bennett and Foreign Minister Lapid to chair the Jewish Agency, Stern said in a radio interview that as head of the Manpower Directorate he had \"shredded many anonymous complaints\"; the remark drew a public outcry after it was understood to include sexual-harassment complaints. Stern clarified that none of the complaints he had shredded concerned sexual misconduct, apologised to anyone hurt by his words, and on 12 October 2021 announced he was withdrawing his candidacy, saying he had acted \"with clean hands\". He remained a minister and a member of the Knesset."
+    sources:
+      - url: https://www.jpost.com/breaking-news/elazar-stern-withdraws-candidacy-for-head-of-jewish-agency-681759
+        title: Elazar Stern withdraws candidacy for head of Jewish Agency
+        publisher: The Jerusalem Post
+      - url: https://www.ynetnews.com/article/syrdlmxrt
+        title: Elazar Stern pulls out of race for head of Jewish Agency
+        publisher: Ynetnews
+  - kind: neutral
+    category: news
+    date: "2026-08-14"
+    title:
+      he: הודיע על עזיבת יש עתיד ועל התפטרות מהכנסת
+      en: Announced he is leaving Yesh Atid and resigning from the Knesset
+    description:
+      he: "ב-14 באוגוסט 2026 הודיע שטרן כי הוא עוזב את מפלגת יש עתיד, שבה חבר מאז ינואר 2015, ומתפטר מהכנסת. בראיונות שקדמו להודעה רמז על כוונתו להצטרף למפלגתו של הרמטכ\"ל לשעבר גדי איזנקוט."
+      en: "On 14 August 2026 Stern announced that he was leaving Yesh Atid, the party he had belonged to since January 2015, and resigning from the Knesset. In interviews preceding the announcement he had hinted at joining the party of former IDF chief of staff Gadi Eisenkot."
+    sources:
+      - url: https://www.haaretz.co.il/news/elections/2026-08-14/ty-article/.premium/0000019f-ffaf-d75f-a3bf-ffff73860000
+        title: "ח\"כ אלעזר שטרן עוזב את יש עתיד ומתפטר מהכנסת"
+        publisher: Haaretz
+      - url: https://www.inn.co.il/news/703981
+        title: "בדרך לאיזנקוט? אלעזר שטרן עוזב את יש עתיד ומתפטר מהכנסת"
+        publisher: Arutz 7 (Israel National News)
+  - kind: neutral
+    category: news
+    date: "2026-08-24"
+    title:
+      he: "הצטרף למפלגת 'ישר' בראשות גדי איזנקוט"
+      en: "Joined Gadi Eisenkot's 'Yashar' party"
+    description:
+      he: "ב-24 באוגוסט 2026, עשרה ימים לאחר פרישתו מיש עתיד, הודיע שטרן על הצטרפותו למפלגת 'ישר' בראשות גדי איזנקוט לקראת הבחירות לכנסת ה-26. שטרן אמר כי \"ישראל זקוקה להנהגה אמינה, ממלכתית ומנוסה\"; מקומו ברשימה לא פורסם."
+      en: "On 24 August 2026, ten days after leaving Yesh Atid, Stern announced he was joining Gadi Eisenkot's 'Yashar' party ahead of the election to the 26th Knesset. Stern said that \"Israel needs trustworthy, statesmanlike and experienced leadership\"; his place on the list was not announced."
+    sources:
+      - url: https://www.haaretz.co.il/news/elections/2026-08-24/ty-article/.premium/000001a0-3285-ddec-a7a5-36f7e9120000
+        title: "אחרי שפרש מיש עתיד, אלעזר שטרן מצטרף למפלגה של איזנקוט"
+        publisher: Haaretz
+      - url: https://www.ynet.co.il/news/article/hke00hpyvmg
+        title: "אחרי שעזב את יש עתיד: אלעזר שטרן מצטרף לגדי איזנקוט"
+        publisher: Ynet
+      - url: https://www.mako.co.il/news-politics/2026_q3/Article-bf71dc7779230a1026.htm
+        title: "אחרי שעזב את יש עתיד: אלעזר שטרן מצטרף לאיזנקוט"
+        publisher: N12
+  - kind: neutral
+    category: role
+    date: "2026-09-09"
+    title:
+      he: התפטר מהכנסת ה-25; כהונתו הסתיימה ב-9 בספטמבר 2026
+      en: Resigned from the 25th Knesset; his term ended on 9 September 2026
+    description:
+      he: "שטרן הגיש את מכתב התפטרותו מהכנסת ליו\"ר הכנסת אמיר אוחנה בתחילת ספטמבר 2026, במכתב שבו מתח ביקורת חריפה על תפקודו של היו\"ר. לפי נתוני הכנסת, כהונתו כחבר כנסת וחברותו בוועדת החוץ והביטחון ובוועדות המשנה שלה הסתיימו ב-9 בספטמבר 2026; הוא אינו מכהן עוד כחבר כנסת."
+      en: "Stern submitted his letter of resignation from the Knesset to Speaker Amir Ohana in early September 2026, in a letter sharply critical of the Speaker's conduct. According to Knesset records, his term as an MK and his membership of the Foreign Affairs and Defense Committee and its subcommittees ended on 9 September 2026; he no longer serves in the Knesset."
+    sources:
+      - url: https://www.ynet.co.il/news/elections2026/article/rjcqwyhdge
+        title: "התפטר מהכנסת וכתב לאוחנה בבוטות: \"הפכת את כיסא היו\"ר להסתה, פילוג ושיסוי\""
+        publisher: Ynet
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2023591%20and%20KnessetNum%20eq%2025"
+        title: "Knesset OData: positions of PersonID 23591 in the 25th Knesset"
+        publisher: The Knesset

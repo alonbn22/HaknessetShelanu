@@ -1,77 +1,83 @@
-# PersonID 30843. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30843 (Yasir Hujeirat). Researched from reputable public sources;
+# every cited URL re-verified on 2026-09-18. Neutral language.
 personId: 30843
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: חבר הכנסת ה-25 מטעם רע"מ (הרשימה הערבית המאוחדת)
-      en: Member of the 25th Knesset for Ra'am (United Arab List)
+      he: "חבר הכנסת ה-25 מטעם רע\"ם (הרשימה הערבית המאוחדת)"
+      en: "Member of the 25th Knesset for Ra'am (United Arab List)"
     description:
-      he: יאסר חוג'יראת נבחר לכנסת ה-25 בבחירות נובמבר 2022 מטעם הרשימה הערבית המאוחדת
-        (רע"מ), במקום החמישי ברשימת המפלגה.
-      en: Yasir Hujeirat was elected to the 25th Knesset in the November 2022 election
-        on behalf of the United Arab List (Ra'am), where he was placed fifth on
-        the party's list.
-    date: 2022-11-15
+      he: "יאסר חוג'יראת נבחר לכנסת ה-25 בבחירות נובמבר 2022 מטעם הרשימה הערבית המאוחדת (רע\"ם), במקום החמישי ברשימת המפלגה."
+      en: "Yasir Hujeirat was elected to the 25th Knesset in the November 2022 election on behalf of the United Arab List (Ra'am), where he was placed fifth on the party's list."
+    date: "2022-11-15"
     sources:
-      - url: https://en.wikipedia.org/wiki/Yasir_Hujeirat
-        title: Yasir Hujeirat
-        publisher: Wikipedia
-      - url: https://he.wikipedia.org/wiki/%D7%99%D7%90%D7%A1%D7%A8_%D7%97%D7%95%D7%92'%D7%99%D7%A8%D7%90%D7%AA
-        title: יאסר חוג'יראת
-        publisher: Wikipedia (Hebrew)
+      - url: "https://en.wikipedia.org/wiki/Yasir_Hujeirat"
+        title: "Yasir Hujeirat"
+        publisher: "Wikipedia"
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30843"
+        title: "Yasir Hujeirat - Knesset member page"
+        publisher: "Knesset"
+  - kind: neutral
+    category: role
+    date: "2025-01-21"
+    title:
+      he: "יושב ראש ועדת המדע והטכנולוגיה של הכנסת"
+      en: "Chair of the Knesset Science and Technology Committee"
+    description:
+      he: "בינואר 2025 אישרה ועדת הכנסת את מינויו של חוג'יראת ליושב ראש ועדת המדע והטכנולוגיה, בהחליפו את ח\"כ איימן עודה, והוא מכהן בתפקיד עד תום כהונת הכנסת ה-25."
+      en: "In January 2025 the Knesset House Committee approved Hujeirat's appointment as chair of the Science and Technology Committee, taking over from MK Ayman Odeh; he holds the post through the end of the 25th Knesset."
+    sources:
+      - url: "https://www.jpost.com/israel-news/article-838360"
+        title: "Knesset approves reshuffling of committee chairman roles"
+        publisher: "The Jerusalem Post"
+      - url: "https://he.wikipedia.org/wiki/%D7%99%D7%90%D7%A1%D7%A8_%D7%97%D7%95%D7%92'%D7%99%D7%A8%D7%90%D7%AA"
+        title: "יאסר חוג'יראת"
+        publisher: "Wikipedia (Hebrew)"
   - kind: positive
     category: achievement
     title:
-      he: יושב ראש ועדת המדע והטכנולוגיה של הכנסת
-      en: Chair of the Knesset Science and Technology Committee
+      he: "דוקטור לגנטיקה וחוקר בתחום גנטיקת הסרטן"
+      en: "Doctor of genetics and cancer-genetics researcher"
     description:
-      he: בינואר 2025 אישרה ועדת הכנסת את מינויו של חוג'יראת ליושב ראש ועדת המדע
-        והטכנולוגיה, בהחליפו את ח"כ איימן עודה.
-      en: In January 2025 the Knesset House Committee approved Hujeirat's appointment
-        as chair of the Science and Technology Committee, taking over from MK
-        Ayman Odeh.
-    date: 2025-01-20
+      he: "לחוג'יראת תואר דוקטור בגנטיקה מהאוניברסיטה העברית בירושלים, ובתר-דוקטורט בגנטיקה של הסרטן מהטכניון וממכון המחקר הבריטי לחקר הסרטן. הוא הקים מעבדה לגנטיקה מולקולרית במרכז הרפואי העמק ולימד בטכניון ובמוסדות נוספים."
+      en: "Hujeirat holds a doctorate in genetics from the Hebrew University of Jerusalem and a post-doctorate in cancer genetics from the Technion and Cancer Research UK. He established a molecular genetics laboratory at Emek Medical Center and lectured at the Technion and other institutions."
     sources:
-      - url: https://www.jpost.com/israel-news/article-838360
-        title: Knesset approves reshuffling of committee chairman roles
-        publisher: The Jerusalem Post
-      - url: https://he.wikipedia.org/wiki/%D7%99%D7%90%D7%A1%D7%A8_%D7%97%D7%95%D7%92'%D7%99%D7%A8%D7%90%D7%AA
-        title: יאסר חוג'יראת
-        publisher: Wikipedia (Hebrew)
+      - url: "https://he.wikipedia.org/wiki/%D7%99%D7%90%D7%A1%D7%A8_%D7%97%D7%95%D7%92'%D7%99%D7%A8%D7%90%D7%AA"
+        title: "יאסר חוג'יראת"
+        publisher: "Wikipedia (Hebrew)"
+      - url: "https://en.wikipedia.org/wiki/Yasir_Hujeirat"
+        title: "Yasir Hujeirat"
+        publisher: "Wikipedia"
   - kind: positive
     category: achievement
     title:
-      he: דוקטור לגנטיקה וחוקר בתחום גנטיקת הסרטן
-      en: Doctor of genetics and cancer-genetics researcher
+      he: "ראש המועצה המקומית ביר אל-מכסור (2008–2013)"
+      en: "Head of the Bir al-Maksur local council (2008–2013)"
     description:
-      he: לחוג'יראת תואר דוקטור בגנטיקה מהאוניברסיטה העברית בירושלים, ובתר-דוקטורט
-        בגנטיקה של הסרטן מהטכניון וממכון המחקר הבריטי לחקר הסרטן. הוא הקים מעבדה
-        לגנטיקה מולקולרית במרכז הרפואי העמק ולימד בטכניון ובמוסדות נוספים.
-      en: Hujeirat holds a doctorate in genetics from the Hebrew University of
-        Jerusalem and a post-doctorate in cancer genetics from the Technion and
-        Cancer Research UK. He established a molecular genetics laboratory at
-        Emek Medical Center and lectured at the Technion and other institutions.
+      he: "לפני כניסתו לכנסת כיהן חוג'יראת כראש המועצה המקומית ביר אל-מכסור בצפון הארץ בין השנים 2008 ל-2013."
+      en: "Before entering the Knesset, Hujeirat served as head of the Bir al-Maksur local council in northern Israel from 2008 to 2013."
     sources:
-      - url: https://he.wikipedia.org/wiki/%D7%99%D7%90%D7%A1%D7%A8_%D7%97%D7%95%D7%92'%D7%99%D7%A8%D7%90%D7%AA
-        title: יאסר חוג'יראת
-        publisher: Wikipedia (Hebrew)
-      - url: https://en.wikipedia.org/wiki/Yasir_Hujeirat
-        title: Yasir Hujeirat
-        publisher: Wikipedia
-  - kind: positive
-    category: achievement
+      - url: "https://he.wikipedia.org/wiki/%D7%99%D7%90%D7%A1%D7%A8_%D7%97%D7%95%D7%92'%D7%99%D7%A8%D7%90%D7%AA"
+        title: "יאסר חוג'יראת"
+        publisher: "Wikipedia (Hebrew)"
+      - url: "https://en.wikipedia.org/wiki/Yasir_Hujeirat"
+        title: "Yasir Hujeirat"
+        publisher: "Wikipedia"
+  - kind: neutral
+    category: news
+    date: "2026-09-09"
     title:
-      he: ראש המועצה המקומית ביר אל-מכסור (2008–2013)
-      en: Head of the Bir al-Maksur local council (2008–2013)
+      he: "שובץ במקום השישי ברשימת רע\"ם לבחירות 2026"
+      en: "Placed sixth on the Ra'am list for the 2026 election"
     description:
-      he: לפני כניסתו לכנסת כיהן חוג'יראת כראש המועצה המקומית ביר אל-מכסור בצפון הארץ
-        בין השנים 2008 ל-2013.
-      en: Before entering the Knesset, Hujeirat served as head of the Bir al-Maksur
-        local council in northern Israel from 2008 to 2013.
+      he: "ברשימת רע\"ם - הרשימה הערבית המאוחדת שהוגשה לוועדת הבחירות המרכזית לקראת הבחירות לכנסת ה-26 ב-27 באוקטובר 2026 שובץ חוג'יראת במקום השישי, אחרי מנסור עבאס, יואב סגלוביץ, וליד טאהא, וליד אלהואשלה ואימאן ח'טיב יאסין."
+      en: "On the Ra'am - United Arab List submitted to the Central Elections Committee for the 27 October 2026 election to the 26th Knesset, Hujeirat was placed sixth, after Mansour Abbas, Yoav Segalovitz, Walid Taha, Walid al-Hawashla and Iman Khatib-Yassin."
     sources:
-      - url: https://he.wikipedia.org/wiki/%D7%99%D7%90%D7%A1%D7%A8_%D7%97%D7%95%D7%92'%D7%99%D7%A8%D7%90%D7%AA
-        title: יאסר חוג'יראת
-        publisher: Wikipedia (Hebrew)
+      - url: "https://www.knesset.tv/main-articles/61384/94592/"
+        title: "מסכמים הגשת רשימות: כל המפלגות והמועמדים בבחירות לכנסת ה-26"
+        publisher: "Knesset Channel"
+      - url: "https://he.wikipedia.org/wiki/%D7%94%D7%91%D7%97%D7%99%D7%A8%D7%95%D7%AA_%D7%9C%D7%9B%D7%A0%D7%A1%D7%AA_%D7%94%D7%A2%D7%A9%D7%A8%D7%99%D7%9D_%D7%95%D7%A9%D7%A9"
+        title: "הבחירות לכנסת העשרים ושש"
+        publisher: "Wikipedia (Hebrew)"

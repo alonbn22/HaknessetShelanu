@@ -1,6 +1,7 @@
-# Merav Michaeli (PersonID 23565). Factual reporting from reputable public sources,
-# cited per claim. Neutral language. REVIEW before launch.
+# PersonID 23565 (Merav Michaeli). Researched from reputable public sources;
+# every cited URL re-verified on 2026-09-18. Neutral language.
 personId: 23565
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -8,12 +9,51 @@ claims:
       he: "הנהיגה את מפלגת העבודה וכיהנה כשרת התחבורה"
       en: "Led the Labor party and served as Minister of Transport"
     description:
-      he: "עיתונאית ופעילה לזכויות נשים שנבחרה לראשות מפלגת העבודה ב-2021 וכיהנה כשרת התחבורה והבטיחות בדרכים."
-      en: "A journalist and women's-rights advocate who was elected leader of the Labor party in 2021 and served as Minister of Transport and Road Safety."
+      he: "עיתונאית ופעילה לזכויות נשים, חברת הכנסת מאז 2013. נבחרה לראשות מפלגת העבודה ב-24 בינואר 2021 והובילה אותה עד 28 במאי 2024, וכיהנה כשרת התחבורה והבטיחות בדרכים בממשלת בנט-לפיד מ-13 ביוני 2021 עד 29 בדצמבר 2022."
+      en: "A journalist and women's-rights advocate, a member of the Knesset since 2013. She was elected leader of the Labor party on 24 January 2021 and led it until 28 May 2024, and served as Minister of Transport and Road Safety in the Bennett-Lapid government from 13 June 2021 to 29 December 2022."
+    date: "2021-06-13"
     sources:
       - url: "https://en.wikipedia.org/wiki/Merav_Michaeli"
         title: "Merav Michaeli"
         publisher: "Wikipedia"
-      - url: "https://www.timesofisrael.com/topic/merav-michaeli/"
-        title: "Merav Michaeli — topic coverage"
-        publisher: "The Times of Israel"
+      - url: "https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%91_%D7%9E%D7%99%D7%9B%D7%90%D7%9C%D7%99"
+        title: "מרב מיכאלי"
+        publisher: "Wikipedia (Hebrew)"
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/23565"
+        title: "Merav Michaeli - Knesset member page"
+        publisher: "Knesset"
+  - kind: neutral
+    category: role
+    date: "2024-12-22"
+    title:
+      he: "יושבת ראש ועדת המשנה למוכנות ולביטחון שוטף של ועדת החוץ והביטחון"
+      en: "Chair of the Foreign Affairs and Defense Committee's Subcommittee for Preparedness and Routine Security"
+    description:
+      he: "מיכאלי, חברת סיעת העבודה באופוזיציה, עומדת בראש ועדת המשנה למוכנות ולביטחון שוטף של ועדת החוץ והביטחון, שהחלה לפעול רשמית ב-22 בדצמבר 2024. הוועדה עוסקת בפיקוח על מוכנות כוחות הביטחון ועל ניהול הביטחון השוטף."
+      en: "Michaeli, a member of the opposition Labor faction, chairs the Foreign Affairs and Defense Committee's Subcommittee for Preparedness and Routine Security, which formally began operating on 22 December 2024. The subcommittee oversees the readiness of the security forces and the management of routine security."
+    sources:
+      - url: "https://www.srugim.co.il/1072242-%D7%9E%D7%A8%D7%91-%D7%9E%D7%99%D7%9B%D7%90%D7%9C%D7%99-%D7%9E%D7%95%D7%A0%D7%AA%D7%94-%D7%9C%D7%A8%D7%90%D7%A9%D7%95%D7%AA-%D7%94%D7%95%D7%95%D7%A2%D7%93%D7%94-%D7%94%D7%90%D7%AA%D7%92%D7%A8%D7%99"
+        title: "מרב מיכאלי מונתה לראשות הוועדה: האתגרים גדולים"
+        publisher: "Srugim"
+      - url: "https://he.wikipedia.org/wiki/%D7%9E%D7%A8%D7%91_%D7%9E%D7%99%D7%9B%D7%90%D7%9C%D7%99"
+        title: "מרב מיכאלי"
+        publisher: "Wikipedia (Hebrew)"
+  - kind: neutral
+    category: news
+    date: "2023-12-07"
+    title:
+      he: "הודיעה על פרישה מהחיים הפוליטיים בתום כהונת הכנסת ה-25"
+      en: "Announced she will leave politics at the end of the 25th Knesset"
+    description:
+      he: "ב-7 בדצמבר 2023 הודיעה מיכאלי, אז יו\"ר מפלגת העבודה, כי לא תתמודד בפריימריז לראשות המפלגה ולא תתמודד על מקום ברשימה לכנסת הבאה, וכי תסיים את חייה הפוליטיים בתום כהונתה בכנסת ה-25. בהתאם לכך היא אינה מתמודדת בבחירות 27 באוקטובר 2026."
+      en: "On 7 December 2023 Michaeli, then chair of the Labor party, announced that she would not run in the party leadership primary nor for a place on the list for the next Knesset, and that she would retire from political life at the end of her term in the 25th Knesset. Accordingly she is not a candidate in the 27 October 2026 election."
+    sources:
+      - url: "https://www.haaretz.co.il/news/politi/2023-12-07/ty-article/0000018c-4394-d89c-a3ef-4fb7a9ec0000"
+        title: "מרב מיכאלי פורשת מהחיים הפוליטיים, והודיעה על פריימריז לראשות העבודה"
+        publisher: "Haaretz"
+      - url: "https://www.mako.co.il/news-politics/2023_q4/Article-fa986b8f3834c81027.htm"
+        title: "מיכאלי פורשת: לא תתמודד על ראשות מפלגת העבודה"
+        publisher: "N12"
+      - url: "https://www.jns.org/israel-news/israeli-labor-party-leader-michaeli-to-quit-politics"
+        title: "Israeli Labor Party leader Michaeli to quit politics"
+        publisher: "JNS"

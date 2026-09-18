@@ -1,66 +1,69 @@
-# PersonID 30820. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30820 (Simon Davidson). Researched from reputable public sources;
+# every cited URL re-verified on 2026-09-18. Neutral language.
 personId: 30820
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: חבר הכנסת מטעם יש עתיד
-      en: Member of Knesset for Yesh Atid
+      he: "חבר הכנסת מטעם יש עתיד"
+      en: "Member of Knesset for Yesh Atid"
     description:
-      he: סימון דוידסון הושבע לכנסת ה-24 ב-9 ביולי 2021 מטעם סיעת יש עתיד, כמחליף לאחר
-        התפטרותו של עידן רול במסגרת החוק הנורווגי עם מינויו לסגן שר החוץ. הוא
-        נבחר שוב לכנסת ה-25 ומכהן כחבר כנסת מאז.
-      en: Simon Davidson was sworn into the 24th Knesset on 9 July 2021 as a member of
-        the Yesh Atid faction, replacing Idan Roll, who resigned his seat under
-        the Norwegian Law upon his appointment as Deputy Foreign Minister. He
-        was re-elected to the 25th Knesset and has served since.
-    date: 2021-07-09
+      he: "סימון דוידסון הושבע לכנסת ה-24 ב-9 ביולי 2021 מטעם סיעת יש עתיד, כמחליף לאחר התפטרותו של עידן רול במסגרת החוק הנורווגי עם מינויו לסגן שר החוץ. הוא נבחר שוב לכנסת ה-25 ומכהן כחבר כנסת מאז."
+      en: "Simon Davidson was sworn into the 24th Knesset on 9 July 2021 as a member of the Yesh Atid faction, replacing Idan Roll, who resigned his seat under the Norwegian Law upon his appointment as Deputy Foreign Minister. He was re-elected to the 25th Knesset and has served since."
+    date: "2021-07-09"
     sources:
-      - url: https://en.wikipedia.org/wiki/Simon_Davidson
-        title: Simon Davidson
-        publisher: Wikipedia
-      - url: https://he.wikipedia.org/wiki/%D7%A1%D7%99%D7%9E%D7%95%D7%9F_%D7%93%D7%95%D7%99%D7%93%D7%A1%D7%95%D7%9F
-        title: סימון דוידסון
-        publisher: Wikipedia (Hebrew)
+      - url: "https://en.wikipedia.org/wiki/Simon_Davidson"
+        title: "Simon Davidson"
+        publisher: "Wikipedia"
+      - url: "https://he.wikipedia.org/wiki/%D7%A1%D7%99%D7%9E%D7%95%D7%9F_%D7%93%D7%95%D7%99%D7%93%D7%A1%D7%95%D7%9F"
+        title: "סימון דוידסון"
+        publisher: "Wikipedia (Hebrew)"
   - kind: positive
     category: achievement
     title:
-      he: יושב ראש איגוד השחייה וחבר הוועד האולימפי
-      en: Chairman of the Israel Swimming Association and Olympic Committee member
+      he: "יושב ראש איגוד השחייה וחבר הוועד האולימפי"
+      en: "Chairman of the Israel Swimming Association and Olympic Committee member"
     description:
-      he: לפני כניסתו לפוליטיקה עסק דוידסון בחינוך גופני ובשחייה כמורה ומאמן. ביוני
-        2016 נבחר ליושב ראש איגוד השחייה בישראל, ומספטמבר אותה שנה החל לכהן כחבר
-        בהנהלת הוועד האולימפי בישראל.
-      en: Before entering politics, Davidson worked in physical education and swimming
-        as a teacher and coach. In June 2016 he was elected chairman of the
-        Israel Swimming Association, and from September that year he began
-        serving as a member of the board of the Olympic Committee of Israel.
-    date: 2016-06-01
+      he: "לפני כניסתו לפוליטיקה עסק דוידסון בחינוך גופני ובשחייה כמורה ומאמן. ביוני 2016 נבחר ליושב ראש איגוד השחייה בישראל, ומספטמבר אותה שנה החל לכהן כחבר בהנהלת הוועד האולימפי בישראל."
+      en: "Before entering politics, Davidson worked in physical education and swimming as a teacher and coach. In June 2016 he was elected chairman of the Israel Swimming Association, and from September that year he began serving as a member of the board of the Olympic Committee of Israel."
+    date: "2016-06-01"
     sources:
-      - url: https://en.wikipedia.org/wiki/Simon_Davidson
-        title: Simon Davidson
-        publisher: Wikipedia
-      - url: https://he.wikipedia.org/wiki/%D7%A1%D7%99%D7%9E%D7%95%D7%9F_%D7%93%D7%95%D7%99%D7%93%D7%A1%D7%95%D7%9F
-        title: סימון דוידסון
-        publisher: Wikipedia (Hebrew)
-  - kind: positive
-    category: achievement
+      - url: "https://en.wikipedia.org/wiki/Simon_Davidson"
+        title: "Simon Davidson"
+        publisher: "Wikipedia"
+      - url: "https://he.wikipedia.org/wiki/%D7%A1%D7%99%D7%9E%D7%95%D7%9F_%D7%93%D7%95%D7%99%D7%93%D7%A1%D7%95%D7%9F"
+        title: "סימון דוידסון"
+        publisher: "Wikipedia (Hebrew)"
+  - kind: neutral
+    category: role
+    date: "2025-03-05"
     title:
-      he: סגן יושב ראש הכנסת
-      en: Deputy Speaker of the Knesset
+      he: "סגן יושב ראש הכנסת ויושב ראש ועדת המשנה לספורט"
+      en: "Deputy Speaker of the Knesset and chair of the subcommittee on sports"
     description:
-      he: ב-5 במרץ 2025 החל סימון דוידסון לכהן כסגן יושב ראש הכנסת בכנסת ה-25. הוא
-        מכהן גם כיושב ראש ועדת המשנה לספורט.
-      en: On 5 March 2025, Simon Davidson began serving as a Deputy Speaker of the
-        Knesset in the 25th Knesset. He also serves as head of the subcommittee
-        on sports.
-    date: 2025-03-05
+      he: "ב-5 במרץ 2025 החל סימון דוידסון לכהן כסגן יושב ראש הכנסת בכנסת ה-25, תפקיד שבו הוא מחזיק עד תום כהונתה. הוא מכהן גם כיושב ראש ועדת המשנה לספורט הישראלי."
+      en: "On 5 March 2025 Simon Davidson began serving as a Deputy Speaker of the 25th Knesset, a post he holds through the end of its term. He also chairs the subcommittee on Israeli sports."
     sources:
-      - url: https://he.wikipedia.org/wiki/%D7%A1%D7%99%D7%9E%D7%95%D7%9F_%D7%93%D7%95%D7%99%D7%93%D7%A1%D7%95%D7%9F
-        title: סימון דוידסון
-        publisher: Wikipedia (Hebrew)
-      - url: https://main.knesset.gov.il/mk/pages/mkpersonaldetails.aspx?mkid=1085
-        title: חבר הכנסת סימון דוידסון
-        publisher: Knesset (official, main.knesset.gov.il)
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30820"
+        title: "Simon Davidson - Knesset member page"
+        publisher: "Knesset"
+      - url: "https://he.wikipedia.org/wiki/%D7%A1%D7%99%D7%9E%D7%95%D7%9F_%D7%93%D7%95%D7%99%D7%93%D7%A1%D7%95%D7%9F"
+        title: "סימון דוידסון"
+        publisher: "Wikipedia (Hebrew)"
+  - kind: neutral
+    category: news
+    date: "2026-09-09"
+    title:
+      he: "שובץ במקום ה-27 ברשימת 'ביחד' המשותפת של בנט ולפיד"
+      en: "Placed 27th on the joint Bennett-Lapid 'Yachad' list"
+    description:
+      he: "לקראת הבחירות לכנסת ה-26 התמודדה יש עתיד ברשימה משותפת עם מפלגתו של נפתלי בנט בשם 'ביחד', שרשימתה פורסמה ב-6 בספטמבר 2026 והוגשה לוועדת הבחירות המרכזית. דוידסון שובץ בה במקום ה-27."
+      en: "For the election to the 26th Knesset, Yesh Atid ran on a joint list with Naftali Bennett's party under the name 'Yachad', whose slate was published on 6 September 2026 and submitted to the Central Elections Committee. Davidson was placed 27th on it."
+    sources:
+      - url: "https://www.knesset.tv/main-articles/61384/94592/"
+        title: "מסכמים הגשת רשימות: כל המפלגות והמועמדים בבחירות לכנסת ה-26"
+        publisher: "Knesset Channel"
+      - url: "https://www.ynet.co.il/news/elections2026/article/sjxwn0500mg"
+        title: "3 מנכ\"ליות אחריו, 5 נשים בעשירייה: בנט פרסם את רשימת 'ביחד' לכנסת"
+        publisher: "Ynet"

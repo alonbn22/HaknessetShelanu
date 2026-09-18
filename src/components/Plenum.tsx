@@ -1,15 +1,23 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useCallback, useEffect, useId, useMemo, useRef, useState, type KeyboardEvent, type MouseEvent } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { MemberAvatar } from "@/components/MemberAvatar";
 
 // The Knesset hall, live. One seat per sitting member, laid out in concentric
 // rows: opposition on the left of the aisle, coalition on the right — the
 // orientation of every election-night broadcast, so it is NOT mirrored in RTL.
 // Both blocs are the same blue; the aisle carries the split. Hovering or
 // focusing a faction in the legend lights its seats in that faction's colour.
-// Seats named in `hollow` render empty: the members who miss the most votes.
+// Seats named in `hollow` render empty: the members who miss the most votes —
+// the legend says so, and each empty seat's card says so too.
+//
+// Hovering, focusing or tapping a seat opens a small card: photo, name,
+// faction, current role, vote participation, and where the figures come from.
+// Keyboard: one seat is in the tab order; the arrow keys walk the hall and
+// Enter follows the link (120 tab stops would bury the page). Touch: a first
+// tap opens the card, a second tap on the same seat follows the link.
 
 export type PlenumSeat = {
   id: number;
@@ -17,6 +25,12 @@ export type PlenumSeat = {
   nameRtl: boolean;
   factionId: number;
   href: string;
+  photoUrl: string | null;
+  firstNameHe: string;
+  lastNameHe: string;
+  /** Localized current roles ("Minister · Ministry of Finance"), most prominent first. */
+  roles: string[];
+  participationPct: number | null;
 };
 
 export type PlenumFaction = {
@@ -85,14 +99,24 @@ export function Plenum({
   seats,
   factions,
   hollow = [],
+  asOf,
 }: {
   seats: PlenumSeat[];
   factions: PlenumFaction[];
   hollow?: number[];
+  /** Localized "as of" date/time of the figures, for the card's source line. */
+  asOf?: string | null;
 }) {
   const t = useTranslations();
   const [active, setActive] = useState<number | null>(null);
   const hollowSet = useMemo(() => new Set(hollow), [hollow]);
+  const popoverId = useId();
+  const containerRef = useRef<HTMLDivElement>(null);
+  // The open card: which seat, and where to draw it (px, relative to the container).
+  const [card, setCard] = useState<{ seatId: number; x: number; y: number; below: boolean; boxWidth: number; rtl: boolean } | null>(null);
+  // The one seat in the tab order (roving tabindex), by index into the sequence.
+  const [focusIdx, setFocusIdx] = useState(0);
+  const touched = useRef<number | null>(null); // last seat opened by a tap
 
   // Opposition first (smallest faction at the far edge, largest at the aisle),
   // then coalition (largest at the aisle). Members follow their faction's wedge.
@@ -151,33 +175,105 @@ export function Plenum({
   const oppositionSeats = placed.items.length - coalitionSeats;
   const pad = placed.seatR + 2;
 
-  // Pointer targets, not tab stops: 120 links would bury the page for keyboard
-  // users, who reach members through the legend and the lists beneath.
-  const renderSeat = (seat: PlenumSeat, x: number, y: number, r: number, hollowStroke: number) => {
+  const sequence = placed.items.map((i) => i.seat);
+  const seatById = useMemo(() => new Map(seats.map((s) => [s.id, s])), [seats]);
+  const factionById = useMemo(() => new Map(factions.map((f) => [f.id, f])), [factions]);
+
+  // Open the card for a seat, placed just above its circle (below it when the
+  // seat sits near the top edge), clamped inside the hall's box.
+  const openCard = useCallback((seatId: number, el: Element) => {
+    const box = containerRef.current?.getBoundingClientRect();
+    const dot = el.getBoundingClientRect();
+    if (!box) return;
+    const x = dot.left + dot.width / 2 - box.left;
+    const y = dot.top - box.top;
+    const rtl = containerRef.current ? getComputedStyle(containerRef.current).direction === "rtl" : false;
+    setCard({ seatId, x, y, below: y < 120, boxWidth: box.width, rtl });
+  }, []);
+  const closeCard = useCallback(() => setCard(null), []);
+  useEffect(() => {
+    if (!card) return;
+    const onKey = (e: globalThis.KeyboardEvent) => {
+      if (e.key === "Escape") setCard(null);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [card]);
+
+  // Arrow keys walk the seats in hall order; Home/End jump to the ends.
+  const onSeatKeyDown = (e: KeyboardEvent<Element>, idx: number) => {
+    const n = sequence.length;
+    let next: number | null = null;
+    if (e.key === "ArrowRight" || e.key === "ArrowDown") next = (idx + 1) % n;
+    else if (e.key === "ArrowLeft" || e.key === "ArrowUp") next = (idx - 1 + n) % n;
+    else if (e.key === "Home") next = 0;
+    else if (e.key === "End") next = n - 1;
+    if (next == null) return;
+    e.preventDefault();
+    setFocusIdx(next);
+    const target = containerRef.current?.querySelector<SVGAElement>(`[data-seat-index="${next}"]`);
+    target?.focus();
+  };
+  // Touch: the first tap opens the card instead of navigating.
+  const onSeatClick = (e: MouseEvent<Element>, seatId: number) => {
+    const coarse = typeof window !== "undefined" && window.matchMedia?.("(hover: none)").matches;
+    if (!coarse) return;
+    if (touched.current !== seatId) {
+      e.preventDefault();
+      touched.current = seatId;
+      openCard(seatId, e.currentTarget);
+    }
+  };
+
+  const renderSeat = (seat: PlenumSeat, x: number, y: number, r: number, hollowStroke: number, idx: number) => {
     const lit = active === seat.factionId;
     const dimmed = active != null && !lit;
     const empty = hollowSet.has(seat.id);
+    const open = card?.seatId === seat.id;
     return (
-      <a key={seat.id} href={seat.href} tabIndex={-1} className="plenum-seat">
-        <title>{seat.name}</title>
+      <a
+        key={seat.id}
+        href={seat.href}
+        tabIndex={idx === focusIdx ? 0 : -1}
+        data-seat-index={idx}
+        className="plenum-seat focus:outline-none"
+        aria-label={seat.name}
+        aria-describedby={open ? popoverId : undefined}
+        onMouseEnter={(e) => openCard(seat.id, e.currentTarget)}
+        onMouseLeave={closeCard}
+        onFocus={(e) => {
+          setFocusIdx(idx);
+          openCard(seat.id, e.currentTarget);
+        }}
+        onBlur={closeCard}
+        onKeyDown={(e) => onSeatKeyDown(e, idx)}
+        onClick={(e) => onSeatClick(e, seat.id)}
+      >
         <circle
           cx={x}
           cy={y}
-          r={r}
-          fill={empty ? "none" : lit ? colorById.get(seat.factionId) : "var(--coalition)"}
-          stroke={lit ? colorById.get(seat.factionId) : "var(--coalition)"}
-          strokeWidth={empty ? hollowStroke : 0}
-          opacity={dimmed ? 0.28 : 1}
+          r={open ? r * 1.35 : r}
+          fill={empty ? "none" : lit || open ? colorById.get(seat.factionId) : "var(--coalition)"}
+          stroke={open ? "var(--foreground)" : lit ? colorById.get(seat.factionId) : "var(--coalition)"}
+          strokeWidth={open ? hollowStroke : empty ? hollowStroke : 0}
+          opacity={dimmed && !open ? 0.28 : 1}
           className="transition-[fill,opacity] duration-300 ease-out"
         />
       </a>
     );
   };
+
+  const cardSeat = card ? seatById.get(card.seatId) : undefined;
+  const cardFaction = cardSeat ? factionById.get(cardSeat.factionId) : undefined;
+  const cardWidth = 272;
+  const cardLeft = card ? Math.max(8, Math.min(card.boxWidth - cardWidth - 8, card.x - cardWidth / 2)) : 0;
+  // `x` was measured from the left edge; inset-inline-start counts from the right on RTL pages.
+  const cardStart = card ? (card.rtl ? card.boxWidth - cardLeft - cardWidth : cardLeft) : 0;
   const width = OUTER_R * 2 + AISLE * 2 + pad * 2;
 
   return (
     <div className="space-y-5">
-      <div className="relative">
+      <div className="relative" ref={containerRef}>
         {/* The arc, from sm up. */}
         <svg
           viewBox={`${-pad - AISLE} ${-pad} ${width} ${OUTER_R + pad * 2}`}
@@ -186,7 +282,7 @@ export function Plenum({
           role="img"
           aria-label={t("hemicycle.aria", { coalition: coalitionSeats, opposition: oppositionSeats })}
         >
-          {placed.items.map(({ seat, x, y }) => renderSeat(seat, x, y, placed.seatR, 1.4))}
+          {placed.items.map(({ seat, x, y }, i) => renderSeat(seat, x, y, placed.seatR, 1.4, i))}
           {/* The split, set in the display face at the aisle. */}
           <text
             x={OUTER_R - AISLE - 3}
@@ -222,7 +318,7 @@ export function Plenum({
           role="img"
           aria-label={t("hemicycle.aria", { coalition: coalitionSeats, opposition: oppositionSeats })}
         >
-          {strip.items.map(({ seat, x, y }) => renderSeat(seat, x, y, strip.cell * 0.36, 1.2))}
+          {strip.items.map(({ seat, x, y }) => renderSeat(seat, x, y, strip.cell * 0.36, 1.2, sequence.indexOf(seat)))}
           <text
             x={strip.oppAisleX - 2}
             y={-6}
@@ -248,11 +344,73 @@ export function Plenum({
             {t("common.coalition")}
           </text>
         </svg>
+
+        {/* The seat card. role="tooltip": it describes the focused seat link. */}
+        {card && cardSeat && (
+          <div
+            id={popoverId}
+            role="tooltip"
+            className="pointer-events-none absolute z-20 rounded-card border border-line bg-surface p-3 text-sm shadow-lg"
+            // The hall is drawn LTR (a time-axis-like fixed orientation), so the
+            // card is placed in that same frame; the text inside keeps the page's direction.
+            style={{
+              width: cardWidth,
+              insetInlineStart: cardStart,
+              top: card.below ? card.y + 14 : undefined,
+              bottom: card.below ? undefined : `calc(100% - ${Math.max(0, card.y - 10)}px)`,
+            }}
+          >
+            <div className="flex items-center gap-3">
+              <MemberAvatar person={cardSeat} size={44} alt="" />
+              <div className="min-w-0">
+                <div className="truncate font-semibold" dir={cardSeat.nameRtl ? "rtl" : undefined} lang={cardSeat.nameRtl ? "he" : undefined}>
+                  {cardSeat.name}
+                </div>
+                {cardFaction && (
+                  <div className="flex items-center gap-1.5 text-xs text-muted">
+                    <span aria-hidden className="inline-block h-2.5 w-2.5 shrink-0 rounded-[2px]" style={{ backgroundColor: cardFaction.color }} />
+                    <span className="truncate" dir={cardFaction.nameRtl ? "rtl" : undefined} lang={cardFaction.nameRtl ? "he" : undefined}>
+                      {cardFaction.name}
+                    </span>
+                    <span>· {t(cardFaction.isCoalition ? "common.coalition" : "common.opposition")}</span>
+                  </div>
+                )}
+              </div>
+            </div>
+            {cardSeat.roles.length > 0 && (
+              <p className="mt-2 text-xs leading-snug">{cardSeat.roles.join(" · ")}</p>
+            )}
+            <p className="mt-2 text-xs">
+              {cardSeat.participationPct != null ? (
+                <>
+                  <span className="font-display text-lg font-bold tabular-nums">{cardSeat.participationPct}%</span>{" "}
+                  <span className="text-muted">{t("hemicycle.cardParticipation")}</span>
+                </>
+              ) : (
+                <span className="text-muted">{t("hemicycle.cardNoStats")}</span>
+              )}
+            </p>
+            {hollowSet.has(cardSeat.id) && <p className="mt-1 text-xs text-fail-ink">{t("hemicycle.cardMissedMost")}</p>}
+            <p className="mt-2 border-t border-line pt-2 text-xs text-muted">
+              {asOf ? t("hemicycle.cardSource", { date: asOf }) : t("footer.dataSource")} · {t("hemicycle.cardOpen")}
+            </p>
+          </div>
+        )}
       </div>
 
       {/* The legend is the semantic layer: every faction is a real link, and
           hovering or focusing one lights its seats. */}
       <ul className="flex flex-wrap gap-x-4 gap-y-1.5 text-sm" aria-label={t("hemicycle.legend")}>
+        {hollow.length > 0 && (
+          <li>
+            <Link href="/attendance" className="flex items-center gap-1.5 rounded-chip hover:underline">
+              <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden className="shrink-0">
+                <circle cx="6" cy="6" r="4.6" fill="none" stroke="var(--coalition)" strokeWidth="1.6" />
+              </svg>
+              <span>{t("hemicycle.hollowLegend", { count: hollow.length })}</span>
+            </Link>
+          </li>
+        )}
         {ordered.map((f) => (
           <li key={f.id}>
             <Link
@@ -272,6 +430,7 @@ export function Plenum({
           </li>
         ))}
       </ul>
+      <p className="text-xs text-muted">{t("hemicycle.hint")}</p>
     </div>
   );
 }

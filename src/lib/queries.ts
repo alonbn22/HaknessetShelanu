@@ -2141,3 +2141,64 @@ export function searchAll(query: string, searchHe: string, locale: string): Sear
 
   return { members, parties, votes, laws, bills, committees, committeeDocs, lobbyists, hasMore };
 }
+
+// ---------- the hall's seat facts ----------
+
+// What the home hemicycle shows when a seat is hovered: the member's vote
+// participation this Knesset and their current leadership or government
+// roles. One query each, keyed by person, so the page stays two queries
+// regardless of how many seats there are.
+export type SeatFacts = {
+  participationPct: number | null;
+  roles: { dutyHe: string; detailHe: string | null }[];
+};
+
+const SEAT_ROLE_POSITION_IDS = [
+  45, // prime minister
+  50, // deputy prime minister
+  122, // Speaker
+  131, // opposition leader
+  39, // minister
+  57, // minister (f.)
+  40, // deputy minister
+  POSITION_COMMITTEE_CHAIR,
+  POSITION_FACTION_CHAIR,
+  70, // deputy Speaker
+  71, // deputy Speaker (f.)
+];
+
+export function getSeatFacts(): Map<number, SeatFacts> {
+  const db = getDb();
+  const out = new Map<number, SeatFacts>();
+  const stats = db
+    .select({ personId: schema.mkVoteStats.personId, pct: schema.mkVoteStats.participationPct })
+    .from(schema.mkVoteStats)
+    .where(eq(schema.mkVoteStats.knessetNum, CURRENT_KNESSET))
+    .all();
+  for (const s of stats) out.set(s.personId, { participationPct: s.pct, roles: [] });
+  const roles = db
+    .select({
+      personId: schema.personPositions.personId,
+      positionId: schema.personPositions.positionId,
+      dutyHe: schema.personPositions.positionDescHe,
+      ministryHe: schema.personPositions.govMinistryNameHe,
+      committeeHe: schema.personPositions.committeeNameHe,
+    })
+    .from(schema.personPositions)
+    .where(
+      and(
+        eq(schema.personPositions.knessetNum, CURRENT_KNESSET),
+        eq(schema.personPositions.isCurrent, true),
+        inArray(schema.personPositions.positionId, SEAT_ROLE_POSITION_IDS),
+      ),
+    )
+    .all();
+  // Most prominent first, in the order of SEAT_ROLE_POSITION_IDS.
+  roles.sort((a, b) => SEAT_ROLE_POSITION_IDS.indexOf(a.positionId) - SEAT_ROLE_POSITION_IDS.indexOf(b.positionId));
+  for (const r of roles) {
+    const entry = out.get(r.personId) ?? { participationPct: null, roles: [] };
+    if (r.dutyHe) entry.roles.push({ dutyHe: r.dutyHe, detailHe: r.ministryHe ?? r.committeeHe ?? null });
+    out.set(r.personId, entry);
+  }
+  return out;
+}

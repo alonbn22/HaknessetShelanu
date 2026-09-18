@@ -17,12 +17,14 @@ import {
   getMostActiveLegislators,
   getUpcomingMeetings,
   getCurrentMembers,
+  getSeatFacts,
   getLastSyncDate,
   personName,
   factionColor,
   factionName,
 } from "@/lib/queries";
 import { committeeLabel, localizePage } from "@/lib/i18n-data";
+import { govDuty, govMinistry } from "@/lib/gov-terms";
 import { getControversialLaws, getElectionOutlook, partyText, partyTextAttrs, partyTextClass } from "@/lib/content";
 import { isHebrew, rtlAttrs, localizedAttrs, safeHttpUrl } from "@/lib/text";
 import { rtlLocales } from "@/i18n/routing";
@@ -59,16 +61,29 @@ export default async function HomePage() {
   });
   // One seat per sitting member. Norwegian-Law ministers who vacated their seat
   // are not in the hall, and neither are they here.
+  const seatFacts = getSeatFacts();
   const seats: PlenumSeat[] = getCurrentMembers()
     .filter((m) => m.isSitting && m.factionId != null)
     .map((m) => {
       const name = personName(m, locale);
+      const facts = seatFacts.get(m.id);
+      // "Minister · Ministry of Finance", "Committee chair · Finance Committee".
+      const roles = (facts?.roles ?? []).map((r) => {
+        const duty = govDuty(r.dutyHe, locale).text;
+        const detail = r.detailHe ? (govMinistry(r.detailHe, locale).text || committeeLabel(r.detailHe, locale, upCache)) : "";
+        return detail && detail !== duty ? `${duty} · ${detail}` : duty;
+      });
       return {
         id: m.id,
         name,
         nameRtl: isHebrew(name),
         factionId: m.factionId!,
         href: getPathname({ locale, href: `/members/${m.id}` }),
+        photoUrl: m.photoUrl,
+        firstNameHe: m.firstNameHe,
+        lastNameHe: m.lastNameHe,
+        roles: [...new Set(roles)],
+        participationPct: facts?.participationPct ?? null,
       };
     });
 
@@ -110,7 +125,7 @@ export default async function HomePage() {
           </div>
 
           {/* The arc from sm up; the same seats as two blocks across the aisle on phones. */}
-          <Plenum seats={seats} factions={plenumFactions} hollow={laggards.map((e) => e.personId)} />
+          <Plenum seats={seats} factions={plenumFactions} hollow={laggards.map((e) => e.personId)} asOf={asOf} />
 
           {/* The dais: search sits at the base of the hall. */}
           <div className="mx-auto max-w-xl">

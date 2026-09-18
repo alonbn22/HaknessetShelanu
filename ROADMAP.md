@@ -134,6 +134,21 @@ socio-economic indices by municipality (data.gov.il) for context.
 
 ## Done (recent)
 
+- **The 2026 election, fairly (18–19 Sep 2026)**: `content/polls.yaml` — 18
+  seat polls since the lists closed, each verified against the outlet's own
+  article (`/elections#polls`: poll of polls with one poll per institute, a
+  one-list-at-a-time chart, every poll and every outlet's bloc map, HaMadad's
+  average credited, plain "how to read"); the compass rebuilt on sourced
+  stances only (Knesset roll-calls cited to the OData record, platforms,
+  leader statements; "no stated position" otherwise) with `/elections/positions`
+  showing every cell and its source; the CEC calendar, how-to-vote, voter-roll
+  figures and surplus agreements from the Central Elections Committee; and
+  the home hemicycle now explains its empty seats and shows who sits where on
+  hover/focus/tap. Standing rule recorded in memory: every datum verified, from
+  a trusted source, with credit — and simple enough for anyone.
+- **Member records, neutral items**: `kind: neutral` (news / role) beside
+  for/against; 10 research agents re-verified `content/members/*.yaml`.
+
 - **Committee agendas full backfill**: 13,119 agenda items / 26,620 documents —
   ~96% of the term's 10,792 sittings (was a rolling 120-day window). The 7
   batches the API persistently 500s on are skipped non-fatally and retried by

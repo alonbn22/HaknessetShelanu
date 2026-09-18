@@ -89,7 +89,7 @@ claims:
         publisher: The Times of Israel
   - kind: negative
     category: controversy
-    status: settled
+    status: ruled
     date: 2026-08-20
     title:
       he: 'החלטת הממשלה לסגור את גלי צה"ל, שיזם, נפסלה בבג"ץ'

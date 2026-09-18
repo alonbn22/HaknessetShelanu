@@ -112,7 +112,9 @@
       "convicted": "Convicted",
       "acquitted": "Acquitted",
       "overturned": "Overturned on appeal",
-      "settled": "Settled"
+      "settled": "Settled",
+      "closed": "Closed without charges",
+      "ruled": "Court ruled"
     },
     "bioTitle": "Biography & background",
     "born": "Born",

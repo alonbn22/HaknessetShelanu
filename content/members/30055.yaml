@@ -41,7 +41,7 @@ claims:
         publisher: "Srugim"
   - kind: negative
     category: investigation
-    status: acquitted
+    status: closed
     date: "2005-07-14"
     title:
       he: "נעצר על ידי השב\"כ ב-2005 במחאה נגד ההתנתקות ושוחרר ללא כתב אישום"

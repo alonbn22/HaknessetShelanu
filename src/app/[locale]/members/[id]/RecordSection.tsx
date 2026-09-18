@@ -76,7 +76,7 @@ function ClaimList({
                       className={`rounded-full px-2 py-0.5 text-[11px] font-medium ${
                         c.status === "convicted"
                           ? "bg-red-200 text-red-900"
-                          : c.status === "acquitted" || c.status === "overturned"
+                          : c.status === "acquitted" || c.status === "overturned" || c.status === "closed"
                             ? "bg-green-200 text-green-900"
                             : "bg-amber-100 text-amber-900"
                       }`}

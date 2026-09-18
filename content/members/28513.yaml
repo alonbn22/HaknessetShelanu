@@ -60,7 +60,7 @@ claims:
         publisher: Wikipedia (Hebrew)
   - kind: negative
     category: investigation
-    status: settled
+    status: closed
     title:
       he: חקירה משטרתית (2007) ודוח מבקר המדינה (2008) על תקופתו כמנכ"ל "המשקם"; לא הוגש כתב אישום
       en: Police investigation (2007) and State Comptroller report (2008) on his tenure as CEO of HaMeshakem; no indictment was filed

@@ -194,8 +194,11 @@ const claimSchema = z.object({
   ]),
   // Legal status, so a matter is never implied to be more than it is
   // (presumption of innocence for anything not finally adjudicated).
+  // "closed": a probe closed without charges (not an acquittal — no charge was
+  // ever tried); "ruled": a court gave a final ruling on the matter (an
+  // annulled decision, a rejected petition) — not a plea deal or settlement.
   status: z
-    .enum(["ongoing", "indicted", "convicted", "acquitted", "overturned", "settled"])
+    .enum(["ongoing", "indicted", "convicted", "acquitted", "overturned", "settled", "closed", "ruled"])
     .optional(),
   title: localizedText,
   description: localizedText.optional(),

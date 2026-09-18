@@ -47,7 +47,7 @@ claims:
         publisher: "Israel Hayom"
   - kind: negative
     category: controversy
-    status: settled
+    status: ruled
     title:
       he: "בג\"ץ פסל את מינויו לשר הפנים והבריאות (ינואר 2023)"
       en: "High Court of Justice disqualified his appointment as interior and health minister (January 2023)"

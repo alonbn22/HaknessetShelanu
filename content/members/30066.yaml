@@ -1,7 +1,8 @@
-# PersonID 30066. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30066 (Ayman Odeh). Researched and source-verified 2026-09-18 (every
+# cited URL re-fetched; committee chairmanship confirmed from an official Knesset
+# committee protocol). Neutral language; legal status marked. REVIEW before launch.
 personId: 30066
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -38,28 +39,75 @@ claims:
       - url: https://en.wikipedia.org/wiki/Joint_List
         title: Joint List
         publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    date: 2023-07-17
+    title:
+      he: יושב ראש ועדת המדע והטכנולוגיה של הכנסת ה-25
+      en: Chair of the Knesset Science and Technology Committee in the 25th Knesset
+    description:
+      he: בכנסת ה-25 מכהן עודה כיושב ראש ועדת המדע והטכנולוגיה — אחת הוועדות שהוקצו לאופוזיציה — כפי שמתועד בפרוטוקולי הוועדה (למשל ישיבת מעקב על מצב לימודי מדעי הרוח, 17 ביולי 2023).
+      en: In the 25th Knesset Odeh chairs the Science and Technology Committee — one of the committees allotted to the opposition — as recorded in the committee's protocols (for example a follow-up session on the state of humanities studies, 17 July 2023).
+    sources:
+      - url: https://fs.knesset.gov.il/25/Committees/25_cs_bg_4594603.pdf
+        title: "פרוטוקול מס' 22 מישיבת ועדת המדע והטכנולוגיה, 17 ביולי 2023 (איימן עודה – היו\"ר)"
+        publisher: Knesset
+      - url: https://he.wikipedia.org/wiki/%D7%90%D7%99%D7%99%D7%9E%D7%9F_%D7%A2%D7%95%D7%93%D7%94
+        title: איימן עודה – ויקיפדיה
+        publisher: Wikipedia (Hebrew)
   - kind: negative
     category: controversy
-    status: acquitted
+    status: settled
+    date: 2025-06-23
+    title:
+      he: השעיה לשבועיים ללא שכר על ידי ועדת האתיקה בגין התבטאויות על המלחמה בעזה (2025)
+      en: Two-week unpaid suspension by the Knesset Ethics Committee over remarks on the Gaza war (2025)
+    description:
+      he: ב-23 ביוני 2025 החליטה ועדת האתיקה של הכנסת להרחיק את עודה מדיוני המליאה והוועדות לשבועיים ללא שכר, בגין שורת התבטאויות מ-2024 שבהן כינה את פעולות צה"ל בעזה "רצח" ו"טבח" וטען כי הממשלה "ביצעה פשעים נגד האנושות". הוועדה קבעה כי מדובר ב"דפוס חמור של התבטאויות" הפוגע בכבוד הכנסת ובחיילים. מדובר בסנקציה אתית פרלמנטרית ולא בהליך פלילי; בדיווחים שצוטטו לא הובאה תגובה של עודה להחלטה.
+      en: On 23 June 2025 the Knesset Ethics Committee decided to bar Odeh from plenum and committee sessions for two weeks without pay over a series of 2024 remarks in which he called IDF operations in Gaza "murder" and a "massacre" and said the government had "committed crimes against humanity." The committee found this a "severe pattern of remarks" that harmed the dignity of the Knesset and defamed soldiers. This was a parliamentary ethics sanction, not a criminal proceeding; the cited reports did not carry a response from Odeh to the decision.
+    sources:
+      - url: https://www.jpost.com/israel-news/article-858727
+        title: Knesset Ethics Committee sanctions two MKs for 'war crime' statements
+        publisher: The Jerusalem Post
+      - url: https://www.israelnationalnews.com/news/410555
+        title: "Ethics Committee sanctions: MK Odeh suspended for two weeks without pay"
+        publisher: Arutz 7 / Israel National News
+  - kind: negative
+    category: controversy
     title:
       he: הצעה להדחתו מהכנסת נכשלה (2025)
       en: Motion to expel him from the Knesset failed (2025)
     description:
-      he: 'ב-14 ביולי 2025 קיימה מליאת הכנסת הצבעה על הדחתו של עודה, בעקבות הצעה
-        שהוגשה בעקבות אמירות פוליטיות שלו על שחרור חטופים ואסירים. ההצעה נכשלה:
-        73 ח"כים תמכו ו-15 התנגדו, מתחת לרוב המיוחד של 90 קולות הנדרש להדחה.
-        עודה נותר חבר כנסת.'
-      en: "On 14 July 2025 the Knesset plenum voted on a motion to expel Odeh, brought
-        over political statements he made about the release of hostages and
-        prisoners. The motion failed: 73 MKs voted in favor and 15 against,
-        short of the 90-vote supermajority required for expulsion. Odeh remained
-        a member of the Knesset."
+      he: 'בינואר 2025, לאחר שעודה כתב כי הוא "שמח על שחרור החטופים והאסירים" במסגרת עסקת הפסקת האש בעזה, החל ח"כ אביחי בוארון (הליכוד) באיסוף 70 חתימות לפתיחת הליך הדחה נגדו. ב-30 ביוני 2025 אישרה ועדת הכנסת ברוב של 14 מול 2 להעביר את ההצעה למליאה, וב-14 ביולי 2025 הצביעה המליאה: 73 ח"כים תמכו ו-15 התנגדו — מתחת לרוב המיוחד של 90 קולות הנדרש להדחה. עודה נותר חבר כנסת; בדיון בוועדת הכנסת אמר כי הציוץ "דיבר על זכותם של שני העמים לחיות בחופש, בכבוד ובשוויון".'
+      en: "In January 2025, after Odeh wrote that he was \"happy about the release of the hostages and prisoners\" under the Gaza ceasefire deal, MK Avichai Boaron (Likud) began collecting the 70 signatures needed to open expulsion proceedings against him. On 30 June 2025 the Knesset House Committee voted 14-2 to send the motion to the plenum, and on 14 July 2025 the plenum voted: 73 MKs in favor and 15 against — short of the 90-vote supermajority required for expulsion. Odeh remained a member of the Knesset; at the House Committee hearing he said the tweet \"spoke about the right of both peoples to live in freedom, dignity, and equality.\""
     date: 2025-07-14
     sources:
       - url: https://www.timesofisrael.com/motion-to-expel-odeh-from-knesset-fails-to-pass-amid-heckling-by-coalition-members/
         title: Motion to expel Arab party head Odeh from Knesset fails; coalition MKs
           heckle him
         publisher: The Times of Israel
+      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-858799
+        title: Likud's Avichay Boaron holds impeachment hearing for Ayman Odeh
+        publisher: The Jerusalem Post
       - url: https://en.wikipedia.org/wiki/Ayman_Odeh
         title: Ayman Odeh
         publisher: Wikipedia
+  - kind: neutral
+    category: news
+    date: 2026-05-16
+    title:
+      he: סיים את כהונתו כיו"ר חד"ש; יוסף ג'בארין נבחר במקומו ועודה לא יתמודד בבחירות 2026
+      en: Ended his tenure as Hadash chair; Yousef Jabareen elected in his place and Odeh will not run in 2026
+    description:
+      he: "עודה הודיע עוד במאי 2023 כי לא יתמודד בבחירות הבאות לכנסת אך ישלים את כהונתו. ב-16 במאי 2026 נבחר ד\"ר יוסף ג'בארין, חבר כנסת לשעבר, ליו\"ר חד\"ש ולראש רשימתה כבר בסיבוב הראשון של הבחירות הפנימיות, ועודה בירך על התוצאה: \"חד\"ש לא מפרה הבטחות. מי שינצח בפריימריז ייצג את כולנו\". במהלך 2025–2026 פעל עודה לאיחוד המפלגות הערביות לרשימה משותפת לקראת בחירות אוקטובר 2026."
+      en: "Odeh had announced in May 2023 that he would not run in the next Knesset election but would complete his term. On 16 May 2026 Dr. Yousef Jabareen, a former MK, was elected Hadash chair and head of its list in the first round of the party's internal election, and Odeh welcomed the result: \"Hadash does not break promises. Whoever wins the primaries will represent all of us.\" During 2025–2026 Odeh worked to reunite the Arab parties into a joint list ahead of the October 2026 election."
+    sources:
+      - url: https://www.mako.co.il/news-politics/2026_q2/Article-71804eba6503e91027.htm
+        title: 'יו"ר חדש לחד"ש: יוסף ג''בארין יחליף את איימן עודה'
+        publisher: N12
+      - url: https://www.haaretz.co.il/news/politi/2023-05-16/ty-article/.premium/00000188-2589-d18b-a79d-25d909b90000
+        title: יו"ר חד"ש איימן עודה הודיע שלא יתמודד בבחירות לכנסת הבאה
+        publisher: Haaretz
+      - url: https://www.timesofisrael.com/ahead-of-the-2026-elections-ayman-odeh-is-pushing-to-reunite-israels-arab-parties/
+        title: Ahead of the 2026 elections, Ayman Odeh is pushing to reunite Israel's Arab parties
+        publisher: The Times of Israel

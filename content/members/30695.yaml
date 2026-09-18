@@ -1,7 +1,8 @@
-# PersonID 30695. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30695 (Yoav Segalovich). Researched and source-verified 2026-09-18
+# (every cited URL re-fetched; Knesset membership dates cross-checked against the
+# Knesset OData). Neutral language; legal status marked. REVIEW before launch.
 personId: 30695
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -47,20 +48,58 @@ claims:
       he: סגן השר לביטחון פנים בממשלת ישראל ה-36
       en: Deputy Minister of Public Security in the 36th government of Israel
     description:
-      he: סגלוביץ', חבר כנסת מטעם יש עתיד, כיהן כסגן השר לביטחון פנים בממשלת ישראל
+      he: סגלוביץ', חבר כנסת מטעם יש עתיד משנת 2019, כיהן כסגן השר לביטחון פנים בממשלת ישראל
         ה-36 (2021–2022), ובמסגרת תפקידו עמד בראש צוות שרים למאבק בפשיעה
         ובאלימות בחברה הערבית.
-      en: Segalovich, a Knesset member for Yesh Atid, served as Deputy Minister of
+      en: Segalovich, a Knesset member for Yesh Atid from 2019, served as Deputy Minister of
         Public Security in Israel's 36th government (2021–2022), where he headed
         a ministerial team to combat crime and violence in Arab society.
     date: "2021"
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30695
+        title: יואב סגלוביץ' – פרטים אישיים ותפקידים (אתר הכנסת)
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Thirty-sixth_government_of_Israel
         title: Thirty-sixth government of Israel - Wikipedia
         publisher: Wikipedia
-      - url: https://www.wikidata.org/wiki/Q6832388
-        title: Yoav Segalovich (Q6832388)
-        publisher: Wikidata
       - url: https://he.wikipedia.org/wiki/יואב_סגלוביץ'
         title: יואב סגלוביץ' - ויקיפדיה
         publisher: Wikipedia
+  - kind: neutral
+    category: role
+    date: 2026-08-11
+    title:
+      he: התפטר מהכנסת ופרש מיש עתיד (אוגוסט 2026)
+      en: Resigned from the Knesset and left Yesh Atid (August 2026)
+    description:
+      he: "ב-6 באוגוסט 2026 הודיע סגלוביץ' ליאיר לפיד על פרישתו מיש עתיד ועל התפטרותו מהכנסת, שבה כיהן מטעם המפלגה מאז 2019, והסביר כי אין זה ראוי בעיניו להמשיך להחזיק במנדט של יש עתיד בעת שהוא בוחן דרך פוליטית חדשה. לפי נתוני הכנסת, כהונתו הסתיימה ב-11 באוגוסט 2026, ובמקומו נכנסה לכנסת מיכל סלבני כבביה מיש עתיד. לפיד הודה לו על שירותו ואמר כי פעל \"ביושרה ובמקצועיות למען אזרחי ישראל ושלטון החוק\"."
+      en: "On 6 August 2026 Segalovich informed Yair Lapid that he was leaving Yesh Atid and resigning from the Knesset, where he had served for the party since 2019, explaining that he did not consider it appropriate to keep holding a Yesh Atid mandate while exploring a new political path. According to Knesset records his term ended on 11 August 2026, and Michal Salvani Kababia of Yesh Atid entered the Knesset in his place. Lapid thanked him for his service, saying he had acted \"with integrity and professionalism for Israel's citizens and the rule of law.\""
+    sources:
+      - url: https://www.ynet.co.il/news/article/bykvlvzifl
+        title: "בצל המגעים עם רע\"מ: יואב סגלוביץ' הודיע רשמית על פרישה מיש עתיד"
+        publisher: Ynet
+      - url: https://www.maariv.co.il/news/politics/article-1353222
+        title: "אחרי הפרסום על ההסכם עם עבאס: סגלוביץ' עוזב את לפיד ואת הכנסת"
+        publisher: Maariv
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30695
+        title: יואב סגלוביץ' – פרטים אישיים ותפקידים (אתר הכנסת)
+        publisher: Knesset
+  - kind: neutral
+    category: news
+    date: 2026-08-31
+    title:
+      he: הצטרף לרשימת רע"ם לבחירות 2026 במקום השני
+      en: Joined the Ra'am list for the 2026 election in second place
+    description:
+      he: "ב-31 באוגוסט 2026 הודיע יו\"ר רע\"ם מנסור עבאס על צירופו של סגלוביץ' לרשימת המפלגה לבחירות 27 באוקטובר, במקום השני, כמועמד יחיד ולא כסיעה נפרדת. סגלוביץ' אמר כי הטענה שאחרי 7 באוקטובר לא ניתן לקיים שותפות עם מפלגות ערביות היא \"מופרכת ושקרית\", וכי \"אין דרך להוביל שינוי במדינה בלי חיבור\"."
+      en: "On 31 August 2026 Ra'am chairman Mansour Abbas announced that Segalovich was joining the party's list for the 27 October election in second place, as an individual candidate rather than a separate faction. Segalovich said the claim that partnership with Arab parties is impossible after 7 October is \"absurd and false,\" and that \"there is no way to lead change in the country without connection.\""
+    sources:
+      - url: https://www.haaretz.co.il/news/elections/2026-08-31/ty-article/.premium/000001a0-58db-d9b7-abaf-faff08520000
+        title: "סגלוביץ הצטרף לרע\"מ: \"מופרך לומר שאחרי 7.10 לא ניתן לקיים שותפות\""
+        publisher: Haaretz
+      - url: https://www.ynet.co.il/news/article/sjamoqq00ge
+        title: "סגלוביץ': אי אפשר לקיים שותפות עם מפלגות ערביות אחרי 7/10? זה מופרך ושקרי"
+        publisher: Ynet
+      - url: https://www.timesofisrael.com/wave-of-yesh-atid-mks-quit-election-run-as-joint-slate-with-bennett-falters-in-polls/
+        title: Wave of Yesh Atid MKs quit election run as joint slate with Bennett falters in polls
+        publisher: The Times of Israel

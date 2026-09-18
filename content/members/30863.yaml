@@ -1,7 +1,8 @@
-# PersonID 30863. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30863 (Sharon Nir). Researched and source-verified 2026-09-18 (every
+# cited URL re-fetched; Knesset membership cross-checked against the Knesset
+# OData). Neutral language; legal status marked. REVIEW before launch.
 personId: 30863
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -19,6 +20,9 @@ claims:
         Ethics Committee.
     date: 2022-11-15
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30863
+        title: שרון ניר – פרטים אישיים ותפקידים (אתר הכנסת)
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Sharon_Nir
         title: Sharon Nir
         publisher: Wikipedia
@@ -57,7 +61,7 @@ claims:
       en: Trailblazer for women in the IDF's C4I Corps
     description:
       he: במהלך שירותה הצבאי הייתה ניר האישה הראשונה שהכשירה קצינים בחיל התקשוב, האישה
-        הראשונה שפיקדה על גדוד תקשורת מבצעי, והאישה הראשונה שפיקדה על בית הספר
+        הראשונה שפיקדה על גדוד תקשוב מבצעי, והאישה הראשונה שפיקדה על בית הספר
         הלאומי לתקשוב (בה"ד 7).
       en: During her military service Nir was the first woman to train officers for
         the C4I Corps, the first woman to command an operational communications
@@ -70,3 +74,32 @@ claims:
       - url: https://he.wikipedia.org/wiki/%D7%A9%D7%A8%D7%95%D7%9F_%D7%A0%D7%99%D7%A8
         title: שרון ניר
         publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: volunteering
+    date: "2020"
+    title:
+      he: יו"ר פורום דבורה בהתנדבות (2020–2022)
+      en: Volunteer chair of Forum Dvorah (2020–2022)
+    description:
+      he: לאחר שחרורה מצה"ל כיהנה ניר בהתנדבות, בשנים 2020–2022, כיו"ר פורום דבורה — ארגון הפועל לייצוג שוויוני של נשים במוקדי קבלת ההחלטות בתחומי הביטחון והמדיניות ובשיח הציבורי.
+      en: After leaving the IDF, Nir served on a voluntary basis from 2020 to 2022 as chair of Forum Dvorah, an organization working for equal representation of women in security and foreign-policy decision-making and in public discourse.
+    sources:
+      - url: https://www.forumdvorah.org.il/expert/%D7%A9%D7%A8%D7%95%D7%9F-%D7%A0%D7%99%D7%A8
+        title: שרון ניר – מאגר המומחיות
+        publisher: Forum Dvorah
+      - url: https://he.wikipedia.org/wiki/%D7%A9%D7%A8%D7%95%D7%9F_%D7%A0%D7%99%D7%A8
+        title: שרון ניר
+        publisher: Wikipedia (Hebrew)
+  - kind: neutral
+    category: news
+    date: 2026-08-29
+    title:
+      he: הודיעה כי לא תתמודד בבחירות לכנסת ה-26
+      en: Announced she will not run in the election to the 26th Knesset
+    description:
+      he: ב-29 באוגוסט 2026 הודיעה ניר ליו"ר ישראל ביתנו אביגדור ליברמן כי לא תתמודד בבחירות 27 באוקטובר 2026 וכי היא פונה לדרך חדשה; היא הודתה לליברמן, תיארה את הבחירות הקרובות כ"היסטוריות לעתיד מדינת ישראל" והבטיחה להמשיך לתמוך במפלגה. ישראל ביתנו הודתה לה על "ארבע שנים של עשייה ציבורית משמעותית".
+      en: On 29 August 2026 Nir informed Yisrael Beiteinu chairman Avigdor Liberman that she would not run in the 27 October 2026 election and was turning to a new path; she thanked Liberman, described the coming election as "historic for the future of the State of Israel" and pledged to keep supporting the party. Yisrael Beiteinu thanked her for "four years of significant public service."
+    sources:
+      - url: https://www.zman.co.il/718900/
+        title: ח"כ שרון ניר הודיעה שלא תתמודד בבחירות לכנסת ה-26
+        publisher: Zman Yisrael (The Times of Israel, Hebrew edition)

@@ -1,7 +1,8 @@
-# PersonID 30847. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30847 (Yitzhak Wasserlauf). Researched and source-verified 2026-09-18
+# (every cited URL re-fetched; ministerial dates cross-checked against the
+# Knesset OData). Neutral language; legal status marked. REVIEW before launch.
 personId: 30847
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -16,6 +17,9 @@ claims:
         youngest member of that Knesset.
     date: 2022-11-15
     sources:
+      - url: https://www.israelnationalnews.com/news/362104
+        title: Otzma Yehudit member will be the youngest MK in the 25th Knesset
+        publisher: Arutz 7 / Israel National News
       - url: https://en.wikipedia.org/wiki/Yitzhak_Wasserlauf
         title: Yitzhak Wasserlauf
         publisher: Wikipedia
@@ -58,3 +62,35 @@ claims:
       - url: https://en.wikipedia.org/wiki/Yitzhak_Wasserlauf
         title: Yitzhak Wasserlauf
         publisher: Wikipedia
+  - kind: neutral
+    category: role
+    date: 2025-03-19
+    title:
+      he: שר הנגב, הגליל והחוסן הלאומי בממשלה ה-37 (מכהן; מונה מחדש במרץ 2025)
+      en: Minister of the Negev, the Galilee and National Resilience in the 37th government (serving; reappointed March 2025)
+    description:
+      he: לפי רישומי הכנסת כיהן וסרלאוף כשר הנגב, הגליל והחוסן הלאומי מ-29 בדצמבר 2022 עד 21 בינואר 2025, אז נכנסה לתוקף התפטרות שרי עוצמה יהודית מהממשלה במחאה על אישור עסקת החטופים והפסקת האש בעזה. ב-19 במרץ 2025, לאחר חידוש הלחימה, אישרה הכנסת את שובה של עוצמה יהודית לממשלה ווסרלאוף מונה מחדש לשר הנגב והגליל — תפקיד שבו הוא ממשיך לכהן גם בממשלת המעבר לאחר פיזור הכנסת ב-17 ביולי 2026.
+      en: According to Knesset records, Wasserlauf served as Minister of the Negev, the Galilee and National Resilience from 29 December 2022 until 21 January 2025, when the resignation of Otzma Yehudit's ministers from the government — in protest at the approval of the Gaza hostage and ceasefire deal — took effect. On 19 March 2025, after fighting resumed, the Knesset approved Otzma Yehudit's return to the government and Wasserlauf was reappointed Minister of the Negev and the Galilee, a post he continues to hold in the caretaker government following the Knesset's dissolution on 17 July 2026.
+    sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30847
+        title: יצחק שמעון וסרלאוף – פרטים אישיים ותפקידים (אתר הכנסת)
+        publisher: Knesset
+      - url: https://www.jpost.com/israel-news/article-846731
+        title: Knesset approves Ben-Gvir's return to government, National Security Minister role
+        publisher: The Jerusalem Post
+      - url: https://www.haaretz.co.il/news/politi/2025-01-19/ty-article/00000194-7d9c-d61f-a1b5-fdbd99970000
+        title: עוצמה יהודית פרשה מהקואליציה, בן גביר ושרי המפלגה הגישו מכתבי התפטרות
+        publisher: Haaretz
+  - kind: neutral
+    category: news
+    date: 2026-09-04
+    title:
+      he: הוצב במקום השלישי ברשימת עוצמה יהודית לכנסת ה-26, לאחר שפינה את המקום השני לטלי גוטליב
+      en: Placed third on the Otzma Yehudit list for the 26th Knesset, after ceding second place to Tali Gotliv
+    description:
+      he: ב-4 בספטמבר 2026 הודיע יו"ר עוצמה יהודית איתמר בן גביר במסיבת עיתונאים כי ח"כ טלי גוטליב, שעברה מהליכוד למפלגה, תוצב במקום השני ברשימה לבחירות 27 באוקטובר 2026, וכי השר וסרלאוף ויתר על המקום השני ויוצב במקום השלישי.
+      en: On 4 September 2026 Otzma Yehudit chairman Itamar Ben Gvir announced at a press conference that MK Tali Gotliv, who moved to the party from Likud, would be placed second on the list for the 27 October 2026 election, and that Minister Wasserlauf had given up the second spot and would be placed third.
+    sources:
+      - url: https://www.inn.co.il/news/705612
+        title: 'בן גביר: טלי גוטליב תקבל את המקום השני בעוצמה יהודית'
+        publisher: Arutz 7

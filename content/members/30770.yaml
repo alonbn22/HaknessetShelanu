@@ -1,7 +1,8 @@
-# PersonID 30770. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30770 (Yosef/Yossi Taieb). Researched and source-verified 2026-09-18
+# (every cited URL re-fetched; Knesset membership cross-checked against the
+# Knesset OData). Neutral language; legal status marked. REVIEW before launch.
 personId: 30770
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -10,15 +11,15 @@ claims:
       en: First Israeli Knesset member born in France
     description:
       he: יוסף (יוסי) טייב, נציג מפלגת ש"ס, נולד ב-15 בפברואר 1981 ברובע ה-15 של פריז
-        למשפחה ממוצא יהודי-תוניסאי. הוא עלה לישראל בגיל 17 ללימודים בישיבת מיר
-        בירושלים. עם כניסתו לכנסת ב-1 ביולי 2020 צוין כחבר הכנסת הישראלי הראשון
-        שנולד בצרפת.
+        למשפחה ממוצא יהודי-תוניסאי. הוא עלה לישראל בנעוריו ללימודים בישיבת מיר
+        בירושלים. עם כניסתו לכנסת ב-1 ביולי 2020 (במסגרת החוק הנורבגי) צוין כחבר
+        הכנסת הישראלי הראשון שנולד בצרפת.
       en: Joseph (Yossi) Taieb, a representative of the Shas party, was born on 15
         February 1981 in the 15th arrondissement of Paris to a family of
-        Tunisian-Jewish descent. He immigrated to Israel at the age of 17 to
-        study at the Mir Yeshiva in Jerusalem. Upon entering the Knesset on 1
-        July 2020 he was noted as the first Israeli member of Knesset born in
-        France.
+        Tunisian-Jewish descent. He immigrated to Israel in his youth to study
+        at the Mir Yeshiva in Jerusalem. Upon entering the Knesset on 1 July
+        2020 (under the "Norwegian Law") he was noted as the first Israeli
+        member of Knesset born in France.
     date: 2020-07-01
     sources:
       - url: https://fr.timesofisrael.com/yossi-taieb-du-shas-le-premier-depute-israelien-ne-en-france/
@@ -30,19 +31,28 @@ claims:
   - kind: positive
     category: achievement
     title:
-      he: יו"ר ועדת החינוך, התרבות והספורט של הכנסת
-      en: Chair of the Knesset Committee on Education, Culture and Sports
+      he: יו"ר ועדת החינוך, התרבות והספורט של הכנסת ה-25 (2023–2025)
+      en: Chair of the Knesset Education, Culture and Sports Committee (2023–2025)
     description:
-      he: עם הקמת הממשלה ה-37, נבחר יוסף טייב לכהן כיו"ר ועדת החינוך, התרבות והספורט
-        של הכנסת. הוא התפטר מהתפקיד ב-23 באוקטובר 2025.
-      en: Following the formation of Israel's thirty-seventh government, Joseph Taieb
-        was selected to chair the Knesset Committee on Education, Culture and
-        Sports. He resigned from the chairmanship on 23 October 2025.
+      he: עם הקמת הממשלה ה-37 נבחר טייב לכהן כיו"ר ועדת החינוך, התרבות והספורט של
+        הכנסת ה-25. ב-23 באוקטובר 2025 ויתר על התפקיד במסגרת החלטת ש"ס לפרוש
+        מתפקידיה בקואליציה במחאה על אי-חקיקת חוק הגיוס; בדצמבר 2025 דווח כי ח"כ צבי
+        סוכות (הציונות הדתית) ימונה במקומו לאחר כחודשיים שבהם לא התכנסה הוועדה.
+      en: Following the formation of the 37th government, Taieb was chosen to chair
+        the 25th Knesset's Education, Culture and Sports Committee. On 23
+        October 2025 he gave up the post as part of Shas's decision to quit its
+        coalition positions in protest at the failure to legislate a draft law;
+        in December 2025 it was reported that MK Zvi Sukkot (Religious Zionism)
+        would be appointed in his place after about two months in which the
+        committee did not convene.
     date: 2023-01-01
     sources:
-      - url: https://en.wikipedia.org/wiki/Yosef_Taieb
-        title: Yosef Taieb
-        publisher: Wikipedia
+      - url: https://www.timesofisrael.com/shas-quits-its-coalition-posts-to-protest-failure-to-legislate-haredi-draft-exemption/
+        title: Shas quits its coalition posts to protest failure to legislate Haredi draft exemption
+        publisher: The Times of Israel
+      - url: https://www.timesofisrael.com/far-right-mks-har-melech-sukkot-set-to-take-over-knesset-panels-vacated-by-shas/
+        title: Far-right MKs Har-Melech, Sukkot set to take over Knesset panels vacated by Shas
+        publisher: The Times of Israel
       - url: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%99_%D7%98%D7%99%D7%99%D7%91
         title: יוסי טייב
         publisher: Wikipedia (Hebrew)
@@ -68,3 +78,35 @@ claims:
       - url: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A1%D7%99_%D7%98%D7%99%D7%99%D7%91
         title: יוסי טייב
         publisher: Wikipedia (Hebrew)
+  - kind: negative
+    category: controversy
+    date: 2025-01-28
+    title:
+      he: סערה סביב דבריו כי בנו לא יתייצב לצו גיוס וקריאה להדיחו מראשות ועדת החינוך (2025)
+      en: Controversy over saying his son would not report for a draft order, and a call to remove him as Education Committee chair (2025)
+    description:
+      he: 'ב-28 בינואר 2025 אמר טייב, אז יו"ר ועדת החינוך, בראיון ברדיו "קול ברמה" כי בנו קיבל צו גיוס וכי הפנה אותו לראש הישיבה ולמועצת חכמי התורה, והוסיף: "אם הוא ייעצר, אז הוא ילמד תורה מתוך כותלי הכלא". תנועת "אימהות בחזית" פנתה ליו"ר ועדת האתיקה בדרישה להדיחו מראשות הוועדה בטענה שדבריו מהווים זלזול בצה"ל ובמערכות החוק; יו"ר ש"ס אריה דרעי הגן עליו ואמר כי "הוא אומר את האמת". בדיווחים שצוטטו לא פורסמה החלטה של ועדת האתיקה בעניין, ולא היה בכך הליך משפטי.'
+      en: 'On 28 January 2025 Taieb, then chair of the Education Committee, said in an interview on the Kol Barama radio station that his son had received a draft order and that he had referred him to his yeshiva head and the Council of Torah Sages, adding: "If he is arrested, then he will study Torah from within the prison walls." The "Mothers at the Front" movement wrote to the chair of the Ethics Committee demanding his removal as committee chair, arguing the remarks showed disrespect for the IDF and the legal system; Shas chairman Aryeh Deri defended him, saying "he is telling the truth." The cited reports did not carry an Ethics Committee decision on the matter, and no legal proceeding was involved.'
+    sources:
+      - url: https://www.maariv.co.il/news/politics/article-1167912
+        title: 'ח"כ יוסי טייב: "אם הבן שלי ייעצר - הוא ימשיך ללמוד תורה מהכלא"'
+        publisher: Maariv
+      - url: https://www.ynet.co.il/news/article/skqzx8vdyg
+        title: ח"כ יוסי טייב אמר שבנו לא יתייצב לצה"ל, תנועת אימהות בחזית קראה לפטרו
+        publisher: Ynet
+  - kind: neutral
+    category: news
+    date: 2026-09-08
+    title:
+      he: הוצב במקום התשיעי ברשימת ש"ס לכנסת ה-26
+      en: Placed ninth on the Shas list for the 26th Knesset
+    description:
+      he: ב-8 בספטמבר 2026 פרסמה ש"ס את רשימתה לבחירות 27 באוקטובר 2026, וטייב הוצב בה במקום התשיעי. בראש הרשימה אריה דרעי, ואחריו ינון אזולאי ומיכאל מלכיאלי.
+      en: On 8 September 2026 Shas published its list for the 27 October 2026 election, with Taieb placed ninth. Aryeh Deri heads the list, followed by Yinon Azoulay and Michael Malkieli.
+    sources:
+      - url: https://www.ynet.co.il/news/elections2026/article/hkjzuqtofe
+        title: 'עם רב-סרן במילואים במקום ריאלי: זו רשימת ש"ס לכנסת'
+        publisher: Ynet
+      - url: https://www.haaretz.co.il/news/elections/2026-09-08/ty-article/000001a0-7fc4-da8b-afbe-7fe5c7ba0000
+        title: 'רשימת ש"ס לכנסת: מיכאל מלכיאלי קודם למקום השלישי, רב סרן במקום השישי'
+        publisher: Haaretz

@@ -1,7 +1,7 @@
 import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { rtlLocales } from "@/i18n/routing";
-import { getFactionMeta, getPolls, getRunningLists, partyText, partyTextAttrs } from "@/lib/content";
+import { getFactionMeta, getPolls, getRunningLists, listName, listNameAttrs, partyText } from "@/lib/content";
 import { formatDate } from "@/lib/format";
 import { pollOfPolls } from "@/lib/polls";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -52,8 +52,8 @@ export async function PollAverageTeaser({ top = 6 }: { top?: number }) {
           const color = (list?.factionId != null && factionColor.get(list.factionId)) || list?.color || "var(--neutral)";
           return (
             <li key={l.slug} className="grid grid-cols-[minmax(6rem,9rem)_2.5rem_minmax(4rem,1fr)] items-center gap-x-2">
-              <span className="truncate" {...partyTextAttrs(list?.name, locale)}>
-                {partyText(list?.name, locale) || l.slug}
+              <span className="truncate" {...listNameAttrs(list, locale)}>
+                {listName(list, locale) || l.slug}
               </span>
               <span className="text-end font-semibold tabular-nums">{num(l.mean)}</span>
               <span className="block h-2 overflow-hidden rounded-full bg-surface-sunken">

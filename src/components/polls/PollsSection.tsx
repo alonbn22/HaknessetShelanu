@@ -4,6 +4,8 @@ import {
   getFactionMeta,
   getPolls,
   getRunningLists,
+  listName,
+  listNameAttrs,
   partyText,
   partyTextAttrs,
   type ElectionParty,
@@ -47,8 +49,8 @@ export async function PollsSection({ id = "polls" }: { id?: string }) {
   const registry = getRunningLists();
   const slugs = [...registry.keys()];
   const factionColor = new Map([...getFactionMeta().values()].map((f) => [f.id, f.color]));
-  const nameOf = (slug: string) => partyText(registry.get(slug)?.name, locale) || slug;
-  const attrsOf = (slug: string) => partyTextAttrs(registry.get(slug)?.name, locale);
+  const nameOf = (slug: string) => listName(registry.get(slug), locale) || slug;
+  const attrsOf = (slug: string) => listNameAttrs(registry.get(slug), locale);
   const colorOf = (slug: string) => {
     const l = registry.get(slug);
     return l ? listColor(l, factionColor) : "var(--neutral)";

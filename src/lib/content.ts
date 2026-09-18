@@ -14,6 +14,10 @@ const httpUrl = z
   .trim()
   .refine((u) => /^https?:\/\//i.test(u), "must be an http(s) URL");
 
+// Kebab-case identity for a running list (content/election.yaml) — polls and
+// compass stances key on it, and it survives renames and mergers.
+const listSlug = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, "slug must be kebab-case");
+
 const coalitionSchema = z.object({
   knesset: z.number(),
   coalitionFactionIds: z.array(z.number()),
@@ -319,24 +323,49 @@ export function getGlossary(): GlossaryTerm[] {
 
 // ---------- party-fit quiz ----------
 
+// A list's stance on one statement: the value on the reader's own scale, and
+// where it comes from — a roll-call vote (cited to the Knesset record, with the
+// vote id for the site's own page), the list's platform, or a leader's
+// statement in a major outlet. A slug that is absent has no sourced position
+// and is shown as such; nothing is inferred.
+const quizStanceSchema = z.object({
+  value: z.number().int().min(-2).max(2),
+  basis: z.enum(["vote", "platform", "statement"]),
+  voteId: z.number().int().positive().optional(),
+  source: z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() }),
+  quote: localizedText,
+});
+
 const quizQuestionSchema = z.object({
-  id: z.string(),
+  id: listSlug,
+  topic: z.enum(["institutions", "religion-state", "security", "government", "education", "economy", "society"]),
+  // Which side of the aisle agrees with the statement as worded. The set is
+  // balanced and alternates (tests/qa/quiz.test.ts), so answering "agree" to
+  // everything cannot favour one camp.
+  lean: z.enum(["right", "left"]),
   text: localizedText,
-  // stance per faction id (-2..+2). YAML keys are strings → coerce to number.
-  stances: z.record(z.string(), z.number()),
+  stances: z.record(listSlug, quizStanceSchema),
+});
+const quizFileSchema = z.object({
+  lastReviewed: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  questions: z.array(quizQuestionSchema),
 });
 export type QuizQuestion = z.infer<typeof quizQuestionSchema>;
+export type QuizStance = z.infer<typeof quizStanceSchema>;
+export type QuizFile = z.infer<typeof quizFileSchema>;
 
-let _quiz: QuizQuestion[] | null = null;
+let _quiz: QuizFile | null = null;
 
-export function getQuiz(): QuizQuestion[] {
+export function getQuizFile(): QuizFile {
   if (!_quiz) {
     const raw = fs.readFileSync(path.join(CONTENT_DIR, "quiz.yaml"), "utf8");
-    _quiz = z
-      .object({ questions: z.array(quizQuestionSchema) })
-      .parse(parse(raw)).questions;
+    _quiz = quizFileSchema.parse(parse(raw));
   }
   return _quiz;
+}
+
+export function getQuiz(): QuizQuestion[] {
+  return getQuizFile().questions;
 }
 
 // Budget figures come from Ministry of Finance open data in the DB (sync/budget.ts,
@@ -390,7 +419,6 @@ const electionFactSchema = z.object({
 // Every running list has a stable kebab-case slug. It is THE identity a list
 // carries across content: polls and compass stances key on it, and it survives
 // name changes, mergers and the absence of a Knesset faction id (new lists).
-const listSlug = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, "slug must be kebab-case");
 
 const electionPartySchema = z.object({
   slug: listSlug,
@@ -450,6 +478,30 @@ export type ElectionParty = z.infer<typeof electionPartySchema>;
 export function getRunningLists(): Map<string, ElectionParty> {
   const outlook = getElectionOutlook();
   return new Map((outlook?.parties ?? []).map((p) => [p.slug, p]));
+}
+
+// A running list's display name: the registry's text for the locale, else the
+// sitting faction's curated name (content/factions.yaml carries ar/ru), else
+// the registry's en/he fallback.
+export function listName(list: ElectionParty | undefined, locale: string): string {
+  if (!list) return "";
+  const own = list.name[locale as keyof typeof list.name];
+  if (own) return own;
+  if (list.factionId != null) {
+    const meta = getFactionMeta().get(list.factionId);
+    const curated = meta?.[locale as "he" | "en" | "ar" | "ru"];
+    if (curated) return curated;
+  }
+  return partyText(list.name, locale);
+}
+
+// Direction attributes to pair with listName(): none when the name resolved in
+// the page's locale, else the fallback language's.
+export function listNameAttrs(list: ElectionParty | undefined, locale: string): { dir?: "ltr" | "rtl"; lang?: string } {
+  if (!list) return {};
+  if (list.name[locale as keyof typeof list.name]) return {};
+  if (list.factionId != null && getFactionMeta().get(list.factionId)?.[locale as "he" | "en" | "ar" | "ru"]) return {};
+  return partyTextAttrs(list.name, locale);
 }
 
 let _electionOutlook: ElectionOutlook | null | undefined;

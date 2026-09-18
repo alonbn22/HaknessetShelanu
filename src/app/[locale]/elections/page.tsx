@@ -168,6 +168,15 @@ export default async function ElectionsHistoryPage() {
                   );
                 })()}
               </p>
+              <p className="text-sm">
+                <Link href="/quiz" className="text-accent-ink underline">
+                  {te("compassCta")}
+                </Link>
+                {" · "}
+                <Link href="/elections/positions" className="text-accent-ink underline">
+                  {te("positionsCta")}
+                </Link>
+              </p>
               <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {outlook.parties.map((p) => {
                   // Party's editorial profile — the card previews it and deep-links

@@ -3,11 +3,27 @@
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { cx } from "@/lib/cx";
+import { Button } from "@/components/ui/Button";
+import { ToggleButton, ToggleGroup } from "@/components/ui/ToggleGroup";
+import { MIN_ANSWERS, MIN_COVERAGE } from "@/lib/quiz";
 
-export type QuizQ = { id: string; text: string; stances: Record<number, number> };
-export type QuizFaction = { id: number; name: string; color: string; ballot: string | null };
+// Everything the compass needs, localized on the server. A list absent from a
+// question's `stances` has no sourced position on it and is compared on the
+// other questions only — never scored as neutral.
+export type QuizStanceView = {
+  value: number;
+  basis: "vote" | "platform" | "statement";
+  voteId?: number;
+  url: string;
+  publisher: string;
+  quote: string;
+};
+export type QuizQ = { id: string; text: string; stances: Record<string, QuizStanceView> };
+export type QuizList = { slug: string; name: string; color: string; href?: string };
 
-// Answer scale maps a label to a stance value on the same -2..+2 axis as parties.
+// The reader's scale is the lists' scale: -2..+2. "skip" is a real choice that
+// leaves the question out of the comparison; "neither" (0) is a position.
 const OPTIONS = [
   { key: "agree2", value: 2 },
   { key: "agree1", value: 1 },
@@ -16,61 +32,51 @@ const OPTIONS = [
   { key: "disagree2", value: -2 },
 ] as const;
 
-export function PartyQuiz({
-  questions,
-  factions,
-}: {
-  questions: QuizQ[];
-  factions: QuizFaction[];
-}) {
+
+export function PartyQuiz({ questions, lists }: { questions: QuizQ[]; lists: QuizList[] }) {
   const t = useTranslations("quiz");
-  // answers: questionId -> stance value (or "skip"); important: questionId set
-  const [answers, setAnswers] = useState<Record<string, number>>({});
+  const [answers, setAnswers] = useState<Record<string, number | "skip">>({});
   const [important, setImportant] = useState<Record<string, boolean>>({});
   const [submitted, setSubmitted] = useState(false);
 
-  const answeredCount = Object.keys(answers).length;
+  const answered = questions.filter((q) => typeof answers[q.id] === "number");
+  const canSubmit = answered.length >= MIN_ANSWERS;
 
   const results = useMemo(() => {
-    const scored = factions.map((f) => {
+    const scored = lists.map((l) => {
       let weightSum = 0;
       let agreementSum = 0;
-      const breakdown: {
-        text: string;
-        you: number;
-        party: number;
-        agreement: number;
-        important: boolean;
-      }[] = [];
-      for (const q of questions) {
-        const u = answers[q.id];
-        const p = q.stances[f.id];
-        if (u === undefined || p === undefined) continue; // skipped / no stance
+      const rows: { q: QuizQ; you: number; stance: QuizStanceView | null; agreement: number | null; important: boolean }[] = [];
+      for (const q of answered) {
+        const you = answers[q.id] as number;
+        const stance = q.stances[l.slug] ?? null;
         const imp = !!important[q.id];
+        if (!stance) {
+          rows.push({ q, you, stance: null, agreement: null, important: imp });
+          continue;
+        }
         const w = imp ? 2 : 1;
-        // distance 0..4 → agreement 1..0
-        const agreement = (4 - Math.abs(u - p)) / 4;
+        const agreement = (4 - Math.abs(you - stance.value)) / 4; // 1 = identical, 0 = opposite ends
         agreementSum += agreement * w;
         weightSum += w;
-        breakdown.push({ text: q.text, you: u, party: p, agreement, important: imp });
+        rows.push({ q, you, stance, agreement, important: imp });
       }
-      // Sort the explanation: strongest agreements first, biggest gaps last.
-      breakdown.sort((a, b) => b.agreement - a.agreement);
+      const compared = rows.filter((r) => r.stance).length;
       return {
-        ...f,
-        pct: weightSum ? Math.round((agreementSum / weightSum) * 100) : 0,
-        weightSum,
-        breakdown,
+        ...l,
+        score: weightSum ? agreementSum / weightSum : null,
+        compared,
+        rows,
       };
     });
+    // Deterministic, locale-independent: unrounded score, then slug.
     return scored
-      .filter((s) => s.weightSum > 0)
-      .sort((a, b) => b.pct - a.pct);
-  }, [answers, important, questions, factions]);
+      .filter((s) => s.score != null)
+      .sort((a, b) => b.score! - a.score! || a.slug.localeCompare(b.slug));
+  }, [answers, important, answered, lists]);
 
-  // Map a stance value back to its answer label for the explanation.
-  const stanceLabel = (v: number) =>
-    t(`opt.${OPTIONS.find((o) => o.value === v)?.key ?? "neutral"}`);
+  const label = (v: number) => t(`opt.${OPTIONS.find((o) => o.value === v)?.key ?? "neutral"}`);
+  const basisLabel = (b: QuizStanceView["basis"]) => t(`basis.${b}`);
 
   function reset() {
     setAnswers({});
@@ -79,154 +85,128 @@ export function PartyQuiz({
   }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       <ol className="space-y-4">
-        {questions.map((q, i) => (
-          <li key={q.id} className="rounded-xl bg-white p-4 shadow-sm">
-            <div className="flex items-start gap-2">
-              <span className="text-muted tabular-nums">{i + 1}.</span>
-              <p className="font-medium leading-snug">{q.text}</p>
-            </div>
-            <div className="mt-3 flex flex-wrap gap-2">
-              {OPTIONS.map((o) => {
-                const active = answers[q.id] === o.value;
-                return (
-                  <button
-                    key={o.key}
-                    type="button"
-                    aria-pressed={active}
-                    onClick={() =>
-                      setAnswers((prev) => ({ ...prev, [q.id]: o.value }))
-                    }
-                    className={`rounded-full px-3 py-1.5 text-sm font-medium transition-colors ${
-                      active
-                        ? "bg-accent text-white"
-                        : "bg-black/5 text-foreground hover:bg-black/10"
-                    }`}
-                  >
+        {questions.map((q, i) => {
+          const a = answers[q.id];
+          return (
+            <li key={q.id} className="rounded-card border border-line bg-surface p-4 sm:p-5">
+              <p className="font-medium leading-snug">
+                <span className="me-2 text-muted tabular-nums">{i + 1}.</span>
+                {q.text}
+              </p>
+              <ToggleGroup label={q.text} className="mt-3">
+                {OPTIONS.map((o) => (
+                  <ToggleButton key={o.key} selected={a === o.value} onClick={() => setAnswers((p) => ({ ...p, [q.id]: o.value }))}>
                     {t(`opt.${o.key}`)}
-                  </button>
-                );
-              })}
-              {answers[q.id] !== undefined && (
-                <button
-                  type="button"
-                  onClick={() =>
-                    setAnswers((prev) => {
-                      const next = { ...prev };
-                      delete next[q.id];
-                      return next;
-                    })
-                  }
-                  className="rounded-full px-3 py-1.5 text-sm text-muted hover:bg-black/5"
-                >
-                  {t("opt.clear")}
-                </button>
-              )}
-            </div>
-            <label className="mt-2 inline-flex items-center gap-2 text-xs text-muted">
-              <input
-                type="checkbox"
-                checked={!!important[q.id]}
-                onChange={(e) =>
-                  setImportant((prev) => ({ ...prev, [q.id]: e.target.checked }))
-                }
-              />
-              {t("important")}
-            </label>
-          </li>
-        ))}
+                  </ToggleButton>
+                ))}
+                <ToggleButton selected={a === "skip"} className="text-muted" onClick={() => setAnswers((p) => ({ ...p, [q.id]: "skip" }))}>
+                  {t("opt.skip")}
+                </ToggleButton>
+              </ToggleGroup>
+              <label className="mt-3 inline-flex items-center gap-2 text-sm text-muted">
+                <input type="checkbox" checked={!!important[q.id]} onChange={(e) => setImportant((p) => ({ ...p, [q.id]: e.target.checked }))} />
+                {t("important")}
+              </label>
+            </li>
+          );
+        })}
       </ol>
 
       <div className="flex flex-wrap items-center gap-3">
-        <button
-          type="button"
-          disabled={answeredCount === 0}
-          onClick={() => setSubmitted(true)}
-          className="rounded-lg bg-accent px-5 py-2.5 font-semibold text-white disabled:opacity-40"
-        >
+        <Button disabled={!canSubmit} onClick={() => setSubmitted(true)}>
           {t("seeResults")}
-        </button>
-        <button
-          type="button"
-          onClick={reset}
-          className="rounded-lg bg-black/5 px-4 py-2.5 text-sm hover:bg-black/10"
-        >
+        </Button>
+        <Button variant="ghost" onClick={reset}>
           {t("reset")}
-        </button>
-        <span className="text-sm text-muted">
-          {t("answered", { count: answeredCount, total: questions.length })}
+        </Button>
+        <span className="text-sm text-muted" aria-live="polite">
+          {t("answered", { count: answered.length, total: questions.length })}
+          {!canSubmit && <> · {t("needMore", { min: MIN_ANSWERS })}</>}
         </span>
       </div>
 
-      {submitted && results.length > 0 && (
+      {submitted && canSubmit && (
         <section className="space-y-3" aria-live="polite">
           <h2 className="text-xl font-semibold">{t("resultsTitle")}</h2>
+          <p className="max-w-prose text-sm text-muted">{t("resultsHow", { n: answered.length })}</p>
           <ol className="space-y-2">
-            {results.map((r, i) => (
-              <li key={r.id} className="rounded-xl bg-white shadow-sm">
-                <div className="flex items-center gap-3 p-3">
-                  <span className="w-5 text-center text-muted tabular-nums">{i + 1}</span>
-                  <span
-                    className="inline-block h-4 w-4 shrink-0 rounded-sm"
-                    style={{ backgroundColor: r.color }}
-                  />
-                  <Link
-                    href={`/parties/${r.id}`}
-                    className="min-w-0 flex-1 truncate font-medium hover:underline"
-                  >
-                    {r.name}
-                    {r.ballot && (
-                      <span className="ms-2 text-xs text-muted" dir="rtl" lang="he">
-                        {r.ballot}
-                      </span>
-                    )}
-                  </Link>
-                  <div className="hidden sm:block w-32 h-2 rounded-full bg-black/5" dir="ltr">
-                    <div
-                      className="h-full rounded-full"
-                      style={{ width: `${r.pct}%`, backgroundColor: r.color }}
-                    />
+            {results.map((r, i) => {
+              const pct = Math.round(r.score! * 100);
+              const thin = r.compared < Math.ceil(answered.length * MIN_COVERAGE);
+              return (
+                <li key={r.slug} className={cx("rounded-card border border-line bg-surface", thin && "opacity-70")}>
+                  <div className="grid grid-cols-[1.5rem_1fr_3.5rem] items-center gap-x-3 p-3 sm:grid-cols-[1.5rem_minmax(8rem,14rem)_1fr_3.5rem]">
+                    <span className="text-center text-muted tabular-nums">{i + 1}</span>
+                    <span className="flex min-w-0 items-center gap-2">
+                      <span aria-hidden className="inline-block h-3 w-3 shrink-0 rounded-full" style={{ backgroundColor: r.color }} />
+                      {r.href ? (
+                        <Link href={r.href} className="truncate font-medium hover:underline">
+                          {r.name}
+                        </Link>
+                      ) : (
+                        <span className="truncate font-medium">{r.name}</span>
+                      )}
+                    </span>
+                    <span className="col-span-3 mt-1 block h-2 overflow-hidden rounded-full bg-surface-sunken sm:col-span-1 sm:mt-0">
+                      <span className="block h-full rounded-full" style={{ width: `${pct}%`, backgroundColor: r.color }} />
+                    </span>
+                    <span className="col-start-3 row-start-1 text-end font-semibold tabular-nums sm:col-start-4">{pct}%</span>
+                    <span className="col-span-3 text-xs text-muted sm:col-span-4">
+                      {t("comparedOn", { k: r.compared, n: answered.length })}
+                      {thin && <> · {t("thinCoverage")}</>}
+                    </span>
                   </div>
-                  <span className="w-12 text-end font-bold tabular-nums text-accent">
-                    {r.pct}%
-                  </span>
-                </div>
-                <details className="border-t border-black/5 px-3 py-2">
-                  <summary className="cursor-pointer text-sm font-medium text-accent">
-                    {t("why")}
-                  </summary>
-                  <ul className="mt-2 space-y-2">
-                    {r.breakdown.map((b, j) => {
-                      const tone =
-                        b.agreement >= 0.75
-                          ? "bg-green-600"
-                          : b.agreement <= 0.25
-                            ? "bg-red-600"
-                            : "bg-amber-500";
-                      return (
-                        <li key={j} className="flex gap-2 text-sm">
+                  <details className="border-t border-line px-3 py-2 text-sm">
+                    <summary className="cursor-pointer font-medium text-accent-ink">{t("why")}</summary>
+                    <ul className="mt-2 space-y-2">
+                      {r.rows.map((row) => (
+                        <li key={row.q.id} className="flex gap-2">
                           <span
                             aria-hidden
-                            className={`mt-1.5 h-2 w-2 shrink-0 rounded-full ${tone}`}
+                            className={cx(
+                              "mt-1.5 h-2 w-2 shrink-0 rounded-full",
+                              row.agreement == null ? "bg-neutral" : row.agreement >= 0.75 ? "bg-pass" : row.agreement <= 0.25 ? "bg-fail" : "bg-warn",
+                            )}
                           />
                           <span className="min-w-0">
-                            <span className="text-foreground/80">{b.text}</span>
-                            {b.important && (
-                              <span className="ms-1 text-xs text-accent">★</span>
-                            )}
+                            <span>{row.q.text}</span>
+                            {row.important && <span className="ms-1 text-xs text-accent-ink">★</span>}
                             <span className="mt-0.5 block text-xs text-muted">
-                              {t("youSaid")}: {stanceLabel(b.you)} · {t("partyStance")}:{" "}
-                              {stanceLabel(b.party)}
+                              {t("youSaid")}: {label(row.you)} · {t("listStance")}:{" "}
+                              {row.stance ? (
+                                <>
+                                  {label(row.stance.value)} ({basisLabel(row.stance.basis)}
+                                  {row.stance.voteId != null && (
+                                    <>
+                                      {" · "}
+                                      <Link href={`/votes/${row.stance.voteId}`} className="underline">
+                                        {t("voteRecord")}
+                                      </Link>
+                                    </>
+                                  )}
+                                  {" · "}
+                                  <a href={row.stance.url} target="_blank" rel="noopener noreferrer" className="underline">
+                                    {row.stance.publisher}
+                                  </a>
+                                  )
+                                </>
+                              ) : (
+                                <span>{t("noStance")}</span>
+                              )}
                             </span>
+                            {row.stance?.quote && (
+                              <span className="mt-0.5 block text-xs text-muted">{/^["“„«]/.test(row.stance.quote) ? row.stance.quote : `“${row.stance.quote}”`}</span>
+                            )}
                           </span>
                         </li>
-                      );
-                    })}
-                  </ul>
-                </details>
-              </li>
-            ))}
+                      ))}
+                    </ul>
+                  </details>
+                </li>
+              );
+            })}
           </ol>
           <p className="text-xs text-muted">{t("matchNote")}</p>
         </section>

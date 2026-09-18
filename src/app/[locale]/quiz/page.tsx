@@ -1,50 +1,73 @@
 import { getTranslations, getLocale } from "next-intl/server";
-import { getQuiz, partyText, getPartyProfile } from "@/lib/content";
-import { getFaction, factionName, factionColor } from "@/lib/queries";
-import { PartyQuiz, type QuizFaction, type QuizQ } from "./PartyQuiz";
+import { Link } from "@/i18n/navigation";
+import { rtlLocales } from "@/i18n/routing";
+import { getFactionMeta, getQuizFile, getRunningLists, listName, partyText } from "@/lib/content";
+import { formatDate } from "@/lib/format";
+import { MIN_ANSWERS } from "@/lib/quiz";
+import { PartyQuiz, type QuizList, type QuizQ } from "./PartyQuiz";
 
 export const dynamic = "force-dynamic";
 
+// The election compass: ten statements, every list's stance on each one
+// sourced to a Knesset vote, its platform or a leader's statement — or shown
+// as "no stated position". Nothing is stored or sent anywhere.
 export default async function QuizPage() {
   const t = await getTranslations("quiz");
   const locale = await getLocale();
-  const questions = getQuiz();
+  const file = getQuizFile();
+  const registry = getRunningLists();
+  const factionColor = new Map([...getFactionMeta().values()].map((f) => [f.id, f.color]));
+  const arrow = rtlLocales.has(locale) ? "←" : "→";
 
-  // Localize each statement; keep the per-faction stance map.
-  const qs: QuizQ[] = questions.map((q) => ({
+  const questions: QuizQ[] = file.questions.map((q) => ({
     id: q.id,
     text: partyText(q.text, locale),
     stances: Object.fromEntries(
-      Object.entries(q.stances).map(([k, v]) => [Number(k), v]),
+      Object.entries(q.stances).map(([slug, s]) => [
+        slug,
+        {
+          value: s.value,
+          basis: s.basis,
+          voteId: s.voteId,
+          url: s.source.url,
+          publisher: s.source.publisher ?? s.source.title,
+          quote: partyText(s.quote, locale),
+        },
+      ]),
     ),
   }));
 
-  // The set of factions that appear in the quiz.
-  const ids = [...new Set(questions.flatMap((q) => Object.keys(q.stances).map(Number)))];
-  const factions: QuizFaction[] = ids
-    .map((id) => ({
-      id,
-      name: factionName(id, getFaction(id)?.nameHe ?? "", locale),
-      color: factionColor(id),
-      ballot: getPartyProfile(id)?.ballotLetters ?? null,
-    }))
-    .sort((a, b) => a.name.localeCompare(b.name, locale));
+  // Every running list, in registry order — including lists with few or no
+  // sourced positions, which the results show as thinly compared, not hidden.
+  const lists: QuizList[] = [...registry.values()].map((l) => ({
+    slug: l.slug,
+    name: listName(l, locale),
+    color: (l.factionId != null && factionColor.get(l.factionId)) || l.color || "var(--neutral)",
+    href: l.factionId != null ? `/parties/${l.factionId}` : undefined,
+  }));
 
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-3xl font-bold">{t("title")}</h1>
+        <h1 className="font-display text-3xl font-semibold">{t("title")}</h1>
         <p className="text-muted">{t("subtitle")}</p>
       </div>
 
-      <div className="rounded-xl border border-accent/20 bg-accent/5 p-4 text-sm leading-relaxed">
-        {t("intro")}
+      <div className="rounded-card border border-line bg-surface p-4 text-sm leading-relaxed">
+        <p>{t("intro", { min: MIN_ANSWERS, count: file.questions.length })}</p>
+        <p className="mt-2">
+          <Link href="/elections/positions" className="text-accent-ink underline">
+            {t("positionsLink")} {arrow}
+          </Link>
+        </p>
       </div>
 
-      <PartyQuiz questions={qs} factions={factions} />
+      <PartyQuiz questions={questions} lists={lists} />
 
       <p className="text-xs text-muted">{t("disclaimer")}</p>
-      <p className="text-xs text-muted">{t("sourcesNote")}</p>
+      <p className="text-xs text-muted">
+        {t("sourcesNote")} {t("lastReviewed", { date: formatDate(file.lastReviewed, locale) })}
+      </p>
     </div>
   );
 }

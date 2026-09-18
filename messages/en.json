@@ -381,7 +381,9 @@
     "inDays": "{days, plural, =0 {happening today} one {in # day} other {in # days}}",
     "candidates": "Candidate list",
     "stance": "Stated position on partners",
-    "showAll": "Show the full list"
+    "showAll": "Show the full list",
+    "compassCta": "Election compass: who is closest to your views?",
+    "positionsCta": "What each list says, stance by stance"
   },
   "electionsHistory": {
     "title": "Knesset Elections History",
@@ -445,28 +447,42 @@
     "note": "Source: Knesset Open Data (KNS_PersonToPosition). Ministry names are shown in Hebrew as in the source."
   },
   "quiz": {
-    "title": "Election Compass — which party fits you?",
-    "subtitle": "Answer the statements and see which factions your views are closest to.",
-    "intro": "An educational tool only. The positions attributed to factions are simplifications written by this site from public sources, not official platforms. Ahead of the next election, always check a party's current platform.",
-    "disclaimer": "The match is based only on stance proximity and is not voting advice. The data is editorial and unofficial.",
-    "important": "This issue matters a lot to me",
-    "seeResults": "See results",
-    "reset": "Reset",
-    "answered": "Answered {count} of {total}",
-    "resultsTitle": "Your match with the factions",
-    "matchNote": "Tap a faction to open its page.",
+    "title": "Election compass — who is closest to your views?",
+    "subtitle": "Ten statements. Every list’s stance is documented — a Knesset vote, a platform or a statement — or shown as \"no stated position\".",
+    "intro": "Mark how much you agree with each statement (you can skip). After at least {min} answers you will see which lists are closest to your views, and why. The lists’ stances come from a documented source for every cell — a roll-call vote in the Knesset, the platform the list published, or a statement by its leader — never from the site’s interpretation. A list with no documented stance on a statement is simply not compared on it. Nothing is stored or sent anywhere.",
+    "positionsLink": "See every stance with its source",
+    "disclaimer": "The match is computed from closeness of positions only and is not a recommendation on how to vote. Lists are shown in registration order, not by size.",
+    "sourcesNote": "Every stance links to its source: the Knesset’s vote record, the platform, or the article.",
+    "lastReviewed": "Last reviewed: {date}.",
+    "important": "This matters to me most (double weight)",
+    "seeResults": "Show my results",
+    "reset": "Start over",
+    "answered": "You answered {count} of {total}",
+    "needMore": "at least {min} answers needed",
+    "resultsTitle": "The lists closest to your views",
+    "resultsHow": "The percentage = how close the list’s stances are to your answers, on average over the {n} statements you answered (only where the list has a documented stance).",
+    "comparedOn": "compared on {k} of {n} statements",
+    "thinCoverage": "few documented stances — take with caution",
+    "matchNote": "Clicking a list’s name (when it has a Knesset faction) opens its page.",
     "opt": {
       "agree2": "Strongly agree",
       "agree1": "Agree",
-      "neutral": "Neutral",
+      "neutral": "Neither",
       "disagree1": "Disagree",
       "disagree2": "Strongly disagree",
+      "skip": "Skip",
       "clear": "Clear"
     },
-    "why": "Why this match?",
+    "basis": {
+      "vote": "Knesset vote",
+      "platform": "platform",
+      "statement": "statement"
+    },
+    "voteRecord": "vote record",
+    "why": "Why?",
     "youSaid": "You",
-    "partyStance": "Party",
-    "sourcesNote": "Party stances are the site's reading of platforms, public statements, and Knesset voting records. Each party's page lists its sources."
+    "listStance": "The list",
+    "noStance": "no documented stance — not compared"
   },
   "budget": {
     "title": "State Budget",
@@ -662,14 +678,14 @@
     "sample": "{n} respondents",
     "moe": "±{pct}%",
     "blocsTitle": "The bloc map, as each outlet counted it",
-    "blocsNote": "Bloc membership is the pollster's assumption, not the site's: which list belongs to which bloc is decided differently in each poll. The figures are shown exactly as published.",
+    "blocsNote": "Bloc membership is the pollster’s assumption, not the site’s: which list belongs to which bloc is decided differently in each poll. The figures are shown exactly as published.",
     "blocsBy": "as counted by {institute} for {outlet}",
     "methodologyTitle": "How to read these polls",
     "methodologySample": "Sample and margin of error: a poll of about 500 respondents carries a sampling error of about 4 percentage points — a seat or two for a large list. A one-seat difference between polls is usually noise, not a trend.",
     "methodologyHouses": "Why institutes differ: internet panels versus telephone, weighting by past vote, how undecided and unlikely voters are handled — all of these are systematic and produce steady gaps between houses. That is why the average takes one poll per institute.",
-    "methodologyAverage": "The average: each institute's latest poll from the last {window} days, with equal weight, no smoothing and no quality weighting. The range beside each list shows how far the houses disagree.",
+    "methodologyAverage": "The average: each institute’s latest poll from the last {window} days, with equal weight, no smoothing and no quality weighting. The range beside each list shows how far the houses disagree.",
     "methodologyScope": "What is included: every seat poll published from {cutoff} — the day the candidate lists closed — onward, from every outlet we found. Earlier polls measured lists that no longer exist. No poll was left out because of its results.",
-    "methodologyVerification": "Verification: every figure was entered from the publishing outlet's own article (or its own infographic), never from an aggregator, and the totals were checked against 120. Found an error? Tell us.",
+    "methodologyVerification": "Verification: every figure was entered from the publishing outlet’s own article (or its own infographic), never from an aggregator, and the totals were checked against 120. Found an error? Tell us.",
     "notEnteredTitle": "Polls we know of that were not entered",
     "notEnteredWhy": "{outlet} ({institute}), {date}: {reason}",
     "homeTitle": "Poll of polls",
@@ -688,5 +704,17 @@
     "trendSummary": "{list}: between {min} and {max} seats in {n} polls",
     "trendAverage": "average: {mean}",
     "trendHouseNote": "Each dot is one poll (hover to see who ran it and when). A thin line joins polls by the same institute — so a steady gap between lines is a difference in polling method, not a real change."
+  },
+  "positions": {
+    "title": "What the lists say — stance by stance",
+    "subtitle": "Every list against every statement in the election compass. Each cell is a documented stance — a Knesset vote, a platform or a statement — linked to its source. \"—\" means we found no stated position, not that the list is neutral.",
+    "choose": "Choose a list:",
+    "noStance": "no documented stance",
+    "matrixTitle": "The full table",
+    "legend": "Green — agrees with the statement, red — disagrees, grey — neither. Click a cell to open the source.",
+    "colStatement": "Statement",
+    "matrixPhone": "The full table shows on wide screens; on a narrow screen choose a list above.",
+    "toCompass": "To the election compass",
+    "method": "Stances were taken from roll-call votes in the Knesset (the Knesset’s record), from the platforms the lists published, and from statements reported by major outlets; no stance was inferred from ideology."
   }
 }

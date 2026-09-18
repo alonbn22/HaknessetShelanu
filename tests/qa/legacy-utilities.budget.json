@@ -24,7 +24,6 @@
   "app/[locale]/ministers/page.tsx": 7,
   "app/[locale]/parties/[id]/page.tsx": 3,
   "app/[locale]/parties/page.tsx": 3,
-  "app/[locale]/quiz/PartyQuiz.tsx": 12,
   "app/[locale]/search/page.tsx": 3,
   "app/[locale]/sources/page.tsx": 3,
   "app/[locale]/tickets/page.tsx": 10,

@@ -332,6 +332,9 @@ const quizStanceSchema = z.object({
   value: z.number().int().min(-2).max(2),
   basis: z.enum(["vote", "platform", "statement"]),
   voteId: z.number().int().positive().optional(),
+  // When the vote was cast by a predecessor faction (Yesh Atid for Together,
+  // National Unity for Blue and White, Labor for the Democrats), say whose.
+  recordOf: localizedText.optional(),
   source: z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() }),
   quote: localizedText,
 });

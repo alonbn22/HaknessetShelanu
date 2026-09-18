@@ -15,8 +15,11 @@ export type QuizStanceView = {
   value: number;
   basis: "vote" | "platform" | "statement";
   voteId?: number;
+  /** Whose vote it was, when cast by a predecessor faction. */
+  recordOf?: string;
   url: string;
   publisher: string;
+  publisherRtl: boolean;
   quote: string;
 };
 export type QuizQ = { id: string; text: string; stances: Record<string, QuizStanceView> };
@@ -69,10 +72,14 @@ export function PartyQuiz({ questions, lists }: { questions: QuizQ[]; lists: Qui
         rows,
       };
     });
-    // Deterministic, locale-independent: unrounded score, then slug.
-    return scored
-      .filter((s) => s.score != null)
-      .sort((a, b) => b.score! - a.score! || a.slug.localeCompare(b.slug));
+    // Deterministic, locale-independent: unrounded score, then slug (plain
+    // code-point order, not a collator). Lists with nothing to compare stay at
+    // the end, visible, rather than vanishing.
+    const bySlug = (a: { slug: string }, b: { slug: string }) => (a.slug < b.slug ? -1 : a.slug > b.slug ? 1 : 0);
+    return [
+      ...scored.filter((s) => s.score != null).sort((a, b) => b.score! - a.score! || bySlug(a, b)),
+      ...scored.filter((s) => s.score == null).sort(bySlug),
+    ];
   }, [answers, important, answered, lists]);
 
   const label = (v: number) => t(`opt.${OPTIONS.find((o) => o.value === v)?.key ?? "neutral"}`);
@@ -133,7 +140,18 @@ export function PartyQuiz({ questions, lists }: { questions: QuizQ[]; lists: Qui
           <p className="max-w-prose text-sm text-muted">{t("resultsHow", { n: answered.length })}</p>
           <ol className="space-y-2">
             {results.map((r, i) => {
-              const pct = Math.round(r.score! * 100);
+              if (r.score == null) {
+                return (
+                  <li key={r.slug} className="rounded-card border border-dashed border-line px-3 py-2 text-sm text-muted">
+                    <span className="flex items-center gap-2">
+                      <span aria-hidden className="inline-block h-3 w-3 shrink-0 rounded-full" style={{ backgroundColor: r.color }} />
+                      <span className="font-medium">{r.name}</span>
+                      <span>— {t("noStanceAtAll")}</span>
+                    </span>
+                  </li>
+                );
+              }
+              const pct = Math.round(r.score * 100);
               const thin = r.compared < Math.ceil(answered.length * MIN_COVERAGE);
               return (
                 <li key={r.slug} className={cx("rounded-card border border-line bg-surface", thin && "opacity-70")}>
@@ -178,6 +196,7 @@ export function PartyQuiz({ questions, lists }: { questions: QuizQ[]; lists: Qui
                               {row.stance ? (
                                 <>
                                   {label(row.stance.value)} ({basisLabel(row.stance.basis)}
+                                  {row.stance.recordOf && <> — {row.stance.recordOf}</>}
                                   {row.stance.voteId != null && (
                                     <>
                                       {" · "}
@@ -187,7 +206,14 @@ export function PartyQuiz({ questions, lists }: { questions: QuizQ[]; lists: Qui
                                     </>
                                   )}
                                   {" · "}
-                                  <a href={row.stance.url} target="_blank" rel="noopener noreferrer" className="underline">
+                                  <a
+                                    href={row.stance.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="underline"
+                                    dir={row.stance.publisherRtl ? "rtl" : undefined}
+                                    lang={row.stance.publisherRtl ? "he" : undefined}
+                                  >
                                     {row.stance.publisher}
                                   </a>
                                   )
@@ -208,7 +234,6 @@ export function PartyQuiz({ questions, lists }: { questions: QuizQ[]; lists: Qui
               );
             })}
           </ol>
-          <p className="text-xs text-muted">{t("matchNote")}</p>
         </section>
       )}
     </div>

@@ -3,6 +3,7 @@ import { Link } from "@/i18n/navigation";
 import { rtlLocales } from "@/i18n/routing";
 import { getFactionMeta, getQuizFile, getRunningLists, listName, partyText } from "@/lib/content";
 import { formatDate } from "@/lib/format";
+import { isHebrew } from "@/lib/text";
 import { MIN_ANSWERS } from "@/lib/quiz";
 import { PartyQuiz, type QuizList, type QuizQ } from "./PartyQuiz";
 
@@ -29,8 +30,10 @@ export default async function QuizPage() {
           value: s.value,
           basis: s.basis,
           voteId: s.voteId,
+          recordOf: s.recordOf ? partyText(s.recordOf, locale) : undefined,
           url: s.source.url,
           publisher: s.source.publisher ?? s.source.title,
+          publisherRtl: locale !== "he" && isHebrew(s.source.publisher ?? s.source.title),
           quote: partyText(s.quote, locale),
         },
       ]),
@@ -55,6 +58,8 @@ export default async function QuizPage() {
 
       <div className="rounded-card border border-line bg-surface p-4 text-sm leading-relaxed">
         <p>{t("intro", { min: MIN_ANSWERS, count: file.questions.length })}</p>
+        <p className="mt-2 text-muted">{t("voteRule")}</p>
+        <p className="mt-2 text-muted">{t("topicsNote")}</p>
         <p className="mt-2">
           <Link href="/elections/positions" className="text-accent-ink underline">
             {t("positionsLink")} {arrow}

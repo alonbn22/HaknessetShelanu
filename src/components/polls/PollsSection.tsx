@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import {
@@ -12,6 +13,7 @@ import {
   type Poll,
 } from "@/lib/content";
 import { formatDate } from "@/lib/format";
+import { rtlAttrs } from "@/lib/text";
 import { pollOfPolls, trendSeries, AVERAGE_WINDOW_DAYS } from "@/lib/polls";
 import { Card } from "@/components/ui/Card";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -30,12 +32,20 @@ function listColor(list: ElectionParty, factionColor: Map<number, string>): stri
   return (list.factionId != null && factionColor.get(list.factionId)) || list.color || "var(--neutral)";
 }
 
+// Every source the poll cites (a figure may come from a second article), each
+// named by its publisher and marked RTL when that name is Hebrew on a non-Hebrew page.
 function SourceLink({ poll, label }: { poll: Poll; label: string }) {
-  const s = poll.sources[0];
   return (
-    <a className="underline hover:text-accent-ink" href={s.url} target="_blank" rel="noopener noreferrer" title={s.title}>
-      {s.publisher ?? label}
-    </a>
+    <>
+      {poll.sources.map((s, i) => (
+        <span key={s.url}>
+          {i > 0 && " · "}
+          <a className="underline hover:text-accent-ink" href={s.url} target="_blank" rel="noopener noreferrer" title={s.title} {...rtlAttrs(s.publisher ?? label)}>
+            {s.publisher ?? label}
+          </a>
+        </span>
+      ))}
+    </>
   );
 }
 
@@ -63,10 +73,10 @@ export async function PollsSection({ id = "polls" }: { id?: string }) {
   const oldest = polls[polls.length - 1].published;
   const newest = polls[0].published;
   const avg = pollOfPolls(polls, slugs);
+  // Every list that any input mentions, including those every input puts below
+  // the threshold — shown at the bottom as 0, not dropped.
   const avgRows = avg
-    ? [...avg.lists]
-        .filter((l) => l.max > 0)
-        .sort((a, b) => b.mean - a.mean || slugs.indexOf(a.slug) - slugs.indexOf(b.slug))
+    ? [...avg.lists].sort((a, b) => b.mean - a.mean || slugs.indexOf(a.slug) - slugs.indexOf(b.slug))
     : [];
   const barMax = Math.max(30, ...avgRows.map((l) => l.max));
 
@@ -113,9 +123,6 @@ export async function PollsSection({ id = "polls" }: { id?: string }) {
         }),
       };
     });
-  // The chart opens on the list the average puts first — a documented, data-driven
-  // default, and the reader picks any other with one tap.
-  const initialLine = avgRows[0]?.slug ?? lines[0]?.slug ?? "";
 
   const seatsIn = (p: Poll) =>
     [...slugs]
@@ -173,8 +180,14 @@ export async function PollsSection({ id = "polls" }: { id?: string }) {
                     <span className="absolute inset-y-0 start-0 rounded-full" style={{ width: `${pct}%`, backgroundColor: colorOf(l.slug) }} />
                   </span>
                   <span className="col-span-2 -mt-1 text-xs text-muted sm:col-span-1 sm:col-start-3">
-                    {t("averageRange", { min: l.min, max: l.max })}
-                    {l.above < avg.institutes && <> · {t("averageBelow", { m: avg.institutes - l.above, n: avg.institutes })}</>}
+                    {l.max === 0
+                      ? t("belowAll", { n: avg.institutes })
+                      : (
+                        <>
+                          {t("averageRange", { min: l.min, max: l.max })}
+                          {l.above < avg.institutes && <> · {t("averageBelow", { m: avg.institutes - l.above, n: avg.institutes })}</>}
+                        </>
+                      )}
                   </span>
                 </li>
               );
@@ -203,7 +216,6 @@ export async function PollsSection({ id = "polls" }: { id?: string }) {
           <p className="max-w-prose text-sm text-muted">{t("trendHint")}</p>
           <PollTrend
             lines={lines}
-            initial={initialLine}
             from={file.cutoff}
             to={newest}
             locale={locale}
@@ -241,9 +253,15 @@ export async function PollsSection({ id = "polls" }: { id?: string }) {
             </thead>
             <tbody className="divide-y divide-line">
               {polls.map((p) => (
-                <tr key={p.id}>
+                <Fragment key={p.id}>
+                <tr>
                   <th scope="row" className="sticky start-0 whitespace-nowrap bg-surface px-3 py-2 text-start font-medium tabular-nums">
                     {formatDate(p.published, locale)}
+                    {p.fieldwork && (
+                      <span className="block text-xs font-normal text-muted">
+                        {t("fieldwork", { from: formatDate(p.fieldwork.from, locale), to: formatDate(p.fieldwork.to, locale) })}
+                      </span>
+                    )}
                   </th>
                   <td className="whitespace-nowrap px-3 py-2" {...partyTextAttrs(p.outlet, locale)}>{partyText(p.outlet, locale)}</td>
                   <td className="whitespace-nowrap px-3 py-2 text-muted" {...partyTextAttrs(p.institute, locale)}>{partyText(p.institute, locale)}</td>
@@ -266,6 +284,16 @@ export async function PollsSection({ id = "polls" }: { id?: string }) {
                     <SourceLink poll={p} label={tc("source")} />
                   </td>
                 </tr>
+                {(p.note || p.belowThresholdNote) && (
+                  <tr className="!border-t-0">
+                    <td colSpan={5 + slugs.length} className="px-3 pb-2 text-xs text-muted">
+                      {p.belowThresholdNote && <span {...rtlAttrs(p.belowThresholdNote)}>{p.belowThresholdNote}</span>}
+                      {p.belowThresholdNote && p.note && " · "}
+                      {p.note && <span {...rtlAttrs(p.note)}>{p.note}</span>}
+                    </td>
+                  </tr>
+                )}
+                </Fragment>
               ))}
             </tbody>
           </table>
@@ -296,11 +324,16 @@ export async function PollsSection({ id = "polls" }: { id?: string }) {
                   </span>
                 ))}
               </p>
+              {p.fieldwork && (
+                <p className="text-xs text-muted">{t("fieldwork", { from: formatDate(p.fieldwork.from, locale), to: formatDate(p.fieldwork.to, locale) })}</p>
+              )}
               {p.belowThreshold.length > 0 && (
                 <p className="text-xs text-muted">
                   {t("below")}: {p.belowThreshold.map((s) => nameOf(s)).join(", ")}
                 </p>
               )}
+              {p.belowThresholdNote && <p className="text-xs text-muted" {...rtlAttrs(p.belowThresholdNote)}>{p.belowThresholdNote}</p>}
+              {p.note && <p className="text-xs text-muted" {...rtlAttrs(p.note)}>{p.note}</p>}
               <p className="text-xs text-muted">
                 {tc("source")}: <SourceLink poll={p} label={partyText(p.outlet, locale)} />
               </p>

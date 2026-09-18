@@ -274,13 +274,12 @@ export function Plenum({
   return (
     <div className="space-y-5">
       <div className="relative" ref={containerRef}>
-        {/* The arc, from sm up. */}
+        {/* The arc, from sm up. The group carries the name; the seats inside are links. */}
+        <div role="group" aria-label={t("hemicycle.aria", { coalition: coalitionSeats, opposition: oppositionSeats })} className="hidden sm:block">
         <svg
           viewBox={`${-pad - AISLE} ${-pad} ${width} ${OUTER_R + pad * 2}`}
-          className="mx-auto hidden w-full max-w-3xl sm:block"
+          className="mx-auto w-full max-w-3xl"
           style={{ direction: "ltr" }}
-          role="img"
-          aria-label={t("hemicycle.aria", { coalition: coalitionSeats, opposition: oppositionSeats })}
         >
           {placed.items.map(({ seat, x, y }, i) => renderSeat(seat, x, y, placed.seatR, 1.4, i))}
           {/* The split, set in the display face at the aisle. */}
@@ -309,14 +308,14 @@ export function Plenum({
             {t("common.coalition")}
           </text>
         </svg>
+        </div>
 
         {/* The same hall on a phone: two blocks across the aisle. */}
+        <div role="group" aria-label={t("hemicycle.aria", { coalition: coalitionSeats, opposition: oppositionSeats })} className="sm:hidden">
         <svg
           viewBox={`-2 -18 ${strip.width + 4} ${strip.height + 30}`}
-          className="mx-auto block w-full sm:hidden"
+          className="mx-auto block w-full"
           style={{ direction: "ltr" }}
-          role="img"
-          aria-label={t("hemicycle.aria", { coalition: coalitionSeats, opposition: oppositionSeats })}
         >
           {strip.items.map(({ seat, x, y }) => renderSeat(seat, x, y, strip.cell * 0.36, 1.2, sequence.indexOf(seat)))}
           <text
@@ -344,6 +343,7 @@ export function Plenum({
             {t("common.coalition")}
           </text>
         </svg>
+        </div>
 
         {/* The seat card. role="tooltip": it describes the focused seat link. */}
         {card && cardSeat && (

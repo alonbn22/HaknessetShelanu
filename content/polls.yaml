@@ -21,7 +21,6 @@ cutoff: "2026-09-08"
 threshold: 3.25
 thresholdSources:
   - { url: "https://main.knesset.gov.il/EN/activity/mmm/The%20NationalElectoralThreshold.pdf", title: "The National Electoral Threshold: A Comparative Review (Knesset Research and Information Center, 2019)", publisher: "The Knesset" }
-  - { url: "https://www.maariv.co.il/news/politics/article-1368599", title: "סקר מנדטים של מעריב (אחוז החסימה העומד על 3.25%)", publisher: "מעריב" }
 # Polls we know of but could not verify from a text source. Listed, not scored.
 notEntered:
   - published: "2026-09-09"
@@ -29,19 +28,19 @@ notEntered:
     institute: { he: "מאגר מוחות", en: "Maagar Mochot" }
     url: "https://www.ch16.co.il/vod.html?id=aab4640f-335f-44c1-8f41-c4fbf4671081"
     reason:
-      he: "הסקר שודר במהדורה המרכזית בלבד (וידאו); לא נמצא פרסום בכתב של המכון או הערוץ שניתן לאמת ממנו את המספרים."
-      en: "Broadcast only (video) in the main news edition; no written publication by the channel or the institute was found to verify the figures from."
-      ar: "بُثّ في نشرة الأخبار الرئيسية فقط (فيديو)؛ لم يُعثر على نشر مكتوب من القناة أو المعهد يمكن التحقق من الأرقام منه."
-      ru: "Показан только в основном выпуске новостей (видео); письменной публикации канала или института, по которой можно проверить цифры, не найдено."
+      he: "הסקר שודר במהדורה המרכזית בלבד. האתר מזין מספרים רק מפרסום כתוב או גרפי של הגוף המפרסם שאפשר לקשר אליו ולקרוא שוב (כתבה, אינפוגרפיקה, תרשים) — לא מפריים של שידור; לא נמצא פרסום כזה של הערוץ או המכון."
+      en: "Broadcast only in the main news edition. The site enters figures only from a written or graphic publication by the outlet that can be linked and re-read (an article, an infographic, a chart) — not from a frame of a broadcast; no such publication by the channel or the institute was found."
+      ar: "بُثّ في نشرة الأخبار الرئيسية فقط. يُدخل الموقع الأرقام فقط من منشور مكتوب أو رسومي للجهة الناشرة يمكن ربطه وإعادة قراءته (مقال، إنفوغرافيك، رسم بياني) — لا من لقطة بث؛ لم يُعثر على منشور كهذا من القناة أو المعهد."
+      ru: "Показан только в основном выпуске новостей. Сайт вносит цифры только из письменной или графической публикации издания, на которую можно сослаться и перечитать (статья, инфографика, диаграмма), а не из кадра эфира; такой публикации канала или института не найдено."
   - published: "2026-09-16"
     outlet: { he: "ערוץ 16", en: "Channel 16" }
     institute: { he: "מאגר מוחות (יצחק כץ)", en: "Maagar Mochot (Yitzhak Katz)" }
     url: "https://themadad.com/polls26/"
     reason:
-      he: "רשום באינדקס הסקרים של 'המדד' (16.9.2026, סוקר: יצחק כץ), אך שודר בלבד; לא נמצא פרסום בכתב של הערוץ או המכון."
-      en: "Indexed by HaMadad's poll archive (16 Sep 2026, pollster: Yitzhak Katz) but broadcast only; no written publication by the channel or the institute was found."
-      ar: "مُدرج في أرشيف استطلاعات «هامداد» (16.9.2026، جهة الاستطلاع: يتسحاق كاتس) لكنه بُثّ فقط؛ لم يُعثر على نشر مكتوب من القناة أو المعهد."
-      ru: "Указан в архиве опросов «ХаМадад» (16.09.2026, социолог: Ицхак Кац), но только показан в эфире; письменной публикации канала или института не найдено."
+      he: "רשום באינדקס הסקרים של 'המדד' (16.9.2026, סוקר: יצחק כץ), אך שודר בלבד; לא נמצא פרסום כתוב או גרפי של הערוץ או המכון שאפשר לקשר אליו — אותו כלל כמו לסקר הקודם של הערוץ."
+      en: "Indexed by HaMadad's poll archive (16 Sep 2026, pollster: Yitzhak Katz) but broadcast only; no linkable written or graphic publication by the channel or the institute was found — the same rule as for the channel's earlier poll."
+      ar: "مُدرج في أرشيف استطلاعات «هامداد» (16.9.2026، جهة الاستطلاع: يتسحاق كاتس) لكنه بُثّ فقط؛ لم يُعثر على منشور مكتوب أو رسومي من القناة أو المعهد يمكن ربطه — القاعدة نفسها كما في استطلاع القناة السابق."
+      ru: "Указан в архиве опросов «ХаМадад» (16.09.2026, социолог: Ицхак Кац), но только показан в эфире; письменной или графической публикации канала или института, на которую можно сослаться, не найдено — то же правило, что и для предыдущего опроса канала."
 # Other published averages, for comparison — their numbers, their method, credited.
 externalAverages:
   - name: { he: "ממוצע המדד", en: "HaMadad average" }

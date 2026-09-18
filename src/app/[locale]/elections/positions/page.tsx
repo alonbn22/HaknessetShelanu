@@ -4,6 +4,7 @@ import { rtlLocales } from "@/i18n/routing";
 import { getFactionMeta, getQuizFile, getRunningLists, listName, partyText, partyTextAttrs, type QuizStance } from "@/lib/content";
 import { formatDate } from "@/lib/format";
 import { cx } from "@/lib/cx";
+import { rtlAttrs } from "@/lib/text";
 import { Card } from "@/components/ui/Card";
 import { TableFrame } from "@/components/ui/TableFrame";
 import { ToggleGroup } from "@/components/ui/ToggleGroup";
@@ -18,12 +19,14 @@ export const dynamic = "force-dynamic";
 // default.
 
 // Short, colour-blind-safe labels for the -2..+2 scale (a legend explains them).
+// Agree/disagree are not pass/fail: the two sides get non-valenced treatments
+// (a filled accent chip vs. an outlined one), "neither" a neutral one.
 const CELL: Record<number, { key: "agree2" | "agree1" | "neutral" | "disagree1" | "disagree2"; cls: string }> = {
-  2: { key: "agree2", cls: "bg-pass-soft text-pass-ink" },
-  1: { key: "agree1", cls: "bg-pass-soft text-pass-ink" },
+  2: { key: "agree2", cls: "bg-accent-soft text-accent-ink" },
+  1: { key: "agree1", cls: "bg-accent-soft text-accent-ink" },
   0: { key: "neutral", cls: "bg-neutral-soft text-neutral-ink" },
-  [-1]: { key: "disagree1", cls: "bg-fail-soft text-fail-ink" },
-  [-2]: { key: "disagree2", cls: "bg-fail-soft text-fail-ink" },
+  [-1]: { key: "disagree1", cls: "border border-line-strong text-foreground" },
+  [-2]: { key: "disagree2", cls: "border border-line-strong text-foreground" },
 };
 
 // Quotes from platforms already carry their own quotation marks; only bare
@@ -48,13 +51,14 @@ export default async function PositionsPage({ searchParams }: { searchParams: Pr
   const chosen = params.list && registry.has(params.list) ? registry.get(params.list)! : null;
 
   const short = (s: QuizStance | undefined) => (s ? tq(`opt.${CELL[s.value].key}`) : "—");
+  const basisOf = (s: QuizStance) => `${tq(`basis.${s.basis}`)}${s.recordOf ? ` — ${partyText(s.recordOf, locale)}` : ""}`;
   const Cell = ({ s }: { s: QuizStance | undefined }) =>
     s ? (
       <a
         href={s.source.url}
         target="_blank"
         rel="noopener noreferrer"
-        title={s.source.title}
+        title={`${basisOf(s)} · ${s.source.title}`}
         className={cx("inline-block rounded-chip px-1.5 py-0.5 text-xs font-medium underline underline-offset-2", CELL[s.value].cls)}
       >
         {short(s)}
@@ -98,12 +102,12 @@ export default async function PositionsPage({ searchParams }: { searchParams: Pr
                   {s ? (
                     <>
                       <p>
-                        <Cell s={s} /> <span className="text-xs text-muted">({tq(`basis.${s.basis}`)})</span>
+                        <Cell s={s} /> <span className="text-xs text-muted">({basisOf(s)})</span>
                       </p>
                       <p className="text-xs text-muted" {...partyTextAttrs(s.quote, locale)}>{quoted(partyText(s.quote, locale))}</p>
                       <p className="text-xs text-muted">
                         {tc("source")}:{" "}
-                        <a href={s.source.url} target="_blank" rel="noopener noreferrer" className="underline hover:text-accent-ink">
+                        <a href={s.source.url} target="_blank" rel="noopener noreferrer" className="underline hover:text-accent-ink" {...rtlAttrs(s.source.publisher ?? s.source.title)}>
                           {s.source.publisher ?? s.source.title}
                         </a>
                         {s.voteId != null && (

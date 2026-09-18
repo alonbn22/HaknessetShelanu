@@ -45,8 +45,8 @@ keyDates:
     date: "2026-09-27"
     label: { he: "אישור הרשימות הסופי", en: "Final approval of the lists" }
     detail:
-      he: "לפי הדיווח, ועדת הבחירות המרכזית צפויה לאשר סופית את הרשימות עד 27 בספטמבר 2026."
-      en: "Per reporting, the Central Elections Committee is expected to give final approval to the lists by September 27, 2026."
+      he: "לפי ציר הזמן של ועדת הבחירות המרכזית: ב-27 בספטמבר 2026 מתפרסמות ההודעות על אישור רשימות המועמדים (סעיף 63 לחוק) או על סירוב לאשרן."
+      en: "Per the Central Elections Committee's timeline: on September 27, 2026 the notices approving the candidate lists (section 63 of the law) — or refusing to — are published."
     status: confirmed
     sources:
       - url: "https://www.bechirot.gov.il/home/"
@@ -120,8 +120,8 @@ keyDates:
     date: "2026-11-04"
     label: { he: "תוצאות רשמיות", en: "Official results" }
     detail:
-      he: "לפי דיווחים, התוצאות הסופיות צפויות עד 4 בנובמבר (שמונה ימים אחרי הבחירות); ערעורים עד 18 בנובמבר."
-      en: "Per reports, final results are expected by November 4 (eight days after the election); appeals by November 18."
+      he: "לפי ציר הזמן של ועדת הבחירות המרכזית: פרסום תוצאות הבחירות ב-4 בנובמבר 2026 (שמונה ימים אחרי הבחירות, לפי סעיף 11 לחוק-יסוד: הכנסת); לפי דיווחים, ערעורים עד 18 בנובמבר."
+      en: "Per the Central Elections Committee's timeline: the election results are published on November 4, 2026 (eight days after the election, under section 11 of Basic Law: The Knesset); per reports, appeals by November 18."
     status: confirmed
     sources:
       - url: "https://www.bechirot.gov.il/home/"
@@ -192,13 +192,13 @@ facts:
   - key: statutory-basis
     label: { he: "הבסיס החוקי למועד", en: "Statutory basis for the date" }
     detail:
-      he: "לפי חוק-יסוד: הכנסת (סעיפים 8–9), בתום כהונה מלאה הבחירות מתקיימות ביום שלישי בחודש חשוון; מכאן נגזר המועד 27 באוקטובר 2026 — המועד המאוחר ביותר המותר בחוק."
-      en: "Under Basic Law: The Knesset (sections 8–9), after a full term elections are held on a Tuesday in the Hebrew month of Cheshvan; this yields October 27, 2026 — the latest date permitted by law."
+      he: "לפי חוק-יסוד: הכנסת (סעיפים 8–9), בתום כהונה מלאה הבחירות מתקיימות ביום שלישי השלישי בחודש חשוון; מכאן נגזר המועד 27 באוקטובר 2026 (ט\"ז בחשוון התשפ\"ז)."
+      en: "Under Basic Law: The Knesset (sections 8–9), after a full term elections are held on the third Tuesday of the Hebrew month of Cheshvan; this yields October 27, 2026 (16 Cheshvan 5787)."
     status: scheduled-by-law
     sources:
-      - url: "https://en.wikipedia.org/wiki/2026_Israeli_legislative_election"
-        title: "2026 Israeli legislative election"
-        publisher: "Wikipedia"
+      - url: "https://m.knesset.gov.il/EN/activity/documents/BasicLawsPDF/BasicLawTheKnesset.pdf"
+        title: "Basic Law: The Knesset (arts. 8–9)"
+        publisher: "The Knesset"
       - url: "https://www.timesofisrael.com/judge-sets-date-for-next-scheduled-elections-for-october-2026/"
         title: "October 27, 2026: Judge sets date for next scheduled elections"
         publisher: "The Times of Israel"
@@ -491,8 +491,8 @@ parties:
       he: "הציונות הדתית וזהות של משה פייגלין התאחדו לרשימה אחת שהוגשה ב-8 בספטמבר 2026: סמוטריץ' בראשה, פייגלין במקום השני, אורית סטרוק ושמחה רוטמן אחריהם."
       en: "Religious Zionism and Moshe Feiglin's Zehut merged into one list, submitted September 8, 2026: Smotrich leads, Feiglin is second, followed by Orit Strock and Simcha Rothman."
     stance:
-      he: "סמוטריץ' תקף את ריצתו העצמאית של עופר וינטר וטען כי דחה \"כל הצעה לאחדות במחנה הלאומי\" (N12, 8.9.2026) — הרשימה ממקמת עצמה במחנה הימין."
-      en: "Smotrich attacked Ofer Winter's independent run, saying Winter had refused \"every proposal for unity in the national camp\" (N12, Sept 8, 2026) — the list places itself in the right-wing camp."
+      he: "סמוטריץ' על ריצתו העצמאית של וינטר: וינטר דחה \"כל הצעה לאחדות במחנה הלאומי\" (N12, 8.9.2026)."
+      en: "Smotrich on Ofer Winter's independent run: Winter refused \"every proposal for unity in the national camp\" (N12, Sept 8, 2026)."
     candidates:
       - { he: "בצלאל סמוטריץ'", personId: 30055 }
       - { he: "משה פייגלין" }
@@ -596,9 +596,6 @@ parties:
     note:
       he: "רשימה חדשה בראשות האלוף במיל' עופר וינטר, שהוגשה ב-7 בספטמבר 2026 לאחר שמגעי איחוד עם הציונות הדתית ועם 'הציבור החרדי' לא צלחו; יוסף חדאד במקום השני."
       en: "A new list led by reserve Maj. Gen. Ofer Winter, submitted September 7, 2026 after merger talks with Religious Zionism and with 'The Haredi Public' failed; Yoseph Haddad is second."
-    stance:
-      he: "לפי N12, וינטר דחה הצעות לאיחוד במחנה הימין ובחר בריצה עצמאית."
-      en: "Per N12, Winter turned down unification offers within the right-wing camp and chose to run independently."
     candidates:
       - { he: "עופר וינטר" }
       - { he: "יוסף חדאד" }
@@ -804,24 +801,6 @@ stats:
         title: "אושר תקציב ועדת הבחירות בסך 538 מיליון שקל"
         publisher: "Ynet"
 
-news:
-  - date: "2026-09-08"
-    text:
-      he: "38 רשימות הוגשו לוועדת הבחירות המרכזית. בעמוד זה מופיעות הרשימות שהרכבן פורסם; רשימות נוספות יתווספו עם פרסום הרשימות המאושרות (צפוי עד 27 בספטמבר)."
-      en: "38 lists were submitted to the Central Elections Committee. This page shows the lists whose rosters have been published; further lists will be added when the approved lists are published (expected by September 27)."
-  - date: "2026-07-17"
-    text:
-      he: "הכנסת ה-25 התפזרה רשמית בתום קדנציה מלאה; הבחירות יתקיימו במועדן החוקי, 27 באוקטובר 2026."
-      en: "The 25th Knesset formally dispersed at the end of a full term; the election will be held on its statutory date, October 27, 2026."
-  - date: "2026-07-05"
-    text:
-      he: "מליאת הכנסת עיגנה בחקיקה (בקריאה שנייה ושלישית) את מועד הבחירות — 27 באוקטובר 2026."
-      en: "The Knesset plenum anchored the election date — October 27, 2026 — in legislation (second and third readings)."
-  - date: "2026-04-26"
-    text:
-      he: "בנט ולפיד הכריזו על ריצה משותפת ('ביחד') בראשות בנט."
-      en: "Bennett and Lapid announced a joint run (\"Together\") headed by Bennett."
-
 # How to vote — from the Central Elections Committee's voter information and
 # timeline (gov.il / bechirot.gov.il) and Basic Law: The Knesset.
 howToVote:
@@ -864,10 +843,13 @@ howToVote:
   - key: htv-access
     label: { he: "נגישות", en: "Accessibility" }
     detail:
-      he: "כ-6,231 קלפיות נגישות לאנשים המוגבלים בניידות, וכ-3,510 קלפיות נגישות מיוחדות שבהן רשאי להצביע מי שמוגבל בניידות והקלפי שלו אינה נגישה — עם הצהרה בפני מזכיר הקלפי, במעטפה כפולה. רשימת הקלפיות הנגישות מתפרסמת סמוך לבחירות."
-      en: "About 6,231 stations accessible to people with limited mobility, and about 3,510 special accessible stations where anyone with limited mobility whose own station is not accessible may vote — with a declaration to the station secretary, by double envelope. The list is published close to election day."
+      he: "6,208 קלפיות נגישות לאנשים המוגבלים בניידות (לפי מפת הקלפיות הסופית, 6.9.2026), ו-3,620 קלפיות נגישות מיוחדות שבהן רשאי להצביע מי שמוגבל בניידות והקלפי שלו אינה נגישה — עם הצהרה בפני מזכיר הקלפי, במעטפה כפולה. רשימת הקלפיות הנגישות מתפרסמת סמוך לבחירות."
+      en: "6,208 stations accessible to people with limited mobility (per the final station map, 6 Sep 2026), and 3,620 special accessible stations where anyone with limited mobility whose own station is not accessible may vote — with a declaration to the station secretary, by double envelope. The list is published close to election day."
     status: confirmed
     sources:
+      - url: "https://www.gov.il/he/pages/26elections-info"
+        title: "מידע לבוחר — נתונים כלליים על הבחירות (מפת הקלפיות הסופית, 6.9.2026)"
+        publisher: "ועדת הבחירות המרכזית / gov.il"
       - url: "https://www.gov.il/he/pages/26elections-info?chapterIndex=7"
         title: "הצבעת אנשים המוגבלים בניידות — מידע לבוחר"
         publisher: "ועדת הבחירות המרכזית / gov.il"

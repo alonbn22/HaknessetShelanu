@@ -45,23 +45,25 @@ export function PollTrend({
   labels,
 }: {
   lines: TrendLine[];
-  initial: string;
+  /** Optional list to open on; by default nothing is lifted until the reader chooses. */
+  initial?: string;
   from: string; // ISO — the axis starts here (the cut-off)
   to: string; // ISO — the newest poll
   locale: string;
   labels: { aria: string; choose: string; threshold: string; houseNote: string };
 }) {
-  const [selected, setSelected] = useState<string>(initial);
-  const line = lines.find((l) => l.slug === selected) ?? lines[0];
+  const [selected, setSelected] = useState<string | null>(initial ?? null);
+  const line = lines.find((l) => l.slug === selected) ?? null;
+  const shown = line ? [line] : lines; // nothing chosen: every poll's dots, faint
 
   const t0 = Date.parse(from);
   const t1 = Math.max(Date.parse(to), t0 + 86_400_000);
-  const maxSeats = Math.max(20, ...line.points.map((p) => p.seats));
+  const maxSeats = Math.max(20, ...shown.flatMap((l) => l.points.map((p) => p.seats)));
   const yMax = Math.ceil((maxSeats + 2) / 5) * 5;
   const x = (iso: string) => PAD.left + ((Date.parse(iso) - t0) / (t1 - t0)) * (W - PAD.left - PAD.right);
   const y = (seats: number) => PAD.top + (1 - seats / yMax) * (H - PAD.top - PAD.bottom);
 
-  const dates = [...new Set(line.points.map((p) => p.date))].sort();
+  const dates = [...new Set(shown.flatMap((l) => l.points.map((p) => p.date)))].sort();
   const dayFmt = new Intl.DateTimeFormat(locale, { day: "numeric", month: "numeric" });
   const yTicks = Array.from({ length: yMax / 5 + 1 }, (_, i) => i * 5);
 
@@ -76,25 +78,27 @@ export function PollTrend({
     }
   }
 
-  const houses = [...new Set(line.points.map((p) => p.instituteId))];
+  const houses = line ? [...new Set(line.points.map((p) => p.instituteId))] : [];
 
   return (
     <div className="space-y-3">
       <ToggleGroup label={labels.choose}>
         <span className="text-sm text-muted">{labels.choose}</span>
         {lines.map((l) => (
-          <ToggleButton key={l.slug} selected={l.slug === line.slug} onClick={() => setSelected(l.slug)}>
+          <ToggleButton key={l.slug} selected={l.slug === line?.slug} onClick={() => setSelected((cur) => (cur === l.slug ? null : l.slug))}>
             <span aria-hidden className="me-1.5 inline-block h-2 w-2 rounded-full align-middle" style={{ backgroundColor: l.color }} />
             {l.name}
           </ToggleButton>
         ))}
       </ToggleGroup>
 
-      <p className="text-sm font-medium" aria-live="polite">
-        {line.summary}
-      </p>
+      {line && (
+        <p className="text-sm font-medium" aria-live="polite">
+          {line.summary}
+        </p>
+      )}
 
-      <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`${labels.aria}: ${line.name}`} className="h-auto w-full" style={{ direction: "ltr" }}>
+      <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={line ? `${labels.aria}: ${line.name}` : labels.aria} className="h-auto w-full" style={{ direction: "ltr" }}>
         {yTicks.map((v) => (
           <g key={v}>
             <line x1={PAD.left} x2={W - PAD.right} y1={y(v)} y2={y(v)} stroke="var(--line)" strokeWidth={1} />
@@ -109,7 +113,7 @@ export function PollTrend({
           {labels.threshold}
         </text>
         {/* The list's poll-of-polls average. */}
-        {line.mean != null && (
+        {line && line.mean != null && (
           <>
             <line x1={PAD.left} x2={W - PAD.right} y1={y(line.mean)} y2={y(line.mean)} stroke={line.color} strokeDasharray="2 3" strokeWidth={1.25} />
             <text x={gapX} y={y(line.mean) - 5} textAnchor="middle" fontSize={11} fill="var(--foreground)">
@@ -123,7 +127,8 @@ export function PollTrend({
           </text>
         ))}
         {/* One thin line per institute, through its own polls. */}
-        {houses.map((h) => (
+        {line &&
+          houses.map((h) => (
           <path
             key={h}
             d={line.points
@@ -137,11 +142,18 @@ export function PollTrend({
             strokeLinejoin="round"
           />
         ))}
-        {line.points.map((p) => (
-          <circle key={p.label} cx={x(p.date) + p.dx} cy={y(p.seats)} r={5} fill={line.color} stroke="var(--surface)" strokeWidth={1.5}>
-            <title>{p.label}</title>
-          </circle>
-        ))}
+        {shown.map((l) =>
+          l.points.map((p) =>
+            line ? (
+              <circle key={p.label} cx={x(p.date) + p.dx} cy={y(p.seats)} r={5} fill={l.color} stroke="var(--surface)" strokeWidth={1.5}>
+                <title>{p.label}</title>
+              </circle>
+            ) : (
+              // Nothing chosen yet: a faint, purely decorative cloud of every poll's dots.
+              <circle key={p.label} aria-hidden cx={x(p.date) + p.dx} cy={y(p.seats)} r={2.5} fill={l.color} opacity={0.45} />
+            ),
+          ),
+        )}
       </svg>
       <p className="text-xs text-muted">{labels.houseNote}</p>
     </div>

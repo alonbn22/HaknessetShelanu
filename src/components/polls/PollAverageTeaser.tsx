@@ -44,7 +44,7 @@ export async function PollAverageTeaser({ top = 6 }: { top?: number }) {
         {t("homeTitle")}
       </SectionHeading>
       <p className="text-xs text-muted">
-        {t("homeMethod", { n: avg.institutes, from: formatDate(avg.from, locale), to: formatDate(avg.to, locale) })}
+        {t("homeMethod", { polls: avg.inputs.length, institutes: avg.institutes, from: formatDate(avg.from, locale), to: formatDate(avg.to, locale) })}
       </p>
       <ol className="space-y-1.5 text-sm">
         {shown.map((l) => {

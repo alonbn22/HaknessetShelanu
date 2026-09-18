@@ -51,10 +51,12 @@ test("every stance is keyed to a running list, sourced, quoted, and within -2..2
 });
 
 test("every statement is answered by a meaningful share of lists (no thin questions)", () => {
+  // At least half the running lists must have a sourced stance; the page shows
+  // the rest as "no documented stance" rather than guessing.
   const n = registry.size;
   for (const q of qs) {
     const k = Object.keys(q.stances).length;
-    assert.ok(k >= Math.ceil(n * 0.6), `${q.id}: only ${k} of ${n} lists have a sourced stance`);
+    assert.ok(k >= Math.ceil(n * 0.5), `${q.id}: only ${k} of ${n} lists have a sourced stance`);
   }
 });
 

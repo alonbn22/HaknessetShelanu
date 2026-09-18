@@ -9,7 +9,14 @@
 #
 # `value` is on the same scale as the reader's answers: 2 strongly agree,
 # 1 agree, 0 neither, -1 disagree, -2 strongly disagree. Vote-based values:
-# unanimous (or ≥80% one way) = ±2, a split ≥20% = ±1; absent = no stance.
+# ±2 when the faction's net vote (for minus against, over those who voted) is
+# at least 0.8 — nine in ten or more one way; ±1 for any other split of at
+# least 0.2; 0 for an even split; absent = no stance. When fewer than half the
+# faction voted, the value is capped at ±1 and the quote says so. A vote cast
+# by a predecessor faction (Yesh Atid for Together, National Unity for Blue and
+# White, Labor for the Democrats) is disclosed in `recordOf`. "statement"
+# means the leader's or the list's own words as reported by a major outlet;
+# a reporter's characterisation is never a stance.
 # `lean` says which side of the aisle agrees with the statement; the set is
 # balanced 5/5 and alternates, so an "agree" bias cannot tilt results (a test
 # asserts it). Together has no faction of its own in the 25th Knesset — where
@@ -24,10 +31,10 @@ questions:
     topic: institutions
     lean: right
     text:
-      he: "יש להמשיך ברפורמה המשפטית ולהגביל את סמכויות בית המשפט העליון."
-      en: "The judicial reform should continue, and the Supreme Court's powers should be limited."
-      ar: "يجب مواصلة الإصلاح القضائي والحدّ من صلاحيات المحكمة العليا."
-      ru: "Судебную реформу следует продолжить и ограничить полномочия Верховного суда."
+      he: "יש להגביל בחקיקה את סמכויות בית המשפט העליון."
+      en: "The Supreme Court's powers should be limited by legislation."
+      ar: "يجب الحدّ من صلاحيات المحكمة العليا عبر التشريع."
+      ru: "Полномочия Верховного суда следует ограничить законодательно."
     stances:
       likud:
         value: 2
@@ -105,17 +112,24 @@ questions:
         value: -2
         basis: vote
         voteId: 39566
+        recordOf:
+          he: "הצבעת סיעת יש עתיד, המתמודדת במסגרת ביחד"
+          en: "vote of the Yesh Atid faction, which runs inside Together"
         source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(39566)", title: "חוק-יסוד: השפיטה (תיקון מס' 3) — הצבעה במליאה, 2023-07-11", publisher: "הכנסת" }
         quote:
-          he: "הצבעת סיעת יש עתיד, המתמודדת במסגרת ביחד: 0 בעד, 22 נגד, 2 נעדרו"
-          en: "vote of the Yesh Atid faction, which runs inside Together: 0 for, 22 against, 2 absent"
+          he: "0 בעד, 22 נגד, 2 נעדרו"
+          en: "0 for, 22 against, 2 absent"
       blue-white:
-        value: -1
-        basis: platform
-        source: { url: "https://kachollavan.org.il/wp-content/uploads/2025/07/20527_3_A5_Hoveret_Ekronot_ONE_PAGE_A.pdf", title: "עקרונות כחול לבן (חוברת עקרונות, יולי 2025)", publisher: "כחול לבן" }
+        value: -2
+        basis: vote
+        voteId: 39566
+        recordOf:
+          he: "סיעת המחנה הממלכתי, שבה ישבו חברי כחול לבן עד 2025"
+          en: "the National Unity faction, in which Blue and White's members sat until 2025"
+        source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(39566)", title: "חוק-יסוד: השפיטה (תיקון מס' 3) — הצבעה במליאה, 2023-07-11", publisher: "הכנסת" }
         quote:
-          he: "\"נשמור על עיקרון הפרדת הרשויות וביצור שלטון החוק, תוך קידום תיקונים הכרחיים, שיגבירו את האמון במערכת המשפט… נקדם את חוק יסוד: החקיקה במתווה שיכלול הסכמה רחבה.\""
-          en: "\"We will preserve the separation of powers and the rule of law, while advancing necessary corrections that increase trust in the justice system… we will advance Basic Law: Legislation in a broadly agreed framework.\""
+          he: "0 בעד, 10 נגד, 2 נעדרו"
+          en: "0 for, 10 against, 2 absent"
       yashar:
         value: -1
         basis: platform
@@ -130,13 +144,6 @@ questions:
         quote:
           he: "\"רפורמה משפטית: ביקורת חיצונית ולא תלויה על מערכת המשפט. פיצול תפקידי היועמ\"ש. תיקון האיזונים והבלמים בין הרשויות… נפעל לקדם תיקונים במערכת המשפט תחת הסכמות רחבות.\""
           en: "\"Judicial reform: external, independent oversight of the justice system; splitting the attorney general's roles; correcting the checks and balances… we will advance corrections under broad agreement.\""
-      amkha:
-        value: 1
-        basis: statement
-        source: { url: "https://themedialine.org/headlines/ofer-winter-launches-right-wing-party-vowing-preemptive-security-doctrine-broader-idf-service/", title: "Ofer Winter launches right-wing party, vowing preemptive security doctrine, broader IDF service (25 Aug 2026)", publisher: "The Media Line" }
-        quote:
-          he: "מצע הרשימה כולל \"שינויים במערכת המשפט\" (\"making changes to the judicial system\")."
-          en: "The list's agenda includes \"making changes to the judicial system\"."
   - id: religion-state
     topic: religion-state
     lean: left
@@ -154,7 +161,7 @@ questions:
           he: "\"נחוקק חוק נישואין אזרחיים… נאבק על מרחב ציבורי חופשי ונקדם תחבורה ציבורית בשבת.\""
           en: "\"We will legislate civil marriage… fight for a free public space and advance public transport on Shabbat.\""
       together:
-        value: 2
+        value: 1
         basis: platform
         source: { url: "https://be-yahad.org.il/plans/religionandstate/", title: "ביחד נתקן את יחסי הדת והמדינה", publisher: "ביחד" }
         quote:
@@ -175,13 +182,6 @@ questions:
         quote:
           he: "6 בעד, 0 נגד, 2 נעדרו"
           en: "6 for, 0 against, 2 absent"
-      yashar:
-        value: 1
-        basis: platform
-        source: { url: "https://yasharwitheisenkot.com/wp-content/uploads/2026/06/Yashar_10_Steps_Brochure.pdf", title: "10 הצעדים לשגשוגה של מדינת ישראל — מצע ישר!", publisher: "ישר!" }
-        quote:
-          he: "\"הסדרים חדשים ומאוזנים… להבטיח שכל אזרח יוכל לשמור על אורח חייו ואמונתו… הרחבת העצמאות של רשויות מקומיות וקהילות לעצב פתרונות בהתאם לאופיין וערכיהן\" (צעד 8)."
-          en: "\"New, balanced arrangements… so every citizen can keep their way of life and faith… widening the independence of local authorities and communities to shape solutions to their character and values\" (step 8)."
       shas:
         value: -2
         basis: vote
@@ -291,10 +291,13 @@ questions:
         value: -2
         basis: vote
         voteId: 46670
+        recordOf:
+          he: "הצבעת סיעת יש עתיד, המתמודדת במסגרת ביחד"
+          en: "vote of the Yesh Atid faction, which runs inside Together"
         source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(46670)", title: "חוק שירות ביטחון (תיקון מס' 28 - הוראת שעה), התשפ\"ו-2026 — הצבעה במליאה, 2026-07-14", publisher: "הכנסת" }
         quote:
-          he: "הצבעת סיעת יש עתיד, המתמודדת במסגרת ביחד: 0 בעד, 24 נגד"
-          en: "vote of the Yesh Atid faction, which runs inside Together: 0 for, 24 against"
+          he: "0 בעד, 24 נגד"
+          en: "0 for, 24 against"
       joint-list:
         value: -2
         basis: vote
@@ -340,13 +343,6 @@ questions:
         quote:
           he: "\"עלינו להגן על מי שבאמת מקדיש את חייו ללימוד התורה, ולאפשר לו ללמוד בשקט, בלי איום במעצר, בלי סנקציות… כל צעיר חרדי שאינו מקדיש את חייו ללימוד תורה, צריך לשרת.\""
           en: "\"We must protect whoever truly devotes his life to Torah study and let him study in peace, without threat of arrest or sanctions… every haredi youth who does not devote his life to Torah study must serve.\""
-      amkha:
-        value: -1
-        basis: statement
-        source: { url: "https://themedialine.org/headlines/ofer-winter-launches-right-wing-party-vowing-preemptive-security-doctrine-broader-idf-service/", title: "Ofer Winter launches right-wing party, vowing preemptive security doctrine, broader IDF service (25 Aug 2026)", publisher: "The Media Line" }
-        quote:
-          he: "מצע הרשימה כולל \"הגדלת השתתפות החרדים בצה\"ל\" (\"increasing Haredi participation in the IDF\")."
-          en: "The list's agenda includes \"increasing Haredi participation in the Israel Defense Forces\"."
   - id: palestinian-state
     topic: security
     lean: left
@@ -362,56 +358,59 @@ questions:
         voteId: 41304
         source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(41304)", title: "\"הצהרות ופרסומים בעולם בנושא הכרה במדינה פלסטינית והצורך בהערכות ישראלית לאתגר מדיני אפשרי\" — הצבעה במליאה, 2024-07-18", publisher: "הכנסת" }
         quote:
-          he: "27 בעד, 0 נגד, 5 נעדרו"
-          en: "27 for, 0 against, 5 absent"
+          he: "ההצבעה על הצהרת הכנסת \"הכנסת מתנגדת בתוקף להקמת מדינה פלסטינית ממערב לירדן\" (התקבלה 68–9); הצבעה בעד ההצהרה = התנגדות למשפט: 27 בעד, 0 נגד, 5 נעדרו"
+          en: "the vote on the Knesset declaration \"firmly opposes the establishment of a Palestinian state west of the Jordan\" (passed 68–9); a vote for the declaration = disagreement with the statement: 27 for, 0 against, 5 absent"
       shas:
         value: -2
         basis: vote
         voteId: 41304
         source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(41304)", title: "\"הצהרות ופרסומים בעולם בנושא הכרה במדינה פלסטינית והצורך בהערכות ישראלית לאתגר מדיני אפשרי\" — הצבעה במליאה, 2024-07-18", publisher: "הכנסת" }
         quote:
-          he: "7 בעד, 0 נגד, 4 נעדרו"
-          en: "7 for, 0 against, 4 absent"
+          he: "ההצבעה על הצהרת הכנסת \"הכנסת מתנגדת בתוקף להקמת מדינה פלסטינית ממערב לירדן\" (התקבלה 68–9); הצבעה בעד ההצהרה = התנגדות למשפט: 7 בעד, 0 נגד, 4 נעדרו"
+          en: "the vote on the Knesset declaration \"firmly opposes the establishment of a Palestinian state west of the Jordan\" (passed 68–9); a vote for the declaration = disagreement with the statement: 7 for, 0 against, 4 absent"
       utj:
-        value: -2
+        value: -1
         basis: vote
         voteId: 41304
         source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(41304)", title: "\"הצהרות ופרסומים בעולם בנושא הכרה במדינה פלסטינית והצורך בהערכות ישראלית לאתגר מדיני אפשרי\" — הצבעה במליאה, 2024-07-18", publisher: "הכנסת" }
         quote:
-          he: "3 בעד, 0 נגד, 4 נעדרו"
-          en: "3 for, 0 against, 4 absent"
+          he: "ההצבעה על הצהרת הכנסת \"הכנסת מתנגדת בתוקף להקמת מדינה פלסטינית ממערב לירדן\" (התקבלה 68–9); הצבעה בעד ההצהרה = התנגדות למשפט: 3 בעד, 0 נגד, 4 נעדרו — פחות ממחצית הסיעה הצביעה, לכן העוצמה הוגבלה"
+          en: "the vote on the Knesset declaration \"firmly opposes the establishment of a Palestinian state west of the Jordan\" (passed 68–9); a vote for the declaration = disagreement with the statement: 3 for, 0 against, 4 absent — fewer than half the faction voted, so the strength is capped"
       yisrael-beiteinu:
         value: -2
         basis: vote
         voteId: 41304
         source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(41304)", title: "\"הצהרות ופרסומים בעולם בנושא הכרה במדינה פלסטינית והצורך בהערכות ישראלית לאתגר מדיני אפשרי\" — הצבעה במליאה, 2024-07-18", publisher: "הכנסת" }
         quote:
-          he: "6 בעד, 0 נגד"
-          en: "6 for, 0 against"
+          he: "ההצבעה על הצהרת הכנסת \"הכנסת מתנגדת בתוקף להקמת מדינה פלסטינית ממערב לירדן\" (התקבלה 68–9); הצבעה בעד ההצהרה = התנגדות למשפט: 6 בעד, 0 נגד"
+          en: "the vote on the Knesset declaration \"firmly opposes the establishment of a Palestinian state west of the Jordan\" (passed 68–9); a vote for the declaration = disagreement with the statement: 6 for, 0 against"
       rz-zehut:
         value: -2
         basis: vote
         voteId: 41304
         source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(41304)", title: "\"הצהרות ופרסומים בעולם בנושא הכרה במדינה פלסטינית והצורך בהערכות ישראלית לאתגר מדיני אפשרי\" — הצבעה במליאה, 2024-07-18", publisher: "הכנסת" }
         quote:
-          he: "7 בעד, 0 נגד"
-          en: "7 for, 0 against"
+          he: "ההצבעה על הצהרת הכנסת \"הכנסת מתנגדת בתוקף להקמת מדינה פלסטינית ממערב לירדן\" (התקבלה 68–9); הצבעה בעד ההצהרה = התנגדות למשפט: 7 בעד, 0 נגד"
+          en: "the vote on the Knesset declaration \"firmly opposes the establishment of a Palestinian state west of the Jordan\" (passed 68–9); a vote for the declaration = disagreement with the statement: 7 for, 0 against"
       otzma:
         value: -2
         basis: vote
         voteId: 41304
         source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(41304)", title: "\"הצהרות ופרסומים בעולם בנושא הכרה במדינה פלסטינית והצורך בהערכות ישראלית לאתגר מדיני אפשרי\" — הצבעה במליאה, 2024-07-18", publisher: "הכנסת" }
         quote:
-          he: "6 בעד, 0 נגד"
-          en: "6 for, 0 against"
+          he: "ההצבעה על הצהרת הכנסת \"הכנסת מתנגדת בתוקף להקמת מדינה פלסטינית ממערב לירדן\" (התקבלה 68–9); הצבעה בעד ההצהרה = התנגדות למשפט: 6 בעד, 0 נגד"
+          en: "the vote on the Knesset declaration \"firmly opposes the establishment of a Palestinian state west of the Jordan\" (passed 68–9); a vote for the declaration = disagreement with the statement: 6 for, 0 against"
       blue-white:
         value: -2
         basis: vote
         voteId: 41304
+        recordOf:
+          he: "סיעת המחנה הממלכתי, שבה ישבו חברי כחול לבן עד 2025"
+          en: "the National Unity faction, in which Blue and White's members sat until 2025"
         source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(41304)", title: "\"הצהרות ופרסומים בעולם בנושא הכרה במדינה פלסטינית והצורך בהערכות ישראלית לאתגר מדיני אפשרי\" — הצבעה במליאה, 2024-07-18", publisher: "הכנסת" }
         quote:
-          he: "5 בעד, 0 נגד, 3 נעדרו"
-          en: "5 for, 0 against, 3 absent"
+          he: "ההצבעה על הצהרת הכנסת \"הכנסת מתנגדת בתוקף להקמת מדינה פלסטינית ממערב לירדן\" (התקבלה 68–9); הצבעה בעד ההצהרה = התנגדות למשפט: 5 בעד, 0 נגד, 3 נעדרו"
+          en: "the vote on the Knesset declaration \"firmly opposes the establishment of a Palestinian state west of the Jordan\" (passed 68–9); a vote for the declaration = disagreement with the statement: 5 for, 0 against, 3 absent"
       raam:
         value: 2
         basis: statement
@@ -426,13 +425,6 @@ questions:
         quote:
           he: "ג'בארין: הרשימה המשותפת תפעל לחידוש המשא ומתן עם ההנהגה הפלסטינית כדי לקדם הקמת מדינה פלסטינית לצד ישראל."
           en: "\"Jabareen has stated that the Joint List would push for renewed negotiations with Palestinian leadership to advance the establishment of a Palestinian state alongside Israel.\""
-      democrats:
-        value: 1
-        basis: platform
-        source: { url: "https://yes.democrats.org.il/topics/security-diplomatic", title: "מדיני-ביטחוני — תוכניות העבודה של הדמוקרטים", publisher: "הדמוקרטים" }
-        quote:
-          he: "\"על ישראל להכריע שפניה לקידום מהלך מדיני אחראי מול הפלסטינים, מבלי להתפשר על ביטחונה.\""
-          en: "\"Israel must decide that it is heading for a responsible diplomatic process with the Palestinians, without compromising its security.\""
       together:
         value: -2
         basis: statement
@@ -458,7 +450,7 @@ questions:
     topic: security
     lean: right
     text:
-      he: "יש להרחיב את ההתיישבות ביהודה ושומרון ולהחיל שם ריבונות ישראלית."
+      he: "יש להרחיב את ההתיישבות ביהודה ושומרון (הגדה המערבית) ולהחיל שם ריבונות ישראלית."
       en: "Settlement in Judea and Samaria (the West Bank) should be expanded and Israeli sovereignty applied there."
       ar: "يجب توسيع الاستيطان في يهودا والسامرة (الضفة الغربية) وفرض السيادة الإسرائيلية هناك."
       ru: "Следует расширять поселения в Иудее и Самарии (на Западном берегу) и распространить там израильский суверенитет."
@@ -469,72 +461,72 @@ questions:
         voteId: 44413
         source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(44413)", title: "הצעה דחופה לסדר היום בנושא: \"החלת הריבונות ביהודה, שומרון ובקעת הירדן\" — הצבעה במליאה, 2025-07-23", publisher: "הכנסת" }
         quote:
-          he: "32 בעד, 0 נגד"
-          en: "32 for, 0 against"
+          he: "ההצבעה על הצעת הסיכום הקוראת לממשלה להחיל ריבונות ביהודה, שומרון ובקעת הירדן (התקבלה 71–13): 32 בעד, 0 נגד"
+          en: "the vote on the motion calling on the government to apply sovereignty in Judea, Samaria and the Jordan Valley (passed 71–13): 32 for, 0 against"
       shas:
         value: 2
         basis: vote
         voteId: 44413
         source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(44413)", title: "הצעה דחופה לסדר היום בנושא: \"החלת הריבונות ביהודה, שומרון ובקעת הירדן\" — הצבעה במליאה, 2025-07-23", publisher: "הכנסת" }
         quote:
-          he: "10 בעד, 0 נגד, 1 נעדרו"
-          en: "10 for, 0 against, 1 absent"
+          he: "ההצבעה על הצעת הסיכום הקוראת לממשלה להחיל ריבונות ביהודה, שומרון ובקעת הירדן (התקבלה 71–13): 10 בעד, 0 נגד, 1 נעדרו"
+          en: "the vote on the motion calling on the government to apply sovereignty in Judea, Samaria and the Jordan Valley (passed 71–13): 10 for, 0 against, 1 absent"
       utj:
         value: 2
         basis: vote
         voteId: 44413
         source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(44413)", title: "הצעה דחופה לסדר היום בנושא: \"החלת הריבונות ביהודה, שומרון ובקעת הירדן\" — הצבעה במליאה, 2025-07-23", publisher: "הכנסת" }
         quote:
-          he: "4 בעד, 0 נגד, 3 נעדרו"
-          en: "4 for, 0 against, 3 absent"
+          he: "ההצבעה על הצעת הסיכום הקוראת לממשלה להחיל ריבונות ביהודה, שומרון ובקעת הירדן (התקבלה 71–13): 4 בעד, 0 נגד, 3 נעדרו"
+          en: "the vote on the motion calling on the government to apply sovereignty in Judea, Samaria and the Jordan Valley (passed 71–13): 4 for, 0 against, 3 absent"
       yisrael-beiteinu:
         value: 2
         basis: vote
         voteId: 44413
         source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(44413)", title: "הצעה דחופה לסדר היום בנושא: \"החלת הריבונות ביהודה, שומרון ובקעת הירדן\" — הצבעה במליאה, 2025-07-23", publisher: "הכנסת" }
         quote:
-          he: "6 בעד, 0 נגד"
-          en: "6 for, 0 against"
+          he: "ההצבעה על הצעת הסיכום הקוראת לממשלה להחיל ריבונות ביהודה, שומרון ובקעת הירדן (התקבלה 71–13): 6 בעד, 0 נגד"
+          en: "the vote on the motion calling on the government to apply sovereignty in Judea, Samaria and the Jordan Valley (passed 71–13): 6 for, 0 against"
       rz-zehut:
         value: 2
         basis: vote
         voteId: 44413
         source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(44413)", title: "הצעה דחופה לסדר היום בנושא: \"החלת הריבונות ביהודה, שומרון ובקעת הירדן\" — הצבעה במליאה, 2025-07-23", publisher: "הכנסת" }
         quote:
-          he: "7 בעד, 0 נגד"
-          en: "7 for, 0 against"
+          he: "ההצבעה על הצעת הסיכום הקוראת לממשלה להחיל ריבונות ביהודה, שומרון ובקעת הירדן (התקבלה 71–13): 7 בעד, 0 נגד"
+          en: "the vote on the motion calling on the government to apply sovereignty in Judea, Samaria and the Jordan Valley (passed 71–13): 7 for, 0 against"
       otzma:
         value: 2
         basis: vote
         voteId: 44413
         source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(44413)", title: "הצעה דחופה לסדר היום בנושא: \"החלת הריבונות ביהודה, שומרון ובקעת הירדן\" — הצבעה במליאה, 2025-07-23", publisher: "הכנסת" }
         quote:
-          he: "6 בעד, 0 נגד"
-          en: "6 for, 0 against"
+          he: "ההצבעה על הצעת הסיכום הקוראת לממשלה להחיל ריבונות ביהודה, שומרון ובקעת הירדן (התקבלה 71–13): 6 בעד, 0 נגד"
+          en: "the vote on the motion calling on the government to apply sovereignty in Judea, Samaria and the Jordan Valley (passed 71–13): 6 for, 0 against"
       raam:
         value: -2
         basis: vote
         voteId: 44413
         source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(44413)", title: "הצעה דחופה לסדר היום בנושא: \"החלת הריבונות ביהודה, שומרון ובקעת הירדן\" — הצבעה במליאה, 2025-07-23", publisher: "הכנסת" }
         quote:
-          he: "0 בעד, 5 נגד"
-          en: "0 for, 5 against"
+          he: "ההצבעה על הצעת הסיכום הקוראת לממשלה להחיל ריבונות ביהודה, שומרון ובקעת הירדן (התקבלה 71–13): 0 בעד, 5 נגד"
+          en: "the vote on the motion calling on the government to apply sovereignty in Judea, Samaria and the Jordan Valley (passed 71–13): 0 for, 5 against"
       democrats:
         value: -2
         basis: vote
         voteId: 44413
         source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(44413)", title: "הצעה דחופה לסדר היום בנושא: \"החלת הריבונות ביהודה, שומרון ובקעת הירדן\" — הצבעה במליאה, 2025-07-23", publisher: "הכנסת" }
         quote:
-          he: "0 בעד, 4 נגד"
-          en: "0 for, 4 against"
+          he: "ההצבעה על הצעת הסיכום הקוראת לממשלה להחיל ריבונות ביהודה, שומרון ובקעת הירדן (התקבלה 71–13): 0 בעד, 4 נגד"
+          en: "the vote on the motion calling on the government to apply sovereignty in Judea, Samaria and the Jordan Valley (passed 71–13): 0 for, 4 against"
       joint-list:
         value: -2
         basis: vote
         voteId: 44413
         source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(44413)", title: "הצעה דחופה לסדר היום בנושא: \"החלת הריבונות ביהודה, שומרון ובקעת הירדן\" — הצבעה במליאה, 2025-07-23", publisher: "הכנסת" }
         quote:
-          he: "0 בעד, 4 נגד, 1 נעדרו"
-          en: "0 for, 4 against, 1 absent"
+          he: "ההצבעה על הצעת הסיכום הקוראת לממשלה להחיל ריבונות ביהודה, שומרון ובקעת הירדן (התקבלה 71–13): 0 בעד, 4 נגד, 1 נעדרו"
+          en: "the vote on the motion calling on the government to apply sovereignty in Judea, Samaria and the Jordan Valley (passed 71–13): 0 for, 4 against, 1 absent"
       together:
         value: 1
         basis: statement
@@ -543,27 +535,20 @@ questions:
           he: "בנט: \"התוכנית שלי אומרת שבשטחי C מתיישבים על פי חוק, ובשטחי A ו-B הרשות מנהלת.\""
           en: "Bennett: \"My plan says that in Area C we settle by law, and in Areas A and B the Authority administers.\""
       reservists:
-        value: 2
+        value: 1
         basis: platform
         source: { url: "https://www.themiluimnikim.org.il/platform/", title: "עיקרי המצע — המילואימניקים והכלכלית", publisher: "המילואימניקים" }
         quote:
           he: "\"ריבונות דרך מעשים – חיזוק ההתיישבות ביהודה ושומרון והכרעה על קרקעות בשטחי C חשובה והכרחית – נדבך קריטי מהביטחון הלאומי.\""
           en: "\"Sovereignty through deeds — strengthening settlement in Judea and Samaria and deciding on lands in Area C is important and necessary, a critical layer of national security.\""
-      blue-white:
-        value: 0
-        basis: platform
-        source: { url: "https://kachollavan.org.il/wp-content/uploads/2025/07/20527_3_A5_Hoveret_Ekronot_ONE_PAGE_A.pdf", title: "עקרונות כחול לבן (חוברת עקרונות, יולי 2025)", publisher: "כחול לבן" }
-        quote:
-          he: "\"נחזק ונעודד את ההתיישבות, בהתאם לאינטרסים הלאומיים והביטחוניים, תוך שימת דגש על הגליל, הנגב, רמת הגולן, בקעת הירדן והערבה\" — ריבונות אינה נזכרת."
-          en: "\"We will strengthen and encourage settlement, according to national and security interests, with emphasis on the Galilee, the Negev, the Golan Heights, the Jordan Valley and the Arava\" — sovereignty is not mentioned."
   - id: oct7-commission
     topic: institutions
     lean: left
     text:
-      he: "יש להקים ועדת חקירה ממלכתית לאירועי 7 באוקטובר."
-      en: "A state commission of inquiry into the events of 7 October should be established."
-      ar: "يجب إقامة لجنة تحقيق رسمية في أحداث 7 أكتوبر."
-      ru: "Следует создать государственную комиссию по расследованию событий 7 октября."
+      he: "החקירה של 7 באוקטובר צריכה להיות ועדת חקירה ממלכתית (שאת חבריה ממנה נשיא בית המשפט העליון), ולא ועדה שהממשלה ממנה."
+      en: "The 7 October inquiry should be a state commission (whose members the Supreme Court president appoints), not a commission the government appoints."
+      ar: "يجب أن يكون التحقيق في 7 أكتوبر لجنة تحقيق رسمية (يعيّن أعضاءها رئيس المحكمة العليا)، لا لجنة تعيّنها الحكومة."
+      ru: "Расследование 7 октября должна вести государственная комиссия (её членов назначает председатель Верховного суда), а не комиссия, назначаемая правительством."
     stances:
       likud:
         value: -2
@@ -659,13 +644,6 @@ questions:
         quote:
           he: "\"נקים ועדת חקירה ממלכתית לחקר טבח 7 באוקטובר, העשור שלפניו וניהול המלחמה\" (צעד 1)."
           en: "\"We will establish a state commission of inquiry into the 7 October massacre, the decade before it and the conduct of the war\" (step 1)."
-      reservists:
-        value: 1
-        basis: platform
-        source: { url: "https://www.themiluimnikim.org.il/platform/", title: "עיקרי המצע — המילואימניקים והכלכלית", publisher: "המילואימניקים" }
-        quote:
-          he: "\"וועדת חקירה: … המילה ממלכתית הפכה לתירוץ כדי לא לחקור. הגיע הזמן לחקור.\""
-          en: "\"A commission of inquiry: … the word 'state' became an excuse not to investigate. It is time to investigate.\""
   - id: netanyahu-government
     topic: government
     lean: right
@@ -677,39 +655,11 @@ questions:
     stances:
       likud:
         value: 2
-        basis: statement
+        basis: platform
         source: { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26 (8.9.2026)", publisher: "N12" }
         quote:
-          he: "רשימת הליכוד הוגשה לוועדת הבחירות בראשות ראש הממשלה בנימין נתניהו (8.9.2026)."
-          en: "The Likud list was submitted to the Elections Committee headed by Prime Minister Benjamin Netanyahu (8 Sep 2026)."
-      shas:
-        value: 1
-        basis: statement
-        source: { url: "https://www.bhol.co.il/news/1738747", title: "מי עם נתניהו, מי פוסל אותו ומי פתוח לכולם? המדריך למפלגות בבחירות 2026 (9.9.2026)", publisher: "בחדרי חרדים" }
-        quote:
-          he: "לפי המדריך: בעלת בריתו המסורתית של נתניהו, אך משבר חוק הגיוס יצר ריחוק; פתוחה לחלופות, כולל איזנקוט."
-          en: "Per the guide: Netanyahu's traditional ally, but the draft-law crisis created distance; open to alternatives including Eisenkot."
-      utj:
-        value: 1
-        basis: statement
-        source: { url: "https://www.bhol.co.il/news/1738747", title: "מי עם נתניהו, מי פוסל אותו ומי פתוח לכולם? המדריך למפלגות בבחירות 2026 (9.9.2026)", publisher: "בחדרי חרדים" }
-        quote:
-          he: "לפי המדריך: שמרה על מגעים עם איזנקוט (כולל פגישות של משה גפני), אך דרישת השירות היא מכשול."
-          en: "Per the guide: kept contacts with Eisenkot (including Moshe Gafni meetings), but the service requirement is an obstacle."
-      rz-zehut:
-        value: 2
-        basis: statement
-        source: { url: "https://www.bhol.co.il/news/1738747", title: "מי עם נתניהו, מי פוסל אותו ומי פתוח לכולם? המדריך למפלגות בבחירות 2026 (9.9.2026)", publisher: "בחדרי חרדים" }
-        quote:
-          he: "לפי המדריך: ממוקמת בתוך הקואליציה הימנית של נתניהו."
-          en: "Per the guide: positioned within Netanyahu's right-wing coalition."
-      otzma:
-        value: 2
-        basis: statement
-        source: { url: "https://www.bhol.co.il/news/1738747", title: "מי עם נתניהו, מי פוסל אותו ומי פתוח לכולם? המדריך למפלגות בבחירות 2026 (9.9.2026)", publisher: "בחדרי חרדים" }
-        quote:
-          he: "לפי המדריך: מזוהה בבירור עם גוש הימין של נתניהו."
-          en: "Per the guide: clearly aligned with Netanyahu's right-wing bloc."
+          he: "רשימת הליכוד כפי שהוגשה לוועדת הבחירות (8.9.2026): בראשה המועמד לראשות הממשלה, בנימין נתניהו."
+          en: "The Likud list as filed with the Elections Committee (8 Sep 2026): headed by its candidate for prime minister, Benjamin Netanyahu."
       amkha:
         value: 2
         basis: statement
@@ -745,13 +695,6 @@ questions:
         quote:
           he: "גולן: המטרה היא \"להציל את ישראל ולהחליף את ממשלת האסון\"; מי שדוחה את רע\"ם \"משחק לידי נתניהו ושותפיו\"."
           en: "Golan: the mission is \"saving Israel and replacing the disaster government\"; rejecting Ra'am \"plays into the hands of Netanyahu and his partners\"."
-      blue-white:
-        value: -1
-        basis: statement
-        source: { url: "https://www.bhol.co.il/news/1738747", title: "מי עם נתניהו, מי פוסל אותו ומי פתוח לכולם? המדריך למפלגות בבחירות 2026 (9.9.2026)", publisher: "בחדרי חרדים" }
-        quote:
-          he: "לפי המדריך: גנץ מציג עצמו כחלק מהמחנה המבקש להחליף את הממשלה הנוכחית, אף שבעבר עבד עם נתניהו."
-          en: "Per the guide: Gantz presents himself as part of the camp seeking to replace the current government, though he worked with Netanyahu in the past."
       raam:
         value: -2
         basis: statement
@@ -766,21 +709,14 @@ questions:
         quote:
           he: "ג'בארין: הדחת נתניהו, בן גביר וסמוטריץ' מהשלטון היא יעד בחירות מרכזי."
           en: "Jabareen: removing Netanyahu, Ben-Gvir and Smotrich from power is a central electoral objective."
-      reservists:
-        value: 0
-        basis: statement
-        source: { url: "https://www.kan.org.il/content/kan-news/politic/1098105/", title: "הסקר הראשון אחרי סגירת הרשימות (9.9.2026)", publisher: "כאן חדשות" }
-        quote:
-          he: "כאן חדשות (9.9.2026): מפלגת המילואימניקים-הכלכלית \"לא הביעה תמיכה באף אחד מהגושים\"."
-          en: "Kan News (9 Sep 2026): the Reservists–Economic list \"has not expressed support for either bloc\"."
   - id: arab-parties-coalition
     topic: government
     lean: left
     text:
-      he: "מפלגות ערביות יכולות להיות שותפות בקואליציה."
-      en: "Arab parties can be partners in a governing coalition."
-      ar: "يمكن أن تكون الأحزاب العربية شريكة في الائتلاف الحاكم."
-      ru: "Арабские партии могут быть партнёрами по правящей коалиции."
+      he: "ראוי שמפלגות ערביות יוכלו להיות שותפות בקואליציה."
+      en: "Arab parties should be able to be partners in a governing coalition."
+      ar: "ينبغي أن تتمكن الأحزاب العربية من أن تكون شريكة في الائتلاف الحاكم."
+      ru: "Арабские партии должны иметь возможность быть партнёрами по правящей коалиции."
     stances:
       raam:
         value: 2
@@ -824,20 +760,13 @@ questions:
         quote:
           he: "בנט: יסתמך רק על מפלגות ציוניות לקואליציה ולא ישב שוב עם רע\"ם של עבאס."
           en: "Bennett would \"only rely on Zionist parties for his coalition rather than sitting with Abbas's Ra'am again.\""
-      yashar:
-        value: -2
-        basis: statement
-        source: { url: "https://www.timesofisrael.com/raams-abbas-says-palestinian-state-a-reality-drawing-outrage-from-zionist-parties/", title: "Ra'am's Abbas says Palestinian state 'a reality,' drawing outrage from Zionist parties (22 Aug 2026)", publisher: "The Times of Israel" }
-        quote:
-          he: "\"כל מפלגות האופוזיציה, למעט הדמוקרטים, דחו שותפות עם רע\"ם\" (22.8.2026)."
-          en: "\"All opposition parties, with the exception of The Democrats, have rejected partnering with Ra'am\" (22 Aug 2026)."
       blue-white:
-        value: -2
+        value: -1
         basis: statement
-        source: { url: "https://www.timesofisrael.com/raams-abbas-says-palestinian-state-a-reality-drawing-outrage-from-zionist-parties/", title: "Ra'am's Abbas says Palestinian state 'a reality,' drawing outrage from Zionist parties (22 Aug 2026)", publisher: "The Times of Israel" }
+        source: { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26 (8.9.2026)", publisher: "N12" }
         quote:
-          he: "\"כל מפלגות האופוזיציה, למעט הדמוקרטים, דחו שותפות עם רע\"ם\" (22.8.2026)."
-          en: "\"All opposition parties, with the exception of The Democrats, have rejected partnering with Ra'am\" (22 Aug 2026)."
+          he: "כחול לבן על דרכו של איזנקוט: \"ממשלת מיעוט שנשענת על המפלגות הערביות\" (7.9.2026) — הרשימה מציגה הישענות על מפלגות ערביות כפגם."
+          en: "Blue and White on Eisenkot's path: \"a minority government leaning on the Arab parties\" (7 Sep 2026) — the list presents relying on Arab parties as a flaw."
       likud:
         value: -2
         basis: statement
@@ -852,13 +781,6 @@ questions:
         quote:
           he: "עוצמה יהודית עתרה קודם לכן לפסילת רע\"ם, בטענה שהמפלגה תומכת במאבק מזוין נגד ישראל."
           en: "Otzma Yehudit previously petitioned to disqualify Ra'am, alleging the party supported armed struggle against Israel."
-      amkha:
-        value: -1
-        basis: statement
-        source: { url: "https://themedialine.org/headlines/ofer-winter-launches-right-wing-party-vowing-preemptive-security-doctrine-broader-idf-service/", title: "Ofer Winter launches right-wing party, vowing preemptive security doctrine, broader IDF service (25 Aug 2026)", publisher: "The Media Line" }
-        quote:
-          he: "\"עמך ישראל תבקש להצטרף לממשלה רחבה המורכבת ממפלגות ציוניות.\""
-          en: "\"Amcha Yisrael would seek to join a broad government made up of Zionist parties.\""
   - id: death-penalty
     topic: security
     lean: right
@@ -944,10 +866,13 @@ questions:
         value: -2
         basis: vote
         voteId: 45858
+        recordOf:
+          he: "הצבעת סיעת יש עתיד, המתמודדת במסגרת ביחד"
+          en: "vote of the Yesh Atid faction, which runs inside Together"
         source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(45858)", title: "חוק עונש מוות למחבלים, התשפ\"ו-2026 — הצבעה במליאה, 2026-03-30", publisher: "הכנסת" }
         quote:
-          he: "הצבעת סיעת יש עתיד, המתמודדת במסגרת ביחד: 0 בעד, 23 נגד, 1 נעדרו"
-          en: "vote of the Yesh Atid faction, which runs inside Together: 0 for, 23 against, 1 absent"
+          he: "0 בעד, 23 נגד, 1 נעדרו"
+          en: "0 for, 23 against, 1 absent"
       blue-white:
         value: -2
         basis: vote
@@ -960,10 +885,10 @@ questions:
     topic: education
     lean: left
     text:
-      he: "בית ספר שמקבל מימון מהמדינה חייב ללמד לימודי ליבה (מתמטיקה, אנגלית)."
-      en: "A school that receives state funding must teach the core curriculum (maths, English)."
-      ar: "المدرسة التي تتلقى تمويلًا من الدولة يجب أن تدرّس المنهاج الأساسي (رياضيات، إنجليزية)."
-      ru: "Школа, получающая государственное финансирование, обязана преподавать базовую программу (математика, английский)."
+      he: "יש להתנות מימון ממשלתי לבתי ספר חרדיים בלימודי ליבה מלאים (מתמטיקה, אנגלית)."
+      en: "State funding for haredi schools should be conditional on teaching the full core curriculum (maths, English)."
+      ar: "يجب أن يكون تمويل الدولة للمدارس الحريدية مشروطًا بتدريس المنهاج الأساسي الكامل (رياضيات، إنجليزية)."
+      ru: "Государственное финансирование харедимских школ должно быть обусловлено преподаванием полной базовой программы (математика, английский)."
     stances:
       together:
         value: 2
@@ -990,18 +915,24 @@ questions:
         value: 2
         basis: vote
         voteId: 39288
+        recordOf:
+          he: "סיעת העבודה, לפני האיחוד לדמוקרטים"
+          en: "the Labor faction, before the merger into the Democrats"
         source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(39288)", title: "הצעת חוק חובת לימודי ליבה וביטול מוסדות הפטור (תיקוני חקיקה), התשפ\"ג-2023 — הצבעה במליאה, 2023-05-31", publisher: "הכנסת" }
         quote:
           he: "3 בעד, 0 נגד, 1 נעדרו"
           en: "3 for, 0 against, 1 absent"
       blue-white:
-        value: 2
+        value: 1
         basis: vote
         voteId: 39288
+        recordOf:
+          he: "סיעת המחנה הממלכתי, שבה ישבו חברי כחול לבן עד 2025"
+          en: "the National Unity faction, in which Blue and White's members sat until 2025"
         source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(39288)", title: "הצעת חוק חובת לימודי ליבה וביטול מוסדות הפטור (תיקוני חקיקה), התשפ\"ג-2023 — הצבעה במליאה, 2023-05-31", publisher: "הכנסת" }
         quote:
-          he: "3 בעד, 0 נגד, 9 נעדרו"
-          en: "3 for, 0 against, 9 absent"
+          he: "3 בעד, 0 נגד, 9 נעדרו — פחות ממחצית הסיעה הצביעה, לכן העוצמה הוגבלה"
+          en: "3 for, 0 against, 9 absent — fewer than half the faction voted, so the strength is capped"
       likud:
         value: -2
         basis: vote
@@ -1019,13 +950,13 @@ questions:
           he: "0 בעד, 7 נגד, 4 נעדרו"
           en: "0 for, 7 against, 4 absent"
       utj:
-        value: -2
+        value: -1
         basis: vote
         voteId: 39288
         source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(39288)", title: "הצעת חוק חובת לימודי ליבה וביטול מוסדות הפטור (תיקוני חקיקה), התשפ\"ג-2023 — הצבעה במליאה, 2023-05-31", publisher: "הכנסת" }
         quote:
-          he: "0 בעד, 2 נגד, 5 נעדרו"
-          en: "0 for, 2 against, 5 absent"
+          he: "0 בעד, 2 נגד, 5 נעדרו — פחות ממחצית הסיעה הצביעה, לכן העוצמה הוגבלה"
+          en: "0 for, 2 against, 5 absent — fewer than half the faction voted, so the strength is capped"
       rz-zehut:
         value: -2
         basis: vote
@@ -1043,7 +974,7 @@ questions:
           he: "0 בעד, 5 נגד, 1 נעדרו"
           en: "0 for, 5 against, 1 absent"
       haredi-public:
-        value: 0
+        value: -1
         basis: platform
         source: { url: "https://hatzibur-haharedi.org/%D7%9E%D7%A6%D7%A2", title: "המצע — הציבור החרדי", publisher: "הציבור החרדי" }
         quote:

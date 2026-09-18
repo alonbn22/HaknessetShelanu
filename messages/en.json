@@ -451,10 +451,10 @@
   },
   "quiz": {
     "title": "Election compass — who is closest to your views?",
-    "subtitle": "Ten statements. Every list’s stance is documented — a Knesset vote, a platform or a statement — or shown as \"no stated position\".",
-    "intro": "Mark how much you agree with each statement (you can skip). After at least {min} answers you will see which lists are closest to your views, and why. The lists’ stances come from a documented source for every cell — a roll-call vote in the Knesset, the platform the list published, or a statement by its leader — never from the site’s interpretation. A list with no documented stance on a statement is simply not compared on it. Nothing is stored or sent anywhere.",
+    "subtitle": "Ten statements. Every list’s stance is documented — a Knesset vote, a platform or a statement — or shown as \"no documented stance\".",
+    "intro": "Mark how much you agree with each statement (you can skip). After at least {min} answers you will see which lists are closest to your views, and why. The lists’ stances come from a documented source for every cell — a roll-call vote in the Knesset, the platform the list published, or the words of its leader as reported by a major outlet — never from the site’s interpretation. A list with no documented stance on a statement is simply not compared on it. Nothing is stored or sent anywhere.",
     "positionsLink": "See every stance with its source",
-    "disclaimer": "The match is computed from closeness of positions only and is not a recommendation on how to vote. Lists are shown in registration order, not by size.",
+    "disclaimer": "The match is computed from closeness of positions only and is not a recommendation on how to vote.",
     "sourcesNote": "Every stance links to its source: the Knesset’s vote record, the platform, or the article.",
     "lastReviewed": "Last reviewed: {date}.",
     "important": "This matters to me most (double weight)",
@@ -466,26 +466,27 @@
     "resultsHow": "The percentage = how close the list’s stances are to your answers, on average over the {n} statements you answered (only where the list has a documented stance).",
     "comparedOn": "compared on {k} of {n} statements",
     "thinCoverage": "few documented stances — take with caution",
-    "matchNote": "Clicking a list’s name (when it has a Knesset faction) opens its page.",
     "opt": {
       "agree2": "Strongly agree",
       "agree1": "Agree",
       "neutral": "Neither",
       "disagree1": "Disagree",
       "disagree2": "Strongly disagree",
-      "skip": "Skip",
-      "clear": "Clear"
+      "skip": "Skip"
     },
     "basis": {
       "vote": "Knesset vote",
       "platform": "platform",
-      "statement": "statement"
+      "statement": "statement (as reported)"
     },
     "voteRecord": "vote record",
     "why": "Why?",
     "youSaid": "You",
     "listStance": "The list",
-    "noStance": "no documented stance — not compared"
+    "noStance": "no documented stance — not compared",
+    "voteRule": "How a Knesset vote becomes a number: when almost all of a faction voted the same way (nine in ten or more) — \"strongly\"; when the faction split — \"agree\" or \"disagree\"; if fewer than half the faction voted, the stance is shown weaker and says so. A vote by a predecessor faction (e.g. Yesh Atid for Together) is marked explicitly.",
+    "topicsNote": "What is missing here: statements on the economy, welfare and LGBTQ rights were left out because we found no documented stance for most lists. The compass therefore deals mostly with security, religion and state, institutions and who forms the government.",
+    "noStanceAtAll": "no documented stance on any statement you answered — not compared"
   },
   "budget": {
     "title": "State Budget",
@@ -663,24 +664,21 @@
   "polls": {
     "title": "Seat polls",
     "eyebrow": "Since the lists closed",
-    "intro": "Polls are a snapshot, not a forecast. Every number here was taken from the original article of the outlet that published it and links to it. {count} polls from {institutes} polling institutes, {from}–{to}.",
+    "intro": "Polls are a snapshot, not a forecast. Every number here was taken from the original article of the outlet that published it (or its publishing group’s report) and links to it. {count} polls from {institutes} polling institutes, {from}–{to}.",
     "averageTitle": "Poll of polls",
     "averageMethod": "The average of the {n} latest polls — one per polling institute ({from}–{to}). How it is computed — in the explanation below.",
     "averageRange": "across the polls: {min} to {max}",
-    "seats": "seats",
-    "threshold": "the minimum to enter the Knesset (4 seats)",
-    "majority": "majority — 61",
+    "threshold": "electoral threshold — 3.25% of the votes (≈4 seats)",
     "trendTitle": "Each list, poll after poll",
     "trendHint": "Choose a list to see how many seats each poll gave it since the lists closed.",
     "trendAria": "Line chart: seats for each list in every poll, by date",
     "trendPoint": "{list} · {institute} for {outlet} · {date} · {seats} seats",
     "allTitle": "All {count} polls, one by one",
-    "allCaption": "List columns follow the order of registration with the Elections Committee, not results. \"<\" — reported below the threshold; \"—\" — not reported.",
+    "allCaption": "List columns are in a fixed order (the site’s registry order), not by results; on phones each poll is shown in its own seat order. \"<\" — reported below the threshold; \"—\" — not reported.",
     "colDate": "Date",
     "colOutlet": "Outlet",
     "colInstitute": "Institute",
     "colSample": "Sample",
-    "colMoE": "Margin",
     "colSource": "Source",
     "below": "below the electoral threshold",
     "notReported": "not reported",
@@ -693,13 +691,12 @@
     "methodologyTitle": "How to read these polls",
     "methodologySample": "Sample and margin of error: a poll of about 500 respondents carries a sampling error of about 4 percentage points — a seat or two for a large list. A one-seat difference between polls is usually noise, not a trend.",
     "methodologyHouses": "Why institutes differ: internet panels versus telephone, weighting by past vote, how undecided and unlikely voters are handled — all of these are systematic and produce steady gaps between houses. That is why the average takes one poll per institute.",
-    "methodologyAverage": "The average: each institute’s latest poll from the last {window} days, with equal weight, no smoothing and no quality weighting. The range beside each list shows how far the houses disagree.",
+    "methodologyAverage": "The average: each institute’s latest poll from the last {window} days, with equal weight, no smoothing and no quality weighting. A list a poll reported below the threshold counts as 0 seats in that poll. The range beside each list shows how far the houses disagree.",
     "methodologyScope": "What is included: every seat poll published from {cutoff} — the day the candidate lists closed — onward, from every outlet we found. Earlier polls measured lists that no longer exist. No poll was left out because of its results.",
     "methodologyVerification": "Verification: every figure was entered from the publishing outlet’s own article (or its own infographic), never from an aggregator, and the totals were checked against 120. Found an error? Tell us.",
     "notEnteredTitle": "Polls we know of that were not entered",
-    "notEnteredWhy": "{outlet} ({institute}), {date}: {reason}",
     "homeTitle": "Poll of polls",
-    "homeMethod": "Mean of {n} polls from {n} institutes since the lists closed · {from}–{to}",
+    "homeMethod": "Mean of {polls} polls from {institutes} institutes since the lists closed · {from}–{to}",
     "homeCta": "Every poll, the blocs and the method",
     "lastReviewed": "Last reviewed: {date}",
     "more": "{n} more lists",
@@ -713,7 +710,8 @@
     "trendChoose": "Choose a list:",
     "trendSummary": "{list}: between {min} and {max} seats in {n} polls",
     "trendAverage": "average: {mean}",
-    "trendHouseNote": "Each dot is one poll (hover to see who ran it and when). A thin line joins polls by the same institute — so a steady gap between lines is a difference in polling method, not a real change."
+    "trendHouseNote": "Each dot is one poll (hover to see who ran it and when). A thin line joins polls by the same institute — so a steady gap between lines is a difference in polling method, not a real change.",
+    "belowAll": "below the threshold in all {n} polls"
   },
   "positions": {
     "title": "What the lists say — stance by stance",
@@ -721,10 +719,10 @@
     "choose": "Choose a list:",
     "noStance": "no documented stance",
     "matrixTitle": "The full table",
-    "legend": "Green — agrees with the statement, red — disagrees, grey — neither. Click a cell to open the source.",
+    "legend": "Filled blue — agrees with the statement, outlined — disagrees, grey — neither. Click a cell to open the source.",
     "colStatement": "Statement",
     "matrixPhone": "The full table shows on wide screens; on a narrow screen choose a list above.",
     "toCompass": "To the election compass",
-    "method": "Stances were taken from roll-call votes in the Knesset (the Knesset’s record), from the platforms the lists published, and from statements reported by major outlets; no stance was inferred from ideology."
+    "method": "Stances were taken from roll-call votes in the Knesset (the Knesset’s record), from the platforms the lists published, and from the words of list leaders as reported by major outlets; no stance was inferred from ideology. A vote becomes \"strongly\" only when almost the whole faction voted one way; when fewer than half the faction voted, the strength is capped and the cell says so. A vote by a predecessor faction is marked explicitly."
   }
 }

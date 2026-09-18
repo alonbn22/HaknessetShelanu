@@ -47,17 +47,72 @@ keyDates:
     detail:
       he: "לפי הדיווח, ועדת הבחירות המרכזית צפויה לאשר סופית את הרשימות עד 27 בספטמבר 2026."
       en: "Per reporting, the Central Elections Committee is expected to give final approval to the lists by September 27, 2026."
-    status: reported
+    status: confirmed
     sources:
+      - url: "https://www.bechirot.gov.il/home/"
+        title: "ציר הזמן לבחירות לכנסת ה-26 — אתר ועדת הבחירות המרכזית"
+        publisher: "ועדת הבחירות המרכזית"
       - url: "https://ch10.co.il/news/1100694/"
         title: "הרשימות נסגרו: מי יהיו 120 הח\"כים?"
         publisher: "חרדים10"
+  - key: kd-voter-notice
+    date: "2026-10-06"
+    label: { he: "משלוח הודעה לבוחר", en: "Voter notices are sent" }
+    detail:
+      he: "ועדת הבחירות שולחת לכל בוחר הודעה עם מקום הקלפי שלו (סעיף 55ב לחוק הבחירות)."
+      en: "The Elections Committee sends every voter a notice with their polling station (section 55B of the Elections Law)."
+    status: confirmed
+    sources:
+      - url: "https://www.bechirot.gov.il/home/"
+        title: "ציר הזמן לבחירות לכנסת ה-26 — אתר ועדת הבחירות המרכזית"
+        publisher: "ועדת הבחירות המרכזית"
+  - key: kd-broadcasts
+    date: "2026-10-13"
+    label: { he: "תחילת תשדירי הבחירות בטלוויזיה וברדיו", en: "Election broadcasts begin on TV and radio" }
+    status: confirmed
+    sources:
+      - url: "https://www.bechirot.gov.il/home/"
+        title: "ציר הזמן לבחירות לכנסת ה-26 — אתר ועדת הבחירות המרכזית"
+        publisher: "ועדת הבחירות המרכזית"
+  - key: kd-abroad
+    date: "2026-10-15"
+    label: { he: "הצבעה בכלי שיט ובנציגויות ישראל בחו\"ל", en: "Voting on ships and at Israeli missions abroad" }
+    detail:
+      he: "רק מי שרשאי להצביע בנציגות (דיפלומטים, שליחים ובני משפחותיהם) ובכלי שיט ישראליים מצביע ביום זה; אין הצבעה כללית מחו\"ל."
+      en: "Only those entitled to vote at a mission (diplomats, emissaries and their families) and on Israeli ships vote on this day; there is no general voting from abroad."
+    status: confirmed
+    sources:
+      - url: "https://www.bechirot.gov.il/home/"
+        title: "ציר הזמן לבחירות לכנסת ה-26 — אתר ועדת הבחירות המרכזית"
+        publisher: "ועדת הבחירות המרכזית"
+  - key: kd-surplus
+    date: "2026-10-16"
+    label: { he: "מועד אחרון להסכמי עודפים", en: "Deadline for surplus-vote agreements" }
+    detail:
+      he: "המועד האחרון להודיע לוועדה המרכזית על הסכמי עודפים בין רשימות (סעיף 67(ב) לחוק)."
+      en: "The last day to notify the Central Committee of surplus-vote agreements between lists (section 67(b) of the law)."
+    status: confirmed
+    sources:
+      - url: "https://www.bechirot.gov.il/home/"
+        title: "ציר הזמן לבחירות לכנסת ה-26 — אתר ועדת הבחירות המרכזית"
+        publisher: "ועדת הבחירות המרכזית"
+  - key: kd-lists-published
+    date: "2026-10-18"
+    label: { he: "פרסום רשימות המועמדים", en: "The candidate lists are published" }
+    status: confirmed
+    sources:
+      - url: "https://www.bechirot.gov.il/home/"
+        title: "ציר הזמן לבחירות לכנסת ה-26 — אתר ועדת הבחירות המרכזית"
+        publisher: "ועדת הבחירות המרכזית"
   - key: kd-election
     date: "2026-10-27"
     label: { he: "יום הבחירות", en: "Election day" }
     detail: { he: "יום שלישי, ט\"ז בחשוון התשפ\"ז. יום שבתון.", en: "Tuesday, 16 Cheshvan 5787. A public day of rest." }
     status: confirmed
     sources:
+      - url: "https://www.bechirot.gov.il/home/"
+        title: "ציר הזמן לבחירות לכנסת ה-26 — אתר ועדת הבחירות המרכזית"
+        publisher: "ועדת הבחירות המרכזית"
       - url: "https://www.gov.il/he/departments/central-elections-committee/govil-landing-page"
         title: "ועדת הבחירות המרכזית לכנסת — הבחירות לכנסת ה-26"
         publisher: "gov.il / ועדת הבחירות"
@@ -67,8 +122,11 @@ keyDates:
     detail:
       he: "לפי דיווחים, התוצאות הסופיות צפויות עד 4 בנובמבר (שמונה ימים אחרי הבחירות); ערעורים עד 18 בנובמבר."
       en: "Per reports, final results are expected by November 4 (eight days after the election); appeals by November 18."
-    status: reported
+    status: confirmed
     sources:
+      - url: "https://www.bechirot.gov.il/home/"
+        title: "ציר הזמן לבחירות לכנסת ה-26 — אתר ועדת הבחירות המרכזית"
+        publisher: "ועדת הבחירות המרכזית"
       - url: "https://www.i24news.tv/he/news/israel-elections-2026/artc-8c8f593a"
         title: "הלו\"ז המלא לבחירות 2026"
         publisher: "i24NEWS"
@@ -85,6 +143,22 @@ keyDates:
         publisher: "Zman Yisrael"
 
 facts:
+  - key: surplus-agreements
+    label: { he: "הסכמי עודפים — מה זה ומי חתם", en: "Surplus-vote agreements — what they are and who signed" }
+    detail:
+      he: "אחרי חלוקת המנדטים לפי שיטת בדר-עופר נשארים לכל רשימה קולות \"עודפים\" שלא הספיקו למנדט נוסף. שתי רשימות רשאיות להסכים מראש לאחד את עודפיהן, וכך אחת מהן עשויה לזכות במנדט הנוסף במקום שיאבד. ההסכמים מוגשים לוועדת הבחירות המרכזית עד 16 באוקטובר 2026. עד כה דווח על שלושה זוגות: ישר! והדמוקרטים, ישראל ביתנו וביחד, והרשימה המשותפת ורע\"ם — מוצג על כרטיס כל רשימה."
+      en: "After seats are allocated by the Bader-Ofer method, each list is left with \"surplus\" votes that fell short of another seat. Two lists may agree in advance to pool their surpluses, so that one of them can win the extra seat instead of losing it. Agreements are filed with the Central Elections Committee by October 16, 2026. Three pairs have been reported so far: Yashar! and the Democrats, Yisrael Beiteinu and Together, and the Joint List and Ra'am — shown on each list's card."
+    status: reported
+    sources:
+      - url: "https://www.bechirot.gov.il/home/"
+        title: "ציר הזמן לבחירות לכנסת ה-26 — מועד אחרון להודעה בדבר התקשרויות (הסכמי עודפים), סעיף 67(ב)"
+        publisher: "ועדת הבחירות המרכזית"
+      - url: "https://m.knesset.gov.il/en/about/lexicon/pages/electoralsystem.aspx"
+        title: "Electoral System in Israel (Knesset Lexicon)"
+        publisher: "The Knesset"
+      - url: "https://www.timesofisrael.com/liveblog_entry/joint-list-and-raam-sign-surplus-vote-deal-ahead-of-oct-27-elections/"
+        title: "Joint List and Ra'am sign surplus-vote deal ahead of Oct. 27 elections"
+        publisher: "The Times of Israel"
   - key: election-date
     label: { he: "מועד הבחירות", en: "Election date" }
     value: { he: "יום שלישי, ט\"ז בחשוון התשפ\"ז — 27 באוקטובר 2026", en: "Tuesday, 16 Cheshvan 5787 — October 27, 2026" }
@@ -659,12 +733,16 @@ rules:
 stats:
   - key: eligible-voters
     label: { he: "בעלי זכות בחירה", en: "Eligible voters" }
-    value: { he: "6,788,804 (בבחירות 2022)", en: "6,788,804 (2022 election)" }
+    value: { he: "7,331,981", en: "7,331,981" }
     detail:
-      he: "הנתון הרשמי העדכני ביותר; מספר בעלי זכות הבחירה לכנסת ה-26 יפורסם לאחר סגירת פנקס הבוחרים בספטמבר 2026."
-      en: "The most recent official figure; the 26th-Knesset count will be published once the voter roll closes in September 2026."
+      he: "בעלי זכות הבחירה לכנסת ה-26 לפי פנקס הבוחרים הסופי (נכון ל-6.9.2026) — 547,749 יותר מאשר בבחירות לכנסת ה-25 (6,788,804 ב-2022)."
+      en: "Eligible voters for the 26th Knesset per the final voter roll (as of 6 Sep 2026) — 547,749 more than in the 25th-Knesset election (6,788,804 in 2022)."
     status: confirmed
     sources:
+      - url: "https://www.gov.il/he/pages/26elections-info"
+        title: "מידע לבוחר — הבחירות לכנסת ה-26 (עודכן 16.9.2026)"
+        publisher: "ועדת הבחירות המרכזית / gov.il"
+
       - url: "https://main.knesset.gov.il/EN/Documents/2022-10-24%20Fact%20sheet%2002%20-%2025th%20Knesset%20elections%20-%20updated.pdf"
         title: "Fact sheet: The 25th Knesset elections (Knesset RIC)"
         publisher: "The Knesset"
@@ -684,12 +762,16 @@ stats:
         publisher: "Jewish Virtual Library"
   - key: polling-stations
     label: { he: "קלפיות", en: "Polling stations" }
-    value: { he: "11,707 (2022)", en: "11,707 (2022)" }
+    value: { he: "12,018", en: "12,018" }
     detail:
-      he: "מהן 5,116 נגישות לאנשים עם מוגבלות; בנוסף קלפיות מיוחדות — 222 בבתי חולים, 232 בבתי אבות ו-55 בבתי סוהר ומעצר."
-      en: "Of which 5,116 accessible to people with disabilities; plus special stations — 222 in hospitals, 232 in retirement homes and 55 in prisons and detention facilities."
+      he: "קלפיות רגילות ברחבי הארץ לכנסת ה-26 (מפת הקלפיות הסופית), מהן 6,208 נגישות ו-3,620 נגישות מיוחדות; בנוסף 250 קלפיות בבתי חולים, 55 בבתי סוהר ומעצר ו-102 ב-100 נציגויות ישראל בחו\"ל. ב-2022: 11,707 קלפיות."
+      en: "Regular polling stations nationwide for the 26th Knesset (final station map), of which 6,208 accessible and 3,620 special accessible; plus 250 in hospitals, 55 in prisons and detention facilities and 102 at 100 Israeli missions abroad. In 2022: 11,707."
     status: confirmed
     sources:
+      - url: "https://www.gov.il/he/pages/26elections-info"
+        title: "מידע לבוחר — הבחירות לכנסת ה-26 (עודכן 16.9.2026)"
+        publisher: "ועדת הבחירות המרכזית / gov.il"
+
       - url: "https://main.knesset.gov.il/EN/Documents/2022-10-24%20Fact%20sheet%2002%20-%2025th%20Knesset%20elections%20-%20updated.pdf"
         title: "Fact sheet: The 25th Knesset elections (Knesset RIC)"
         publisher: "The Knesset"
@@ -740,6 +822,99 @@ news:
       he: "בנט ולפיד הכריזו על ריצה משותפת ('ביחד') בראשות בנט."
       en: "Bennett and Lapid announced a joint run (\"Together\") headed by Bennett."
 
+# How to vote — from the Central Elections Committee's voter information and
+# timeline (gov.il / bechirot.gov.il) and Basic Law: The Knesset.
+howToVote:
+  - key: htv-when
+    label: { he: "מתי ואיפה", en: "When and where" }
+    detail:
+      he: "יום שלישי, 27 באוקטובר 2026 — יום שבתון. הקלפיות פתוחות 7:00–22:00 (ביישובים קטנים 8:00–20:00), ומי שבתור בשעת הסגירה מצביע. מ-6 באוקטובר נשלחת לכל בוחר הודעה עם מקום הקלפי שלו; רשימת מקומות הקלפי מתפרסמת ב-20 באוקטובר."
+      en: "Tuesday, 27 October 2026 — a public day of rest. Polls are open 7:00–22:00 (8:00–20:00 in small communities), and anyone in line at closing still votes. From 6 October every voter is sent a notice with their polling station; the list of stations is published on 20 October."
+    status: confirmed
+    sources:
+      - url: "https://www.bechirot.gov.il/home/"
+        title: "ציר הזמן לבחירות לכנסת ה-26 — אתר ועדת הבחירות המרכזית"
+        publisher: "ועדת הבחירות המרכזית"
+      - url: "https://m.knesset.gov.il/EN/activity/documents/BasicLawsPDF/BasicLawTheKnesset.pdf"
+        title: "Basic Law: The Knesset (art. 10)"
+        publisher: "The Knesset"
+  - key: htv-who
+    label: { he: "מי רשאי להצביע", en: "Who may vote" }
+    detail:
+      he: "כל אזרח ישראלי בן 18 ומעלה הרשום במרשם האוכלוסין. ההצבעה אישית ובישראל בלבד; אין הצבעה בדואר ואין הצבעה כללית מחו\"ל."
+      en: "Every Israeli citizen aged 18 or over who is in the Population Register. Voting is in person and in Israel only; there is no postal voting and no general voting from abroad."
+    status: confirmed
+    sources:
+      - url: "https://m.knesset.gov.il/EN/activity/documents/BasicLawsPDF/BasicLawTheKnesset.pdf"
+        title: "Basic Law: The Knesset (art. 5)"
+        publisher: "The Knesset"
+      - url: "https://www.gov.il/he/pages/26elections-info"
+        title: "מידע לבוחר — הבחירות לכנסת ה-26 (עודכן 16.9.2026)"
+        publisher: "ועדת הבחירות המרכזית / gov.il"
+  - key: htv-id
+    label: { he: "מה מביאים", en: "What to bring" }
+    detail:
+      he: "אחד מאלה: תעודת זהות תקינה, דרכון ישראלי תקף, רישיון נהיגה תקף, או תעודה צבאית בתוקף (חוגר, קצין או נגד); גם תעודת שוטר או תעודת חבר כנסת."
+      en: "One of: a valid ID card, a valid Israeli passport, a valid driving licence, or a valid military ID (enlisted, officer or NCO); a police ID or Knesset-member ID also counts."
+    status: confirmed
+    sources:
+      - url: "https://www.gov.il/he/pages/26elections-info"
+        title: "מידע לבוחר — הבחירות לכנסת ה-26 (עודכן 16.9.2026)"
+        publisher: "ועדת הבחירות המרכזית / gov.il"
+  - key: htv-access
+    label: { he: "נגישות", en: "Accessibility" }
+    detail:
+      he: "כ-6,231 קלפיות נגישות לאנשים המוגבלים בניידות, וכ-3,510 קלפיות נגישות מיוחדות שבהן רשאי להצביע מי שמוגבל בניידות והקלפי שלו אינה נגישה — עם הצהרה בפני מזכיר הקלפי, במעטפה כפולה. רשימת הקלפיות הנגישות מתפרסמת סמוך לבחירות."
+      en: "About 6,231 stations accessible to people with limited mobility, and about 3,510 special accessible stations where anyone with limited mobility whose own station is not accessible may vote — with a declaration to the station secretary, by double envelope. The list is published close to election day."
+    status: confirmed
+    sources:
+      - url: "https://www.gov.il/he/pages/26elections-info?chapterIndex=7"
+        title: "הצבעת אנשים המוגבלים בניידות — מידע לבוחר"
+        publisher: "ועדת הבחירות המרכזית / gov.il"
+  - key: htv-hospital
+    label: { he: "מאושפזים ומוסדות", en: "Hospital patients and care homes" }
+    detail:
+      he: "מי שמאושפז ביום הבחירות (למעט אשפוז יום) מצביע בקלפי למאושפזים בבית החולים, עם אישור בכתב מבית החולים ותעודה מזהה; גם שוהים במוסד מוכר לאנשים המוגבלים בניידות (50 דיירים לפחות) מצביעים בקלפי במוסד."
+      en: "Anyone hospitalised on election day (other than day admissions) votes at the hospital's station, with a written confirmation from the hospital and an ID; residents of recognised care institutions for people with limited mobility (50 residents or more) vote at a station in the institution."
+    status: confirmed
+    sources:
+      - url: "https://www.gov.il/he/pages/26elections-info?chapterIndex=3"
+        title: "הצבעה בבתי חולים ובמוסדות — מידע לבוחר"
+        publisher: "ועדת הבחירות המרכזית / gov.il"
+  - key: htv-abroad
+    label: { he: "בחו\"ל", en: "Abroad" }
+    detail:
+      he: "רק דיפלומטים, שליחי המדינה ובני משפחותיהם מצביעים בנציגויות ישראל (102 קלפיות ב-100 נציגויות), וכן צוותי כלי שיט ישראליים — ב-15 באוקטובר 2026. אזרח שנמצא בחו\"ל ביום הבחירות אינו יכול להצביע."
+      en: "Only diplomats, state emissaries and their families vote at Israeli missions (102 stations at 100 missions), plus crews of Israeli ships — on 15 October 2026. A citizen who is abroad on election day cannot vote."
+    status: confirmed
+    sources:
+      - url: "https://www.bechirot.gov.il/home/"
+        title: "ציר הזמן לבחירות לכנסת ה-26 — יום ההצבעה בכלי שיט ובנציגויות (15.10.2026)"
+        publisher: "ועדת הבחירות המרכזית"
+      - url: "https://www.gov.il/he/pages/26elections-info"
+        title: "מידע לבוחר — הבחירות לכנסת ה-26 (עודכן 16.9.2026)"
+        publisher: "ועדת הבחירות המרכזית / gov.il"
+
+# Surplus-vote agreements between lists — announced pairs, then the CEC's
+# filings (deadline 16 October 2026). A list can be party to one agreement.
+surplusAgreements:
+  - between: [yashar, democrats]
+    date: "2026-09-10"
+    status: reported
+    sources:
+      - { url: "https://www.timesofisrael.com/liveblog_entry/yashar-and-democrats-sign-surplus-vote-agreement-as-do-yisrael-beytenu-and-byachad/", title: "Yashar and Democrats sign surplus-vote agreement, as do Yisrael Beytenu and B'Yachad (10 Sep 2026)", publisher: "The Times of Israel" }
+      - { url: "https://www.jpost.com/israel-election-2026/article-908296", title: "Bennett-Liberman, Eisenkot-Golan: Opposition parties sign surplus vote-sharing agreement (10 Sep 2026)", publisher: "The Jerusalem Post" }
+  - between: [yisrael-beiteinu, together]
+    date: "2026-09-10"
+    status: reported
+    sources:
+      - { url: "https://www.timesofisrael.com/liveblog_entry/yashar-and-democrats-sign-surplus-vote-agreement-as-do-yisrael-beytenu-and-byachad/", title: "Yashar and Democrats sign surplus-vote agreement, as do Yisrael Beytenu and B'Yachad (10 Sep 2026)", publisher: "The Times of Israel" }
+      - { url: "https://www.jpost.com/israel-election-2026/article-908296", title: "Bennett-Liberman, Eisenkot-Golan: Opposition parties sign surplus vote-sharing agreement (10 Sep 2026)", publisher: "The Jerusalem Post" }
+  - between: [joint-list, raam]
+    date: "2026-09-12"
+    status: reported
+    sources:
+      - { url: "https://www.timesofisrael.com/liveblog_entry/joint-list-and-raam-sign-surplus-vote-deal-ahead-of-oct-27-elections/", title: "Joint List and Ra'am sign surplus-vote deal ahead of Oct. 27 elections (12 Sep 2026)", publisher: "The Times of Israel" }
 links:
   - label: { he: "ועדת הבחירות המרכזית", en: "Central Elections Committee" }
     url: "https://www.bechirot.gov.il/home/"

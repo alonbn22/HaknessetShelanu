@@ -383,7 +383,10 @@
     "stance": "Stated position on partners",
     "showAll": "Show the full list",
     "compassCta": "Election compass: who is closest to your views?",
-    "positionsCta": "What each list says, stance by stance"
+    "positionsCta": "What each list says, stance by stance",
+    "surplusWith": "Surplus-vote agreement with",
+    "howToVote": "How to vote",
+    "recordParticipation": "On record: the faction's members took part in {pct}% of the 25th Knesset's votes on average."
   },
   "electionsHistory": {
     "title": "Knesset Elections History",

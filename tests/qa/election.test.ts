@@ -29,7 +29,7 @@ if (outlook) {
   });
 
   test("every fact, rule, and stat cites at least one https source", () => {
-    for (const group of [outlook.facts, outlook.rules, outlook.stats]) {
+    for (const group of [outlook.facts, outlook.rules, outlook.stats, outlook.howToVote]) {
       for (const f of group) {
         assert.ok(f.sources.length >= 1, `${f.key}: no sources`);
         for (const s of f.sources) {
@@ -164,6 +164,24 @@ if (outlook) {
       );
       assert.ok(row, `${p.name.he}: factionId ${p.factionId} not in factions`);
       assert.equal(row!.cur, 1, `${p.name.he}: factionId ${p.factionId} ("${row!.name}") is not a current faction`);
+    }
+  });
+}
+
+if (outlook) {
+  test("surplus-vote agreements pair two running lists, each list at most once, and cite sources", () => {
+    const slugs = new Set(outlook.parties.map((p) => p.slug));
+    const used = new Map<string, string>();
+    for (const a of outlook.surplusAgreements) {
+      const [x, y] = a.between;
+      assert.notEqual(x, y, "an agreement needs two different lists");
+      for (const s of [x, y]) {
+        assert.ok(slugs.has(s), `surplus agreement names unknown list "${s}"`);
+        assert.ok(!used.has(s), `${s} appears in two surplus agreements (${used.get(s)} and ${x}-${y})`);
+        used.set(s, `${x}-${y}`);
+      }
+      assert.match(a.date, /^\d{4}-\d{2}-\d{2}$/);
+      for (const src of a.sources) assert.ok(/^https:\/\//.test(src.url), `${x}-${y}: source not https`);
     }
   });
 }

@@ -12,6 +12,7 @@ import {
 } from "@/lib/content";
 import { formatDate } from "@/lib/format";
 import { rtlAttrs } from "@/lib/text";
+import { getFactionAvgParticipation } from "@/lib/queries";
 import { KeyDatesTimeline } from "@/components/KeyDatesTimeline";
 import { PollsSection } from "@/components/polls/PollsSection";
 
@@ -237,6 +238,21 @@ export default async function ElectionsHistoryPage() {
                         {ts(profile.spectrum)}
                       </span>
                     )}
+                    {/* What the sitting faction did, beside what the list says:
+                        its members' average vote participation in the 25th
+                        Knesset, from the Knesset record. */}
+                    {(() => {
+                      const avg = p.factionId != null ? getFactionAvgParticipation(p.factionId) : null;
+                      if (avg == null) return null;
+                      return (
+                        <p className="text-xs text-muted">
+                          {te("recordParticipation", { pct: avg })}{" "}
+                          <Link href={`/parties/${p.factionId}`} className="underline hover:text-accent-ink">
+                            {tc("source")}: {tc("knesset")}
+                          </Link>
+                        </p>
+                      );
+                    })()}
                     {/* New lists aren't sitting factions — say so instead of
                         silently omitting the party-page link. */}
                     {p.factionId == null && (
@@ -256,6 +272,20 @@ export default async function ElectionsHistoryPage() {
                     {p.note && (
                       <p className="text-xs leading-relaxed" {...partyTextAttrs(p.note, locale)}>{partyText(p.note, locale)}</p>
                     )}
+                    {(() => {
+                      const a = outlook.surplusAgreements.find((x) => x.between.includes(p.slug));
+                      if (!a) return null;
+                      const other = outlook.parties.find((o) => o.slug === a.between.find((s) => s !== p.slug));
+                      return (
+                        <p className="text-xs leading-relaxed">
+                          <span className="font-semibold">{te("surplusWith")}: </span>
+                          {other ? partyText(other.name, locale) : a.between.join(" – ")}
+                          {a.status === "reported" && <> ({te("statusReported")})</>}
+                          {" · "}
+                          <SourceLinks sources={a.sources} label={tc("source")} />
+                        </p>
+                      );
+                    })()}
                     {p.stance && (
                       <p className="text-xs leading-relaxed" {...partyTextAttrs(p.stance, locale)}>
                         <span className="font-semibold">{te("stance")}: </span>
@@ -297,6 +327,17 @@ export default async function ElectionsHistoryPage() {
                   </div>
                   );
                 })}
+              </div>
+            </div>
+          )}
+
+          {outlook.howToVote.length > 0 && (
+            <div id="how-to-vote" className="space-y-2">
+              <h3 className="text-sm font-semibold uppercase tracking-wide text-muted">
+                {te("howToVote")}
+              </h3>
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {outlook.howToVote.map(factRow)}
               </div>
             </div>
           )}

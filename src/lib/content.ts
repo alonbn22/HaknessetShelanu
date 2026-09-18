@@ -460,12 +460,28 @@ const electionOutlookSchema = z.object({
   // The road to election day and beyond, in order — each entry dated + sourced.
   keyDates: z.array(electionFactSchema).optional(),
   facts: z.array(electionFactSchema),
+  // Practical voting information, every item sourced to the CEC or the law.
+  howToVote: z.array(electionFactSchema).default([]),
   parties: z.array(electionPartySchema),
   rules: z.array(electionFactSchema),
   stats: z.array(electionFactSchema),
   news: z
     .array(z.object({ date: z.string().optional(), text: localizedText }))
     .optional(),
+  // Surplus-vote agreements between two running lists, as
+  // reported or as filed with the CEC; a list can be in at most one.
+  surplusAgreements: z
+    .array(
+      z.object({
+        between: z.tuple([listSlug, listSlug]),
+        date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+        status: z.enum(["confirmed", "reported"]).default("reported"),
+        sources: z
+          .array(z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() }))
+          .min(1, "every agreement must cite at least one source"),
+      }),
+    )
+    .default([]),
   links: z.array(z.object({ label: localizedText, url: httpUrl })),
   disclaimer: localizedText.optional(),
 });

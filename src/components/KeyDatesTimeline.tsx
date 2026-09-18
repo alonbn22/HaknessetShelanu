@@ -30,9 +30,22 @@ export async function KeyDatesTimeline({
   // The next upcoming step (first date that hasn't passed) carries the focus.
   const nextKey = dates.find((d) => d.date && daysUntil(d.date) >= 0)?.key;
 
+  // The home banner shows what is still ahead — the next few steps and always
+  // election day — not the whole calendar; the full timeline lives on /elections.
+  const shown =
+    variant === "compact"
+      ? (() => {
+          const ahead = dates.filter((d) => d.date && daysUntil(d.date) >= 0);
+          const pick = ahead.slice(0, 4);
+          const election = dates.find((d) => d.key === "kd-election");
+          if (election && !pick.includes(election) && ahead.includes(election)) pick.push(election);
+          return pick.length > 0 ? pick : dates.slice(-3);
+        })()
+      : dates;
+
   return (
     <ol className={variant === "compact" ? "space-y-2" : "space-y-4"}>
-      {dates.map((d) => {
+      {shown.map((d) => {
         const isElection = d.key === "kd-election";
         const isNext = d.key === nextKey;
         const days = d.date ? daysUntil(d.date) : null;

@@ -1,66 +1,101 @@
-# PersonID 1056. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 1056. Researched from reputable public sources and source-verified
+# (every cited URL re-fetched). Neutral language; legal status marked. Reviewed 2026-09-18.
 personId: 1056
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: כיהן כשר השירותים הדתיים וכשר הרווחה
-      en: Served as Minister of Religious Services and Minister of Welfare
+      he: "כיהן כשר השירותים הדתיים וכשר הרווחה והביטחון החברתי"
+      en: "Served as Minister of Religious Services and Minister of Welfare and Social Affairs"
     description:
-      he: יעקב מרגי, חבר כנסת מטעם ש"ס, כיהן כשר השירותים הדתיים בין השנים 2009
-        ל-2013, ומאוחר יותר כשר הרווחה והביטחון החברתי החל מסוף 2022 ועד
-        התפטרותו ביולי 2025 בעקבות פרישת ש"ס מהממשלה.
-      en: Yaakov Margi, a Knesset member for Shas, served as Minister of Religious
-        Services from 2009 to 2013, and later as Minister of Welfare and Social
-        Affairs from late 2022 until his resignation in July 2025 following
-        Shas's withdrawal from the government.
+      he: "יעקב מרגי, חבר כנסת מטעם ש\"ס, כיהן כשר השירותים הדתיים בין השנים 2009 ל-2013, וכשר הרווחה והביטחון החברתי מדצמבר 2022 ועד התפטרותו ב-17 ביולי 2025, עם פרישת ש\"ס מהממשלה על רקע אי-חקיקת חוק הפטור לבני הישיבות."
+      en: "Yaakov Margi, a Shas Knesset member, served as Minister of Religious Services from 2009 to 2013, and as Minister of Welfare and Social Affairs from December 2022 until his resignation on 17 July 2025, when Shas withdrew from the government over the failure to pass a yeshiva-student draft-exemption law."
     sources:
-      - url: https://en.wikipedia.org/wiki/Ya'akov_Margi
-        title: Ya'akov Margi
-        publisher: Wikipedia
-      - url: https://www.wikidata.org/wiki/Q2330483
-        title: Ya'akov Margi (Q2330483)
-        publisher: Wikidata
-      - url: https://www.timesofisrael.com/liveblog_entry/shas-ministers-file-resignations-as-party-withdraws-from-government/
-        title: Shas ministers file resignations as party withdraws from government
-        publisher: The Times of Israel
+      - url: "https://en.wikipedia.org/wiki/Ya'akov_Margi"
+        title: "Ya'akov Margi"
+        publisher: "Wikipedia"
+      - url: "https://www.timesofisrael.com/liveblog_entry/shas-ministers-file-resignations-as-party-withdraws-from-government/"
+        title: "Shas ministers file resignations as party withdraws from government"
+        publisher: "The Times of Israel"
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/1056"
+        title: "יעקב מרגי — דף חבר הכנסת"
+        publisher: "Knesset"
   - kind: positive
     category: achievement
     title:
-      he: חבר כנסת ותיק החל משנת 2003
-      en: Veteran Knesset member since 2003
+      he: "חבר כנסת ותיק החל משנת 2003"
+      en: "Veteran Knesset member since 2003"
     description:
-      he: מרגי נבחר לראשונה לכנסת ה-16 בשנת 2003 וכיהן ברציפות לאורך מספר כהונות כנסת
-        מטעם ש"ס, ובהן שימש בין היתר כיושב ראש ועדת הכנסת.
-      en: Margi was first elected to the 16th Knesset in 2003 and served continuously
-        across multiple Knesset terms as a member of Shas, including a period
-        chairing the House Committee.
+      he: "מרגי נבחר לראשונה לכנסת ה-16 בשנת 2003 וכיהן מאז לאורך מספר כהונות מטעם ש\"ס, ובהן שימש בין היתר כיושב ראש ועדת הכנסת. בפברואר 2023 התפטר מהכנסת במסגרת 'החוק הנורווגי' כדי להתמקד בתפקידו כשר, ושב לכהן כחבר כנסת ביולי 2025."
+      en: "Margi was first elected to the 16th Knesset in 2003 and has since served across multiple terms for Shas, including a period chairing the House Committee. In February 2023 he resigned his seat under the Norwegian Law to focus on his ministerial post, returning to the Knesset in July 2025."
     sources:
-      - url: https://en.wikipedia.org/wiki/Ya'akov_Margi
-        title: Ya'akov Margi
-        publisher: Wikipedia
-      - url: https://www.jewishvirtuallibrary.org/yakov-margi
-        title: Yakov Margi
-        publisher: Jewish Virtual Library
+      - url: "https://en.wikipedia.org/wiki/Ya'akov_Margi"
+        title: "Ya'akov Margi"
+        publisher: "Wikipedia"
+      - url: "https://www.jewishvirtuallibrary.org/yakov-margi"
+        title: "Yakov Margi"
+        publisher: "Jewish Virtual Library"
+      - url: "https://www.ynet.co.il/news/article/sy5cokxxge"
+        title: "ח\"כ יעקב מרגי מש\"ס הודיע: לא אתמודד לכנסת הבאה"
+        publisher: "ynet"
   - kind: positive
     category: achievement
     title:
-      he: רקע בשירות ציבורי ודתי בבאר שבע
-      en: Public and religious service background in Beersheba
+      he: "רקע בשירות ציבורי ודתי בבאר שבע"
+      en: "Public and religious service background in Beersheba"
     description:
-      he: לפני כניסתו לכנסת כיהן מרגי כיושב ראש המועצה הדתית בבאר שבע בין השנים 1993
-        ל-2003, ושימש כמנכ"ל תנועת ש"ס החל משנת 2001. הוא נולד ברבאט שבמרוקו
-        ועלה לישראל עם משפחתו ב-1962 במסגרת מבצע יכין.
-      en: Before entering the Knesset, Margi chaired the Beersheba local religious
-        council from 1993 to 2003 and served as director general of the Shas
-        movement from 2001. He was born in Rabat, Morocco, and immigrated to
-        Israel with his family in 1962 as part of Operation Yachin.
+      he: "לפני כניסתו לכנסת כיהן מרגי כיושב ראש המועצה הדתית בבאר שבע בין השנים 1993 ל-2003, ושימש כמנכ\"ל תנועת ש\"ס החל משנת 2001. הוא נולד ברבאט שבמרוקו ועלה לישראל עם משפחתו ב-1962."
+      en: "Before entering the Knesset, Margi chaired the Beersheba religious council from 1993 to 2003 and served as director general of the Shas movement from 2001. He was born in Rabat, Morocco, and immigrated to Israel with his family in 1962."
     sources:
-      - url: https://en.wikipedia.org/wiki/Ya'akov_Margi
-        title: Ya'akov Margi
-        publisher: Wikipedia
-      - url: https://www.jewishvirtuallibrary.org/yakov-margi
-        title: Yakov Margi
-        publisher: Jewish Virtual Library
+      - url: "https://en.wikipedia.org/wiki/Ya'akov_Margi"
+        title: "Ya'akov Margi"
+        publisher: "Wikipedia"
+      - url: "https://www.jewishvirtuallibrary.org/yakov-margi"
+        title: "Yakov Margi"
+        publisher: "Jewish Virtual Library"
+  - kind: neutral
+    category: role
+    date: "2025-08-04"
+    title:
+      he: "סגן יושב ראש הכנסת (מאוגוסט 2025)"
+      en: "Deputy Speaker of the Knesset (since August 2025)"
+    description:
+      he: "לאחר שובו לכנסת ביולי 2025 מונה מרגי ב-4 באוגוסט 2025 לסגן יושב ראש הכנסת, תפקיד שבו הוא מכהן גם לאחר פיזור הכנסת ה-25."
+      en: "After returning to the Knesset in July 2025, Margi was appointed a Deputy Speaker of the Knesset on 4 August 2025, a post he continues to hold following the dissolution of the 25th Knesset."
+    sources:
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/1056"
+        title: "יעקב מרגי — דף חבר הכנסת"
+        publisher: "Knesset"
+      - url: "https://www.ynet.co.il/news/article/sy5cokxxge"
+        title: "ח\"כ יעקב מרגי מש\"ס הודיע: לא אתמודד לכנסת הבאה"
+        publisher: "ynet"
+  - kind: neutral
+    category: news
+    date: "2026-05-24"
+    title:
+      he: "הודיע כי לא יתמודד לכנסת ה-26"
+      en: "Announced he will not run for the 26th Knesset"
+    description:
+      he: "ב-24 במאי 2026 הודיע מרגי, סגן יושב ראש הכנסת, כי לאחר 23 שנים כחבר כנסת, מנכ\"ל התנועה ושר, ביקש מיו\"ר ש\"ס אריה דרעי שלא להיכלל ברשימה לכנסת הבאה. הוא הדגיש כי אינו פורש מתנועת ש\"ס."
+      en: "On 24 May 2026 Margi, a Deputy Speaker of the Knesset, announced that after 23 years as an MK, movement director general and minister, he had asked Shas chairman Aryeh Deri not to be placed on the party's list for the next Knesset. He stressed that he was not leaving the Shas movement."
+    sources:
+      - url: "https://www.ynet.co.il/news/article/sy5cokxxge"
+        title: "ח\"כ יעקב מרגי מש\"ס הודיע: לא אתמודד לכנסת הבאה"
+        publisher: "ynet"
+  - kind: neutral
+    category: news
+    date: "2026-07-14"
+    title:
+      he: "נאום פרידה בכנסת ועמדה בנושא הגיוס"
+      en: "Farewell speech in the Knesset and a stance on conscription"
+    description:
+      he: "ב-14 ביולי 2026 נשא מרגי נאום פרידה במליאת הכנסת לסיכום כהונתו. באותו יום נמסר כי אמר שלדעתו לא היה צריך להיות חוק לימוד תורה וכי כל מי שאינו לומד בישיבה צריך להתגייס."
+      en: "On 14 July 2026 Margi delivered a farewell address in the Knesset plenum marking the end of his tenure. The same day he was reported as saying that, in his view, there should be no Torah-study law and that everyone who is not studying in a yeshiva should be drafted."
+    sources:
+      - url: "https://www.c14.co.il/article/1619147"
+        title: "אחרי יותר משני עשורים בכנסת: נאום הפרידה המרגש של יעקב מרגי"
+        publisher: "Channel 14"
+      - url: "https://www.inn.co.il/news/701440"
+        title: "ח\"כ מש\"ס הפתיע: צריך לגייס את כל מי שלא לומד"
+        publisher: "Arutz 7 (INN)"

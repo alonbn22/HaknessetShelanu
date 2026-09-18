@@ -1,33 +1,69 @@
 # Avigdor Lieberman (PersonID 427). Factual reporting from reputable public
-# sources, cited per claim. Neutral language; legal status marked. REVIEW before launch.
+# sources, cited per claim. Neutral language; legal status marked. Reviewed 2026-09-18.
 personId: 427
+lastReviewed: "2026-09-18"
 claims:
   - kind: negative
     category: investigation
     status: acquitted
     title:
-      he: "הועמד לדין בחשד למרמה והפרת אמונים — וזוכה (2013)"
-      en: "Tried for fraud and breach of trust — acquitted (2013)"
+      he: "הועמד לדין בחשד למרמה והפרת אמונים — וזוכה פה אחד (2013)"
+      en: "Tried for fraud and breach of trust — unanimously acquitted (2013)"
     date: "2013-11-06"
     description:
-      he: "הואשם במרמה והפרת אמונים בנוגע לקידום מינוי שגריר. בנובמבר 2013 זוכה פה אחד על ידי בית משפט השלום בירושלים; השופטים קבעו שלא הוכחה עבירה פלילית."
-      en: "Charged with fraud and breach of trust over the promotion of an ambassadorial appointment. In November 2013 he was unanimously acquitted by the Jerusalem Magistrate's Court, which found no criminal offense was proven."
+      he: "הואשם במרמה והפרת אמונים בפרשת קידום מינויו של זאב בן-אריה לשגריר בלטביה. ב-6 בנובמבר 2013 זיכה אותו בית משפט השלום בירושלים פה אחד, בהרכב של שלושה שופטים, לאחר שקבע כי לא הוכח ניגוד עניינים בחומרה המצדיקה הרשעה. היועץ המשפטי לממשלה החליט בדצמבר 2013 שלא לערער על הזיכוי."
+      en: "Charged with fraud and breach of trust over the promotion of Ze'ev Ben Aryeh's appointment as ambassador to Latvia. On 6 November 2013 a three-judge panel of the Jerusalem Magistrate's Court unanimously acquitted him, finding no proof of a conflict of interest severe enough to warrant a conviction. In December 2013 the Attorney General decided not to appeal."
     sources:
-      - url: "https://www.washingtonpost.com/world/middle_east/israeli-politician-avigdor-lieberman-acquitted-of-corruption-charges/2013/11/06/ac7c6fec-46ef-11e3-95a9-3f15b5618ba8_story.html"
-        title: "Avigdor Lieberman acquitted of corruption charges"
-        publisher: "The Washington Post"
-      - url: "https://en.wikipedia.org/wiki/Avigdor_Lieberman"
-        title: "Avigdor Lieberman"
-        publisher: "Wikipedia"
+      - url: "https://www.timesofisrael.com/with-political-fate-in-balance-liberman-verdict-expected-this-morning/"
+        title: "Avigdor Liberman acquitted, will return to Foreign Ministry"
+        publisher: "The Times of Israel"
+      - url: "https://www.ynet.co.il/articles/0,7340,L-4450093,00.html"
+        title: "דרמה פוליטית: ליברמן זוכה פה אחד"
+        publisher: "ynet"
+      - url: "https://www.timesofisrael.com/attorney-general-will-not-appeal-liberman-verdict/"
+        title: "Attorney general will not appeal Liberman verdict"
+        publisher: "The Times of Israel"
   - kind: positive
     category: achievement
     title:
-      he: "מייסד ישראל ביתנו וכיהן כשר חוץ וכשר ביטחון"
-      en: "Founder of Yisrael Beiteinu; served as Foreign Minister and Defense Minister"
+      he: "מייסד ישראל ביתנו וכיהן כשר החוץ, שר הביטחון ושר האוצר"
+      en: "Founder of Yisrael Beiteinu; served as Foreign, Defense and Finance Minister"
     description:
-      he: "הקים את מפלגת ישראל ביתנו (1999) וכיהן בתפקידים בכירים, בהם שר החוץ ושר הביטחון."
-      en: "Founded the Yisrael Beiteinu party (1999) and held senior posts, including Foreign Minister and Defense Minister."
+      he: "הקים את מפלגת ישראל ביתנו (1999) ועומד בראשה מאז. כיהן בתפקידים בכירים בממשלות ישראל, בהם שר החוץ, שר הביטחון ושר האוצר (2021–2022)."
+      en: "Founded the Yisrael Beiteinu party (1999) and has led it since. Held senior cabinet posts, including Foreign Minister, Defense Minister and Finance Minister (2021–2022)."
     sources:
       - url: "https://en.wikipedia.org/wiki/Avigdor_Lieberman"
         title: "Avigdor Lieberman"
         publisher: "Wikipedia"
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/427"
+        title: "אביגדור ליברמן — דף חבר הכנסת"
+        publisher: "Knesset"
+  - kind: neutral
+    category: news
+    date: "2026-08-17"
+    title:
+      he: "הצהיר כי ישראל ביתנו לא תשב בממשלת מיעוט"
+      en: "Declared that Yisrael Beiteinu will not join a minority government"
+    description:
+      he: "ב-17 באוגוסט 2026, בתגובה לדיווח על כוונת גדי איזנקוט להקים ממשלה צרה ולהרחיבה לאחר השבעתה, הצהיר ליברמן כי ישראל ביתנו לא תהיה שותפה לממשלת מיעוט בשום הרכב."
+      en: "On 17 August 2026, responding to a report that Gadi Eisenkot intended to form a narrow government and expand it after being sworn in, Lieberman declared that Yisrael Beiteinu would not be a partner in a minority government in any configuration."
+    sources:
+      - url: "https://www.haaretz.co.il/news/elections/2026-08-17/ty-article/.premium/000001a0-0f03-d337-a7f0-ffefbf2d0000"
+        title: "לאחר הפרסום ב\"הארץ\" על כוונות איזנקוט, ליברמן מצהיר: לא אשב בממשלת מיעוט"
+        publisher: "Haaretz"
+  - kind: neutral
+    category: news
+    date: "2026-09-06"
+    title:
+      he: "הציג את רשימת ישראל ביתנו לבחירות 2026"
+      en: "Unveiled the Yisrael Beiteinu slate for the 2026 election"
+    description:
+      he: "ב-6 בספטמבר 2026 הציג ליברמן את רשימת ישראל ביתנו לכנסת ה-26, ובראשה הוא עצמו. רפי בן שטרית, ראש עיריית בית שאן לשעבר, הוצב במקום השני, אל\"מ (מיל') טליה לנקרי במקום השלישי, וחברי הכנסת עודד פורר ויוליה מלינובסקי במקומות הרביעי והחמישי."
+      en: "On 6 September 2026 Lieberman presented the Yisrael Beiteinu list for the 26th Knesset, headed by himself. Former Beit Shean mayor Rafi Ben Shitrit was placed second, Col. (res.) Talya Lankri third, and MKs Oded Forer and Yulia Malinovsky fourth and fifth."
+    sources:
+      - url: "https://www.timesofisrael.com/bennett-liberman-unveil-byachad-yisrael-beytenu-knesset-slates-for-upcoming-election/"
+        title: "Anti-Netanyahu leaders Bennett and Liberman unveil their parties' Knesset election slates"
+        publisher: "The Times of Israel"
+      - url: "https://www.jpost.com/israel-election-2026/article-907744"
+        title: "Avigdor Liberman announces Yisrael Beytenu's election slate"
+        publisher: "The Jerusalem Post"

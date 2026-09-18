@@ -1,97 +1,139 @@
-# PersonID 30704. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30704. Researched from reputable public sources and source-verified
+# (every cited URL re-fetched). Neutral language; legal status marked. Reviewed 2026-09-18.
 personId: 30704
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: חבר כנסת ושר התקשורת מטעם הליכוד
-      en: Member of Knesset and Minister of Communications (Likud)
+      he: "חבר כנסת ושר התקשורת מטעם הליכוד"
+      en: "Member of Knesset and Minister of Communications (Likud)"
     description:
-      he: שלמה קרעי נבחר לכנסת לראשונה בבחירות אפריל 2019 מטעם מפלגת הליכוד. לאחר
-        בחירות 2022 מונה לשר התקשורת בממשלה השלושים ושבע של ישראל, תפקיד שבו הוא
-        מכהן מאז דצמבר 2022.
-      en: Shlomo Karhi was first elected to the Knesset in the April 2019 elections as
-        a member of the Likud party. Following the 2022 elections he was
-        appointed Minister of Communications in Israel's thirty-seventh
-        government, a post he has held since December 2022.
-    date: 2022-12-29
+      he: "שלמה קרעי נבחר לכנסת לראשונה בבחירות אפריל 2019 מטעם מפלגת הליכוד. לאחר בחירות 2022 מונה לשר התקשורת בממשלה השלושים ושבע, תפקיד שבו הוא מכהן מדצמבר 2022, וגם בממשלת המעבר לאחר פיזור הכנסת ה-25."
+      en: "Shlomo Karhi was first elected to the Knesset in the April 2019 elections as a member of the Likud party. Following the 2022 elections he was appointed Minister of Communications in Israel's thirty-seventh government, a post he has held since December 2022, including in the caretaker government after the dissolution of the 25th Knesset."
+    date: "2022-12-29"
     sources:
-      - url: https://en.wikipedia.org/wiki/Shlomo_Karhi
-        title: Shlomo Karhi
-        publisher: Wikipedia
-      - url: https://www.jpost.com/Israel-News/Meet-the-new-MK-Shlomo-Karhi-of-Likud-587471
+      - url: "https://en.wikipedia.org/wiki/Shlomo_Karhi"
+        title: "Shlomo Karhi"
+        publisher: "Wikipedia"
+      - url: "https://www.jpost.com/Israel-News/Meet-the-new-MK-Shlomo-Karhi-of-Likud-587471"
         title: "Meet the new MK: Shlomo Karhi of Likud"
-        publisher: The Jerusalem Post
+        publisher: "The Jerusalem Post"
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30704"
+        title: "שלמה קרעי — דף חבר הכנסת"
+        publisher: "Knesset"
   - kind: positive
     category: achievement
     title:
-      he: שירות צבאי בגדוד נצח יהודה ותואר דוקטור
-      en: Military service in the Netzah Yehuda Battalion and doctoral degree
+      he: "שירות צבאי בגדוד נצח יהודה ותואר דוקטור"
+      en: "Military service in the Netzah Yehuda Battalion and doctoral degree"
     description:
-      he: קרעי שירת בשירותו הצבאי בגדוד נצח יהודה (הנח"ל החרדי) בצה"ל. לאחר מכן השלים
-        תואר ראשון בראיית חשבון ניהולית ומערכות מידע במרכז האקדמי לב, ותואר שני
-        ודוקטורט בהנדסת תעשייה וניהול באוניברסיטת בן-גוריון בנגב.
-      en: Karhi served in the IDF's Netzah Yehuda Battalion (the Haredi Nahal track)
-        during his national military service. He went on to earn a BA in
-        managerial accounting and information systems at the Lev Academic Center
-        (Jerusalem College of Technology), and a master's degree and a PhD in
-        industrial engineering and management at Ben-Gurion University of the
-        Negev.
+      he: "קרעי שירת בשירותו הצבאי בגדוד נצח יהודה (הנח\"ל החרדי) בצה\"ל. לאחר מכן השלים תואר ראשון בראיית חשבון ניהולית ומערכות מידע במרכז האקדמי לב, ותואר שני ודוקטורט בהנדסת תעשייה וניהול באוניברסיטת בן-גוריון בנגב."
+      en: "Karhi served in the IDF's Netzah Yehuda Battalion (the Haredi Nahal track) during his national military service. He went on to earn a BA in managerial accounting and information systems at the Lev Academic Center (Jerusalem College of Technology), and a master's degree and a PhD in industrial engineering and management at Ben-Gurion University of the Negev."
     sources:
-      - url: https://en.wikipedia.org/wiki/Shlomo_Karhi
-        title: Shlomo Karhi
-        publisher: Wikipedia
-      - url: https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%9E%D7%94_%D7%A7%D7%A8%D7%A2%D7%99
-        title: שלמה קרעי
-        publisher: Hebrew Wikipedia
+      - url: "https://en.wikipedia.org/wiki/Shlomo_Karhi"
+        title: "Shlomo Karhi"
+        publisher: "Wikipedia"
+      - url: "https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%9E%D7%94_%D7%A7%D7%A8%D7%A2%D7%99"
+        title: "שלמה קרעי"
+        publisher: "Hebrew Wikipedia"
   - kind: positive
     category: achievement
     title:
-      he: מתן רישיון להפעלת שירות הלוויין Starlink בישראל
-      en: Licensed Starlink satellite internet service to operate in Israel
+      he: "מתן רישיון להפעלת שירות הלוויין Starlink בישראל"
+      en: "Licensed Starlink satellite internet service to operate in Israel"
     description:
-      he: בפברואר 2024, כשר התקשורת, העניק קרעי רישיון להפעלת שירות האינטרנט הלווייני
-        Starlink של חברת SpaceX בישראל, לאחר שהחברה הסכימה לסדרת אמצעים
-        ביטחוניים והשירות הוגבל בתחילה לרשימת לקוחות מוגדרת.
-      en: In February 2024, as Communications Minister, Karhi granted a license for
-        SpaceX's Starlink satellite internet service to operate in Israel, after
-        the company agreed to a set of security measures and the service was
-        initially limited to a defined list of customers.
-    date: 2024-02-14
+      he: "בפברואר 2024, כשר התקשורת, העניק קרעי רישיון להפעלת שירות האינטרנט הלווייני Starlink של חברת SpaceX בישראל, לאחר שהחברה הסכימה לסדרת אמצעים ביטחוניים; השירות הוגבל בתחילה לרשימת לקוחות מוגדרת."
+      en: "In February 2024, as Communications Minister, Karhi granted a license for SpaceX's Starlink satellite internet service to operate in Israel, after the company agreed to a set of security measures; the service was initially limited to a defined list of customers."
+    date: "2024-02-14"
     sources:
-      - url: https://www.ynetnews.com/business/article/rjhzstcop
-        title: Elon Musk's Starlink is coming to Israel, Gaza
-        publisher: Ynetnews
-      - url: https://www.gov.il/en/pages/10082025
-        title: Elon Musk's 'Starlink' has started operating in Israel
-        publisher: Israel Ministry of Communications (gov.il)
+      - url: "https://www.ynetnews.com/business/article/rjhzstcop"
+        title: "Elon Musk's Starlink is coming to Israel, Gaza"
+        publisher: "Ynetnews"
+      - url: "https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%9E%D7%94_%D7%A7%D7%A8%D7%A2%D7%99"
+        title: "שלמה קרעי"
+        publisher: "Hebrew Wikipedia"
   - kind: negative
     category: controversy
     status: settled
     title:
-      he: חתימה על צו לסגירת פעילות אל-ג'זירה בישראל
-      en: Signed order shutting down Al Jazeera's operations in Israel
+      he: "חתימה על צו לסגירת פעילות אל-ג'זירה בישראל"
+      en: "Signed order shutting down Al Jazeera's operations in Israel"
     description:
-      he: במאי 2024, לאחר החלטת ממשלה פה אחד, חתם שר התקשורת קרעי על צווים לסגירת
-        פעילות רשת אל-ג'זירה בישראל ולהחרמת ציוד השידור שלה, מכוח חוק שאושר
-        בכנסת באפריל 2024 המאפשר סגירה זמנית של כלי תקשורת זרים מטעמי ביטחון.
-        ארגוני חופש העיתונות מתחו ביקורת על המהלך. מדובר בפעולה מנהלית-שלטונית
-        ולא בהליך פלילי הנוגע לקרעי עצמו.
-      en: In May 2024, following a unanimous government decision, Communications
-        Minister Karhi signed orders to shut down Al Jazeera's operations in
-        Israel and seize its broadcasting equipment, under a law passed by the
-        Knesset in April 2024 permitting the temporary closure of foreign media
-        outlets on security grounds. Press-freedom organizations criticized the
-        move. This is an official administrative ministerial action and not a
-        criminal matter concerning Karhi personally.
-    date: 2024-05-05
+      he: "ב-5 במאי 2024, לאחר החלטת ממשלה פה אחד, חתם שר התקשורת קרעי על צווים לסגירת פעילות רשת אל-ג'זירה בישראל ולהחרמת ציוד השידור שלה, מכוח חוק שאושר בכנסת באפריל 2024 המאפשר סגירה זמנית של כלי תקשורת זרים מטעמי ביטחון; פקחי משרד התקשורת והמשטרה פשטו על משרדי הרשת בירושלים. אל-ג'זירה וארגוני חופש העיתונות מתחו ביקורת על המהלך. מדובר בפעולה מנהלית-שלטונית ולא בהליך פלילי הנוגע לקרעי עצמו."
+      en: "On 5 May 2024, following a unanimous government decision, Communications Minister Karhi signed orders to shut down Al Jazeera's operations in Israel and seize its broadcasting equipment, under a law passed by the Knesset in April 2024 permitting the temporary closure of foreign media outlets on security grounds; ministry inspectors and police raided the network's Jerusalem offices. Al Jazeera and press-freedom organizations criticized the move. This is an official administrative ministerial action and not a criminal matter concerning Karhi personally."
+    date: "2024-05-05"
     sources:
-      - url: https://www.aljazeera.com/news/2024/5/5/netanyahu-government-votes-to-close-al-jazeera-channel-in-israel
-        title: Al Jazeera condemns Israeli government decision to shut down local
-          offices
-        publisher: Al Jazeera
-      - url: https://www.washingtonpost.com/world/2024/05/05/al-jazeera-israel-shut-down-gaza/
-        title: Israel shuts down Al Jazeera's operations, raids Jerusalem office
-        publisher: The Washington Post
+      - url: "https://www.aljazeera.com/news/2024/5/5/netanyahu-government-votes-to-close-al-jazeera-channel-in-israel"
+        title: "Al Jazeera condemns Israeli government decision to shut down local offices"
+        publisher: "Al Jazeera"
+      - url: "https://www.mako.co.il/news-israel/2024_q2/Article-b207a8ea1d84f81027.htm"
+        title: "אחרי החלטת הממשלה נגד אל-ג'זירה: המשטרה פשטה על משרדי הרשת"
+        publisher: "N12"
+  - kind: negative
+    category: controversy
+    title:
+      he: "הורה על החרמת ציוד של סוכנות AP — וביטל את הצעד כעבור שעות (2024)"
+      en: "Ordered seizure of Associated Press equipment, then reversed it within hours (2024)"
+    description:
+      he: "ב-21 במאי 2024 הורה קרעי לפקחי משרד התקשורת להחרים ציוד שידור של סוכנות הידיעות AP בשדרות, בטענה שהסוכנות סיפקה שידור חי לאל-ג'זירה בניגוד לחוק. הסוכנות דחתה את הטענה, יו\"ר האופוזיציה יאיר לפיד וארגוני עיתונאים מתחו ביקורת, והבית הלבן הביע דאגה. כעבור שעות הודיע קרעי כי הורה לבטל את הצעד ולהשיב את הציוד, 'עד להחלטה אחרת של משרד הביטחון'."
+      en: "On 21 May 2024 Karhi ordered Communications Ministry inspectors to seize Associated Press broadcasting equipment in Sderot, claiming the agency was supplying a live feed to Al Jazeera in violation of the law. AP rejected the claim, Opposition Leader Yair Lapid and journalists' organizations criticized the move, and the White House expressed concern. Hours later Karhi announced he had ordered the action cancelled and the equipment returned, 'pending a different decision by the Defense Ministry'."
+    date: "2024-05-21"
+    sources:
+      - url: "https://www.ynet.co.il/news/article/hy600x4cxr"
+        title: "משרד התקשורת החרים ציוד של AP בטענה להפרת חוק אל-ג'זירה"
+        publisher: "ynet"
+      - url: "https://www.ynet.co.il/news/article/rkyypv5q0"
+        title: "הזיגזג של קרעי, אחרי הכעס האמריקני: \"הוריתי להחזיר את הציוד לסוכנות AP\""
+        publisher: "ynet"
+  - kind: neutral
+    category: news
+    date: "2026-07-17"
+    title:
+      he: "חוק התקשורת (שידורים) שקידם אושר בכנסת; בג\"ץ הקפיא חלקים מרכזיים ממנו"
+      en: "His broadcasting law passed the Knesset; the High Court froze key parts"
+    description:
+      he: "ב-16–17 ביולי 2026 אישרה הכנסת בקריאה שנייה ושלישית, ברוב של 53 מול 48, את חוק התקשורת (שידורים) שקידם קרעי, המקים רגולטור שידורים חדש במקום הרשות השנייה ומועצת הכבלים והלוויין ומבטל מגבלות על בעלויות צולבות; קרעי אמר כי השלים את 'הרפורמה הימנית בתקשורת'. ב-19 ביולי הקפיא בג\"ץ באופן זמני סעיפים מרכזיים בחוק עד להכרעה, וקרעי טען כי לבית המשפט אין סמכות להשעות חוקים."
+      en: "On 16–17 July 2026 the Knesset passed, in its second and third readings by 53 votes to 48, the Communications (Broadcasting) Law promoted by Karhi, which establishes a new broadcasting regulator replacing the Second Authority and the Cable and Satellite Council and removes cross-ownership restrictions; Karhi said he had completed the 'right-wing reform of the media'. On 19 July the High Court temporarily froze key provisions pending a ruling, and Karhi asserted that the court had no authority to suspend laws."
+    sources:
+      - url: "https://www.timesofisrael.com/coalition-passes-media-overhaul-law-giving-government-greater-regulatory-control/"
+        title: "Coalition passes media overhaul law, giving government greater regulatory control"
+        publisher: "The Times of Israel"
+      - url: "https://www.timesofisrael.com/high-court-freezes-key-parts-of-governments-controversial-media-overhaul-law/"
+        title: "High Court freezes key parts of government's controversial media overhaul law"
+        publisher: "The Times of Israel"
+  - kind: neutral
+    category: news
+    date: "2026-08-18"
+    title:
+      he: "דורג במקום ה-13 בפריימריז הליכוד; במקום ה-23 ברשימה הסופית"
+      en: "Ranked 13th in the Likud primary; 23rd on the final list"
+    description:
+      he: "בפריימריז הליכוד שנערכו ב-17 באוגוסט 2026 דורג קרעי במקום ה-13 בתוצאות הפריימריז. ברשימה הכמעט-סופית שפורסמה לאחר מכן, הכוללת את המקומות השמורים ליו\"ר המפלגה, הוצב במקום ה-21, וברשימת הליכוד הסופית שהוגשה לוועדת הבחירות המרכזית ב-8 בספטמבר 2026 הוצב במקום ה-23."
+      en: "In the Likud primary held on 17 August 2026 Karhi ranked 13th in the primary results. On the near-final slate published afterwards, which includes the party chairman's reserved slots, he was placed 21st, and on the final Likud list submitted to the Central Elections Committee on 8 September 2026 he was placed 23rd."
+    sources:
+      - url: "https://www.inn.co.il/news/704203"
+        title: "אלי כהן מוביל, אלמוג כהן מפתיע: זו רשימת הליכוד לכנסת"
+        publisher: "Arutz 7 (INN)"
+      - url: "https://www.timesofisrael.com/likud-primary-marks-win-for-netanyahu-bid-to-reshape-sinking-party-and-win-back-voters/"
+        title: "Likud primary results boost Netanyahu's bid to reshape sinking party, win back voters"
+        publisher: "The Times of Israel"
+      - url: "https://www.israelhayom.co.il/news/politics/article/21221566"
+        title: "הושלמה ספירת הקולות בליכוד: התוצאות המלאות - ואלו שנשארו בחוץ"
+        publisher: "Israel Hayom"
+      - url: "https://www.makorrishon.co.il/news/politcal/article/368974"
+        title: "רשימת הליכוד לכנסת ה־26: אלה המועמדים של בנימין נתניהו"
+        publisher: "Makor Rishon"
+  - kind: neutral
+    category: news
+    date: "2026-09-08"
+    title:
+      he: "בג\"ץ ביטל מינויים למועצת הרשות השנייה; קרעי תקף את ההחלטה"
+      en: "High Court annulled appointments to the Second Authority council; Karhi attacked the ruling"
+    description:
+      he: "ב-8 בספטמבר 2026 ביטל בג\"ץ פה אחד שלושה מינויים למועצת הרשות השנייה לטלוויזיה ורדיו, ובהם מינוי היו\"ר, בין היתר בשל ניגוד עניינים ובדיקה לקויה של התבטאויות המועמדים. קרעי טען כי לבית המשפט אין סמכות לבטל את המינויים והצהיר כי הקואליציה תשלים את הרפורמה במערכת המשפט."
+      en: "On 8 September 2026 the High Court unanimously annulled three appointments to the council of the Second Authority for Television and Radio, including its chair, citing among other things a conflict of interest and inadequate vetting of the candidates' statements. Karhi asserted that the court had no authority to annul the appointments and declared that the coalition would complete the judicial overhaul."
+    sources:
+      - url: "https://www.timesofisrael.com/high-court-annuls-controversial-government-appointments-to-broadcast-regulator/"
+        title: "High Court annuls controversial government appointments to broadcast regulator"
+        publisher: "The Times of Israel"

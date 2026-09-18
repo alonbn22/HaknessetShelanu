@@ -1,91 +1,120 @@
-# PersonID 30720. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30720. Researched from reputable public sources and source-verified
+# (every cited URL re-fetched). Neutral language; legal status marked. Reviewed 2026-09-18.
 personId: 30720
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: מחברי הכנסת הגאים הראשונים בישראל
-      en: Among Israel's openly gay Knesset members
+      he: "מחברי הכנסת הגאים הראשונים בישראל"
+      en: "Among Israel's openly gay Knesset members"
     description:
-      he: יוראי להב-הרצנו, חבר כנסת מטעם יש עתיד, הצהיר בגלוי על היותו גאה ועם השבעתו
-        ביוני 2020 הפך לחבר הכנסת הגאי השישי בתולדות הכנסת בת 120 המושבים. הוא
-        הכריז על מחויבותו לקדם שוויון זכויות לקהילה הגאה.
-      en: Yorai Lahav-Hertzanu, a Yesh Atid lawmaker, is openly gay. When he was sworn
-        in in June 2020 he became the sixth openly gay member in the history of
-        the 120-seat Knesset, publicly affirming his identity and pledging to
-        advance equal rights for the LGBTQ+ community.
-    date: 2020-06-19
+      he: "יוראי להב-הרצנו, חבר כנסת מטעם יש עתיד, הצהיר בגלוי על היותו גאה, ועם השבעתו ביוני 2020 הפך לחבר הכנסת הגאי השישי בתולדות הכנסת. הוא הכריז על מחויבותו לקדם שוויון זכויות לקהילה הגאה."
+      en: "Yorai Lahav-Hertzanu, a Yesh Atid lawmaker, is openly gay. When he was sworn in in June 2020 he became the sixth openly gay member in the history of the Knesset, publicly affirming his identity and pledging to advance equal rights for the LGBTQ+ community."
+    date: "2020-06-19"
     sources:
-      - url: https://www.ynetnews.com/article/H1R35bZ08
+      - url: "https://www.ynetnews.com/article/H1R35bZ08"
         title: "'I'm gay and I'm proud': Israeli MK pledges fight for equality"
-        publisher: Ynetnews
-      - url: https://en.wikipedia.org/wiki/Yorai_Lahav-Hertzano
-        title: Yorai Lahav-Hertzanu
-        publisher: Wikipedia
+        publisher: "Ynetnews"
+      - url: "https://en.wikipedia.org/wiki/Yorai_Lahav-Hertzano"
+        title: "Yorai Lahav-Hertzanu"
+        publisher: "Wikipedia"
   - kind: positive
     category: achievement
     title:
-      he: יו"ר השדולה הגאה וקידום הכרה בבני זוג של חללי צה"ל
-      en: LGBTQ+ caucus chair advancing recognition of same-sex partners of fallen
-        soldiers
+      he: "יו\"ר השדולה הגאה וקידום הכרה בבני זוג של חללי צה\"ל"
+      en: "LGBTQ+ caucus chair advancing recognition of same-sex partners of fallen soldiers"
     description:
-      he: כיו"ר השדולה הגאה בכנסת, להב-הרצנו פעל לקידום חקיקה שמכירה רשמית בבני זוג
-        מאותו מין של חיילי צה"ל שנפלו, ומעניקה להם מעמד של בן/בת זוג. החקיקה
-        קודמה בעקבות נפילתו של סרן סגי גולן, שנהרג בקיבוץ בארי באוקטובר 2023.
-      en: As chair of the Knesset's LGBTQ+ caucus, Lahav-Hertzanu helped advance
-        legislation formally recognizing same-sex partners of fallen IDF
-        soldiers, granting them spousal status. The measure followed the death
-        of Capt. Sagi Golan, killed at Kibbutz Be'eri in October 2023.
+      he: "כיו\"ר השדולה הגאה בכנסת, להב-הרצנו פעל לקידום חקיקה שמכירה רשמית בבני זוג מאותו מין של חיילי צה\"ל שנפלו ומעניקה להם מעמד של בן/בת זוג. החקיקה אושרה בקריאה ראשונה בנובמבר 2023 בעקבות נפילתו של סרן סגי גולן, שנהרג בקיבוץ בארי באוקטובר 2023."
+      en: "As chair of the Knesset's LGBTQ+ caucus, Lahav-Hertzanu helped advance legislation formally recognizing same-sex partners of fallen IDF soldiers, granting them spousal status. The bill passed its first reading in November 2023, following the death of Capt. Sagi Golan, killed at Kibbutz Be'eri in October 2023."
+    date: "2023-11-01"
     sources:
-      - url: https://www.i24news.tv/en/news/israel/society/1698845508-knesset-approves-formal-recognition-of-same-sex-partners-of-idf-fallen-soldiers
-        title: Knesset approves formal recognition of same-sex partners of IDF fallen
-          soldiers
-        publisher: i24NEWS
-      - url: https://en.wikipedia.org/wiki/Yorai_Lahav-Hertzano
-        title: Yorai Lahav-Hertzanu
-        publisher: Wikipedia
+      - url: "https://www.i24news.tv/en/news/israel/society/1698845508-knesset-approves-formal-recognition-of-same-sex-partners-of-idf-fallen-soldiers"
+        title: "Israeli government advances legislation for same-sex partners of fallen soldiers"
+        publisher: "i24NEWS"
+      - url: "https://en.wikipedia.org/wiki/Yorai_Lahav-Hertzano"
+        title: "Yorai Lahav-Hertzanu"
+        publisher: "Wikipedia"
   - kind: positive
     category: achievement
     title:
-      he: מתנדב בצה"ל ובוגר תארים במשפטים והיסטוריה
-      en: IDF volunteer and graduate in law and history
+      he: "מתנדב בצה\"ל ובוגר תארים במשפטים והיסטוריה"
+      en: "IDF volunteer and graduate in law and history"
     description:
-      he: לאחר שקיבל פטור מטעמי בריאות, התנדב להב-הרצנו לשירות בצה"ל ושירת כשש שנים.
-        הוא בעל תואר ראשון משולב במשפטים ובהיסטוריה של המזרח התיכון ואפריקה
-        מאוניברסיטת תל אביב, ותואר שני למנהלים במשפט ציבורי מאוניברסיטת תל אביב
-        ונורת'ווסטרן.
-      en: After receiving a medical exemption, Lahav-Hertzanu volunteered for the IDF
-        and served about six years. He holds a combined LLB and BA in Middle
-        Eastern and African history from Tel Aviv University and an executive
-        master's of law in public law from Tel Aviv University and Northwestern
-        University.
+      he: "לאחר שקיבל פטור מטעמי בריאות, התנדב להב-הרצנו לשירות בצה\"ל ושירת כשש שנים. הוא בעל תואר ראשון משולב במשפטים ובהיסטוריה של המזרח התיכון ואפריקה מאוניברסיטת תל אביב, ותואר שני למנהלים במשפט ציבורי מאוניברסיטת תל אביב ונורת'ווסטרן."
+      en: "After receiving a medical exemption, Lahav-Hertzanu volunteered for the IDF and served about six years. He holds a combined LLB and BA in Middle Eastern and African history from Tel Aviv University and an executive master's of law in public law from Tel Aviv University and Northwestern University."
     sources:
-      - url: https://en.wikipedia.org/wiki/Yorai_Lahav-Hertzano
-        title: Yorai Lahav-Hertzanu
-        publisher: Wikipedia
-      - url: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A8%D7%90%D7%99_%D7%9C%D7%94%D7%91-%D7%94%D7%A8%D7%A6%D7%A0%D7%95
-        title: יוראי להב-הרצנו
-        publisher: Wikipedia (Hebrew)
+      - url: "https://en.wikipedia.org/wiki/Yorai_Lahav-Hertzano"
+        title: "Yorai Lahav-Hertzanu"
+        publisher: "Wikipedia"
+      - url: "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A8%D7%90%D7%99_%D7%9C%D7%94%D7%91-%D7%94%D7%A8%D7%A6%D7%A0%D7%95"
+        title: "יוראי להב-הרצנו"
+        publisher: "Wikipedia (Hebrew)"
+  - kind: positive
+    category: achievement
+    title:
+      he: "תיקון לחוק זכויות הסטודנט האוסר במפורש אפליה על רקע נטייה מינית וזהות מגדרית (2026)"
+      en: "Student Rights Law amendment explicitly banning discrimination on grounds of sexual orientation and gender identity (2026)"
+    description:
+      he: "ב-17 ביולי 2026 דווח כי הכנסת אישרה תיקון לחוק זכויות הסטודנט שיזם להב-הרצנו, המעגן לראשונה בחוק איסור מפורש על אפליה של מועמדים ללימודים וסטודנטים על רקע נטייה מינית או זהות מגדרית, בקבלה ללימודים, במהלכם ובמימוש זכויותיהם. על פי הדיווח, התיקון שולב במסגרת הצעת חוק רחבה יותר שקודמה בוועדת החינוך."
+      en: "On 17 July 2026 it was reported that the Knesset approved an amendment to the Student Rights Law initiated by Lahav-Hertzanu, anchoring in law for the first time an explicit prohibition on discriminating against applicants and students on grounds of sexual orientation or gender identity, in admissions, during studies and in exercising their rights. According to the report, the amendment was folded into a broader bill advanced in the Education Committee."
+    date: "2026-07-17"
+    sources:
+      - url: "https://www.mako.co.il/pride-news/Article-ce88e076c1f6f91026.htm"
+        title: "מתחת לאף של הקואליציה: החקיקה למען להט\"בים שעברה"
+        publisher: "N12 (mako)"
+      - url: "https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A8%D7%90%D7%99_%D7%9C%D7%94%D7%91-%D7%94%D7%A8%D7%A6%D7%A0%D7%95"
+        title: "יוראי להב-הרצנו"
+        publisher: "Wikipedia (Hebrew)"
   - kind: negative
     category: controversy
     status: settled
     title:
-      he: מגבלות מטעם ועדת האתיקה של הכנסת (2023)
-      en: Knesset Ethics Committee sanction (2023)
+      he: "נזיפה חמורה והגבלת כלים פרלמנטריים מטעם ועדת האתיקה של הכנסת (2023)"
+      en: "Severe reprimand and restriction of parliamentary tools by the Knesset Ethics Committee (2023)"
     description:
-      he: במרץ 2023 הטילה ועדת האתיקה של הכנסת מגבלות על עבודתו הפרלמנטרית של
-        להב-הרצנו ושל חבר הכנסת ולדימיר בליאק מיש עתיד, בעקבות הפרעה לדיון
-        בוועדה בנושא הרפורמה במערכת המשפט, שבמהלכה עלו על שולחנות. מדובר בהליך
-        אתי פנים-פרלמנטרי ולא בהליך פלילי.
-      en: In March 2023 the Knesset Ethics Committee imposed restrictions on the
-        parliamentary work of Lahav-Hertzanu and fellow Yesh Atid MK Vladimir
-        Beliak after they disrupted a committee session on the judicial overhaul
-        by climbing onto tables. This was an internal parliamentary ethics
-        matter, not a criminal proceeding.
-    date: 2023-03-06
+      he: "ב-5 במרץ 2023 החליטה ועדת האתיקה של הכנסת פה אחד כי להב-הרצנו, יחד עם חברי הכנסת ולדימיר בליאק ושלי מירון מיש עתיד, הפר את כללי האתיקה בכך שקפץ מעל שולחן ועדת החוקה, חוק ומשפט ב-13 בפברואר 2023, במהלך הצבעות על הצעות החוק של הרפורמה במערכת המשפט. הוועדה הטילה עליו ועל בליאק נזיפה חמורה והגבלה על השימוש בכלים פרלמנטריים (הגשת הצעות חוק, שאילתות וכדומה) עד סוף כנס החורף, לאחר שסירבו להתנצל. להב-הרצנו טען בפני הוועדה כי יו\"ר ועדת החוקה פגע בחופש הביטוי שלו וכי הוא מייצג ציבור רחב החושש מהרפורמה. מדובר בהליך אתי פנים-פרלמנטרי ולא בהליך פלילי."
+      en: "On 5 March 2023 the Knesset Ethics Committee unanimously found that Lahav-Hertzanu, together with fellow Yesh Atid MKs Vladimir Beliak and Shelly Miron, had breached the ethics rules by jumping over the table of the Constitution, Law and Justice Committee on 13 February 2023, during votes on the judicial-overhaul bills. The committee imposed on him and Beliak a severe reprimand and a restriction on the use of parliamentary tools (submitting bills, queries and the like) until the end of the winter session, after they declined to apologize. Lahav-Hertzanu told the committee that the Constitution Committee chair had infringed his freedom of speech and that he represented a broad public worried about the overhaul. This was an internal parliamentary ethics matter, not a criminal proceeding."
+    date: "2023-03-05"
     sources:
-      - url: https://www.haaretz.com/israel-news/2023-03-06/ty-article/.premium/knesset-ethics-committee-imposes-sanctions-on-three-lawmakers/00000186-b623-d9eb-abce-beef7f2c0000
-        title: Knesset Ethics Committee Imposes Sanctions on Three Lawmakers
-        publisher: Haaretz
+      - url: "https://main.knesset.gov.il/Activity/committees/Ethics/Decisions25/Decisions25-3.pdf"
+        title: "החלטה מס' 3/25 — החלטת ועדת האתיקה בקובלנות נגד חברי הכנסת יוראי להב הרצנו, ולדימיר בליאק ושלי מירון"
+        publisher: "Knesset Ethics Committee"
+      - url: "https://www.haaretz.com/israel-news/2023-03-06/ty-article/.premium/knesset-ethics-committee-imposes-sanctions-on-three-lawmakers/00000186-b623-d9eb-abce-beef7f2c0000"
+        title: "Knesset Ethics Committee Imposes Sanctions on Three Lawmakers"
+        publisher: "Haaretz"
+      - url: "https://www.maariv.co.il/news/politics/article-985739"
+        title: "לאחר הסרטון והקפיצה על השולחן: אלו העונשים שקיבלו שלושה חברי כנסת"
+        publisher: "Maariv"
+  - kind: neutral
+    category: news
+    date: "2026-06-22"
+    title:
+      he: "הוביל מאבק נגד פיטורי רכזי הלהט\"ב ברשויות המקומיות; המשרד לשוויון חברתי הודיע על הארכת העסקתם"
+      en: "Led a campaign against dismissal of LGBTQ+ coordinators in local authorities; the Social Equality Ministry extended their employment"
+    description:
+      he: "ביוני 2026 הוביל להב-הרצנו, יחד עם האגודה למען הלהט\"ב, מאבק נגד הכוונה להפסיק את העסקתם של כ-52 רכזי ורכזות להט\"ב ברשויות המקומיות, לאחר שבתחילת החודש נמסרה להם הודעה על סיום עבודתם. ב-22 ביוני 2026 הודיע המשרד לשוויון חברתי על הארכת העסקתם; להב-הרצנו אמר כי לא ניתן להמשיך \"מהארכה להארכה\" וקרא לעגן את התקציב בבסיס התקציב."
+      en: "In June 2026 Lahav-Hertzanu, together with the Aguda (Israel's LGBTQ+ association), led a campaign against the planned termination of about 52 LGBTQ+ coordinators employed by local authorities, after they were notified earlier that month that their jobs would end. On 22 June 2026 the Ministry of Social Equality announced that their employment would be extended; Lahav-Hertzanu said the community could not keep living \"from extension to extension\" and called for the budget to be anchored in the base budget."
+    sources:
+      - url: "https://www.mako.co.il/pride-news/Article-833065e060cee91027.htm"
+        title: "לאחר המאבק: ההודעה של המשרד לשוויון חברתי"
+        publisher: "N12 (mako)"
+  - kind: neutral
+    category: news
+    date: "2026-09-06"
+    title:
+      he: "הוצב במקום ה-18 ברשימת \"ביחד\" (בנט–לפיד) לכנסת ה-26"
+      en: "Placed 18th on the Bennett–Lapid \"Beyachad\" list for the 26th Knesset"
+    description:
+      he: "ברשימת יש עתיד שהציג יאיר לפיד ב-5 בספטמבר 2026 שובץ להב-הרצנו בעשירייה השנייה, וברשימה המשותפת \"ביחד\" בראשות נפתלי בנט ולפיד, שהוצגה ב-6 בספטמבר והוגשה לוועדת הבחירות המרכזית למחרת, הוצב במקום ה-18. יש עתיד הסבירה כי במקומות הריאליים שובצו מי שהצטיינו בעבודת ועדות הכנסת בקדנציה החולפת."
+      en: "On the Yesh Atid slate presented by Yair Lapid on 5 September 2026 Lahav-Hertzanu was placed in the second ten, and on the joint \"Beyachad\" list headed by Naftali Bennett and Lapid, unveiled on 6 September and submitted to the Central Elections Committee the next day, he was placed 18th. Yesh Atid said the realistic slots went to MKs who had excelled in Knesset committee work in the outgoing term."
+    sources:
+      - url: "https://www.ynet.co.il/news/elections2026/article/ryx0003fdfe"
+        title: "לפיד הודיע: זו רשימת יש עתיד לבחירות | כך ייראה האיחוד עם בנט"
+        publisher: "ynet"
+      - url: "https://www.makorrishon.co.il/news/politcal/article/368984"
+        title: "רשימת ביחד לכנסת ה־26: אלה המועמדים של נפתלי בנט"
+        publisher: "Makor Rishon"
+      - url: "https://www.maariv.co.il/news/politics/article-1363684"
+        title: "הושלם איחוד \"ביחד\": זו הרשימה המאוחדת של בנט ולפיד לכנסת ה-26"
+        publisher: "Maariv"

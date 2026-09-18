@@ -1,58 +1,90 @@
-# PersonID 23551. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 23551. Researched from reputable public sources and source-verified
+# (every cited URL re-fetched). Neutral language; legal status marked. Reviewed 2026-09-18.
 personId: 23551
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: השרה הראשונה להתיישבות ולמשימות לאומיות
-      en: First Minister of Settlements and National Missions
+      he: "השרה הראשונה להתיישבות ולמשימות לאומיות"
+      en: "First Minister of Settlements and National Missions"
     description:
-      he: בדצמבר 2022 מונתה אורית סטרוק לשרה להתיישבות ולמשימות לאומיות בממשלה השלושים
-        ושבע, ובכך הפכה לראשונה שמכהנת בתפקיד זה עם הקמת המשרד.
-      en: In December 2022 Orit Strock was appointed Minister of Settlements and
-        National Missions in Israel's thirty-seventh government, becoming the
-        first person to hold the newly created post.
-    date: 2022-12-29
+      he: "בדצמבר 2022 מונתה אורית סטרוק לשרה להתיישבות ולמשימות לאומיות בממשלה השלושים ושבע, והייתה הראשונה שמכהנת בתפקיד זה עם הקמת המשרד. היא ממשיכה לכהן בתפקיד בממשלת המעבר."
+      en: "In December 2022 Orit Strock was appointed Minister of Settlements and National Missions in Israel's thirty-seventh government, becoming the first person to hold the newly created post. She continues to hold the post in the caretaker government."
+    date: "2022-12-29"
     sources:
-      - url: https://www.haaretz.com/israel-news/2022-12-07/ty-article/.premium/far-right-lawmaker-named-israels-first-national-missions-minister/00000184-ebe0-d523-a3bc-effb32af0000
-        title: Far-right Lawmaker Named Israel's First 'National Missions Minister'
-        publisher: Haaretz
-      - url: https://en.wikipedia.org/wiki/Orit_Strook
-        title: Orit Strook
-        publisher: Wikipedia
+      - url: "https://www.haaretz.com/israel-news/2022-12-07/ty-article/.premium/far-right-lawmaker-named-israels-first-national-missions-minister/00000184-ebe0-d523-a3bc-effb32af0000"
+        title: "Far-right Lawmaker Named Israel's First 'National Missions Minister'"
+        publisher: "Haaretz"
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/23551"
+        title: "אורית סטרוק — דף חברת הכנסת"
+        publisher: "Knesset"
+      - url: "https://en.wikipedia.org/wiki/Orit_Strook"
+        title: "Orit Strook"
+        publisher: "Wikipedia"
   - kind: positive
     category: volunteering
     title:
-      he: ייסוד וניהול ארגון זכויות האדם ביהודה ושומרון
-      en: Founded and led the Human Rights Organization of Judea and Samaria
+      he: "ייסוד וניהול ארגון זכויות האדם ביהודה ושומרון"
+      en: "Founded and led the Human Rights Organization of Judea and Samaria"
     description:
-      he: סטרוק ייסדה את ארגון זכויות האדם ביהודה ושומרון, עמותה ישראלית לזכויות תושבי
-        ההתנחלויות, ועמדה בראשו בין השנים 2004 ל-2012.
-      en: Strock established the Human Rights Organization of Judea and Samaria, an
-        Israeli NGO advocating for settler residents' rights, and headed it from
-        2004 to 2012.
+      he: "סטרוק ייסדה את ארגון זכויות האדם ביהודה ושומרון, עמותה ישראלית לזכויות תושבי ההתנחלויות, ועמדה בראשו בין השנים 2004 ל-2012."
+      en: "Strock established the Human Rights Organization of Judea and Samaria, an Israeli NGO advocating for settler residents' rights, and headed it from 2004 to 2012."
     sources:
-      - url: https://en.wikipedia.org/wiki/Orit_Strook
-        title: Orit Strook
-        publisher: Wikipedia
+      - url: "https://en.wikipedia.org/wiki/Orit_Strook"
+        title: "Orit Strook"
+        publisher: "Wikipedia"
   - kind: positive
     category: achievement
     title:
-      he: חברת כנסת מטעם הציונות הדתית
-      en: Member of Knesset for the Religious Zionist Party
+      he: "חברת כנסת מטעם הציונות הדתית"
+      en: "Member of Knesset for the Religious Zionist Party"
     description:
-      he: סטרוק נבחרה לראשונה לכנסת בשנת 2013 ברשימת הבית היהודי (סיעת תקומה), וכיהנה
-        עד 2015. היא שבה לכנסת ב-2021 מטעם מפלגת הציונות הדתית ומכהנת מאז.
-      en: Strock was first elected to the Knesset in 2013 on the Jewish Home list
-        (Tkuma faction), serving until 2015. She returned to the Knesset in 2021
-        with the Religious Zionist Party and has served since.
-    date: 2013-01-22
+      he: "סטרוק נבחרה לראשונה לכנסת בשנת 2013 ברשימת הבית היהודי (סיעת תקומה), וכיהנה עד 2015. היא שבה לכנסת ב-2021 מטעם מפלגת הציונות הדתית ומכהנת מאז."
+      en: "Strock was first elected to the Knesset in 2013 on the Jewish Home list (Tkuma faction), serving until 2015. She returned to the Knesset in 2021 with the Religious Zionist Party and has served since."
+    date: "2013-01-22"
     sources:
-      - url: https://en.wikipedia.org/wiki/Orit_Strook
-        title: Orit Strook
-        publisher: Wikipedia
-      - url: https://www.wikidata.org/wiki/Q3593944
-        title: Orit Strock (Wikidata, Knesset MK ID 884)
-        publisher: Wikidata
+      - url: "https://en.wikipedia.org/wiki/Orit_Strook"
+        title: "Orit Strook"
+        publisher: "Wikipedia"
+      - url: "https://www.wikidata.org/wiki/Q3593944"
+        title: "Orit Strock (Wikidata, Knesset MK ID 884)"
+        publisher: "Wikidata"
+  - kind: negative
+    category: controversy
+    date: "2024-05-01"
+    title:
+      he: "ביקורת ציבורית על התבטאויותיה בנושא החטופים (2024–2025)"
+      en: "Public criticism over her statements on the hostages (2024–2025)"
+    description:
+      he: "ב-1 במאי 2024 דווח כי סטרוק אמרה על עסקת חטופים שנדונה אז כי החיילים יצאו להילחם למען מטרות שהממשלה הגדירה \"ואנחנו זורקים את זה לפח כדי להציל 22 אנשים או 33\"; יו\"ר האופוזיציה יאיר לפיד, השר חילי טרופר ומשפחות חטופים מתחו עליה ביקורת חריפה. בפברואר 2025 אמרה בריאיון כי ניצחון במלחמה חשוב יותר מהשבת כל החטופים, וביולי 2025 דווח כי אמרה שלא ניתן לנצח כל עוד צה\"ל נמנע מלסכן את חיי החטופים; מטה משפחות החטופים גינה את הדברים. על פי הדיווחים, סטרוק לא חזרה בה מדבריה."
+      en: "On 1 May 2024 Strock was reported as saying of a hostage deal then under negotiation that soldiers had gone to fight for goals the government defined \"and we throw it in the trash to save 22 people or 33\"; Opposition Leader Yair Lapid, Minister Hili Tropper and hostages' families sharply criticized her. In February 2025 she said in an interview that winning the war was more important than returning every hostage, and in July 2025 she was reported as saying that victory was impossible as long as the IDF refrained from risking the hostages' lives; the Hostages Families Forum condemned the remarks. According to the reports, Strock did not retract her statements."
+    sources:
+      - url: "https://www.timesofisrael.com/far-right-minister-claims-hostage-deal-throws-war-goals-in-trash-to-save-hostages/"
+        title: "Far-right minister: Hostage deal throws war goals in trash to save only 22-33 hostages"
+        publisher: "The Times of Israel"
+      - url: "https://www.jpost.com/israel-news/article-843616"
+        title: "MK Orit Strock: Winning the war is 'more important' than hostage return"
+        publisher: "The Jerusalem Post"
+      - url: "https://www.haaretz.com/israel-news/2025-07-21/ty-article/.premium/far-right-minister-urges-expanding-gaza-offensive-at-the-risk-of-killing-israeli-hostages/00000198-2c6a-de27-a5fe-2feb2a450000"
+        title: "Far-right Minister Faces Backlash After Saying Israel Must Risk Harming Hostages on Way to 'Victory' in Gaza"
+        publisher: "Haaretz"
+  - kind: neutral
+    category: news
+    date: "2026-07-26"
+    title:
+      he: "זכתה במקום הראשון בפריימריז של הציונות הדתית והוצבה במקום השלישי ברשימה"
+      en: "Won first place in the Religious Zionism primary; placed third on the list"
+    description:
+      he: "ב-26 ביולי 2026 זכתה סטרוק במספר הקולות הגבוה ביותר בבחירות הפנימיות של הציונות הדתית, שנערכו בקרב כ-170 חברי מרכז המפלגה, לפני שמחה רוטמן וצבי סוכות. ברשימה הסופית לכנסת ה-26, שהוגשה בספטמבר 2026, הוצבה במקום השלישי, אחרי בצלאל סמוטריץ' ומשה פייגלין."
+      en: "On 26 July 2026 Strock received the most votes in the Religious Zionism party's internal primary, held among about 170 party-center members, ahead of Simcha Rothman and Zvi Sukkot. On the final list for the 26th Knesset, submitted in September 2026, she was placed third, after Bezalel Smotrich and Moshe Feiglin."
+    sources:
+      - url: "https://www.ynet.co.il/news/article/sy2mgcxhzl"
+        title: "התוצאות הסופיות: זו רשימת \"הציונות הדתית\" לבחירות הקרובות"
+        publisher: "ynet"
+      - url: "https://www.mako.co.il/news-israel-elections/2026/Article-094fc58ec3f9f91026.htm"
+        title: "תוצאות הפריימריז בציונות הדתית: זו הרשימה שנבחרה"
+        publisher: "N12"
+      - url: "https://www.ynet.co.il/news/elections2026/article/hytc0wadmx"
+        title: "רשימת הציונות הדתית ופייגלין - והח\"כים שנדחקו"
+        publisher: "ynet"

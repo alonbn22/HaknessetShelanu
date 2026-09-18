@@ -1,57 +1,97 @@
-# PersonID 30777. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30777. Researched from reputable public sources and source-verified
+# (every cited URL re-fetched). Neutral language; legal status marked. Reviewed 2026-09-18.
 personId: 30777
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: קצין בכיר במילואים ששירת 85 ימים בעזה לאחר ה-7 באוקטובר
-      en: Senior IDF reserve officer who served 85 days in Gaza after October 7
+      he: "קצין בכיר במילואים ששירת 85 ימים בעזה לאחר ה-7 באוקטובר"
+      en: "Senior IDF reserve officer who served 85 days in Gaza after October 7"
     description:
-      he: טור-פז, סגן-אלוף במילואים ומפקד גדוד לשעבר בחטיבת הצנחנים, חזר לשירות
-        מילואים לאחר מתקפת ה-7 באוקטובר 2023 ושירת כ-85 ימים כאחד מראשי מדור
-        המבצעים באוגדת עזה, במקביל לכהונתו כחבר כנסת.
-      en: Tur-Paz, a lieutenant colonel in the IDF reserves and former battalion
-        commander in the Paratroopers Brigade, returned to reserve duty after
-        the October 7, 2023 attack and served roughly 85 days as one of the
-        chiefs of operations for the IDF's Gaza Division, while simultaneously
-        serving as a member of Knesset.
-    date: 2023-10
+      he: "טור-פז, סגן-אלוף במילואים ומפקד גדוד לשעבר בחטיבת הצנחנים, חזר לשירות מילואים לאחר מתקפת ה-7 באוקטובר 2023 ושירת כ-85 ימים כאחד מראשי מדור המבצעים באוגדת עזה, במקביל לכהונתו כחבר כנסת. באוקטובר 2024 פרסם את ספרו \"ח\"כ במשמרת לילה: יומן מלחמה\"."
+      en: "Tur-Paz, a lieutenant colonel in the IDF reserves and former battalion commander in the Paratroopers Brigade, returned to reserve duty after the 7 October 2023 attack and served about 85 days as a chief of operations in the IDF's Gaza Division, while simultaneously serving as a member of Knesset. In October 2024 he published his war diary, \"An MK on the Night Shift\"."
+    date: "2023-10-08"
     sources:
-      - url: https://jewishinsider.com/2025/01/mk-tur-paz-yesh-atid-opposition-idf-reserve-duty-gaza/
+      - url: "https://jewishinsider.com/2025/01/mk-tur-paz-yesh-atid-opposition-idf-reserve-duty-gaza/"
         title: "Officer, lawmaker, now author: MK Tur-Paz publishes his war diary"
-        publisher: Jewish Insider
+        publisher: "Jewish Insider"
+      - url: "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%98%D7%95%D7%A8-%D7%A4%D7%96"
+        title: "משה טור-פז"
+        publisher: "Wikipedia (Hebrew)"
   - kind: positive
     category: achievement
     title:
-      he: מנהל מינהל החינוך של עיריית ירושלים ומחנך ותיק
-      en: Director of Education for the Jerusalem Municipality and veteran educator
+      he: "מנהל מינהל החינוך של עיריית ירושלים ומחנך ותיק"
+      en: "Director of Education for the Jerusalem Municipality and veteran educator"
     description:
-      he: "לפני כניסתו לפוליטיקה היה טור-פז איש חינוך: ניהל את בית הספר התיכון 'שקד'
-        בשדה אליהו (2007–2012), כיהן כמנהל מינהל החינוך של עיריית ירושלים
-        (2012–2017), ובהמשך הוביל את מערך החינוך של התנועה הקיבוצית הדתית."
-      en: "Before entering politics, Tur-Paz built a career in education: he managed
-        the Shaked secondary school in Sde Eliyahu (2007–2012), served as
-        Director of Education for the Jerusalem Municipality (2012–2017), and
-        later led the education network of the Religious Kibbutz Movement."
+      he: "לפני כניסתו לפוליטיקה היה טור-פז איש חינוך: ניהל את בית הספר התיכון 'שקד' בשדה אליהו (2007–2012), כיהן כמנהל מינהל החינוך של עיריית ירושלים (2012–2017), ובהמשך הוביל את מערך החינוך של התנועה הקיבוצית הדתית."
+      en: "Before entering politics, Tur-Paz built a career in education: he managed the Shaked secondary school in Sde Eliyahu (2007–2012), served as Director of Education for the Jerusalem Municipality (2012–2017), and later led the education network of the Religious Kibbutz Movement."
     sources:
-      - url: https://en.wikipedia.org/wiki/Moshe_Tur-Paz
-        title: Moshe Tur-Paz
-        publisher: Wikipedia
+      - url: "https://en.wikipedia.org/wiki/Moshe_Tur-Paz"
+        title: "Moshe Tur-Paz"
+        publisher: "Wikipedia"
+      - url: "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%98%D7%95%D7%A8-%D7%A4%D7%96"
+        title: "משה טור-פז"
+        publisher: "Wikipedia (Hebrew)"
   - kind: positive
     category: achievement
     title:
-      he: נבחר ליו"ר משותף של השדולה הנוצרית בכנסת
-      en: Selected as co-chair of the Knesset Christian Allies Caucus
+      he: "סגן יושב ראש הכנסת ה-25 (2022–2025)"
+      en: "Deputy Speaker of the 25th Knesset (2022–2025)"
     description:
-      he: בדצמבר 2024 נבחר טור-פז ליו"ר משותף של השדולה הנוצרית בכנסת (Christian
-        Allies Caucus), יחד עם ח"כ יולי אדלשטיין, וירש בתפקיד את שרן השכל.
-      en: In December 2024, Tur-Paz was selected as co-chair of the Knesset's
-        Christian Allies Caucus, sharing the role with MK Yuli Edelstein and
-        succeeding Sharren Haskel.
-    date: 2024-12-01
+      he: "על פי רישומי הכנסת, טור-פז כיהן כסגן יושב ראש הכנסת ה-25 מ-13 בדצמבר 2022 עד 5 במרץ 2025. בכנסת ה-25 הוא חבר בוועדת החינוך, התרבות והספורט, בוועדת החוץ והביטחון ובוועדה המיוחדת לפניות הציבור."
+      en: "According to Knesset records, Tur-Paz served as a Deputy Speaker of the 25th Knesset from 13 December 2022 until 5 March 2025. In the 25th Knesset he sits on the Education, Culture and Sports Committee, the Foreign Affairs and Defense Committee and the Special Committee for Public Petitions."
+    date: "2022-12-13"
     sources:
-      - url: https://www.jns.org/son-of-british-olim-chosen-to-lead-christian-allies-caucus/
-        title: Son of British olim chosen to lead Christian Allies Caucus
-        publisher: JNS.org
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30777"
+        title: "משה טור-פז — דף חבר הכנסת"
+        publisher: "Knesset"
+      - url: "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%98%D7%95%D7%A8-%D7%A4%D7%96"
+        title: "משה טור-פז"
+        publisher: "Wikipedia (Hebrew)"
+  - kind: positive
+    category: achievement
+    title:
+      he: "נבחר ליו\"ר משותף של השדולה הנוצרית בכנסת"
+      en: "Selected as co-chair of the Knesset Christian Allies Caucus"
+    description:
+      he: "בדצמבר 2024 נבחר טור-פז ליו\"ר משותף של השדולה הנוצרית בכנסת (Christian Allies Caucus), יחד עם ח\"כ יולי אדלשטיין, וירש בתפקיד את שרן השכל."
+      en: "In December 2024, Tur-Paz was selected as co-chair of the Knesset's Christian Allies Caucus, sharing the role with MK Yuli Edelstein and succeeding Sharren Haskel."
+    date: "2024-12-01"
+    sources:
+      - url: "https://www.jns.org/son-of-british-olim-chosen-to-lead-christian-allies-caucus/"
+        title: "Son of British olim chosen to lead Christian Allies Caucus"
+        publisher: "JNS"
+  - kind: positive
+    category: award
+    title:
+      he: "אביר איכות השלטון לשנת 2024"
+      en: "Knight of Quality Government for 2024"
+    description:
+      he: "התנועה למען איכות השלטון בישראל כללה את טור-פז ברשימת אבירי איכות השלטון לשנת 2024 (שפורסמה ביולי 2025), בהוקרה על מאבק עקבי נגד תקציבים בלתי שקופים ובלתי מפוקחים למוסדות חינוך, חשיפת מנגנוני תקצוב פסולים והובלת השדולה למשרתי המילואים. האות הוענק בטקס ב-6 בנובמבר 2025."
+      en: "The Movement for Quality Government in Israel included Tur-Paz in its list of Knights of Quality Government for 2024 (published in July 2025), in recognition of his consistent fight against non-transparent and unsupervised budgets for educational institutions, exposure of flawed funding mechanisms and leadership of the reservists' caucus. The award was presented at a ceremony on 6 November 2025."
+    date: "2025-11-06"
+    sources:
+      - url: "https://mqg.org.il/%D7%A4%D7%A8%D7%A1%D7%95%D7%9D-%D7%A8%D7%90%D7%A9%D7%95%D7%9F-%D7%A8%D7%A9%D7%99%D7%9E%D7%AA-%D7%90%D7%91%D7%99%D7%A8%D7%95%D7%AA-%D7%95%D7%90%D7%91%D7%99%D7%A8%D7%99-%D7%90%D7%99%D7%9B%D7%95%D7%AA/"
+        title: "פרסום ראשון: רשימת אבירות ואבירי איכות השלטון לשנת 2024"
+        publisher: "Movement for Quality Government in Israel"
+      - url: "https://mqg.org.il/%D7%94%D7%AA%D7%A0%D7%95%D7%A2%D7%94-%D7%9C%D7%90%D7%99%D7%9B%D7%95%D7%AA-%D7%94%D7%A9%D7%9C%D7%98%D7%95%D7%9F-%D7%A2%D7%A8%D7%9B%D7%94-%D7%94%D7%A2%D7%A8%D7%91-%D7%97%D7%9E%D7%99%D7%A9%D7%99-%D7%90/"
+        title: "התנועה לאיכות השלטון ערכה הערב את טקס הענקת אות אבירי איכות השלטון לשנת 2024 — אלו הם מקבלי האות"
+        publisher: "Movement for Quality Government in Israel"
+  - kind: neutral
+    category: news
+    date: "2026-09-05"
+    title:
+      he: "שובץ במקום ה-11 בין נציגי יש עתיד ברשימת \"ביחד\" לכנסת ה-26"
+      en: "Placed 11th among Yesh Atid's candidates on the \"Beyachad\" list for the 26th Knesset"
+    description:
+      he: "ברשימת נציגי יש עתיד שהציג יאיר לפיד ב-5 בספטמבר 2026 לקראת הריצה המשותפת עם נפתלי בנט ברשימת \"ביחד\", שובץ טור-פז במקום ה-11, אחרי נטע אטיאס. ברשימה המשותפת שהוצגה ב-6 בספטמבר והוגשה לוועדת הבחירות המרכזית, מקומו נמצא מחוץ לעשרים המקומות הראשונים."
+      en: "On the slate of Yesh Atid representatives presented by Yair Lapid on 5 September 2026 for the joint run with Naftali Bennett on the \"Beyachad\" list, Tur-Paz was placed 11th, after Neta Atias. On the joint list unveiled on 6 September and submitted to the Central Elections Committee, his slot fell outside the top twenty."
+    sources:
+      - url: "https://kipa.co.il/%D7%97%D7%93%D7%A9%D7%95%D7%AA/1231033-0"
+        title: "מירב בן ארי בראש: רשימת יש עתיד לכנסת הבאה"
+        publisher: "Kipa"
+      - url: "https://www.makorrishon.co.il/news/politcal/article/368984"
+        title: "רשימת ביחד לכנסת ה־26: אלה המועמדים של נפתלי בנט"
+        publisher: "Makor Rishon"

@@ -2,6 +2,7 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 30881
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -35,7 +36,7 @@ claims:
       en: Yaron Levy was elected to the Bat Yam City Council in the 2018 municipal
         elections on behalf of Yesh Atid and served as Deputy Mayor, holding the
         sports, youth and beaches portfolios.
-    date: 2018-10-30
+    date: "2018-10-30"
     sources:
       - url: https://en.wikipedia.org/wiki/Yaron_Levi
         title: Yaron Levi
@@ -53,7 +54,7 @@ claims:
         אורנה ברביבאי התפטרה כדי להתמודד על ראשות עיריית תל אביב-יפו.
       en: Yaron Levy entered the 25th Knesset on 1 August 2023 as a member of Yesh
         Atid, after MK Orna Barbivai resigned to run for Mayor of Tel Aviv-Yafo.
-    date: 2023-08-01
+    date: "2023-08-01"
     sources:
       - url: https://en.wikipedia.org/wiki/Yaron_Levi
         title: Yaron Levi
@@ -64,3 +65,25 @@ claims:
       - url: https://he.wikipedia.org/wiki/%D7%99%D7%A8%D7%95%D7%9F_%D7%9C%D7%95%D7%99_(%D7%A4%D7%95%D7%9C%D7%99%D7%98%D7%99%D7%A7%D7%90%D7%99)
         title: ירון לוי (פוליטיקאי)
         publisher: Hebrew Wikipedia
+      - url: https://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_PersonToPosition?%24filter=PersonID%20eq%2030881
+        title: Knesset OData — positions held by person 30881
+        publisher: The Knesset
+  - kind: neutral
+    category: news
+    date: "2026-05-04"
+    title:
+      he: הודיע על סיום דרכו ב'יש עתיד' בתום הקדנציה
+      en: Announced he will end his path in Yesh Atid at the end of the term
+    description:
+      he: ב-4 במאי 2026, זמן קצר לאחר הכרזת החיבור הפוליטי בין יאיר לפיד לנפתלי בנט, הודיע לוי כי "אחרי מחשבה רבה עדכנתי את יאיר לפיד שאסיים את דרכי במפלגה בתום הקדנציה", לאחר 14 שנות פעילות ב'יש עתיד'. הוא הבהיר כי ימשיך לכהן בכנסת עד תום הקדנציה, בין היתר בתחומי בריאות הנפש ופצועי צה"ל.
+      en: On 4 May 2026, shortly after the announcement of the political merger between Yair Lapid and Naftali Bennett, Levy announced that "after much thought I informed Yair Lapid that I will end my path with the party at the end of the term", after 14 years of activity in Yesh Atid. He made clear he would continue to serve in the Knesset until the end of the term, including on mental health and wounded IDF soldiers.
+    sources:
+      - url: https://www.ynet.co.il/news/article/rkyoyabaze
+        title: ח"כ ירון לוי הודיע על פרישה מ"יש עתיד"
+        publisher: Ynet
+      - url: https://www.ynetnews.com/article/3sgjnb40a
+        title: MK Yaron Levy announces departure from Yesh Atid
+        publisher: Ynetnews
+      - url: https://www.inn.co.il/news/696051
+        title: ח"כ ירון לוי עוזב את "יש עתיד"
+        publisher: Arutz Sheva (Israel National News)

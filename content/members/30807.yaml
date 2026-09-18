@@ -1,4 +1,5 @@
 personId: 30807
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -8,7 +9,7 @@ claims:
     description:
       he: בבחירות מרץ 2021 נבחר גלעד קריב לכנסת מטעם מפלגת העבודה, ובכך הפך לרב הרפורמי הראשון שמכהן בכנסת ישראל.
       en: In the March 2021 election Gilad Kariv was elected to the Knesset on the Labor party slate, becoming the first Reform rabbi to serve in Israel's parliament.
-    date: 2021-03-23
+    date: "2021-03-23"
     sources:
       - url: https://www.haaretz.com/israel-news/elections/2021-04-11/ty-article/.premium/where-the-first-reform-rabbi-to-serve-in-the-knesset-gilad-kariv-draws-the-line/0000017f-e19b-d804-ad7f-f1fb27b00002
         title: Where the First Reform Rabbi to Serve in the Knesset, Gilad Kariv, Draws the Line
@@ -22,9 +23,9 @@ claims:
       he: יושב ראש ועדת החוקה, חוק ומשפט
       en: Chaired the Constitution, Law and Justice Committee
     description:
-      he: ביוני 2021 נבחר קריב לעמוד בראש ועדת החוקה, חוק ומשפט של הכנסת, אחת הוועדות המרכזיות בכנסת, בתקופת הממשלה ה-36.
-      en: In June 2021 Kariv was elected to head the Knesset's Constitution, Law and Justice Committee, one of the parliament's most influential committees, during the 36th government.
-    date: 2021-06-29
+      he: ביוני 2021 נבחר קריב לעמוד בראש ועדת החוקה, חוק ומשפט של הכנסת, אחת הוועדות המרכזיות בכנסת, בתקופת הממשלה ה-36. בכנסת ה-25 הוא עומד בראש ועדת העלייה, הקליטה והתפוצות.
+      en: In June 2021 Kariv was elected to head the Knesset's Constitution, Law and Justice Committee, one of the parliament's most influential committees, during the 36th government. In the 25th Knesset he chairs the Committee for Immigration, Absorption and Diaspora Affairs.
+    date: "2021-06-29"
     sources:
       - url: https://www.jpost.com/breaking-news/labor-mk-gilad-kariv-elected-to-constitution-law-and-justice-committee-672326
         title: Labor MK Gilad Kariv elected to head Constitution, Law and Justice Committee
@@ -32,6 +33,9 @@ claims:
       - url: https://www.timesofisrael.com/ultra-orthodox-vow-to-boycott-new-knesset-committee-over-reform-rabbi-chairman/
         title: Ultra-Orthodox to boycott Knesset committee because its chair is a Reform rabbi
         publisher: The Times of Israel
+      - url: https://en.wikipedia.org/wiki/Gilad_Kariv
+        title: Gilad Kariv
+        publisher: Wikipedia
   - kind: positive
     category: achievement
     title:
@@ -47,31 +51,42 @@ claims:
   - kind: negative
     category: investigation
     status: ongoing
-    date: 2025-04-07
+    date: "2026-07-09"
     title:
-      he: נחקר במשטרה בחשד להדלפת פרוטוקול חסוי מוועדת החוץ והביטחון; התיק הועבר לפרקליטות
-      en: Questioned by police over alleged leak of a classified Foreign Affairs and Defense Committee protocol; case transferred to the prosecution
-      ar: جرى استجوابه من قبل الشرطة للاشتباه بتسريب محضر سري من لجنة الخارجية والأمن؛ وأُحيل الملف إلى النيابة
-      ru: Допрошен полицией по подозрению в утечке секретного протокола Комиссии по иностранным делам и обороне; дело передано в прокуратуру
+      he: נחקר במשטרה בחשד להדלפת פרוטוקול חסוי מוועדת החוץ והביטחון; התיק ממתין להכרעת הפרקליטות
+      en: Questioned by police over alleged leak of a classified Foreign Affairs and Defense Committee protocol; case awaiting a prosecution decision
     description:
-      he: ב-7 באפריל 2025 נחקר ח"כ גלעד קריב תחת אזהרה ביחידת להב 433 בחשד להדלפת פרוטוקול מדיון חסוי של ועדת החוץ והביטחון מיוני 2023, בעקבות תלונה של יו"ר הכנסת אמיר אוחנה. קריב הכחיש כל עוולה, מסר כי "מעולם לא פגעתי בביטחון המדינה" וכי הציטוטים אושרו לפרסום בצנזורה, וטען שהתלונה פוליטית ופוגעת בחסינות הפרלמנטרית. ביולי 2025 הסתיימה החקירה והתיק הועבר למחלקה הכלכלית בפרקליטות המדינה לבחינת הגשת כתב אישום; נכון למאי 2026 לא הוגש כתב אישום ולא התקבלה החלטה סופית. חלה חזקת החפות.
-      en: On 7 April 2025, MK Gilad Kariv was questioned under caution by the Lahav 433 unit on suspicion of leaking a protocol from a June 2023 classified session of the Knesset Foreign Affairs and Defense Committee, following a complaint by Knesset Speaker Amir Ohana. Kariv denied any wrongdoing, stating he "never harmed Israel's security" and that the quoted material had been cleared by military censors, and called the complaint political and a breach of parliamentary immunity. In July 2025 the investigation concluded and the file was transferred to the State Attorney's Economic Department to decide on an indictment; as of May 2026 no indictment had been filed and no final decision had been reached. The presumption of innocence applies.
-      ar: في 7 نيسان/أبريل 2025، جرى استجواب عضو الكنيست جلعاد كاريف تحت التحذير من قبل وحدة لاهف 433 للاشتباه بتسريب محضر من جلسة سرية للجنة الخارجية والأمن في الكنيست عُقدت في حزيران/يونيو 2023، إثر شكوى تقدّم بها رئيس الكنيست أمير أوحانا. نفى كاريف أي مخالفة وقال إنه "لم يمسّ قط بأمن الدولة" وإن الاقتباسات أُجيزت للنشر من الرقابة، واعتبر الشكوى سياسية وماسّة بالحصانة البرلمانية. في تموز/يوليو 2025 انتهى التحقيق وأُحيل الملف إلى القسم الاقتصادي في نيابة الدولة للبتّ في تقديم لائحة اتهام؛ وحتى أيار/مايو 2026 لم تُقدّم لائحة اتهام ولم يُتّخذ قرار نهائي. تسري قرينة البراءة.
-      ru: 7 апреля 2025 года депутат Кнессета Гилад Карив был допрошен с предупреждением подразделением «Лахав 433» по подозрению в утечке протокола закрытого заседания Комиссии Кнессета по иностранным делам и обороне, состоявшегося в июне 2023 года, после жалобы спикера Кнессета Амира Оханы. Карив отверг какие-либо нарушения, заявив, что он «никогда не наносил ущерба безопасности государства» и что цитаты были одобрены военной цензурой, и назвал жалобу политической и нарушающей парламентскую неприкосновенность. В июле 2025 года расследование завершилось, и дело было передано в экономический отдел Государственной прокуратуры для решения о предъявлении обвинения; по состоянию на май 2026 года обвинение не предъявлено и окончательное решение не принято. Действует презумпция невиновности.
+      he: ב-7 באפריל 2025 נחקר ח"כ גלעד קריב תחת אזהרה ביחידת להב 433 בחשד להדלפת פרוטוקול מדיון חסוי של ועדת החוץ והביטחון מיוני 2023, בעקבות תלונה של יו"ר הכנסת אמיר אוחנה. קריב הכחיש כל עוולה, מסר כי "מעולם לא פגעתי בביטחון המדינה" וכי הציטוטים אושרו לפרסום בצנזורה, וטען שהתלונה פוליטית ופוגעת בחסינות הפרלמנטרית. ביולי 2025 הסתיימה החקירה והתיק הועבר לפרקליטות המדינה לבחינת הגשת כתב אישום. ב-9 ביולי 2026 עתר ארגון "לביא" לבג"ץ בדרישה שרשויות האכיפה יכריעו בתיק, בטענה לשיהוי; נכון לספטמבר 2026 לא הוגש כתב אישום ולא פורסמה החלטה סופית. חלה חזקת החפות.
+      en: On 7 April 2025, MK Gilad Kariv was questioned under caution by the Lahav 433 unit on suspicion of leaking a protocol from a June 2023 classified session of the Knesset Foreign Affairs and Defense Committee, following a complaint by Knesset Speaker Amir Ohana. Kariv denied any wrongdoing, stating he "never harmed Israel's security" and that the quoted material had been cleared by military censors, and called the complaint political and a breach of parliamentary immunity. In July 2025 the investigation concluded and the file was transferred to the State Attorney's Office to decide on an indictment. On 9 July 2026 the Lavi organization petitioned the High Court of Justice to compel the enforcement authorities to decide the case, alleging undue delay; as of September 2026 no indictment has been filed and no final decision has been published. The presumption of innocence applies.
     sources:
       - url: https://www.jpost.com/breaking-news/article-849149
         title: Israel Police summons MK Gilad Kariv over suspected protocol leak
         publisher: The Jerusalem Post
+      - url: https://www.timesofisrael.com/labor-mk-to-be-questioned-on-suspicion-of-leaking-classified-info-from-knesset-panel/
+        title: Labor MK to be questioned on suspicion of leaking classified info from Knesset panel
+        publisher: The Times of Israel
       - url: https://www.maariv.co.il/news/law/article-1163916
         title: High Court rejected petition to investigate MK Kariv over security leak
         publisher: Maariv
       - url: https://www.inn.co.il/news/673594
         title: "Suspected leak from classified session: MK Kariv's investigation file transferred to the prosecution"
         publisher: Arutz Sheva (Israel National News)
-      - url: https://www.theyeshivaworld.com/news/israel-news/2551781/a-g-indicts-right-wing-mk-for-leak-while-ignoring-similar-leak-by-left-wing-mk.html
-        title: A-G Indicts Right-Wing MK For Leak While Ignoring Similar Leak By Left-Wing MK
-        publisher: The Yeshiva World
-      - url: https://www.timesofisrael.com/labor-mk-to-be-questioned-on-suspicion-of-leaking-classified-info-from-knesset-panel/
-        title: Labor MK to be questioned on suspicion of leaking classified info from Knesset panel
-        publisher: The Times of Israel
-lastReviewed: 2026-07-05
+      - url: https://www.israelhayom.co.il/news/politics/article/20948698
+        title: "עתירה לבג\"ץ: \"להכריע מייד האם להעמיד לדין את ח\"כ גלעד קריב\""
+        publisher: Israel Hayom
+  - kind: neutral
+    category: news
+    date: "2026-07-20"
+    title:
+      he: שובץ במקום השלישי ברשימת הדמוקרטים לכנסת ה-26
+      en: Placed third on The Democrats' list for the 26th Knesset
+    description:
+      he: בפריימריז מפלגת הדמוקרטים שנערכו ב-20 ביולי 2026 (יותר מ-97 אלף מצביעים, 86% הצבעה) דורג קריב במקום השני מבין המתמודדים, אחרי נעמה לזימי, ושובץ במקום השלישי ברשימה לבחירות ב-27 באוקטובר 2026, אחרי יו"ר המפלגה יאיר גולן ולזימי.
+      en: In The Democrats' primary held on 20 July 2026 (over 97,000 voters, 86% turnout) Kariv placed second among the candidates, after Naama Lazimi, and was placed third on the list for the 27 October 2026 election, after party chairman Yair Golan and Lazimi.
+    sources:
+      - url: https://www.haaretz.co.il/news/elections/2026-07-20/ty-article/.premium/0000019f-804b-d316-a9df-a24fe7910000
+        title: "תוצאות הפריימריז בדמוקרטים: לזימי, קריב ורייטן בשלושת המקומות הראשונים"
+        publisher: Haaretz
+      - url: https://www.ynet.co.il/news/article/sk7fmtiefg
+        title: "התוצאות הסופיות בפריימריז: זו רשימת הדמוקרטים בבחירות לכנסת ה-26"
+        publisher: Ynet

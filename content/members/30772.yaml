@@ -1,4 +1,5 @@
 personId: 30772
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -6,14 +7,15 @@ claims:
       he: סגן יושב ראש הכנסת
       en: Deputy Speaker of the Knesset
     description:
-      he: ניסים ואטורי, חבר כנסת מטעם הליכוד, מכהן כסגן יושב ראש הכנסת. הוא נכנס לראשונה לכנסת בדצמבר 2020 (במקומו של גדעון סער), נבחר שוב בבחירות 2022, ומכהן גם כחבר ועדת החוץ והביטחון.
-      en: Nissim Vaturi, a member of the Knesset for Likud, serves as a Deputy Speaker of the Knesset. He first entered the Knesset in December 2020 (replacing Gideon Sa'ar), was re-elected in the 2022 election, and is also a member of the Knesset's Foreign Affairs and Defense Committee.
+      he: ניסים ואטורי, חבר כנסת מטעם הליכוד, מכהן כסגן יושב ראש הכנסת ה-25 מ-18 בינואר 2023. הוא נכנס לראשונה לכנסת בדצמבר 2020 (במקומו של גדעון סער), נבחר שוב בבחירות 2022, ומכהן גם כחבר ועדת החוץ והביטחון.
+      en: Nissim Vaturi, a member of the Knesset for Likud, has served as a Deputy Speaker of the 25th Knesset since 18 January 2023. He first entered the Knesset in December 2020 (replacing Gideon Sa'ar), was re-elected in the 2022 election, and is also a member of the Knesset's Foreign Affairs and Defense Committee.
+    date: "2023-01-18"
     sources:
       - url: https://en.wikipedia.org/wiki/Nissim_Vaturi
         title: Nissim Vaturi
         publisher: Wikipedia
-      - url: https://m.knesset.gov.il/en/mk/pages/MKPersonalDetails.aspx?mkid=1045
-        title: Knesset Member Nissim Vaturi
+      - url: https://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_PersonToPosition?%24filter=PersonID%20eq%2030772
+        title: Knesset OData — positions held by person 30772
         publisher: The Knesset
   - kind: positive
     category: achievement
@@ -30,7 +32,7 @@ claims:
   - kind: negative
     category: investigation
     status: ongoing
-    date: 2026-03-23
+    date: "2026-03-23"
     title:
       he: חקירת משטרה בפרשת הפריצה לבסיס שדה תימן
       en: Police investigation over the Sde Teiman base break-in
@@ -57,4 +59,56 @@ claims:
       - url: https://www.maariv.co.il/news/law/article-1299872
         title: הפרקליטות עדיין לא השלימה את החקירה בפרשת הפריצה לשדה תימן
         publisher: Maariv
-lastReviewed: 2026-07-05
+  - kind: negative
+    category: controversy
+    status: settled
+    date: "2026-05-12"
+    title:
+      he: נזיפה חמורה והרחקה מישיבות הכנסת בהחלטת ועדת האתיקה (מאי 2026)
+      en: Severe reprimand and suspension from Knesset sittings by the Ethics Committee (May 2026)
+    description:
+      he: בהחלטה מס' 25/65 מ-12 במאי 2026 קבעה ועדת האתיקה של הכנסת כי ואטורי הפר את כללי האתיקה בשלושה עניינים - שימוש שלא כדין ברישיון קבלנות (לאחר שרשם הקבלנים קבע ב-4 בינואר 2024 כי פעל בניגוד לחוק רישום קבלנים והתלה את רישיונו ל-3 שנים לצד קנס מרבי), הענקת תעודת הוקרה לזמר אייל גולן "בשם הכנסת" על נייר הנושא את סמל הכנסת, וקידום אירוע ספורט מסחרי ברשתות החברתיות - וכן כי הכינויים "מטומטמת" ו"אפס מאופסת" שהטיח בח"כ נעמה לזימי מהווים ככלל הפרה, תוך התחשבות בנסיבות. הוועדה הטילה עליו נזיפה חמורה והרחקה מישיבות המליאה והוועדות ל-5 ימי ישיבות (18-26 במאי 2026). בתגובתו לוועדה מסר ואטורי כי עניין רישיון הקבלנות "נדון בעבר על ידי ועדת האתיקה" וכי התעודה לגולן ניתנה "על תרומתו הרבה לחיילי צה"ל".
+      en: In decision 25/65 of 12 May 2026 the Knesset Ethics Committee found that Vaturi had breached the ethics rules in three matters - unlawful use of a contractor's license (after the Registrar of Contractors ruled on 4 January 2024 that he had acted contrary to the Contractors Registration Law and suspended his license for three years with a maximum fine), awarding singer Eyal Golan a certificate of appreciation "in the name of the Knesset" on paper bearing the Knesset emblem, and promoting a commercial sports event on social media - and that the epithets he directed at MK Naama Lazimi ("idiot", "a total zero") constitute, as a rule, a breach, while taking the circumstances into account. The committee imposed a severe reprimand and removal from plenum and committee sittings for five sitting days (18-26 May 2026). In his response to the committee Vaturi said the contractor-license matter "was discussed in the past by the Ethics Committee" and that the certificate to Golan was given "for his great contribution to IDF soldiers".
+    sources:
+      - url: https://main.knesset.gov.il/Activity/committees/Ethics/Decisions25/Decisions25-56.pdf
+        title: "החלטה מס' 25/65 - החלטת ועדת האתיקה בקובלנות נגד חבר הכנסת ניסים ואטורי מיום 12 במאי 2026"
+        publisher: The Knesset (Ethics Committee)
+      - url: https://www.mako.co.il/news-politics/2026_q2/Article-c04ce82d89c1e91027.htm
+        title: ועדת האתיקה הטילה עונשים על ואטורי, סעדה ולזימי
+        publisher: N12
+  - kind: negative
+    category: controversy
+    status: settled
+    date: "2025-05-25"
+    title:
+      he: ההתבטאות "לשרוף את עזה" (2023) - ועדת האתיקה דחתה את הקובלנה
+      en: The "burn Gaza" remark (2023) - Ethics Committee rejected the complaint
+    description:
+      he: בנובמבר 2023 פרסם ואטורי ברשת X קריאה "לשרוף את עזה", שעוררה ביקורת ציבורית וקובלנה לוועדת האתיקה מטעם ח"כ עופר כסיף. בריאיון רדיו בינואר 2024 הבהיר ואטורי כי התכוון "לשרוף את המחבלים שם" ולא לאזרחים. במאי 2025 דחתה ועדת האתיקה את הקובלנה וקבעה כי מדובר בהתבטאות פוליטית בעלת אופי אידאולוגי שאינה מהווה הפרה של כללי האתיקה, אף שציינה כי "הדברים אינם מוסיפים כבוד לכנסת כמוסד".
+      en: In November 2023 Vaturi posted on X a call to "burn Gaza", drawing public criticism and an Ethics Committee complaint by MK Ofer Cassif. In a January 2024 radio interview Vaturi clarified he meant "burn the terrorists there", not civilians. In May 2025 the Ethics Committee rejected the complaint, ruling that the statement was political and ideological in nature and did not breach the ethics rules, while noting that "the statements do not add honor to the Knesset as an institution".
+    sources:
+      - url: https://www.haaretz.co.il/news/politics/2025-05-25/ty-article/.premium/00000197-0803-dc94-ab97-0e0fcf410000
+        title: "ועדת האתיקה של הכנסת: הקריאה של ואטורי \"לשרוף את עזה\" לא נוגדת את הכללים"
+        publisher: Haaretz
+      - url: https://www.maariv.co.il/news/politics/article-1199905
+        title: "ועדת האתיקה קבעה: האמירה של ואטורי \"לשרוף את עזה\" לא הפרה כללים"
+        publisher: Maariv
+      - url: https://www.ynet.co.il/news/article/hj8wrcxfee
+        title: "ואטורי קרא \"לשרוף את עזה\", בכנסת קבעו: \"לא הפר את כללי האתיקה\""
+        publisher: Ynet
+  - kind: neutral
+    category: news
+    date: "2026-08-17"
+    title:
+      he: דורג במקום ה-33 בפריימריז הליכוד, מחוץ למקומות הריאליים
+      en: Placed 33rd in the Likud primary, outside the realistic slots
+    description:
+      he: בפריימריז הליכוד לכנסת ה-26 שנערכו ב-17 באוגוסט 2026 דורג ואטורי במקום ה-33 ברשימה הארצית, מחוץ למקומות שהוגדרו בתקשורת כריאליים לקראת הבחירות ב-27 באוקטובר 2026.
+      en: In the Likud primary for the 26th Knesset held on 17 August 2026, Vaturi placed 33rd on the national list, outside the slots described in the press as realistic ahead of the 27 October 2026 election.
+    sources:
+      - url: https://www.globes.co.il/news/article.aspx?did=1001552600
+        title: "ספירת הקולות הסתיימה: כך נראית רשימת הליכוד החדשה"
+        publisher: Globes
+      - url: https://news.walla.co.il/item/3861207
+        title: "ספירת הקולות בליכוד נגמרה: אלי כהן במקום הראשון, אוחנה ולוין אחריו - ומי נשאר בחוץ?"
+        publisher: Walla

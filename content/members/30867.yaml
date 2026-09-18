@@ -2,6 +2,7 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 30867
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -32,7 +33,7 @@ claims:
       en: In July 2023, Kroizer was elected as a coalition representative to the
         Judicial Selection Committee, one of the key roles Knesset members hold
         in Israel's system of judicial appointments.
-    date: 2023-07-12
+    date: "2023-07-12"
     sources:
       - url: https://www.haaretz.com/israel-news/2023-07-12/ty-article/.premium/israeli-lawmakers-vote-to-elect-second-representative-to-judicial-appointments-committee/00000189-4933-de83-adc9-cfb32dcf0000
         title: Israeli Lawmaker Elected Representative to Judicial Appointments
@@ -51,7 +52,7 @@ claims:
         את ח"כ יעקב אשר.
       en: In August 2025, Kroizer was appointed chair of the Knesset's Internal
         Affairs and Environment Committee, replacing MK Ya'akov Asher.
-    date: 2025-08-04
+    date: "2025-08-04"
     sources:
       - url: https://www.israelnationalnews.com/flashes/663648
         title: MK Yitzhak Kroizer appointed chair of the Interior and Environmental
@@ -63,3 +64,35 @@ claims:
       - url: https://he.wikipedia.org/wiki/%D7%99%D7%A6%D7%97%D7%A7_%D7%A7%D7%A8%D7%95%D7%99%D7%96%D7%A8
         title: יצחק קרויזר
         publisher: Hebrew Wikipedia
+  - kind: neutral
+    category: news
+    date: "2026-07-02"
+    title:
+      he: כינס בוועדת הפנים דיון בטענות על "ריסוס" ושליטה במזג האוויר
+      en: Convened an Interior Committee debate on claims of atmospheric "spraying" and weather control
+    description:
+      he: ב-2 ביולי 2026 קיימה ועדת הפנים והגנת הסביבה בראשות קרויזר, לבקשתו ולבקשת ח"כ לימור סון הר מלך, דיון בטענות פעילים כי גורמים מרססים חומרים באטמוספירה כדי לשלוט במזג האוויר. כל נציגי הממשלה בדיון - ובהם משרד הבריאות, המשרד להגנת הסביבה והשירות המטאורולוגי - מסרו כי לא מתבצע ריסוס כזה בישראל; מנהל השירות המטאורולוגי ד"ר אמיר גבעתי אמר "איננו מודעים לפעילות כזו". ארגון גרינפיס ישראל מתח ביקורת על קיום הדיון.
+      en: On 2 July 2026 the Knesset Interior and Environment Committee, chaired by Kroizer, held at his request and that of MK Limor Son Har-Melech a debate on activists' claims that parties spray substances into the atmosphere to control the weather. All government representatives at the debate - including the Health Ministry, the Environmental Protection Ministry and the Meteorological Service - said no such spraying takes place in Israel; Meteorological Service director Dr. Amir Givati said "we are not aware of any such activity". Greenpeace Israel criticized the holding of the debate.
+    sources:
+      - url: https://www.haaretz.com/science-and-health/2026-07-02/ty-article/knesset-debate-heats-up-over-climate-engineering-conspiracy-claims/0000019f-2303-d521-abdf-7f2fff810000
+        title: Who Controls Israel's Weather? Knesset Debate Heats Up Over Climate-engineering Conspiracy Claims
+        publisher: Haaretz
+  - kind: neutral
+    category: news
+    date: "2026-09-06"
+    title:
+      he: שובץ במקום השישי ברשימת עוצמה יהודית לכנסת ה-26
+      en: Placed sixth on the Otzma Yehudit list for the 26th Knesset
+    description:
+      he: ב-6 בספטמבר 2026 הודיע יו"ר עוצמה יהודית איתמר בן גביר, הקובע את הרכב הרשימה, כי קרויזר ישובץ במקום השישי ברשימת המפלגה לבחירות ב-27 באוקטובר 2026, אחרי לימור סון הר מלך.
+      en: On 6 September 2026 Otzma Yehudit chairman Itamar Ben Gvir, who sets the list's composition, announced that Kroizer would be placed sixth on the party's list for the 27 October 2026 election, after Limor Son Har-Melech.
+    sources:
+      - url: https://www.ynet.co.il/news/article/sjmhg1j00mx
+        title: "רשימת עוצמה יהודית: סון הר מלך תשובץ חמישית, אחריה קרויזר"
+        publisher: Ynet
+      - url: https://www.haaretz.co.il/news/elections/2026-09-07/ty-article/.premium/000001a0-7bea-d5e7-a7a0-7bfebd3a0000
+        title: "רשימת עוצמה יהודית: דורפמן במקום השביעי, פעיל עם קעקוע \"כך\" במקום השמיני"
+        publisher: Haaretz
+      - url: https://www.inn.co.il/news/705828
+        title: כך נראית רשימת עוצמה יהודית
+        publisher: Arutz Sheva (Israel National News)

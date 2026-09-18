@@ -2,6 +2,7 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 30717
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -15,11 +16,14 @@ claims:
         Minister of Aliyah and Integration on 29 December 2022 upon the
         formation of Israel's thirty-seventh government, and has held the office
         since.
-    date: 2022-12-29
+    date: "2022-12-29"
     sources:
       - url: https://en.wikipedia.org/wiki/Ofir_Sofer
         title: Ofir Sofer
         publisher: Wikipedia
+      - url: https://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_PersonToPosition?%24filter=PersonID%20eq%2030717
+        title: Knesset OData — positions held by person 30717
+        publisher: The Knesset
   - kind: positive
     category: award
     title:
@@ -36,7 +40,7 @@ claims:
         wounded, and was recognized as a disabled IDF veteran. For his conduct
         and courage during the event he received a divisional-level (Aluf)
         commendation.
-    date: 1996-09-25
+    date: "1996-09-25"
     sources:
       - url: https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%A4%D7%99%D7%A8_%D7%A1%D7%95%D7%A4%D7%A8
         title: אופיר סופר
@@ -54,7 +58,7 @@ claims:
         on the Union of Right-Wing Parties list, and has served continuously
         across the 21st through 25th Knessets. He had previously served as
         secretary-general of the Tkuma party.
-    date: 2019-04-09
+    date: "2019-04-09"
     sources:
       - url: https://en.wikipedia.org/wiki/Ofir_Sofer
         title: Ofir Sofer
@@ -62,3 +66,22 @@ claims:
       - url: https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%A4%D7%99%D7%A8_%D7%A1%D7%95%D7%A4%D7%A8
         title: אופיר סופר
         publisher: Wikipedia (Hebrew)
+  - kind: neutral
+    category: news
+    date: "2026-07-15"
+    title:
+      he: הודיע על פרישה מהחיים הפוליטיים ולא יתמודד לכנסת ה-26
+      en: Announced his retirement from politics; will not run for the 26th Knesset
+    description:
+      he: ב-15 ביולי 2026, כשבוע וחצי לפני הפריימריז בציונות הדתית, הודיע סופר כי "החלטתי שלא להיות מועמד לכנסת הבאה" וכי ימשיך לכהן כשר העלייה והקליטה "במסירות עד תום הקדנציה". לפי הדיווחים, ההודעה באה על רקע מחלוקות בינו לבין יו"ר המפלגה בצלאל סמוטריץ', בעיקר סביב חקיקת חוק הגיוס; סמוטריץ' מסר כי הוא מכבד את ההחלטה והודה לו על שנות העבודה המשותפת.
+      en: On 15 July 2026, about a week and a half before the Religious Zionism party primary, Sofer announced that "I have decided not to be a candidate for the next Knesset" and that he would continue to serve as Minister of Aliyah and Integration "with dedication until the end of the term". According to the reports, the announcement followed disagreements between him and party chairman Bezalel Smotrich, mainly over the draft-law legislation; Smotrich said he respected the decision and thanked him for their years of joint work.
+    sources:
+      - url: https://news.walla.co.il/item/3853750
+        title: שר העלייה והקליטה אופיר סופר פורש מהכנסת
+        publisher: Walla
+      - url: https://www.inn.co.il/news/701551
+        title: השר אופיר סופר פורש מהחיים הפוליטיים
+        publisher: Arutz Sheva (Israel National News)
+      - url: https://www.zman.co.il/live/704350/
+        title: השר אופיר סופר הודיע שלא יתמודד בבחירות לכנסת
+        publisher: Zman Israel

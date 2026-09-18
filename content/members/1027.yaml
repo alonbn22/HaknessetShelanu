@@ -1,6 +1,7 @@
 # Gideon Sa'ar (PersonID 1027). Factual reporting from reputable public sources,
-# cited per claim. Neutral language. REVIEW before launch.
+# cited per claim. Neutral language. Re-verified 2026-09-18 (every cited URL re-fetched).
 personId: 1027
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -8,12 +9,79 @@ claims:
       he: "כיהן כשר בכיר ומייסד מפלגת תקווה חדשה"
       en: "Senior cabinet minister and founder of the New Hope party"
     description:
-      he: "כיהן בתפקידי שר בכירים, בהם שר הפנים, שר החינוך ושר המשפטים, ולימים ייסד את מפלגת תקווה חדשה."
-      en: "Held senior ministerial posts including Interior, Education and Justice, and later founded the New Hope party."
+      he: "כיהן בתפקידי שר בכירים, בהם שר הפנים, שר החינוך ושר המשפטים, ולימים ייסד את מפלגת תקווה חדשה (2020). ב-8 בנובמבר 2024 אישרה הכנסת ברוב של 58 מול 0 את מינויו לשר החוץ."
+      en: "Held senior ministerial posts including Interior, Education and Justice, and later founded the New Hope party (2020). On 8 November 2024 the Knesset approved his appointment as Foreign Minister by a vote of 58-0."
     sources:
       - url: "https://en.wikipedia.org/wiki/Gideon_Sa%27ar"
         title: "Gideon Sa'ar"
         publisher: "Wikipedia"
-      - url: "https://www.britannica.com/biography/Gideon-Saar"
-        title: "Gideon Sa'ar — Biography"
-        publisher: "Encyclopædia Britannica"
+      - url: "https://www.timesofisrael.com/knesset-approves-katz-as-defense-minister-saar-as-fm-after-gallants-firing/"
+        title: "Knesset approves Katz as defense minister, Sa'ar as FM after Gallant's firing"
+        publisher: "The Times of Israel"
+  - kind: neutral
+    category: role
+    date: "2025-07-10"
+    title:
+      he: "שר החוץ; התפטר מהכנסת לפי החוק הנורבגי"
+      en: "Foreign Minister; resigned his Knesset seat under the Norwegian Law"
+    description:
+      he: "סער מכהן כשר החוץ מאז 8 בנובמבר 2024. ב-8 ביולי 2025 הגיש ליו\"ר הכנסת את התפטרותו מהכנסת לפי החוק הנורבגי, והמשיך לכהן כשר; את מקומו בכנסת תפס אכרם חסון, שנכנס לכנסת ב-10 ביולי 2025 לפי רישומי הכנסת."
+      en: "Sa'ar has served as Foreign Minister since 8 November 2024. On 8 July 2025 he submitted his resignation from the Knesset under the Norwegian Law while remaining a minister; his seat went to Akram Hasson, who entered the Knesset on 10 July 2025 according to Knesset records."
+    sources:
+      - url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-860355"
+        title: "FM Sa'ar submits resignation under Norwegian Law"
+        publisher: "The Jerusalem Post"
+      - url: "https://www.ynetnews.com/article/7083may2t"
+        title: "Following Matan Kahana's withdrawal and Minister Saar's resignation under Norwegian Law: 2 new MKs sworn in"
+        publisher: "Ynetnews"
+  - kind: neutral
+    category: news
+    date: "2025-03-13"
+    title:
+      he: "הסכם לריצה משותפת של תקווה חדשה עם הליכוד"
+      en: "Agreement for New Hope to run jointly with Likud"
+    description:
+      he: "ב-13 במרץ 2025 חתמו הליכוד ותקווה חדשה על הסכם שלפיו תקווה חדשה תתמזג בליכוד לקראת הבחירות הבאות, עם מקום שמור ברשימת הליכוד למועמד מטעם סער."
+      en: "On 13 March 2025 Likud and New Hope signed an agreement under which New Hope would merge into Likud ahead of the next election, with a reserved slot on the Likud slate for a candidate chosen by Sa'ar."
+    sources:
+      - url: "https://www.timesofisrael.com/gideon-saars-new-hope-signs-agreement-to-rejoin-likud-in-next-elections/"
+        title: "Gideon Sa'ar's New Hope signs agreement to rejoin Likud in next elections"
+        publisher: "The Times of Israel"
+      - url: "https://www.jns.org/saar-to-run-on-joint-slate-with-likud-in-future-election/"
+        title: "Sa'ar to run on joint slate with Likud in future election"
+        publisher: "JNS"
+  - kind: neutral
+    category: news
+    date: "2026-09-08"
+    title:
+      he: "מקום 7 (שמור) ברשימת הליכוד לבחירות 2026"
+      en: "Slot 7 (reserved) on the Likud list for the 2026 election"
+    description:
+      he: "סער קיבל מקום שמור ברשימת הליכוד לאחר פריימריז המפלגה (17 באוגוסט 2026), וברשימה הסופית שהגיש הליכוד לוועדת הבחירות ב-8 בספטמבר 2026 הוא מופיע במקום השביעי."
+      en: "Sa'ar received a reserved slot on the Likud list after the party primary (17 August 2026), and on the final list Likud filed with the Central Elections Committee on 8 September 2026 he appears in seventh place."
+    sources:
+      - url: "https://www.mako.co.il/news-politics/2026_q3/Article-2ddf4a5b99180a1027.htm"
+        title: "זו הרשימה הסופית של הליכוד לבחירות 2026"
+        publisher: "N12"
+      - url: "https://www.jns.org/news/israel-news/likud-files-26th-knesset-election-slate"
+        title: "Likud files 26th Knesset election slate"
+        publisher: "JNS"
+      - url: "https://www.timesofisrael.com/likud-primary-marks-win-for-netanyahu-bid-to-reshape-sinking-party-and-win-back-voters/"
+        title: "Likud primary results boost Netanyahu's bid to reshape sinking party, win back voters"
+        publisher: "The Times of Israel"
+  - kind: neutral
+    category: news
+    date: "2026-09-16"
+    title:
+      he: "הצהרה משותפת עם מרוקו על שדרוג היחסים ומינוי שגרירים"
+      en: "Joint declaration with Morocco to upgrade ties and appoint ambassadors"
+    description:
+      he: "ב-16 בספטמבר 2026 נפגש סער בניו יורק עם שר החוץ המרוקאי נאסר בוריטה, באירוח שגריר ארה\"ב באו\"ם, והשניים חתמו על הצהרה לשדרוג היחסים: מינוי שגרירים, הפיכת הנציגויות לשגרירויות והרחבת הטיסות בין המדינות."
+      en: "On 16 September 2026 Sa'ar met Moroccan Foreign Minister Nasser Bourita in New York, hosted by the US ambassador to the UN, and the two signed a declaration to upgrade relations: appointing ambassadors, converting the liaison missions into embassies and expanding flights between the countries."
+    sources:
+      - url: "https://www.timesofisrael.com/israel-and-morocco-agree-to-appoint-ambassadors-upgrade-ties-as-fms-meet/"
+        title: "Israel and Morocco agree to appoint ambassadors, upgrade ties as FMs meet"
+        publisher: "The Times of Israel"
+      - url: "https://www.jpost.com/israel-news/article-908835"
+        title: "Israel, Morocco agree to upgrade relations, open respective embassies in US-backed summit"
+        publisher: "The Jerusalem Post"

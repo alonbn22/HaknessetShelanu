@@ -1,89 +1,126 @@
-# PersonID 30852. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# Moshe Solomon (PersonID 30852). Factual reporting from reputable public
+# sources, cited per claim. Neutral language; what was reported and what the
+# member said in response. Re-verified 2026-09-18 (every cited URL re-fetched;
+# Knesset OData used as the primary record for positions and votes).
 personId: 30852
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: עולה מאתיופיה וקצין בכיר בצנחנים שנבחר לכנסת ה-25
-      en: Ethiopian-born immigrant and senior IDF paratrooper officer elected to the
-        25th Knesset
+      he: "עולה מאתיופיה, רב וקצין בכיר בצנחנים שנבחר לכנסת ה-25"
+      en: "Ethiopian-born immigrant, rabbi and senior paratrooper officer elected to the 25th Knesset"
     description:
-      he: משה סולומון נולד ב-1975 בעיר שירה שבאזור תיגראי באתיופיה, ועלה לישראל כילד
-        לאחר מסע רגלי ארוך מאתיופיה לסודאן. הוא שירת בחטיבת הצנחנים של צה"ל
-        ומחזיק בדרגת סגן-אלוף (מיל'). סולומון נבחר לכנסת ה-25 ברשימת הציונות
-        הדתית לאחר בחירות נובמבר 2022.
-      en: Moshe Solomon was born in 1975 in Shire, in Ethiopia's Tigray region, and
-        immigrated to Israel as a child after a long overland journey from
-        Ethiopia to Sudan. He served in the IDF Paratroopers Brigade and holds
-        the reserve rank of lieutenant colonel (sgan aluf). Solomon was elected
-        to the 25th Knesset on the Religious Zionism list following the November
-        2022 election.
-    date: 2022-11-15
+      he: "משה סולומון נולד ב-1975 בשירה שבאזור תיגראי באתיופיה, ועלה לישראל ב-1983 כילד לאחר מסע רגלי ארוך לסודאן. הוא שירת בגדוד 890 של חטיבת הצנחנים, שימש במילואים מג\"ד והוא בדרגת סגן-אלוף (מיל'); הוא בוגר ישיבת הר עציון ומוסמך לרבנות. סולומון נבחר לכנסת ה-25 במקום ה-14 ברשימת הציונות הדתית בבחירות נובמבר 2022."
+      en: "Moshe Solomon was born in 1975 in Shire, in Ethiopia's Tigray region, and immigrated to Israel in 1983 as a child after a long overland journey to Sudan. He served in Battalion 890 of the Paratroopers Brigade, commanded a battalion in the reserves and holds the rank of lieutenant colonel (res.); he studied at Yeshivat Har Etzion and was ordained as a rabbi. Solomon was elected to the 25th Knesset in 14th place on the Religious Zionism list in the November 2022 election."
+    date: "2022-11-15"
     sources:
-      - url: https://en.wikipedia.org/wiki/Moshe_Solomon
-        title: Moshe Solomon
-        publisher: Wikipedia
-      - url: https://www.wikidata.org/wiki/Q115051897
-        title: Moshe Solomon (Q115051897)
-        publisher: Wikidata
-      - url: https://www.israelnationalnews.com/news/364337
+      - url: "https://en.wikipedia.org/wiki/Moshe_Solomon"
+        title: "Moshe Solomon"
+        publisher: "Wikipedia"
+      - url: "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%A1%D7%95%D7%9C%D7%95%D7%9E%D7%95%D7%9F"
+        title: "משה סולומון"
+        publisher: "Wikipedia (Hebrew)"
+      - url: "https://www.israelnationalnews.com/news/364337"
         title: "A Must Read: The inaugural Knesset speech of MK Moshe Solomon"
-        publisher: Israel National News
+        publisher: "Israel National News (Arutz 7)"
   - kind: positive
     category: achievement
     title:
-      he: קידום תוכנית ממשלתית לקליטת יוצאי אתיופיה
-      en: Led a government plan for the integration of Ethiopian-Israelis
+      he: "שותף ליוזמת החוק למחיקת רישומים פליליים של יוצאי אתיופיה בעבירות הפרת סדר (2024)"
+      en: "Co-initiated the law expunging Ethiopian-Israelis' records for public-order offences (2024)"
     description:
-      he: ב-15 ביולי 2025 אישרה ממשלת ישראל הארכה של תוכנית "דרך חדשה" לקליטת יוצאי
-        אתיופיה בהיקף של כ-214 מיליון ש"ח (כ-58 מיליון דולר), המכסה תחומי חינוך,
-        תרבות, רווחה, תעסוקה, ביטחון ובריאות. לפי הדיווח, ח"כ משה סולומון, בעצמו
-        יוצא אתיופיה, הוביל את קידום התוכנית לצד משרד ראש הממשלה ושר האוצר.
-      en: On 15 July 2025 the Israeli government approved an extension of the "New
-        Way" plan for the integration of Ethiopian immigrants, worth roughly NIS
-        214 million (about $58 million), covering education, culture, welfare,
-        employment, security and health. According to reporting, MK Moshe
-        Solomon, himself an Ethiopian immigrant, led the effort to advance the
-        plan alongside the Prime Minister's Office and the Finance Minister.
-    date: 2025-07-15
+      he: "ב-16 ביולי 2024 אישרה הכנסת בקריאה שלישית חוק למחיקה אוטומטית של רישומים פליליים ומשטרתיים של יוצאי אתיופיה בעבירות הפרת הסדר הציבורי שבוצעו עד סוף 2021, על רקע דוחות ועדת פלמור ומבקר המדינה על שיטור יתר. הצעת החוק הוגשה על ידי חברי הכנסת צגה מלקו, פנינה תמנו-שטה, משה סולומון ואברהם בצלאל."
+      en: "On 16 July 2024 the Knesset passed in its third reading a law automatically expunging criminal and police records of Ethiopian-Israelis for public-order offences committed up to the end of 2021, against the background of the Palmor Committee and State Comptroller reports on over-policing. The bill was submitted by MKs Tzega Melaku, Pnina Tamano-Shata, Moshe Solomon and Avraham Betzalel."
+    date: "2024-07-16"
     sources:
-      - url: https://www.jns.org/israeli-govt-oks-58m-plan-to-advance-ethiopian-jews/
-        title: Israeli gov't OKs $58m plan to advance Ethiopian Jews
-        publisher: JNS (Jewish News Syndicate)
-      - url: https://www.jns.org/feature/israeli-elections-2026-meet-the-parliament-mk-moshe-solomon
+      - url: "https://www.ynet.co.il/news/article/h11191nnur"
+        title: "עקב שיטור יתר: יימחק רישום פלילי בעבירות הפרת סדר ליוצאי אתיופיה"
+        publisher: "ynet"
+      - url: "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%A1%D7%95%D7%9C%D7%95%D7%9E%D7%95%D7%9F"
+        title: "משה סולומון"
+        publisher: "Wikipedia (Hebrew)"
+  - kind: positive
+    category: achievement
+    title:
+      he: "קידום הארכת תוכנית \"דרך חדשה\" לקליטת יוצאי אתיופיה"
+      en: "Helped advance the extension of the \"New Way\" plan for the integration of Ethiopian-Israelis"
+    description:
+      he: "ב-15 ביולי 2025 אישרה ממשלת ישראל הארכה בשנתיים של תוכנית \"דרך חדשה\" לקליטת יוצאי אתיופיה בהיקף של כ-214 מיליון ש\"ח, בתחומי חינוך, תרבות, רווחה, תעסוקה, ביטחון ובריאות. לפי הדיווח, את המהלך הובילו משרד ראש הממשלה ושר האוצר בצלאל סמוטריץ' לצד סולומון, שאמר כי הקהילה האתיופית היא \"חלק משמעותי משליחותי בכנסת\"."
+      en: "On 15 July 2025 the Israeli government approved a two-year extension of the \"New Way\" plan for the integration of Ethiopian immigrants, worth about NIS 214 million, covering education, culture, welfare, employment, security and health. According to the report, the move was led by the Prime Minister's Office and Finance Minister Bezalel Smotrich alongside Solomon, who said the Ethiopian community was \"a significant part of my mission in the Knesset\"."
+    date: "2025-07-15"
+    sources:
+      - url: "https://www.jns.org/israeli-govt-oks-58m-plan-to-advance-ethiopian-jews/"
+        title: "Israeli gov't OKs $58m plan to advance Ethiopian Jews"
+        publisher: "JNS"
+      - url: "https://www.jns.org/feature/israeli-elections-2026-meet-the-parliament-mk-moshe-solomon"
         title: "Israeli elections 2026: Meet the parliament—MK Moshe Solomon"
-        publisher: JNS (Jewish News Syndicate)
+        publisher: "JNS"
+  - kind: neutral
+    category: role
+    date: "2026-02-24"
+    title:
+      he: "סגן יושב-ראש הכנסת (אוקטובר 2023 – פברואר 2026)"
+      en: "Deputy Speaker of the Knesset (October 2023 – February 2026)"
+    description:
+      he: "לפי רישומי הכנסת כיהן סולומון כסגן יושב-ראש הכנסת מ-23 באוקטובר 2023 עד 24 בפברואר 2026, וכיום הוא רשום כחבר הכנסת בסיעת הציונות הדתית ללא תפקיד נוסף."
+      en: "Knesset records list Solomon as a Deputy Speaker of the Knesset from 23 October 2023 until 24 February 2026; he is currently recorded as a member of the Knesset in the Religious Zionism faction with no additional office."
+    sources:
+      - url: "https://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_PersonToPosition?$filter=PersonID%20eq%2030852%20and%20KnessetNum%20eq%2025"
+        title: "KNS_PersonToPosition — positions of PersonID 30852 in the 25th Knesset (Knesset OData)"
+        publisher: "The Knesset (OData)"
+      - url: "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%A1%D7%95%D7%9C%D7%95%D7%9E%D7%95%D7%9F"
+        title: "משה סולומון"
+        publisher: "Wikipedia (Hebrew)"
   - kind: negative
     category: controversy
     status: settled
     title:
-      he: הודח מתפקידיו בוועדות הכנסת לאחר שהצביע נגד חוק לימוד התורה
-      en: Removed from Knesset committee roles after voting against the Torah Study
-        Basic Law
+      he: "הודח מתפקידיו בוועדות הכנסת לאחר שהצביע נגד חוק יסוד: לימוד תורה"
+      en: "Removed from Knesset committee roles after voting against the Torah Study Basic Law"
     description:
-      he: ביוני 2026 הצביע ח"כ משה סולומון נגד הקריאה הטרומית של הצעת חוק יסוד שביקשה
-        לעגן את לימוד התורה כערך יסוד, בניגוד לעמדת סיעתו; הצעת החוק עברה ברוב
-        של 56 מול 43. סולומון נימק את הצבעתו בעמדתו בדבר שילוב לימוד תורה ושירות
-        צבאי. בעקבות ההצבעה הודיע יו"ר הציונות הדתית בצלאל סמוטריץ' על הדחתו
-        מתפקידיו בוועדות הכנסת מטעם הסיעה. מדובר בצעד משמעתי מפלגתי פנימי ולא
-        בהליך פלילי או משפטי.
-      en: In June 2026, MK Moshe Solomon voted against the preliminary reading of a
-        Basic Law bill seeking to enshrine Torah study as a foundational value,
-        against his faction's position; the bill passed 56-43. Solomon cited his
-        views on the integration of Torah study and military service. Following
-        the vote, Religious Zionism leader Bezalel Smotrich announced he was
-        removing Solomon from his roles on Knesset committees on behalf of the
-        faction. This was an internal party disciplinary measure, not a criminal
-        or legal proceeding.
-    date: 2026-06-10
+      he: "ב-10 ביוני 2026 הצביע סולומון נגד הקריאה הטרומית של הצעת חוק יסוד: לימוד תורה, בניגוד לעמדת סיעתו; ההצעה עברה ברוב של 56 מול 43. סולומון אמר כי אינו יכול \"להביט בעיני המשפחות השכולות\" מהציבור הדתי-לאומי ולתמוך בחוק שלדבריו קובע שאין צורך לשלב תורה ושירות צבאי. בעקבות זאת הודיע יו\"ר הציונות הדתית בצלאל סמוטריץ' על הדחתו מכל תפקידיו בוועדות הכנסת מטעם הסיעה — צעד משמעתי מפלגתי ולא הליך משפטי. ב-13 ביולי 2026, בקריאה השנייה והשלישית, הצביע סולומון בעד החוק, ואמר: \"אני לא משנה את העקרונות שלי, החוק הוא שהשתנה\"."
+      en: "On 10 June 2026 Solomon voted against the preliminary reading of the Basic Law: Torah Study bill, against his faction's position; the bill passed 56-43. Solomon said he could not \"look into the eyes of bereaved families\" from the religious-Zionist community and back a law that in his words said there was no need to combine Torah study with military service. Religious Zionism chair Bezalel Smotrich then announced his removal from all his committee roles on behalf of the faction — a party disciplinary step, not a legal proceeding. On 13 July 2026, in the second and third readings, Solomon voted in favour of the law, saying: \"I am not changing my principles; it is the law that has changed.\""
+    date: "2026-06-10"
     sources:
-      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-898980
-        title: Knesset advances bill to enshrine Torah study into Basic Law, supporting
-          haredi draft evaders
-        publisher: The Jerusalem Post
-      - url: https://www.ynetnews.com/article/rjnsejvbze
-        title: Basic law enshrining Torah study as 'fundamental value' passes
-          preliminary reading
-        publisher: Ynetnews
+      - url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-898980"
+        title: "Knesset advances bill to enshrine Torah study into Basic Law, supporting haredi draft evaders"
+        publisher: "The Jerusalem Post"
+      - url: "https://www.ynetnews.com/article/rjnsejvbze"
+        title: "Basic law enshrining Torah study as 'fundamental value' passes preliminary reading"
+        publisher: "Ynetnews"
+      - url: "https://www.srugim.co.il/101006192-%D7%94%D7%97%D7%9B-%D7%9E%D7%94%D7%A6%D7%99%D7%95%D7%A0%D7%95%D7%AA-%D7%94%D7%93%D7%AA%D7%99%D7%AA-%D7%9E%D7%AA%D7%A7%D7%A4%D7%9C-%D7%99%D7%9B%D7%95%D7%9C%D7%AA%D7%99-%D7%9C%D7%A9%D7%AA%D7%95%D7%A7"
+        title: "הח\"כ מהציונות הדתית מתקפל: \"יכולתי לשתוק\""
+        publisher: "Srugim"
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVoteResult?$filter=VoteID%20eq%2046248%20and%20MkId%20eq%2030852"
+        title: "KNS_PlenumVoteResult — MK 30852 on vote 46248, third reading of Basic Law: Torah Study (Knesset OData)"
+        publisher: "The Knesset (OData)"
+  - kind: neutral
+    category: news
+    date: "2026-07-16"
+    title:
+      he: "הודיע כי לא יתמודד בפריימריז הציונות הדתית לקראת בחירות 2026"
+      en: "Announced he would not run in the Religious Zionism primary ahead of the 2026 election"
+    description:
+      he: "ב-16 ביולי 2026 הודיע סולומון כי לא יתמודד בבחירות המקדימות של הציונות הדתית, בנימוק של מחלוקות עקרוניות עם הנהגת המפלגה בסוגיות תורה, שירות צבאי ותעסוקה. \"הפוליטיקה היא כלי, לא מטרה\", אמר. ברשימת הציונות הדתית לכנסת ה-26 הוא אינו מופיע."
+      en: "On 16 July 2026 Solomon announced he would not run in the Religious Zionism primary, citing fundamental disagreements with the party leadership on Torah study, military service and employment. \"Politics is a tool, not a goal,\" he said. He does not appear on the Religious Zionism list for the 26th Knesset."
+    sources:
+      - url: "https://www.srugim.co.il/101006477-%D7%90%D7%97%D7%A8%D7%99-%D7%90%D7%95%D7%A4%D7%99%D7%A8-%D7%A1%D7%95%D7%A4%D7%A8-%D7%A4%D7%A8%D7%99%D7%A9%D7%94-%D7%A0%D7%95%D7%A1%D7%A4%D7%AA-%D7%91%D7%9E%D7%A4%D7%9C%D7%92%D7%AA"
+        title: "אחרי אופיר סופר: פרישה נוספת במפלגת הציונות הדתית"
+        publisher: "Srugim"
+      - url: "https://he.wikipedia.org/wiki/%D7%94%D7%91%D7%97%D7%99%D7%A8%D7%95%D7%AA_%D7%9C%D7%9B%D7%A0%D7%A1%D7%AA_%D7%94%D7%A2%D7%A9%D7%A8%D7%99%D7%9D_%D7%95%D7%A9%D7%A9"
+        title: "הבחירות לכנסת העשרים ושש"
+        publisher: "Wikipedia (Hebrew)"
+  - kind: neutral
+    category: news
+    date: "2026-08-02"
+    title:
+      he: "\"עכשיו כולם מבינים שצדקתי\": ביקורת על מדיניות הגיוס"
+      en: "\"Now everyone understands I was right\": criticism over conscription policy"
+    description:
+      he: "ב-2 באוגוסט 2026 מתח סולומון ביקורת על שינוי עמדותיו של ראש הממשלה בנוגע לאכיפת הגיוס על תלמידי ישיבות, ואמר כי ראש הממשלה אומר עתה \"בקולו שמי שלא לומד בישיבה יצטרך להתגייס\" — דברים שלטענתו הוא עצמו אמר פעמים רבות ולא התקבלו בזמן אמת."
+      en: "On 2 August 2026 Solomon criticised the prime minister's shifting positions on enforcing conscription for yeshiva students, saying the prime minister was now saying \"in his own voice that whoever doesn't study in yeshiva will need to enlist\" — things Solomon said he himself had said many times without being heeded at the time."
+    sources:
+      - url: "https://www.srugim.co.il/101007588-%D7%97%D7%9B-%D7%9E%D7%A9%D7%94-%D7%A1%D7%95%D7%9C%D7%95%D7%9E%D7%95%D7%9F-%D7%A2%D7%9B%D7%A9%D7%99%D7%95-%D7%9B%D7%95%D7%9C%D7%9D-%D7%9E%D7%91%D7%99%D7%A0%D7%99%D7%9D-%D7%A9%D7%A6%D7%93%D7%A7%D7%AA%D7%99"
+        title: "ח\"כ משה סולומון: \"עכשיו כולם מבינים שצדקתי\""
+        publisher: "Srugim"

@@ -1,60 +1,152 @@
-# PersonID 30809. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# Galit Distel Atbaryan (PersonID 30809). Factual reporting from reputable
+# public sources, cited per claim. Neutral language; what was reported and what
+# the member said in response. Re-verified 2026-09-18 (every cited URL re-fetched).
 personId: 30809
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: סופרת ומועמדת לפרס ספיר
-      en: Author and Sapir Prize nominee
+      he: "סופרת; ספרה נכלל ברשימה הקצרה של פרס ספיר"
+      en: "Novelist; her book was shortlisted for the Sapir Prize"
     description:
-      he: לפני כניסתה לפוליטיקה הייתה גלית דיסטל אטבריאן סופרת. ספרה השני, 'טווס
-        במדרגות' (2014), היה מועמד לפרס ספיר לשנת 2015.
-      en: Before entering politics, Galit Distel Atbaryan was a novelist. Her second
-        novel, 'Peacock in the Stairwell' (2014), was nominated for the 2015
-        Sapir Prize, one of Israel's leading literary awards.
+      he: "לפני כניסתה לפוליטיקה הייתה גלית דיסטל אטבריאן סופרת ופובליציסטית. ספרה הראשון, \"ואם היו אומרים לך\" (2009), זכה לתמיכת מועצת הפיס לתרבות ולאמנות, וספרה השני, \"טווס בחדר מדרגות\" (2014), נכלל ברשימה הקצרה של המועמדים לפרס ספיר לספרות."
+      en: "Before entering politics, Galit Distel Atbaryan was a novelist and columnist. Her first novel, \"And If They Told You\" (2009), was supported by the Pais Council for Culture and the Arts, and her second, \"Peacock in the Stairwell\" (2014), was shortlisted for the Sapir Prize for literature."
     date: "2015"
     sources:
-      - url: https://en.wikipedia.org/wiki/Galit_Distel-Atbaryan
-        title: Galit Distel-Atbaryan
-        publisher: Wikipedia
+      - url: "https://en.wikipedia.org/wiki/Galit_Distel-Atbaryan"
+        title: "Galit Distel-Atbaryan"
+        publisher: "Wikipedia"
+      - url: "https://he.wikipedia.org/wiki/%D7%92%D7%9C%D7%99%D7%AA_%D7%93%D7%99%D7%A1%D7%98%D7%9C-%D7%90%D7%98%D7%91%D7%A8%D7%99%D7%90%D7%9F"
+        title: "גלית דיסטל-אטבריאן"
+        publisher: "Wikipedia (Hebrew)"
   - kind: positive
     category: achievement
     title:
-      he: כיהנה כשרת ההסברה בממשלת ישראל
-      en: Served as Israel's Minister of Public Diplomacy
+      he: "כיהנה כשרת ההסברה בממשלה ה-37"
+      en: "Served as Minister of Public Diplomacy in the 37th government"
     description:
-      he: דיסטל אטבריאן מונתה לשרת ההסברה בממשלת ישראל בינואר 2023. היא התפטרה מתפקידה
-        ב-12 באוקטובר 2023, בתחילת המלחמה, בנימוק שמשרדה מהווה 'בזבוז של כספי
-        ציבור'.
-      en: Distel Atbaryan was appointed Israel's Minister of Public Diplomacy in
-        January 2023. She resigned from the post on 12 October 2023, at the
-        outset of the war, stating that her ministry was a 'waste of public
-        funds.'
-    date: 2023-01
+      he: "דיסטל אטבריאן מונתה בדצמבר 2022 לשרה במשרד ראש הממשלה, וב-17 בינואר 2023 קיבלה את משרד ההסברה. ב-12 באוקטובר 2023, בתחילת המלחמה, הודיעה על התפטרותה מהתפקיד בנימוק שכל יום נוסף של פעילות המשרד הוא \"בזבוז של כספי ציבור\". כעשרה ימים לאחר מכן החליטה הממשלה לסגור את המשרד ולהעביר את תקציבו, 23.8 מיליון ש\"ח, למנהלת השיקום של יישובי עוטף עזה."
+      en: "Distel Atbaryan was appointed a minister in the Prime Minister's Office in December 2022 and took over the Public Diplomacy Ministry on 17 January 2023. On 12 October 2023, at the outset of the war, she announced her resignation from the post, saying that every further day of the ministry's operation was \"a waste of public funds\". About ten days later the government decided to close the ministry and transfer its NIS 23.8 million budget to the rehabilitation authority for the Gaza-border communities."
+    date: "2023-01-17"
     sources:
-      - url: https://en.wikipedia.org/wiki/Galit_Distel-Atbaryan
-        title: Galit Distel-Atbaryan
-        publisher: Wikipedia
-      - url: https://www.timesofisrael.com/public-diplomacy-minister-quits-post-amid-war-citing-waste-of-public-funds/
-        title: Public diplomacy minister quits post amid war, citing 'waste of public
-          funds'
-        publisher: The Times of Israel
+      - url: "https://www.timesofisrael.com/public-diplomacy-minister-quits-post-amid-war-citing-waste-of-public-funds/"
+        title: "Public diplomacy minister quits post amid war, citing 'waste of public funds'"
+        publisher: "The Times of Israel"
+      - url: "https://www.ynet.co.il/economy/article/4tnuwgyhr"
+        title: "אחרי התפטרות דיסטל: משרד ההסברה נסגר ותקציבו הועבר למנהלת העוטף"
+        publisher: "ynet"
+      - url: "https://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_PersonToPosition?$filter=PersonID%20eq%2030809%20and%20KnessetNum%20eq%2025"
+        title: "KNS_PersonToPosition — positions of PersonID 30809 in the 25th Knesset (Knesset OData)"
+        publisher: "The Knesset (OData)"
   - kind: positive
     category: achievement
     title:
-      he: חברת כנסת מטעם הליכוד ושירות בחיל האוויר
-      en: Likud Knesset member and Air Force veteran
+      he: "חברת כנסת מטעם הליכוד (הכנסת ה-24 וה-25)"
+      en: "Likud member of the 24th and 25th Knessets"
     description:
-      he: דיסטל אטבריאן נבחרה לכנסת מטעם מפלגת הליכוד (לכנסת ה-24 וה-25). היא ילידת
-        ירושלים (1971) למשפחת עולים מאיראן, שירתה בחיל האוויר הישראלי ובעלת תואר
-        שני בפילוסופיה מהאוניברסיטה העברית.
-      en: Distel Atbaryan was elected to the Knesset for the Likud party (24th and
-        25th Knessets). Born in Jerusalem in 1971 to an Iranian Jewish immigrant
-        family, she served in the Israeli Air Force and holds an MA in
-        Philosophy from the Hebrew University of Jerusalem.
+      he: "דיסטל אטבריאן, ילידת ירושלים (1971) למשפחת עולים מאיראן, שירתה בחיל האוויר ובעלת תואר בפילוסופיה מאוניברסיטת תל אביב. בפברואר 2021 שריין אותה בנימין נתניהו במקום העשירי ברשימת הליכוד לכנסת ה-24, ובפריימריז הליכוד ב-2022 נבחרה למקום ה-20. לפי רישומי הכנסת התפטרה מהכנסת במרץ 2023 לפי החוק הנורבגי ושבה אליה ב-14 באוקטובר 2023 עם סיום כהונתה כשרה."
+      en: "Distel Atbaryan, born in Jerusalem (1971) to a family of immigrants from Iran, served in the Israeli Air Force and holds a degree in philosophy from Tel Aviv University. In February 2021 Benjamin Netanyahu reserved the tenth slot on the Likud list for her for the 24th Knesset, and in the 2022 Likud primary she won the 20th slot. Knesset records show she resigned her seat in March 2023 under the Norwegian Law and returned on 14 October 2023 when her ministerial term ended."
+    date: "2021-02-04"
     sources:
-      - url: https://en.wikipedia.org/wiki/Galit_Distel-Atbaryan
-        title: Galit Distel-Atbaryan
-        publisher: Wikipedia
+      - url: "https://en.wikipedia.org/wiki/Galit_Distel-Atbaryan"
+        title: "Galit Distel-Atbaryan"
+        publisher: "Wikipedia"
+      - url: "https://www.timesofisrael.com/netanyahu-recruits-firebrand-right-wing-novelist-to-bolster-likud-party-slate/"
+        title: "Netanyahu recruits firebrand right-wing novelist to bolster Likud party slate"
+        publisher: "The Times of Israel"
+      - url: "https://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_PersonToPosition?$filter=PersonID%20eq%2030809%20and%20KnessetNum%20eq%2025"
+        title: "KNS_PersonToPosition — positions of PersonID 30809 in the 25th Knesset (Knesset OData)"
+        publisher: "The Knesset (OData)"
+  - kind: neutral
+    category: role
+    date: "2025-12-08"
+    title:
+      he: "יושבת ראש הוועדה המיוחדת לדיון בהצעת חוק התקשורת"
+      en: "Chair of the Special Committee on the Communications Bill"
+    description:
+      he: "בסוף נובמבר 2025 הקימה הקואליציה ועדה מיוחדת לקידום הצעת חוק התקשורת של השר שלמה קרעי, ודיסטל אטבריאן מונתה ליושבת הראש שלה; הישיבה הראשונה התקיימה ב-8 בדצמבר 2025. קודם לכן, ביוני 2025, עמדה בראש ועדת המשנה של ועדת החינוך למחשבת ישראל במערכת החינוך."
+      en: "In late November 2025 the coalition set up a special committee to advance Communications Minister Shlomo Karhi's media bill, with Distel Atbaryan appointed as its chair; its first session was held on 8 December 2025. Earlier, in June 2025, she chaired the Education Committee's subcommittee on Jewish thought in the education system."
+    sources:
+      - url: "https://www.timesofisrael.com/panel-chair-assails-press-as-special-knesset-committee-takes-up-media-reform-bill/"
+        title: "Panel chair assails press as special Knesset committee takes up media oversight bill"
+        publisher: "The Times of Israel"
+      - url: "https://www.timesofisrael.com/knesset-to-weigh-creating-special-panel-to-advance-stormy-media-regulation-bill/"
+        title: "Coalition prepares to set up special panel to advance stormy media regulation bill"
+        publisher: "The Times of Israel"
+      - url: "https://www.jpost.com/israel-news/article-857106"
+        title: "'Remove the reformist': Likud MK hints in debate that Reform Jews are not really Jewish"
+        publisher: "The Jerusalem Post"
+  - kind: negative
+    category: controversy
+    title:
+      he: "ביקורת על תפקוד משרד ההסברה בימי המלחמה הראשונים ועל התבטאויות בתקופת כהונתה כשרה"
+      en: "Criticism of the Public Diplomacy Ministry's performance in the first days of the war and of remarks made during her ministerial term"
+    description:
+      he: "בפברואר 2023 אמרה דיסטל אטבריאן כי המפגינים נגד הרפורמה המשפטית פועלים \"שלא במודע במימון איראני או גרמני\"; שגריר גרמניה שטפן זייברט הגיב כי \"מאכזב\" שבחרה להזכיר את גרמניה, ידידה ושותפה דמוקרטית של ישראל, לצד איראן הטוטליטרית. באוקטובר 2023 דווח כי בשלושת ימי המלחמה הראשונים לא התראיינה השרה לרשתות טלוויזיה זרות וכי לא נכללה בפורום המסבירים שהקים ראש הממשלה; לשכתה מסרה כי המשרד הקים חמ\"ל הסברה ותכניו הגיעו לעשרות מיליוני צפיות. בנובמבר 2023 אמרה כי לשכת ראש הממשלה אסרה עליה להתראיין וכי יש בה \"כעס בוער\" על נתניהו, ובדצמבר 2023 אמרה כי גם היא \"יצרה שסע ופילוג\" שתרם לחולשה שקדמה לטבח."
+      en: "In February 2023 Distel Atbaryan said protesters against the judicial overhaul were \"acting unwittingly under Iranian or German funding\"; German ambassador Steffen Seibert responded that it was \"disappointing\" she chose to mention Germany, a friend and democratic partner of Israel, alongside totalitarian Iran. In October 2023 it was reported that in the first three days of the war the minister gave no interviews to foreign television networks and was not included in the spokespersons' forum set up by the prime minister; her office said the ministry had set up a public-diplomacy war room whose content reached tens of millions of views. In November 2023 she said the Prime Minister's Office had barred her from giving interviews and that she felt \"burning anger\" toward Netanyahu, and in December 2023 she said she too had \"created a rift and division\" that contributed to the weakness preceding the massacre."
+    date: "2023-10-10"
+    sources:
+      - url: "https://www.ynet.co.il/news/article/rklkkzm11p"
+        title: "אפס ראיונות לתקשורת הזרה, ופורום מסבירנים בלעדיה: לאן נעלמה דיסטל?"
+        publisher: "ynet"
+      - url: "https://www.haaretz.com/israel-news/2023-02-09/ty-article/.premium/german-envoy-disappointed-after-israeli-minister-says-iran-germany-fund-protests/00000186-3713-d80f-abff-7f9b0f4a0000"
+        title: "German Envoy 'Disappointed' With Israeli Minister's Claim That Iran, Germany Fund Anti-government Protests"
+        publisher: "Haaretz"
+      - url: "https://www.timesofisrael.com/former-minister-and-netanyahu-loyalist-says-she-has-burning-anger-against-pm/"
+        title: "Former minister and Netanyahu loyalist says she has 'burning anger' against PM"
+        publisher: "The Times of Israel"
+      - url: "https://he.wikipedia.org/wiki/%D7%92%D7%9C%D7%99%D7%AA_%D7%93%D7%99%D7%A1%D7%98%D7%9C-%D7%90%D7%98%D7%91%D7%A8%D7%99%D7%90%D7%9F"
+        title: "גלית דיסטל-אטבריאן"
+        publisher: "Wikipedia (Hebrew)"
+  - kind: negative
+    category: controversy
+    title:
+      he: "הוציאה את ח\"כ גלעד קריב מדיון ועדת משנה באמירה \"תוציאו את הרפורמי\""
+      en: "Removed MK Gilad Kariv from a subcommittee hearing, saying \"remove the Reformist\""
+    description:
+      he: "ב-9 ביוני 2025, בדיון של ועדת המשנה למחשבת ישראל במערכת החינוך שבראשותה, הורתה דיסטל אטבריאן להוציא את ח\"כ גלעד קריב, רב רפורמי, לאחר שדיבר בעד מתן אפשרות לבנות להניח תפילין בבתי ספר ממלכתיים, ואמרה: \"תוציאו את הרפורמי, היהודים כאן רוצים להמשיך\". במליאה אמרה כי תמנע \"השתלטות של ארגונים רפורמיים על מערכת החינוך\"; קריב הגיב כי דבריה משקפים \"יהדות קנאית, מיזוגינית ומסתגרת\", והתנועה הרפורמית כינתה את הדברים \"פוגעניים ואכזריים\"."
+      en: "On 9 June 2025, at a hearing of the subcommittee on Jewish thought in the education system that she chairs, Distel Atbaryan ordered the removal of MK Gilad Kariv, a Reform rabbi, after he spoke in favour of letting girls put on tefillin in state schools, saying: \"Remove the Reformist, the Jews here want to continue.\" In the plenum she said she would prevent \"a takeover of the education system by Reform organisations\"; Kariv responded that her words reflected \"a zealous, misogynistic, isolationist Judaism\", and the Reform movement called the remarks \"offensive and cruel\"."
+    date: "2025-06-09"
+    sources:
+      - url: "https://www.jpost.com/israel-news/article-857106"
+        title: "'Remove the reformist': Likud MK hints in debate that Reform Jews are not really Jewish"
+        publisher: "The Jerusalem Post"
+      - url: "https://www.timesofisrael.com/the-jews-here-want-to-continue-likud-mk-kicks-reform-rabbi-out-of-knesset-hearing/"
+        title: "'The Jews here want to continue': Likud MK kicks Reform rabbi out of Knesset hearing"
+        publisher: "The Times of Israel"
+  - kind: negative
+    category: controversy
+    title:
+      he: "היועצת המשפטית לכנסת מתחה ביקורת על הליך החקיקה בוועדה שבראשותה וקראה להעביר את הדיונים לוועדת הכלכלה"
+      en: "The Knesset legal adviser criticised the legislative process in her committee and urged moving the bill to the Economic Affairs Committee"
+    description:
+      he: "ב-15 באפריל 2026 קבעה היועצת המשפטית לכנסת, שגית אפיק, כי בדיוני הוועדה המיוחדת לחוק התקשורת \"אף התנאים הבסיסיים של הליך חקיקה תקין אינם מתקיימים\", וקראה להעביר את הדיונים לוועדת הכלכלה. דיסטל אטבריאן דחתה את ההמלצה: \"המלצת היועצת המשפטית אינה מקובלת עליי, אמשיך להוביל את הוועדה\", וטענה כי הייעוץ המשפטי מעכב את הדיונים משום שדחתה את המלצותיו."
+      en: "On 15 April 2026 the Knesset's legal adviser, Sagit Afik, said that in the special committee's deliberations on the communications bill \"even the basic conditions of a proper legislative process are not being met\", and urged that the bill be moved to the Economic Affairs Committee. Distel Atbaryan rejected the recommendation: \"The legal adviser's recommendation is not acceptable to me. I will continue to lead this committee\", and accused the legal staff of obstructing the proceedings because she had rejected their advice."
+    date: "2026-04-15"
+    sources:
+      - url: "https://www.timesofisrael.com/knesset-legal-adviser-blasts-media-bills-legislative-process-urges-committee-change/"
+        title: "Knesset legal adviser blasts media bill's legislative process, urges committee change"
+        publisher: "The Times of Israel"
+      - url: "https://www.timesofisrael.com/likud-mk-distel-atbaryan-says-she-wont-seek-reelection-after-knesset-ends-its-term/"
+        title: "Likud MK Distel Atbaryan says she won't seek reelection"
+        publisher: "The Times of Israel"
+  - kind: neutral
+    category: news
+    date: "2026-05-25"
+    title:
+      he: "הודיעה כי לא תתמודד בפריימריז ולא תרוץ לכנסת ה-26"
+      en: "Announced she would not run in the Likud primary or for the 26th Knesset"
+    description:
+      he: "ב-25 במאי 2026 הודיעה דיסטל אטבריאן כי לא תתמודד בפריימריז הליכוד ותפרוש מהכנסת בתום כהונתה, ושיבחה את השר שלמה קרעי. בדיווחים צוינו יחסיה המתוחים עם ראש הממשלה ולשכתו. ברשימת הליכוד שהוגשה לוועדת הבחירות ב-8 בספטמבר 2026 היא אינה מופיעה."
+      en: "On 25 May 2026 Distel Atbaryan announced she would not run in the Likud primary and would leave the Knesset at the end of its term, praising Minister Shlomo Karhi. Reports noted her strained relations with the prime minister and his office. She does not appear on the Likud list filed with the Central Elections Committee on 8 September 2026."
+    sources:
+      - url: "https://www.timesofisrael.com/likud-mk-distel-atbaryan-says-she-wont-seek-reelection-after-knesset-ends-its-term/"
+        title: "Likud MK Distel Atbaryan says she won't seek reelection"
+        publisher: "The Times of Israel"
+      - url: "https://www.ynet.co.il/news/article/rkjrbs11lfe"
+        title: "גלית דיסטל אטבריאן הודיעה על פרישה: \"לא אתמודד בפריימריז הקרובים\""
+        publisher: "ynet"
+      - url: "https://www.jns.org/news/israel-news/likud-files-26th-knesset-election-slate"
+        title: "Likud files 26th Knesset election slate"
+        publisher: "JNS"

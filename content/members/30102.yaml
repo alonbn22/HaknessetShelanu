@@ -1,7 +1,8 @@
 # PersonID 30102. Auto-researched from reputable public sources and
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# legal status marked. Re-verified 2026-09-18.
 personId: 30102
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -14,7 +15,7 @@ claims:
       en: In 2021 Meirav Ben-Ari was appointed chair of the Knesset's National
         Security Committee, becoming the first woman to be appointed to that
         position.
-    date: "2021"
+    date: 2021-08-11
     sources:
       - url: https://en.wikipedia.org/wiki/Meirav_Ben-Ari
         title: Meirav Ben-Ari
@@ -55,3 +56,99 @@ claims:
       - url: https://www.timesofisrael.com/lawmaker-gives-birth-to-baby-girl-conceived-with-gay-friend/
         title: MK gives birth to baby girl conceived with gay friend
         publisher: The Times of Israel
+  - kind: positive
+    category: achievement
+    title:
+      he: חוק חובת דיווח לכנסת על הטרדות מיניות בכוחות הביטחון (2025)
+      en: Law requiring the security forces to report sexual harassment to the Knesset (2025)
+    description:
+      he: ב-10 בדצמבר 2025 אישרה מליאת הכנסת בקריאה שנייה ושלישית את הצעת החוק של בן
+        ארי המחייבת את צה"ל, משטרת ישראל ושירות בתי הסוהר לדווח אחת לשנה
+        לוועדות הכנסת על מספר ההטרדות המיניות בשורותיהם ועל דרכי הטיפול בהן.
+      en: On 10 December 2025 the Knesset plenum passed, in its second and third
+        readings, Ben-Ari's bill requiring the IDF, the Israel Police and the
+        Prison Service to report annually to Knesset committees on the number
+        of sexual-harassment cases in their ranks and how they were handled.
+    date: 2025-12-10
+    sources:
+      - url: https://www.israelhayom.co.il/news/politics/article/19436791
+        title: "בלי הסתרות: צה\"ל והמשטרה יחוייבו לדווח על הטרדות מיניות לכנסת"
+        publisher: Israel Hayom
+      - url: https://he.wikipedia.org/wiki/%D7%9E%D7%99%D7%A8%D7%91_%D7%91%D7%9F_%D7%90%D7%A8%D7%99
+        title: מירב בן ארי
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: award
+    title:
+      he: אות אבירת איכות השלטון לשנת 2025
+      en: Knight of Quality Government award for 2025
+    description:
+      he: התנועה לאיכות השלטון העניקה לבן ארי את אות אבירת איכות השלטון לשנת 2025
+        בקטגוריית הרשות המחוקקת, "בהוקרה על פעילותה הפרלמנטרית למען אזרחי
+        ישראל" ועל ביקורתה על מהלכי חקיקה של הממשלה. לפי ויקיפדיה העברית האות
+        הוענק ביוני 2026.
+      en: The Movement for Quality Government in Israel awarded Ben-Ari its Knight of
+        Quality Government award for 2025 in the legislative-branch category,
+        "in recognition of her parliamentary work for Israel's citizens" and
+        her criticism of government legislative moves. According to Hebrew
+        Wikipedia the award was presented in June 2026.
+    date: "2026-06"
+    sources:
+      - url: https://mqg.org.il/award_year/2025/
+        title: אבירות ואבירי איכות השלטון לשנת 2025
+        publisher: Movement for Quality Government in Israel
+      - url: https://he.wikipedia.org/wiki/%D7%9E%D7%99%D7%A8%D7%91_%D7%91%D7%9F_%D7%90%D7%A8%D7%99
+        title: מירב בן ארי
+        publisher: Wikipedia (Hebrew)
+  - kind: negative
+    category: controversy
+    title:
+      he: נטלה אחריות על הצבעה בטעות של האופוזיציה בעד העברת כ-800 מיליון ש"ח למוסדות חרדיים
+      en: Took responsibility for the opposition mistakenly voting for a NIS 800 million allocation to Haredi institutions
+    description:
+      he: "בהצבעות על תקציב 2026 בלילה שבין 29 ל-30 במרץ 2026 הצביעו חברי האופוזיציה בטעות בעד הסתייגות שהעבירה כ-800 מיליון ש\"ח לתוכניות ולישיבות חרדיות, שעברה ברוב של 107 מול 4. בן ארי, מרכזת האופוזיציה, נטלה אחריות והתנצלה בפני עמיתיה: \"הפעם לא הייתי ערנית וטעיתי\". היועצת המשפטית לממשלה הקפיאה את ההעברות."
+      en: "During the votes on the 2026 budget on the night of 29–30 March 2026, opposition MKs mistakenly voted for a reservation transferring about NIS 800 million to Haredi programmes and yeshivas, which passed 107-4. Ben-Ari, the opposition coordinator, took responsibility and apologised to colleagues: \"This time I was not vigilant and I was wrong.\" The Attorney General froze the transfers."
+    date: 2026-03-30
+    sources:
+      - url: https://www.timesofisrael.com/opposition-mks-voted-to-allocate-nis-800-million-for-haredi-schools-how-did-it-happen/
+        title: Opposition MKs voted to allocate NIS 800 million for Haredi schools. How did that happen?
+        publisher: The Times of Israel
+      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-891704
+        title: Opposition mistakenly approves millions to haredi institutions, A-G halts transfer
+        publisher: The Jerusalem Post
+  - kind: neutral
+    category: role
+    date: 2023-10-16
+    title:
+      he: יושבת ראש סיעת יש עתיד ומרכזת האופוזיציה
+      en: Chair of the Yesh Atid faction and opposition coordinator
+    description:
+      he: לפי רישומי הכנסת מכהנת בן ארי כיושבת ראש סיעת יש עתיד מ-16 באוקטובר 2023,
+        והיא משמשת גם כמרכזת האופוזיציה בכנסת ה-25.
+      en: Knesset records list Ben-Ari as chair of the Yesh Atid faction from 16
+        October 2023; she also serves as the opposition coordinator in the
+        25th Knesset.
+    sources:
+      - url: "https://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_PersonToPosition?$filter=PersonID%20eq%2030102%20and%20IsCurrent%20eq%20true"
+        title: "KNS_PersonToPosition — current positions of PersonID 30102 (Knesset OData)"
+        publisher: The Knesset (OData)
+      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-891704
+        title: Opposition mistakenly approves millions to haredi institutions, A-G halts transfer
+        publisher: The Jerusalem Post
+  - kind: neutral
+    category: news
+    date: 2026-09-05
+    title:
+      he: מקום 4 ברשימת "ביחד" (בנט–לפיד) לבחירות 2026
+      en: Slot 4 on the "Beyachad" (Bennett–Lapid) list for the 2026 election
+    description:
+      he: ב-5 בספטמבר 2026 הציג יאיר לפיד את רשימת יש עתיד לקראת הריצה המשותפת עם
+        נפתלי בנט; בן ארי שובצה במקום השני ברשימת יש עתיד ובמקום הרביעי ברשימה
+        המשותפת "ביחד" לכנסת ה-26.
+      en: On 5 September 2026 Yair Lapid unveiled the Yesh Atid slate for the joint
+        run with Naftali Bennett; Ben-Ari was placed second on the Yesh Atid
+        slate and fourth on the joint "Beyachad" list for the 26th Knesset.
+    sources:
+      - url: https://www.ynetnews.com/article/hkfdvtkogx
+        title: Lapid unveils Yesh Atid election slate after wave of departures ahead of joint run with Bennett
+        publisher: Ynetnews

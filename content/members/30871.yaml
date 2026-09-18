@@ -1,69 +1,101 @@
-# PersonID 30871. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# Shelly Tal Meron (PersonID 30871). Factual reporting from reputable public
+# sources, cited per claim. Neutral language; disciplinary status marked.
+# Re-verified 2026-09-18 (every cited URL re-fetched; the Knesset Ethics
+# Committee decision cited from the Knesset's own PDF).
 personId: 30871
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: חברת הכנסת ה-25 מטעם יש עתיד
-      en: Member of the 25th Knesset for Yesh Atid
+      he: "חברת הכנסת ה-25 מטעם יש עתיד"
+      en: "Member of the 25th Knesset for Yesh Atid"
     description:
-      he: שלי טל מירון נכנסה לכנסת ב-1 בפברואר 2023 כחברת הכנסת ה-25 מטעם מפלגת יש
-        עתיד, לאחר התפטרותו של יואל רזבוזוב. לפני כן שירתה כשש שנים בחיל האוויר
-        הישראלי בתפקידי דוברות, הדרכת טיס וקצונה, ולאחר מכן עבדה בחברת
-        טכנולוגיה.
-      en: Shelly Tal Meron entered the Knesset on 1 February 2023 as a member of the
-        25th Knesset for the Yesh Atid party, following the resignation of Yoel
-        Razvozov. She previously served six years in the Israeli Air Force in
-        roles including spokesperson, flight instructor and officer, and later
-        worked for a technology company.
-    date: 2023-02-01
+      he: "שלי טל מירון, ילידת ירושלים (1979), נכנסה לכנסת ב-1 בפברואר 2023 מטעם יש עתיד לאחר התפטרותו של יואל רזבוזוב, לאחר שהוצבה במקום ה-25 ברשימה. לפני כן שירתה כשש שנים בחיל האוויר, בין היתר כקצינת מבצעים וכדוברת חיל האוויר, והשתחררה בדרגת סרן; לאחר מכן עבדה כעשור בפיתוח עסקי בחברת הייטק. היא בעלת תואר ראשון בתקשורת ובמדע המדינה מאוניברסיטת תל אביב."
+      en: "Shelly Tal Meron, born in Jerusalem (1979), entered the Knesset on 1 February 2023 for Yesh Atid after the resignation of Yoel Razvozov, having been placed 25th on the list. She previously served about six years in the Israeli Air Force, including as an operations officer and as the Air Force spokesperson, leaving with the rank of captain, and then worked for about a decade in business development at a technology company. She holds a BA in communications and political science from Tel Aviv University."
+    date: "2023-02-01"
     sources:
-      - url: https://en.wikipedia.org/wiki/Shelly_Tal_Meron
-        title: Shelly Tal Meron
-        publisher: Wikipedia
-      - url: https://www.wikidata.org/wiki/Q116603688
-        title: Shelly Tal Meron (Q116603688)
-        publisher: Wikidata
+      - url: "https://en.wikipedia.org/wiki/Shelly_Tal_Meron"
+        title: "Shelly Tal Meron"
+        publisher: "Wikipedia"
+      - url: "https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%99_%D7%9E%D7%99%D7%A8%D7%95%D7%9F"
+        title: "שלי מירון"
+        publisher: "Wikipedia (Hebrew)"
+      - url: "https://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_PersonToPosition?$filter=PersonID%20eq%2030871%20and%20IsCurrent%20eq%20true"
+        title: "KNS_PersonToPosition — current positions of PersonID 30871 (Knesset OData)"
+        publisher: "The Knesset (OData)"
   - kind: positive
     category: achievement
     title:
-      he: ייסוד והובלת השדולה לנפגעות אלימות מינית במלחמה
-      en: Founded and chairs the Knesset caucus for victims of wartime sexual violence
+      he: "ייסוד והובלת השדולה לנפגעות אלימות מינית במלחמה וקואליציה בינלאומית בנושא"
+      en: "Founded and chairs the caucus for victims of wartime sexual violence and an international coalition on the issue"
     description:
-      he: טל מירון הקימה ועומדת בראש השדולה (הקאוקוס) בכנסת לנפגעות אלימות מינית
-        ומגדרית במלחמת חרבות ברזל. במסגרת זו פעלה להעלאת המודעות הבינלאומית
-        לאלימות המינית באירועי 7 באוקטובר, נסעה לפגוש שרים, ראשי מדינות
-        ועיתונאים, העידה בפרלמנטים זרים ושותפה בייסוד קואליציה בינלאומית בנושא
-        אלימות מגדרית ככלי נשק במלחמה.
-      en: Tal Meron founded and chairs the Knesset caucus for female victims of sexual
-        and gender-based violence in the Swords of Iron War. She has worked to
-        raise international awareness of sexual violence in the 7 October
-        attacks, travelling to meet ministers, heads of state and journalists,
-        testifying before foreign parliaments, and co-founding an international
-        coalition on gender-based violence as a weapon of war.
+      he: "טל מירון הקימה ועומדת בראש השדולה בכנסת לנפגעות אלימות מינית ומגדרית במלחמת חרבות ברזל (יחד עם ח\"כ צגה מלקו מהליכוד). היא פעלה להעלאת המודעות הבינלאומית לאלימות המינית באירועי 7 באוקטובר, התראיינה לתקשורת זרה באירופה, וב-20 במאי 2024 השיקה בכנסת קואליציה בינלאומית של נשים נגד אלימות מגדרית ככלי נשק במלחמה, בהשתתפות נציגות מצרפת, אירלנד, דנמרק, בריטניה ומדינות נוספות."
+      en: "Tal Meron founded and chairs the Knesset caucus for victims of sexual and gender-based violence in the Swords of Iron War (together with Likud MK Tzega Melaku). She has worked to raise international awareness of the sexual violence of 7 October, giving interviews to foreign media in Europe, and on 20 May 2024 launched at the Knesset a global women's coalition against gender-based violence as a weapon of war, with delegates from France, Ireland, Denmark, the UK and other countries."
+    date: "2024-05-20"
     sources:
-      - url: https://www.jns.org/israel-news/israeli-elections-2026-meet-the-parliament-2
+      - url: "https://www.timesofisrael.com/seeking-to-end-silence-around-sexual-violence-in-war-an-mk-raises-her-voice-abroad/"
+        title: "Seeking to end silence around sexual violence in war, an MK raises her voice abroad"
+        publisher: "The Times of Israel"
+      - url: "https://www.jns.org/israel-news/israeli-elections-2026-meet-the-parliament-2"
         title: "Israeli elections 2026: Meet the parliament—MK Shelly Tal Meron"
-        publisher: JNS
+        publisher: "JNS"
   - kind: positive
     category: achievement
     title:
-      he: השקת שדולה בין-מפלגתית למען שחרור החטופים
-      en: Co-launched a cross-party Knesset lobby for the release of hostages
+      he: "השקת שדולה בין-מפלגתית למען שחרור החטופים"
+      en: "Co-launched a cross-party Knesset lobby for the release of hostages"
     description:
-      he: ביחד עם ח"כ בועז ביסמוט (הליכוד) השיקה טל מירון שדולה בין-מפלגתית בכנסת
-        לקידום שחרורם של החטופים המוחזקים בידי חמאס ברצועת עזה. הישיבה הראשונה
-        התקיימה ב-9 בינואר 2024 בהשתתפות כ-20 חברי כנסת ושרים ושגרירים, וכללה
-        עדות של חטופה ששוחררה ושל בני משפחות חטופים.
-      en: Together with MK Boaz Bismuth (Likud), Tal Meron co-launched a cross-party
-        Knesset lobby to advance the release of hostages held by Hamas in the
-        Gaza Strip. Its first hearing was held on 9 January 2024, attended by
-        about 20 lawmakers and ministers as well as ambassadors, and featured
-        testimony from a freed hostage and from hostage families.
-    date: 2024-01-09
+      he: "ביחד עם ח\"כ בועז ביסמוט (הליכוד) השיקה טל מירון שדולה בין-מפלגתית בכנסת לקידום שחרורם של החטופים המוחזקים בידי חמאס ברצועת עזה. הישיבה הראשונה התקיימה ב-9 בינואר 2024 בהשתתפות כ-20 חברי כנסת ושרים ושגרירים, וכללה עדות של חטופה ששוחררה ושל בני משפחות חטופים."
+      en: "Together with MK Boaz Bismuth (Likud), Tal Meron co-launched a cross-party Knesset lobby to advance the release of hostages held by Hamas in the Gaza Strip. Its first hearing was held on 9 January 2024, attended by about 20 lawmakers and ministers as well as ambassadors, and featured testimony from a freed hostage and from hostage families."
+    date: "2024-01-09"
     sources:
-      - url: https://www.jns.org/nonpartisan-knesset-lobby-turns-up-the-pressure-to-release-hostages/
-        title: Nonpartisan Knesset lobby turns up the pressure to release hostages
-        publisher: JNS
+      - url: "https://www.jns.org/nonpartisan-knesset-lobby-turns-up-the-pressure-to-release-hostages/"
+        title: "Nonpartisan Knesset lobby turns up the pressure to release hostages"
+        publisher: "JNS"
+  - kind: negative
+    category: controversy
+    status: settled
+    title:
+      he: "נזיפה חמורה מוועדת האתיקה על התנהגותה בדיון ועדת החוקה (מרץ 2023)"
+      en: "Severe reprimand from the Ethics Committee over her conduct at a Constitution Committee hearing (March 2023)"
+    description:
+      he: "ב-5 במרץ 2023 קבעה ועדת האתיקה של הכנסת פה אחד כי טל מירון, יחד עם חברי הכנסת יוראי להב הרצנו וולדימיר בליאק, הפרה את כללי האתיקה כשעברה אל מרכז שולחן ועדת החוקה ב-13 בפברואר 2023, במהלך הצבעות על חקיקת הרפורמה המשפטית. הוועדה הטילה עליה נזיפה חמורה בלבד, לאחר ששקלה את התנצלותה ואת העובדה שנכנסה לכנסת פחות משבועיים לפני האירוע; טל מירון אמרה לוועדה כי התנהגותה הייתה חריגה ולא תחזור על עצמה."
+      en: "On 5 March 2023 the Knesset Ethics Committee unanimously found that Tal Meron, together with MKs Yorai Lahav-Hertzanu and Vladimir Beliak, had breached the ethics rules by crossing into the centre of the Constitution Committee's table on 13 February 2023, during votes on the judicial-overhaul legislation. The committee imposed only a severe reprimand on her, having weighed her apology and the fact that she had entered the Knesset less than two weeks before the incident; Tal Meron told the committee her conduct had been out of character and would not recur."
+    date: "2023-03-05"
+    sources:
+      - url: "https://main.knesset.gov.il/Activity/committees/Ethics/Decisions25/Decisions25-3.pdf"
+        title: "החלטה מס' 3/25 — החלטת ועדת האתיקה בקובלנות נגד חברי הכנסת יוראי להב הרצנו, ולדימיר בליאק ושלי מירון"
+        publisher: "The Knesset (Ethics Committee)"
+      - url: "https://www.idi.org.il/articles/48923"
+        title: "ועדת האתיקה בהילוך גבוה: 12 ח\"כים כבר נענשו על התנהגותם"
+        publisher: "The Israel Democracy Institute"
+  - kind: neutral
+    category: news
+    date: "2026-05-24"
+    title:
+      he: "ביקורת על הליך חקיקת חוק התקשורת בוועדה המיוחדת"
+      en: "Criticism of the legislative process on the communications bill in the special committee"
+    description:
+      he: "לאחר שהשתתפה בסדרת דיוני מרתון של הוועדה המיוחדת לחוק התקשורת בראשות גלית דיסטל אטבריאן, אמרה טל מירון בראיון ל-TheMarker (24 במאי 2026) כי השר שלמה קרעי \"פוגש שחקנים בשוק התקשורת, ואז מגיעים פתאום שינויים בסעיפים בחוק\", וכינתה את ההצעה \"הרס ערך לעיתונות\"."
+      en: "After taking part in a series of marathon hearings of the special committee on the communications bill chaired by Galit Distel Atbaryan, Tal Meron told TheMarker (24 May 2026) that Minister Shlomo Karhi \"meets players in the media market, and then suddenly changes appear in the bill's clauses\", calling the proposal \"a destruction of value for journalism\"."
+    sources:
+      - url: "https://www.themarker.com/news/2026-05-24/ty-article/0000019e-5575-df61-a3ff-d5f7bd950000"
+        title: "ח\"כ שלי טל מירון: \"קרעי פוגש שחקנים בשוק התקשורת, ואז מגיעים פתאום שינויים בסעיפים בחוק\""
+        publisher: "TheMarker"
+  - kind: neutral
+    category: news
+    date: "2026-09-05"
+    title:
+      he: "מקום 13 ברשימת יש עתיד לריצה המשותפת עם בנט"
+      en: "13th on the Yesh Atid slate for the joint run with Bennett"
+    description:
+      he: "ב-5 בספטמבר 2026 הציג יאיר לפיד את רשימת יש עתיד לקראת הריצה המשותפת עם נפתלי בנט ברשימת \"ביחד\", וטל מירון שובצה בה במקום ה-13. ב-24 המקומות הראשונים של הרשימה המאוחדת שהוצגה ב-6 בספטמבר 2026 היא אינה מופיעה."
+      en: "On 5 September 2026 Yair Lapid unveiled the Yesh Atid slate for the joint run with Naftali Bennett on the \"Beyachad\" list, with Tal Meron placed 13th. She does not appear among the first 24 slots of the merged list presented on 6 September 2026."
+    sources:
+      - url: "https://www.ynetnews.com/article/hkfdvtkogx"
+        title: "Lapid unveils Yesh Atid election slate after wave of departures ahead of joint run with Bennett"
+        publisher: "Ynetnews"
+      - url: "https://www.maariv.co.il/news/politics/article-1363684"
+        title: "בחירות 2026: רשימת מפלגת ביחד לכנסת ה-26 בראשות בנט ולפיד"
+        publisher: "Maariv"

@@ -1,7 +1,8 @@
 # PersonID 30719. Auto-researched from reputable public sources and
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# legal status marked. Re-verified 2026-09-18.
 personId: 30719
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -54,14 +55,17 @@ claims:
       he: ב-11 בנובמבר 2024 החליטה ועדת האתיקה של הכנסת פה אחד להשעות את חבר הכנסת
         עופר כסיף למשך שישה חודשים מהשתתפות במליאה ובוועדות (למעט הצבעות), וכן
         לעכב את שכרו לשבועיים. ההחלטה התקבלה בעקבות תלונות על אמירותיו בנוגע
-        לצה"ל ולמלחמה בעזה. בנפרד, בפברואר 2024 נכשלה בכנסת הצעה להדיחו לאחר
-        שזכתה ל-85 קולות בלבד מתוך 90 הנדרשים.
+        לצה"ל ולמלחמה בעזה. כסיף טען שדבריו הם התבטאות פוליטית המוגנת בחופש
+        הביטוי. בנפרד, בפברואר 2024 נכשלה בכנסת הצעה להדיחו לאחר שזכתה ל-85
+        קולות בלבד מתוך 90 הנדרשים.
       en: On 11 November 2024 the Knesset Ethics Committee voted unanimously to
         suspend MK Ofer Cassif for six months from participating in plenary and
         committee sessions (except to vote), and to withhold two weeks' salary.
         The decision followed complaints over his remarks concerning the IDF and
-        the Gaza war. Separately, a February 2024 motion to expel him from the
-        Knesset failed, securing only 85 of the 90 votes required.
+        the Gaza war. Cassif said his statements were political speech
+        protected by freedom of expression. Separately, a February 2024 motion
+        to expel him from the Knesset failed, securing only 85 of the 90 votes
+        required.
     date: 2024-11-11
     sources:
       - url: https://www.haaretz.com/israel-news/2024-11-12/ty-article/.premium/left-wing-mk-banned-from-knesset-floor-for-six-months-following-complaints-against-him/00000193-1fbd-d76d-a7db-5ffd52a60000
@@ -76,3 +80,87 @@ claims:
         title: Knesset Narrowly Votes Against Expelling Left-wing Lawmaker for His
           Support of ICJ Genocide Case Against Israel
         publisher: Haaretz
+  - kind: negative
+    category: controversy
+    status: settled
+    title:
+      he: השעיה נוספת של חודשיים על ידי ועדת האתיקה (יולי 2025)
+      en: Further two-month suspension by the Ethics Committee (July 2025)
+    description:
+      he: ב-9 ביולי 2025 החליטה ועדת האתיקה של הכנסת להשעות את כסיף לחודשיים נוספים
+        (19 באוקטובר עד 19 בדצמבר 2025) מדיוני המליאה והוועדות, למעט הצבעות,
+        ולעכב את שכרו לשבועיים, בעקבות 12 תלונות על התבטאויותיו נגד צה"ל
+        והממשלה במהלך המלחמה. כסיף כינה את ההחלטה "צנזורה ורדיפה פוליטית".
+      en: On 9 July 2025 the Knesset Ethics Committee suspended Cassif for a further
+        two months (19 October to 19 December 2025) from plenary and committee
+        sessions, except for votes, and docked two weeks' pay, following 12
+        complaints over his wartime statements against the IDF and the
+        government. Cassif called the decision "political censorship and
+        persecution".
+    date: 2025-07-09
+    sources:
+      - url: https://www.timesofisrael.com/knesset-panel-suspends-hadash-taal-mk-cassif-for-two-months-over-wartime-criticism/
+        title: Knesset panel suspends Hadash-Ta'al MK Cassif for two months over wartime criticism
+        publisher: The Times of Israel
+      - url: https://www.ynetnews.com/article/byktyy3ble
+        title: Knesset bans lawmaker Ofer Cassif for 2 months over repeated attacks on IDF soldiers
+        publisher: Ynetnews
+  - kind: neutral
+    category: news
+    date: 2025-10-13
+    title:
+      he: הוצא מהמליאה במהלך נאום הנשיא טראמפ בכנסת
+      en: Removed from the plenum during President Trump's Knesset address
+    description:
+      he: ב-13 באוקטובר 2025, במהלך נאומו של נשיא ארה"ב דונלד טראמפ במליאת הכנסת,
+        הניפו כסיף וח"כ איימן עודה שלטים שעליהם נכתב "הכירו בפלסטין" והוצאו
+        מהאולם על ידי הסדרנים.
+      en: On 13 October 2025, during US President Donald Trump's address to the
+        Knesset plenum, Cassif and MK Ayman Odeh held up signs reading
+        "Recognize Palestine" and were escorted out of the chamber by ushers.
+    sources:
+      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-870343
+        title: "WATCH: MKs Ayman Odeh, Ofer Cassif kicked out of Knesset mid-Trump speech"
+        publisher: The Jerusalem Post
+  - kind: neutral
+    category: news
+    date: 2026-08-26
+    title:
+      he: עימות עם חיילים בכניסה לכפר קוסרא
+      en: Confrontation with soldiers at the entrance to the village of Kusra
+    description:
+      he: ב-25 באוגוסט 2026 ניסה כסיף להיכנס לכפר קוסרא שבשומרון, שהוכרז שטח צבאי
+        סגור לאחר עימותים בין מתנחלים לפלסטינים, וטען כי חיילים תקפו אותו
+        במחסום. צה"ל מסר כי המחלוקת נגעה למלווים שאינם חברי כנסת שביקשו
+        להיכנס לשטח הסגור, וכי התנהלות החיילים באירוע נבדקת.
+      en: On 25 August 2026 Cassif tried to enter the West Bank village of Kusra,
+        declared a closed military zone after clashes between settlers and
+        Palestinians, and alleged that soldiers assaulted him at a checkpoint.
+        The IDF said the dispute concerned accompanying individuals who were
+        not Knesset members seeking entry to the closed area, and that the
+        soldiers' conduct was being examined.
+    sources:
+      - url: https://www.jpost.com/israel-news/defense-news/article-906660
+        title: MK Cassif claims IDF soldier assaulted him while trying to block his entry to West Bank town Kusra
+        publisher: The Jerusalem Post
+  - kind: neutral
+    category: news
+    date: 2026-09-08
+    title:
+      he: מקום 6 ברשימה המשותפת לבחירות 2026
+      en: Slot 6 on the Joint List for the 2026 election
+    description:
+      he: ברשימה המשותפת של חד"ש, תע"ל ובל"ד שהוגשה לוועדת הבחירות לקראת הבחירות
+        לכנסת ה-26 (27 באוקטובר 2026) שובץ כסיף במקום השישי, במקום השמור
+        באופן מסורתי למועמד יהודי מטעם חד"ש.
+      en: On the Joint List of Hadash, Ta'al and Balad filed with the Central
+        Elections Committee for the 26th Knesset election (27 October 2026),
+        Cassif was placed sixth, in the slot Hadash traditionally reserves for
+        a Jewish candidate.
+    sources:
+      - url: https://www.makorrishon.co.il/news/politcal/article/369009
+        title: הרשימה המלאה של המשותפת לקראת בחירות 2026
+        publisher: Makor Rishon
+      - url: https://www.jpost.com/israel-election-2026/article-907154
+        title: "Israel Election 2026: What do the Joint Arab List and Ra'am stand for?"
+        publisher: The Jerusalem Post

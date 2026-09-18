@@ -1,89 +1,158 @@
-# PersonID 30776. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# Vladimir Beliak (PersonID 30776). Factual reporting from reputable public
+# sources, cited per claim. Neutral language; legal/disciplinary status marked.
+# Re-verified 2026-09-18 (every cited URL re-fetched; Knesset Ethics Committee
+# decisions cited from the Knesset's own PDFs).
 personId: 30776
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: רואה חשבון מוסמך ובעל תואר שני במשפטים
-      en: Certified public accountant with a master's degree in law
+      he: "רואה חשבון מוסמך ובעל תואר שני במשפטים"
+      en: "Certified public accountant with a master's degree in law"
     description:
-      he: לפני כניסתו לפוליטיקה היה ולדימיר בליאק רואה חשבון מוסמך (משנת 2005), שותף
-        במשרד רואי חשבון, ויועץ ליזמות עסקית במשרד העלייה והקליטה. הוא בעל השכלה
-        בראיית חשבון מאוניברסיטת תל אביב ותואר שני במשפטים מאוניברסיטת בר אילן
-        (2008).
-      en: Before entering politics, Vladimir Beliak worked as a certified public
-        accountant (licensed 2005), an accounting-firm partner, and a
-        business-entrepreneurship consultant for the Ministry of Immigrant
-        Absorption. He studied accounting at Tel Aviv University and earned a
-        master's degree in law from Bar-Ilan University (2008).
+      he: "בליאק, יליד קמרובו שבסיביר (1973), עלה לישראל בדצמבר 1998. לפני כניסתו לפוליטיקה היה רואה חשבון מוסמך (משנת 2005), שותף במשרד רואי חשבון (משנת 2006) ויועץ ליזמות עסקית במשרד העלייה והקליטה (2010–2019). הוא בעל תואר ראשון בחשבונאות מאוניברסיטת תל אביב ותואר שני במשפטים מאוניברסיטת בר-אילן (2008)."
+      en: "Beliak, born in Kemerovo, Siberia (1973), immigrated to Israel in December 1998. Before entering politics he was a certified public accountant (licensed 2005), a partner in an accounting firm (from 2006) and a business-entrepreneurship adviser at the Ministry of Immigrant Absorption (2010–2019). He holds a BA in accounting from Tel Aviv University and a master's degree in law from Bar-Ilan University (2008)."
     sources:
-      - url: https://he.wikipedia.org/wiki/%D7%95%D7%9C%D7%93%D7%99%D7%9E%D7%99%D7%A8_%D7%91%D7%9C%D7%99%D7%90%D7%A7
-        title: ולדימיר בליאק
-        publisher: Hebrew Wikipedia
-      - url: https://en.wikipedia.org/wiki/Vladimir_Beliak
-        title: Vladimir Beliak
-        publisher: English Wikipedia
+      - url: "https://he.wikipedia.org/wiki/%D7%95%D7%9C%D7%93%D7%99%D7%9E%D7%99%D7%A8_%D7%91%D7%9C%D7%99%D7%90%D7%A7"
+        title: "ולדימיר בליאק"
+        publisher: "Wikipedia (Hebrew)"
+      - url: "https://en.wikipedia.org/wiki/Vladimir_Beliak"
+        title: "Vladimir Beliak"
+        publisher: "Wikipedia"
+      - url: "https://www.knesset.tv/knesset-members/vladimir-beliak/"
+        title: "ח\"כ ולדימיר בליאק"
+        publisher: "Knesset Channel (ערוץ הכנסת)"
   - kind: positive
     category: achievement
     title:
-      he: חבר כנסת מטעם יש עתיד וחבר ועדת הכספים
-      en: Member of Knesset for Yesh Atid and member of the Finance Committee
+      he: "חבר כנסת מטעם יש עתיד ומרכז האופוזיציה בוועדת הכספים"
+      en: "Member of Knesset for Yesh Atid and opposition coordinator on the Finance Committee"
     description:
-      he: בליאק נכנס לכנסת ה-23 בינואר 2021 מטעם סיעת יש עתיד, ונבחר מחדש לכנסת ה-24
-        ולכנסת ה-25. הוא משמש כחבר בוועדת הכספים של הכנסת ועוסק בהרחבה בנושאי
-        תקציב המדינה ופיקוח על הוצאות הממשלה.
-      en: Beliak entered the 23rd Knesset in January 2021 as a member of the Yesh Atid
-        faction and was re-elected to the 24th and 25th Knessets. He serves on
-        the Knesset Finance Committee and works extensively on the state budget
-        and oversight of government spending.
-    date: 2021-01-05
+      he: "בליאק נכנס לכנסת ה-23 ב-5 בינואר 2021 מטעם יש עתיד, ונבחר מחדש לכנסת ה-24 ולכנסת ה-25 (במקום ה-15 ברשימה). בכנסת ה-24 שימש מרכז הקואליציה בוועדת הכספים, ובכנסת ה-25 הוא מרכז האופוזיציה בוועדה ועוסק בתקציב המדינה ובפיקוח על העברות תקציביות."
+      en: "Beliak entered the 23rd Knesset on 5 January 2021 for Yesh Atid and was re-elected to the 24th and 25th Knessets (15th on the list). He was the coalition coordinator on the Finance Committee in the 24th Knesset and is the opposition coordinator on the committee in the 25th, focusing on the state budget and oversight of budget transfers."
+    date: "2021-01-05"
     sources:
-      - url: https://en.wikipedia.org/wiki/Vladimir_Beliak
-        title: Vladimir Beliak
-        publisher: English Wikipedia
-      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-883995
-        title: State budget offers 'no good news,' will likely pass Knesset vote, says
-          MK Beliak
-        publisher: The Jerusalem Post
+      - url: "https://en.wikipedia.org/wiki/Vladimir_Beliak"
+        title: "Vladimir Beliak"
+        publisher: "Wikipedia"
+      - url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-883995"
+        title: "State budget offers 'no good news,' will likely pass Knesset vote, says MK Beliak"
+        publisher: "The Jerusalem Post"
+      - url: "https://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_PersonToPosition?$filter=PersonID%20eq%2030776%20and%20IsCurrent%20eq%20true"
+        title: "KNS_PersonToPosition — current positions of PersonID 30776 (Knesset OData)"
+        publisher: "The Knesset (OData)"
+  - kind: positive
+    category: achievement
+    title:
+      he: "שותף ליוזמת התיקון לחוק תשלומים לפדויי שבי (2024)"
+      en: "Co-sponsored the amendment to the Payments to Released Captives Law (2024)"
+    description:
+      he: "ביוני 2024 אישרה הכנסת את תיקון מס' 6 לחוק תשלומים לפדויי שבי, שמיזג הצעת חוק ממשלתית עם הצעת חוק פרטית של חברי הכנסת קארין אלהרר, ולדימיר בליאק, גלעד קריב ויצחק קרויזר. התיקון קבע מענק הסתגלות חד-פעמי של 50 אלף ש\"ח ותשלום חודשי של 3,300 ש\"ח לפדויי שבי (לעומת 1,395 ש\"ח קודם לכן)."
+      en: "In June 2024 the Knesset passed Amendment 6 to the Payments to Released Captives Law, which merged a government bill with a private bill by MKs Karine Elharrar, Vladimir Beliak, Gilad Kariv and Yitzhak Kroizer. The amendment set a one-time adjustment grant of NIS 50,000 and a monthly payment of NIS 3,300 for released captives (up from NIS 1,395)."
+    date: "2024-06-05"
+    sources:
+      - url: "https://www.davar1.co.il/515934/"
+        title: "מענק של 50 אלף ש\"ח ותשלום חודשי של 3,300 ש\"ח: התיקון לחוק תשלומים לפדויי שבי אושר בכנסת"
+        publisher: "Davar"
+      - url: "https://fs.knesset.gov.il/25/law/25_lsr_4546317.pdf"
+        title: "חוק תשלומים לפדויי שבי (תיקון מס' 6) — ספר החוקים"
+        publisher: "The Knesset"
   - kind: positive
     category: award
     title:
-      he: אות אביר איכות השלטון (2023)
-      en: Knight of Quality Government award (2023)
+      he: "אות אביר איכות השלטון (2023)"
+      en: "Knight of Quality Government award (2023)"
     description:
-      he: ב-2023 הוענק לבליאק אות אביר איכות השלטון מטעם התנועה לאיכות השלטון בישראל,
-        בקטגוריית הרשות המחוקקת, על פעילותו הפרלמנטרית, ובכלל זה חשיפת העברות
-        תקציביות והפעילות סביב חקיקה בנושא תשלומים לחטופים ולשבים.
-      en: In 2023 Beliak received the 'Knight of Quality Government' award from the
-        Movement for Quality Government in Israel, in the legislative-authority
-        category, recognizing his parliamentary work, including scrutiny of
-        budget transfers and his involvement in legislation on payments to
-        released hostages and captives.
+      he: "התנועה לאיכות השלטון בישראל העניקה לבליאק את אות אביר איכות השלטון לשנת 2023 בקטגוריית הרשות המחוקקת, לדבריה בהוקרה על היותו מהקולות הפרלמנטריים הבולטים נגד מהלכי החקיקה של הממשלה ובפרט על חשיפת העברות תקציביות שלטענתה נעשו בניגוד לחוקים פיסקליים."
+      en: "The Movement for Quality Government in Israel awarded Beliak its Knight of Quality Government award for 2023 in the legislative-branch category, citing, in its words, his prominent parliamentary voice against the government's legislative moves and in particular his exposure of budget transfers it said breached fiscal laws."
     date: "2023"
     sources:
-      - url: https://mqg.org.il/abirim/%D7%97%D7%9B-%D7%95%D7%9C%D7%93%D7%99%D7%9E%D7%99%D7%A8-%D7%91%D7%9C%D7%99%D7%90%D7%A7-%D7%9E%D7%A4%D7%9C%D7%92%D7%AA-%D7%99%D7%A9-%D7%A2%D7%AA%D7%99%D7%93-%D7%9E%D7%A8%D7%9B%D7%96-%D7%94%D7%90/
-        title: ח"כ ורו"ח ולדימיר בליאק - אביר איכות השלטון
-        publisher: Movement for Quality Government in Israel
-      - url: https://he.wikipedia.org/wiki/%D7%95%D7%9C%D7%93%D7%99%D7%9E%D7%99%D7%A8_%D7%91%D7%9C%D7%99%D7%90%D7%A7
-        title: ולדימיר בליאק
-        publisher: Hebrew Wikipedia
+      - url: "https://mqg.org.il/abirim/%D7%97%D7%9B-%D7%95%D7%9C%D7%93%D7%99%D7%9E%D7%99%D7%A8-%D7%91%D7%9C%D7%99%D7%90%D7%A7-%D7%9E%D7%A4%D7%9C%D7%92%D7%AA-%D7%99%D7%A9-%D7%A2%D7%AA%D7%99%D7%93-%D7%9E%D7%A8%D7%9B%D7%96-%D7%94%D7%90/"
+        title: "ח\"כ ורו\"ח ולדימיר בליאק - אביר איכות השלטון"
+        publisher: "Movement for Quality Government in Israel"
+      - url: "https://mqg.org.il/award_year/2023/"
+        title: "אבירות ואבירי איכות השלטון לשנת 2023"
+        publisher: "Movement for Quality Government in Israel"
+      - url: "https://he.wikipedia.org/wiki/%D7%95%D7%9C%D7%93%D7%99%D7%9E%D7%99%D7%A8_%D7%91%D7%9C%D7%99%D7%90%D7%A7"
+        title: "ולדימיר בליאק"
+        publisher: "Wikipedia (Hebrew)"
+  - kind: positive
+    category: achievement
+    title:
+      he: "עתירה לבג\"ץ שהובילה להקפאת העברה של כמיליארד ש\"ח לרשתות חינוך חרדיות"
+      en: "High Court petition that led to a freeze on a NIS 1 billion transfer to Haredi education networks"
+    description:
+      he: "ב-31 בדצמבר 2025 הוציא בג\"ץ צו ביניים המונע העברה של יותר מ-1.09 מיליארד ש\"ח לרשתות חינוך חרדיות עד לדיון בעתירה, שהגישו יו\"ר יש עתיד יאיר לפיד וחברי הכנסת ולדימיר בליאק, נאור שירי ומשה טור-פז בטענה שההעברה נעשתה שלא כדין למוסדות שאינם מפוקחים. חברי כנסת חרדים תקפו את ההחלטה בחריפות."
+      en: "On 31 December 2025 the High Court of Justice issued an interim order blocking the transfer of more than NIS 1.09 billion to Haredi education networks pending a hearing on a petition filed by Yesh Atid chair Yair Lapid and MKs Vladimir Beliak, Naor Shiri and Moshe Tur-Paz, who argued the transfer to unsupervised institutions was unlawful. Haredi lawmakers sharply attacked the ruling."
+    date: "2025-12-31"
+    sources:
+      - url: "https://www.ynet.co.il/news/article/bk9smagvbg"
+        title: "בג\"ץ הקפיא מיליארד שקלים לחינוך לחרדים, שתקפו: \"פירומנים, הכרזתם מלחמה\""
+        publisher: "ynet"
+      - url: "https://he.wikipedia.org/wiki/%D7%95%D7%9C%D7%93%D7%99%D7%9E%D7%99%D7%A8_%D7%91%D7%9C%D7%99%D7%90%D7%A7"
+        title: "ולדימיר בליאק"
+        publisher: "Wikipedia (Hebrew)"
   - kind: negative
     category: controversy
     status: settled
     title:
-      he: הגבלות מטעם ועדת האתיקה של הכנסת (מרץ 2023)
-      en: Restrictions imposed by the Knesset Ethics Committee (March 2023)
+      he: "נזיפה חמורה והגבלת כלים פרלמנטריים מוועדת האתיקה (מרץ 2023)"
+      en: "Severe reprimand and restriction of parliamentary tools by the Ethics Committee (March 2023)"
     description:
-      he: במרץ 2023 הטילה ועדת האתיקה של הכנסת הגבלות על עבודתו הפרלמנטרית של בליאק
-        (יחד עם ח"כ יוראי להב הרצנו) בעקבות הפרעה לדיון בוועדה בנושא הרפורמה
-        במערכת המשפט.
-      en: In March 2023 the Knesset Ethics Committee imposed restrictions on Beliak's
-        parliamentary work (alongside MK Yorai Lahav-Hertzanu) over the
-        disruption of a committee meeting on the government's judicial overhaul.
-    date: 2023-03-06
+      he: "ב-5 במרץ 2023 קבעה ועדת האתיקה של הכנסת פה אחד כי בליאק, יוראי להב הרצנו ושלי טל מירון הפרו את כללי האתיקה כשקפצו מעל שולחן ועדת החוקה ב-13 בפברואר 2023, במהלך הצבעות על חקיקת הרפורמה המשפטית, והתקדמו לעבר יו\"ר הוועדה. על בליאק ולהב הרצנו הוטלו נזיפה חמורה והגבלת השימוש בכלים פרלמנטריים (הגשת הצעות חוק ושאילתות) עד סוף הכנס, בין היתר משום שסירבו להתנצל. בליאק טען בפני הוועדה כי לא נהג באלימות וכי הוא מייצג ציבור רחב החרד מהרפורמה."
+      en: "On 5 March 2023 the Knesset Ethics Committee unanimously found that Beliak, Yorai Lahav-Hertzanu and Shelly Tal Meron had breached the ethics rules by jumping over the Constitution Committee's table on 13 February 2023, during votes on the judicial-overhaul legislation, and advancing towards the committee chair. Beliak and Lahav-Hertzanu received a severe reprimand and were barred from using parliamentary tools (submitting bills and queries) until the end of the Knesset session, in part because they declined to apologise. Beliak told the committee he had not acted violently and that he represented a broad public alarmed by the overhaul."
+    date: "2023-03-05"
     sources:
-      - url: https://www.haaretz.com/israel-news/2023-03-06/ty-article/.premium/knesset-ethics-committee-imposes-sanctions-on-three-lawmakers/00000186-b623-d9eb-abce-beef7f2c0000
-        title: Knesset Ethics Committee Imposes Sanctions on Three Lawmakers
-        publisher: Haaretz
+      - url: "https://main.knesset.gov.il/Activity/committees/Ethics/Decisions25/Decisions25-3.pdf"
+        title: "החלטה מס' 3/25 — החלטת ועדת האתיקה בקובלנות נגד חברי הכנסת יוראי להב הרצנו, ולדימיר בליאק ושלי מירון"
+        publisher: "The Knesset (Ethics Committee)"
+      - url: "https://www.haaretz.com/israel-news/2023-03-06/ty-article/.premium/knesset-ethics-committee-imposes-sanctions-on-three-lawmakers/00000186-b623-d9eb-abce-beef7f2c0000"
+        title: "Knesset Ethics Committee Imposes Sanctions on Three Lawmakers"
+        publisher: "Haaretz"
+  - kind: negative
+    category: controversy
+    status: settled
+    title:
+      he: "נזיפה מוועדת האתיקה על התבטאויות כלפי חברי כנסת (יוני 2025)"
+      en: "Ethics Committee reprimand over remarks about fellow MKs (June 2025)"
+    description:
+      he: "ב-23 ביוני 2025 החליטה ועדת האתיקה פה אחד להטיל על בליאק נזיפה, לאחר שקבעה כי הפר את כללי האתיקה כשכינה את סיעת עוצמה יהודית \"מפלגה ניאו-נאצית\" בדיון בוועדת הכספים (17 בספטמבר 2024) וכשאמר על ח\"כ שמחה רוטמן כי הוא \"אחד האנשים שהביאו עלינו את אסון השבת השחורה\" (12 בדצמבר 2023). בליאק עמד על ההשוואה לעוצמה יהודית; על הערה שהפנה לח\"כ אלמוג כהן הוא התנצל, והוועדה קבעה כי ההתנצלות, שהתקבלה, מרפאת את הפגם. הוועדה הזהירה כי שימוש חוזר בדימויים מהשואה יגרור סנקציה חמורה יותר."
+      en: "On 23 June 2025 the Knesset Ethics Committee unanimously reprimanded Beliak after finding he had breached the ethics rules by calling the Otzma Yehudit faction a \"neo-Nazi party\" at a Finance Committee hearing (17 September 2024) and by saying of MK Simcha Rothman that he was \"one of the people who brought the Black Sabbath disaster upon us\" (12 December 2023). Beliak stood by the Otzma Yehudit comparison; he apologised for a remark aimed at MK Almog Cohen, and the committee found the accepted apology cured that lapse. The committee warned that further use of Holocaust imagery would draw a harsher sanction."
+    date: "2025-06-23"
+    sources:
+      - url: "https://main.knesset.gov.il/Activity/committees/Ethics/Decisions25/Decisions25-39.pdf"
+        title: "החלטה מס' 39/25 — החלטת ועדת האתיקה בקובלנות נגד חבר הכנסת ולדימיר בליאק"
+        publisher: "The Knesset (Ethics Committee)"
+      - url: "https://www.mako.co.il/news-politics/2025_q2/Article-81caa1d53fc9791027.htm"
+        title: "שורת הצעדים נגד חברי הכנסת שהתבטאו בצורה חריגה"
+        publisher: "N12"
+  - kind: neutral
+    category: news
+    date: "2026-06-15"
+    title:
+      he: "פנה ליועצת המשפטית לממשלה לבחון תוכנית קצבאות לנוער הגבעות"
+      en: "Asked the Attorney General to examine a stipend programme for hilltop youth"
+    description:
+      he: "ביוני 2026 דווח כי הממשלה מתכננת לשלם קצבה יומית של 50 ש\"ח לכ-657 בני נוער במאחזים ביהודה ושומרון, בהיקף של כ-5.5 מיליון ש\"ח, במסגרת תוכנית של משרד ההתיישבות והמשימות הלאומיות. בליאק פנה ליועצת המשפטית לממשלה גלי בהרב-מיארה בבקשה לבחון אם הכספים עומדים בעקרון השוויון ובקריטריונים שקופים, בפרט סמוך לבחירות."
+      en: "In June 2026 it was reported that the government planned to pay a NIS 50 daily stipend to about 657 youths at West Bank outposts, some NIS 5.5 million in total, under a programme of the Ministry of Settlement and National Missions. Beliak asked Attorney General Gali Baharav-Miara to examine whether the funds meet the principle of equality and transparent criteria, particularly so close to an election."
+    sources:
+      - url: "https://www.timesofisrael.com/government-to-provide-50-nis-daily-stipends-for-hundreds-of-hilltop-youth-report/"
+        title: "Government to provide 50-shekel daily stipends for hundreds of hilltop youth – report"
+        publisher: "The Times of Israel"
+  - kind: neutral
+    category: news
+    date: "2026-09-06"
+    title:
+      he: "מקום 16 ברשימת \"ביחד\" (בנט–לפיד) לבחירות 2026"
+      en: "Slot 16 on the \"Beyachad\" (Bennett–Lapid) list for the 2026 election"
+    description:
+      he: "ב-5 בספטמבר 2026 הציג יאיר לפיד את נציגי יש עתיד לריצה המשותפת עם נפתלי בנט, ובליאק שובץ במקום השביעי ברשימת יש עתיד. ברשימת \"ביחד\" המאוחדת לכנסת ה-26, שהוצגה ב-6 בספטמבר 2026, הוא מופיע במקום ה-16."
+      en: "On 5 September 2026 Yair Lapid unveiled Yesh Atid's representatives for the joint run with Naftali Bennett, with Beliak placed seventh on the Yesh Atid slate. On the merged \"Beyachad\" list for the 26th Knesset, presented on 6 September 2026, he appears in 16th place."
+    sources:
+      - url: "https://www.maariv.co.il/news/politics/article-1363684"
+        title: "בחירות 2026: רשימת מפלגת ביחד לכנסת ה-26 בראשות בנט ולפיד"
+        publisher: "Maariv"
+      - url: "https://www.ynetnews.com/article/hkfdvtkogx"
+        title: "Lapid unveils Yesh Atid election slate after wave of departures ahead of joint run with Bennett"
+        publisher: "Ynetnews"

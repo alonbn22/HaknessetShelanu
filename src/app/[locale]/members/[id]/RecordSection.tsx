@@ -30,13 +30,13 @@ function ClaimList({
   claims: MemberClaim[];
   locale: string;
   title: string;
-  tone: "positive" | "negative";
+  tone: "positive" | "negative" | "neutral";
 }) {
   const t = useTranslations("member");
   return (
     <div className="space-y-3">
       <h3
-        className={`font-semibold ${tone === "positive" ? "text-green-800" : "text-red-800"}`}
+        className={`font-semibold ${tone === "positive" ? "text-green-800" : tone === "negative" ? "text-red-800" : "text-foreground"}`}
       >
         {title}
         <span className="ms-2 align-middle text-xs font-normal text-muted">
@@ -59,7 +59,9 @@ function ClaimList({
                 className={`rounded-lg border p-3 text-sm ${
                   tone === "positive"
                     ? "border-green-200 bg-green-50"
-                    : "border-red-200 bg-red-50"
+                    : tone === "negative"
+                      ? "border-red-200 bg-red-50"
+                      : "border-line bg-surface"
                 }`}
               >
                 <div className="flex flex-wrap items-center gap-2">
@@ -127,6 +129,7 @@ export function RecordSection({
   const t = useTranslations("member");
   const positive = record.claims.filter((c) => c.kind === "positive");
   const negative = record.claims.filter((c) => c.kind === "negative");
+  const neutral = record.claims.filter((c) => c.kind === "neutral");
 
   return (
     <section className="rounded-xl bg-white p-6 shadow-sm space-y-4">
@@ -152,6 +155,9 @@ export function RecordSection({
           tone="negative"
         />
       </div>
+      {neutral.length > 0 && (
+        <ClaimList claims={neutral} locale={locale} title={t("neutralRecord")} tone="neutral" />
+      )}
       {/* Legal / editorial safeguard shown with every public record. */}
       <p className="rounded-lg bg-black/5 p-3 text-xs leading-relaxed text-muted">
         {t("recordDisclaimer")}

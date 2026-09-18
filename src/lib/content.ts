@@ -174,7 +174,10 @@ export function partyList(
 // Curated per-member public record (phase 3): one YAML file per person,
 // every claim must cite at least one source.
 const claimSchema = z.object({
-  kind: z.enum(["positive", "negative"]),
+  // "neutral" is for dated news items that are neither to the member's credit
+  // nor against them (a new role, a bill, a public stance) — shown in a third
+  // list so "for/against" stays a judgement the sources support.
+  kind: z.enum(["positive", "negative", "neutral"]),
   category: z.enum([
     "award",
     "volunteering",
@@ -182,6 +185,8 @@ const claimSchema = z.object({
     "conviction",
     "investigation",
     "controversy",
+    "news",
+    "role",
   ]),
   // Legal status, so a matter is never implied to be more than it is
   // (presumption of innocence for anything not finally adjudicated).

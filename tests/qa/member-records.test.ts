@@ -34,6 +34,14 @@ for (const id of ids) {
         assert.ok(s.title, `${id}: source missing title`);
       }
       assert.ok(c.title.he, `${id}: claim missing Hebrew title`);
+      // Neutral items are dated news or roles — never an undated verdict-free
+      // way to park an accusation.
+      if (c.kind === "neutral") {
+        assert.ok(c.category === "news" || c.category === "role", `${id}: neutral claim must be news or role`);
+        assert.ok(c.date, `${id}: neutral claim "${c.title.he}" needs a date`);
+      } else {
+        assert.ok(c.category !== "news" && c.category !== "role", `${id}: news/role items must be kind neutral`);
+      }
       // Negative claims in a court category must declare a status.
       if (c.kind === "negative" && (c.category === "conviction" || c.category === "investigation")) {
         assert.ok(c.status, `${id}: legal claim "${c.title.en ?? c.title.he}" must set a status`);

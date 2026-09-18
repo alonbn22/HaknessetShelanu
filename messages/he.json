@@ -135,11 +135,14 @@
       "achievement": "הישג",
       "conviction": "הרשעה",
       "investigation": "חקירה",
-      "controversy": "מחלוקת"
+      "controversy": "מחלוקת",
+      "news": "בחדשות",
+      "role": "תפקיד"
     },
     "recordSources": "מקורות",
     "recordReviewed": "הרשומה נבדקה לאחרונה: {date}",
-    "recordNone": "לא תועדו פריטים במאגר זה."
+    "recordNone": "לא תועדו פריטים במאגר זה.",
+    "neutralRecord": "בחדשות ובתפקיד"
   },
   "parties": {
     "title": "הסיעות בכנסת",

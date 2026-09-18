@@ -135,11 +135,14 @@
       "achievement": "Achievement",
       "conviction": "Conviction",
       "investigation": "Investigation",
-      "controversy": "Controversy"
+      "controversy": "Controversy",
+      "news": "In the news",
+      "role": "Role"
     },
     "recordSources": "Sources",
     "recordReviewed": "Record last reviewed: {date}",
-    "recordNone": "No items documented in this database."
+    "recordNone": "No items documented in this database.",
+    "neutralRecord": "In the news and in office"
   },
   "parties": {
     "title": "Knesset Factions",

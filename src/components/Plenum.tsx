@@ -10,8 +10,8 @@ import { MemberAvatar } from "@/components/MemberAvatar";
 // orientation of every election-night broadcast, so it is NOT mirrored in RTL.
 // Both blocs are the same blue; the aisle carries the split. Hovering or
 // focusing a faction in the legend lights its seats in that faction's colour.
-// Seats named in `hollow` render empty: the members who miss the most votes —
-// the legend says so, and each empty seat's card says so too.
+// Every seat is a link and a pointer target — nothing in the hall is drawn that
+// cannot be pressed.
 //
 // Hovering, focusing or tapping a seat opens a small card: photo, name,
 // faction, current role, vote participation, and where the figures come from.
@@ -98,18 +98,15 @@ function layout(total: number): { points: Point[]; seatR: number } {
 export function Plenum({
   seats,
   factions,
-  hollow = [],
   asOf,
 }: {
   seats: PlenumSeat[];
   factions: PlenumFaction[];
-  hollow?: number[];
   /** Localized "as of" date/time of the figures, for the card's source line. */
   asOf?: string | null;
 }) {
   const t = useTranslations();
   const [active, setActive] = useState<number | null>(null);
-  const hollowSet = useMemo(() => new Set(hollow), [hollow]);
   const popoverId = useId();
   const containerRef = useRef<HTMLDivElement>(null);
   // The open card: which seat, and where to draw it (px, relative to the container).
@@ -225,10 +222,9 @@ export function Plenum({
     }
   };
 
-  const renderSeat = (seat: PlenumSeat, x: number, y: number, r: number, hollowStroke: number, idx: number) => {
+  const renderSeat = (seat: PlenumSeat, x: number, y: number, r: number, ringStroke: number, idx: number) => {
     const lit = active === seat.factionId;
     const dimmed = active != null && !lit;
-    const empty = hollowSet.has(seat.id);
     const open = card?.seatId === seat.id;
     return (
       <a
@@ -253,9 +249,9 @@ export function Plenum({
           cx={x}
           cy={y}
           r={open ? r * 1.35 : r}
-          fill={empty ? "none" : lit || open ? colorById.get(seat.factionId) : "var(--coalition)"}
+          fill={lit || open ? colorById.get(seat.factionId) : "var(--coalition)"}
           stroke={open ? "var(--foreground)" : lit ? colorById.get(seat.factionId) : "var(--coalition)"}
-          strokeWidth={open ? hollowStroke : empty ? hollowStroke : 0}
+          strokeWidth={open ? ringStroke : 0}
           opacity={dimmed && !open ? 0.28 : 1}
           className="transition-[fill,opacity] duration-300 ease-out"
         />
@@ -390,7 +386,6 @@ export function Plenum({
                 <span className="text-muted">{t("hemicycle.cardNoStats")}</span>
               )}
             </p>
-            {hollowSet.has(cardSeat.id) && <p className="mt-1 text-xs text-fail-ink">{t("hemicycle.cardMissedMost")}</p>}
             <p className="mt-2 border-t border-line pt-2 text-xs text-muted">
               {asOf ? t("hemicycle.cardSource", { date: asOf }) : t("footer.dataSource")} · {t("hemicycle.cardOpen")}
             </p>
@@ -401,16 +396,6 @@ export function Plenum({
       {/* The legend is the semantic layer: every faction is a real link, and
           hovering or focusing one lights its seats. */}
       <ul className="flex flex-wrap gap-x-4 gap-y-1.5 text-sm" aria-label={t("hemicycle.legend")}>
-        {hollow.length > 0 && (
-          <li>
-            <Link href="/attendance" className="flex items-center gap-1.5 rounded-chip hover:underline">
-              <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden className="shrink-0">
-                <circle cx="6" cy="6" r="4.6" fill="none" stroke="var(--coalition)" strokeWidth="1.6" />
-              </svg>
-              <span>{t("hemicycle.hollowLegend", { count: hollow.length })}</span>
-            </Link>
-          </li>
-        )}
         {ordered.map((f) => (
           <li key={f.id}>
             <Link

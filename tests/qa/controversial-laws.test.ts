@@ -53,8 +53,7 @@ test("every cited vote is in the Knesset record for the current Knesset and its 
       againstSum += unmapped?.a ?? 0;
       assert.equal(forSum, vote!.totalFor, `${law.year}: vote ${v.id} 'for' tallies (${forSum}) differ from the vote total (${vote!.totalFor})`);
       assert.equal(againstSum, vote!.totalAgainst, `${law.year}: vote ${v.id} 'against' tallies (${againstSum}) differ from the vote total (${vote!.totalAgainst})`);
-      // Tightened to 0 once the orphan repair has been materialized into the committed DB.
-      assert.ok((unmapped?.f ?? 0) + (unmapped?.a ?? 0) <= 10, `${law.year}: vote ${v.id} has ${(unmapped?.f ?? 0) + (unmapped?.a ?? 0)} voters the record cannot name — run the vote sync's orphan repair`);
+      assert.equal((unmapped?.f ?? 0) + (unmapped?.a ?? 0), 0, `${law.year}: vote ${v.id} has ${(unmapped?.f ?? 0) + (unmapped?.a ?? 0)} voters the record cannot name — run the vote sync's orphan repair (fix-mkids.ts)`);
     }
   }
 });

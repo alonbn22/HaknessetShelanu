@@ -313,3 +313,28 @@ export const govVoteItemType = (he: string | null | undefined, locale: string): 
 
 // Free-text data names are localized via the unified cache in i18n-data.ts, which
 // layers these curated govCommittee() translations on top for standing committees.
+
+// The header/seat-card label for one office: the duty, and for a minister or
+// deputy minister the ministry ("Minister · Ministry of Finance"). Null for a
+// PMO "minister" row of the prime minister — that is the premiership itself.
+export function officeLabel(
+  row: { positionId: number; positionDescHe: string | null; govMinistryNameHe: string | null; committeeNameHe?: string | null },
+  locale: string,
+  opts: { isPrimeMinister?: boolean } = {},
+): GovTerm | null {
+  const duty = govDuty(row.positionDescHe, locale);
+  if (!duty.text) return null;
+  const ministerial = [39, 57, 40].includes(row.positionId);
+  if (ministerial && row.govMinistryNameHe) {
+    if (opts.isPrimeMinister && /ראש הממשלה/.test(row.govMinistryNameHe)) return null;
+    const ministry = govMinistry(row.govMinistryNameHe, locale);
+    const text = `${duty.text} · ${ministry.text}`;
+    return { text, rtl: duty.rtl || ministry.rtl };
+  }
+  // A committee chair is named with the committee ("Committee chair · Finance Committee").
+  if (row.positionId === 41 && row.committeeNameHe) {
+    const committee = govCommittee(row.committeeNameHe, locale);
+    return { text: `${duty.text} · ${committee.text}`, rtl: duty.rtl || committee.rtl };
+  }
+  return duty;
+}

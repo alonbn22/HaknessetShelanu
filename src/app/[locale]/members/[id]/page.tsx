@@ -9,7 +9,7 @@ import { RecordSection } from "./RecordSection";
 import { MemberVoteStats } from "./MemberVoteStats";
 import { MemberActivity } from "./MemberActivity";
 import { formatDate } from "@/lib/format";
-import { govDuty, govMinistry } from "@/lib/gov-terms";
+import { govDuty, govMinistry, officeLabel } from "@/lib/gov-terms";
 import { getMemberRecord, memberRecordHeStrings, localizeMemberRecord } from "@/lib/content";
 import { isCoalitionFaction } from "@/lib/content";
 import {
@@ -33,10 +33,11 @@ import {
   personName,
   factionName,
   isServingMember,
+  isCurrentMk,
 } from "@/lib/queries";
 import { localizePage, committeeLabel } from "@/lib/i18n-data";
 import { localizedAttrs, rtlAttrs, safeHttpUrl } from "@/lib/text";
-import { POSITION_FACTION_MEMBER, MK_POSITION_IDS, LEADERSHIP_POSITION_IDS } from "@/lib/constants";
+import { POSITION_FACTION_MEMBER, MK_POSITION_IDS, OFFICE_POSITION_IDS, POSITION_PRIME_MINISTER, POSITION_COMMITTEE_CHAIR } from "@/lib/constants";
 
 export const dynamic = "force-dynamic";
 
@@ -102,28 +103,16 @@ export default async function MemberPage({
   const committees = getMemberCommittees(personId);
 
   const factionRows = positions.filter((p) => p.positionId === POSITION_FACTION_MEMBER);
-  const currentFaction = factionRows.find((p) => p.isCurrent);
+  const serving = isServingMember(positions);
+  // A serving minister who vacated the seat under the Norwegian Law is not a
+  // sitting MK and holds no current faction membership; the header says so and
+  // shows the faction they sat in last (positions are sorted newest first).
+  const ministerNotMk = serving && !isCurrentMk(positions);
+  const currentFaction = factionRows.find((p) => p.isCurrent) ?? (ministerNotMk ? factionRows[0] : undefined);
   const roleRows = positions.filter(
     (p) => !MK_POSITION_IDS.includes(p.positionId) && p.positionId !== POSITION_FACTION_MEMBER,
   );
-  const serving = isServingMember(positions);
 
-  // Leadership roles (Speaker, opposition leader, committee/faction chair, deputy
-  // Speaker) as at-a-glance header badges, most-prominent first, deduped by label.
-  const leaderSeen = new Set<string>();
-  const leadershipBadges = positions
-    .filter((p) => p.isCurrent && LEADERSHIP_POSITION_IDS.includes(p.positionId))
-    .sort(
-      (a, b) =>
-        LEADERSHIP_POSITION_IDS.indexOf(a.positionId) -
-        LEADERSHIP_POSITION_IDS.indexOf(b.positionId),
-    )
-    .map((p) => govDuty(p.positionDescHe ?? "", locale))
-    .filter((g) => {
-      if (!g.text || leaderSeen.has(g.text)) return false;
-      leaderSeen.add(g.text);
-      return true;
-    });
 
   const bio = getMemberBio(personId);
   // Roles section already shows career/positions, so bio keeps only background:
@@ -150,6 +139,32 @@ export default async function MemberPage({
     ...factionRows.map((p) => p.factionNameHe),
   ];
   const { cache: dataMap, loc: localOf } = localizePage(dataHe, locale);
+
+  // The offices held now — prime minister, ministers with their ministry, the
+  // Speaker, the opposition leader, chairs with their committee, deputy
+  // Speakers — as at-a-glance header badges, most-prominent first, deduped by
+  // label. Committee names come through the translation cache like the rest
+  // of the page's data text.
+  const isPrimeMinister = positions.some((p) => p.isCurrent && p.positionId === POSITION_PRIME_MINISTER);
+  const leaderSeen = new Set<string>();
+  const leadershipBadges = positions
+    .filter((p) => p.isCurrent && OFFICE_POSITION_IDS.includes(p.positionId))
+    .sort((a, b) => OFFICE_POSITION_IDS.indexOf(a.positionId) - OFFICE_POSITION_IDS.indexOf(b.positionId))
+    .map((p) => {
+      const label = officeLabel(p, locale, { isPrimeMinister });
+      if (!label) return null;
+      if (p.positionId === POSITION_COMMITTEE_CHAIR && p.committeeNameHe) {
+        const committee = committeeLabel(p.committeeNameHe, locale, dataMap);
+        const duty = govDuty(p.positionDescHe ?? "", locale);
+        return { text: `${duty.text} · ${committee.text}`, rtl: duty.rtl || committee.rtl };
+      }
+      return label;
+    })
+    .filter((g): g is NonNullable<typeof g> => {
+      if (!g || leaderSeen.has(g.text)) return false;
+      leaderSeen.add(g.text);
+      return true;
+    });
   // Localize a " · "-joined Hebrew list into per-item localized chunks.
   const localList = (joined: string | null) =>
     (joined ?? "")
@@ -184,7 +199,7 @@ export default async function MemberPage({
             </Link>
           )}
           <div className="text-sm text-muted">
-            {serving ? t("member.currentMk") : t("member.formerMk")}
+            {ministerNotMk ? t("member.ministerNotMk") : serving ? t("member.currentMk") : t("member.formerMk")}
           </div>
           {leadershipBadges.length > 0 && (
             <div className="flex flex-wrap gap-1.5 pt-1">

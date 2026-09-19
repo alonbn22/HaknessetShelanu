@@ -145,7 +145,8 @@
     "recordSources": "Sources",
     "recordReviewed": "Record last reviewed: {date}",
     "recordNone": "No items documented in this database.",
-    "neutralRecord": "In the news and in office"
+    "neutralRecord": "In the news and in office",
+    "ministerNotMk": "Serving minister; vacated the Knesset seat under the Norwegian Law"
   },
   "parties": {
     "title": "Knesset Factions",
@@ -616,10 +617,8 @@
     "legend": "Factions",
     "cardParticipation": "participation in the 25th Knesset’s votes",
     "cardNoStats": "no voting figures yet",
-    "cardMissedMost": "An empty seat: among the five members who missed the most votes",
     "cardSource": "Source: the Knesset’s open-data interface · as of {date}",
     "cardOpen": "Click for the member’s page",
-    "hollowLegend": "{count} empty seats — the members who missed the most votes",
     "hint": "Hover or tap a seat to see who sits in it. Keyboard: Tab to the first seat, arrows between seats, Enter for the page."
   },
   "wip": {

@@ -15,6 +15,7 @@ import {
   VOTE_AGAINST,
   VOTE_ABSTAIN,
   VOTE_DID_NOT_VOTE,
+  OFFICE_POSITION_IDS,
 } from "./constants";
 
 export type Person = typeof schema.persons.$inferSelect;
@@ -2150,22 +2151,9 @@ export function searchAll(query: string, searchHe: string, locale: string): Sear
 // regardless of how many seats there are.
 export type SeatFacts = {
   participationPct: number | null;
-  roles: { dutyHe: string; detailHe: string | null }[];
+  roles: { positionId: number; positionDescHe: string | null; govMinistryNameHe: string | null; committeeNameHe: string | null }[];
 };
 
-const SEAT_ROLE_POSITION_IDS = [
-  45, // prime minister
-  50, // deputy prime minister
-  122, // Speaker
-  131, // opposition leader
-  39, // minister
-  57, // minister (f.)
-  40, // deputy minister
-  POSITION_COMMITTEE_CHAIR,
-  POSITION_FACTION_CHAIR,
-  70, // deputy Speaker
-  71, // deputy Speaker (f.)
-];
 
 export function getSeatFacts(): Map<number, SeatFacts> {
   const db = getDb();
@@ -2189,15 +2177,15 @@ export function getSeatFacts(): Map<number, SeatFacts> {
       and(
         eq(schema.personPositions.knessetNum, CURRENT_KNESSET),
         eq(schema.personPositions.isCurrent, true),
-        inArray(schema.personPositions.positionId, SEAT_ROLE_POSITION_IDS),
+        inArray(schema.personPositions.positionId, OFFICE_POSITION_IDS),
       ),
     )
     .all();
-  // Most prominent first, in the order of SEAT_ROLE_POSITION_IDS.
-  roles.sort((a, b) => SEAT_ROLE_POSITION_IDS.indexOf(a.positionId) - SEAT_ROLE_POSITION_IDS.indexOf(b.positionId));
+  // Most prominent first, in the order of OFFICE_POSITION_IDS.
+  roles.sort((a, b) => OFFICE_POSITION_IDS.indexOf(a.positionId) - OFFICE_POSITION_IDS.indexOf(b.positionId));
   for (const r of roles) {
     const entry = out.get(r.personId) ?? { participationPct: null, roles: [] };
-    if (r.dutyHe) entry.roles.push({ dutyHe: r.dutyHe, detailHe: r.ministryHe ?? r.committeeHe ?? null });
+    if (r.dutyHe) entry.roles.push({ positionId: r.positionId, positionDescHe: r.dutyHe, govMinistryNameHe: r.ministryHe ?? null, committeeNameHe: r.committeeHe ?? null });
     out.set(r.personId, entry);
   }
   return out;

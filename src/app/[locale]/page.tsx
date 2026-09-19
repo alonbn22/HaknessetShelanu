@@ -24,7 +24,8 @@ import {
   factionName,
 } from "@/lib/queries";
 import { committeeLabel, localizePage } from "@/lib/i18n-data";
-import { govDuty, govMinistry } from "@/lib/gov-terms";
+import { officeLabel } from "@/lib/gov-terms";
+import { POSITION_PRIME_MINISTER } from "@/lib/constants";
 import { getControversialLaws, getElectionOutlook, partyText, partyTextAttrs, partyTextClass } from "@/lib/content";
 import { isHebrew, rtlAttrs, localizedAttrs, safeHttpUrl } from "@/lib/text";
 import { rtlLocales } from "@/i18n/routing";
@@ -67,11 +68,13 @@ export default async function HomePage() {
     .map((m) => {
       const name = personName(m, locale);
       const facts = seatFacts.get(m.id);
-      // "Minister · Ministry of Finance", "Committee chair · Finance Committee".
-      const roles = (facts?.roles ?? []).map((r) => {
-        const duty = govDuty(r.dutyHe, locale).text;
-        const detail = r.detailHe ? (govMinistry(r.detailHe, locale).text || committeeLabel(r.detailHe, locale, upCache)) : "";
-        return detail && detail !== duty ? `${duty} · ${detail}` : duty;
+      // "Prime Minister", "Minister · Ministry of Finance", "Committee chair · Finance Committee".
+      const isPm = (facts?.roles ?? []).some((r) => r.positionId === POSITION_PRIME_MINISTER);
+      const roles = (facts?.roles ?? []).flatMap((r) => {
+        const label = officeLabel(r, locale, { isPrimeMinister: isPm });
+        if (!label) return [];
+        const committee = r.committeeNameHe && !r.govMinistryNameHe ? committeeLabel(r.committeeNameHe, locale, upCache).text : "";
+        return [committee && committee !== label.text ? `${label.text} · ${committee}` : label.text];
       });
       return {
         id: m.id,
@@ -92,12 +95,6 @@ export default async function HomePage() {
     ? new Intl.DateTimeFormat(locale, { dateStyle: "medium", timeStyle: "short" }).format(new Date(lastSync))
     : null;
   const figuresSource = asOf ? t("home.figuresSource", { date: asOf }) : t("footer.dataSource");
-  // An empty seat, drawn once: the mark for a member who misses votes.
-  const emptySeat = (
-    <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden className="shrink-0">
-      <circle cx="7" cy="7" r="5.5" fill="none" stroke="var(--coalition)" strokeWidth="1.5" />
-    </svg>
-  );
   const rowLink = "flex items-center gap-3 py-2.5 hover:bg-surface-hover -mx-2 px-2 rounded-chip";
 
   return (
@@ -125,7 +122,7 @@ export default async function HomePage() {
           </div>
 
           {/* The arc from sm up; the same seats as two blocks across the aisle on phones. */}
-          <Plenum seats={seats} factions={plenumFactions} hollow={laggards.map((e) => e.personId)} asOf={asOf} />
+          <Plenum seats={seats} factions={plenumFactions} asOf={asOf} />
 
           {/* The dais: search sits at the base of the hall. */}
           <div className="mx-auto max-w-xl">
@@ -217,8 +214,8 @@ export default async function HomePage() {
       {leaders.length > 0 && (
         <section className="grid gap-10 md:grid-cols-2">
           {[
-            { title: t("home.participationLaggards"), data: laggards, empty: true },
-            { title: t("home.participationLeaders"), data: leaders, empty: false },
+            { title: t("home.participationLaggards"), data: laggards },
+            { title: t("home.participationLeaders"), data: leaders },
           ].map((block) => (
             <div key={block.title}>
               <SectionHeading
@@ -234,7 +231,6 @@ export default async function HomePage() {
                 {block.data.map((e) => (
                   <li key={e.personId}>
                     <Link href={`/members/${e.personId}`} className={rowLink}>
-                      {block.empty && emptySeat}
                       <MemberAvatar person={e.person} size={36} />
                       <span className="min-w-0 flex-1 truncate" {...rtlAttrs(personName(e.person, locale))}>
                         {personName(e.person, locale)}

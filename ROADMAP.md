@@ -144,7 +144,7 @@ socio-economic indices by municipality (data.gov.il) for context.
   27 Oct 2026 (bump `lastReviewed`; add new polls from the outlets' own
   articles; the Channel 16 polls stay out unless a written publication appears).
 - Accessibility-coordinator name / email / phone (`a11y.statement.*` placeholders, now in six languages).
-- Spanish/French text for the editorial YAML files (`localizedText` accepts `es`/`fr`; until then English is shown on those pages).
+- Spanish/French text for the 88 dated faction developments in `content/party-profiles.yaml` `updates` (everything else editorial is translated; those fall back to English, marked).
 - Corrections email placeholder.
 - `NEXT_PUBLIC_SITE_URL` once a production domain exists (sitemap/OG URLs).
 - Editorial sign-off on curated member records, coalition.yaml (per-faction
@@ -157,8 +157,11 @@ socio-economic indices by municipality (data.gov.il) for context.
 - **Spanish and French (19 Sep 2026)**: six locales. UI catalogues complete
   (parity-tested), faction and official-term names in es/fr, lazy data
   translations widened (es/fr columns), hreflang for every page, sitemap
-  split per locale. Editorial YAML (election, polls, quiz, profiles) still
-  he/en(/ar/ru) — es/fr readers get English there, marked as such.
+  split per locale, and the editorial YAML translated (election, compass,
+  profiles, coalition notes, laws, glossary, history, polls, budget, aid).
+- **The election first on the home page (19 Sep 2026)**: countdown banner
+  with the next milestone and four doors, the nav item as a pill, and a
+  note on how the coalition/opposition count is made.
 - **Factions verified like the members (19 Sep 2026)**: coalition/opposition
   is a dated, sourced status per faction (`content/coalition.yaml`
   `statuses`; UTJ outside since 14 Jul 2025, Noam since 16 Jul 2025 —

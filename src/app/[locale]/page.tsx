@@ -5,6 +5,7 @@ import { GlobalSearch } from "@/components/GlobalSearch";
 import { MemberAvatar } from "@/components/MemberCard";
 import { KeyDatesTimeline } from "@/components/KeyDatesTimeline";
 import { PollAverageTeaser } from "@/components/polls/PollAverageTeaser";
+import { ElectionBanner } from "@/components/ElectionBanner";
 import { ReadingBadge } from "@/components/ReadingBadge";
 import { Badge } from "@/components/ui/Badge";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -98,7 +99,10 @@ export default async function HomePage() {
   const rowLink = "flex items-center gap-3 py-2.5 hover:bg-surface-hover -mx-2 px-2 rounded-chip";
 
   return (
-    <div className="space-y-14">
+    <div className="space-y-10">
+      {/* ---------- The election, first ---------- */}
+      <ElectionBanner />
+
       {/* ---------- The house ---------- */}
       <section aria-labelledby="house" className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_19rem] lg:gap-14">
         <div className="space-y-6">
@@ -123,6 +127,13 @@ export default async function HomePage() {
 
           {/* The arc from sm up; the same seats as two blocks across the aisle on phones. */}
           <Plenum seats={seats} factions={plenumFactions} asOf={asOf} />
+          {/* How the aisle is counted — the one line that answers "wasn't it 61?". */}
+          <p className="text-xs text-muted">
+            {t("home.countNote")}{" "}
+            <Link href="/parties" className="underline hover:text-accent">
+              {t("home.countNoteLink")} {arrow}
+            </Link>
+          </p>
 
           {/* The dais: search sits at the base of the hall. */}
           <div className="mx-auto max-w-xl">
@@ -134,13 +145,7 @@ export default async function HomePage() {
         <section className="space-y-8 border-t border-line pt-8 lg:border-s lg:border-t-0 lg:ps-10 lg:pt-0" aria-label={t("home.thisWeekTitle")}>
           {electionOutlook && (
             <div className="space-y-3">
-              <SectionHeading variant="md">{t("election.homeTitle")}</SectionHeading>
-              {electionOutlook.expectedDate && (
-                <p className="text-sm">
-                  <span className="text-muted">{t("election.expectedDate")}:</span>{" "}
-                  <span className="font-semibold tabular-nums">{formatDate(electionOutlook.expectedDate, locale)}</span>
-                </p>
-              )}
+              <SectionHeading variant="md">{t("election.keyDates")}</SectionHeading>
               {electionOutlook.keyDates && electionOutlook.keyDates.length > 0 && (
                 <KeyDatesTimeline dates={electionOutlook.keyDates} variant="compact" />
               )}

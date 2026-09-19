@@ -67,7 +67,14 @@
     "votingDays": "La plénière a voté pendant {term} jours depuis le début de la 25e Knesset — dont {inYear} en {year}",
     "thisWeekEmpty": "Aucune séance de commission n’est prévue dans les sept prochains jours.",
     "figuresSource": "Source : API de données ouvertes de la Knesset · au {date}",
-    "lawVote": "Le vote à la Knesset"
+    "lawVote": "Le vote à la Knesset",
+    "electionEyebrow": "Les élections à la 26e Knesset",
+    "daysToElection": "{days, plural, =0 {Les élections ont lieu aujourd’hui} one {# jour avant les élections} other {# jours avant les élections}}",
+    "listsSummary": "{submitted} listes déposées, dont {polled} mesurées dans les sondages",
+    "pollsSummary": "{count} sondages depuis la clôture des listes",
+    "nextMilestone": "Prochaine étape",
+    "countNote": "Décompte d’après les annonces des factions elles-mêmes ; une faction qui a annoncé quitter la coalition est comptée dans l’opposition.",
+    "countNoteLink": "Détails et sources par faction"
   },
   "members": {
     "title": "Députés de la Knesset",

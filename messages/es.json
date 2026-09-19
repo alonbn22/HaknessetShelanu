@@ -67,7 +67,14 @@
     "votingDays": "El pleno votó en {term} días desde el inicio de la 25.ª Knéset — {inYear} de ellos en {year}",
     "thisWeekEmpty": "No hay sesiones de comisión programadas en los próximos siete días.",
     "figuresSource": "Fuente: API de datos abiertos de la Knéset · a fecha de {date}",
-    "lawVote": "La votación en la Knéset"
+    "lawVote": "La votación en la Knéset",
+    "electionEyebrow": "Las elecciones a la 26.ª Knéset",
+    "daysToElection": "{days, plural, =0 {Las elecciones son hoy} one {# día para las elecciones} other {# días para las elecciones}}",
+    "listsSummary": "{submitted} listas presentadas, {polled} de ellas medidas en las encuestas",
+    "pollsSummary": "{count} encuestas desde el cierre de las listas",
+    "nextMilestone": "Próximo paso",
+    "countNote": "Recuento según los anuncios de las propias facciones; una facción que anunció su salida de la coalición se cuenta en la oposición.",
+    "countNoteLink": "Detalles y fuentes por facción"
   },
   "members": {
     "title": "Diputados de la Knéset",

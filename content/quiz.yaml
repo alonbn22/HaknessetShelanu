@@ -35,6 +35,8 @@ questions:
       en: "The Supreme Court's powers should be limited by legislation."
       ar: "يجب الحدّ من صلاحيات المحكمة العليا عبر التشريع."
       ru: "Полномочия Верховного суда следует ограничить законодательно."
+      es: "Los poderes del Tribunal Supremo deberían limitarse por ley."
+      fr: "Les pouvoirs de la Cour suprême devraient être limités par la loi."
     stances:
       likud:
         value: 2
@@ -115,6 +117,8 @@ questions:
         recordOf:
           he: "הצבעת סיעת יש עתיד, המתמודדת במסגרת ביחד"
           en: "vote of the Yesh Atid faction, which runs inside Together"
+          es: "votación de la facción Yesh Atid, que se presenta dentro de Juntos"
+          fr: "vote de la faction Yesh Atid, qui se présente au sein d’Ensemble"
         source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(39566)", title: "חוק-יסוד: השפיטה (תיקון מס' 3) — הצבעה במליאה, 2023-07-11", publisher: "הכנסת" }
         quote:
           he: "0 בעד, 22 נגד, 2 נעדרו"
@@ -126,6 +130,8 @@ questions:
         recordOf:
           he: "סיעת המחנה הממלכתי, שבה ישבו חברי כחול לבן עד 2025"
           en: "the National Unity faction, in which Blue and White's members sat until 2025"
+          es: "la facción Unidad Nacional, en la que estuvieron los miembros de Azul y Blanco hasta 2025"
+          fr: "la faction Unité nationale, dans laquelle siégeaient les membres de Bleu et Blanc jusqu’en 2025"
         source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(39566)", title: "חוק-יסוד: השפיטה (תיקון מס' 3) — הצבעה במליאה, 2023-07-11", publisher: "הכנסת" }
         quote:
           he: "0 בעד, 10 נגד, 2 נעדרו"
@@ -152,6 +158,8 @@ questions:
       en: "Religion and state should be more separate — for example public transport on Shabbat and civil marriage."
       ar: "يجب الفصل أكثر بين الدين والدولة — مثلًا مواصلات عامة يوم السبت وزواج مدني."
       ru: "Религию и государство следует разделить сильнее — например, общественный транспорт в шаббат и гражданский брак."
+      es: "Religión y Estado deberían estar más separados — por ejemplo, transporte público en Shabat y matrimonio civil."
+      fr: "La religion et l’État devraient être plus séparés — par exemple des transports publics le Shabbat et le mariage civil."
     stances:
       democrats:
         value: 2
@@ -230,6 +238,8 @@ questions:
       en: "The law should let yeshiva students not be drafted into the IDF."
       ar: "يجب أن يكرّس القانون ترتيبًا يسمح لطلاب المدارس الدينية بعدم التجنيد في الجيش."
       ru: "Закон должен закрепить порядок, позволяющий учащимся ешив не призываться в армию."
+      es: "La ley debería permitir que los estudiantes de yeshivá no sean reclutados por el ejército."
+      fr: "La loi devrait permettre aux étudiants de yeshiva de ne pas être enrôlés dans l’armée."
     stances:
       shas:
         value: 2
@@ -294,6 +304,8 @@ questions:
         recordOf:
           he: "הצבעת סיעת יש עתיד, המתמודדת במסגרת ביחד"
           en: "vote of the Yesh Atid faction, which runs inside Together"
+          es: "votación de la facción Yesh Atid, que se presenta dentro de Juntos"
+          fr: "vote de la faction Yesh Atid, qui se présente au sein d’Ensemble"
         source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(46670)", title: "חוק שירות ביטחון (תיקון מס' 28 - הוראת שעה), התשפ\"ו-2026 — הצבעה במליאה, 2026-07-14", publisher: "הכנסת" }
         quote:
           he: "0 בעד, 24 נגד"
@@ -351,6 +363,8 @@ questions:
       en: "Israel should support the establishment of a Palestinian state as part of a peace agreement."
       ar: "يجب أن تدعم إسرائيل إقامة دولة فلسطينية في إطار اتفاق سلام."
       ru: "Израиль должен поддержать создание палестинского государства в рамках мирного соглашения."
+      es: "Israel debería apoyar la creación de un Estado palestino como parte de un acuerdo de paz."
+      fr: "Israël devrait soutenir la création d’un État palestinien dans le cadre d’un accord de paix."
     stances:
       likud:
         value: -2
@@ -407,6 +421,8 @@ questions:
         recordOf:
           he: "סיעת המחנה הממלכתי, שבה ישבו חברי כחול לבן עד 2025"
           en: "the National Unity faction, in which Blue and White's members sat until 2025"
+          es: "la facción Unidad Nacional, en la que estuvieron los miembros de Azul y Blanco hasta 2025"
+          fr: "la faction Unité nationale, dans laquelle siégeaient les membres de Bleu et Blanc jusqu’en 2025"
         source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(41304)", title: "\"הצהרות ופרסומים בעולם בנושא הכרה במדינה פלסטינית והצורך בהערכות ישראלית לאתגר מדיני אפשרי\" — הצבעה במליאה, 2024-07-18", publisher: "הכנסת" }
         quote:
           he: "ההצבעה על הצהרת הכנסת \"הכנסת מתנגדת בתוקף להקמת מדינה פלסטינית ממערב לירדן\" (התקבלה 68–9); הצבעה בעד ההצהרה = התנגדות למשפט: 5 בעד, 0 נגד, 3 נעדרו"
@@ -454,6 +470,8 @@ questions:
       en: "Settlement in Judea and Samaria (the West Bank) should be expanded and Israeli sovereignty applied there."
       ar: "يجب توسيع الاستيطان في يهودا والسامرة (الضفة الغربية) وفرض السيادة الإسرائيلية هناك."
       ru: "Следует расширять поселения в Иудее и Самарии (на Западном берегу) и распространить там израильский суверенитет."
+      es: "Los asentamientos en Judea y Samaria (Cisjordania) deberían ampliarse y aplicarse allí la soberanía israelí."
+      fr: "Les implantations en Judée-Samarie (Cisjordanie) devraient être étendues et la souveraineté israélienne y être appliquée."
     stances:
       likud:
         value: 2
@@ -549,6 +567,8 @@ questions:
       en: "The 7 October inquiry should be a state commission (whose members the Supreme Court president appoints), not a commission the government appoints."
       ar: "يجب أن يكون التحقيق في 7 أكتوبر لجنة تحقيق رسمية (يعيّن أعضاءها رئيس المحكمة العليا)، لا لجنة تعيّنها الحكومة."
       ru: "Расследование 7 октября должна вести государственная комиссия (её членов назначает председатель Верховного суда), а не комиссия, назначаемая правительством."
+      es: "La investigación del 7 de octubre debería ser una comisión estatal (cuyos miembros nombra el presidente del Tribunal Supremo), no una comisión nombrada por el Gobierno."
+      fr: "L’enquête sur le 7 octobre devrait être une commission d’État (dont les membres sont nommés par le président de la Cour suprême), pas une commission nommée par le gouvernement."
     stances:
       likud:
         value: -2
@@ -652,6 +672,8 @@ questions:
       en: "The next government should be led by Benjamin Netanyahu."
       ar: "يجب أن تكون الحكومة القادمة برئاسة بنيامين نتنياهو."
       ru: "Следующее правительство должно возглавить Биньямин Нетаньяху."
+      es: "El próximo Gobierno debería estar encabezado por Benjamín Netanyahu."
+      fr: "Le prochain gouvernement devrait être dirigé par Benyamin Netanyahou."
     stances:
       likud:
         value: 2
@@ -717,6 +739,8 @@ questions:
       en: "Arab parties should be able to be partners in a governing coalition."
       ar: "ينبغي أن تتمكن الأحزاب العربية من أن تكون شريكة في الائتلاف الحاكم."
       ru: "Арабские партии должны иметь возможность быть партнёрами по правящей коалиции."
+      es: "Los partidos árabes deberían poder ser socios de una coalición de gobierno."
+      fr: "Les partis arabes devraient pouvoir être partenaires d’une coalition gouvernementale."
     stances:
       raam:
         value: 2
@@ -789,6 +813,8 @@ questions:
       en: "Terrorists should face the death penalty."
       ar: "يجب فرض عقوبة الإعدام على الإرهابيين."
       ru: "Террористов следует приговаривать к смертной казни."
+      es: "Los terroristas deberían enfrentarse a la pena de muerte."
+      fr: "Les terroristes devraient encourir la peine de mort."
     stances:
       likud:
         value: 2
@@ -869,6 +895,8 @@ questions:
         recordOf:
           he: "הצבעת סיעת יש עתיד, המתמודדת במסגרת ביחד"
           en: "vote of the Yesh Atid faction, which runs inside Together"
+          es: "votación de la facción Yesh Atid, que se presenta dentro de Juntos"
+          fr: "vote de la faction Yesh Atid, qui se présente au sein d’Ensemble"
         source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(45858)", title: "חוק עונש מוות למחבלים, התשפ\"ו-2026 — הצבעה במליאה, 2026-03-30", publisher: "הכנסת" }
         quote:
           he: "0 בעד, 23 נגד, 1 נעדרו"
@@ -889,6 +917,8 @@ questions:
       en: "State funding for haredi schools should be conditional on teaching the full core curriculum (maths, English)."
       ar: "يجب أن يكون تمويل الدولة للمدارس الحريدية مشروطًا بتدريس المنهاج الأساسي الكامل (رياضيات، إنجليزية)."
       ru: "Государственное финансирование харедимских школ должно быть обусловлено преподаванием полной базовой программы (математика, английский)."
+      es: "La financiación estatal de las escuelas jaredíes debería condicionarse a enseñar el currículo básico completo (matemáticas, inglés)."
+      fr: "Le financement public des écoles haredi devrait être conditionné à l’enseignement du programme de base complet (mathématiques, anglais)."
     stances:
       together:
         value: 2
@@ -929,6 +959,8 @@ questions:
         recordOf:
           he: "סיעת המחנה הממלכתי, שבה ישבו חברי כחול לבן עד 2025"
           en: "the National Unity faction, in which Blue and White's members sat until 2025"
+          es: "la facción Unidad Nacional, en la que estuvieron los miembros de Azul y Blanco hasta 2025"
+          fr: "la faction Unité nationale, dans laquelle siégeaient les membres de Bleu et Blanc jusqu’en 2025"
         source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(39288)", title: "הצעת חוק חובת לימודי ליבה וביטול מוסדות הפטור (תיקוני חקיקה), התשפ\"ג-2023 — הצבעה במליאה, 2023-05-31", publisher: "הכנסת" }
         quote:
           he: "3 בעד, 0 נגד, 9 נעדרו — פחות ממחצית הסיעה הצביעה, לכן העוצמה הוגבלה"

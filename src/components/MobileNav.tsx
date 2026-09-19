@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
-import { navItems, isActive } from "./nav-items";
+import { navItems, isActive, isHighlighted } from "./nav-items";
 
 // Hamburger menu for small screens (desktop uses NavLinks).
 export function MobileNav() {
@@ -64,7 +64,11 @@ export function MobileNav() {
                       aria-current={active ? "page" : undefined}
                       onClick={() => setOpen(false)}
                       className={`block rounded-lg px-3 py-2.5 text-sm ${
-                        active ? "bg-chrome-hover font-semibold" : "text-on-chrome/90 hover:bg-chrome-hover"
+                        isHighlighted(item)
+                          ? `font-semibold ${active ? "bg-on-chrome text-chrome" : "bg-on-chrome/15 text-on-chrome hover:bg-on-chrome/25"}`
+                          : active
+                            ? "bg-chrome-hover font-semibold"
+                            : "text-on-chrome/90 hover:bg-chrome-hover"
                       }`}
                     >
                       {t(item.key)}

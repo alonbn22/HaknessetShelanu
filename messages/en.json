@@ -67,7 +67,14 @@
     "votingDays": "The plenum held votes on {term} days this Knesset — {inYear} of them in {year}",
     "thisWeekEmpty": "No committee sittings are scheduled in the next seven days.",
     "figuresSource": "Source: Knesset open-data API · as of {date}",
-    "lawVote": "The Knesset vote"
+    "lawVote": "The Knesset vote",
+    "electionEyebrow": "The 26th Knesset election",
+    "daysToElection": "{days, plural, =0 {Election day is today} one {# day to the election} other {# days to the election}}",
+    "listsSummary": "{submitted} lists submitted, {polled} of them measured in the polls",
+    "pollsSummary": "{count} polls since the lists closed",
+    "nextMilestone": "Next up",
+    "countNote": "Counted by the factions’ own announcements; a faction that announced it left the coalition is counted with the opposition.",
+    "countNoteLink": "Details and sources per faction"
   },
   "members": {
     "title": "Knesset Members",

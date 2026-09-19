@@ -13,7 +13,7 @@ export const navItems = [
   { href: "/budget", key: "budget", group: "primary" },
   // "2026 Elections" — the page carries the upcoming-election section on top of
   // the full elections history.
-  { href: "/elections", key: "elections", group: "primary" },
+  { href: "/elections", key: "elections", group: "primary", highlight: true },
   { href: "/attendance", key: "attendance", group: "more" },
   { href: "/compare", key: "compare", group: "more" },
   { href: "/ministers", key: "ministers", group: "more" },
@@ -25,6 +25,10 @@ export const navItems = [
 ] as const;
 
 export type NavItem = (typeof navItems)[number];
+
+// `highlight` marks the one item that is the site's event of the season — the
+// 2026 election — so it reads as a pill rather than one more link.
+export const isHighlighted = (item: NavItem): boolean => "highlight" in item && item.highlight === true;
 
 export const primaryNav = navItems.filter((i) => i.group === "primary");
 export const moreNav = navItems.filter((i) => i.group === "more");

@@ -10,8 +10,12 @@ import {
   getPartyProfile,
   getElectionOutlook,
   partyText,
+  partyTextAttrs,
   partyList,
 } from "@/lib/content";
+import { FactionStatusNote } from "@/components/FactionStatusNote";
+import { SourceLinks } from "@/components/SourceLinks";
+import { formatDate } from "@/lib/format";
 import {
   getFaction,
   getCurrentMembers,
@@ -61,7 +65,30 @@ export default async function PartyPage({
   // Link the leader to their member page, but only when the election outlook holds
   // a *verified* leaderPersonId for this faction whose Hebrew name matches the
   // profile's — so a leadership change never points us at the wrong person.
-  const electionParty = getElectionOutlook()?.parties.find((p) => p.factionId === factionId);
+  const outlook = getElectionOutlook();
+  const electionParty = outlook?.parties.find((p) => p.factionId === factionId);
+  // How the faction goes into the 2026 election (content/party-profiles.yaml),
+  // resolved against the registry card or the full submitted-lists table so
+  // the list name, letters and head come from the CEC page, never retyped.
+  const e2026 = profile?.election2026 ?? null;
+  const e2026Party = e2026?.slug ? outlook?.parties.find((p) => p.slug === e2026.slug) : undefined;
+  const e2026Row =
+    e2026?.listNumber != null
+      ? outlook?.submittedLists?.lists.find((l) => l.listNumber === e2026.listNumber)
+      : e2026?.slug
+        ? outlook?.submittedLists?.lists.find((l) => l.slug === e2026.slug)
+        : undefined;
+  const cec = e2026Party?.cec ?? null;
+  const letters2026 = cec?.letters ?? e2026Row?.letters ?? null;
+  const lettersFinal = cec?.lettersStatus === "approved";
+  const listName2026 = cec ? partyText(cec.listName, locale) : e2026Row ? partyText(e2026Row.name, locale) : "";
+  const listUrl2026 = cec?.url ?? e2026Row?.url ?? null;
+  const listHead2026 = e2026Row?.head ? partyText(e2026Row.head, locale) : "";
+  const submittedBy2026 = cec?.submittedBy ?? e2026Row?.submittedBy ?? [];
+  const approvalDate = outlook?.keyDates?.find((d) => d.key === "kd-approval")?.date;
+  const approvalText = approvalDate ? formatDate(approvalDate, locale) : "";
+  const listAnchor = e2026?.slug ? `/elections#list-${e2026.slug}` : "/elections#all-lists";
+  const updates = [...(profile?.updates ?? [])].sort((a, b) => (a.date < b.date ? 1 : -1));
   const leaderMatches =
     electionParty?.leader?.he?.trim() === profile?.leaderHe?.trim();
   const leaderPersonId =
@@ -99,8 +126,8 @@ export default async function PartyPage({
             {factionName(factionId, faction.nameHe, locale)}
           </h1>
           <span
-            className={`rounded-full px-3 py-1 text-sm font-medium text-white ${
-              isCoalition ? "bg-coalition" : "bg-opposition"
+            className={`rounded-full px-3 py-1 text-sm font-medium ${
+              isCoalition ? "bg-coalition text-on-coalition" : "bg-opposition text-on-opposition"
             }`}
           >
             {isCoalition ? t("common.coalition") : t("common.opposition")}
@@ -111,28 +138,100 @@ export default async function PartyPage({
             {faction.nameHe}
           </div>
         )}
-        {profile?.ballotLetters && (
-          <div className="flex flex-wrap items-center gap-3 pt-1">
-            <span className="text-sm font-medium text-muted">{t("party.ballot")}:</span>
-            <span
-              className="inline-flex items-center justify-center rounded-md border-2 border-foreground bg-white px-3 py-1 text-2xl font-black tracking-widest text-foreground"
-              dir="rtl"
-              lang="he"
-              aria-label={`${t("party.ballot")}: ${profile.ballotLetters}`}
-            >
-              {profile.ballotLetters}
-            </span>
-            <span className="text-xs text-muted">
-              {partyText(profile.ballotNote, locale)
-                ? `${partyText(profile.ballotNote, locale)} `
-                : ""}
-              {t("party.ballotEra")}
-            </span>
+        <FactionStatusNote factionId={factionId} />
+        {/* 2026: how the faction runs, with the CEC's list page as the source.
+            Letters are the requested ones until the committee approves them. */}
+        {e2026 && (
+          <div className="mt-2 rounded-lg border border-line bg-surface p-3 text-sm space-y-2">
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+              <span className="font-semibold">{t("party.election2026")}</span>
+              <span className="text-muted">
+                {t(
+                  e2026.runsAs === "own"
+                    ? "party.runsOwn"
+                    : e2026.runsAs === "within"
+                      ? "party.runsWithin"
+                      : e2026.runsAs === "merged"
+                        ? "party.runsMerged"
+                        : "party.runsNot",
+                )}
+              </span>
+            </div>
+            {letters2026 && (
+              <div className="flex flex-wrap items-center gap-3">
+                <span
+                  className="inline-flex items-center justify-center rounded-md border-2 border-foreground bg-surface px-3 py-1 text-2xl font-black tracking-widest text-foreground"
+                  dir="rtl"
+                  lang="he"
+                  aria-label={`${t(lettersFinal ? "party.lettersApproved" : "party.lettersRequested")}: ${letters2026}`}
+                >
+                  {letters2026}
+                </span>
+                <span className="text-xs text-muted max-w-prose">
+                  {t(lettersFinal ? "party.lettersApproved" : "party.lettersRequested")}
+                  {!lettersFinal && approvalText ? ` — ${t("party.lettersPending", { date: approvalText })}` : ""}
+                  {profile?.ballotLetters && profile.ballotLetters !== letters2026 ? (
+                    <>
+                      {" "}
+                      ({t("party.ballot2022")}:{" "}
+                      <span dir="rtl" lang="he">
+                        {profile.ballotLetters}
+                      </span>
+                      )
+                    </>
+                  ) : null}
+                </span>
+              </div>
+            )}
+            {listName2026 && (
+              <div>
+                <span className="text-muted">{t("party.listName")}: </span>
+                <Link href={listAnchor} className="font-medium text-accent hover:underline" {...rtlAttrs(listName2026)}>
+                  {listName2026}
+                </Link>
+              </div>
+            )}
+            {listHead2026 && (
+              <div>
+                <span className="text-muted">{t("party.listHead")}: </span>
+                <span {...rtlAttrs(listHead2026)}>{listHead2026}</span>
+              </div>
+            )}
+            {submittedBy2026.length > 0 && (
+              <div>
+                <span className="text-muted">{t("party.submittedBy")}: </span>
+                <span dir="rtl" lang="he">
+                  {submittedBy2026.join(" · ")}
+                </span>
+              </div>
+            )}
+            {e2026.note && (
+              <p className="leading-relaxed" {...partyTextAttrs(e2026.note, locale)}>
+                {partyText(e2026.note, locale)}
+              </p>
+            )}
+            <div className="flex flex-wrap gap-x-3 gap-y-1">
+              {listUrl2026 && (
+                <a
+                  className="text-xs underline text-muted hover:text-accent"
+                  href={listUrl2026}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t("party.cecPage")}
+                </a>
+              )}
+              {e2026.sources && e2026.sources.length > 0 && (
+                <SourceLinks sources={e2026.sources} label={t("common.source")} />
+              )}
+            </div>
           </div>
         )}
         <div className="flex flex-wrap gap-6 pt-2">
           <div>
-            <div className="text-2xl font-bold text-accent">{members.length}</div>
+            {/* Seats = members holding a seat now; a Norwegian-law minister
+                listed below still belongs to the faction but holds no seat. */}
+            <div className="text-2xl font-bold text-accent">{members.filter((m) => m.isSitting).length}</div>
             <div className="text-sm text-muted">{t("parties.seats")}</div>
           </div>
           {avgParticipation != null && (
@@ -273,6 +372,33 @@ export default async function PartyPage({
             )}
           </div>
           <p className="text-xs text-muted">{t("party.editorialNote")}</p>
+        </section>
+      )}
+
+      {updates.length > 0 && (
+        <section className="rounded-xl bg-white p-6 shadow-sm space-y-3">
+          <h2 className="text-xl font-semibold">{t("party.updates")}</h2>
+          <p className="text-xs text-muted">{t("party.updatesNote")}</p>
+          <ol className="space-y-3">
+            {updates.map((u) => (
+              <li key={`${u.date}-${u.text.he.slice(0, 24)}`} className="flex gap-3 text-sm">
+                <time dateTime={u.date} className="shrink-0 tabular-nums text-muted">
+                  {formatDate(u.date, locale)}
+                </time>
+                <div className="space-y-0.5">
+                  <p className="leading-relaxed" {...partyTextAttrs(u.text, locale)}>
+                    {partyText(u.text, locale)}
+                  </p>
+                  <SourceLinks sources={u.sources} label={t("common.source")} />
+                </div>
+              </li>
+            ))}
+          </ol>
+          {profile?.verified && (
+            <p className="text-xs text-muted">
+              {t("common.lastChecked", { date: formatDate(profile.verified, locale) })}
+            </p>
+          )}
         </section>
       )}
 

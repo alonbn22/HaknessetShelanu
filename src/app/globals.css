@@ -49,6 +49,10 @@
   --coalition-ink: #0038b8;
   --opposition: #0038b8;
   --opposition-ink: #0038b8;
+  /* Text on a coalition/opposition-filled badge: white on the deep blue in
+     light mode; the lighter dark-mode blue needs ink (white measured 3.3:1). */
+  --on-coalition: #ffffff;
+  --on-opposition: #ffffff;
 
   /* Status ramp: five tones × {base, soft, ink, line}. Every ink clears
      4.5:1 on its own soft and on --surface. */
@@ -103,6 +107,8 @@
   --color-coalition-ink: var(--coalition-ink);
   --color-opposition: var(--opposition);
   --color-opposition-ink: var(--opposition-ink);
+  --color-on-coalition: var(--on-coalition);
+  --color-on-opposition: var(--on-opposition);
   --color-pass: var(--pass);
   --color-pass-soft: var(--pass-soft);
   --color-pass-ink: var(--pass-ink);
@@ -242,6 +248,8 @@ html.dark {
   --coalition-ink: #578fdb;
   --opposition: #578fdb;
   --opposition-ink: #578fdb;
+  --on-coalition: #0f1620;
+  --on-opposition: #0f1620;
 
   --pass: #3ddc84;
   --pass-soft: #12291d;
@@ -415,6 +423,8 @@ html.a11y-contrast {
   --coalition-ink: #8ab4ff;
   --opposition: #8ab4ff;
   --opposition-ink: #8ab4ff;
+  --on-coalition: #000000;
+  --on-opposition: #000000;
   --pass: #6fe3a3;
   --pass-soft: #000000;
   --pass-ink: #6fe3a3;

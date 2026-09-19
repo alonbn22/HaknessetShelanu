@@ -126,29 +126,45 @@ socio-economic indices by municipality (data.gov.il) for context.
 
 ## Needs a human before launch
 
-- **Re-run the Knesset sync** (`gh workflow enable "Sync Knesset data"` or a
-  manual sync) — the DB is from 23 Jul 2026 and the member-record research
-  (18–19 Sep 2026) found positions it no longer reflects: Dan Illouz, Ron
-  Katz, Elazar Stern and Yoav Segalovich left the Knesset (Aug–Sep 2026);
-  Haim Katz (4 ministries) and Yariv Levin (3 added ministries) hold more
-  portfolios; Edelstein's committee chair is stale; Yaakov Asher, Idan Roll's
-  successor and Yoav Hasson gained faction/deputy-Speaker roles; Solomon was
-  removed from committees. Each is recorded as a dated `role` item in the
-  member's record with sources, so the pages are right even before the sync.
-- **Ballot letters** for the 2026 lists once the CEC publishes the approved
-  lists (27 Sep 2026) — `content/party-profiles.yaml` still shows 2022 letters
-  labelled as such.
+- **Approved ballot letters** once the CEC publishes its approval notices
+  (27 Sep 2026): flip `lettersStatus: requested` → `approved` on each
+  `cec:` block in `content/election.yaml` and on `submittedLists`, and drop
+  any list the committee refused. Letters shown today are the *requested*
+  ones from the CEC index (updated 18 Sep 2026), labelled as such.
+- **Re-run the Knesset sync closer to launch** — the DB is from 19 Sep 2026
+  (members, positions, biographies); votes were last synced 23 Jul and the
+  plenum is in election recess, so nothing is missing yet.
+- **Open faction questions the sources could not settle** (19 Sep 2026):
+  New Hope's Knesset faction merger into Likud was never completed and
+  Sharren Haskel's High Court petition on it is undecided; UTJ has had no
+  faction chair since 17 Jul 2025 (the page shows none — leave it); the
+  Likud/Otzma/Democrats disqualification petitions to the CEC are pending.
+  Re-check after 27 Sep.
 - Weekly re-review of `content/polls.yaml` and `content/quiz.yaml` until
   27 Oct 2026 (bump `lastReviewed`; add new polls from the outlets' own
   articles; the Channel 16 polls stay out unless a written publication appears).
 - Accessibility-coordinator name / email / phone (`a11y.statement.*` placeholders).
 - Corrections email placeholder.
 - `NEXT_PUBLIC_SITE_URL` once a production domain exists (sitemap/OG URLs).
-- Editorial sign-off on curated member records, coalition.yaml, party-profiles,
-  and the elections/quiz figures.
+- Editorial sign-off on curated member records, coalition.yaml (per-faction
+  statuses added 19 Sep 2026), party-profiles (88 dated developments added
+  19 Sep 2026 from the faction verification pass), and the elections/quiz
+  figures.
 
 ## Done (recent)
 
+- **Factions verified like the members (19 Sep 2026)**: coalition/opposition
+  is a dated, sourced status per faction (`content/coalition.yaml`
+  `statuses`; UTJ outside since 14 Jul 2025, Noam since 16 Jul 2025 —
+  Noam had been mislabelled coalition); faction pages carry a "2026
+  election" block from the CEC list pages (requested letters, list name,
+  head, submitting parties), sourced recent developments and a last-checked
+  date; deputy ministers are labelled as such; the election page lists all
+  38 submitted lists with requested letters; the Knesset portal link points
+  at the current MK page URL; Commons thumbnails canonicalised to
+  `upload.wikimedia.org` (the CSP host) in the sync and at render time;
+  dark mode survives language switches. Members sync of 19 Sep 2026
+  (`cbdb8ee`) with entry records for the four new MKs.
 - **The 2026 election, fairly (18–19 Sep 2026)**: `content/polls.yaml` — 18
   seat polls since the lists closed, each verified against the outlet's own
   article (`/elections#polls`: poll of polls with one poll per institute, a

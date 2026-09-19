@@ -63,11 +63,15 @@ function SourceLinks({ sources, label }: {
 export default async function ElectionsHistoryPage() {
   const t = await getTranslations("electionsHistory");
   const te = await getTranslations("election");
+  const tp = await getTranslations("party");
   const tc = await getTranslations("common");
   const ts = await getTranslations("spectrum");
   const locale = await getLocale();
   const elections = getElectionsHistory();
   const outlook = getElectionOutlook();
+  // Approval date from the timeline, so the "requested letters" caveat never hardcodes it.
+  const approvalDateIso = outlook?.keyDates?.find((d) => d.key === "kd-approval")?.date;
+  const approvalDateText = approvalDateIso ? formatDate(approvalDateIso, locale) : "";
   // The record strip's vote rows: each controversial law that has a roll-call
   // inside the site's record, tallied by faction once for the whole page.
   const lawVotes = getControversialLaws().flatMap((law) => law.votes.map((v) => ({ law, vote: v, tallies: getFactionTallies(v.id) })));
@@ -191,7 +195,7 @@ export default async function ElectionsHistoryPage() {
                   const profile = p.factionId != null ? getPartyProfile(p.factionId) : undefined;
                   const positions = profile ? partyList(profile.positions, locale).slice(0, 2) : [];
                   return (
-                  <div key={p.name.he} className="rounded-lg bg-white p-3 shadow-sm space-y-1.5">
+                  <div key={p.name.he} id={`list-${p.slug}`} className="rounded-lg bg-surface p-3 shadow-sm space-y-1.5 scroll-mt-24">
                     <div className="flex items-start justify-between gap-2">
                       <div className="font-semibold">
                         {p.factionId != null ? (
@@ -202,16 +206,36 @@ export default async function ElectionsHistoryPage() {
                           partyText(p.name, locale)
                         )}
                       </div>
-                      {profile?.ballotLetters && (
-                        <span
-                          dir="rtl"
-                          lang="he"
-                          className="shrink-0 rounded bg-black/5 px-1.5 py-0.5 text-xs font-bold tracking-wide"
+                      {/* The letters the list asked for at submission, from its
+                          CEC page — marked "requested" until the committee
+                          approves lists and letters. */}
+                      {p.cec && (
+                        <a
+                          href={p.cec.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="shrink-0 rounded bg-surface-sunken px-1.5 py-0.5 text-xs font-bold tracking-wide hover:bg-chrome-hover"
+                          title={
+                            p.cec.lettersStatus === "approved"
+                              ? tp("lettersApproved")
+                              : te("lettersBadgeTitle", { date: approvalDateText })
+                          }
                         >
-                          {profile.ballotLetters}
-                        </span>
+                          <span dir="rtl" lang="he">{p.cec.letters}</span>
+                          {p.cec.lettersStatus !== "approved" && (
+                            <>
+                              {" "}
+                              <span className="font-normal text-muted">{te("lettersRequestedShort")}</span>
+                            </>
+                          )}
+                        </a>
                       )}
                     </div>
+                    {p.cec && (
+                      <p className="text-xs text-muted" dir="rtl" lang="he">
+                        {partyText(p.cec.listName, "he")}
+                      </p>
+                    )}
                     {p.leader && (
                       <div className="text-sm text-muted">
                         {te("leader")}:{" "}
@@ -364,6 +388,79 @@ export default async function ElectionsHistoryPage() {
                 })}
               </div>
             </div>
+          )}
+
+          {/* Every list that submitted — the 15 cards above are the ones
+              pollsters name; the other 23 exist too. From the CEC index. */}
+          {outlook.submittedLists && outlook.submittedLists.lists.length > 0 && (
+            <details id="all-lists" className="rounded-lg bg-surface p-3 shadow-sm scroll-mt-24">
+              <summary className="cursor-pointer text-sm font-semibold">
+                {te("allLists", { count: outlook.submittedLists.lists.length })}
+              </summary>
+              <p className="mt-2 text-xs text-muted leading-relaxed">
+                {te("allListsIntro", { date: approvalDateText })}
+              </p>
+              <div className="mt-2 overflow-x-auto rounded-card border border-line">
+                <table className="w-full text-xs">
+                  <thead className="bg-surface-sunken text-start">
+                    <tr>
+                      <th className="px-2 py-1.5 text-start font-semibold">#</th>
+                      <th className="px-2 py-1.5 text-start font-semibold">{te("colLetters")}</th>
+                      <th className="px-2 py-1.5 text-start font-semibold">{te("colList")}</th>
+                      <th className="px-2 py-1.5 text-start font-semibold">{te("colHead")}</th>
+                      <th className="px-2 py-1.5 text-start font-semibold">{te("colSubmittedBy")}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {outlook.submittedLists.lists.map((l) => (
+                      <tr key={l.listNumber} className="border-t border-line align-top">
+                        <td className="px-2 py-1.5 tabular-nums text-muted">{l.listNumber}</td>
+                        <td className="px-2 py-1.5 font-bold tracking-wide whitespace-nowrap" dir="rtl" lang="he">
+                          {l.letters}
+                        </td>
+                        <td className="px-2 py-1.5" dir="rtl" lang="he">
+                          {l.slug ? (
+                            <a href={`#list-${l.slug}`} className="underline hover:text-accent">
+                              {partyText(l.name, "he")}
+                            </a>
+                          ) : (
+                            partyText(l.name, "he")
+                          )}{" "}
+                          <a
+                            href={l.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-muted underline"
+                            title={tp("cecPage")}
+                          >
+                            ↗
+                          </a>
+                        </td>
+                        <td className="px-2 py-1.5" dir="rtl" lang="he">
+                          {l.head ? partyText(l.head, "he") : ""}
+                        </td>
+                        <td className="px-2 py-1.5 text-muted" dir="rtl" lang="he">
+                          {(l.submittedBy ?? []).join(" · ")}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="mt-2 text-xs text-muted">
+                {te("cecSourceLine")}{" "}
+                <a
+                  className="underline hover:text-accent"
+                  href={outlook.submittedLists.source.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {outlook.submittedLists.source.publisher ?? outlook.submittedLists.source.title}
+                </a>
+                {" · "}
+                {tc("lastChecked", { date: formatDate(outlook.submittedLists.asOf, locale) })}
+              </p>
+            </details>
           )}
 
           {outlook.howToVote.length > 0 && (

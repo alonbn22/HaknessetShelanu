@@ -184,4 +184,39 @@ if (outlook) {
       for (const src of a.sources) assert.ok(/^https:\/\//.test(src.url), `${x}-${y}: source not https`);
     }
   });
+
+  test("every running list carries its CEC page: official name, requested letters, submitting parties", () => {
+    for (const p of outlook.parties) {
+      assert.ok(p.cec, `${p.slug}: no cec block — the CEC list page is the primary source for letters and names`);
+      assert.match(p.cec.url, /^https:\/\/www\.gov\.il\//, `${p.slug}: cec.url must be the gov.il page`);
+      assert.ok(p.cec.listName.he.length > 0 && p.cec.letters.length > 0, `${p.slug}: cec name/letters missing`);
+      assert.ok(p.cec.submittedBy.length >= 1, `${p.slug}: submittedBy empty`);
+      assert.ok(p.cec.published <= outlook.lastReviewed, `${p.slug}: cec.published after lastReviewed`);
+    }
+  });
+
+  test("the submitted-lists table is complete, unique, and points back at the registry", () => {
+    const table = outlook.submittedLists;
+    assert.ok(table, "submittedLists missing");
+    const numbers = new Set<number>();
+    const urls = new Set<string>();
+    const slugs = new Set(outlook.parties.map((p) => p.slug));
+    for (const l of table.lists) {
+      assert.ok(!numbers.has(l.listNumber), `list number ${l.listNumber} repeated`);
+      numbers.add(l.listNumber);
+      assert.ok(!urls.has(l.url), `list url repeated: ${l.url}`);
+      urls.add(l.url);
+      assert.match(l.url, /^https:\/\/www\.gov\.il\//, `${l.listNumber}: url must be the CEC page`);
+      if (l.slug) assert.ok(slugs.has(l.slug), `${l.listNumber}: slug ${l.slug} not in the registry`);
+    }
+    // Every registry list appears in the table exactly once, with the same letters and page.
+    for (const p of outlook.parties) {
+      const rows: typeof table.lists = table.lists.filter((l) => l.slug === p.slug);
+      assert.equal(rows.length, 1, `${p.slug}: expected one table row, got ${rows.length}`);
+      assert.equal(rows[0].letters, p.cec?.letters, `${p.slug}: letters differ between card and table`);
+      assert.equal(rows[0].url, p.cec?.url, `${p.slug}: CEC page differs between card and table`);
+    }
+    // The CEC numbered 38 lists on 18 Sep 2026; a shorter table means a row was lost.
+    assert.ok(table.lists.length >= 38, `expected all 38 submitted lists, got ${table.lists.length}`);
+  });
 }

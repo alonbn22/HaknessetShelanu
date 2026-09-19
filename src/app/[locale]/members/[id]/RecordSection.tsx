@@ -68,7 +68,7 @@ function ClaimList({
                   <span className="font-medium" {...rtlProps(localized(c.title, locale))}>
                     {localized(c.title, locale)}
                   </span>
-                  <span className="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-muted">
+                  <span className="rounded-full bg-surface-sunken px-2 py-0.5 text-xs text-foreground/80">
                     {t(`recordCategory.${c.category}`)}
                   </span>
                   {c.status && (

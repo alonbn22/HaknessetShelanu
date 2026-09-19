@@ -1,6 +1,8 @@
-# Coalition membership is not available in the Knesset API — it is maintained
-# by hand here. Faction IDs are KNS_Faction Ids for the given Knesset.
-# PLEASE REVIEW after political changes (resignations, new agreements).
+# Coalition membership is not published as data by the Knesset — it is
+# maintained by hand here from the factions' own announcements as reported by
+# major outlets (and the Knesset's government page for ministers). Faction IDs
+# are KNS_Faction Ids for the given Knesset. PLEASE REVIEW after political
+# changes (resignations, new agreements).
 #
 # Knesset 25 faction IDs for reference:
 #   1095 ש"ס                     1102 יש עתיד
@@ -12,22 +14,107 @@
 #                                1108 הימין הממלכתי (סער)
 #                                1110 כחול לבן - המחנה הממלכתי
 #
-# Status reflected below: UTJ (יהדות התורה) left the coalition in July 2025
-# over the draft law; Shas resigned its ministries but announced it remains
-# part of the coalition. The 25th Knesset dispersed on 17 July 2026 (the
-# dissolution law, second and third readings); the government continues as a
-# caretaker (ממשלת מעבר) until the 26th Knesset's government is sworn in, so
-# coalition membership is held as it stood at dissolution.
+# Status held below (verified 19 Sep 2026):
+# - The 37th government was sworn in on 29 Dec 2022 with Likud, Shas, UTJ,
+#   Religious Zionism, Otzma Yehudit and Noam (64 seats).
+# - New Hope (הימין הממלכתי) joined the government on 30 Sep 2024.
+# - Otzma Yehudit left the government on 19–21 Jan 2025 and returned on
+#   19–20 Mar 2025.
+# - UTJ (Degel HaTorah and Agudat Yisrael) left the government AND the
+#   coalition on 14 Jul 2025 over the draft law; as of May 2026 it was still
+#   "formally" outside both (Times of Israel, 12 May 2026).
+# - Shas ministers resigned on 16–17 Jul 2025, but Shas announced it remains in
+#   the coalition.
+# - Noam's Avi Maoz announced on 16 Jul 2025 that he is not a member of the
+#   coalition ("there are only 60 MKs in the coalition").
+# - The 25th Knesset dispersed on 17 Jul 2026 (dissolution law, second and
+#   third readings); the government continues as a caretaker (ממשלת מעבר)
+#   until the 26th Knesset's government is sworn in, so membership is held as
+#   it stood at dissolution: 60 seats.
 
 knesset: 25
-asOf: "2026-07-17"
+asOf: "2026-09-19"
 caretakerSince: "2026-07-17"
-sourceUrl: "https://en.wikipedia.org/wiki/Thirty-seventh_government_of_Israel"
-sourceLabel: "Thirty-seventh government of Israel (Wikipedia)"
+governmentSince: "2022-12-29"
+sourceUrl: "https://main.knesset.gov.il/mk/government/pages/governments.aspx?govId=37"
+sourceLabel: "הממשלה ה-37 — אתר הכנסת"
 coalitionFactionIds:
   - 1096 # הליכוד
   - 1095 # ש"ס
   - 1105 # הציונות הדתית
   - 1106 # עוצמה יהודית
-  - 1107 # נעם
   - 1108 # הימין הממלכתי
+
+# Per-faction status with the date it took effect and the reports it rests on.
+# `since` is shown on the faction and member pages only when it differs from
+# the government's start (i.e. the faction changed sides mid-term).
+statuses:
+  1096:
+    status: coalition
+    since: "2022-12-29"
+    sources:
+      - { url: "https://main.knesset.gov.il/mk/government/pages/governments.aspx?govId=37", title: "הממשלה ה-37 — הרכב הממשלה הנוכחי", publisher: "הכנסת" }
+  1095:
+    status: coalition
+    since: "2022-12-29"
+    note:
+      he: "שרי ש\"ס התפטרו מהממשלה ב-16–17 ביולי 2025 בעקבות אי-חקיקת חוק הגיוס; המפלגה הודיעה שהיא נשארת בקואליציה."
+      en: "Shas ministers resigned from the government on 16–17 July 2025 over the draft law; the party announced it remains in the coalition."
+    sources:
+      - { url: "https://www.jpost.com/israel-news/article-861246", title: "Shas spiritual leaders order party members to quit government (16 Jul 2025)", publisher: "The Jerusalem Post" }
+      - { url: "https://www.timesofisrael.com/haredi-factions-back-dissolving-knesset-increasing-chance-for-early-elections/", title: "Haredi factions push to dissolve Knesset… (12 May 2026): Shas “has continued to support the coalition in the Knesset”", publisher: "The Times of Israel" }
+  1105:
+    status: coalition
+    since: "2022-12-29"
+    sources:
+      - { url: "https://main.knesset.gov.il/mk/government/pages/governments.aspx?govId=37", title: "הממשלה ה-37 — הרכב הממשלה הנוכחי", publisher: "הכנסת" }
+  1106:
+    status: coalition
+    since: "2025-03-20"
+    note:
+      he: "עוצמה יהודית פרשה מהממשלה ב-19–21 בינואר 2025 בעקבות עסקת החטופים והפסקת האש, ושבה אליה ב-19–20 במרץ 2025."
+      en: "Otzma Yehudit left the government on 19–21 January 2025 over the hostage deal and ceasefire, and returned on 19–20 March 2025."
+    sources:
+      - { url: "https://www.timesofisrael.com/with-otzma-yehudit-out-of-government-netanyahu-set-to-appoint-replacement-ministers/", title: "With Otzma Yehudit out of government, Netanyahu set to appoint replacement ministers (19 Jan 2025)", publisher: "The Times of Israel" }
+      - { url: "https://www.timesofisrael.com/ben-gvir-reappointed-police-minister-as-knesset-okays-his-partys-return-to-government/", title: "Ben Gvir reappointed police minister as Knesset okays his party’s return to government (20 Mar 2025)", publisher: "The Times of Israel" }
+  1108:
+    status: coalition
+    since: "2024-09-30"
+    note:
+      he: "הימין הממלכתי (תקווה חדשה) הצטרף לממשלה ב-30 בספטמבר 2024, לאחר שפרש ממנה עם המחנה הממלכתי ביוני 2024."
+      en: "New Hope (הימין הממלכתי) joined the government on 30 September 2024, after leaving it with National Unity in June 2024."
+    sources:
+      - { url: "https://www.timesofisrael.com/as-he-officially-rejoins-government-saar-blasts-opposition-for-living-in-oct-6/", title: "As he officially rejoins government, Sa’ar blasts opposition for ‘living in Oct. 6’ (30 Sep 2024)", publisher: "The Times of Israel" }
+  1101:
+    status: opposition
+    since: "2025-07-14"
+    note:
+      he: "דגל התורה ואגודת ישראל הודיעו ב-14 ביולי 2025 על פרישה מהממשלה ומהקואליציה בשל אי-חקיקת חוק הגיוס; נכון למאי 2026 הסיעה עדיין מחוץ לקואליציה. חבריה נספרים בסקרים עם גוש נתניהו — אך מעמדה בכנסת הוא אופוזיציה. ב-19 בינואר 2026 מונה ישראל אייכלר (אגודת ישראל) לסגן שר התקשורת במסגרת חילופי מושבים לפי החוק הנורווגי, שאפשרו ליצחק פינדרוס (דגל התורה) לשוב לכנסת; המינוי לא דווח כחזרה של הסיעה לקואליציה."
+      en: "Degel HaTorah and Agudat Yisrael announced on 14 July 2025 that they were leaving the government and the coalition over the draft law; as of May 2026 the faction was still outside the coalition. Pollsters count it with the Netanyahu bloc, but its Knesset status is opposition. On 19 January 2026 Yisrael Eichler (Agudat Yisrael) was appointed deputy communications minister in a Norwegian-law seat swap that let Yitzhak Pindrus (Degel HaTorah) return to the Knesset; the appointment was not reported as the faction rejoining the coalition."
+    sources:
+      - { url: "https://www.ynetnews.com/article/hki11u1mlgx", title: "Degel HaTorah faction says leaving government over draft exemption law (14 Jul 2025)", publisher: "Ynetnews" }
+      - { url: "https://www.timesofisrael.com/haredi-factions-back-dissolving-knesset-increasing-chance-for-early-elections/", title: "Haredi factions push to dissolve Knesset… (12 May 2026): UTJ “formally pulled out of the government and the coalition last year”", publisher: "The Times of Israel" }
+      - { url: "https://www.timesofisrael.com/utjs-eichler-to-be-appointed-deputy-minister-preventing-him-voting-against-draft-bill/", title: "UTJ’s Eichler to be appointed deputy minister, preventing him voting against draft bill (15 Jan 2026)", publisher: "The Times of Israel" }
+      - { url: "https://main.knesset.gov.il/mk/government/pages/governments.aspx?govId=37", title: "הממשלה ה-37 — הרכב הממשלה הנוכחי: סגן שר התקשורת ישראל אייכלר, 19.1.2026", publisher: "הכנסת" }
+  1107:
+    status: opposition
+    since: "2025-07-16"
+    note:
+      he: "אבי מעוז פרש מהממשלה במרץ 2025, וב-16 ביולי 2025 הודיע: \"אני לא חבר בקואליציה. לפי חישובי, יש רק 60 ח\"כים בקואליציה\"."
+      en: "Avi Maoz left the government in March 2025 and announced on 16 July 2025: “I am not a member of the coalition. According to my calculation, there are only 60 MKs in the coalition.”"
+    sources:
+      - { url: "https://www.timesofisrael.com/far-right-lawmaker-avi-maoz-quits-coalition-leaving-pm-with-a-minority-government/", title: "Far-right MK Avi Maoz quits coalition, leaving Netanyahu without Knesset majority (17 Jul 2025)", publisher: "The Times of Israel" }
+  1102: { status: opposition, since: "2022-12-29" }
+  1110:
+    status: opposition
+    since: "2024-06-09"
+    note:
+      he: "כמחנה הממלכתי הייתה בממשלת החירום מ-11 באוקטובר 2023 עד 9 ביוני 2024, אז פרשה ממנה. הסיעה כחול לבן - המחנה הממלכתי נוצרה ב-8 ביולי 2025 מפיצול המחנה הממלכתי."
+      en: "As National Unity it sat in the emergency government from 11 October 2023 until 9 June 2024, when it left. The Blue and White–National Unity faction was formed on 8 July 2025 when National Unity split."
+    sources:
+      - { url: "https://www.timesofisrael.com/urging-elections-gantz-quits-wartime-government-accuses-pm-of-botching-war-effort/", title: "Gantz quits war government, says PM preventing ‘true victory’ over Hamas, urges elections (9 Jun 2024)", publisher: "The Times of Israel" }
+      - { url: "https://main.knesset.gov.il/mk/apps/faction/faction-lobby?KnessetID=25&FactionID=1110", title: "כחול לבן - המחנה הממלכתי — מתאריך 08/07/2025", publisher: "הכנסת" }
+  1104: { status: opposition, since: "2022-12-29" }
+  1099: { status: opposition, since: "2022-12-29" }
+  1103: { status: opposition, since: "2022-12-29" }
+  1100: { status: opposition, since: "2022-12-29" }

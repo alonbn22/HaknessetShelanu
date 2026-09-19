@@ -250,6 +250,18 @@ facts:
 parties:
   - name: { he: "הליכוד", en: "Likud" }
     slug: likud
+    # The Central Elections Committee's own page for the list (read 19 Sep 2026):
+    # official list name, requested letters (final only after the 27 Sep
+    # approval), the parties that submitted it, publication date.
+    cec:
+      url: "https://www.gov.il/he/pages/halikud-tikvahadasha_iist29"
+      listNumber: 29
+      listName: { he: "הליכוד עם בנימין נתניהו לראשות הממשלה" }
+      letters: "מחל"
+      lettersStatus: requested
+      submittedBy: ["הליכוד, תנועה לאומית ליברלית", "תקווה חדשה הימין הממלכתי"]
+      published: "2026-09-08"
+      updated: "2026-09-09"
     leader: { he: "בנימין נתניהו", en: "Benjamin Netanyahu" }
     leaderPersonId: 965
     factionId: 1096
@@ -288,10 +300,20 @@ parties:
       - { he: "יצחק בונצל" }
       - { he: "משה בנימין פרץ" }
     sources:
+      - { url: "https://www.gov.il/he/pages/halikud-tikvahadasha_iist29", title: "הליכוד עם בנימין נתניהו לראשות הממשלה — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "ביחד", en: "Together" }
     slug: together
+    # The Central Elections Committee's own page for the list (read 19 Sep 2026):
+    cec:
+      url: "https://www.gov.il/he/pages/beyahad_list1"
+      listNumber: 1
+      listName: { he: "ביחד בראשות נפתלי בנט" }
+      letters: "ב / רק"
+      lettersStatus: requested
+      submittedBy: ["ביחד בראשות בנט מחזירים את התקווה", "יש עתיד - בראשות יאיר לפיד"]
+      published: "2026-09-07"
     color: "#0097a7" # chart colour — no sitting faction to inherit one from
     leader: { he: "נפתלי בנט", en: "Naftali Bennett" }
     leaderWiki: "https://en.wikipedia.org/wiki/Naftali_Bennett"
@@ -320,11 +342,22 @@ parties:
       - { he: "שחר ורון" }
       - { he: "יסמין פרידמן", personId: 30783 }
     sources:
+      - { url: "https://www.gov.il/he/pages/beyahad_list1", title: "ביחד בראשות נפתלי בנט — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
       - { url: "https://www.timesofisrael.com/naftali-bennett-and-yair-lapid-announce-united-run-under-bennett-in-2026-elections/", title: "Naftali Bennett and Yair Lapid announce united run under Bennett", publisher: "The Times of Israel" }
   - name: { he: "ישר!", en: "Yashar!" }
     slug: yashar
+    # The Central Elections Committee's own page for the list (read 19 Sep 2026):
+    cec:
+      url: "https://www.gov.il/he/pages/yashar_list_2"
+      listNumber: 2
+      listName: { he: "ישר! עם איזנקוט לראשות הממשלה מאחדים את ישראל" }
+      letters: "דרך"
+      lettersStatus: requested
+      submittedBy: ["ישר לישראל עם איזנקוט", "יסודות ישראל"]
+      published: "2026-09-07"
+      updated: "2026-09-10"
     color: "#c2185b" # chart colour — no sitting faction to inherit one from
     leader: { he: "גדי איזנקוט", en: "Gadi Eisenkot" }
     leaderPersonId: 30836
@@ -366,10 +399,21 @@ parties:
       - { he: "אלון צבי פוטרמן" }
       - { he: "טלי מולנר" }
     sources:
+      - { url: "https://www.gov.il/he/pages/yashar_list_2", title: "ישר! עם איזנקוט לראשות הממשלה מאחדים את ישראל — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "הדמוקרטים", en: "The Democrats" }
     slug: democrats
+    # The Central Elections Committee's own page for the list (read 19 Sep 2026):
+    cec:
+      url: "https://www.gov.il/he/pages/hademokratim_list17"
+      listNumber: 17
+      listName: { he: "הדמוקרטים בראשות יאיר גולן" }
+      letters: "אמת"
+      lettersStatus: requested
+      submittedBy: ["הדמוקרטים מיסודה של תנועת העבודה", "מרצ"]
+      published: "2026-09-07"
+      updated: "2026-09-16"
     leader: { he: "יאיר גולן", en: "Yair Golan" }
     leaderWiki: "https://en.wikipedia.org/wiki/Yair_Golan"
     factionId: 1100
@@ -381,22 +425,33 @@ parties:
       - { he: "נעמה לזימי", personId: 30106 }
       - { he: "גלעד קריב", personId: 30807 }
       - { he: "אפרת רייטן" }
-      - { he: "יאיא פינק" }
-      - { he: "גבי לסקי" }
+      - { he: "יאיר פינק" }
+      - { he: "גבריאלה לסקי שוץ" }
       - { he: "עמרי רונן" }
       - { he: "מיכל רוזין" }
       - { he: "משה רדמן" }
-      - { he: "סומיה בשיר" }
+      - { he: "סומייה בשיר" }
       - { he: "נמרוד שפר" }
       - { he: "מורן זר קצנשטיין" }
       - { he: "אבי דאבוש" }
       - { he: "אמילי מואטי" }
       - { he: "תומר אביטל" }
     sources:
+      - { url: "https://www.gov.il/he/pages/hademokratim_list17", title: "הדמוקרטים בראשות יאיר גולן — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "כחול לבן", en: "Blue and White" }
     slug: blue-white
+    # The Central Elections Committee's own page for the list (read 19 Sep 2026):
+    cec:
+      url: "https://www.gov.il/he/pages/kachol-lavan_list30"
+      listNumber: 30
+      listName: { he: "כחול לבן" }
+      letters: "כן"
+      lettersStatus: requested
+      submittedBy: ["כחול לבן חוסן לישראל"]
+      published: "2026-09-08"
+      updated: "2026-09-16"
     leader: { he: "בני גנץ", en: "Benny Gantz" }
     leaderPersonId: 30657
     factionId: 1110
@@ -406,11 +461,30 @@ parties:
     stance:
       he: "המפלגה דחתה את הגדרת גוש השינוי של ישר! וכינתה את דרכו של איזנקוט \"ממשלת מיעוט שנשענת על המפלגות הערביות\" (N12, 7.9.2026)."
       en: "The party rejected Yashar!'s framing of the change bloc, calling Eisenkot's path \"a minority government leaning on the Arab parties\" (N12, Sept 7, 2026)."
+    candidates:
+      - { he: "בנימין גנץ", personId: 30657 }
+      - { he: "פנינה תמנו", personId: 23635 }
+      - { he: "גאולה עליזה בלוך" }
+      - { he: "רועי קונקול" }
+      - { he: "צאליק רתם אבידר" }
+      - { he: "אלון שוסטר", personId: 30694 }
+      - { he: "מופיד מרעי" }
+      - { he: "מלכה יהודית אוליאל" }
     sources:
+      - { url: "https://www.gov.il/he/pages/kachol-lavan_list30", title: "כחול לבן — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
       - { url: "https://www.emess.co.il/radio/1927478", title: "תם המרוץ: 38 רשימות הגישו מועמדות לכנסת ה-26", publisher: "אמס" }
   - name: { he: "ישראל ביתנו", en: "Yisrael Beiteinu" }
     slug: yisrael-beiteinu
+    # The Central Elections Committee's own page for the list (read 19 Sep 2026):
+    cec:
+      url: "https://www.gov.il/he/pages/israel-beitenu_list11"
+      listNumber: 11
+      listName: { he: "ישראל ביתנו בראשות אביגדור ליברמן" }
+      letters: "ל"
+      lettersStatus: requested
+      submittedBy: ["ישראל ביתנו"]
+      published: "2026-09-07"
     leader: { he: "אביגדור ליברמן", en: "Avigdor Liberman" }
     leaderPersonId: 427
     factionId: 1104
@@ -434,10 +508,21 @@ parties:
       - { he: "לימור מגן תלם" }
       - { he: "ישראל בן שטרית" }
     sources:
+      - { url: "https://www.gov.il/he/pages/israel-beitenu_list11", title: "ישראל ביתנו בראשות אביגדור ליברמן — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "ש\"ס", en: "Shas" }
     slug: shas
+    # The Central Elections Committee's own page for the list (read 19 Sep 2026):
+    cec:
+      url: "https://www.gov.il/he/pages/shas_list19"
+      listNumber: 19
+      listName: { he: "התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ\"ל" }
+      letters: "שס"
+      lettersStatus: requested
+      submittedBy: ["ש\"ס - התאחדות הספרדים העולמית שומרי תורה"]
+      published: "2026-09-08"
+      updated: "2026-09-16"
     leader: { he: "אריה דרעי", en: "Aryeh Deri" }
     leaderPersonId: 2291
     factionId: 1095
@@ -456,10 +541,20 @@ parties:
       - { he: "יוסף טייב", personId: 30770 }
       - { he: "יונתן משריקי" }
     sources:
+      - { url: "https://www.gov.il/he/pages/shas_list19", title: "התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ\"ל — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "יהדות התורה", en: "United Torah Judaism" }
     slug: utj
+    # The Central Elections Committee's own page for the list (read 19 Sep 2026):
+    cec:
+      url: "https://www.gov.il/he/pages/yahadut-degel_list37"
+      listNumber: 37
+      listName: { he: "יהדות התורה והשבת אגודת ישראל - דגל התורה" }
+      letters: "ג"
+      lettersStatus: requested
+      submittedBy: ["אגודת החרדים - דגל התורה", "הסתדרות אגודת ישראל בארץ ישראל", "חומת תורת ישראל"]
+      published: "2026-09-09"
     leader: { he: "יעקב אשר", en: "Yaakov Asher" }
     leaderPersonId: 23641
     factionId: 1101
@@ -472,18 +567,28 @@ parties:
       - { he: "יצחק פינדרוס", personId: 30672 }
       - { he: "מאיר פרוש", personId: 563 }
       - { he: "משה רוזנטל" }
-      - { he: "אליקים שטארק" }
-      - { he: "יהודה וייספיש" }
+      - { he: "אלי שטארק" }
+      - { he: "יהודה לייב וויספיש" }
       - { he: "יעקב טסלר", personId: 30671 }
       - { he: "דוד זלץ" }
       - { he: "דוד אוחנה" }
       - { he: "משה רוט" }
       - { he: "אליהו ברוכי" }
     sources:
+      - { url: "https://www.gov.il/he/pages/yahadut-degel_list37", title: "יהדות התורה והשבת אגודת ישראל - דגל התורה — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "הציונות הדתית–זהות", en: "Religious Zionism–Zehut" }
     slug: rz-zehut
+    # The Central Elections Committee's own page for the list (read 19 Sep 2026):
+    cec:
+      url: "https://www.gov.il/he/pages/tzionutdatit-zehut_list31"
+      listNumber: 31
+      listName: { he: "הציונות הדתית בראשות בצלאל סמוטריץ' וזהות בראשות משה פייגלין" }
+      letters: "ט"
+      lettersStatus: requested
+      submittedBy: ["האיחוד הלאומי - תקומה", "זהות - תנועה ישראלית יהודית", "עתיד אחד - עתיד טוב לישראל"]
+      published: "2026-09-08"
     leader: { he: "בצלאל סמוטריץ'", en: "Bezalel Smotrich" }
     leaderPersonId: 30055
     factionId: 1105 # the Smotrich faction of the 25th Knesset; 1097 is the defunct 2022 joint list
@@ -505,10 +610,21 @@ parties:
       - { he: "רעות בן חיים" }
       - { he: "עומר פציניאש וולדמן" }
     sources:
+      - { url: "https://www.gov.il/he/pages/tzionutdatit-zehut_list31", title: "הציונות הדתית בראשות בצלאל סמוטריץ' וזהות בראשות משה פייגלין — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "עוצמה יהודית", en: "Otzma Yehudit" }
     slug: otzma
+    # The Central Elections Committee's own page for the list (read 19 Sep 2026):
+    cec:
+      url: "https://www.gov.il/he/pages/yehudit-meuhedet_list14"
+      listNumber: 14
+      listName: { he: "עוצמה יהודית" }
+      letters: "ב"
+      lettersStatus: requested
+      submittedBy: ["חזית יהודית לאומית", "ארץ ישראל שלנו - מפלגה יהודית מאוחדת לשלמות התורה העם והארץ"]
+      published: "2026-09-07"
+      updated: "2026-09-09"
     leader: { he: "איתמר בן גביר", en: "Itamar Ben Gvir" }
     leaderPersonId: 30811
     factionId: 1106
@@ -532,10 +648,21 @@ parties:
       - { he: "שימי גולן" }
       - { he: "יניב בדלוב" }
     sources:
+      - { url: "https://www.gov.il/he/pages/yehudit-meuhedet_list14", title: "עוצמה יהודית — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "רע\"ם", en: "Ra'am" }
     slug: raam
+    # The Central Elections Committee's own page for the list (read 19 Sep 2026):
+    cec:
+      url: "https://www.gov.il/he/pages/raam_list18"
+      listNumber: 18
+      listName: { he: "רע\"ם - הרשימה הערבית המאוחדת" }
+      letters: "עם"
+      lettersStatus: requested
+      submittedBy: ["רשימת האיחוד הערבי"]
+      published: "2026-09-07"
+      updated: "2026-09-09"
     leader: { he: "מנסור עבאס", en: "Mansour Abbas" }
     leaderPersonId: 30713
     factionId: 1099
@@ -554,10 +681,21 @@ parties:
       - { he: "עבד אל כרים עזאם" }
       - { he: "אבראהים אבו לבן" }
     sources:
+      - { url: "https://www.gov.il/he/pages/raam_list18", title: "רע\"ם - הרשימה הערבית המאוחדת — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "הרשימה המשותפת (חד\"ש, תע\"ל, בל\"ד)", en: "The Joint List (Hadash, Ta'al, Balad)" }
     slug: joint-list
+    # The Central Elections Committee's own page for the list (read 19 Sep 2026):
+    cec:
+      url: "https://www.gov.il/he/pages/hareshima-hameshutefet_list35"
+      listNumber: 35
+      listName: { he: "הרשימה המשותפת" }
+      letters: "ודם"
+      lettersStatus: requested
+      submittedBy: ["המפלגה הקומוניסטית הישראלית", "אלתג'מוע אלווטני אלדמוקרטי", "התנועה הערבית להתחדשות"]
+      published: "2026-09-09"
+      updated: "2026-09-18"
     leader: { he: "ד\"ר יוסף ג'בארין", en: "Dr. Yousef Jabareen" }
     leaderWiki: "https://en.wikipedia.org/wiki/Yousef_Jabareen"
     factionId: 1103
@@ -569,14 +707,14 @@ parties:
       - { he: "אחמד טיבי", personId: 560 }
       - { he: "סאמי אבו שחאדה" }
       - { he: "פאתן ג'טאס" }
-      - { he: "בכר עודה" }
+      - { he: "בכר עואודה" }
       - { he: "עופר כסיף", personId: 30719 }
       - { he: "יוסף אלעטאונה" }
       - { he: "מהא כרכבי סבאח" }
       - { he: "אחמד דראושה" }
-      - { he: "נהאיה וישאחי" }
+      - { he: "נהאיה ושאחי" }
       - { he: "חסן אלנסאסרה" }
-      - { he: "היתם דחאלקה" }
+      - { he: "האיתם זחאלקה" }
       - { he: "איאס נאטור" }
       - { he: "ג'סאן עבדאללה" }
       - { he: "אורלי נוי" }
@@ -586,10 +724,21 @@ parties:
       - { he: "מואייד מיעארי" }
       - { he: "אחמד ג'זאווי גאנם" }
     sources:
+      - { url: "https://www.gov.il/he/pages/hareshima-hameshutefet_list35", title: "הרשימה המשותפת — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "עמך ישראל", en: "Amkha Yisrael" }
     slug: amkha
+    # The Central Elections Committee's own page for the list (read 19 Sep 2026):
+    cec:
+      url: "https://www.gov.il/he/pages/amcha-israel_list6"
+      listNumber: 6
+      listName: { he: "עמך ישראל" }
+      letters: "ך"
+      lettersStatus: requested
+      submittedBy: ["עמי חי לעד"]
+      published: "2026-09-07"
+      updated: "2026-09-09"
     color: "#8d6e63" # chart colour — no sitting faction to inherit one from
     leader: { he: "עופר וינטר", en: "Ofer Winter" }
     leaderWiki: "https://en.wikipedia.org/wiki/Ofer_Winter"
@@ -605,10 +754,21 @@ parties:
       - { he: "ללי דרעי" }
       - { he: "רונן בודנרו" }
     sources:
+      - { url: "https://www.gov.il/he/pages/amcha-israel_list6", title: "עמך ישראל — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "המילואימניקים והכלכלית", en: "The Reservists and the Economic list" }
     slug: reservists
+    # The Central Elections Committee's own page for the list (read 19 Sep 2026):
+    cec:
+      url: "https://www.gov.il/he/pages/hamiluimnikim-vehakalkalit_list16"
+      listNumber: 16
+      listName: { he: "המילואימניקים והכלכלית בראשות יועז הנדל וירון זליכה" }
+      letters: "די / צ / י"
+      lettersStatus: requested
+      submittedBy: ["המילואימניקים", "הכלכלית החדשה"]
+      published: "2026-09-07"
+      updated: "2026-09-09"
     color: "#7b1fa2" # chart colour — no sitting faction to inherit one from
     leader: { he: "יועז הנדל", en: "Yoaz Hendel" }
     leaderWiki: "https://en.wikipedia.org/wiki/Yoaz_Hendel"
@@ -624,16 +784,40 @@ parties:
       - { he: "אופיר לנגמן" }
       - { he: "שלומי דמרי" }
     sources:
+      - { url: "https://www.gov.il/he/pages/hamiluimnikim-vehakalkalit_list16", title: "המילואימניקים והכלכלית בראשות יועז הנדל וירון זליכה — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
   - name: { he: "הציבור החרדי", en: "The Haredi Public" }
     slug: haredi-public
+    # The Central Elections Committee's own page for the list (read 19 Sep 2026):
+    cec:
+      url: "https://www.gov.il/he/pages/tzibur-charedi_list20"
+      listNumber: 20
+      listName: { he: "הציבור החרדי בראשות מוטי ליטנר" }
+      letters: "זך"
+      lettersStatus: requested
+      submittedBy: ["למען אחיי מפלגת כלל ישראל"]
+      published: "2026-09-08"
     color: "#455a64" # chart colour — no sitting faction to inherit one from
-    leader: { he: "מוטי לייטנר", en: "Moti Leitner" }
+    leader: { he: "פנחס מרדכי ליטנר", en: "Pinchas Mordechai (Moti) Litner" }
     note:
       he: "רשימה חדשה שהגישה את מועמדותה ב-8 בספטמבר 2026 וביקשה להתמודד תחת האותיות זך; הרכבה המלא טרם פורסם במקורות שבידינו."
       en: "A new list that submitted on September 8, 2026 and requested the ballot letters זך; its full roster has not yet appeared in the sources we hold."
+    candidates:
+      - { he: "פנחס מרדכי ליטנר" }
+      - { he: "אשר פרדי" }
+      - { he: "מרים נחמה יפה" }
+      - { he: "זיוה רנית גלאנץ" }
+      - { he: "מרדכי רובינשטיין" }
+      - { he: "יצחק אדלרשטיין" }
+      - { he: "אהרן אונגאר" }
+      - { he: "יהודה אופנהיימר" }
+      - { he: "חיים יהודה לייב גוטליב" }
+      - { he: "יונה שלמה קאופמן" }
+      - { he: "אליהו גולדברג" }
+      - { he: "ראובן אוחנה" }
     sources:
+      - { url: "https://www.gov.il/he/pages/tzibur-charedi_list20", title: "הציבור החרדי בראשות מוטי ליטנר — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
       - { url: "https://www.jdn.co.il/news/2724915/", title: "סיכום ביניים מהיום הראשון להגשת הרשימות לכנסת ה-26", publisher: "JDN" }
 
@@ -879,6 +1063,259 @@ howToVote:
 
 # Surplus-vote agreements between lists — announced pairs, then the CEC's
 # filings (deadline 16 October 2026). A list can be party to one agreement.
+# Every list that submitted for the 26th Knesset, from the Central Elections
+# Committee's index page (its own numbering and order). Names are the
+# registered list names verbatim; letters are the ones REQUESTED at
+# submission — final only after the committee approves the lists (27 Sep
+# 2026). Heads and submitting parties were read from each list's own CEC page
+# on 19 Sep 2026 (names as the CEC prints them, given-name first).
+submittedLists:
+  source: { url: "https://www.gov.il/he/pages/candidates-lists-26", title: "רשימות המועמדים לכנסת ה-26 — ועדת הבחירות המרכזית", publisher: "ועדת הבחירות המרכזית לכנסת" }
+  asOf: "2026-09-18"
+  lists:
+    - listNumber: 1
+      letters: "ב / רק"
+      name: { he: "ביחד בראשות נפתלי בנט" }
+      url: "https://www.gov.il/he/pages/beyahad_list1"
+      head: { he: "נפתלי בנט" }
+      submittedBy: ["ביחד בראשות בנט מחזירים את התקווה", "יש עתיד - בראשות יאיר לפיד"]
+      slug: together
+    - listNumber: 2
+      letters: "דרך"
+      name: { he: "ישר! עם איזנקוט לראשות הממשלה מאחדים את ישראל" }
+      url: "https://www.gov.il/he/pages/yashar_list_2"
+      head: { he: "גדי איזנקוט" }
+      submittedBy: ["ישר לישראל עם איזנקוט", "יסודות ישראל"]
+      slug: yashar
+    - listNumber: 3
+      letters: "צדק"
+      name: { he: "שרשר לאהבה ואחדות העם" }
+      url: "https://www.gov.il/he/pages/sharshar_list3"
+      head: { he: "איתן שוילי" }
+      submittedBy: ["שרשר לאהבה ואחדות העם"]
+    - listNumber: 4
+      letters: "ד / דק"
+      name: { he: "השותפות לכולם" }
+      url: "https://www.gov.il/he/pages/hashutafut-lekulam_iist"
+      head: { he: "טלאל אלקרינאוי" }
+      submittedBy: ["איחוד בני הברית - איתחאד אבנאא אלעהד - בראשות רב חובל בשארה שליאן"]
+    - listNumber: 5
+      letters: "צף / ף / ר / ףז"
+      name: { he: "הפיראטים — צפים לטוב" }
+      url: "https://www.gov.il/he/pages/pirates_list_5"
+      head: { he: "אוהד יעקב שם טוב" }
+      submittedBy: ["הפיראטים"]
+    - listNumber: 6
+      letters: "ך"
+      name: { he: "עמך ישראל" }
+      url: "https://www.gov.il/he/pages/amcha-israel_list6"
+      head: { he: "עופר וינטר" }
+      submittedBy: ["עמי חי לעד"]
+      slug: amkha
+    - listNumber: 7
+      letters: "י / ר"
+      name: { he: "ישראל תחילה - בראשות שרן השכל" }
+      url: "https://www.gov.il/he/pages/israel-tchila_list7"
+      head: { he: "שרן מרים השכל" }
+      submittedBy: ["ישראל תחילה - ביטחון, כלכלה, אחדות בעם ישראל"]
+    - listNumber: 8
+      letters: "יה / ה"
+      name: { he: "גן עדן בראשות ישוע ישראל בן דוד" }
+      url: "https://www.gov.il/he/pages/gan-eden_list_8"
+      head: { he: "ישוע ישראל בן דוד" }
+      submittedBy: ["גן עדן"]
+    - listNumber: 9
+      letters: "קה / צח / נא"
+      name: { he: "קול הנשים" }
+      url: "https://www.gov.il/he/pages/kol-ha-nashim_list9"
+      head: { he: "עמיר ישראל שדמי" }
+      submittedBy: ["קול הנשים"]
+    - listNumber: 10
+      letters: "בד / בי / בנ / רץ"
+      name: { he: "ביחד נצליח - רשימה משותפת ערבית יהודית" }
+      url: "https://www.gov.il/he/pages/beyachad-natzliah_list10"
+      head: { he: "אבי שקד" }
+      submittedBy: ["ביחד נצליח"]
+    - listNumber: 11
+      letters: "ל"
+      name: { he: "ישראל ביתנו בראשות אביגדור ליברמן" }
+      url: "https://www.gov.il/he/pages/israel-beitenu_list11"
+      head: { he: "אביגדור ליברמן" }
+      submittedBy: ["ישראל ביתנו"]
+      slug: yisrael-beiteinu
+    - listNumber: 12
+      letters: "קץ"
+      name: { he: "משפט צדק" }
+      url: "https://www.gov.il/he/pages/mishpat-tzedek_list12"
+      head: { he: "רננה לריסה עמיר" }
+      submittedBy: ["משפט צדק"]
+    - listNumber: 13
+      letters: "נף"
+      name: { he: "שמע בראשות נפתלי גולדמן" }
+      url: "https://www.gov.il/he/pages/shama"
+      head: { he: "נפתלי בורוך גולדמן" }
+      submittedBy: ["שמע בראשות נפתלי גולדמן"]
+    - listNumber: 14
+      letters: "ב"
+      name: { he: "עוצמה יהודית" }
+      url: "https://www.gov.il/he/pages/yehudit-meuhedet_list14"
+      head: { he: "איתמר בן גביר" }
+      submittedBy: ["חזית יהודית לאומית", "ארץ ישראל שלנו - מפלגה יהודית מאוחדת לשלמות התורה העם והארץ"]
+      slug: otzma
+    - listNumber: 15
+      letters: "קך"
+      name: { he: "סדר חדש" }
+      url: "https://www.gov.il/he/pages/seder-chadash_list15"
+      head: { he: "אביטל חי אופק" }
+      submittedBy: ["סדר חדש לשינוי שיטת הבחירות"]
+    - listNumber: 16
+      letters: "די / צ / י"
+      name: { he: "המילואימניקים והכלכלית בראשות יועז הנדל וירון זליכה" }
+      url: "https://www.gov.il/he/pages/hamiluimnikim-vehakalkalit_list16"
+      head: { he: "יועז הנדל" }
+      submittedBy: ["המילואימניקים", "הכלכלית החדשה"]
+      slug: reservists
+    - listNumber: 17
+      letters: "אמת"
+      name: { he: "הדמוקרטים בראשות יאיר גולן" }
+      url: "https://www.gov.il/he/pages/hademokratim_list17"
+      head: { he: "יאיר גולן" }
+      submittedBy: ["הדמוקרטים מיסודה של תנועת העבודה", "מרצ"]
+      slug: democrats
+    - listNumber: 18
+      letters: "עם"
+      name: { he: "רע\"ם - הרשימה הערבית המאוחדת" }
+      url: "https://www.gov.il/he/pages/raam_list18"
+      head: { he: "מנסור עבאס" }
+      submittedBy: ["רשימת האיחוד הערבי"]
+      slug: raam
+    - listNumber: 19
+      letters: "שס"
+      name: { he: "התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ\"ל" }
+      url: "https://www.gov.il/he/pages/shas_list19"
+      head: { he: "אריה מכלוף דרעי" }
+      submittedBy: ["ש\"ס - התאחדות הספרדים העולמית שומרי תורה"]
+      slug: shas
+    - listNumber: 20
+      letters: "זך"
+      name: { he: "הציבור החרדי בראשות מוטי ליטנר" }
+      url: "https://www.gov.il/he/pages/tzibur-charedi_list20"
+      head: { he: "פנחס מרדכי (מוטי) ליטנר" }
+      submittedBy: ["למען אחיי מפלגת כלל ישראל"]
+      slug: haredi-public
+    - listNumber: 21
+      letters: "פה / כן / יד / ה"
+      name: { he: "אני ואתה מפלגת העם הישראלית" }
+      url: "https://www.gov.il/he/pages/miflegat-am-israelit_list21"
+      head: { he: "אלון גלעדי" }
+      submittedBy: ["אני ואתה - מפלגת העם הישראלית"]
+    - listNumber: 22
+      letters: "זץ"
+      name: { he: "ברית עולם לגאולת ישראל" }
+      url: "https://www.gov.il/he/pages/brit-olam_list22"
+      head: { he: "עופר פינחס ליפשיץ" }
+      submittedBy: ["ברית עולם"]
+    - listNumber: 23
+      letters: "נקי"
+      name: { he: "התיקון לשיטת הבחירות והממשל" }
+      url: "https://www.gov.il/he/pages/tikun_list23"
+      head: { he: "משה סלמוביץ" }
+      submittedBy: ["התיקון"]
+    - listNumber: 24
+      letters: "יק"
+      name: { he: "גה\"ת-גוש התנ\"כי" }
+      url: "https://www.gov.il/he/pages/gush-tanachi_list24"
+      head: { he: "דניס ליפקין" }
+      submittedBy: ["מפלגת גה\"ת-גוש התנ\"כי"]
+    - listNumber: 25
+      letters: "ז"
+      name: { he: "בטח" }
+      url: "https://www.gov.il/he/pages/betach_list25"
+      head: { he: "סמיון גרפמן" }
+      submittedBy: ["בט\"ח בטחון חברתי"]
+    - listNumber: 26
+      letters: "בקר"
+      name: { he: "אורות השחר מפלגה של כולם" }
+      url: "https://www.gov.il/he/pages/orot_list26"
+      head: { he: "נסים לוק" }
+      submittedBy: ["אורות השחר מפלגה של כולם"]
+    - listNumber: 27
+      letters: "נץ"
+      name: { he: "בטחון אישי" }
+      url: "https://www.gov.il/he/pages/demokratura_list27"
+      head: { he: "מיכאל טופצ'יאשוילי" }
+      submittedBy: ["דמוקראטורה – מפלגה להגשמת הציונות וערכי הדמוקראטורה"]
+    - listNumber: 28
+      letters: "נר"
+      name: { he: "צבע שחור - מגן עולם התורה" }
+      url: "https://www.gov.il/he/pages/shachor_list28"
+      head: { he: "אליהו אליעזר באומרינד" }
+      submittedBy: ["תומכי יהדות בוכרה"]
+    - listNumber: 29
+      letters: "מחל"
+      name: { he: "הליכוד עם בנימין נתניהו לראשות הממשלה" }
+      url: "https://www.gov.il/he/pages/halikud-tikvahadasha_iist29"
+      head: { he: "בנימין נתניהו" }
+      submittedBy: ["הליכוד, תנועה לאומית ליברלית", "תקווה חדשה הימין הממלכתי"]
+      slug: likud
+    - listNumber: 30
+      letters: "כן"
+      name: { he: "כחול לבן" }
+      url: "https://www.gov.il/he/pages/kachol-lavan_list30"
+      head: { he: "בנימין גנץ" }
+      submittedBy: ["כחול לבן חוסן לישראל"]
+      slug: blue-white
+    - listNumber: 31
+      letters: "ט"
+      name: { he: "הציונות הדתית בראשות בצלאל סמוטריץ' וזהות בראשות משה פייגלין" }
+      url: "https://www.gov.il/he/pages/tzionutdatit-zehut_list31"
+      head: { he: "בצלאל יואל סמוטריץ'" }
+      submittedBy: ["האיחוד הלאומי - תקומה", "זהות - תנועה ישראלית יהודית", "עתיד אחד - עתיד טוב לישראל"]
+      slug: rz-zehut
+    - listNumber: 32
+      letters: "צ / צבי"
+      name: { he: "תנועת אחי תנועתו של הרב יורם אברג'ל זצ\"ל" }
+      url: "https://www.gov.il/he/pages/chozrim-leshorashim_list32"
+      head: { he: "יובל אלמלך" }
+      submittedBy: ["חוזרים לשורשים"]
+    - listNumber: 33
+      letters: "בי"
+      name: { he: "צומת בית ישראל" }
+      url: "https://www.gov.il/he/pages/tzomet-beit-israel_list33"
+      head: { he: "דסטה יברקן" }
+      submittedBy: ["צומת - התנועה לציונות מתחדשת", "בית ימני חברתי ציוני לכלל עם ישראל"]
+    - listNumber: 34
+      letters: "ק"
+      name: { he: "מפלגת תקומה" }
+      url: "https://www.gov.il/he/pages/tekuma_list34"
+      head: { he: "אלקנא פדרמן" }
+      submittedBy: ["תקומה"]
+    - listNumber: 35
+      letters: "ודם"
+      name: { he: "הרשימה המשותפת" }
+      url: "https://www.gov.il/he/pages/hareshima-hameshutefet_list35"
+      head: { he: "יוסף ג'בארין" }
+      submittedBy: ["המפלגה הקומוניסטית הישראלית", "אלתג'מוע אלווטני אלדמוקרטי", "התנועה הערבית להתחדשות"]
+      slug: joint-list
+    - listNumber: 36
+      letters: "רץ"
+      name: { he: "הקהל - מפלגה כלל חרדית שנציגיה נבחרים על ידי הציבור בראשות הרב שלמה אלבוים" }
+      url: "https://www.gov.il/he/pages/machane-israel_list36"
+      head: { he: "שלמה אלבוים" }
+      submittedBy: ["מחנה ישראל"]
+    - listNumber: 37
+      letters: "ג"
+      name: { he: "יהדות התורה והשבת אגודת ישראל - דגל התורה" }
+      url: "https://www.gov.il/he/pages/yahadut-degel_list37"
+      head: { he: "יעקב אשר" }
+      submittedBy: ["אגודת החרדים - דגל התורה", "הסתדרות אגודת ישראל בארץ ישראל", "חומת תורת ישראל"]
+      slug: utj
+    - listNumber: 38
+      letters: "ני"
+      name: { he: "נעם לישראל" }
+      url: "https://www.gov.il/he/pages/noam_list38"
+      head: { he: "אביגדור (אבי) מעוז" }
+      submittedBy: ["לזוז", "אחריות לאומית - למען עתיד ילדינו"]
 surplusAgreements:
   - between: [yashar, democrats]
     date: "2026-09-10"

@@ -4,6 +4,83 @@
 # | right | far-right. Text falls back locale -> en -> he when a language is missing.
 profiles:
   - id: 1096 # Likud
+    verified: "2026-09-19"
+    updates:
+      - date: "2025-03-13"
+        text:
+          he: "סיעות הליכוד והימין הממלכתי (תקווה חדשה) חתמו על הסכם פוליטי הכולל מיזוג עתידי וריצה ברשימה משותפת מטעם הליכוד בבחירות הבאות; במרכז הליכוד אושר ההסכם ב-13 באוגוסט 2025."
+          en: "Likud and Gideon Sa’ar’s National Right (New Hope) faction signed an agreement providing for a future merger and a joint Likud list at the next election; the Likud Central Committee approved the merger on 13 August 2025."
+        sources:
+          - { url: "https://www.ynet.co.il/news/article/r12iadxh1l", title: "המהפך הושלם: סיעת גדעון סער מתמזגת עם הליכוד, בן גביר קרוב לחזרה לממשלה (2025-03-13)", publisher: "ynet" }
+          - { url: "https://www.maariv.co.il/news/politics/article-1179992", title: "גדעון סער חוזר לליכוד: אלו פרטי ההסכם בין שתי המפלגות (2025-03-13)", publisher: "מעריב" }
+          - { url: "https://www.timesofisrael.com/ruling-likud-party-approves-merger-with-gideon-saars-new-hope/", title: "Ruling Likud party approves merger with Gideon Sa’ar’s New Hope (2025-08-13)", publisher: "The Times of Israel" }
+      - date: "2025-11-06"
+        text:
+          he: "בנימין נתניהו הוכרז כיו\"ר תנועת הליכוד וכמועמדה לראשות הממשלה בבחירות לכנסת ה-26, לאחר שהיה המועמד היחיד בבחירות המקדימות ליו\"ר שהוכרזו ב-23 באוקטובר 2025."
+          en: "Benjamin Netanyahu was declared Likud chairman and the party’s candidate for prime minister for the 26th-Knesset election, having been the sole candidate in the leadership primary called on 23 October 2025."
+        sources:
+          - { url: "https://www.likud.org.il/images/yor/2025/%D7%94%D7%9B%D7%A8%D7%96%D7%94_%D7%A2%D7%9C_%D7%91%D7%97%D7%99%D7%A8%D7%AA%D7%95_%D7%A9%D7%9C_%D7%91%D7%A0%D7%99%D7%9E%D7%99%D7%9F_%D7%A0%D7%AA%D7%A0%D7%99%D7%94%D7%95_%D7%9C%D7%9B%D7%94%D7%95%D7%A0%D7%AA_%D7%99%D7%95%D7%A8_%D7%94%D7%9C%D7%99%D7%9B%D7%95%D7%93_%D7%95%D7%9E%D7%95%D7%A2%D7%9E%D7%93_%D7%9C%D7%9B%D7%94%D7%95%D7%A0%D7%AA_%D7%A8%D7%90%D7%A9_%D7%9E%D7%9E%D7%A9%D7%9C%D7%AA_%D7%99%D7%A9%D7%A8%D7%90%D7%9C.pdf", title: "הכרזה על בחירתו של מר בנימין נתניהו לכהונת יושב ראש תנועת הליכוד ומועמדה לכהונת ראש ממשלת ישראל בבחירות לכנסת ה-26 (2025-11-06)", publisher: "הליכוד (ועדת הבחירות המרכזית של התנועה)" }
+      - date: "2026-07-03"
+        text:
+          he: "ח\"כ יולי אדלשטיין הודיע על פרישה מהליכוד ועל כך שלא יתמודד בפריימריז; ב-6 באוגוסט 2026 הציג יחד עם גלעד ארדן מפלגה חדשה, ב-4 בספטמבר הודיע ארדן כי המפלגה לא תתמודד, וב-6 בספטמבר הודיעה הנהלת הליכוד על הפסקת חברותם במפלגה ודרשה מאדלשטיין להתפטר מהכנסת. אדלשטיין עדיין רשום כחבר סיעת הליכוד."
+          en: "MK Yuli Edelstein announced he was leaving Likud and would not run in its primary; on 6 August 2026 he and Gilad Erdan launched a new party, on 4 September Erdan said it would not run, and on 6 September Likud’s management ended both men’s party membership and asked Edelstein to resign from the Knesset. Edelstein remains listed as a member of the Likud faction."
+        sources:
+          - { url: "https://www.timesofisrael.com/senior-likud-renegade-yuli-edelstein-leaving-party-to-forge-a-new-political-path/", title: "Senior Likud renegade Yuli Edelstein leaving party to forge a ‘new political path’ (2026-07-03)", publisher: "The Times of Israel" }
+          - { url: "https://www.timesofisrael.com/erdan-and-edelstein-unveil-still-unnamed-party-likud-no-longer-represents-its-voters/", title: "Erdan and Edelstein unveil still-unnamed party: ‘Likud no longer represents its voters’ (2026-08-06)", publisher: "The Times of Israel" }
+          - { url: "https://www.haaretz.co.il/news/politics/2026-09-04/ty-article/000001a0-6cdc-d4e3-a7b3-7dfffc3a0000", title: "גלעד ארדן: מפלגתי לא תתמודד בבחירות, החיבור למפלגות אחרות אינו מתממש (2026-09-04)", publisher: "הארץ" }
+          - { url: "https://www.c14.co.il/article/1692329", title: "הליכוד מדיח רשמית את ארדן ואדלשטיין - ודורש מהח\"כ להתפטר (2026-09-06)", publisher: "ערוץ 14" }
+      - date: "2026-07-15"
+        text:
+          he: "ח\"כ דן אילוז הודיע על פרישה מהליכוד ועל כך שלא יתמודד בפריימריז; ב-5 באוגוסט 2026 הצטרף לישראל ביתנו, ב-11 באוגוסט הגיש את התפטרותו מהכנסת, וב-13 באוגוסט נכנס במקומו שבתאי קטש."
+          en: "MK Dan Illouz announced he was leaving Likud and would not run in its primary; on 5 August 2026 he joined Yisrael Beiteinu, on 11 August he submitted his resignation from the Knesset, and on 13 August Shabtai Katash took his seat."
+        sources:
+          - { url: "https://news.walla.co.il/item/3853837", title: "דן אילוז הודיע שלא יתמודד בפריימריז של הליכוד (2026-07-15)", publisher: "וואלה" }
+          - { url: "https://www.ynet.co.il/news/article/sylfkureme", title: "דן אילוז עוזב את הליכוד: \"מפלגה שאני בעצמי לא יכול להצביע לה\" (2026-07-15)", publisher: "ynet" }
+          - { url: "https://www.timesofisrael.com/rebel-likud-mk-dan-illouz-joins-yisrael-beytenu-touts-its-national-and-liberal-values/", title: "Rebel Likud MK Dan Illouz joins Yisrael Beytenu, touts its ‘national and liberal values’ (2026-08-05)", publisher: "The Times of Israel" }
+          - { url: "https://www.inn.co.il/news/703704", title: "דן אילוז: \"נתניהו חייב ללכת הביתה\" (2026-08-11)", publisher: "ערוץ 7" }
+          - { url: "https://main.knesset.gov.il/mk/apps/faction/faction-lobby?KnessetID=25&FactionID=1096", title: "סיעת הליכוד — חילופי גברי: 13/08/2026 שבתאי קטש נכנס במקום דן אילוז (2026-09-19)", publisher: "הכנסת" }
+      - date: "2026-08-12"
+        text:
+          he: "אלמוג כהן, שנבחר לכנסת ב-2022 מטעם עוצמה יהודית ומכהן כסגן שר במשרד ראש הממשלה, הצטרף לליכוד והתמודד בפריימריז לאחר שנתניהו ויתר על דרישת הוותק; שובץ במקום ה-13 ברשימת הליכוד."
+          en: "Almog Cohen, elected in 2022 on the Otzma Yehudit list and serving as a deputy minister in the Prime Minister’s Office, joined Likud and ran in its primary after Netanyahu waived the tenure requirement; he was placed 13th on the Likud list."
+        sources:
+          - { url: "https://www.timesofisrael.com/former-otzma-yehudit-mk-to-run-in-likud-primary-after-netanyahu-opens-door/", title: "Former Otzma Yehudit MK to run in Likud primary after Netanyahu opens door (2026-08-12)", publisher: "The Times of Israel" }
+          - { url: "https://www.jpost.com/israel-election-2026/article-905846", title: "Netanyahu’s new list: Eli Cohen wins top slot in tense Likud primaries (2026-08-18)", publisher: "The Jerusalem Post" }
+          - { url: "https://www.gov.il/he/pages/halikud-tikvahadasha_iist29", title: "רשימה 29 — הליכוד עם בנימין נתניהו לראשות הממשלה (מקום 13: אלמוג כהן) (2026-09-09)", publisher: "ועדת הבחירות המרכזית לכנסת (gov.il)" }
+      - date: "2026-08-17"
+        text:
+          he: "בפריימריז של הליכוד (76,068 מצביעים, 53.5% הצבעה) זכה אלי כהן במקום הראשון, אחריו אמיר אוחנה, יריב לוין, מירי רגב ואופיר כץ; ב-26 באוגוסט דווח על מחלוקת סביב ספירה חוזרת במקום ה-25 (גילה גמליאל / אתי עטייה)."
+          en: "In the Likud primary (76,068 voters, 53.5% turnout) Eli Cohen finished first, followed by Amir Ohana, Yariv Levin, Miri Regev and Ofir Katz; on 26 August a dispute over a recount affecting the 25th slot (Gila Gamliel / Etty Atia) was reported."
+        sources:
+          - { url: "https://www.jpost.com/israel-election-2026/article-905846", title: "Netanyahu’s new list: Eli Cohen wins top slot in tense Likud primaries (2026-08-18)", publisher: "The Jerusalem Post" }
+          - { url: "https://www.maariv.co.il/news/politics/article-1357061", title: "הסתיימה ההצבעה בליכוד: אלי כהן המנצח הגדול, טלי גוטליב מחוץ לעשירייה הראשונה - ואלו מי שנשארו בחוץ (2026-08-18)", publisher: "מעריב" }
+          - { url: "https://www.timesofisrael.com/likud-recount-could-push-veteran-minister-out-of-knesset-as-fraud-claims-roil-party/", title: "Likud recount could push veteran minister out of Knesset as fraud claims roil party (2026-08-26)", publisher: "The Times of Israel" }
+      - date: "2026-09-03"
+        text:
+          he: "הליכוד ועוצמה יהודית סיכמו כי ח\"כ טלי גוטליב תתמודד ברשימת עוצמה יהודית (במקום השני); על פי ההסכם היא כפופה למשמעת סיעת הליכוד עד הבחירות ואינה מוגדרת פורשת."
+          en: "Likud and Otzma Yehudit agreed that MK Tally Gotliv will run on the Otzma Yehudit list (second place); under the agreement she remains bound by Likud faction discipline until the election and is not declared a departing MK."
+        sources:
+          - { url: "https://www.ynet.co.il/news/article/h1uerzwozl", title: "המעבר אושר: טלי גוטליב תתמודד ברשימת עוצמה יהודית לכנסת (2026-09-03)", publisher: "ynet" }
+          - { url: "https://www.timesofisrael.com/likud-arranges-to-have-firebrand-mk-tally-gotliv-run-with-ben-gvirs-otzma-yehudit/", title: "Likud arranges to have firebrand MK Tally Gotliv run with Ben Gvir’s Otzma Yehudit (2026-09-04)", publisher: "The Times of Israel" }
+          - { url: "https://www.inn.co.il/news/705612", title: "בן גביר: טלי גוטליב תקבל את המקום השני בעוצמה יהודית (2026-09-04)", publisher: "ערוץ 7" }
+      - date: "2026-09-08"
+        text:
+          he: "הליכוד הגיש לוועדת הבחירות את רשימתו (\"הליכוד עם בנימין נתניהו לראשות הממשלה\", אותיות מבוקשות מחל) יחד עם מפלגת תקווה חדשה הימין הממלכתי, ובה תשעה משוריינים של נתניהו: גדעון סער במקום 7, אופיר כץ 8, טלי גואילי 9 (רשומה מטעם תקווה חדשה הימין הממלכתי), יעקב ברדוגו 11, אלמוג כהן 13, אלישע מדן 15, דוד פטר 16; ארבע נשים ב-35 המקומות הראשונים."
+          en: "Likud submitted its list (“Likud with Benjamin Netanyahu for Prime Minister”, requested letters מחל) jointly with the New Hope–National Right party, including nine Netanyahu appointees: Gideon Sa’ar 7th, Ofir Katz 8th, Talik Gvili 9th (recorded under New Hope–National Right), Jacob Bardugo 11th, Almog Cohen 13th, Elisha Madan 15th, David Peter 16th; four women in the first 35 places."
+        sources:
+          - { url: "https://www.timesofisrael.com/liveblog_entry/likud-submits-35-person-knesset-slate-featuring-9-netanyahu-appointees-just-4-women/", title: "Likud submits 35-person Knesset slate featuring 9 Netanyahu appointees, just 4 women (2026-09-08)", publisher: "The Times of Israel" }
+          - { url: "https://www.timesofisrael.com/finalizing-slate-netanyahu-fills-reserved-likud-slots-with-allies-ideologues/", title: "Finalizing slate, Netanyahu fills reserved Likud slots with allies, ideologues (2026-09-08)", publisher: "The Times of Israel" }
+          - { url: "https://news.walla.co.il/item/3866371", title: "פרשן ערוץ 14, ח\"כ לשעבר במפלגת העבודה ואם של חטוף: השריונים של נתניהו (2026-09-08)", publisher: "וואלה" }
+          - { url: "https://www.timesofisrael.com/likud-approves-reserved-spots-for-israel-katz-and-saar-freezes-vote-on-haim-katz/", title: "Likud approves reserved spots for Israel Katz and Sa’ar, freezes vote on Haim Katz (2026-08-11)", publisher: "The Times of Israel" }
+          - { url: "https://www.gov.il/he/pages/halikud-tikvahadasha_iist29", title: "רשימה 29 — הליכוד עם בנימין נתניהו לראשות הממשלה (2026-09-09)", publisher: "ועדת הבחירות המרכזית לכנסת (gov.il)" }
+    election2026:
+      runsAs: own
+      slug: likud
+      note:
+        he: "הרשימה \"הליכוד עם בנימין נתניהו לראשות הממשלה\" הוגשה במשותף על ידי הליכוד ותקווה חדשה - הימין הממלכתי; גדעון סער במקום השביעי."
+        en: "The list “Likud with Benjamin Netanyahu for Prime Minister” was submitted jointly by Likud and New Hope – The National Right; Gideon Sa’ar is seventh."
+      sources:
+        - { url: "https://www.gov.il/he/pages/halikud-tikvahadasha_iist29", title: "הליכוד עם בנימין נתניהו לראשות הממשלה — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
     spectrum: right
     ballotLetters: "מחל"
     leaderHe: בנימין נתניהו
@@ -27,6 +104,86 @@ profiles:
         - Support for free-market economics and deregulation
         - Opposition to territorial concessions
   - id: 1102 # Yesh Atid — in 2026 runs inside the joint list "Together" (ביחד) headed by Naftali Bennett
+    verified: "2026-09-19"
+    updates:
+      - date: "2025-08-13"
+        text:
+          he: "ח\"כ עידן רול, שפרש מסיעת יש עתיד בינואר 2025 וכיהן כסיעת יחיד, התפטר מהכנסת ב-10 באוגוסט 2025; עדי עזוז נכנסה במקומו ב-13 באוגוסט 2025."
+          en: "MK Idan Roll, who left the Yesh Atid faction in January 2025 and sat as a one-member faction, resigned from the Knesset on 10 August 2025; Adi Azuz took his seat on 13 August 2025."
+        sources:
+          - { url: "https://www.timesofisrael.com/knesset-approves-mk-idan-rolls-request-to-leave-yesh-atid-party/", title: "Knesset approves MK Idan Roll's request to leave Yesh Atid party (2025-01-14)", publisher: "The Times of Israel" }
+          - { url: "https://www.timesofisrael.com/mk-idan-roll-former-deputy-foreign-minister-quits-knesset-and-leaves-politics/", title: "MK Idan Roll, former deputy foreign minister, quits Knesset and leaves politics (2025-08-10)", publisher: "The Times of Israel" }
+          - { url: "https://www.maariv.co.il/news/israel/Article-1222573", title: "עידן רול פורש מהכנסת: \"תמיד אמרתי את האמת\" (2025-08-10)", publisher: "מעריב" }
+          - { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Faction?$filter=KnessetNum%20eq%2025", title: "KNS_Faction — FactionID 1109 'חה\"כ עידן רול', 2025-01-14 to 2025-08-13 (2026-09-19)", publisher: "Knesset OData" }
+          - { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=FactionID%20eq%201102%20and%20KnessetNum%20eq%2025%20and%20StartDate%20ge%202025-01-01T00:00:00Z", title: "KNS_PersonToPosition — PersonID 30895 (עדי עזוז) StartDate 2025-08-13 (2026-09-19)", publisher: "Knesset OData" }
+      - date: "2026-04-26"
+        text:
+          he: "יאיר לפיד ונפתלי בנט הודיעו על ריצה משותפת בבחירות 2026 ברשימה אחת בשם \"ביחד\" בראשות בנט, כאשר לפיד במקום השני; המפלגות לא התמזגו."
+          en: "Yair Lapid and Naftali Bennett announced a joint run in the 2026 election on a single list named “Together” (ביחד), headed by Bennett with Lapid second; the parties did not merge."
+        sources:
+          - { url: "https://www.timesofisrael.com/naftali-bennett-and-yair-lapid-announce-united-run-under-bennett-in-2026-elections/", title: "Naftali Bennett and Yair Lapid announce united run under Bennett in 2026 elections (2026-04-26)", publisher: "The Times of Israel" }
+          - { url: "https://www.timesofisrael.com/launching-joint-slate-bennett-and-lapid-promise-the-era-of-division-is-over/", title: "Launching joint slate, Bennett and Lapid promise 'the era of division is over' (2026-04-27)", publisher: "The Times of Israel" }
+          - { url: "https://www.mako.co.il/news-israel-elections/2026/Article-5a85a0ff5d9cd91027.htm", title: "מפץ פוליטי: בנט ולפיד הודיעו על איחוד (2026-04-26)", publisher: "N12 (mako)" }
+      - date: "2026-07-28"
+        text:
+          he: "שני חברי כנסת של יש עתיד עזבו את הכנסת באמצע 2026: בועז טופורובסקי (הודיע ב-27 במאי; עוז חיים נכנס במקומו ב-7 ביוני 2026) ורון כץ (הודיע ב-26 ביולי; מוחמד אבו אל היג'א נכנס במקומו ב-28 ביולי 2026)."
+          en: "Two Yesh Atid MKs left the Knesset in mid-2026: Boaz Toporovsky (announced 27 May; Oz Haim took his seat on 7 June 2026) and Ron Katz (announced 26 July; Mohammad Abu al-Hija took his seat on 28 July 2026)."
+        sources:
+          - { url: "https://www.timesofisrael.com/yesh-atid-co-founder-and-mk-boaz-toporovsky-steps-away-from-knesset/", title: "Yesh Atid co-founder and MK Boaz Toporovsky steps away from Knesset (2026-05-27)", publisher: "The Times of Israel" }
+          - { url: "https://13tv.co.il/item/news/politics/politics/ta232-905178276/", title: "עוזב את מפלגת יש עתיד: ח\"כ בועז טופורובסקי פורש (2026-05-27)", publisher: "חדשות 13" }
+          - { url: "https://www.mako.co.il/news-israel-elections/2026/Article-3468d77390d9f91027.htm", title: "עוד עזיבה ביש עתיד: חה\"כ רון כץ הודיע על פרישה (2026-07-26)", publisher: "N12 (mako)" }
+          - { url: "https://main.knesset.gov.il/mk/apps/faction/faction-lobby?KnessetID=25&FactionID=1102", title: "סיעת יש עתיד — חילופי גברי: 07/06/2026 עוז חיים במקום בועז טופורובסקי; 28/07/2026 מוחמד אבו אל היג'א במקום רון כץ (2026-09-19)", publisher: "הכנסת" }
+      - date: "2026-08-11"
+        text:
+          he: "יואב סגלוביץ הודיע על פרישה מיש עתיד (7 באוגוסט) והתפטר מהכנסת; מיכל סלבני כבביה נכנסה במקומו ב-11 באוגוסט 2026. ב-31 באוגוסט הודיעו מנסור עבאס וסגלוביץ על ריצה משותפת, וסגלוביץ הוצב במקום השני ברשימת רע\"ם."
+          en: "Yoav Segalovitz announced he was leaving Yesh Atid (7 August) and resigned from the Knesset; Michal Salbani-Kababia took his seat on 11 August 2026. On 31 August Mansour Abbas and Segalovitz announced a joint run, and Segalovitz was placed second on the Ra’am list."
+        sources:
+          - { url: "https://www.timesofisrael.com/segalovitz-departs-yesh-atid-amid-his-reported-talks-to-join-mansour-abbass-raam/", title: "Segalovitz departs Yesh Atid amid his reported talks to join Mansour Abbas's Ra'am (2026-08-07)", publisher: "The Times of Israel" }
+          - { url: "https://www.timesofisrael.com/raams-abbas-former-yesh-atid-mk-segalovitz-confirm-ongoing-talks-on-knesset-run/", title: "Ra'am's Abbas, former Yesh Atid MK Segalovitz confirm ongoing talks on Knesset run (2026-08-13)", publisher: "The Times of Israel" }
+          - { url: "https://www.timesofisrael.com/jewish-former-mk-yoav-segalovitz-announces-unprecedented-run-with-arab-raam-party/", title: "In unprecedented move, Abbas and Segalovitz announce joint run, bringing Jewish lawmaker to Arab party's slate (2026-08-31)", publisher: "The Times of Israel" }
+          - { url: "https://www.gov.il/he/pages/raam_list18", title: "רע\"ם - הרשימה הערבית המאוחדת — רשימה 18: 2 יואב סגלוביץ (2026-09-09)", publisher: "ועדת הבחירות המרכזית (gov.il)" }
+          - { url: "https://main.knesset.gov.il/mk/apps/faction/faction-lobby?KnessetID=25&FactionID=1102", title: "סיעת יש עתיד — חילופי גברי: 11/08/2026 מיכל סלבני כבביה במקום יואב סגלוביץ (2026-09-19)", publisher: "הכנסת" }
+      - date: "2026-09-04"
+        text:
+          he: "שישה חברי כנסת של יש עתיד הודיעו שלא יתמודדו בבחירות 2026 ונשארו חברי מפלגה: מאיר כהן ומיקי לוי (31 באוגוסט–1 בספטמבר), דבי ביטון וטטיאנה מזרסקי (1 בספטמבר), קארין אלהרר (3 בספטמבר) ומיכל שיר סגמן (4 בספטמבר)."
+          en: "Six Yesh Atid MKs announced they would not run in the 2026 election while remaining party members: Meir Cohen and Mickey Levy (31 August–1 September), Debbie Biton and Tatiana Mazarsky (1 September), Karin Elharar (3 September) and Michal Shir Segman (4 September)."
+        sources:
+          - { url: "https://www.timesofisrael.com/wave-of-yesh-atid-mks-quit-election-run-as-joint-slate-with-bennett-falters-in-polls/", title: "Wave of Yesh Atid MKs quit election run as joint slate with Bennett falters in polls (2026-09-02)", publisher: "The Times of Israel" }
+          - { url: "https://www.davar1.co.il/695658/", title: "עוד שתיים בחוץ: דבי ביטון וטטיאנה מזרסקי לא יתמודדו ברשימת יש עתיד לכנסת הבאה (2026-09-01)", publisher: "דבר" }
+          - { url: "https://www.zman.co.il/719843/", title: "חברת הכנסת דבי ביטון לא תתמודד ברשימת יש עתיד בבחירות הקרובות (2026-09-01)", publisher: "זמן ישראל" }
+          - { url: "https://13tv.co.il/item/news/politics/politics/zr1kb-905343971/", title: "עוד פרישה ביש עתיד: ח\"כ מיכל שיר הודיעה שלא תתמודד בבחירות (2026-09-04)", publisher: "חדשות 13" }
+      - date: "2026-09-07"
+        text:
+          he: "הרשימה המשותפת \"ביחד בראשות נפתלי בנט\" הוגשה לוועדת הבחירות (רשימה 1; האותיות המבוקשות ב או רק) על ידי שתי מפלגות — \"ביחד בראשות בנט\" ו\"יש עתיד - בראשות יאיר לפיד\"; מועמדי יש עתיד: לפיד (2), מירב בן ארי (4), נעם תיבון (6), מירב כהן (9), רם בן ברק (12), נאור שירי (14), ולדימיר בליאק (16)."
+          en: "The joint list “Together headed by Naftali Bennett” was submitted to the CEC (list 1; requested letters ב or רק) by two parties — “Together headed by Bennett” and “Yesh Atid headed by Yair Lapid”; Yesh Atid’s candidates: Lapid (2), Merav Ben-Ari (4), Noam Tibon (6), Meirav Cohen (9), Ram Ben Barak (12), Naor Shiri (14), Vladimir Beliak (16)."
+        sources:
+          - { url: "https://www.gov.il/he/pages/beyahad_list1", title: "ביחד בראשות נפתלי בנט — רשימה 1 (2026-09-07)", publisher: "ועדת הבחירות המרכזית (gov.il)" }
+          - { url: "https://www.timesofisrael.com/lapid-unveils-yesh-atid-lineup-for-byachad-electoral-slate/", title: "Lapid unveils Yesh Atid lineup for B'Yachad electoral slate (2026-09-05)", publisher: "The Times of Israel" }
+          - { url: "https://www.timesofisrael.com/israels-election-takes-shape-as-38-parties-submit-slates-from-likud-to-joint-list/", title: "Israel's election takes shape as 38 parties submit slates, in battle between pro- and anti-Netanyahu blocs (2026-09-09)", publisher: "The Times of Israel" }
+      - date: "2026-09-09"
+        text:
+          he: "אלעזר שטרן הודיע על פרישה מיש עתיד (14 באוגוסט), הצטרף למפלגת ישר! של גדי איזנקוט (24 באוגוסט) והוצב במקום ה-12 ברשימתה; רוני מלכאי נכנסה לכנסת במקומו ב-9 בספטמבר 2026."
+          en: "Elazar Stern announced he was leaving Yesh Atid (14 August), joined Gadi Eisenkot’s Yashar! (24 August) and was placed 12th on its list; Roni Malkai entered the Knesset in his place on 9 September 2026."
+        sources:
+          - { url: "https://www.timesofisrael.com/mk-elazar-stern-announces-yesh-atid-exit-ahead-of-likely-run-with-eisenkot/", title: "MK Elazar Stern announces Yesh Atid exit ahead of likely run with Eisenkot (2026-08-14)", publisher: "The Times of Israel" }
+          - { url: "https://www.timesofisrael.com/former-yesh-atid-mk-elazar-stern-makes-widely-expected-jump-to-eisenkots-yashar/", title: "Former Yesh Atid MK Elazar Stern makes widely expected jump to Eisenkot's Yashar (2026-08-24)", publisher: "The Times of Israel" }
+          - { url: "https://www.haaretz.co.il/news/politics/2026-08-24/ty-article/000001a0-3285-ddec-a7a5-36f7e9120000", title: "אחרי שפרש מיש עתיד, אלעזר שטרן מצטרף למפלגה של איזנקוט (2026-08-24)", publisher: "הארץ" }
+          - { url: "https://www.gov.il/he/pages/yashar_list_2", title: "ישר! עם איזנקוט — רשימה 2: 12 אלעזר שטרן (2026-09-10)", publisher: "ועדת הבחירות המרכזית (gov.il)" }
+          - { url: "https://main.knesset.gov.il/mk/apps/faction/faction-lobby?KnessetID=25&FactionID=1102", title: "סיעת יש עתיד — חילופי גברי: 09/09/2026 רוני מלכאי במקום אלעזר שטרן (2026-09-19)", publisher: "הכנסת" }
+      - date: "2026-09-10"
+        text:
+          he: "רשימת \"ביחד\" (בנט–לפיד) וישראל ביתנו הודיעו על הסכם עודפים לבחירות 2026."
+          en: "The “Together” list (Bennett–Lapid) and Yisrael Beytenu announced a surplus-vote agreement for the 2026 election."
+        sources:
+          - { url: "https://www.timesofisrael.com/main-opposition-factions-ink-surplus-vote-deals-in-bid-to-maximize-knesset-representation/", title: "Main opposition factions ink surplus-vote deals in bid to maximize Knesset representation (2026-09-10)", publisher: "The Times of Israel" }
+    election2026:
+      runsAs: within
+      slug: together
+      note:
+        he: "יש עתיד רצה ברשימת \"ביחד בראשות נפתלי בנט\", שהוגשה במשותף על ידי \"ביחד בראשות בנט\" ויש עתיד; יאיר לפיד במקום השני ומירב בן ארי ברביעי."
+        en: "Yesh Atid runs on the list “Together headed by Naftali Bennett”, submitted jointly by “Together headed by Bennett” and Yesh Atid; Yair Lapid is second and Merav Ben-Ari fourth."
+      sources:
+        - { url: "https://www.gov.il/he/pages/beyahad_list1", title: "ביחד בראשות נפתלי בנט — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
     spectrum: center
     ballotLetters: "פה"
     ballotNote:
@@ -34,7 +191,7 @@ profiles:
       en: In 2026 Yesh Atid runs on the joint "Together" list headed by Naftali Bennett; Yair Lapid is second. Letters are from 2022.
     sources:
       - { url: "https://www.timesofisrael.com/naftali-bennett-and-yair-lapid-announce-united-run-under-bennett-in-2026-elections/", title: "Naftali Bennett and Yair Lapid announce united run under Bennett", publisher: "The Times of Israel" }
-      - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
+      - { url: "https://www.gov.il/he/pages/beyahad_list1", title: "ביחד בראשות נפתלי בנט — רשימת המועמדים (ועדת הבחירות המרכזית, 7.9.2026)", publisher: "ועדת הבחירות המרכזית לכנסת" }
     leaderHe: יאיר לפיד
     leaderEn: Yair Lapid
     founded: 2012
@@ -56,6 +213,72 @@ profiles:
         - Strengthening public education and the middle class
         - Support for a negotiated settlement with the Palestinians
   - id: 1095 # Shas
+    verified: "2026-09-19"
+    updates:
+      - date: "2025-07-16"
+        text:
+          he: "מועצת חכמי התורה של ש\"ס הורתה לשרי המפלגה להתפטר מהממשלה בשל אי-חקיקת חוק הפטור מגיוס לבני ישיבות; ש\"ס נשארה בקואליציה והודיעה שלא תצטרף לאופוזיציה כדי להפיל את הממשלה."
+          en: "Shas’s Council of Torah Sages ordered the party’s ministers to resign from the government over the failure to pass a draft-exemption law for yeshiva students; Shas stayed in the coalition and said it would not join the opposition to topple the government."
+        sources:
+          - { url: "https://www.ynet.co.il/news/article/rknlxehlgg", title: "המשבר הפוליטי: ש\"ס פורשת מהממשלה (2025-07-16)", publisher: "Ynet" }
+          - { url: "https://www.jpost.com/israel-news/article-861246", title: "Shas spiritual leaders order party members to quit government (2025-07-16)", publisher: "The Jerusalem Post" }
+      - date: "2025-07-17"
+        text:
+          he: "שרי ש\"ס הגישו את התפטרותם: משה ארבל (פנים), יעקב מרגי (רווחה), מיכאל מלכיאלי (שירותי דת), אוריאל בוסו (בריאות) ויואב בן צור (עבודה), וכן סגני השרים חיים ביטון ומשה אבוטבול; כהונת ארבל כשר הפנים הסתיימה ב-22 ביולי 2025."
+          en: "Shas’s ministers filed their resignations: Moshe Arbel (Interior), Yaakov Margi (Welfare), Michael Malkieli (Religious Services), Uriel Busso (Health) and Yoav Ben Tzur (Labor), plus deputy ministers Haim Biton and Moshe Abutbul; Arbel’s term as interior minister ended on 22 July 2025."
+        sources:
+          - { url: "https://www.timesofisrael.com/liveblog_entry/shas-ministers-file-resignations-as-party-withdraws-from-government/", title: "Shas ministers file resignations as party withdraws from government (2025-07-17)", publisher: "The Times of Israel" }
+          - { url: "https://www.ynet.co.il/news/article/rknlxehlgg", title: "המשבר הפוליטי: ש\"ס פורשת מהממשלה (2025-07-16)", publisher: "Ynet" }
+          - { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030660%20and%20KnessetNum%20eq%2025", title: "KNS_PersonToPosition — Moshe Arbel (PersonID 30660), Knesset 25 (2026-09-19)", publisher: "Knesset OData" }
+      - date: "2025-07-20"
+        text:
+          he: "בעקבות ההתפטרות מהממשלה שבו לכנסת לפי החוק הנורבגי יעקב מרגי, יואב בן צור וחיים ביטון; חדלו לכהן אברהם בצלאל, סימיון מושיאשוילי וארז מלול."
+          en: "Following the ministers’ resignations, Yaakov Margi, Yoav Ben Tzur and Haim Biton returned to the Knesset under the Norwegian law; Avraham Betzalel, Simion Mushiashvili and Erez Malul ceased to serve."
+        sources:
+          - { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=FactionID%20eq%201095%20and%20KnessetNum%20eq%2025", title: "KNS_PersonToPosition — FactionID 1095, Knesset 25 (member records with start/finish dates) (2026-09-19)", publisher: "Knesset OData" }
+      - date: "2025-07-29"
+        text:
+          he: "הממשלה העבירה את תיקי ש\"ס לשני שרי ליכוד כממלאי מקום: יריב לוין — פנים, שירותי דת ועבודה; חיים כץ — רווחה ובריאות. ב-24 בנובמבר 2025 נרשמו לוין כשר העבודה, שירותי הדת וירושלים ומסורת ישראל וכץ כשר הבריאות והרווחה; משרד הפנים נותר ללא שר."
+          en: "The cabinet transferred the Shas-held portfolios to two Likud ministers in an acting capacity: Yariv Levin — Interior, Religious Services and Labor; Haim Katz — Welfare and Health. On 24 November 2025 Levin was recorded as Minister of Labor, Religious Services, and Jerusalem and Jewish Heritage, and Katz as Minister of Health and of Welfare; the Interior Ministry was left without a minister."
+        sources:
+          - { url: "https://www.timesofisrael.com/ministries-previously-held-by-shas-transferred-to-pair-of-likud-ministers/", title: "Ministries previously held by Shas transferred to pair of Likud ministers (2025-07-29)", publisher: "The Times of Israel" }
+          - { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=KnessetNum%20eq%2025%20and%20GovMinistryID%20ne%20null%20and%20IsCurrent%20eq%20true", title: "KNS_PersonToPosition — current government positions, Knesset 25 (Levin: Labor, Religious Services, Jerusalem & Heritage from 2025-11-24; Katz: Health, Welfare from 2025-11-24) (2026-09-19)", publisher: "Knesset OData" }
+          - { url: "https://main.knesset.gov.il/mk/government/pages/governments.aspx?govId=37", title: "הממשלה ה-37 — הרכב הממשלה (2026-09-19)", publisher: "Knesset" }
+          - { url: "https://www.timesofisrael.com/netanyahu-under-legal-duress-agrees-to-tap-interior-minister-after-year-long-vacancy/", title: "Netanyahu, under legal duress, agrees to tap interior minister after year-long vacancy (Interior vacant since Arbel’s resignation; Levin’s acting role expired October 2025) (2026-08-03)", publisher: "The Times of Israel" }
+      - date: "2026-05-17"
+        text:
+          he: "משה ארבל, שר הפנים לשעבר, הגיש את התפטרותו מהכנסת; במכתבו לדרעי כתב שימשיך לפעול לאור ערכי תנועת ש\"ס. ב-19 במאי 2026 נכנס במקומו ארז מלול."
+          en: "Former interior minister Moshe Arbel submitted his resignation from the Knesset; in his letter to Deri he wrote that he would carry on in the light of the Shas movement’s values. Erez Malul took his seat on 19 May 2026."
+        sources:
+          - { url: "https://www.timesofisrael.com/former-shas-minister-moshe-arbel-resigns-from-knesset-ahead-of-election/", title: "Former Shas minister Moshe Arbel resigns from Knesset; defied party line on key issues (2026-05-17)", publisher: "The Times of Israel" }
+          - { url: "https://main.knesset.gov.il/mk/apps/faction/faction-lobby?KnessetID=25&FactionID=1095", title: "סיעת התאחדות הספרדים שומרי תורה — חילופי גברי: 19/05/2026 ארז מלול נכנס במקום משה ארבל (2026-09-19)", publisher: "Knesset" }
+      - date: "2026-06-16"
+        text:
+          he: "ש\"ס ויהדות התורה החרימו יום שני ברציפות את ההצבעות במליאה בדרישה להעביר את \"חוק המעונות\" (החזרת סבסוד מעונות היום לילדי אברכים)."
+          en: "Shas and United Torah Judaism boycotted Knesset votes for a second consecutive day, demanding passage of the ‘Daycare Law’ restoring daycare subsidies for the children of yeshiva students."
+        sources:
+          - { url: "https://www.timesofisrael.com/haredi-knesset-boycott-continues-putting-coalitions-legislative-blitz-at-risk/", title: "Haredi Knesset boycott continues, putting coalition's legislative blitz at risk (2026-06-16)", publisher: "The Times of Israel" }
+      - date: "2026-07-16"
+        text:
+          he: "הכנסת ה-25 התפזרה בהצבעה 62–0; הבחירות נקבעו ל-27 באוקטובר 2026. דרעי איים תחילה לעכב את חוק הפיזור ולאחר מכן חזר בו."
+          en: "The 25th Knesset dissolved itself by a 62–0 vote; the election was set for 27 October 2026. Deri initially threatened to hold up the dissolution bill and then backed down."
+        sources:
+          - { url: "https://www.timesofisrael.com/knesset-votes-on-official-dispersal-of-parliament-wrapping-up-final-legislative-blitz/", title: "Knesset officially disperses, after coalition completes its drastic legislative blitz (2026-07-17)", publisher: "The Times of Israel" }
+      - date: "2026-09-08"
+        text:
+          he: "ש\"ס הגישה את רשימתה לכנסת ה-26 (רשימה 19, אותיות מבוקשות שס): אריה דרעי, ינון אזולאי, מיכאל מלכיאלי, יואב בן צור, חיים ביטון, דרור עמוס (יו\"ר המועצה הדתית חיפה), משה אבוטבול, אוריאל בוסו, יוסף טייב, יונתן מישרקי, יוסי אילנתנוב, ארז מלול, סימיון מושיאשוילי; משה ארבל אינו ברשימה."
+          en: "Shas submitted its list for the 26th Knesset (list 19, requested letters שס): Aryeh Deri, Yinon Azulai, Michael Malkieli, Yoav Ben Tzur, Haim Biton, Dror Amos (chair of the Haifa religious council), Moshe Abutbul, Uriel Busso, Yosef Taieb, Yonatan Mishriki, Yossi Ilantanov, Erez Malul, Simion Mushiashvili; Moshe Arbel is not on the list."
+        sources:
+          - { url: "https://www.gov.il/he/pages/shas_list19", title: "רשימת המועמדים — התאחדות הספרדים שומרי תורה (רשימה 19) (2026-09-16)", publisher: "ועדת הבחירות המרכזית / gov.il" }
+          - { url: "https://www.timesofisrael.com/israels-election-takes-shape-as-38-parties-submit-slates-from-likud-to-joint-list/", title: "Israel's election takes shape as 38 parties submit slates, in battle between pro- and anti-Netanyahu blocs (2026-09-09)", publisher: "The Times of Israel" }
+    election2026:
+      runsAs: own
+      slug: shas
+      note:
+        he: "הרשימה הוגשה על ידי ש\"ס; אריה דרעי בראשה, ינון אזולאי ומיכאל מלכיאלי אחריו."
+        en: "The list was submitted by Shas; Aryeh Deri heads it, followed by Yinon Azulai and Michael Malkieli."
+      sources:
+        - { url: "https://www.gov.il/he/pages/shas_list19", title: "התאחדות הספרדים שומרי תורה — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
     spectrum: right
     ballotLetters: "שס"
     leaderHe: אריה דרעי
@@ -78,18 +301,85 @@ profiles:
         - Funding for Torah education and welfare for weaker populations
         - Protecting Haredi education and yeshiva students' draft exemptions
   - id: 1110 # Blue & White – National Unity
+    verified: "2026-09-19"
+    updates:
+      - date: "2025-06-30"
+        text:
+          he: "ח\"כ גדי איזנקוט, מספר 2 בסיעה, הודיע ליו\"ר בני גנץ על פרישתו מהמפלגה והתפטרותו מהכנסת; כהונתו הסתיימה ב-4 ביולי 2025 ואיתן גינזבורג נכנס במקומו באותו יום."
+          en: "MK Gadi Eisenkot, the faction’s No. 2, told chairman Benny Gantz he was leaving the party and resigning from the Knesset; his term ended on 4 July 2025 and Eitan Ginzburg took his seat the same day."
+        sources:
+          - { url: "https://www.timesofisrael.com/in-political-shakeup-national-unity-no-2-eisenkot-set-to-leave-party-quit-knesset/", title: "In political shakeup, National Unity No. 2 Eisenkot to leave the party, quit Knesset (2025-06-30)", publisher: "The Times of Israel" }
+          - { url: "https://www.ynet.co.il/news/article/hjzxfblrgx", title: "איזנקוט עוזב את המחנה הממלכתי - והודיע לגנץ: \"אתפטר מהכנסת\" (2025-06-30)", publisher: "ynet" }
+          - { url: "https://www.timesofisrael.com/after-quitting-knesset-eisenkot-says-he-is-working-on-a-governing-alternative/", title: "After quitting Knesset, Eisenkot says he is working to build a 'governing alternative' (2025-07-01)", publisher: "The Times of Israel" }
+          - { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=FactionID%20eq%201098%20and%20KnessetNum%20eq%2025%20and%20(StartDate%20ge%202025-06-01T00:00:00Z%20or%20FinishDate%20ge%202025-06-25T00:00:00Z)", title: "KNS_PersonToPosition — PersonID 30836 (גדי איזנקוט) FinishDate 2025-07-04; PersonID 30693 (איתן גינזבורג) StartDate 2025-07-04 (2026-09-19)", publisher: "Knesset OData" }
+      - date: "2025-07-01"
+        text:
+          he: "ח\"כ מתן כהנא הודיע על פרישה מהסיעה בעקבות איזנקוט; כהונתו בכנסת הסתיימה ב-8 ביולי 2025 ויעל רון בן משה נכנסה במקומו. באותו יום (1 ביולי) הודיע גנץ על החזרת השם \"כחול לבן\"."
+          en: "MK Matan Kahana announced he was leaving the faction after Eisenkot; his Knesset term ended on 8 July 2025 and Yael Ron Ben-Moshe took his seat. The same day (1 July) Gantz announced the return to the name “Blue and White”."
+        sources:
+          - { url: "https://www.jpost.com/israel-news/article-859662", title: "'We are all Blue and White': Gantz reverts National Unity party name after Eisenkot departure (2025-07-01)", publisher: "The Jerusalem Post" }
+          - { url: "https://www.timesofisrael.com/after-quitting-knesset-eisenkot-says-he-is-working-on-a-governing-alternative/", title: "After quitting Knesset, Eisenkot says he is working to build a 'governing alternative' (Eisenkot and Kahana to be replaced by Ginzburg and Ron Ben-Moshe) (2025-07-01)", publisher: "The Times of Israel" }
+          - { url: "https://www.ynet.co.il/news/article/byoc00u11hle", title: "בצל הפרישות מהמפלגה: גנץ משיק קמפיין חדש - וחוזר ל\"כחול לבן\" (2025-07-01)", publisher: "ynet" }
+          - { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=FactionID%20eq%201098%20and%20KnessetNum%20eq%2025%20and%20(StartDate%20ge%202025-06-01T00:00:00Z%20or%20FinishDate%20ge%202025-06-25T00:00:00Z)", title: "KNS_PersonToPosition — PersonID 30662 (מתן כהנא) FinishDate 2025-07-08; PersonID 30775 (יעל רון בן משה) StartDate 2025-07-08 (2026-09-19)", publisher: "Knesset OData" }
+      - date: "2025-07-08"
+        text:
+          he: "ועדת הכנסת אישרה (7 ביולי) את שינוי שם הסיעה ל\"כחול לבן - המחנה הממלכתי\"; ברישומי הכנסת סיעה 1098 (המחנה הממלכתי) הסתיימה וסיעה 1110 החלה ב-8 ביולי 2025, עם 8 חברים ובראשות פנינה תמנו."
+          en: "The Knesset House Committee approved (7 July) renaming the faction “Blue and White–National Unity”; in the Knesset’s records faction 1098 (National Unity) ended and faction 1110 began on 8 July 2025, with 8 members and Pnina Tamano-Shata as faction chair."
+        sources:
+          - { url: "https://www.timesofisrael.com/liveblog_entry/knesset-panel-approves-changing-name-of-gantzs-party-to-blue-and-white-national-unity/", title: "Knesset panel approves changing name of Gantz's party to Blue and White-National Unity (2025-07-07)", publisher: "The Times of Israel" }
+          - { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Faction?$filter=KnessetNum%20eq%2025", title: "KNS_Faction — 1098 FinishDate 2025-07-08; 1110 StartDate 2025-07-08 (2026-09-19)", publisher: "Knesset OData" }
+          - { url: "https://main.knesset.gov.il/mk/apps/faction/faction-lobby?KnessetID=25&FactionID=1110", title: "סיעת כחול לבן - המחנה הממלכתי — 8 חברים, יו\"ר הסיעה פנינה תמנו (2026-09-19)", publisher: "הכנסת" }
+      - date: "2025-07-24"
+        text:
+          he: "ח\"כ אורית פרקש הכהן הודיעה על פרישה ממפלגת כחול לבן תוך שמירה על מושבה בכנסת, וציינה כוונה לסייע למהלך של גדי איזנקוט; ב-2026 היא במקום השלישי ברשימת ישר!."
+          en: "MK Orit Farkash-Hacohen announced she was leaving the Blue and White party while keeping her Knesset seat, saying she intended to help Gadi Eisenkot’s initiative; in 2026 she is third on the Yashar! list."
+        sources:
+          - { url: "https://www.timesofisrael.com/in-latest-blow-to-gantz-mk-farkash-hacohen-resigns-from-blue-and-white/", title: "In latest blow to Gantz, MK Farkash-Hacohen resigns from Blue and White (2025-07-24)", publisher: "The Times of Israel" }
+          - { url: "https://www.gov.il/he/pages/yashar_list_2", title: "ישר! עם איזנקוט — רשימה 2: 3 אורית פרקש הכהן, 5 מתן כהנא, 6 חילי טרופר (2026-09-10)", publisher: "ועדת הבחירות המרכזית (gov.il)" }
+      - date: "2025-09-16"
+        text:
+          he: "גדי איזנקוט הקים את מפלגת \"ישר!\"; מתן כהנא נמנה עם מייסדיה, וב-2026 הוא במקום החמישי ברשימתה."
+          en: "Gadi Eisenkot founded the party “Yashar!”; Matan Kahana was among its founders and in 2026 is fifth on its list."
+        sources:
+          - { url: "https://www.timesofisrael.com/gadi-eisenkot-founds-new-party-two-months-after-resigning-from-knesset/", title: "Gadi Eisenkot founds new party, two months after resigning from Knesset (2025-09-16)", publisher: "The Times of Israel" }
+          - { url: "https://www.gov.il/he/pages/yashar_list_2", title: "ישר! עם איזנקוט — רשימה 2: 1 גדי איזנקוט, 5 מתן כהנא (2026-09-10)", publisher: "ועדת הבחירות המרכזית (gov.il)" }
+      - date: "2026-05-03"
+        text:
+          he: "ח\"כ חילי טרופר הודיע על פרישה ממפלגת כחול לבן; ב-6 בספטמבר 2026 מיזג את מפלגתו (הרשומה בוועדת הבחירות כ\"יסודות ישראל\"; \"Zionist Home\" בתקשורת באנגלית) לתוך ישר! והוא במקום השישי ברשימתה. ח\"כ איתן גינזבורג הצטרף לרשימת \"ביחד\" של בנט (מקום 8)."
+          en: "MK Chili Tropper announced he was leaving the Blue and White party; on 6 September 2026 he merged his party (registered with the CEC as “יסודות ישראל”; “Zionist Home” in the English press) into Yashar! and is sixth on its list. MK Eitan Ginzburg joined Bennett’s “Together” list (8th)."
+        sources:
+          - { url: "https://www.timesofisrael.com/blue-and-white-mk-chili-tropper-quits-party-raising-speculation-about-his-future/", title: "Blue and White MK Chili Tropper quits party, raising speculation about his future… and Gantz's (2026-05-03)", publisher: "The Times of Israel" }
+          - { url: "https://www.timesofisrael.com/ditching-hendel-zionist-home-chair-chili-tropper-merges-party-into-eisenkots-yashar/", title: "Ditching Hendel, Zionist Home chair Chili Tropper merges party into Eisenkot's Yashar (2026-09-06)", publisher: "The Times of Israel" }
+          - { url: "https://www.timesofisrael.com/liveblog_entry/gantz-submits-19-member-blue-and-white-slate-despite-months-of-polling-below-electoral-threshold/", title: "Gantz submits 19-member Blue and White slate despite months of polling below electoral threshold (Ginzburg joined B'Yachad) (2026-09-08)", publisher: "The Times of Israel" }
+          - { url: "https://www.gov.il/he/pages/beyahad_list1", title: "ביחד בראשות נפתלי בנט — רשימה 1: 8 איתן גינזבורג (2026-09-07)", publisher: "ועדת הבחירות המרכזית (gov.il)" }
+      - date: "2026-09-08"
+        text:
+          he: "בני גנץ הגיש לוועדת הבחירות רשימה עצמאית בשם \"כחול לבן\" (רשימה 30, האותיות המבוקשות כן): גנץ, פנינה תמנו, גאולה עליזה בלוך, רועי קונקול, צאליק רתם אבידר, אלון שוסטר…; רק שלושה מ-8 חברי הסיעה המכהנים ברשימה, והמפלגה מופיעה בסקרים מתחת לאחוז החסימה."
+          en: "Benny Gantz submitted an independent list named “Blue and White” to the CEC (list 30, requested letters כן): Gantz, Pnina Tamano-Shata, Aliza Bloch, Roi Konkol, Tzalik Rotem Avidar, Alon Schuster…; only three of the faction’s 8 sitting MKs are on it, and the party has polled below the electoral threshold."
+        sources:
+          - { url: "https://www.gov.il/he/pages/kachol-lavan_list30", title: "כחול לבן — רשימה 30 (מגישה: כחול לבן חוסן לישראל) (2026-09-16)", publisher: "ועדת הבחירות המרכזית (gov.il)" }
+          - { url: "https://www.timesofisrael.com/liveblog_entry/gantz-submits-19-member-blue-and-white-slate-despite-months-of-polling-below-electoral-threshold/", title: "Gantz submits 19-member Blue and White slate despite months of polling below electoral threshold (2026-09-08)", publisher: "The Times of Israel" }
+          - { url: "https://www.timesofisrael.com/israels-election-takes-shape-as-38-parties-submit-slates-from-likud-to-joint-list/", title: "Israel's election takes shape as 38 parties submit slates, in battle between pro- and anti-Netanyahu blocs (2026-09-09)", publisher: "The Times of Israel" }
+    election2026:
+      runsAs: own
+      slug: blue-white
+      note:
+        he: "הרשימה \"כחול לבן\" הוגשה על ידי כחול לבן חוסן לישראל; בני גנץ בראשה ופנינה תמנו במקום השני."
+        en: "The “Blue and White” list was submitted by Blue and White – Israel Resilience; Benny Gantz heads it and Pnina Tamano is second."
+      sources:
+        - { url: "https://www.gov.il/he/pages/kachol-lavan_list30", title: "כחול לבן — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
     spectrum: center
     ballotLetters: "כן"
     leaderHe: בני גנץ
     leaderEn: Benny Gantz
     founded: 2019
-    wikipediaEn: https://en.wikipedia.org/wiki/National_Unity_(Israel)
+    wikipediaEn: https://en.wikipedia.org/wiki/Blue_and_White_(political_party)
     tags: [centrist, liberal-conservative, security]
     summary:
-      he: מפלגת מרכז בראשות בכירים לשעבר במערכת הביטחון.
-      en: A centrist party led by former senior figures from the defense establishment.
-      ar: حزب وسطي يقوده مسؤولون أمنيون سابقون كبار.
-      ru: Центристская партия во главе с бывшими высокопоставленными силовиками.
+      he: מפלגת מרכז בראשות בני גנץ, לשעבר הרמטכ"ל ושר הביטחון; עד יולי 2025 חלק מהמחנה הממלכתי.
+      en: A centrist party led by Benny Gantz, a former IDF chief of staff and defense minister; part of National Unity until July 2025.
+      ar: حزب وسطي بقيادة بيني غانتس، رئيس الأركان ووزير الدفاع السابق؛ كان جزءًا من "المعسكر الرسمي" حتى تموز/يوليو 2025.
+      ru: Центристская партия во главе с Бени Ганцем, бывшим начальником генштаба и министром обороны; до июля 2025 года входила в «Государственный лагерь».
     positions:
       he:
         - ממלכתיות, שמירה על מוסדות הדמוקרטיה ומערכת המשפט
@@ -100,6 +390,66 @@ profiles:
         - A responsible, centrist security policy
         - A broad unity government
   - id: 1105 # Religious Zionism
+    verified: "2026-09-19"
+    updates:
+      - date: "2023-02-07"
+        text:
+          he: "(רקע) בצלאל סמוטריץ' התפטר מהכנסת לפי החוק הנורבגי עם מינויו לשר האוצר; צבי סוכות נכנס במקומו ב-7 בפברואר 2023."
+          en: "(Background) Bezalel Smotrich resigned his Knesset seat under the Norwegian law on becoming finance minister; Zvi Sukkot entered in his place on 7 February 2023."
+        sources:
+          - { url: "https://www.haaretz.com/israel-news/2023-02-05/ty-article/.premium/far-right-settler-leader-becomes-mk-under-law-to-expand-size-of-government/00000186-213a-d442-a18f-afbbb1ac0000", title: "Far-right Settler Leader Becomes MK Under Law to Expand Size of Government (2023-02-05)", publisher: "Haaretz" }
+          - { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=FactionID%20eq%201105%20and%20KnessetNum%20eq%2025", title: "KNS_PersonToPosition — FactionID 1105, Knesset 25 (Smotrich member to 2023-02-07; Sukkot from 2023-02-07) (2026-09-19)", publisher: "Knesset OData" }
+      - date: "2024-11-11"
+        text:
+          he: "(רקע) אוהד טל החליף את שמחה רוטמן כיו\"ר סיעת הציונות הדתית בכנסת."
+          en: "(Background) Ohad Tal replaced Simcha Rothman as chair of the Religious Zionism faction in the Knesset."
+        sources:
+          - { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=FactionID%20eq%201105%20and%20KnessetNum%20eq%2025", title: "KNS_PersonToPosition — FactionID 1105, Knesset 25 (PositionID 48: Rothman 2022-12-15 → 2024-11-11; Tal from 2024-11-11) (2026-09-19)", publisher: "Knesset OData" }
+      - date: "2025-01-21"
+        text:
+          he: "כהונתו של צבי סוכות בכנסת הסתיימה ב-21 בינואר 2025 — היום שבו נכנסו לתוקף התפטרויות שרי עוצמה יהודית מהממשלה ועמיחי אליהו שב לכנסת (השניים נבחרו ברשימה המשותפת של 2022, שממנה נקבעים המחליפים לפי החוק הנורבגי). הסיעה מנתה 6 חברים עד אפריל 2025."
+          en: "Zvi Sukkot’s Knesset term ended on 21 January 2025 — the day the Otzma Yehudit ministers’ resignations took effect and Amichai Eliyahu returned to the Knesset (both were elected on the 2022 joint list, from which Norwegian-law replacements are drawn). The faction had 6 members until April 2025."
+        sources:
+          - { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=FactionID%20eq%201105%20and%20KnessetNum%20eq%2025", title: "KNS_PersonToPosition — FactionID 1105 (Sukkot member 2023-02-07 → 2025-01-21) and FactionID 1106 (Eliyahu member from 2025-01-21) (2026-09-19)", publisher: "Knesset OData" }
+          - { url: "https://www.timesofisrael.com/with-otzma-yehudit-out-of-government-netanyahu-set-to-appoint-replacement-ministers/", title: "With Otzma Yehudit out of government, Netanyahu set to appoint replacement ministers (2025-01-19)", publisher: "The Times of Israel" }
+          - { url: "https://www.timesofisrael.com/utjs-goldknopf-resigns-from-cabinet-after-knesset-fails-to-pass-dissolution-bill/", title: "UTJ's Goldknopf resigns from cabinet after Knesset fails to pass dissolution bill (explains the Norwegian-law displacement mechanism) (2025-06-12)", publisher: "The Times of Israel" }
+      - date: "2025-04-06"
+        text:
+          he: "אלמוג כהן (נבחר ברשימה המשותפת מטעם עוצמה יהודית) מונה לסגן שר במשרד ראש הממשלה ב-2 באפריל 2025 והתפטר מהכנסת לפי החוק הנורבגי; צבי סוכות שב לכנסת ב-6 באפריל 2025 והסיעה חזרה ל-7 חברים."
+          en: "Almog Cohen (elected on the joint list for Otzma Yehudit) was appointed deputy minister in the Prime Minister’s Office on 2 April 2025 and resigned from the Knesset under the Norwegian law; Zvi Sukkot returned to the Knesset on 6 April 2025 and the faction was back to 7 members."
+        sources:
+          - { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=KnessetNum%20eq%2025%20and%20GovMinistryID%20ne%20null%20and%20IsCurrent%20eq%20true", title: "KNS_PersonToPosition — current government positions (Almog Cohen, deputy minister, PMO, from 2025-04-02); FactionID 1106 query: Cohen member to 2025-04-06; FactionID 1105 query: Sukkot member from 2025-04-06 (2026-09-19)", publisher: "Knesset OData" }
+          - { url: "https://www.timesofisrael.com/former-otzma-yehudit-mk-to-run-in-likud-primary-after-netanyahu-opens-door/", title: "Former Otzma Yehudit MK to run in Likud primary after Netanyahu opens door (2026-08-12)", publisher: "The Times of Israel" }
+      - date: "2026-08-13"
+        text:
+          he: "סמוטריץ' הודיע שהציונות הדתית תרוץ בנפרד מעוצמה יהודית: 'הציבור הדתי-לאומי יכול וצריך לרוץ בכוחות עצמו כמפלגה גדולה, חזקה ומשמעותית'. בן גביר שלל ריצה משותפת (27 ביולי) ודחה את דרישת נתניהו להתאחד (28 באוגוסט)."
+          en: "Smotrich said Religious Zionism would run separately from Otzma Yehudit: ‘the Religious Zionist public can and should run on its own as a big, strong, significant party.’ Ben Gvir ruled out a joint run (27 July) and rejected Netanyahu’s demand to merge (28 August)."
+        sources:
+          - { url: "https://www.jpost.com/israel-election-2026/article-905489", title: "WATCH: 'I know how to act responsibly': Smotrich outlines election strategy, plan to draft haredim (2026-08-13)", publisher: "The Jerusalem Post" }
+          - { url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-903791", title: "Ben-Gvir rules out running with Smotrich for elections, says parties are 'fundamentally different' (2026-07-27)", publisher: "The Jerusalem Post" }
+          - { url: "https://www.timesofisrael.com/ben-gvir-rejects-pms-demand-to-merge-with-smotrich-drawing-scathing-response-from-likud/", title: "Ben Gvir refuses Netanyahu's demand to merge with Smotrich; Likud: He's crowning Eisenkot (2026-08-28)", publisher: "The Times of Israel" }
+      - date: "2026-09-01"
+        text:
+          he: "הציונות הדתית וזהות בראשות משה פייגלין הודיעו על ריצה משותפת (גוש טכני); סמוטריץ' קרא למפלגות ימין נוספות להצטרף. פייגלין שובץ במקום השני."
+          en: "Religious Zionism and Moshe Feiglin’s Zehut announced a joint run as a technical bloc; Smotrich urged other right-wing parties to join. Feiglin was placed second."
+        sources:
+          - { url: "https://www.timesofisrael.com/smotrich-feiglin-announce-joint-election-run-urge-other-right-wing-parties-to-join/", title: "Smotrich, Feiglin announce joint election run, urge other right-wing parties to join (2026-09-01)", publisher: "The Times of Israel" }
+          - { url: "https://www.timesofisrael.com/how-far-right-outcast-moshe-feiglin-resurrected-his-political-career/", title: "How far-right outcast Moshe Feiglin resurrected his political career (2026-09-04)", publisher: "The Times of Israel" }
+      - date: "2026-09-08"
+        text:
+          he: "הרשימה המשותפת הוגשה (רשימה 31, אות מבוקשת ט) בידי האיחוד הלאומי-תקומה, זהות ועתיד אחד: 1 בצלאל סמוטריץ', 2 משה פייגלין (זהות), 3 אורית סטרוק (עתיד אחד), 4 שמחה רוטמן, 5 צבי מור, 6 איתמר איתם, 7 צבי סוכות, 8 יצחק זאגא (זהות), 9 רעות בן חיים, 10 עומר וולדמן (זהות), 11 ארקדי מוטר (זהות), 12 אוהד טל."
+          en: "The joint list was submitted (list 31, requested letter ט) by National Union–Tkuma, Zehut and Atid Echad: 1 Bezalel Smotrich, 2 Moshe Feiglin (Zehut), 3 Orit Strook (Atid Echad), 4 Simcha Rothman, 5 Zvi Mor, 6 Itamar Eitam, 7 Zvi Sukkot, 8 Yitzhak Zaga (Zehut), 9 Reut Ben Haim, 10 Omer Waldman (Zehut), 11 Arkadi Muter (Zehut), 12 Ohad Tal."
+        sources:
+          - { url: "https://www.gov.il/he/pages/tzionutdatit-zehut_list31", title: "רשימת המועמדים — הציונות הדתית בראשות בצלאל סמוטריץ' וזהות בראשות משה פייגלין (רשימה 31) (2026-09-08)", publisher: "ועדת הבחירות המרכזית / gov.il" }
+          - { url: "https://www.timesofisrael.com/israels-election-takes-shape-as-38-parties-submit-slates-from-likud-to-joint-list/", title: "Israel's election takes shape as 38 parties submit slates, in battle between pro- and anti-Netanyahu blocs (2026-09-09)", publisher: "The Times of Israel" }
+    election2026:
+      runsAs: own
+      slug: rz-zehut
+      note:
+        he: "רשימה משותפת עם זהות של משה פייגלין (מקום 2) ועם \"עתיד אחד\" של אורית סטרוק (מקום 3); הוגשה על ידי האיחוד הלאומי - תקומה, זהות ועתיד אחד."
+        en: "A joint list with Moshe Feiglin’s Zehut (2nd place) and Orit Strook’s “One Future” (3rd); submitted by National Union – Tkuma, Zehut and One Future."
+      sources:
+        - { url: "https://www.gov.il/he/pages/tzionutdatit-zehut_list31", title: "הציונות הדתית וזהות — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
     spectrum: far-right
     ballotLetters: "ט"
     ballotNote:
@@ -108,6 +458,7 @@ profiles:
     leaderHe: בצלאל סמוטריץ'
     leaderEn: Bezalel Smotrich
     founded: 2021
+    website: https://zionutdatit.org.il/
     wikipediaEn: https://en.wikipedia.org/wiki/Religious_Zionist_Party
     tags: [religious-zionist, nationalist, conservative]
     summary:
@@ -125,22 +476,32 @@ profiles:
         - Strengthening the state's Jewish and religious identity
         - Reform of the judicial system
   - id: 1101 # United Torah Judaism
+    election2026:
+      runsAs: own
+      slug: utj
+      note:
+        he: "בראש הרשימה יעקב אשר (דגל התורה); יצחק גולדקנופף (אגודת ישראל) שני ומאיר פרוש רביעי. משה גפני ואורי מקלב, חברי הסיעה בכנסת ה-25, אינם ברשימה. הוגשה על ידי דגל התורה, אגודת ישראל ו\"חומת תורת ישראל\"."
+        en: "Yaakov Asher (Degel HaTorah) heads the list; Yitzhak Goldknopf (Agudat Yisrael) is second and Meir Porush fourth. Moshe Gafni and Uri Maklev, members of the 25th-Knesset faction, are not on it. Submitted by Degel HaTorah, Agudat Yisrael and “Homat Torat Yisrael”."
+      sources:
+        - { url: "https://www.gov.il/he/pages/yahadut-degel_list37", title: "יהדות התורה והשבת אגודת ישראל - דגל התורה — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
     spectrum: right
     ballotLetters: "ג"
     leaderHe: יעקב אשר
     leaderEn: Yaakov Asher
     founded: 1992
-    # 2026: the submitted list is headed by Yaakov Asher; Yitzhak Goldknopf,
-    # who led the faction in the 25th Knesset, is second.
+    # 2026: the submitted list is headed by Yaakov Asher (Degel HaTorah);
+    # Yitzhak Goldknopf, who headed the 2022 list and chairs Agudat Yisrael, is
+    # second. The Knesset faction has had no chair since 17 Jul 2025 (OData).
     sources:
-      - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
+      - { url: "https://www.gov.il/he/pages/yahadut-degel_list37", title: "יהדות התורה והשבת אגודת ישראל - דגל התורה — רשימת המועמדים (ועדת הבחירות המרכזית, 9.9.2026)", publisher: "ועדת הבחירות המרכזית לכנסת" }
+      - { url: "https://www.ynetnews.com/article/b1e7ngq00gg", title: "United Torah Judaism ousts Moshe Gafni after 38 years in major Haredi leadership shake-up (5 Sep 2026)", publisher: "Ynetnews" }
     wikipediaEn: https://en.wikipedia.org/wiki/United_Torah_Judaism
     tags: [ultra-orthodox, ashkenazi, religious]
     summary:
-      he: ברית מפלגות חרדיות אשכנזיות (אגודת ישראל ודגל התורה).
-      en: An alliance of Ashkenazi ultra-Orthodox parties (Agudat Yisrael and Degel HaTorah).
-      ar: تحالف أحزاب حريدية أشكنازية (أغودات يسرائيل ودِغل هتوراة).
-      ru: Союз ашкеназских ультраортодоксальных партий (Агудат Исраэль и Дегель ха-Тора).
+      he: ברית מפלגות חרדיות אשכנזיות (אגודת ישראל ודגל התורה); ברשימת 2026 מצטרפת אליהן גם "חומת תורת ישראל".
+      en: An alliance of Ashkenazi ultra-Orthodox parties (Agudat Yisrael and Degel HaTorah); the 2026 list also includes “Homat Torat Yisrael”.
+      ar: تحالف أحزاب حريدية أشكنازية (أغودات يسرائيل ودِغل هتوراة)؛ تنضم إليهما في قائمة 2026 أيضًا "حومات تورات يسرائيل".
+      ru: Союз ашкеназских ультраортодоксальных партий (Агудат Исраэль и Дегель ха-Тора); в списке 2026 года к ним присоединяется и «Хомат Торат Исраэль».
     positions:
       he:
         - שמירה על אורח חיים חרדי ותקצוב מוסדות תורה
@@ -151,11 +512,51 @@ profiles:
         - Draft exemptions for yeshiva students
         - Sabbath and kashrut observance in the public sphere
   - id: 1104 # Yisrael Beiteinu
+    verified: "2026-09-19"
+    updates:
+      - date: "2026-08-05"
+        text:
+          he: "ח\"כ דן אילוז, שפרש מהליכוד ביולי 2026, הודיע על הצטרפותו לישראל ביתנו והובטח לו מקום ריאלי ברשימה."
+          en: "MK Dan Illouz, who left Likud in July 2026, announced he was joining Yisrael Beiteinu and was promised a realistic slot on its list."
+        sources:
+          - { url: "https://www.timesofisrael.com/rebel-likud-mk-dan-illouz-joins-yisrael-beytenu-touts-its-national-and-liberal-values/", title: "Rebel Likud MK Dan Illouz joins Yisrael Beytenu, touts its ‘national and liberal values’ (2026-08-05)", publisher: "The Times of Israel" }
+          - { url: "https://www.ynet.co.il/news/article/rk6i1lblml", title: "דן אילוז מצטרף לליברמן: \"מייצג את הערכים שאני מאמין בהם\" (2026-08-05)", publisher: "ynet" }
+      - date: "2026-08-11"
+        text:
+          he: "אילוז הגיש את התפטרותו מהכנסת והחזיר את המנדט לליכוד (במקומו נכנס ב-13 באוגוסט שבתאי קטש); סיעת ישראל ביתנו נותרה בת 6 חברים."
+          en: "Illouz submitted his resignation from the Knesset, returning the seat to Likud (Shabtai Katash entered on 13 August); the Yisrael Beiteinu faction remains at 6 members."
+        sources:
+          - { url: "https://www.inn.co.il/news/703704", title: "דן אילוז: \"נתניהו חייב ללכת הביתה\" (2026-08-11)", publisher: "ערוץ 7" }
+          - { url: "https://main.knesset.gov.il/mk/apps/faction/faction-lobby?KnessetID=25&FactionID=1096", title: "סיעת הליכוד — חילופי גברי: 13/08/2026 שבתאי קטש נכנס במקום דן אילוז (2026-09-19)", publisher: "הכנסת" }
+      - date: "2026-09-06"
+        text:
+          he: "המפלגה הציגה את רשימתה לכנסת ה-26 (25 מועמדים): ליברמן, רפי בן שטרית (ראש עיריית בית שאן לשעבר, לשעבר בליכוד) במקום השני, טליה לנקרי, עודד פורר, יוליה מלינובסקי, שרון שרעבי, חמד עמאר, יבגני סובה, אלוירה קוליחמן, ודן אילוז במקום העשירי; ח\"כ שרון ניר אינה ברשימה. הרשימה הוגשה לוועדת הבחירות כרשימה מס' 11 (אות מבוקשת ל)."
+          en: "The party unveiled its 26th-Knesset list (25 candidates): Lieberman, Rafi Ben Shitrit (former Beit She’an mayor, ex-Likud) second, Talia Lankri, Oded Forer, Yulia Malinovsky, Sharon Sharabi, Hamad Amar, Evgeny Sova, Elvira Kulikhman, and Dan Illouz tenth; MK Sharon Nir is not on the list. It was submitted to the CEC as list no. 11 (requested letter ל)."
+        sources:
+          - { url: "https://www.timesofisrael.com/bennett-liberman-unveil-byachad-yisrael-beytenu-knesset-slates-for-upcoming-election/", title: "Anti-Netanyahu leaders Bennett and Liberman unveil their parties’ Knesset election slates (2026-09-06)", publisher: "The Times of Israel" }
+          - { url: "https://www.israelhayom.co.il/news/politics/article/21366291", title: "הפתעה במקום השני: נחשפה רשימת ישראל ביתנו; ליברמן עקץ את איזנקוט (2026-09-06)", publisher: "ישראל היום" }
+          - { url: "https://beytenu.org.il/%D7%A8%D7%A9%D7%99%D7%9E%D7%AA-%D7%9E%D7%A4%D7%9C%D7%92%D7%AA-%D7%99%D7%A9%D7%A8%D7%90%D7%9C-%D7%91%D7%99%D7%AA%D7%A0%D7%95-%D7%9C%D7%9B%D7%A0%D7%A1%D7%AA-%D7%94%D7%91%D7%90%D7%94/", title: "רשימת מפלגת ישראל ביתנו לכנסת הבאה (2026-09-06)", publisher: "ישראל ביתנו (אתר המפלגה)" }
+          - { url: "https://www.gov.il/he/pages/israel-beitenu_list11", title: "רשימה 11 — ישראל ביתנו בראשות אביגדור ליברמן (2026-09-07)", publisher: "ועדת הבחירות המרכזית לכנסת (gov.il)" }
+      - date: "2026-09-10"
+        text:
+          he: "ישראל ביתנו חתמה על הסכם עודפים עם רשימת \"ביחד\" בראשות נפתלי בנט (באותו יום נחתם הסכם דומה בין ישר! לדמוקרטים)."
+          en: "Yisrael Beiteinu signed a surplus-vote agreement with Naftali Bennett’s “Together” list (the same day Yashar and The Democrats signed a parallel agreement)."
+        sources:
+          - { url: "https://www.jpost.com/israel-election-2026/article-908296", title: "Bennett-Liberman, Eisenkot-Golan: Opposition parties sign surplus vote-sharing agreement (2026-09-10)", publisher: "The Jerusalem Post" }
+    election2026:
+      runsAs: own
+      slug: yisrael-beiteinu
+      note:
+        he: "הרשימה הוגשה על ידי ישראל ביתנו; דן אילוז, לשעבר ח\"כ הליכוד, במקום העשירי."
+        en: "The list was submitted by Yisrael Beiteinu; Dan Illouz, formerly a Likud MK, is tenth."
+      sources:
+        - { url: "https://www.gov.il/he/pages/israel-beitenu_list11", title: "ישראל ביתנו — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
     spectrum: right
     ballotLetters: "ל"
     leaderHe: אביגדור ליברמן
     leaderEn: Avigdor Lieberman
     founded: 1999
+    website: https://beytenu.org.il/
     wikipediaEn: https://en.wikipedia.org/wiki/Yisrael_Beiteinu
     tags: [nationalist, secular, russian-speaking]
     summary:
@@ -173,6 +574,75 @@ profiles:
         - Mandatory conscription for all sectors, including Haredim
         - A tough security line
   - id: 1106 # Otzma Yehudit
+    verified: "2026-09-19"
+    updates:
+      - date: "2025-01-19"
+        text:
+          he: "עוצמה יהודית הודיעה על פרישה מהממשלה ומהקואליציה במחאה על הסכם הפסקת האש ושחרור החטופים; השרים איתמר בן גביר, עמיחי אליהו ויצחק וסרלאוף הגישו מכתבי התפטרות שנכנסו לתוקף ב-21 בינואר 2025. אליהו שב לכנסת ב-21 בינואר; ב-27 בינואר החליף צביקה פוגל את וסרלאוף כיו\"ר הסיעה."
+          en: "Otzma Yehudit announced it was leaving the government and the coalition in protest at the ceasefire–hostage deal; ministers Itamar Ben Gvir, Amichai Eliyahu and Yitzhak Wasserlauf submitted resignations that took effect on 21 January 2025. Eliyahu returned to the Knesset on 21 January; on 27 January Zvika Fogel replaced Wasserlauf as faction chair."
+        sources:
+          - { url: "https://www.timesofisrael.com/with-otzma-yehudit-out-of-government-netanyahu-set-to-appoint-replacement-ministers/", title: "With Otzma Yehudit out of government, Netanyahu set to appoint replacement ministers (2025-01-19)", publisher: "The Times of Israel" }
+          - { url: "https://www.haaretz.co.il/news/politics/2025-01-19/ty-article/00000194-7d9c-d61f-a1b5-fdbd99970000", title: "עוצמה יהודית הודיעה על פרישתה מהקואליציה, בן גביר ושרי המפלגה הגישו מכתבי התפטרות (2025-01-19)", publisher: "הארץ" }
+          - { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=FactionID%20eq%201106%20and%20KnessetNum%20eq%2025", title: "KNS_PersonToPosition — FactionID 1106, Knesset 25 (Eliyahu member from 2025-01-21; PositionID 48: Wasserlauf to 2025-01-27, Fogel from 2025-01-27) (2026-09-19)", publisher: "Knesset OData" }
+      - date: "2025-01-21"
+        text:
+          he: "ח\"כ אלמוג כהן היה היחיד בסיעה שלא הגיש מכתב התפטרות; הוא אמר שאין בכוונתו לעזוב את עוצמה יהודית ולא השיב אם הוא רואה עצמו חלק מהקואליציה."
+          en: "MK Almog Cohen was the only faction member not to hand in a resignation letter; he said he had no plans to leave Otzma Yehudit and deflected the question of whether he still considered himself part of the coalition."
+        sources:
+          - { url: "https://www.timesofisrael.com/his-far-right-party-now-in-the-opposition-rebel-mk-almog-cohen-is-in-political-limbo/", title: "His far-right party now in the opposition, rebel MK Almog Cohen is in political limbo (2025-01-21)", publisher: "The Times of Israel" }
+      - date: "2025-03-19"
+        text:
+          he: "עוצמה יהודית שבה לממשלה עם חידוש הלחימה בעזה: הממשלה אישרה את מינוי בן גביר מחדש לשר לביטחון לאומי, והכנסת אישרה ברוב של 65 מול 46 את חזרת המפלגה ואת מינוי בן גביר, אליהו ווסרלאוף (כהונותיהם נרשמו מ-19 במרץ 2025)."
+          en: "Otzma Yehudit returned to the government as fighting in Gaza resumed: the cabinet approved Ben Gvir’s reappointment as national security minister and the Knesset ratified the party’s return and the reappointment of Ben Gvir, Eliyahu and Wasserlauf by 65 to 46 (their terms are recorded from 19 March 2025)."
+        sources:
+          - { url: "https://www.timesofisrael.com/ben-gvir-reappointed-police-minister-as-knesset-okays-his-partys-return-to-government/", title: "Ben Gvir reappointed police minister as Knesset okays his party's return to government (2025-03-20)", publisher: "The Times of Israel" }
+          - { url: "https://www.timesofisrael.com/cabinet-reappoints-ben-gvir-as-police-minister-ignoring-attorney-generals-objections/", title: "Cabinet unanimously reappoints Ben Gvir as police minister, ignoring AG's objections (2025-03-19)", publisher: "The Times of Israel" }
+          - { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=KnessetNum%20eq%2025%20and%20GovMinistryID%20ne%20null%20and%20IsCurrent%20eq%20true", title: "KNS_PersonToPosition — current government positions (Ben Gvir, National Security; Wasserlauf, Negev & Galilee; Eliyahu, Heritage — all from 2025-03-19) (2026-09-19)", publisher: "Knesset OData" }
+      - date: "2025-04-06"
+        text:
+          he: "אלמוג כהן מונה לסגן שר במשרד ראש הממשלה (2 באפריל 2025) והתפטר מהכנסת לפי החוק הנורבגי; במקומו נכנס צבי סוכות (הציונות הדתית), הבא בתור ברשימה המשותפת של 2022, והסיעה ירדה ל-6 חברים. באוגוסט 2026 התמודד כהן בפריימריז של הליכוד והוא במקום ה-13 ברשימת הליכוד."
+          en: "Almog Cohen was appointed deputy minister in the Prime Minister’s Office (2 April 2025) and resigned from the Knesset under the Norwegian law; Zvi Sukkot (Religious Zionism), next on the 2022 joint list, took the seat and the faction fell to 6 members. In August 2026 Cohen ran in the Likud primary and is 13th on the Likud list."
+        sources:
+          - { url: "https://www.timesofisrael.com/former-otzma-yehudit-mk-to-run-in-likud-primary-after-netanyahu-opens-door/", title: "Former Otzma Yehudit MK to run in Likud primary after Netanyahu opens door (2026-08-12)", publisher: "The Times of Israel" }
+          - { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=FactionID%20eq%201106%20and%20KnessetNum%20eq%2025", title: "KNS_PersonToPosition — FactionID 1106 (Cohen member to 2025-04-06); FactionID 1105 (Sukkot from 2025-04-06); current government positions (Cohen, deputy minister, PMO, from 2025-04-02) (2026-09-19)", publisher: "Knesset OData" }
+          - { url: "https://www.gov.il/he/pages/halikud-tikvahadasha_iist29", title: "רשימת המועמדים — הליכוד (רשימה 29): 13 אלמוג כהן (2026-09-09)", publisher: "ועדת הבחירות המרכזית / gov.il" }
+      - date: "2026-08-28"
+        text:
+          he: "בן גביר שלל ריצה משותפת עם הציונות הדתית (27 ביולי: 'אחד ועוד אחד לא תמיד שווה שניים') ודחה את דרישת נתניהו להתאחד עם סמוטריץ': 'ההחלטה סופית ומוחלטת'; הליכוד האשים אותו ב'שריפת' קולות ימין."
+          en: "Ben Gvir ruled out a joint run with Religious Zionism (27 July: ‘one plus one does not always equal two’) and rejected Netanyahu’s demand to merge with Smotrich, calling the decision ‘final and complete’; Likud accused him of ‘burning’ right-wing votes."
+        sources:
+          - { url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-903791", title: "Ben-Gvir rules out running with Smotrich for elections, says parties are 'fundamentally different' (2026-07-27)", publisher: "The Jerusalem Post" }
+          - { url: "https://www.timesofisrael.com/ben-gvir-rejects-pms-demand-to-merge-with-smotrich-drawing-scathing-response-from-likud/", title: "Ben Gvir refuses Netanyahu's demand to merge with Smotrich; Likud: He's crowning Eisenkot (2026-08-28)", publisher: "The Times of Israel" }
+      - date: "2026-09-03"
+        text:
+          he: "הליכוד הודיע על הסכמה שח\"כ טלי גוטליב (הליכוד) תתמודד ברשימת עוצמה יהודית — במקום השני — בלי שתוכרז כפורשת; היא כפופה למשמעת הליכוד בהצבעות עד כינוס הכנסת ה-26. גוטליב סיימה במקום ה-12 בפריימריז של הליכוד ונדחקה למקום ה-20 ברשימה."
+          en: "Likud announced an agreement under which MK Tally Gotliv (Likud) runs on the Otzma Yehudit list — in second place — without being declared a departing lawmaker; she remains bound by Likud voting discipline until the 26th Knesset convenes. Gotliv had placed 12th in Likud’s primary and was pushed to 20th on its slate."
+        sources:
+          - { url: "https://www.ynet.co.il/news/article/h1uerzwozl", title: "המעבר אושר: טלי גוטליב תתמודד ברשימת עוצמה יהודית לכנסת (2026-09-03)", publisher: "Ynet" }
+          - { url: "https://www.timesofisrael.com/likud-arranges-to-have-firebrand-mk-tally-gotliv-run-with-ben-gvirs-otzma-yehudit/", title: "Likud arranges to have firebrand MK Tally Gotliv run with Ben Gvir's Otzma Yehudit (2026-09-04)", publisher: "The Times of Israel" }
+      - date: "2026-09-07"
+        text:
+          he: "רשימת עוצמה יהודית הוגשה (רשימה 14) בידי 'חזית יהודית לאומית' ו'ארץ ישראל שלנו': 1 איתמר בן גביר, 2 טלי גוטליב, 3 יצחק וסרלאוף, 4 עמיחי אליהו, 5 לימור סון הר-מלך, 6 יצחק קרויזר, 7 חנמאל דורפמן, 8 צחי אליהו. האות המבוקשת: ב — אות שביקשה גם רשימה 1 ('ביחד בראשות נפתלי בנט', ב/רק); לעוצמה יהודית זכות קדימה על האות ט מהכנסת ה-25. האותיות ייקבעו באישור הרשימות ב-27 בספטמבר 2026."
+          en: "The Otzma Yehudit list was submitted (list 14) by ‘Jewish National Front’ and ‘Eretz Yisrael Shelanu’: 1 Itamar Ben Gvir, 2 Tally Gotliv, 3 Yitzhak Wasserlauf, 4 Amichai Eliyahu, 5 Limor Son Har-Melech, 6 Yitzhak Kroizer, 7 Hanamel Dorfman, 8 Tzachi Eliyahu. Requested letter: ב — also requested by list 1 (‘Together headed by Naftali Bennett’, ב/רק); Otzma Yehudit holds a priority right to ט from the 25th Knesset. Letters are set when the lists are approved on 27 September 2026."
+        sources:
+          - { url: "https://www.gov.il/he/pages/yehudit-meuhedet_list14", title: "רשימת המועמדים — עוצמה יהודית (רשימה 14) (2026-09-09)", publisher: "ועדת הבחירות המרכזית / gov.il" }
+          - { url: "https://www.gov.il/he/pages/candidates-lists-26", title: "רשימות המועמדים לכנסת ה-26 — טבלת האותיות התפוסות/הפנויות (2026-09-18)", publisher: "ועדת הבחירות המרכזית / gov.il" }
+          - { url: "https://www.timesofisrael.com/no-last-minute-mergers-as-parties-submit-final-knesset-slates-for-election/", title: "No last-minute mergers as most parties submit final Knesset slates for election (2026-09-07)", publisher: "The Times of Israel" }
+      - date: "2026-09-14"
+        text:
+          he: "הדמוקרטים הגישו לוועדת הבחירות המרכזית בקשה לפסול את עוצמה יהודית מהתמודדות, בטענה לפגיעה באופייה הדמוקרטי של המדינה; הבקשה מתייחסת גם להתנהלות בן גביר כשר וגם לגוטליב. הוועדה טרם הכריעה."
+          en: "The Democrats asked the Central Elections Committee to bar Otzma Yehudit from running, alleging it undermines the state’s democratic character; the request also cites Ben Gvir’s conduct as minister and Gotliv. The committee has not yet ruled."
+        sources:
+          - { url: "https://www.timesofisrael.com/democrats-seek-to-bar-otzma-yehudit-from-election-as-polls-show-continued-deadlock/", title: "Democrats seek to bar Otzma Yehudit from election as polls show continued deadlock (2026-09-15)", publisher: "The Times of Israel" }
+    election2026:
+      runsAs: own
+      slug: otzma
+      note:
+        he: "הרשימה הוגשה על ידי \"חזית יהודית לאומית\" ו\"ארץ ישראל שלנו\"; טלי גוטליב, לשעבר ח\"כית הליכוד, במקום השני. האות המבוקשת ב התבקשה גם על ידי \"ביחד\" — ההכרעה בידי ועדת הבחירות."
+        en: "The list was submitted by “Jewish National Front” and “Our Land of Israel”; Tali Gottlieb, formerly a Likud MK, is second. The requested letter ב was also requested by “Together” — the CEC decides."
+      sources:
+        - { url: "https://www.gov.il/he/pages/yehudit-meuhedet_list14", title: "עוצמה יהודית — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
+        - { url: "https://www.gov.il/he/pages/candidates-lists-26", title: "רשימות המועמדים לכנסת ה-26 — אותיות מבוקשות", publisher: "ועדת הבחירות המרכזית לכנסת" }
     spectrum: far-right
     ballotLetters: "ט"
     ballotNote:
@@ -181,8 +651,9 @@ profiles:
     leaderHe: איתמר בן גביר
     leaderEn: Itamar Ben-Gvir
     founded: 2012
+    website: https://ozma-yeudit.co.il/
     wikipediaEn: https://en.wikipedia.org/wiki/Otzma_Yehudit
-    tags: [far-right, religious-nationalist, kahanist-roots]
+    tags: [far-right, religious-nationalist]
     summary:
       he: מפלגת ימין קיצוני דתית-לאומית, מדגישה ביטחון אישי ואכיפה תקיפה.
       en: A far-right religious-nationalist party emphasizing personal security and tough enforcement.
@@ -198,18 +669,86 @@ profiles:
         - Support for settlement and applying sovereignty
         - Nationalist positions on Jewish identity
   - id: 1099 # Ra'am
+    verified: "2026-09-19"
+    updates:
+      - date: "2025-12-06"
+        text:
+          he: "יו\"ר רע\"ם מנסור עבאס הודיע בריאיון לחדשות 12 כי המפלגה תפריד את מוסדותיה ממועצת השורא ומהתנועה האסלאמית ותהפוך ל\"מפלגה אזרחית לחלוטין\"."
+          en: "Ra’am chair Mansour Abbas said in a Channel 12 interview that the party would separate its institutions from the Shura Council and the Islamic Movement and become “a completely civic party”."
+        sources:
+          - { url: "https://www.timesofisrael.com/raam-leader-says-party-will-cut-ties-with-religious-council-become-completely-civic/", title: "Ra'am leader says party will cut ties with religious council, become 'completely civic' (2025-12-07)", publisher: "The Times of Israel" }
+          - { url: "https://www.haaretz.co.il/0000019a-fa1c-d193-a1be-fbbd36a30000", title: "בהתנתקות מהתנועה האסלאמית, מנסור עבאס מהמר על עתיד רע\"מ (2025-12-08)", publisher: "הארץ" }
+      - date: "2026-01-05"
+        text:
+          he: "עבאס הודיע כי רע\"ם פתוחה לחברים ולמועמדים יהודים לכנסת, ושלל הצטרפות לממשלה הנוכחית."
+          en: "Abbas said Ra’am is open to Jewish members and Knesset candidates, and ruled out joining the current government."
+        sources:
+          - { url: "https://www.timesofisrael.com/liveblog_entry/abbas-says-raam-party-will-be-open-to-jewish-candidates-in-major-shift/", title: "Abbas says Ra'am party will be open to Jewish candidates, in major shift (2026-01-05)", publisher: "The Times of Israel" }
+      - date: "2026-01-22"
+        text:
+          he: "ראשי רע\"ם, חד\"ש, תע\"ל ובל\"ד חתמו בסח'נין על התחייבות לפעול להקמת הרשימה המשותפת מחדש, ביום השביתה הכללית בחברה הערבית נגד הפשיעה."
+          en: "The heads of Ra’am, Hadash, Ta’al and Balad signed in Sakhnin a commitment to work toward re-establishing the Joint List, on the day of the Arab community’s general strike over violent crime."
+        sources:
+          - { url: "https://www.timesofisrael.com/under-pressure-arab-knesset-parties-sign-agreement-to-work-toward-reviving-joint-list/", title: "Under pressure, Arab Knesset parties sign agreement to work toward reviving Joint List (2026-01-22)", publisher: "The Times of Israel" }
+          - { url: "https://www.ynet.co.il/news/article/bye65yguwl", title: "ראשי המפלגות הערביות הסכימו: נפעל להקמת הרשימה המשותפת מחדש (2026-01-22)", publisher: "ynet" }
+      - date: "2026-07-26"
+        text:
+          he: "רע\"ם הודיעה כי תרוץ לבד (\"אנחנו רצים לבד\") ותקיים בחירות מקדימות בוועידתה ב-22 באוגוסט, לראשונה ללא מועצת השורא; עבאס הודיע על השלמת ההיפרדות מהתנועה האסלאמית בבחירת המועמדים."
+          en: "Ra’am said it would run on its own (“we are running alone”) and hold primaries at its convention on 22 August, for the first time without the Shura Council; Abbas said the separation from the Islamic Movement in choosing candidates was complete."
+        sources:
+          - { url: "https://www.ynet.co.il/news/article/hjn9ijvbzl", title: "פריימריז ברע\"ם לראשונה מאז ההיפרדות ממועצת השורא, עבאס: \"אנחנו רצים לבד\" (2026-07-26)", publisher: "ynet" }
+          - { url: "https://www.haaretz.co.il/0000019f-a257-df92-a7ff-a6d7e0fd0000", title: "רע\"מ מתנתקת מהתנועה האסלאמית ותבחר את מועמדיה לכנסת באופן עצמאי (2026-07-27)", publisher: "הארץ" }
+      - date: "2026-08-22"
+        text:
+          he: "ועידת רע\"ם בטייבה בחרה את הרשימה: מנסור עבאס, ווליד טאהא, ואליד אלהואשלה, אימאן ח'טיב יאסין (מקום שמור לאישה) ויאסר חוג'יראת; עבאס אמר כי רע\"ם מתכוונת להיות חלק מ\"גוש השינוי\"."
+          en: "Ra’am’s convention in Tayibe elected its slate: Mansour Abbas, Walid Taha, Walid Alhwashla, Iman Khatib Yasin (reserved women’s slot) and Yasser Hujirat; Abbas said Ra’am intends to be part of the opposition “change bloc”."
+        sources:
+          - { url: "https://www.timesofisrael.com/raams-abbas-says-palestinian-state-a-reality-drawing-outrage-from-zionist-parties/", title: "Ra'am's Abbas says Palestinian state 'a reality,' drawing outrage from Zionist parties (2026-08-22)", publisher: "The Times of Israel" }
+          - { url: "https://www.ynetnews.com/article/mnpvs6cf0", title: "Ra'am Selects Candidate List for Upcoming Elections (2026-08-22)", publisher: "Ynetnews" }
+      - date: "2026-08-31"
+        text:
+          he: "עבאס ויואב סגלוביץ', חבר כנסת לשעבר מיש עתיד שפרש מהמפלגה ב-6 באוגוסט והתפטר מהכנסת (חילופין ב-11 באוגוסט), הודיעו בנצרת כי סגלוביץ' יוצב במקום השני ברשימת רע\"ם — מועמד יהודי ראשון ברשימה."
+          en: "Abbas and Yoav Segalovitz — a former Yesh Atid MK who left the party on 6 August and resigned from the Knesset (replaced on 11 August) — announced in Nazareth that Segalovitz will run second on Ra’am’s list, the first Jewish candidate on it."
+        sources:
+          - { url: "https://www.timesofisrael.com/jewish-former-mk-yoav-segalovitz-announces-unprecedented-run-with-arab-raam-party/", title: "In unprecedented move, Abbas and Segalovitz announce joint run, bringing Jewish lawmaker to Arab party's slate (2026-08-31)", publisher: "The Times of Israel" }
+          - { url: "https://www.ynet.co.il/news/article/sjamoqq00ge", title: "סגלוביץ': אי אפשר לקיים שותפות עם מפלגות ערביות אחרי 7/10? זה מופרך ושקרי (2026-08-31)", publisher: "ynet" }
+          - { url: "https://www.timesofisrael.com/segalovitz-departs-yesh-atid-amid-his-reported-talks-to-join-mansour-abbass-raam/", title: "Segalovitz departs Yesh Atid amid his reported talks to join Mansour Abbas's Ra'am (2026-08-07)", publisher: "The Times of Israel" }
+          - { url: "https://www.timesofisrael.com/raams-abbas-former-yesh-atid-mk-segalovitz-confirm-ongoing-talks-on-knesset-run/", title: "Ra'am's Abbas, former Yesh Atid MK Segalovitz confirm ongoing talks on Knesset run (2026-08-13)", publisher: "The Times of Israel" }
+          - { url: "https://main.knesset.gov.il/mk/apps/faction/faction-lobby?KnessetID=25&FactionID=1102", title: "סיעת יש עתיד — חילופי גברי: 11/08/2026 מיכל סלבני כבביה נכנסה במקום יואב סגלוביץ (2026-09-19)", publisher: "הכנסת" }
+      - date: "2026-09-07"
+        text:
+          he: "רע\"ם הגישה לוועדת הבחירות את רשימתה לכנסת ה-26 (\"רע\"ם - הרשימה הערבית המאוחדת\", אותיות מבוקשות עם): 1 מנסור עבאס, 2 יואב סגלוביץ, 3 ווליד טאהא, 4 ואליד אל הואשלה, 5 אימאן ח'טיב יאסין, 6 יאסר חוג'יראת, 7 איברהים אל טורי. ב-12 בספטמבר נחתם הסכם עודפים עם הרשימה המשותפת."
+          en: "Ra’am submitted its list for the 26th Knesset to the CEC (“Ra’am – United Arab List”, requested letters עם): 1 Mansour Abbas, 2 Yoav Segalovitz, 3 Walid Taha, 4 Walid Alhwashla, 5 Iman Khatib Yasin, 6 Yasser Hujirat, 7 Ibrahim al-Turi. On 12 September it signed a surplus-vote agreement with the Joint List."
+        sources:
+          - { url: "https://www.gov.il/he/pages/raam_list18", title: "רע\"ם - הרשימה הערבית המאוחדת — רשימת המועמדים לכנסת ה-26 (ועדת הבחירות המרכזית) (2026-09-09)", publisher: "gov.il / ועדת הבחירות המרכזית" }
+          - { url: "https://www.timesofisrael.com/israels-election-takes-shape-as-38-parties-submit-slates-from-likud-to-joint-list/", title: "Israel's election takes shape as 38 parties submit slates, in battle between pro- and anti-Netanyahu blocs (2026-09-09)", publisher: "The Times of Israel" }
+          - { url: "https://www.timesofisrael.com/liveblog_entry/joint-list-and-raam-sign-surplus-vote-deal-ahead-of-oct-27-elections/", title: "Joint List and Ra'am sign surplus-vote deal ahead of Oct. 27 elections (2026-09-12)", publisher: "The Times of Israel" }
+      - date: "2026-09-13"
+        text:
+          he: "הליכוד הודיע כי יגיש לוועדת הבחירות המרכזית בקשה לפסול את רע\"ם ואת הרשימה המשותפת; שבוע קודם לכן הגישה עוצמה יהודית בקשה לפסילת רע\"ם. ההכרעה בוועדה נתונה לביקורת בית המשפט העליון."
+          en: "Likud said it would petition the Central Elections Committee to disqualify Ra’am and the Joint List; Otzma Yehudit had filed a petition against Ra’am the week before. CEC decisions are subject to Supreme Court review."
+        sources:
+          - { url: "https://www.timesofisrael.com/netanyahus-party-says-it-will-petition-election-panel-to-ban-arab-majority-parties/", title: "Netanyahu's Likud says it will petition election panel to ban Arab-majority parties (2026-09-14)", publisher: "The Times of Israel" }
+    election2026:
+      runsAs: own
+      slug: raam
+      note:
+        he: "הרשימה הוגשה על ידי רשימת האיחוד הערבי; יואב סגלוביץ', לשעבר ח\"כ יש עתיד, במקום השני."
+        en: "The list was submitted by the United Arab List; Yoav Segalovitz, formerly a Yesh Atid MK, is second."
+      sources:
+        - { url: "https://www.gov.il/he/pages/raam_list18", title: "רע\"ם - הרשימה הערבית המאוחדת — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
     spectrum: center
     ballotLetters: "עם"
     leaderHe: מנסור עבאס
     leaderEn: Mansour Abbas
     founded: 1996
     wikipediaEn: https://en.wikipedia.org/wiki/United_Arab_List
-    tags: [arab, islamist, conservative]
+    tags: [arab, conservative]
     summary:
-      he: מפלגה ערבית אסלאמית-שמרנית; הראשונה שהצטרפה לקואליציה ציונית (2021).
-      en: An Arab Islamist-conservative party; the first to join a Zionist-led coalition (2021).
-      ar: حزب عربي إسلامي محافظ؛ أول حزب عربي ينضم إلى ائتلاف بقيادة صهيونية (2021).
-      ru: Арабская исламистско-консервативная партия; первая вошедшая в коалицию под сионистским руководством (2021).
+      he: מפלגה ערבית שמרנית, שצמחה מהתנועה האסלאמית ובדצמבר 2025 הודיעה על הפרדת מוסדותיה ממנה; הראשונה שהצטרפה לקואליציה ציונית (2021).
+      en: An Arab conservative party that grew out of the Islamic Movement and announced in December 2025 that it was separating its institutions from it; the first Arab party to join a Zionist-led coalition (2021).
+      ar: حزب عربي محافظ نشأ من الحركة الإسلامية وأعلن في كانون الأول/ديسمبر 2025 فصل مؤسساته عنها؛ أول حزب عربي ينضم إلى ائتلاف بقيادة صهيونية (2021).
+      ru: Арабская консервативная партия, выросшая из Исламского движения и в декабре 2025 года объявившая об отделении своих институтов от него; первая вошедшая в коалицию под сионистским руководством (2021).
     positions:
       he:
         - קידום זכויות ותקציבים לאוכלוסייה הערבית
@@ -220,17 +759,87 @@ profiles:
         - Fighting crime and violence in Arab society
         - Upholding conservative religious values
   - id: 1103 # Hadash-Ta'al
+    verified: "2026-09-19"
+    updates:
+      - date: "2025-06-20"
+        text:
+          he: "ח\"כ יוסף עטאונה (חד\"ש) התפטר מהכנסת במסגרת הסכם רוטציה בתוך הסיעה; במקומו נכנס סמיר בן סעיד (תע\"ל)."
+          en: "MK Yousef Atauna (Hadash) resigned from the Knesset under a rotation agreement within the faction; Samir Ben Said (Ta’al) took his seat."
+        sources:
+          - { url: "https://zoha.org.il/138082/", title: "ח\"כ עטאונה הגיש את מכתב התפטרותו מהכנסת במסגרת הסכם הרוטציה בסיעת חד\"ש-תע\"ל (2025-06-18)", publisher: "זו הדרך" }
+          - { url: "https://main.knesset.gov.il/mk/apps/faction/faction-lobby?KnessetID=25&FactionID=1103", title: "סיעת חד\"ש-תע\"ל — חילופי גברי: 20/06/2025 סמיר בן סעיד נכנס במקום יוסף עטאונה (2026-09-19)", publisher: "הכנסת" }
+          - { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=KnessetNum%20eq%2025%20and%20FactionID%20eq%201103%20and%20PositionID%20eq%2054", title: "KNS_PersonToPosition — faction 1103 members (Atauna FinishDate 2025-06-20; Ben Said StartDate 2025-06-20) (2026-09-19)", publisher: "Knesset OData" }
+      - date: "2025-07-14"
+        text:
+          he: "הצעה להדיח את ח\"כ איימן עודה מהכנסת (על רקע התבטאות מינואר 2025 על שחרור חטופים ואסירים) זכתה ל-73 תומכים מול 15 מתנגדים במליאה, פחות מ-90 הקולות הנדרשים, ונדחתה. ועדת הכנסת אישרה את הבקשה ביוני 2025."
+          en: "A motion to remove MK Ayman Odeh from the Knesset (over a January 2025 statement about the release of hostages and prisoners) received 73 votes in favour and 15 against in the plenum, short of the 90 required, and failed. The House Committee had approved the request in June 2025."
+        sources:
+          - { url: "https://www.timesofisrael.com/motion-to-expel-odeh-from-knesset-fails-to-pass-amid-heckling-by-coalition-members/", title: "Motion to expel Arab party head Odeh from Knesset fails; coalition MKs heckle him (2025-07-15)", publisher: "The Times of Israel" }
+      - date: "2026-01-22"
+        text:
+          he: "ראשי חד\"ש, תע\"ל, בל\"ד ורע\"ם חתמו בסח'נין על התחייבות לפעול להקמת הרשימה המשותפת מחדש, ביום השביתה הכללית בחברה הערבית נגד הפשיעה."
+          en: "The heads of Hadash, Ta’al, Balad and Ra’am signed in Sakhnin a commitment to work toward re-establishing the Joint List, on the day of the Arab community’s general strike over violent crime."
+        sources:
+          - { url: "https://www.timesofisrael.com/under-pressure-arab-knesset-parties-sign-agreement-to-work-toward-reviving-joint-list/", title: "Under pressure, Arab Knesset parties sign agreement to work toward reviving Joint List (2026-01-22)", publisher: "The Times of Israel" }
+          - { url: "https://www.ynet.co.il/news/article/bye65yguwl", title: "ראשי המפלגות הערביות הסכימו: נפעל להקמת הרשימה המשותפת מחדש (2026-01-22)", publisher: "ynet" }
+      - date: "2026-05-16"
+        text:
+          he: "מועצת חד\"ש (966 צירים) בדיר חנא בחרה בד\"ר יוסף ג'בארין, ח\"כ לשעבר (2015–2021), ליו\"ר המפלגה במקום איימן עודה, שלא התמודד שוב ופורש מהכנסת בתום הקדנציה; אחריו נבחרו, בין השאר, עופר כסיף, יוסף עטאונה, נהאיה ושאחי ואיאס נאטור."
+          en: "Hadash’s 966-delegate council in Deir Hanna elected Dr. Yousef Jabareen, a former MK (2015–2021), as party chair in place of Ayman Odeh, who did not run again and leaves the Knesset at the end of the term; Ofer Cassif, Yousef Atauna, Nihaya Wishahi and Ayas Natur were among those elected to the next slots."
+        sources:
+          - { url: "https://www.timesofisrael.com/former-mk-yousef-jabareen-elected-leader-of-arab-majority-party-hadash/", title: "Former MK Yousef Jabareen elected leader of Arab-majority party Hadash (2026-05-16)", publisher: "The Times of Israel" }
+          - { url: "https://www.ynet.co.il/news/article/rjofrtsjfl", title: "יחליף את איימן עודה: ד\"ר יוסף ג'בארין נבחר ליו\"ר חד\"ש (2026-05-16)", publisher: "ynet" }
+          - { url: "https://zoha.org.il/145496/", title: "חד\"ש בחרה את מועמדיה לכנסת; ד\"ר יוסף ג'בארין יעמוד בראש הרשימה (2026-05-17)", publisher: "זו הדרך" }
+          - { url: "https://www.timesofisrael.com/hadash-to-pick-new-leadership-as-arab-party-hopes-to-energize-bid-for-joint-list-revival/", title: "Arab party Hadash to pick new leaders, hopes to energize efforts for Joint List revival (2026-05-14)", publisher: "The Times of Israel" }
+      - date: "2026-06-10"
+        text:
+          he: "חד\"ש הודיעה כי תתקדם להקמת רשימה משותפת עם תע\"ל ובל\"ד, תוך השארת הדלת פתוחה לרע\"ם; המגעים עם רע\"ם נתקעו על דרישתה שהרשימה תהיה טכנית בלבד כדי לשמור על חופש הצטרפות לקואליציה."
+          en: "Hadash announced it would move ahead with a joint list with Ta’al and Balad, leaving the door open to Ra’am; talks with Ra’am stalled over its demand that the list be technical only, preserving its freedom to join a coalition."
+        sources:
+          - { url: "https://www.timesofisrael.com/arab-parties-hadash-taal-balad-announce-joint-electoral-slate-without-raam/", title: "Arab parties Hadash, Ta'al, Balad announce joint electoral slate — without Ra'am (2026-06-10)", publisher: "The Times of Israel" }
+          - { url: "https://zoha.org.il/145989/", title: "חד״ש: החלטנו להתקדם בהקמת הרשימה המשותפת – רע\"מ טרם הצטרפה (2026-06-10)", publisher: "זו הדרך" }
+      - date: "2026-08-19"
+        text:
+          he: "חד\"ש, תע\"ל ובל\"ד חתמו על הסכם לריצה משותפת כ\"רשימה המשותפת\" — בלי רע\"ם: יוסף ג'בארין (חד\"ש) בראש, אחמד טיבי (תע\"ל) שני ויו\"ר הסיעה המיועד, סאמי אבו שחאדה (בל\"ד) שלישי; תע\"ל קיבלה רוטציה בין המקום השישי לתשיעי, לאחר שדחתה ב-9 באוגוסט את מתווה ועדת הפיוס."
+          en: "Hadash, Ta’al and Balad signed an agreement to run together as the Joint List — without Ra’am: Yousef Jabareen (Hadash) first, Ahmad Tibi (Ta’al) second and designated faction chair, Sami Abu Shahadeh (Balad) third; Ta’al received a rotation between the sixth and ninth slots after rejecting the reconciliation committee’s proposal on 9 August."
+        sources:
+          - { url: "https://www.timesofisrael.com/arab-majority-hadash-taal-and-balad-parties-agree-on-joint-run-after-striking-deal/", title: "Arab-majority Hadash, Ta'al and Balad parties agree on joint run after striking deal (2026-08-19)", publisher: "The Times of Israel" }
+          - { url: "https://www.ynet.co.il/news/article/syoll7qdgl", title: "הרשימה המשותפת חוזרת - בלי עבאס: חד\"ש, תע\"ל ובל\"ד מתאחדות (2026-08-19)", publisher: "ynet" }
+          - { url: "https://www.timesofisrael.com/negotiations-over-arab-joint-list-hit-snag-as-ahmad-tibi-rejects-proposed-slate/", title: "Negotiations over Arab joint list hit snag as Ahmad Tibi rejects proposed slate (2026-08-09)", publisher: "The Times of Israel" }
+      - date: "2026-09-08"
+        text:
+          he: "הרשימה המשותפת הוגשה לוועדת הבחירות (אותיות מבוקשות ודם): 1 יוסף גבארין (חד\"ש), 2 אחמד טיבי (תע\"ל), 3 סאמי אבו שחאדה (בל\"ד), 4 פאתן ג'טאס (חד\"ש), 5 בכר עואודה (בל\"ד), 6 עופר כסיף (חד\"ש), 7 יוסף עטאונה (חד\"ש), 8 מהא כרכבי סבאח (בל\"ד), 9 אחמד דראושה (תע\"ל). איימן עודה אינו ברשימה. ב-12 בספטמבר נחתם הסכם עודפים עם רע\"ם."
+          en: "The Joint List was submitted to the CEC (requested letters ודם): 1 Yousef Jabareen (Hadash), 2 Ahmad Tibi (Ta’al), 3 Sami Abu Shahadeh (Balad), 4 Faten Ghattas (Hadash), 5 Bakr Awawdeh (Balad), 6 Ofer Cassif (Hadash), 7 Yousef Atauna (Hadash), 8 Maha Karkabi Sabbah (Balad), 9 Ahmad Darawshe (Ta’al). Ayman Odeh is not on the list. On 12 September the list signed a surplus-vote agreement with Ra’am."
+        sources:
+          - { url: "https://www.gov.il/he/pages/hareshima-hameshutefet_list35", title: "הרשימה המשותפת — רשימת המועמדים לכנסת ה-26 (ועדת הבחירות המרכזית) (2026-09-18)", publisher: "gov.il / ועדת הבחירות המרכזית" }
+          - { url: "https://www.timesofisrael.com/israels-election-takes-shape-as-38-parties-submit-slates-from-likud-to-joint-list/", title: "Israel's election takes shape as 38 parties submit slates, in battle between pro- and anti-Netanyahu blocs (2026-09-09)", publisher: "The Times of Israel" }
+          - { url: "https://www.timesofisrael.com/arab-party-candidate-under-pressure-to-withdraw-over-sexual-harassment-allegations/", title: "Arab party candidate under pressure to withdraw over sexual harassment allegations (2026-09-03)", publisher: "The Times of Israel" }
+          - { url: "https://www.timesofisrael.com/liveblog_entry/joint-list-and-raam-sign-surplus-vote-deal-ahead-of-oct-27-elections/", title: "Joint List and Ra'am sign surplus-vote deal ahead of Oct. 27 elections (2026-09-12)", publisher: "The Times of Israel" }
+      - date: "2026-09-13"
+        text:
+          he: "הליכוד הודיע כי יגיש לוועדת הבחירות המרכזית בקשה לפסול את הרשימה המשותפת ואת רע\"ם. הכרעות הוועדה נתונות לביקורת בית המשפט העליון."
+          en: "Likud said it would petition the Central Elections Committee to disqualify the Joint List and Ra’am. CEC decisions are subject to Supreme Court review."
+        sources:
+          - { url: "https://www.timesofisrael.com/netanyahus-party-says-it-will-petition-election-panel-to-ban-arab-majority-parties/", title: "Netanyahu's Likud says it will petition election panel to ban Arab-majority parties (2026-09-14)", publisher: "The Times of Israel" }
+    election2026:
+      runsAs: within
+      slug: joint-list
+      note:
+        he: "חד\"ש ותע\"ל רצות עם בל\"ד ב\"רשימה המשותפת\": יוסף ג'בארין (חד\"ש) בראשה, אחמד טיבי (תע\"ל) שני וסאמי אבו שחאדה (בל\"ד) שלישי. איימן עודה אינו ברשימה."
+        en: "Hadash and Ta’al run with Balad on the “Joint List”: Yousef Jabareen (Hadash) heads it, Ahmad Tibi (Ta’al) is second and Sami Abu Shahadeh (Balad) third. Ayman Odeh is not on it."
+      sources:
+        - { url: "https://www.gov.il/he/pages/hareshima-hameshutefet_list35", title: "הרשימה המשותפת — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
     spectrum: left
     ballotLetters: "ום"
     leaderHe: יוסף ג'בארין
     leaderEn: Yousef Jabareen
-    founded: 2015
+    founded: 2003 # first joint Hadash–Ta'al list (Israel Democracy Institute); Hadash itself dates from 1977
     # 2026: Hadash, Ta'al and Balad run again as the Joint List, headed by Hadash
     # chair Dr. Yousef Jabareen; Ahmad Tibi (Ta'al) is second.
     sources:
-      - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
-      - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
-    wikipediaEn: https://en.wikipedia.org/wiki/Hadash
+      - { url: "https://www.gov.il/he/pages/hareshima-hameshutefet_list35", title: "הרשימה המשותפת — רשימת המועמדים (ועדת הבחירות המרכזית, 9.9.2026)", publisher: "ועדת הבחירות המרכזית לכנסת" }
+      - { url: "https://www.timesofisrael.com/arab-majority-hadash-taal-and-balad-parties-agree-on-joint-run-after-striking-deal/", title: "Arab-majority Hadash, Ta’al and Balad parties agree on joint run after striking deal (19 Aug 2026)", publisher: "The Times of Israel" }
+    wikipediaEn: https://en.wikipedia.org/wiki/Hadash%E2%80%93Ta%27al
     tags: [arab-jewish, socialist, left]
     summary:
       he: רשימה משותפת של חד"ש (סוציאליסטית יהודית-ערבית) ותע"ל (ערבית).
@@ -247,6 +856,64 @@ profiles:
         - A two-state solution and ending the occupation
         - Social justice and workers' rights
   - id: 1100 # The Democrats (Labor–Meretz); the Knesset faction is still registered as Labor
+    verified: "2026-09-19"
+    updates:
+      - date: "2024-07-12"
+        text:
+          he: "יאיר גולן נבחר ליו\"ר העבודה (28 במאי 2024); ב-30 ביוני 2024 חתמו העבודה ומרצ על הסכם איחוד למפלגה בשם \"הדמוקרטים\", וועידה משותפת אישרה אותו ב-12 ביולי 2024."
+          en: "Yair Golan was elected Labor chairman (28 May 2024); on 30 June 2024 Labor and Meretz signed a merger agreement creating “The Democrats”, approved by a joint convention on 12 July 2024."
+        sources:
+          - { url: "https://www.timesofisrael.com/yair-golan-wins-landslide-victory-in-labor-primary-with-promise-to-unite-the-left/", title: "Yair Golan wins landslide victory in Labor primary with promise to unite the left (2024-05-28)", publisher: "The Times of Israel" }
+          - { url: "https://www.timesofisrael.com/labor-and-meretz-merge-into-united-liberal-democratic-zionist-party-the-democrats/", title: "Labor and Meretz merge into united 'liberal-democratic Zionist party': The Democrats (2024-06-30)", publisher: "The Times of Israel" }
+          - { url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-810075", title: "With an overwhelming majority, Meretz and Labor approve merge, becoming the Democrats (2024-07-12)", publisher: "The Jerusalem Post" }
+      - date: "2025-02-25"
+        text:
+          he: "ועדת הכנסת, בראשות יו\"ר הקואליציה אופיר כץ, לא אישרה את בקשת סיעת העבודה לשנות את שמה ל\"הדמוקרטים\"; יו\"ר הסיעה אפרת רייטן מרום משכה את הבקשה, והסיעה נותרה רשומה בכנסת כ\"העבודה\"."
+          en: "The Knesset House Committee, chaired by coalition whip Ofir Katz, did not approve the Labor faction’s request to rename itself “The Democrats”; faction chair Efrat Rayten Marom withdrew the request and the faction remains registered in the Knesset as “Labor”."
+        sources:
+          - { url: "https://www.jpost.com/israel-news/article-843691", title: "Coalition denies Labor Party's bid to change name to The Democrats (2025-02-25)", publisher: "The Jerusalem Post" }
+          - { url: "https://main.knesset.gov.il/mk/apps/faction/faction-lobby?KnessetID=25&FactionID=1100", title: "סיעת העבודה — 4 חברים, יו\"ר הסיעה אפרת רייטן מרום (2026-09-19)", publisher: "הכנסת" }
+      - date: "2026-05-31"
+        text:
+          he: "ועידת הדמוקרטים בתל אביב אשררה את איחוד העבודה ומרצ לקראת הבחירות; למרצ הובטחו המקומות 6, 8 ו-14 ברשימה המשותפת."
+          en: "The Democrats’ conference in Tel Aviv ratified the Labor–Meretz merger ahead of the election; Meretz was guaranteed slots 6, 8 and 14 on the joint list."
+        sources:
+          - { url: "https://www.timesofisrael.com/liveblog_entry/left-wing-democrats-party-ratifies-merger-of-labor-and-meretz-factions-at-party-conference/", title: "Left-wing Democrats party ratifies merger of Labor and Meretz factions at party conference (2026-05-31)", publisher: "The Times of Israel" }
+          - { url: "https://www.haaretz.com/israel-news/elections/2026-05-31/ty-article/.premium/democrats-party-approves-left-wing-merger-of-meretz-labor-ahead-of-elections/0000019e-7ec8-d813-a9be-ffcfd71b0000", title: "Democrats Party Approves Left-wing Merger of Meretz, Labor Ahead of Elections (2026-05-31)", publisher: "Haaretz" }
+      - date: "2026-06-28"
+        text:
+          he: "המפלגה פרסמה 51 מועמדים לפריימריז; שלושה מארבעת חברי הכנסת של הסיעה (נעמה לזימי, גלעד קריב, אפרת רייטן מרום) התמודדו, ואילו מרב מיכאלי, שעמדה בראש העבודה בבחירות 2022, לא התמודדה."
+          en: "The party published 51 primary candidates; three of the faction’s four MKs (Naama Lazimi, Gilad Kariv, Efrat Rayten Marom) ran, while Merav Michaeli, who led Labor in the 2022 election, did not run."
+        sources:
+          - { url: "https://www.timesofisrael.com/golans-democrats-party-unveils-51-primary-candidates-touts-85000-members/", title: "Golan's Democrats party unveils 51 primary candidates, touts 85,000 members (2026-06-28)", publisher: "The Times of Israel" }
+      - date: "2026-07-20"
+        text:
+          he: "בפריימריז מקוונים של הדמוקרטים נבחרה רשימת המועמדים: אחרי גולן — נעמה לזימי (2), גלעד קריב (3), אפרת רייטן מרום (4), יאיר פינק (5), גבי לסקי (מרצ, 6), עמרי רונן (7), מיכל רוזין (מרצ, 8), משה רדמן (9), סומייה בשיר (10), נמרוד שפר (11)."
+          en: "In an online Democrats primary the list was chosen: after Golan — Naama Lazimi (2), Gilad Kariv (3), Efrat Rayten Marom (4), Yair Fink (5), Gaby Lasky (Meretz, 6), Omri Ronen (7), Michal Rozin (Meretz, 8), Moshe Radman (9), Somaya Bashir (10), Nimrod Sheffer (11)."
+        sources:
+          - { url: "https://www.timesofisrael.com/naama-lazimi-wins-no-2-spot-after-yair-golan-in-left-wing-democrats-primary/", title: "MK Naama Lazimi wins No. 2 spot after Yair Golan in left-wing Democrats' primary (2026-07-20)", publisher: "The Times of Israel" }
+          - { url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-903068", title: "Democrats announce Knesset slate ahead of elections, MK Lazimi takes second spot after Golan (2026-07-20)", publisher: "The Jerusalem Post" }
+      - date: "2026-09-07"
+        text:
+          he: "הרשימה \"הדמוקרטים בראשות יאיר גולן\" הוגשה לוועדת הבחירות (רשימה 17; האותיות המבוקשות אמת) על ידי שתי מפלגות — \"הדמוקרטים מיסודה של תנועת העבודה\" ו\"מרצ\" — עם 118 מועמדים; מרב מיכאלי אינה ברשימה."
+          en: "The list “The Democrats headed by Yair Golan” was submitted to the CEC (list 17; requested letters אמת) by two parties — “The Democrats, founded by the Labor movement” and “Meretz” — with 118 candidates; Merav Michaeli is not on it."
+        sources:
+          - { url: "https://www.gov.il/he/pages/hademokratim_list17", title: "הדמוקרטים בראשות יאיר גולן — רשימה 17 (2026-09-16)", publisher: "ועדת הבחירות המרכזית (gov.il)" }
+          - { url: "https://www.timesofisrael.com/israels-election-takes-shape-as-38-parties-submit-slates-from-likud-to-joint-list/", title: "Israel's election takes shape as 38 parties submit slates, in battle between pro- and anti-Netanyahu blocs (2026-09-09)", publisher: "The Times of Israel" }
+      - date: "2026-09-10"
+        text:
+          he: "הדמוקרטים ומפלגת ישר! בראשות גדי איזנקוט הודיעו על הסכם עודפים לבחירות 2026."
+          en: "The Democrats and Gadi Eisenkot’s Yashar! announced a surplus-vote agreement for the 2026 election."
+        sources:
+          - { url: "https://www.timesofisrael.com/main-opposition-factions-ink-surplus-vote-deals-in-bid-to-maximize-knesset-representation/", title: "Main opposition factions ink surplus-vote deals in bid to maximize Knesset representation (2026-09-10)", publisher: "The Times of Israel" }
+    election2026:
+      runsAs: own
+      slug: democrats
+      note:
+        he: "הסיעה רשומה בכנסת כ\"העבודה\"; המפלגה רצה כ\"הדמוקרטים בראשות יאיר גולן\" (הוגשה על ידי \"הדמוקרטים מיסודה של תנועת העבודה\" ומרצ). מרב מיכאלי אינה ברשימה."
+        en: "The Knesset faction is registered as “Labor”; the party runs as “The Democrats headed by Yair Golan” (submitted by “The Democrats, founded by the Labor movement” and Meretz). Merav Michaeli is not on the list."
+      sources:
+        - { url: "https://www.gov.il/he/pages/hademokratim_list17", title: "הדמוקרטים בראשות יאיר גולן — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
     spectrum: center-left
     ballotLetters: "אמת"
     leaderHe: יאיר גולן
@@ -259,9 +926,10 @@ profiles:
       en: The merged Labor–Meretz party (since 2024), social-democratic and Zionist; runs in 2026 as The Democrats under Yair Golan.
       ar: حزب اندماج العمل وميرتس (منذ 2024)، اشتراكي-ديمقراطي وصهيوني؛ يخوض انتخابات 2026 باسم «الديمقراطيون» بقيادة يائير غولان.
       ru: Объединённая партия Аводы и Мереца (с 2024 года), социал-демократическая и сионистская; на выборах 2026 года идёт как «Демократы» во главе с Яиром Голаном.
+    website: https://democrats.org.il/
     sources:
-      - { url: "https://en.wikipedia.org/wiki/The_Democrats_(Israel)", title: "The Democrats (Israel) — Wikipedia", publisher: "Wikipedia" }
-      - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
+      - { url: "https://www.gov.il/he/pages/hademokratim_list17", title: "הדמוקרטים בראשות יאיר גולן — רשימת המועמדים (ועדת הבחירות המרכזית, 7.9.2026)", publisher: "ועדת הבחירות המרכזית לכנסת" }
+      - { url: "https://www.timesofisrael.com/labor-and-meretz-merge-into-united-liberal-democratic-zionist-party-the-democrats/", title: "Labor and Meretz merge into united ‘liberal, democratic, Zionist’ party, The Democrats (12 Jul 2024)", publisher: "The Times of Israel" }
     positions:
       he:
         - מדינת רווחה וצדק חברתי
@@ -272,14 +940,85 @@ profiles:
         - A negotiated political settlement
         - Defending democracy and human rights
   - id: 1108 # New Hope – The National Right
+    verified: "2026-09-19"
+    updates:
+      - date: "2024-03-12"
+        text:
+          he: "גדעון סער הודיע על פירוק רשימת המחנה הממלכתי; תקווה חדשה הפכה לסיעה עצמאית בשם \"הימין הממלכתי\" (מ-13 במרץ 2024 לפי הכנסת), וב-25 במרץ 2024 פרשה מהממשלה לאחר שסער לא צורף לקבינט המלחמה."
+          en: "Gideon Sa’ar announced the break-up of the National Unity list; New Hope became a separate faction named “HaYamin HaMamlachti” (from 13 March 2024 per the Knesset), and on 25 March 2024 it left the government after Sa’ar was not added to the war cabinet."
+        sources:
+          - { url: "https://www.timesofisrael.com/saar-splits-from-gantzs-national-unity-party-demands-seat-in-war-cabinet/", title: "Sa’ar splits from Gantz’s National Unity party, demands seat in war cabinet (2024-03-12)", publisher: "The Times of Israel" }
+          - { url: "https://www.ynet.co.il/news/article/bjexbmkyc", title: "לאחר שלא צורף לקבינט המלחמה, סער פורש מהממשלה: \"לא באנו לחמם כיסאות\" (2024-03-25)", publisher: "ynet" }
+          - { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Faction?$filter=KnessetNum%20eq%2025", title: "KNS_Faction — הימין הממלכתי, StartDate 2024-03-13 (2026-09-19)", publisher: "הכנסת (OData)" }
+      - date: "2024-09-30"
+        text:
+          he: "הסיעה חזרה לממשלה: הכנסת אישרה (57–40) את מינוי סער לשר בלי תיק; הקואליציה גדלה ל-68 חברי כנסת. ב-7 בנובמבר 2024 אושר מינויו לשר החוץ."
+          en: "The faction rejoined the government: the Knesset approved (57–40) Sa’ar’s appointment as minister without portfolio, taking the coalition to 68 MKs; on 7 November 2024 his appointment as Foreign Minister was approved."
+        sources:
+          - { url: "https://www.timesofisrael.com/as-he-officially-rejoins-government-saar-blasts-opposition-for-living-in-oct-6/", title: "As he officially rejoins government, Sa’ar blasts opposition for ‘living in Oct. 6’ (2024-09-30)", publisher: "The Times of Israel" }
+      - date: "2025-03-13"
+        text:
+          he: "הימין הממלכתי והליכוד חתמו על הסכם מיזוג: ריצה ברשימה משותפת מטעם הליכוד, שריון שיבחר סער במקום שאינו נמוך מ-15, צירוף כ-2,400 מתפקדים ו-100 חברי מרכז; מרכז הליכוד אישר את ההסכם ב-13 באוגוסט 2025."
+          en: "The National Right and Likud signed a merger agreement: a joint run on the Likud list, a reserved slot chosen by Sa’ar no lower than 15th, about 2,400 members and 100 central-committee members joining Likud; the Likud Central Committee approved it on 13 August 2025."
+        sources:
+          - { url: "https://www.ynet.co.il/news/article/r12iadxh1l", title: "המהפך הושלם: סיעת גדעון סער מתמזגת עם הליכוד, בן גביר קרוב לחזרה לממשלה (2025-03-13)", publisher: "ynet" }
+          - { url: "https://www.maariv.co.il/news/politics/article-1179992", title: "גדעון סער חוזר לליכוד: אלו פרטי ההסכם בין שתי המפלגות (2025-03-13)", publisher: "מעריב" }
+          - { url: "https://www.timesofisrael.com/ruling-likud-party-approves-merger-with-gideon-saars-new-hope/", title: "Ruling Likud party approves merger with Gideon Sa’ar’s New Hope (2025-08-13)", publisher: "The Times of Israel" }
+      - date: "2025-07-10"
+        text:
+          he: "גדעון סער התפטר מהכנסת במסגרת החוק הנורווגי (ההודעה ב-8 ביולי, בתוקף מ-10 ביולי 2025); במקומו נכנס אכרם חסון."
+          en: "Gideon Sa’ar resigned from the Knesset under the Norwegian Law (announced 8 July, effective 10 July 2025); Akram Hasson took his seat."
+        sources:
+          - { url: "https://www.mako.co.il/news-politics/2025_q3/Article-a4715af69e9e791026.htm", title: "גדעון סער התפטר מהכנסת במסגרת החוק הנורווגי (2025-07-08)", publisher: "N12 (mako)" }
+          - { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=KnessetNum%20eq%2025%20and%20FactionID%20eq%201108", title: "KNS_PersonToPosition — סער FinishDate 2025-07-10; חסון StartDate 2025-07-10 (2026-09-19)", publisher: "הכנסת (OData)" }
+      - date: "2026-07-14"
+        text:
+          he: "ח\"כ שרן השכל התפטרה מתפקיד סגנית שר החוץ ומהמפלגה בעקבות חקיקה שהקפיאה מעצרי משתמטים חרדים; למחרת הכריזה על הקמת מפלגת \"ישראל תחילה\". היא נותרה חברת הכנסת בסיעת הימין הממלכתי."
+          en: "MK Sharren Haskel resigned as Deputy Foreign Minister and from the party after legislation freezing arrests of Haredi draft evaders; the next day she announced a new party, “Israel First”. She remains an MK in the National Right faction."
+        sources:
+          - { url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-902514", title: "Sharren Haskel resigns as Israel’s deputy FM over bill halting arrests of haredi draft dodgers (2026-07-14)", publisher: "The Jerusalem Post" }
+          - { url: "https://www.israelhayom.co.il/news/politics/article/20990161", title: "\"נתניהו נסחט, סער שיקר לי\": שרן השכל בראיון ראשון לאחר הפרישה (2026-07-15)", publisher: "ישראל היום" }
+          - { url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-902631", title: "Former deputy FM Haskel announces launch of new Israel First political party (2026-07-15)", publisher: "The Jerusalem Post" }
+      - date: "2026-07-19"
+        text:
+          he: "השכל עתרה לבג\"ץ בדרישה שהליכוד והימין הממלכתי ישלימו את מיזוג הסיעות בוועדת הכנסת; לטענתה המיזוג לא הוגש לאישור כדי למנוע ממנה להתפלג כסיעת יחיד. נכון ל-19 בספטמבר 2026 הסיעה עדיין רשומה בכנסת כסיעה נפרדת (4 חברים)."
+          en: "Haskel petitioned the High Court to compel Likud and the National Right to complete the faction merger in the Knesset House Committee, alleging it was withheld to stop her splitting off as a one-member faction. As of 19 September 2026 the Knesset still lists the faction separately (4 members)."
+        sources:
+          - { url: "https://www.timesofisrael.com/liveblog_entry/disgruntled-new-hope-mk-petitions-high-court-over-stalled-merger-with-likud-says-parties-trying-to-deny-her-legal-rights/", title: "Disgruntled New Hope MK petitions High Court over stalled merger with Likud, says parties trying to deny her legal rights (2026-07-19)", publisher: "The Times of Israel" }
+          - { url: "https://main.knesset.gov.il/mk/apps/faction/faction-lobby?KnessetID=25&FactionID=1108", title: "סיעת הימין הממלכתי — 4 חברים (2026-09-19)", publisher: "הכנסת" }
+      - date: "2026-09-03"
+        text:
+          he: "\"ישראל תחילה\" של ח\"כ שרן השכל הודיעה על ריצה משותפת עם עלה ירוק; הרשימה \"ישראל תחילה - בראשות שרן השכל\" הוגשה לוועדת הבחירות כרשימה מס' 7 (אותיות מבוקשות י / ר)."
+          en: "MK Sharren Haskel’s “Israel First” announced a joint run with Ale Yarok; the list “Israel First – headed by Sharren Haskel” was submitted to the CEC as list no. 7 (requested letters י / ר)."
+        sources:
+          - { url: "https://www.ynet.co.il/news/elections2026/article/bjpcwrddge", title: "שרן השכל ועלה ירוק ירוצו יחד בבחירות: \"חיבור טבעי וסגירת מעגל\" (2026-09-03)", publisher: "ynet" }
+          - { url: "https://www.gov.il/he/pages/israel-tchila_list7", title: "רשימה 7 — ישראל תחילה - בראשות שרן השכל (2026-09-18)", publisher: "ועדת הבחירות המרכזית לכנסת (gov.il)" }
+      - date: "2026-09-08"
+        text:
+          he: "המפלגה רצה ב-2026 בתוך רשימת הליכוד (רשימה 29, מחל), המוגשת במשותף על ידי הליכוד ותקווה חדשה הימין הממלכתי: גדעון סער במקום 7 (שריון מכוח הסכם המיזוג), טלי גואילי במקום 9 רשומה מטעם המפלגה, והשר זאב אלקין במקום 32."
+          en: "In 2026 the party runs inside the Likud list (list 29, מחל), submitted jointly by Likud and New Hope–National Right: Gideon Sa’ar 7th (reserved under the merger agreement), Talik Gvili 9th recorded under the party, and Minister Ze’ev Elkin 32nd."
+        sources:
+          - { url: "https://www.gov.il/he/pages/halikud-tikvahadasha_iist29", title: "רשימה 29 — הליכוד עם בנימין נתניהו לראשות הממשלה (מוגשת ע\"י הליכוד; תקווה חדשה הימין הממלכתי) (2026-09-09)", publisher: "ועדת הבחירות המרכזית לכנסת (gov.il)" }
+          - { url: "https://www.timesofisrael.com/likud-approves-reserved-spots-for-israel-katz-and-saar-freezes-vote-on-haim-katz/", title: "Likud approves reserved spots for Israel Katz and Sa’ar, freezes vote on Haim Katz (2026-08-11)", publisher: "The Times of Israel" }
+          - { url: "https://www.jpost.com/israel-election-2026/article-906578", title: "Netanyahu appoints sole Russian-speaking Likud candidate Elkin to lead party’s immigrant outreach (2026-08-25)", publisher: "The Jerusalem Post" }
+          - { url: "https://www.timesofisrael.com/liveblog_entry/likud-submits-35-person-knesset-slate-featuring-9-netanyahu-appointees-just-4-women/", title: "Likud submits 35-person Knesset slate featuring 9 Netanyahu appointees, just 4 women (2026-09-08)", publisher: "The Times of Israel" }
+    election2026:
+      runsAs: within
+      slug: likud
+      note:
+        he: "תקווה חדשה - הימין הממלכתי הגישה את רשימת הליכוד במשותף עם הליכוד; גדעון סער במקום השביעי. מיזוג הסיעות בכנסת לא הושלם, וח\"כ שרן השכל, שפרשה מהמפלגה ביולי 2026, מתמודדת בנפרד בראש \"ישראל תחילה\" (רשימה 7)."
+        en: "New Hope – The National Right submitted the Likud list jointly with Likud; Gideon Sa’ar is seventh. The factions’ merger in the Knesset was not completed, and MK Sharren Haskel, who left the party in July 2026, runs separately at the head of “Israel First” (list 7)."
+      sources:
+        - { url: "https://www.gov.il/he/pages/halikud-tikvahadasha_iist29", title: "הליכוד עם בנימין נתניהו לראשות הממשלה — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
+        - { url: "https://www.gov.il/he/pages/israel-tchila_list7", title: "ישראל תחילה - בראשות שרן השכל — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
     spectrum: right
     ballotLetters: "כן"
     ballotNote:
-      he: רצה במסגרת "המחנה הממלכתי" (כן) ב-2022. באוגוסט 2025 התמזגה לתוך הליכוד; ב-2026 גדעון סער במקום השביעי ברשימת הליכוד.
-      en: Ran within 'National Unity' (כן) in 2022. Merged into Likud in August 2025; in 2026 Gideon Sa'ar is seventh on the Likud list.
+      he: רצה במסגרת "המחנה הממלכתי" (כן) ב-2022. באוגוסט 2025 אישר מרכז הליכוד את מיזוג המפלגה לתוכו, אך בכנסת נותרה הסיעה נפרדת (4 חברים); ב-2026 רצה בתוך רשימת הליכוד, גדעון סער במקום השביעי.
+      en: Ran within 'National Unity' (כן) in 2022. In August 2025 the Likud Central Committee approved the party’s merger into Likud, but in the Knesset the faction stayed separate (4 members); in 2026 it runs inside the Likud list, with Gideon Sa'ar seventh.
     sources:
-      - { url: "https://www.timesofisrael.com/ruling-likud-party-approves-merger-with-gideon-saars-new-hope/", title: "Ruling Likud party approves merger with Gideon Sa'ar's New Hope", publisher: "The Times of Israel" }
-      - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
+      - { url: "https://www.timesofisrael.com/ruling-likud-party-approves-merger-with-gideon-saars-new-hope/", title: "Ruling Likud party approves merger with Gideon Sa'ar's New Hope (13 Aug 2025)", publisher: "The Times of Israel" }
+      - { url: "https://www.gov.il/he/pages/halikud-tikvahadasha_iist29", title: "הליכוד עם בנימין נתניהו לראשות הממשלה — רשימת המועמדים, הוגשה על ידי הליכוד ותקווה חדשה הימין הממלכתי", publisher: "ועדת הבחירות המרכזית לכנסת" }
     leaderHe: גדעון סער
     leaderEn: Gideon Sa'ar
     founded: 2020
@@ -300,13 +1039,72 @@ profiles:
         - Rule of law and statesmanship
         - Liberal economics
   - id: 1107 # Noam
+    verified: "2026-09-19"
+    updates:
+      - date: "2025-03-24"
+        text:
+          he: "סגן השר אבי מעוז הגיש את התפטרותו מהממשלה (סגן שר במשרד ראש הממשלה, אחראי על הרשות לזהות יהודית לאומית), בטענה שההסכם הקואליציוני עם הליכוד לא מומש."
+          en: "Deputy Minister Avi Maoz submitted his resignation from the government (deputy minister in the Prime Minister’s Office, in charge of the Jewish National Identity office), saying his coalition agreement with Likud had not been implemented."
+        sources:
+          - { url: "https://www.timesofisrael.com/liveblog_entry/deputy-minister-avi-maoz-quits-government-railing-against-pressure-of-deep-state/", title: "Deputy Minister Avi Maoz quits government, railing against pressure of ‘deep state’ (2025-03-24)", publisher: "The Times of Israel" }
+          - { url: "https://news.walla.co.il/item/3737021", title: "סגן השר אבי מעוז התפטר מהממשלה: \"כמעט כל ההבטחות לא מומשו\" (2025-03-24)", publisher: "וואלה" }
+      - date: "2025-07-16"
+        text:
+          he: "אבי מעוז הודיע כי אינו רואה את עצמו חבר בקואליציה; לפי חשבונו נותרו בקואליציה 60 חברי כנסת."
+          en: "Avi Maoz announced that he no longer considers himself a member of the coalition, which by his count was left with 60 MKs."
+        sources:
+          - { url: "https://www.timesofisrael.com/far-right-lawmaker-avi-maoz-quits-coalition-leaving-pm-with-a-minority-government/", title: "Far-right MK Avi Maoz quits coalition, leaving Netanyahu without Knesset majority (2025-07-17)", publisher: "The Times of Israel" }
+      - date: "2026-07-21"
+        text:
+          he: "אליהו ליבמן, ראש מועצת קריית ארבע לשעבר, הודיע על הצטרפותו לרשימת נעם לקראת הבחירות לכנסת ה-26."
+          en: "Eliyahu Libman, former head of the Kiryat Arba council, announced he was joining Noam’s list for the 26th-Knesset election."
+        sources:
+          - { url: "https://www.srugim.co.il/101006789", title: "אליהו ליבמן חוזר לפוליטיקה; זו המפלגה בה הוא יתמודד (2026-07-21)", publisher: "סרוגים" }
+          - { url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-904171", title: "Noam Party rebrands itself ahead of elections, Maoz calls to ‘strengthen right-wing bloc’ (2026-07-30)", publisher: "The Jerusalem Post" }
+      - date: "2026-07-29"
+        text:
+          he: "המפלגה השיקה את קמפיין הבחירות תחת השם החדש \"נעם לישראל\" והסיסמה \"חופשי להיות יהודי\", והציגה את סגן ראש עיריית באר שבע שמעון טבול כמועמד נוסף ברשימה."
+          en: "The party launched its election campaign under the new name “Noam for Israel” and the slogan “Free to be Jewish”, presenting Beersheba deputy mayor Shimon Tobol as a further candidate on its list."
+        sources:
+          - { url: "https://www.makorrishon.co.il/news/politcal/article/355339", title: "\"נעם לישראל\" עם הפנים לציבור החרדי: אבי מעוז משיק קמפיין בחירות (2026-07-29)", publisher: "מקור ראשון" }
+          - { url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-904171", title: "Noam Party rebrands itself ahead of elections, Maoz calls to ‘strengthen right-wing bloc’ (2026-07-30)", publisher: "The Jerusalem Post" }
+          - { url: "https://news.walla.co.il/item/3856858", title: "שעות לאחר הגשת כתב האישום נגדו: סגן ראש עיריית באר שבע מצטרף למפלגת נעם (2026-07-28)", publisher: "וואלה" }
+      - date: "2026-08-23"
+        text:
+          he: "המפלגה הודיעה על צירופן של יסכה חיימוב וליאורה אלון לרשימתה."
+          en: "The party announced that Yisca Hayimov and Liora Alon had joined its list."
+        sources:
+          - { url: "https://www.jpost.com/israel-election-2026/article-906331", title: "Yisca Hayimov, sister of Shin Bet chief David Zini, joins Avi Maoz’s far-right Noam LeYisrael party (2026-08-23)", publisher: "The Jerusalem Post" }
+      - date: "2026-09-07"
+        text:
+          he: "הרב צבי טאו, המנהיג הרוחני של המפלגה, שלח מכתב לאבי מעוז ולפעילים ובו הבהיר כי \"נעם לישראל\" תתמודד בבחירות באופן עצמאי, עד ההצבעה בקלפי."
+          en: "Rabbi Tzvi Tau, the party’s spiritual leader, sent a letter to Avi Maoz and activists stating that “Noam for Israel” would run independently, through to election day."
+        sources:
+          - { url: "https://www.inn.co.il/news/705850", title: "הרב טאו הכריע: \"נעם לישראל\" תתמודד עד הסוף (2026-09-07)", publisher: "ערוץ 7" }
+      - date: "2026-09-09"
+        text:
+          he: "הרשימה \"נעם לישראל\" הוגשה לוועדת הבחירות המרכזית כרשימה מס' 38 (אותיות מבוקשות \"ני\") על ידי המפלגות \"לזוז\" ו\"אחריות לאומית - למען עתיד ילדינו\"; 16 מועמדים, בראשם אבי מעוז, שמעון טבול, אליהו ליבמן וליאורה אלון. הרשימות טרם אושרו (אישור: 27 בספטמבר 2026)."
+          en: "The list “Noam for Israel” was submitted to the Central Elections Committee as list no. 38 (requested letters “ני”) by the parties “Lazuz” and “National Responsibility – for our children’s future”; 16 candidates, headed by Avi Maoz, Shimon Tobol, Eliyahu Libman and Liora Alon. Lists are not yet approved (approval: 27 September 2026)."
+        sources:
+          - { url: "https://www.gov.il/he/pages/noam_list38", title: "רשימה 38 — נעם לישראל (2026-09-09)", publisher: "ועדת הבחירות המרכזית לכנסת (gov.il)" }
+          - { url: "https://www.gov.il/he/pages/candidates-lists-26", title: "רשימות המועמדים לכנסת ה-26 (כפי שהוגשו; טרם אושרו) (2026-09-18)", publisher: "ועדת הבחירות המרכזית לכנסת (gov.il)" }
+          - { url: "https://www.noamlisrael.org.il/", title: "נעם לישראל – בראשות אבי מעוז – חופשי להיות יהודי (הנבחרת שלנו) (2026-09-19)", publisher: "נעם לישראל (אתר המפלגה)" }
+    election2026:
+      runsAs: own
+      listNumber: 38
+      note:
+        he: "רצה כ\"נעם לישראל\" (אותיות מבוקשות: ני), רשימה שהוגשה על ידי המפלגות \"לזוז\" ו\"אחריות לאומית - למען עתיד ילדינו\"; אבי מעוז בראשה."
+        en: "Runs as “Noam for Israel” (requested letters: ני), a list submitted by the parties “Lazuz” and “National Responsibility – for our children’s future”; Avi Maoz heads it."
+      sources:
+        - { url: "https://www.gov.il/he/pages/noam_list38", title: "נעם לישראל — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
     spectrum: far-right
     ballotLetters: "ט"
     ballotNote:
-      he: רצה במסגרת רשימת "הציונות הדתית" (ט) ב-2022. נכון לספטמבר 2026 אינה מופיעה ברשימות שהרכבן פורסם לכנסת ה-26.
-      en: Ran within the 'Religious Zionism' list (ט) in 2022. As of September 2026 it does not appear among the published 26th-Knesset rosters.
+      he: רצה במסגרת רשימת "הציונות הדתית" (ט) ב-2022. ב-2026 מתמודדת ברשימה משלה, "נעם לישראל" (רשימה 38, אותיות מבוקשות ני).
+      en: Ran within the 'Religious Zionism' list (ט) in 2022. In 2026 it runs on its own list, “Noam for Israel” (list 38, requested letters ני).
+    website: https://www.noamlisrael.org.il/
     sources:
-      - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
+      - { url: "https://www.gov.il/he/pages/noam_list38", title: "נעם לישראל — רשימת המועמדים (ועדת הבחירות המרכזית, 9.9.2026)", publisher: "ועדת הבחירות המרכזית לכנסת" }
     leaderHe: אבי מעוז
     leaderEn: Avi Maoz
     founded: 2019

@@ -11,6 +11,7 @@ import {
   POSITION_MK_FEMALE,
   POSITION_COMMITTEE_CHAIR,
   POSITION_FACTION_CHAIR,
+  POSITION_DEPUTY_MINISTER,
   VOTE_FOR,
   VOTE_AGAINST,
   VOTE_ABSTAIN,
@@ -136,12 +137,14 @@ export type MemberListItem = Person & {
   isSitting: boolean;
   leftDate: string | null; // date they stopped sitting (if not currently sitting)
   ministryHe: string | null; // current ministry, if a serving minister
+  isDeputyMinister: boolean;
 };
 
 export type SeatStatus = {
   isSitting: boolean;
   leftDate: string | null;
   ministryHe: string | null; // current ministry, if they serve as a minister
+  isDeputyMinister: boolean; // the ministry row is a deputy-minister post, not a minister's
 };
 
 // Seat status per person (current Knesset). A minister who vacated their seat under
@@ -168,9 +171,13 @@ function getSeatStatusMap(personIds: number[]): Map<number, SeatStatus> {
     .all();
   for (const r of rows) {
     const cur =
-      map.get(r.personId) ?? { isSitting: false, leftDate: null, ministryHe: null };
+      map.get(r.personId) ?? { isSitting: false, leftDate: null, ministryHe: null, isDeputyMinister: false };
     if (r.isCurrent && seatPositions.has(r.positionId)) cur.isSitting = true;
-    if (r.isCurrent && r.ministry) cur.ministryHe = r.ministry;
+    // A minister's row wins over a deputy's, so someone holding both is a minister.
+    if (r.isCurrent && r.ministry && (!cur.ministryHe || cur.isDeputyMinister)) {
+      cur.ministryHe = r.ministry;
+      cur.isDeputyMinister = r.positionId === POSITION_DEPUTY_MINISTER;
+    }
     if (
       seatPositions.has(r.positionId) &&
       r.finishDate &&
@@ -242,6 +249,7 @@ export function getCurrentMembers(filters?: {
       isSitting: s?.isSitting ?? false,
       leftDate: s?.leftDate ?? null,
       ministryHe: s?.ministryHe ?? null,
+      isDeputyMinister: s?.isDeputyMinister ?? false,
     };
   });
 
@@ -623,6 +631,7 @@ export type AttendanceRow = MkStats & {
   isSitting: boolean;
   leftDate: string | null;
   ministryHe: string | null;
+  isDeputyMinister: boolean;
 };
 
 // Full attendance ranking for all currently-serving MKs, ordered by participation
@@ -656,6 +665,7 @@ export function getAttendanceTable(): AttendanceRow[] {
     isSitting: seat.get(r.person.id)?.isSitting ?? false,
     leftDate: seat.get(r.person.id)?.leftDate ?? null,
     ministryHe: seat.get(r.person.id)?.ministryHe ?? null,
+    isDeputyMinister: seat.get(r.person.id)?.isDeputyMinister ?? false,
   }));
 }
 

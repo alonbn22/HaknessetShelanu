@@ -18,14 +18,56 @@ const httpUrl = z
 // compass stances key on it, and it survives renames and mergers.
 const listSlug = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, "slug must be kebab-case");
 
-const coalitionSchema = z.object({
-  knesset: z.number(),
-  coalitionFactionIds: z.array(z.number()),
-  asOf: z.string().optional(), // when this composition was last verified
-  caretakerSince: z.string().optional(), // ISO date the Knesset dispersed; the government is a caretaker from then
-  sourceUrl: httpUrl.optional(),
-  sourceLabel: z.string().optional(),
+// Hoisted above the coalition schema, which is the first to use it.
+const localizedText = z.object({
+  he: z.string(),
+  en: z.string().optional(),
+  ar: z.string().optional(),
+  ru: z.string().optional(),
 });
+
+const sourceRef = z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() });
+
+// One faction's side of the aisle, with the date it took effect and the
+// reports it rests on — so a page can say "outside the coalition since
+// 14 July 2025 · source" instead of a bare label.
+const factionStatusSchema = z.object({
+  status: z.enum(["coalition", "opposition"]),
+  since: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  note: localizedText.optional(),
+  sources: z.array(sourceRef).optional(),
+});
+
+const coalitionSchema = z
+  .object({
+    knesset: z.number(),
+    coalitionFactionIds: z.array(z.number()),
+    asOf: z.string().optional(), // when this composition was last verified
+    caretakerSince: z.string().optional(), // ISO date the Knesset dispersed; the government is a caretaker from then
+    governmentSince: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(), // the government's swearing-in
+    sourceUrl: httpUrl.optional(),
+    sourceLabel: z.string().optional(),
+    statuses: z.record(z.string().regex(/^\d+$/), factionStatusSchema).default({}),
+  })
+  .superRefine((c, ctx) => {
+    // The id list and the per-faction statuses must agree — the pages read
+    // one or the other, and a mismatch would label a faction two ways.
+    for (const [id, st] of Object.entries(c.statuses)) {
+      const listed = c.coalitionFactionIds.includes(Number(id));
+      if (listed !== (st.status === "coalition")) {
+        ctx.addIssue({
+          code: "custom",
+          message: `faction ${id}: statuses says ${st.status} but coalitionFactionIds ${listed ? "includes" : "omits"} it`,
+        });
+      }
+    }
+  });
+
+export type FactionStatus = z.infer<typeof factionStatusSchema> & {
+  // True when the faction changed sides after the government was sworn in —
+  // the only case where the date is worth showing next to the label.
+  changedMidTerm: boolean;
+};
 
 let _coalition: z.infer<typeof coalitionSchema> | null = null;
 
@@ -39,6 +81,16 @@ export function getCoalitionConfig() {
 
 export function isCoalitionFaction(factionId: number): boolean {
   return getCoalitionConfig().coalitionFactionIds.includes(factionId);
+}
+
+// The faction's sourced status, or null when the file has no entry for it
+// (older factions the page still labels from the id list).
+export function getFactionStatus(factionId: number): FactionStatus | null {
+  const cfg = getCoalitionConfig();
+  const st = cfg.statuses[String(factionId)];
+  if (!st) return null;
+  const changedMidTerm = cfg.governmentSince != null && st.since > cfg.governmentSince;
+  return { ...st, changedMidTerm };
 }
 
 const factionMetaSchema = z.object({
@@ -68,12 +120,6 @@ export function getFactionMeta(): Map<number, FactionMeta> {
 }
 
 // Shared localized-text shapes (one string / a list of strings per language).
-const localizedText = z.object({
-  he: z.string(),
-  en: z.string().optional(),
-  ar: z.string().optional(),
-  ru: z.string().optional(),
-});
 
 // Editorial party profiles — political position + what each faction supports.
 export const SPECTRUM_VALUES = [
@@ -109,6 +155,33 @@ const partyProfileSchema = z.object({
   ballotNote: localizedText.optional(),
   // Where a profile states a 2026 fact (leader, merger, running status).
   sources: z.array(z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() })).optional(),
+  // How the faction goes into the 2026 election, read from the CEC's list
+  // pages: on its own list, inside a joint list, merged into another party,
+  // or not at all. `slug` points at the registry card (content/election.yaml);
+  // `listNumber` at a row of the full submitted-lists table for lists the
+  // registry does not carry.
+  election2026: z
+    .object({
+      runsAs: z.enum(["own", "within", "merged", "none"]),
+      slug: listSlug.optional(),
+      listNumber: z.number().int().positive().optional(),
+      note: localizedText.optional(),
+      sources: z.array(sourceRef).optional(),
+    })
+    .optional(),
+  // Dated, sourced developments — the faction's "latest news", newest first
+  // on the page. Every item cites at least one report.
+  updates: z
+    .array(
+      z.object({
+        date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+        text: localizedText,
+        sources: z.array(sourceRef).min(1, "every update must cite a source"),
+      }),
+    )
+    .optional(),
+  // When the profile was last checked against its sources (rendered).
+  verified: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
 });
 
 export type PartyProfile = z.infer<typeof partyProfileSchema>;
@@ -426,6 +499,32 @@ const electionFactSchema = z.object({
 // carries across content: polls and compass stances key on it, and it survives
 // name changes, mergers and the absence of a Knesset faction id (new lists).
 
+// A candidate list as the Central Elections Committee publishes it.
+const cecListSchema = z.object({
+  url: httpUrl,
+  listNumber: z.number().int().positive(), // the CEC's own numbering on its index page
+  listName: localizedText, // the list's registered name (kinui) as submitted, verbatim
+  letters: z.string().min(1), // one string; several requested letters are joined with " / "
+  lettersStatus: z.enum(["requested", "approved"]),
+  submittedBy: z.array(z.string()).min(1), // registered parties behind the list
+  published: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  updated: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
+});
+export type CecList = z.infer<typeof cecListSchema>;
+
+// One row of the "every list that submitted" table: the CEC index entry plus
+// the list head where the list's own page was read.
+const submittedListSchema = z.object({
+  listNumber: z.number().int().positive(),
+  letters: z.string().min(1),
+  name: localizedText,
+  url: httpUrl,
+  head: localizedText.optional(),
+  submittedBy: z.array(z.string()).optional(),
+  slug: listSlug.optional(), // links the row to a registry card when the list is one of them
+});
+export type SubmittedList = z.infer<typeof submittedListSchema>;
+
 const electionPartySchema = z.object({
   slug: listSlug,
   name: localizedText,
@@ -448,6 +547,10 @@ const electionPartySchema = z.object({
     .array(z.object({ he: z.string(), en: z.string().optional(), personId: z.number().optional() }))
     .optional(),
   factionId: z.number().optional(), // links to /parties/<id> when it maps to a sitting faction
+  // The Central Elections Committee's page for the list: the official name,
+  // the letters (requested until the CEC approves the lists, then approved),
+  // the parties that submitted it. The one primary source for these facts.
+  cec: cecListSchema.optional(),
   // Chart colour for lists with no sitting faction (sitting factions use
   // content/factions.yaml). Party colour appears only where a list is the subject.
   color: z.string().regex(/^#[0-9a-f]{6}$/i).optional(),
@@ -473,6 +576,15 @@ const electionOutlookSchema = z.object({
   stats: z.array(electionFactSchema),
   news: z
     .array(z.object({ date: z.string().optional(), text: localizedText }))
+    .optional(),
+  // Every list that submitted, from the CEC's index page — so no list is
+  // invisible just because pollsters do not name it.
+  submittedLists: z
+    .object({
+      source: z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() }),
+      asOf: z.string().regex(/^\d{4}-\d{2}-\d{2}$/), // the index page's own update date
+      lists: z.array(submittedListSchema),
+    })
     .optional(),
   // Surplus-vote agreements between two running lists, as
   // reported or as filed with the CEC; a list can be in at most one.

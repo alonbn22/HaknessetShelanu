@@ -38,7 +38,10 @@
     "next": "Next",
     "page": "Page {page, number} of {total, number}",
     "source": "Source",
-    "knesset": "Knesset"
+    "knesset": "Knesset",
+    "coalitionSince": "In the coalition since {date}",
+    "oppositionSince": "Outside the coalition since {date}",
+    "lastChecked": "Last checked: {date}"
   },
   "home": {
     "title": "Our Knesset",
@@ -75,7 +78,8 @@
     "count": "{count} members",
     "former": "Former",
     "servedUntil": "Served until {date}",
-    "minister": "Minister"
+    "minister": "Minister",
+    "deputyMinister": "Deputy minister"
   },
   "member": {
     "roles": "Roles",
@@ -146,7 +150,8 @@
     "recordReviewed": "Record last reviewed: {date}",
     "recordNone": "No items documented in this database.",
     "neutralRecord": "In the news and in office",
-    "ministerNotMk": "Serving minister; vacated the Knesset seat under the Norwegian Law"
+    "ministerNotMk": "Serving minister; vacated the Knesset seat under the Norwegian Law",
+    "deputyMinisterNotMk": "Serving deputy minister; vacated the Knesset seat under the Norwegian Law"
   },
   "parties": {
     "title": "Knesset Factions",
@@ -166,7 +171,23 @@
     "ballot": "Ballot letters",
     "ballotEra": "Ballot letters from the 2022 (25th Knesset) election. The 2026 letters were requested at list submission and are approved by the Central Elections Committee; they will be updated here on approval.",
     "basedOn": "Spectrum and positions are based on:",
-    "factionChair": "Faction chair in the Knesset"
+    "factionChair": "Faction chair in the Knesset",
+    "updates": "Recent developments",
+    "updatesNote": "Dated items from the news and official records; each carries its source.",
+    "election2026": "In the 2026 election",
+    "runsOwn": "Runs on its own list",
+    "runsWithin": "Runs within a joint list",
+    "runsMerged": "Merged into another party",
+    "runsNot": "Not running as its own list",
+    "listName": "List",
+    "listHead": "List head",
+    "submittedBy": "Submitted by",
+    "lettersRequested": "Requested letters",
+    "lettersApproved": "Ballot letters",
+    "lettersPending": "Letters are as requested; the Central Elections Committee approves the lists and letters on {date}.",
+    "ballot2022": "In 2022",
+    "cecPage": "The list’s page on the CEC site",
+    "electionCard": "The list’s card on the election page"
   },
   "spectrum": {
     "left": "Left",
@@ -393,7 +414,16 @@
     "recordParticipation": "On record: the faction's members took part in {pct}% of the 25th Knesset's votes on average.",
     "recordVote": "{for} for, {against} against",
     "recordVoteAbsent": "({n} did not vote)",
-    "recordVoteAs": "as the {faction} faction"
+    "recordVoteAs": "as the {faction} faction",
+    "allLists": "All {count} submitted lists",
+    "allListsIntro": "As submitted to the committee chair on 7–9 September 2026, in the committee’s order. Letters are as requested; the committee approves lists and letters on {date}. List heads are named as the committee prints them.",
+    "colLetters": "Letters",
+    "colList": "List",
+    "colHead": "Head",
+    "colSubmittedBy": "Submitted by",
+    "lettersRequestedShort": "requested",
+    "lettersBadgeTitle": "Requested letters — final after the CEC approves on {date}",
+    "cecSourceLine": "Source: the lists’ pages on the Central Elections Committee site (gov.il)."
   },
   "electionsHistory": {
     "title": "Knesset Elections History",

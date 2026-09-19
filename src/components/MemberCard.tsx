@@ -33,7 +33,7 @@ export function MemberCard({
           </span>
           {!member.isSitting && member.ministryHe && (
             <Badge tone="accent" className="shrink-0">
-              {t("minister")}
+              {t(member.isDeputyMinister ? "deputyMinister" : "minister")}
             </Badge>
           )}
           {!member.isSitting && !member.ministryHe && (

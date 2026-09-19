@@ -41,8 +41,8 @@ export default async function PartiesPage() {
                 {factionName(f.id, f.nameHe, locale)}
               </h2>
               <span
-                className={`rounded-full px-2 py-0.5 text-xs font-medium text-white ${
-                  f.isCoalition ? "bg-coalition" : "bg-opposition"
+                className={`rounded-full px-2 py-0.5 text-xs font-medium ${
+                  f.isCoalition ? "bg-coalition text-on-coalition" : "bg-opposition text-on-opposition"
                 }`}
               >
                 {f.isCoalition ? t("common.coalition") : t("common.opposition")}

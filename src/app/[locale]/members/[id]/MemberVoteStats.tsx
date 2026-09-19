@@ -113,7 +113,7 @@ export async function MemberVoteStats({
                   const rt = localOf(r.titleHe);
                   return (
                     <li key={r.voteId} className="space-y-1 py-2 text-sm">
-                      <Link href={`/votes/${r.voteId}`} className="hover:underline" {...localizedAttrs(rt)}>
+                      <Link href={`/votes/${r.voteId}`} className="text-accent-ink underline decoration-line-strong hover:decoration-current" {...localizedAttrs(rt)}>
                         {rt.text}
                       </Link>
                       <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted">

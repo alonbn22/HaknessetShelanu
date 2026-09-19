@@ -9,18 +9,24 @@ entries:
     headline:
       he: "תקציב 2026 — בתהליך."
       en: "The 2026 budget — in progress."
+      es: "El presupuesto de 2026 — en curso."
+      fr: "Le budget 2026 — en cours."
     timing:
       he: "תקציב המדינה מאושר בדרך כלל בחוק תקציב שנתי (לעיתים דו-שנתי). הצעת התקציב נדונה בוועדת הכספים של הכנסת ועוברת שלוש קריאות במליאה. תקציב 2026 צפוי לעבור סביב סוף 2025–תחילת 2026; הנתונים המפורטים יופיעו כאן לאחר פרסומם כנתונים פתוחים."
       en: "The state budget is normally enacted as an annual Budget Law (sometimes biennial). The bill is debated in the Knesset Finance Committee and passes three plenum readings. The 2026 budget is expected to be enacted around late 2025–early 2026; the detailed figures will appear here once published as open data."
+      es: "El presupuesto del Estado se aprueba normalmente como una Ley de Presupuesto anual (a veces bienal). El proyecto se debate en la Comisión de Finanzas de la Knéset y pasa tres lecturas en el pleno. El presupuesto de 2026 debería aprobarse entre finales de 2025 y principios de 2026; las cifras detalladas aparecerán aquí cuando se publiquen como datos abiertos."
+      fr: "Le budget de l’État est normalement adopté sous forme de loi de finances annuelle (parfois biennale). Le projet est examiné par la Commission des Finances de la Knesset et passe trois lectures en plénière. Le budget 2026 devrait être adopté entre fin 2025 et début 2026 ; les chiffres détaillés apparaîtront ici une fois publiés en données ouvertes."
     news:
       - date: "2025-01-01"
         text:
           he: "מעקב אחר ההתקדמות: אישור הממשלה, דיוני ועדת הכספים והקריאות במליאה."
           en: "Track the milestones: government approval, Finance Committee deliberations, and the plenum readings."
+          es: "Siga las etapas: aprobación del Gobierno, deliberaciones de la Comisión de Finanzas y lecturas en el pleno."
+          fr: "Suivez les étapes : approbation du gouvernement, délibérations de la Commission des Finances et lectures en plénière."
     links:
-      - label: { he: "אתר משרד האוצר", en: "Ministry of Finance" }
+      - label: { he: "אתר משרד האוצר", en: "Ministry of Finance", es: "Ministerio de Finanzas", fr: "Ministère des Finances" }
         url: "https://www.gov.il/he/departments/ministry_of_finance"
-      - label: { he: "ועדת הכספים של הכנסת", en: "Knesset Finance Committee" }
+      - label: { he: "ועדת הכספים של הכנסת", en: "Knesset Finance Committee", es: "Comisión de Finanzas de la Knéset", fr: "Commission des Finances de la Knesset" }
         url: "https://main.knesset.gov.il/Activity/committees/Finance/Pages/default.aspx"
-      - label: { he: "התקציב הפתוח", en: "Open Budget portal" }
+      - label: { he: "התקציב הפתוח", en: "Open Budget portal", es: "Portal del Presupuesto Abierto", fr: "Portail du Budget ouvert" }
         url: "https://next.obudget.org/"

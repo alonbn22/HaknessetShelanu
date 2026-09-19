@@ -79,6 +79,8 @@ profiles:
       note:
         he: "הרשימה \"הליכוד עם בנימין נתניהו לראשות הממשלה\" הוגשה במשותף על ידי הליכוד ותקווה חדשה - הימין הממלכתי; גדעון סער במקום השביעי."
         en: "The list “Likud with Benjamin Netanyahu for Prime Minister” was submitted jointly by Likud and New Hope – The National Right; Gideon Sa’ar is seventh."
+        es: "La lista «Likud con Benjamín Netanyahu para primer ministro» fue presentada conjuntamente por el Likud y Nueva Esperanza – La Derecha Estatal; Gideon Sa’ar es séptimo."
+        fr: "La liste « Likoud avec Benyamin Netanyahou pour Premier ministre » a été déposée conjointement par le Likoud et Nouvel Espoir – La Droite étatique ; Gideon Sa’ar est septième."
       sources:
         - { url: "https://www.gov.il/he/pages/halikud-tikvahadasha_iist29", title: "הליכוד עם בנימין נתניהו לראשות הממשלה — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
     spectrum: right
@@ -94,6 +96,8 @@ profiles:
       en: Israel's largest right-wing party, national-liberal and conservative in orientation.
       ar: أكبر أحزاب اليمين في إسرائيل، ذات توجه قومي-ليبرالي ومحافظ.
       ru: Крупнейшая правая партия Израиля, национально-либеральная и консервативная.
+      es: "El mayor partido de derecha de Israel, de orientación nacional-liberal y conservadora."
+      fr: "Le plus grand parti de droite d’Israël, d’orientation nationale-libérale et conservatrice."
     positions:
       he:
         - שמירה על ביטחון לאומי וגישה תקיפה בנושאים מדיניים-ביטחוניים
@@ -103,6 +107,14 @@ profiles:
         - Strong national security and a hawkish foreign-policy posture
         - Support for free-market economics and deregulation
         - Opposition to territorial concessions
+      es:
+        - Seguridad nacional firme y una política exterior de línea dura
+        - Apoyo a la economía de libre mercado y a la desregulación
+        - Oposición a las concesiones territoriales
+      fr:
+        - Une sécurité nationale ferme et une politique étrangère de fermeté
+        - Soutien à l’économie de marché et à la déréglementation
+        - Opposition aux concessions territoriales
   - id: 1102 # Yesh Atid — in 2026 runs inside the joint list "Together" (ביחד) headed by Naftali Bennett
     verified: "2026-09-19"
     updates:
@@ -182,6 +194,8 @@ profiles:
       note:
         he: "יש עתיד רצה ברשימת \"ביחד בראשות נפתלי בנט\", שהוגשה במשותף על ידי \"ביחד בראשות בנט\" ויש עתיד; יאיר לפיד במקום השני ומירב בן ארי ברביעי."
         en: "Yesh Atid runs on the list “Together headed by Naftali Bennett”, submitted jointly by “Together headed by Bennett” and Yesh Atid; Yair Lapid is second and Merav Ben-Ari fourth."
+        es: "Yesh Atid se presenta en la lista «Juntos encabezada por Naftali Bennett», presentada conjuntamente por «Juntos encabezada por Bennett» y Yesh Atid; Yair Lapid es segundo y Merav Ben-Ari cuarta."
+        fr: "Yesh Atid se présente sur la liste « Ensemble menée par Naftali Bennett », déposée conjointement par « Ensemble menée par Bennett » et Yesh Atid ; Yaïr Lapid est deuxième et Merav Ben-Ari quatrième."
       sources:
         - { url: "https://www.gov.il/he/pages/beyahad_list1", title: "ביחד בראשות נפתלי בנט — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
     spectrum: center
@@ -189,6 +203,8 @@ profiles:
     ballotNote:
       he: ב-2026 יש עתיד רצה ברשימה המשותפת "ביחד" בראשות נפתלי בנט; יאיר לפיד במקום השני. האותיות מבחירות 2022.
       en: In 2026 Yesh Atid runs on the joint "Together" list headed by Naftali Bennett; Yair Lapid is second. Letters are from 2022.
+      es: "En 2026 Yesh Atid se presenta en la lista conjunta «Juntos» encabezada por Naftali Bennett; Yair Lapid es segundo. Las letras son de 2022."
+      fr: "En 2026, Yesh Atid se présente sur la liste commune « Ensemble » menée par Naftali Bennett ; Yaïr Lapid est deuxième. Les lettres datent de 2022."
     sources:
       - { url: "https://www.timesofisrael.com/naftali-bennett-and-yair-lapid-announce-united-run-under-bennett-in-2026-elections/", title: "Naftali Bennett and Yair Lapid announce united run under Bennett", publisher: "The Times of Israel" }
       - { url: "https://www.gov.il/he/pages/beyahad_list1", title: "ביחד בראשות נפתלי בנט — רשימת המועמדים (ועדת הבחירות המרכזית, 7.9.2026)", publisher: "ועדת הבחירות המרכזית לכנסת" }
@@ -203,6 +219,8 @@ profiles:
       en: A liberal, secular centrist party representing mainly the middle class.
       ar: حزب وسطي ليبرالي علماني يمثّل أساسًا الطبقة الوسطى.
       ru: Либеральная светская центристская партия, представляющая в основном средний класс.
+      es: "Un partido centrista, liberal y laico que representa sobre todo a la clase media."
+      fr: "Un parti centriste, libéral et laïc représentant surtout la classe moyenne."
     positions:
       he:
         - הפרדת דת ומדינה ושוויון בנטל (גיוס חרדים)
@@ -212,6 +230,14 @@ profiles:
         - Separation of religion and state and equal sharing of the draft burden
         - Strengthening public education and the middle class
         - Support for a negotiated settlement with the Palestinians
+      es:
+        - Separación de religión y Estado y reparto igualitario de la carga del servicio militar
+        - Fortalecer la educación pública y la clase media
+        - Apoyo a un acuerdo negociado con los palestinos
+      fr:
+        - Séparation de la religion et de l’État et partage égal du fardeau du service militaire
+        - Renforcer l’éducation publique et la classe moyenne
+        - Soutien à un règlement négocié avec les Palestiniens
   - id: 1095 # Shas
     verified: "2026-09-19"
     updates:
@@ -277,6 +303,8 @@ profiles:
       note:
         he: "הרשימה הוגשה על ידי ש\"ס; אריה דרעי בראשה, ינון אזולאי ומיכאל מלכיאלי אחריו."
         en: "The list was submitted by Shas; Aryeh Deri heads it, followed by Yinon Azulai and Michael Malkieli."
+        es: "La lista fue presentada por Shas; Aryeh Deri la encabeza, seguido de Yinon Azulai y Michael Malkieli."
+        fr: "La liste a été déposée par Shas ; Aryeh Deri la mène, suivi de Yinon Azulai et Michael Malkieli."
       sources:
         - { url: "https://www.gov.il/he/pages/shas_list19", title: "התאחדות הספרדים שומרי תורה — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
     spectrum: right
@@ -291,6 +319,8 @@ profiles:
       en: A Sephardic ultra-Orthodox party representing Mizrahi Jews and the traditionally observant.
       ar: حزب حريدي شرقي يمثّل اليهود الشرقيين والمحافظين دينيًا.
       ru: Сефардская ультраортодоксальная партия, представляющая восточных евреев и соблюдающих традиции.
+      es: "Un partido ultraortodoxo sefardí que representa a los judíos mizrajíes y a los tradicionalistas."
+      fr: "Un parti ultra-orthodoxe séfarade représentant les Juifs orientaux et les traditionalistes."
     positions:
       he:
         - שמירה על מעמד הדת היהודית במרחב הציבורי
@@ -300,6 +330,14 @@ profiles:
         - Preserving the status of Jewish religion in the public sphere
         - Funding for Torah education and welfare for weaker populations
         - Protecting Haredi education and yeshiva students' draft exemptions
+      es:
+        - Preservar el lugar de la religión judía en el espacio público
+        - Financiación de la educación de la Torá y bienestar para los sectores más débiles
+        - Proteger la educación jaredí y la exención del servicio militar para los estudiantes de yeshivá
+      fr:
+        - Préserver la place de la religion juive dans l’espace public
+        - Financement de l’éducation de la Torah et aide sociale aux populations défavorisées
+        - Protéger l’éducation haredi et l’exemption de service militaire des étudiants de yeshiva
   - id: 1110 # Blue & White – National Unity
     verified: "2026-09-19"
     updates:
@@ -366,6 +404,8 @@ profiles:
       note:
         he: "הרשימה \"כחול לבן\" הוגשה על ידי כחול לבן חוסן לישראל; בני גנץ בראשה ופנינה תמנו במקום השני."
         en: "The “Blue and White” list was submitted by Blue and White – Israel Resilience; Benny Gantz heads it and Pnina Tamano is second."
+        es: "La lista «Azul y Blanco» fue presentada por Azul y Blanco – Resiliencia para Israel; Benny Gantz la encabeza y Pnina Tamano es segunda."
+        fr: "La liste « Bleu et Blanc » a été déposée par Bleu et Blanc – Résilience pour Israël ; Benny Gantz la mène et Pnina Tamano est deuxième."
       sources:
         - { url: "https://www.gov.il/he/pages/kachol-lavan_list30", title: "כחול לבן — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
     spectrum: center
@@ -380,6 +420,8 @@ profiles:
       en: A centrist party led by Benny Gantz, a former IDF chief of staff and defense minister; part of National Unity until July 2025.
       ar: حزب وسطي بقيادة بيني غانتس، رئيس الأركان ووزير الدفاع السابق؛ كان جزءًا من "المعسكر الرسمي" حتى تموز/يوليو 2025.
       ru: Центристская партия во главе с Бени Ганцем, бывшим начальником генштаба и министром обороны; до июля 2025 года входила в «Государственный лагерь».
+      es: "Un partido centrista encabezado por Benny Gantz, exjefe del Estado Mayor y exministro de Defensa; parte de Unidad Nacional hasta julio de 2025."
+      fr: "Un parti centriste dirigé par Benny Gantz, ancien chef d’état-major et ancien ministre de la Défense ; membre d’Unité nationale jusqu’en juillet 2025."
     positions:
       he:
         - ממלכתיות, שמירה על מוסדות הדמוקרטיה ומערכת המשפט
@@ -389,6 +431,14 @@ profiles:
         - Statesmanship and protecting democratic and judicial institutions
         - A responsible, centrist security policy
         - A broad unity government
+      es:
+        - Sentido de Estado y protección de las instituciones democráticas y judiciales
+        - Una política de seguridad responsable y centrista
+        - Un gobierno de unidad amplio
+      fr:
+        - Sens de l’État et protection des institutions démocratiques et judiciaires
+        - Une politique de sécurité responsable et centriste
+        - Un large gouvernement d’union
   - id: 1105 # Religious Zionism
     verified: "2026-09-19"
     updates:
@@ -448,6 +498,8 @@ profiles:
       note:
         he: "רשימה משותפת עם זהות של משה פייגלין (מקום 2) ועם \"עתיד אחד\" של אורית סטרוק (מקום 3); הוגשה על ידי האיחוד הלאומי - תקומה, זהות ועתיד אחד."
         en: "A joint list with Moshe Feiglin’s Zehut (2nd place) and Orit Strook’s “One Future” (3rd); submitted by National Union – Tkuma, Zehut and One Future."
+        es: "Una lista conjunta con Zehut de Moshe Feiglin (2.º puesto) y «Un Futuro» de Orit Strook (3.º); presentada por Unión Nacional – Tkuma, Zehut y Un Futuro."
+        fr: "Une liste commune avec Zehut de Moshe Feiglin (2e place) et « Un avenir » d’Orit Strook (3e) ; déposée par Union nationale – Tkuma, Zehut et Un avenir."
       sources:
         - { url: "https://www.gov.il/he/pages/tzionutdatit-zehut_list31", title: "הציונות הדתית וזהות — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
     spectrum: far-right
@@ -455,6 +507,8 @@ profiles:
     ballotNote:
       he: רצה במסגרת הרשימה המשותפת "הציונות הדתית" (ט) ב-2022.
       en: Ran on the joint 'Religious Zionism' list (ט) in 2022.
+      es: "Se presentó en la lista conjunta «Sionismo Religioso» (ט) en 2022."
+      fr: "S’est présenté sur la liste commune « Sionisme religieux » (ט) en 2022."
     leaderHe: בצלאל סמוטריץ'
     leaderEn: Bezalel Smotrich
     founded: 2021
@@ -466,6 +520,8 @@ profiles:
       en: A religious-nationalist right-wing party supporting settlement and the state's Jewish identity.
       ar: حزب يميني ديني-قومي يدعم الاستيطان والهوية اليهودية للدولة.
       ru: Религиозно-националистическая правая партия, поддерживающая поселения и еврейскую идентичность государства.
+      es: "Un partido de derecha religioso-nacionalista que apoya los asentamientos y la identidad judía del Estado."
+      fr: "Un parti de droite religieux-nationaliste soutenant les implantations et l’identité juive de l’État."
     positions:
       he:
         - תמיכה בהתיישבות ביהודה ושומרון והחלת ריבונות
@@ -475,6 +531,14 @@ profiles:
         - Support for settlement in the West Bank and applying sovereignty
         - Strengthening the state's Jewish and religious identity
         - Reform of the judicial system
+      es:
+        - Apoyo a los asentamientos en Cisjordania y a la aplicación de la soberanía
+        - Fortalecer la identidad judía y religiosa del Estado
+        - Reforma del sistema judicial
+      fr:
+        - Soutien aux implantations en Cisjordanie et à l’application de la souveraineté
+        - Renforcer l’identité juive et religieuse de l’État
+        - Réforme du système judiciaire
   - id: 1101 # United Torah Judaism
     election2026:
       runsAs: own
@@ -482,6 +546,8 @@ profiles:
       note:
         he: "בראש הרשימה יעקב אשר (דגל התורה); יצחק גולדקנופף (אגודת ישראל) שני ומאיר פרוש רביעי. משה גפני ואורי מקלב, חברי הסיעה בכנסת ה-25, אינם ברשימה. הוגשה על ידי דגל התורה, אגודת ישראל ו\"חומת תורת ישראל\"."
         en: "Yaakov Asher (Degel HaTorah) heads the list; Yitzhak Goldknopf (Agudat Yisrael) is second and Meir Porush fourth. Moshe Gafni and Uri Maklev, members of the 25th-Knesset faction, are not on it. Submitted by Degel HaTorah, Agudat Yisrael and “Homat Torat Yisrael”."
+        es: "Yaakov Asher (Degel HaTorá) encabeza la lista; Yitzhak Goldknopf (Agudat Yisrael) es segundo y Meir Porush cuarto. Moshe Gafni y Uri Maklev, miembros de la facción en la 25.ª Knéset, no figuran en ella. Presentada por Degel HaTorá, Agudat Yisrael y «Homat Torat Yisrael»."
+        fr: "Yaakov Asher (Degel HaTorah) mène la liste ; Yitzhak Goldknopf (Agoudat Israël) est deuxième et Meir Porush quatrième. Moshe Gafni et Uri Maklev, membres de la faction dans la 25e Knesset, n’y figurent pas. Déposée par Degel HaTorah, Agoudat Israël et « Homat Torat Yisrael »."
       sources:
         - { url: "https://www.gov.il/he/pages/yahadut-degel_list37", title: "יהדות התורה והשבת אגודת ישראל - דגל התורה — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
     spectrum: right
@@ -502,6 +568,8 @@ profiles:
       en: An alliance of Ashkenazi ultra-Orthodox parties (Agudat Yisrael and Degel HaTorah); the 2026 list also includes “Homat Torat Yisrael”.
       ar: تحالف أحزاب حريدية أشكنازية (أغودات يسرائيل ودِغل هتوراة)؛ تنضم إليهما في قائمة 2026 أيضًا "حومات تورات يسرائيل".
       ru: Союз ашкеназских ультраортодоксальных партий (Агудат Исраэль и Дегель ха-Тора); в списке 2026 года к ним присоединяется и «Хомат Торат Исраэль».
+      es: "Una alianza de partidos ultraortodoxos asquenazíes (Agudat Yisrael y Degel HaTorá); la lista de 2026 incluye también a «Homat Torat Yisrael»."
+      fr: "Une alliance de partis ultra-orthodoxes ashkénazes (Agoudat Israël et Degel HaTorah) ; la liste de 2026 inclut aussi « Homat Torat Yisrael »."
     positions:
       he:
         - שמירה על אורח חיים חרדי ותקצוב מוסדות תורה
@@ -511,6 +579,14 @@ profiles:
         - Preserving the Haredi way of life and funding Torah institutions
         - Draft exemptions for yeshiva students
         - Sabbath and kashrut observance in the public sphere
+      es:
+        - Preservar el modo de vida jaredí y financiar las instituciones de la Torá
+        - Exención del servicio militar para los estudiantes de yeshivá
+        - Respeto del Shabat y la kashrut en el espacio público
+      fr:
+        - Préserver le mode de vie haredi et financer les institutions de la Torah
+        - Exemption de service militaire pour les étudiants de yeshiva
+        - Respect du Shabbat et de la cacherout dans l’espace public
   - id: 1104 # Yisrael Beiteinu
     verified: "2026-09-19"
     updates:
@@ -549,6 +625,8 @@ profiles:
       note:
         he: "הרשימה הוגשה על ידי ישראל ביתנו; דן אילוז, לשעבר ח\"כ הליכוד, במקום העשירי."
         en: "The list was submitted by Yisrael Beiteinu; Dan Illouz, formerly a Likud MK, is tenth."
+        es: "La lista fue presentada por Yisrael Beiteinu; Dan Illouz, exdiputado del Likud, es décimo."
+        fr: "La liste a été déposée par Israël Beiteinou ; Dan Illouz, ancien député du Likoud, est dixième."
       sources:
         - { url: "https://www.gov.il/he/pages/israel-beitenu_list11", title: "ישראל ביתנו — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
     spectrum: right
@@ -564,6 +642,8 @@ profiles:
       en: A secular-nationalist party associated with the Russian-speaking community.
       ar: حزب قومي علماني مرتبط بالجالية الناطقة بالروسية.
       ru: Светско-националистическая партия, связанная с русскоязычной общиной.
+      es: "Un partido nacionalista laico asociado a la comunidad rusohablante."
+      fr: "Un parti nationaliste laïc associé à la communauté russophone."
     positions:
       he:
         - הפרדת דת ומדינה ונישואין אזרחיים
@@ -573,6 +653,14 @@ profiles:
         - Separation of religion and state and civil marriage
         - Mandatory conscription for all sectors, including Haredim
         - A tough security line
+      es:
+        - Separación de religión y Estado y matrimonio civil
+        - Servicio militar obligatorio para todos los sectores, incluidos los jaredíes
+        - Una línea de seguridad dura
+      fr:
+        - Séparation de la religion et de l’État et mariage civil
+        - Service militaire obligatoire pour tous les secteurs, y compris les haredim
+        - Une ligne sécuritaire ferme
   - id: 1106 # Otzma Yehudit
     verified: "2026-09-19"
     updates:
@@ -640,6 +728,8 @@ profiles:
       note:
         he: "הרשימה הוגשה על ידי \"חזית יהודית לאומית\" ו\"ארץ ישראל שלנו\"; טלי גוטליב, לשעבר ח\"כית הליכוד, במקום השני. האות המבוקשת ב התבקשה גם על ידי \"ביחד\" — ההכרעה בידי ועדת הבחירות."
         en: "The list was submitted by “Jewish National Front” and “Our Land of Israel”; Tali Gottlieb, formerly a Likud MK, is second. The requested letter ב was also requested by “Together” — the CEC decides."
+        es: "La lista fue presentada por «Frente Nacional Judío» y «Nuestra Tierra de Israel»; Tali Gottlieb, exdiputada del Likud, es segunda. La letra solicitada ב también la pidió «Juntos» — decide la Comisión Electoral."
+        fr: "La liste a été déposée par « Front national juif » et « Notre Terre d’Israël » ; Tali Gottlieb, ancienne députée du Likoud, est deuxième. La lettre demandée ב a aussi été demandée par « Ensemble » — la Commission électorale tranche."
       sources:
         - { url: "https://www.gov.il/he/pages/yehudit-meuhedet_list14", title: "עוצמה יהודית — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
         - { url: "https://www.gov.il/he/pages/candidates-lists-26", title: "רשימות המועמדים לכנסת ה-26 — אותיות מבוקשות", publisher: "ועדת הבחירות המרכזית לכנסת" }
@@ -648,6 +738,8 @@ profiles:
     ballotNote:
       he: רצה במסגרת רשימת "הציונות הדתית" (ט) ב-2022.
       en: Ran within the 'Religious Zionism' list (ט) in 2022.
+      es: "Se presentó dentro de la lista «Sionismo Religioso» (ט) en 2022."
+      fr: "S’est présenté au sein de la liste « Sionisme religieux » (ט) en 2022."
     leaderHe: איתמר בן גביר
     leaderEn: Itamar Ben-Gvir
     founded: 2012
@@ -659,6 +751,8 @@ profiles:
       en: A far-right religious-nationalist party emphasizing personal security and tough enforcement.
       ar: حزب يميني متطرف ديني-قومي يركّز على الأمن الشخصي والإنفاذ الصارم.
       ru: Крайне правая религиозно-националистическая партия с упором на личную безопасность и жёсткое правоприменение.
+      es: "Un partido de extrema derecha religioso-nacionalista que pone el acento en la seguridad personal y en una aplicación estricta de la ley."
+      fr: "Un parti d’extrême droite religieux-nationaliste mettant l’accent sur la sécurité personnelle et une application stricte de la loi."
     positions:
       he:
         - מדיניות ביטחון פנים ואכיפה תקיפה
@@ -668,6 +762,14 @@ profiles:
         - A hardline internal-security and law-enforcement policy
         - Support for settlement and applying sovereignty
         - Nationalist positions on Jewish identity
+      es:
+        - Una política de seguridad interior y de aplicación de la ley de línea dura
+        - Apoyo a los asentamientos y a la aplicación de la soberanía
+        - Posiciones nacionalistas sobre la identidad judía
+      fr:
+        - Une politique de sécurité intérieure et de maintien de l’ordre intransigeante
+        - Soutien aux implantations et à l’application de la souveraineté
+        - Positions nationalistes sur l’identité juive
   - id: 1099 # Ra'am
     verified: "2026-09-19"
     updates:
@@ -735,6 +837,8 @@ profiles:
       note:
         he: "הרשימה הוגשה על ידי רשימת האיחוד הערבי; יואב סגלוביץ', לשעבר ח\"כ יש עתיד, במקום השני."
         en: "The list was submitted by the United Arab List; Yoav Segalovitz, formerly a Yesh Atid MK, is second."
+        es: "La lista fue presentada por la Lista Árabe Unida; Yoav Segalovitz, exdiputado de Yesh Atid, es segundo."
+        fr: "La liste a été déposée par la Liste arabe unie ; Yoav Segalovitz, ancien député de Yesh Atid, est deuxième."
       sources:
         - { url: "https://www.gov.il/he/pages/raam_list18", title: "רע\"ם - הרשימה הערבית המאוחדת — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
     spectrum: center
@@ -749,6 +853,8 @@ profiles:
       en: An Arab conservative party that grew out of the Islamic Movement and announced in December 2025 that it was separating its institutions from it; the first Arab party to join a Zionist-led coalition (2021).
       ar: حزب عربي محافظ نشأ من الحركة الإسلامية وأعلن في كانون الأول/ديسمبر 2025 فصل مؤسساته عنها؛ أول حزب عربي ينضم إلى ائتلاف بقيادة صهيونية (2021).
       ru: Арабская консервативная партия, выросшая из Исламского движения и в декабре 2025 года объявившая об отделении своих институтов от него; первая вошедшая в коалицию под сионистским руководством (2021).
+      es: "Un partido árabe conservador surgido del Movimiento Islámico que anunció en diciembre de 2025 la separación de sus instituciones de él; el primer partido árabe en unirse a una coalición liderada por sionistas (2021)."
+      fr: "Un parti arabe conservateur issu du Mouvement islamique, qui a annoncé en décembre 2025 séparer ses institutions de celui-ci ; le premier parti arabe à rejoindre une coalition dirigée par des sionistes (2021)."
     positions:
       he:
         - קידום זכויות ותקציבים לאוכלוסייה הערבית
@@ -758,6 +864,14 @@ profiles:
         - Advancing rights and budgets for the Arab population
         - Fighting crime and violence in Arab society
         - Upholding conservative religious values
+      es:
+        - Promover derechos y presupuestos para la población árabe
+        - Combatir la delincuencia y la violencia en la sociedad árabe
+        - Defender valores religiosos conservadores
+      fr:
+        - Faire progresser les droits et les budgets de la population arabe
+        - Lutter contre la criminalité et la violence dans la société arabe
+        - Défendre des valeurs religieuses conservatrices
   - id: 1103 # Hadash-Ta'al
     verified: "2026-09-19"
     updates:
@@ -827,6 +941,8 @@ profiles:
       note:
         he: "חד\"ש ותע\"ל רצות עם בל\"ד ב\"רשימה המשותפת\": יוסף ג'בארין (חד\"ש) בראשה, אחמד טיבי (תע\"ל) שני וסאמי אבו שחאדה (בל\"ד) שלישי. איימן עודה אינו ברשימה."
         en: "Hadash and Ta’al run with Balad on the “Joint List”: Yousef Jabareen (Hadash) heads it, Ahmad Tibi (Ta’al) is second and Sami Abu Shahadeh (Balad) third. Ayman Odeh is not on it."
+        es: "Hadash y Ta’al se presentan con Balad en la «Lista Conjunta»: Yousef Jabareen (Hadash) la encabeza, Ahmad Tibi (Ta’al) es segundo y Sami Abu Shahadeh (Balad) tercero. Ayman Odeh no figura en ella."
+        fr: "Hadash et Ta’al se présentent avec Balad sur la « Liste commune » : Yousef Jabareen (Hadash) la mène, Ahmad Tibi (Ta’al) est deuxième et Sami Abu Shahadeh (Balad) troisième. Ayman Odeh n’y figure pas."
       sources:
         - { url: "https://www.gov.il/he/pages/hareshima-hameshutefet_list35", title: "הרשימה המשותפת — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
     spectrum: left
@@ -846,6 +962,8 @@ profiles:
       en: A joint list of Hadash (a Jewish-Arab socialist party) and Ta'al (Arab).
       ar: قائمة مشتركة من الجبهة (حزب اشتراكي يهودي-عربي) والعربية للتغيير.
       ru: Совместный список Хадаш (еврейско-арабская социалистическая партия) и Тааль (арабская).
+      es: "Una lista conjunta de Hadash (un partido socialista judeo-árabe) y Ta'al (árabe)."
+      fr: "Une liste commune de Hadash (un parti socialiste judéo-arabe) et de Ta'al (arabe)."
     positions:
       he:
         - שוויון אזרחי מלא בין יהודים לערבים
@@ -855,6 +973,14 @@ profiles:
         - Full civic equality between Jews and Arabs
         - A two-state solution and ending the occupation
         - Social justice and workers' rights
+      es:
+        - Plena igualdad cívica entre judíos y árabes
+        - Una solución de dos Estados y el fin de la ocupación
+        - Justicia social y derechos de los trabajadores
+      fr:
+        - Pleine égalité civique entre Juifs et Arabes
+        - Une solution à deux États et la fin de l’occupation
+        - Justice sociale et droits des travailleurs
   - id: 1100 # The Democrats (Labor–Meretz); the Knesset faction is still registered as Labor
     verified: "2026-09-19"
     updates:
@@ -912,6 +1038,8 @@ profiles:
       note:
         he: "הסיעה רשומה בכנסת כ\"העבודה\"; המפלגה רצה כ\"הדמוקרטים בראשות יאיר גולן\" (הוגשה על ידי \"הדמוקרטים מיסודה של תנועת העבודה\" ומרצ). מרב מיכאלי אינה ברשימה."
         en: "The Knesset faction is registered as “Labor”; the party runs as “The Democrats headed by Yair Golan” (submitted by “The Democrats, founded by the Labor movement” and Meretz). Merav Michaeli is not on the list."
+        es: "La facción de la Knéset está registrada como «Laborista»; el partido se presenta como «Los Demócratas encabezados por Yair Golan» (presentada por «Los Demócratas, fundados por el movimiento laborista» y Meretz). Merav Michaeli no figura en la lista."
+        fr: "La faction à la Knesset est enregistrée sous le nom « Travailliste » ; le parti se présente comme « Les Démocrates menés par Yaïr Golan » (déposée par « Les Démocrates, fondés par le mouvement travailliste » et Meretz). Merav Michaeli ne figure pas sur la liste."
       sources:
         - { url: "https://www.gov.il/he/pages/hademokratim_list17", title: "הדמוקרטים בראשות יאיר גולן — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
     spectrum: center-left
@@ -926,6 +1054,8 @@ profiles:
       en: The merged Labor–Meretz party (since 2024), social-democratic and Zionist; runs in 2026 as The Democrats under Yair Golan.
       ar: حزب اندماج العمل وميرتس (منذ 2024)، اشتراكي-ديمقراطي وصهيوني؛ يخوض انتخابات 2026 باسم «الديمقراطيون» بقيادة يائير غولان.
       ru: Объединённая партия Аводы и Мереца (с 2024 года), социал-демократическая и сионистская; на выборах 2026 года идёт как «Демократы» во главе с Яиром Голаном.
+      es: "El partido fusionado Laborista–Meretz (desde 2024), socialdemócrata y sionista; se presenta en 2026 como Los Demócratas con Yair Golan."
+      fr: "Le parti issu de la fusion Travaillistes–Meretz (depuis 2024), social-démocrate et sioniste ; se présente en 2026 comme Les Démocrates sous Yaïr Golan."
     website: https://democrats.org.il/
     sources:
       - { url: "https://www.gov.il/he/pages/hademokratim_list17", title: "הדמוקרטים בראשות יאיר גולן — רשימת המועמדים (ועדת הבחירות המרכזית, 7.9.2026)", publisher: "ועדת הבחירות המרכזית לכנסת" }
@@ -939,6 +1069,14 @@ profiles:
         - A welfare state and social justice
         - A negotiated political settlement
         - Defending democracy and human rights
+      es:
+        - Un Estado del bienestar y justicia social
+        - Un acuerdo político negociado
+        - Defender la democracia y los derechos humanos
+      fr:
+        - Un État-providence et la justice sociale
+        - Un règlement politique négocié
+        - Défendre la démocratie et les droits humains
   - id: 1108 # New Hope – The National Right
     verified: "2026-09-19"
     updates:
@@ -1008,6 +1146,8 @@ profiles:
       note:
         he: "תקווה חדשה - הימין הממלכתי הגישה את רשימת הליכוד במשותף עם הליכוד; גדעון סער במקום השביעי. מיזוג הסיעות בכנסת לא הושלם, וח\"כ שרן השכל, שפרשה מהמפלגה ביולי 2026, מתמודדת בנפרד בראש \"ישראל תחילה\" (רשימה 7)."
         en: "New Hope – The National Right submitted the Likud list jointly with Likud; Gideon Sa’ar is seventh. The factions’ merger in the Knesset was not completed, and MK Sharren Haskel, who left the party in July 2026, runs separately at the head of “Israel First” (list 7)."
+        es: "Nueva Esperanza – La Derecha Estatal presentó la lista del Likud conjuntamente con el Likud; Gideon Sa’ar es séptimo. La fusión de las facciones en la Knéset no se completó, y la diputada Sharren Haskel, que dejó el partido en julio de 2026, se presenta por separado al frente de «Israel Primero» (lista 7)."
+        fr: "Nouvel Espoir – La Droite étatique a déposé la liste du Likoud conjointement avec le Likoud ; Gideon Sa’ar est septième. La fusion des factions à la Knesset n’a pas été achevée, et la députée Sharren Haskel, qui a quitté le parti en juillet 2026, se présente séparément en tête de « Israël d’abord » (liste 7)."
       sources:
         - { url: "https://www.gov.il/he/pages/halikud-tikvahadasha_iist29", title: "הליכוד עם בנימין נתניהו לראשות הממשלה — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
         - { url: "https://www.gov.il/he/pages/israel-tchila_list7", title: "ישראל תחילה - בראשות שרן השכל — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
@@ -1016,6 +1156,8 @@ profiles:
     ballotNote:
       he: רצה במסגרת "המחנה הממלכתי" (כן) ב-2022. באוגוסט 2025 אישר מרכז הליכוד את מיזוג המפלגה לתוכו, אך בכנסת נותרה הסיעה נפרדת (4 חברים); ב-2026 רצה בתוך רשימת הליכוד, גדעון סער במקום השביעי.
       en: Ran within 'National Unity' (כן) in 2022. In August 2025 the Likud Central Committee approved the party’s merger into Likud, but in the Knesset the faction stayed separate (4 members); in 2026 it runs inside the Likud list, with Gideon Sa'ar seventh.
+      es: "Se presentó dentro de «Unidad Nacional» (כן) en 2022. En agosto de 2025 el Comité Central del Likud aprobó la fusión del partido en el Likud, pero en la Knéset la facción siguió separada (4 miembros); en 2026 se presenta dentro de la lista del Likud, con Gideon Sa'ar séptimo."
+      fr: "S’est présenté au sein d’« Unité nationale » (כן) en 2022. En août 2025, le Comité central du Likoud a approuvé la fusion du parti dans le Likoud, mais à la Knesset la faction est restée distincte (4 membres) ; en 2026, il se présente au sein de la liste du Likoud, avec Gideon Sa'ar septième."
     sources:
       - { url: "https://www.timesofisrael.com/ruling-likud-party-approves-merger-with-gideon-saars-new-hope/", title: "Ruling Likud party approves merger with Gideon Sa'ar's New Hope (13 Aug 2025)", publisher: "The Times of Israel" }
       - { url: "https://www.gov.il/he/pages/halikud-tikvahadasha_iist29", title: "הליכוד עם בנימין נתניהו לראשות הממשלה — רשימת המועמדים, הוגשה על ידי הליכוד ותקווה חדשה הימין הממלכתי", publisher: "ועדת הבחירות המרכזית לכנסת" }
@@ -1029,6 +1171,8 @@ profiles:
       en: A statesmanlike right-wing party led by Gideon Sa'ar.
       ar: حزب يميني رسمي بقيادة غدعون ساعر.
       ru: Государственническая правая партия во главе с Гидеоном Сааром.
+      es: "Un partido de derecha de corte institucional encabezado por Gideon Sa'ar."
+      fr: "Un parti de droite à vocation étatique dirigé par Gideon Sa'ar."
     positions:
       he:
         - קו ימני ביטחוני לצד שמירה על מוסדות המדינה
@@ -1038,6 +1182,14 @@ profiles:
         - A security-minded right-wing line alongside respect for state institutions
         - Rule of law and statesmanship
         - Liberal economics
+      es:
+        - Una línea de derecha centrada en la seguridad junto al respeto de las instituciones del Estado
+        - Estado de derecho y sentido de Estado
+        - Economía liberal
+      fr:
+        - Une ligne de droite axée sur la sécurité, dans le respect des institutions de l’État
+        - État de droit et sens de l’État
+        - Économie libérale
   - id: 1107 # Noam
     verified: "2026-09-19"
     updates:
@@ -1095,6 +1247,8 @@ profiles:
       note:
         he: "רצה כ\"נעם לישראל\" (אותיות מבוקשות: ני), רשימה שהוגשה על ידי המפלגות \"לזוז\" ו\"אחריות לאומית - למען עתיד ילדינו\"; אבי מעוז בראשה."
         en: "Runs as “Noam for Israel” (requested letters: ני), a list submitted by the parties “Lazuz” and “National Responsibility – for our children’s future”; Avi Maoz heads it."
+        es: "Se presenta como «Noam por Israel» (letras solicitadas: ני), una lista presentada por los partidos «Lazuz» y «Responsabilidad Nacional – por el futuro de nuestros hijos»; Avi Maoz la encabeza."
+        fr: "Se présente sous le nom « Noam pour Israël » (lettres demandées : ני), une liste déposée par les partis « Lazuz » et « Responsabilité nationale – pour l’avenir de nos enfants » ; Avi Maoz la mène."
       sources:
         - { url: "https://www.gov.il/he/pages/noam_list38", title: "נעם לישראל — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
     spectrum: far-right
@@ -1102,6 +1256,8 @@ profiles:
     ballotNote:
       he: רצה במסגרת רשימת "הציונות הדתית" (ט) ב-2022. ב-2026 מתמודדת ברשימה משלה, "נעם לישראל" (רשימה 38, אותיות מבוקשות ני).
       en: Ran within the 'Religious Zionism' list (ט) in 2022. In 2026 it runs on its own list, “Noam for Israel” (list 38, requested letters ני).
+      es: "Se presentó dentro de la lista «Sionismo Religioso» (ט) en 2022. En 2026 se presenta con lista propia, «Noam por Israel» (lista 38, letras solicitadas ני)."
+      fr: "S’est présenté au sein de la liste « Sionisme religieux » (ט) en 2022. En 2026, il se présente avec sa propre liste, « Noam pour Israël » (liste 38, lettres demandées ני)."
     website: https://www.noamlisrael.org.il/
     sources:
       - { url: "https://www.gov.il/he/pages/noam_list38", title: "נעם לישראל — רשימת המועמדים (ועדת הבחירות המרכזית, 9.9.2026)", publisher: "ועדת הבחירות המרכזית לכנסת" }
@@ -1115,6 +1271,8 @@ profiles:
       en: An ultra-conservative religious party focused on Jewish identity and family issues.
       ar: حزب ديني محافظ جدًا يركّز على الهوية اليهودية وقضايا الأسرة.
       ru: Ультраконсервативная религиозная партия, сосредоточенная на еврейской идентичности и семейных вопросах.
+      es: "Un partido religioso ultraconservador centrado en la identidad judía y los asuntos de familia."
+      fr: "Un parti religieux ultraconservateur centré sur l’identité juive et les questions familiales."
     positions:
       he:
         - שמירה על "צביון יהודי" ומשפחה מסורתית
@@ -1124,3 +1282,11 @@ profiles:
         - Preserving a "Jewish character" and the traditional family
         - Opposition to promoting LGBT rights in the public sphere
         - Strengthening Jewish education
+      es:
+        - Preservar un «carácter judío» y la familia tradicional
+        - Oposición a promover los derechos LGBT en el espacio público
+        - Fortalecer la educación judía
+      fr:
+        - Préserver un « caractère juif » et la famille traditionnelle
+        - Opposition à la promotion des droits LGBT dans l’espace public
+        - Renforcer l’éducation juive

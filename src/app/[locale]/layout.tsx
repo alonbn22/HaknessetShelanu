@@ -9,6 +9,7 @@ import { THEME_SCRIPT } from "@/lib/theme-script";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { AccessibilityMenu } from "@/components/AccessibilityMenu";
+import { ThemeSync } from "@/components/ThemeSync";
 import "../globals.css";
 
 // Heebo — the brand face (covers Hebrew + Latin). Loaded as a VARIABLE font:
@@ -131,6 +132,7 @@ export default async function LocaleLayout({
       </head>
       <body className="min-h-screen flex flex-col">
         <NextIntlClientProvider>
+          <ThemeSync />
           <a href="#main-content" className="skip-link">
             {t("skipToContent")}
           </a>

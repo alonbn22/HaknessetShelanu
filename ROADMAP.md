@@ -144,7 +144,6 @@ socio-economic indices by municipality (data.gov.il) for context.
   27 Oct 2026 (bump `lastReviewed`; add new polls from the outlets' own
   articles; the Channel 16 polls stay out unless a written publication appears).
 - Accessibility-coordinator name / email / phone (`a11y.statement.*` placeholders, now in six languages).
-- Spanish/French text for the 88 dated faction developments in `content/party-profiles.yaml` `updates` (everything else editorial is translated; those fall back to English, marked).
 - Corrections email placeholder.
 - `NEXT_PUBLIC_SITE_URL` once a production domain exists (sitemap/OG URLs).
 - Editorial sign-off on curated member records, coalition.yaml (per-faction

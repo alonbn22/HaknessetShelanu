@@ -728,10 +728,10 @@ questions:
       joint-list:
         value: 1
         basis: statement
-        source: { url: "https://www.israelnationalnews.com/news/432244", title: "Hadash sets conditions for supporting Eisenkot bloc", publisher: "Israel National News" }
+        source: { url: "https://www.israelnationalnews.com/news/432244", title: "Hadash sets conditions for supporting Eisenkot bloc (26 Aug 2026; quoting Jabareen's interviews with Al-Jarmak and Al-Nas Radio)", publisher: "Israel National News" }
         quote:
-          he: "ג'בארין: תמיכה בגוש איזנקוט תותנה ב\"עקרונות יסוד המבטיחים שוויון וזכויות לחברה הערבית\"; לא שלל רשת ביטחון לקואליציה חלופית."
-          en: "Jabareen: support for the Eisenkot bloc would be conditioned on \"basic principles guaranteeing equality and rights for Arab society\"; he did not rule out a safety net for an alternative coalition."
+          he: "ג'בארין בראיונות לאל-ג'רמק ולרדיו א-נאס (כפי שדווחו): תמיכה בגוש איזנקוט מותנית ב\"עקרונות יסוד המבטיחים שוויון וזכויות לחברה הערבית\"; \"מפלגה שמצטרפת לקואליציה כפופה לקווי היסוד שלה\"."
+          en: "Jabareen in interviews with Al-Jarmak and Al-Nas Radio (as reported): support for the Eisenkot bloc is conditioned on \"basic principles guaranteeing equality and rights for Arab society\"; a \"party that joins a coalition becomes bound by its guiding principles\"."
       democrats:
         value: 2
         basis: statement

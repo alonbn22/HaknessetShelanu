@@ -394,15 +394,18 @@ export default async function HomePage() {
                     </div>
                     <p className={`mt-1 text-sm leading-relaxed text-muted ${partyTextClass(law.summary, locale)}`} {...partyTextAttrs(law.summary, locale)}>{partyText(law.summary, locale)}</p>
                   </div>
-                  {/* The source sits in the margin beside the claim it supports. */}
-                  <a
-                    href={law.sourceUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="self-start whitespace-nowrap text-xs text-accent-ink underline"
-                  >
-                    {t("common.source")}
-                  </a>
+                  {/* The source sits in the margin beside the claim it supports —
+                      and the roll-call, where the law is inside the record. */}
+                  <span className="flex flex-col items-end gap-1 self-start text-xs">
+                    <a href={law.sourceUrl} target="_blank" rel="noopener noreferrer" className="whitespace-nowrap text-accent-ink underline">
+                      {t("common.source")}
+                    </a>
+                    {law.votes.map((v) => (
+                      <Link key={v.id} href={`/votes/${v.id}`} className="whitespace-nowrap text-accent-ink underline">
+                        {t("home.lawVote")}
+                      </Link>
+                    ))}
+                  </span>
                 </li>
               ))}
             </ul>

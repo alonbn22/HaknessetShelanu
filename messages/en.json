@@ -63,7 +63,8 @@
     "seatsViewHemicycle": "Hemicycle",
     "votingDays": "The plenum held votes on {term} days this Knesset — {inYear} of them in {year}",
     "thisWeekEmpty": "No committee sittings are scheduled in the next seven days.",
-    "figuresSource": "Source: Knesset open-data API · as of {date}"
+    "figuresSource": "Source: Knesset open-data API · as of {date}",
+    "lawVote": "The Knesset vote"
   },
   "members": {
     "title": "Knesset Members",
@@ -388,7 +389,10 @@
     "positionsCta": "What each list says, stance by stance",
     "surplusWith": "Surplus-vote agreement with",
     "howToVote": "How to vote",
-    "recordParticipation": "On record: the faction's members took part in {pct}% of the 25th Knesset's votes on average."
+    "recordParticipation": "On record: the faction's members took part in {pct}% of the 25th Knesset's votes on average.",
+    "recordVote": "{for} for, {against} against",
+    "recordVoteAbsent": "({n} did not vote)",
+    "recordVoteAs": "as the {faction} faction"
   },
   "electionsHistory": {
     "title": "Knesset Elections History",

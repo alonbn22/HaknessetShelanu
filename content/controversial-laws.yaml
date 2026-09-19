@@ -11,6 +11,17 @@ laws:
       he: "חבילת שינויים שנועדה לצמצם את כוחו של בית המשפט העליון ולשנות את מאזן הכוחות בין הרשויות. תיקון 'עילת הסבירות' אושר ביולי 2023 ועורר את גל המחאות הגדול בתולדות המדינה; תומכים ראו בו חיזוק נבחרי הציבור, מתנגדים ראו בו פגיעה באיזונים ובבלמים. בג\"ץ ביטל את התיקון בינואר 2024."
       en: "A package meant to curb the Supreme Court's power and shift the balance among the branches of government. The 'reasonableness' amendment passed in July 2023 and triggered the largest protest wave in the country's history; supporters saw it as strengthening elected officials, opponents as weakening checks and balances. The High Court struck the amendment down in January 2024."
     sourceUrl: "https://en.wikipedia.org/wiki/2023_Israeli_judicial_reform"
+    # The roll-call behind the law, from the Knesset record (vote 39803 in the
+    # site's own record and in the Knesset's OData). The second reading is the
+    # one where every faction voted; in the third reading (vote 39785, 64–0)
+    # the opposition factions did not take part, so it shows no "against".
+    votes:
+      - id: 39803
+        stage: { he: "קריאה שנייה, 24 ביולי 2023", en: "second reading, 24 July 2023" }
+        note:
+          he: "בקריאה השלישית (64–0) סיעות האופוזיציה לא השתתפו בהצבעה; לכן מוצגת הקריאה השנייה, שבה הצביעו כולם."
+          en: "In the third reading (64–0) the opposition factions did not take part; the second reading, in which everyone voted, is shown."
+        source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(39803)", title: "חוק-יסוד: השפיטה (תיקון מס' 3) — לקבל בקריאה שנייה, 24.7.2023", publisher: "הכנסת" }
   - year: 2018
     title:
       he: "חוק הלאום (2018)"

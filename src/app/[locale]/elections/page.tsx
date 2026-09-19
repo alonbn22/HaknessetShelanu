@@ -2,8 +2,10 @@ import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { rtlLocales } from "@/i18n/routing";
 import {
+  getControversialLaws,
   getElectionsHistory,
   getElectionOutlook,
+  getFactionMeta,
   getPartyProfile,
   partyText,
   partyTextAttrs,
@@ -12,7 +14,7 @@ import {
 } from "@/lib/content";
 import { formatDate } from "@/lib/format";
 import { rtlAttrs } from "@/lib/text";
-import { getFactionAvgParticipation } from "@/lib/queries";
+import { getFactionAvgParticipation, getFactionTallies } from "@/lib/queries";
 import { KeyDatesTimeline } from "@/components/KeyDatesTimeline";
 import { PollsSection } from "@/components/polls/PollsSection";
 
@@ -66,6 +68,10 @@ export default async function ElectionsHistoryPage() {
   const locale = await getLocale();
   const elections = getElectionsHistory();
   const outlook = getElectionOutlook();
+  // The record strip's vote rows: each controversial law that has a roll-call
+  // inside the site's record, tallied by faction once for the whole page.
+  const lawVotes = getControversialLaws().flatMap((law) => law.votes.map((v) => ({ law, vote: v, tallies: getFactionTallies(v.id) })));
+  const factionMeta = getFactionMeta();
 
   // A sourced fact row (key facts / rules / stats share the shape).
   const factRow = (f: ElectionFact) => (
@@ -253,6 +259,35 @@ export default async function ElectionsHistoryPage() {
                         </p>
                       );
                     })()}
+                    {/* How the sitting faction voted on each controversial law
+                        inside the record — under the faction's name at the time
+                        when that differs from the list's name today. */}
+                    {p.factionId != null &&
+                      lawVotes.map(({ law, vote, tallies }) => {
+                        const tally = tallies.get(p.factionId!);
+                        if (!tally) return null;
+                        // The faction's name at the time, in the page's language, when it
+                        // is not simply the list's own name (Labor → the Democrats, Hadash-
+                        // Ta'al → the Joint List, Religious Zionism → its bloc with Zehut).
+                        const meta = factionMeta.get(p.factionId!);
+                        const thenHe = meta?.he ?? tally.factionNameHe;
+                        const asThen = thenHe && thenHe !== p.name.he ? (meta?.[locale as "he" | "en" | "ar" | "ru"] ?? thenHe) : null;
+                        return (
+                          <p key={vote.id} className="text-xs text-muted">
+                            <span {...partyTextAttrs(law.title, locale)}>{partyText(law.title, locale)}</span>
+                            {" "}({partyText(vote.stage, locale)}):{" "}
+                            <span className="font-semibold text-foreground tabular-nums">
+                              {te("recordVote", { for: tally.for, against: tally.against })}
+                            </span>
+                            {tally.absent > 0 && <> {te("recordVoteAbsent", { n: tally.absent })}</>}
+                            {asThen && <> <span {...rtlAttrs(asThen)}>{te("recordVoteAs", { faction: asThen })}</span></>}
+                            {" · "}
+                            <Link href={`/votes/${vote.id}`} className="underline hover:text-accent-ink" title={vote.note ? partyText(vote.note, locale) : undefined}>
+                              {tc("source")}: {tc("knesset")}
+                            </Link>
+                          </p>
+                        );
+                      })}
                     {/* New lists aren't sitting factions — say so instead of
                         silently omitting the party-page link. */}
                     {p.factionId == null && (

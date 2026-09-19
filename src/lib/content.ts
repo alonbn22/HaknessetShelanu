@@ -592,6 +592,19 @@ const controversialLawSchema = z.object({
   title: localizedText,
   summary: localizedText,
   sourceUrl: httpUrl,
+  // The roll-call(s) behind the law where it falls inside the site's vote
+  // record (the 25th Knesset): the election cards show how each sitting
+  // faction voted. Laws that predate the record simply have none.
+  votes: z
+    .array(
+      z.object({
+        id: z.number().int().positive(),
+        stage: localizedText,
+        note: localizedText.optional(),
+        source: z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() }),
+      }),
+    )
+    .default([]),
 });
 export type ControversialLaw = z.infer<typeof controversialLawSchema>;
 

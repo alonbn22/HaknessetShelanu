@@ -320,3 +320,111 @@ export function computeVoteTotals() {
   db.run(sql`UPDATE votes SET is_accepted = (total_for > total_against)`);
   console.log("  done");
 }
+
+// Second pass for MkIds the name pass cannot reach: an MK who left the Knesset
+// never appears in the recent feed, so vote_results rows still sit under a raw
+// MkId that joins to nobody (the vote page shows them as absent; faction
+// tallies undercount). Resolve each by elimination: on a vote the orphan took
+// part in, the Knesset's own rows minus the persons the record already knows
+// are the candidates; the one whose result matches on every sampled vote is
+// the person. Nothing is guessed — an orphan with no unique match stays as is
+// and is reported.
+type OrphanResolution = { mkId: number; personId: number; votes: number };
+
+export async function resolveOrphanMkIds({ dryRun = false, sample = 4 } = {}): Promise<OrphanResolution[]> {
+  const db = getDb();
+  const client = db.$client;
+  const known = new Set(client.prepare("SELECT id FROM persons").all().map((r) => (r as { id: number }).id));
+  const orphans = client
+    .prepare(
+      `SELECT vr.person_id AS id, COUNT(*) AS n FROM vote_results vr
+       JOIN votes v ON v.id = vr.vote_id
+       WHERE v.knesset_num = ${CURRENT_KNESSET} AND vr.person_id NOT IN (SELECT id FROM persons)
+       GROUP BY vr.person_id HAVING n >= 2`,
+    )
+    .all() as { id: number; n: number }[];
+  if (orphans.length === 0) return [];
+  console.log(`Resolving ${orphans.length} orphan MkIds by elimination…`);
+
+  const CODE: Record<string, number> = { "בעד": VOTE_FOR, "נגד": VOTE_AGAINST, "נמנע": VOTE_ABSTAIN };
+  const remote = new Map<number, Map<number, number>>(); // voteId -> personId -> code
+  const fetchVote = async (voteId: number) => {
+    if (remote.has(voteId)) return remote.get(voteId)!;
+    const m = new Map<number, number>();
+    for await (const r of fetchAllRows<{ MkId: number; ResultDesc: string }>(
+      entityUrl("KNS_PlenumVoteResult", { $filter: `VoteID eq ${voteId}`, $select: "MkId,ResultDesc" }),
+    )) {
+      m.set(r.MkId, CODE[r.ResultDesc?.trim()] ?? VOTE_DID_NOT_VOTE);
+    }
+    remote.set(voteId, m);
+    return m;
+  };
+
+  const localRows = client.prepare(
+    `SELECT vr.vote_id AS voteId, vr.person_id AS personId, vr.result_code AS code
+     FROM vote_results vr WHERE vr.vote_id = ?`,
+  );
+  const orphanVotes = client.prepare(
+    `SELECT vr.vote_id AS voteId, vr.result_code AS code FROM vote_results vr
+     JOIN votes v ON v.id = vr.vote_id
+     WHERE vr.person_id = ? AND vr.result_code IN (${VOTE_FOR}, ${VOTE_AGAINST}, ${VOTE_ABSTAIN})
+     ORDER BY v.date_time`,
+  );
+
+  const resolved: OrphanResolution[] = [];
+  for (const o of orphans) {
+    const mine = orphanVotes.all(o.id) as { voteId: number; code: number }[];
+    if (mine.length === 0) continue;
+    // Spread the sample across the orphan's tenure so a one-off coincidence can't match.
+    const picks = Array.from({ length: Math.min(sample, mine.length) }, (_, i) =>
+      mine[Math.floor((i * (mine.length - 1)) / Math.max(1, Math.min(sample, mine.length) - 1))],
+    );
+    // Candidates so far (null before the first sample).
+    const state: { candidates: Set<number> | null } = { candidates: null };
+    const narrow = async (p: { voteId: number; code: number }) => {
+      const theirs = await fetchVote(p.voteId);
+      const ours = localRows.all(p.voteId) as { voteId: number; personId: number; code: number }[];
+      const placed = new Set(ours.filter((r) => known.has(r.personId)).map((r) => r.personId));
+      const here = new Set<number>();
+      for (const [pid, code] of theirs) if (!placed.has(pid) && code === p.code) here.add(pid);
+      state.candidates = state.candidates ? new Set([...state.candidates].filter((c) => here.has(c))) : here;
+    };
+    for (const p of picks) {
+      await narrow(p);
+      if (state.candidates!.size === 0) break;
+    }
+    // Two members of one faction vote alike on most days; keep sampling votes
+    // spread across the orphan's tenure until a vote one of them missed tells
+    // them apart (bounded, so a true twin stays open and is reported).
+    const extra = 40;
+    for (let k = 0; state.candidates && state.candidates.size > 1 && k < extra; k++) {
+      const idx = Math.floor(((k + 0.5) * mine.length) / extra);
+      await narrow(mine[Math.min(idx, mine.length - 1)]);
+    }
+    const candidates = state.candidates;
+    if (!candidates || candidates.size !== 1) {
+      console.warn(`  orphan MkId ${o.id} (${o.n} rows): ${candidates ? candidates.size : 0} candidates — left unresolved`);
+      continue;
+    }
+    const personId = [...candidates][0];
+    if (!known.has(personId)) {
+      console.warn(`  orphan MkId ${o.id} matches PersonID ${personId}, who is not in persons — left unresolved`);
+      continue;
+    }
+    resolved.push({ mkId: o.id, personId, votes: o.n });
+    console.log(`  MkId ${o.id} -> PersonID ${personId} (${o.n} rows)`);
+  }
+
+  if (!dryRun && resolved.length > 0) {
+    const insMap = client.prepare("INSERT OR REPLACE INTO mk_id_map (mk_id, person_id) VALUES (?, ?)");
+    const upd = client.prepare("UPDATE OR REPLACE vote_results SET person_id = ? WHERE person_id = ?");
+    client.transaction(() => {
+      for (const r of resolved) {
+        insMap.run(r.mkId, r.personId);
+        upd.run(r.personId, r.mkId);
+      }
+    })();
+    console.log(`  healed ${resolved.length} orphan MkIds`);
+  }
+  return resolved;
+}

@@ -63,7 +63,8 @@
     "seatsViewHemicycle": "חצי-גורן",
     "votingDays": "המליאה קיימה הצבעות ב־{term} ימים מאז תחילת הכנסת ה־25, מתוכם {inYear} ימים ב־{year}",
     "thisWeekEmpty": "אין ישיבות ועדה מתוכננות בשבעת הימים הקרובים.",
-    "figuresSource": "מקור: ממשק הנתונים הפתוח של הכנסת · נכון ל-{date}"
+    "figuresSource": "מקור: ממשק הנתונים הפתוח של הכנסת · נכון ל-{date}",
+    "lawVote": "ההצבעה בכנסת"
   },
   "members": {
     "title": "חברי הכנסת",
@@ -388,7 +389,10 @@
     "positionsCta": "מה כל רשימה אומרת, עמדה מול עמדה",
     "surplusWith": "הסכם עודפים עם",
     "howToVote": "איך מצביעים",
-    "recordParticipation": "ברקורד: השתתפות ממוצעת של חברי הסיעה בהצבעות הכנסת ה-25 — {pct}%."
+    "recordParticipation": "ברקורד: השתתפות ממוצעת של חברי הסיעה בהצבעות הכנסת ה-25 — {pct}%.",
+    "recordVote": "{for} בעד, {against} נגד",
+    "recordVoteAbsent": "({n} לא הצביעו)",
+    "recordVoteAs": "כסיעת {faction}"
   },
   "electionsHistory": {
     "title": "היסטוריית הבחירות לכנסת",

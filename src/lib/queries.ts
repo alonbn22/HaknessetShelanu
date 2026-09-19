@@ -2202,3 +2202,24 @@ export function getSeatFacts(): Map<number, SeatFacts> {
   }
   return out;
 }
+
+// ---------- one vote, tallied by faction ----------
+
+export type FactionTally = { for: number; against: number; abstain: number; absent: number; factionNameHe: string | null };
+
+// How each faction voted in one roll-call — the faction each member sat in at
+// the moment of the vote (getVoteResults resolves that), so a faction that has
+// since been renamed or reshaped is reported under its name at the time.
+export function getFactionTallies(voteId: number): Map<number, FactionTally> {
+  const out = new Map<number, FactionTally>();
+  for (const r of getVoteResults(voteId)) {
+    if (r.factionId == null) continue;
+    const t = out.get(r.factionId) ?? { for: 0, against: 0, abstain: 0, absent: 0, factionNameHe: r.factionNameHe ?? null };
+    if (r.resultCode === VOTE_FOR) t.for++;
+    else if (r.resultCode === VOTE_AGAINST) t.against++;
+    else if (r.resultCode === VOTE_ABSTAIN) t.abstain++;
+    else t.absent++;
+    out.set(r.factionId, t);
+  }
+  return out;
+}

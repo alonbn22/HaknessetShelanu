@@ -6,6 +6,7 @@ import {
   getElectionsHistory,
   getElectionOutlook,
   getFactionMeta,
+  localizedMeta,
   getPartyProfile,
   partyText,
   partyTextAttrs,
@@ -295,7 +296,7 @@ export default async function ElectionsHistoryPage() {
                         // Ta'al → the Joint List, Religious Zionism → its bloc with Zehut).
                         const meta = factionMeta.get(p.factionId!);
                         const thenHe = meta?.he ?? tally.factionNameHe;
-                        const asThen = thenHe && thenHe !== p.name.he ? (meta?.[locale as "he" | "en" | "ar" | "ru"] ?? thenHe) : null;
+                        const asThen = thenHe && thenHe !== p.name.he ? (meta ? localizedMeta(meta, locale) : thenHe) : null;
                         return (
                           <p key={vote.id} className="text-xs text-muted">
                             <span {...partyTextAttrs(law.title, locale)}>{partyText(law.title, locale)}</span>

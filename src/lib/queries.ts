@@ -2,7 +2,7 @@ import { cache } from "react";
 import { and, asc, desc, eq, inArray, or, sql, type SQL, type AnyColumn } from "drizzle-orm";
 import { getDb, schema } from "@/db";
 import { isHebrew } from "./text";
-import { getCoalitionConfig, getFactionMeta } from "./content";
+import { getCoalitionConfig, getFactionMeta, localizedMeta } from "./content";
 import {
   CURRENT_KNESSET,
   MK_POSITION_IDS,
@@ -28,15 +28,16 @@ export type Vote = typeof schema.votes.$inferSelect;
 export function personName(p: Person, locale: string): string {
   const hebrew = `${p.firstNameHe} ${p.lastNameHe}`;
   if (locale === "he") return hebrew;
+  // Latin-script locales (en, es, fr) share the English transliteration.
   const localized =
-    locale === "en" ? p.nameEn : locale === "ar" ? p.nameAr : p.nameRu;
+    locale === "ar" ? p.nameAr : locale === "ru" ? p.nameRu : p.nameEn;
   return localized ?? p.nameEn ?? hebrew;
 }
 
 export function factionName(factionId: number, fallbackHe: string, locale: string): string {
   const meta = getFactionMeta().get(factionId);
   if (!meta) return fallbackHe;
-  return (meta[locale as "he" | "en" | "ar" | "ru"] as string) ?? meta.he;
+  return localizedMeta(meta, locale);
 }
 
 export function factionColor(factionId: number): string {

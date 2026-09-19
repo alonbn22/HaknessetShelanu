@@ -3,6 +3,8 @@ const BCP47: Record<string, string> = {
   en: "en-GB",
   ar: "ar",
   ru: "ru",
+  es: "es-ES",
+  fr: "fr-FR",
 };
 
 export function formatDate(iso: string | null | undefined, locale: string): string {

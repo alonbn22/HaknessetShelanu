@@ -53,7 +53,7 @@ export async function translateQueryToHebrew(
   // Rate-limited: skip translation (don't cache, so it can retry once refilled).
   if (!takeToken()) return q;
 
-  const sl = locale === "ru" ? "ru" : locale === "ar" ? "ar" : "en";
+  const sl = locale === "ru" ? "ru" : locale === "ar" ? "ar" : locale === "es" ? "es" : locale === "fr" ? "fr" : "en";
   const he = await gtxTranslate(q, { sl, tl: "iw", timeoutMs: 5000 });
   // Cache only successes — a transient failure shouldn't be pinned as "no
   // translation" for the life of the process.

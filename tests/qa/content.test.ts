@@ -28,3 +28,20 @@ test("glossary includes the Norwegian Law term", () => {
   );
   assert.ok(found, "Norwegian Law term should exist in the glossary");
 });
+
+// Editorial text that falls back to another language: `dir` is set only when
+// the fallback's direction differs from the page's. English on a Russian,
+// Spanish or French page is a language change, not a direction change — a
+// `dir` there used to trigger text-end and right-align whole paragraphs.
+test("partyTextAttrs marks the fallback language, and direction only when it differs", async () => {
+  const { partyTextAttrs, partyTextClass } = await import("../../src/lib/content");
+  const heEn = { he: "שלום", en: "Hello" };
+  assert.deepEqual(partyTextAttrs(heEn, "he"), {});
+  assert.deepEqual(partyTextAttrs(heEn, "en"), {});
+  assert.deepEqual(partyTextAttrs(heEn, "es"), { lang: "en" });
+  assert.deepEqual(partyTextAttrs(heEn, "ru"), { lang: "en" });
+  assert.deepEqual(partyTextAttrs(heEn, "ar"), { dir: "ltr", lang: "en" });
+  assert.deepEqual(partyTextAttrs({ he: "שלום" }, "fr"), { dir: "rtl", lang: "he" });
+  assert.equal(partyTextClass(heEn, "es"), "");
+  assert.equal(partyTextClass(heEn, "ar"), "text-end");
+});

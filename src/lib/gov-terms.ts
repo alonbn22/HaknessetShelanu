@@ -4,8 +4,79 @@
 
 import { isHebrew } from "./text";
 
-type Loc = "he" | "en" | "ar" | "ru";
+type Loc = "he" | "en" | "ar" | "ru" | "es" | "fr";
 type T = { en: string; ar: string; ru: string };
+
+// Spanish and French for every term below, keyed by the English wording so
+// the three curated maps stay as they are. A missing key falls back to English.
+const LATIN: Record<string, { es: string; fr: string }> = {
+  "Prime Minister": { es: "Primer ministro", fr: "Premier ministre" },
+  "Deputy Prime Minister": { es: "Viceprimer ministro", fr: "Vice-Premier ministre" },
+  Minister: { es: "Ministro/a", fr: "Ministre" },
+  "Deputy Minister": { es: "Viceministro/a", fr: "Vice-ministre" },
+  "Member of Knesset": { es: "Miembro de la Knéset", fr: "Député(e) à la Knesset" },
+  "Faction member": { es: "Miembro de la facción", fr: "Membre de la faction" },
+  "Committee member": { es: "Miembro de la comisión", fr: "Membre de la commission" },
+  "Committee chair": { es: "Presidente/a de la comisión", fr: "Président(e) de la commission" },
+  "Faction chair": { es: "Presidente/a de la facción", fr: "Président(e) de la faction" },
+  "Speaker of the Knesset": { es: "Presidente/a de la Knéset", fr: "Président(e) de la Knesset" },
+  "Coalition chairperson": { es: "Presidente/a de la coalición", fr: "Président(e) de la coalition" },
+  "Deputy Speaker of the Knesset": { es: "Vicepresidente/a de la Knéset", fr: "Vice-président(e) de la Knesset" },
+  "Leader of the Opposition": { es: "Líder de la oposición", fr: "Chef de l’opposition" },
+  "Alternate committee member": { es: "Miembro suplente de la comisión", fr: "Membre suppléant de la commission" },
+  "Prime Minister's Office": { es: "Oficina del Primer Ministro", fr: "Cabinet du Premier ministre" },
+  "Ministry of Finance": { es: "Ministerio de Finanzas", fr: "Ministère des Finances" },
+  "Ministry of Defense": { es: "Ministerio de Defensa", fr: "Ministère de la Défense" },
+  "Ministry of Foreign Affairs": { es: "Ministerio de Asuntos Exteriores", fr: "Ministère des Affaires étrangères" },
+  "Ministry of Education": { es: "Ministerio de Educación", fr: "Ministère de l’Éducation" },
+  "Ministry of Justice": { es: "Ministerio de Justicia", fr: "Ministère de la Justice" },
+  "Ministry of Health": { es: "Ministerio de Salud", fr: "Ministère de la Santé" },
+  "Ministry of National Security": { es: "Ministerio de Seguridad Nacional", fr: "Ministère de la Sécurité nationale" },
+  "Ministry of Environmental Protection": { es: "Ministerio de Protección Ambiental", fr: "Ministère de la Protection de l’environnement" },
+  "Ministry of Social Equality and the Advancement of Women": { es: "Ministerio de Igualdad Social y Promoción de la Mujer", fr: "Ministère de l’Égalité sociale et de la Promotion des femmes" },
+  "Ministry of Religious Services": { es: "Ministerio de Servicios Religiosos", fr: "Ministère des Services religieux" },
+  "Ministry of Regional Cooperation": { es: "Ministerio de Cooperación Regional", fr: "Ministère de la Coopération régionale" },
+  "Ministry of Energy and Infrastructure": { es: "Ministerio de Energía e Infraestructuras", fr: "Ministère de l’Énergie et des Infrastructures" },
+  "Ministry of Construction and Housing": { es: "Ministerio de Construcción y Vivienda", fr: "Ministère de la Construction et du Logement" },
+  "Ministry of Settlements and National Missions": { es: "Ministerio de Asentamientos y Misiones Nacionales", fr: "Ministère des Implantations et des Missions nationales" },
+  "Ministry of Innovation, Science and Technology": { es: "Ministerio de Innovación, Ciencia y Tecnología", fr: "Ministère de l’Innovation, de la Science et de la Technologie" },
+  "Ministry of Agriculture and Food Security": { es: "Ministerio de Agricultura y Seguridad Alimentaria", fr: "Ministère de l’Agriculture et de la Sécurité alimentaire" },
+  "Ministry of Economy and Industry": { es: "Ministerio de Economía e Industria", fr: "Ministère de l’Économie et de l’Industrie" },
+  "Ministry of Heritage": { es: "Ministerio de Patrimonio", fr: "Ministère du Patrimoine" },
+  "Ministry of the Negev, the Galilee and National Resilience": { es: "Ministerio del Néguev, Galilea y Resiliencia Nacional", fr: "Ministère du Néguev, de la Galilée et de la Résilience nationale" },
+  "Ministry of Labor": { es: "Ministerio de Trabajo", fr: "Ministère du Travail" },
+  "Ministry of Aliyah and Integration": { es: "Ministerio de Aliá e Integración", fr: "Ministère de l’Alyah et de l’Intégration" },
+  "Ministry for Liaison between the Government and the Knesset": { es: "Ministerio de Enlace entre el Gobierno y la Knéset", fr: "Ministère de la Liaison entre le gouvernement et la Knesset" },
+  "Ministry of Welfare and Social Affairs": { es: "Ministerio de Bienestar y Asuntos Sociales", fr: "Ministère des Affaires sociales" },
+  "Ministry of Transport and Road Safety": { es: "Ministerio de Transporte y Seguridad Vial", fr: "Ministère des Transports et de la Sécurité routière" },
+  "Ministry of Tourism": { es: "Ministerio de Turismo", fr: "Ministère du Tourisme" },
+  "Ministry of Diaspora Affairs and Combating Antisemitism": { es: "Ministerio de Asuntos de la Diáspora y Lucha contra el Antisemitismo", fr: "Ministère des Affaires de la diaspora et de la Lutte contre l’antisémitisme" },
+  "Ministry of Communications": { es: "Ministerio de Comunicaciones", fr: "Ministère des Communications" },
+  "Ministry of Culture and Sport": { es: "Ministerio de Cultura y Deporte", fr: "Ministère de la Culture et des Sports" },
+  "Ministry of Jerusalem and Jewish Tradition": { es: "Ministerio de Jerusalén y Tradición Judía", fr: "Ministère de Jérusalem et de la Tradition juive" },
+  "House Committee": { es: "Comisión de la Cámara", fr: "Commission de la Knesset" },
+  "Finance Committee": { es: "Comisión de Finanzas", fr: "Commission des Finances" },
+  "Foreign Affairs and Defense Committee": { es: "Comisión de Asuntos Exteriores y Defensa", fr: "Commission des Affaires étrangères et de la Défense" },
+  "Constitution, Law and Justice Committee": { es: "Comisión de Constitución, Ley y Justicia", fr: "Commission de la Constitution, du Droit et de la Justice" },
+  "Economic Affairs Committee": { es: "Comisión de Economía", fr: "Commission de l’Économie" },
+  "Education, Culture and Sport Committee": { es: "Comisión de Educación, Cultura y Deporte", fr: "Commission de l’Éducation, de la Culture et des Sports" },
+  "Health Committee": { es: "Comisión de Salud", fr: "Commission de la Santé" },
+  "Science and Technology Committee": { es: "Comisión de Ciencia y Tecnología", fr: "Commission de la Science et de la Technologie" },
+  "Ethics Committee": { es: "Comisión de Ética", fr: "Commission d’éthique" },
+  "Interior and Environment Committee": { es: "Comisión de Interior y Medio Ambiente", fr: "Commission de l’Intérieur et de l’Environnement" },
+  "National Security Committee": { es: "Comisión de Seguridad Nacional", fr: "Commission de la Sécurité nationale" },
+  "Committee on the Status of Women and Gender Equality": { es: "Comisión para el Estatus de la Mujer y la Igualdad de Género", fr: "Commission de la Condition de la femme et de l’Égalité des genres" },
+  "State Control Committee": { es: "Comisión de Control del Estado", fr: "Commission du Contrôle de l’État" },
+  "Arrangements Committee": { es: "Comisión Organizadora", fr: "Commission d’organisation" },
+  "Special Committee for Public Petitions": { es: "Comisión Especial de Peticiones Públicas", fr: "Commission spéciale des pétitions publiques" },
+  "Special Committee for the Rights of the Child": { es: "Comisión Especial de Derechos del Niño", fr: "Commission spéciale des droits de l’enfant" },
+  "Special Committee on Drug and Alcohol Abuse": { es: "Comisión Especial contra el Abuso de Drogas y Alcohol", fr: "Commission spéciale de lutte contre les drogues et l’alcool" },
+  "Special Committee for Foreign Workers": { es: "Comisión Especial de Trabajadores Extranjeros", fr: "Commission spéciale des travailleurs étrangers" },
+  Bill: { es: "Proyecto de ley", fr: "Projet de loi" },
+  "Agenda motion": { es: "Moción de orden del día", fr: "Motion à l’ordre du jour" },
+  "Statutory action": { es: "Acción según la ley", fr: "Acte prévu par la loi" },
+  "Plenum item": { es: "Punto del pleno", fr: "Point de la plénière" },
+};
 
 export type GovTerm = { text: string; rtl: boolean };
 
@@ -298,7 +369,11 @@ function localize(map: Record<string, T>, he: string | null | undefined, locale:
   if (!key) return { text: "", rtl: false };
   if (locale === "he") return { text: he as string, rtl: true };
   const t = map[key];
-  const text = t ? t[locale as Exclude<Loc, "he">] ?? (he as string) : (he as string);
+  if (!t) return { text: he as string, rtl: isHebrew(he as string) };
+  const text =
+    locale === "es" || locale === "fr"
+      ? (LATIN[t.en]?.[locale] ?? t.en)
+      : (t[locale as Exclude<Loc, "he" | "es" | "fr">] ?? t.en);
   return { text, rtl: isHebrew(text) };
 }
 

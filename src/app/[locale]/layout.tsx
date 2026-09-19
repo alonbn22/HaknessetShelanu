@@ -75,7 +75,21 @@ export async function generateMetadata({
     metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
     title: { default: t("name"), template: `%s · ${t("name")}` },
     description: t("tagline"),
+    alternates: await hreflangAlternates(),
   };
+}
+
+// hreflang for every locale of the page being rendered (the proxy passes the
+// path in x-pathname). Hebrew lives at the bare path, the rest under /<locale>;
+// x-default is Hebrew, the source language.
+async function hreflangAlternates(): Promise<Metadata["alternates"]> {
+  const pathname = (await headers()).get("x-pathname");
+  if (!pathname) return undefined;
+  const bare = pathname.replace(new RegExp(`^/(${routing.locales.join("|")})(?=/|$)`), "") || "/";
+  const languages: Record<string, string> = {};
+  for (const l of routing.locales) languages[l] = l === routing.defaultLocale ? bare : `/${l}${bare === "/" ? "" : bare}`;
+  languages["x-default"] = bare;
+  return { languages };
 }
 
 export default async function LocaleLayout({

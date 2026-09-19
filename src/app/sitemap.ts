@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { navItems } from "@/components/nav-items";
+import { locales } from "@/i18n/routing";
 import { getSitemapEntityIds } from "@/lib/queries";
 
 // Set NEXT_PUBLIC_SITE_URL to the production origin (no trailing slash) once a
@@ -8,12 +9,19 @@ import { getSitemapEntityIds } from "@/lib/queries";
 const BASE = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
 // he is served unprefixed (localePrefix "as-needed"); the rest are prefixed.
-const LOCALES = ["he", "en", "ar", "ru"] as const;
+const LOCALES = locales;
 const localeUrl = (locale: string, path: string) =>
   `${BASE}${locale === "he" ? "" : `/${locale}`}${path}`;
 
-// ~36k URLs (9k pages × 4 locales) — one file, under the 50k sitemap limit.
-export default function sitemap(): MetadataRoute.Sitemap {
+// ~9k pages × 6 locales is above the 50k-URL limit of one sitemap file, so
+// each locale gets its own file: /sitemap/0.xml … /sitemap/5.xml, in the order
+// of routing.locales. robots.ts lists all of them.
+export async function generateSitemaps() {
+  return LOCALES.map((_, id) => ({ id }));
+}
+
+export default async function sitemap(props: { id: Promise<string> }): Promise<MetadataRoute.Sitemap> {
+  const locale = LOCALES[Number(await props.id)] ?? LOCALES[0];
   const { members, parties, committees, bills, votes } = getSitemapEntityIds();
 
   const paths: { path: string; priority: number }[] = [
@@ -29,11 +37,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...votes.map((id) => ({ path: `/votes/${id}`, priority: 0.4 })),
   ];
 
-  return LOCALES.flatMap((locale) =>
-    paths.map(({ path, priority }) => ({
-      url: localeUrl(locale, path),
-      changeFrequency: "daily" as const,
-      priority,
-    })),
-  );
+  return paths.map(({ path, priority }) => ({
+    url: localeUrl(locale, path),
+    changeFrequency: "daily" as const,
+    priority,
+  }));
 }

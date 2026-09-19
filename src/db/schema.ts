@@ -413,6 +413,8 @@ export const translations = sqliteTable("translations", {
   en: text("en"),
   ar: text("ar"),
   ru: text("ru"),
+  es: text("es"),
+  fr: text("fr"),
 });
 
 // Incremental-sync bookkeeping: last seen LastUpdatedDate per source table.

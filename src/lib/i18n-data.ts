@@ -11,8 +11,8 @@ import { gtxTranslate } from "./gtx";
 
 const RTL = /[\u0590-\u06ff]/; // Hebrew or Arabic → render rtl
 const T = schema.translations;
-const COL = { en: T.en, ar: T.ar, ru: T.ru } as const;
-const FIELD = { en: "en", ar: "ar", ru: "ru" } as const;
+const COL = { en: T.en, ar: T.ar, ru: T.ru, es: T.es, fr: T.fr } as const;
+const FIELD = { en: "en", ar: "ar", ru: "ru", es: "es", fr: "fr" } as const;
 
 export type Localized = { text: string; translated: boolean; rtl: boolean };
 const hebrew = (he: string): Localized => ({ text: he, translated: false, rtl: true });
@@ -83,6 +83,25 @@ export function committeeLabel(
 
 // ---- on-demand translation (called from after(), post-response) ----
 
+// The cache table must match src/db/schema.ts exactly (house rule). A DB that
+// predates a column (es/fr were added on 19 Sep 2026) heals itself here: the
+// CREATE covers a fresh file, the ALTERs an old one. Runs once per process.
+let ensured = false;
+export function ensureTranslationsTable(): void {
+  if (ensured) return;
+  const db = getDb();
+  db.run(
+    sql`CREATE TABLE IF NOT EXISTS translations (source_he text PRIMARY KEY, en text, ar text, ru text, es text, fr text)`,
+  );
+  const have = new Set(
+    (db.all(sql`PRAGMA table_info(translations)`) as { name: string }[]).map((c) => c.name),
+  );
+  for (const col of Object.keys(FIELD)) {
+    if (!have.has(col)) db.run(sql.raw(`ALTER TABLE translations ADD COLUMN ${col} text`));
+  }
+  ensured = true;
+}
+
 const MAX_PER_REQUEST = 100;
 const CONCURRENCY = 8;
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
@@ -104,9 +123,7 @@ export async function queueDataTranslations(
 
   const db = getDb();
   try {
-    db.run(
-      sql`CREATE TABLE IF NOT EXISTS translations (source_he text PRIMARY KEY, en text, ar text, ru text)`,
-    );
+    ensureTranslationsTable();
     const have = new Set(
       db
         .select({ he: T.sourceHe })

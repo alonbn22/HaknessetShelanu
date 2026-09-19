@@ -2,12 +2,14 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
+import { locales } from "../../src/i18n/routing";
 
 // Guards i18n completeness so adding a page or a language can't silently drift:
 // every locale must define exactly the same key set, and no value may be blank.
 const MESSAGES_DIR = path.join(process.cwd(), "messages");
 const SOURCE = "he"; // default locale = source of truth
-const LOCALES = ["he", "en", "ar", "ru"];
+// Every locale the router serves must have a complete catalogue.
+const LOCALES = [...locales];
 
 type Obj = Record<string, unknown>;
 function flatten(obj: Obj, prefix = ""): string[] {

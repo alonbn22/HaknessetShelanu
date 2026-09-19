@@ -24,7 +24,10 @@ const localizedText = z.object({
   en: z.string().optional(),
   ar: z.string().optional(),
   ru: z.string().optional(),
+  es: z.string().optional(),
+  fr: z.string().optional(),
 });
+export type LocalizedText = z.infer<typeof localizedText>;
 
 const sourceRef = z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() });
 
@@ -101,12 +104,21 @@ const factionMetaSchema = z.object({
       en: z.string(),
       ar: z.string(),
       ru: z.string(),
+      es: z.string().optional(), // Latin-script locales fall back to en
+      fr: z.string().optional(),
       color: z.string(),
     }),
   ),
 });
 
 export type FactionMeta = z.infer<typeof factionMetaSchema>["factions"][number];
+
+// A faction's curated short name in a locale: the locale's own, else English
+// (never Hebrew for a non-Hebrew page — es/fr carry no name of their own yet).
+export function localizedMeta(meta: FactionMeta, locale: string): string {
+  if (locale === "he") return meta.he;
+  return (meta[locale as keyof FactionMeta] as string | undefined) ?? meta.en ?? meta.he;
+}
 
 let _factionMeta: Map<number, FactionMeta> | null = null;
 
@@ -137,6 +149,8 @@ const localizedList = z.object({
   en: z.array(z.string()).optional(),
   ar: z.array(z.string()).optional(),
   ru: z.array(z.string()).optional(),
+  es: z.array(z.string()).optional(),
+  fr: z.array(z.string()).optional(),
 });
 
 const partyProfileSchema = z.object({
@@ -204,7 +218,7 @@ export function getPartyProfile(id: number): PartyProfile | undefined {
 
 // Text fallback for party content: requested locale -> English -> Hebrew.
 export function partyText(
-  text: { he: string; en?: string; ar?: string; ru?: string } | undefined,
+  text: LocalizedText | undefined,
   locale: string,
 ): string {
   if (!text) return "";
@@ -218,13 +232,18 @@ export function partyText(
 // inside an RTL layout needs dir="ltr" or its punctuation lands at the wrong
 // end; Hebrew inside an LTR layout needs dir="rtl".
 export function partyTextAttrs(
-  text: { he: string; en?: string; ar?: string; ru?: string } | undefined,
+  text: LocalizedText | undefined,
   locale: string,
 ): { dir?: "ltr" | "rtl"; lang?: string } {
   if (!text) return {};
   const resolved = (text[locale as keyof typeof text] as string | undefined) != null ? locale : text.en != null ? "en" : "he";
   if (resolved === locale) return {};
-  return resolved === "he" ? { dir: "rtl", lang: "he" } : { dir: "ltr", lang: resolved };
+  // `dir` only when the fallback's direction differs from the page's: English
+  // on a Russian, Spanish or French page is a language change, not a
+  // direction change, and must not be re-aligned.
+  const rtl = (l: string) => l === "he" || l === "ar";
+  const lang = resolved;
+  return rtl(resolved) === rtl(locale) ? { lang } : rtl(resolved) ? { dir: "rtl", lang } : { dir: "ltr", lang };
 }
 
 // Class to pair with partyTextAttrs: a run whose direction differs from the
@@ -232,14 +251,14 @@ export function partyTextAttrs(
 // the right side of an LTR run (an RTL page's start) and the left side of an
 // RTL run (an LTR page's start), so one class serves both cases.
 export function partyTextClass(
-  text: { he: string; en?: string; ar?: string; ru?: string } | undefined,
+  text: LocalizedText | undefined,
   locale: string,
 ): string {
   return partyTextAttrs(text, locale).dir ? "text-end" : "";
 }
 
 export function partyList(
-  list: { he: string[]; en?: string[]; ar?: string[]; ru?: string[] } | undefined,
+  list: { he: string[]; en?: string[]; ar?: string[]; ru?: string[]; es?: string[]; fr?: string[] } | undefined,
   locale: string,
 ): string[] {
   if (!list) return [];
@@ -318,8 +337,8 @@ export function localizeMemberRecord(
   cache: Map<string, { text: string }>,
 ): MemberRecord | null {
   if (!record || locale === "he") return record;
-  const resolve = (txt: { he: string; en?: string; ar?: string; ru?: string }) =>
-    txt[locale as "en" | "ar" | "ru"] ?? cache.get(txt.he.trim())?.text ?? txt.he;
+  const resolve = (txt: LocalizedText) =>
+    txt[locale as keyof LocalizedText] ?? cache.get(txt.he.trim())?.text ?? txt.he;
   return {
     ...record,
     claims: record.claims.map((c) => ({
@@ -623,7 +642,7 @@ export function listName(list: ElectionParty | undefined, locale: string): strin
   if (own) return own;
   if (list.factionId != null) {
     const meta = getFactionMeta().get(list.factionId);
-    const curated = meta?.[locale as "he" | "en" | "ar" | "ru"];
+    const curated = meta?.[locale as keyof FactionMeta] as string | undefined;
     if (curated) return curated;
   }
   return partyText(list.name, locale);
@@ -634,7 +653,7 @@ export function listName(list: ElectionParty | undefined, locale: string): strin
 export function listNameAttrs(list: ElectionParty | undefined, locale: string): { dir?: "ltr" | "rtl"; lang?: string } {
   if (!list) return {};
   if (list.name[locale as keyof typeof list.name]) return {};
-  if (list.factionId != null && getFactionMeta().get(list.factionId)?.[locale as "he" | "en" | "ar" | "ru"]) return {};
+  if (list.factionId != null && getFactionMeta().get(list.factionId)?.[locale as keyof FactionMeta]) return {};
   return partyTextAttrs(list.name, locale);
 }
 

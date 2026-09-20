@@ -151,7 +151,27 @@ socio-economic indices by municipality (data.gov.il) for context.
   19 Sep 2026 from the faction verification pass), and the elections/quiz
   figures.
 
+- **es/fr data text fills lazily**: the gtx endpoint was rate-limited on
+  19–20 Sep, so vote titles and the per-poll "below threshold" notes
+  (`belowThresholdNote`, the outlet's own Hebrew wording) still render as
+  Hebrew with `dir="rtl" lang="he"` on es/fr pages until the cache fills —
+  confirm before launch (same mechanism as ar/ru).
+
 ## Done (recent)
+
+- **Review pass (20 Sep 2026)**: three fresh-context reviews of the
+  19–20 Sep material acted on — fairness/accuracy (36 items: the coalition
+  line corrected to 68 → 61 → 60 on 14/16 Jul 2025, Likud's nine reserved
+  slots, one-card-only claims and rival characterisations removed,
+  petitions on the petitioners' cards too), Spanish (70 items) and French
+  (83 items, incl. a non-breaking-space pass and es/fr on all 110 compass
+  quotes). Reports in the session scratchpad `review/`.
+- **"60 against 60 — you need 61" (20 Sep 2026)**: the count is a minority
+  government since 16 Jul 2025; the home hemicycle and the parties timeline
+  now say so in two sentences with Basic Law: The Government (ss. 3, 13(d),
+  28(b)) as the source (`coalition.yaml` `majority`, `MinorityNote`).
+- **2026 budget**: marked approved (Knesset, 30 Mar 2026, 62–55; ToI) in
+  `content/budget-outlook.yaml`.
 
 - **Spanish and French (19 Sep 2026)**: six locales. UI catalogues complete
   (parity-tested), faction and official-term names in es/fr, lazy data

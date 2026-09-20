@@ -164,6 +164,15 @@ socio-economic indices by municipality (data.gov.il) for context.
 
 ## Done (recent)
 
+- **Compass v2 (20 Sep 2026, `201d369`)**: the "Netanyahu-led government"
+  statement is out; 16 statements (8/8, alternating) about what the lists
+  want — seven new ones sourced by research agents (economy ×2, the
+  grandchild clause, same-sex partnerships, Gaza emigration, climate law,
+  Kan), each with ≥ 8 of 15 lists; plain-words explainers under every
+  statement; results with a per-list agree/partly/differ/no-stance line and
+  a closing "Why this result?" box. Research files: session scratchpad
+  `review/compass/*.yaml`. Housing/price intervention left out (5 of 15).
+
 - **Review pass (20 Sep 2026)**: three fresh-context reviews of the
   19–20 Sep material acted on — fairness/accuracy (36 items: the coalition
   line corrected to 68 → 61 → 60 on 14/16 Jul 2025, Likud's nine reserved

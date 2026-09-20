@@ -14,7 +14,7 @@
 # Scope: polls published from the day the candidate lists closed (8 September
 # 2026) onward — earlier polls scored lists that no longer exist. Review weekly
 # until the vote and bump lastReviewed.
-lastReviewed: "2026-09-19"
+lastReviewed: "2026-09-20"
 cutoff: "2026-09-08"
 # The legal electoral threshold: 3.25% of valid votes (Knesset Elections Law,
 # amendment of 2014) — ≈4 seats of 120.

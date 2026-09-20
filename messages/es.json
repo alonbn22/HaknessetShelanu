@@ -436,7 +436,10 @@
     "colSubmittedBy": "Presentada por",
     "lettersRequestedShort": "solicitadas",
     "lettersBadgeTitle": "Letras solicitadas — definitivas tras la aprobación de la Comisión Electoral el {date}",
-    "cecSourceLine": "Fuente: las páginas de las listas en el sitio de la Comisión Electoral Central (gov.il)."
+    "cecSourceLine": "Fuente: las páginas de las listas en el sitio de la Comisión Electoral Central (gov.il).",
+    "colCandidates": "Candidatos",
+    "rosterCount": "{n, plural, one {# candidato} other {# candidatos}}",
+    "rosterAll": "Los {n} candidatos en la página de la lista en la Comisión Electoral ↗"
   },
   "electionsHistory": {
     "title": "Historial de elecciones a la Knéset",
@@ -501,7 +504,7 @@
   },
   "quiz": {
     "title": "Brújula electoral — ¿quién está más cerca de sus opiniones?",
-    "subtitle": "Diez afirmaciones. La postura de cada lista está documentada — una votación en la Knéset, un programa o una declaración — o se muestra como «sin postura documentada».",
+    "subtitle": "Afirmaciones sobre lo que quieren las listas: seguridad, religión y Estado, economía, sociedad e instituciones. Cada lista tiene una postura documentada — una votación en la Knéset, un programa o una declaración — o «sin postura declarada».",
     "intro": "Indique cuánto está de acuerdo con cada afirmación (puede omitir preguntas). Tras al menos {min} respuestas verá qué listas están más cerca de sus opiniones, y por qué. Las posturas de las listas provienen de una fuente documentada para cada casilla — una votación nominal en la Knéset, el programa publicado por la lista o las palabras de quien la encabeza tal como las recogió un medio importante — nunca de la interpretación del sitio. Una lista sin postura documentada sobre una afirmación simplemente no se compara en ella. Nada se guarda ni se envía.",
     "positionsLink": "Ver cada postura con su fuente",
     "disclaimer": "La coincidencia se calcula solo por la cercanía de las posturas y no es una recomendación de voto.",
@@ -535,8 +538,19 @@
     "listStance": "La lista",
     "noStance": "sin postura documentada — no comparada",
     "voteRule": "Cómo una votación en la Knéset se convierte en un número: cuando casi toda la facción votó en el mismo sentido (nueve de cada diez o más) — «totalmente»; cuando la facción se dividió — «de acuerdo» o «en desacuerdo»; si votó menos de la mitad de la facción, la postura se muestra más débil y se indica. Una votación de una facción predecesora (por ejemplo, Yesh Atid como predecesora de Juntos) se marca explícitamente.",
-    "topicsNote": "Qué falta aquí: se omitieron afirmaciones sobre economía, bienestar y derechos LGBTQ porque para la mayoría de las listas no encontramos una postura documentada. Por eso la brújula trata sobre todo de seguridad, religión y Estado, instituciones y quién forma el Gobierno.",
-    "noStanceAtAll": "sin postura documentada en ninguna de las afirmaciones que respondió — no comparada"
+    "topicsNote": "Qué hay aquí y qué no: 16 afirmaciones — seguridad y política exterior, economía, religión y Estado, sociedad e instituciones. Una afirmación entra en la brújula solo si la mayoría de las listas (al menos 8 de 15) tiene una postura documentada sobre ella. Una afirmación sobre la intervención estatal en vivienda y precios se dejó fuera por esa razón — la mayoría de los programas hablan de competencia y no dicen nada sobre supervisión o construcción pública, y eso no es una postura.",
+    "noStanceAtAll": "sin postura documentada en ninguna de las afirmaciones que respondió — no comparada",
+    "whatIsThis": "¿Qué significa esto?",
+    "agreeOn": "Coinciden en",
+    "partlyOn": "Parcialmente cerca en",
+    "differOn": "Difieren en",
+    "noStanceOn": "La lista no tiene postura documentada sobre",
+    "explainTitle": "¿Por qué este resultado?",
+    "explainScore": "Para cada lista medimos cuánto se acercan sus respuestas a las posturas documentadas de la lista, afirmación por afirmación, y calculamos el promedio. 100 % = exactamente la misma postura en cada afirmación; 0 % = el extremo opuesto en cada una.",
+    "explainImportant": "Una afirmación que marcó como especialmente importante cuenta el doble.",
+    "explainNoStance": "Una afirmación sobre la que una lista no tiene postura documentada no se le cuenta — ni a favor ni en contra. Por eso junto a cada lista se indica en cuántas afirmaciones se comparó.",
+    "explainSources": "Cada postura de una lista enlaza a su fuente — una votación en la Knéset, un programa o una cita — bajo «¿Por qué?».",
+    "explainNotAdvice": "Es solo cercanía de posturas, no una recomendación de voto: la brújula no mide liderazgo, credibilidad ni el pasado."
   },
   "budget": {
     "title": "Presupuesto del Estado",

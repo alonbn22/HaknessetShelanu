@@ -25,9 +25,14 @@ test("the compass is dated and has a balanced, alternating set of statements", (
   assert.equal(new Set(ids).size, ids.length, "duplicate statement id");
 });
 
-test("every statement has text in all four languages", () => {
+test("every statement has its text, short label and plain-words explainer in all six languages", () => {
   for (const q of qs) {
-    assert.ok(q.text.he && q.text.en && q.text.ar && q.text.ru, `${q.id}: missing a language`);
+    for (const field of ["text", "short", "explainer"] as const) {
+      const v = q[field];
+      assert.ok(v.he && v.en && v.ar && v.ru && v.es && v.fr, `${q.id}: ${field} is missing a language`);
+    }
+    // The explainer is background, not a verdict: it names both sides.
+    assert.ok(q.explainer.he.length >= 80, `${q.id}: explainer too short to explain anything`);
   }
 });
 

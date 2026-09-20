@@ -22,7 +22,7 @@ export type QuizStanceView = {
   publisherRtl: boolean;
   quote: string;
 };
-export type QuizQ = { id: string; text: string; stances: Record<string, QuizStanceView> };
+export type QuizQ = { id: string; text: string; short: string; explainer: string; stances: Record<string, QuizStanceView> };
 export type QuizList = { slug: string; name: string; color: string; href?: string };
 
 // The reader's scale is the lists' scale: -2..+2. "skip" is a real choice that
@@ -102,6 +102,12 @@ export function PartyQuiz({ questions, lists }: { questions: QuizQ[]; lists: Qui
                 <span className="me-2 text-muted tabular-nums">{i + 1}.</span>
                 {q.text}
               </p>
+              {/* What the statement is about, in plain words — folded so the
+                  question stays a question, one click from its background. */}
+              <details className="mt-2 text-sm">
+                <summary className="cursor-pointer text-accent-ink">{t("whatIsThis")}</summary>
+                <p className="mt-1 max-w-prose leading-relaxed text-muted">{q.explainer}</p>
+              </details>
               <ToggleGroup label={q.text} className="mt-3">
                 {OPTIONS.map((o) => (
                   <ToggleButton key={o.key} selected={a === o.value} onClick={() => setAnswers((p) => ({ ...p, [q.id]: o.value }))}>
@@ -176,6 +182,26 @@ export function PartyQuiz({ questions, lists }: { questions: QuizQ[]; lists: Qui
                       {thin && <> · {t("thinCoverage")}</>}
                     </span>
                   </div>
+                  {/* The answer to "why?" in one line, no click needed: which
+                      statements you and the list agree on, part-agree on,
+                      differ on, and where it has no documented stance. */}
+                  <p className="border-t border-line px-3 py-2 text-sm leading-relaxed">
+                    {(
+                      [
+                        ["agreeOn", r.rows.filter((row) => row.agreement != null && row.agreement >= 0.75)],
+                        ["partlyOn", r.rows.filter((row) => row.agreement != null && row.agreement > 0.25 && row.agreement < 0.75)],
+                        ["differOn", r.rows.filter((row) => row.agreement != null && row.agreement <= 0.25)],
+                        ["noStanceOn", r.rows.filter((row) => row.agreement == null)],
+                      ] as const
+                    )
+                      .filter(([, rows]) => rows.length > 0)
+                      .map(([key, rows], j) => (
+                        <span key={key}>
+                          {j > 0 && " · "}
+                          <span className="font-medium">{t(key)}:</span> {rows.map((row) => row.q.short).join(", ")}
+                        </span>
+                      ))}
+                  </p>
                   <details className="border-t border-line px-3 py-2 text-sm">
                     <summary className="cursor-pointer font-medium text-accent-ink">{t("why")}</summary>
                     <ul className="mt-2 space-y-2">
@@ -234,6 +260,18 @@ export function PartyQuiz({ questions, lists }: { questions: QuizQ[]; lists: Qui
               );
             })}
           </ol>
+          {/* Why the results came out this way — the method in plain words,
+              at the end, where the reader asks. */}
+          <div className="rounded-card border border-line bg-surface-sunken p-4 text-sm leading-relaxed">
+            <h3 className="font-semibold">{t("explainTitle")}</h3>
+            <ul className="mt-2 list-disc space-y-1 ps-5">
+              <li>{t("explainScore")}</li>
+              <li>{t("explainImportant")}</li>
+              <li>{t("explainNoStance")}</li>
+              <li>{t("explainSources")}</li>
+              <li>{t("explainNotAdvice")}</li>
+            </ul>
+          </div>
         </section>
       )}
     </div>

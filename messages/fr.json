@@ -436,7 +436,10 @@
     "colSubmittedBy": "Déposée par",
     "lettersRequestedShort": "demandées",
     "lettersBadgeTitle": "Lettres demandées — définitives après l’approbation de la Commission électorale le {date}",
-    "cecSourceLine": "Source : les pages des listes sur le site de la Commission électorale centrale (gov.il)."
+    "cecSourceLine": "Source : les pages des listes sur le site de la Commission électorale centrale (gov.il).",
+    "colCandidates": "Candidats",
+    "rosterCount": "{n, plural, one {# candidat} other {# candidats}}",
+    "rosterAll": "Les {n} candidats sur la page de la liste à la Commission électorale ↗"
   },
   "electionsHistory": {
     "title": "Historique des élections à la Knesset",
@@ -501,7 +504,7 @@
   },
   "quiz": {
     "title": "Boussole électorale — qui est le plus proche de vos opinions ?",
-    "subtitle": "Dix affirmations. La position de chaque liste est documentée — un vote à la Knesset, un programme ou une déclaration — ou affichée comme « aucune position documentée ».",
+    "subtitle": "Des affirmations sur ce que veulent les listes — sécurité, religion et État, économie, société et institutions. Chaque liste a une position documentée — un vote à la Knesset, un programme ou une déclaration — ou « pas de position déclarée ».",
     "intro": "Indiquez à quel point vous êtes d’accord avec chaque affirmation (vous pouvez passer). Après au moins {min} réponses, vous verrez quelles listes sont les plus proches de vos opinions, et pourquoi. Les positions des listes proviennent d’une source documentée pour chaque case — un vote nominal à la Knesset, le programme publié par la liste ou les propos de sa tête de liste rapportés par un grand média — jamais de l’interprétation du site. Une liste sans position documentée sur une affirmation n’est simplement pas comparée sur celle-ci. Rien n’est enregistré ni envoyé.",
     "positionsLink": "Voir chaque position avec sa source",
     "disclaimer": "La correspondance est calculée uniquement d’après la proximité des positions et ne constitue pas une recommandation de vote.",
@@ -535,8 +538,19 @@
     "listStance": "La liste",
     "noStance": "aucune position documentée — non comparée",
     "voteRule": "Comment un vote à la Knesset devient un chiffre : quand presque toute la faction a voté dans le même sens (neuf sur dix ou plus) — « tout à fait » ; quand la faction s’est divisée — « d’accord » ou « pas d’accord » ; si moins de la moitié de la faction a voté, la position est affichée plus faible et cela est indiqué. Un vote d’une faction précédente (par exemple Yesh Atid pour Ensemble) est signalé explicitement.",
-    "topicsNote": "Ce qui manque ici : les affirmations sur l’économie, la protection sociale et les droits LGBTQ ont été écartées faute de position documentée pour la plupart des listes. La boussole porte donc surtout sur la sécurité, la religion et l’État, les institutions et la formation du gouvernement.",
-    "noStanceAtAll": "aucune position documentée sur aucune des affirmations auxquelles vous avez répondu — non comparée"
+    "topicsNote": "Ce qu’il y a ici et ce qu’il n’y a pas : 16 affirmations — sécurité et politique étrangère, économie, religion et État, société et institutions. Une affirmation n’entre dans la boussole que si la plupart des listes (au moins 8 sur 15) ont une position documentée à son sujet. Une affirmation sur l’intervention de l’État dans le logement et les prix a été écartée pour cette raison — la plupart des programmes parlent de concurrence et ne disent rien du contrôle des prix ou de la construction publique, ce qui n’est pas une position.",
+    "noStanceAtAll": "aucune position documentée sur aucune des affirmations auxquelles vous avez répondu — non comparée",
+    "whatIsThis": "Qu’est-ce que cela veut dire ?",
+    "agreeOn": "D’accord sur",
+    "partlyOn": "En partie proches sur",
+    "differOn": "En désaccord sur",
+    "noStanceOn": "La liste n’a pas de position documentée sur",
+    "explainTitle": "Pourquoi ce résultat ?",
+    "explainScore": "Pour chaque liste, nous avons mesuré la proximité de vos réponses avec ses positions documentées, affirmation par affirmation, puis fait la moyenne. 100 % = exactement la même position sur chaque affirmation ; 0 % = l’extrême opposé sur chacune.",
+    "explainImportant": "Une affirmation que vous avez marquée comme particulièrement importante compte double.",
+    "explainNoStance": "Une affirmation sur laquelle une liste n’a pas de position documentée ne lui est pas comptée — ni pour ni contre. C’est pourquoi chaque liste indique sur combien d’affirmations elle a été comparée.",
+    "explainSources": "Chaque position d’une liste renvoie à sa source — un vote à la Knesset, un programme ou une citation — sous « Pourquoi ? ».",
+    "explainNotAdvice": "Il ne s’agit que de proximité de positions, pas d’une recommandation de vote : la boussole ne mesure ni le leadership, ni la crédibilité, ni le passé."
   },
   "budget": {
     "title": "Budget de l’État",

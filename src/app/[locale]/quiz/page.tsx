@@ -9,7 +9,7 @@ import { PartyQuiz, type QuizList, type QuizQ } from "./PartyQuiz";
 
 export const dynamic = "force-dynamic";
 
-// The election compass: ten statements, every list's stance on each one
+// The election compass: a dozen-odd statements, every list's stance on each one
 // sourced to a Knesset vote, its platform or a leader's statement — or shown
 // as "no stated position". Nothing is stored or sent anywhere.
 export default async function QuizPage() {
@@ -23,6 +23,8 @@ export default async function QuizPage() {
   const questions: QuizQ[] = file.questions.map((q) => ({
     id: q.id,
     text: partyText(q.text, locale),
+    short: partyText(q.short, locale),
+    explainer: partyText(q.explainer, locale),
     stances: Object.fromEntries(
       Object.entries(q.stances).map(([slug, s]) => [
         slug,

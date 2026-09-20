@@ -436,7 +436,10 @@
     "colSubmittedBy": "Submitted by",
     "lettersRequestedShort": "requested",
     "lettersBadgeTitle": "Requested letters — final after the CEC approves on {date}",
-    "cecSourceLine": "Source: the lists’ pages on the Central Elections Committee site (gov.il)."
+    "cecSourceLine": "Source: the lists’ pages on the Central Elections Committee site (gov.il).",
+    "colCandidates": "Candidates",
+    "rosterCount": "{n, plural, one {# candidate} other {# candidates}}",
+    "rosterAll": "All {n} candidates on the list's page at the CEC ↗"
   },
   "electionsHistory": {
     "title": "Knesset Elections History",
@@ -501,7 +504,7 @@
   },
   "quiz": {
     "title": "Election compass — who is closest to your views?",
-    "subtitle": "Ten statements. Every list’s stance is documented — a Knesset vote, a platform or a statement — or shown as \"no documented stance\".",
+    "subtitle": "Statements about what the lists want — security, religion and state, the economy, society and institutions. Every list has a documented stance — a Knesset vote, a platform or a statement — or \"no stated position\".",
     "intro": "Mark how much you agree with each statement (you can skip). After at least {min} answers you will see which lists are closest to your views, and why. The lists’ stances come from a documented source for every cell — a roll-call vote in the Knesset, the platform the list published, or the words of its leader as reported by a major outlet — never from the site’s interpretation. A list with no documented stance on a statement is simply not compared on it. Nothing is stored or sent anywhere.",
     "positionsLink": "See every stance with its source",
     "disclaimer": "The match is computed from closeness of positions only and is not a recommendation on how to vote.",
@@ -535,8 +538,19 @@
     "listStance": "The list",
     "noStance": "no documented stance — not compared",
     "voteRule": "How a Knesset vote becomes a number: when almost all of a faction voted the same way (nine in ten or more) — \"strongly\"; when the faction split — \"agree\" or \"disagree\"; if fewer than half the faction voted, the stance is shown weaker and says so. A vote by a predecessor faction (e.g. Yesh Atid for Together) is marked explicitly.",
-    "topicsNote": "What is missing here: statements on the economy, welfare and LGBTQ rights were left out because we found no documented stance for most lists. The compass therefore deals mostly with security, religion and state, institutions and who forms the government.",
-    "noStanceAtAll": "no documented stance on any statement you answered — not compared"
+    "topicsNote": "What is here and what is not: 16 statements — security and foreign policy, the economy, religion and state, society and institutions. A statement enters the compass only if most lists (at least 8 of 15) have a documented stance on it. A statement on state intervention in housing and prices was left out for that reason — most platforms talk about competition and say nothing about supervision or public building, which is not a stance.",
+    "noStanceAtAll": "no documented stance on any statement you answered — not compared",
+    "whatIsThis": "What does this mean?",
+    "agreeOn": "Agree on",
+    "partlyOn": "Partly close on",
+    "differOn": "Differ on",
+    "noStanceOn": "The list has no documented stance on",
+    "explainTitle": "Why this result?",
+    "explainScore": "For each list we measured how close your answers are to its documented stances, statement by statement, and averaged. 100% = exactly the same stance on every statement; 0% = the opposite end on every statement.",
+    "explainImportant": "A statement you marked as especially important counts double.",
+    "explainNoStance": "A statement on which a list has no documented stance is not counted for it — neither for nor against. That is why each list shows how many statements it was compared on.",
+    "explainSources": "Every list stance links to its source — a Knesset vote, a platform or a quote — under \"Why?\".",
+    "explainNotAdvice": "This is closeness of positions only, not a voting recommendation: the compass does not measure leadership, credibility or the past."
   },
   "budget": {
     "title": "State Budget",

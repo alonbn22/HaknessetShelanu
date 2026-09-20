@@ -410,6 +410,7 @@ export default async function ElectionsHistoryPage() {
                       <th className="px-2 py-1.5 text-start font-semibold">{te("colList")}</th>
                       <th className="px-2 py-1.5 text-start font-semibold">{te("colHead")}</th>
                       <th className="px-2 py-1.5 text-start font-semibold">{te("colSubmittedBy")}</th>
+                      <th className="px-2 py-1.5 text-start font-semibold">{te("colCandidates")}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -442,6 +443,31 @@ export default async function ElectionsHistoryPage() {
                         </td>
                         <td className="px-2 py-1.5 text-muted" dir="rtl" lang="he">
                           {(l.submittedBy ?? []).join(" · ")}
+                        </td>
+                        <td className="min-w-[14rem] px-2 py-1.5">
+                          {/* The roster as the committee prints it (surname first), the
+                              first 20 here and the rest on the CEC page — the same for
+                              every list, polled or not. */}
+                          {l.candidates && l.candidates.length > 0 && (
+                            <details>
+                              <summary className="cursor-pointer whitespace-nowrap underline hover:text-accent">
+                                {te("rosterCount", { n: l.candidates.length })}
+                              </summary>
+                              <ol className="mt-1 list-decimal space-y-0.5 ps-5" dir="rtl" lang="he">
+                                {l.candidates.slice(0, 20).map((c, i) => (
+                                  <li key={i}>
+                                    {c.he}
+                                    {c.party && <span className="text-muted"> · {c.party}</span>}
+                                  </li>
+                                ))}
+                              </ol>
+                              {l.candidates.length > 20 && (
+                                <a href={l.url} target="_blank" rel="noopener noreferrer" className="mt-1 inline-block text-muted underline">
+                                  {te("rosterAll", { n: l.candidates.length })}
+                                </a>
+                              )}
+                            </details>
+                          )}
                         </td>
                       </tr>
                     ))}

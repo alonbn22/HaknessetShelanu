@@ -219,4 +219,26 @@ if (outlook) {
     // The CEC numbered 38 lists on 18 Sep 2026; a shorter table means a row was lost.
     assert.ok(table.lists.length >= 38, `expected all 38 submitted lists, got ${table.lists.length}`);
   });
+
+  test("every submitted list carries its roster from the CEC page, headed by the person the row names", () => {
+    const table = outlook.submittedLists!;
+    const tokens = (s: string) => s.replace(/[(),"'\u05f3\u05f4]/g, " ").split(/\s+/).filter(Boolean);
+    for (const l of table.lists) {
+      assert.ok(l.candidates && l.candidates.length >= 1, `${l.listNumber}: no candidates`);
+      assert.ok(l.updated, `${l.listNumber}: no CEC page date`);
+      for (const c of l.candidates!) assert.ok(c.he.trim().length > 1, `${l.listNumber}: empty candidate name`);
+      // The head as the row names them ("Gadi Eisenkot") is the first candidate as the
+      // committee prints them ("Eisenkot Gad"): the surname must appear there.
+      if (l.head?.he) {
+        const first = new Set(tokens(l.candidates![0].he));
+        const shared = tokens(l.head.he).filter((t) => t.length >= 3 && first.has(t));
+        assert.ok(shared.length >= 1, `${l.listNumber}: head "${l.head.he}" ≠ first candidate "${l.candidates![0].he}"`);
+      }
+      // A joint list names the submitting party per candidate; a single-party list need not.
+      const parties = new Set(l.candidates!.map((c) => c.party).filter(Boolean));
+      if ((l.submittedBy ?? []).length > 1) assert.ok(parties.size >= 2, `${l.listNumber}: joint list without per-candidate parties`);
+    }
+    const total = table.lists.reduce((n, l) => n + (l.candidates?.length ?? 0), 0);
+    assert.ok(total >= 1350, `only ${total} candidates in all — a roster was lost`);
+  });
 }

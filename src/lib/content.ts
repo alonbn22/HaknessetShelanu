@@ -489,6 +489,11 @@ const quizQuestionSchema = z.object({
   // everything cannot favour one camp.
   lean: z.enum(["right", "left"]),
   text: localizedText,
+  // A two-to-four-word label for the result summaries ("agree on: judicial
+  // reform, the draft law…"), and a plain-words explainer of what the
+  // statement is about and what each side argues — neutral, no verdict.
+  short: localizedText,
+  explainer: localizedText,
   stances: z.record(listSlug, quizStanceSchema),
 });
 const quizFileSchema = z.object({
@@ -588,6 +593,11 @@ const submittedListSchema = z.object({
   head: localizedText.optional(),
   submittedBy: z.array(z.string()).optional(),
   slug: listSlug.optional(), // links the row to a registry card when the list is one of them
+  // The CEC page's "updated" date, and the roster exactly as the committee
+  // prints it (surname first); `party` is the submitting party the candidate
+  // was recorded under, given only on joint lists.
+  updated: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
+  candidates: z.array(z.object({ he: z.string().min(1), party: z.string().optional() })).optional(),
 });
 export type SubmittedList = z.infer<typeof submittedListSchema>;
 

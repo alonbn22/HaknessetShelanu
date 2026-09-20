@@ -5,25 +5,27 @@
 # status: pending | proposed | in-knesset | approved
 entries:
   - year: 2026
-    status: pending
+    status: approved
     headline:
-      he: "תקציב 2026 — בתהליך."
-      en: "The 2026 budget — in progress."
-      es: "El presupuesto de 2026 — en curso."
-      fr: "Le budget 2026 — en cours."
+      he: "תקציב 2026 אושר בכנסת ב-30 במרץ 2026."
+      en: "The 2026 budget passed the Knesset on 30 March 2026."
+      es: "El presupuesto de 2026 fue aprobado por la Knéset el 30 de marzo de 2026."
+      fr: "Le budget 2026 a été adopté par la Knesset le 30 mars 2026."
     timing:
-      he: "תקציב המדינה מאושר בדרך כלל בחוק תקציב שנתי (לעיתים דו-שנתי). הצעת התקציב נדונה בוועדת הכספים של הכנסת ועוברת שלוש קריאות במליאה. תקציב 2026 צפוי לעבור סביב סוף 2025–תחילת 2026; הנתונים המפורטים יופיעו כאן לאחר פרסומם כנתונים פתוחים."
-      en: "The state budget is normally enacted as an annual Budget Law (sometimes biennial). The bill is debated in the Knesset Finance Committee and passes three plenum readings. The 2026 budget is expected to be enacted around late 2025–early 2026; the detailed figures will appear here once published as open data."
-      es: "El presupuesto del Estado se aprueba normalmente como una Ley de Presupuesto anual (a veces bienal). El proyecto se debate en la Comisión de Finanzas de la Knéset y pasa tres lecturas en el pleno. El presupuesto de 2026 debería aprobarse entre finales de 2025 y principios de 2026; las cifras detalladas aparecerán aquí cuando se publiquen como datos abiertos."
-      fr: "Le budget de l’État est normalement adopté sous forme de loi de finances annuelle (parfois biennale). Le projet est examiné par la Commission des Finances de la Knesset et passe trois lectures en plénière. Le budget 2026 devrait être adopté entre fin 2025 et début 2026 ; les chiffres détaillés apparaîtront ici une fois publiés en données ouvertes."
+      he: "תקציב המדינה מאושר בדרך כלל בחוק תקציב שנתי (לעיתים דו-שנתי). הצעת התקציב נדונה בוועדת הכספים של הכנסת ועוברת שלוש קריאות במליאה. תקציב 2026 — 850.6 מיליארד ש\"ח, הגדול אי-פעם — אושר בקריאה השנייה והשלישית ב-30 במרץ 2026 ברוב של 62 מול 55, יום לפני המועד החוקי האחרון; המספרים המפורטים יופיעו כאן כשיפורסמו בנתונים הפתוחים."
+      en: "The state budget is normally enacted as an annual Budget Law (sometimes biennial). The bill is debated in the Knesset Finance Committee and passes three plenum readings. The 2026 budget — NIS 850.6 billion, the largest ever — passed its second and third readings on 30 March 2026 by 62 to 55, a day before the legal deadline; the detailed figures will appear here once published as open data."
+      es: "El presupuesto del Estado se aprueba normalmente como una Ley de Presupuesto anual (a veces bienal). El proyecto se debate en la Comisión de Finanzas de la Knéset y pasa tres lecturas en el pleno. El presupuesto de 2026 — 850 600 millones de shékels, el mayor de la historia — superó la segunda y la tercera lectura el 30 de marzo de 2026 por 62 votos a 55, un día antes del plazo legal; las cifras detalladas aparecerán aquí cuando se publiquen como datos abiertos."
+      fr: "Le budget de l’État est normalement adopté sous forme de loi de finances annuelle (parfois biennale). Le projet est examiné par la Commission des Finances de la Knesset et est adopté en trois lectures en plénière. Le budget 2026 — 850,6 milliards de shekels, le plus important jamais voté — a passé ses deuxième et troisième lectures le 30 mars 2026 par 62 voix contre 55, la veille de la date limite légale ; les chiffres détaillés apparaîtront ici une fois publiés en données ouvertes."
     news:
-      - date: "2025-01-01"
+      - date: "2026-03-30"
         text:
-          he: "מעקב אחר ההתקדמות: אישור הממשלה, דיוני ועדת הכספים והקריאות במליאה."
-          en: "Track the milestones: government approval, Finance Committee deliberations, and the plenum readings."
-          es: "Siga las etapas: aprobación del Gobierno, deliberaciones de la Comisión de Finanzas y lecturas en el pleno."
-          fr: "Suivez les étapes : approbation du gouvernement, délibérations de la Commission des Finances et lectures en plénière."
+          he: "הכנסת אישרה את תקציב 2026 בקריאה השנייה והשלישית (62–55). מקור: The Times of Israel, 30.3.2026 (קישור למטה)."
+          en: "The Knesset approved the 2026 budget in its second and third readings (62–55). Source: The Times of Israel, 30 March 2026 (link below)."
+          es: "La Knéset aprobó el presupuesto de 2026 en segunda y tercera lectura (62–55). Fuente: The Times of Israel, 30 de marzo de 2026 (enlace abajo)."
+          fr: "La Knesset a approuvé le budget 2026 en deuxième et troisième lectures (62–55). Source : The Times of Israel, 30 mars 2026 (lien ci-dessous)."
     links:
+      - label: { he: "The Times of Israel — הכנסת אישרה את תקציב 2026 (30.3.2026)", en: "The Times of Israel — Knesset approves 2026 budget (30 Mar 2026)", es: "The Times of Israel — La Knéset aprueba el presupuesto de 2026 (30/3/2026)", fr: "The Times of Israel — La Knesset adopte le budget 2026 (30/3/2026)" }
+        url: "https://www.timesofisrael.com/knesset-approves-2026-budget-israels-largest-ever-sending-billions-to-haredi-institutions/"
       - label: { he: "אתר משרד האוצר", en: "Ministry of Finance", es: "Ministerio de Finanzas", fr: "Ministère des Finances" }
         url: "https://www.gov.il/he/departments/ministry_of_finance"
       - label: { he: "ועדת הכספים של הכנסת", en: "Knesset Finance Committee", es: "Comisión de Finanzas de la Knéset", fr: "Commission des Finances de la Knesset" }

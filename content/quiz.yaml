@@ -46,6 +46,8 @@ questions:
         quote:
           he: "32 בעד, 0 נגד"
           en: "32 for, 0 against"
+          es: "32 a favor, 0 en contra"
+          fr: "32 pour, 0 contre"
       shas:
         value: 2
         basis: vote
@@ -54,6 +56,8 @@ questions:
         quote:
           he: "9 בעד, 0 נגד, 2 נעדרו"
           en: "9 for, 0 against, 2 absent"
+          es: "9 a favor, 0 en contra, 2 ausentes"
+          fr: "9 pour, 0 contre, 2 absents"
       utj:
         value: 2
         basis: vote
@@ -62,6 +66,8 @@ questions:
         quote:
           he: "5 בעד, 0 נגד, 2 נעדרו"
           en: "5 for, 0 against, 2 absent"
+          es: "5 a favor, 0 en contra, 2 ausentes"
+          fr: "5 pour, 0 contre, 2 absents"
       rz-zehut:
         value: 2
         basis: vote
@@ -70,6 +76,8 @@ questions:
         quote:
           he: "7 בעד, 0 נגד"
           en: "7 for, 0 against"
+          es: "7 a favor, 0 en contra"
+          fr: "7 pour, 0 contre"
       otzma:
         value: 2
         basis: vote
@@ -78,6 +86,8 @@ questions:
         quote:
           he: "6 בעד, 0 נגד"
           en: "6 for, 0 against"
+          es: "6 a favor, 0 en contra"
+          fr: "6 pour, 0 contre"
       yisrael-beiteinu:
         value: -2
         basis: vote
@@ -86,6 +96,8 @@ questions:
         quote:
           he: "0 בעד, 6 נגד"
           en: "0 for, 6 against"
+          es: "0 a favor, 6 en contra"
+          fr: "0 pour, 6 contre"
       democrats:
         value: -2
         basis: vote
@@ -94,6 +106,8 @@ questions:
         quote:
           he: "0 בעד, 4 נגד"
           en: "0 for, 4 against"
+          es: "0 a favor, 4 en contra"
+          fr: "0 pour, 4 contre"
       raam:
         value: -2
         basis: vote
@@ -102,6 +116,8 @@ questions:
         quote:
           he: "0 בעד, 5 נגד"
           en: "0 for, 5 against"
+          es: "0 a favor, 5 en contra"
+          fr: "0 pour, 5 contre"
       joint-list:
         value: -2
         basis: vote
@@ -110,6 +126,8 @@ questions:
         quote:
           he: "0 בעד, 4 נגד, 1 נעדרו"
           en: "0 for, 4 against, 1 absent"
+          es: "0 a favor, 4 en contra, 1 ausente"
+          fr: "0 pour, 4 contre, 1 absent"
       together:
         value: -2
         basis: vote
@@ -123,6 +141,8 @@ questions:
         quote:
           he: "0 בעד, 22 נגד, 2 נעדרו"
           en: "0 for, 22 against, 2 absent"
+          es: "0 a favor, 22 en contra, 2 ausentes"
+          fr: "0 pour, 22 contre, 2 absents"
       blue-white:
         value: -2
         basis: vote
@@ -136,6 +156,8 @@ questions:
         quote:
           he: "0 בעד, 10 נגד, 2 נעדרו"
           en: "0 for, 10 against, 2 absent"
+          es: "0 a favor, 10 en contra, 2 ausentes"
+          fr: "0 pour, 10 contre, 2 absents"
       yashar:
         value: -1
         basis: platform
@@ -143,6 +165,8 @@ questions:
         quote:
           he: "\"נשמור על… מערכת משפט עצמאית. נחוקק את חוק יסוד החקיקה… חוקים נוספים אשר יגדירו כללי משחק ברורים ומוסכמים למערכת הדמוקרטית\" (צעד 7)."
           en: "\"We will keep… an independent justice system. We will legislate Basic Law: Legislation… laws that set clear, agreed rules for the democratic system\" (step 7)."
+          es: "«Mantendremos… un sistema de justicia independiente. Legislaremos la Ley Fundamental: Legislación… leyes que fijen reglas claras y consensuadas para el sistema democrático» (punto 7)."
+          fr: "« Nous préserverons… un système judiciaire indépendant. Nous légiférerons la Loi fondamentale : Législation… des lois fixant des règles claires et consensuelles pour le système démocratique » (point 7)."
       reservists:
         value: 1
         basis: platform
@@ -150,6 +174,8 @@ questions:
         quote:
           he: "\"רפורמה משפטית: ביקורת חיצונית ולא תלויה על מערכת המשפט. פיצול תפקידי היועמ\"ש. תיקון האיזונים והבלמים בין הרשויות… נפעל לקדם תיקונים במערכת המשפט תחת הסכמות רחבות.\""
           en: "\"Judicial reform: external, independent oversight of the justice system; splitting the attorney general's roles; correcting the checks and balances… we will advance corrections under broad agreement.\""
+          es: "«Reforma judicial: supervisión externa e independiente del sistema de justicia; separación de las funciones del asesor jurídico del Gobierno; corrección de los contrapesos… impulsaremos correcciones con amplio consenso.»"
+          fr: "« Réforme judiciaire : un contrôle externe et indépendant du système judiciaire ; la scission des fonctions du conseiller juridique du gouvernement ; la correction des contre-pouvoirs… nous ferons avancer des corrections dans un large consensus. »"
   - id: religion-state
     topic: religion-state
     lean: left
@@ -168,6 +194,8 @@ questions:
         quote:
           he: "\"נחוקק חוק נישואין אזרחיים… נאבק על מרחב ציבורי חופשי ונקדם תחבורה ציבורית בשבת.\""
           en: "\"We will legislate civil marriage… fight for a free public space and advance public transport on Shabbat.\""
+          es: "«Legislaremos el matrimonio civil… lucharemos por un espacio público libre e impulsaremos el transporte público en Shabat.»"
+          fr: "« Nous légiférerons le mariage civil… nous nous battrons pour un espace public libre et ferons avancer les transports publics le Shabbat. »"
       together:
         value: 1
         basis: platform
@@ -175,6 +203,8 @@ questions:
         quote:
           he: "\"כל רשות תחליט בעצמה על תחבורה ציבורית בשבת – לפי צביונה… ברית זוגיות אזרחית במשרד הפנים, בלי תלות בדת, במגדר או בנטייה מינית.\""
           en: "\"Each local authority will decide for itself on public transport on Shabbat… a civil partnership registered at the Interior Ministry, regardless of religion, gender or sexual orientation.\""
+          es: "«Cada autoridad local decidirá por sí misma sobre el transporte público en Shabat… una unión civil registrada en el Ministerio del Interior, sin distinción de religión, género u orientación sexual.»"
+          fr: "« Chaque collectivité locale décidera elle-même des transports publics le Shabbat… une union civile enregistrée au ministère de l’Intérieur, sans distinction de religion, de genre ou d’orientation sexuelle. »"
       yisrael-beiteinu:
         value: 2
         basis: platform
@@ -182,6 +212,8 @@ questions:
         quote:
           he: "\"הפעלת תחבורה ציבורית בשבת בהתאם להחלטת הרשויות המקומיות… הנהגת נישואין וגירושין אזרחיים לכל אזרח.\""
           en: "\"Public transport on Shabbat according to the decision of local authorities… civil marriage and divorce for every citizen.\""
+          es: "«Transporte público en Shabat según la decisión de las autoridades locales… matrimonio y divorcio civiles para todos los ciudadanos.»"
+          fr: "« Des transports publics le Shabbat selon la décision des collectivités locales… le mariage et le divorce civils pour chaque citoyen. »"
       blue-white:
         value: 2
         basis: vote
@@ -190,6 +222,8 @@ questions:
         quote:
           he: "6 בעד, 0 נגד, 2 נעדרו"
           en: "6 for, 0 against, 2 absent"
+          es: "6 a favor, 0 en contra, 2 ausentes"
+          fr: "6 pour, 0 contre, 2 absents"
       shas:
         value: -2
         basis: vote
@@ -198,6 +232,8 @@ questions:
         quote:
           he: "0 בעד, 10 נגד, 1 נעדרו"
           en: "0 for, 10 against, 1 absent"
+          es: "0 a favor, 10 en contra, 1 ausente"
+          fr: "0 pour, 10 contre, 1 absent"
       likud:
         value: -2
         basis: vote
@@ -206,6 +242,8 @@ questions:
         quote:
           he: "0 בעד, 26 נגד, 6 נעדרו"
           en: "0 for, 26 against, 6 absent"
+          es: "0 a favor, 26 en contra, 6 ausentes"
+          fr: "0 pour, 26 contre, 6 absents"
       utj:
         value: -2
         basis: vote
@@ -214,6 +252,8 @@ questions:
         quote:
           he: "0 בעד, 7 נגד"
           en: "0 for, 7 against"
+          es: "0 a favor, 7 en contra"
+          fr: "0 pour, 7 contre"
       rz-zehut:
         value: -2
         basis: vote
@@ -222,6 +262,8 @@ questions:
         quote:
           he: "0 בעד, 6 נגד, 1 נעדרו"
           en: "0 for, 6 against, 1 absent"
+          es: "0 a favor, 6 en contra, 1 ausente"
+          fr: "0 pour, 6 contre, 1 absent"
       otzma:
         value: -2
         basis: vote
@@ -230,6 +272,8 @@ questions:
         quote:
           he: "0 בעד, 5 נגד, 1 נעדרו"
           en: "0 for, 5 against, 1 absent"
+          es: "0 a favor, 5 en contra, 1 ausente"
+          fr: "0 pour, 5 contre, 1 absent"
   - id: haredi-draft-law
     topic: religion-state
     lean: right
@@ -249,6 +293,8 @@ questions:
         quote:
           he: "11 בעד, 0 נגד"
           en: "11 for, 0 against"
+          es: "11 a favor, 0 en contra"
+          fr: "11 pour, 0 contre"
       utj:
         value: 2
         basis: vote
@@ -257,6 +303,8 @@ questions:
         quote:
           he: "7 בעד, 0 נגד"
           en: "7 for, 0 against"
+          es: "7 a favor, 0 en contra"
+          fr: "7 pour, 0 contre"
       likud:
         value: 2
         basis: vote
@@ -265,6 +313,8 @@ questions:
         quote:
           he: "26 בעד, 2 נגד, 4 נעדרו"
           en: "26 for, 2 against, 4 absent"
+          es: "26 a favor, 2 en contra, 4 ausentes"
+          fr: "26 pour, 2 contre, 4 absents"
       otzma:
         value: 2
         basis: vote
@@ -273,6 +323,8 @@ questions:
         quote:
           he: "6 בעד, 0 נגד"
           en: "6 for, 0 against"
+          es: "6 a favor, 0 en contra"
+          fr: "6 pour, 0 contre"
       rz-zehut:
         value: 1
         basis: vote
@@ -281,6 +333,8 @@ questions:
         quote:
           he: "4 בעד, 1 נגד, 2 נעדרו"
           en: "4 for, 1 against, 2 absent"
+          es: "4 a favor, 1 en contra, 2 ausentes"
+          fr: "4 pour, 1 contre, 2 absents"
       yisrael-beiteinu:
         value: -2
         basis: vote
@@ -289,6 +343,8 @@ questions:
         quote:
           he: "0 בעד, 6 נגד"
           en: "0 for, 6 against"
+          es: "0 a favor, 6 en contra"
+          fr: "0 pour, 6 contre"
       democrats:
         value: -2
         basis: vote
@@ -297,6 +353,8 @@ questions:
         quote:
           he: "0 בעד, 4 נגד"
           en: "0 for, 4 against"
+          es: "0 a favor, 4 en contra"
+          fr: "0 pour, 4 contre"
       together:
         value: -2
         basis: vote
@@ -310,6 +368,8 @@ questions:
         quote:
           he: "0 בעד, 24 נגד"
           en: "0 for, 24 against"
+          es: "0 a favor, 24 en contra"
+          fr: "0 pour, 24 contre"
       joint-list:
         value: -2
         basis: vote
@@ -318,6 +378,8 @@ questions:
         quote:
           he: "0 בעד, 3 נגד, 2 נעדרו"
           en: "0 for, 3 against, 2 absent"
+          es: "0 a favor, 3 en contra, 2 ausentes"
+          fr: "0 pour, 3 contre, 2 absents"
       raam:
         value: -2
         basis: vote
@@ -326,6 +388,8 @@ questions:
         quote:
           he: "0 בעד, 5 נגד"
           en: "0 for, 5 against"
+          es: "0 a favor, 5 en contra"
+          fr: "0 pour, 5 contre"
       blue-white:
         value: -2
         basis: vote
@@ -334,6 +398,8 @@ questions:
         quote:
           he: "0 בעד, 8 נגד"
           en: "0 for, 8 against"
+          es: "0 a favor, 8 en contra"
+          fr: "0 pour, 8 contre"
       yashar:
         value: -2
         basis: platform
@@ -341,6 +407,8 @@ questions:
         quote:
           he: "\"נעביר את חוק 'שירות ממלכתי לכל' שיביא לשילוב הציבור החרדי והערבי במסגרות המתאימות, בראש ובראשונה לצה\"ל… מי שמשרת, מתוגמל\" (צעד 3)."
           en: "\"We will pass the 'National Service for All' law, integrating the haredi and Arab publics, first and foremost into the IDF… whoever serves is rewarded\" (step 3)."
+          es: "«Aprobaremos la ley de “Servicio nacional para todos”, que integra a los públicos jaredí y árabe, ante todo en las FDI… quien sirve es recompensado» (punto 3)."
+          fr: "« Nous ferons adopter la loi “Service national pour tous”, qui intègre les publics haredi et arabe, d’abord et avant tout dans Tsahal… celui qui sert est récompensé » (point 3)."
       reservists:
         value: -2
         basis: platform
@@ -348,6 +416,8 @@ questions:
         quote:
           he: "\"חוק גיוס לכולם: כל אזרח ישראלי, יהודי, ערבי, חילוני חרדי צריך לעשות משהו למען המדינה… מי שלא ישרת – לא יקבל כלום מהמדינה.\""
           en: "\"A draft law for all: every Israeli citizen, Jewish, Arab, secular, haredi, must do something for the state… whoever does not serve gets nothing from the state.\""
+          es: "«Una ley de reclutamiento para todos: todo ciudadano israelí, judío, árabe, laico, jaredí, debe hacer algo por el Estado… quien no sirve no recibe nada del Estado.»"
+          fr: "« Une loi de conscription pour tous : chaque citoyen israélien, juif, arabe, laïque, haredi, doit faire quelque chose pour l’État… celui qui ne sert pas ne reçoit rien de l’État. »"
       haredi-public:
         value: 1
         basis: platform
@@ -355,6 +425,8 @@ questions:
         quote:
           he: "\"עלינו להגן על מי שבאמת מקדיש את חייו ללימוד התורה, ולאפשר לו ללמוד בשקט, בלי איום במעצר, בלי סנקציות… כל צעיר חרדי שאינו מקדיש את חייו ללימוד תורה, צריך לשרת.\""
           en: "\"We must protect whoever truly devotes his life to Torah study and let him study in peace, without threat of arrest or sanctions… every haredi youth who does not devote his life to Torah study must serve.\""
+          es: "«Debemos proteger a quien de verdad consagra su vida al estudio de la Torá y dejarle estudiar en paz, sin amenaza de detención ni sanciones… todo joven jaredí que no consagre su vida al estudio de la Torá debe servir.»"
+          fr: "« Nous devons protéger celui qui consacre vraiment sa vie à l’étude de la Torah et le laisser étudier en paix, sans menace d’arrestation ni de sanctions… tout jeune haredi qui ne consacre pas sa vie à l’étude de la Torah doit servir. »"
   - id: palestinian-state
     topic: security
     lean: left
@@ -374,6 +446,8 @@ questions:
         quote:
           he: "ההצבעה על הצהרת הכנסת \"הכנסת מתנגדת בתוקף להקמת מדינה פלסטינית ממערב לירדן\" (התקבלה 68–9); הצבעה בעד ההצהרה = התנגדות למשפט: 27 בעד, 0 נגד, 5 נעדרו"
           en: "the vote on the Knesset declaration \"firmly opposes the establishment of a Palestinian state west of the Jordan\" (passed 68–9); a vote for the declaration = disagreement with the statement: 27 for, 0 against, 5 absent"
+          es: "la votación de la declaración de la Knéset que «se opone firmemente al establecimiento de un Estado palestino al oeste del Jordán» (aprobada 68–9); un voto a favor de la declaración = desacuerdo con la afirmación: 27 a favor, 0 en contra, 5 ausentes"
+          fr: "le vote sur la déclaration de la Knesset qui « s’oppose fermement à l’établissement d’un État palestinien à l’ouest du Jourdain » (adoptée 68–9) ; un vote pour la déclaration = désaccord avec l’affirmation : 27 pour, 0 contre, 5 absents"
       shas:
         value: -2
         basis: vote
@@ -382,6 +456,8 @@ questions:
         quote:
           he: "ההצבעה על הצהרת הכנסת \"הכנסת מתנגדת בתוקף להקמת מדינה פלסטינית ממערב לירדן\" (התקבלה 68–9); הצבעה בעד ההצהרה = התנגדות למשפט: 7 בעד, 0 נגד, 4 נעדרו"
           en: "the vote on the Knesset declaration \"firmly opposes the establishment of a Palestinian state west of the Jordan\" (passed 68–9); a vote for the declaration = disagreement with the statement: 7 for, 0 against, 4 absent"
+          es: "la votación de la declaración de la Knéset que «se opone firmemente al establecimiento de un Estado palestino al oeste del Jordán» (aprobada 68–9); un voto a favor de la declaración = desacuerdo con la afirmación: 7 a favor, 0 en contra, 4 ausentes"
+          fr: "le vote sur la déclaration de la Knesset qui « s’oppose fermement à l’établissement d’un État palestinien à l’ouest du Jourdain » (adoptée 68–9) ; un vote pour la déclaration = désaccord avec l’affirmation : 7 pour, 0 contre, 4 absents"
       utj:
         value: -1
         basis: vote
@@ -390,6 +466,8 @@ questions:
         quote:
           he: "ההצבעה על הצהרת הכנסת \"הכנסת מתנגדת בתוקף להקמת מדינה פלסטינית ממערב לירדן\" (התקבלה 68–9); הצבעה בעד ההצהרה = התנגדות למשפט: 3 בעד, 0 נגד, 4 נעדרו — פחות ממחצית הסיעה הצביעה, לכן העוצמה הוגבלה"
           en: "the vote on the Knesset declaration \"firmly opposes the establishment of a Palestinian state west of the Jordan\" (passed 68–9); a vote for the declaration = disagreement with the statement: 3 for, 0 against, 4 absent — fewer than half the faction voted, so the strength is capped"
+          es: "la votación de la declaración de la Knéset que «se opone firmemente al establecimiento de un Estado palestino al oeste del Jordán» (aprobada 68–9); un voto a favor de la declaración = desacuerdo con la afirmación: 3 a favor, 0 en contra, 4 ausentes — votó menos de la mitad de la facción, por lo que la intensidad se limita"
+          fr: "le vote sur la déclaration de la Knesset qui « s’oppose fermement à l’établissement d’un État palestinien à l’ouest du Jourdain » (adoptée 68–9) ; un vote pour la déclaration = désaccord avec l’affirmation : 3 pour, 0 contre, 4 absents — moins de la moitié de la faction a voté, l’intensité est donc plafonnée"
       yisrael-beiteinu:
         value: -2
         basis: vote
@@ -398,6 +476,8 @@ questions:
         quote:
           he: "ההצבעה על הצהרת הכנסת \"הכנסת מתנגדת בתוקף להקמת מדינה פלסטינית ממערב לירדן\" (התקבלה 68–9); הצבעה בעד ההצהרה = התנגדות למשפט: 6 בעד, 0 נגד"
           en: "the vote on the Knesset declaration \"firmly opposes the establishment of a Palestinian state west of the Jordan\" (passed 68–9); a vote for the declaration = disagreement with the statement: 6 for, 0 against"
+          es: "la votación de la declaración de la Knéset que «se opone firmemente al establecimiento de un Estado palestino al oeste del Jordán» (aprobada 68–9); un voto a favor de la declaración = desacuerdo con la afirmación: 6 a favor, 0 en contra"
+          fr: "le vote sur la déclaration de la Knesset qui « s’oppose fermement à l’établissement d’un État palestinien à l’ouest du Jourdain » (adoptée 68–9) ; un vote pour la déclaration = désaccord avec l’affirmation : 6 pour, 0 contre"
       rz-zehut:
         value: -2
         basis: vote
@@ -406,6 +486,8 @@ questions:
         quote:
           he: "ההצבעה על הצהרת הכנסת \"הכנסת מתנגדת בתוקף להקמת מדינה פלסטינית ממערב לירדן\" (התקבלה 68–9); הצבעה בעד ההצהרה = התנגדות למשפט: 7 בעד, 0 נגד"
           en: "the vote on the Knesset declaration \"firmly opposes the establishment of a Palestinian state west of the Jordan\" (passed 68–9); a vote for the declaration = disagreement with the statement: 7 for, 0 against"
+          es: "la votación de la declaración de la Knéset que «se opone firmemente al establecimiento de un Estado palestino al oeste del Jordán» (aprobada 68–9); un voto a favor de la declaración = desacuerdo con la afirmación: 7 a favor, 0 en contra"
+          fr: "le vote sur la déclaration de la Knesset qui « s’oppose fermement à l’établissement d’un État palestinien à l’ouest du Jourdain » (adoptée 68–9) ; un vote pour la déclaration = désaccord avec l’affirmation : 7 pour, 0 contre"
       otzma:
         value: -2
         basis: vote
@@ -414,6 +496,8 @@ questions:
         quote:
           he: "ההצבעה על הצהרת הכנסת \"הכנסת מתנגדת בתוקף להקמת מדינה פלסטינית ממערב לירדן\" (התקבלה 68–9); הצבעה בעד ההצהרה = התנגדות למשפט: 6 בעד, 0 נגד"
           en: "the vote on the Knesset declaration \"firmly opposes the establishment of a Palestinian state west of the Jordan\" (passed 68–9); a vote for the declaration = disagreement with the statement: 6 for, 0 against"
+          es: "la votación de la declaración de la Knéset que «se opone firmemente al establecimiento de un Estado palestino al oeste del Jordán» (aprobada 68–9); un voto a favor de la declaración = desacuerdo con la afirmación: 6 a favor, 0 en contra"
+          fr: "le vote sur la déclaration de la Knesset qui « s’oppose fermement à l’établissement d’un État palestinien à l’ouest du Jourdain » (adoptée 68–9) ; un vote pour la déclaration = désaccord avec l’affirmation : 6 pour, 0 contre"
       blue-white:
         value: -2
         basis: vote
@@ -427,6 +511,8 @@ questions:
         quote:
           he: "ההצבעה על הצהרת הכנסת \"הכנסת מתנגדת בתוקף להקמת מדינה פלסטינית ממערב לירדן\" (התקבלה 68–9); הצבעה בעד ההצהרה = התנגדות למשפט: 5 בעד, 0 נגד, 3 נעדרו"
           en: "the vote on the Knesset declaration \"firmly opposes the establishment of a Palestinian state west of the Jordan\" (passed 68–9); a vote for the declaration = disagreement with the statement: 5 for, 0 against, 3 absent"
+          es: "la votación de la declaración de la Knéset que «se opone firmemente al establecimiento de un Estado palestino al oeste del Jordán» (aprobada 68–9); un voto a favor de la declaración = desacuerdo con la afirmación: 5 a favor, 0 en contra, 3 ausentes"
+          fr: "le vote sur la déclaration de la Knesset qui « s’oppose fermement à l’établissement d’un État palestinien à l’ouest du Jourdain » (adoptée 68–9) ; un vote pour la déclaration = désaccord avec l’affirmation : 5 pour, 0 contre, 3 absents"
       raam:
         value: 2
         basis: statement
@@ -434,6 +520,8 @@ questions:
         quote:
           he: "עבאס בוועידת רע\"ם (22.8.2026): מדינה פלסטינית עצמאית היא \"מציאות שרוב העולם מכיר בה\"; \"אנחנו רוצים שיכירו בה, ונפעל להשגת שלום, התקרבות וסיום הכיבוש והסכסוך\"."
           en: "Abbas at Ra'am's convention (22 Aug 2026): an independent Palestinian state is \"a reality, which most of the world recognizes\"; \"We want them to recognize it, and we'll work to achieve peace, rapprochement and an end to the occupation and conflict.\""
+          es: "Abbas en la convención de Ra’am (22 de agosto de 2026): un Estado palestino independiente es «una realidad, que la mayor parte del mundo reconoce»; «Queremos que lo reconozcan, y trabajaremos por la paz, el acercamiento y el fin de la ocupación y del conflicto»."
+          fr: "Abbas au congrès de Ra’am (22 août 2026) : un État palestinien indépendant est « une réalité, que la majeure partie du monde reconnaît » ; « Nous voulons qu’ils le reconnaissent, et nous œuvrerons pour la paix, le rapprochement et la fin de l’occupation et du conflit »."
       joint-list:
         value: 2
         basis: statement
@@ -441,6 +529,8 @@ questions:
         quote:
           he: "ג'בארין: הרשימה המשותפת תפעל לחידוש המשא ומתן עם ההנהגה הפלסטינית כדי לקדם הקמת מדינה פלסטינית לצד ישראל."
           en: "\"Jabareen has stated that the Joint List would push for renewed negotiations with Palestinian leadership to advance the establishment of a Palestinian state alongside Israel.\""
+          es: "«Jabareen ha declarado que la Lista Conjunta impulsaría la reanudación de las negociaciones con los dirigentes palestinos para avanzar hacia el establecimiento de un Estado palestino junto a Israel.»"
+          fr: "« Jabareen a déclaré que la Liste commune pousserait à la reprise des négociations avec les dirigeants palestiniens pour faire avancer l’établissement d’un État palestinien aux côtés d’Israël. »"
       together:
         value: -2
         basis: statement
@@ -448,6 +538,8 @@ questions:
         quote:
           he: "בנט: \"אני נגד מדינה פלסטינית נקודה. זה קו אדום.\""
           en: "Bennett: \"I am against a Palestinian state, period. It is a red line.\""
+          es: "Bennett: «Estoy en contra de un Estado palestino, punto. Es una línea roja.»"
+          fr: "Bennett : « Je suis contre un État palestinien, point. C’est une ligne rouge. »"
       yashar:
         value: -2
         basis: statement
@@ -455,6 +547,8 @@ questions:
         quote:
           he: "תגובת ישר! להצהרת עבאס: \"אין מדינה פלסטינית, ובממשלה שנקים לא תקום מדינה פלסטינית.\""
           en: "Yashar's response to Abbas: \"there is no Palestinian state, and in the government we form, a Palestinian state will not be established.\""
+          es: "Respuesta de ¡Yashar! a Abbas: «no hay Estado palestino, y en el Gobierno que formemos no se establecerá un Estado palestino»."
+          fr: "Réponse de Yashar! à Abbas : « il n’y a pas d’État palestinien, et dans le gouvernement que nous formerons, aucun État palestinien ne sera établi »."
       reservists:
         value: -2
         basis: platform
@@ -462,6 +556,8 @@ questions:
         quote:
           he: "\"נפעל כדי למנוע מדינה פלסטינית בצירים הדיפלומטיים והמדיניים, לצד יצירת מציאות של הכרעה בשטח.\""
           en: "\"We will act to prevent a Palestinian state on the diplomatic and political tracks, alongside creating a decisive reality on the ground.\""
+          es: "«Actuaremos para impedir un Estado palestino en las vías diplomática y política, junto con la creación de una realidad decisiva sobre el terreno.»"
+          fr: "« Nous agirons pour empêcher un État palestinien sur les plans diplomatique et politique, tout en créant une réalité décisive sur le terrain. »"
   - id: settlements-sovereignty
     topic: security
     lean: right
@@ -481,6 +577,8 @@ questions:
         quote:
           he: "ההצבעה על הצעת הסיכום הקוראת לממשלה להחיל ריבונות ביהודה, שומרון ובקעת הירדן (התקבלה 71–13): 32 בעד, 0 נגד"
           en: "the vote on the motion calling on the government to apply sovereignty in Judea, Samaria and the Jordan Valley (passed 71–13): 32 for, 0 against"
+          es: "la votación de la moción que insta al Gobierno a aplicar la soberanía en Judea, Samaria y el valle del Jordán (aprobada 71–13): 32 a favor, 0 en contra"
+          fr: "le vote sur la motion appelant le gouvernement à appliquer la souveraineté en Judée, en Samarie et dans la vallée du Jourdain (adoptée 71–13) : 32 pour, 0 contre"
       shas:
         value: 2
         basis: vote
@@ -489,6 +587,8 @@ questions:
         quote:
           he: "ההצבעה על הצעת הסיכום הקוראת לממשלה להחיל ריבונות ביהודה, שומרון ובקעת הירדן (התקבלה 71–13): 10 בעד, 0 נגד, 1 נעדרו"
           en: "the vote on the motion calling on the government to apply sovereignty in Judea, Samaria and the Jordan Valley (passed 71–13): 10 for, 0 against, 1 absent"
+          es: "la votación de la moción que insta al Gobierno a aplicar la soberanía en Judea, Samaria y el valle del Jordán (aprobada 71–13): 10 a favor, 0 en contra, 1 ausente"
+          fr: "le vote sur la motion appelant le gouvernement à appliquer la souveraineté en Judée, en Samarie et dans la vallée du Jourdain (adoptée 71–13) : 10 pour, 0 contre, 1 absent"
       utj:
         value: 2
         basis: vote
@@ -497,6 +597,8 @@ questions:
         quote:
           he: "ההצבעה על הצעת הסיכום הקוראת לממשלה להחיל ריבונות ביהודה, שומרון ובקעת הירדן (התקבלה 71–13): 4 בעד, 0 נגד, 3 נעדרו"
           en: "the vote on the motion calling on the government to apply sovereignty in Judea, Samaria and the Jordan Valley (passed 71–13): 4 for, 0 against, 3 absent"
+          es: "la votación de la moción que insta al Gobierno a aplicar la soberanía en Judea, Samaria y el valle del Jordán (aprobada 71–13): 4 a favor, 0 en contra, 3 ausentes"
+          fr: "le vote sur la motion appelant le gouvernement à appliquer la souveraineté en Judée, en Samarie et dans la vallée du Jourdain (adoptée 71–13) : 4 pour, 0 contre, 3 absents"
       yisrael-beiteinu:
         value: 2
         basis: vote
@@ -505,6 +607,8 @@ questions:
         quote:
           he: "ההצבעה על הצעת הסיכום הקוראת לממשלה להחיל ריבונות ביהודה, שומרון ובקעת הירדן (התקבלה 71–13): 6 בעד, 0 נגד"
           en: "the vote on the motion calling on the government to apply sovereignty in Judea, Samaria and the Jordan Valley (passed 71–13): 6 for, 0 against"
+          es: "la votación de la moción que insta al Gobierno a aplicar la soberanía en Judea, Samaria y el valle del Jordán (aprobada 71–13): 6 a favor, 0 en contra"
+          fr: "le vote sur la motion appelant le gouvernement à appliquer la souveraineté en Judée, en Samarie et dans la vallée du Jourdain (adoptée 71–13) : 6 pour, 0 contre"
       rz-zehut:
         value: 2
         basis: vote
@@ -513,6 +617,8 @@ questions:
         quote:
           he: "ההצבעה על הצעת הסיכום הקוראת לממשלה להחיל ריבונות ביהודה, שומרון ובקעת הירדן (התקבלה 71–13): 7 בעד, 0 נגד"
           en: "the vote on the motion calling on the government to apply sovereignty in Judea, Samaria and the Jordan Valley (passed 71–13): 7 for, 0 against"
+          es: "la votación de la moción que insta al Gobierno a aplicar la soberanía en Judea, Samaria y el valle del Jordán (aprobada 71–13): 7 a favor, 0 en contra"
+          fr: "le vote sur la motion appelant le gouvernement à appliquer la souveraineté en Judée, en Samarie et dans la vallée du Jourdain (adoptée 71–13) : 7 pour, 0 contre"
       otzma:
         value: 2
         basis: vote
@@ -521,6 +627,8 @@ questions:
         quote:
           he: "ההצבעה על הצעת הסיכום הקוראת לממשלה להחיל ריבונות ביהודה, שומרון ובקעת הירדן (התקבלה 71–13): 6 בעד, 0 נגד"
           en: "the vote on the motion calling on the government to apply sovereignty in Judea, Samaria and the Jordan Valley (passed 71–13): 6 for, 0 against"
+          es: "la votación de la moción que insta al Gobierno a aplicar la soberanía en Judea, Samaria y el valle del Jordán (aprobada 71–13): 6 a favor, 0 en contra"
+          fr: "le vote sur la motion appelant le gouvernement à appliquer la souveraineté en Judée, en Samarie et dans la vallée du Jourdain (adoptée 71–13) : 6 pour, 0 contre"
       raam:
         value: -2
         basis: vote
@@ -529,6 +637,8 @@ questions:
         quote:
           he: "ההצבעה על הצעת הסיכום הקוראת לממשלה להחיל ריבונות ביהודה, שומרון ובקעת הירדן (התקבלה 71–13): 0 בעד, 5 נגד"
           en: "the vote on the motion calling on the government to apply sovereignty in Judea, Samaria and the Jordan Valley (passed 71–13): 0 for, 5 against"
+          es: "la votación de la moción que insta al Gobierno a aplicar la soberanía en Judea, Samaria y el valle del Jordán (aprobada 71–13): 0 a favor, 5 en contra"
+          fr: "le vote sur la motion appelant le gouvernement à appliquer la souveraineté en Judée, en Samarie et dans la vallée du Jourdain (adoptée 71–13) : 0 pour, 5 contre"
       democrats:
         value: -2
         basis: vote
@@ -537,6 +647,8 @@ questions:
         quote:
           he: "ההצבעה על הצעת הסיכום הקוראת לממשלה להחיל ריבונות ביהודה, שומרון ובקעת הירדן (התקבלה 71–13): 0 בעד, 4 נגד"
           en: "the vote on the motion calling on the government to apply sovereignty in Judea, Samaria and the Jordan Valley (passed 71–13): 0 for, 4 against"
+          es: "la votación de la moción que insta al Gobierno a aplicar la soberanía en Judea, Samaria y el valle del Jordán (aprobada 71–13): 0 a favor, 4 en contra"
+          fr: "le vote sur la motion appelant le gouvernement à appliquer la souveraineté en Judée, en Samarie et dans la vallée du Jourdain (adoptée 71–13) : 0 pour, 4 contre"
       joint-list:
         value: -2
         basis: vote
@@ -545,6 +657,8 @@ questions:
         quote:
           he: "ההצבעה על הצעת הסיכום הקוראת לממשלה להחיל ריבונות ביהודה, שומרון ובקעת הירדן (התקבלה 71–13): 0 בעד, 4 נגד, 1 נעדרו"
           en: "the vote on the motion calling on the government to apply sovereignty in Judea, Samaria and the Jordan Valley (passed 71–13): 0 for, 4 against, 1 absent"
+          es: "la votación de la moción que insta al Gobierno a aplicar la soberanía en Judea, Samaria y el valle del Jordán (aprobada 71–13): 0 a favor, 4 en contra, 1 ausente"
+          fr: "le vote sur la motion appelant le gouvernement à appliquer la souveraineté en Judée, en Samarie et dans la vallée du Jourdain (adoptée 71–13) : 0 pour, 4 contre, 1 absent"
       together:
         value: 1
         basis: statement
@@ -552,6 +666,8 @@ questions:
         quote:
           he: "בנט: \"התוכנית שלי אומרת שבשטחי C מתיישבים על פי חוק, ובשטחי A ו-B הרשות מנהלת.\""
           en: "Bennett: \"My plan says that in Area C we settle by law, and in Areas A and B the Authority administers.\""
+          es: "Bennett: «Mi plan dice que en el Área C nos asentamos por ley, y en las Áreas A y B administra la Autoridad.»"
+          fr: "Bennett : « Mon plan dit qu’en zone C nous nous implantons par la loi, et qu’en zones A et B l’Autorité administre. »"
       reservists:
         value: 1
         basis: platform
@@ -559,6 +675,8 @@ questions:
         quote:
           he: "\"ריבונות דרך מעשים – חיזוק ההתיישבות ביהודה ושומרון והכרעה על קרקעות בשטחי C חשובה והכרחית – נדבך קריטי מהביטחון הלאומי.\""
           en: "\"Sovereignty through deeds — strengthening settlement in Judea and Samaria and deciding on lands in Area C is important and necessary, a critical layer of national security.\""
+          es: "«Soberanía mediante hechos: fortalecer los asentamientos en Judea y Samaria y decidir sobre las tierras del Área C es importante y necesario, una capa crítica de la seguridad nacional.»"
+          fr: "« La souveraineté par les actes — renforcer l’implantation en Judée-Samarie et trancher sur les terres de la zone C est important et nécessaire, une couche critique de la sécurité nationale. »"
   - id: oct7-commission
     topic: institutions
     lean: left
@@ -567,8 +685,8 @@ questions:
       en: "The 7 October inquiry should be a state commission (whose members the Supreme Court president appoints), not a commission the government appoints."
       ar: "يجب أن يكون التحقيق في 7 أكتوبر لجنة تحقيق رسمية (يعيّن أعضاءها رئيس المحكمة العليا)، لا لجنة تعيّنها الحكومة."
       ru: "Расследование 7 октября должна вести государственная комиссия (её членов назначает председатель Верховного суда), а не комиссия, назначаемая правительством."
-      es: "La investigación del 7 de octubre debería ser una comisión estatal (cuyos miembros nombra el presidente del Tribunal Supremo), no una comisión nombrada por el Gobierno."
-      fr: "L’enquête sur le 7 octobre devrait être une commission d’État (dont les membres sont nommés par le président de la Cour suprême), pas une commission nommée par le gouvernement."
+      es: "La investigación del 7 de octubre debería encargarse a una comisión estatal (cuyos miembros nombra el presidente del Tribunal Supremo), no a una comisión nombrada por el Gobierno."
+      fr: "L’enquête sur le 7 octobre devrait être confiée à une commission d’enquête d’État (dont les membres sont nommés par le président de la Cour suprême), et non à une commission nommée par le gouvernement."
     stances:
       likud:
         value: -2
@@ -578,6 +696,8 @@ questions:
         quote:
           he: "0 בעד, 24 נגד, 8 נעדרו"
           en: "0 for, 24 against, 8 absent"
+          es: "0 a favor, 24 en contra, 8 ausentes"
+          fr: "0 pour, 24 contre, 8 absents"
       shas:
         value: -2
         basis: vote
@@ -586,6 +706,8 @@ questions:
         quote:
           he: "0 בעד, 8 נגד, 3 נעדרו"
           en: "0 for, 8 against, 3 absent"
+          es: "0 a favor, 8 en contra, 3 ausentes"
+          fr: "0 pour, 8 contre, 3 absents"
       utj:
         value: -2
         basis: vote
@@ -594,6 +716,8 @@ questions:
         quote:
           he: "0 בעד, 6 נגד, 1 נעדרו"
           en: "0 for, 6 against, 1 absent"
+          es: "0 a favor, 6 en contra, 1 ausente"
+          fr: "0 pour, 6 contre, 1 absent"
       rz-zehut:
         value: -2
         basis: vote
@@ -602,6 +726,8 @@ questions:
         quote:
           he: "0 בעד, 7 נגד"
           en: "0 for, 7 against"
+          es: "0 a favor, 7 en contra"
+          fr: "0 pour, 7 contre"
       otzma:
         value: -2
         basis: vote
@@ -610,6 +736,8 @@ questions:
         quote:
           he: "0 בעד, 4 נגד, 2 נעדרו"
           en: "0 for, 4 against, 2 absent"
+          es: "0 a favor, 4 en contra, 2 ausentes"
+          fr: "0 pour, 4 contre, 2 absents"
       raam:
         value: 2
         basis: vote
@@ -618,6 +746,8 @@ questions:
         quote:
           he: "5 בעד, 0 נגד"
           en: "5 for, 0 against"
+          es: "5 a favor, 0 en contra"
+          fr: "5 pour, 0 contre"
       democrats:
         value: 2
         basis: vote
@@ -626,6 +756,8 @@ questions:
         quote:
           he: "4 בעד, 0 נגד"
           en: "4 for, 0 against"
+          es: "4 a favor, 0 en contra"
+          fr: "4 pour, 0 contre"
       joint-list:
         value: 2
         basis: vote
@@ -634,6 +766,8 @@ questions:
         quote:
           he: "3 בעד, 0 נגד, 2 נעדרו"
           en: "3 for, 0 against, 2 absent"
+          es: "3 a favor, 0 en contra, 2 ausentes"
+          fr: "3 pour, 0 contre, 2 absents"
       yisrael-beiteinu:
         value: 2
         basis: vote
@@ -642,6 +776,8 @@ questions:
         quote:
           he: "5 בעד, 0 נגד, 1 נעדרו"
           en: "5 for, 0 against, 1 absent"
+          es: "5 a favor, 0 en contra, 1 ausente"
+          fr: "5 pour, 0 contre, 1 absent"
       blue-white:
         value: 2
         basis: vote
@@ -650,6 +786,8 @@ questions:
         quote:
           he: "7 בעד, 0 נגד, 1 נעדרו"
           en: "7 for, 0 against, 1 absent"
+          es: "7 a favor, 0 en contra, 1 ausente"
+          fr: "7 pour, 0 contre, 1 absent"
       together:
         value: 2
         basis: statement
@@ -657,6 +795,8 @@ questions:
         quote:
           he: "דובר בנט: הסכמה להקמת ועדת חקירה ממלכתית ל-7 באוקטובר תהיה \"תנאי מוקדם להצטרפות לממשלה\"."
           en: "Bennett's spokesman: agreeing to a state commission of inquiry into October 7 will serve \"as a precondition for joining the government.\""
+          es: "Portavoz de Bennett: aceptar una comisión estatal de investigación sobre el 7 de octubre servirá «como condición previa para entrar en el Gobierno»."
+          fr: "Le porte-parole de Bennett : accepter une commission d’enquête d’État sur le 7 octobre servira « de condition préalable à l’entrée au gouvernement »."
       yashar:
         value: 2
         basis: platform
@@ -664,6 +804,8 @@ questions:
         quote:
           he: "\"נקים ועדת חקירה ממלכתית לחקר טבח 7 באוקטובר, העשור שלפניו וניהול המלחמה\" (צעד 1)."
           en: "\"We will establish a state commission of inquiry into the 7 October massacre, the decade before it and the conduct of the war\" (step 1)."
+          es: "«Estableceremos una comisión estatal de investigación sobre la masacre del 7 de octubre, la década anterior y la conducción de la guerra» (punto 1)."
+          fr: "« Nous créerons une commission d’enquête d’État sur le massacre du 7 octobre, la décennie qui l’a précédé et la conduite de la guerre » (point 1)."
   - id: netanyahu-government
     topic: government
     lean: right
@@ -682,6 +824,8 @@ questions:
         quote:
           he: "רשימת הליכוד כפי שהוגשה לוועדת הבחירות (8.9.2026): בראשה המועמד לראשות הממשלה, בנימין נתניהו."
           en: "The Likud list as filed with the Elections Committee (8 Sep 2026): headed by its candidate for prime minister, Benjamin Netanyahu."
+          es: "La lista del Likud tal como se presentó ante la Comisión Electoral (8 de septiembre de 2026): encabezada por su candidato a primer ministro, Benjamín Netanyahu."
+          fr: "La liste du Likoud telle que déposée auprès de la Commission électorale (8 septembre 2026) : menée par son candidat au poste de Premier ministre, Benyamin Netanyahou."
       amkha:
         value: 2
         basis: statement
@@ -689,6 +833,8 @@ questions:
         quote:
           he: "וינטר: \"נמליץ רק על נתניהו\" — \"אנחנו במחנה הימין, ומנהיג מחנה הימין הוא נתניהו.\""
           en: "Winter: \"We will recommend only Netanyahu\" — \"We are in the right-wing camp, and the leader of the right-wing camp is Netanyahu.\""
+          es: "Winter: «Recomendaremos solo a Netanyahu» — «Estamos en el campo de la derecha, y el líder del campo de la derecha es Netanyahu»."
+          fr: "Winter : « Nous ne recommanderons que Netanyahou » — « Nous sommes dans le camp de la droite, et le chef du camp de la droite, c’est Netanyahou »."
       yisrael-beiteinu:
         value: -2
         basis: statement
@@ -696,6 +842,8 @@ questions:
         quote:
           he: "ליברמן: \"אני לא מוכן לשבת עם נתניהו, ש\"ס ויהדות התורה גם תמורת ראשות ממשלה.\""
           en: "Liberman: \"I am not willing to sit with Netanyahu, Shas and United Torah Judaism even in exchange for the premiership.\""
+          es: "Liberman: «No estoy dispuesto a sentarme con Netanyahu, Shas y Judaísmo Unido de la Torá ni siquiera a cambio del cargo de primer ministro.»"
+          fr: "Liberman : « Je ne suis pas prêt à siéger avec Netanyahou, Shas et le Judaïsme unifié de la Torah, même en échange du poste de Premier ministre. »"
       together:
         value: -2
         basis: statement
@@ -703,6 +851,8 @@ questions:
         quote:
           he: "בנט, לשאלה אם ישב תחת נתניהו: \"ברור שלא. אני הולך להחליף אותו.\""
           en: "Bennett, asked whether he would sit under Netanyahu: \"Obviously not. I am going to replace him.\""
+          es: "Bennett, preguntado si se sentaría bajo Netanyahu: «Obviamente no. Voy a sustituirlo.»"
+          fr: "Bennett, interrogé sur le fait de siéger sous Netanyahou : « Évidemment non. Je vais le remplacer. »"
       yashar:
         value: -2
         basis: statement
@@ -710,6 +860,8 @@ questions:
         quote:
           he: "איזנקוט בהשקת הקמפיין: \"באוקטובר הקרוב ממשלת האוקטובר הנורא תגיע לסופה… נחליף הנהגה חסרת חזון ואסטרטגיה.\""
           en: "Eisenkot at the campaign launch: \"This coming October, the government of the terrible October will come to its end… We will replace a leadership devoid of any vision and strategy.\""
+          es: "Eisenkot en el lanzamiento de la campaña: «Este octubre, el Gobierno del terrible octubre llegará a su fin… Sustituiremos a un liderazgo carente de toda visión y estrategia.»"
+          fr: "Eisenkot au lancement de la campagne : « En octobre prochain, le gouvernement du terrible octobre prendra fin… Nous remplacerons une direction dépourvue de toute vision et de toute stratégie. »"
       democrats:
         value: -2
         basis: statement
@@ -717,6 +869,8 @@ questions:
         quote:
           he: "גולן: המטרה היא \"להציל את ישראל ולהחליף את ממשלת האסון\"; מי שדוחה את רע\"ם \"משחק לידי נתניהו ושותפיו\"."
           en: "Golan: the mission is \"saving Israel and replacing the disaster government\"; rejecting Ra'am \"plays into the hands of Netanyahu and his partners\"."
+          es: "Golan: la misión es «salvar a Israel y sustituir al Gobierno del desastre»; rechazar a Ra’am «hace el juego a Netanyahu y sus socios»."
+          fr: "Golan : la mission est de « sauver Israël et remplacer le gouvernement du désastre » ; rejeter Ra’am « fait le jeu de Netanyahou et de ses partenaires »."
       raam:
         value: -2
         basis: statement
@@ -724,6 +878,8 @@ questions:
         quote:
           he: "רע\"ם מתכוונת להיות חלק מ\"גוש השינוי\" של מפלגות האופוזיציה, הרץ כדי להחליף את הקואליציה הנוכחית."
           en: "\"Ra'am intends to be part of the so-called change bloc of opposition parties, which is running to oust the current coalition.\""
+          es: "«Ra’am pretende formar parte del llamado bloque del cambio de los partidos de la oposición, que se presenta para desalojar a la coalición actual.»"
+          fr: "« Ra’am entend faire partie du bloc dit du changement des partis d’opposition, qui se présente pour évincer la coalition actuelle. »"
       joint-list:
         value: -2
         basis: statement
@@ -731,6 +887,8 @@ questions:
         quote:
           he: "ג'בארין: הדחת נתניהו, בן גביר וסמוטריץ' מהשלטון היא יעד בחירות מרכזי."
           en: "Jabareen: removing Netanyahu, Ben-Gvir and Smotrich from power is a central electoral objective."
+          es: "Jabareen: apartar del poder a Netanyahu, Ben Gvir y Smotrich es un objetivo electoral central."
+          fr: "Jabareen : écarter du pouvoir Netanyahou, Ben Gvir et Smotrich est un objectif électoral central."
   - id: arab-parties-coalition
     topic: government
     lean: left
@@ -749,6 +907,8 @@ questions:
         quote:
           he: "רע\"ם מתכוונת להיות חלק מגוש השינוי של מפלגות האופוזיציה."
           en: "\"Ra'am intends to be part of the so-called change bloc of opposition parties.\""
+          es: "«Ra’am pretende formar parte del llamado bloque del cambio de los partidos de la oposición.»"
+          fr: "« Ra’am entend faire partie du bloc dit du changement des partis d’opposition. »"
       joint-list:
         value: 1
         basis: statement
@@ -756,6 +916,8 @@ questions:
         quote:
           he: "ג'בארין בראיונות לאל-ג'רמק ולרדיו א-נאס (כפי שדווחו): תמיכה בגוש איזנקוט מותנית ב\"עקרונות יסוד המבטיחים שוויון וזכויות לחברה הערבית\"; \"מפלגה שמצטרפת לקואליציה כפופה לקווי היסוד שלה\"."
           en: "Jabareen in interviews with Al-Jarmak and Al-Nas Radio (as reported): support for the Eisenkot bloc is conditioned on \"basic principles guaranteeing equality and rights for Arab society\"; a \"party that joins a coalition becomes bound by its guiding principles\"."
+          es: "Jabareen en entrevistas con Al-Jarmak y Radio Al-Nas (según se informó): el apoyo al bloque de Eisenkot está condicionado a «principios básicos que garanticen la igualdad y los derechos de la sociedad árabe»; un «partido que entra en una coalición queda vinculado por sus principios rectores»."
+          fr: "Jabareen dans des entretiens à Al-Jarmak et à la radio Al-Nas (tels que rapportés) : le soutien au bloc d’Eisenkot est conditionné à des « principes de base garantissant l’égalité et les droits de la société arabe » ; un « parti qui rejoint une coalition devient lié par ses principes directeurs »."
       democrats:
         value: 2
         basis: statement
@@ -763,6 +925,8 @@ questions:
         quote:
           he: "גולן: \"אם עלינו להסתמך על קולות רע\"ם כדי להפיל את הממשלה… רע\"ם היא שותפה ראויה.\""
           en: "Golan: \"If we must rely on the votes of the Ra'am party to topple this failed government… then Ra'am is a worthy partner.\""
+          es: "Golan: «Si debemos apoyarnos en los votos del partido Ra’am para derribar a este Gobierno fallido… entonces Ra’am es un socio digno.»"
+          fr: "Golan : « Si nous devons nous appuyer sur les voix du parti Ra’am pour renverser ce gouvernement failli… alors Ra’am est un partenaire digne. »"
       yisrael-beiteinu:
         value: -2
         basis: platform
@@ -770,6 +934,8 @@ questions:
         quote:
           he: "\"הממשלה הבאה… תורכב אך ורק ממפלגות ציוניות.\""
           en: "\"The next government… will be composed solely of Zionist parties.\""
+          es: "«El próximo Gobierno… estará compuesto únicamente por partidos sionistas.»"
+          fr: "« Le prochain gouvernement… sera composé uniquement de partis sionistes. »"
       reservists:
         value: -2
         basis: platform
@@ -777,6 +943,8 @@ questions:
         quote:
           he: "\"ממשלה ציונית: למדנו כי ממשלה שמסתמכת על מפלגות לא ציוניות (חרדיות או ערביות) נסחטת לקבל החלטות לא ציוניות.\""
           en: "\"A Zionist government: we learned that a government relying on non-Zionist parties (haredi or Arab) is extorted into non-Zionist decisions.\""
+          es: "«Un Gobierno sionista: aprendimos que un Gobierno que depende de partidos no sionistas (jaredíes o árabes) es extorsionado hacia decisiones no sionistas.»"
+          fr: "« Un gouvernement sioniste : nous avons appris qu’un gouvernement qui dépend de partis non sionistes (haredim ou arabes) est contraint à des décisions non sionistes. »"
       together:
         value: -2
         basis: statement
@@ -784,6 +952,8 @@ questions:
         quote:
           he: "בנט: יסתמך רק על מפלגות ציוניות לקואליציה ולא ישב שוב עם רע\"ם של עבאס."
           en: "Bennett would \"only rely on Zionist parties for his coalition rather than sitting with Abbas's Ra'am again.\""
+          es: "Bennett «solo se apoyaría en partidos sionistas para su coalición, en lugar de volver a sentarse con el Ra’am de Abbas»."
+          fr: "Bennett « ne s’appuierait que sur des partis sionistes pour sa coalition, plutôt que de siéger à nouveau avec le Ra’am d’Abbas »."
       blue-white:
         value: -1
         basis: statement
@@ -791,6 +961,8 @@ questions:
         quote:
           he: "כחול לבן על דרכו של איזנקוט: \"ממשלת מיעוט שנשענת על המפלגות הערביות\" (7.9.2026) — הרשימה מציגה הישענות על מפלגות ערביות כפגם."
           en: "Blue and White on Eisenkot's path: \"a minority government leaning on the Arab parties\" (7 Sep 2026) — the list presents relying on Arab parties as a flaw."
+          es: "Azul y Blanco sobre el camino de Eisenkot: «un Gobierno en minoría apoyado en los partidos árabes» (7 de septiembre de 2026) — la lista presenta el apoyo en partidos árabes como un defecto."
+          fr: "Bleu et Blanc sur la voie d’Eisenkot : « un gouvernement minoritaire s’appuyant sur les partis arabes » (7 septembre 2026) — la liste présente l’appui des partis arabes comme un défaut."
       likud:
         value: -2
         basis: statement
@@ -798,6 +970,8 @@ questions:
         quote:
           he: "הליכוד עתר לוועדת הבחירות לפסול את רע\"ם ואת הרשימה המשותפת: \"אין מקום בכנסת למי שפוגעים בחיילי צה\"ל ואינם מסוגלים לומר שחמאס וחיזבאללה הם ארגוני טרור.\""
           en: "Likud petitioned the Elections Committee to ban Ra'am and the Joint List: \"There is no room in the Knesset for those who harm IDF soldiers and are unable to say that Hamas and Hezbollah are terrorist organizations.\""
+          es: "El Likud pidió a la Comisión Electoral que inhabilite a Ra’am y a la Lista Conjunta: «No hay lugar en la Knéset para quienes dañan a los soldados de las FDI y son incapaces de decir que Hamás y Hezbolá son organizaciones terroristas.»"
+          fr: "Le Likoud a demandé à la Commission électorale d’interdire Ra’am et la Liste commune : « Il n’y a pas de place à la Knesset pour ceux qui nuisent aux soldats de Tsahal et sont incapables de dire que le Hamas et le Hezbollah sont des organisations terroristes. »"
       otzma:
         value: -2
         basis: statement
@@ -805,6 +979,8 @@ questions:
         quote:
           he: "עוצמה יהודית עתרה קודם לכן לפסילת רע\"ם, בטענה שהמפלגה תומכת במאבק מזוין נגד ישראל."
           en: "Otzma Yehudit previously petitioned to disqualify Ra'am, alleging the party supported armed struggle against Israel."
+          es: "Otzma Yehudit ya había pedido la inhabilitación de Ra’am, alegando que el partido apoyó la lucha armada contra Israel."
+          fr: "Otzma Yehoudit avait déjà demandé l’invalidation de Ra’am, alléguant que le parti avait soutenu la lutte armée contre Israël."
   - id: death-penalty
     topic: security
     lean: right
@@ -813,7 +989,7 @@ questions:
       en: "Terrorists should face the death penalty."
       ar: "يجب فرض عقوبة الإعدام على الإرهابيين."
       ru: "Террористов следует приговаривать к смертной казни."
-      es: "Los terroristas deberían enfrentarse a la pena de muerte."
+      es: "Debería aplicarse la pena de muerte a los terroristas."
       fr: "Les terroristes devraient encourir la peine de mort."
     stances:
       likud:
@@ -824,6 +1000,8 @@ questions:
         quote:
           he: "31 בעד, 0 נגד, 1 נעדרו"
           en: "31 for, 0 against, 1 absent"
+          es: "31 a favor, 0 en contra, 1 ausente"
+          fr: "31 pour, 0 contre, 1 absent"
       shas:
         value: 2
         basis: vote
@@ -832,6 +1010,8 @@ questions:
         quote:
           he: "10 בעד, 0 נגד, 1 נעדרו"
           en: "10 for, 0 against, 1 absent"
+          es: "10 a favor, 0 en contra, 1 ausente"
+          fr: "10 pour, 0 contre, 1 absent"
       rz-zehut:
         value: 2
         basis: vote
@@ -840,6 +1020,8 @@ questions:
         quote:
           he: "7 בעד, 0 נגד"
           en: "7 for, 0 against"
+          es: "7 a favor, 0 en contra"
+          fr: "7 pour, 0 contre"
       otzma:
         value: 2
         basis: vote
@@ -848,6 +1030,8 @@ questions:
         quote:
           he: "6 בעד, 0 נגד"
           en: "6 for, 0 against"
+          es: "6 a favor, 0 en contra"
+          fr: "6 pour, 0 contre"
       yisrael-beiteinu:
         value: 2
         basis: vote
@@ -856,6 +1040,8 @@ questions:
         quote:
           he: "4 בעד, 0 נגד, 2 נעדרו"
           en: "4 for, 0 against, 2 absent"
+          es: "4 a favor, 0 en contra, 2 ausentes"
+          fr: "4 pour, 0 contre, 2 absents"
       utj:
         value: -2
         basis: vote
@@ -864,6 +1050,8 @@ questions:
         quote:
           he: "0 בעד, 4 נגד, 1 נמנעו, 2 נעדרו"
           en: "0 for, 4 against, 1 abstained, 2 absent"
+          es: "0 a favor, 4 en contra, 1 abstención, 2 ausentes"
+          fr: "0 pour, 4 contre, 1 abstention, 2 absents"
       raam:
         value: -2
         basis: vote
@@ -872,6 +1060,8 @@ questions:
         quote:
           he: "0 בעד, 5 נגד"
           en: "0 for, 5 against"
+          es: "0 a favor, 5 en contra"
+          fr: "0 pour, 5 contre"
       democrats:
         value: -2
         basis: vote
@@ -880,6 +1070,8 @@ questions:
         quote:
           he: "0 בעד, 4 נגד"
           en: "0 for, 4 against"
+          es: "0 a favor, 4 en contra"
+          fr: "0 pour, 4 contre"
       joint-list:
         value: -2
         basis: vote
@@ -888,6 +1080,8 @@ questions:
         quote:
           he: "0 בעד, 5 נגד"
           en: "0 for, 5 against"
+          es: "0 a favor, 5 en contra"
+          fr: "0 pour, 5 contre"
       together:
         value: -2
         basis: vote
@@ -901,6 +1095,8 @@ questions:
         quote:
           he: "0 בעד, 23 נגד, 1 נעדרו"
           en: "0 for, 23 against, 1 absent"
+          es: "0 a favor, 23 en contra, 1 ausente"
+          fr: "0 pour, 23 contre, 1 absent"
       blue-white:
         value: -2
         basis: vote
@@ -909,6 +1105,8 @@ questions:
         quote:
           he: "0 בעד, 7 נגד, 1 נעדרו"
           en: "0 for, 7 against, 1 absent"
+          es: "0 a favor, 7 en contra, 1 ausente"
+          fr: "0 pour, 7 contre, 1 absent"
   - id: core-curriculum
     topic: education
     lean: left
@@ -927,6 +1125,8 @@ questions:
         quote:
           he: "\"נדרוש 100% ליבה תמורת תקצוב ציבורי.\""
           en: "\"We will demand 100% core curriculum in return for public funding.\""
+          es: "«Exigiremos el 100 % del currículo básico a cambio de la financiación pública.»"
+          fr: "« Nous exigerons 100 % du tronc commun en échange du financement public. »"
       yisrael-beiteinu:
         value: 2
         basis: platform
@@ -934,6 +1134,8 @@ questions:
         quote:
           he: "\"חובת לימודי ליבה לכל תלמיד… מוסדות שלא יעמדו בדרישות הליבה לא יהיו זכאים לתקצוב.\""
           en: "\"Mandatory core studies for every pupil… institutions that do not meet the core requirements will not be entitled to funding.\""
+          es: "«Estudios básicos obligatorios para todos los alumnos… las instituciones que no cumplan los requisitos del currículo básico no tendrán derecho a financiación.»"
+          fr: "« Un tronc commun obligatoire pour chaque élève… les établissements qui ne respectent pas les exigences du tronc commun n’auront pas droit au financement. »"
       yashar:
         value: 2
         basis: platform
@@ -941,6 +1143,8 @@ questions:
         quote:
           he: "\"ננהיג לימודי ליבה לכל\" (צעד 4)."
           en: "\"We will institute core studies for all\" (step 4)."
+          es: "«Instauraremos los estudios básicos para todos» (punto 4)."
+          fr: "« Nous instaurerons le tronc commun pour tous » (point 4)."
       democrats:
         value: 2
         basis: vote
@@ -952,6 +1156,8 @@ questions:
         quote:
           he: "3 בעד, 0 נגד, 1 נעדרו"
           en: "3 for, 0 against, 1 absent"
+          es: "3 a favor, 0 en contra, 1 ausente"
+          fr: "3 pour, 0 contre, 1 absent"
       blue-white:
         value: 1
         basis: vote
@@ -965,6 +1171,8 @@ questions:
         quote:
           he: "3 בעד, 0 נגד, 9 נעדרו — פחות ממחצית הסיעה הצביעה, לכן העוצמה הוגבלה"
           en: "3 for, 0 against, 9 absent — fewer than half the faction voted, so the strength is capped"
+          es: "3 a favor, 0 en contra, 9 ausentes — votó menos de la mitad de la facción, por lo que la intensidad se limita"
+          fr: "3 pour, 0 contre, 9 absents — moins de la moitié de la faction a voté, l’intensité est donc plafonnée"
       likud:
         value: -2
         basis: vote
@@ -973,6 +1181,8 @@ questions:
         quote:
           he: "0 בעד, 19 נגד, 13 נעדרו"
           en: "0 for, 19 against, 13 absent"
+          es: "0 a favor, 19 en contra, 13 ausentes"
+          fr: "0 pour, 19 contre, 13 absents"
       shas:
         value: -2
         basis: vote
@@ -981,6 +1191,8 @@ questions:
         quote:
           he: "0 בעד, 7 נגד, 4 נעדרו"
           en: "0 for, 7 against, 4 absent"
+          es: "0 a favor, 7 en contra, 4 ausentes"
+          fr: "0 pour, 7 contre, 4 absents"
       utj:
         value: -1
         basis: vote
@@ -989,6 +1201,8 @@ questions:
         quote:
           he: "0 בעד, 2 נגד, 5 נעדרו — פחות ממחצית הסיעה הצביעה, לכן העוצמה הוגבלה"
           en: "0 for, 2 against, 5 absent — fewer than half the faction voted, so the strength is capped"
+          es: "0 a favor, 2 en contra, 5 ausentes — votó menos de la mitad de la facción, por lo que la intensidad se limita"
+          fr: "0 pour, 2 contre, 5 absents — moins de la moitié de la faction a voté, l’intensité est donc plafonnée"
       rz-zehut:
         value: -2
         basis: vote
@@ -997,6 +1211,8 @@ questions:
         quote:
           he: "0 בעד, 4 נגד, 3 נעדרו"
           en: "0 for, 4 against, 3 absent"
+          es: "0 a favor, 4 en contra, 3 ausentes"
+          fr: "0 pour, 4 contre, 3 absents"
       otzma:
         value: -2
         basis: vote
@@ -1005,6 +1221,8 @@ questions:
         quote:
           he: "0 בעד, 5 נגד, 1 נעדרו"
           en: "0 for, 5 against, 1 absent"
+          es: "0 a favor, 5 en contra, 1 ausente"
+          fr: "0 pour, 5 contre, 1 absent"
       haredi-public:
         value: -1
         basis: platform
@@ -1012,3 +1230,5 @@ questions:
         quote:
           he: "\"נשמור על עצמאות החינוך החרדי מכל משמר, לצד חיזוק משמעותי של זרם הממ\"ח. ילדינו זקוקים ללימודי אנגלית ומתמטיקה.\""
           en: "\"We will guard the independence of haredi education, alongside significantly strengthening the state-haredi stream. Our children need English and maths studies.\""
+          es: "«Defenderemos la independencia de la educación jaredí, junto con un fortalecimiento significativo de la corriente estatal-jaredí. Nuestros hijos necesitan estudios de inglés y matemáticas.»"
+          fr: "« Nous préserverons l’indépendance de l’éducation haredi, tout en renforçant nettement la filière publique haredi. Nos enfants ont besoin d’études d’anglais et de mathématiques. »"

@@ -13,7 +13,7 @@ import {
   partyList,
   type ElectionFact,
 } from "@/lib/content";
-import { formatDate } from "@/lib/format";
+import { formatDate, formatNumber } from "@/lib/format";
 import { rtlAttrs } from "@/lib/text";
 import { getFactionAvgParticipation, getFactionTallies } from "@/lib/queries";
 import { KeyDatesTimeline } from "@/components/KeyDatesTimeline";
@@ -277,7 +277,7 @@ export default async function ElectionsHistoryPage() {
                       if (avg == null) return null;
                       return (
                         <p className="text-xs text-muted">
-                          {te("recordParticipation", { pct: avg })}{" "}
+                          {te("recordParticipation", { pct: formatNumber(avg, locale, 1) })}{" "}
                           <Link href={`/parties/${p.factionId}`} className="underline hover:text-accent-ink">
                             {tc("source")}: {tc("knesset")}
                           </Link>

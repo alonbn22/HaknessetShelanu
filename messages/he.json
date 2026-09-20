@@ -85,7 +85,7 @@
     "allParties": "כל הסיעות",
     "allBlocs": "קואליציה ואופוזיציה",
     "noResults": "לא נמצאו חברי כנסת",
-    "count": "{count} חברי כנסת",
+    "count": "{count, plural, one {חבר כנסת אחד} other {# חברי כנסת}}",
     "former": "לשעבר",
     "servedUntil": "כיהן/ה עד {date}",
     "minister": "שר/ה",
@@ -111,7 +111,7 @@
     "currentMk": "חבר כנסת מכהן",
     "formerMk": "כיהן בעבר בכנסת זו",
     "billsProposed": "הצעות חוק שיזם",
-    "billsProposedCount": "{count} הצעות חוק",
+    "billsProposedCount": "{count, plural, one {הצעת חוק אחת} other {# הצעות חוק}}",
     "questions": "שאילתות",
     "questionsAnswered": "{answered} מתוך {total} שאילתות נענו",
     "avgResponse": "זמן מענה ממוצע: {days} ימים",
@@ -168,8 +168,8 @@
     "seats": "מנדטים",
     "coalitionNote": "סיווג קואליציה/אופוזיציה כפי שעמד בפיזור הכנסת ב-{asOf}; מאז מכהנת ממשלת מעבר עד להשבעת ממשלת הכנסת ה-26. מקור:",
     "timelineTitle": "איך השתנתה הספירה במהלך הקדנציה",
-    "timelineIntro": "מספר חברי הקואליציה בכל שינוי, לפי הודעות הסיעות כפי שדווחו. מספרים אחרים שרואים ברשת — 64, 76, 68, 67 — הם תחנות קודמות בקו הזה.",
-    "timelineSize": "{n} חברי קואליציה"
+    "timelineIntro": "מספר חברי הקואליציה בכל שינוי, לפי הודעות הסיעות כפי שדווחו. מספרים אחרים שרואים ברשת — 64, 76, 68, 61 — הם תחנות קודמות בקו הזה.",
+    "timelineSize": "{n, plural, one {חבר קואליציה אחד} other {# חברי קואליציה}}"
   },
   "party": {
     "membersTitle": "חברי הסיעה",
@@ -239,7 +239,7 @@
     "statusRaised": "הועלו (קריאה טרומית)",
     "statusFinal": "קריאה שלישית",
     "searchSubject": "חיפוש לפי נושא…",
-    "resultsCount": "{count} תוצאות",
+    "resultsCount": "{count, plural, one {תוצאה אחת} other {# תוצאות}}",
     "whatItSays": "מה אומר החוק",
     "explanatoryNotes": "דברי הסבר / נוסח לקריאה ראשונה",
     "publishedLaw": "החוק כפי שפורסם",
@@ -384,7 +384,7 @@
     "subtitle": "הסברים פשוטים למונחים פוליטיים — חיפשו מונח או בחרו נושא.",
     "search": "חיפוש מונח…",
     "all": "כל הנושאים",
-    "results": "{count} מונחים",
+    "results": "{count, plural, one {מונח אחד} other {# מונחים}}",
     "noResults": "לא נמצאו מונחים",
     "cat_spectrum": "מפה פוליטית",
     "cat_ideology": "אידאולוגיות",
@@ -482,7 +482,7 @@
     "totalVotesCol": "החמצות / סה\"כ",
     "note": "הבסיס הוא כלל ההצבעות שנערכו בתקופת כהונת חבר/ת הכנסת.",
     "servingOnlyNote": "כל נתוני הנוכחות באתר משקפים אך ורק את חברי הכנסת המכהנים כיום. חברים שפרשו ממושבם (למשל שרים לפי החוק הנורווגי) אינם נכללים.",
-    "count": "{count} חברי כנסת מכהנים",
+    "count": "{count, plural, one {חבר כנסת מכהן אחד} other {# חברי כנסת מכהנים}}",
     "searchPlaceholder": "חיפוש חבר כנסת או סיעה…"
   },
   "ministers": {
@@ -563,7 +563,7 @@
     "sortAmount": "לפי סכום",
     "sortName": "לפי שם",
     "sortCode": "לפי קוד",
-    "resultsCount": "{count} סעיפים",
+    "resultsCount": "{count, plural, one {סעיף אחד} other {# סעיפים}}",
     "noResults": "לא נמצאו סעיפים",
     "colLine": "סעיף תקציבי",
     "colMinistry": "משרד",
@@ -590,7 +590,7 @@
     "statFirms": "חברות שדלנות",
     "statClients": "לקוחות",
     "searchPlaceholder": "חיפוש שדלן, חברה או לקוח…",
-    "results": "{count} שדלנים",
+    "results": "{count, plural, one {שדלן אחד} other {# שדלנים}}",
     "noResults": "לא נמצאו שדלנים",
     "firm": "חברה",
     "clients": "לקוחות (מי משלם)",
@@ -694,7 +694,7 @@
   "bill": {
     "journey": "מסלול החקיקה",
     "noJourney": "אין עדיין הצבעות קריאה מתועדות להצעת חוק זו.",
-    "atStage": "{count} הצבעות בשלב זה",
+    "atStage": "{count, plural, one {הצבעה אחת בשלב זה} other {# הצבעות בשלב זה}}",
     "relatedVotes": "ועוד {count} הצבעות קשורות (הסתייגויות, הצבעות על סעיפים ועוד)",
     "firstReadingText": "נוסח לקריאה ראשונה"
   },

@@ -89,8 +89,8 @@ test("a coalition under 61 is shown as a minority government with the law as its
   assert.equal(m.size, last.size);
   assert.equal(m.minority, last.size < 61);
   if (m.minority) {
-    // The date is the first step of the trailing run under 61 — UTJ's exit.
-    assert.equal(m.since, "2025-07-14");
+    // The date is the first step of the trailing run under 61 — Maoz's announcement (UTJ's exit two days earlier left 61).
+    assert.equal(m.since, "2025-07-16");
     assert.ok(m.sources.length >= 1, "a minority note needs the Basic Law as a source");
     assert.ok(m.sources.some((s) => s.url.includes("knesset.gov.il")), "the majority rule must cite the Knesset");
     for (const s of m.sources) assert.match(s.url, /^https:\/\//);

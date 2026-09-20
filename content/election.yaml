@@ -24,18 +24,18 @@ intro:
   he: "הכנסת ה-25 השלימה קדנציה מלאה והתפזרה ב-17 ביולי 2026, והבחירות יתקיימו במועד הקבוע בחוק. הרשימות הוגשו ב-7–8 בספטמבר 2026. בעמוד זה: המועדים, מי מתמודד ועם מי, כללי הבחירות והנתונים — כל פריט עם מקור."
   en: "The 25th Knesset completed a full term and dispersed on July 17, 2026; the election will be held on its statutory date. The lists were submitted on September 7–8, 2026. This page covers the timeline, who is running and with whom, the rules, and the numbers — every item with a source."
   es: "La 25.ª Knéset completó una legislatura entera y se disolvió el 17 de julio de 2026; las elecciones se celebran en su fecha legal. Las listas se presentaron el 7 y 8 de septiembre de 2026. Esta página recoge el calendario, quién se presenta y con quién, las reglas y las cifras — cada dato con su fuente."
-  fr: "La 25e Knesset a achevé une législature complète et s’est dissoute le 17 juillet 2026 ; les élections se tiennent à leur date légale. Les listes ont été déposées les 7 et 8 septembre 2026. Cette page couvre le calendrier, qui se présente et avec qui, les règles et les chiffres — chaque élément avec sa source."
+  fr: "La 25e Knesset a achevé une législature complète et s’est dissoute le 17 juillet 2026 ; les élections se tiennent à leur date légale. Les listes ont été déposées les 7 et 8 septembre 2026. Cette page couvre le calendrier, qui se présente et avec qui, les règles et les chiffres — chaque élément avec sa source."
 
 # The road to the 26th Knesset — when each thing becomes known/final.
 keyDates:
   - key: kd-lists
     date: "2026-09-08"
-    label: { he: "הגשת רשימות המועמדים — ההרכבים סופיים", en: "Candidate lists submitted — line-ups are final", es: "Listas de candidatos presentadas — las candidaturas son definitivas", fr: "Listes de candidats déposées — les compositions sont définitives" }
+    label: { he: "הגשת רשימות המועמדים — ההרכבים סופיים", en: "Candidate lists submitted — line-ups are final", es: "Listas de candidatos presentadas — la composición de las listas es definitiva", fr: "Listes de candidats déposées — les compositions sont définitives" }
     detail:
       he: "38 רשימות הוגשו ליו\"ר ועדת הבחירות המרכזית, השופט נעם סולברג, במשכן הכנסת ב-7–8 בספטמבר 2026. ההגשה אינה אישור: הרשימות, הכינויים והאותיות נבדקים כעת."
       en: "38 lists were submitted to the chair of the Central Elections Committee, Justice Noam Sohlberg, at the Knesset on September 7–8, 2026. Submission is not approval: the lists, names and ballot letters are now under review."
       es: "Se presentaron 38 listas ante el presidente de la Comisión Electoral Central, el juez Noam Sohlberg, en la Knéset los días 7 y 8 de septiembre de 2026. Presentar no es aprobar: las listas, los nombres y las letras de papeleta están ahora en revisión."
-      fr: "38 listes ont été déposées auprès du président de la Commission électorale centrale, le juge Noam Sohlberg, à la Knesset les 7 et 8 septembre 2026. Le dépôt ne vaut pas approbation : les listes, les noms et les lettres de bulletin sont en cours d’examen."
+      fr: "38 listes ont été déposées auprès du président de la Commission électorale centrale, le juge Noam Sohlberg, à la Knesset les 7 et 8 septembre 2026. Le dépôt ne vaut pas approbation : les listes, les noms et les lettres de bulletin sont en cours d’examen."
     status: confirmed
     sources:
       - url: "https://ch10.co.il/news/1100694/"
@@ -54,7 +54,7 @@ keyDates:
       he: "לפי ציר הזמן של ועדת הבחירות המרכזית: ב-27 בספטמבר 2026 מתפרסמות ההודעות על אישור רשימות המועמדים (סעיף 63 לחוק) או על סירוב לאשרן."
       en: "Per the Central Elections Committee's timeline: on September 27, 2026 the notices approving the candidate lists (section 63 of the law) — or refusing to — are published."
       es: "Según el calendario de la Comisión Electoral Central: el 27 de septiembre de 2026 se publican los avisos de aprobación de las listas de candidatos (artículo 63 de la ley) — o de rechazo."
-      fr: "Selon le calendrier de la Commission électorale centrale : le 27 septembre 2026 sont publiés les avis d’approbation des listes de candidats (article 63 de la loi) — ou de refus."
+      fr: "Selon le calendrier de la Commission électorale centrale : le 27 septembre 2026 sont publiés les avis d’approbation des listes de candidats (article 63 de la loi) — ou de refus."
     status: confirmed
     sources:
       - url: "https://www.bechirot.gov.il/home/"
@@ -69,7 +69,7 @@ keyDates:
     detail:
       he: "ועדת הבחירות שולחת לכל בוחר הודעה עם מקום הקלפי שלו (סעיף 55ב לחוק הבחירות)."
       en: "The Elections Committee sends every voter a notice with their polling station (section 55B of the Elections Law)."
-      es: "La Comisión Electoral envía a cada votante un aviso con su colegio electoral (artículo 55B de la Ley Electoral)."
+      es: "La Comisión Electoral envía a cada votante un aviso con su centro de votación (artículo 55B de la Ley Electoral)."
       fr: "La Commission électorale envoie à chaque électeur un avis indiquant son bureau de vote (article 55B de la loi électorale)."
     status: confirmed
     sources:
@@ -91,7 +91,7 @@ keyDates:
       he: "רק מי שרשאי להצביע בנציגות (דיפלומטים, שליחים ובני משפחותיהם) ובכלי שיט ישראליים מצביע ביום זה; אין הצבעה כללית מחו\"ל."
       en: "Only those entitled to vote at a mission (diplomats, emissaries and their families) and on Israeli ships vote on this day; there is no general voting from abroad."
       es: "Ese día votan solo quienes tienen derecho a votar en una misión (diplomáticos, enviados y sus familias) y en barcos israelíes; no hay voto general desde el extranjero."
-      fr: "Ce jour-là ne votent que les personnes habilitées à voter dans une mission (diplomates, émissaires et leurs familles) et sur les navires israéliens ; il n’y a pas de vote général depuis l’étranger."
+      fr: "Ce jour-là ne votent que les personnes habilitées à voter dans une mission (diplomates, émissaires et leurs familles) et sur les navires israéliens ; il n’y a pas de vote général depuis l’étranger."
     status: confirmed
     sources:
       - url: "https://www.bechirot.gov.il/home/"
@@ -137,7 +137,7 @@ keyDates:
       he: "לפי ציר הזמן של ועדת הבחירות המרכזית: פרסום תוצאות הבחירות ב-4 בנובמבר 2026 (שמונה ימים אחרי הבחירות, לפי סעיף 11 לחוק-יסוד: הכנסת); לפי דיווחים, ערעורים עד 18 בנובמבר."
       en: "Per the Central Elections Committee's timeline: the election results are published on November 4, 2026 (eight days after the election, under section 11 of Basic Law: The Knesset); per reports, appeals by November 18."
       es: "Según el calendario de la Comisión Electoral Central: los resultados se publican el 4 de noviembre de 2026 (ocho días después de las elecciones, según el artículo 11 de la Ley Fundamental: la Knéset); según informaciones, recursos hasta el 18 de noviembre."
-      fr: "Selon le calendrier de la Commission électorale centrale : les résultats sont publiés le 4 novembre 2026 (huit jours après les élections, article 11 de la Loi fondamentale : la Knesset) ; selon la presse, recours jusqu’au 18 novembre."
+      fr: "Selon le calendrier de la Commission électorale centrale : les résultats sont publiés le 4 novembre 2026 (huit jours après les élections, article 11 de la Loi fondamentale : la Knesset) ; selon la presse, recours jusqu’au 18 novembre."
     status: confirmed
     sources:
       - url: "https://www.bechirot.gov.il/home/"
@@ -153,7 +153,7 @@ keyDates:
       he: "ישיבתה הראשונה של הכנסת ה-26 צפויה ב-10 בנובמבר 2026; לאחר מכן מתחיל תהליך הרכבת הממשלה."
       en: "The 26th Knesset's first sitting is expected on November 10, 2026; government formation begins thereafter."
       es: "La primera sesión de la 26.ª Knéset está prevista para el 10 de noviembre de 2026; después comienza la formación del Gobierno."
-      fr: "La première séance de la 26e Knesset est attendue le 10 novembre 2026 ; la formation du gouvernement commence ensuite."
+      fr: "La première séance de la 26e Knesset est attendue le 10 novembre 2026 ; la formation du gouvernement commence ensuite."
     status: reported
     sources:
       - url: "https://www.zman.co.il/live/705042/"
@@ -166,8 +166,8 @@ facts:
     detail:
       he: "אחרי חלוקת המנדטים לפי שיטת בדר-עופר נשארים לכל רשימה קולות \"עודפים\" שלא הספיקו למנדט נוסף. שתי רשימות רשאיות להסכים מראש לאחד את עודפיהן, וכך אחת מהן עשויה לזכות במנדט הנוסף במקום שיאבד. ההסכמים מוגשים לוועדת הבחירות המרכזית עד 16 באוקטובר 2026. עד כה דווח על שלושה זוגות: ישר! והדמוקרטים, ישראל ביתנו וביחד, והרשימה המשותפת ורע\"ם — מוצג על כרטיס כל רשימה."
       en: "After seats are allocated by the Bader-Ofer method, each list is left with \"surplus\" votes that fell short of another seat. Two lists may agree in advance to pool their surpluses, so that one of them can win the extra seat instead of losing it. Agreements are filed with the Central Elections Committee by October 16, 2026. Three pairs have been reported so far: Yashar! and the Democrats, Yisrael Beiteinu and Together, and the Joint List and Ra'am — shown on each list's card."
-      es: "Tras repartir los escaños por el método Bader-Ofer, a cada lista le quedan votos «sobrantes» que no alcanzaron para otro escaño. Dos listas pueden acordar de antemano sumar sus sobrantes, de modo que una de ellas gane el escaño extra en lugar de perderlo. Los acuerdos se presentan ante la Comisión Electoral Central hasta el 16 de octubre de 2026. Hasta ahora se han informado tres parejas: ¡Yashar! y los Demócratas, Yisrael Beiteinu y Juntos, y la Lista Conjunta y Ra'am — se muestran en la ficha de cada lista."
-      fr: "Après la répartition des sièges selon la méthode Bader-Ofer, chaque liste garde des voix « restantes » insuffisantes pour un siège de plus. Deux listes peuvent convenir à l’avance de mettre leurs restes en commun, afin que l’une d’elles remporte le siège supplémentaire au lieu de le perdre. Les accords sont déposés auprès de la Commission électorale centrale jusqu’au 16 octobre 2026. Trois paires ont été rapportées à ce jour : Yashar! et les Démocrates, Israël Beiteinou et Ensemble, la Liste commune et Ra'am — affichées sur la fiche de chaque liste."
+      es: "Tras repartir los escaños por el método Bader-Ofer, a cada lista le quedan votos «sobrantes» que no alcanzaron para otro escaño. Dos listas pueden acordar de antemano sumar sus sobrantes, de modo que una de ellas gane el escaño extra en lugar de perderlo. Los acuerdos se presentan ante la Comisión Electoral Central hasta el 16 de octubre de 2026. Hasta ahora se ha informado de tres pares de listas: ¡Yashar! y los Demócratas, Yisrael Beiteinu y Juntos, y la Lista Conjunta y Ra'am — se muestran en la ficha de cada lista."
+      fr: "Après la répartition des sièges selon la méthode Bader-Ofer, chaque liste garde des voix « restantes » insuffisantes pour un siège de plus. Deux listes peuvent convenir à l’avance de mettre leurs restes en commun, afin que l’une d’elles remporte le siège supplémentaire au lieu de le perdre. Les accords sont déposés auprès de la Commission électorale centrale jusqu’au 16 octobre 2026. Trois paires ont été rapportées à ce jour : Yashar! et les Démocrates, Israël Beiteinou et Ensemble, la Liste commune et Ra'am — affichées sur la fiche de chaque liste."
     status: reported
     sources:
       - url: "https://www.bechirot.gov.il/home/"
@@ -185,7 +185,7 @@ facts:
     detail:
       he: "המועד נקבע על ידי יו\"ר ועדת הבחירות המרכזית, שופט בית המשפט העליון נעם סולברג, ועוגן גם בחקיקה במליאת הכנסת ביולי 2026."
       en: "The date was set by Central Elections Committee chair Justice Noam Sohlberg and was also anchored in legislation by the Knesset plenum in July 2026."
-      es: "La fecha la fijó el presidente de la Comisión Electoral Central, el juez Noam Sohlberg, y el pleno de la Knéset la fijó también por ley en julio de 2026."
+      es: "La fecha la fijó el presidente de la Comisión Electoral Central, el juez Noam Sohlberg, y el pleno de la Knéset la consagró también en la ley en julio de 2026."
       fr: "La date a été fixée par le président de la Commission électorale centrale, le juge Noam Sohlberg, et également inscrite dans la loi par la plénière de la Knesset en juillet 2026."
     status: confirmed
     sources:
@@ -203,7 +203,7 @@ facts:
     detail:
       he: "הכנסת ה-25 (נבחרה ב-1.11.2022, הושבעה ב-15.11.2022) השלימה קדנציה מלאה והתפזרה ב-17 ביולי 2026 — על פי דיווחים, הפעם הראשונה מאז 1988 שהבחירות מתקיימות במועדן החוקי המלא."
       en: "The 25th Knesset (elected Nov 1, 2022, sworn in Nov 15, 2022) completed a full term and dispersed on July 17, 2026 — per reports, the first time since 1988 that elections are held on their full statutory date."
-      es: "La 25.ª Knéset (elegida el 1 de noviembre de 2022, constituida el 15 de noviembre de 2022) completó una legislatura entera y se disolvió el 17 de julio de 2026 — según informaciones, la primera vez desde 1988 que las elecciones se celebran en su fecha legal completa."
+      es: "La 25.ª Knéset (elegida el 1 de noviembre de 2022, constituida el 15 de noviembre de 2022) completó una legislatura entera y se disolvió el 17 de julio de 2026 — según informaciones, la primera vez desde 1988 que las elecciones se celebran en la fecha que marca la ley al término de una legislatura completa."
       fr: "La 25e Knesset (élue le 1er novembre 2022, installée le 15 novembre 2022) a achevé une législature complète et s’est dissoute le 17 juillet 2026 — selon la presse, la première fois depuis 1988 que des élections se tiennent à leur date légale."
     status: reported
     sources:
@@ -219,7 +219,7 @@ facts:
       he: "לפי חוק-יסוד: הכנסת (סעיפים 8–9), בתום כהונה מלאה הבחירות מתקיימות ביום שלישי השלישי בחודש חשוון; מכאן נגזר המועד 27 באוקטובר 2026 (ט\"ז בחשוון התשפ\"ז)."
       en: "Under Basic Law: The Knesset (sections 8–9), after a full term elections are held on the third Tuesday of the Hebrew month of Cheshvan; this yields October 27, 2026 (16 Cheshvan 5787)."
       es: "Según la Ley Fundamental: la Knéset (artículos 8–9), tras una legislatura completa las elecciones se celebran el tercer martes del mes hebreo de jeshván; de ahí el 27 de octubre de 2026 (16 de jeshván de 5787)."
-      fr: "Selon la Loi fondamentale : la Knesset (articles 8–9), après une législature complète, les élections ont lieu le troisième mardi du mois hébraïque de hechvan ; d’où le 27 octobre 2026 (16 hechvan 5787)."
+      fr: "Selon la Loi fondamentale : la Knesset (articles 8–9), après une législature complète, les élections ont lieu le troisième mardi du mois hébraïque de hechvan ; d’où le 27 octobre 2026 (16 hechvan 5787)."
     status: scheduled-by-law
     sources:
       - url: "https://m.knesset.gov.il/EN/activity/documents/BasicLawsPDF/BasicLawTheKnesset.pdf"
@@ -234,8 +234,8 @@ facts:
     detail:
       he: "38 רשימות הוגשו ליו\"ר ועדת הבחירות המרכזית, השופט נעם סולברג, במשכן הכנסת. ההגשה אינה אישור: הרשימות, הכינויים והאותיות נבדקים, והאישור הסופי דווח ל-27 בספטמבר."
       en: "38 lists were submitted to the chair of the Central Elections Committee, Justice Noam Sohlberg, at the Knesset. Submission is not approval: the lists, names and ballot letters are under review, with final approval reported for September 27."
-      es: "Se presentaron 38 listas ante el presidente de la Comisión Electoral Central, el juez Noam Sohlberg, en la Knéset. Presentar no es aprobar: las listas, los nombres y las letras de papeleta están en revisión, y la aprobación definitiva se anuncia para el 27 de septiembre."
-      fr: "38 listes ont été déposées auprès du président de la Commission électorale centrale, le juge Noam Sohlberg, à la Knesset. Le dépôt ne vaut pas approbation : les listes, les noms et les lettres de bulletin sont en cours d’examen, l’approbation définitive étant annoncée pour le 27 septembre."
+      es: "Se presentaron 38 listas ante el presidente de la Comisión Electoral Central, el juez Noam Sohlberg, en la Knéset. Presentar no es aprobar: las listas, los nombres y las letras de papeleta están en revisión, y la aprobación definitiva está prevista, según informaciones, para el 27 de septiembre."
+      fr: "38 listes ont été déposées auprès du président de la Commission électorale centrale, le juge Noam Sohlberg, à la Knesset. Le dépôt ne vaut pas approbation : les listes, les noms et les lettres de bulletin sont en cours d’examen, l’approbation définitive étant annoncée pour le 27 septembre."
     status: confirmed
     sources:
       - url: "https://ch10.co.il/news/1100694/"
@@ -254,7 +254,7 @@ facts:
       he: "שופט בית המשפט העליון נעם סולברג עומד בראש ועדת הבחירות המרכזית לכנסת ה-26."
       en: "Supreme Court Justice Noam Sohlberg chairs the Central Elections Committee for the 26th Knesset."
       es: "El juez del Tribunal Supremo Noam Sohlberg preside la Comisión Electoral Central para la 26.ª Knéset."
-      fr: "Le juge à la Cour suprême Noam Sohlberg préside la Commission électorale centrale pour la 26e Knesset."
+      fr: "Le juge de la Cour suprême Noam Sohlberg préside la Commission électorale centrale pour la 26e Knesset."
     status: reported
     sources:
       - url: "https://www.timesofisrael.com/judge-sets-date-for-next-scheduled-elections-for-october-2026/"
@@ -298,10 +298,10 @@ parties:
     leaderPersonId: 965
     factionId: 1096
     note:
-      he: "הרשימה הוגשה ב-8 בספטמבר 2026 בראשות ראש הממשלה נתניהו; אלי כהן, אמיר אוחנה, יריב לוין, מירי רגב וישראל כץ בחמישייה הפותחת, גדעון סער במקום השביעי. לפי N12, אמיר אביבי ויתר על המקום ה-35 ברשימה."
-      en: "Submitted September 8, 2026 under Prime Minister Netanyahu; Eli Cohen, Amir Ohana, Yariv Levin, Miri Regev and Yisrael Katz fill the top five, Gideon Sa'ar is seventh. Per N12, Amir Avivi gave up the 35th slot."
-      es: "Presentada el 8 de septiembre de 2026 con el primer ministro Netanyahu a la cabeza; Eli Cohen, Amir Ohana, Yariv Levin, Miri Regev e Yisrael Katz ocupan los cinco primeros puestos, Gideon Sa'ar es séptimo. Según N12, Amir Avivi renunció al puesto 35."
-      fr: "Déposée le 8 septembre 2026 avec le Premier ministre Netanyahou en tête ; Eli Cohen, Amir Ohana, Yariv Levin, Miri Regev et Israël Katz occupent les cinq premières places, Gideon Sa'ar est septième. Selon N12, Amir Avivi a renoncé à la 35e place."
+      he: "הרשימה הוגשה ב-8 בספטמבר 2026 בראשות ראש הממשלה נתניהו; אלי כהן, אמיר אוחנה, יריב לוין, מירי רגב וישראל כץ במקומות 2–6, גדעון סער במקום השביעי."
+      en: "Submitted September 8, 2026 under Prime Minister Netanyahu; Eli Cohen, Amir Ohana, Yariv Levin, Miri Regev and Israel Katz hold places 2–6, Gideon Sa'ar is seventh."
+      es: "Presentada el 8 de septiembre de 2026 con el primer ministro Netanyahu a la cabeza; Eli Cohen, Amir Ohana, Yariv Levin, Miri Regev e Israel Katz ocupan los puestos 2 a 6, Gideon Sa'ar es séptimo."
+      fr: "Déposée le 8 septembre 2026 avec le Premier ministre Netanyahou en tête ; Eli Cohen, Amir Ohana, Yariv Levin, Miri Regev et Israël Katz occupent les places 2 à 6, Gideon Sa'ar est septième."
     candidates:
       - { he: "בנימין נתניהו", personId: 965 }
       - { he: "אליהו כהן" }
@@ -352,10 +352,10 @@ parties:
     leader: { he: "נפתלי בנט", en: "Naftali Bennett", es: "Naftali Bennett", fr: "Naftali Bennett" }
     leaderWiki: "https://en.wikipedia.org/wiki/Naftali_Bennett"
     note:
-      he: "הרשימה המשותפת של בנט 2026 ויש עתיד הייתה הראשונה להגיש, ב-7 בספטמבר 2026; יאיר לפיד במקום השני. מגעים לאיחוד עם ישר! של איזנקוט לא הבשילו לרשימה משותפת."
-      en: "The Bennett 2026–Yesh Atid joint list was the first to submit, on September 7, 2026; Yair Lapid is second. Talks on a merger with Eisenkot's Yashar! did not produce a joint list."
-      es: "La lista conjunta Bennett 2026–Yesh Atid fue la primera en presentarse, el 7 de septiembre de 2026; Yair Lapid es segundo. Las conversaciones de fusión con ¡Yashar! de Eisenkot no produjeron una lista conjunta."
-      fr: "La liste commune Bennett 2026–Yesh Atid a été la première déposée, le 7 septembre 2026 ; Yaïr Lapid est deuxième. Les pourparlers de fusion avec Yashar! d’Eisenkot n’ont pas abouti à une liste commune."
+      he: "הרשימה \"ביחד בראשות בנט\" (ביחד ויש עתיד) הייתה הראשונה להגיש, ב-7 בספטמבר 2026; יאיר לפיד במקום השני. מגעים לאיחוד עם ישר! של איזנקוט לא הבשילו לרשימה משותפת."
+      en: "The “Together headed by Bennett” list (Together and Yesh Atid) was the first to submit, on September 7, 2026; Yair Lapid is second. Talks on a merger with Eisenkot's Yashar! did not produce a joint list."
+      es: "La lista «Juntos, con Bennett a la cabeza» (Juntos y Yesh Atid) fue la primera en presentarse, el 7 de septiembre de 2026; Yair Lapid es segundo. Las conversaciones de fusión con ¡Yashar! de Eisenkot no produjeron una lista conjunta."
+      fr: "La liste « Ensemble menée par Bennett » (Ensemble et Yesh Atid) a été la première déposée, le 7 septembre 2026 ; Yaïr Lapid est deuxième. Les pourparlers de fusion avec Yashar! d’Eisenkot n’ont pas abouti à une liste commune."
     candidates:
       - { he: "נפתלי בנט" }
       - { he: "יאיר לפיד", personId: 23594 }
@@ -400,13 +400,8 @@ parties:
     note:
       he: "הוגשה ב-7 בספטמבר 2026. ברשימה, בין השאר, ראש השב\"כ לשעבר יורם כהן (2), אורית פרקש-הכהן (3), מתן כהנא (5) וחילי טרופר (6), שהוכרז קודם לכן במסגרת ברית עם יועז הנדל."
       en: "Submitted September 7, 2026. The list includes former Shin Bet chief Yoram Cohen (2), Orit Farkash-Hacohen (3), Matan Kahana (5) and Hili Tropper (6), previously announced in an alliance with Yoaz Hendel."
-      es: "Presentada el 7 de septiembre de 2026. La lista incluye al exjefe del Shin Bet Yoram Cohen (2), Orit Farkash-Hacohen (3), Matan Kahana (5) y Hili Tropper (6), anunciado antes en alianza con Yoaz Hendel."
-      fr: "Déposée le 7 septembre 2026. La liste compte l’ancien chef du Shin Bet Yoram Cohen (2), Orit Farkash-Hacohen (3), Matan Kahana (5) et Hili Tropper (6), annoncé auparavant dans une alliance avec Yoaz Hendel."
-    stance:
-      he: "שאול מרידור, מספר 7 ברשימה, הגדיר את גוש השינוי כך: \"כל מי שהוא לא ישר, ביחד, ישראל ביתנו והדמוקרטים – הוא של נתניהו\" (N12, 7.9.2026)."
-      en: "Shaul Meridor, seventh on the list, framed the change bloc as: \"anyone who is not Yashar, Together, Yisrael Beiteinu or the Democrats — is Netanyahu's\" (N12, Sept 7, 2026)."
-      es: "Shaul Meridor, séptimo en la lista, definió el bloque del cambio así: «quien no es Yashar, Juntos, Yisrael Beiteinu o los Demócratas — es de Netanyahu» (N12, 7 de septiembre de 2026)."
-      fr: "Shaul Meridor, septième sur la liste, a défini le bloc du changement ainsi : « quiconque n’est pas Yashar, Ensemble, Israël Beiteinou ou les Démocrates — est à Netanyahou » (N12, 7 septembre 2026)."
+      es: "Presentada el 7 de septiembre de 2026. La lista incluye al exjefe del Shin Bet Yoram Cohen (2), Orit Farkash-Hacohen (3), Matan Kahana (5) y Hili Tropper (6), cuya candidatura se había anunciado antes dentro de una alianza con Yoaz Hendel."
+      fr: "Déposée le 7 septembre 2026. La liste compte l’ancien chef du Shin Bet Yoram Cohen (2), Orit Farkash-Hacohen (3), Matan Kahana (5) et Hili Tropper (6), ce dernier ayant été annoncé auparavant dans une alliance avec Yoaz Hendel."
     candidates:
       - { he: "גדי איזנקוט" }
       - { he: "יורם כהן" }
@@ -460,8 +455,8 @@ parties:
     note:
       he: "מפלגת האיחוד של העבודה ומרצ הגישה את רשימתה ב-7 בספטמבר 2026; נעמה לזימי, גלעד קריב ואפרת רייטן במקומות 2–4."
       en: "The merged Labor–Meretz party submitted on September 7, 2026; Naama Lazimi, Gilad Kariv and Efrat Rayten hold slots 2–4."
-      es: "El partido fusionado Laborista–Meretz presentó su lista el 7 de septiembre de 2026; Naama Lazimi, Gilad Kariv y Efrat Rayten ocupan los puestos 2 a 4."
-      fr: "Le parti issu de la fusion Travaillistes–Meretz a déposé sa liste le 7 septembre 2026 ; Naama Lazimi, Gilad Kariv et Efrat Rayten occupent les places 2 à 4."
+      es: "El partido surgido de la fusión del Partido Laborista y Meretz presentó su lista el 7 de septiembre de 2026; Naama Lazimi, Gilad Kariv y Efrat Rayten ocupan los puestos 2 a 4."
+      fr: "Le parti issu de la fusion Travaillistes–Meretz a déposé sa liste le 7 septembre 2026 ; Naama Lazimi, Gilad Kariv et Efrat Rayten occupent les places 2 à 4."
     candidates:
       - { he: "יאיר גולן" }
       - { he: "נעמה לזימי", personId: 30106 }
@@ -501,12 +496,7 @@ parties:
       he: "הוגשה ב-8 בספטמבר 2026 על ידי כחול לבן חוסן לישראל: בני גנץ בראשה, פנינה תמנו במקום השני, גאולה עליזה בלוך בשלישי, רועי קונקול ברביעי ואלון שוסטר בשישי (לפי עמוד הרשימה באתר ועדת הבחירות)."
       en: "Submitted September 8, 2026 by Blue and White – Israel Resilience: Benny Gantz leads, Pnina Tamano is second, Geula Aliza Bloch third, Roi Konkol fourth and Alon Schuster sixth (per the list's page on the CEC site)."
       es: "Presentada el 8 de septiembre de 2026 por Azul y Blanco – Resiliencia para Israel: Benny Gantz la encabeza, Pnina Tamano es segunda, Geula Aliza Bloch tercera, Roi Konkol cuarto y Alon Schuster sexto (según la página de la lista en el sitio de la Comisión Electoral)."
-      fr: "Déposée le 8 septembre 2026 par Bleu et Blanc – Résilience pour Israël : Benny Gantz en tête, Pnina Tamano deuxième, Geula Aliza Bloch troisième, Roi Konkol quatrième et Alon Schuster sixième (selon la page de la liste sur le site de la Commission électorale)."
-    stance:
-      he: "המפלגה דחתה את הגדרת גוש השינוי של ישר! וכינתה את דרכו של איזנקוט \"ממשלת מיעוט שנשענת על המפלגות הערביות\" (N12, 7.9.2026)."
-      en: "The party rejected Yashar!'s framing of the change bloc, calling Eisenkot's path \"a minority government leaning on the Arab parties\" (N12, Sept 7, 2026)."
-      es: "El partido rechazó la definición del bloque del cambio de ¡Yashar!, calificando el camino de Eisenkot de «un gobierno minoritario apoyado en los partidos árabes» (N12, 7 de septiembre de 2026)."
-      fr: "Le parti a rejeté la définition du bloc du changement par Yashar!, qualifiant la voie d’Eisenkot de « gouvernement minoritaire s’appuyant sur les partis arabes » (N12, 7 septembre 2026)."
+      fr: "Déposée le 8 septembre 2026 par Bleu et Blanc – Résilience pour Israël : Benny Gantz en tête, Pnina Tamano deuxième, Geula Aliza Bloch troisième, Roi Konkol quatrième et Alon Schuster sixième (selon la page de la liste sur le site de la Commission électorale)."
     candidates:
       - { he: "בנימין גנץ", personId: 30657 }
       - { he: "פנינה תמנו", personId: 23635 }
@@ -538,7 +528,7 @@ parties:
       he: "הוגשה ב-7 בספטמבר 2026; רפי בן שטרית במקום השני, ובין חברי הכנסת המכהנים ברשימה עודד פורר (4), יוליה מלינובסקי (5), חמד עמאר (7) ויבגני סובה (8). דן אילוז, לשעבר ח\"כ הליכוד, במקום העשירי."
       en: "Submitted September 7, 2026; Rafi Ben Shitrit is second, and sitting MKs Oded Forer (4), Yulia Malinovsky (5), Hamad Amar (7) and Evgeny Sova (8) are on the list. Dan Illouz, formerly a Likud MK, is tenth."
       es: "Presentada el 7 de septiembre de 2026; Rafi Ben Shitrit es segundo, y los diputados en funciones Oded Forer (4), Yulia Malinovsky (5), Hamad Amar (7) y Evgeny Sova (8) están en la lista. Dan Illouz, exdiputado del Likud, es décimo."
-      fr: "Déposée le 7 septembre 2026 ; Rafi Ben Shitrit est deuxième, et les députés en exercice Oded Forer (4), Yulia Malinovsky (5), Hamad Amar (7) et Evgeny Sova (8) figurent sur la liste. Dan Illouz, ancien député du Likoud, est dixième."
+      fr: "Déposée le 7 septembre 2026 ; Rafi Ben Shitrit est deuxième, et les députés en exercice Oded Forer (4), Yulia Malinovsky (5), Hamad Amar (7) et Evgeny Sova (8) figurent sur la liste. Dan Illouz, ancien député du Likoud, est dixième."
     candidates:
       - { he: "אביגדור ליברמן", personId: 427 }
       - { he: "רפי בן שטרית" }
@@ -578,7 +568,7 @@ parties:
       he: "הוגשה ב-8 בספטמבר 2026; ינון אזולאי, מיכאל מלכיאלי ויואב בן צור במקומות 2–4."
       en: "Submitted September 8, 2026; Yinon Azulai, Michael Malkieli and Yoav Ben-Tzur hold slots 2–4."
       es: "Presentada el 8 de septiembre de 2026; Yinon Azulai, Michael Malkieli y Yoav Ben-Tzur ocupan los puestos 2 a 4."
-      fr: "Déposée le 8 septembre 2026 ; Yinon Azulai, Michael Malkieli et Yoav Ben-Tzur occupent les places 2 à 4."
+      fr: "Déposée le 8 septembre 2026 ; Yinon Azulai, Michael Malkieli et Yoav Ben-Tzur occupent les places 2 à 4."
     candidates:
       - { he: "אריה דרעי" }
       - { he: "ינון אזולאי", personId: 30601 }
@@ -612,7 +602,7 @@ parties:
       he: "הוגשה ב-8 בספטמבר 2026 בראשות יעקב אשר (דגל התורה); יצחק גולדקנופף, שעמד בראש רשימת 2022 ועומד בראש אגודת ישראל, במקום השני, ומאיר פרוש ברביעי. משה גפני ואורי מקלב אינם ברשימה."
       en: "Submitted September 8, 2026 under Yaakov Asher (Degel HaTorah); Yitzhak Goldknopf, who headed the 2022 list and leads Agudat Yisrael, is second, Meir Porush fourth. Moshe Gafni and Uri Maklev are not on the list."
       es: "Presentada el 8 de septiembre de 2026 con Yaakov Asher (Degel HaTorá) a la cabeza; Yitzhak Goldknopf, que encabezó la lista de 2022 y dirige Agudat Yisrael, es segundo, Meir Porush cuarto. Moshe Gafni y Uri Maklev no están en la lista."
-      fr: "Déposée le 8 septembre 2026 avec Yaakov Asher (Degel HaTorah) en tête ; Yitzhak Goldknopf, tête de liste en 2022 et chef d’Agoudat Israël, est deuxième, Meir Porush quatrième. Moshe Gafni et Uri Maklev ne figurent pas sur la liste."
+      fr: "Déposée le 8 septembre 2026 avec Yaakov Asher (Degel HaTorah) en tête ; Yitzhak Goldknopf, tête de liste en 2022 et chef d’Agoudat Israël, est deuxième, Meir Porush quatrième. Moshe Gafni et Uri Maklev ne figurent pas sur la liste."
     candidates:
       - { he: "יעקב אשר", personId: 23641 }
       - { he: "יצחק גולדקנופף" }
@@ -645,15 +635,10 @@ parties:
     leaderPersonId: 30055
     factionId: 1105 # the Smotrich faction of the 25th Knesset; 1097 is the defunct 2022 joint list
     note:
-      he: "הציונות הדתית וזהות של משה פייגלין התאחדו לרשימה אחת שהוגשה ב-8 בספטמבר 2026: סמוטריץ' בראשה, פייגלין במקום השני, אורית סטרוק ושמחה רוטמן אחריהם."
-      en: "Religious Zionism and Moshe Feiglin's Zehut merged into one list, submitted September 8, 2026: Smotrich leads, Feiglin is second, followed by Orit Strock and Simcha Rothman."
-      es: "Sionismo Religioso y Zehut de Moshe Feiglin se unieron en una sola lista, presentada el 8 de septiembre de 2026: Smotrich la encabeza, Feiglin es segundo, seguidos de Orit Strock y Simcha Rothman."
-      fr: "Le Sionisme religieux et Zehut de Moshe Feiglin ont fusionné en une seule liste, déposée le 8 septembre 2026 : Smotrich en tête, Feiglin deuxième, suivis d’Orit Strock et de Simcha Rothman."
-    stance:
-      he: "סמוטריץ' על ריצתו העצמאית של וינטר: וינטר דחה \"כל הצעה לאחדות במחנה הלאומי\" (N12, 8.9.2026)."
-      en: "Smotrich on Ofer Winter's independent run: Winter refused \"every proposal for unity in the national camp\" (N12, Sept 8, 2026)."
-      es: "Smotrich sobre la candidatura independiente de Ofer Winter: Winter rechazó «todas las propuestas de unidad en el campo nacional» (N12, 8 de septiembre de 2026)."
-      fr: "Smotrich sur la candidature indépendante d’Ofer Winter : Winter a refusé « toutes les propositions d’unité dans le camp national » (N12, 8 septembre 2026)."
+      he: "הציונות הדתית וזהות של משה פייגלין רצות ברשימה אחת (גוש טכני) שהוגשה ב-8 בספטמבר 2026: סמוטריץ' בראשה, פייגלין במקום השני, אורית סטרוק ושמחה רוטמן אחריהם."
+      en: "Religious Zionism and Moshe Feiglin's Zehut run on one list (a technical bloc), submitted September 8, 2026: Smotrich leads, Feiglin is second, followed by Orit Strook and Simcha Rothman."
+      es: "Sionismo Religioso y Zehut de Moshe Feiglin se presentan en una sola lista (bloque técnico), presentada el 8 de septiembre de 2026: Smotrich la encabeza, Feiglin es segundo, seguidos de Orit Strook y Simcha Rothman."
+      fr: "Le Sionisme religieux et Zehut de Moshe Feiglin se présentent sur une seule liste (bloc technique), déposée le 8 septembre 2026 : Smotrich en tête, Feiglin deuxième, suivis d’Orit Strook et de Simcha Rothman."
     candidates:
       - { he: "בצלאל סמוטריץ'", personId: 30055 }
       - { he: "משה פייגלין" }
@@ -686,9 +671,9 @@ parties:
     factionId: 1106
     note:
       he: "הוגשה ב-7 בספטמבר 2026; טלי גוטליב במקום השני, ראש הסגל חנמאל דורפמן בשביעי."
-      en: "Submitted September 7, 2026; Tali Gotliv is second, chief of staff Hanamel Dorfman seventh."
-      es: "Presentada el 7 de septiembre de 2026; Tali Gotliv es segunda, el jefe de gabinete Hanamel Dorfman séptimo."
-      fr: "Déposée le 7 septembre 2026 ; Tali Gotliv est deuxième, le chef de cabinet Hanamel Dorfman septième."
+      en: "Submitted September 7, 2026; Tally Gotliv is second, chief of staff Hanamel Dorfman seventh."
+      es: "Presentada el 7 de septiembre de 2026; Tally Gotliv es segunda, el jefe de gabinete Hanamel Dorfman séptimo."
+      fr: "Déposée le 7 septembre 2026 ; Tally Gotliv est deuxième, le chef de cabinet Hanamel Dorfman septième."
     candidates:
       - { he: "איתמר בן גביר", personId: 30811 }
       - { he: "טלי גוטליב", personId: 30860 }
@@ -728,7 +713,7 @@ parties:
       he: "הוגשה ב-7 בספטמבר 2026; יואב סגלוביץ', לשעבר חבר הכנסת מטעם יש עתיד, במקום השני."
       en: "Submitted September 7, 2026; Yoav Segalovitz, formerly a Yesh Atid MK, is second."
       es: "Presentada el 7 de septiembre de 2026; Yoav Segalovitz, exdiputado de Yesh Atid, es segundo."
-      fr: "Déposée le 7 septembre 2026 ; Yoav Segalovitz, ancien député de Yesh Atid, est deuxième."
+      fr: "Déposée le 7 septembre 2026 ; Yoav Segalovitz, ancien député de Yesh Atid, est deuxième."
     candidates:
       - { he: "מנסור עבאס", personId: 30713 }
       - { he: "יואב סגלוביץ'", personId: 30695 }
@@ -760,10 +745,10 @@ parties:
     leaderWiki: "https://en.wikipedia.org/wiki/Yousef_Jabareen"
     factionId: 1103
     note:
-      he: "שלוש המפלגות הערביות רצות שוב ברשימה אחת: ג'בארין בראשה, אחמד טיבי (תע\"ל) במקום השני וסאמי אבו שחאדה (בל\"ד) בשלישי."
-      en: "The three Arab parties run again on one list: Jabareen leads, Ahmad Tibi (Ta'al) is second and Sami Abu Shehadeh (Balad) third."
-      es: "Los tres partidos árabes vuelven a presentarse en una sola lista: Jabareen la encabeza, Ahmad Tibi (Ta'al) es segundo y Sami Abu Shehadeh (Balad) tercero."
-      fr: "Les trois partis arabes se présentent de nouveau sur une seule liste : Jabareen en tête, Ahmad Tibi (Ta'al) deuxième et Sami Abu Shehadeh (Balad) troisième."
+      he: "חד\"ש, תע\"ל ובל\"ד רצות שוב ברשימה אחת: ג'בארין בראשה, אחמד טיבי (תע\"ל) במקום השני וסאמי אבו שחאדה (בל\"ד) בשלישי."
+      en: "Hadash, Ta'al and Balad run again on one list: Jabareen leads, Ahmad Tibi (Ta'al) is second and Sami Abu Shehadeh (Balad) third."
+      es: "Hadash, Ta'al y Balad vuelven a presentarse en una sola lista: Jabareen la encabeza, Ahmad Tibi (Ta'al) es segundo y Sami Abu Shehadeh (Balad) tercero."
+      fr: "Hadash, Ta'al et Balad se présentent de nouveau sur une seule liste : Jabareen en tête, Ahmad Tibi (Ta'al) deuxième et Sami Abu Shehadeh (Balad) troisième."
     candidates:
       - { he: "יוסף גבארין" }
       - { he: "אחמד טיבי", personId: 560 }
@@ -789,7 +774,7 @@ parties:
       - { url: "https://www.gov.il/he/pages/hareshima-hameshutefet_list35", title: "הרשימה המשותפת — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
-  - name: { he: "עמך ישראל", en: "Amkha Yisrael", es: "Amkha Yisrael", fr: "Amkha Yisrael" }
+  - name: { he: "עמך ישראל", en: "Amkha Yisrael", es: "Amkha Yisrael", fr: "Amkha Israël" }
     slug: amkha
     # The Central Elections Committee's own page for the list (read 19 Sep 2026):
     cec:
@@ -805,10 +790,10 @@ parties:
     leader: { he: "עופר וינטר", en: "Ofer Winter", es: "Ofer Winter", fr: "Ofer Winter" }
     leaderWiki: "https://en.wikipedia.org/wiki/Ofer_Winter"
     note:
-      he: "רשימה חדשה בראשות האלוף במיל' עופר וינטר, שהוגשה ב-7 בספטמבר 2026 לאחר שמגעי איחוד עם הציונות הדתית ועם 'הציבור החרדי' לא צלחו; יוסף חדאד במקום השני."
-      en: "A new list led by reserve Maj. Gen. Ofer Winter, submitted September 7, 2026 after merger talks with Religious Zionism and with 'The Haredi Public' failed; Yoseph Haddad is second."
-      es: "Una lista nueva encabezada por el general de división (res.) Ofer Winter, presentada el 7 de septiembre de 2026 tras fracasar las conversaciones de fusión con Sionismo Religioso y con «El Público Jaredí»; Yoseph Haddad es segundo."
-      fr: "Une nouvelle liste menée par le général de division (rés.) Ofer Winter, déposée le 7 septembre 2026 après l’échec des pourparlers de fusion avec le Sionisme religieux et « Le Public haredi » ; Yoseph Haddad est deuxième."
+      he: "רשימה חדשה בראשות תא\"ל (במיל') עופר וינטר, שהוגשה ב-7 בספטמבר 2026 לאחר שמגעי איחוד עם הציונות הדתית ועם 'הציבור החרדי' לא צלחו; יוסף חדאד במקום השני."
+      en: "A new list led by Brig. Gen. (res.) Ofer Winter, submitted September 7, 2026 after merger talks with Religious Zionism and with 'The Haredi Public' failed; Yoseph Haddad is second."
+      es: "Una lista nueva encabezada por el general de brigada (res.) Ofer Winter, presentada el 7 de septiembre de 2026 tras fracasar las conversaciones de fusión con Sionismo Religioso y con «El Público Jaredí»; Yoseph Haddad es segundo."
+      fr: "Une nouvelle liste menée par le général de brigade (rés.) Ofer Winter, déposée le 7 septembre 2026 après l’échec des pourparlers de fusion avec le Sionisme religieux et « Le Public haredi » ; Yoseph Haddad est deuxième."
     candidates:
       - { he: "עופר וינטר" }
       - { he: "יוסף חדאד" }
@@ -821,7 +806,7 @@ parties:
       - { url: "https://www.gov.il/he/pages/amcha-israel_list6", title: "עמך ישראל — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
-  - name: { he: "המילואימניקים והכלכלית", en: "The Reservists and the Economic list", es: "Los Reservistas y la lista Económica", fr: "Les Réservistes et la liste Économique" }
+  - name: { he: "המילואימניקים והכלכלית", en: "The Reservists and the Economic list", es: "Los Reservistas y la Económica", fr: "Les Réservistes et la liste Économique" }
     slug: reservists
     # The Central Elections Committee's own page for the list (read 19 Sep 2026):
     cec:
@@ -840,7 +825,7 @@ parties:
       he: "הוגשה ב-7 בספטמבר 2026 בראשות יועז הנדל; הכלכלן ירון זליכה במקום השני ועינת וילף בשלישי. חילי טרופר, שהוכרז קודם כשותף, מופיע ברשימת ישר!."
       en: "Submitted September 7, 2026 under Yoaz Hendel; economist Yaron Zelekha is second and Einat Wilf third. Hili Tropper, earlier announced as a partner, appears on the Yashar! list."
       es: "Presentada el 7 de septiembre de 2026 con Yoaz Hendel a la cabeza; el economista Yaron Zelekha es segundo y Einat Wilf tercera. Hili Tropper, anunciado antes como socio, figura en la lista de ¡Yashar!."
-      fr: "Déposée le 7 septembre 2026 avec Yoaz Hendel en tête ; l’économiste Yaron Zelekha est deuxième et Einat Wilf troisième. Hili Tropper, annoncé auparavant comme partenaire, figure sur la liste Yashar!."
+      fr: "Déposée le 7 septembre 2026 avec Yoaz Hendel en tête ; l’économiste Yaron Zelekha est deuxième et Einat Wilf troisième. Hili Tropper, annoncé auparavant comme partenaire, figure sur la liste Yashar!."
     candidates:
       - { he: "יועז הנדל" }
       - { he: "ירון זליכה" }
@@ -870,7 +855,7 @@ parties:
       he: "רשימה חדשה שהוגשה ב-8 בספטמבר 2026 על ידי המפלגה \"למען אחיי\" וביקשה את האותיות זך; 12 מועמדים, בראשם פנחס מרדכי (מוטי) ליטנר, אשר פרדי ומרים נחמה יפה (לפי עמוד הרשימה באתר ועדת הבחירות)."
       en: "A new list submitted on September 8, 2026 by the party 'Lema'an Achai' with the requested letters זך; 12 candidates, led by Pinchas Mordechai (Moti) Litner, Asher Fardi and Miriam Nechama Yaffe (per the list's page on the CEC site)."
       es: "Una lista nueva presentada el 8 de septiembre de 2026 por el partido «Lema'an Achai» con las letras solicitadas זך; 12 candidatos, encabezados por Pinchas Mordechai (Moti) Litner, Asher Fardi y Miriam Nechama Yaffe (según la página de la lista en el sitio de la Comisión Electoral)."
-      fr: "Une nouvelle liste déposée le 8 septembre 2026 par le parti « Lema'an Achai » avec les lettres demandées זך ; 12 candidats, menés par Pinchas Mordechai (Moti) Litner, Asher Fardi et Miriam Nechama Yaffe (selon la page de la liste sur le site de la Commission électorale)."
+      fr: "Une nouvelle liste déposée le 8 septembre 2026 par le parti « Lema'an Achai » avec les lettres demandées זך ; 12 candidats, menés par Pinchas Mordechai (Moti) Litner, Asher Fardi et Miriam Nechama Yaffe (selon la page de la liste sur le site de la Commission électorale)."
     candidates:
       - { he: "פנחס מרדכי ליטנר" }
       - { he: "אשר פרדי" }
@@ -896,7 +881,7 @@ rules:
       he: "הבחירות כלליות, ארציות, ישירות, שוות, חשאיות ויחסיות; המדינה כולה אזור בחירה אחד. מצביעים לרשימות סגורות, והמושבים מחולקים בין הרשימות שעברו את אחוז החסימה בשיטת בדר-עופר, כולל הסכמי עודפים."
       en: "Elections are general, nationwide, direct, equal, secret and proportional; the whole country is one district. Voters choose closed party lists, and seats are allocated among lists that pass the threshold by the Bader-Ofer method, including surplus-vote agreements."
       es: "Las elecciones son generales, nacionales, directas, iguales, secretas y proporcionales; todo el país es una sola circunscripción. Los votantes eligen listas cerradas de partido, y los escaños se reparten entre las listas que superan el umbral por el método Bader-Ofer, incluidos los acuerdos de votos sobrantes."
-      fr: "Les élections sont générales, nationales, directes, égales, secrètes et proportionnelles ; le pays entier forme une seule circonscription. Les électeurs choisissent des listes fermées, et les sièges sont répartis entre les listes ayant franchi le seuil selon la méthode Bader-Ofer, y compris les accords de report des voix restantes."
+      fr: "Les élections sont générales, nationales, directes, égales, secrètes et proportionnelles ; le pays entier forme une seule circonscription. Les électeurs choisissent des listes fermées, et les sièges sont répartis entre les listes ayant franchi le seuil selon la méthode Bader-Ofer, y compris les accords de report des voix restantes."
     status: confirmed
     sources:
       - url: "https://m.knesset.gov.il/en/about/lexicon/pages/electoralsystem.aspx"
@@ -909,7 +894,7 @@ rules:
       he: "בכנסת 120 חברים; כל המושבים מחולקים בחלוקה ארצית-יחסית בין הרשימות שעברו את אחוז החסימה."
       en: "The Knesset has 120 members; all seats are allocated by nationwide proportional distribution among lists that passed the threshold."
       es: "La Knéset tiene 120 miembros; todos los escaños se reparten de forma proporcional a nivel nacional entre las listas que superaron el umbral."
-      fr: "La Knesset compte 120 membres ; tous les sièges sont répartis proportionnellement au niveau national entre les listes ayant franchi le seuil."
+      fr: "La Knesset compte 120 membres ; tous les sièges sont répartis proportionnellement au niveau national entre les listes ayant franchi le seuil."
     status: confirmed
     sources:
       - url: "https://m.knesset.gov.il/EN/activity/documents/BasicLawsPDF/BasicLawTheKnesset.pdf"
@@ -917,12 +902,12 @@ rules:
         publisher: "The Knesset"
   - key: threshold
     label: { he: "אחוז החסימה", en: "Electoral threshold", es: "Umbral electoral", fr: "Seuil électoral" }
-    value: { he: "3.25%", en: "3.25%", es: "3,25 %", fr: "3,25 %" }
+    value: { he: "3.25%", en: "3.25%", es: "3,25 %", fr: "3,25 %" }
     detail:
       he: "רשימה שלא הגיעה ל-3.25% מהקולות הכשרים אינה זוכה בייצוג. האחוז הועלה ל-3.25% במרץ 2014; קודם לכן — 1% עד בחירות 1992, 1.5% מבחירות 1992, ו-2% שנחקק ב-2004 והוחל מבחירות 2006."
       en: "A list below 3.25% of valid votes wins no seats. The threshold was raised to 3.25% in March 2014; previously 1% until the 1992 election, 1.5% from 1992, and 2% legislated in 2004 and first applied in the 2006 election."
       es: "Una lista por debajo del 3,25 % de los votos válidos no obtiene escaños. El umbral se elevó al 3,25 % en marzo de 2014; antes era del 1 % hasta las elecciones de 1992, del 1,5 % desde 1992, y del 2 % legislado en 2004 y aplicado por primera vez en las elecciones de 2006."
-      fr: "Une liste sous 3,25 % des suffrages valables n’obtient aucun siège. Le seuil a été relevé à 3,25 % en mars 2014 ; auparavant 1 % jusqu’aux élections de 1992, 1,5 % à partir de 1992, et 2 % voté en 2004 et appliqué pour la première fois aux élections de 2006."
+      fr: "Une liste sous 3,25 % des suffrages valables n’obtient aucun siège. Le seuil a été relevé à 3,25 % en mars 2014 ; auparavant 1 % jusqu’aux élections de 1992, 1,5 % à partir de 1992, et 2 % voté en 2004 et appliqué pour la première fois aux élections de 2006."
     status: confirmed
     sources:
       - url: "https://main.knesset.gov.il/EN/About/Lexicon/Pages/ElectoralThreshold.aspx"
@@ -937,7 +922,7 @@ rules:
       he: "כל אזרח ישראלי בן 18 ומעלה הרשום במרשם האוכלוסין, אלא אם בית משפט שלל זאת לפי חוק. ההצבעה אישית ובישראל בלבד; קבוצות מוגדרות (חיילים, שליחי מדינה בחו\"ל, מאושפזים, אסירים, מלחים ועוד) מצביעות במעטפות כפולות."
       en: "Every Israeli citizen aged 18+ registered in the Population Register, unless a court has removed the right by law. Voting is in person and in Israel only; defined groups (soldiers, state emissaries abroad, hospital patients, prisoners, ship crews and more) vote by double envelope."
       es: "Todo ciudadano israelí de 18 años o más inscrito en el Registro de Población, salvo que un tribunal le haya retirado el derecho conforme a la ley. Se vota en persona y solo en Israel; grupos definidos (soldados, enviados del Estado en el extranjero, pacientes hospitalizados, presos, tripulaciones de barcos y otros) votan en sobre doble."
-      fr: "Tout citoyen israélien de 18 ans et plus inscrit au registre de la population, sauf si un tribunal lui a retiré ce droit conformément à la loi. Le vote se fait en personne et uniquement en Israël ; des groupes définis (soldats, émissaires de l’État à l’étranger, patients hospitalisés, détenus, équipages de navires et autres) votent sous double enveloppe."
+      fr: "Tout citoyen israélien de 18 ans et plus inscrit au registre de la population, sauf si un tribunal lui a retiré ce droit conformément à la loi. Le vote se fait en personne et uniquement en Israël ; des groupes définis (soldats, émissaires de l’État à l’étranger, patients hospitalisés, détenus, équipages de navires et autres) votent sous double enveloppe."
     status: confirmed
     sources:
       - url: "https://m.knesset.gov.il/EN/activity/documents/BasicLawsPDF/BasicLawTheKnesset.pdf"
@@ -951,8 +936,8 @@ rules:
     detail:
       he: "אזרח ישראלי בן 21 ומעלה ביום הגשת הרשימות, בכפוף לסייגים: מי שנידון ליותר משלושה חודשי מאסר בפועל מנוע מלהתמודד שבע שנים מתום ריצוי העונש (ובעבירת טרור/ביטחון חמורה שנגזרו עליה מעל שבע שנות מאסר — 14 שנים), אלא אם נקבע שאין קלון. נושאי משרה בכירים (שופטים, קצינים בכירים, עובדי מדינה בכירים ועוד) חייבים לפרוש מראש במועדים הקבועים בחוק. לפי סעיף 7א, רשימה או מועמד ייפסלו בשל שלילת קיומה של ישראל כמדינה יהודית ודמוקרטית, הסתה לגזענות או תמיכה במאבק מזוין נגד ישראל; פסילת מועמד טעונה אישור בית המשפט העליון."
       en: "An Israeli citizen aged 21+ on list-submission day, with restrictions: a person sentenced to over three months' actual imprisonment is barred for seven years after completing the sentence (14 years where a serious terror/security offence drew over seven years' imprisonment), unless ruled free of moral turpitude. Senior officials (judges, senior officers, senior civil servants and others) must resign by statutory deadlines. Under article 7A, a list or candidate is barred for negating Israel's existence as a Jewish and democratic state, incitement to racism, or support for armed struggle against Israel; barring a candidate requires Supreme Court approval."
-      es: "Un ciudadano israelí de 21 años o más el día de presentación de las listas, con restricciones: quien haya sido condenado a más de tres meses de prisión efectiva queda excluido durante siete años tras cumplir la pena (14 años si un delito grave de terrorismo o seguridad conllevó más de siete años de prisión), salvo que se dictamine que no hay vileza moral. Los altos cargos (jueces, oficiales superiores, altos funcionarios y otros) deben dimitir en los plazos legales. Según el artículo 7A, una lista o candidato queda excluido por negar la existencia de Israel como Estado judío y democrático, por incitación al racismo o por apoyo a la lucha armada contra Israel; excluir a un candidato requiere la aprobación del Tribunal Supremo."
-      fr: "Un citoyen israélien de 21 ans et plus le jour du dépôt des listes, avec des restrictions : une personne condamnée à plus de trois mois de prison ferme est inéligible pendant sept ans après avoir purgé sa peine (14 ans si une infraction grave de terrorisme ou de sécurité a entraîné plus de sept ans de prison), sauf décision constatant l’absence d’infamie. Les hauts responsables (juges, officiers supérieurs, hauts fonctionnaires et autres) doivent démissionner dans les délais légaux. En vertu de l’article 7A, une liste ou un candidat est exclu pour négation de l’existence d’Israël comme État juif et démocratique, incitation au racisme ou soutien à la lutte armée contre Israël ; l’exclusion d’un candidat requiert l’approbation de la Cour suprême."
+      es: "Un ciudadano israelí de 21 años o más el día de presentación de las listas, con restricciones: quien haya sido condenado a más de tres meses de prisión efectiva queda excluido durante siete años tras cumplir la pena (14 años si un delito grave de terrorismo o seguridad conllevó más de siete años de prisión), salvo que el tribunal determine que el delito no conlleva infamia (kalón). Los altos cargos (jueces, oficiales superiores, altos funcionarios y otros) deben renunciar en los plazos legales. Según el artículo 7A, una lista o candidato queda excluido por negar la existencia de Israel como Estado judío y democrático, por incitación al racismo o por apoyo a la lucha armada contra Israel; excluir a un candidato requiere la aprobación del Tribunal Supremo."
+      fr: "Un citoyen israélien de 21 ans et plus le jour du dépôt des listes, avec des restrictions : une personne condamnée à plus de trois mois de prison ferme est inéligible pendant sept ans après avoir purgé sa peine (14 ans si une infraction grave de terrorisme ou de sécurité a entraîné plus de sept ans de prison), sauf décision constatant l’absence d’infamie. Les hauts responsables (juges, officiers supérieurs, hauts fonctionnaires et autres) doivent démissionner dans les délais légaux. En vertu de l’article 7A, une liste ou un candidat est exclu pour négation de l’existence d’Israël comme État juif et démocratique, incitation au racisme ou soutien à la lutte armée contre Israël ; l’exclusion d’un candidat requiert l’approbation de la Cour suprême."
     status: confirmed
     sources:
       - url: "https://m.knesset.gov.il/EN/activity/documents/BasicLawsPDF/BasicLawTheKnesset.pdf"
@@ -963,8 +948,8 @@ rules:
     detail:
       he: "יום הבחירות הוא יום שבתון, אך התחבורה ושירותים ציבוריים פועלים כסדרם. הקלפיות פתוחות בדרך כלל 7:00–22:00 (ביישובים קטנים 8:00–20:00), ומי שבתור בשעת הסגירה מצביע."
       en: "Election day is a public day of rest, but transport and public services operate. Polls are generally open 7:00–22:00 (8:00–20:00 in small communities), and anyone in line at closing still votes."
-      es: "El día de las elecciones es festivo, pero el transporte y los servicios públicos funcionan. Los colegios abren en general de 7:00 a 22:00 (de 8:00 a 20:00 en localidades pequeñas), y quien esté en la fila al cierre vota igualmente."
-      fr: "Le jour des élections est férié, mais les transports et les services publics fonctionnent. Les bureaux sont en général ouverts de 7 h à 22 h (de 8 h à 20 h dans les petites localités), et quiconque fait la queue à la fermeture peut encore voter."
+      es: "El día de las elecciones es festivo, pero el transporte y los servicios públicos funcionan. Los centros de votación abren en general de 7:00 a 22:00 (de 8:00 a 20:00 en localidades pequeñas), y quien esté en la fila al cierre vota igualmente."
+      fr: "Le jour des élections est férié, mais les transports et les services publics fonctionnent. Les bureaux sont en général ouverts de 7 h à 22 h (de 8 h à 20 h dans les petites localités), et quiconque fait la queue à la fermeture peut encore voter."
     status: confirmed
     sources:
       - url: "https://m.knesset.gov.il/EN/activity/documents/BasicLawsPDF/BasicLawTheKnesset.pdf"
@@ -975,8 +960,8 @@ rules:
     detail:
       he: "הנשיא מטיל את הרכבת הממשלה על חבר כנסת בתוך שבעה ימים מפרסום התוצאות, לאחר התייעצות עם הסיעות. למוטל 28 ימים בתוספת עד 14; אם נכשל — חבר כנסת אחר (28 ימים), ואז רוב חברי הכנסת רשאים לבקש הטלה על חבר מסוים (14 ימים). מוצו השלבים — הכנסת מתפזרת ונערכות בחירות חוזרות."
       en: "Within seven days of the results, after consulting the factions, the President tasks an MK with forming a government: 28 days plus up to 14 more; failing that, another MK (28 days), then a majority of MKs may request a specific member (14 days). If all stages fail, the Knesset dissolves and new elections are held."
-      es: "En los siete días siguientes a los resultados, tras consultar a las facciones, el presidente del Estado encarga a un diputado formar Gobierno: 28 días más hasta 14 adicionales; si fracasa, otro diputado (28 días), y después una mayoría de diputados puede pedir un miembro concreto (14 días). Si fallan todas las etapas, la Knéset se disuelve y se celebran nuevas elecciones."
-      fr: "Dans les sept jours suivant les résultats, après consultation des factions, le président de l’État charge un député de former un gouvernement : 28 jours plus jusqu’à 14 de plus ; en cas d’échec, un autre député (28 jours), puis une majorité de députés peut demander un membre précis (14 jours). Si toutes les étapes échouent, la Knesset se dissout et de nouvelles élections ont lieu."
+      es: "En los siete días siguientes a los resultados, tras consultar a las facciones, el presidente del Estado encarga a un diputado formar Gobierno: 28 días más hasta 14 adicionales; si fracasa, otro diputado (28 días), y después una mayoría de diputados puede pedir que el encargo recaiga en un diputado concreto (14 días). Si fallan todas las etapas, la Knéset se disuelve y se celebran nuevas elecciones."
+      fr: "Dans les sept jours suivant les résultats, après consultation des factions, le président de l’État charge un député de former un gouvernement : 28 jours, prolongeables de 14 jours au plus ; en cas d’échec, un autre député (28 jours), puis une majorité de députés peut demander que la tâche soit confiée à un député précis (14 jours). Si toutes les étapes échouent, la Knesset se dissout et de nouvelles élections ont lieu."
     status: confirmed
     sources:
       - url: "https://m.knesset.gov.il/EN/activity/documents/BasicLawsPDF/BasicLawTheGovernment.pdf"
@@ -988,7 +973,7 @@ rules:
       he: "מימון מפלגות ובחירות מוסדר בעיקר בחוק מימון מפלגות התשל\"ג-1973; מבקר המדינה מפקח, מפרסם דוחות ורשאי לחייב החזר כספים. תעמולת הבחירות מוסדרת בחוק דרכי תעמולה התשי\"ט-1959, שאכיפתו בידי יו\"ר ועדת הבחירות."
       en: "Party and campaign financing are governed mainly by the Political Parties (Financing) Law, 1973; the State Comptroller oversees, publishes reports and can order repayment. Campaign propaganda is governed by the Elections (Modes of Propaganda) Law, 1959, enforced by the CEC chair."
       es: "La financiación de partidos y campañas se rige sobre todo por la Ley de Financiación de Partidos de 1973; el Contralor del Estado supervisa, publica informes y puede ordenar devoluciones. La propaganda electoral se rige por la Ley de Modos de Propaganda Electoral de 1959, aplicada por el presidente de la Comisión Electoral."
-      fr: "Le financement des partis et des campagnes est régi principalement par la loi de 1973 sur le financement des partis ; le Contrôleur de l’État supervise, publie des rapports et peut ordonner des remboursements. La propagande électorale est régie par la loi de 1959 sur les modes de propagande, appliquée par le président de la Commission électorale."
+      fr: "Le financement des partis et des campagnes est régi principalement par la loi de 1973 sur le financement des partis ; le Contrôleur de l’État supervise, publie des rapports et peut ordonner des remboursements. La propagande électorale est régie par la loi de 1959 sur les modes de propagande, appliquée par le président de la Commission électorale."
     status: confirmed
     sources:
       - url: "https://main.knesset.gov.il/EN/activity/mmm/me00636.pdf"
@@ -997,13 +982,13 @@ rules:
 
 stats:
   - key: eligible-voters
-    label: { he: "בעלי זכות בחירה", en: "Eligible voters", es: "Votantes con derecho a voto", fr: "Électeurs inscrits" }
-    value: { he: "7,331,981", en: "7,331,981", es: "7 331 981", fr: "7 331 981" }
+    label: { he: "בעלי זכות בחירה", en: "Eligible voters", es: "Personas con derecho a voto", fr: "Électeurs inscrits" }
+    value: { he: "7,331,981", en: "7,331,981", es: "7 331 981", fr: "7 331 981" }
     detail:
       he: "בעלי זכות הבחירה לכנסת ה-26 לפי פנקס הבוחרים הסופי (נכון ל-6.9.2026) — 547,749 יותר מאשר בבחירות לכנסת ה-25 (6,788,804 ב-2022)."
       en: "Eligible voters for the 26th Knesset per the final voter roll (as of 6 Sep 2026) — 547,749 more than in the 25th-Knesset election (6,788,804 in 2022)."
-      es: "Votantes con derecho a voto para la 26.ª Knéset según el censo definitivo (a 6 de septiembre de 2026) — 547 749 más que en las elecciones a la 25.ª Knéset (6 788 804 en 2022)."
-      fr: "Électeurs inscrits pour la 26e Knesset selon la liste électorale définitive (au 6 septembre 2026) — 547 749 de plus qu’aux élections de la 25e Knesset (6 788 804 en 2022)."
+      es: "Personas con derecho a voto para la 26.ª Knéset según el censo definitivo (a 6 de septiembre de 2026) — 547 749 más que en las elecciones a la 25.ª Knéset (6 788 804 en 2022)."
+      fr: "Électeurs inscrits pour la 26e Knesset selon la liste électorale définitive (au 6 septembre 2026) — 547 749 de plus qu’aux élections de la 25e Knesset (6 788 804 en 2022)."
     status: confirmed
     sources:
       - url: "https://www.gov.il/he/pages/26elections-info"
@@ -1014,13 +999,13 @@ stats:
         title: "Fact sheet: The 25th Knesset elections (Knesset RIC)"
         publisher: "The Knesset"
   - key: turnout
-    label: { he: "שיעור הצבעה אחרון", en: "Most recent turnout", es: "Última participación", fr: "Dernière participation" }
-    value: { he: "כ-70.6% (2022)", en: "~70.6% (2022)", es: "~70,6 % (2022)", fr: "~70,6 % (2022)" }
+    label: { he: "שיעור הצבעה אחרון", en: "Most recent turnout", es: "Última participación", fr: "Participation aux dernières élections" }
+    value: { he: "כ-70.6% (2022)", en: "~70.6% (2022)", es: "~70,6 % (2022)", fr: "~70,6 % (2022)" }
     detail:
       he: "לשם השוואה: 67.4% ב-2021 (הנמוך במחזור 2019–2021), 71.5% ב-2020, 69.8% בספטמבר 2019 ו-68.5% באפריל 2019. שיעורי ההצבעה לכל מערכות הבחירות — בהיסטוריית הבחירות שבהמשך העמוד."
       en: "For comparison: 67.4% in 2021 (the lowest of the 2019–2021 cycle), 71.5% in 2020, 69.8% in September 2019 and 68.5% in April 2019. Turnout for every election appears in the history below."
       es: "Como comparación: 67,4 % en 2021 (la más baja del ciclo 2019–2021), 71,5 % en 2020, 69,8 % en septiembre de 2019 y 68,5 % en abril de 2019. La participación de todas las elecciones figura en el historial de abajo."
-      fr: "À titre de comparaison : 67,4 % en 2021 (le plus bas du cycle 2019–2021), 71,5 % en 2020, 69,8 % en septembre 2019 et 68,5 % en avril 2019. La participation à chaque élection figure dans l’historique ci-dessous."
+      fr: "À titre de comparaison : 67,4 % en 2021 (le plus bas du cycle 2019–2021), 71,5 % en 2020, 69,8 % en septembre 2019 et 68,5 % en avril 2019. La participation à chaque élection figure dans l’historique ci-dessous."
     status: confirmed
     sources:
       - url: "https://main.knesset.gov.il/EN/Documents/2022-10-24%20Fact%20sheet%2002%20-%2025th%20Knesset%20elections%20-%20updated.pdf"
@@ -1031,12 +1016,12 @@ stats:
         publisher: "Jewish Virtual Library"
   - key: polling-stations
     label: { he: "קלפיות", en: "Polling stations", es: "Colegios electorales", fr: "Bureaux de vote" }
-    value: { he: "12,018", en: "12,018", es: "12 018", fr: "12 018" }
+    value: { he: "12,018", en: "12,018", es: "12 018", fr: "12 018" }
     detail:
       he: "קלפיות רגילות ברחבי הארץ לכנסת ה-26 (מפת הקלפיות הסופית), מהן 6,208 נגישות ו-3,620 נגישות מיוחדות; בנוסף 250 קלפיות בבתי חולים, 55 בבתי סוהר ומעצר ו-102 ב-100 נציגויות ישראל בחו\"ל. ב-2022: 11,707 קלפיות."
       en: "Regular polling stations nationwide for the 26th Knesset (final station map), of which 6,208 accessible and 3,620 special accessible; plus 250 in hospitals, 55 in prisons and detention facilities and 102 at 100 Israeli missions abroad. In 2022: 11,707."
       es: "Colegios electorales ordinarios en todo el país para la 26.ª Knéset (mapa definitivo), de los cuales 6 208 accesibles y 3 620 de accesibilidad especial; más 250 en hospitales, 55 en prisiones y centros de detención y 102 en 100 misiones israelíes en el extranjero. En 2022: 11 707."
-      fr: "Bureaux de vote ordinaires dans tout le pays pour la 26e Knesset (carte définitive), dont 6 208 accessibles et 3 620 à accessibilité spéciale ; plus 250 dans les hôpitaux, 55 dans les prisons et centres de détention et 102 dans 100 missions israéliennes à l’étranger. En 2022 : 11 707."
+      fr: "Bureaux de vote ordinaires dans tout le pays pour la 26e Knesset (carte définitive), dont 6 208 accessibles et 3 620 à accessibilité spéciale ; plus 250 dans les hôpitaux, 55 dans les prisons et centres de détention et 102 dans 100 missions israéliennes à l’étranger. En 2022 : 11 707."
     status: confirmed
     sources:
       - url: "https://www.gov.il/he/pages/26elections-info"
@@ -1048,12 +1033,12 @@ stats:
         publisher: "The Knesset"
   - key: lists-2022
     label: { he: "רשימות בבחירות הקודמות", en: "Lists in the last election", es: "Listas en las últimas elecciones", fr: "Listes aux dernières élections" }
-    value: { he: "40 התמודדו, 10 עברו", en: "40 ran, 10 passed", es: "40 se presentaron, 10 entraron", fr: "40 en lice, 10 élues" }
+    value: { he: "40 התמודדו, 10 עברו", en: "40 ran, 10 passed", es: "40 se presentaron, 10 entraron", fr: "40 en lice, 10 au-dessus du seuil" }
     detail:
       he: "בבחירות 2022 התמודדו 40 רשימות ו-10 עברו את אחוז החסימה; מרצ ובל\"ד לא עברו, וכ-300 אלף קולות ירדו לטמיון."
       en: "In 2022, 40 lists ran and 10 passed the threshold; Meretz and Balad fell short, and some 300,000 votes were wasted."
-      es: "En 2022 se presentaron 40 listas y 10 superaron el umbral; Meretz y Balad se quedaron cortos, y unos 300 000 votos se perdieron."
-      fr: "En 2022, 40 listes se sont présentées et 10 ont franchi le seuil ; Meretz et Balad ont échoué, et quelque 300 000 voix ont été perdues."
+      es: "En 2022 se presentaron 40 listas y 10 superaron el umbral; Meretz y Balad no superaron el umbral, y unos 300 000 votos se perdieron."
+      fr: "En 2022, 40 listes se sont présentées et 10 ont franchi le seuil ; Meretz et Balad ont échoué, et quelque 300 000 voix ont été perdues."
     status: confirmed
     sources:
       - url: "https://main.knesset.gov.il/EN/Documents/2022-10-24%20Fact%20sheet%2002%20-%2025th%20Knesset%20elections%20-%20updated.pdf"
@@ -1064,12 +1049,12 @@ stats:
         publisher: "Israel Democracy Institute"
   - key: election-cost
     label: { he: "כמה עולות בחירות", en: "What an election costs", es: "Cuánto cuestan unas elecciones", fr: "Ce que coûte une élection" }
-    value: { he: "כ-2.7 מיליארד ש\"ח (2022, אומדן)", en: "~NIS 2.7 billion (2022, est.)", es: "~2 700 millones de NIS (2022, est.)", fr: "~2,7 milliards de NIS (2022, est.)" }
+    value: { he: "כ-2.7 מיליארד ש\"ח (2022, אומדן)", en: "~NIS 2.7 billion (2022, est.)", es: "≈ 2700 millones de shékels (2022, estimación)", fr: "≈ 2,7 milliards de shekels (2022, estimation)" }
     detail:
       he: "מתוכם כ-1.5 מיליארד ש\"ח עלות יום השבתון; תקציב ועדת הבחירות שאושר בוועדת הכספים עמד על כ-538 מיליון ש\"ח — כ-79 ש\"ח לבוחר."
       en: "Of which ~NIS 1.5 billion was the election-day holiday; the CEC budget approved by the Finance Committee was ~NIS 538 million — roughly NIS 79 per voter."
-      es: "De ellos, unos 1 500 millones de NIS correspondieron al día festivo electoral; el presupuesto de la Comisión Electoral aprobado por la Comisión de Finanzas fue de unos 538 millones de NIS — unos 79 NIS por votante."
-      fr: "Dont environ 1,5 milliard de NIS pour le jour férié électoral ; le budget de la Commission électorale approuvé par la Commission des Finances était d’environ 538 millions de NIS — soit environ 79 NIS par électeur."
+      es: "De ellos, unos 1500 millones de shékels correspondieron al día festivo electoral; el presupuesto de la Comisión Electoral aprobado por la Comisión de Finanzas fue de unos 538 millones de NIS — unos 79 NIS por votante."
+      fr: "Dont environ 1,5 milliard de shekels pour le jour férié électoral ; le budget de la Commission électorale approuvé par la Commission des Finances était d’environ 538 millions de NIS — soit environ 79 NIS par électeur."
     status: reported
     sources:
       - url: "https://www.calcalist.co.il/local_news/article/bj4w2taf9"
@@ -1087,8 +1072,8 @@ howToVote:
     detail:
       he: "יום שלישי, 27 באוקטובר 2026 — יום שבתון. הקלפיות פתוחות 7:00–22:00 (ביישובים קטנים 8:00–20:00), ומי שבתור בשעת הסגירה מצביע. מ-6 באוקטובר נשלחת לכל בוחר הודעה עם מקום הקלפי שלו; רשימת מקומות הקלפי מתפרסמת ב-20 באוקטובר."
       en: "Tuesday, 27 October 2026 — a public day of rest. Polls are open 7:00–22:00 (8:00–20:00 in small communities), and anyone in line at closing still votes. From 6 October every voter is sent a notice with their polling station; the list of stations is published on 20 October."
-      es: "Martes 27 de octubre de 2026 — día festivo. Los colegios abren de 7:00 a 22:00 (de 8:00 a 20:00 en localidades pequeñas), y quien esté en la fila al cierre vota igualmente. Desde el 6 de octubre cada votante recibe un aviso con su colegio electoral; la lista de colegios se publica el 20 de octubre."
-      fr: "Mardi 27 octobre 2026 — jour férié. Les bureaux sont ouverts de 7 h à 22 h (de 8 h à 20 h dans les petites localités), et quiconque fait la queue à la fermeture peut encore voter. À partir du 6 octobre, chaque électeur reçoit un avis indiquant son bureau de vote ; la liste des bureaux est publiée le 20 octobre."
+      es: "Martes 27 de octubre de 2026 — día festivo. Los centros de votación abren de 7:00 a 22:00 (de 8:00 a 20:00 en localidades pequeñas), y quien esté en la fila al cierre vota igualmente. Desde el 6 de octubre cada votante recibe un aviso con su centro de votación; la lista de colegios se publica el 20 de octubre."
+      fr: "Mardi 27 octobre 2026 — jour férié. Les bureaux sont ouverts de 7 h à 22 h (de 8 h à 20 h dans les petites localités), et quiconque fait la queue à la fermeture peut encore voter. À partir du 6 octobre, chaque électeur reçoit un avis indiquant son bureau de vote ; la liste des bureaux est publiée le 20 octobre."
     status: confirmed
     sources:
       - url: "https://www.bechirot.gov.il/home/"
@@ -1103,7 +1088,7 @@ howToVote:
       he: "כל אזרח ישראלי בן 18 ומעלה הרשום במרשם האוכלוסין. ההצבעה אישית ובישראל בלבד; אין הצבעה בדואר ואין הצבעה כללית מחו\"ל."
       en: "Every Israeli citizen aged 18 or over who is in the Population Register. Voting is in person and in Israel only; there is no postal voting and no general voting from abroad."
       es: "Todo ciudadano israelí de 18 años o más inscrito en el Registro de Población. Se vota en persona y solo en Israel; no hay voto por correo ni voto general desde el extranjero."
-      fr: "Tout citoyen israélien de 18 ans et plus inscrit au registre de la population. Le vote se fait en personne et uniquement en Israël ; il n’y a ni vote par correspondance ni vote général depuis l’étranger."
+      fr: "Tout citoyen israélien de 18 ans et plus inscrit au registre de la population. Le vote se fait en personne et uniquement en Israël ; il n’y a ni vote par correspondance ni vote général depuis l’étranger."
     status: confirmed
     sources:
       - url: "https://m.knesset.gov.il/EN/activity/documents/BasicLawsPDF/BasicLawTheKnesset.pdf"
@@ -1113,12 +1098,12 @@ howToVote:
         title: "מידע לבוחר — הבחירות לכנסת ה-26 (עודכן 16.9.2026)"
         publisher: "ועדת הבחירות המרכזית / gov.il"
   - key: htv-id
-    label: { he: "מה מביאים", en: "What to bring", es: "Qué llevar", fr: "Que faut-il apporter" }
+    label: { he: "מה מביאים", en: "What to bring", es: "Qué llevar", fr: "Ce qu’il faut apporter" }
     detail:
       he: "אחד מאלה: תעודת זהות תקינה, דרכון ישראלי תקף, רישיון נהיגה תקף, או תעודה צבאית בתוקף (חוגר, קצין או נגד); גם תעודת שוטר או תעודת חבר כנסת."
       en: "One of: a valid ID card, a valid Israeli passport, a valid driving licence, or a valid military ID (enlisted, officer or NCO); a police ID or Knesset-member ID also counts."
-      es: "Uno de estos: un documento de identidad válido, un pasaporte israelí válido, un permiso de conducir válido o una identificación militar válida (soldado, oficial o suboficial); también sirven una identificación policial o de miembro de la Knéset."
-      fr: "L’un des documents suivants : une carte d’identité valide, un passeport israélien valide, un permis de conduire valide ou une carte militaire valide (soldat, officier ou sous-officier) ; une carte de police ou de député à la Knesset est également acceptée."
+      es: "Uno de estos: un documento de identidad válido, un pasaporte israelí válido, una licencia de conducir válida o una identificación militar válida (soldado, oficial o suboficial); también sirven una identificación policial o de miembro de la Knéset."
+      fr: "L’un des documents suivants : une carte d’identité valide, un passeport israélien valide, un permis de conduire valide ou une carte militaire valide (soldat, officier ou sous-officier) ; une carte de police ou de député à la Knesset est également acceptée."
     status: confirmed
     sources:
       - url: "https://www.gov.il/he/pages/26elections-info"
@@ -1129,8 +1114,8 @@ howToVote:
     detail:
       he: "6,208 קלפיות נגישות לאנשים המוגבלים בניידות (לפי מפת הקלפיות הסופית, 6.9.2026), ו-3,620 קלפיות נגישות מיוחדות שבהן רשאי להצביע מי שמוגבל בניידות והקלפי שלו אינה נגישה — עם הצהרה בפני מזכיר הקלפי, במעטפה כפולה. רשימת הקלפיות הנגישות מתפרסמת סמוך לבחירות."
       en: "6,208 stations accessible to people with limited mobility (per the final station map, 6 Sep 2026), and 3,620 special accessible stations where anyone with limited mobility whose own station is not accessible may vote — with a declaration to the station secretary, by double envelope. The list is published close to election day."
-      es: "6 208 colegios accesibles para personas con movilidad reducida (según el mapa definitivo, 6 de septiembre de 2026), y 3 620 colegios de accesibilidad especial donde puede votar cualquier persona con movilidad reducida cuyo colegio no sea accesible — con una declaración ante el secretario de mesa, en sobre doble. La lista se publica cerca del día de las elecciones."
-      fr: "6 208 bureaux accessibles aux personnes à mobilité réduite (selon la carte définitive du 6 septembre 2026), et 3 620 bureaux à accessibilité spéciale où toute personne à mobilité réduite dont le bureau n’est pas accessible peut voter — sur déclaration au secrétaire du bureau, sous double enveloppe. La liste est publiée peu avant le jour des élections."
+      es: "6 208 centros de votación accesibles para personas con movilidad reducida (según el mapa definitivo, 6 de septiembre de 2026), y 3 620 colegios de accesibilidad especial donde puede votar cualquier persona con movilidad reducida cuyo colegio no sea accesible — con una declaración ante el secretario de mesa, en sobre doble. La lista se publica cerca del día de las elecciones."
+      fr: "6 208 bureaux accessibles aux personnes à mobilité réduite (selon la carte définitive du 6 septembre 2026), et 3 620 bureaux à accessibilité spéciale où toute personne à mobilité réduite dont le bureau n’est pas accessible peut voter — sur déclaration au secrétaire du bureau, sous double enveloppe. La liste est publiée peu avant le jour des élections."
     status: confirmed
     sources:
       - url: "https://www.gov.il/he/pages/26elections-info"
@@ -1144,8 +1129,8 @@ howToVote:
     detail:
       he: "מי שמאושפז ביום הבחירות (למעט אשפוז יום) מצביע בקלפי למאושפזים בבית החולים, עם אישור בכתב מבית החולים ותעודה מזהה; גם שוהים במוסד מוכר לאנשים המוגבלים בניידות (50 דיירים לפחות) מצביעים בקלפי במוסד."
       en: "Anyone hospitalised on election day (other than day admissions) votes at the hospital's station, with a written confirmation from the hospital and an ID; residents of recognised care institutions for people with limited mobility (50 residents or more) vote at a station in the institution."
-      es: "Quien esté hospitalizado el día de las elecciones (salvo ingresos de día) vota en el colegio del hospital, con una confirmación escrita del hospital y un documento de identidad; los residentes de instituciones reconocidas para personas con movilidad reducida (50 residentes o más) votan en un colegio dentro de la institución."
-      fr: "Toute personne hospitalisée le jour des élections (hors admissions de jour) vote au bureau de l’hôpital, avec une attestation écrite de l’hôpital et une pièce d’identité ; les résidents d’établissements reconnus pour personnes à mobilité réduite (50 résidents ou plus) votent dans un bureau situé dans l’établissement."
+      es: "Quien esté hospitalizado el día de las elecciones (salvo hospitalización de día) vota en el centro de votación del hospital, con una confirmación escrita del hospital y un documento de identidad; los residentes de instituciones reconocidas para personas con movilidad reducida (50 residentes o más) votan en un centro de votación dentro de la institución."
+      fr: "Toute personne hospitalisée le jour des élections (hors admissions de jour) vote au bureau de l’hôpital, avec une attestation écrite de l’hôpital et une pièce d’identité ; les résidents d’établissements reconnus pour personnes à mobilité réduite (50 résidents ou plus) votent dans un bureau situé dans l’établissement."
     status: confirmed
     sources:
       - url: "https://www.gov.il/he/pages/26elections-info?chapterIndex=3"
@@ -1156,7 +1141,7 @@ howToVote:
     detail:
       he: "רק דיפלומטים, שליחי המדינה ובני משפחותיהם מצביעים בנציגויות ישראל (102 קלפיות ב-100 נציגויות), וכן צוותי כלי שיט ישראליים — ב-15 באוקטובר 2026. אזרח שנמצא בחו\"ל ביום הבחירות אינו יכול להצביע."
       en: "Only diplomats, state emissaries and their families vote at Israeli missions (102 stations at 100 missions), plus crews of Israeli ships — on 15 October 2026. A citizen who is abroad on election day cannot vote."
-      es: "Solo diplomáticos, enviados del Estado y sus familias votan en las misiones israelíes (102 colegios en 100 misiones), además de las tripulaciones de barcos israelíes — el 15 de octubre de 2026. Un ciudadano que esté en el extranjero el día de las elecciones no puede votar."
+      es: "Solo diplomáticos, enviados del Estado y sus familias votan en las misiones israelíes (102 centros de votación en 100 misiones), además de las tripulaciones de barcos israelíes — el 15 de octubre de 2026. Un ciudadano que esté en el extranjero el día de las elecciones no puede votar."
       fr: "Seuls les diplomates, les émissaires de l’État et leurs familles votent dans les missions israéliennes (102 bureaux dans 100 missions), ainsi que les équipages des navires israéliens — le 15 octobre 2026. Un citoyen se trouvant à l’étranger le jour des élections ne peut pas voter."
     status: confirmed
     sources:
@@ -1460,4 +1445,4 @@ disclaimer:
   he: "עמוד זה נערך על ידי האתר על בסיס המקורות המצוינים לצד כל פריט ומתעדכן ככל שהמערכה מתקדמת. הרשימות מוצגות כפי שהוגשו ב-7–8 בספטמבר 2026, בכפוף לאישור ועדת הבחירות המרכזית. סקרים ועמדות מוצגים עם מקורם ואינם המלצה. מצאתם אי-דיוק? דווחו לנו ונתקן."
   en: "This page is edited by the site from the sources cited beside each item and is updated as the campaign develops. Lists are shown as submitted on September 7–8, 2026, subject to the Central Elections Committee's approval. Polls and positions are shown with their sources and are not a recommendation. Spotted an inaccuracy? Report it and we will fix it."
   es: "Esta página la edita el sitio a partir de las fuentes citadas junto a cada elemento y se actualiza a medida que avanza la campaña. Las listas se muestran tal como se presentaron el 7 y 8 de septiembre de 2026, sujetas a la aprobación de la Comisión Electoral Central. Las encuestas y las posturas se muestran con sus fuentes y no son una recomendación. ¿Ha visto un error? Infórmenos y lo corregiremos."
-  fr: "Cette page est rédigée par le site à partir des sources citées à côté de chaque élément et mise à jour au fil de la campagne. Les listes sont présentées telles que déposées les 7 et 8 septembre 2026, sous réserve de l’approbation de la Commission électorale centrale. Les sondages et les positions sont présentés avec leurs sources et ne constituent pas une recommandation. Une erreur ? Signalez-la et nous la corrigerons."
+  fr: "Cette page est rédigée par le site à partir des sources citées à côté de chaque élément et mise à jour au fil de la campagne. Les listes sont présentées telles que déposées les 7 et 8 septembre 2026, sous réserve de l’approbation de la Commission électorale centrale. Les sondages et les positions sont présentés avec leurs sources et ne constituent pas une recommandation. Une erreur ? Signalez-la et nous la corrigerons."

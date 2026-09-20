@@ -80,7 +80,7 @@ export default async function PartiesPage() {
       </div>
       {coalition.sourceUrl && (
         <p className="text-xs text-muted">
-          {t("parties.coalitionNote", { asOf: coalition.asOf ?? "" })}{" "}
+          {t("parties.coalitionNote", { asOf: formatDate(coalition.caretakerSince ?? coalition.asOf, locale) })}{" "}
           <a
             className="underline hover:text-accent"
             href={coalition.sourceUrl}
@@ -89,6 +89,7 @@ export default async function PartiesPage() {
           >
             {coalition.sourceLabel ?? t("common.source")}
           </a>
+          {coalition.asOf && <> · {t("common.lastChecked", { date: formatDate(coalition.asOf, locale) })}</>}
         </p>
       )}
 

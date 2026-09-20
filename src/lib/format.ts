@@ -30,3 +30,10 @@ export function formatDateTime(iso: string | null | undefined, locale: string): 
     timeStyle: "short",
   }).format(new Date(iso));
 }
+
+// A number in the reader's digits and decimal mark ("22,3" in es/fr/ru,
+// "22.3" in he/en) — so a figure interpolated into a sentence matches the
+// figures the content files write by hand.
+export function formatNumber(n: number, locale: string, digits = 1): string {
+  return n.toLocaleString(BCP47[locale] ?? locale, { minimumFractionDigits: digits, maximumFractionDigits: digits });
+}

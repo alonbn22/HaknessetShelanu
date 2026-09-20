@@ -267,7 +267,7 @@ export async function PollsSection({ id = "polls" }: { id?: string }) {
                   <td className="whitespace-nowrap px-3 py-2 text-muted" {...partyTextAttrs(p.institute, locale)}>{partyText(p.institute, locale)}</td>
                   <td className="whitespace-nowrap px-2 py-2 text-end tabular-nums text-muted">
                     {p.sample.toLocaleString(locale)}
-                    {p.marginOfError != null && <span className="block text-xs">{t("moe", { pct: p.marginOfError })}</span>}
+                    {p.marginOfError != null && <span className="block text-xs">{t("moe", { pct: num(p.marginOfError, 1) })}</span>}
                   </td>
                   {slugs.map((s) => (
                     <td key={s} className="px-2 py-2 text-center tabular-nums">
@@ -307,7 +307,7 @@ export async function PollsSection({ id = "polls" }: { id?: string }) {
                 <span className="font-medium tabular-nums">{formatDate(p.published, locale)}</span>
                 <span className="text-xs text-muted">
                   {t("sample", { n: p.sample.toLocaleString(locale) })}
-                  {p.marginOfError != null && <> · {t("moe", { pct: p.marginOfError })}</>}
+                  {p.marginOfError != null && <> · {t("moe", { pct: num(p.marginOfError, 1) })}</>}
                 </span>
               </div>
               <div className="text-xs text-muted">
@@ -415,7 +415,7 @@ export async function PollsSection({ id = "polls" }: { id?: string }) {
           <p>{t("methodologyScope", { cutoff: formatDate(file.cutoff, locale) })}</p>
           <p>{t("methodologyVerification")}</p>
           <p className="text-xs text-muted">
-            {t("thresholdSource")} ({file.threshold}%):{" "}
+            {t("thresholdSource")} ({num(file.threshold, 2)}%):{" "}
             {file.thresholdSources.map((s, i) => (
               <span key={s.url}>
                 {i > 0 && " · "}

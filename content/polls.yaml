@@ -33,7 +33,7 @@ notEntered:
       ar: "بُثّ في نشرة الأخبار الرئيسية فقط. يُدخل الموقع الأرقام فقط من منشور مكتوب أو رسومي للجهة الناشرة يمكن ربطه وإعادة قراءته (مقال، إنفوغرافيك، رسم بياني) — لا من لقطة بث؛ لم يُعثر على منشور كهذا من القناة أو المعهد."
       ru: "Показан только в основном выпуске новостей. Сайт вносит цифры только из письменной или графической публикации издания, на которую можно сослаться и перечитать (статья, инфографика, диаграмма), а не из кадра эфира; такой публикации канала или института не найдено."
       es: "Emitida solo en la edición principal del informativo. El sitio introduce cifras únicamente a partir de una publicación escrita o gráfica del medio que se pueda enlazar y releer (un artículo, una infografía, un gráfico) — no a partir de un fotograma de una emisión; no se encontró ninguna publicación de ese tipo del canal ni del instituto."
-      fr: "Diffusé uniquement dans l’édition principale du journal. Le site ne saisit des chiffres qu’à partir d’une publication écrite ou graphique du média, qui peut être liée et relue (un article, une infographie, un graphique) — pas d’une image d’émission ; aucune publication de ce type de la chaîne ou de l’institut n’a été trouvée."
+      fr: "Diffusé uniquement dans l’édition principale du journal. Le site ne saisit des chiffres qu’à partir d’une publication écrite ou graphique du média, vers laquelle on peut faire un lien et que l’on peut relire (un article, une infographie, un graphique) — pas d’une capture d’émission ; aucune publication de ce type de la chaîne ou de l’institut n’a été trouvée."
   - published: "2026-09-16"
     outlet: { he: "ערוץ 16", en: "Channel 16", es: "Canal 16", fr: "Chaîne 16" }
     institute: { he: "מאגר מוחות (יצחק כץ)", en: "Maagar Mochot (Yitzhak Katz)", es: "Maagar Mochot (Yitzhak Katz)", fr: "Maagar Mochot (Yitzhak Katz)" }
@@ -44,7 +44,7 @@ notEntered:
       ar: "مُدرج في أرشيف استطلاعات «هامداد» (16.9.2026، جهة الاستطلاع: يتسحاق كاتس) لكنه بُثّ فقط؛ لم يُعثر على منشور مكتوب أو رسومي من القناة أو المعهد يمكن ربطه — القاعدة نفسها كما في استطلاع القناة السابق."
       ru: "Указан в архиве опросов «ХаМадад» (16.09.2026, социолог: Ицхак Кац), но только показан в эфире; письменной или графической публикации канала или института, на которую можно сослаться, не найдено — то же правило, что и для предыдущего опроса канала."
       es: "Indexada en el archivo de encuestas de HaMadad (16 de septiembre de 2026, encuestador: Yitzhak Katz) pero solo emitida; no se encontró ninguna publicación escrita o gráfica enlazable del canal ni del instituto — la misma regla que para la encuesta anterior del canal."
-      fr: "Indexé dans les archives de sondages de HaMadad (16 septembre 2026, sondeur : Yitzhak Katz) mais seulement diffusé ; aucune publication écrite ou graphique de la chaîne ou de l’institut pouvant être liée n’a été trouvée — même règle que pour le sondage précédent de la chaîne."
+      fr: "Indexé dans les archives de sondages de HaMadad (16 septembre 2026, sondeur : Yitzhak Katz) mais seulement diffusé ; aucune publication écrite ou graphique de la chaîne ou de l’institut vers laquelle faire un lien n’a été trouvée — même règle que pour le sondage précédent de la chaîne."
 # Other published averages, for comparison — their numbers, their method, credited.
 externalAverages:
   - name: { he: "ממוצע המדד", en: "HaMadad average", es: "Promedio de HaMadad", fr: "Moyenne de HaMadad" }

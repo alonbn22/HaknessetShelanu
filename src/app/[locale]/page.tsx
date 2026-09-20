@@ -6,6 +6,7 @@ import { MemberAvatar } from "@/components/MemberCard";
 import { KeyDatesTimeline } from "@/components/KeyDatesTimeline";
 import { PollAverageTeaser } from "@/components/polls/PollAverageTeaser";
 import { ElectionBanner } from "@/components/ElectionBanner";
+import { MinorityNote } from "@/components/MinorityNote";
 import { ReadingBadge } from "@/components/ReadingBadge";
 import { Badge } from "@/components/ui/Badge";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -91,6 +92,10 @@ export default async function HomePage() {
       };
     });
 
+  // The two figures at the aisle, counted from the seats the hall shows.
+  const coalitionIds = new Set(plenumFactions.filter((f) => f.isCoalition).map((f) => f.id));
+  const coalitionSeats = seats.filter((s) => coalitionIds.has(s.factionId)).length;
+
   const arrow = rtlLocales.has(locale) ? "←" : "→";
   const asOf = lastSync
     ? new Intl.DateTimeFormat(locale, { dateStyle: "medium", timeStyle: "short" }).format(new Date(lastSync))
@@ -127,13 +132,17 @@ export default async function HomePage() {
 
           {/* The arc from sm up; the same seats as two blocks across the aisle on phones. */}
           <Plenum seats={seats} factions={plenumFactions} asOf={asOf} />
-          {/* How the aisle is counted — the one line that answers "wasn't it 61?". */}
-          <p className="text-xs text-muted">
-            {t("home.countNote")}{" "}
-            <Link href="/parties#count" className="underline hover:text-accent">
-              {t("home.countNoteLink")} {arrow}
-            </Link>
-          </p>
+          {/* Under 61: a minority government, said in plain words with the law as the source.
+              Then how the aisle is counted — the line that answers "wasn't it 61?". */}
+          <div className="space-y-2">
+            <MinorityNote coalitionSeats={coalitionSeats} />
+            <p className="text-xs text-muted">
+              {t("home.countNote")}{" "}
+              <Link href="/parties#count" className="underline hover:text-accent">
+                {t("home.countNoteLink")} {arrow}
+              </Link>
+            </p>
+          </div>
 
           {/* The dais: search sits at the base of the hall. */}
           <div className="mx-auto max-w-xl">

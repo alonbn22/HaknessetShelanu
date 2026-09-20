@@ -9,6 +9,7 @@ import {
   getCoalitionConfig,
   getFactionStatus,
   getFactionMeta,
+  getMajorityStatus,
 } from "../../src/lib/content";
 
 // Faction profiles are editorial content about live political actors — the
@@ -76,5 +77,22 @@ test("every serving faction has a dated, sourced coalition status that matches t
     if (st.changedMidTerm) {
       assert.ok(st.note && st.sources && st.sources.length >= 1, `${f.id}: a mid-term change needs a note and a source`);
     }
+  }
+});
+
+test("a coalition under 61 is shown as a minority government with the law as its source", () => {
+  const cfg = getCoalitionConfig();
+  const m = getMajorityStatus();
+  assert.equal(m.needed, 61);
+  const last = cfg.timeline.at(-1);
+  assert.ok(last, "the coalition file needs a timeline");
+  assert.equal(m.size, last.size);
+  assert.equal(m.minority, last.size < 61);
+  if (m.minority) {
+    // The date is the first step of the trailing run under 61 — UTJ's exit.
+    assert.equal(m.since, "2025-07-14");
+    assert.ok(m.sources.length >= 1, "a minority note needs the Basic Law as a source");
+    assert.ok(m.sources.some((s) => s.url.includes("knesset.gov.il")), "the majority rule must cite the Knesset");
+    for (const s of m.sources) assert.match(s.url, /^https:\/\//);
   }
 });

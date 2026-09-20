@@ -41,6 +41,9 @@
     "knesset": "Knéset",
     "coalitionSince": "En la coalición desde el {date}",
     "oppositionSince": "Fuera de la coalición desde el {date}",
+    "minorityHead": "Gobierno en minoría",
+    "minorityHeadSince": "Gobierno en minoría desde el {date}",
+    "minorityNote": "La coalición tiene {coalition} diputados, menos que la mayoría de {majority}. Un Gobierno puede seguir en el cargo sin mayoría, pero le cuesta aprobar leyes; para sustituirlo por otro Gobierno hacen falta {majority} diputados.",
     "lastChecked": "Última comprobación: {date}"
   },
   "home": {
@@ -165,7 +168,7 @@
     "seats": "Escaños",
     "coalitionNote": "Clasificación coalición/oposición tal como estaba al disolverse la Knéset el {asOf}; desde entonces gobierna un gobierno interino hasta que jure el gobierno de la 26.ª Knéset. Fuente:",
     "timelineTitle": "Cómo cambió el recuento durante la legislatura",
-    "timelineIntro": "El tamaño de la coalición en cada cambio, según los anuncios de las facciones tal como se informaron. Otras cifras que circulan — 64, 76, 68, 61 — son puntos anteriores de esta línea.",
+    "timelineIntro": "El tamaño de la coalición en cada cambio, según los anuncios de las facciones tal como se informaron. Otras cifras que circulan — 64, 76, 68, 67 — son puntos anteriores de esta línea.",
     "timelineSize": "{n} diputados en la coalición"
   },
   "party": {

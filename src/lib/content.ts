@@ -51,6 +51,9 @@ const coalitionSchema = z
     sourceUrl: httpUrl.optional(),
     sourceLabel: z.string().optional(),
     statuses: z.record(z.string().regex(/^\d+$/), factionStatusSchema).default({}),
+    // The majority the law asks for, with the law itself as the source — so
+    // a count under it can be shown as a minority government, not a mistake.
+    majority: z.object({ needed: z.number().int().min(1).max(120).default(61), sources: z.array(sourceRef).min(1) }).optional(),
     // The coalition's size at each dated change during the term, each step
     // sourced — so "wasn't it 68?" has a dated answer on the page.
     timeline: z
@@ -104,6 +107,30 @@ export function getCoalitionConfig() {
 
 export function isCoalitionFaction(factionId: number): boolean {
   return getCoalitionConfig().coalitionFactionIds.includes(factionId);
+}
+
+export type MajorityStatus = {
+  needed: number;
+  // The coalition's size at the timeline's last step, or null without one.
+  size: number | null;
+  // True when the coalition has been under `needed` since `since`.
+  minority: boolean;
+  since: string | null;
+  sources: { url: string; title: string; publisher?: string }[];
+};
+
+// "60 against 60 can't be right — you need 61": the count is right, and the
+// pages say why. The trailing run of timeline steps under `needed` gives the
+// date the minority government began.
+export function getMajorityStatus(): MajorityStatus {
+  const cfg = getCoalitionConfig();
+  const needed = cfg.majority?.needed ?? 61;
+  const sources = cfg.majority?.sources ?? [];
+  const last = cfg.timeline.at(-1);
+  if (!last || last.size >= needed) return { needed, size: last?.size ?? null, minority: false, since: null, sources };
+  let since = last.date;
+  for (let i = cfg.timeline.length - 2; i >= 0 && cfg.timeline[i].size < needed; i--) since = cfg.timeline[i].date;
+  return { needed, size: last.size, minority: true, since, sources };
 }
 
 // The faction's sourced status, or null when the file has no entry for it

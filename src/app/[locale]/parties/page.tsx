@@ -8,6 +8,7 @@ import {
 } from "@/lib/queries";
 import { getPartyProfile, getCoalitionConfig, partyText, partyTextAttrs } from "@/lib/content";
 import { SourceLinks } from "@/components/SourceLinks";
+import { MinorityNote } from "@/components/MinorityNote";
 import { formatDate } from "@/lib/format";
 import { PartyEmblem } from "@/components/PartyEmblem";
 
@@ -19,6 +20,7 @@ export default async function PartiesPage() {
   const factions = getCurrentFactionsWithSeats();
   const participation = getAllFactionAvgParticipation();
   const coalition = getCoalitionConfig();
+  const coalitionSeats = factions.filter((f) => f.isCoalition).reduce((sum, f) => sum + f.seats, 0);
 
   return (
     <div className="space-y-6">
@@ -95,6 +97,7 @@ export default async function PartiesPage() {
         <section id="count" aria-labelledby="count-title" className="space-y-3 scroll-mt-24">
           <h2 id="count-title" className="text-xl font-semibold">{t("parties.timelineTitle")}</h2>
           <p className="text-sm text-muted">{t("parties.timelineIntro")}</p>
+          <MinorityNote coalitionSeats={coalitionSeats} className="rounded-card border border-line bg-surface-sunken px-4 py-3" />
           <ol className="divide-y divide-line rounded-card border border-line bg-surface">
             {coalition.timeline.map((step) => (
               <li key={step.date} className="grid gap-x-4 gap-y-1 px-4 py-3 text-sm sm:grid-cols-[7rem_5rem_minmax(0,1fr)]">

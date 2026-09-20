@@ -41,6 +41,9 @@
     "knesset": "Knesset",
     "coalitionSince": "In the coalition since {date}",
     "oppositionSince": "Outside the coalition since {date}",
+    "minorityHead": "Minority government",
+    "minorityHeadSince": "Minority government since {date}",
+    "minorityNote": "The coalition has {coalition} members — fewer than a majority of {majority}. A government can stay in office without a majority, but passing laws is hard; replacing it with another government takes {majority} members.",
     "lastChecked": "Last checked: {date}"
   },
   "home": {
@@ -165,7 +168,7 @@
     "seats": "Seats",
     "coalitionNote": "Coalition / opposition labeling as it stood when the Knesset dispersed on {asOf}; a caretaker government serves until the 26th Knesset's government is sworn in. Source:",
     "timelineTitle": "How the count changed during the term",
-    "timelineIntro": "The coalition’s size at each change, by the factions’ announcements as reported. Other figures seen online — 64, 76, 68, 61 — are earlier points on this line.",
+    "timelineIntro": "The coalition’s size at each change, by the factions’ announcements as reported. Other figures seen online — 64, 76, 68, 67 — are earlier points on this line.",
     "timelineSize": "{n} coalition MKs"
   },
   "party": {

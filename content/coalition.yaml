@@ -31,6 +31,13 @@
 #   third readings); the government continues as a caretaker (ממשלת מעבר)
 #   until the 26th Knesset's government is sworn in, so membership is held as
 #   it stood at dissolution: 60 seats.
+# - 60 is below 61 on purpose, not a counting error: since 14 Jul 2025 this
+#   has been a minority government. Basic Law: The Government asks the
+#   Knesset for confidence to install a government (s. 13(d)) and for a
+#   majority of all its members — 61 — only to replace it with another one
+#   (s. 28(b)); nothing requires 61 to stay in office. The `majority` block
+#   below carries the sources, and the pages show the explanation next to the
+#   count whenever the timeline's last step is under 61.
 
 knesset: 25
 asOf: "2026-09-19"
@@ -44,6 +51,14 @@ coalitionFactionIds:
   - 1105 # הציונות הדתית
   - 1106 # עוצמה יהודית
   - 1108 # הימין הממלכתי
+
+# Why a coalition of 60 is a real state and not a bug — the law itself.
+majority:
+  needed: 61
+  sources:
+    - { url: "https://main.knesset.gov.il/Activity/Legislation/Documents/yesod6.pdf", title: "חוק-יסוד: הממשלה — סעיף 3 (הממשלה מכהנת מכוח אמון הכנסת), סעיף 13(ד) (כינון הממשלה) וסעיף 28(ב) (אי-אמון ברוב חברי הכנסת בממשלה אחרת); נוסח מעודכן ליום 13.5.2025", publisher: "חוק-יסוד: הממשלה (הכנסת)" }
+    - { url: "https://main.knesset.gov.il/About/Lexicon/Pages/NoConfidence.aspx", title: "הבעת אי-אמון בממשלה — לקסיקון הכנסת", publisher: "לקסיקון הכנסת" }
+    - { url: "https://www.timesofisrael.com/far-right-lawmaker-avi-maoz-quits-coalition-leaving-pm-with-a-minority-government/", title: "Far-right MK Avi Maoz quits coalition, leaving Netanyahu without Knesset majority (17 Jul 2025)", publisher: "The Times of Israel" }
 
 # Per-faction status with the date it took effect and the reports it rests on.
 # `since` is shown on the faction and member pages only when it differs from

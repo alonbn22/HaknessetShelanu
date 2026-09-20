@@ -41,6 +41,9 @@
     "knesset": "Knesset",
     "coalitionSince": "Dans la coalition depuis le {date}",
     "oppositionSince": "Hors de la coalition depuis le {date}",
+    "minorityHead": "Gouvernement minoritaire",
+    "minorityHeadSince": "Gouvernement minoritaire depuis le {date}",
+    "minorityNote": "La coalition compte {coalition} députés, moins que la majorité de {majority}. Un gouvernement peut rester en fonction sans majorité, mais il lui est difficile de faire adopter des lois ; pour le remplacer par un autre gouvernement, il faut {majority} députés.",
     "lastChecked": "Dernière vérification : {date}"
   },
   "home": {
@@ -165,7 +168,7 @@
     "seats": "Sièges",
     "coalitionNote": "Classement coalition/opposition tel qu’il était à la dissolution de la Knesset le {asOf} ; depuis, un gouvernement de transition est en place jusqu’à l’investiture du gouvernement de la 26e Knesset. Source :",
     "timelineTitle": "Comment le décompte a évolué au cours de la législature",
-    "timelineIntro": "La taille de la coalition à chaque changement, d’après les annonces des factions telles que rapportées. Les autres chiffres qui circulent — 64, 76, 68, 61 — sont des points antérieurs de cette ligne.",
+    "timelineIntro": "La taille de la coalition à chaque changement, d’après les annonces des factions telles que rapportées. Les autres chiffres qui circulent — 64, 76, 68, 67 — sont des points antérieurs de cette ligne.",
     "timelineSize": "{n} députés dans la coalition"
   },
   "party": {

@@ -163,7 +163,10 @@
   "parties": {
     "title": "Knesset Factions",
     "seats": "Seats",
-    "coalitionNote": "Coalition / opposition labeling as it stood when the Knesset dispersed on {asOf}; a caretaker government serves until the 26th Knesset's government is sworn in. Source:"
+    "coalitionNote": "Coalition / opposition labeling as it stood when the Knesset dispersed on {asOf}; a caretaker government serves until the 26th Knesset's government is sworn in. Source:",
+    "timelineTitle": "How the count changed during the term",
+    "timelineIntro": "The coalition’s size at each change, by the factions’ announcements as reported. Other figures seen online — 64, 76, 68, 61 — are earlier points on this line.",
+    "timelineSize": "{n} coalition MKs"
   },
   "party": {
     "membersTitle": "Faction members",

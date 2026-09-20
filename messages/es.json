@@ -163,7 +163,10 @@
   "parties": {
     "title": "Facciones de la Knéset",
     "seats": "Escaños",
-    "coalitionNote": "Clasificación coalición/oposición tal como estaba al disolverse la Knéset el {asOf}; desde entonces gobierna un gobierno interino hasta que jure el gobierno de la 26.ª Knéset. Fuente:"
+    "coalitionNote": "Clasificación coalición/oposición tal como estaba al disolverse la Knéset el {asOf}; desde entonces gobierna un gobierno interino hasta que jure el gobierno de la 26.ª Knéset. Fuente:",
+    "timelineTitle": "Cómo cambió el recuento durante la legislatura",
+    "timelineIntro": "El tamaño de la coalición en cada cambio, según los anuncios de las facciones tal como se informaron. Otras cifras que circulan — 64, 76, 68, 61 — son puntos anteriores de esta línea.",
+    "timelineSize": "{n} diputados en la coalición"
   },
   "party": {
     "membersTitle": "Miembros de la facción",

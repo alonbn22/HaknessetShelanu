@@ -51,8 +51,28 @@ const coalitionSchema = z
     sourceUrl: httpUrl.optional(),
     sourceLabel: z.string().optional(),
     statuses: z.record(z.string().regex(/^\d+$/), factionStatusSchema).default({}),
+    // The coalition's size at each dated change during the term, each step
+    // sourced — so "wasn't it 68?" has a dated answer on the page.
+    timeline: z
+      .array(
+        z.object({
+          date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+          size: z.number().int().min(0).max(120),
+          change: z.number().int(),
+          note: localizedText,
+          sources: z.array(sourceRef).min(1),
+        }),
+      )
+      .default([]),
   })
   .superRefine((c, ctx) => {
+    // The timeline must be in date order and add up step by step.
+    let prev: number | null = null;
+    for (const [i, t] of c.timeline.entries()) {
+      if (i > 0 && t.date < c.timeline[i - 1].date) ctx.addIssue({ code: "custom", message: `timeline out of order at ${t.date}` });
+      if (prev != null && prev + t.change !== t.size) ctx.addIssue({ code: "custom", message: `timeline ${t.date}: ${prev} + ${t.change} ≠ ${t.size}` });
+      prev = t.size;
+    }
     // The id list and the per-faction statuses must agree — the pages read
     // one or the other, and a mismatch would label a faction two ways.
     for (const [id, st] of Object.entries(c.statuses)) {

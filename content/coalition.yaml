@@ -130,3 +130,105 @@ statuses:
   1099: { status: opposition, since: "2022-12-29" }
   1103: { status: opposition, since: "2022-12-29" }
   1100: { status: opposition, since: "2022-12-29" }
+
+# How the coalition's size changed over the term, from the factions' own
+# announcements as reported (each step sourced). The figures other sites
+# quote — 64, 76, 72, 68, 61 — are earlier points on this line; the Hebrew
+# Wikipedia infobox's 68/52, for example, is the state between 30 Sep 2024
+# and 19 Jan 2025.
+timeline:
+  - date: "2022-12-29"
+    size: 64
+    change: 0
+    note:
+      he: "הממשלה ה-37 הושבעה עם 64 חברי כנסת: הליכוד, ש\"ס, יהדות התורה, הציונות הדתית, עוצמה יהודית ונעם."
+      en: "The 37th government was sworn in with 64 MKs: Likud, Shas, UTJ, Religious Zionism, Otzma Yehudit and Noam."
+      es: "El 37.º Gobierno juró con 64 diputados: Likud, Shas, Judaísmo Unido de la Torá, Sionismo Religioso, Otzma Yehudit y Noam."
+      fr: "Le 37e gouvernement a prêté serment avec 64 députés : Likoud, Shas, Judaïsme unifié de la Torah, Sionisme religieux, Otzma Yehoudit et Noam."
+    sources:
+      - { url: "https://main.knesset.gov.il/mk/government/pages/governments.aspx?govId=37", title: "הממשלה ה-37 — אתר הכנסת", publisher: "הכנסת" }
+      - { url: "https://www.timesofisrael.com/gideon-saar-quits-coalition-after-netanyahu-fails-to-appoint-him-to-war-cabinet/", title: "Gideon Sa’ar quits coalition… (25 Mar 2024): “bolstering the coalition from 64 of the Knesset’s 120 seats to 76”", publisher: "The Times of Israel" }
+  - date: "2023-10-11"
+    size: 76
+    change: 12
+    note:
+      he: "המחנה הממלכתי (12) הצטרף לממשלת החירום אחרי 7 באוקטובר."
+      en: "National Unity (12) joined the emergency government after 7 October."
+      es: "Unidad Nacional (12) se unió al gobierno de emergencia tras el 7 de octubre."
+      fr: "Unité nationale (12) a rejoint le gouvernement d’urgence après le 7 octobre."
+    sources:
+      - { url: "https://www.timesofisrael.com/after-days-of-indecision-netanyahu-gantz-agree-to-establish-emergency-war-government/", title: "After days of indecision, Netanyahu, Gantz agree to establish emergency war government (11 Oct 2023)", publisher: "The Times of Israel" }
+  - date: "2024-03-25"
+    size: 72
+    change: -4
+    note:
+      he: "תקווה חדשה (4) פרשה מהקואליציה לאחר שסער לא צורף לקבינט המלחמה."
+      en: "New Hope (4) left the coalition after Sa’ar was not added to the war cabinet."
+      es: "Nueva Esperanza (4) dejó la coalición después de que Sa’ar no fuera incorporado al gabinete de guerra."
+      fr: "Nouvel Espoir (4) a quitté la coalition après que Sa’ar n’a pas été intégré au cabinet de guerre."
+    sources:
+      - { url: "https://www.timesofisrael.com/gideon-saar-quits-coalition-after-netanyahu-fails-to-appoint-him-to-war-cabinet/", title: "Gideon Sa’ar quits coalition after Netanyahu fails to appoint him to war cabinet (25 Mar 2024): “from 76 to 72 seats”", publisher: "The Times of Israel" }
+  - date: "2024-06-09"
+    size: 64
+    change: -8
+    note:
+      he: "המחנה הממלכתי (8) פרש מממשלת החירום."
+      en: "National Unity (8) left the emergency government."
+      es: "Unidad Nacional (8) dejó el gobierno de emergencia."
+      fr: "Unité nationale (8) a quitté le gouvernement d’urgence."
+    sources:
+      - { url: "https://www.timesofisrael.com/urging-elections-gantz-quits-wartime-government-accuses-pm-of-botching-war-effort/", title: "Gantz quits war government… (9 Jun 2024): “still holds 64 of 120 Knesset seats”", publisher: "The Times of Israel" }
+  - date: "2024-09-30"
+    size: 68
+    change: 4
+    note:
+      he: "הימין הממלכתי (תקווה חדשה, 4) הצטרף לממשלה."
+      en: "New Hope – The National Right (4) joined the government."
+      es: "Nueva Esperanza – La Derecha Estatal (4) se unió al Gobierno."
+      fr: "Nouvel Espoir – La Droite étatique (4) a rejoint le gouvernement."
+    sources:
+      - { url: "https://www.timesofisrael.com/as-he-officially-rejoins-government-saar-blasts-opposition-for-living-in-oct-6/", title: "As he officially rejoins government, Sa’ar blasts opposition… (30 Sep 2024)", publisher: "The Times of Israel" }
+  - date: "2025-01-21"
+    size: 62
+    change: -6
+    note:
+      he: "עוצמה יהודית (6) פרשה מהממשלה ומהקואליציה במחאה על עסקת החטופים והפסקת האש."
+      en: "Otzma Yehudit (6) left the government and the coalition over the hostage deal and ceasefire."
+      es: "Otzma Yehudit (6) dejó el Gobierno y la coalición por el acuerdo de rehenes y el alto el fuego."
+      fr: "Otzma Yehoudit (6) a quitté le gouvernement et la coalition à cause de l’accord sur les otages et du cessez-le-feu."
+    sources:
+      - { url: "https://www.timesofisrael.com/with-otzma-yehudit-out-of-government-netanyahu-set-to-appoint-replacement-ministers/", title: "With Otzma Yehudit out of government, Netanyahu set to appoint replacement ministers (19 Jan 2025)", publisher: "The Times of Israel" }
+  - date: "2025-03-20"
+    size: 68
+    change: 6
+    note:
+      he: "עוצמה יהודית (6) שבה לממשלה עם חידוש הלחימה."
+      en: "Otzma Yehudit (6) returned to the government as fighting resumed."
+      es: "Otzma Yehudit (6) volvió al Gobierno al reanudarse los combates."
+      fr: "Otzma Yehoudit (6) est revenu au gouvernement avec la reprise des combats."
+    sources:
+      - { url: "https://www.timesofisrael.com/ben-gvir-reappointed-police-minister-as-knesset-okays-his-partys-return-to-government/", title: "Ben Gvir reappointed police minister as Knesset okays his party’s return to government (20 Mar 2025)", publisher: "The Times of Israel" }
+  - date: "2025-03-24"
+    size: 67
+    change: -1
+    note:
+      he: "אבי מעוז (נעם, 1) התפטר מהממשלה; ג'רוזלם פוסט: \"עזב את הקואליציה במרץ\"; ב-16 ביולי 2025 אמר בעצמו: \"אני לא חבר בקואליציה\"."
+      en: "Avi Maoz (Noam, 1) resigned from the government; per The Jerusalem Post he “left the coalition in March”; on 16 July 2025 he said so himself: “I am not a member of the coalition.”"
+      es: "Avi Maoz (Noam, 1) dimitió del Gobierno; según The Jerusalem Post «dejó la coalición en marzo»; el 16 de julio de 2025 lo dijo él mismo: «No soy miembro de la coalición»."
+      fr: "Avi Maoz (Noam, 1) a démissionné du gouvernement ; selon le Jerusalem Post il « a quitté la coalition en mars » ; le 16 juillet 2025, il l’a dit lui-même : « Je ne suis pas membre de la coalition »."
+    sources:
+      - { url: "https://www.timesofisrael.com/liveblog_entry/deputy-minister-avi-maoz-quits-government-railing-against-pressure-of-deep-state/", title: "Deputy Minister Avi Maoz quits government… (24 Mar 2025)", publisher: "The Times of Israel" }
+      - { url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-861141", title: "Does UTJ’s departure mean that Israel is heading to an election? (15 Jul 2025): “Noam MK Avi Maoz left the coalition in March”", publisher: "The Jerusalem Post" }
+      - { url: "https://www.timesofisrael.com/far-right-lawmaker-avi-maoz-quits-coalition-leaving-pm-with-a-minority-government/", title: "Far-right MK Avi Maoz quits coalition, leaving Netanyahu without Knesset majority (17 Jul 2025)", publisher: "The Times of Israel" }
+  - date: "2025-07-14"
+    size: 60
+    change: -7
+    note:
+      he: "יהדות התורה (7) פרשה מהממשלה ומהקואליציה בשל חוק הגיוס; מאז — 60 מול 60, עד פיזור הכנסת ב-17 ביולי 2026."
+      en: "UTJ (7) left the government and the coalition over the draft law; since then — 60 against 60, until the Knesset dispersed on 17 July 2026."
+      es: "Judaísmo Unido de la Torá (7) dejó el Gobierno y la coalición por la ley del servicio militar; desde entonces — 60 frente a 60, hasta la disolución de la Knéset el 17 de julio de 2026."
+      fr: "Le Judaïsme unifié de la Torah (7) a quitté le gouvernement et la coalition à cause de la loi sur la conscription ; depuis — 60 contre 60, jusqu’à la dissolution de la Knesset le 17 juillet 2026."
+    sources:
+      - { url: "https://www.ynetnews.com/article/hki11u1mlgx", title: "Degel HaTorah faction says leaving government over draft exemption law (14 Jul 2025)", publisher: "Ynetnews" }
+      - { url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-861141", title: "Does UTJ’s departure mean that Israel is heading to an election? (15 Jul 2025)", publisher: "The Jerusalem Post" }
+      - { url: "https://www.timesofisrael.com/haredi-factions-back-dissolving-knesset-increasing-chance-for-early-elections/", title: "Haredi factions push to dissolve Knesset… (12 May 2026): UTJ “formally pulled out of the government and the coalition last year”", publisher: "The Times of Israel" }

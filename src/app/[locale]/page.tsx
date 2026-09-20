@@ -130,7 +130,7 @@ export default async function HomePage() {
           {/* How the aisle is counted — the one line that answers "wasn't it 61?". */}
           <p className="text-xs text-muted">
             {t("home.countNote")}{" "}
-            <Link href="/parties" className="underline hover:text-accent">
+            <Link href="/parties#count" className="underline hover:text-accent">
               {t("home.countNoteLink")} {arrow}
             </Link>
           </p>

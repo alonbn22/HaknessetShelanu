@@ -6,7 +6,9 @@ import {
   factionName,
   factionColor,
 } from "@/lib/queries";
-import { getPartyProfile, getCoalitionConfig } from "@/lib/content";
+import { getPartyProfile, getCoalitionConfig, partyText, partyTextAttrs } from "@/lib/content";
+import { SourceLinks } from "@/components/SourceLinks";
+import { formatDate } from "@/lib/format";
 import { PartyEmblem } from "@/components/PartyEmblem";
 
 export const dynamic = "force-dynamic";
@@ -86,6 +88,35 @@ export default async function PartiesPage() {
             {coalition.sourceLabel ?? t("common.source")}
           </a>
         </p>
+      )}
+
+      {/* The count's history — the dated, sourced answer to "wasn't it 68?" */}
+      {coalition.timeline.length > 0 && (
+        <section id="count" aria-labelledby="count-title" className="space-y-3 scroll-mt-24">
+          <h2 id="count-title" className="text-xl font-semibold">{t("parties.timelineTitle")}</h2>
+          <p className="text-sm text-muted">{t("parties.timelineIntro")}</p>
+          <ol className="divide-y divide-line rounded-card border border-line bg-surface">
+            {coalition.timeline.map((step) => (
+              <li key={step.date} className="grid gap-x-4 gap-y-1 px-4 py-3 text-sm sm:grid-cols-[7rem_5rem_minmax(0,1fr)]">
+                <time dateTime={step.date} className="tabular-nums text-muted">
+                  {formatDate(step.date, locale)}
+                </time>
+                <span className="font-semibold tabular-nums">
+                  {step.size}
+                  {step.change !== 0 && (
+                    <span className="ms-1 text-xs font-normal text-muted">({step.change > 0 ? "+" : "−"}{Math.abs(step.change)})</span>
+                  )}
+                </span>
+                <span className="space-y-0.5">
+                  <span className="block leading-relaxed" {...partyTextAttrs(step.note, locale)}>
+                    {partyText(step.note, locale)}
+                  </span>
+                  <SourceLinks sources={step.sources} label={t("common.source")} />
+                </span>
+              </li>
+            ))}
+          </ol>
+        </section>
       )}
     </div>
   );

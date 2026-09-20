@@ -31,7 +31,7 @@ const CELL: Record<number, { key: "agree2" | "agree1" | "neutral" | "disagree1" 
 
 // Quotes from platforms already carry their own quotation marks; only bare
 // text (a vote tally) gets ours.
-const quoted = (q: string) => (/^["“„«]/.test(q) ? q : `“${q}”`);
+const quoted = (q: string) => (/["“„«]/.test(q) ? q : `“${q}”`);
 
 export default async function PositionsPage({ searchParams }: { searchParams: Promise<{ list?: string }> }) {
   const t = await getTranslations("positions");

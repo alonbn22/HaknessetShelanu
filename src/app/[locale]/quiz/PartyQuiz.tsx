@@ -73,13 +73,16 @@ export function PartyQuiz({ questions, lists }: { questions: QuizQ[]; lists: Qui
       };
     });
     // Deterministic, locale-independent: unrounded score, then slug (plain
-    // code-point order, not a collator). Lists with nothing to compare stay at
-    // the end, visible, rather than vanishing.
+    // code-point order, not a collator). A list compared on too few of the
+    // answered statements ranks after the fully compared ones — one stance
+    // must not put a list first at 100% — and lists with nothing to compare
+    // stay at the end, visible, rather than vanishing.
     const bySlug = (a: { slug: string }, b: { slug: string }) => (a.slug < b.slug ? -1 : a.slug > b.slug ? 1 : 0);
-    return [
-      ...scored.filter((s) => s.score != null).sort((a, b) => b.score! - a.score! || bySlug(a, b)),
-      ...scored.filter((s) => s.score == null).sort(bySlug),
-    ];
+    const minCompared = Math.ceil(answered.length * MIN_COVERAGE);
+    const byScore = (a: { score: number | null }, b: { score: number | null }) => b.score! - a.score!;
+    const full = scored.filter((s) => s.score != null && s.compared >= minCompared).sort((a, b) => byScore(a, b) || bySlug(a, b));
+    const thin = scored.filter((s) => s.score != null && s.compared < minCompared).sort((a, b) => byScore(a, b) || bySlug(a, b));
+    return [...full, ...thin, ...scored.filter((s) => s.score == null).sort(bySlug)];
   }, [answers, important, answered, lists]);
 
   const label = (v: number) => t(`opt.${OPTIONS.find((o) => o.value === v)?.key ?? "neutral"}`);
@@ -249,7 +252,7 @@ export function PartyQuiz({ questions, lists }: { questions: QuizQ[]; lists: Qui
                               )}
                             </span>
                             {row.stance?.quote && (
-                              <span className="mt-0.5 block text-xs text-muted">{/^["“„«]/.test(row.stance.quote) ? row.stance.quote : `“${row.stance.quote}”`}</span>
+                              <span className="mt-0.5 block text-xs text-muted">{/["“„«]/.test(row.stance.quote) ? row.stance.quote : `“${row.stance.quote}”`}</span>
                             )}
                           </span>
                         </li>
@@ -268,6 +271,7 @@ export function PartyQuiz({ questions, lists }: { questions: QuizQ[]; lists: Qui
               <li>{t("explainScore")}</li>
               <li>{t("explainImportant")}</li>
               <li>{t("explainNoStance")}</li>
+              <li>{t("explainThin")}</li>
               <li>{t("explainSources")}</li>
               <li>{t("explainNotAdvice")}</li>
             </ul>

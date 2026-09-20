@@ -541,16 +541,17 @@
     "topicsNote": "Qué hay aquí y qué no: 16 afirmaciones — seguridad y política exterior, economía, religión y Estado, sociedad e instituciones. Una afirmación entra en la brújula solo si la mayoría de las listas (al menos 8 de 15) tiene una postura documentada sobre ella. Una afirmación sobre la intervención estatal en vivienda y precios se dejó fuera por esa razón — la mayoría de los programas hablan de competencia y no dicen nada sobre supervisión o construcción pública, y eso no es una postura.",
     "noStanceAtAll": "sin postura documentada en ninguna de las afirmaciones que respondió — no comparada",
     "whatIsThis": "¿Qué significa esto?",
-    "agreeOn": "Coinciden en",
-    "partlyOn": "Parcialmente cerca en",
-    "differOn": "Difieren en",
+    "agreeOn": "Misma postura sobre",
+    "partlyOn": "Cerca en",
+    "differOn": "Postura opuesta sobre",
     "noStanceOn": "La lista no tiene postura documentada sobre",
     "explainTitle": "¿Por qué este resultado?",
     "explainScore": "Para cada lista medimos cuánto se acercan sus respuestas a las posturas documentadas de la lista, afirmación por afirmación, y calculamos el promedio. 100 % = exactamente la misma postura en cada afirmación; 0 % = el extremo opuesto en cada una.",
     "explainImportant": "Una afirmación que marcó como especialmente importante cuenta el doble.",
     "explainNoStance": "Una afirmación sobre la que una lista no tiene postura documentada no se le cuenta — ni a favor ni en contra. Por eso junto a cada lista se indica en cuántas afirmaciones se comparó.",
     "explainSources": "Cada postura de una lista enlaza a su fuente — una votación en la Knéset, un programa o una cita — bajo «¿Por qué?».",
-    "explainNotAdvice": "Es solo cercanía de posturas, no una recomendación de voto: la brújula no mide liderazgo, credibilidad ni el pasado."
+    "explainNotAdvice": "Es solo cercanía de posturas, no una recomendación de voto: la brújula no mide liderazgo, credibilidad ni el pasado.",
+    "explainThin": "Una lista comparada en solo unas pocas afirmaciones puede obtener un porcentaje muy alto o muy bajo por azar; por eso se muestra atenuada y se ordena después de las listas comparadas en la mayoría de sus afirmaciones."
   },
   "budget": {
     "title": "Presupuesto del Estado",

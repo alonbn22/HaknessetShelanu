@@ -541,16 +541,17 @@
     "topicsNote": "What is here and what is not: 16 statements — security and foreign policy, the economy, religion and state, society and institutions. A statement enters the compass only if most lists (at least 8 of 15) have a documented stance on it. A statement on state intervention in housing and prices was left out for that reason — most platforms talk about competition and say nothing about supervision or public building, which is not a stance.",
     "noStanceAtAll": "no documented stance on any statement you answered — not compared",
     "whatIsThis": "What does this mean?",
-    "agreeOn": "Agree on",
-    "partlyOn": "Partly close on",
-    "differOn": "Differ on",
+    "agreeOn": "Same view on",
+    "partlyOn": "Close on",
+    "differOn": "Opposite view on",
     "noStanceOn": "The list has no documented stance on",
     "explainTitle": "Why this result?",
     "explainScore": "For each list we measured how close your answers are to its documented stances, statement by statement, and averaged. 100% = exactly the same stance on every statement; 0% = the opposite end on every statement.",
     "explainImportant": "A statement you marked as especially important counts double.",
     "explainNoStance": "A statement on which a list has no documented stance is not counted for it — neither for nor against. That is why each list shows how many statements it was compared on.",
     "explainSources": "Every list stance links to its source — a Knesset vote, a platform or a quote — under \"Why?\".",
-    "explainNotAdvice": "This is closeness of positions only, not a voting recommendation: the compass does not measure leadership, credibility or the past."
+    "explainNotAdvice": "This is closeness of positions only, not a voting recommendation: the compass does not measure leadership, credibility or the past.",
+    "explainThin": "A list compared on only a few statements can score very high or very low by chance; it is shown dimmed and ranked after the lists compared on most of your statements."
   },
   "budget": {
     "title": "State Budget",

@@ -5,8 +5,8 @@
 #   reported         = media reports (may change)
 # The lists were submitted on 7–8 September 2026 and are final subject to the
 # CEC's approval (reported for 27 September). Every list carries a stable
-# `slug` — the identity polls.yaml and quiz.yaml key on. he/en authored; ar/ru
-# fall back to en. UPDATE as the campaign moves: re-verify each item, bump
+# `slug` — the identity polls.yaml and quiz.yaml key on. Hebrew is the source;
+# every string is in all six languages. UPDATE as the campaign moves: re-verify each item, bump
 # lastReviewed, and prune anything that changed. Rule: every datum verified,
 # from a trusted primary source — never an aggregator or a paraphrase.
 knesset: 26

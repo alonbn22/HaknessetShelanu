@@ -29,9 +29,9 @@ const CELL: Record<number, { key: "agree2" | "agree1" | "neutral" | "disagree1" 
   [-2]: { key: "disagree2", cls: "border border-line-strong text-foreground" },
 };
 
-// Quotes from platforms already carry their own quotation marks; only bare
-// text (a vote tally) gets ours.
-const quoted = (q: string) => (/["“„«]/.test(q) ? q : `“${q}”`);
+// Quotes from platforms already carry their own quotation marks; a bare
+// statement gets ours. A vote tally is a record, not a quotation — none.
+const quoted = (q: string, basis?: string) => (basis === "vote" || /["“„«]/.test(q) ? q : `“${q}”`);
 
 export default async function PositionsPage({ searchParams }: { searchParams: Promise<{ list?: string }> }) {
   const t = await getTranslations("positions");
@@ -104,7 +104,7 @@ export default async function PositionsPage({ searchParams }: { searchParams: Pr
                       <p>
                         <Cell s={s} /> <span className="text-xs text-muted">({basisOf(s)})</span>
                       </p>
-                      <p className="text-xs text-muted" {...partyTextAttrs(s.quote, locale)}>{quoted(partyText(s.quote, locale))}</p>
+                      <p className="text-xs text-muted" {...partyTextAttrs(s.quote, locale)}>{quoted(partyText(s.quote, locale), s.basis)}</p>
                       <p className="text-xs text-muted">
                         {tc("source")}:{" "}
                         <a href={s.source.url} target="_blank" rel="noopener noreferrer" className="underline hover:text-accent-ink" {...rtlAttrs(s.source.publisher ?? s.source.title)}>

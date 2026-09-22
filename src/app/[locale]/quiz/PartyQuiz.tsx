@@ -252,7 +252,10 @@ export function PartyQuiz({ questions, lists }: { questions: QuizQ[]; lists: Qui
                               )}
                             </span>
                             {row.stance?.quote && (
-                              <span className="mt-0.5 block text-xs text-muted">{/["“„«]/.test(row.stance.quote) ? row.stance.quote : `“${row.stance.quote}”`}</span>
+                              <span className="mt-0.5 block text-xs text-muted">
+                                {/* A vote tally is a record, not a quotation — only words get quotation marks. */}
+                                {row.stance.basis === "vote" || /["“„«]/.test(row.stance.quote) ? row.stance.quote : `“${row.stance.quote}”`}
+                              </span>
                             )}
                           </span>
                         </li>

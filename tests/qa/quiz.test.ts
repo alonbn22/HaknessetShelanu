@@ -43,6 +43,10 @@ test("every stance is keyed to a running list, sourced, quoted, and within -2..2
       assert.ok(Number.isInteger(s.value) && s.value >= -2 && s.value <= 2, `${q.id}/${slug}: value ${s.value}`);
       assert.ok(/^https:\/\//.test(s.source.url), `${q.id}/${slug}: source not https`);
       assert.ok(s.source.title, `${q.id}/${slug}: source missing title`);
+      for (const more of s.moreSources ?? []) {
+        assert.ok(/^https:\/\//.test(more.url) && more.title, `${q.id}/${slug}: every further source needs an https URL and a title`);
+        assert.ok(s.recordOf, `${q.id}/${slug}: further sources back the recordOf note, so the stance needs one`);
+      }
       assert.ok(s.quote.he && s.quote.en, `${q.id}/${slug}: quote needs he+en`);
       if (s.basis === "vote") {
         assert.ok(s.voteId, `${q.id}/${slug}: a vote-based stance names its vote`);

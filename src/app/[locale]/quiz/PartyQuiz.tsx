@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { Fragment, useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { cx } from "@/lib/cx";
@@ -17,9 +17,8 @@ export type QuizStanceView = {
   voteId?: number;
   /** Whose vote it was, when cast by a predecessor faction. */
   recordOf?: string;
-  url: string;
-  publisher: string;
-  publisherRtl: boolean;
+  /** The stance's source first, then any further sources for the recordOf note. */
+  sources: { url: string; publisher: string; publisherRtl: boolean }[];
   quote: string;
 };
 export type QuizQ = { id: string; text: string; short: string; explainer: string; stances: Record<string, QuizStanceView> };
@@ -234,17 +233,21 @@ export function PartyQuiz({ questions, lists }: { questions: QuizQ[]; lists: Qui
                                       </Link>
                                     </>
                                   )}
-                                  {" · "}
-                                  <a
-                                    href={row.stance.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="underline"
-                                    dir={row.stance.publisherRtl ? "rtl" : undefined}
-                                    lang={row.stance.publisherRtl ? "he" : undefined}
-                                  >
-                                    {row.stance.publisher}
-                                  </a>
+                                  {row.stance.sources.map((src) => (
+                                    <Fragment key={src.url}>
+                                      {" · "}
+                                      <a
+                                        href={src.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="underline"
+                                        dir={src.publisherRtl ? "rtl" : undefined}
+                                        lang={src.publisherRtl ? "he" : undefined}
+                                      >
+                                        {src.publisher}
+                                      </a>
+                                    </Fragment>
+                                  ))}
                                   )
                                 </>
                               ) : (

@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { rtlLocales } from "@/i18n/routing";
@@ -107,9 +108,14 @@ export default async function PositionsPage({ searchParams }: { searchParams: Pr
                       <p className="text-xs text-muted" {...partyTextAttrs(s.quote, locale)}>{quoted(partyText(s.quote, locale), s.basis)}</p>
                       <p className="text-xs text-muted">
                         {tc("source")}:{" "}
-                        <a href={s.source.url} target="_blank" rel="noopener noreferrer" className="underline hover:text-accent-ink" {...rtlAttrs(s.source.publisher ?? s.source.title)}>
-                          {s.source.publisher ?? s.source.title}
-                        </a>
+                        {[s.source, ...(s.moreSources ?? [])].map((src, k) => (
+                          <Fragment key={src.url}>
+                            {k > 0 && " · "}
+                            <a href={src.url} target="_blank" rel="noopener noreferrer" className="underline hover:text-accent-ink" {...rtlAttrs(src.publisher ?? src.title)}>
+                              {src.publisher ?? src.title}
+                            </a>
+                          </Fragment>
+                        ))}
                         {s.voteId != null && (
                           <>
                             {" · "}

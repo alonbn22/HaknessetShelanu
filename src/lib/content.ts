@@ -470,6 +470,7 @@ export function getGlossary(): GlossaryTerm[] {
 // vote id for the site's own page), the list's platform, or a leader's
 // statement in a major outlet. A slug that is absent has no sourced position
 // and is shown as such; nothing is inferred.
+const stanceSourceSchema = z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() });
 const quizStanceSchema = z.object({
   value: z.number().int().min(-2).max(2),
   basis: z.enum(["vote", "platform", "statement"]),
@@ -477,7 +478,10 @@ const quizStanceSchema = z.object({
   // When the vote was cast by a predecessor faction (Yesh Atid for Together,
   // National Unity for Blue and White, Labor for the Democrats), say whose.
   recordOf: localizedText.optional(),
-  source: z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() }),
+  source: stanceSourceSchema,
+  // Further sources for what the recordOf note says beyond the quote (e.g. the
+  // list head's own words when a candidate is quoted), listed after `source`.
+  moreSources: z.array(stanceSourceSchema).optional(),
   quote: localizedText,
 });
 

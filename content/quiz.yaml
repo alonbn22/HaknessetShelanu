@@ -15,17 +15,19 @@
 # faction voted, the value is capped at ±1 and the quote says so. A vote cast
 # by a predecessor faction (Yesh Atid for Together, National Unity for Blue and
 # White, Labor for the Democrats) is disclosed in `recordOf`. "statement"
-# means the leader's or the list's own words as reported by a major outlet;
-# a reporter's characterisation is never a stance.
+# means the leader's or the list's own words as reported by a major outlet —
+# or a top-five candidate's, disclosed in `recordOf` — and a reporter's
+# characterisation is never a stance. `moreSources` cite what a `recordOf`
+# note says beyond the quote (e.g. the list head's own words when a candidate
+# is quoted); the pages list them after the main source.
 # `lean` says which side of the aisle agrees with the statement; the set is
 # balanced 8/8 and alternates, so an "agree" bias cannot tilt results (a test
 # asserts it). Together has no faction of its own in the 25th Knesset — where
 # a vote is cited for it, it is Yesh Atid's, and `recordOf` says so. A vote
 # on an opposition bill counts against a coalition faction only where the
 # coalition did not advance its own version of the measure; where it did
-# (the 2024 climate bill), the record is mixed and the value is 0. Quotes for
-# the 20 Sep 2026 statements are he+en; es/fr readers see the English with
-# lang="en" until translated. Each
+# (the 2024 climate bill), the record is mixed and the value is 0. Every
+# quote and note is in six languages (tests/qa/content-languages.test.ts). Each
 # statement also carries a `short` label (for the result summaries) and a
 # plain-words `explainer` (what it is about, what each side argues — no
 # verdict), both in six languages.
@@ -38,8 +40,13 @@
 # request: "the next government should be led by Netanyahu" — the compass is
 # about what the lists want, not whom they crown. Research notes for the
 # 20 Sep statements: scratchpad review/compass/*.yaml (one file per statement,
-# with what was tried for every list left out).
-lastReviewed: "2026-09-20"
+# with what was tried for every list left out). 22 Sep 2026: a gaps search
+# added seven cells (Yashar on settlements, religion and state, and civil
+# partnership; the Democrats on a Palestinian state; Ra'am on civil
+# partnership; the Joint List on a climate law; Amkha on Arab parties in a
+# coalition). Three more for Yashar rested only on a candidate's votes cast
+# while in another party and were left out (scratchpad compass/gaps.yaml).
+lastReviewed: "2026-09-22"
 questions:
   - id: palestinian-state
     topic: security
@@ -219,6 +226,26 @@ questions:
           ru: "«Мы будем действовать, чтобы не допустить палестинского государства на дипломатическом и политическом направлениях, одновременно создавая на местах решающую реальность»."
           es: "«Actuaremos para impedir un Estado palestino en las vías diplomática y política, junto con la creación de una realidad decisiva sobre el terreno.»"
           fr: "« Nous agirons pour empêcher un État palestinien sur les plans diplomatique et politique, tout en créant une réalité décisive sur le terrain. »"
+      democrats:
+        value: 1
+        basis: statement
+        recordOf:
+          he: "דברי גלעד קריב, מס׳ 3 ברשימת הדמוקרטים; מצע הדמוקרטים אינו מזכיר מדינה פלסטינית, ויו\"ר הרשימה יאיר גולן אמר בספטמבר 2025 כי \"בעת הזו… לדבר על מדינה פלסטינית זה דבר הרסני\""
+          en: "the words of Gilad Kariv, no. 3 on the Democrats list; the Democrats' platform does not mention a Palestinian state, and list leader Yair Golan said in September 2025 that \"at this time… talking about a Palestinian state is destructive\""
+          ar: "كلام غلعاد كاريف، رقم 3 في قائمة الديمقراطيين؛ برنامج الديمقراطيين لا يذكر دولة فلسطينية، وقال رئيس القائمة يائير غولان في أيلول/سبتمبر 2025 إنه «في هذا الوقت… الحديث عن دولة فلسطينية أمر مدمّر»"
+          ru: "слова Гилада Карива, № 3 в списке «Демократов»; в программе «Демократов» палестинское государство не упоминается, а глава списка Яир Голан в сентябре 2025 года сказал, что «сейчас… говорить о палестинском государстве — разрушительно»"
+          es: "palabras de Gilad Kariv, n.º 3 de la lista de Los Demócratas; el programa de Los Demócratas no menciona un Estado palestino, y el cabeza de lista, Yair Golan, dijo en septiembre de 2025 que «en este momento… hablar de un Estado palestino es destructivo»"
+          fr: "propos de Gilad Kariv, n° 3 sur la liste des Démocrates ; le programme des Démocrates ne mentionne pas d’État palestinien, et la tête de liste, Yaïr Golan, a déclaré en septembre 2025 qu’« en ce moment… parler d’un État palestinien est destructeur »"
+        source: { url: "https://103fm.maariv.co.il/programs/media.aspx?ZrqvnVq=KGJLIJ&c41t4nzVQ=EF", title: "\"הארץ תתחלק ותהיה מדינה פלסטינית מפורזת\" — גלעד קריב בתוכנית חמש בערב (21.7.2026)", publisher: "103FM" }
+        moreSources:
+          - { url: "https://www.walla.co.il/news/israel/3782425", title: "יאיר גולן: \"לדבר בעת הזו על מדינה פלסטינית זה הרסני לישראל\" — ריאיון ל-103FM (21.9.2025)", publisher: "וואלה" }
+        quote:
+          he: "קריב: \"בסוף התהליך המדיני, וזה ייקח זמן, הארץ תתחלק בין שני העמים ותהיה לצידה של מדינת ישראל מדינה פלסטינית מפורזת בתוך הסדר אזורי\""
+          en: "Kariv: \"At the end of the diplomatic process — and it will take time — the land will be divided between the two peoples, and alongside the State of Israel there will be a demilitarized Palestinian state within a regional arrangement\""
+          ar: "كاريف: «في نهاية المسار السياسي، وسيستغرق ذلك وقتًا، ستُقسَّم البلاد بين الشعبين وستقوم إلى جانب دولة إسرائيل دولة فلسطينية منزوعة السلاح ضمن تسوية إقليمية»"
+          ru: "Карив: «В конце дипломатического процесса — а это займёт время — страна будет разделена между двумя народами, и рядом с Государством Израиль будет демилитаризованное палестинское государство в рамках регионального урегулирования»"
+          es: "Kariv: «Al final del proceso diplomático —y llevará tiempo— la tierra se dividirá entre los dos pueblos y junto al Estado de Israel habrá un Estado palestino desmilitarizado dentro de un acuerdo regional»"
+          fr: "Kariv : « Au terme du processus diplomatique — et cela prendra du temps —, la terre sera partagée entre les deux peuples et, à côté de l’État d’Israël, il y aura un État palestinien démilitarisé dans le cadre d’un arrangement régional »"
   - id: settlements-sovereignty
     topic: security
     lean: right
@@ -381,6 +408,17 @@ questions:
           ru: "«Суверенитет делами: укрепление поселений в Иудее и Самарии и решение по землям зоны C важны и необходимы — это критически важный слой национальной безопасности»."
           es: "«Soberanía mediante hechos: fortalecer los asentamientos en Judea y Samaria y decidir sobre las tierras del Área C es importante y necesario, una capa crítica de la seguridad nacional.»"
           fr: "« La souveraineté par les actes — renforcer l’implantation en Judée-Samarie et trancher sur les terres de la zone C est important et nécessaire, une couche critique de la sécurité nationale. »"
+      yashar:
+        value: 0
+        basis: statement
+        source: { url: "https://www.israelhayom.co.il/magazine/hashavua/article/21288643", title: "איזנקוט חושף את החזון המדיני: \"שתי מדינות אחרי 7.10 - מחשבה הזויה\" (27.8.2026)", publisher: "ישראל היום" }
+        quote:
+          he: "נשאל: \"אתה תומך בהתיישבות בשטחי C. האם נכון היה להוציא את מכרזי הבנייה לשטח E1?\" — \"לא כעת. זו טעות שעולה לנו במחיר בינלאומי\"; לדבריו פעילות שני השרים ואירועי האלימות של מתנחלים נגד פלסטינים \"מסכנים את ההתיישבות כולה\". על ריבונות לא דיבר."
+          en: "Asked: \"You support settlement in Area C. Was it right to issue the building tenders for E1?\" — \"Not now. It is a mistake that costs us an international price\"; the two ministers' conduct and settler violence against Palestinians \"endanger the entire settlement enterprise.\" He did not address sovereignty."
+          ar: "سُئل: «أنت تؤيد الاستيطان في المناطق C. هل كان صحيحًا طرح مناقصات البناء في منطقة E1؟» — «ليس الآن. هذا خطأ يكلّفنا ثمنًا دوليًا»؛ وقال إن نشاط الوزيرين وأحداث عنف المستوطنين ضد الفلسطينيين «تعرّض الاستيطان كله للخطر». ولم يتحدث عن السيادة."
+          ru: "На вопрос «Вы поддерживаете поселения в зоне C. Правильно ли было объявлять тендеры на строительство в E1?» — «Не сейчас. Это ошибка, за которую мы платим международную цену»; по его словам, действия двух министров и насилие поселенцев против палестинцев «ставят под угрозу все поселения». О суверенитете он не говорил."
+          es: "Preguntado: «Usted apoya los asentamientos en el Área C. ¿Fue correcto sacar a concurso la construcción en E1?» — «Ahora no. Es un error que nos cuesta un precio internacional»; la actuación de los dos ministros y la violencia de colonos contra palestinos «ponen en peligro todos los asentamientos». No se refirió a la soberanía."
+          fr: "À la question « Vous soutenez l’implantation en zone C. Fallait-il lancer les appels d’offres de construction en E1 ? » — « Pas maintenant. C’est une erreur qui nous coûte un prix international » ; l’action des deux ministres et la violence de colons contre des Palestiniens « mettent en danger toutes les implantations ». Il n’a pas parlé de souveraineté."
   - id: econ-welfare
     topic: economy
     lean: left
@@ -776,6 +814,17 @@ questions:
           ru: "за: 0, против: 5, отсутствовали: 1"
           es: "0 a favor, 5 en contra, 1 ausente"
           fr: "0 pour, 5 contre, 1 absent"
+      yashar:
+        value: 1
+        basis: platform
+        source: { url: "https://yasharwitheisenkot.com/principles/aliyah-and-integration/", title: "ישר! לקליטת עלייה — \"המרחב הציבורי והשבת\", \"מעמד אישי\"", publisher: "ישר!" }
+        quote:
+          he: "\"נקדם יהדות מכילה ומכבדת, באחריות ובהדברות, תוך הרחבת העצמאות של רשויות מקומיות וקהילות לעצב את השבת במרחב הציבורי בהתאם לאופיין וערכיהן\"; \"נפעל למיסוד זוגיות אזרחית בישראל\""
+          en: "\"We will promote an inclusive and respectful Judaism, responsibly and through dialogue, expanding the autonomy of local authorities and communities to shape Shabbat in the public space according to their character and values\"; \"We will act to institutionalize civil partnership in Israel\""
+          ar: "«سنعزّز يهودية شاملة ومحترِمة، بمسؤولية وبالحوار، مع توسيع استقلالية السلطات المحلية والمجتمعات في تشكيل السبت في الحيّز العام وفق طابعها وقيمها»؛ «سنعمل على مأسسة الشراكة المدنية في إسرائيل»"
+          ru: "«Мы будем продвигать инклюзивный и уважительный иудаизм — ответственно и через диалог, расширяя самостоятельность местных властей и общин в том, каким быть шаббату в общественном пространстве, в соответствии с их характером и ценностями»; «Мы будем добиваться закрепления гражданского союза в Израиле»"
+          es: "«Promoveremos un judaísmo inclusivo y respetuoso, con responsabilidad y diálogo, ampliando la autonomía de las autoridades locales y las comunidades para dar forma al Shabat en el espacio público según su carácter y sus valores»; «Actuaremos para institucionalizar la unión civil en Israel»"
+          fr: "« Nous promouvrons un judaïsme inclusif et respectueux, avec responsabilité et par le dialogue, en élargissant l’autonomie des collectivités locales et des communautés pour façonner le shabbat dans l’espace public selon leur caractère et leurs valeurs » ; « Nous agirons pour institutionnaliser l’union civile en Israël »"
   - id: haredi-draft-law
     topic: religion-state
     lean: right
@@ -1457,6 +1506,28 @@ questions:
           ru: "«В рамках сохранения статус-кво Государство Израиль должно признавать только браки и разводы по закону Моисея и Израиля» (вопрос был о признании гражданского брака и ЛГБТ-пар)."
           es: "«Como parte de la preservación del statu quo, el Estado de Israel debe reconocer únicamente el matrimonio y el divorcio según la ley religiosa judía» (se les preguntó por el reconocimiento del matrimonio civil y de las parejas LGBT)."
           fr: "« Dans le cadre du maintien du statu quo, l’État d’Israël ne doit reconnaître que le mariage et le divorce selon la loi religieuse juive » (la question portait sur la reconnaissance du mariage civil et des couples LGBT)."
+      yashar:
+        value: 1
+        basis: platform
+        source: { url: "https://yasharwitheisenkot.com/principles/aliyah-and-integration/", title: "ישר! לקליטת עלייה — \"מעמד אישי\"", publisher: "ישר!" }
+        quote:
+          he: "\"נפעל למיסוד זוגיות אזרחית בישראל\" (המצע אינו מזכיר זוגות בני אותו המין במפורש)"
+          en: "\"We will act to institutionalize civil partnership in Israel\" (the platform does not name same-sex couples explicitly)"
+          ar: "«سنعمل على مأسسة الشراكة المدنية في إسرائيل» (لا يذكر البرنامج الأزواج من الجنس نفسه صراحةً)"
+          ru: "«Мы будем добиваться закрепления гражданского союза в Израиле» (однополые пары в программе прямо не названы)"
+          es: "«Actuaremos para institucionalizar la unión civil en Israel» (el programa no menciona expresamente a las parejas del mismo sexo)"
+          fr: "« Nous agirons pour institutionnaliser l’union civile en Israël » (le programme ne mentionne pas explicitement les couples de même sexe)"
+      raam:
+        value: -2
+        basis: statement
+        source: { url: "https://www.inn.co.il/news/569074", title: "מנסור עבאס מתגאה בבלימת חקיקה לטובת הלהט\"ב — ריאיון לרדיו א-נאס (21.6.2022)", publisher: "ערוץ 7" }
+        quote:
+          he: "עבאס: \"עמדתנו בנוגע ללהט\"ב הוא עמדה דתית (נגד להט\"ב), לא פוליטית, והיא עדיין איתנה\"; \"גישה זו (הלהט\"ב) פסולה על ידינו לחלוטין\" (ריאיון בערבית; המילים בסוגריים — הבהרות של ערוץ 7)"
+          en: "Abbas: \"Our position regarding LGBT is a religious position (against LGBT), not a political one, and it is still firm\"; \"this approach (LGBT) is utterly rejected by us\" (an interview in Arabic; the words in brackets are Arutz 7's clarifications)"
+          ar: "عباس: «موقفنا من مجتمع الميم موقف ديني (ضد مجتمع الميم)، وليس سياسيًا، ولا يزال ثابتًا»؛ «هذا النهج (مجتمع الميم) مرفوض عندنا تمامًا» (مقابلة بالعربية مع إذاعة الناس، مترجمة هنا عن الترجمة العبرية للقناة السابعة؛ الكلمات بين القوسين توضيحات من القناة السابعة)"
+          ru: "Аббас: «Наша позиция по ЛГБТ — религиозная (против ЛГБТ), а не политическая, и она по-прежнему твёрда»; «этот подход (ЛГБТ) полностью нами отвергается» (интервью на арабском; слова в скобках — пояснения 7-го канала)"
+          es: "Abbas: «Nuestra posición respecto al colectivo LGBT es religiosa (en contra del colectivo LGBT), no política, y sigue siendo firme»; «ese enfoque (LGBT) lo rechazamos por completo» (entrevista en árabe; las palabras entre paréntesis son aclaraciones de Arutz 7)"
+          fr: "Abbas : « Notre position sur les LGBT est une position religieuse (contre les LGBT), pas politique, et elle reste ferme » ; « cette approche (LGBT) est totalement rejetée par nous » (entretien en arabe ; les mots entre parenthèses sont des précisions d’Arutz 7)"
   - id: judicial-reform
     topic: institutions
     lean: right
@@ -2145,6 +2216,17 @@ questions:
           ru: "«Яшар!»: партнёры по коалиции должны соответствовать «трём основным принципам, хорошо известным общественности» — «признание Израиля еврейским и демократическим государством», «принятие ценностей Декларации независимости», «всеобщая военная или гражданская служба» и «признание ХАМАС террористической организацией» — не уточняя, соответствуют ли им арабские партии"
           es: "¡Yashar!: los socios de coalición deben cumplir «los tres principios fundamentales bien conocidos por el público» — «el reconocimiento de Israel como Estado judío y democrático», «la aceptación de los valores de la Declaración de Independencia», «el servicio militar o civil para todos» y «el reconocimiento de Hamás como organización terrorista» — sin decir si los partidos árabes los cumplen"
           fr: "Yashar! : les partenaires de coalition doivent respecter « les trois principes fondamentaux bien connus du public » — « la reconnaissance d’Israël comme État juif et démocratique », « l’acceptation des valeurs de la Déclaration d’indépendance », « un service militaire ou civil pour tous » et « la reconnaissance du Hamas comme organisation terroriste » — sans dire si les partis arabes y satisfont"
+      amkha:
+        value: -2
+        basis: statement
+        source: { url: "https://www.israelhayom.co.il/israelnow/article/21282312", title: "עופר וינטר נגד מנסור עבאס: \"אסור שיוכל להיבחר לכנסת\" (26.8.2026)", publisher: "ישראל היום" }
+        quote:
+          he: "וינטר על מנסור עבאס: \"מי שלא מכיר במדינת ישראל כמדינה יהודית - יכול ללכת לאיזו מדינה ערבית שהוא רוצה\"; אדם כזה \"אסור שיוכל להיבחר לכנסת ישראל\""
+          en: "Winter on Mansour Abbas: \"Whoever does not recognize the State of Israel as a Jewish state can go to whatever Arab country he wants\"; such a person \"must not be able to be elected to the Knesset of Israel\""
+          ar: "فينتر عن منصور عباس: «من لا يعترف بدولة إسرائيل دولةً يهودية يمكنه أن يذهب إلى أي دولة عربية يريدها»؛ ومثل هذا الشخص «يجب ألّا يكون بإمكانه أن يُنتخب لكنيست إسرائيل»"
+          ru: "Винтер о Мансуре Аббасе: «Тот, кто не признаёт Государство Израиль еврейским государством, может отправляться в любую арабскую страну, какую пожелает»; такой человек «не должен иметь возможности быть избранным в Кнессет Израиля»"
+          es: "Winter sobre Mansour Abbas: «Quien no reconozca al Estado de Israel como Estado judío puede irse al país árabe que quiera»; una persona así «no debe poder ser elegida para la Knéset de Israel»"
+          fr: "Winter à propos de Mansour Abbas : « Celui qui ne reconnaît pas l’État d’Israël comme État juif peut aller dans le pays arabe de son choix » ; une telle personne « ne doit pas pouvoir être élue à la Knesset d’Israël »"
 
   - id: gaza-emigration
     topic: security
@@ -2435,6 +2517,24 @@ questions:
           ru: "за правительственный законопроект о климате, цели которого правительство может менять (первое чтение, 3.4.2024: за: 4, против: 0, отсутствовали: 2); против оппозиционного законопроекта о климате с обязательными целями (предварительное чтение, 29.10.2025: за: 0, против: 3, отсутствовали: 3) — неоднозначная позиция по обязательным целям в законе"
           es: "a favor del proyecto de ley del clima del Gobierno, cuyos objetivos puede cambiar el Gobierno (primera lectura, 3/4/2024: 4 a favor, 0 en contra, 2 ausentes); en contra del proyecto de ley del clima de la oposición con objetivos vinculantes (lectura preliminar, 29/10/2025: 0 a favor, 3 en contra, 3 ausentes) — un historial mixto sobre objetivos vinculantes en la ley"
           fr: "pour le projet de loi climat du gouvernement, dont le gouvernement peut modifier les objectifs (première lecture, 3/4/2024 : 4 pour, 0 contre, 2 absents) ; contre le projet de loi climat de l’opposition aux objectifs contraignants (lecture préliminaire, 29/10/2025 : 0 pour, 3 contre, 3 absents) — un bilan mitigé sur des objectifs contraignants dans la loi"
+      joint-list:
+        value: 1
+        basis: platform
+        recordOf:
+          he: "תכנית הרשימה המשותפת לכנסת ה-24 (2021), שבה רצו יחד אותן שלוש מפלגות — חד\"ש, תע\"ל ובל\"ד; לרשימה של 2026 לא נמצא מצע בנושא האקלים"
+          en: "the Joint List's plan for the 24th Knesset (2021), when the same three parties — Hadash, Ta'al and Balad — ran together; no climate platform was found for the 2026 list"
+          ar: "برنامج القائمة المشتركة للكنيست الـ24 (2021)، حين خاضت الانتخابات معًا الأحزاب الثلاثة نفسها — الجبهة والعربية للتغيير والتجمع؛ ولم يُعثر على برنامج مناخي لقائمة 2026"
+          ru: "программа «Объединённого списка» к выборам в Кнессет 24-го созыва (2021), когда вместе шли те же три партии — «Хадаш», «Тааль» и «Балад»; климатической программы списка 2026 года найти не удалось"
+          es: "el plan de la Lista Conjunta para la 24.ª Knéset (2021), cuando se presentaron juntos los mismos tres partidos —Hadash, Ta'al y Balad—; no se encontró un programa climático de la lista de 2026"
+          fr: "le programme de la Liste commune pour la 24e Knesset (2021), quand les trois mêmes partis — Hadash, Ta'al et Balad — se présentaient ensemble ; aucun programme climatique de la liste de 2026 n’a été trouvé"
+        source: { url: "https://www.facebook.com/JointListHebrew/photos/a.1565477193705252/2830717877181171/?type=3&theater", title: "תכנית הרשימה המשותפת לכנסת ה-24 בנושא אקלים וסביבה (21.3.2021)", publisher: "הרשימה המשותפת" }
+        quote:
+          he: "\"בכנסת הבאה הרשימה המשותפת מתחייבת לפעול למען… חקיקת חוק אקלים והקמת מנהלה ארצית לטיפול בנושא עם מסגרת תקציבית, תכנית עבודה… הצבת יעד של מעבר ל-50% אנרגיה מתחדשת עד 2030 לפחות\""
+          en: "\"In the next Knesset the Joint List commits to act for… enacting a climate law and establishing a national administration for the issue with a budget framework, a work plan… setting a target of moving to at least 50% renewable energy by 2030\""
+          ar: "«في الكنيست القادم تتعهّد القائمة المشتركة بالعمل من أجل… سنّ قانون مناخ وإنشاء إدارة قُطرية لمعالجة القضية بإطار ميزانية وخطة عمل… ووضع هدف للانتقال إلى 50% على الأقل من الطاقة المتجددة بحلول 2030»"
+          ru: "«В следующем Кнессете „Объединённый список“ обязуется добиваться… принятия закона о климате и создания общенационального управления по этому вопросу с бюджетной рамкой и планом работы… постановки цели перейти не менее чем на 50% возобновляемой энергии к 2030 году»"
+          es: "«En la próxima Knéset la Lista Conjunta se compromete a trabajar por… la aprobación de una ley del clima y la creación de una administración nacional para el tema con un marco presupuestario, un plan de trabajo… la fijación de un objetivo de pasar al menos a un 50 % de energía renovable para 2030»"
+          fr: "« Dans la prochaine Knesset, la Liste commune s’engage à agir pour… l’adoption d’une loi climat et la création d’une administration nationale dédiée, dotée d’un cadre budgétaire et d’un plan de travail… la fixation d’un objectif d’au moins 50 % d’énergies renouvelables d’ici 2030 »"
 
   - id: public-broadcasting
     topic: institutions

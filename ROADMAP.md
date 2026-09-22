@@ -156,6 +156,10 @@ socio-economic indices by municipality (data.gov.il) for context.
   19 Sep 2026 from the faction verification pass), and the elections/quiz
   figures.
 
+- **Glossary sources**: 75 of the 76 glossary entries that carry a
+  `sourceUrl` point at Wikipedia, which the site's own rule treats as an index
+  only. Replace them with primary sources (the Knesset lexicon, the laws
+  themselves, the CEC) — the definitions are general, but the rule is the rule.
 - **es/fr data text fills lazily**: the gtx endpoint was rate-limited on
   19–20 Sep, so vote titles and the per-poll "below threshold" notes
   (`belowThresholdNote`, the outlet's own Hebrew wording) still render as
@@ -163,6 +167,24 @@ socio-economic indices by municipality (data.gov.il) for context.
   confirm before launch (same mechanism as ar/ru).
 
 ## Done (recent)
+
+- **Arabic and Russian everywhere (22 Sep 2026, `79c1a3c`…`d79668e`)**: every
+  editorial string in `content/` — 1,082 of them — is now in all six
+  languages; `tests/qa/content-languages.test.ts` fails on any gap, so a new
+  entry can't fall back to English again. Translated from Hebrew this pass:
+  the election page, the compass (all quotes and notes), coalition, polls,
+  the party pages (positions, 2026 notes, all 99 dated developments), the
+  glossary, the election history, the controversial laws, budget and aid.
+  Fixed on the way: Arabic and Russian pages named several running lists
+  wrongly (the Democrats as "Labor", the Joint List as "Hadash–Ta'al"…) —
+  every registry list now has its own ar/ru name.
+- **Compass gaps (22 Sep 2026, `5737d92`)**: seven more documented stances
+  (Yashar ×3, the Democrats, Ra'am, the Joint List, Amkha), every source
+  re-opened before entry; stances can cite `moreSources` for what their note
+  says. Three Yashar cells that rested on a candidate's votes in another
+  party stay "no stated position".
+- **Glossary: the judges' selection committee** now includes the March 2025
+  amendment that applies from the 26th Knesset (JPost source) (`48beaa1`).
 
 - **Compass v2 (20 Sep 2026, `201d369`)**: the "Netanyahu-led government"
   statement is out; 16 statements (8/8, alternating) about what the lists

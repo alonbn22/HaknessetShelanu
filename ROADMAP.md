@@ -132,13 +132,16 @@ socio-economic indices by municipality (data.gov.il) for context.
 ## Needs a human before launch
 
 - **Disqualifications (from 23 Sep 2026)**: the CEC voted to bar Ra'am, the
-  Joint List, Abu Shehadeh and Cassif (on the site since `4b66df4`); it heard
-  the petitions against the Democrats, Otzma Yehudit and Religious Zionism on
-  24 Sep (outcome not yet published when checked). Follow the Supreme Court
-  appeals (lists may appeal until 29 Sep; candidate bans need the court's
-  approval) and update the four faction pages, the two election cards and
-  `kd-appeals` with each ruling — same sources rule (the outlet's own report,
-  the CEC or the court).
+  Joint List, Abu Shehadeh and Cassif, and on 24 Sep rejected the requests
+  against Otzma Yehudit, Religious Zionism–Zehut and the Democrats (all on the
+  site since `dab94e9`, with the AG's positions and the responses). Follow the
+  Supreme Court: appeals by 29 Sep, rulings by 4 Oct (`kd-court`) — update the
+  seven faction pages concerned, the two election cards and the key dates with
+  each ruling, from the court's or the outlet's own text.
+- **Spanish/French data text**: `npm run warm -- es fr` now works (es/fr
+  added, stops itself when gtx throttles). 24 Sep: 1,712 es strings cached
+  before gtx answered 429 — the uncommitted `data/knesset.db` holds them.
+  Re-run when gtx recovers, `npm run db:clean`, then commit the DB alone.
 - **Approved ballot letters** once the CEC publishes its approval notices
   (27 Sep 2026): flip `lettersStatus: requested` → `approved` on each
   `cec:` block in `content/election.yaml` and on `submittedLists`, and drop

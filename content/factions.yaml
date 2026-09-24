@@ -61,7 +61,7 @@ factions:
   - id: 1102
     he: יש עתיד
     en: Yesh Atid
-    ar: يوجد مستقبل
+    ar: يش عتيد
     ru: Еш Атид
     es: Yesh Atid
     fr: Yesh Atid
@@ -101,7 +101,7 @@ factions:
   - id: 1107
     he: נעם
     en: Noam
-    ar: نوعام
+    ar: نوعم
     ru: Ноам
     es: Noam
     fr: Noam

@@ -68,7 +68,7 @@ questions:
     explainer:
       he: "השאלה היא אם הפתרון לסכסוך הוא שתי מדינות — ישראל ומדינה פלסטינית זו לצד זו — או לא. התומכים אומרים שזו הדרך היחידה לשלום ולשמירה על רוב יהודי ודמוקרטי; המתנגדים אומרים שמדינה פלסטינית תהיה סכנה ביטחונית, במיוחד אחרי 7 באוקטובר, ושאין שותף."
       en: "The question is whether the solution to the conflict is two states — Israel and a Palestinian state side by side — or not. Supporters say it is the only path to peace and to keeping a Jewish and democratic majority; opponents say a Palestinian state would be a security danger, especially after 7 October, and that there is no partner."
-      ar: "السؤال هو ما إذا كان حل الصراع هو دولتان — إسرائيل ودولة فلسطينية جنبًا إلى جنب — أم لا. يقول المؤيدون إنه الطريق الوحيد إلى السلام وإلى الحفاظ على أغلبية يهودية وديمقراطية؛ ويقول المعارضون إن دولة فلسطينية ستكون خطرًا أمنيًا، خصوصًا بعد 7 أكتوبر، وإنه لا يوجد شريك."
+      ar: "السؤال هو ما إذا كان حل الصراع هو دولتان — إسرائيل ودولة فلسطينية جنبًا إلى جنب — أم لا. يقول المؤيدون إنه الطريق الوحيد إلى السلام وإلى الحفاظ على أغلبية يهودية وديمقراطية؛ ويقول المعارضون إن دولة فلسطينية ستكون خطرًا أمنيًا، خصوصًا بعد 7 تشرين الأول/أكتوبر، وإنه لا يوجد شريك."
       ru: "Вопрос в том, является ли решением конфликта два государства — Израиль и палестинское государство рядом — или нет. Сторонники говорят, что это единственный путь к миру и к сохранению еврейского демократического большинства; противники — что палестинское государство станет угрозой безопасности, особенно после 7 октября, и что партнёра нет."
       es: "La cuestión es si la solución al conflicto son dos Estados — Israel y un Estado palestino uno junto al otro — o no. Los partidarios dicen que es el único camino hacia la paz y para mantener una mayoría judía y democrática; los opositores dicen que un Estado palestino sería un peligro para la seguridad, sobre todo después del 7 de octubre, y que no hay socio."
       fr: "La question est de savoir si la solution du conflit est deux États — Israël et un État palestinien côte à côte — ou non. Les partisans disent que c’est la seule voie vers la paix et vers le maintien d’une majorité juive et démocratique ; les opposants disent qu’un État palestinien serait un danger pour la sécurité, surtout après le 7 octobre, et qu’il n’y a pas de partenaire."
@@ -152,7 +152,7 @@ questions:
         recordOf:
           he: "סיעת המחנה הממלכתי, שבה ישבו חברי כחול לבן עד 2025"
           en: "the National Unity faction, in which Blue and White's members sat until 2025"
-          ar: "كتلة المعسكر الرسمي، التي جلس فيها أعضاء أزرق أبيض حتى 2025"
+          ar: "كتلة المعسكر الرسمي، التي كان أعضاء أزرق أبيض ضمنها حتى 2025"
           ru: "фракция «Государственный лагерь», в которой члены «Кахоль-лаван» состояли до 2025 года"
           es: "la facción Unidad Nacional, en la que estuvieron los miembros de Azul y Blanco hasta 2025"
           fr: "la faction Unité nationale, dans laquelle siégeaient les membres de Bleu et Blanc jusqu’en 2025"
@@ -171,7 +171,7 @@ questions:
         quote:
           he: "עבאס בוועידת רע\"ם (22.8.2026): מדינה פלסטינית עצמאית היא \"מציאות שרוב העולם מכיר בה\"; \"אנחנו רוצים שיכירו בה, ונפעל להשגת שלום, התקרבות וסיום הכיבוש והסכסוך\"."
           en: "Abbas at Ra'am's convention (22 Aug 2026): an independent Palestinian state is \"a reality, which most of the world recognizes\"; \"We want them to recognize it, and we'll work to achieve peace, rapprochement and an end to the occupation and conflict.\""
-          ar: "عباس في مؤتمر القائمة الموحدة (22.8.2026): الدولة الفلسطينية المستقلة «واقع يعترف به معظم العالم»؛ «نريدهم أن يعترفوا بها، وسنعمل من أجل السلام والتقارب وإنهاء الاحتلال والصراع»."
+          ar: "عباس في مؤتمر القائمة الموحدة (22 آب/أغسطس 2026): الدولة الفلسطينية المستقلة «واقع يعترف به معظم العالم»؛ «نريدهم أن يعترفوا بها، وسنعمل من أجل السلام والتقارب وإنهاء الاحتلال والصراع»."
           ru: "Аббас на съезде РААМ (22.08.2026): независимое палестинское государство — «реальность, которую признаёт большая часть мира»; «Мы хотим, чтобы его признали, и будем добиваться мира, сближения и прекращения оккупации и конфликта»."
           es: "Abbas en la convención de Ra’am (22 de agosto de 2026): un Estado palestino independiente es «una realidad, que la mayor parte del mundo reconoce»; «Queremos que lo reconozcan, y trabajaremos por la paz, el acercamiento y el fin de la ocupación y del conflicto»."
           fr: "Abbas au congrès de Ra’am (22 août 2026) : un État palestinien indépendant est « une réalité, que la majeure partie du monde reconnaît » ; « Nous voulons qu’ils le reconnaissent, et nous œuvrerons pour la paix, le rapprochement et la fin de l’occupation et du conflit »."
@@ -192,7 +192,7 @@ questions:
         recordOf:
           he: "דברי בנט, ראש הרשימה; מצע הרשימה המשותפת אינו עוסק בכך, ועמדת יש עתיד לאורך השנים הייתה שונה"
           en: "Bennett's words as list head; the joint list's platform does not address it, and Yesh Atid's own position over the years has differed"
-          ar: "كلام بينيت بصفته رئيس القائمة؛ برنامج القائمة المشتركة لا يتناول ذلك، وموقف يش عتيد نفسه على مرّ السنين كان مختلفًا"
+          ar: "كلام بينيت بصفته رئيس القائمة؛ برنامج قائمة «معًا» لا يتناول ذلك، وموقف يش عتيد نفسه على مرّ السنين كان مختلفًا"
           ru: "слова Беннета как главы списка; в программе совместного списка этого нет, а позиция самой партии «Еш Атид» на протяжении лет была иной"
           es: "palabras de Bennett como cabeza de lista; el programa de la lista conjunta no lo aborda, y la postura de Yesh Atid a lo largo de los años ha sido distinta"
           fr: "propos de Bennett en tant que tête de liste ; le programme de la liste commune ne l’aborde pas, et la position de Yesh Atid elle-même a été différente au fil des ans"
@@ -415,7 +415,7 @@ questions:
         quote:
           he: "נשאל: \"אתה תומך בהתיישבות בשטחי C. האם נכון היה להוציא את מכרזי הבנייה לשטח E1?\" — \"לא כעת. זו טעות שעולה לנו במחיר בינלאומי\"; לדבריו פעילות שני השרים ואירועי האלימות של מתנחלים נגד פלסטינים \"מסכנים את ההתיישבות כולה\". על ריבונות לא דיבר."
           en: "Asked: \"You support settlement in Area C. Was it right to issue the building tenders for E1?\" — \"Not now. It is a mistake that costs us an international price\"; the two ministers' conduct and settler violence against Palestinians \"endanger the entire settlement enterprise.\" He did not address sovereignty."
-          ar: "سُئل: «أنت تؤيد الاستيطان في المناطق C. هل كان صحيحًا طرح مناقصات البناء في منطقة E1؟» — «ليس الآن. هذا خطأ يكلّفنا ثمنًا دوليًا»؛ وقال إن نشاط الوزيرين وأحداث عنف المستوطنين ضد الفلسطينيين «تعرّض الاستيطان كله للخطر». ولم يتحدث عن السيادة."
+          ar: "سُئل: «أنت تؤيد الاستيطان في المناطق (ج). هل كان صحيحًا طرح مناقصات البناء في منطقة E1؟» — «ليس الآن. هذا خطأ يكلّفنا ثمنًا دوليًا»؛ وقال إن نشاط الوزيرين وأحداث عنف المستوطنين ضد الفلسطينيين «تعرّض الاستيطان كله للخطر». ولم يتحدث عن السيادة."
           ru: "На вопрос «Вы поддерживаете поселения в зоне C. Правильно ли было объявлять тендеры на строительство в E1?» — «Не сейчас. Это ошибка, за которую мы платим международную цену»; по его словам, действия двух министров и насилие поселенцев против палестинцев «ставят под угрозу все поселения». О суверенитете он не говорил."
           es: "Preguntado: «Usted apoya los asentamientos en el Área C. ¿Fue correcto sacar a concurso la construcción en E1?» — «Ahora no. Es un error que nos cuesta un precio internacional»; la actuación de los dos ministros y la violencia de colonos contra palestinos «ponen en peligro todos los asentamientos». No se refirió a la soberanía."
           fr: "À la question « Vous soutenez l’implantation en zone C. Fallait-il lancer les appels d’offres de construction en E1 ? » — « Pas maintenant. C’est une erreur qui nous coûte un prix international » ; l’action des deux ministres et la violence de colons contre des Palestiniens « mettent en danger toutes les implantations ». Il n’a pas parlé de souveraineté."
@@ -821,7 +821,7 @@ questions:
         quote:
           he: "\"נקדם יהדות מכילה ומכבדת, באחריות ובהדברות, תוך הרחבת העצמאות של רשויות מקומיות וקהילות לעצב את השבת במרחב הציבורי בהתאם לאופיין וערכיהן\"; \"נפעל למיסוד זוגיות אזרחית בישראל\""
           en: "\"We will promote an inclusive and respectful Judaism, responsibly and through dialogue, expanding the autonomy of local authorities and communities to shape Shabbat in the public space according to their character and values\"; \"We will act to institutionalize civil partnership in Israel\""
-          ar: "«سنعزّز يهودية شاملة ومحترِمة، بمسؤولية وبالحوار، مع توسيع استقلالية السلطات المحلية والمجتمعات في تشكيل السبت في الحيّز العام وفق طابعها وقيمها»؛ «سنعمل على مأسسة الشراكة المدنية في إسرائيل»"
+          ar: "«سنعزّز يهودية احتوائية ومحترِمة، بمسؤولية وبالحوار، مع توسيع استقلالية السلطات المحلية والمجتمعات في تشكيل السبت في الحيّز العام وفق طابعها وقيمها»؛ «سنعمل على مأسسة الشراكة المدنية في إسرائيل»"
           ru: "«Мы будем продвигать инклюзивный и уважительный иудаизм — ответственно и через диалог, расширяя самостоятельность местных властей и общин в том, каким быть шаббату в общественном пространстве, в соответствии с их характером и ценностями»; «Мы будем добиваться закрепления гражданского союза в Израиле»"
           es: "«Promoveremos un judaísmo inclusivo y respetuoso, con responsabilidad y diálogo, ampliando la autonomía de las autoridades locales y las comunidades para dar forma al Shabat en el espacio público según su carácter y sus valores»; «Actuaremos para institucionalizar la unión civil en Israel»"
           fr: "« Nous promouvrons un judaïsme inclusif et respectueux, avec responsabilité et par le dialogue, en élargissant l’autonomie des collectivités locales et des communautés pour façonner le shabbat dans l’espace public selon leur caractère et leurs valeurs » ; « Nous agirons pour institutionnaliser l’union civile en Israël »"
@@ -1113,7 +1113,7 @@ questions:
         recordOf:
           he: "סיעת המחנה הממלכתי, שבה ישבו חברי כחול לבן עד 2025"
           en: "the National Unity faction, in which Blue and White's members sat until 2025"
-          ar: "كتلة المعسكر الرسمي، التي جلس فيها أعضاء أزرق أبيض حتى 2025"
+          ar: "كتلة المعسكر الرسمي، التي كان أعضاء أزرق أبيض ضمنها حتى 2025"
           ru: "фракция «Государственный лагерь», в которой члены «Кахоль-лаван» состояли до 2025 года"
           es: "la facción Unidad Nacional, en la que estuvieron los miembros de Azul y Blanco hasta 2025"
           fr: "la faction Unité nationale, dans laquelle siégeaient les membres de Bleu et Blanc jusqu’en 2025"
@@ -1228,7 +1228,7 @@ questions:
         quote:
           he: "\"נעמוד על זה, זה אחד האיומים הכי גדולים על הדמוגרפיה הישראלית, על זהות היהודית של המדינה וההתבוללות… אנחנו מתעקשים על זה ונמשיך להתעקש על זה.\""
           en: "\"We will insist on it; it is one of the greatest threats to Israel's demography, to the Jewish identity of the state, and [it drives] assimilation… We insist on it and will keep insisting on it.\""
-          ar: "«سنصرّ على ذلك، فهذا من أكبر التهديدات على الديموغرافيا الإسرائيلية وعلى الهوية اليهودية للدولة و[يدفع إلى] الاندماج… نحن نصرّ على ذلك وسنواصل الإصرار عليه.»"
+          ar: "«سنصرّ على ذلك، فهذا من أكبر التهديدات للديموغرافيا الإسرائيلية وللهوية اليهودية للدولة و[يدفع إلى] الانصهار… نحن نصرّ على ذلك وسنواصل الإصرار عليه.»"
           ru: "«Мы будем на этом настаивать: это одна из самых больших угроз израильской демографии, еврейской идентичности государства и [ведёт к] ассимиляции… Мы настаиваем и будем настаивать на этом»."
           es: "«Insistiremos en ello; es una de las mayores amenazas para la demografía israelí, para la identidad judía del Estado y [fomenta] la asimilación… Insistimos en ello y seguiremos insistiendo.»"
           fr: "« Nous y tiendrons ; c’est l’une des plus grandes menaces pour la démographie israélienne, pour l’identité juive de l’État et [cela favorise] l’assimilation… Nous y tenons et continuerons d’y tenir. »"
@@ -1466,7 +1466,7 @@ questions:
         quote:
           he: "\"הסטטוס-קוו הלאומי חייב להישמר גם בנושא זה… אנו נהיה המזוזה של המדינה גם בנושא זה\" (נשאלו אם על המדינה להכיר בנישואים אזרחיים ובזוגות להט\"ב)."
           en: "\"The national status quo must be preserved on this issue too… we will be the state's mezuzah on this issue as well\" (asked about recognising civil marriage and LGBT couples)."
-          ar: "«يجب الحفاظ على الوضع القائم الوطني في هذه المسألة أيضًا… سنكون ‹مزوزة› الدولة [الرقّ على باب البيت اليهودي] في هذه المسألة أيضًا» (سُئلوا عن الاعتراف بالزواج المدني وبالأزواج من مجتمع الميم)."
+          ar: "«يجب الحفاظ على الوضع القائم الوطني في هذه المسألة أيضًا… سنكون ‹مزوزة› الدولة [لفافة الرَّقّ المثبّتة على باب البيت اليهودي] في هذه المسألة أيضًا» (سُئلوا عن الاعتراف بالزواج المدني وبالأزواج من مجتمع الميم)."
           ru: "«Национальный статус-кво должен сохраниться и в этом вопросе… мы будем мезузой государства и в этом вопросе» (вопрос был о признании гражданского брака и ЛГБТ-пар)."
           es: "«El statu quo nacional debe preservarse también en este asunto… seremos la mezuzá del Estado también en esto» (se les preguntó por el reconocimiento del matrimonio civil y de las parejas LGBT)."
           fr: "« Le statu quo national doit être préservé sur ce sujet aussi… nous serons la mezouza de l’État sur ce sujet également » (la question portait sur la reconnaissance du mariage civil et des couples LGBT)."
@@ -1548,7 +1548,7 @@ questions:
     explainer:
       he: "בית המשפט העליון יכול לפסול חוקים והחלטות ממשלה. תומכי ההגבלה אומרים שהכנסת הנבחרת צריכה להיות בעלת המילה האחרונה ושבית המשפט מתערב יותר מדי; המתנגדים אומרים שבלי בית משפט חזק אין מי שיגן על זכויות הפרט והמיעוט מפני הרוב. ב-2023 נחקק תיקון שאסר על בתי המשפט להפעיל את עילת הסבירות על החלטות הממשלה והשרים, ובית המשפט ביטל אותו."
       en: "The Supreme Court can strike down laws and government decisions. Supporters of limiting it say the elected Knesset should have the last word and that the court intervenes too much; opponents say that without a strong court nobody protects individual and minority rights from the majority. In 2023 an amendment barring the courts from applying the 'reasonableness' test to decisions of the government and ministers was passed, and the court struck it down."
-      ar: "تستطيع المحكمة العليا إلغاء قوانين وقرارات حكومية. يقول مؤيدو تقييدها إن الكنيست المنتخب يجب أن تكون له الكلمة الأخيرة وإن المحكمة تتدخل أكثر من اللازم؛ ويقول المعارضون إنه من دون محكمة قوية لا أحد يحمي حقوق الفرد والأقلية من الأغلبية. في 2023 أُقرّ تعديل يمنع المحاكم من تطبيق معيار «المعقولية» على قرارات الحكومة والوزراء، فألغته المحكمة."
+      ar: "تستطيع المحكمة العليا إلغاء قوانين وقرارات حكومية. يقول مؤيدو تقييدها إن الكنيست المنتخب يجب أن تكون له الكلمة الأخيرة وإن المحكمة تتدخل أكثر من اللازم؛ ويقول المعارضون إنه من دون محكمة قوية لا أحد يحمي حقوق الفرد والأقلية من الأغلبية. في 2023 أُقرّ تعديل يمنع المحاكم من تطبيق ذريعة «المعقولية» على قرارات الحكومة والوزراء، فألغته المحكمة."
       ru: "Верховный суд может отменять законы и решения правительства. Сторонники ограничения говорят, что последнее слово должно быть за избранным Кнессетом и что суд вмешивается слишком часто; противники — что без сильного суда некому защитить права личности и меньшинства от большинства. В 2023 году была принята поправка, запретившая судам применять критерий «разумности» к решениям правительства и министров, и суд её отменил."
       es: "El Tribunal Supremo puede anular leyes y decisiones del Gobierno. Quienes apoyan limitarlo dicen que la Knéset electa debe tener la última palabra y que el tribunal interviene demasiado; los opositores dicen que sin un tribunal fuerte nadie protege los derechos individuales y de las minorías frente a la mayoría. En 2023 se aprobó una enmienda que prohibía a los tribunales aplicar el criterio de «razonabilidad» a las decisiones del Gobierno y de los ministros, y el tribunal la invalidó."
       fr: "La Cour suprême peut annuler des lois et des décisions du gouvernement. Les partisans de sa limitation disent que la Knesset élue doit avoir le dernier mot et que la Cour intervient trop ; les opposants disent que sans une Cour forte, personne ne protège les droits de l’individu et des minorités face à la majorité. En 2023, un amendement interdisant aux tribunaux d’appliquer le critère de « raisonnabilité » aux décisions du gouvernement et des ministres a été adopté, et la Cour l’a annulé."
@@ -1694,7 +1694,7 @@ questions:
         recordOf:
           he: "סיעת המחנה הממלכתי, שבה ישבו חברי כחול לבן עד 2025"
           en: "the National Unity faction, in which Blue and White's members sat until 2025"
-          ar: "كتلة المعسكر الرسمي، التي جلس فيها أعضاء أزرق أبيض حتى 2025"
+          ar: "كتلة المعسكر الرسمي، التي كان أعضاء أزرق أبيض ضمنها حتى 2025"
           ru: "фракция «Государственный лагерь», в которой члены «Кахоль-лаван» состояли до 2025 года"
           es: "la facción Unidad Nacional, en la que estuvieron los miembros de Azul y Blanco hasta 2025"
           fr: "la faction Unité nationale, dans laquelle siégeaient les membres de Bleu et Blanc jusqu’en 2025"
@@ -1734,14 +1734,14 @@ questions:
     text:
       he: "החקירה של 7 באוקטובר צריכה להיות ועדת חקירה ממלכתית (שאת חבריה ממנה נשיא בית המשפט העליון), ולא ועדה שהממשלה או הכנסת ממנות."
       en: "The inquiry into 7 October should be a state commission of inquiry (whose members the Chief Justice appoints), not a commission the government or the Knesset appoints."
-      ar: "يجب أن يكون التحقيق في 7 أكتوبر لجنة تحقيق رسمية (يعيّن أعضاءها رئيس المحكمة العليا)، لا لجنة تعيّنها الحكومة أو الكنيست."
+      ar: "يجب أن يكون التحقيق في 7 تشرين الأول/أكتوبر لجنة تحقيق رسمية (يعيّن أعضاءها رئيس المحكمة العليا)، لا لجنة تعيّنها الحكومة أو الكنيست."
       ru: "Расследование 7 октября должна вести государственная следственная комиссия (членов которой назначает председатель Верховного суда), а не комиссия, назначаемая правительством или Кнессетом."
       es: "La investigación del 7 de octubre debería encargarse a una comisión estatal (cuyos miembros nombra el presidente del Tribunal Supremo), no a una comisión nombrada por el Gobierno o la Knéset."
       fr: "L’enquête sur le 7 octobre devrait être confiée à une commission d’enquête d’État (dont les membres sont nommés par le président de la Cour suprême), et non à une commission nommée par le gouvernement ou la Knesset."
     short:
       he: "ועדת חקירה ל-7 באוקטובר"
       en: "7 October inquiry"
-      ar: "لجنة تحقيق في 7 أكتوبر"
+      ar: "لجنة تحقيق في 7 تشرين الأول/أكتوبر"
       ru: "Расследование 7 октября"
       es: "Investigación del 7 de octubre"
       fr: "Enquête sur le 7 octobre"
@@ -1906,7 +1906,7 @@ questions:
         quote:
           he: "\"נקים ועדת חקירה ממלכתית לחקר טבח 7 באוקטובר, העשור שלפניו וניהול המלחמה\" (צעד 1)."
           en: "\"We will establish a state commission of inquiry into the 7 October massacre, the decade before it and the conduct of the war\" (step 1)."
-          ar: "«سنقيم لجنة تحقيق رسمية في مجزرة 7 أكتوبر والعقد الذي سبقها وإدارة الحرب» (الخطوة 1)."
+          ar: "«سنقيم لجنة تحقيق رسمية في مجزرة 7 تشرين الأول/أكتوبر والعقد الذي سبقها وإدارة الحرب» (الخطوة 1)."
           ru: "«Мы создадим государственную следственную комиссию по резне 7 октября, предшествовавшему ей десятилетию и ведению войны» (шаг 1)."
           es: "«Estableceremos una comisión estatal de investigación sobre la masacre del 7 de octubre, la década anterior y la conducción de la guerra» (punto 1)."
           fr: "« Nous créerons une commission d’enquête d’État sur le massacre du 7 octobre, la décennie qui l’a précédé et la conduite de la guerre » (point 1)."
@@ -1923,14 +1923,14 @@ questions:
     short:
       he: "עונש מוות למחבלים"
       en: "Death penalty for terrorists"
-      ar: "عقوبة الإعدام للمخرّبين"
+      ar: "عقوبة الإعدام للإرهابيين"
       ru: "Смертная казнь для террористов"
       es: "Pena de muerte para terroristas"
       fr: "Peine de mort pour les terroristes"
     explainer:
       he: "עד 2026 עונש מוות היה אפשרי בישראל רק בעבירות נדירות, והוצא לפועל פעם אחת (אייכמן, 1962). במרץ 2026 אישרה הכנסת בקריאה שלישית חוק הקובע עונש מוות למחבלים שרצחו בפיגוע; האופוזיציה הצביעה נגד. התומכים אומרים שהעונש ירתיע וימנע עסקאות שחרור; המתנגדים אומרים שהוא לא מרתיע, פוגע במעמדה של ישראל, ושטעות אי אפשר לתקן."
       en: "Until 2026 the death penalty was possible in Israel only for rare offences, and it was carried out once (Eichmann, 1962). In March 2026 the Knesset passed, in its third reading, a law setting the death penalty for terrorists who murdered in an attack; the opposition voted against. Supporters say it will deter and prevent release deals; opponents say it does not deter, damages Israel's standing, and a mistake cannot be corrected."
-      ar: "حتى 2026 كانت عقوبة الإعدام ممكنة في إسرائيل في جرائم نادرة فقط، ونُفّذت مرة واحدة (آيخمان، 1962). في آذار/مارس 2026 أقرّ الكنيست بالقراءة الثالثة قانونًا يفرض الإعدام على المخرّبين الذين قتلوا في عملية؛ وصوّتت المعارضة ضده. يقول المؤيدون إن العقوبة ستردع وتمنع صفقات الإفراج؛ ويقول المعارضون إنها لا تردع، وتضرّ بمكانة إسرائيل، وإن الخطأ لا يمكن تصحيحه."
+      ar: "حتى 2026 كانت عقوبة الإعدام ممكنة في إسرائيل في جرائم نادرة فقط، ونُفّذت مرة واحدة (آيخمان، 1962). في آذار/مارس 2026 أقرّ الكنيست بالقراءة الثالثة قانونًا يفرض الإعدام على الإرهابيين الذين قتلوا في عملية؛ وصوّتت المعارضة ضده. يقول المؤيدون إن العقوبة ستردع وتمنع صفقات الإفراج؛ ويقول المعارضون إنها لا تردع، وتضرّ بمكانة إسرائيل، وإن الخطأ لا يمكن تصحيحه."
       ru: "До 2026 года смертная казнь в Израиле была возможна лишь за редкие преступления и приводилась в исполнение один раз (Эйхман, 1962). В марте 2026 года Кнессет принял в третьем чтении закон о смертной казни для террористов, совершивших убийство в теракте; оппозиция голосовала против. Сторонники говорят, что наказание будет сдерживать и предотвратит сделки об освобождении; противники — что оно не сдерживает, вредит положению Израиля и что ошибку нельзя исправить."
       es: "Hasta 2026 la pena de muerte era posible en Israel solo para delitos raros, y se aplicó una vez (Eichmann, 1962). En marzo de 2026 la Knéset aprobó en tercera lectura una ley que fija la pena de muerte para terroristas que asesinaron en un atentado; la oposición votó en contra. Los partidarios dicen que disuadirá y evitará acuerdos de liberación; los opositores dicen que no disuade, daña la posición de Israel y un error no puede corregirse."
       fr: "Jusqu’en 2026, la peine de mort n’était possible en Israël que pour de rares infractions, et elle a été appliquée une fois (Eichmann, 1962). En mars 2026, la Knesset a adopté en troisième lecture une loi instaurant la peine de mort pour les terroristes ayant tué lors d’un attentat ; l’opposition a voté contre. Les partisans disent qu’elle dissuadera et empêchera les accords de libération ; les opposants disent qu’elle ne dissuade pas, nuit à la position d’Israël et qu’une erreur ne peut être corrigée."
@@ -2101,7 +2101,7 @@ questions:
     explainer:
       he: "ב-2021 הייתה רע\"ם לראשונה חברה בקואליציה. התומכים אומרים שאזרחים ערבים הם חמישית מהאוכלוסייה ונציגיהם צריכים להיות שותפים כמו כולם; המתנגדים אומרים שאי אפשר לסמוך על מפלגות שאינן ציוניות בעניינים של ביטחון ושל אופי המדינה."
       en: "In 2021 Ra'am was, for the first time, a member of a coalition. Supporters say Arab citizens are a fifth of the population and their representatives should be partners like everyone else; opponents say non-Zionist parties cannot be relied on in matters of security and the state's character."
-      ar: "في 2021 كانت القائمة الموحدة (رعم) للمرة الأولى عضوًا في ائتلاف. يقول المؤيدون إن المواطنين العرب خُمس السكان ويجب أن يكون ممثلوهم شركاء كغيرهم؛ ويقول المعارضون إنه لا يمكن الاعتماد على أحزاب غير صهيونية في شؤون الأمن وطابع الدولة."
+      ar: "في 2021 كانت القائمة الموحدة (راعم) للمرة الأولى عضوًا في ائتلاف. يقول المؤيدون إن المواطنين العرب خُمس السكان ويجب أن يكون ممثلوهم شركاء كغيرهم؛ ويقول المعارضون إنه لا يمكن الاعتماد على أحزاب غير صهيونية في شؤون الأمن وطابع الدولة."
       ru: "В 2021 году РААМ впервые вошла в коалицию. Сторонники говорят, что арабские граждане — пятая часть населения и их представители должны быть партнёрами, как все; противники — что на несионистские партии нельзя полагаться в вопросах безопасности и характера государства."
       es: "En 2021 Ra'am fue, por primera vez, miembro de una coalición. Los partidarios dicen que los ciudadanos árabes son una quinta parte de la población y sus representantes deben ser socios como todos; los opositores dicen que no se puede confiar en partidos no sionistas en asuntos de seguridad y del carácter del Estado."
       fr: "En 2021, Ra’am a été, pour la première fois, membre d’une coalition. Les partisans disent que les citoyens arabes représentent un cinquième de la population et que leurs représentants doivent être des partenaires comme les autres ; les opposants disent qu’on ne peut pas compter sur des partis non sionistes pour les questions de sécurité et de caractère de l’État."
@@ -2113,7 +2113,7 @@ questions:
         quote:
           he: "יואב סגלוביץ', מספר 2 ברשימת רע\"ם, בהשקת הריצה המשותפת: \"הטענה הרווחת שאחרי 7 באוקטובר אי אפשר לקיים שותפות פוליטית עם מפלגות ערביות היא חסרת בסיס ושקרית.\""
           en: "Yoav Segalovitz, no. 2 on the Ra'am list, at the joint-run launch: \"The common assertion that after October 7 it is impossible to maintain a political partnership with Arab parties is baseless and false.\""
-          ar: "يوآف سيغالوفيتش، الثاني في قائمة الموحدة، في إطلاق الترشح المشترك: «الادعاء الشائع بأنه بعد 7 أكتوبر لا يمكن إقامة شراكة سياسية مع الأحزاب العربية لا أساس له وكاذب.»"
+          ar: "يوآف سيغالوفيتش، الثاني في قائمة الموحدة، في إطلاق الترشح المشترك: «الادعاء الشائع بأنه بعد 7 تشرين الأول/أكتوبر لا يمكن إقامة شراكة سياسية مع الأحزاب العربية لا أساس له وكاذب.»"
           ru: "Йоав Сегалович, № 2 в списке РААМ, на презентации совместного выдвижения: «Распространённое утверждение, что после 7 октября политическое партнёрство с арабскими партиями невозможно, беспочвенно и ложно»."
           es: "Yoav Segalovitz, número 2 de la lista de Ra’am, en el lanzamiento de la candidatura conjunta: «La afirmación extendida de que después del 7 de octubre es imposible mantener una alianza política con partidos árabes carece de fundamento y es falsa.»"
           fr: "Yoav Segalovitz, numéro 2 de la liste Ra’am, au lancement de la candidature commune : « L’affirmation répandue selon laquelle, après le 7 octobre, il est impossible d’avoir un partenariat politique avec des partis arabes est infondée et fausse. »"
@@ -2168,7 +2168,7 @@ questions:
         quote:
           he: "בנט, על כך שרע\"ם הייתה חלק מהקואליציה שלו: \"לא היה שום דבר שרציתי לעשות ולא עשיתי בגלל זה. אבל זה בוודאי לא המצב הנכון למדינת ישראל פוסט 7 באוקטובר.\""
           en: "Bennett, on Ra'am having been part of his coalition: \"There was nothing I wanted to do and did not do because of it. But it is certainly not the right situation for the State of Israel post-7 October.\""
-          ar: "بينيت، عن كون القائمة الموحدة جزءًا من ائتلافه: «لم يكن هناك أي شيء أردت فعله ولم أفعله بسبب ذلك. لكن هذا بالتأكيد ليس الوضع الصحيح لدولة إسرائيل بعد 7 أكتوبر.»"
+          ar: "بينيت، عن كون القائمة الموحدة جزءًا من ائتلافه: «لم يكن هناك أي شيء أردت فعله ولم أفعله بسبب ذلك. لكن هذا بالتأكيد ليس الوضع الصحيح لدولة إسرائيل بعد 7 تشرين الأول/أكتوبر.»"
           ru: "Беннет о том, что РААМ входила в его коалицию: «Не было ничего, что я хотел сделать и не сделал из-за этого. Но это точно не правильная ситуация для Государства Израиль после 7 октября»."
           es: "Bennett, sobre el hecho de que Ra’am formara parte de su coalición: «No hubo nada que quisiera hacer y no hiciera por eso. Pero sin duda no es la situación adecuada para el Estado de Israel después del 7 de octubre.»"
           fr: "Bennett, sur le fait que Ra’am ait fait partie de sa coalition : « Il n’y a rien que je voulais faire et que je n’ai pas fait à cause de cela. Mais ce n’est certainement pas la bonne situation pour l’État d’Israël après le 7 octobre. »"
@@ -2190,7 +2190,7 @@ questions:
         quote:
           he: "הליכוד עתר לוועדת הבחירות לפסול את רע\"ם ואת הרשימה המשותפת: \"אין מקום בכנסת למי שפוגעים בחיילי צה\"ל ואינם מסוגלים לומר שחמאס וחיזבאללה הם ארגוני טרור.\""
           en: "Likud petitioned the Elections Committee to ban Ra'am and the Joint List: \"There is no room in the Knesset for those who harm IDF soldiers and are unable to say that Hamas and Hezbollah are terrorist organizations.\""
-          ar: "الليكود التمس إلى لجنة الانتخابات لشطب القائمة الموحدة والقائمة المشتركة: «لا مكان في الكنيست لمن يمسّون بجنود الجيش الإسرائيلي ولا يستطيعون القول إن حماس وحزب الله منظمتان إرهابيتان.»"
+          ar: "قدّم الليكود طلبًا إلى لجنة الانتخابات لشطب القائمة الموحدة والقائمة المشتركة: «لا مكان في الكنيست لمن يمسّون بجنود الجيش الإسرائيلي ولا يستطيعون القول إن حماس وحزب الله منظمتان إرهابيتان.»"
           ru: "Ликуд обратился в Центризбирком с требованием отстранить РААМ и Объединённый список: «Нет места в Кнессете тем, кто вредит солдатам ЦАХАЛа и не может сказать, что ХАМАС и „Хизбалла“ — террористические организации»."
           es: "El Likud pidió a la Comisión Electoral que inhabilite a Ra’am y a la Lista Conjunta: «No hay lugar en la Knéset para quienes dañan a los soldados de las FDI y son incapaces de decir que Hamás y Hezbolá son organizaciones terroristas.»"
           fr: "Le Likoud a demandé à la Commission électorale d’interdire Ra’am et la Liste commune : « Il n’y a pas de place à la Knesset pour ceux qui nuisent aux soldats de Tsahal et sont incapables de dire que le Hamas et le Hezbollah sont des organisations terroristes. »"
@@ -2201,7 +2201,7 @@ questions:
         quote:
           he: "עוצמה יהודית עתרה קודם לכן לפסילת רע\"ם, בטענה שהמפלגה תומכת במאבק מזוין נגד ישראל."
           en: "Otzma Yehudit previously petitioned to disqualify Ra'am, alleging the party supported armed struggle against Israel."
-          ar: "التمست عوتسما يهوديت قبل ذلك لشطب القائمة الموحدة، بادعاء أن الحزب يدعم الكفاح المسلح ضد إسرائيل."
+          ar: "قدّمت عوتسما يهوديت قبل ذلك طلبًا لشطب القائمة الموحدة، بادعاء أن الحزب يدعم الكفاح المسلح ضد إسرائيل."
           ru: "«Оцма Иегудит» ранее потребовала отстранить РААМ, утверждая, что партия поддерживает вооружённую борьбу против Израиля."
           es: "Otzma Yehudit ya había pedido la inhabilitación de Ra’am, alegando que el partido apoyó la lucha armada contra Israel."
           fr: "Otzma Yehoudit avait déjà demandé l’invalidation de Ra’am, alléguant que le parti avait soutenu la lutte armée contre Israël."
@@ -2260,7 +2260,7 @@ questions:
         quote:
           he: "\"תוכנית מדיניות להגירה מרצון של תושבי רצועת עזה למדינות שיסכימו לקלוט אותם… בממשלה הבאה, הקמת משרד הגירה, עם שר בראשו, תקציבים וסמכויות, תהיה בראש הדרישות הקואליציוניות שלנו.\""
           en: "\"A policy plan for the voluntary emigration of Gaza Strip residents to countries that agree to absorb them… In the next government, establishing an Emigration Ministry, with a minister, budgets and powers, will top our coalition demands.\""
-          ar: "«خطة سياسات للهجرة الطوعية لسكان قطاع غزة إلى دول توافق على استيعابهم… في الحكومة القادمة، سيكون إنشاء وزارة للهجرة، برئاسة وزير وبميزانيات وصلاحيات، في رأس مطالبنا الائتلافية.»"
+          ar: "«خطة سياسات للهجرة الطوعية لسكان قطاع غزة إلى دول توافق على استيعابهم… في الحكومة القادمة، سيكون إنشاء وزارة للهجرة، برئاسة وزير وبميزانيات وصلاحيات، على رأس مطالبنا الائتلافية.»"
           ru: "«План политики добровольной эмиграции жителей сектора Газа в страны, согласные их принять… В следующем правительстве создание министерства эмиграции — с министром, бюджетами и полномочиями — будет главным из наших коалиционных требований»."
           es: "«Un plan de política para la emigración voluntaria de los habitantes de la Franja de Gaza a países que acepten acogerlos… En el próximo Gobierno, crear un Ministerio de Emigración, con un ministro, presupuestos y competencias, encabezará nuestras exigencias de coalición.»"
           fr: "« Un plan d’action pour l’émigration volontaire des habitants de la bande de Gaza vers des pays qui acceptent de les accueillir… Dans le prochain gouvernement, la création d’un ministère de l’Émigration, avec un ministre, des budgets et des pouvoirs, sera en tête de nos exigences de coalition. »"
@@ -2293,7 +2293,7 @@ questions:
         quote:
           he: "\"הפיתרון בעזה הוא אחד: הגירה. אויב שיפתח נגדנו במלחמה ישלם מחיר טריטוריאלי כבד.\""
           en: "\"The solution in Gaza is one: emigration. An enemy that opens a war against us will pay a heavy territorial price.\""
-          ar: "«الحل في غزة واحد: الهجرة. العدو الذي يفتح علينا حربًا سيدفع ثمنًا إقليميًا باهظًا.»"
+          ar: "«الحل في غزة واحد: الهجرة. العدو الذي يفتح علينا حربًا سيدفع ثمنًا باهظًا من أرضه.»"
           ru: "«Решение в Газе одно: эмиграция. Враг, который начнёт против нас войну, заплатит тяжёлую территориальную цену»."
           es: "«La solución en Gaza es una: la emigración. Un enemigo que nos abra una guerra pagará un alto precio territorial.»"
           fr: "« La solution à Gaza est une seule : l’émigration. Un ennemi qui nous fait la guerre paiera un lourd prix territorial. »"
@@ -2394,7 +2394,7 @@ questions:
     explainer:
       he: "ישראל התחייבה ביעדי הפחתת פליטות, אבל בניגוד לרוב המדינות המפותחות עדיין אין לה חוק אקלים שהופך אותם למחייבים. התומכים אומרים שבלי חוק היעדים נשארים על הנייר; המתנגדים אומרים שיעדים מחייבים יפגעו בתעשייה וביוקר המחיה ושעדיף לקדם זאת בהחלטות ממשלה."
       en: "Israel has committed to emission-reduction targets, but unlike most developed countries it still has no climate law making them binding. Supporters say without a law the targets stay on paper; opponents say binding targets would hurt industry and the cost of living and that government decisions are the better route."
-      ar: "التزمت إسرائيل بأهداف لخفض الانبعاثات، لكن على خلاف معظم الدول المتقدمة ليس لديها بعد قانون مناخ يجعلها ملزمة. يقول المؤيدون إنه من دون قانون تبقى الأهداف حبرًا على ورق؛ ويقول المعارضون إن الأهداف الملزمة ستضرّ بالصناعة وغلاء المعيشة وإن قرارات الحكومة طريق أفضل."
+      ar: "التزمت إسرائيل بأهداف لخفض الانبعاثات، لكن على خلاف معظم الدول المتقدمة ليس لديها بعد قانون مناخ يجعلها ملزمة. يقول المؤيدون إنه من دون قانون تبقى الأهداف حبرًا على ورق؛ ويقول المعارضون إن الأهداف الملزمة ستضرّ بالصناعة وتزيد غلاء المعيشة وإن قرارات الحكومة طريق أفضل."
       ru: "Израиль обязался достичь целей по сокращению выбросов, но, в отличие от большинства развитых стран, у него до сих пор нет закона о климате, который сделал бы их обязательными. Сторонники говорят, что без закона цели остаются на бумаге; противники — что обязательные цели ударят по промышленности и приведут к росту стоимости жизни и что лучше действовать решениями правительства."
       es: "Israel se ha comprometido con objetivos de reducción de emisiones, pero a diferencia de la mayoría de los países desarrollados todavía no tiene una ley del clima que los haga vinculantes. Los partidarios dicen que sin ley los objetivos se quedan en el papel; los opositores dicen que los objetivos vinculantes dañarían la industria y el costo de vida y que las decisiones del Gobierno son la mejor vía."
       fr: "Israël s’est engagé sur des objectifs de réduction des émissions, mais, contrairement à la plupart des pays développés, il n’a toujours pas de loi climat qui les rende contraignants. Les partisans disent que sans loi, les objectifs restent sur le papier ; les opposants disent que des objectifs contraignants nuiraient à l’industrie et au coût de la vie et que les décisions gouvernementales sont la meilleure voie."
@@ -2465,7 +2465,7 @@ questions:
         quote:
           he: "בעד הצעת חוק האקלים הממשלתית, שיעדיה ניתנים לשינוי בידי הממשלה (קריאה ראשונה, 3.4.2024: 5 בעד, 0 נגד, 2 נעדרו); נגד הצעת חוק האקלים של האופוזיציה עם יעדים מחייבים (קריאה טרומית, 29.10.2025: 0 בעד, 3 נגד, 4 נעדרו) — עמדה מעורבת על יעדים מחייבים בחוק"
           en: "for the government's Climate Bill, whose targets the government may change (first reading, 3 Apr 2024: 5 for, 0 against, 2 absent); against the opposition's Climate Bill with binding targets (preliminary reading, 29 Oct 2025: 0 for, 3 against, 4 absent) — a mixed record on binding targets in law"
-          ar: "مع مشروع قانون المناخ الحكومي، الذي يجوز للحكومة تغيير أهدافه (قراءة أولى، 3.4.2024: مع: 5، ضد: 0، غائبون: 2)؛ ضد مشروع قانون المناخ الذي قدّمته المعارضة بأهداف ملزمة (قراءة تمهيدية، 29.10.2025: مع: 0، ضد: 3، غائبون: 4) — سجلّ مختلط بشأن الأهداف الملزمة في القانون"
+          ar: "مع مشروع قانون المناخ الحكومي، الذي يجوز للحكومة تغيير أهدافه (قراءة أولى، 3 نيسان/أبريل 2024: مع: 5، ضد: 0، غائبون: 2)؛ ضد مشروع قانون المناخ الذي قدّمته المعارضة بأهداف ملزمة (قراءة تمهيدية، 29 تشرين الأول/أكتوبر 2025: مع: 0، ضد: 3، غائبون: 4) — سجلّ مختلط بشأن الأهداف الملزمة في القانون"
           ru: "за правительственный законопроект о климате, цели которого правительство может менять (первое чтение, 3.4.2024: за: 5, против: 0, отсутствовали: 2); против оппозиционного законопроекта о климате с обязательными целями (предварительное чтение, 29.10.2025: за: 0, против: 3, отсутствовали: 4) — неоднозначная позиция по обязательным целям в законе"
           es: "a favor del proyecto de ley del clima del Gobierno, cuyos objetivos puede cambiar el Gobierno (primera lectura, 3/4/2024: 5 a favor, 0 en contra, 2 ausentes); en contra del proyecto de ley del clima de la oposición con objetivos vinculantes (lectura preliminar, 29/10/2025: 0 a favor, 3 en contra, 4 ausentes) — un historial mixto sobre objetivos vinculantes en la ley"
           fr: "pour le projet de loi climat du gouvernement, dont le gouvernement peut modifier les objectifs (première lecture, 3/4/2024 : 5 pour, 0 contre, 2 absents) ; contre le projet de loi climat de l’opposition aux objectifs contraignants (lecture préliminaire, 29/10/2025 : 0 pour, 3 contre, 4 absents) — un bilan mitigé sur des objectifs contraignants dans la loi"
@@ -2477,7 +2477,7 @@ questions:
         quote:
           he: "בעד הצעת חוק האקלים הממשלתית, שיעדיה ניתנים לשינוי בידי הממשלה (קריאה ראשונה, 3.4.2024: 23 בעד, 0 נגד, 9 נעדרו); נגד הצעת חוק האקלים של האופוזיציה עם יעדים מחייבים (קריאה טרומית, 29.10.2025: 0 בעד, 24 נגד, 8 נעדרו) — עמדה מעורבת על יעדים מחייבים בחוק"
           en: "for the government's Climate Bill, whose targets the government may change (first reading, 3 Apr 2024: 23 for, 0 against, 9 absent); against the opposition's Climate Bill with binding targets (preliminary reading, 29 Oct 2025: 0 for, 24 against, 8 absent) — a mixed record on binding targets in law"
-          ar: "مع مشروع قانون المناخ الحكومي، الذي يجوز للحكومة تغيير أهدافه (قراءة أولى، 3.4.2024: مع: 23، ضد: 0، غائبون: 9)؛ ضد مشروع قانون المناخ الذي قدّمته المعارضة بأهداف ملزمة (قراءة تمهيدية، 29.10.2025: مع: 0، ضد: 24، غائبون: 8) — سجلّ مختلط بشأن الأهداف الملزمة في القانون"
+          ar: "مع مشروع قانون المناخ الحكومي، الذي يجوز للحكومة تغيير أهدافه (قراءة أولى، 3 نيسان/أبريل 2024: مع: 23، ضد: 0، غائبون: 9)؛ ضد مشروع قانون المناخ الذي قدّمته المعارضة بأهداف ملزمة (قراءة تمهيدية، 29 تشرين الأول/أكتوبر 2025: مع: 0، ضد: 24، غائبون: 8) — سجلّ مختلط بشأن الأهداف الملزمة في القانون"
           ru: "за правительственный законопроект о климате, цели которого правительство может менять (первое чтение, 3.4.2024: за: 23, против: 0, отсутствовали: 9); против оппозиционного законопроекта о климате с обязательными целями (предварительное чтение, 29.10.2025: за: 0, против: 24, отсутствовали: 8) — неоднозначная позиция по обязательным целям в законе"
           es: "a favor del proyecto de ley del clima del Gobierno, cuyos objetivos puede cambiar el Gobierno (primera lectura, 3/4/2024: 23 a favor, 0 en contra, 9 ausentes); en contra del proyecto de ley del clima de la oposición con objetivos vinculantes (lectura preliminar, 29/10/2025: 0 a favor, 24 en contra, 8 ausentes) — un historial mixto sobre objetivos vinculantes en la ley"
           fr: "pour le projet de loi climat du gouvernement, dont le gouvernement peut modifier les objectifs (première lecture, 3/4/2024 : 23 pour, 0 contre, 9 absents) ; contre le projet de loi climat de l’opposition aux objectifs contraignants (lecture préliminaire, 29/10/2025 : 0 pour, 24 contre, 8 absents) — un bilan mitigé sur des objectifs contraignants dans la loi"
@@ -2489,7 +2489,7 @@ questions:
         quote:
           he: "בעד הצעת חוק האקלים הממשלתית, שיעדיה ניתנים לשינוי בידי הממשלה (קריאה ראשונה, 3.4.2024: 8 בעד, 0 נגד, 3 נעדרו); נגד הצעת חוק האקלים של האופוזיציה עם יעדים מחייבים (קריאה טרומית, 29.10.2025: 0 בעד, 3 נגד, 8 נעדרו) — עמדה מעורבת על יעדים מחייבים בחוק"
           en: "for the government's Climate Bill, whose targets the government may change (first reading, 3 Apr 2024: 8 for, 0 against, 3 absent); against the opposition's Climate Bill with binding targets (preliminary reading, 29 Oct 2025: 0 for, 3 against, 8 absent) — a mixed record on binding targets in law"
-          ar: "مع مشروع قانون المناخ الحكومي، الذي يجوز للحكومة تغيير أهدافه (قراءة أولى، 3.4.2024: مع: 8، ضد: 0، غائبون: 3)؛ ضد مشروع قانون المناخ الذي قدّمته المعارضة بأهداف ملزمة (قراءة تمهيدية، 29.10.2025: مع: 0، ضد: 3، غائبون: 8) — سجلّ مختلط بشأن الأهداف الملزمة في القانون"
+          ar: "مع مشروع قانون المناخ الحكومي، الذي يجوز للحكومة تغيير أهدافه (قراءة أولى، 3 نيسان/أبريل 2024: مع: 8، ضد: 0، غائبون: 3)؛ ضد مشروع قانون المناخ الذي قدّمته المعارضة بأهداف ملزمة (قراءة تمهيدية، 29 تشرين الأول/أكتوبر 2025: مع: 0، ضد: 3، غائبون: 8) — سجلّ مختلط بشأن الأهداف الملزمة في القانون"
           ru: "за правительственный законопроект о климате, цели которого правительство может менять (первое чтение, 3.4.2024: за: 8, против: 0, отсутствовали: 3); против оппозиционного законопроекта о климате с обязательными целями (предварительное чтение, 29.10.2025: за: 0, против: 3, отсутствовали: 8) — неоднозначная позиция по обязательным целям в законе"
           es: "a favor del proyecto de ley del clima del Gobierno, cuyos objetivos puede cambiar el Gobierno (primera lectura, 3/4/2024: 8 a favor, 0 en contra, 3 ausentes); en contra del proyecto de ley del clima de la oposición con objetivos vinculantes (lectura preliminar, 29/10/2025: 0 a favor, 3 en contra, 8 ausentes) — un historial mixto sobre objetivos vinculantes en la ley"
           fr: "pour le projet de loi climat du gouvernement, dont le gouvernement peut modifier les objectifs (première lecture, 3/4/2024 : 8 pour, 0 contre, 3 absents) ; contre le projet de loi climat de l’opposition aux objectifs contraignants (lecture préliminaire, 29/10/2025 : 0 pour, 3 contre, 8 absents) — un bilan mitigé sur des objectifs contraignants dans la loi"
@@ -2501,7 +2501,7 @@ questions:
         quote:
           he: "בעד הצעת חוק האקלים הממשלתית, שיעדיה ניתנים לשינוי בידי הממשלה (קריאה ראשונה, 3.4.2024: 5 בעד, 0 נגד, 2 נעדרו); נגד הצעת חוק האקלים של האופוזיציה עם יעדים מחייבים (קריאה טרומית, 29.10.2025: 0 בעד, 5 נגד, 2 נעדרו) — עמדה מעורבת על יעדים מחייבים בחוק"
           en: "for the government's Climate Bill, whose targets the government may change (first reading, 3 Apr 2024: 5 for, 0 against, 2 absent); against the opposition's Climate Bill with binding targets (preliminary reading, 29 Oct 2025: 0 for, 5 against, 2 absent) — a mixed record on binding targets in law"
-          ar: "مع مشروع قانون المناخ الحكومي، الذي يجوز للحكومة تغيير أهدافه (قراءة أولى، 3.4.2024: مع: 5، ضد: 0، غائبون: 2)؛ ضد مشروع قانون المناخ الذي قدّمته المعارضة بأهداف ملزمة (قراءة تمهيدية، 29.10.2025: مع: 0، ضد: 5، غائبون: 2) — سجلّ مختلط بشأن الأهداف الملزمة في القانون"
+          ar: "مع مشروع قانون المناخ الحكومي، الذي يجوز للحكومة تغيير أهدافه (قراءة أولى، 3 نيسان/أبريل 2024: مع: 5، ضد: 0، غائبون: 2)؛ ضد مشروع قانون المناخ الذي قدّمته المعارضة بأهداف ملزمة (قراءة تمهيدية، 29 تشرين الأول/أكتوبر 2025: مع: 0، ضد: 5، غائبون: 2) — سجلّ مختلط بشأن الأهداف الملزمة في القانون"
           ru: "за правительственный законопроект о климате, цели которого правительство может менять (первое чтение, 3.4.2024: за: 5, против: 0, отсутствовали: 2); против оппозиционного законопроекта о климате с обязательными целями (предварительное чтение, 29.10.2025: за: 0, против: 5, отсутствовали: 2) — неоднозначная позиция по обязательным целям в законе"
           es: "a favor del proyecto de ley del clima del Gobierno, cuyos objetivos puede cambiar el Gobierno (primera lectura, 3/4/2024: 5 a favor, 0 en contra, 2 ausentes); en contra del proyecto de ley del clima de la oposición con objetivos vinculantes (lectura preliminar, 29/10/2025: 0 a favor, 5 en contra, 2 ausentes) — un historial mixto sobre objetivos vinculantes en la ley"
           fr: "pour le projet de loi climat du gouvernement, dont le gouvernement peut modifier les objectifs (première lecture, 3/4/2024 : 5 pour, 0 contre, 2 absents) ; contre le projet de loi climat de l’opposition aux objectifs contraignants (lecture préliminaire, 29/10/2025 : 0 pour, 5 contre, 2 absents) — un bilan mitigé sur des objectifs contraignants dans la loi"
@@ -2513,7 +2513,7 @@ questions:
         quote:
           he: "בעד הצעת חוק האקלים הממשלתית, שיעדיה ניתנים לשינוי בידי הממשלה (קריאה ראשונה, 3.4.2024: 4 בעד, 0 נגד, 2 נעדרו); נגד הצעת חוק האקלים של האופוזיציה עם יעדים מחייבים (קריאה טרומית, 29.10.2025: 0 בעד, 3 נגד, 3 נעדרו) — עמדה מעורבת על יעדים מחייבים בחוק"
           en: "for the government's Climate Bill, whose targets the government may change (first reading, 3 Apr 2024: 4 for, 0 against, 2 absent); against the opposition's Climate Bill with binding targets (preliminary reading, 29 Oct 2025: 0 for, 3 against, 3 absent) — a mixed record on binding targets in law"
-          ar: "مع مشروع قانون المناخ الحكومي، الذي يجوز للحكومة تغيير أهدافه (قراءة أولى، 3.4.2024: مع: 4، ضد: 0، غائبون: 2)؛ ضد مشروع قانون المناخ الذي قدّمته المعارضة بأهداف ملزمة (قراءة تمهيدية، 29.10.2025: مع: 0، ضد: 3، غائبون: 3) — سجلّ مختلط بشأن الأهداف الملزمة في القانون"
+          ar: "مع مشروع قانون المناخ الحكومي، الذي يجوز للحكومة تغيير أهدافه (قراءة أولى، 3 نيسان/أبريل 2024: مع: 4، ضد: 0، غائبون: 2)؛ ضد مشروع قانون المناخ الذي قدّمته المعارضة بأهداف ملزمة (قراءة تمهيدية، 29 تشرين الأول/أكتوبر 2025: مع: 0، ضد: 3، غائبون: 3) — سجلّ مختلط بشأن الأهداف الملزمة في القانون"
           ru: "за правительственный законопроект о климате, цели которого правительство может менять (первое чтение, 3.4.2024: за: 4, против: 0, отсутствовали: 2); против оппозиционного законопроекта о климате с обязательными целями (предварительное чтение, 29.10.2025: за: 0, против: 3, отсутствовали: 3) — неоднозначная позиция по обязательным целям в законе"
           es: "a favor del proyecto de ley del clima del Gobierno, cuyos objetivos puede cambiar el Gobierno (primera lectura, 3/4/2024: 4 a favor, 0 en contra, 2 ausentes); en contra del proyecto de ley del clima de la oposición con objetivos vinculantes (lectura preliminar, 29/10/2025: 0 a favor, 3 en contra, 3 ausentes) — un historial mixto sobre objetivos vinculantes en la ley"
           fr: "pour le projet de loi climat du gouvernement, dont le gouvernement peut modifier les objectifs (première lecture, 3/4/2024 : 4 pour, 0 contre, 2 absents) ; contre le projet de loi climat de l’opposition aux objectifs contraignants (lecture préliminaire, 29/10/2025 : 0 pour, 3 contre, 3 absents) — un bilan mitigé sur des objectifs contraignants dans la loi"
@@ -2702,7 +2702,7 @@ questions:
         recordOf:
           he: "סיעת המחנה הממלכתי, שבה ישבו חברי כחול לבן עד 2025"
           en: "the National Unity faction, in which Blue and White's members sat until 2025"
-          ar: "كتلة المعسكر الرسمي، التي جلس فيها أعضاء أزرق أبيض حتى 2025"
+          ar: "كتلة المعسكر الرسمي، التي كان أعضاء أزرق أبيض ضمنها حتى 2025"
           ru: "фракция «Государственный лагерь», в которой члены «Кахоль-лаван» состояли до 2025 года"
           es: "la facción Unidad Nacional, en la que estuvieron los miembros de Azul y Blanco hasta 2025"
           fr: "la faction Unité nationale, où siégeaient les membres de Bleu et Blanc jusqu’en 2025"

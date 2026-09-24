@@ -335,7 +335,7 @@ terms:
     def:
       he: "לובי הוא קבוצת אינטרס שמנסה להשפיע על מחוקקים. שדלן (לוביסט) הוא אדם שמקבל תשלום מלקוח — חברה, ארגון או קבוצה — כדי לקדם את האינטרסים שלו מול חברי הכנסת והוועדות. בישראל שדלנים חייבים להירשם ולהצהיר את לקוחותיהם."
       en: "A lobby is an interest group that tries to influence lawmakers. A lobbyist is a person paid by a client — a company, organization or group — to advance its interests with MKs and committees. In Israel lobbyists must register and disclose their clients."
-      ar: "اللوبي مجموعة مصالح تحاول التأثير في المشرّعين. واللوبيست شخص يتقاضى أجرًا من زبون — شركة أو منظمة أو مجموعة — لتعزيز مصالحه لدى أعضاء الكنيست واللجان. وفي إسرائيل يجب على اللوبيين التسجيل والإفصاح عن زبائنهم."
+      ar: "اللوبي مجموعة مصالح تحاول التأثير في المشرّعين. واللوبيست شخص يتقاضى أجرًا من زبون — شركة أو منظمة أو مجموعة — لتعزيز مصالحه لدى أعضاء الكنيست واللجان. وفي إسرائيل يجب على ممارسي الضغط (اللوبيست) التسجيل والإفصاح عن زبائنهم."
       ru: "Лобби — группа интересов, пытающаяся влиять на законодателей. Лоббист — человек, которому клиент (компания, организация или группа) платит за продвижение своих интересов перед депутатами и комиссиями. В Израиле лоббисты обязаны регистрироваться и раскрывать своих клиентов."
       es: Un lobby es un grupo de interés que intenta influir en los legisladores. Un lobista es una persona pagada por un cliente — una empresa, organización o grupo — para promover sus intereses ante los diputados y las comisiones. En Israel los lobistas deben registrarse y declarar a sus clientes.
       fr: Un lobby est un groupe d’intérêt qui tente d’influencer les législateurs. Un lobbyiste est une personne payée par un client — entreprise, organisation ou groupe — pour défendre ses intérêts auprès des députés et des commissions. En Israël, les lobbyistes doivent s’inscrire et déclarer leurs clients.
@@ -805,14 +805,14 @@ terms:
     term:
       he: הסכם עודפי קולות (בדר-עופר)
       en: Surplus-Vote (Apparentment) Agreement
-      ar: "اتفاقية فائض الأصوات (بدر-عوفر)"
+      ar: "اتفاقية فائض الأصوات (بادر-عوفر)"
       ru: "Соглашение об излишках голосов (метод Бадера — Офера)"
       es: Acuerdo de votos sobrantes (apparentement)
       fr: Accord de report des voix restantes (apparentement)
     def:
       he: הסכם בין שתי רשימות לחלק ביניהן את הקולות העודפים שלא הספיקו למנדט שלם, כדי למצותם בצורה טובה יותר. בישראל הוא מיושם בשיטת בדר-עופר.
       en: An agreement between two electoral lists to pool the leftover votes that did not add up to a full seat, so those votes are used more efficiently. In Israel it is applied through the Bader-Ofer method.
-      ar: "اتفاق بين قائمتين انتخابيتين على تجميع الأصوات الفائضة التي لم تبلغ مقعدًا كاملًا، كي تُستغلّ على نحو أفضل. وفي إسرائيل يُطبّق بطريقة بدر-عوفر."
+      ar: "اتفاق بين قائمتين انتخابيتين على تجميع الأصوات الفائضة التي لم تبلغ مقعدًا كاملًا، كي تُستغلّ على نحو أفضل. وفي إسرائيل يُطبّق بطريقة بادر-عوفر."
       ru: "Соглашение между двумя избирательными списками об объединении оставшихся голосов, которых не хватило на целый мандат, чтобы использовать их эффективнее. В Израиле оно применяется по методу Бадера — Офера."
       es: Un acuerdo entre dos listas electorales para sumar los votos restantes que no completaron un escaño entero, de modo que se aprovechen mejor. En Israel se aplica mediante el método Bader-Ofer.
       fr: Un accord entre deux listes électorales pour mettre en commun les voix restantes qui n’ont pas suffi à un siège entier, afin de mieux les utiliser. En Israël, il s’applique par la méthode Bader-Ofer.
@@ -1532,7 +1532,7 @@ terms:
     def:
       he: כלל משפטי שלפיו בית המשפט יכול לבטל החלטה של רשות שלטונית אם היא חורגת באופן קיצוני ממתחם ההחלטות הסבירות. הכלי נועד לבדוק אם הרשות שקלה כראוי את כלל השיקולים הרלוונטיים.
       en: A legal principle under which a court can annul a decision by a government authority if it falls extremely outside the range of reasonable decisions. The tool is meant to check whether the authority properly weighed all relevant considerations.
-      ar: "مبدأ قانوني يمكن بموجبه للمحكمة إلغاء قرار سلطة حكومية إذا خرج خروجًا متطرفًا عن نطاق القرارات المعقولة. والأداة مخصّصة لفحص ما إذا كانت السلطة قد وازنت كما يجب بين جميع الاعتبارات ذات الصلة."
+      ar: "مبدأ قانوني يمكن بموجبه للمحكمة إلغاء قرار سلطة حكومية إذا خرج خروجًا صارخًا عن نطاق القرارات المعقولة. والأداة مخصّصة لفحص ما إذا كانت السلطة قد وازنت كما يجب بين جميع الاعتبارات ذات الصلة."
       ru: "Правовой принцип, согласно которому суд может отменить решение органа власти, если оно крайне выходит за рамки разумных решений. Инструмент позволяет проверить, должным образом ли орган взвесил все относящиеся к делу соображения."
       es: Un principio jurídico según el cual un tribunal puede anular la decisión de una autoridad pública si queda extremadamente fuera del abanico de decisiones razonables. La herramienta sirve para comprobar si la autoridad ponderó debidamente todas las consideraciones pertinentes.
       fr: Un principe juridique selon lequel un tribunal peut annuler la décision d’une autorité publique si elle s’écarte de manière extrême de l’éventail des décisions raisonnables. L’outil sert à vérifier si l’autorité a bien pesé toutes les considérations pertinentes.

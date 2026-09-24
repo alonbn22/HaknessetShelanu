@@ -362,7 +362,7 @@ elections:
         text: { he: "מבצע משה — עליית יהודי אתיופיה.", en: "Operation Moses — the immigration of Ethiopian Jews.", ar: "عملية «موسى» — هجرة يهود إثيوبيا.", ru: "Операция «Моисей» — алия евреев Эфиопии.", es: "La operación Moisés — la inmigración de los judíos etíopes.", fr: "L’opération Moïse — l’immigration des Juifs d’Éthiopie." }
       - kind: bad
         date: "1987-12-09"
-        text: { he: "פרוץ האינתיפאדה הראשונה בשטחים בדצמבר 1987.", en: "The outbreak of the First Intifada in the territories in December 1987.", ar: "اندلاع الانتفاضة الأولى في المناطق في كانون الأول/ديسمبر 1987.", ru: "Начало Первой интифады на территориях в декабре 1987 года.", es: "El estallido de la Primera Intifada en los territorios en diciembre de 1987.", fr: "Le déclenchement de la Première Intifada dans les territoires en décembre 1987." }
+        text: { he: "פרוץ האינתיפאדה הראשונה בשטחים בדצמבר 1987.", en: "The outbreak of the First Intifada in the territories in December 1987.", ar: "اندلاع الانتفاضة الأولى في الضفة الغربية وقطاع غزة في كانون الأول/ديسمبر 1987.", ru: "Начало Первой интифады на территориях в декабре 1987 года.", es: "El estallido de la Primera Intifada en los territorios en diciembre de 1987.", fr: "Le déclenchement de la Première Intifada dans les territoires en décembre 1987." }
     ended: { he: "השלימה כהונה — בחירות 1988.", en: "Served its term — 1988 election.", ar: "أتمّ ولايته — انتخابات 1988.", ru: "Проработал полный срок — выборы 1988 года.", es: "Cumplió su legislatura — elecciones de 1988.", fr: "A accompli sa législature — élection de 1988." }
   - knesset: 10
     date: "1981-06-30"

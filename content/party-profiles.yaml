@@ -151,7 +151,7 @@ profiles:
     summary:
       he: מפלגת הימין הגדולה בישראל, בעלת אוריינטציה לאומית-ליברלית ושמרנית.
       en: Israel's largest right-wing party, national-liberal and conservative in orientation.
-      ar: أكبر أحزاب اليمين في إسرائيل، ذات توجه قومي-ليبرالي ومحافظ.
+      ar: أكبر أحزاب اليمين في إسرائيل، ذو توجه قومي-ليبرالي ومحافظ.
       ru: Крупнейшая правая партия Израиля, национально-либеральная и консервативная.
       es: "El mayor partido de derecha de Israel, de orientación nacional-liberal y conservadora."
       fr: "Le plus grand parti de droite d’Israël, d’orientation nationale-libérale et conservatrice."
@@ -253,7 +253,7 @@ profiles:
         text:
           he: "הרשימה המשותפת \"ביחד בראשות נפתלי בנט\" הוגשה לוועדת הבחירות (רשימה 1; האותיות המבוקשות ב או רק) על ידי שתי מפלגות — \"ביחד בראשות בנט\" ו\"יש עתיד - בראשות יאיר לפיד\"; מועמדי יש עתיד: לפיד (2), מירב בן ארי (4), נעם תיבון (6), מירב כהן (9), רם בן ברק (12), נאור שירי (14), ולדימיר בליאק (16)."
           en: "The joint list “Together headed by Naftali Bennett” was submitted to the CEC (list 1; requested letters ב or רק) by two parties — “Together headed by Bennett” and “Yesh Atid headed by Yair Lapid”; Yesh Atid’s candidates: Lapid (2), Merav Ben-Ari (4), Noam Tibon (6), Meirav Cohen (9), Ram Ben Barak (12), Naor Shiri (14), Vladimir Beliak (16)."
-          ar: "قُدّمت القائمة المشتركة «معًا برئاسة نفتالي بينيت» إلى لجنة الانتخابات (القائمة 1؛ الأحرف المطلوبة ב أو רק) من قِبل حزبين — «معًا برئاسة بينيت» و«يش عتيد برئاسة يائير لبيد»؛ ومرشّحو يش عتيد: لبيد (2)، ميراف بن آري (4)، نوعام تيبون (6)، ميراف كوهين (9)، رام بن باراك (12)، ناؤور شيري (14)، فلاديمير بلياك (16)."
+          ar: "قُدّمت قائمة «معًا برئاسة نفتالي بينيت» إلى لجنة الانتخابات (القائمة 1؛ الأحرف المطلوبة ב أو רק) من قِبل حزبين — «معًا برئاسة بينيت» و«يش عتيد برئاسة يائير لبيد»؛ ومرشّحو يش عتيد: لبيد (2)، ميراف بن آري (4)، نوعام تيبون (6)، ميراف كوهين (9)، رام بن باراك (12)، ناؤور شيري (14)، فلاديمير بلياك (16)."
           ru: "Совместный список «Вместе во главе с Нафтали Беннетом» подан в избирательную комиссию (список 1; запрошенные буквы ב или רק) двумя партиями — «Вместе во главе с Беннетом» и «Еш Атид во главе с Яиром Лапидом»; кандидаты «Еш Атид»: Лапид (2), Мерав Бен-Ари (4), Ноам Тибон (6), Мейрав Коэн (9), Рам Бен-Барак (12), Наор Шири (14), Владимир Беляк (16)."
           es: "La lista conjunta «Juntos, con Naftali Bennett a la cabeza» fue presentada ante la Comisión Electoral (lista 1; letras solicitadas ב o רק) por dos partidos — «Juntos, con Bennett a la cabeza» y «Yesh Atid, con Yair Lapid a la cabeza»; los candidatos de Yesh Atid: Lapid (2), Merav Ben-Ari (4), Noam Tibon (6), Meirav Cohen (9), Ram Ben Barak (12), Naor Shiri (14), Vladimir Beliak (16)."
           fr: "La liste commune « Ensemble menée par Naftali Bennett » a été déposée auprès de la Commission électorale (liste 1 ; lettres demandées ב ou רק) par deux partis — « Ensemble menée par Bennett » et « Yesh Atid menée par Yaïr Lapid » ; les candidats de Yesh Atid : Lapid (2), Merav Ben-Ari (4), Noam Tibon (6), Meirav Cohen (9), Ram Ben Barak (12), Naor Shiri (14), Vladimir Beliak (16)."
@@ -411,7 +411,7 @@ profiles:
         text:
           he: "ש\"ס ויהדות התורה החרימו יום שני ברציפות את ההצבעות במליאה בדרישה להעביר את \"חוק המעונות\" (החזרת סבסוד מעונות היום לילדי אברכים)."
           en: "Shas and United Torah Judaism boycotted Knesset votes for a second consecutive day, demanding passage of the ‘Daycare Law’ restoring daycare subsidies for the children of yeshiva students."
-          ar: "قاطع شاس ويهدوت هتوراه التصويتات في الهيئة العامة لليوم الثاني على التوالي، مطالبين بإقرار «قانون الحضانات» (إعادة دعم الحضانات النهارية لأطفال طلاب المعاهد الدينية)."
+          ar: "قاطع شاس ويهدوت هتوراة التصويتات في الهيئة العامة لليوم الثاني على التوالي، مطالبين بإقرار «قانون الحضانات» (إعادة دعم الحضانات النهارية لأطفال طلاب المعاهد الدينية)."
           ru: "ШАС и «Яхадут ха-Тора» второй день подряд бойкотировали голосования в пленуме, требуя принять «закон о яслях» (восстановление субсидий на ясли для детей учащихся ешив)."
           es: "Shas y Judaísmo Unido de la Torá boicotearon las votaciones de la Knéset por segundo día consecutivo, exigiendo la aprobación de la «Ley de Guarderías», que restablece las subvenciones de guardería para los hijos de estudiantes de yeshivá."
           fr: "Shas et le Judaïsme unifié de la Torah ont boycotté les votes de la Knesset pour le deuxième jour consécutif, exigeant l’adoption de la « loi sur les crèches », qui rétablit les subventions de garde pour les enfants des étudiants de yeshiva."
@@ -460,7 +460,7 @@ profiles:
     summary:
       he: מפלגה חרדית-ספרדית המייצגת יהדות המזרח ושומרי מסורת.
       en: A Sephardic ultra-Orthodox party representing Mizrahi Jews and the traditionally observant.
-      ar: حزب حريدي شرقي يمثّل اليهود الشرقيين والمحافظين دينيًا.
+      ar: حزب حريدي شرقي يمثّل اليهود الشرقيين والمحافظين على التقاليد.
       ru: Сефардская ультраортодоксальная партия, представляющая восточных евреев и соблюдающих традиции.
       es: "Un partido ultraortodoxo sefardí que representa a los judíos mizrajíes y al público tradicional (masortí)."
       fr: "Un parti ultra-orthodoxe séfarade représentant les Juifs orientaux et les traditionalistes."
@@ -509,7 +509,7 @@ profiles:
         text:
           he: "ח\"כ מתן כהנא הודיע על פרישה מהסיעה בעקבות איזנקוט; כהונתו בכנסת הסתיימה ב-8 ביולי 2025 ויעל רון בן משה נכנסה במקומו. באותו יום (1 ביולי) הודיע גנץ על החזרת השם \"כחול לבן\"."
           en: "MK Matan Kahana announced he was leaving the faction after Eisenkot; his Knesset term ended on 8 July 2025 and Yael Ron Ben-Moshe took his seat. The same day (1 July) Gantz announced the return to the name “Blue and White”."
-          ar: "أعلن عضو الكنيست ماتان كاهانا انسحابه من الكتلة في أعقاب آيزنكوت؛ وانتهت ولايته في الكنيست في 8 تموز/يوليو 2025 ودخلت ياعيل رون بن موشيه مكانه. وفي اليوم نفسه (1 تموز/يوليو) أعلن غانتس العودة إلى اسم «أزرق أبيض»."
+          ar: "أعلن عضو الكنيست متان كهانا انسحابه من الكتلة في أعقاب آيزنكوت؛ وانتهت ولايته في الكنيست في 8 تموز/يوليو 2025 ودخلت ياعيل رون بن موشيه مكانه. وفي اليوم نفسه (1 تموز/يوليو) أعلن غانتس العودة إلى اسم «أزرق أبيض»."
           ru: "Депутат Матан Кахана объявил о выходе из фракции вслед за Айзенкотом; его полномочия в Кнессете прекратились 8 июля 2025 года, и его место заняла Яэль Рон Бен-Моше. В тот же день (1 июля) Ганц объявил о возвращении названия «Кахоль-лаван»."
           es: "El diputado Matan Kahana anunció que dejaba la facción tras Eisenkot; su mandato en la Knéset terminó el 8 de julio de 2025 y Yael Ron Ben-Moshe ocupó su escaño. El mismo día (1 de julio) Gantz anunció la vuelta al nombre «Azul y Blanco»."
           fr: "Le député Matan Kahana a annoncé qu’il quittait la faction après Eisenkot ; son mandat à la Knesset a pris fin le 8 juillet 2025 et Yael Ron Ben-Moshe a pris son siège. Le même jour (1er juillet), Gantz a annoncé le retour au nom « Bleu et Blanc »."
@@ -545,7 +545,7 @@ profiles:
         text:
           he: "גדי איזנקוט הקים את מפלגת \"ישר!\"; מתן כהנא נמנה עם מייסדיה, וב-2026 הוא במקום החמישי ברשימתה."
           en: "Gadi Eisenkot founded the party “Yashar!”; Matan Kahana was among its founders and in 2026 is fifth on its list."
-          ar: "أسّس غادي آيزنكوت حزب «ياشار!»؛ وكان ماتان كاهانا من مؤسسيه، وهو في 2026 في الموقع الخامس في قائمته."
+          ar: "أسّس غادي آيزنكوت حزب «ياشار!»؛ وكان متان كهانا من مؤسسيه، وهو في 2026 في الموقع الخامس في قائمته."
           ru: "Гади Айзенкот основал партию «Яшар!»; Матан Кахана был в числе её основателей и в 2026 году идёт пятым в её списке."
           es: "Gadi Eisenkot fundó el partido «¡Yashar!»; Matan Kahana estuvo entre sus fundadores y en 2026 es quinto en su lista."
           fr: "Gadi Eisenkot a fondé le parti « Yashar! » ; Matan Kahana figurait parmi ses fondateurs et, en 2026, il est cinquième sur sa liste."
@@ -599,7 +599,7 @@ profiles:
     summary:
       he: מפלגת מרכז בראשות בני גנץ, לשעבר הרמטכ"ל ושר הביטחון; עד יולי 2025 חלק מהמחנה הממלכתי.
       en: A centrist party led by Benny Gantz, a former IDF chief of staff and defense minister; part of National Unity until July 2025.
-      ar: حزب وسطي بقيادة بيني غانتس، رئيس الأركان ووزير الدفاع السابق؛ كان جزءًا من "المعسكر الرسمي" حتى تموز/يوليو 2025.
+      ar: حزب وسطي بقيادة بيني غانتس، رئيس الأركان ووزير الدفاع السابق؛ كان جزءًا من «المعسكر الرسمي» حتى تموز/يوليو 2025.
       ru: Центристская партия во главе с Бени Ганцем, бывшим начальником генштаба и министром обороны; до июля 2025 года входила в «Государственный лагерь».
       es: "Un partido centrista encabezado por Benny Gantz, exjefe del Estado Mayor y exministro de Defensa; parte de Unidad Nacional hasta julio de 2025."
       fr: "Un parti centriste dirigé par Benny Gantz, ancien chef d’état-major et ancien ministre de la Défense ; composante d’Unité nationale jusqu’en juillet 2025."
@@ -613,7 +613,7 @@ profiles:
         - A responsible, centrist security policy
         - A broad unity government
       ar:
-        - "الرسمية وحماية المؤسسات الديمقراطية والقضائية"
+        - "تغليب مصلحة الدولة وحماية المؤسسات الديمقراطية والقضائية"
         - "سياسة أمنية مسؤولة ووسطية"
         - "حكومة وحدة واسعة"
       ru:
@@ -656,7 +656,7 @@ profiles:
         text:
           he: "כהונתו של צבי סוכות בכנסת הסתיימה ב-21 בינואר 2025 — היום שבו נכנסו לתוקף התפטרויות שרי עוצמה יהודית מהממשלה ועמיחי אליהו שב לכנסת (השניים נבחרו ברשימה המשותפת של 2022, שממנה נקבעים המחליפים לפי החוק הנורבגי). הסיעה מנתה 6 חברים עד אפריל 2025."
           en: "Zvi Sukkot’s Knesset term ended on 21 January 2025 — the day the Otzma Yehudit ministers’ resignations took effect and Amichai Eliyahu returned to the Knesset (both were elected on the 2022 joint list, from which Norwegian-law replacements are drawn). The faction had 6 members until April 2025."
-          ar: "انتهت ولاية تسفي سوكوت في الكنيست في 21 كانون الثاني/يناير 2025 — اليوم الذي دخلت فيه استقالات وزراء عوتسما يهوديت حيّز التنفيذ وعاد عميحاي إلياهو إلى الكنيست (انتُخب الاثنان في القائمة المشتركة لعام 2022، التي يُحدَّد منها البدلاء وفق «القانون النرويجي»). وضمّت الكتلة 6 أعضاء حتى نيسان/أبريل 2025."
+          ar: "انتهت ولاية تسفي سوكوت في الكنيست في 21 كانون الثاني/يناير 2025 — اليوم الذي دخلت فيه استقالات وزراء عوتسما يهوديت حيّز التنفيذ وعاد عميحاي إلياهو إلى الكنيست (انتُخب الاثنان في قائمة «الصهيونية الدينية» المشتركة لعام 2022، التي يُحدَّد منها البدلاء وفق «القانون النرويجي»). وضمّت الكتلة 6 أعضاء حتى نيسان/أبريل 2025."
           ru: "Полномочия Цви Суккота в Кнессете прекратились 21 января 2025 года — в день, когда вступили в силу отставки министров «Оцма Иегудит» и Амихай Элияху вернулся в Кнессет (оба были избраны по совместному списку 2022 года, из которого определяются замены по «норвежскому закону»). До апреля 2025 года во фракции было 6 депутатов."
           es: "El mandato de Zvi Sukkot en la Knéset terminó el 21 de enero de 2025 — el día en que se hicieron efectivas las renuncias de los ministros de Otzma Yehudit y Amichai Eliyahu volvió a la Knéset (ambos fueron elegidos en la lista conjunta de 2022, de la que salen los sustitutos según la Ley Noruega). La facción tuvo 6 miembros hasta abril de 2025."
           fr: "Le mandat de Zvi Sukkot à la Knesset a pris fin le 21 janvier 2025 — le jour où les démissions des ministres d’Otzma Yehoudit ont pris effet et où Amichai Eliyahu est revenu à la Knesset (tous deux avaient été élus sur la liste commune de 2022, d’où sont tirés les remplaçants selon la « loi norvégienne »). La faction a compté 6 membres jusqu’en avril 2025."
@@ -668,7 +668,7 @@ profiles:
         text:
           he: "אלמוג כהן (נבחר ברשימה המשותפת מטעם עוצמה יהודית) מונה לסגן שר במשרד ראש הממשלה ב-2 באפריל 2025 והתפטר מהכנסת לפי החוק הנורבגי; צבי סוכות שב לכנסת ב-6 באפריל 2025 והסיעה חזרה ל-7 חברים."
           en: "Almog Cohen (elected on the joint list for Otzma Yehudit) was appointed deputy minister in the Prime Minister’s Office on 2 April 2025 and resigned from the Knesset under the Norwegian law; Zvi Sukkot returned to the Knesset on 6 April 2025 and the faction was back to 7 members."
-          ar: "عُيّن ألموغ كوهين (المنتخب في القائمة المشتركة عن عوتسما يهوديت) نائبًا للوزير في مكتب رئيس الحكومة في 2 نيسان/أبريل 2025 واستقال من الكنيست بموجب «القانون النرويجي»؛ وعاد تسفي سوكوت إلى الكنيست في 6 نيسان/أبريل 2025 وعادت الكتلة إلى 7 أعضاء."
+          ar: "عُيّن ألموغ كوهين (المنتخب في قائمة «الصهيونية الدينية» المشتركة عن عوتسما يهوديت) نائبًا للوزير في مكتب رئيس الحكومة في 2 نيسان/أبريل 2025 واستقال من الكنيست بموجب «القانون النرويجي»؛ وعاد تسفي سوكوت إلى الكنيست في 6 نيسان/أبريل 2025 وعادت الكتلة إلى 7 أعضاء."
           ru: "Альмог Коэн (избранный по совместному списку от «Оцма Иегудит») 2 апреля 2025 года был назначен заместителем министра в канцелярии премьер-министра и сложил мандат по «норвежскому закону»; 6 апреля 2025 года Цви Суккот вернулся в Кнессет, и во фракции снова стало 7 депутатов."
           es: "Almog Cohen (elegido en la lista conjunta por Otzma Yehudit) fue nombrado viceministro en la Oficina del Primer Ministro el 2 de abril de 2025 y renunció a la Knéset según la Ley Noruega; Zvi Sukkot volvió a la Knéset el 6 de abril de 2025 y la facción recuperó los 7 miembros."
           fr: "Almog Cohen (élu sur la liste commune au titre d’Otzma Yehoudit) a été nommé vice-ministre au bureau du Premier ministre le 2 avril 2025 et a démissionné de la Knesset en vertu de la « loi norvégienne » ; Zvi Sukkot est revenu à la Knesset le 6 avril 2025 et la faction est repassée à 7 membres."
@@ -679,7 +679,7 @@ profiles:
         text:
           he: "סמוטריץ' הודיע שהציונות הדתית תרוץ בנפרד מעוצמה יהודית: 'הציבור הדתי-לאומי יכול וצריך לרוץ בכוחות עצמו כמפלגה גדולה, חזקה ומשמעותית'. בן גביר שלל ריצה משותפת (27 ביולי) ודחה את דרישת נתניהו להתאחד (28 באוגוסט)."
           en: "Smotrich said Religious Zionism would run separately from Otzma Yehudit: ‘the Religious Zionist public can and should run on its own as a big, strong, significant party.’ Ben Gvir ruled out a joint run (27 July) and rejected Netanyahu’s demand to merge (28 August)."
-          ar: "أعلن سموتريتش أن الصهيونية الدينية ستترشح منفصلة عن عوتسما يهوديت: «الجمهور الديني القومي يستطيع ويجب أن يترشح بقواه الذاتية حزبًا كبيرًا وقويًا ومؤثرًا». واستبعد بن غفير الترشح المشترك (27 تموز/يوليو) ورفض مطلب نتنياهو بالاتحاد (28 آب/أغسطس)."
+          ar: "أعلن سموتريتش أن الصهيونية الدينية ستترشح منفصلة عن عوتسما يهوديت: «الجمهور الديني القومي يستطيع، بل يجب عليه، أن يترشح بقواه الذاتية حزبًا كبيرًا وقويًا ومؤثرًا». واستبعد بن غفير الترشح المشترك (27 تموز/يوليو) ورفض مطلب نتنياهو بالاتحاد (28 آب/أغسطس)."
           ru: "Смотрич заявил, что «Религиозный сионизм» пойдёт на выборы отдельно от «Оцма Иегудит»: «Религиозно-сионистская общественность может и должна идти самостоятельно — как большая, сильная и значимая партия». Бен-Гвир исключил совместное участие (27 июля) и отверг требование Нетаньяху объединиться (28 августа)."
           es: "Smotrich dijo que Sionismo Religioso se presentaría por separado de Otzma Yehudit: «el público sionista religioso puede y debe presentarse por su cuenta como un partido grande, fuerte y significativo». Ben Gvir descartó una candidatura conjunta (27 de julio) y rechazó la exigencia de Netanyahu de fusionarse (28 de agosto)."
           fr: "Smotrich a déclaré que le Sionisme religieux se présenterait séparément d’Otzma Yehoudit : « le public sioniste religieux peut et doit se présenter seul comme un grand parti, fort et significatif ». Ben Gvir a exclu une candidature commune (27 juillet) et rejeté l’exigence de fusion de Netanyahou (28 août)."
@@ -701,7 +701,7 @@ profiles:
         text:
           he: "הרשימה המשותפת הוגשה (רשימה 31, אות מבוקשת ט) בידי האיחוד הלאומי-תקומה, זהות ועתיד אחד: 1 בצלאל סמוטריץ', 2 משה פייגלין (זהות), 3 אורית סטרוק (עתיד אחד), 4 שמחה רוטמן, 5 צבי מור, 6 איתמר איתם, 7 צבי סוכות, 8 יצחק זאגא (זהות), 9 רעות בן חיים, 10 עומר וולדמן (זהות), 11 ארקדי מוטר (זהות), 12 אוהד טל."
           en: "The joint list was submitted (list 31, requested letter ט) by National Union–Tkuma, Zehut and Atid Echad: 1 Bezalel Smotrich, 2 Moshe Feiglin (Zehut), 3 Orit Strook (Atid Echad), 4 Simcha Rothman, 5 Zvi Mor, 6 Itamar Eitam, 7 Zvi Sukkot, 8 Yitzhak Zaga (Zehut), 9 Reut Ben Haim, 10 Omer Waldman (Zehut), 11 Arkadi Muter (Zehut), 12 Ohad Tal."
-          ar: "قُدّمت القائمة المشتركة (القائمة 31، الحرف المطلوب ט) من قِبل الاتحاد الوطني – تكوما وزهوت و«مستقبل واحد»: 1 بتسلئيل سموتريتش، 2 موشيه فيغلين (زهوت)، 3 أوريت ستروك («مستقبل واحد»)، 4 سيمحا روتمان، 5 تسفي مور، 6 إيتمار إيتام، 7 تسفي سوكوت، 8 يتسحاق زاغا (زهوت)، 9 رعوت بن حاييم، 10 عومر فالدمان (زهوت)، 11 أركادي موتر (زهوت)، 12 أوهاد طال."
+          ar: "قُدّمت قائمة الصهيونية الدينية–زهوت (القائمة 31، الحرف المطلوب ט) من قِبل الاتحاد الوطني – تكوما وزهوت و«مستقبل واحد»: 1 بتسلئيل سموتريتش، 2 موشيه فيغلين (زهوت)، 3 أوريت ستروك («مستقبل واحد»)، 4 سيمحا روتمان، 5 تسفي مور، 6 إيتمار إيتام، 7 تسفي سوكوت، 8 يتسحاق زاغا (زهوت)، 9 رعوت بن حاييم، 10 عومر فالدمان (زهوت)، 11 أركادي موتر (زهوت)، 12 أوهاد طال."
           ru: "Совместный список подан (список 31, запрошенная буква ט) партиями «Национальный союз — Ткума», «Зеут» и «Единое будущее»: 1 Бецалель Смотрич, 2 Моше Фейглин («Зеут»), 3 Орит Струк («Единое будущее»), 4 Симха Ротман, 5 Цви Мор, 6 Итамар Эйтам, 7 Цви Суккот, 8 Ицхак Зага («Зеут»), 9 Реут Бен-Хаим, 10 Омер Вальдман («Зеут»), 11 Аркадий Мутер («Зеут»), 12 Охад Таль."
           es: "La lista conjunta fue presentada (lista 31, letra solicitada ט) por Unión Nacional–Tkuma, Zehut y Atid Echad: 1 Bezalel Smotrich, 2 Moshe Feiglin (Zehut), 3 Orit Strook (Atid Echad), 4 Simcha Rothman, 5 Zvi Mor, 6 Itamar Eitam, 7 Zvi Sukkot, 8 Yitzhak Zaga (Zehut), 9 Reut Ben Haim, 10 Omer Waldman (Zehut), 11 Arkadi Muter (Zehut), 12 Ohad Tal."
           fr: "La liste commune a été déposée (liste 31, lettre demandée ט) par Union nationale–Tkuma, Zehut et Atid Echad : 1 Bezalel Smotrich, 2 Moshe Feiglin (Zehut), 3 Orit Strook (Atid Echad), 4 Simcha Rothman, 5 Zvi Mor, 6 Itamar Eitam, 7 Zvi Sukkot, 8 Yitzhak Zaga (Zehut), 9 Reut Ben Haim, 10 Omer Waldman (Zehut), 11 Arkadi Muter (Zehut), 12 Ohad Tal."
@@ -725,7 +725,7 @@ profiles:
     ballotNote:
       he: רצה במסגרת הרשימה המשותפת "הציונות הדתית" (ט) ב-2022.
       en: Ran on the joint 'Religious Zionism' list (ט) in 2022.
-      ar: "ترشّح ضمن القائمة المشتركة «الصهيونية الدينية» (ט) في 2022."
+      ar: "ترشّح ضمن قائمة «الصهيونية الدينية» المشتركة (ט) في 2022."
       ru: "В 2022 году шла в совместном списке «Религиозный сионизм» (ט)."
       es: "Se presentó en la lista conjunta «Sionismo Religioso» (ט) en 2022."
       fr: "S’est présenté sur la liste commune « Sionisme religieux » (ט) en 2022."
@@ -774,7 +774,7 @@ profiles:
         text:
           he: "יצחק גולדקנופ התפטר מתפקידו כשר הבינוי והשיכון לאחר שהכנסת דחתה הצעת חוק לפיזורה; יהדות התורה נשארה בקואליציה. ב-15 ביוני 2025 שב גולדקנופ לכנסת לפי החוק הנורבגי ואליהו ברוכי חדל לכהן."
           en: "Yitzhak Goldknopf resigned as housing minister after the Knesset rejected a bill to dissolve itself; UTJ remained in the coalition. On 15 June 2025 Goldknopf returned to the Knesset under the Norwegian law and Eliyahu Baruchi ceased to serve."
-          ar: "استقال يتسحاق غولدكنوبف من منصب وزير البناء والإسكان بعد أن رفض الكنيست مشروع قانون لحلّه؛ وبقيت يهدوت هتوراه في الائتلاف. وفي 15 حزيران/يونيو 2025 عاد غولدكنوبف إلى الكنيست بموجب «القانون النرويجي» وانتهت عضوية إلياهو باروخي."
+          ar: "استقال يتسحاق غولدكنوبف من منصب وزير البناء والإسكان بعد أن رفض الكنيست مشروع قانون لحلّه؛ وبقيت يهدوت هتوراة في الائتلاف. وفي 15 حزيران/يونيو 2025 عاد غولدكنوبف إلى الكنيست بموجب «القانون النرويجي» وانتهت عضوية إلياهو باروخي."
           ru: "Ицхак Гольдкнопф ушёл с поста министра строительства и жилищного хозяйства после того, как Кнессет отклонил законопроект о самороспуске; «Яхадут ха-Тора» осталась в коалиции. 15 июня 2025 года Гольдкнопф вернулся в Кнессет по «норвежскому закону», а Элияху Барухи перестал быть депутатом."
           es: "Yitzhak Goldknopf renunció como ministro de Vivienda después de que la Knéset rechazara un proyecto de ley para disolverse; Judaísmo Unido de la Torá siguió en la coalición. El 15 de junio de 2025 Goldknopf volvió a la Knéset según la Ley Noruega y Eliyahu Baruchi cesó en el cargo."
           fr: "Yitzhak Goldknopf a démissionné de son poste de ministre du Logement après le rejet par la Knesset d’un projet de loi de dissolution ; le Judaïsme unifié de la Torah est resté dans la coalition. Le 15 juin 2025, Goldknopf est revenu à la Knesset en vertu de la « loi norvégienne » et Eliyahu Baruchi a cessé de siéger."
@@ -822,7 +822,7 @@ profiles:
         text:
           he: "דגל התורה הודיעה על תמיכה בפיזור הכנסת; אגודת ישראל הודיעה שתתמוך אף היא. הרב דב לנדו: 'אין לנו עוד אמון בנתניהו'. יהדות התורה פרשה רשמית מהממשלה ומהקואליציה ב-2025."
           en: "Degel HaTorah announced support for dissolving the Knesset; Agudat Yisrael indicated it would back the move as well. Rabbi Dov Lando: ‘We no longer have any trust in Netanyahu.’ UTJ had formally withdrawn from the government and the coalition in 2025."
-          ar: "أعلن ديغل هتوراه دعمه لحلّ الكنيست؛ وأعلنت أغودات يسرائيل أنها ستدعمه أيضًا. وقال الحاخام دوف لاندو: «لم تعد لدينا أي ثقة بنتنياهو». وكانت يهدوت هتوراه قد انسحبت رسميًا من الحكومة ومن الائتلاف في 2025."
+          ar: "أعلن ديغل هتوراه دعمه لحلّ الكنيست؛ وأعلنت أغودات يسرائيل أنها ستدعمه أيضًا. وقال الحاخام دوف لاندو: «لم تعد لدينا أي ثقة بنتنياهو». وكانت يهدوت هتوراة قد انسحبت رسميًا من الحكومة ومن الائتلاف في 2025."
           ru: "«Дегель ха-Тора» объявила о поддержке роспуска Кнессета; «Агудат Исраэль» заявила, что тоже поддержит его. Раввин Дов Ландо: «У нас больше нет никакого доверия к Нетаньяху». «Яхадут ха-Тора» официально вышла из правительства и коалиции в 2025 году."
           es: "Degel HaTorá anunció su apoyo a la disolución de la Knéset; Agudat Yisrael indicó que también respaldaría la medida. El rabino Dov Lando: «Ya no tenemos ninguna confianza en Netanyahu». Judaísmo Unido de la Torá se había retirado formalmente del Gobierno y de la coalición en 2025."
           fr: "Degel HaTorah a annoncé son soutien à la dissolution de la Knesset ; Agoudat Israël a indiqué qu’il soutiendrait aussi la démarche. Le rabbin Dov Lando : « Nous n’avons plus aucune confiance en Netanyahou. » Le Judaïsme unifié de la Torah s’était formellement retiré du gouvernement et de la coalition en 2025."
@@ -832,7 +832,7 @@ profiles:
         text:
           he: "יהדות התורה וש\"ס החרימו יום שני ברציפות את ההצבעות במליאה בדרישה להעביר את 'חוק המעונות'; אגודת ישראל הודיעה שהיא 'עומדת מאוחדת עם דגל התורה' בדרישה."
           en: "UTJ and Shas boycotted Knesset votes for a second consecutive day demanding passage of the ‘Daycare Law’; Agudat Yisrael said it ‘stands united with Degel HaTorah’ in the demand."
-          ar: "قاطعت يهدوت هتوراه وشاس التصويتات في الهيئة العامة لليوم الثاني على التوالي مطالبتين بإقرار «قانون الحضانات»؛ وأعلنت أغودات يسرائيل أنها «تقف موحّدة مع ديغل هتوراه» في هذا المطلب."
+          ar: "قاطعت يهدوت هتوراة وشاس التصويتات في الهيئة العامة لليوم الثاني على التوالي مطالبتين بإقرار «قانون الحضانات»؛ وأعلنت أغودات يسرائيل أنها «تقف موحّدة مع ديغل هتوراه» في هذا المطلب."
           ru: "«Яхадут ха-Тора» и ШАС второй день подряд бойкотировали голосования в пленуме, требуя принять «закон о яслях»; «Агудат Исраэль» заявила, что в этом требовании она «едина с „Дегель ха-Тора“»."
           es: "Judaísmo Unido de la Torá y Shas boicotearon las votaciones de la Knéset por segundo día consecutivo exigiendo la aprobación de la «Ley de Guarderías»; Agudat Yisrael dijo que «se mantiene unida con Degel HaTorá» en la exigencia."
           fr: "Le Judaïsme unifié de la Torah et Shas ont boycotté les votes de la Knesset pour le deuxième jour consécutif en exigeant l’adoption de la « loi sur les crèches » ; Agoudat Israël a déclaré « faire bloc avec Degel HaTorah » dans cette exigence."
@@ -842,7 +842,7 @@ profiles:
         text:
           he: "רבני דגל התורה החליטו שמשה גפני, יו\"ר המפלגה ויו\"ר ועדת הכספים לשעבר, לא ייכלל ברשימה לכנסת ה-26; גם אורי מקלב לא ייכלל. יעקב אשר יעמוד בראש דגל התורה ובראש רשימת יהדות התורה."
           en: "Degel HaTorah’s rabbis decided that Moshe Gafni, the party’s chairman and former Finance Committee chair, would not be on the list for the 26th Knesset; Uri Maklev was also left off. Yaakov Asher is to head Degel HaTorah and the UTJ list."
-          ar: "قرّر حاخامات ديغل هتوراه ألّا يُدرج موشيه غافني، رئيس الحزب والرئيس السابق للجنة المالية، في القائمة للكنيست الـ26؛ ولن يُدرج أوري مكليف أيضًا. وسيرأس يعقوب آشر ديغل هتوراه وقائمة يهدوت هتوراه."
+          ar: "قرّر حاخامات ديغل هتوراه ألّا يُدرج موشيه غافني، رئيس الحزب والرئيس السابق للجنة المالية، في القائمة للكنيست الـ26؛ ولن يُدرج أوري مكليف أيضًا. وسيرأس يعقوب آشر ديغل هتوراه وقائمة يهدوت هتوراة."
           ru: "Раввины «Дегель ха-Тора» решили, что Моше Гафни, председатель партии и бывший председатель финансовой комиссии, не войдёт в список в Кнессет 26-го созыва; не войдёт в него и Ури Маклев. «Дегель ха-Тора» и список «Яхадут ха-Тора» возглавит Яаков Ашер."
           es: "Los rabinos de Degel HaTorá decidieron que Moshe Gafni, presidente del partido y expresidente de la Comisión de Finanzas, no estaría en la lista para la 26.ª Knéset; Uri Maklev también quedó fuera. Yaakov Asher encabezará Degel HaTorá y la lista de Judaísmo Unido de la Torá."
           fr: "Les rabbins de Degel HaTorah ont décidé que Moshe Gafni, président du parti et ancien président de la Commission des Finances, ne figurerait pas sur la liste pour la 26e Knesset ; Uri Maklev a également été écarté. Yaakov Asher doit prendre la tête de Degel HaTorah et de la liste du Judaïsme unifié de la Torah."
@@ -853,7 +853,7 @@ profiles:
         text:
           he: "רשימת יהדות התורה (רשימה 37, אות מבוקשת ג) הוגשה על ידי שלוש מפלגות — דגל התורה, אגודת ישראל ומפלגה חדשה, 'חומת תורת ישראל' (נציגי בעלז ושלומי אמונים), שמאיר פרוש ואלי שטארק רצים במסגרתה (מקומות 4 ו-6). בראש: יעקב אשר, יצחק גולדקנופ, יצחק פינדרוס."
           en: "The UTJ list (list 37, requested letter ג) was submitted by three parties — Degel HaTorah, Agudat Yisrael and a new party, ‘Homat Torat Yisrael’ (representing Belz and Shlomei Emunim), under which Meir Porush and Eli Stark run (slots 4 and 6). Top of the list: Yaakov Asher, Yitzhak Goldknopf, Yitzhak Pindrus."
-          ar: "قُدّمت قائمة يهدوت هتوراه (القائمة 37، الحرف المطلوب ג) من قِبل ثلاثة أحزاب — ديغل هتوراه وأغودات يسرائيل وحزب جديد هو «حومات توراة يسرائيل» (ممثلو بلز وشلومي إيمونيم)، ويترشح في إطاره مئير بوروش وإيلي شتارك (الموقعان 4 و6). وعلى رأسها: يعقوب آشر، يتسحاق غولدكنوبف، يتسحاق بيندروس."
+          ar: "قُدّمت قائمة يهدوت هتوراة (القائمة 37، الحرف المطلوب ג) من قِبل ثلاثة أحزاب — ديغل هتوراه وأغودات يسرائيل وحزب جديد هو «حومات توراة يسرائيل» (ممثلو بلز وشلومي إيمونيم)، ويترشح في إطاره مئير بوروش وإيلي شتارك (الموقعان 4 و6). وعلى رأسها: يعقوب آشر، يتسحاق غولدكنوبف، يتسحاق بيندروس."
           ru: "Список «Яхадут ха-Тора» (список 37, запрошенная буква ג) подан тремя партиями — «Дегель ха-Тора», «Агудат Исраэль» и новой партией «Хомат Торат Исраэль» (представители Белза и «Шломей Эмуним»), от которой идут Меир Поруш и Эли Штарк (4-е и 6-е места). Во главе: Яаков Ашер, Ицхак Гольдкнопф, Ицхак Пиндрус."
           es: "La lista de Judaísmo Unido de la Torá (lista 37, letra solicitada ג) fue presentada por tres partidos — Degel HaTorá, Agudat Yisrael y un nuevo partido, «Homat Torat Yisrael» (que representa a Belz y Shlomei Emunim), por el que se presentan Meir Porush y Eli Stark (puestos 4 y 6). Primeros puestos: Yaakov Asher, Yitzhak Goldknopf, Yitzhak Pindrus."
           fr: "La liste du Judaïsme unifié de la Torah (liste 37, lettre demandée ג) a été déposée par trois partis — Degel HaTorah, Agoudat Israël et un nouveau parti, « Homat Torat Yisrael » (représentant Belz et Shlomei Emunim), sous lequel se présentent Meir Porush et Eli Stark (places 4 et 6). En tête de liste : Yaakov Asher, Yitzhak Goldknopf, Yitzhak Pindrus."
@@ -888,7 +888,7 @@ profiles:
     summary:
       he: ברית מפלגות חרדיות אשכנזיות (אגודת ישראל ודגל התורה); ברשימת 2026 מצטרפת אליהן גם "חומת תורת ישראל".
       en: An alliance of Ashkenazi ultra-Orthodox parties (Agudat Yisrael and Degel HaTorah); the 2026 list also includes “Homat Torat Yisrael”.
-      ar: تحالف أحزاب حريدية أشكنازية (أغودات يسرائيل ودِغل هتوراة)؛ تنضم إليهما في قائمة 2026 أيضًا "حومات تورات يسرائيل".
+      ar: تحالف أحزاب حريدية أشكنازية (أغودات يسرائيل وديغل هتوراه)؛ تنضم إليهما في قائمة 2026 أيضًا «حومات توراة يسرائيل».
       ru: Союз ашкеназских ультраортодоксальных партий (Агудат Исраэль и Дегель ха-Тора); в списке 2026 года к ним присоединяется и «Хомат Торат Исраэль».
       es: "Una alianza de partidos ultraortodoxos asquenazíes (Agudat Yisrael y Degel HaTorá); la lista de 2026 incluye también a «Homat Torat Yisrael»."
       fr: "Une alliance de partis ultra-orthodoxes ashkénazes (Agoudat Israël et Degel HaTorah) ; la liste de 2026 inclut aussi « Homat Torat Yisrael »."
@@ -988,7 +988,7 @@ profiles:
     summary:
       he: מפלגה לאומית-חילונית המזוהה עם ציבור דוברי הרוסית.
       en: A secular-nationalist party associated with the Russian-speaking community.
-      ar: حزب قومي علماني مرتبط بالجالية الناطقة بالروسية.
+      ar: حزب قومي علماني مرتبط بالجمهور الناطق بالروسية.
       ru: Светско-националистическая партия, связанная с русскоязычной общиной.
       es: "Un partido nacionalista laico asociado a la comunidad rusohablante."
       fr: "Un parti nationaliste laïc associé à la communauté russophone."
@@ -1058,7 +1058,7 @@ profiles:
         text:
           he: "אלמוג כהן מונה לסגן שר במשרד ראש הממשלה (2 באפריל 2025) והתפטר מהכנסת לפי החוק הנורבגי; במקומו נכנס צבי סוכות (הציונות הדתית), הבא בתור ברשימה המשותפת של 2022, והסיעה ירדה ל-6 חברים. באוגוסט 2026 התמודד כהן בפריימריז של הליכוד והוא במקום ה-13 ברשימת הליכוד."
           en: "Almog Cohen was appointed deputy minister in the Prime Minister’s Office (2 April 2025) and resigned from the Knesset under the Norwegian law; Zvi Sukkot (Religious Zionism), next on the 2022 joint list, took the seat and the faction fell to 6 members. In August 2026 Cohen ran in the Likud primary and is 13th on the Likud list."
-          ar: "عُيّن ألموغ كوهين نائبًا للوزير في مكتب رئيس الحكومة (2 نيسان/أبريل 2025) واستقال من الكنيست بموجب «القانون النرويجي»؛ ودخل مكانه تسفي سوكوت (الصهيونية الدينية)، التالي في القائمة المشتركة لعام 2022، فانخفضت الكتلة إلى 6 أعضاء. وفي آب/أغسطس 2026 خاض كوهين الانتخابات التمهيدية لليكود وهو في الموقع الـ13 في قائمة الليكود."
+          ar: "عُيّن ألموغ كوهين نائبًا للوزير في مكتب رئيس الحكومة (2 نيسان/أبريل 2025) واستقال من الكنيست بموجب «القانون النرويجي»؛ ودخل مكانه تسفي سوكوت (الصهيونية الدينية)، التالي في قائمة «الصهيونية الدينية» المشتركة لعام 2022، فانخفضت الكتلة إلى 6 أعضاء. وفي آب/أغسطس 2026 خاض كوهين الانتخابات التمهيدية لليكود وهو في الموقع الـ13 في قائمة الليكود."
           ru: "Альмог Коэн был назначен заместителем министра в канцелярии премьер-министра (2 апреля 2025 года) и сложил мандат по «норвежскому закону»; его место занял Цви Суккот («Религиозный сионизм»), следующий по совместному списку 2022 года, и во фракции осталось 6 депутатов. В августе 2026 года Коэн участвовал в праймериз Ликуда и идёт 13-м в списке Ликуда."
           es: "Almog Cohen fue nombrado viceministro en la Oficina del Primer Ministro (2 de abril de 2025) y renunció a la Knéset según la Ley Noruega; Zvi Sukkot (Sionismo Religioso), siguiente en la lista conjunta de 2022, ocupó el escaño y la facción bajó a 6 miembros. En agosto de 2026 Cohen se presentó a las primarias del Likud y es 13.º en la lista del Likud."
           fr: "Almog Cohen a été nommé vice-ministre au bureau du Premier ministre (2 avril 2025) et a démissionné de la Knesset en vertu de la « loi norvégienne » ; Zvi Sukkot (Sionisme religieux), suivant sur la liste commune de 2022, a pris le siège et la faction est passée à 6 membres. En août 2026, Cohen s’est présenté à la primaire du Likoud et il est 13e sur la liste du Likoud."
@@ -1199,7 +1199,7 @@ profiles:
         text:
           he: "יו\"ר רע\"ם מנסור עבאס הודיע בריאיון לחדשות 12 כי המפלגה תפריד את מוסדותיה ממועצת השורא ומהתנועה האסלאמית ותהפוך ל\"מפלגה אזרחית לחלוטין\"."
           en: "Ra’am chair Mansour Abbas said in a Channel 12 interview that the party would separate its institutions from the Shura Council and the Islamic Movement and become “a completely civic party”."
-          ar: "قال رئيس القائمة الموحدة منصور عباس في مقابلة مع «أخبار 12» إن الحزب سيفصل مؤسساته عن مجلس الشورى والحركة الإسلامية وسيصبح «حزبًا مدنيًا بالكامل»."
+          ar: "قال رئيس القائمة الموحدة منصور عباس في مقابلة مع «القناة 12» إن الحزب سيفصل مؤسساته عن مجلس الشورى والحركة الإسلامية وسيصبح «حزبًا مدنيًا بالكامل»."
           ru: "Председатель РААМ Мансур Аббас в интервью 12-му каналу заявил, что партия отделит свои институты от Совета шуры и Исламского движения и станет «полностью гражданской партией»."
           es: "El presidente de Ra’am, Mansour Abbas, dijo en una entrevista en el Canal 12 que el partido separaría sus instituciones del Consejo de la Shura y del Movimiento Islámico y se convertiría en «un partido plenamente civil»."
           fr: "Le président de Ra’am, Mansour Abbas, a déclaré dans un entretien sur la Chaîne 12 que le parti séparerait ses institutions du Conseil de la Choura et du Mouvement islamique et deviendrait « un parti entièrement civique »."
@@ -1333,7 +1333,7 @@ profiles:
         - Fighting crime and violence in Arab society
         - Upholding conservative religious values
       ar:
-        - "دفع الحقوق والميزانيات للمواطنين العرب"
+        - "تعزيز الحقوق والميزانيات للمواطنين العرب"
         - "مكافحة الجريمة والعنف في المجتمع العربي"
         - "التمسّك بالقيم الدينية المحافظة"
       ru:
@@ -1540,7 +1540,7 @@ profiles:
         text:
           he: "ועידת הדמוקרטים בתל אביב אשררה את איחוד העבודה ומרצ לקראת הבחירות; למרצ הובטחו המקומות 6, 8 ו-14 ברשימה המשותפת."
           en: "The Democrats’ conference in Tel Aviv ratified the Labor–Meretz merger ahead of the election; Meretz was guaranteed slots 6, 8 and 14 on the joint list."
-          ar: "صادق مؤتمر الديمقراطيين في تل أبيب على وحدة العمل وميرتس استعدادًا للانتخابات؛ وضُمنت لميرتس المواقع 6 و8 و14 في القائمة المشتركة."
+          ar: "صادق مؤتمر الديمقراطيين في تل أبيب على وحدة العمل وميرتس استعدادًا للانتخابات؛ وضُمنت لميرتس المواقع 6 و8 و14 في قائمة الديمقراطيين."
           ru: "Съезд «Демократов» в Тель-Авиве ратифицировал объединение «Аводы» и «Мерец» перед выборами; «Мерец» гарантированы 6-е, 8-е и 14-е места в совместном списке."
           es: "La conferencia de Los Demócratas en Tel Aviv ratificó la fusión Laborista–Meretz antes de las elecciones; a Meretz se le garantizaron los puestos 6, 8 y 14 de la lista conjunta."
           fr: "La conférence des Démocrates à Tel-Aviv a ratifié la fusion Travaillistes–Meretz avant les élections ; Meretz s’est vu garantir les places 6, 8 et 14 sur la liste commune."
@@ -1706,7 +1706,7 @@ profiles:
         text:
           he: "ח\"כ שרן השכל התפטרה מתפקיד סגנית שר החוץ ומהמפלגה בעקבות חקיקה שהקפיאה מעצרים של חרדים שלא התייצבו לגיוס; למחרת הכריזה על הקמת מפלגת \"ישראל תחילה\". היא נותרה חברת הכנסת בסיעת הימין הממלכתי."
           en: "MK Sharren Haskel resigned as Deputy Foreign Minister and from the party after legislation freezing arrests of Haredi men who did not report for the draft; the next day she announced a new party, “Israel First”. She remains an MK in the National Right faction."
-          ar: "استقالت عضوة الكنيست شيرين هسكل من منصب نائبة وزير الخارجية ومن الحزب في أعقاب تشريع جمّد اعتقال الحريديم الذين لم يمتثلوا للتجنيد؛ وفي اليوم التالي أعلنت تأسيس حزب «إسرائيل أولًا». ولا تزال عضوة كنيست في كتلة «اليمين الرسمي»."
+          ar: "استقالت عضوة الكنيست شارين هسكل من منصب نائبة وزير الخارجية ومن الحزب في أعقاب تشريع جمّد اعتقال الحريديم الذين لم يمتثلوا للتجنيد؛ وفي اليوم التالي أعلنت تأسيس حزب «إسرائيل أولًا». ولا تزال عضوة كنيست في كتلة «اليمين الرسمي»."
           ru: "Депутат Шарен Хаскель ушла с поста заместителя министра иностранных дел и из партии после принятия закона, заморозившего аресты харедим, не явившихся на призыв; на следующий день она объявила о создании партии «Израиль прежде всего». Она остаётся депутатом во фракции «Государственные правые»."
           es: "La diputada Sharren Haskel renunció como viceministra de Asuntos Exteriores y del partido tras la legislación que congela las detenciones de jaredíes que no se presentaron al reclutamiento; al día siguiente anunció un nuevo partido, «Israel Primero». Sigue siendo diputada en la facción Nueva Esperanza – Derecha Nacional."
           fr: "La députée Sharren Haskel a démissionné de son poste de vice-ministre des Affaires étrangères et du parti après la législation gelant les arrestations de haredim ne s’étant pas présentés à la conscription ; le lendemain, elle a annoncé un nouveau parti, « Israël d’abord ». Elle reste députée au sein de la faction Nouvel Espoir – Droite étatique."
@@ -1728,7 +1728,7 @@ profiles:
         text:
           he: "\"ישראל תחילה\" של ח\"כ שרן השכל הודיעה על ריצה משותפת עם עלה ירוק; הרשימה \"ישראל תחילה - בראשות שרן השכל\" הוגשה לוועדת הבחירות כרשימה מס' 7 (אותיות מבוקשות י / ר)."
           en: "MK Sharren Haskel’s “Israel First” announced a joint run with Ale Yarok; the list “Israel First – headed by Sharren Haskel” was submitted to the CEC as list no. 7 (requested letters י / ר)."
-          ar: "أعلن حزب «إسرائيل أولًا» بزعامة عضوة الكنيست شيرين هسكل ترشحًا مشتركًا مع «عاليه يروك» (الورقة الخضراء)؛ وقُدّمت قائمة «إسرائيل أولًا – برئاسة شيرين هسكل» إلى لجنة الانتخابات بوصفها القائمة رقم 7 (الأحرف المطلوبة י / ר)."
+          ar: "أعلن حزب «إسرائيل أولًا» بزعامة عضوة الكنيست شارين هسكل ترشحًا مشتركًا مع «عاليه يروك» (الورقة الخضراء)؛ وقُدّمت قائمة «إسرائيل أولًا – برئاسة شارين هسكل» إلى لجنة الانتخابات بوصفها القائمة رقم 7 (الأحرف المطلوبة י / ר)."
           ru: "Партия депутата Шарен Хаскель «Израиль прежде всего» объявила о совместном участии в выборах с «Алэ Ярок» («Зелёный лист»); список «Израиль прежде всего — во главе с Шарен Хаскель» подан в ЦИК под номером 7 (запрошенные буквы י / ר)."
           es: "«Israel Primero» de la diputada Sharren Haskel anunció una candidatura conjunta con Ale Yarok; la lista «Israel Primero – encabezada por Sharren Haskel» fue presentada ante la Comisión Electoral como lista n.º 7 (letras solicitadas י / ר)."
           fr: "« Israël d’abord » de la députée Sharren Haskel a annoncé une candidature commune avec Ale Yarok ; la liste « Israël d’abord – menée par Sharren Haskel » a été déposée auprès de la Commission électorale comme liste n° 7 (lettres demandées י / ר)."
@@ -1754,7 +1754,7 @@ profiles:
       note:
         he: "תקווה חדשה - הימין הממלכתי הגישה את רשימת הליכוד במשותף עם הליכוד; גדעון סער במקום השביעי. מיזוג הסיעות בכנסת לא הושלם, וח\"כ שרן השכל, שפרשה מהמפלגה ביולי 2026, מתמודדת בנפרד בראש \"ישראל תחילה\" (רשימה 7)."
         en: "New Hope – The National Right submitted the Likud list jointly with Likud; Gideon Sa’ar is seventh. The factions’ merger in the Knesset was not completed, and MK Sharren Haskel, who left the party in July 2026, runs separately at the head of “Israel First” (list 7)."
-        ar: "قدّم «أمل جديد – اليمين الرسمي» قائمة الليكود بالاشتراك مع الليكود؛ جدعون ساعر في الموقع السابع. لم يكتمل اندماج الكتلتين في الكنيست، وعضوة الكنيست شيرين هسكل، التي غادرت الحزب في تموز/يوليو 2026، تترشح منفردة على رأس «إسرائيل أولًا» (القائمة 7)."
+        ar: "قدّم «أمل جديد – اليمين الرسمي» قائمة الليكود بالاشتراك مع الليكود؛ جدعون ساعر في الموقع السابع. لم يكتمل اندماج الكتلتين في الكنيست، وعضوة الكنيست شارين هسكل، التي غادرت الحزب في تموز/يوليو 2026، تترشح منفردة على رأس «إسرائيل أولًا» (القائمة 7)."
         ru: "«Новая надежда — Государственные правые» подала список Ликуда совместно с Ликудом; Гидеон Саар — седьмой. Слияние фракций в Кнессете не завершено, а депутат Шарен Хаскель, покинувшая партию в июле 2026 года, идёт отдельно во главе списка «Израиль прежде всего» (список 7)."
         es: "Nueva Esperanza – Derecha Nacional presentó la lista del Likud conjuntamente con el Likud; Gideon Sa’ar es séptimo. La fusión de las facciones en la Knéset no se completó, y la diputada Sharren Haskel, que dejó el partido en julio de 2026, se presenta por separado al frente de «Israel Primero» (lista 7)."
         fr: "Nouvel Espoir – Droite étatique a déposé la liste du Likoud conjointement avec le Likoud ; Gideon Sa’ar est septième. La fusion des factions à la Knesset n’a pas été achevée, et la députée Sharren Haskel, qui a quitté le parti en juillet 2026, se présente séparément en tête de « Israël d’abord » (liste 7)."
@@ -1781,7 +1781,7 @@ profiles:
     summary:
       he: מפלגת ימין ממלכתית בראשות גדעון סער.
       en: A right-wing party (“The National Right”) led by Gideon Sa’ar.
-      ar: حزب يميني رسمي بقيادة غدعون ساعر.
+      ar: حزب يميني («اليمين الرسمي») بقيادة جدعون ساعر.
       ru: Государственническая правая партия во главе с Гидеоном Сааром.
       es: "Un partido de derecha («Derecha Nacional») encabezado por Gideon Sa’ar."
       fr: "Un parti de droite (« Droite nationale ») dirigé par Gideon Sa’ar."
@@ -1796,7 +1796,7 @@ profiles:
         - Liberal economics
       ar:
         - "خط يميني أمني إلى جانب احترام مؤسسات الدولة"
-        - "سيادة القانون والرسمية"
+        - "سيادة القانون وتغليب مصلحة الدولة"
         - "اقتصاد ليبرالي"
       ru:
         - "Правая линия с упором на безопасность наряду с уважением к государственным институтам"

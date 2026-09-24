@@ -131,6 +131,14 @@ socio-economic indices by municipality (data.gov.il) for context.
 
 ## Needs a human before launch
 
+- **Disqualifications (from 23 Sep 2026)**: the CEC voted to bar Ra'am, the
+  Joint List, Abu Shehadeh and Cassif (on the site since `4b66df4`); it heard
+  the petitions against the Democrats, Otzma Yehudit and Religious Zionism on
+  24 Sep (outcome not yet published when checked). Follow the Supreme Court
+  appeals (lists may appeal until 29 Sep; candidate bans need the court's
+  approval) and update the four faction pages, the two election cards and
+  `kd-appeals` with each ruling — same sources rule (the outlet's own report,
+  the CEC or the court).
 - **Approved ballot letters** once the CEC publishes its approval notices
   (27 Sep 2026): flip `lettersStatus: requested` → `approved` on each
   `cec:` block in `content/election.yaml` and on `submittedLists`, and drop

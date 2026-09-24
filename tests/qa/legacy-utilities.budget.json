@@ -8,7 +8,7 @@
   "app/[locale]/committees/page.tsx": 1,
   "app/[locale]/compare/ComparePicker.tsx": 2,
   "app/[locale]/compare/page.tsx": 5,
-  "app/[locale]/elections/page.tsx": 14,
+  "app/[locale]/elections/page.tsx": 10,
   "app/[locale]/glossary/GlossaryBrowser.tsx": 5,
   "app/[locale]/lawbook/page.tsx": 2,
   "app/[locale]/laws/LawFilters.tsx": 2,

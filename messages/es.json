@@ -439,7 +439,19 @@
     "cecSourceLine": "Fuente: las páginas de las listas en el sitio de la Comisión Electoral Central (gov.il).",
     "colCandidates": "Candidatos",
     "rosterCount": "{n, plural, one {# candidato} other {# candidatos}}",
-    "rosterAll": "Los {n} candidatos en la página de la lista en la Comisión Electoral ↗"
+    "rosterAll": "Los {n} candidatos en la página de la lista en la Comisión Electoral ↗",
+    "officialSite": "Sitio oficial",
+    "promises": "Qué prometen",
+    "promisesNone": "No se encontraron compromisos en el sitio de la lista ni en su programa",
+    "promisesRule": "Cada tarjeta muestra el sitio oficial de la lista y los primeros compromisos que ella misma destaca allí o en su programa, en su propio orden, sin selección nuestra.",
+    "historyLink": "Elecciones anteriores a la Knéset",
+    "logoAlt": "Logotipo de {name}",
+    "logoCredit": "Logotipo",
+    "listFaction": "Su facción en la 25.ª Knéset",
+    "listPollsNone": "Aún no aparece en los sondeos de escaños",
+    "listSeats": "Escaños",
+    "listCompass": "Su postura ante las afirmaciones de la brújula electoral",
+    "listAllUpdates": "Toda la actualidad en la página de la facción"
   },
   "electionsHistory": {
     "title": "Historial de elecciones a la Knéset",

@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { navItems } from "@/components/nav-items";
 import { locales } from "@/i18n/routing";
 import { getSitemapEntityIds } from "@/lib/queries";
+import { getRunningLists } from "@/lib/content";
 
 // Set NEXT_PUBLIC_SITE_URL to the production origin (no trailing slash) once a
 // domain exists; until then the sitemap self-references localhost, which is
@@ -30,6 +31,8 @@ export default async function sitemap(props: { id: Promise<string> }): Promise<M
     { path: "/sources", priority: 0.5 },
     { path: "/accessibility", priority: 0.3 },
     { path: "/legislators", priority: 0.6 },
+    { path: "/elections/history", priority: 0.5 },
+    ...[...getRunningLists().keys()].map((slug) => ({ path: `/elections/${slug}`, priority: 0.7 })),
     ...members.map((id) => ({ path: `/members/${id}`, priority: 0.7 })),
     ...parties.map((id) => ({ path: `/parties/${id}`, priority: 0.7 })),
     ...committees.map((id) => ({ path: `/committees/${id}`, priority: 0.5 })),

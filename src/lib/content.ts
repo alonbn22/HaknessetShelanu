@@ -634,6 +634,24 @@ const electionPartySchema = z.object({
   // Chart colour for lists with no sitting faction (sitting factions use
   // content/factions.yaml). Party colour appears only where a list is the subject.
   color: z.string().regex(/^#[0-9a-f]{6}$/i).optional(),
+  // The list's own website, and what it promises: the first commitments it
+  // headlines there or in its platform, in its own order — chosen by that rule,
+  // never by us. Absent = none published.
+  website: httpUrl.optional(),
+  // The list's official logo — a Wikimedia Commons file (the one image host the
+  // CSP allows) or a copy in /public — always credited to where it came from.
+  logo: z
+    .object({
+      src: z.string().regex(/^(https:\/\/upload\.wikimedia\.org\/|\/assets\/)/, "logo src: Commons or /assets"),
+      source: z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() }),
+    })
+    .optional(),
+  promises: z
+    .object({
+      items: z.array(localizedText).min(1).max(4),
+      source: z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() }),
+    })
+    .optional(),
   sources: z
     .array(z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() }))
     .min(1, "every party entry must cite at least one source"),

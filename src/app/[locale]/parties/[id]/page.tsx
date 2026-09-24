@@ -87,7 +87,7 @@ export default async function PartyPage({
   const submittedBy2026 = cec?.submittedBy ?? e2026Row?.submittedBy ?? [];
   const approvalDate = outlook?.keyDates?.find((d) => d.key === "kd-approval")?.date;
   const approvalText = approvalDate ? formatDate(approvalDate, locale) : "";
-  const listAnchor = e2026?.slug ? `/elections#list-${e2026.slug}` : "/elections#all-lists";
+  const listAnchor = e2026?.slug ? `/elections/${e2026.slug}` : "/elections#all-lists";
   const updates = [...(profile?.updates ?? [])].sort((a, b) => (a.date < b.date ? 1 : -1));
   const leaderMatches =
     electionParty?.leader?.he?.trim() === profile?.leaderHe?.trim();

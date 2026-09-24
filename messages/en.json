@@ -439,7 +439,19 @@
     "cecSourceLine": "Source: the lists’ pages on the Central Elections Committee site (gov.il).",
     "colCandidates": "Candidates",
     "rosterCount": "{n, plural, one {# candidate} other {# candidates}}",
-    "rosterAll": "All {n} candidates on the list's page at the CEC ↗"
+    "rosterAll": "All {n} candidates on the list's page at the CEC ↗",
+    "officialSite": "Official site",
+    "promises": "What they promise",
+    "promisesNone": "No commitments found on the list's site or in its platform",
+    "promisesRule": "Each card shows the list's official site and the first commitments it headlines there or in its platform, in its own order — not chosen by us.",
+    "historyLink": "Past Knesset elections",
+    "logoAlt": "Logo of {name}",
+    "logoCredit": "Logo",
+    "listFaction": "Its faction in the 25th Knesset",
+    "listPollsNone": "Not in the seat polls yet",
+    "listSeats": "Seats",
+    "listCompass": "Where it stands on the election compass statements",
+    "listAllUpdates": "All developments on the faction page"
   },
   "electionsHistory": {
     "title": "Knesset Elections History",

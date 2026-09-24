@@ -447,7 +447,7 @@ const glossaryTermSchema = z.object({
   category: z.enum(GLOSSARY_CATEGORIES),
   term: localizedText,
   def: localizedText,
-  sourceUrl: httpUrl.optional(), // for entries stating specific legal figures/rules
+  sourceUrl: httpUrl, // every term cites a trusted source — Wikipedia is an index, never the source
 });
 export type GlossaryTerm = z.infer<typeof glossaryTermSchema>;
 

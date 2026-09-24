@@ -164,10 +164,6 @@ socio-economic indices by municipality (data.gov.il) for context.
   19 Sep 2026 from the faction verification pass), and the elections/quiz
   figures.
 
-- **Glossary sources**: 75 of the 76 glossary entries that carry a
-  `sourceUrl` point at Wikipedia, which the site's own rule treats as an index
-  only. Replace them with primary sources (the Knesset lexicon, the laws
-  themselves, the CEC) — the definitions are general, but the rule is the rule.
 - **es/fr data text fills lazily**: the gtx endpoint was rate-limited on
   19–20 Sep, so vote titles and the per-poll "below threshold" notes
   (`belowThresholdNote`, the outlet's own Hebrew wording) still render as
@@ -176,6 +172,12 @@ socio-economic indices by municipality (data.gov.il) for context.
 
 ## Done (recent)
 
+- **Every glossary term sourced (24 Sep 2026)**: all 113 terms cite a trusted
+  page (Knesset lexicon and laws, gov.il, CEC, CBS, IDI, UN, IMF, ICRC,
+  Britannica, SEP) — no Wikipedia; `sourceUrl` is now required and a test bars
+  Wikipedia. Six definitions corrected against their sources (coalition,
+  biennial budget, the religion-and-state status quo, ceasefire/armistice, GDP
+  "final" goods, a dissolved Knesset serving until the new one meets).
 - **Arabic and Russian everywhere (22 Sep 2026, `79c1a3c`…`d79668e`)**: every
   editorial string in `content/` — 1,082 of them — is now in all six
   languages; `tests/qa/content-languages.test.ts` fails on any gap, so a new

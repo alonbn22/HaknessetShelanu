@@ -29,6 +29,10 @@ test("glossary includes the Norwegian Law term", () => {
   assert.ok(found, "Norwegian Law term should exist in the glossary");
 });
 
+test("every glossary term cites a source that is not Wikipedia", () => {
+  for (const t of getGlossary()) assert.ok(!/wikipedia\.org/.test(t.sourceUrl), `${t.term.en}: Wikipedia is an index, not a source`);
+});
+
 // Editorial text that falls back to another language: `dir` is set only when
 // the fallback's direction differs from the page's. English on a Russian,
 // Spanish or French page is a language change, not a direction change — a

@@ -71,6 +71,21 @@ keyDates:
       - url: "https://ch10.co.il/news/1100694/"
         title: "הרשימות נסגרו: מי יהיו 120 הח\"כים?"
         publisher: "חרדים10"
+  - key: kd-appeals
+    date: "2026-09-29"
+    label: { he: "מועד אחרון לערעור על פסילת רשימה", en: "Last day to appeal a list's disqualification", ar: "آخر موعد للاستئناف على شطب قائمة", ru: "Последний день обжалования отстранения списка", es: "Último día para recurrir la inhabilitación de una lista", fr: "Dernier jour pour contester l’invalidation d’une liste" }
+    detail:
+      he: "רשימה שוועדת הבחירות המרכזית פסלה רשאית לערער לבית המשפט העליון עד 29 בספטמבר 2026; פסילת מועמד מועברת לאישור בית המשפט. פסיקת בית המשפט סופית, והרשימות המאושרות הסופיות מתפרסמות עד 18 באוקטובר 2026."
+      en: "A list the Central Elections Committee disqualified may appeal to the Supreme Court until September 29, 2026; a candidate's disqualification goes to the court for approval. The court's ruling is final, and the final approved lists are published by October 18, 2026."
+      ar: "يحق للقائمة التي شطبتها لجنة الانتخابات المركزية الاستئناف إلى المحكمة العليا حتى 29 أيلول/سبتمبر 2026؛ ويُحال شطب المرشح إلى المحكمة للمصادقة. وقرار المحكمة نهائي، وتُنشر القوائم المصادَق عليها النهائية حتى 18 تشرين الأول/أكتوبر 2026."
+      ru: "Список, отстранённый Центральной избирательной комиссией, может обжаловать решение в Верховном суде до 29 сентября 2026 года; отстранение кандидата передаётся суду на утверждение. Решение суда окончательно, а итоговые утверждённые списки публикуются до 18 октября 2026 года."
+      es: "Una lista inhabilitada por la Comisión Electoral Central puede recurrir ante el Tribunal Supremo hasta el 29 de septiembre de 2026; la inhabilitación de un candidato pasa al tribunal para su aprobación. El fallo del tribunal es definitivo, y las listas aprobadas definitivas se publican a más tardar el 18 de octubre de 2026."
+      fr: "Une liste invalidée par la Commission électorale centrale peut faire appel devant la Cour suprême jusqu’au 29 septembre 2026 ; l’invalidation d’un candidat est soumise à l’approbation de la Cour. La décision de la Cour est définitive, et les listes définitivement approuvées sont publiées au plus tard le 18 octobre 2026."
+    status: confirmed
+    sources:
+      - url: "https://www.gov.il/en/pages/candidates-lists-26"
+        title: "Lists of Candidates — disqualification and appeal timetable (updated 3 Sep 2026)"
+        publisher: "ועדת הבחירות המרכזית"
   - key: kd-voter-notice
     date: "2026-10-06"
     label: { he: "משלוח הודעה לבוחר", en: "Voter notices are sent", ar: "إرسال بطاقات الإعلام للناخبين", ru: "Рассылка уведомлений избирателям", es: "Envío de los avisos a los votantes", fr: "Envoi des avis aux électeurs" }
@@ -762,12 +777,12 @@ parties:
     leaderPersonId: 30713
     factionId: 1099
     note:
-      he: "הוגשה ב-7 בספטמבר 2026; יואב סגלוביץ', לשעבר חבר הכנסת מטעם יש עתיד, במקום השני."
-      en: "Submitted September 7, 2026; Yoav Segalovitz, formerly a Yesh Atid MK, is second."
-      ar: "قُدّمت في 7 أيلول/سبتمبر 2026؛ يوآف سيغالوفيتش، عضو الكنيست السابق عن يش عتيد، في الموقع الثاني."
-      ru: "Подан 7 сентября 2026 года; Йоав Сегалович, бывший депутат от «Еш Атид», — второй."
-      es: "Presentada el 7 de septiembre de 2026; Yoav Segalovitz, exdiputado de Yesh Atid, es segundo."
-      fr: "Déposée le 7 septembre 2026 ; Yoav Segalovitz, ancien député de Yesh Atid, est deuxième."
+      he: "הוגשה ב-7 בספטמבר 2026; יואב סגלוביץ', לשעבר חבר הכנסת מטעם יש עתיד, במקום השני. ב-23 בספטמבר 2026 החליטה ועדת הבחירות המרכזית (18 נגד 5) לפסול את הרשימה; רע\"ם דוחה את הטענות ורשאית לערער לבית המשפט העליון עד 29 בספטמבר."
+      en: "Submitted September 7, 2026; Yoav Segalovitz, formerly a Yesh Atid MK, is second. On September 23, 2026 the Central Elections Committee voted 18–5 to disqualify the list; Ra'am rejects the allegations and may appeal to the Supreme Court until September 29."
+      ar: "قُدّمت في 7 أيلول/سبتمبر 2026؛ يوآف سيغالوفيتش، عضو الكنيست السابق عن يش عتيد، في الموقع الثاني. في 23 أيلول/سبتمبر 2026 قرّرت لجنة الانتخابات المركزية (18 مقابل 5) شطب القائمة؛ وترفض القائمة الموحدة الادعاءات ويحق لها الاستئناف إلى المحكمة العليا حتى 29 أيلول/سبتمبر."
+      ru: "Подан 7 сентября 2026 года; Йоав Сегалович, бывший депутат от «Еш Атид», — второй. 23 сентября 2026 года Центральная избирательная комиссия (18 против 5) отстранила список; РААМ отвергает обвинения и может обжаловать решение в Верховном суде до 29 сентября."
+      es: "Presentada el 7 de septiembre de 2026; Yoav Segalovitz, exdiputado de Yesh Atid, es segundo. El 23 de septiembre de 2026 la Comisión Electoral Central votó 18 a 5 inhabilitar la lista; Ra'am rechaza las acusaciones y puede recurrir ante el Tribunal Supremo hasta el 29 de septiembre."
+      fr: "Déposée le 7 septembre 2026 ; Yoav Segalovitz, ancien député de Yesh Atid, est deuxième. Le 23 septembre 2026, la Commission électorale centrale a voté par 18 voix contre 5 l’invalidation de la liste ; Ra'am rejette les accusations et peut faire appel devant la Cour suprême jusqu’au 29 septembre."
     candidates:
       - { he: "מנסור עבאס", personId: 30713 }
       - { he: "יואב סגלוביץ'", personId: 30695 }
@@ -780,6 +795,8 @@ parties:
       - { he: "עבד אל כרים עזאם" }
       - { he: "אבראהים אבו לבן" }
     sources:
+      - { url: "https://www.timesofisrael.com/election-panel-votes-to-bar-balad-chief-abu-shehadeh-over-alleged-support-for-terror/", title: "Election panel votes on the Ra'am and Joint List slates and on Abu Shehadeh and Cassif (23 Sep 2026)", publisher: "The Times of Israel" }
+      - { url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-909454", title: "Central Elections Committee decision on Ra'am and the Joint List (23 Sep 2026)", publisher: "The Jerusalem Post" }
       - { url: "https://www.gov.il/he/pages/raam_list18", title: "רע\"ם - הרשימה הערבית המאוחדת — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
@@ -799,12 +816,12 @@ parties:
     leaderWiki: "https://en.wikipedia.org/wiki/Yousef_Jabareen"
     factionId: 1103
     note:
-      he: "חד\"ש, תע\"ל ובל\"ד רצות שוב ברשימה אחת: ג'בארין בראשה, אחמד טיבי (תע\"ל) במקום השני וסאמי אבו שחאדה (בל\"ד) בשלישי."
-      en: "Hadash, Ta'al and Balad run again on one list: Jabareen leads, Ahmad Tibi (Ta'al) is second and Sami Abu Shehadeh (Balad) third."
-      ar: "الجبهة والعربية للتغيير والتجمع تترشح مجددًا في قائمة واحدة: جبارين في رأسها، وأحمد الطيبي (العربية للتغيير) ثانيًا، وسامي أبو شحادة (التجمع) ثالثًا."
-      ru: "«Хадаш», «Тааль» и «Балад» снова идут одним списком: во главе Джабарин, Ахмад Тиби («Тааль») — второй, Сами Абу Шехаде («Балад») — третий."
-      es: "Hadash, Ta'al y Balad vuelven a presentarse en una sola lista: Jabareen la encabeza, Ahmad Tibi (Ta'al) es segundo y Sami Abu Shehadeh (Balad) tercero."
-      fr: "Hadash, Ta'al et Balad se présentent de nouveau sur une seule liste : Jabareen en tête, Ahmad Tibi (Ta'al) deuxième et Sami Abu Shehadeh (Balad) troisième."
+      he: "חד\"ש, תע\"ל ובל\"ד רצות שוב ברשימה אחת: ג'בארין בראשה, אחמד טיבי (תע\"ל) במקום השני וסאמי אבו שחאדה (בל\"ד) בשלישי. ב-23 בספטמבר 2026 החליטה ועדת הבחירות המרכזית (18 נגד 5) לפסול את הרשימה, ובנפרד את המועמדים סאמי אבו שחאדה ועופר כסיף; הם דוחים את הטענות. הרשימה רשאית לערער לבית המשפט העליון עד 29 בספטמבר, ופסילת מועמד טעונה את אישורו."
+      en: "Hadash, Ta'al and Balad run again on one list: Jabareen leads, Ahmad Tibi (Ta'al) is second and Sami Abu Shehadeh (Balad) third. On September 23, 2026 the Central Elections Committee voted 18–5 to disqualify the list and, separately, the candidates Sami Abu Shehadeh and Ofer Cassif; they reject the allegations. The list may appeal to the Supreme Court until September 29, and a candidate's disqualification needs the court's approval."
+      ar: "الجبهة والعربية للتغيير والتجمع تترشح مجددًا في قائمة واحدة: جبارين في رأسها، وأحمد الطيبي (العربية للتغيير) ثانيًا، وسامي أبو شحادة (التجمع) ثالثًا. في 23 أيلول/سبتمبر 2026 قرّرت لجنة الانتخابات المركزية (18 مقابل 5) شطب القائمة، وبشكل منفصل المرشحَين سامي أبو شحادة وعوفر كسيف؛ وهم يرفضون الادعاءات. ويحق للقائمة الاستئناف إلى المحكمة العليا حتى 29 أيلول/سبتمبر، ويتطلب شطب المرشح مصادقة المحكمة."
+      ru: "«Хадаш», «Тааль» и «Балад» снова идут одним списком: во главе Джабарин, Ахмад Тиби («Тааль») — второй, Сами Абу Шехаде («Балад») — третий. 23 сентября 2026 года Центральная избирательная комиссия (18 против 5) отстранила список, а отдельно — кандидатов Сами Абу Шехаде и Офера Касифа; они отвергают обвинения. Список может обжаловать решение в Верховном суде до 29 сентября, а отстранение кандидата требует утверждения суда."
+      es: "Hadash, Ta'al y Balad vuelven a presentarse en una sola lista: Jabareen la encabeza, Ahmad Tibi (Ta'al) es segundo y Sami Abu Shehadeh (Balad) tercero. El 23 de septiembre de 2026 la Comisión Electoral Central votó 18 a 5 inhabilitar la lista y, por separado, a los candidatos Sami Abu Shehadeh y Ofer Cassif, que rechazan las acusaciones. La lista puede recurrir ante el Tribunal Supremo hasta el 29 de septiembre, y la inhabilitación de un candidato requiere la aprobación del tribunal."
+      fr: "Hadash, Ta'al et Balad se présentent de nouveau sur une seule liste : Jabareen en tête, Ahmad Tibi (Ta'al) deuxième et Sami Abu Shehadeh (Balad) troisième. Le 23 septembre 2026, la Commission électorale centrale a voté par 18 voix contre 5 l’invalidation de la liste et, séparément, celle des candidats Sami Abu Shehadeh et Ofer Cassif, qui rejettent les accusations. La liste peut faire appel devant la Cour suprême jusqu’au 29 septembre, et l’invalidation d’un candidat doit être approuvée par la Cour."
     candidates:
       - { he: "יוסף גבארין" }
       - { he: "אחמד טיבי", personId: 560 }
@@ -827,6 +844,8 @@ parties:
       - { he: "מואייד מיעארי" }
       - { he: "אחמד ג'זאווי גאנם" }
     sources:
+      - { url: "https://www.timesofisrael.com/election-panel-votes-to-bar-balad-chief-abu-shehadeh-over-alleged-support-for-terror/", title: "Election panel votes on the Ra'am and Joint List slates and on Abu Shehadeh and Cassif (23 Sep 2026)", publisher: "The Times of Israel" }
+      - { url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-909454", title: "Central Elections Committee decision on Ra'am and the Joint List (23 Sep 2026)", publisher: "The Jerusalem Post" }
       - { url: "https://www.gov.il/he/pages/hareshima-hameshutefet_list35", title: "הרשימה המשותפת — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }

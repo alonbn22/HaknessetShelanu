@@ -14,7 +14,7 @@
 # Scope: polls published from the day the candidate lists closed (8 September
 # 2026) onward — earlier polls scored lists that no longer exist. Review weekly
 # until the vote and bump lastReviewed.
-lastReviewed: "2026-09-22"
+lastReviewed: "2026-09-24"
 cutoff: "2026-09-08"
 # The legal electoral threshold: 3.25% of valid votes (Knesset Elections Law,
 # amendment of 2014) — ≈4 seats of 120.
@@ -74,6 +74,37 @@ externalAverages:
       reservists: 3.6
       blue-white: 1
 polls:
+  - id: 2026-09-22-n12-midgam
+    published: "2026-09-22"
+    fieldwork: { from: "2026-09-22", to: "2026-09-22" }
+    outlet: { he: "חדשות 12", en: "Channel 12", ar: "القناة 12", ru: "12-й канал", es: "Canal 12", fr: "Chaîne 12" }
+    instituteId: midgam
+    institute: { he: "מדגם ייעוץ ומחקר", en: "Midgam", ar: "مدغام", ru: "«Мидгам»", es: "Midgam", fr: "Midgam" }
+    sample: 501
+    marginOfError: 4.4
+    seats:
+      yashar: 23
+      likud: 20
+      together: 13
+      democrats: 9
+      yisrael-beiteinu: 9
+      utj: 8
+      joint-list: 7
+      shas: 7
+      otzma: 6
+      rz-zehut: 5
+      raam: 5
+      amkha: 4
+      reservists: 4
+    belowThreshold: [blue-white, haredi-public]
+    belowThresholdNote: "כחול לבן 0.7%, הציבור החרדי 0.3%, נעם לישראל 0.1%, ישראל תחילה 0%"
+    blocs:
+      - { label: { he: "הגוש המתנגד לנתניהו", en: "Bloc opposing Netanyahu", ar: "الكتلة المعارضة لنتنياهو", ru: "Блок противников Нетаньяху", es: "Bloque opuesto a Netanyahu", fr: "Bloc opposé à Netanyahou" }, seats: 66 }
+      - { label: { he: "הקואליציה", en: "The coalition", ar: "الائتلاف", ru: "Коалиция", es: "La coalición", fr: "La coalition" }, seats: 50 }
+      - { label: { he: "הגוש השלישי (הנדל וזליכה)", en: "Third bloc (Hendel and Zelekha)", ar: "الكتلة الثالثة (هندل وزليخا)", ru: "Третий блок (Хендель и Зелеха)", es: "Tercer bloque (Hendel y Zelekha)", fr: "Troisième bloc (Hendel et Zelekha)" }, seats: 4 }
+    verification: "all 13 figures, the 4 below-threshold shares and the 3 blocs in the poll article text (22.09.26 21:07, read 24 Sep in the Browser pane); methodology block verbatim: מדגם ייעוץ ומחקר/מנו גבע, 22.9.2026, n=501 of 2,498, ±4.4%, online + phone"
+    sources:
+      - { url: "https://www.mako.co.il/news-israel-elections/2026/Article-fad59e819c9c0a1027.htm", title: "סקר המנדטים של חדשות 12: המפלגה ששוב עוברת את אחוז החסימה והשינויים בתוך הגושים", publisher: "N12" }
   - id: 2026-09-18-maariv-lazar
     published: "2026-09-18"
     fieldwork: { from: "2026-09-16", to: "2026-09-17" }

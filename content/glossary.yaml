@@ -50,7 +50,7 @@ terms:
       he: "עמדות לאומיות נוקשות מאוד, לעיתים עם יחס שלילי למיעוטים או למוסדות. \"קיצוני\" מציין מרחק רב מהמרכז, לא בהכרח אלימות."
       en: "Very hardline nationalist positions, sometimes hostile to minorities or institutions. \"Far\" means far from the center — not necessarily violent."
       ar: "مواقف قومية متشددة جدًا، وأحيانًا مع موقف عدائي من الأقليات أو من المؤسسات. «متطرف» يعني بعيدًا جدًا عن الوسط، وليس بالضرورة عنيفًا."
-      ru: "Очень жёсткие националистические позиции, иногда с враждебным отношением к меньшинствам или институтам. «Ультра» означает далеко от центра — не обязательно насилие."
+      ru: "Очень жёсткие националистические позиции, иногда с враждебным отношением к меньшинствам или институтам. «Ультра» означает большую удалённость от центра, а не обязательно насилие."
       es: Posiciones nacionalistas muy duras, a veces hostiles a las minorías o a las instituciones. «Extrema» indica lejanía del centro — no necesariamente violencia.
       fr: Des positions nationalistes très dures, parfois hostiles aux minorités ou aux institutions. « Extrême » signifie loin du centre — pas nécessairement violent.
     sourceUrl: "https://www.idi.org.il/articles/4580"
@@ -316,7 +316,7 @@ terms:
       he: "הצבעה שמטרתה להפיל את הממשלה. בישראל נדרש \"אי־אמון קונסטרוקטיבי\" — רוב של 61 שתומך בממשלה חלופית."
       en: "A vote aimed at toppling the government. In Israel a \"constructive\" no-confidence is required — 61 MKs backing an alternative government."
       ar: "تصويت يهدف إلى إسقاط الحكومة. في إسرائيل يُشترط «حجب ثقة بنّاء» — 61 عضو كنيست يؤيدون حكومة بديلة."
-      ru: "Голосование с целью свалить правительство. В Израиле требуется «конструктивный» вотум недоверия — 61 депутат должен поддержать альтернативное правительство."
+      ru: "Голосование с целью отправить правительство в отставку. В Израиле требуется «конструктивный» вотум недоверия — 61 депутат должен поддержать альтернативное правительство."
       es: Una votación destinada a derribar al Gobierno. En Israel se exige una censura «constructiva» — 61 diputados que respalden un gobierno alternativo.
       fr: Un vote visant à renverser le gouvernement. En Israël, une censure « constructive » est requise — 61 députés soutenant un gouvernement alternatif.
     sourceUrl: "https://main.knesset.gov.il/About/Lexicon/Pages/NoConfidence.aspx"
@@ -1357,7 +1357,7 @@ terms:
       he: "הסכמה להפסקת הלחימה. הפסקת אש יכולה להיות זמנית או קבועה, מקומית או כללית; \"הפוגה\" ו\"שביתת נשק\" מתארות הסדרים דומים, שבהם הצדדים מסכימים, באופן רשמי או לא רשמי, לעצור את הפעולות הצבאיות."
       en: "An agreement to stop fighting. A ceasefire can be temporary or permanent, local or general; a truce or an armistice describes a similar arrangement in which the sides formally or informally agree to halt military operations."
       ar: "اتفاق على وقف القتال. يمكن أن يكون وقف إطلاق النار مؤقتًا أو دائمًا، محليًا أو شاملًا؛ وتصف «الهدنة المؤقتة» و«اتفاقية الهدنة» ترتيبات مشابهة يتفق فيها الطرفان، رسميًا أو غير رسمي، على وقف العمليات العسكرية."
-      ru: "Договорённость о прекращении боевых действий. Прекращение огня может быть временным или постоянным, местным или общим; «перемирие» и «соглашение о перемирии» описывают похожие договорённости, когда стороны формально или неформально соглашаются остановить военные операции."
+      ru: "Договорённость о прекращении боевых действий. Прекращение огня может быть временным или постоянным, местным или общим; «пауза в боевых действиях» и «перемирие» описывают похожие договорённости, когда стороны формально или неформально соглашаются остановить военные операции."
       es: "Un acuerdo para dejar de combatir. Un alto el fuego puede ser temporal o permanente, local o general; «tregua» y «armisticio» describen arreglos similares en los que las partes acuerdan, formal o informalmente, detener las operaciones militares."
       fr: "Un accord pour cesser les combats. Un cessez-le-feu peut être temporaire ou permanent, local ou général ; « trêve » et « armistice » désignent des arrangements semblables, par lesquels les parties conviennent, formellement ou non, d’arrêter les opérations militaires."
     sourceUrl: "https://peacemaker.un.org/sites/default/files/document/files/2022/11/ceasefire-guidance-2022-0.pdf"

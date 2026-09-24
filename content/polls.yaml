@@ -31,7 +31,7 @@ notEntered:
       he: "הסקר שודר במהדורה המרכזית בלבד. האתר מזין מספרים רק מפרסום כתוב או גרפי של הגוף המפרסם שאפשר לקשר אליו ולקרוא שוב (כתבה, אינפוגרפיקה, תרשים) — לא מפריים של שידור; לא נמצא פרסום כזה של הערוץ או המכון."
       en: "Broadcast only in the main news edition. The site enters figures only from a written or graphic publication by the outlet that can be linked and re-read (an article, an infographic, a chart) — not from a frame of a broadcast; no such publication by the channel or the institute was found."
       ar: "بُثّ في نشرة الأخبار الرئيسية فقط. يُدخل الموقع الأرقام فقط من منشور مكتوب أو رسومي للجهة الناشرة يمكن ربطه وإعادة قراءته (مقال، إنفوغرافيك، رسم بياني) — لا من لقطة بث؛ لم يُعثر على منشور كهذا من القناة أو المعهد."
-      ru: "Показан только в основном выпуске новостей. Сайт вносит цифры только из письменной или графической публикации издания, на которую можно сослаться и перечитать (статья, инфографика, диаграмма), а не из кадра эфира; такой публикации канала или института не найдено."
+      ru: "Показан только в основном выпуске новостей. Сайт вносит цифры только из письменной или графической публикации издания, которую можно открыть по ссылке и перечитать (статья, инфографика, диаграмма), а не из кадра эфира; такой публикации канала или института не найдено."
       es: "Emitida solo en la edición principal del informativo. El sitio introduce cifras únicamente a partir de una publicación escrita o gráfica del medio que se pueda enlazar y releer (un artículo, una infografía, un gráfico) — no a partir de un fotograma de una emisión; no se encontró ninguna publicación de ese tipo del canal ni del instituto."
       fr: "Diffusé uniquement dans l’édition principale du journal. Le site ne saisit des chiffres qu’à partir d’une publication écrite ou graphique du média, vers laquelle on peut faire un lien et que l’on peut relire (un article, une infographie, un graphique) — pas d’une capture d’émission ; aucune publication de ce type de la chaîne ou de l’institut n’a été trouvée."
   - published: "2026-09-16"
@@ -133,7 +133,7 @@ polls:
       - { label: { he: "גוש הקואליציה", en: "Coalition bloc", ar: "كتلة الائتلاف", ru: "Коалиционный блок", es: "Bloque de la coalición", fr: "Bloc de la coalition" }, seats: 50 }
       - { label: { he: "האופוזיציה הציונית ללא הנדל וזליכה", en: "Zionist opposition without Hendel and Zelekha", ar: "المعارضة الصهيونية دون هندل وزليخا", ru: "Сионистская оппозиция без Хенделя и Зелехи", es: "Oposición sionista sin Hendel y Zelekha", fr: "Opposition sioniste sans Hendel et Zelekha" }, seats: 54 }
       - { label: { he: "המפלגות הערביות", en: "Arab parties", ar: "الأحزاب العربية", ru: "Арабские партии", es: "Partidos árabes", fr: "Partis arabes" }, seats: 12 }
-      - { label: { he: "המילואימניקים והכלכלית", en: "Reservists–Economic list", ar: "قائمة الاحتياط والاقتصادي", ru: "Список «Резервисты — Экономическая»", es: "Lista Reservistas–Económica", fr: "Liste Réservistes–Économique" }, seats: 4 }
+      - { label: { he: "המילואימניקים והכלכלית", en: "Reservists–Economic list", ar: "قائمة الاحتياط والاقتصادي", ru: "Список «Резервисты и Экономическая партия»", es: "Lista Reservistas–Económica", fr: "Liste Réservistes–Économique" }, seats: 4 }
     verification: "all 13 figures in the article's own list line and 3 blocs in the text (18/09/2026 06:00); methodology verbatim: 16–17 Sep, 4,089 asked, 600 respondents (15%), 18+, Jews and Arabs, ±4%; לזר מחקרים/ד\"ר מנחם לזר with Panel4ALL. Also indexed by themadad.com (18/09/2026, סוקר: מנחם לזר)"
     sources:
       - { url: "https://www.maariv.co.il/news/politics/article-1368599", title: "סקר מנדטים של מעריב | השפל הגדול של הליכוד נמשך: נתניהו קיבל בשורה רעה לקראת הבחירות", publisher: "מעריב" }
@@ -547,7 +547,7 @@ polls:
       - { label: { he: "גוש נתניהו", en: "Netanyahu bloc", ar: "كتلة نتنياهو", ru: "Блок Нетаньяху", es: "Bloque de Netanyahu", fr: "Bloc Netanyahou" }, seats: 52 }
       - { label: { he: "גוש איזנקוט", en: "Eisenkot bloc", ar: "كتلة آيزنكوت", ru: "Блок Айзенкота", es: "Bloque de Eisenkot", fr: "Bloc Eisenkot" }, seats: 52 }
       - { label: { he: "המפלגות הערביות", en: "Arab parties", ar: "الأحزاب العربية", ru: "Арабские партии", es: "Partidos árabes", fr: "Partis arabes" }, seats: 12 }
-      - { label: { he: "המילואימניקים-הכלכלית", en: "Reservists–Economic", ar: "الاحتياط والاقتصادي", ru: "«Резервисты — Экономическая»", es: "Reservistas–Económica", fr: "Réservistes–Économique" }, seats: 4 }
+      - { label: { he: "המילואימניקים-הכלכלית", en: "Reservists–Economic", ar: "الاحتياط والاقتصادي", ru: "«Резервисты и Экономическая партия»", es: "Reservistas–Económica", fr: "Réservistes–Économique" }, seats: 4 }
     verification: "all 13 figures and 4 blocs in the article text (9.9.26); methodology verbatim: 9.9.2026, Kantar, 2,300 invited, 554 respondents 18+, internet sample incl. Arab sector, ±4.2%"
     sources:
       - { url: "https://www.kan.org.il/content/kan-news/politic/1098105/", title: "הסקר הראשון אחרי סגירת הרשימות: איזנקוט ונתניהו מתחזקים, תיקו בין הגושים", publisher: "כאן חדשות" }
@@ -638,7 +638,7 @@ polls:
       - { label: { he: "הקואליציה של נתניהו", en: "Netanyahu's coalition", ar: "ائتلاف نتنياهو", ru: "Коалиция Нетаньяху", es: "La coalición de Netanyahu", fr: "La coalition de Netanyahou" }, seats: 47 }
       - { label: { he: "האופוזיציה הציונית", en: "Zionist opposition", ar: "المعارضة الصهيونية", ru: "Сионистская оппозиция", es: "Oposición sionista", fr: "Opposition sioniste" }, seats: 57 }
       - { label: { he: "המפלגות הערביות", en: "Arab parties", ar: "الأحزاب العربية", ru: "Арабские партии", es: "Partidos árabes", fr: "Partis arabes" }, seats: 12 }
-      - { label: { he: "המילואימניקים והכלכלית", en: "Reservists–Economic slate", ar: "قائمة الاحتياط والاقتصادي", ru: "Список «Резервисты — Экономическая»", es: "Lista Reservistas–Económica", fr: "Liste Réservistes–Économique" }, seats: 4 }
+      - { label: { he: "המילואימניקים והכלכלית", en: "Reservists–Economic slate", ar: "قائمة الاحتياط والاقتصادي", ru: "Список «Резервисты и Экономическая партия»", es: "Lista Reservistas–Económica", fr: "Liste Réservistes–Économique" }, seats: 4 }
     note: "fieldwork 7–8 Sep straddled the close of list submission (8 Sep, 22:00); the outlet itself notes further fluctuation was possible"
     verification: "all 12 figures and 4 blocs in the Jerusalem Post report by Maariv's polls correspondent Moshe Cohen (same publishing group; published 8 Sep 13:47); methodology verbatim: 7–8 Sep, 4,052 invited, 600 responded (15%), 18+, Jews and Arabs, ±4%; Lazar Research/Dr. Menahem Lazar with Panel4ALL"
     sources:

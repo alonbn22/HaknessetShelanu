@@ -39,7 +39,7 @@ keyDates:
       he: "38 רשימות הוגשו ליו\"ר ועדת הבחירות המרכזית, השופט נעם סולברג, במשכן הכנסת ב-7–8 בספטמבר 2026. ההגשה אינה אישור: הרשימות, הכינויים והאותיות נבדקים כעת."
       en: "38 lists were submitted to the chair of the Central Elections Committee, Justice Noam Sohlberg, at the Knesset on September 7–8, 2026. Submission is not approval: the lists, names and ballot letters are now under review."
       ar: "قُدّمت 38 قائمة إلى رئيس لجنة الانتخابات المركزية، القاضي نوعم سولبرغ، في الكنيست في 7–8 أيلول/سبتمبر 2026. التقديم ليس مصادقة: القوائم والأسماء وأحرف بطاقات الاقتراع قيد الفحص الآن."
-      ru: "38 списков были поданы председателю Центральной избирательной комиссии судье Ноаму Сольбергу в Кнессете 7–8 сентября 2026 года. Подача — ещё не утверждение: списки, имена и буквы бюллетеней сейчас проверяются."
+      ru: "38 списков были поданы председателю Центральной избирательной комиссии судье Ноаму Сольбергу в Кнессете 7–8 сентября 2026 года. Подача — ещё не утверждение: списки, их названия и буквы бюллетеней сейчас проверяются."
       es: "Se presentaron 38 listas ante el presidente de la Comisión Electoral Central, el juez Noam Sohlberg, en la Knéset los días 7 y 8 de septiembre de 2026. Presentar no es aprobar: las listas, los nombres y las letras de papeleta están ahora en revisión."
       fr: "38 listes ont été déposées auprès du président de la Commission électorale centrale, le juge Noam Sohlberg, à la Knesset les 7 et 8 septembre 2026. Le dépôt ne vaut pas approbation : les listes, les noms et les lettres de bulletin sont en cours d’examen."
     status: confirmed
@@ -103,7 +103,7 @@ keyDates:
         publisher: "ועדת הבחירות המרכזית"
   - key: kd-broadcasts
     date: "2026-10-13"
-    label: { he: "תחילת תשדירי הבחירות בטלוויזיה וברדיו", en: "Election broadcasts begin on TV and radio", ar: "بدء البث الانتخابي في التلفزيون والإذاعة", ru: "Начало предвыборных передач на телевидении и радио", es: "Comienzan los espacios electorales en televisión y radio", fr: "Début des émissions électorales à la télévision et à la radio" }
+    label: { he: "תחילת תשדירי הבחירות בטלוויזיה וברדיו", en: "Election broadcasts begin on TV and radio", ar: "بدء البث الانتخابي في التلفزيون والإذاعة", ru: "Начало трансляции предвыборных роликов на телевидении и радио", es: "Comienzan los espacios electorales en televisión y radio", fr: "Début des émissions électorales à la télévision et à la radio" }
     status: confirmed
     sources:
       - url: "https://www.bechirot.gov.il/home/"
@@ -179,7 +179,7 @@ keyDates:
         publisher: "i24NEWS"
   - key: kd-convene
     date: "2026-11-10"
-    label: { he: "כינוס הכנסת ה-26", en: "The 26th Knesset convenes", ar: "انعقاد الكنيست الـ26", ru: "Созыв Кнессета 26-го созыва", es: "Se constituye la 26.ª Knéset", fr: "La 26e Knesset se réunit" }
+    label: { he: "כינוס הכנסת ה-26", en: "The 26th Knesset convenes", ar: "انعقاد الكنيست الـ26", ru: "Первое заседание Кнессета 26-го созыва", es: "Se constituye la 26.ª Knéset", fr: "La 26e Knesset se réunit" }
     detail:
       he: "ישיבתה הראשונה של הכנסת ה-26 צפויה ב-10 בנובמבר 2026; לאחר מכן מתחיל תהליך הרכבת הממשלה."
       en: "The 26th Knesset's first sitting is expected on November 10, 2026; government formation begins thereafter."
@@ -276,7 +276,7 @@ facts:
       he: "38 רשימות הוגשו ליו\"ר ועדת הבחירות המרכזית, השופט נעם סולברג, במשכן הכנסת. ההגשה אינה אישור: הרשימות, הכינויים והאותיות נבדקים, והאישור הסופי דווח ל-27 בספטמבר."
       en: "38 lists were submitted to the chair of the Central Elections Committee, Justice Noam Sohlberg, at the Knesset. Submission is not approval: the lists, names and ballot letters are under review, with final approval reported for September 27."
       ar: "قُدّمت 38 قائمة إلى رئيس لجنة الانتخابات المركزية، القاضي نوعم سولبرغ، في الكنيست. التقديم ليس مصادقة: القوائم والأسماء وأحرف بطاقات الاقتراع قيد الفحص، ووفق التقارير فإن المصادقة النهائية في 27 أيلول/سبتمبر."
-      ru: "38 списков были поданы председателю ЦИК судье Ноаму Сольбергу в Кнессете. Подача — ещё не утверждение: списки, имена и буквы бюллетеней проверяются; по сообщениям СМИ, окончательное утверждение — 27 сентября."
+      ru: "38 списков были поданы председателю ЦИК судье Ноаму Сольбергу в Кнессете. Подача — ещё не утверждение: списки, их названия и буквы бюллетеней проверяются; по сообщениям СМИ, окончательное утверждение — 27 сентября."
       es: "Se presentaron 38 listas ante el presidente de la Comisión Electoral Central, el juez Noam Sohlberg, en la Knéset. Presentar no es aprobar: las listas, los nombres y las letras de papeleta están en revisión, y la aprobación definitiva está prevista, según informaciones, para el 27 de septiembre."
       fr: "38 listes ont été déposées auprès du président de la Commission électorale centrale, le juge Noam Sohlberg, à la Knesset. Le dépôt ne vaut pas approbation : les listes, les noms et les lettres de bulletin sont en cours d’examen, l’approbation définitive étant annoncée pour le 27 septembre."
     status: confirmed
@@ -309,7 +309,7 @@ facts:
         title: "ועדת הבחירות המרכזית לכנסת"
         publisher: "gov.il"
   - key: results-timeline
-    label: { he: "תוצאות וכינוס הכנסת", en: "Results & convening", ar: "النتائج والانعقاد", ru: "Результаты и созыв", es: "Resultados y constitución", fr: "Résultats et installation" }
+    label: { he: "תוצאות וכינוס הכנסת", en: "Results & convening", ar: "النتائج والانعقاد", ru: "Результаты и первое заседание Кнессета", es: "Resultados y constitución", fr: "Résultats et installation" }
     detail:
       he: "לפי דיווחים, התוצאות הרשמיות צפויות עד 4 בנובמבר 2026 (שמונה ימים אחרי הבחירות), ערעורים עד 18 בנובמבר, וישיבתה הראשונה של הכנסת ה-26 צפויה ב-10 בנובמבר 2026."
       en: "Per reports, official results are expected by November 4, 2026 (eight days after the election), appeals by November 18, and the 26th Knesset's first sitting is expected on November 10, 2026."
@@ -452,7 +452,7 @@ parties:
       he: "הוגשה ב-7 בספטמבר 2026. ברשימה, בין השאר, ראש השב\"כ לשעבר יורם כהן (2), אורית פרקש-הכהן (3), מתן כהנא (5) וחילי טרופר (6), שהוכרז קודם לכן במסגרת ברית עם יועז הנדל."
       en: "Submitted September 7, 2026. The list includes former Shin Bet chief Yoram Cohen (2), Orit Farkash-Hacohen (3), Matan Kahana (5) and Hili Tropper (6), previously announced in an alliance with Yoaz Hendel."
       ar: "قُدّمت في 7 أيلول/سبتمبر 2026. تضم القائمة رئيس الشاباك السابق يورام كوهين (2)، وأوريت فركاش هكوهين (3)، ومتان كهانا (5)، وحيلي تروبر (6) الذي أُعلن سابقًا ضمن تحالف مع يوعاز هندل."
-      ru: "Подан 7 сентября 2026 года. В списке — бывший глава ШАБАК Йорам Коэн (2), Орит Фаркаш-Ха-Коэн (3), Матан Кахана (5) и Хили Тропер (6), ранее объявленный в союзе с Йоазом Хенделем."
+      ru: "Подан 7 сентября 2026 года. В списке — бывший глава ШАБАК Йорам Коэн (2), Орит Фаркаш-Ха-Коэн (3), Матан Кахана (5) и Хили Тропер (6), о союзе которого с Йоазом Хенделем было объявлено ранее."
       es: "Presentada el 7 de septiembre de 2026. La lista incluye al exjefe del Shin Bet Yoram Cohen (2), Orit Farkash-Hacohen (3), Matan Kahana (5) y Hili Tropper (6), cuya candidatura se había anunciado antes dentro de una alianza con Yoaz Hendel."
       fr: "Déposée le 7 septembre 2026. La liste compte l’ancien chef du Shin Bet Yoram Cohen (2), Orit Farkash-Hacohen (3), Matan Kahana (5) et Hili Tropper (6), ce dernier ayant été annoncé auparavant dans une alliance avec Yoaz Hendel."
     candidates:
@@ -868,7 +868,7 @@ parties:
       he: "רשימה חדשה בראשות תא\"ל (במיל') עופר וינטר, שהוגשה ב-7 בספטמבר 2026 לאחר שמגעי איחוד עם הציונות הדתית ועם 'הציבור החרדי' לא צלחו; יוסף חדאד במקום השני."
       en: "A new list led by Brig. Gen. (res.) Ofer Winter, submitted September 7, 2026 after merger talks with Religious Zionism and with 'The Haredi Public' failed; Yoseph Haddad is second."
       ar: "قائمة جديدة برئاسة العميد (احتياط) عوفر فينتر، قُدّمت في 7 أيلول/سبتمبر 2026 بعد فشل محادثات الاندماج مع الصهيونية الدينية ومع «الجمهور الحريدي»؛ يوسف حداد في الموقع الثاني."
-      ru: "Новый список во главе с бригадным генералом запаса Офером Винтером, подан 7 сентября 2026 года после провала переговоров об объединении с «Религиозным сионизмом» и «Харедимной общественностью»; Йосеф Хаддад — второй."
+      ru: "Новый список во главе с бригадным генералом запаса Офером Винтером, поданный 7 сентября 2026 года после провала переговоров об объединении с «Религиозным сионизмом» и «Харедимной общественностью»; Йосеф Хаддад — второй."
       es: "Una lista nueva encabezada por el general de brigada (res.) Ofer Winter, presentada el 7 de septiembre de 2026 tras fracasar las conversaciones de fusión con Sionismo Religioso y con «El Público Jaredí»; Yoseph Haddad es segundo."
       fr: "Une nouvelle liste menée par le général de brigade (rés.) Ofer Winter, déposée le 7 septembre 2026 après l’échec des pourparlers de fusion avec le Sionisme religieux et « Le Public haredi » ; Yoseph Haddad est deuxième."
     candidates:
@@ -1009,7 +1009,7 @@ rules:
       he: "כל אזרח ישראלי בן 18 ומעלה הרשום במרשם האוכלוסין, אלא אם בית משפט שלל זאת לפי חוק. ההצבעה אישית ובישראל בלבד; קבוצות מוגדרות (חיילים, שליחי מדינה בחו\"ל, מאושפזים, אסירים, מלחים ועוד) מצביעות במעטפות כפולות."
       en: "Every Israeli citizen aged 18+ registered in the Population Register, unless a court has removed the right by law. Voting is in person and in Israel only; defined groups (soldiers, state emissaries abroad, hospital patients, prisoners, ship crews and more) vote by double envelope."
       ar: "كل مواطن إسرائيلي بلغ 18 عامًا فأكثر ومسجّل في سجل السكان، ما لم تسلبه المحكمة هذا الحق بموجب القانون. التصويت شخصي وفي إسرائيل فقط؛ وتصوّت فئات محددة (الجنود، مبعوثو الدولة في الخارج، المرضى في المستشفيات، السجناء، طواقم السفن وغيرهم) بالمغلّف المزدوج."
-      ru: "Каждый гражданин Израиля старше 18 лет, внесённый в Реестр населения, если суд не лишил его этого права по закону. Голосуют лично и только в Израиле; определённые группы (солдаты, государственные посланники за рубежом, пациенты больниц, заключённые, экипажи судов и другие) голосуют двойным конвертом."
+      ru: "Каждый гражданин Израиля, достигший 18 лет и внесённый в Реестр населения, если суд не лишил его этого права по закону. Голосуют лично и только в Израиле; определённые группы (солдаты, государственные посланники за рубежом, пациенты больниц, заключённые, экипажи судов и другие) голосуют двойным конвертом."
       es: "Todo ciudadano israelí de 18 años o más inscrito en el Registro de Población, salvo que un tribunal le haya retirado el derecho conforme a la ley. Se vota en persona y solo en Israel; grupos definidos (soldados, enviados del Estado en el extranjero, pacientes hospitalizados, presos, tripulaciones de barcos y otros) votan en sobre doble."
       fr: "Tout citoyen israélien de 18 ans et plus inscrit au registre de la population, sauf si un tribunal lui a retiré ce droit conformément à la loi. Le vote se fait en personne et uniquement en Israël ; des groupes définis (soldats, émissaires de l’État à l’étranger, patients hospitalisés, détenus, équipages de navires et autres) votent sous double enveloppe."
     status: confirmed
@@ -1026,7 +1026,7 @@ rules:
       he: "אזרח ישראלי בן 21 ומעלה ביום הגשת הרשימות, בכפוף לסייגים: מי שנידון ליותר משלושה חודשי מאסר בפועל מנוע מלהתמודד שבע שנים מתום ריצוי העונש (ובעבירת טרור/ביטחון חמורה שנגזרו עליה מעל שבע שנות מאסר — 14 שנים), אלא אם נקבע שאין קלון. נושאי משרה בכירים (שופטים, קצינים בכירים, עובדי מדינה בכירים ועוד) חייבים לפרוש מראש במועדים הקבועים בחוק. לפי סעיף 7א, רשימה או מועמד ייפסלו בשל שלילת קיומה של ישראל כמדינה יהודית ודמוקרטית, הסתה לגזענות או תמיכה במאבק מזוין נגד ישראל; פסילת מועמד טעונה אישור בית המשפט העליון."
       en: "An Israeli citizen aged 21+ on list-submission day, with restrictions: a person sentenced to over three months' actual imprisonment is barred for seven years after completing the sentence (14 years where a serious terror/security offence drew over seven years' imprisonment), unless ruled free of moral turpitude. Senior officials (judges, senior officers, senior civil servants and others) must resign by statutory deadlines. Under article 7A, a list or candidate is barred for negating Israel's existence as a Jewish and democratic state, incitement to racism, or support for armed struggle against Israel; barring a candidate requires Supreme Court approval."
       ar: "مواطن إسرائيلي بلغ 21 عامًا فأكثر في يوم تقديم القوائم، مع قيود: من حُكم عليه بالسجن الفعلي لأكثر من ثلاثة أشهر يُمنع من الترشح سبع سنوات بعد انتهاء محكوميته (14 سنة إذا صدر حكم بالسجن لأكثر من سبع سنوات على مخالفة إرهاب أو أمن خطيرة)، ما لم تُقرّ المحكمة أن المخالفة لا تنطوي على وصمة عار. على كبار الموظفين (القضاة وكبار الضباط وكبار موظفي الدولة وغيرهم) الاستقالة ضمن مواعيد قانونية. وبموجب المادة 7أ، تُمنع قائمة أو مرشح من الترشح بسبب نفي وجود إسرائيل دولةً يهودية وديمقراطية، أو التحريض على العنصرية، أو دعم الكفاح المسلح ضد إسرائيل؛ ومنع مرشح يتطلب مصادقة المحكمة العليا."
-      ru: "Гражданин Израиля, которому в день подачи списков исполнился 21 год, с ограничениями: приговорённый к более чем трём месяцам реального заключения не может баллотироваться семь лет после отбытия срока (14 лет, если за тяжкое террористическое или связанное с безопасностью преступление назначено более семи лет), если только суд не установил, что в деянии нет позорящего обстоятельства. Высокопоставленные должностные лица (судьи, старшие офицеры, высшие госслужащие и другие) должны уйти в отставку в установленные законом сроки. По статье 7А список или кандидат отстраняется за отрицание существования Израиля как еврейского и демократического государства, подстрекательство к расизму или поддержку вооружённой борьбы против Израиля; отстранение кандидата требует утверждения Верховного суда."
+      ru: "Гражданин Израиля, которому в день подачи списков исполнился 21 год, с ограничениями: приговорённый к более чем трём месяцам реального заключения не может баллотироваться семь лет после отбытия срока (14 лет, если за тяжкое террористическое или связанное с безопасностью преступление назначено более семи лет), если только не было установлено, что в деянии нет позорящего обстоятельства. Высокопоставленные должностные лица (судьи, старшие офицеры, высшие госслужащие и другие) должны уйти в отставку в установленные законом сроки. По статье 7А список или кандидат отстраняется за отрицание существования Израиля как еврейского и демократического государства, подстрекательство к расизму или поддержку вооружённой борьбы против Израиля; отстранение кандидата требует утверждения Верховного суда."
       es: "Un ciudadano israelí de 21 años o más el día de presentación de las listas, con restricciones: quien haya sido condenado a más de tres meses de prisión efectiva queda excluido durante siete años tras cumplir la pena (14 años si un delito grave de terrorismo o seguridad conllevó más de siete años de prisión), salvo que el tribunal determine que el delito no conlleva infamia (kalón). Los altos cargos (jueces, oficiales superiores, altos funcionarios y otros) deben renunciar en los plazos legales. Según el artículo 7A, una lista o candidato queda excluido por negar la existencia de Israel como Estado judío y democrático, por incitación al racismo o por apoyo a la lucha armada contra Israel; excluir a un candidato requiere la aprobación del Tribunal Supremo."
       fr: "Un citoyen israélien de 21 ans et plus le jour du dépôt des listes, avec des restrictions : une personne condamnée à plus de trois mois de prison ferme est inéligible pendant sept ans après avoir purgé sa peine (14 ans si une infraction grave de terrorisme ou de sécurité a entraîné plus de sept ans de prison), sauf décision constatant l’absence d’infamie. Les hauts responsables (juges, officiers supérieurs, hauts fonctionnaires et autres) doivent démissionner dans les délais légaux. En vertu de l’article 7A, une liste ou un candidat est exclu pour négation de l’existence d’Israël comme État juif et démocratique, incitation au racisme ou soutien à la lutte armée contre Israël ; l’exclusion d’un candidat requiert l’approbation de la Cour suprême."
     status: confirmed
@@ -1054,7 +1054,7 @@ rules:
       he: "הנשיא מטיל את הרכבת הממשלה על חבר כנסת בתוך שבעה ימים מפרסום התוצאות, לאחר התייעצות עם הסיעות. למוטל 28 ימים בתוספת עד 14; אם נכשל — חבר כנסת אחר (28 ימים), ואז רוב חברי הכנסת רשאים לבקש הטלה על חבר מסוים (14 ימים). מוצו השלבים — הכנסת מתפזרת ונערכות בחירות חוזרות."
       en: "Within seven days of the results, after consulting the factions, the President tasks an MK with forming a government: 28 days plus up to 14 more; failing that, another MK (28 days), then a majority of MKs may request a specific member (14 days). If all stages fail, the Knesset dissolves and new elections are held."
       ar: "خلال سبعة أيام من صدور النتائج، وبعد التشاور مع الكتل، يكلّف رئيس الدولة عضو كنيست بتشكيل الحكومة: 28 يومًا وحتى 14 يومًا إضافيًا؛ وإن فشل، يُكلَّف عضو آخر (28 يومًا)، ثم يمكن لأغلبية أعضاء الكنيست أن تطلب تكليف عضو بعينه (14 يومًا). إذا فشلت كل المراحل، يُحلّ الكنيست وتُجرى انتخابات جديدة."
-      ru: "В течение семи дней после результатов, посоветовавшись с фракциями, президент поручает одному из депутатов сформировать правительство: 28 дней и ещё до 14 дней; если не получилось — другому депутату (28 дней), затем большинство депутатов может попросить поручить это конкретному депутату (14 дней). Если все этапы провалились, Кнессет распускается и назначаются новые выборы."
+      ru: "В течение семи дней после публикации результатов, посоветовавшись с фракциями, президент поручает одному из депутатов сформировать правительство: 28 дней и ещё до 14 дней; если не получилось — другому депутату (28 дней), затем большинство депутатов может попросить поручить это конкретному депутату (14 дней). Если все этапы провалились, Кнессет распускается и назначаются новые выборы."
       es: "En los siete días siguientes a los resultados, tras consultar a las facciones, el presidente del Estado encarga a un diputado formar Gobierno: 28 días más hasta 14 adicionales; si fracasa, otro diputado (28 días), y después una mayoría de diputados puede pedir que el encargo recaiga en un diputado concreto (14 días). Si fallan todas las etapas, la Knéset se disuelve y se celebran nuevas elecciones."
       fr: "Dans les sept jours suivant les résultats, après consultation des factions, le président de l’État charge un député de former un gouvernement : 28 jours, prolongeables de 14 jours au plus ; en cas d’échec, un autre député (28 jours), puis une majorité de députés peut demander que la tâche soit confiée à un député précis (14 jours). Si toutes les étapes échouent, la Knesset se dissout et de nouvelles élections ont lieu."
     status: confirmed
@@ -1080,12 +1080,12 @@ rules:
 stats:
   - key: eligible-voters
     label: { he: "בעלי זכות בחירה", en: "Eligible voters", ar: "أصحاب حق الاقتراع", ru: "Имеющие право голоса", es: "Personas con derecho a voto", fr: "Électeurs inscrits" }
-    value: { he: "7,331,981", en: "7,331,981", ar: "7,331,981", ru: "7 331 981", es: "7 331 981", fr: "7 331 981" }
+    value: { he: "7,331,981", en: "7,331,981", ar: "7,331,981", ru: "7 331 981", es: "7 331 981", fr: "7 331 981" }
     detail:
       he: "בעלי זכות הבחירה לכנסת ה-26 לפי פנקס הבוחרים הסופי (נכון ל-6.9.2026) — 547,749 יותר מאשר בבחירות לכנסת ה-25 (6,788,804 ב-2022)."
       en: "Eligible voters for the 26th Knesset per the final voter roll (as of 6 Sep 2026) — 547,749 more than in the 25th-Knesset election (6,788,804 in 2022)."
       ar: "أصحاب حق الاقتراع للكنيست الـ26 وفق سجل الناخبين النهائي (حتى 6 أيلول/سبتمبر 2026) — بزيادة 547,749 عن انتخابات الكنيست الـ25 (6,788,804 في 2022)."
-      ru: "Избиратели, имеющие право голоса на выборах в Кнессет 26-го созыва, по окончательному списку избирателей (на 6 сентября 2026 года) — на 547 749 больше, чем на выборах в Кнессет 25-го созыва (6 788 804 в 2022 году)."
+      ru: "Избиратели, имеющие право голоса на выборах в Кнессет 26-го созыва, по окончательному списку избирателей (на 6 сентября 2026 года) — на 547 749 больше, чем на выборах в Кнессет 25-го созыва (6 788 804 в 2022 году)."
       es: "Personas con derecho a voto para la 26.ª Knéset según el censo definitivo (a 6 de septiembre de 2026) — 547 749 más que en las elecciones a la 25.ª Knéset (6 788 804 en 2022)."
       fr: "Électeurs inscrits pour la 26e Knesset selon la liste électorale définitive (au 6 septembre 2026) — 547 749 de plus qu’aux élections de la 25e Knesset (6 788 804 en 2022)."
     status: confirmed
@@ -1117,12 +1117,12 @@ stats:
         publisher: "Jewish Virtual Library"
   - key: polling-stations
     label: { he: "קלפיות", en: "Polling stations", ar: "صناديق الاقتراع", ru: "Избирательные участки", es: "Colegios electorales", fr: "Bureaux de vote" }
-    value: { he: "12,018", en: "12,018", ar: "12,018", ru: "12 018", es: "12 018", fr: "12 018" }
+    value: { he: "12,018", en: "12,018", ar: "12,018", ru: "12 018", es: "12 018", fr: "12 018" }
     detail:
       he: "קלפיות רגילות ברחבי הארץ לכנסת ה-26 (מפת הקלפיות הסופית), מהן 6,208 נגישות ו-3,620 נגישות מיוחדות; בנוסף 250 קלפיות בבתי חולים, 55 בבתי סוהר ומעצר ו-102 ב-100 נציגויות ישראל בחו\"ל. ב-2022: 11,707 קלפיות."
       en: "Regular polling stations nationwide for the 26th Knesset (final station map), of which 6,208 accessible and 3,620 special accessible; plus 250 in hospitals, 55 in prisons and detention facilities and 102 at 100 Israeli missions abroad. In 2022: 11,707."
       ar: "صناديق اقتراع عادية في أنحاء البلاد لانتخابات الكنيست الـ26 (خريطة الصناديق النهائية)، منها 6,208 مُتاحة لذوي الإعاقة و3,620 مُتاحة خاصة؛ إضافة إلى 250 في المستشفيات، و55 في السجون ومرافق الاحتجاز، و102 في 100 ممثلية إسرائيلية في الخارج. في 2022: 11,707."
-      ru: "Обычные избирательные участки по всей стране на выборах в Кнессет 26-го созыва (окончательная карта участков), из них 6 208 доступных для людей с ограниченной подвижностью и 3 620 специальных доступных; плюс 250 в больницах, 55 в тюрьмах и местах заключения и 102 в 100 израильских представительствах за рубежом. В 2022 году: 11 707."
+      ru: "Обычные избирательные участки по всей стране на выборах в Кнессет 26-го созыва (окончательная карта участков), из них 6 208 доступных для людей с ограниченной подвижностью и 3 620 специальных доступных; плюс 250 в больницах, 55 в тюрьмах и местах заключения и 102 в 100 израильских представительствах за рубежом. В 2022 году: 11 707."
       es: "Colegios electorales ordinarios en todo el país para la 26.ª Knéset (mapa definitivo), de los cuales 6 208 accesibles y 3 620 de accesibilidad especial; más 250 en hospitales, 55 en prisiones y centros de detención y 102 en 100 misiones israelíes en el extranjero. En 2022: 11 707."
       fr: "Bureaux de vote ordinaires dans tout le pays pour la 26e Knesset (carte définitive), dont 6 208 accessibles et 3 620 à accessibilité spéciale ; plus 250 dans les hôpitaux, 55 dans les prisons et centres de détention et 102 dans 100 missions israéliennes à l’étranger. En 2022 : 11 707."
     status: confirmed
@@ -1141,7 +1141,7 @@ stats:
       he: "בבחירות 2022 התמודדו 40 רשימות ו-10 עברו את אחוז החסימה; מרצ ובל\"ד לא עברו, וכ-300 אלף קולות ירדו לטמיון."
       en: "In 2022, 40 lists ran and 10 passed the threshold; Meretz and Balad fell short, and some 300,000 votes were wasted."
       ar: "في 2022 ترشحت 40 قائمة واجتازت 10 منها نسبة الحسم؛ لم تجتزها ميرتس والتجمع، وضاع نحو 300,000 صوت."
-      ru: "В 2022 году участвовали 40 списков, барьер преодолели 10; «Мерец» и «Балад» не прошли, и около 300 000 голосов пропали."
+      ru: "В 2022 году участвовали 40 списков, барьер преодолели 10; «Мерец» и «Балад» не прошли, и около 300 000 голосов пропали."
       es: "En 2022 se presentaron 40 listas y 10 superaron el umbral; Meretz y Balad no superaron el umbral, y unos 300 000 votos se perdieron."
       fr: "En 2022, 40 listes se sont présentées et 10 ont franchi le seuil ; Meretz et Balad ont échoué, et quelque 300 000 voix ont été perdues."
     status: confirmed
@@ -1197,7 +1197,7 @@ howToVote:
       he: "כל אזרח ישראלי בן 18 ומעלה הרשום במרשם האוכלוסין. ההצבעה אישית ובישראל בלבד; אין הצבעה בדואר ואין הצבעה כללית מחו\"ל."
       en: "Every Israeli citizen aged 18 or over who is in the Population Register. Voting is in person and in Israel only; there is no postal voting and no general voting from abroad."
       ar: "كل مواطن إسرائيلي بلغ 18 عامًا فأكثر ومسجّل في سجل السكان. التصويت شخصي وفي إسرائيل فقط؛ لا يوجد تصويت بالبريد ولا تصويت عام من الخارج."
-      ru: "Каждый гражданин Израиля старше 18 лет, внесённый в Реестр населения. Голосуют лично и только в Израиле; голосования по почте и общего голосования из-за рубежа нет."
+      ru: "Каждый гражданин Израиля, достигший 18 лет и внесённый в Реестр населения. Голосуют лично и только в Израиле; голосования по почте и общего голосования из-за рубежа нет."
       es: "Todo ciudadano israelí de 18 años o más inscrito en el Registro de Población. Se vota en persona y solo en Israel; no hay voto por correo ni voto general desde el extranjero."
       fr: "Tout citoyen israélien de 18 ans et plus inscrit au registre de la population. Le vote se fait en personne et uniquement en Israël ; il n’y a ni vote par correspondance ni vote général depuis l’étranger."
     status: confirmed
@@ -1228,7 +1228,7 @@ howToVote:
       he: "6,208 קלפיות נגישות לאנשים המוגבלים בניידות (לפי מפת הקלפיות הסופית, 6.9.2026), ו-3,620 קלפיות נגישות מיוחדות שבהן רשאי להצביע מי שמוגבל בניידות והקלפי שלו אינה נגישה — עם הצהרה בפני מזכיר הקלפי, במעטפה כפולה. רשימת הקלפיות הנגישות מתפרסמת סמוך לבחירות."
       en: "6,208 stations accessible to people with limited mobility (per the final station map, 6 Sep 2026), and 3,620 special accessible stations where anyone with limited mobility whose own station is not accessible may vote — with a declaration to the station secretary, by double envelope. The list is published close to election day."
       ar: "6,208 صناديق متاحة لذوي محدودية الحركة (وفق خريطة الصناديق النهائية، 6 أيلول/سبتمبر 2026)، و3,620 صندوقًا متاحًا خاصًا يمكن فيه لكل من يعاني محدودية في الحركة ولا يكون صندوقه متاحًا أن يصوّت — بتصريح أمام سكرتير الصندوق، بالمغلّف المزدوج. تُنشر القائمة قرب يوم الانتخابات."
-      ru: "6 208 участков доступны для людей с ограниченной подвижностью (по окончательной карте участков, 6 сентября 2026 года), и 3 620 специальных доступных участков, где может проголосовать любой человек с ограниченной подвижностью, чей собственный участок недоступен, — сделав заявление секретарю участка, двойным конвертом. Список публикуется незадолго до дня выборов."
+      ru: "6 208 участков доступны для людей с ограниченной подвижностью (по окончательной карте участков, 6 сентября 2026 года), и 3 620 специальных доступных участков, где может проголосовать любой человек с ограниченной подвижностью, чей собственный участок недоступен, — сделав заявление секретарю участка, двойным конвертом. Список публикуется незадолго до дня выборов."
       es: "6 208 centros de votación accesibles para personas con movilidad reducida (según el mapa definitivo, 6 de septiembre de 2026), y 3 620 colegios de accesibilidad especial donde puede votar cualquier persona con movilidad reducida cuyo colegio no sea accesible — con una declaración ante el secretario de mesa, en sobre doble. La lista se publica cerca del día de las elecciones."
       fr: "6 208 bureaux accessibles aux personnes à mobilité réduite (selon la carte définitive du 6 septembre 2026), et 3 620 bureaux à accessibilité spéciale où toute personne à mobilité réduite dont le bureau n’est pas accessible peut voter — sur déclaration au secrétaire du bureau, sous double enveloppe. La liste est publiée peu avant le jour des élections."
     status: confirmed

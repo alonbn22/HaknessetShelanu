@@ -29,7 +29,7 @@ elections:
         text: { he: "השעיית חקיקת הרפורמה והקמת ממשלת חירום בעת המלחמה.", en: "Suspension of the reform legislation and formation of an emergency wartime government.", ar: "تعليق تشريع الإصلاح وتشكيل حكومة طوارئ خلال الحرب.", ru: "Приостановка законодательства о реформе и создание чрезвычайного правительства на время войны.", es: "Suspensión de la legislación de la reforma y formación de un gobierno de emergencia en tiempo de guerra.", fr: "Suspension de la législation sur la réforme et formation d’un gouvernement d’urgence en temps de guerre." }
       - kind: bad
         date: "2024-09-17"
-        text: { he: "הסלמה בחזית הצפון מול חיזבאללה, מבצע הביפרים והתקיפות בלבנון.", en: "Escalation on the northern front with Hezbollah, the pager operation and strikes in Lebanon.", ar: "تصعيد على الجبهة الشمالية مع حزب الله، وعملية أجهزة النداء (البيجر)، والغارات في لبنان.", ru: "Эскалация на северном фронте с «Хезболлой», операция с пейджерами и удары по Ливану.", es: "Escalada en el frente norte con Hezbolá, la operación de los buscapersonas y los ataques en Líbano.", fr: "Escalade sur le front nord avec le Hezbollah, l’opération des bipeurs et les frappes au Liban." }
+        text: { he: "הסלמה בחזית הצפון מול חיזבאללה, מבצע הביפרים והתקיפות בלבנון.", en: "Escalation on the northern front with Hezbollah, the pager operation and strikes in Lebanon.", ar: "تصعيد على الجبهة الشمالية مع حزب الله، وعملية أجهزة النداء (البيجر)، والغارات في لبنان.", ru: "Эскалация на северном фронте с «Хизбаллой», операция с пейджерами и удары по Ливану.", es: "Escalada en el frente norte con Hezbolá, la operación de los buscapersonas y los ataques en Líbano.", fr: "Escalade sur le front nord avec le Hezbollah, l’opération des bipeurs et les frappes au Liban." }
       - kind: good
         date: "2025-01-19"
         text: { he: "עסקאות לשחרור חטופים והפסקות אש לסירוגין בעזה.", en: "Hostage-release deals and intermittent ceasefires in Gaza.", ar: "صفقات للإفراج عن الرهائن ووقف متقطع لإطلاق النار في غزة.", ru: "Сделки об освобождении заложников и периодические прекращения огня в Газе.", es: "Acuerdos de liberación de rehenes y altos el fuego intermitentes en Gaza.", fr: "Accords de libération d’otages et cessez-le-feu intermittents à Gaza." }
@@ -308,7 +308,7 @@ elections:
         text: { he: "רצח ראש הממשלה יצחק רבין; פרס החליפו.", en: "The assassination of PM Yitzhak Rabin; Peres succeeded him.", ar: "اغتيال رئيس الحكومة يتسحاق رابين؛ وخلفه بيرس.", ru: "Убийство премьер-министра Ицхака Рабина; его сменил Перес.", es: "El asesinato del primer ministro Isaac Rabin; Peres lo sucedió.", fr: "L’assassinat du Premier ministre Yitzhak Rabin ; Peres lui a succédé." }
       - kind: bad
         date: "1994-02-25"
-        text: { he: "הטבח במערת המכפלה בחברון.", en: "The Cave of the Patriarchs massacre in Hebron.", ar: "المجزرة في الحرم الإبراهيمي (مغارة المكفيلا) في الخليل.", ru: "Бойня в Пещере Патриархов в Хевроне.", es: "La masacre de la Tumba de los Patriarcas en Hebrón.", fr: "Le massacre du Caveau des Patriarches à Hébron." }
+        text: { he: "הטבח במערת המכפלה בחברון.", en: "The Cave of the Patriarchs massacre in Hebron.", ar: "المجزرة في الحرم الإبراهيمي (مغارة المكفيلا) في الخليل.", ru: "Бойня в Пещере Праотцев в Хевроне.", es: "La masacre de la Tumba de los Patriarcas en Hebrón.", fr: "Le massacre du Caveau des Patriarches à Hébron." }
       - kind: bad
         date: "1996-04-11"
         text: { he: "מבצע \"ענבי זעם\" בלבנון.", en: "Operation Grapes of Wrath in Lebanon.", ar: "عملية «عناقيد الغضب» في لبنان.", ru: "Операция «Гроздья гнева» в Ливане.", es: "La operación Uvas de la Ira en el Líbano.", fr: "L’opération Raisins de la colère au Liban." }
@@ -481,7 +481,7 @@ elections:
     events:
       - kind: neutral
         date: "1967-06-05"
-        text: { he: "מלחמת ששת הימים — תפיסת יו\"ש, עזה, סיני והגולן.", en: "The Six-Day War — capture of the West Bank, Gaza, Sinai and the Golan.", ar: "حرب الأيام الستة — السيطرة على الضفة الغربية وغزة وسيناء والجولان.", ru: "Шестидневная война — взятие под контроль Западного берега, Газы, Синая и Голан.", es: "La Guerra de los Seis Días — la toma de Cisjordania, Gaza, el Sinaí y el Golán.", fr: "La guerre des Six Jours — la prise de la Cisjordanie, de Gaza, du Sinaï et du Golan." }
+        text: { he: "מלחמת ששת הימים — תפיסת יו\"ש, עזה, סיני והגולן.", en: "The Six-Day War — capture of the West Bank, Gaza, Sinai and the Golan.", ar: "حرب الأيام الستة — السيطرة على الضفة الغربية وغزة وسيناء والجولان.", ru: "Шестидневная война — взятие под контроль Иудеи и Самарии (Западного берега), Газы, Синая и Голан.", es: "La Guerra de los Seis Días — la toma de Cisjordania, Gaza, el Sinaí y el Golán.", fr: "La guerre des Six Jours — la prise de la Cisjordanie, de Gaza, du Sinaï et du Golan." }
     ended: { he: "אשכול נפטר בפברואר 1969 (מאיר החליפתו) — בחירות אוקטובר 1969.", en: "Eshkol died in February 1969 (Meir succeeded him) — October 1969 election.", ar: "توفي أشكول في شباط/فبراير 1969 (وخلفته مئير) — انتخابات تشرين الأول/أكتوبر 1969.", ru: "Эшколь умер в феврале 1969 года (его сменила Меир) — выборы в октябре 1969 года.", es: "Eshkol murió en febrero de 1969 (Meir lo sucedió) — elecciones de octubre de 1969.", fr: "Eshkol est mort en février 1969 (Meir lui a succédé) — élection d’octobre 1969." }
   - knesset: 5
     date: "1961-08-15"

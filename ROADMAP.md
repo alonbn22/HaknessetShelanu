@@ -8,8 +8,15 @@ what data we could still surface.
 
 Ordered roughly by value/effort. Grounded in tables that already exist unless noted.
 
-- [ ] **⏰ Sept 2026 — official candidate lists → database** (time-critical: lists
-  are submitted to the CEC around **2026-09-09/10** and become final then).
+- [ ] **⏰ Sept 2026 — official candidate lists → database** (lists were submitted
+  to the CEC on **2026-09-07/08**; **all 38 rosters — 1,379 candidates — now live
+  in `content/election.yaml` `submittedLists[].candidates`**, captured from the
+  CEC list pages on 20 Sep 2026 through the Browser pane (gov.il answers 403 to
+  curl and Cloudflare-blocks CDP Chrome; `scratchpad/review/cec-capture.mjs` and
+  the batch files document the capture), rendered per list on `/elections#all-lists`
+  (first 20, the rest linked); the CEC's approved lists are reported for
+  2026-09-27 — re-capture after the notices (Blue and White's page changed on
+  16 Sep, the Joint List's on 18 Sep).
   Individual candidates don't exist as official data before submission, so today
   the site shows the sourced editorial layer (`content/election.yaml`: expected
   parties + leaders linked to their member pages via `leaderPersonId`). Once the
@@ -124,13 +131,131 @@ socio-economic indices by municipality (data.gov.il) for context.
 
 ## Needs a human before launch
 
-- Accessibility-coordinator name / email / phone (`a11y.statement.*` placeholders).
+- **Disqualifications (from 23 Sep 2026)**: the CEC voted to bar Ra'am, the
+  Joint List, Abu Shehadeh and Cassif, and on 24 Sep rejected the requests
+  against Otzma Yehudit, Religious Zionism–Zehut and the Democrats (all on the
+  site since `dab94e9`, with the AG's positions and the responses). Follow the
+  Supreme Court: appeals by 29 Sep, rulings by 4 Oct (`kd-court`) — update the
+  seven faction pages concerned, the two election cards and the key dates with
+  each ruling, from the court's or the outlet's own text.
+- **Spanish/French data text**: `npm run warm -- es fr` now works (es/fr
+  added, stops itself when gtx throttles). 24 Sep: 1,712 es strings cached
+  before gtx answered 429 — the uncommitted `data/knesset.db` holds them.
+  Re-run when gtx recovers, `npm run db:clean`, then commit the DB alone.
+- **Approved ballot letters** once the CEC publishes its approval notices
+  (27 Sep 2026): flip `lettersStatus: requested` → `approved` on each
+  `cec:` block in `content/election.yaml` and on `submittedLists`, and drop
+  any list the committee refused. Letters shown today are the *requested*
+  ones from the CEC index (updated 18 Sep 2026), labelled as such.
+- **Re-run the Knesset sync closer to launch** — the DB is from 19 Sep 2026
+  (members, positions, biographies); votes were last synced 23 Jul and the
+  plenum is in election recess, so nothing is missing yet.
+- **Open faction questions the sources could not settle** (19 Sep 2026):
+  New Hope's Knesset faction merger into Likud was never completed and
+  Sharren Haskel's High Court petition on it is undecided; UTJ has had no
+  faction chair since 17 Jul 2025 (the page shows none — leave it); the
+  Likud/Otzma/Democrats disqualification petitions to the CEC are pending.
+  Re-check after 27 Sep.
+- Weekly re-review of `content/polls.yaml` and `content/quiz.yaml` until
+  27 Oct 2026 (bump `lastReviewed`; add new polls from the outlets' own
+  articles; the Channel 16 polls stay out unless a written publication appears).
+- Accessibility-coordinator name / email / phone (`a11y.statement.*` placeholders, now in six languages).
 - Corrections email placeholder.
 - `NEXT_PUBLIC_SITE_URL` once a production domain exists (sitemap/OG URLs).
-- Editorial sign-off on curated member records, coalition.yaml, party-profiles,
-  and the elections/quiz figures.
+- Editorial sign-off on curated member records, coalition.yaml (per-faction
+  statuses added 19 Sep 2026), party-profiles (88 dated developments added
+  19 Sep 2026 from the faction verification pass), and the elections/quiz
+  figures.
+
+- **es/fr data text fills lazily**: the gtx endpoint was rate-limited on
+  19–20 Sep, so vote titles and the per-poll "below threshold" notes
+  (`belowThresholdNote`, the outlet's own Hebrew wording) still render as
+  Hebrew with `dir="rtl" lang="he"` on es/fr pages until the cache fills —
+  confirm before launch (same mechanism as ar/ru).
 
 ## Done (recent)
+
+- **Every glossary term sourced (24 Sep 2026)**: all 113 terms cite a trusted
+  page (Knesset lexicon and laws, gov.il, CEC, CBS, IDI, UN, IMF, ICRC,
+  Britannica, SEP) — no Wikipedia; `sourceUrl` is now required and a test bars
+  Wikipedia. Six definitions corrected against their sources (coalition,
+  biennial budget, the religion-and-state status quo, ceasefire/armistice, GDP
+  "final" goods, a dissolved Knesset serving until the new one meets).
+- **Arabic and Russian everywhere (22 Sep 2026, `79c1a3c`…`d79668e`)**: every
+  editorial string in `content/` — 1,082 of them — is now in all six
+  languages; `tests/qa/content-languages.test.ts` fails on any gap, so a new
+  entry can't fall back to English again. Translated from Hebrew this pass:
+  the election page, the compass (all quotes and notes), coalition, polls,
+  the party pages (positions, 2026 notes, all 99 dated developments), the
+  glossary, the election history, the controversial laws, budget and aid.
+  Fixed on the way: Arabic and Russian pages named several running lists
+  wrongly (the Democrats as "Labor", the Joint List as "Hadash–Ta'al"…) —
+  every registry list now has its own ar/ru name.
+- **Compass gaps (22 Sep 2026, `5737d92`)**: seven more documented stances
+  (Yashar ×3, the Democrats, Ra'am, the Joint List, Amkha), every source
+  re-opened before entry; stances can cite `moreSources` for what their note
+  says. Three Yashar cells that rested on a candidate's votes in another
+  party stay "no stated position".
+- **Glossary: the judges' selection committee** now includes the March 2025
+  amendment that applies from the 26th Knesset (JPost source) (`48beaa1`).
+
+- **Compass v2 (20 Sep 2026, `201d369`)**: the "Netanyahu-led government"
+  statement is out; 16 statements (8/8, alternating) about what the lists
+  want — seven new ones sourced by research agents (economy ×2, the
+  grandchild clause, same-sex partnerships, Gaza emigration, climate law,
+  Kan), each with ≥ 8 of 15 lists; plain-words explainers under every
+  statement; results with a per-list agree/partly/differ/no-stance line and
+  a closing "Why this result?" box. Research files: session scratchpad
+  `review/compass/*.yaml`. Housing/price intervention left out (5 of 15).
+
+- **Review pass (20 Sep 2026)**: three fresh-context reviews of the
+  19–20 Sep material acted on — fairness/accuracy (36 items: the coalition
+  line corrected to 68 → 61 → 60 on 14/16 Jul 2025, Likud's nine reserved
+  slots, one-card-only claims and rival characterisations removed,
+  petitions on the petitioners' cards too), Spanish (70 items) and French
+  (83 items, incl. a non-breaking-space pass and es/fr on all 110 compass
+  quotes). Reports in the session scratchpad `review/`.
+- **"60 against 60 — you need 61" (20 Sep 2026)**: the count is a minority
+  government since 16 Jul 2025; the home hemicycle and the parties timeline
+  now say so in two sentences with Basic Law: The Government (ss. 3, 13(d),
+  28(b)) as the source (`coalition.yaml` `majority`, `MinorityNote`).
+- **2026 budget**: marked approved (Knesset, 30 Mar 2026, 62–55; ToI) in
+  `content/budget-outlook.yaml`.
+
+- **Spanish and French (19 Sep 2026)**: six locales. UI catalogues complete
+  (parity-tested), faction and official-term names in es/fr, lazy data
+  translations widened (es/fr columns), hreflang for every page, sitemap
+  split per locale, and the editorial YAML translated (election, compass,
+  profiles, coalition notes, laws, glossary, history, polls, budget, aid).
+- **The election first on the home page (19 Sep 2026)**: countdown banner
+  with the next milestone and four doors, the nav item as a pill, and a
+  note on how the coalition/opposition count is made.
+- **Factions verified like the members (19 Sep 2026)**: coalition/opposition
+  is a dated, sourced status per faction (`content/coalition.yaml`
+  `statuses`; UTJ outside since 14 Jul 2025, Noam since 16 Jul 2025 —
+  Noam had been mislabelled coalition); faction pages carry a "2026
+  election" block from the CEC list pages (requested letters, list name,
+  head, submitting parties), sourced recent developments and a last-checked
+  date; deputy ministers are labelled as such; the election page lists all
+  38 submitted lists with requested letters; the Knesset portal link points
+  at the current MK page URL; Commons thumbnails canonicalised to
+  `upload.wikimedia.org` (the CSP host) in the sync and at render time;
+  dark mode survives language switches. Members sync of 19 Sep 2026
+  (`cbdb8ee`) with entry records for the four new MKs.
+- **The 2026 election, fairly (18–19 Sep 2026)**: `content/polls.yaml` — 18
+  seat polls since the lists closed, each verified against the outlet's own
+  article (`/elections#polls`: poll of polls with one poll per institute, a
+  one-list-at-a-time chart, every poll and every outlet's bloc map, HaMadad's
+  average credited, plain "how to read"); the compass rebuilt on sourced
+  stances only (Knesset roll-calls cited to the OData record, platforms,
+  leader statements; "no stated position" otherwise) with `/elections/positions`
+  showing every cell and its source; the CEC calendar, how-to-vote, voter-roll
+  figures and surplus agreements from the Central Elections Committee; and
+  the home hemicycle now explains its empty seats and shows who sits where on
+  hover/focus/tap. Standing rule recorded in memory: every datum verified, from
+  a trusted source, with credit — and simple enough for anyone.
+- **Member records, neutral items**: `kind: neutral` (news / role) beside
+  for/against; 10 research agents re-verified `content/members/*.yaml`.
 
 - **Committee agendas full backfill**: 13,119 agenda items / 26,620 documents —
   ~96% of the term's 10,792 sittings (was a rolling 120-day window). The 7

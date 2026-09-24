@@ -8,7 +8,7 @@ export async function Footer() {
   const lastSync = getLastSyncDate();
 
   return (
-    <footer className="border-t border-black/10 bg-white/60 text-sm text-muted">
+    <footer className="border-t border-black/10 bg-white text-sm text-muted">
       <div className="max-w-6xl mx-auto px-4 py-6 space-y-1">
         <p>{t("dataSource")}</p>
         <p>{t("disclaimer")}</p>

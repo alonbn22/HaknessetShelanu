@@ -1,7 +1,9 @@
-# PersonID 30880. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30880 (Avichai Boaron). Researched and source-verified 2026-09-18
+# (every cited URL re-fetched; Knesset membership dates and passed bills
+# cross-checked against the Knesset OData). Neutral language; legal status
+# marked. REVIEW before launch.
 personId: 30880
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -9,21 +11,30 @@ claims:
       he: חבר הכנסת ה-25 מטעם הליכוד
       en: Member of the 25th Knesset for Likud
     description:
-      he: אביחי בוארון מכהן כחבר הכנסת ה-25 מטעם מפלגת הליכוד. כיהן לראשונה מאפריל
-        2023 עד 14 באוקטובר 2023, לאחר שנכנס לכנסת במסגרת החוק הנורבגי במקום
-        דודי אמסלם, ושב לכהן ביולי 2024 לאחר התפטרותו של דני דנון.
+      he: אביחי בוארון מכהן כחבר הכנסת ה-25 מטעם מפלגת הליכוד. לפי רישומי הכנסת כיהן לראשונה
+        מ-31 במרץ 2023 (הושבע ב-3 באפריל) עד 14 באוקטובר 2023, לאחר שנכנס לכנסת
+        במסגרת החוק הנורבגי במקום דודי אמסלם, ושב לכהן ב-30 ביוני 2024 לאחר
+        התפטרותו של דני דנון מהכנסת עם מינויו לשגריר באו"ם.
       en: Avichai Boaron serves as a member of the 25th Knesset for the Likud party.
-        He first served from April 2023 to 14 October 2023, entering under the
-        'Norwegian Law' to replace Dudi Amsalem, and returned to the Knesset in
-        July 2024 following the resignation of Danny Danon.
-    date: 2024-07-01
+        According to Knesset records he first served from 31 March 2023 (sworn
+        in on 3 April) until 14 October 2023, entering under the "Norwegian
+        Law" in place of Dudi Amsalem, and returned to the Knesset on 30 June
+        2024 following Danny Danon's resignation upon his appointment as
+        ambassador to the UN.
+    date: 2024-06-30
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30880
+        title: אביחי אברהם בוארון – פרטים אישיים ותפקידים (אתר הכנסת)
+        publisher: Knesset
+      - url: https://www.maariv.co.il/news/politics/Article-1111301
+        title: 'אחרי המינוי של דנון: ח"כ אביחי בוארון חוזר לכנסת'
+        publisher: Maariv
+      - url: https://www.inn.co.il/news/597414
+        title: 'חבר כנסת טרי: אביחי בוארון הצהיר אמונים במליאת הכנסת'
+        publisher: Arutz 7
       - url: https://en.wikipedia.org/wiki/Avihai_Boaron
         title: Avihai Boaron
         publisher: Wikipedia
-      - url: https://www.wikidata.org/wiki/Q117323692
-        title: Avichai Boaron (Q117323692)
-        publisher: Wikidata
   - kind: positive
     category: achievement
     title:
@@ -66,19 +77,142 @@ claims:
     description:
       he: בוארון פעל למען ההתיישבות ביהודה ושומרון, עמד בראש מטה המאבק נגד הריסת
         ופינוי עמונה והיה ממנסחי חוק ההסדרה. בשנת 2017 סיכם עם ראש הממשלה בנימין
-        נתניהו על הקמת היישוב עמיחי למפוני עמונה, ובפברואר 2018 עלו התושבים
-        לבתיהם הזמניים ביישוב החדש.
+        נתניהו על הקמת היישוב עמיחי למפוני עמונה — הקמה שאושרה בקבינט ב-30 במרץ 2017 —
+        ובפברואר 2018 עלו התושבים לבתיהם הזמניים ביישוב החדש.
       en: Boaron was an activist for settlement in Judea and Samaria, led the campaign
         headquarters against the demolition and evacuation of Amona, and was
         among the drafters of the Regularization Law. In 2017 he reached an
         agreement with Prime Minister Benjamin Netanyahu to establish the
-        settlement of Amichai for Amona's evacuees, and in February 2018
-        residents moved into temporary homes in the new community.
-    date: 2017-03-01
+        settlement of Amichai for Amona's evacuees — approved by the cabinet on
+        30 March 2017 — and in February 2018 residents moved into temporary homes
+        in the new community.
+    date: 2017-03-30
     sources:
+      - url: https://www.ynet.co.il/articles/0,7340,L-4943075,00.html
+        title: 'הקבינט אישר הקמת התנחלות למפוני עמונה. "מצפים להיכנס לבתים החדשים בקיץ"'
+        publisher: Ynet
       - url: https://en.wikipedia.org/wiki/Avihai_Boaron
         title: Avihai Boaron
         publisher: Wikipedia
       - url: https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%99%D7%97%D7%99_%D7%91%D7%95%D7%90%D7%A8%D7%95%D7%9F
         title: אביחי בוארון
+        publisher: Wikipedia (Hebrew)
+  - kind: positive
+    category: achievement
+    date: 2025-05-13
+    title:
+      he: 'העביר את "חוק הפיקדונות": פתיחת פיקדון בנקאי ללא חשבון עו"ש באותו בנק (2025)'
+      en: 'Passed the "deposits law": opening a bank deposit without a checking account at the same bank (2025)'
+    description:
+      he: ב-13 במאי 2025 אישרה מליאת הכנסת בקריאה שנייה ושלישית את חוק הבנקאות (שירות ללקוח) (תיקון מס' 38), שיזם בוארון, המחייב את חמשת הבנקים הגדולים לאפשר ללקוחות לפתוח פיקדון בלי לנהל אצלם חשבון עובר ושב, החל מ-1 בדצמבר 2025. בוארון אמר כי "לא סביר שמי שרוצה להפקיד כסף בבנק שמציע ריבית גבוהה יותר ייאלץ להעביר אליו את כל חשבון העו"ש שלו".
+      en: On 13 May 2025 the Knesset plenum passed in its second and third readings the Banking (Service to the Customer) Law (Amendment No. 38), initiated by Boaron, which requires the five largest banks to let customers open a deposit without holding a checking account with them, from 1 December 2025. Boaron said it was "unreasonable that someone wanting to deposit funds at a bank offering higher interest would need to move their entire checking account there."
+    sources:
+      - url: https://www.calcalist.co.il/local_news/article/hjgpsjz11ex
+        title: 'אושר סופית: הבנקים יציעו פקדונות לכלל הציבור - ולא רק ללקוחות'
+        publisher: Calcalist
+      - url: https://main.knesset.gov.il/apps/legislation/main/bills/2222052
+        title: חוק הבנקאות (שירות ללקוח) (תיקון מס' 38), התשפ"ה–2025 – מאגר החקיקה הלאומי
+        publisher: Knesset
+  - kind: positive
+    category: achievement
+    date: 2026-06-09
+    title:
+      he: יזם את חוק ההכרה בשפת הסימנים הישראלית (2026)
+      en: Initiated the law recognizing Israeli Sign Language (2026)
+    description:
+      he: הצעת חוק פרטית שיזם בוארון יחד עם ח"כ חילי טרופר, חוק הכרה בשפת הסימנים הישראלית, התשפ"ו-2026, התקבלה בקריאה שנייה ושלישית ופורסמה בספר החוקים ב-9 ביוני 2026, לפי מאגר החקיקה של הכנסת. החוק מכיר בשפת הסימנים הישראלית ומפקיד את שימורה, פיתוחה וקידומה בידי האקדמיה ללשון העברית.
+      en: A private bill initiated by Boaron together with MK Hili Tropper, the Recognition of Israeli Sign Language Law, 5786-2026, passed its second and third readings and was published in the official law gazette on 9 June 2026, according to the Knesset's legislation database. The law recognizes Israeli Sign Language and entrusts its preservation, development and promotion to the Academy of the Hebrew Language.
+    sources:
+      - url: https://main.knesset.gov.il/apps/legislation/main/bills/2229413
+        title: חוק הכרה בשפת הסימנים הישראלית, התשפ"ו-2026 – מאגר החקיקה הלאומי
+        publisher: Knesset
+      - url: https://he.wikipedia.org/wiki/%D7%A9%D7%A4%D7%AA_%D7%94%D7%A1%D7%99%D7%9E%D7%A0%D7%99%D7%9D_%D7%94%D7%99%D7%A9%D7%A8%D7%90%D7%9C%D7%99%D7%AA
+        title: שפת הסימנים הישראלית – ויקיפדיה
+        publisher: Wikipedia (Hebrew)
+  - kind: neutral
+    category: role
+    date: 2024-09-21
+    title:
+      he: יו"ר ועדת המשנה של ועדת החינוך לתוכניות הלימודים במזרח ירושלים
+      en: Chair of the Education Committee's subcommittee on curricula in East Jerusalem
+    description:
+      he: בוארון עומד בראש ועדת המשנה של ועדת החינוך, התרבות והספורט לתוכניות הלימודים במזרח ירושלים והפיקוח עליהן; בספטמבר 2024 דווח על סיור של חברי הוועדה בבתי ספר במזרח ירושלים בראשותו.
+      en: Boaron chairs the Education, Culture and Sports Committee's subcommittee on curricula in East Jerusalem and their supervision; in September 2024 a tour of East Jerusalem schools by committee members under his leadership was reported.
+    sources:
+      - url: https://www.maariv.co.il/news/israel/Article-1134161
+        title: 'תחת אבטחה כבדה, חברי כנסת יבקרו בבתי ספר במזרח ירושלים: "לא פחות מאשר חבית נפץ"'
+        publisher: Maariv
+      - url: https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%99%D7%97%D7%99_%D7%91%D7%95%D7%90%D7%A8%D7%95%D7%9F
+        title: אביחי בוארון
+        publisher: Wikipedia (Hebrew)
+  - kind: neutral
+    category: news
+    date: 2025-07-14
+    title:
+      he: יזם את הליך ההדחה של ח"כ איימן עודה מהכנסת; ההצעה נכשלה במליאה
+      en: Initiated the proceedings to expel MK Ayman Odeh from the Knesset; the motion failed in the plenum
+    description:
+      he: 'בוארון אסף את 70 החתימות הנדרשות לפתיחת הליך הדחה נגד ח"כ איימן עודה בעקבות ציוץ של עודה על עסקת החטופים (ינואר 2025) והתבטאויות נוספות, בטענה שדבריו מהווים "לגיטימציה וקריאה לאלימות"; עודה השיב כי הציוץ "דיבר על זכותם של שני העמים לחיות בחופש, בכבוד ובשוויון". ב-14 ביולי 2025 תמכו 73 חברי כנסת בהדחה ו-15 התנגדו — פחות מ-90 הקולות הנדרשים, ועודה נותר חבר כנסת.'
+      en: 'Boaron collected the 70 signatures required to open expulsion proceedings against MK Ayman Odeh following Odeh''s tweet about the hostage deal (January 2025) and further statements, arguing they amounted to "legitimization and a call for violence"; Odeh replied that the tweet "spoke about the right of both peoples to live in freedom, dignity and equality." On 14 July 2025, 73 MKs supported expulsion and 15 opposed — short of the 90 votes required — and Odeh remained a Knesset member.'
+    sources:
+      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-858799
+        title: Likud's Avichay Boaron holds impeachment hearing for Ayman Odeh
+        publisher: The Jerusalem Post
+      - url: https://www.timesofisrael.com/motion-to-expel-odeh-from-knesset-fails-to-pass-amid-heckling-by-coalition-members/
+        title: Motion to expel Arab party head Odeh from Knesset fails; coalition MKs heckle him
+        publisher: The Times of Israel
+  - kind: neutral
+    category: news
+    date: 2025-11-05
+    title:
+      he: עתר לבג"ץ עם ארגון לביא נגד עיסוק היועמ"שית בפרשת הפצ"רית; בג"ץ הורה לה להשיב
+      en: Petitioned the High Court with the Lavi organization over the Attorney General's involvement in the Military Advocate General affair; the court ordered her to respond
+    description:
+      he: בנובמבר 2025, עם התפוצצות פרשת הפצ"רית והדלפת סרטון שדה תימן, עתר בוארון יחד עם ארגון לביא לבג"ץ בדרישה שהיועצת המשפטית לממשלה תימנע מעיסוק בחקירה. בליל 4–5 בנובמבר 2025 הורה המשנה לנשיא בית המשפט העליון, השופט נעם סולברג, ליועמ"שית להשיב לעותרים בתוך 36 שעות מדוע לא תימנע מכל עיסוק בחקירה.
+      en: In November 2025, as the Military Advocate General affair and the leak of the Sde Teiman video erupted, Boaron petitioned the High Court of Justice together with the Lavi organization, demanding that the Attorney General refrain from involvement in the investigation. On the night of 4–5 November 2025, Deputy Chief Justice Noam Sohlberg ordered the Attorney General to respond to the petitioners within 36 hours as to why she would not refrain from any involvement in the investigation.
+    sources:
+      - url: https://www.israelhayom.co.il/news/law/article/19170961
+        title: 'בג"ץ ליועמ"שית: הסבירי למה את ממשיכה לעסוק בפרשת הפצ"רית'
+        publisher: Israel Hayom
+  - kind: neutral
+    category: news
+    date: 2026-01-21
+    title:
+      he: הכנסת אישרה חוק שיזם עם עמית הלוי האוסר על בעלי תואר ממוסדות ברשות הפלסטינית ללמד בישראל
+      en: The Knesset passed a law he initiated with Amit Halevi barring holders of degrees from Palestinian Authority institutions from teaching in Israel
+    description:
+      he: ב-21 בינואר 2026 אישרה מליאת הכנסת בקריאה שנייה ושלישית חוק שיזמו בוארון וח"כ עמית הלוי, הקובע כי מי שמחזיק בתואר ממוסד להשכלה גבוהה ברשות הפלסטינית לא יוכל ללמד במערכת החינוך הישראלית.
+      en: On 21 January 2026 the Knesset plenum passed in its second and third readings a law initiated by Boaron and MK Amit Halevi, under which a person holding a degree from a higher-education institution in the Palestinian Authority may not teach in the Israeli education system.
+    sources:
+      - url: https://www.haaretz.co.il/news/politi/2026-01-21/ty-article/.premium/0000019b-e06c-d4f5-a7ff-f5fdfa240000
+        title: 'הכנסת אישרה: בוגרי מוסדות אקדמיים פלסטיניים לא יוכלו ללמד במערכת החינוך בישראל'
+        publisher: Haaretz
+  - kind: neutral
+    category: news
+    date: 2026-06-10
+    title:
+      he: התקבל חוק שיזם לקיזוז כספי הרשות הפלסטינית בגין נזקי טרור (2026)
+      en: A law he initiated on offsetting Palestinian Authority funds for terror damages was passed (2026)
+    description:
+      he: לפי מאגר החקיקה של הכנסת, הצעת חוק פרטית שבוארון היה היוזם הראשון שלה — חוק להקפאת כספים ששילמה הרשות הפלסטינית בזיקה לטרור מהכספים המועברים אליה מממשלת ישראל (תיקון), התשפ"ו–2026 — התקבלה בקריאה שלישית ופורסמה בספר החוקים ב-10 ביוני 2026.
+      en: According to the Knesset's legislation database, a private bill of which Boaron was the first initiator — the Freezing of Funds Paid by the Palestinian Authority in Connection with Terrorism out of the Funds Transferred to It by the Government of Israel (Amendment) Law, 5786-2026 — passed its third reading and was published in the official law gazette on 10 June 2026.
+    sources:
+      - url: https://main.knesset.gov.il/apps/legislation/main/bills/2220111
+        title: חוק להקפאת כספים ששילמה הרשות הפלסטינית בזיקה לטרור מהכספים המועברים אליה מממשלת ישראל (תיקון), התשפ"ו–2026 – מאגר החקיקה הלאומי
+        publisher: Knesset
+  - kind: neutral
+    category: news
+    date: 2026-08-18
+    title:
+      he: הגיע למקום ה-20 בהצבעה לרשימה הארצית בפריימריז של הליכוד ושובץ במקום ה-35 ברשימה לכנסת ה-26
+      en: Finished 20th in the national-list vote in the Likud primaries and was placed 35th on the list for the 26th Knesset
+    description:
+      he: בפריימריז של הליכוד שנערכו ב-17 באוגוסט 2026 הגיע בוארון, לפי דיווח מעריב על תוצאות הספירה, למקום ה-20 בהצבעה לרשימה הארצית. לאחר שיבוץ המקומות המשוריינים ונציגי המחוזות והמגזרים, הוצב במקום ה-35 ברשימת הליכוד שהוגשה לבחירות 27 באוקטובר 2026.
+      en: In the Likud primaries held on 17 August 2026 Boaron finished, according to Maariv's report on the count, 20th in the vote for the national list. After the reserved, district and sectoral slots were interleaved, he was placed 35th on the Likud list submitted for the 27 October 2026 election.
+    sources:
+      - url: https://www.maariv.co.il/news/politics/article-1357061
+        title: 'הסתיימה ההצבעה בליכוד: אלי כהן המנצח הגדול, טלי גוטליב מחוץ לעשירייה הראשונה - ואלו מי שנשארו בחוץ'
+        publisher: Maariv
+      - url: https://he.wikipedia.org/wiki/%D7%94%D7%91%D7%97%D7%99%D7%A8%D7%95%D7%AA_%D7%94%D7%9E%D7%A7%D7%93%D7%99%D7%9E%D7%95%D7%AA_%D7%91%D7%9C%D7%99%D7%9B%D7%95%D7%93_%282026%29
+        title: הבחירות המקדימות בליכוד (2026) – ויקיפדיה
         publisher: Wikipedia (Hebrew)

@@ -1,4 +1,7 @@
+# PersonID 30853. Researched from reputable public sources and source-verified
+# (every cited URL re-fetched). Neutral language; legal status marked. Reviewed 2026-09-18.
 personId: 30853
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -37,8 +40,8 @@ claims:
       he: יוזם חוק הכפפת מח"ש למשרד המשפטים
       en: Initiated law placing police investigations unit under the Justice Ministry
     description:
-      he: ביוני 2026 אישרה הכנסת תיקון חקיקה שיזם סעדה, המעביר את המחלקה לחקירות שוטרים (מח"ש) מאחריות פרקליטות המדינה לאחריות משרד המשפטים. החוק היה שנוי במחלוקת ועבר ברוב של 43 תומכים מול 39 מתנגדים.
-      en: In June 2026 the Knesset approved a legislative amendment initiated by Saada that transfers the Police Internal Investigations Department (Mahash) from the authority of the State Attorney's Office to that of the Justice Ministry. The law was controversial and passed by a vote of 43 in favor to 39 against.
+      he: ב-11 ביוני 2026 אישרה הכנסת ברוב של 43 מול 39 תיקון לפקודת המשטרה שיזם סעדה, המעביר את המחלקה לחקירות שוטרים (מח"ש) מאחריות פרקליטות המדינה לאחריות ישירה של משרד המשפטים. היועצת המשפטית לממשלה ופרקליט המדינה הזהירו כי המהלך עלול לחשוף חקירות להשפעה פוליטית; סעדה טען כי הרפורמה מבטלת ניגוד עניינים בין הפרקליטות, הנסמכת על המשטרה, לבין הגוף החוקר אותה.
+      en: On 11 June 2026 the Knesset passed, by 43 votes to 39, an amendment to the Police Ordinance initiated by Saada that transfers the Police Internal Investigations Department (Mahash) from the authority of the State Attorney's Office to the direct authority of the Justice Ministry. The Attorney General and the State Attorney warned the move could expose investigations to political influence; Saada argued the reform removes a conflict of interest between prosecutors, who rely on the police, and the body that investigates them.
     date: 2026-06-11
     sources:
       - url: https://www.jpost.com/israel-news/article-899033
@@ -91,4 +94,35 @@ claims:
       - url: https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%A1%D7%A2%D7%93%D7%94
         title: משה סעדה – ויקיפדיה
         publisher: Wikipedia
-lastReviewed: 2026-07-05
+  - kind: neutral
+    category: news
+    date: "2026-08-18"
+    title:
+      he: "דורג במקום ה-11 בפריימריז הליכוד"
+      en: "Ranked 11th in the Likud primary"
+    description:
+      he: "בפריימריז הליכוד שנערכו ב-17 באוגוסט 2026 דורג סעדה במקום ה-11 ברשימה הארצית, לאחר עמיחי שיקלי ודודי אמסלם ולפני טלי גוטליב ושלמה קרעי, על פי התוצאות המלאות שפורסמו עם השלמת ספירת הקולות."
+      en: "In the Likud primary held on 17 August 2026 Saada was ranked 11th on the national list, after Amichai Chikli and Dudi Amsalem and ahead of Tally Gotliv and Shlomo Karhi, according to the full results published when the vote count was completed."
+    sources:
+      - url: "https://www.israelhayom.co.il/news/politics/article/21221566"
+        title: "הושלמה ספירת הקולות בליכוד: התוצאות המלאות - ואלו שנשארו בחוץ"
+        publisher: "Israel Hayom"
+      - url: "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%A1%D7%A2%D7%93%D7%94"
+        title: "משה סעדה"
+        publisher: "Wikipedia (Hebrew)"
+  - kind: neutral
+    category: news
+    date: "2026-09-08"
+    title:
+      he: "הוצב במקום ה-17 ברשימת הליכוד לכנסת ה-26"
+      en: "Placed 17th on the Likud list for the 26th Knesset"
+    description:
+      he: "ברשימת הליכוד שהוגשה לוועדת הבחירות המרכזית ב-8 בספטמבר 2026, לאחר שיבוץ המועמדים ששוריינו על ידי יו\"ר המפלגה בנימין נתניהו, הוצב סעדה במקום ה-17, אחרי דוד פטר ולפני חיים כץ."
+      en: "On the Likud list submitted to the Central Elections Committee on 8 September 2026, after the placement of candidates reserved by party chairman Benjamin Netanyahu, Saada was placed 17th, after David Peter and ahead of Haim Katz."
+    sources:
+      - url: "https://www.makorrishon.co.il/news/politcal/article/368974"
+        title: "רשימת הליכוד לכנסת ה־26: אלה המועמדים של בנימין נתניהו"
+        publisher: "Makor Rishon"
+      - url: "https://he.wikipedia.org/wiki/%D7%94%D7%91%D7%97%D7%99%D7%A8%D7%95%D7%AA_%D7%9C%D7%9B%D7%A0%D7%A1%D7%AA_%D7%94%D7%A2%D7%A9%D7%A8%D7%99%D7%9D_%D7%95%D7%A9%D7%A9"
+        title: "הבחירות לכנסת העשרים ושש"
+        publisher: "Wikipedia (Hebrew)"

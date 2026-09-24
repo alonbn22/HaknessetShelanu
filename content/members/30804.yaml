@@ -1,4 +1,8 @@
+# PersonID 30804 (Haim Biton). Researched and source-verified 2026-09-18 (every
+# cited URL re-fetched; ministerial and Knesset dates cross-checked against the
+# Knesset OData). Neutral language; legal status marked. REVIEW before launch.
 personId: 30804
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -6,10 +10,13 @@ claims:
       he: כיהן כשר במשרד החינוך בממשלה ה-37
       en: Served as a minister in the Ministry of Education
     description:
-      he: חיים ביטון, מטעם ש"ס, מונה לשר במשרד החינוך בממשלה ה-37 בראשות בנימין נתניהו ב-29 בדצמבר 2022, ובמסגרת תפקידו היה ממונה בין היתר על החינוך החרדי והחברה למתנ"סים. הוא התפטר מתפקידו כשר ביולי 2025, במסגרת התפטרות שרי ש"ס על רקע משבר חוק הגיוס.
-      en: Chaim Biton of Shas was appointed a minister in the Ministry of Education in the 37th government led by Benjamin Netanyahu on 29 December 2022, with responsibilities that included the Haredi education sector and the community-centers authority. He resigned from the ministerial post in July 2025, as part of the resignation of Shas ministers amid the dispute over the military-conscription (draft) law.
+      he: חיים ביטון, מטעם ש"ס, מונה לשר במשרד החינוך בממשלה ה-37 בראשות בנימין נתניהו ב-29 בדצמבר 2022, ובמסגרת תפקידו היה ממונה בין היתר על החינוך החרדי והחברה למתנ"סים. לפי רישומי הכנסת כהונתו כשר הסתיימה ב-20 ביולי 2025, במסגרת התפטרות שרי ש"ס מהממשלה על רקע משבר חוק הגיוס, ובאותו יום שב לכהן כחבר הכנסת (לאחר שהתפטר מהכנסת בפברואר 2023 במסגרת החוק הנורבגי).
+      en: Chaim Biton of Shas was appointed a minister in the Ministry of Education in the 37th government led by Benjamin Netanyahu on 29 December 2022, with responsibilities that included the Haredi education sector and the community-centers authority. According to Knesset records his ministerial term ended on 20 July 2025, as part of the resignation of Shas ministers from the government amid the dispute over the military-conscription (draft) law, and on the same day he returned to serve as a Knesset member (having resigned his seat in February 2023 under the "Norwegian Law").
     date: 2022-12-29
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30804
+        title: חיים ביטון – פרטים אישיים ותפקידים (אתר הכנסת)
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Haim_Biton
         title: Haim Biton
         publisher: Wikipedia
@@ -35,17 +42,15 @@ claims:
   - kind: negative
     category: investigation
     status: ongoing
-    date: 2025-03
+    date: 2026-08-05
     title:
-      he: נחקר בחשד להסטת כספי חינוך ציבוריים למימון עיתון 'הדרך'
-      en: Under criminal investigation over alleged diversion of public education funds to the 'HaDerech' newspaper
-      ar: قيد التحقيق الجنائي بشبهة تحويل أموال تعليم عامة لتمويل صحيفة 'هادرَّخ'
-      ru: Под уголовным расследованием по подозрению в перенаправлении государственных средств на образование для финансирования газеты «Га-Дерех»
+      he: נחקר בחשד להסטת כספי חינוך ציבוריים למימון עיתון 'הדרך'; התיק הועבר לפרקליטות (2026)
+      en: Under criminal investigation over alleged diversion of public education funds to the 'HaDerech' newspaper; file transferred to prosecutors (2026)
+      ar: قيد التحقيق الجنائي بشبهة تحويل أموال تعليم عامة لتمويل صحيفة 'هادرَّخ'؛ أُحيل الملف إلى النيابة (2026)
+      ru: Под уголовным расследованием по подозрению в перенаправлении государственных средств на образование для финансирования газеты «Га-Дерех»; дело передано в прокуратуру (2026)
     description:
-      he: משטרת ישראל פתחה באוקטובר 2024 בחקירה נגד חיים ביטון ואחרים בחשד שכספי ציבור שיועדו לחינוך ברשת 'מעיין החינוך התורני' של ש"ס הופנו למימון מוסף ילדים בעיתון המפלגתי 'הדרך', בתקופה שבה כיהן כמנכ"ל הרשת. במרץ 2025 עברה החקירה לשלב גלוי, ביטון זומן לחקירה וארבעה חשודים עוכבו. המשטרה מייחסת למעורבים עבירות קבלת דבר במרמה, מרמה והפרת אמונים, רישום כוזב במסמכי תאגיד והלבנת הון. נכון ליולי 2026 לא הוגש כתב אישום והחקירה לא נסגרה; חלה חזקת החפות.
-      en: "In October 2024, Israel Police opened an investigation into Haim Biton and others on suspicion that public funds earmarked for education in the Shas-affiliated 'Ma'ayan HaChinuch HaTorani' school network were diverted to finance a children's supplement in the party newspaper 'HaDerech' during the period he headed the network. In March 2025 the probe moved to an overt phase: Biton was summoned for questioning and four suspects were detained. Police attribute to those involved suspected offenses of obtaining by fraud, fraud and breach of trust, false corporate records, and money laundering. As of July 2026 no indictment had been filed and the case had not closed; the presumption of innocence applies."
-      ar: في تشرين الأول 2024 فتحت الشرطة الإسرائيلية تحقيقًا مع حاييم بيتون وآخرين بشبهة تحويل أموال عامة مخصصة للتعليم في شبكة 'معيان هاتوراني' التابعة لحركة شاس لتمويل ملحق للأطفال في صحيفة الحزب 'هادرَّخ'، خلال فترة ترؤسه للشبكة. وفي آذار 2025 انتقل التحقيق إلى مرحلة علنية واستُدعي بيتون للتحقيق. تنسب الشرطة للمتورطين شبهة ارتكاب جرائم احتيال وخيانة أمانة وتزوير وغسيل أموال. حتى تموز 2026 لم تُقدّم لائحة اتهام ولم يُغلَق الملف؛ وتسري قرينة البراءة.
-      ru: В октябре 2024 года полиция Израиля начала расследование в отношении Хаима Битона и других по подозрению в том, что государственные средства, предназначенные на образование в сети «Мааян а-Хинух а-Торани», связанной с ПАС, были направлены на финансирование детского приложения партийной газеты «Га-Дерех» в период, когда он возглавлял эту сеть. В марте 2025 года расследование перешло в открытую фазу, Битон был вызван на допрос. Полиция вменяет подозреваемым мошенничество, злоупотребление доверием, подлог и отмывание денег. По состоянию на июль 2026 года обвинительное заключение не предъявлено и дело не закрыто; действует презумпция невиновности.
+      he: משטרת ישראל פתחה באוקטובר 2024 בחקירה נגד חיים ביטון ואחרים בחשד שכספי ציבור שיועדו לחינוך ברשת 'מעיין החינוך התורני' של ש"ס הופנו למימון מוסף ילדים בעיתון 'הדרך', בתקופה שבה כיהן כמנכ"ל הרשת. במרץ 2025 עברה החקירה לשלב גלוי, ביטון זומן לחקירה וארבעה חשודים עוכבו; ב-12 ביולי 2026 נחקר שוב באזהרה בלהב 433. ב-5 באוגוסט 2026 הודיעה המשטרה כי החקירה הושלמה וכי התיק הועבר לפרקליטות מיסוי וכלכלה להכרעה בשאלת הגשת כתב אישום, בחשד לעבירות קבלת דבר במרמה, מרמה והפרת אמונים, רישום כוזב במסמכי תאגיד והלבנת הון. נכון ל-18 בספטמבר 2026 לא דווח על הגשת כתב אישום או על סגירת התיק; בדיווחים שצוטטו לא הובאה תגובה מטעם ביטון. חלה חזקת החפות.
+      en: "In October 2024, Israel Police opened an investigation into Haim Biton and others on suspicion that public funds earmarked for education in the Shas-affiliated 'Ma'ayan HaChinuch HaTorani' school network were diverted to finance a children's supplement in the 'HaDerech' newspaper during the period he headed the network. In March 2025 the probe moved to an overt phase: Biton was summoned for questioning and four suspects were detained; on 12 July 2026 he was questioned under caution again at Lahav 433. On 5 August 2026 police announced that the investigation was complete and the file had been transferred to the Taxation and Economics Prosecution to decide whether to file an indictment, on suspicion of obtaining by fraud, fraud and breach of trust, false corporate records, and money laundering. As of 18 September 2026 no indictment or closure of the case had been reported; the cited reports did not carry a response from Biton. The presumption of innocence applies."
     sources:
       - url: https://www.ynet.co.il/news/article/syvexqlnke
         title: 'השר חיים ביטון זומן לחקירה – החשד: כספי ציבור שימשו למימון עיתון של ש"ס'
@@ -59,4 +64,42 @@ claims:
       - url: https://www.timesofisrael.com/police-grill-shas-minister-for-alleged-funneling-of-taxpayer-money-to-party-paper/
         title: Police grill Shas minister for alleged funneling of taxpayer money to party paper
         publisher: The Times of Israel
-lastReviewed: 2026-07-05
+      - url: https://www.inn.co.il/news/701333
+        title: 'בחשד למרמה והפרת אמונים: השר לשעבר חיים ביטון נחקר באזהרה בלהב 433'
+        publisher: Arutz 7
+      - url: https://www.calcalist.co.il/local_news/article/bkz00f00glgg
+        title: 'פרשת ביטאון "הדרך": הפרקליטות תכריע אם להגיש כתב אישום נגד ח"כ חיים ביטון מש"ס'
+        publisher: Calcalist
+  - kind: negative
+    category: controversy
+    status: settled
+    date: 2026-05-12
+    title:
+      he: נזיפה ושלילת שכר ליומיים מוועדת האתיקה בגין היעדרויות ממליאת הכנסת (2026)
+      en: Ethics Committee reprimand and two-day pay deduction over absences from Knesset plenum sessions (2026)
+    description:
+      he: בהחלטה 51/25 מ-12 במאי 2026 קבעה ועדת האתיקה של הכנסת כי ביטון, בעת שכיהן כשר שאינו חבר כנסת, נעדר במושב השלישי של הכנסת ה-25 מ-7 ישיבות מליאה מעבר למכסה המורחבת החלה על שרים. ביטון השיב כי חלק מההיעדרויות נבע מימי אבל על אחיו וכי עמד בראש משלחת רשמית לפולין; הוועדה הכירה בימי האבל כהסבר סביר אך לא בפעילות ציבורית, וציינה כי חרג מהמכסה גם במושבים הקודמים. הוועדה הטילה עליו נזיפה ושלילת שכר למשך יומיים. מדובר בסנקציה אתית פרלמנטרית ולא בהליך פלילי.
+      en: In decision 25/51 of 12 May 2026, the Knesset Ethics Committee found that Biton, while serving as a minister who was not a Knesset member, was absent during the third session of the 25th Knesset from 7 plenum sessions beyond the extended quota that applies to ministers. Biton replied that some absences were due to mourning for his brother and that he had headed an official delegation to Poland; the committee accepted the mourning days as a reasonable explanation but not public activity, and noted he had exceeded the quota in the previous sessions as well. The committee imposed a reprimand and a two-day pay deduction. This was a parliamentary ethics sanction, not a criminal proceeding.
+    sources:
+      - url: https://main.knesset.gov.il/Activity/committees/Ethics/Decisions25/Decisions25-51.pdf
+        title: החלטה 51/25 – החלטת ועדת האתיקה בעניין היעדרויות חברי הכנסת מישיבות הכנסת במושב השלישי של הכנסת ה-25
+        publisher: Knesset
+      - url: https://www.inn.co.il/news/696706
+        title: ועדת האתיקה הטילה סנקציות על שרים וחברי כנסת
+        publisher: Arutz 7
+  - kind: neutral
+    category: news
+    date: 2026-09-08
+    title:
+      he: הוצב במקום החמישי ברשימת ש"ס לכנסת ה-26
+      en: Placed fifth on the Shas list for the 26th Knesset
+    description:
+      he: ב-8 בספטמבר 2026 פרסמה ש"ס את רשימתה לבחירות 27 באוקטובר 2026, וביטון הוצב בה במקום החמישי, אחרי אריה דרעי, ינון אזולאי, מיכאל מלכיאלי ויואב בן צור.
+      en: On 8 September 2026 Shas published its list for the 27 October 2026 election, with Biton placed fifth, after Aryeh Deri, Yinon Azoulay, Michael Malkieli and Yoav Ben-Tzur.
+    sources:
+      - url: https://www.ynet.co.il/news/elections2026/article/hkjzuqtofe
+        title: 'עם רב-סרן במילואים במקום ריאלי: זו רשימת ש"ס לכנסת'
+        publisher: Ynet
+      - url: https://www.haaretz.co.il/news/elections/2026-09-08/ty-article/000001a0-7fc4-da8b-afbe-7fe5c7ba0000
+        title: 'רשימת ש"ס לכנסת: מיכאל מלכיאלי קודם למקום השלישי, רב סרן במקום השישי'
+        publisher: Haaretz

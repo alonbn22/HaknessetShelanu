@@ -1,7 +1,8 @@
-# PersonID 12938. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 12938 (Hamad Amar). Researched and source-verified 2026-09-18 (every
+# cited URL re-fetched; Knesset position dates cross-checked against the Knesset
+# OData). Neutral language; legal status marked. REVIEW before launch.
 personId: 12938
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -34,20 +35,55 @@ claims:
       en: Minister in the Finance Ministry and Deputy Speaker of the Knesset
     description:
       he: ב-13 ביוני 2021 הושבע חמד עמאר כשר במשרד האוצר, אחד משני שרים לא-יהודים
-        בממשלה דאז, וכיהן בתפקיד עד דצמבר 2022. כן כיהן כמשנה ליושב ראש הכנסת
+        בממשלה דאז, וכיהן בתפקיד עד 29 בדצמבר 2022. כן כיהן כמשנה ליושב ראש הכנסת
         בכנסת ה-20 ובכנסת ה-23.
       en: On 13 June 2021, Hamad Amar was sworn in as a minister in the Finance
         Ministry, one of two non-Jewish ministers in the government at the time,
-        serving until December 2022. He also served as a Deputy Speaker of the
+        serving until 29 December 2022. He also served as a Deputy Speaker of the
         Knesset in the 20th and 23rd Knessets.
     date: 2021-06-13
     sources:
       - url: https://www.jpost.com/breaking-news/rift-in-yisrael-beytenu-causes-tension-670862
         title: New government to include Druze minister after dispute
         publisher: The Jerusalem Post
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/12938
+        title: חמד עמאר – פרטים אישיים ותפקידים (אתר הכנסת)
+        publisher: Knesset
       - url: https://he.wikipedia.org/wiki/%D7%97%D7%9E%D7%93_%D7%A2%D7%9E%D7%90%D7%A8
         title: Hamad Amar
         publisher: Wikipedia (Hebrew)
-      - url: https://www.wikidata.org/wiki/Q1572575
-        title: Hamad Amar (Q1572575)
-        publisher: Wikidata
+  - kind: positive
+    category: achievement
+    date: 2025-07-16
+    title:
+      he: נכנס לאזור החיץ בסוריה כדי להשיב צעירים דרוזים ישראלים שחצו את הגבול
+      en: Entered the Syrian buffer zone to bring back Israeli Druze youths who had crossed the border
+    description:
+      he: ב-16 ביולי 2025, על רקע האלימות נגד הדרוזים בסוריה ולאחר שכאלף צעירים דרוזים מישראל חצו את הגבול, נכנס עמאר — יחד עם ח"כ עפיף עבד ובליווי כוחות הביטחון ובאישורם — לאזור החיץ בצד הסורי כדי לשכנע את הצעירים לשוב לישראל. לשכתו מסרה כי פעל "מתוך אחריות לאומית ודאגה עמוקה לשלומם של הצעירים הדרוזים".
+      en: On 16 July 2025, amid violence against the Druze in Syria and after about a thousand young Israeli Druze had crossed the border, Amar — together with MK Afif Abed, accompanied by security forces and with their permission — entered the buffer zone on the Syrian side to persuade the youths to return to Israel. His office said he acted "out of national responsibility and deep concern for the safety of the Druze youth."
+    sources:
+      - url: https://www.ynet.co.il/news/article/s1km8ubige
+        title: חברי הכנסת חמד עמאר ועפיף עבד חצו את הגבול לסוריה
+        publisher: Ynet
+      - url: https://www.timesofisrael.com/liveblog_entry/druze-mk-enters-syrian-buffer-zone-in-effort-to-bring-israeli-druze-back-after-they-crossed-border/
+        title: Druze MK enters Syrian buffer zone in effort to bring Israeli Druze back after they crossed border
+        publisher: The Times of Israel
+  - kind: neutral
+    category: news
+    date: 2026-09-06
+    title:
+      he: הוצב במקום השביעי ברשימת ישראל ביתנו לכנסת ה-26
+      en: Placed seventh on the Yisrael Beiteinu list for the 26th Knesset
+    description:
+      he: ב-6 בספטמבר 2026 הציג אביגדור ליברמן את רשימת ישראל ביתנו לבחירות 27 באוקטובר 2026, ועמאר הוצב בה במקום השביעי. עוד קודם לכן, ב-27 במאי 2026, הודיעה המפלגה כי עמאר הוא מועמדה לתפקיד השר לביטחון לאומי (ביטחון פנים) בממשלה הבאה.
+      en: On 6 September 2026 Avigdor Liberman presented the Yisrael Beiteinu list for the 27 October 2026 election, with Amar placed seventh. Earlier, on 27 May 2026, the party had announced Amar as its candidate for Minister of Public Security in the next government.
+    sources:
+      - url: https://www.jpost.com/israel-election-2026/article-907744
+        title: Liberman unveils Yisrael Beytenu's election list with Rafi Ben Shitrit second, Sharon Sharabi sixth
+        publisher: The Jerusalem Post
+      - url: https://www.inn.co.il/news/705750
+        title: ישראל ביתנו הציגה את רשימת המועמדים שלה לכנסת ה-26
+        publisher: Arutz 7
+      - url: https://beytenu.org.il/israel-beytenu-hamed-amar-internal-security/
+        title: ח״כ חמד עמאר מועמד ישראל ביתנו לתפקיד השר לביטחון הפנים בממשלה הבאה
+        publisher: Yisrael Beiteinu (party website)

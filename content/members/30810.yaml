@@ -1,94 +1,103 @@
-# PersonID 30810. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30810. Researched from reputable public sources and source-verified
+# (every cited URL re-fetched). Neutral language; legal status marked. Reviewed 2026-09-18.
 personId: 30810
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: חברת כנסת מטעם הציונות הדתית (משנת 2021)
-      en: Member of Knesset for the Religious Zionist Party (since 2021)
+      he: "חברת כנסת מטעם הציונות הדתית (משנת 2021)"
+      en: "Member of Knesset for the Religious Zionist Party (since 2021)"
     description:
-      he: מיכל מרים וולדיגר, עורכת דין בהשכלתה (בוגרת משפטים מאוניברסיטת בר-אילן),
-        נבחרה לכנסת ה-24 בשנת 2021 ברשימת הציונות הדתית ונבחרה שוב לכנסת ה-25
-        בשנת 2022. לפני כן כיהנה כחברת מועצת העיר גבעת שמואל מטעם הבית היהודי
-        החל מ-2013.
-      en: Michal Miriam Waldiger, a lawyer by training (law degree from Bar-Ilan
-        University), was elected to the 24th Knesset in 2021 on the Religious
-        Zionist Party list and re-elected to the 25th Knesset in 2022. She
-        previously served on the Givat Shmuel municipal council for The Jewish
-        Home from 2013.
-    date: 2021-04-06
+      he: "מיכל מרים וולדיגר, עורכת דין בהשכלתה (בוגרת משפטים מאוניברסיטת בר-אילן), נבחרה לכנסת ה-24 בשנת 2021 ברשימת הציונות הדתית ונבחרה שוב לכנסת ה-25 בשנת 2022. לפני כן כיהנה כחברת מועצת העיר גבעת שמואל מטעם הבית היהודי החל מ-2013."
+      en: "Michal Miriam Waldiger, a lawyer by training (law degree from Bar-Ilan University), was elected to the 24th Knesset in 2021 on the Religious Zionist Party list and re-elected to the 25th Knesset in 2022. She previously served on the Givat Shmuel municipal council for The Jewish Home from 2013."
+    date: "2021-04-06"
     sources:
-      - url: https://en.wikipedia.org/wiki/Michal_Waldiger
-        title: Michal Waldiger
-        publisher: Wikipedia
-      - url: https://www.wikidata.org/wiki/Q106226075
-        title: Michelle Waldiger (Q106226075)
-        publisher: Wikidata
+      - url: "https://en.wikipedia.org/wiki/Michal_Waldiger"
+        title: "Michal Waldiger"
+        publisher: "Wikipedia"
+      - url: "https://www.wikidata.org/wiki/Q106226075"
+        title: "Michal Waldiger (Q106226075)"
+        publisher: "Wikidata"
   - kind: positive
     category: achievement
     title:
-      he: כיהנה כסגנית שר האוצר (2022-2023)
-      en: Served as Deputy Minister of Finance (2022-2023)
+      he: "כיהנה כסגנית שר האוצר (2023)"
+      en: "Served as Deputy Minister of Finance (2023)"
     description:
-      he: לאחר הבחירות לכנסת ה-25 מונתה וולדיגר לסגנית שר האוצר בממשלה שבראשה עמד
-        בנימין נתניהו, תחת שר האוצר בצלאל סמוטריץ' מהציונות הדתית. באוקטובר 2023
-        התפטרה מתפקידה והודיעה כי היא מפנה את תקציב לשכתה ואת זמנה למאמץ המלחמתי
-        ולסיוע לנפגעי הטראומה בעקבות מתקפת 7 באוקטובר.
-      en: Following the 2022 election, Waldiger was appointed Deputy Minister of
-        Finance in the government led by Benjamin Netanyahu, under Finance
-        Minister Bezalel Smotrich of the Religious Zionist Party. In October
-        2023 she resigned the post, announcing she was redirecting her office's
-        budget and her own time to the war effort and to aiding those
-        traumatized by the October 7 attack.
-    date: 2023-10-26
+      he: "לאחר הבחירות לכנסת ה-25 מונתה וולדיגר לסגנית שר האוצר בממשלה ה-37, תחת שר האוצר בצלאל סמוטריץ' (על פי רישומי הכנסת, מ-3 בינואר 2023). ב-26 באוקטובר 2023 הודיעה על התפטרותה מהתפקיד ועל הפניית תקציב לשכתה וזמנה למאמץ המלחמתי ולסיוע לנפגעי מתקפת 7 באוקטובר."
+      en: "Following the 2022 election, Waldiger was appointed Deputy Minister of Finance in the 37th government, under Finance Minister Bezalel Smotrich (per Knesset records, from 3 January 2023). On 26 October 2023 she announced her resignation from the post, redirecting her office's budget and her own time to the war effort and to aiding those affected by the 7 October attack."
+    date: "2023-10-26"
     sources:
-      - url: https://www.timesofisrael.com/deputy-finance-minister-resigns-to-dedicate-her-time-offices-budget-to-war-efforts/
-        title: Deputy finance minister resigns to dedicate her time, office's budget to
-          war efforts
-        publisher: The Times of Israel
-      - url: https://en.wikipedia.org/wiki/Michal_Waldiger
-        title: Michal Waldiger
-        publisher: Wikipedia
+      - url: "https://www.timesofisrael.com/deputy-finance-minister-resigns-to-dedicate-her-time-offices-budget-to-war-efforts/"
+        title: "Deputy finance minister resigns to dedicate her time, office's budget to war efforts"
+        publisher: "The Times of Israel"
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30810"
+        title: "מיכל וולדיגר — דף חברת הכנסת"
+        publisher: "Knesset"
+      - url: "https://en.wikipedia.org/wiki/Michal_Waldiger"
+        title: "Michal Waldiger"
+        publisher: "Wikipedia"
   - kind: positive
     category: achievement
     title:
-      he: יושבת-ראש ועדת העבודה והרווחה של הכנסת (משנת 2025)
-      en: Chair of the Knesset Labor and Welfare Committee (since 2025)
+      he: "יושבת-ראש ועדת העבודה והרווחה של הכנסת (מאוגוסט 2025)"
+      en: "Chair of the Knesset Labor and Welfare Committee (since August 2025)"
     description:
-      he: באוגוסט 2025 מונתה וולדיגר ליושבת-ראש ועדת העבודה והרווחה של הכנסת. מתפקיד
-        זה הציבה כמשימה מרכזית את שיפור מערכות בריאות הנפש והשיקום, ובכלל זה
-        הסיוע לנפגעי טראומה בעקבות המלחמה.
-      en: In August 2025 Waldiger was appointed chair of the Knesset's Labor and
-        Welfare Committee. From this post she has made overhauling the country's
-        mental-health and rehabilitation systems, including support for the
-        war-traumatized, a central focus of her work.
-    date: 2025-08-01
+      he: "ב-4 באוגוסט 2025 אישרה ועדת הכנסת פה אחד את מינויה של וולדיגר ליושבת-ראש ועדת העבודה והרווחה, במקומו של ח\"כ ישראל אייכלר שפרש מהתפקיד עם יציאת יהדות התורה מהקואליציה. מתפקיד זה הציבה כמשימה מרכזית את שיפור מערכות בריאות הנפש והשיקום, ובכלל זה הסיוע לנפגעי טראומה בעקבות המלחמה."
+      en: "On 4 August 2025 the Knesset House Committee unanimously approved Waldiger's appointment as chair of the Labor and Welfare Committee, replacing MK Yisrael Eichler, who stepped down when United Torah Judaism left the coalition. From this post she has made overhauling the mental-health and rehabilitation systems, including support for those traumatized by the war, a central focus of her work."
+    date: "2025-08-04"
     sources:
-      - url: https://www.timesofisrael.com/from-key-knesset-post-religious-zionisms-woldiger-champions-healing-for-war-traumatized/
-        title: From key Knesset post, Religious Zionism's Woldiger champions healing for
-          war-traumatized
-        publisher: The Times of Israel
-      - url: https://en.wikipedia.org/wiki/Michal_Waldiger
-        title: Michal Waldiger
-        publisher: Wikipedia
+      - url: "https://www.davar1.co.il/619780/"
+        title: "אושרה המלצת ועדת הכנסת: ח\"כ מיכל וולדיגר מונתה ליו\"ר ועדת העבודה והרווחה"
+        publisher: "Davar"
+      - url: "https://www.timesofisrael.com/from-key-knesset-post-religious-zionisms-woldiger-champions-healing-for-war-traumatized/"
+        title: "From key Knesset post, Religious Zionism's Woldiger champions healing for war-traumatized"
+        publisher: "The Times of Israel"
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30810"
+        title: "מיכל וולדיגר — דף חברת הכנסת"
+        publisher: "Knesset"
   - kind: positive
     category: volunteering
     title:
-      he: ייסדה והובילה ארגונים בתחום הרווחה והשירות הלאומי
-      en: Founded and led welfare and national-service organizations
+      he: "ייסדה והובילה ארגונים בתחום הרווחה והשירות הלאומי"
+      en: "Founded and led welfare and national-service organizations"
     description:
-      he: בשנת 2014 הקימה וולדיגר את ארגון אמונת"ך למען משפחות נפגעי תחלואה כפולה
-        (מתמודדי נפש המתמודדים גם עם התמכרויות) ועומדת בראשו, וכן מונתה ב-2017
-        לראשת עמותת בת עמי לשירות לאומי לבנות הציונות הדתית, ממנה פרשה ב-2021
-        לקראת ריצתה לכנסת.
-      en: In 2014 Waldiger founded and now heads Emunatech, an organization for
-        families of people coping with dual diagnosis (mental-health challenges
-        alongside addiction). In 2017 she was appointed head of Bat Ami, a
-        national-service organization for religious-Zionist young women, which
-        she left in 2021 ahead of her Knesset candidacy.
+      he: "בשנת 2014 הקימה וולדיגר את ארגון אמונת\"ך למען משפחות נפגעי תחלואה כפולה (מתמודדי נפש המתמודדים גם עם התמכרויות) ועומדת בראשו, וכן מונתה ב-2017 לראשת עמותת בת עמי לשירות לאומי לבנות הציונות הדתית, ממנה פרשה ב-2021 לקראת ריצתה לכנסת."
+      en: "In 2014 Waldiger founded and now heads Emunatech, an organization for families of people coping with dual diagnosis (mental-health challenges alongside addiction). In 2017 she was appointed head of Bat Ami, a national-service organization for religious-Zionist young women, which she left in 2021 ahead of her Knesset candidacy."
     sources:
-      - url: https://he.wikipedia.org/wiki/%D7%9E%D7%99%D7%9B%D7%9C_%D7%95%D7%95%D7%9C%D7%93%D7%99%D7%92%D7%A8
-        title: מיכל וולדיגר
-        publisher: Hebrew Wikipedia
+      - url: "https://he.wikipedia.org/wiki/%D7%9E%D7%99%D7%9B%D7%9C_%D7%95%D7%95%D7%9C%D7%93%D7%99%D7%92%D7%A8"
+        title: "מיכל וולדיגר"
+        publisher: "Wikipedia (Hebrew)"
+  - kind: neutral
+    category: news
+    date: "2026-07-26"
+    title:
+      he: "לא זכתה במקום ריאלי בפריימריז של הציונות הדתית"
+      en: "Did not win a realistic slot in the Religious Zionism primary"
+    description:
+      he: "בבחירות הפנימיות של הציונות הדתית שנערכו ב-26 ביולי 2026 בקרב כ-170 חברי מרכז המפלגה, הגיעה וולדיגר למקום שהוגדר בדיווחים כלא ריאלי, לאחר שעומר רחמים, יועצו של סמוטריץ', עקף אותה. ברשימה הסופית של הציונות הדתית–זהות לכנסת ה-26, שהוגשה בספטמבר 2026 לאחר השריונים והחיבור עם משה פייגלין, הוצבה במקום ה-16."
+      en: "In the Religious Zionism party's internal election on 26 July 2026, held among about 170 party-center members, Waldiger finished in a slot described in reports as unrealistic, after Omer Rahamim, an adviser to Smotrich, overtook her. On the final Religious Zionism–Zehut list for the 26th Knesset, submitted in September 2026 after the reserved slots and the merger with Moshe Feiglin, she was placed 16th."
+    sources:
+      - url: "https://www.ynet.co.il/news/article/sy2mgcxhzl"
+        title: "התוצאות הסופיות: זו רשימת \"הציונות הדתית\" לבחירות הקרובות"
+        publisher: "ynet"
+      - url: "https://www.ynet.co.il/news/elections2026/article/hytc0wadmx"
+        title: "רשימת הציונות הדתית ופייגלין - והח\"כים שנדחקו"
+        publisher: "ynet"
+  - kind: neutral
+    category: news
+    date: "2026-09-09"
+    title:
+      he: "הודיעה כי לא תכהן בכנסת הבאה"
+      en: "Announced she will not serve in the next Knesset"
+    description:
+      he: "ב-9 בספטמבר 2026 פרסמה וולדיגר פוסט פרידה שבו הודיעה כי לא תכהן בכנסת ה-26, לאחר שלא הצליחה להתברג במקום ריאלי ברשימת הציונות הדתית. היא כתבה כי ביקשה מיו\"ר המפלגה בצלאל סמוטריץ' להציב אותה בסוף הרשימה, כי היא נשארת בציונות הדתית, וכי תמשיך את פעילותה בתחומי בריאות הנפש, הרווחה והמשפחה מחוץ לכנסת: \"הפלטפורמה שלי משתנה, אבל השליחות לא\"."
+      en: "On 9 September 2026 Waldiger published a farewell post announcing that she would not serve in the 26th Knesset, after failing to secure a realistic slot on the Religious Zionism list. She wrote that she had asked party chairman Bezalel Smotrich to place her at the end of the list, that she remains in Religious Zionism, and that she would continue her work on mental health, welfare and family outside the Knesset: \"My platform is changing, but the mission is not.\""
+    sources:
+      - url: "https://kipa.co.il/%D7%97%D7%93%D7%A9%D7%95%D7%AA/1231394-0"
+        title: "אחרי יותר מ-5 שנים: מיכל וולדיגר נפרדת"
+        publisher: "Kipa"
+      - url: "https://www.ynet.co.il/news/elections2026/article/hytc0wadmx"
+        title: "רשימת הציונות הדתית ופייגלין - והח\"כים שנדחקו"
+        publisher: "ynet"

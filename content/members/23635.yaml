@@ -1,57 +1,133 @@
-# PersonID 23635. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 23635. Researched from reputable public sources and source-verified
+# (every cited URL re-fetched). Neutral language; legal status marked. Reviewed 2026-09-18.
 personId: 23635
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: האישה הראשונה ילידת אתיופיה שנבחרה לכנסת
-      en: First Ethiopian-born woman elected to the Knesset
+      he: "האישה הראשונה ילידת אתיופיה שנבחרה לכנסת"
+      en: "First Ethiopian-born woman elected to the Knesset"
     description:
-      he: פנינה תמנו-שטה נכנסה לכנסת ב-2013 מטעם מפלגת יש עתיד, והפכה לאישה הראשונה
-        ילידת אתיופיה שנבחרה לכנסת ישראל.
-      en: Pnina Tamano-Shata entered the Knesset in 2013 with the Yesh Atid party,
-        becoming the first Ethiopian-born woman elected to the Israeli Knesset.
-    date: 2013-01-22
+      he: "פנינה תמנו-שטה נכנסה לכנסת ב-2013 מטעם מפלגת יש עתיד, והפכה לאישה הראשונה ילידת אתיופיה שנבחרה לכנסת ישראל. היא עלתה לישראל ב-1984 במבצע משה."
+      en: "Pnina Tamano-Shata entered the Knesset in 2013 with the Yesh Atid party, becoming the first Ethiopian-born woman elected to the Israeli Knesset. She immigrated to Israel in 1984 in Operation Moses."
+    date: "2013-01-22"
     sources:
-      - url: https://en.wikipedia.org/wiki/Pnina_Tamano-Shata
-        title: Pnina Tamano-Shata
-        publisher: Wikipedia
+      - url: "https://en.wikipedia.org/wiki/Pnina_Tamano-Shata"
+        title: "Pnina Tamano-Shata"
+        publisher: "Wikipedia"
+      - url: "https://www.jns.org/news/israel-news/a-blue-and-white-call-for-unity"
+        title: "Israeli elections 2026: Meet the parliament — MK Pnina Tamano-Shata"
+        publisher: "JNS"
   - kind: positive
     category: achievement
     title:
-      he: השרה הראשונה ילידת אתיופיה בממשלת ישראל
-      en: First Ethiopian-born cabinet minister in Israel
+      he: "השרה הראשונה ילידת אתיופיה בממשלת ישראל"
+      en: "First Ethiopian-born cabinet minister in Israel"
     description:
-      he: ב-2020 מונתה תמנו-שטה לשרת העלייה והקליטה והפכה לחברת הממשלה הראשונה ילידת
-        אתיופיה בתולדות ישראל. היא כיהנה בתפקיד עד שנת 2022.
-      en: In 2020 Tamano-Shata was appointed Minister of Aliyah and Integration
-        (Immigrant Absorption), becoming the first Ethiopian-born cabinet member
-        in Israel's history. She served in the role until 2022.
-    date: 2020-05-17
+      he: "ב-2020 מונתה תמנו-שטה לשרת העלייה והקליטה והפכה לחברת הממשלה הראשונה ילידת אתיופיה בתולדות ישראל. היא כיהנה בתפקיד בממשלה ה-35 ובממשלה ה-36 עד דצמבר 2022."
+      en: "In 2020 Tamano-Shata was appointed Minister of Aliyah and Integration, becoming the first Ethiopian-born cabinet member in Israel's history. She held the post in the 35th and 36th governments until December 2022."
+    date: "2020-05-17"
     sources:
-      - url: https://en.wikipedia.org/wiki/Pnina_Tamano-Shata
-        title: Pnina Tamano-Shata
-        publisher: Wikipedia
-      - url: https://globalvoices.org/2020/06/08/israel-appoints-its-first-ethiopian-born-minister-pnina-tamano-shata/
-        title: Israel appoints its first Ethiopian-born minister, Pnina Tamano-Shata
-        publisher: Global Voices
+      - url: "https://en.wikipedia.org/wiki/Pnina_Tamano-Shata"
+        title: "Pnina Tamano-Shata"
+        publisher: "Wikipedia"
+      - url: "https://globalvoices.org/2020/06/08/israel-appoints-its-first-ethiopian-born-minister-pnina-tamano-shata/"
+        title: "Israel appoints its first Ethiopian-born minister, Pnina Tamano-Shata"
+        publisher: "Global Voices"
+      - url: "https://www.jns.org/news/israel-news/a-blue-and-white-call-for-unity"
+        title: "Israeli elections 2026: Meet the parliament — MK Pnina Tamano-Shata"
+        publisher: "JNS"
   - kind: positive
     category: award
     title:
-      he: כלת פרס מגן בגין למנהיגות
-      en: Recipient of the Magen Begin Prize for Leadership
+      he: "כלת פרס מגן בגין למנהיגות"
+      en: "Recipient of the Magen Begin Prize for Leadership"
     description:
-      he: ביוני 2021 הוענק לתמנו-שטה פרס מגן בגין מטעם מרכז מורשת בגין, על פועלה למען
-        עלייה וקליטה ועל קידום צדק חברתי, שוויון ומאבק באפליה.
-      en: In June 2021 Tamano-Shata was awarded the Magen Begin Prize for Leadership
-        by the Begin Heritage Center, recognizing her work on aliyah and
-        integration and her efforts to promote social justice, equality and the
-        fight against discrimination.
-    date: 2021-06-09
+      he: "ביוני 2021 הוענק לתמנו-שטה פרס מגן בגין מטעם מרכז מורשת בגין, על פועלה למען עלייה וקליטה ועל קידום צדק חברתי, שוויון ומאבק באפליה."
+      en: "In June 2021 Tamano-Shata was awarded the Magen Begin Prize for Leadership by the Begin Heritage Center, recognizing her work on aliyah and integration and her efforts to promote social justice, equality and the fight against discrimination."
+    date: "2021-06-09"
     sources:
-      - url: https://www.jpost.com/israel-news/aliyah-and-integration-minister-pnina-tamano-shata-awarded-magen-begin-prize-670296
-        title: Aliyah & Integration Minister Pnina Tamano-Shata awarded Magen Begin
-          Prize
-        publisher: The Jerusalem Post
+      - url: "https://www.jpost.com/israel-news/aliyah-and-integration-minister-pnina-tamano-shata-awarded-magen-begin-prize-670296"
+        title: "Aliyah & Integration Minister Pnina Tamano-Shata awarded Magen Begin Prize"
+        publisher: "The Jerusalem Post"
+  - kind: positive
+    category: award
+    title:
+      he: "פרס \"הגיבור הבלתי מוכר\" על שם מרטין לותר קינג (2016)"
+      en: "Martin Luther King \"Unsung Hero Award\" (2016)"
+    description:
+      he: "בשנת 2016 קיבלה תמנו-שטה את פרס \"הגיבור הבלתי מוכר\" על שם מרטין לותר קינג, על פעילותה למאבק בגזענות ולקידום שילובם של יוצאי אתיופיה, ובכלל זה פעולתה להקמת ועדת פלמור למיגור הגזענות (2015)."
+      en: "In 2016 Tamano-Shata received the Martin Luther King \"Unsung Hero Award\" for her work against racism and for the integration of Ethiopian Israelis, including her role in the establishment of the Palmor Committee for the eradication of racism (2015)."
+    date: "2016-01-01"
+    sources:
+      - url: "https://www.jns.org/news/israel-news/a-blue-and-white-call-for-unity"
+        title: "Israeli elections 2026: Meet the parliament — MK Pnina Tamano-Shata"
+        publisher: "JNS"
+  - kind: positive
+    category: achievement
+    title:
+      he: "חוקים שהתקבלו ביוזמתה בכנסת ה-25: מחיקת רישומים פליליים ליוצאי אתיופיה, מענק לנשים היוצאות ממקלט, ועוד"
+      en: "Laws passed on her initiative in the 25th Knesset: erasing criminal records of Ethiopian Israelis, larger grants for women leaving shelters, and more"
+    description:
+      he: "תמנו-שטה נמנתה עם יוזמי כמה חוקים שהתקבלו בקריאה שלישית בכנסת ה-25, ובהם: תיקון מס' 4 לחוק שירותי רווחה (2024), שהעלה את מענק ההסתגלות לנשים היוצאות ממקלט לנשים מוכות מ-8,000 ל-11,000 ש\"ח והרחיב את התוספת עבור ילדיהן; חוק מחיקת רישומים פליליים ומשטרתיים של יוצאי אתיופיה (2024), המורה על מחיקת רישומים בעבירות סדר ציבורי שנעברו עד סוף 2020; תיקון מס' 27 לחוק הסיוע המשפטי (2024), המעניק סיוע משפטי ללא מבחן הכנסה בתביעות לפי חוק איסור הפליה במוצרים ובשירותים; ותיקון מס' 22 לחוק הכשרות המשפטית והאפוטרופסות (2025)."
+      en: "Tamano-Shata was among the initiators of several laws passed in their third reading in the 25th Knesset, including: Amendment 4 to the Welfare Services Law (2024), raising the adjustment grant for women leaving domestic-violence shelters from NIS 8,000 to NIS 11,000 and extending the per-child supplement; the Erasure of Criminal and Police Records of Ethiopian Israelis Law (2024), ordering the deletion of records for public-order offenses committed up to the end of 2020; Amendment 27 to the Legal Aid Law (2024), granting legal aid without a means test in claims under the Prohibition of Discrimination in Products and Services Law; and Amendment 22 to the Legal Capacity and Guardianship Law (2025)."
+    date: "2025-04-01"
+    sources:
+      - url: "https://main.knesset.gov.il/Activity/Legislation/Laws/Pages/LawBill.aspx?t=lawsuggestionssearch&lawitemid=2201652"
+        title: "חוק שירותי רווחה (זכויות נשים ששהו במקלט לנשים מוכות) (תיקון מס' 4), התשפ\"ד–2024 — דף הצעת החוק"
+        publisher: "Knesset"
+      - url: "https://main.knesset.gov.il/Activity/Legislation/Laws/Pages/LawBill.aspx?t=lawsuggestionssearch&lawitemid=2209394"
+        title: "חוק מחיקת רישומים פליליים ומשטרתיים של יוצאי אתיופיה, התשפ\"ד–2024 — דף הצעת החוק"
+        publisher: "Knesset"
+      - url: "https://main.knesset.gov.il/Activity/Legislation/Laws/Pages/LawBill.aspx?t=lawsuggestionssearch&lawitemid=2208200"
+        title: "חוק הסיוע המשפטי (תיקון מס' 27 – הוראת שעה), התשפ\"ה–2024 — דף הצעת החוק"
+        publisher: "Knesset"
+      - url: "https://main.knesset.gov.il/Activity/Legislation/Laws/Pages/LawBill.aspx?t=lawsuggestionssearch&lawitemid=2205557"
+        title: "חוק הכשרות המשפטית והאפוטרופסות (תיקון מס' 22 והוראת שעה), התשפ\"ה–2025 — דף הצעת החוק"
+        publisher: "Knesset"
+  - kind: neutral
+    category: role
+    date: "2025-07-08"
+    title:
+      he: "יו\"ר סיעת כחול לבן – המחנה הממלכתי בכנסת"
+      en: "Chair of the Blue and White – National Unity faction in the Knesset"
+    description:
+      he: "תמנו-שטה מכהנת כיושבת ראש סיעת כחול לבן – המחנה הממלכתי בכנסת (על פי רישומי הכנסת, מ-8 ביולי 2025, עם שינוי שם הסיעה), ובמהלך הכנסת ה-25 עמדה גם בראש הוועדה לקידום מעמד האישה ולשוויון מגדרי."
+      en: "Tamano-Shata serves as chair of the Blue and White – National Unity faction in the Knesset (per Knesset records, since 8 July 2025, when the faction was renamed), and during the 25th Knesset also chaired the Committee on the Status of Women and Gender Equality."
+    sources:
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/23635"
+        title: "פנינה תמנו — דף חברת הכנסת"
+        publisher: "Knesset"
+      - url: "https://www.jns.org/news/israel-news/a-blue-and-white-call-for-unity"
+        title: "Israeli elections 2026: Meet the parliament — MK Pnina Tamano-Shata"
+        publisher: "JNS"
+  - kind: neutral
+    category: news
+    date: "2026-05-20"
+    title:
+      he: "הצעת חוק לפיזור הכנסת מטעמה אושרה בקריאה טרומית"
+      en: "Her bill to dissolve the Knesset passed a preliminary reading"
+    description:
+      he: "ב-20 במאי 2026 אישרה מליאת הכנסת בקריאה טרומית, ברוב של 53 ללא מתנגדים, הצעת חוק אופוזיציונית לפיזור הכנסת שיזמו תמנו-שטה, יו\"ר המפלגה בני גנץ וחברי כנסת נוספים. לפי ההצעה, הבחירות ייערכו 90 יום לאחר אישור החוק."
+      en: "On 20 May 2026 the Knesset plenum approved, in a preliminary reading by 53 votes to none, an opposition bill to dissolve the Knesset sponsored by Tamano-Shata, party chair Benny Gantz and other MKs. Under the bill, elections would be held 90 days after the law's passage."
+    sources:
+      - url: "https://www.timesofisrael.com/liveblog_entry/lawmakers-also-advance-opposition-bill-to-disperse-knesset/"
+        title: "Lawmakers also advance opposition bill to disperse Knesset"
+        publisher: "The Times of Israel"
+  - kind: neutral
+    category: news
+    date: "2026-09-08"
+    title:
+      he: "הוצבה במקום השני ברשימת כחול לבן לכנסת ה-26"
+      en: "Placed second on the Blue and White list for the 26th Knesset"
+    description:
+      he: "ברשימת כחול לבן שהגיש בני גנץ לבחירות 2026 הוצבה תמנו-שטה במקום השני, אחרי גנץ ולפני ראשת עיריית בית שמש לשעבר עליזה בלוך. על פי הדיווחים, המפלגה אינה עוברת את אחוז החסימה בסקרים שפורסמו לקראת הבחירות."
+      en: "On the Blue and White list submitted by Benny Gantz for the 2026 election, Tamano-Shata was placed second, after Gantz and ahead of former Beit Shemesh mayor Aliza Bloch. According to reports, the party was not clearing the electoral threshold in polls published ahead of the election."
+    sources:
+      - url: "https://www.kipa.co.il/%D7%97%D7%93%D7%A9%D7%95%D7%AA/1231292-0/"
+        title: "עליזה בלוך במקום ה-3: הרשימה של בני גנץ לבחירות לכנסת"
+        publisher: "Kipa"
+      - url: "https://www.timesofisrael.com/israels-election-takes-shape-as-38-parties-submit-slates-from-likud-to-joint-list/"
+        title: "Israel's election takes shape as 38 parties submit slates, in battle between pro- and anti-Netanyahu blocs"
+        publisher: "The Times of Israel"

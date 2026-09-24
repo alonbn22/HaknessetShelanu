@@ -8,11 +8,15 @@
 # missile defense) from FY2019; plus post-Oct-2023 wartime supplementals.
 usMilitaryAid:
   source:
-    label: { he: "Congressional Research Service (RL33222)", en: "Congressional Research Service (RL33222)" }
+    label: { he: "Congressional Research Service (RL33222)", en: "Congressional Research Service (RL33222)", ar: "خدمة أبحاث الكونغرس (RL33222)", ru: "Исследовательская служба Конгресса США (RL33222)", es: "Servicio de Investigación del Congreso (RL33222)", fr: "Congressional Research Service (RL33222)" }
     url: "https://www.congress.gov/crs-product/RL33222"
   note:
     he: "סיוע צבאי אמריקאי לפי שנת תקציב (מימון צבאי FMF + הגנה מפני טילים). מ-2019 לפי מזכר ההבנות 2016 (3.8 מיליארד$ לשנה). בנוסף, מאז אוקטובר 2023 הועברו לפחות 16.3 מיליארד$ סיוע צבאי ישיר במסגרת חוקי סיוע חירום."
     en: "U.S. military aid by fiscal year (FMF + missile defense). From 2019 under the 2016 MOU ($3.8B/yr). On top of this, at least $16.3B in direct military aid has been enacted since October 2023 via emergency-aid laws."
+    ar: "المساعدات العسكرية الأمريكية حسب السنة المالية (تمويل عسكري FMF + الدفاع الصاروخي). منذ 2019 وفق مذكرة التفاهم لعام 2016 (3.8 مليار دولار سنويًا). وإضافة إلى ذلك، أُقرّت منذ تشرين الأول/أكتوبر 2023 مساعدات عسكرية مباشرة لا تقل عن 16.3 مليار دولار بموجب قوانين مساعدات طارئة."
+    ru: "Военная помощь США по финансовым годам (военное финансирование FMF + противоракетная оборона). С 2019 года — по меморандуму о взаимопонимании 2016 года (3,8 млрд долларов в год). Кроме того, с октября 2023 года законами о чрезвычайной помощи выделено не менее 16,3 млрд долларов прямой военной помощи."
+    es: "Ayuda militar de EE. UU. por año fiscal (FMF + defensa antimisiles). Desde 2019 según el memorando de 2016 (3800 millones de dólares al año). Además, desde octubre de 2023 se han aprobado al menos 16 300 millones de dólares de ayuda militar directa mediante leyes de ayuda de emergencia."
+    fr: "Aide militaire américaine par exercice budgétaire (FMF + défense antimissile). Depuis 2019 selon le protocole d’accord de 2016 (3,8 Md $ par an). S’y ajoutent au moins 16,3 Md $ d’aide militaire directe votés depuis octobre 2023 par des lois d’aide d’urgence."
   years:
     - { year: 2016, billion: 3.1 }
     - { year: 2017, billion: 3.1 }
@@ -22,30 +26,38 @@ usMilitaryAid:
     - { year: 2021, billion: 3.8 }
     - { year: 2022, billion: 3.8 }
     - { year: 2023, billion: 3.8 }
-    - { year: 2024, billion: 12.5, note: { he: "3.8 מיליארד$ קבוע + ~8.7 מיליארד$ סיוע חירום (אפריל 2024)", en: "$3.8B base + ~$8.7B emergency supplemental (April 2024)" } }
-    - { year: 2025, billion: 3.8, note: { he: "בסיס המזכר; בנוסף לסיוע החירום המתמשך של המלחמה", en: "MOU base; plus ongoing wartime emergency aid" } }
+    - { year: 2024, billion: 12.5, note: { he: "3.8 מיליארד$ קבוע + ~8.7 מיליארד$ סיוע חירום (אפריל 2024)", en: "$3.8B base + ~$8.7B emergency supplemental (April 2024)", ar: "3.8 مليار دولار ثابتة + نحو 8.7 مليار دولار مساعدات طارئة (نيسان/أبريل 2024)", ru: "3,8 млрд долларов базовой помощи + ~8,7 млрд долларов чрезвычайной (апрель 2024 года)", es: "3800 millones de dólares de base + ≈ 8700 millones de dólares de suplemento de emergencia (abril de 2024)", fr: "3,8 Md $ de base + ~8,7 Md $ de supplément d’urgence (avril 2024)" } }
+    - { year: 2025, billion: 3.8, note: { he: "בסיס המזכר; בנוסף לסיוע החירום המתמשך של המלחמה", en: "MOU base; plus ongoing wartime emergency aid", ar: "أساس المذكرة؛ إضافة إلى المساعدات الطارئة المستمرة خلال الحرب", ru: "Базовая сумма меморандума; плюс продолжающаяся чрезвычайная помощь военного времени", es: "Base del memorando; más la ayuda de emergencia en curso por la guerra", fr: "Base du protocole d’accord ; plus l’aide d’urgence en cours liée à la guerre" } }
 
 # Other documented foreign funding (standing / multi-year).
 flows:
   - kind: aid-to-state
-    donor: { he: "גרמניה", en: "Germany" }
-    recipient: { he: "שורדי שואה (ועידת התביעות) ומדינת ישראל", en: "Holocaust survivors (Claims Conference) & Israel" }
-    amount: { he: "מאות מיליוני $ בשנה (מתמשך)", en: "Hundreds of $M per year (ongoing)" }
-    period: { he: "מ-1952 (הסכם השילומים) ועד היום", en: "From 1952 (Reparations Agreement) to today" }
+    donor: { he: "גרמניה", en: "Germany", ar: "ألمانيا", ru: "Германия", es: "Alemania", fr: "Allemagne" }
+    recipient: { he: "שורדי שואה (ועידת התביעות) ומדינת ישראל", en: "Holocaust survivors (Claims Conference) & Israel", ar: "الناجون من المحرقة (مؤتمر المطالبات) ودولة إسرائيل", ru: "Пережившие Холокост («Клеймс конференс») и Государство Израиль", es: "Supervivientes del Holocausto (Claims Conference) e Israel", fr: "Survivants de la Shoah (Claims Conference) et Israël" }
+    amount: { he: "מאות מיליוני $ בשנה (מתמשך)", en: "Hundreds of $M per year (ongoing)", ar: "مئات ملايين الدولارات سنويًا (مستمر)", ru: "Сотни миллионов долларов в год (на постоянной основе)", es: "Cientos de millones de dólares al año (en curso)", fr: "Des centaines de millions de dollars par an (en cours)" }
+    period: { he: "מ-1952 (הסכם השילומים) ועד היום", en: "From 1952 (Reparations Agreement) to today", ar: "منذ 1952 (اتفاقية التعويضات) حتى اليوم", ru: "С 1952 года (Соглашение о репарациях) по сей день", es: "Desde 1952 (Acuerdo de Reparaciones) hasta hoy", fr: "De 1952 (accord de réparations) à aujourd’hui" }
     purpose:
       he: "פיצויים ותשלומי רווחה לשורדי שואה (מנוהל בעיקר דרך ועידת התביעות), בנוסף לשילומים ההיסטוריים למדינה."
       en: "Compensation and welfare payments to Holocaust survivors (mostly via the Claims Conference), on top of the historic reparations to the state."
+      ar: "تعويضات ومدفوعات رفاه للناجين من المحرقة (تُدار أساسًا عبر مؤتمر المطالبات)، إضافة إلى التعويضات التاريخية للدولة."
+      ru: "Компенсации и социальные выплаты пережившим Холокост (в основном через «Клеймс конференс»), помимо исторических репараций государству."
+      es: "Indemnizaciones y pagos asistenciales a supervivientes del Holocausto (sobre todo a través de la Claims Conference), además de las reparaciones históricas al Estado."
+      fr: "Indemnisations et prestations sociales aux survivants de la Shoah (surtout via la Claims Conference), en plus des réparations historiques versées à l’État."
     source:
-      label: { he: "ועידת התביעות", en: "Claims Conference" }
+      label: { he: "ועידת התביעות", en: "Claims Conference", ar: "مؤتمر المطالبات", ru: "«Клеймс конференс»", es: "Claims Conference", fr: "Claims Conference" }
       url: "https://www.claimscon.org/"
   - kind: ngo-donations
-    donor: { he: "ממשלות וגופים זרים (האיחוד האירופי ומדינות שונות)", en: "Foreign governments & bodies (EU and various states)" }
-    recipient: { he: "עמותות וארגוני חברה אזרחית בישראל", en: "Israeli NGOs & civil-society organizations" }
-    amount: { he: "מיליוני שקלים בשנה (מדווח לרשם)", en: "Millions of NIS per year (reported to the Registrar)" }
-    period: { he: "מתמשך; דיווח רבעוני לפי חוק העמותות", en: "Ongoing; reported quarterly under the NGO law" }
+    donor: { he: "ממשלות וגופים זרים (האיחוד האירופי ומדינות שונות)", en: "Foreign governments & bodies (EU and various states)", ar: "حكومات وهيئات أجنبية (الاتحاد الأوروبي ودول مختلفة)", ru: "Иностранные правительства и организации (ЕС и различные государства)", es: "Gobiernos y organismos extranjeros (la UE y varios Estados)", fr: "Gouvernements et organismes étrangers (UE et divers États)" }
+    recipient: { he: "עמותות וארגוני חברה אזרחית בישראל", en: "Israeli NGOs & civil-society organizations", ar: "جمعيات ومنظمات مجتمع مدني في إسرائيل", ru: "Некоммерческие организации и организации гражданского общества в Израиле", es: "ONG y organizaciones de la sociedad civil israelíes", fr: "ONG et organisations de la société civile israéliennes" }
+    amount: { he: "מיליוני שקלים בשנה (מדווח לרשם)", en: "Millions of NIS per year (reported to the Registrar)", ar: "ملايين الشواكل سنويًا (يُبلَّغ عنها للمسجِّل)", ru: "Миллионы шекелей в год (по отчётам регистратору)", es: "Millones de shékels al año (declarados al Registro)", fr: "Des millions de shekels par an (déclarés au Registre)" }
+    period: { he: "מתמשך; דיווח רבעוני לפי חוק העמותות", en: "Ongoing; reported quarterly under the NGO law", ar: "مستمر؛ تقارير ربع سنوية بموجب قانون الجمعيات", ru: "На постоянной основе; ежеквартальная отчётность по закону о некоммерческих организациях", es: "En curso; declarado trimestralmente según la ley de asociaciones", fr: "En cours ; déclaré chaque trimestre selon la loi sur les associations" }
     purpose:
       he: "מימון פעילות של ארגוני חברה אזרחית מכל קצוות המפה (זכויות אדם, התיישבות, סביבה ועוד). החוק מחייב דיווח על תרומות מישות מדינית זרה — הפירוט לפי תורם וסכום מתפרסם אצל רשם העמותות ובגיידסטאר."
       en: "Funding civil-society organizations across the spectrum (human rights, settlements, environment, etc.). The law requires reporting donations from foreign political entities — the per-donor, per-amount detail is published by the Registrar and on GuideStar."
+      ar: "تمويل نشاط منظمات مجتمع مدني من مختلف أطراف الطيف (حقوق الإنسان، الاستيطان، البيئة وغيرها). يُلزم القانون بالإبلاغ عن التبرعات من كيان سياسي أجنبي — ويُنشر التفصيل حسب المتبرّع والمبلغ لدى مسجّل الجمعيات وفي «غايدستار»."
+      ru: "Финансирование деятельности организаций гражданского общества всего политического спектра (права человека, поселения, экология и др.). Закон требует отчитываться о пожертвованиях от иностранных государственных образований — разбивка по донорам и суммам публикуется у регистратора некоммерческих организаций и на GuideStar."
+      es: "Financiación de organizaciones de la sociedad civil de todo el espectro (derechos humanos, asentamientos, medio ambiente, etc.). La ley exige declarar las donaciones de entidades políticas extranjeras — el detalle por donante e importe lo publican el Registro y GuideStar."
+      fr: "Financement d’organisations de la société civile de tous bords (droits humains, implantations, environnement, etc.). La loi impose de déclarer les dons d’entités politiques étrangères — le détail par donateur et par montant est publié par le Registre et sur GuideStar."
     source:
-      label: { he: "רשם העמותות / גיידסטאר", en: "Registrar of Non-Profits / GuideStar" }
+      label: { he: "רשם העמותות / גיידסטאר", en: "Registrar of Non-Profits / GuideStar", ar: "مسجّل الجمعيات / غايدستار", ru: "Регистратор некоммерческих организаций / GuideStar", es: "Registro de Asociaciones / GuideStar", fr: "Registre des associations / GuideStar" }
       url: "https://www.guidestar.org.il/"

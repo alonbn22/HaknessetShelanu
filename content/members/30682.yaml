@@ -1,7 +1,8 @@
 # PersonID 30682. Auto-researched from reputable public sources and
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# legal status marked. Re-verified 2026-09-18.
 personId: 30682
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -72,12 +73,16 @@ claims:
     description:
       he: כחבר כנסת מטעם כחול לבן ולאחר מכן המחנה הממלכתי, כיהן ביטון כיושב ראש ועדת
         הכלכלה בכנסת ה-24, וכיושב ראש הוועדה המיוחדת לחיזוק ופיתוח הנגב והגליל
-        בכנסת ה-25.
+        בכנסת ה-25 עד 11 בפברואר 2025 (אז החליף אותו עודד פורר בהסכם רוטציה).
+        ב-4 במרץ 2025 נבחר ליושב ראש הוועדה המיוחדת לפיקוח על תהליכי הסרת
+        חסמים.
       en: As a member of Knesset for Blue and White and later the National Unity
         party, Biton served as chair of the Knesset's Economic Affairs Committee
         in the 24th Knesset and as chair of the Special Committee for the
         Strengthening and Development of the Negev and the Galilee in the 25th
-        Knesset.
+        Knesset until 11 February 2025 (when Oded Forer replaced him under a
+        rotation agreement). On 4 March 2025 he was elected chair of the new
+        Special Committee for Oversight of Barrier-Removal Processes.
     sources:
       - url: https://he.wikipedia.org/wiki/%D7%9E%D7%99%D7%9B%D7%90%D7%9C_%D7%91%D7%99%D7%98%D7%95%D7%9F
         title: מיכאל ביטון
@@ -85,3 +90,49 @@ claims:
       - url: https://en.wikipedia.org/wiki/Michael_Biton
         title: Michael Biton
         publisher: Wikipedia
+  - kind: neutral
+    category: role
+    date: 2025-12-02
+    title:
+      he: סגן יושב-ראש הכנסת (מדצמבר 2025)
+      en: Deputy Speaker of the Knesset (from December 2025)
+    description:
+      he: ב-2 בדצמבר 2025 נבחר ביטון לסגן יושב-ראש הכנסת במקום אורית פרקש-הכהן. לפי
+        רישומי הכנסת הוא משתייך מ-8 ביולי 2025 לסיעת "כחול לבן - המחנה
+        הממלכתי".
+      en: On 2 December 2025 Biton was elected a Deputy Speaker of the Knesset,
+        replacing Orit Farkash-Hacohen. Knesset records list him from 8 July
+        2025 as a member of the "Blue and White - National Unity" faction.
+    sources:
+      - url: "https://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_PersonToPosition?$filter=PersonID%20eq%2030682%20and%20IsCurrent%20eq%20true"
+        title: "KNS_PersonToPosition — current positions of PersonID 30682 (Knesset OData)"
+        publisher: The Knesset (OData)
+      - url: https://he.wikipedia.org/wiki/%D7%9E%D7%99%D7%9B%D7%90%D7%9C_%D7%91%D7%99%D7%98%D7%95%D7%9F
+        title: מיכאל ביטון
+        publisher: Hebrew Wikipedia
+  - kind: neutral
+    category: news
+    date: 2026-09-07
+    title:
+      he: הודיע על פרישה מכחול לבן – המחנה הממלכתי ערב סגירת הרשימות
+      en: Announced he was leaving Blue and White – National Unity on the eve of the list deadline
+    description:
+      he: ב-7 בספטמבר 2026, יום לפני סגירת הרשימות לכנסת ה-26, הודיע ביטון על פרישה
+        ממפלגתו של בני גנץ, שאליה השתייך מראשית דרכו הפוליטית, ומסר כי הוא שוקל
+        הקמת מפלגה חברתית וכי "בשעות הקרובות אקבל החלטה על המשך דרכי הפוליטית".
+        גנץ אישר כי סוכם שביטון לא ייכלל ברשימת כחול לבן. ברשימת כחול לבן שהוגשה
+        ב-8 בספטמבר 2026 לא נכלל ביטון.
+      en: On 7 September 2026, a day before the deadline for filing lists for the
+        26th Knesset, Biton announced he was leaving Benny Gantz's party, to
+        which he had belonged since the start of his political career, saying
+        he was considering founding a social party and that he would decide on
+        his political future "in the coming hours". Gantz confirmed it had
+        been agreed that Biton would not be on the Blue and White list; the
+        slate Blue and White filed on 8 September 2026 did not include him.
+    sources:
+      - url: https://www.mako.co.il/news-israel-elections/2026/Article-e23d3e08e8c70a1027.htm
+        title: "שינויים במפלגה של גנץ: מיכאל ביטון עוזב, עליזה בלוך מצטרפת"
+        publisher: N12
+      - url: https://www.timesofisrael.com/liveblog_entry/gantz-submits-19-member-blue-and-white-slate-despite-months-of-polling-below-electoral-threshold/
+        title: Gantz submits 19-member Blue and White slate despite months of polling below electoral threshold
+        publisher: The Times of Israel

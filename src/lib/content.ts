@@ -14,13 +14,86 @@ const httpUrl = z
   .trim()
   .refine((u) => /^https?:\/\//i.test(u), "must be an http(s) URL");
 
-const coalitionSchema = z.object({
-  knesset: z.number(),
-  coalitionFactionIds: z.array(z.number()),
-  asOf: z.string().optional(), // when this composition was last verified
-  sourceUrl: httpUrl.optional(),
-  sourceLabel: z.string().optional(),
+// Kebab-case identity for a running list (content/election.yaml) — polls and
+// compass stances key on it, and it survives renames and mergers.
+const listSlug = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, "slug must be kebab-case");
+
+// Hoisted above the coalition schema, which is the first to use it.
+const localizedText = z.object({
+  he: z.string(),
+  en: z.string().optional(),
+  ar: z.string().optional(),
+  ru: z.string().optional(),
+  es: z.string().optional(),
+  fr: z.string().optional(),
 });
+export type LocalizedText = z.infer<typeof localizedText>;
+
+const sourceRef = z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() });
+
+// One faction's side of the aisle, with the date it took effect and the
+// reports it rests on — so a page can say "outside the coalition since
+// 14 July 2025 · source" instead of a bare label.
+const factionStatusSchema = z.object({
+  status: z.enum(["coalition", "opposition"]),
+  since: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  note: localizedText.optional(),
+  sources: z.array(sourceRef).optional(),
+});
+
+const coalitionSchema = z
+  .object({
+    knesset: z.number(),
+    coalitionFactionIds: z.array(z.number()),
+    asOf: z.string().optional(), // when this composition was last verified
+    caretakerSince: z.string().optional(), // ISO date the Knesset dispersed; the government is a caretaker from then
+    governmentSince: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(), // the government's swearing-in
+    sourceUrl: httpUrl.optional(),
+    sourceLabel: z.string().optional(),
+    statuses: z.record(z.string().regex(/^\d+$/), factionStatusSchema).default({}),
+    // The majority the law asks for, with the law itself as the source — so
+    // a count under it can be shown as a minority government, not a mistake.
+    majority: z.object({ needed: z.number().int().min(1).max(120).default(61), sources: z.array(sourceRef).min(1) }).optional(),
+    // The coalition's size at each dated change during the term, each step
+    // sourced — so "wasn't it 68?" has a dated answer on the page.
+    timeline: z
+      .array(
+        z.object({
+          date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+          size: z.number().int().min(0).max(120),
+          change: z.number().int(),
+          note: localizedText,
+          sources: z.array(sourceRef).min(1),
+        }),
+      )
+      .default([]),
+  })
+  .superRefine((c, ctx) => {
+    // The timeline must be in date order and add up step by step.
+    let prev: number | null = null;
+    for (const [i, t] of c.timeline.entries()) {
+      if (i > 0 && t.date < c.timeline[i - 1].date) ctx.addIssue({ code: "custom", message: `timeline out of order at ${t.date}` });
+      if (prev != null && prev + t.change !== t.size) ctx.addIssue({ code: "custom", message: `timeline ${t.date}: ${prev} + ${t.change} ≠ ${t.size}` });
+      prev = t.size;
+    }
+    // The id list and the per-faction statuses must agree — the pages read
+    // one or the other, and a mismatch would label a faction two ways.
+    for (const [id, st] of Object.entries(c.statuses)) {
+      const listed = c.coalitionFactionIds.includes(Number(id));
+      if (listed !== (st.status === "coalition")) {
+        ctx.addIssue({
+          code: "custom",
+          message: `faction ${id}: statuses says ${st.status} but coalitionFactionIds ${listed ? "includes" : "omits"} it`,
+        });
+      }
+    }
+  });
+
+export type FactionStatus = z.infer<typeof factionStatusSchema> & {
+  // True when the faction changed sides after the government was sworn in —
+  // the only case where the date is worth showing next to the label.
+  changedMidTerm: boolean;
+};
 
 let _coalition: z.infer<typeof coalitionSchema> | null = null;
 
@@ -36,6 +109,40 @@ export function isCoalitionFaction(factionId: number): boolean {
   return getCoalitionConfig().coalitionFactionIds.includes(factionId);
 }
 
+export type MajorityStatus = {
+  needed: number;
+  // The coalition's size at the timeline's last step, or null without one.
+  size: number | null;
+  // True when the coalition has been under `needed` since `since`.
+  minority: boolean;
+  since: string | null;
+  sources: { url: string; title: string; publisher?: string }[];
+};
+
+// "60 against 60 can't be right — you need 61": the count is right, and the
+// pages say why. The trailing run of timeline steps under `needed` gives the
+// date the minority government began.
+export function getMajorityStatus(): MajorityStatus {
+  const cfg = getCoalitionConfig();
+  const needed = cfg.majority?.needed ?? 61;
+  const sources = cfg.majority?.sources ?? [];
+  const last = cfg.timeline.at(-1);
+  if (!last || last.size >= needed) return { needed, size: last?.size ?? null, minority: false, since: null, sources };
+  let since = last.date;
+  for (let i = cfg.timeline.length - 2; i >= 0 && cfg.timeline[i].size < needed; i--) since = cfg.timeline[i].date;
+  return { needed, size: last.size, minority: true, since, sources };
+}
+
+// The faction's sourced status, or null when the file has no entry for it
+// (older factions the page still labels from the id list).
+export function getFactionStatus(factionId: number): FactionStatus | null {
+  const cfg = getCoalitionConfig();
+  const st = cfg.statuses[String(factionId)];
+  if (!st) return null;
+  const changedMidTerm = cfg.governmentSince != null && st.since > cfg.governmentSince;
+  return { ...st, changedMidTerm };
+}
+
 const factionMetaSchema = z.object({
   factions: z.array(
     z.object({
@@ -44,12 +151,21 @@ const factionMetaSchema = z.object({
       en: z.string(),
       ar: z.string(),
       ru: z.string(),
+      es: z.string().optional(), // Latin-script locales fall back to en
+      fr: z.string().optional(),
       color: z.string(),
     }),
   ),
 });
 
 export type FactionMeta = z.infer<typeof factionMetaSchema>["factions"][number];
+
+// A faction's curated short name in a locale: the locale's own, else English
+// (never Hebrew for a non-Hebrew page — es/fr carry no name of their own yet).
+export function localizedMeta(meta: FactionMeta, locale: string): string {
+  if (locale === "he") return meta.he;
+  return (meta[locale as keyof FactionMeta] as string | undefined) ?? meta.en ?? meta.he;
+}
 
 let _factionMeta: Map<number, FactionMeta> | null = null;
 
@@ -63,12 +179,6 @@ export function getFactionMeta(): Map<number, FactionMeta> {
 }
 
 // Shared localized-text shapes (one string / a list of strings per language).
-const localizedText = z.object({
-  he: z.string(),
-  en: z.string().optional(),
-  ar: z.string().optional(),
-  ru: z.string().optional(),
-});
 
 // Editorial party profiles — political position + what each faction supports.
 export const SPECTRUM_VALUES = [
@@ -86,6 +196,8 @@ const localizedList = z.object({
   en: z.array(z.string()).optional(),
   ar: z.array(z.string()).optional(),
   ru: z.array(z.string()).optional(),
+  es: z.array(z.string()).optional(),
+  fr: z.array(z.string()).optional(),
 });
 
 const partyProfileSchema = z.object({
@@ -102,6 +214,35 @@ const partyProfileSchema = z.object({
   // Ballot-slip letters assigned per election list.
   ballotLetters: z.string().optional(),
   ballotNote: localizedText.optional(),
+  // Where a profile states a 2026 fact (leader, merger, running status).
+  sources: z.array(z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() })).optional(),
+  // How the faction goes into the 2026 election, read from the CEC's list
+  // pages: on its own list, inside a joint list, merged into another party,
+  // or not at all. `slug` points at the registry card (content/election.yaml);
+  // `listNumber` at a row of the full submitted-lists table for lists the
+  // registry does not carry.
+  election2026: z
+    .object({
+      runsAs: z.enum(["own", "within", "merged", "none"]),
+      slug: listSlug.optional(),
+      listNumber: z.number().int().positive().optional(),
+      note: localizedText.optional(),
+      sources: z.array(sourceRef).optional(),
+    })
+    .optional(),
+  // Dated, sourced developments — the faction's "latest news", newest first
+  // on the page. Every item cites at least one report.
+  updates: z
+    .array(
+      z.object({
+        date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+        text: localizedText,
+        sources: z.array(sourceRef).min(1, "every update must cite a source"),
+      }),
+    )
+    .optional(),
+  // When the profile was last checked against its sources (rendered).
+  verified: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
 });
 
 export type PartyProfile = z.infer<typeof partyProfileSchema>;
@@ -124,7 +265,7 @@ export function getPartyProfile(id: number): PartyProfile | undefined {
 
 // Text fallback for party content: requested locale -> English -> Hebrew.
 export function partyText(
-  text: { he: string; en?: string; ar?: string; ru?: string } | undefined,
+  text: LocalizedText | undefined,
   locale: string,
 ): string {
   if (!text) return "";
@@ -133,8 +274,38 @@ export function partyText(
   );
 }
 
+// Direction/lang attributes for an editorial string that may have fallen back to
+// another language (ar/ru pages fall back to en, then he). An English sentence
+// inside an RTL layout needs dir="ltr" or its punctuation lands at the wrong
+// end; Hebrew inside an LTR layout needs dir="rtl".
+export function partyTextAttrs(
+  text: LocalizedText | undefined,
+  locale: string,
+): { dir?: "ltr" | "rtl"; lang?: string } {
+  if (!text) return {};
+  const resolved = (text[locale as keyof typeof text] as string | undefined) != null ? locale : text.en != null ? "en" : "he";
+  if (resolved === locale) return {};
+  // `dir` only when the fallback's direction differs from the page's: English
+  // on a Russian, Spanish or French page is a language change, not a
+  // direction change, and must not be re-aligned.
+  const rtl = (l: string) => l === "he" || l === "ar";
+  const lang = resolved;
+  return rtl(resolved) === rtl(locale) ? { lang } : rtl(resolved) ? { dir: "rtl", lang } : { dir: "ltr", lang };
+}
+
+// Class to pair with partyTextAttrs: a run whose direction differs from the
+// page must still hug the page's start edge when it wraps. text-align:end is
+// the right side of an LTR run (an RTL page's start) and the left side of an
+// RTL run (an LTR page's start), so one class serves both cases.
+export function partyTextClass(
+  text: LocalizedText | undefined,
+  locale: string,
+): string {
+  return partyTextAttrs(text, locale).dir ? "text-end" : "";
+}
+
 export function partyList(
-  list: { he: string[]; en?: string[]; ar?: string[]; ru?: string[] } | undefined,
+  list: { he: string[]; en?: string[]; ar?: string[]; ru?: string[]; es?: string[]; fr?: string[] } | undefined,
   locale: string,
 ): string[] {
   if (!list) return [];
@@ -146,7 +317,10 @@ export function partyList(
 // Curated per-member public record (phase 3): one YAML file per person,
 // every claim must cite at least one source.
 const claimSchema = z.object({
-  kind: z.enum(["positive", "negative"]),
+  // "neutral" is for dated news items that are neither to the member's credit
+  // nor against them (a new role, a bill, a public stance) — shown in a third
+  // list so "for/against" stays a judgement the sources support.
+  kind: z.enum(["positive", "negative", "neutral"]),
   category: z.enum([
     "award",
     "volunteering",
@@ -154,11 +328,16 @@ const claimSchema = z.object({
     "conviction",
     "investigation",
     "controversy",
+    "news",
+    "role",
   ]),
   // Legal status, so a matter is never implied to be more than it is
   // (presumption of innocence for anything not finally adjudicated).
+  // "closed": a probe closed without charges (not an acquittal — no charge was
+  // ever tried); "ruled": a court gave a final ruling on the matter (an
+  // annulled decision, a rejected petition) — not a plea deal or settlement.
   status: z
-    .enum(["ongoing", "indicted", "convicted", "acquitted", "overturned", "settled"])
+    .enum(["ongoing", "indicted", "convicted", "acquitted", "overturned", "settled", "closed", "ruled"])
     .optional(),
   title: localizedText,
   description: localizedText.optional(),
@@ -205,8 +384,8 @@ export function localizeMemberRecord(
   cache: Map<string, { text: string }>,
 ): MemberRecord | null {
   if (!record || locale === "he") return record;
-  const resolve = (txt: { he: string; en?: string; ar?: string; ru?: string }) =>
-    txt[locale as "en" | "ar" | "ru"] ?? cache.get(txt.he.trim())?.text ?? txt.he;
+  const resolve = (txt: LocalizedText) =>
+    txt[locale as keyof LocalizedText] ?? cache.get(txt.he.trim())?.text ?? txt.he;
   return {
     ...record,
     claims: record.claims.map((c) => ({
@@ -268,7 +447,7 @@ const glossaryTermSchema = z.object({
   category: z.enum(GLOSSARY_CATEGORIES),
   term: localizedText,
   def: localizedText,
-  sourceUrl: httpUrl.optional(), // for entries stating specific legal figures/rules
+  sourceUrl: httpUrl, // every term cites a trusted source — Wikipedia is an index, never the source
 });
 export type GlossaryTerm = z.infer<typeof glossaryTermSchema>;
 
@@ -286,24 +465,61 @@ export function getGlossary(): GlossaryTerm[] {
 
 // ---------- party-fit quiz ----------
 
+// A list's stance on one statement: the value on the reader's own scale, and
+// where it comes from — a roll-call vote (cited to the Knesset record, with the
+// vote id for the site's own page), the list's platform, or a leader's
+// statement in a major outlet. A slug that is absent has no sourced position
+// and is shown as such; nothing is inferred.
+const stanceSourceSchema = z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() });
+const quizStanceSchema = z.object({
+  value: z.number().int().min(-2).max(2),
+  basis: z.enum(["vote", "platform", "statement"]),
+  voteId: z.number().int().positive().optional(),
+  // When the vote was cast by a predecessor faction (Yesh Atid for Together,
+  // National Unity for Blue and White, Labor for the Democrats), say whose.
+  recordOf: localizedText.optional(),
+  source: stanceSourceSchema,
+  // Further sources for what the recordOf note says beyond the quote (e.g. the
+  // list head's own words when a candidate is quoted), listed after `source`.
+  moreSources: z.array(stanceSourceSchema).optional(),
+  quote: localizedText,
+});
+
 const quizQuestionSchema = z.object({
-  id: z.string(),
+  id: listSlug,
+  topic: z.enum(["institutions", "religion-state", "security", "government", "education", "economy", "society"]),
+  // Which side of the aisle agrees with the statement as worded. The set is
+  // balanced and alternates (tests/qa/quiz.test.ts), so answering "agree" to
+  // everything cannot favour one camp.
+  lean: z.enum(["right", "left"]),
   text: localizedText,
-  // stance per faction id (-2..+2). YAML keys are strings → coerce to number.
-  stances: z.record(z.string(), z.number()),
+  // A two-to-four-word label for the result summaries ("agree on: judicial
+  // reform, the draft law…"), and a plain-words explainer of what the
+  // statement is about and what each side argues — neutral, no verdict.
+  short: localizedText,
+  explainer: localizedText,
+  stances: z.record(listSlug, quizStanceSchema),
+});
+const quizFileSchema = z.object({
+  lastReviewed: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  questions: z.array(quizQuestionSchema),
 });
 export type QuizQuestion = z.infer<typeof quizQuestionSchema>;
+export type QuizStance = z.infer<typeof quizStanceSchema>;
+export type QuizFile = z.infer<typeof quizFileSchema>;
 
-let _quiz: QuizQuestion[] | null = null;
+let _quiz: QuizFile | null = null;
 
-export function getQuiz(): QuizQuestion[] {
+export function getQuizFile(): QuizFile {
   if (!_quiz) {
     const raw = fs.readFileSync(path.join(CONTENT_DIR, "quiz.yaml"), "utf8");
-    _quiz = z
-      .object({ questions: z.array(quizQuestionSchema) })
-      .parse(parse(raw)).questions;
+    _quiz = quizFileSchema.parse(parse(raw));
   }
   return _quiz;
+}
+
+export function getQuiz(): QuizQuestion[] {
+  return getQuizFile().questions;
 }
 
 // Budget figures come from Ministry of Finance open data in the DB (sync/budget.ts,
@@ -354,7 +570,43 @@ const electionFactSchema = z.object({
 
 // A party expected to run. Lists are only final once submitted to the Central
 // Elections Committee — `note` carries that framing; every entry is sourced.
+// Every running list has a stable kebab-case slug. It is THE identity a list
+// carries across content: polls and compass stances key on it, and it survives
+// name changes, mergers and the absence of a Knesset faction id (new lists).
+
+// A candidate list as the Central Elections Committee publishes it.
+const cecListSchema = z.object({
+  url: httpUrl,
+  listNumber: z.number().int().positive(), // the CEC's own numbering on its index page
+  listName: localizedText, // the list's registered name (kinui) as submitted, verbatim
+  letters: z.string().min(1), // one string; several requested letters are joined with " / "
+  lettersStatus: z.enum(["requested", "approved"]),
+  submittedBy: z.array(z.string()).min(1), // registered parties behind the list
+  published: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  updated: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
+});
+export type CecList = z.infer<typeof cecListSchema>;
+
+// One row of the "every list that submitted" table: the CEC index entry plus
+// the list head where the list's own page was read.
+const submittedListSchema = z.object({
+  listNumber: z.number().int().positive(),
+  letters: z.string().min(1),
+  name: localizedText,
+  url: httpUrl,
+  head: localizedText.optional(),
+  submittedBy: z.array(z.string()).optional(),
+  slug: listSlug.optional(), // links the row to a registry card when the list is one of them
+  // The CEC page's "updated" date, and the roster exactly as the committee
+  // prints it (surname first); `party` is the submitting party the candidate
+  // was recorded under, given only on joint lists.
+  updated: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
+  candidates: z.array(z.object({ he: z.string().min(1), party: z.string().optional() })).optional(),
+});
+export type SubmittedList = z.infer<typeof submittedListSchema>;
+
 const electionPartySchema = z.object({
+  slug: listSlug,
   name: localizedText,
   leader: localizedText.optional(),
   // Links leader to their member page when in the persons DB. Set only after
@@ -364,7 +616,24 @@ const electionPartySchema = z.object({
   // 25th-Knesset members): their Wikipedia article.
   leaderWiki: httpUrl.optional(),
   note: localizedText.optional(),
+  // What the list has said about blocs and partners, as reported by the entry's
+  // sources — never inferred from ideology.
+  stance: localizedText.optional(),
+  // The submitted candidate list in ballot order, as published. Hebrew is the
+  // record; `en` is optional and never machine-generated. `personId` links a
+  // 25th-Knesset member to their page and is set only on an exact name match
+  // (a QA test cross-checks every id against the registry name).
+  candidates: z
+    .array(z.object({ he: z.string(), en: z.string().optional(), personId: z.number().optional() }))
+    .optional(),
   factionId: z.number().optional(), // links to /parties/<id> when it maps to a sitting faction
+  // The Central Elections Committee's page for the list: the official name,
+  // the letters (requested until the CEC approves the lists, then approved),
+  // the parties that submitted it. The one primary source for these facts.
+  cec: cecListSchema.optional(),
+  // Chart colour for lists with no sitting faction (sitting factions use
+  // content/factions.yaml). Party colour appears only where a list is the subject.
+  color: z.string().regex(/^#[0-9a-f]{6}$/i).optional(),
   sources: z
     .array(z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() }))
     .min(1, "every party entry must cite at least one source"),
@@ -380,18 +649,74 @@ const electionOutlookSchema = z.object({
   // The road to election day and beyond, in order — each entry dated + sourced.
   keyDates: z.array(electionFactSchema).optional(),
   facts: z.array(electionFactSchema),
+  // Practical voting information, every item sourced to the CEC or the law.
+  howToVote: z.array(electionFactSchema).default([]),
   parties: z.array(electionPartySchema),
   rules: z.array(electionFactSchema),
   stats: z.array(electionFactSchema),
   news: z
     .array(z.object({ date: z.string().optional(), text: localizedText }))
     .optional(),
+  // Every list that submitted, from the CEC's index page — so no list is
+  // invisible just because pollsters do not name it.
+  submittedLists: z
+    .object({
+      source: z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() }),
+      asOf: z.string().regex(/^\d{4}-\d{2}-\d{2}$/), // the index page's own update date
+      lists: z.array(submittedListSchema),
+    })
+    .optional(),
+  // Surplus-vote agreements between two running lists, as
+  // reported or as filed with the CEC; a list can be in at most one.
+  surplusAgreements: z
+    .array(
+      z.object({
+        between: z.tuple([listSlug, listSlug]),
+        date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+        status: z.enum(["confirmed", "reported"]).default("reported"),
+        sources: z
+          .array(z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() }))
+          .min(1, "every agreement must cite at least one source"),
+      }),
+    )
+    .default([]),
   links: z.array(z.object({ label: localizedText, url: httpUrl })),
   disclaimer: localizedText.optional(),
 });
 export type ElectionOutlook = z.infer<typeof electionOutlookSchema>;
 export type ElectionFact = z.infer<typeof electionFactSchema>;
 export type ElectionParty = z.infer<typeof electionPartySchema>;
+
+// The registry: slug → running list, in the file's (registry) order. Empty when
+// election.yaml is absent or invalid, like getElectionOutlook().
+export function getRunningLists(): Map<string, ElectionParty> {
+  const outlook = getElectionOutlook();
+  return new Map((outlook?.parties ?? []).map((p) => [p.slug, p]));
+}
+
+// A running list's display name: the registry's text for the locale, else the
+// sitting faction's curated name (content/factions.yaml carries ar/ru), else
+// the registry's en/he fallback.
+export function listName(list: ElectionParty | undefined, locale: string): string {
+  if (!list) return "";
+  const own = list.name[locale as keyof typeof list.name];
+  if (own) return own;
+  if (list.factionId != null) {
+    const meta = getFactionMeta().get(list.factionId);
+    const curated = meta?.[locale as keyof FactionMeta] as string | undefined;
+    if (curated) return curated;
+  }
+  return partyText(list.name, locale);
+}
+
+// Direction attributes to pair with listName(): none when the name resolved in
+// the page's locale, else the fallback language's.
+export function listNameAttrs(list: ElectionParty | undefined, locale: string): { dir?: "ltr" | "rtl"; lang?: string } {
+  if (!list) return {};
+  if (list.name[locale as keyof typeof list.name]) return {};
+  if (list.factionId != null && getFactionMeta().get(list.factionId)?.[locale as keyof FactionMeta]) return {};
+  return partyTextAttrs(list.name, locale);
+}
 
 let _electionOutlook: ElectionOutlook | null | undefined;
 
@@ -459,6 +784,19 @@ const controversialLawSchema = z.object({
   title: localizedText,
   summary: localizedText,
   sourceUrl: httpUrl,
+  // The roll-call(s) behind the law where it falls inside the site's vote
+  // record (the 25th Knesset): the election cards show how each sitting
+  // faction voted. Laws that predate the record simply have none.
+  votes: z
+    .array(
+      z.object({
+        id: z.number().int().positive(),
+        stage: localizedText,
+        note: localizedText.optional(),
+        source: z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() }),
+      }),
+    )
+    .default([]),
 });
 export type ControversialLaw = z.infer<typeof controversialLawSchema>;
 
@@ -473,4 +811,90 @@ export function getControversialLaws(): ControversialLaw[] {
       .laws.sort((a, b) => b.year - a.year);
   }
   return _controversialLaws;
+}
+
+// ---------- seat polls (editorial, verified poll by poll) ----------
+
+// One published seat poll. Every figure was checked against the outlet's own
+// article (the `verification` line says how); seats are keyed by registry slug
+// so a list keeps its identity across name changes; blocs are exactly what the
+// outlet counted — the site never assigns a list to a bloc.
+const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "must be YYYY-MM-DD");
+
+const pollSchema = z.object({
+  id: z.string().regex(/^\d{4}-\d{2}-\d{2}-[a-z0-9]+(?:-[a-z0-9]+)*$/, "id is <published>-<outlet>-<institute>"),
+  published: isoDate,
+  fieldwork: z.object({ from: isoDate, to: isoDate }).optional(),
+  outlet: localizedText,
+  // Dedupe key for the poll of polls (latest poll per institute counts once).
+  instituteId: listSlug,
+  institute: localizedText,
+  sample: z.number().int().positive(),
+  marginOfError: z.number().positive().optional(), // percentage points, when reported
+  seats: z.record(listSlug, z.number().int().nonnegative()),
+  belowThreshold: z.array(listSlug).default([]),
+  belowThresholdNote: z.string().optional(), // the outlet's own wording/percentages
+  blocs: z
+    .array(z.object({ label: localizedText, seats: z.number().int().positive() }))
+    .default([]),
+  note: z.string().optional(),
+  verification: z.string().optional(),
+  sources: z
+    .array(z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() }))
+    .min(1, "every poll must cite the outlet's own article"),
+});
+
+const pollsFileSchema = z.object({
+  lastReviewed: isoDate,
+  cutoff: isoDate, // polls published before this day are out of scope
+  threshold: z.number().positive(), // % of valid votes
+  thresholdSources: z
+    .array(z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() }))
+    .min(1, "the threshold is a legal fact — cite it"),
+  // Polls known to exist that could not be verified from a text source.
+  notEntered: z
+    .array(
+      z.object({
+        published: isoDate,
+        outlet: localizedText,
+        institute: localizedText,
+        url: httpUrl,
+        reason: localizedText,
+      }),
+    )
+    .default([]),
+  // Averages published elsewhere, shown for comparison under their own name.
+  externalAverages: z
+    .array(
+      z.object({
+        name: localizedText,
+        publisher: localizedText,
+        url: httpUrl,
+        asOf: isoDate,
+        method: localizedText,
+        values: z.record(listSlug, z.number().nonnegative()),
+      }),
+    )
+    .default([]),
+  polls: z.array(pollSchema),
+});
+export type Poll = z.infer<typeof pollSchema>;
+export type PollsFile = z.infer<typeof pollsFileSchema>;
+
+let _polls: PollsFile | null | undefined;
+
+// null when the file is absent or invalid — the polls section simply doesn't
+// render. Polls come back newest first regardless of file order.
+export function getPolls(): PollsFile | null {
+  if (_polls === undefined) {
+    try {
+      const raw = fs.readFileSync(path.join(CONTENT_DIR, "polls.yaml"), "utf8");
+      const parsed = pollsFileSchema.parse(parse(raw));
+      parsed.polls.sort((a, b) => b.published.localeCompare(a.published) || a.id.localeCompare(b.id));
+      _polls = parsed;
+    } catch {
+      _polls = null;
+    }
+  }
+  return _polls;
 }

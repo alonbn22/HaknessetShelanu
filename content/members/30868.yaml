@@ -1,7 +1,8 @@
-# PersonID 30868. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30868. Researched from reputable public sources and source-verified
+# (every cited URL re-fetched on the review date). Neutral language; legal
+# status marked. REVIEW before launch.
 personId: 30868
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -9,40 +10,112 @@ claims:
       he: חבר הכנסת ה-25 מטעם ש"ס
       en: Member of the 25th Knesset for Shas
     description:
-      he: יונתן (יוני) מישרקי, יליד ירושלים (17 באוגוסט 1984), נכנס לכנסת העשרים וחמש
+      he: >-
+        יונתן (יוני) מישרקי, יליד ירושלים (17 באוגוסט 1984), נכנס לכנסת העשרים וחמש
         ב-3 בינואר 2023 מטעם מפלגת ש"ס במסגרת החוק הנורווגי, בעקבות התפטרותו של
         השר יואב בן צור. לפני כניסתו לכנסת מילא תפקידי ייעוץ וניהול בזירה
-        המוניציפלית בירושלים.
-      en: Jonathan (Yoni) Misharki, born in Jerusalem on 17 August 1984, entered the
-        25th Knesset on 3 January 2023 as a Shas party representative under the
+        המוניציפלית בירושלים ושימש יועץ בכיר לאריה דרעי.
+      en: >-
+        Yonatan (Yoni) Mishriki, born in Jerusalem on 17 August 1984, entered the
+        25th Knesset on 3 January 2023 as a Shas representative under the
         Norwegian Law, replacing Minister Yoav Ben-Tzur. Before the Knesset he
-        held advisory and administrative posts in the Jerusalem municipal arena.
-    date: 2023-01-03
+        held advisory and administrative posts in Jerusalem municipal politics
+        and served as a senior adviser to Aryeh Deri.
+    date: "2023-01-03"
     sources:
+      - url: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A0%D7%AA%D7%9F_%D7%9E%D7%99%D7%A9%D7%A8%D7%A7%D7%99
+        title: יונתן מישרקי
+        publisher: Wikipedia (Hebrew)
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30868
+        title: MK Yonatan Mishriki — personal details and positions
+        publisher: Knesset (official)
       - url: https://www.wikidata.org/wiki/Q115974304
         title: Jonathan Misharki
         publisher: Wikidata
-      - url: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A0%D7%AA%D7%9F_%D7%9E%D7%99%D7%A9%D7%A8%D7%A7%D7%99
-        title: יונתן מישרקי
-        publisher: Hebrew Wikipedia
   - kind: positive
     category: achievement
     title:
       he: יושב-ראש ועדת הבריאות של הכנסת
       en: Chairman of the Knesset Health Committee
     description:
-      he: ב-12 באוקטובר 2023 מונה מישרקי ליושב-ראש ועדת הבריאות של הכנסת, לאחר שאוריאל
-        בוסו מונה לשר הבריאות. הוא פרש מהתפקיד באוקטובר 2025 ובפברואר 2026 שב
-        לכהן כיושב-ראש הוועדה.
-      en: On 12 October 2023 Misharki was appointed chairman of the Knesset Health
-        Committee, following Uriel Bosso's appointment as Health Minister. He
-        stepped down in October 2025 and resumed the chairmanship in February
-        2026.
-    date: 2023-10-12
+      he: >-
+        ב-12 באוקטובר 2023 מונה מישרקי ליושב-ראש ועדת הבריאות של הכנסת, לאחר שאוריאל
+        בוסו מונה לשר הבריאות. ב-23 באוקטובר 2025 הגיש את התפטרותו מהתפקיד ליושב-ראש
+        הכנסת, כשש"ס פרשה מכל תפקידיה הקואליציוניים בשל העיכוב בחקיקת חוק הגיוס;
+        במקומו כיהנה לימור סון הר-מלך. ב-23 בפברואר 2026 אישרה הוועדה את שובו
+        לתפקיד יושב-ראש הוועדה, ובו הוא מכהן גם לאחר פיזור הכנסת.
+      en: >-
+        On 12 October 2023 Mishriki was appointed chairman of the Knesset Health
+        Committee, after Uriel Buso became Health Minister. On 23 October 2025 he
+        submitted his resignation from the post to the Knesset Speaker when Shas
+        withdrew from all its coalition roles over the delay in the yeshiva-draft
+        legislation; Limor Son Har-Melech chaired in the interim. On 23 February
+        2026 the committee approved his return as chairman, a post he still holds
+        after the Knesset's dissolution.
+    date: "2023-10-12"
     sources:
       - url: https://he.wikipedia.org/wiki/%D7%99%D7%95%D7%A0%D7%AA%D7%9F_%D7%9E%D7%99%D7%A9%D7%A8%D7%A7%D7%99
         title: יונתן מישרקי
-        publisher: Hebrew Wikipedia
+        publisher: Wikipedia (Hebrew)
+      - url: https://www.ynet.co.il/news/article/hjzqcud0gg
+        title: "ש\"ס פרשה מכל תפקידיה הקואליציוניים; היועמ\"שית: חובת הגיוס לא נאכפת מספיק"
+        publisher: Ynet
+      - url: https://www.ynet.co.il/news/article/rydb5ntu11g
+        title: ח"כ יוני מישרקי מש"ס חזר לכהן כיו"ר ועדת הבריאות של הכנסת
+        publisher: Ynet
       - url: https://www.timesofisrael.com/liveblog_entry/shas-mk-resumes-chairmanship-of-knesset-health-committee/
         title: Shas MK resumes chairmanship of Knesset health committee
         publisher: The Times of Israel
+  - kind: positive
+    category: achievement
+    title:
+      he: יזם והעביר את חוק ניוד מידע רפואי ואת הרחבתו
+      en: Initiated and passed the Medical Information Portability Law and its extension
+    description:
+      he: >-
+        ב-22 ביולי 2024 אישרה מליאת הכנסת בקריאה שנייה ושלישית את חוק ניוד מידע
+        רפואי, התשפ"ד-2024, שיזם מישרקי כיושב-ראש ועדת הבריאות, המאפשר לכל מטופל
+        להעביר את המידע הרפואי שלו בין קופות החולים, בתי החולים ומשרד הבריאות
+        בהסכמתו. ב-1 ביולי 2025 אושרה בקריאה שנייה ושלישית הרחבת החוק, שהוביל,
+        המחברת למערכת גם את המוסד לביטוח לאומי, חיל הרפואה של צה"ל, שירות בתי
+        הסוהר ומשרדי ממשלה נוספים; לפי הדיווח, ההרחבה אושרה פה אחד בוועדת
+        הבריאות ללא הסתייגויות.
+      en: >-
+        On 22 July 2024 the Knesset plenum passed in second and third readings the
+        Medical Information Portability Law, 5784-2024, initiated by Mishriki as
+        Health Committee chairman, which lets every patient transfer their medical
+        records between health funds, hospitals and the Health Ministry with their
+        consent. On 1 July 2025 an extension he led passed its second and third
+        readings, connecting the National Insurance Institute, the IDF Medical
+        Corps, the Prison Service and other government bodies to the system; it
+        was reported to have passed the Health Committee unanimously without
+        reservations.
+    date: "2025-07-01"
+    sources:
+      - url: https://www.maariv.co.il/news/health/article-1119182
+        title: "הכנסת אישרה את חוק הניוד: כל מטופל יוכל לקבל את המידע הרפואי מקופת החולים"
+        publisher: Maariv
+      - url: https://www.israelhayom.co.il/health/article/18323627
+        title: '"די לפקסים ולדיסקים": הכנסת אישרה מהפכה בניוד מידע רפואי'
+        publisher: Israel Hayom
+      - url: https://www.kikar.co.il/political-news/medical-data-mobility-revolution
+        title: "מהפכת ניוד המידע הרפואי אושרה בכנסת: סוף לפקסים ודיסקים"
+        publisher: Kikar HaShabbat
+  - kind: neutral
+    category: news
+    date: "2026-09-08"
+    title:
+      he: הוצב במקום העשירי ברשימת ש"ס לבחירות 2026
+      en: Placed tenth on the Shas list for the 2026 election
+    description:
+      he: >-
+        ברשימת ש"ס לכנסת ה-26 שפורסמה ב-8 בספטמבר 2026 לקראת הבחירות ב-27 באוקטובר
+        2026 הוצב מישרקי במקום העשירי, אחרי משה אבוטבול, אוריאל בוסו ויוסי טייב.
+      en: >-
+        On the Shas list for the 26th Knesset published on 8 September 2026, ahead
+        of the election on 27 October 2026, Mishriki was placed tenth, after Moshe
+        Abutbul, Uriel Buso and Yossi Taieb.
+    sources:
+      - url: https://www.ynet.co.il/news/elections2026/article/hkjzuqtofe
+        title: "עם רב-סרן במילואים במקום ריאלי: זו רשימת ש\"ס לכנסת"
+        publisher: Ynet

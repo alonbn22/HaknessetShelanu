@@ -9,9 +9,9 @@ import { RecordSection } from "./RecordSection";
 import { MemberVoteStats } from "./MemberVoteStats";
 import { MemberActivity } from "./MemberActivity";
 import { formatDate } from "@/lib/format";
-import { govDuty, govMinistry } from "@/lib/gov-terms";
+import { govDuty, govMinistry, officeLabel } from "@/lib/gov-terms";
 import { getMemberRecord, memberRecordHeStrings, localizeMemberRecord } from "@/lib/content";
-import { isCoalitionFaction } from "@/lib/content";
+import { isCoalitionFaction, getFactionStatus, partyText } from "@/lib/content";
 import {
   getMember,
   getMemberPositions,
@@ -33,10 +33,20 @@ import {
   personName,
   factionName,
   isServingMember,
+  isCurrentMk,
 } from "@/lib/queries";
 import { localizePage, committeeLabel } from "@/lib/i18n-data";
-import { localizedAttrs, rtlAttrs, safeHttpUrl } from "@/lib/text";
-import { POSITION_FACTION_MEMBER, MK_POSITION_IDS, LEADERSHIP_POSITION_IDS } from "@/lib/constants";
+import { localizedAttrs, rtlAttrs, safeHttpUrl, canonicalCommonsUrl } from "@/lib/text";
+import {
+  POSITION_FACTION_MEMBER,
+  MK_POSITION_IDS,
+  OFFICE_POSITION_IDS,
+  POSITION_PRIME_MINISTER,
+  POSITION_COMMITTEE_CHAIR,
+  POSITION_MINISTER,
+  POSITION_MINISTER_F,
+  POSITION_DEPUTY_MINISTER,
+} from "@/lib/constants";
 
 export const dynamic = "force-dynamic";
 
@@ -59,7 +69,7 @@ export async function generateMetadata({
     openGraph: {
       title: name,
       description,
-      ...(member.photoUrl ? { images: [member.photoUrl] } : {}),
+      ...(canonicalCommonsUrl(member.photoUrl) ? { images: [canonicalCommonsUrl(member.photoUrl)!] } : {}),
     },
   };
 }
@@ -102,28 +112,21 @@ export default async function MemberPage({
   const committees = getMemberCommittees(personId);
 
   const factionRows = positions.filter((p) => p.positionId === POSITION_FACTION_MEMBER);
-  const currentFaction = factionRows.find((p) => p.isCurrent);
+  const serving = isServingMember(positions);
+  // A serving minister who vacated the seat under the Norwegian Law is not a
+  // sitting MK and holds no current faction membership; the header says so and
+  // shows the faction they sat in last (positions are sorted newest first).
+  const ministerNotMk = serving && !isCurrentMk(positions);
+  // Deputy ministers vacate their seat under the same law; say which it is.
+  const deputyNotMk =
+    ministerNotMk &&
+    positions.some((p) => p.isCurrent && p.positionId === POSITION_DEPUTY_MINISTER) &&
+    !positions.some((p) => p.isCurrent && (p.positionId === POSITION_MINISTER || p.positionId === POSITION_MINISTER_F));
+  const currentFaction = factionRows.find((p) => p.isCurrent) ?? (ministerNotMk ? factionRows[0] : undefined);
   const roleRows = positions.filter(
     (p) => !MK_POSITION_IDS.includes(p.positionId) && p.positionId !== POSITION_FACTION_MEMBER,
   );
-  const serving = isServingMember(positions);
 
-  // Leadership roles (Speaker, opposition leader, committee/faction chair, deputy
-  // Speaker) as at-a-glance header badges, most-prominent first, deduped by label.
-  const leaderSeen = new Set<string>();
-  const leadershipBadges = positions
-    .filter((p) => p.isCurrent && LEADERSHIP_POSITION_IDS.includes(p.positionId))
-    .sort(
-      (a, b) =>
-        LEADERSHIP_POSITION_IDS.indexOf(a.positionId) -
-        LEADERSHIP_POSITION_IDS.indexOf(b.positionId),
-    )
-    .map((p) => govDuty(p.positionDescHe ?? "", locale))
-    .filter((g) => {
-      if (!g.text || leaderSeen.has(g.text)) return false;
-      leaderSeen.add(g.text);
-      return true;
-    });
 
   const bio = getMemberBio(personId);
   // Roles section already shows career/positions, so bio keeps only background:
@@ -150,6 +153,32 @@ export default async function MemberPage({
     ...factionRows.map((p) => p.factionNameHe),
   ];
   const { cache: dataMap, loc: localOf } = localizePage(dataHe, locale);
+
+  // The offices held now — prime minister, ministers with their ministry, the
+  // Speaker, the opposition leader, chairs with their committee, deputy
+  // Speakers — as at-a-glance header badges, most-prominent first, deduped by
+  // label. Committee names come through the translation cache like the rest
+  // of the page's data text.
+  const isPrimeMinister = positions.some((p) => p.isCurrent && p.positionId === POSITION_PRIME_MINISTER);
+  const leaderSeen = new Set<string>();
+  const leadershipBadges = positions
+    .filter((p) => p.isCurrent && OFFICE_POSITION_IDS.includes(p.positionId))
+    .sort((a, b) => OFFICE_POSITION_IDS.indexOf(a.positionId) - OFFICE_POSITION_IDS.indexOf(b.positionId))
+    .map((p) => {
+      const label = officeLabel(p, locale, { isPrimeMinister });
+      if (!label) return null;
+      if (p.positionId === POSITION_COMMITTEE_CHAIR && p.committeeNameHe) {
+        const committee = committeeLabel(p.committeeNameHe, locale, dataMap);
+        const duty = govDuty(p.positionDescHe ?? "", locale);
+        return { text: `${duty.text} · ${committee.text}`, rtl: duty.rtl || committee.rtl };
+      }
+      return label;
+    })
+    .filter((g): g is NonNullable<typeof g> => {
+      if (!g || leaderSeen.has(g.text)) return false;
+      leaderSeen.add(g.text);
+      return true;
+    });
   // Localize a " · "-joined Hebrew list into per-item localized chunks.
   const localList = (joined: string | null) =>
     (joined ?? "")
@@ -172,19 +201,43 @@ export default async function MemberPage({
             </div>
           )}
           {currentFaction?.factionId != null && (
-            <Link
-              href={`/parties/${currentFaction.factionId}`}
-              className="text-accent hover:underline block"
-            >
-              {factionName(currentFaction.factionId, currentFaction.factionNameHe ?? "", locale)}
-              {" · "}
-              {isCoalitionFaction(currentFaction.factionId)
-                ? t("common.coalition")
-                : t("common.opposition")}
-            </Link>
+            <div className="flex flex-wrap items-center gap-x-2">
+              <Link
+                href={`/parties/${currentFaction.factionId}`}
+                className="text-accent hover:underline"
+              >
+                {factionName(currentFaction.factionId, currentFaction.factionNameHe ?? "", locale)}
+                {" · "}
+                {isCoalitionFaction(currentFaction.factionId)
+                  ? t("common.coalition")
+                  : t("common.opposition")}
+              </Link>
+              {/* A faction that changed sides mid-term gets the date, so the
+                  label never reads as a mistake; the why and the sources sit
+                  on the faction page. */}
+              {(() => {
+                const st = getFactionStatus(currentFaction.factionId);
+                if (!st?.changedMidTerm) return null;
+                return (
+                  <Link
+                    href={`/parties/${currentFaction.factionId}`}
+                    className="text-xs text-muted hover:underline"
+                    title={st.note ? partyText(st.note, locale) : undefined}
+                  >
+                    ({t(st.status === "coalition" ? "common.coalitionSince" : "common.oppositionSince", {
+                      date: formatDate(st.since, locale),
+                    })})
+                  </Link>
+                );
+              })()}
+            </div>
           )}
           <div className="text-sm text-muted">
-            {serving ? t("member.currentMk") : t("member.formerMk")}
+            {ministerNotMk
+              ? t(deputyNotMk ? "member.deputyMinisterNotMk" : "member.ministerNotMk")
+              : serving
+                ? t("member.currentMk")
+                : t("member.formerMk")}
           </div>
           {leadershipBadges.length > 0 && (
             <div className="flex flex-wrap gap-1.5 pt-1">
@@ -204,7 +257,7 @@ export default async function MemberPage({
             {member.mkSiteCode && (
               <a
                 className="text-accent hover:underline"
-                href={`https://m.knesset.gov.il/mk/Apps/mk/mk-individual/${member.mkSiteCode}`}
+                href={`https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/${member.mkSiteCode}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >

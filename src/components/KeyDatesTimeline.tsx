@@ -1,5 +1,5 @@
 import { getTranslations, getLocale } from "next-intl/server";
-import { partyText, type ElectionOutlook } from "@/lib/content";
+import { partyText, partyTextAttrs, partyTextClass, type ElectionOutlook } from "@/lib/content";
 
 type KeyDate = NonNullable<ElectionOutlook["keyDates"]>[number];
 
@@ -30,9 +30,22 @@ export async function KeyDatesTimeline({
   // The next upcoming step (first date that hasn't passed) carries the focus.
   const nextKey = dates.find((d) => d.date && daysUntil(d.date) >= 0)?.key;
 
+  // The home banner shows what is still ahead — the next few steps and always
+  // election day — not the whole calendar; the full timeline lives on /elections.
+  const shown =
+    variant === "compact"
+      ? (() => {
+          const ahead = dates.filter((d) => d.date && daysUntil(d.date) >= 0);
+          const pick = ahead.slice(0, 4);
+          const election = dates.find((d) => d.key === "kd-election");
+          if (election && !pick.includes(election) && ahead.includes(election)) pick.push(election);
+          return pick.length > 0 ? pick : dates.slice(-3);
+        })()
+      : dates;
+
   return (
     <ol className={variant === "compact" ? "space-y-2" : "space-y-4"}>
-      {dates.map((d) => {
+      {shown.map((d) => {
         const isElection = d.key === "kd-election";
         const isNext = d.key === nextKey;
         const days = d.date ? daysUntil(d.date) : null;
@@ -59,9 +72,8 @@ export async function KeyDatesTimeline({
             <div className="min-w-0 space-y-0.5">
               <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
                 <span
-                  className={
-                    isElection ? "text-lg font-bold leading-tight" : "font-medium text-foreground/80"
-                  }
+                  className={`${isElection ? "text-lg font-bold leading-tight" : "font-medium text-foreground/80"} ${partyTextClass(d.label, locale)}`}
+                  {...partyTextAttrs(d.label, locale)}
                 >
                   {partyText(d.label, locale)}
                 </span>
@@ -81,7 +93,7 @@ export async function KeyDatesTimeline({
                 )}
               </div>
               {variant === "full" && d.detail && (
-                <p className="text-sm leading-relaxed">{partyText(d.detail, locale)}</p>
+                <p className={`text-sm leading-relaxed ${partyTextClass(d.detail, locale)}`} {...partyTextAttrs(d.detail, locale)}>{partyText(d.detail, locale)}</p>
               )}
               {variant === "full" && d.sources.length > 0 && (
                 <span className="text-xs text-muted">

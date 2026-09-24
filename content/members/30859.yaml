@@ -1,7 +1,7 @@
-# PersonID 30859. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# Zvika Fogel (PersonID 30859). Factual reporting from reputable public sources,
+# cited per claim. Neutral language; legal status marked. Sources re-verified 2026-09-18.
 personId: 30859
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -11,75 +11,93 @@ claims:
     description:
       he: צביקה פוגל שירת בצה"ל ופרש בשנת 2003 בדרגת תת-אלוף. במהלך שירותו פיקד על
         סוללת תותחים במלחמת לבנון הראשונה (1982), על גדוד התותחנים 334 במבצע דין
-        וחשבון (1993) ועל חטיבת התותחנים 282 במבצע ענבי זעם (1996).
+        וחשבון (1993) ועל חטיבת התותחנים 282 במבצע ענבי זעם (1996), וכיהן כראש
+        מטה פיקוד הדרום.
       en: Zvika Fogel served in the Israel Defense Forces and retired in 2003 with the
         rank of brigadier general (tat aluf). During his career he commanded an
         artillery battery in the 1982 Lebanon War, the 334th Artillery Battalion
-        during Operation Accountability (1993), and the 282nd Artillery Brigade
-        during Operation Grapes of Wrath (1996).
+        during Operation Accountability (1993) and the 282nd Artillery Brigade
+        during Operation Grapes of Wrath (1996), and served as chief of staff of
+        Southern Command.
     date: "2003"
     sources:
       - url: https://en.wikipedia.org/wiki/Zvika_Fogel
         title: Zvika Fogel
         publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%A6%D7%91%D7%99%D7%A7%D7%94_%D7%A4%D7%95%D7%92%D7%9C
+        title: צביקה פוגל
+        publisher: Wikipedia (Hebrew)
   - kind: positive
     category: achievement
     title:
-      he: חבר הכנסת מטעם עוצמה יהודית
-      en: Member of Knesset for Otzma Yehudit
+      he: חבר הכנסת ויושב ראש סיעת עוצמה יהודית
+      en: Member of Knesset and chair of the Otzma Yehudit faction
     description:
       he: פוגל נבחר לכנסת בבחירות 2022 מטעם מפלגת עוצמה יהודית, לאחר שהצטרף למפלגה
         בספטמבר 2022 ושובץ במקום העשירי ברשימה המשותפת של הציונות הדתית ועוצמה
-        יהודית.
+        יהודית. בכנסת ה-25 כיהן כיושב ראש סיעת עוצמה יהודית.
       en: Fogel was elected to the Knesset in the 2022 legislative election on behalf
         of the Otzma Yehudit party, after joining the party in September 2022
         and being placed tenth on the joint Religious Zionist Party–Otzma
-        Yehudit list.
+        Yehudit list. In the 25th Knesset he served as chair of the Otzma Yehudit faction.
     date: 2022-11
     sources:
       - url: https://en.wikipedia.org/wiki/Zvika_Fogel
         title: Zvika Fogel
         publisher: Wikipedia
+      - url: https://www.inn.co.il/news/694051
+        title: 'צביקה פוגל על הפסקת האש במלחמה: "דונלד, יצאת ברווז!"'
+        publisher: Arutz 7 / Israel National News
   - kind: positive
     category: achievement
     title:
       he: יושב ראש ועדת הביטחון הלאומי של הכנסת
       en: Chair of the Knesset National Security Committee
     description:
-      he: פוגל מונה ליושב ראש ועדת הביטחון הלאומי של הכנסת בפברואר 2023. הוא הוחלף
-        בתפקיד באופן זמני בפברואר 2025 כשעוצמה יהודית עזבה את הקואליציה, והושב
-        לתפקידו במאי 2025 עם שובה של המפלגה לממשלה.
+      he: פוגל מונה ליושב ראש ועדת הביטחון הלאומי של הכנסת בפברואר 2023. בינואר 2025,
+        עם פרישת עוצמה יהודית מהממשלה במחאה על עסקת החטופים, התפטר מהתפקיד וח"כ
+        בועז ביסמוט מהליכוד החליפו; ב-5 במאי 2025, עם שובה של המפלגה לממשלה,
+        אישרה הוועדה פה אחד את חזרתו לתפקיד, והוא מכהן בו גם לאחר פיזור הכנסת.
       en: Fogel was appointed chair of the Knesset's National Security Committee in
-        February 2023. He was temporarily replaced in February 2025 when Otzma
-        Yehudit left the coalition, and was reinstated in May 2025 when the
-        party returned to the government.
+        February 2023. In January 2025, when Otzma Yehudit left the government in
+        protest at the hostage deal, he resigned the post and Likud MK Boaz
+        Bismuth took over; on 5 May 2025, after the party's return to the
+        government, the committee unanimously reinstated him, and he continues
+        in the post after the Knesset's dissolution.
     date: 2023-02
     sources:
       - url: https://en.wikipedia.org/wiki/Zvika_Fogel
         title: Zvika Fogel
         publisher: Wikipedia
-      - url: https://www.timesofisrael.com/topic/zvika-fogel/
-        title: Zvika Fogel
-        publisher: The Times of Israel
+      - url: https://www.jpost.com/breaking-news/article-838423
+        title: Likud MK Bismuth assumes chairmanship of National Security Committee
+        publisher: The Jerusalem Post
+      - url: https://www.srugim.co.il/1122129-%D7%A6%D7%91%D7%99%D7%A7%D7%94-%D7%A4%D7%95%D7%92%D7%9C-%D7%97%D7%95%D7%96%D7%A8-%D7%9C%D7%9B%D7%94%D7%9F-%D7%9B%D7%99%D7%95%D7%A8-%D7%94%D7%95%D7%95%D7%A2%D7%93%D7%94-%D7%9C%D7%91%D7%99
+        title: צביקה פוגל חוזר לכהן כיו"ר הוועדה לביטחון לאומי
+        publisher: Srugim
   - kind: negative
     category: investigation
-    status: acquitted
+    status: closed
     title:
       he: חקירת הסתה בעקבות התבטאויות על חווארה (נסגרה ללא כתב אישום)
       en: Incitement investigation over Huwara remarks (closed without charges)
     description:
       he: ב-1 במרץ 2023 הורה היועץ המשפטי לממשלה על פתיחת חקירה בחשד להסתה נגד ח"כ
         צביקה פוגל, בעקבות התבטאויות ברדיו לאחר מהומות מתנחלים בחווארה, בהן אמר
-        כי הוא רוצה לראות את "חווארה סגורה ושרופה". פוגל נחקר על ידי המשטרה.
-        כשנה לאחר מכן, באפריל 2024, הודיעה הפרקליטות על סגירת התיק ללא הגשת כתב
-        אישום. פוגל מעולם לא הואשם או הורשע בעבירה כלשהי בעניין זה.
+        כי הוא רוצה לראות את "חווארה סגורה ושרופה". פוגל טען כי דבריו "סולפו" וכי
+        קרא לפעולה של הצבא ולא של אזרחים, ונחקר על ידי המשטרה. ב-11 באפריל 2024
+        הודיעה הפרקליטות על סגירת התיק ללא הגשת כתב אישום; פוגל כתב כי מדובר
+        ב"חקירה מיותרת וחסרת בסיס". פוגל מעולם לא הואשם או הורשע בעבירה כלשהי
+        בעניין זה.
       en: On 1 March 2023 the Attorney General authorized an incitement investigation
         into MK Zvika Fogel over remarks he made on radio following settler
         riots in the West Bank town of Huwara, in which he said he wanted to see
-        Huwara 'closed and burnt.' Fogel was questioned by police. About a year
-        later, in April 2024, prosecutors announced the investigation had been
-        closed without any charges being filed. Fogel was never charged with or
-        convicted of any offense in the matter.
+        Huwara 'closed and burnt.' Fogel said his words had been 'distorted' and
+        that he was calling on the military, not civilians, to act; he was
+        questioned by police. On 11 April 2024 prosecutors announced the case
+        had been closed without any charges being filed; Fogel called it 'an
+        unnecessary and baseless investigation.' Fogel was never charged with
+        or convicted of any offense in the matter.
     date: 2023-03-01
     sources:
       - url: https://www.jpost.com/israel-news/article-733048
@@ -89,3 +107,35 @@ claims:
         title: Probe of far-right MK Fogel on charges of incitement closed by
           prosecutors
         publisher: The Times of Israel
+  - kind: negative
+    category: controversy
+    date: "2026-04-08"
+    title:
+      he: 'ציוצים נגד הנשיא טראמפ — "דונלד, יצאת ברווז!" ו-"Don''t quack" — וביקורת מחברי כנסת'
+      en: 'Tweets mocking President Trump — "Donald, you came out a duck!" and "Don''t quack" — drew criticism from fellow MKs'
+    description:
+      he: 'ב-8 באפריל 2026, לאחר שהנשיא האמריקני דונלד טראמפ הודיע על הפסקת אש, כתב פוגל ברשת X: "דונלד, יצאת ברווז!". ב-12 באפריל, על רקע הצהרות טראמפ בעניין מצר הורמוז, צייץ באנגלית: "Donald, if you have to shoot, shoot. Don''t quack". ח"כ מירב בן ארי הגיבה: "אתה מבייש כל אזרח במדינה", וח"כ גלעד קריב שאל בלעג מה יש לו ולעוזריו נגד ברווזים.'
+      en: 'On 8 April 2026, after US President Donald Trump announced a ceasefire, Fogel wrote on X: "Donald, you came out a duck!" (a Hebrew idiom for backing down). On 12 April, amid Trump''s statements on the Strait of Hormuz, he tweeted: "Donald, if you have to shoot, shoot. Don''t quack." MK Meirav Ben-Ari responded "you are embarrassing every citizen of the country", and MK Gilad Kariv mockingly asked what he and his advisers had against ducks.'
+    sources:
+      - url: https://www.inn.co.il/news/694051
+        title: 'צביקה פוגל על הפסקת האש במלחמה: "דונלד, יצאת ברווז!"'
+        publisher: Arutz 7 / Israel National News
+      - url: https://www.ynet.co.il/news/article/rjyxylkn11l
+        title: 'הח"כ מעוצמה יהודית שוב לועג לטראמפ: "Don''t quack"'
+        publisher: Ynet
+  - kind: neutral
+    category: news
+    date: "2026-09-06"
+    title:
+      he: הודיע כי לא יתמודד לכנסת ה-26 מטעם עוצמה יהודית לאחר שנדחק לאחור ברשימה
+      en: Announced he will not run for the 26th Knesset with Otzma Yehudit after being pushed down the list
+    description:
+      he: 'ב-6 בספטמבר 2026 הודיע פוגל כי לא יתמודד בבחירות 27 באוקטובר מטעם עוצמה יהודית, לאחר שטלי גוטליב, השר יצחק וסרלאוף ולימור סון הר-מלך שובצו לפניו ברשימת המפלגה. פוגל כתב: "לצערי, הדרך להמשך פעילותי בכנסת או בממשלה הבאה אינה אפשרית כפי שתכננתי". יו"ר המפלגה איתמר בן גביר הודה לו על "שנים של פעילות מסורה, נחושה ובלתי מתפשרת".'
+      en: 'On 6 September 2026 Fogel announced that he would not run in the 27 October election for Otzma Yehudit, after Tali Gotliv, Minister Yitzhak Wasserlauf and Limor Son Har-Melech were placed ahead of him on the party list. Fogel wrote: "Unfortunately, the path to continuing my work in the Knesset or in the next government is not possible as I had planned." Party chairman Itamar Ben Gvir thanked him for "years of dedicated, determined and uncompromising action".'
+    sources:
+      - url: https://www.ynet.co.il/news/elections2026/article/hy0t001iogl
+        title: צביקה פוגל נדחק לאחור - ופורש מרשימת עוצמה יהודית
+        publisher: Ynet
+      - url: https://www.haaretz.co.il/news/elections/2026-09-06/ty-article/.premium/000001a0-76e6-d825-afb5-f6fe53080000
+        title: לאחר שנדחק לאחור ברשימה, ח"כ צביקה פוגל פורש מעוצמה יהודית
+        publisher: Haaretz

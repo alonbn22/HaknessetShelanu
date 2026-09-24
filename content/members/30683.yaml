@@ -1,67 +1,125 @@
-# PersonID 30683. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30683. Researched from reputable public sources and source-verified
+# (every cited URL re-fetched). Neutral language; legal status marked. Reviewed 2026-09-18.
 personId: 30683
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: שר התרבות והספורט (2020–2022)
-      en: Minister of Culture and Sport (2020–2022)
+      he: "שר התרבות והספורט (2020–2022)"
+      en: "Minister of Culture and Sport (2020–2022)"
     description:
-      he: חילי טרופר כיהן כשר התרבות והספורט בממשלות ה-35 וה-36, החל ממאי 2020 ועד
-        2022. בתקופת מגפת הקורונה פעל לתמיכה במוסדות התרבות והספורט שנפגעו
-        מהמגבלות.
-      en: Hili Tropper served as Israel's Minister of Culture and Sport in the 35th
-        and 36th governments, from May 2020 until 2022. During the COVID-19
-        pandemic he worked to support cultural and sports institutions affected
-        by lockdown restrictions.
-    date: 2020-05
+      he: "חילי טרופר כיהן כשר התרבות והספורט בממשלות ה-35 וה-36, ממאי 2020 ועד דצמבר 2022. בתקופת מגפת הקורונה פעל לתמיכה במוסדות התרבות והספורט שנפגעו מהמגבלות."
+      en: "Hili Tropper served as Israel's Minister of Culture and Sport in the 35th and 36th governments, from May 2020 until December 2022. During the COVID-19 pandemic he worked to support cultural and sports institutions affected by lockdown restrictions."
+    date: "2020-05-17"
     sources:
-      - url: https://en.wikipedia.org/wiki/Hili_Tropper
-        title: Hili Tropper
-        publisher: Wikipedia
-      - url: https://www.jpost.com/israel-elections/israel-elections-chili-tropper-the-nice-guy-determined-to-last-661642
+      - url: "https://en.wikipedia.org/wiki/Hili_Tropper"
+        title: "Hili Tropper"
+        publisher: "Wikipedia"
+      - url: "https://www.jpost.com/israel-elections/israel-elections-chili-tropper-the-nice-guy-determined-to-last-661642"
         title: "Israel Elections: Chili Tropper - The nice guy determined to last"
-        publisher: The Jerusalem Post
+        publisher: "The Jerusalem Post"
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30683"
+        title: "חילי טרופר — דף חבר הכנסת"
+        publisher: "Knesset"
   - kind: positive
     category: achievement
     title:
-      he: שר בממשלת החירום (2023–2024)
-      en: Minister in the emergency government (2023–2024)
+      he: "שר בממשלת החירום (2023–2024)"
+      en: "Minister in the emergency government (2023–2024)"
     description:
-      he: ב-12 באוקטובר 2023, לאחר מתקפת ה-7 באוקטובר ופרוץ המלחמה בעזה, הושבע טרופר
-        כשר ללא תיק בממשלה ה-37 במסגרת הצטרפות המחנה הממלכתי לממשלת החירום. הוא
-        כיהן בתפקיד עד התפטרותו ביוני 2024.
-      en: On 12 October 2023, following the 7 October attack and the outbreak of the
-        Gaza war, Tropper was sworn in as a minister without portfolio in the
-        37th government as part of National Unity's entry into an emergency
-        government. He held the post until his resignation in June 2024.
-    date: 2023-10-12
+      he: "ב-12 באוקטובר 2023, לאחר מתקפת ה-7 באוקטובר ופרוץ המלחמה בעזה, הושבע טרופר כשר ללא תיק בממשלה ה-37 במסגרת הצטרפות המחנה הממלכתי לממשלת החירום. הוא כיהן בתפקיד עד התפטרות שרי המחנה הממלכתי ביוני 2024."
+      en: "On 12 October 2023, following the 7 October attack and the outbreak of the Gaza war, Tropper was sworn in as a minister without portfolio in the 37th government as part of National Unity's entry into an emergency government. He held the post until the National Unity ministers resigned in June 2024."
+    date: "2023-10-12"
     sources:
-      - url: https://en.wikipedia.org/wiki/Hili_Tropper
-        title: Hili Tropper
-        publisher: Wikipedia
-      - url: https://en.wikipedia.org/wiki/Thirty-seventh_government_of_Israel
-        title: Thirty-seventh government of Israel
-        publisher: Wikipedia
+      - url: "https://en.wikipedia.org/wiki/Hili_Tropper"
+        title: "Hili Tropper"
+        publisher: "Wikipedia"
+      - url: "https://en.wikipedia.org/wiki/Thirty-seventh_government_of_Israel"
+        title: "Thirty-seventh government of Israel"
+        publisher: "Wikipedia"
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30683"
+        title: "חילי טרופר — דף חבר הכנסת"
+        publisher: "Knesset"
   - kind: positive
     category: volunteering
     title:
-      he: רקע בחינוך, עבודה סוציאלית ושירות צבאי
-      en: Background in education, social work and military service
+      he: "רקע בחינוך, עבודה סוציאלית ושירות צבאי"
+      en: "Background in education, social work and military service"
     description:
-      he: לפני כניסתו לפוליטיקה עסק טרופר כשני עשורים בחינוך ובעבודה סוציאלית, שימש
-        מנהל בית הספר ע"ש ברנקו וייס ברמלה והקים ארגונים חברתיים, ביניהם 'במעגלי
-        צדק' ו'שכן טוב'. בשירותו הצבאי שירת ביחידת דובדבן.
-      en: Before entering politics, Tropper spent about two decades as an educator and
-        social worker, served as principal of the Branco Weiss school in Ramla
-        and co-founded social NGOs, including B'Maagalei Tzedek and Shachen Tov.
-        In his military service he served in the IDF's Duvdevan unit.
+      he: "לפני כניסתו לפוליטיקה עסק טרופר כשני עשורים בחינוך ובעבודה סוציאלית, שימש מנהל בית הספר ע\"ש ברנקו וייס ברמלה והקים ארגונים חברתיים, ביניהם 'במעגלי צדק' ו'שכן טוב'. בשירותו הצבאי שירת ביחידת דובדבן."
+      en: "Before entering politics, Tropper spent about two decades as an educator and social worker, served as principal of the Branco Weiss school in Ramla and co-founded social NGOs, including B'Maagalei Tzedek and Shachen Tov. In his military service he served in the IDF's Duvdevan unit."
     sources:
-      - url: https://en.wikipedia.org/wiki/Hili_Tropper
-        title: Hili Tropper
-        publisher: Wikipedia
-      - url: https://www.jpost.com/israel-elections/israel-elections-chili-tropper-the-nice-guy-determined-to-last-661642
+      - url: "https://en.wikipedia.org/wiki/Hili_Tropper"
+        title: "Hili Tropper"
+        publisher: "Wikipedia"
+      - url: "https://www.jpost.com/israel-elections/israel-elections-chili-tropper-the-nice-guy-determined-to-last-661642"
         title: "Israel Elections: Chili Tropper - The nice guy determined to last"
-        publisher: The Jerusalem Post
+        publisher: "The Jerusalem Post"
+  - kind: positive
+    category: achievement
+    title:
+      he: "חוקים שהתקבלו ביוזמתו: הכרה בשפת הסימנים, זכות נפגעי עבירה בוועדת שחרורים ויום הוקרה לפצועים"
+      en: "Laws passed on his initiative: Sign Language recognition, crime victims' say at parole hearings, and a Recognition Day for the wounded"
+    description:
+      he: "כחבר כנסת מן האופוזיציה נמנה טרופר עם יוזמי כמה חוקים שהתקבלו בקריאה שלישית בכנסת ה-25: חוק הבעת עמדה של נפגע עבירה בנוגע לשחרור על-תנאי (2025), שבו היה היוזם הראשון והמרחיב את זכותם של נפגעי עבירות מין ואלימות להביע עמדה בפני ועדת השחרורים; חוק יום הוקרה ממלכתי לפצועי מערכות ישראל ונפגעי פעולות איבה (2026); וחוק הכרה בשפת הסימנים הישראלית (2026), המסמיך את האקדמיה ללשון העברית לשמר ולפתח את שפת הסימנים."
+      en: "As an opposition MK, Tropper was among the initiators of several laws passed in their third reading in the 25th Knesset: the Crime Victim's Position on Parole Law (2025), of which he was the lead sponsor, expanding the right of victims of sexual and violent offenses to address the parole board; the State Recognition Day for Israel's Wounded Veterans and Victims of Hostile Acts Law (2026); and the Recognition of Israeli Sign Language Law (2026), which charges the Academy of the Hebrew Language with preserving and developing Israeli Sign Language."
+    date: "2026-06-09"
+    sources:
+      - url: "https://main.knesset.gov.il/Activity/Legislation/Laws/Pages/LawBill.aspx?t=lawsuggestionssearch&lawitemid=2206870"
+        title: "חוק הבעת עמדה של נפגע או נפגעת עבירה בנוגע לשחרור על־תנאי ממאסר (תיקוני חקיקה), התשפ\"ה–2025 — דף הצעת החוק"
+        publisher: "Knesset"
+      - url: "https://main.knesset.gov.il/Activity/Legislation/Laws/Pages/LawBill.aspx?t=lawsuggestionssearch&lawitemid=2220929"
+        title: "חוק יום הוקרה ממלכתי לפצועי מערכות ישראל ונפגעי פעולות איבה, התשפ\"ו–2026 — דף הצעת החוק"
+        publisher: "Knesset"
+      - url: "https://main.knesset.gov.il/Activity/Legislation/Laws/Pages/LawBill.aspx?t=lawsuggestionssearch&lawitemid=2229413"
+        title: "חוק הכרה בשפת הסימנים הישראלית, התשפ\"ו-2026 — דף הצעת החוק"
+        publisher: "Knesset"
+  - kind: neutral
+    category: news
+    date: "2026-05-03"
+    title:
+      he: "הודיע על פרישה ממפלגת כחול לבן"
+      en: "Announced his departure from the Blue and White party"
+    description:
+      he: "ב-3 במאי 2026 הודיע טרופר ליו\"ר כחול לבן בני גנץ על פרישתו מהמפלגה, וכתב כי \"השפעה משמעותית כבר אינה אפשרית במפלגת כחול לבן\". ב-5 במאי נמסר כי טרופר יישאר חבר כנסת ויפעל בתיאום עם גנץ בעניינים פרלמנטריים, כדי שלא להוסיף מנדט לקואליציה."
+      en: "On 3 May 2026 Tropper informed Blue and White chairman Benny Gantz that he was leaving the party, writing that \"significant influence is no longer possible in the Blue and White party.\" On 5 May it was announced that Tropper would remain a Knesset member and coordinate with Gantz on parliamentary matters, so as not to add a seat to the coalition."
+    sources:
+      - url: "https://www.haaretz.co.il/news/elections/2026-05-03/ty-article/0000019d-ed02-de36-abfd-fd2a25710000"
+        title: "חילי טרופר הודיע לגנץ על פרישתו ממפלגת כחול לבן"
+        publisher: "Haaretz"
+      - url: "https://www.mako.co.il/news-israel-elections/2026/Article-96683c7b017fd91026.htm"
+        title: "גינזבורג החליט לעזוב את כחול לבן, טרופר יישאר ח\"כ"
+        publisher: "N12"
+  - kind: neutral
+    category: news
+    date: "2026-08-05"
+    title:
+      he: "השיק את מפלגת \"בית ציוני – המילואימניקים\" עם יועז הנדל"
+      en: "Launched the \"Beit Tzioni – The Reservists\" party with Yoaz Hendel"
+    description:
+      he: "ב-5 באוגוסט 2026 השיק טרופר, כיו\"ר מפלגת \"בית ציוני\", את קמפיין הבחירות של הרשימה המשותפת \"בית ציוני – המילואימניקים\" יחד עם יועז הנדל, והציג את דרישת המפלגה כי הנדל יקבל את תיק הביטחון הלאומי בממשלה הבאה."
+      en: "On 5 August 2026 Tropper, as chairman of the \"Beit Tzioni\" party, launched the election campaign of the joint \"Beit Tzioni – The Reservists\" list together with Yoaz Hendel, presenting the party's demand that Hendel receive the national security portfolio in the next government."
+    sources:
+      - url: "https://www.mako.co.il/news-israel-elections/2026/Article-3afc5f06ea2df91026.htm"
+        title: "טרופר בהשקת מפלגתו: \"נדרוש שיועז הנדל יקבל את התיק לביטחון לאומי\""
+        publisher: "N12"
+      - url: "https://www.inn.co.il/news/703312"
+        title: "מפלגת \"בית ציוני - המילואימניקים\" השיקה קמפיין והציגה מצע מקיף"
+        publisher: "Arutz 7 (INN)"
+  - kind: neutral
+    category: news
+    date: "2026-09-06"
+    title:
+      he: "הצטרף לרשימת \"ישר\" בראשות גדי איזנקוט במקום השישי"
+      en: "Joined Gadi Eisenkot's Yashar list in sixth place"
+    description:
+      he: "ב-6 בספטמבר 2026, ערב סגירת הרשימות, חתם טרופר על הסכם לריצה משותפת עם מפלגת \"ישר\" בראשות גדי איזנקוט והוצב במקום השישי ברשימה; יועז הנדל בחר שלא להצטרף. על פי ההסכם, טרופר יהיה הראשון לבחור משרד אם איזנקוט ירכיב ממשלה, וההסכם אינו כולל בלוק טכני."
+      en: "On 6 September 2026, on the eve of the list-filing deadline, Tropper signed an agreement to run jointly with Gadi Eisenkot's Yashar party and was placed sixth on its list; Yoaz Hendel chose not to join. Under the agreement, Tropper would be the first to choose a ministry should Eisenkot form a government, and the arrangement does not include a technical bloc."
+    sources:
+      - url: "https://www.ynet.co.il/news/elections2026/article/skuwxxiuml"
+        title: "יש הסכם: טרופר מצטרף לאיזנקוט ויוצב במקום השישי, הנדל ירוץ עם זליכה"
+        publisher: "ynet"
+      - url: "https://www.timesofisrael.com/no-last-minute-mergers-as-parties-submit-final-knesset-slates-for-election/"
+        title: "No last-minute mergers as most parties submit final Knesset slates for election"
+        publisher: "The Times of Israel"

@@ -1,7 +1,8 @@
 # PersonID 23560. Auto-researched from reputable public sources and
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# legal status marked. Reviewed 2026-09-18.
 personId: 23560
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -72,3 +73,24 @@ claims:
         title: Knesset approves laws barring UNRWA from Israel, limiting it in Gaza and
           West Bank
         publisher: The Times of Israel
+  - kind: neutral
+    category: news
+    date: "2026-09-06"
+    title:
+      he: במקום החמישי ברשימת ישראל ביתנו לבחירות 2026
+      en: Placed fifth on the Yisrael Beytenu list for the 2026 election
+    description:
+      he: ב-6 בספטמבר 2026 הציג יו"ר ישראל ביתנו אביגדור ליברמן את רשימת המפלגה לבחירות
+        לכנסת ה-26 ב-27 באוקטובר 2026, ובה שובצה מלינובסקי במקום החמישי, אחרי ליברמן,
+        רפי בן שטרית, טליה לנקרי ועודד פורר.
+      en: On 6 September 2026 Yisrael Beytenu chairman Avigdor Liberman unveiled the
+        party's list for the 27 October 2026 election to the 26th Knesset, placing
+        Malinovsky fifth, after Liberman, Rafi Ben Shitrit, Talya Lankri and Oded
+        Forer.
+    sources:
+      - url: https://www.jpost.com/israel-election-2026/article-907744
+        title: Liberman unveils Yisrael Beytenu's election list with Rafi Ben Shitrit second, Sharon Sharabi sixth
+        publisher: The Jerusalem Post
+      - url: https://www.israelnationalnews.com/news/432800
+        title: Yisrael Beytenu unveils election slate as key figures exit
+        publisher: Israel National News

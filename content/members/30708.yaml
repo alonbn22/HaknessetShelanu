@@ -29,8 +29,8 @@ claims:
       ar: تحقيق جنائي في شبهة رشوة واحتيال وخيانة الأمانة – الشرطة توصي بتقديم لائحة اتهام
       ru: Уголовное расследование по подозрению в взятках, мошенничестве и злоупотреблении доверием – полиция рекомендует предъявить обвинение
     description:
-      he: ב-10 ביוני 2026 הודיעה משטרת ישראל (להב 433) כי סיימה את החקירה בעניינה של השרה מאי גולן וגיבשה תשתית ראייתית להמלצה על הגשת כתב אישום בעבירות שוחד, מרמה והפרת אמונים ועבירות נוספות, והתיק הועבר לפרקליטות. נכון ל-5 ביולי 2026 טרם הוגש כתב אישום, וההחלטה בעניין נתונה ליועצת המשפטית לממשלה בכפוף לשימוע. גולן דוחה את החשדות וטוענת כי מדובר ברדיפה פוליטית.
-      en: On 10 June 2026 Israel Police's National Fraud Investigation Unit (Lahav 433) announced it had completed its investigation of Minister May Golan, concluding there was a sufficient evidentiary basis to recommend indicting her for bribery, fraud and breach of trust and additional offenses, and transferred the case to the State Attorney. As of 5 July 2026 no indictment has been filed; the decision rests with the Attorney General, subject to a hearing. Golan denies the allegations and has called the case political persecution.
+      he: ב-10 ביוני 2026 הודיעה משטרת ישראל (להב 433) כי סיימה את החקירה בעניינה של השרה מאי גולן וגיבשה תשתית ראייתית להמלצה על הגשת כתב אישום בעבירות שוחד, מרמה והפרת אמונים ועבירות נוספות, והתיק הועבר לפרקליטות. לפי הדיווחים האחרונים שאותרו (יוני 2026) טרם הוגש כתב אישום, וההחלטה בעניין נתונה ליועצת המשפטית לממשלה בכפוף לשימוע; לפי ynet, גולן לא התייצבה לחקירות באזהרה שאליהן זומנה. גולן דוחה את החשדות וטוענת כי מדובר ברדיפה פוליטית.
+      en: On 10 June 2026 Israel Police's National Fraud Investigation Unit (Lahav 433) announced it had completed its investigation of Minister May Golan, concluding there was a sufficient evidentiary basis to recommend indicting her for bribery, fraud and breach of trust and additional offenses, and transferred the case to the State Attorney. According to the latest reports located (June 2026) no indictment has been filed; the decision rests with the Attorney General, subject to a hearing. According to Ynet, Golan did not appear for the questioning under caution to which she was summoned. Golan denies the allegations and has called the case political persecution.
     sources:
       - url: https://www.timesofisrael.com/police-recommend-minister-golan-stand-trial-over-job-fixing-allegations/
         title: Police recommend Minister Golan stand trial over job-fixing allegations
@@ -44,4 +44,42 @@ claims:
       - url: https://www.israelhayom.co.il/news/crime/article/20730780
         title: "הסתיימה חקירת מאי גולן: גובשה תשתית ראייתית להגשת כתב אישום"
         publisher: Israel Hayom
-lastReviewed: 2026-07-05
+      - url: https://www.ynet.co.il/news/article/sjqsyr0nbg
+        title: "במשטרה מעריכים: כתב אישום יוגש נגד מאי גולן - שמסרבת להתייצב לחקירה"
+        publisher: Ynet
+  - kind: negative
+    category: controversy
+    date: 2026-05-20
+    title:
+      he: 'התבטאות במליאה נגד ח"כ גלעד קריב: "מחתן כלבים בבתי הכנסת ההזויים שלך"; שגריר ישראל בארה"ב גינה'
+      en: 'Plenum remark against MK Gilad Kariv – "marrying dogs in your delusional synagogues"; Israel''s ambassador to the US condemned it'
+    description:
+      he: 'ב-20 במאי 2026, לאחר שקריב ביקר את הדיווח על העסקת קבלן הקולות רפי קדושים כיועץ במשרדה, אמרה גולן מעל בימת הכנסת: "מה שרפי קדושים עושה, אתה לא תעשה עוד מאתיים גלגולים כשאתה הולך עם נשות הכותל או מחתן כלבים בבתי הכנסת ההזויים שלך". קריב כינה את הדברים השמצה אנטישמית נגד מיליוני יהודים רפורמים, ושגריר ישראל בארה"ב יחיאל לייטר כתב כי הדברים "מגעילים ומבישים" והתחייב להתנצל בשם ישראל בפני ראשי התנועה הרפורמית. בדיווחים לא הובאה תגובה מגולן.'
+      en: 'On 20 May 2026, after Kariv criticized reports that she had hired the Likud vote contractor Rafi Kedoshim as an adviser in her ministry, Golan said from the Knesset podium: "What Rafi Kedoshim has been doing, you won''t do in another 200 incarnations – while you walk with the Women of the Wall or marry dogs in your delusional synagogues." Kariv called the remarks antisemitic slander against millions of Reform Jews, and Israel''s ambassador to the US, Yechiel Leiter, wrote that the words were "disgusting and reprehensible" and pledged to apologize on Israel''s behalf to Reform movement leaders. The reports carried no response from Golan.'
+    sources:
+      - url: https://www.timesofisrael.com/ambassador-to-us-slams-ministers-disgusting-remark-that-reform-rabbi-marries-dogs/
+        title: Ambassador to US slams minister's 'disgusting' remark that Reform rabbi marries dogs
+        publisher: The Times of Israel
+      - url: https://www.mako.co.il/news-politics/2026_q2/Article-19a078219554e91027.htm
+        title: 'מאי גולן במתקפה על גלעד קריב: "מחתן כלבים"'
+        publisher: N12 / Mako
+  - kind: neutral
+    category: news
+    date: 2026-08-17
+    title:
+      he: בפריימריז הליכוד דורגה במקום ה-23, מחוץ לטווח הריאלי, ואינה ברשימת הליכוד לכנסת ה-26
+      en: Finished 23rd in the Likud primary, outside the realistic range, and is not on Likud's slate for the 26th Knesset
+    description:
+      he: בפריימריז הליכוד ב-17 באוגוסט 2026 דורגה גולן במקום ה-23 בהצבעה, מחוץ לטווח הריאלי. ברשימת הליכוד שהוגשה לוועדת הבחירות ב-9 בספטמבר 2026, כפי שפורסמה ב-JNS, היא אינה נמנית עם 35 המקומות הראשונים.
+      en: In the Likud primary on 17 August 2026 Golan finished 23rd in the vote, outside the realistic range. On the Likud slate filed with the elections committee on 9 September 2026, as published by JNS, she is not among the first 35 places.
+    sources:
+      - url: https://www.globes.co.il/news/article.aspx?did=1001552600
+        title: "ספירת הקולות הסתיימה: כך נראית רשימת הליכוד החדשה"
+        publisher: Globes
+      - url: https://www.ynet.co.il/news/article/sy6ibjzdze
+        title: התוצאות הסופיות בפריימריז הליכוד - והרשימה המסתמנת
+        publisher: Ynet
+      - url: https://www.jns.org/news/israel-news/likud-files-26th-knesset-election-slate
+        title: Likud files 26th Knesset election slate
+        publisher: JNS
+lastReviewed: "2026-09-18"

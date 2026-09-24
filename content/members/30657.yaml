@@ -1,19 +1,80 @@
 # Benny Gantz (PersonID 30657). Factual reporting from reputable public sources,
-# cited per claim. Neutral language. REVIEW before launch.
+# cited per claim; researched and source-verified 2026-09-18 (Knesset position
+# dates cross-checked against the Knesset OData). Neutral language. REVIEW before launch.
 personId: 30657
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
+    date: 2011-02-14
     title:
       he: "הרמטכ\"ל ה-20 של צה\"ל ולימים שר הביטחון"
       en: "20th Chief of the General Staff of the IDF, later Defense Minister"
     description:
-      he: "כיהן כרמטכ\"ל בין 2011 ל-2015. נכנס לפוליטיקה בראש מפלגת כחול לבן וכיהן כשר הביטחון וכראש ממשלה חלופי."
-      en: "Served as IDF Chief of Staff from 2011 to 2015. Entered politics leading the Blue and White party and served as Defense Minister and Alternate Prime Minister."
+      he: "כיהן כרמטכ\"ל בין פברואר 2011 לפברואר 2015. נכנס לפוליטיקה בראש מפלגת כחול לבן (2019), כיהן כשר הביטחון וכראש ממשלה חלופי (2020–2022), וב-12 באוקטובר 2023, לאחר מתקפת 7 באוקטובר, הצטרף לממשלת החירום כשר בקבינט המלחמה — תפקיד שממנו התפטר ביוני 2024."
+      en: "Served as IDF Chief of Staff from February 2011 to February 2015. Entered politics leading the Blue and White party (2019), served as Defense Minister and Alternate Prime Minister (2020–2022), and on 12 October 2023, after the 7 October attack, joined the emergency government as a minister in the war cabinet — a post he resigned from in June 2024."
     sources:
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30657"
+        title: "בנימין גנץ – פרטים אישיים ותפקידים (אתר הכנסת)"
+        publisher: "Knesset"
       - url: "https://en.wikipedia.org/wiki/Benny_Gantz"
         title: "Benny Gantz"
         publisher: "Wikipedia"
-      - url: "https://www.britannica.com/biography/Benny-Gantz"
-        title: "Benny Gantz — Biography"
-        publisher: "Encyclopædia Britannica"
+  - kind: negative
+    category: controversy
+    status: closed
+    date: 2023-04-04
+    title:
+      he: "פרשת \"המימד החמישי\": חקירה בעניין התקשרות המשטרה עם חברה שבראשה עמד — גנץ לא היה חשוד, והתיק נסגר (2023)"
+      en: "The \"Fifth Dimension\" affair: probe into a police contract with a company he chaired — Gantz was not a suspect, and the case was closed (2023)"
+    description:
+      he: "גנץ כיהן בשנים 2015–2018 כיו\"ר דירקטוריון חברת הסייבר \"המימד החמישי\". בפברואר 2019 דיווח \"הארץ\" כי משטרת ישראל התקשרה עם החברה בהיקף של מיליוני שקלים ללא מכרז, ובמרץ 2019 מצא מבקר המדינה ליקויים בהתקשרות. בפברואר 2020 הורה מ\"מ פרקליט המדינה על פתיחת חקירה פלילית, והיועץ המשפטי לממשלה אביחי מנדלבליט הבהיר כי גנץ אינו חשוד בפרשה. ב-4 באפריל 2023 הורה פרקליט המדינה עמית איסמן על סגירת התיק בהיעדר תשתית ראייתית מספקת נגד 15 החשודים; גנץ לא נמנה עמם."
+      en: "From 2015 to 2018 Gantz chaired the board of the cyber company \"Fifth Dimension.\" In February 2019 Haaretz reported that the Israel Police had contracted with the company for millions of shekels without a tender, and in March 2019 the State Comptroller found flaws in the engagement. In February 2020 the acting State Attorney ordered a criminal investigation, and Attorney General Avichai Mandelblit clarified that Gantz was not a suspect in the affair. On 4 April 2023 State Attorney Amit Aisman ordered the case closed for insufficient evidence against the 15 suspects; Gantz was not among them."
+    sources:
+      - url: "https://www.haaretz.co.il/news/law/2023-04-04/ty-article/.premium/00000187-4c6d-dde0-afb7-7e7f11fb0000"
+        title: "פרקליט המדינה הורה על סגירת תיק החקירה בפרשת הממד החמישי"
+        publisher: "Haaretz"
+      - url: "https://www.ynet.co.il/articles/0,7340,L-5681664,00.html"
+        title: "מנדלבליט הכריע מיד, מ\"מ פרקליט המדינה היה נתון ללחצים פוליטיים"
+        publisher: "Ynet"
+      - url: "https://www.haaretz.co.il/news/politics/1.6938029"
+        title: "המשטרה התקשרה עם החברה של גנץ בעלות של מיליונים ובלי מכרז"
+        publisher: "Haaretz"
+  - kind: neutral
+    category: news
+    date: 2026-09-04
+    title:
+      he: "המגעים לאיחוד כחול לבן עם מפלגת \"האחדות\" של גלעד ארדן הסתיימו ללא הסכם"
+      en: "Talks to merge Blue and White with Gilad Erdan's \"HaAchdut\" party ended without agreement"
+    description:
+      he: "ב-4 בספטמבר 2026 הסתיימו ללא הסכם המגעים לאיחוד בין כחול לבן לבין מפלגת \"האחדות\" בראשות גלעד ארדן, על רקע מחלוקת בשאלה מי יעמוד בראש רשימה משותפת. לפי הדיווח, שתי המפלגות לא עברו את אחוז החסימה בסקרים באותה עת."
+      en: "On 4 September 2026 merger talks between Blue and White and Gilad Erdan's \"HaAchdut\" party ended without agreement, amid disagreement over who would head a joint list. According to the report, neither party was passing the electoral threshold in polls at the time."
+    sources:
+      - url: "https://www.ynet.co.il/news/elections2026/article/hk8razdozl"
+        title: "סוף למו\"מ לאיחוד: ארדן וגנץ לא ירוצו ביחד בבחירות"
+        publisher: "Ynet"
+      - url: "https://www.ynet.co.il/news/elections2026/article/hjrugbkdze"
+        title: "גנץ מתעקש מול ארדן: \"אני במקום הראשון\""
+        publisher: "Ynet"
+  - kind: neutral
+    category: news
+    date: 2026-09-09
+    title:
+      he: "עומד בראש רשימת כחול לבן לכנסת ה-26 ודוחה לחצים לפרוש מהמירוץ"
+      en: "Heads the Blue and White list for the 26th Knesset and rejects pressure to quit the race"
+    description:
+      he: "ב-8 בספטמבר 2026 הגישה כחול לבן את רשימתה לבחירות 27 באוקטובר, ובראשה גנץ. הדבר בא לאחר פרישת חברי כנסת מהמפלגה (ובהם יעל רון בן משה באוגוסט), ועל רקע סקרים שבהם המפלגה מתקשה לעבור את אחוז החסימה. ב-9 בספטמבר דווח כי בכירים ב\"גוש השינוי\" לוחצים על גנץ לפרוש; גנץ הצהיר קודם לכן: \"אני מתחייב שלא אשרוף קולות... אני רץ עד הסוף\", ואמר כי יפעל להקמת ממשלת אחדות רחבה."
+      en: "On 8 September 2026 Blue and White submitted its list for the 27 October election with Gantz at its head. This followed departures of MKs from the party (including Yael Ron Ben-Moshe in August) and polls in which the party struggled to pass the electoral threshold. On 9 September it was reported that senior figures in the \"change bloc\" were pressing Gantz to withdraw; Gantz had earlier declared: \"I commit that I will not burn votes... I am running to the end,\" and said he would work for a broad unity government."
+    sources:
+      - url: "https://www.maariv.co.il/news/elections-2026/article-1364448"
+        title: "בחירות 2026: רשימת מפלגת \"כחול לבן\" לכנסת ה-26 בראשות בני גנץ"
+        publisher: "Maariv"
+      - url: "https://www.ynet.co.il/news/elections2026/article/ryshdk0dgl"
+        title: "\"מונע מתסכול אישי\": בגוש השינוי לוחצים על גנץ לפרוש, הוא מתעקש לרוץ עד הסוף"
+        publisher: "Ynet"
+      - url: "https://www.mako.co.il/special-mako-news/Article-fb7921b406360a1026.htm"
+        title: "בני גנץ: אני מתחייב שלא אשרוף קולות. עד שלא יהרגו אותי, אני רץ"
+        publisher: "N12"
+      - url: "https://www.ynet.co.il/news/elections2026/article/rys40aqvme"
+        title: "הקריסה של כחול לבן, והאולטימטום ששוקלים הח\"כים: \"בני ערובה של גנץ\""
+        publisher: "Ynet"

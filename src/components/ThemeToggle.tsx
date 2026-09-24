@@ -37,7 +37,7 @@ export function ThemeToggle() {
       aria-pressed={isDark}
       aria-label={label}
       title={label}
-      className="inline-flex h-10 w-10 items-center justify-center rounded-lg hover:bg-white/10"
+      className="inline-flex h-10 w-10 items-center justify-center rounded-control hover:bg-chrome-hover"
     >
       {/* Moon in light mode (→ dark); sun in dark mode (→ light). */}
       <svg

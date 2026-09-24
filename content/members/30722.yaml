@@ -2,6 +2,7 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 30722
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -51,11 +52,12 @@ claims:
       he: סגן יושב ראש הכנסת
       en: Deputy Speaker of the Knesset
     description:
-      he: סובה שימש יושב ראש סיעת ישראל ביתנו וסגן יושב ראש הכנסת בכנסת ה-24, וכיהן
-        כסגן יושב ראש הכנסת גם בכנסת ה-25.
+      he: סובה שימש יושב ראש סיעת ישראל ביתנו וסגן יושב ראש הכנסת בכנסת ה-24, ולפי אתר
+        הכנסת מכהן כסגן יושב ראש הכנסת ה-25 מ-23 באוקטובר 2023.
       en: Sova served as chair of the Yisrael Beiteinu faction and as a Deputy Speaker
-        of the Knesset in the 24th Knesset, and also served as a Deputy Speaker
-        of the Knesset in the 25th Knesset.
+        of the Knesset in the 24th Knesset, and according to the Knesset website
+        has served as a Deputy Speaker of the 25th Knesset since 23 October 2023.
+    date: 2023-10-23
     sources:
       - url: https://he.wikipedia.org/wiki/%D7%99%D7%91%D7%92%D7%A0%D7%99_%D7%A1%D7%95%D7%91%D7%94
         title: יבגני סובה
@@ -63,3 +65,35 @@ claims:
       - url: https://www.israelnationalnews.com/news/401919
         title: "Deputy Knesset Speaker: 'Everyone must serve, it's not about haredim'"
         publisher: Israel National News
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30722
+        title: יבגני סובה - אתר הכנסת
+        publisher: The Knesset
+  - kind: neutral
+    category: news
+    date: 2026-06-29
+    title:
+      he: 'בוועדת העלייה והקליטה: כ-50 אלף יוצאי רוסיה אינם מקבלים את הפנסיה שלהם'
+      en: 'At the Aliyah and Absorption Committee: some 50,000 immigrants from Russia are not receiving their pensions'
+    description:
+      he: 'בדיון בוועדת העלייה, הקליטה והתפוצות ב-29 ביוני 2026 אמר סובה כי למעלה מ-50 אלף יוצאי רוסיה בישראל אינם מקבלים את הפנסיה שלהם מרוסיה כבר יותר מארבע שנים בשל הסנקציות על ערוצי הבנקאות, וקרא לממשלה לתת עדיפות לפתרון הסוגיה במשא ומתן על בסיס הסכם 2016.'
+      en: 'At a hearing of the Committee on Aliyah, Absorption and Diaspora on 29 June 2026, Sova said that more than 50,000 immigrants from Russia in Israel have not received their Russian pensions for over four years because of sanctions affecting banking channels, and called on the government to prioritize resolving the issue through negotiations based on the 2016 agreement.'
+    sources:
+      - url: https://www.davar1.co.il/686570/
+        title: 'ח"כ סובה: "כ-50 אלף יוצאי רוסיה לא מקבלים את הפנסיה, ורבים במצוקה כלכלית קשה"'
+        publisher: Davar
+  - kind: neutral
+    category: news
+    date: 2026-09-06
+    title:
+      he: מוצב במקום השמיני ברשימת ישראל ביתנו לכנסת ה-26
+      en: Placed eighth on the Yisrael Beiteinu list for the 26th Knesset
+    description:
+      he: ברשימת ישראל ביתנו לבחירות 2026, שהציג אביגדור ליברמן ב-6 בספטמבר 2026, מוצב סובה במקום השמיני.
+      en: On the Yisrael Beiteinu list for the 2026 election, unveiled by Avigdor Liberman on 6 September 2026, Sova is in eighth place.
+    sources:
+      - url: https://www.ynet.co.il/news/elections2026/article/bki6ywjdge
+        title: 'ליברמן הוצג כ"רה"מ הבא" והפתיע: רפי בן שטרית במקום השני, טליה לנקרי שלישית'
+        publisher: Ynet
+      - url: https://13tv.co.il/item/news/politics/politics/nd5kg-905346334/
+        title: 'רפי בן שטרית שני, לנקרי שלישית: ליברמן חשף את הרשימה לכנסת'
+        publisher: Reshet 13

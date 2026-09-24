@@ -1,20 +1,21 @@
-# Eli Dallal (PersonID 30831). Researched + adversarially verified 2026-07-05.
-# Every claim cites >=1 reputable source (enforced by the content schema).
+# Eli Dallal (PersonID 30831). Researched and source-verified 2026-09-18 (every
+# cited URL re-fetched; Knesset membership cross-checked against the Knesset
+# OData). Every claim cites >=1 reputable source (enforced by the content schema).
+# Neutral language. REVIEW before launch.
 personId: 30831
-lastReviewed: 2026-07-05
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     date: 2023-01-31
     title:
-      he: יושב ראש הוועדה המיוחדת לזכויות הילד בכנסת ה-25
-      en: Chair of the Knesset Special Committee on the Rights of the Child
-      ar: رئيس اللجنة الخاصة لحقوق الطفل في الكنيست الخامس والعشرين
-      ru: Председатель специальной комиссии Кнессета по правам ребёнка
+      he: נבחר ליושב ראש הוועדה המיוחדת לזכויות הילד בכנסת ה-25
+      en: Elected chair of the Knesset Special Committee on the Rights of the Child
+      ar: انتُخب رئيسًا للجنة الخاصة لحقوق الطفل في الكنيست الخامس والعشرين
+      ru: Избран председателем специальной комиссии Кнессета по правам ребёнка
     description:
-      he: ב-31 בינואר 2023 נבחר ח"כ אלי דלל פה אחד ליושב ראש הוועדה המיוחדת לזכויות הילד של הכנסת ה-25. לצד תפקיד זה הוא חבר בוועדת הכספים ובוועדה לקידום מעמד האישה ולשוויון מגדרי.
-      en: On 31 January 2023, MK Eli Dallal was elected unanimously as chair of the 25th Knesset's Special Committee on the Rights of the Child. He also serves as a member of the Finance Committee and the Committee on the Status of Women and Gender Equality.
-      ru: 31 января 2023 года депутат Эли Далаль был единогласно избран председателем специальной комиссии Кнессета 25-го созыва по правам ребёнка. Он также является членом финансовой комиссии и комиссии по улучшению статуса женщин и гендерному равенству.
+      he: ב-31 בינואר 2023 נבחר ח"כ אלי דלל פה אחד ליושב ראש הוועדה המיוחדת לזכויות הילד של הכנסת ה-25, כמתועד בפרוטוקול הוועדה. לצד תפקיד זה היה חבר בוועדת הכספים ובוועדה לקידום מעמד האישה ולשוויון מגדרי. נכון ל-2026 הוא מתואר כיו"ר הוועדה לשעבר, לאחר שכיהן בתפקיד למעלה משנתיים.
+      en: On 31 January 2023, MK Eli Dallal was elected unanimously as chair of the 25th Knesset's Special Committee on the Rights of the Child, as recorded in the committee's protocol. Alongside that post he sat on the Finance Committee and the Committee on the Status of Women and Gender Equality. As of 2026 he is described as the committee's former chair, having held the post for more than two years.
     sources:
       - url: https://oknesset.org/meetings/2/1/2199263.html
         title: בחירת יושב ראש הוועדה המיוחדת לזכויות הילד
@@ -22,9 +23,12 @@ claims:
       - url: https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99_%D7%93%D7%9C%D7%9C
         title: אלי דלל – ויקיפדיה
         publisher: Wikipedia (Hebrew)
+      - url: https://www.netanyanet.co.il/magazine/%D7%90%D7%A0%D7%A9%D7%99%D7%9D-%D7%91%D7%A0%D7%AA%D7%A0%D7%99%D7%94/17641-%D7%90%D7%9C%D7%99-%D7%93%D7%9C%D7%9C-%D7%A4%D7%A8%D7%99%D7%99%D7%9E%D7%A8%D7%99%D7%96
+        title: '"הנציג שתהיו גאים בו בכנסת": אלי דלל נערך לפריימריז בליכוד'
+        publisher: NetanyaNet
   - kind: positive
     category: achievement
-    date: 2022-11
+    date: 2022-11-15
     title:
       he: 'קריירה מוניציפלית בנתניה: מנכ"ל העירייה, סגן וממלא מקום ראש העיר'
       en: "Municipal career in Netanya: municipality CEO, deputy and acting mayor"
@@ -41,35 +45,69 @@ claims:
       - url: https://en.wikipedia.org/wiki/Eli_Dellal
         title: Eli Dellal - Wikipedia
         publisher: Wikipedia (English)
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30831
+        title: אלי דלל – פרטים אישיים ותפקידים (אתר הכנסת)
+        publisher: Knesset
   - kind: negative
     category: controversy
-    date: 2023-07
+    date: 2023-07-27
     title:
-      he: משיכת הצעת החוק לפיצול סמכויות היועץ המשפטי לממשלה
-      en: Withdrawal of bill to split the attorney general's powers
-      ar: سحب مشروع قانون لتقسيم صلاحيات المستشار القضائي للحكومة
-      ru: Отзыв законопроекта о разделении полномочий юридического советника правительства
+      he: משיכת הצעת החוק לפיצול סמכויות היועץ המשפטי לממשלה (2023)
+      en: Withdrawal of bill to split the attorney general's powers (2023)
+      ar: سحب مشروع قانون لتقسيم صلاحيات المستشار القضائي للحكومة (2023)
+      ru: Отзыв законопроекта о разделении полномочий юридического советника правительства (2023)
     description:
-      he: ביולי 2023 הגיש דלל הצעת חוק להעברת סמכויות האכיפה הפלילית כלפי חברי ממשלה מהיועץ המשפטי לממשלה לפרקליט המדינה. לאחר ביקורת ציבורית, ולאחר שהליכוד הבהיר כי ההצעה לא תואמה עם ראשות הקואליציה ולא תקודם ללא אישורה, הודיע דלל על משיכת ההצעה, ומסר כי הדבר נעשה בהיעדר כוונה לקדם את החוק בכנסת הנוכחית ו"מתוך רצון אמיתי וכן לשיח, פשרות והסכמות" עם חברי האופוזיציה.
-      en: In July 2023, Dallal submitted a bill to transfer criminal-enforcement powers over government members from the attorney general to the state prosecutor. Following public criticism, and after Likud stated the bill had not been coordinated with the coalition leadership and would not advance without its approval, Dallal announced he was withdrawing it, saying he did not intend to advance the law in the current Knesset and citing "a genuine desire for dialogue, compromises and agreements" with opposition colleagues.
+      he: ב-26 ביולי 2023 הגיש דלל, יחד עם חברי כנסת נוספים מהליכוד, הצעת חוק להעברת סמכויות האכיפה הפלילית כלפי ראש הממשלה וחברי הממשלה מהיועץ המשפטי לממשלה לפרקליט המדינה. לאחר ביקורת ציבורית, ולאחר שהליכוד הבהיר כי ההצעה לא תואמה עם ראשות הקואליציה ולא תקודם ללא אישורה, הודיע דלל ב-27 ביולי על משיכת ההצעה, ומסר כי הדבר נעשה "לאור כוונתי שלא לקדם את החוק בכנסת הנוכחית ומתוך רצון אמיתי וכן לשיח, פשרות והסכמות" עם חברי האופוזיציה.
+      en: On 26 July 2023 Dallal, together with other Likud MKs, submitted a bill to transfer criminal-enforcement powers over the prime minister and government members from the attorney general to the state prosecutor. Following public criticism, and after Likud stated the bill had not been coordinated with the coalition leadership and would not advance without its approval, Dallal announced on 27 July that he was withdrawing it, saying he did so "in light of my intention not to advance the law in the current Knesset and out of a genuine desire for dialogue, compromises and agreements" with opposition colleagues.
       ru: В июле 2023 года Далаль внёс законопроект о передаче полномочий уголовного преследования членов правительства от юридического советника правительства государственному прокурору. После публичной критики и заявления «Ликуда», что законопроект не был согласован с руководством коалиции, Далаль объявил об отзыве инициативы, сославшись на стремление к диалогу и договорённостям с оппозицией.
     sources:
       - url: https://www.calcalist.co.il/local_news/article/rkdw11exin
         title: 'בעקבות הביקורת: ח"כ דלל משך ההצעה לפיצול תפקיד היועמ"ש'
         publisher: Calcalist
+      - url: https://www.israelhayom.co.il/news/politics/article/14436411
+        title: ח"כ אלי דלל משך את הצעת החוק לפיצול תפקיד היועמ"ש
+        publisher: Israel Hayom
+      - url: https://www.ynet.co.il/news/article/symz1k1sn
+        title: לקראת טיפול מחודש בתיקי נתניהו? הוגשה הצעת חוק לפיצול תפקיד היועמ"שית
+        publisher: Ynet
   - kind: negative
     category: controversy
-    date: 2024-12
+    date: 2024-12-10
     title:
-      he: ביקורת על הצעת חוק לסגן ראש עיר נוסף בשכר
-      en: Criticism over bill enabling an additional salaried deputy mayor
-      ar: انتقادات لمشروع قانون يتيح نائب رئيس بلدية إضافي بأجر
-      ru: Критика законопроекта о дополнительном оплачиваемом заместителе мэра
+      he: ביקורת על הצעת חוק לסגן ראש עיר נוסף, שלפי הדיווח תיטיב עם נתניה (2024)
+      en: Criticism over a bill enabling an additional deputy mayor, reported to benefit Netanya (2024)
+      ar: انتقادات لمشروع قانون يتيح نائب رئيس بلدية إضافيًا، قيل إنه يفيد نتانيا (2024)
+      ru: Критика законопроекта о дополнительном заместителе мэра, который, по сообщениям, выгоден Нетании (2024)
     description:
-      he: דלל קידם הצעת חוק פרטית שתאפשר לרשויות מקומיות שבהן 100–150 אלף תושבים למנות סגן ראש עיר נוסף בשכר; בדצמבר 2024 אישרה ועדת הפנים של הכנסת את ההצעה לקריאה שנייה. דה-מרקר דיווח כי ההצעה תיטיב בפועל עם נתניה, עירו של דלל — שהצהיר על כוונתו להתמודד על ראשות העיר — בעלות של מאות אלפי שקלים בשנה, והעלה טענות לניגוד עניינים. בכתבה לא הובאה תגובה מטעם דלל.
-      en: Dallal advanced a private bill allowing municipalities with 100,000–150,000 residents to appoint an additional salaried deputy mayor; in December 2024 the Knesset Interior Committee approved it for its second reading. TheMarker reported that the bill would in practice benefit Netanya — Dallal's home city, where he had declared his intention to run for mayor — at a cost of hundreds of thousands of shekels a year, and raised conflict-of-interest concerns. The report did not include a response from Dallal.
-      ru: Далаль продвигал частный законопроект, позволяющий городам со 100–150 тыс. жителей назначать дополнительного оплачиваемого заместителя мэра; в декабре 2024 года комиссия Кнессета по внутренним делам одобрила его ко второму чтению. Газета TheMarker сообщила, что закон фактически выгоден Нетании — родному городу Далаля, где он заявил о намерении баллотироваться в мэры, — и указала на вопросы конфликта интересов. Ответ Далаля в публикации не приводился.
+      he: דלל יזם הצעת חוק פרטית לתיקון פקודת העיריות בעניין מספר סגני ראש העיר; ב-10 בדצמבר 2024 אישרה ועדת הפנים והגנת הסביבה את ההצעה לקריאה שנייה ושלישית, כמתועד בפרוטוקול הוועדה. דה-מרקר דיווח (ביולי ובדצמבר 2024) כי ההצעה מורידה את סף התושבים למינוי סגן נוסף לרשויות של 100–150 אלף תושבים וכי בפועל תאפשר דווקא לנתניה, עירו של דלל — שהצהיר על כוונתו להתמודד על ראשות העיר — לשלם שכר לסגן נוסף בעלות של מאות אלפי שקלים בשנה, והעלה טענות לניגוד עניינים. בכתבות לא הובאה תגובה מטעם דלל.
+      en: Dallal initiated a private bill amending the Municipalities Ordinance on the number of deputy mayors; on 10 December 2024 the Knesset Interior and Environmental Protection Committee approved it for its second and third readings, as recorded in the committee protocol. TheMarker reported (in July and December 2024) that the bill lowers the population threshold for an additional deputy mayor to municipalities of 100,000–150,000 residents and would in practice allow Netanya specifically — Dallal's home city, where he had declared his intention to run for mayor — to pay a salary to an additional deputy at a cost of hundreds of thousands of shekels a year, and raised conflict-of-interest concerns. The reports did not include a response from Dallal.
+      ru: Далаль продвигал частный законопроект о числе заместителей мэра; в декабре 2024 года комиссия Кнессета по внутренним делам одобрила его ко второму и третьему чтению. Газета TheMarker сообщила, что закон фактически выгоден Нетании — родному городу Далаля, где он заявил о намерении баллотироваться в мэры, — и указала на вопросы конфликта интересов. Ответ Далаля в публикациях не приводился.
     sources:
       - url: https://www.themarker.com/allnews/2024-12-10/ty-article/.premium/00000193-afc7-d7c9-afdf-ffcff2130000
         title: 'הצעת החוק של ח"כ אלי דלל: סגן נוסף בשכר לראשי עיריות — דווקא בנתניה, שממנה הוא מגיע'
         publisher: TheMarker
+      - url: https://www.themarker.com/news/2024-07-14/ty-article/.premium/00000190-a691-da1a-adf0-a69dfb250000
+        title: 'חוק הג''ובים החדש של ח"כ אלי דלל: עוד סגן ראש עיר בשכר "כדי להקל על הקמת קואליציה"'
+        publisher: TheMarker
+      - url: https://oknesset.org/meetings/2/2/2224983.html
+        title: 'הצעת חוק הרשויות המקומיות (בחירת ראש הרשות וסגניו וכהונתם) – ישיבת ועדת הפנים והגנת הסביבה, 10 בדצמבר 2024'
+        publisher: Open Knesset (Knesset committee protocol)
+  - kind: neutral
+    category: news
+    date: 2026-08-18
+    title:
+      he: התמודד בפריימריז של הליכוד לכנסת ה-26 ולא שובץ במקום ריאלי
+      en: Ran in the Likud primaries for the 26th Knesset and was not placed in a realistic spot
+    description:
+      he: דלל התמודד ברשימה הארצית בפריימריז של הליכוד שנערכו ב-17 באוגוסט 2026. לפי דיווח מעריב על תוצאות הספירה (18 באוגוסט), הוא לא נמנה עם 27 המועמדים הראשונים ברשימה הארצית, ושמו אינו מופיע ברשימת הליכוד שהוגשה לוועדת הבחירות לקראת בחירות 27 באוקטובר 2026.
+      en: Dallal ran on the national list in the Likud primaries held on 17 August 2026. According to Maariv's report on the count (18 August), he was not among the top 27 national-list finishers, and his name does not appear on the Likud list submitted for the 27 October 2026 election.
+    sources:
+      - url: https://www.maariv.co.il/news/politics/article-1356297
+        title: 'פריימריז בליכוד: רשימת המועמדים המלאה נחשפת'
+        publisher: Maariv
+      - url: https://www.maariv.co.il/news/politics/article-1357061
+        title: 'הסתיימה ההצבעה בליכוד: אלי כהן המנצח הגדול, טלי גוטליב מחוץ לעשירייה הראשונה - ואלו מי שנשארו בחוץ'
+        publisher: Maariv
+      - url: https://he.wikipedia.org/wiki/%D7%94%D7%91%D7%97%D7%99%D7%A8%D7%95%D7%AA_%D7%9C%D7%9B%D7%A0%D7%A1%D7%AA_%D7%94%D7%A2%D7%A9%D7%A8%D7%99%D7%9D_%D7%95%D7%A9%D7%A9
+        title: הבחירות לכנסת העשרים ושש – ויקיפדיה
+        publisher: Wikipedia (Hebrew)

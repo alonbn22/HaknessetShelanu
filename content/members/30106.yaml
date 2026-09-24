@@ -1,71 +1,122 @@
-# PersonID 30106. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30106. Researched from reputable public sources and source-verified
+# (every cited URL re-fetched). Neutral language; legal status marked. Reviewed 2026-09-18.
 personId: 30106
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: חברת הכנסת מטעם מפלגת העבודה ולאחר מכן 'הדמוקרטים'
-      en: Member of the Knesset for Labor and later The Democrats
+      he: "חברת הכנסת מטעם מפלגת העבודה ולאחר מכן 'הדמוקרטים'"
+      en: "Member of the Knesset for Labor and later The Democrats"
     description:
-      he: נעמה לזימי, ילידת מגדל העמק (11 בינואר 1986), נכנסה לכנסת ה-24 ב-2021 מטעם
-        מפלגת העבודה לאחר התפטרותו של עמר בר-לב במסגרת החוק הנורווגי. בבחירות
-        לכנסת ה-25 (2022) דורגה במקום השני ברשימת העבודה, אחרי יושבת ראש המפלגה
-        מרב מיכאלי. ביוני 2024 המשיכה לכהן כחברת כנסת מטעם מפלגת 'הדמוקרטים'
-        שהוקמה באיחוד העבודה ומרצ.
-      en: Naama Lazimi, born in Migdal HaEmek (11 January 1986), entered the 24th
-        Knesset in 2021 for the Labor Party following Omer Bar-Lev's resignation
-        under the Norwegian Law. In the 2022 election for the 25th Knesset she
-        was ranked second on the Labor list, behind party leader Merav Michaeli.
-        In June 2024 she continued as a Knesset member for The Democrats, formed
-        by the merger of Labor and Meretz.
-    date: 2021-06-22
+      he: "נעמה לזימי, ילידת מגדל העמק (1986), נכנסה לכנסת ה-24 ב-2021 מטעם מפלגת העבודה לאחר התפטרותו של עמר בר-לב במסגרת החוק הנורווגי. בבחירות לכנסת ה-25 (2022) דורגה במקום השני ברשימת העבודה, אחרי יושבת ראש המפלגה מרב מיכאלי. מיולי 2024 היא מכהנת כחברת כנסת מטעם 'הדמוקרטים', שהוקמה באיחוד העבודה ומרצ."
+      en: "Naama Lazimi, born in Migdal HaEmek (1986), entered the 24th Knesset in 2021 for the Labor Party following Omer Bar-Lev's resignation under the Norwegian Law. In the 2022 election for the 25th Knesset she was ranked second on the Labor list, behind party leader Merav Michaeli. Since July 2024 she has served as a Knesset member for The Democrats, formed by the merger of Labor and Meretz."
+    date: "2021-06-22"
     sources:
-      - url: https://en.wikipedia.org/wiki/Naama_Lazimi
-        title: Naama Lazimi
-        publisher: Wikipedia
-      - url: https://www.wikidata.org/wiki/Q107264625
-        title: Naama Lazimi (Q107264625)
-        publisher: Wikidata
+      - url: "https://en.wikipedia.org/wiki/Naama_Lazimi"
+        title: "Naama Lazimi"
+        publisher: "Wikipedia"
+      - url: "https://www.wikidata.org/wiki/Q107264625"
+        title: "Naama Lazimi (Q107264625)"
+        publisher: "Wikidata"
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30106"
+        title: "נעמה לזימי — דף חברת הכנסת"
+        publisher: "Knesset"
   - kind: positive
     category: achievement
     title:
-      he: יושבת ראש הוועדה המיוחדת לצעירים בישראל
-      en: Chair of the Special Committee on Young Israelis
+      he: "יושבת ראש הוועדה המיוחדת לצעירים בישראל"
+      en: "Chair of the Special Committee on Young Israelis"
     description:
-      he: במהלך כהונתה בכנסת ה-25 כיהנה נעמה לזימי כיושבת ראש הוועדה המיוחדת לצעירים
-        בישראל, ובמסגרתה עסקה בין היתר בחסמי השתלבות של צעירים.
-      en: During the 25th Knesset, Naama Lazimi served as chair of the Knesset's
-        Special Committee on Young Israelis, in which capacity she addressed
-        issues including integration barriers facing young people.
+      he: "ביוני 2024 נבחרה נעמה לזימי ליושבת ראש הוועדה המיוחדת לצעירים בישראל בכנסת ה-25, ובמסגרתה עסקה בין היתר בחסמי השתלבות של צעירים. היא חברה גם בוועדת הכספים ובוועדת החינוך, התרבות והספורט."
+      en: "In June 2024 Naama Lazimi was elected chair of the Knesset's Special Committee on Young Israelis in the 25th Knesset, in which capacity she addressed issues including integration barriers facing young people. She also sits on the Finance Committee and the Education, Culture and Sports Committee."
+    date: "2024-06-01"
     sources:
-      - url: https://en.wikipedia.org/wiki/Naama_Lazimi
-        title: Naama Lazimi
-        publisher: Wikipedia
-      - url: https://he.wikipedia.org/wiki/%D7%A0%D7%A2%D7%9E%D7%94_%D7%9C%D7%96%D7%99%D7%9E%D7%99
-        title: נעמה לזימי
-        publisher: Wikipedia (Hebrew)
+      - url: "https://en.wikipedia.org/wiki/Naama_Lazimi"
+        title: "Naama Lazimi"
+        publisher: "Wikipedia"
+      - url: "https://he.wikipedia.org/wiki/%D7%A0%D7%A2%D7%9E%D7%94_%D7%9C%D7%96%D7%99%D7%9E%D7%99"
+        title: "נעמה לזימי"
+        publisher: "Wikipedia (Hebrew)"
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30106"
+        title: "נעמה לזימי — דף חברת הכנסת"
+        publisher: "Knesset"
   - kind: positive
     category: achievement
     title:
-      he: רקע של שירות צבאי ועשייה ציבורית-חברתית
-      en: Military service and public-service background
+      he: "רקע של שירות צבאי ועשייה ציבורית-חברתית"
+      en: "Military service and public-service background"
     description:
-      he: לזימי שירתה בצה"ל כקצינה במשרד הביטחון ולאחר מכן כקצינת מילואים בפיקוד
-        העורף, ולמדה מדע המדינה והיסטוריה של עם ישראל באוניברסיטת חיפה. לפני
-        כניסתה לכנסת כיהנה כחברת מועצת העיר חיפה וכמשנה ליושב ראש אגודת
-        הסטודנטים. כחברת כנסת קידמה מאבקים חברתיים בתחומי הדיור וזכויות העובדים.
-      en: Lazimi served in the IDF as an officer in the Ministry of Defense and later
-        as a reserve officer in the Home Front Command, and studied political
-        science and Jewish history at the University of Haifa. Before entering
-        the Knesset she served on the Haifa City Council and as vice-chair of
-        the student association. As a legislator she has promoted social
-        campaigns in the areas of housing and workers' rights.
+      he: "לזימי שירתה בצה\"ל כקצינה במשרד הביטחון ולאחר מכן כקצינת מילואים בפיקוד העורף, ולמדה מדע המדינה והיסטוריה של עם ישראל באוניברסיטת חיפה. לפני כניסתה לכנסת כיהנה כחברת מועצת העיר חיפה וכמשנה ליושב ראש אגודת הסטודנטים. כחברת כנסת קידמה מאבקים חברתיים בתחומי הדיור וזכויות העובדים."
+      en: "Lazimi served in the IDF as an officer in the Ministry of Defense and later as a reserve officer in the Home Front Command, and studied political science and Jewish history at the University of Haifa. Before entering the Knesset she served on the Haifa City Council and as vice-chair of the student association. As a legislator she has promoted social campaigns in the areas of housing and workers' rights."
     sources:
-      - url: https://en.wikipedia.org/wiki/Naama_Lazimi
-        title: Naama Lazimi
-        publisher: Wikipedia
-      - url: https://he.wikipedia.org/wiki/%D7%A0%D7%A2%D7%9E%D7%94_%D7%9C%D7%96%D7%99%D7%9E%D7%99
-        title: נעמה לזימי
-        publisher: Wikipedia (Hebrew)
+      - url: "https://en.wikipedia.org/wiki/Naama_Lazimi"
+        title: "Naama Lazimi"
+        publisher: "Wikipedia"
+      - url: "https://he.wikipedia.org/wiki/%D7%A0%D7%A2%D7%9E%D7%94_%D7%9C%D7%96%D7%99%D7%9E%D7%99"
+        title: "נעמה לזימי"
+        publisher: "Wikipedia (Hebrew)"
+  - kind: positive
+    category: achievement
+    title:
+      he: "חוקים שהתקבלו ביוזמתה: דמי מחלה לחולים כרוניים, חניה לפי דקות, וסיוע למוקדי חירום"
+      en: "Laws passed on her initiative: sick pay for chronically ill workers, per-minute parking, and support for emergency hotlines"
+    description:
+      he: "בין החוקים שהתקבלו בקריאה שלישית ולזימי נמנתה עם יוזמיהם: תיקון מס' 6 לחוק דמי מחלה (2022), המזכה עובדים החולים במחלה ממארת או הנזקקים לדיאליזה בדמי מחלה מהיום הראשון להיעדרות לטיפול; תיקון מס' 136 לפקודת התעבורה (2024), שלפיו דמי חניה בחניונים ייגבו לפי דקות כבר מהשעה הראשונה; תיקון מס' 81 לחוק התקשורת (2025), המאפשר למוקדי עזרה ראשונה נפשית ולמוקדי סיוע לנפגעי תקיפה מינית לקבל פרטי זיהוי חלקיים של פונים במקרה של חשש לשלומם; וחוק הרשות הלאומית למאבק בעוני (2025)."
+      en: "Laws passed in their third reading with Lazimi among the initiators include: Amendment 6 to the Sick Pay Law (2022), entitling workers with cancer or those requiring dialysis to sick pay from the first day of absence for treatment; Amendment 136 to the Traffic Ordinance (2024), under which parking-lot fees are charged by the minute from the first hour; Amendment 81 to the Communications Law (2025), allowing mental-health first-aid and sexual-assault crisis hotlines to receive partial caller identification where a caller's safety is at risk; and the National Authority for Combating Poverty Law (2025)."
+    date: "2025-04-03"
+    sources:
+      - url: "https://main.knesset.gov.il/Activity/Legislation/Laws/Pages/LawBill.aspx?t=lawsuggestionssearch&lawitemid=2159065"
+        title: "חוק דמי מחלה (תיקון מס' 6), התשפ\"ב-2022 — דף הצעת החוק"
+        publisher: "Knesset"
+      - url: "https://main.knesset.gov.il/Activity/Legislation/Laws/Pages/LawBill.aspx?t=lawsuggestionssearch&lawitemid=2197571"
+        title: "חוק לתיקון פקודת התעבורה (מס' 136), התשפ\"ה–2024 — דף הצעת החוק"
+        publisher: "Knesset"
+      - url: "https://main.knesset.gov.il/Activity/Legislation/Laws/Pages/LawBill.aspx?t=lawsuggestionssearch&lawitemid=2211055"
+        title: "חוק התקשורת (בזק ושידורים) (תיקון מס' 81), התשפ\"ה–2025 — דף הצעת החוק"
+        publisher: "Knesset"
+      - url: "https://main.knesset.gov.il/Activity/Legislation/Laws/Pages/LawBill.aspx?t=lawsuggestionssearch&lawitemid=2195679"
+        title: "חוק הרשות הלאומית למאבק בעוני, התשפ\"ה-2025 — דף הצעת החוק"
+        publisher: "Knesset"
+  - kind: positive
+    category: award
+    title:
+      he: "אבירת איכות השלטון לשנת 2023"
+      en: "Knight of Quality Government for 2023"
+    description:
+      he: "התנועה למען איכות השלטון בישראל העניקה ללזימי את אות אבירת איכות השלטון לשנת 2023 בקטגוריית מאבק חברתי, בטקס שנערך ב-8 בספטמבר 2024 במרכז יצחק רבין בתל אביב, בהוקרה על עשייה פוליטית ועל פעילותה במחאות נגד הרפורמה במערכת המשפט ולצד מטה משפחות החטופים."
+      en: "The Movement for Quality Government in Israel awarded Lazimi its Knight of Quality Government award for 2023 in the social-struggle category, at a ceremony held on 8 September 2024 at the Yitzhak Rabin Center in Tel Aviv, in recognition of her political work and her activity in the protests against the judicial overhaul and alongside the Hostages Families Forum."
+    date: "2024-09-08"
+    sources:
+      - url: "https://mqg.org.il/%d7%94%d7%aa%d7%a0%d7%95%d7%a2%d7%94-%d7%9c%d7%90%d7%99%d7%9b%d7%95%d7%aa-%d7%94%d7%a9%d7%9c%d7%98%d7%95%d7%9f-%d7%a2%d7%a8%d7%9b%d7%94-%d7%90%d7%aa%d7%9e%d7%95%d7%9c-%d7%a8%d7%90%d7%a9%d7%95%d7%9f/"
+        title: "התנועה לאיכות השלטון ערכה אתמול (ראשון) את טקס הענקת אות אבירי איכות השלטון לשנת 2023 במרכז יצחק רבין בתל אביב"
+        publisher: "Movement for Quality Government in Israel"
+      - url: "https://he.wikipedia.org/wiki/%D7%A0%D7%A2%D7%9E%D7%94_%D7%9C%D7%96%D7%99%D7%9E%D7%99"
+        title: "נעמה לזימי"
+        publisher: "Wikipedia (Hebrew)"
+  - kind: neutral
+    category: news
+    date: "2026-07-20"
+    title:
+      he: "זכתה במקום השני בפריימריז של הדמוקרטים"
+      en: "Won second place in The Democrats' primary"
+    description:
+      he: "ב-20 ביולי 2026 זכתה לזימי במקום השני ברשימת הדמוקרטים לכנסת ה-26, מיד אחרי יו\"ר המפלגה יאיר גולן, בפריימריז הראשונים של המפלגה, שבהם הצביעו כ-97 אלף מתוך כ-112 אלף חברי המפלגה. במקום השלישי דורג גלעד קריב."
+      en: "On 20 July 2026 Lazimi won the second spot on The Democrats' list for the 26th Knesset, directly after party chairman Yair Golan, in the party's first primary, in which about 97,000 of roughly 112,000 members voted. Gilad Kariv was placed third."
+    sources:
+      - url: "https://www.timesofisrael.com/naama-lazimi-wins-no-2-spot-after-yair-golan-in-left-wing-democrats-primary/"
+        title: "MK Naama Lazimi wins No. 2 spot after Yair Golan in left-wing Democrats' primary"
+        publisher: "The Times of Israel"
+  - kind: neutral
+    category: news
+    date: "2026-08-05"
+    title:
+      he: "עתרה לבג\"ץ נגד העברות תקציביות בוועדת הכספים; בית המשפט הקפיא את הכספים"
+      en: "Petitioned the High Court against Finance Committee fund transfers; the court froze the funds"
+    description:
+      he: "באוגוסט 2026 עתרה לזימי, יחד עם עמותת חדו\"ש, לבג\"ץ נגד כינוס ועדת הכספים בפגרה לאישור העברות תקציביות, בהן כספים למוסדות חינוך חרדיים ולמשרד ההתיישבות, בטענה שהכינוס נעשה ללא ההתראה הנדרשת. בית המשפט העליון הורה על הקפאת הכספים עד להכרעה."
+      en: "In August 2026 Lazimi, together with the Hiddush organization, petitioned the High Court of Justice against the Finance Committee's recess session approving budget transfers, including funds for Haredi schools and the Settlements Ministry, arguing that the session was convened without the required notice. The Supreme Court ordered the funds frozen pending a ruling."
+    sources:
+      - url: "https://www.timesofisrael.com/high-court-freezes-contentious-knesset-funds-for-haredi-schools-settlements-ministry/"
+        title: "High Court freezes contentious Knesset funds for Haredi schools, Settlements Ministry"
+        publisher: "The Times of Israel"

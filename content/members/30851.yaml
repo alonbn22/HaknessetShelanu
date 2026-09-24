@@ -1,7 +1,8 @@
-# PersonID 30851. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30851. Researched from reputable public sources and source-verified
+# (every cited URL re-fetched on the review date). Neutral language; legal
+# status marked. REVIEW before launch.
 personId: 30851
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -61,3 +62,26 @@ claims:
       - url: https://he.wikipedia.org/wiki/%D7%9E%D7%98%D7%99_%D7%A6%D7%A8%D7%A4%D7%AA%D7%99_%D7%94%D7%A8%D7%9B%D7%91%D7%99
         title: מטי צרפתי הרכבי
         publisher: Hebrew Wikipedia
+  - kind: neutral
+    category: news
+    date: "2026-09-09"
+    title:
+      he: הוצבה במקום ה-33 ברשימת "ביחד" של בנט ולפיד לכנסת ה-26
+      en: Placed 33rd on the joint Bennett–Lapid "Yachad" list for the 26th Knesset
+    description:
+      he: >-
+        לקראת הבחירות ב-27 באוקטובר 2026 התמזגה יש עתיד לרשימה משותפת עם מפלגתו
+        של נפתלי בנט ("ביחד בראשות נפתלי בנט"), שהוגשה לוועדת הבחירות המרכזית.
+        ברשימה כפי שהוגשה מופיעה צרפתי הרכבי במקום ה-33.
+      en: >-
+        Ahead of the election on 27 October 2026, Yesh Atid merged into a joint
+        list with Naftali Bennett's party ("Yachad, headed by Naftali Bennett"),
+        which was submitted to the Central Elections Committee. On the list as
+        submitted, Sarfatti Harcavi appears in 33rd place.
+    sources:
+      - url: https://www.knesset.tv/main-articles/61384/94592/
+        title: "מסכמים הגשת רשימות: כל המפלגות והמועמדים בבחירות לכנסת ה-26"
+        publisher: Knesset Channel
+      - url: https://www.maariv.co.il/news/politics/article-1363684
+        title: "חיבור \"ביחד\" הושלם: זו הרשימה המאוחדת של בנט ולפיד לכנסת"
+        publisher: Maariv

@@ -1,19 +1,93 @@
 # Yair Lapid (PersonID 23594). Factual reporting from reputable public sources,
-# cited per claim. Neutral language. REVIEW before launch.
+# cited per claim; researched and source-verified 2026-09-18 (Knesset position
+# dates cross-checked against the Knesset OData). Neutral language. REVIEW before launch.
 personId: 23594
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
+    date: 2022-07-01
     title:
       he: "כיהן כראש ממשלת ישראל (2022)"
       en: "Served as Prime Minister of Israel (2022)"
     description:
-      he: "ייסד את מפלגת יש עתיד (2012). כיהן כשר האוצר וכשר החוץ, ובשנת 2022 כיהן כראש הממשלה במסגרת הסכם רוטציה."
-      en: "Founded the Yesh Atid party (2012). Served as Finance Minister and Foreign Minister, and in 2022 served as Prime Minister under a rotation agreement."
+      he: "ייסד את מפלגת יש עתיד (2012). כיהן כשר האוצר (2013–2014) וכשר החוץ (2021–2022), ובמסגרת הסכם רוטציה כיהן כראש הממשלה ה-14 של ישראל מ-1 ביולי 2022 עד 29 בדצמבר 2022."
+      en: "Founded the Yesh Atid party (2012). Served as Finance Minister (2013–2014) and Foreign Minister (2021–2022), and under a rotation agreement served as Israel's 14th Prime Minister from 1 July 2022 until 29 December 2022."
     sources:
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/23594"
+        title: "יאיר לפיד – פרטים אישיים ותפקידים (אתר הכנסת)"
+        publisher: "Knesset"
       - url: "https://en.wikipedia.org/wiki/Yair_Lapid"
         title: "Yair Lapid"
         publisher: "Wikipedia"
-      - url: "https://www.britannica.com/biography/Yair-Lapid"
-        title: "Yair Lapid — Biography"
-        publisher: "Encyclopædia Britannica"
+  - kind: neutral
+    category: role
+    date: 2023-01-02
+    title:
+      he: "ראש האופוזיציה בכנסת ה-25"
+      en: "Leader of the Opposition in the 25th Knesset"
+    description:
+      he: "מאז 2 בינואר 2023, עם כינון הממשלה ה-37, מכהן לפיד כראש האופוזיציה בכנסת ה-25 — תפקיד שבו הוא ממשיך לכהן גם לאחר פיזור הכנסת ב-17 ביולי 2026."
+      en: "Since 2 January 2023, with the formation of the 37th government, Lapid has served as Leader of the Opposition in the 25th Knesset — a role he continues to hold after the Knesset's dissolution on 17 July 2026."
+    sources:
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/23594"
+        title: "יאיר לפיד – פרטים אישיים ותפקידים (אתר הכנסת)"
+        publisher: "Knesset"
+      - url: "https://en.wikipedia.org/wiki/Leader_of_the_Opposition_(Israel)"
+        title: "Leader of the Opposition (Israel)"
+        publisher: "Wikipedia"
+  - kind: negative
+    category: controversy
+    status: settled
+    date: 2016-06-20
+    title:
+      he: "קנס מוועדת האתיקה של הכנסת על היעדרויות ממליאת הכנסת (2016)"
+      en: "Fined by the Knesset Ethics Committee over absences from plenum sessions (2016)"
+    description:
+      he: "ב-20 ביוני 2016 קנסה ועדת האתיקה של הכנסת את לפיד בכ-6,000 ש\"ח (שלילת שכר של ארבעה ימים) לאחר שנעדר מ-32 מתוך 75 ישיבות המליאה במושב החורף — מעבר למכסה המותרת בחוק. לפיד טען כי נעדר בשל פעילות בינלאומית נגד הדה-לגיטימציה של ישראל; הוועדה קבעה כי מכסת ההיעדרויות שבחוק נועדה ממילא לאפשר פעילות כזו וכי היעדרות מעבר לה אינה מוצדקת. מדובר בסנקציה אתית פרלמנטרית ולא בהליך פלילי."
+      en: "On 20 June 2016 the Knesset Ethics Committee fined Lapid about NIS 6,000 (four days' pay) after he missed 32 of 75 plenum sessions in the winter session — beyond the quota allowed by law. Lapid said the absences were due to international activity against the delegitimization of Israel; the committee ruled that the statutory absence quota already allows for such activity and that absences beyond it were not justified. This was a parliamentary ethics sanction, not a criminal proceeding."
+    sources:
+      - url: "https://www.haaretz.co.il/news/politi/2016-06-20/ty-article/0000017f-dbb1-d3a5-af7f-fbbff37f0000"
+        title: "ועדת האתיקה קנסה את יאיר לפיד לאחר שנעדר מעשרות ישיבות בכנסת"
+        publisher: "Haaretz"
+      - url: "https://www.ynet.co.il/articles/0,7340,L-4818304,00.html"
+        title: "הכנסת קנסה את לפיד ב-6,000 שקל עקב היעדרויות בלתי מוצדקות"
+        publisher: "Ynet"
+  - kind: neutral
+    category: news
+    date: 2026-09-06
+    title:
+      he: "במקום השני ברשימת \"ביחד\" המשותפת עם נפתלי בנט לבחירות 2026"
+      en: "Second on the joint \"B'Yachad\" list with Naftali Bennett for the 2026 election"
+    description:
+      he: "ב-26 באפריל 2026 הודיעו לפיד ונפתלי בנט על איחוד יש עתיד עם מפלגתו של בנט לרשימה משותפת בראשות בנט. ב-6 בספטמבר 2026 הושקה רשימת \"ביחד\" לבחירות 27 באוקטובר, ולפיד הוצב בה במקום השני; בהשקה אמר על בנט: \"ראיתי אותו מקרוב יותר מכל אדם אחר... הוא הכי מתאים\"."
+      en: "On 26 April 2026 Lapid and Naftali Bennett announced the merger of Yesh Atid with Bennett's party into a joint list led by Bennett. On 6 September 2026 the \"B'Yachad\" list for the 27 October election was launched, with Lapid in second place; at the launch he said of Bennett: \"I saw him up close more than any other person... he is the most suitable.\""
+    sources:
+      - url: "https://www.ynet.co.il/news/elections2026/article/sjrmibiuzx"
+        title: "בנט ולפיד השיקו רשימה: \"נאחד את העם ונרפא את המדינה\""
+        publisher: "Ynet"
+      - url: "https://www.ynetnews.com/article/h1lrcto6wg"
+        title: "Bennett, Lapid announce dramatic move to merge parties ahead of elections"
+        publisher: "Ynetnews"
+      - url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-894194"
+        title: "Naftali Bennett, Yair Lapid join forces under unified party ahead of Israeli elections"
+        publisher: "The Jerusalem Post"
+  - kind: neutral
+    category: news
+    date: 2026-09-05
+    title:
+      he: "הציג את נציגי יש עתיד ברשימה המשותפת; שישה ח\"כים מכהנים לא התמודדו"
+      en: "Presented Yesh Atid's representatives on the joint slate; six sitting MKs did not run"
+    description:
+      he: "ב-5 בספטמבר 2026 הציג לפיד את נציגי יש עתיד שישתלבו ברשימת \"ביחד\", ובראשם מירב בן ארי, נעם תיבון ומירב כהן. בימים שקדמו לכך הודיעו שישה חברי כנסת מכהנים מהמפלגה — ובהם מאיר כהן, מיקי לוי וקארין אלהרר — כי לא יתמודדו, על רקע סקרים שהראו ירידה ברשימה המשותפת. לפיד אמר על כהן: \"זו לא פרידה... ביקשתי ממנו להתמודד במקום גבוה גם הפעם\"."
+      en: "On 5 September 2026 Lapid presented the Yesh Atid representatives who would be integrated into the \"B'Yachad\" slate, led by Merav Ben-Ari, Noam Tibon and Meirav Cohen. In the preceding days six sitting Yesh Atid MKs — including Meir Cohen, Mickey Levy and Karine Elharrar — announced they would not run, amid polls showing the joint slate declining. Lapid said of Cohen: \"This is not a farewell... I asked him to run in a top spot this time as well.\""
+    sources:
+      - url: "https://www.timesofisrael.com/lapid-unveils-yesh-atid-lineup-for-byachad-electoral-slate/"
+        title: "Lapid unveils Yesh Atid lineup for B'Yachad electoral slate"
+        publisher: "The Times of Israel"
+      - url: "https://www.timesofisrael.com/wave-of-yesh-atid-mks-quit-election-run-as-joint-slate-with-bennett-falters-in-polls/"
+        title: "Wave of Yesh Atid MKs quit election run as joint slate with Bennett falters in polls"
+        publisher: "The Times of Israel"
+      - url: "https://www.haaretz.co.il/news/elections/2026-09-05/ty-article/.premium/000001a0-723f-d3f1-affa-7f7f93e10000"
+        title: "שלושה שמות חדשים, אחד מהם במקום ריאלי: יש עתיד הציגה את רשימתה לכנסת"
+        publisher: "Haaretz"

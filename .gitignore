@@ -47,3 +47,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Impeccable: review captures and decision comps are per-run evidence, not source.
+.impeccable/review/
+.impeccable/mocks/
+.impeccable/questions/

@@ -1,0 +1,28 @@
+# PersonID 30922. New member of the 25th Knesset (entered 2026-08-13); the
+# Knesset's own pages carry no biography yet, so the record holds only the
+# verified entry facts. Neutral language. Reviewed 2026-09-19.
+personId: 30922
+lastReviewed: "2026-09-19"
+claims:
+  - kind: neutral
+    category: role
+    title:
+      he: "נכנס לכנסת ב-13 באוגוסט 2026 במקום דן אילוז (הליכוד)"
+      en: "Entered the Knesset on 13 August 2026 in place of Dan Illouz (Likud)"
+    description:
+      he: "שבתאי קטש נכנס לכנסת ה-25 מטעם הליכוד ב-13 באוגוסט 2026, לאחר שח\"כ דן אילוז פרש מהליכוד (יולי 2026), הצטרף לישראל ביתנו והגיש את התפטרותו מהכנסת ב-11 באוגוסט 2026. לפי אתר הכנסת, פרטי הרקע של חבר הכנסת טרם נמסרו למערכת."
+      en: "Shabtai Katash entered the 25th Knesset for Likud on 13 August 2026, after MK Dan Illouz left Likud (July 2026), joined Yisrael Beiteinu and submitted his resignation from the Knesset on 11 August 2026. Per the Knesset site, the member’s background details have not yet been submitted."
+    date: "2026-08-13"
+    sources:
+      - url: "https://main.knesset.gov.il/mk/apps/faction/faction-lobby?KnessetID=25&FactionID=1096"
+        title: "סיעת הליכוד — חילופי גברי: 13/08/2026 שבתאי קטש נכנס במקום דן אילוז"
+        publisher: "הכנסת"
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/1134"
+        title: "חבר הכנסת שבתאי קטש — אתר הכנסת"
+        publisher: "הכנסת"
+      - url: "https://www.timesofisrael.com/rebel-likud-mk-dan-illouz-joins-yisrael-beytenu-touts-its-national-and-liberal-values/"
+        title: "Rebel Likud MK Dan Illouz joins Yisrael Beytenu, touts its ‘national and liberal values’ (5 Aug 2026)"
+        publisher: "The Times of Israel"
+      - url: "https://www.inn.co.il/news/703704"
+        title: "דן אילוז: \"נתניהו חייב ללכת הביתה\" (11.8.2026)"
+        publisher: "ערוץ 7"

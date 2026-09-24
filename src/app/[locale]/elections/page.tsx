@@ -2,16 +2,22 @@ import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { rtlLocales } from "@/i18n/routing";
 import {
+  getControversialLaws,
   getElectionsHistory,
   getElectionOutlook,
+  getFactionMeta,
+  localizedMeta,
   getPartyProfile,
   partyText,
+  partyTextAttrs,
   partyList,
   type ElectionFact,
 } from "@/lib/content";
-import { formatDate } from "@/lib/format";
+import { formatDate, formatNumber } from "@/lib/format";
 import { rtlAttrs } from "@/lib/text";
+import { getFactionAvgParticipation, getFactionTallies } from "@/lib/queries";
 import { KeyDatesTimeline } from "@/components/KeyDatesTimeline";
+import { PollsSection } from "@/components/polls/PollsSection";
 
 export const dynamic = "force-dynamic";
 
@@ -58,11 +64,19 @@ function SourceLinks({ sources, label }: {
 export default async function ElectionsHistoryPage() {
   const t = await getTranslations("electionsHistory");
   const te = await getTranslations("election");
+  const tp = await getTranslations("party");
   const tc = await getTranslations("common");
   const ts = await getTranslations("spectrum");
   const locale = await getLocale();
   const elections = getElectionsHistory();
   const outlook = getElectionOutlook();
+  // Approval date from the timeline, so the "requested letters" caveat never hardcodes it.
+  const approvalDateIso = outlook?.keyDates?.find((d) => d.key === "kd-approval")?.date;
+  const approvalDateText = approvalDateIso ? formatDate(approvalDateIso, locale) : "";
+  // The record strip's vote rows: each controversial law that has a roll-call
+  // inside the site's record, tallied by faction once for the whole page.
+  const lawVotes = getControversialLaws().flatMap((law) => law.votes.map((v) => ({ law, vote: v, tallies: getFactionTallies(v.id) })));
+  const factionMeta = getFactionMeta();
 
   // A sourced fact row (key facts / rules / stats share the shape).
   const factRow = (f: ElectionFact) => (
@@ -142,21 +156,38 @@ export default async function ElectionsHistoryPage() {
             </div>
           )}
 
+          {/* Seat polls since the lists closed — every figure verified against
+              the outlet's own article; see content/polls.yaml. */}
+          <PollsSection />
+
           {outlook.parties.length > 0 && (
             <div className="space-y-2">
               <h3 className="text-sm font-semibold uppercase tracking-wide text-muted">
                 {te("parties")}
               </h3>
               <p className="text-xs text-muted">
-                {te("partiesNote")}{" "}
                 {(() => {
-                  // Date pulled from the kd-lists timeline entry so the UI never
-                  // hardcodes it.
-                  const kd = outlook.keyDates?.find((d) => d.key === "kd-lists");
-                  return kd?.date
-                    ? te("finalListsNote", { date: formatDate(kd.date, locale) })
-                    : null;
+                  // Both dates come from the timeline entries so the UI never
+                  // hardcodes them: approval for the note, approval again for
+                  // the rosters still to be published.
+                  const approval = outlook.keyDates?.find((d) => d.key === "kd-approval")?.date;
+                  const dateText = approval ? formatDate(approval, locale) : "";
+                  return (
+                    <>
+                      {te("partiesNote", { date: dateText })}{" "}
+                      {approval ? te("finalListsNote", { date: dateText }) : null}
+                    </>
+                  );
                 })()}
+              </p>
+              <p className="text-sm">
+                <Link href="/quiz" className="text-accent-ink underline">
+                  {te("compassCta")}
+                </Link>
+                {" · "}
+                <Link href="/elections/positions" className="text-accent-ink underline">
+                  {te("positionsCta")}
+                </Link>
               </p>
               <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {outlook.parties.map((p) => {
@@ -165,7 +196,7 @@ export default async function ElectionsHistoryPage() {
                   const profile = p.factionId != null ? getPartyProfile(p.factionId) : undefined;
                   const positions = profile ? partyList(profile.positions, locale).slice(0, 2) : [];
                   return (
-                  <div key={p.name.he} className="rounded-lg bg-white p-3 shadow-sm space-y-1.5">
+                  <div key={p.name.he} id={`list-${p.slug}`} className="rounded-lg bg-surface p-3 shadow-sm space-y-1.5 scroll-mt-24">
                     <div className="flex items-start justify-between gap-2">
                       <div className="font-semibold">
                         {p.factionId != null ? (
@@ -176,16 +207,36 @@ export default async function ElectionsHistoryPage() {
                           partyText(p.name, locale)
                         )}
                       </div>
-                      {profile?.ballotLetters && (
-                        <span
-                          dir="rtl"
-                          lang="he"
-                          className="shrink-0 rounded bg-black/5 px-1.5 py-0.5 text-xs font-bold tracking-wide"
+                      {/* The letters the list asked for at submission, from its
+                          CEC page — marked "requested" until the committee
+                          approves lists and letters. */}
+                      {p.cec && (
+                        <a
+                          href={p.cec.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="shrink-0 rounded bg-surface-sunken px-1.5 py-0.5 text-xs font-bold tracking-wide hover:bg-chrome-hover"
+                          title={
+                            p.cec.lettersStatus === "approved"
+                              ? tp("lettersApproved")
+                              : te("lettersBadgeTitle", { date: approvalDateText })
+                          }
                         >
-                          {profile.ballotLetters}
-                        </span>
+                          <span dir="rtl" lang="he">{p.cec.letters}</span>
+                          {p.cec.lettersStatus !== "approved" && (
+                            <>
+                              {" "}
+                              <span className="font-normal text-muted">{te("lettersRequestedShort")}</span>
+                            </>
+                          )}
+                        </a>
                       )}
                     </div>
+                    {p.cec && (
+                      <p className="text-xs text-muted" dir="rtl" lang="he">
+                        {partyText(p.cec.listName, "he")}
+                      </p>
+                    )}
                     {p.leader && (
                       <div className="text-sm text-muted">
                         {te("leader")}:{" "}
@@ -218,6 +269,50 @@ export default async function ElectionsHistoryPage() {
                         {ts(profile.spectrum)}
                       </span>
                     )}
+                    {/* What the sitting faction did, beside what the list says:
+                        its members' average vote participation in the 25th
+                        Knesset, from the Knesset record. */}
+                    {(() => {
+                      const avg = p.factionId != null ? getFactionAvgParticipation(p.factionId) : null;
+                      if (avg == null) return null;
+                      return (
+                        <p className="text-xs text-muted">
+                          {te("recordParticipation", { pct: formatNumber(avg, locale, 1) })}{" "}
+                          <Link href={`/parties/${p.factionId}`} className="underline hover:text-accent-ink">
+                            {tc("source")}: {tc("knesset")}
+                          </Link>
+                        </p>
+                      );
+                    })()}
+                    {/* How the sitting faction voted on each controversial law
+                        inside the record — under the faction's name at the time
+                        when that differs from the list's name today. */}
+                    {p.factionId != null &&
+                      lawVotes.map(({ law, vote, tallies }) => {
+                        const tally = tallies.get(p.factionId!);
+                        if (!tally) return null;
+                        // The faction's name at the time, in the page's language, when it
+                        // is not simply the list's own name (Labor → the Democrats, Hadash-
+                        // Ta'al → the Joint List, Religious Zionism → its bloc with Zehut).
+                        const meta = factionMeta.get(p.factionId!);
+                        const thenHe = meta?.he ?? tally.factionNameHe;
+                        const asThen = thenHe && thenHe !== p.name.he ? (meta ? localizedMeta(meta, locale) : thenHe) : null;
+                        return (
+                          <p key={vote.id} className="text-xs text-muted">
+                            <span {...partyTextAttrs(law.title, locale)}>{partyText(law.title, locale)}</span>
+                            {" "}({partyText(vote.stage, locale)}):{" "}
+                            <span className="font-semibold text-foreground tabular-nums">
+                              {te("recordVote", { for: tally.for, against: tally.against })}
+                            </span>
+                            {tally.absent > 0 && <> {te("recordVoteAbsent", { n: tally.absent })}</>}
+                            {asThen && <> <span {...rtlAttrs(asThen)}>{te("recordVoteAs", { faction: asThen })}</span></>}
+                            {" · "}
+                            <Link href={`/votes/${vote.id}`} className="underline hover:text-accent-ink" title={vote.note ? partyText(vote.note, locale) : undefined}>
+                              {tc("source")}: {tc("knesset")}
+                            </Link>
+                          </p>
+                        );
+                      })}
                     {/* New lists aren't sitting factions — say so instead of
                         silently omitting the party-page link. */}
                     {p.factionId == null && (
@@ -235,7 +330,50 @@ export default async function ElectionsHistoryPage() {
                       </ul>
                     )}
                     {p.note && (
-                      <p className="text-xs leading-relaxed">{partyText(p.note, locale)}</p>
+                      <p className="text-xs leading-relaxed" {...partyTextAttrs(p.note, locale)}>{partyText(p.note, locale)}</p>
+                    )}
+                    {(() => {
+                      const a = outlook.surplusAgreements.find((x) => x.between.includes(p.slug));
+                      if (!a) return null;
+                      const other = outlook.parties.find((o) => o.slug === a.between.find((s) => s !== p.slug));
+                      return (
+                        <p className="text-xs leading-relaxed">
+                          <span className="font-semibold">{te("surplusWith")}: </span>
+                          {other ? partyText(other.name, locale) : a.between.join(" – ")}
+                          {a.status === "reported" && <> ({te("statusReported")})</>}
+                          {" · "}
+                          <SourceLinks sources={a.sources} label={tc("source")} />
+                        </p>
+                      );
+                    })()}
+                    {p.stance && (
+                      <p className="text-xs leading-relaxed" {...partyTextAttrs(p.stance, locale)}>
+                        <span className="font-semibold">{te("stance")}: </span>
+                        {partyText(p.stance, locale)}
+                      </p>
+                    )}
+                    {p.candidates && p.candidates.length > 0 && (
+                      // The submitted roster, in ballot order. Names are the
+                      // Hebrew record in every locale (never machine-transliterated);
+                      // sitting members link to their page.
+                      <details className="text-xs" open={p.candidates.length <= 8}>
+                        <summary className="cursor-pointer font-semibold">
+                          {te("candidates")} <span className="font-normal text-muted tabular-nums">({p.candidates.length})</span>
+                        </summary>
+                        <ol className="mt-1 columns-2 gap-x-4 ps-4 leading-relaxed [&>li]:break-inside-avoid" dir="rtl" lang="he">
+                          {p.candidates.map((c, i) => (
+                            <li key={c.he} value={i + 1} className="list-decimal">
+                              {c.personId != null ? (
+                                <Link href={`/members/${c.personId}`} className="text-accent-ink underline">
+                                  {c.he}
+                                </Link>
+                              ) : (
+                                c.he
+                              )}
+                            </li>
+                          ))}
+                        </ol>
+                      </details>
                     )}
                     <SourceLinks sources={p.sources} label={tc("source")} />
                     {profile && p.factionId != null && (
@@ -249,6 +387,116 @@ export default async function ElectionsHistoryPage() {
                   </div>
                   );
                 })}
+              </div>
+            </div>
+          )}
+
+          {/* Every list that submitted — the 15 cards above are the ones
+              pollsters name; the other 23 exist too. From the CEC index. */}
+          {outlook.submittedLists && outlook.submittedLists.lists.length > 0 && (
+            <details id="all-lists" className="rounded-lg bg-surface p-3 shadow-sm scroll-mt-24">
+              <summary className="cursor-pointer text-sm font-semibold">
+                {te("allLists", { count: outlook.submittedLists.lists.length })}
+              </summary>
+              <p className="mt-2 text-xs text-muted leading-relaxed">
+                {te("allListsIntro", { date: approvalDateText })}
+              </p>
+              <div className="mt-2 overflow-x-auto rounded-card border border-line">
+                <table className="w-full text-xs">
+                  <thead className="bg-surface-sunken text-start">
+                    <tr>
+                      <th className="px-2 py-1.5 text-start font-semibold">#</th>
+                      <th className="px-2 py-1.5 text-start font-semibold">{te("colLetters")}</th>
+                      <th className="px-2 py-1.5 text-start font-semibold">{te("colList")}</th>
+                      <th className="px-2 py-1.5 text-start font-semibold">{te("colHead")}</th>
+                      <th className="px-2 py-1.5 text-start font-semibold">{te("colSubmittedBy")}</th>
+                      <th className="px-2 py-1.5 text-start font-semibold">{te("colCandidates")}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {outlook.submittedLists.lists.map((l) => (
+                      <tr key={l.listNumber} className="border-t border-line align-top">
+                        <td className="px-2 py-1.5 tabular-nums text-muted">{l.listNumber}</td>
+                        <td className="px-2 py-1.5 font-bold tracking-wide whitespace-nowrap" dir="rtl" lang="he">
+                          {l.letters}
+                        </td>
+                        <td className="px-2 py-1.5" dir="rtl" lang="he">
+                          {l.slug ? (
+                            <a href={`#list-${l.slug}`} className="underline hover:text-accent">
+                              {partyText(l.name, "he")}
+                            </a>
+                          ) : (
+                            partyText(l.name, "he")
+                          )}{" "}
+                          <a
+                            href={l.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-muted underline"
+                            title={tp("cecPage")}
+                          >
+                            ↗
+                          </a>
+                        </td>
+                        <td className="px-2 py-1.5" dir="rtl" lang="he">
+                          {l.head ? partyText(l.head, "he") : ""}
+                        </td>
+                        <td className="px-2 py-1.5 text-muted" dir="rtl" lang="he">
+                          {(l.submittedBy ?? []).join(" · ")}
+                        </td>
+                        <td className="min-w-[14rem] px-2 py-1.5">
+                          {/* The roster as the committee prints it (surname first), the
+                              first 20 here and the rest on the CEC page — the same for
+                              every list, polled or not. */}
+                          {l.candidates && l.candidates.length > 0 && (
+                            <details>
+                              <summary className="cursor-pointer whitespace-nowrap underline hover:text-accent">
+                                {te("rosterCount", { n: l.candidates.length })}
+                              </summary>
+                              <ol className="mt-1 list-decimal space-y-0.5 ps-5" dir="rtl" lang="he">
+                                {l.candidates.slice(0, 20).map((c, i) => (
+                                  <li key={i}>
+                                    {c.he}
+                                    {c.party && <span className="text-muted"> · {c.party}</span>}
+                                  </li>
+                                ))}
+                              </ol>
+                              {l.candidates.length > 20 && (
+                                <a href={l.url} target="_blank" rel="noopener noreferrer" className="mt-1 inline-block text-muted underline">
+                                  {te("rosterAll", { n: l.candidates.length })}
+                                </a>
+                              )}
+                            </details>
+                          )}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="mt-2 text-xs text-muted">
+                {te("cecSourceLine")}{" "}
+                <a
+                  className="underline hover:text-accent"
+                  href={outlook.submittedLists.source.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {outlook.submittedLists.source.publisher ?? outlook.submittedLists.source.title}
+                </a>
+                {" · "}
+                {tc("lastChecked", { date: formatDate(outlook.submittedLists.asOf, locale) })}
+              </p>
+            </details>
+          )}
+
+          {outlook.howToVote.length > 0 && (
+            <div id="how-to-vote" className="space-y-2">
+              <h3 className="text-sm font-semibold uppercase tracking-wide text-muted">
+                {te("howToVote")}
+              </h3>
+              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                {outlook.howToVote.map(factRow)}
               </div>
             </div>
           )}
@@ -317,7 +565,7 @@ export default async function ElectionsHistoryPage() {
         {elections.map((e) => (
           <li
             key={e.knesset}
-            className="rounded-xl bg-white p-5 shadow-sm border-s-4 border-accent"
+            className="rounded-card border border-line bg-surface p-5"
           >
             <div className="flex flex-wrap items-baseline justify-between gap-2">
               <h2 className="text-lg font-bold">

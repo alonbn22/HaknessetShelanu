@@ -41,23 +41,23 @@ export async function MemberVoteStats({
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 text-center">
         <div>
-          <div className="text-2xl font-bold text-accent">{stats.participationPct}%</div>
+          <div className="text-2xl font-bold tabular-nums text-accent">{stats.participationPct}%</div>
           <div className="text-sm text-muted">{t("member.participated")}</div>
         </div>
         <div>
-          <div className="text-2xl font-bold text-green-700">{stats.votedFor}</div>
+          <div className="text-2xl font-bold tabular-nums text-green-700">{stats.votedFor}</div>
           <div className="text-sm text-muted">{t("member.votesFor")}</div>
         </div>
         <div>
-          <div className="text-2xl font-bold text-red-700">{stats.votedAgainst}</div>
+          <div className="text-2xl font-bold tabular-nums text-red-700">{stats.votedAgainst}</div>
           <div className="text-sm text-muted">{t("member.votesAgainst")}</div>
         </div>
         <div>
-          <div className="text-2xl font-bold text-yellow-700">{stats.abstained}</div>
+          <div className="text-2xl font-bold tabular-nums text-yellow-700">{stats.abstained}</div>
           <div className="text-sm text-muted">{t("member.abstained")}</div>
         </div>
         <div>
-          <div className="text-2xl font-bold text-muted">{stats.missed}</div>
+          <div className="text-2xl font-bold tabular-nums text-muted">{stats.missed}</div>
           <div className="text-sm text-muted">{t("member.missed")}</div>
         </div>
       </div>
@@ -113,7 +113,7 @@ export async function MemberVoteStats({
                   const rt = localOf(r.titleHe);
                   return (
                     <li key={r.voteId} className="space-y-1 py-2 text-sm">
-                      <Link href={`/votes/${r.voteId}`} className="hover:underline" {...localizedAttrs(rt)}>
+                      <Link href={`/votes/${r.voteId}`} className="text-accent-ink underline decoration-line-strong hover:decoration-current" {...localizedAttrs(rt)}>
                         {rt.text}
                       </Link>
                       <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted">

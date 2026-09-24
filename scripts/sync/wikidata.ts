@@ -1,3 +1,4 @@
+import { canonicalCommonsUrl } from "../../src/lib/text";
 import { eq } from "drizzle-orm";
 import { getDb, schema } from "../../src/db";
 import { fetchRetry } from "./odata";
@@ -181,7 +182,7 @@ async function fetchCommonsInfo(files: string[]): Promise<Map<string, ImageInfo>
       const meta = info.extmetadata ?? {};
       const title = normalized.get(page.title) ?? page.title;
       out.set(title.replace(/^File:/, ""), {
-        thumbUrl: info.thumburl ?? info.url,
+        thumbUrl: canonicalCommonsUrl(info.thumburl ?? info.url) ?? "",
         license: meta.LicenseShortName?.value ?? "",
         attribution: (meta.Artist?.value ?? "").replace(/<[^>]+>/g, "").trim(),
       });

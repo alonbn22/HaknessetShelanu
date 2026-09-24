@@ -1,4 +1,5 @@
 import { getTranslations, getLocale } from "next-intl/server";
+import { formatNumber } from "@/lib/format";
 import { Link } from "@/i18n/navigation";
 import { Pagination } from "@/components/Pagination";
 import { LobbyistSearch } from "./LobbyistSearch";
@@ -160,7 +161,7 @@ export default async function LobbyistsPage({
               <div className="flex flex-wrap items-baseline justify-between gap-2">
                 <h3 className="font-semibold">{t("usAidTitle")}</h3>
                 <span className="text-sm text-muted">
-                  {t("usAidTotal", { total: total.toFixed(1) })}
+                  {t("usAidTotal", { total: formatNumber(total, locale, 1) })}
                 </span>
               </div>
               <ul className="space-y-1.5">

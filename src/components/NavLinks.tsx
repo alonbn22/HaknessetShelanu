@@ -2,33 +2,51 @@
 
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
-import { navItems } from "./nav-items";
+import { primaryNav, isActive, isHighlighted } from "./nav-items";
+import { NavMore } from "./NavMore";
 
-// Desktop nav (inline row). On small screens it is hidden in favor of MobileNav.
+// Desktop nav: seven sections inline, the rest behind "More", so the bar is one
+// line at every desktop width. The active item is marked by a rule, not by
+// weight — a bold active link changes its width and reflows the row.
 export function NavLinks() {
   const t = useTranslations("nav");
   const pathname = usePathname();
 
   return (
-    <nav className="hidden md:flex flex-wrap items-center gap-x-5 gap-y-1 text-sm">
-      {navItems.map((item) => {
-        const active =
-          item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
+    <nav className="hidden md:flex items-center gap-x-5 text-sm">
+      {primaryNav.map((item) => {
+        const active = isActive(pathname, item.href);
+        if (isHighlighted(item)) {
+          // The election pill: filled, bold, and outlined when current.
+          return (
+            <Link
+              key={item.key}
+              href={item.href}
+              aria-current={active ? "page" : undefined}
+              className={`rounded-full px-3 py-1 font-semibold transition-colors ${
+                active
+                  ? "bg-on-chrome text-chrome"
+                  : "bg-on-chrome/15 text-on-chrome hover:bg-on-chrome/25"
+              }`}
+            >
+              {t(item.key)}
+            </Link>
+          );
+        }
         return (
           <Link
             key={item.key}
             href={item.href}
             aria-current={active ? "page" : undefined}
-            className={
-              active
-                ? "font-bold underline underline-offset-[6px] decoration-2"
-                : "text-white/85 hover:text-white"
-            }
+            className={`border-b-2 py-1 transition-colors ${
+              active ? "border-on-chrome" : "border-transparent text-on-chrome/85 hover:text-on-chrome"
+            }`}
           >
             {t(item.key)}
           </Link>
         );
       })}
+      <NavMore />
     </nav>
   );
 }

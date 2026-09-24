@@ -2,19 +2,21 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 30118
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: מכהנת כסגנית שרת החוץ של ישראל
-      en: Serves as Israel's Deputy Minister of Foreign Affairs
+      he: כיהנה כסגנית שרת החוץ של ישראל (2024–2026)
+      en: Served as Israel's Deputy Minister of Foreign Affairs (2024–2026)
     description:
-      he: שרן השכל נכנסה לכנסת לראשונה בשנת 2015 ובשנת 2024 הושבעה כסגנית שרת החוץ של
-        מדינת ישראל מטעם מפלגת 'תקווה חדשה'.
-      en: Sharren Haskel first entered the Knesset in 2015 and in 2024 was sworn in as
-        Israel's Deputy Minister of Foreign Affairs, representing the New Hope
-        party.
-    date: 2024-01-01
+      he: שרן השכל נכנסה לכנסת לראשונה בשנת 2015. בנובמבר 2024 מונתה לסגנית שר החוץ
+        מטעם סיעת "הימין הממלכתי" (תקווה חדשה), וכיהנה בתפקיד עד התפטרותה ב-15
+        ביולי 2026.
+      en: Sharren Haskel first entered the Knesset in 2015. In November 2024 she was
+        appointed Deputy Minister of Foreign Affairs for the National Right (New
+        Hope) faction, and held the post until she resigned on 15 July 2026.
+    date: 2024-11-11
     sources:
       - url: https://en.wikipedia.org/wiki/Sharren_Haskel
         title: Sharren Haskel
@@ -22,6 +24,9 @@ claims:
       - url: https://www.jns.org/feature/israeli-elections-2026-meet-the-parliament-sharren-haskel
         title: "Israeli elections 2026: Meet the parliament—Deputy FM Sharren Haskel"
         publisher: JNS
+      - url: https://www.ynet.co.il/news/article/bkese2v4zx
+        title: '"שיקרת לי ולעם - אני מתפטרת": המכתב של השכל - והבקשה החריגה'
+        publisher: Ynet
   - kind: positive
     category: achievement
     title:
@@ -60,3 +65,70 @@ claims:
       - url: https://en.wikipedia.org/wiki/Sharren_Haskel
         title: Sharren Haskel
         publisher: Wikipedia
+  - kind: neutral
+    category: news
+    date: 2026-07-15
+    title:
+      he: התפטרה מתפקיד סגנית שר החוץ במכתב חריף לגדעון סער
+      en: Resigned as Deputy Foreign Minister in a sharply worded letter to Gideon Sa'ar
+    description:
+      he: 'ב-15 ביולי 2026 התפטרה השכל מתפקיד סגנית שר החוץ במכתב ליו"ר סיעתה גדעון סער, שבו כתבה: "שיקרת לי, שיקרת לעם ישראל, אני מתפטרת מתפקידי כסגנית שלך". במקביל ביקשה מוועדת הכנסת להכיר בה כסיעת יחיד לקראת הבחירות. מסיעת הימין הממלכתי נמסר בתגובה כי מדובר ב"התקף זעם" על רקע סחיטה כושלת בענייני מימון מפלגות.'
+      en: 'On 15 July 2026 Haskel resigned as Deputy Foreign Minister in a letter to her faction chairman Gideon Sa''ar, writing: "You lied to me, you lied to the people of Israel, I am resigning from my position as your deputy". She also asked the Knesset House Committee to recognize her as a single-member faction ahead of the election. The National Right faction responded that this was a "tantrum" stemming from a failed attempt at extortion over party funding.'
+    sources:
+      - url: https://www.ynet.co.il/news/article/bkese2v4zx
+        title: '"שיקרת לי ולעם - אני מתפטרת": המכתב של השכל - והבקשה החריגה'
+        publisher: Ynet
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30118
+        title: שרן מרים השכל - אתר הכנסת
+        publisher: The Knesset
+  - kind: neutral
+    category: news
+    date: 2026-07-23
+    title:
+      he: 'תצהיר לבג"ץ: נדרשנו להצביע לראבילו למבקר המדינה ולהציג תיעוד לנתניהו'
+      en: 'Affidavit to the High Court: faction members were required to vote for Rabilo as State Comptroller and show documentation to Netanyahu'
+    description:
+      he: 'ב-23 ביולי 2026 דווח כי השכל הגישה תצהיר לבג"ץ, במסגרת עתירה נגד הליכוד בטענה שעיכב את מיזוג הימין הממלכתי לתוכו, ובו טענה כי חברי הסיעה נדרשו להצביע למועמד הליכוד מתי (מיכאל) ראבילו לתפקיד מבקר המדינה ולתעד את הצבעתם עבור נתניהו. הליכוד השיב לבית המשפט כי לא ניתנה הנחיה לתעד את ההצבעות.'
+      en: 'On 23 July 2026 it was reported that Haskel filed an affidavit with the High Court of Justice, in a petition against Likud alleging it delayed the merger of the National Right into the party, stating that faction members were required to vote for Likud''s candidate Michael Rabilo for State Comptroller and to document their votes for Netanyahu. Likud replied to the court that no instruction was given to document the votes.'
+    sources:
+      - url: https://www.haaretz.co.il/news/law/2026-07-23/ty-article/.premium/0000019f-8e0c-d458-a9ff-beee08bd0000
+        title: 'שרן השכל בתצהיר לבג"ץ: נדרשנו להצביע לראבילו ולהציג את התיעוד לנתניהו'
+        publisher: Haaretz
+      - url: https://www.zman.co.il/717897/
+        title: '"המהלך הזה לא קשור לכיסא, אלא לערכים שחייבים להיות מיוצגים בממשלה הבאה"'
+        publisher: Zman Yisrael
+  - kind: neutral
+    category: news
+    date: 2026-07-30
+    title:
+      he: 'זומנה למסור עדות בלהב 433 בבדיקה האם הליכוד או היא הגישו תצהיר שקר לבג"ץ על הבחירות למבקר המדינה'
+      en: 'Summoned to give testimony at Lahav 433 in an examination of whether Likud or she filed a false affidavit with the High Court on the State Comptroller election'
+    description:
+      he: 'לאחר שתצהירה של השכל לבג"ץ סתר את עמדת הליכוד, שלפיה חברי הכנסת שצילמו את הצבעתם למבקר המדינה עשו זאת מיוזמתם, הורו היועצת המשפטית לממשלה ופרקליט המדינה למשטרה לבדוק אם הליכוד או השכל הגישו תצהיר שקר לבית המשפט. ב-30 ביולי 2026 זומנה השכל למסור עדות, כעדה, ביחידת להב 433, ומסרה עדות; היא אמרה כי הגישה את התצהיר אף שהוזהרה כי הדבר חושף אותה לסנקציות. בג"ץ ביטל את תוצאות הבחירה למבקר המדינה בשל "פגם מהותי" בהליך והורה על הצבעה חוזרת. מטעם הליכוד נמסר כי גרסתה של השכל מציגה תמונה הפוכה לחלוטין.'
+      en: 'After Haskel''s affidavit to the High Court contradicted Likud''s position that MKs who filmed their vote for State Comptroller did so on their own initiative, the Attorney General and the State Attorney ordered the police to examine whether Likud or Haskel had filed a false affidavit with the court. On 30 July 2026 Haskel was summoned to give testimony, as a witness, at the Lahav 433 unit, and testified; she said she had filed the affidavit despite being warned it would expose her to sanctions. The High Court annulled the State Comptroller election result over a "substantial flaw" in the procedure and ordered a new vote. Likud''s representative said Haskel''s account presented "a completely reversed picture".'
+    sources:
+      - url: https://news.walla.co.il/item/3857298
+        title: 'חקירת הבחירות למבקר המדינה: ח"כ שרן השכל זומנה למתן עדות בלהב 433'
+        publisher: Walla
+      - url: https://www.ynet.co.il/news/article/hjl11v6vrgx
+        title: 'היועמ"שית הורתה: לבדוק אם ח"כ השכל או הליכוד שיקרו לבג"ץ על הבחירות למבקר'
+        publisher: Ynet
+      - url: https://www.ynet.co.il/news/article/r1cd6lnhfx
+        title: 'שערוריית הבחירות למבקר המדינה: ח"כ השכל מוסרת עדות במשטרה'
+        publisher: Ynet
+  - kind: neutral
+    category: news
+    date: 2026-09-03
+    title:
+      he: 'עומדת בראש מפלגת "ישראל תחילה", שתרוץ לבחירות 2026 יחד עם עלה ירוק'
+      en: 'Heads the "Israel First" party, running in the 2026 election together with Aleh Yarok'
+    description:
+      he: 'לקראת בחירות 2026 הקימה השכל את מפלגת "ישראל תחילה" ועומדת בראשה; ב-23 באוגוסט 2026 הודיע יהונתן פולארד על הצטרפותו למפלגה. ב-3 בספטמבר 2026 הודיעה השכל כי המפלגה תרוץ יחד עם עלה ירוק, ותיארה את החיבור כ"חיבור טבעי וסגירת מעגל" על רקע פעילותה למען לגליזציה של קנאביס.'
+      en: 'Ahead of the 2026 election Haskel founded and heads the "Israel First" party; on 23 August 2026 Jonathan Pollard announced he was joining it. On 3 September 2026 Haskel announced the party would run together with Aleh Yarok (Green Leaf), describing the alliance as "a natural connection and closing of a circle" given her work for cannabis legalization.'
+    sources:
+      - url: https://www.ynet.co.il/news/elections2026/article/bjpcwrddge
+        title: 'שרן השכל ועלה ירוק ירוצו יחד בבחירות: "חיבור טבעי וסגירת מעגל"'
+        publisher: Ynet
+      - url: https://www.mako.co.il/news-israel-elections/2026_q3/Article-af63f42cfdd20a1026.htm
+        title: 'נכנס לפוליטיקה: יהונתן פולארד מצטרף למפלגה של שרן השכל'
+        publisher: N12

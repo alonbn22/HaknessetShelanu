@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { canonicalCommonsUrl } from "@/lib/text";
 
 // Client-safe (no DB/queries imports) so it can be used in client components too.
 export function MemberAvatar({
@@ -12,10 +13,11 @@ export function MemberAvatar({
   // Hebrew under a non-he <html lang> (WCAG 3.1.2).
   alt?: string;
 }) {
-  if (person.photoUrl) {
+  const photoUrl = canonicalCommonsUrl(person.photoUrl);
+  if (photoUrl) {
     return (
       <Image
-        src={person.photoUrl}
+        src={photoUrl}
         alt={alt ?? `${person.firstNameHe} ${person.lastNameHe}`}
         width={size}
         height={size}

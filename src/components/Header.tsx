@@ -7,22 +7,23 @@ import { MobileNav } from "./MobileNav";
 import { ThemeToggle } from "./ThemeToggle";
 import { SearchIcon } from "./icons/SearchIcon";
 
+// The chrome is the flag's blue field; the wordmark carries the flag inside
+// its letters (see .wordmark in globals.css), and the flag's stripes rule the
+// bar's bottom edge. Elevation belongs to things that float, so the bar
+// carries a rule, not a shadow.
 export function Header() {
   const t = useTranslations();
 
   return (
-    <header className="bg-accent text-white shadow-md sticky top-0 z-40">
+    <header className="stripe-rule sticky top-0 z-40 bg-chrome text-on-chrome">
       {/* relative: anchors the mobile dropdown panel (absolute top-full inset-x-0) */}
-      <div className="relative max-w-6xl mx-auto px-4 py-3 flex flex-wrap items-center gap-x-6 gap-y-2">
+      <div className="relative mx-auto flex max-w-6xl items-center gap-x-6 px-4 py-3">
         <Link
           href="/"
-          className="flex items-center whitespace-nowrap"
+          className="flex shrink-0 items-center whitespace-nowrap"
           aria-label={t("site.name")}
         >
-          <span
-            className="logo-flag text-2xl font-extrabold leading-none"
-            style={{ paddingBottom: "2px" }}
-          >
+          <span className="wordmark font-display text-[1.75rem] font-bold leading-none" style={{ paddingBottom: "0.08em" }}>
             {t("site.name")}
           </span>
         </Link>
@@ -31,7 +32,7 @@ export function Header() {
           <Link
             href="/search"
             aria-label={t("search.title")}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-lg hover:bg-white/10"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-control hover:bg-chrome-hover"
           >
             <SearchIcon size={20} />
           </Link>

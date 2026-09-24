@@ -1,71 +1,95 @@
-# PersonID 30895. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30895. Researched from reputable public sources and source-verified
+# (every cited URL re-fetched). Neutral language; legal status marked. Reviewed 2026-09-18.
 personId: 30895
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: חברת הכנסת ה-25 מטעם יש עתיד
-      en: Member of the 25th Knesset for Yesh Atid
+      he: "חברת הכנסת ה-25 מטעם יש עתיד"
+      en: "Member of the 25th Knesset for Yesh Atid"
     description:
-      he: עדי עזוז, עורכת דין ופעילה חברתית, נכנסה לכנסת ה-25 ב-13 באוגוסט 2025 מטעם
-        מפלגת יש עתיד, במקומו של חבר הכנסת עידן רול שהתפטר.
-      en: Adi Azuz, a lawyer and social activist, entered the 25th Knesset on 13
-        August 2025 as a member of the Yesh Atid party, replacing MK Idan Roll,
-        who had resigned.
-    date: 2025-08-13
+      he: "עדי עזוז, עורכת דין ופעילה חברתית, הוצבה במקום ה-27 ברשימת יש עתיד לכנסת ה-25 ונכנסה לכנסת ב-13 באוגוסט 2025 במקומו של חבר הכנסת עידן רול, שהודיע על פרישתו מהחיים הפוליטיים. היא חברה בוועדת החינוך, התרבות והספורט."
+      en: "Adi Azuz, a lawyer and social activist, was placed 27th on the Yesh Atid list for the 25th Knesset and entered the Knesset on 13 August 2025 in place of MK Idan Roll, who announced his retirement from politics. She sits on the Education, Culture and Sports Committee."
+    date: "2025-08-13"
     sources:
-      - url: https://en.wikipedia.org/wiki/Adi_Azuz
-        title: Adi Azuz
-        publisher: Wikipedia
-      - url: https://www.wikidata.org/wiki/Q135686494
-        title: Adi Azuz (Q135686494)
-        publisher: Wikidata
-      - url: https://he.wikipedia.org/wiki/%D7%A2%D7%93%D7%99_%D7%A2%D7%96%D7%95%D7%96
-        title: עדי עזוז
-        publisher: Wikipedia (Hebrew)
+      - url: "https://www.mako.co.il/news-politics/2025_q3/Article-bf32b4a0f039891027.htm"
+        title: "הכירו: חברת הכנסת החדשה שתחליף את עידן רול"
+        publisher: "N12 (mako)"
+      - url: "https://en.wikipedia.org/wiki/Adi_Azuz"
+        title: "Adi Azuz"
+        publisher: "Wikipedia"
+      - url: "https://he.wikipedia.org/wiki/%D7%A2%D7%93%D7%99_%D7%A2%D7%96%D7%95%D7%96"
+        title: "עדי עזוז"
+        publisher: "Wikipedia (Hebrew)"
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30895"
+        title: "עדי עזוז — דף חברת הכנסת"
+        publisher: "Knesset"
   - kind: positive
     category: volunteering
     title:
-      he: מייסדת תנועת "צדק צדק רודפות" לקידום ענישה הולמת בעבירות מין
-      en: Founder of the "Tzedek Tzedek Rodfot" movement promoting appropriate
-        penalties for sex offenses
+      he: "מייסדת תנועת \"צדק צדק רודפות\" לקידום ענישה הולמת בעבירות מין"
+      en: "Founder of the \"Tzedek Tzedek Rodfot\" movement promoting appropriate penalties for sex offenses"
     description:
-      he: עזוז ייסדה את תנועת "צדק צדק רודפות", המקדמת ענישה הולמת לעברייני מין,
-        בעקבות פסיקה מקלה בפרשת תקיפה מינית. היא פעילה חברתית הידועה בעיסוקה
-        בזכויות נשים.
-      en: Azuz founded the "Tzedek Tzedek Rodfot" advocacy movement, which promotes
-        appropriate penalties for sexual offenders, following a lenient ruling
-        in a sexual-assault case. She is a social activist known for her work on
-        women's rights.
+      he: "לאחר שנגזרו עבודות שירות על אנס סדרתי, הקימה עזוז את תנועת \"צדק צדק רודפות\", המקדמת ענישה הולמת לעברייני מין. היא בוגרת תוכנית עמיתי זכויות אדם במרכז מינרבה, התנדבה במרכז סיוע לנפגעות תקיפה מינית, וכתבה עבודת תזה בנושא תלונות שווא בעבירות אינוס."
+      en: "After a serial rapist was sentenced to community service, Azuz founded the \"Tzedek Tzedek Rodfot\" movement, which promotes appropriate penalties for sex offenders. She is a graduate of the Minerva Center's human-rights fellows program, volunteered at a rape crisis center, and wrote her master's thesis on false complaints in rape cases."
     sources:
-      - url: https://en.wikipedia.org/wiki/Adi_Azuz
-        title: Adi Azuz
-        publisher: Wikipedia
-      - url: https://he.wikipedia.org/wiki/%D7%A2%D7%93%D7%99_%D7%A2%D7%96%D7%95%D7%96
-        title: עדי עזוז
-        publisher: Wikipedia (Hebrew)
+      - url: "https://www.themarker.com/weekend/2024-12-27/ty-article-magazine/.premium/00000193-d958-d3b3-a597-f9de78070000"
+        title: "למה נערות מגיעות אליכם? לאכול, להכין שיעורים בשקט. הן עסוקות בהישרדות"
+        publisher: "TheMarker"
+      - url: "https://en.wikipedia.org/wiki/Adi_Azuz"
+        title: "Adi Azuz"
+        publisher: "Wikipedia"
+      - url: "https://he.wikipedia.org/wiki/%D7%A2%D7%93%D7%99_%D7%A2%D7%96%D7%95%D7%96"
+        title: "עדי עזוז"
+        publisher: "Wikipedia (Hebrew)"
   - kind: positive
     category: achievement
     title:
-      he: מנכ"לית "החצר הנשית" ויועצת לראש הממשלה בתחום מוגבלויות
-      en: CEO of "The Women's Courtyard" and adviser to the Prime Minister on
-        disabilities
+      he: "מנכ\"לית \"החצר הנשית\" ויועצת לראש הממשלה בתחום מוגבלויות"
+      en: "CEO of \"The Women's Courtyard\" and adviser to the Prime Minister on disabilities"
     description:
-      he: עזוז כיהנה כמנכ"לית עמותת "החצר הנשית" לנערות וצעירות במצוקה (החל מ-2021),
-        ובעבר ניהלה את אגף קידום הזכויות בעמותת אלו"ט (לילדים ובוגרים עם
-        אוטיזם). לאחר שיאיר לפיד נעשה לראש הממשלה ב-2022, מונתה ליועצת בתחום
-        אנשים עם מוגבלות.
-      en: Azuz served as CEO of "The Women's Courtyard," a nonprofit serving young
-        women in distress (from 2021), and previously led the rights-advancement
-        department at ALUT (the national association for children and adults
-        with autism). After Yair Lapid became Prime Minister in 2022, she was
-        appointed an adviser on people with disabilities.
+      he: "עזוז כיהנה כמנכ\"לית עמותת \"החצר הנשית\", המפעילה בתים חמים לנערות וצעירות בסיכון (החל מ-2021), ובעבר ניהלה את אגף קידום הזכויות ואת חטיבת הקהילה בעמותת אלו\"ט (לילדים ובוגרים עם אוטיזם). לאחר שיאיר לפיד נעשה לראש הממשלה ב-2022, מונתה ליועצת בתחום אנשים עם מוגבלות."
+      en: "Azuz served as CEO of \"The Women's Courtyard,\" a nonprofit running drop-in homes for at-risk girls and young women (from 2021), and previously led the rights-advancement department and the community division at ALUT (the national association for children and adults with autism). After Yair Lapid became Prime Minister in 2022, she was appointed his adviser on people with disabilities."
     sources:
-      - url: https://en.wikipedia.org/wiki/Adi_Azuz
-        title: Adi Azuz
-        publisher: Wikipedia
-      - url: https://he.wikipedia.org/wiki/%D7%A2%D7%93%D7%99_%D7%A2%D7%96%D7%95%D7%96
-        title: עדי עזוז
-        publisher: Wikipedia (Hebrew)
+      - url: "https://www.mako.co.il/news-politics/2025_q3/Article-bf32b4a0f039891027.htm"
+        title: "הכירו: חברת הכנסת החדשה שתחליף את עידן רול"
+        publisher: "N12 (mako)"
+      - url: "https://en.wikipedia.org/wiki/Adi_Azuz"
+        title: "Adi Azuz"
+        publisher: "Wikipedia"
+      - url: "https://he.wikipedia.org/wiki/%D7%A2%D7%93%D7%99_%D7%A2%D7%96%D7%95%D7%96"
+        title: "עדי עזוז"
+        publisher: "Wikipedia (Hebrew)"
+  - kind: negative
+    category: controversy
+    title:
+      he: "סערה סביב דבריה בוועדת החוקה על הרג ילדים בכפר טמון והשוואה ל\"נוח'בות\" (2026)"
+      en: "Controversy over her Constitution Committee remarks on the killing of children in Tammun and a comparison to \"Nukhba\" operatives (2026)"
+    description:
+      he: "ב-23 במרץ 2026, בדיון בוועדת החוקה, חוק ומשפט לאחר אירוע שבו ירו לוחמי מג\"ב לעבר רכב בכפר טמון ונהרגו בו שני הורים ושני ילדים, אמרה עזוז כי \"נהרגו ילדים בני 5 ו-7 מאש כוחותינו\" וכי הממשלה אינה מסוגלת להביע צער, ושאלה, בהתייחס ל\"קולות שמגיעים מהממשלה\" המצדיקים זאת, \"במה אתם שונים ממחבלי הנוח'בות שקיבלו היתר לרצוח תינוקות יהודים\". יו\"ר הוועדה שמחה רוטמן הגיב בזעם והוציא אותה מהדיון, וארגון \"אמהות הלוחמים\" הגיש תלונה לוועדת האתיקה של הכנסת; לא דווח על החלטה בתלונה. עזוז טענה כי המילה \"רצח\" לא נאמרה, כי לא התייחסה כלל לחיילי צה\"ל, וכי יו\"ר הוועדה \"בחר בכוונה לסלף\" את דבריה והוציאם מהקשרם."
+      en: "On 23 March 2026, in a Constitution, Law and Justice Committee debate held after Border Police troops fired at a vehicle in the village of Tammun, killing two parents and two children, Azuz said that \"children aged 5 and 7 were killed by our forces' fire\" and that the government was unable to express regret, and asked, referring to \"voices coming from the government\" that justified it, \"how are you different from the Nukhba terrorists who were given permission to murder Jewish infants\". Committee chair Simcha Rothman reacted angrily and removed her from the session, and the \"Mothers of Combat Soldiers\" organization filed a complaint with the Knesset Ethics Committee; no decision on the complaint was reported. Azuz said the word \"murder\" was never uttered, that she had not referred to IDF soldiers at all, and that the committee chair had \"deliberately chosen to distort\" her words and take them out of context."
+    date: "2026-03-23"
+    sources:
+      - url: "https://www.maariv.co.il/news/politics/article-1300572"
+        title: "התבטאות של חברת הכנסת עוררה סערה - אמהות לוחמים דרשו הטלת סנקציות"
+        publisher: "Maariv"
+      - url: "https://www.inn.co.il/news/692912"
+        title: "\"במה אתם שונים מהנוח'בות?\": ההשוואה המקוממת של הח\"כית מיש עתיד"
+        publisher: "Arutz 7 (INN)"
+  - kind: neutral
+    category: news
+    date: "2026-09-05"
+    title:
+      he: "לא נכללה בין 15 נציגי יש עתיד ברשימת \"ביחד\" לכנסת ה-26"
+      en: "Not among the 15 Yesh Atid candidates named on the \"Beyachad\" list for the 26th Knesset"
+    description:
+      he: "ברשימת 15 נציגי יש עתיד שהציג יאיר לפיד ב-5 בספטמבר 2026 לקראת הריצה המשותפת עם נפתלי בנט ברשימת \"ביחד\", לא נכלל שמה של עזוז. ברשימת \"ביחד\" שהוגשה לוועדת הבחירות המרכזית, 20 המקומות הראשונים אינם כוללים אותה."
+      en: "Azuz's name was not among the 15 Yesh Atid representatives presented by Yair Lapid on 5 September 2026 for the joint run with Naftali Bennett on the \"Beyachad\" list. The top 20 places of the \"Beyachad\" list submitted to the Central Elections Committee do not include her."
+    sources:
+      - url: "https://kipa.co.il/%D7%97%D7%93%D7%A9%D7%95%D7%AA/1231033-0"
+        title: "מירב בן ארי בראש: רשימת יש עתיד לכנסת הבאה"
+        publisher: "Kipa"
+      - url: "https://www.makorrishon.co.il/news/politcal/article/368984"
+        title: "רשימת ביחד לכנסת ה־26: אלה המועמדים של נפתלי בנט"
+        publisher: "Makor Rishon"

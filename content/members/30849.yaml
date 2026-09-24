@@ -2,6 +2,7 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 30849
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -16,7 +17,7 @@ claims:
         Knesset from the 13th spot on the Religious Zionist Party-Otzma Yehudit
         joint list, and was the only woman among Otzma Yehudit's Knesset
         members.
-    date: 2022-11-01
+    date: "2022-11-01"
     sources:
       - url: https://en.wikipedia.org/wiki/Limor_Son_Har-Melech
         title: Limor Son Har-Melech
@@ -34,7 +35,7 @@ claims:
         הכנסת, במקומו של חבר הכנסת משה רוט.
       en: On 26 May 2025, the Knesset plenum approved Son Har-Melech's appointment as
         Deputy Speaker of the Knesset, replacing MK Moshe Roth.
-    date: 2025-05-26
+    date: "2025-05-26"
     sources:
       - url: https://www.ynetnews.com/article/sqw5jwd0q
         title: MK Limor Son Har-Melech appointed as Deputy Knesset Speaker
@@ -42,6 +43,9 @@ claims:
       - url: https://he.wikipedia.org/wiki/%D7%9C%D7%99%D7%9E%D7%95%D7%A8_%D7%A1%D7%95%D7%9F_%D7%94%D7%A8_%D7%9E%D7%9C%D7%9A
         title: לימור סון הר מלך
         publisher: Wikipedia (Hebrew)
+      - url: https://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_PersonToPosition?%24filter=PersonID%20eq%2030849
+        title: Knesset OData — positions held by person 30849
+        publisher: The Knesset
   - kind: positive
     category: achievement
     title:
@@ -55,7 +59,7 @@ claims:
         critically wounded in a shooting attack in Samaria in which her first
         husband, Shalom (Shuli) Har-Melech, was killed; her daughter was
         delivered by emergency caesarean section hours later.
-    date: 2003-08-28
+    date: "2003-08-28"
     sources:
       - url: https://en.wikipedia.org/wiki/Limor_Son_Har-Melech
         title: Limor Son Har-Melech
@@ -63,3 +67,35 @@ claims:
       - url: https://jns.org/terrorist-responsible-for-2003-murder-of-mks-husband-eliminated
         title: Terrorist responsible for 2003 murder of MK's husband eliminated
         publisher: JNS (Jewish News Syndicate)
+  - kind: neutral
+    category: news
+    date: "2026-07-02"
+    title:
+      he: יזמה עם ח"כ קרויזר דיון בוועדת הפנים בטענות על "ריסוס" ושליטה במזג האוויר
+      en: Initiated with MK Kroizer an Interior Committee debate on claims of atmospheric "spraying" and weather control
+    description:
+      he: ב-2 ביולי 2026 קיימה ועדת הפנים והגנת הסביבה, לבקשת ח"כ סון הר מלך וח"כ יצחק קרויזר, דיון בטענות פעילים כי גורמים מרססים חומרים באטמוספירה כדי לשלוט במזג האוויר. כל נציגי הממשלה בדיון - ובהם משרד הבריאות, המשרד להגנת הסביבה והשירות המטאורולוגי - מסרו כי לא מתבצע ריסוס כזה בישראל; מנהל השירות המטאורולוגי ד"ר אמיר גבעתי אמר "איננו מודעים לפעילות כזו". ארגון גרינפיס ישראל מתח ביקורת על קיום הדיון.
+      en: On 2 July 2026 the Knesset Interior and Environment Committee held, at the request of MK Son Har-Melech and MK Yitzhak Kroizer, a debate on activists' claims that parties spray substances into the atmosphere to control the weather. All government representatives at the debate - including the Health Ministry, the Environmental Protection Ministry and the Meteorological Service - said no such spraying takes place in Israel; Meteorological Service director Dr. Amir Givati said "we are not aware of any such activity". Greenpeace Israel criticized the holding of the debate.
+    sources:
+      - url: https://www.haaretz.com/science-and-health/2026-07-02/ty-article/knesset-debate-heats-up-over-climate-engineering-conspiracy-claims/0000019f-2303-d521-abdf-7f2fff810000
+        title: Who Controls Israel's Weather? Knesset Debate Heats Up Over Climate-engineering Conspiracy Claims
+        publisher: Haaretz
+  - kind: neutral
+    category: news
+    date: "2026-09-06"
+    title:
+      he: שובצה במקום החמישי ברשימת עוצמה יהודית לכנסת ה-26
+      en: Placed fifth on the Otzma Yehudit list for the 26th Knesset
+    description:
+      he: ב-6 בספטמבר 2026 הודיע יו"ר עוצמה יהודית איתמר בן גביר, הקובע את הרכב הרשימה, כי סון הר מלך תשובץ במקום החמישי ברשימת המפלגה לבחירות ב-27 באוקטובר 2026, אחרי בן גביר, טלי גוטליב, יצחק וסרלאוף ועמיחי אליהו, ולפני יצחק קרויזר.
+      en: On 6 September 2026 Otzma Yehudit chairman Itamar Ben Gvir, who sets the list's composition, announced that Son Har-Melech would be placed fifth on the party's list for the 27 October 2026 election, after Ben Gvir, Tally Gotliv, Yitzhak Wasserlauf and Amichai Eliyahu, and ahead of Yitzhak Kroizer.
+    sources:
+      - url: https://www.ynet.co.il/news/article/sjmhg1j00mx
+        title: "רשימת עוצמה יהודית: סון הר מלך תשובץ חמישית, אחריה קרויזר"
+        publisher: Ynet
+      - url: https://www.haaretz.co.il/news/elections/2026-09-07/ty-article/.premium/000001a0-7bea-d5e7-a7a0-7bfebd3a0000
+        title: "רשימת עוצמה יהודית: דורפמן במקום השביעי, פעיל עם קעקוע \"כך\" במקום השמיני"
+        publisher: Haaretz
+      - url: https://www.inn.co.il/news/705828
+        title: כך נראית רשימת עוצמה יהודית
+        publisher: Arutz Sheva (Israel National News)

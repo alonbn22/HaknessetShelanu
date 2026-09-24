@@ -23,7 +23,8 @@
     "lobbyists": "Lobbyists",
     "tickets": "Tickets",
     "menu": "Menu",
-    "compare": "Compare"
+    "compare": "Compare",
+    "more": "More"
   },
   "common": {
     "knessetNum": "{num}th Knesset",
@@ -37,7 +38,13 @@
     "next": "Next",
     "page": "Page {page, number} of {total, number}",
     "source": "Source",
-    "knesset": "Knesset"
+    "knesset": "Knesset",
+    "coalitionSince": "In the coalition since {date}",
+    "oppositionSince": "Outside the coalition since {date}",
+    "minorityHead": "Minority government",
+    "minorityHeadSince": "Minority government since {date}",
+    "minorityNote": "The coalition has {coalition} members — fewer than a majority of {majority}. A government can stay in office without a majority, but passing laws is hard; replacing it with another government takes {majority} members.",
+    "lastChecked": "Last checked: {date}"
   },
   "home": {
     "title": "Our Knesset",
@@ -60,7 +67,17 @@
     "seatsView": "View",
     "seatsViewBar": "Bar",
     "seatsViewHemicycle": "Hemicycle",
-    "votingDays": "The plenum held votes on {term} days this Knesset — {inYear} of them in {year}"
+    "votingDays": "The plenum held votes on {term} days this Knesset — {inYear} of them in {year}",
+    "thisWeekEmpty": "No committee sittings are scheduled in the next seven days.",
+    "figuresSource": "Source: Knesset open-data API · as of {date}",
+    "lawVote": "The Knesset vote",
+    "electionEyebrow": "The 26th Knesset election",
+    "daysToElection": "{days, plural, =0 {Election day is today} one {# day to the election} other {# days to the election}}",
+    "listsSummary": "{submitted} lists submitted, {polled} of them included in the polls",
+    "pollsSummary": "{count} polls since the lists closed",
+    "nextMilestone": "Next up",
+    "countNote": "Counted by the factions’ own announcements; a faction that announced it left the coalition is counted with the opposition.",
+    "countNoteLink": "Details and sources per faction"
   },
   "members": {
     "title": "Knesset Members",
@@ -68,10 +85,11 @@
     "allParties": "All factions",
     "allBlocs": "Coalition & opposition",
     "noResults": "No members found",
-    "count": "{count} members",
+    "count": "{count, plural, one {# member} other {# members}}",
     "former": "Former",
     "servedUntil": "Served until {date}",
-    "minister": "Minister"
+    "minister": "Minister",
+    "deputyMinister": "Deputy minister"
   },
   "member": {
     "roles": "Roles",
@@ -93,7 +111,7 @@
     "currentMk": "Serving Knesset member",
     "formerMk": "Formerly served in this Knesset",
     "billsProposed": "Bills sponsored",
-    "billsProposedCount": "{count} bills",
+    "billsProposedCount": "{count, plural, one {# bill} other {# bills}}",
     "questions": "Parliamentary questions",
     "questionsAnswered": "{answered} of {total} questions answered",
     "avgResponse": "average response time: {days} days",
@@ -109,7 +127,9 @@
       "convicted": "Convicted",
       "acquitted": "Acquitted",
       "overturned": "Overturned on appeal",
-      "settled": "Settled"
+      "settled": "Settled",
+      "closed": "Closed without charges",
+      "ruled": "Court ruled"
     },
     "bioTitle": "Biography & background",
     "born": "Born",
@@ -132,16 +152,24 @@
       "achievement": "Achievement",
       "conviction": "Conviction",
       "investigation": "Investigation",
-      "controversy": "Controversy"
+      "controversy": "Controversy",
+      "news": "In the news",
+      "role": "Role"
     },
     "recordSources": "Sources",
     "recordReviewed": "Record last reviewed: {date}",
-    "recordNone": "No items documented in this database."
+    "recordNone": "No items documented in this database.",
+    "neutralRecord": "In the news and in office",
+    "ministerNotMk": "Serving minister; vacated the Knesset seat under the Norwegian Law",
+    "deputyMinisterNotMk": "Serving deputy minister; vacated the Knesset seat under the Norwegian Law"
   },
   "parties": {
     "title": "Knesset Factions",
     "seats": "Seats",
-    "coalitionNote": "Coalition / opposition labeling as of {asOf}. Source:"
+    "coalitionNote": "Coalition / opposition labeling as it stood when the Knesset dispersed on {asOf}; a caretaker government serves until the 26th Knesset's government is sworn in. Source:",
+    "timelineTitle": "How the count changed during the term",
+    "timelineIntro": "The coalition’s size at each change, by the factions’ announcements as reported. Other figures seen online — 64, 76, 68, 61 — are earlier points on this line.",
+    "timelineSize": "{n, plural, one {# coalition MK} other {# coalition MKs}}"
   },
   "party": {
     "membersTitle": "Faction members",
@@ -154,9 +182,25 @@
     "spectrum": "Political position",
     "editorialNote": "Position summaries are written by this site for explanatory purposes and may be incomplete. They do not represent the faction's official stance.",
     "ballot": "Ballot letters",
-    "ballotEra": "In the 2022 (25th Knesset) election. The 2026 ballot letters are set closer to the vote.",
+    "ballotEra": "Ballot letters from the 2022 (25th Knesset) election. The 2026 letters were requested at list submission and are approved by the Central Elections Committee; they will be updated here on approval.",
     "basedOn": "Spectrum and positions are based on:",
-    "factionChair": "Faction chair in the Knesset"
+    "factionChair": "Faction chair in the Knesset",
+    "updates": "Recent developments",
+    "updatesNote": "Dated items from the news and official records; each carries its source.",
+    "election2026": "In the 2026 election",
+    "runsOwn": "Runs on its own list",
+    "runsWithin": "Runs within a joint list",
+    "runsMerged": "Merged into another party",
+    "runsNot": "Not running as its own list",
+    "listName": "List",
+    "listHead": "List head",
+    "submittedBy": "Submitted by",
+    "lettersRequested": "Requested letters",
+    "lettersApproved": "Ballot letters",
+    "lettersPending": "Letters are as requested; the Central Elections Committee approves the lists and letters on {date}.",
+    "ballot2022": "In 2022",
+    "cecPage": "The list’s page on the CEC site",
+    "electionCard": "The list’s card on the election page"
   },
   "spectrum": {
     "left": "Left",
@@ -195,14 +239,16 @@
     "statusRaised": "Raised (preliminary)",
     "statusFinal": "Third reading",
     "searchSubject": "Search by subject…",
-    "resultsCount": "{count} results",
+    "resultsCount": "{count, plural, one {# result} other {# results}}",
     "whatItSays": "What the law says",
     "explanatoryNotes": "Explanatory notes / first-reading text",
     "publishedLaw": "The law as published",
     "sponsors": "Bill sponsors",
     "tapToFilter": "Tap a result to see who voted that way",
     "showingWho": "Showing who voted: {result}",
-    "notInRollCall": "Official Knesset tally. {n} of those who voted are former members, not shown in the breakdown below."
+    "notInRollCall": "Official Knesset tally. {n} of those who voted are former members, not shown in the breakdown below.",
+    "date": "Date",
+    "result": "Result"
   },
   "voteResult": {
     "r1": "For",
@@ -338,7 +384,7 @@
     "subtitle": "Plain-language explanations of political terms — search a term or pick a topic.",
     "search": "Search a term…",
     "all": "All topics",
-    "results": "{count} terms",
+    "results": "{count, plural, one {# term} other {# terms}}",
     "noResults": "No terms found",
     "cat_spectrum": "Political spectrum",
     "cat_ideology": "Ideologies",
@@ -357,10 +403,10 @@
     "statusByLaw": "Statutory date",
     "statusReported": "Per reports",
     "keyFacts": "Key facts",
-    "parties": "Who is expected to run",
+    "parties": "Who is running",
     "keyDates": "Key dates on the road to the 26th Knesset",
-    "finalListsNote": "The full candidate rosters will appear here once submitted — expected {date}.",
-    "partiesNote": "Candidate lists are final only once submitted to the Central Elections Committee; until then the field may change.",
+    "finalListsNote": "Lists whose rosters are not yet published will be added when the approved lists are published — expected {date}.",
+    "partiesNote": "The lists as submitted to the Central Elections Committee on September 7–8, 2026; submission is not approval, and final approval is reported for {date}.",
     "rules": "Election rules",
     "stats": "Facts & figures",
     "news": "Updates",
@@ -370,7 +416,30 @@
     "homeCta": "Everything about the upcoming election",
     "morePartyInfo": "More about the party",
     "newList": "New list — not yet in the Knesset",
-    "inDays": "{days, plural, =0 {happening today} one {in # day} other {in # days}}"
+    "inDays": "{days, plural, =0 {happening today} one {in # day} other {in # days}}",
+    "candidates": "Candidate list",
+    "stance": "Stated position on partners",
+    "showAll": "Show the full list",
+    "compassCta": "Election compass: who is closest to your views?",
+    "positionsCta": "What each list says, stance by stance",
+    "surplusWith": "Surplus-vote agreement with",
+    "howToVote": "How to vote",
+    "recordParticipation": "On record: the faction's members took part in {pct}% of the 25th Knesset's votes on average.",
+    "recordVote": "{for} for, {against} against",
+    "recordVoteAbsent": "({n} did not vote)",
+    "recordVoteAs": "as the {faction} faction",
+    "allLists": "All {count} submitted lists",
+    "allListsIntro": "As submitted to the committee chair on 7–9 September 2026, in the committee’s order. Letters are as requested; the committee approves lists and letters on {date}. List heads are named as the committee prints them.",
+    "colLetters": "Letters",
+    "colList": "List",
+    "colHead": "Head",
+    "colSubmittedBy": "Submitted by",
+    "lettersRequestedShort": "requested",
+    "lettersBadgeTitle": "Requested letters — final after the CEC approves on {date}",
+    "cecSourceLine": "Source: the lists’ pages on the Central Elections Committee site (gov.il).",
+    "colCandidates": "Candidates",
+    "rosterCount": "{n, plural, one {# candidate} other {# candidates}}",
+    "rosterAll": "All {n} candidates on the list's page at the CEC ↗"
   },
   "electionsHistory": {
     "title": "Knesset Elections History",
@@ -416,7 +485,7 @@
     "totalVotesCol": "Missed / total",
     "note": "The base is all votes held during the member's tenure.",
     "servingOnlyNote": "All attendance figures on the site reflect only currently-serving members of the Knesset. Members who left their seat (e.g. ministers under the Norwegian Law) are not included.",
-    "count": "{count} serving Knesset members",
+    "count": "{count, plural, one {# serving Knesset member} other {# serving Knesset members}}",
     "searchPlaceholder": "Search for a member or faction…"
   },
   "ministers": {
@@ -434,28 +503,55 @@
     "note": "Source: Knesset Open Data (KNS_PersonToPosition). Ministry names are shown in Hebrew as in the source."
   },
   "quiz": {
-    "title": "Election Compass — which party fits you?",
-    "subtitle": "Answer the statements and see which factions your views are closest to.",
-    "intro": "An educational tool only. The positions attributed to factions are simplifications written by this site from public sources, not official platforms. Ahead of the next election, always check a party's current platform.",
-    "disclaimer": "The match is based only on stance proximity and is not voting advice. The data is editorial and unofficial.",
-    "important": "This issue matters a lot to me",
-    "seeResults": "See results",
-    "reset": "Reset",
-    "answered": "Answered {count} of {total}",
-    "resultsTitle": "Your match with the factions",
-    "matchNote": "Tap a faction to open its page.",
+    "title": "Election compass — who is closest to your views?",
+    "subtitle": "Statements about what the lists want — security, religion and state, the economy, society and institutions. Every list has a documented stance — a Knesset vote, a platform or a statement — or \"no stated position\".",
+    "intro": "Mark how much you agree with each statement (you can skip). After at least {min} answers you will see which lists are closest to your views, and why. The lists’ stances come from a documented source for every cell — a roll-call vote in the Knesset, the platform the list published, or the words of its leader as reported by a major outlet — never from the site’s interpretation. A list with no documented stance on a statement is simply not compared on it. Nothing is stored or sent anywhere.",
+    "positionsLink": "See every stance with its source",
+    "disclaimer": "The match is computed from closeness of positions only and is not a recommendation on how to vote.",
+    "sourcesNote": "Every stance links to its source: the Knesset’s vote record, the platform, or the article.",
+    "lastReviewed": "Last reviewed: {date}.",
+    "important": "This matters to me most (double weight)",
+    "seeResults": "Show my results",
+    "reset": "Start over",
+    "answered": "You answered {count} of {total}",
+    "needMore": "at least {min} answers needed",
+    "resultsTitle": "The lists closest to your views",
+    "resultsHow": "The percentage = how close the list’s stances are to your answers, on average over the {n} statements you answered (only where the list has a documented stance).",
+    "comparedOn": "compared on {k} of {n} statements",
+    "thinCoverage": "few documented stances — take with caution",
     "opt": {
       "agree2": "Strongly agree",
       "agree1": "Agree",
-      "neutral": "Neutral",
+      "neutral": "Neither",
       "disagree1": "Disagree",
       "disagree2": "Strongly disagree",
-      "clear": "Clear"
+      "skip": "Skip"
     },
-    "why": "Why this match?",
+    "basis": {
+      "vote": "Knesset vote",
+      "platform": "platform",
+      "statement": "statement (as reported)"
+    },
+    "voteRecord": "vote record",
+    "why": "Why?",
     "youSaid": "You",
-    "partyStance": "Party",
-    "sourcesNote": "Party stances are the site's reading of platforms, public statements, and Knesset voting records. Each party's page lists its sources."
+    "listStance": "The list",
+    "noStance": "no documented stance — not compared",
+    "voteRule": "How a Knesset vote becomes a number: when almost all of a faction voted the same way (nine in ten or more) — \"strongly\"; when the faction split — \"agree\" or \"disagree\"; if fewer than half the faction voted, the stance is shown weaker and says so. A vote by a predecessor faction (e.g. Yesh Atid for Together) is marked explicitly.",
+    "topicsNote": "What is here and what is not: 16 statements — security and foreign policy, the economy, religion and state, society and institutions. A statement enters the compass only if most lists (at least 8 of 15) have a documented stance on it. A statement on state intervention in housing and prices was left out for that reason — most platforms talk about competition and say nothing about supervision or public building, which is not a stance.",
+    "noStanceAtAll": "no documented stance on any statement you answered — not compared",
+    "whatIsThis": "What does this mean?",
+    "agreeOn": "Same view on",
+    "partlyOn": "Close on",
+    "differOn": "Opposite view on",
+    "noStanceOn": "The list has no documented stance on",
+    "explainTitle": "Why this result?",
+    "explainScore": "For each list we measured how close your answers are to its documented stances, statement by statement, and averaged. 100% = exactly the same stance on every statement; 0% = the opposite end on every statement.",
+    "explainImportant": "A statement you marked as especially important counts double.",
+    "explainNoStance": "A statement on which a list has no documented stance is not counted for it — neither for nor against. That is why each list shows how many statements it was compared on.",
+    "explainSources": "Every list stance links to its source — a Knesset vote, a platform or a quote — under \"Why?\".",
+    "explainNotAdvice": "This is closeness of positions only, not a voting recommendation: the compass does not measure leadership, credibility or the past.",
+    "explainThin": "A list compared on only a few statements can score very high or very low by chance; it is shown dimmed and ranked after the lists compared on most of your statements."
   },
   "budget": {
     "title": "State Budget",
@@ -482,7 +578,7 @@
     "sortAmount": "By amount",
     "sortName": "By name",
     "sortCode": "By code",
-    "resultsCount": "{count} lines",
+    "resultsCount": "{count, plural, one {# line} other {# lines}}",
     "noResults": "No budget lines found",
     "colLine": "Budget line",
     "colMinistry": "Ministry",
@@ -509,7 +605,7 @@
     "statFirms": "Lobbying firms",
     "statClients": "Clients",
     "searchPlaceholder": "Search a lobbyist, firm or client…",
-    "results": "{count} lobbyists",
+    "results": "{count, plural, one {# lobbyist} other {# lobbyists}}",
     "noResults": "No lobbyists found",
     "firm": "Firm",
     "clients": "Clients (who pays)",
@@ -576,10 +672,27 @@
   },
   "hemicycle": {
     "aria": "Knesset seating chart: {coalition} coalition seats, {opposition} opposition seats",
-    "legend": "Factions"
+    "legend": "Factions",
+    "cardParticipation": "participation in the 25th Knesset’s votes",
+    "cardNoStats": "no voting figures yet",
+    "cardSource": "Source: the Knesset’s open-data interface · as of {date}",
+    "cardOpen": "Click for the member’s page",
+    "hint": "Hover or tap a seat to see who sits in it. Keyboard: Tab to the first seat, arrows between seats, Enter for the page."
   },
   "wip": {
     "notice": "Work in progress — some information may be incomplete, inaccurate, or out of date. Always verify against official Knesset sources."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "The link may be wrong, the page may have been removed, or the item you were looking for may not exist in the data.",
+    "backHome": "Go to the home page",
+    "toSearch": "Search the site"
+  },
+  "error": {
+    "title": "Something went wrong",
+    "body": "This page failed to load. You can try again, or go back to the home page.",
+    "retry": "Try again",
+    "backHome": "Go to the home page"
   },
   "compare": {
     "title": "Compare members",
@@ -596,7 +709,7 @@
   "bill": {
     "journey": "Legislative journey",
     "noJourney": "No recorded reading votes for this bill yet.",
-    "atStage": "{count} votes at this stage",
+    "atStage": "{count, plural, one {# vote at this stage} other {# votes at this stage}}",
     "relatedVotes": "+ {count} related votes (reservations, clause votes, etc.)",
     "firstReadingText": "First-reading text"
   },
@@ -610,5 +723,69 @@
   "theme": {
     "switchToDark": "Switch to dark mode",
     "switchToLight": "Switch to light mode"
+  },
+  "polls": {
+    "title": "Seat polls",
+    "eyebrow": "Since the lists closed",
+    "intro": "Polls are a snapshot, not a forecast. Every number here was taken from the original article of the outlet that published it (or its publishing group’s report) and links to it. {count} polls from {institutes} polling institutes, {from}–{to}.",
+    "averageTitle": "Poll of polls",
+    "averageMethod": "The average of the {n} latest polls — one per polling institute ({from}–{to}). How it is computed — in the explanation below.",
+    "averageRange": "across the polls: {min} to {max}",
+    "threshold": "electoral threshold — 3.25% of the votes (≈4 seats)",
+    "trendTitle": "Each list, poll after poll",
+    "trendHint": "Choose a list to see how many seats each poll gave it since the lists closed.",
+    "trendAria": "Line chart: seats for each list in every poll, by date",
+    "trendPoint": "{list} · {institute} for {outlet} · {date} · {seats} seats",
+    "allTitle": "All {count} polls, one by one",
+    "allCaption": "List columns are in a fixed order (the site’s registry order), not by results; on phones each poll is shown in its own seat order. \"<\" — reported below the threshold; \"—\" — not reported.",
+    "colDate": "Date",
+    "colOutlet": "Outlet",
+    "colInstitute": "Institute",
+    "colSample": "Sample",
+    "colSource": "Source",
+    "below": "below the electoral threshold",
+    "notReported": "not reported",
+    "fieldwork": "fieldwork {from}–{to}",
+    "sample": "{n} respondents",
+    "moe": "±{pct}%",
+    "blocsTitle": "The bloc map, as each outlet counted it",
+    "blocsNote": "Bloc membership is the pollster’s assumption, not the site’s: which list belongs to which bloc is decided differently in each poll. The figures are shown exactly as published.",
+    "blocsBy": "as counted by {institute} for {outlet}",
+    "methodologyTitle": "How to read these polls",
+    "methodologySample": "Sample and margin of error: a poll of about 500 respondents carries a sampling error of about 4 percentage points — a seat or two for a large list. A one-seat difference between polls is usually noise, not a trend.",
+    "methodologyHouses": "Why institutes differ: internet panels versus telephone, weighting by past vote, how undecided and unlikely voters are handled — all of these are systematic and produce steady gaps between houses. That is why the average takes one poll per institute.",
+    "methodologyAverage": "The average: each institute’s latest poll from the last {window} days, with equal weight, no smoothing and no quality weighting. A list a poll reported below the threshold counts as 0 seats in that poll. The range beside each list shows how far the houses disagree.",
+    "methodologyScope": "What is included: every seat poll published from {cutoff} — the day the candidate lists closed — onward, from every outlet we found. Earlier polls measured lists that no longer exist. No poll was left out because of its results.",
+    "methodologyVerification": "Verification: every figure was entered from the publishing outlet’s own article (or its own infographic), never from an aggregator, and the totals were checked against 120. Found an error? Tell us.",
+    "notEnteredTitle": "Polls we know of that were not entered",
+    "homeTitle": "Poll of polls",
+    "homeMethod": "Mean of {polls} polls from {institutes} institutes since the lists closed · {from}–{to}",
+    "homeCta": "Every poll, the blocs and the method",
+    "lastReviewed": "Last reviewed: {date}",
+    "more": "{n} more lists",
+    "externalTitle": "Averages published by other sites",
+    "externalAsOf": "as of {date} · {method}",
+    "externalCredit": "courtesy of {publisher}",
+    "indexCredit": "The poll indexes we relied on so that no poll is left out",
+    "thresholdSource": "Source for the threshold",
+    "perPollCredit": "Every row: the outlet that published and the institute that conducted, linked to the original article.",
+    "averageBelow": "in {m} of {n} polls it does not enter the Knesset",
+    "trendChoose": "Choose a list:",
+    "trendSummary": "{list}: between {min} and {max} seats in {n} polls",
+    "trendAverage": "average: {mean}",
+    "trendHouseNote": "Each dot is one poll (hover to see who ran it and when). A thin line joins polls by the same institute — so a steady gap between lines is a difference in polling method, not a real change.",
+    "belowAll": "below the threshold in all {n} polls"
+  },
+  "positions": {
+    "title": "What the lists say — stance by stance",
+    "subtitle": "Every list against every statement in the election compass. Each cell is a documented stance — a Knesset vote, a platform or a statement — linked to its source. \"—\" means we found no stated position, not that the list is neutral.",
+    "choose": "Choose a list:",
+    "noStance": "no documented stance",
+    "matrixTitle": "The full table",
+    "legend": "Filled blue — agrees with the statement, outlined — disagrees, grey — neither. Click a cell to open the source.",
+    "colStatement": "Statement",
+    "matrixPhone": "The full table shows on wide screens; on a narrow screen choose a list above.",
+    "toCompass": "To the election compass",
+    "method": "Stances were taken from roll-call votes in the Knesset (the Knesset’s record), from the platforms the lists published, and from the words of list leaders as reported by major outlets; no stance was inferred from ideology. A vote becomes \"strongly\" only when almost the whole faction voted one way; when fewer than half the faction voted, the strength is capped and the cell says so. A vote by a predecessor faction is marked explicitly."
   }
 }

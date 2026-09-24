@@ -2,7 +2,7 @@ import { cache } from "react";
 import { and, asc, desc, eq, inArray, or, sql, type SQL, type AnyColumn } from "drizzle-orm";
 import { getDb, schema } from "@/db";
 import { isHebrew } from "./text";
-import { getCoalitionConfig, getFactionMeta } from "./content";
+import { getCoalitionConfig, getFactionMeta, localizedMeta } from "./content";
 import {
   CURRENT_KNESSET,
   MK_POSITION_IDS,
@@ -11,10 +11,12 @@ import {
   POSITION_MK_FEMALE,
   POSITION_COMMITTEE_CHAIR,
   POSITION_FACTION_CHAIR,
+  POSITION_DEPUTY_MINISTER,
   VOTE_FOR,
   VOTE_AGAINST,
   VOTE_ABSTAIN,
   VOTE_DID_NOT_VOTE,
+  OFFICE_POSITION_IDS,
 } from "./constants";
 
 export type Person = typeof schema.persons.$inferSelect;
@@ -26,15 +28,16 @@ export type Vote = typeof schema.votes.$inferSelect;
 export function personName(p: Person, locale: string): string {
   const hebrew = `${p.firstNameHe} ${p.lastNameHe}`;
   if (locale === "he") return hebrew;
+  // Latin-script locales (en, es, fr) share the English transliteration.
   const localized =
-    locale === "en" ? p.nameEn : locale === "ar" ? p.nameAr : p.nameRu;
+    locale === "ar" ? p.nameAr : locale === "ru" ? p.nameRu : p.nameEn;
   return localized ?? p.nameEn ?? hebrew;
 }
 
 export function factionName(factionId: number, fallbackHe: string, locale: string): string {
   const meta = getFactionMeta().get(factionId);
   if (!meta) return fallbackHe;
-  return (meta[locale as "he" | "en" | "ar" | "ru"] as string) ?? meta.he;
+  return localizedMeta(meta, locale);
 }
 
 export function factionColor(factionId: number): string {
@@ -135,12 +138,14 @@ export type MemberListItem = Person & {
   isSitting: boolean;
   leftDate: string | null; // date they stopped sitting (if not currently sitting)
   ministryHe: string | null; // current ministry, if a serving minister
+  isDeputyMinister: boolean;
 };
 
 export type SeatStatus = {
   isSitting: boolean;
   leftDate: string | null;
   ministryHe: string | null; // current ministry, if they serve as a minister
+  isDeputyMinister: boolean; // the ministry row is a deputy-minister post, not a minister's
 };
 
 // Seat status per person (current Knesset). A minister who vacated their seat under
@@ -167,9 +172,13 @@ function getSeatStatusMap(personIds: number[]): Map<number, SeatStatus> {
     .all();
   for (const r of rows) {
     const cur =
-      map.get(r.personId) ?? { isSitting: false, leftDate: null, ministryHe: null };
+      map.get(r.personId) ?? { isSitting: false, leftDate: null, ministryHe: null, isDeputyMinister: false };
     if (r.isCurrent && seatPositions.has(r.positionId)) cur.isSitting = true;
-    if (r.isCurrent && r.ministry) cur.ministryHe = r.ministry;
+    // A minister's row wins over a deputy's, so someone holding both is a minister.
+    if (r.isCurrent && r.ministry && (!cur.ministryHe || cur.isDeputyMinister)) {
+      cur.ministryHe = r.ministry;
+      cur.isDeputyMinister = r.positionId === POSITION_DEPUTY_MINISTER;
+    }
     if (
       seatPositions.has(r.positionId) &&
       r.finishDate &&
@@ -241,6 +250,7 @@ export function getCurrentMembers(filters?: {
       isSitting: s?.isSitting ?? false,
       leftDate: s?.leftDate ?? null,
       ministryHe: s?.ministryHe ?? null,
+      isDeputyMinister: s?.isDeputyMinister ?? false,
     };
   });
 
@@ -622,6 +632,7 @@ export type AttendanceRow = MkStats & {
   isSitting: boolean;
   leftDate: string | null;
   ministryHe: string | null;
+  isDeputyMinister: boolean;
 };
 
 // Full attendance ranking for all currently-serving MKs, ordered by participation
@@ -655,6 +666,7 @@ export function getAttendanceTable(): AttendanceRow[] {
     isSitting: seat.get(r.person.id)?.isSitting ?? false,
     leftDate: seat.get(r.person.id)?.leftDate ?? null,
     ministryHe: seat.get(r.person.id)?.ministryHe ?? null,
+    isDeputyMinister: seat.get(r.person.id)?.isDeputyMinister ?? false,
   }));
 }
 
@@ -2140,4 +2152,73 @@ export function searchAll(query: string, searchHe: string, locale: string): Sear
   );
 
   return { members, parties, votes, laws, bills, committees, committeeDocs, lobbyists, hasMore };
+}
+
+// ---------- the hall's seat facts ----------
+
+// What the home hemicycle shows when a seat is hovered: the member's vote
+// participation this Knesset and their current leadership or government
+// roles. One query each, keyed by person, so the page stays two queries
+// regardless of how many seats there are.
+export type SeatFacts = {
+  participationPct: number | null;
+  roles: { positionId: number; positionDescHe: string | null; govMinistryNameHe: string | null; committeeNameHe: string | null }[];
+};
+
+
+export function getSeatFacts(): Map<number, SeatFacts> {
+  const db = getDb();
+  const out = new Map<number, SeatFacts>();
+  const stats = db
+    .select({ personId: schema.mkVoteStats.personId, pct: schema.mkVoteStats.participationPct })
+    .from(schema.mkVoteStats)
+    .where(eq(schema.mkVoteStats.knessetNum, CURRENT_KNESSET))
+    .all();
+  for (const s of stats) out.set(s.personId, { participationPct: s.pct, roles: [] });
+  const roles = db
+    .select({
+      personId: schema.personPositions.personId,
+      positionId: schema.personPositions.positionId,
+      dutyHe: schema.personPositions.positionDescHe,
+      ministryHe: schema.personPositions.govMinistryNameHe,
+      committeeHe: schema.personPositions.committeeNameHe,
+    })
+    .from(schema.personPositions)
+    .where(
+      and(
+        eq(schema.personPositions.knessetNum, CURRENT_KNESSET),
+        eq(schema.personPositions.isCurrent, true),
+        inArray(schema.personPositions.positionId, OFFICE_POSITION_IDS),
+      ),
+    )
+    .all();
+  // Most prominent first, in the order of OFFICE_POSITION_IDS.
+  roles.sort((a, b) => OFFICE_POSITION_IDS.indexOf(a.positionId) - OFFICE_POSITION_IDS.indexOf(b.positionId));
+  for (const r of roles) {
+    const entry = out.get(r.personId) ?? { participationPct: null, roles: [] };
+    if (r.dutyHe) entry.roles.push({ positionId: r.positionId, positionDescHe: r.dutyHe, govMinistryNameHe: r.ministryHe ?? null, committeeNameHe: r.committeeHe ?? null });
+    out.set(r.personId, entry);
+  }
+  return out;
+}
+
+// ---------- one vote, tallied by faction ----------
+
+export type FactionTally = { for: number; against: number; abstain: number; absent: number; factionNameHe: string | null };
+
+// How each faction voted in one roll-call — the faction each member sat in at
+// the moment of the vote (getVoteResults resolves that), so a faction that has
+// since been renamed or reshaped is reported under its name at the time.
+export function getFactionTallies(voteId: number): Map<number, FactionTally> {
+  const out = new Map<number, FactionTally>();
+  for (const r of getVoteResults(voteId)) {
+    if (r.factionId == null) continue;
+    const t = out.get(r.factionId) ?? { for: 0, against: 0, abstain: 0, absent: 0, factionNameHe: r.factionNameHe ?? null };
+    if (r.resultCode === VOTE_FOR) t.for++;
+    else if (r.resultCode === VOTE_AGAINST) t.against++;
+    else if (r.resultCode === VOTE_ABSTAIN) t.abstain++;
+    else t.absent++;
+    out.set(r.factionId, t);
+  }
+  return out;
 }

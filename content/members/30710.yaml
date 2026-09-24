@@ -1,80 +1,118 @@
-# PersonID 30710. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30710 (Ariel Kallner). Researched from reputable public sources;
+# every cited URL re-verified on 2026-09-18. Neutral language.
 personId: 30710
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: שירת כחובש קרבי בחטיבת גולני
-      en: Served as a combat medic in the Golani Brigade
+      he: "שירת כחובש קרבי בחטיבת גולני"
+      en: "Served as a combat medic in the Golani Brigade"
     description:
-      he: אריאל קלנר שירת בצה"ל כחובש קרבי בחטיבת גולני במהלך שירותו הצבאי.
-      en: Ariel Kallner served in the Israel Defense Forces as a combat medic in the
-        Golani Brigade during his national service.
+      he: "אריאל קלנר שירת בצה\"ל כחובש קרבי בחטיבת גולני במהלך שירותו הצבאי."
+      en: "Ariel Kallner served in the Israel Defense Forces as a combat medic in the Golani Brigade during his national service."
     sources:
-      - url: https://en.wikipedia.org/wiki/Ariel_Kallner
-        title: Ariel Kallner
-        publisher: Wikipedia
-      - url: https://he.wikipedia.org/wiki/%D7%90%D7%A8%D7%99%D7%90%D7%9C_%D7%A7%D7%9C%D7%A0%D7%A8
-        title: אריאל קלנר
-        publisher: Wikipedia (Hebrew)
+      - url: "https://en.wikipedia.org/wiki/Ariel_Kallner"
+        title: "Ariel Kallner"
+        publisher: "Wikipedia"
+      - url: "https://he.wikipedia.org/wiki/%D7%90%D7%A8%D7%99%D7%90%D7%9C_%D7%A7%D7%9C%D7%A0%D7%A8"
+        title: "אריאל קלנר"
+        publisher: "Wikipedia (Hebrew)"
   - kind: positive
     category: achievement
     title:
       he: "השכלה: הטכניון ותואר שני במנהל עסקים"
       en: "Education: Technion graduate with an MBA"
     description:
-      he: קלנר למד בטכניון - מכון טכנולוגי לישראל, והשלים תואר שני במנהל עסקים (MBA)
-        באוניברסיטת חיפה.
-      en: Kallner studied at the Technion - Israel Institute of Technology and earned
-        an MBA from the University of Haifa.
+      he: "קלנר למד בטכניון - מכון טכנולוגי לישראל, והשלים תואר שני במנהל עסקים (MBA) באוניברסיטת חיפה."
+      en: "Kallner studied at the Technion - Israel Institute of Technology and earned an MBA from the University of Haifa."
     sources:
-      - url: https://en.wikipedia.org/wiki/Ariel_Kallner
-        title: Ariel Kallner
-        publisher: Wikipedia
-      - url: https://he.wikipedia.org/wiki/%D7%90%D7%A8%D7%99%D7%90%D7%9C_%D7%A7%D7%9C%D7%A0%D7%A8
-        title: אריאל קלנר
-        publisher: Wikipedia (Hebrew)
+      - url: "https://en.wikipedia.org/wiki/Ariel_Kallner"
+        title: "Ariel Kallner"
+        publisher: "Wikipedia"
+      - url: "https://he.wikipedia.org/wiki/%D7%90%D7%A8%D7%99%D7%90%D7%9C_%D7%A7%D7%9C%D7%A0%D7%A8"
+        title: "אריאל קלנר"
+        publisher: "Wikipedia (Hebrew)"
   - kind: positive
     category: achievement
     title:
-      he: ייסד את ארגון "חזון לאומי" וכיהן כיו"ר תנועת הנוער של הליכוד
-      en: Founded Hazon Leumi and chaired the Likud Youth Movement
+      he: "ייסד את ארגון 'חזון לאומי' וכיהן כיו\"ר תנועת הנוער של הליכוד"
+      en: "Founded Hazon Leumi and chaired the Likud Youth Movement"
     description:
-      he: בשנת 2004 נבחר קלנר ליו"ר תנועת הנוער של הליכוד, ובשנת 2013 ייסד את "חזון
-        לאומי - המרכז להנהגה ציונית", ארגון שמטרתו עיצוב הנהגת הדור הבא ברוח
-        יהודית-ציונית-לאומית.
-      en: Kallner was elected chair of the Likud Youth Movement in 2004 and in 2013
-        founded Hazon Leumi - The Center for Zionist Leadership, an organization
-        aimed at shaping the next generation of leadership in a
-        Jewish-Zionist-national spirit.
-    date: "2013"
+      he: "בשנת 2004 נבחר קלנר ליו\"ר תנועת הנוער של הליכוד, ובשנת 2013 ייסד את 'חזון לאומי - המרכז להנהגה ציונית', ארגון שמטרתו עיצוב הנהגת הדור הבא ברוח יהודית-ציונית-לאומית."
+      en: "Kallner was elected chair of the Likud Youth Movement in 2004 and in 2013 founded Hazon Leumi - The Center for Zionist Leadership, an organization aimed at shaping the next generation of leadership in a Jewish-Zionist-national spirit."
+    date: "2013-01-01"
     sources:
-      - url: https://en.wikipedia.org/wiki/Ariel_Kallner
-        title: Ariel Kallner
-        publisher: Wikipedia
-      - url: https://en.wikipedia.org/wiki/Hazon_Leumi
-        title: Hazon Leumi
-        publisher: Wikipedia
+      - url: "https://en.wikipedia.org/wiki/Ariel_Kallner"
+        title: "Ariel Kallner"
+        publisher: "Wikipedia"
+      - url: "https://en.wikipedia.org/wiki/Hazon_Leumi"
+        title: "Hazon Leumi"
+        publisher: "Wikipedia"
   - kind: positive
     category: achievement
     title:
-      he: חבר הכנסת מטעם הליכוד
-      en: Member of the Knesset for Likud
+      he: "חבר הכנסת מטעם הליכוד"
+      en: "Member of the Knesset for Likud"
     description:
-      he: קלנר מכהן כחבר הכנסת מטעם מפלגת הליכוד. הוא כיהן לראשונה בכנסת ה-21
-        (אפריל-אוקטובר 2019), שב לכנסת ה-23 (יולי 2020 - אפריל 2021), ומכהן
-        ברציפות מאז ינואר 2023 בכנסת ה-25.
-      en: Kallner serves as a member of the Knesset for the Likud party. He first
-        served in the 21st Knesset (April-October 2019), returned in the 23rd
-        Knesset (July 2020 - April 2021), and has served continuously since
-        January 2023 in the 25th Knesset.
-    date: 2023-01-06
+      he: "קלנר מכהן כחבר הכנסת מטעם מפלגת הליכוד. הוא כיהן לראשונה בכנסת ה-21 (אפריל-אוקטובר 2019), שב לכנסת ה-23 (יולי 2020 - אפריל 2021), ומכהן ברציפות מאז 6 בינואר 2023 בכנסת ה-25."
+      en: "Kallner serves as a member of the Knesset for the Likud party. He first served in the 21st Knesset (April-October 2019), returned in the 23rd Knesset (July 2020 - April 2021), and has served continuously since 6 January 2023 in the 25th Knesset."
+    date: "2023-01-06"
     sources:
-      - url: https://www.wikidata.org/wiki/Q63197463
-        title: Ariel Kallner (Q63197463)
-        publisher: Wikidata
-      - url: https://en.wikipedia.org/wiki/Ariel_Kallner
-        title: Ariel Kallner
-        publisher: Wikipedia
+      - url: "https://en.wikipedia.org/wiki/Ariel_Kallner"
+        title: "Ariel Kallner"
+        publisher: "Wikipedia"
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30710"
+        title: "Ariel Kallner - Knesset member page"
+        publisher: "Knesset"
+  - kind: neutral
+    category: role
+    date: "2025-01-21"
+    title:
+      he: "יושב ראש הוועדה המיוחדת למאבק בשימוש בסמים ובאלכוהול"
+      en: "Chair of the Special Committee on Drug and Alcohol Abuse"
+    description:
+      he: "ב-21 בינואר 2025 נבחר קלנר פה אחד ליושב ראש הוועדה המיוחדת למאבק בשימוש בסמים ובאלכוהול של הכנסת, במקומו של ח\"כ בועז ביסמוט, והוא מכהן בתפקיד עד תום כהונת הכנסת ה-25."
+      en: "On 21 January 2025 Kallner was unanimously elected chair of the Knesset's Special Committee on Drug and Alcohol Abuse, replacing MK Boaz Bismuth, and holds the post through the end of the 25th Knesset."
+    sources:
+      - url: "https://www.kikar.co.il/political-news/knesset-drug-committee-chairman"
+        title: "ועדת הסמים בכנסת: ח\"כ אריאל קלנר מונה ליו\"ר במקום ביסמוט"
+        publisher: "Kikar HaShabbat"
+      - url: "https://he.wikipedia.org/wiki/%D7%90%D7%A8%D7%99%D7%90%D7%9C_%D7%A7%D7%9C%D7%A0%D7%A8"
+        title: "אריאל קלנר"
+        publisher: "Wikipedia (Hebrew)"
+  - kind: neutral
+    category: news
+    date: "2026-07-06"
+    title:
+      he: "הצעת החוק שלו להקמת ועדת חקירה לאירועי 7 באוקטובר אושרה בקריאה ראשונה"
+      en: "His bill to establish an October 7 inquiry commission passed its first reading"
+    description:
+      he: "קלנר יזם הצעת חוק להקמת ועדת חקירה לאירועי 7 באוקטובר שחבריה ימונו על ידי הקואליציה והאופוזיציה (שלושה מכל צד) במקום ועדת חקירה ממלכתית. ועדת החוקה אישרה את ההצעה לקריאה ראשונה ב-2 ביוני 2026, והמליאה אישרה אותה בקריאה ראשונה ב-6 ביולי 2026 ברוב של 59 ללא מתנגדים, לאחר שהאופוזיציה החרימה את ההצבעה. האופוזיציה ו'מועצת אוקטובר' של משפחות שכולות תיארו את ההצעה כוועדה פוליטית שנועדה לטייח; קלנר טען שהיא תביא לחקירה מלאה ובלתי תלויה."
+      en: "Kallner initiated a bill to establish an inquiry commission into the events of 7 October whose members would be appointed by the coalition and the opposition (three from each side) instead of a state commission of inquiry. The Constitution Committee approved it for first reading on 2 June 2026, and the plenum passed the first reading on 6 July 2026 by 59 votes with none opposed, after the opposition boycotted the vote. The opposition and the 'October Council' of bereaved families described the bill as a political commission meant to whitewash; Kallner argued it would bring about a full and independent investigation."
+    sources:
+      - url: "https://www.mako.co.il/news-politics/2026_q3/Article-209e38afd773f91026.htm"
+        title: "חוק ועדת החקירה הפוליטית אושר בקריאה ראשונה: האופוזיציה החרימה; נתניהו נעדר"
+        publisher: "N12"
+      - url: "https://www.haaretz.co.il/news/politi/2026-06-02/ty-article/0000019e-8997-da5c-a9bf-dfbf29e60000"
+        title: "ועדת החוקה אישרה לקריאה ראשונה את הצעת החוק להקמת ועדת חקירה פוליטית ל-7.10"
+        publisher: "Haaretz"
+  - kind: neutral
+    category: news
+    date: "2026-08-17"
+    title:
+      he: "לא הגיע למקום ריאלי בפריימריז הליכוד"
+      en: "Did not reach a realistic spot in the Likud primaries"
+    description:
+      he: "לקראת הפריימריז אמר קלנר כי כל שריון ברשימת הליכוד מונע ממנו להתקדם. בפריימריז שנערכו ב-17 באוגוסט 2026 לא הגיע קלנר, לפי הדיווחים, למקום ריאלי ברשימת הליכוד לכנסת ה-26."
+      en: "Ahead of the primaries Kallner said that every reserved spot on the Likud list kept him from advancing. In the primaries held on 17 August 2026 Kallner, according to reports, did not reach a realistic spot on the Likud list for the 26th Knesset."
+    sources:
+      - url: "https://www.maariv.co.il/news/politics/article-1354951"
+        title: "ח\"כ אריאל קלנר על השריונים בליכוד: כל שריון מונע ממני להתקדם"
+        publisher: "Maariv"
+      - url: "https://www.jpost.com/israel-election-2026/article-905846"
+        title: "Likud primaries: Benjamin Netanyahu hails new list as Eli Cohen wins top slot"
+        publisher: "The Jerusalem Post"
+      - url: "https://www.ynet.co.il/news/article/sy6ibjzdze"
+        title: "התוצאות הסופיות בפריימריז הליכוד - והרשימה המסתמנת"
+        publisher: "Ynet"

@@ -6,27 +6,152 @@
    the token remap + utility overrides in the "Dark mode" block below. */
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* Semantic tokens. Every token below is defined under all three roots —
+   :root, html.dark, html.a11y-contrast — and tests/qa/design-tokens.test.ts
+   fails the build if one is missing or a text/surface pair drops under AA. */
 :root {
-  --background: #f8f7f4;
+  /* The identity is the flag's: its blue (#0038b8) on white, standing on the
+     warm cream of Jerusalem stone — the Knesset building's cladding. National
+     symbols, not any faction's, are how the site says "for everyone". The
+     chrome IS the flag's blue field; nothing else on a page competes with it. */
+  --background: #f4efe4;
   --foreground: #1a1a1a;
-  --accent: #0b3d91;
-  --accent-deep: #06245a;
-  --accent-sky: #3f7fd4;
-  --coalition: #0b3d91;
-  --opposition: #b03a2e;
-  /* Muted text that still meets WCAG AA (≥4.5:1) on --background. */
+  --chrome: #0038b8;
+  --on-chrome: #ffffff;
+  --chrome-hover: rgba(255, 255, 255, 0.12);
+
+  /* Surfaces and lines. Cards are pure white on the warm canvas on purpose:
+     that, plus the --line hairline, is what separates a card from the page. */
+  --surface: #ffffff;
+  --surface-sunken: #ece5d6;
+  --surface-hover: #f7f3ea;
+  --line: #e2dbcb;
+  --line-strong: #c9bfa8;
+
+  /* Muted text; ≥6:1 on every surface above. */
   --muted: #595959;
+
+  /* Brand blue, split by role: --accent is a FILL (buttons, active states),
+     --accent-ink is TEXT. Identical here; they diverge in dark mode, where a
+     fill dark enough to carry white text is too dark to read as text. */
+  --accent: #0038b8;
+  --accent-ink: #0038b8;
+  --accent-soft: #e6ecf8;
+  --accent-line: #b3c2e8;
+  --on-accent: #ffffff;
+  --accent-deep: #002a8c; /* legacy alias — retired in Stage D */
+  --accent-sky: #3f7fd4; /* legacy alias — retired in Stage D */
+
+  /* Coalition and opposition are both Israel: the same blue, split by the
+     aisle, never blue-versus-red. Two tokens remain so the split can be
+     expressed by position and form; their values are identical by design. */
+  --coalition: #0038b8;
+  --coalition-ink: #0038b8;
+  --opposition: #0038b8;
+  --opposition-ink: #0038b8;
+  /* Text on a coalition/opposition-filled badge: white on the deep blue in
+     light mode; the lighter dark-mode blue needs ink (white measured 3.3:1). */
+  --on-coalition: #ffffff;
+  --on-opposition: #ffffff;
+
+  /* Status ramp: five tones × {base, soft, ink, line}. Every ink clears
+     4.5:1 on its own soft and on --surface. */
+  --pass: #1a7f4b;
+  --pass-soft: #e3f3ea;
+  --pass-ink: #166534;
+  --pass-line: #a7d9bb;
+  --fail: #b3261e;
+  --fail-soft: #fbe9e7;
+  --fail-ink: #991b1b;
+  --fail-line: #f0b4ae;
+  --warn: #b45309;
+  --warn-soft: #fdf3dc;
+  --warn-ink: #7c3a00;
+  --warn-line: #f5cf7a;
+  --info: #0038b8;
+  --info-soft: #e6ecf8;
+  --info-ink: #0038b8;
+  --info-line: #b3c2e8;
+  --neutral: #595959;
+  --neutral-soft: #eeece7;
+  --neutral-ink: #404040;
+  --neutral-line: #d5d2ca;
+
+  /* Focus: an ink ring OUTSIDE an amber halo. Amber alone is 1.65:1 against
+     white and fails 1.4.11; the outer ring is what guarantees ≥3:1 against
+     whatever the focused element sits on. */
+  --focus: #ffbf00;
+  --focus-ring: #1a1a1a;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-chrome: var(--chrome);
+  --color-on-chrome: var(--on-chrome);
+  --color-chrome-hover: var(--chrome-hover);
+  --color-surface: var(--surface);
+  --color-surface-sunken: var(--surface-sunken);
+  --color-surface-hover: var(--surface-hover);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-muted: var(--muted);
   --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-line: var(--accent-line);
+  --color-on-accent: var(--on-accent);
   --color-accent-deep: var(--accent-deep);
   --color-accent-sky: var(--accent-sky);
   --color-coalition: var(--coalition);
+  --color-coalition-ink: var(--coalition-ink);
   --color-opposition: var(--opposition);
-  --color-muted: var(--muted);
+  --color-opposition-ink: var(--opposition-ink);
+  --color-on-coalition: var(--on-coalition);
+  --color-on-opposition: var(--on-opposition);
+  --color-pass: var(--pass);
+  --color-pass-soft: var(--pass-soft);
+  --color-pass-ink: var(--pass-ink);
+  --color-pass-line: var(--pass-line);
+  --color-fail: var(--fail);
+  --color-fail-soft: var(--fail-soft);
+  --color-fail-ink: var(--fail-ink);
+  --color-fail-line: var(--fail-line);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --color-warn-ink: var(--warn-ink);
+  --color-warn-line: var(--warn-line);
+  --color-info: var(--info);
+  --color-info-soft: var(--info-soft);
+  --color-info-ink: var(--info-ink);
+  --color-info-line: var(--info-line);
+  --color-neutral: var(--neutral);
+  --color-neutral-soft: var(--neutral-soft);
+  --color-neutral-ink: var(--neutral-ink);
+  --color-neutral-line: var(--neutral-line);
+  --color-focus: var(--focus);
+  --color-focus-ring: var(--focus-ring);
+
+  /* Display face: Frank Ruhl Libre, the face of the state's own documents
+     (the Declaration of Independence is set in Frank-Rühl). Hebrew + Latin;
+     ar/ru headings fall back to their Noto faces via the stack. */
+  /* Every var() carries a fallback: --font-noto-arabic/-sans are attached per
+     locale, and one undefined var() invalidates the whole declaration. */
+  --font-display: var(--font-frank, "Frank Ruhl Libre"), var(--font-noto-arabic, "Noto Sans Arabic"), var(--font-noto-sans, "Noto Sans"), serif;
+
+  /* One radius scale: cards, controls, chips. Nesting a chip inside a card
+     stays geometrically sane because the inner radius is always smaller. */
+  --radius-card: 0.75rem;
+  --radius-control: 0.5rem;
+  --radius-chip: 0.375rem;
+
+  /* Elevation is for things that float — menus, panels — never for cards;
+     cards are separated by --line. Tinted to ink, hairline built in. */
+  --shadow-float: 0 8px 24px -8px rgba(26, 26, 26, 0.18), 0 0 0 1px var(--line);
+
+  /* The 11px caption size used on chips, declared instead of text-[11px]. */
+  --text-micro: 0.6875rem;
+  --text-micro--line-height: 1rem;
 }
 
 body {
@@ -36,15 +161,49 @@ body {
     var(--font-heebo), "Noto Sans Hebrew", "Noto Sans Arabic", "Noto Sans",
     -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
+/* The bare family names stay as a fallback for locally-installed copies; the
+   variables are the webfonts the layout attaches per-locale. */
 :lang(ar) {
-  font-family: "Noto Sans Arabic", var(--font-heebo), sans-serif;
+  font-family: var(--font-noto-arabic), "Noto Sans Arabic", var(--font-heebo), sans-serif;
 }
 :lang(ru) {
-  font-family: "Noto Sans", var(--font-heebo), sans-serif;
+  font-family: var(--font-noto-sans), "Noto Sans", var(--font-heebo), sans-serif;
 }
+/* Headings balance across lines instead of orphaning a word; prose avoids a
+   lone last word. Matters most in ru and ar, whose strings run longest. */
+h1, h2, h3, h4 {
+  text-wrap: balance;
+}
+p {
+  text-wrap: pretty;
+}
+
+/* Removes the ~300ms double-tap-zoom delay and the default blue tap flash on
+   touch devices, replacing it with a tint drawn from the accent. */
+a,
+button,
+summary,
+[role="button"] {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: color-mix(in srgb, var(--accent) 18%, transparent);
+}
+
 ::selection {
   background: var(--accent);
-  color: #fff;
+  color: var(--on-accent);
+}
+html {
+  caret-color: var(--accent);
+  accent-color: var(--accent);
+}
+a {
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+/* The flag's two stripes, as the rule beneath the chrome. */
+.stripe-rule {
+  border-block-end: 3px solid var(--on-chrome);
+  box-shadow: 0 3px 0 var(--chrome);
 }
 
 /* ---------- Dark mode ---------- */
@@ -55,14 +214,66 @@ body {
 html.dark {
   --background: #14181e;
   --foreground: #e7e9ec;
-  --muted: #9aa2ad; /* ~6:1 on --background — AA */
-  /* --accent stays a surface blue that keeps white text readable (header,
-     buttons); links use the lighter --accent-sky via the override below. */
-  --accent: #2a63bd;
+  /* The flag's blue, deep enough to carry white text at 12.9:1 and to read
+     as a bar against the near-black canvas. */
+  --chrome: #0a2a7a;
+  --on-chrome: #ffffff;
+  --chrome-hover: rgba(255, 255, 255, 0.12);
+
+  /* --surface equals the value the retrofit gave .bg-white, so migrating a
+     card to bg-surface is visually a no-op. --surface-sunken is LIGHTER than
+     the card here — depth cues invert on a dark canvas — and matches how
+     bg-black/5 rendered. */
+  --surface: #1b212b;
+  --surface-sunken: #232a35;
+  --surface-hover: #222a36;
+  --line: #2f3742;
+  --line-strong: #454f5e;
+
+  --muted: #9aa2ad; /* ≥5.6:1 on every surface above */
+
+  /* Fill and ink diverge here. #3a6fd0 keeps white text at 4.8:1 and clears
+     3:1 against the card as a component; the old #2a63bd measured 2.79:1.
+     Text needs the far lighter --accent-ink. */
+  --accent: #3a6fd0;
+  --accent-ink: #7db1f7;
+  --accent-soft: #1f2b3f;
+  --accent-line: #2f4a78;
+  --on-accent: #ffffff;
   --accent-deep: #1e4a92;
   --accent-sky: #6aa8f5;
-  --coalition: #4a86d8;
-  --opposition: #e28a7a;
+
+  /* Lightened from #4a86d8, which measured 4.38:1 as text on the card. */
+  --coalition: #578fdb;
+  --coalition-ink: #578fdb;
+  --opposition: #578fdb;
+  --opposition-ink: #578fdb;
+  --on-coalition: #0f1620;
+  --on-opposition: #0f1620;
+
+  --pass: #3ddc84;
+  --pass-soft: #12291d;
+  --pass-ink: #5edb96;
+  --pass-line: #245c3a;
+  --fail: #f0625a;
+  --fail-soft: #301a18;
+  --fail-ink: #f2998f;
+  --fail-line: #6b2f2a;
+  --warn: #f5b731;
+  --warn-soft: #2e2410;
+  --warn-ink: #fcd34d;
+  --warn-line: #6b5216;
+  --info: #3a6fd0;
+  --info-soft: #1f2b3f;
+  --info-ink: #7db1f7;
+  --info-line: #2f4a78;
+  --neutral: #9aa2ad;
+  --neutral-soft: #232a34;
+  --neutral-ink: #cbd0d8;
+  --neutral-line: #3b4451;
+
+  --focus: #ffbf00;
+  --focus-ring: #ffffff;
   color-scheme: dark;
 }
 
@@ -122,26 +333,49 @@ html.dark .border-green-200 { border-color: rgba(34, 197, 94, 0.32); }
 html.dark .border-red-200 { border-color: rgba(239, 68, 68, 0.32); }
 html.dark .border-amber-200 { border-color: rgba(245, 158, 11, 0.32); }
 
-/* Flag-filled wordmark logo: fills the Hebrew letters with the Israeli-flag
-   texture, with a thin white stroke to stay crisp on the blue header. */
-.logo-flag {
-  background-image: url("/assets/flag-fill.png");
-  background-size: 100% 100%;
-  background-position: center;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  -webkit-text-stroke: 0.6px rgba(255, 255, 255, 0.9);
-  filter: drop-shadow(0 1px 1.5px rgba(0, 0, 0, 0.35));
+/* The wordmark: the flag inside the letters. Two inline SVG layers — the
+   stripes repeat along the word, the Star of David sits once near the start —
+   are clipped to the glyphs, so the geometry is fixed in every locale (the old
+   raster stretched to each string's width). The stripes are the bar's own
+   blue, so in light mode they read as the flag seen through letter-shaped
+   windows. Fallback first: browsers without background-clip:text, and the
+   a11y overrides, get plain white type. */
+.wordmark {
+  color: var(--on-chrome);
+}
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .wordmark {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 28 28%22%3E%3Crect width=%2228%22 height=%2228%22 fill=%22%23fff%22/%3E%3Crect y=%225.5%22 width=%2228%22 height=%223%22 fill=%22%230038b8%22/%3E%3Crect y=%2219.5%22 width=%2228%22 height=%223%22 fill=%22%230038b8%22/%3E%3Cg fill=%22none%22 stroke=%22%230038b8%22 stroke-width=%221.9%22 stroke-linejoin=%22round%22%3E%3Cpath d=%22M14 8.2 19.6 18H8.4Z%22/%3E%3Cpath d=%22M14 19.8 8.4 10H19.6Z%22/%3E%3C/g%3E%3C/svg%3E"), url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 4 28%22%3E%3Crect width=%224%22 height=%2228%22 fill=%22%23fff%22/%3E%3Crect y=%225.5%22 width=%224%22 height=%223%22 fill=%22%230038b8%22/%3E%3Crect y=%2219.5%22 width=%224%22 height=%223%22 fill=%22%230038b8%22/%3E%3C/svg%3E");
+    background-repeat: no-repeat, repeat-x;
+    background-size: 1.05em 1.05em, 4px 1.05em;
+    background-position: 0.62em 0.02em, 0 0.02em;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    -webkit-text-stroke: 0.55px var(--on-chrome);
+    paint-order: stroke fill;
+  }
+  [dir="rtl"] .wordmark {
+    background-position: right 0.62em top 0.02em, 0 0.02em;
+  }
+  /* High contrast and the readable-font mode want plain type. */
+  html.a11y-contrast .wordmark,
+  html.a11y-readable .wordmark {
+    background-image: none;
+    -webkit-text-fill-color: currentColor;
+    color: var(--on-chrome);
+    -webkit-text-stroke: 0;
+  }
 }
 
 /* ---------- Accessibility (Israeli Standard 5568 / WCAG 2.0 AA) ---------- */
 
 /* Visible keyboard focus everywhere. */
 :focus-visible {
-  outline: 3px solid #ffbf00;
-  outline-offset: 2px;
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px var(--focus);
   border-radius: 2px;
 }
 
@@ -168,7 +402,51 @@ html.dark .border-amber-200 { border-color: rgba(245, 158, 11, 0.32); }
 html.a11y-contrast {
   --background: #000000;
   --foreground: #ffffff;
+  --chrome: #000000;
+  --on-chrome: #ffffff;
+  --chrome-hover: rgba(255, 255, 255, 0.2);
+  --surface: #000000;
+  --surface-sunken: #000000;
+  --surface-hover: #1a1a1a;
+  --line: #ffffff;
+  --line-strong: #ffffff;
+  --muted: #ffffff;
   --accent: #ffff00;
+  --accent-ink: #ffff00;
+  --accent-soft: #000000;
+  --accent-line: #ffff00;
+  --on-accent: #000000;
+  --accent-deep: #ffff00;
+  --accent-sky: #ffff00;
+  /* One blue for both blocs here too; the aisle carries the split. */
+  --coalition: #8ab4ff;
+  --coalition-ink: #8ab4ff;
+  --opposition: #8ab4ff;
+  --opposition-ink: #8ab4ff;
+  --on-coalition: #000000;
+  --on-opposition: #000000;
+  --pass: #6fe3a3;
+  --pass-soft: #000000;
+  --pass-ink: #6fe3a3;
+  --pass-line: #6fe3a3;
+  --fail: #f6b3ab;
+  --fail-soft: #000000;
+  --fail-ink: #f6b3ab;
+  --fail-line: #f6b3ab;
+  --warn: #fde047;
+  --warn-soft: #000000;
+  --warn-ink: #fde047;
+  --warn-line: #fde047;
+  --info: #ffff00;
+  --info-soft: #000000;
+  --info-ink: #ffff00;
+  --info-line: #ffff00;
+  --neutral: #ffffff;
+  --neutral-soft: #000000;
+  --neutral-ink: #ffffff;
+  --neutral-line: #ffffff;
+  --focus: #ffff00;
+  --focus-ring: #ffffff;
 }
 html.a11y-contrast body { background: #000 !important; color: #fff !important; }
 html.a11y-contrast .bg-white,
@@ -233,7 +511,7 @@ html.a11y-headings :is(h1, h2, h3) {
 html.a11y-keyboard :is(a, button, input, select, textarea, [tabindex]):focus {
   outline: 3px solid var(--accent) !important;
   outline-offset: 2px !important;
-  box-shadow: 0 0 0 3px #fff, 0 0 0 6px var(--accent) !important;
+  box-shadow: 0 0 0 3px var(--background), 0 0 0 6px var(--accent) !important;
 }
 html.a11y-keyboard :is(a, button, input, select, textarea, [tabindex]) {
   scroll-margin: 6rem;

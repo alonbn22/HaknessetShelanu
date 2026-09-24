@@ -2,6 +2,7 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 30765
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -11,12 +12,12 @@ claims:
     description:
       he: אוריאל בוסו, חבר הכנסת מטעם ש"ס, מונה לשר הבריאות ב-12 באוקטובר 2023 במסגרת
         שינוי בהרכב הממשלה ה-37. הוא כיהן בתפקיד עד יולי 2025, אז התפטר יחד עם
-        שאר שרי ש"ס.
+        שאר שרי ש"ס; לפי נתוני הכנסת כהונתו הסתיימה ב-20 ביולי 2025.
       en: Uriel Buso, a Knesset member for Shas, was appointed Minister of Health on
         12 October 2023 as part of a reshuffle of Israel's 37th government. He
         held the post until July 2025, when he resigned alongside other Shas
-        cabinet ministers.
-    date: 2023-10-12
+        cabinet ministers; Knesset records date the end of his term to 20 July 2025.
+    date: "2023-10-12"
     sources:
       - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-767900
         title: Arye Deri appoints Shas MK as new Israeli health minister
@@ -24,17 +25,20 @@ claims:
       - url: https://en.wikipedia.org/wiki/Thirty-seventh_government_of_Israel
         title: Thirty-seventh government of Israel
         publisher: Wikipedia
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030765%20and%20KnessetNum%20eq%2025"
+        title: "Knesset OData: positions of PersonID 30765 in the 25th Knesset"
+        publisher: The Knesset
   - kind: positive
     category: achievement
     title:
-      he: יו"ר ועדת הבריאות של הכנסת
-      en: Chairman of the Knesset Health Committee
+      he: יו"ר ועדת הבריאות של הכנסת וסגן יו"ר הכנסת
+      en: Chairman of the Knesset Health Committee and Deputy Speaker of the Knesset
     description:
-      he: בטרם מינויו לשר, כיהן בוסו כיו"ר ועדת הבריאות של הכנסת. בעת מינויו לשר
-        הבריאות ציין יו"ר ש"ס אריה דרעי את ניסיונו בתפקיד זה.
-      en: Before his ministerial appointment, Buso served as chairman of the Knesset's
-        Health Committee. When announcing his appointment as Health Minister,
-        Shas leader Arye Deri cited Buso's experience in that role.
+      he: בטרם מינויו לשר, כיהן בוסו כיו"ר ועדת הבריאות של הכנסת (מ-1 בפברואר 2023) וכסגן יו"ר הכנסת (מ-28 בדצמבר 2022), שני תפקידים שהסתיימו עם מינויו לשר ב-12 באוקטובר 2023. בעת מינויו לשר
+        הבריאות ציין יו"ר ש"ס אריה דרעי את ניסיונו כיו"ר הוועדה.
+      en: Before his ministerial appointment, Buso chaired the Knesset's Health Committee (from 1 February 2023) and served as a Deputy Speaker of the Knesset (from 28 December 2022), both roles ending with his appointment as minister on 12 October 2023. When announcing his appointment as Health Minister,
+        Shas leader Arye Deri cited Buso's experience as committee chairman.
+    date: "2023-02-01"
     sources:
       - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-767900
         title: Arye Deri appoints Shas MK as new Israeli health minister
@@ -42,6 +46,9 @@ claims:
       - url: https://en.wikipedia.org/wiki/Uriel_Buso
         title: Uriel Buso
         publisher: Wikipedia
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030765%20and%20KnessetNum%20eq%2025"
+        title: "Knesset OData: positions of PersonID 30765 in the 25th Knesset"
+        publisher: The Knesset
   - kind: positive
     category: achievement
     title:
@@ -62,21 +69,20 @@ claims:
         publisher: Wikipedia
   - kind: negative
     category: investigation
-    status: acquitted
+    status: closed
     title:
-      he: חקירת שוחד מ-2011 בפתח תקווה שנסגרה בהיעדר ראיות
-      en: 2011 Petah Tikva bribery investigation closed for lack of evidence
+      he: חקירת שוחד מ-2011 בפתח תקווה שנסגרה ללא כתב אישום בהיעדר ראיות מספיקות
+      en: 2011 Petah Tikva bribery investigation closed without indictment for insufficient evidence
     description:
       he: בפברואר 2011, בעת כהונתו כסגן ראש עיריית פתח תקווה, נעצר בוסו לצד ראש העיר
         בחשד לשוחד הקשור לבחירות המוניציפליות של 2008, והמשטרה המליצה להעמידו
-        לדין. באוקטובר 2013 הודיעה פרקליטות המדינה על סגירת התיק נגדו מחמת היעדר
-        ראיות מספיקות; בוסו לא הואשם ולא הורשע.
+        לדין. ב-15 באוקטובר 2013 הודיעה פרקליטות המדינה על סגירת התיק נגדו, לאחר שנקבע כי אין די ראיות להוכחת אשמתו מעבר לספק סביר; בוסו לא הואשם ולא הורשע, ולא התקיים כל הליך משפטי נגדו.
       en: In February 2011, while serving as deputy mayor of Petah Tikva, Buso was
         arrested alongside the mayor on suspicion of bribery connected to the
-        2008 municipal elections, and police recommended prosecution. In October
+        2008 municipal elections, and police recommended prosecution. On 15 October
         2013 the State Prosecutor's Office announced the case against him was
-        closed for insufficient evidence; Buso was never indicted or convicted.
-    date: 2013-10-15
+        closed, having found insufficient evidence to prove guilt beyond reasonable doubt; Buso was never indicted or convicted, and no court proceeding took place.
+    date: "2013-10-15"
     sources:
       - url: https://www.globes.co.il/news/article.aspx?did=1000886058
         title: ראש עיריית פתח-תקווה לשעבר וסגנו לא יועמדו לדין
@@ -84,3 +90,19 @@ claims:
       - url: https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%A8%D7%99%D7%90%D7%9C_%D7%91%D7%95%D7%A1%D7%95
         title: אוריאל בוסו
         publisher: Hebrew Wikipedia
+  - kind: neutral
+    category: news
+    date: "2026-09-08"
+    title:
+      he: "שובץ במקום השמיני ברשימת ש\"ס לכנסת ה-26"
+      en: "Placed eighth on the Shas list for the 26th Knesset"
+    description:
+      he: "ברשימת ש\"ס לבחירות לכנסת ה-26, שפורסמה ב-8 בספטמבר 2026, שובץ בוסו במקום השמיני, אחרי אריה דרעי, ינון אזולאי, מיכאל מלכיאלי, יואב בן צור, חיים ביטון, דרור עמוס ומשה אבוטבול."
+      en: "On the Shas list for the election to the 26th Knesset, published on 8 September 2026, Buso was placed eighth, after Aryeh Deri, Yinon Azulai, Michael Malkieli, Yoav Ben Tzur, Haim Biton, Dror Amos and Moshe Abutbul."
+    sources:
+      - url: https://www.ynet.co.il/news/elections2026/article/hkjzuqtofe
+        title: "עם סגן אלוף במילואים במקום ריאלי: זו רשימת ש\"ס לכנסת"
+        publisher: Ynet
+      - url: https://www.haaretz.co.il/news/elections/2026-09-08/ty-article/000001a0-7fc4-da8b-afbe-7fe5c7ba0000
+        title: "רשימת ש\"ס לכנסת: מיכאל מלכיאלי קודם למקום השלישי, סגן אלוף במקום השישי"
+        publisher: Haaretz

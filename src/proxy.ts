@@ -31,6 +31,9 @@ export default function proxy(request: NextRequest) {
   const requestHeaders = new Headers(request.headers);
   requestHeaders.set("x-nonce", nonce);
   requestHeaders.set("Content-Security-Policy", csp);
+  // The locale layout builds hreflang alternates for the page being rendered;
+  // a layout cannot read its own URL, so the proxy hands over the path.
+  requestHeaders.set("x-pathname", request.nextUrl.pathname);
 
   // next-intl forwards the modified request headers into its rewrite, so the
   // render sees x-nonce + CSP; set CSP on the response too for the browser.

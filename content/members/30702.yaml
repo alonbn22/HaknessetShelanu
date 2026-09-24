@@ -1,71 +1,122 @@
-# PersonID 30702. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# Eti (Hava) Atia (PersonID 30702). Factual reporting from reputable public
+# sources, cited per claim. Neutral language. Re-verified 2026-09-18 (every
+# cited URL re-fetched; Knesset OData used as the primary record for laws).
 personId: 30702
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: חברת הכנסת מטעם הליכוד מאז 2019
-      en: Member of the Knesset for Likud since 2019
+      he: "חברת הכנסת מטעם הליכוד מאז 2019"
+      en: "Member of the Knesset for Likud since 2019"
     description:
-      he: אתי (חוה) עטייה נבחרה לכנסת מטעם מפלגת הליכוד ומכהנת כחברת כנסת מאז 2019,
-        לאורך מספר כנסות. היא שבה לכהן בכנסת ה-25 בינואר 2023 מכוח החוק הנורבגי,
-        לאחר שעידית סילמן התפטרה ממושבה בכנסת.
-      en: Eti (Hava) Atia was elected to the Knesset on the Likud list and has served
-        as a Member of the Knesset since 2019, across several Knessets. She
-        returned to the 25th Knesset in January 2023 under the Norwegian Law
-        provision, after Idit Silman resigned her Knesset seat.
-    date: 2019-04-30
+      he: "אתי (חוה) עטייה נבחרה לכנסת מטעם הליכוד באפריל 2019 וכיהנה בכנסות ה-21 עד ה-24. לפי רישומי הכנסת היא שבה לכהן בכנסת ה-25 ב-7 בינואר 2023 מכוח החוק הנורבגי, לאחר שעידית סילמן התפטרה ממושבה בכנסת."
+      en: "Eti (Hava) Atia was elected to the Knesset on the Likud list in April 2019 and served in the 21st to 24th Knessets. Knesset records show she returned to the 25th Knesset on 7 January 2023 under the Norwegian Law, after Idit Silman resigned her seat."
+    date: "2019-04-30"
     sources:
-      - url: https://en.wikipedia.org/wiki/Eti_Atiya
-        title: Eti Atiya
-        publisher: Wikipedia
-      - url: https://he.wikipedia.org/wiki/%D7%90%D7%AA%D7%99_%D7%A2%D7%98%D7%99%D7%99%D7%94
-        title: אתי עטייה
-        publisher: Wikipedia (Hebrew)
-      - url: https://m.knesset.gov.il/en/mk/pages/MKPersonalDetails.aspx?mkid=992
-        title: Knesset Member Etty Hava Atia - Likud
-        publisher: The Knesset
+      - url: "https://en.wikipedia.org/wiki/Eti_Atiya"
+        title: "Eti Atiya"
+        publisher: "Wikipedia"
+      - url: "https://he.wikipedia.org/wiki/%D7%90%D7%AA%D7%99_%D7%A2%D7%98%D7%99%D7%99%D7%94"
+        title: "אתי עטייה"
+        publisher: "Wikipedia (Hebrew)"
+      - url: "https://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_PersonToPosition?$filter=PersonID%20eq%2030702%20and%20IsCurrent%20eq%20true"
+        title: "KNS_PersonToPosition — current positions of PersonID 30702 (Knesset OData)"
+        publisher: "The Knesset (OData)"
   - kind: positive
     category: achievement
     title:
-      he: יושבת ראש הוועדה המיוחדת לעובדים זרים
-      en: Chair of the Special Committee on Foreign Workers
+      he: "יושבת ראש הוועדה המיוחדת לעובדים זרים"
+      en: "Chair of the Special Committee on Foreign Workers"
     description:
-      he: עטייה מכהנת כיושבת ראש הוועדה המיוחדת של הכנסת לעובדים זרים. בתפקידה זה היא
-        מובילה דיונים בסוגיות הנוגעות להעסקת עובדים זרים בישראל.
-      en: Atia serves as chair of the Knesset's Special Committee on Foreign Workers.
-        In this role she leads deliberations on issues relating to the
-        employment of foreign workers in Israel.
-    date: 2025-02-01
+      he: "מפברואר 2025 מכהנת עטייה כיושבת ראש הוועדה המיוחדת של הכנסת לעובדים זרים. ביוני 2026 דנה הוועדה בראשותה בעלייה במספר העובדים הזרים השוהים בישראל ללא היתר."
+      en: "Since February 2025 Atia has chaired the Knesset's Special Committee on Foreign Workers. In June 2026 the committee, under her chairmanship, held a hearing on the rise in the number of foreign workers staying in Israel without a permit."
+    date: "2025-02"
     sources:
-      - url: https://en.wikipedia.org/wiki/Eti_Atiya
-        title: Eti Atiya
-        publisher: Wikipedia
-      - url: https://www.jns.org/news/israel-news/israel-faces-surge-in-unauthorized-foreign-workers-knesset-told
-        title: Israel faces surge in unauthorized foreign workers, Knesset told
-        publisher: JNS
+      - url: "https://www.knesset.tv/knesset-members/etty-hava-atia"
+        title: "ח\"כ אתי חוה עטיה"
+        publisher: "Knesset Channel (ערוץ הכנסת)"
+      - url: "https://www.jns.org/news/israel-news/israel-faces-surge-in-unauthorized-foreign-workers-knesset-told"
+        title: "Israel faces surge in unauthorized foreign workers, Knesset told"
+        publisher: "JNS"
+      - url: "https://he.wikipedia.org/wiki/%D7%90%D7%AA%D7%99_%D7%A2%D7%98%D7%99%D7%99%D7%94"
+        title: "אתי עטייה"
+        publisher: "Wikipedia (Hebrew)"
   - kind: positive
     category: achievement
     title:
-      he: רקע מקצועי בשירות הציבורי ובתחום הרווחה
-      en: Professional background in public service and welfare
+      he: "חוקים שהתקבלו ביוזמתה: דיווח על פערי שכר מגדריים, תגמול מילואים ליוצאי קבע ומכשירי החייאה ברכבות"
+      en: "Laws passed as sponsor: gender pay-gap reporting, reserve pay for ex-career soldiers and defibrillators on trains"
     description:
-      he: טרם כניסתה לפוליטיקה צברה עטייה ניסיון בשירות הציבורי ובתחום הרווחה. היא
-        שימשה כראש לשכת מזכיר הארגון הארצי של עובדי התעשייה האווירית, וכן כראש
-        לשכת שר העבודה, הרווחה והשירותים החברתיים בשנים 2015-2018, שם עסקה
-        בסוגיות רווחה, ביטחון סוציאלי ושירותי סיעוד.
-      en: Before entering politics, Atia accumulated public-service and welfare
-        experience. She served as chief of staff to the secretary of the
-        national union of Israel Aerospace Industries workers, and as chief of
-        staff to the Minister of Labor, Social Affairs and Social Services from
-        2015 to 2018, where she handled welfare, social security and
-        nursing-care matters.
+      he: "לפי רישומי הכנסת, עטייה הייתה היוזמת הראשונה של כמה הצעות חוק שהתקבלו בקריאה שלישית: תיקון מס' 6 לחוק שכר שווה לעובדת ולעובד (אוגוסט 2020), המחייב מעסיקים גדולים לדווח מדי שנה על פערי השכר בין נשים לגברים; תיקון מס' 255 לחוק הביטוח הלאומי (5 במרץ 2025, 17 בעד ללא מתנגדים), המשווה את תגמול המילואים של משוחררי קבע לזה של עובדים שכירים; ותיקון מס' 3 לחוק הצבת מכשירי החייאה במקומות ציבוריים (31 במרץ 2025), המחייב הצבת דפיברילטור בכל רכבת."
+      en: "Knesset records list Atia as the first initiator of several bills that passed their third reading: Amendment 6 to the Equal Pay Law (August 2020), requiring large employers to report annually on pay gaps between women and men; Amendment 255 to the National Insurance Law (5 March 2025, 17 in favour with none opposed), which equalises the reserve-duty pay of discharged career soldiers with that of salaried employees; and Amendment 3 to the Defibrillators in Public Places Law (31 March 2025), requiring a defibrillator on every train."
+    date: "2025-03-05"
     sources:
-      - url: https://en.wikipedia.org/wiki/Eti_Atiya
-        title: Eti Atiya
-        publisher: Wikipedia
-      - url: https://he.wikipedia.org/wiki/%D7%90%D7%AA%D7%99_%D7%A2%D7%98%D7%99%D7%99%D7%94
-        title: אתי עטייה
-        publisher: Wikipedia (Hebrew)
+      - url: "https://www.knesset.tv/parliament/1307/81252/"
+        title: "אושר בכנסת: צדק כלכלי למילואימניקים יוצאי קבע"
+        publisher: "Knesset Channel (ערוץ הכנסת)"
+      - url: "https://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_Bill(2220329)"
+        title: "חוק הביטוח הלאומי (תיקון מס' 255), התשפ\"ה–2025 — bill record (Knesset OData)"
+        publisher: "The Knesset (OData)"
+      - url: "https://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_Bill(2221190)"
+        title: "חוק הצבת מכשירי החייאה במקומות ציבוריים (תיקון מס' 3), התשפ\"ה–2025 — bill record (Knesset OData)"
+        publisher: "The Knesset (OData)"
+      - url: "https://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_Bill(2085992)"
+        title: "חוק שכר שווה לעובדת ולעובד (תיקון מס' 6), התש\"ף-2020 — bill record (Knesset OData)"
+        publisher: "The Knesset (OData)"
+      - url: "https://he.wikipedia.org/wiki/%D7%90%D7%AA%D7%99_%D7%A2%D7%98%D7%99%D7%99%D7%94"
+        title: "אתי עטייה"
+        publisher: "Wikipedia (Hebrew)"
+  - kind: positive
+    category: achievement
+    title:
+      he: "רקע מקצועי בשירות הציבורי ובתחום הרווחה"
+      en: "Professional background in public service and welfare"
+    description:
+      he: "טרם כניסתה לפוליטיקה ניהלה עטייה את לשכת מזכיר הארגון הארצי של עובדי התעשייה האווירית (1993–2015), ובשנים 2015–2018 שימשה ראש לשכת שר העבודה, הרווחה והשירותים החברתיים, שם עסקה בסוגיות רווחה וביטוח לאומי. היא בעלת תואר במשפטים מהקריה האקדמית אונו ותארים במדעי החברה מאוניברסיטת בר-אילן."
+      en: "Before entering politics, Atia ran the office of the secretary of the national union of Israel Aerospace Industries workers (1993–2015), and from 2015 to 2018 was chief of staff to the Minister of Labor, Social Affairs and Social Services, handling welfare and national-insurance matters. She holds a law degree from Ono Academic College and social-science degrees from Bar-Ilan University."
+    sources:
+      - url: "https://www.knesset.tv/knesset-members/etty-hava-atia"
+        title: "ח\"כ אתי חוה עטיה"
+        publisher: "Knesset Channel (ערוץ הכנסת)"
+      - url: "https://he.wikipedia.org/wiki/%D7%90%D7%AA%D7%99_%D7%A2%D7%98%D7%99%D7%99%D7%94"
+        title: "אתי עטייה"
+        publisher: "Wikipedia (Hebrew)"
+      - url: "https://en.wikipedia.org/wiki/Eti_Atiya"
+        title: "Eti Atiya"
+        publisher: "Wikipedia"
+  - kind: neutral
+    category: news
+    date: "2026-08-31"
+    title:
+      he: "זכתה במשבצת האישה השלישית בפריימריז הליכוד לאחר ספירה חוזרת"
+      en: "Won the third women's slot in the Likud primary after a recount"
+    description:
+      he: "בפריימריז הליכוד לקראת בחירות 2026 התמודדה עטייה, בתמיכת השר חיים כץ, מול השרה גילה גמליאל על משבצת האישה השלישית. בתוצאות הראשוניות שפורסמו ב-17 באוגוסט 2026 דווח כי גמליאל זכתה במשבצת; לאחר ספירה חוזרת של קלפיות בבאר יעקב, שתוצאותיה פורסמו ב-31 באוגוסט 2026, דורגה עטייה במקום ריאלי וגמליאל נדחקה למקום ה-35. גמליאל טענה לאי-סדרים בספירה, הגישה תלונה במשטרה ועתרה לבית המשפט; כץ דחה את טענותיה, והליכוד מסר כי הוא פועל לפי הנחיות ועדת הבחירות של המפלגה."
+      en: "In the Likud primary ahead of the 2026 election, Atia, backed by Minister Haim Katz, competed with Minister Gila Gamliel for the third women's slot. Initial results published on 17 August 2026 reported Gamliel as the winner of the slot; after a recount of polling stations in Be'er Ya'akov, whose results were published on 31 August 2026, Atia was ranked in a realistic slot and Gamliel dropped to 35th place. Gamliel alleged irregularities in the count, filed a police complaint and petitioned the court; Katz rejected her claims, and Likud said it was following the party election committee's directives."
+    sources:
+      - url: "https://www.israelnationalnews.com/news/432470"
+        title: "Likud primary fraud claims | After recount, Gamliel drops to 35th place"
+        publisher: "Israel National News (Arutz 7)"
+      - url: "https://www.ynet.co.il/news/elections2026/article/skxcdqssvml"
+        title: "דרמה בליכוד: גילה גמליאל נדחקה למקום לא ריאלי - מנהלת קרב שקט"
+        publisher: "ynet"
+      - url: "https://www.ynet.co.il/news/article/sy6ibjzdze"
+        title: "התוצאות הסופיות בפריימריז הליכוד - והרשימה המסתמנת"
+        publisher: "ynet"
+  - kind: neutral
+    category: news
+    date: "2026-09-08"
+    title:
+      he: "מקום 20 ברשימת הליכוד לבחירות 2026"
+      en: "Slot 20 on the Likud list for the 2026 election"
+    description:
+      he: "ברשימה הסופית שהגיש הליכוד לוועדת הבחירות המרכזית ב-8 בספטמבר 2026 לקראת הבחירות לכנסת ה-26 (27 באוקטובר 2026) מופיעה עטייה במקום ה-20."
+      en: "On the final list Likud filed with the Central Elections Committee on 8 September 2026 for the 26th Knesset election (27 October 2026), Atia appears in 20th place."
+    sources:
+      - url: "https://www.mako.co.il/news-politics/2026_q3/Article-2ddf4a5b99180a1027.htm"
+        title: "זו הרשימה הסופית של הליכוד לבחירות 2026"
+        publisher: "N12"
+      - url: "https://www.jns.org/news/israel-news/likud-files-26th-knesset-election-slate"
+        title: "Likud files 26th Knesset election slate"
+        publisher: "JNS"

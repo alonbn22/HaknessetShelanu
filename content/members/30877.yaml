@@ -1,60 +1,73 @@
-# PersonID 30877. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30877 (Moshe Passal). Researched from reputable public sources;
+# every cited URL re-verified on 2026-09-18. Neutral language.
 personId: 30877
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: חבר הכנסת ה-25 מטעם הליכוד
-      en: Member of the 25th Knesset for Likud
+      he: "חבר הכנסת ה-25 מטעם הליכוד"
+      en: "Member of the 25th Knesset for Likud"
     description:
-      he: משה (מושיקו) פסל נכנס לכנסת ב-12 במרץ 2023 כחבר כנסת מטעם הליכוד, לאחר שדורג
-        במקום ה-40 ברשימת המפלגה, במקומה של השרה גלית דיסטל אטבריאן שהתפטרה
-        מהכנסת מכוח 'החוק הנורווגי'.
-      en: Moshe (Moshiko) Passal entered the Knesset on 12 March 2023 as a Likud
-        member, after placing 40th on the party list, replacing Minister Galit
-        Distel-Atbaryan, who resigned from the Knesset under the Norwegian Law.
-    date: 2023-03-12
+      he: "משה (מושיקו) פסל נכנס לכנסת ב-12 במרץ 2023 כחבר כנסת מטעם הליכוד, לאחר שדורג במקום ה-40 ברשימת המפלגה, במקומה של השרה גלית דיסטל אטבריאן שהתפטרה מהכנסת מכוח 'החוק הנורווגי'. הוא חבר בוועדת הכלכלה, ובפברואר 2026 דווח כי יזם יחד עם ח\"כ איתן גינזבורג הצעת חוק להסדרת שירותי הסעה שיתופיים ('חוק אובר') במטרה להגביר תחרות ולהוזיל את יוקר המחיה."
+      en: "Moshe (Moshiko) Passal entered the Knesset on 12 March 2023 as a Likud member, after placing 40th on the party list, replacing Minister Galit Distel-Atbaryan, who resigned from the Knesset under the Norwegian Law. He sits on the Economic Affairs Committee, and in February 2026 it was reported that he co-sponsored with MK Eitan Ginzburg a bill to regulate ride-sharing services (the 'Uber law') to increase competition and reduce the cost of living."
+    date: "2023-03-12"
     sources:
-      - url: https://en.wikipedia.org/wiki/Moshe_Passal
-        title: Moshe Passal
-        publisher: Wikipedia
-      - url: https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%A4%D7%A1%D7%9C
-        title: משה פסל
-        publisher: Hebrew Wikipedia
+      - url: "https://en.wikipedia.org/wiki/Moshe_Passal"
+        title: "Moshe Passal"
+        publisher: "Wikipedia"
+      - url: "https://www.srugim.co.il/771865-%D7%94%D7%A9%D7%A8%D7%94-%D7%92%D7%9C%D7%99%D7%AA-%D7%93%D7%99%D7%A1%D7%98%D7%9C-%D7%94%D7%AA%D7%A4%D7%98%D7%A8%D7%94-%D7%9E%D7%94%D7%9B%D7%A0%D7%A1%D7%AA-%D7%96%D7%94-%D7%94%D7%97%D7%9B-%D7%94"
+        title: "השרה גלית דיסטל התפטרה מהכנסת; זה הח\"כ החדש"
+        publisher: "Srugim"
+      - url: "https://www.jns.org/feature/israeli-elections-2026-meet-the-parliament-mk-moshe-passal"
+        title: "Israeli elections 2026: Meet the parliament - MK Moshe Passal"
+        publisher: "JNS"
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30877"
+        title: "Moshe Passal - Knesset member page"
+        publisher: "Knesset"
   - kind: positive
     category: achievement
     title:
-      he: שירות בצה"ל בחיל התותחנים
-      en: Military service in the IDF Artillery Corps
+      he: "שירות בצה\"ל בחיל התותחנים"
+      en: "Military service in the IDF Artillery Corps"
     description:
-      he: פסל שירת בצבא ההגנה לישראל בחיל התותחנים, ובהמשך במדור התקציבים של זרוע
-        היבשה.
-      en: Passal served in the Israel Defense Forces' Artillery Corps and later in the
-        Budget Division of the IDF Ground Forces.
+      he: "פסל שירת בצבא ההגנה לישראל בחיל התותחנים, ובהמשך במדור התקציבים של זרוע היבשה."
+      en: "Passal served in the Israel Defense Forces' Artillery Corps and later in the Budget Division of the IDF Ground Forces."
     sources:
-      - url: https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%A4%D7%A1%D7%9C
-        title: משה פסל
-        publisher: Hebrew Wikipedia
-      - url: https://www.jns.org/feature/israeli-elections-2026-meet-the-parliament-mk-moshe-passal
-        title: "Israeli elections 2026: Meet the parliament—MK Moshe Passal"
-        publisher: JNS
+      - url: "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%A4%D7%A1%D7%9C"
+        title: "משה פסל"
+        publisher: "Wikipedia (Hebrew)"
+      - url: "https://www.jns.org/feature/israeli-elections-2026-meet-the-parliament-mk-moshe-passal"
+        title: "Israeli elections 2026: Meet the parliament - MK Moshe Passal"
+        publisher: "JNS"
   - kind: positive
     category: achievement
     title:
-      he: פעילות מקצועית בתקשורת לפני הכניסה לכנסת
-      en: Media career prior to entering the Knesset
+      he: "פעילות מקצועית בתקשורת לפני הכניסה לכנסת"
+      en: "Media career prior to entering the Knesset"
     description:
-      he: טרם כניסתו לכנסת עבד פסל כשדרן ברדיו וכפרשן בתקשורת. בשנת 2018 השתתף בעונה
-        התשיעית של תוכנית המציאות 'האח הגדול'.
-      en: Before entering the Knesset, Passal worked as a radio broadcaster and as a
-        media commentator. In 2018 he took part in the ninth season of the
-        reality television program 'Big Brother'.
+      he: "טרם כניסתו לכנסת עבד פסל כשדרן ברדיו וכפרשן בתקשורת. בשנת 2018 השתתף בעונה התשיעית של תוכנית המציאות 'האח הגדול'."
+      en: "Before entering the Knesset, Passal worked as a radio broadcaster and as a media commentator. In 2018 he took part in the ninth season of the reality television program 'Big Brother'."
     sources:
-      - url: https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%A4%D7%A1%D7%9C
-        title: משה פסל
-        publisher: Hebrew Wikipedia
-      - url: https://en.wikipedia.org/wiki/Moshe_Passal
-        title: Moshe Passal
-        publisher: Wikipedia
+      - url: "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%A4%D7%A1%D7%9C"
+        title: "משה פסל"
+        publisher: "Wikipedia (Hebrew)"
+      - url: "https://en.wikipedia.org/wiki/Moshe_Passal"
+        title: "Moshe Passal"
+        publisher: "Wikipedia"
+  - kind: neutral
+    category: news
+    date: "2026-09-09"
+    title:
+      he: "אינו מתמודד בבחירות 2026"
+      en: "Not a candidate in the 2026 election"
+    description:
+      he: "לפי ויקיפדיה העברית, פסל לא הגיש מועמדות לפריימריז של הליכוד ב-2026. רשימת הליכוד שהוגשה לוועדת הבחירות המרכזית לקראת הבחירות לכנסת ה-26, כפי שפורסמה ב-9 בספטמבר 2026, אינה כוללת את שמו, וכהונתו צפויה להסתיים עם כינוס הכנסת ה-26."
+      en: "According to Hebrew Wikipedia, Passal did not submit his candidacy for the 2026 Likud primaries. The Likud list submitted to the Central Elections Committee for the election to the 26th Knesset, as published on 9 September 2026, does not include his name, and his term is expected to end when the 26th Knesset convenes."
+    sources:
+      - url: "https://www.knesset.tv/main-articles/61384/94592/"
+        title: "מסכמים הגשת רשימות: כל המפלגות והמועמדים בבחירות לכנסת ה-26"
+        publisher: "Knesset Channel"
+      - url: "https://he.wikipedia.org/wiki/%D7%9E%D7%A9%D7%94_%D7%A4%D7%A1%D7%9C"
+        title: "משה פסל"
+        publisher: "Wikipedia (Hebrew)"

@@ -30,13 +30,13 @@ function ClaimList({
   claims: MemberClaim[];
   locale: string;
   title: string;
-  tone: "positive" | "negative";
+  tone: "positive" | "negative" | "neutral";
 }) {
   const t = useTranslations("member");
   return (
     <div className="space-y-3">
       <h3
-        className={`font-semibold ${tone === "positive" ? "text-green-800" : "text-red-800"}`}
+        className={`font-semibold ${tone === "positive" ? "text-green-800" : tone === "negative" ? "text-red-800" : "text-foreground"}`}
       >
         {title}
         <span className="ms-2 align-middle text-xs font-normal text-muted">
@@ -59,14 +59,16 @@ function ClaimList({
                 className={`rounded-lg border p-3 text-sm ${
                   tone === "positive"
                     ? "border-green-200 bg-green-50"
-                    : "border-red-200 bg-red-50"
+                    : tone === "negative"
+                      ? "border-red-200 bg-red-50"
+                      : "border-line bg-surface"
                 }`}
               >
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="font-medium" {...rtlProps(localized(c.title, locale))}>
                     {localized(c.title, locale)}
                   </span>
-                  <span className="rounded-full bg-black/5 px-2 py-0.5 text-[11px] text-muted">
+                  <span className="rounded-full bg-surface-sunken px-2 py-0.5 text-xs text-foreground/80">
                     {t(`recordCategory.${c.category}`)}
                   </span>
                   {c.status && (
@@ -74,7 +76,7 @@ function ClaimList({
                       className={`rounded-full px-2 py-0.5 text-[11px] font-medium ${
                         c.status === "convicted"
                           ? "bg-red-200 text-red-900"
-                          : c.status === "acquitted" || c.status === "overturned"
+                          : c.status === "acquitted" || c.status === "overturned" || c.status === "closed"
                             ? "bg-green-200 text-green-900"
                             : "bg-amber-100 text-amber-900"
                       }`}
@@ -127,6 +129,7 @@ export function RecordSection({
   const t = useTranslations("member");
   const positive = record.claims.filter((c) => c.kind === "positive");
   const negative = record.claims.filter((c) => c.kind === "negative");
+  const neutral = record.claims.filter((c) => c.kind === "neutral");
 
   return (
     <section className="rounded-xl bg-white p-6 shadow-sm space-y-4">
@@ -152,6 +155,9 @@ export function RecordSection({
           tone="negative"
         />
       </div>
+      {neutral.length > 0 && (
+        <ClaimList claims={neutral} locale={locale} title={t("neutralRecord")} tone="neutral" />
+      )}
       {/* Legal / editorial safeguard shown with every public record. */}
       <p className="rounded-lg bg-black/5 p-3 text-xs leading-relaxed text-muted">
         {t("recordDisclaimer")}

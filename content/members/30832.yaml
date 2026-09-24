@@ -2,6 +2,7 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 30832
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -9,11 +10,11 @@ claims:
       he: סגן יושב-ראש הכנסת
       en: Deputy Speaker of the Knesset
     description:
-      he: מליאת הכנסת אישרה את מינויו של חבר הכנסת אליהו רביבו (הליכוד) לסגן יושב-ראש
+      he: מליאת הכנסת אישרה ב-4 באוגוסט 2025 את מינויו של חבר הכנסת אליהו רביבו (הליכוד) לסגן יושב-ראש
         הכנסת ה-25, יחד עם חבר הכנסת יעקב מרגי.
-      en: The Knesset plenum approved the appointment of MK Eliyahu Revivo (Likud) as
+      en: On 4 August 2025 the Knesset plenum approved the appointment of MK Eliyahu Revivo (Likud) as
         a Deputy Speaker of the 25th Knesset, alongside MK Yaakov Margi.
-    date: 2025-08-04
+    date: "2025-08-04"
     sources:
       - url: https://www.israelnationalnews.com/flashes/663639
         title: Knesset approves appointment of MKs Yaakov Margi and Eliyahu Revivo as
@@ -22,6 +23,9 @@ claims:
       - url: https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99%D7%94%D7%95_%D7%A8%D7%91%D7%99%D7%91%D7%95
         title: אליהו רביבו
         publisher: Hebrew Wikipedia
+      - url: https://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_PersonToPosition?%24filter=PersonID%20eq%2030832
+        title: Knesset OData — positions held by person 30832
+        publisher: The Knesset
   - kind: positive
     category: achievement
     title:
@@ -34,7 +38,7 @@ claims:
       en: MK Eliyahu Revivo (Likud) was appointed chair of the Knesset Ethics
         Committee by Knesset Speaker Amir Ohana, replacing MK Moshe Roth (United
         Torah Judaism), after Roth's party left the coalition.
-    date: 2025-07
+    date: "2025-07-22"
     sources:
       - url: https://www.timesofisrael.com/liveblog_entry/likud-mk-replaces-utj-mk-as-head-of-knesset-ethics-committee-after-party-quits-government/
         title: Likud MK replaces UTJ MK as head of Knesset Ethics Committee after party
@@ -61,3 +65,25 @@ claims:
       - url: https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%99%D7%94%D7%95_%D7%A8%D7%91%D7%99%D7%91%D7%95
         title: אליהו רביבו
         publisher: Hebrew Wikipedia
+  - kind: neutral
+    category: news
+    date: "2026-08-13"
+    title:
+      he: הסיר את מועמדותו מהפריימריז בליכוד לקראת בחירות 2026
+      en: Withdrew his candidacy from the Likud primary ahead of the 2026 election
+    description:
+      he: 'ב-13 באוגוסט 2026, ימים לפני הפריימריז בליכוד, הודיע רביבו כי לא יתמודד, בנימוק ש"שיטת הבחירות הנוכחית והשריונים מקשים מאוד על חברי הכנסת לחזור למקום ריאלי ברשימה", וכי "יכולתי לצאת למאבק פוליטי ומשפטי ארוך ויקר על המקום האישי שלי, אך בחרתי שלא לעשות זאת". הוא הוסיף: "אני מסיים את דרכי בכנסת, אך לא עוזב את הבית. אני נשאר איש ליכוד נאמן".'
+      en: On 13 August 2026, days before the Likud primary, Revivo announced he would not run, explaining that "the current election system and the reserved slots make it very difficult for MKs to regain a realistic place on the list" and that "I could have embarked on a long and expensive political and legal battle for my personal spot, but I chose not to do so". He added, "I am ending my path in the Knesset, but I am not leaving the house. I remain a loyal Likud man."
+    sources:
+      - url: https://www.ynet.co.il/news/article/rydulwouzx
+        title: "לא רביבו - \"רביבוס\": המכה הכפולה לנתניהו בליכוד"
+        publisher: Ynet
+      - url: https://www.mako.co.il/news-israel-elections/2026/Article-0c8e5bec20aff91026.htm
+        title: "חבר הכנסת מהליכוד פורש מהפריימריז: \"השריונים מקשים\""
+        publisher: N12
+      - url: https://www.zman.co.il/live/712698/
+        title: אליהו רביבו הסיר את מועמדותו מהפריימריז של הליכוד
+        publisher: Zman Israel
+      - url: https://en.wikipedia.org/wiki/2026_Likud_primary
+        title: 2026 Likud primary
+        publisher: Wikipedia

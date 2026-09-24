@@ -1,27 +1,39 @@
 # PersonID 526. Auto-researched from reputable public sources and
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# legal status marked. Reviewed 2026-09-18.
 personId: 526
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: יושב ראש ועדת הכספים של הכנסת
-      en: Chairman of the Knesset Finance Committee
+      he: יושב ראש ועדת הכספים של הכנסת במשך יותר מעשור
+      en: Chaired the Knesset Finance Committee for more than a decade
     description:
       he: משה גפני כיהן כיושב ראש ועדת הכספים של הכנסת, אחת הוועדות רבות ההשפעה בבית
-        המחוקקים, החל מהכנסת ה-18 (2009). נכון לתחילת 2021 המשיך לכהן בתפקיד.
-      en: Moshe Gafni served as chairman of the Knesset Finance Committee, one of the
-        parliament's most influential committees, beginning in the 18th Knesset
-        (2009). As of early 2021 he continued to hold the post.
-    date: "2009"
+        המחוקקים, בכמה תקופות לא רצופות החל מאפריל 2009 ובמצטבר יותר מעשור. ביולי
+        2025, לאחר שיהדות התורה פרשה מהקואליציה על רקע המחלוקת על חוק הגיוס, התפטר
+        מתפקיד היו"ר, וב-16 ביולי 2025 מונה במקומו ח"כ אופיר כץ.
+      en: Moshe Gafni chaired the Knesset Finance Committee, one of the parliament's
+        most influential committees, across several non-consecutive periods
+        beginning in April 2009, for more than a decade in total. In July 2025,
+        after United Torah Judaism left the coalition over the dispute on the
+        military-draft law, he resigned the chairmanship, and on 16 July 2025 MK
+        Ofir Katz was appointed in his place.
+    date: "2009-04-01"
     sources:
+      - url: https://www.ynet.co.il/economy/article/rygltx88ge
+        title: "אין שקל שלא עבר דרכו: הח\"כ הוותיק ביותר עוזב (כרגע) את תפקיד חייו"
+        publisher: Ynet
+      - url: https://www.davar1.co.il/616369/
+        title: "במקום גפני: אופיר כץ מונה ליו\"ר ועדת הכספים, לקראת חקיקת מתווה הפיצויים"
+        publisher: Davar
+      - url: https://www.timesofisrael.com/veteran-haredi-mk-moshe-gafni-to-be-removed-as-leader-of-utjs-degel-hatorah-faction/
+        title: Veteran Haredi MK Moshe Gafni to be removed as leader of UTJ's Degel HaTorah faction
+        publisher: The Times of Israel
       - url: https://en.wikipedia.org/wiki/Moshe_Gafni
         title: Moshe Gafni
         publisher: Wikipedia
-      - url: https://www.jpost.com/breaking-news/moshe-gafni-to-replace-yaakov-litzman-as-united-torah-judaism-chairman-657447
-        title: Gafni to head UTJ, Litzman bumped to No. 2
-        publisher: The Jerusalem Post
   - kind: positive
     category: achievement
     title:
@@ -35,7 +47,7 @@ claims:
         leader of the United Torah Judaism slate, replacing Yaakov Litzman,
         under a rotation agreement whereby chairmanship of the joint list
         alternates between the heads of Degel HaTorah and Agudat Yisrael.
-    date: "2021"
+    date: "2021-02-01"
     sources:
       - url: https://www.jpost.com/breaking-news/moshe-gafni-to-replace-yaakov-litzman-as-united-torah-judaism-chairman-657447
         title: Gafni to head UTJ, Litzman bumped to No. 2
@@ -54,8 +66,62 @@ claims:
         Yitzhak Shamir's government. After losing his seat he returned to the
         Knesset in 1994 under a rotation agreement, and has since been one of
         the most veteran figures in Israeli Haredi politics.
-    date: "1988"
+    date: "1988-11-21"
     sources:
       - url: https://en.wikipedia.org/wiki/Moshe_Gafni
         title: Moshe Gafni
         publisher: Wikipedia
+  - kind: neutral
+    category: role
+    date: "2025-07-16"
+    title:
+      he: חבר כנסת; סיים את כהונתו כיו"ר ועדת הכספים ביולי 2025
+      en: Member of Knesset; stepped down as Finance Committee chair in July 2025
+    description:
+      he: לאחר פרישת יהדות התורה מהקואליציה ביולי 2025 התפטר גפני מראשות ועדת הכספים,
+        וב-16 ביולי 2025 אישרה ועדת הכנסת את מינויו של ח"כ אופיר כץ ליו"ר הוועדה
+        במקומו. גפני ממשיך לכהן כחבר הכנסת ה-25 מטעם יהדות התורה.
+      en: After United Torah Judaism left the coalition in July 2025, Gafni resigned
+        as chairman of the Finance Committee, and on 16 July 2025 the House
+        Committee approved MK Ofir Katz as committee chair in his place. Gafni
+        continues to serve as a member of the 25th Knesset for United Torah
+        Judaism.
+    sources:
+      - url: https://www.davar1.co.il/616369/
+        title: "במקום גפני: אופיר כץ מונה ליו\"ר ועדת הכספים, לקראת חקיקת מתווה הפיצויים"
+        publisher: Davar
+      - url: https://www.ynet.co.il/economy/article/rygltx88ge
+        title: "אין שקל שלא עבר דרכו: הח\"כ הוותיק ביותר עוזב (כרגע) את תפקיד חייו"
+        publisher: Ynet
+  - kind: neutral
+    category: news
+    date: "2026-09-05"
+    title:
+      he: הנהגת דגל התורה הודיעה כי גפני לא ייכלל ברשימה לבחירות 2026
+      en: Degel HaTorah leadership announced Gafni will not be on the 2026 election slate
+    description:
+      he: במוצאי שבת, 5 בספטמבר 2026, הודיעה לשכת הרב דב לנדו לגפני ולח"כ אורי מקלב כי
+        לא ירוצו ברשימת יהדות התורה לבחירות ב-27 באוקטובר 2026, בנימוק של "ריענון"
+        הנציגות; על פי הדיווחים ההחלטה באה לאחר שהמפלגה לא הצליחה להעביר חוק
+        המסדיר את פטור בני הישיבות מגיוס. ח"כ יעקב אשר צפוי להחליף את גפני כיו"ר
+        דגל התורה ולעמוד בראש הרשימה המשותפת, וגפני התבקש להמשיך כיו"ר התנועה
+        הארצית של דגל התורה. גפני כיהן בכנסת מאז 1988.
+      en: On Saturday night, 5 September 2026, the office of Rabbi Dov Lando informed
+        Gafni and MK Uri Maklev that they would not run on the United Torah
+        Judaism slate in the 27 October 2026 election, citing a need to
+        "refresh" the party's representatives; reports tied the decision to the
+        party's failure to pass a law regulating yeshiva students' exemption from
+        military service. MK Yaakov Asher is expected to replace Gafni as
+        chairman of Degel HaTorah and head the joint slate, and Gafni was asked
+        to continue as chairman of Degel HaTorah's national movement. Gafni has
+        served in the Knesset since 1988.
+    sources:
+      - url: https://www.haaretz.co.il/news/elections/2026-09-05/ty-article/.premium/000001a0-7317-d542-a3f1-777f27ce0000
+        title: הנהגת דגל התורה הדיחה את גפני ומקלב מהרשימה לכנסת
+        publisher: Haaretz
+      - url: https://www.timesofisrael.com/veteran-haredi-mk-moshe-gafni-to-be-removed-as-leader-of-utjs-degel-hatorah-faction/
+        title: Veteran Haredi MK Moshe Gafni to be removed as leader of UTJ's Degel HaTorah faction
+        publisher: The Times of Israel
+      - url: https://www.ynetnews.com/article/b1e7ngq00gg
+        title: United Torah Judaism ousts Moshe Gafni after 38 years in major Haredi leadership shake-up
+        publisher: Ynetnews

@@ -1,0 +1,704 @@
+# Seat polls for the 26th Knesset election (27 October 2026).
+#
+# The rule (AGENTS.md, extended to polls): every figure is verified against the
+# publishing outlet's OWN article, fetched at the cited URL — never from an
+# aggregator (Wikipedia and themadad.com are used only as indexes of what
+# exists) and never from a summary. Hebrew list names were read verbatim from
+# each outlet; the seat keys below are the registry slugs of
+# content/election.yaml. Seats must sum to 120; blocs are recorded exactly as
+# the outlet counted them (the site never assigns a list to a bloc — see the
+# labels). `verification` records how each poll was checked so the next review
+# can repeat it. `instituteId` is the key the poll-of-polls dedupes on (latest
+# poll per institute), so one frequent pollster cannot dominate the average.
+#
+# Scope: polls published from the day the candidate lists closed (8 September
+# 2026) onward — earlier polls scored lists that no longer exist. Review weekly
+# until the vote and bump lastReviewed.
+lastReviewed: "2026-09-24"
+cutoff: "2026-09-08"
+# The legal electoral threshold: 3.25% of valid votes (Knesset Elections Law,
+# amendment of 2014) — ≈4 seats of 120.
+threshold: 3.25
+thresholdSources:
+  - { url: "https://main.knesset.gov.il/EN/activity/mmm/The%20NationalElectoralThreshold.pdf", title: "The National Electoral Threshold: A Comparative Review (Knesset Research and Information Center, 2019)", publisher: "The Knesset" }
+# Polls we know of but could not verify from a text source. Listed, not scored.
+notEntered:
+  - published: "2026-09-09"
+    outlet: { he: "ערוץ 16", en: "Channel 16", ar: "القناة 16", ru: "16-й канал", es: "Canal 16", fr: "Chaîne 16" }
+    institute: { he: "מאגר מוחות", en: "Maagar Mochot", ar: "مأغار موحوت", ru: "«Маагар Мохот»", es: "Maagar Mochot", fr: "Maagar Mochot" }
+    url: "https://www.ch16.co.il/vod.html?id=aab4640f-335f-44c1-8f41-c4fbf4671081"
+    reason:
+      he: "הסקר שודר במהדורה המרכזית בלבד. האתר מזין מספרים רק מפרסום כתוב או גרפי של הגוף המפרסם שאפשר לקשר אליו ולקרוא שוב (כתבה, אינפוגרפיקה, תרשים) — לא מפריים של שידור; לא נמצא פרסום כזה של הערוץ או המכון."
+      en: "Broadcast only in the main news edition. The site enters figures only from a written or graphic publication by the outlet that can be linked and re-read (an article, an infographic, a chart) — not from a frame of a broadcast; no such publication by the channel or the institute was found."
+      ar: "بُثّ في نشرة الأخبار الرئيسية فقط. يُدخل الموقع الأرقام فقط من منشور مكتوب أو رسومي للجهة الناشرة يمكن ربطه وإعادة قراءته (مقال، إنفوغرافيك، رسم بياني) — لا من لقطة بث؛ لم يُعثر على منشور كهذا من القناة أو المعهد."
+      ru: "Показан только в основном выпуске новостей. Сайт вносит цифры только из письменной или графической публикации издания, которую можно открыть по ссылке и перечитать (статья, инфографика, диаграмма), а не из кадра эфира; такой публикации канала или института не найдено."
+      es: "Emitida solo en la edición principal del informativo. El sitio introduce cifras únicamente a partir de una publicación escrita o gráfica del medio que se pueda enlazar y releer (un artículo, una infografía, un gráfico) — no a partir de un fotograma de una emisión; no se encontró ninguna publicación de ese tipo del canal ni del instituto."
+      fr: "Diffusé uniquement dans l’édition principale du journal. Le site ne saisit des chiffres qu’à partir d’une publication écrite ou graphique du média, vers laquelle on peut faire un lien et que l’on peut relire (un article, une infographie, un graphique) — pas d’une capture d’émission ; aucune publication de ce type de la chaîne ou de l’institut n’a été trouvée."
+  - published: "2026-09-16"
+    outlet: { he: "ערוץ 16", en: "Channel 16", ar: "القناة 16", ru: "16-й канал", es: "Canal 16", fr: "Chaîne 16" }
+    institute: { he: "מאגר מוחות (יצחק כץ)", en: "Maagar Mochot (Yitzhak Katz)", ar: "مأغار موحوت (يتسحاق كاتس)", ru: "«Маагар Мохот» (Ицхак Кац)", es: "Maagar Mochot (Yitzhak Katz)", fr: "Maagar Mochot (Yitzhak Katz)" }
+    url: "https://themadad.com/polls26/"
+    reason:
+      he: "רשום באינדקס הסקרים של 'המדד' (16.9.2026, סוקר: יצחק כץ), אך שודר בלבד; לא נמצא פרסום כתוב או גרפי של הערוץ או המכון שאפשר לקשר אליו — אותו כלל כמו לסקר הקודם של הערוץ."
+      en: "Indexed by HaMadad's poll archive (16 Sep 2026, pollster: Yitzhak Katz) but broadcast only; no linkable written or graphic publication by the channel or the institute was found — the same rule as for the channel's earlier poll."
+      ar: "مُدرج في أرشيف استطلاعات «هامداد» (16 أيلول/سبتمبر 2026، جهة الاستطلاع: يتسحاق كاتس) لكنه بُثّ فقط؛ لم يُعثر على منشور مكتوب أو رسومي من القناة أو المعهد يمكن ربطه — القاعدة نفسها كما في استطلاع القناة السابق."
+      ru: "Указан в архиве опросов «ХаМадад» (16.09.2026, социолог: Ицхак Кац), но только показан в эфире; письменной или графической публикации канала или института, на которую можно сослаться, не найдено — то же правило, что и для предыдущего опроса канала."
+      es: "Indexada en el archivo de encuestas de HaMadad (16 de septiembre de 2026, encuestador: Yitzhak Katz) pero solo emitida; no se encontró ninguna publicación escrita o gráfica enlazable del canal ni del instituto — la misma regla que para la encuesta anterior del canal."
+      fr: "Indexé dans les archives de sondages de HaMadad (16 septembre 2026, sondeur : Yitzhak Katz) mais seulement diffusé ; aucune publication écrite ou graphique de la chaîne ou de l’institut vers laquelle faire un lien n’a été trouvée — même règle que pour le sondage précédent de la chaîne."
+# Other published averages, for comparison — their numbers, their method, credited.
+externalAverages:
+  - name: { he: "ממוצע המדד", en: "HaMadad average", ar: "متوسط «هامداد»", ru: "Среднее «ХаМадад»", es: "Promedio de HaMadad", fr: "Moyenne de HaMadad" }
+    publisher: { he: "המדד", en: "HaMadad", ar: "هامداد", ru: "«ХаМадад»", es: "HaMadad", fr: "HaMadad" }
+    url: "https://themadad.com/polls26/"
+    asOf: "2026-09-18"
+    method:
+      he: "ממוצע משוקלל של כל סקרי המנדטים שפורסמו, כולל לפני סגירת הרשימות, כפי שמחשב אתר המדד."
+      en: "A weighted average of every published seat poll, including those from before the lists closed, as computed by HaMadad."
+      ar: "متوسط مرجّح لكل استطلاعات المقاعد المنشورة، بما فيها ما سبق إغلاق القوائم، كما يحسبه موقع هامداد."
+      ru: "Взвешенное среднее всех опубликованных опросов о мандатах, включая опросы до закрытия списков, по расчёту сайта ХаМадад."
+      es: "Un promedio ponderado de todas las encuestas de escaños publicadas, incluidas las anteriores al cierre de las listas, calculado por HaMadad."
+      fr: "Une moyenne pondérée de tous les sondages en sièges publiés, y compris ceux d’avant la clôture des listes, calculée par HaMadad."
+    values:
+      yashar: 22.5
+      likud: 21.2
+      together: 12.3
+      democrats: 9.1
+      yisrael-beiteinu: 8
+      otzma: 7.8
+      shas: 7.7
+      utj: 7.4
+      joint-list: 7.2
+      rz-zehut: 6
+      raam: 5.1
+      amkha: 4.1
+      reservists: 3.6
+      blue-white: 1
+polls:
+  - id: 2026-09-23-channel13-consortium
+    published: "2026-09-23"
+    outlet: { he: "חדשות 13", en: "Channel 13", ar: "القناة 13", ru: "13-й канал", es: "Canal 13", fr: "Chaîne 13" }
+    instituteId: hamadad-consortium
+    institute: { he: "המדד, סטט-נט, פרויקט המדגם ואסקריא", en: "HaMadad, Stat-Net, Midgam Project and Askaria", ar: "هامداد وستات-نت ومشروع مدغام وأسكاريا", ru: "«ХаМадад», Stat-Net, Midgam Project и Askaria", es: "HaMadad, Stat-Net, Midgam Project y Askaria", fr: "HaMadad, Stat-Net, Midgam Project et Askaria" }
+    sample: 1503
+    marginOfError: 2.5
+    seats:
+      yashar: 22
+      likud: 18
+      together: 11
+      democrats: 11
+      joint-list: 8
+      yisrael-beiteinu: 8
+      utj: 8
+      otzma: 7
+      shas: 7
+      rz-zehut: 6
+      amkha: 5
+      raam: 5
+      reservists: 4
+    belowThreshold: [haredi-public, blue-white]
+    belowThresholdNote: "הציבור החרדי — מתחת לאחוז החסימה; כחול לבן — פחות מאחוז מקולות הבוחרים (אחוזים לא פורטו)"
+    blocs:
+      - { label: { he: "גוש האופוזיציה", en: "Opposition bloc", ar: "كتلة المعارضة", ru: "Оппозиционный блок", es: "Bloque de oposición", fr: "Bloc d’opposition" }, seats: 52 }
+      - { label: { he: "הקואליציה", en: "The coalition", ar: "الائتلاف", ru: "Коалиция", es: "La coalición", fr: "La coalition" }, seats: 51 }
+      - { label: { he: "המפלגות הערביות", en: "Arab parties", ar: "الأحزاب العربية", ru: "Арабские партии", es: "Partidos árabes", fr: "Partis arabes" }, seats: 13 }
+      - { label: { he: "הנדל וזליכה", en: "Hendel and Zelekha", ar: "هندل وزليخا", ru: "Хендель и Зелеха", es: "Hendel y Zelekha", fr: "Hendel et Zelekha" }, seats: 4 }
+    verification: "all 13 figures, the 2 below-threshold lists and 4 blocs in the article text (23.09.26 20:47; JSON-LD articleBody read 24 Sep in the Browser pane); methodology per the closing line: המדד (רוזנר, סלפקוב) with סטט-נט (מקלדה), פרויקט המדגם (איילון), אסקריא (דרור), Hive, statistical advice Prof. David Steinberg; 1,503 respondents, ±2.5%; fieldwork dates not stated"
+    sources:
+      - { url: "https://13tv.co.il/item/news/politics/politics/hcp4l-905367553/", title: "סקר המנדטים של חדשות 13 (23.9.2026)", publisher: "חדשות 13" }
+  - id: 2026-09-23-channel14-nextdata
+    published: "2026-09-23"
+    fieldwork: { from: "2026-09-23", to: "2026-09-23" }
+    outlet: { he: "חדשות 14", en: "Channel 14", ar: "القناة 14", ru: "14-й канал", es: "Canal 14", fr: "Chaîne 14" }
+    instituteId: next-data
+    institute: { he: "NEXT DATA", en: "Next Data", ar: "Next Data", ru: "Next Data", es: "Next Data", fr: "Next Data" }
+    sample: 647
+    seats:
+      likud: 32
+      yashar: 22
+      shas: 11
+      democrats: 9
+      together: 7
+      utj: 7
+      rz-zehut: 7
+      joint-list: 7
+      yisrael-beiteinu: 7
+      otzma: 6
+      raam: 5
+    belowThreshold: [reservists, amkha, haredi-public, blue-white]
+    belowThresholdNote: "המילואימניקים הכלכלית 2.2%, עמך ישראל 1.9%, הציבור החרדי 0.5%, כחול לבן 0.3%, נעם 0.1%"
+    blocs:
+      - { label: { he: "גוש הימין", en: "Right bloc", ar: "كتلة اليمين", ru: "Правый блок", es: "Bloque de derecha", fr: "Bloc de droite" }, seats: 63 }
+      - { label: { he: "גוש השמאל", en: "Left bloc", ar: "كتلة اليسار", ru: "Левый блок", es: "Bloque de izquierda", fr: "Bloc de gauche" }, seats: 45 }
+      - { label: { he: "המפלגות הערביות", en: "Arab parties", ar: "الأحزاب العربية", ru: "Арабские партии", es: "Partidos árabes", fr: "Partis arabes" }, seats: 12 }
+    verification: "all 11 figures, the 5 below-threshold shares and 3 blocs in the article text (23.09.26 20:48, read 24 Sep in the Browser pane); methodology per the article's disclaimer: NEXT DATA, 647 adults, conducted 23 Sep 2026, analysis שלמה פילבר; no margin of error stated"
+    sources:
+      - { url: "https://www.c14.co.il/article/1711606", title: "סקר המנדטים של חדשות 14 (23.9.2026)", publisher: "ערוץ 14" }
+  - id: 2026-09-22-n12-midgam
+    published: "2026-09-22"
+    fieldwork: { from: "2026-09-22", to: "2026-09-22" }
+    outlet: { he: "חדשות 12", en: "Channel 12", ar: "القناة 12", ru: "12-й канал", es: "Canal 12", fr: "Chaîne 12" }
+    instituteId: midgam
+    institute: { he: "מדגם ייעוץ ומחקר", en: "Midgam", ar: "مدغام", ru: "«Мидгам»", es: "Midgam", fr: "Midgam" }
+    sample: 501
+    marginOfError: 4.4
+    seats:
+      yashar: 23
+      likud: 20
+      together: 13
+      democrats: 9
+      yisrael-beiteinu: 9
+      utj: 8
+      joint-list: 7
+      shas: 7
+      otzma: 6
+      rz-zehut: 5
+      raam: 5
+      amkha: 4
+      reservists: 4
+    belowThreshold: [blue-white, haredi-public]
+    belowThresholdNote: "כחול לבן 0.7%, הציבור החרדי 0.3%, נעם לישראל 0.1%, ישראל תחילה 0%"
+    blocs:
+      - { label: { he: "הגוש המתנגד לנתניהו", en: "Bloc opposing Netanyahu", ar: "الكتلة المعارضة لنتنياهو", ru: "Блок противников Нетаньяху", es: "Bloque opuesto a Netanyahu", fr: "Bloc opposé à Netanyahou" }, seats: 66 }
+      - { label: { he: "הקואליציה", en: "The coalition", ar: "الائتلاف", ru: "Коалиция", es: "La coalición", fr: "La coalition" }, seats: 50 }
+      - { label: { he: "הגוש השלישי (הנדל וזליכה)", en: "Third bloc (Hendel and Zelekha)", ar: "الكتلة الثالثة (هندل وزليخا)", ru: "Третий блок (Хендель и Зелеха)", es: "Tercer bloque (Hendel y Zelekha)", fr: "Troisième bloc (Hendel et Zelekha)" }, seats: 4 }
+    verification: "all 13 figures, the 4 below-threshold shares and the 3 blocs in the poll article text (22.09.26 21:07, read 24 Sep in the Browser pane); methodology block verbatim: מדגם ייעוץ ומחקר/מנו גבע, 22.9.2026, n=501 of 2,498, ±4.4%, online + phone"
+    sources:
+      - { url: "https://www.mako.co.il/news-israel-elections/2026/Article-fad59e819c9c0a1027.htm", title: "סקר המנדטים של חדשות 12: המפלגה ששוב עוברת את אחוז החסימה והשינויים בתוך הגושים", publisher: "N12" }
+  - id: 2026-09-18-maariv-lazar
+    published: "2026-09-18"
+    fieldwork: { from: "2026-09-16", to: "2026-09-17" }
+    outlet: { he: "מעריב", en: "Maariv", ar: "معاريف", ru: "«Маарив»", es: "Maariv", fr: "Maariv" }
+    instituteId: lazar
+    institute: { he: "לזר מחקרים (Panel4All)", en: "Lazar Research (Panel4All)", ar: "لازار للأبحاث (Panel4All)", ru: "Lazar Research (Panel4All)", es: "Lazar Research (Panel4All)", fr: "Lazar Research (Panel4All)" }
+    sample: 600
+    marginOfError: 4
+    seats:
+      yashar: 23
+      likud: 18
+      together: 13
+      democrats: 9
+      yisrael-beiteinu: 9
+      otzma: 8
+      shas: 7
+      utj: 7
+      joint-list: 7
+      rz-zehut: 6
+      raam: 5
+      amkha: 4
+      reservists: 4
+    belowThreshold: []
+    belowThresholdNote: "המילואימניקים והכלכלית 3.5% ועמך ישראל 3.4% — מעל אחוז החסימה (3.25%) בשוליים; רשימות שמתחת לאחוז החסימה לא פורטו"
+    blocs:
+      - { label: { he: "גוש הקואליציה", en: "Coalition bloc", ar: "كتلة الائتلاف", ru: "Коалиционный блок", es: "Bloque de la coalición", fr: "Bloc de la coalition" }, seats: 50 }
+      - { label: { he: "האופוזיציה הציונית ללא הנדל וזליכה", en: "Zionist opposition without Hendel and Zelekha", ar: "المعارضة الصهيونية دون هندل وزليخا", ru: "Сионистская оппозиция без Хенделя и Зелехи", es: "Oposición sionista sin Hendel y Zelekha", fr: "Opposition sioniste sans Hendel et Zelekha" }, seats: 54 }
+      - { label: { he: "המפלגות הערביות", en: "Arab parties", ar: "الأحزاب العربية", ru: "Арабские партии", es: "Partidos árabes", fr: "Partis arabes" }, seats: 12 }
+      - { label: { he: "המילואימניקים והכלכלית", en: "Reservists–Economic list", ar: "جنود الاحتياط والحزب الاقتصادي", ru: "Список «Резервисты и Экономическая партия»", es: "Lista Reservistas–Económica", fr: "Liste Réservistes–Économique" }, seats: 4 }
+    verification: "all 13 figures in the article's own list line and 3 blocs in the text (18/09/2026 06:00); methodology verbatim: 16–17 Sep, 4,089 asked, 600 respondents (15%), 18+, Jews and Arabs, ±4%; לזר מחקרים/ד\"ר מנחם לזר with Panel4ALL. Also indexed by themadad.com (18/09/2026, סוקר: מנחם לזר)"
+    sources:
+      - { url: "https://www.maariv.co.il/news/politics/article-1368599", title: "סקר מנדטים של מעריב | השפל הגדול של הליכוד נמשך: נתניהו קיבל בשורה רעה לקראת הבחירות", publisher: "מעריב" }
+  - id: 2026-09-17-channel14-nextdata
+    published: "2026-09-17"
+    fieldwork: { from: "2026-09-17", to: "2026-09-17" }
+    outlet: { he: "חדשות 14", en: "Channel 14", ar: "القناة 14", ru: "14-й канал", es: "Canal 14", fr: "Chaîne 14" }
+    instituteId: next-data
+    institute: { he: "NEXT DATA", en: "Next Data", ar: "Next Data", ru: "Next Data", es: "Next Data", fr: "Next Data" }
+    sample: 817
+    seats:
+      likud: 31
+      yashar: 20
+      shas: 10
+      together: 9
+      democrats: 8
+      utj: 8
+      otzma: 8
+      yisrael-beiteinu: 7
+      rz-zehut: 7
+      joint-list: 7
+      raam: 5
+    belowThreshold: [amkha, reservists, blue-white, haredi-public]
+    belowThresholdNote: "עמך ישראל 2.6%, המילואימניקים הכלכלית 2.2%, כחול לבן 0.4%, הציבור החרדי 0.3%, נעם 0.1%"
+    blocs:
+      - { label: { he: "גוש הימין", en: "Right bloc", ar: "كتلة اليمين", ru: "Правый блок", es: "Bloque de derecha", fr: "Bloc de droite" }, seats: 64 }
+      - { label: { he: "גוש השמאל", en: "Left bloc", ar: "كتلة اليسار", ru: "Левый блок", es: "Bloque de izquierda", fr: "Bloc de gauche" }, seats: 44 }
+      - { label: { he: "המפלגות הערביות", en: "Arab parties", ar: "الأحزاب العربية", ru: "Арабские партии", es: "Partidos árabes", fr: "Partis arabes" }, seats: 12 }
+    verification: "all 11 figures and 3 blocs in the article text (17.09.26, re-read in the browser on 18 Sep); methodology verbatim: 17 September 2026, NEXT DATA, 817 respondents, analysis שלמה פילבר; no margin of error stated"
+    sources:
+      - { url: "https://www.c14.co.il/article/1706627", title: "אחרי הסערה עם רע״מ: איזנקוט נחלש, נתניהו פותח פער דרמטי", publisher: "ערוץ 14" }
+  - id: 2026-09-17-i24-direct-polls
+    published: "2026-09-17"
+    fieldwork: { from: "2026-09-17", to: "2026-09-17" }
+    outlet: { he: "i24NEWS", en: "i24NEWS", ar: "i24NEWS", ru: "i24NEWS", es: "i24NEWS", fr: "i24NEWS" }
+    instituteId: direct-polls
+    institute: { he: "דיירקט פולס", en: "Direct Polls", ar: "Direct Polls", ru: "Direct Polls", es: "Direct Polls", fr: "Direct Polls" }
+    sample: 519
+    marginOfError: 4.2
+    seats:
+      likud: 27
+      yashar: 21
+      democrats: 10
+      together: 9
+      yisrael-beiteinu: 8
+      utj: 8
+      shas: 7
+      otzma: 7
+      joint-list: 7
+      rz-zehut: 6
+      raam: 5
+      amkha: 5
+    belowThreshold: [reservists, blue-white, haredi-public]
+    belowThresholdNote: "המילואימניקים והכלכלית 2.2%; מתחת ל-1%: צבע שחור, כחול לבן, הציבור החרדי, אחי, נעם, הקהל, ישראל תחילה"
+    blocs:
+      - { label: { he: "הקואליציה", en: "Coalition", ar: "الائتلاف", ru: "Коалиция", es: "Coalición", fr: "Coalition" }, seats: 60 }
+      - { label: { he: "האופוזיציה", en: "Opposition", ar: "المعارضة", ru: "Оппозиция", es: "Oposición", fr: "Opposition" }, seats: 48 }
+      - { label: { he: "המפלגות הערביות", en: "Arab parties", ar: "الأحزاب العربية", ru: "Арабские партии", es: "Partidos árabes", fr: "Partis arabes" }, seats: 12 }
+    verification: "all 12 figures in the article's own list line ('הליכוד 27; ישר! 21; …') and 3 blocs in the text (17.09 19:32, re-read 18 Sep); methodology verbatim: דיירקט פולס/צוריאל שרון, 17 Sep 2026, digital system with panel, 519 adults, ±4.2% at 95%"
+    sources:
+      - { url: "https://www.i24news.tv/he/news/israel-elections-2026/polls/artc-5b0e5baa", title: "סקר i24NEWS: וינטר מתחזק - והפער בין הליכוד לאיזנקוט גדל | מפת המנדטים", publisher: "i24NEWS" }
+  - id: 2026-09-17-israelhayom-kantar
+    published: "2026-09-17"
+    fieldwork: { from: "2026-09-16", to: "2026-09-17" }
+    outlet: { he: "ישראל היום", en: "Israel Hayom", ar: "يسرائيل هيوم", ru: "«Исраэль ха-Йом»", es: "Israel Hayom", fr: "Israel Hayom" }
+    instituteId: kantar
+    institute: { he: "קנטאר", en: "Kantar", ar: "كانتار", ru: "Kantar", es: "Kantar", fr: "Kantar" }
+    sample: 551
+    marginOfError: 4.2
+    seats:
+      yashar: 22
+      likud: 20
+      together: 13
+      democrats: 9
+      yisrael-beiteinu: 8
+      otzma: 8
+      shas: 7
+      utj: 7
+      joint-list: 7
+      rz-zehut: 6
+      raam: 5
+      amkha: 4
+      reservists: 4
+    belowThreshold: [blue-white, haredi-public]
+    belowThresholdNote: "כחול לבן (1.2%), הציבור החרדי (0.8%), צבע שחור - מגן עולם התורה (0.5%), נעם (0.4%)"
+    verification: "seats from the article's Infogram chart (b96c8d0d…, '17.9.26 סקר מנדטים'): 22(24) 20(21) 13(13) 9(9) 8(9) 8(7) 7(8) 7(7) 7(7) 6(6) 5(5) 4(4) 4(0); 7 figures also in the article text; methodology block verbatim: קנטאר/דודי חסיד, 16-17.9, n=551 of 2,489 asked, ±4.2%"
+    sources:
+      - { url: "https://www.israelhayom.co.il/news/politics/article/21444759", title: "איזנקוט נחלש, גוש נתניהו ממקסם את כוחו | סקר מנדטים", publisher: "ישראל היום" }
+  - id: 2026-09-17-zman-tatika
+    published: "2026-09-17"
+    fieldwork: { from: "2026-09-16", to: "2026-09-17" }
+    outlet: { he: "זמן ישראל", en: "Zman Yisrael", ar: "زمان يسرائيل", ru: "«Зман Исраэль»", es: "Zman Yisrael", fr: "Zman Yisrael" }
+    instituteId: tatika
+    institute: { he: "טאטיקה מחקרים ומדיה", en: "Tatika Research & Media", ar: "تاتيكا للأبحاث والإعلام", ru: "Tatika Research & Media", es: "Tatika Research & Media", fr: "Tatika Research & Media" }
+    sample: 500
+    marginOfError: 4.4
+    seats:
+      yashar: 24
+      likud: 22
+      together: 14
+      yisrael-beiteinu: 9
+      shas: 9
+      utj: 9
+      democrats: 8
+      joint-list: 8
+      otzma: 7
+      raam: 6
+      rz-zehut: 4
+    belowThreshold: [amkha, reservists, blue-white]
+    belowThresholdNote: "עמך ישראל 0 (3.00%), המילואמניקים 0 (2.20%), כחול-לבן 0 (2.00%)"
+    blocs:
+      - { label: { he: "גוש השינוי", en: "Change bloc", ar: "كتلة التغيير", ru: "Блок перемен", es: "Bloque del cambio", fr: "Bloc du changement" }, seats: 55 }
+      - { label: { he: "הקואליציה", en: "The coalition", ar: "الائتلاف", ru: "Коалиция", es: "La coalición", fr: "La coalition" }, seats: 51 }
+      - { label: { he: "רע\"ם", en: "Ra'am", ar: "القائمة الموحدة", ru: "РААМ", es: "Ra'am", fr: "Ra'am" }, seats: 6 }
+      - { label: { he: "הרשימה המשותפת", en: "Joint List", ar: "القائمة المشتركة", ru: "Объединённый список", es: "Lista Conjunta", fr: "Liste commune" }, seats: 8 }
+    verification: "all 11 figures from the article's own table (17/09/2026, re-read 18 Sep); blocs from the two bloc tables (also 'תומכי נתניהו 51 / מתנגדי נתניהו 69'); methodology verbatim: 16–17 Sep 2026, 500 Jewish and Arab respondents, ±4.4%"
+    sources:
+      - { url: "https://www.zman.co.il/725468/", title: "סקר זמן ישראל: וינטר לא עובר את אחוז החסימה ומחליש את גוש הימין", publisher: "זמן ישראל" }
+  - id: 2026-09-16-channel13-consortium
+    published: "2026-09-16"
+    fieldwork: { from: "2026-09-15", to: "2026-09-15" }
+    outlet: { he: "חדשות 13", en: "Channel 13", ar: "القناة 13", ru: "13-й канал", es: "Canal 13", fr: "Chaîne 13" }
+    instituteId: hamadad-consortium
+    institute: { he: "המדד, סטט-נט, פרויקט המדגם ואסקריא", en: "HaMadad, Stat-Net, Midgam Project and Askaria", ar: "هامداد وستات-نت ومشروع مدغام وأسكاريا", ru: "«ХаМадад», Stat-Net, Midgam Project и Askaria", es: "HaMadad, Stat-Net, Midgam Project y Askaria", fr: "HaMadad, Stat-Net, Midgam Project et Askaria" }
+    sample: 886
+    marginOfError: 3.3
+    seats:
+      yashar: 22
+      likud: 18
+      together: 12
+      democrats: 10
+      yisrael-beiteinu: 8
+      rz-zehut: 8
+      otzma: 8
+      joint-list: 8
+      shas: 7
+      utj: 7
+      raam: 6
+      amkha: 6
+    belowThreshold: [reservists, haredi-public, blue-white]
+    belowThresholdNote: "המילואימניקים והכלכלית (קרובים לרף), הציבור החרדי, כחול לבן (פחות מאחוז)"
+    blocs:
+      - { label: { he: "גוש הקואליציה בראשות נתניהו", en: "Coalition bloc led by Netanyahu", ar: "كتلة الائتلاف برئاسة نتنياهو", ru: "Коалиционный блок во главе с Нетаньяху", es: "Bloque de la coalición encabezado por Netanyahu", fr: "Bloc de la coalition mené par Netanyahou" }, seats: 54 }
+      - { label: { he: "גוש איזנקוט", en: "Eisenkot bloc", ar: "كتلة آيزنكوت", ru: "Блок Айзенкота", es: "Bloque de Eisenkot", fr: "Bloc Eisenkot" }, seats: 52 }
+      - { label: { he: "המפלגות הערביות", en: "Arab parties", ar: "الأحزاب العربية", ru: "Арабские партии", es: "Partidos árabes", fr: "Partis arabes" }, seats: 14 }
+    verification: "all 12 figures and 3 blocs in the article text (16.09 20:47, re-read 18 Sep); methodology verbatim: המדד (רוזנר, סלפקוב) with סטט-נט, פרויקט המדגם and אסקריא; conducted the day before (15 Sep), 886 respondents, ±3.3%"
+    sources:
+      - { url: "https://13tv.co.il/item/news/politics/politics/uo4p5-905360485/", title: "למרות שפל חסר תקדים בליכוד – מהפך בגושים לטובת נתניהו", publisher: "חדשות 13" }
+  - id: 2026-09-15-channel14-nextdata
+    published: "2026-09-15"
+    fieldwork: { from: "2026-09-15", to: "2026-09-15" }
+    outlet: { he: "חדשות 14", en: "Channel 14", ar: "القناة 14", ru: "14-й канал", es: "Canal 14", fr: "Chaîne 14" }
+    instituteId: next-data
+    institute: { he: "NEXT DATA", en: "Next Data", ar: "Next Data", ru: "Next Data", es: "Next Data", fr: "Next Data" }
+    sample: 483
+    seats:
+      likud: 30
+      yashar: 21
+      shas: 10
+      democrats: 9
+      together: 8
+      utj: 8
+      rz-zehut: 8
+      otzma: 8
+      joint-list: 7
+      yisrael-beiteinu: 6
+      raam: 5
+    belowThreshold: [amkha, reservists, blue-white, haredi-public]
+    belowThresholdNote: "עמך ישראל 2.3%, המילואימניקים כלכלית 2.1%, כחול לבן 0.4%, נעם 0.3%, הציבור החרדי 0.2%"
+    blocs:
+      - { label: { he: "גוש הימין", en: "Right bloc", ar: "كتلة اليمين", ru: "Правый блок", es: "Bloque de derecha", fr: "Bloc de droite" }, seats: 64 }
+      - { label: { he: "גוש השמאל", en: "Left bloc", ar: "كتلة اليسار", ru: "Левый блок", es: "Bloque de izquierda", fr: "Bloc de gauche" }, seats: 44 }
+      - { label: { he: "המפלגות הערביות", en: "Arab parties", ar: "الأحزاب العربية", ru: "Арабские партии", es: "Partidos árabes", fr: "Partis arabes" }, seats: 12 }
+    verification: "all 11 figures and 3 blocs in the article text (15.09.26); methodology verbatim: NEXT DATA, 483 respondents, 15 September 2026, analysis שלמה פילבר; no margin of error stated"
+    sources:
+      - { url: "https://www.c14.co.il/article/1703304", title: "הציבור בוחן חלופות? המפלגות הקטנות מתחילות להרים ראש", publisher: "ערוץ 14" }
+  - id: 2026-09-14-kan-kantar
+    published: "2026-09-14"
+    outlet: { he: "כאן חדשות", en: "Kan News", ar: "أخبار «كان»", ru: "Новости «Кан»", es: "Kan News", fr: "Kan News" }
+    instituteId: kantar
+    institute: { he: "קנטאר", en: "Kantar", ar: "كانتار", ru: "Kantar", es: "Kantar", fr: "Kantar" }
+    sample: 550
+    seats:
+      yashar: 24
+      likud: 20
+      together: 12
+      democrats: 8
+      yisrael-beiteinu: 8
+      otzma: 8
+      shas: 7
+      utj: 7
+      joint-list: 7
+      rz-zehut: 6
+      raam: 5
+      amkha: 4
+      reservists: 4
+    belowThreshold: []
+    belowThresholdNote: "הכתבה והאינפוגרפיקה מונות 13 רשימות ואינן מציינות אילו רשימות נותרו מתחת לאחוז החסימה (בניגוד לסקר כאן מ-9.9, שנקב בהן); לכן אין כאן סימון \"<\" — לא נכנסה שום הנחה"
+    blocs:
+      - { label: { he: "גוש איזנקוט", en: "Eisenkot bloc", ar: "كتلة آيزنكوت", ru: "Блок Айзенкота", es: "Bloque de Eisenkot", fr: "Bloc Eisenkot" }, seats: 52 }
+      - { label: { he: "גוש נתניהו", en: "Netanyahu bloc", ar: "كتلة نتنياهو", ru: "Блок Нетаньяху", es: "Bloque de Netanyahu", fr: "Bloc Netanyahou" }, seats: 52 }
+      - { label: { he: "מפלגות ערביות", en: "Arab parties", ar: "الأحزاب العربية", ru: "Арабские партии", es: "Partidos árabes", fr: "Partis arabes" }, seats: 12 }
+      - { label: { he: "הנדל וזליכה", en: "Hendel and Zelekha", ar: "هندل وزليخا", ru: "Хендель и Зелеха", es: "Hendel y Zelekha", fr: "Hendel et Zelekha" }, seats: 4 }
+    verification: "seats and blocs read from Kan's own infographic (whatsapp-image-2026-09-14-at-191436.jpeg); institute and sample from its methodology strip; 10 of 13 lists also stated in the article text"
+    sources:
+      - { url: "https://www.kan.org.il/content/kan-news/politic/1099439/", title: "סקר כאן חדשות: איזנקוט מוביל עם 24 מנדטים, נתניהו נחלש", publisher: "כאן חדשות" }
+  - id: 2026-09-14-n12-midgam
+    published: "2026-09-14"
+    fieldwork: { from: "2026-09-14", to: "2026-09-14" }
+    outlet: { he: "חדשות 12", en: "Channel 12", ar: "القناة 12", ru: "12-й канал", es: "Canal 12", fr: "Chaîne 12" }
+    instituteId: midgam
+    institute: { he: "מדגם ייעוץ ומחקר", en: "Midgam", ar: "مدغام", ru: "«Мидгам»", es: "Midgam", fr: "Midgam" }
+    sample: 502
+    marginOfError: 4.4
+    seats:
+      yashar: 23
+      likud: 20
+      together: 13
+      democrats: 10
+      yisrael-beiteinu: 8
+      utj: 8
+      joint-list: 8
+      shas: 7
+      otzma: 6
+      rz-zehut: 5
+      raam: 4
+      amkha: 4
+      reservists: 4
+    belowThreshold: [blue-white, haredi-public]
+    belowThresholdNote: "כחול לבן 0.5%, ישראל תחילה 0.3%, הציבור החרדי 0.2%, נעם לישראל 0.1%"
+    blocs:
+      - { label: { he: "הגוש המתנגד לנתניהו", en: "Bloc opposing Netanyahu", ar: "الكتلة المعارضة لنتنياهو", ru: "Блок противников Нетаньяху", es: "Bloque opuesto a Netanyahu", fr: "Bloc opposé à Netanyahou" }, seats: 66 }
+      - { label: { he: "הקואליציה", en: "The coalition", ar: "الائتلاف", ru: "Коалиция", es: "La coalición", fr: "La coalition" }, seats: 50 }
+      - { label: { he: "הגוש השלישי (הנדל וזליכה)", en: "Third bloc (Hendel and Zelekha)", ar: "الكتلة الثالثة (هندل وزليخا)", ru: "Третий блок (Хендель и Зелеха)", es: "Tercer bloque (Hendel y Zelekha)", fr: "Troisième bloc (Hendel et Zelekha)" }, seats: 4 }
+    verification: "12 of 13 figures in the poll article text (14.09 21:02); עוצמה יהודית 6 from N12's own follow-up analysis of the same poll (15.09) and confirmed by the coalition bloc total 50; methodology block verbatim: מדגם ייעוץ ומחקר/מנו גבע, 14.9.2026, n=502 of 2,514, ±4.4%"
+    sources:
+      - { url: "https://www.mako.co.il/news-israel-elections/2026/Article-f91e6c26f80a0a1027.htm", title: "סקר המנדטים של חדשות 12: הליכוד וישר נחלשות, הנדל וזליכה עוברים לראשונה", publisher: "N12" }
+      - { url: "https://www.mako.co.il/news-israel-elections/2026/Article-16f5b846bd3a0a1026.htm", title: "הצניחה של הליכוד, ישר, עוצמה יהודית וביחד", publisher: "N12" }
+  - id: 2026-09-11-maariv-lazar
+    published: "2026-09-11"
+    fieldwork: { from: "2026-09-09", to: "2026-09-10" }
+    outlet: { he: "מעריב", en: "Maariv", ar: "معاريف", ru: "«Маарив»", es: "Maariv", fr: "Maariv" }
+    instituteId: lazar
+    institute: { he: "לזר מחקרים (Panel4All)", en: "Lazar Research (Panel4All)", ar: "لازار للأبحاث (Panel4All)", ru: "Lazar Research (Panel4All)", es: "Lazar Research (Panel4All)", fr: "Lazar Research (Panel4All)" }
+    sample: 601
+    marginOfError: 4
+    seats:
+      yashar: 25
+      likud: 19
+      together: 14
+      democrats: 10
+      yisrael-beiteinu: 9
+      otzma: 8
+      shas: 7
+      utj: 7
+      joint-list: 7
+      rz-zehut: 5
+      raam: 5
+      amkha: 4
+    belowThreshold: [reservists, blue-white, haredi-public]
+    belowThresholdNote: "המילואימניקים והכלכלית (3%), כחול לבן (1.3%), נעם לישראל (0.7%), הציבור החרדי (0.4%)"
+    blocs:
+      - { label: { he: "גוש הקואליציה", en: "Coalition bloc", ar: "كتلة الائتلاف", ru: "Коалиционный блок", es: "Bloque de la coalición", fr: "Bloc de la coalition" }, seats: 50 }
+      - { label: { he: "גוש האופוזיציה של המפלגות הציוניות", en: "Opposition bloc of the Zionist parties", ar: "كتلة المعارضة من الأحزاب الصهيونية", ru: "Оппозиционный блок сионистских партий", es: "Bloque de oposición de los partidos sionistas", fr: "Bloc d’opposition des partis sionistes" }, seats: 58 }
+      - { label: { he: "המפלגות הערביות", en: "Arab parties", ar: "الأحزاب العربية", ru: "Арабские партии", es: "Partidos árabes", fr: "Partis arabes" }, seats: 12 }
+    verification: "all 12 figures and 3 blocs in the article text (11/09/2026 06:01); methodology verbatim: 9–10 Sep, 4,329 asked, 601 respondents (14%), 18+, Jews and Arabs, ±4%; לזר מחקרים/ד\"ר מנחם לזר with Panel4ALL"
+    sources:
+      - { url: "https://www.maariv.co.il/news/politics/article-1365318", title: "סקר מנדטים של מעריב: הליכוד מתרסק לשפל היסטורי – אבל נתניהו מקבל חבל הצלה דרמטי", publisher: "מעריב" }
+  - id: 2026-09-10-zman-tatika
+    published: "2026-09-10"
+    fieldwork: { from: "2026-09-09", to: "2026-09-10" }
+    outlet: { he: "זמן ישראל", en: "Zman Yisrael", ar: "زمان يسرائيل", ru: "«Зман Исраэль»", es: "Zman Yisrael", fr: "Zman Yisrael" }
+    instituteId: tatika
+    institute: { he: "טאטיקה מחקרים ומדיה", en: "Tatika Research & Media", ar: "تاتيكا للأبحاث والإعلام", ru: "Tatika Research & Media", es: "Tatika Research & Media", fr: "Tatika Research & Media" }
+    sample: 500
+    marginOfError: 4.4
+    seats:
+      likud: 23
+      yashar: 23
+      together: 15
+      yisrael-beiteinu: 10
+      shas: 10
+      utj: 9
+      democrats: 8
+      joint-list: 7
+      otzma: 6
+      raam: 5
+      rz-zehut: 4
+    belowThreshold: [reservists, amkha, blue-white]
+    belowThresholdNote: "מילואמניקים 0 (2.8%), עמך ישראל 0 (2.8%), כחול-לבן 0 (1.4%)"
+    blocs:
+      - { label: { he: "גוש השינוי", en: "Change bloc", ar: "كتلة التغيير", ru: "Блок перемен", es: "Bloque del cambio", fr: "Bloc du changement" }, seats: 56 }
+      - { label: { he: "הקואליציה", en: "The coalition", ar: "الائتلاف", ru: "Коалиция", es: "La coalición", fr: "La coalition" }, seats: 52 }
+      - { label: { he: "רע\"ם", en: "Ra'am", ar: "القائمة الموحدة", ru: "РААМ", es: "Ra'am", fr: "Ra'am" }, seats: 5 }
+      - { label: { he: "הרשימה המשותפת", en: "Joint List", ar: "القائمة المشتركة", ru: "Объединённый список", es: "Lista Conjunta", fr: "Liste commune" }, seats: 7 }
+    verification: "all 11 figures from the article's own table (10/09/2026) and text; blocs from the two bloc tables (also 'תומכי נתניהו 52 / מתנגדי נתניהו 68'); methodology verbatim: 9–10 Sep 2026, 500 Jewish and Arab respondents, ±4.4%, Tatika with the Adgenda panel"
+    sources:
+      - { url: "https://www.zman.co.il/723041/", title: "סקר זמן ישראל: תיקו בפסגה בין ישר! והליכוד, קיפאון בין הגושים", publisher: "זמן ישראל" }
+  - id: 2026-09-09-channel13-consortium
+    published: "2026-09-09"
+    outlet: { he: "חדשות 13", en: "Channel 13", ar: "القناة 13", ru: "13-й канал", es: "Canal 13", fr: "Chaîne 13" }
+    instituteId: hamadad-consortium
+    institute: { he: "המדד, סטט-נט, פרויקט המדגם ואסקריא", en: "HaMadad, Stat-Net, Midgam Project and Askaria", ar: "هامداد وستات-نت ومشروع مدغام وأسكاريا", ru: "«ХаМадад», Stat-Net, Midgam Project и Askaria", es: "HaMadad, Stat-Net, Midgam Project y Askaria", fr: "HaMadad, Stat-Net, Midgam Project et Askaria" }
+    sample: 1119
+    marginOfError: 2.9
+    seats:
+      yashar: 22
+      likud: 19
+      together: 13
+      democrats: 10
+      otzma: 9
+      yisrael-beiteinu: 8
+      utj: 8
+      joint-list: 8
+      shas: 7
+      rz-zehut: 6
+      raam: 6
+      amkha: 4
+    belowThreshold: [reservists, blue-white, haredi-public]
+    belowThresholdNote: "המילואימניקים והכלכלית 3.2%, כחול לבן 1.1%, הציבור החרדי 1.1%"
+    blocs:
+      - { label: { he: "גוש הקואליציה בראשות נתניהו", en: "Coalition bloc led by Netanyahu", ar: "كتلة الائتلاف برئاسة نتنياهو", ru: "Коалиционный блок во главе с Нетаньяху", es: "Bloque de la coalición encabezado por Netanyahu", fr: "Bloc de la coalition mené par Netanyahou" }, seats: 53 }
+      - { label: { he: "גוש האופוזיציה בראשות איזנקוט", en: "Opposition bloc led by Eisenkot", ar: "كتلة المعارضة برئاسة آيزنكوت", ru: "Оппозиционный блок во главе с Айзенкотом", es: "Bloque de oposición encabezado por Eisenkot", fr: "Bloc d’opposition mené par Eisenkot" }, seats: 53 }
+      - { label: { he: "המפלגות הערביות", en: "Arab parties", ar: "الأحزاب العربية", ru: "Арабские партии", es: "Partidos árabes", fr: "Partis arabes" }, seats: 14 }
+    verification: "all 12 figures and 3 blocs in the article text (09.09 20:30); methodology verbatim: המדד (שמואל רוזנר, נח סלפקוב) with סטט-נט, פרויקט המדגם and אסקריא; 1,119 respondents, ±2.9%"
+    sources:
+      - { url: "https://13tv.co.il/item/news/politics/politics/z10wm-905351997/", title: "אחרי סגירת הרשימות: נתניהו נחלש, שוויון במפת הגושים", publisher: "חדשות 13" }
+  - id: 2026-09-09-channel14-nextdata
+    published: "2026-09-09"
+    fieldwork: { from: "2026-09-09", to: "2026-09-09" }
+    outlet: { he: "חדשות 14", en: "Channel 14", ar: "القناة 14", ru: "14-й канал", es: "Canal 14", fr: "Chaîne 14" }
+    instituteId: next-data
+    institute: { he: "NEXT DATA", en: "Next Data", ar: "Next Data", ru: "Next Data", es: "Next Data", fr: "Next Data" }
+    sample: 537
+    seats:
+      likud: 31
+      yashar: 22
+      shas: 10
+      democrats: 8
+      rz-zehut: 8
+      otzma: 8
+      together: 7
+      yisrael-beiteinu: 7
+      utj: 7
+      raam: 6
+      joint-list: 6
+    belowThreshold: [amkha, reservists, blue-white, haredi-public]
+    belowThresholdNote: "עמך ישראל 2.1%, המילואימניקים הכלכלית 1.4%, כחול לבן 0.2%, נעם 0.1%, הציבור החרדי 0.1%"
+    blocs:
+      - { label: { he: "גוש הימין", en: "Right bloc", ar: "كتلة اليمين", ru: "Правый блок", es: "Bloque de derecha", fr: "Bloc de droite" }, seats: 64 }
+      - { label: { he: "גוש השמאל", en: "Left bloc", ar: "كتلة اليسار", ru: "Левый блок", es: "Bloque de izquierda", fr: "Bloc de gauche" }, seats: 44 }
+      - { label: { he: "המפלגות הערביות", en: "Arab parties", ar: "الأحزاب العربية", ru: "Арабские партии", es: "Partidos árabes", fr: "Partis arabes" }, seats: 12 }
+    verification: "all 11 figures and 3 blocs in the article text (09.09.26); the outlet names the Joint List 'חד\"ש-תע\"ל-בל\"ד'; methodology line verbatim: NEXT DATA, 537 respondents, 9 September 2026, analysis שלמה פילבר; no margin of error stated"
+    sources:
+      - { url: "https://www.c14.co.il/article/1697000", title: "אפקט השריונים? השינוי במפת המנדטים אחרי המהלך של נתניהו", publisher: "ערוץ 14" }
+  - id: 2026-09-09-i24-direct-polls
+    published: "2026-09-09"
+    fieldwork: { from: "2026-09-09", to: "2026-09-09" }
+    outlet: { he: "i24NEWS", en: "i24NEWS", ar: "i24NEWS", ru: "i24NEWS", es: "i24NEWS", fr: "i24NEWS" }
+    instituteId: direct-polls
+    institute: { he: "דיירקט פולס", en: "Direct Polls", ar: "Direct Polls", ru: "Direct Polls", es: "Direct Polls", fr: "Direct Polls" }
+    sample: 1054
+    marginOfError: 3
+    seats:
+      likud: 27
+      yashar: 22
+      together: 10
+      democrats: 9
+      utj: 8
+      otzma: 8
+      yisrael-beiteinu: 7
+      shas: 7
+      joint-list: 7
+      rz-zehut: 6
+      raam: 5
+      amkha: 4
+    belowThreshold: [reservists, blue-white, haredi-public]
+    belowThresholdNote: "המילואימניקים והכלכלית 1.4%, כחול לבן 1.1%; מתחת ל-1%: הציבור החרדי, צבע שחור, נעם לישראל, אח\"י, הקהל, ישראל תחילה - עלה ירוק"
+    blocs:
+      - { label: { he: "הקואליציה", en: "The coalition", ar: "الائتلاف", ru: "Коалиция", es: "La coalición", fr: "La coalition" }, seats: 60 }
+      - { label: { he: "האופוזיציה", en: "The opposition", ar: "المعارضة", ru: "Оппозиция", es: "La oposición", fr: "L’opposition" }, seats: 48 }
+      - { label: { he: "המפלגות הערביות", en: "Arab parties", ar: "الأحزاب العربية", ru: "Арабские партии", es: "Partidos árabes", fr: "Partis arabes" }, seats: 12 }
+    verification: "all 12 figures and 3 blocs in the article text (09.09 20:24); methodology verbatim: דיירקט פולס/צוריאל שרון, 9 Sep 2026, digital system with panel, 1,054 adults, ±3.0% at 95%"
+    sources:
+      - { url: "https://www.i24news.tv/he/news/israel-elections-2026/polls/artc-a92f58d0", title: "סקר i24NEWS אחרי סגירת הרשימות: הליכוד שומרת על כוחה, וינטר נחלש | הנתונים המלאים", publisher: "i24NEWS" }
+  - id: 2026-09-09-kan-kantar
+    published: "2026-09-09"
+    fieldwork: { from: "2026-09-09", to: "2026-09-09" }
+    outlet: { he: "כאן חדשות", en: "Kan News", ar: "أخبار «كان»", ru: "Новости «Кан»", es: "Kan News", fr: "Kan News" }
+    instituteId: kantar
+    institute: { he: "קנטאר", en: "Kantar", ar: "كانتار", ru: "Kantar", es: "Kantar", fr: "Kantar" }
+    sample: 554
+    marginOfError: 4.2
+    seats:
+      yashar: 24
+      likud: 21
+      together: 12
+      democrats: 9
+      utj: 8
+      yisrael-beiteinu: 7
+      shas: 7
+      otzma: 7
+      joint-list: 7
+      rz-zehut: 5
+      raam: 5
+      amkha: 4
+      reservists: 4
+    belowThreshold: [blue-white, haredi-public]
+    belowThresholdNote: "כחול לבן, הציבור החרדי, נעם וישראל תחילה לא עוברות את אחוז החסימה (percentages not stated)"
+    blocs:
+      - { label: { he: "גוש נתניהו", en: "Netanyahu bloc", ar: "كتلة نتنياهو", ru: "Блок Нетаньяху", es: "Bloque de Netanyahu", fr: "Bloc Netanyahou" }, seats: 52 }
+      - { label: { he: "גוש איזנקוט", en: "Eisenkot bloc", ar: "كتلة آيزنكوت", ru: "Блок Айзенкота", es: "Bloque de Eisenkot", fr: "Bloc Eisenkot" }, seats: 52 }
+      - { label: { he: "המפלגות הערביות", en: "Arab parties", ar: "الأحزاب العربية", ru: "Арабские партии", es: "Partidos árabes", fr: "Partis arabes" }, seats: 12 }
+      - { label: { he: "המילואימניקים-הכלכלית", en: "Reservists–Economic", ar: "جنود الاحتياط والحزب الاقتصادي", ru: "«Резервисты и Экономическая партия»", es: "Reservistas–Económica", fr: "Réservistes–Économique" }, seats: 4 }
+    verification: "all 13 figures and 4 blocs in the article text (9.9.26); methodology verbatim: 9.9.2026, Kantar, 2,300 invited, 554 respondents 18+, internet sample incl. Arab sector, ±4.2%"
+    sources:
+      - { url: "https://www.kan.org.il/content/kan-news/politic/1098105/", title: "הסקר הראשון אחרי סגירת הרשימות: איזנקוט ונתניהו מתחזקים, תיקו בין הגושים", publisher: "כאן חדשות" }
+  - id: 2026-09-09-n12-midgam
+    published: "2026-09-09"
+    fieldwork: { from: "2026-09-09", to: "2026-09-09" }
+    outlet: { he: "חדשות 12", en: "Channel 12", ar: "القناة 12", ru: "12-й канал", es: "Canal 12", fr: "Chaîne 12" }
+    instituteId: midgam
+    institute: { he: "מדגם ייעוץ ומחקר", en: "Midgam", ar: "مدغام", ru: "«Мидгам»", es: "Midgam", fr: "Midgam" }
+    sample: 504
+    marginOfError: 4.4
+    seats:
+      yashar: 25
+      likud: 21
+      together: 13
+      democrats: 10
+      yisrael-beiteinu: 9
+      utj: 8
+      shas: 7
+      joint-list: 7
+      otzma: 6
+      rz-zehut: 5
+      amkha: 5
+      raam: 4
+    belowThreshold: [reservists, blue-white, haredi-public]
+    belowThresholdNote: "המילואימניקים והכלכלית החדשה 2.9%, כחול לבן 1.4%, הציבור החרדי 1%, ישראל תחילה 0.3%, נעם לישראל 0.2%"
+    blocs:
+      - { label: { he: "האופוזיציה", en: "The opposition", ar: "المعارضة", ru: "Оппозиция", es: "La oposición", fr: "L’opposition" }, seats: 68 }
+      - { label: { he: "הקואליציה", en: "The coalition", ar: "الائتلاف", ru: "Коалиция", es: "La coalición", fr: "La coalition" }, seats: 52 }
+    verification: "11 of 12 figures in the poll article text (09.09 21:00); עוצמה יהודית 6 stated in N12's own follow-up (15.09: 'הליכוד 21, עוצמה יהודית 6, הציונות הדתית 5, ועמך ישראל 5') and confirmed by the coalition total 52; methodology block verbatim: מדגם ייעוץ ומחקר/מנו גבע, 9.9.2026, n=504 of 2,507, ±4.4%"
+    sources:
+      - { url: "https://www.mako.co.il/news-israel-elections/2026/Article-c27dc00e8c680a1026.htm", title: "סקר המנדטים הראשון של חדשות 12 אחרי סגירת הרשימות: וינטר וליברמן מתחזקים, הדמוקרטים נחלשים", publisher: "N12" }
+      - { url: "https://www.mako.co.il/news-israel-elections/2026/Article-16f5b846bd3a0a1026.htm", title: "הצניחה של הליכוד, ישר, עוצמה יהודית וביחד", publisher: "N12" }
+  - id: 2026-09-09-walla-lazar
+    published: "2026-09-09"
+    fieldwork: { from: "2026-09-09", to: "2026-09-09" }
+    outlet: { he: "וואלה", en: "Walla", ar: "والا", ru: "Walla", es: "Walla", fr: "Walla" }
+    instituteId: lazar
+    institute: { he: "לזר מחקרים (Panel4All)", en: "Lazar Research (Panel4All)", ar: "لازار للأبحاث (Panel4All)", ru: "Lazar Research (Panel4All)", es: "Lazar Research (Panel4All)", fr: "Lazar Research (Panel4All)" }
+    sample: 506
+    marginOfError: 4.4
+    seats:
+      yashar: 25
+      likud: 21
+      together: 14
+      democrats: 9
+      yisrael-beiteinu: 9
+      shas: 7
+      utj: 7
+      otzma: 7
+      joint-list: 7
+      rz-zehut: 5
+      raam: 5
+      amkha: 4
+    belowThreshold: [reservists, blue-white, haredi-public]
+    belowThresholdNote: "המילואימניקים והכלכלית 2.8%, אח\"י 1.1%, כחול לבן 0.9%, הציבור החרדי 0.2%, נעם לישראל 0.2%"
+    blocs:
+      - { label: { he: "הקואליציה הנוכחית של נתניהו בתוספת וינטר", en: "Netanyahu's current coalition plus Winter", ar: "ائتلاف نتنياهو الحالي إضافة إلى فينتر", ru: "Нынешняя коалиция Нетаньяху плюс Винтер", es: "La coalición actual de Netanyahu más Winter", fr: "La coalition actuelle de Netanyahou plus Winter" }, seats: 51 }
+      - { label: { he: "גוש האופוזיציה הציונית", en: "Zionist opposition bloc", ar: "كتلة المعارضة الصهيونية", ru: "Блок сионистской оппозиции", es: "Bloque de oposición sionista", fr: "Bloc d’opposition sioniste" }, seats: 57 }
+      - { label: { he: "המפלגות הערביות", en: "Arab parties", ar: "الأحزاب العربية", ru: "Арабские партии", es: "Partidos árabes", fr: "Partis arabes" }, seats: 12 }
+    verification: "all 12 figures and 3 blocs in the report text (Maariv, 09/09/2026 14:26, same publishing group as Walla); methodology verbatim: 9 Sep 2026 for Walla by לזר מחקרים/ד\"ר מנחם לזר with Panel4All, 506 of 3,603 sampled, Jews and Arabs, ±4.4%"
+    sources:
+      - { url: "https://www.maariv.co.il/news/politics/article-1364694", title: "סקר מנדטים של וואלה: בלאגן בתחתית - וינטר עובר את אחוז החסימה ומרסק מפלגה אחרת", publisher: "מעריב" }
+  - id: 2026-09-08-maariv-lazar
+    published: "2026-09-08"
+    fieldwork: { from: "2026-09-07", to: "2026-09-08" }
+    outlet: { he: "מעריב", en: "Maariv", ar: "معاريف", ru: "«Маарив»", es: "Maariv", fr: "Maariv" }
+    instituteId: lazar
+    institute: { he: "לזר מחקרים (Panel4All)", en: "Lazar Research (Panel4All)", ar: "لازار للأبحاث (Panel4All)", ru: "Lazar Research (Panel4All)", es: "Lazar Research (Panel4All)", fr: "Lazar Research (Panel4All)" }
+    sample: 600
+    marginOfError: 4
+    seats:
+      yashar: 25
+      likud: 20
+      together: 13
+      democrats: 10
+      yisrael-beiteinu: 9
+      otzma: 8
+      shas: 7
+      utj: 7
+      joint-list: 7
+      rz-zehut: 5
+      raam: 5
+      reservists: 4
+    belowThreshold: [amkha, blue-white, haredi-public]
+    belowThresholdNote: "People of Israel (עמך ישראל) 2.8%, Blue and White 1.3%, Noam LeYisrael 0.6%, Motti Leitner's party (הציבור החרדי) 0.4%"
+    blocs:
+      - { label: { he: "הקואליציה של נתניהו", en: "Netanyahu's coalition", ar: "ائتلاف نتنياهو", ru: "Коалиция Нетаньяху", es: "La coalición de Netanyahu", fr: "La coalition de Netanyahou" }, seats: 47 }
+      - { label: { he: "האופוזיציה הציונית", en: "Zionist opposition", ar: "المعارضة الصهيونية", ru: "Сионистская оппозиция", es: "Oposición sionista", fr: "Opposition sioniste" }, seats: 57 }
+      - { label: { he: "המפלגות הערביות", en: "Arab parties", ar: "الأحزاب العربية", ru: "Арабские партии", es: "Partidos árabes", fr: "Partis arabes" }, seats: 12 }
+      - { label: { he: "המילואימניקים והכלכלית", en: "Reservists–Economic slate", ar: "جنود الاحتياط والحزب الاقتصادي", ru: "Список «Резервисты и Экономическая партия»", es: "Lista Reservistas–Económica", fr: "Liste Réservistes–Économique" }, seats: 4 }
+    note: "fieldwork 7–8 Sep straddled the close of list submission (8 Sep, 22:00); the outlet itself notes further fluctuation was possible"
+    verification: "all 12 figures and 4 blocs in the Jerusalem Post report by Maariv's polls correspondent Moshe Cohen (same publishing group; published 8 Sep 13:47); methodology verbatim: 7–8 Sep, 4,052 invited, 600 responded (15%), 18+, Jews and Arabs, ±4%; Lazar Research/Dr. Menahem Lazar with Panel4ALL"
+    sources:
+      - { url: "https://www.jpost.com/israel-election-2026/article-907949", title: "Eisenkot-led coalition has pathway to 61 seats without Arab parties for first time - poll", publisher: "The Jerusalem Post (Maariv poll)" }

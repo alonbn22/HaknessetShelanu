@@ -2,6 +2,7 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 1057
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -63,19 +64,41 @@ claims:
       he: מונה לסגן שר התקשורת
       en: Appointed deputy communications minister
     description:
-      he: בינואר 2026 התפטר אייכלר מהכנסת ומונה לסגן שר התקשורת בממשלה, ואת מקומו
-        בכנסת תפס יצחק פינדרוס. המינוי נעשה במסגרת מהלך פוליטי שנועד לקדם את חוק
-        גיוס בני הישיבות.
-      en: In January 2026, Eichler resigned from the Knesset and was appointed deputy
-        communications minister in the government, with Yitzhak Pindrus taking
-        his Knesset seat. The appointment was part of a political move intended
-        to advance the Haredi conscription (draft) bill.
-    date: 2026-01-15
+      he: ב-19 בינואר 2026 מונה אייכלר לסגן שר במשרד התקשורת והתפטר מהכנסת מכוח
+        "החוק הנורבגי", ואת מקומו בכנסת תפס יצחק פינדרוס. לפי הדיווחים, המינוי נעשה
+        במסגרת מהלך פוליטי שנועד לקדם את חוק גיוס בני הישיבות. הוא ממשיך לכהן
+        כסגן שר בממשלת המעבר.
+      en: On 19 January 2026, Eichler was appointed deputy minister in the Ministry
+        of Communications and resigned from the Knesset under the "Norwegian
+        Law", with Yitzhak Pindrus taking his Knesset seat. According to
+        reports, the appointment was part of a political move intended to
+        advance the Haredi conscription (draft) bill. He continues to serve as
+        deputy minister in the caretaker government.
+    date: 2026-01-19
     sources:
       - url: https://www.jpost.com/israel-news/article-883472
         title: Netanyahu to appoint UTJ's Yisrael Eichler to gov't role to pass
           contentious haredi draft bill
         publisher: The Jerusalem Post
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/1057
+        title: ישראל אייכלר - אתר הכנסת
+        publisher: The Knesset
       - url: https://en.wikipedia.org/wiki/Yisrael_Eichler
         title: Yisrael Eichler
         publisher: Wikipedia
+  - kind: neutral
+    category: news
+    date: 2026-09-07
+    title:
+      he: הוצא מרשימת יהדות התורה לכנסת ה-26 ויוחלף באליקים שטארק
+      en: Dropped from the United Torah Judaism list for the 26th Knesset, to be replaced by Elyakim Stark
+    description:
+      he: 'ב-7 בספטמבר 2026 דווח כי לפי החלטת האדמו"ר מבעלזא, אייכלר - נציג חסידות בעלזא ברשימה מאז 2003 - לא ייכלל ברשימת יהדות התורה לכנסת ה-26, ובמקומו ישובץ אליקים שטארק. לפי "כיכר השבת", אייכלר אמר כי "מה שהרבי מחליט - אני מקבל".'
+      en: 'On 7 September 2026 it was reported that, by decision of the Belz Rebbe, Eichler - the Belz Hasidic representative on the list since 2003 - would not be included on the United Torah Judaism list for the 26th Knesset, with Elyakim Stark taking his place. According to Kikar HaShabbat, Eichler said "whatever the Rebbe decides, I accept".'
+    sources:
+      - url: https://www.ynet.co.il/news/elections2026/article/h1fa5kndmx
+        title: 'עוד טלטלה ביהדות התורה: בכיר נוסף מחוץ לרשימת המפלגה'
+        publisher: Ynet
+      - url: https://www.kikar.co.il/haredim-news/tkzkwo
+        title: 'גורמים בחסידות בעלזא מתדרכים: ההחלטה נפלה - ישראל אייכלר יוחלף באליקים שטארק'
+        publisher: Kikar HaShabbat

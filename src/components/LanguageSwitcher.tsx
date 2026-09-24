@@ -10,6 +10,8 @@ const localeNames: Record<Locale, string> = {
   en: "English",
   ar: "العربية",
   ru: "Русский",
+  es: "Español",
+  fr: "Français",
 };
 
 export function LanguageSwitcher() {
@@ -34,7 +36,7 @@ export function LanguageSwitcher() {
       aria-label="Language"
       value={locale}
       onChange={(e) => onChange(e.target.value)}
-      className="bg-white/15 text-white text-sm rounded px-2 py-1 border border-white/30 cursor-pointer [&>option]:text-black"
+      className="cursor-pointer rounded-chip border border-on-chrome/40 bg-chrome-hover px-2 py-1 text-sm text-on-chrome [&>option]:text-foreground"
     >
       {locales.map((l) => (
         <option key={l} value={l}>

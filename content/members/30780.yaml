@@ -2,20 +2,23 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 30780
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: חבר הכנסת מטעם יש עתיד
-      en: Member of Knesset for Yesh Atid
+      he: חבר הכנסת מטעם יש עתיד (2021–2026)
+      en: Member of Knesset for Yesh Atid (2021–2026)
     description:
       he: רון כץ, עורך דין יליד 1985 מעפולה, נבחר לכנסת ה-24 בשנת 2021 מטעם מפלגת יש
-        עתיד ונבחר מחדש לכנסת ה-25. במהלך כהונתו קידם הצעות חוק בתחומים שונים,
-        ובהם הגנה על בני נוער עובדים ורגולציה על מעונות יום.
+        עתיד ונבחר מחדש לכנסת ה-25, שבה כיהן עד התפטרותו ביולי 2026. במהלך כהונתו
+        קידם הצעות חוק בתחומים שונים, ובהם הגנה על בני נוער עובדים ורגולציה על
+        מעונות יום.
       en: Ron Katz, a lawyer born in 1985 in Afula, was elected to the 24th Knesset in
-        2021 on the Yesh Atid list and re-elected to the 25th Knesset. During
-        his term he advanced bills in several areas, including protection of
-        working youth and regulation of daycare centers.
+        2021 on the Yesh Atid list and re-elected to the 25th Knesset, where he
+        served until his resignation in July 2026. During his term he advanced
+        bills in several areas, including protection of working youth and
+        regulation of daycare centers.
     date: 2021-04-06
     sources:
       - url: https://en.wikipedia.org/wiki/Ron_Katz
@@ -57,3 +60,22 @@ claims:
       - url: https://en.wikipedia.org/wiki/Ron_Katz
         title: Ron Katz
         publisher: Wikipedia (English)
+  - kind: neutral
+    category: role
+    date: 2026-07-28
+    title:
+      he: התפטר מהכנסת ופרש מהחיים הפוליטיים; אינו מכהן עוד כחבר כנסת
+      en: Resigned from the Knesset and retired from political life; no longer a serving MK
+    description:
+      he: 'ב-26 ביולי 2026 הודיע כץ על התפטרותו מהכנסת ועל פרישה מהפוליטיקה, ואמר כי "הגיע הזמן לקחת הפסקה מהחיים הציבוריים ולפתוח פרק חדש" וכי אינו רוצה להמשיך לקבל שכר מהציבור לאחר שהחליט לעזוב. לפי אתר הכנסת, כהונתו הסתיימה ב-28 ביולי 2026, ובמקומו נכנס לכנסת מוחמד אבו אל-היג''א מיש עתיד. הוא לא יתמודד בבחירות 2026.'
+      en: 'On 26 July 2026 Katz announced his resignation from the Knesset and his retirement from politics, saying "it is time to take a break from public life and open a new chapter" and that he did not want to keep drawing a public salary after deciding to leave. According to the Knesset website his term ended on 28 July 2026, and Muhammad Abu al-Hija of Yesh Atid entered the Knesset in his place. He is not running in the 2026 election.'
+    sources:
+      - url: https://www.ynet.co.il/news/article/b1sdhfxrfl
+        title: 'מתפטר נוסף מיש עתיד: ח"כ רון כץ פורש, מוחמד אבו אל היג''א ייכנס במקומו'
+        publisher: Ynet
+      - url: https://www.maariv.co.il/breaking-news/article-1348681
+        title: 'ח"כ רון כץ מיש עתיד פרש מהכנסת ולא יתמודד בבחירות: "שליחות וזכות גדולה"'
+        publisher: Maariv
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30780
+        title: רון כץ - אתר הכנסת
+        publisher: The Knesset

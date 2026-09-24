@@ -1,90 +1,136 @@
-# PersonID 30786. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30786 (Amichai Chikli). Researched from reputable public sources;
+# every cited URL re-verified on 2026-09-18. Neutral language; legal status marked.
 personId: 30786
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: שירות קרבי ביחידות מובחרות בצה"ל
-      en: Combat service in elite IDF units
+      he: "שירות קרבי ביחידות מובחרות בצה\"ל"
+      en: "Combat service in elite IDF units"
     description:
-      he: עמיחי שיקלי שירת בצה"ל בחטיבת גולני וביחידת שייטת 13, ולאחר לימודיו שימש
-        מפקד פלוגה ביחידת אגוז.
-      en: Amichai Chikli served in the Israel Defense Forces in the Golani Brigade and
-        the Shayetet 13 naval unit, and after his studies became a company
-        commander in the Egoz reconnaissance unit.
+      he: "עמיחי שיקלי שירת בצה\"ל בחטיבת גולני וביחידת שייטת 13, ולאחר לימודיו שימש מפקד פלוגה ביחידת אגוז."
+      en: "Amichai Chikli served in the Israel Defense Forces in the Golani Brigade and the Shayetet 13 naval unit, and after his studies became a company commander in the Egoz reconnaissance unit."
     sources:
-      - url: https://en.wikipedia.org/wiki/Amichai_Chikli
-        title: Amichai Chikli
-        publisher: Wikipedia
-      - url: https://www.jewishvirtuallibrary.org/Amichai-Chikli
-        title: Amichai Chikli
-        publisher: Jewish Virtual Library
+      - url: "https://en.wikipedia.org/wiki/Amichai_Chikli"
+        title: "Amichai Chikli"
+        publisher: "Wikipedia"
+      - url: "https://www.jewishvirtuallibrary.org/Amichai-Chikli"
+        title: "Amichai Chikli"
+        publisher: "Jewish Virtual Library"
   - kind: positive
     category: volunteering
     title:
-      he: ייסוד מכינה קדם-צבאית בנוף הגליל
-      en: Founded a pre-military academy in Nof HaGalil
+      he: "ייסוד מכינה קדם-צבאית בנוף הגליל"
+      en: "Founded a pre-military academy in Nof HaGalil"
     description:
-      he: בשנת 2010 ייסד שיקלי את אקדמיית תבור למנהיגות חברתית, מכינה קדם-צבאית בנוף
-        הגליל (נצרת עילית), שהכשירה בוגרים רבים לקראת שירותם הצבאי.
-      en: In 2010 Chikli founded the Tavor Academy for Social Leadership, a
-        pre-military academy in Nof HaGalil (Nazareth Illit), which prepared
-        many graduates ahead of their military service.
-    date: 2010-01-01
+      he: "בשנת 2010 ייסד שיקלי את אקדמיית תבור למנהיגות חברתית, מכינה קדם-צבאית בנוף הגליל (נצרת עילית), שהכשירה בוגרים רבים לקראת שירותם הצבאי."
+      en: "In 2010 Chikli founded the Tavor Academy for Social Leadership, a pre-military academy in Nof HaGalil (Nazareth Illit), which prepared many graduates ahead of their military service."
+    date: "2010-01-01"
     sources:
-      - url: https://en.wikipedia.org/wiki/Amichai_Chikli
-        title: Amichai Chikli
-        publisher: Wikipedia
-      - url: https://www.jewishvirtuallibrary.org/Amichai-Chikli
-        title: Amichai Chikli
-        publisher: Jewish Virtual Library
+      - url: "https://en.wikipedia.org/wiki/Amichai_Chikli"
+        title: "Amichai Chikli"
+        publisher: "Wikipedia"
+      - url: "https://www.jewishvirtuallibrary.org/Amichai-Chikli"
+        title: "Amichai Chikli"
+        publisher: "Jewish Virtual Library"
   - kind: positive
     category: achievement
     title:
-      he: מינוי לשר התפוצות והמאבק באנטישמיות
-      en: Appointed Minister of Diaspora Affairs and Combating Antisemitism
+      he: "מינוי לשר התפוצות והמאבק באנטישמיות"
+      en: "Appointed Minister of Diaspora Affairs and Combating Antisemitism"
     description:
-      he: בינואר 2023 מונה שיקלי, מטעם הליכוד, לשר התפוצות. עם כניסתו לתפקיד הודיע על
-        שינוי שם המשרד כך שיכלול את המאבק באנטישמיות.
-      en: In January 2023 Chikli, representing Likud, was appointed Minister of
-        Diaspora Affairs. Upon taking office he announced that the ministry
-        would change its name to add the mission of combating antisemitism.
-    date: 2023-01-01
+      he: "ב-29 בדצמבר 2022 מונה שיקלי, מטעם הליכוד, לשר התפוצות ולשר לשוויון חברתי. עם כניסתו לתפקיד הודיע על שינוי שם המשרד כך שיכלול את המאבק באנטישמיות."
+      en: "On 29 December 2022 Chikli, representing Likud, was appointed Minister of Diaspora Affairs and Minister for Social Equality. Upon taking office he announced that the ministry would change its name to add the mission of combating antisemitism."
+    date: "2022-12-29"
     sources:
-      - url: https://en.wikipedia.org/wiki/Amichai_Chikli
-        title: Amichai Chikli
-        publisher: Wikipedia
-      - url: https://www.haaretz.com/israel-news/2023-01-06/ty-article/meet-amichai-chikli-israels-new-diaspora-minister-who-opposes-bds-and-reform-judaism/00000185-85c4-d9f4-abf7-85ef8f160000
-        title: Meet Amichai Chikli, Israel's New Diaspora Minister, Who Opposes BDS and
-          Reform Judaism
-        publisher: Haaretz
+      - url: "https://en.wikipedia.org/wiki/Amichai_Chikli"
+        title: "Amichai Chikli"
+        publisher: "Wikipedia"
+      - url: "https://www.haaretz.com/israel-news/2023-01-06/ty-article/meet-amichai-chikli-israels-new-diaspora-minister-who-opposes-bds-and-reform-judaism/00000185-85c4-d9f4-abf7-85ef8f160000"
+        title: "Meet Amichai Chikli, Israel's New Diaspora Minister, Who Opposes BDS and Reform Judaism"
+        publisher: "Haaretz"
+      - url: "https://www.timesofisrael.com/amichai-chikli-son-of-a-conservative-rabbi-named-next-diaspora-affairs-minister/"
+        title: "Amichai Chikli, son of a Conservative rabbi, named Diaspora affairs minister"
+        publisher: "The Times of Israel"
+  - kind: negative
+    category: controversy
+    title:
+      he: "אישי ציבור יהודים החרימו את כנס המאבק באנטישמיות שארגן בשל הזמנת פוליטיקאים מהימין הקיצוני באירופה"
+      en: "Jewish public figures boycotted his antisemitism conference over invitations to European far-right politicians"
+    description:
+      he: "במרץ 2025 ארגן משרד התפוצות בראשות שיקלי כנס בינלאומי למאבק באנטישמיות בירושלים, אליו הוזמנו פוליטיקאים ממפלגות ימין קיצוני באירופה, ובהם ז'ורדן ברדלה מהאיחוד הלאומי הצרפתי ונציגי Vox הספרדית. בעקבות זאת ביטלו את השתתפותם מספר אישי ציבור יהודים ובהם הממונה על המאבק באנטישמיות בגרמניה פליקס קליין. שיקלי הגן על ההזמנות ואמר כי האנטישמיות באירופה גוברת בשל הגירה מוסלמית וכי מפלגות אלה הן בעלות ברית במאבק בה."
+      en: "In March 2025 the Diaspora Affairs Ministry under Chikli organized an International Conference on Combating Antisemitism in Jerusalem, to which politicians from European far-right parties were invited, including Jordan Bardella of France's National Rally and representatives of Spain's Vox. Several Jewish public figures, including Germany's antisemitism commissioner Felix Klein, withdrew in response. Chikli defended the invitations, saying antisemitism in Europe is growing because of Muslim immigration and that these parties are allies in fighting it."
+    date: "2025-03-28"
+    sources:
+      - url: "https://www.jta.org/2025/03/14/global/amichai-chikli-invites-politicians-from-european-far-right-parties-to-israel-in-a-first"
+        title: "Amichai Chikli invites politicians from European far-right parties to Israel, in a first"
+        publisher: "JTA"
+      - url: "https://www.bbc.com/news/articles/ckgng1l0m7mo"
+        title: "Prominent Jewish figures boycott Israel antisemitism event over far-right guests"
+        publisher: "BBC News"
   - kind: negative
     category: controversy
     status: settled
     title:
-      he: ועדת הכנסת קראה לשיקלי להתנצל בעקבות הזמנת טומי רובינסון
-      en: Knesset committee called on Chikli to apologize over Tommy Robinson
-        invitation
+      he: "ועדת הכנסת קראה לשיקלי להתנצל בעקבות הזמנת טומי רובינסון"
+      en: "Knesset committee called on Chikli to apologize over Tommy Robinson invitation"
     description:
-      he: באוקטובר 2025 הורתה ועדת הכנסת לקשרים עם יהדות התפוצות לשר שיקלי להתנצל בפני
-        מנהיגי הקהילה היהודית בבריטניה, לאחר שהזמין את הפעיל הימני-קיצוני הבריטי
-        טומי רובינסון לביקור רשמי בישראל מבלי להיוועץ בקהילה היהודית בבריטניה.
-        ההזמנה עוררה ביקורת מצד ארגונים יהודיים בבריטניה.
-      en: In October 2025 the Knesset committee responsible for relations with
-        Diaspora Jewish communities instructed Minister Chikli to apologize to
-        leaders of the UK Jewish community after he invited British far-right
-        activist Tommy Robinson on an official visit to Israel without
-        consulting the UK Jewish community. The invitation drew criticism from
-        British Jewish organizations.
-    date: 2025-10-21
+      he: "באוקטובר 2025 הזמין שיקלי את הפעיל הימני-קיצוני הבריטי טומי רובינסון לביקור רשמי בישראל, מבלי להיוועץ בקהילה היהודית בבריטניה; ארגוני הגג של יהדות בריטניה גינו את ההזמנה. ב-21 באוקטובר 2025 קראה ועדת הכנסת לקשרים עם יהדות התפוצות לשיקלי להתנצל בפני מנהיגי הקהילה. שיקלי הגן על ההזמנה ותיאר את רובינסון כמנהיג אמיץ במאבק באסלאם הרדיקלי."
+      en: "In October 2025 Chikli invited British far-right activist Tommy Robinson on an official visit to Israel without consulting the UK Jewish community; British Jewry's umbrella bodies condemned the invitation. On 21 October 2025 the Knesset committee for relations with Diaspora Jewry called on Chikli to apologize to community leaders. Chikli defended the invitation and described Robinson as a courageous leader in the fight against radical Islam."
+    date: "2025-10-21"
     sources:
-      - url: https://www.haaretz.com/israel-news/2025-10-21/ty-article/.premium/israeli-minister-ordered-to-apologize-for-inviting-british-extremist-tommy-robinson/0000019a-0706-dfc6-a3bf-f726ede20000
-        title: "'Slap in the Face': Israeli Minister Ordered to Apologize for Inviting
-          British Far-right Agitator Tommy Robinson"
-        publisher: Haaretz
-      - url: https://www.timesofisrael.com/disgrace-knesset-diaspora-panel-chair-pans-chikli-for-inviting-british-firebrand/
-        title: "'Disgrace': Knesset Diaspora panel chair pans Chikli for inviting
-          British firebrand"
-        publisher: The Times of Israel
+      - url: "https://www.haaretz.com/israel-news/2025-10-21/ty-article/.premium/israeli-minister-ordered-to-apologize-for-inviting-british-extremist-tommy-robinson/0000019a-0706-dfc6-a3bf-f726ede20000"
+        title: "'Slap in the Face': Israeli Minister Ordered to Apologize for Inviting British Far-right Agitator Tommy Robinson"
+        publisher: "Haaretz"
+      - url: "https://www.timesofisrael.com/disgrace-knesset-diaspora-panel-chair-pans-chikli-for-inviting-british-firebrand/"
+        title: "'Disgrace': Knesset Diaspora panel chair pans Chikli for inviting British firebrand"
+        publisher: "The Times of Israel"
+      - url: "https://www.nbcnews.com/world/europe/israel-invites-tommy-robinson-uk-jewish-leaders-criticize-rcna235682"
+        title: "Israeli minister invites English far-right leader, sparking outrage among U.K.'s Jewish community"
+        publisher: "NBC News"
+  - kind: neutral
+    category: role
+    date: "2024-01-22"
+    title:
+      he: "שר התפוצות והמאבק באנטישמיות; אינו חבר כנסת מכוח החוק הנורווגי"
+      en: "Minister of Diaspora Affairs and Combating Antisemitism; not a sitting MK under the Norwegian Law"
+    description:
+      he: "שיקלי התפטר מהכנסת ב-17 בינואר 2023 מכוח החוק הנורווגי וממשיך לכהן כשר התפוצות והמאבק באנטישמיות, גם בממשלת המעבר. בינואר 2024 סיים את כהונתו הנוספת כשר לשוויון חברתי, במסגרת צמצום הוצאות הממשלה בזמן המלחמה."
+      en: "Chikli resigned his Knesset seat on 17 January 2023 under the Norwegian Law and continues to serve as Minister of Diaspora Affairs and Combating Antisemitism, including in the caretaker government. In January 2024 he ended his additional post as Minister for Social Equality as part of cuts to government spending during the war."
+    sources:
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30786"
+        title: "Amichai Chikli - Knesset member page"
+        publisher: "Knesset"
+      - url: "https://en.wikipedia.org/wiki/Amichai_Chikli"
+        title: "Amichai Chikli"
+        publisher: "Wikipedia"
+  - kind: neutral
+    category: news
+    date: "2026-05-26"
+    title:
+      he: "קרא לכלול התיישבות בצפון רצועת עזה במצע הליכוד לבחירות"
+      en: "Called for Gaza resettlement to be part of Likud's election platform"
+    description:
+      he: "ב-26 במאי 2026, בפגישה עם ראשי תנועת נחלה, אמר שיקלי כי התיישבות באזור הגבול הצפוני של רצועת עזה צריכה להיות חלק ממצע הליכוד לבחירות."
+      en: "On 26 May 2026, at a meeting with leaders of the Nachala movement, Chikli said that settling the northern border area of the Gaza Strip should be part of Likud's election platform."
+    sources:
+      - url: "https://www.timesofisrael.com/liveblog_entry/likud-minister-says-resettlement-of-gaza-should-be-on-partys-official-election-platform/"
+        title: "Likud minister says resettlement of Gaza should be on party's official election platform"
+        publisher: "The Times of Israel"
+  - kind: neutral
+    category: news
+    date: "2026-09-09"
+    title:
+      he: "דורג בעשירייה הראשונה בפריימריז הליכוד ושובץ במקום ה-14 ברשימה"
+      en: "Placed in the top ten in the Likud primaries and 14th on the party's list"
+    description:
+      he: "בפריימריז של הליכוד ב-17 באוגוסט 2026 דורג שיקלי בעשירייה הראשונה של המתמודדים. ברשימת הליכוד שהוגשה לוועדת הבחירות המרכזית לקראת הבחירות לכנסת ה-26 שובץ במקום ה-14."
+      en: "In the Likud primaries of 17 August 2026 Chikli finished in the top ten of the candidates. On the Likud list submitted to the Central Elections Committee for the election to the 26th Knesset he was placed 14th."
+    sources:
+      - url: "https://www.jpost.com/israel-election-2026/article-905846"
+        title: "Likud primaries: Benjamin Netanyahu hails new list as Eli Cohen wins top slot"
+        publisher: "The Jerusalem Post"
+      - url: "https://www.knesset.tv/main-articles/61384/94592/"
+        title: "מסכמים הגשת רשימות: כל המפלגות והמועמדים בבחירות לכנסת ה-26"
+        publisher: "Knesset Channel"

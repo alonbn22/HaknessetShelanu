@@ -1,7 +1,8 @@
 # PersonID 30782. Auto-researched from reputable public sources and
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# legal status marked. Reviewed 2026-09-18.
 personId: 30782
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -66,3 +67,24 @@ claims:
       - url: https://he.wikipedia.org/wiki/%D7%98%D7%98%D7%99%D7%90%D7%A0%D7%94_%D7%9E%D7%96%D7%A8%D7%A1%D7%A7%D7%99
         title: טטיאנה מזרסקי
         publisher: Hebrew Wikipedia
+  - kind: neutral
+    category: news
+    date: "2026-09-01"
+    title:
+      he: הודיעה כי לא תתמודד בבחירות 2026 ותישאר חברה ביש עתיד
+      en: Announced she will not run in the 2026 election but will remain in Yesh Atid
+    description:
+      he: ב-1 בספטמבר 2026 הודיעה מזרסקי ברשת X כי לא תתמודד בבחירות לכנסת ה-26 אך
+        תישאר חברה ביש עתיד, ואמרה כי "זה הבית הפוליטי שלי" וכי היא מאמינה במנהיגותו
+        של יאיר לפיד. ההודעה באה במסגרת גל פרישות של חברי כנסת מיש עתיד מהמרוץ,
+        על רקע ירידה בסקרים של הרשימה המשותפת "ביחד" עם מפלגתו של נפתלי בנט.
+      en: On 1 September 2026 Mazarsky announced on X that she would not compete in
+        the election to the 26th Knesset but would remain a member of Yesh Atid,
+        saying "this is my political home" and that she believes in Yair Lapid's
+        leadership. The announcement came amid a wave of Yesh Atid MKs quitting
+        the race as the joint "B'Yachad" slate with Naftali Bennett's party
+        slipped in the polls.
+    sources:
+      - url: https://www.timesofisrael.com/wave-of-yesh-atid-mks-quit-election-run-as-joint-slate-with-bennett-falters-in-polls/
+        title: Wave of Yesh Atid MKs quit election run as joint slate with Bennett falters in polls
+        publisher: The Times of Israel

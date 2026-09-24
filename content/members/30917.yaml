@@ -1,0 +1,25 @@
+# PersonID 30917. New member of the 25th Knesset (entered 2026-07-28); the
+# Knesset's own pages carry no biography yet, so the record holds only the
+# verified entry facts. Neutral language. Reviewed 2026-09-19.
+personId: 30917
+lastReviewed: "2026-09-19"
+claims:
+  - kind: neutral
+    category: role
+    title:
+      he: "נכנס לכנסת ב-28 ביולי 2026 במקום רון כץ (יש עתיד)"
+      en: "Entered the Knesset on 28 July 2026 in place of Ron Katz (Yesh Atid)"
+    description:
+      he: "מוחמד אבו אל היג'א, תושב טמרה, נכנס לכנסת ה-25 מטעם יש עתיד ב-28 ביולי 2026, לאחר שח\"כ רון כץ הודיע ב-26 ביולי 2026 על פרישתו מהכנסת. לפי אתר הכנסת, פרטי הרקע של חבר הכנסת טרם נמסרו למערכת."
+      en: "Mohammad Abu al-Hija, of Tamra, entered the 25th Knesset for Yesh Atid on 28 July 2026, after MK Ron Katz announced on 26 July 2026 that he was leaving the Knesset. Per the Knesset site, the member’s background details have not yet been submitted."
+    date: "2026-07-28"
+    sources:
+      - url: "https://main.knesset.gov.il/mk/apps/faction/faction-lobby?KnessetID=25&FactionID=1102"
+        title: "סיעת יש עתיד — חילופי גברי: 28/07/2026 מוחמד אבו אל היג'א נכנס במקום רון כץ"
+        publisher: "הכנסת"
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/1132"
+        title: "חבר הכנסת מוחמד אבו אל היג'א — אתר הכנסת"
+        publisher: "הכנסת"
+      - url: "https://www.mako.co.il/news-israel-elections/2026/Article-3468d77390d9f91027.htm"
+        title: "עוד עזיבה ביש עתיד: חה\"כ רון כץ הודיע על פרישה (26.7.2026)"
+        publisher: "N12"

@@ -1,7 +1,8 @@
-# PersonID 30718. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30718. Researched from reputable public sources and source-verified
+# (every cited URL re-fetched on the review date). Neutral language; legal
+# status marked. REVIEW before launch.
 personId: 30718
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -10,10 +11,12 @@ claims:
       en: Appointed Minister of Environmental Protection
     description:
       he: ב-29 בדצמבר 2022 מונתה עידית סילמן לשרה להגנת הסביבה בממשלה השלושים ושבע
-        בראשות בנימין נתניהו, תפקיד שבו היא מכהנת מטעם הליכוד.
+        בראשות בנימין נתניהו, תפקיד שבו היא מכהנת מטעם הליכוד (ממשלת מעבר מאז
+        פיזור הכנסת ה-25 ביולי 2026).
       en: On 29 December 2022, Idit Silman was appointed Minister of Environmental
         Protection in the thirty-seventh government of Israel led by Benjamin
-        Netanyahu, a post she holds on behalf of Likud.
+        Netanyahu, a post she holds on behalf of Likud (a caretaker government
+        since the 25th Knesset dispersed in July 2026).
     date: 2022-12-29
     sources:
       - url: https://en.wikipedia.org/wiki/Idit_Silman
@@ -22,6 +25,9 @@ claims:
       - url: https://www.jewishvirtuallibrary.org/Idit-Silman
         title: Idit Silman
         publisher: Jewish Virtual Library
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30718
+        title: MK Idit Silman — personal details and positions
+        publisher: Knesset (official)
   - kind: positive
     category: achievement
     title:
@@ -65,3 +71,88 @@ claims:
       - url: https://www.haaretz.com/israel-news/2022-04-06/ty-article/israels-ruling-coalition-loses-majority-as-whip-steps-down/00000180-5ba6-d718-afd9-dfbe97720000
         title: Israel's Ruling Coalition Loses Majority as Whip Steps Down
         publisher: Haaretz
+  - kind: negative
+    category: controversy
+    title:
+      he: ביקורת שיפוטית על גרסתה בפרשת "התקיפה בקניון" (2025)
+      en: Judicial criticism of her account in the 2024 shopping-mall incident (2025)
+    description:
+      he: >-
+        בינואר 2024 נעצרה תושבת רחובות, ירדן מן, לאחר שסילמן התלוננה כי תקפה אותה
+        במרכז קניות, וכתב אישום הוגש נגדה בתוך 24 שעות. ב-17 בספטמבר 2025 זיכה
+        בית משפט השלום את מן מכל האישומים; השופטת קרן וקסלר ציינה כי סילמן
+        "התקשתה לספק גרסה סבירה" וכי גרסתה השתנתה, ומתחה ביקורת גם על התנהלות
+        המשטרה. סילמן הגיבה ברשת X: "הלוואי והייתי שופטת שזרקו עליה נעל".
+      en: >-
+        In January 2024 a Rehovot resident, Yarden Man, was arrested after Silman
+        complained that she had assaulted her at a shopping centre, and was
+        charged within 24 hours. On 17 September 2025 a magistrate's court
+        acquitted Man of all charges; Judge Keren Waksler noted that Silman "had
+        difficulty providing a plausible account" and that her version had
+        shifted, and also criticized the police's handling of the case. Silman
+        responded on X: "If only I were a judge who had a shoe thrown at her".
+    date: 2025-09-17
+    sources:
+      - url: https://www.ynet.co.il/news/article/r100s6b00sel
+        title: זוכתה ירדן מן שהואשמה בתקיפת השרה סילמן
+        publisher: Ynet
+      - url: https://www.haaretz.co.il/news/law/2025-09-17/ty-article/.premium/00000199-5733-dd41-a1db-d777749e0000
+        title: בית המשפט זיכה את ירדן מן שהואשמה בתקיפת השרה עידית סילמן
+        publisher: Haaretz
+  - kind: negative
+    category: controversy
+    title:
+      he: שינוי מעמד התנין לצורך "כלא התנינים" בקציעות (2026)
+      en: Reclassifying the crocodile to enable the Ktzi'ot "crocodile prison" plan (2026)
+    description:
+      he: ביולי 2026 חתמה סילמן, בעקבות פניית השר איתמר בן גביר, על שינוי מעמד תנין
+        היאור מ"חיית בר מוגנת" ל"חיית בר מטופחת", כדי לאפשר החזקת תנינים במתחם כלא
+        קציעות כאמצעי הרתעה נגד אסירים ביטחוניים — בניגוד לעמדת הלשכה המשפטית של
+        משרדה ורשות הטבע והגנים, כפי שדווח. סילמן הסבירה כי "זה אמצעי הרתעה"
+        וכי "אנחנו מדברים בשפה שהאויבים שלנו מבינים". ב-2 באוגוסט 2026 הוציא בית
+        המשפט המחוזי בירושלים צו ארעי המקפיא את התוכנית בעקבות עתירת "תנו לחיות
+        לחיות", וב-16 באוגוסט קראו עשרות אקולוגים ומומחי חיות בר לסילמן לבטל את
+        ההחלטה לאלתר.
+      en: In July 2026, at the request of Minister Itamar Ben Gvir, Silman signed a
+        reclassification of the Nile crocodile from a "protected wild animal" to
+        a "cultivated wild animal", to allow crocodiles to be kept at the Ktzi'ot
+        prison compound as a deterrent against security prisoners — reportedly
+        against the position of her ministry's legal adviser and the Nature and
+        Parks Authority. Silman explained that "this is a deterrent measure" and
+        that "we speak in a language our enemies understand". On 2 August 2026
+        the Jerusalem District Court issued a temporary order freezing the plan
+        following a petition by the group Let the Animals Live, and on 16 August
+        dozens of ecologists and wildlife experts called on Silman to cancel the
+        decision immediately.
+    date: 2026-07-22
+    sources:
+      - url: https://www.maariv.co.il/news/politics/article-1347342
+        title: '"זה אמצעי הרתעה": סילמן מסבירה את ההחלטה שמסעירה את המדינה'
+        publisher: Maariv
+      - url: https://www.ynet.co.il/environment-science/article/rkbqh02sge
+        title: בית המשפט עצר בינתיים את תוכנית התנינים של סילמן ובן גביר
+        publisher: Ynet
+      - url: https://www.haaretz.co.il/nature/2026-08-16/ty-article/.premium/000001a0-0ade-db35-afee-7ffec0260000
+        title: "עשרות מומחים לסילמן: מזועזעים מהחלטתך בעניין התנינים, בטלי אותה לאלתר"
+        publisher: Haaretz
+  - kind: neutral
+    category: news
+    date: 2026-08-18
+    title:
+      he: נדחקה למקום לא ריאלי בפריימריז הליכוד לקראת בחירות 2026
+      en: Pushed to an unrealistic slot in the Likud primary ahead of the 2026 election
+    description:
+      he: בפריימריז הליכוד ב-17 באוגוסט 2026 קיבלה סילמן 17,850 קולות ודורגה במקום ה-25
+        ברשימה הארצית — מקום שמציב אותה, לאחר שילוב המשוריינים, במקום ה-46 ברשימת
+        הליכוד לכנסת, שאינו נחשב ריאלי.
+      en: In the Likud primary on 17 August 2026 Silman received 17,850 votes and was
+        ranked 25th in the national ranking — a result that, once the reserved
+        slots are added, places her 46th on the Likud list, not considered a
+        realistic slot.
+    sources:
+      - url: https://www.ynet.co.il/news/article/skcdnmzwfl
+        title: "טובה עד הפריימריז: עלייתה ונפילתה של עידית סילמן בליכוד"
+        publisher: Ynet
+      - url: https://www.themarker.com/news/politics/2026-08-18/ty-article/.premium/000001a0-1325-dd2f-a1b6-7befcc560000
+        title: עידית סילמן ומאי גולן הולכות הביתה, אפי נוה במקום ה-36 והאחראים ל-7 באוקטובר — ימשיכו
+        publisher: TheMarker

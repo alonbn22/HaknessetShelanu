@@ -1,70 +1,136 @@
-# PersonID 30814. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# Avi Maoz (PersonID 30814). Factual reporting from reputable public sources,
+# cited per claim. Neutral language. Sources re-verified 2026-09-18.
 personId: 30814
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
+    date: "2021-04-06"
     title:
-      he: מייסד ומנהיג מפלגת נוֹעם
-      en: Founder and leader of the Noam party
+      he: "מייסד ומנהיג מפלגת נועם וחבר הכנסת מטעמה"
+      en: "Founder and leader of the Noam party and its member of Knesset"
     description:
-      he: אבי מעוז הוא מייסד מפלגת נוֹעם, מפלגה ציונית-דתית שמרנית שהוקמה בשנת 2019,
-        ומכהן כראשהּ. הוא נבחר לראשונה לכנסת בבחירות 2021 (הכנסת ה-24) כשהיה
-        במקום השישי ברשימת הציונות הדתית, ומאז הוא נציגהּ היחיד של נוֹעם בכנסת.
-      en: Avi Maoz is the founder and leader of Noam, a religious-Zionist conservative
-        party established in 2019. He was first elected to the Knesset in the
-        2021 election (24th Knesset), placed sixth on the Religious Zionist
-        Party list, and serves as Noam's sole representative in the Knesset.
-    date: "2019"
+      he: "מעוז הוא ממייסדי מפלגת נועם, מפלגה ציונית-דתית שמרנית שהוקמה ב-2019, ועומד בראשה. הוא נכנס לכנסת לראשונה באפריל 2021 (הכנסת ה-24) מהמקום השישי ברשימת הציונות הדתית, ונבחר שוב ב-2022 מהמקום ה-11 ברשימה המשותפת. מאז נובמבר 2022 מכהן כנציגהּ היחיד של נועם וכיושב ראש הסיעה."
+      en: "Maoz co-founded Noam, a conservative religious-Zionist party established in 2019, and leads it. He first entered the Knesset in April 2021 (24th Knesset) from sixth place on the Religious Zionist list, and was re-elected in 2022 from 11th place on the joint list. Since November 2022 he has been Noam's sole representative and faction chair."
     sources:
-      - url: https://en.wikipedia.org/wiki/Avi_Maoz
-        title: Avi Maoz
-        publisher: Wikipedia
-      - url: https://www.wikidata.org/wiki/Q105103347
-        title: Avi Maoz (Q105103347)
-        publisher: Wikidata
+      - url: "https://en.wikipedia.org/wiki/Avi_Maoz"
+        title: "Avi Maoz"
+        publisher: "Wikipedia"
+      - url: "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%99_%D7%9E%D7%A2%D7%95%D7%96"
+        title: "אבי מעוז"
+        publisher: "Wikipedia (Hebrew)"
   - kind: positive
     category: achievement
+    date: "2022-11-27"
     title:
-      he: מינוי לסגן שר ולראש הרשות לזהות יהודית לאומית
-      en: Appointed deputy minister and head of the National Jewish Identity Authority
+      he: "סגן שר במשרד ראש הממשלה וראש הרשות לזהות יהודית לאומית (2023–2025)"
+      en: "Deputy minister in the Prime Minister's Office and head of the National Jewish Identity Authority (2023–2025)"
     description:
-      he: במסגרת ההסכם הקואליציוני שנחתם ב-27 בנובמבר 2022 מונה מעוז לסגן שר במשרד ראש
-        הממשלה, והופקד על רשות חדשה לזהות יהודית לאומית וכן על נתיב. המינוי נכנס
-        לתוקף בתחילת 2023. מעוז התפטר מתפקידו פעמיים — במרץ 2023 ושוב ב-24 במרץ
-        2025 — בטענה שההסכם הקואליציוני לא קוים.
-      en: Under the coalition agreement signed on 27 November 2022, Maoz was appointed
-        a deputy minister in the Prime Minister's Office, heading a new National
-        Jewish Identity Authority and overseeing Nativ. The appointment took
-        effect in early 2023. He resigned from the role twice — in March 2023
-        and again on 24 March 2025 — saying the coalition agreement had not been
-        honored.
-    date: 2022-11-27
+      he: "בהסכם הקואליציוני שנחתם ב-27 בנובמבר 2022 מונה מעוז לסגן שר במשרד ראש הממשלה, האחראי על רשות חדשה לזהות יהודית לאומית ועל נתיב. הוא התפטר בפברואר 2023 (בתוקף מ-1 במרץ) בטענה שההסכם אינו מכובד, וב-28 במאי 2023 אישרה הממשלה את שובו לתפקיד עם תקציב של כ-285 מיליון ש\"ח לרשות. ב-24 במרץ 2025 התפטר שוב."
+      en: "Under the coalition agreement signed on 27 November 2022, Maoz was appointed a deputy minister in the Prime Minister's Office, responsible for a new National Jewish Identity Authority and for Nativ. He resigned in February 2023 (effective 1 March), saying the agreement was not being honoured, and on 28 May 2023 the cabinet approved his return with a budget of about NIS 285 million for the authority. He resigned again on 24 March 2025."
     sources:
-      - url: https://en.wikipedia.org/wiki/Avi_Maoz
-        title: Avi Maoz
-        publisher: Wikipedia
-      - url: https://www.jpost.com/breaking-news/article-847410
-        title: Far-right MK Avi Maoz resigns from government
-        publisher: The Jerusalem Post
+      - url: "https://www.timesofisrael.com/far-right-anti-lgbtq-avi-maoz-quits-government-citing-ignored-coalition-deal/"
+        title: "Far-right anti-LGBTQ Avi Maoz quits government, says his coalition deal was ignored"
+        publisher: "The Times of Israel"
+      - url: "https://www.timesofisrael.com/cabinet-approves-maozs-return-to-role-overseeing-school-programing-jewish-identity/"
+        title: "Cabinet approves Maoz's return to role overseeing school programing, Jewish identity"
+        publisher: "The Times of Israel"
+      - url: "https://www.jpost.com/breaking-news/article-847410"
+        title: "Far-right MK Avi Maoz resigns from government"
+        publisher: "The Jerusalem Post"
   - kind: positive
     category: achievement
+    date: "1999-01-01"
     title:
-      he: קריירה בשירות הציבורי כמנהל בכיר במשרדי ממשלה
-      en: Public-service career as a senior government administrator
+      he: "מנכ\"ל משרד הפנים ומנכ\"ל משרד הבינוי והשיכון לפני כניסתו לפוליטיקה"
+      en: "Director-general of the Interior Ministry and of the Construction and Housing Ministry before entering politics"
     description:
-      he: לפני כניסתו לפוליטיקה צבר מעוז ניסיון רב בשירות הציבורי. בשנת 1999 מונה
-        למנהל משרד הפנים על ידי השר נתן שרנסקי, ולאחר מכן שימש כמנהל משרד הבינוי
-        והשיכון וכמנכ"ל ישראל בעלייה. בשנת 1975 התגייס לצה"ל, ובשנת 1977 היה
-        שותף בהקמת היישוב מגדל עוז בגוש עציון.
-      en: Before entering politics, Maoz had an extensive public-service career. In
-        1999 he was appointed Director of the Ministry of the Interior by
-        minister Natan Sharansky, and he later served as director of the
-        Ministry of Construction and Housing and as director-general of Yisrael
-        BaAliyah. He enlisted in the IDF in 1975 and in 1977 was a partner in
-        establishing the Migdal Oz settlement in Gush Etzion.
+      he: "מעוז, יליד 1956, התגייס לצה\"ל ב-1975 והיה ב-1977 שותף בהקמת קיבוץ מגדל עוז בגוש עציון. ב-1999 מונה על ידי השר נתן שרנסקי למנכ\"ל משרד הפנים, ובשנים 2001–2004 כיהן כמנכ\"ל משרד הבינוי והשיכון תחת השרים שרנסקי ואפי איתם."
+      en: "Born in 1956, Maoz enlisted in the IDF in 1975 and in 1977 was a co-founder of Kibbutz Migdal Oz in Gush Etzion. In 1999 minister Natan Sharansky appointed him director-general of the Interior Ministry, and from 2001 to 2004 he served as director-general of the Construction and Housing Ministry under ministers Sharansky and Effi Eitam."
     sources:
-      - url: https://en.wikipedia.org/wiki/Avi_Maoz
-        title: Avi Maoz
-        publisher: Wikipedia
+      - url: "https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%99_%D7%9E%D7%A2%D7%95%D7%96"
+        title: "אבי מעוז"
+        publisher: "Wikipedia (Hebrew)"
+      - url: "https://en.wikipedia.org/wiki/Avi_Maoz"
+        title: "Avi Maoz"
+        publisher: "Wikipedia"
+  - kind: negative
+    category: controversy
+    date: "2023-01-29"
+    title:
+      he: "הסמכות שהובטחה לו על התוכניות החיצוניות בבתי הספר עוררה שביתת תלמידים והתנגדות רשויות מקומיות"
+      en: "His promised authority over external school programs drew a student strike and opposition from municipalities"
+    description:
+      he: "ההסכם הקואליציוני העניק למעוז אחריות על היחידה לתוכניות חיצוניות במשרד החינוך, המאשרת ומתקצבת ספקי תוכן חיצוניים לבתי הספר. ב-29 בינואר 2023 שבתו אלפי תלמידי תיכון מעשרות בתי ספר וצעדו בתל אביב, בתמיכת מנהלים וועדי הורים, במחאה על המהלך ועל הרפורמה המשפטית; כמה רשויות מקומיות הודיעו כי יתנגדו למהלך או יממנו תוכניות בעצמן. מעוז אמר כי \"לא ביטלתי שום תוכנית\" והתחייב להנהיג \"שקיפות\" להורים לגבי תוכן הספקים ומקורות מימונם."
+      en: "The coalition agreement gave Maoz responsibility for the Education Ministry unit that approves and funds external content providers in public schools. On 29 January 2023 thousands of high-school students from dozens of schools went on strike and marched in Tel Aviv, backed by principals and parent committees, protesting the move and the judicial overhaul; several municipalities said they would oppose the move or fund programs themselves. Maoz said \"I haven't canceled any plan\" and pledged to introduce \"transparency\" for parents about vendors' content and funding sources."
+    sources:
+      - url: "https://www.jpost.com/breaking-news/article-729964"
+        title: "Thousands of Israeli high schoolers protest judicial reform, Avi Maoz"
+        publisher: "The Jerusalem Post"
+      - url: "https://www.timesofisrael.com/despite-delays-far-right-maoz-pledges-to-take-over-external-educational-programming/"
+        title: "Despite delays, far-right Maoz pledges to take over external educational programming"
+        publisher: "The Times of Israel"
+  - kind: negative
+    category: controversy
+    date: "2023-04-28"
+    title:
+      he: "כתב כי \"התמלאתי בושה וכאב\" מהצגת יו\"ר הכנסת אוחנה ובן זוגו בטקסים ממלכתיים"
+      en: "Wrote that he was \"filled with shame and pain\" at the presentation of Speaker Ohana and his partner at state ceremonies"
+    description:
+      he: "ב-28 באפריל 2023 פרסם מעוז מכתב לפעילי מפלגתו ובו כתב כי \"התמלאתי בושה וכאב\" כאשר בטקסי יום השואה, יום הזיכרון ויום העצמאות הוכרז על \"יושב ראש הכנסת ובן זוגו\" \"כאילו הייתה זו נורמה יהודית אותנטית ומקובלת\". הוא הוסיף כי הצביע בעד מינוי אוחנה במסגרת ההסכמים הקואליציוניים, כי \"טעה\" בכך שלא מחה, וכי באופן אישי \"אין לו דבר נגדו\"."
+      en: "On 28 April 2023 Maoz published a letter to his party's activists saying he was \"filled with shame and pain\" that at the Holocaust Remembrance Day, Memorial Day and Independence Day ceremonies \"the Knesset Speaker and his partner\" were announced \"as if this were an authentic and accepted Jewish norm\". He added that he had voted for Ohana's appointment under the coalition agreements, that he had \"made a mistake\" by not protesting, and that on a personal level he had \"nothing against him\"."
+    sources:
+      - url: "https://www.timesofisrael.com/far-right-mk-shamed-and-pained-by-gay-knesset-speakers-husband-attending-events/"
+        title: "Far-right MK 'embarrassed' by gay Knesset speaker's husband attending events"
+        publisher: "The Times of Israel"
+      - url: "https://www.haaretz.co.il/news/politi/2023-04-28/ty-article/.premium/00000187-c6e7-d9b4-abaf-eeff36af0000"
+        title: "אבי מעוז: התמלאתי בושה וכאב מההכרזה בטקסים על אוחנה ובן זוגו"
+        publisher: "Haaretz"
+      - url: "https://www.mako.co.il/news-politics/2023_q2/Article-57e51bddec6c781026.htm"
+        title: "חה\"כ אבי מעוז תוקף את הצגת אוחנה ובן זוגו בטקסים רשמיים"
+        publisher: "N12 / Mako"
+  - kind: neutral
+    category: role
+    date: "2025-03-24"
+    title:
+      he: "התפטר מתפקיד סגן השר; מכהן כחבר כנסת וכיושב ראש סיעת נועם"
+      en: "Resigned as deputy minister; serves as a member of Knesset and chair of the Noam faction"
+    description:
+      he: "ב-24 במרץ 2025 הודיע מעוז לראש הממשלה על התפטרותו מתפקיד סגן השר במשרד ראש הממשלה, בטענה כי \"מדינה עמוקה\" במשרדי המשפטים והחינוך מסכלת את עבודתו וכי אף סעיף בהסכם הקואליציוני לא קוים, כך שהיה \"סגן שר על הנייר בלבד\". הוא נותר חבר כנסת ויושב ראש סיעת נועם."
+      en: "On 24 March 2025 Maoz informed the prime minister that he was resigning as deputy minister in the Prime Minister's Office, alleging that a \"deep state\" in the Justice and Education ministries was thwarting his work and that no clause of his coalition agreement had been fulfilled, leaving him \"a deputy minister in name only\". He remains a member of Knesset and chair of the Noam faction."
+    sources:
+      - url: "https://www.timesofisrael.com/liveblog_entry/deputy-minister-avi-maoz-quits-government-railing-against-pressure-of-deep-state/"
+        title: "Deputy Minister Avi Maoz quits government, railing against pressure of 'deep state'"
+        publisher: "The Times of Israel"
+      - url: "https://www.jpost.com/breaking-news/article-847410"
+        title: "Far-right MK Avi Maoz resigns from government"
+        publisher: "The Jerusalem Post"
+  - kind: neutral
+    category: news
+    date: "2026-08-10"
+    title:
+      he: "פתח את מערכת הבחירות תחת השם החדש \"נעם לישראל\""
+      en: "Launched the election campaign under the party's new name, \"Noam for Israel\""
+    description:
+      he: "ב-10 באוגוסט 2026 הציג מעוז את השם החדש של מפלגתו, \"נעם לישראל\", ואמר כי \"הגיע הזמן לחבר מחדש את מחנה הימין\" — לפנות לציבור החרדי, הציוני-דתי והמסורתי — וכי בכוונתו להיכנס לכנסת הבאה בראש סיעה של ארבעה מנדטים לפחות, כשהחינוך בראש סדר העדיפויות."
+      en: "On 10 August 2026 Maoz presented his party's new name, \"Noam for Israel\", saying \"the time has come to reconnect the right-wing camp\" — appealing to Haredi, religious-Zionist and traditional voters — and that he intends to enter the next Knesset heading a faction of at least four seats, with education as his top priority."
+    sources:
+      - url: "https://www.inn.co.il/news/703637"
+        title: "\"הגיע הזמן לחבר מחדש את מחנה הימין\": אבי מעוז יוצא לדרך חדשה"
+        publisher: "Arutz 7 / Israel National News"
+  - kind: neutral
+    category: news
+    date: "2026-09-08"
+    title:
+      he: "עומד בראש רשימת \"נעם לישראל\", הרצה לבדה לכנסת ה-26"
+      en: "Heads the \"Noam for Israel\" list, running on its own for the 26th Knesset"
+    description:
+      he: "ב-8 בספטמבר 2026 הגישה נועם לוועדת הבחירות המרכזית רשימה עצמאית לבחירות 27 באוקטובר, בהנחיית הרב צבי ישראל טאו. מעוז עומד בראשה, אחריו הרב שמעון טובול, סגן ראש עיריית באר שבע, וסא\"ל (מיל') אליהו ליבמן; המפלגה ביקשה את האות \"ני\". מעוז אמר: \"הבחירות האלה הן על החינוך ועל הזהות היהודית של המדינה\"."
+      en: "On 8 September 2026 Noam filed an independent list with the Central Elections Committee for the 27 October election, at the direction of Rabbi Tzvi Yisrael Tau. Maoz heads the list, followed by Rabbi Shimon Tubol, deputy mayor of Beersheba, and Lt. Col. (res.) Eliyahu Libman; the party requested the ballot letters \"ני\". Maoz said: \"These elections are about education and the Jewish identity of the state\"."
+    sources:
+      - url: "https://www.srugim.co.il/101010761-%D7%94%D7%A4%D7%99%D7%A6%D7%95%D7%9C-%D7%91%D7%99%D7%9E%D7%99%D7%9F-%D7%9E%D7%A4%D7%9C%D7%92%D7%AA-%D7%A0%D7%A2%D7%9D-%D7%A8%D7%A6%D7%94-%D7%9C%D7%91%D7%93-%D7%96%D7%95-%D7%94%D7%A8%D7%A9%D7%99%D7%9E%D7%94"
+        title: "הפיצול בימין: מפלגת 'נעם' רצה לבד; זו הרשימה של אבי מעוז"
+        publisher: "Srugim"
+      - url: "https://www.kipa.co.il/%D7%97%D7%93%D7%A9%D7%95%D7%AA/1231371-0/"
+        title: "הרשימה המלאה של מפלגת \"נעם לישראל\" לקראת בחירות 2026"
+        publisher: "Kipa"

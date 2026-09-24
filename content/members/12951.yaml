@@ -1,4 +1,5 @@
 personId: 12951
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -8,7 +9,7 @@ claims:
     description:
       he: יריב לוין מכהן כחבר הכנסת מטעם הליכוד מאז 2009. הוא שימש יושב ראש הכנסת (2020-2021 ושוב בדצמבר 2022), שר התיירות, השר לביטחון פנים ושר העלייה והקליטה בפועל, ומאז 2022 מכהן כסגן ראש הממשלה ושר המשפטים.
       en: Yariv Levin has served as a Likud member of the Knesset since 2009. He held the office of Speaker of the Knesset (2020-2021 and again in December 2022), and served as Minister of Tourism, Minister of Public Security and acting Minister of Aliyah and Integration. Since 2022 he has served as Deputy Prime Minister and Minister of Justice.
-    date: 2009-02-24
+    date: "2009-02-24"
     sources:
       - url: https://en.wikipedia.org/wiki/Yariv_Levin
         title: Yariv Levin
@@ -49,7 +50,7 @@ claims:
   - kind: negative
     category: controversy
     status: ongoing
-    date: 2023-01-04
+    date: "2023-01-04"
     title:
       he: אדריכל הרפורמה המשפטית של 2023
       en: Architect of the 2023 judicial reform
@@ -58,6 +59,8 @@ claims:
     description:
       he: בינואר 2023, כשר המשפטים, הציג לוין תוכנית מקיפה לשינוי מערכת המשפט שעוררה מחאות נרחבות; בינואר 2024 פסל בית המשפט העליון את תיקון עילת הסבירות שנחקק במסגרתה. במרץ 2025 אישרה הכנסת את התיקון שקידם לשינוי הרכב הוועדה לבחירת שופטים, שייכנס לתוקף עם כינון הכנסת הבאה. ביוני 2026 הורה בג"ץ ללוין לכנס את הוועדה לבחירת שופטים וקבע פה אחד כי עליו לשתף פעולה עם נשיא בית המשפט העליון יצחק עמית, שבמינויו סירב לוין להכיר; בהמשך אותו חודש התכנסה הוועדה ובחרה 68 בעלי תפקידים שיפוטיים לאחר הקפאה של כשנה וחצי.
       en: In January 2023, as Justice Minister, Levin announced a sweeping program to change Israel's judicial system, prompting widespread protests; in January 2024 the Supreme Court struck down the reasonableness amendment enacted under it. In March 2025 the Knesset passed his amendment changing the composition of the Judicial Selection Committee, set to take effect when the next Knesset convenes. In June 2026 the High Court of Justice ordered Levin to convene the Judicial Selection Committee and ruled unanimously that he must cooperate with Supreme Court President Isaac Amit, whose appointment Levin had declined to recognize; later that month the committee convened and selected 68 judicial officials after a freeze of about a year and a half.
+      ar: في يناير 2023، وبصفته وزيرًا للعدل، أعلن ليفين عن برنامج شامل لتغيير النظام القضائي في إسرائيل، ما أثار احتجاجات واسعة؛ وفي يناير 2024 ألغت المحكمة العليا تعديل "المعقولية" الذي سُنّ في إطاره. في مارس 2025 أقرّ الكنيست تعديله لتغيير تركيبة لجنة اختيار القضاة، على أن يدخل حيز التنفيذ مع انعقاد الكنيست المقبل. في يونيو 2026 أمرت محكمة العدل العليا ليفين بعقد لجنة اختيار القضاة وقضت بالإجماع بأن عليه التعاون مع رئيس المحكمة العليا يتسحاق عميت، الذي رفض ليفين الاعتراف بتعيينه؛ وفي وقت لاحق من الشهر نفسه انعقدت اللجنة واختارت 68 من أصحاب المناصب القضائية بعد تجميد دام نحو عام ونصف.
+      ru: В январе 2023 года, будучи министром юстиции, Левин представил масштабную программу изменения судебной системы Израиля, вызвавшую широкие протесты; в январе 2024 года Верховный суд отменил принятую в её рамках поправку о «разумности». В марте 2025 года Кнессет принял продвигаемую им поправку об изменении состава комиссии по назначению судей, которая вступит в силу с созывом следующего Кнессета. В июне 2026 года Высший суд справедливости обязал Левина созвать комиссию по назначению судей и единогласно постановил, что он должен сотрудничать с председателем Верховного суда Ицхаком Амитом, назначение которого Левин отказывался признавать; позднее в том же месяце комиссия собралась и избрала 68 судейских должностных лиц после заморозки, длившейся около полутора лет.
     sources:
       - url: https://en.wikipedia.org/wiki/2023_Israeli_judicial_reform
         title: 2023 Israeli judicial reform
@@ -71,4 +74,76 @@ claims:
       - url: https://www.jpost.com/israel-news/article-900747
         title: Judicial Selection Committee selects 68 officials for court system after year-and-a-half freeze
         publisher: The Jerusalem Post
-lastReviewed: 2026-07-05
+  - kind: neutral
+    category: role
+    date: "2025-11-24"
+    title:
+      he: מכהן גם כשר העבודה, השר לשירותי דת ושר ירושלים ומסורת ישראל
+      en: Also serves as Minister of Labor, Minister of Religious Services and Minister of Jerusalem and Jewish Tradition
+    description:
+      he: לצד כהונתו כשר המשפטים וסגן ראש הממשלה, אישרה הכנסת ב-24 בנובמבר 2025 את מינויו של לוין לשר העבודה, לשר לשירותי דת ולשר ירושלים ומסורת ישראל, לאחר שמשרדים אלה נותרו ללא שר בעקבות פרישת שרי ש"ס מהממשלה ביולי 2025 (מ-29 ביולי 2025 שימש לוין ממלא מקום שר העבודה והשר לשירותי דת, וכן ממלא מקום שר הפנים עד 24 בדצמבר 2025).
+      en: Alongside his posts as Minister of Justice and Deputy Prime Minister, on 24 November 2025 the Knesset approved Levin's appointment as Minister of Labor, Minister of Religious Services and Minister of Jerusalem and Jewish Tradition, after those ministries were left without a minister following the Shas ministers' resignation from the government in July 2025 (from 29 July 2025 Levin had served as acting Minister of Labor and of Religious Services, and as acting Minister of the Interior until 24 December 2025).
+    sources:
+      - url: https://www.haaretz.co.il/news/politi/2025-11-24/ty-article/0000019a-b649-dcd7-a3be-be799db70000
+        title: לוין מונה לשר הדתות, העבודה וירושלים; חיים כץ מונה לשר הבריאות והרווחה
+        publisher: Haaretz
+      - url: https://news.walla.co.il/item/3796275
+        title: "יעמוד בראש 3 משרדים נוספים: המינויים החדשים של לוין"
+        publisher: Walla
+      - url: https://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_PersonToPosition?%24filter=PersonID%20eq%2012951
+        title: Knesset OData — positions held by person 12951
+        publisher: The Knesset
+  - kind: neutral
+    category: news
+    date: "2026-07-08"
+    title:
+      he: קרא שלא לקיים בחירות חוזרות למבקר המדינה בניגוד לפסיקת בג"ץ
+      en: Called for not holding a repeat State Comptroller election despite a High Court ruling
+    description:
+      he: לאחר שבג"ץ פסל את בחירת עו"ד מיכאל ראבילו למבקר המדינה בשל פגם בהליך ההצבעה בכנסת והורה על בחירות חוזרות, אמר לוין ב-8 ביולי 2026 בריאיון רדיו כי "אי אפשר לקיים בחירות חוזרות לתפקיד מבקר המדינה" וכי ראבילו "צריך פשוט להיכנס לתפקידו". מקורבי ראבילו מסרו כי הוא תומך בקיום פסק הדין ולא ישתף פעולה עם הפרתו.
+      en: After the High Court of Justice invalidated the Knesset's election of attorney Michael Rabello as State Comptroller over a flaw in the voting process and ordered a repeat election, Levin said in a radio interview on 8 July 2026 that "a repeat election for State Comptroller cannot be held" and that Rabello "should simply take office". Associates of Rabello said he supports implementing the ruling and would not cooperate with defying it.
+    sources:
+      - url: https://www.ynet.co.il/news/article/S1RlSDjmze
+        title: "יריב לוין קורא להפר את פסיקת בג\"ץ: \"אי אפשר לקיים בחירות חוזרות למבקר\""
+        publisher: Ynet
+      - url: https://www.haaretz.co.il/news/law/2026-07-08/ty-article/.premium/0000019f-404d-d07c-af9f-c85d09310000
+        title: "לוין קרא להפר את פסיקת בג\"ץ; מקורבי ראבילו: הוא לא ישתף פעולה עם הפרתה"
+        publisher: Haaretz
+      - url: https://news.walla.co.il/item/3851807
+        title: "יריב לוין: \"אי אפשר לקיים בחירות חוזרות למבקר המדינה. ראבילו צריך להיכנס לתפקיד\""
+        publisher: Walla
+  - kind: neutral
+    category: news
+    date: "2026-08-17"
+    title:
+      he: דורג שלישי בפריימריז הליכוד לכנסת ה-26
+      en: Placed third in the Likud primary for the 26th Knesset
+    description:
+      he: בפריימריז הליכוד ב-17 באוגוסט 2026 דורג לוין במקום השלישי מבין המתמודדים (41,765 קולות), אחרי אלי כהן ואמיר אוחנה, ושובץ במקום גבוה ברשימת הליכוד לבחירות ב-27 באוקטובר 2026.
+      en: In the Likud primary on 17 August 2026 Levin placed third among the candidates (41,765 votes), after Eli Cohen and Amir Ohana, securing a high slot on the Likud list for the 27 October 2026 election.
+    sources:
+      - url: https://www.timesofisrael.com/cohen-levin-ohana-and-regev-top-likud-primary-with-over-60-of-vote-counted/
+        title: Cohen, Ohana, Levin and Regev top Likud party primary; Netanyahu 'very satisfied' with results
+        publisher: The Times of Israel
+      - url: https://www.globes.co.il/news/article.aspx?did=1001552600
+        title: "ספירת הקולות הסתיימה: כך נראית רשימת הליכוד החדשה"
+        publisher: Globes
+      - url: https://en.wikipedia.org/wiki/2026_Likud_primary
+        title: 2026 Likud primary
+        publisher: Wikipedia
+  - kind: neutral
+    category: news
+    date: "2026-08-23"
+    title:
+      he: בג"ץ הקפיא מינויים במח"ש המחודשת שבסמכות שר המשפטים
+      en: High Court froze appointments to the restructured Police Internal Investigations Department under the justice minister
+    description:
+      he: ב-23 באוגוסט 2026 הורה בג"ץ, בצו ביניים, שלא לקדם מינויים בכירים במחלקה לחקירות שוטרים במתכונתה החדשה - לפי חוק שאישרה הכנסת היוצאת, המוציא את המחלקה מפרקליטות המדינה וקובע מנגנון מינויים חדש בו מעורב שר המשפטים - עד להכרעה בבקשות לצווי ביניים נגד יישום החוק. היועצת המשפטית לממשלה ביקשה למנוע את המינויים בתקופת הבחירות; לוין טען כי המינויים נעשים על ידי ועדה עצמאית וכי "הבחירות המתקרבות אינן מצדיקות עצירת יישומו של חוק שחוקקה הכנסת".
+      en: On 23 August 2026 the High Court of Justice issued an interim order barring any advancement of senior appointments to the restructured Police Internal Investigations Department - under a law passed by the outgoing Knesset that removes the department from the State Attorney's Office and creates a new appointments mechanism involving the justice minister - pending a ruling on requests for interim injunctions against implementing the law. The Attorney General had asked to block the appointments during the election period; Levin argued the appointments are made by an independent committee and that "the approaching election does not justify stopping implementation of a law enacted by the Knesset".
+    sources:
+      - url: https://www.timesofisrael.com/high-court-bars-justice-minister-from-making-appointments-to-revamped-police-watchdog/
+        title: High Court bars justice minister from making appointments to revamped police watchdog
+        publisher: The Times of Israel
+      - url: https://www.jpost.com/israel-news/article-906356
+        title: High Court blocks new police appointments pending decision on restructuring law
+        publisher: The Jerusalem Post

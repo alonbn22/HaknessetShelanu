@@ -1,7 +1,8 @@
-# PersonID 1025. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 1025. Researched from reputable public sources and source-verified
+# (every cited URL re-fetched on the review date). Neutral language; legal
+# status marked. REVIEW before launch.
 personId: 1025
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -26,44 +27,66 @@ claims:
     description:
       he: "גמליאל, חברת כנסת מטעם הליכוד, כיהנה במגוון תפקידי שר: השרה לשוויון חברתי
         (2015–2020), השרה להגנת הסביבה (2020–2021) והשרה למודיעין (2023–2024).
-        מאז מרץ 2024 היא מכהנת כשרת החדשנות, המדע והטכנולוגיה."
+        מאז 18 במרץ 2024 היא מכהנת כשרת החדשנות, המדע והטכנולוגיה (בממשלת מעבר
+        מאז פיזור הכנסת ה-25 ביולי 2026)."
       en: "A Likud member of the Knesset, Gamliel has held multiple cabinet posts:
         Minister for Social Equality (2015–2020), Minister of Environmental
         Protection (2020–2021), and Minister of Intelligence (2023–2024). Since
-        March 2024 she has served as Minister of Innovation, Science and
-        Technology."
-    date: 2024-03-01
+        18 March 2024 she has served as Minister of Innovation, Science and
+        Technology (in a caretaker government since the 25th Knesset dispersed
+        in July 2026)."
+    date: 2024-03-18
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/1025
+        title: MK Gila Gamliel — personal details and positions
+        publisher: Knesset (official)
       - url: https://en.wikipedia.org/wiki/Gila_Gamliel
         title: Gila Gamliel
         publisher: Wikipedia
       - url: https://www.jpost.com/business-and-innovation/article-794095
         title: Israel's new innovation minister aims to lead in AI revolution
         publisher: The Jerusalem Post
+  - kind: positive
+    category: award
+    title:
+      he: נבחרה למנהיגה צעירה עולמית של הפורום הכלכלי העולמי (2010)
+      en: Selected as a World Economic Forum Young Global Leader (2010)
+    description:
+      he: ב-3 במרץ 2010 נבחרה גמליאל לתוכנית המנהיגים הצעירים העולמיים (Young Global
+        Leaders) של הפורום הכלכלי העולמי בדאבוס, והייתה לפוליטיקאית הישראלית
+        הראשונה שנבחרה לתוכנית.
+      en: On 3 March 2010 Gamliel was selected for the World Economic Forum's Young
+        Global Leaders programme (Davos), reportedly the first Israeli politician
+        chosen for it.
+    date: 2010-03-03
+    sources:
+      - url: https://he.wikipedia.org/wiki/%D7%92%D7%99%D7%9C%D7%94_%D7%92%D7%9E%D7%9C%D7%99%D7%90%D7%9C
+        title: גילה גמליאל
+        publisher: Wikipedia (Hebrew)
   - kind: negative
     category: controversy
-    status: acquitted
+    status: settled
     title:
       he: הפרת סגר הקורונה ביום כיפור 2020; היועץ המשפטי לא פתח בחקירה
       en: COVID-19 lockdown breach on Yom Kippur 2020; no criminal probe opened
     description:
       he: באוקטובר 2020, בעת כהונתה כשרה להגנת הסביבה, נסעה גמליאל מביתה בתל אביב
         לטבריה לתפילות יום כיפור בעת הסגר הארצי השני, ולאחר מכן אובחנה כחיובית
-        לקורונה. בעקבות דיווחים שלפיהם מסרה מידע שגוי לחוקרים האפידמיולוגיים,
-        נבחנה האפשרות לפתוח בחקירה פלילית. היועץ המשפטי לממשלה אביחי מנדלבליט
-        החליט שלא לפתוח בחקירה, קבע כי 'אין בסיס' לטענה שמסרה מידע כוזב ואמר כי
-        שיתפה פעולה ומסרה עובדות אמת; הפער יוחס לתקלה במערכת המחשוב של משרד
-        הבריאות.
+        לקורונה. גמליאל אמרה כי פעלה לפי ההנחיות אך "ייתכן שטעיתי בשיקול הדעת".
+        בעקבות דיווחים שלפיהם מסרה מידע שגוי לחוקרים האפידמיולוגיים, נבחנה
+        האפשרות לפתוח בחקירה פלילית; היועץ המשפטי לממשלה אביחי מנדלבליט החליט
+        ב-19 באוקטובר 2020 שלא לפתוח בחקירה, קבע כי "אין בסיס" לטענה שמסרה מידע
+        כוזב, והפער יוחס לתקלה במערכת המחשוב של משרד הבריאות.
       en: In October 2020, while serving as Minister of Environmental Protection,
         Gamliel travelled from her Tel Aviv home to Tiberias for Yom Kippur
         prayers during Israel's second national lockdown, and was subsequently
-        diagnosed with COVID-19. Following reports that she had given incorrect
-        information to epidemiological contact tracers, the possibility of a
-        criminal investigation was examined. Attorney General Avichai Mandelblit
-        decided not to open a probe, finding 'no basis' for the allegation that
-        she misled tracers and stating she had 'fully cooperated and provided
-        true facts'; the discrepancy was attributed to a Health Ministry
-        computer glitch.
+        diagnosed with COVID-19. Gamliel said she had acted in line with the
+        guidelines but "may have erred in judgment". Following reports that she
+        had given incorrect information to contact tracers, a criminal
+        investigation was considered; on 19 October 2020 Attorney General
+        Avichai Mandelblit decided not to open a probe, finding "no basis" for
+        the allegation that she misled tracers, and the discrepancy was
+        attributed to a Health Ministry computer glitch.
     date: 2020-10-05
     sources:
       - url: https://www.timesofisrael.com/minister-broke-lockdown-for-yom-kippur-prayers-days-before-virus-diagnosis/
@@ -73,3 +96,57 @@ claims:
         title: Computer glitch said to blame for suspicions minister lied to contact
           tracers
         publisher: The Times of Israel
+      - url: https://www.ynet.co.il/news/article/rkqUmCcDP
+        title: "השרה גילה גמליאל לא תיחקר: היועמ\"ש החליט כי אין בסיס להמשך הבדיקה"
+        publisher: Ynet
+  - kind: neutral
+    category: news
+    date: 2026-08-26
+    title:
+      he: הגישה תלונה במשטרה על הספירה החוזרת בפריימריז הליכוד
+      en: Filed a police complaint over the Likud primary recount
+    description:
+      he: בפריימריז הליכוד לקראת בחירות 2026 שובצה גמליאל תחילה במקום ה-25 (מקום שמור
+        לאישה). לאחר ספירה חוזרת בקלפיות בבאר יעקב הודיע הליכוד כי ח"כ אתי עטיה
+        עקפה אותה, וגמליאל נדחקה למקום ה-35. ב-26 באוגוסט 2026 הגישה גמליאל
+        תלונה במשטרה בטענה לאי-סדרים בספירה החוזרת, שלדבריה נערכה בלי שנציגה
+        הורשה להיות נוכח; השר חיים כץ דחה את הטענות וכינה אותן "שקרים והכפשות".
+      en: In the Likud primary ahead of the 2026 election Gamliel was initially placed
+        25th (a slot reserved for a woman). After a recount of ballot boxes in
+        Be'er Ya'akov, Likud announced that MK Eti Atia had overtaken her and
+        Gamliel was moved to the 35th slot. On 26 August 2026 Gamliel filed a
+        police complaint alleging irregularities in the recount, which she said
+        was held without her representative being allowed to attend; Minister
+        Haim Katz rejected the allegations as "lies and slander".
+    sources:
+      - url: https://www.haaretz.co.il/news/elections/2026-08-26/ty-article/.premium/000001a0-3df5-d936-a7ac-3dfd98e10000
+        title: גילה גמליאל הגישה תלונה למשטרה בטענה לזיופים בספירה החוזרת בליכוד
+        publisher: Haaretz
+      - url: https://www.ynet.co.il/news/elections2026/article/rjvzgyzdme
+        title: "אחרי התלונה במשטרה, בליכוד עדכנו רשמית: גמליאל נדחקה למקום ה-35"
+        publisher: Ynet
+      - url: https://www.mako.co.il/news-israel-elections/2026/Article-f4046e31eec30a1026.htm
+        title: "סאגת הפריימריז בליכוד: האם גילה גמליאל תודח?"
+        publisher: N12
+  - kind: neutral
+    category: news
+    date: 2026-09-07
+    title:
+      he: בית הדין של הליכוד דחה את עתירותיה; שובצה במקום ה-25 ברשימה לכנסת ה-26
+      en: Likud court rejected her petitions; placed 25th on the list for the 26th
+        Knesset
+    description:
+      he: ב-7 בספטמבר 2026 דחה בית הדין של הליכוד, ברוב של ארבעה מול אחד, את עתירותיה
+        של גמליאל נגד תוצאות הספירה החוזרת, וקבע כי ח"כ אתי עטיה תשובץ במקום
+        ה-20 וגמליאל במקום ה-25 ברשימת הליכוד לבחירות 27 באוקטובר 2026.
+      en: On 7 September 2026 the Likud party court rejected, by a 4–1 majority,
+        Gamliel's petitions against the recount results, ruling that MK Eti Atia
+        would be placed 20th and Gamliel 25th on the Likud list for the 27
+        October 2026 election.
+    sources:
+      - url: https://www.kikar.co.il/political-news/likud-court-decision-atia-gamliel-final-ruling
+        title: "בית הדין של הליכוד קבע: אתי עטיה תשובץ במקום 20, גילה גמליאל במקום ה-25"
+        publisher: Kikar HaShabbat
+      - url: https://he.wikipedia.org/wiki/%D7%92%D7%99%D7%9C%D7%94_%D7%92%D7%9E%D7%9C%D7%99%D7%90%D7%9C
+        title: גילה גמליאל
+        publisher: Wikipedia (Hebrew)

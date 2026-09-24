@@ -2,6 +2,7 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 30700
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -13,7 +14,7 @@ claims:
         שזכה בבחירות 2008 ונבחר מחדש ב-2013.
       en: Nir Barkat served as Mayor of Jerusalem from 11 November 2008 to 4 December
         2018, after winning the 2008 election and being re-elected in 2013.
-    date: 2008-11-11
+    date: "2008-11-11"
     sources:
       - url: https://en.wikipedia.org/wiki/Nir_Barkat
         title: Nir Barkat
@@ -32,7 +33,7 @@ claims:
       en: Barkat was appointed Minister of Economy and Industry in Israel's 37th
         government on behalf of the Likud party, taking office on 1 January
         2023.
-    date: 2023-01-01
+    date: "2023-01-01"
     sources:
       - url: https://en.wikipedia.org/wiki/Nir_Barkat
         title: Nir Barkat
@@ -55,8 +56,49 @@ claims:
         software and later became a venture investment firm that invested in
         companies such as Check Point. According to a 2013 Forbes ranking he was
         among Israel's wealthiest politicians.
-    date: 1988-01-01
+    date: "1988-01-01"
     sources:
       - url: https://en.wikipedia.org/wiki/Nir_Barkat
         title: Nir Barkat
+        publisher: Wikipedia
+  - kind: negative
+    category: controversy
+    date: "2026-02-10"
+    title:
+      he: שאלות על ניגוד עניינים בין עסקיו לבין כהונתו כשר הכלכלה
+      en: Conflict-of-interest questions over his business holdings as Economy Minister
+    description:
+      he: תחקיר "שומרים" (יולי 2023) דיווח כי חצי שנה לאחר כניסתו לתפקיד שר הכלכלה החזיק ברקת באחזקות בחברות רבות וטען כי הן מנוהלות בנאמנות עיוורת בידי אחיו, בעוד שהכללים אינם מתירים לשרים למנות קרוב מדרגה ראשונה כנאמן; לשכתו מסרה כי "השר עושה את הנדרש ממנו לפי החוק". בפברואר 2026 דיווח N12 כי אחיו, איש העסקים אלי ברקת, הוא שגיבש בפגישות עם ראשי התעשייה את מיזם "הסל של המדינה" להוזלת מזון, בעוד הסדר ניגוד העניינים של השר מחייב הפרדה מלאה מעסקי אחיו; ברקת השיב כי "אנשי מקצוע סייעו למיזם" וכי המשרד גיבש את התוכנית עם אנשי המקצוע שלו ובליווי משפטי. בינואר 2026 הגיש ברקת נגד חדשות 12 והכתב עמרי מניב תביעת לשון הרע על 12 מיליון שקלים בגין תחקיר על עסקיו, שאותו כינה "כוזב, רשלני ומשמיץ".
+      en: A Shomrim investigation (July 2023) reported that six months into his term as Economy Minister Barkat still held stakes in many companies and said they were in a blind trust managed by his brother, whereas the rules do not allow ministers to use a first-degree relative as trustee; his office said "the minister does what is required of him by law". In February 2026 N12 reported that his brother, businessman Eli Barkat, had shaped the "State Basket" food-price initiative in meetings with industry leaders, while the minister's conflict-of-interest arrangement requires complete separation from his brother's business affairs; Barkat responded that "expert professionals assisted the initiative" and that the ministry developed the plan with its professional staff under legal guidance. In January 2026 Barkat filed a NIS 12 million libel suit against Channel 12 News and reporter Omri Maniv over an investigative report on his business ties, which he called "false, negligent and defamatory".
+    sources:
+      - url: https://www.shomrim.news/eng/barkat-still-connected
+        title: "Still Connected: Economy Minister Nir Barkat's Business Empire Raises Conflict of Interest Concerns"
+        publisher: Shomrim
+      - url: https://www.mako.co.il/news-money/2026_q1/Article-8f3a0a7e4984c91026.htm
+        title: "חשיפה | מאחורי \"הסל של המדינה\" של שר הכלכלה – עומד אחיו"
+        publisher: N12
+      - url: https://www.jpost.com/israel-news/article-883251
+        title: Economy Minister Barkat sues Channel 12 for NIS 12m. in largest libel lawsuit ever filed in Israel
+        publisher: The Jerusalem Post
+  - kind: neutral
+    category: news
+    date: "2026-08-17"
+    title:
+      he: דורג במקום ה-16 בפריימריז הליכוד לכנסת ה-26
+      en: Placed 16th in the Likud primary for the 26th Knesset
+    description:
+      he: בפריימריז הליכוד ב-17 באוגוסט 2026 דורג ברקת במקום ה-16 מבין המתמודדים (23,281 קולות), בהפרש קטן מזאב אלקין, מה שמתורגם למקום ה-24 ברשימה לאחר שיבוץ המקומות השמורים - מקום שהוגדר בתקשורת כגבולי. ברקת מסר כי "השריונים הרבים של ראש הממשלה צמצמו את הרשימה הארצית ל-17 מקומות ריאליים בלבד ליותר מ-40 שרים, חברי כנסת ומועמדים חדשים".
+      en: In the Likud primary on 17 August 2026 Barkat placed 16th among the candidates (23,281 votes), narrowly ahead of Ze'ev Elkin, which translates to the 24th slot on the list once reserved places are inserted - a position described in the press as borderline. Barkat said that "the prime minister's numerous reserved slots shrank the national list to only 17 realistic places for more than 40 ministers, MKs and new candidates".
+    sources:
+      - url: https://news.walla.co.il/item/3861207
+        title: "ספירת הקולות בליכוד נגמרה: אלי כהן במקום הראשון, אוחנה ולוין אחריו - ומי נשאר בחוץ?"
+        publisher: Walla
+      - url: https://www.globes.co.il/news/article.aspx?did=1001552600
+        title: "ספירת הקולות הסתיימה: כך נראית רשימת הליכוד החדשה"
+        publisher: Globes
+      - url: https://www.maariv.co.il/news/politics/article-1357084
+        title: "פריימריז בליכוד: נתניהו התחזק, ברקת וסילמן הסתבכו"
+        publisher: Maariv
+      - url: https://en.wikipedia.org/wiki/2026_Likud_primary
+        title: 2026 Likud primary
         publisher: Wikipedia

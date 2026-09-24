@@ -1,0 +1,28 @@
+# PersonID 30923. New member of the 25th Knesset (entered 2026-09-09); the
+# Knesset's own pages carry no biography yet, so the record holds only the
+# verified entry facts. Neutral language. Reviewed 2026-09-19.
+personId: 30923
+lastReviewed: "2026-09-19"
+claims:
+  - kind: neutral
+    category: role
+    title:
+      he: "נכנסה לכנסת ב-9 בספטמבר 2026 במקום אלעזר שטרן (יש עתיד)"
+      en: "Entered the Knesset on 9 September 2026 in place of Elazar Stern (Yesh Atid)"
+    description:
+      he: "רוני מלכאי נכנסה לכנסת ה-25 מטעם יש עתיד ב-9 בספטמבר 2026, לאחר שאלעזר שטרן הודיע על פרישה מיש עתיד (14 באוגוסט 2026), הצטרף ל'ישר!' של גדי איזנקוט והוצב במקום ה-12 ברשימתה. לפי אתר הכנסת, פרטי הרקע של חברת הכנסת טרם נמסרו למערכת."
+      en: "Roni Malkai entered the 25th Knesset for Yesh Atid on 9 September 2026, after Elazar Stern announced he was leaving Yesh Atid (14 August 2026), joined Gadi Eisenkot’s Yashar! and was placed 12th on its list. Per the Knesset site, the member’s background details have not yet been submitted."
+    date: "2026-09-09"
+    sources:
+      - url: "https://main.knesset.gov.il/mk/apps/faction/faction-lobby?KnessetID=25&FactionID=1102"
+        title: "סיעת יש עתיד — חילופי גברי: 09/09/2026 רוני מלכאי נכנסה במקום אלעזר שטרן"
+        publisher: "הכנסת"
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/1135"
+        title: "חברת הכנסת רוני מלכאי — אתר הכנסת"
+        publisher: "הכנסת"
+      - url: "https://www.timesofisrael.com/mk-elazar-stern-announces-yesh-atid-exit-ahead-of-likely-run-with-eisenkot/"
+        title: "MK Elazar Stern announces Yesh Atid exit ahead of likely run with Eisenkot (14 Aug 2026)"
+        publisher: "The Times of Israel"
+      - url: "https://www.gov.il/he/pages/yashar_list_2"
+        title: "ישר! עם איזנקוט לראשות הממשלה — רשימת המועמדים (מקום 12: אלעזר שטרן)"
+        publisher: "ועדת הבחירות המרכזית לכנסת"

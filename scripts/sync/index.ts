@@ -28,6 +28,7 @@ import {
   syncVoteSubjects,
   remapVoteResultMkIds,
   computeVoteTotals,
+  resolveOrphanMkIds,
 } from "./votes";
 import { computeMkStats, computeMkAgreement } from "./stats";
 import { syncBills } from "./bills";
@@ -82,6 +83,7 @@ async function main() {
     await syncVoteResults();
     await syncVoteSubjects();
     await remapVoteResultMkIds(); // rebuild mk_id_map + heal raw-MkId rows before stats
+    await resolveOrphanMkIds(); // MKs who left: raw MkIds the name pass cannot reach
   }
 
   if (args.has("--subjects")) {

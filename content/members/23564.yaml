@@ -1,20 +1,21 @@
-# PersonID 23564. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 23564 (David "Dudi" Amsalem). Researched from reputable public sources
+# and source-verified (every cited URL re-fetched 2026-09-18). Neutral language;
+# legal status marked where relevant. REVIEW before launch.
 personId: 23564
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: חבר הכנסת מטעם הליכוד מאז 2015
-      en: Member of Knesset for Likud since 2015
+      he: חבר הכנסת מטעם הליכוד (2015–2023)
+      en: Member of Knesset for Likud (2015–2023)
     description:
-      he: דודי אמסלם נבחר לראשונה לכנסת ה-20 בשנת 2015 ברשימת הליכוד, ומכהן כחבר כנסת
-        ברציפות מאז. לפני כניסתו לפוליטיקה הארצית עבד שנים רבות בשירות הציבורי,
+      he: דודי אמסלם נבחר לראשונה לכנסת ה-20 בשנת 2015 ברשימת הליכוד וכיהן כחבר כנסת
+        ברציפות עד מרץ 2023. לפני כניסתו לפוליטיקה הארצית עבד שנים רבות בשירות הציבורי,
         בין היתר כלכלן באגף התקציבים במשרד האוצר, בביטוח הלאומי וברשות המסים,
         וכן בעיריית ירושלים, וכיהן כיושב ראש סניף הליכוד בירושלים.
       en: Dudi Amsalem was first elected to the 20th Knesset in 2015 on the Likud list
-        and has served continuously as a member of Knesset since then. Before
+        and served continuously as a member of Knesset until March 2023. Before
         entering national politics he spent many years in public service,
         including economist roles in the Finance Ministry budget department, the
         National Insurance Institute and the Tax Authority, as well as in the
@@ -30,27 +31,22 @@ claims:
   - kind: positive
     category: achievement
     title:
-      he: שר שיתוף פעולה אזורי ושר נוסף במשרד המשפטים
-      en: Minister of Regional Cooperation and additional minister in the Justice
-        Ministry
+      he: יוזם "חוק ההמלצות" שאושר בכנסת (2017)
+      en: Sponsor of the "Recommendations Law" passed by the Knesset (2017)
     description:
-      he: בפברואר 2023 החליטה ממשלת נתניהו לצרף את אמסלם כשר שיתוף הפעולה האזורי, שר
-        נוסף במשרד המשפטים והשר המקשר בין הממשלה לכנסת. בין תחומי אחריותו נכללה
-        גם רשות החברות הממשלתיות.
-      en: In February 2023, the Netanyahu government decided to add Amsalem as
-        Minister of Regional Cooperation, an additional minister in the Justice
-        Ministry, and the minister liaising between the government and the
-        Knesset. His portfolios included oversight of the Government Companies
-        Authority.
-    date: 2023-02-12
+      he: אמסלם יזם את התיקון לחוק סדר הדין הפלילי המכונה "חוק ההמלצות", המגביל את פרסום המלצות המשטרה בדבר העמדה לדין בתום חקירה. החוק אושר בקריאה שנייה ושלישית ב-28 בדצמבר 2017 ברוב של 59 מול 54, לאחר פיליבסטר של האופוזיציה שנמשך כ-43 שעות; מתנגדיו טענו כי נועד לסייע לראש הממשלה נתניהו, ואמסלם הכחיש זאת.
+      en: Amsalem sponsored the amendment to the Criminal Procedure Law known as the "Recommendations Law", which restricts publication of police recommendations on indictment at the end of an investigation. It passed its final readings on 28 December 2017 by 59 votes to 54 after a roughly 43-hour opposition filibuster; opponents argued it was meant to help Prime Minister Netanyahu, which Amsalem denied.
+    date: 2017-12-28
     sources:
-      - url: https://en.wikipedia.org/wiki/Dudi_Amsalem
-        title: Dudi Amsalem
-        publisher: Wikipedia
-      - url: https://www.timesofisrael.com/supreme-court-critic-amsalem-installed-as-second-minister-in-justice-ministry/
-        title: Supreme Court critic Amsalem installed as second minister in Justice
-          Ministry
-        publisher: The Times of Israel
+      - url: https://www.ynet.co.il/articles/0,7340,L-5048538,00.html
+        title: חוק ההמלצות עבר בקריאה ראשונה בכנסת
+        publisher: Ynet
+      - url: https://www.haaretz.co.il/news/politi/2017-12-27/ty-article/0000017f-e700-d97e-a37f-f765ee6f0000
+        title: החוק להגבלת המלצות המשטרה עבר בכנסת בקריאה שלישית
+        publisher: Haaretz
+      - url: https://he.wikipedia.org/wiki/%D7%93%D7%95%D7%93%D7%99_%D7%90%D7%9E%D7%A1%D7%9C%D7%9D
+        title: דודי אמסלם
+        publisher: Wikipedia (Hebrew)
   - kind: positive
     category: achievement
     title:
@@ -70,4 +66,92 @@ claims:
         publisher: Wikipedia
       - url: https://www.jns.org/netanyahu-names-likud-mk-david-amsalem-communications-minister/
         title: Netanyahu names Knesset member David Amsalem as communications minister
+        publisher: JNS
+  - kind: positive
+    category: achievement
+    title:
+      he: שר שיתוף פעולה אזורי ושר נוסף במשרד המשפטים
+      en: Minister of Regional Cooperation and additional minister in the Justice
+        Ministry
+    description:
+      he: בפברואר 2023 החליטה ממשלת נתניהו לצרף את אמסלם כשר שיתוף הפעולה האזורי, שר
+        נוסף במשרד המשפטים והשר המקשר בין הממשלה לכנסת, והכנסת אישרה את המינוי ב-28 במרץ 2023 ברוב של 37 מול 25. בין תחומי אחריותו נכללה
+        גם רשות החברות הממשלתיות.
+      en: In February 2023, the Netanyahu government decided to add Amsalem as
+        Minister of Regional Cooperation, an additional minister in the Justice
+        Ministry, and the minister liaising between the government and the
+        Knesset; the Knesset approved the appointment on 28 March 2023 by 37 votes to 25. His portfolios included oversight of the Government Companies
+        Authority.
+    date: 2023-03-28
+    sources:
+      - url: https://en.wikipedia.org/wiki/Dudi_Amsalem
+        title: Dudi Amsalem
+        publisher: Wikipedia
+      - url: https://www.timesofisrael.com/supreme-court-critic-amsalem-installed-as-second-minister-in-justice-ministry/
+        title: Supreme Court critic Amsalem installed as second minister in Justice
+          Ministry
+        publisher: The Times of Israel
+  - kind: neutral
+    category: role
+    date: 2023-03-29
+    title:
+      he: התפטר מהכנסת במסגרת "החוק הנורווגי" וממשיך לכהן כשר בלבד
+      en: Resigned his Knesset seat under the "Norwegian Law" and serves as a minister only
+    description:
+      he: ב-29 במרץ 2023 התפטר אמסלם מחברותו בכנסת במסגרת "החוק הנורווגי", ובמקומו נכנס לכנסת אביחי בוארון. מאז הוא מכהן כשר בממשלה (שר שיתוף הפעולה האזורי, שר במשרד המשפטים והשר המקשר לכנסת) מבלי להיות חבר כנסת.
+      en: On 29 March 2023 Amsalem resigned his Knesset seat under the "Norwegian Law", and Avichai Boaron entered the Knesset in his place. Since then he has served as a cabinet minister (Regional Cooperation, minister in the Justice Ministry and liaison to the Knesset) without being a member of Knesset.
+    sources:
+      - url: https://news.walla.co.il/break/3569102
+        title: אמסלם התפטר מהכנסת במסגרת החוק הנורווגי, אביחי בוארון יחליפו
+        publisher: Walla
+      - url: https://www.ynet.co.il/news/article/rknikybz2
+        title: אמסלם התפטר מהכנסת במסגרת החוק הנורבגי, הח"כ החדש - אביחי בוארון
+        publisher: Ynet
+  - kind: negative
+    category: controversy
+    date: 2025-10-21
+    title:
+      he: התבטאות נגד ח"כ מירב בן ארי במליאה; איגוד הדירקטורים ביטל את השתתפותו בכנס לאחר שסירב להתנצל
+      en: Remarks against MK Meirav Ben-Ari in the plenum; the Directors Association cancelled his conference appearance after he refused to apologize
+    description:
+      he: באוקטובר 2025, בדיון במליאת הכנסת, אמר אמסלם על ח"כ מירב בן ארי כי היא "מצחצחת נעליים ללפיד" ולעג לה, ובן ארי אמרה כי מדובר בפגיעה בנשים. איגוד הדירקטורים דרש ממנו להתנצל כתנאי להופעתו בכנס האיגוד; לאחר שיועצת השר השיבה כי "לא אחנך את השר" והוא סירב להתנצל, בוטלה השתתפותו.
+      en: In October 2025, during a Knesset plenum debate, Amsalem said of MK Meirav Ben-Ari that she was "shining Lapid's shoes" and mocked her, and Ben-Ari said the remarks harmed women. The Directors Association demanded an apology as a condition for his appearance at its conference; after the minister's adviser replied "I will not educate the minister" and he refused to apologize, his participation was cancelled.
+    sources:
+      - url: https://www.mako.co.il/news-politics/2025_q4/Article-d2931577f950a91026.htm
+        title: ההתבטאות הדוחה של אמסלם - וביטול השתתפות השר בכנס
+        publisher: N12 / Mako
+      - url: https://www.ynet.co.il/news/article/s1byufncgg
+        title: "איגוד הדירקטורים: ביטלנו את השתתפות אמסלם בכנס בגלל שלא התנצל לח\"כ בן ארי"
+        publisher: Ynet
+  - kind: neutral
+    category: news
+    date: 2026-06-16
+    title:
+      he: אושפז לאחר אירוע לב ושוחרר להחלמה בביתו
+      en: Hospitalized after a heart attack and discharged to recover at home
+    description:
+      he: אמסלם לקה בהתקף לב בשבת, 13 ביוני 2026, אושפז במרכז הרפואי שערי צדק בירושלים ושוחרר ב-16 ביוני. לשכתו מסרה כי הוא במצב טוב וממשיך לנהל את פעילות משרדו מביתו.
+      en: Amsalem suffered a heart attack on Saturday 13 June 2026, was treated at Shaare Zedek Medical Center in Jerusalem and discharged on 16 June. His office said he was in good condition and continued to run his ministry from home.
+    sources:
+      - url: https://www.jpost.com/israel-news/article-899558
+        title: Israeli minister David Amsalem 'in good condition' after suffering heart attack
+        publisher: The Jerusalem Post
+      - url: https://www.israelhayom.co.il/news/politics/article/20772479
+        title: השר דודי אמסלם עבר התקף לב, הוא מחלים בביתו
+        publisher: Israel Hayom
+  - kind: neutral
+    category: news
+    date: 2026-09-09
+    title:
+      he: במקום ה-19 ברשימת הליכוד לכנסת ה-26 לאחר שדורג עשירי בפריימריז
+      en: Placed 19th on Likud's slate for the 26th Knesset after finishing tenth in the primary
+    description:
+      he: בפריימריז הליכוד ב-17 באוגוסט 2026 דורג אמסלם במקום העשירי בהצבעה. ברשימת הליכוד שהוגשה לוועדת הבחירות ב-9 בספטמבר 2026, לאחר שיבוץ המקומות השמורים של יו"ר המפלגה, הוא ניצב במקום ה-19.
+      en: In the Likud primary on 17 August 2026 Amsalem finished tenth in the vote. On the Likud slate filed with the elections committee on 9 September 2026, after the party chairman's reserved slots were inserted, he stands in 19th place.
+    sources:
+      - url: https://www.globes.co.il/news/article.aspx?did=1001552600
+        title: "ספירת הקולות הסתיימה: כך נראית רשימת הליכוד החדשה"
+        publisher: Globes
+      - url: https://www.jns.org/news/israel-news/likud-files-26th-knesset-election-slate
+        title: Likud files 26th Knesset election slate
         publisher: JNS

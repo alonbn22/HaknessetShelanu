@@ -2,6 +2,7 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 468
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -10,11 +11,14 @@ claims:
       en: Appointed Minister of Defense of Israel
     description:
       he: בנובמבר 2024 מונה ישראל כץ לשר הביטחון של ישראל, לאחר שראש הממשלה בנימין
-        נתניהו הדיח את שר הביטחון הקודם יואב גלנט. מליאת הכנסת אישרה את המינוי.
+        נתניהו הדיח את שר הביטחון הקודם יואב גלנט. מליאת הכנסת אישרה את המינוי
+        ב-8 בנובמבר 2024, והוא מכהן בתפקיד גם בממשלת המעבר.
       en: In November 2024, Israel Katz was appointed Minister of Defense of Israel
         after Prime Minister Benjamin Netanyahu dismissed the previous defense
-        minister, Yoav Gallant. The Knesset plenum approved the appointment.
-    date: 2024-11-05
+        minister, Yoav Gallant. The Knesset plenum approved the appointment on
+        8 November 2024, and he continues to hold the post in the caretaker
+        government.
+    date: 2024-11-08
     sources:
       - url: https://en.wikipedia.org/wiki/Israel_Katz
         title: Israel Katz
@@ -61,3 +65,77 @@ claims:
       - url: https://en.wikipedia.org/wiki/Israel_Katz
         title: Israel Katz
         publisher: Wikipedia
+  - kind: negative
+    category: controversy
+    date: 2026-05-07
+    title:
+      he: 'ביקורת היועצת המשפטית לממשלה על עיכוב חתימתו על תעודת חיסיון בפרשת גוטליב'
+      en: Attorney General criticized his delay in signing a confidentiality certificate in the Gotliv case
+    description:
+      he: 'לפי הדיווחים, היועצת המשפטית לממשלה גלי בהרב-מיארה כתבה לכץ באוקטובר 2025 ושוב במרץ 2026 כי אי-חתימתו במשך חודשים על תעודת חיסיון שנדרשה להגשת כתב אישום נגד ח"כ טלי גוטליב (הליכוד), החשודה בחשיפת זהותו של איש שב"כ, "מעוררת חשש כבד לשימוש לרעה בסמכותך במטרה להיטיב עם חברת מפלגתך". ב-7 במאי 2026 חתם כץ על התעודה, לאחר שהשב"כ הודיע כי טעמי ביטחון מחייבים זאת; בדיווחים שצוטטו כאן לא הובאה תגובה מלשכת השר לביקורת.'
+      en: 'According to reports, Attorney General Gali Baharav-Miara wrote to Katz in October 2025 and again in March 2026 that his months-long failure to sign a confidentiality certificate needed to indict MK Tally Gotliv (Likud), suspected of exposing the identity of a Shin Bet officer, "raises serious concern of abusing your authority in order to benefit your party colleague". On 7 May 2026 Katz signed the certificate after the Shin Bet stated that security reasons required it; the reports cited here carried no response from the minister''s office to the criticism.'
+    sources:
+      - url: https://www.haaretz.com/israel-news/2025-10-15/ty-article/.premium/israels-attorney-general-warns-katz-abusing-authority-to-block-likud-mks-indictment/00000199-e904-d54a-abfb-fdd4ccee0000
+        title: Israel's Attorney General Warns Katz Abusing Authority to Block Likud MK's Indictment
+        publisher: Haaretz
+      - url: https://www.ynet.co.il/news/article/sys6e0f911x
+        title: 'היועמ"שית נגד השר כ"ץ: "משתמש לרעה בסמכותך למען חברת מפלגתך טלי גוטליב"'
+        publisher: Ynet
+      - url: https://news.walla.co.il/item/3836318
+        title: 'בדרך לכתב אישום נגד גוטליב? לאחר עיכוב של חודשים - כ"ץ חתם על תעודת החיסיון'
+        publisher: Walla
+      - url: https://www.timesofisrael.com/katz-said-to-sign-certificate-of-confidentiality-paving-way-to-indict-firebrand-mk-gotliv/
+        title: Katz said to sign certificate of confidentiality, paving way to indict firebrand MK Gotliv
+        publisher: The Times of Israel
+  - kind: negative
+    category: controversy
+    status: ruled
+    date: 2026-08-20
+    title:
+      he: 'החלטת הממשלה לסגור את גלי צה"ל, שיזם, נפסלה בבג"ץ'
+      en: The government decision to close Army Radio, which he initiated, was struck down by the High Court of Justice
+    description:
+      he: 'כץ הורה בנובמבר 2025 על סגירת תחנת הרדיו הצבאית גלי צה"ל עד מרץ 2026, והממשלה אישרה את המהלך בדצמבר 2025. ב-20 באוגוסט 2026 פסל בג"ץ פה אחד את ההחלטה וקבע כי היא התקבלה משיקולים זרים ופסולים - אי-שביעות רצון של מקבלי ההחלטות משידורי התחנה - אף שלממשלה יש סמכות עקרונית לסגור את התחנה. כץ הודיע כי הוא דוחה את פסק הדין וכי "כשננצח בבחירות" יושלם הטיפול בנושא.'
+      en: 'In November 2025 Katz ordered the closure of the IDF radio station Army Radio (Galei Tzahal) by March 2026, and the government approved the move in December 2025. On 20 August 2026 the High Court of Justice unanimously annulled the decision, ruling that it was based on extraneous and improper considerations - the decision-makers'' displeasure with the station''s broadcasts - although the government has the authority in principle to close the station. Katz said he rejected the ruling and that the matter would be completed "when we win the elections".'
+    sources:
+      - url: https://www.ynet.co.il/news/article/s1gwk5npml
+        title: 'בג"ץ פסל את החלטת הממשלה לסגור את גלי צה"ל: "השתקת דעות"'
+        publisher: Ynet
+      - url: https://www.themarker.com/news/themedia/2026-08-20/ty-article/000001a0-1fbd-dc38-a7f1-3fbfcb040000
+        title: 'בג"ץ פסל פה אחד את החלטת הממשלה לסגור את גל"צ'
+        publisher: TheMarker
+      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-881001
+        title: Israel approves closure of IDF-controlled Army Radio
+        publisher: The Jerusalem Post
+  - kind: neutral
+    category: news
+    date: 2026-09-08
+    title:
+      he: שוריין במקום השישי ברשימת הליכוד לבחירות 2026 ללא התמודדות בפריימריז
+      en: Placed sixth on the Likud list for the 2026 election via a reserved slot, without running in the primary
+    description:
+      he: 'באוגוסט 2026 ביקש כץ מבית הדין של הליכוד שריון ברשימה בשל "מצב ביטחוני חריג", ובית הדין אישר לנתניהו למקמו ברשימה על פי שיקול דעתו; לפי ynet, ב-2022 התבטא כץ נגד שריונים. ברשימה הסופית שפורסמה ב-8 בספטמבר 2026 לאחר ספירת קולות הפריימריז, כץ מוצב במקום השישי.'
+      en: 'In August 2026 Katz asked the Likud court for a reserved slot on the list, citing an "exceptional security situation", and the court allowed Netanyahu to place him wherever he saw fit; according to Ynet, Katz had spoken against reserved slots in 2022. In the final list published on 8 September 2026 after the primary count, Katz is in sixth place.'
+    sources:
+      - url: https://www.ynet.co.il/news/article/sjpbcr00izg
+        title: 'הבקשה המלאה לשריון כ"ץ - שפעם האמין בפריימריז: "כולנו צריכים לעמוד לבחירה"'
+        publisher: Ynet
+      - url: https://www.mako.co.il/news-politics/2026_q3/Article-2ddf4a5b99180a1027.htm
+        title: זו הרשימה הסופית של הליכוד לבחירות 2026
+        publisher: N12
+  - kind: neutral
+    category: news
+    date: 2026-07-19
+    title:
+      he: 'הורה להדיח את עמרי רונן משירות מילואים בעקבות קריאה לסרבנות'
+      en: Ordered the removal of Omri Ronen from reserve service over a call for refusal
+    description:
+      he: 'ב-19 ביולי 2026 הודיע כץ כי הנחה את הרמטכ"ל להדיח את סרן (מיל.) עמרי רונן, פעיל "אחים לנשק" ומועמד בפריימריז של המפלגה הדמוקרטית, מכל מסגרת שירות בצה"ל, בטענה שקרא לסרבנות מטעמים פוליטיים. רונן הגיב כי "השר שמקדם את חוק ההשתמטות חושש שנבוא להחליף אותו".'
+      en: 'On 19 July 2026 Katz announced he had instructed the IDF Chief of Staff to remove reserve Captain Omri Ronen, a "Brothers in Arms" activist and candidate in the Democrats party primary, from all IDF service frameworks, claiming he had called for refusal for political reasons. Ronen responded that "the minister promoting the draft-evasion law fears we will come to replace him".'
+    sources:
+      - url: https://www.haaretz.co.il/news/elections/2026-07-19/ty-article/.premium/0000019f-7a5c-de20-addf-7a5efbec0000
+        title: 'כץ: הנחיתי את הרמטכ"ל לסלק את עמרי רונן מ"אחים לנשק" משירות מילואים'
+        publisher: Haaretz
+      - url: https://news.walla.co.il/item/3854618
+        title: ישראל כ"ץ הנחה להדיח את עמרי רונן משירות מילואים
+        publisher: Walla

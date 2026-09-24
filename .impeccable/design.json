@@ -1,0 +1,1365 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-13T08:40:33.689Z",
+  "title": "Design System: Our Knesset (הכנסת שלנו)",
+  "source": {
+    "tokens": "src/app/globals.css (:root, html.dark, html.a11y-contrast, @theme inline)",
+    "fonts": "src/app/[locale]/layout.tsx (next/font: Heebo, Frank Ruhl Libre, Noto Sans Arabic per ar, Noto Sans per ru)",
+    "primitives": "src/components/ui/*",
+    "chrome": "src/components/Header.tsx, NavLinks.tsx, NavMore.tsx, MobileNav.tsx, LanguageSwitcher.tsx",
+    "signature": "src/components/Plenum.tsx, src/app/[locale]/page.tsx",
+    "contract": ".impeccable/surfaces/src-app-locale-page-tsx.md (FORM: The Plenum, seed key 260fa93b)"
+  },
+  "extensions": {
+    "colorMeta": {
+      "background": {
+        "role": "neutral",
+        "displayName": "Jerusalem Stone",
+        "canonical": "oklch(95.3% 0.016 86.4)",
+        "roots": {
+          ":root": "#f4efe4",
+          "html.dark": "#14181e",
+          "html.a11y-contrast": "#000000"
+        },
+        "purpose": "The page: the building's cladding, warm not grey.",
+        "tonalRamp": [
+          "oklch(15.0% 0.016 86.4)",
+          "oklch(26.4% 0.016 86.4)",
+          "oklch(37.9% 0.016 86.4)",
+          "oklch(49.3% 0.016 86.4)",
+          "oklch(60.7% 0.016 86.4)",
+          "oklch(72.1% 0.016 86.4)",
+          "oklch(83.6% 0.016 86.4)",
+          "oklch(95.0% 0.016 86.4)"
+        ]
+      },
+      "foreground": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(21.8% 0.000 0.0)",
+        "roots": {
+          ":root": "#1a1a1a",
+          "html.dark": "#e7e9ec",
+          "html.a11y-contrast": "#ffffff"
+        },
+        "purpose": "Text, the aisle numerals, the ghost button.",
+        "tonalRamp": [
+          "oklch(15.0% 0.000 0.0)",
+          "oklch(26.4% 0.000 0.0)",
+          "oklch(37.9% 0.000 0.0)",
+          "oklch(49.3% 0.000 0.0)",
+          "oklch(60.7% 0.000 0.0)",
+          "oklch(72.1% 0.000 0.0)",
+          "oklch(83.6% 0.000 0.0)",
+          "oklch(95.0% 0.000 0.0)"
+        ]
+      },
+      "chrome": {
+        "role": "primary",
+        "displayName": "Flag Field",
+        "canonical": "oklch(41.2% 0.206 262.9)",
+        "roots": {
+          ":root": "#0038b8",
+          "html.dark": "#0a2a7a",
+          "html.a11y-contrast": "#000000"
+        },
+        "purpose": "The header bar: the flag's blue field.",
+        "tonalRamp": [
+          "oklch(15.0% 0.077 262.9)",
+          "oklch(26.4% 0.133 262.9)",
+          "oklch(37.9% 0.190 262.9)",
+          "oklch(49.3% 0.206 262.9)",
+          "oklch(60.7% 0.206 262.9)",
+          "oklch(72.1% 0.144 262.9)",
+          "oklch(83.6% 0.082 262.9)",
+          "oklch(95.0% 0.024 262.9)"
+        ]
+      },
+      "on-chrome": {
+        "role": "primary",
+        "displayName": "Paper on Flag",
+        "canonical": "oklch(100.0% 0.000 0.0)",
+        "roots": {
+          ":root": "#ffffff",
+          "html.dark": "#ffffff",
+          "html.a11y-contrast": "#ffffff"
+        },
+        "purpose": "Text and the stripe on the chrome.",
+        "tonalRamp": [
+          "oklch(15.0% 0.000 0.0)",
+          "oklch(26.4% 0.000 0.0)",
+          "oklch(37.9% 0.000 0.0)",
+          "oklch(49.3% 0.000 0.0)",
+          "oklch(60.7% 0.000 0.0)",
+          "oklch(72.1% 0.000 0.0)",
+          "oklch(83.6% 0.000 0.0)",
+          "oklch(95.0% 0.000 0.0)"
+        ]
+      },
+      "chrome-hover": {
+        "role": "primary",
+        "displayName": "White Veil",
+        "canonical": "rgba(255, 255, 255, 0.12)",
+        "roots": {
+          ":root": "rgba(255, 255, 255, 0.12)",
+          "html.dark": "rgba(255, 255, 255, 0.12)",
+          "html.a11y-contrast": "rgba(255, 255, 255, 0.2)"
+        },
+        "purpose": "Hover veil under icon buttons, the language select and the active mobile item.",
+        "tonalRamp": [
+          "oklch(15.0% 0.000 0.0)",
+          "oklch(26.4% 0.000 0.0)",
+          "oklch(37.9% 0.000 0.0)",
+          "oklch(49.3% 0.000 0.0)",
+          "oklch(60.7% 0.000 0.0)",
+          "oklch(72.1% 0.000 0.0)",
+          "oklch(83.6% 0.000 0.0)",
+          "oklch(95.0% 0.000 0.0)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "oklch(100.0% 0.000 0.0)",
+        "roots": {
+          ":root": "#ffffff",
+          "html.dark": "#1b212b",
+          "html.a11y-contrast": "#000000"
+        },
+        "purpose": "Cards, tables, the float menu, the search dais, form controls.",
+        "tonalRamp": [
+          "oklch(15.0% 0.000 0.0)",
+          "oklch(26.4% 0.000 0.0)",
+          "oklch(37.9% 0.000 0.0)",
+          "oklch(49.3% 0.000 0.0)",
+          "oklch(60.7% 0.000 0.0)",
+          "oklch(72.1% 0.000 0.0)",
+          "oklch(83.6% 0.000 0.0)",
+          "oklch(95.0% 0.000 0.0)"
+        ]
+      },
+      "surface-sunken": {
+        "role": "neutral",
+        "displayName": "Stone Shadow",
+        "canonical": "oklch(92.3% 0.021 85.9)",
+        "roots": {
+          ":root": "#ece5d6",
+          "html.dark": "#232a35",
+          "html.a11y-contrast": "#000000"
+        },
+        "purpose": "Table headers, unselected toggles, the meter track, ghost and menu-item hover. Lighter than the card in dark mode: depth cues invert there.",
+        "tonalRamp": [
+          "oklch(15.0% 0.021 85.9)",
+          "oklch(26.4% 0.021 85.9)",
+          "oklch(37.9% 0.021 85.9)",
+          "oklch(49.3% 0.021 85.9)",
+          "oklch(60.7% 0.021 85.9)",
+          "oklch(72.1% 0.021 85.9)",
+          "oklch(83.6% 0.021 85.9)",
+          "oklch(95.0% 0.021 85.9)"
+        ]
+      },
+      "surface-hover": {
+        "role": "neutral",
+        "displayName": "Stone Wash",
+        "canonical": "oklch(96.5% 0.013 86.8)",
+        "roots": {
+          ":root": "#f7f3ea",
+          "html.dark": "#222a36",
+          "html.a11y-contrast": "#1a1a1a"
+        },
+        "purpose": "Hover of a ruled row, a table row, an interactive card.",
+        "tonalRamp": [
+          "oklch(15.0% 0.013 86.8)",
+          "oklch(26.4% 0.013 86.8)",
+          "oklch(37.9% 0.013 86.8)",
+          "oklch(49.3% 0.013 86.8)",
+          "oklch(60.7% 0.013 86.8)",
+          "oklch(72.1% 0.013 86.8)",
+          "oklch(83.6% 0.013 86.8)",
+          "oklch(95.0% 0.013 86.8)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "oklch(89.3% 0.023 87.2)",
+        "roots": {
+          ":root": "#e2dbcb",
+          "html.dark": "#2f3742",
+          "html.a11y-contrast": "#ffffff"
+        },
+        "purpose": "Every card border and every rule between rows and sections.",
+        "tonalRamp": [
+          "oklch(15.0% 0.023 87.2)",
+          "oklch(26.4% 0.023 87.2)",
+          "oklch(37.9% 0.023 87.2)",
+          "oklch(49.3% 0.023 87.2)",
+          "oklch(60.7% 0.023 87.2)",
+          "oklch(72.1% 0.023 87.2)",
+          "oklch(83.6% 0.023 87.2)",
+          "oklch(95.0% 0.023 87.2)"
+        ]
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "Firm Hairline",
+        "canonical": "oklch(80.7% 0.033 87.3)",
+        "roots": {
+          ":root": "#c9bfa8",
+          "html.dark": "#454f5e",
+          "html.a11y-contrast": "#ffffff"
+        },
+        "purpose": "Form controls, the search dais, an interactive card's hover border.",
+        "tonalRamp": [
+          "oklch(15.0% 0.031 87.3)",
+          "oklch(26.4% 0.033 87.3)",
+          "oklch(37.9% 0.033 87.3)",
+          "oklch(49.3% 0.033 87.3)",
+          "oklch(60.7% 0.033 87.3)",
+          "oklch(72.1% 0.033 87.3)",
+          "oklch(83.6% 0.033 87.3)",
+          "oklch(95.0% 0.033 87.3)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "oklch(46.4% 0.000 0.0)",
+        "roots": {
+          ":root": "#595959",
+          "html.dark": "#9aa2ad",
+          "html.a11y-contrast": "#ffffff"
+        },
+        "purpose": "Secondary text, captions, the source-and-date line, placeholders. At least 6:1 on every light surface.",
+        "tonalRamp": [
+          "oklch(15.0% 0.000 0.0)",
+          "oklch(26.4% 0.000 0.0)",
+          "oklch(37.9% 0.000 0.0)",
+          "oklch(49.3% 0.000 0.0)",
+          "oklch(60.7% 0.000 0.0)",
+          "oklch(72.1% 0.000 0.0)",
+          "oklch(83.6% 0.000 0.0)",
+          "oklch(95.0% 0.000 0.0)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Flag Blue",
+        "canonical": "oklch(41.2% 0.206 262.9)",
+        "roots": {
+          ":root": "#0038b8",
+          "html.dark": "#3a6fd0",
+          "html.a11y-contrast": "#ffff00"
+        },
+        "purpose": "FILL: primary actions, selected toggles, the seat, the meter, selection, the caret.",
+        "tonalRamp": [
+          "oklch(15.0% 0.077 262.9)",
+          "oklch(26.4% 0.133 262.9)",
+          "oklch(37.9% 0.190 262.9)",
+          "oklch(49.3% 0.206 262.9)",
+          "oklch(60.7% 0.206 262.9)",
+          "oklch(72.1% 0.144 262.9)",
+          "oklch(83.6% 0.082 262.9)",
+          "oklch(95.0% 0.024 262.9)"
+        ]
+      },
+      "accent-ink": {
+        "role": "primary",
+        "displayName": "Flag Blue (ink)",
+        "canonical": "oklch(41.2% 0.206 262.9)",
+        "roots": {
+          ":root": "#0038b8",
+          "html.dark": "#7db1f7",
+          "html.a11y-contrast": "#ffff00"
+        },
+        "purpose": "TEXT: links, view-all, the active menu item, the leading stat. Diverges from the fill in dark mode.",
+        "tonalRamp": [
+          "oklch(15.0% 0.077 262.9)",
+          "oklch(26.4% 0.133 262.9)",
+          "oklch(37.9% 0.190 262.9)",
+          "oklch(49.3% 0.206 262.9)",
+          "oklch(60.7% 0.206 262.9)",
+          "oklch(72.1% 0.144 262.9)",
+          "oklch(83.6% 0.082 262.9)",
+          "oklch(95.0% 0.024 262.9)"
+        ]
+      },
+      "accent-soft": {
+        "role": "primary",
+        "displayName": "Blue Wash",
+        "canonical": "oklch(94.2% 0.017 264.5)",
+        "roots": {
+          ":root": "#e6ecf8",
+          "html.dark": "#1f2b3f",
+          "html.a11y-contrast": "#000000"
+        },
+        "purpose": "Secondary button hover, the accent badge.",
+        "tonalRamp": [
+          "oklch(15.0% 0.017 264.5)",
+          "oklch(26.4% 0.017 264.5)",
+          "oklch(37.9% 0.017 264.5)",
+          "oklch(49.3% 0.017 264.5)",
+          "oklch(60.7% 0.017 264.5)",
+          "oklch(72.1% 0.017 264.5)",
+          "oklch(83.6% 0.017 264.5)",
+          "oklch(95.0% 0.017 264.5)"
+        ]
+      },
+      "accent-line": {
+        "role": "primary",
+        "displayName": "Blue Hairline",
+        "canonical": "oklch(81.5% 0.056 268.2)",
+        "roots": {
+          ":root": "#b3c2e8",
+          "html.dark": "#2f4a78",
+          "html.a11y-contrast": "#ffff00"
+        },
+        "purpose": "Secondary button border.",
+        "tonalRamp": [
+          "oklch(15.0% 0.056 268.2)",
+          "oklch(26.4% 0.056 268.2)",
+          "oklch(37.9% 0.056 268.2)",
+          "oklch(49.3% 0.056 268.2)",
+          "oklch(60.7% 0.056 268.2)",
+          "oklch(72.1% 0.056 268.2)",
+          "oklch(83.6% 0.056 268.2)",
+          "oklch(95.0% 0.024 268.2)"
+        ]
+      },
+      "on-accent": {
+        "role": "primary",
+        "displayName": "Paper on Blue",
+        "canonical": "oklch(100.0% 0.000 0.0)",
+        "roots": {
+          ":root": "#ffffff",
+          "html.dark": "#ffffff",
+          "html.a11y-contrast": "#000000"
+        },
+        "purpose": "Text on any accent fill.",
+        "tonalRamp": [
+          "oklch(15.0% 0.000 0.0)",
+          "oklch(26.4% 0.000 0.0)",
+          "oklch(37.9% 0.000 0.0)",
+          "oklch(49.3% 0.000 0.0)",
+          "oklch(60.7% 0.000 0.0)",
+          "oklch(72.1% 0.000 0.0)",
+          "oklch(83.6% 0.000 0.0)",
+          "oklch(95.0% 0.000 0.0)"
+        ]
+      },
+      "accent-deep": {
+        "role": "primary",
+        "displayName": "Deep Flag",
+        "canonical": "oklch(34.0% 0.167 262.7)",
+        "roots": {
+          ":root": "#002a8c",
+          "html.dark": "#1e4a92",
+          "html.a11y-contrast": "#ffff00"
+        },
+        "purpose": "Primary button and search-submit hover. Legacy alias; becomes a hover token in Stage D.",
+        "tonalRamp": [
+          "oklch(15.0% 0.076 262.7)",
+          "oklch(26.4% 0.130 262.7)",
+          "oklch(37.9% 0.167 262.7)",
+          "oklch(49.3% 0.167 262.7)",
+          "oklch(60.7% 0.167 262.7)",
+          "oklch(72.1% 0.144 262.7)",
+          "oklch(83.6% 0.082 262.7)",
+          "oklch(95.0% 0.024 262.7)"
+        ]
+      },
+      "coalition": {
+        "role": "primary",
+        "displayName": "Coalition Blue",
+        "canonical": "oklch(41.2% 0.206 262.9)",
+        "roots": {
+          ":root": "#0038b8",
+          "html.dark": "#578fdb",
+          "html.a11y-contrast": "#8ab4ff"
+        },
+        "purpose": "Seat fill and stroke, the hollow-seat glyph, the coalition meter. Same value as opposition by design.",
+        "tonalRamp": [
+          "oklch(15.0% 0.077 262.9)",
+          "oklch(26.4% 0.133 262.9)",
+          "oklch(37.9% 0.190 262.9)",
+          "oklch(49.3% 0.206 262.9)",
+          "oklch(60.7% 0.206 262.9)",
+          "oklch(72.1% 0.144 262.9)",
+          "oklch(83.6% 0.082 262.9)",
+          "oklch(95.0% 0.024 262.9)"
+        ]
+      },
+      "coalition-ink": {
+        "role": "primary",
+        "displayName": "Coalition Blue (ink)",
+        "canonical": "oklch(41.2% 0.206 262.9)",
+        "roots": {
+          ":root": "#0038b8",
+          "html.dark": "#578fdb",
+          "html.a11y-contrast": "#8ab4ff"
+        },
+        "purpose": "Coalition figures as text.",
+        "tonalRamp": [
+          "oklch(15.0% 0.077 262.9)",
+          "oklch(26.4% 0.133 262.9)",
+          "oklch(37.9% 0.190 262.9)",
+          "oklch(49.3% 0.206 262.9)",
+          "oklch(60.7% 0.206 262.9)",
+          "oklch(72.1% 0.144 262.9)",
+          "oklch(83.6% 0.082 262.9)",
+          "oklch(95.0% 0.024 262.9)"
+        ]
+      },
+      "opposition": {
+        "role": "primary",
+        "displayName": "Opposition Blue",
+        "canonical": "oklch(41.2% 0.206 262.9)",
+        "roots": {
+          ":root": "#0038b8",
+          "html.dark": "#578fdb",
+          "html.a11y-contrast": "#8ab4ff"
+        },
+        "purpose": "The opposition meter. Same value as coalition by design: the aisle carries the split.",
+        "tonalRamp": [
+          "oklch(15.0% 0.077 262.9)",
+          "oklch(26.4% 0.133 262.9)",
+          "oklch(37.9% 0.190 262.9)",
+          "oklch(49.3% 0.206 262.9)",
+          "oklch(60.7% 0.206 262.9)",
+          "oklch(72.1% 0.144 262.9)",
+          "oklch(83.6% 0.082 262.9)",
+          "oklch(95.0% 0.024 262.9)"
+        ]
+      },
+      "opposition-ink": {
+        "role": "primary",
+        "displayName": "Opposition Blue (ink)",
+        "canonical": "oklch(41.2% 0.206 262.9)",
+        "roots": {
+          ":root": "#0038b8",
+          "html.dark": "#578fdb",
+          "html.a11y-contrast": "#8ab4ff"
+        },
+        "purpose": "Opposition figures as text.",
+        "tonalRamp": [
+          "oklch(15.0% 0.077 262.9)",
+          "oklch(26.4% 0.133 262.9)",
+          "oklch(37.9% 0.190 262.9)",
+          "oklch(49.3% 0.206 262.9)",
+          "oklch(60.7% 0.206 262.9)",
+          "oklch(72.1% 0.144 262.9)",
+          "oklch(83.6% 0.082 262.9)",
+          "oklch(95.0% 0.024 262.9)"
+        ]
+      },
+      "pass": {
+        "role": "status",
+        "displayName": "Pass Green",
+        "canonical": "oklch(52.8% 0.121 155.0)",
+        "roots": {
+          ":root": "#1a7f4b",
+          "html.dark": "#3ddc84",
+          "html.a11y-contrast": "#6fe3a3"
+        },
+        "purpose": "Fill: a passed vote's meter or bar.",
+        "tonalRamp": [
+          "oklch(15.0% 0.038 155.0)",
+          "oklch(26.4% 0.065 155.0)",
+          "oklch(37.9% 0.094 155.0)",
+          "oklch(49.3% 0.121 155.0)",
+          "oklch(60.7% 0.121 155.0)",
+          "oklch(72.1% 0.121 155.0)",
+          "oklch(83.6% 0.121 155.0)",
+          "oklch(95.0% 0.080 155.0)"
+        ]
+      },
+      "pass-soft": {
+        "role": "status",
+        "displayName": "Pass Wash",
+        "canonical": "oklch(95.0% 0.021 161.5)",
+        "roots": {
+          ":root": "#e3f3ea",
+          "html.dark": "#12291d",
+          "html.a11y-contrast": "#000000"
+        },
+        "purpose": "Badge background for a passed vote.",
+        "tonalRamp": [
+          "oklch(15.0% 0.021 161.5)",
+          "oklch(26.4% 0.021 161.5)",
+          "oklch(37.9% 0.021 161.5)",
+          "oklch(49.3% 0.021 161.5)",
+          "oklch(60.7% 0.021 161.5)",
+          "oklch(72.1% 0.021 161.5)",
+          "oklch(83.6% 0.021 161.5)",
+          "oklch(95.0% 0.021 161.5)"
+        ]
+      },
+      "pass-ink": {
+        "role": "status",
+        "displayName": "Pass Ink",
+        "canonical": "oklch(44.8% 0.108 151.3)",
+        "roots": {
+          ":root": "#166534",
+          "html.dark": "#5edb96",
+          "html.a11y-contrast": "#6fe3a3"
+        },
+        "purpose": "Badge text; a 'for' count.",
+        "tonalRamp": [
+          "oklch(15.0% 0.041 151.3)",
+          "oklch(26.4% 0.071 151.3)",
+          "oklch(37.9% 0.101 151.3)",
+          "oklch(49.3% 0.108 151.3)",
+          "oklch(60.7% 0.108 151.3)",
+          "oklch(72.1% 0.108 151.3)",
+          "oklch(83.6% 0.108 151.3)",
+          "oklch(95.0% 0.083 151.3)"
+        ]
+      },
+      "pass-line": {
+        "role": "status",
+        "displayName": "Pass Line",
+        "canonical": "oklch(84.2% 0.067 158.3)",
+        "roots": {
+          ":root": "#a7d9bb",
+          "html.dark": "#245c3a",
+          "html.a11y-contrast": "#6fe3a3"
+        },
+        "purpose": "Border of a pass-tinted panel.",
+        "tonalRamp": [
+          "oklch(15.0% 0.035 158.3)",
+          "oklch(26.4% 0.062 158.3)",
+          "oklch(37.9% 0.067 158.3)",
+          "oklch(49.3% 0.067 158.3)",
+          "oklch(60.7% 0.067 158.3)",
+          "oklch(72.1% 0.067 158.3)",
+          "oklch(83.6% 0.067 158.3)",
+          "oklch(95.0% 0.067 158.3)"
+        ]
+      },
+      "fail": {
+        "role": "status",
+        "displayName": "Fail Red",
+        "canonical": "oklch(50.1% 0.178 28.7)",
+        "roots": {
+          ":root": "#b3261e",
+          "html.dark": "#f0625a",
+          "html.a11y-contrast": "#f6b3ab"
+        },
+        "purpose": "Fill: a failed vote's meter or bar. A result, never a bloc.",
+        "tonalRamp": [
+          "oklch(15.0% 0.062 28.7)",
+          "oklch(26.4% 0.108 28.7)",
+          "oklch(37.9% 0.155 28.7)",
+          "oklch(49.3% 0.178 28.7)",
+          "oklch(60.7% 0.178 28.7)",
+          "oklch(72.1% 0.174 28.7)",
+          "oklch(83.6% 0.091 28.7)",
+          "oklch(95.0% 0.025 28.7)"
+        ]
+      },
+      "fail-soft": {
+        "role": "status",
+        "displayName": "Fail Wash",
+        "canonical": "oklch(94.8% 0.020 25.2)",
+        "roots": {
+          ":root": "#fbe9e7",
+          "html.dark": "#301a18",
+          "html.a11y-contrast": "#000000"
+        },
+        "purpose": "Badge background for a rejected vote.",
+        "tonalRamp": [
+          "oklch(15.0% 0.020 25.2)",
+          "oklch(26.4% 0.020 25.2)",
+          "oklch(37.9% 0.020 25.2)",
+          "oklch(49.3% 0.020 25.2)",
+          "oklch(60.7% 0.020 25.2)",
+          "oklch(72.1% 0.020 25.2)",
+          "oklch(83.6% 0.020 25.2)",
+          "oklch(95.0% 0.020 25.2)"
+        ]
+      },
+      "fail-ink": {
+        "role": "status",
+        "displayName": "Fail Ink",
+        "canonical": "oklch(44.4% 0.161 26.9)",
+        "roots": {
+          ":root": "#991b1b",
+          "html.dark": "#f2998f",
+          "html.a11y-contrast": "#f6b3ab"
+        },
+        "purpose": "Badge text; an 'against' count.",
+        "tonalRamp": [
+          "oklch(15.0% 0.062 26.9)",
+          "oklch(26.4% 0.108 26.9)",
+          "oklch(37.9% 0.154 26.9)",
+          "oklch(49.3% 0.161 26.9)",
+          "oklch(60.7% 0.161 26.9)",
+          "oklch(72.1% 0.161 26.9)",
+          "oklch(83.6% 0.091 26.9)",
+          "oklch(95.0% 0.025 26.9)"
+        ]
+      },
+      "fail-line": {
+        "role": "status",
+        "displayName": "Fail Line",
+        "canonical": "oklch(82.3% 0.071 25.2)",
+        "roots": {
+          ":root": "#f0b4ae",
+          "html.dark": "#6b2f2a",
+          "html.a11y-contrast": "#f6b3ab"
+        },
+        "purpose": "Border of a fail-tinted panel.",
+        "tonalRamp": [
+          "oklch(15.0% 0.061 25.2)",
+          "oklch(26.4% 0.071 25.2)",
+          "oklch(37.9% 0.071 25.2)",
+          "oklch(49.3% 0.071 25.2)",
+          "oklch(60.7% 0.071 25.2)",
+          "oklch(72.1% 0.071 25.2)",
+          "oklch(83.6% 0.071 25.2)",
+          "oklch(95.0% 0.025 25.2)"
+        ]
+      },
+      "warn": {
+        "role": "status",
+        "displayName": "Warn Amber",
+        "canonical": "oklch(55.5% 0.146 49.0)",
+        "roots": {
+          ":root": "#b45309",
+          "html.dark": "#f5b731",
+          "html.a11y-contrast": "#fde047"
+        },
+        "purpose": "Fill for a warning proportion.",
+        "tonalRamp": [
+          "oklch(15.0% 0.041 49.0)",
+          "oklch(26.4% 0.071 49.0)",
+          "oklch(37.9% 0.102 49.0)",
+          "oklch(49.3% 0.132 49.0)",
+          "oklch(60.7% 0.146 49.0)",
+          "oklch(72.1% 0.146 49.0)",
+          "oklch(83.6% 0.100 49.0)",
+          "oklch(95.0% 0.028 49.0)"
+        ]
+      },
+      "warn-soft": {
+        "role": "status",
+        "displayName": "Warn Wash",
+        "canonical": "oklch(96.6% 0.032 87.3)",
+        "roots": {
+          ":root": "#fdf3dc",
+          "html.dark": "#2e2410",
+          "html.a11y-contrast": "#000000"
+        },
+        "purpose": "Badge background: a former member, an unconfirmed date.",
+        "tonalRamp": [
+          "oklch(15.0% 0.031 87.3)",
+          "oklch(26.4% 0.032 87.3)",
+          "oklch(37.9% 0.032 87.3)",
+          "oklch(49.3% 0.032 87.3)",
+          "oklch(60.7% 0.032 87.3)",
+          "oklch(72.1% 0.032 87.3)",
+          "oklch(83.6% 0.032 87.3)",
+          "oklch(95.0% 0.032 87.3)"
+        ]
+      },
+      "warn-ink": {
+        "role": "status",
+        "displayName": "Warn Ink",
+        "canonical": "oklch(42.8% 0.110 52.3)",
+        "roots": {
+          ":root": "#7c3a00",
+          "html.dark": "#fcd34d",
+          "html.a11y-contrast": "#fde047"
+        },
+        "purpose": "Badge text for a warning.",
+        "tonalRamp": [
+          "oklch(15.0% 0.039 52.3)",
+          "oklch(26.4% 0.068 52.3)",
+          "oklch(37.9% 0.097 52.3)",
+          "oklch(49.3% 0.110 52.3)",
+          "oklch(60.7% 0.110 52.3)",
+          "oklch(72.1% 0.110 52.3)",
+          "oklch(83.6% 0.103 52.3)",
+          "oklch(95.0% 0.029 52.3)"
+        ]
+      },
+      "warn-line": {
+        "role": "status",
+        "displayName": "Warn Line",
+        "canonical": "oklch(86.9% 0.113 86.0)",
+        "roots": {
+          ":root": "#f5cf7a",
+          "html.dark": "#6b5216",
+          "html.a11y-contrast": "#fde047"
+        },
+        "purpose": "Border of a warn-tinted panel.",
+        "tonalRamp": [
+          "oklch(15.0% 0.031 86.0)",
+          "oklch(26.4% 0.054 86.0)",
+          "oklch(37.9% 0.078 86.0)",
+          "oklch(49.3% 0.101 86.0)",
+          "oklch(60.7% 0.113 86.0)",
+          "oklch(72.1% 0.113 86.0)",
+          "oklch(83.6% 0.113 86.0)",
+          "oklch(95.0% 0.055 86.0)"
+        ]
+      },
+      "info": {
+        "role": "status",
+        "displayName": "Info Blue",
+        "canonical": "oklch(41.2% 0.206 262.9)",
+        "roots": {
+          ":root": "#0038b8",
+          "html.dark": "#3a6fd0",
+          "html.a11y-contrast": "#ffff00"
+        },
+        "purpose": "The informational tone: the blue family under the status naming.",
+        "tonalRamp": [
+          "oklch(15.0% 0.077 262.9)",
+          "oklch(26.4% 0.133 262.9)",
+          "oklch(37.9% 0.190 262.9)",
+          "oklch(49.3% 0.206 262.9)",
+          "oklch(60.7% 0.206 262.9)",
+          "oklch(72.1% 0.144 262.9)",
+          "oklch(83.6% 0.082 262.9)",
+          "oklch(95.0% 0.024 262.9)"
+        ]
+      },
+      "info-soft": {
+        "role": "status",
+        "displayName": "Info Wash",
+        "canonical": "oklch(94.2% 0.017 264.5)",
+        "roots": {
+          ":root": "#e6ecf8",
+          "html.dark": "#1f2b3f",
+          "html.a11y-contrast": "#000000"
+        },
+        "purpose": "Info badge background.",
+        "tonalRamp": [
+          "oklch(15.0% 0.017 264.5)",
+          "oklch(26.4% 0.017 264.5)",
+          "oklch(37.9% 0.017 264.5)",
+          "oklch(49.3% 0.017 264.5)",
+          "oklch(60.7% 0.017 264.5)",
+          "oklch(72.1% 0.017 264.5)",
+          "oklch(83.6% 0.017 264.5)",
+          "oklch(95.0% 0.017 264.5)"
+        ]
+      },
+      "info-ink": {
+        "role": "status",
+        "displayName": "Info Ink",
+        "canonical": "oklch(41.2% 0.206 262.9)",
+        "roots": {
+          ":root": "#0038b8",
+          "html.dark": "#7db1f7",
+          "html.a11y-contrast": "#ffff00"
+        },
+        "purpose": "Info badge text.",
+        "tonalRamp": [
+          "oklch(15.0% 0.077 262.9)",
+          "oklch(26.4% 0.133 262.9)",
+          "oklch(37.9% 0.190 262.9)",
+          "oklch(49.3% 0.206 262.9)",
+          "oklch(60.7% 0.206 262.9)",
+          "oklch(72.1% 0.144 262.9)",
+          "oklch(83.6% 0.082 262.9)",
+          "oklch(95.0% 0.024 262.9)"
+        ]
+      },
+      "info-line": {
+        "role": "status",
+        "displayName": "Info Line",
+        "canonical": "oklch(81.5% 0.056 268.2)",
+        "roots": {
+          ":root": "#b3c2e8",
+          "html.dark": "#2f4a78",
+          "html.a11y-contrast": "#ffff00"
+        },
+        "purpose": "Border of an info-tinted panel.",
+        "tonalRamp": [
+          "oklch(15.0% 0.056 268.2)",
+          "oklch(26.4% 0.056 268.2)",
+          "oklch(37.9% 0.056 268.2)",
+          "oklch(49.3% 0.056 268.2)",
+          "oklch(60.7% 0.056 268.2)",
+          "oklch(72.1% 0.056 268.2)",
+          "oklch(83.6% 0.056 268.2)",
+          "oklch(95.0% 0.024 268.2)"
+        ]
+      },
+      "neutral": {
+        "role": "status",
+        "displayName": "Neutral Grey",
+        "canonical": "oklch(46.4% 0.000 0.0)",
+        "roots": {
+          ":root": "#595959",
+          "html.dark": "#9aa2ad",
+          "html.a11y-contrast": "#ffffff"
+        },
+        "purpose": "Fill for a neutral proportion.",
+        "tonalRamp": [
+          "oklch(15.0% 0.000 0.0)",
+          "oklch(26.4% 0.000 0.0)",
+          "oklch(37.9% 0.000 0.0)",
+          "oklch(49.3% 0.000 0.0)",
+          "oklch(60.7% 0.000 0.0)",
+          "oklch(72.1% 0.000 0.0)",
+          "oklch(83.6% 0.000 0.0)",
+          "oklch(95.0% 0.000 0.0)"
+        ]
+      },
+      "neutral-soft": {
+        "role": "status",
+        "displayName": "Neutral Wash",
+        "canonical": "oklch(94.3% 0.007 88.6)",
+        "roots": {
+          ":root": "#eeece7",
+          "html.dark": "#232a34",
+          "html.a11y-contrast": "#000000"
+        },
+        "purpose": "The default badge background.",
+        "tonalRamp": [
+          "oklch(15.0% 0.007 88.6)",
+          "oklch(26.4% 0.007 88.6)",
+          "oklch(37.9% 0.007 88.6)",
+          "oklch(49.3% 0.007 88.6)",
+          "oklch(60.7% 0.007 88.6)",
+          "oklch(72.1% 0.007 88.6)",
+          "oklch(83.6% 0.007 88.6)",
+          "oklch(95.0% 0.007 88.6)"
+        ]
+      },
+      "neutral-ink": {
+        "role": "status",
+        "displayName": "Neutral Ink",
+        "canonical": "oklch(37.1% 0.000 0.0)",
+        "roots": {
+          ":root": "#404040",
+          "html.dark": "#cbd0d8",
+          "html.a11y-contrast": "#ffffff"
+        },
+        "purpose": "The default badge text.",
+        "tonalRamp": [
+          "oklch(15.0% 0.000 0.0)",
+          "oklch(26.4% 0.000 0.0)",
+          "oklch(37.9% 0.000 0.0)",
+          "oklch(49.3% 0.000 0.0)",
+          "oklch(60.7% 0.000 0.0)",
+          "oklch(72.1% 0.000 0.0)",
+          "oklch(83.6% 0.000 0.0)",
+          "oklch(95.0% 0.000 0.0)"
+        ]
+      },
+      "neutral-line": {
+        "role": "status",
+        "displayName": "Neutral Line",
+        "canonical": "oklch(86.4% 0.011 89.7)",
+        "roots": {
+          ":root": "#d5d2ca",
+          "html.dark": "#3b4451",
+          "html.a11y-contrast": "#ffffff"
+        },
+        "purpose": "Border of a neutral-tinted panel.",
+        "tonalRamp": [
+          "oklch(15.0% 0.011 89.7)",
+          "oklch(26.4% 0.011 89.7)",
+          "oklch(37.9% 0.011 89.7)",
+          "oklch(49.3% 0.011 89.7)",
+          "oklch(60.7% 0.011 89.7)",
+          "oklch(72.1% 0.011 89.7)",
+          "oklch(83.6% 0.011 89.7)",
+          "oklch(95.0% 0.011 89.7)"
+        ]
+      },
+      "focus": {
+        "role": "focus",
+        "displayName": "Focus Amber",
+        "canonical": "oklch(84.0% 0.172 84.1)",
+        "roots": {
+          ":root": "#ffbf00",
+          "html.dark": "#ffbf00",
+          "html.a11y-contrast": "#ffff00"
+        },
+        "purpose": "The inner halo of the focus ring. Never text.",
+        "tonalRamp": [
+          "oklch(15.0% 0.031 84.1)",
+          "oklch(26.4% 0.054 84.1)",
+          "oklch(37.9% 0.078 84.1)",
+          "oklch(49.3% 0.101 84.1)",
+          "oklch(60.7% 0.125 84.1)",
+          "oklch(72.1% 0.148 84.1)",
+          "oklch(83.6% 0.172 84.1)",
+          "oklch(95.0% 0.052 84.1)"
+        ]
+      },
+      "focus-ring": {
+        "role": "focus",
+        "displayName": "Focus Ring",
+        "canonical": "oklch(21.8% 0.000 0.0)",
+        "roots": {
+          ":root": "#1a1a1a",
+          "html.dark": "#ffffff",
+          "html.a11y-contrast": "#ffffff"
+        },
+        "purpose": "The outer 3px outline of the focus ring: ink in light, white in dark. Guarantees 3:1 on any surface.",
+        "tonalRamp": [
+          "oklch(15.0% 0.000 0.0)",
+          "oklch(26.4% 0.000 0.0)",
+          "oklch(37.9% 0.000 0.0)",
+          "oklch(49.3% 0.000 0.0)",
+          "oklch(60.7% 0.000 0.0)",
+          "oklch(72.1% 0.000 0.0)",
+          "oklch(83.6% 0.000 0.0)",
+          "oklch(95.0% 0.000 0.0)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The page title, one per page (h1). 2.25rem, rising to 3rem with line-height 1 from 640px. Frank Ruhl Libre."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "The site name in the chrome with the flag inside its letters (.wordmark: inline-SVG stripes and star clipped to the glyphs, white stroke, plain-white fallback). Frank Ruhl Libre."
+      },
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "The one number a ruled row leads with. Frank Ruhl Libre, tabular. The aisle numerals are the same voice drawn inside the hall's SVG (font-size 14 viewBox units in the arc, 13 in the phone blocks) and scale with the drawing."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings (h2): SectionHeading variant lg. Heebo."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Sub-block and 'now'-column headings: SectionHeading variant md. Heebo."
+      },
+      "control": {
+        "displayName": "Control",
+        "purpose": "The default (md) button."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Prose and the page's base size."
+      },
+      "body-small": {
+        "displayName": "Body Small",
+        "purpose": "The working size: lists, tables, nav links, form controls."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Field labels, toggles, small buttons, a member's name in a row."
+      },
+      "label-small": {
+        "displayName": "Label Small",
+        "purpose": "Badges and table headers."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "The source-and-date line, hints, timestamps, table captions, last-sync. Always muted."
+      },
+      "micro": {
+        "displayName": "Micro",
+        "purpose": "The 'automatic translation' mark; declared as --text-micro (0.6875rem / 1rem line), never text-[11px]."
+      },
+      "stat": {
+        "displayName": "Stat",
+        "purpose": "The Stat primitive's headline figure. Heebo, not the serif: a stat is a fact, a figure in a ruled row is a finding."
+      }
+    },
+    "fonts": [
+      {
+        "name": "Heebo",
+        "variable": "--font-heebo",
+        "axis": "variable weight",
+        "subsets": [
+          "hebrew",
+          "latin"
+        ],
+        "attached": "every locale",
+        "role": "UI and data (body face)"
+      },
+      {
+        "name": "Frank Ruhl Libre",
+        "variable": "--font-frank",
+        "axis": "variable weight",
+        "subsets": [
+          "hebrew",
+          "latin"
+        ],
+        "attached": "every locale",
+        "role": "display: wordmark, page title, aisle numerals, finding figures"
+      },
+      {
+        "name": "Noto Sans Arabic",
+        "variable": "--font-noto-arabic",
+        "subsets": [
+          "arabic"
+        ],
+        "attached": "ar only (preload off)",
+        "role": "body face first in :lang(ar); display fallback"
+      },
+      {
+        "name": "Noto Sans",
+        "variable": "--font-noto-sans",
+        "subsets": [
+          "cyrillic",
+          "latin"
+        ],
+        "attached": "ru only (preload off)",
+        "role": "body face first in :lang(ru); display fallback"
+      }
+    ],
+    "textWrap": {
+      "headings": "balance (h1–h4)",
+      "prose": "pretty (p)"
+    },
+    "shadows": [
+      {
+        "name": "shadow-float",
+        "value": "0 8px 24px -8px rgba(26, 26, 26, 0.18), 0 0 0 1px var(--line)",
+        "purpose": "The only shadow: things that float over content (the More menu, the mobile nav panel). Tinted to ink, hairline built in. Never on cards, tables, the search dais or the header."
+      },
+      {
+        "name": "stripe-rule",
+        "value": "border-block-end: 3px solid var(--on-chrome); box-shadow: 0 3px 0 var(--chrome)",
+        "purpose": "The flag's two stripes as the rule beneath the chrome; a rule, not an elevation."
+      }
+    ],
+    "motion": [
+      {
+        "name": "transition-colors",
+        "value": "color, background-color, border-color 150ms cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Every hover in the system is a colour change at Tailwind's default duration; nothing lifts, scales or slides."
+      },
+      {
+        "name": "seat",
+        "value": "fill, opacity 300ms ease-out",
+        "purpose": "A seat lighting or dimming when a faction is hovered or focused in the legend."
+      },
+      {
+        "name": "skip-link",
+        "value": "inset-block-start 150ms ease",
+        "purpose": "The skip link sliding in on focus."
+      },
+      {
+        "name": "a11y-no-motion",
+        "value": "animation-duration: 0s; transition-duration: 0s (html.a11y-no-motion); 0.001ms under prefers-reduced-motion",
+        "purpose": "Every animation and transition must survive being zeroed."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px",
+        "purpose": "The hall changes form (two blocks → the arc); the latest-votes list becomes a table; the display title steps from 2.25rem to 3rem."
+      },
+      {
+        "name": "md",
+        "value": "768px",
+        "purpose": "The nav goes inline (seven links + More); findings become two columns."
+      },
+      {
+        "name": "lg",
+        "value": "1024px",
+        "purpose": "The 'now' column moves beside the hall as a 19rem side column."
+      }
+    ],
+    "layout": {
+      "container": "72rem (max-w-6xl), 1rem gutter, 2rem block padding; the header shares the container",
+      "sectionGap": "3.5rem",
+      "hallMaxWidth": "48rem",
+      "daisMaxWidth": "36rem",
+      "nowColumn": "19rem at ≥1024px, hairline on the start edge, 2.5rem inline padding, 3.5rem column gap; stacked beneath a top hairline with 2rem padding below",
+      "findingsGrid": "two columns at ≥768px, 2.5rem gap",
+      "ruledRow": "0.625rem block padding, 0.75rem gap, 36px avatar, hover extends 0.5rem past the text edge (-mx-2 px-2), chip radius",
+      "tableCell": "0.5rem × 0.75rem; header row surface-sunken at 0.75rem/500 muted; numeric columns end-aligned tabular"
+    },
+    "focus": {
+      "rule": ":focus-visible { outline: 3px solid var(--focus-ring); outline-offset: 3px; box-shadow: 0 0 0 3px var(--focus); border-radius: 2px; }",
+      "purpose": "An ink (light) or white (dark) outline OUTSIDE an amber halo. Amber alone is 1.65:1 on white; the outer ring guarantees ≥3:1 on any surface. html.a11y-keyboard replaces it with an accent double ring on :focus."
+    },
+    "browserSurfaces": {
+      "selection": "background var(--accent); color var(--on-accent)",
+      "caret": "caret-color var(--accent); accent-color var(--accent)",
+      "links": "text-underline-offset 0.18em; text-decoration-thickness 1px",
+      "tapHighlight": "color-mix(in srgb, var(--accent) 18%, transparent); touch-action: manipulation on a, button, summary, [role=button]",
+      "themeColor": {
+        "light": "#f4efe4",
+        "dark": "#14181e"
+      }
+    },
+    "accessibilityLayer": {
+      "note": "Classes the accessibility menu adds to <html>. A constraint the world respects, not a theme it designs for.",
+      "a11y-contrast": "Black page, white text and lines, #ffff00 accent and links, #8ab4ff for both blocs; the chrome goes black. Uses !important and beats every token.",
+      "a11y-grayscale": "filter: grayscale(100%) — nothing may depend on hue alone.",
+      "a11y-links": "Yellow marker (#fff2a8 / #b8860b ring) on links; outline on buttons.",
+      "a11y-headings": "accent outline and 8% tint on h1–h3.",
+      "a11y-keyboard": "accent double ring on any :focus; 6rem scroll-margin on focusables so they clear the sticky chrome.",
+      "a11y-readable": "Arial, 1.7 line-height, 0.02em spacing forced on everything (!important).",
+      "a11y-no-motion": "All animation and transition durations to 0s.",
+      "text-scaling": "font-size % on <html>; the whole UI is rem-based and scales with it."
+    },
+    "enforcement": [
+      {
+        "test": "tests/qa/design-tokens.test.ts",
+        "guards": "Every @theme colour token is defined under :root, html.dark and html.a11y-contrast; listed text/surface pairs clear 4.5:1 (3:1 for accent-as-component and focus-ring) in every root; every semantic-looking class in src/ resolves to a declared token."
+      },
+      {
+        "test": "tests/qa/rtl-discipline.test.ts",
+        "guards": "No physical left/right utilities, style props or CSS declarations in src/; SpectrumBar.tsx is the only allow-listed file."
+      },
+      {
+        "test": "tests/qa/no-legacy-utilities.test.ts",
+        "guards": "Per-file ratchet on bg-white, black/white overlays, raw Tailwind palette hues and text-[11px]; budget in tests/qa/legacy-utilities.budget.json (301 across 41 files) may only decrease; a file without a budget may not add any."
+      },
+      {
+        "test": "tests/qa/ui-primitives.test.ts",
+        "guards": "Each ui/ primitive renders its static variant classes and ARIA (Card has no shadow; SectionHeading has no uppercase/tracking; Meter has role=meter; toggles emit aria-pressed)."
+      },
+      {
+        "test": "tests/qa/no-hardcoded-hebrew.test.ts + i18n-parity.test.ts",
+        "guards": "No Hebrew literals in src/; every UI string in all four message files with identical keys and ICU placeholders."
+      }
+    ],
+    "transitional": {
+      "note": "Not the system. The class-name dark-mode retrofit block in globals.css (html.dark .bg-white {…} and raw-hue overrides) coexists with the token layer and is being ratcheted out; Stage D removes it and turns the ratchet into a ban.",
+      "legacyAliases": [
+        "--accent-deep (primary hover; becomes a hover token)",
+        "--accent-sky (dark-mode remap of legacy .text-accent)"
+      ],
+      "legacyOnHome": [
+        "layout.tsx WIP banner (bg-amber-50 / border-amber-200 / text-amber-900)",
+        "ReadingBadge.tsx (thirteen raw hue pairs)",
+        "KeyDatesTimeline.tsx (text-[11px], uppercase, bg-black/5, text-white)",
+        "Footer.tsx (bg-white, border-black/10, text-accent as text)",
+        "MobileNav.tsx backdrop (bg-black/20)",
+        "AccessibilityMenu.tsx (shadow-lg, shadow-2xl, hover:scale-105, rounded-xl)"
+      ],
+      "notCanonized": [
+        "SectionHeading variant=\"eyebrow\" (text-sm font-semibold text-muted) is defined but unused; not a pattern to adopt",
+        "search/elections pages: h2/h3 with uppercase tracking-wide (pre-migration)",
+        "parties/[id]: a tracking-widest letter tile",
+        ".plenum-seat is an unstyled hook class"
+      ]
+    },
+    "contractDivergences": [
+      {
+        "contract": "OWN-WORLD: 'a turned seat voted against its faction'",
+        "built": "Not built. Seat states are filled / hollow / lit / dimmed only."
+      },
+      {
+        "contract": "FIRST VIEWPORT: 'coalition on the start side, opposition on the end side' (logical)",
+        "built": "Fixed physically: opposition LEFT of the aisle, coalition RIGHT, direction: ltr in every locale — matches the contract in RTL locales (he, ar) and mirrors it in LTR (en, ru), by the election-broadcast convention."
+      },
+      {
+        "contract": "Unresolved: flag-filled lettering vs a flat wordmark beside a small flag",
+        "built": "Resolved at build, then revised on the user's call: flag-filled lettering, rebuilt as vector (fixed geometry per locale, real fallback) — the old raster's idea without its defects."
+      },
+      {
+        "contract": "'the search field on the dais at the arc's base'",
+        "built": "Built: GlobalSearch centered (max 36rem) beneath the hall, above the legend's end."
+      },
+      {
+        "contract": "'Every figure carries its source and date'",
+        "built": "Built for the leaderboards, most-active and latest-votes (as <caption>); the curated 'controversial laws' block carries per-item Source links but no date line, and the 'now' column carries a last-sync line."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Chrome (header bar)",
+      "kind": "nav",
+      "refersTo": "chrome-bar",
+      "description": "The flag's blue field with the two stripes ruled beneath it: the flag-in-letters wordmark in the display face, seven section links plus More, icon buttons at the end.",
+      "html": "<header class=\"ds-chrome\"><div class=\"ds-chrome-inner\"><a class=\"ds-wordmark\" href=\"#\" aria-label=\"Our Knesset\"><svg width=\"25\" height=\"18\" viewBox=\"0 0 110 80\" aria-hidden=\"true\" focusable=\"false\" style=\"border-radius:2px\"><rect width=\"110\" height=\"80\" fill=\"#ffffff\"/><rect y=\"9\" width=\"110\" height=\"10\" fill=\"#0038b8\"/><rect y=\"61\" width=\"110\" height=\"10\" fill=\"#0038b8\"/><g fill=\"none\" stroke=\"#0038b8\" stroke-width=\"4.5\" stroke-linejoin=\"round\"><path d=\"M55 22 L74 55 L36 55 Z\"/><path d=\"M55 58 L36 25 L74 25 Z\"/></g></svg><span>Our Knesset</span></a><nav class=\"ds-nav\" aria-label=\"Sections\"><a href=\"#\" aria-current=\"page\">Members</a><a href=\"#\">Votes</a><a href=\"#\">Laws</a><a href=\"#\">Committees</a><a href=\"#\">Factions</a><a href=\"#\">Budget</a><a href=\"#\">2026 Elections</a><button type=\"button\" class=\"ds-nav-more\" aria-expanded=\"false\" aria-haspopup=\"menu\">More <svg width=\"12\" height=\"12\" viewBox=\"0 0 12 12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" aria-hidden=\"true\"><path d=\"M2 4l4 4 4-4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></button></nav><div class=\"ds-chrome-tools\"><a class=\"ds-icon-btn\" href=\"#\" aria-label=\"Search\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"M21 21l-4.3-4.3\"/></svg></a><button type=\"button\" class=\"ds-icon-btn\" aria-label=\"Switch to dark theme\" aria-pressed=\"false\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z\"/></svg></button><select class=\"ds-lang\" aria-label=\"Language\"><option>English</option><option>עברית</option><option>العربية</option><option>Русский</option></select></div></div></header>",
+      "css": ".ds-chrome { position: sticky; top: 0; z-index: 40; background: var(--chrome, #0038b8); color: var(--on-chrome, #ffffff); border-block-end: 3px solid var(--on-chrome, #ffffff); box-shadow: 0 3px 0 var(--chrome, #0038b8); font-family: var(--font-heebo, Heebo), \"Noto Sans Hebrew\", \"Noto Sans Arabic\", \"Noto Sans\", -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif; } .ds-chrome-inner { position: relative; display: flex; align-items: center; column-gap: 1.5rem; max-width: 72rem; margin-inline: auto; padding: 0.75rem 1rem; } .ds-wordmark { display: flex; flex-shrink: 0; align-items: center; gap: 0.625rem; color: inherit; text-decoration: none; white-space: nowrap; font-family: var(--font-frank, \"Frank Ruhl Libre\"), \"Noto Sans Arabic\", \"Noto Sans\", serif; font-size: 1.5rem; font-weight: 700; line-height: 1; } .ds-nav { display: flex; align-items: center; column-gap: 1.25rem; font-size: 0.875rem; line-height: 1.43; } .ds-nav a, .ds-nav-more { display: inline-flex; align-items: center; gap: 0.25rem; padding: 0.25rem 0; border-block-end: 2px solid transparent; color: color-mix(in srgb, var(--on-chrome, #ffffff) 85%, transparent); text-decoration: none; background: none; border-inline: 0; border-block-start: 0; font: inherit; cursor: pointer; transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-nav a:hover, .ds-nav-more:hover { color: var(--on-chrome, #ffffff); } .ds-nav a[aria-current=\"page\"] { color: var(--on-chrome, #ffffff); border-block-end-color: var(--on-chrome, #ffffff); } .ds-chrome-tools { margin-inline-start: auto; display: flex; align-items: center; gap: 0.25rem; } .ds-icon-btn { display: inline-flex; width: 2.5rem; height: 2.5rem; align-items: center; justify-content: center; border-radius: 0.5rem; border: 0; background: none; color: inherit; cursor: pointer; } .ds-icon-btn:hover { background: var(--chrome-hover, rgba(255, 255, 255, 0.12)); } .ds-lang { cursor: pointer; border-radius: 0.375rem; border: 1px solid color-mix(in srgb, var(--on-chrome, #ffffff) 40%, transparent); background: var(--chrome-hover, rgba(255, 255, 255, 0.12)); color: var(--on-chrome, #ffffff); padding: 0.25rem 0.5rem; font: inherit; font-size: 0.875rem; } .ds-lang option { color: var(--foreground, #1a1a1a); } .ds-chrome a, .ds-chrome button, .ds-chrome select:focus-visible { outline: 3px solid var(--focus-ring, #1a1a1a); outline-offset: 3px; box-shadow: 0 0 0 3px var(--focus, #ffbf00); border-radius: 2px; }"
+    },
+    {
+      "name": "More menu (float)",
+      "kind": "nav",
+      "refersTo": "nav-menu",
+      "description": "The overflow disclosure's panel: the only thing on a page that floats, so the only thing that carries shadow-float. Hangs from the trigger's end edge.",
+      "html": "<div class=\"ds-menu-anchor\"><ul class=\"ds-menu\" role=\"menu\"><li role=\"none\"><a role=\"menuitem\" href=\"#\">Attendance</a></li><li role=\"none\"><a role=\"menuitem\" href=\"#\">Compare members</a></li><li role=\"none\"><a role=\"menuitem\" href=\"#\" aria-current=\"page\" class=\"is-active\">Ministers</a></li><li role=\"none\"><a role=\"menuitem\" href=\"#\">Law book</a></li><li role=\"none\"><a role=\"menuitem\" href=\"#\">Lobbyists</a></li></ul></div>",
+      "css": ".ds-menu-anchor { position: relative; min-height: 14rem; font-family: var(--font-heebo, Heebo), \"Noto Sans Hebrew\", \"Noto Sans Arabic\", \"Noto Sans\", -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif; } .ds-menu { position: absolute; inset-inline-end: 0; top: 0; z-index: 50; min-width: 12rem; margin: 0; padding: 0.25rem; list-style: none; border-radius: 0.5rem; border: 1px solid var(--line, #e2dbcb); background: var(--surface, #ffffff); color: var(--foreground, #1a1a1a); box-shadow: 0 8px 24px -8px rgba(26, 26, 26, 0.18), 0 0 0 1px var(--line, #e2dbcb); } .ds-menu a { display: block; padding: 0.5rem 0.75rem; border-radius: 0.375rem; font-size: 0.875rem; line-height: 1.43; color: inherit; text-decoration: none; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-menu a:hover { background: var(--surface-sunken, #ece5d6); } .ds-menu a.is-active { font-weight: 600; color: var(--accent-ink, #0038b8); } .ds-menu a:focus-visible { outline: 3px solid var(--focus-ring, #1a1a1a); outline-offset: 3px; box-shadow: 0 0 0 3px var(--focus, #ffbf00); border-radius: 2px; }"
+    },
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one accent fill on a page: submit, confirm, the search. Flat; hover deepens the blue, nothing lifts.",
+      "html": "<button type=\"button\" class=\"ds-btn-primary\">Search</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.5rem 1rem; border: 0; border-radius: 0.5rem; background: var(--accent, #0038b8); color: var(--on-accent, #ffffff); font-family: var(--font-heebo, Heebo), \"Noto Sans Hebrew\", \"Noto Sans Arabic\", \"Noto Sans\", -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif; font-size: 1rem; font-weight: 600; line-height: 1.5; cursor: pointer; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-btn-primary:hover { background: var(--accent-deep, #002a8c); } .ds-btn-primary:disabled { pointer-events: none; opacity: 0.4; } .ds-btn-primary:focus-visible { outline: 3px solid var(--focus-ring, #1a1a1a); outline-offset: 3px; box-shadow: 0 0 0 3px var(--focus, #ffbf00); border-radius: 2px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Outlined in the blue hairline with blue ink; hover washes in accent-soft.",
+      "html": "<button type=\"button\" class=\"ds-btn-secondary\">Compare</button>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.5rem 1rem; border: 1px solid var(--accent-line, #b3c2e8); border-radius: 0.5rem; background: transparent; color: var(--accent-ink, #0038b8); font-family: var(--font-heebo, Heebo), \"Noto Sans Hebrew\", \"Noto Sans Arabic\", \"Noto Sans\", -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif; font-size: 1rem; font-weight: 600; line-height: 1.5; cursor: pointer; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-btn-secondary:hover { background: var(--accent-soft, #e6ecf8); } .ds-btn-secondary:disabled { pointer-events: none; opacity: 0.4; } .ds-btn-secondary:focus-visible { outline: 3px solid var(--focus-ring, #1a1a1a); outline-offset: 3px; box-shadow: 0 0 0 3px var(--focus, #ffbf00); border-radius: 2px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Ink on nothing; hover sinks into stone shadow. For the tertiary action beside a primary.",
+      "html": "<button type=\"button\" class=\"ds-btn-ghost\">Clear filters</button>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; padding: 0.5rem 1rem; border: 0; border-radius: 0.5rem; background: transparent; color: var(--foreground, #1a1a1a); font-family: var(--font-heebo, Heebo), \"Noto Sans Hebrew\", \"Noto Sans Arabic\", \"Noto Sans\", -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif; font-size: 1rem; font-weight: 600; line-height: 1.5; cursor: pointer; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-btn-ghost:hover { background: var(--surface-sunken, #ece5d6); } .ds-btn-ghost:disabled { pointer-events: none; opacity: 0.4; } .ds-btn-ghost:focus-visible { outline: 3px solid var(--focus-ring, #1a1a1a); outline-offset: 3px; box-shadow: 0 0 0 3px var(--focus, #ffbf00); border-radius: 2px; }"
+    },
+    {
+      "name": "Toggle Group (pills)",
+      "kind": "chip",
+      "refersTo": "toggle-selected",
+      "description": "A labelled group of pills for one-of-n state: the selected pill is the accent fill (aria-pressed on buttons, aria-current on links), the rest sit in stone shadow.",
+      "html": "<div role=\"group\" aria-label=\"Sort\" class=\"ds-toggles\"><button type=\"button\" aria-pressed=\"true\" class=\"ds-toggle\">Most active</button><button type=\"button\" aria-pressed=\"false\" class=\"ds-toggle\">Alphabetical</button><button type=\"button\" aria-pressed=\"false\" class=\"ds-toggle\">By faction</button></div>",
+      "css": ".ds-toggles { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; font-family: var(--font-heebo, Heebo), \"Noto Sans Hebrew\", \"Noto Sans Arabic\", \"Noto Sans\", -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif; } .ds-toggle { padding: 0.25rem 0.75rem; border: 0; border-radius: 9999px; background: var(--surface-sunken, #ece5d6); color: var(--foreground, #1a1a1a); font: inherit; font-size: 0.875rem; font-weight: 500; line-height: 1.43; cursor: pointer; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1), color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-toggle:hover { background: var(--surface-hover, #f7f3ea); } .ds-toggle[aria-pressed=\"true\"] { background: var(--accent, #0038b8); color: var(--on-accent, #ffffff); } .ds-toggle:focus-visible { outline: 3px solid var(--focus-ring, #1a1a1a); outline-offset: 3px; box-shadow: 0 0 0 3px var(--focus, #ffbf00); border-radius: 2px; }"
+    },
+    {
+      "name": "Status Badges",
+      "kind": "chip",
+      "refersTo": "badge-neutral",
+      "description": "Six tones, each a soft wash with its own ink. A badge always carries a word; its colour is never the only signal.",
+      "html": "<div class=\"ds-badges\"><span class=\"ds-badge ds-badge-pass\">Passed</span><span class=\"ds-badge ds-badge-fail\">Rejected</span><span class=\"ds-badge ds-badge-warn\">Former member</span><span class=\"ds-badge ds-badge-info\">Second reading</span><span class=\"ds-badge ds-badge-neutral\">Abstained</span><span class=\"ds-badge ds-badge-accent\">Minister</span></div>",
+      "css": ".ds-badges { display: flex; flex-wrap: wrap; gap: 0.5rem; font-family: var(--font-heebo, Heebo), \"Noto Sans Hebrew\", \"Noto Sans Arabic\", \"Noto Sans\", -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif; } .ds-badge { display: inline-block; padding: 0.125rem 0.5rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 500; line-height: 1.33; } .ds-badge-pass { background: var(--pass-soft, #e3f3ea); color: var(--pass-ink, #166534); } .ds-badge-fail { background: var(--fail-soft, #fbe9e7); color: var(--fail-ink, #991b1b); } .ds-badge-warn { background: var(--warn-soft, #fdf3dc); color: var(--warn-ink, #7c3a00); } .ds-badge-info { background: var(--info-soft, #e6ecf8); color: var(--info-ink, #0038b8); } .ds-badge-neutral { background: var(--neutral-soft, #eeece7); color: var(--neutral-ink, #404040); } .ds-badge-accent { background: var(--accent-soft, #e6ecf8); color: var(--accent-ink, #0038b8); }"
+    },
+    {
+      "name": "Card (hairline)",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "White paper on the stone, separated by a 1px hairline and nothing else. The interactive form (a whole-card link) warms and firms its hairline on hover; no shadow ever.",
+      "html": "<div class=\"ds-stage\"><article class=\"ds-card\"><h3 class=\"ds-card-title\">Knesset Committee</h3><p class=\"ds-card-body\">Meets Monday 10:00 · Agenda: appointment of a deputy Speaker.</p><p class=\"ds-card-source\">Data is based on the Knesset's official open-data API · updated 23 Jul 2026, 22:45</p></article><a href=\"#\" class=\"ds-card ds-card-link ds-card-compact\"><span class=\"ds-avatar\" aria-hidden=\"true\"></span><span class=\"ds-card-link-text\"><span class=\"ds-card-name\">Ofir Katz</span><span class=\"ds-card-meta\">Likud</span></span></a></div>",
+      "css": ".ds-stage { display: grid; gap: 1rem; padding: 1rem; background: var(--background, #f4efe4); font-family: var(--font-heebo, Heebo), \"Noto Sans Hebrew\", \"Noto Sans Arabic\", \"Noto Sans\", -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif; color: var(--foreground, #1a1a1a); } .ds-card { border-radius: 0.75rem; border: 1px solid var(--line, #e2dbcb); background: var(--surface, #ffffff); padding: 1.5rem; } .ds-card-compact { padding: 0.75rem; } .ds-card-title { margin: 0 0 0.25rem; font-size: 1.125rem; font-weight: 600; line-height: 1.56; text-wrap: balance; } .ds-card-body { margin: 0; font-size: 0.875rem; line-height: 1.43; text-wrap: pretty; } .ds-card-source { margin: 0.5rem 0 0; font-size: 0.75rem; line-height: 1.33; color: var(--muted, #595959); } .ds-card-link { display: flex; align-items: center; gap: 0.75rem; color: inherit; text-decoration: none; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1), border-color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-card-link:hover { border-color: var(--line-strong, #c9bfa8); background: var(--surface-hover, #f7f3ea); } .ds-card-link-text { display: flex; flex-direction: column; min-width: 0; } .ds-card-name { font-weight: 600; } .ds-card-meta { font-size: 0.875rem; color: var(--muted, #595959); } .ds-avatar { flex-shrink: 0; width: 36px; height: 36px; border-radius: 9999px; background: var(--surface-sunken, #ece5d6); } .ds-card-link:focus-visible { outline: 3px solid var(--focus-ring, #1a1a1a); outline-offset: 3px; box-shadow: 0 0 0 3px var(--focus, #ffbf00); border-radius: 2px; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "field-control",
+      "description": "Label above and always visible, a firm-hairline control on paper, a muted hint bound by aria-describedby. Focus is the global two-ring outline; no inner glow.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-q\" class=\"ds-field-label\">Member name</label><input id=\"ds-q\" type=\"search\" class=\"ds-field-control\" placeholder=\"Search members…\" aria-describedby=\"ds-q-hint\"><p id=\"ds-q-hint\" class=\"ds-field-hint\">Any language — the query is matched in Hebrew.</p></div>",
+      "css": ".ds-field { font-family: var(--font-heebo, Heebo), \"Noto Sans Hebrew\", \"Noto Sans Arabic\", \"Noto Sans\", -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif; color: var(--foreground, #1a1a1a); } .ds-field-label { display: block; margin-block-end: 0.25rem; font-size: 0.875rem; font-weight: 500; line-height: 1.43; } .ds-field-control { width: 100%; box-sizing: border-box; padding: 0.5rem 0.75rem; border: 1px solid var(--line-strong, #c9bfa8); border-radius: 0.5rem; background: var(--surface, #ffffff); color: var(--foreground, #1a1a1a); font: inherit; font-size: 0.875rem; line-height: 1.43; caret-color: var(--accent, #0038b8); } .ds-field-control::placeholder { color: var(--muted, #595959); } .ds-field-hint { margin: 0.25rem 0 0; font-size: 0.75rem; line-height: 1.33; color: var(--muted, #595959); } .ds-field-control:focus-visible { outline: 3px solid var(--focus-ring, #1a1a1a); outline-offset: 3px; box-shadow: 0 0 0 3px var(--focus, #ffbf00); border-radius: 2px; }"
+    },
+    {
+      "name": "Search Dais",
+      "kind": "input",
+      "refersTo": "search-dais",
+      "description": "The site search as a pill on paper: a blue magnifier, a bare input, a pill accent submit. On the home page it sits centered at the base of the hall.",
+      "html": "<form role=\"search\" class=\"ds-dais\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" aria-hidden=\"true\" class=\"ds-dais-icon\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"M21 21l-4.3-4.3\"/></svg><input type=\"search\" class=\"ds-dais-input\" placeholder=\"Search members, parties, votes, laws…\" aria-label=\"Search members, parties, votes, laws…\"><button type=\"submit\" class=\"ds-dais-submit\">Search</button></form>",
+      "css": ".ds-dais { display: flex; align-items: center; gap: 0.5rem; max-width: 36rem; padding: 0.375rem; padding-inline-start: 1rem; border: 1px solid var(--line-strong, #c9bfa8); border-radius: 9999px; background: var(--surface, #ffffff); font-family: var(--font-heebo, Heebo), \"Noto Sans Hebrew\", \"Noto Sans Arabic\", \"Noto Sans\", -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif; } .ds-dais-icon { flex-shrink: 0; color: var(--accent, #0038b8); } .ds-dais-input { flex: 1; min-width: 0; border: 0; background: transparent; color: var(--foreground, #1a1a1a); font: inherit; font-size: 0.875rem; line-height: 1.43; outline: none; caret-color: var(--accent, #0038b8); } .ds-dais-input::placeholder { color: var(--muted, #595959); } .ds-dais-submit { padding: 0.375rem 1rem; border: 0; border-radius: 9999px; background: var(--accent, #0038b8); color: var(--on-accent, #ffffff); font: inherit; font-size: 0.875rem; font-weight: 600; line-height: 1.43; cursor: pointer; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-dais-submit:hover { background: var(--accent-deep, #002a8c); } .ds-dais:focus-within { outline: 3px solid var(--focus-ring, #1a1a1a); outline-offset: 3px; box-shadow: 0 0 0 3px var(--focus, #ffbf00); } .ds-dais-submit:focus-visible { outline: 3px solid var(--focus-ring, #1a1a1a); outline-offset: 3px; box-shadow: 0 0 0 3px var(--focus, #ffbf00); border-radius: 2px; }"
+    },
+    {
+      "name": "Ruled Finding Rows",
+      "kind": "custom",
+      "refersTo": "ruled-row",
+      "description": "A time-ranked finding as ruled rows on the stone, never cards: heading with a view-all link, hairlines between full-width row links, the figure in the display face, and the source-and-date line beneath.",
+      "html": "<section class=\"ds-finding\"><div class=\"ds-finding-head\"><h2 class=\"ds-finding-title\">Most missed votes</h2><a href=\"#\" class=\"ds-finding-link\">View all</a></div><ol class=\"ds-rows\"><li><a href=\"#\" class=\"ds-row\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 14 14\" aria-hidden=\"true\" class=\"ds-seat-glyph\"><circle cx=\"7\" cy=\"7\" r=\"5.5\" fill=\"none\" stroke=\"var(--coalition, #0038b8)\" stroke-width=\"1.5\"/></svg><span class=\"ds-avatar\" aria-hidden=\"true\"></span><span class=\"ds-row-name\">Benjamin Netanyahu</span><span class=\"ds-row-figure\">20.8%</span></a></li><li><a href=\"#\" class=\"ds-row\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 14 14\" aria-hidden=\"true\" class=\"ds-seat-glyph\"><circle cx=\"7\" cy=\"7\" r=\"5.5\" fill=\"none\" stroke=\"var(--coalition, #0038b8)\" stroke-width=\"1.5\"/></svg><span class=\"ds-avatar\" aria-hidden=\"true\"></span><span class=\"ds-row-name\">Aryeh Dery</span><span class=\"ds-row-figure\">24%</span></a></li><li><a href=\"#\" class=\"ds-row\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 14 14\" aria-hidden=\"true\" class=\"ds-seat-glyph\"><circle cx=\"7\" cy=\"7\" r=\"5.5\" fill=\"none\" stroke=\"var(--coalition, #0038b8)\" stroke-width=\"1.5\"/></svg><span class=\"ds-avatar\" aria-hidden=\"true\"></span><span class=\"ds-row-name\" dir=\"rtl\" lang=\"he\">עוז חיים</span><span class=\"ds-row-figure\">34.6%</span></a></li></ol><p class=\"ds-source\">Data is based on the Knesset's official open-data API and Wikidata · as of 23 Jul 2026, 22:45</p></section>",
+      "css": ".ds-finding { padding: 1rem; background: var(--background, #f4efe4); color: var(--foreground, #1a1a1a); font-family: var(--font-heebo, Heebo), \"Noto Sans Hebrew\", \"Noto Sans Arabic\", \"Noto Sans\", -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif; } .ds-finding-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; column-gap: 0.75rem; row-gap: 0.25rem; } .ds-finding-title { margin: 0; font-size: 1.25rem; font-weight: 600; line-height: 1.4; text-wrap: balance; } .ds-finding-link { font-size: 0.875rem; color: var(--accent-ink, #0038b8); text-decoration: underline; text-underline-offset: 0.18em; text-decoration-thickness: 1px; } .ds-rows { margin: 0.75rem 0 0; padding: 0; list-style: none; } .ds-rows > li + li { border-block-start: 1px solid var(--line, #e2dbcb); } .ds-row { display: flex; align-items: center; gap: 0.75rem; margin-inline: -0.5rem; padding: 0.625rem 0.5rem; border-radius: 0.375rem; color: inherit; text-decoration: none; font-size: 0.875rem; line-height: 1.43; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-row:hover { background: var(--surface-hover, #f7f3ea); } .ds-seat-glyph { flex-shrink: 0; } .ds-avatar { flex-shrink: 0; width: 36px; height: 36px; border-radius: 9999px; background: var(--surface-sunken, #ece5d6); } .ds-row-name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } .ds-row-figure { font-family: var(--font-frank, \"Frank Ruhl Libre\"), \"Noto Sans Arabic\", \"Noto Sans\", serif; font-size: 1.25rem; font-weight: 700; font-variant-numeric: tabular-nums; } .ds-source { margin: 0.5rem 0 0; font-size: 0.75rem; line-height: 1.33; color: var(--muted, #595959); } .ds-row, .ds-finding-link:focus-visible { outline: 3px solid var(--focus-ring, #1a1a1a); outline-offset: 3px; box-shadow: 0 0 0 3px var(--focus, #ffbf00); border-radius: 2px; }"
+    },
+    {
+      "name": "The Seat (signature)",
+      "kind": "custom",
+      "refersTo": "legend-swatch",
+      "description": "The atomic component of the hall: a circle in coalition blue. Filled = sitting member, hollow = misses the most votes, lit = the faction hovered or focused in the legend (in its own colour), dimmed = another faction is lit. Both blocs share one blue; the aisle carries the split, with the counts in the display face. Seats are pointer targets (tabindex -1); the legend is the keyboard path.",
+      "html": "<figure class=\"ds-hall\"><svg viewBox=\"-2 -2 154 44\" role=\"img\" aria-label=\"Sample of the hall: 59 opposition seats and 61 coalition seats, split by the aisle\" class=\"ds-hall-svg\"><g class=\"ds-bloc\"><a href=\"#\" tabindex=\"-1\"><title>Filled: a sitting member</title><circle cx=\"8\" cy=\"8\" r=\"6\" fill=\"var(--coalition, #0038b8)\"/></a><a href=\"#\" tabindex=\"-1\"><title>Hollow: among the most missed votes</title><circle cx=\"24\" cy=\"8\" r=\"6\" fill=\"none\" stroke=\"var(--coalition, #0038b8)\" stroke-width=\"1.4\"/></a><a href=\"#\" tabindex=\"-1\"><title>Lit: its faction is hovered in the legend</title><circle cx=\"40\" cy=\"8\" r=\"6\" fill=\"#e4002b\" stroke=\"#e4002b\"/></a><a href=\"#\" tabindex=\"-1\"><title>Dimmed: another faction is lit</title><circle cx=\"56\" cy=\"8\" r=\"6\" fill=\"var(--coalition, #0038b8)\" opacity=\"0.28\"/></a></g><text x=\"61\" y=\"36\" text-anchor=\"end\" class=\"ds-aisle-num\">59</text><text x=\"89\" y=\"36\" text-anchor=\"start\" class=\"ds-aisle-num\">61</text><text x=\"61\" y=\"41\" text-anchor=\"end\" class=\"ds-aisle-label\">Opposition</text><text x=\"89\" y=\"41\" text-anchor=\"start\" class=\"ds-aisle-label\">Coalition</text><g><circle cx=\"94\" cy=\"8\" r=\"6\" fill=\"var(--coalition, #0038b8)\"/><circle cx=\"110\" cy=\"8\" r=\"6\" fill=\"var(--coalition, #0038b8)\"/><circle cx=\"126\" cy=\"8\" r=\"6\" fill=\"none\" stroke=\"var(--coalition, #0038b8)\" stroke-width=\"1.4\"/><circle cx=\"142\" cy=\"8\" r=\"6\" fill=\"var(--coalition, #0038b8)\"/></g></svg><ul class=\"ds-legend\" aria-label=\"Factions\"><li><a href=\"#\" class=\"ds-legend-item\"><span class=\"ds-swatch\" style=\"background:#e4002b\"></span><span>Labor</span><span class=\"ds-legend-count\">4</span></a></li><li><a href=\"#\" class=\"ds-legend-item\"><span class=\"ds-swatch\" style=\"background:#00a1e0\"></span><span>Yesh Atid</span><span class=\"ds-legend-count\">24</span></a></li><li><a href=\"#\" class=\"ds-legend-item\"><span class=\"ds-swatch\" style=\"background:#1d5fa8\"></span><span>Likud</span><span class=\"ds-legend-count\">32</span></a></li></ul></figure>",
+      "css": ".ds-hall { margin: 0; padding: 1rem; background: var(--background, #f4efe4); color: var(--foreground, #1a1a1a); font-family: var(--font-heebo, Heebo), \"Noto Sans Hebrew\", \"Noto Sans Arabic\", \"Noto Sans\", -apple-system, \"Segoe UI\", Roboto, Arial, sans-serif; } .ds-hall-svg { display: block; width: 100%; max-width: 30rem; margin-inline: auto; direction: ltr; } .ds-hall-svg circle { transition: fill 300ms ease-out, opacity 300ms ease-out; } .ds-aisle-num { font-family: var(--font-frank, \"Frank Ruhl Libre\"), \"Noto Sans Arabic\", \"Noto Sans\", serif; font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums; fill: var(--foreground, #1a1a1a); } .ds-aisle-label { font-size: 4.5px; fill: var(--muted, #595959); } .ds-legend { display: flex; flex-wrap: wrap; column-gap: 1rem; row-gap: 0.375rem; margin: 1.25rem 0 0; padding: 0; list-style: none; font-size: 0.875rem; line-height: 1.43; } .ds-legend-item { display: flex; align-items: center; gap: 0.375rem; color: inherit; text-decoration: none; border-radius: 0.375rem; } .ds-legend-item:hover { text-decoration: underline; text-underline-offset: 0.18em; } .ds-swatch { display: inline-block; width: 0.75rem; height: 0.75rem; border-radius: 2px; } .ds-legend-count { color: var(--muted, #595959); font-variant-numeric: tabular-nums; } .ds-legend-item:focus-visible { outline: 3px solid var(--focus-ring, #1a1a1a); outline-offset: 3px; box-shadow: 0 0 0 3px var(--focus, #ffbf00); border-radius: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Plenum",
+    "overview": "The whole site is the Knesset hall, seen live and drawn in the flag's own materials. The chrome is the flag's blue field with its two stripes ruled beneath it; the page is the warm cream of the building's Jerusalem-stone cladding; records sit on white paper separated from the stone by a hairline, never by a shadow. National symbols — the blue, the flag, the building — are how the site says \"for everyone\": no faction's colour is ever the page's colour. Coalition and opposition are the same blue, split by the aisle. The atomic component is the seat: a filled circle is a sitting member, a hollow one a member who misses votes; state lives in form and position, not in hue.\n\nThe register is civic and documentary — not editorial, not campaign, not playful. Frank Ruhl Libre, the face of the state's own documents, speaks only where the state speaks: the wordmark, the page title, the numerals at the aisle, and the one figure a finding leads with. Everything else is Heebo at a working size, dense enough for a record and calm enough to trust on a phone. Time-ranked findings are ruled rows and tables, never card grids, and every figure block ends with where its numbers came from and when.\n\nFour scripts share one identity. Nothing in the system depends on uppercase, letter-spacing or a physical left and right: prominence comes from size, weight and ink; layout uses logical properties throughout; the hall itself is the one deliberate exception, fixed left-to-right like every election-night broadcast. Every token is defined under three roots — light, dark, and the high-contrast accessibility mode — and a test fails the build when a text/surface pair drops under WCAG AA in any of them.",
+    "keyCharacteristics": [
+      "Flag blue on Jerusalem stone; white paper for records; ink for text.",
+      "One accent, one hue for both blocs; the aisle carries the split.",
+      "Hairline separation everywhere; elevation only for things that float.",
+      "The display serif for the state's voice only; Heebo for the working record.",
+      "Ruled rows and tables for anything ranked in time; source and date beneath every figure.",
+      "Logical direction, no uppercase, no tracking: finished in Hebrew, Arabic, Russian and English alike.",
+      "Three theme roots guarded by tests; the accessibility layer is a constraint the world respects."
+    ],
+    "rules": [
+      {
+        "name": "The One Blue Rule",
+        "body": "The chrome is the flag's blue field and the accent is the same blue; no other saturated colour is ever a page's colour. Party colours from the factions data appear only where a faction is the subject — the legend swatch, and the seats lit while that faction is hovered or focused — never as decoration.",
+        "section": "colors"
+      },
+      {
+        "name": "The Aisle Rule",
+        "body": "Coalition and opposition are both Israel: `coalition` and `opposition` are the same blue in every root. The split is expressed by position — the aisle, a gap, a side — and by form, never by blue-versus-red.",
+        "section": "colors"
+      },
+      {
+        "name": "The Fill/Ink Rule",
+        "body": "`accent` is a fill and `accent-ink` is text, even though they are identical in light mode; in dark mode the fill (#3a6fd0) and the ink (#7db1f7) diverge, and code that used the fill as text goes illegible. The same holds for every status tone: `-soft` for a fill, `-ink` for its text.",
+        "section": "colors"
+      },
+      {
+        "name": "The Three Roots Rule",
+        "body": "Every colour token is declared under `:root`, `html.dark` and `html.a11y-contrast`, and `tests/qa/design-tokens.test.ts` fails the build if one is missing, if a text/surface pair drops under 4.5:1 (3:1 for the accent as a component and for the focus ring), or if a class in `src/` names a token that does not exist. Adding a colour means adding it three times.",
+        "section": "colors"
+      },
+      {
+        "name": "The State's Voice Rule",
+        "body": "Frank Ruhl Libre appears in exactly four places: the wordmark, the page title, the aisle numerals, and the leading figure of a finding. Section headings, labels and body stay in Heebo. A page that sets its h2s in the serif is speaking in the wrong voice.",
+        "section": "typography"
+      },
+      {
+        "name": "The Four Scripts Rule",
+        "body": "No `uppercase`, no `tracking-*`. Uppercase is a no-op in Hebrew and Arabic, and letter-spacing breaks Arabic cursive joining. A heading or label earns prominence from size, weight and `muted` ink only.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Rule",
+        "body": "Any number that sits in a column, in a row of figures, or beside another number is set `tabular-nums`, so rows do not jitter and columns align.",
+        "section": "typography"
+      },
+      {
+        "name": "The Ruled Rows Rule",
+        "body": "Anything ranked or ordered in time — a leaderboard, the latest votes, this week's sittings — is a ruled list or a table, never a grid of cards. A card is for one entity at a time (a member, a vote) or for a form.",
+        "section": "layout"
+      },
+      {
+        "name": "The Source Margin Rule",
+        "body": "Every block of figures ends with a caption line in `muted` naming its source and the date of the data it shows; a table carries it as its `<caption>`. A curated claim carries its own \"Source\" link in the margin beside it. A number without its source is not finished.",
+        "section": "layout"
+      },
+      {
+        "name": "The Logical Direction Rule",
+        "body": "Use logical properties and utilities only. The hall is the one deliberate exception, fixed left-to-right in every locale — opposition on the left of the aisle, coalition on the right — because that is the orientation of every election-night broadcast; the spectrum bar is the other, for the same reason.",
+        "section": "layout"
+      },
+      {
+        "name": "The Float-Only Rule",
+        "body": "`shadow-float` is for menus and panels — things that are not in the page's flow. Cards, tables, the search dais and the header never carry a shadow; if something needs separating, give it a hairline.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Nested Radius Rule",
+        "body": "card (0.75rem) > control (0.5rem) > chip (0.375rem); pills only for stateful tokens. Use the token utilities `rounded-card`, `rounded-control`, `rounded-chip` and `rounded-full`, never Tailwind's `rounded-lg`/`rounded-md` by name.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do use `bg-accent` for fills and `text-accent-ink` for text, and `bg-<tone>-soft` with `text-<tone>-ink` for badges; declare any new colour under all three roots.",
+      "Do separate a card from the page with `border border-line` on `bg-surface`, and reserve `shadow-float` for menus and panels.",
+      "Do set ranked or time-ordered data as ruled rows (`divide-y divide-line`) or a table inside `TableFrame`, and end every figure block with its source and date in caption `muted`.",
+      "Do set the page title, the wordmark, the aisle numerals and a finding's leading figure in `font-display`; keep everything else in Heebo.",
+      "Do set every number in a row or column `tabular-nums`, and wrap untranslated Hebrew in `dir=\"rtl\" lang=\"he\"` via `rtlAttrs` or `localizedAttrs`; give a run that opposes the page direction `text-end` as well.",
+      "Do use logical utilities (`ms-`, `pe-`, `border-s`, `text-start`, `end-0`) and the radius tokens (`rounded-card`, `rounded-control`, `rounded-chip`).",
+      "Do keep coalition and opposition in the same blue and express the split by the aisle, a gap, or a side.",
+      "Do make every interactive thing reachable by keyboard through a real link or button with a name; when a drawing has too many targets, provide a legend or list as the keyboard path."
+    ],
+    "donts": [
+      "Don't introduce a second saturated colour as decoration, or colour a bloc red; party colours are data and appear only where a faction is the subject.",
+      "Don't use `uppercase` or `tracking-*` anywhere, in any script.",
+      "Don't put a shadow on a card, a table, the search dais or the header.",
+      "Don't use raw Tailwind palette hues (`bg-green-100`, `text-amber-800`), `bg-white`, `bg-black/5` or `text-[11px]` in new code; the legacy ratchet lets no file add any.",
+      "Don't use physical left/right utilities, style props or declarations; the spectrum bar is the only allow-listed file.",
+      "Don't render a photograph as a hero, or lay statistics over an image of the building.",
+      "Don't open a page with a card grid of findings; a card is for one entity or one form.",
+      "Don't rely on hue alone for any state — a seat is hollow, a badge has a word, a result has a word."
+    ]
+  }
+}

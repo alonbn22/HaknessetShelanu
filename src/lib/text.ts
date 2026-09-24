@@ -29,3 +29,19 @@ export function safeHttpUrl(url: string | null | undefined): string | null {
   const u = (url ?? "").trim();
   return /^https?:\/\//i.test(u) ? u : null;
 }
+
+// Commons' imageinfo API now hands back thumbnails on thumb.wikimedia.org with
+// tracking parameters; the site's CSP (and the committed photo columns) use
+// the canonical upload.wikimedia.org host, whose paths are identical. Applied
+// in the sync when storing and again when rendering, so an older DB still works.
+export function canonicalCommonsUrl(url: string | null | undefined): string | null {
+  if (!url) return null;
+  try {
+    const u = new URL(url);
+    if (u.hostname === "thumb.wikimedia.org") u.hostname = "upload.wikimedia.org";
+    if (u.hostname === "upload.wikimedia.org") u.search = "";
+    return u.toString();
+  } catch {
+    return url;
+  }
+}

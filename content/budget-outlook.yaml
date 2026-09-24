@@ -1,26 +1,41 @@
 # Outlook / news for budgets not yet in the itemized open data (the open-data
 # feed lags by a few years). EDITORIAL — written by the site; verify and UPDATE
 # with the real status and news as each budget moves through the process.
-# Add an entry per budget year. he/en provided; ar/ru fall back to en then he.
+# Add an entry per budget year. Hebrew is the source; every string is in all six
+# languages (he, en, ar, ru, es, fr) — a missing one falls back to en, then he.
 # status: pending | proposed | in-knesset | approved
 entries:
   - year: 2026
-    status: pending
+    status: approved
     headline:
-      he: "תקציב 2026 — בתהליך."
-      en: "The 2026 budget — in progress."
+      he: "תקציב 2026 אושר בכנסת ב-30 במרץ 2026."
+      en: "The 2026 budget passed the Knesset on 30 March 2026."
+      ar: "أقرّ الكنيست ميزانية 2026 في 30 آذار/مارس 2026."
+      ru: "Бюджет на 2026 год принят Кнессетом 30 марта 2026 года."
+      es: "El presupuesto de 2026 fue aprobado por la Knéset el 30 de marzo de 2026."
+      fr: "Le budget 2026 a été adopté par la Knesset le 30 mars 2026."
     timing:
-      he: "תקציב המדינה מאושר בדרך כלל בחוק תקציב שנתי (לעיתים דו-שנתי). הצעת התקציב נדונה בוועדת הכספים של הכנסת ועוברת שלוש קריאות במליאה. תקציב 2026 צפוי לעבור סביב סוף 2025–תחילת 2026; הנתונים המפורטים יופיעו כאן לאחר פרסומם כנתונים פתוחים."
-      en: "The state budget is normally enacted as an annual Budget Law (sometimes biennial). The bill is debated in the Knesset Finance Committee and passes three plenum readings. The 2026 budget is expected to be enacted around late 2025–early 2026; the detailed figures will appear here once published as open data."
+      he: "תקציב המדינה מאושר בדרך כלל בחוק תקציב שנתי (לעיתים דו-שנתי). הצעת התקציב נדונה בוועדת הכספים של הכנסת ועוברת שלוש קריאות במליאה. תקציב 2026 — 850.6 מיליארד ש\"ח, הגדול אי-פעם — אושר בקריאה השנייה והשלישית ב-30 במרץ 2026 ברוב של 62 מול 55, יום לפני המועד החוקי האחרון; המספרים המפורטים יופיעו כאן כשיפורסמו בנתונים הפתוחים."
+      en: "The state budget is normally enacted as an annual Budget Law (sometimes biennial). The bill is debated in the Knesset Finance Committee and passes three plenum readings. The 2026 budget — NIS 850.6 billion, the largest ever — passed its second and third readings on 30 March 2026 by 62 to 55, a day before the legal deadline; the detailed figures will appear here once published as open data."
+      ar: "تُقَرّ ميزانية الدولة عادةً بقانون ميزانية سنوي (وأحيانًا لسنتين). يُناقَش مشروع الميزانية في لجنة المالية في الكنيست ويمرّ بثلاث قراءات في الهيئة العامة. أُقرّت ميزانية 2026 — 850.6 مليار شيكل، وهي الأكبر على الإطلاق — بالقراءتين الثانية والثالثة في 30 آذار/مارس 2026 بأغلبية 62 مقابل 55، قبل يوم واحد من الموعد القانوني الأخير؛ وستظهر الأرقام التفصيلية هنا عند نشرها ضمن البيانات المفتوحة."
+      ru: "Государственный бюджет обычно утверждается ежегодным законом о бюджете (иногда — двухлетним). Проект бюджета обсуждается в финансовой комиссии Кнессета и проходит три чтения в пленуме. Бюджет на 2026 год — 850,6 млрд шекелей, крупнейший в истории, — принят во втором и третьем чтениях 30 марта 2026 года 62 голосами против 55, за день до крайнего законного срока; подробные цифры появятся здесь, когда будут опубликованы в открытых данных."
+      es: "El presupuesto del Estado se aprueba normalmente como una Ley de Presupuesto anual (a veces bienal). El proyecto se debate en la Comisión de Finanzas de la Knéset y pasa tres lecturas en el pleno. El presupuesto de 2026 — 850 600 millones de shékels, el mayor de la historia — superó la segunda y la tercera lectura el 30 de marzo de 2026 por 62 votos a 55, un día antes del plazo legal; las cifras detalladas aparecerán aquí cuando se publiquen como datos abiertos."
+      fr: "Le budget de l’État est normalement adopté sous forme de loi de finances annuelle (parfois biennale). Le projet est examiné par la Commission des Finances de la Knesset et est adopté en trois lectures en plénière. Le budget 2026 — 850,6 milliards de shekels, le plus important jamais voté — a passé ses deuxième et troisième lectures le 30 mars 2026 par 62 voix contre 55, la veille de la date limite légale ; les chiffres détaillés apparaîtront ici une fois publiés en données ouvertes."
     news:
-      - date: "2025-01-01"
+      - date: "2026-03-30"
         text:
-          he: "מעקב אחר ההתקדמות: אישור הממשלה, דיוני ועדת הכספים והקריאות במליאה."
-          en: "Track the milestones: government approval, Finance Committee deliberations, and the plenum readings."
+          he: "הכנסת אישרה את תקציב 2026 בקריאה השנייה והשלישית (62–55). מקור: The Times of Israel, 30.3.2026 (קישור למטה)."
+          en: "The Knesset approved the 2026 budget in its second and third readings (62–55). Source: The Times of Israel, 30 March 2026 (link below)."
+          ar: "صادق الكنيست على ميزانية 2026 بالقراءتين الثانية والثالثة (62–55). المصدر: The Times of Israel، 30 آذار/مارس 2026 (الرابط أدناه)."
+          ru: "Кнессет утвердил бюджет на 2026 год во втором и третьем чтениях (62 — 55). Источник: The Times of Israel, 30 марта 2026 года (ссылка ниже)."
+          es: "La Knéset aprobó el presupuesto de 2026 en segunda y tercera lectura (62–55). Fuente: The Times of Israel, 30 de marzo de 2026 (enlace abajo)."
+          fr: "La Knesset a approuvé le budget 2026 en deuxième et troisième lectures (62–55). Source : The Times of Israel, 30 mars 2026 (lien ci-dessous)."
     links:
-      - label: { he: "אתר משרד האוצר", en: "Ministry of Finance" }
+      - label: { he: "The Times of Israel — הכנסת אישרה את תקציב 2026 (30.3.2026)", en: "The Times of Israel — Knesset approves 2026 budget (30 Mar 2026)", ar: "The Times of Israel — الكنيست يصادق على ميزانية 2026 (30 آذار/مارس 2026)", ru: "The Times of Israel — Кнессет утвердил бюджет на 2026 год (30 марта 2026 года)", es: "The Times of Israel — La Knéset aprueba el presupuesto de 2026 (30/3/2026)", fr: "The Times of Israel — La Knesset adopte le budget 2026 (30/3/2026)" }
+        url: "https://www.timesofisrael.com/knesset-approves-2026-budget-israels-largest-ever-sending-billions-to-haredi-institutions/"
+      - label: { he: "אתר משרד האוצר", en: "Ministry of Finance", ar: "موقع وزارة المالية", ru: "Министерство финансов", es: "Ministerio de Finanzas", fr: "Ministère des Finances" }
         url: "https://www.gov.il/he/departments/ministry_of_finance"
-      - label: { he: "ועדת הכספים של הכנסת", en: "Knesset Finance Committee" }
+      - label: { he: "ועדת הכספים של הכנסת", en: "Knesset Finance Committee", ar: "لجنة المالية في الكنيست", ru: "Финансовая комиссия Кнессета", es: "Comisión de Finanzas de la Knéset", fr: "Commission des Finances de la Knesset" }
         url: "https://main.knesset.gov.il/Activity/committees/Finance/Pages/default.aspx"
-      - label: { he: "התקציב הפתוח", en: "Open Budget portal" }
+      - label: { he: "התקציב הפתוח", en: "Open Budget portal", ar: "بوابة «الميزانية المفتوحة»", ru: "Портал «Открытый бюджет»", es: "Portal del Presupuesto Abierto", fr: "Portail du Budget ouvert" }
         url: "https://next.obudget.org/"

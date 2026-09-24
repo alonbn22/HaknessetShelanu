@@ -2,6 +2,7 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 23597
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -76,8 +77,43 @@ claims:
         candidate for Speaker of the Knesset, but he withdrew his candidacy
         after Benny Gantz presented his own bid, and Gantz was ultimately
         elected to the post.
-    date: 2020-03
+    date: "2020-03"
     sources:
       - url: https://www.jpost.com/israel-news/politics-and-diplomacy/knesset-speaker-in-waiting-moroccan-immigrant-who-studied-pluralism-622192
         title: "Knesset speaker in-waiting: Moroccan immigrant who studied pluralism"
         publisher: The Jerusalem Post
+  - kind: positive
+    category: achievement
+    date: "2023-10-23"
+    title:
+      he: סגן יושב-ראש הכנסת ה-25
+      en: Deputy Speaker of the 25th Knesset
+    description:
+      he: כהן מכהן כסגן יושב-ראש הכנסת ה-25 מטעם סיעת יש עתיד מ-23 באוקטובר 2023.
+      en: Cohen has served as a Deputy Speaker of the 25th Knesset on behalf of the Yesh Atid faction since 23 October 2023.
+    sources:
+      - url: https://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_PersonToPosition?%24filter=PersonID%20eq%2023597
+        title: Knesset OData — positions held by person 23597
+        publisher: The Knesset
+      - url: https://news.walla.co.il/item/3864481
+        title: "\"מפנה את מקומי בגאווה לדור הבא\": הבכיר מיש עתיד הכריז כי לא יתמודד בבחירות"
+        publisher: Walla
+  - kind: neutral
+    category: news
+    date: "2026-08-31"
+    title:
+      he: הודיע שלא יתמודד בבחירות לכנסת ה-26; ימונה ליו"ר ונשיא ועידת יש עתיד
+      en: Announced he will not run in the 26th Knesset election; to chair the Yesh Atid conference
+    description:
+      he: ב-31 באוגוסט 2026 הודיע כהן כי לא יתמודד ברשימת "ביחד" (הרשימה המשותפת של יש עתיד ונפתלי בנט) לבחירות ב-27 באוקטובר 2026, ואמר כי "אחרי 25 שנים בחינוך ו-23 שנים בפוליטיקה אני מפנה את מקומי בשמחה ובגאווה לדור הבא". יאיר לפיד מסר כי כהן אינו עוזב את המפלגה, וכי ימונה ליו"ר ולנשיא ועידת יש עתיד.
+      en: On 31 August 2026 Cohen announced he would not run on the "Beyachad" list (the joint list of Yesh Atid and Naftali Bennett) in the 27 October 2026 election, saying that "after 25 years in education and 23 years in politics I am passing my place with joy and pride to the next generation". Yair Lapid said Cohen is not leaving the party and will be appointed chairman and president of the Yesh Atid conference.
+    sources:
+      - url: https://www.ynet.co.il/news/elections2026/article/sjm5otmdgg
+        title: "עוד פרישה ביש עתיד: חבר הכנסת הוותיק לא יתמודד בבחירות"
+        publisher: Ynet
+      - url: https://news.walla.co.il/item/3864481
+        title: "\"מפנה את מקומי בגאווה לדור הבא\": הבכיר מיש עתיד הכריז כי לא יתמודד בבחירות"
+        publisher: Walla
+      - url: https://www.haaretz.co.il/news/elections/2026-08-31/ty-article/.premium/000001a0-572f-d692-a5e3-f77fde1a0000
+        title: ח"כ מאיר כהן וח"כ מיקי לוי לא יתמודדו ברשימת ביחד לכנסת הבאה
+        publisher: Haaretz

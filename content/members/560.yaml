@@ -2,87 +2,64 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 560
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: חבר כנסת מאז 1999 ומנהיג מפלגת תע"ל
-      en: Member of Knesset since 1999 and leader of the Ta'al party
+      he: "חבר כנסת מאז 1999 ומנהיג מפלגת תע\"ל"
+      en: "Member of Knesset since 1999 and leader of the Ta'al party"
     description:
-      he: אחמד טיבי, יליד 19 בדצמבר 1958 בטייבה, נבחר לראשונה לכנסת בבחירות 1999 ומכהן
-        כחבר כנסת ברציפות מאז. הוא מייסד ומנהיג מפלגת תע"ל (התנועה הערבית
-        להתחדשות), שרצה במסגרת רשימות משותפות שונות לאורך השנים, ובהן הרשימה
-        המשותפת וחד"ש-תע"ל.
-      en: Ahmad Tibi, born 19 December 1958 in Tayibe, was first elected to the
-        Knesset in the 1999 elections and has served continuously since. He is
-        the founder and leader of the Ta'al party (Arab Movement for Renewal),
-        which has run within various joint lists over the years, including the
-        Joint List and Hadash-Ta'al.
-    date: "1999"
+      he: "אחמד טיבי, יליד 19 בדצמבר 1958 בטייבה, נבחר לראשונה לכנסת בבחירות 1999 ומכהן כחבר כנסת ברציפות מאז. הוא מייסד ומנהיג מפלגת תע\"ל (התנועה הערבית להתחדשות), שרצה במסגרת רשימות משותפות שונות לאורך השנים, ובהן הרשימה המשותפת וחד\"ש-תע\"ל."
+      en: "Ahmad Tibi, born 19 December 1958 in Tayibe, was first elected to the Knesset in the 1999 elections and has served continuously since. He is the founder and leader of the Ta'al party (Arab Movement for Renewal), which has run within various joint lists over the years, including the Joint List and Hadash-Ta'al."
+    date: "1999-05-17"
     sources:
       - url: https://en.wikipedia.org/wiki/Ahmad_Tibi
         title: Ahmad Tibi - Wikipedia
         publisher: Wikipedia
-      - url: https://ecfr.eu/special/mapping_palestinian_politics/ahmad_tibi/
-        title: Ahmad Tibi - Mapping Palestinian Politics
-        publisher: European Council on Foreign Relations
+      - url: https://he.wikipedia.org/wiki/%D7%90%D7%97%D7%9E%D7%93_%D7%98%D7%99%D7%91%D7%99
+        title: "אחמד טיבי"
+        publisher: Wikipedia (Hebrew)
   - kind: positive
     category: achievement
     title:
-      he: כיהן כסגן יושב ראש הכנסת
-      en: Served as Deputy Speaker of the Knesset
+      he: "כיהן כסגן יושב ראש הכנסת"
+      en: "Served as Deputy Speaker of the Knesset"
     description:
-      he: טיבי כיהן במשך שנים כסגן יושב ראש הכנסת, החל משנת 2006, אחד התפקידים הבולטים
-        שמילא חבר כנסת ערבי בבית המחוקקים הישראלי.
-      en: Tibi served for years as a Deputy Speaker of the Knesset, beginning in 2006,
-        one of the prominent parliamentary offices held by an Arab member of the
-        Israeli legislature.
-    date: "2006"
+      he: "טיבי מונה לסגן יושב ראש הכנסת במאי 2006, לאחר שוועדת הכנסת הרחיבה את מספר הסגנים לשמונה כדי לאפשר ייצוג לסיעות הערביות, וכיהן בתפקיד בכנסות שונות עד 2022 – אחד התפקידים הבולטים שמילא חבר כנסת ערבי בבית המחוקקים."
+      en: "Tibi was appointed a Deputy Speaker of the Knesset in May 2006, after the House Committee expanded the number of deputies to eight to allow representation for the Arab factions, and held the post across several Knessets until 2022 — one of the prominent parliamentary offices held by an Arab member of the legislature."
+    date: "2006-05-17"
+    sources:
+      - url: https://www.ynetnews.com/articles/0,7340,L-3252008,00.html
+        title: Arab MK appointed deputy Knesset speaker
+        publisher: Ynetnews
+      - url: https://en.wikipedia.org/wiki/Ahmad_Tibi
+        title: Ahmad Tibi - Wikipedia
+        publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: "רקע מקצועי כרופא ויועץ מדיני בכיר"
+      en: "Professional background as a physician and senior political adviser"
+    description:
+      he: "לפני כניסתו לפוליטיקה הוסמך טיבי כרופא נשים, בוגר בית הספר לרפואה של האוניברסיטה העברית בירושלים. בין השנים 1993 ל-1999 שימש יועץ מדיני ליו\"ר הרשות הפלסטינית יאסר ערפאת, וייצג את הצד הפלסטיני במשא ומתן בוויי ריבר ב-1998."
+      en: "Before entering politics, Tibi qualified as a gynecologist, a graduate of the Hebrew University of Jerusalem medical school. Between 1993 and 1999 he served as a political adviser to Palestinian Authority leader Yasser Arafat, and represented the Palestinian side at the 1998 Wye River negotiations."
     sources:
       - url: https://en.wikipedia.org/wiki/Ahmad_Tibi
         title: Ahmad Tibi - Wikipedia
         publisher: Wikipedia
-      - url: https://ecfr.eu/special/mapping_palestinian_politics/ahmad_tibi/
-        title: Ahmad Tibi - Mapping Palestinian Politics
-        publisher: European Council on Foreign Relations
+      - url: https://he.wikipedia.org/wiki/%D7%90%D7%97%D7%9E%D7%93_%D7%98%D7%99%D7%91%D7%99
+        title: "אחמד טיבי"
+        publisher: Wikipedia (Hebrew)
   - kind: positive
     category: achievement
     title:
-      he: רקע מקצועי כרופא ויועץ מדיני בכיר
-      en: Professional background as a physician and senior political adviser
+      he: "נאום השואה בכנסת שזכה לשבחים רחבים"
+      en: "Widely praised Holocaust Remembrance Day speech in the Knesset"
     description:
-      he: לפני כניסתו לפוליטיקה הוסמך טיבי כרופא נשים, בוגר בית הספר לרפואה של
-        האוניברסיטה העברית בירושלים. בין השנים 1993 ל-1999 שימש יועץ מדיני ליו"ר
-        הרשות הפלסטינית יאסר ערפאת, וייצג את הצד הפלסטיני במשא ומתן בוויי ריבר
-        ב-1998.
-      en: Before entering politics, Tibi qualified as a gynecologist, a graduate of
-        the Hebrew University of Jerusalem medical school. Between 1993 and 1999
-        he served as a political adviser to Palestinian Authority leader Yasser
-        Arafat, and represented the Palestinian side at the 1998 Wye River
-        negotiations.
-    sources:
-      - url: https://en.wikipedia.org/wiki/Ahmad_Tibi
-        title: Ahmad Tibi - Wikipedia
-        publisher: Wikipedia
-      - url: https://ecfr.eu/special/mapping_palestinian_politics/ahmad_tibi/
-        title: Ahmad Tibi - Mapping Palestinian Politics
-        publisher: European Council on Foreign Relations
-  - kind: positive
-    category: achievement
-    title:
-      he: נאום השואה בכנסת שזכה לשבחים רחבים
-      en: Widely praised Holocaust Remembrance Day speech in the Knesset
-    description:
-      he: בנאום ביום הזיכרון לשואה במליאת הכנסת בינואר 2010 גינה טיבי בחריפות את הכחשת
-        השואה והביע הזדהות עם כאב הניצולים. הנאום זכה לשבחים מצד חברי כנסת,
-        ויו"ר הכנסת דאז ראובן ריבלין תיאר אותו כאחד הנאומים הטובים שנישאו בנושא
-        במליאה.
-      en: In a speech on Holocaust Remembrance Day in the Knesset plenum in January
-        2010, Tibi sharply condemned Holocaust denial and expressed empathy for
-        the survivors' pain. The speech won praise from fellow members of
-        Knesset, and then-Knesset Speaker Reuven Rivlin described it as one of
-        the best speeches given on the subject in the plenum.
-    date: "2010"
+      he: "בנאום ביום הזיכרון לשואה במליאת הכנסת בינואר 2010 גינה טיבי בחריפות את הכחשת השואה והביע הזדהות עם כאב הניצולים. הנאום זכה לשבחים מצד חברי כנסת, ויו\"ר הכנסת דאז ראובן ריבלין תיאר אותו כאחד הנאומים הטובים שנישאו בנושא במליאה."
+      en: "In a speech on Holocaust Remembrance Day in the Knesset plenum in January 2010, Tibi sharply condemned Holocaust denial and expressed empathy for the survivors' pain. The speech won praise from fellow members of Knesset, and then-Knesset Speaker Reuven Rivlin described it as one of the best speeches given on the subject in the plenum."
+    date: "2010-01-27"
     sources:
       - url: https://www.haaretz.com/1.5090552
         title: Arab MK Slams Holocaust Denial, Wins Praise From Jewish Colleagues
@@ -90,3 +67,25 @@ claims:
       - url: https://en.wikipedia.org/wiki/Ahmad_Tibi
         title: Ahmad Tibi - Wikipedia
         publisher: Wikipedia
+  - kind: neutral
+    category: news
+    date: "2026-08-19"
+    title:
+      he: "הרשימה המשותפת הוקמה מחדש לקראת בחירות 2026 – טיבי במקום השני"
+      en: "Joint List re-established ahead of the 2026 election, with Tibi in second place"
+    description:
+      he: "ב-19 באוגוסט 2026, לאחר משא ומתן ממושך שבמהלכו דחה טיבי הצעה קודמת לחלוקת המקומות, סיכמו חד\"ש, תע\"ל ובל\"ד על ריצה ברשימה משותפת לכנסת ה-26. בראש הרשימה יו\"ר חד\"ש יוסף ג'בארין, טיבי במקום השני וסאמי אבו שחאדה מבל\"ד במקום השלישי; רע\"ם אינה חלק מההסכם ומתמודדת בנפרד."
+      en: "On 19 August 2026, after prolonged negotiations in which Tibi had rejected an earlier proposed slate, Hadash, Ta'al and Balad agreed to run together on a joint list for the 26th Knesset. Hadash chairman Yousef Jabareen heads the list, Tibi is second and Balad's Sami Abou Shahadeh third; Ra'am is not part of the agreement and is running separately."
+    sources:
+      - url: https://www.timesofisrael.com/arab-majority-hadash-taal-and-balad-parties-agree-on-joint-run-after-striking-deal/
+        title: Arab-majority Hadash, Ta'al and Balad parties agree on joint run after striking deal
+        publisher: The Times of Israel
+      - url: https://www.mako.co.il/news-israel-elections/2026/Article-cb92eb7e0f910a1026.htm
+        title: "חד\"ש, תע\"ל ובל\"ד סיכמו על ריצה ברשימה משותפת"
+        publisher: N12
+      - url: https://www.jpost.com/israel-election-2026/article-906019
+        title: Hadash-Ta'al, Balad sign deal to re-establish Joint List weeks ahead of Israel's election
+        publisher: The Jerusalem Post
+      - url: https://www.jdn.co.il/news/2726035/
+        title: "38 רשימות, שלושה מועמדים לראשות הממשלה: מפת הבחירות לכנסת ה-26"
+        publisher: JDN

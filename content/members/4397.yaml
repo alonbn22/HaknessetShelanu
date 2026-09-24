@@ -1,66 +1,80 @@
-# PersonID 4397. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 4397 (Ze'ev Elkin). Researched from reputable public sources; every
+# cited URL re-verified on 2026-09-18. Neutral language; legal status marked.
 personId: 4397
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: מכהן כשר במשרד האוצר האחראי על שיקום הצפון והדרום
-      en: Serves as a minister in the Finance Ministry overseeing rehabilitation of
-        the north and south
+      he: "מכהן כשר במשרד האוצר האחראי על שיקום הצפון והדרום"
+      en: "Serves as a minister in the Finance Ministry overseeing rehabilitation of the north and south"
     description:
-      he: בנובמבר 2024, במסגרת הצטרפות מפלגתו של גדעון סער (תקווה חדשה) לקואליציה
-        בראשות בנימין נתניהו, מונה זאב אלקין לשר במשרד האוצר. במסגרת תפקידו הוא
-        אחראי על מנהלת תקומה לשיקום יישובי עוטף עזה ועל המנהלת לשיקום הצפון.
-      en: In November 2024, as part of Gideon Sa'ar's party joining Benjamin
-        Netanyahu's coalition, Ze'ev Elkin was appointed a minister within the
-        Finance Ministry. In this role he is responsible for the Tkuma
-        Directorate for rebuilding the Gaza-border communities and the Northern
-        Rehabilitation Directorate.
-    date: 2024-11-05
+      he: "ב-8 בנובמבר 2024, במסגרת הצטרפות מפלגתו של גדעון סער (תקווה חדשה) לקואליציה בראשות בנימין נתניהו, מונה זאב אלקין לשר במשרד האוצר. במסגרת תפקידו הוא אחראי על מנהלת תקומה לשיקום יישובי עוטף עזה ועל המנהלת לשיקום הצפון, והוא ממשיך בתפקיד בממשלת המעבר."
+      en: "On 8 November 2024, as part of Gideon Sa'ar's party (New Hope) joining Benjamin Netanyahu's coalition, Ze'ev Elkin was appointed a minister within the Finance Ministry. In this role he is responsible for the Tkuma Directorate for rebuilding the Gaza-border communities and the Northern Rehabilitation Directorate, and he continues in the post in the caretaker government."
+    date: "2024-11-08"
     sources:
-      - url: https://www.jpost.com/israel-news/article-827801
-        title: Benjamin Netanyahu signs coalition agreement with Sa'ar
-        publisher: The Jerusalem Post
-      - url: https://www.timesofisrael.com/liveblog_entry/saars-deal-with-likud-puts-mk-elkin-in-charge-of-rebuilding-war-ravaged-south-north/
-        title: Sa'ar's deal with Likud puts MK Elkin in charge of rebuilding war-ravaged
-          south, north
-        publisher: The Times of Israel
+      - url: "https://www.jpost.com/israel-news/article-827801"
+        title: "Benjamin Netanyahu signs coalition agreement with Sa'ar"
+        publisher: "The Jerusalem Post"
+      - url: "https://www.timesofisrael.com/liveblog_entry/saars-deal-with-likud-puts-mk-elkin-in-charge-of-rebuilding-war-ravaged-south-north/"
+        title: "Sa'ar's deal with Likud puts MK Elkin in charge of rebuilding war-ravaged south, north"
+        publisher: "The Times of Israel"
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/4397"
+        title: "Ze'ev Elkin - Knesset member page"
+        publisher: "Knesset"
   - kind: positive
     category: achievement
     title:
-      he: חבר כנסת ושר ותיק במגוון תיקים ממשלתיים
-      en: Veteran Knesset member who has held a range of ministerial portfolios
+      he: "חבר כנסת ושר ותיק במגוון תיקים ממשלתיים"
+      en: "Veteran Knesset member who has held a range of ministerial portfolios"
     description:
-      he: אלקין מכהן כחבר הכנסת מאז 2006. לאורך השנים שימש בשורה של תפקידי שרים, ובהם
-        שר לקליטת העלייה, השר להגנת הסביבה, השר לענייני ירושלים ומורשת, שר
-        ההשכלה הגבוהה והמים ושר הבינוי והשיכון, וכן כיהן כסגן שר החוץ.
-      en: Elkin has served as a member of the Knesset since 2006. Over the years he
-        has held a series of ministerial posts, including Minister of Immigrant
-        Absorption, Minister of Environmental Protection, Minister of Jerusalem
-        Affairs and Heritage, Minister of Higher Education and Water Resources,
-        and Minister of Housing and Construction, as well as serving as Deputy
-        Minister of Foreign Affairs.
+      he: "אלקין מכהן כחבר הכנסת מאז 2006. לאורך השנים שימש בשורה של תפקידי שרים, ובהם שר לקליטת העלייה, השר להגנת הסביבה, השר לענייני ירושלים ומורשת, שר ההשכלה הגבוהה והמים ושר הבינוי והשיכון, וכן כיהן כסגן שר החוץ וכיו\"ר הקואליציה."
+      en: "Elkin has served as a member of the Knesset since 2006. Over the years he has held a series of ministerial posts, including Minister of Immigrant Absorption, Minister of Environmental Protection, Minister of Jerusalem Affairs and Heritage, Minister of Higher Education and Water Resources, and Minister of Housing and Construction, as well as serving as Deputy Minister of Foreign Affairs and as coalition chairman."
     sources:
-      - url: https://en.wikipedia.org/wiki/Ze%27ev_Elkin
-        title: Ze'ev Elkin
-        publisher: Wikipedia
+      - url: "https://en.wikipedia.org/wiki/Ze%27ev_Elkin"
+        title: "Ze'ev Elkin"
+        publisher: "Wikipedia"
   - kind: positive
     category: achievement
     title:
-      he: שימש מתורגמן ויועץ לראשי ממשלת ישראל במגעים עם נשיא רוסיה
-      en: Served as Russian-language interpreter and adviser to Israeli prime
-        ministers in talks with Russia's president
+      he: "שימש מתורגמן ויועץ לראשי ממשלת ישראל במגעים עם נשיא רוסיה"
+      en: "Served as Russian-language interpreter and adviser to Israeli prime ministers in talks with Russia's president"
     description:
-      he: אלקין, יליד חרקוב שבברית המועצות, דובר רוסית שפת אם. שימש מתורגמן ויועץ
-        לראשי הממשלה בנימין נתניהו ונפתלי בנט בפגישותיהם עם נשיא רוסיה ולדימיר
-        פוטין.
-      en: Elkin, who was born in Kharkiv in the Soviet Union and is a native Russian
-        speaker, served as an interpreter and adviser to Prime Ministers
-        Benjamin Netanyahu and Naftali Bennett in their meetings with Russian
-        President Vladimir Putin.
+      he: "אלקין, יליד חרקוב שבברית המועצות, דובר רוסית שפת אם. שימש מתורגמן ויועץ לראשי הממשלה בנימין נתניהו ונפתלי בנט בפגישותיהם עם נשיא רוסיה ולדימיר פוטין."
+      en: "Elkin, who was born in Kharkiv in the Soviet Union and is a native Russian speaker, served as an interpreter and adviser to Prime Ministers Benjamin Netanyahu and Naftali Bennett in their meetings with Russian President Vladimir Putin."
     sources:
-      - url: https://en.wikipedia.org/wiki/Ze%27ev_Elkin
-        title: Ze'ev Elkin
-        publisher: Wikipedia
+      - url: "https://en.wikipedia.org/wiki/Ze%27ev_Elkin"
+        title: "Ze'ev Elkin"
+        publisher: "Wikipedia"
+  - kind: neutral
+    category: news
+    date: "2026-05-11"
+    title:
+      he: "הודיע על שובו לליכוד ועל התמודדות בפריימריז"
+      en: "Announced his return to Likud and a run in its primaries"
+    description:
+      he: "ב-11 במאי 2026 הודיע אלקין, שהגיע לממשלה מטעם תקווה חדשה של גדעון סער, כי חזר סופית לליכוד ויתמודד בפריימריז של המפלגה לקראת בחירות 2026, לאחר שמרכז הליכוד אישר את הסכם המיזוג עם תקווה חדשה. ביוני 2026 דווח כי ההסכם, שהבטיח לסיעת סער שני מקומות ריאליים, עומד בסימן שאלה."
+      en: "On 11 May 2026 Elkin, who had entered the government on behalf of Gideon Sa'ar's New Hope, announced that he had returned to Likud for good and would run in the party's primaries ahead of the 2026 election, after the Likud Central Committee approved the merger agreement with New Hope. In June 2026 it was reported that the agreement, which had guaranteed Sa'ar's faction two realistic slots, was in doubt."
+    sources:
+      - url: "https://www.srugim.co.il/1304148-%D7%90%D7%9C%D7%A7%D7%99%D7%9F-%D7%9E%D7%95%D7%93%D7%99%D7%A2-%D7%90%D7%AA%D7%9E%D7%95%D7%93%D7%93-%D7%91%D7%A4%D7%A8%D7%99%D7%99%D7%9E%D7%A8%D7%99%D7%96-%D7%94%D7%9C%D7%99%D7%9B%D7%95%D7%93"
+        title: "אלקין מודיע: אתמודד בפריימריז של הליכוד"
+        publisher: "Srugim"
+      - url: "https://www.srugim.co.il/101003832-%D7%A8%D7%92%D7%A2-%D7%9C%D7%A4%D7%A0%D7%99-%D7%94%D7%91%D7%97%D7%99%D7%A8%D7%95%D7%AA-%D7%9E%D7%9B%D7%94-%D7%A7%D7%A9%D7%94-%D7%9C%D7%92%D7%93%D7%A2%D7%95%D7%9F-%D7%A1%D7%A2%D7%A8"
+        title: "רגע לפני הבחירות: הליכוד ותקווה חדשה בדרך לביטול המיזוג"
+        publisher: "Srugim"
+  - kind: neutral
+    category: news
+    date: "2026-08-25"
+    title:
+      he: "תוצאת הפריימריז בליכוד ומינוי לראש מטה העולים של המפלגה"
+      en: "Likud primary result and appointment to head the party's immigrant outreach"
+    description:
+      he: "בפריימריז של הליכוד ב-17 באוגוסט 2026 התמודד אלקין עם ניר ברקת על המקום ה-16 בהצבעה, שנחשב למקום הריאלי האחרון, ודורג במקום ה-32 ברשימה המשולבת - מקום שאינו נחשב מובטח. ב-25 באוגוסט 2026 מינה אותו נתניהו לעמוד בראש מטה הליכוד לציבור העולים ודוברי הרוסית, ואמר כי אלקין יהיה בכנסת הבאה."
+      en: "In the Likud primaries of 17 August 2026 Elkin contested the 16th slot in the vote, considered the last realistic one, against Nir Barkat, and ended up 32nd on the combined list - a placement not considered secure. On 25 August 2026 Netanyahu appointed him to head Likud's campaign among immigrant and Russian-speaking voters and said Elkin would be in the next Knesset."
+    sources:
+      - url: "https://www.ynet.co.il/news/article/sy6ibjzdze"
+        title: "התוצאות הסופיות בפריימריז הליכוד - והרשימה המסתמנת"
+        publisher: "Ynet"
+      - url: "https://www.jpost.com/israel-election-2026/article-906578"
+        title: "Netanyahu appoints sole Russian-speaking Likud candidate Elkin to lead party's immigrant outreach"
+        publisher: "The Jerusalem Post"

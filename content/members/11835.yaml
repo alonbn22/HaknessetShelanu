@@ -2,21 +2,17 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 11835
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: award
     title:
-      he: פרס חבר הכנסת המצטיין מטעם המכון הישראלי לדמוקרטיה
-      en: Israel Democracy Institute Outstanding Parliamentarian Award
+      he: "פרס חבר הכנסת המצטיין מטעם המכון הישראלי לדמוקרטיה"
+      en: "Israel Democracy Institute Outstanding Parliamentarian Award"
     description:
-      he: אורי מקלב היה בין שלושה חברי כנסת שזכו בפרס חבר הכנסת המצטיין מטעם המכון
-        הישראלי לדמוקרטיה, בטקס שנערך ב-2 בפברואר 2012 לציון פעילותו הפרלמנטרית
-        בשנת 2011.
-      en: Uri Maklev was one of three Knesset members honoured with the Israel
-        Democracy Institute's Outstanding Parliamentarian Award, presented at a
-        ceremony on 2 February 2012 in recognition of his parliamentary work
-        during 2011.
-    date: 2012-02-02
+      he: "אורי מקלב היה בין שלושה חברי כנסת שזכו בפרס חבר הכנסת המצטיין מטעם המכון הישראלי לדמוקרטיה, בטקס שנערך ב-2 בפברואר 2012 לציון פעילותו הפרלמנטרית בשנת 2011."
+      en: "Uri Maklev was one of three Knesset members honoured with the Israel Democracy Institute's Outstanding Parliamentarian Award, presented at a ceremony on 2 February 2012 in recognition of his parliamentary work during 2011."
+    date: "2012-02-02"
     sources:
       - url: https://en.idi.org.il/events/7251
         title: Outstanding Parliamentarian Award 2011
@@ -27,15 +23,12 @@ claims:
   - kind: positive
     category: achievement
     title:
-      he: סגן שר התחבורה והבטיחות בדרכים
-      en: Deputy Minister of Transport and Road Safety
+      he: "סגן שר התחבורה והבטיחות בדרכים"
+      en: "Deputy Minister of Transport and Road Safety"
     description:
-      he: אורי מקלב כיהן כסגן שר התחבורה והבטיחות בדרכים בממשלה השלושים וחמש, מ-25
-        במאי 2020 עד 13 ביוני 2021, מטעם יהדות התורה.
-      en: Uri Maklev served as Deputy Minister of Transport and Road Safety in the
-        thirty-fifth government of Israel, from 25 May 2020 to 13 June 2021, on
-        behalf of United Torah Judaism.
-    date: 2020-05-25
+      he: "אורי מקלב כיהן כסגן שר התחבורה והבטיחות בדרכים בממשלה השלושים וחמש, מ-25 במאי 2020 עד 13 ביוני 2021, מטעם יהדות התורה."
+      en: "Uri Maklev served as Deputy Minister of Transport and Road Safety in the thirty-fifth government of Israel, from 25 May 2020 to 13 June 2021, on behalf of United Torah Judaism."
+    date: "2020-05-25"
     sources:
       - url: https://en.wikipedia.org/wiki/Ministry_of_Transport_and_Road_Safety
         title: Ministry of Transport and Road Safety
@@ -46,17 +39,44 @@ claims:
   - kind: positive
     category: achievement
     title:
-      he: סגן ראש עיריית ירושלים וחבר מועצת העיר
-      en: Deputy Mayor of Jerusalem and City Council member
+      he: "סגן ראש עיריית ירושלים וחבר מועצת העיר"
+      en: "Deputy Mayor of Jerusalem and City Council member"
     description:
-      he: לפני כניסתו לכנסת, אורי מקלב כיהן כחבר מועצת עיריית ירושלים וכסגן ראש העיר
-        בין השנים 1993 ל-2008, ובין היתר היה אחראי על תיק החינוך. הוא נכנס לכנסת
-        ב-31 ביולי 2008 מטעם דגל התורה במסגרת הסכם רוטציה.
-      en: Before entering the Knesset, Uri Maklev served on the Jerusalem City Council
-        and as a Deputy Mayor of Jerusalem from 1993 to 2008, holding
-        responsibilities including the education portfolio. He entered the
-        Knesset on 31 July 2008 for Degel HaTorah under a rotation agreement.
+      he: "לפני כניסתו לכנסת, אורי מקלב כיהן כחבר מועצת עיריית ירושלים וכסגן ראש העיר בין השנים 1993 ל-2008, ובין היתר היה אחראי על תיק החינוך. הוא נכנס לכנסת ב-31 ביולי 2008 מטעם דגל התורה במסגרת הסכם רוטציה."
+      en: "Before entering the Knesset, Uri Maklev served on the Jerusalem City Council and as a Deputy Mayor of Jerusalem from 1993 to 2008, holding responsibilities including the education portfolio. He entered the Knesset on 31 July 2008 for Degel HaTorah under a rotation agreement."
     sources:
       - url: https://en.wikipedia.org/wiki/Uri_Maklev
         title: Uri Maklev
         publisher: Wikipedia
+  - kind: positive
+    category: achievement
+    title:
+      he: "סגן שר בממשלה ה-37 (2023–2025)"
+      en: "Deputy minister in the 37th government (2023–2025)"
+    description:
+      he: "בכנסת ה-25 כיהן מקלב כסגן שר במשרד התחבורה והבטיחות בדרכים וכסגן שר במשרד ראש הממשלה, מ-3 בינואר 2023. ב-15 ביולי 2025 התפטר מתפקידו יחד עם שאר נציגי יהדות התורה בממשלה, במחאה על נוסח הצעת חוק הגיוס, ושב לכהן כחבר כנסת מן המניין."
+      en: "In the 25th Knesset Maklev served as Deputy Minister in the Ministry of Transport and Road Safety and Deputy Minister in the Prime Minister's Office, from 3 January 2023. On 15 July 2025 he resigned together with the other United Torah Judaism office-holders in protest at the draft-law bill, and returned to serving as a regular Knesset member."
+    date: "2023-01-03"
+    sources:
+      - url: https://www.timesofisrael.com/united-torah-judaism-quits-govt-to-protest-new-proposal-on-army-enlistment-exemptions/
+        title: United Torah Judaism quits gov't to protest new proposal on army enlistment exemptions
+        publisher: The Times of Israel
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2011835%20and%20KnessetNum%20eq%2025"
+        title: "Knesset OData: positions of PersonID 11835 in the 25th Knesset"
+        publisher: The Knesset
+  - kind: neutral
+    category: news
+    date: "2026-09-05"
+    title:
+      he: "הנהגת דגל התורה החליטה שלא לשבץ אותו ברשימה לכנסת ה-26"
+      en: "Degel HaTorah leadership decided not to place him on the list for the 26th Knesset"
+    description:
+      he: "ב-5 בספטמבר 2026 הודיעה הנהגת דגל התורה, בהוראת הרב דב לנדו, כי חברי הכנסת משה גפני ואורי מקלב לא ישובצו ברשימת המפלגה לבחירות לכנסת ה-26; בהודעה נומק המהלך בצורך ב\"ריענון\" השורות. את הרשימה יעמיד בראשה ח\"כ יעקב אשר."
+      en: "On 5 September 2026 the Degel HaTorah leadership announced, at the direction of Rabbi Dov Lando, that MKs Moshe Gafni and Uri Maklev would not be placed on the party's list for the 26th Knesset election; the announcement cited a need to \"refresh\" the ranks. MK Yaakov Asher is to head the list."
+    sources:
+      - url: https://www.haaretz.co.il/news/elections/2026-09-05/ty-article/.premium/000001a0-7317-d542-a3f1-777f27ce0000
+        title: "הנהגת דגל התורה הדיחה את גפני ומקלב מהרשימה לכנסת"
+        publisher: Haaretz
+      - url: https://www.inn.co.il/news/705666
+        title: "רשמית: הרב לנדו הורה לגפני ולמקלב לעזוב את הכנסת לטובת 'ריענון'"
+        publisher: Arutz 7 (Israel National News)

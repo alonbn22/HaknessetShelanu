@@ -2,6 +2,7 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 30799
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -16,7 +17,7 @@ claims:
         November 2022, and returned to the 25th Knesset on 5 July 2024 following
         the resignation of Yifat Shasha-Biton. He entered the Knesset on behalf
         of the New Hope party (later National Right), led by Gideon Sa'ar.
-    date: 2024-07-05
+    date: "2024-07-05"
     sources:
       - url: https://en.wikipedia.org/wiki/Michel_Buskila
         title: Michel Buskila
@@ -38,7 +39,7 @@ claims:
       en: Before entering the Knesset, Buskila served as a member of the Ashkelon city
         council from May 2009 and as deputy mayor of Ashkelon. He led the Likud
         branch in Ashkelon.
-    date: 2009-05-01
+    date: "2009-05-01"
     sources:
       - url: https://en.wikipedia.org/wiki/Michel_Buskila
         title: Michel Buskila
@@ -54,10 +55,10 @@ claims:
         the National Right faction
     description:
       he: במהלך כהונתו בכנסת ה-25 נבחר בוסקילה ליושב ראש הוועדה המיוחדת ליישובים בגבול
-        המזרחי, וכן משמש יושב ראש סיעת הימין הממלכתי.
+        המזרחי (לפי נתוני הכנסת, מ-27 בנובמבר 2024 עד מינויו לסגן שר ב-16 ביולי 2026), והוא משמש יושב ראש סיעת הימין הממלכתי מנובמבר 2024.
       en: During his term in the 25th Knesset, Buskila was elected chair of the
-        Special Committee for Eastern Border Settlements, and he also serves as
-        head of the National Right (HaYamin HaMamlachti) faction.
+        Special Committee for Eastern Border Settlements (per Knesset records, from 27 November 2024 until his appointment as deputy minister on 16 July 2026), and he has headed the National Right (HaYamin HaMamlachti) faction since November 2024.
+    date: "2024-11-27"
     sources:
       - url: https://he.wikipedia.org/wiki/%D7%9E%D7%99%D7%A9%D7%9C_%D7%91%D7%95%D7%A1%D7%A7%D7%99%D7%9C%D7%94
         title: מישל בוסקילה
@@ -65,3 +66,41 @@ claims:
       - url: https://www.knesset.tv/knesset-members/70270/
         title: חבר הכנסת מישל בוסקילה
         publisher: Knesset Channel (ערוץ כנסת)
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030799%20and%20KnessetNum%20eq%2025"
+        title: "Knesset OData: positions of PersonID 30799 in the 25th Knesset"
+        publisher: The Knesset
+  - kind: positive
+    category: achievement
+    title:
+      he: סגן יושב ראש הכנסת (פברואר–יולי 2026)
+      en: Deputy Speaker of the Knesset (February–July 2026)
+    description:
+      he: ב-25 בפברואר 2026 מונה בוסקילה לסגן יושב ראש הכנסת במקומו של משה סולומון, וכיהן בתפקיד עד מינויו לסגן שר ב-16 ביולי 2026.
+      en: On 25 February 2026 Buskila was appointed a Deputy Speaker of the Knesset in place of Moshe Solomon, and held the post until his appointment as deputy minister on 16 July 2026.
+    date: "2026-02-25"
+    sources:
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030799%20and%20KnessetNum%20eq%2025"
+        title: "Knesset OData: positions of PersonID 30799 in the 25th Knesset"
+        publisher: The Knesset
+      - url: https://he.wikipedia.org/wiki/%D7%9E%D7%99%D7%A9%D7%9C_%D7%91%D7%95%D7%A1%D7%A7%D7%99%D7%9C%D7%94
+        title: מישל בוסקילה
+        publisher: Wikipedia (Hebrew)
+  - kind: neutral
+    category: role
+    date: "2026-07-16"
+    title:
+      he: מונה לסגן שר החוץ
+      en: Appointed Deputy Minister of Foreign Affairs
+    description:
+      he: "ב-15 ביולי 2026 הודיע שר החוץ גדעון סער על מינויו של בוסקילה לסגן שר החוץ במקומה של שרן השכל, שהתפטרה מהתפקיד ומהכנסת. לפי נתוני הכנסת המינוי נכנס לתוקף ב-16 ביולי 2026, יום לפני פיזור הכנסת ה-25, והוא מכהן בתפקיד בממשלת המעבר."
+      en: "On 15 July 2026 Foreign Minister Gideon Sa'ar announced the appointment of Buskila as Deputy Minister of Foreign Affairs in place of Sharren Haskel, who had resigned from the post and from the Knesset. According to Knesset records the appointment took effect on 16 July 2026, a day before the 25th Knesset was dissolved, and he holds the post in the caretaker government."
+    sources:
+      - url: https://www.ynet.co.il/news/article/syecc7snzl
+        title: "אחרי התפטרותה של שרן השכל: ח\"כ מישל בוסקילה ימונה לסגן שר החוץ"
+        publisher: Ynet
+      - url: https://www.jdn.co.il/news/2693647/
+        title: "ח\"כ מישל בוסקילה ימונה לסגן שר החוץ במקום שרן השכל שהתפטרה"
+        publisher: JDN
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030799%20and%20KnessetNum%20eq%2025"
+        title: "Knesset OData: positions of PersonID 30799 in the 25th Knesset"
+        publisher: The Knesset

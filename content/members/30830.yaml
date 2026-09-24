@@ -2,6 +2,7 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 30830
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -14,7 +15,7 @@ claims:
       en: Ohad Tal was elected to the 25th Knesset in November 2022 as a member of the
         Religious Zionist Party, after being placed 12th on the party list,
         which won 14 seats.
-    date: 2022-11-15
+    date: "2022-11-15"
     sources:
       - url: https://en.wikipedia.org/wiki/Ohad_Tal
         title: Ohad Tal
@@ -29,14 +30,33 @@ claims:
       en: Chairman of the Religious Zionism faction in the Knesset
     description:
       he: בנובמבר 2024 מינה יושב ראש מפלגת הציונות הדתית, בצלאל סמוטריץ', את חבר הכנסת
-        אוהד טל ליושב ראש סיעת המפלגה בכנסת.
+        אוהד טל ליושב ראש סיעת המפלגה בכנסת במקומו של שמחה רוטמן; לפי נתוני הכנסת הוא מכהן כיו"ר הסיעה מ-11 בנובמבר 2024.
       en: In November 2024, Religious Zionist Party leader Bezalel Smotrich appointed
-        MK Ohad Tal as chairman of the party's faction in the Knesset.
-    date: 2024-11
+        MK Ohad Tal as chairman of the party's faction in the Knesset in place of Simcha Rothman; Knesset records date his term as faction chairman from 11 November 2024.
+    date: "2024-11-11"
     sources:
       - url: https://en.wikipedia.org/wiki/Ohad_Tal
         title: Ohad Tal
         publisher: Wikipedia
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030830%20and%20KnessetNum%20eq%2025"
+        title: "Knesset OData: positions of PersonID 30830 in the 25th Knesset"
+        publisher: The Knesset
+  - kind: positive
+    category: achievement
+    title:
+      he: יושב ראש הוועדה למיזמים ציבוריים בכנסת ה-25
+      en: Chairman of the Knesset Public Enterprises Committee in the 25th Knesset
+    description:
+      he: לפי נתוני הכנסת, טל מכהן כיושב ראש הוועדה למיזמים ציבוריים מ-1 בפברואר 2023, וכן כחבר בוועדת הכלכלה ובוועדת העלייה, הקליטה והתפוצות וכממלא מקום חבר בוועדת החוץ והביטחון.
+      en: According to Knesset records, Tal has chaired the Public Enterprises Committee since 1 February 2023, and also sits on the Economic Affairs Committee and the Immigration, Absorption and Diaspora Affairs Committee, and is a substitute member of the Foreign Affairs and Defense Committee.
+    date: "2023-02-01"
+    sources:
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030830%20and%20KnessetNum%20eq%2025"
+        title: "Knesset OData: positions of PersonID 30830 in the 25th Knesset"
+        publisher: The Knesset
+      - url: https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%94%D7%93_%D7%98%D7%9C
+        title: אוהד טל
+        publisher: Wikipedia (Hebrew)
   - kind: positive
     category: achievement
     title:
@@ -57,3 +77,39 @@ claims:
       - url: https://www.wikidata.org/wiki/Q115051874
         title: Ohad Tal (Q115051874)
         publisher: Wikidata
+  - kind: negative
+    category: controversy
+    status: settled
+    date: "2025-11-27"
+    title:
+      he: "תועד נוזף בעובד הקונסוליה הצרפתית בירושלים; צרפת דרשה הגברת אבטחה"
+      en: "Recorded berating a French Consulate employee in Jerusalem; France demanded heightened security"
+    description:
+      he: "בנובמבר 2025, במהלך סיור של חברי כנסת מהימין בקונסוליה הצרפתית בירושלים, תועד טל נוזף בעובד הקונסוליה ואומר לו, לפי הדיווח, כי \"נדאג שלא תוכל לעבוד כאן\". משרד החוץ הצרפתי גינה את האירוע ודרש מישראל להבטיח את ביטחון נציגויותיו. בריאיון ל-JNS בתחילת דצמבר 2025 טען טל מנגד כי נציגויות זרות בירושלים, ובהן הקונסוליה הצרפתית, מלבות הסתה נגד ישראל ומפרות נורמות דיפלומטיות. לא נפתח הליך משפטי בעניין."
+      en: "In November 2025, during a tour of the French Consulate in Jerusalem by right-wing MKs, Tal was recorded berating a consulate employee and, according to the report, telling him they would \"make sure you can't work here\". France's foreign ministry condemned the incident and demanded that Israel guarantee the security of its diplomatic missions. In an interview with JNS in early December 2025, Tal countered that foreign missions in Jerusalem, including the French Consulate, fuel anti-Israel incitement and violate diplomatic norms. No legal proceeding was opened over the matter."
+    sources:
+      - url: https://www.haaretz.com/israel-news/2025-11-27/ty-article/.premium/france-demands-heightened-security-after-israeli-mks-harass-french-consulate-staffer/0000019a-c601-d360-a5bb-f71b883f0000
+        title: France Demands Heightened Security Measures at French Consulate in Jerusalem After Israeli MKs Harass Staffer
+        publisher: Haaretz
+      - url: https://www.jns.org/french-consulate-sparks-uproar-in-jerusalem-after-clash-with-mk-ohad-tal/
+        title: French Consulate sparks uproar in Jerusalem after clash with MK Ohad Tal
+        publisher: JNS
+  - kind: neutral
+    category: news
+    date: "2026-07-26"
+    title:
+      he: דורג במקום החמישי ברשימת הציונות הדתית בפריימריז לקראת בחירות 2026
+      en: Ranked fifth on the Religious Zionism list in the party primary ahead of the 2026 election
+    description:
+      he: "בפריימריז של מפלגת הציונות הדתית, שנערכו ב-26 ביולי 2026 בהצבעת 170 מתוך 173 חברי מרכז המפלגה, דורג טל במקום החמישי ברשימה – אחרי יו\"ר המפלגה בצלאל סמוטריץ', אורית סטרוק, שמחה רוטמן וצבי סוכות. ב-1 בספטמבר 2026 סיכמו הציונות הדתית ומפלגת זהות בראשות משה פייגלין על ריצה משותפת, כשזהות מקבלת את המקומות 2, 8, 10 ו-11 ברשימה המשותפת; ברשימה המשותפת שהוגשה שובץ טל במקום ה-12."
+      en: "In the Religious Zionism party primary held on 26 July 2026, in which 170 of the 173 central committee members voted, Tal was ranked fifth on the list — after party chairman Bezalel Smotrich, Orit Strook, Simcha Rothman and Zvi Sukkot. On 1 September 2026 Religious Zionism and Moshe Feiglin's Zehut party agreed to run together, with Zehut receiving slots 2, 8, 10 and 11 on the joint list; on the joint list as submitted, Tal is placed 12th."
+    sources:
+      - url: https://www.inn.co.il/news/702464
+        title: "אלה תוצאות הפריימריז במפלגת הציונות הדתית"
+        publisher: Arutz 7 (Israel National News)
+      - url: https://www.inn.co.il/news/705372
+        title: "פייגלין וסמוטריץ' סיכמו: רצים יחד בבחירות"
+        publisher: Arutz 7 (Israel National News)
+      - url: https://www.jdn.co.il/news/2726035/
+        title: "38 רשימות, שלושה מועמדים לראשות הממשלה: מפת הבחירות לכנסת ה-26"
+        publisher: JDN

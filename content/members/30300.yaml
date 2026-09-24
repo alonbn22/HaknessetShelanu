@@ -1,7 +1,8 @@
-# PersonID 30300. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30300 (Amir Ohana). Researched from reputable public sources and
+# source-verified (every cited URL re-fetched 2026-09-18). Neutral language;
+# legal status marked where relevant. REVIEW before launch.
 personId: 30300
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -33,11 +34,11 @@ claims:
     description:
       he: ב-29 בדצמבר 2022 נבחר אמיר אוחנה ליושב ראש הכנסת, ובכך הפך ליושב הראש הגלוי
         הראשון כהומו בתולדות הכנסת. הוא נבחר עם השבעת הממשלה ה-37 בראשות בנימין
-        נתניהו.
+        נתניהו, ומכהן בתפקיד גם לאחר פיזור הכנסת ה-25 ביולי 2026.
       en: On 29 December 2022, Amir Ohana was elected Speaker of the Knesset, becoming
         the first openly gay person to hold the post in the parliament's
         history. He was elected alongside the swearing-in of Benjamin
-        Netanyahu's 37th government.
+        Netanyahu's 37th government, and continues in the post after the 25th Knesset's dissolution in July 2026.
     date: 2022-12-29
     sources:
       - url: https://en.wikipedia.org/wiki/Amir_Ohana
@@ -69,3 +70,60 @@ claims:
       - url: https://www.wikidata.org/wiki/Q21794010
         title: Amir Ohana (Q21794010)
         publisher: Wikidata
+  - kind: negative
+    category: controversy
+    date: 2025-10-20
+    title:
+      he: כינה את נשיא בית המשפט העליון יצחק עמית "שופט" ולא "נשיא" בפתיחת מושב החורף; הנשיא הרצוג נזף
+      en: Addressed Chief Justice Isaac Amit as "justice" rather than "president" at the winter session opening; President Herzog rebuked him
+    description:
+      he: 'בטקס פתיחת מושב החורף של הכנסת ב-20 באוקטובר 2025 פנה אוחנה אל נשיא בית המשפט העליון יצחק עמית בתואר "שופט" בלבד, על רקע מחלוקת הקואליציה על הליך בחירתו. נשיא המדינה יצחק הרצוג סטה מנאומו ואמר: "לא אסבול חוסר כבוד בסיסי", וראש הממשלה נתניהו אמר כי "יצחק עמית הוא נשיא בית המשפט העליון – זו עובדה". בפברואר 2025 הודיע אוחנה כי ייעדר מטקס השבעתו של עמית, במחאה על ביטול חוק יסוד על ידי בג"ץ ועל הליך הבחירה.'
+      en: 'At the opening of the Knesset winter session on 20 October 2025, Ohana addressed Supreme Court President Isaac Amit only as "justice", amid the coalition''s dispute over how Amit was chosen. President Isaac Herzog departed from his prepared speech to say "I will not tolerate basic disrespect", and Prime Minister Netanyahu said "Isaac Amit is the president of the Supreme Court – that is a fact". In February 2025 Ohana had announced he would skip Amit''s swearing-in ceremony, in protest at the High Court''s striking down of a Basic Law and at the selection process.'
+    sources:
+      - url: https://www.ynet.co.il/news/article/bjkgbsx0gl
+        title: 'אוחנה כינה את נשיא העליון "שופט", הרצוג: "חוסר כבוד!". נתניהו: עמית הוא נשיא העליון'
+        publisher: Ynet
+      - url: https://www.timesofisrael.com/liveblog-october-20-2025/
+        title: The Times of Israel liveblog, October 20, 2025 (Knesset winter session opening)
+        publisher: The Times of Israel
+      - url: https://www.ynet.co.il/news/article/byhhd8zfkx
+        title: 'מצטרף לנתניהו ולוין: אוחנה ייעדר מטקס השבעת עמית לנשיא העליון'
+        publisher: Ynet
+  - kind: negative
+    category: controversy
+    date: 2026-07-02
+    title:
+      he: בג"ץ פסל פה אחד את בחירת מבקר המדינה שניהל אוחנה, בשל הפרת חשאיות ההצבעה
+      en: The State Comptroller election he presided over was unanimously annulled by the HCJ justices, citing breaches of ballot secrecy
+    description:
+      he: 'בהצבעה לבחירת מבקר המדינה ב-3 ביוני 2026 עצר אוחנה את הסיבוב השני והתחילו מחדש לאחר בקשות של חברי כנסת מהליכוד לצלם את פתק ההצבעה, אך הבהיר כי חבר כנסת רשאי לצלם את עצמו. לפחות שישה חברי כנסת תיעדו את הצבעתם, ומיכאל ראבילו נבחר ברוב של 61 מול 57. ב-2 ביולי 2026 פסל בג"ץ פה אחד את הבחירה והורה על הצבעה חוזרת; המשנה לנשיא נעם סולברג כתב כי "נפל פגם יסודי" בחשאיות ההצבעה וכי קיימת "אפשרות ממשית" שההפרות השפיעו על התוצאה. לפי ynet, אוחנה וסביבת ראש הממשלה קיימו התייעצויות בשאלת יישום פסק הדין, ואוחנה לא הודיע מיד כיצד ינהג.'
+      en: 'In the 3 June 2026 vote to elect the State Comptroller, Ohana halted and restarted the second round after Likud MKs asked to photograph their ballots, while clarifying that an MK may film themselves. At least six MKs recorded their votes, and Michael Rabello was elected 61–57. On 2 July 2026 the High Court unanimously annulled the election and ordered a new vote; Deputy President Noam Sohlberg wrote that a "fundamental flaw" had occurred regarding ballot secrecy and that there was a "real possibility" the violations affected the outcome. According to Ynet, Ohana and the Prime Minister''s circle held consultations on implementing the ruling, and Ohana did not immediately say how he would act.'
+    sources:
+      - url: https://www.timesofisrael.com/high-court-rules-state-comptroller-election-violated-ballot-secrecy-must-be-held-again/
+        title: High Court rules state comptroller election violated ballot secrecy, must be held again
+        publisher: The Times of Israel
+      - url: https://www.ynet.co.il/news/article/skvyvj4xfg
+        title: 'בג"ץ פסק: הבחירות בראבילו למבקר המדינה פסולות - ויתקיימו מחדש'
+        publisher: Ynet
+      - url: https://www.ynet.co.il/news/article/bypj2ypggl
+        title: 'עקב הבקשה לצלם את פתק ההצבעה: הסבב השני לבחירת מבקר המדינה יתחיל מחדש'
+        publisher: Ynet
+  - kind: neutral
+    category: news
+    date: 2026-08-17
+    title:
+      he: הגיע למקום השני בפריימריז הליכוד ומשובץ במקום השלישי ברשימה לכנסת ה-26
+      en: Finished second in the Likud primary and placed third on the slate for the 26th Knesset
+    description:
+      he: בפריימריז הליכוד ב-17 באוגוסט 2026 הגיע אוחנה למקום השני בהצבעה, אחרי אלי כהן. ברשימת הליכוד שהוגשה לוועדת הבחירות ב-9 בספטמבר 2026 הוא משובץ במקום השלישי, אחרי נתניהו וכהן.
+      en: In the Likud primary on 17 August 2026 Ohana finished second in the vote, behind Eli Cohen. On the Likud slate filed with the elections committee on 9 September 2026 he is placed third, after Netanyahu and Cohen.
+    sources:
+      - url: https://www.globes.co.il/news/article.aspx?did=1001552600
+        title: "ספירת הקולות הסתיימה: כך נראית רשימת הליכוד החדשה"
+        publisher: Globes
+      - url: https://www.jns.org/news/israel-news/likud-files-26th-knesset-election-slate
+        title: Likud files 26th Knesset election slate
+        publisher: JNS
+      - url: https://www.timesofisrael.com/cohen-levin-ohana-and-regev-top-likud-primary-with-over-60-of-vote-counted/
+        title: Cohen, Ohana, Levin and Regev top Likud party primary; Netanyahu 'very satisfied' with results
+        publisher: The Times of Israel

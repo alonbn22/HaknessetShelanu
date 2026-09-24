@@ -2,6 +2,7 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 30601
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -14,7 +15,7 @@ claims:
       en: Yinon Azulai began serving as a Member of Knesset for Shas on 14 March 2018,
         after his father, Minister David Azulai, resigned his Knesset seat. He
         has since served as an MK and as chairman of the Shas faction.
-    date: 2018-03-14
+    date: "2018-03-14"
     sources:
       - url: https://en.wikipedia.org/wiki/Yinon_Azulai
         title: Yinon Azulai
@@ -43,12 +44,9 @@ claims:
       he: יושב ראש ועדת האתיקה של הכנסת
       en: Chairman of the Knesset Ethics Committee
     description:
-      he: בשנת 2023 מונה ינון אזולאי ליושב ראש ועדת האתיקה של הכנסת, הוועדה האחראית על
-        אכיפת כללי האתיקה החלים על חברי הכנסת.
-      en: In 2023, Yinon Azulai was appointed chairman of the Knesset Ethics
-        Committee, the body responsible for enforcing the ethics rules that
-        apply to members of the Knesset.
-    date: "2023"
+      he: ב-24 בינואר 2023 הודיע יו"ר הכנסת אמיר אוחנה על הקמתה מחדש של ועדת האתיקה של הכנסת, בראשות ח"כ ינון אזולאי, בהרכב של שני נציגי קואליציה ושני נציגי אופוזיציה. הוועדה אחראית על אכיפת כללי האתיקה החלים על חברי הכנסת.
+      en: On 24 January 2023 Knesset Speaker Amir Ohana announced the re-establishment of the Knesset Ethics Committee, chaired by MK Yinon Azulai, with two coalition and two opposition members. The committee is responsible for enforcing the ethics rules that apply to members of the Knesset.
+    date: "2023-01-24"
     sources:
       - url: https://www.calcalist.co.il/local_news/article/r1qzw2psi
         title: ועדת האתיקה בכנסת תוקם מחדש - ח"כ ינון אזולאי ישמש כיו"ר
@@ -56,3 +54,32 @@ claims:
       - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-754186
         title: Knesset Ethics Committee probes Lapid's trip to Italy
         publisher: The Jerusalem Post
+  - kind: neutral
+    category: news
+    date: "2026-08-03"
+    title:
+      he: "הצהיר כי ש\"ס לא תצטרף לקואליציה ללא הסדרת מעמד בני הישיבות"
+      en: "Declared that Shas will not join a coalition without regulating the status of yeshiva students"
+    description:
+      he: "בריאיון לרדיו קול חי ב-3 באוגוסט 2026 אמר אזולאי, יו\"ר סיעת ש\"ס, כי הסדרת מעמדם של בני הישיבות היא \"תנאי מוחלט לכל קואליציה שניכנס אליה\", וכי המפלגה לא תסתפק עוד בפתרונות זמניים אלא תקדם חקיקה קבועה בנושא."
+      en: "In an interview with the Kol Chai radio station on 3 August 2026, Azulai, chairman of the Shas faction, said that regulating the status of yeshiva students is \"an absolute condition for any coalition we join\", and that the party would no longer settle for temporary solutions but would advance permanent legislation on the matter."
+    sources:
+      - url: https://www.inn.co.il/news/703039
+        title: "ינון אזולאי: בלי הסדרת מעמד בני הישיבות - ש\"ס לא תיכנס לקואליציה"
+        publisher: Arutz 7 (Israel National News)
+  - kind: neutral
+    category: news
+    date: "2026-09-08"
+    title:
+      he: "שובץ במקום השני ברשימת ש\"ס לכנסת ה-26"
+      en: "Placed second on the Shas list for the 26th Knesset"
+    description:
+      he: "ברשימת ש\"ס לבחירות לכנסת ה-26, שפורסמה ב-8 בספטמבר 2026, שובץ אזולאי במקום השני, מיד אחרי יו\"ר המפלגה אריה דרעי, לאחר שבכנסת הקודמת היה במקום השביעי."
+      en: "On the Shas list for the election to the 26th Knesset, published on 8 September 2026, Azulai was placed second, immediately after party chairman Aryeh Deri, having been seventh on the list in the previous Knesset."
+    sources:
+      - url: https://www.haaretz.co.il/news/elections/2026-09-08/ty-article/000001a0-7fc4-da8b-afbe-7fe5c7ba0000
+        title: "רשימת ש\"ס לכנסת: מיכאל מלכיאלי קודם למקום השלישי, סגן אלוף במקום השישי"
+        publisher: Haaretz
+      - url: https://www.ynet.co.il/news/elections2026/article/hkjzuqtofe
+        title: "עם סגן אלוף במילואים במקום ריאלי: זו רשימת ש\"ס לכנסת"
+        publisher: Ynet

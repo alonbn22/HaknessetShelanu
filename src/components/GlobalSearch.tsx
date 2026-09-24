@@ -25,7 +25,7 @@ export function GlobalSearch({
         const v = q.trim();
         router.push(v ? `/search?q=${encodeURIComponent(v)}` : "/search");
       }}
-      className="flex items-center gap-2 rounded-full border border-black/15 bg-white p-1.5 ps-4 shadow-sm"
+      className="flex items-center gap-2 rounded-full border border-line-strong bg-surface p-1.5 ps-4"
       role="search"
     >
       <SearchIcon size={18} className="text-accent" />
@@ -36,11 +36,11 @@ export function GlobalSearch({
         autoFocus={autoFocus}
         placeholder={t("placeholder")}
         aria-label={t("placeholder")}
-        className="flex-1 bg-transparent text-sm outline-none placeholder-black/40"
+        className="flex-1 bg-transparent text-sm text-foreground outline-none placeholder:text-muted"
       />
       <button
         type="submit"
-        className="rounded-full bg-accent px-4 py-1.5 text-sm font-semibold text-white hover:bg-accent-deep"
+        className="rounded-full bg-accent px-4 py-1.5 text-sm font-semibold text-on-accent hover:bg-accent-deep"
       >
         {t("button")}
       </button>

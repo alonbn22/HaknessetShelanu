@@ -1,7 +1,8 @@
 # PersonID 22151. Auto-researched from reputable public sources and
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# legal status marked. Re-verified 2026-09-18.
 personId: 22151
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -61,3 +62,38 @@ claims:
       - url: https://en.wikipedia.org/wiki/Akram_Hasson
         title: Akram Hasson
         publisher: Wikipedia (English)
+  - kind: neutral
+    category: role
+    date: "2026-07-17"
+    title:
+      he: חבר הכנסת ה-25 (מיולי 2025) וסגן יושב-ראש הכנסת (מיולי 2026)
+      en: Member of the 25th Knesset (from July 2025) and Deputy Speaker (from July 2026)
+    description:
+      he: חסון נכנס לכנסת ה-25 ב-10 ביולי 2025, לאחר שהשר גדעון סער התפטר מהכנסת לפי
+        החוק הנורבגי, והושבע במליאה ב-14 ביולי 2025. לפי רישומי הכנסת הוא מכהן
+        כסגן יושב-ראש הכנסת מ-17 ביולי 2026, ולפי ערוץ הכנסת הוא עומד בראש
+        ועדת המשנה להשכלה גבוהה. לפי ויקיפדיה העברית הוא מכהן גם כיושב ראש
+        סיעת הימין הממלכתי מ-16 ביולי 2026, לאחר מישל בוסקילה.
+      en: Hasson entered the 25th Knesset on 10 July 2025, after Minister Gideon Sa'ar
+        resigned his seat under the Norwegian Law, and was sworn in at the
+        plenum on 14 July 2025. Knesset records list him as a Deputy Speaker
+        of the Knesset from 17 July 2026, and the Knesset Channel lists him
+        as chair of the subcommittee on higher education. According to
+        Hebrew Wikipedia he has also chaired the National Right faction
+        since 16 July 2026, succeeding Michel Buskila.
+    sources:
+      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-860355
+        title: FM Sa'ar submits resignation under Norwegian Law
+        publisher: The Jerusalem Post
+      - url: https://www.ynetnews.com/article/7083may2t
+        title: "Following Matan Kahana's withdrawal and Minister Saar's resignation under Norwegian Law: 2 new MKs sworn in"
+        publisher: Ynetnews
+      - url: "https://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_PersonToPosition?$filter=PersonID%20eq%2022151%20and%20IsCurrent%20eq%20true"
+        title: "KNS_PersonToPosition — current positions of PersonID 22151 (Knesset OData)"
+        publisher: The Knesset (OData)
+      - url: https://www.knesset.tv/knesset-members/85858/
+        title: אכרם חסון
+        publisher: Knesset Channel (ערוץ הכנסת)
+      - url: "https://he.wikipedia.org/wiki/%D7%94%D7%9B%D7%A0%D7%A1%D7%AA_%D7%94%D7%A2%D7%A9%D7%A8%D7%99%D7%9D_%D7%95%D7%97%D7%9E%D7%A9"
+        title: "הכנסת העשרים וחמש"
+        publisher: "Wikipedia (Hebrew)"

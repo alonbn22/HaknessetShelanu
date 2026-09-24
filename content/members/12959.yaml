@@ -1,4 +1,5 @@
 personId: 12959
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -16,16 +17,19 @@ claims:
   - kind: positive
     category: achievement
     title:
-      he: כיהנה כשרת התרבות והספורט (2015–2020)
-      en: Served as Minister of Culture and Sport (2015–2020)
+      he: כיהנה כשרת התרבות והספורט (2015–2020); שרת התחבורה מאז דצמבר 2022
+      en: Served as Minister of Culture and Sport (2015–2020); Minister of Transport since December 2022
     description:
-      he: לאחר היבחרה לכנסת מטעם הליכוד בבחירות 2009, מונתה רגב בשנת 2015 על ידי ראש הממשלה בנימין נתניהו לשרת התרבות והספורט בממשלת ישראל, תפקיד בו כיהנה עד שנת 2020.
-      en: After being elected to the Knesset for Likud in the 2009 elections, Regev was appointed Minister of Culture and Sport by Prime Minister Benjamin Netanyahu in 2015, a post she held until 2020.
-    date: 2015-05-14
+      he: לאחר היבחרה לכנסת מטעם הליכוד בבחירות 2009, מונתה רגב בשנת 2015 לשרת התרבות והספורט, תפקיד בו כיהנה עד שנת 2020. מאז 29 בדצמבר 2022 היא מכהנת כשרת התחבורה והבטיחות בדרכים בממשלה ה-37 (ממשלת מעבר מאז פיזור הכנסת ה-25 ביולי 2026).
+      en: After being elected to the Knesset for Likud in the 2009 elections, Regev was appointed Minister of Culture and Sport in 2015, a post she held until 2020. Since 29 December 2022 she has served as Minister of Transport and Road Safety in the 37th government (a caretaker government since the 25th Knesset dispersed in July 2026).
+    date: 2022-12-29
     sources:
       - url: https://en.wikipedia.org/wiki/Miri_Regev
         title: Miri Regev
         publisher: Wikipedia
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/12959
+        title: MK Miri Regev — personal details and positions
+        publisher: Knesset (official)
   - kind: negative
     category: investigation
     status: ongoing
@@ -36,10 +40,10 @@ claims:
       ar: تحقيق للشرطة في وزارة المواصلات (قضية «إشارة المرور»)
       ru: Полицейское расследование в министерстве транспорта (дело «Светофор»)
     description:
-      he: ביוני 2024 פתחה יחידת להב 433 בחקירה פלילית בחשד להעדפה פוליטית בהקצאת משאבי משרד התחבורה ("שיטת הרמזור"), בעקבות תחקיר "המקור" בערוץ 13. בפברואר 2026 הודיעה המשטרה כי החקירה הסתיימה מבלי שרגב זומנה לחקירה, והתיק הועבר לפרקליטות המדינה להחלטה. רגב מכחישה את החשדות וכינתה את התחקיר "מפוברק".
-      en: In June 2024, the Israel Police Lahav 433 unit opened a criminal investigation into alleged politically based allocation of Transport Ministry resources (the "traffic light" method), following a Channel 13 HaMakor investigative report. In February 2026, police announced the investigation had concluded without Regev being questioned, and the file was transferred to the State Attorney's Office for a decision. Regev denies the allegations and has called the report fabricated.
-      ar: في يونيو 2024 فتحت وحدة "لاهف 433" في الشرطة الإسرائيلية تحقيقًا جنائيًا في شبهات تخصيص موارد وزارة المواصلات على أساس سياسي («طريقة إشارة المرور»)، في أعقاب تحقيق صحفي لبرنامج "همكور" في القناة 13. في فبراير 2026 أعلنت الشرطة انتهاء التحقيق دون استدعاء ريغيف للاستجواب، وأُحيل الملف إلى النيابة العامة لاتخاذ قرار. تنفي ريغيف الشبهات ووصفت التحقيق الصحفي بأنه ملفّق.
-      ru: В июне 2024 года подразделение полиции «Лахав 433» начало уголовное расследование по подозрению в политически мотивированном распределении ресурсов министерства транспорта («метод светофора») после журналистского расследования программы «ха-Макор» 13-го канала. В феврале 2026 года полиция объявила о завершении расследования без допроса Регев; дело передано в государственную прокуратуру для принятия решения. Регев отрицает подозрения и назвала расследование сфабрикованным.
+      he: ביוני 2024 פתחה יחידת להב 433 בחקירה פלילית בחשד להעדפה פוליטית בהקצאת משאבי משרד התחבורה ("שיטת הרמזור"), בעקבות תחקיר "המקור" בערוץ 13. בפברואר 2026 הודיעה המשטרה כי החקירה הסתיימה מבלי שרגב זומנה לחקירה, והתיק הועבר לפרקליטות המדינה להחלטה; נכון למועד הבדיקה האחרונה לא פורסמה החלטת הפרקליטות. רגב מכחישה את החשדות וכינתה את התחקיר "מפוברק".
+      en: In June 2024, the Israel Police Lahav 433 unit opened a criminal investigation into alleged politically based allocation of Transport Ministry resources (the "traffic light" method), following a Channel 13 HaMakor investigative report. In February 2026, police announced the investigation had concluded without Regev being questioned, and the file was transferred to the State Attorney's Office for a decision; as of the last review no prosecution decision had been published. Regev denies the allegations and has called the report fabricated.
+      ar: في يونيو 2024 فتحت وحدة "لاهف 433" في الشرطة الإسرائيلية تحقيقًا جنائيًا في شبهات تخصيص موارد وزارة المواصلات على أساس سياسي («طريقة إشارة المرور»)، في أعقاب تحقيق صحفي لبرنامج "همكور" في القناة 13. في فبراير 2026 أعلنت الشرطة انتهاء التحقيق دون استدعاء ريغيف للاستجواب، وأُحيل الملف إلى النيابة العامة لاتخاذ قرار؛ وحتى آخر مراجعة لم يُنشر قرار النيابة. تنفي ريغيف الشبهات ووصفت التحقيق الصحفي بأنه ملفّق.
+      ru: В июне 2024 года подразделение полиции «Лахав 433» начало уголовное расследование по подозрению в политически мотивированном распределении ресурсов министерства транспорта («метод светофора») после журналистского расследования программы «ха-Макор» 13-го канала. В феврале 2026 года полиция объявила о завершении расследования без допроса Регев; дело передано в государственную прокуратуру для принятия решения, и на момент последней проверки решение прокуратуры не публиковалось. Регев отрицает подозрения и назвала расследование сфабрикованным.
     sources:
       - url: https://www.jpost.com/israel-news/crime-in-israel/article-805721
         title: Miri Regev's Transport Ministry under investigation for fraud
@@ -53,4 +57,19 @@ claims:
       - url: https://www.ynet.co.il/news/article/ryekihicke
         title: '8 חודשי חקירה במשרד התחבורה: רגב לא זומנה, קשיים בהוכחת שיטת ה"רמזור"'
         publisher: Ynet
-lastReviewed: 2026-07-05
+  - kind: neutral
+    category: news
+    date: 2026-08-17
+    title:
+      he: מקום רביעי בפריימריז הליכוד לקראת בחירות 2026
+      en: Fourth place in the Likud primary ahead of the 2026 election
+    description:
+      he: בפריימריז הליכוד לרשימה לכנסת ה-26, שתוצאותיו פורסמו ב-17 באוגוסט 2026, דורגה רגב במקום הרביעי (אחרי אלי כהן, אמיר אוחנה ויריב לוין) — הגבוה מבין הנשים ברשימה.
+      en: In the Likud primary for the 26th Knesset list, whose results were published on 17 August 2026, Regev was ranked fourth (after Eli Cohen, Amir Ohana and Yariv Levin), the highest-placed woman on the list.
+    sources:
+      - url: https://www.haaretz.co.il/news/elections/2026-08-17/ty-article/.premium/000001a0-10eb-d0aa-abfb-befb92a40000
+        title: "הסתיימה ספירת הקולות בפריימריז: אלי כהן, אמיר אוחנה ויריב לוין בצמרת הליכוד"
+        publisher: Haaretz
+      - url: https://news.walla.co.il/item/3861207
+        title: "ספירת הקולות בליכוד נגמרה: אלי כהן במקום הראשון, אוחנה ולוין אחריו - ומי נשאר בחוץ?"
+        publisher: Walla

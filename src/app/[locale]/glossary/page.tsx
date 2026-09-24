@@ -16,7 +16,7 @@ export default async function GlossaryPage() {
       term: partyText(g.term, locale),
       termHe: g.term.he, // stable anchor key across locales (#g-<termHe>)
       def: partyText(g.def, locale),
-      source: g.sourceUrl ?? null,
+      source: g.sourceUrl,
     }))
     .sort((a, b) => a.term.localeCompare(b.term, locale));
 

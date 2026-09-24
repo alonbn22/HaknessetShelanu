@@ -1,7 +1,8 @@
 # PersonID 30686. Auto-researched from reputable public sources and
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# legal status marked. Reviewed 2026-09-18.
 personId: 30686
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -15,7 +16,7 @@ claims:
       en: Meirav Cohen was appointed Minister for Social Equality in May 2020 and
         served again in the role from June 2021 until December 2022, overseeing
         government programs aimed at reducing socio-economic gaps.
-    date: 2020-05-17
+    date: "2020-05-17"
     sources:
       - url: https://www.jpost.com/breaking-news/meirav-cohen-to-be-made-social-equality-minister-628019
         title: Meirav Cohen to be made social equality minister
@@ -30,15 +31,25 @@ claims:
       en: Chair of the Committee on the Status of Women and Gender Equality
     description:
       he: כחברת הכנסת מטעם יש עתיד, מירב כהן מכהנת כיושבת ראש הוועדה לקידום מעמד האישה
-        ולשוויון מגדרי בכנסת, ומובילה דיונים בנושאים כגון פגיעות מיניות ורצח
-        נשים.
-      en: As a Knesset member for Yesh Atid, Meirav Cohen serves as chair of the
-        Committee on the Status of Women and Gender Equality, leading hearings
-        on issues such as sexual assault and femicide.
+        ולשוויון מגדרי בכנסת ה-25 (על פי הוויקיפדיה העברית, מ-5 בנובמבר 2025, לאחר
+        שקודם לכן עמדה בראש הוועדה המיוחדת לניצולי השואה), ומובילה דיונים בנושאים
+        כגון אלימות נגד נשים ורצח נשים.
+      en: As a Knesset member for Yesh Atid, Meirav Cohen chairs the Committee on the
+        Status of Women and Gender Equality in the 25th Knesset (according to
+        Hebrew Wikipedia, since 5 November 2025, having earlier chaired the
+        Special Committee on Holocaust Survivors), leading hearings on issues
+        such as violence against women and femicide.
+    date: "2025-11-05"
     sources:
-      - url: https://www.jpost.com/tags/meirav-cohen
-        title: Meirav Cohen articles and latest stories
-        publisher: The Jerusalem Post
+      - url: https://www.ynet.co.il/news/article/rk9wrjmzzl
+        title: בן גביר אסר, המשטרה והשב"ס לא הגיעו לדיון על אלימות נגד נשים - עם תירוץ מדהים
+        publisher: Ynet
+      - url: https://www.ynet.co.il/news/article/hyjtevyd11x
+        title: "מילואימניק בדיון על אלימות נגד נשים: 'אני הפצצה המתקתקת'"
+        publisher: Ynet
+      - url: https://he.wikipedia.org/wiki/%D7%9E%D7%99%D7%A8%D7%91_%D7%9B%D7%94%D7%9F
+        title: מירב כהן
+        publisher: Wikipedia (Hebrew)
   - kind: positive
     category: volunteering
     title:
@@ -57,3 +68,38 @@ claims:
       - url: https://en.wikipedia.org/wiki/Meirav_Cohen
         title: Meirav Cohen
         publisher: Wikipedia
+  - kind: neutral
+    category: news
+    date: "2026-09-06"
+    title:
+      he: במקום התשיעי ברשימת "ביחד" (בנט–לפיד) לבחירות 2026
+      en: Placed ninth on the joint Bennett-Lapid "B'Yachad" list for the 2026 election
+    description:
+      he: ב-6 בספטמבר 2026 הוצגה רשימת "ביחד", הרשימה המשותפת של מפלגתו של נפתלי בנט
+        ושל יש עתיד בראשות יאיר לפיד, לבחירות ב-27 באוקטובר 2026; מירב כהן שובצה
+        במקום התשיעי.
+      en: On 6 September 2026 the "B'Yachad" slate - the joint list of Naftali
+        Bennett's party and Yair Lapid's Yesh Atid - was unveiled for the 27
+        October 2026 election, with Meirav Cohen in ninth place.
+    sources:
+      - url: https://www.timesofisrael.com/bennett-liberman-unveil-byachad-yisrael-beytenu-knesset-slates-for-upcoming-election/
+        title: Anti-Netanyahu leaders Bennett and Liberman unveil their parties' Knesset election slates
+        publisher: The Times of Israel
+  - kind: neutral
+    category: news
+    date: "2026-09-07"
+    title:
+      he: מוצגת כמועמדת יש עתיד לתפקיד שרת החינוך
+      en: Presented as Yesh Atid's candidate for education minister
+    description:
+      he: בסקירה של ynet מ-7 בספטמבר 2026 על המועמדים לתפקיד שר החינוך אחרי הבחירות
+        צוין כי יאיר לפיד הדגיש שידרוש את תיק החינוך בממשלה הבאה וכי מירב כהן
+        מיועדת לתפקיד; כהן אמרה כי היא רואה בכך "משימת חיים".
+      en: A ynet overview on 7 September 2026 of the candidates for education minister
+        after the election noted that Yair Lapid has stressed he will demand the
+        education portfolio in the next government and that Meirav Cohen is
+        designated for the post; Cohen said she sees it as "a life mission".
+    sources:
+      - url: https://www.ynet.co.il/news/elections2026/article/h10quc5ugg
+        title: "בצד אחד: קיש, גמליאל ומעוז. בצד השני: אלטשולר, לזימי ומירב כהן. מי יהיה שר החינוך?"
+        publisher: Ynet

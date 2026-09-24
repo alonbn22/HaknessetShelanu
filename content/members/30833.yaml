@@ -1,22 +1,30 @@
-# PersonID 30833. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30833. Researched from reputable public sources and source-verified
+# (every cited URL re-fetched on the review date). Neutral language; legal
+# status marked. REVIEW before launch.
 personId: 30833
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: כיהן כסגן שר במשרד ראש הממשלה
-      en: Served as Deputy Minister in the Prime Minister's Office
+      he: סגן שר במשרד ראש הממשלה
+      en: Deputy Minister in the Prime Minister's Office
     description:
-      he: ב-2 באפריל 2025 מונה אלמוג כהן, מטעם מפלגת עוצמה יהודית, לסגן שר במשרד ראש
-        הממשלה, והתפטר מהכנסת מכוח החוק הנורבגי. במסגרת תפקידו הופקד על ריכוז
-        קידום הקמתו של שדה תעופה משלים לנמל התעופה בן-גוריון בנגב.
-      en: On 2 April 2025, Almog Cohen of the Otzma Yehudit party was appointed Deputy
-        Minister in the Prime Minister's Office, resigning from the Knesset
-        under the Norwegian Law. In this role he was tasked with advancing the
-        planning and establishment of a supplementary airport to Ben Gurion
-        Airport in the Negev.
+      he: ב-2 באפריל 2025 מונה אלמוג כהן, אז מטעם מפלגת עוצמה יהודית, לסגן שר במשרד
+        ראש הממשלה, והתפטר מהכנסת מכוח החוק הנורבגי; במסגרת תפקידו הופקד על קידום
+        הקמתו של שדה תעופה משלים לנתב"ג בנגב. ב-29 ביוני 2025 הודיע על התפטרותו
+        מהממשלה כדי לשוב לכנסת ולקדם הצעת חוק להקמת שדה תעופה בנבטים, אך בסופו
+        של דבר חזר בו מההתפטרות, ולפי רישומי הכנסת הוא ממשיך לכהן כסגן שר (נכון
+        לספטמבר 2026, בממשלת מעבר).
+      en: On 2 April 2025, Almog Cohen, then of the Otzma Yehudit party, was appointed
+        Deputy Minister in the Prime Minister's Office, resigning from the
+        Knesset under the Norwegian Law; in this role he was tasked with
+        advancing a supplementary airport to Ben Gurion Airport in the Negev. On
+        29 June 2025 he announced his resignation from the government in order
+        to return to the Knesset and promote a bill for an airport at Nevatim,
+        but he ultimately reversed the resignation, and according to the
+        Knesset's records he continues to serve as deputy minister (as of
+        September 2026, in a caretaker government).
     date: 2025-04-02
     sources:
       - url: https://he.wikipedia.org/wiki/%D7%90%D7%9C%D7%9E%D7%95%D7%92_%D7%9B%D7%94%D7%9F_(%D7%97%D7%91%D7%A8_%D7%94%D7%9B%D7%A0%D7%A1%D7%AA)
@@ -25,6 +33,9 @@ claims:
       - url: https://www.jpost.com/israel-news/article-859391
         title: Otzma Yehudit Deputy Minister Almog Cohen resigns from Israeli gov't
         publisher: The Jerusalem Post
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30833
+        title: MK Almog Cohen — personal details and positions
+        publisher: Knesset (official)
   - kind: positive
     category: achievement
     title:
@@ -50,17 +61,21 @@ claims:
       he: ננזף וננקטו נגדו סנקציות בידי ועדת האתיקה של הכנסת
       en: Reprimanded and sanctioned by the Knesset Ethics Committee
     description:
-      he: בעקבות התבטאויות והתנהגות כלפי חברי כנסת ערבים מסיעת חד"ש-תע"ל שנמצאו
-        פוגעניות, הטילה ועדת האתיקה של הכנסת על אלמוג כהן בתחילת 2023 נזיפה
-        רשמית וסנקציות, ובהן הרחקה מנאומים במליאה ובוועדות למשך חמישה ימים
-        ואיסור להגיש הצעות חוק ושאילתות עד תום מושב החורף.
-      en: Following remarks and conduct toward Arab Knesset members from the
-        Hadash-Ta'al faction that were found to be offensive, the Knesset Ethics
-        Committee imposed an official reprimand and sanctions on Almog Cohen in
-        early 2023, including a five-day ban on speaking in the plenum and
-        committees and a bar on submitting bills and queries until the end of
-        the winter session.
-    date: 2023-03-01
+      he: בעקבות סרטון שבו לעג לחברי כנסת מהאופוזיציה — ובכלל זה השמעת קולות של כבשה
+        בהתייחסו לח"כ עופר כסיף ("צריך לדבר איתו כמו כבשה") ודברים על ח"כ אחמד
+        טיבי וח"כ מירב בן ארי — הטילה ועדת האתיקה של הכנסת על אלמוג כהן ב-6 במרץ
+        2023 נזיפה, הרחקה מנאומים במליאה ובוועדות למשך חמישה ימים ואיסור להגיש
+        הצעות חוק ושאילתות עד 2 באפריל 2023, בקובעה כי התנהגותו "גזענית
+        ושוביניסטית". כהן התנצל בפני בן ארי אך סירב להתנצל בפני חברי חד"ש-תע"ל.
+      en: After a video in which he mocked opposition MKs — including making sheep
+        noises in reference to MK Ofer Cassif ("you need to talk to him like a
+        sheep") and remarks about MKs Ahmad Tibi and Meirav Ben-Ari — the
+        Knesset Ethics Committee on 6 March 2023 imposed on Almog Cohen a
+        reprimand, a five-day ban on speaking in the plenum and committees and a
+        bar on submitting bills and queries until 2 April 2023, finding his
+        conduct "racist and chauvinist". Cohen apologized to Ben-Ari but refused
+        to apologize to the Hadash-Ta'al MKs.
+    date: 2023-03-06
     sources:
       - url: https://www.timesofisrael.com/knesset-ethics-panel-reprimands-far-right-mk-who-likened-arab-party-mks-to-sheep/
         title: Knesset ethics panel reprimands far-right MK who likened Arab party MKs
@@ -69,3 +84,66 @@ claims:
       - url: https://en.wikipedia.org/wiki/Almog_Cohen_(politician)
         title: Almog Cohen (politician)
         publisher: Wikipedia
+  - kind: negative
+    category: controversy
+    status: ongoing
+    title:
+      he: תביעות לשון הרע של "אחים לנשק" ומייסד הארגון; חשיפת שם בניגוד לצו בית משפט
+      en: Defamation suits by Brothers in Arms and a founder; naming a person despite a court order
+    description:
+      he: >-
+        בנובמבר 2024 הגיש ארגון "אחים לנשק" נגד כהן תביעת לשון הרע בסך כ-1.1 מיליון
+        ש"ח, בטענה שקישר את הארגון ומייסדיו לפרשת "הקצין המתחזה" ללא בסיס; כהן
+        השיב כי "אמת דיברתי" וטען לחסינות פרלמנטרית. ב-8 ביולי 2026 חשף כהן מעל
+        דוכן הכנסת את שמו של קצין מילואים ממייסדי הארגון, למרות צו איסור פרסום של
+        בית המשפט המחוזי, ואמר: "אם אתם חושבים שאתם מפחידים אותי עם צו איסור
+        פרסום... אז אני אומר את זה שוב". ב-12 ביולי 2026 דווח כי אותו קצין הגיש
+        נגדו תביעה בסך 2.6 מיליון ש"ח. ההליכים תלויים ועומדים; לא ניתן פסק דין.
+      en: >-
+        In November 2024 the Brothers in Arms organization filed a defamation suit
+        of about NIS 1.1 million against Cohen, alleging he had baselessly linked
+        the group and its founders to the "impostor officer" affair; Cohen
+        replied that he "spoke the truth" and claimed parliamentary immunity. On
+        8 July 2026 Cohen named a reserve officer who co-founded the group from
+        the Knesset podium despite a district-court publication ban, saying "if
+        you think you are frightening me with a publication ban... then I am
+        saying it again". On 12 July 2026 it was reported that the officer had
+        filed a NIS 2.6 million suit against him. The proceedings are pending;
+        no judgment has been given.
+    date: 2026-07-12
+    sources:
+      - url: https://www.calcalist.co.il/local_news/article/hkgircr111x
+        title: '"אחים לנשק" תובעת את ח"כ אלמוג כהן ב-1.1 מיליון שקל על קישורה לפרשת ריגול בצה"ל'
+        publisher: Calcalist
+      - url: https://13tv.co.il/item/news/politics/politics/almog-cohen-905255401
+        title: 'למרות הוראת ביהמ"ש: אלמוג כהן חשף את שם הקצין מאחים לנשק'
+        publisher: Channel 13 News
+      - url: https://www.srugim.co.il/101006082-%D7%91%D7%9B%D7%99%D7%A8-%D7%91%D7%90%D7%97%D7%99%D7%9D-%D7%9C%D7%A0%D7%A9%D7%A7-%D7%91%D7%AA%D7%91%D7%99%D7%A2%D7%AA-%D7%A2%D7%A0%D7%A7-%D7%A0%D7%92%D7%93-%D7%A1%D7%92%D7%9F-%D7%94%D7%A9%D7%A8
+        title: בכיר ב'אחים לנשק' בתביעת ענק נגד סגן השר
+        publisher: Srugim
+  - kind: neutral
+    category: news
+    date: 2026-08-17
+    title:
+      he: עבר מעוצמה יהודית לליכוד וזכה במקום השמיני בפריימריז
+      en: Moved from Otzma Yehudit to Likud and placed eighth in the primary
+    description:
+      he: ב-12 באוגוסט 2026 הודיע כהן כי יתמודד בפריימריז הליכוד, לאחר שעבר מעוצמה
+        יהודית לליכוד. בפריימריז שנערכו ב-17 באוגוסט 2026 דורג במקום השמיני
+        ברשימה הארצית, וברשימת הליכוד שהוגשה לוועדת הבחירות ב-8 בספטמבר 2026 הוא
+        מוצב במקום ה-13.
+      en: On 12 August 2026 Cohen announced he would run in the Likud primary, having
+        moved from Otzma Yehudit to Likud. In the primary held on 17 August 2026
+        he was ranked eighth in the national ranking, and on the Likud list
+        submitted to the Central Elections Committee on 8 September 2026 he is
+        placed 13th.
+    sources:
+      - url: https://www.maariv.co.il/news/israel/Article-1355044
+        title: "אלמוג כהן מכריז: אתמודד בפריימריז בליכוד"
+        publisher: Maariv
+      - url: https://www.haaretz.co.il/news/elections/2026-08-17/ty-article/.premium/000001a0-10eb-d0aa-abfb-befb92a40000
+        title: "הסתיימה ספירת הקולות בפריימריז: אלי כהן, אמיר אוחנה ויריב לוין בצמרת הליכוד"
+        publisher: Haaretz
+      - url: https://he.wikipedia.org/wiki/%D7%94%D7%91%D7%97%D7%99%D7%A8%D7%95%D7%AA_%D7%9C%D7%9B%D7%A0%D7%A1%D7%AA_%D7%94%D7%A2%D7%A9%D7%A8%D7%99%D7%9D_%D7%95%D7%A9%D7%A9
+        title: הבחירות לכנסת העשרים ושש
+        publisher: Wikipedia (Hebrew)

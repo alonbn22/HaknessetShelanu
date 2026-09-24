@@ -1,0 +1,28 @@
+# PersonID 30921. New member of the 25th Knesset (entered 2026-08-11); the
+# Knesset's own pages carry no biography yet, so the record holds only the
+# verified entry facts. Neutral language. Reviewed 2026-09-19.
+personId: 30921
+lastReviewed: "2026-09-19"
+claims:
+  - kind: neutral
+    category: role
+    title:
+      he: "נכנסה לכנסת ב-11 באוגוסט 2026 במקום יואב סגלוביץ' (יש עתיד)"
+      en: "Entered the Knesset on 11 August 2026 in place of Yoav Segalovitz (Yesh Atid)"
+    description:
+      he: "מיכל סלבני כבביה נכנסה לכנסת ה-25 מטעם יש עתיד ב-11 באוגוסט 2026, לאחר שיואב סגלוביץ' הודיע על פרישתו מיש עתיד (7 באוגוסט 2026) והתפטר מהכנסת; סגלוביץ' התמודד לאחר מכן במקום השני ברשימת רע\"ם. לפי אתר הכנסת, פרטי הרקע של חברת הכנסת טרם נמסרו למערכת."
+      en: "Michal Salbani-Kababia entered the 25th Knesset for Yesh Atid on 11 August 2026, after Yoav Segalovitz announced he was leaving Yesh Atid (7 August 2026) and resigned from the Knesset; Segalovitz later ran second on the Ra’am list. Per the Knesset site, the member’s background details have not yet been submitted."
+    date: "2026-08-11"
+    sources:
+      - url: "https://main.knesset.gov.il/mk/apps/faction/faction-lobby?KnessetID=25&FactionID=1102"
+        title: "סיעת יש עתיד — חילופי גברי: 11/08/2026 מיכל סלבני כבביה נכנסה במקום יואב סגלוביץ"
+        publisher: "הכנסת"
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/1133"
+        title: "חברת הכנסת מיכל סלבני כבביה — אתר הכנסת"
+        publisher: "הכנסת"
+      - url: "https://www.timesofisrael.com/segalovitz-departs-yesh-atid-amid-his-reported-talks-to-join-mansour-abbass-raam/"
+        title: "Segalovitz departs Yesh Atid amid his reported talks to join Mansour Abbas’s Ra’am (7 Aug 2026)"
+        publisher: "The Times of Israel"
+      - url: "https://www.gov.il/he/pages/raam_list18"
+        title: "רע\"ם - הרשימה הערבית המאוחדת — רשימת המועמדים (מקום 2: יואב סגלוביץ)"
+        publisher: "ועדת הבחירות המרכזית לכנסת"

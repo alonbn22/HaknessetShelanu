@@ -1,4 +1,5 @@
 import { getTranslations, getLocale } from "next-intl/server";
+import { formatNumber } from "@/lib/format";
 import { Pagination } from "@/components/Pagination";
 import { BudgetFilters } from "./BudgetFilters";
 import { YearSelector } from "./YearSelector";
@@ -197,7 +198,7 @@ export default async function BudgetPage({
                     </span>
                     <span className="text-sm tabular-nums whitespace-nowrap">
                       <span className="font-semibold text-accent">{money(s.totalThousands)}</span>
-                      <span className="text-muted"> · {pct.toFixed(1)}%</span>
+                      <span className="text-muted"> · {formatNumber(pct, locale, 1)}%</span>
                     </span>
                   </div>
                   <div className="mt-1.5 h-2 rounded-full bg-black/5" dir="ltr">

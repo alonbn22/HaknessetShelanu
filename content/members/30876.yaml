@@ -1,7 +1,7 @@
-# PersonID 30876. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# Osher Shekalim (PersonID 30876). Factual reporting from reputable public sources,
+# cited per claim. Neutral language. Sources re-verified 2026-09-18.
 personId: 30876
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -11,11 +11,14 @@ claims:
     description:
       he: אושר שקלים נכנס לכנסת ה-25 ב-15 בפברואר 2023 כחבר כנסת מטעם הליכוד, במסגרת
         'החוק הנורבגי', במקומו של אלי כהן שהתפטר עם מינויו לשר. כיהן במספר
-        ועדות, ובהן ועדת ביקורת המדינה.
+        ועדות, ובהן ועדת ביקורת המדינה וועדת החוץ והביטחון, ועמד בראש השדולה
+        לעסקים קטנים ובינוניים.
       en: Osher Shekalim entered the 25th Knesset on 15 February 2023 as a Likud
         member of parliament under the 'Norwegian Law', replacing Eli Cohen, who
         resigned upon his appointment as a minister. He has served on several
-        committees, including the State Control Committee.
+        committees, including the State Control Committee and the Foreign
+        Affairs and Defense Committee, and chaired the Knesset caucus for small
+        and medium-sized businesses.
     date: 2023-02-15
     sources:
       - url: https://en.wikipedia.org/wiki/Osher_Shekalim
@@ -31,21 +34,26 @@ claims:
       en: Chair of the Special Committee for Public Petitions
     description:
       he: ב-28 בינואר 2026 מונה אושר שקלים פה אחד ליושב ראש הוועדה המיוחדת לפניות
-        הציבור של הכנסת, במקומו של יצחק פינדרוס. הוועדה עוסקת בסיוע לאזרחים מול
-        רשויות המדינה.
+        הציבור של הכנסת, במקומו של יצחק פינדרוס (יהדות התורה), שסיעתו פרשה
+        מהקואליציה חודשים קודם לכן. הוועדה עוסקת בסיוע לאזרחים מול רשויות
+        המדינה; שקלים מכהן בתפקיד גם לאחר פיזור הכנסת ביולי 2026.
       en: On 28 January 2026, Osher Shekalim was appointed unanimously as chair of the
         Knesset's Special Committee for Public Petitions, replacing Yitzhak
-        Pindros. The committee handles assisting citizens in their dealings with
-        state authorities.
+        Pindrus (UTJ), whose faction had left the coalition months earlier. The
+        committee handles assisting citizens in their dealings with state
+        authorities; Shekalim continues in the post after the Knesset's
+        dissolution in July 2026.
     date: 2026-01-28
     sources:
       - url: https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%A9%D7%A8_%D7%A9%D7%A7%D7%9C%D7%99%D7%9D
         title: אושר שקלים
         publisher: Hebrew Wikipedia
-      - url: https://israel.com/knesset-news/mk-shkalim-appointed-as-chair-of-the-special-committee-for-public-petitions/
-        title: MK Shkalim appointed as chair of the Special Committee for Public
-          Petitions
-        publisher: Israel.com
+      - url: https://en.wikipedia.org/wiki/Osher_Shekalim
+        title: Osher Shekalim
+        publisher: Wikipedia
+      - url: https://www.knesset.tv/committees/tzibur/
+        title: הוועדה המיוחדת לפניות הציבור - אודות הוועדה
+        publisher: Knesset Channel (Knesset TV)
   - kind: positive
     category: achievement
     title:
@@ -69,3 +77,32 @@ claims:
       - url: https://en.wikipedia.org/wiki/Osher_Shekalim
         title: Osher Shekalim
         publisher: Wikipedia
+  - kind: neutral
+    category: news
+    date: "2026-05-11"
+    title:
+      he: הגיש הצעת חוק להארכת ההקלות לערוצים הייעודיים, ובהם ערוץ 14, עד פברואר 2027
+      en: Submitted a bill to extend the regulatory relief for designated channels, including Channel 14, until February 2027
+    description:
+      he: ב-11 במאי 2026 הגיש שקלים הצעת חוק להארכה בשנה, עד פברואר 2027, של ההקלות לערוצים הייעודיים — ובהם ערוץ 14 — הפוטרות אותם מדמי הפצה במערך "עידן פלוס" ומחייבות מופחתות של הפקה. לפי כלכליסט, ההקלות הוארכו כבר כמה פעמים מאז פברואר 2023 בציפייה לחוק השידורים של השר שלמה קרעי, והמבקרים טוענים כי הן מעניקות לערוץ 14 יתרון כלכלי מול ערוצים 12 ו-13.
+      en: On 11 May 2026 Shekalim submitted a bill to extend by one year, until February 2027, the regulatory relief for designated channels — including Channel 14 — which exempts them from distribution fees on the "Idan Plus" platform and imposes reduced production obligations. According to Calcalist, the relief has been extended several times since February 2023 pending Minister Shlomo Karhi's broadcasting law, and critics argue it gives Channel 14 an economic advantage over Channels 12 and 13.
+    sources:
+      - url: https://www.calcalist.co.il/local_news/article/s1q1siyyzx
+        title: 'בצל הבחירות: בליכוד רוצים להגן על ערוץ 14 לפני פיזור הכנסת'
+        publisher: Calcalist
+  - kind: neutral
+    category: news
+    date: "2026-08-16"
+    title:
+      he: התמודד בפריימריז הליכוד לרשימה לכנסת ה-26
+      en: Ran in the Likud primary for the list for the 26th Knesset
+    description:
+      he: שקלים נכלל ברשימת המועמדים הארצית בפריימריז הליכוד שנערכו ב-17 באוגוסט 2026, שבהם התחרו 40 מועמדים על כ-17 מקומות ריאליים. לפי הדיווחים על התוצאות, הוא לא נמנה עם המדורגים במקומות הריאליים ברשימה.
+      en: Shekalim was on the national candidates list in the Likud primary held on 17 August 2026, in which 40 candidates competed for about 17 realistic slots. According to reports of the results, he was not among those ranked in realistic places on the list.
+    sources:
+      - url: https://www.maariv.co.il/news/politics/article-1356297
+        title: 'פריימריז בליכוד: רשימת המועמדים המלאה נחשפת'
+        publisher: Maariv
+      - url: https://www.okn.co.il/news/56403/
+        title: אלה תוצאות הפריימריז הסופיות - מי בראש ומי בחוץ?
+        publisher: Olam Katan

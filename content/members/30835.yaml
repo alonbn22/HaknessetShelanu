@@ -1,88 +1,150 @@
-# PersonID 30835. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# Boaz Bismuth (PersonID 30835). Factual reporting from reputable public
+# sources, cited per claim. Neutral language; what was reported and what the
+# member said in response. Re-verified 2026-09-18 (every cited URL re-fetched;
+# Knesset OData used as the primary record for laws and positions).
 personId: 30835
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: חבר הכנסת ה-25 מטעם הליכוד
-      en: Member of the 25th Knesset for Likud
+      he: "חבר הכנסת ה-25 מטעם הליכוד"
+      en: "Member of the 25th Knesset for Likud"
     description:
-      he: בועז ביסמוט נבחר לכנסת ה-25 בבחירות נובמבר 2022 מטעם מפלגת הליכוד, לאחר שזכה
-        במקום ה-19 ברשימת המפלגה.
-      en: Boaz Bismuth was elected to the 25th Knesset in the November 2022 election
-        as a member of the Likud party, having secured the 19th spot on the
-        party's list.
-    date: 2022-11-15
+      he: "בועז ביסמוט, יליד רחובות (1964), נבחר לכנסת ה-25 בבחירות נובמבר 2022 מטעם הליכוד, לאחר שזכה במקום ה-19 בפריימריז המפלגה ושובץ במקום ה-27 ברשימה. בכנסת עמד בראש הוועדה המיוחדת למאבק בשימוש בסמים ובאלכוהול (עד ינואר 2025) ובראש הוועדה לביטחון לאומי (4 בפברואר – 5 במאי 2025)."
+      en: "Boaz Bismuth, born in Rehovot (1964), was elected to the 25th Knesset in the November 2022 election for Likud, having won 19th place in the party primary and been placed 27th on the list. In the Knesset he chaired the Special Committee on Drug and Alcohol Abuse (until January 2025) and the National Security Committee (4 February – 5 May 2025)."
+    date: "2022-11-15"
     sources:
-      - url: https://en.wikipedia.org/wiki/Boaz_Bismuth
-        title: Boaz Bismuth
-        publisher: Wikipedia
-      - url: https://www.wikidata.org/wiki/Q12404410
-        title: Boaz Bismuth (Q12404410)
-        publisher: Wikidata
+      - url: "https://en.wikipedia.org/wiki/Boaz_Bismuth"
+        title: "Boaz Bismuth"
+        publisher: "Wikipedia"
+      - url: "https://he.wikipedia.org/wiki/%D7%91%D7%95%D7%A2%D7%96_%D7%91%D7%99%D7%A1%D7%9E%D7%95%D7%98"
+        title: "בועז ביסמוט"
+        publisher: "Wikipedia (Hebrew)"
+      - url: "https://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_PersonToPosition?$filter=PersonID%20eq%2030835%20and%20IsCurrent%20eq%20true"
+        title: "KNS_PersonToPosition — current positions of PersonID 30835 (Knesset OData)"
+        publisher: "The Knesset (OData)"
   - kind: positive
     category: achievement
     title:
-      he: יושב ראש ועדת החוץ והביטחון של הכנסת
-      en: Chair of the Knesset Foreign Affairs and Defense Committee
+      he: "יושב ראש ועדת החוץ והביטחון של הכנסת"
+      en: "Chair of the Knesset Foreign Affairs and Defense Committee"
     description:
-      he: ביסמוט נבחר ביולי 2025 ומונה באוגוסט 2025 לעמוד בראש ועדת החוץ והביטחון של
-        הכנסת, אחת הוועדות הבכירות בכנסת, והחליף בתפקיד את יולי אדלשטיין. קודם
-        לכן כיהן בקצרה כיושב ראש ועדת הביטחון הלאומי בתחילת 2025.
-      en: In July 2025 Bismuth was elected, and in August 2025 appointed, to chair the
-        Knesset's Foreign Affairs and Defense Committee, one of the parliament's
-        most senior committees, replacing Yuli Edelstein. He had earlier briefly
-        chaired the National Security Committee in early 2025.
-    date: 2025-08-01
+      he: "ב-23 ביולי 2025, על רקע סירובו של יו\"ר ועדת החוץ והביטחון יולי אדלשטיין לקדם את חוק הגיוס בנוסח שדרשו הסיעות החרדיות, בחרה סיעת הליכוד בביסמוט ליו\"ר הוועדה ברוב של 29 מול 4. ועדת הכנסת אישרה את המינוי ב-4 באוגוסט 2025, ומאז הוא עומד בראש אחת הוועדות הבכירות בכנסת."
+      en: "On 23 July 2025, after Foreign Affairs and Defense Committee chair Yuli Edelstein refused to advance the conscription bill in the form demanded by the Haredi factions, the Likud faction chose Bismuth as committee chair by a vote of 29 to 4. The Knesset House Committee approved the appointment on 4 August 2025, and he has since chaired one of the Knesset's most senior committees."
+    date: "2025-08-04"
     sources:
-      - url: https://en.wikipedia.org/wiki/Boaz_Bismuth
-        title: Boaz Bismuth
-        publisher: Wikipedia
-      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-862000
-        title: Boaz Bismuth elected to replace Edelstein
-        publisher: The Jerusalem Post
-      - url: https://www.haaretz.com/israel-news/2025-07-23/ty-article/.premium/mk-backed-by-netanyahu-to-replace-haredi-draft-exemption-bill-opponent-in-key-knesset-role/00000198-3704-dce9-abfd-7fa68a0c0000
-        title: Likud Appoints Boaz Bismuth as Head of Knesset Defense Committee
-        publisher: Haaretz
+      - url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-862000"
+        title: "Boaz Bismuth elected to replace Edelstein"
+        publisher: "The Jerusalem Post"
+      - url: "https://www.ynetnews.com/article/h1300i00aige"
+        title: "After refusing to advance Haredi draft bill, Likud votes to replace Edelstein as chair of Knesset defense committee"
+        publisher: "Ynetnews"
+      - url: "https://www.haaretz.com/israel-news/2025-07-23/ty-article/.premium/mk-backed-by-netanyahu-to-replace-haredi-draft-exemption-bill-opponent-in-key-knesset-role/00000198-3704-dce9-abfd-7fa68a0c0000"
+        title: "Likud Appoints Boaz Bismuth as Head of Knesset Defense Committee"
+        publisher: "Haaretz"
   - kind: positive
     category: achievement
     title:
-      he: עורך ראשי של עיתון 'ישראל היום'
-      en: Editor-in-chief of Israel Hayom
+      he: "יוזם החוק להפסקת פעילות אונר\"א בשטח מדינת ישראל (2024)"
+      en: "Initiated the law ending UNRWA activity in Israeli territory (2024)"
     description:
-      he: לפני כניסתו לפוליטיקה היה ביסמוט עיתונאי ותיק. הוא כיהן כעורך הראשי של
-        העיתון 'ישראל היום' מאפריל 2017 ועד ינואר 2022, ולפני כן שימש שנים רבות
-        ככתב ועורך לענייני חוץ, בין היתר ככתב בפריז עבור 'ידיעות אחרונות'.
-      en: Before entering politics, Bismuth had a long career in journalism. He served
-        as editor-in-chief of the daily newspaper Israel Hayom from April 2017
-        until January 2022, and earlier worked for many years as a
-        foreign-affairs correspondent and editor, including as a Paris
-        correspondent for Yedioth Ahronoth.
-    date: 2017-04-30
+      he: "ב-28 באוקטובר 2024 אישרה הכנסת ברוב של 92 מול 10 את החוק להפסקת פעילות אונר\"א בשטח מדינת ישראל, שיזמו ביסמוט (היוזם הראשון לפי רישומי הכנסת), שרן השכל, אלי דלל וחברי כנסת נוספים, חרף התנגדות אמריקנית. החוק אוסר על הסוכנות להפעיל נציגות, לספק שירותים או לקיים פעילות בשטח ישראל."
+      en: "On 28 October 2024 the Knesset passed, 92 to 10, the law ending UNRWA activity in Israeli territory, initiated by Bismuth (listed first in Knesset records), Sharren Haskel, Eli Dallal and other MKs, despite US opposition. The law bars the agency from operating a mission, providing services or conducting activity in Israel's territory."
+    date: "2024-10-28"
     sources:
-      - url: https://en.wikipedia.org/wiki/Boaz_Bismuth
-        title: Boaz Bismuth
-        publisher: Wikipedia
-      - url: https://www.wikidata.org/wiki/Q12404410
-        title: Boaz Bismuth (Q12404410)
-        publisher: Wikidata
+      - url: "https://www.ynet.co.il/news/article/hyx3ab6gyl"
+        title: "הכנסת אישרה ברוב עצום, חרף התנגדות אמריקנית: פעילות אונר\"א בישראל תופסק"
+        publisher: "ynet"
+      - url: "https://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_Bill(2198188)"
+        title: "חוק להפסקת פעילות אונר\"א בשטח מדינת ישראל, התשפ\"ה-2024 — bill record (Knesset OData)"
+        publisher: "The Knesset (OData)"
   - kind: positive
     category: achievement
     title:
-      he: שגריר ישראל במאוריטניה
-      en: Israeli Ambassador to Mauritania
+      he: "עורך ראשי של עיתון 'ישראל היום'"
+      en: "Editor-in-chief of Israel Hayom"
     description:
-      he: במסגרת שירותו הציבורי כיהן ביסמוט כשגריר ישראל במאוריטניה בין השנים 2004
-        ל-2008.
-      en: As part of his public service, Bismuth served as Israel's Ambassador to
-        Mauritania between 2004 and 2008.
-    date: 2004-07-01
+      he: "לפני כניסתו לפוליטיקה היה ביסמוט עיתונאי ותיק. הוא כיהן כעורך הראשי של 'ישראל היום' מאפריל 2017 עד ינואר 2022, ולפני כן שימש שנים רבות ככתב ועורך לענייני חוץ, בין היתר כשליח 'ידיעות אחרונות' בפריז (1990–2004), ודיווח ממדינות ערב ומאיראן."
+      en: "Before entering politics, Bismuth had a long career in journalism. He was editor-in-chief of Israel Hayom from April 2017 until January 2022, and earlier worked for many years as a foreign-affairs correspondent and editor, including as Yedioth Ahronoth's Paris correspondent (1990–2004), reporting from Arab countries and Iran."
+    date: "2017-04-30"
     sources:
-      - url: https://en.wikipedia.org/wiki/Boaz_Bismuth
-        title: Boaz Bismuth
-        publisher: Wikipedia
-      - url: https://www.wikidata.org/wiki/Q12404410
-        title: Boaz Bismuth (Q12404410)
-        publisher: Wikidata
+      - url: "https://en.wikipedia.org/wiki/Boaz_Bismuth"
+        title: "Boaz Bismuth"
+        publisher: "Wikipedia"
+      - url: "https://he.wikipedia.org/wiki/%D7%91%D7%95%D7%A2%D7%96_%D7%91%D7%99%D7%A1%D7%9E%D7%95%D7%98"
+        title: "בועז ביסמוט"
+        publisher: "Wikipedia (Hebrew)"
+  - kind: positive
+    category: achievement
+    title:
+      he: "שגריר ישראל במאוריטניה (2004–2008)"
+      en: "Israeli Ambassador to Mauritania (2004–2008)"
+    description:
+      he: "ביסמוט כיהן כשגריר ישראל במאוריטניה מיולי 2004 עד אוגוסט 2008, במינוי מטעם שר החוץ סילבן שלום. בפברואר 2008 ספגה השגרירות בנואקשוט פיגוע ירי שנכשל, ואל-קאעידה נטל עליו אחריות."
+      en: "Bismuth served as Israel's ambassador to Mauritania from July 2004 to August 2008, appointed on the initiative of Foreign Minister Silvan Shalom. In February 2008 the embassy in Nouakchott was the target of a failed shooting attack claimed by al-Qaeda."
+    date: "2004-07-01"
+    sources:
+      - url: "https://en.wikipedia.org/wiki/Boaz_Bismuth"
+        title: "Boaz Bismuth"
+        publisher: "Wikipedia"
+      - url: "https://he.wikipedia.org/wiki/%D7%91%D7%95%D7%A2%D7%96_%D7%91%D7%99%D7%A1%D7%9E%D7%95%D7%98"
+        title: "בועז ביסמוט"
+        publisher: "Wikipedia (Hebrew)"
+  - kind: negative
+    category: controversy
+    title:
+      he: "מחלוקת על חוק הגיוס שקידם: הכחשת צה\"ל לטענתו בדבר תמיכת הרמטכ\"ל, וביקורת הרמטכ\"ל על הקפאת המעצרים"
+      en: "Dispute over the conscription bill he advanced: the IDF denied his claim of the chief of staff's support, and the chief of staff criticised the arrest freeze"
+    description:
+      he: "באוקטובר 2025 מתחו גורמים משפטיים בכירים ביקורת על עקרונות חוק הגיוס שגיבש ביסמוט כיו\"ר ועדת החוץ והביטחון, וטענו כי הוא מנציח את הפטור לחרדים ללא אכיפה של ממש. באפריל 2026 טען ביסמוט כי הרמטכ\"ל אייל זמיר תומך בנוסח החוק; צה\"ל הודיע כי \"הרמטכ\"ל לא הביע תמיכה בנוסח חוק גיוס ספציפי\", וביסמוט השיב בציטוט דברי הרמטכ\"ל שבלי חוק הגיוס, הארכת השירות וחוק המילואים \"צה\"ל יקרוס\". ביולי 2026 כינה הרמטכ\"ל \"בלתי נתפסת\" הוראת שעה שאישרה הוועדה בראשותו להקפאת מעצרי תלמידי ישיבות; ביסמוט השיב כי לצבא ניתנה הזדמנות מספקת לבחון את החוק, כי \"קשה לראות בעיתוי צירוף מקרים\" וכי המעצרים לא הובילו לגיוס בפועל."
+      en: "In October 2025 senior legal officials criticised the conscription-bill principles Bismuth drew up as chair of the Foreign Affairs and Defense Committee, arguing it would entrench the Haredi exemption without real enforcement. In April 2026 Bismuth said Chief of Staff Eyal Zamir supported the bill's text; the IDF stated that \"the Chief of Staff did not express support for any specific draft law\", and Bismuth replied by quoting Zamir that without the draft law, longer service and the reserves law \"the IDF will collapse\". In July 2026 the chief of staff called a temporary order approved by Bismuth's committee freezing arrests of yeshiva students \"inconceivable\"; Bismuth responded that the army had had adequate opportunity to review it, that \"it's hard to see this timing as a coincidence\", and that arrests had not led to actual enlistment."
+    date: "2026-07-13"
+    sources:
+      - url: "https://www.ynet.co.il/news/article/h1gglxy3wl"
+        title: "הרמטכ\"ל נגד ביסמוט ומזכיר הממשלה: לא הבעתי תמיכה בנוסח החוק של הקואליציה"
+        publisher: "ynet"
+      - url: "https://www.timesofisrael.com/idf-chief-raps-inconceivable-bill-freezing-ultra-orthodox-enlistment/"
+        title: "IDF chief denounces 'inconceivable' bill that will freeze most ultra-Orthodox enlistment"
+        publisher: "The Times of Israel"
+      - url: "https://www.ynetnews.com/article/byrttyxrle"
+        title: "Legal officials slam Bismuth proposal for enabling Haredi draft evasion"
+        publisher: "Ynetnews"
+  - kind: neutral
+    category: news
+    date: "2026-07-13"
+    title:
+      he: "הוועדה בראשותו הכינה את הוראת השעה להקפאת מעצרי תלמידי ישיבות, שאושרה סופית ערב פיזור הכנסת"
+      en: "His committee prepared the temporary order freezing arrests of yeshiva students, passed on the eve of the Knesset's dissolution"
+    description:
+      he: "ב-28 ביוני 2026 קידמה ועדת החוץ והביטחון בראשות ביסמוט הוראת שעה להקפאת הליכי מעצר, חקירה ואכיפה נגד תלמידי ישיבות שתורתם אומנותם; ביסמוט טען כי \"המשך מדיניות המעצרים עלול לפגוע במאמצי הגיוס\". לפי רישומי הכנסת, חוק שירות ביטחון (תיקון מס' 28 – הוראת שעה) התקבל בקריאה שנייה ושלישית ב-13 ביולי 2026, ימים לפני סיום כהונת הכנסת ה-25."
+      en: "On 28 June 2026 the Foreign Affairs and Defense Committee, chaired by Bismuth, advanced a temporary order freezing arrests, investigations and enforcement against full-time yeshiva students; Bismuth argued that \"continuing the policy of arrests is likely to harm conscription efforts\". Knesset records show the Defense Service Law (Amendment 28 – Temporary Order) passed its second and third readings on 13 July 2026, days before the 25th Knesset's term ended."
+    sources:
+      - url: "https://www.timesofisrael.com/knesset-panel-to-advance-measure-freezing-arrests-of-haredi-draft-evaders-for-90-days/"
+        title: "Knesset panel to advance measure freezing arrests of Haredi draft evaders for 90 days"
+        publisher: "The Times of Israel"
+      - url: "https://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_Bill(2168881)"
+        title: "חוק שירות ביטחון (תיקון מס' 28 - הוראת שעה), התשפ\"ו-2026 — bill record (Knesset OData)"
+        publisher: "The Knesset (OData)"
+      - url: "https://he.wikipedia.org/wiki/%D7%94%D7%9B%D7%A0%D7%A1%D7%AA_%D7%94%D7%A2%D7%A9%D7%A8%D7%99%D7%9D_%D7%95%D7%97%D7%9E%D7%A9"
+        title: "הכנסת העשרים וחמש"
+        publisher: "Wikipedia (Hebrew)"
+  - kind: neutral
+    category: news
+    date: "2026-09-08"
+    title:
+      he: "מקום 21 ברשימת הליכוד לבחירות 2026"
+      en: "Slot 21 on the Likud list for the 2026 election"
+    description:
+      he: "בפריימריז הליכוד ב-17 באוגוסט 2026 זכה ביסמוט במקום ריאלי ברשימה הארצית (לפי ynet, הוא ושלמה קרעי עקפו ברגע האחרון את דוד ביטן), וברשימה הסופית שהגיש הליכוד לוועדת הבחירות המרכזית ב-8 בספטמבר 2026 לקראת הבחירות לכנסת ה-26 הוא מופיע במקום ה-21."
+      en: "In the Likud primary on 17 August 2026 Bismuth won a realistic slot on the national list (ynet reported that he and Shlomo Karhi overtook David Bitan at the last moment), and on the final list Likud filed with the Central Elections Committee on 8 September 2026 for the 26th Knesset election he appears in 21st place."
+    sources:
+      - url: "https://www.ynet.co.il/news/article/sy6ibjzdze"
+        title: "התוצאות הסופיות בפריימריז הליכוד - והרשימה המסתמנת"
+        publisher: "ynet"
+      - url: "https://www.mako.co.il/news-politics/2026_q3/Article-2ddf4a5b99180a1027.htm"
+        title: "זו הרשימה הסופית של הליכוד לבחירות 2026"
+        publisher: "N12"
+      - url: "https://www.jns.org/news/israel-news/likud-files-26th-knesset-election-slate"
+        title: "Likud files 26th Knesset election slate"
+        publisher: "JNS"

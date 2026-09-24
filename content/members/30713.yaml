@@ -1,19 +1,136 @@
 # Mansour Abbas (PersonID 30713). Factual reporting from reputable public sources,
-# cited per claim. Neutral language. REVIEW before launch.
+# cited per claim; researched and source-verified 2026-09-18 (every cited URL
+# re-fetched; Knesset position dates cross-checked against the Knesset OData).
+# Neutral language; legal status marked. REVIEW before launch.
 personId: 30713
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
+    date: 2021-06-02
     title:
       he: "ראש מפלגה ערבית עצמאית ראשון שהצטרף לקואליציה שלטת (2021)"
       en: "First leader of an independent Arab party to join a governing coalition (2021)"
     description:
-      he: "כראש הרשימה הערבית המאוחדת (רע\"ם) הוביל ב-2021 צעד היסטורי שבו מפלגה ערבית עצמאית הצטרפה לקואליציה שלטת בישראל."
-      en: "As leader of the United Arab List (Ra'am), in 2021 he led a historic step in which an independent Arab party joined a governing coalition in Israel."
+      he: "כיו\"ר הרשימה הערבית המאוחדת (רע\"מ) חתם עבאס ב-2 ביוני 2021 על הסכם קואליציוני להקמת הממשלה ה-36 — הפעם הראשונה זה כחמישה עשורים שמפלגה ערבית עצמאית הייתה שותפה בקואליציה שלטת בישראל. \"זו הפעם הראשונה שמפלגה ערבית שותפה בתהליך הרכבת ממשלה\", אמר."
+      en: "As chairman of the United Arab List (Ra'am), Abbas signed a coalition agreement on 2 June 2021 to form Israel's 36th government — the first time in roughly five decades that an independent Arab party was a partner in a governing coalition in Israel. \"This is the first time that an Arab party is part of the process of forming a government,\" he said."
     sources:
+      - url: "https://www.timesofisrael.com/arab-israeli-raam-party-makes-history-by-joining-bennett-lapid-coalition/"
+        title: "History made as Arab Israeli Ra'am party joins Bennett-Lapid coalition"
+        publisher: "The Times of Israel"
       - url: "https://en.wikipedia.org/wiki/Mansour_Abbas"
         title: "Mansour Abbas"
         publisher: "Wikipedia"
-      - url: "https://www.reuters.com/world/middle-east/an-arab-party-helped-form-israeli-government-now-comes-hard-part-2021-06-14/"
-        title: "An Arab party helped form Israel's government"
-        publisher: "Reuters"
+  - kind: positive
+    category: achievement
+    date: 2021-04-26
+    title:
+      he: "סגן יושב ראש הכנסת ויו\"ר הוועדה המיוחדת לענייני החברה הערבית בכנסת ה-24"
+      en: "Deputy Speaker of the Knesset and chair of the Special Committee on Arab Society Affairs in the 24th Knesset"
+    description:
+      he: "לפי רישומי הכנסת כיהן עבאס כסגן יושב ראש הכנסת מ-26 באפריל 2021 עד תום הכנסת ה-24 (15 בנובמבר 2022). באותה כנסת עמד גם בראש הוועדה המיוחדת לענייני החברה הערבית. הוא חבר הכנסת מטעם רע\"מ מאז אפריל 2019 ויו\"ר המפלגה מ-2018."
+      en: "According to Knesset records, Abbas served as a Deputy Speaker of the Knesset from 26 April 2021 until the end of the 24th Knesset (15 November 2022). In that Knesset he also chaired the Special Committee on Arab Society Affairs. He has been a Knesset member for Ra'am since April 2019 and the party's chairman since 2018."
+    sources:
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30713"
+        title: "מנסור עבאס – פרטים אישיים ותפקידים (אתר הכנסת)"
+        publisher: "Knesset"
+      - url: "https://en.wikipedia.org/wiki/Mansour_Abbas"
+        title: "Mansour Abbas"
+        publisher: "Wikipedia"
+  - kind: positive
+    category: achievement
+    date: 2021-10-24
+    title:
+      he: "תוכנית החומש \"תקדום\" בהיקף 30 מיליארד ש\"ח לחברה הערבית (2021)"
+      en: "The NIS 30 billion \"Takadum\" five-year plan for Arab society (2021)"
+    description:
+      he: "ב-24 באוקטובר 2021 אישרה הממשלה תוכנית חומש לפיתוח כלכלי-חברתי של החברה הערבית בהיקף של כ-30 מיליארד ש\"ח, לצד תוכנית של 2.5 מיליארד ש\"ח למאבק בפשיעה — תוכנית שהוסכמה כדרישה של רע\"מ בהסכם הקואליציוני. עבאס אמר כי התוכנית \"לא תמחק שנים של הזנחה, אך תתרום רבות לצמצום הפערים בין המגזר היהודי לערבי\"."
+      en: "On 24 October 2021 the government approved a five-year economic and social development plan for Arab society of about NIS 30 billion, alongside a NIS 2.5 billion plan to fight crime — a plan agreed as a requirement of Ra'am in the coalition agreement. Abbas said the plan \"will not erase years of neglect but will go a long way to close the gaps between Jewish and Arab sectors.\""
+    sources:
+      - url: "https://www.ynetnews.com/article/rjlvknq8t"
+        title: "Israel approves NIS 30 billion for development of Arab sector"
+        publisher: "Ynetnews"
+      - url: "https://www.haaretz.com/israel-news/2021-10-28/ty-article/.premium/five-year-plan-for-israels-arab-community-9-billion-wont-bridge-the-gap/0000017f-e224-df7c-a5ff-e27e91760000"
+        title: "Five-year Plan for Israel's Arab Community: $9 Billion Won't Bridge a Gap Decades in the Making"
+        publisher: "Haaretz"
+  - kind: negative
+    category: controversy
+    date: 2020-07-22
+    title:
+      he: "סערה סביב התנגדותו לחוק איסור טיפולי המרה (2020)"
+      en: "Controversy over his opposition to the conversion-therapy ban bill (2020)"
+    description:
+      he: "לאחר שהצעת החוק לאיסור טיפולי המרה עברה בקריאה טרומית ב-22 ביולי 2020 בתמיכת חברי חד\"ש ברשימה המשותפת, כתב עבאס — כפי שדווח ב-ynet — כי החוק הוא \"פשע\" נגד הלהט\"בים ו\"נגד החברה שלנו וערכינו האנושיים\", וכי \"היה טוב יותר לרשימה המשותפת לעצור את החוק ולהכריז על עמדה אחידה\". לפי ג'רוזלם פוסט, עבאס אמר כי מצביעי הרשימה כועסים על התמיכה בחוק ודורשים את פירוקה, וכי המשך קיומה תלוי בהתנהלות חבריה. ההתבטאויות עוררו ביקורת ציבורית וקרע בתוך הרשימה המשותפת; לא היה בכך הליך משמעתי או משפטי."
+      en: "After the bill to ban conversion therapy passed a preliminary reading on 22 July 2020 with the support of the Joint List's Hadash members, Abbas wrote — as reported by Ynet — that the law was a \"crime\" against LGBT people and \"against our society and our human values,\" and that \"it would have been better for the Joint List to stop the law and declare a unified position.\" According to The Jerusalem Post, Abbas said the list's voters were angry at the support for the law and were demanding its dissolution, and that its continued existence depended on its members' conduct. The remarks drew public criticism and a rift within the Joint List; no disciplinary or legal proceeding was involved."
+    sources:
+      - url: "https://www.ynet.co.il/news/article/S1qrCTBgw"
+        title: "בחברה הערבית תוקפים את המשותפת על טיפולי ההמרה: \"בגדו בנו\""
+        publisher: "Ynet"
+      - url: "https://www.jpost.com/israel-news/joint-list-may-break-up-due-to-division-on-conversion-therapy-report-636295"
+        title: "Joint List may break up due to division on conversion therapy - report"
+        publisher: "The Jerusalem Post"
+  - kind: negative
+    category: controversy
+    status: settled
+    date: 2026-05-12
+    title:
+      he: "הערה ושלילת שכר לשלושה ימים מוועדת האתיקה בגין היעדרויות ממליאת הכנסת (2026)"
+      en: "Ethics Committee remark and three-day pay deduction over absences from Knesset plenum sessions (2026)"
+    description:
+      he: "בהחלטה 51/25 מ-12 במאי 2026 קבעה ועדת האתיקה של הכנסת כי עבאס נעדר במושב השלישי של הכנסת ה-25 מ-10 ישיבות מליאה מעבר למכסה הקבועה בחוק (2 בכנס החורף ו-8 בכנס הקיץ), וכי לא התקבלה תגובה מטעמו. הוועדה ציינה כי אין זו הפעם הראשונה שחרג מהמכסה (בהחלטה קודמת לא הוטלה סנקציה) והטילה עליו סנקציה של הערה ושלילת שכר למשך שלושה ימים, בהתחשב גם בהיותו יו\"ר מפלגה. מדובר בסנקציה אתית פרלמנטרית ולא בהליך פלילי."
+      en: "In decision 25/51 of 12 May 2026, the Knesset Ethics Committee found that during the third session of the 25th Knesset Abbas was absent from 10 plenum sessions beyond the quota set by law (2 in the winter session and 8 in the summer session), and that no response was received from him. The committee noted this was not the first time he had exceeded the quota (no sanction was imposed in an earlier decision) and imposed a remark together with a three-day pay deduction, also taking into account that he is a party chairman. This was a parliamentary ethics sanction, not a criminal proceeding."
+    sources:
+      - url: "https://main.knesset.gov.il/Activity/committees/Ethics/Decisions25/Decisions25-51.pdf"
+        title: "החלטה 51/25 – החלטת ועדת האתיקה בעניין היעדרויות חברי הכנסת מישיבות הכנסת במושב השלישי של הכנסת ה-25"
+        publisher: "Knesset"
+      - url: "https://www.inn.co.il/news/696706"
+        title: "ועדת האתיקה הטילה סנקציות על שרים וחברי כנסת"
+        publisher: "Arutz 7"
+  - kind: neutral
+    category: news
+    date: 2026-08-22
+    title:
+      he: "ניתק את בחירת מועמדי רע\"מ מהתנועה האסלאמית ונבחר בפריימריז לעמוד בראש הרשימה"
+      en: "Separated Ra'am's candidate selection from the Islamic Movement and was chosen in primaries to head the list"
+    description:
+      he: "ב-27 ביולי 2026 הודיע עבאס כי ועידת רע\"מ תהיה מעתה גוף מפלגתי עצמאי ללא מעורבות מועצת השורא והתנועה האסלאמית בבחירת המועמדים. בפריימריז שנערכו ב-22 באוגוסט 2026 — הראשונים במפלגה — נבחר עבאס למקום הראשון, ואחריו וליד טאהא, וליד אלהואשלה, אימאן ח'טיב-יאסין ויאסר חוג'יראת. עבאס הבהיר כי רע\"מ לא תצטרף לרשימה משותפת עם חד\"ש, תע\"ל ובל\"ד: \"אנחנו רצים לבד\"."
+      en: "On 27 July 2026 Abbas announced that Ra'am's convention would henceforth be an independent party body, with no involvement of the Shura Council or the Islamic Movement in choosing candidates. In primaries held on 22 August 2026 — the party's first — Abbas was elected to the top spot, followed by Walid Taha, Walid Alhwashla, Iman Khatib-Yasin and Yasser Hujirat. Abbas made clear that Ra'am would not join a joint list with Hadash, Ta'al and Balad: \"We are running alone.\""
+    sources:
+      - url: "https://www.haaretz.co.il/news/elections/2026-07-27/ty-article/.premium/0000019f-a257-df92-a7ff-a6d7e0fd0000"
+        title: "רע\"מ מתנתקת מהתנועה האסלאמית ותבחר את מועמדיה לכנסת באופן עצמאי"
+        publisher: "Haaretz"
+      - url: "https://www.ynet.co.il/news/article/hjn9ijvbzl"
+        title: "פריימריז ברע\"ם לראשונה מאז ההיפרדות ממועצת השורא, עבאס: \"אנחנו רצים לבד\""
+        publisher: "Ynet"
+      - url: "https://www.haaretz.co.il/news/elections/2026-08-22/ty-article/.premium/000001a0-29f3-d399-afb3-bdfb86aa0000"
+        title: "עבאס אחרי הפריימריז ברע\"מ: מקווה שבימים הקרובים נצליח להציג את סגלוביץ כמועמד"
+        publisher: "Haaretz"
+  - kind: neutral
+    category: news
+    date: 2026-08-31
+    title:
+      he: "צירף את יואב סגלוביץ' למקום השני ברשימת רע\"מ לבחירות 2026"
+      en: "Placed Yoav Segalovich second on the Ra'am list for the 2026 election"
+    description:
+      he: "ב-31 באוגוסט 2026 הודיע עבאס במסיבת עיתונאים משותפת כי חבר הכנסת לשעבר יואב סגלוביץ' (לשעבר יש עתיד) יוצב במקום השני ברשימת רע\"מ לבחירות 27 באוקטובר — המועמד היהודי הראשון במקום זה ברשימת המפלגה — כמועמד יחיד ולא כסיעה נפרדת. \"יש לנו עבודה לעשות ביחד\", אמר עבאס."
+      en: "On 31 August 2026 Abbas announced at a joint press conference that former MK Yoav Segalovich (formerly of Yesh Atid) would be placed second on the Ra'am list for the 27 October election — the first Jewish candidate in that spot on the party's list — as an individual candidate rather than a separate faction. \"We have work to do together,\" Abbas said."
+    sources:
+      - url: "https://www.jpost.com/israel-election-2026/article-907172"
+        title: "Ra'am's Abbas announces ex-Yesh Atid MK will join Arab party slate"
+        publisher: "The Jerusalem Post"
+      - url: "https://www.ynet.co.il/news/article/sjamoqq00ge"
+        title: "סגלוביץ': אי אפשר לקיים שותפות עם מפלגות ערביות אחרי 7/10? זה מופרך ושקרי"
+        publisher: "Ynet"
+  - kind: neutral
+    category: news
+    date: 2026-09-13
+    title:
+      he: "רע\"מ חתמה על הסכם עודפים עם הרשימה המשותפת (חד\"ש-תע\"ל)"
+      en: "Ra'am signed a surplus-vote agreement with the Joint List (Hadash-Ta'al)"
+    description:
+      he: "ב-13 בספטמבר 2026 דווח כי רע\"מ בראשות עבאס והרשימה המשותפת (חד\"ש-תע\"ל) חתמו בסוף השבוע על הסכם עודפים לקראת הבחירות לכנסת ה-26, לאחר שרע\"מ בחרה להתמודד בנפרד. בהודעה משותפת נמסר כי שיתוף הפעולה \"יבטיח שאף קול לא יתבזבז\"."
+      en: "On 13 September 2026 it was reported that Ra'am, led by Abbas, and the Joint List (Hadash-Ta'al) had signed a surplus-vote agreement over the weekend ahead of the election to the 26th Knesset, after Ra'am chose to run separately. A joint statement said the cooperation \"will ensure that no vote is wasted.\""
+    sources:
+      - url: "https://www.jpost.com/israel-election-2026/article-908431"
+        title: "Hadash-Ta'al, Ra'am sign surplus vote-sharing agreement"
+        publisher: "The Jerusalem Post"

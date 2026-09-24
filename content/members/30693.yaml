@@ -1,64 +1,100 @@
-# PersonID 30693. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30693 (Eitan Ginzburg). Researched from reputable public sources;
+# every cited URL re-verified on 2026-09-18. Neutral language.
 personId: 30693
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: ראש העיר הגלוי הראשון בישראל
-      en: Israel's first openly gay mayor
+      he: "ראש העיר הגלוי הראשון בישראל"
+      en: "Israel's first openly gay mayor"
     description:
-      he: ב-16 במרץ 2018 נבחר איתן גינזבורג על ידי מועצת העיר רעננה לכהן כראש העיר,
-        ובכך הפך לראש העיר הגלוי (הומוסקסואל) הראשון בישראל. הוא החליף את זאב
-        בילסקי שעזב את התפקיד.
-      en: On 16 March 2018, Eitan Ginzburg was elected by the Ra'anana city council to
-        serve as mayor, becoming Israel's first openly gay mayor. He succeeded
-        Ze'ev Bielski, who had left the post.
-    date: 2018-03-16
+      he: "ב-16 במרץ 2018 נבחר איתן גינזבורג על ידי מועצת העיר רעננה לכהן כראש העיר, ובכך הפך לראש העיר הגלוי (הומוסקסואל) הראשון בישראל. הוא החליף את זאב בילסקי שעזב את התפקיד."
+      en: "On 16 March 2018, Eitan Ginzburg was elected by the Ra'anana city council to serve as mayor, becoming Israel's first openly gay mayor. He succeeded Ze'ev Bielski, who had left the post."
+    date: "2018-03-16"
     sources:
-      - url: https://www.jpost.com/Israel-News/Raanana-gets-countrys-first-gay-mayor-546533
-        title: Tel Aviv suburb gets country's first gay mayor
-        publisher: The Jerusalem Post
-      - url: https://en.wikipedia.org/wiki/Eitan_Ginzburg
-        title: Eitan Ginzburg
-        publisher: Wikipedia
+      - url: "https://www.jpost.com/Israel-News/Raanana-gets-countrys-first-gay-mayor-546533"
+        title: "Tel Aviv suburb gets country's first gay mayor"
+        publisher: "The Jerusalem Post"
+      - url: "https://en.wikipedia.org/wiki/Eitan_Ginzburg"
+        title: "Eitan Ginzburg"
+        publisher: "Wikipedia"
   - kind: positive
     category: achievement
     title:
-      he: מונה לשר התקשורת
-      en: Appointed Minister of Communications
+      he: "מונה לשר התקשורת"
+      en: "Appointed Minister of Communications"
     description:
-      he: ב-3 במאי 2021 הושבע איתן גינזבורג כשר התקשורת מטעם סיעת כחול לבן. עם מינויו
-        מנתה ישראל שלושה שרים גלויים מקהילת הלהט"ב, שיא באותה עת.
-      en: On 3 May 2021, Eitan Ginzburg was sworn in as Minister of Communications on
-        behalf of the Blue and White faction. With his appointment Israel had a
-        record three openly LGBT cabinet ministers at the time.
-    date: 2021-05-03
+      he: "ב-3 במאי 2021 הושבע איתן גינזבורג כשר התקשורת מטעם סיעת כחול לבן. עם מינויו מנתה ישראל שלושה שרים גלויים מקהילת הלהט\"ב, שיא באותה עת."
+      en: "On 3 May 2021, Eitan Ginzburg was sworn in as Minister of Communications on behalf of the Blue and White faction. With his appointment Israel had a record three openly LGBT cabinet ministers at the time."
+    date: "2021-05-03"
     sources:
-      - url: https://www.jpost.com/israel-news/israel-to-get-its-third-gay-cabinet-minister-later-today-667052
-        title: Eitan Ginzburg to become Israel's third gay cabinet minister on Monday
-        publisher: The Jerusalem Post
-      - url: https://en.wikipedia.org/wiki/Eitan_Ginzburg
-        title: Eitan Ginzburg
-        publisher: Wikipedia
+      - url: "https://www.jpost.com/israel-news/israel-to-get-its-third-gay-cabinet-minister-later-today-667052"
+        title: "Eitan Ginzburg to become Israel's third gay cabinet minister on Monday"
+        publisher: "The Jerusalem Post"
+      - url: "https://en.wikipedia.org/wiki/Eitan_Ginzburg"
+        title: "Eitan Ginzburg"
+        publisher: "Wikipedia"
   - kind: positive
     category: achievement
     title:
-      he: רקע של שירות ציבורי וצבאי
-      en: Public service and military background
+      he: "רקע של שירות ציבורי וצבאי"
+      en: "Public service and military background"
     description:
-      he: איתן גינזבורג שירת בצה"ל בחיל המשטרה הצבאית והשתחרר בדרגת רב-סרן ב-1999. הוא
-        בעל תואר ראשון במשפטים ובממשל מהמרכז הבינתחומי הרצליה (אוניברסיטת
-        רייכמן) ותואר שני במדע המדינה מאוניברסיטת תל אביב, וכיהן שנים רבות כחבר
-        מועצת העיר וסגן ראש עיריית רעננה.
-      en: Eitan Ginzburg served in the IDF Military Police Corps and was discharged
-        with the rank of major in 1999. He holds an LLB in law and a BA in
-        government from the Interdisciplinary Center Herzliya (Reichman
-        University) and an MA in political science from Tel Aviv University, and
-        served for many years as a Ra'anana city council member and deputy
-        mayor.
+      he: "איתן גינזבורג שירת בצה\"ל בחיל המשטרה הצבאית והשתחרר בדרגת רב-סרן ב-1999. הוא בעל תואר ראשון במשפטים ובממשל מהמרכז הבינתחומי הרצליה (אוניברסיטת רייכמן) ותואר שני במדע המדינה מאוניברסיטת תל אביב, וכיהן שנים רבות כחבר מועצת העיר וסגן ראש עיריית רעננה."
+      en: "Eitan Ginzburg served in the IDF Military Police Corps and was discharged with the rank of major in 1999. He holds an LLB in law and a BA in government from the Interdisciplinary Center Herzliya (Reichman University) and an MA in political science from Tel Aviv University, and served for many years as a Ra'anana city council member and deputy mayor."
     sources:
-      - url: https://en.wikipedia.org/wiki/Eitan_Ginzburg
-        title: Eitan Ginzburg
-        publisher: Wikipedia
+      - url: "https://en.wikipedia.org/wiki/Eitan_Ginzburg"
+        title: "Eitan Ginzburg"
+        publisher: "Wikipedia"
+  - kind: neutral
+    category: role
+    date: "2025-07-04"
+    title:
+      he: "שב לכנסת ביולי 2025 במקומו של גדי איזנקוט"
+      en: "Returned to the Knesset in July 2025, replacing Gadi Eisenkot"
+    description:
+      he: "ב-4 ביולי 2025 שב גינזבורג לכהן כחבר הכנסת ה-25 מטעם סיעת כחול לבן - המחנה הממלכתי, לאחר שגדי איזנקוט התפטר מהכנסת בעקבות פרישתו ממפלגתו של בני גנץ. הוא מכהן כחבר בוועדת החוקה, חוק ומשפט ובוועדות נוספות."
+      en: "On 4 July 2025 Ginzburg returned to the 25th Knesset for the Blue and White - National Unity faction, after Gadi Eisenkot resigned from the Knesset following his split from Benny Gantz's party. He serves on the Constitution, Law and Justice Committee and other committees."
+    sources:
+      - url: "https://www.timesofisrael.com/liveblog_entry/national-unitys-eisenkot-officially-resigns-from-knesset/"
+        title: "National Unity's Eisenkot officially resigns from Knesset"
+        publisher: "The Times of Israel"
+      - url: "https://www.jns.org/feature/israeli-elections-2026-meet-the-parliament-mk-eitan-ginzburg"
+        title: "Israeli elections 2026: Meet the parliament - MK Eitan Ginzburg"
+        publisher: "JNS"
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30693"
+        title: "Eitan Ginzburg - Knesset member page"
+        publisher: "Knesset"
+  - kind: neutral
+    category: news
+    date: "2026-05-05"
+    title:
+      he: "הודיע על פרישה ממפלגת כחול לבן של בני גנץ"
+      en: "Announced his departure from Benny Gantz's Blue and White party"
+    description:
+      he: "ב-5 במאי 2026 הודיע גינזבורג לבני גנץ על פרישתו מהמפלגה, לאחר שגנץ דרש ממנו להבהיר את עתידו הפוליטי. גינזבורג אמר כי יכולתה של המסגרת הפוליטית להמשיך ולחולל את השינוי הנדרש פחתה, והודיע כי יישאר חבר כנסת ולא יפנה את מקומו."
+      en: "On 5 May 2026 Ginzburg informed Benny Gantz that he was leaving the party, after Gantz demanded that he clarify his political future. Ginzburg said the political framework's ability to keep bringing about the necessary change had diminished, and said he would remain a Knesset member rather than vacate his seat."
+    sources:
+      - url: "https://www.haaretz.co.il/news/elections/2026-05-05/ty-article/0000019d-f784-ddfa-a5bf-f79da7dd0000"
+        title: "עוד עזיבה בכחול לבן: ח\"כ איתן גינזבורג הודיע לגנץ על פרישתו מהמפלגה"
+        publisher: "Haaretz"
+      - url: "https://www.mako.co.il/news-israel-elections/2026/Article-96683c7b017fd91026.htm"
+        title: "גינזבורג החליט לעזוב את כחול לבן, טרופר יישאר ח\"כ"
+        publisher: "N12"
+  - kind: neutral
+    category: news
+    date: "2026-08-05"
+    title:
+      he: "הצטרף לרשימת 'ביחד' של נפתלי בנט לבחירות 2026"
+      en: "Joined Naftali Bennett's 'Yachad' list for the 2026 election"
+    description:
+      he: "ב-5 באוגוסט 2026 הודיע נפתלי בנט כי גינזבורג מצטרף לרשימת 'ביחד' לבחירות לכנסת ה-26. בנט תיאר אותו כאיש ציבור מנוסה ומקצועי, וגינזבורג אמר כי לממשלה הבאה לא יהיו רגעי חסד והיא תצטרך לפעול מיד לתיקון הנזקים. מיקומו ברשימה לא פורסם בהודעה."
+      en: "On 5 August 2026 Naftali Bennett announced that Ginzburg was joining the 'Yachad' list for the election to the 26th Knesset. Bennett described him as an experienced, professional public servant, and Ginzburg said the next government would have no grace period and would have to act immediately to repair the damage. His placement on the list was not announced."
+    sources:
+      - url: "https://www.mako.co.il/news-israel-elections/2026/Article-618bf921ec1df91027.htm"
+        title: "מגנץ - לבנט: חה\"כ איתן גינזבורג מצטרף לרשימת ביחד"
+        publisher: "N12"
+      - url: "https://www.ynet.co.il/news/article/hjla8ox8zx"
+        title: "איתן גינזבורג שעזב את גנץ מצטרף ל'ביחד' של בנט: לא יהיו רגעי חסד"
+        publisher: "Ynet"

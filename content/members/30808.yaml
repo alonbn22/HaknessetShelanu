@@ -1,7 +1,8 @@
-# PersonID 30808. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30808. Researched from reputable public sources and source-verified
+# (every cited URL re-fetched on the review date). Neutral language; legal
+# status marked. REVIEW before launch.
 personId: 30808
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -11,35 +12,56 @@ claims:
     description:
       he: אפרת רייטן עבדה תחילה כשחקנית ומגישת טלוויזיה, בין היתר בערוץ הילדים ובערוץ
         10, ולאחר מכן עברה לתחום המשפט. היא סיימה תואר ראשון במשפטים בשנת 2004,
-        הוסמכה כעורכת דין בשנת 2012 והפכה לשותפה במשרד עורכי הדין גולדפרב זליגמן
-        ושות'.
+        הוסמכה כעורכת דין ומשנת 2012 עבדה במשרד עורכי הדין גולדפרב זליגמן ושות'.
       en: Efrat Rayten began her career as an actress and television presenter,
         including on the Children's Channel and Channel 10, before moving into
-        law. She earned an LLB in 2004, was called to the bar in 2012, and
-        became a partner at the law firm Goldfarb Seligman & Co.
+        law. She completed her law degree in 2004, was called to the bar, and
+        from 2012 worked at the law firm Goldfarb Seligman & Co.
     sources:
       - url: https://en.wikipedia.org/wiki/Efrat_Rayten
         title: Efrat Rayten - Wikipedia
         publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%90%D7%A4%D7%A8%D7%AA_%D7%A8%D7%99%D7%99%D7%98%D7%9F
+        title: אפרת רייטן
+        publisher: Wikipedia (Hebrew)
       - url: https://www.wikidata.org/wiki/Q6864478
         title: Efrat Rayten - Wikidata
         publisher: Wikidata
   - kind: positive
     category: achievement
     title:
-      he: יושבת ראש ועדת העבודה והרווחה בכנסת
-      en: Chaired the Knesset Labor, Welfare and Health Committee
+      he: יושבת ראש ועדת העבודה והרווחה בכנסת ה-24
+      en: Chaired the Knesset Labor and Welfare Committee in the 24th Knesset
     description:
-      he: במהלך כהונתה בכנסת שימשה אפרת רייטן כיושבת ראש ועדת העבודה, הרווחה והבריאות.
-      en: During her Knesset service, Efrat Rayten served as chair of the Labor,
-        Welfare and Health Committee.
+      he: לאחר היבחרה לכנסת ה-24 במרץ 2021 מטעם מפלגת העבודה, כיהנה אפרת רייטן
+        כיושבת ראש ועדת העבודה והרווחה של הכנסת.
+      en: After her election to the 24th Knesset in March 2021 for the Labor Party,
+        Efrat Rayten served as chair of the Knesset's Labor and Welfare
+        Committee.
+    date: 2021-06-01
     sources:
-      - url: https://en.wikipedia.org/wiki/Efrat_Rayten
-        title: Efrat Rayten - Wikipedia
-        publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%90%D7%A4%D7%A8%D7%AA_%D7%A8%D7%99%D7%99%D7%98%D7%9F
+        title: אפרת רייטן
+        publisher: Wikipedia (Hebrew)
       - url: https://womenpoliticalleaders.org/member/efrat-raytan-marom/
         title: Efrat Rayten-Marom - Women Political Leaders
         publisher: Women Political Leaders
+  - kind: positive
+    category: achievement
+    title:
+      he: נבחרה מטעם הכנסת לוועדה לבחירת שופטים (2021)
+      en: Elected as a Knesset representative on the Judicial Selection Committee (2021)
+    description:
+      he: ב-4 באוגוסט 2021 בחרה מליאת הכנסת ברייטן (העבודה) ובשמחה רוטמן (הציונות
+        הדתית) כנציגי הכנסת בוועדה לבחירת שופטים; רייטן קיבלה 51 קולות.
+      en: On 4 August 2021 the Knesset plenum elected Rayten (Labor) and Simcha Rothman
+        (Religious Zionism) as the Knesset's representatives on the Judicial
+        Selection Committee; Rayten received 51 votes.
+    date: 2021-08-04
+    sources:
+      - url: https://www.globes.co.il/news/article.aspx?did=1001380636
+        title: "הליכוד בחוץ: אפרת רייטן ושמחה רוטמן נבחרו לוועדה למינוי שופטים"
+        publisher: Globes
   - kind: positive
     category: achievement
     title:
@@ -49,7 +71,7 @@ claims:
       he: לאחר בחירות 2022 נבחרה אפרת רייטן לשמש כיושבת ראש סיעת מפלגת העבודה בכנסת.
       en: Following the 2022 election, Efrat Rayten was selected to chair the Labor
         Party's faction in the Knesset.
-    date: "2022"
+    date: "2023"
     sources:
       - url: https://en.wikipedia.org/wiki/Efrat_Rayten
         title: Efrat Rayten - Wikipedia
@@ -57,3 +79,26 @@ claims:
       - url: https://womenpoliticalleaders.org/member/efrat-raytan-marom/
         title: Efrat Rayten-Marom - Women Political Leaders
         publisher: Women Political Leaders
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30808
+        title: MK Efrat Rayten — personal details and positions
+        publisher: Knesset (official)
+  - kind: neutral
+    category: news
+    date: 2026-07-20
+    title:
+      he: מקום רביעי ברשימת הדמוקרטים לכנסת ה-26
+      en: Fourth on The Democrats' list for the 26th Knesset
+    description:
+      he: בפריימריז מפלגת הדמוקרטים שנערכו ב-20 ביולי 2026 (כ-97 אלף מצביעים, שיעור
+        הצבעה של כ-86%) דורגה רייטן במקום הרביעי ברשימה לכנסת ה-26, אחרי יאיר
+        גולן, נעמה לזימי וגלעד קריב.
+      en: In The Democrats' primary held on 20 July 2026 (about 97,000 voters, roughly
+        86% turnout) Rayten was placed fourth on the party's list for the 26th
+        Knesset, after Yair Golan, Naama Lazimi and Gilad Kariv.
+    sources:
+      - url: https://www.davar1.co.il/689636/
+        title: "תוצאות הפריימריז ב'דמוקרטים': הח\"כים המכהנים בראש, פעילי המחאה מתבלטים"
+        publisher: Davar
+      - url: https://he.wikipedia.org/wiki/%D7%94%D7%91%D7%97%D7%99%D7%A8%D7%95%D7%AA_%D7%9C%D7%9B%D7%A0%D7%A1%D7%AA_%D7%94%D7%A2%D7%A9%D7%A8%D7%99%D7%9D_%D7%95%D7%A9%D7%A9
+        title: הבחירות לכנסת העשרים ושש
+        publisher: Wikipedia (Hebrew)

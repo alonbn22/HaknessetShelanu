@@ -1,7 +1,8 @@
-# PersonID 563. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 563 (Meir Porush). Researched and source-verified 2026-09-18 (every
+# cited URL re-fetched; Knesset position dates cross-checked against the Knesset
+# OData). Neutral language; legal status marked. REVIEW before launch.
 personId: 563
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -11,14 +12,19 @@ claims:
     description:
       he: מאיר פרוש מכהן כחבר הכנסת מטעם סיעת אגודת ישראל (יהדות התורה) במספר קדנציות
         מאז 1996. במהלך השנים שימש בתפקידים בכירים, ובהם סגן שר השיכון, סגן שר
-        החינוך, ושר ירושלים ומסורת ישראל (2023-2025).
+        החינוך, ושר ירושלים ומסורת ישראל בממשלה ה-37 (מ-23 בינואר 2023 עד 17 ביולי
+        2025, אז חזר לכהן כחבר כנסת מן המניין).
       en: Meir Porush has served as a member of the Knesset for the Agudat Yisrael
         faction of United Torah Judaism across several terms since 1996. Over
         the years he has held senior posts, including Deputy Minister of
         Housing, Deputy Minister of Education, and Minister of Jerusalem Affairs
-        and Jewish Tradition (2023-2025).
+        and Jewish Tradition in the 37th government (from 23 January 2023 until
+        17 July 2025, when he returned to serve as a regular Knesset member).
     date: "1996"
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/563
+        title: מאיר פרוש – פרטים אישיים ותפקידים (אתר הכנסת)
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Meir_Porush
         title: Meir Porush
         publisher: Wikipedia
@@ -70,3 +76,51 @@ claims:
         title: Knesset Ethics Committee reprimands haredi MK for biblical insult to
           Women of the Wall
         publisher: The Jerusalem Post
+  - kind: negative
+    category: controversy
+    date: 2024-05-27
+    title:
+      he: דיווח על הכנסת בני משפחתו להר מירון בל"ג בעומר 2024 בזמן הגבלות הכניסה
+      en: Report that he brought family members to Mount Meron during the restricted Lag BaOmer 2024 event
+    description:
+      he: כשר הממונה על הילולת ל"ג בעומר במירון בשנת 2024 — שנה שבה, בשל ירי חיזבאללה, הוגבלה הכניסה לאתר לכ-30 בעלי היתר בלבד — דווח בכאן, ב-ynet ובטיימס אוף ישראל כי רעייתו, בתו ושני בניו של פרוש הגיעו לאתר. לשכת פרוש מסרה בתגובה כי כל הפעילות נעשתה כדין ובאישור הגורמים המוסמכים, כי אשתו ובתו סייעו לו בצרכיו האישיים במהלך שהותו וכי בניו שימשו כנהגיו במשמרות, כפי שנהגו במשך שנים. מדובר בביקורת ציבורית-תקשורתית; לא נפתח הליך משפטי בעניין ככל הידוע.
+      en: As the minister in charge of the 2024 Lag BaOmer event at Mount Meron — a year in which, because of Hezbollah fire, access to the site was limited to some 30 permit holders — Kan, Ynet and The Times of Israel reported that Porush's wife, daughter and two sons came to the site. Porush's office responded that all activity was lawful and approved by the relevant authorities, that his wife and daughter assisted him with personal needs during his stay, and that his sons served as his drivers in shifts, as they had for years. This was public and media criticism; no legal proceeding is known to have been opened.
+    sources:
+      - url: https://www.ynet.co.il/news/article/rjbysbm4c
+        title: 'בזמן שרבבות נותרו בבית: השר הממונה על ההילולה במירון הכניס להר בני משפחה'
+        publisher: Ynet
+      - url: https://www.timesofisrael.com/liveblog_entry/minister-tasked-with-restricting-meron-access-brought-family-on-banned-pilgrimage-report/
+        title: Minister tasked with restricting Meron access brought family on banned pilgrimage — report
+        publisher: The Times of Israel
+      - url: https://news.walla.co.il/item/3667029
+        title: פרוש התנצל על ניהול ההילולה במירון - אך לא התייחס לקומבינה למשפחתו
+        publisher: Walla
+  - kind: neutral
+    category: news
+    date: 2026-09-08
+    title:
+      he: ירוץ במקום הרביעי ברשימת יהדות התורה תחת מפלגה חדשה, "חומת תורת ישראל"
+      en: To run fourth on the United Torah Judaism list under a new party, "Chomat Torat Yisrael"
+    description:
+      he: לקראת הבחירות לכנסת ה-26 (27 באוקטובר 2026) הוצב פרוש במקום הרביעי ברשימת יהדות התורה, אך לא מטעם אגודת ישראל אלא מטעם מפלגה חדשה בשם "חומת תורת ישראל" שהקים יחד עם אליקים שטרק (המקום השישי). לפי הדיווחים, זו הפעם הראשונה מאז 1992 שרשימת יהדות התורה כוללת מפלגה שלישית, והמהלך נועד להעניק לשניים עצמאות פוליטית ותקציבית מהחלטות אגודת ישראל.
+      en: Ahead of the election to the 26th Knesset (27 October 2026), Porush was placed fourth on the United Torah Judaism list — not for Agudat Yisrael but for a new party named "Chomat Torat Yisrael" that he formed together with Eliakim Shtark (sixth place). According to reports, this is the first time since 1992 that the UTJ list includes a third party, and the move was meant to give the two political and budgetary independence from Agudat Yisrael's decisions.
+    sources:
+      - url: https://www.davar1.co.il/696518/
+        title: רשימת יהדות התורה כוללת לראשונה מ-1992 מפלגה שלישית מלבד אגודת ישראל ודגל התורה
+        publisher: Davar
+      - url: https://www.inn.co.il/news/705940
+        title: דרמה של הרגע האחרון ביהדות התורה
+        publisher: Arutz 7
+  - kind: neutral
+    category: news
+    date: 2026-09-17
+    title:
+      he: שלל תמיכה חרדית בממשלה בראשות גדי איזנקוט
+      en: Ruled out Haredi support for a government led by Gadi Eisenkot
+    description:
+      he: בראיון שפורסם ב-17 בספטמבר 2026 שלל פרוש תמיכה של הסיעות החרדיות בממשלה בראשות גדי איזנקוט, ואמר, בהסתמך על דברי הרבי מליובאוויטש, כי "אסור לתמוך במפלגה שמנהלת משא ומתן עם הערבים על החזרת שטחים מארצנו הקדושה".
+      en: In remarks published on 17 September 2026, Porush ruled out Haredi-faction support for a government led by Gadi Eisenkot, saying, citing the Lubavitcher Rebbe, that "one must not support a party that negotiates with the Arabs over returning territories of our holy land."
+    sources:
+      - url: https://www.i24news.tv/he/news/israel-elections-2026/artc-8b935e36
+        title: '"מנהל מו"מ על החזרת שטחים": בכיר ביהדות התורה שולל תמיכה בממשלת איזנקוט'
+        publisher: i24NEWS

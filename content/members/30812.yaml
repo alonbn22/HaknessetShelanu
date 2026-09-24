@@ -1,7 +1,8 @@
 # PersonID 30812. Auto-researched from reputable public sources and
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# legal status marked. Reviewed 2026-09-18.
 personId: 30812
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -28,16 +29,28 @@ claims:
       he: יושב ראש ועדת החוקה, חוק ומשפט של הכנסת
       en: Chair of the Knesset Constitution, Law and Justice Committee
     description:
-      he: בעקבות הקמת הממשלה ה-37 של ישראל בשנת 2023, מונה רוטמן ליושב ראש ועדת החוקה,
-        חוק ומשפט של הכנסת, אחד מתפקידי המפתח בעבודת החקיקה של הכנסת.
-      en: Following the formation of Israel's 37th government in 2023, Rothman was
-        appointed chairman of the Knesset's Constitution, Law and Justice
-        Committee, one of the key positions in the Knesset's legislative work.
-    date: 2023-01-01
+      he: בעקבות הקמת הממשלה ה-37 של ישראל מונה רוטמן ליושב ראש ועדת החוקה, חוק
+        ומשפט של הכנסת (על פי הוויקיפדיה העברית, מ-4 בינואר 2023), אחד מתפקידי
+        המפתח בעבודת החקיקה של הכנסת, והוא מכהן בתפקיד גם נכון לספטמבר 2026. לפי
+        נתוני הכנסת כיהן גם כיו"ר סיעת הציונות הדתית מ-15 בדצמבר 2022 עד 11
+        בנובמבר 2024.
+      en: Following the formation of Israel's 37th government, Rothman was appointed
+        chairman of the Knesset's Constitution, Law and Justice Committee
+        (according to Hebrew Wikipedia, from 4 January 2023), one of the key
+        positions in the Knesset's legislative work, a post he still holds as of
+        September 2026. Per Knesset data he also chaired the Religious Zionism
+        faction from 15 December 2022 to 11 November 2024.
+    date: 2023-01-04
     sources:
       - url: https://en.wikipedia.org/wiki/Simcha_Rothman
         title: Simcha Rothman
         publisher: Wikipedia
+      - url: https://he.wikipedia.org/wiki/%D7%A9%D7%9E%D7%97%D7%94_%D7%A8%D7%95%D7%98%D7%9E%D7%9F
+        title: שמחה רוטמן
+        publisher: Wikipedia (Hebrew)
+      - url: https://knesset.gov.il/Odata/ParliamentInfo.svc/KNS_PersonToPosition?$filter=PersonID%20eq%2030812%20and%20KnessetNum%20eq%2025&$format=json
+        title: KNS_PersonToPosition (PersonID 30812, 25th Knesset)
+        publisher: Knesset OData
   - kind: negative
     category: controversy
     status: settled
@@ -64,3 +77,82 @@ claims:
         title: Australia cancels far-right Israeli politician's visa ahead of speaking
           tour
         publisher: RNZ
+  - kind: negative
+    category: controversy
+    status: settled
+    date: "2026-07-29"
+    title:
+      he: בית משפט השלום דחה את תביעת הדיבה שהגיש נגד גיא פלג וחדשות 12
+      en: Magistrate's court dismissed his defamation suit against Guy Peleg and Channel 12 News
+    description:
+      he: בנובמבר 2023 תבע רוטמן את העיתונאי גיא פלג, חדשות 12 ונתבעים נוספים בסך כ-1.1
+        מיליון ש"ח, בטענה שדיווח שייחס לו אמירה בדיון סגור שלפיה "דמם של האחים
+        הלל ויגל יניב שנרצחו בחווארה אדום יותר מדם הנרצחים ב-7 באוקטובר" סילף את
+        דבריו. ב-29 ביולי 2026 דחה השופט אורן זילברמן מבית משפט השלום בירושלים את
+        התביעה וקיבל את הגנת "אמת דיברתי", לאחר שעדים העידו כי רוטמן אמר את הדברים
+        וחזר בו מיד; בית המשפט לא חייב את רוטמן בהוצאות. רוטמן הכחיש שאמר את
+        הדברים וכינה את הדיווח "שקר".
+      en: In November 2023 Rothman sued journalist Guy Peleg, Channel 12 News and
+        other defendants for about NIS 1.1 million, claiming a report attributing
+        to him a remark in a closed hearing that "the blood of the brothers
+        Hallel and Yagel Yaniv murdered in Huwara is redder than the blood of
+        those murdered on October 7" had distorted his words. On 29 July 2026
+        Judge Oren Silberman of the Jerusalem Magistrate's Court dismissed the
+        suit and accepted the truth defense, after witnesses testified that
+        Rothman had made the remark and immediately retracted it; the court did
+        not order Rothman to pay costs. Rothman denied making the statement and
+        called the report "a lie".
+    sources:
+      - url: https://www.mako.co.il/news-law/2026_q3/Article-65b83474f2eaf91027.htm
+        title: "בית המשפט קבע: גיא פלג פרסם אמת. ניצחון לחדשות 12 בתביעת הדיבה שהגיש שמחה רוטמן"
+        publisher: N12
+      - url: https://www.timesofisrael.com/rothman-loses-defamation-suit-against-reporter-on-controversial-oct-7-comment/
+        title: Rothman loses defamation suit against reporter on controversial Oct. 7 comment
+        publisher: The Times of Israel
+  - kind: neutral
+    category: news
+    date: "2026-07-26"
+    title:
+      he: במקום השלישי ברשימת הציונות הדתית לבחירות 2026
+      en: Placed third on the Religious Zionism list for the 2026 election
+    description:
+      he: בפריימריז של הציונות הדתית, שנערכו במרכז המפלגה ב-26 ביולי 2026, דורג רוטמן
+        במקום השלישי ברשימה לכנסת ה-26, אחרי בצלאל סמוטריץ' ואורית סטרוק.
+      en: In the Religious Zionism primaries, held in the party's central committee
+        on 26 July 2026, Rothman was ranked third on the list for the 26th
+        Knesset, after Bezalel Smotrich and Orit Strock.
+    sources:
+      - url: https://www.israelnationalnews.com/news/430790
+        title: Religious Zionist Party unveils Knesset slate following primaries
+        publisher: Israel National News
+      - url: https://www.ynet.co.il/news/article/r1uthx0vge
+        title: "היועץ הקרוב של סמוטריץ', ובלי נשים חדשות: אלו המתמודדים בציונות הדתית"
+        publisher: Ynet
+  - kind: neutral
+    category: news
+    date: "2026-09-15"
+    title:
+      he: הציג עם סמוטריץ' תוכנית להמשך הרפורמה במערכת המשפט אחרי הבחירות
+      en: Presented with Smotrich a plan to extend the judicial overhaul after the election
+    description:
+      he: ב-15 בספטמבר 2026 הציגו רוטמן ושר האוצר בצלאל סמוטריץ' את תוכנית הציונות
+        הדתית להרחבת הרפורמה במערכת המשפט בכנסת הבאה, ובה בין היתר מתן אפשרות
+        לכנסת לחוקק מחדש חוקים שנפסלו בבג"ץ, שימועים פומביים למועמדים לעליון
+        ופיצול תפקיד היועץ המשפטי לממשלה; רוטמן כינה אותה "תוכנית יסוד להחזרת
+        הדמוקרטיה הישראלית למסלול". באוגוסט 2026, בעימות בחירות מול ח"כ גלעד
+        קריב, הגן רוטמן על הרפורמה ואמר כי הקואליציה "הייתה עדינה מאוד".
+      en: On 15 September 2026 Rothman and Finance Minister Bezalel Smotrich presented
+        Religious Zionism's plan to expand the judicial overhaul in the next
+        Knesset, including letting the Knesset re-enact laws struck down by the
+        High Court, public hearings for Supreme Court candidates and splitting
+        the attorney general's role; Rothman called it "a foundational plan to
+        bring Israeli democracy back on track". In an August 2026 election debate
+        with MK Gilad Kariv, Rothman defended the overhaul, saying the coalition
+        "was very restrained".
+    sources:
+      - url: https://www.timesofisrael.com/religious-zionism-launches-plans-for-more-radical-judicial-overhaul-after-election/
+        title: Religious Zionism launches plans for more radical judicial overhaul after election
+        publisher: The Times of Israel
+      - url: https://www.ynet.co.il/news/article/rk4ixkowzl
+        title: "קריב: 'עליתם על מערכת המשפט עם D-9'. רוטמן: 'היינו עדינים מאוד'"
+        publisher: Ynet

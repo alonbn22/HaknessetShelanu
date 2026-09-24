@@ -1,7 +1,8 @@
-# PersonID 30701. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30701. Researched from reputable public sources and source-verified
+# (every cited URL re-fetched on the review date). Neutral language; legal
+# status marked. REVIEW before launch.
 personId: 30701
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
@@ -27,20 +28,46 @@ claims:
   - kind: positive
     category: achievement
     title:
-      he: יו"ר ועדת הכנסת ומנהל הקואליציה
-      en: Chair of the Knesset House Committee and coalition whip
+      he: יו"ר ועדת הכנסת ויושב ראש הקואליציה
+      en: Chair of the Knesset House Committee and coalition chair (whip)
     description:
-      he: כץ מכהן כיו"ר ועדת הכנסת (ועדת הבית) מאז 2023 וכמנהל הקואליציה בכנסת ה-25
-        שהושבעה בנובמבר 2022, תפקידים מרכזיים בניהול עבודת המליאה והקואליציה.
-      en: Katz has served as chair of the Knesset House Committee since 2023 and as
-        the coalition's parliamentary whip in the 25th Knesset, which was sworn
-        in in November 2022 — central roles in managing the work of the plenum
-        and the governing coalition.
-    date: 2023-01-01
+      he: כץ מכהן כיושב ראש הקואליציה מאז כינון הממשלה ה-37 בדצמבר 2022, וכן כיו"ר
+        סיעת הליכוד וכיו"ר ועדת הכנסת (ועדת הבית) מאז 2023 — תפקידים מרכזיים בניהול
+        עבודת המליאה והקואליציה.
+      en: Katz has served as coalition chair (whip) since the 37th government was
+        formed in December 2022, and as chair of the Likud faction and of the
+        Knesset House Committee since 2023 — central roles in managing the work
+        of the plenum and the governing coalition.
+    date: 2022-12-29
     sources:
       - url: https://en.wikipedia.org/wiki/Ofir_Katz
         title: Ofir Katz
         publisher: Wikipedia
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30701
+        title: MK Ofir Katz — personal details and positions
+        publisher: Knesset (official)
+  - kind: positive
+    category: achievement
+    title:
+      he: יזם חוקים למען לוחמים משוחררים ונכי צה"ל
+      en: Sponsored laws for discharged combat soldiers and disabled IDF veterans
+    description:
+      he: כץ יזם את החוק למימון מלא (100%) של תואר אקדמי ללוחמים משוחררים, שאושר סופית
+        בכנסת ב-20 בדצמבר 2023, ואת החוק להכפלת המימון הממשלתי לפעילות ארגוני נכי
+        צה"ל ונפגעי פעולות איבה, שאושר ב-21 באוקטובר 2025.
+      en: Katz initiated the law providing full (100%) state funding of an academic
+        degree for discharged combat soldiers, given final Knesset approval on 20
+        December 2023, and the law doubling state funding for the activities of
+        organizations serving disabled IDF veterans and victims of hostile acts,
+        approved on 21 October 2025.
+    date: 2025-10-21
+    sources:
+      - url: https://www.ynet.co.il/news/article/hjcwvwxp6
+        title: "אושר סופית: המדינה תממן 100% מהתואר ללוחמים משוחררים"
+        publisher: Ynet
+      - url: https://www.ynet.co.il/economy/article/rk91hfrclx
+        title: 'אושר בכנסת: המדינה תכפיל את המימון לפעילות למען נכי צה"ל, יו"ר הקואליציה כץ: "אנחנו חייבים להם"'
+        publisher: Ynet
   - kind: positive
     category: achievement
     title:
@@ -60,3 +87,47 @@ claims:
       - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-849340
         title: Likud MK Ofir Katz to act as Knesset rep. in judicial watchdog committee
         publisher: The Jerusalem Post
+  - kind: neutral
+    category: news
+    date: 2026-08-16
+    title:
+      he: 'בריאיון ערב הפריימריז: "היינו עדינים מדי ברפורמה, אחרי הבחירות נלך עד הסוף"'
+      en: 'Pre-primary interview: "We were too gentle in the reform; after the election we will go all the way"'
+    description:
+      he: בריאיון ל-ynet ב-16 באוגוסט 2026 אמר כץ כי הקואליציה "הייתה עדינה מדי" ברפורמה
+        המשפטית וכי לאחר הבחירות "נמשיך את כל מה שהפסקנו". הוא הגן על בקשת נתניהו
+        לשריונים ברשימת הליכוד וכינה את הניסיון להדיח את נתניהו לאחר 7 באוקטובר
+        "בושה וחרפה".
+      en: In an interview with Ynet on 16 August 2026 Katz said the coalition had been
+        "too gentle" in the judicial overhaul and that after the election "we
+        will continue everything we stopped". He defended Netanyahu's request
+        for reserved slots on the Likud list and called the attempt to oust
+        Netanyahu after 7 October "a shame and a disgrace".
+    sources:
+      - url: https://www.ynet.co.il/news/120andone/article/sjolijf8fe
+        title: 'יו"ר הקואליציה אופיר כץ: "היינו עדינים מדי ברפורמה. אחרי הבחירות נלך עד הסוף"'
+        publisher: Ynet
+  - kind: neutral
+    category: news
+    date: 2026-08-17
+    title:
+      he: מקום חמישי בפריימריז הליכוד; שמיני ברשימה לכנסת ה-26
+      en: Fifth in the Likud primary; eighth on the list for the 26th Knesset
+    description:
+      he: בפריימריז הליכוד שנערכו ב-17 באוגוסט 2026 דורג כץ במקום החמישי (אחרי אלי כהן,
+        אמיר אוחנה, יריב לוין ומירי רגב). ברשימת הליכוד שהוגשה לוועדת הבחירות
+        ב-8 בספטמבר 2026, לאחר שילוב המשוריינים, הוא מוצב במקום השמיני.
+      en: In the Likud primary held on 17 August 2026 Katz was ranked fifth (after Eli
+        Cohen, Amir Ohana, Yariv Levin and Miri Regev). On the Likud list
+        submitted to the Central Elections Committee on 8 September 2026, after
+        the reserved slots were added, he is placed eighth.
+    sources:
+      - url: https://www.haaretz.co.il/news/elections/2026-08-17/ty-article/.premium/000001a0-10eb-d0aa-abfb-befb92a40000
+        title: "הסתיימה ספירת הקולות בפריימריז: אלי כהן, אמיר אוחנה ויריב לוין בצמרת הליכוד"
+        publisher: Haaretz
+      - url: https://news.walla.co.il/item/3861207
+        title: "ספירת הקולות בליכוד נגמרה: אלי כהן במקום הראשון, אוחנה ולוין אחריו - ומי נשאר בחוץ?"
+        publisher: Walla
+      - url: https://he.wikipedia.org/wiki/%D7%94%D7%91%D7%97%D7%99%D7%A8%D7%95%D7%AA_%D7%9C%D7%9B%D7%A0%D7%A1%D7%AA_%D7%94%D7%A2%D7%A9%D7%A8%D7%99%D7%9D_%D7%95%D7%A9%D7%A9
+        title: הבחירות לכנסת העשרים ושש
+        publisher: Wikipedia (Hebrew)

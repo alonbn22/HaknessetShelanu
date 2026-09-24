@@ -3,6 +3,8 @@ const BCP47: Record<string, string> = {
   en: "en-GB",
   ar: "ar",
   ru: "ru",
+  es: "es-ES",
+  fr: "fr-FR",
 };
 
 export function formatDate(iso: string | null | undefined, locale: string): string {
@@ -12,10 +14,26 @@ export function formatDate(iso: string | null | undefined, locale: string): stri
   }).format(new Date(iso));
 }
 
+// "Tuesday, 27 October 2026" — for the one date everyone needs to remember.
+export function formatDateFull(iso: string | null | undefined, locale: string): string {
+  if (!iso) return "";
+  return new Intl.DateTimeFormat(BCP47[locale] ?? locale, {
+    dateStyle: "full",
+    timeZone: "Asia/Jerusalem",
+  }).format(new Date(`${iso}T12:00:00+03:00`));
+}
+
 export function formatDateTime(iso: string | null | undefined, locale: string): string {
   if (!iso) return "";
   return new Intl.DateTimeFormat(BCP47[locale] ?? locale, {
     dateStyle: "medium",
     timeStyle: "short",
   }).format(new Date(iso));
+}
+
+// A number in the reader's digits and decimal mark ("22,3" in es/fr/ru,
+// "22.3" in he/en) — so a figure interpolated into a sentence matches the
+// figures the content files write by hand.
+export function formatNumber(n: number, locale: string, digits = 1): string {
+  return n.toLocaleString(BCP47[locale] ?? locale, { minimumFractionDigits: digits, maximumFractionDigits: digits });
 }

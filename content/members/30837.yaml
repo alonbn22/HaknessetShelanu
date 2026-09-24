@@ -1,72 +1,99 @@
-# PersonID 30837. Auto-researched from reputable public sources and
-# adversarially source-verified (every cited URL re-fetched). Neutral language;
-# legal status marked. REVIEW before launch.
+# PersonID 30837. Researched from reputable public sources and source-verified
+# (every cited URL re-fetched). Neutral language; legal status marked. Reviewed 2026-09-18.
 personId: 30837
+lastReviewed: "2026-09-18"
 claims:
   - kind: positive
     category: achievement
     title:
-      he: חברת הכנסת ה-25 מטעם יש עתיד
-      en: Member of the 25th Knesset for Yesh Atid
+      he: "חברת הכנסת ה-25 מטעם יש עתיד"
+      en: "Member of the 25th Knesset for Yesh Atid"
     description:
-      he: דבורה (דבי) ביטון, ילידת שדרות 1965, נבחרה לכנסת ה-25 ברשימת יש עתיד והושבעה
-        כחברת כנסת ב-15 בנובמבר 2022, לאחר שהוצבה במקום ה-21 ברשימה. לפני כן
-        עמדה בראש סניף יש עתיד בשדרות החל משנת 2013.
-      en: Dvora (Debbie) Biton, born in Sderot in 1965, was elected to the 25th
-        Knesset on the Yesh Atid list and sworn in as a Member of Knesset on 15
-        November 2022, after being placed 21st on the list. She had previously
-        led Yesh Atid's local branch in Sderot from 2013.
-    date: 2022-11-15
+      he: "דבורה (דבי) ביטון, ילידת שדרות 1965, נבחרה לכנסת ה-25 ברשימת יש עתיד והושבעה כחברת כנסת ב-15 בנובמבר 2022, לאחר שהוצבה במקום ה-21 ברשימה. לפני כן עמדה בראש סניף יש עתיד בשדרות החל משנת 2013."
+      en: "Dvora (Debbie) Biton, born in Sderot in 1965, was elected to the 25th Knesset on the Yesh Atid list and sworn in as a Member of Knesset on 15 November 2022, after being placed 21st on the list. She had previously led Yesh Atid's local branch in Sderot from 2013."
+    date: "2022-11-15"
     sources:
-      - url: https://en.wikipedia.org/wiki/Debbie_Biton
-        title: Debbie Biton
-        publisher: English Wikipedia
-      - url: https://he.wikipedia.org/wiki/%D7%93%D7%91%D7%95%D7%A8%D7%94_%D7%91%D7%99%D7%98%D7%95%D7%9F
-        title: דבורה ביטון
-        publisher: Hebrew Wikipedia
+      - url: "https://en.wikipedia.org/wiki/Debbie_Biton"
+        title: "Debbie Biton"
+        publisher: "Wikipedia"
+      - url: "https://he.wikipedia.org/wiki/%D7%93%D7%91%D7%95%D7%A8%D7%94_%D7%91%D7%99%D7%98%D7%95%D7%9F"
+        title: "דבורה ביטון"
+        publisher: "Wikipedia (Hebrew)"
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/30837"
+        title: "דבי ביטון — דף חברת הכנסת"
+        publisher: "Knesset"
   - kind: positive
     category: achievement
     title:
-      he: קריירה משפטית בסיוע המשפטי למען נוער בסיכון וקטינים
-      en: Legal career in public legal aid for at-risk youth and minors
+      he: "קריירה משפטית בסיוע המשפטי למען נוער בסיכון וקטינים"
+      en: "Legal career in public legal aid for at-risk youth and minors"
     description:
-      he: ביטון, בעלת תואר שני במשפטים והוסמכה כעורכת דין ב-2008, עבדה החל מאותה שנה
-        ועד היבחרה לכנסת בלשכת הסיוע המשפטי במחוז הדרום. במסגרת תפקידה ייצגה
-        נוער בסיכון וקטינים, שימשה אפוטרופוס לבדיקת כשרות משפטית וטיפלה בהליכי
-        הוצאת ילדים מהבית.
-      en: Biton, who holds a master's degree in law and was licensed as an attorney in
-        2008, worked from that year until her election to the Knesset at the
-        Southern District Legal Aid Bureau. In that role she represented at-risk
-        youth and minors, served as a court-appointed guardian for
-        legal-capacity determinations, and handled child-removal proceedings.
+      he: "ביטון, בעלת תואר שני במשפטים והוסמכה כעורכת דין ב-2008, עבדה החל מאותה שנה ועד היבחרה לכנסת בלשכת הסיוע המשפטי במחוז הדרום. במסגרת תפקידה ייצגה נוער בסיכון וקטינים, שימשה אפוטרופוס לדין בהליכי כשרות משפטית וייצגה הורים בהליכי הוצאת ילדים מהבית."
+      en: "Biton, who holds a master's degree in law and was licensed as an attorney in 2008, worked from that year until her election to the Knesset at the Southern District Legal Aid Bureau. In that role she represented at-risk youth and minors, served as a court-appointed guardian ad litem in legal-capacity proceedings, and represented parents in child-removal proceedings."
     sources:
-      - url: https://he.wikipedia.org/wiki/%D7%93%D7%91%D7%95%D7%A8%D7%94_%D7%91%D7%99%D7%98%D7%95%D7%9F
-        title: דבורה ביטון
-        publisher: Hebrew Wikipedia
-      - url: https://en.wikipedia.org/wiki/Debbie_Biton
-        title: Debbie Biton
-        publisher: English Wikipedia
+      - url: "https://he.wikipedia.org/wiki/%D7%93%D7%91%D7%95%D7%A8%D7%94_%D7%91%D7%99%D7%98%D7%95%D7%9F"
+        title: "דבורה ביטון"
+        publisher: "Wikipedia (Hebrew)"
+      - url: "https://en.wikipedia.org/wiki/Debbie_Biton"
+        title: "Debbie Biton"
+        publisher: "Wikipedia"
   - kind: positive
     category: achievement
     title:
-      he: פעילות למען תושבי שדרות ועוטף עזה
-      en: Advocacy for residents of Sderot and the Gaza border communities
+      he: "פעילות למען תושבי שדרות ועוטף עזה"
+      en: "Advocacy for residents of Sderot and the Gaza border communities"
     description:
-      he: כתושבת שדרות, קידמה ביטון הצעת חוק להקמת חדר מיון ממוגן בעיר, בעלות כוללת של
-        20 מיליון ש"ח, ומתחה ביקורת על דחיית ההצעה בקריאה טרומית בידי הקואליציה
-        ב-31 במאי 2023, כשבועיים לאחר מבצע 'מגן וחץ'. בכנסת היא מובילה שדולות
-        בנושאי קטינים בסיכון, זכויות נפגעי עבירה ופיתוח הנגב ויישובי עוטף עזה.
-      en: As a Sderot resident, Biton promoted a bill to build a fortified emergency
-        room in the city at a total cost of NIS 20 million, and criticized the
-        coalition when it rejected the bill in a preliminary reading on 31 May
-        2023, roughly two weeks after Operation Shield and Arrow. In the Knesset
-        she chairs caucuses on at-risk minors, crime victims' rights, and
-        development of the Negev and Gaza border communities.
-    date: 2023-05
+      he: "כתושבת שדרות, קידמה ביטון הצעת חוק להקמת חדר מיון ממוגן בעיר, בעלות כוללת של 20 מיליון ש\"ח, ומתחה ביקורת על דחיית ההצעה בקריאה טרומית ברוב של 51 מול 42 ב-31 במאי 2023, כשבועיים לאחר מבצע 'מגן וחץ'. בכנסת היא עומדת בראש שדולות בנושאי קטינים בסיכון, זכויות נפגעי עבירה ופיתוח הנגב ויישובי עוטף עזה."
+      en: "As a Sderot resident, Biton promoted a bill to build a fortified emergency room in the city at a total cost of NIS 20 million, and criticized the coalition when it rejected the bill in a preliminary reading by 51 votes to 42 on 31 May 2023, roughly two weeks after Operation Shield and Arrow. In the Knesset she chairs caucuses on at-risk minors, crime victims' rights, and development of the Negev and Gaza border communities."
+    date: "2023-05-31"
     sources:
-      - url: https://www.jpost.com/israel-news/politics-and-diplomacy/article-744738
-        title: Israel shoots down bill to build fortified emergency room in Sderot
-        publisher: The Jerusalem Post
-      - url: https://he.wikipedia.org/wiki/%D7%93%D7%91%D7%95%D7%A8%D7%94_%D7%91%D7%99%D7%98%D7%95%D7%9F
-        title: דבורה ביטון
-        publisher: Hebrew Wikipedia
+      - url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-744738"
+        title: "Israel shoots down bill to build fortified emergency room in Sderot"
+        publisher: "The Jerusalem Post"
+      - url: "https://he.wikipedia.org/wiki/%D7%93%D7%91%D7%95%D7%A8%D7%94_%D7%91%D7%99%D7%98%D7%95%D7%9F"
+        title: "דבורה ביטון"
+        publisher: "Wikipedia (Hebrew)"
+  - kind: positive
+    category: achievement
+    title:
+      he: "חוקים שהתקבלו ביוזמתה: הגנה על עדים קטינים, הגנת תעסוקה לבני משפחות שכולות ותיקון לחוק הירושה"
+      en: "Laws passed on her initiative: protecting child witnesses, job protection for bereaved families, and an Inheritance Law amendment"
+    description:
+      he: "על פי רישומי הכנסת, ביטון הייתה היוזמת הראשונה של שני חוקים שהתקבלו בקריאה שלישית בכנסת ה-25: חוק לתיקון סדרי הדין (חקירת עדים) (תיקון מס' 10), התשפ\"ד–2024, שנועד להקל על ילדים שנפגעו מעבירות מין או התעללות הנדרשים להעיד בהליך אזרחי לפיצויים; וחוק משפחות חיילים שנספו במערכה (תגמולים ושיקום) (תיקון מס' 46), התשפ\"ה–2025, הקובע הגנות מפני פגיעה בתעסוקתו של עובד שהוא בן משפחה של חלל צה\"ל או של נרצח בפעולת איבה. כן נמנתה עם יוזמי חוק הירושה (תיקון מס' 21), התשפ\"ד–2024 (\"הרצחת וגם ירשת\"), שנועד למנוע ממי שגרם למות בן או בת זוגו לרשת אותם ולהגן על הנכסים המשותפים כבר משלב הגשת כתב האישום."
+      en: "According to Knesset records, Biton was the lead initiator of two laws passed in their third reading in the 25th Knesset: Amendment 10 to the Rules of Procedure (Examination of Witnesses) Law (2024), intended to ease the position of children harmed by sexual offenses or abuse who must testify in civil compensation proceedings; and Amendment 46 to the Families of Soldiers Who Died in Battle (Benefits and Rehabilitation) Law (2025), which protects the employment of a worker who is a family member of a fallen soldier or of a victim of a hostile act. She was also among the initiators of Amendment 21 to the Inheritance Law (2024), intended to prevent a person who caused the death of their spouse from inheriting from them and to protect the joint assets from the moment an indictment is filed."
+    date: "2025-01-30"
+    sources:
+      - url: "https://main.knesset.gov.il/Activity/Legislation/Laws/Pages/LawBill.aspx?t=lawsuggestionssearch&lawitemid=2205309"
+        title: "חוק לתיקון סדרי הדין (חקירת עדים) (תיקון מס' 10), התשפ\"ד–2024 — דף הצעת החוק"
+        publisher: "Knesset"
+      - url: "https://main.knesset.gov.il/Activity/Legislation/Laws/Pages/LawBill.aspx?t=lawsuggestionssearch&lawitemid=2217493"
+        title: "חוק משפחות חיילים שנספו במערכה (תגמולים ושיקום) (תיקון מס' 46), התשפ\"ה–2025 — דף הצעת החוק"
+        publisher: "Knesset"
+      - url: "https://main.knesset.gov.il/Activity/Legislation/Laws/Pages/LawBill.aspx?t=lawsuggestionssearch&lawitemid=2196857"
+        title: "חוק הירושה (תיקון מס' 21), התשפ\"ד–2024 — דף הצעת החוק"
+        publisher: "Knesset"
+      - url: "https://www.israelhayom.co.il/news/welfare/article/14000065"
+        title: "הרצחת וגם ירשת? הצעת החוק שתמנע מרוצח זוגתו לרשת אותה"
+        publisher: "Israel Hayom"
+      - url: "https://he.wikipedia.org/wiki/%D7%93%D7%91%D7%95%D7%A8%D7%94_%D7%91%D7%99%D7%98%D7%95%D7%9F"
+        title: "דבורה ביטון"
+        publisher: "Wikipedia (Hebrew)"
+  - kind: neutral
+    category: news
+    date: "2026-09-01"
+    title:
+      he: "הודיעה כי לא תתמודד ברשימת יש עתיד לכנסת ה-26"
+      en: "Announced she will not run on the Yesh Atid list for the 26th Knesset"
+    description:
+      he: "ב-1 בספטמבר 2026 הודיעה ביטון כי לא תתמודד ברשימת יש עתיד (במסגרת הרשימה המשותפת \"ביחד\" עם נפתלי בנט) בבחירות לכנסת ה-26, לאחר שעדכנה על כך את יו\"ר המפלגה יאיר לפיד. היא הדגישה כי היא נשארת חברה ביש עתיד ומחויבת לדרכה, וכי תמשיך לקדם את הנושאים שבהם עסקה בכנסת."
+      en: "On 1 September 2026 Biton announced that she would not run on the Yesh Atid list (within the joint \"Beyachad\" list with Naftali Bennett) in the election for the 26th Knesset, having informed party chairman Yair Lapid of her decision. She stressed that she remains a member of Yesh Atid, committed to its path, and would continue promoting the issues she worked on in the Knesset."
+    sources:
+      - url: "https://www.zman.co.il/719843/"
+        title: "חברת הכנסת דבי ביטון לא תתמודד ברשימת יש עתיד בבחירות הקרובות"
+        publisher: "Zman Yisrael"
+      - url: "https://www.ynet.co.il/news/elections2026/article/ryx0003fdfe"
+        title: "לפיד הודיע: זו רשימת יש עתיד לבחירות | כך ייראה האיחוד עם בנט"
+        publisher: "ynet"
+      - url: "https://www.makorrishon.co.il/news/politcal/article/368984"
+        title: "רשימת ביחד לכנסת ה־26: אלה המועמדים של נפתלי בנט"
+        publisher: "Makor Rishon"

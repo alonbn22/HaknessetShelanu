@@ -2,16 +2,16 @@
 // translated instead of lazily. Gathers every Hebrew free-text string the site
 // renders and translates the ones missing per locale (gtx). Safe to re-run.
 //
-//   npm run warm            warm en, ar, ru
+//   npm run warm            warm every locale (en, ar, ru, es, fr)
 //   npm run warm -- en      warm only en
 import { and, inArray, isNotNull, sql } from "drizzle-orm";
 import { getDb, schema } from "../../src/db";
 import { gtxTranslate } from "../../src/lib/gtx";
 
-const ALL_LOCALES = ["en", "ar", "ru"] as const;
+const ALL_LOCALES = ["en", "ar", "ru", "es", "fr"] as const;
 type Loc = (typeof ALL_LOCALES)[number];
-const COL = { en: schema.translations.en, ar: schema.translations.ar, ru: schema.translations.ru };
-const FIELD = { en: "en", ar: "ar", ru: "ru" } as const;
+const COL = { en: schema.translations.en, ar: schema.translations.ar, ru: schema.translations.ru, es: schema.translations.es, fr: schema.translations.fr };
+const FIELD = { en: "en", ar: "ar", ru: "ru", es: "es", fr: "fr" } as const;
 const CONCURRENCY = 8;
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 

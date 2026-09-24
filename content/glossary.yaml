@@ -242,11 +242,11 @@ terms:
     term: { he: "תקציב דו-שנתי", en: "Biennial budget", ar: "ميزانية لسنتين", ru: "Двухлетний бюджет", es: Presupuesto bienal, fr: Budget biennal }
     def:
       he: "תקציב הנקבע לשנתיים במקום לשנה אחת. בישראל נעשה בו שימוש בכמה ממשלות, בכל פעם באמצעות הוראת שעה בחוק היסוד."
-      en: "A budget set for two years instead of one. Israel has used it under several governments, each time through a temporary amendment to the Basic Law."
-      ar: "ميزانية تُحدَّد لسنتين بدلًا من سنة واحدة. استخدمتها عدة حكومات في إسرائيل، في كل مرة عبر تعديل مؤقت لقانون الأساس."
-      ru: "Бюджет, принимаемый на два года вместо одного. В Израиле к нему прибегали несколько правительств, каждый раз через временную поправку к Основному закону."
-      es: "Un presupuesto fijado para dos años en lugar de uno. Israel lo ha usado con varios gobiernos, cada vez mediante una enmienda temporal a la Ley Básica."
-      fr: "Un budget fixé pour deux ans au lieu d’un. Israël y a eu recours sous plusieurs gouvernements, chaque fois par un amendement temporaire à la Loi fondamentale."
+      en: "A budget set for two years instead of one. Israel has used it under several governments, each time through a temporary provision in a Basic Law."
+      ar: "ميزانية تُحدَّد لسنتين بدلًا من سنة واحدة. استخدمتها عدة حكومات في إسرائيل، في كل مرة عبر حكم مؤقت في قانون أساس."
+      ru: "Бюджет, принимаемый на два года вместо одного. В Израиле к нему прибегали несколько правительств, каждый раз через временное положение в Основном законе."
+      es: "Un presupuesto fijado para dos años en lugar de uno. Israel lo ha usado con varios gobiernos, cada vez mediante una disposición temporal en una Ley Básica."
+      fr: "Un budget fixé pour deux ans au lieu d’un. Israël y a eu recours sous plusieurs gouvernements, chaque fois par une disposition temporaire dans une Loi fondamentale."
     sourceUrl: "https://fs.knesset.gov.il/globaldocs/MMM/ff526b58-e9f7-e411-80c8-00155d010977/2_ff526b58-e9f7-e411-80c8-00155d010977_11_10372.pdf"
 
   # ---------- government ----------
@@ -293,12 +293,12 @@ terms:
   - category: government
     term: { he: "קואליציה", en: "Coalition", ar: "الائتلاف", ru: "Коалиция", es: Coalición, fr: Coalition }
     def:
-      he: "הסיעות שחתמו על הסכמים המחייבים אותן לתמוך בממשלה בכנסת. בדרך כלל יש להן יחד רוב — 61 חברי כנסת או יותר מתוך 120."
-      en: "The factions that have signed agreements obliging them to support the government in the Knesset. Usually together they hold a majority — 61 or more of the 120 MKs."
-      ar: "الكتل التي وقّعت اتفاقات تُلزمها بدعم الحكومة في الكنيست. وعادةً ما تملك معًا أغلبية — 61 عضو كنيست أو أكثر من أصل 120."
-      ru: "Фракции, подписавшие соглашения, которые обязывают их поддерживать правительство в Кнессете. Обычно вместе у них большинство — 61 депутат или больше из 120."
-      es: "Las facciones que han firmado acuerdos que las obligan a apoyar al Gobierno en la Knéset. Normalmente suman juntas una mayoría: 61 o más de los 120 diputados."
-      fr: "Les factions qui ont signé des accords les obligeant à soutenir le gouvernement à la Knesset. En général, elles détiennent ensemble une majorité — 61 députés ou plus sur 120."
+      he: "הסיעות שחתמו על הסכמים המחייבים אותן לתמוך בממשלה בכנסת."
+      en: "The factions that have signed agreements obliging them to support the government in the Knesset."
+      ar: "الكتل التي وقّعت اتفاقات تُلزمها بدعم الحكومة في الكنيست."
+      ru: "Фракции, подписавшие соглашения, которые обязывают их поддерживать правительство в Кнессете."
+      es: "Las facciones que han firmado acuerdos que las obligan a apoyar al Gobierno en la Knéset."
+      fr: "Les factions qui ont signé des accords les obligeant à soutenir le gouvernement à la Knesset."
     sourceUrl: "https://main.knesset.gov.il/About/Lexicon/Pages/coalition.aspx"
   - category: government
     term: { he: "אופוזיציה", en: "Opposition", ar: "المعارضة", ru: "Оппозиция", es: Oposición, fr: Opposition }

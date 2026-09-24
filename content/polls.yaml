@@ -74,6 +74,65 @@ externalAverages:
       reservists: 3.6
       blue-white: 1
 polls:
+  - id: 2026-09-23-channel13-consortium
+    published: "2026-09-23"
+    outlet: { he: "חדשות 13", en: "Channel 13", ar: "القناة 13", ru: "13-й канал", es: "Canal 13", fr: "Chaîne 13" }
+    instituteId: hamadad-consortium
+    institute: { he: "המדד, סטט-נט, פרויקט המדגם ואסקריא", en: "HaMadad, Stat-Net, Midgam Project and Askaria", ar: "هامداد وستات-نت ومشروع مدغام وأسكاريا", ru: "«ХаМадад», Stat-Net, Midgam Project и Askaria", es: "HaMadad, Stat-Net, Midgam Project y Askaria", fr: "HaMadad, Stat-Net, Midgam Project et Askaria" }
+    sample: 1503
+    marginOfError: 2.5
+    seats:
+      yashar: 22
+      likud: 18
+      together: 11
+      democrats: 11
+      joint-list: 8
+      yisrael-beiteinu: 8
+      utj: 8
+      otzma: 7
+      shas: 7
+      rz-zehut: 6
+      amkha: 5
+      raam: 5
+      reservists: 4
+    belowThreshold: [haredi-public, blue-white]
+    belowThresholdNote: "הציבור החרדי — מתחת לאחוז החסימה; כחול לבן — פחות מאחוז מקולות הבוחרים (אחוזים לא פורטו)"
+    blocs:
+      - { label: { he: "גוש האופוזיציה", en: "Opposition bloc", ar: "كتلة المعارضة", ru: "Оппозиционный блок", es: "Bloque de oposición", fr: "Bloc d’opposition" }, seats: 52 }
+      - { label: { he: "הקואליציה", en: "The coalition", ar: "الائتلاف", ru: "Коалиция", es: "La coalición", fr: "La coalition" }, seats: 51 }
+      - { label: { he: "המפלגות הערביות", en: "Arab parties", ar: "الأحزاب العربية", ru: "Арабские партии", es: "Partidos árabes", fr: "Partis arabes" }, seats: 13 }
+      - { label: { he: "הנדל וזליכה", en: "Hendel and Zelekha", ar: "هندل وزليخا", ru: "Хендель и Зелеха", es: "Hendel y Zelekha", fr: "Hendel et Zelekha" }, seats: 4 }
+    verification: "all 13 figures, the 2 below-threshold lists and 4 blocs in the article text (23.09.26 20:47; JSON-LD articleBody read 24 Sep in the Browser pane); methodology per the closing line: המדד (רוזנר, סלפקוב) with סטט-נט (מקלדה), פרויקט המדגם (איילון), אסקריא (דרור), Hive, statistical advice Prof. David Steinberg; 1,503 respondents, ±2.5%; fieldwork dates not stated"
+    sources:
+      - { url: "https://13tv.co.il/item/news/politics/politics/hcp4l-905367553/", title: "סקר המנדטים של חדשות 13 (23.9.2026)", publisher: "חדשות 13" }
+  - id: 2026-09-23-channel14-nextdata
+    published: "2026-09-23"
+    fieldwork: { from: "2026-09-23", to: "2026-09-23" }
+    outlet: { he: "חדשות 14", en: "Channel 14", ar: "القناة 14", ru: "14-й канал", es: "Canal 14", fr: "Chaîne 14" }
+    instituteId: next-data
+    institute: { he: "NEXT DATA", en: "Next Data", ar: "Next Data", ru: "Next Data", es: "Next Data", fr: "Next Data" }
+    sample: 647
+    seats:
+      likud: 32
+      yashar: 22
+      shas: 11
+      democrats: 9
+      together: 7
+      utj: 7
+      rz-zehut: 7
+      joint-list: 7
+      yisrael-beiteinu: 7
+      otzma: 6
+      raam: 5
+    belowThreshold: [reservists, amkha, haredi-public, blue-white]
+    belowThresholdNote: "המילואימניקים הכלכלית 2.2%, עמך ישראל 1.9%, הציבור החרדי 0.5%, כחול לבן 0.3%, נעם 0.1%"
+    blocs:
+      - { label: { he: "גוש הימין", en: "Right bloc", ar: "كتلة اليمين", ru: "Правый блок", es: "Bloque de derecha", fr: "Bloc de droite" }, seats: 63 }
+      - { label: { he: "גוש השמאל", en: "Left bloc", ar: "كتلة اليسار", ru: "Левый блок", es: "Bloque de izquierda", fr: "Bloc de gauche" }, seats: 45 }
+      - { label: { he: "המפלגות הערביות", en: "Arab parties", ar: "الأحزاب العربية", ru: "Арабские партии", es: "Partidos árabes", fr: "Partis arabes" }, seats: 12 }
+    verification: "all 11 figures, the 5 below-threshold shares and 3 blocs in the article text (23.09.26 20:48, read 24 Sep in the Browser pane); methodology per the article's disclaimer: NEXT DATA, 647 adults, conducted 23 Sep 2026, analysis שלמה פילבר; no margin of error stated"
+    sources:
+      - { url: "https://www.c14.co.il/article/1711606", title: "סקר המנדטים של חדשות 14 (23.9.2026)", publisher: "ערוץ 14" }
   - id: 2026-09-22-n12-midgam
     published: "2026-09-22"
     fieldwork: { from: "2026-09-22", to: "2026-09-22" }

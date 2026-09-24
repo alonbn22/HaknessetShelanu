@@ -41,12 +41,15 @@
 # about what the lists want, not whom they crown. Research notes for the
 # 20 Sep statements: scratchpad review/compass/*.yaml (one file per statement,
 # with what was tried for every list left out). 22 Sep 2026: a gaps search
-# added seven cells (Yashar on settlements, religion and state, and civil
-# partnership; the Democrats on a Palestinian state; Ra'am on civil
-# partnership; the Joint List on a climate law; Amkha on Arab parties in a
-# coalition). Three more for Yashar rested only on a candidate's votes cast
-# while in another party and were left out (scratchpad compass/gaps.yaml).
-lastReviewed: "2026-09-22"
+# added seven cells; a fresh-context review on 24 Sep removed Yashar's
+# civil-partnership cell (its platform line is about immigrants' personal
+# status, not same-sex couples) and set Amkha's Arab-parties cell to -1 (the
+# quote is about Mansour Abbas, not Arab parties in general). Kept: Yashar on
+# settlements and on religion and state; the Democrats on a Palestinian state;
+# Ra'am on civil partnership; the Joint List on a climate law. Three more for
+# Yashar rested only on a candidate's votes cast while in another party and
+# were left out (scratchpad compass/gaps.yaml).
+lastReviewed: "2026-09-24"
 questions:
   - id: palestinian-state
     topic: security
@@ -413,12 +416,12 @@ questions:
         basis: statement
         source: { url: "https://www.israelhayom.co.il/magazine/hashavua/article/21288643", title: "איזנקוט חושף את החזון המדיני: \"שתי מדינות אחרי 7.10 - מחשבה הזויה\" (27.8.2026)", publisher: "ישראל היום" }
         quote:
-          he: "נשאל: \"אתה תומך בהתיישבות בשטחי C. האם נכון היה להוציא את מכרזי הבנייה לשטח E1?\" — \"לא כעת. זו טעות שעולה לנו במחיר בינלאומי\"; לדבריו פעילות שני השרים ואירועי האלימות של מתנחלים נגד פלסטינים \"מסכנים את ההתיישבות כולה\". על ריבונות לא דיבר."
-          en: "Asked: \"You support settlement in Area C. Was it right to issue the building tenders for E1?\" — \"Not now. It is a mistake that costs us an international price\"; the two ministers' conduct and settler violence against Palestinians \"endanger the entire settlement enterprise.\" He did not address sovereignty."
-          ar: "سُئل: «أنت تؤيد الاستيطان في المناطق (ج). هل كان صحيحًا طرح مناقصات البناء في منطقة E1؟» — «ليس الآن. هذا خطأ يكلّفنا ثمنًا دوليًا»؛ وقال إن نشاط الوزيرين وأحداث عنف المستوطنين ضد الفلسطينيين «تعرّض الاستيطان كله للخطر». ولم يتحدث عن السيادة."
-          ru: "На вопрос «Вы поддерживаете поселения в зоне C. Правильно ли было объявлять тендеры на строительство в E1?» — «Не сейчас. Это ошибка, за которую мы платим международную цену»; по его словам, действия двух министров и насилие поселенцев против палестинцев «ставят под угрозу все поселения». О суверенитете он не говорил."
-          es: "Preguntado: «Usted apoya los asentamientos en el Área C. ¿Fue correcto sacar a concurso la construcción en E1?» — «Ahora no. Es un error que nos cuesta un precio internacional»; la actuación de los dos ministros y la violencia de colonos contra palestinos «ponen en peligro todos los asentamientos». No se refirió a la soberanía."
-          fr: "À la question « Vous soutenez l’implantation en zone C. Fallait-il lancer les appels d’offres de construction en E1 ? » — « Pas maintenant. C’est une erreur qui nous coûte un prix international » ; l’action des deux ministres et la violence de colons contre des Palestiniens « mettent en danger toutes les implantations ». Il n’a pas parlé de souveraineté."
+          he: "איזנקוט על מכרזי הבנייה ב-E1: \"לא כעת. זו טעות שעולה לנו במחיר בינלאומי\"; לדבריו פעילות שני השרים ואירועי האלימות של מתנחלים נגד פלסטינים \"מסכנים את ההתיישבות כולה\" (השאלה פתחה בקביעה \"אתה תומך בהתיישבות בשטחי C\"). על החלת ריבונות ישראלית לא דיבר (את המילה \"ריבונות\" אמר על צה\"ל, שלדבריו איבד את ריבונותו באזור)."
+          en: "Eisenkot on the E1 building tenders: \"Not now. It is a mistake that costs us an international price\"; the two ministers' conduct and settler violence against Palestinians \"endanger the entire settlement enterprise\" (the question opened with \"You support settlement in Area C\"). He did not address applying Israeli sovereignty (he used the word only about the IDF, which he said had lost its sovereignty in the area)."
+          ar: "آيزنكوت عن مناقصات البناء في منطقة E1: «ليس الآن. هذا خطأ يكلّفنا ثمنًا دوليًا»؛ وقال إن نشاط الوزيرين وأحداث عنف المستوطنين ضد الفلسطينيين «تعرّض الاستيطان كله للخطر» (افتُتح السؤال بعبارة «أنت تؤيد الاستيطان في المناطق (ج)»). ولم يتحدث عن فرض السيادة الإسرائيلية (استخدم كلمة «السيادة» فقط عن الجيش الإسرائيلي، الذي قال إنه فقد سيادته في المنطقة)."
+          ru: "Айзенкот о тендерах на строительство в E1: «Не сейчас. Это ошибка, за которую мы платим международную цену»; по его словам, действия двух министров и насилие поселенцев против палестинцев «ставят под угрозу все поселения» (вопрос начинался с утверждения «Вы поддерживаете поселения в зоне C»). О распространении израильского суверенитета он не говорил (слово «суверенитет» он употребил только применительно к ЦАХАЛу, который, по его словам, утратил суверенитет в этом районе)."
+          es: "Eisenkot sobre los concursos de construcción en E1: «Ahora no. Es un error que nos cuesta un precio internacional»; la actuación de los dos ministros y la violencia de colonos contra palestinos «ponen en peligro todos los asentamientos» (la pregunta comenzaba con «Usted apoya los asentamientos en el Área C»). No se refirió a aplicar la soberanía israelí (usó la palabra solo sobre el ejército, que según él perdió su soberanía en la zona)."
+          fr: "Eisenkot sur les appels d’offres de construction en E1 : « Pas maintenant. C’est une erreur qui nous coûte un prix international » ; l’action des deux ministres et la violence de colons contre des Palestiniens « mettent en danger toutes les implantations » (la question commençait par « Vous soutenez l’implantation en zone C »). Il n’a pas parlé d’appliquer la souveraineté israélienne (il n’a employé le mot qu’à propos de Tsahal, qui selon lui a perdu sa souveraineté dans la zone)."
   - id: econ-welfare
     topic: economy
     lean: left
@@ -1506,28 +1509,17 @@ questions:
           ru: "«В рамках сохранения статус-кво Государство Израиль должно признавать только браки и разводы по закону Моисея и Израиля» (вопрос был о признании гражданского брака и ЛГБТ-пар)."
           es: "«Como parte de la preservación del statu quo, el Estado de Israel debe reconocer únicamente el matrimonio y el divorcio según la ley religiosa judía» (se les preguntó por el reconocimiento del matrimonio civil y de las parejas LGBT)."
           fr: "« Dans le cadre du maintien du statu quo, l’État d’Israël ne doit reconnaître que le mariage et le divorce selon la loi religieuse juive » (la question portait sur la reconnaissance du mariage civil et des couples LGBT)."
-      yashar:
-        value: 1
-        basis: platform
-        source: { url: "https://yasharwitheisenkot.com/principles/aliyah-and-integration/", title: "ישר! לקליטת עלייה — \"מעמד אישי\"", publisher: "ישר!" }
-        quote:
-          he: "\"נפעל למיסוד זוגיות אזרחית בישראל\" (המצע אינו מזכיר זוגות בני אותו המין במפורש)"
-          en: "\"We will act to institutionalize civil partnership in Israel\" (the platform does not name same-sex couples explicitly)"
-          ar: "«سنعمل على مأسسة الشراكة المدنية في إسرائيل» (لا يذكر البرنامج الأزواج من الجنس نفسه صراحةً)"
-          ru: "«Мы будем добиваться закрепления гражданского союза в Израиле» (однополые пары в программе прямо не названы)"
-          es: "«Actuaremos para institucionalizar la unión civil en Israel» (el programa no menciona expresamente a las parejas del mismo sexo)"
-          fr: "« Nous agirons pour institutionnaliser l’union civile en Israël » (le programme ne mentionne pas explicitement les couples de même sexe)"
       raam:
         value: -2
         basis: statement
         source: { url: "https://www.inn.co.il/news/569074", title: "מנסור עבאס מתגאה בבלימת חקיקה לטובת הלהט\"ב — ריאיון לרדיו א-נאס (21.6.2022)", publisher: "ערוץ 7" }
         quote:
-          he: "עבאס: \"עמדתנו בנוגע ללהט\"ב הוא עמדה דתית (נגד להט\"ב), לא פוליטית, והיא עדיין איתנה\"; \"גישה זו (הלהט\"ב) פסולה על ידינו לחלוטין\" (ריאיון בערבית; המילים בסוגריים — הבהרות של ערוץ 7)"
-          en: "Abbas: \"Our position regarding LGBT is a religious position (against LGBT), not a political one, and it is still firm\"; \"this approach (LGBT) is utterly rejected by us\" (an interview in Arabic; the words in brackets are Arutz 7's clarifications)"
-          ar: "عباس: «موقفنا من مجتمع الميم موقف ديني (ضد مجتمع الميم)، وليس سياسيًا، ولا يزال ثابتًا»؛ «هذا النهج (مجتمع الميم) مرفوض عندنا تمامًا» (مقابلة بالعربية مع إذاعة الناس، مترجمة هنا عن الترجمة العبرية للقناة السابعة؛ الكلمات بين القوسين توضيحات من القناة السابعة)"
-          ru: "Аббас: «Наша позиция по ЛГБТ — религиозная (против ЛГБТ), а не политическая, и она по-прежнему твёрда»; «этот подход (ЛГБТ) полностью нами отвергается» (интервью на арабском; слова в скобках — пояснения 7-го канала)"
-          es: "Abbas: «Nuestra posición respecto al colectivo LGBT es religiosa (en contra del colectivo LGBT), no política, y sigue siendo firme»; «ese enfoque (LGBT) lo rechazamos por completo» (entrevista en árabe; las palabras entre paréntesis son aclaraciones de Arutz 7)"
-          fr: "Abbas : « Notre position sur les LGBT est une position religieuse (contre les LGBT), pas politique, et elle reste ferme » ; « cette approche (LGBT) est totalement rejetée par nous » (entretien en arabe ; les mots entre parenthèses sont des précisions d’Arutz 7)"
+          he: "עבאס: \"עמדתנו בנוגע ללהט\"ב הוא עמדה דתית (נגד להט\"ב), לא פוליטית, והיא עדיין איתנה\"; \"גישה זו (הלהט\"ב) פסולה על ידינו לחלוטין\" (ריאיון בערבית, בתרגום ערוץ 7, שבו מופיעות המילים שבסוגריים)"
+          en: "Abbas: \"Our position regarding LGBT is a religious position (against LGBT), not a political one, and it is still firm\"; \"this approach (LGBT) is utterly rejected by us\" (an interview in Arabic, in Arutz 7's Hebrew translation, which includes the words in brackets)"
+          ar: "عباس: «موقفنا من مجتمع الميم موقف ديني (ضد مجتمع الميم)، وليس سياسيًا، ولا يزال ثابتًا»؛ «هذا النهج (مجتمع الميم) مرفوض عندنا تمامًا» (مقابلة بالعربية مع إذاعة الناس، مترجمة هنا عن ترجمة القناة السابعة العبرية التي ترد فيها الكلمات بين القوسين)"
+          ru: "Аббас: «Наша позиция по ЛГБТ — религиозная (против ЛГБТ), а не политическая, и она по-прежнему твёрда»; «этот подход (ЛГБТ) полностью нами отвергается» (интервью на арабском в переводе 7-го канала на иврит, где и приведены слова в скобках)"
+          es: "Abbas: «Nuestra posición respecto al colectivo LGBT es religiosa (en contra del colectivo LGBT), no política, y sigue siendo firme»; «ese enfoque (LGBT) lo rechazamos por completo» (entrevista en árabe, en la traducción al hebreo de Arutz 7, que incluye las palabras entre paréntesis)"
+          fr: "Abbas : « Notre position sur les LGBT est une position religieuse (contre les LGBT), pas politique, et elle reste ferme » ; « cette approche (LGBT) est totalement rejetée par nous » (entretien en arabe, dans la traduction en hébreu d’Arutz 7, qui comporte les mots entre parenthèses)"
   - id: judicial-reform
     topic: institutions
     lean: right
@@ -2217,16 +2209,16 @@ questions:
           es: "¡Yashar!: los socios de coalición deben cumplir «los tres principios fundamentales bien conocidos por el público» — «el reconocimiento de Israel como Estado judío y democrático», «la aceptación de los valores de la Declaración de Independencia», «el servicio militar o civil para todos» y «el reconocimiento de Hamás como organización terrorista» — sin decir si los partidos árabes los cumplen"
           fr: "Yashar! : les partenaires de coalition doivent respecter « les trois principes fondamentaux bien connus du public » — « la reconnaissance d’Israël comme État juif et démocratique », « l’acceptation des valeurs de la Déclaration d’indépendance », « un service militaire ou civil pour tous » et « la reconnaissance du Hamas comme organisation terroriste » — sans dire si les partis arabes y satisfont"
       amkha:
-        value: -2
+        value: -1
         basis: statement
         source: { url: "https://www.israelhayom.co.il/israelnow/article/21282312", title: "עופר וינטר נגד מנסור עבאס: \"אסור שיוכל להיבחר לכנסת\" (26.8.2026)", publisher: "ישראל היום" }
         quote:
-          he: "וינטר על מנסור עבאס: \"מי שלא מכיר במדינת ישראל כמדינה יהודית - יכול ללכת לאיזו מדינה ערבית שהוא רוצה\"; אדם כזה \"אסור שיוכל להיבחר לכנסת ישראל\""
-          en: "Winter on Mansour Abbas: \"Whoever does not recognize the State of Israel as a Jewish state can go to whatever Arab country he wants\"; such a person \"must not be able to be elected to the Knesset of Israel\""
-          ar: "فينتر عن منصور عباس: «من لا يعترف بدولة إسرائيل دولةً يهودية يمكنه أن يذهب إلى أي دولة عربية يريدها»؛ ومثل هذا الشخص «يجب ألّا يكون بإمكانه أن يُنتخب لكنيست إسرائيل»"
-          ru: "Винтер о Мансуре Аббасе: «Тот, кто не признаёт Государство Израиль еврейским государством, может отправляться в любую арабскую страну, какую пожелает»; такой человек «не должен иметь возможности быть избранным в Кнессет Израиля»"
-          es: "Winter sobre Mansour Abbas: «Quien no reconozca al Estado de Israel como Estado judío puede irse al país árabe que quiera»; una persona así «no debe poder ser elegida para la Knéset de Israel»"
-          fr: "Winter à propos de Mansour Abbas : « Celui qui ne reconnaît pas l’État d’Israël comme État juif peut aller dans le pays arabe de son choix » ; une telle personne « ne doit pas pouvoir être élue à la Knesset d’Israël »"
+          he: "וינטר על מנסור עבאס: \"מי שלא מכיר במדינת ישראל כמדינה יהודית - יכול ללכת לאיזו מדינה ערבית שהוא רוצה\"; אדם כזה \"אסור שיוכל להיבחר לכנסת ישראל\" (הדברים נאמרו על מנסור עבאס; וינטר לא דיבר על מפלגות ערביות בכלל או על שותפות בקואליציה)"
+          en: "Winter on Mansour Abbas: \"Whoever does not recognize the State of Israel as a Jewish state can go to whatever Arab country he wants\"; such a person \"must not be able to be elected to the Knesset of Israel\" (said about Mansour Abbas; Winter did not speak about Arab parties in general or about coalition partnership)"
+          ar: "فينتر عن منصور عباس: «من لا يعترف بدولة إسرائيل دولةً يهودية يمكنه أن يذهب إلى أي دولة عربية يريدها»؛ ومثل هذا الشخص «يجب ألّا يكون بإمكانه أن يُنتخب لكنيست إسرائيل» (قيلت هذه الكلمات عن منصور عباس؛ ولم يتحدث فينتر عن الأحزاب العربية عمومًا ولا عن الشراكة في ائتلاف)"
+          ru: "Винтер о Мансуре Аббасе: «Тот, кто не признаёт Государство Израиль еврейским государством, может отправляться в любую арабскую страну, какую пожелает»; такой человек «не должен иметь возможности быть избранным в Кнессет Израиля» (сказано о Мансуре Аббасе; об арабских партиях в целом и об участии в коалиции Винтер не говорил)"
+          es: "Winter sobre Mansour Abbas: «Quien no reconozca al Estado de Israel como Estado judío puede irse al país árabe que quiera»; una persona así «no debe poder ser elegida para la Knéset de Israel» (dicho sobre Mansour Abbas; Winter no habló de los partidos árabes en general ni de su participación en una coalición)"
+          fr: "Winter à propos de Mansour Abbas : « Celui qui ne reconnaît pas l’État d’Israël comme État juif peut aller dans le pays arabe de son choix » ; une telle personne « ne doit pas pouvoir être élue à la Knesset d’Israël » (propos tenus sur Mansour Abbas ; Winter n’a pas parlé des partis arabes en général ni d’une participation à une coalition)"
 
   - id: gaza-emigration
     topic: security

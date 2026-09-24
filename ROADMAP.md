@@ -140,8 +140,8 @@ socio-economic indices by municipality (data.gov.il) for context.
   each ruling, from the court's or the outlet's own text.
 - **Spanish/French data text**: `npm run warm -- es fr` now works (es/fr
   added, stops itself when gtx throttles). 24 Sep: 1,712 es strings cached
-  before gtx answered 429 — the uncommitted `data/knesset.db` holds them.
-  Re-run when gtx recovers, `npm run db:clean`, then commit the DB alone.
+  before gtx answered 429 (committed in `31818d3`); fr has none yet. Re-run
+  when gtx recovers, `npm run db:clean`, then commit the DB alone.
 - **Approved ballot letters** once the CEC publishes its approval notices
   (27 Sep 2026): flip `lettersStatus: requested` → `approved` on each
   `cec:` block in `content/election.yaml` and on `submittedLists`, and drop

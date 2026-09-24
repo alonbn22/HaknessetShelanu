@@ -87,6 +87,7 @@ async function warmLocale(locale: Loc, all: string[]) {
 
   let i = 0;
   let ok = 0;
+  let fails = 0; // in a row — gtx answers 429 for hours once it throttles
   const worker = async () => {
     while (i < missing.length) {
       const src = missing[i++];
@@ -101,6 +102,10 @@ async function warmLocale(locale: Loc, all: string[]) {
           .onConflictDoUpdate({ target: schema.translations.sourceHe, set: { [field]: tr } })
           .run();
         ok++;
+        fails = 0;
+      } else if (++fails >= 50) {
+        console.log(`  [${locale}] 50 failures in a row — the endpoint is throttling; stopping (re-run later, it resumes)`);
+        i = missing.length;
       }
       if (i % 200 === 0) console.log(`  [${locale}] ${i}/${missing.length} (${ok} translated)`);
       await sleep(40);

@@ -69,12 +69,13 @@ export default async function ListPage({ params }: { params: Promise<{ slug: str
             <Image
               src={list.logo.src}
               alt={t("election.logoAlt", { name: partyText(list.name, locale) })}
-              width={72}
-              height={72}
+              width={220}
+              height={64}
               unoptimized
-              className="shrink-0 rounded-lg object-contain p-1"
-              // A logo keeps its white plate in both themes: brand marks are drawn for white.
-              style={{ width: 72, height: 72, backgroundColor: "#fff" }}
+              className="shrink-0 rounded-lg object-contain p-2"
+              // Most marks are wide wordmarks: fixed height, natural width. A logo keeps
+              // its white plate in both themes: brand marks are drawn for white.
+              style={{ height: 64, width: "auto", maxWidth: 220, backgroundColor: "#fff" }}
             />
           ) : (
             <PartyEmblem factionId={list.factionId ?? 0} nameHe={list.name.he} color={color} size={72} alt={partyText(list.name, locale)} />

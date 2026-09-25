@@ -399,6 +399,9 @@ parties:
       - { he: "משה בנימין פרץ" }
     # The list's own site and its first headlined commitments, read there 24–25 Sep 2026.
     website: "https://www.likud.org.il/"
+    # The list's own mark as hosted on Wikimedia Commons (a public-domain text logo),
+    # compared by eye with what the list itself shows now (25 Sep 2026).
+    logo: { src: "https://upload.wikimedia.org/wikipedia/commons/5/50/Likud_Logo.svg", source: { url: "https://commons.wikimedia.org/wiki/File:Likud_Logo.svg", title: "File:Likud_Logo.svg", publisher: "Wikimedia Commons" } }
     promises:
       note:
         he: "הליכוד לא פרסם מצע לבחירות 2026; אלה שלוש המטרות הראשונות בחוקת התנועה (נוסח יולי 2015)."
@@ -476,6 +479,9 @@ parties:
       - { he: "יסמין פרידמן", personId: 30783 }
     # The list's own site and its first headlined commitments, read there 24–25 Sep 2026.
     website: "https://be-yahad.org.il/"
+    # The list's own mark as hosted on Wikimedia Commons (a public-domain text logo),
+    # compared by eye with what the list itself shows now (25 Sep 2026).
+    logo: { src: "https://upload.wikimedia.org/wikipedia/commons/b/bb/Together_Israel_logo_new.svg", source: { url: "https://commons.wikimedia.org/wiki/File:Together_Israel_logo_new.svg", title: "File:Together_Israel_logo_new.svg", publisher: "Wikimedia Commons" } }
     promises:
       items:
         - he: "הורדת מחיר סל הקנייה בסופר ב-30% תוך שלוש שנים"
@@ -558,6 +564,9 @@ parties:
       - { he: "טלי מולנר" }
     # The list's own site and its first headlined commitments, read there 24–25 Sep 2026.
     website: "https://yasharwitheisenkot.com/"
+    # The list's own mark as hosted on Wikimedia Commons (a public-domain text logo),
+    # compared by eye with what the list itself shows now (25 Sep 2026).
+    logo: { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Yashar2025.png/500px-Yashar2025.png", source: { url: "https://commons.wikimedia.org/wiki/File:Yashar2025.png", title: "File:Yashar2025.png", publisher: "Wikimedia Commons" } }
     promises:
       items:
         - he: "ועדת חקירה ממלכתית לטבח 7 באוקטובר, לעשור שקדם לו ולניהול המלחמה"
@@ -624,6 +633,9 @@ parties:
       - { he: "תומר אביטל" }
     # The list's own site and its first headlined commitments, read there 24–25 Sep 2026.
     website: "https://democrats.org.il/"
+    # The list's own mark as hosted on Wikimedia Commons (a public-domain text logo),
+    # compared by eye with what the list itself shows now (25 Sep 2026).
+    logo: { src: "https://upload.wikimedia.org/wikipedia/commons/b/b5/The_Democrats_led_by_Yair_Golan.svg", source: { url: "https://commons.wikimedia.org/wiki/File:The_Democrats_led_by_Yair_Golan.svg", title: "File:The_Democrats_led_by_Yair_Golan.svg", publisher: "Wikimedia Commons" } }
     promises:
       note:
         he: "ההתחייבות הראשונה בכל אחת משלוש התוכניות הראשונות במצע."
@@ -692,6 +704,9 @@ parties:
       - { he: "מלכה יהודית אוליאל" }
     # The list's own site and its first headlined commitments, read there 24–25 Sep 2026.
     website: "https://kachollavan.org.il/"
+    # The list's own mark as hosted on Wikimedia Commons (a public-domain text logo),
+    # compared by eye with what the list itself shows now (25 Sep 2026).
+    logo: { src: "https://upload.wikimedia.org/wikipedia/commons/8/8b/Blue_and_White_logo_2021.svg", source: { url: "https://commons.wikimedia.org/wiki/File:Blue_and_White_logo_2021.svg", title: "File:Blue_and_White_logo_2021.svg", publisher: "Wikimedia Commons" } }
     promises:
       items:
         - he: "ישראל מדינה יהודית ודמוקרטית, מדינת הלאום של העם היהודי"
@@ -816,6 +831,9 @@ parties:
       - { he: "אוריאל בוסו", personId: 30765 }
       - { he: "יוסף טייב", personId: 30770 }
       - { he: "יונתן משריקי" }
+    # The list's own mark as hosted on Wikimedia Commons (a public-domain text logo),
+    # compared by eye with what the list itself shows now (25 Sep 2026).
+    logo: { src: "https://upload.wikimedia.org/wikipedia/commons/d/d6/Shas_logo.png", source: { url: "https://commons.wikimedia.org/wiki/File:Shas_logo.png", title: "File:Shas_logo.png", publisher: "Wikimedia Commons" } }
     sources:
       - { url: "https://www.gov.il/he/pages/shas_list19", title: "התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ\"ל — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
@@ -892,6 +910,9 @@ parties:
       - { he: "עומר פציניאש וולדמן" }
     # The list's own site and its first headlined commitments, read there 24–25 Sep 2026.
     website: "https://zionutdatit.org.il/"
+    # The list's own mark as hosted on Wikimedia Commons (a public-domain text logo),
+    # compared by eye with what the list itself shows now (25 Sep 2026).
+    logo: { src: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Religious_Zionist_Party_logo_2026.png", source: { url: "https://commons.wikimedia.org/wiki/File:Religious_Zionist_Party_logo_2026.png", title: "File:Religious_Zionist_Party_logo_2026.png", publisher: "Wikimedia Commons" } }
     promises:
       items:
         - he: "20 יישובים חדשים בגליל ו-20 בנגב, ועוד מיליון תושבים יהודים שם"
@@ -960,6 +981,9 @@ parties:
       - { he: "יניב בדלוב" }
     # The list's own site and its first headlined commitments, read there 24–25 Sep 2026.
     website: "https://ozma-yeudit.co.il/"
+    # The list's own mark as hosted on Wikimedia Commons (a public-domain text logo),
+    # compared by eye with what the list itself shows now (25 Sep 2026).
+    logo: { src: "https://upload.wikimedia.org/wikipedia/commons/c/c2/Otzma_Yehudit_2021_logo.svg", source: { url: "https://commons.wikimedia.org/wiki/File:Otzma_Yehudit_2021_logo.svg", title: "File:Otzma_Yehudit_2021_logo.svg", publisher: "Wikimedia Commons" } }
     promises:
       note:
         he: "מתוך הודעת המפלגה מ-22 בספטמבר 2026: שלושת הסעיפים הראשונים בתוכנית הביטחון."
@@ -1026,6 +1050,9 @@ parties:
       - { he: "עבד אל כרים מסרי" }
       - { he: "עבד אל כרים עזאם" }
       - { he: "אבראהים אבו לבן" }
+    # The list's own mark as hosted on Wikimedia Commons (a public-domain text logo),
+    # compared by eye with what the list itself shows now (25 Sep 2026).
+    logo: { src: "https://upload.wikimedia.org/wikipedia/commons/3/30/Raam_logo_2021.svg", source: { url: "https://commons.wikimedia.org/wiki/File:Raam_logo_2021.svg", title: "File:Raam_logo_2021.svg", publisher: "Wikimedia Commons" } }
     sources:
       - { url: "https://www.timesofisrael.com/election-panel-votes-to-bar-balad-chief-abu-shehadeh-over-alleged-support-for-terror/", title: "Election panel votes on the Ra'am and Joint List slates and on Abu Shehadeh and Cassif (23 Sep 2026)", publisher: "The Times of Israel" }
       - { url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-909454", title: "Central Elections Committee decision on Ra'am and the Joint List (23 Sep 2026)", publisher: "The Jerusalem Post" }
@@ -1144,6 +1171,9 @@ parties:
       - { he: "רונן בודנרו" }
     # The list's own site and its first headlined commitments, read there 24–25 Sep 2026.
     website: "https://amchaisrael.co.il/"
+    # The list's own mark as hosted on Wikimedia Commons (a public-domain text logo),
+    # compared by eye with what the list itself shows now (25 Sep 2026).
+    logo: { src: "https://upload.wikimedia.org/wikipedia/commons/5/59/Amcha_Yisrael.svg", source: { url: "https://commons.wikimedia.org/wiki/File:Amcha_Yisrael.svg", title: "File:Amcha_Yisrael.svg", publisher: "Wikimedia Commons" } }
     sources:
       - { url: "https://www.gov.il/he/pages/amcha-israel_list6", title: "עמך ישראל — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }

@@ -167,6 +167,11 @@ export default async function ListPage({ params }: { params: Promise<{ slug: str
         <h2 className="text-xl font-semibold">{t("election.promises")}</h2>
         {list.promises ? (
           <>
+            {list.promises.note && (
+              <p className="text-sm text-muted" {...partyTextAttrs(list.promises.note, locale)}>
+                {partyText(list.promises.note, locale)}
+              </p>
+            )}
             <ul className="list-disc space-y-1 ps-5 leading-relaxed">
               {list.promises.items.map((it, i) => (
                 <li key={i} {...partyTextAttrs(it, locale)}>
@@ -174,7 +179,7 @@ export default async function ListPage({ params }: { params: Promise<{ slug: str
                 </li>
               ))}
             </ul>
-            <SourceLinks sources={[list.promises.source]} label={t("common.source")} />
+            <SourceLinks sources={list.promises.sources} label={t("common.source")} />
           </>
         ) : (
           <p className="text-muted">{t("election.promisesNone")}</p>

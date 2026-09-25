@@ -221,7 +221,7 @@ questions:
       reservists:
         value: -2
         basis: platform
-        source: { url: "https://www.themiluimnikim.org.il/platform/", title: "עיקרי המצע — המילואימניקים והכלכלית", publisher: "המילואימניקים" }
+        source: { url: "https://www.themiluimnikim.org.il/platform/", title: "עקרונות — המילואימניקים (עיקרי המצע)", publisher: "המילואימניקים" }
         quote:
           he: "\"נפעל כדי למנוע מדינה פלסטינית בצירים הדיפלומטיים והמדיניים, לצד יצירת מציאות של הכרעה בשטח.\""
           en: "\"We will act to prevent a Palestinian state on the diplomatic and political tracks, alongside creating a decisive reality on the ground.\""
@@ -403,7 +403,7 @@ questions:
       reservists:
         value: 1
         basis: platform
-        source: { url: "https://www.themiluimnikim.org.il/platform/", title: "עיקרי המצע — המילואימניקים והכלכלית", publisher: "המילואימניקים" }
+        source: { url: "https://www.themiluimnikim.org.il/platform/", title: "עקרונות — המילואימניקים (עיקרי המצע)", publisher: "המילואימניקים" }
         quote:
           he: "\"ריבונות דרך מעשים – חיזוק ההתיישבות ביהודה ושומרון והכרעה על קרקעות בשטחי C חשובה והכרחית – נדבך קריטי מהביטחון הלאומי.\""
           en: "\"Sovereignty through deeds — strengthening settlement in Judea and Samaria and deciding on lands in Area C is important and necessary, a critical layer of national security.\""
@@ -597,7 +597,7 @@ questions:
       reservists:
         value: 2
         basis: platform
-        source: { url: "https://www.themiluimnikim.org.il/platform/", title: "עיקרי המצע — המילואימניקים והכלכלית (פרק כלכלה)", publisher: "המילואימניקים" }
+        source: { url: "https://www.themiluimnikim.org.il/platform/", title: "עקרונות — המילואימניקים (עיקרי המצע, פרק כלכלה)", publisher: "המילואימניקים" }
         quote:
           he: "\"התעצמות מדינת ישראל מבוססת על כלכלה חופשית… עידוד תחרות ושוק חופשי הם הבסיס לכך… פתיחת חסמים… כדי להקל על עשיית עסקים בישראל… מאבק במונופולים.\""
           en: "\"Israel's strength rests on a free economy… encouraging competition and a free market is the basis… removing barriers… to make doing business in Israel easier… fighting monopolies.\""
@@ -1013,7 +1013,7 @@ questions:
       reservists:
         value: -2
         basis: platform
-        source: { url: "https://www.themiluimnikim.org.il/platform/", title: "עיקרי המצע — המילואימניקים והכלכלית", publisher: "המילואימניקים" }
+        source: { url: "https://www.themiluimnikim.org.il/platform/", title: "עקרונות — המילואימניקים (עיקרי המצע)", publisher: "המילואימניקים" }
         quote:
           he: "\"חוק גיוס לכולם: כל אזרח ישראלי, יהודי, ערבי, חילוני חרדי צריך לעשות משהו למען המדינה… מי שלא ישרת – לא יקבל כלום מהמדינה.\""
           en: "\"A draft law for all: every Israeli citizen, Jewish, Arab, secular, haredi, must do something for the state… whoever does not serve gets nothing from the state.\""
@@ -1712,7 +1712,7 @@ questions:
       reservists:
         value: 1
         basis: platform
-        source: { url: "https://www.themiluimnikim.org.il/platform/", title: "עיקרי המצע — המילואימניקים והכלכלית", publisher: "המילואימניקים" }
+        source: { url: "https://www.themiluimnikim.org.il/platform/", title: "עקרונות — המילואימניקים (עיקרי המצע)", publisher: "המילואימניקים" }
         quote:
           he: "\"רפורמה משפטית: ביקורת חיצונית ולא תלויה על מערכת המשפט. פיצול תפקידי היועמ\"ש. תיקון האיזונים והבלמים בין הרשויות… נפעל לקדם תיקונים במערכת המשפט תחת הסכמות רחבות.\""
           en: "\"Judicial reform: external, independent oversight of the justice system; splitting the attorney general's roles; correcting the checks and balances… we will advance corrections under broad agreement.\""
@@ -2145,7 +2145,7 @@ questions:
       reservists:
         value: -2
         basis: platform
-        source: { url: "https://www.themiluimnikim.org.il/platform/", title: "עיקרי המצע — המילואימניקים והכלכלית", publisher: "המילואימניקים" }
+        source: { url: "https://www.themiluimnikim.org.il/platform/", title: "עקרונות — המילואימניקים (עיקרי המצע)", publisher: "המילואימניקים" }
         quote:
           he: "\"ממשלה ציונית: למדנו כי ממשלה שמסתמכת על מפלגות לא ציוניות (חרדיות או ערביות) נסחטת לקבל החלטות לא ציוניות.\""
           en: "\"A Zionist government: we learned that a government relying on non-Zionist parties (haredi or Arab) is extorted into non-Zionist decisions.\""
@@ -2292,7 +2292,7 @@ questions:
       reservists:
         value: 1
         basis: platform
-        source: { url: "https://www.themiluimnikim.org.il/platform/", title: "עיקרי המצע — המילואימניקים והכלכלית, פרק ביטחון ומשילות: עזה", publisher: "המילואימניקים" }
+        source: { url: "https://www.themiluimnikim.org.il/platform/", title: "עקרונות — המילואימניקים (עיקרי המצע, פרק ביטחון ומשילות: עזה)", publisher: "המילואימניקים" }
         quote:
           he: "\"הקמת מנהלת הגירה מרצון – לאפשר לתושבי עזה המעוניינים בכך להגר למדינות אחרות.\""
           en: "\"Establishing a voluntary-emigration directorate – to allow Gaza residents who wish to do so to emigrate to other countries.\""

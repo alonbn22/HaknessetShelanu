@@ -649,7 +649,9 @@ const electionPartySchema = z.object({
   promises: z
     .object({
       items: z.array(localizedText).min(1).max(4),
-      source: z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() }),
+      // What kind of document the items come from, when it is not a 2026 platform.
+      note: localizedText.optional(),
+      sources: z.array(z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() })).min(1),
     })
     .optional(),
   sources: z

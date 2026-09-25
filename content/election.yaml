@@ -397,6 +397,37 @@ parties:
       - { he: "שלמה יוסף לרנר" }
       - { he: "יצחק בונצל" }
       - { he: "משה בנימין פרץ" }
+    # The list's own site and its first headlined commitments, read there 24–25 Sep 2026.
+    website: "https://www.likud.org.il/"
+    promises:
+      note:
+        he: "הליכוד לא פרסם מצע לבחירות 2026; אלה שלוש המטרות הראשונות בחוקת התנועה (נוסח יולי 2015)."
+        en: "Likud has published no platform for 2026; these are the first three goals in its party constitution (July 2015 version)."
+        ar: "لم ينشر الليكود برنامجًا لانتخابات 2026؛ هذه هي الأهداف الثلاثة الأولى في دستور الحزب (صيغة تموز/يوليو 2015)."
+        ru: "Ликуд не опубликовал программу к выборам 2026 года; это первые три цели из устава партии (редакция июля 2015 года)."
+        es: "El Likud no ha publicado un programa para 2026; estos son los tres primeros objetivos de la constitución del partido (versión de julio de 2015)."
+        fr: "Le Likoud n’a publié aucun programme pour 2026 ; voici les trois premiers objectifs de la constitution du parti (version de juillet 2015)."
+      items:
+        - he: "ריכוז העם היהודי בארץ ישראל וקיבוץ גלויותיו"
+          en: "Gathering the Jewish people in the Land of Israel and the ingathering of its exiles"
+          ar: "تجميع الشعب اليهودي في أرض إسرائيل وجمع شتاته"
+          ru: "Собрать еврейский народ в Земле Израиля и вернуть его изгнанников"
+          es: "Reunir al pueblo judío en la Tierra de Israel y congregar a sus exiliados"
+          fr: "Rassembler le peuple juif en terre d’Israël et y réunir ses exilés"
+        - he: "זכות העם היהודי על ארץ ישראל, יישוב כל חלקיה והחלת ריבונות עליהם"
+          en: "The Jewish people's right to the Land of Israel; settling all its parts and applying sovereignty to them"
+          ar: "حق الشعب اليهودي في أرض إسرائيل، والاستيطان في جميع أجزائها وفرض السيادة عليها"
+          ru: "Право еврейского народа на Землю Израиля; заселение всех её частей и распространение на них суверенитета"
+          es: "El derecho del pueblo judío a la Tierra de Israel; poblar todas sus partes y aplicarles la soberanía"
+          fr: "Le droit du peuple juif sur la terre d’Israël ; en peupler toutes les parties et y appliquer la souveraineté"
+        - he: "ריבונות המדינה וביטחונה, ושלום אמת עם שכנינו"
+          en: "The state's sovereignty and security, and true peace with its neighbors"
+          ar: "سيادة الدولة وأمنها، وسلام حقيقي مع جيرانها"
+          ru: "Суверенитет и безопасность государства и подлинный мир с соседями"
+          es: "La soberanía y la seguridad del Estado, y una paz verdadera con sus vecinos"
+          fr: "La souveraineté et la sécurité de l’État, et une paix véritable avec ses voisins"
+      sources:
+        - { url: "https://www.likud.org.il/%D7%A2%D7%9C-%D7%94%D7%9C%D7%99%D7%9B%D7%95%D7%93/%D7%97%D7%95%D7%A7%D7%AA-%D7%94%D7%9C%D7%99%D7%9B%D7%95%D7%93", title: "חוקת הליכוד (מעודכנת ליולי 2015), פרק ב׳: מטרות, סעיף 1 א–ג", publisher: "הליכוד" }
     sources:
       - { url: "https://www.gov.il/he/pages/halikud-tikvahadasha_iist29", title: "הליכוד עם בנימין נתניהו לראשות הממשלה — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
@@ -443,6 +474,30 @@ parties:
       - { he: "יוראי להב הרצנו", personId: 30720 }
       - { he: "שחר ורון" }
       - { he: "יסמין פרידמן", personId: 30783 }
+    # The list's own site and its first headlined commitments, read there 24–25 Sep 2026.
+    website: "https://be-yahad.org.il/"
+    promises:
+      items:
+        - he: "הורדת מחיר סל הקנייה בסופר ב-30% תוך שלוש שנים"
+          en: "Cut the price of the supermarket shopping basket by 30% within three years"
+          ar: "خفض سعر سلة المشتريات في السوبرماركت بنسبة 30% خلال ثلاث سنوات"
+          ru: "Снизить стоимость продуктовой корзины в супермаркетах на 30% за три года"
+          es: "Bajar un 30 % el precio de la cesta de la compra del supermercado en tres años"
+          fr: "Faire baisser de 30 % le prix du panier de courses au supermarché en trois ans"
+        - he: "מערכת חינוך מצוינת ושוויונית, שתעניק לכל ילד וילדה כלים להשכלה ולפרנסה"
+          en: "An excellent, equal education system that gives every child the tools for higher education and a livelihood"
+          ar: "جهاز تعليم متميز ومتساوٍ يمنح كل طفل وطفلة أدوات للتعليم العالي ولكسب الرزق"
+          ru: "Сильная и равная для всех система образования, которая даст каждому ребёнку инструменты для учёбы и заработка"
+          es: "Un sistema educativo excelente e igualitario que dé a cada niño y niña herramientas para estudiar y ganarse la vida"
+          fr: "Un système éducatif excellent et égalitaire, qui donne à chaque enfant les outils pour étudier et gagner sa vie"
+        - he: "החזרת הריבונות למדינה והביטחון האישי לאזרחים – בגליל, בנגב ובכל מקום"
+          en: "Restore state authority and citizens' personal security – in the Galilee, the Negev and everywhere"
+          ar: "إعادة سلطة الدولة والأمن الشخصي للمواطنين – في الجليل والنقب وفي كل مكان"
+          ru: "Вернуть государству власть закона, а гражданам — личную безопасность: в Галилее, в Негеве и повсюду"
+          es: "Devolver al Estado su autoridad y a los ciudadanos su seguridad personal: en Galilea, en el Néguev y en todas partes"
+          fr: "Rendre à l’État son autorité et aux citoyens leur sécurité personnelle : en Galilée, dans le Néguev et partout"
+      sources:
+        - { url: "https://be-yahad.org.il/", title: "ביחד בראשות נפתלי בנט — תוכניות התיקון של ישראל (עמוד הבית)", publisher: "ביחד" }
     sources:
       - { url: "https://www.gov.il/he/pages/beyahad_list1", title: "ביחד בראשות נפתלי בנט — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
@@ -501,6 +556,30 @@ parties:
       - { he: "ג'וסלין באש" }
       - { he: "אלון צבי פוטרמן" }
       - { he: "טלי מולנר" }
+    # The list's own site and its first headlined commitments, read there 24–25 Sep 2026.
+    website: "https://yasharwitheisenkot.com/"
+    promises:
+      items:
+        - he: "ועדת חקירה ממלכתית לטבח 7 באוקטובר, לעשור שקדם לו ולניהול המלחמה"
+          en: "A state commission of inquiry into the 7 October massacre, the decade before it and the conduct of the war"
+          ar: "لجنة تحقيق رسمية في مجزرة 7 تشرين الأول/أكتوبر والعقد الذي سبقها وإدارة الحرب"
+          ru: "Государственная следственная комиссия по резне 7 октября, предшествовавшему ей десятилетию и ведению войны"
+          es: "Una comisión estatal de investigación sobre la masacre del 7 de octubre, la década anterior y la conducción de la guerra"
+          fr: "Une commission d’enquête d’État sur le massacre du 7 octobre, la décennie qui l’a précédé et la conduite de la guerre"
+        - he: "תפיסת ביטחון חדשה: חיזוק צה\"ל וביצור הביטחון בגבולות"
+          en: "A new security doctrine: strengthen the IDF and fortify border security"
+          ar: "عقيدة أمنية جديدة: تعزيز الجيش الإسرائيلي وتحصين الأمن على الحدود"
+          ru: "Новая концепция безопасности: усилить ЦАХАЛ и укрепить безопасность на границах"
+          es: "Una nueva doctrina de seguridad: reforzar las FDI y blindar la seguridad en las fronteras"
+          fr: "Une nouvelle doctrine de sécurité : renforcer Tsahal et consolider la sécurité aux frontières"
+        - he: "חוק \"שירות ממלכתי לכל\": שילוב הציבור החרדי והערבי, בראש ובראשונה בצה\"ל"
+          en: "A \"national service for all\" law bringing Haredi and Arab citizens in, first and foremost to the IDF"
+          ar: "قانون «خدمة وطنية للجميع»: دمج الجمهور الحريدي والعربي، وفي مقدمة ذلك في الجيش الإسرائيلي"
+          ru: "Закон «Государственная служба для всех»: интеграция харедим и арабов, прежде всего в ЦАХАЛ"
+          es: "Una ley de «servicio nacional para todos»: integrar a la población jaredí y árabe, ante todo en las FDI"
+          fr: "Une loi « service national pour tous » : intégrer les publics haredi et arabe, d’abord dans Tsahal"
+      sources:
+        - { url: "https://yasharwitheisenkot.com/agenda_point/", title: "10 הצעדים לשגשוגה של מדינת ישראל (צעדים 1–3)", publisher: "ישר!" }
     sources:
       - { url: "https://www.gov.il/he/pages/yashar_list_2", title: "ישר! עם איזנקוט לראשות הממשלה מאחדים את ישראל — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
@@ -543,6 +622,39 @@ parties:
       - { he: "אבי דאבוש" }
       - { he: "אמילי מואטי" }
       - { he: "תומר אביטל" }
+    # The list's own site and its first headlined commitments, read there 24–25 Sep 2026.
+    website: "https://democrats.org.il/"
+    promises:
+      note:
+        he: "ההתחייבות הראשונה בכל אחת משלוש התוכניות הראשונות במצע."
+        en: "The first commitment in each of the platform's first three plans."
+        ar: "الالتزام الأول في كل واحدة من الخطط الثلاث الأولى في البرنامج."
+        ru: "Первое обязательство в каждом из трёх первых разделов программы."
+        es: "El primer compromiso de cada uno de los tres primeros planes del programa."
+        fr: "Le premier engagement de chacun des trois premiers plans du programme."
+      items:
+        - he: "יוזמה מדינית אזורית וקידום נורמליזציה עם סעודיה"
+          en: "A regional diplomatic initiative and normalization with Saudi Arabia"
+          ar: "مبادرة سياسية إقليمية ودفع التطبيع مع السعودية"
+          ru: "Региональная дипломатическая инициатива и нормализация отношений с Саудовской Аравией"
+          es: "Una iniciativa diplomática regional y avanzar en la normalización con Arabia Saudí"
+          fr: "Une initiative diplomatique régionale et la normalisation avec l’Arabie saoudite"
+        - he: "עיגון הזכויות האזרחיות והחברתיות בחוקי יסוד, במעמד עליון"
+          en: "Entrench civil and social rights in Basic Laws, with supreme status"
+          ar: "ترسيخ الحقوق المدنية والاجتماعية في قوانين أساس ومنحها مكانة عليا"
+          ru: "Закрепить гражданские и социальные права в Основных законах с высшим статусом"
+          es: "Consagrar los derechos civiles y sociales en Leyes Básicas, con rango supremo"
+          fr: "Inscrire les droits civils et sociaux dans des Lois fondamentales, avec un statut suprême"
+        - he: "השקעה בשירותים חברתיים ובציבור העובד והמשרת, במקום תקציבים מגזריים"
+          en: "Invest in social services and in those who work and serve, instead of sectoral budgets"
+          ar: "الاستثمار في الخدمات الاجتماعية وفي الجمهور العامل والذي يؤدي الخدمة، بدل الميزانيات القطاعية"
+          ru: "Вкладывать в социальные услуги и в тех, кто работает и служит, вместо секторальных бюджетов"
+          es: "Invertir en servicios sociales y en quienes trabajan y sirven, en lugar de presupuestos sectoriales"
+          fr: "Investir dans les services sociaux et dans ceux qui travaillent et servent, plutôt que dans des budgets sectoriels"
+      sources:
+        - { url: "https://yes.democrats.org.il/topics/security-diplomatic", title: "מה המצע — מדיני-ביטחוני: ההתחייבויות שלנו", publisher: "הדמוקרטים" }
+        - { url: "https://yes.democrats.org.il/topics/democracy-justice", title: "מה המצע — דמוקרטיה ומשפט: ההתחייבויות שלנו", publisher: "הדמוקרטים" }
+        - { url: "https://yes.democrats.org.il/topics/economy-society", title: "מה המצע — כלכלי-חברתי: ההתחייבויות שלנו", publisher: "הדמוקרטים" }
     sources:
       - { url: "https://www.gov.il/he/pages/hademokratim_list17", title: "הדמוקרטים בראשות יאיר גולן — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
@@ -578,6 +690,30 @@ parties:
       - { he: "אלון שוסטר", personId: 30694 }
       - { he: "מופיד מרעי" }
       - { he: "מלכה יהודית אוליאל" }
+    # The list's own site and its first headlined commitments, read there 24–25 Sep 2026.
+    website: "https://kachollavan.org.il/"
+    promises:
+      items:
+        - he: "ישראל מדינה יהודית ודמוקרטית, מדינת הלאום של העם היהודי"
+          en: "Israel as a Jewish and democratic state, the nation-state of the Jewish people"
+          ar: "إسرائيل دولة يهودية وديمقراطية، الدولة القومية للشعب اليهودي"
+          ru: "Израиль как еврейское и демократическое государство, национальное государство еврейского народа"
+          es: "Israel como Estado judío y democrático, el Estado-nación del pueblo judío"
+          fr: "Israël, État juif et démocratique, État-nation du peuple juif"
+        - he: "ביטחון האזרחים בכל מקום ובכל עת, לצד חיזוק הסכמי השלום"
+          en: "Citizens' security everywhere and at all times, alongside stronger peace agreements"
+          ar: "أمن المواطنين في كل مكان وفي كل وقت، إلى جانب تعزيز اتفاقيات السلام"
+          ru: "Безопасность граждан везде и всегда — вместе с укреплением мирных соглашений"
+          es: "La seguridad de los ciudadanos en todo lugar y momento, junto con el refuerzo de los acuerdos de paz"
+          fr: "La sécurité des citoyens partout et à tout moment, tout en renforçant les accords de paix"
+        - he: "הגנה על הדמוקרטיה, עצמאות מערכת המשפט והפרדת הרשויות; ביטחון הפנים כיעד מרכזי"
+          en: "Protect democracy, judicial independence and the separation of powers; internal security as a central goal"
+          ar: "حماية الديمقراطية واستقلال الجهاز القضائي وفصل السلطات؛ والأمن الداخلي هدفًا مركزيًا"
+          ru: "Защита демократии, независимости судебной системы и разделения властей; внутренняя безопасность как главная цель"
+          es: "Proteger la democracia, la independencia judicial y la separación de poderes; la seguridad interior como objetivo central"
+          fr: "Protéger la démocratie, l’indépendance de la justice et la séparation des pouvoirs ; la sécurité intérieure comme objectif central"
+      sources:
+        - { url: "https://kachollavan.org.il/wp-content/uploads/2025/07/20527_3_A5_Hoveret_Ekronot_ONE_PAGE_A.pdf", title: "עקרונות כחול לבן (עקרונות 1–3)", publisher: "כחול לבן" }
     sources:
       - { url: "https://www.gov.il/he/pages/kachol-lavan_list30", title: "כחול לבן — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }
@@ -619,6 +755,30 @@ parties:
       - { he: "דוד אזולאי" }
       - { he: "לימור מגן תלם" }
       - { he: "ישראל בן שטרית" }
+    # The list's own site and its first headlined commitments, read there 24–25 Sep 2026.
+    website: "https://beytenu.org.il/"
+    promises:
+      items:
+        - he: "ועדת חקירה ממלכתית לטבח 7 באוקטובר, כהחלטה הראשונה של הממשלה"
+          en: "A state commission of inquiry into 7 October as the government's first decision"
+          ar: "لجنة تحقيق رسمية في مجزرة 7 تشرين الأول/أكتوبر، كأول قرار للحكومة"
+          ru: "Государственная следственная комиссия по резне 7 октября — первым решением правительства"
+          es: "Una comisión estatal de investigación sobre el 7 de octubre como primera decisión del gobierno"
+          fr: "Une commission d’enquête d’État sur le 7 octobre, première décision du gouvernement"
+        - he: "חוק גיוס חובה לכל בני 18, בשירות צבאי או אזרחי"
+          en: "Compulsory service for every 18-year-old citizen, military or civilian"
+          ar: "قانون خدمة إلزامية لكل مواطن في سن 18، عسكرية أو مدنية"
+          ru: "Обязательная служба для всех граждан в 18 лет — военная или гражданская"
+          es: "Servicio obligatorio para todo ciudadano de 18 años, militar o civil"
+          fr: "Un service obligatoire pour tout citoyen de 18 ans, militaire ou civil"
+        - he: "כינון חוקה לישראל, על בסיס מתווה רייכמן, פרידמן וניסים"
+          en: "Enact a constitution for Israel, based on the Reichman, Friedmann and Nissim outline"
+          ar: "سنّ دستور لإسرائيل استنادًا إلى مخطط رايخمان وفريدمان ونيسيم"
+          ru: "Принять конституцию Израиля на основе проекта Райхмана, Фридмана и Нисима"
+          es: "Promulgar una Constitución para Israel, basada en la propuesta de Reichman, Friedmann y Nissim"
+          fr: "Doter Israël d’une Constitution, sur la base du projet Reichman, Friedmann et Nissim"
+      sources:
+        - { url: "https://beytenu.org.il/party-platform/", title: "המצע שלנו — קווי היסוד של ישראל ביתנו לממשלה הבאה (עקרונות 1–3)", publisher: "ישראל ביתנו" }
     sources:
       - { url: "https://www.gov.il/he/pages/israel-beitenu_list11", title: "ישראל ביתנו בראשות אביגדור ליברמן — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
@@ -730,6 +890,32 @@ parties:
       - { he: "יצחק זאגא" }
       - { he: "רעות בן חיים" }
       - { he: "עומר פציניאש וולדמן" }
+    # The list's own site and its first headlined commitments, read there 24–25 Sep 2026.
+    website: "https://zionutdatit.org.il/"
+    promises:
+      items:
+        - he: "20 יישובים חדשים בגליל ו-20 בנגב, ועוד מיליון תושבים יהודים שם"
+          en: "20 new communities each in the Galilee and the Negev, and a million more Jewish residents there"
+          ar: "20 بلدة جديدة في الجليل و20 في النقب، ومليون ساكن يهودي إضافي فيهما"
+          ru: "20 новых населённых пунктов в Галилее и 20 в Негеве и ещё миллион еврейских жителей там"
+          es: "20 nuevas localidades en Galilea y otras 20 en el Néguev, y un millón más de residentes judíos allí"
+          fr: "20 nouvelles localités en Galilée et 20 dans le Néguev, et un million d’habitants juifs de plus"
+        - he: "שירות מילואים קצר יותר: ייעול המערך, גיוס חרדים וחוק יסוד המשרתים"
+          en: "Shorter reserve duty: a more efficient reserve system, Haredi enlistment and a Basic Law for those who serve"
+          ar: "خدمة احتياط أقصر: رفع كفاءة منظومة الاحتياط، وتجنيد الحريديم، وقانون أساس للخادمين"
+          ru: "Более короткие сборы резервистов: эффективная система резерва, призыв харедим и Основной закон о служащих"
+          es: "Una reserva militar más corta: un sistema de reservistas más eficiente, el reclutamiento jaredí y una Ley Básica de quienes sirven"
+          fr: "Des périodes de réserve plus courtes : une réserve plus efficace, l’enrôlement des haredim et une Loi fondamentale sur ceux qui servent"
+        - he: "תוכנית בשבעה צירים לשינויים נוספים במערכת המשפט, בהם פיצול תפקיד היועמ\"ש"
+          en: "A seven-part plan for further changes to the justice system, including splitting the Attorney General's role"
+          ar: "خطة من سبعة محاور لتغييرات إضافية في الجهاز القضائي، منها تقسيم منصب المستشار القضائي للحكومة"
+          ru: "План из семи направлений для дальнейших изменений в судебной системе, включая разделение должности юридического советника правительства"
+          es: "Un plan de siete ejes para más cambios en el sistema judicial, entre ellos dividir el cargo de fiscal general"
+          fr: "Un plan en sept axes pour de nouveaux changements dans la justice, dont la scission du poste de conseiller juridique du gouvernement"
+      sources:
+        - { url: "https://zionutdatit.org.il/judaization/", title: "מייהדים את הנגב והגליל — תוכנית נגב גליל", publisher: "הציונות הדתית" }
+        - { url: "https://miluim.zionutdatit.digital/", title: "מצדיעים למילואים — תוכנית המילואימניקים", publisher: "הציונות הדתית" }
+        - { url: "https://zionutdatit.org.il/mishpat/", title: "משחררים את החסימה — תכנית רוטמן להמשך תיקון מערכת המשפט 2026", publisher: "הציונות הדתית" }
     sources:
       - { url: "https://www.gov.il/he/pages/tzionutdatit-zehut_list31", title: "הציונות הדתית בראשות בצלאל סמוטריץ' וזהות בראשות משה פייגלין — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
@@ -772,6 +958,37 @@ parties:
       - { he: "שירן מירואי" }
       - { he: "שימי גולן" }
       - { he: "יניב בדלוב" }
+    # The list's own site and its first headlined commitments, read there 24–25 Sep 2026.
+    website: "https://ozma-yeudit.co.il/"
+    promises:
+      note:
+        he: "מתוך הודעת המפלגה מ-22 בספטמבר 2026: שלושת הסעיפים הראשונים בתוכנית הביטחון."
+        en: "From the party's statement of 22 September 2026: the first three points of its security plan."
+        ar: "من بيان الحزب في 22 أيلول/سبتمبر 2026: البنود الثلاثة الأولى في خطته الأمنية."
+        ru: "Из заявления партии от 22 сентября 2026 года: первые три пункта её плана в сфере безопасности."
+        es: "Del comunicado del partido del 22 de septiembre de 2026: los tres primeros puntos de su plan de seguridad."
+        fr: "Extrait du communiqué du parti du 22 septembre 2026 : les trois premiers points de son plan de sécurité."
+      items:
+        - he: "עידוד הגירה מרצון מעזה ומיהודה ושומרון"
+          en: "Encourage voluntary emigration from Gaza and from Judea and Samaria (the West Bank)"
+          ar: "تشجيع الهجرة الطوعية من غزة ومن يهودا والسامرة (الضفة الغربية)"
+          ru: "Поощрять добровольную эмиграцию из Газы и из Иудеи и Самарии (Западного берега)"
+          es: "Fomentar la emigración voluntaria desde Gaza y desde Judea y Samaria (Cisjordania)"
+          fr: "Encourager l’émigration volontaire depuis Gaza et depuis la Judée-Samarie (Cisjordanie)"
+        - he: "סיום תפיסת ההכלה: פירוז הרשות הפלסטינית מנשקה ומעצר בכיריה התומכים בטרור"
+          en: "End the containment approach: disarm the Palestinian Authority and arrest its senior officials who support terror"
+          ar: "إنهاء نهج الاحتواء: نزع سلاح السلطة الفلسطينية واعتقال كبار مسؤوليها الداعمين للإرهاب"
+          ru: "Отказ от политики сдерживания: разоружить Палестинскую администрацию и арестовать её руководителей, поддерживающих террор"
+          es: "Acabar con la política de contención: desarmar a la Autoridad Palestina y detener a sus altos cargos que apoyan el terrorismo"
+          fr: "En finir avec la politique d’endiguement : désarmer l’Autorité palestinienne et arrêter ses hauts responsables qui soutiennent le terrorisme"
+        - he: "שינוי נוהלי הפתיחה באש ומתן גיבוי לחיילים"
+          en: "Change the open-fire rules and back the soldiers"
+          ar: "تغيير تعليمات إطلاق النار ومنح الجنود الغطاء"
+          ru: "Изменить правила открытия огня и поддержать солдат"
+          es: "Cambiar las normas de apertura de fuego y respaldar a los soldados"
+          fr: "Modifier les règles d’ouverture du feu et soutenir les soldats"
+      sources:
+        - { url: "https://ozma-yeudit.co.il/%D7%91%D7%9F-%D7%92%D7%91%D7%99%D7%A8-%D7%9C%D7%91%D7%99%D7%98%D7%97%D7%95%D7%9F-%D7%92%D7%95%D7%98%D7%9C%D7%99%D7%91-%D7%9C%D7%9E%D7%A9%D7%A4%D7%98%D7%99%D7%9D/", title: "בן גביר לביטחון. גוטליב למשפטים (22 בספטמבר 2026)", publisher: "עוצמה יהודית" }
     sources:
       - { url: "https://www.gov.il/he/pages/yehudit-meuhedet_list14", title: "עוצמה יהודית — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
@@ -858,6 +1075,37 @@ parties:
       - { he: "עומר ואקד" }
       - { he: "מואייד מיעארי" }
       - { he: "אחמד ג'זאווי גאנם" }
+    # The list's own site and its first headlined commitments, read there 24–25 Sep 2026.
+    website: "https://jointlist.org.il/"
+    promises:
+      note:
+        he: "הרשימה המשותפת לא פרסמה מצע משותף; אלה שלושת העקרונות הראשונים של חד\"ש, המפלגה שבראשה."
+        en: "The Joint List has published no joint platform; these are the first three principles of Hadash, the party at its head."
+        ar: "لم تنشر القائمة المشتركة برنامجًا مشتركًا؛ هذه هي المبادئ الثلاثة الأولى للجبهة، الحزب الذي يترأس القائمة."
+        ru: "Объединённый список не публиковал общей программы; это первые три принципа Хадаш — партии, которая его возглавляет."
+        es: "La Lista Conjunta no ha publicado un programa común; estos son los tres primeros principios de Hadash, el partido que la encabeza."
+        fr: "La Liste commune n’a publié aucun programme commun ; voici les trois premiers principes du Hadash, le parti qui la conduit."
+      items:
+        - he: "שלום ישראלי-פלסטיני וישראלי-ערבי צודק, כולל ויציב"
+          en: "A just, comprehensive and stable Israeli-Palestinian and Israeli-Arab peace"
+          ar: "سلام إسرائيلي-فلسطيني وإسرائيلي-عربي شامل وعادل وثابت"
+          ru: "Справедливый, всеобъемлющий и прочный израильско-палестинский и израильско-арабский мир"
+          es: "Una paz israelí-palestina e israelí-árabe justa, integral y estable"
+          fr: "Une paix israélo-palestinienne et israélo-arabe juste, globale et stable"
+        - he: "הגנה על ענייני העובדים ועל זכויותיהם"
+          en: "Defend workers' interests and rights"
+          ar: "الدفاع عن قضايا العمال وحقوقهم"
+          ru: "Защита интересов и прав трудящихся"
+          es: "Defender los intereses y los derechos de los trabajadores"
+          fr: "Défendre les intérêts et les droits des travailleurs"
+        - he: "שוויון לאוכלוסייה הערבית בישראל"
+          en: "Equality for Israel's Arab population"
+          ar: "المساواة للجماهير العربية في إسرائيل"
+          ru: "Равенство для арабского населения Израиля"
+          es: "Igualdad para la población árabe de Israel"
+          fr: "L’égalité pour la population arabe d’Israël"
+      sources:
+        - { url: "https://hadash.org.il/", title: "העקרונות שלנו · مبادئنا (עמוד הבית, עקרונות 1–3)", publisher: "חד\"ש" }
     sources:
       - { url: "https://www.timesofisrael.com/election-panel-votes-to-bar-balad-chief-abu-shehadeh-over-alleged-support-for-terror/", title: "Election panel votes on the Ra'am and Joint List slates and on Abu Shehadeh and Cassif (23 Sep 2026)", publisher: "The Times of Israel" }
       - { url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-909454", title: "Central Elections Committee decision on Ra'am and the Joint List (23 Sep 2026)", publisher: "The Jerusalem Post" }
@@ -894,6 +1142,8 @@ parties:
       - { he: "פלר חסון-נחום" }
       - { he: "ללי דרעי" }
       - { he: "רונן בודנרו" }
+    # The list's own site and its first headlined commitments, read there 24–25 Sep 2026.
+    website: "https://amchaisrael.co.il/"
     sources:
       - { url: "https://www.gov.il/he/pages/amcha-israel_list6", title: "עמך ישראל — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
@@ -928,6 +1178,37 @@ parties:
       - { he: "יואב שלמה אדומי" }
       - { he: "אופיר לנגמן" }
       - { he: "שלומי דמרי" }
+    # The list's own site and its first headlined commitments, read there 24–25 Sep 2026.
+    website: "https://www.themiluimnikim.org.il/"
+    promises:
+      note:
+        he: "הרשימה מציגה את שלושתם כתנאים להקמת ממשלה."
+        en: "The list presents all three as its conditions for forming a government."
+        ar: "تعرض القائمة البنود الثلاثة شروطًا لتشكيل الحكومة."
+        ru: "Список называет все три пункта своими условиями для формирования правительства."
+        es: "La lista presenta los tres como sus condiciones para formar gobierno."
+        fr: "La liste présente les trois comme ses conditions pour former un gouvernement."
+      items:
+        - he: "ממשלה ציונית, שאינה נשענת על מפלגות חרדיות או ערביות"
+          en: "A Zionist government that does not rely on Haredi or Arab parties"
+          ar: "حكومة صهيونية لا تعتمد على الأحزاب الحريدية أو العربية"
+          ru: "Сионистское правительство, не опирающееся на харедимные или арабские партии"
+          es: "Un gobierno sionista que no dependa de partidos jaredíes ni árabes"
+          fr: "Un gouvernement sioniste qui ne s’appuie ni sur les partis haredim ni sur les partis arabes"
+        - he: "חוק גיוס לכולם; מי שלא ישרת – לא יקבל דבר מהמדינה"
+          en: "A conscription law for all; those who do not serve get nothing from the state"
+          ar: "قانون تجنيد للجميع؛ ومن لا يخدم لا يحصل على شيء من الدولة"
+          ru: "Закон о призыве для всех; кто не служит, ничего не получает от государства"
+          es: "Una ley de reclutamiento para todos; quien no sirva no recibirá nada del Estado"
+          fr: "Une loi de conscription pour tous ; qui ne sert pas ne reçoit rien de l’État"
+        - he: "ועדת חקירה לכל הכשלים שהובילו לאסון ולמלחמה"
+          en: "A commission of inquiry into all the failures that led to the disaster and the war"
+          ar: "لجنة تحقيق في جميع الإخفاقات التي أدت إلى الكارثة وإلى الحرب"
+          ru: "Комиссия по расследованию всех провалов, которые привели к катастрофе и войне"
+          es: "Una comisión de investigación sobre todos los fallos que llevaron al desastre y a la guerra"
+          fr: "Une commission d’enquête sur toutes les défaillances qui ont conduit au désastre et à la guerre"
+      sources:
+        - { url: "https://www.themiluimnikim.org.il/platform/", title: "עקרונות — המילואימניקים (עיקרי המצע: מצילים את ישראל)", publisher: "המילואימניקים" }
     sources:
       - { url: "https://www.gov.il/he/pages/hamiluimnikim-vehakalkalit_list16", title: "המילואימניקים והכלכלית בראשות יועז הנדל וירון זליכה — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
@@ -965,6 +1246,30 @@ parties:
       - { he: "יונה שלמה קאופמן" }
       - { he: "אליהו גולדברג" }
       - { he: "ראובן אוחנה" }
+    # The list's own site and its first headlined commitments, read there 24–25 Sep 2026.
+    website: "https://hatzibur-haharedi.org/"
+    promises:
+      items:
+        - he: "הגנה על מי שמקדיש חייו ללימוד תורה, בלי איום במעצר או סנקציות"
+          en: "Protect those who devote their lives to Torah study, free of threats of arrest or sanctions"
+          ar: "حماية من يكرّس حياته لدراسة التوراة، دون تهديد بالاعتقال أو بالعقوبات"
+          ru: "Защитить тех, кто посвящает жизнь изучению Торы, от угрозы ареста и санкций"
+          es: "Proteger a quien dedica su vida al estudio de la Torá, sin amenazas de arresto ni sanciones"
+          fr: "Protéger ceux qui consacrent leur vie à l’étude de la Torah, sans menace d’arrestation ni sanctions"
+        - he: "צעיר חרדי שאינו מקדיש חייו לתורה ישרת שירות ביטחון, במסלולים מותאמים"
+          en: "Haredi youth not devoted to Torah study will do security service, in suitable tracks"
+          ar: "الشاب الحريدي الذي لا يكرّس حياته للتوراة يؤدي خدمة أمنية، في مسارات ملائمة"
+          ru: "Молодые харедим, не посвящающие жизнь Торе, будут проходить службу безопасности по подходящим программам"
+          es: "Los jóvenes jaredíes que no se dedican a la Torá harán un servicio de seguridad, en itinerarios adaptados"
+          fr: "Les jeunes haredim qui ne se consacrent pas à la Torah effectueront un service de sécurité, dans des filières adaptées"
+        - he: "עצמאות החינוך החרדי, חיזוק זרם הממ\"ח ולימודי אנגלית ומתמטיקה"
+          en: "Independent Haredi education, a stronger state-Haredi stream, and English and math studies"
+          ar: "استقلال التعليم الحريدي، وتعزيز التيار الرسمي الحريدي، وتعليم الإنجليزية والرياضيات"
+          ru: "Независимость харедимного образования, укрепление государственно-харедимного направления, английский и математика"
+          es: "Independencia de la educación jaredí, una red estatal jaredí más fuerte y clases de inglés y matemáticas"
+          fr: "L’indépendance de l’enseignement haredi, un réseau public haredi renforcé, et l’anglais et les mathématiques"
+      sources:
+        - { url: "https://hatzibur-haharedi.org/%D7%9E%D7%A6%D7%A2", title: "המצע · הציבור החרדי (תוכניות 1–3)", publisher: "הציבור החרדי" }
     sources:
       - { url: "https://www.gov.il/he/pages/tzibur-charedi_list20", title: "הציבור החרדי בראשות מוטי ליטנר — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }

@@ -147,6 +147,14 @@ socio-economic indices by municipality (data.gov.il) for context.
   `cec:` block in `content/election.yaml` and on `submittedLists`, and drop
   any list the committee refused. Letters shown today are the *requested*
   ones from the CEC index (updated 18 Sep 2026), labelled as such.
+- **List promises — re-check before launch** (read 24–25 Sep 2026 on each
+  list's own site; `website`/`promises` in `content/election.yaml`):
+  Amkha's platform (amchaisrael.co.il/platform) is live but unlinked and
+  `noindex` — held until the party links it; Ra'am and Shas have no working
+  site; the Joint List's jointlist.org.il/he/platform/ redirects home (the
+  card uses Hadash's principles, labelled); RZ's "תוכנית המשפט" menu entry
+  is still unlinked (the /mishpat/ page is in its sitemap). Party logos:
+  pending the sources pass.
 - **Re-run the Knesset sync closer to launch** — the DB is from 19 Sep 2026
   (members, positions, biographies); votes were last synced 23 Jul and the
   plenum is in election recess, so nothing is missing yet.

@@ -308,6 +308,11 @@ export default async function ElectionsPage() {
                       <p className="font-semibold">{te("promises")}</p>
                       {p.promises ? (
                         <>
+                          {p.promises.note && (
+                            <p className="text-muted" {...partyTextAttrs(p.promises.note, locale)}>
+                              {partyText(p.promises.note, locale)}
+                            </p>
+                          )}
                           <ul className="list-disc space-y-0.5 ps-4 leading-relaxed text-foreground/75">
                             {p.promises.items.map((it, i) => (
                               <li key={i} {...partyTextAttrs(it, locale)}>
@@ -315,7 +320,7 @@ export default async function ElectionsPage() {
                               </li>
                             ))}
                           </ul>
-                          <SourceLinks sources={[p.promises.source]} label={tc("source")} />
+                          <SourceLinks sources={p.promises.sources} label={tc("source")} />
                         </>
                       ) : (
                         <p className="text-muted">{te("promisesNone")}</p>

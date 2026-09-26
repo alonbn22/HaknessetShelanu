@@ -242,7 +242,7 @@ export default async function PartyPage({
             {e2026List?.website && (
               <div>
                 <span className="text-muted">{t("election.officialSite")}: </span>
-                <a href={e2026List.website} target="_blank" rel="noopener noreferrer" className="font-medium text-accent hover:underline" dir="ltr">
+                <a href={e2026List.website} target="_blank" rel="noopener noreferrer" className="font-medium text-accent underline" dir="ltr">
                   {new URL(e2026List.website).hostname.replace(/^www\./, "")}
                 </a>
               </div>

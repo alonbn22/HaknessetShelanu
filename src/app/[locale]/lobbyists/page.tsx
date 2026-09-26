@@ -77,7 +77,7 @@ export default async function LobbyistsPage({
               <Link
                 key={c.l}
                 href={sortHref(c.s)}
-                aria-pressed={active}
+                aria-current={active ? "true" : undefined}
                 className={`rounded-xl bg-white p-4 text-center shadow-sm ring-2 transition-colors hover:bg-black/[.02] ${
                   active ? "ring-accent" : "ring-transparent"
                 }`}
@@ -135,7 +135,7 @@ export default async function LobbyistsPage({
                     {l.clients.map((c, i) => (
                       <span
                         key={i}
-                        className="inline-flex items-center gap-1 rounded-full bg-accent/10 px-2.5 py-0.5 text-xs text-accent-deep"
+                        className="inline-flex items-center gap-1 rounded-full bg-accent-soft px-2.5 py-0.5 text-xs text-accent-ink"
                         title={t(`rep_${c.type}`)}
                       >
                         <span {...localizedAttrs(loc(c.name))}>{loc(c.name).text}</span>
@@ -196,7 +196,7 @@ export default async function LobbyistsPage({
                 href={us.source.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block text-xs text-accent hover:underline"
+                className="inline-block text-xs text-accent underline"
               >
                 {partyText(us.source.label, locale)}
               </a>
@@ -229,7 +229,7 @@ export default async function LobbyistsPage({
                 href={f.source.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-1 inline-block text-xs text-accent hover:underline"
+                className="mt-1 inline-block text-xs text-accent underline"
               >
                 {partyText(f.source.label, locale)}
               </a>

@@ -452,7 +452,9 @@
     "listSeats": "Escaños",
     "listCompass": "Su postura ante las afirmaciones de la brújula electoral",
     "listAllUpdates": "Toda la actualidad en la página de la facción",
-    "namesTransliterated": "Los nombres de los candidatos que no han sido diputados de la Knéset están transliterados por este sitio; la grafía oficial es la hebrea publicada por el Comité Central de Elecciones."
+    "namesTransliterated": "Los nombres de los candidatos que no han sido diputados de la Knéset están transliterados por este sitio; la grafía oficial es la hebrea publicada por el Comité Central de Elecciones.",
+    "jointList": "Lista conjunta",
+    "includesFaction": "Incluye la facción de la Knéset"
   },
   "electionsHistory": {
     "title": "Historial de elecciones a la Knéset",

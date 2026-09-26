@@ -15,6 +15,7 @@ import {
   publisherName,
   candidateName,
   listHref,
+  partnerFactionIds,
 } from "@/lib/content";
 import { formatDate, formatNumber } from "@/lib/format";
 import { rtlAttrs, localizedAttrs } from "@/lib/text";
@@ -22,6 +23,7 @@ import { getFactionAvgParticipation, getFactionTallies } from "@/lib/queries";
 import { KeyDatesTimeline } from "@/components/KeyDatesTimeline";
 import { PollsSection } from "@/components/polls/PollsSection";
 import { SourceLinks } from "@/components/SourceLinks";
+import { ListMakeup } from "@/components/election/ListMakeup";
 
 export const dynamic = "force-dynamic";
 
@@ -221,6 +223,7 @@ export default async function ElectionsPage() {
                         {loc(p.cec.listName.he).text}
                       </p>
                     )}
+                    <ListMakeup slug={p.slug} />
                     {p.leader && (
                       <div className="text-sm text-muted">
                         {te("leader")}:{" "}
@@ -298,8 +301,9 @@ export default async function ElectionsPage() {
                         );
                       })}
                     {/* New lists aren't sitting factions — say so instead of
-                        silently omitting the party-page link. */}
-                    {p.factionId == null && (
+                        silently omitting the party-page link (a joint list with a
+                        sitting faction says which one instead). */}
+                    {p.factionId == null && partnerFactionIds(p.slug).length === 0 && (
                       <span className="inline-block rounded-full bg-black/5 px-2 py-0.5 text-xs font-medium text-muted">
                         {te("newList")}
                       </span>

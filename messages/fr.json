@@ -452,7 +452,9 @@
     "listSeats": "Sièges",
     "listCompass": "Ses positions sur les affirmations de la boussole électorale",
     "listAllUpdates": "Toute l’actualité sur la page de la faction",
-    "namesTransliterated": "Les noms des candidats qui n’ont pas siégé à la Knesset sont translittérés par ce site ; l’orthographe officielle est celle, en hébreu, publiée par la Commission électorale centrale."
+    "namesTransliterated": "Les noms des candidats qui n’ont pas siégé à la Knesset sont translittérés par ce site ; l’orthographe officielle est celle, en hébreu, publiée par la Commission électorale centrale.",
+    "jointList": "Liste commune",
+    "includesFaction": "Comprend la faction de la Knesset"
   },
   "electionsHistory": {
     "title": "Historique des élections à la Knesset",

@@ -1,5 +1,6 @@
 import { ListLogo } from "@/components/election/ListLogo";
 import { ListSections } from "@/components/election/ListSections";
+import { ListMakeup } from "@/components/election/ListMakeup";
 import { localizePage, localizeData } from "@/lib/i18n-data";
 import { notFound } from "next/navigation";
 import { getTranslations, getLocale } from "next-intl/server";
@@ -223,16 +224,22 @@ export default async function PartyPage({
                 <span {...rtlAttrs(listHead2026)}>{listHead2026}</span>
               </div>
             )}
-            {submittedBy2026.length > 0 && (
-              <div>
-                <span className="text-muted">{t("party.submittedBy")}: </span>
-                {submittedBy2026.map((b, k) => (
-                  <span key={b}>
-                    {k > 0 && " · "}
-                    <span {...localizedAttrs(loc(b))}>{loc(b).text}</span>
-                  </span>
-                ))}
-              </div>
+            {/* Who the list is made of: a joint list names its parties, and any
+                other sitting faction running inside it. */}
+            {e2026List ? (
+              <ListMakeup slug={e2026List.slug} exceptFaction={factionId} className="text-sm" />
+            ) : (
+              submittedBy2026.length > 0 && (
+                <div>
+                  <span className="text-muted">{t(submittedBy2026.length > 1 ? "election.jointList" : "party.submittedBy")}: </span>
+                  {submittedBy2026.map((b, k) => (
+                    <span key={b}>
+                      {k > 0 && " + "}
+                      <span {...localizedAttrs(loc(b))}>{loc(b).text}</span>
+                    </span>
+                  ))}
+                </div>
+              )
             )}
             {e2026.note && (
               <p className="leading-relaxed" {...partyTextAttrs(e2026.note, locale)}>
@@ -320,7 +327,8 @@ export default async function PartyPage({
         </div>
       </section>
 
-      {ownList && <ListSections slug={ownList.slug} />}
+      {/* The list the faction runs in — its own, or the joint list it joined. */}
+      {(ownList ?? e2026List) && <ListSections slug={(ownList ?? e2026List)!.slug} />}
 
       {profile && (
         <section className="rounded-xl bg-white p-6 shadow-sm space-y-5">

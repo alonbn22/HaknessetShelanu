@@ -452,7 +452,9 @@
     "listSeats": "Seats",
     "listCompass": "Where it stands on the election compass statements",
     "listAllUpdates": "All developments on the faction page",
-    "namesTransliterated": "Names of candidates who have not served in the Knesset are transliterated by this site; the official spelling is the Hebrew one published by the Central Elections Committee."
+    "namesTransliterated": "Names of candidates who have not served in the Knesset are transliterated by this site; the official spelling is the Hebrew one published by the Central Elections Committee.",
+    "jointList": "Joint list",
+    "includesFaction": "Includes the Knesset faction"
   },
   "electionsHistory": {
     "title": "Knesset Elections History",

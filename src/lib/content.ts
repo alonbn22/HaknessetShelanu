@@ -250,7 +250,7 @@ export type PartyProfile = z.infer<typeof partyProfileSchema>;
 
 let _partyProfiles: Map<number, PartyProfile> | null = null;
 
-export function getPartyProfile(id: number): PartyProfile | undefined {
+function partyProfiles(): Map<number, PartyProfile> {
   if (!_partyProfiles) {
     const raw = fs.readFileSync(
       path.join(CONTENT_DIR, "party-profiles.yaml"),
@@ -261,7 +261,18 @@ export function getPartyProfile(id: number): PartyProfile | undefined {
       .parse(parse(raw));
     _partyProfiles = new Map(parsed.profiles.map((p) => [p.id, p]));
   }
-  return _partyProfiles.get(id);
+  return _partyProfiles;
+}
+
+export function getPartyProfile(id: number): PartyProfile | undefined {
+  return partyProfiles().get(id);
+}
+
+// Sitting factions that run inside another party's list — a joint run or a
+// merger into it — by that list's slug (each faction's election2026 record).
+export function partnerFactionIds(slug: string): number[] {
+  const own = getRunningLists().get(slug)?.factionId;
+  return [...partyProfiles().values()].filter((p) => p.election2026?.slug === slug && p.id !== own).map((p) => p.id);
 }
 
 // Text fallback for party content: requested locale -> English -> Hebrew.

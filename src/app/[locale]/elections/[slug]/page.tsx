@@ -7,11 +7,13 @@ import { rtlLocales } from "@/i18n/routing";
 import { PartyEmblem } from "@/components/PartyEmblem";
 import { SourceLinks } from "@/components/SourceLinks";
 import { ListSections } from "@/components/election/ListSections";
+import { ListMakeup } from "@/components/election/ListMakeup";
 import {
   getElectionOutlook,
   getRunningLists,
   partyText,
   partyTextAttrs,
+  partnerFactionIds,
 } from "@/lib/content";
 import { formatDate } from "@/lib/format";
 import { rtlAttrs, localizedAttrs } from "@/lib/text";
@@ -77,6 +79,7 @@ export default async function ListPage({ params }: { params: Promise<{ slug: str
             )}
           </div>
         </div>
+        <ListMakeup slug={slug} className="text-sm" />
         {list.logo && (
           <p className="text-xs text-muted">
             <SourceLinks sources={[list.logo.source]} label={t("election.logoCredit")} />
@@ -105,9 +108,11 @@ export default async function ListPage({ params }: { params: Promise<{ slug: str
               </a>
             </div>
           )}
-          <div>
-            <span className="inline-block rounded-full bg-surface-sunken px-2 py-0.5 text-xs font-medium text-muted">{t("election.newList")}</span>
-          </div>
+          {partnerFactionIds(slug).length === 0 && (
+            <div>
+              <span className="inline-block rounded-full bg-surface-sunken px-2 py-0.5 text-xs font-medium text-muted">{t("election.newList")}</span>
+            </div>
+          )}
           {surplus && (
             <div>
               <div className="text-muted">{t("election.surplusWith")}</div>

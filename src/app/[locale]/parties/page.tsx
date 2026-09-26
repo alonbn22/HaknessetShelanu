@@ -77,6 +77,13 @@ export default async function PartiesPage() {
                 <span className="font-medium" {...partyTextAttrs(list2026(f.id)!.name, locale)}>
                   {partyText(list2026(f.id)!.name, locale)}
                 </span>
+                {/* A faction that joined another party's list, or merged into it, says so. */}
+                {(() => {
+                  const runsAs = getPartyProfile(f.id)?.election2026?.runsAs;
+                  return runsAs === "within" || runsAs === "merged" ? (
+                    <span className="text-muted"> · {t(runsAs === "merged" ? "party.runsMerged" : "party.runsWithin")}</span>
+                  ) : null;
+                })()}
               </div>
             )}
             {getPartyProfile(f.id)?.spectrum && (

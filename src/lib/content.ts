@@ -670,6 +670,7 @@ const electionPartySchema = z.object({
   logo: z
     .object({
       src: z.string().regex(/^(https:\/\/upload\.wikimedia\.org\/|\/assets\/)/, "logo src: Commons or /assets"),
+      plate: z.literal("dark").optional(), // a mark drawn for a dark background
       source: z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() }),
     })
     .optional(),

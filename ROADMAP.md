@@ -162,11 +162,11 @@ socio-economic indices by municipality (data.gov.il) for context.
   `noindex` — held until the party links it; Ra'am and Shas have no working
   site; the Joint List's jointlist.org.il/he/platform/ redirects home (the
   card uses Hadash's principles, labelled); RZ's "תוכנית המשפט" menu entry
-  is still unlinked (the /mishpat/ page is in its sitemap). Party logos: 10
-  from Wikimedia Commons; Yisrael Beiteinu, the Joint List, the Reservists and
-  the Haredi Public have their current logo only on their own sites (a local
-  copy in /public/assets needs sign-off); UTJ held — only its 2019–22 design
-  was found, not confirmed current.
+  is still unlinked (the /mishpat/ page is in its sitemap). Party logos: 14 —
+  10 from Wikimedia Commons, 4 copied from the parties' own sites into
+  public/assets/logos (user's OK, 26 Sep 2026; the Haredi Public's PNG was
+  extracted from its SVG wrapper); UTJ held — only its 2019–22 design was
+  found, not confirmed current.
 - **Re-run the Knesset sync closer to launch** — the DB is from 19 Sep 2026
   (members, positions, biographies); votes were last synced 23 Jul and the
   plenum is in election recess, so nothing is missing yet.

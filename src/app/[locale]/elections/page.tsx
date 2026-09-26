@@ -1,5 +1,5 @@
 import { localizePage, localizeData } from "@/lib/i18n-data";
-import Image from "next/image";
+import { ListLogo } from "@/components/election/ListLogo";
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { rtlLocales } from "@/i18n/routing";
@@ -183,16 +183,7 @@ export default async function ElectionsPage() {
                   return (
                   <div key={p.name.he} id={`list-${p.slug}`} className="rounded-lg bg-surface p-3 shadow-sm space-y-1.5 scroll-mt-24">
                     {p.logo && (
-                      <Image
-                        src={p.logo.src}
-                        alt={te("logoAlt", { name: partyText(p.name, locale) })}
-                        width={160}
-                        height={40}
-                        unoptimized
-                        className="rounded object-contain p-1"
-                        // Same white plate as the list's page: brand marks are drawn for white.
-                        style={{ height: 40, width: "auto", maxWidth: 160, backgroundColor: "#fff" }}
-                      />
+                      <ListLogo logo={p.logo} alt={te("logoAlt", { name: partyText(p.name, locale) })} height={40} maxWidth={160} />
                     )}
                     <div className="flex items-start justify-between gap-2">
                       <div className="font-semibold">

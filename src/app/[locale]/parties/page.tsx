@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { ListLogo } from "@/components/election/ListLogo";
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import {
@@ -44,16 +44,7 @@ export default async function PartiesPage() {
           >
             <div className="flex items-center gap-3">
               {ownList(f.id)?.logo ? (
-                <Image
-                  src={ownList(f.id)!.logo!.src}
-                  alt={t("election.logoAlt", { name: partyText(ownList(f.id)!.name, locale) })}
-                  width={120}
-                  height={44}
-                  unoptimized
-                  className="shrink-0 rounded-md object-contain p-1"
-                  // Same white plate as everywhere a logo shows: brand marks are drawn for white.
-                  style={{ height: 44, width: "auto", maxWidth: 120, backgroundColor: "#fff" }}
-                />
+                <ListLogo logo={ownList(f.id)!.logo!} alt={t("election.logoAlt", { name: partyText(ownList(f.id)!.name, locale) })} height={44} maxWidth={120} />
               ) : (
                 <PartyEmblem
                   factionId={f.id}

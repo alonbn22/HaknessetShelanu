@@ -772,6 +772,8 @@ parties:
       - { he: "ישראל בן שטרית" }
     # The list's own site and its first headlined commitments, read there 24–25 Sep 2026.
     website: "https://beytenu.org.il/"
+    # The list's current mark, copied from its own site (no Commons copy exists), 26 Sep 2026.
+    logo: { src: "/assets/logos/yisrael-beiteinu.png", source: { url: "https://beytenu.org.il/", title: "ישראל ביתנו — הלוגו באתר המפלגה", publisher: "ישראל ביתנו" } }
     promises:
       items:
         - he: "ועדת חקירה ממלכתית לטבח 7 באוקטובר, כהחלטה הראשונה של הממשלה"
@@ -1104,6 +1106,8 @@ parties:
       - { he: "אחמד ג'זאווי גאנם" }
     # The list's own site and its first headlined commitments, read there 24–25 Sep 2026.
     website: "https://jointlist.org.il/"
+    # The list's current mark, copied from its own site (no Commons copy exists), 26 Sep 2026.
+    logo: { src: "/assets/logos/joint-list.png", source: { url: "https://jointlist.org.il/he/", title: "המשותפת — הלוגו באתר הרשימה", publisher: "הרשימה המשותפת" } }
     promises:
       note:
         he: "הרשימה המשותפת לא פרסמה מצע משותף; אלה שלושת העקרונות הראשונים של חד\"ש, המפלגה שבראשה."
@@ -1210,6 +1214,8 @@ parties:
       - { he: "שלומי דמרי" }
     # The list's own site and its first headlined commitments, read there 24–25 Sep 2026.
     website: "https://www.themiluimnikim.org.il/"
+    # The list's current mark, copied from its own site (no Commons copy exists), 26 Sep 2026.
+    logo: { src: "/assets/logos/reservists.png", plate: "dark", source: { url: "https://www.themiluimnikim.org.il/%D7%94%D7%9E%D7%99%D7%9C%D7%95%D7%90%D7%99%D7%9E%D7%A0%D7%99%D7%A7%D7%99%D7%9D-%D7%95%D7%94%D7%9B%D7%9C%D7%9B%D7%9C%D7%99%D7%AA/", title: "המילואימניקים והכלכלית — הלוגו המשותף באתר הרשימה", publisher: "המילואימניקים" } }
     promises:
       note:
         he: "הרשימה מציגה את שלושתם כתנאים להקמת ממשלה."
@@ -1278,6 +1284,8 @@ parties:
       - { he: "ראובן אוחנה" }
     # The list's own site and its first headlined commitments, read there 24–25 Sep 2026.
     website: "https://hatzibur-haharedi.org/"
+    # The list's current mark, copied from its own site (no Commons copy exists), 26 Sep 2026.
+    logo: { src: "/assets/logos/haredi-public.png", source: { url: "https://hatzibur-haharedi.org/", title: "הציבור החרדי — הלוגו באתר המפלגה", publisher: "הציבור החרדי" } }
     promises:
       items:
         - he: "הגנה על מי שמקדיש חייו ללימוד תורה, בלי איום במעצר או סנקציות"

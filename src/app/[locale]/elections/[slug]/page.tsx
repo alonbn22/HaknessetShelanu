@@ -1,5 +1,5 @@
 import { localizePage } from "@/lib/i18n-data";
-import Image from "next/image";
+import { ListLogo } from "@/components/election/ListLogo";
 import { notFound } from "next/navigation";
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link, redirect } from "@/i18n/navigation";
@@ -55,17 +55,7 @@ export default async function ListPage({ params }: { params: Promise<{ slug: str
       <section className="rounded-xl bg-surface p-6 shadow-sm border-s-4 space-y-3" style={{ borderInlineStartColor: color }}>
         <div className="flex flex-wrap items-center gap-4">
           {list.logo ? (
-            <Image
-              src={list.logo.src}
-              alt={t("election.logoAlt", { name: partyText(list.name, locale) })}
-              width={220}
-              height={64}
-              unoptimized
-              className="shrink-0 rounded-lg object-contain p-2"
-              // Most marks are wide wordmarks: fixed height, natural width. A logo keeps
-              // its white plate in both themes: brand marks are drawn for white.
-              style={{ height: 64, width: "auto", maxWidth: 220, backgroundColor: "#fff" }}
-            />
+            <ListLogo logo={list.logo} alt={t("election.logoAlt", { name: partyText(list.name, locale) })} height={64} maxWidth={220} />
           ) : (
             <PartyEmblem factionId={list.factionId ?? 0} nameHe={list.name.he} color={color} size={72} alt={partyText(list.name, locale)} />
           )}

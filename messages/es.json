@@ -451,7 +451,8 @@
     "listPollsNone": "Aún no aparece en los sondeos de escaños",
     "listSeats": "Escaños",
     "listCompass": "Su postura ante las afirmaciones de la brújula electoral",
-    "listAllUpdates": "Toda la actualidad en la página de la facción"
+    "listAllUpdates": "Toda la actualidad en la página de la facción",
+    "namesTransliterated": "Los nombres de los candidatos que no han sido diputados de la Knéset están transliterados por este sitio; la grafía oficial es la hebrea publicada por el Comité Central de Elecciones."
   },
   "electionsHistory": {
     "title": "Historial de elecciones a la Knéset",
@@ -635,7 +636,8 @@
     "foreignMoreLinks": "Fuentes oficiales para un seguimiento detallado:",
     "usAidTitle": "Ayuda militar de EE. UU. — últimos 10 años",
     "usAidTotal": "Acumulado: ≈ {total} mil millones de dólares",
-    "sortHint": "Pulse un dato para ordenar"
+    "sortHint": "Pulse un dato para ordenar",
+    "namesTransliterated": "Los nombres de los lobistas están transliterados por este sitio; la grafía oficial es la hebrea del registro de lobistas de la Knéset."
   },
   "feedback": {
     "reportButton": "Notificar un error",

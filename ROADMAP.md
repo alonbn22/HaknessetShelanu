@@ -138,10 +138,19 @@ socio-economic indices by municipality (data.gov.il) for context.
   Supreme Court: appeals by 29 Sep, rulings by 4 Oct (`kd-court`) — update the
   seven faction pages concerned, the two election cards and the key dates with
   each ruling, from the court's or the outlet's own text.
-- **Spanish/French data text**: `npm run warm -- es fr` now works (es/fr
-  added, stops itself when gtx throttles). 24 Sep: 1,712 es strings cached
-  before gtx answered 429 (committed in `31818d3`); fr has none yet. Re-run
-  when gtx recovers, `npm run db:clean`, then commit the DB alone.
+- **Native Spanish/French data text** (26 Sep 2026): pages now fall back to
+  the cached English (`lang="en"`) where es/fr isn't cached, so no Hebrew
+  shows; native es (3,320 cached) and fr (none) still to fill. The free gtx
+  endpoint allows ~1,500 translations per window, then 429s for hours, pace
+  regardless — run `npm run warm -- es fr` once per window (it resumes),
+  `npm run db:clean`, commit the DB alone. English, and Arabic/Russian for
+  every label, name and title, were filled on 26 Sep (Arabic/Russian
+  committee agenda items still fall back to English).
+- **People's names without an official spelling**: ~1,200 candidates who
+  never sat in the Knesset and the 827 registered lobbyists show in Hebrew
+  (MKs and their exact namesakes use the Knesset directory's spellings;
+  the CEC and the lobbyist registry publish Hebrew only) — pending the
+  user's call on site transliteration.
 - **Approved ballot letters** once the CEC publishes its approval notices
   (27 Sep 2026): flip `lettersStatus: requested` → `approved` on each
   `cec:` block in `content/election.yaml` and on `submittedLists`, and drop
@@ -178,11 +187,6 @@ socio-economic indices by municipality (data.gov.il) for context.
   19 Sep 2026 from the faction verification pass), and the elections/quiz
   figures.
 
-- **es/fr data text fills lazily**: the gtx endpoint was rate-limited on
-  19–20 Sep, so vote titles and the per-poll "below threshold" notes
-  (`belowThresholdNote`, the outlet's own Hebrew wording) still render as
-  Hebrew with `dir="rtl" lang="he"` on es/fr pages until the cache fills —
-  confirm before launch (same mechanism as ar/ru).
 
 ## Done (recent)
 

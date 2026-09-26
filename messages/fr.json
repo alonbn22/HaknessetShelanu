@@ -451,7 +451,8 @@
     "listPollsNone": "Pas encore dans les sondages en sièges",
     "listSeats": "Sièges",
     "listCompass": "Ses positions sur les affirmations de la boussole électorale",
-    "listAllUpdates": "Toute l’actualité sur la page de la faction"
+    "listAllUpdates": "Toute l’actualité sur la page de la faction",
+    "namesTransliterated": "Les noms des candidats qui n’ont pas siégé à la Knesset sont translittérés par ce site ; l’orthographe officielle est celle, en hébreu, publiée par la Commission électorale centrale."
   },
   "electionsHistory": {
     "title": "Historique des élections à la Knesset",
@@ -635,7 +636,8 @@
     "foreignMoreLinks": "Sources officielles pour un suivi détaillé :",
     "usAidTitle": "Aide militaire américaine — 10 dernières années",
     "usAidTotal": "Cumul : ~{total} Md $",
-    "sortHint": "Touchez une statistique pour trier"
+    "sortHint": "Touchez une statistique pour trier",
+    "namesTransliterated": "Les noms des lobbyistes sont translittérés par ce site ; l’orthographe officielle est celle, en hébreu, du registre des lobbyistes de la Knesset."
   },
   "feedback": {
     "reportButton": "Signaler une information incorrecte",

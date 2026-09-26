@@ -598,9 +598,22 @@ const candidateSchema = z.object({
   ru: z.string().optional(),
 });
 
-export function candidateName(c: { he: string; en?: string; ar?: string; ru?: string }, locale: string): string {
+// Official spelling, else the site's transliteration (the translations cache,
+// passed in from localizeData — never machine-translated), else the Hebrew.
+export function candidateName(
+  c: { he: string; en?: string; ar?: string; ru?: string },
+  locale: string,
+  transliterated?: Map<string, { text: string }>,
+): string {
   if (locale === "he") return c.he;
-  return (locale === "ar" ? c.ar : locale === "ru" ? c.ru : undefined) ?? c.en ?? c.he;
+  const official = (locale === "ar" ? c.ar : locale === "ru" ? c.ru : undefined) ?? c.en;
+  return official ?? transliterated?.get(c.he.trim())?.text ?? c.he;
+}
+
+// A running list's page: its faction's page when it continues a sitting
+// faction (one combined page per party), else its own election page.
+export function listHref(list: { slug: string; factionId?: number }): string {
+  return list.factionId != null ? `/parties/${list.factionId}` : `/elections/${list.slug}`;
 }
 
 // One row of the "every list that submitted" table: the CEC index entry plus

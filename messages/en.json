@@ -451,7 +451,8 @@
     "listPollsNone": "Not in the seat polls yet",
     "listSeats": "Seats",
     "listCompass": "Where it stands on the election compass statements",
-    "listAllUpdates": "All developments on the faction page"
+    "listAllUpdates": "All developments on the faction page",
+    "namesTransliterated": "Names of candidates who have not served in the Knesset are transliterated by this site; the official spelling is the Hebrew one published by the Central Elections Committee."
   },
   "electionsHistory": {
     "title": "Knesset Elections History",
@@ -635,7 +636,8 @@
     "foreignMoreLinks": "Official sources for detailed tracking:",
     "usAidTitle": "U.S. military aid — past 10 years",
     "usAidTotal": "Cumulative: ~${total}B",
-    "sortHint": "Tap a stat to sort"
+    "sortHint": "Tap a stat to sort",
+    "namesTransliterated": "Lobbyists' names are transliterated by this site; the official spelling is the Hebrew one in the Knesset's lobbyist registry."
   },
   "feedback": {
     "reportButton": "Report incorrect information",

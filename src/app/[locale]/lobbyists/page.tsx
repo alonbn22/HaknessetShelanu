@@ -7,7 +7,7 @@ import { LobbyistSearch } from "./LobbyistSearch";
 import { getLobbyistStats, getLobbyistsPage, type LobbyistSort } from "@/lib/queries";
 import { getForeignAid, partyText } from "@/lib/content";
 import { translateQueryToHebrew } from "@/lib/translate-query";
-import { localizePage } from "@/lib/i18n-data";
+import { localizePage, localizeData, resolveLocalized } from "@/lib/i18n-data";
 import { pageParam } from "@/lib/params";
 
 export const dynamic = "force-dynamic";
@@ -40,6 +40,8 @@ export default async function LobbyistsPage({
     locale,
   );
   const permitOf = (he: string | null) => (he && permitMap.get(he.trim())) || null;
+  // People's names: the site's transliterations only (never machine-translated).
+  const names = localizeData(items.map((l) => l.fullName), locale);
 
   const nf = new Intl.NumberFormat(locale);
   const query: Record<string, string> = {
@@ -93,6 +95,7 @@ export default async function LobbyistsPage({
 
       <LobbyistSearch />
       <p className="text-sm text-muted">{t("results", { count: total })}</p>
+      {locale !== "he" && <p className="text-xs text-muted">{t("namesTransliterated")}</p>}
 
       {items.length === 0 ? (
         <p className="text-muted">{t("noResults")}</p>
@@ -101,8 +104,8 @@ export default async function LobbyistsPage({
           {items.map((l) => (
             <li key={l.id} className="rounded-xl bg-white p-4 shadow-sm">
               <div className="flex flex-wrap items-baseline justify-between gap-2">
-                <span className="font-semibold" dir="rtl" lang="he">
-                  {l.fullName}
+                <span className="font-semibold" {...localizedAttrs(resolveLocalized(names, l.fullName))}>
+                  {resolveLocalized(names, l.fullName).text}
                 </span>
                 {l.permitType &&
                   (() => {

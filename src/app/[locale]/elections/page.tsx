@@ -1,4 +1,4 @@
-import { localizePage } from "@/lib/i18n-data";
+import { localizePage, localizeData } from "@/lib/i18n-data";
 import Image from "next/image";
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
@@ -14,6 +14,7 @@ import {
   type ElectionFact,
   publisherName,
   candidateName,
+  listHref,
 } from "@/lib/content";
 import { formatDate, formatNumber } from "@/lib/format";
 import { rtlAttrs, localizedAttrs } from "@/lib/text";
@@ -46,6 +47,15 @@ export default async function ElectionsPage() {
         ...(l.submittedBy ?? []),
         ...(l.candidates ?? []).map((c) => c.party),
       ]),
+    ],
+    locale,
+  );
+  // People's names: the site's transliterations (never machine-translated, so
+  // nothing is queued for them); official spellings win inside candidateName.
+  const names = localizeData(
+    [
+      ...(outlook?.parties ?? []).flatMap((p) => (p.candidates ?? []).map((c) => c.he)),
+      ...(outlook?.submittedLists?.lists ?? []).flatMap((l) => [l.head?.he, ...(l.candidates ?? []).map((c) => c.he)]),
     ],
     locale,
   );
@@ -155,6 +165,7 @@ export default async function ElectionsPage() {
                 })()}
               </p>
               <p className="text-xs text-muted">{te("promisesRule")}</p>
+              {locale !== "he" && <p className="text-xs text-muted">{te("namesTransliterated")}</p>}
               <p className="text-sm">
                 <Link href="/quiz" className="text-accent-ink underline">
                   {te("compassCta")}
@@ -185,7 +196,7 @@ export default async function ElectionsPage() {
                     )}
                     <div className="flex items-start justify-between gap-2">
                       <div className="font-semibold">
-                        <Link className="hover:underline" href={`/elections/${p.slug}`}>
+                        <Link className="hover:underline" href={listHref(p)}>
                           {partyText(p.name, locale)}
                         </Link>
                       </div>
@@ -367,11 +378,11 @@ export default async function ElectionsPage() {
                           {p.candidates.map((c, i) => (
                             <li key={c.he} value={i + 1} className="list-decimal">
                               {c.personId != null ? (
-                                <Link href={`/members/${c.personId}`} className="text-accent-ink underline" {...rtlAttrs(candidateName(c, locale))}>
-                                  {candidateName(c, locale)}
+                                <Link href={`/members/${c.personId}`} className="text-accent-ink underline" {...rtlAttrs(candidateName(c, locale, names))}>
+                                  {candidateName(c, locale, names)}
                                 </Link>
                               ) : (
-                                <span {...rtlAttrs(candidateName(c, locale))}>{candidateName(c, locale)}</span>
+                                <span {...rtlAttrs(candidateName(c, locale, names))}>{candidateName(c, locale, names)}</span>
                               )}
                             </li>
                           ))}
@@ -388,7 +399,7 @@ export default async function ElectionsPage() {
                       )}
                     </p>
                     <Link
-                      href={`/elections/${p.slug}`}
+                      href={listHref(p)}
                       className="block text-xs font-medium text-accent hover:underline"
                     >
                       {te("morePartyInfo")} {rtlLocales.has(locale) ? "←" : "→"}
@@ -451,8 +462,8 @@ export default async function ElectionsPage() {
                           {/* The head is candidate 1: an official spelling when there is one. */}
                           {(() => {
                             const first = l.candidates?.[0];
-                            const official = first && candidateName(first, locale) !== first.he ? candidateName(first, locale) : undefined;
-                            const name = official ?? l.head?.he ?? "";
+                            const shown = first ? candidateName(first, locale, names) : undefined;
+                            const name = shown && shown !== first!.he ? shown : l.head?.he ?? "";
                             return <span {...rtlAttrs(name)}>{name}</span>;
                           })()}
                         </td>
@@ -476,7 +487,7 @@ export default async function ElectionsPage() {
                               <ol className="mt-1 list-decimal space-y-0.5 ps-5">
                                 {l.candidates.slice(0, 20).map((c, i) => (
                                   <li key={i}>
-                                    <span {...rtlAttrs(candidateName(c, locale))}>{candidateName(c, locale)}</span>
+                                    <span {...rtlAttrs(candidateName(c, locale, names))}>{candidateName(c, locale, names)}</span>
                                     {c.party && (
                                       <span className="text-muted">
                                         {" · "}
@@ -499,6 +510,7 @@ export default async function ElectionsPage() {
                   </tbody>
                 </table>
               </div>
+              {locale !== "he" && <p className="mt-2 text-xs text-muted">{te("namesTransliterated")}</p>}
               <p className="mt-2 text-xs text-muted">
                 {te("cecSourceLine")}{" "}
                 <a

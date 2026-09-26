@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import {
@@ -6,7 +7,7 @@ import {
   factionName,
   factionColor,
 } from "@/lib/queries";
-import { getPartyProfile, getCoalitionConfig, partyText, partyTextAttrs } from "@/lib/content";
+import { getPartyProfile, getCoalitionConfig, partyText, partyTextAttrs, getRunningLists } from "@/lib/content";
 import { SourceLinks } from "@/components/SourceLinks";
 import { MinorityNote } from "@/components/MinorityNote";
 import { formatDate } from "@/lib/format";
@@ -21,6 +22,14 @@ export default async function PartiesPage() {
   const participation = getAllFactionAvgParticipation();
   const coalition = getCoalitionConfig();
   const coalitionSeats = factions.filter((f) => f.isCoalition).reduce((sum, f) => sum + f.seats, 0);
+  // Each faction's 2026 list: its own continuation (whose logo it shows) or
+  // the joint list it runs within.
+  const lists = getRunningLists();
+  const ownList = (id: number) => [...lists.values()].find((l) => l.factionId === id);
+  const list2026 = (id: number) => {
+    const slug = getPartyProfile(id)?.election2026?.slug;
+    return slug ? lists.get(slug) : undefined;
+  };
 
   return (
     <div className="space-y-6">
@@ -34,13 +43,26 @@ export default async function PartiesPage() {
             style={{ borderInlineStartColor: factionColor(f.id) }}
           >
             <div className="flex items-center gap-3">
-              <PartyEmblem
-                factionId={f.id}
-                nameHe={f.nameHe}
-                color={factionColor(f.id)}
-                size={44}
-                alt={factionName(f.id, f.nameHe, locale)}
-              />
+              {ownList(f.id)?.logo ? (
+                <Image
+                  src={ownList(f.id)!.logo!.src}
+                  alt={t("election.logoAlt", { name: partyText(ownList(f.id)!.name, locale) })}
+                  width={120}
+                  height={44}
+                  unoptimized
+                  className="shrink-0 rounded-md object-contain p-1"
+                  // Same white plate as everywhere a logo shows: brand marks are drawn for white.
+                  style={{ height: 44, width: "auto", maxWidth: 120, backgroundColor: "#fff" }}
+                />
+              ) : (
+                <PartyEmblem
+                  factionId={f.id}
+                  nameHe={f.nameHe}
+                  color={factionColor(f.id)}
+                  size={44}
+                  alt={factionName(f.id, f.nameHe, locale)}
+                />
+              )}
               <h2 className="text-lg font-semibold flex-1">
                 {factionName(f.id, f.nameHe, locale)}
               </h2>
@@ -56,6 +78,14 @@ export default async function PartiesPage() {
               <div className="text-sm text-muted mt-1">
                 {t("votes.originalHebrew")}:{" "}
                 <span dir="rtl" lang="he">{factionName(f.id, f.nameHe, "he")}</span>
+              </div>
+            )}
+            {list2026(f.id) && (
+              <div className="mt-1 text-sm">
+                <span className="text-muted">{t("party.election2026")}: </span>
+                <span className="font-medium" {...partyTextAttrs(list2026(f.id)!.name, locale)}>
+                  {partyText(list2026(f.id)!.name, locale)}
+                </span>
               </div>
             )}
             {getPartyProfile(f.id)?.spectrum && (

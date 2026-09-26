@@ -1,4 +1,6 @@
-import { localizePage } from "@/lib/i18n-data";
+import Image from "next/image";
+import { ListSections } from "@/components/election/ListSections";
+import { localizePage, localizeData } from "@/lib/i18n-data";
 import { notFound } from "next/navigation";
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
@@ -14,6 +16,8 @@ import {
   partyTextAttrs,
   partyList,
   candidateName,
+  getRunningLists,
+  listHref,
 } from "@/lib/content";
 import { FactionStatusNote } from "@/components/FactionStatusNote";
 import { SourceLinks } from "@/components/SourceLinks";
@@ -73,6 +77,9 @@ export default async function PartyPage({
   // resolved against the registry card or the full submitted-lists table so
   // the list name, letters and head come from the CEC page, never retyped.
   const e2026 = profile?.election2026 ?? null;
+  // The list that continues this faction in 2026: its election sections and
+  // official logo live on this page (one page per party).
+  const ownList = [...getRunningLists().values()].find((l) => l.factionId === factionId);
   const e2026Party = e2026?.slug ? outlook?.parties.find((p) => p.slug === e2026.slug) : undefined;
   const e2026Row =
     e2026?.listNumber != null
@@ -90,13 +97,18 @@ export default async function PartyPage({
   const { loc } = localizePage([cec?.listName.he ?? e2026Row?.name.he, ...submittedBy2026], locale);
   const listName2026 = loc(cec?.listName.he ?? e2026Row?.name.he);
   const firstCandidate = e2026Row?.candidates?.[0];
-  const listHead2026 =
-    (firstCandidate && candidateName(firstCandidate, locale) !== firstCandidate.he ? candidateName(firstCandidate, locale) : undefined) ??
-    e2026Row?.head?.he ??
-    "";
+  const headNames = localizeData([firstCandidate?.he], locale); // the site's transliteration, never queued
+  const headShown = firstCandidate ? candidateName(firstCandidate, locale, headNames) : undefined;
+  const listHead2026 = headShown && headShown !== firstCandidate!.he ? headShown : e2026Row?.head?.he ?? "";
   const approvalDate = outlook?.keyDates?.find((d) => d.key === "kd-approval")?.date;
   const approvalText = approvalDate ? formatDate(approvalDate, locale) : "";
-  const listAnchor = e2026?.slug ? `/elections/${e2026.slug}` : "/elections#all-lists";
+  const e2026List = e2026?.slug ? getRunningLists().get(e2026.slug) : undefined;
+  // Its own list: the card on the elections page; a partner list: that list's page.
+  const listAnchor = !e2026List
+    ? "/elections#all-lists"
+    : e2026List.slug === ownList?.slug
+      ? `/elections#list-${e2026List.slug}`
+      : listHref(e2026List);
   const updates = [...(profile?.updates ?? [])].sort((a, b) => (a.date < b.date ? 1 : -1));
   const leaderMatches =
     electionParty?.leader?.he?.trim() === profile?.leaderHe?.trim();
@@ -124,13 +136,26 @@ export default async function PartyPage({
         style={{ borderInlineStartColor: factionColor(factionId) }}
       >
         <div className="flex flex-wrap items-center gap-4">
-          <PartyEmblem
-            factionId={factionId}
-            nameHe={faction.nameHe}
-            color={factionColor(factionId)}
-            size={72}
-            alt={factionName(factionId, faction.nameHe, locale)}
-          />
+          {ownList?.logo ? (
+            <Image
+              src={ownList.logo.src}
+              alt={t("election.logoAlt", { name: partyText(ownList.name, locale) })}
+              width={220}
+              height={64}
+              unoptimized
+              className="shrink-0 rounded-lg object-contain p-2"
+              // Same white plate as everywhere a logo shows: brand marks are drawn for white.
+              style={{ height: 64, width: "auto", maxWidth: 220, backgroundColor: "#fff" }}
+            />
+          ) : (
+            <PartyEmblem
+              factionId={factionId}
+              nameHe={faction.nameHe}
+              color={factionColor(factionId)}
+              size={72}
+              alt={factionName(factionId, faction.nameHe, locale)}
+            />
+          )}
           <h1 className="text-3xl font-bold">
             {factionName(factionId, faction.nameHe, locale)}
           </h1>
@@ -223,7 +248,16 @@ export default async function PartyPage({
                 {partyText(e2026.note, locale)}
               </p>
             )}
+            {e2026List?.website && (
+              <div>
+                <span className="text-muted">{t("election.officialSite")}: </span>
+                <a href={e2026List.website} target="_blank" rel="noopener noreferrer" className="font-medium text-accent hover:underline" dir="ltr">
+                  {new URL(e2026List.website).hostname.replace(/^www\./, "")}
+                </a>
+              </div>
+            )}
             <div className="flex flex-wrap gap-x-3 gap-y-1">
+              {ownList?.logo && <SourceLinks sources={[ownList.logo.source]} label={t("election.logoCredit")} />}
               {listUrl2026 && (
                 <a
                   className="text-xs underline text-muted hover:text-accent"
@@ -294,6 +328,8 @@ export default async function PartyPage({
           )}
         </div>
       </section>
+
+      {ownList && <ListSections slug={ownList.slug} />}
 
       {profile && (
         <section className="rounded-xl bg-white p-6 shadow-sm space-y-5">

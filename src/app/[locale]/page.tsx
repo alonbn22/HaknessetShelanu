@@ -245,7 +245,7 @@ export default async function HomePage() {
                 {block.data.map((e) => (
                   <li key={e.personId}>
                     <Link href={`/members/${e.personId}`} className={rowLink}>
-                      <MemberAvatar person={e.person} size={36} />
+                      <MemberAvatar person={e.person} name={personName(e.person, locale)} size={36} />
                       <span className="min-w-0 flex-1 truncate" {...rtlAttrs(personName(e.person, locale))}>
                         {personName(e.person, locale)}
                       </span>
@@ -284,8 +284,7 @@ export default async function HomePage() {
                   <Link
                     href={`/votes/${v.id}`}
                     className="block font-medium hover:underline"
-                    dir={title.translated ? undefined : "rtl"}
-                    lang={title.translated ? locale : "he"}
+                    {...localizedAttrs(title)}
                   >
                     {title.text}
                   </Link>
@@ -330,8 +329,7 @@ export default async function HomePage() {
                         <Link
                           href={`/votes/${v.id}`}
                           className="font-medium hover:underline"
-                          dir={title.translated ? undefined : "rtl"}
-                          lang={title.translated ? locale : "he"}
+                          {...localizedAttrs(title)}
                         >
                           {title.text}
                         </Link>
@@ -374,7 +372,7 @@ export default async function HomePage() {
               {activeLegislators.map((e) => (
                 <li key={e.person.id}>
                   <Link href={`/members/${e.person.id}`} className={rowLink}>
-                    <MemberAvatar person={e.person} size={36} />
+                    <MemberAvatar person={e.person} name={personName(e.person, locale)} size={36} />
                     <span className="min-w-0 flex-1 truncate" {...rtlAttrs(personName(e.person, locale))}>
                       {personName(e.person, locale)}
                     </span>

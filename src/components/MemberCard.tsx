@@ -25,7 +25,7 @@ export function MemberCard({
       href={`/members/${member.id}`}
       className={interactiveCardClass("xs", cx("flex items-center gap-3", !member.isSitting && "opacity-90"))}
     >
-      <MemberAvatar person={member} alt={personName(member, locale)} />
+      <MemberAvatar person={member} name={personName(member, locale)} />
       <div className="min-w-0 flex-1">
         <div className="flex items-center gap-2">
           <span className="font-semibold truncate" {...rtlAttrs(personName(member, locale))}>

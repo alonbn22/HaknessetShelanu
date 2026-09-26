@@ -1,7 +1,7 @@
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { rtlLocales } from "@/i18n/routing";
-import { getFactionMeta, getQuizFile, getRunningLists, listName, partyText } from "@/lib/content";
+import { getFactionMeta, getQuizFile, getRunningLists, listName, partyText, publisherName } from "@/lib/content";
 import { formatDate } from "@/lib/format";
 import { isHebrew } from "@/lib/text";
 import { MIN_ANSWERS } from "@/lib/quiz";
@@ -35,8 +35,8 @@ export default async function QuizPage() {
           recordOf: s.recordOf ? partyText(s.recordOf, locale) : undefined,
           sources: [s.source, ...(s.moreSources ?? [])].map((src) => ({
             url: src.url,
-            publisher: src.publisher ?? src.title,
-            publisherRtl: locale !== "he" && isHebrew(src.publisher ?? src.title),
+            publisher: publisherName(src.publisher, locale) ?? src.title,
+            publisherRtl: locale !== "he" && isHebrew(publisherName(src.publisher, locale) ?? src.title),
           })),
           quote: partyText(s.quote, locale),
         },

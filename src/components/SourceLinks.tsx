@@ -1,10 +1,12 @@
+import { useLocale } from "next-intl";
+import { publisherName } from "@/lib/content";
 import { rtlAttrs } from "@/lib/text";
 
 export type SourceRef = { url: string; title: string; publisher?: string };
 
 // "Source: publisher · publisher" — the always-visible credit line under a
-// fact. Publisher names are data (often Hebrew), so each link carries its own
-// direction; the title goes in the tooltip.
+// fact, the publisher named in the page's language (content/publishers.yaml);
+// the source's own title goes in the tooltip. Server-only (reads content/).
 export function SourceLinks({
   sources,
   label,
@@ -14,8 +16,9 @@ export function SourceLinks({
   label: string;
   className?: string;
 }) {
+  const locale = useLocale();
   if (sources.length === 0) return null;
-  const name = (s?: SourceRef) => s && (s.publisher ?? s.title);
+  const name = (s?: SourceRef) => s && (publisherName(s.publisher, locale) ?? s.title);
   return (
     <span className={className}>
       {label}:{" "}
@@ -35,7 +38,7 @@ export function SourceLinks({
               target="_blank"
               rel="noopener noreferrer"
               title={s.title}
-              aria-label={run ? `${name(s)}: ${s.title}` : undefined}
+              aria-label={run ? `${name(s)} ${pos + 1}` : undefined}
               {...rtlAttrs(text)}
             >
               {text}

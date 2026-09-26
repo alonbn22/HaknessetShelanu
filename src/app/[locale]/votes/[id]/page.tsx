@@ -60,6 +60,7 @@ export default async function VotePage({
   const dataHe = [
     vote.titleHe,
     vote.itemName,
+    vote.forDesc,
     bill?.subTypeDesc,
     ...results.map((r) => r.factionNameHe),
   ];
@@ -124,8 +125,7 @@ export default async function VotePage({
         </div>
         <h1
           className="text-2xl font-bold leading-snug"
-          dir={title.translated ? undefined : "rtl"}
-          lang={title.translated ? locale : "he"}
+          {...localizedAttrs(title)}
         >
           {title.text}
         </h1>
@@ -170,7 +170,7 @@ export default async function VotePage({
             <p className="text-xs text-muted pt-1">{t("votes.aboutNote")}</p>
           </div>
         )}
-        <VoteMeaning forDesc={vote.forDesc} titleHe={vote.titleHe} />
+        <VoteMeaning forDesc={vote.forDesc} titleHe={vote.titleHe} option={localOf(vote.forDesc)} />
       </section>
 
       {bill && (
@@ -219,7 +219,7 @@ export default async function VotePage({
                     href={`/members/${p.id}`}
                     className="inline-flex items-center gap-1.5 rounded-full bg-black/5 py-1 pe-3 ps-1 text-sm hover:bg-black/10"
                   >
-                    <MemberAvatar person={p} size={24} />
+                    <MemberAvatar person={p} name={personName(p, locale)} size={24} />
                     <span {...rtlAttrs(personName(p, locale))}>{personName(p, locale)}</span>
                   </Link>
                 ))}
@@ -242,7 +242,7 @@ export default async function VotePage({
       </section>
 
       <div className="pt-2">
-        <FeedbackActions context={vote.titleHe ?? `Vote ${vote.id}`} subject="vote" />
+        <FeedbackActions context={title.text || `Vote ${vote.id}`} subject="vote" />
       </div>
     </div>
   );

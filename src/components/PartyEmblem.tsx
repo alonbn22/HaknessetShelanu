@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { isHebrew, rtlAttrs } from "@/lib/text";
 
 // Original brand-color wordmark emblems (NOT the trademarked party logos).
 // Files live in public/assets/party/<factionId>.png.
@@ -17,12 +18,13 @@ export function PartyEmblem({
   nameHe: string;
   color: string;
   size?: number;
-  // Localized accessible name (falls back to Hebrew). Visible tile stays Hebrew;
-  // announced name matches the page language (WCAG 3.1.2).
+  // The name in the page's language (falls back to Hebrew): the tile's text and
+  // its accessible name, so a non-Hebrew page shows no Hebrew (WCAG 3.1.2).
   alt?: string;
 }) {
   const label = alt ?? nameHe;
-  if (EMBLEM_IDS.has(factionId)) {
+  // The drawn emblems spell the name in Hebrew: Hebrew pages only.
+  if (EMBLEM_IDS.has(factionId) && isHebrew(label)) {
     return (
       <Image
         src={`/assets/party/${factionId}.png`}
@@ -46,12 +48,11 @@ export function PartyEmblem({
         fontSize: Math.max(10, size / 7),
         lineHeight: 1.1,
       }}
-      dir="rtl"
-      lang="he"
+      {...rtlAttrs(label)}
       role="img"
       aria-label={label}
     >
-      <span aria-hidden>{nameHe}</span>
+      <span aria-hidden>{label}</span>
     </div>
   );
 }

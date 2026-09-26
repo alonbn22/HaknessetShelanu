@@ -1,3 +1,4 @@
+import { localizePage } from "@/lib/i18n-data";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getTranslations, getLocale } from "next-intl/server";
@@ -14,11 +15,12 @@ import {
   getRunningLists,
   partyText,
   partyTextAttrs,
+  candidateName,
 } from "@/lib/content";
 import { formatDate, formatNumber } from "@/lib/format";
 import { factionColor, factionName, getFaction, getFactionAvgParticipation } from "@/lib/queries";
 import { pollOfPolls } from "@/lib/polls";
-import { rtlAttrs } from "@/lib/text";
+import { rtlAttrs, localizedAttrs } from "@/lib/text";
 
 export const dynamic = "force-dynamic";
 
@@ -48,6 +50,8 @@ export default async function ListPage({ params }: { params: Promise<{ slug: str
   const faction = list.factionId != null ? getFaction(list.factionId) : undefined;
   const profile = list.factionId != null ? getPartyProfile(list.factionId) : undefined;
   const color = list.factionId != null ? factionColor(list.factionId) : list.color ?? "#888888";
+  // The CEC's registered list name is data text: translated by the unified cache.
+  const { loc } = localizePage([list.cec?.listName.he], locale);
   const participation = list.factionId != null ? getFactionAvgParticipation(list.factionId) : null;
   const surplus = outlook?.surplusAgreements.find((a) => a.between.includes(slug));
   const surplusOther = surplus ? outlook?.parties.find((o) => o.slug === surplus.between.find((s) => s !== slug)) : undefined;
@@ -86,7 +90,7 @@ export default async function ListPage({ params }: { params: Promise<{ slug: str
             </h1>
             {list.cec && (
               <p className="text-sm text-muted">
-                <span dir="rtl" lang="he">{list.cec.listName.he}</span>
+                <span {...localizedAttrs(loc(list.cec.listName.he))}>{loc(list.cec.listName.he).text}</span>
                 {" · "}
                 <a href={list.cec.url} target="_blank" rel="noopener noreferrer" className="underline hover:text-accent-ink">
                   <span dir="rtl" lang="he" className="font-bold">{list.cec.letters}</span>{" "}
@@ -283,15 +287,15 @@ export default async function ListPage({ params }: { params: Promise<{ slug: str
           <h2 className="text-xl font-semibold">
             {t("election.candidates")} <span className="text-base font-normal text-muted tabular-nums">({list.candidates.length})</span>
           </h2>
-          <ol className="columns-2 gap-x-6 ps-5 text-sm leading-relaxed sm:columns-3 [&>li]:break-inside-avoid" dir="rtl" lang="he">
+          <ol className="columns-2 gap-x-6 ps-5 text-sm leading-relaxed sm:columns-3 [&>li]:break-inside-avoid">
             {list.candidates.map((c, i) => (
               <li key={c.he} value={i + 1} className="list-decimal">
                 {c.personId != null ? (
-                  <Link href={`/members/${c.personId}`} className="text-accent-ink underline">
-                    {c.he}
+                  <Link href={`/members/${c.personId}`} className="text-accent-ink underline" {...rtlAttrs(candidateName(c, locale))}>
+                    {candidateName(c, locale)}
                   </Link>
                 ) : (
-                  c.he
+                  <span {...rtlAttrs(candidateName(c, locale))}>{candidateName(c, locale)}</span>
                 )}
               </li>
             ))}

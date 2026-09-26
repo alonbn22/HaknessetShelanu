@@ -33,7 +33,7 @@ export default async function MinistersPage() {
             href={`/members/${m.id}`}
             className="flex items-start gap-3 rounded-xl bg-white p-4 shadow-sm hover:shadow-md transition-shadow"
           >
-            <MemberAvatar person={m} size={48} />
+            <MemberAvatar person={m} name={personName(m, locale)} size={48} />
             <div className="min-w-0 flex-1">
               <div className="flex items-center gap-2">
                 <span className="font-semibold truncate" {...rtlAttrs(personName(m, locale))}>

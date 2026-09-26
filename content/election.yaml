@@ -367,32 +367,32 @@ parties:
       es: "Presentada el 8 de septiembre de 2026 con el primer ministro Netanyahu a la cabeza; Eli Cohen, Amir Ohana, Yariv Levin, Miri Regev e Israel Katz ocupan los puestos 2 a 6, Gideon Sa'ar es séptimo."
       fr: "Déposée le 8 septembre 2026 avec le Premier ministre Netanyahou en tête ; Eli Cohen, Amir Ohana, Yariv Levin, Miri Regev et Israël Katz occupent les places 2 à 6, Gideon Sa'ar est septième."
     candidates:
-      - { he: "בנימין נתניהו", personId: 965 }
+      - { he: "בנימין נתניהו", en: "Benjamin Netanyahu", ar: "بنيامين نتنياهو", ru: "Биньямин Нетаньяху", personId: 965 }
       - { he: "אליהו כהן" }
-      - { he: "אמיר אוחנה", personId: 30300 }
-      - { he: "יריב גדעון לוין" }
+      - { he: "אמיר אוחנה", en: "Amir Ohana", ar: "أمير أوحانا", ru: "Амир Охана", personId: 30300 }
+      - { he: "יריב גדעון לוין", en: "Yariv Levin", ar: "ياريف ليفين", ru: "Ярив Левин" }
       - { he: "מרים רגב" }
-      - { he: "ישראל כץ", personId: 468 }
-      - { he: "גדעון משה סער" }
-      - { he: "אופיר כץ", personId: 30701 }
+      - { he: "ישראל כץ", en: "Israel Katz", ar: "يسرائيل كاتس", ru: "Исраэль Кац", personId: 468 }
+      - { he: "גדעון משה סער", en: "Gideon Sa'ar", ar: "جدعون ساعر", ru: "Гидеон Саар" }
+      - { he: "אופיר כץ", en: "Ofir Katz", ar: "أوفير كاتس", ru: "Офир Кац", personId: 30701 }
       - { he: "טלי גואילי" }
-      - { he: "יואב קיש", personId: 30057 }
+      - { he: "יואב קיש", en: "Yoav Kisch", ar: "يوآف كيش", ru: "Йоав Киш", personId: 30057 }
       - { he: "יעקב ברדוגו" }
       - { he: "מכלוף זוהר" }
-      - { he: "אלמוג כהן", personId: 30833 }
-      - { he: "עמיחי שיקלי", personId: 30786 }
+      - { he: "אלמוג כהן", en: "Almog Cohen", ar: "ألموغ كوهين", ru: "Альмог Коэн", personId: 30833 }
+      - { he: "עמיחי שיקלי", en: "Amichai Chikli", ar: "عميحاي شيكلي", ru: "Амихай Шикли", personId: 30786 }
       - { he: "אלישע מדן" }
       - { he: "דוד פטר" }
-      - { he: "משה סעדה", personId: 30853 }
-      - { he: "חיים כץ", personId: 556 }
-      - { he: "דוד אמסלם", personId: 23564 }
+      - { he: "משה סעדה", en: "Moshe Saada", ar: "موشيه سعادة", ru: "Моше Саада", personId: 30853 }
+      - { he: "חיים כץ", en: "Haim Katz", ar: "حاييم كاتس", ru: "Хаим Кац", personId: 556 }
+      - { he: "דוד אמסלם", en: "David Amsalem", ar: "دافيد أمسالم", ru: "Давид Амсалем", personId: 23564 }
       - { he: "אתי-חוה עטייה" }
-      - { he: "בועז ביסמוט", personId: 30835 }
-      - { he: "דוד ביטן", personId: 23558 }
-      - { he: "שלמה קרעי", personId: 30704 }
-      - { he: "ניר ברקת", personId: 30700 }
+      - { he: "בועז ביסמוט", en: "Boaz Bismuth", ar: "بوعاز بيسموت", ru: "Боаз Бисмут", personId: 30835 }
+      - { he: "דוד ביטן", en: "David Bitan", ar: "دافيد بيطان", ru: "Давид Битан", personId: 23558 }
+      - { he: "שלמה קרעי", en: "Shlomo Karhi", ar: "شلومو قرعي", ru: "Шломо Каръи", personId: 30704 }
+      - { he: "ניר ברקת", en: "Nir Barkat", ar: "نير بركات", ru: "Нир Баркат", personId: 30700 }
       - { he: "גילה גמליאל דמרי" }
-      - { he: "אלי גולדשמידט" }
+      - { he: "אלי גולדשמידט", en: "Elie Goldschmidt", ar: "إيلي جولدشميدت", ru: "Эли Гольдшмидт" }
       - { he: "ארז תדמור" }
       - { he: "שלמה יוסף לרנר" }
       - { he: "יצחק בונצל" }
@@ -457,26 +457,26 @@ parties:
       es: "La lista «Juntos, con Bennett a la cabeza» (Juntos y Yesh Atid) fue la primera en presentarse, el 7 de septiembre de 2026; Yair Lapid es segundo. Las conversaciones de fusión con ¡Yashar! de Eisenkot no produjeron una lista conjunta."
       fr: "La liste « Ensemble menée par Bennett » (Ensemble et Yesh Atid) a été la première déposée, le 7 septembre 2026 ; Yaïr Lapid est deuxième. Les pourparlers de fusion avec Yashar! d’Eisenkot n’ont pas abouti à une liste commune."
     candidates:
-      - { he: "נפתלי בנט" }
-      - { he: "יאיר לפיד", personId: 23594 }
+      - { he: "נפתלי בנט", en: "Naftali Bennett", ar: "نفتالي بينيت", ru: "Нафтали Беннет" }
+      - { he: "יאיר לפיד", en: "Yair Lapid", ar: "يائير لابيد", ru: "Яир Лапид", personId: 23594 }
       - { he: "קרן טרנר אייל" }
-      - { he: "מירב בן ארי", personId: 30102 }
+      - { he: "מירב בן ארי", en: "Merav Ben Ari", ar: "ميراف بن آري", ru: "Мейрав Бен Ари", personId: 30102 }
       - { he: "לירן אבישר בן חורין" }
       - { he: "נעם תיבון" }
       - { he: "מיכל הירש נגרי" }
-      - { he: "איתן גינזבורג", personId: 30693 }
-      - { he: "מירב כהן", personId: 30686 }
+      - { he: "איתן גינזבורג", en: "Eitan Ginzburg", ar: "إيتان غينزبورغ", ru: "Эйтан Гинзбург", personId: 30693 }
+      - { he: "מירב כהן", en: "Meirav Cohen", ar: "ميراف كوهين", ru: "Мейрав Коэн", personId: 30686 }
       - { he: "יונתן שלו" }
       - { he: "ברוריה נעים ארמן" }
-      - { he: "רם בן ברק", personId: 30691 }
+      - { he: "רם בן ברק", en: "Ram Ben Barak", ar: "رام بن باراك", ru: "Рам Бен-Барак", personId: 30691 }
       - { he: "אמיר סטרוגו" }
-      - { he: "נאור שירי", personId: 30854 }
+      - { he: "נאור שירי", en: "Naor Shiri", ar: "ناؤور شيري", ru: "Наор Шири", personId: 30854 }
       - { he: "ניסן זאבי" }
-      - { he: "ולדימיר בליאק", personId: 30776 }
+      - { he: "ולדימיר בליאק", en: "Vladimir Beliak", ar: "فلاديمير بلياك", ru: "Владимир Белиак", personId: 30776 }
       - { he: "אורלי אלידן-הראל" }
-      - { he: "יוראי להב הרצנו", personId: 30720 }
+      - { he: "יוראי להב הרצנו", en: "Yorai Lahav Hertzanu", ar: "يوراي لاهف هرتسانو", ru: "Йорай Лаав-Эрцану", personId: 30720 }
       - { he: "שחר ורון" }
-      - { he: "יסמין פרידמן", personId: 30783 }
+      - { he: "יסמין פרידמן", en: "Yasmin Fridman", ar: "ياسمين فريدمان", ru: "Ясмин Фридман", personId: 30783 }
     # The list's own site and its first headlined commitments, read there 24–25 Sep 2026.
     website: "https://be-yahad.org.il/"
     # The list's own mark as hosted on Wikimedia Commons (a public-domain text logo),
@@ -532,23 +532,23 @@ parties:
       es: "Presentada el 7 de septiembre de 2026. La lista incluye al exjefe del Shin Bet Yoram Cohen (2), Orit Farkash-Hacohen (3), Matan Kahana (5) y Hili Tropper (6), cuya candidatura se había anunciado antes dentro de una alianza con Yoaz Hendel."
       fr: "Déposée le 7 septembre 2026. La liste compte l’ancien chef du Shin Bet Yoram Cohen (2), Orit Farkash-Hacohen (3), Matan Kahana (5) et Hili Tropper (6), ce dernier ayant été annoncé auparavant dans une alliance avec Yoaz Hendel."
     candidates:
-      - { he: "גדי איזנקוט" }
+      - { he: "גדי איזנקוט", en: "Gadi Eisenkot", ar: "غادي أيزنكوت", ru: "Гади Айзенкот" }
       - { he: "יורם כהן" }
-      - { he: "אורית פרקש-הכהן" }
+      - { he: "אורית פרקש-הכהן", en: "Orit Farkash Hacohen", ar: "أوريت فركاش هكوهين", ru: "Орит Фаркаш-ХаКоэн" }
       - { he: "עדי אלטשולר" }
-      - { he: "מתן כהנא" }
-      - { he: "חילי טרופר", personId: 30683 }
+      - { he: "מתן כהנא", en: "Matan Kahana", ar: "متان كهانا", ru: "Матан Кахана" }
+      - { he: "חילי טרופר", en: "Chili Tropper", ar: "يحيئيل موشيه تروبر", ru: "Йехиэль Моше Троппер", personId: 30683 }
       - { he: "שאול מרידור" }
       - { he: "תאיר איפרגן" }
       - { he: "אושרת גני גונן" }
       - { he: "שירה שפירא" }
       - { he: "ענבר הרוש גיטי" }
-      - { he: "אלעזר שטרן", personId: 23591 }
+      - { he: "אלעזר שטרן", en: "Elazar Stern", ar: "إلعازار شتيرن", ru: "Элазар Штерн", personId: 23591 }
       - { he: "כמיל אבו רוקן" }
       - { he: "דבורה בכר" }
       - { he: "אלקס ריף" }
       - { he: "ענבר יחזקאלי בליליוס" }
-      - { he: "רועי פולקמן" }
+      - { he: "רועי פולקמן", en: "Roy Folkman", ar: "روعي فولكمان", ru: "Рои Фолькман" }
       - { he: "ישראל דרי" }
       - { he: "טל אוחנה" }
       - { he: "אליסף פרץ" }
@@ -616,14 +616,14 @@ parties:
       es: "El partido surgido de la fusión del Partido Laborista y Meretz presentó su lista el 7 de septiembre de 2026; Naama Lazimi, Gilad Kariv y Efrat Rayten ocupan los puestos 2 a 4."
       fr: "Le parti issu de la fusion Travaillistes–Meretz a déposé sa liste le 7 septembre 2026 ; Naama Lazimi, Gilad Kariv et Efrat Rayten occupent les places 2 à 4."
     candidates:
-      - { he: "יאיר גולן" }
-      - { he: "נעמה לזימי", personId: 30106 }
-      - { he: "גלעד קריב", personId: 30807 }
+      - { he: "יאיר גולן", en: "Yair Golan", ar: "يائير جولان", ru: "Яир Голан" }
+      - { he: "נעמה לזימי", en: "Naama Lazimi", ar: "نعماه لازيمي", ru: "Наама Лазими", personId: 30106 }
+      - { he: "גלעד קריב", en: "Gilad Kariv", ar: "جلعاد كاريف", ru: "Гилад Карив", personId: 30807 }
       - { he: "אפרת רייטן" }
       - { he: "יאיר פינק" }
       - { he: "גבריאלה לסקי שוץ" }
       - { he: "עמרי רונן" }
-      - { he: "מיכל רוזין" }
+      - { he: "מיכל רוזין", en: "Michal Rozin", ar: "ميخال روزين", ru: "Михаль Розин" }
       - { he: "משה רדמן" }
       - { he: "סומייה בשיר" }
       - { he: "נמרוד שפר" }
@@ -694,13 +694,13 @@ parties:
       es: "Presentada el 8 de septiembre de 2026 por Azul y Blanco – Resiliencia para Israel: Benny Gantz la encabeza, Pnina Tamano es segunda, Geula Aliza Bloch tercera, Roi Konkol cuarto y Alon Schuster sexto (según la página de la lista en el sitio de la Comisión Electoral)."
       fr: "Déposée le 8 septembre 2026 par Bleu et Blanc – Résilience pour Israël : Benny Gantz en tête, Pnina Tamano deuxième, Geula Aliza Bloch troisième, Roi Konkol quatrième et Alon Schuster sixième (selon la page de la liste sur le site de la Commission électorale)."
     candidates:
-      - { he: "בנימין גנץ", personId: 30657 }
-      - { he: "פנינה תמנו", personId: 23635 }
+      - { he: "בנימין גנץ", en: "Benjamin Gantz", ar: "بيني غانتس", ru: "Бени Ганц", personId: 30657 }
+      - { he: "פנינה תמנו", en: "Pnina Tameno", ar: "بنينا تمانو", ru: "Пнина Тамено", personId: 23635 }
       - { he: "גאולה עליזה בלוך" }
       - { he: "רועי קונקול" }
       - { he: "צאליק רתם אבידר" }
-      - { he: "אלון שוסטר", personId: 30694 }
-      - { he: "מופיד מרעי" }
+      - { he: "אלון שוסטר", en: "Alon Schuster", ar: "ألون شوستر", ru: "Алон Натан Шустер", personId: 30694 }
+      - { he: "מופיד מרעי", en: "Mufid Mari'", ar: "مفيد مرعي", ru: "Муфид Марьи" }
       - { he: "מלכה יהודית אוליאל" }
     # The list's own site and its first headlined commitments, read there 24–25 Sep 2026.
     website: "https://kachollavan.org.il/"
@@ -755,20 +755,20 @@ parties:
       es: "Presentada el 7 de septiembre de 2026; Rafi Ben Shitrit es segundo, y los diputados en funciones Oded Forer (4), Yulia Malinovsky (5), Hamad Amar (7) y Evgeny Sova (8) están en la lista. Dan Illouz, exdiputado del Likud, es décimo."
       fr: "Déposée le 7 septembre 2026 ; Rafi Ben Shitrit est deuxième, et les députés en exercice Oded Forer (4), Yulia Malinovsky (5), Hamad Amar (7) et Evgeny Sova (8) figurent sur la liste. Dan Illouz, ancien député du Likoud, est dixième."
     candidates:
-      - { he: "אביגדור ליברמן", personId: 427 }
+      - { he: "אביגדור ליברמן", en: "Avigdor Liberman", ar: "أفيغدور ليبرمان", ru: "Авигдор Либерман", personId: 427 }
       - { he: "רפי בן שטרית" }
       - { he: "טליה לנקרי" }
-      - { he: "עודד פורר", personId: 30121 }
-      - { he: "יוליה מלינובסקי", personId: 23560 }
+      - { he: "עודד פורר", en: "Oded Forer", ar: "عوديد فورير", ru: "Одед Форер", personId: 30121 }
+      - { he: "יוליה מלינובסקי", en: "Yulia Malinovsky", ar: "يوليا مالينوفسكي", ru: "Юлия Малиновская-Кунин", personId: 23560 }
       - { he: "שרון שרעבי" }
-      - { he: "חמד עמאר", personId: 12938 }
-      - { he: "יבגני סובה", personId: 30722 }
+      - { he: "חמד עמאר", en: "Hamad Amar", ar: "حمد عمار", ru: "Хамад Амар", personId: 12938 }
+      - { he: "יבגני סובה", en: "Evgeny Sova", ar: "يفغيني صوفا", ru: "Евгений Сова", personId: 30722 }
       - { he: "אלוירה קוליחמן" }
-      - { he: "דן אילוז", personId: 30839 }
+      - { he: "דן אילוז", en: "Dan Illouz", ar: "دان إيلوز", ru: "Дан Илуз", personId: 30839 }
       - { he: "לילי בן עמי" }
       - { he: "יעל בנבנישתי" }
-      - { he: "דוד אזולאי" }
-      - { he: "לימור מגן תלם" }
+      - { he: "דוד אזולאי", en: "David Azoulay", ar: "دافيد أزولاي", ru: "Давид Азулай" }
+      - { he: "לימור מגן תלם", en: "Limor Magen Telem", ar: "ليمور ماغين تيليم", ru: "Лимор Маген-Телем" }
       - { he: "ישראל בן שטרית" }
     # The list's own site and its first headlined commitments, read there 24–25 Sep 2026.
     website: "https://beytenu.org.il/"
@@ -822,14 +822,14 @@ parties:
       fr: "Déposée le 8 septembre 2026 ; Yinon Azulai, Michael Malkieli et Yoav Ben-Tzur occupent les places 2 à 4."
     candidates:
       - { he: "אריה דרעי" }
-      - { he: "ינון אזולאי", personId: 30601 }
-      - { he: "מיכאל מלכיאלי", personId: 30470 }
-      - { he: "יואב בן צור", personId: 28513 }
-      - { he: "חיים ביטון", personId: 30804 }
+      - { he: "ינון אזולאי", en: "Yinon Azoulay", ar: "ينون أزولاي", ru: "Инон Азулай", personId: 30601 }
+      - { he: "מיכאל מלכיאלי", en: "Michael Malkieli", ar: "ميخائيل ملكيئيلي", ru: "Михаэль Малкиэли", personId: 30470 }
+      - { he: "יואב בן צור", en: "Yoav Ben Tzur", ar: "يوآف بن تسور", ru: "Йоав Бен-Цур", personId: 28513 }
+      - { he: "חיים ביטון", en: "Haim Biton", ar: "حاييم بيطون", ru: "Хаим Битон", personId: 30804 }
       - { he: "דרור עמוס" }
-      - { he: "משה אבוטבול", personId: 30749 }
-      - { he: "אוריאל בוסו", personId: 30765 }
-      - { he: "יוסף טייב", personId: 30770 }
+      - { he: "משה אבוטבול", en: "Moshe Abutbul", ar: "موشيه أبو طبول", ru: "Моше Абутбуль", personId: 30749 }
+      - { he: "אוריאל בוסו", en: "Uriel Busso", ar: "أوريئيل بوسو", ru: "Уриэль Буссо", personId: 30765 }
+      - { he: "יוסף טייב", en: "Yosef Taieb", ar: "يوسيف طيب", ru: "Йосеф Тайеб", personId: 30770 }
       - { he: "יונתן משריקי" }
     # The list's own mark as hosted on Wikimedia Commons (a public-domain text logo),
     # compared by eye with what the list itself shows now (25 Sep 2026).
@@ -860,18 +860,18 @@ parties:
       es: "Presentada el 8 de septiembre de 2026 con Yaakov Asher (Degel HaTorá) a la cabeza; Yitzhak Goldknopf, que encabezó la lista de 2022 y dirige Agudat Yisrael, es segundo, Meir Porush cuarto. Moshe Gafni y Uri Maklev no están en la lista."
       fr: "Déposée le 8 septembre 2026 avec Yaakov Asher (Degel HaTorah) en tête ; Yitzhak Goldknopf, tête de liste en 2022 et chef d’Agoudat Israël, est deuxième, Meir Porush quatrième. Moshe Gafni et Uri Maklev ne figurent pas sur la liste."
     candidates:
-      - { he: "יעקב אשר", personId: 23641 }
+      - { he: "יעקב אשר", en: "Yaakov Asher", ar: "يعقوب آشير", ru: "Яаков Ашер", personId: 23641 }
       - { he: "יצחק גולדקנופף" }
-      - { he: "יצחק פינדרוס", personId: 30672 }
-      - { he: "מאיר פרוש", personId: 563 }
+      - { he: "יצחק פינדרוס", en: "Yitzhak Ze'ev Pindrus", ar: "إسحاق زئيف بيندروس", ru: "Ицхак Зеэв Пиндрус", personId: 30672 }
+      - { he: "מאיר פרוש", en: "Meir Porush", ar: "مئير بوروش", ru: "Меир Поруш", personId: 563 }
       - { he: "משה רוזנטל" }
       - { he: "אלי שטארק" }
       - { he: "יהודה לייב וויספיש" }
-      - { he: "יעקב טסלר", personId: 30671 }
+      - { he: "יעקב טסלר", en: "Yaakov Tesler", ar: "يعقوب تيسلير", ru: "Яков Теслер", personId: 30671 }
       - { he: "דוד זלץ" }
       - { he: "דוד אוחנה" }
-      - { he: "משה רוט" }
-      - { he: "אליהו ברוכי" }
+      - { he: "משה רוט", en: "Moshe Roth", ar: "موشيه روط", ru: "Моше Рот" }
+      - { he: "אליהו ברוכי", en: "Eliyahu Baruchi", ar: "إلياهو باروخي", ru: "Элияху Барухи" }
     sources:
       - { url: "https://www.gov.il/he/pages/yahadut-degel_list37", title: "יהדות התורה והשבת אגודת ישראל - דגל התורה — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
@@ -898,10 +898,10 @@ parties:
       es: "Sionismo Religioso y Zehut de Moshe Feiglin se presentan en una sola lista (bloque técnico), presentada el 8 de septiembre de 2026: Smotrich la encabeza, Feiglin es segundo, seguidos de Orit Strook y Simcha Rothman."
       fr: "Le Sionisme religieux et Zehut de Moshe Feiglin se présentent sur une seule liste (bloc technique), déposée le 8 septembre 2026 : Smotrich en tête, Feiglin deuxième, suivis d’Orit Strook et de Simcha Rothman."
     candidates:
-      - { he: "בצלאל סמוטריץ'", personId: 30055 }
+      - { he: "בצלאל סמוטריץ'", en: "Bezalel Smotrich", ar: "بتسلئيل سموتريتش", ru: "Бецалель Смотрич", personId: 30055 }
       - { he: "משה פייגלין" }
-      - { he: "אורית סטרוק" }
-      - { he: "שמחה רוטמן", personId: 30812 }
+      - { he: "אורית סטרוק", en: "Orit Malka Strock", ar: "أوريت ستروك", ru: "Орит Струк" }
+      - { he: "שמחה רוטמן", en: "Simcha Rothman", ar: "سيمحا روتمان", ru: "Симха Ротман", personId: 30812 }
       - { he: "צבי מור" }
       - { he: "איתמר איתם" }
       - { he: "צבי סוכות" }
@@ -964,12 +964,12 @@ parties:
       es: "Presentada el 7 de septiembre de 2026; Tally Gotliv es segunda, el jefe de gabinete Hanamel Dorfman séptimo."
       fr: "Déposée le 7 septembre 2026 ; Tally Gotliv est deuxième, le chef de cabinet Hanamel Dorfman septième."
     candidates:
-      - { he: "איתמר בן גביר", personId: 30811 }
-      - { he: "טלי גוטליב", personId: 30860 }
+      - { he: "איתמר בן גביר", en: "Itamar Ben Gvir", ar: "إيتمار بن غفير", ru: "Итамар Бен-Гвир", personId: 30811 }
+      - { he: "טלי גוטליב", en: "Tally Gotliv", ar: "تالي غوتليب", ru: "Ревиталь Готлиб", personId: 30860 }
       - { he: "יצחק וסרלאוף" }
-      - { he: "עמיחי אליהו", personId: 30857 }
-      - { he: "לימור סון הר-מלך" }
-      - { he: "יצחק קרויזר", personId: 30867 }
+      - { he: "עמיחי אליהו", en: "Amichay Eliyahu", ar: "عميحاي إلياهو", ru: "Амихай Элияху", personId: 30857 }
+      - { he: "לימור סון הר-מלך", en: "Limor Sonn Har Melech", ar: "ليمور سون هار ميليخ", ru: "Лимор Сонн Хар-Мелех" }
+      - { he: "יצחק קרויזר", en: "Yitzhak Kroizer", ar: "إسحاق كرويزر", ru: "Ицхак Кройзер", personId: 30867 }
       - { he: "חנמאל דורפמן" }
       - { he: "צחי אליהו" }
       - { he: "יוסי גולדברגר" }
@@ -1040,12 +1040,12 @@ parties:
       es: "Presentada el 7 de septiembre de 2026; Yoav Segalovitz, exdiputado de Yesh Atid, es segundo. El 23 de septiembre de 2026 la Comisión Electoral Central votó 18 a 5, en contra de la postura de la asesora jurídica del Gobierno, inhabilitar la lista; Ra'am rechaza las acusaciones y puede recurrir ante el Tribunal Supremo hasta el 29 de septiembre."
       fr: "Déposée le 7 septembre 2026 ; Yoav Segalovitz, ancien député de Yesh Atid, est deuxième. Le 23 septembre 2026, la Commission électorale centrale a voté par 18 voix contre 5, contrairement à la position de la conseillère juridique du gouvernement, l’invalidation de la liste ; Ra'am rejette les accusations et peut faire appel devant la Cour suprême jusqu’au 29 septembre."
     candidates:
-      - { he: "מנסור עבאס", personId: 30713 }
-      - { he: "יואב סגלוביץ'", personId: 30695 }
-      - { he: "ווליד טאהא", personId: 30752 }
+      - { he: "מנסור עבאס", en: "Mansour Abbas", ar: "منصور عباس", ru: "Мансур Аббас", personId: 30713 }
+      - { he: "יואב סגלוביץ'", en: "Yoav Segalovitz", ar: "يوآف سيغالوفيتس", ru: "Йоав Сегалович", personId: 30695 }
+      - { he: "ווליד טאהא", en: "Waleed Taha", ar: "وليد طه", ru: "Валид Таха", personId: 30752 }
       - { he: "ואליד אל הואשלה" }
       - { he: "אימאן יאסין חטיב" }
-      - { he: "יאסר חוגיראת", personId: 30843 }
+      - { he: "יאסר חוגיראת", en: "Yasir Hujeirat", ar: "ياسر حجيرات", ru: "Ясер Худжират", personId: 30843 }
       - { he: "איברהים אל טורי" }
       - { he: "עבד אל כרים מסרי" }
       - { he: "עבד אל כרים עזאם" }
@@ -1083,11 +1083,11 @@ parties:
       fr: "Hadash, Ta'al et Balad se présentent de nouveau sur une seule liste : Jabareen en tête, Ahmad Tibi (Ta'al) deuxième et Sami Abu Shehadeh (Balad) troisième. Le 23 septembre 2026, la Commission électorale centrale a voté par 18 voix contre 5 l’invalidation de la liste — la conseillère juridique du gouvernement s’y était opposée — et, séparément, celle des candidats Sami Abu Shehadeh et Ofer Cassif, qui rejettent les accusations. La liste peut faire appel devant la Cour suprême jusqu’au 29 septembre, et l’invalidation d’un candidat doit être approuvée par la Cour."
     candidates:
       - { he: "יוסף גבארין" }
-      - { he: "אחמד טיבי", personId: 560 }
+      - { he: "אחמד טיבי", en: "Ahmad Tibi", ar: "أحمد طيبي", ru: "Ахмад Тиби", personId: 560 }
       - { he: "סאמי אבו שחאדה" }
       - { he: "פאתן ג'טאס" }
       - { he: "בכר עואודה" }
-      - { he: "עופר כסיף", personId: 30719 }
+      - { he: "עופר כסיף", en: "Ofer Cassif", ar: "عوفر كسيف", ru: "Офер Касиф", personId: 30719 }
       - { he: "יוסף אלעטאונה" }
       - { he: "מהא כרכבי סבאח" }
       - { he: "אחמד דראושה" }
@@ -1201,9 +1201,9 @@ parties:
       es: "Presentada el 7 de septiembre de 2026 con Yoaz Hendel a la cabeza; el economista Yaron Zelekha es segundo y Einat Wilf tercera. Hili Tropper, anunciado antes como socio, figura en la lista de ¡Yashar!."
       fr: "Déposée le 7 septembre 2026 avec Yoaz Hendel en tête ; l’économiste Yaron Zelekha est deuxième et Einat Wilf troisième. Hili Tropper, annoncé auparavant comme partenaire, figure sur la liste Yashar!."
     candidates:
-      - { he: "יועז הנדל" }
+      - { he: "יועז הנדל", en: "Yoaz Hendel", ar: "يوعاز هيندل", ru: "Йоаз Хендель" }
       - { he: "ירון זליכה" }
-      - { he: "עינת וילף" }
+      - { he: "עינת וילף", en: "Einat Wilf", ar: "عينات ويلف", ru: "Эйнат Вильф" }
       - { he: "חביב ווליבוביץ" }
       - { he: "יואב שלמה אדומי" }
       - { he: "אופיר לנגמן" }
@@ -1642,56 +1642,56 @@ submittedLists:
       slug: together
       updated: "2026-09-07"
       candidates:
-        - { he: "בנט נפתלי", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
-        - { he: "לפיד יאיר", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
+        - { he: "בנט נפתלי", en: "Naftali Bennett", ar: "نفتالي بينيت", ru: "Нафтали Беннет", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
+        - { he: "לפיד יאיר", en: "Yair Lapid", ar: "يائير لابيد", ru: "Яир Лапид", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
         - { he: "טרנר אייל קרן", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
-        - { he: "בן ארי מירב", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
+        - { he: "בן ארי מירב", en: "Merav Ben Ari", ar: "ميراف بن آري", ru: "Мейрав Бен Ари", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
         - { he: "אבישר בן חורין לירן", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
         - { he: "תיבון נעם משה", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
         - { he: "הירש נגרי מיכל טליה", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
-        - { he: "גינזבורג איתן", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
-        - { he: "כהן מירב", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
+        - { he: "גינזבורג איתן", en: "Eitan Ginzburg", ar: "إيتان غينزبورغ", ru: "Эйтан Гинзбург", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
+        - { he: "כהן מירב", en: "Meirav Cohen", ar: "ميراف كوهين", ru: "Мейрав Коэн", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
         - { he: "שלו יונתן", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
         - { he: "נעים ארמן ברוריה", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
-        - { he: "בן ברק רם", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
+        - { he: "בן ברק רם", en: "Ram Ben Barak", ar: "رام بن باراك", ru: "Рам Бен-Барак", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
         - { he: "סטרוגו אמיר", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
-        - { he: "שירי נאור", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
+        - { he: "שירי נאור", en: "Naor Shiri", ar: "ناؤور شيري", ru: "Наор Шири", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
         - { he: "זאבי ניסן", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
-        - { he: "בליאק ולדימיר", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
+        - { he: "בליאק ולדימיר", en: "Vladimir Beliak", ar: "فلاديمير بلياك", ru: "Владимир Белиак", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
         - { he: "אלידן-הראל אורלי", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
-        - { he: "להב הרצנו יוראי", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
+        - { he: "להב הרצנו יוראי", en: "Yorai Lahav Hertzanu", ar: "يوراي لاهف هرتسانو", ru: "Йорай Лаав-Эрцану", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
         - { he: "ורון שחר", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
-        - { he: "פרידמן יסמין", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
+        - { he: "פרידמן יסמין", en: "Yasmin Fridman", ar: "ياسمين فريدمان", ru: "Ясмин Фридман", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
         - { he: "איילון קובו אסתי", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
         - { he: "אטיאס מויאל נטע", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
         - { he: "סלטן ג'רמי", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
         - { he: "טור-פז משה יהודה", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
         - { he: "פלוטניצקי צבי גריגורי", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
         - { he: "קנטור אולסיה", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
-        - { he: "דוידסון סימון", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
+        - { he: "דוידסון סימון", en: "Simon Davidson", ar: "سيمون دافيدسون", ru: "Симон Давидсон", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
         - { he: "גיל מתי", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
-        - { he: "טל מירון שלי", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
+        - { he: "טל מירון שלי", en: "Shelly Tal Meron", ar: "شيلي تال ميرون", ru: "Шели Таль Мирон", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
         - { he: "וינר תומר", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
         - { he: "איריש מלכאי רוני", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
         - { he: "מזאל שחר תמר", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
-        - { he: "צרפתי הרכבי מטי", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
+        - { he: "צרפתי הרכבי מטי", en: "Matti Sarfatti Harcavi", ar: "ماتي تسرفاتي هركابي", ru: "Мати Царфати-Харкави", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
         - { he: "לין שטרן יעל", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
         - { he: "ברדה עמית", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
-        - { he: "עזוז עדי עליזה", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
+        - { he: "עזוז עדי עליזה", en: "Adi Ezuz", ar: "عدي عزوز", ru: "Ади Эзуз", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
         - { he: "ארקוס ליאת חדוה", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
-        - { he: "חיים עוז", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
+        - { he: "חיים עוז", en: "Oz Haim", ar: "عوز حاييم", ru: "Оз Хаим", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
         - { he: "קרן עידו", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
         - { he: "ויס אסף", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
         - { he: "מלאכי יחזקאל משה", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
         - { he: "גול חנה", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
         - { he: "צימרמן מרב", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
-        - { he: "אבו אל היג'א מוחמד", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
+        - { he: "אבו אל היג'א מוחמד", en: "Mohammad Abu El Higa", ar: "محمد أبو الهيجاء", ru: "Мухаммад Абу Аль-Хиджа", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
         - { he: "כהן ז'אנה", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
         - { he: "לוי הילה אינס", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
         - { he: "אדלר דבורה", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
         - { he: "עוז רוזגוביץ אלעד", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
         - { he: "סבג יוסף", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
-        - { he: "סלבני כבביה מיכל", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
+        - { he: "סלבני כבביה מיכל", en: "Michal Slawny Cababia", ar: "ميخال سلافني كبابية", ru: "Михаль Славани Кебебия", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
         - { he: "ברק אבנר", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
         - { he: "שוייצר הדר", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
         - { he: "ערד עופר", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
@@ -1773,21 +1773,21 @@ submittedLists:
       candidates:
         - { he: "איזנקוט גד", party: "מפלגת ישר לישראל עם איזנקוט" }
         - { he: "כהן יורם", party: "מפלגת ישר לישראל עם איזנקוט" }
-        - { he: "פרקש הכהן אורית", party: "מפלגת ישר לישראל עם איזנקוט" }
+        - { he: "פרקש הכהן אורית", en: "Orit Farkash Hacohen", ar: "أوريت فركاش هكوهين", ru: "Орит Фаркаш-ХаКоэн", party: "מפלגת ישר לישראל עם איזנקוט" }
         - { he: "אלטשולר עדי", party: "מפלגת ישר לישראל עם איזנקוט" }
-        - { he: "כהנא מתן", party: "מפלגת ישר לישראל עם איזנקוט" }
+        - { he: "כהנא מתן", en: "Matan Kahana", ar: "متان كهانا", ru: "Матан Кахана", party: "מפלגת ישר לישראל עם איזנקוט" }
         - { he: "טרופר יחיאל משה", party: "מפלגת יסודות ישראל" }
         - { he: "מרידור שאול", party: "מפלגת ישר לישראל עם איזנקוט" }
         - { he: "איפרגן תאיר סולי", party: "מפלגת ישר לישראל עם איזנקוט" }
         - { he: "גני גונן אושרת", party: "מפלגת ישר לישראל עם איזנקוט" }
         - { he: "שפירא שירה", party: "מפלגת יסודות ישראל" }
         - { he: "הרוש גיטי עינבר", party: "מפלגת ישר לישראל עם איזנקוט" }
-        - { he: "שטרן אלעזר", party: "מפלגת ישר לישראל עם איזנקוט" }
+        - { he: "שטרן אלעזר", en: "Elazar Stern", ar: "إلعازار شتيرن", ru: "Элазар Штерн", party: "מפלגת ישר לישראל עם איזנקוט" }
         - { he: "אבו רוקן כמיל", party: "מפלגת ישר לישראל עם איזנקוט" }
         - { he: "בכר דבורה", party: "מפלגת ישר לישראל עם איזנקוט" }
         - { he: "ריף אלקס", party: "מפלגת ישר לישראל עם איזנקוט" }
         - { he: "יחזקאלי בליליוס ענבר", party: "מפלגת ישר לישראל עם איזנקוט" }
-        - { he: "פולקמן רועי שמואל", party: "מפלגת ישר לישראל עם איזנקוט" }
+        - { he: "פולקמן רועי שמואל", en: "Roy Folkman", ar: "روعي فولكمان", ru: "Рои Фолькман", party: "מפלגת ישר לישראל עם איזנקוט" }
         - { he: "זרי ישראל", party: "מפלגת ישר לישראל עם איזנקוט" }
         - { he: "אוחנה טל", party: "מפלגת ישר לישראל עם איזנקוט" }
         - { he: "פרץ אליסף", party: "מפלגת יסודות ישראל" }
@@ -1880,12 +1880,12 @@ submittedLists:
         - { he: "גל מירלה", party: "מפלגת ישר לישראל עם איזנקוט" }
         - { he: "כמיסה רז שאול", party: "מפלגת ישר לישראל עם איזנקוט" }
         - { he: "מזרחי אברהם", party: "מפלגת ישר לישראל עם איזנקוט" }
-        - { he: "מרידור דן", party: "מפלגת ישר לישראל עם איזנקוט" }
+        - { he: "מרידור דן", en: "Dan Meridor", ar: "دان مريدور", ru: "Дан Меридор", party: "מפלגת ישר לישראל עם איזנקוט" }
         - { he: "גרשטיין מרקל הרטל", party: "מפלגת ישר לישראל עם איזנקוט" }
         - { he: "זהב חממי ספיר", party: "מפלגת ישר לישראל עם איזנקוט" }
         - { he: "אלבג אלי", party: "מפלגת ישר לישראל עם איזנקוט" }
         - { he: "אלבג שירה", party: "מפלגת ישר לישראל עם איזנקוט" }
-        - { he: "טרכטנברג מנואל", party: "מפלגת ישר לישראל עם איזנקוט" }
+        - { he: "טרכטנברג מנואל", en: "Manuel Trajtenberg", ar: "مانويل تراختينبيرغ", ru: "Мануэль Трахтенберг", party: "מפלגת ישר לישראל עם איזנקוט" }
         - { he: "לוי יהונתן", party: "מפלגת ישר לישראל עם איזנקוט" }
         - { he: "עבאס ג'דעאן", party: "מפלגת ישר לישראל עם איזנקוט" }
         - { he: "בר שלום עדינה", party: "מפלגת ישר לישראל עם איזנקוט" }
@@ -1922,7 +1922,7 @@ submittedLists:
         - { he: "אלקרינאוי, טלאל" }
         - { he: "אבו עאנם עבדאללה" }
         - { he: "שליאן בשארה" }
-        - { he: "כהן אליעזר עופר" }
+        - { he: "כהן אליעזר עופר", en: "Eliezer Cohen", ar: "إليعيزر كوهين", ru: "Элиэзер Коэн" }
         - { he: "גול-ורדי עודד" }
         - { he: "בדר אסתיבן ג'ון" }
         - { he: "שחאדה עאדל" }
@@ -1994,7 +1994,7 @@ submittedLists:
       submittedBy: ["ישראל תחילה - ביטחון, כלכלה, אחדות בעם ישראל"]
       updated: "2026-09-07"
       candidates:
-        - { he: "השכל שרן מרים" }
+        - { he: "השכל שרן מרים", en: "Sharren Miriam Haskel", ar: "شارن مريام هسكل", ru: "Шарен Мирьям Аскель" }
         - { he: "דנינו רועי חיים" }
         - { he: "יופטרו ניר" }
         - { he: "מוגרבי ואיל" }
@@ -2016,7 +2016,7 @@ submittedLists:
       candidates:
         - { he: "בן דוד ישוע ישראל" }
         - { he: "בן יששכר יעקב" }
-        - { he: "כהן יעקב ליאור" }
+        - { he: "כהן יעקב ליאור", en: "Yakov Cohen", ar: "يعقوب كوهين", ru: "Яаков Коэн" }
         - { he: "דה רוטשילד טליה" }
         - { he: "פודברי דוד" }
         - { he: "בדש רז כמוס" }
@@ -2070,20 +2070,20 @@ submittedLists:
       slug: yisrael-beiteinu
       updated: "2026-09-07"
       candidates:
-        - { he: "ליברמן אביגדור" }
+        - { he: "ליברמן אביגדור", en: "Avigdor Liberman", ar: "أفيغدور ليبرمان", ru: "Авигдор Либерман" }
         - { he: "בן שטרית רפאל" }
         - { he: "לנקרי טליה" }
-        - { he: "פורר עודד" }
+        - { he: "פורר עודד", en: "Oded Forer", ar: "عوديد فورير", ru: "Одед Форер" }
         - { he: "מלינובסקי קונין יוליה" }
         - { he: "שרעבי שרון" }
-        - { he: "עמאר חמד" }
-        - { he: "סובה יבגני" }
+        - { he: "עמאר חמד", en: "Hamad Amar", ar: "حمد عمار", ru: "Хамад Амар" }
+        - { he: "סובה יבגני", en: "Evgeny Sova", ar: "يفغيني صوفا", ru: "Евгений Сова" }
         - { he: "קוליחמן אלוירה" }
-        - { he: "אילוז דן אליהו יעקב" }
+        - { he: "אילוז דן אליהו יעקב", en: "Dan Illouz", ar: "دان إيلوز", ru: "Дан Илуз" }
         - { he: "בן עמי לילי" }
         - { he: "בנבנישתי יעל" }
-        - { he: "אזולאי דוד" }
-        - { he: "מגן תלם לימור" }
+        - { he: "אזולאי דוד", en: "David Azoulay", ar: "دافيد أزولاي", ru: "Давид Азулай" }
+        - { he: "מגן תלם לימור", en: "Limor Magen Telem", ar: "ليمور ماغين تيليم", ru: "Лимор Маген-Телем" }
         - { he: "בן שיטרית ישראל יאיר" }
         - { he: "רופא אופיר שרון אסתר" }
         - { he: "דקל מור" }
@@ -2115,7 +2115,7 @@ submittedLists:
         - { he: "עמיר רננה לריסה" }
         - { he: "עמיר גאולה" }
         - { he: "יהודי אליעזר" }
-        - { he: "כהן יצחק" }
+        - { he: "כהן יצחק", en: "Yitzhak Cohen", ar: "إسحاق كوهين", ru: "Ицхак Коэн" }
         - { he: "יודין יליזבטה" }
         - { he: "וישנבצקי טטיאנה" }
         - { he: "קלמן אליהו חיים יפים" }
@@ -2139,12 +2139,12 @@ submittedLists:
       slug: otzma
       updated: "2026-09-09"
       candidates:
-        - { he: "בן גביר איתמר", party: "מפלגת חזית יהודית לאומית" }
+        - { he: "בן גביר איתמר", en: "Itamar Ben Gvir", ar: "إيتمار بن غفير", ru: "Итамар Бен-Гвир", party: "מפלגת חזית יהודית לאומית" }
         - { he: "גוטליב רויטל טלי", party: "מפלגת חזית יהודית לאומית" }
-        - { he: "וסרלאוף יצחק שמעון", party: "מפלגת ארץ ישראל שלנו - מפלגה יהודית מאוחדת לשלמות התורה העם והארץ" }
-        - { he: "אליהו עמיחי", party: "מפלגת חזית יהודית לאומית" }
-        - { he: "סון הר-מלך לימור", party: "מפלגת חזית יהודית לאומית" }
-        - { he: "קרויזר יצחק", party: "מפלגת ארץ ישראל שלנו - מפלגה יהודית מאוחדת לשלמות התורה העם והארץ" }
+        - { he: "וסרלאוף יצחק שמעון", en: "Issac Shimon Wasserlauf", ar: "إسحاق شمعون فاسرلاوف", ru: "Ицхак Шимон Вассерлауф", party: "מפלגת ארץ ישראל שלנו - מפלגה יהודית מאוחדת לשלמות התורה העם והארץ" }
+        - { he: "אליהו עמיחי", en: "Amichay Eliyahu", ar: "عميحاي إلياهو", ru: "Амихай Элияху", party: "מפלגת חזית יהודית לאומית" }
+        - { he: "סון הר-מלך לימור", en: "Limor Sonn Har Melech", ar: "ليمور سون هار ميليخ", ru: "Лимор Сонн Хар-Мелех", party: "מפלגת חזית יהודית לאומית" }
+        - { he: "קרויזר יצחק", en: "Yitzhak Kroizer", ar: "إسحاق كرويزر", ru: "Ицхак Кройзер", party: "מפלגת ארץ ישראל שלנו - מפלגה יהודית מאוחדת לשלמות התורה העם והארץ" }
         - { he: "דורפמן חנמאל שיראי", party: "מפלגת חזית יהודית לאומית" }
         - { he: "אליהו צחי יצחק", party: "מפלגת חזית יהודית לאומית" }
         - { he: "גולדברגר יוסף יצחק", party: "מפלגת חזית יהודית לאומית" }
@@ -2217,9 +2217,9 @@ submittedLists:
       slug: reservists
       updated: "2026-09-09"
       candidates:
-        - { he: "הנדל יועז", party: "מפלגת המילואימניקים" }
+        - { he: "הנדל יועז", en: "Yoaz Hendel", ar: "يوعاز هيندل", ru: "Йоаз Хендель", party: "מפלגת המילואימניקים" }
         - { he: "זליכה ירון", party: "מפלגת הכלכלית החדשה" }
-        - { he: "וילף עינת", party: "מפלגת המילואימניקים" }
+        - { he: "וילף עינת", en: "Einat Wilf", ar: "عينات ويلف", ru: "Эйнат Вильф", party: "מפלגת המילואימניקים" }
         - { he: "ווליבוביץ חביב", party: "מפלגת הכלכלית החדשה" }
         - { he: "אדומי יואב שלמה", party: "מפלגת המילואימניקים" }
         - { he: "לנגמן אופיר שי", party: "מפלגת הכלכלית החדשה" }
@@ -2235,7 +2235,7 @@ submittedLists:
         - { he: "פז מאור", party: "מפלגת הכלכלית החדשה" }
         - { he: "רום אלמוג", party: "מפלגת המילואימניקים" }
         - { he: "שבח דוד", party: "מפלגת הכלכלית החדשה" }
-        - { he: "לוי דוד", party: "מפלגת הכלכלית החדשה" }
+        - { he: "לוי דוד", en: "David Levy", ar: "دافيد ليفي", ru: "Давид Леви", party: "מפלגת הכלכלית החדשה" }
         - { he: "נקי סתיו", party: "מפלגת הכלכלית החדשה" }
         - { he: "טגן בתאל", party: "מפלגת המילואימניקים" }
         - { he: "כריסי חוברה הדס רנה", party: "מפלגת המילואימניקים" }
@@ -2265,28 +2265,28 @@ submittedLists:
       slug: democrats
       updated: "2026-09-16"
       candidates:
-        - { he: "גולן יאיר", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
-        - { he: "לזימי נעמה", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
-        - { he: "קריב גלעד", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
-        - { he: "רייטן מרום אפרת", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
+        - { he: "גולן יאיר", en: "Yair Golan", ar: "يائير جولان", ru: "Яир Голан", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
+        - { he: "לזימי נעמה", en: "Naama Lazimi", ar: "نعماه لازيمي", ru: "Наама Лазими", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
+        - { he: "קריב גלעד", en: "Gilad Kariv", ar: "جلعاد كاريف", ru: "Гилад Карив", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
+        - { he: "רייטן מרום אפרת", en: "Efrat Rayten Marom", ar: "إفرات رايتين ماروم", ru: "Эфрат Райтен-Маром", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "פינק יאיר", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "לסקי שוץ גבריאלה", party: "מפלגת מרצ" }
         - { he: "רונן עמרי", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
-        - { he: "רוזין מיכל", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
+        - { he: "רוזין מיכל", en: "Michal Rozin", ar: "ميخال روزين", ru: "Михаль Розин", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "רדמן משה", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "בשיר סומייה", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "שפר נמרוד", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "זר קצנשטיין מורן", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "דאבוש אבי", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
-        - { he: "מואטי אמילי חיה", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
+        - { he: "מואטי אמילי חיה", en: "Emilie Haya Moatti", ar: "إميلي حايا مواطي", ru: "Эмили Хая Муати", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "אביטל תומר", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "רוזוליו נאווה חיה", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
-        - { he: "שפע רם", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
-        - { he: "סלאלחה עלי", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
+        - { he: "שפע רם", en: "Ram Shefa", ar: "رام شيفاع", ru: "Рам Шефа", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
+        - { he: "סלאלחה עלי", en: "Ali Salalha", ar: "علي صلالحة", ru: "Али Салалха", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "סיון הופמן רתם", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "עציון ערן", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "מישל מורן", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
-        - { he: "רז מוסי", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
+        - { he: "רז מוסי", en: "Mossi Raz", ar: "موسي راز", ru: "Моше Раз", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "סלאמנה גאלב", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "פיאסצקי מורג קטי", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "ח'ניפס אמיר", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
@@ -2294,7 +2294,7 @@ submittedLists:
         - { he: "בדיר עאיד", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "אריאלי חן", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "ביילין גיל", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
-        - { he: "כהן פארן יעל", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
+        - { he: "כהן פארן יעל", en: "Yael Cohen Paran", ar: "ياعيل كوهين باران", ru: "Яэль Коэн Паран", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "ניסן ערן שלמה", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "רגולסקי הדס", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "באר אביתר", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
@@ -2361,28 +2361,28 @@ submittedLists:
         - { he: "רוז אליגון תלמה", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "דור שמואל", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "רדאי פרנסס רות", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
-        - { he: "צוקר דוד", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
+        - { he: "צוקר דוד", en: "David Zucker", ar: "دافيد تسوكير", ru: "Давид Цукер", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "מורציאנו יוסף", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "צוייג בנימין", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "ליפשיץ יוכבד", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
-        - { he: "בירן מיכל", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
+        - { he: "בירן מיכל", en: "Michal Biran", ar: "ميخال بيران", ru: "Михаль Биран", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "גבארה חוסניה", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
-        - { he: "מאור ענת", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
-        - { he: "לובלסקי מאשה", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
-        - { he: "סרטני אמירה", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
+        - { he: "מאור ענת", en: "Anat Maor", ar: "عنات مئور", ru: "Анат Маор", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
+        - { he: "לובלסקי מאשה", en: "Masha Lubelsky", ar: "ماشا لوبلسكي", ru: "Маша Любельски", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
+        - { he: "סרטני אמירה", en: "Amira Sartani", ar: "أميرا سرتاني", ru: "Амира Сартани", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "פורז פוזמנטיר אברהם", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "ביילין יוסף", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
-        - { he: "זנדברג תמר", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
-        - { he: "מצנע עמרם", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
-        - { he: "גולדמן מיכה", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
-        - { he: "כהן רן", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
-        - { he: "כהן רענן", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
+        - { he: "זנדברג תמר", en: "Tamar Zandberg", ar: "تمار زاندبيرغ", ru: "Тамар Зандберг", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
+        - { he: "מצנע עמרם", en: "Amram Mitzna", ar: "عمرام متسناع", ru: "Амрам Мицна", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
+        - { he: "גולדמן מיכה", en: "Micha Goldman", ar: "ميخا جولدمان", ru: "Миха Гольдман", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
+        - { he: "כהן רן", en: "Ran Cohen", ar: "ران كوهين", ru: "Ран Коэн", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
+        - { he: "כהן רענן", en: "Ra`anan Cohen", ar: "رعنان كوهين", ru: "Раанан Коэн", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "וילן אבשלום", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "שיטרית שמעון", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
-        - { he: "גלאון זהבה", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
-        - { he: "אביטל קולט", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
-        - { he: "אורון חיים", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
-        - { he: "סנה אפרים", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
+        - { he: "גלאון זהבה", en: "Zehava Galon", ar: "زهافا غلئون", ru: "Заава Гальон", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
+        - { he: "אביטל קולט", en: "Colette Avital", ar: "كوليت أفيتال", ru: "Колет Авиталь", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
+        - { he: "אורון חיים", en: "Chaim Oron", ar: "حاييم أورون", ru: "Хаим Орон", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
+        - { he: "סנה אפרים", en: "Ephraim Sneh", ar: "إفرايم سنيه", ru: "Эфраим Снэ", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "בר עם עוזי", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
     - listNumber: 18
       letters: "עם"
@@ -2393,12 +2393,12 @@ submittedLists:
       slug: raam
       updated: "2026-09-09"
       candidates:
-        - { he: "עבאס מנסור" }
-        - { he: "סגלוביץ יואב" }
-        - { he: "טאהא ווליד" }
+        - { he: "עבאס מנסור", en: "Mansour Abbas", ar: "منصور عباس", ru: "Мансур Аббас" }
+        - { he: "סגלוביץ יואב", en: "Yoav Segalovitz", ar: "يوآف سيغالوفيتس", ru: "Йоав Сегалович" }
+        - { he: "טאהא ווליד", en: "Waleed Taha", ar: "وليد طه", ru: "Валид Таха" }
         - { he: "אל הואשלה ואליד" }
-        - { he: "ח'טיב יאסין אימאן" }
-        - { he: "חוג'יראת יאסר" }
+        - { he: "ח'טיב יאסין אימאן", en: "Iman Khatib Yassin", ar: "إيمان خطيب ياسين", ru: "Иман Хатиб-Ясин" }
+        - { he: "חוג'יראת יאסר", en: "Yasir Hujeirat", ar: "ياسر حجيرات", ru: "Ясер Худжират" }
         - { he: "אל טורי איברהים" }
         - { he: "מסרי עבד אל כרים" }
         - { he: "עזאם עבד אל כרים" }
@@ -2458,14 +2458,14 @@ submittedLists:
         - { he: "הייב ממדוח" }
         - { he: "רעד מוחמד" }
         - { he: "הינדאוי שימא" }
-        - { he: "אבו עראר טלב" }
+        - { he: "אבו עראר טלב", en: "Talab Abu Arar", ar: "طلب أبو عرار", ru: "Талеб Абу Арар" }
         - { he: "אל עמור אבראהים" }
         - { he: "אבו מדע'ם עטא" }
         - { he: "אל קצאצי גומעה" }
-        - { he: "גנאים מסעוד" }
-        - { he: "גנאים מאזן" }
-        - { he: "צרצור אברהים" }
-        - { he: "דהאמשה עבד אלמאלכ" }
+        - { he: "גנאים מסעוד", en: "Masud Ganaim", ar: "مسعود غنايم", ru: "Масуд Ганаим" }
+        - { he: "גנאים מאזן", en: "Mazen Ghanaim", ar: "مازن غنايم", ru: "Мазен Ганайм" }
+        - { he: "צרצור אברהים", en: "Ibrahim Sarsour", ar: "إبراهيم صرصور", ru: "Ибрагим Царцур" }
+        - { he: "דהאמשה עבד אלמאלכ", en: "Abdulmalik Dehamshe", ar: "عبد المالك دهامشة", ru: "Абд-Альмалек Дахамше" }
     - listNumber: 19
       letters: "שס"
       name: { he: "התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ\"ל" }
@@ -2475,18 +2475,18 @@ submittedLists:
       slug: shas
       updated: "2026-09-16"
       candidates:
-        - { he: "דרעי אריה מכלוף" }
-        - { he: "אזולאי ינון" }
-        - { he: "מלכיאלי מיכאל משה" }
-        - { he: "בן צור יואב" }
-        - { he: "ביטון חיים" }
+        - { he: "דרעי אריה מכלוף", en: "Aryeh Machluf Deri", ar: "أرييه مخلوف درعي", ru: "Арье Дери" }
+        - { he: "אזולאי ינון", en: "Yinon Azoulay", ar: "ينون أزولاي", ru: "Инон Азулай" }
+        - { he: "מלכיאלי מיכאל משה", en: "Michael Malkieli", ar: "ميخائيل ملكيئيلي", ru: "Михаэль Малкиэли" }
+        - { he: "בן צור יואב", en: "Yoav Ben Tzur", ar: "يوآف بن تسور", ru: "Йоав Бен-Цур" }
+        - { he: "ביטון חיים", en: "Haim Biton", ar: "حاييم بيطون", ru: "Хаим Битон" }
         - { he: "עמוס דרור דוד" }
-        - { he: "אבוטבול משה" }
-        - { he: "בוסו אוריאל מנחם" }
-        - { he: "טייב יוסף" }
-        - { he: "מישרקי יונתן" }
+        - { he: "אבוטבול משה", en: "Moshe Abutbul", ar: "موشيه أبو طبول", ru: "Моше Абутбуль" }
+        - { he: "בוסו אוריאל מנחם", en: "Uriel Busso", ar: "أوريئيل بوسو", ru: "Уриэль Буссо" }
+        - { he: "טייב יוסף", en: "Yosef Taieb", ar: "يوسيف طيب", ru: "Йосеф Тайеб" }
+        - { he: "מישרקי יונתן", en: "Yonatan Mashriki", ar: "يوناتان مشرقي", ru: "Йонатан Машрики" }
         - { he: "אילנתנוב יוסי" }
-        - { he: "מלול ארז" }
+        - { he: "מלול ארז", en: "Erez Malul", ar: "إيرز ملول", ru: "Эрез Малуль" }
         - { he: "מושיאשוילי סימיון" }
         - { he: "כהן אוריאל" }
         - { he: "צדקה יעקב ישראל" }
@@ -2593,7 +2593,7 @@ submittedLists:
         - { he: "פרץ שלמה" }
         - { he: "אביטל חגי" }
         - { he: "חזן שמואל" }
-        - { he: "מרגי יעקב" }
+        - { he: "מרגי יעקב", en: "Yakov Margi", ar: "يعقوب مارغي", ru: "Яаков Марги" }
     - listNumber: 20
       letters: "זך"
       name: { he: "הציבור החרדי בראשות מוטי ליטנר" }
@@ -2763,44 +2763,44 @@ submittedLists:
       slug: likud
       updated: "2026-09-09"
       candidates:
-        - { he: "נתניהו בנימין", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "נתניהו בנימין", en: "Benjamin Netanyahu", ar: "بنيامين نتنياهو", ru: "Биньямин Нетаньяху", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "כהן אליהו", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
-        - { he: "אוחנה אמיר", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
-        - { he: "לוין יריב גדעון", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "אוחנה אמיר", en: "Amir Ohana", ar: "أمير أوحانا", ru: "Амир Охана", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "לוין יריב גדעון", en: "Yariv Levin", ar: "ياريف ليفين", ru: "Ярив Левин", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "רגב מרים", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
-        - { he: "כץ ישראל", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
-        - { he: "סער גדעון משה", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
-        - { he: "כץ אופיר", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "כץ ישראל", en: "Israel Katz", ar: "يسرائيل كاتس", ru: "Исраэль Кац", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "סער גדעון משה", en: "Gideon Sa'ar", ar: "جدعون ساعر", ru: "Гидеон Саар", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "כץ אופיר", en: "Ofir Katz", ar: "أوفير كاتس", ru: "Офир Кац", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "גואילי טלי", party: "מפלגת תקווה חדשה הימין הממלכתי" }
-        - { he: "קיש יואב", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "קיש יואב", en: "Yoav Kisch", ar: "يوآف كيش", ru: "Йоав Киш", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "ברדוגו יעקב", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "זוהר מכלוף", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
-        - { he: "כהן אלמוג", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
-        - { he: "שיקלי עמיחי", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "כהן אלמוג", en: "Almog Cohen", ar: "ألموغ كوهين", ru: "Альмог Коэн", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "שיקלי עמיחי", en: "Amichai Chikli", ar: "عميحاي شيكلي", ru: "Амихай Шикли", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "מדן אלישע", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "פטר דוד", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
-        - { he: "סעדה משה", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
-        - { he: "כץ חיים", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
-        - { he: "אמסלם דוד", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "סעדה משה", en: "Moshe Saada", ar: "موشيه سعادة", ru: "Моше Саада", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "כץ חיים", en: "Haim Katz", ar: "حاييم كاتس", ru: "Хаим Кац", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "אמסלם דוד", en: "David Amsalem", ar: "دافيد أمسالم", ru: "Давид Амсалем", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "עטייה חוה", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "ביסמוט בעז", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
-        - { he: "ביטן דוד", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
-        - { he: "קרעי שלמה", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
-        - { he: "ברקת ניר", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "ביטן דוד", en: "David Bitan", ar: "دافيد بيطان", ru: "Давид Битан", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "קרעי שלמה", en: "Shlomo Karhi", ar: "شلومو قرعي", ru: "Шломо Каръи", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "ברקת ניר", en: "Nir Barkat", ar: "نير بركات", ru: "Нир Баркат", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "גמליאל דמרי גילה", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
-        - { he: "גולדשמידט אלי", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "גולדשמידט אלי", en: "Elie Goldschmidt", ar: "إيلي جولدشميدت", ru: "Эли Гольдшмидт", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "תדמור ארז", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "לרנר שלמה יוסף", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "בונצל יצחק", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "פרץ משה בנימין", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "אוחנה שוקי יהושע", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
-        - { he: "אלקין זאב", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
-        - { he: "הלוי עמית", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "אלקין זאב", en: "Zeev Elkin", ar: "زئيف إلكين", ru: "Зеэв Элькин", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "הלוי עמית", en: "Amit Halevi", ar: "عميت هليفي", ru: "Амит Халеви", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "אטיאס בובליל קרן", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
-        - { he: "בוארון אביחי אברהם", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "בוארון אביחי אברהם", en: "Avichay Avraham Buaron", ar: "أفيحاي أبراهام بوآرون", ru: "Авихай Авраам Буарон", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "נוה אפרים", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "סעדה שרון", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
-        - { he: "מלביצקי חנוך דב", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "מלביצקי חנוך דב", en: "Hanoch Dov Milwidsky", ar: "حانوخ دوف ميليفيتسكي", ru: "Ханох Дов Мильвицки", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "אוחיון נתנאל", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "בדרה גולן פלורה מאי", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "מולא מולא", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
@@ -2808,12 +2808,12 @@ submittedLists:
         - { he: "וורקו גברה", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "שיטרית קטרין", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "פרידמן אלכסנדר", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
-        - { he: "סילמן עידית", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
-        - { he: "קלנר אריאל", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "סילמן עידית", en: "Idit Silman", ar: "عيديت سيلمان", ru: "Идит Сильман", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "קלנר אריאל", en: "Ariel Kallner", ar: "أريئيل كالنر", ru: "Ариэль Кельнер", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "דיכטר אברהם משה", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
-        - { he: "גואטה ששון ששי", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
-        - { he: "דנינו שלום", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
-        - { he: "קטש שבתאי", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "גואטה ששון ששי", en: "Sasson Sassi Guetta", ar: "ساسون ساسي غوئيتا", ru: "Сассон Сасси Гуэта", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "דנינו שלום", en: "Shalom Danino", ar: "شالوم دانينو", ru: "Шалом Данино", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "קטש שבתאי", en: "Shabtay Katash", ar: "شبتاي كاتاش", ru: "Шабтай Каташ", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "הכהן רבין חיימוב אלישיב שר שלום", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "פיטוסי יוסף", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "עבד פארס", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
@@ -2821,13 +2821,13 @@ submittedLists:
         - { he: "יוגב מוטי", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "אלי אייל", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "קלך שי שמואל יצחק", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
-        - { he: "דיין עוזי", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "דיין עוזי", en: "Uzi Dayan", ar: "عوزي ديان", ru: "Узи Даян", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "טל אבשלום", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "חדד אלון", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "קאפח דרור", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "זידאן סמיר", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "דז'ורייב אברהם", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
-        - { he: "שקלים אושר", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "שקלים אושר", en: "Osher Shkalim", ar: "أوشر شكاليم", ru: "Ошер Шкалим", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "אלוש גבי גבריאל", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "חייקין ויטלי", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "זרו אלמז", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
@@ -2838,7 +2838,7 @@ submittedLists:
         - { he: "כהן אדי", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "שמש זאב", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "שתיוי אליהו", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
-        - { he: "עבד עפיף", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "עבד עפיף", en: "Afef Abed", ar: "عفيف عبد", ru: "Афиф Абед", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "הדר מאי", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "בר גיל יעקב", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "חרלפ דור", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
@@ -2862,7 +2862,7 @@ submittedLists:
         - { he: "שרעבי רצון", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "דה מרקדו רחל", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "אלוני ממו מדינה", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
-        - { he: "קליינר מיכאל", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "קליינר מיכאל", en: "Michael Kleiner", ar: "ميخائيل كلاينر", ru: "Михаэль Кляйнер", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "אוחנה מאיר שמעון", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "סלמון צפריר", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "לנדא אילה", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
@@ -2877,7 +2877,7 @@ submittedLists:
         - { he: "רייף מיכאל", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "שמרגד יעל", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "שפיגל חדוה", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
-        - { he: "בלומנטל נעמי", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
+        - { he: "בלומנטל נעמי", en: "Naomi Blumenthal", ar: "نعومي بلومنتال", ru: "Номи Блюменталь", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "טימור אסתר", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "גל ענבל פריטנה", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "ביטון בנימין", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
@@ -2893,12 +2893,12 @@ submittedLists:
       updated: "2026-09-16"
       candidates:
         - { he: "גנץ בנימין" }
-        - { he: "תמנו פנינה (פנחש)" }
+        - { he: "תמנו פנינה (פנחש)", en: "Pnina Tameno", ar: "بنينا تمانو", ru: "Пнина Тамено" }
         - { he: "בלוך גאולה עליזה" }
         - { he: "קונקול רועי" }
         - { he: "אבידר צאליק רתם" }
-        - { he: "שוסטר אלון נתן" }
-        - { he: "מרעי מופיד" }
+        - { he: "שוסטר אלון נתן", en: "Alon Schuster", ar: "ألون شوستر", ru: "Алон Натан Шустер" }
+        - { he: "מרעי מופיד", en: "Mufid Mari'", ar: "مفيد مرعي", ru: "Муфид Марьи" }
         - { he: "אוליאל מלכה יהודית" }
         - { he: "בזיז אריאל" }
         - { he: "סילפן מוריה" }
@@ -2941,18 +2941,18 @@ submittedLists:
       slug: rz-zehut
       updated: "2026-09-08"
       candidates:
-        - { he: "סמוטריץ בצלאל יואל", party: "מפלגת האיחוד הלאומי - תקומה" }
-        - { he: "פייגלין משה זלמן", party: "מפלגת זהות- תנועה ישראלית יהודית" }
-        - { he: "סטרוק אורית מלכה", party: "מפלגת עתיד אחד - עתיד טוב לישראל" }
-        - { he: "רוטמן שמחה דן", party: "מפלגת האיחוד הלאומי - תקומה" }
+        - { he: "סמוטריץ בצלאל יואל", en: "Bezalel Smotrich", ar: "بتسلئيل سموتريتش", ru: "Бецалель Смотрич", party: "מפלגת האיחוד הלאומי - תקומה" }
+        - { he: "פייגלין משה זלמן", en: "Moshe Zalman Feiglin", ar: "موشيه زلمان فايغلين", ru: "Моше Фейглин", party: "מפלגת זהות- תנועה ישראלית יהודית" }
+        - { he: "סטרוק אורית מלכה", en: "Orit Malka Strock", ar: "أوريت ستروك", ru: "Орит Струк", party: "מפלגת עתיד אחד - עתיד טוב לישראל" }
+        - { he: "רוטמן שמחה דן", en: "Simcha Rothman", ar: "سيمحا روتمان", ru: "Симха Ротман", party: "מפלגת האיחוד הלאומי - תקומה" }
         - { he: "מור צבי", party: "מפלגת האיחוד הלאומי - תקומה" }
         - { he: "איתם איתמר מרדכי", party: "מפלגת האיחוד הלאומי - תקומה" }
-        - { he: "סוכות צבי ידידיה", party: "מפלגת האיחוד הלאומי - תקומה" }
+        - { he: "סוכות צבי ידידיה", en: "Tzvi Yedidia Sukkot", ar: "تسفي يديديا سوكوت", ru: "Цви Йедидия Суккот", party: "מפלגת האיחוד הלאומי - תקומה" }
         - { he: "זאגא יצחק חי", party: "מפלגת זהות- תנועה ישראלית יהודית" }
         - { he: "בן חיים רעות", party: "מפלגת האיחוד הלאומי - תקומה" }
         - { he: "פציניאש וולדמן עומר", party: "מפלגת זהות- תנועה ישראלית יהודית" }
         - { he: "מוטר ארקדי", party: "מפלגת זהות- תנועה ישראלית יהודית" }
-        - { he: "טל אוהד", party: "מפלגת האיחוד הלאומי - תקומה" }
+        - { he: "טל אוהד", en: "Ohad Tal", ar: "أوهاد طال", ru: "Охад Таль", party: "מפלגת האיחוד הלאומי - תקומה" }
         - { he: "קירשברג רועי", party: "מפלגת זהות- תנועה ישראלית יהודית" }
         - { he: "רחמים עומר", party: "מפלגת האיחוד הלאומי - תקומה" }
         - { he: "חסון סימון", party: "מפלגת זהות- תנועה ישראלית יהודית" }
@@ -2962,7 +2962,7 @@ submittedLists:
         - { he: "ברנשטיין איריס", party: "מפלגת זהות- תנועה ישראלית יהודית" }
         - { he: "תם איתן", party: "מפלגת האיחוד הלאומי - תקומה" }
         - { he: "שוורצמן יהודה", party: "מפלגת זהות- תנועה ישראלית יהודית" }
-        - { he: "פלד משה", party: "מפלגת האיחוד הלאומי - תקומה" }
+        - { he: "פלד משה", en: "Moshe Peled", ar: "موشيه بيلد", ru: "Моше Пелед", party: "מפלגת האיחוד הלאומי - תקומה" }
         - { he: "איזבוצקי אלעד", party: "מפלגת זהות- תנועה ישראלית יהודית" }
         - { he: "בכר יוסף", party: "מפלגת האיחוד הלאומי - תקומה" }
         - { he: "גרינצייג חגי", party: "מפלגת זהות- תנועה ישראלית יהודית" }
@@ -2970,7 +2970,7 @@ submittedLists:
         - { he: "טובלסקי סטניסלב", party: "מפלגת זהות- תנועה ישראלית יהודית" }
         - { he: "דיסקין אברהם חיים אלבר", party: "מפלגת האיחוד הלאומי - תקומה" }
         - { he: "לייבלר שולמית אסתר", party: "מפלגת זהות- תנועה ישראלית יהודית" }
-        - { he: "וולדיגר מיכל מרים", party: "מפלגת האיחוד הלאומי - תקומה" }
+        - { he: "וולדיגר מיכל מרים", en: "Michal Miriam Woldiger", ar: "ميخال ميريام فولديغير", ru: "Михаль Мирьям Вольдигер", party: "מפלגת האיחוד הלאומי - תקומה" }
         - { he: "לייבלר אברהם שמואל", party: "מפלגת זהות- תנועה ישראלית יהודית" }
         - { he: "שושן יוסף חיים", party: "מפלגת זהות- תנועה ישראלית יהודית" }
         - { he: "מענדלסון אלישע", party: "מפלגת זהות- תנועה ישראלית יהודית" }
@@ -3044,12 +3044,12 @@ submittedLists:
       updated: "2026-09-18"
       candidates:
         - { he: "גבארין יוסף", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
-        - { he: "טיבי אחמד", party: "מפלגת התנועה הערבית להתחדשות" }
+        - { he: "טיבי אחמד", en: "Ahmad Tibi", ar: "أحمد طيبي", ru: "Ахмад Тиби", party: "מפלגת התנועה הערבית להתחדשות" }
         - { he: "אבו שחאדה סאמי", party: "מפלגת אלתג'מוע אללאומי אלדמוקרטי" }
         - { he: "ג'טאס פאתן", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
         - { he: "עואודה בכר", party: "מפלגת אלתג'מוע אללאומי אלדמוקרטי" }
-        - { he: "כסיף עופר", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
-        - { he: "עטאונה יוסף", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
+        - { he: "כסיף עופר", en: "Ofer Cassif", ar: "عوفر كسيف", ru: "Офер Касиф", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
+        - { he: "עטאונה יוסף", en: "Youssef Atauna", ar: "يوسف عطاونة", ru: "Юсеф Атауна", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
         - { he: "כרכבי סבאח מהא", party: "מפלגת אלתג'מוע אללאומי אלדמוקרטי" }
         - { he: "דראושה אחמד", party: "מפלגת התנועה הערבית להתחדשות" }
         - { he: "ושאחי נהאיה", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
@@ -3143,25 +3143,25 @@ submittedLists:
         - { he: "שביטה עבד אל מנאן", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
         - { he: "דהאמשה מנסור", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
         - { he: "יוספיה זוהיר", party: "מפלגת התנועה הערבית להתחדשות" }
-        - { he: "אזברגה ג'מעה", party: "מפלגת אלתג'מוע אללאומי אלדמוקרטי" }
-        - { he: "אבו מערוף עבדאללה", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
+        - { he: "אזברגה ג'מעה", en: "Joumah Azbarga", ar: "جمعة زبارقة", ru: "Джума Азбарга", party: "מפלגת אלתג'מוע אללאומי אלדמוקרטי" }
+        - { he: "אבו מערוף עבדאללה", en: "Abdullah Abu Maaruf", ar: "عبد الله أبو معروف", ru: "Абдалла Абу Мааруф", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
         - { he: "חורי סמירה", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
-        - { he: "חנין דב-בוריס", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
+        - { he: "חנין דב-בוריס", en: "Dov Khenin", ar: "دوف حنين", ru: "Дов Ханин", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
         - { he: "שלחת אנטואן", party: "מפלגת אלתג'מוע אללאומי אלדמוקרטי" }
         - { he: "עבד אל חלים מואנס", party: "מפלגת התנועה הערבית להתחדשות" }
-        - { he: "אגבאריה עפו", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
-        - { he: "שחאדה אנטאנס", party: "מפלגת אלתג'מוע אללאומי אלדמוקרטי" }
-        - { he: "עודה איימן", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
-        - { he: "תומא סלימאן עאידה", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
+        - { he: "אגבאריה עפו", en: "Afou Agbaria", ar: "عفو أغبارية", ru: "Афу Агбария", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
+        - { he: "שחאדה אנטאנס", en: "Mtanes Shihadeh", ar: "إمطانس شحادة", ru: "Мтанес Шихадех", party: "מפלגת אלתג'מוע אללאומי אלדמוקרטי" }
+        - { he: "עודה איימן", en: "Ayman Odeh", ar: "أيمن عودة", ru: "Айман Удэ", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
+        - { he: "תומא סלימאן עאידה", en: "Aida Touma Sliman", ar: "عايدة توما-سليمان", ru: "Аида Тума Слиман", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
         - { he: "יזבק היבא", party: "מפלגת אלתג'מוע אללאומי אלדמוקרטי" }
-        - { he: "גוז'נסקי תמר", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
+        - { he: "גוז'נסקי תמר", en: "Tamar Gozansky", ar: "تمار غوجانسكي", ru: "Тамар Гужански", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
         - { he: "עאמר עאדל", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
-        - { he: "סוייד חנא", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
+        - { he: "סוייד חנא", en: "Hanna Swaid", ar: "حنا سويد", ru: "Хана Свайд", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
         - { he: "גטאס ראיד", party: "מפלגת אלתג'מוע אללאומי אלדמוקרטי" }
         - { he: "סעדיה אוסאמה", party: "מפלגת התנועה הערבית להתחדשות" }
         - { he: "ח'טיב שאוקי", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
         - { he: "ג'ראיסי ראמז", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
-        - { he: "ברכה מוחמד", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
+        - { he: "ברכה מוחמד", en: "Mohammad Barakeh", ar: "محمد بركة", ru: "Мохаммед Бараке", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
     - listNumber: 36
       letters: "רץ"
       name: { he: "הקהל - מפלגה כלל חרדית שנציגיה נבחרים על ידי הציבור בראשות הרב שלמה אלבוים" }
@@ -3187,18 +3187,18 @@ submittedLists:
       slug: utj
       updated: "2026-09-09"
       candidates:
-        - { he: "אשר יעקב", party: "מפלגת אגודת החרדים - דגל התורה" }
-        - { he: "גולדקנופ יצחק יששכר", party: "מפלגת הסתדרות אגודת ישראל בארץ ישראל" }
-        - { he: "פינדרוס יצחק זאב", party: "מפלגת אגודת החרדים - דגל התורה" }
-        - { he: "פרוש מאיר", party: "מפלגת חומת תורת ישראל" }
+        - { he: "אשר יעקב", en: "Yaakov Asher", ar: "يعقوب آشير", ru: "Яаков Ашер", party: "מפלגת אגודת החרדים - דגל התורה" }
+        - { he: "גולדקנופ יצחק יששכר", en: "Yitshak Goldknop", ar: "إسحاق غولدكنوب", ru: "Ицхак Иссахар Гольдкноп", party: "מפלגת הסתדרות אגודת ישראל בארץ ישראל" }
+        - { he: "פינדרוס יצחק זאב", en: "Yitzhak Ze'ev Pindrus", ar: "إسحاق زئيف بيندروس", ru: "Ицхак Зеэв Пиндрус", party: "מפלגת אגודת החרדים - דגל התורה" }
+        - { he: "פרוש מאיר", en: "Meir Porush", ar: "مئير بوروش", ru: "Меир Поруш", party: "מפלגת חומת תורת ישראל" }
         - { he: "רוזנטל משה עזריאל", party: "מפלגת אגודת החרדים - דגל התורה" }
         - { he: "שטארק אלי", party: "מפלגת חומת תורת ישראל" }
         - { he: "וויספיש יהודה לייב", party: "מפלגת אגודת החרדים - דגל התורה" }
         - { he: "טסלר יואל יעקב", party: "מפלגת הסתדרות אגודת ישראל בארץ ישראל" }
         - { he: "זלץ דוד", party: "מפלגת אגודת החרדים - דגל התורה" }
         - { he: "אוחנה דוד", party: "מפלגת אגודת החרדים - דגל התורה" }
-        - { he: "רוט משה", party: "מפלגת הסתדרות אגודת ישראל בארץ ישראל" }
-        - { he: "ברוכי אליהו", party: "מפלגת אגודת החרדים - דגל התורה" }
+        - { he: "רוט משה", en: "Moshe Roth", ar: "موشيه روط", ru: "Моше Рот", party: "מפלגת הסתדרות אגודת ישראל בארץ ישראל" }
+        - { he: "ברוכי אליהו", en: "Eliyahu Baruchi", ar: "إلياهو باروخي", ru: "Элияху Барухи", party: "מפלגת אגודת החרדים - דגל התורה" }
         - { he: "פרוש ישראל", party: "מפלגת הסתדרות אגודת ישראל בארץ ישראל" }
         - { he: "רייך יצחק", party: "מפלגת אגודת החרדים - דגל התורה" }
         - { he: "באהם יוסף", party: "מפלגת הסתדרות אגודת ישראל בארץ ישראל" }
@@ -3209,7 +3209,7 @@ submittedLists:
         - { he: "רביץ יצחק", party: "מפלגת אגודת החרדים - דגל התורה" }
         - { he: "אברמוביץ פרץ", party: "מפלגת הסתדרות אגודת ישראל בארץ ישראל" }
         - { he: "שפירא מנחם מנדל", party: "מפלגת אגודת החרדים - דגל התורה" }
-        - { he: "כץ חיים מאיר", party: "מפלגת הסתדרות אגודת ישראל בארץ ישראל" }
+        - { he: "כץ חיים מאיר", en: "Haim Katz", ar: "حاييم كاتس", ru: "Хаим Кац", party: "מפלגת הסתדרות אגודת ישראל בארץ ישראל" }
         - { he: "מורגנשטרן משה דוד", party: "מפלגת אגודת החרדים - דגל התורה" }
         - { he: "וובר אפרים", party: "מפלגת הסתדרות אגודת ישראל בארץ ישראל" }
         - { he: "ראוכברגר אליעזר צבי", party: "מפלגת אגודת החרדים - דגל התורה" }
@@ -3238,7 +3238,7 @@ submittedLists:
         - { he: "לוצקין ברוך אליעזר", party: "מפלגת הסתדרות אגודת ישראל בארץ ישראל" }
         - { he: "סברדלוב ישראל מאיר", party: "מפלגת אגודת החרדים - דגל התורה" }
         - { he: "רובינשטיין הלל", party: "מפלגת הסתדרות אגודת ישראל בארץ ישראל" }
-        - { he: "שטרן אברהם פנחס", party: "מפלגת אגודת החרדים - דגל התורה" }
+        - { he: "שטרן אברהם פנחס", en: "Avraham Stern", ar: "أبراهام شتيرن", ru: "Авраам Штерн", party: "מפלגת אגודת החרדים - דגל התורה" }
         - { he: "גולדברג שמעון", party: "מפלגת הסתדרות אגודת ישראל בארץ ישראל" }
         - { he: "פולק שלמה אפרים", party: "מפלגת אגודת החרדים - דגל התורה" }
         - { he: "קליין יצחק אהרן", party: "מפלגת הסתדרות אגודת ישראל בארץ ישראל" }
@@ -3271,7 +3271,7 @@ submittedLists:
         - { he: "גולד מנחם מנדל", party: "מפלגת אגודת החרדים - דגל התורה" }
         - { he: "פרויליך יואל", party: "מפלגת הסתדרות אגודת ישראל בארץ ישראל" }
         - { he: "הר אבן אביר", party: "מפלגת אגודת החרדים - דגל התורה" }
-        - { he: "שטרן אברהם", party: "מפלגת הסתדרות אגודת ישראל בארץ ישראל" }
+        - { he: "שטרן אברהם", en: "Avraham Stern", ar: "أبراهام شتيرن", ru: "Авраам Штерн", party: "מפלגת הסתדרות אגודת ישראל בארץ ישראל" }
         - { he: "אלקיים עופר", party: "מפלגת אגודת החרדים - דגל התורה" }
         - { he: "גליק בנימין זאב", party: "מפלגת הסתדרות אגודת ישראל בארץ ישראל" }
         - { he: "עזרא עופר", party: "מפלגת אגודת החרדים - דגל התורה" }
@@ -3306,7 +3306,7 @@ submittedLists:
         - { he: "שורץ אברהם", party: "מפלגת הסתדרות אגודת ישראל בארץ ישראל" }
         - { he: "מקלב ישראל מאיר אורי", party: "מפלגת אגודת החרדים - דגל התורה" }
         - { he: "זייברט חנוך", party: "מפלגת הסתדרות אגודת ישראל בארץ ישראל" }
-        - { he: "גפני משה רפאל", party: "מפלגת אגודת החרדים - דגל התורה" }
+        - { he: "גפני משה רפאל", en: "Moshe Gafni", ar: "موشيه غافني", ru: "Моше Гафни", party: "מפלגת אגודת החרדים - דגל התורה" }
     - listNumber: 38
       letters: "ני"
       name: { he: "נעם לישראל" }

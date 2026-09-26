@@ -141,7 +141,7 @@ export function VoteRollCall({
                 .sort((a, b) => a.resultCode - b.resultCode)
                 .map((v) => (
                   <li key={v.id} className="flex items-center gap-2 text-sm">
-                    <MemberAvatar person={v} size={28} alt={v.name} />
+                    <MemberAvatar person={v} name={v.name} size={28} />
                     <Link
                       href={`/members/${v.id}`}
                       className="flex-1 truncate hover:underline"

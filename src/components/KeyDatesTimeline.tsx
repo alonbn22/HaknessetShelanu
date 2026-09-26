@@ -1,5 +1,5 @@
 import { getTranslations, getLocale } from "next-intl/server";
-import { partyText, partyTextAttrs, partyTextClass, type ElectionOutlook } from "@/lib/content";
+import { partyText, partyTextAttrs, partyTextClass, type ElectionOutlook, publisherName } from "@/lib/content";
 
 type KeyDate = NonNullable<ElectionOutlook["keyDates"]>[number];
 
@@ -107,7 +107,7 @@ export async function KeyDatesTimeline({
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        {s.publisher ?? s.title}
+                        {publisherName(s.publisher, locale) ?? s.title}
                       </a>
                     </span>
                   ))}

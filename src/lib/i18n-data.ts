@@ -14,7 +14,9 @@ const T = schema.translations;
 const COL = { en: T.en, ar: T.ar, ru: T.ru, es: T.es, fr: T.fr } as const;
 const FIELD = { en: "en", ar: "ar", ru: "ru", es: "es", fr: "fr" } as const;
 
-export type Localized = { text: string; translated: boolean; rtl: boolean };
+// `lang` is set only when the text is in neither the page's language nor Hebrew:
+// the English fallback below.
+export type Localized = { text: string; translated: boolean; rtl: boolean; lang?: "en" };
 const hebrew = (he: string): Localized => ({ text: he, translated: false, rtl: true });
 
 // Resolve many Hebrew strings → the active locale (one batched query).
@@ -29,19 +31,23 @@ export function localizeData(
     for (const he of uniq) map.set(he, hebrew(he));
     return map;
   }
-  const found = new Map<string, string>();
+  const found = new Map<string, { tr: string | null; en: string | null }>();
   for (let i = 0; i < uniq.length; i += 400) {
     const chunk = uniq.slice(i, i + 400);
     const rows = getDb()
-      .select({ he: T.sourceHe, tr: col })
+      .select({ he: T.sourceHe, tr: col, en: T.en })
       .from(T)
       .where(inArray(T.sourceHe, chunk))
       .all();
-    for (const r of rows) if (r.tr) found.set(r.he, r.tr);
+    for (const r of rows) found.set(r.he, r);
   }
   for (const he of uniq) {
-    const tr = found.get(he);
-    map.set(he, tr ? { text: tr, translated: true, rtl: RTL.test(tr) } : hebrew(he));
+    const f = found.get(he);
+    if (f?.tr) map.set(he, { text: f.tr, translated: true, rtl: RTL.test(f.tr) });
+    // Not in the page's language yet (it is queued): English reads for every
+    // other audience where Hebrew does not, and is marked as English.
+    else if (f?.en) map.set(he, { text: f.en, translated: true, rtl: false, lang: "en" });
+    else map.set(he, hebrew(he));
   }
   return map;
 }
@@ -103,7 +109,8 @@ export function ensureTranslationsTable(): void {
 }
 
 const MAX_PER_REQUEST = 100;
-const CONCURRENCY = 8;
+// Gentle on the free endpoint: bursts of 8 got the IP throttled for hours.
+const CONCURRENCY = 2;
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
 const translateOne = (text: string, target: string) =>
@@ -146,7 +153,7 @@ export async function queueDataTranslations(
             .onConflictDoUpdate({ target: T.sourceHe, set: { [field]: tr } })
             .run();
         }
-        await sleep(50);
+        await sleep(300);
       }
     };
     await Promise.all(Array.from({ length: Math.min(CONCURRENCY, missing.length) }, worker));

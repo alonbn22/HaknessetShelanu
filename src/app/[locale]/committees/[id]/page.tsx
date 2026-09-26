@@ -242,7 +242,7 @@ export default async function CommitteePage({
                 href={`/members/${person.id}`}
                 className="flex items-center gap-3 rounded-xl bg-white p-3 shadow-sm hover:shadow-md transition-shadow"
               >
-                <MemberAvatar person={person} />
+                <MemberAvatar person={person} name={personName(person, locale)} />
                 <div className="min-w-0">
                   <div className="font-semibold truncate" {...rtlAttrs(personName(person, locale))}>
                     {personName(person, locale)}

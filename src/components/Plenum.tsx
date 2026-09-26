@@ -357,7 +357,7 @@ export function Plenum({
             }}
           >
             <div className="flex items-center gap-3">
-              <MemberAvatar person={cardSeat} size={44} alt="" />
+              <MemberAvatar person={cardSeat} name={cardSeat.name} size={44} alt="" />
               <div className="min-w-0">
                 <div className="truncate font-semibold" dir={cardSeat.nameRtl ? "rtl" : undefined} lang={cardSeat.nameRtl ? "he" : undefined}>
                   {cardSeat.name}

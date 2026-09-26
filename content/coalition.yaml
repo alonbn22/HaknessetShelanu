@@ -48,6 +48,7 @@ caretakerSince: "2026-07-17"
 governmentSince: "2022-12-29"
 sourceUrl: "https://main.knesset.gov.il/mk/government/pages/governments.aspx?govId=37"
 sourceLabel: "הממשלה ה-37 — אתר הכנסת"
+sourcePublisher: "הכנסת"
 coalitionFactionIds:
   - 1096 # הליכוד
   - 1095 # ש"ס

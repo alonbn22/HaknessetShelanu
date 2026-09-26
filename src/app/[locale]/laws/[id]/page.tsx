@@ -144,7 +144,7 @@ export default async function BillPage({
                 href={`/members/${p.id}`}
                 className="inline-flex items-center gap-1.5 rounded-full bg-black/5 py-1 pe-3 ps-1 text-sm hover:bg-black/10"
               >
-                <MemberAvatar person={p} size={24} alt={personName(p, locale)} />
+                <MemberAvatar person={p} name={personName(p, locale)} size={24} />
                 <span {...rtlAttrs(personName(p, locale))}>{personName(p, locale)}</span>
               </Link>
             ))}

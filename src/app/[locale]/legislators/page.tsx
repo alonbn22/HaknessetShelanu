@@ -27,7 +27,7 @@ export default async function LegislatorsPage() {
               className="flex items-center gap-3 rounded-xl bg-white p-3 shadow-sm hover:shadow-md transition-shadow"
             >
               <span className="w-6 text-center text-muted">{i + 1}</span>
-              <MemberAvatar person={r.person} size={40} />
+              <MemberAvatar person={r.person} name={personName(r.person, locale)} size={40} />
               <div className="min-w-0 flex-1">
                 <div className="font-semibold truncate" {...rtlAttrs(personName(r.person, locale))}>
                   {personName(r.person, locale)}

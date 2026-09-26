@@ -1,3 +1,4 @@
+import { localizedAttrs } from "@/lib/text";
 import { getTranslations, getLocale } from "next-intl/server";
 import { formatNumber } from "@/lib/format";
 import { Link } from "@/i18n/navigation";
@@ -32,10 +33,12 @@ export default async function LobbyistsPage({
   const sortHref = (s: LobbyistSort) =>
     `/lobbyists?${new URLSearchParams({ ...(params.q ? { q: params.q } : {}), sort: s })}`;
 
-  // Permit type ("permanent"/"temporary lobbyist") is a small enum → translate on
-  // the fly. Personal/firm/client names are proper nouns and intentionally stay Hebrew.
-  const permitTypes = items.map((l) => l.permitType);
-  const { cache: permitMap } = localizePage(permitTypes, locale);
+  // Permit types, firms and clients are data text: the unified cache translates
+  // them. People's names are never machine-translated — they show as registered.
+  const { cache: permitMap, loc } = localizePage(
+    items.flatMap((l) => [l.permitType, l.corporationName, ...l.clients.map((c) => c.name)]),
+    locale,
+  );
   const permitOf = (he: string | null) => (he && permitMap.get(he.trim())) || null;
 
   const nf = new Intl.NumberFormat(locale);
@@ -116,8 +119,8 @@ export default async function LobbyistsPage({
                   })()}
               </div>
               {l.corporationName && (
-                <div className="mt-0.5 text-sm text-muted" dir="rtl" lang="he">
-                  {t("firm")}: {l.corporationName}
+                <div className="mt-0.5 text-sm text-muted">
+                  {t("firm")}: <span {...localizedAttrs(loc(l.corporationName))}>{loc(l.corporationName).text}</span>
                 </div>
               )}
               {l.clients.length > 0 && (
@@ -132,7 +135,7 @@ export default async function LobbyistsPage({
                         className="inline-flex items-center gap-1 rounded-full bg-accent/10 px-2.5 py-0.5 text-xs text-accent-deep"
                         title={t(`rep_${c.type}`)}
                       >
-                        <span dir="rtl" lang="he">{c.name}</span>
+                        <span {...localizedAttrs(loc(c.name))}>{loc(c.name).text}</span>
                         <span className="text-[10px] text-muted">· {t(`rep_${c.type}`)}</span>
                       </span>
                     ))}

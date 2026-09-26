@@ -1,3 +1,4 @@
+import { localizePage } from "@/lib/i18n-data";
 import { notFound } from "next/navigation";
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
@@ -12,6 +13,7 @@ import {
   partyText,
   partyTextAttrs,
   partyList,
+  candidateName,
 } from "@/lib/content";
 import { FactionStatusNote } from "@/components/FactionStatusNote";
 import { SourceLinks } from "@/components/SourceLinks";
@@ -25,7 +27,7 @@ import {
   factionColor,
   personName,
 } from "@/lib/queries";
-import { rtlAttrs } from "@/lib/text";
+import { rtlAttrs, localizedAttrs } from "@/lib/text";
 
 export const dynamic = "force-dynamic";
 
@@ -81,10 +83,17 @@ export default async function PartyPage({
   const cec = e2026Party?.cec ?? null;
   const letters2026 = cec?.letters ?? e2026Row?.letters ?? null;
   const lettersFinal = cec?.lettersStatus === "approved";
-  const listName2026 = cec ? partyText(cec.listName, locale) : e2026Row ? partyText(e2026Row.name, locale) : "";
   const listUrl2026 = cec?.url ?? e2026Row?.url ?? null;
-  const listHead2026 = e2026Row?.head ? partyText(e2026Row.head, locale) : "";
   const submittedBy2026 = cec?.submittedBy ?? e2026Row?.submittedBy ?? [];
+  // The CEC's list and party names are data text (the unified cache); the head
+  // of the list is a person: an official spelling or the Hebrew record.
+  const { loc } = localizePage([cec?.listName.he ?? e2026Row?.name.he, ...submittedBy2026], locale);
+  const listName2026 = loc(cec?.listName.he ?? e2026Row?.name.he);
+  const firstCandidate = e2026Row?.candidates?.[0];
+  const listHead2026 =
+    (firstCandidate && candidateName(firstCandidate, locale) !== firstCandidate.he ? candidateName(firstCandidate, locale) : undefined) ??
+    e2026Row?.head?.he ??
+    "";
   const approvalDate = outlook?.keyDates?.find((d) => d.key === "kd-approval")?.date;
   const approvalText = approvalDate ? formatDate(approvalDate, locale) : "";
   const listAnchor = e2026?.slug ? `/elections/${e2026.slug}` : "/elections#all-lists";
@@ -134,8 +143,9 @@ export default async function PartyPage({
           </span>
         </div>
         {locale !== "he" && (
-          <div className="text-muted" dir="rtl" lang="he">
-            {faction.nameHe}
+          <div className="text-muted">
+            {t("votes.originalHebrew")}:{" "}
+            <span dir="rtl" lang="he">{faction.nameHe}</span>
           </div>
         )}
         <FactionStatusNote factionId={factionId} />
@@ -183,11 +193,11 @@ export default async function PartyPage({
                 </span>
               </div>
             )}
-            {listName2026 && (
+            {listName2026.text && (
               <div>
                 <span className="text-muted">{t("party.listName")}: </span>
-                <Link href={listAnchor} className="font-medium text-accent hover:underline" {...rtlAttrs(listName2026)}>
-                  {listName2026}
+                <Link href={listAnchor} className="font-medium text-accent hover:underline" {...localizedAttrs(listName2026)}>
+                  {listName2026.text}
                 </Link>
               </div>
             )}
@@ -200,9 +210,12 @@ export default async function PartyPage({
             {submittedBy2026.length > 0 && (
               <div>
                 <span className="text-muted">{t("party.submittedBy")}: </span>
-                <span dir="rtl" lang="he">
-                  {submittedBy2026.join(" · ")}
-                </span>
+                {submittedBy2026.map((b, k) => (
+                  <span key={b}>
+                    {k > 0 && " · "}
+                    <span {...localizedAttrs(loc(b))}>{loc(b).text}</span>
+                  </span>
+                ))}
               </div>
             )}
             {e2026.note && (

@@ -16,6 +16,9 @@ test("every localized content string exists in every site language", () => {
   const walk = (node: unknown, at: string) => {
     if (!node || typeof node !== "object") return;
     const o = node as Record<string, unknown>;
+    // Candidates are names, not text: Latin-script pages share the English
+    // spelling (candidateName), so a name carries he/en/ar/ru only.
+    if (/\.candidates\.\d+$/.test(at)) return;
     if (typeof o.he === "string" && typeof o.en === "string") {
       blocks++;
       const missing = routing.locales.filter((l) => typeof o[l] !== "string" || !(o[l] as string).trim());

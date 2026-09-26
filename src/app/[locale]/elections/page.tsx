@@ -1,3 +1,5 @@
+import { localizePage } from "@/lib/i18n-data";
+import Image from "next/image";
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { rtlLocales } from "@/i18n/routing";
@@ -10,40 +12,19 @@ import {
   partyText,
   partyTextAttrs,
   type ElectionFact,
+  publisherName,
+  candidateName,
 } from "@/lib/content";
 import { formatDate, formatNumber } from "@/lib/format";
-import { rtlAttrs } from "@/lib/text";
+import { rtlAttrs, localizedAttrs } from "@/lib/text";
 import { getFactionAvgParticipation, getFactionTallies } from "@/lib/queries";
 import { KeyDatesTimeline } from "@/components/KeyDatesTimeline";
 import { PollsSection } from "@/components/polls/PollsSection";
+import { SourceLinks } from "@/components/SourceLinks";
 
 export const dynamic = "force-dynamic";
 
 
-// "source · source" suffix — keeps always-cite-sources visible on every fact.
-function SourceLinks({ sources, label }: {
-  sources: { url: string; title: string; publisher?: string }[];
-  label: string;
-}) {
-  return (
-    <span className="text-xs text-muted">
-      {label}:{" "}
-      {sources.map((s, i) => (
-        <span key={s.url}>
-          {i > 0 && " · "}
-          <a
-            className="underline hover:text-accent"
-            href={s.url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {s.publisher ?? s.title}
-          </a>
-        </span>
-      ))}
-    </span>
-  );
-}
 
 export default async function ElectionsPage() {
   const te = await getTranslations("election");
@@ -55,6 +36,19 @@ export default async function ElectionsPage() {
   // Approval date from the timeline, so the "requested letters" caveat never hardcodes it.
   const approvalDateIso = outlook?.keyDates?.find((d) => d.key === "kd-approval")?.date;
   const approvalDateText = approvalDateIso ? formatDate(approvalDateIso, locale) : "";
+  // The CEC's names for lists and parties are data text: the unified cache
+  // translates them (people's names never — candidateName shows official ones).
+  const { loc } = localizePage(
+    [
+      ...(outlook?.parties ?? []).map((p) => p.cec?.listName.he),
+      ...(outlook?.submittedLists?.lists ?? []).flatMap((l) => [
+        l.name.he,
+        ...(l.submittedBy ?? []),
+        ...(l.candidates ?? []).map((c) => c.party),
+      ]),
+    ],
+    locale,
+  );
   // The record strip's vote rows: each controversial law that has a roll-call
   // inside the site's record, tallied by faction once for the whole page.
   const lawVotes = getControversialLaws().flatMap((law) => law.votes.map((v) => ({ law, vote: v, tallies: getFactionTallies(v.id) })));
@@ -177,6 +171,18 @@ export default async function ElectionsPage() {
                   const profile = p.factionId != null ? getPartyProfile(p.factionId) : undefined;
                   return (
                   <div key={p.name.he} id={`list-${p.slug}`} className="rounded-lg bg-surface p-3 shadow-sm space-y-1.5 scroll-mt-24">
+                    {p.logo && (
+                      <Image
+                        src={p.logo.src}
+                        alt={te("logoAlt", { name: partyText(p.name, locale) })}
+                        width={160}
+                        height={40}
+                        unoptimized
+                        className="rounded object-contain p-1"
+                        // Same white plate as the list's page: brand marks are drawn for white.
+                        style={{ height: 40, width: "auto", maxWidth: 160, backgroundColor: "#fff" }}
+                      />
+                    )}
                     <div className="flex items-start justify-between gap-2">
                       <div className="font-semibold">
                         <Link className="hover:underline" href={`/elections/${p.slug}`}>
@@ -209,8 +215,8 @@ export default async function ElectionsPage() {
                       )}
                     </div>
                     {p.cec && (
-                      <p className="text-xs text-muted" dir="rtl" lang="he">
-                        {partyText(p.cec.listName, "he")}
+                      <p className="text-xs text-muted" {...localizedAttrs(loc(p.cec.listName.he))}>
+                        {loc(p.cec.listName.he).text}
                       </p>
                     )}
                     {p.leader && (
@@ -350,29 +356,37 @@ export default async function ElectionsPage() {
                       </p>
                     )}
                     {p.candidates && p.candidates.length > 0 && (
-                      // The submitted roster, in ballot order. Names are the
-                      // Hebrew record in every locale (never machine-transliterated);
-                      // sitting members link to their page.
+                      // The submitted roster, in ballot order: official spellings
+                      // where the Knesset has one, else the Hebrew record (never
+                      // machine-transliterated); sitting members link to their page.
                       <details className="text-xs" open={p.candidates.length <= 8}>
                         <summary className="cursor-pointer font-semibold">
                           {te("candidates")} <span className="font-normal text-muted tabular-nums">({p.candidates.length})</span>
                         </summary>
-                        <ol className="mt-1 columns-2 gap-x-4 ps-4 leading-relaxed [&>li]:break-inside-avoid" dir="rtl" lang="he">
+                        <ol className="mt-1 columns-2 gap-x-4 ps-4 leading-relaxed [&>li]:break-inside-avoid">
                           {p.candidates.map((c, i) => (
                             <li key={c.he} value={i + 1} className="list-decimal">
                               {c.personId != null ? (
-                                <Link href={`/members/${c.personId}`} className="text-accent-ink underline">
-                                  {c.he}
+                                <Link href={`/members/${c.personId}`} className="text-accent-ink underline" {...rtlAttrs(candidateName(c, locale))}>
+                                  {candidateName(c, locale)}
                                 </Link>
                               ) : (
-                                c.he
+                                <span {...rtlAttrs(candidateName(c, locale))}>{candidateName(c, locale)}</span>
                               )}
                             </li>
                           ))}
                         </ol>
                       </details>
                     )}
-                    <SourceLinks sources={p.sources} label={tc("source")} />
+                    <p className="text-xs text-muted">
+                      <SourceLinks sources={p.sources} label={tc("source")} />
+                      {p.logo && (
+                        <>
+                          {" · "}
+                          <SourceLinks sources={[p.logo.source]} label={te("logoCredit")} />
+                        </>
+                      )}
+                    </p>
                     <Link
                       href={`/elections/${p.slug}`}
                       className="block text-xs font-medium text-accent hover:underline"
@@ -415,13 +429,13 @@ export default async function ElectionsPage() {
                         <td className="px-2 py-1.5 font-bold tracking-wide whitespace-nowrap" dir="rtl" lang="he">
                           {l.letters}
                         </td>
-                        <td className="px-2 py-1.5" dir="rtl" lang="he">
+                        <td className="px-2 py-1.5">
                           {l.slug ? (
-                            <a href={`#list-${l.slug}`} className="underline hover:text-accent">
-                              {partyText(l.name, "he")}
+                            <a href={`#list-${l.slug}`} className="underline hover:text-accent" {...localizedAttrs(loc(l.name.he))}>
+                              {loc(l.name.he).text}
                             </a>
                           ) : (
-                            partyText(l.name, "he")
+                            <span {...localizedAttrs(loc(l.name.he))}>{loc(l.name.he).text}</span>
                           )}{" "}
                           <a
                             href={l.url}
@@ -433,11 +447,22 @@ export default async function ElectionsPage() {
                             ↗
                           </a>
                         </td>
-                        <td className="px-2 py-1.5" dir="rtl" lang="he">
-                          {l.head ? partyText(l.head, "he") : ""}
+                        <td className="px-2 py-1.5">
+                          {/* The head is candidate 1: an official spelling when there is one. */}
+                          {(() => {
+                            const first = l.candidates?.[0];
+                            const official = first && candidateName(first, locale) !== first.he ? candidateName(first, locale) : undefined;
+                            const name = official ?? l.head?.he ?? "";
+                            return <span {...rtlAttrs(name)}>{name}</span>;
+                          })()}
                         </td>
-                        <td className="px-2 py-1.5 text-muted" dir="rtl" lang="he">
-                          {(l.submittedBy ?? []).join(" · ")}
+                        <td className="px-2 py-1.5 text-muted">
+                          {(l.submittedBy ?? []).map((b, k) => (
+                            <span key={b}>
+                              {k > 0 && " · "}
+                              <span {...localizedAttrs(loc(b))}>{loc(b).text}</span>
+                            </span>
+                          ))}
                         </td>
                         <td className="min-w-[14rem] px-2 py-1.5">
                           {/* The roster as the committee prints it (surname first), the
@@ -448,11 +473,16 @@ export default async function ElectionsPage() {
                               <summary className="cursor-pointer whitespace-nowrap underline hover:text-accent">
                                 {te("rosterCount", { n: l.candidates.length })}
                               </summary>
-                              <ol className="mt-1 list-decimal space-y-0.5 ps-5" dir="rtl" lang="he">
+                              <ol className="mt-1 list-decimal space-y-0.5 ps-5">
                                 {l.candidates.slice(0, 20).map((c, i) => (
                                   <li key={i}>
-                                    {c.he}
-                                    {c.party && <span className="text-muted"> · {c.party}</span>}
+                                    <span {...rtlAttrs(candidateName(c, locale))}>{candidateName(c, locale)}</span>
+                                    {c.party && (
+                                      <span className="text-muted">
+                                        {" · "}
+                                        <span {...localizedAttrs(loc(c.party))}>{loc(c.party).text}</span>
+                                      </span>
+                                    )}
                                   </li>
                                 ))}
                               </ol>
@@ -477,7 +507,7 @@ export default async function ElectionsPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {outlook.submittedLists.source.publisher ?? outlook.submittedLists.source.title}
+                  {publisherName(outlook.submittedLists.source.publisher, locale) ?? outlook.submittedLists.source.title}
                 </a>
                 {" · "}
                 {tc("lastChecked", { date: formatDate(outlook.submittedLists.asOf, locale) })}

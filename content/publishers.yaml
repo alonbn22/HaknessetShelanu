@@ -1,0 +1,65 @@
+# Publisher names in the site's six languages, keyed by the exact `publisher:`
+# string the content files cite. Source credits render in the page's language
+# ("Source: The Knesset", not "Source: הכנסת"); a test fails when a Hebrew
+# publisher in content/ has no entry here. Outlets and parties use the same
+# names as polls.yaml and election.yaml.
+publishers:
+  - { key: "Hebrew Wikipedia", en: "Hebrew Wikipedia", ar: "ويكيبيديا العبرية", ru: "Ивритская Википедия", es: "Wikipedia en hebreo", fr: "Wikipédia en hébreu" }
+  - { key: "Israel Democracy Institute", en: "Israel Democracy Institute", ar: "المعهد الإسرائيلي للديمقراطية", ru: "Израильский институт демократии", es: "Instituto Israelí de la Democracia", fr: "Institut israélien de la démocratie" }
+  - { key: "Knesset", en: "The Knesset", ar: "الكنيست", ru: "Кнессет", es: "La Knéset", fr: "La Knesset" }
+  - { key: "Knesset Channel", en: "Knesset Channel", ar: "قناة الكنيست", ru: "Канал Кнессета", es: "Canal de la Knéset", fr: "Chaîne de la Knesset" }
+  - { key: "Knesset Channel (ערוץ הכנסת)", en: "Knesset Channel", ar: "قناة الكنيست", ru: "Канал Кнессета", es: "Canal de la Knéset", fr: "Chaîne de la Knesset" }
+  - { key: "Knesset Ethics Committee", en: "Knesset Ethics Committee", ar: "لجنة الأخلاقيات في الكنيست", ru: "Комиссия Кнессета по этике", es: "Comisión de Ética de la Knéset", fr: "Commission d’éthique de la Knesset" }
+  - { key: "Knesset OData", en: "The Knesset (OData)", ar: "الكنيست (OData)", ru: "Кнессет (OData)", es: "La Knéset (OData)", fr: "La Knesset (OData)" }
+  - { key: "Movement for Quality Government in Israel", en: "Movement for Quality Government in Israel", ar: "الحركة من أجل جودة الحكم في إسرائيل", ru: "Движение за качество власти в Израиле", es: "Movimiento por la Calidad del Gobierno en Israel", fr: "Mouvement pour un gouvernement de qualité en Israël" }
+  - { key: "Nevo (Official Gazette)", en: "Nevo (Official Gazette)", ar: "نيفو (الجريدة الرسمية)", ru: "«Нево» (официальный вестник)", es: "Nevo (Boletín Oficial)", fr: "Nevo (Journal officiel)" }
+  - { key: "The Israel Democracy Institute", en: "Israel Democracy Institute", ar: "المعهد الإسرائيلي للديمقراطية", ru: "Израильский институт демократии", es: "Instituto Israelí de la Democracia", fr: "Institut israélien de la démocratie" }
+  - { key: "The Knesset", en: "The Knesset", ar: "الكنيست", ru: "Кнессет", es: "La Knéset", fr: "La Knesset" }
+  - { key: "The Knesset (Ethics Committee)", en: "The Knesset (Ethics Committee)", ar: "الكنيست (لجنة الأخلاقيات)", ru: "Кнессет (комиссия по этике)", es: "La Knéset (Comisión de Ética)", fr: "La Knesset (commission d’éthique)" }
+  - { key: "The Knesset (OData)", en: "The Knesset (OData)", ar: "الكنيست (OData)", ru: "Кнессет (OData)", es: "La Knéset (OData)", fr: "La Knesset (OData)" }
+  - { key: "Wikipedia (Hebrew)", en: "Hebrew Wikipedia", ar: "ويكيبيديا العبرية", ru: "Ивритская Википедия", es: "Wikipedia en hebreo", fr: "Wikipédia en hébreu" }
+  - { key: "gov.il / ועדת הבחירות", en: "gov.il / Central Elections Committee", ar: "gov.il / لجنة الانتخابات المركزية", ru: "gov.il / Центральная избирательная комиссия", es: "gov.il / Comité Central de Elecciones", fr: "gov.il / Commission électorale centrale" }
+  - { key: "gov.il / ועדת הבחירות המרכזית", en: "gov.il / Central Elections Committee", ar: "gov.il / لجنة الانتخابات المركزية", ru: "gov.il / Центральная избирательная комиссия", es: "gov.il / Comité Central de Elecciones", fr: "gov.il / Commission électorale centrale" }
+  - { key: "אמס", en: "Ams", ar: "آمس", ru: "«Амс»", es: "Ams", fr: "Ams" }
+  - { key: "ביחד", en: "Together", ar: "معًا", ru: "Вместе", es: "Juntos", fr: "Ensemble" }
+  - { key: "דבר", en: "Davar", ar: "دافار", ru: "«Давар»", es: "Davar", fr: "Davar" }
+  - { key: "הארץ", en: "Haaretz", ar: "هآرتس", ru: "«Гаарец»", es: "Haaretz", fr: "Haaretz" }
+  - { key: "הדמוקרטים", en: "The Democrats", ar: "الديمقراطيون", ru: "Демократы", es: "Los Demócratas", fr: "Les Démocrates" }
+  - { key: "הכנסת", en: "The Knesset", ar: "الكنيست", ru: "Кнессет", es: "La Knéset", fr: "La Knesset" }
+  - { key: "הכנסת (OData)", en: "The Knesset (OData)", ar: "الكنيست (OData)", ru: "Кнессет (OData)", es: "La Knéset (OData)", fr: "La Knesset (OData)" }
+  - { key: "הליכוד", en: "Likud", ar: "الليكود", ru: "Ликуд", es: "Likud", fr: "Likoud" }
+  - { key: "הליכוד (ועדת הבחירות המרכזית של התנועה)", en: "Likud (the party's central elections committee)", ar: "الليكود (لجنة الانتخابات المركزية للحزب)", ru: "Ликуд (центральная избирательная комиссия партии)", es: "Likud (comité electoral central del partido)", fr: "Likoud (commission électorale centrale du parti)" }
+  - { key: "המילואימניקים", en: "The Reservists", ar: "جنود الاحتياط", ru: "Резервисты", es: "Los Reservistas", fr: "Les Réservistes" }
+  - { key: "המפלגה הכלכלית", en: "The Economic Party", ar: "الحزب الاقتصادي", ru: "Экономическая партия", es: "El Partido Económico", fr: "Le Parti économique" }
+  - { key: "הציבור החרדי", en: "The Haredi Public", ar: "الجمهور الحريدي", ru: "Харедимная общественность", es: "El Público Jaredí", fr: "Le Public haredi" }
+  - { key: "הציונות הדתית", en: "Religious Zionism", ar: "الصهيونية الدينية", ru: "Религиозный сионизм", es: "Sionismo Religioso", fr: "Sionisme religieux" }
+  - { key: "הרשימה המשותפת", en: "The Joint List", ar: "القائمة المشتركة", ru: "Объединённый список", es: "La Lista Conjunta", fr: "La Liste commune" }
+  - { key: "וואלה", en: "Walla", ar: "والا", ru: "Walla", es: "Walla", fr: "Walla" }
+  - { key: "ועדת הבחירות המרכזית", en: "Central Elections Committee", ar: "لجنة الانتخابات المركزية", ru: "Центральная избирательная комиссия", es: "Comité Central de Elecciones", fr: "Commission électorale centrale" }
+  - { key: "ועדת הבחירות המרכזית (gov.il)", en: "Central Elections Committee (gov.il)", ar: "لجنة الانتخابات المركزية (gov.il)", ru: "Центральная избирательная комиссия (gov.il)", es: "Comité Central de Elecciones (gov.il)", fr: "Commission électorale centrale (gov.il)" }
+  - { key: "ועדת הבחירות המרכזית / gov.il", en: "Central Elections Committee / gov.il", ar: "لجنة الانتخابات المركزية / gov.il", ru: "Центральная избирательная комиссия / gov.il", es: "Comité Central de Elecciones / gov.il", fr: "Commission électorale centrale / gov.il" }
+  - { key: "ועדת הבחירות המרכזית לכנסת", en: "Central Elections Committee for the Knesset", ar: "لجنة الانتخابات المركزية للكنيست", ru: "Центральная избирательная комиссия по выборам в Кнессет", es: "Comité Central de Elecciones a la Knéset", fr: "Commission électorale centrale pour la Knesset" }
+  - { key: "ועדת הבחירות המרכזית לכנסת (gov.il)", en: "Central Elections Committee for the Knesset (gov.il)", ar: "لجنة الانتخابات المركزية للكنيست (gov.il)", ru: "Центральная избирательная комиссия по выборам в Кнессет (gov.il)", es: "Comité Central de Elecciones a la Knéset (gov.il)", fr: "Commission électorale centrale pour la Knesset (gov.il)" }
+  - { key: "זו הדרך", en: "Zo HaDerech", ar: "زو هديرخ", ru: "«Зо ха-Дерех»", es: "Zo HaDerej", fr: "Zo HaDerekh" }
+  - { key: "זו הדרך (ביטאון חד\"ש)", en: "Zo HaDerech (Hadash's newspaper)", ar: "زو هديرخ (صحيفة الجبهة)", ru: "«Зо ха-Дерех» (издание Хадаш)", es: "Zo HaDerej (periódico de Hadash)", fr: "Zo HaDerekh (journal du Hadash)" }
+  - { key: "זמן ישראל", en: "Zman Yisrael", ar: "زمان يسرائيل", ru: "«Зман Исраэль»", es: "Zman Yisrael", fr: "Zman Yisrael" }
+  - { key: "חד\"ש", en: "Hadash", ar: "الجبهة", ru: "Хадаш", es: "Hadash", fr: "Hadash" }
+  - { key: "חדשות 13", en: "Channel 13", ar: "القناة 13", ru: "13-й канал", es: "Canal 13", fr: "Chaîne 13" }
+  - { key: "חוק-יסוד: הממשלה (הכנסת)", en: "Basic Law: The Government (the Knesset)", ar: "قانون أساس: الحكومة (الكنيست)", ru: "Основной закон: Правительство (Кнессет)", es: "Ley Básica: El Gobierno (la Knéset)", fr: "Loi fondamentale : le Gouvernement (la Knesset)" }
+  - { key: "חרדים10", en: "Haredim10", ar: "حريديم10", ru: "Haredim10", es: "Haredim10", fr: "Haredim10" }
+  - { key: "ישר!", en: "Yashar!", ar: "ياشار!", ru: "Яшар!", es: "¡Yashar!", fr: "Yashar!" }
+  - { key: "ישראל ביתנו", en: "Yisrael Beiteinu", ar: "إسرائيل بيتنا", ru: "Наш дом Израиль", es: "Yisrael Beiteinu", fr: "Israël Beiteinou" }
+  - { key: "ישראל ביתנו (אתר המפלגה)", en: "Yisrael Beiteinu (party website)", ar: "إسرائيل بيتنا (موقع الحزب)", ru: "Наш дом Израиль (сайт партии)", es: "Yisrael Beiteinu (sitio del partido)", fr: "Israël Beiteinou (site du parti)" }
+  - { key: "ישראל היום", en: "Israel Hayom", ar: "يسرائيل هيوم", ru: "«Исраэль ха-Йом»", es: "Israel Hayom", fr: "Israel Hayom" }
+  - { key: "כאן חדשות", en: "Kan News", ar: "أخبار «كان»", ru: "Новости «Кан»", es: "Kan News", fr: "Kan News" }
+  - { key: "כחול לבן", en: "Blue and White", ar: "أزرق أبيض", ru: "Кахоль-лаван", es: "Azul y Blanco", fr: "Bleu et Blanc" }
+  - { key: "לקסיקון הכנסת", en: "Knesset Lexicon", ar: "معجم الكنيست", ru: "Лексикон Кнессета", es: "Léxico de la Knéset", fr: "Lexique de la Knesset" }
+  - { key: "מעריב", en: "Maariv", ar: "معاريف", ru: "«Маарив»", es: "Maariv", fr: "Maariv" }
+  - { key: "מקור ראשון", en: "Makor Rishon", ar: "ماكور ريشون", ru: "«Макор ришон»", es: "Makor Rishon", fr: "Makor Rishon" }
+  - { key: "נעם לישראל (אתר המפלגה)", en: "Noam for Israel (party website)", ar: "نوعم لإسرائيل (موقع الحزب)", ru: "«Ноам за Израиль» (сайт партии)", es: "Noam por Israel (sitio del partido)", fr: "Noam pour Israël (site du parti)" }
+  - { key: "סרוגים", en: "Srugim", ar: "سروغيم", ru: "«Сругим»", es: "Srugim", fr: "Srugim" }
+  - { key: "עוצמה יהודית", en: "Otzma Yehudit", ar: "عوتسما يهوديت", ru: "Оцма Иегудит", es: "Otzma Yehudit", fr: "Otzma Yehoudit" }
+  - { key: "ערוץ 14", en: "Channel 14", ar: "القناة 14", ru: "14-й канал", es: "Canal 14", fr: "Chaîne 14" }
+  - { key: "ערוץ 7", en: "Arutz 7", ar: "القناة السابعة", ru: "«Аруц 7»", es: "Arutz 7", fr: "Arutz 7" }
+  - { key: "Knesset Channel (ערוץ כנסת)", en: "Knesset Channel", ar: "قناة الكنيست", ru: "Канал Кнессета", es: "Canal de la Knéset", fr: "Chaîne de la Knesset" }
+  - { key: "ויקיפדיה", en: "Wikipedia", ar: "ويكيبيديا", ru: "Википедия", es: "Wikipedia", fr: "Wikipédia" }

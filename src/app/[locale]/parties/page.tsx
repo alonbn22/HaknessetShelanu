@@ -53,8 +53,9 @@ export default async function PartiesPage() {
               </span>
             </div>
             {locale !== "he" && (
-              <div className="text-sm text-muted mt-1" dir="rtl" lang="he">
-                {factionName(f.id, f.nameHe, "he")}
+              <div className="text-sm text-muted mt-1">
+                {t("votes.originalHebrew")}:{" "}
+                <span dir="rtl" lang="he">{factionName(f.id, f.nameHe, "he")}</span>
               </div>
             )}
             {getPartyProfile(f.id)?.spectrum && (
@@ -81,14 +82,10 @@ export default async function PartiesPage() {
       {coalition.sourceUrl && (
         <p className="text-xs text-muted">
           {t("parties.coalitionNote", { asOf: formatDate(coalition.caretakerSince ?? coalition.asOf, locale) })}{" "}
-          <a
-            className="underline hover:text-accent"
-            href={coalition.sourceUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {coalition.sourceLabel ?? t("common.source")}
-          </a>
+          <SourceLinks
+            sources={[{ url: coalition.sourceUrl, title: coalition.sourceLabel ?? "", publisher: coalition.sourcePublisher }]}
+            label={t("common.source")}
+          />
           {coalition.asOf && <> · {t("common.lastChecked", { date: formatDate(coalition.asOf, locale) })}</>}
         </p>
       )}

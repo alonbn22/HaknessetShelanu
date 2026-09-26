@@ -802,7 +802,13 @@ polls:
       - { label: { he: "האופוזיציה הציונית", en: "Zionist opposition", ar: "المعارضة الصهيونية", ru: "Сионистская оппозиция", es: "Oposición sionista", fr: "Opposition sioniste" }, seats: 57 }
       - { label: { he: "המפלגות הערביות", en: "Arab parties", ar: "الأحزاب العربية", ru: "Арабские партии", es: "Partidos árabes", fr: "Partis arabes" }, seats: 12 }
       - { label: { he: "המילואימניקים והכלכלית", en: "Reservists–Economic slate", ar: "جنود الاحتياط والحزب الاقتصادي", ru: "Список «Резервисты и Экономическая партия»", es: "Lista Reservistas–Económica", fr: "Liste Réservistes–Économique" }, seats: 4 }
-    note: "fieldwork 7–8 Sep straddled the close of list submission (8 Sep, 22:00); the outlet itself notes further fluctuation was possible"
+    note:
+      he: "העבודה בשטח (7–8 בספטמבר) חפפה את סגירת הגשת הרשימות (8 בספטמבר, 22:00); כלי התקשורת עצמו ציין שייתכנו תנודות נוספות"
+      en: "Fieldwork (7–8 Sep) straddled the close of list submission (8 Sep, 22:00); the outlet itself noted further fluctuation was possible"
+      ar: "تزامن العمل الميداني (7–8 أيلول/سبتمبر) مع إغلاق تقديم القوائم (8 أيلول/سبتمبر، 22:00)؛ وأشارت وسيلة الإعلام نفسها إلى احتمال حدوث تقلبات أخرى"
+      ru: "Опрос (7–8 сентября) пришёлся на закрытие подачи списков (8 сентября, 22:00); само издание отметило, что возможны дальнейшие колебания"
+      es: "El trabajo de campo (7–8 de septiembre) coincidió con el cierre de la presentación de listas (8 de septiembre, 22:00); el propio medio señaló que eran posibles más fluctuaciones"
+      fr: "Le terrain (7–8 septembre) a chevauché la clôture du dépôt des listes (8 septembre, 22 h 00) ; le média lui-même a signalé que d’autres fluctuations étaient possibles"
     verification: "all 12 figures and 4 blocs in the Jerusalem Post report by Maariv's polls correspondent Moshe Cohen (same publishing group; published 8 Sep 13:47); methodology verbatim: 7–8 Sep, 4,052 invited, 600 responded (15%), 18+, Jews and Arabs, ±4%; Lazar Research/Dr. Menahem Lazar with Panel4ALL"
     sources:
       - { url: "https://www.jpost.com/israel-election-2026/article-907949", title: "Eisenkot-led coalition has pathway to 61 seats without Arab parties for first time - poll", publisher: "The Jerusalem Post (Maariv poll)" }

@@ -74,7 +74,7 @@ export default async function ComparePage({
 
   const headerCard = (data: MemberData) => (
     <div className="flex flex-col items-center gap-2 rounded-xl bg-white p-5 text-center shadow-sm">
-      <MemberAvatar person={data.person} size={88} alt={data.name} />
+      <MemberAvatar person={data.person} name={data.name} size={88} />
       <Link
         href={`/members/${data.id}`}
         className="text-lg font-bold leading-tight hover:underline"

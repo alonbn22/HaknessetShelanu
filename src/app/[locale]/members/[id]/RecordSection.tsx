@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import type { MemberRecord, MemberClaim } from "@/lib/content";
 import { formatDate } from "@/lib/format";
+import { SourceLinks } from "@/components/SourceLinks";
 import { isHebrew } from "@/lib/text";
 
 // Locale -> Hebrew fallback (no en intermediate): legal record text is authored
@@ -95,21 +96,8 @@ function ClaimList({
                     {localized(c.description, locale)}
                   </p>
                 )}
-                <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 border-t border-black/5 pt-2 text-xs text-muted">
-                  <span className="font-medium">{t("recordSources")}:</span>
-                  {c.sources.map((s, j) => (
-                    <a
-                      key={j}
-                      href={s.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="underline hover:text-accent"
-                      {...rtlProps(s.title)}
-                    >
-                      {s.title}
-                      {s.publisher ? ` (${s.publisher})` : ""}
-                    </a>
-                  ))}
+                <div className="mt-2 border-t border-black/5 pt-2">
+                  <SourceLinks sources={c.sources} label={t("recordSources")} />
                 </div>
               </li>
             ))}

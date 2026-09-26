@@ -4,13 +4,17 @@ import { canonicalCommonsUrl } from "@/lib/text";
 // Client-safe (no DB/queries imports) so it can be used in client components too.
 export function MemberAvatar({
   person,
+  name,
   size = 56,
   alt,
 }: {
-  person: { firstNameHe: string; lastNameHe: string; photoUrl: string | null };
+  person: { photoUrl: string | null };
+  // The name as the page shows it (personName in the page's locale): the photo's
+  // alt text and, with no photo, the initials — never the Hebrew fields, so a
+  // non-Hebrew page shows no Hebrew letters and announces none (WCAG 3.1.2).
+  name: string;
   size?: number;
-  // Localized alt text (falls back to Hebrew) so screen readers don't announce
-  // Hebrew under a non-he <html lang> (WCAG 3.1.2).
+  // Override, e.g. "" when the name is printed right beside the photo.
   alt?: string;
 }) {
   const photoUrl = canonicalCommonsUrl(person.photoUrl);
@@ -18,7 +22,7 @@ export function MemberAvatar({
     return (
       <Image
         src={photoUrl}
-        alt={alt ?? `${person.firstNameHe} ${person.lastNameHe}`}
+        alt={alt ?? name}
         width={size}
         height={size}
         // Load Commons images directly, not via the Next optimizer (Wikimedia rate-limits server-side fetches).
@@ -35,8 +39,15 @@ export function MemberAvatar({
       className="rounded-full bg-accent/15 text-accent flex items-center justify-center font-semibold shrink-0"
       style={{ width: size, height: size, fontSize: size / 2.8 }}
     >
-      {person.firstNameHe.charAt(0)}
-      {person.lastNameHe.charAt(0)}
+      {initials(name)}
     </div>
   );
+}
+
+// First letters of the first and last words: "Oz Haim" -> "OH".
+function initials(name: string): string {
+  const words = name.trim().split(/\s+/).filter(Boolean);
+  const first = words[0]?.charAt(0) ?? "";
+  const last = words.length > 1 ? words[words.length - 1].charAt(0) : "";
+  return (first + last).toUpperCase();
 }

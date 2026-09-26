@@ -1,4 +1,5 @@
 import { useTranslations, useLocale } from "next-intl";
+import { localizedAttrs } from "@/lib/text";
 import { Link } from "@/i18n/navigation";
 import { formatDate } from "@/lib/format";
 import { govVoteItemType } from "@/lib/gov-terms";
@@ -13,7 +14,7 @@ export function VoteCard({
   title,
 }: {
   vote: Vote;
-  title: { text: string; translated: boolean };
+  title: { text: string; translated: boolean; rtl: boolean; lang?: string };
 }) {
   const t = useTranslations("votes");
   const locale = useLocale();
@@ -49,8 +50,7 @@ export function VoteCard({
       </div>
       <div
         className="mt-1 font-medium leading-snug line-clamp-3"
-        dir={title.translated ? undefined : "rtl"}
-        lang={title.translated ? locale : "he"}
+        {...localizedAttrs(title)}
       >
         {title.text}
       </div>

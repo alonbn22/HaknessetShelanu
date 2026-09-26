@@ -190,14 +190,17 @@ export default async function MemberPage({
   return (
     <div className="space-y-8">
       <section className="flex flex-wrap items-center gap-6 rounded-xl bg-white p-6 shadow-sm">
-        <MemberAvatar person={member} size={112} alt={personName(member, locale)} />
+        <MemberAvatar person={member} name={personName(member, locale)} size={112} />
         <div className="space-y-1 min-w-0">
           <h1 className="text-3xl font-bold" {...rtlAttrs(personName(member, locale))}>
             {personName(member, locale)}
           </h1>
           {locale !== "he" && (
-            <div className="text-muted" dir="rtl" lang="he">
-              {member.firstNameHe} {member.lastNameHe}
+            <div className="text-muted">
+              {t("votes.originalHebrew")}:{" "}
+              <span dir="rtl" lang="he">
+                {member.firstNameHe} {member.lastNameHe}
+              </span>
             </div>
           )}
           {currentFaction?.factionId != null && (
@@ -379,7 +382,7 @@ export default async function MemberPage({
                             href={`/compare?a=${personId}&b=${a.person.id}`}
                             className="flex items-center gap-2 rounded-lg px-2 py-1.5 text-sm hover:bg-black/[.03]"
                           >
-                            <MemberAvatar person={a.person} size={28} alt={personName(a.person, locale)} />
+                            <MemberAvatar person={a.person} name={personName(a.person, locale)} size={28} />
                             <span className="min-w-0 flex-1 truncate" {...rtlAttrs(personName(a.person, locale))}>
                               {personName(a.person, locale)}
                             </span>
@@ -534,8 +537,7 @@ export default async function MemberPage({
                   <Link
                     href={`/votes/${vote.id}`}
                     className="flex-1 min-w-0 truncate hover:underline text-sm"
-                    dir={vt.translated ? undefined : "rtl"}
-                    lang={vt.translated ? locale : "he"}
+                    {...localizedAttrs(vt)}
                   >
                     {vt.text}
                   </Link>

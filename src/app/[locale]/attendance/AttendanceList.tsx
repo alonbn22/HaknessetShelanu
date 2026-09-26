@@ -80,7 +80,7 @@ export function AttendanceList({
                       href={`/members/${r.id}`}
                       className="flex items-center gap-2 hover:underline"
                     >
-                      <MemberAvatar person={r.person} size={28} />
+                      <MemberAvatar person={r.person} name={r.name} size={28} />
                       <span
                         className="truncate"
                         dir={r.nameRtl ? "rtl" : undefined}

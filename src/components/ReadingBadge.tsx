@@ -1,3 +1,4 @@
+import { localizedAttrs } from "@/lib/text";
 import { useTranslations } from "next-intl";
 import { voteKind, isReading, type VoteKind } from "@/lib/votes-meta";
 
@@ -41,9 +42,12 @@ export function ReadingBadge({
 export function VoteMeaning({
   forDesc,
   titleHe,
+  option,
 }: {
   forDesc: string | null;
   titleHe?: string | null;
+  // The official option text in the page's language (the translation cache).
+  option: { text: string; rtl: boolean; lang?: string };
 }) {
   const t = useTranslations("reading");
   const kind = voteKind(forDesc, titleHe);
@@ -57,9 +61,9 @@ export function VoteMeaning({
         </span>
       </div>
       {kind !== "other" && <p className="text-sm">{t(`explain_${kind}`)}</p>}
-      {forDesc && (
-        <p className="text-xs text-muted" dir="rtl" lang="he">
-          {forDesc}
+      {option.text && (
+        <p className="text-xs text-muted" {...localizedAttrs(option)}>
+          {option.text}
         </p>
       )}
     </div>

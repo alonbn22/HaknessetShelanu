@@ -50,6 +50,7 @@ const coalitionSchema = z
     governmentSince: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(), // the government's swearing-in
     sourceUrl: httpUrl.optional(),
     sourceLabel: z.string().optional(),
+    sourcePublisher: z.string().optional(), // shown in the page's language (publishers.yaml)
     statuses: z.record(z.string().regex(/^\d+$/), factionStatusSchema).default({}),
     // The majority the law asks for, with the law itself as the source — so
     // a count under it can be shown as a minority government, not a mistake.
@@ -587,6 +588,21 @@ const cecListSchema = z.object({
 });
 export type CecList = z.infer<typeof cecListSchema>;
 
+// A candidate as the CEC prints the name (Hebrew, the record). en/ar/ru are the
+// Knesset's own spellings (its MK directory) for current and former MKs and
+// their exact namesakes — never machine-generated; otherwise the Hebrew shows.
+const candidateSchema = z.object({
+  he: z.string().min(1),
+  en: z.string().optional(),
+  ar: z.string().optional(),
+  ru: z.string().optional(),
+});
+
+export function candidateName(c: { he: string; en?: string; ar?: string; ru?: string }, locale: string): string {
+  if (locale === "he") return c.he;
+  return (locale === "ar" ? c.ar : locale === "ru" ? c.ru : undefined) ?? c.en ?? c.he;
+}
+
 // One row of the "every list that submitted" table: the CEC index entry plus
 // the list head where the list's own page was read.
 const submittedListSchema = z.object({
@@ -601,7 +617,7 @@ const submittedListSchema = z.object({
   // prints it (surname first); `party` is the submitting party the candidate
   // was recorded under, given only on joint lists.
   updated: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
-  candidates: z.array(z.object({ he: z.string().min(1), party: z.string().optional() })).optional(),
+  candidates: z.array(candidateSchema.extend({ party: z.string().optional() })).optional(),
 });
 export type SubmittedList = z.infer<typeof submittedListSchema>;
 
@@ -619,13 +635,11 @@ const electionPartySchema = z.object({
   // What the list has said about blocs and partners, as reported by the entry's
   // sources — never inferred from ideology.
   stance: localizedText.optional(),
-  // The submitted candidate list in ballot order, as published. Hebrew is the
-  // record; `en` is optional and never machine-generated. `personId` links a
-  // 25th-Knesset member to their page and is set only on an exact name match
-  // (a QA test cross-checks every id against the registry name).
-  candidates: z
-    .array(z.object({ he: z.string(), en: z.string().optional(), personId: z.number().optional() }))
-    .optional(),
+  // The submitted candidate list in ballot order, as published (see
+  // candidateSchema for the names). `personId` links a 25th-Knesset member to
+  // their page and is set only on an exact name match (a QA test cross-checks
+  // every id against the registry name).
+  candidates: z.array(candidateSchema.extend({ personId: z.number().optional() })).optional(),
   factionId: z.number().optional(), // links to /parties/<id> when it maps to a sitting faction
   // The Central Elections Committee's page for the list: the official name,
   // the letters (requested until the CEC approves the lists, then approved),
@@ -857,7 +871,7 @@ const pollSchema = z.object({
   blocs: z
     .array(z.object({ label: localizedText, seats: z.number().int().positive() }))
     .default([]),
-  note: z.string().optional(),
+  note: localizedText.optional(),
   verification: z.string().optional(),
   sources: z
     .array(z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() }))
@@ -917,4 +931,28 @@ export function getPolls(): PollsFile | null {
     }
   }
   return _polls;
+}
+
+// Publisher names in the six languages (content/publishers.yaml), keyed by the
+// exact `publisher:` string the content cites, so a source credit reads in the
+// page's language. Unknown names pass through unchanged (Latin-script brands).
+const publishersFileSchema = z.object({
+  publishers: z.array(
+    z.object({ key: z.string(), en: z.string(), ar: z.string(), ru: z.string(), es: z.string(), fr: z.string() }),
+  ),
+});
+
+let _publishers: Map<string, Record<string, string>> | null = null;
+
+export function getPublisherNames(): Map<string, Record<string, string>> {
+  if (!_publishers) {
+    const raw = fs.readFileSync(path.join(CONTENT_DIR, "publishers.yaml"), "utf8");
+    _publishers = new Map(publishersFileSchema.parse(parse(raw)).publishers.map(({ key, ...names }) => [key, names]));
+  }
+  return _publishers;
+}
+
+export function publisherName(name: string | undefined, locale: string): string | undefined {
+  if (!name || locale === "he") return name;
+  return getPublisherNames().get(name)?.[locale] ?? name;
 }

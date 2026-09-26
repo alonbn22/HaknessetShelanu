@@ -17,8 +17,9 @@ export function rtlAttrs(s: string | null | undefined): { dir?: "rtl"; lang?: "h
 
 // Same, for values already resolved by the translation cache (Localized-shaped:
 // anything carrying an `rtl` flag). Structural type — safe in client components.
-export function localizedAttrs(l: { rtl: boolean }): { dir?: "rtl"; lang?: "he" } {
-  return l.rtl ? { dir: "rtl", lang: "he" } : {};
+export function localizedAttrs(l: { rtl: boolean; lang?: string }): { dir?: "rtl" | "ltr"; lang?: string } {
+  if (l.rtl) return { dir: "rtl", lang: "he" };
+  return l.lang ? { dir: "ltr", lang: l.lang } : {};
 }
 
 // Scheme guard for DB-sourced URLs rendered into href (committee docs, broadcast

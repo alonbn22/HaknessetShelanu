@@ -1,3 +1,5 @@
+import { localizePage } from "@/lib/i18n-data";
+import { useLocale } from "next-intl";
 import { Fragment } from "react";
 import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
@@ -11,9 +13,10 @@ import {
   partyTextAttrs,
   type ElectionParty,
   type Poll,
+  publisherName,
 } from "@/lib/content";
 import { formatDate } from "@/lib/format";
-import { rtlAttrs } from "@/lib/text";
+import { rtlAttrs, localizedAttrs } from "@/lib/text";
 import { pollOfPolls, trendSeries, AVERAGE_WINDOW_DAYS } from "@/lib/polls";
 import { Card } from "@/components/ui/Card";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -35,13 +38,14 @@ function listColor(list: ElectionParty, factionColor: Map<number, string>): stri
 // Every source the poll cites (a figure may come from a second article), each
 // named by its publisher and marked RTL when that name is Hebrew on a non-Hebrew page.
 function SourceLink({ poll, label }: { poll: Poll; label: string }) {
+  const locale = useLocale();
   return (
     <>
       {poll.sources.map((s, i) => (
         <span key={s.url}>
           {i > 0 && " · "}
-          <a className="underline hover:text-accent-ink" href={s.url} target="_blank" rel="noopener noreferrer" title={s.title} {...rtlAttrs(s.publisher ?? label)}>
-            {s.publisher ?? label}
+          <a className="underline hover:text-accent-ink" href={s.url} target="_blank" rel="noopener noreferrer" title={s.title} {...rtlAttrs(publisherName(s.publisher, locale) ?? label)}>
+            {publisherName(s.publisher, locale) ?? label}
           </a>
         </span>
       ))}
@@ -55,6 +59,8 @@ export async function PollsSection({ id = "polls" }: { id?: string }) {
   const t = await getTranslations("polls");
   const tc = await getTranslations("common");
   const locale = await getLocale();
+  // The outlets' own "below the threshold" wording is data text (the cache).
+  const { loc } = localizePage(file.polls.map((p) => p.belowThresholdNote), locale);
 
   const registry = getRunningLists();
   const slugs = [...registry.keys()];
@@ -287,9 +293,9 @@ export async function PollsSection({ id = "polls" }: { id?: string }) {
                 {(p.note || p.belowThresholdNote) && (
                   <tr className="!border-t-0">
                     <td colSpan={5 + slugs.length} className="px-3 pb-2 text-xs text-muted">
-                      {p.belowThresholdNote && <span {...rtlAttrs(p.belowThresholdNote)}>{p.belowThresholdNote}</span>}
+                      {p.belowThresholdNote && <span {...localizedAttrs(loc(p.belowThresholdNote))}>{loc(p.belowThresholdNote).text}</span>}
                       {p.belowThresholdNote && p.note && " · "}
-                      {p.note && <span {...rtlAttrs(p.note)}>{p.note}</span>}
+                      {p.note && <span {...partyTextAttrs(p.note, locale)}>{partyText(p.note, locale)}</span>}
                     </td>
                   </tr>
                 )}
@@ -332,8 +338,8 @@ export async function PollsSection({ id = "polls" }: { id?: string }) {
                   {t("below")}: {p.belowThreshold.map((s) => nameOf(s)).join(", ")}
                 </p>
               )}
-              {p.belowThresholdNote && <p className="text-xs text-muted" {...rtlAttrs(p.belowThresholdNote)}>{p.belowThresholdNote}</p>}
-              {p.note && <p className="text-xs text-muted" {...rtlAttrs(p.note)}>{p.note}</p>}
+              {p.belowThresholdNote && <p className="text-xs text-muted" {...localizedAttrs(loc(p.belowThresholdNote))}>{loc(p.belowThresholdNote).text}</p>}
+              {p.note && <p className="text-xs text-muted" {...partyTextAttrs(p.note, locale)}>{partyText(p.note, locale)}</p>}
               <p className="text-xs text-muted">
                 {tc("source")}: <SourceLink poll={p} label={partyText(p.outlet, locale)} />
               </p>
@@ -420,7 +426,7 @@ export async function PollsSection({ id = "polls" }: { id?: string }) {
               <span key={s.url}>
                 {i > 0 && " · "}
                 <a className="underline hover:text-accent-ink" href={s.url} target="_blank" rel="noopener noreferrer">
-                  {s.publisher ?? s.title}
+                  {publisherName(s.publisher, locale) ?? s.title}
                 </a>
               </span>
             ))}

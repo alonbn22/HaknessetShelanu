@@ -16,6 +16,7 @@ import {
   syncPositionDescriptions,
   syncPersons,
   syncMkSiteCodes,
+  syncOfficialNames,
   markSyncState,
 } from "./members";
 import { enrichFromWikidata } from "./wikidata";
@@ -69,6 +70,7 @@ async function main() {
     await syncPersons(personIds);
     await syncMkSiteCodes(personIds);
     await enrichFromWikidata();
+    await syncOfficialNames(); // after Wikidata: the Knesset's own spelling wins
     markSyncState("members", new Date().toISOString());
   }
 

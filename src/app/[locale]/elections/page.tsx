@@ -31,6 +31,7 @@ export const dynamic = "force-dynamic";
 
 export default async function ElectionsPage() {
   const te = await getTranslations("election");
+  const tf = await getTranslations("finder");
   const tp = await getTranslations("party");
   const tc = await getTranslations("common");
   const ts = await getTranslations("spectrum");
@@ -175,6 +176,10 @@ export default async function ElectionsPage() {
                 {" · "}
                 <Link href="/elections/positions" className="text-accent-ink underline">
                   {te("positionsCta")}
+                </Link>
+                {" · "}
+                <Link href="/elections/find" className="text-accent-ink underline">
+                  {tf("cta")}
                 </Link>
               </p>
               <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

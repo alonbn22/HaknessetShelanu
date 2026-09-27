@@ -568,6 +568,34 @@
     "explainNotAdvice": "Il ne s’agit que de proximité de positions, pas d’une recommandation de vote : la boussole ne mesure ni le leadership, ni la crédibilité, ni le passé.",
     "explainThin": "Une liste comparée sur quelques affirmations seulement peut obtenir un pourcentage très élevé ou très bas par hasard ; elle est donc affichée en retrait et classée après les listes comparées sur la plupart de vos affirmations."
   },
+  "finder": {
+    "title": "Trouver des listes selon ce qu’elles disent",
+    "subtitle": "Cochez les positions qui comptent pour vous et voyez quelles listes en lice les défendent — avec leurs propres mots et une source pour chacune.",
+    "method": "Une liste n’apparaît que là où son programme, les propos de sa tête de liste ou les votes de sa faction à la Knesset le disent — les mêmes sources que la boussole électorale. Une liste sans position documentée sur l’un de vos choix est présentée à part, sans être comptée comme d’accord ni comme opposée.",
+    "privacy": "Vos choix restent sur cette page : rien n’est enregistré ni envoyé.",
+    "compassLink": "Envie de pondérer toutes les affirmations ? Faites la boussole électorale",
+    "positionsLink": "Toutes les positions dans un tableau",
+    "resultsTitle": "Les listes",
+    "noChoices": "Cochez au moins une position pour voir les listes.",
+    "resultsCount": "{count, plural, =0 {Aucune liste ne correspond à tous vos choix} one {Une liste correspond à tous vos choix} other {# listes correspondent à tous vos choix}}",
+    "didntSayTitle": "Sans position documentée sur certains de vos choix",
+    "didntSayOn": "Pas de position documentée sur : {items}",
+    "differ": "{count, plural, one {Une autre liste défend une position différente} other {# autres listes défendent une position différente}} sur au moins un de vos choix.",
+    "supports": "Pour",
+    "opposes": "Contre",
+    "clear": "Effacer",
+    "source": "Source",
+    "topics": {
+      "security": "Sécurité et politique étrangère",
+      "economy": "Économie",
+      "religion-state": "Religion et État",
+      "education": "Éducation",
+      "society": "Société",
+      "institutions": "Institutions",
+      "government": "Gouvernement"
+    },
+    "cta": "Trouver des listes selon leurs positions"
+  },
   "budget": {
     "title": "Budget de l’État",
     "subtitle": "Où va l’argent — données budgétaires officielles et détaillées, avec historique et recherche.",

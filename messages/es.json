@@ -568,6 +568,34 @@
     "explainNotAdvice": "Es solo cercanía de posturas, no una recomendación de voto: la brújula no mide liderazgo, credibilidad ni el pasado.",
     "explainThin": "Una lista comparada en solo unas pocas afirmaciones puede obtener un porcentaje muy alto o muy bajo por azar; por eso se muestra atenuada y se ordena después de las listas comparadas en la mayoría de sus afirmaciones."
   },
+  "finder": {
+    "title": "Encuentra listas por lo que dicen",
+    "subtitle": "Marca las posiciones que te importan y mira qué listas en competencia las sostienen — con sus propias palabras y una fuente para cada una.",
+    "method": "Una lista aparece solo cuando lo dicen su programa, las palabras de su líder o los votos de su facción en la Knéset — las mismas fuentes que la brújula electoral. Una lista sin posición documentada en alguna de tus elecciones se muestra aparte y no cuenta como a favor ni en contra.",
+    "privacy": "Tus elecciones se quedan en esta página: no se guarda ni se envía nada.",
+    "compassLink": "¿Quieres sopesar todas las afirmaciones? Haz la brújula electoral",
+    "positionsLink": "Todas las posiciones en una tabla",
+    "resultsTitle": "Las listas",
+    "noChoices": "Marca al menos una posición para ver las listas.",
+    "resultsCount": "{count, plural, =0 {Ninguna lista coincide con todas tus elecciones} one {Una lista coincide con todas tus elecciones} other {# listas coinciden con todas tus elecciones}}",
+    "didntSayTitle": "Sin posición documentada en algunas de tus elecciones",
+    "didntSayOn": "Sin posición documentada sobre: {items}",
+    "differ": "{count, plural, one {Otra lista sostiene una posición distinta} other {Otras # listas sostienen una posición distinta}} en al menos una de tus elecciones.",
+    "supports": "A favor",
+    "opposes": "En contra",
+    "clear": "Borrar",
+    "source": "Fuente",
+    "topics": {
+      "security": "Seguridad y política exterior",
+      "economy": "Economía",
+      "religion-state": "Religión y Estado",
+      "education": "Educación",
+      "society": "Sociedad",
+      "institutions": "Instituciones",
+      "government": "Gobierno"
+    },
+    "cta": "Encuentra listas por sus posiciones"
+  },
   "budget": {
     "title": "Presupuesto del Estado",
     "subtitle": "Adónde va el dinero — datos presupuestarios oficiales y detallados, con historial y búsqueda.",

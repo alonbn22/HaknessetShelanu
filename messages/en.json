@@ -568,6 +568,34 @@
     "explainNotAdvice": "This is closeness of positions only, not a voting recommendation: the compass does not measure leadership, credibility or the past.",
     "explainThin": "A list compared on only a few statements can score very high or very low by chance; it is shown dimmed and ranked after the lists compared on most of your statements."
   },
+  "finder": {
+    "title": "Find lists by what they say",
+    "subtitle": "Tick the positions that matter to you and see which running lists hold them — in their own words, with a source for each.",
+    "method": "A list appears only where its platform, its leader's words or its faction's Knesset votes say so — the same sources as the election compass. A list with no documented position on one of your choices is shown separately, never counted as agreeing or disagreeing.",
+    "privacy": "Your choices stay on this page: nothing is saved or sent.",
+    "compassLink": "Want to weigh every statement? Take the election compass",
+    "positionsLink": "Every position in one table",
+    "resultsTitle": "The lists",
+    "noChoices": "Tick at least one position to see the lists.",
+    "resultsCount": "{count, plural, =0 {No list matches all your choices} one {One list matches all your choices} other {# lists match all your choices}}",
+    "didntSayTitle": "No documented position on some of your choices",
+    "didntSayOn": "No documented position on: {items}",
+    "differ": "{count, plural, one {One more list holds a different position} other {# more lists hold a different position}} on at least one of your choices.",
+    "supports": "Supports",
+    "opposes": "Opposes",
+    "clear": "Clear",
+    "source": "Source",
+    "topics": {
+      "security": "Security and foreign policy",
+      "economy": "The economy",
+      "religion-state": "Religion and state",
+      "education": "Education",
+      "society": "Society",
+      "institutions": "Institutions",
+      "government": "Government"
+    },
+    "cta": "Find lists by their positions"
+  },
   "budget": {
     "title": "State Budget",
     "subtitle": "Where the money goes — official, itemized budget data, with history and search.",

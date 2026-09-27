@@ -30,6 +30,23 @@ export type PollAverage = {
   lists: ListAverage[]; // registry order, filtered to lists that appear in ≥1 input
 };
 
+// Elections (Propaganda Methods) Law 1959, s. 16e(h): from the end of the
+// Friday before polling day until the polls close, no new poll results may be
+// published, and polls published earlier only with a prominent notice that
+// they are not current. We start at the Friday's first minute, Israel time,
+// to be safe (IDT until 25 Oct 2026, IST after); the last poll date allowed is
+// that Friday. Source: the CEC's copy of s. 16e (gov.il), Nevo.
+export const BLACKOUT = {
+  start: "2026-10-23T00:00:00+03:00",
+  end: "2026-10-27T22:00:00+02:00",
+  lastPollDate: "2026-10-23",
+} as const;
+
+export function pollBlackout(now: Date = new Date()): boolean {
+  const t = now.getTime();
+  return t >= Date.parse(BLACKOUT.start) && t < Date.parse(BLACKOUT.end);
+}
+
 const DAY = 24 * 60 * 60 * 1000;
 
 export function daysBetween(a: string, b: string): number {

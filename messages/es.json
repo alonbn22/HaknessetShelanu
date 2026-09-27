@@ -744,6 +744,8 @@
     "title": "Encuestas de escaños",
     "eyebrow": "Desde el cierre de las listas",
     "intro": "Las encuestas son una foto del momento, no un pronóstico. Cada número de aquí se tomó del artículo original del medio que lo publicó (o del informe de su grupo de comunicación) y enlaza a él. {count} encuestas de {institutes} institutos de encuestas, {from}–{to}.",
+    "blackoutTitle": "Veda de encuestas",
+    "blackoutText": "Según la Ley de Elecciones (Métodos de Propaganda), desde el final del viernes anterior a la jornada electoral y hasta el cierre de las urnas está prohibido publicar resultados de nuevas encuestas electorales. Las encuestas de aquí se publicaron antes: no están actualizadas y no permiten saber cómo votará la gente ni qué piensa el público hoy.",
     "averageTitle": "Promedio de encuestas",
     "averageMethod": "El promedio de las {n} encuestas más recientes — una por instituto ({from}–{to}). Cómo se calcula — en la explicación de abajo.",
     "averageRange": "en las distintas encuestas: de {min} a {max}",

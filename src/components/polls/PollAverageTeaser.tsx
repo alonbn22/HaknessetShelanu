@@ -5,6 +5,7 @@ import { getFactionMeta, getPolls, getRunningLists, listName, listNameAttrs, par
 import { formatDate } from "@/lib/format";
 import { pollOfPolls } from "@/lib/polls";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { PollBlackoutNotice } from "@/components/polls/PollBlackoutNotice";
 
 // The home page's "now" column: the poll of polls, with its count and method,
 // linking to the full section. Never a single poll, never a headline number
@@ -43,6 +44,7 @@ export async function PollAverageTeaser({ top = 6 }: { top?: number }) {
       >
         {t("homeTitle")}
       </SectionHeading>
+      <PollBlackoutNotice />
       <p className="text-xs text-muted">
         {t("homeMethod", { polls: avg.inputs.length, institutes: avg.institutes, from: formatDate(avg.from, locale), to: formatDate(avg.to, locale) })}
       </p>

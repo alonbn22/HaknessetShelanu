@@ -11,6 +11,8 @@ import {
   trendSeries,
   THRESHOLD_SEATS,
   KNESSET_SEATS,
+  BLACKOUT,
+  pollBlackout,
 } from "../../src/lib/polls";
 
 // Seat polls are the election content where an unverified number does the most
@@ -23,6 +25,17 @@ const FILE = path.join(process.cwd(), "content", "polls.yaml");
 const file = getPolls();
 const registry = getRunningLists();
 const slugs = [...registry.keys()];
+
+// Elections (Propaganda Methods) Law s. 16e(h): the blackout notice shows from
+// Friday 23 Oct 2026 00:00 (IDT) until the polls close at 22:00 (IST) on the
+// 27th, and no poll dated after that Friday may enter the file.
+test("the poll blackout runs from Friday 23 Oct 00:00 to the polls closing, Israel time", () => {
+  assert.equal(pollBlackout(new Date("2026-10-22T23:59:59+03:00")), false);
+  assert.equal(pollBlackout(new Date("2026-10-23T00:00:00+03:00")), true);
+  assert.equal(pollBlackout(new Date("2026-10-25T12:00:00+02:00")), true);
+  assert.equal(pollBlackout(new Date("2026-10-27T21:59:59+02:00")), true);
+  assert.equal(pollBlackout(new Date("2026-10-27T22:00:00+02:00")), false);
+});
 
 test("polls.yaml parses when present (loader returns null otherwise)", () => {
   if (!fs.existsSync(FILE)) return;
@@ -40,6 +53,12 @@ if (file) {
     assert.ok(file.cutoff <= file.lastReviewed, "cutoff after lastReviewed");
     assert.ok(file.threshold > 0 && file.threshold < 10, "threshold is a percentage of valid votes");
     assert.ok(file.polls.length >= 1, "no polls entered");
+  });
+
+  test("no poll is dated after the last day before the blackout", () => {
+    for (const p of file.polls) {
+      assert.ok(p.published <= BLACKOUT.lastPollDate, `${p.id}: published during the blackout`);
+    }
   });
 
   test("ids are unique and carry the published date", () => {

@@ -744,6 +744,8 @@
     "title": "Seat polls",
     "eyebrow": "Since the lists closed",
     "intro": "Polls are a snapshot, not a forecast. Every number here was taken from the original article of the outlet that published it (or its publishing group’s report) and links to it. {count} polls from {institutes} polling institutes, {from}–{to}.",
+    "blackoutTitle": "Poll blackout",
+    "blackoutText": "Under the Elections (Propaganda Methods) Law, from the end of the Friday before election day until the polls close, no new election-poll results may be published. The polls here were published earlier: they are not current, and they cannot tell you how people will vote or what the public thinks today.",
     "averageTitle": "Poll of polls",
     "averageMethod": "The average of the {n} latest polls — one per polling institute ({from}–{to}). How it is computed — in the explanation below.",
     "averageRange": "across the polls: {min} to {max}",

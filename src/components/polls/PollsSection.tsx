@@ -18,6 +18,7 @@ import {
 import { formatDate } from "@/lib/format";
 import { rtlAttrs, localizedAttrs, sourceTitle } from "@/lib/text";
 import { pollOfPolls, trendSeries, AVERAGE_WINDOW_DAYS } from "@/lib/polls";
+import { PollBlackoutNotice } from "@/components/polls/PollBlackoutNotice";
 import { Card } from "@/components/ui/Card";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { TableFrame } from "@/components/ui/TableFrame";
@@ -151,6 +152,8 @@ export async function PollsSection({ id = "polls" }: { id?: string }) {
           })}
         </p>
       </div>
+
+      <PollBlackoutNotice />
 
       {/* ---------- Poll of polls ---------- */}
       {avg && (

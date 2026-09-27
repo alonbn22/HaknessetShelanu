@@ -6,6 +6,7 @@ import { candidateName, getPolls, getQuizFile, getRunningLists, partyText, party
 import { localizeData } from "@/lib/i18n-data";
 import { formatDate, formatNumber } from "@/lib/format";
 import { pollOfPolls } from "@/lib/polls";
+import { PollBlackoutNotice } from "@/components/polls/PollBlackoutNotice";
 import { rtlAttrs } from "@/lib/text";
 
 const STANCE_KEY = { 2: "agree2", 1: "agree1", 0: "neutral", [-1]: "disagree1", [-2]: "disagree2" } as const;
@@ -54,6 +55,7 @@ export async function ListSections({ slug }: { slug: string }) {
 
   <section className="rounded-xl bg-surface p-6 shadow-sm space-y-3">
     <h2 className="text-xl font-semibold">{t("polls.title")}</h2>
+    <PollBlackoutNotice />
     {avg ? (
       <p>
         <span className="font-semibold">{t("polls.averageTitle")}: </span>

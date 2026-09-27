@@ -744,6 +744,8 @@
     "title": "Sondages en sièges",
     "eyebrow": "Depuis la clôture des listes",
     "intro": "Un sondage est une photographie, pas une prévision. Chaque chiffre ici a été relevé dans l’article original du média qui l’a publié (ou dans le compte rendu de son groupe de presse) et y renvoie. {count} sondages de {institutes} instituts, {from}–{to}.",
+    "blackoutTitle": "Période d’interdiction des sondages",
+    "blackoutText": "Selon la loi sur les élections (méthodes de propagande), de la fin du vendredi précédant le scrutin jusqu’à la fermeture des bureaux de vote, il est interdit de publier les résultats de nouveaux sondages électoraux. Les sondages présentés ici ont été publiés auparavant : ils ne sont pas à jour et ne permettent pas de savoir comment les gens voteront ni ce que pense le public aujourd’hui.",
     "averageTitle": "Moyenne des sondages",
     "averageMethod": "La moyenne des {n} derniers sondages — un par institut ({from}–{to}). Le mode de calcul — dans l’explication ci-dessous.",
     "averageRange": "selon les sondages : de {min} à {max}",

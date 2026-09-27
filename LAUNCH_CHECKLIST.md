@@ -1,13 +1,13 @@
 # Launch checklist
 
 The work between now and the public launch of Our Knesset, ahead of the election on
-27 October 2026. Last updated 27 September 2026.
+27 October 2026. Last updated 27 September 2026 (night).
 
-✅ done · ⬜ to do. Owners: **Claude** (the AI agent, through commits the owner
-reviews), **owner** (the maintainer), **lawyer**.
+✅ done · 🔄 in progress · ⬜ to do. Owners: **Claude** (the AI agent, through commits
+the owner reviews), **owner** (the maintainer), **lawyer**.
 
-> **Hard dates:** the legal poll blackout starts on **23 October 2026**. Election
-> day is **27 October 2026**.
+> **Hard dates:** the legal poll blackout starts on **23 October 2026** (the code is
+> ready). Election day is **27 October 2026**.
 
 ## Content and translations
 
@@ -16,40 +16,42 @@ reviews), **owner** (the maintainer), **lawyer**.
 | ✅ | Arabic and Russian for committee agendas; Spanish and French labels; 103 historical party names fixed | Claude | 4b62d96 |
 | ✅ | Compass: Likud's economic stance, from its party constitution | Claude | 6ad309f |
 | ✅ | Tooltips: no Hebrew source titles on non-Hebrew pages | Claude | dbedec9 |
-| ⬜ | Ballot letters approved by the Central Elections Committee (its 27 Sep notices), and a re-capture of the candidate rosters | Claude | Flip `lettersStatus: requested` to `approved` in `content/election.yaml`; drop any list the committee refused |
-| ⬜ | Unsupported-claims audit | Claude | Trace every claim to a primary source. `content/` still cites Wikipedia about 430 times, mostly in member records. The owner signs off |
-| ⬜ | Translation for new daily text | owner, then Claude | Choosing between LibreTranslate and Azure, to replace the Google Translate calls |
+| ⬜ | Ballot letters approved by the Central Elections Committee, and a re-capture of the candidate rosters | Claude | The committee's page says the approved slips "will be published on 27.9.2026"; not up yet on the night of the 27th. Re-check daily |
+| 🔄 | Unsupported-claims audit: fixes | Claude | The audit found 62 wrong Knesset links on member records, 31 wrong "settled" badges and errors in the elections history; fixes in progress. 145 member claims still cite only Wikipedia (LOW) |
+| ✅ | Translation of new daily text: decided | owner | No automatic translation (27 Sep): new text shows marked as Hebrew until a reviewed batch. LibreTranslate tested and rejected on quality. Azure's free tier is the fallback option |
 
 ## Election law
 
 | | Item | Owner | Notes |
 |---|---|---|---|
-| ⬜ | Poll blackout, 23–27 Oct 2026 (Elections (Propaganda Methods) Law, §16ה(ח)): a notice on the site, and the average frozen | Claude | Must be live before 23 Oct |
-| ⬜ | Poll disclosures (§16ה(ב)–(ג)): commissioned by, conducted by, dates, population, asked and answered, margin of error, link to the CEC filing | Claude | `content/polls.yaml` has the institute, dates, sample and margin; it has no fields yet for who commissioned the poll, the population, how many were asked, or the filing link |
-| ⬜ | Lawyer questions | owner, lawyer | Kept in a private file, never in the repo (`private/` is gitignored) |
+| ✅ | Poll blackout, 23–27 Oct 2026 (Elections (Propaganda Methods) Law, §16ה(ח)): a notice on every poll surface; no poll dated after Friday 23 Oct | Claude | 63c73ce; a test pins the window |
+| 🔄 | Poll disclosures (§16ה(ב)–(ג)): commissioned by, conducted by, population, asked and answered, margin of error, question, CEC filing | Claude | 18 of 24 polls matched to their filings; schema and page in progress |
+| ⬜ | Lawyer questions | owner, lawyer | Kept in `private/FLAGS.md` (gitignored) |
 
 ## Trust and legal pages
 
 | | Item | Owner | Notes |
 |---|---|---|---|
-| ⬜ | "Unofficial" line in the footer; no State emblem, Knesset or CEC logos anywhere | Claude | |
-| ⬜ | `/credits` page: photo authors and licenses | Claude | Also `public/assets/knesset-holyland.jpg` (CC BY-SA 4.0), which no page uses today: credit it if it's used, or remove it |
-| ⬜ | `/privacy`, with the cookie policy | Claude | The lawyer reviews it |
-| ⬜ | `/terms` | Claude | The lawyer reviews it |
+| ✅ | "Unofficial" line in the footer; no State emblem, Knesset or CEC logos anywhere | Claude | c363ffb |
+| ✅ | `/credits` page: photo authors and licenses; linked credits on member pages and the parties grid | Claude | 86845a5, c363ffb |
+| ✅ | `/privacy`, with the cookie policy | Claude | c363ffb. The lawyer reviews it |
+| ✅ | `/terms` | Claude | c363ffb. The lawyer reviews it |
+| ⬜ | Contact email | owner | Set `NEXT_PUBLIC_CONTACT_EMAIL`; until then the pages point to public GitHub issues |
 
 ## Privacy
 
 | | Item | Owner | Notes |
 |---|---|---|---|
-| ⬜ | No cookies | Claude | next-intl sets a locale cookie by default (`localeCookie` in `src/i18n/routing.ts`) |
-| ⬜ | No Google calls at runtime (local search) | Claude | Today, search-query translation (`src/lib/translate-query.ts`) and lazy data translation (`src/lib/i18n-data.ts`) call Google Translate |
-| ⬜ | The compass and the party finder never store or send answers | Claude | Plus a test that locks it in |
+| ✅ | No cookies | Claude | 3ce236f (rebased) — `localeCookie` and `localeDetection` off |
+| ✅ | No Google calls at runtime (local search) | Claude | Search matches the site's own translations |
+| ✅ | The compass and the party finder never store or send answers | Claude | `tests/qa/privacy.test.ts` |
 
 ## Accessibility
 
 | | Item | Owner | Notes |
 |---|---|---|---|
-| ⬜ | Accessibility statement rewritten, with a real contact | Claude, owner | The owner provides the email |
+| ✅ | Accessibility statement rewritten (no placeholders; 60-day fix commitment) | Claude | c363ffb. Contact: see "Contact email" |
+| ✅ | Phones: no page wider than the screen at 375 px and 320 px, six languages | Claude | b6bf9b3 (WCAG 1.4.10) |
 | ⬜ | WCAG 2.2 AA check | Claude | AccessLint on every page type, in both themes, plus a keyboard-only pass |
 | ⬜ | Screen-reader test with VoiceOver | owner | |
 
@@ -57,38 +59,40 @@ reviews), **owner** (the maintainer), **lawyer**.
 
 | | Item | Owner | Notes |
 |---|---|---|---|
-| ⬜ | Read-only database on Vercel | Claude | Vercel's file system is read-only at runtime |
-| ⬜ | Database out of git: a GitHub Release, refreshed by a daily Action, deployed through a Vercel Deploy Hook | Claude | Adds `npm run db:pull` (README and CI have placeholders). The file is about 81 MiB and GitHub rejects files over 100 MiB |
-| ⬜ | Next.js 16.3.6 (security release) | Claude | `package.json` pins 16.2.9 |
-| ⬜ | Israel time zone | Claude | Dates and times shown in Asia/Jerusalem; servers run in UTC |
-| ⬜ | `NEXT_PUBLIC_SITE_URL` | owner | Needs the domain |
+| ✅ | Read-only database on Vercel | Claude | The app never writes; the DB uses a rollback journal (bdec35a) |
+| ✅ | Database out of git: the `data-latest` release, a daily Action, a Vercel deploy hook | Claude | 70ffeab. `npm run db:pull` / `db:publish` |
+| ✅ | Next.js 16.3.6 (security release) | Claude | fd46de3 |
+| ✅ | Israel time zone | Claude | 67921f5 |
+| ⬜ | Vercel project, env vars, deploy hook secret | owner | See DEPLOY.md: `NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_CONTACT_EMAIL`, `GITHUB_TOKEN` while private, `VERCEL_DEPLOY_HOOK` |
+| ⬜ | GitHub Actions minutes | owner | The daily sync and CI can't run while the private repo's billing is failing; free once public |
 | ⬜ | Vercel log retention | owner | |
 
 ## Quality
 
 | | Item | Owner | Notes |
 |---|---|---|---|
-| ⬜ | Israeli-flag favicon | Claude | |
-| ⬜ | Error pages: bilingual 404, global error, loading | Claude | |
-| ⬜ | Images resized | Claude | |
+| ✅ | Israeli-flag favicon | Claude | cf25512 |
+| ✅ | Error pages: bilingual 404, global error, loading | Claude | bc43288, df9cb12 |
+| ✅ | Images resized (725 KB → 116 KB); 250 px Commons thumbnails for avatars | Claude | 3222da9, bb1ef56 |
 | ⬜ | Lighthouse, mobile | Claude | |
-| ⬜ | Check every page type at 375 px wide | Claude | |
 | ⬜ | Link crawl | Claude | Internal links and cited sources |
-| ⬜ | Form limits | Claude | Length limits on search and every other input |
+| ✅ | Form limits | Claude | Every `?q=` capped at 200 characters on the server |
+| ⬜ | `npm audit fix` for dev dependencies | Claude | Production has 1 moderate (via next) |
 
 ## Open source
 
 | | Item | Owner | Notes |
 |---|---|---|---|
-| ⬜ | LICENSE, README, CONTRIBUTING, Code of Conduct, SECURITY, PR template, CI | Claude | Written, waiting for the owner's review. The licenses stay as they were (owner, 27 Sep): code AGPL-3.0-or-later, the site's text CC BY-SA 4.0 (LICENSE, LICENSING.md). The Code of Conduct's contact is "the maintainers via GitHub" until there's an email |
-| ⬜ | Purge the old database copies from git history | owner, then Claude | 127 copies of the database take about 2.6 of the repository's 2.7 GiB. The purge rewrites every commit hash, so do it before the repo goes public |
-| ⬜ | Check commit author emails | owner | Every commit shows the address it was made with. If one shouldn't be public, fix it in the same history rewrite as the purge |
-| ⬜ | Make the repository public | owner | Then turn on private vulnerability reporting in the repository's security settings; SECURITY.md depends on it |
-| ⬜ | Branch protection on `master` | owner | Require the CI check. The sync bot pushes the database straight to `master`, so move the database out of git first, or let the bot bypass the rule |
+| ✅ | LICENSE, README, CONTRIBUTING, Code of Conduct, SECURITY, PR template, CI | Claude | Licenses as before (owner, 27 Sep): code AGPL-3.0-or-later, the site's text CC BY-SA 4.0 |
+| ⬜ | Purge the old database copies from git history | owner, then Claude | About 2.6 of the repository's 2.7 GiB. Rewrites every commit hash: do it before the repo goes public |
+| ⬜ | Check commit author emails | owner | If one shouldn't be public, fix it in the same history rewrite |
+| ⬜ | Make the repository public | owner | Then turn on private vulnerability reporting (SECURITY.md depends on it), and delete the Vercel `GITHUB_TOKEN` |
+| ⬜ | Branch protection on `master` | owner | Require the CI check |
 
 ## Launch
 
 | | Item | Owner | Notes |
 |---|---|---|---|
-| ⬜ | Party finder (`/elections/find`) | Claude | |
+| ✅ | Party finder (`/elections/find`): positions from the compass | Claude | 0f6fe81 |
+| 🔄 | Party finder: "how they describe themselves" (their own words) | Claude | Research done; in progress |
 | ⬜ | Remove the work-in-progress banner | Claude | On launch day |

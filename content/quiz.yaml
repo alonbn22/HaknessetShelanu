@@ -48,7 +48,12 @@
 # settlements and on religion and state; the Democrats on a Palestinian state;
 # Ra'am on civil partnership; the Joint List on a climate law. Three more for
 # Yashar rested only on a candidate's votes cast while in another party and
-# were left out (scratchpad compass/gaps.yaml).
+# were left out (scratchpad compass/gaps.yaml). 26 Sep 2026: the party
+# documents of the lists with gaps were re-read — Likud's economic aim added
+# from its constitution (the only statement of aims the party publishes); the
+# Haredi Public's full platform chapters and the Reservists' platform yield no
+# further cells (the Reservists' inquiry section wants an inquiry but takes no
+# side on the state-commission format).
 lastReviewed: "2026-09-24"
 questions:
   - id: palestinian-state
@@ -605,6 +610,24 @@ questions:
           ru: "«Сила Израиля основана на свободной экономике… поощрение конкуренции и свободного рынка — основа этого… устранение барьеров… чтобы облегчить ведение бизнеса в Израиле… борьба с монополиями»."
           es: "«La fortaleza de Israel se basa en una economía libre… fomentar la competencia y el libre mercado es la base… eliminar barreras… para facilitar hacer negocios en Israel… luchar contra los monopolios.»"
           fr: "« La force d’Israël repose sur une économie libre… encourager la concurrence et le libre marché en est la base… lever les obstacles… pour faciliter les affaires en Israël… lutter contre les monopoles. »"
+      likud:
+        value: 2
+        basis: platform
+        recordOf:
+          he: "מטרות התנועה בחוקת הליכוד (נוסח יולי 2015); באתר הליכוד לא פורסם מצע לבחירות 2026"
+          en: "the movement's aims in the Likud constitution (July 2015 version); the Likud website publishes no platform for 2026"
+          ar: "أهداف الحركة في دستور الليكود (صيغة تموز/يوليو 2015)؛ لا ينشر موقع الليكود برنامجًا لانتخابات 2026"
+          ru: "цели движения по уставу Ликуда (редакция июля 2015 года); программы к выборам 2026 года на сайте Ликуда нет"
+          es: "los objetivos del movimiento en la constitución del Likud (versión de julio de 2015); el sitio del Likud no publica un programa para 2026"
+          fr: "les objectifs du mouvement dans la constitution du Likoud (version de juillet 2015) ; le site du Likoud ne publie aucun programme pour 2026"
+        source: { url: "https://www.likud.org.il/%D7%A2%D7%9C-%D7%94%D7%9C%D7%99%D7%9B%D7%95%D7%93/%D7%97%D7%95%D7%A7%D7%AA-%D7%94%D7%9C%D7%99%D7%9B%D7%95%D7%93", title: "חוקת הליכוד (PDF להורדה), כפי תקפה ליום 1 ביולי 2015 — פרק ב׳: מטרות, סעיף 1(ז)", publisher: "הליכוד" }
+        quote:
+          he: "\"ביצורה הכלכלי של המדינה ויצירת תנאים נאותים לצמיחה כלכלית ולכינון משק חופשי-תחרותי הנושא את עצמו והמבוסס על יוזמה חפשית, והימנעות הממשלה, ככל הניתן ממעורבות במשק.\""
+          en: "\"Strengthening the state's economy and creating proper conditions for economic growth and for establishing a free, competitive, self-sustaining economy based on free enterprise, and the government refraining, as far as possible, from involvement in the economy.\""
+          ar: "«تعزيز اقتصاد الدولة وتهيئة الظروف الملائمة للنمو الاقتصادي ولإقامة اقتصاد حرّ تنافسي يعتمد على نفسه ويقوم على المبادرة الحرة، وامتناع الحكومة، قدر الإمكان، عن التدخل في الاقتصاد.»"
+          ru: "«Укрепление экономики государства, создание надлежащих условий для экономического роста и для построения свободной конкурентной самоокупаемой экономики, основанной на свободном предпринимательстве, и невмешательство правительства в экономику, насколько это возможно»."
+          es: "«Fortalecer la economía del Estado y crear condiciones adecuadas para el crecimiento económico y para establecer una economía libre y competitiva, autosuficiente y basada en la libre iniciativa, y que el Gobierno se abstenga, en la medida de lo posible, de intervenir en la economía.»"
+          fr: "« Renforcer l’économie de l’État et créer les conditions propices à la croissance économique et à l’établissement d’une économie libre et concurrentielle, autosuffisante et fondée sur la libre entreprise, le gouvernement s’abstenant, autant que possible, d’intervenir dans l’économie. »"
       together:
         value: 1
         basis: platform

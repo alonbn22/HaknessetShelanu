@@ -1,259 +1,225 @@
 # הכנסת שלנו · Our Knesset
 
-[![Code license: AGPL-3.0](https://img.shields.io/badge/code-AGPL--3.0-blue.svg)](LICENSE)
-[![Content: CC BY-SA 4.0](https://img.shields.io/badge/content-CC--BY--SA--4.0-lightgrey.svg)](LICENSING.md)
+[![CI](https://github.com/alonbn22/HaKnessetSheli/actions/workflows/ci.yml/badge.svg)](https://github.com/alonbn22/HaKnessetSheli/actions/workflows/ci.yml)
+[![Code: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
+[![Text: CC BY 4.0](https://img.shields.io/badge/text-CC%20BY%204.0-lightgrey.svg)](#license)
 
-A multilingual, public-transparency website that helps people understand the
-**Israeli Knesset** (parliament): its members, factions, the coalition/opposition
-balance, full plenum voting records with per-member participation statistics,
-side-by-side member comparison, bills and the law book, committees, the state
-budget, the lobbyist registry, a political dictionary, curated and sourced
-"public record" notes per member, and party political profiles. Hebrew-first,
-with English, Arabic, and Russian.
+<div dir="rtl" lang="he">
 
-> **For AI agents / designers:** this is the canonical project context — what the
-> site is, how it's built, and how to extend it. Also read [`AGENTS.md`](AGENTS.md)
-> (this Next.js version has breaking changes; consult `node_modules/next/dist/docs/`
-> before writing Next-specific code).
+**הכנסת שלנו** הוא אתר אזרחי חינמי, לא מסחרי ולא מפלגתי, שמנגיש את הכנסת לכל אחד ואחת: מי חברי הכנסת, איך כל אחד מהם הצביע, מה קורה בוועדות, ומי מתמודד בבחירות לכנסת ה-26 (27 באוקטובר 2026). לכל עובדה באתר יש מקור. האתר בעברית, וגם באנגלית, בערבית, ברוסית, בספרדית ובצרפתית.
 
-## What this site is (purpose & audience)
+הקוד פתוח, ומתנדבים מוזמנים לעזור: לתקן טעויות, לתרגם, להוסיף מקורות ולכתוב קוד. איך מתחילים: [CONTRIBUTING.md](CONTRIBUTING.md). זה אינו אתר רשמי של הכנסת, של הממשלה או של ועדת הבחירות המרכזית.
 
-- **Goal:** make the Knesset legible to ordinary citizens. Who are the members,
-  which party are they in, who's in the coalition vs. opposition, how many seats
-  each party holds, how every MK voted on every plenum vote, who shows up and who
-  doesn't, and what each party actually stands for.
-- **Audience:** the Israeli public (hence Hebrew default + Arabic/Russian for
-  large minority communities, and English for international readers).
-- **Stance:** neutral and factual. Data comes from official/open sources;
-  editorial content is clearly labeled and **every claim about a person cites a
-  source**. The site is explicitly *not* an official Knesset site (see the footer
-  disclaimer) and must remain accessible under Israeli law.
+</div>
+
+## What it is
+
+Our Knesset is a free, non-commercial, non-partisan website that explains Israel's
+parliament to anyone: who the members are, how each of them voted on every plenum
+vote, who shows up, what the committees are working on, and, for the election to
+the 26th Knesset on 27 October 2026, who is running and what each list says it
+stands for.
+
+It is Hebrew-first, with English, Arabic, Russian, Spanish and French. It is **not**
+an official site of the Knesset, the government or the Central Elections Committee;
+where our data and theirs differ, theirs prevails.
+
+## Principles
+
+- **Neutral.** The site describes; it never tells anyone how to vote. Wording is
+  neutral, and the election compass is balanced between statements the right and
+  the left agree with (a test enforces it).
+- **Every fact has a source.** Every figure, claim, stance and poll links to where
+  it came from, ideally the primary source: the Knesset's own record, the Central
+  Elections Committee, a party's own platform, the outlet's own article. What we
+  can't source, we don't show. "No stated position" is a valid answer.
+- **Fair to people.** Nothing is invented about anyone. Every claim in a member's
+  record cites at least one reputable source (the schema rejects a claim without
+  one). Legal matters that aren't final are marked with their status, and the
+  presumption of innocence applies. Neutral wording only; when in doubt, leave it
+  out.
+- **Simple for the average voter.** Plain words before terms, one idea per chart,
+  details one click away. Built for a phone, right-to-left aware, and aiming to
+  meet Israeli Standard 5568 for accessibility.
 
 ## Feature map
 
-| Area | Page(s) | Notes |
+| Area | Pages | What you get |
 |---|---|---|
-| Dashboard | `/` | **Seats-by-faction with a bar/hemicycle toggle** (bar default), a **2026-election banner with a key-dates countdown timeline**, coalition vs. opposition totals, "this week in the Knesset", latest votes + search, a **voting-days accountability stat**, participation leaderboards, most-active legislators, a controversial-laws section |
-| Global search | `/search` | One box across members, factions, votes, laws, committees, **committee documents** (protocols, position papers, decisions — linked straight to the file), lobbyists, and the dictionary; cross-language (query is translated to Hebrew to match the data) |
-| Members | `/members`, `/members/[id]` | Filter by faction / bloc / **search by name or party** (any language). Profile: photo (+license), roles, **full multi-Knesset faction history**, biography (Wikidata), **participation stats**, **party-discipline % with a rebellion drill-down** (the exact votes where the MK broke with their faction), **leadership badges** (Speaker, opposition leader, committee/faction chair, deputy Speaker), parliamentary questions **with answered/unanswered + response-time accountability**, sponsored bills, committees, recent votes, **curated public record with sources** |
-| Compare | `/compare` | Pick two MKs → side-by-side stats **plus a voting-agreement rate** (how often they voted the same way) |
-| Factions | `/parties`, `/parties/[id]` | Seats, coalition badge, avg participation; **political spectrum bar, summary, key positions, leader (linked to their member page or Wikipedia), the faction's Knesset chair, ballot letters** (editorial) |
-| Ministers | `/ministers` | The sitting government; explains the "Norwegian Law" (ministers who vacated their seat) |
-| Votes | `/votes`, `/votes/[id]` | Searchable list; detail shows **reading stage**, "what a 'for' vote means", the agenda subject, and **every MK's vote incl. absentees** grouped by faction, with the authoritative tally + a reconciliation note when a voter is a former member |
-| Bills & laws | `/laws`, `/laws/[id]`, `/lawbook` | Bills that reached plenum votes (with documents + sponsors) and a per-bill **legislative journey**; `/lawbook` is the separate consolidated Israel law book |
-| Legislators | `/legislators` | Most-active legislators, ranked by bills sponsored |
-| Committees | `/committees`, `/committees/[id]` | Standing/special committees ranked by activity, **each with its chair**; detail pages show memberships and **every meeting's agenda + documents** (protocols, transcripts, decisions — ~96% of the term's 10,700+ sittings backfilled) |
-| Budget | `/budget` | Ministry of Finance budget by ministry/area/line, with history + search |
-| Lobbyists | `/lobbyists` | The official lobbyist registry (firms, clients), sortable; foreign-funding context |
-| Attendance | `/attendance` | Serving-members participation leaderboard |
-| Elections + quiz | `/elections`, `/quiz` | **The 2026 election front and center**: a key-dates timeline with live countdowns (next step highlighted), expected party line-ups with spectrum/ballot-letters/positions previews, every leader linked (member page, or Wikipedia when they're not a sitting MK) — every item sourced; plus full Knesset election history and an election-compass party-fit quiz (editorial) |
-| Dictionary | `/glossary` | Plain-language political terms, grouped by topic, each sourced |
-| Transparency | `/sources`, `/tickets` | Every data source listed; report-wrong / suggest-new flows open GitHub tickets. A site-wide work-in-progress notice sits at the top of every page |
-| Accessibility | `/accessibility` + floating widget | Israeli Standard IS 5568 / WCAG 2.0 AA |
+| Home | `/` | Seats by faction, coalition and opposition, this week in the Knesset, the latest votes, the election countdown |
+| Members | `/members`, `/members/[id]`, `/compare` | A profile per member: credited photo, roles, faction history, biography, participation in votes, party discipline and the votes where they broke ranks, questions to ministers and whether they were answered, bills, and a sourced public record. Side-by-side comparison with a voting-agreement rate |
+| Factions and government | `/parties`, `/parties/[id]`, `/ministers` | Seats, coalition or opposition (dated and sourced), leaders and chairs, the sitting government |
+| Votes and laws | `/votes`, `/laws`, `/lawbook`, `/legislators` | Every plenum vote with every member's vote, each bill's journey, the law book, the most active legislators |
+| Committees | `/committees`, `/committees/[id]` | Chairs, members, and every sitting's agenda and documents |
+| Budget and lobbying | `/budget`, `/lobbyists` | The state budget by ministry and budget line, the lobbyist registry |
+| Attendance | `/attendance` | Participation in votes (the Knesset doesn't publish physical attendance) |
+| 2026 election | `/elections`, `/elections/[slug]`, `/elections/positions`, `/elections/history`, `/quiz` | Key dates; a page per running list (candidates, ballot letters, promises); seat polls from each outlet's own article and a poll-of-polls average; the lists' positions side by side; past elections; the election compass |
+| Reference | `/glossary`, `/search`, `/sources`, `/tickets`, `/accessibility` | A plain-language political dictionary, search across the site, the data sources, reporting an error, the accessibility statement |
 
-## Tech stack
+Every page is in all six languages. Data text from the Knesset (vote titles, bill
+and committee names) is machine-translated and labelled as such; Hebrew that isn't
+translated yet is shown right-to-left.
 
-- **Next.js 16 (App Router) + TypeScript + React 19**, **Tailwind CSS v4**.
-- **next-intl** for i18n. Locales: `he` (default, served at `/`), `en`, `ar`,
-  `ru` (prefixed). `he`/`ar` render RTL. UI strings live in `messages/<locale>.json`.
-  Routing/middleware: `src/i18n/`, `src/proxy.ts`.
-- **SQLite via Drizzle ORM** (`better-sqlite3`). DB file: `data/knesset.db` —
-  **committed to the repo** (that's how deploys and the scheduled sync stay
-  incremental); only the transient `*.db-wal/-shm/-journal` sidecars are
-  gitignored. Read-only at request time except the lazy-translation cache.
-  Schema: `src/db/schema.ts`.
-- Data access lives in `src/lib/queries.ts`; editorial content loading + Zod
-  validation in `src/lib/content.ts`.
+## Stack
+
+- Next.js 16 (App Router), React 19, TypeScript. This Next.js version has breaking
+  changes: read the guides in `node_modules/next/dist/docs/` before writing
+  Next-specific code.
+- next-intl with six locales. Hebrew is the default and lives at `/`; the others
+  are prefixed (`/en`, `/ar`, `/ru`, `/es`, `/fr`). Hebrew and Arabic are
+  right-to-left.
+- Tailwind CSS v4 (design tokens in `src/app/globals.css`, no config file).
+- SQLite through better-sqlite3 and Drizzle ORM. Schema: `src/db/schema.ts`.
+- Editorial content in `content/*.yaml`, validated with Zod when it loads
+  (`src/lib/content.ts`).
+- Tests on Node's built-in test runner, run through tsx.
+- A strict per-request Content-Security-Policy (`src/proxy.ts`). See
+  [SECURITY.md](SECURITY.md).
 
 ## Getting started
 
+You need Node.js 24 (the version CI uses) and git.
+
 ```bash
-npm install
-npm run db:push          # create the SQLite schema (data/knesset.db)
-npm run sync             # pull data from the Knesset API + Wikidata (takes a while)
-npm run dev              # http://localhost:3000
+git clone --filter=blob:none https://github.com/alonbn22/HaKnessetSheli.git
+cd HaKnessetSheli
+npm ci
+npm run dev
 ```
 
-Other scripts: `npm run build`, `npm run lint`, `npm test`,
-`npm run db:clean` (drop stale WAL sidecars + integrity-check the DB).
+Open <http://localhost:3000> for Hebrew, or <http://localhost:3000/en> (also `/ar`,
+`/ru`, `/es`, `/fr`).
 
-Env: set `NEXT_PUBLIC_SITE_URL` to the production origin (no trailing slash) so
-the sitemap, robots.txt, and OpenGraph URLs resolve to the real domain.
+The history holds many old copies of the database, which makes a full clone large.
+`--filter=blob:none` downloads only the files you check out; a plain `git clone`
+works too.
 
-**Deploying to production:** see [DEPLOY.md](DEPLOY.md) — the free, one-command
-path (Vercel) and a persistent-server alternative, plus how the committed DB and
-pre-warmed translations make it "just work".
+### The database
 
-## Data sources (all verified working)
+The site reads one SQLite file, `data/knesset.db` (about 85 MB). You don't need to
+run the data sync to work on the site.
 
-- **Knesset OData V4** — `https://knesset.gov.il/OdataV4/ParliamentInfo/` (no auth,
-  JSON, 100 rows/page). Members (`KNS_Person`), positions (`KNS_PersonToPosition`,
-  `KNS_Position`), factions (`KNS_Faction`), plenum votes (`KNS_PlenumVote`),
-  per-MK results (`KNS_PlenumVoteResult`), agenda items (`KNS_PlmSessionItem`),
-  bills + documents + initiators (`KNS_Bill`, `KNS_DocumentBill`, `KNS_BillInitiator`),
-  committees (`KNS_Committee`), parliamentary questions (`KNS_Query`), agenda
-  motions (`KNS_Agenda`), the Israel law book (`KNS_IsraelLaw`), and the lobbyist
-  registry (`V_Lobbyist*`).
-- **Ministry of Finance via data.gov.il** — the detailed state budget (by ministry,
-  area, program, and budget line) and execution reports. Powers `/budget`.
-- **Wikidata** (SPARQL) — multilingual names (he/en/ar/ru), photos via P18 (with
-  per-file Commons license + attribution), Hebrew Wikipedia links, and biographies
-  (born/education/occupations/military/career). Joined to Knesset IDs via P9770,
-  with a name-search fallback.
-- **Google Translate (unofficial `gtx` endpoint)** — lazy on-the-fly translation
-  of Hebrew data text (vote/law/committee/budget names), cached in a unified
-  `translations` table. Labeled "automatic translation" in the UI.
-- **Editorial (curated) content** — anything the API doesn't provide. **Coalition
-  membership, party political positions + ballot letters, and per-member good/bad
-  records are NOT in any API** and are maintained by hand in `content/` (see below).
+> [!NOTE]
+> **Today** the database is committed to the repository, so the clone above
+> already includes it. There is nothing else to download.
+>
+> **Soon** it moves out of git into a GitHub Release. From then on, run
+> `npm run db:pull` once after cloning, and again whenever you want fresher data.
+> That script doesn't exist yet; this note will change when it lands.
 
-Current scope: **the 25th Knesset** (`CURRENT_KNESSET = 25` in
-`src/lib/constants.ts`). Vote records exist from ~2004; physical attendance is not
-published anywhere (we derive participation from votes).
+> [!IMPORTANT]
+> Viewing non-Hebrew pages in development writes machine translations into
+> `data/knesset.db`, so git often shows it as modified. Never commit it with a code
+> change: stop the dev server, run `npm run db:clean`, then
+> `git restore data/knesset.db`. [CONTRIBUTING.md](CONTRIBUTING.md) explains why.
 
-## Updating the data (how data gets in)
+### Environment variables
 
-**`npm run update` refreshes everything** in one command (`npm run sync` is an
-alias): members, biographies, votes, bills, parliamentary activity, the law book,
-budget, lobbyists, and recomputed stats. It upserts and is incremental per table's
-`LastUpdatedDate` (cursor in `sync_state`) — only the first-ever run is a full
-backfill — and ends by folding the WAL into `data/knesset.db` so the committed
-file is self-contained. The bundled GitHub Action runs it every ~6h.
+Both are optional for local work.
 
-Data text (vote/law/committee names, bios) is **not** translated in the sync — it
-localizes lazily on first view via the unified cache. `npm run warm` pre-fills that
-cache (needed for a read-only deploy; see [DEPLOY.md](DEPLOY.md)).
+| Variable | What it does |
+|---|---|
+| `NEXT_PUBLIC_SITE_URL` | The public origin, no trailing slash. Used for the sitemap, robots.txt and share links. Set it in production. |
+| `NEXT_PUBLIC_GITHUB_REPO` | `owner/repo` for the ticket links. Defaults to `alonbn22/HaKnessetSheli`; set it on a fork. |
 
-```
-npm run update              # everything (recommended)
-npm run sync -- --members   # persons/factions/positions + Wikidata + biographies
-npm run sync -- --votes     # vote headers + results + subjects, then totals + stats
-npm run sync -- --activity  # committees, sessions, questions, agendas, law book
-npm run sync -- --budget    # Ministry of Finance budget (data.gov.il)
-npm run sync -- --stats     # recompute mk_vote_stats + vote totals only
-npm run warm                # pre-translate all data into en/ar/ru
+Deploying: see [DEPLOY.md](DEPLOY.md).
+
+## Tests
+
+```bash
+npm test            # all tests: content rules, translations, queries, security
+npx tsc --noEmit    # type check
+npm run lint        # ESLint
+npm run build       # production build
 ```
 
-Sync modules (`scripts/sync/`): `members.ts`, `wikidata.ts` (enrichment + QID),
-`biography.ts`, `votes.ts`, `bills.ts`, one module per activity entity
-(`committees.ts`, `committee-sessions.ts`, `queries.ts`, `agendas.ts`, `laws.ts`,
-`ministries.ts`), `budget.ts`, `lobbyists.ts`, `stats.ts`, and `odata.ts` (the
-paged-fetch helper). `index.ts` orchestrates; flags run a single section.
+CI runs all four on every pull request and every push to `master`
+(`.github/workflows/ci.yml`). `npm run test:qa` and `npm run test:security` run
+one suite each. Some tests read `data/knesset.db` (the compass test, for example,
+checks that every cited vote exists in the Knesset record), so the database must be
+in place.
 
-## Data model (key tables)
+Among other things, the tests check: identical keys in all six message files; no
+Hebrew literals in `src/`; a source on every member-record claim and a status on
+every legal one; polls that add up to 120 seats and cite the outlet's own article;
+a balanced compass; and the security headers and CSP.
 
-- `persons` — MK id (PK), Hebrew name, en/ar/ru names, photo + license +
-  attribution, Wikipedia link, `wikidata_id`, `is_current`, `mk_site_code`.
-- `person_bio` — Wikidata-sourced biography per member: date/place of birth,
-  education, occupations, military service, and a dated career timeline
-  (`career_json`). Rendered as the "Biography & background" section.
-- `factions` — faction id (PK), Hebrew name, `knesset_num`, `is_current`.
-- `person_positions` — person↔faction↔role per Knesset, with date ranges and
-  `is_current` (drives "who's an MK now", ministers, committee roles).
-- `votes` — vote id, datetime, Hebrew title, `item_name`/`item_type_desc`
-  (agenda subject), `for_desc`/`against_desc` (procedural meaning + reading
-  stage), totals, `is_accepted`.
-- `vote_results` — (voteId, personId) → result code: 1 for, 2 against, 3 abstain,
-  4 did-not-vote, 0 cancelled (see `src/lib/constants.ts`).
-- `mk_id_map` — maps `KNS_PlenumVoteResult.MkId` to the real `KNS_Person.Id` for
-  MKs whose vote id-space differs (rebuilt every vote sync; declared in the schema
-  so `db:push` keeps it — see `remapVoteResultMkIds` in `votes.ts`).
-- `mk_vote_stats` — precomputed per-MK: votes held while serving, participated,
-  for/against/abstain, missed, participation %.
-- `bills` / `bill_initiators`, `committees`, `queries`, `agendas`, `israel_laws`,
-  `lobbyists`, `budget_lines` — bills + sponsors, committees, parliamentary
-  questions, agenda motions, the law book, the lobbyist registry, and the budget.
-- `committee_sessions` / `committee_session_items` / `committee_session_docs` —
-  every committee sitting (incl. future scheduled ones) with its agenda items and
-  documents; `gov_ministries` — the ministry registry resolving `queries`'
-  addressees; `mk_agreement` — precomputed pairwise voting agreement.
-- `translations` — unified lazy-translation cache (`source_he` PK → en/ar/ru).
-- `sync_state` — incremental-sync cursors.
+## Project layout
 
-## Editorial content (where humans/AI add the non-API knowledge)
+```
+src/app/[locale]/    pages, one folder per route
+src/components/      UI components (shared primitives in src/components/ui/)
+src/lib/             queries.ts (database reads), content.ts (YAML loading and schemas),
+                     i18n-data.ts and text.ts (translation and right-to-left helpers)
+src/db/schema.ts     the database schema
+src/i18n/            locales and routing
+src/proxy.ts         middleware: locale routing and the per-request CSP
+messages/            interface strings, one JSON file per language
+content/             editorial content: elections, polls, compass, parties, glossary, member records
+scripts/sync/        the data sync (Knesset API, Wikidata, data.gov.il)
+tests/qa/            content, translation and logic tests
+tests/security/      security tests
+data/knesset.db      the database
+```
 
-All in `content/`, validated by Zod at load time (`src/lib/content.ts`):
+## Updating the data (maintainers)
 
-- `content/coalition.yaml` — coalition faction IDs for the current Knesset.
-  **Must be reviewed after political changes** (resignations, new agreements).
-- `content/factions.yaml` — short faction display names (4 langs) + chart colors.
-- `content/party-profiles.yaml` — political spectrum, summary, key positions,
-  leader, founded, links. Editorial; **review before publishing**.
-- `content/members/<personId>.yaml` — a member's "public record": positive
-  (awards, achievements) and negative (convictions, investigations) claims.
-  **The schema requires every claim to cite ≥1 source**, with a localized title.
-  Seeded examples: `965.yaml` (Netanyahu — trial), `2291.yaml` (Deri — convictions).
+`npm run update` (or `npm run sync`) refreshes everything from the Knesset API,
+Wikidata and data.gov.il. It is incremental: each table resumes from a cursor
+stored in the database, so only the very first run is a full backfill. The
+scheduled workflow `.github/workflows/sync-data.yml` runs it every ~6 hours and
+commits the database (it is disabled for now).
 
-## Accessibility (legally required in Israel)
+```bash
+npm run update              # everything
+npm run sync -- --members   # members, factions, roles, Wikidata, biographies
+npm run sync -- --votes     # votes and results, then totals and statistics
+npm run sync -- --activity  # committees, sittings, questions, agendas, the law book
+npm run sync -- --budget    # the state budget
+npm run sync -- --stats     # recompute statistics only
+npm run warm                # pre-translate data text into the other languages
+npm run db:clean            # fold the WAL and check integrity (only when nothing has the DB open)
+```
 
-The site targets **Israeli Standard IS 5568 (≈ WCAG 2.0 AA)**:
-- Floating **accessibility widget** (`src/components/AccessibilityMenu.tsx`):
-  text size, high contrast, grayscale, highlight links, readable font, stop
-  motion — persisted to `localStorage`, applied via `<html>` classes defined in
-  `src/app/globals.css`.
-- **Accessibility statement** at `/accessibility` (linked in the footer) with the
-  required conformance level, features, limitations, **accessibility-coordinator
-  contact (placeholder — fill in real name/email/phone before launch)**, and date.
-- Skip-to-content link, visible focus outlines, `prefers-reduced-motion`, per-locale
-  `lang`/`dir`, semantic landmarks, image alt text.
-- **When adding pages:** keep one `<h1>`, label icon-only buttons with `aria-label`,
-  ensure contrast, and on statically rendered pages call `setRequestLocale(locale)`
-  (otherwise next-intl falls back to the default locale).
+Database commits follow their own rules: never mixed with code, and every new
+table or index declared in `src/db/schema.ts` first. See [AGENTS.md](AGENTS.md).
 
-## Security posture
+## Data sources and licenses
 
-The app is read-only with no visitor accounts, so the surface is small; it's still
-locked down defensively:
+| Source | What it provides | Terms |
+|---|---|---|
+| [Knesset open data](https://knesset.gov.il/OdataV4/ParliamentInfo/) | Members, factions, roles, plenum votes and each member's vote, bills, committees and their sittings, parliamentary questions, agenda motions, the law book, the lobbyist registry | The Knesset's open-data terms |
+| [Central Elections Committee](https://www.bechirot.gov.il/home/) | Running lists, candidates, ballot letters, election dates | The committee's terms |
+| [Wikidata](https://www.wikidata.org) | Names in other languages, biographies, links | CC0 (public domain) |
+| [Wikimedia Commons](https://commons.wikimedia.org) | Members' photos and some party logos | Each file under its own license, mostly Creative Commons; member profiles show each photo's author and license |
+| [data.gov.il](https://data.gov.il) (Ministry of Finance) | The state budget | data.gov.il's open-data terms |
+| The parties' own sites | Platforms, promises, logos | The parties' own; credited and linked on the site |
+| News outlets | Seat polls (from each outlet's own article) and leaders' statements | The outlets' own; credited and linked on the site |
+| Google Translate | Machine translation of Hebrew data text, labelled "automatic translation" | Google's terms; to be replaced before launch |
 
-- **Strict Content-Security-Policy** set per request in `src/proxy.ts`:
-  `script-src` uses `'strict-dynamic'` + a fresh per-request **nonce**, so only
-  first-party scripts Next.js emits (and the one nonce-stamped inline theme
-  snippet) run — an injected `<script>` is refused. `object-src 'none'`,
-  `base-uri`/`form-action`/`frame-ancestors 'self'`; `'unsafe-eval'` is dev-only.
-- **Static hardening headers** in `next.config.ts`: HSTS (2-year, preload),
-  `X-Content-Type-Options: nosniff`, `Referrer-Policy`, `X-Frame-Options`, and a
-  camera/mic/geolocation-denying `Permissions-Policy`.
-- SQL goes through parameterized Drizzle queries with `LIKE` wildcards escaped;
-  outbound sync requests are HTTPS-only; `target="_blank"` links carry
-  `rel="noopener"`; every DB-sourced URL rendered into an `href` passes the
-  `safeHttpUrl` scheme guard (http/https only).
-- `tests/security/` locks this in (SQL-injection, HTTPS-only, no hardcoded
-  secrets, XSS surface, URL-scheme guard, translation-proxy limits, and the
-  header/CSP posture).
+The site's own `/sources` page lists its sources too, and each fact links to its
+source on the page where it appears.
 
-Full details and how to report a vulnerability: [SECURITY.md](SECURITY.md).
+## License
 
-## Conventions for contributors (and AI agents)
+- **Code:** [MIT](LICENSE).
+- **The site's own text:** the editorial writing in `content/` and the interface
+  strings in `messages/`, under
+  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Credit
+  "Our Knesset (הכנסת שלנו)" and link back.
+- **Everything from others keeps its own terms:** the data in `data/knesset.db`,
+  photos, party logos (including `public/assets/logos/`), quotations and poll
+  figures (see the table above). The MIT and CC BY licenses don't cover them.
 
-- **Don't hardcode user-facing strings** — add keys to all four
-  `messages/<locale>.json` files. Hebrew is the source of truth.
-- **Hebrew-origin data** (vote titles, agenda subjects) is shown verbatim with
-  `dir="rtl" lang="he"`, even inside other locales.
-- **Never invent facts about people or legal interpretations.** Procedural meaning
-  comes from official option text; the "public record" needs real sources.
-- Keep API access in the sync job; pages read only from SQLite via `src/lib/queries.ts`.
-- Run `npx tsc --noEmit` and `npm run lint` before finishing.
+## Contributing
 
-## Project status
+Volunteers are welcome: fix a mistake, add a source, enter a poll, improve a
+translation, write code. Start with [CONTRIBUTING.md](CONTRIBUTING.md), and please
+follow the [Code of Conduct](CODE_OF_CONDUCT.md).
 
-Live and broad: members/factions (with leadership badges + chairs), votes +
-per-MK stats, member comparison with a voting-agreement rate, party-discipline
-metrics with a rebellion drill-down, question-response accountability, bill
-journeys + the law book, committees with agendas/documents for ~96% of the
-term's sittings, the budget, lobbyists, the dictionary, the **2026-election
-section with a countdown timeline and sourced party line-ups**, elections
-history + the party-fit quiz, global search spanning committee documents,
-per-page metadata + a full sitemap, curated member records, party profiles, a
-hardened CSP/security-header posture, dark mode, accessibility, and the
-transparency pages. What's next (plenum calendar, dynamic term metadata,
-candidate-list ingestion) is tracked in [`ROADMAP.md`](ROADMAP.md).
-
-## License & contributing
-
-- **Code:** [AGPL-3.0-or-later](LICENSE) — run a modified hosted copy, share your
-  source. **Editorial content:** CC BY-SA 4.0. Third-party data keeps its upstream
-  license. Full details + attribution in [LICENSING.md](LICENSING.md).
-- How to contribute: [CONTRIBUTING.md](CONTRIBUTING.md) ·
-  Conduct: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) ·
-  Security: [SECURITY.md](SECURITY.md).
-- This is not an official Knesset site; see `/sources` for data provenance.
+- Wrong information on the site? Use the report links on the site (they open a
+  ticket on GitHub), or open an issue with a source.
+- A security problem? Report it privately, never in a public issue. See
+  [SECURITY.md](SECURITY.md).
+- Launch status: [LAUNCH_CHECKLIST.md](LAUNCH_CHECKLIST.md). Plans:
+  [ROADMAP.md](ROADMAP.md). Deploying: [DEPLOY.md](DEPLOY.md).

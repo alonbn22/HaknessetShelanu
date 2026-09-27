@@ -2,12 +2,19 @@
 
 ## Reporting a vulnerability
 
-Please **do not** open a public issue for security vulnerabilities.
+Please **do not** open a public issue, discussion or pull request for security
+vulnerabilities.
 
 Report privately via **GitHub Security Advisories**: open the repository's
 **Security** tab → **Report a vulnerability** (GitHub Private Vulnerability
-Reporting). We aim to acknowledge reports within a few days and to credit
-reporters who wish to be credited.
+Reporting), or go straight to
+<https://github.com/alonbn22/HaKnessetSheli/security/advisories/new>. Only the
+maintainers see the report. Include what's affected (a URL or file), the steps to
+reproduce, and the impact you expect. We aim to acknowledge reports within a few
+days and to credit reporters who wish to be credited.
+
+If the button isn't there, open a public issue that only asks for a private
+contact, with no details of the problem.
 
 ## Scope
 

@@ -30,6 +30,7 @@ publishers:
   - { key: "הליכוד", en: "Likud", ar: "الليكود", ru: "Ликуд", es: "Likud", fr: "Likoud" }
   - { key: "הליכוד (ועדת הבחירות המרכזית של התנועה)", en: "Likud (the party's central elections committee)", ar: "الليكود (لجنة الانتخابات المركزية للحزب)", ru: "Ликуд (центральная избирательная комиссия партии)", es: "Likud (comité electoral central del partido)", fr: "Likoud (commission électorale centrale du parti)" }
   - { key: "המילואימניקים", en: "The Reservists", ar: "جنود الاحتياط", ru: "Резервисты", es: "Los Reservistas", fr: "Les Réservistes" }
+  - { key: "המכון הישראלי לדמוקרטיה", en: "Israel Democracy Institute", ar: "المعهد الإسرائيلي للديمقراطية", ru: "Израильский институт демократии", es: "Instituto Israelí de la Democracia", fr: "Institut israélien de la démocratie" }
   - { key: "המפלגה הכלכלית", en: "The Economic Party", ar: "الحزب الاقتصادي", ru: "Экономическая партия", es: "El Partido Económico", fr: "Le Parti économique" }
   - { key: "הציבור החרדי", en: "The Haredi Public", ar: "الجمهور الحريدي", ru: "Харедимная общественность", es: "El Público Jaredí", fr: "Le Public haredi" }
   - { key: "הציונות הדתית", en: "Religious Zionism", ar: "الصهيونية الدينية", ru: "Религиозный сионизм", es: "Sionismo Religioso", fr: "Sionisme religieux" }
@@ -56,6 +57,7 @@ publishers:
   - { key: "לקסיקון הכנסת", en: "Knesset Lexicon", ar: "معجم الكنيست", ru: "Лексикон Кнессета", es: "Léxico de la Knéset", fr: "Lexique de la Knesset" }
   - { key: "מעריב", en: "Maariv", ar: "معاريف", ru: "«Маарив»", es: "Maariv", fr: "Maariv" }
   - { key: "מקור ראשון", en: "Makor Rishon", ar: "ماكور ريشون", ru: "«Макор ришон»", es: "Makor Rishon", fr: "Makor Rishon" }
+  - { key: "מרכז המחקר והמידע של הכנסת", en: "Knesset Research and Information Center", ar: "مركز الأبحاث والمعلومات في الكنيست", ru: "Исследовательско-информационный центр Кнессета", es: "Centro de Investigación e Información de la Knéset", fr: "Centre de recherche et d’information de la Knesset" }
   - { key: "נעם לישראל (אתר המפלגה)", en: "Noam for Israel (party website)", ar: "نوعم لإسرائيل (موقع الحزب)", ru: "«Ноам за Израиль» (сайт партии)", es: "Noam por Israel (sitio del partido)", fr: "Noam pour Israël (site du parti)" }
   - { key: "סרוגים", en: "Srugim", ar: "سروغيم", ru: "«Сругим»", es: "Srugim", fr: "Srugim" }
   - { key: "עוצמה יהודית", en: "Otzma Yehudit", ar: "عوتسما يهوديت", ru: "Оцма Иегудит", es: "Otzma Yehudit", fr: "Otzma Yehoudit" }

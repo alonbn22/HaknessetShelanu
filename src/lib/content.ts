@@ -439,6 +439,7 @@ const electionSchema = z.object({
   summary: localizedText.optional(), // longer "read more" description of the term
   events: z.array(electionEventSchema).optional(), // good/bad/neutral milestones
   ended: localizedText.optional(), // how/why the term (or its government) ended
+  sources: z.array(sourceRef).optional(), // cited beside the term's Wikipedia and Knesset links
 });
 export type Election = z.infer<typeof electionSchema>;
 

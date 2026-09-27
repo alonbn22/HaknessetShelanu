@@ -1,12 +1,15 @@
 import { getTranslations, getLocale } from "next-intl/server";
 import { getElectionsHistory, partyText } from "@/lib/content";
 import { formatDate } from "@/lib/format";
+import { SourceLinks } from "@/components/SourceLinks";
 
 export const dynamic = "force-dynamic";
 
 // Per-Knesset English Wikipedia article — the cited source for each term's
-// summary, events, and figures. Wikipedia titles the 21st, 22nd, 24th and 25th
-// with digits ("Twenty-first_Knesset" does not exist; checked 28 Sep 2026).
+// summary, events, and figures; a term's own `sources` (primary sources for
+// how it ended, dated events) are cited after it. Wikipedia titles the 21st,
+// 22nd, 24th and 25th with digits ("Twenty-first_Knesset" does not exist;
+// checked 28 Sep 2026).
 const ORDINALS = [
   "First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth",
   "Ninth", "Tenth", "Eleventh", "Twelfth", "Thirteenth", "Fourteenth", "Fifteenth",
@@ -124,29 +127,17 @@ export default async function ElectionsHistoryPage() {
                 </div>
               </details>
             )}
-            <p className="mt-2 text-xs text-muted">
-              {tc("source")}:{" "}
-              {knessetWikiUrl(e.knesset) && (
-                <>
-                  <a
-                    className="hover:text-accent underline"
-                    href={knessetWikiUrl(e.knesset)!}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Wikipedia
-                  </a>
-                  {" · "}
-                </>
-              )}
-              <a
-                className="hover:text-accent underline"
-                href={KNESSET_HISTORY_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {tc("knesset")}
-              </a>
+            <p className="mt-2">
+              <SourceLinks
+                label={tc("source")}
+                sources={[
+                  ...(knessetWikiUrl(e.knesset)
+                    ? [{ url: knessetWikiUrl(e.knesset)!, title: `${ORDINALS[e.knesset - 1]} Knesset`, publisher: "Wikipedia" }]
+                    : []),
+                  { url: KNESSET_HISTORY_URL, title: "Knesset history", publisher: tc("knesset") },
+                  ...(e.sources ?? []),
+                ]}
+              />
             </p>
           </li>
         ))}

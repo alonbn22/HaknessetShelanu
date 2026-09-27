@@ -26,7 +26,10 @@ elections:
         text: { he: "מתקפת הפתע של חמאס וגרירת המדינה למלחמת חרבות ברזל.", en: "Hamas's surprise attack and the start of the Swords of Iron war.", ar: "هجوم حماس المفاجئ وانجرار الدولة إلى حرب «السيوف الحديدية».", ru: "Внезапное нападение ХАМАС и начало войны «Железные мечи».", es: "El ataque sorpresa de Hamás y el inicio de la guerra de Espadas de Hierro.", fr: "L’attaque surprise du Hamas et le début de la guerre des Épées de fer." }
       - kind: neutral
         date: "2023-03-27"
-        text: { he: "השעיית חקיקת הרפורמה והקמת ממשלת חירום בעת המלחמה.", en: "Suspension of the reform legislation and formation of an emergency wartime government.", ar: "تعليق تشريع الإصلاح وتشكيل حكومة طوارئ خلال الحرب.", ru: "Приостановка законодательства о реформе и создание чрезвычайного правительства на время войны.", es: "Suspensión de la legislación de la reforma y formación de un gobierno de emergencia en tiempo de guerra.", fr: "Suspension de la législation sur la réforme et formation d’un gouvernement d’urgence en temps de guerre." }
+        text: { he: "נתניהו הודיע על השהיית חקיקת הרפורמה המשפטית.", en: "Netanyahu announced a pause in the judicial-reform legislation.", ar: "أعلن نتنياهو تعليق تشريع الإصلاح القضائي مؤقتًا.", ru: "Нетаньяху объявил о приостановке законодательства о судебной реформе.", es: "Netanyahu anunció una pausa en la legislación de la reforma judicial.", fr: "Netanyahou a annoncé une pause dans la législation sur la réforme judiciaire." }
+      - kind: neutral
+        date: "2023-10-11"
+        text: { he: "הקמת ממשלת חירום בעת המלחמה, שאליה הצטרף המחנה הממלכתי בראשות גנץ.", en: "Formation of an emergency wartime government, joined by Gantz's National Unity.", ar: "تشكيل حكومة طوارئ خلال الحرب، انضم إليها «المعسكر الرسمي» بزعامة غانتس.", ru: "Создание чрезвычайного правительства на время войны, в которое вошёл «Государственный лагерь» Ганца.", es: "Formación de un gobierno de emergencia en tiempo de guerra, al que se unió Unidad Nacional, de Gantz.", fr: "Formation d’un gouvernement d’urgence en temps de guerre, rejoint par Unité nationale, le parti de Gantz." }
       - kind: bad
         date: "2024-09-17"
         text: { he: "הסלמה בחזית הצפון מול חיזבאללה, מבצע הביפרים והתקיפות בלבנון.", en: "Escalation on the northern front with Hezbollah, the pager operation and strikes in Lebanon.", ar: "تصعيد على الجبهة الشمالية مع حزب الله، وعملية أجهزة النداء (البيجر)، والغارات في لبنان.", ru: "Эскалация на северном фронте с «Хизбаллой», операция с пейджерами и удары по Ливану.", es: "Escalada en el frente norte con Hezbolá, la operación de los buscapersonas y los ataques en Líbano.", fr: "Escalade sur le front nord avec le Hezbollah, l’opération des bipeurs et les frappes au Liban." }
@@ -34,6 +37,9 @@ elections:
         date: "2025-01-19"
         text: { he: "עסקאות לשחרור חטופים והפסקות אש לסירוגין בעזה.", en: "Hostage-release deals and intermittent ceasefires in Gaza.", ar: "صفقات للإفراج عن الرهائن ووقف متقطع لإطلاق النار في غزة.", ru: "Сделки об освобождении заложников и периодические прекращения огня в Газе.", es: "Acuerdos de liberación de rehenes y altos el fuego intermitentes en Gaza.", fr: "Accords de libération d’otages et cessez-le-feu intermittents à Gaza." }
     ended: { he: "הכנסת ה-25 השלימה קדנציה מלאה והתפזרה ב-17 ביולי 2026; הבחירות לכנסת ה-26 — 27 באוקטובר 2026.", en: "The 25th Knesset completed a full term and dispersed on July 17, 2026; the 26th Knesset election is on October 27, 2026.", ar: "أتمّ الكنيست الـ25 ولاية كاملة وحُلّ في 17 تموز/يوليو 2026؛ وانتخابات الكنيست الـ26 في 27 تشرين الأول/أكتوبر 2026.", ru: "Кнессет 25-го созыва отработал полный срок и был распущен 17 июля 2026 года; выборы в Кнессет 26-го созыва — 27 октября 2026 года.", es: "La 25.ª Knéset completó una legislatura entera y se disolvió el 17 de julio de 2026; las elecciones a la 26.ª Knéset son el 27 de octubre de 2026.", fr: "La 25e Knesset a achevé une législature complète et s’est dissoute le 17 juillet 2026 ; les élections à la 26e Knesset ont lieu le 27 octobre 2026." }
+    sources:
+      - { url: "https://en.wikipedia.org/wiki/2023_Israeli_judicial_reform", title: "2023 Israeli judicial reform", publisher: "Wikipedia" }
+      - { url: "https://www.timesofisrael.com/after-days-of-indecision-netanyahu-gantz-agree-to-establish-emergency-war-government/", title: "After days of indecision, Netanyahu, Gantz agree to establish emergency war government (11 Oct 2023)", publisher: "The Times of Israel" }
   - knesset: 24
     date: "2021-03-23"
     turnout: 67.4
@@ -139,9 +145,8 @@ elections:
       es: "Netanyahu formó primero una estrecha coalición de derecha y religiosa de solo 61 escaños, ampliada después. Durante esta legislatura se abrieron investigaciones penales contra el primer ministro."
       fr: "Netanyahou a d’abord formé une étroite coalition de droite et religieuse de seulement 61 sièges, élargie ensuite. Des enquêtes pénales visant le Premier ministre ont été ouvertes au cours de cette législature."
     events:
-      - kind: bad
-        date: "2016-12-01"
-        text: { he: "פתיחת חקירות פליליות נגד נתניהו (תיקים 1000, 2000, 4000).", en: "Criminal investigations into Netanyahu opened (Cases 1000, 2000, 4000).", ar: "فتح تحقيقات جنائية ضد نتنياهو (الملفات 1000 و2000 و4000).", ru: "Начаты уголовные расследования против Нетаньяху (дела 1000, 2000, 4000).", es: "Se abrieron investigaciones penales contra Netanyahu (casos 1000, 2000 y 4000).", fr: "Ouverture d’enquêtes pénales visant Netanyahou (affaires 1000, 2000 et 4000)." }
+      - kind: neutral
+        text: { he: "נפתחו חקירות משטרה בעניינו של ראש הממשלה נתניהו: תיק 1000 בדצמבר 2016, תיק 2000 בינואר 2017 ותיק 4000 בפברואר 2018. ב-2020 הוגש נגדו כתב אישום; הוא מכחיש את האשמות, משפטו נמשך, וחלה חזקת החפות.", en: "Police investigations into Prime Minister Netanyahu opened: Case 1000 in December 2016, Case 2000 in January 2017 and Case 4000 in February 2018. He was indicted in 2020; he denies the charges, his trial is ongoing, and the presumption of innocence applies.", ar: "فُتحت تحقيقات شرطية بشأن رئيس الحكومة نتنياهو: الملف 1000 في كانون الأول/ديسمبر 2016، والملف 2000 في كانون الثاني/يناير 2017، والملف 4000 في شباط/فبراير 2018. وقُدّمت ضده لائحة اتهام في 2020؛ وهو ينفي التهم، ومحاكمته مستمرة، وتسري قرينة البراءة.", ru: "Полиция начала расследования в отношении премьер-министра Нетаньяху: дело 1000 — в декабре 2016 года, дело 2000 — в январе 2017 года, дело 4000 — в феврале 2018 года. В 2020 году ему предъявили обвинение; он отрицает обвинения, суд продолжается, действует презумпция невиновности.", es: "Se abrieron investigaciones policiales sobre el primer ministro Netanyahu: el caso 1000 en diciembre de 2016, el caso 2000 en enero de 2017 y el caso 4000 en febrero de 2018. Fue acusado formalmente en 2020; niega los cargos, su juicio sigue en curso y rige la presunción de inocencia.", fr: "Des enquêtes de police visant le Premier ministre Netanyahou ont été ouvertes : l’affaire 1000 en décembre 2016, l’affaire 2000 en janvier 2017 et l’affaire 4000 en février 2018. Il a été mis en accusation en 2020 ; il nie les faits, son procès est en cours et la présomption d’innocence s’applique." }
       - kind: neutral
         date: "2017-01-01"
         text: { he: "יציבות כלכלית והמשך צמיחה.", en: "Economic stability and continued growth.", ar: "استقرار اقتصادي واستمرار النمو.", ru: "Экономическая стабильность и продолжение роста.", es: "Estabilidad económica y crecimiento continuado.", fr: "Stabilité économique et poursuite de la croissance." }
@@ -149,6 +154,9 @@ elections:
         date: "2018-07-19"
         text: { he: "חקיקת חוק יסוד: ישראל — מדינת הלאום של העם היהודי.", en: "Passage of Basic Law: Israel as the Nation-State of the Jewish People.", ar: "سنّ قانون أساس: إسرائيل – الدولة القومية للشعب اليهودي.", ru: "Принятие Основного закона: Израиль — национальное государство еврейского народа.", es: "Aprobación de la Ley Fundamental: Israel como Estado-nación del pueblo judío.", fr: "Adoption de la Loi fondamentale : Israël, État-nation du peuple juif." }
     ended: { he: "פוזרה בדצמבר 2018 על רקע המחלוקת על חוק הגיוס — לבחירות מוקדמות.", en: "Dissolved in December 2018 amid the conscription-law dispute — to early elections.", ar: "حُلّ في كانون الأول/ديسمبر 2018 على خلفية الخلاف حول قانون التجنيد — إلى انتخابات مبكرة.", ru: "Распущен в декабре 2018 года на фоне спора о законе о призыве — досрочные выборы.", es: "Disuelta en diciembre de 2018 en medio de la disputa por la ley del servicio militar — hacia elecciones anticipadas.", fr: "Dissoute en décembre 2018 au milieu du conflit sur la loi sur la conscription — élections anticipées." }
+    sources:
+      - { url: "https://en.wikipedia.org/wiki/Trial_of_Benjamin_Netanyahu", title: "Trial of Benjamin Netanyahu", publisher: "Wikipedia" }
+      - { url: "https://www.ynetnews.com/articles/0,7340,L-5122753,00.html", title: "Two suspected of offering bribes to close case against PM's wife (20 Feb 2018)", publisher: "Ynetnews" }
   - knesset: 19
     date: "2013-01-22"
     turnout: 67.8
@@ -339,7 +347,9 @@ elections:
       - kind: good
         date: "1991-05-24"
         text: { he: "מבצע שלמה — מבצע אווירי להעלאת יהודי אתיופיה.", en: "Operation Solomon — the airlift of Ethiopian Jews.", ar: "عملية «سليمان» — جسر جوي لنقل يهود إثيوبيا إلى إسرائيل.", ru: "Операция «Соломон» — воздушный мост для репатриации евреев Эфиопии.", es: "La operación Salomón — el puente aéreo de los judíos etíopes.", fr: "L’opération Salomon — le pont aérien des Juifs d’Éthiopie." }
-    ended: { he: "השלימה כהונה — בחירות 1992.", en: "Served its term — 1992 election.", ar: "أتمّ ولايته — انتخابات 1992.", ru: "Проработал полный срок — выборы 1992 года.", es: "Cumplió su legislatura — elecciones de 1992.", fr: "A accompli sa législature — élection de 1992." }
+    ended: { he: "הכנסת פיזרה את עצמה בחוק — בחירות מוקדמות ביוני 1992.", en: "Dissolved itself by law — early elections in June 1992.", ar: "حلّ الكنيست نفسه بقانون — انتخابات مبكرة في حزيران/يونيو 1992.", ru: "Самораспустился законом — досрочные выборы в июне 1992 года.", es: "Se disolvió por ley — elecciones anticipadas en junio de 1992.", fr: "S’est dissoute par une loi — élections anticipées en juin 1992." }
+    sources:
+      - { url: "https://en.idi.org.il/articles/38887", title: "Dissolving the Knesset: A Historical Survey (Chen Friedberg and Assaf Shapira, 18 May 2022)", publisher: "המכון הישראלי לדמוקרטיה" }
   - knesset: 11
     date: "1984-07-23"
     turnout: 78.8
@@ -371,16 +381,13 @@ elections:
     winnerSeats: 48
     pm: { he: "מנחם בגין", en: "Menachem Begin", ar: "مناحيم بيغن", ru: "Менахем Бегин", es: "Menájem Beguin", fr: "Menahem Begin" }
     summary:
-      he: "ממשלתו השנייה של בגין. כללה את הפצצת הכור בעיראק, את השלמת הנסיגה מסיני ואת מלחמת לבנון הראשונה."
-      en: "Begin's second government. It included the bombing of the Iraqi reactor, the completion of the Sinai withdrawal, and the First Lebanon War."
-      ar: "حكومة بيغن الثانية. وشملت قصف المفاعل في العراق، واستكمال الانسحاب من سيناء، وحرب لبنان الأولى."
-      ru: "Второе правительство Бегина. На него пришлись бомбардировка иракского реактора, завершение ухода из Синая и Первая ливанская война."
-      es: "El segundo gobierno de Beguin. Incluyó el bombardeo del reactor iraquí, la finalización de la retirada del Sinaí y la Primera Guerra del Líbano."
-      fr: "Le deuxième gouvernement Begin. Il a connu le bombardement du réacteur irakien, l’achèvement du retrait du Sinaï et la Première Guerre du Liban."
+      he: "ממשלתו השנייה של בגין. כללה את השלמת הנסיגה מסיני ואת מלחמת לבנון הראשונה."
+      en: "Begin's second government. It included the completion of the Sinai withdrawal and the First Lebanon War."
+      ar: "حكومة بيغن الثانية. وشملت استكمال الانسحاب من سيناء وحرب لبنان الأولى."
+      ru: "Второе правительство Бегина. На него пришлись завершение ухода из Синая и Первая ливанская война."
+      es: "El segundo gobierno de Beguin. Incluyó la finalización de la retirada del Sinaí y la Primera Guerra del Líbano."
+      fr: "Le deuxième gouvernement Begin. Il a connu l’achèvement du retrait du Sinaï et la Première Guerre du Liban."
     events:
-      - kind: neutral
-        date: "1981-06-07"
-        text: { he: "הפצצת הכור הגרעיני בעיראק (מבצע אופרה).", en: "The bombing of Iraq's nuclear reactor (Operation Opera).", ar: "قصف المفاعل النووي العراقي (عملية «أوبرا»).", ru: "Бомбардировка иракского ядерного реактора (операция «Опера»).", es: "El bombardeo del reactor nuclear iraquí (operación Ópera).", fr: "Le bombardement du réacteur nucléaire irakien (opération Opéra)." }
       - kind: bad
         date: "1982-06-06"
         text: { he: "מלחמת לבנון הראשונה.", en: "The First Lebanon War.", ar: "حرب لبنان الأولى.", ru: "Первая ливанская война.", es: "La Primera Guerra del Líbano.", fr: "La Première Guerre du Liban." }
@@ -418,7 +425,13 @@ elections:
       - kind: good
         date: "1978-09-17"
         text: { he: "הסכמי קמפ דייוויד עם מצרים.", en: "The Camp David Accords with Egypt.", ar: "اتفاقيات كامب ديفيد مع مصر.", ru: "Кэмп-Дэвидские соглашения с Египтом.", es: "Los Acuerdos de Camp David con Egipto.", fr: "Les accords de Camp David avec l’Égypte." }
-    ended: { he: "השלימה כהונה — בחירות 1981.", en: "Served its term — 1981 election.", ar: "أتمّ ولايته — انتخابات 1981.", ru: "Проработал полный срок — выборы 1981 года.", es: "Cumplió su legislatura — elecciones de 1981.", fr: "A accompli sa législature — élection de 1981." }
+      - kind: neutral
+        date: "1981-06-07"
+        text: { he: "הפצצת הכור הגרעיני בעיראק (מבצע אופרה).", en: "The bombing of Iraq's nuclear reactor (Operation Opera).", ar: "قصف المفاعل النووي العراقي (عملية «أوبرا»).", ru: "Бомбардировка иракского ядерного реактора (операция «Опера»).", es: "El bombardeo del reactor nuclear iraquí (operación Ópera).", fr: "Le bombardement du réacteur nucléaire irakien (opération Opéra)." }
+    ended: { he: "הכנסת פיזרה את עצמה בחוק — בחירות מוקדמות ביוני 1981.", en: "Dissolved itself by law — early elections in June 1981.", ar: "حلّ الكنيست نفسه بقانون — انتخابات مبكرة في حزيران/يونيو 1981.", ru: "Самораспустился законом — досрочные выборы в июне 1981 года.", es: "Se disolvió por ley — elecciones anticipadas en junio de 1981.", fr: "S’est dissoute par une loi — élections anticipées en juin 1981." }
+    sources:
+      - { url: "https://en.idi.org.il/articles/38887", title: "Dissolving the Knesset: A Historical Survey (Chen Friedberg and Assaf Shapira, 18 May 2022)", publisher: "המכון הישראלי לדמוקרטיה" }
+      - { url: "https://en.wikipedia.org/wiki/Operation_Opera", title: "Operation Opera", publisher: "Wikipedia" }
   - knesset: 8
     date: "1973-12-31"
     turnout: 78.6
@@ -443,7 +456,11 @@ elections:
       - kind: good
         date: "1976-07-04"
         text: { he: "מבצע אנטבה — חילוץ חטופי המטוס באוגנדה.", en: "Operation Entebbe — the rescue of hijacked-flight hostages in Uganda.", ar: "عملية عنتيبي — تحرير رهائن الطائرة المخطوفة في أوغندا.", ru: "Операция в Энтеббе — освобождение заложников угнанного самолёта в Уганде.", es: "La operación Entebbe — el rescate de los rehenes de un vuelo secuestrado en Uganda.", fr: "L’opération Entebbe — le sauvetage des otages d’un vol détourné en Ouganda." }
-    ended: { he: "רבין התפטר ב-1977 על רקע פרשת חשבון הבנק — מה שהוביל ל\"מהפך\".", en: "Rabin resigned in 1977 over a foreign bank-account affair — leading to \"the Upheaval\".", ar: "استقال رابين في 1977 على خلفية قضية الحساب المصرفي في الخارج — ما أدى إلى «الانقلاب».", ru: "Рабин ушёл в отставку в 1977 году из-за скандала с банковским счётом за границей, что привело к «Перевороту».", es: "Rabin renunció en 1977 por el asunto de una cuenta bancaria en el extranjero — lo que llevó al «Vuelco».", fr: "Rabin a démissionné en 1977 à la suite d’une affaire de compte bancaire à l’étranger — ce qui a mené au « Renversement »." }
+    ended: { he: "הכנסת פיזרה את עצמה בחוק והבחירות הוקדמו למאי 1977: בדצמבר 1976 התפטרה ממשלת רבין בעקבות משבר קואליציוני עם המפד\"ל, ובאפריל 1977 פרש רבין מראשות רשימת המערך על רקע פרשת חשבון הדולרים, ושמעון פרס החליף אותו.", en: "The Knesset dissolved itself by law, bringing the election forward to May 1977: in December 1976 Rabin's government resigned after a coalition crisis with the National Religious Party, and in April 1977 Rabin stepped down as head of the Alignment list over the dollar-account affair; Shimon Peres replaced him.", ar: "حلّ الكنيست نفسه بقانون فقُدّمت الانتخابات إلى أيار/مايو 1977: ففي كانون الأول/ديسمبر 1976 استقالت حكومة رابين إثر أزمة ائتلافية مع الحزب الوطني الديني، وفي نيسان/أبريل 1977 تنحّى رابين عن رئاسة قائمة «المعراخ» على خلفية قضية حساب الدولارات، وحلّ محلّه شمعون بيريس.", ru: "Кнессет самораспустился законом, и выборы перенесли на май 1977 года: в декабре 1976 года правительство Рабина ушло в отставку после коалиционного кризиса с Национально-религиозной партией, а в апреле 1977 года Рабин оставил пост главы списка «Маараха» из-за дела о долларовом счёте; его сменил Шимон Перес.", es: "La Knéset se disolvió por ley y adelantó las elecciones a mayo de 1977: en diciembre de 1976 dimitió el gobierno de Rabin tras una crisis de coalición con el Partido Nacional Religioso, y en abril de 1977 Rabin dejó la cabeza de la lista del Alineamiento por el asunto de la cuenta en dólares; lo sustituyó Shimon Peres.", fr: "La Knesset s’est dissoute par une loi, avançant l’élection à mai 1977 : en décembre 1976, le gouvernement Rabin a démissionné après une crise de coalition avec le Parti national religieux, et en avril 1977 Rabin a quitté la tête de la liste de l’Alignement à cause de l’affaire du compte en dollars ; Shimon Peres l’a remplacé." }
+    sources:
+      - { url: "https://en.idi.org.il/articles/38887", title: "Dissolving the Knesset: A Historical Survey (Chen Friedberg and Assaf Shapira, 18 May 2022)", publisher: "המכון הישראלי לדמוקרטיה" }
+      - { url: "https://en.idi.org.il/israeli-elections-and-parties/elections/1977/", title: "The 1977 elections", publisher: "המכון הישראלי לדמוקרטיה" }
+      - { url: "https://en.wikipedia.org/wiki/1977_Israeli_legislative_election", title: "1977 Israeli legislative election", publisher: "Wikipedia" }
   - knesset: 7
     date: "1969-10-28"
     turnout: 81.7
@@ -464,7 +481,10 @@ elections:
       - kind: bad
         date: "1972-09-05"
         text: { he: "הטבח בספורטאי ישראל באולימפיאדת מינכן.", en: "The massacre of Israeli athletes at the Munich Olympics.", ar: "مجزرة الرياضيين الإسرائيليين في أولمبياد ميونيخ.", ru: "Убийство израильских спортсменов на Олимпийских играх в Мюнхене.", es: "La masacre de los atletas israelíes en los Juegos Olímpicos de Múnich.", fr: "Le massacre des athlètes israéliens aux Jeux olympiques de Munich." }
-    ended: { he: "הוקדמו הבחירות; נדחו בפועל לדצמבר 1973 בשל מלחמת יום הכיפורים.", en: "Elections were brought forward and in practice postponed to December 1973 by the Yom Kippur War.", ar: "قُدّمت الانتخابات، ثم أُجّلت فعليًا إلى كانون الأول/ديسمبر 1973 بسبب حرب يوم الغفران.", ru: "Выборы были назначены досрочно, а фактически перенесены на декабрь 1973 года из-за Войны Судного дня.", es: "Las elecciones se adelantaron y en la práctica se aplazaron a diciembre de 1973 por la guerra de Yom Kipur.", fr: "Les élections ont été avancées puis, en pratique, reportées à décembre 1973 par la guerre du Kippour." }
+    ended: { he: "השלימה כהונה מלאה; הבחירות, שנקבעו לאוקטובר 1973, נדחו בחודשיים, ל-31 בדצמבר, בשל מלחמת יום הכיפורים.", en: "Served its full term; the election, due in October 1973, was postponed by two months, to 31 December, because of the Yom Kippur War.", ar: "أتمّ ولايته كاملة؛ وأُجّلت الانتخابات، التي كانت مقرّرة في تشرين الأول/أكتوبر 1973، شهرين إلى 31 كانون الأول/ديسمبر بسبب حرب يوم الغفران.", ru: "Проработал полный срок; выборы, назначенные на октябрь 1973 года, перенесли на два месяца, на 31 декабря, из-за Войны Судного дня.", es: "Cumplió su legislatura entera; las elecciones, previstas para octubre de 1973, se aplazaron dos meses, al 31 de diciembre, por la guerra de Yom Kipur.", fr: "A accompli sa législature complète ; l’élection, prévue en octobre 1973, a été reportée de deux mois, au 31 décembre, à cause de la guerre du Kippour." }
+    sources:
+      - { url: "https://en.idi.org.il/articles/38887", title: "Dissolving the Knesset: A Historical Survey (Chen Friedberg and Assaf Shapira, 18 May 2022)", publisher: "המכון הישראלי לדמוקרטיה" }
+      - { url: "https://main.knesset.gov.il/EN/Documents/2022-10-24%20Fact%20sheet%2002%20-%2025th%20Knesset%20elections%20-%20updated.pdf", title: "Fact sheet: The 25th Knesset elections (October 2022)", publisher: "מרכז המחקר והמידע של הכנסת" }
   - knesset: 6
     date: "1965-11-02"
     turnout: 83.0

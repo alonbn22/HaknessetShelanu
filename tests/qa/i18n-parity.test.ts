@@ -53,11 +53,12 @@ for (const loc of LOCALES) {
     assert.equal(gaps.length, 0, `${loc} untranslated (blank) keys: ${gaps.slice(0, 20).join(", ")}`);
   });
 
-  test(`locale "${loc}": ICU placeholders match the source`, () => {
+  test(`locale "${loc}": ICU placeholders and rich-text tags match the source`, () => {
     // A translation must keep the same {placeholders} as the source, else
-    // interpolation breaks (e.g. a translator dropped {count}).
+    // interpolation breaks (e.g. a translator dropped {count}) — and the same
+    // <tags> for t.rich(), else a link silently vanishes.
     const placeholders = (s: string) =>
-      [...s.matchAll(/\{(\w+)\}/g)].map((m) => m[1]).sort().join(",");
+      [...s.matchAll(/\{(\w+)\}|<(\w+)>/g)].map((m) => m[1] ?? `<${m[2]}>`).sort().join(",");
     const vals = flatMap(load(loc));
     const mismatches = Object.entries(sourceVals)
       .filter(([k, sv]) => vals[k] != null && placeholders(sv) !== placeholders(vals[k]))

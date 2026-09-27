@@ -1,5 +1,5 @@
 import { cache } from "react";
-import { and, asc, desc, eq, inArray, or, sql, type SQL, type AnyColumn } from "drizzle-orm";
+import { and, asc, desc, eq, inArray, isNotNull, or, sql, type SQL, type AnyColumn } from "drizzle-orm";
 import { getDb, schema } from "@/db";
 import { isHebrew } from "./text";
 import { getCoalitionConfig, getFactionMeta, localizedMeta } from "./content";
@@ -306,6 +306,11 @@ export function getCurrentMembers(filters?: {
 export const getMember = cache((id: number): Person | undefined => {
   return getDb().select().from(schema.persons).where(eq(schema.persons.id, id)).get();
 });
+
+// Everyone whose photo the site shows, with its credit (/credits).
+export function getPhotoCredits(): Person[] {
+  return getDb().select().from(schema.persons).where(isNotNull(schema.persons.photoUrl)).all();
+}
 
 type CareerEntry = { title: string; start: string | null; end: string | null };
 export type CareerRange = { start: string | null; end: string | null };

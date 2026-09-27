@@ -1,9 +1,10 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { commonsFilePage, licenseUrl } from "../../src/lib/text";
+import { getPhotoCredits } from "../../src/lib/queries";
 
-// The member page links each photo to its Commons file page and its license
-// deed; both links are derived, so derive them right.
+// /credits and the member page link every photo to its Commons file page and
+// its license deed; both links are derived, so derive them right.
 
 test("commonsFilePage: the file page behind an upload URL, thumbnail or not", () => {
   const page = "https://commons.wikimedia.org/wiki/File:Dudi_Amsalem_2.jpg";
@@ -26,4 +27,16 @@ test("licenseUrl: Creative Commons short names → their deeds; public domain ha
   assert.equal(licenseUrl("CC0"), "https://creativecommons.org/publicdomain/zero/1.0/");
   assert.equal(licenseUrl("Public domain"), null);
   assert.equal(licenseUrl(null), null);
+});
+
+test("every photo the site shows has a Commons file page and a linked license", () => {
+  const photos = getPhotoCredits();
+  assert.ok(photos.length > 100, `only ${photos.length} photos`);
+  for (const p of photos) {
+    assert.ok(commonsFilePage(p.photoUrl), `person ${p.id}: no Commons file page for ${p.photoUrl}`);
+    assert.ok(
+      p.photoLicense === "Public domain" || licenseUrl(p.photoLicense),
+      `person ${p.id}: license "${p.photoLicense}" has no deed — map it in licenseUrl()`,
+    );
+  }
 });

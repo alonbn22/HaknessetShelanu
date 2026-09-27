@@ -1,5 +1,4 @@
 {
-  "app/[locale]/accessibility/page.tsx": 2,
   "app/[locale]/attendance/AttendanceList.tsx": 4,
   "app/[locale]/budget/BudgetFilters.tsx": 4,
   "app/[locale]/budget/YearSelector.tsx": 2,

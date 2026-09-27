@@ -2,6 +2,9 @@ import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { getLastSyncDate } from "@/lib/queries";
 
+// Each key is both the page's path and its label in the `footer` namespace.
+const PAGES = ["sources", "credits", "privacy", "terms", "accessibility", "tickets"] as const;
+
 export async function Footer() {
   const t = await getTranslations("footer");
   const locale = await getLocale();
@@ -23,15 +26,11 @@ export async function Footer() {
           </p>
         )}
         <p className="flex flex-wrap gap-x-4 gap-y-1 pt-1">
-          <Link href="/sources" className="text-accent hover:underline">
-            {t("sources")}
-          </Link>
-          <Link href="/accessibility" className="text-accent hover:underline">
-            {t("accessibility")}
-          </Link>
-          <Link href="/tickets" className="text-accent hover:underline">
-            {t("tickets")}
-          </Link>
+          {PAGES.map((page) => (
+            <Link key={page} href={`/${page}`} className="text-accent hover:underline">
+              {t(page)}
+            </Link>
+          ))}
         </p>
       </div>
     </footer>

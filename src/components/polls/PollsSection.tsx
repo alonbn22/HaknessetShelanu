@@ -327,8 +327,8 @@ export async function PollsSection({ id = "polls" }: { id?: string }) {
                 {seatsIn(p).map((s, i) => (
                   <span key={s}>
                     {i > 0 && <span className="text-muted"> · </span>}
-                    <span className="whitespace-nowrap">
-                      <span {...attrsOf(s)}>{nameOf(s)}</span> <strong className="tabular-nums">{p.seats[s]}</strong>
+                    <span>
+                      <span {...attrsOf(s)}>{nameOf(s)}</span>{"\u00a0"}<strong className="tabular-nums">{p.seats[s]}</strong>
                     </span>
                   </span>
                 ))}
@@ -402,8 +402,8 @@ export async function PollsSection({ id = "polls" }: { id?: string }) {
                   {rows.map(([s, v], i) => (
                     <span key={s}>
                       {i > 0 && <span className="text-muted"> · </span>}
-                      <span className="whitespace-nowrap">
-                        <span {...attrsOf(s)}>{nameOf(s)}</span> <strong className="tabular-nums">{num(v)}</strong>
+                      <span>
+                        <span {...attrsOf(s)}>{nameOf(s)}</span>{"\u00a0"}<strong className="tabular-nums">{num(v)}</strong>
                       </span>
                     </span>
                   ))}

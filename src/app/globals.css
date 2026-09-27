@@ -543,3 +543,14 @@ html.a11y-no-motion *::after {
     transition-duration: 0.001ms !important;
   }
 }
+
+/* A grid with no column template (the phone layout of `grid md:grid-cols-2`)
+   gets one implicit `auto` column, which grows to its widest child's
+   min-content: a long Russian word pushed the home page to 438px on a 375px
+   phone (WCAG 1.4.10 reflow). Default to one shrinkable column instead; any
+   grid-cols-* utility still wins, since utilities sit in a later layer. */
+@layer base {
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

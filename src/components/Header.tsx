@@ -17,13 +17,15 @@ export function Header() {
   return (
     <header className="stripe-rule sticky top-0 z-40 bg-chrome text-on-chrome">
       {/* relative: anchors the mobile dropdown panel (absolute top-full inset-x-0) */}
-      <div className="relative mx-auto flex max-w-6xl items-center gap-x-6 px-4 py-3">
+      <div className="relative mx-auto flex max-w-6xl items-center gap-x-3 px-4 py-3 sm:gap-x-6">
         <Link
           href="/"
-          className="flex shrink-0 items-center whitespace-nowrap"
+          className="flex min-w-0 items-center sm:shrink-0 sm:whitespace-nowrap"
           aria-label={t("site.name")}
         >
-          <span className="wordmark font-display text-[1.75rem] font-bold leading-none" style={{ paddingBottom: "0.08em" }}>
+          {/* On phones a long name (es, fr, ru) wraps to two lines rather than
+              pushing the header past the screen (WCAG 1.4.10 reflow). */}
+          <span className="wordmark font-display text-[1.4rem] font-bold leading-[1.05] sm:text-[1.75rem] sm:leading-none" style={{ paddingBottom: "0.08em" }}>
             {t("site.name")}
           </span>
         </Link>
@@ -36,7 +38,10 @@ export function Header() {
           >
             <SearchIcon size={20} />
           </Link>
-          <ThemeToggle />
+          {/* Below 360px there is no room; the theme then follows the OS setting. */}
+          <span className="max-[359px]:hidden">
+            <ThemeToggle />
+          </span>
           <MobileNav />
           {/* useSearchParams inside → needs a Suspense boundary for static prerender */}
           <Suspense fallback={null}>

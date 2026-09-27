@@ -56,11 +56,13 @@ publishers:
   - { key: "כחול לבן", en: "Blue and White", ar: "أزرق أبيض", ru: "Кахоль-лаван", es: "Azul y Blanco", fr: "Bleu et Blanc" }
   - { key: "לקסיקון הכנסת", en: "Knesset Lexicon", ar: "معجم الكنيست", ru: "Лексикон Кнессета", es: "Léxico de la Knéset", fr: "Lexique de la Knesset" }
   - { key: "מעריב", en: "Maariv", ar: "معاريف", ru: "«Маарив»", es: "Maariv", fr: "Maariv" }
+  - { key: "מק\"י", en: "Maki (the Israeli Communist Party)", ar: "ماكي (الحزب الشيوعي الإسرائيلي)", ru: "МАКИ (Коммунистическая партия Израиля)", es: "Maki (Partido Comunista Israelí)", fr: "Maki (Parti communiste israélien)" }
   - { key: "מקור ראשון", en: "Makor Rishon", ar: "ماكور ريشون", ru: "«Макор ришон»", es: "Makor Rishon", fr: "Makor Rishon" }
   - { key: "מרכז המחקר והמידע של הכנסת", en: "Knesset Research and Information Center", ar: "مركز الأبحاث والمعلومات في الكنيست", ru: "Исследовательско-информационный центр Кнессета", es: "Centro de Investigación e Información de la Knéset", fr: "Centre de recherche et d’information de la Knesset" }
   - { key: "נעם לישראל (אתר המפלגה)", en: "Noam for Israel (party website)", ar: "نوعم لإسرائيل (موقع الحزب)", ru: "«Ноам за Израиль» (сайт партии)", es: "Noam por Israel (sitio del partido)", fr: "Noam pour Israël (site du parti)" }
   - { key: "סרוגים", en: "Srugim", ar: "سروغيم", ru: "«Сругим»", es: "Srugim", fr: "Srugim" }
   - { key: "עוצמה יהודית", en: "Otzma Yehudit", ar: "عوتسما يهوديت", ru: "Оцма Иегудит", es: "Otzma Yehudit", fr: "Otzma Yehoudit" }
+  - { key: "עמך ישראל", en: "Amkha Yisrael", ar: "عمخا يسرائيل", ru: "Амха Исраэль", es: "Amkha Yisrael", fr: "Amkha Israël" }
   - { key: "ערוץ 14", en: "Channel 14", ar: "القناة 14", ru: "14-й канал", es: "Canal 14", fr: "Chaîne 14" }
   - { key: "ערוץ 7", en: "Arutz 7", ar: "القناة السابعة", ru: "«Аруц 7»", es: "Arutz 7", fr: "Arutz 7" }
   - { key: "Knesset Channel (ערוץ כנסת)", en: "Knesset Channel", ar: "قناة الكنيست", ru: "Канал Кнессета", es: "Canal de la Knéset", fr: "Chaîne de la Knesset" }

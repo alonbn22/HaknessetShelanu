@@ -543,6 +543,60 @@ export function getQuiz(): QuizQuestion[] {
   return getQuizFile().questions;
 }
 
+// ---------- self-descriptions (the lists' own words) ----------
+
+// What a running list calls itself, only where the list itself uses the words:
+// its site, platform or charter, its registered name at the CEC, or its leader
+// quoted in a major outlet — never a reporter's description or an inference.
+// No tag on a dimension = the list didn't say. Dimensions and values in
+// display order; there is no "center": no list calls itself that.
+export const SELF_DESCRIPTION_VALUES = {
+  camp: ["right", "left"],
+  religion: ["religious", "religious-zionist", "haredi", "liberal-on-religion"],
+  community: ["arab", "jewish-arab", "sephardi"],
+  economy: ["free-market", "social-democratic", "socialist", "communist"],
+  national: ["zionist", "national"],
+} as const;
+export type SelfDescriptionDimension = keyof typeof SELF_DESCRIPTION_VALUES;
+
+const allLanguages = localizedText.required();
+const selfDescriptionTagSchema = z
+  .object({
+    dimension: z.enum(Object.keys(SELF_DESCRIPTION_VALUES) as SelfDescriptionDimension[]),
+    value: z.string(),
+    quote: allLanguages, // he verbatim; the other five translate it
+    note: allLanguages.optional(), // shown in parentheses after the quote
+    source: z.object({
+      url: z.string().trim().refine((u) => /^https:\/\//.test(u), "must be an https URL"),
+      title: z.string().min(1),
+      publisher: z.string().min(1),
+    }),
+  })
+  .superRefine((t, ctx) => {
+    if (!(SELF_DESCRIPTION_VALUES[t.dimension] as readonly string[]).includes(t.value)) {
+      ctx.addIssue({ code: "custom", message: `"${t.value}" is not a ${t.dimension} value` });
+    }
+  });
+const selfDescriptionsFileSchema = z.object({
+  lastReviewed: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  lists: z.record(listSlug, z.array(selfDescriptionTagSchema).min(1)),
+});
+export type SelfDescriptionTag = z.infer<typeof selfDescriptionTagSchema>;
+export type SelfDescriptions = z.infer<typeof selfDescriptionsFileSchema>;
+
+let _selfDescriptions: SelfDescriptions | null = null;
+
+// Registry membership is checked in tests/qa/self-descriptions.test.ts, not
+// here: a mid-edit election.yaml empties the registry, and that must not take
+// the finder down with it.
+export function getSelfDescriptions(): SelfDescriptions {
+  if (!_selfDescriptions) {
+    const raw = fs.readFileSync(path.join(CONTENT_DIR, "self-descriptions.yaml"), "utf8");
+    _selfDescriptions = selfDescriptionsFileSchema.parse(parse(raw));
+  }
+  return _selfDescriptions;
+}
+
 // Budget figures come from Ministry of Finance open data in the DB (sync/budget.ts,
 // getBudget* in queries.ts). The outlook/news for not-yet-published budgets is editorial:
 

@@ -1,0 +1,482 @@
+# How each running list describes itself, in its own words: the "How they
+# describe themselves" filters of the party finder (/elections/find).
+#
+# The rule (the owner's standing rule): a list gets a label ONLY where the list
+# itself uses those words: its own site, its platform or charter, its
+# registered name at the Central Elections Committee (or the registered name of
+# the party its head is filed under), or its leader quoted in a major outlet.
+# Never a reporter's description, another candidate's words, a co-submitting
+# party's words, or an inference from policy. A list with no such words on a
+# dimension has no tag there and the finder shows it as "didn't say". The site
+# never assigns labels. One exception, for one value: liberal-on-religion is a
+# stance by nature, so an explicit religion-and-state principle ("no religious
+# coercion", "freedom from religion", "separation of religion and state")
+# counts for it; the finder labels it "against religious coercion".
+#
+# Researched 27 Sep 2026: every page cited here was read live that day, and the
+# quotes were re-checked on the live pages on 28 Sep, all but Likud's (its
+# constitution is a PDF with a garbled text layer; the research read it
+# rendered). Research notes, with what was tried for every list and the
+# borderline items left out: scratchpad self-descriptions.yaml. Editorial
+# decisions, 27 Sep 2026:
+# - Included from the research, with their quotes and sources; the notes are
+#   rewritten for readers (who said it, or which document it is).
+# - Excluded: Amkha's zionist and free-market tags (from an unlisted, noindex
+#   platform page, which the site already holds back); every borderline item
+#   (the #2's or a co-submitter's words, a reporter's wording, a value the
+#   words only imply); Blue and White has no tag at all.
+# - Likud has no camp tag: its constitution says "national-liberal", not "right".
+# - Religious Zionism–Zehut's right rests on a 2022 campaign page still on the
+#   party's site; its quote is trimmed to the words about the government,
+#   dropping the part about other parties.
+# - The Joint List's left, socialist, communist and liberal-on-religion tags
+#   are the words of Maki (the Israeli Communist Party), the party the list's
+#   head is filed under, and each note says so; jewish-arab is the head's own.
+# - No list calls itself "center" in its own words, so there is no such value.
+# - Likud's constitution is cited on its landing page. The address the compass
+#   cites (/על-הליכוד/חוקת-הליכוד) answered 404 on 28 Sep; the site's own menu
+#   now links /about/חוקת-הליכוד.
+#
+# Dimensions and values (src/lib/content.ts rejects any other pair):
+#   camp: right | left
+#   religion: religious | religious-zionist | haredi | liberal-on-religion
+#   community: arab | jewish-arab | sephardi
+#   economy: free-market | social-democratic | socialist | communist
+#   national: zionist | national
+# quote.he is verbatim, 25 words or fewer ("…" marks an omission; " / " joins
+# two elements of the same page); en/ar/ru/es/fr are faithful translations.
+# `note` is shown in parentheses after the quote; `&name` / `*name` reuse one
+# quote, note or source where the same words carry two labels. Only right and
+# left are opposites: in the finder, a list tagged "national" is not counted
+# as differing from "zionist", it just didn't say it.
+lastReviewed: "2026-09-27"
+lists:
+  likud:
+    - dimension: economy
+      value: free-market
+      quote:
+        he: "\"…ולכינון משק חופשי- תחרותי הנושא את עצמו והמבוסס על יוזמה חפשית, והימנעות הממשלה, ככל הניתן ממעורבות במשק\""
+        en: "\"…and for establishing a free, competitive, self-sustaining economy based on free enterprise, and the government refraining, as far as possible, from involvement in the economy\""
+        ar: "«…ولإقامة اقتصاد حرّ تنافسي يعتمد على نفسه ويقوم على المبادرة الحرة، وامتناع الحكومة، قدر الإمكان، عن التدخل في الاقتصاد»"
+        ru: "«…и для построения свободной конкурентной самоокупаемой экономики, основанной на свободном предпринимательстве, и невмешательство правительства в экономику, насколько это возможно»"
+        es: "«…y para establecer una economía libre y competitiva, autosuficiente y basada en la libre iniciativa, y que el Gobierno se abstenga, en la medida de lo posible, de intervenir en la economía»"
+        fr: "« …et à l’établissement d’une économie libre et concurrentielle, autosuffisante et fondée sur la libre entreprise, le gouvernement s’abstenant, autant que possible, d’intervenir dans l’économie »"
+      note:
+        he: "אחת ממטרות התנועה בחוקת הליכוד, נוסח יולי 2015"
+        en: "one of the movement's aims in the Likud constitution, July 2015 version"
+        ar: "أحد أهداف الحركة في دستور الليكود، صيغة تموز/يوليو 2015"
+        ru: "одна из целей движения по уставу Ликуда, редакция июля 2015 года"
+        es: "uno de los objetivos del movimiento en la constitución del Likud, versión de julio de 2015"
+        fr: "l’un des objectifs du mouvement dans la constitution du Likoud, version de juillet 2015"
+      source: { url: "https://www.likud.org.il/about/%D7%97%D7%95%D7%A7%D7%AA-%D7%94%D7%9C%D7%99%D7%9B%D7%95%D7%93", title: "חוקת הליכוד (PDF להורדה), כפי תקפה ליום 1 ביולי 2015 — פרק ב׳: מטרות, סעיף 1(ז)", publisher: "הליכוד" }
+    - dimension: national
+      value: national
+      quote:
+        he: "\"שם התנועה הוא : \"הליכוד\", תנועה לאומית-ליברלית.\""
+        en: "\"The movement's name is: 'Likud', a national-liberal movement.\""
+        ar: "«اسم الحركة هو: \"الليكود\"، حركة قومية-ليبرالية.»"
+        ru: "«Название движения: „Ликуд“, национально-либеральное движение»."
+        es: "«El nombre del movimiento es: “Likud”, un movimiento nacional-liberal.»"
+        fr: "« Le nom du mouvement est : “Likoud”, un mouvement national-libéral. »"
+      source: { url: "https://www.likud.org.il/about/%D7%97%D7%95%D7%A7%D7%AA-%D7%94%D7%9C%D7%99%D7%9B%D7%95%D7%93", title: "חוקת הליכוד (PDF להורדה), כפי תקפה ליום 1 ביולי 2015 — פרק א׳: שם התנועה", publisher: "הליכוד" }
+
+  together:
+    - dimension: camp
+      value: right
+      quote: &together-right
+        he: "\"נוביל את העם בדרך בה מאמינים רוב גדול של אזרחי ישראל, דרך הימין הליברלי הציוני\""
+        en: "\"We will lead the people on the path a large majority of Israel's citizens believe in, the path of the liberal Zionist right\""
+        ar: "«سنقود الشعب في الطريق الذي تؤمن به أغلبية كبيرة من مواطني إسرائيل، طريق اليمين الليبرالي الصهيوني»"
+        ru: "«Мы поведём народ путём, в который верит значительное большинство граждан Израиля, — путём либеральных сионистских правых»"
+        es: "«Guiaremos al pueblo por el camino en el que cree una gran mayoría de los ciudadanos de Israel, el camino de la derecha liberal sionista»"
+        fr: "« Nous mènerons le peuple sur la voie à laquelle croit une large majorité des citoyens d’Israël, la voie de la droite libérale sioniste »"
+      note: &together-bennett
+        he: "נפתלי בנט, העומד בראש הרשימה, בהכרזה על הריצה המשותפת, אפריל 2026"
+        en: "Naftali Bennett, the list's head, announcing the joint run, April 2026"
+        ar: "نفتالي بينيت، رئيس القائمة، عند إعلان خوض الانتخابات المشترك، نيسان/أبريل 2026"
+        ru: "Нафтали Беннет, глава списка, объявляя о совместном участии в выборах, апрель 2026 года"
+        es: "Naftali Bennett, cabeza de lista, al anunciar la candidatura conjunta, abril de 2026"
+        fr: "Naftali Bennett, tête de liste, en annonçant la candidature commune, avril 2026"
+      source: &together-ynet { url: "https://www.ynet.co.il/news/article/bjev03jpwl", title: "בנט: אני ימין, לא אסתמך על המפלגות הערביות. לפיד: המרכז הישראלי צריך להתייצב מאחוריו", publisher: "ynet" }
+    - dimension: religion
+      value: liberal-on-religion
+      quote:
+        he: "\"מדינה יהודית בלי כפייה … זהות יהודית כן. כפייה דתית לא.\""
+        en: "\"A Jewish state without coercion … Jewish identity, yes. Religious coercion, no.\""
+        ar: "«دولة يهودية بلا إكراه … الهوية اليهودية نعم. الإكراه الديني لا.»"
+        ru: "«Еврейское государство без принуждения … Еврейская идентичность — да. Религиозное принуждение — нет»."
+        es: "«Un Estado judío sin coerción … Identidad judía, sí. Coerción religiosa, no.»"
+        fr: "« Un État juif sans coercition … Identité juive, oui. Coercition religieuse, non. »"
+      source: { url: "https://be-yahad.org.il/plans/religionandstate/", title: "רק ביחד נתקן את יחסי הדת והמדינה", publisher: "ביחד" }
+    - dimension: national
+      value: zionist
+      quote: *together-right
+      note: *together-bennett
+      source: *together-ynet
+
+  yashar:
+    - dimension: national
+      value: zionist
+      quote:
+        he: "\"רק כך נגשים את היעד הלאומי והציוני: להפוך את ישראל 2048 למדינת מופת משגשגת\""
+        en: "\"Only this way will we achieve the national and Zionist goal: making Israel 2048 a thriving model state\""
+        ar: "«بهذه الطريقة فقط سنحقق الهدف القومي والصهيوني: أن نجعل إسرائيل 2048 دولة نموذجية مزدهرة»"
+        ru: "«Только так мы достигнем национальной и сионистской цели: сделать Израиль 2048 года образцовым процветающим государством»"
+        es: "«Solo así alcanzaremos el objetivo nacional y sionista: hacer de Israel 2048 un Estado modelo y próspero»"
+        fr: "« Ce n’est qu’ainsi que nous atteindrons l’objectif national et sioniste : faire d’Israël 2048 un État modèle et prospère »"
+      note:
+        he: "היעד של תוכנית עשרת הצעדים של הרשימה"
+        en: "the goal of the list's ten-step plan"
+        ar: "هدف خطة الخطوات العشر للقائمة"
+        ru: "цель плана списка из десяти шагов"
+        es: "el objetivo del plan de diez pasos de la lista"
+        fr: "l’objectif du plan en dix étapes de la liste"
+      source: { url: "https://yasharwitheisenkot.com/agenda_point/", title: "10 הצעדים לשגשוגה של מדינת ישראל (צעד 10)", publisher: "ישר!" }
+
+  democrats:
+    - dimension: camp
+      value: left
+      quote: &democrats-meta
+        he: "\"מפלגת הדמוקרטים היא מפלגת שמאל ציונית סוציאל-דמוקרטית.\""
+        en: "\"The Democrats party is a Zionist, social-democratic party of the left.\""
+        ar: "«حزب الديمقراطيين هو حزب يسار صهيوني اشتراكي ديمقراطي.»"
+        ru: "«Партия „Демократы“ — сионистская социал-демократическая левая партия»."
+        es: "«El partido Los Demócratas es un partido de izquierda sionista y socialdemócrata.»"
+        fr: "« Le parti Les Démocrates est un parti de gauche sioniste et social-démocrate. »"
+      note: &democrats-site
+        he: "התיאור של אתר המפלגה עצמו"
+        en: "the party site's own description"
+        ar: "الوصف الذي يقدّمه موقع الحزب نفسه"
+        ru: "собственное описание сайта партии"
+        es: "la descripción del propio sitio del partido"
+        fr: "la description du site du parti lui-même"
+      source: &democrats-home { url: "https://democrats.org.il/", title: "הדמוקרטים בראשות יאיר גולן — עמוד הבית (תיאור האתר)", publisher: "הדמוקרטים" }
+    - dimension: religion
+      value: liberal-on-religion
+      quote:
+        he: "\"מדינה סובלנית שמבטיחה חופש דת וחופש מדת\""
+        en: "\"A tolerant state that guarantees freedom of religion and freedom from religion\""
+        ar: "«دولة متسامحة تضمن حرية الدين والحرية من الدين»"
+        ru: "«Терпимое государство, которое гарантирует свободу вероисповедания и свободу от религии»"
+        es: "«Un Estado tolerante que garantice la libertad de religión y la libertad frente a la religión»"
+        fr: "« Un État tolérant qui garantit la liberté de religion et la liberté vis-à-vis de la religion »"
+      source: { url: "https://yes.democrats.org.il/topics/religion-state", title: "מה המצע — דת ומדינה: המהות", publisher: "הדמוקרטים" }
+    - dimension: economy
+      value: social-democratic
+      quote: *democrats-meta
+      note: *democrats-site
+      source: *democrats-home
+    - dimension: national
+      value: zionist
+      quote: *democrats-meta
+      note: *democrats-site
+      source: *democrats-home
+
+  yisrael-beiteinu:
+    - dimension: camp
+      value: right
+      quote:
+        he: "\"הצטרפו לתנועת הצעירים של מפלגת הימין היחידה במדינה – ישראל ביתנו.\""
+        en: "\"Join the youth movement of the only right-wing party in the country – Yisrael Beiteinu.\""
+        ar: "«انضمّوا إلى حركة الشبيبة لحزب اليمين الوحيد في الدولة – إسرائيل بيتنا.»"
+        ru: "«Вступайте в молодёжное движение единственной правой партии в стране — „Наш дом Израиль“»."
+        es: "«Únanse al movimiento juvenil del único partido de derecha del país – Yisrael Beiteinu.»"
+        fr: "« Rejoignez le mouvement de jeunesse du seul parti de droite du pays – Israël Beiteinou. »"
+      source: { url: "https://beytenu.org.il/", title: "מפלגת ישראל ביתנו — עמוד הבית (צעירי ישראל ביתנו)", publisher: "ישראל ביתנו" }
+    - dimension: religion
+      value: liberal-on-religion
+      quote:
+        he: "\"אנו מתנגדים לכל כפייה דתית … לכן אנו מאמינים בהפרדה בין דת למדינה.\""
+        en: "\"We oppose all religious coercion … therefore we believe in the separation of religion and state.\""
+        ar: "«نحن نعارض كل إكراه ديني … لذلك نؤمن بالفصل بين الدين والدولة.»"
+        ru: "«Мы против любого религиозного принуждения … поэтому мы верим в отделение религии от государства»."
+        es: "«Nos oponemos a toda coerción religiosa … por eso creemos en la separación entre religión y Estado.»"
+        fr: "« Nous nous opposons à toute coercition religieuse … c’est pourquoi nous croyons à la séparation de la religion et de l’État. »"
+      source: { url: "https://beytenu.org.il/party-platform/", title: "המצע שלנו — דת ומדינה", publisher: "ישראל ביתנו" }
+    - dimension: national
+      value: zionist
+      quote:
+        he: "\"נלחמים למען מדינה יהודית, ציונית, ליברלית ודמוקרטית.\""
+        en: "\"Fighting for a Jewish, Zionist, liberal and democratic state.\""
+        ar: "«نناضل من أجل دولة يهودية، صهيونية، ليبرالية وديمقراطية.»"
+        ru: "«Боремся за еврейское, сионистское, либеральное и демократическое государство»."
+        es: "«Luchamos por un Estado judío, sionista, liberal y democrático.»"
+        fr: "« Nous nous battons pour un État juif, sioniste, libéral et démocratique. »"
+      note:
+        he: "הכותרת של דף הבית של המפלגה"
+        en: "the headline of the party's homepage"
+        ar: "العنوان الرئيسي في الصفحة الرئيسية للحزب"
+        ru: "заголовок главной страницы партии"
+        es: "el titular de la página de inicio del partido"
+        fr: "le titre de la page d’accueil du parti"
+      source: { url: "https://beytenu.org.il/", title: "מפלגת ישראל ביתנו — עמוד הבית", publisher: "ישראל ביתנו" }
+
+  shas:
+    - dimension: camp
+      value: right
+      quote:
+        he: "\"לש״ס יש תפקיד ייחודי בתוך גוש הימין וזה לשמור על המסורת היהודית\""
+        en: "\"Shas has a unique role within the right-wing bloc, and that is to preserve Jewish tradition\""
+        ar: "«لشاس دور فريد داخل كتلة اليمين، وهو الحفاظ على التقاليد اليهودية»"
+        ru: "«У ШАС особая роль внутри правого блока — сохранять еврейскую традицию»"
+        es: "«Shas tiene un papel único dentro del bloque de la derecha, y es preservar la tradición judía»"
+        fr: "« Le Shas a un rôle unique au sein du bloc de droite, et c’est de préserver la tradition juive »"
+      note:
+        he: "אריה דרעי, העומד בראש הרשימה, בערוץ 14, כפי שדווח בישראל היום"
+        en: "Aryeh Deri, the list's head, on Channel 14, as reported by Israel Hayom"
+        ar: "أرييه درعي، رئيس القائمة، على القناة 14، كما نقلت يسرائيل هيوم"
+        ru: "Арье Дери, глава списка, на 14-м канале, как сообщила «Исраэль ха-Йом»"
+        es: "Aryeh Deri, cabeza de lista, en el Canal 14, según Israel Hayom"
+        fr: "Aryeh Deri, tête de liste, sur la Chaîne 14, selon Israel Hayom"
+      source: { url: "https://www.israelhayom.co.il/news/politics/article/21289018", title: "\"מבחינתי שכל המפלגות יתאחדו לגוש אחד גדול\": המסר של אריה דרעי", publisher: "ישראל היום" }
+    - dimension: religion
+      value: religious
+      quote: &shas-name
+        he: "\"התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ\"ל\""
+        en: "\"Union of Torah-Observant Sephardim, the movement of our master Rabbi Ovadia Yosef, of blessed memory\""
+        ar: "«اتحاد السفارديم حرّاس التوراة، حركة معلّمنا الحاخام عوفاديا يوسف، طيّب الذكر»"
+        ru: "«Объединение сефардов — хранителей Торы, движение нашего учителя рава Овадьи Йосефа, благословенна память праведника»"
+        es: "«Unión de Sefardíes Observantes de la Torá, el movimiento de nuestro maestro el rabino Ovadia Yosef, de bendita memoria»"
+        fr: "« Union des séfarades observants de la Torah, le mouvement de notre maître le rabbin Ovadia Yossef, de mémoire bénie »"
+      note: &shas-registered
+        he: "השם הרשום של הרשימה"
+        en: "the list's registered name"
+        ar: "الاسم المسجّل للقائمة"
+        ru: "зарегистрированное название списка"
+        es: "el nombre registrado de la lista"
+        fr: "le nom enregistré de la liste"
+      source: &shas-cec { url: "https://www.gov.il/he/pages/shas_list19", title: "התאחדות הספרדים שומרי תורה תנועתו של מרן הרב עובדיה יוסף זצ\"ל — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
+    - dimension: community
+      value: sephardi
+      quote: *shas-name
+      note: *shas-registered
+      source: *shas-cec
+
+  utj:
+    - dimension: religion
+      value: haredi
+      quote:
+        he: "\"רשימת המועמדים הוגשה מטעם מפלגת אגודת החרדים - דגל התורה…\""
+        en: "\"The list of candidates was submitted on behalf of the party 'Association of the Haredim – Degel HaTorah'…\""
+        ar: "«قُدّمت قائمة المرشحين باسم حزب \"جمعية الحريديم – ديغل هتوراه\"…»"
+        ru: "«Список кандидатов подан от имени партии „Объединение харедим — Дегель ха-Тора“…»"
+        es: "«La lista de candidatos fue presentada en nombre del partido “Asociación de los Jaredíes – Degel HaTorá”…»"
+        fr: "« La liste des candidats a été déposée au nom du parti “Association des haredim – Degel HaTorah”… »"
+      note:
+        he: "השם הרשום של דגל התורה, המפלגה שמטעמה מתמודד העומד בראש הרשימה"
+        en: "the registered name of Degel HaTorah, the party the list's head is filed under"
+        ar: "الاسم المسجّل لحزب ديغل هتوراه، الحزب الذي يترشّح رئيس القائمة باسمه"
+        ru: "зарегистрированное название партии «Дегель ха-Тора», от которой выдвинут глава списка"
+        es: "el nombre registrado de Degel HaTorá, el partido por el que se presenta el cabeza de lista"
+        fr: "le nom enregistré du Degel HaTorah, le parti au nom duquel se présente la tête de liste"
+      source: { url: "https://www.gov.il/he/pages/yahadut-degel_list37", title: "יהדות התורה והשבת אגודת ישראל - דגל התורה — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
+
+  rz-zehut:
+    - dimension: camp
+      value: right
+      quote:
+        he: "\"…להקמת ממשלת ימין על מלא…\""
+        en: "\"…to the formation of a fully right-wing government…\""
+        ar: "«…إلى تشكيل حكومة يمين كاملة…»"
+        ru: "«…к созданию полностью правого правительства…»"
+        es: "«…a la formación de un gobierno plenamente de derecha…»"
+        fr: "« …à la formation d’un gouvernement entièrement de droite… »"
+      note:
+        he: "עמוד מקמפיין 2022, שעדיין נמצא באתר המפלגה"
+        en: "a 2022 campaign page, still on the party's site"
+        ar: "صفحة من حملة 2022، لا تزال على موقع الحزب"
+        ru: "страница кампании 2022 года, которая всё ещё на сайте партии"
+        es: "una página de la campaña de 2022, que sigue en el sitio del partido"
+        fr: "une page de la campagne de 2022, toujours sur le site du parti"
+      source: { url: "https://zionutdatit.org.il/your-security-in-right/", title: "הביטחון שלך בימין - מפלגת הציונות הדתית", publisher: "הציונות הדתית" }
+    - dimension: religion
+      value: religious-zionist
+      quote:
+        he: "\"מפלגת הציונות הדתית בראשות ח\"כ בצלאל סמוטריץ' היא מפלגה דתית לאומית, המהווה בית לציבור המאמין על כל גווניו.\""
+        en: "\"The Religious Zionism party, led by MK Bezalel Smotrich, is a religious-national party, a home for the believing public in all its shades.\""
+        ar: "«حزب الصهيونية الدينية برئاسة عضو الكنيست بتسلئيل سموتريتش هو حزب ديني قومي، يشكّل بيتًا للجمهور المؤمن بكل أطيافه.»"
+        ru: "«Партия „Религиозный сионизм“ во главе с депутатом Кнессета Бецалелем Смотричем — религиозно-национальная партия, дом для верующей общественности во всём её многообразии»."
+        es: "«El partido Sionismo Religioso, encabezado por el diputado Bezalel Smotrich, es un partido religioso nacional, un hogar para el público creyente en todos sus matices.»"
+        fr: "« Le parti Sionisme religieux, dirigé par le député Bezalel Smotrich, est un parti religieux national, un foyer pour le public croyant dans toutes ses nuances. »"
+      source: &rz-about { url: "https://zionutdatit.org.il/%D7%A2%D7%9C-%D7%94%D7%9E%D7%A4%D7%9C%D7%92%D7%94/", title: "על המפלגה - מפלגת הציונות הדתית", publisher: "הציונות הדתית" }
+    - dimension: national
+      value: zionist
+      quote:
+        he: "\"מפלגת הציונות הדתית מאמינה בציונות, בלאומיות, באחדות ושלמות העם והארץ\""
+        en: "\"The Religious Zionism party believes in Zionism, in nationhood, in the unity and wholeness of the people and the land\""
+        ar: "«حزب الصهيونية الدينية يؤمن بالصهيونية، وبالقومية، وبوحدة الشعب والأرض وكمالهما»"
+        ru: "«Партия „Религиозный сионизм“ верит в сионизм, в национальную идею, в единство и целостность народа и земли»"
+        es: "«El partido Sionismo Religioso cree en el sionismo, en la nación, en la unidad y la integridad del pueblo y de la tierra»"
+        fr: "« Le parti Sionisme religieux croit au sionisme, à la nation, à l’unité et à l’intégrité du peuple et de la terre »"
+      source: { url: "https://zionutdatit.org.il/%D7%9E%D7%A6%D7%A2-%D7%94%D7%9E%D7%A4%D7%9C%D7%92%D7%94/", title: "מצע המפלגה - מפלגת הציונות הדתית", publisher: "הציונות הדתית" }
+    - dimension: national
+      value: national
+      quote:
+        he: "\"הוכיחה מפלגת הציונות הדתית כי היא המפלגה הלאומית שעקרונותיה וערכיה חשובים הרבה יותר משררה\""
+        en: "\"The Religious Zionism party has proven that it is the national party whose principles and values matter far more than power\""
+        ar: "«أثبت حزب الصهيونية الدينية أنه الحزب القومي الذي تهمّه مبادئه وقيمه أكثر بكثير من السلطة»"
+        ru: "«Партия „Религиозный сионизм“ доказала, что она — национальная партия, для которой принципы и ценности намного важнее власти»"
+        es: "«El partido Sionismo Religioso ha demostrado que es el partido nacional cuyos principios y valores importan mucho más que el poder»"
+        fr: "« Le parti Sionisme religieux a prouvé qu’il est le parti national dont les principes et les valeurs comptent bien plus que le pouvoir »"
+      source: *rz-about
+
+  otzma:
+    - dimension: national
+      value: zionist
+      quote:
+        he: "\"מפלגת עוצמה יהודית הוקמה בשנת 2004 מתוך הצורך לקדם אג'נדה יהודית ציונית ללא פשרות.\""
+        en: "\"The Otzma Yehudit party was founded in 2004 out of the need to advance a Jewish, Zionist agenda without compromise.\""
+        ar: "«تأسّس حزب عوتسما يهوديت عام 2004 انطلاقًا من الحاجة إلى دفع أجندة يهودية صهيونية بلا تنازلات.»"
+        ru: "«Партия „Оцма Иегудит“ была основана в 2004 году из-за необходимости продвигать еврейскую сионистскую повестку без компромиссов»."
+        es: "«El partido Otzma Yehudit se fundó en 2004 por la necesidad de impulsar una agenda judía y sionista sin concesiones.»"
+        fr: "« Le parti Otzma Yehoudit a été fondé en 2004 face à la nécessité de promouvoir un programme juif et sioniste sans compromis. »"
+      source: { url: "https://ozma-yeudit.co.il/%D7%9E%D7%99-%D7%90%D7%A0%D7%97%D7%A0%D7%95/", title: "מי אנחנו - עוצמה יהודית", publisher: "עוצמה יהודית" }
+    - dimension: national
+      value: national
+      quote:
+        he: "\"רשימת המועמדים הוגשה מטעם מפלגת חזית יהודית לאומית…\""
+        en: "\"The list of candidates was submitted on behalf of the party 'Jewish National Front'…\""
+        ar: "«قُدّمت قائمة المرشحين باسم حزب \"الجبهة اليهودية القومية\"…»"
+        ru: "«Список кандидатов подан от имени партии „Еврейский национальный фронт“…»"
+        es: "«La lista de candidatos fue presentada en nombre del partido “Frente Nacional Judío”…»"
+        fr: "« La liste des candidats a été déposée au nom du parti “Front national juif”… »"
+      note:
+        he: "השם הרשום של המפלגה שמטעמה מתמודד העומד בראש הרשימה"
+        en: "the registered name of the party the list's head is filed under"
+        ar: "الاسم المسجّل للحزب الذي يترشّح رئيس القائمة باسمه"
+        ru: "зарегистрированное название партии, от которой выдвинут глава списка"
+        es: "el nombre registrado del partido por el que se presenta el cabeza de lista"
+        fr: "le nom enregistré du parti au nom duquel se présente la tête de liste"
+      source: { url: "https://www.gov.il/he/pages/yehudit-meuhedet_list14", title: "עוצמה יהודית — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
+
+  raam:
+    - dimension: community
+      value: arab
+      quote:
+        he: "\"רע\"ם - הרשימה הערבית המאוחדת / רשימת המועמדים הוגשה מטעם מפלגת רשימת האיחוד הערבי\""
+        en: "\"Ra'am – the United Arab List / The list of candidates was submitted on behalf of the party 'Arab Union List'\""
+        ar: "«راعم – القائمة العربية الموحدة / قُدّمت قائمة المرشحين باسم حزب \"قائمة الاتحاد العربي\"»"
+        ru: "«РААМ — Объединённый арабский список / Список кандидатов подан от имени партии „Список арабского союза“»"
+        es: "«Ra'am – Lista Árabe Unida / La lista de candidatos fue presentada en nombre del partido “Lista de la Unión Árabe”»"
+        fr: "« Ra'am – Liste arabe unie / La liste des candidats a été déposée au nom du parti “Liste de l’union arabe” »"
+      note:
+        he: "השמות הרשומים של הרשימה ושל המפלגה שלה"
+        en: "the registered names of the list and of its party"
+        ar: "الاسمان المسجّلان للقائمة ولحزبها"
+        ru: "зарегистрированные названия списка и его партии"
+        es: "los nombres registrados de la lista y de su partido"
+        fr: "les noms enregistrés de la liste et de son parti"
+      source: { url: "https://www.gov.il/he/pages/raam_list18", title: "רע\"ם - הרשימה הערבית המאוחדת — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
+
+  joint-list:
+    - dimension: camp
+      value: left
+      quote:
+        he: "\"מק\"י פועלת לכינונה של חזית שמאל יהודית-ערבית רחבה\""
+        en: "\"Maki works to build a broad Jewish-Arab front of the left\""
+        ar: "«يعمل ماكي على إقامة جبهة يسار يهودية-عربية واسعة»"
+        ru: "«МАКИ добивается создания широкого еврейско-арабского левого фронта»"
+        es: "«Maki trabaja por la creación de un amplio frente de izquierda judeoárabe»"
+        fr: "« Le Maki œuvre à la création d’un large front de gauche judéo-arabe »"
+      note: &maki
+        he: "דברי מק\"י, המפלגה הקומוניסטית הישראלית, שמטעמה מתמודד העומד בראש הרשימה — לא הצהרה של הרשימה המשותפת כולה"
+        en: "the words of Maki, the Israeli Communist Party, which the list's head is filed under — not a statement of the whole Joint List"
+        ar: "كلمات ماكي، الحزب الشيوعي الإسرائيلي، الذي يترشّح رئيس القائمة باسمه — وليست بيانًا للقائمة المشتركة كلها"
+        ru: "слова МАКИ, Коммунистической партии Израиля, от которой выдвинут глава списка, — не заявление всего Объединённого списка"
+        es: "palabras de Maki, el Partido Comunista Israelí, por el que se presenta el cabeza de lista; no es una declaración de toda la Lista Conjunta"
+        fr: "les mots du Maki, le Parti communiste israélien, au nom duquel se présente la tête de liste — pas une déclaration de toute la Liste commune"
+      source: &maki-principles { url: "https://maki.org.il/%D7%A2%D7%A7%D7%A8%D7%95%D7%A0%D7%95%D7%AA-%D7%99%D7%A1%D7%95%D7%93/", title: "עקרונות יסוד | המפלגה הקומוניסטית הישראלית", publisher: "מק\"י" }
+    - dimension: religion
+      value: liberal-on-religion
+      quote:
+        he: "\"(ח) להפרדת הדת מהמדינה, להבטחת חופש המצפון, לביטול כל צורות הכפייה הדתית\""
+        en: "\"(h) for the separation of religion from the state, for guaranteeing freedom of conscience, for abolishing all forms of religious coercion\""
+        ar: "«(ح) فصل الدين عن الدولة، وضمان حرية الضمير، وإلغاء جميع أشكال الإكراه الديني»"
+        ru: "«(з) за отделение религии от государства, за гарантию свободы совести, за отмену всех форм религиозного принуждения»"
+        es: "«(h) por la separación de la religión y el Estado, por garantizar la libertad de conciencia, por abolir toda forma de coerción religiosa»"
+        fr: "« (h) pour la séparation de la religion et de l’État, pour garantir la liberté de conscience, pour abolir toute forme de coercition religieuse »"
+      note: *maki
+      source: *maki-principles
+    - dimension: community
+      value: jewish-arab
+      quote:
+        he: "\"אנחנו מאמינים בשותפות יהודית-ערבית, בערכים דמוקרטיים, בשוויון ובקידום משא ומתן עם ההנהגה הפלסטינית.\""
+        en: "\"We believe in Jewish-Arab partnership, in democratic values, in equality and in advancing negotiations with the Palestinian leadership.\""
+        ar: "«نحن نؤمن بالشراكة اليهودية-العربية، وبالقيم الديمقراطية، وبالمساواة، وبدفع المفاوضات مع القيادة الفلسطينية.»"
+        ru: "«Мы верим в еврейско-арабское партнёрство, в демократические ценности, в равенство и в продвижение переговоров с палестинским руководством»."
+        es: "«Creemos en la alianza judeoárabe, en los valores democráticos, en la igualdad y en impulsar negociaciones con el liderazgo palestino.»"
+        fr: "« Nous croyons au partenariat judéo-arabe, aux valeurs démocratiques, à l’égalité et à l’avancée des négociations avec la direction palestinienne. »"
+      note:
+        he: "ד\"ר יוסף ג'בארין, העומד בראש הרשימה, כיו\"ר חד\"ש, מאי 2026"
+        en: "Dr. Yousef Jabareen, the list's head, as Hadash chair, May 2026"
+        ar: "د. يوسف جبارين، رئيس القائمة، بصفته رئيس الجبهة، أيار/مايو 2026"
+        ru: "д-р Юсеф Джабарин, глава списка, как председатель Хадаш, май 2026 года"
+        es: "Dr. Yousef Jabareen, cabeza de lista, como presidente de Hadash, mayo de 2026"
+        fr: "Dr Yousef Jabareen, tête de liste, en tant que président du Hadash, mai 2026"
+      source: { url: "https://www.mako.co.il/news-israel-elections/2026/Article-e81970c300e5e91027.htm", title: "\"נוח להם שהציבור הערבי שוקע בדם\": יו\"ר חד\"ש בריאיון", publisher: "N12" }
+    - dimension: economy
+      value: socialist
+      quote:
+        he: "\"המפלגה הקומוניסטית הישראלית נאבקת למען סוציאליזם – חברה הומנית ודמוקרטית של צדק חברתי.\""
+        en: "\"The Israeli Communist Party fights for socialism – a humane and democratic society of social justice.\""
+        ar: "«يناضل الحزب الشيوعي الإسرائيلي من أجل الاشتراكية – مجتمع إنساني وديمقراطي قائم على العدالة الاجتماعية.»"
+        ru: "«Коммунистическая партия Израиля борется за социализм — гуманное и демократическое общество социальной справедливости»."
+        es: "«El Partido Comunista Israelí lucha por el socialismo – una sociedad humana y democrática de justicia social.»"
+        fr: "« Le Parti communiste israélien lutte pour le socialisme – une société humaine et démocratique de justice sociale. »"
+      note: *maki
+      source: *maki-principles
+    - dimension: economy
+      value: communist
+      quote:
+        he: "\"1. גבארין יוסף / מטעם מפלגת המפלגה הקומוניסטית הישראלית\""
+        en: "\"1. Jabareen Yousef / on behalf of the party 'The Israeli Communist Party'\""
+        ar: "«1. جبارين يوسف / باسم حزب \"الحزب الشيوعي الإسرائيلي\"»"
+        ru: "«1. Джабарин Юсеф / от партии „Коммунистическая партия Израиля“»"
+        es: "«1. Jabareen Yousef / en nombre del partido “Partido Comunista Israelí”»"
+        fr: "« 1. Jabareen Yousef / au nom du parti “Parti communiste israélien” »"
+      note: *maki
+      source: { url: "https://www.gov.il/he/pages/hareshima-hameshutefet_list35", title: "הרשימה המשותפת — רשימת המועמדים", publisher: "ועדת הבחירות המרכזית לכנסת" }
+
+  amkha:
+    - dimension: camp
+      value: right
+      quote: &amkha-home
+        he: "\"הקמנו את מפלגת עמך ישראל - תנועה לאומית ימנית חדשה.\""
+        en: "\"We founded the Amkha Yisrael party – a new national right-wing movement.\""
+        ar: "«أسّسنا حزب عمخا يسرائيل – حركة قومية يمينية جديدة.»"
+        ru: "«Мы создали партию „Амха Исраэль“ — новое национальное правое движение»."
+        es: "«Fundamos el partido Amkha Yisrael – un nuevo movimiento nacional de derecha.»"
+        fr: "« Nous avons fondé le parti Amkha Israël – un nouveau mouvement national de droite. »"
+      source: &amkha-source { url: "https://amchaisrael.co.il/", title: "עמך ישראל - המפלגה בראשות עופר וינטר", publisher: "עמך ישראל" }
+    - dimension: national
+      value: national
+      quote: *amkha-home
+      source: *amkha-source
+
+  reservists:
+    - dimension: camp
+      value: right
+      quote: &reservists-qa
+        he: "\"האם זאת מפלגת ימין או שמאל? / אנו מפלגה ציונית, ימנית.\""
+        en: "\"Is this a right-wing or a left-wing party? / We are a Zionist, right-wing party.\""
+        ar: "«هل هذا حزب يمين أم يسار؟ / نحن حزب صهيوني يميني.»"
+        ru: "«Это правая или левая партия? / Мы сионистская, правая партия»."
+        es: "«¿Es un partido de derecha o de izquierda? / Somos un partido sionista, de derecha.»"
+        fr: "« Est-ce un parti de droite ou de gauche ? / Nous sommes un parti sioniste, de droite. »"
+      source: &reservists-about { url: "https://www.themiluimnikim.org.il/about/", title: "מי אנחנו - המילואימניקים (שאלות ותשובות)", publisher: "המילואימניקים" }
+    - dimension: national
+      value: zionist
+      quote: *reservists-qa
+      source: *reservists-about
+
+  haredi-public:
+    - dimension: religion
+      value: haredi
+      quote:
+        he: "\"מפלגת \"הציבור החרדי\" קמה כדי להיות בית פוליטי עבור כל יהודי חרדי, מכל חוג ועדה.\""
+        en: "\"The 'Haredi Public' party was founded to be a political home for every Haredi Jew, of every circle and community.\""
+        ar: "«قام حزب \"الجمهور الحريدي\" ليكون بيتًا سياسيًا لكل يهودي حريدي، من كل تيار وطائفة.»"
+        ru: "«Партия „Харедимная общественность“ создана, чтобы стать политическим домом для каждого харедимного еврея, из любого течения и любой общины»."
+        es: "«El partido “El Público Jaredí” nació para ser un hogar político para todo judío jaredí, de cada corriente y comunidad.»"
+        fr: "« Le parti “Le Public haredi” est né pour être un foyer politique pour chaque Juif haredi, de chaque courant et de chaque communauté. »"
+      source: { url: "https://hatzibur-haharedi.org/", title: "הפעם, לוקחים אחריות · הציבור החרדי (שאלות ותשובות)", publisher: "הציבור החרדי" }

@@ -251,7 +251,7 @@ If `git status` lists `data/knesset.db`, restore it as described in
 ## License of contributions
 
 By contributing, you agree that your code is released under the
-[MIT License](LICENSE) and the text you write in `content/` and `messages/` under
-[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), as the
+[AGPL-3.0-or-later](LICENSE) and the text you write in `content/` and `messages/` under
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), as the
 [README](README.md#license) describes. Only contribute what you have the right to
 share: quote briefly and link to the source instead of copying.

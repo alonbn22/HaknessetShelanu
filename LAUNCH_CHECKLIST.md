@@ -80,7 +80,7 @@ reviews), **owner** (the maintainer), **lawyer**.
 
 | | Item | Owner | Notes |
 |---|---|---|---|
-| ⬜ | LICENSE, README, CONTRIBUTING, Code of Conduct, SECURITY, PR template, CI | Claude | Written, waiting for the owner's review. This moves the code from AGPL-3.0 to MIT and the site's text from CC BY-SA 4.0 to CC BY 4.0; `package.json` still says `AGPL-3.0-or-later`. The Code of Conduct's contact is "the maintainers via GitHub" until there's an email |
+| ⬜ | LICENSE, README, CONTRIBUTING, Code of Conduct, SECURITY, PR template, CI | Claude | Written, waiting for the owner's review. The licenses stay as they were (owner, 27 Sep): code AGPL-3.0-or-later, the site's text CC BY-SA 4.0 (LICENSE, LICENSING.md). The Code of Conduct's contact is "the maintainers via GitHub" until there's an email |
 | ⬜ | Purge the old database copies from git history | owner, then Claude | 127 copies of the database take about 2.6 of the repository's 2.7 GiB. The purge rewrites every commit hash, so do it before the repo goes public |
 | ⬜ | Check commit author emails | owner | Every commit shows the address it was made with. If one shouldn't be public, fix it in the same history rewrite as the purge |
 | ⬜ | Make the repository public | owner | Then turn on private vulnerability reporting in the repository's security settings; SECURITY.md depends on it |

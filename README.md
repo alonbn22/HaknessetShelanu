@@ -1,8 +1,8 @@
 # הכנסת שלנו · Our Knesset
 
 [![CI](https://github.com/alonbn22/HaKnessetSheli/actions/workflows/ci.yml/badge.svg)](https://github.com/alonbn22/HaKnessetSheli/actions/workflows/ci.yml)
-[![Code: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
-[![Text: CC BY 4.0](https://img.shields.io/badge/text-CC%20BY%204.0-lightgrey.svg)](#license)
+[![Code: AGPL-3.0](https://img.shields.io/badge/code-AGPL--3.0-blue.svg)](LICENSE)
+[![Text: CC BY-SA 4.0](https://img.shields.io/badge/text-CC%20BY--SA%204.0-lightgrey.svg)](#license)
 
 <div dir="rtl" lang="he">
 
@@ -195,21 +195,24 @@ table or index declared in `src/db/schema.ts` first. See [AGENTS.md](AGENTS.md).
 | [data.gov.il](https://data.gov.il) (Ministry of Finance) | The state budget | data.gov.il's open-data terms |
 | The parties' own sites | Platforms, promises, logos | The parties' own; credited and linked on the site |
 | News outlets | Seat polls (from each outlet's own article) and leaders' statements | The outlets' own; credited and linked on the site |
-| Google Translate | Machine translation of Hebrew data text, labelled "automatic translation" | Google's terms; to be replaced before launch |
+| Translation of data text | Earlier machine translation (Google Translate's unofficial endpoint, no longer used at run time) and batches translated with AI assistance and spot-checked; labelled "automatic translation" | New text is translated in reviewed batches |
 
 The site's own `/sources` page lists its sources too, and each fact links to its
 source on the page where it appears.
 
 ## License
 
-- **Code:** [MIT](LICENSE).
+- **Code:** [AGPL-3.0-or-later](LICENSE). If you run a changed copy of the site
+  publicly, you must publish your changes under the same license, so copies of
+  the site stay open.
 - **The site's own text:** the editorial writing in `content/` and the interface
   strings in `messages/`, under
-  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Credit
-  "Our Knesset (הכנסת שלנו)" and link back.
+  [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Credit
+  "Our Knesset (הכנסת שלנו)", link back and share alike: some of it builds on
+  Wikipedia, whose license requires that. Details: [LICENSING.md](LICENSING.md).
 - **Everything from others keeps its own terms:** the data in `data/knesset.db`,
   photos, party logos (including `public/assets/logos/`), quotations and poll
-  figures (see the table above). The MIT and CC BY licenses don't cover them.
+  figures (see the table above). The AGPL and CC BY-SA licenses don't cover them.
 
 ## Contributing
 

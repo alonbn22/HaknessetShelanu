@@ -666,7 +666,35 @@
       "institutions": "Instituciones",
       "government": "Gobierno"
     },
-    "cta": "Encuentra listas por sus posiciones"
+    "cta": "Encuentra listas por sus posiciones",
+    "self": {
+      "group": "Cómo se describen a sí mismas (con sus propias palabras)",
+      "note": "Una etiqueta aparece solo donde la propia lista usa esas palabras; ninguna lista se define como «de centro» con sus propias palabras (comprobado el 27 de septiembre de 2026).",
+      "dimensions": {
+        "camp": "Derecha o izquierda",
+        "religion": "Religión",
+        "community": "Comunidad",
+        "economy": "Economía",
+        "national": "Identidad nacional"
+      },
+      "values": {
+        "right": "Derecha",
+        "left": "Izquierda",
+        "religious": "Religiosa",
+        "religious-zionist": "Sionista religiosa",
+        "haredi": "Jaredí (ultraortodoxa)",
+        "liberal-on-religion": "Contra la coerción religiosa",
+        "arab": "Árabe",
+        "jewish-arab": "Judeoárabe",
+        "sephardi": "Sefardí",
+        "free-market": "Libre mercado",
+        "social-democratic": "Socialdemócrata",
+        "socialist": "Socialista",
+        "communist": "Comunista",
+        "zionist": "Sionista",
+        "national": "Nacional"
+      }
+    }
   },
   "budget": {
     "title": "Presupuesto del Estado",

@@ -666,7 +666,35 @@
       "institutions": "Institutions",
       "government": "Gouvernement"
     },
-    "cta": "Trouver des listes selon leurs positions"
+    "cta": "Trouver des listes selon leurs positions",
+    "self": {
+      "group": "Comment elles se décrivent (avec leurs propres mots)",
+      "note": "Une étiquette n’apparaît que là où la liste emploie elle-même ces mots ; aucune liste ne se dit « du centre » avec ses propres mots (vérifié le 27 septembre 2026).",
+      "dimensions": {
+        "camp": "Droite ou gauche",
+        "religion": "Religion",
+        "community": "Communauté",
+        "economy": "Économie",
+        "national": "Identité nationale"
+      },
+      "values": {
+        "right": "Droite",
+        "left": "Gauche",
+        "religious": "Religieuse",
+        "religious-zionist": "Sioniste religieuse",
+        "haredi": "Haredi (ultra-orthodoxe)",
+        "liberal-on-religion": "Contre la coercition religieuse",
+        "arab": "Arabe",
+        "jewish-arab": "Judéo-arabe",
+        "sephardi": "Séfarade",
+        "free-market": "Libre marché",
+        "social-democratic": "Sociale-démocrate",
+        "socialist": "Socialiste",
+        "communist": "Communiste",
+        "zionist": "Sioniste",
+        "national": "Nationale"
+      }
+    }
   },
   "budget": {
     "title": "Budget de l’État",

@@ -8,17 +8,21 @@ import { Button } from "@/components/ui/Button";
 import { ToggleButton, ToggleGroup } from "@/components/ui/ToggleGroup";
 
 // Everything is localized on the server. A filter is one question with a few
-// answers (supports / opposes, or right / center / left); a list sits under an
-// answer only where its own words — platform, leader, Knesset vote — put it
-// there. Choices live in this component's state only: never stored, never in
-// the URL, never sent (tests/qa/privacy.test.ts keeps it that way).
+// answers (supports / opposes, or right / left); a list sits under an answer
+// only where its own words — platform, leader, Knesset vote, its own name or
+// site — put it there. Choices live in this component's state only: never
+// stored, never in the URL, never sent (tests/qa/privacy.test.ts keeps it that
+// way).
 export type Evidence = { quote: string; sources: { url: string; publisher: string; rtl: boolean }[] };
-export type FinderOption = { id: string; label: string; lists: Record<string, Evidence> };
-export type FinderFilter = { id: string; group: string; label: string; options: FinderOption[]; said: string[] };
-export type FinderGroup = { id: string; label: string };
+// `claim`: the line a match shows above its quote (default "answer: question").
+export type FinderOption = { id: string; label: string; lists: Record<string, Evidence>; claim?: string };
+// `overlap`: the answers can go together (Zionist and national), so a list
+// that gave another one doesn't differ — it just didn't say the one chosen.
+export type FinderFilter = { id: string; group: string; label: string; options: FinderOption[]; said: string[]; overlap?: boolean };
+export type FinderGroup = { id: string; label: string; note?: string };
 export type FinderList = { slug: string; name: string; href: string };
 
-type Outcome = { slug: string; claims: { filter: FinderFilter; option: FinderOption; ev: Evidence }[]; unsaid: FinderFilter[] };
+type Outcome = { slug: string; claims: { filter: FinderFilter; option: FinderOption; ev: Evidence }[]; unsaid: string[] };
 
 export function PartyFinder({ groups, filters, lists }: { groups: FinderGroup[]; filters: FinderFilter[]; lists: FinderList[] }) {
   const t = useTranslations("finder");
@@ -42,13 +46,11 @@ export function PartyFinder({ groups, filters, lists }: { groups: FinderGroup[];
       const out: Outcome = { slug: l.slug, claims: [], unsaid: [] };
       let mismatch = false;
       for (const f of active) {
-        if (!f.said.includes(l.slug)) {
-          out.unsaid.push(f);
-          continue;
-        }
-        const hit = f.options.find((o) => chosen[f.id].includes(o.id) && o.lists[l.slug]);
-        if (hit) out.claims.push({ filter: f, option: hit, ev: hit.lists[l.slug] });
-        else mismatch = true;
+        const picked = f.options.filter((o) => chosen[f.id].includes(o.id));
+        const hits = picked.filter((o) => o.lists[l.slug]);
+        if (hits.length) for (const o of hits) out.claims.push({ filter: f, option: o, ev: o.lists[l.slug] });
+        else if (f.said.includes(l.slug) && !f.overlap) mismatch = true;
+        else out.unsaid.push(f.overlap ? picked.map((o) => o.label).join(" / ") : f.label);
       }
       if (mismatch) differ++;
       else if (out.unsaid.length === 0) matches.push(out);
@@ -68,6 +70,7 @@ export function PartyFinder({ groups, filters, lists }: { groups: FinderGroup[];
             <h2 id={`g-${g.id}`} className="text-lg font-semibold">
               {g.label}
             </h2>
+            {g.note && <p className="max-w-prose text-sm text-muted">{g.note}</p>}
             <ul className="space-y-3">
               {fs.map((f) => (
                 <li key={f.id} className="space-y-1.5">
@@ -114,11 +117,9 @@ export function PartyFinder({ groups, filters, lists }: { groups: FinderGroup[];
                         </Link>
                         <ul className="space-y-2 text-sm">
                           {m.claims.map(({ filter, option, ev }) => (
-                            <li key={filter.id}>
-                              <p className="font-medium">
-                                {option.label}: {filter.label}
-                              </p>
-                              <p className="text-muted first-letter:uppercase">{ev.quote}</p>
+                            <li key={`${filter.id}/${option.id}`}>
+                              <p className="font-medium">{option.claim ?? `${option.label}: ${filter.label}`}</p>
+                              <p className="text-muted">{ev.quote}</p>
                               <p className="text-xs text-muted">
                                 {t("source")}:{" "}
                                 {ev.sources.map((s, i) => (
@@ -149,7 +150,7 @@ export function PartyFinder({ groups, filters, lists }: { groups: FinderGroup[];
                           <Link href={l.href} className="underline">
                             {l.name}
                           </Link>{" "}
-                          <span className="text-muted">— {t("didntSayOn", { items: p.unsaid.map((f) => f.label).join(" · ") })}</span>
+                          <span className="text-muted">— {t("didntSayOn", { items: p.unsaid.join(" · ") })}</span>
                         </li>
                       );
                     })}

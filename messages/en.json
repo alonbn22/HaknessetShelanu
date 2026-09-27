@@ -666,7 +666,35 @@
       "institutions": "Institutions",
       "government": "Government"
     },
-    "cta": "Find lists by their positions"
+    "cta": "Find lists by their positions",
+    "self": {
+      "group": "How they describe themselves (their own words)",
+      "note": "A label appears only where the list uses those words itself; no list calls itself “center” in its own words (checked 27 September 2026).",
+      "dimensions": {
+        "camp": "Right or left",
+        "religion": "Religion",
+        "community": "Community",
+        "economy": "Economy",
+        "national": "National identity"
+      },
+      "values": {
+        "right": "Right",
+        "left": "Left",
+        "religious": "Religious",
+        "religious-zionist": "Religious Zionist",
+        "haredi": "Haredi (ultra-Orthodox)",
+        "liberal-on-religion": "Against religious coercion",
+        "arab": "Arab",
+        "jewish-arab": "Jewish-Arab",
+        "sephardi": "Sephardi",
+        "free-market": "Free market",
+        "social-democratic": "Social democratic",
+        "socialist": "Socialist",
+        "communist": "Communist",
+        "zionist": "Zionist",
+        "national": "National"
+      }
+    }
   },
   "budget": {
     "title": "State Budget",

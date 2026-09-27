@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Agent worktrees (full copies of the repo) live under .claude/.
+    ".claude/**",
   ]),
   {
     // Sync scripts parse loosely-typed external API payloads.

@@ -7,7 +7,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 # House rules (hard-won — follow exactly)
 
 ## The committed database and the sync bot
-- `data/knesset.db` (~57MB) is **committed**, and a GitHub Action re-syncs and
+- `data/knesset.db` (~85MB, near GitHub's 100 MiB file limit) is **committed**, and a GitHub Action re-syncs and
   commits it every ~6h (currently **disabled** — re-enable with
   `gh workflow enable "Sync Knesset data"` for launch). Manual pushes race with
   it when enabled: always `git pull --rebase origin master` before pushing.
@@ -25,6 +25,8 @@ This version has breaking changes — APIs, conventions, and file structure may 
   matching schema.ts exactly, so an un-pushed DB self-heals on the next run.
   Query functions for new tables try/catch and return empty when the table
   doesn't exist yet.
+- Stop the dev server before `git restore data/knesset.db`: restoring the file
+  while a process has it open, or with a leftover `-wal`, can corrupt it.
 - Never delete `*.db-wal`/`*.db-shm` while any process has the DB open — that
   corrupts it. Use `npm run db:clean` (checks integrity) when nothing is running,
   e.g. after a pull swapped the DB file.
@@ -33,7 +35,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - **No Hebrew literals in `src/`** (a test enforces it) — use `\u` escapes for
   Hebrew ranges/strings in code; `messages/*.json` and `content/` may contain
   Hebrew freely.
-- Every UI string goes into **all four** `messages/{he,en,ar,ru}.json` with
+- Every UI string goes into **all six** `messages/{he,en,ar,ru,es,fr}.json` with
   identical key sets and identical ICU placeholders (a parity test enforces it).
   Hebrew is the source of truth.
 - Data text (vote titles, bill/committee names…) is NOT translated in the sync;
@@ -48,5 +50,5 @@ This version has breaking changes — APIs, conventions, and file structure may 
   the presumption of innocence applies. Neutral wording only.
 
 ## Gates (run before finishing any change)
-- `npm test` (259+), `npx tsc --noEmit`, `npm run lint`, `npm run build` — all
+- `npm test` (318+), `npx tsc --noEmit`, `npm run lint`, `npm run build` — all
   green, and `git status` must show no accidental `data/knesset.db` drift.

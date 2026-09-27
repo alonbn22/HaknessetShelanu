@@ -405,9 +405,9 @@ export const lobbyistClients = sqliteTable(
 
 // Universal, deduplicated translation cache: one row per unique Hebrew source
 // string, shared across ALL data (vote titles, law names, committees, budget
-// lines, …). Translated lazily on first view and cached forever. Replaces the
-// per-table name_en/ar/ru columns (no more 4 copies of every row). Adding a new
-// language = one ALTER ADD COLUMN; new data auto-translates on the fly.
+// lines, …). Filled by a translation batch (npm run warm); the site only reads
+// it. Replaces the per-table name_en/ar/ru columns (no more 4 copies of every
+// row). Adding a new language = one ALTER ADD COLUMN.
 export const translations = sqliteTable("translations", {
   sourceHe: text("source_he").primaryKey(),
   en: text("en"),

@@ -1,18 +1,16 @@
 // Unified data-translation layer: one dedup cache (`translations`) keyed by the
-// Hebrew source, shared across ALL data. Resolve from cache; translate misses
-// lazily in Next's after(). No per-table columns, no manual backfill.
-// Server-only (DB + network). Enumerated UI terms live in gov-terms.ts.
+// Hebrew source, shared across ALL data. Read-only: nothing is translated or
+// written at request time — a miss renders in Hebrew, marked as Hebrew, until a
+// translation batch is imported into the DB. No per-table columns.
+// Server-only (DB). Enumerated UI terms live in gov-terms.ts.
 
-import { after } from "next/server";
-import { and, inArray, isNotNull, sql } from "drizzle-orm";
+import { inArray } from "drizzle-orm";
 import { getDb, schema } from "@/db";
 import { govCommittee } from "./gov-terms";
-import { gtxTranslate } from "./gtx";
 
 const RTL = /[\u0590-\u06ff]/; // Hebrew or Arabic → render rtl
 const T = schema.translations;
 const COL = { en: T.en, ar: T.ar, ru: T.ru, es: T.es, fr: T.fr } as const;
-const FIELD = { en: "en", ar: "ar", ru: "ru", es: "es", fr: "fr" } as const;
 
 // `lang` is set only when the text is in neither the page's language nor Hebrew:
 // the English fallback below.
@@ -44,19 +42,18 @@ export function localizeData(
   for (const he of uniq) {
     const f = found.get(he);
     if (f?.tr) map.set(he, { text: f.tr, translated: true, rtl: RTL.test(f.tr) });
-    // Not in the page's language yet (it is queued): English reads for every
-    // other audience where Hebrew does not, and is marked as English.
+    // Not in the page's language yet: English reads for every other audience
+    // where Hebrew does not, and is marked as English.
     else if (f?.en) map.set(he, { text: f.en, translated: true, rtl: false, lang: "en" });
     else map.set(he, hebrew(he));
   }
   return map;
 }
 
-// Per-page convenience: build the cache for a page's Hebrew strings and queue
-// lazy translation of misses in after(). Returns the cache + a bound `loc(he)`.
+// Per-page convenience: build the cache for a page's Hebrew strings. Returns the
+// cache + a bound `loc(he)`.
 export function localizePage(heList: (string | null | undefined)[], locale: string) {
   const cache = localizeData(heList, locale);
-  if (locale !== "he") after(() => queueDataTranslations(heList, locale));
   const loc = (he: string | null | undefined) => resolveLocalized(cache, he);
   return { cache, loc };
 }
@@ -85,79 +82,4 @@ export function committeeLabel(
   const curated = govCommittee(key, locale);
   if (curated.text && !curated.rtl) return { text: curated.text, translated: true, rtl: false };
   return cache.get(key) ?? hebrew(key);
-}
-
-// ---- on-demand translation (called from after(), post-response) ----
-
-// The cache table must match src/db/schema.ts exactly (house rule). A DB that
-// predates a column (es/fr were added on 19 Sep 2026) heals itself here: the
-// CREATE covers a fresh file, the ALTERs an old one. Runs once per process.
-let ensured = false;
-export function ensureTranslationsTable(): void {
-  if (ensured) return;
-  const db = getDb();
-  db.run(
-    sql`CREATE TABLE IF NOT EXISTS translations (source_he text PRIMARY KEY, en text, ar text, ru text, es text, fr text)`,
-  );
-  const have = new Set(
-    (db.all(sql`PRAGMA table_info(translations)`) as { name: string }[]).map((c) => c.name),
-  );
-  for (const col of Object.keys(FIELD)) {
-    if (!have.has(col)) db.run(sql.raw(`ALTER TABLE translations ADD COLUMN ${col} text`));
-  }
-  ensured = true;
-}
-
-const MAX_PER_REQUEST = 100;
-// Gentle on the free endpoint: bursts of 8 got the IP throttled for hours.
-const CONCURRENCY = 2;
-const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
-
-const translateOne = (text: string, target: string) =>
-  gtxTranslate(text, { sl: "iw", tl: target, timeoutMs: 8000 });
-
-// Translate + cache the Hebrew strings shown on a page that lack the active
-// locale. Safe to call from after(); bounded; degrades silently on read-only FS.
-export async function queueDataTranslations(
-  heList: (string | null | undefined)[],
-  locale: string,
-): Promise<void> {
-  const col = COL[locale as keyof typeof COL];
-  const field = FIELD[locale as keyof typeof FIELD];
-  if (!col) return;
-  const uniq = [...new Set(heList.filter((s): s is string => !!s && s.trim() !== "").map((s) => s.trim()))];
-  if (uniq.length === 0) return;
-
-  const db = getDb();
-  try {
-    ensureTranslationsTable();
-    const have = new Set(
-      db
-        .select({ he: T.sourceHe })
-        .from(T)
-        .where(and(inArray(T.sourceHe, uniq), isNotNull(col)))
-        .all()
-        .map((r) => r.he),
-    );
-    const missing = uniq.filter((n) => !have.has(n)).slice(0, MAX_PER_REQUEST);
-    if (missing.length === 0) return;
-
-    let i = 0;
-    const worker = async () => {
-      while (i < missing.length) {
-        const src = missing[i++];
-        const tr = await translateOne(src, locale);
-        if (tr) {
-          db.insert(T)
-            .values({ sourceHe: src, [field]: tr })
-            .onConflictDoUpdate({ target: T.sourceHe, set: { [field]: tr } })
-            .run();
-        }
-        await sleep(300);
-      }
-    };
-    await Promise.all(Array.from({ length: Math.min(CONCURRENCY, missing.length) }, worker));
-  } catch {
-    /* read-only FS / transient — page already rendered with Hebrew fallback */
-  }
 }

@@ -55,6 +55,36 @@ function escapeLikePattern(term: string): string {
 function likeContains(col: AnyColumn | SQL, term: string): SQL {
   return sql`${col} like ${escapeLikePattern(term)} escape '\\'`;
 }
+// A Hebrew-text column's search predicate: it contains the raw query (Hebrew,
+// names, numbers), or it is exactly one of the query's Hebrew sources.
+function heMatch(col: AnyColumn | SQL, search: string, searchHe: string[] = []): SQL {
+  const raw = likeContains(col, search);
+  return searchHe.length ? or(raw, sql`${col} in ${searchHe}`)! : raw; // bound (?, ?, …)
+}
+
+// A non-Hebrew search query → the Hebrew texts it should find, from the site's
+// own translation cache: no network, the query never leaves the server. These
+// are the cached sources whose translation in the page's language (or the
+// English pivot) contains the query — the rows whose displayed text matches.
+// Hebrew queries, the Hebrew UI and bare numbers need none: the raw query
+// serves them.
+const TR = schema.translations;
+const TR_COL = { en: TR.en, ar: TR.ar, ru: TR.ru, es: TR.es, fr: TR.fr } as const;
+// ponytail: each source is one bound parameter, and /budget binds four lists,
+// under SQLite's 32,766. Past the cap (a one- or two-letter query), some matches
+// drop; use `IN (SELECT …)` on the cache if that ever matters.
+const MAX_HE_TERMS = 5000;
+export function hebrewSearchTerms(query: string, locale: string): string[] {
+  const col = TR_COL[locale as keyof typeof TR_COL];
+  if (!col || !query || isHebrew(query) || !/\p{L}/u.test(query)) return [];
+  return getDb()
+    .select({ he: TR.sourceHe })
+    .from(TR)
+    .where(or(likeContains(col, query), likeContains(TR.en, query)))
+    .limit(MAX_HE_TERMS)
+    .all()
+    .map((r) => r.he);
+}
 
 // Clamp a requested page into [1, pages] so an out-of-range ?page= returns the
 // LAST page's rows, not an empty screen that looks like "no matches". Returns the
@@ -728,19 +758,16 @@ export function getMemberRecentVotes(personId: number, limit = 10) {
 
 const VOTES_PAGE_SIZE = 25;
 
-// Vote-title search predicate for any language: match the Hebrew-translated query
-// against the always-present titleHe, plus the raw query (untranslated names/numbers).
-function titleSearchCondition(search: string, searchHe?: string) {
-  const terms = [likeContains(schema.votes.titleHe, searchHe || search)];
-  if (searchHe && searchHe !== search) terms.push(likeContains(schema.votes.titleHe, search));
-  return or(...terms)!;
+// Vote-title search predicate for any language, on the always-present titleHe.
+function titleSearchCondition(search: string, searchHe?: string[]) {
+  return heMatch(schema.votes.titleHe, search, searchHe);
 }
 
 // A vote is "close" when at least one side was recorded and the for/against
 // margin is within CLOSE_VOTE_MARGIN — where a handful of absent MKs swings it.
 export const CLOSE_VOTE_MARGIN = 5;
 
-export function getVotesPage(page: number, search?: string, searchHe?: string, closeOnly = false) {
+export function getVotesPage(page: number, search?: string, searchHe?: string[], closeOnly = false) {
   const db = getDb();
   const conditions = [eq(schema.votes.knessetNum, CURRENT_KNESSET)];
   if (search) {
@@ -785,7 +812,7 @@ const LAWS_PAGE_SIZE = 20;
 // raised (preliminary/first reading), final (second/third reading).
 export function getLawVotesPage(opts: {
   search?: string;
-  searchHe?: string; // query translated to Hebrew (matches the always-present titleHe)
+  searchHe?: string[]; // the query's Hebrew terms (hebrewSearchTerms)
   status?: LawStatus;
   page?: number;
   locale?: string;
@@ -1403,7 +1430,7 @@ const LAWBOOK_PAGE_SIZE = 30;
 
 export function getLawBookPage(opts: {
   search?: string;
-  searchHe?: string; // query translated to Hebrew (law-book names are Hebrew-only)
+  searchHe?: string[]; // the query's Hebrew terms (law-book names are Hebrew-only)
   basicOnly?: boolean;
   page?: number;
 }) {
@@ -1412,12 +1439,7 @@ export function getLawBookPage(opts: {
   const conditions = [sql`${schema.israelLaws.nameHe} IS NOT NULL AND ${schema.israelLaws.nameHe} != ''`];
   if (opts.basicOnly) conditions.push(eq(schema.israelLaws.isBasicLaw, true));
   if (opts.search) {
-    const he = opts.searchHe || opts.search;
-    conditions.push(
-      he !== opts.search
-        ? or(likeContains(schema.israelLaws.nameHe, he), likeContains(schema.israelLaws.nameHe, opts.search))!
-        : likeContains(schema.israelLaws.nameHe, opts.search),
-    );
+    conditions.push(heMatch(schema.israelLaws.nameHe, opts.search, opts.searchHe));
   }
   const where = and(...conditions);
   const total =
@@ -1537,7 +1559,7 @@ export function getBudgetSections(year?: number): BudgetSection[] {
 export function getBudgetLines(opts: {
   year?: number;
   search?: string;
-  searchHe?: string;
+  searchHe?: string[];
   section?: number;
   sort?: "amount" | "name" | "code";
   page?: number;
@@ -1550,17 +1572,16 @@ export function getBudgetLines(opts: {
   const conditions = [eq(schema.budgetLines.year, year)];
   if (opts.section != null) conditions.push(eq(schema.budgetLines.sectionCode, opts.section));
   if (opts.search) {
-    const terms: SQL[] = [];
-    for (const term of [opts.searchHe || opts.search, opts.search]) {
-      terms.push(
-        likeContains(schema.budgetLines.takanaNameHe, term),
-        likeContains(schema.budgetLines.programNameHe, term),
-        likeContains(schema.budgetLines.sectionNameHe, term),
-        likeContains(schema.budgetLines.areaNameHe, term),
-        likeContains(sql`CAST(${schema.budgetLines.takanaCode} AS TEXT)`, term),
-      );
-    }
-    conditions.push(or(...terms)!);
+    const [s, he] = [opts.search, opts.searchHe];
+    conditions.push(
+      or(
+        heMatch(schema.budgetLines.takanaNameHe, s, he),
+        heMatch(schema.budgetLines.programNameHe, s, he),
+        heMatch(schema.budgetLines.sectionNameHe, s, he),
+        heMatch(schema.budgetLines.areaNameHe, s, he),
+        likeContains(sql`CAST(${schema.budgetLines.takanaCode} AS TEXT)`, s),
+      )!,
+    );
   }
   const where = and(...conditions);
 
@@ -1617,7 +1638,7 @@ export type LobbyistSort = "name" | "firm" | "clients";
 
 export function getLobbyistsPage(opts: {
   search?: string;
-  searchHe?: string;
+  searchHe?: string[];
   page?: number;
   sort?: LobbyistSort;
 }) {
@@ -1626,16 +1647,14 @@ export function getLobbyistsPage(opts: {
 
   const conditions = [];
   if (opts.search) {
-    const terms: SQL[] = [];
-    for (const term of [opts.searchHe || opts.search, opts.search]) {
-      const pattern = escapeLikePattern(term);
-      terms.push(
-        likeContains(schema.lobbyists.fullName, term),
-        likeContains(schema.lobbyists.corporationName, term),
-        sql`EXISTS (SELECT 1 FROM lobbyist_clients lc WHERE lc.lobbyist_id = ${schema.lobbyists.id} AND lc.client_name LIKE ${pattern} ESCAPE '\\')`,
-      );
-    }
-    conditions.push(or(...terms)!);
+    const [s, he] = [opts.search, opts.searchHe];
+    conditions.push(
+      or(
+        heMatch(schema.lobbyists.fullName, s, he),
+        heMatch(schema.lobbyists.corporationName, s, he),
+        sql`EXISTS (SELECT 1 FROM lobbyist_clients lc WHERE lc.lobbyist_id = ${schema.lobbyists.id} AND ${heMatch(sql`lc.client_name`, s, he)})`,
+      )!,
+    );
   }
   const where = conditions.length ? and(...conditions) : undefined;
 
@@ -1963,10 +1982,10 @@ export function getSitemapEntityIds() {
   };
 }
 
-// Search across all entity types. `searchHe` (query translated to Hebrew) matches
-// the always-present Hebrew columns; names also match locale columns directly.
-// Each group capped at SEARCH_LIMIT.
-export function searchAll(query: string, searchHe: string, locale: string): SearchResults {
+// Search across all entity types. The query plus `searchHe` (its Hebrew terms,
+// hebrewSearchTerms) match the always-present Hebrew columns; names also match
+// locale columns directly. Each group capped at SEARCH_LIMIT.
+export function searchAll(query: string, searchHe: string[], locale: string): SearchResults {
   const db = getDb();
   const trimmed = query.trim();
   if (!trimmed) {
@@ -1993,13 +2012,8 @@ export function searchAll(query: string, searchHe: string, locale: string): Sear
     return rows;
   };
   const term = trimmed;
-  const termHe = (searchHe || trimmed).trim();
-  // Hebrew-text columns: match the translated query, plus the raw query when the
-  // translation changed it, so a bad translation can't hide verbatim matches.
-  const likeHe = (col: AnyColumn | SQL) =>
-    termHe !== term
-      ? or(likeContains(col, termHe), likeContains(col, term))!
-      : likeContains(col, termHe);
+  // Hebrew-text columns: the raw query (verbatim matches) or any Hebrew term.
+  const likeHe = (col: AnyColumn | SQL) => heMatch(col, term, searchHe);
 
   const factionIds = matchFactionIds(trimmed);
 
@@ -2016,7 +2030,7 @@ export function searchAll(query: string, searchHe: string, locale: string): Sear
         and(
           eq(schema.personPositions.knessetNum, CURRENT_KNESSET),
           or(
-            likeContains(sql`${schema.persons.firstNameHe} || ' ' || ${schema.persons.lastNameHe}`, termHe),
+            likeHe(sql`${schema.persons.firstNameHe} || ' ' || ${schema.persons.lastNameHe}`),
             likeContains(schema.persons.nameEn, term),
             likeContains(schema.persons.nameAr, term),
             likeContains(schema.persons.nameRu, term),
@@ -2047,7 +2061,7 @@ export function searchAll(query: string, searchHe: string, locale: string): Sear
         and(
           eq(schema.factions.isCurrent, true),
           or(
-            likeContains(schema.factions.nameHe, termHe),
+            likeHe(schema.factions.nameHe),
             likeContains(schema.factions.nameEn, term),
             likeContains(schema.factions.nameAr, term),
             likeContains(schema.factions.nameRu, term),

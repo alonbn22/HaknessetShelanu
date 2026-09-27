@@ -1,12 +1,13 @@
 // Pre-warm the unified translation cache so non-Hebrew locales ship fully
-// translated instead of lazily. Gathers every Hebrew free-text string the site
-// renders and translates the ones missing per locale (gtx). Safe to re-run.
+// translated: the site itself never translates (a miss shows in Hebrew, marked).
+// Gathers every Hebrew free-text string the site renders and translates the
+// ones missing per locale (gtx). Safe to re-run. Then `npm run db:clean`.
 //
 //   npm run warm            warm every locale (en, ar, ru, es, fr)
 //   npm run warm -- en      warm only en
 import { and, inArray, isNotNull, sql } from "drizzle-orm";
 import { getDb, schema } from "../../src/db";
-import { gtxTranslate } from "../../src/lib/gtx";
+import { gtxTranslate } from "./gtx";
 import { getElectionOutlook, getPolls } from "../../src/lib/content";
 
 const ALL_LOCALES = ["en", "ar", "ru", "es", "fr"] as const;
@@ -174,6 +175,11 @@ async function main() {
     (ALL_LOCALES as readonly string[]).includes(l),
   );
   const started = Date.now();
+  // This batch is the cache's only writer, so it self-heals the table (house
+  // rule: the same definition as src/db/schema.ts; ddl-parity.test.ts checks).
+  getDb().run(
+    sql`CREATE TABLE IF NOT EXISTS translations (source_he text PRIMARY KEY NOT NULL, en text, ar text, ru text, es text, fr text)`,
+  );
   const all = gatherSources();
   console.log(`Gathered ${all.length} distinct Hebrew strings; warming ${locales.join(", ")}`);
   for (const loc of locales) await warmLocale(loc, all);

@@ -1,9 +1,9 @@
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { GlobalSearch } from "@/components/GlobalSearch";
-import { searchAll } from "@/lib/queries";
-import { translateQueryToHebrew } from "@/lib/translate-query";
+import { hebrewSearchTerms, searchAll } from "@/lib/queries";
 import { localizePage } from "@/lib/i18n-data";
+import { queryParam } from "@/lib/params";
 import { safeHttpUrl } from "@/lib/text";
 import { getGlossary, partyText } from "@/lib/content";
 
@@ -16,15 +16,12 @@ export default async function SearchPage({
 }) {
   const t = await getTranslations();
   const locale = await getLocale();
-  // Same 200-char cap as translateQueryToHebrew — bounds the LIKE scans too.
-  const query = ((await searchParams).q ?? "").trim().slice(0, 200);
-  const searchHe = await translateQueryToHebrew(query, locale);
+  const query = queryParam((await searchParams).q);
 
-  const r = searchAll(query, searchHe, locale);
+  const r = searchAll(query, hebrewSearchTerms(query, locale), locale);
 
   // Glossary lives in editorial content, not the DB — filter it here.
   const ql = query.toLowerCase();
-  const qHe = (searchHe || query).toLowerCase();
   const glossary = query
     ? getGlossary()
         .filter((g) => {
@@ -32,14 +29,14 @@ export default async function SearchPage({
           const def = partyText(g.def, locale).toLowerCase();
           return (
             term.includes(ql) ||
-            g.term.he.toLowerCase().includes(qHe) ||
+            g.term.he.toLowerCase().includes(ql) ||
             def.includes(ql)
           );
         })
         .slice(0, 8)
     : [];
 
-  // Translate the Hebrew data text shown (vote/law/bill/committee names) on the fly.
+  // Localize the Hebrew data text shown (vote/law/bill/committee names).
   const dataHe = [
     ...r.votes.map((v) => v.titleHe),
     ...r.laws.map((l) => l.nameHe),

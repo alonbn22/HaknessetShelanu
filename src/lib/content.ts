@@ -378,7 +378,7 @@ export function getMemberRecord(personId: number): MemberRecord | null {
 }
 
 // The Hebrew claim strings a record renders — the caller passes these to
-// localizeData / queueDataTranslations before calling localizeMemberRecord.
+// localizeData before calling localizeMemberRecord.
 export function memberRecordHeStrings(record: MemberRecord | null): string[] {
   if (!record) return [];
   return record.claims.flatMap((c) =>
@@ -388,7 +388,7 @@ export function memberRecordHeStrings(record: MemberRecord | null): string[] {
 
 // Localize a record's claim text: curated locale text wins, else the unified
 // translation cache (so a he/en-only record still reaches ar/ru). Pure transform;
-// caller supplies the resolved cache and queues misses in after(). Kept beside
+// caller supplies the resolved cache. Kept beside
 // getMemberRecord so this legally-sensitive text handling is testable.
 export function localizeMemberRecord(
   record: MemberRecord | null,

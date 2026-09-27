@@ -3,10 +3,9 @@ import { Link } from "@/i18n/navigation";
 import { VoteCard } from "@/components/VoteCard";
 import { Pagination } from "@/components/Pagination";
 import { VoteSearch } from "./VoteSearch";
-import { getVotesPage, CLOSE_VOTE_MARGIN } from "@/lib/queries";
-import { translateQueryToHebrew } from "@/lib/translate-query";
+import { getVotesPage, hebrewSearchTerms, CLOSE_VOTE_MARGIN } from "@/lib/queries";
 import { localizePage } from "@/lib/i18n-data";
-import { pageParam } from "@/lib/params";
+import { pageParam, queryParam } from "@/lib/params";
 
 export const dynamic = "force-dynamic";
 
@@ -20,13 +19,13 @@ export default async function VotesPage({
   const params = await searchParams;
   const page = pageParam(params.page);
   const closeOnly = params.close === "1";
-  const searchHe = await translateQueryToHebrew(params.q, locale);
-  const { items, pages, page: curPage } = getVotesPage(page, params.q, searchHe, closeOnly);
+  const q = queryParam(params.q);
+  const { items, pages, page: curPage } = getVotesPage(page, q, hebrewSearchTerms(q, locale), closeOnly);
 
   const { loc: titleOf } = localizePage(items.map((v) => v.titleHe), locale);
 
   const query: Record<string, string> = {};
-  if (params.q) query.q = params.q;
+  if (q) query.q = q;
   if (closeOnly) query.close = "1";
 
   return (
@@ -36,7 +35,7 @@ export default async function VotesPage({
       {/* Filter: close votes (decided by a narrow margin — where attendance swung it). */}
       <div className="flex flex-wrap items-center gap-2 text-sm">
         <Link
-          href={closeOnly ? { pathname: "/votes", query: params.q ? { q: params.q } : {} } : { pathname: "/votes", query: { ...(params.q ? { q: params.q } : {}), close: "1" } }}
+          href={closeOnly ? { pathname: "/votes", query: q ? { q } : {} } : { pathname: "/votes", query: { ...(q ? { q } : {}), close: "1" } }}
           className={`rounded-full px-3 py-1 font-medium transition-colors ${
             closeOnly ? "bg-accent text-white" : "bg-black/5 text-muted hover:bg-black/10"
           }`}

@@ -6,6 +6,7 @@ import {
   getCurrentFactionsWithSeats,
   factionName,
 } from "@/lib/queries";
+import { queryParam } from "@/lib/params";
 
 export const dynamic = "force-dynamic";
 
@@ -28,7 +29,7 @@ export default async function MembersPage({
   const members = getCurrentMembers({
     factionId: Number.isNaN(factionId) ? undefined : factionId,
     bloc,
-    search: params.q,
+    search: queryParam(params.q),
   });
 
   return (

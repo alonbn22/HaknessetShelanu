@@ -89,7 +89,7 @@ test("searchAll finds a current member by their Hebrew name", () => {
         FROM persons p WHERE p.is_current = 1 LIMIT 1`,
   );
   assert.ok(person);
-  const r = searchAll(person!.name, person!.name, "he");
+  const r = searchAll(person!.name, [], "he");
   assert.ok(
     r.members.some((m) => m.id === person!.id),
     `member ${person!.id} not found for own name`,
@@ -97,7 +97,7 @@ test("searchAll finds a current member by their Hebrew name", () => {
 });
 
 test("searchAll returns empty groups for an empty query", () => {
-  const r = searchAll("", "", "he");
+  const r = searchAll("", [], "he");
   assert.equal(r.members.length, 0);
   assert.equal(r.votes.length, 0);
   assert.equal(r.bills.length, 0);

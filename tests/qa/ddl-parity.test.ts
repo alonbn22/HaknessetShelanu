@@ -17,6 +17,7 @@ const SYNC_DIR = path.join(process.cwd(), "scripts", "sync");
 const SYNC_FILES = [
   "committee-sessions.ts", "ministries.ts", "laws.ts",
   "votes.ts", "stats.ts", "budget.ts", "lobbyists.ts", "biography.ts",
+  "warm-translations.ts",
 ];
 
 // table name -> the drizzle schema object it must match.
@@ -34,6 +35,7 @@ const TABLES: Record<string, unknown> = {
   lobbyist_clients: schema.lobbyistClients,
   person_bio: schema.personBio,
   israel_laws: schema.israelLaws,
+  translations: schema.translations,
 };
 
 // Pull every `CREATE TABLE IF NOT EXISTS <name> ( ... )` out of the sync source,

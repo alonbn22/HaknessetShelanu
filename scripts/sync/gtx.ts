@@ -1,5 +1,6 @@
-// Shared client for the unofficial Google Translate ("gtx") endpoint (used by
-// i18n-data.ts and translate-query.ts). Server-only (network fetch).
+// Client for the unofficial Google Translate ("gtx") endpoint, used only by the
+// offline batch (warm-translations.ts). The site never calls Google: it lives
+// here, outside src/, and a test keeps src/ from importing it.
 
 // Nikud (Hebrew vowel points, U+0591–U+05C7): the endpoint sometimes returns
 // vocalized Hebrew but stored text is unvocalized, so strip before matching.

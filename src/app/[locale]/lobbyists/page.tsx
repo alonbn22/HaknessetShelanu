@@ -4,11 +4,10 @@ import { formatNumber } from "@/lib/format";
 import { Link } from "@/i18n/navigation";
 import { Pagination } from "@/components/Pagination";
 import { LobbyistSearch } from "./LobbyistSearch";
-import { getLobbyistStats, getLobbyistsPage, type LobbyistSort } from "@/lib/queries";
+import { getLobbyistStats, getLobbyistsPage, hebrewSearchTerms, type LobbyistSort } from "@/lib/queries";
 import { getForeignAid, partyText } from "@/lib/content";
-import { translateQueryToHebrew } from "@/lib/translate-query";
 import { localizePage, localizeData, resolveLocalized } from "@/lib/i18n-data";
-import { pageParam } from "@/lib/params";
+import { pageParam, queryParam } from "@/lib/params";
 
 export const dynamic = "force-dynamic";
 
@@ -27,11 +26,16 @@ export default async function LobbyistsPage({
     ? (params.sort as LobbyistSort)
     : "name";
   const stats = getLobbyistStats();
-  const searchHe = await translateQueryToHebrew(params.q, locale);
-  const { items, total, pages, page: curPage } = getLobbyistsPage({ search: params.q, searchHe, page, sort });
+  const q = queryParam(params.q);
+  const { items, total, pages, page: curPage } = getLobbyistsPage({
+    search: q,
+    searchHe: hebrewSearchTerms(q, locale),
+    page,
+    sort,
+  });
   // Link to a sort, preserving the search query (and resetting to page 1).
   const sortHref = (s: LobbyistSort) =>
-    `/lobbyists?${new URLSearchParams({ ...(params.q ? { q: params.q } : {}), sort: s })}`;
+    `/lobbyists?${new URLSearchParams({ ...(q ? { q } : {}), sort: s })}`;
 
   // Permit types, firms and clients are data text: the unified cache translates
   // them. People's names are never machine-translated — they show as registered.
@@ -45,7 +49,7 @@ export default async function LobbyistsPage({
 
   const nf = new Intl.NumberFormat(locale);
   const query: Record<string, string> = {
-    ...(params.q ? { q: params.q } : {}),
+    ...(q ? { q } : {}),
     ...(sort !== "name" ? { sort } : {}),
   };
   const foreignAid = getForeignAid();

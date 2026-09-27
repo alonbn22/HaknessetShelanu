@@ -1,10 +1,9 @@
 import { getTranslations, getLocale } from "next-intl/server";
 import { Pagination } from "@/components/Pagination";
 import { LawBookFilters } from "./LawBookFilters";
-import { getLawBookPage } from "@/lib/queries";
-import { translateQueryToHebrew } from "@/lib/translate-query";
+import { getLawBookPage, hebrewSearchTerms } from "@/lib/queries";
 import { localizePage } from "@/lib/i18n-data";
-import { pageParam } from "@/lib/params";
+import { pageParam, queryParam } from "@/lib/params";
 import { formatDate } from "@/lib/format";
 
 export const dynamic = "force-dynamic";
@@ -18,10 +17,10 @@ export default async function LawBookPage({
   const locale = await getLocale();
   const params = await searchParams;
   const page = pageParam(params.page);
-  const searchHe = await translateQueryToHebrew(params.q, locale);
+  const q = queryParam(params.q);
   const { items, total, pages, page: curPage } = getLawBookPage({
-    search: params.q,
-    searchHe,
+    search: q,
+    searchHe: hebrewSearchTerms(q, locale),
     basicOnly: params.basic === "1",
     page,
   });
@@ -29,7 +28,7 @@ export default async function LawBookPage({
   const { loc: nameOf } = localizePage(items.map((l) => l.nameHe), locale);
 
   const query: Record<string, string> = {};
-  if (params.q) query.q = params.q;
+  if (q) query.q = q;
   if (params.basic === "1") query.basic = "1";
 
   return (

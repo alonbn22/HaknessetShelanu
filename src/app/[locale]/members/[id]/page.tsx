@@ -140,8 +140,8 @@ export default async function MemberPage({
       ]
     : [];
 
-  // Resolve the page's free-text Hebrew from the unified cache; misses translate
-  // post-response (localizePage owns the after() queue).
+  // Resolve the page's free-text Hebrew from the unified cache (a miss shows in
+  // Hebrew).
   const dataHe = [
     ...bioParts,
     ...sponsoredBills.map((b) => b.nameHe),

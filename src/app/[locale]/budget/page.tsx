@@ -10,12 +10,12 @@ import {
   getBudgetDetailedYears,
   getBudgetTimeline,
   getCurrentKnessetBudget,
+  hebrewSearchTerms,
   type BudgetLine,
 } from "@/lib/queries";
 import { getBudgetOutlook, partyText } from "@/lib/content";
-import { translateQueryToHebrew } from "@/lib/translate-query";
 import { localizePage } from "@/lib/i18n-data";
-import { pageParam } from "@/lib/params";
+import { pageParam, queryParam } from "@/lib/params";
 import { localizedAttrs } from "@/lib/text";
 
 export const dynamic = "force-dynamic";
@@ -53,18 +53,18 @@ export default async function BudgetPage({
   const sort = (["amount", "name", "code"].includes(params.sort ?? "")
     ? params.sort
     : "amount") as SortKey;
-  const searchHe = await translateQueryToHebrew(params.q, locale);
+  const q = queryParam(params.q);
 
   const { items, total, pages, page: curPage } = getBudgetLines({
     year: year ?? undefined,
-    search: params.q,
-    searchHe,
+    search: q,
+    searchHe: hebrewSearchTerms(q, locale),
     section: sectionFilter != null && !Number.isNaN(sectionFilter) ? sectionFilter : undefined,
     sort,
     page,
   });
 
-  // Resolve Hebrew names via the unified cache; misses translate lazily after the response.
+  // Resolve Hebrew names via the unified cache; a miss shows in Hebrew.
   const shownNames = [
     ...sections.map((s) => s.nameHe),
     ...items.flatMap((l) => [l.takanaNameHe, l.programNameHe, l.sectionNameHe]),
@@ -85,7 +85,7 @@ export default async function BudgetPage({
   const maxTimeline = Math.max(...timeline.map((x) => x.totalThousands), 1);
 
   const query: Record<string, string> = {};
-  if (params.q) query.q = params.q;
+  if (q) query.q = q;
   if (params.section) query.section = params.section;
   if (sort !== "amount") query.sort = sort;
   if (params.year) query.year = params.year;

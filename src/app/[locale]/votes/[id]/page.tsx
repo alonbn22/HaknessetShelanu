@@ -55,8 +55,7 @@ export default async function VotePage({
   const bill = getBillForVote(vote);
   const sponsors = bill ? getBillSponsors(bill.id) : [];
 
-  // Translate the page's free-text Hebrew on the fly — one batched lookup, one
-  // post-response fill.
+  // Localize the page's free-text Hebrew — one batched cache lookup.
   const dataHe = [
     vote.titleHe,
     vote.itemName,

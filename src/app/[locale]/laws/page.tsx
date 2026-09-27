@@ -2,10 +2,9 @@ import { getTranslations, getLocale } from "next-intl/server";
 import { VoteCard } from "@/components/VoteCard";
 import { Pagination } from "@/components/Pagination";
 import { LawFilters } from "./LawFilters";
-import { getLawVotesPage, type LawStatus } from "@/lib/queries";
-import { translateQueryToHebrew } from "@/lib/translate-query";
+import { getLawVotesPage, hebrewSearchTerms, type LawStatus } from "@/lib/queries";
 import { localizePage } from "@/lib/i18n-data";
-import { pageParam } from "@/lib/params";
+import { pageParam, queryParam } from "@/lib/params";
 
 export const dynamic = "force-dynamic";
 
@@ -24,10 +23,10 @@ export default async function LawsPage({
     ? params.status
     : "all") as LawStatus;
 
-  const searchHe = await translateQueryToHebrew(params.q, locale);
+  const q = queryParam(params.q);
   const { items, total, pages, page: curPage } = getLawVotesPage({
-    search: params.q,
-    searchHe,
+    search: q,
+    searchHe: hebrewSearchTerms(q, locale),
     status,
     page,
     locale,
@@ -36,7 +35,7 @@ export default async function LawsPage({
   const { loc: titleOf } = localizePage(items.map((v) => v.titleHe), locale);
 
   const query: Record<string, string> = {};
-  if (params.q) query.q = params.q;
+  if (q) query.q = q;
   if (status !== "all") query.status = status;
 
   return (

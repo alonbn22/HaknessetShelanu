@@ -47,9 +47,8 @@ claims:
       - url: https://www.jewishvirtuallibrary.org/Idit-Silman
         title: Idit Silman
         publisher: Jewish Virtual Library
-  - kind: negative
-    category: controversy
-    status: settled
+  - kind: neutral
+    category: news
     title:
       he: פרישה מהקואליציה שהביאה לאובדן הרוב של ממשלת בנט-לפיד
       en: Coalition resignation that cost the Bennett-Lapid government its majority

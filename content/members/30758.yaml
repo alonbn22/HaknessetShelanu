@@ -36,7 +36,7 @@ claims:
         publisher: "Knesset"
   - kind: negative
     category: controversy
-    status: settled
+    status: ethics
     title:
       he: "השעיה על ידי ועדת האתיקה של הכנסת בעקבות התבטאות על מתקפת 7 באוקטובר"
       en: "Suspended by the Knesset Ethics Committee over remarks on the October 7 attack"

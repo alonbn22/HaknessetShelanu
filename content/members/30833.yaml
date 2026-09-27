@@ -56,7 +56,7 @@ claims:
         publisher: Wikipedia (Hebrew)
   - kind: negative
     category: controversy
-    status: settled
+    status: ethics
     title:
       he: ננזף וננקטו נגדו סנקציות בידי ועדת האתיקה של הכנסת
       en: Reprimanded and sanctioned by the Knesset Ethics Committee

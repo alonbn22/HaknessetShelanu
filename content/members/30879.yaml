@@ -53,7 +53,7 @@ claims:
         publisher: The Knesset
   - kind: negative
     category: controversy
-    status: settled
+    status: ethics
     title:
       he: החלטת ועדת האתיקה בנוגע למעורבותו בחקיקה בענף הלול
       en: Knesset Ethics Committee ruling on his role in poultry-sector legislation

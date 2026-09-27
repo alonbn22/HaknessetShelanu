@@ -129,7 +129,10 @@
       "overturned": "Annulation en appel",
       "settled": "Accord (transaction)",
       "closed": "Classement sans suite",
-      "ruled": "Jugement rendu"
+      "ruled": "Jugement rendu",
+      "ethics": "Décision de la commission d’éthique",
+      "nonparty": "Non partie à l’affaire",
+      "unconfirmed": "Non confirmé officiellement"
     },
     "bioTitle": "Biographie et parcours",
     "born": "Naissance",

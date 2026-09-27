@@ -50,9 +50,14 @@ the project to a lawsuit.
   one reputable source. The schema rejects a claim without one.
 - A legal matter that isn't final carries a `status`, and the presumption of
   innocence applies. The statuses are `ongoing`, `indicted`, `convicted`,
-  `acquitted`, `overturned`, `settled`, `closed` (a probe closed without charges,
-  which is not an acquittal) and `ruled` (a court's final ruling on the matter). A
-  test flags a negative claim that reads like a legal proceeding but has no status.
+  `acquitted`, `overturned`, `settled` (a plea deal or settlement, nothing else),
+  `closed` (a probe closed without charges, which is not an acquittal), `ruled` (a
+  court's final ruling on the matter), `ethics` (a Knesset Ethics Committee
+  decision), `nonparty` (a court's words about someone who was not a party to the
+  case) and `unconfirmed` (a proceeding the body said to be running it has not
+  confirmed). A political act, a party sanction or a public row is not a legal
+  matter: it carries no status. A test flags a negative claim that reads like a
+  legal proceeding but has no status.
 - Use neutral wording: say what happened and when, and let the source carry the
   weight. No adjectives that judge.
 - Items of kind `neutral` (a new role, a bill, a public stance) are dated news or

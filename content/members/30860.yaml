@@ -36,7 +36,7 @@ claims:
         publisher: "Wikipedia"
   - kind: negative
     category: controversy
-    status: settled
+    status: ethics
     title:
       he: "נזיפה וסנקציה של ועדת האתיקה של הכנסת (2023)"
       en: "Knesset Ethics Committee reprimand and sanction (2023)"

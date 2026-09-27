@@ -71,7 +71,7 @@ claims:
         publisher: "The Jerusalem Post"
   - kind: negative
     category: controversy
-    status: settled
+    status: ethics
     date: 2026-05-12
     title:
       he: "הערה ושלילת שכר לשלושה ימים מוועדת האתיקה בגין היעדרויות ממליאת הכנסת (2026)"

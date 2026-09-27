@@ -38,7 +38,7 @@ claims:
         publisher: "Wikipedia"
   - kind: negative
     category: controversy
-    status: settled
+    status: ethics
     date: 2016-06-20
     title:
       he: "קנס מוועדת האתיקה של הכנסת על היעדרויות ממליאת הכנסת (2016)"

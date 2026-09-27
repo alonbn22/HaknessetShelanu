@@ -68,7 +68,7 @@ claims:
         publisher: "Wikipedia (Hebrew)"
   - kind: negative
     category: controversy
-    status: settled
+    status: ethics
     title:
       he: "נזיפה חמורה והגבלת כלים פרלמנטריים מטעם ועדת האתיקה של הכנסת (2023)"
       en: "Severe reprimand and restriction of parliamentary tools by the Knesset Ethics Committee (2023)"

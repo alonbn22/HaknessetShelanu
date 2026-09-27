@@ -49,7 +49,7 @@ claims:
         publisher: The Jerusalem Post
   - kind: negative
     category: controversy
-    status: settled
+    status: ethics
     title:
       he: ניגוד עניינים בקידום חוק מח"ש - קביעת ועדת האתיקה
       en: Conflict of interest in advancing the Mahash bill - Ethics Committee finding
@@ -66,7 +66,7 @@ claims:
         publisher: Ynet
   - kind: negative
     category: controversy
-    status: settled
+    status: nonparty
     date: 2026-05-07
     title:
       he: ביקורת בית המשפט על תפקודו כחוקר בפרשת רונאל פישר

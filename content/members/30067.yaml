@@ -45,7 +45,7 @@ claims:
         publisher: Wikipedia
   - kind: negative
     category: controversy
-    status: settled
+    status: ethics
     title:
       he: השעיה על ידי ועדת האתיקה של הכנסת (נובמבר 2023)
       en: Suspended by the Knesset Ethics Committee (November 2023)

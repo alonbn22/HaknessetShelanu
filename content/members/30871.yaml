@@ -55,7 +55,7 @@ claims:
         publisher: "JNS"
   - kind: negative
     category: controversy
-    status: settled
+    status: ethics
     title:
       he: "נזיפה חמורה מוועדת האתיקה על התנהגותה בדיון ועדת החוקה (מרץ 2023)"
       en: "Severe reprimand from the Ethics Committee over her conduct at a Constitution Committee hearing (March 2023)"

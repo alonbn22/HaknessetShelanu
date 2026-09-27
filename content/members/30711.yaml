@@ -67,7 +67,6 @@ claims:
         publisher: Hebrew Wikipedia
   - kind: negative
     category: controversy
-    status: settled
     title:
       he: הודח מוועדת החוץ והביטחון לאחר הצבעה נגד הארכת צווי המילואים
       en: Removed from the Foreign Affairs and Defense Committee after voting against

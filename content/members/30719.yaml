@@ -47,7 +47,7 @@ claims:
         publisher: Wikipedia
   - kind: negative
     category: controversy
-    status: settled
+    status: ethics
     title:
       he: ועדת האתיקה של הכנסת השעתה אותו לשישה חודשים
       en: Knesset Ethics Committee suspended him for six months
@@ -82,7 +82,7 @@ claims:
         publisher: Haaretz
   - kind: negative
     category: controversy
-    status: settled
+    status: ethics
     title:
       he: השעיה נוספת של חודשיים על ידי ועדת האתיקה (יולי 2025)
       en: Further two-month suspension by the Ethics Committee (July 2025)

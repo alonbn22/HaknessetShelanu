@@ -71,7 +71,6 @@ claims:
         publisher: "BBC News"
   - kind: negative
     category: controversy
-    status: settled
     title:
       he: "ועדת הכנסת קראה לשיקלי להתנצל בעקבות הזמנת טומי רובינסון"
       en: "Knesset committee called on Chikli to apologize over Tommy Robinson invitation"

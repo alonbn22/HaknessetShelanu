@@ -53,7 +53,7 @@ claims:
         publisher: Wikipedia
   - kind: negative
     category: controversy
-    status: settled
+    status: ethics
     title:
       he: נזיפה מוועדת האתיקה של הכנסת על התבטאות (2016)
       en: Knesset Ethics Committee reprimand over remarks (2016)

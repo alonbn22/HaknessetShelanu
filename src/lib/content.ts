@@ -348,8 +348,16 @@ const claimSchema = z.object({
   // "closed": a probe closed without charges (not an acquittal — no charge was
   // ever tried); "ruled": a court gave a final ruling on the matter (an
   // annulled decision, a rejected petition) — not a plea deal or settlement.
+  // "settled" is a plea deal or settlement only. "ethics": a decision of the
+  // Knesset Ethics Committee (a parliamentary sanction or finding, not a court);
+  // "nonparty": a court's words about someone who was not a party to the case;
+  // "unconfirmed": a proceeding known only from statements or reports that the
+  // body said to be conducting it has not confirmed.
   status: z
-    .enum(["ongoing", "indicted", "convicted", "acquitted", "overturned", "settled", "closed", "ruled"])
+    .enum([
+      "ongoing", "indicted", "convicted", "acquitted", "overturned", "settled", "closed", "ruled",
+      "ethics", "nonparty", "unconfirmed",
+    ])
     .optional(),
   title: localizedText,
   description: localizedText.optional(),

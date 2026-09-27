@@ -70,7 +70,6 @@ claims:
         publisher: Wikipedia (Hebrew)
   - kind: negative
     category: controversy
-    status: settled
     title:
       he: הוחלף בשתי ועדות כנסת בעקבות הפרת משמעת קואליציונית
       en: Replaced on two Knesset committees following a breach of coalition

@@ -61,7 +61,7 @@ claims:
         publisher: Maariv
   - kind: negative
     category: controversy
-    status: settled
+    status: ethics
     date: "2026-05-12"
     title:
       he: נזיפה חמורה והרחקה מישיבות הכנסת בהחלטת ועדת האתיקה (מאי 2026)
@@ -78,7 +78,6 @@ claims:
         publisher: N12
   - kind: negative
     category: controversy
-    status: settled
     date: "2025-05-25"
     title:
       he: ההתבטאות "לשרוף את עזה" (2023) - ועדת האתיקה דחתה את הקובלנה

@@ -74,7 +74,6 @@ claims:
         publisher: "Wikipedia (Hebrew)"
   - kind: negative
     category: controversy
-    status: settled
     title:
       he: "הודח מתפקידיו בוועדות הכנסת לאחר שהצביע נגד חוק יסוד: לימוד תורה"
       en: "Removed from Knesset committee roles after voting against the Torah Study Basic Law"

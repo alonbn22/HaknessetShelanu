@@ -95,7 +95,7 @@ claims:
         publisher: "Wikipedia (Hebrew)"
   - kind: negative
     category: controversy
-    status: settled
+    status: ethics
     title:
       he: "נזיפה חמורה והגבלת כלים פרלמנטריים מוועדת האתיקה (מרץ 2023)"
       en: "Severe reprimand and restriction of parliamentary tools by the Ethics Committee (March 2023)"
@@ -112,7 +112,7 @@ claims:
         publisher: "Haaretz"
   - kind: negative
     category: controversy
-    status: settled
+    status: ethics
     title:
       he: "נזיפה מוועדת האתיקה על התבטאויות כלפי חברי כנסת (יוני 2025)"
       en: "Ethics Committee reprimand over remarks about fellow MKs (June 2025)"

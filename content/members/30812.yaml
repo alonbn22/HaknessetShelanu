@@ -53,7 +53,6 @@ claims:
         publisher: Knesset OData
   - kind: negative
     category: controversy
-    status: settled
     title:
       he: אוסטרליה ביטלה את אשרת הכניסה שלו והטילה איסור כניסה לשלוש שנים
       en: Australia cancelled his entry visa, with a three-year entry ban
@@ -79,7 +78,7 @@ claims:
         publisher: RNZ
   - kind: negative
     category: controversy
-    status: settled
+    status: ruled
     date: "2026-07-29"
     title:
       he: בית משפט השלום דחה את תביעת הדיבה שהגיש נגד גיא פלג וחדשות 12

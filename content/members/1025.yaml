@@ -65,7 +65,7 @@ claims:
         publisher: Wikipedia (Hebrew)
   - kind: negative
     category: controversy
-    status: settled
+    status: closed
     title:
       he: הפרת סגר הקורונה ביום כיפור 2020; היועץ המשפטי לא פתח בחקירה
       en: COVID-19 lockdown breach on Yom Kippur 2020; no criminal probe opened

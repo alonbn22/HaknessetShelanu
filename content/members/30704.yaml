@@ -53,9 +53,8 @@ claims:
       - url: "https://he.wikipedia.org/wiki/%D7%A9%D7%9C%D7%9E%D7%94_%D7%A7%D7%A8%D7%A2%D7%99"
         title: "שלמה קרעי"
         publisher: "Hebrew Wikipedia"
-  - kind: negative
-    category: controversy
-    status: settled
+  - kind: neutral
+    category: news
     title:
       he: "חתימה על צו לסגירת פעילות אל-ג'זירה בישראל"
       en: "Signed order shutting down Al Jazeera's operations in Israel"

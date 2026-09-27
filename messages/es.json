@@ -129,7 +129,10 @@
       "overturned": "Revocado en apelación",
       "settled": "Acuerdo",
       "closed": "Cerrado sin cargos",
-      "ruled": "Con sentencia"
+      "ruled": "Con sentencia",
+      "ethics": "Decisión de la Comisión de Ética",
+      "nonparty": "No es parte en el caso",
+      "unconfirmed": "Sin confirmación oficial"
     },
     "bioTitle": "Biografía y antecedentes",
     "born": "Nacimiento",

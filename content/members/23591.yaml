@@ -60,7 +60,6 @@ claims:
         publisher: Wikipedia
   - kind: negative
     category: controversy
-    status: settled
     date: "2021-10-12"
     title:
       he: "פרש ממרוץ ליו\"ר הסוכנות היהודית לאחר דבריו על גריסת תלונות אנונימיות בצה\"ל"

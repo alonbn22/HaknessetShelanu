@@ -129,7 +129,10 @@
       "overturned": "Overturned on appeal",
       "settled": "Settled",
       "closed": "Closed without charges",
-      "ruled": "Court ruled"
+      "ruled": "Court ruled",
+      "ethics": "Ethics Committee decision",
+      "nonparty": "Not a party to the case",
+      "unconfirmed": "Not officially confirmed"
     },
     "bioTitle": "Biography & background",
     "born": "Born",

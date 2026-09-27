@@ -1,0 +1,46 @@
+# Checks every pull request and every push to master: tests, types, lint and a
+# production build — the same gates CONTRIBUTING.md asks contributors to run.
+#
+# Security: a read-only token, and actions pinned to a commit SHA (the same pins
+# as sync-data.yml). Never switch the trigger to `pull_request_target`: it runs
+# with the base repository's token and secrets, and a fork's code would run with
+# them.
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    # A hung step would otherwise hold the check for GitHub's 6-hour default.
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          # Keep the token out of .git/config, where dependency scripts run by
+          # `npm ci` could read it.
+          persist-credentials: false
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 24
+          cache: npm
+
+      # `npm ci` only — the lockfile is authoritative.
+      - run: npm ci
+
+      # The database (data/knesset.db) is committed today, so the checkout above
+      # already has it. When it moves to a GitHub Release, fetch it here, before
+      # the tests (some of them read it):
+      # - run: npm run db:pull
+
+      - run: npm test
+      - run: npx tsc --noEmit
+      - run: npm run lint
+      - run: npm run build

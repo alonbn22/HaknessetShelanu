@@ -69,3 +69,16 @@ export function licenseUrl(license: string | null | undefined): string | null {
   const m = /^CC (BY|BY-SA) (\d\.\d)$/.exec(license ?? "");
   return m ? `https://creativecommons.org/licenses/${m[1].toLowerCase()}/${m[2]}/` : null;
 }
+
+// The same photo at a smaller Commons thumbnail width. Thumbnail paths end in
+// /thumb/…/<n>px-<file>; Wikimedia pre-renders only standard widths (250 is
+// one), so pass one of those. Only ever narrows: an original file (the stored
+// URL when the photo is smaller than the stored width) or a thumbnail already
+// that small is returned as is, since Commons refuses to upscale.
+export function commonsThumbUrl(url: string | null | undefined, width: number): string | null {
+  const u = canonicalCommonsUrl(url);
+  if (!u?.startsWith("https://upload.wikimedia.org/")) return u;
+  return u.replace(/(\/thumb\/.+\/)(\d+)px-([^/]+)$/, (m, dir, n, file) =>
+    Number(n) > width ? `${dir}${width}px-${file}` : m,
+  );
+}

@@ -90,6 +90,20 @@ test("safeHttpUrl only passes http(s) URLs", async () => {
   assert.equal(safeHttpUrl(undefined), null);
 });
 
+test("commonsThumbUrl narrows Commons thumbnails and stays on the CSP-allowed host", async () => {
+  const { commonsThumbUrl } = await import("../../src/lib/text");
+  const base = "https://upload.wikimedia.org/wikipedia/commons";
+  assert.equal(
+    commonsThumbUrl(`https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/A_%28b%29.jpg/500px-A_%28b%29.jpg?utm_source=x`, 250),
+    `${base}/thumb/0/06/A_%28b%29.jpg/250px-A_%28b%29.jpg`,
+  );
+  // Never widens (Commons won't upscale), and an original file stays as is.
+  assert.equal(commonsThumbUrl(`${base}/thumb/0/06/A.jpg/120px-A.jpg`, 250), `${base}/thumb/0/06/A.jpg/120px-A.jpg`);
+  assert.equal(commonsThumbUrl(`${base}/2/2c/A.jpg?utm_content=thumbnail_unscaled`, 250), `${base}/2/2c/A.jpg`);
+  assert.equal(commonsThumbUrl("https://example.org/thumb/x/500px-x.jpg", 250), "https://example.org/thumb/x/500px-x.jpg");
+  assert.equal(commonsThumbUrl(null, 250), null);
+});
+
 // Tailwind's font-weight utilities are just numbers; nothing checks that the
 // number is a weight the font actually ships. It once wasn't: the Heebo config
 // listed 300/400/500/700/800/900 while `font-semibold` (600) was the site's

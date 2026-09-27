@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import { getMemberRecord } from "../../src/lib/content";
+import { getMember } from "../../src/lib/queries";
 
 // Legal safeguard: every per-member claim — especially negative ones — must cite
 // at least one verifiable (https) source, and any non-final legal matter must
@@ -32,6 +33,13 @@ for (const id of ids) {
       for (const s of c.sources) {
         assert.ok(/^https:\/\//.test(s.url), `${id}: source not https: ${s.url}`);
         assert.ok(s.title, `${id}: source missing title`);
+        // The Knesset site numbers members by its own id, not the OData
+        // PersonID: a PersonID here opens an empty page or another member's.
+        const mk = s.url.match(/mk-personal-details\/(\d+)/);
+        if (mk) {
+          const site = getMember(id)?.mkSiteCode;
+          assert.equal(Number(mk[1]), site, `${id}: Knesset member link must use site id ${site}, not ${mk[1]}`);
+        }
       }
       assert.ok(c.title.he, `${id}: claim missing Hebrew title`);
       // Neutral items are dated news or roles — never an undated verdict-free

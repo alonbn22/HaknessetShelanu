@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- The flag, cropped square: white field, two blue stripes, and a Star of
+       David of two outlined triangles. Drawn at 24px or less, the star swaps
+       to heavier lines so it still reads as a star. favicon.ico (16/32/48) and
+       apple-icon.png (180) are renders of this file: 16px from the heavy star,
+       the rest from the light one. -->
+  <style>.s{display:none}@media (max-width:24px){.l{display:none}.s{display:inline}}</style>
+  <rect width="32" height="32" fill="#fff"/>
+  <path fill="#0038b8" d="M0 2h32v4H0zM0 26h32v4H0z"/>
+  <g fill="none" stroke="#0038b8">
+    <path class="l" stroke-width="1.6" d="M16 8.6L22.409 19.7H9.591ZM16 23.4L9.591 12.3H22.409Z"/>
+    <path class="s" stroke-width="2.6" d="M16 9.6L21.543 19.2H10.457ZM16 22.4L10.457 12.8H21.543Z"/>
+  </g>
+</svg>

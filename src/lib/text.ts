@@ -9,6 +9,12 @@ export function isHebrew(s: string | null | undefined): boolean {
   return s != null && HEBREW.test(s);
 }
 
+// A source's own title, for its link tooltip — left out on a non-Hebrew page
+// when it is Hebrew (the visible credit already names the publisher).
+export function sourceTitle(title: string, locale: string): string | undefined {
+  return locale === "he" || !isHebrew(title) ? title : undefined;
+}
+
 // Spreadable dir/lang props for text that may be untranslated Hebrew:
 //   <span {...rtlAttrs(name)}>{name}</span>
 export function rtlAttrs(s: string | null | undefined): { dir?: "rtl"; lang?: "he" } {

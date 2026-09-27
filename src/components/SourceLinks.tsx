@@ -1,6 +1,6 @@
 import { useLocale } from "next-intl";
 import { publisherName } from "@/lib/content";
-import { rtlAttrs } from "@/lib/text";
+import { rtlAttrs, sourceTitle } from "@/lib/text";
 
 export type SourceRef = { url: string; title: string; publisher?: string };
 
@@ -37,7 +37,7 @@ export function SourceLinks({
               href={s.url}
               target="_blank"
               rel="noopener noreferrer"
-              title={s.title}
+              title={sourceTitle(s.title, locale)}
               aria-label={run ? `${name(s)} ${pos + 1}` : undefined}
               {...rtlAttrs(text)}
             >

@@ -16,7 +16,7 @@ import {
   publisherName,
 } from "@/lib/content";
 import { formatDate } from "@/lib/format";
-import { rtlAttrs, localizedAttrs } from "@/lib/text";
+import { rtlAttrs, localizedAttrs, sourceTitle } from "@/lib/text";
 import { pollOfPolls, trendSeries, AVERAGE_WINDOW_DAYS } from "@/lib/polls";
 import { Card } from "@/components/ui/Card";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -44,7 +44,7 @@ function SourceLink({ poll, label }: { poll: Poll; label: string }) {
       {poll.sources.map((s, i) => (
         <span key={s.url}>
           {i > 0 && " · "}
-          <a className="underline hover:text-accent-ink" href={s.url} target="_blank" rel="noopener noreferrer" title={s.title} {...rtlAttrs(publisherName(s.publisher, locale) ?? label)}>
+          <a className="underline hover:text-accent-ink" href={s.url} target="_blank" rel="noopener noreferrer" title={sourceTitle(s.title, locale)} {...rtlAttrs(publisherName(s.publisher, locale) ?? label)}>
             {publisherName(s.publisher, locale) ?? label}
           </a>
         </span>

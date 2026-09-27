@@ -5,7 +5,7 @@ import { rtlLocales } from "@/i18n/routing";
 import { getFactionMeta, getQuizFile, getRunningLists, listName, partyText, partyTextAttrs, type QuizStance, publisherName } from "@/lib/content";
 import { formatDate } from "@/lib/format";
 import { cx } from "@/lib/cx";
-import { rtlAttrs } from "@/lib/text";
+import { rtlAttrs, sourceTitle } from "@/lib/text";
 import { Card } from "@/components/ui/Card";
 import { TableFrame } from "@/components/ui/TableFrame";
 import { ToggleGroup } from "@/components/ui/ToggleGroup";
@@ -59,7 +59,7 @@ export default async function PositionsPage({ searchParams }: { searchParams: Pr
         href={s.source.url}
         target="_blank"
         rel="noopener noreferrer"
-        title={`${basisOf(s)} · ${s.source.title}`}
+        title={`${basisOf(s)} · ${sourceTitle(s.source.title, locale) ?? publisherName(s.source.publisher, locale) ?? ""}`}
         className={cx("inline-block rounded-chip px-1.5 py-0.5 text-xs font-medium underline underline-offset-2", CELL[s.value].cls)}
       >
         {short(s)}

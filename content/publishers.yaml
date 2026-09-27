@@ -45,7 +45,7 @@ publishers:
   - { key: "זמן ישראל", en: "Zman Yisrael", ar: "زمان يسرائيل", ru: "«Зман Исраэль»", es: "Zman Yisrael", fr: "Zman Yisrael" }
   - { key: "חד\"ש", en: "Hadash", ar: "الجبهة", ru: "Хадаш", es: "Hadash", fr: "Hadash" }
   - { key: "חדשות 13", en: "Channel 13", ar: "القناة 13", ru: "13-й канал", es: "Canal 13", fr: "Chaîne 13" }
-  - { key: "חוק-יסוד: הממשלה (הכנסת)", en: "Basic Law: The Government (the Knesset)", ar: "قانون أساس: الحكومة (الكنيست)", ru: "Основной закон: Правительство (Кнессет)", es: "Ley Básica: El Gobierno (la Knéset)", fr: "Loi fondamentale : le Gouvernement (la Knesset)" }
+  - { key: "חוק-יסוד: הממשלה (הכנסת)", en: "Basic Law: The Government (the Knesset)", ar: "قانون أساس: الحكومة (الكنيست)", ru: "Основной закон: Правительство (Кнессет)", es: "Ley Fundamental: El Gobierno (la Knéset)", fr: "Loi fondamentale : le Gouvernement (la Knesset)" }
   - { key: "חרדים10", en: "Haredim10", ar: "حريديم10", ru: "Haredim10", es: "Haredim10", fr: "Haredim10" }
   - { key: "ישר!", en: "Yashar!", ar: "ياشار!", ru: "Яшар!", es: "¡Yashar!", fr: "Yashar!" }
   - { key: "ישראל ביתנו", en: "Yisrael Beiteinu", ar: "إسرائيل بيتنا", ru: "Наш дом Израиль", es: "Yisrael Beiteinu", fr: "Israël Beiteinou" }

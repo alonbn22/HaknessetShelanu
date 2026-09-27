@@ -91,10 +91,11 @@ licences, 13 factions with real brand colours (`content/factions.yaml`), 7,448
 plenum votes with per-member roll calls, committee agendas at ~96% coverage,
 curated member records where every item cites a source
 (`content/members/*`), election key dates with sources
-(`content/election.yaml`). Assets: `public/assets/knesset-holyland.jpg` (CC
-BY-SA 4.0, credited), `public/assets/flag-fill.png`, per-party emblems under
-`public/assets/party/`. No testimonials, press, or usage figures exist; do not
-invent any.
+(`content/election.yaml`). Assets: per-party emblems under
+`public/assets/party/` and running lists' logos under `public/assets/logos/`
+(each credited in `content/election.yaml`); the flag inside the wordmark is
+inline SVG in `.wordmark` (`src/app/globals.css`), not an image file. No
+testimonials, press, or usage figures exist; do not invent any.
 
 ## Product Principles
 

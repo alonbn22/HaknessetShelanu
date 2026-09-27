@@ -5,11 +5,28 @@ import {
   getMinisters,
   getAttendanceTable,
   getParticipationLeaderboard,
+  getSeatTurnover,
+  getLastSyncDate,
 } from "../../src/lib/queries";
 
 test("dashboard reports exactly 120 sitting MKs", () => {
   const { mks } = getDashboardStats();
   assert.equal(mks, 120, "the Knesset always has 120 sitting members");
+});
+
+test("seat turnover adds up and agrees with the ministers page", () => {
+  const t = getSeatTurnover();
+  assert.equal(t.sitting, getDashboardStats().mks);
+  assert.equal(t.served, t.sitting + t.departed);
+  // The Norwegian-Law count is the ministers shown with the "left the Knesset" badge.
+  assert.equal(t.norwegian, getMinisters().filter((m) => !m.isSitting).length);
+});
+
+test("sync dates carry their zone, so they format to the right Israeli hour", () => {
+  for (const table of ["members", "KNS_PlenumVote", undefined]) {
+    const at = getLastSyncDate(table);
+    assert.ok(at && /(Z|[+-]\d\d:?\d\d)$/.test(at) && !Number.isNaN(Date.parse(at)), `${table}: ${at}`);
+  }
 });
 
 test("minister count matches the ministers list and is plausible", () => {

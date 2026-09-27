@@ -52,7 +52,10 @@ export default async function HomePage() {
   const leaders = getParticipationLeaderboard("top", 5);
   const laggards = getParticipationLeaderboard("bottom", 5);
   const activeLegislators = getMostActiveLegislators(5);
-  const lastSync = getLastSyncDate();
+  // The hall shows members and factions; the findings below come from votes and
+  // bills, which sync separately — each says the date of its own data.
+  const lastSync = getLastSyncDate("members");
+  const votesSync = getLastSyncDate("KNS_PlenumVote");
 
   const upcoming = getUpcomingMeetings(new Date().toISOString(), 7, 6);
   const upHe = upcoming.flatMap((m) => [m.committeeNameHe, m.typeDesc, m.location]);
@@ -98,7 +101,9 @@ export default async function HomePage() {
 
   const arrow = rtlLocales.has(locale) ? "←" : "→";
   const asOf = lastSync ? formatDateTime(lastSync, locale) : null;
-  const figuresSource = asOf ? t("home.figuresSource", { date: asOf }) : t("footer.dataSource");
+  const figuresSource = votesSync
+    ? t("home.figuresSource", { date: formatDateTime(votesSync, locale) })
+    : t("footer.dataSource");
   const rowLink = "flex items-center gap-3 py-2.5 hover:bg-surface-hover -mx-2 px-2 rounded-chip";
 
   return (
@@ -212,7 +217,11 @@ export default async function HomePage() {
             )}
           </div>
 
-          {asOf && <p className="text-xs text-muted">{t("footer.lastSync", { date: asOf })}</p>}
+          {lastSync && votesSync && (
+            <p className="text-xs text-muted">
+              {t("footer.lastSync", { members: formatDate(lastSync, locale), votes: formatDate(votesSync, locale) })}
+            </p>
+          )}
         </section>
       </section>
 

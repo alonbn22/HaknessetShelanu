@@ -1792,6 +1792,42 @@ export type Minister = Person & {
   isSitting: boolean; // still holds their Knesset seat (didn't invoke Norwegian Law)
 };
 
+// Everyone who has held a seat in the current Knesset: how many sit today,
+// how many left, and how many of those who left now serve in the government.
+// ponytail: "left and in government" stands in for "resigned under the
+// Norwegian Law", as the ministers page's badge already does; a minister
+// appointed from outside after resigning outright would be miscounted.
+export function getSeatTurnover(): { served: number; sitting: number; departed: number; norwegian: number } {
+  const rows = getDb()
+    .select({
+      personId: schema.personPositions.personId,
+      positionId: schema.personPositions.positionId,
+      isCurrent: schema.personPositions.isCurrent,
+      ministry: schema.personPositions.govMinistryNameHe,
+    })
+    .from(schema.personPositions)
+    .where(
+      and(
+        eq(schema.personPositions.knessetNum, CURRENT_KNESSET),
+        or(inArray(schema.personPositions.positionId, MK_POSITION_IDS), isNotNull(schema.personPositions.govMinistryNameHe)),
+      ),
+    )
+    .all();
+  const seated = new Map<number, boolean>(); // person → sits today
+  const inGovernment = new Set<number>();
+  for (const r of rows) {
+    if (MK_POSITION_IDS.includes(r.positionId)) seated.set(r.personId, (seated.get(r.personId) ?? false) || r.isCurrent);
+    if (r.ministry && r.isCurrent) inGovernment.add(r.personId);
+  }
+  const departed = [...seated].filter(([, sits]) => !sits).map(([id]) => id);
+  return {
+    served: seated.size,
+    sitting: seated.size - departed.length,
+    departed: departed.length,
+    norwegian: departed.filter((id) => inGovernment.has(id)).length,
+  };
+}
+
 // All current ministers and deputy ministers in the sitting government, with
 // their ministries and faction. Sorted by Hebrew last name.
 export function getMinisters(): Minister[] {
@@ -1875,15 +1911,22 @@ export function getLatestVotes(limit = 6): Vote[] {
     .all();
 }
 
-export function getLastSyncDate(): string | null {
+// When the sync last wrote one dataset ("members", "KNS_PlenumVote"), or any
+// dataset when no table is given. Datasets sync separately, so a page states
+// the date of the data it shows. Returned as a UTC instant: SQLite's
+// datetime('now') stores UTC with no zone, which new Date() reads as local time.
+export function getLastSyncDate(table?: string): string | null {
   try {
     const row = getDb()
       .select()
       .from(schema.syncState)
+      .where(table ? eq(schema.syncState.table, table) : undefined)
       .orderBy(desc(schema.syncState.lastSyncedAt))
       .limit(1)
       .get();
-    return row?.lastSyncedAt ?? null;
+    const at = row?.lastSyncedAt;
+    if (!at) return null;
+    return /[zZ]$|[+-]\d\d:?\d\d$/.test(at) ? at : `${at.replace(" ", "T")}Z`;
   } catch {
     return null; // DB not initialized yet
   }

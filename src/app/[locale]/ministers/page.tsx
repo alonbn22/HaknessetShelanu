@@ -1,7 +1,7 @@
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { MemberAvatar } from "@/components/MemberCard";
-import { getMinisters, getMinistryQuestionStats, personName, factionName } from "@/lib/queries";
+import { getMinisters, getMinistryQuestionStats, getSeatTurnover, personName, factionName } from "@/lib/queries";
 import { govDuty, govMinistry } from "@/lib/gov-terms";
 import { rtlAttrs } from "@/lib/text";
 
@@ -13,6 +13,7 @@ export default async function MinistersPage() {
   const ministers = getMinisters();
   // Per-ministry question accountability (empty until gov_ministries is synced).
   const qaStats = getMinistryQuestionStats();
+  const turnover = getSeatTurnover();
 
   return (
     <div className="space-y-6">
@@ -21,9 +22,11 @@ export default async function MinistersPage() {
         <p className="text-muted">{t("subtitle", { count: ministers.length })}</p>
       </div>
 
-      {/* Explainer: why the government list and the 120 seats don't line up. */}
+      {/* Explainer: why the government list and the 120 seats don't line up,
+          with the counts from the Knesset's own position records. */}
       <div className="rounded-xl border border-accent/20 bg-accent/5 p-4 text-sm leading-relaxed">
         {t("norwegianNote")}
+        {turnover.departed > 0 && <> {t("seatTurnover", turnover)}</>}
       </div>
 
       <div className="grid gap-3 sm:grid-cols-2">

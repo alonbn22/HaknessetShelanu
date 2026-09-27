@@ -26,7 +26,7 @@ export default async function AttendancePage() {
     <div className="space-y-6">
       <h1 className="text-3xl font-bold">{t("home.participation")}</h1>
       <p className="text-sm text-muted">{t("attendance.note")}</p>
-      {/* All attendance statistics reflect only currently-serving members. */}
+      {/* This list is serving members only; a former member's own page still shows their figures. */}
       <div className="rounded-xl border border-accent/20 bg-accent/5 p-4 text-sm leading-relaxed">
         {t("attendance.servingOnlyNote")}
       </div>

@@ -894,7 +894,20 @@
     "trendSummary": "{list}: entre {min} y {max} escaños en {n} encuestas",
     "trendAverage": "promedio: {mean}",
     "trendHouseNote": "Cada punto es una encuesta (pase el cursor para ver quién la hizo y cuándo). Una línea fina une las encuestas del mismo instituto — así que una distancia constante entre líneas es una diferencia de método, no un cambio real.",
-    "belowAll": "por debajo del umbral en las {n} encuestas"
+    "belowAll": "por debajo del umbral en las {n} encuestas",
+    "filingIntro": "Bajo cada encuesta: los datos que la ley exige publicar con una encuesta, tomados del informe del encuestador ante la Comisión Electoral Central. Las cifras de la tabla siguen siendo las que publicó el artículo.",
+    "filingSummary": "Del informe del encuestador ante la Comisión Electoral Central",
+    "filingCommissioned": "Encargada por",
+    "filingConducted": "Realizada por",
+    "filingPopulation": "Población",
+    "filingAsked": "Invitados a participar",
+    "filingAnswered": "Respondieron",
+    "filingMoe": "Margen de error",
+    "filingQuestion": "Pregunta",
+    "filingQuoted": "«{q}»",
+    "filingLink": "Informe n.º {ref} (PDF)",
+    "filingRefiled": "Presentado de nuevo: n.º {ref} (PDF)",
+    "filingNone": "No se encontró ningún informe de esta encuesta en el sitio de la Comisión Electoral Central a fecha de {date}"
   },
   "positions": {
     "title": "Qué dicen las listas — postura por postura",

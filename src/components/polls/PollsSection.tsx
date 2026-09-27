@@ -1,6 +1,6 @@
 import { localizePage } from "@/lib/i18n-data";
-import { useLocale } from "next-intl";
-import { Fragment } from "react";
+import { useLocale, useTranslations } from "next-intl";
+import { Fragment, type ReactNode } from "react";
 import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import {
@@ -12,10 +12,11 @@ import {
   partyText,
   partyTextAttrs,
   type ElectionParty,
+  type LocalizedText,
   type Poll,
   publisherName,
 } from "@/lib/content";
-import { formatDate } from "@/lib/format";
+import { formatDate, formatNumber } from "@/lib/format";
 import { rtlAttrs, localizedAttrs, sourceTitle } from "@/lib/text";
 import { pollOfPolls, trendSeries, AVERAGE_WINDOW_DAYS } from "@/lib/polls";
 import { PollBlackoutNotice } from "@/components/polls/PollBlackoutNotice";
@@ -51,6 +52,63 @@ function SourceLink({ poll, label }: { poll: Poll; label: string }) {
         </span>
       ))}
     </>
+  );
+}
+
+// The poll's disclosure as its pollster filed it with the Central Elections
+// Committee — kept apart from the article's figures in the row above, which it
+// never replaces. A poll published by `checkedAt` without a filing says so.
+function FilingDisclosure({ poll, checkedAt }: { poll: Poll; checkedAt?: string }) {
+  const t = useTranslations("polls");
+  const locale = useLocale();
+  const f = poll.filing;
+  if (!f) {
+    return checkedAt && poll.published <= checkedAt ? (
+      <p className="text-xs text-muted">{t("filingNone", { date: formatDate(checkedAt, locale) })}</p>
+    ) : null;
+  }
+  type Row = { label: string; value: ReactNode; attrs?: ReturnType<typeof partyTextAttrs> };
+  const loc = (label: string, s: LocalizedText | undefined, wrap = (v: string): ReactNode => v): Row | null =>
+    s ? { label, value: wrap(partyText(s, locale)), attrs: partyTextAttrs(s, locale) } : null;
+  const plain = (label: string, value: string | undefined): Row | null => (value ? { label, value } : null);
+  const rows = [
+    loc(t("filingCommissioned"), f.commissionedBy),
+    loc(t("filingConducted"), f.conductedBy),
+    loc(t("filingPopulation"), f.population),
+    plain(t("filingAsked"), f.asked?.toLocaleString(locale)),
+    plain(t("filingAnswered"), f.answered?.toLocaleString(locale)),
+    plain(t("filingMoe"), f.marginOfError != null ? t("moe", { pct: formatNumber(f.marginOfError, locale) }) : undefined),
+    loc(t("filingQuestion"), f.question, (q) => t("filingQuoted", { q })),
+  ].filter((r): r is Row => r != null);
+  const pdf = (r: { ref: string; url: string }, label: string) => (
+    <a className="underline hover:text-accent-ink" href={r.url} target="_blank" rel="noopener noreferrer">
+      {label}
+    </a>
+  );
+  return (
+    <details className="text-xs text-muted">
+      <summary className="w-fit cursor-pointer">{t("filingSummary")}</summary>
+      <div className="mt-1 max-w-prose space-y-1 ps-4">
+        <dl className="grid grid-cols-[auto_1fr] gap-x-3 gap-y-0.5">
+          {rows.map((r) => (
+            <Fragment key={r.label}>
+              <dt className="font-medium text-foreground">{r.label}</dt>
+              <dd {...r.attrs}>{r.value}</dd>
+            </Fragment>
+          ))}
+        </dl>
+        {f.note && <p {...partyTextAttrs(f.note, locale)}>{partyText(f.note, locale)}</p>}
+        <p>
+          {pdf(f, t("filingLink", { ref: f.ref }))}
+          {f.refiled?.map((r) => (
+            <Fragment key={r.ref}>
+              {" · "}
+              {pdf(r, t("filingRefiled", { ref: r.ref }))}
+            </Fragment>
+          ))}
+        </p>
+      </div>
+    </details>
   );
 }
 
@@ -238,7 +296,7 @@ export async function PollsSection({ id = "polls" }: { id?: string }) {
         <summary className="cursor-pointer">
           <h3 className="inline text-lg font-semibold">{t("allTitle", { count: polls.length })}</h3>
         </summary>
-        <p className="text-xs text-muted">{t("allCaption")} {t("perPollCredit")}</p>
+        <p className="text-xs text-muted">{t("allCaption")} {t("perPollCredit")} {t("filingIntro")}</p>
 
         {/* sm+: the table; columns in registry order. */}
         <TableFrame className="hidden sm:block">
@@ -293,12 +351,17 @@ export async function PollsSection({ id = "polls" }: { id?: string }) {
                     <SourceLink poll={p} label={tc("source")} />
                   </td>
                 </tr>
-                {(p.note || p.belowThresholdNote) && (
+                {(p.note || p.belowThresholdNote || p.filing || file.filingsCheckedAt) && (
                   <tr className="!border-t-0">
-                    <td colSpan={5 + slugs.length} className="px-3 pb-2 text-xs text-muted">
-                      {p.belowThresholdNote && <span {...localizedAttrs(loc(p.belowThresholdNote))}>{loc(p.belowThresholdNote).text}</span>}
-                      {p.belowThresholdNote && p.note && " · "}
-                      {p.note && <span {...partyTextAttrs(p.note, locale)}>{partyText(p.note, locale)}</span>}
+                    <td colSpan={5 + slugs.length} className="space-y-1 px-3 pb-2 text-xs text-muted">
+                      {(p.note || p.belowThresholdNote) && (
+                        <p>
+                          {p.belowThresholdNote && <span {...localizedAttrs(loc(p.belowThresholdNote))}>{loc(p.belowThresholdNote).text}</span>}
+                          {p.belowThresholdNote && p.note && " · "}
+                          {p.note && <span {...partyTextAttrs(p.note, locale)}>{partyText(p.note, locale)}</span>}
+                        </p>
+                      )}
+                      <FilingDisclosure poll={p} checkedAt={file.filingsCheckedAt} />
                     </td>
                   </tr>
                 )}
@@ -346,6 +409,7 @@ export async function PollsSection({ id = "polls" }: { id?: string }) {
               <p className="text-xs text-muted">
                 {tc("source")}: <SourceLink poll={p} label={partyText(p.outlet, locale)} />
               </p>
+              <FilingDisclosure poll={p} checkedAt={file.filingsCheckedAt} />
             </li>
           ))}
         </ol>

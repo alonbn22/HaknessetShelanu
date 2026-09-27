@@ -894,7 +894,20 @@
     "trendSummary": "{list}: between {min} and {max} seats in {n} polls",
     "trendAverage": "average: {mean}",
     "trendHouseNote": "Each dot is one poll (hover to see who ran it and when). A thin line joins polls by the same institute — so a steady gap between lines is a difference in polling method, not a real change.",
-    "belowAll": "below the threshold in all {n} polls"
+    "belowAll": "below the threshold in all {n} polls",
+    "filingIntro": "Under each poll: the details the law requires a published poll to state, from the pollster’s own filing with the Central Elections Committee. The figures in the table stay as the article published them.",
+    "filingSummary": "From the pollster’s filing with the Central Elections Committee",
+    "filingCommissioned": "Commissioned by",
+    "filingConducted": "Conducted by",
+    "filingPopulation": "Population",
+    "filingAsked": "Asked to take part",
+    "filingAnswered": "Answered",
+    "filingMoe": "Margin of error",
+    "filingQuestion": "Question",
+    "filingQuoted": "\"{q}\"",
+    "filingLink": "Filing no. {ref} (PDF)",
+    "filingRefiled": "Re-filed: no. {ref} (PDF)",
+    "filingNone": "No filing for this poll found on the Central Elections Committee’s site as of {date}"
   },
   "positions": {
     "title": "What the lists say — stance by stance",

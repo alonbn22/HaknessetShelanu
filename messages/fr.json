@@ -894,7 +894,20 @@
     "trendSummary": "{list} : entre {min} et {max} sièges dans {n} sondages",
     "trendAverage": "moyenne : {mean}",
     "trendHouseNote": "Chaque point est un sondage (survolez pour voir qui l’a réalisé et quand). Une ligne fine relie les sondages d’un même institut — un écart constant entre les lignes est donc une différence de méthode, pas un vrai changement.",
-    "belowAll": "sous le seuil dans les {n} sondages"
+    "belowAll": "sous le seuil dans les {n} sondages",
+    "filingIntro": "Sous chaque sondage : les informations que la loi impose de publier avec un sondage, tirées de la déclaration du sondeur à la Commission électorale centrale. Les chiffres du tableau restent ceux publiés par l’article.",
+    "filingSummary": "D’après la déclaration du sondeur à la Commission électorale centrale",
+    "filingCommissioned": "Commandé par",
+    "filingConducted": "Réalisé par",
+    "filingPopulation": "Population",
+    "filingAsked": "Personnes sollicitées",
+    "filingAnswered": "Répondants",
+    "filingMoe": "Marge d’erreur",
+    "filingQuestion": "Question",
+    "filingQuoted": "« {q} »",
+    "filingLink": "Déclaration n° {ref} (PDF)",
+    "filingRefiled": "Redéposée : n° {ref} (PDF)",
+    "filingNone": "Aucune déclaration de ce sondage n’a été trouvée sur le site de la Commission électorale centrale au {date}"
   },
   "positions": {
     "title": "Ce que disent les listes — position par position",

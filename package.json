@@ -11,9 +11,9 @@
     "test": "node --import tsx --test \"tests/**/*.test.ts\"",
     "test:qa": "node --import tsx --test \"tests/qa/*.test.ts\"",
     "test:security": "node --import tsx --test \"tests/security/*.test.ts\"",
-    "sync": "tsx scripts/sync/index.ts",
-    "update": "tsx scripts/sync/index.ts",
-    "warm": "tsx scripts/sync/warm-translations.ts",
+    "sync": "DB_WRITE=1 tsx scripts/sync/index.ts",
+    "update": "DB_WRITE=1 tsx scripts/sync/index.ts",
+    "warm": "DB_WRITE=1 tsx scripts/sync/warm-translations.ts",
     "db:push": "drizzle-kit push --force",
     "db:clean": "node scripts/db-clean.mjs"
   },

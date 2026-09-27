@@ -1,6 +1,8 @@
-// Safely remove stale WAL/SHM sidecars next to data/knesset.db and verify the
-// database is intact. Run this ONLY when nothing else has the DB open (no dev
-// server, no sync) — e.g. right after a `git pull` that swapped the .db.
+// Safely remove stale WAL/SHM sidecars next to data/knesset.db, verify the
+// database is intact, then leave it in rollback-journal mode, vacuumed (what a
+// read-only deploy needs). Run this ONLY when nothing else has the DB open (no
+// dev server, no sync) — e.g. right after a `git pull` that swapped the .db,
+// and always before committing the DB.
 //
 //   npm run db:clean
 //
@@ -58,3 +60,14 @@ if (!ok) {
   process.exit(1);
 }
 console.log("Database is healthy.");
+
+// Leave the file in rollback-journal mode, compacted. The site opens it
+// read-only, and a read-only connection to a WAL-mode file needs -wal/-shm
+// sidecars it cannot create on a read-only filesystem (Vercel); a
+// rollback-journal file needs none. The sync switches back to WAL while it
+// writes; this runs after it, before every DB commit.
+const final = new Database(DB);
+const mode = final.pragma("journal_mode = DELETE", { simple: true });
+final.exec("VACUUM");
+final.close();
+console.log(`journal_mode: ${mode}; vacuumed.`);

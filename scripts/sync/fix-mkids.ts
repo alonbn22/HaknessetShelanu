@@ -5,7 +5,7 @@
 // have since left); this applies both once + recomputes stats and agreement.
 //
 //   npm run db:push          # creates mk_id_map (now in the schema)
-//   npx tsx scripts/sync/fix-mkids.ts
+//   DB_WRITE=1 npx tsx scripts/sync/fix-mkids.ts
 import { sql } from "drizzle-orm";
 import { getDb } from "../../src/db";
 import { remapVoteResultMkIds, resolveOrphanMkIds, computeVoteTotals } from "./votes";

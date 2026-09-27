@@ -1,4 +1,5 @@
 // One-off runner: fast windowed results backfill + recompute totals & stats.
+//   DB_WRITE=1 npx tsx scripts/sync/run-results.ts
 import { sql } from "drizzle-orm";
 import { getDb } from "../../src/db";
 import { syncVoteResults, syncVoteSubjects, computeVoteTotals } from "./votes";

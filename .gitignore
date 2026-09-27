@@ -32,6 +32,9 @@
 # local working status board (not for git)
 PROJECT_STATUS.md
 
+# private notes (e.g. questions for the lawyer) — never committed
+private/
+
 # debug
 npm-debug.log*
 yarn-debug.log*

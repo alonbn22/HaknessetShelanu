@@ -299,6 +299,7 @@
   },
   "a11y": {
     "skipToContent": "Skip to main content",
+    "loading": "Loading…",
     "openMenu": "Accessibility menu",
     "title": "Accessibility",
     "increaseText": "Increase text",

@@ -299,6 +299,7 @@
   },
   "a11y": {
     "skipToContent": "דלג לתוכן המרכזי",
+    "loading": "טוען…",
     "openMenu": "תפריט נגישות",
     "title": "נגישות",
     "increaseText": "הגדלת טקסט",

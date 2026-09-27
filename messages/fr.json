@@ -299,6 +299,7 @@
   },
   "a11y": {
     "skipToContent": "Aller au contenu principal",
+    "loading": "Chargement…",
     "openMenu": "Menu d’accessibilité",
     "title": "Accessibilité",
     "increaseText": "Agrandir le texte",

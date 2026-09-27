@@ -7,10 +7,16 @@ const BCP47: Record<string, string> = {
   fr: "fr-FR",
 };
 
+// Every date and time shows in Israel time, whatever the server's zone (Vercel
+// runs in UTC): stored times carry their offset, date-only values parse as UTC
+// midnight, and both land on the right Israeli day and hour.
+const TZ = "Asia/Jerusalem";
+
 export function formatDate(iso: string | null | undefined, locale: string): string {
   if (!iso) return "";
   return new Intl.DateTimeFormat(BCP47[locale] ?? locale, {
     dateStyle: "medium",
+    timeZone: TZ,
   }).format(new Date(iso));
 }
 
@@ -19,7 +25,7 @@ export function formatDateFull(iso: string | null | undefined, locale: string): 
   if (!iso) return "";
   return new Intl.DateTimeFormat(BCP47[locale] ?? locale, {
     dateStyle: "full",
-    timeZone: "Asia/Jerusalem",
+    timeZone: TZ,
   }).format(new Date(`${iso}T12:00:00+03:00`));
 }
 
@@ -28,6 +34,7 @@ export function formatDateTime(iso: string | null | undefined, locale: string): 
   return new Intl.DateTimeFormat(BCP47[locale] ?? locale, {
     dateStyle: "medium",
     timeStyle: "short",
+    timeZone: TZ,
   }).format(new Date(iso));
 }
 

@@ -97,9 +97,7 @@ export default async function HomePage() {
   const coalitionSeats = seats.filter((s) => coalitionIds.has(s.factionId)).length;
 
   const arrow = rtlLocales.has(locale) ? "←" : "→";
-  const asOf = lastSync
-    ? new Intl.DateTimeFormat(locale, { dateStyle: "medium", timeStyle: "short" }).format(new Date(lastSync))
-    : null;
+  const asOf = lastSync ? formatDateTime(lastSync, locale) : null;
   const figuresSource = asOf ? t("home.figuresSource", { date: asOf }) : t("footer.dataSource");
   const rowLink = "flex items-center gap-3 py-2.5 hover:bg-surface-hover -mx-2 px-2 rounded-chip";
 
@@ -214,13 +212,7 @@ export default async function HomePage() {
             )}
           </div>
 
-          {lastSync && (
-            <p className="text-xs text-muted">
-              {t("footer.lastSync", {
-                date: new Intl.DateTimeFormat(locale, { dateStyle: "medium", timeStyle: "short" }).format(new Date(lastSync)),
-              })}
-            </p>
-          )}
+          {asOf && <p className="text-xs text-muted">{t("footer.lastSync", { date: asOf })}</p>}
         </section>
       </section>
 

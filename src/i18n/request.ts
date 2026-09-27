@@ -36,6 +36,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
   return {
     locale,
     messages: merged,
+    // Israel time for every visitor and server (Vercel runs in UTC).
+    timeZone: "Asia/Jerusalem",
     // Don't crash on a missing message; surface it for monitoring instead.
     onError(error) {
       if (error.code === IntlErrorCode.MISSING_MESSAGE) {

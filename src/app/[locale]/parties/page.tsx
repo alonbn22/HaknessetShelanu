@@ -36,10 +36,9 @@ export default async function PartiesPage() {
       <h1 className="text-3xl font-bold">{t("parties.title")}</h1>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {factions.map((f) => (
-          <Link
+          <div
             key={f.id}
-            href={`/parties/${f.id}`}
-            className="rounded-xl bg-white p-5 shadow-sm hover:shadow-md transition-shadow border-s-4"
+            className="relative rounded-xl bg-white p-5 shadow-sm hover:shadow-md transition-shadow border-s-4"
             style={{ borderInlineStartColor: factionColor(f.id) }}
           >
             <div className="flex items-center gap-3">
@@ -55,7 +54,11 @@ export default async function PartiesPage() {
                 />
               )}
               <h2 className="text-lg font-semibold flex-1">
-                {factionName(f.id, f.nameHe, locale)}
+                {/* The name is the card's link, stretched over the card by
+                    ::after, so the logo credit can be a link too (links can't nest). */}
+                <Link href={`/parties/${f.id}`} className="after:absolute after:inset-0">
+                  {factionName(f.id, f.nameHe, locale)}
+                </Link>
               </h2>
               <span
                 className={`rounded-full px-2 py-0.5 text-xs font-medium ${
@@ -104,7 +107,12 @@ export default async function PartiesPage() {
                 </div>
               )}
             </div>
-          </Link>
+            {ownList(f.id)?.logo && (
+              <p className="relative mt-2 w-fit text-xs text-muted">
+                <SourceLinks sources={[ownList(f.id)!.logo!.source]} label={t("election.logoCredit")} />
+              </p>
+            )}
+          </div>
         ))}
       </div>
       {coalition.sourceUrl && (

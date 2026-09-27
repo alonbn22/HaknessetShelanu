@@ -52,3 +52,20 @@ export function canonicalCommonsUrl(url: string | null | undefined): string | nu
     return url;
   }
 }
+
+// The Commons page of the file behind an upload URL, thumbnail or not:
+// .../commons/thumb/8/85/Name.jpg/500px-Name.jpg → .../wiki/File:Name.jpg.
+export function commonsFilePage(url: string | null | undefined): string | null {
+  const m = /^https:\/\/upload\.wikimedia\.org\/wikipedia\/commons\/(?:thumb\/)?[0-9a-f]\/[0-9a-f]{2}\/([^/]+)/.exec(
+    canonicalCommonsUrl(url) ?? "",
+  );
+  return m ? `https://commons.wikimedia.org/wiki/File:${m[1]}` : null;
+}
+
+// A photo license's Creative Commons deed ("CC BY-SA 4.0" → .../by-sa/4.0/);
+// null for anything without one, such as "Public domain".
+export function licenseUrl(license: string | null | undefined): string | null {
+  if (license === "CC0") return "https://creativecommons.org/publicdomain/zero/1.0/";
+  const m = /^CC (BY|BY-SA) (\d\.\d)$/.exec(license ?? "");
+  return m ? `https://creativecommons.org/licenses/${m[1].toLowerCase()}/${m[2]}/` : null;
+}

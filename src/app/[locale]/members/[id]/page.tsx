@@ -36,7 +36,7 @@ import {
   isCurrentMk,
 } from "@/lib/queries";
 import { localizePage, committeeLabel } from "@/lib/i18n-data";
-import { localizedAttrs, rtlAttrs, safeHttpUrl, canonicalCommonsUrl } from "@/lib/text";
+import { localizedAttrs, rtlAttrs, safeHttpUrl, canonicalCommonsUrl, commonsFilePage, licenseUrl } from "@/lib/text";
 import {
   POSITION_FACTION_MEMBER,
   MK_POSITION_IDS,
@@ -49,6 +49,18 @@ import {
 } from "@/lib/constants";
 
 export const dynamic = "force-dynamic";
+
+// "Photo: author (license)": the credit links the Commons file and the
+// license its deed; plain text where there is no page to link.
+function creditLink(href: string | null, text: string) {
+  return href ? (
+    <a className="underline hover:text-accent" href={href} target="_blank" rel="noopener noreferrer">
+      {text}
+    </a>
+  ) : (
+    text
+  );
+}
 
 // getMember is cache()-wrapped, so metadata + page body share one lookup.
 export async function generateMetadata({
@@ -285,9 +297,8 @@ export default async function MemberPage({
           </div>
           {member.photoAttribution && (
             <div className="text-xs text-muted pt-1">
-              {t("common.photoBy", {
-                attribution: `${member.photoAttribution}${member.photoLicense ? ` (${member.photoLicense})` : ""}`,
-              })}
+              {creditLink(commonsFilePage(member.photoUrl), t("common.photoBy", { attribution: member.photoAttribution }))}
+              {member.photoLicense && <> ({creditLink(licenseUrl(member.photoLicense), member.photoLicense)})</>}
             </div>
           )}
         </div>

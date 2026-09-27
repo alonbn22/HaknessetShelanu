@@ -8,6 +8,7 @@
   },
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/fetch-db.mjs --if-missing",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
@@ -18,7 +19,9 @@
     "update": "DB_WRITE=1 tsx scripts/sync/index.ts",
     "warm": "DB_WRITE=1 tsx scripts/sync/warm-translations.ts",
     "db:push": "drizzle-kit push --force",
-    "db:clean": "node scripts/db-clean.mjs"
+    "db:clean": "node scripts/db-clean.mjs",
+    "db:pull": "node scripts/fetch-db.mjs",
+    "db:publish": "node scripts/publish-db.mjs"
   },
   "dependencies": {
     "better-sqlite3": "^12.10.0",

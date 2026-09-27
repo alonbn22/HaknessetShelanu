@@ -6,30 +6,30 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 # House rules (hard-won — follow exactly)
 
-## The committed database and the sync bot
-- `data/knesset.db` (~85MB, near GitHub's 100 MiB file limit) is **committed**, and a GitHub Action re-syncs and
-  commits it every ~6h (currently **disabled** — re-enable with
-  `gh workflow enable "Sync Knesset data"` for launch). Manual pushes race with
-  it when enabled: always `git pull --rebase origin master` before pushing.
-- **Never include `data/knesset.db` in a code commit.** Running the dev server
-  or `next build` in a non-Hebrew locale writes lazy translations into it, so
-  it dirties itself routinely — `git restore data/knesset.db` before committing.
-- A **deliberate DB commit** (new index/table/backfill) goes alone: code commit
-  first (no DB), then materialize (`npm run db:push` + the relevant sync +
-  `npm run db:clean`), then commit **only** the DB and push immediately. If the
-  push is rejected because the bot landed, `git reset --hard origin/master` and
-  redo — never rebase a binary DB commit.
+## The database and the daily sync
+- `data/knesset.db` (~81 MB) is **not in git**. It lives in the repo's
+  `data-latest` release. Get it with `npm run db:pull` (stop any dev server
+  first); `next build` fetches it on its own when it's missing (`prebuild`).
+- A GitHub Action (`sync-data.yml`) runs daily: `db:pull` → `npm run sync` →
+  `db:clean` → `db:publish` → the Vercel deploy hook. It needs the Actions
+  minutes of a public repo, or a working billing account on a private one.
+- The site opens the DB **read-only** (Vercel's disk is read-only) and never
+  writes at request time. That needs a rollback-journal file: `db:clean` ends
+  with `journal_mode=DELETE` + `VACUUM`, and `db:publish` refuses a WAL file.
+  Scripts that write set `DB_WRITE=1` (already in `sync`, `update`, `warm`).
+- A **deliberate DB change** (new index/table/backfill): code commit first,
+  then materialize locally (`npm run db:push` + the relevant sync +
+  `npm run db:clean`), check it, and `npm run db:publish`. Never publish while
+  the daily sync is running (Actions tab).
 - New tables/indexes MUST be declared in `src/db/schema.ts` (drizzle-kit
   `push --force` **drops anything undeclared** — this once silently deleted a
   live table) AND created `IF NOT EXISTS` by the sync script with a definition
   matching schema.ts exactly, so an un-pushed DB self-heals on the next run.
   Query functions for new tables try/catch and return empty when the table
   doesn't exist yet.
-- Stop the dev server before `git restore data/knesset.db`: restoring the file
-  while a process has it open, or with a leftover `-wal`, can corrupt it.
-- Never delete `*.db-wal`/`*.db-shm` while any process has the DB open — that
-  corrupts it. Use `npm run db:clean` (checks integrity) when nothing is running,
-  e.g. after a pull swapped the DB file.
+- Never replace or delete the DB file or its `*-wal`/`*-shm` while any process
+  has it open — that corrupts it. Stop the dev server first; use
+  `npm run db:clean` (checks integrity) when nothing is running.
 
 ## Language & i18n
 - **No Hebrew literals in `src/`** (a test enforces it) — use `\u` escapes for
@@ -38,11 +38,12 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - Every UI string goes into **all six** `messages/{he,en,ar,ru,es,fr}.json` with
   identical key sets and identical ICU placeholders (a parity test enforces it).
   Hebrew is the source of truth.
-- Data text (vote titles, bill/committee names…) is NOT translated in the sync;
-  it localizes lazily via the unified `translations` cache — pages call
-  `localizePage(heList, locale)` from `src/lib/i18n-data.ts` (cache + `after()`
-  queue in one). Untranslated Hebrew must render with `dir="rtl" lang="he"` —
-  use `rtlAttrs`/`localizedAttrs` from `src/lib/text.ts`.
+- Data text (vote titles, bill/committee names…) is NOT translated in the sync
+  or at request time: pages read the unified `translations` cache with
+  `localizePage(heList, locale)` from `src/lib/i18n-data.ts` (read-only; no
+  third-party calls). New strings are translated in reviewed batches and
+  imported, then published with the DB. Untranslated Hebrew must render with
+  `dir="rtl" lang="he"` — use `rtlAttrs`/`localizedAttrs` from `src/lib/text.ts`.
 
 ## Legal safety
 - Never invent facts about people. Every claim in a member record cites ≥1
@@ -51,4 +52,4 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 ## Gates (run before finishing any change)
 - `npm test` (318+), `npx tsc --noEmit`, `npm run lint`, `npm run build` — all
-  green, and `git status` must show no accidental `data/knesset.db` drift.
+  green.

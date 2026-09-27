@@ -1,20 +1,25 @@
-# Keeps the site's data fresh by pulling the latest Knesset open data on a
-# schedule. Vote sync is incremental (cursor stored in sync_state inside the
-# committed DB), so each run only fetches what changed since the last sync.
+# Keeps the site's data fresh: once a day it pulls the latest Knesset open data
+# into the database and publishes it for the site to deploy.
 #
-# For this to stay incremental, data/knesset.db must be committed to the repo.
-# If the DB is missing on checkout the first run performs a full backfill
-# (slower, but still works). After syncing, the workflow commits the updated DB
-# so a git-based host (Vercel, Netlify, etc.) redeploys with fresh data.
+# The database isn't in git (GitHub's 100 MiB file limit, and history bloat).
+# It lives in the `data-latest` release: this job downloads it, syncs (vote sync
+# is incremental: its cursor is stored inside the DB), checks and compacts it,
+# uploads it back, then calls the Vercel deploy hook so the site rebuilds with
+# the new data. A failed run leaves the published DB untouched, and GitHub
+# emails the repo owner.
+#
+# Secrets: VERCEL_DEPLOY_HOOK (optional; Vercel → Project → Settings → Git →
+# Deploy Hooks). New Hebrew text isn't translated here: it shows, marked as
+# Hebrew, until a reviewed translation batch is imported.
 name: Sync Knesset data
 
 on:
   schedule:
-    # Every 6 hours (UTC). Adjust as needed.
-    - cron: "0 */6 * * *"
+    # Every day at 02:30 UTC (05:30 in Israel in summer, 04:30 in winter).
+    - cron: "30 2 * * *"
   workflow_dispatch: {} # allow manual runs from the Actions tab
 
-# Prevent overlapping runs from racing on the DB / the commit.
+# Two runs must never publish over each other.
 concurrency:
   group: sync-data
   cancel-in-progress: false
@@ -22,46 +27,53 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    timeout-minutes: 60
     permissions:
-      contents: write # needed to commit the refreshed DB
+      contents: write # needed to upload the release asset
     steps:
       # Actions pinned to a commit SHA (not a mutable tag): this job holds a
       # contents:write token, so a hijacked tag must not be able to run code here.
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          persist-credentials: false
 
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: 24
           cache: npm
 
-      # `npm ci` only — the lockfile is authoritative. The old `|| npm install`
-      # fallback silently installed whatever latest in-range versions the registry
-      # served (and ran their build scripts) with a contents:write token on any
-      # lockfile drift. If `npm ci` fails, fix the lockfile rather than bypass it.
+      # `npm ci` only — the lockfile is authoritative. If it fails, fix the
+      # lockfile rather than bypass it.
       - run: npm ci
+
+      - name: Download the published database
+        run: npm run db:pull
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
 
       - name: Run incremental sync
         run: npm run sync
-        # A hung OData pagination would otherwise run until the job's 6h cap,
-        # blocking the concurrency slot for the next scheduled sync.
+        # A hung OData pagination would otherwise run for hours, blocking the
+        # concurrency slot for the next day's sync.
         timeout-minutes: 45
 
-      # Never commit a damaged DB: removes stale WAL sidecars and runs
-      # PRAGMA integrity_check, exiting non-zero if the file is corrupt.
-      - name: Verify database integrity
+      # Never publish a damaged DB: folds and removes the WAL, runs PRAGMA
+      # integrity_check (exits non-zero on corruption), then switches to a
+      # rollback journal and VACUUMs — the site opens the file read-only.
+      - name: Check and compact the database
         run: node scripts/db-clean.mjs
 
-      - name: Commit refreshed database
+      - name: Publish the database
+        run: npm run db:publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Deploy the site
+        env:
+          HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
         run: |
-          git config user.name "knesset-data-bot"
-          git config user.email "actions@github.com"
-          if [ -n "$(git status --porcelain data/knesset.db)" ]; then
-            git add data/knesset.db
-            git commit -m "chore(data): scheduled sync $(date -u +%Y-%m-%dT%H:%MZ)"
-            # A manual push may have landed while the sync ran — rebase our
-            # single data commit on top of it instead of failing the push.
-            git pull --rebase --autostash origin master
-            git push
+          if [ -n "$HOOK" ]; then
+            curl -fsS -X POST "$HOOK" > /dev/null && echo "Deploy triggered."
           else
-            echo "No data changes to commit."
+            echo "No VERCEL_DEPLOY_HOOK secret; skipping the deploy."
           fi

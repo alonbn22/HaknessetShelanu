@@ -84,34 +84,27 @@ You need Node.js 24 (the version CI uses) and git.
 git clone --filter=blob:none https://github.com/alonbn22/HaKnessetSheli.git
 cd HaKnessetSheli
 npm ci
+npm run db:pull
 npm run dev
 ```
 
 Open <http://localhost:3000> for Hebrew, or <http://localhost:3000/en> (also `/ar`,
 `/ru`, `/es`, `/fr`).
 
-The history holds many old copies of the database, which makes a full clone large.
+Older history holds copies of the database, which makes a full clone large.
 `--filter=blob:none` downloads only the files you check out; a plain `git clone`
 works too.
 
 ### The database
 
-The site reads one SQLite file, `data/knesset.db` (about 85 MB). You don't need to
-run the data sync to work on the site.
+The site reads one SQLite file, `data/knesset.db` (about 81 MB, 20 MB to
+download). It isn't in git: it lives in the repository's
+[`data-latest` release](https://github.com/alonbn22/HaKnessetSheli/releases/tag/data-latest),
+which the daily sync updates. `npm run db:pull` downloads it (and checks its
+checksum); run it again whenever you want fresher data, with the dev server
+stopped. You don't need to run the data sync to work on the site.
 
-> [!NOTE]
-> **Today** the database is committed to the repository, so the clone above
-> already includes it. There is nothing else to download.
->
-> **Soon** it moves out of git into a GitHub Release. From then on, run
-> `npm run db:pull` once after cloning, and again whenever you want fresher data.
-> That script doesn't exist yet; this note will change when it lands.
-
-> [!IMPORTANT]
-> Viewing non-Hebrew pages in development writes machine translations into
-> `data/knesset.db`, so git often shows it as modified. Never commit it with a code
-> change: stop the dev server, run `npm run db:clean`, then
-> `git restore data/knesset.db`. [CONTRIBUTING.md](CONTRIBUTING.md) explains why.
+The site opens the database read-only and never writes to it while it runs.
 
 ### Environment variables
 
@@ -167,8 +160,8 @@ data/knesset.db      the database
 `npm run update` (or `npm run sync`) refreshes everything from the Knesset API,
 Wikidata and data.gov.il. It is incremental: each table resumes from a cursor
 stored in the database, so only the very first run is a full backfill. The
-scheduled workflow `.github/workflows/sync-data.yml` runs it every ~6 hours and
-commits the database (it is disabled for now).
+scheduled workflow `.github/workflows/sync-data.yml` runs it once a day, then
+publishes the database to the `data-latest` release and triggers a deploy.
 
 ```bash
 npm run update              # everything
@@ -178,11 +171,12 @@ npm run sync -- --activity  # committees, sittings, questions, agendas, the law 
 npm run sync -- --budget    # the state budget
 npm run sync -- --stats     # recompute statistics only
 npm run warm                # pre-translate data text into the other languages
-npm run db:clean            # fold the WAL and check integrity (only when nothing has the DB open)
+npm run db:clean            # check integrity, switch to a rollback journal, compact (nothing may have the DB open)
+npm run db:publish          # upload data/knesset.db to the data-latest release (maintainers)
 ```
 
-Database commits follow their own rules: never mixed with code, and every new
-table or index declared in `src/db/schema.ts` first. See [AGENTS.md](AGENTS.md).
+Every new table or index is declared in `src/db/schema.ts` first. See
+[AGENTS.md](AGENTS.md).
 
 ## Data sources and licenses
 

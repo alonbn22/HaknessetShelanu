@@ -24,7 +24,9 @@
 .DS_Store
 *.pem
 
-# SQLite transient files (the main data/knesset.db is committed; these are not)
+# The database lives in the repo's data-latest release (npm run db:pull), never in git.
+data/knesset.db
+# SQLite transient files
 *.db-wal
 *.db-shm
 *.db-journal

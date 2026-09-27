@@ -35,10 +35,11 @@ jobs:
       # `npm ci` only — the lockfile is authoritative.
       - run: npm ci
 
-      # The database (data/knesset.db) is committed today, so the checkout above
-      # already has it. When it moves to a GitHub Release, fetch it here, before
-      # the tests (some of them read it):
-      # - run: npm run db:pull
+      # The database isn't in git: fetch the latest from the data-latest release
+      # (some tests read it). The token is only needed while the repo is private.
+      - run: npm run db:pull
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
 
       - run: npm test
       - run: npx tsc --noEmit

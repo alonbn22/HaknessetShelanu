@@ -1,128 +1,96 @@
 # Deploying Our Knesset
 
-**TL;DR — the free, easy path that just works: [Vercel](#option-a--vercel-recommended).**
-Connect the GitHub repo, deploy, set one environment variable. The only project-specific
-step is pre-warming translations so all four languages ship complete (one command).
+**The path: [Vercel](#vercel).** Connect the GitHub repo, set a few environment
+variables, and add a deploy hook for the daily data. The launch checklist is
+[LAUNCH_CHECKLIST.md](LAUNCH_CHECKLIST.md).
 
 ---
 
-## What's a little unusual about hosting this app
+## How the app is hosted
 
-Read this once — it explains every instruction below.
+Read this once. It explains every step below.
 
-- **Server-rendered, all routes dynamic.** A per-request CSP nonce (see `src/proxy.ts`)
-  forces dynamic rendering, so pages render on the server per request (no static export).
-- **Reads a committed SQLite file.** `data/knesset.db` (~57 MB) is checked into the repo
-  and read at request time via `better-sqlite3` (a native module). There is no external
-  database to provision — the data ships with the code.
-- **Writes translations lazily.** On the first non-Hebrew view of a piece of data, the app
-  translates it and caches the result back into the DB. On a **read-only** filesystem
-  (which most serverless hosts have) that write is skipped and the page falls back to
-  Hebrew for that one string — it never errors. **`npm run warm` pre-fills every
-  translation into the committed DB**, so on a read-only host nothing needs to be written
-  and every language renders complete.
-
-So the whole hosting question comes down to one choice: **pre-warm the data and deploy
-anywhere (even read-only serverless), or run a normal Node server where writes persist.**
-
----
-
-## Before any deploy
-
-```bash
-npm run update     # pull the latest Knesset / Wikidata / budget data
-npm run warm       # translate all data into en, ar, ru (writes into data/knesset.db)
-npm run db:clean   # checkpoint the WAL + integrity-check
-npm run build      # confirm a clean production build
-```
-
-Commit the refreshed `data/knesset.db`. Also set, wherever you deploy:
-
-- `NEXT_PUBLIC_SITE_URL` = your public origin (e.g. `https://ourknesset.vercel.app`), so
-  the sitemap, `robots.txt`, and OpenGraph/share URLs point at the real domain.
+- **Server-rendered, all routes dynamic.** A per-request CSP nonce (`src/proxy.ts`)
+  makes every page render on the server per request (no static export).
+- **Reads one SQLite file, read-only.** `data/knesset.db` (~81 MB) is read at request
+  time through `better-sqlite3` (a native module). The app never writes to it, so it
+  runs on a read-only disk (Vercel's). The file must use a rollback journal, not WAL:
+  `npm run db:clean` switches it, and `npm run db:publish` refuses a WAL file.
+- **The database isn't in git.** It lives in the repository's `data-latest` release.
+  The build fetches it (`prebuild` → `scripts/fetch-db.mjs --if-missing`), checks its
+  SHA-256, and Next bundles it into the server functions (about 115 MB of Vercel's
+  250 MB function limit).
+- **No third parties at request time.** No analytics, no cookies, no translation calls.
+  New Hebrew data text shows marked as Hebrew until a reviewed translation batch is
+  imported and published with the database.
 
 ---
 
-## Option A — Vercel (recommended)
+## Vercel
 
-Free (Hobby tier), native Next.js support, one-click GitHub deploys, HTTPS + global edge.
+The Hobby tier is free for non-commercial use, which this civic project is.
 
-1. **Bundle the DB into the serverless functions.** Add to `next.config.ts` (inside
-   `nextConfig`, beside `serverExternalPackages`, which already externalizes
-   `better-sqlite3`):
-
-   ```ts
-   outputFileTracingIncludes: {
-     "/**": ["./data/knesset.db"],
-   },
-   ```
-
-   Without this, Next won't trace the `.db` into the function and reads fail in production.
-
-2. **Push to GitHub**, then on [vercel.com](https://vercel.com): **Add New → Project →
-   Import** the repo. The framework is auto-detected as Next.js — no build config needed.
-
-3. **Deploy.** You get a free `https://<project>.vercel.app` URL.
-
-4. **Set the env var:** Project → Settings → Environment Variables → add
-   `NEXT_PUBLIC_SITE_URL` = your `*.vercel.app` URL (or a custom domain) → **Redeploy**.
-
-That's it — everything works because the committed DB already holds every translation.
-
-**Caveats:** the Hobby tier is for **non-commercial** use (this civic/transparency project
-qualifies). Dynamic pages aren't CDN-cached, but serverless SSR is fast.
+1. **Import the repo:** vercel.com → Add New → Project → Import. The framework is
+   detected as Next.js; no build settings are needed. Node 24 comes from
+   `package.json` `engines`.
+2. **Environment variables** (Project → Settings → Environment Variables), set before
+   the first build:
+   - `NEXT_PUBLIC_SITE_URL`: the public origin, e.g. `https://example.org`. The
+     sitemaps, `robots.txt`, canonical links and share cards are built with it.
+   - `NEXT_PUBLIC_CONTACT_EMAIL`: the site's contact address (the accessibility
+     statement, privacy and terms pages). Without it they point to public GitHub
+     issues.
+   - `GITHUB_TOKEN`: **only while the repo is private.** A fine-grained token with
+     read access to this repo's contents, so the build can download the database
+     release. Delete it once the repo is public.
+3. **Deploy hook** for the daily data: Project → Settings → Git → Deploy Hooks → create
+   one for `master`, then add its URL to the GitHub repo as the Actions secret
+   `VERCEL_DEPLOY_HOOK`.
+4. **Logs:** Vercel keeps request logs with IP addresses. Keep the shortest retention
+   the plan allows (the privacy page says so).
+5. **Domain:** add the custom domain in Vercel. Turn on HSTS `preload` only once the
+   domain is final (`next.config.ts` headers).
 
 ---
 
 ## Keeping the data fresh
 
-The repo ships a GitHub Action, `.github/workflows/sync-data.yml` (currently **disabled**),
-that re-syncs and commits `data/knesset.db` on a schedule; each commit auto-redeploys on
-Vercel. To use it:
+`.github/workflows/sync-data.yml` runs once a day (02:30 UTC) and on demand (Actions →
+Sync Knesset data → Run workflow):
 
-```bash
-gh workflow enable "Sync Knesset data"
-```
+1. `npm run db:pull` downloads the published database.
+2. `npm run sync` pulls what changed from the Knesset, Wikidata and data.gov.il
+   (incremental: the cursors live inside the database).
+3. `node scripts/db-clean.mjs` checks integrity, switches to a rollback journal and
+   compacts.
+4. `npm run db:publish` uploads the new file and its checksum to `data-latest`.
+5. The deploy hook rebuilds the site with the new data.
 
-Add a **`npm run warm`** step to that workflow (right after `npm run update`, before the
-commit) so freshly-synced data ships translated instead of showing the Hebrew fallback
-until someone views it.
+A failed run publishes nothing and GitHub emails the owner. On a private repo the job
+uses paid Actions minutes; on a public repo it's free.
+
+A **deliberate database change** (new table, backfill, a translation batch): apply it
+locally, run `npm run db:clean`, check the site, then `npm run db:publish`. Don't
+publish while the daily sync is running.
 
 ---
 
-## Option B — a persistent Node server (Render / Fly.io / Railway)
+## Before launch
 
-Choose this if you'd rather have translations fill in **live** (no pre-warm step) — the app
-runs exactly like local dev: `better-sqlite3`, the committed DB, and lazy-translation
-**writes** all work with no extra config.
+See [LAUNCH_CHECKLIST.md](LAUNCH_CHECKLIST.md). In short:
 
-- **Render** (free web service): New → Web Service → connect the repo →
-  Build `npm ci && npm run build`, Start `npm start`, Node 20+. Set `NEXT_PUBLIC_SITE_URL`.
-  Caveats: the free instance **spins down after ~15 min idle** (a slow first request after),
-  and the free tier has **no persistent disk** — the lazy-translation cache resets on each
-  redeploy, but the committed DB always carries whatever `npm run warm` baked in.
-- **Fly.io:** `fly launch` (Node builder), Start `npm start`. Attach a small volume mounted
-  at `data/` if you want lazy translations to persist across restarts. Requires a card;
-  small usage is minimal-cost.
-- **Railway:** similar; runs on trial credit, then paid.
+- [ ] `NEXT_PUBLIC_SITE_URL` and `NEXT_PUBLIC_CONTACT_EMAIL` set.
+- [ ] The deploy hook secret set and one manual sync run end to end.
+- [ ] Log retention set to the shortest.
+- [ ] The work-in-progress banner removed.
+- [ ] `npm test`, `npx tsc --noEmit`, `npm run lint`, `npm run build` pass.
+- [ ] Sensitive editorial content (member records, coalition, party pages, polls)
+      reviewed: every claim is sourced, but a human sign-off is the last gate.
 
 ---
 
 ## Not recommended
 
-- **Cloudflare Workers / Pages.** The Workers runtime can't run `better-sqlite3` (native
-  module + filesystem access). Hosting there would mean porting the data layer to
-  Cloudflare D1 — effectively a rewrite. Skip it.
-
----
-
-## Go-live checklist
-
-- [ ] `NEXT_PUBLIC_SITE_URL` points at the real origin.
-- [ ] `npm run warm` run and the DB committed, so all four languages render fully.
-- [ ] Accessibility statement contact filled in (`a11y.statement.*` — coordinator
-      name/email/phone). **Legally required in Israel.**
-- [ ] Corrections email placeholder filled in.
-- [ ] `npm run build` passes.
-- [ ] Sensitive editorial content (coalition, party profiles, member records, election
-      figures) reviewed — every claim is sourced, but a human sign-off is the last gate.
+- **Cloudflare Workers / Pages.** The Workers runtime can't run `better-sqlite3` (a
+  native module with filesystem access). Hosting there means porting the data layer to
+  D1, effectively a rewrite.

@@ -15,6 +15,5 @@ own article), not Wikipedia or an aggregator. Write "none" for a code-only chang
 - [ ] Every new or changed text exists in all six languages (he, en, ar, ru, es, fr) in `messages/*.json` or `content/*.yaml`
 - [ ] No Hebrew characters in `src/` (use `messages/`, or `\u` escapes in code)
 - [ ] The gates are green: `npm test`, `npx tsc --noEmit`, `npm run lint`, `npm run build`
-- [ ] `data/knesset.db` is not changed (a code PR never touches it; `git restore data/knesset.db`)
 
 See [CONTRIBUTING.md](https://github.com/alonbn22/HaKnessetSheli/blob/master/CONTRIBUTING.md) for the rules behind each box.

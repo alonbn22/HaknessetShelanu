@@ -86,28 +86,19 @@ source of truth; the other five follow it.
   English page: spread `rtlAttrs(text)` or `localizedAttrs(value)` from
   `src/lib/text.ts` onto the element. They add `dir="rtl" lang="he"`.
 
-### Never commit the database with a code change
+### The database isn't in git
 
-`data/knesset.db` is committed (for now), and it changes only in commits that
-contain nothing but the database, made by a maintainer or the sync bot.
+`data/knesset.db` lives in the repository's `data-latest` release, not in git:
+`npm run db:pull` downloads it, and the daily sync publishes a new one. The site
+only reads it.
 
-- Viewing non-Hebrew pages in development writes machine translations into the
-  database, so `git status` often shows it as modified. Before you commit, stop the
-  dev server, then run:
-
-  ```bash
-  npm run db:clean              # settles the database's pending writes
-  git restore data/knesset.db   # puts back the committed copy
-  ```
-
-  Don't restore the file while the dev server is running, and never delete
+- Stop the dev server before `npm run db:pull`, and never delete
   `data/knesset.db-wal` or `data/knesset.db-shm` by hand while anything has the
   database open. Both can corrupt it.
 - Need a data change (a new table, a fixed data translation, a backfill)? Say so
-  in an issue or in your pull request, and a maintainer will make it as a separate,
-  database-only commit. New tables and indexes must be declared in
-  `src/db/schema.ts` and also created `IF NOT EXISTS` by the sync; `AGENTS.md` has
-  the details.
+  in an issue or in your pull request, and a maintainer will apply it and publish
+  a new database. New tables and indexes must be declared in `src/db/schema.ts`
+  and also created `IF NOT EXISTS` by the sync; `AGENTS.md` has the details.
 
 ### Keep it simple for the average voter
 
@@ -227,11 +218,7 @@ npm test
 npx tsc --noEmit
 npm run lint
 npm run build
-git status    # data/knesset.db must not be listed
 ```
-
-If `git status` lists `data/knesset.db`, restore it as described in
-[Never commit the database with a code change](#never-commit-the-database-with-a-code-change).
 
 ## Pull requests
 
@@ -239,7 +226,7 @@ If `git status` lists `data/knesset.db`, restore it as described in
    `git clone --filter=blob:none https://github.com/<you>/HaKnessetSheli.git`
 2. **Branch** from `master`, for example `git switch -c add-maariv-poll`.
 3. **Change one thing** per pull request. Small ones get reviewed faster.
-4. **Check**: run the gates, and make sure `data/knesset.db` isn't in your changes.
+4. **Check**: run the gates.
 5. **Commit** with a short subject in the imperative ("Add the Maariv poll of 25
    September") and a body that says why.
 6. **Open a pull request** against `master` and fill in the checklist. Link every

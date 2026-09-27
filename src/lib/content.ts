@@ -889,6 +889,24 @@ export function getControversialLaws(): ControversialLaw[] {
 // outlet counted — the site never assigns a list to a bloc.
 const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "must be YYYY-MM-DD");
 
+// The pollster's own filing with the Central Elections Committee — the
+// disclosure the Elections (Propaganda Methods) Law s. 16e(b)–(c) asks of a
+// published poll. Shown beside the article's figures, never in their place;
+// `note` says where the two differ. No filing date: the committee's list runs
+// a day off.
+const cecFilingRef = z.object({ ref: z.string().min(1), url: httpUrl });
+const pollFilingSchema = cecFilingRef.extend({
+  commissionedBy: localizedText,
+  conductedBy: localizedText,
+  population: localizedText.optional(),
+  asked: z.number().int().positive().optional(),
+  answered: z.number().int().positive().optional(),
+  marginOfError: z.number().positive().optional(),
+  question: localizedText.optional(), // the vote-intention question, verbatim in he
+  note: localizedText.optional(),
+  refiled: z.array(cecFilingRef).optional(),
+});
+
 const pollSchema = z.object({
   id: z.string().regex(/^\d{4}-\d{2}-\d{2}-[a-z0-9]+(?:-[a-z0-9]+)*$/, "id is <published>-<outlet>-<institute>"),
   published: isoDate,
@@ -910,11 +928,13 @@ const pollSchema = z.object({
   sources: z
     .array(z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() }))
     .min(1, "every poll must cite the outlet's own article"),
+  filing: pollFilingSchema.optional(),
 });
 
 const pollsFileSchema = z.object({
   lastReviewed: isoDate,
   cutoff: isoDate, // polls published before this day are out of scope
+  filingsCheckedAt: isoDate.optional(), // the day the committee's filings were last searched
   threshold: z.number().positive(), // % of valid votes
   thresholdSources: z
     .array(z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() }))

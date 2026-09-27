@@ -126,6 +126,27 @@ if (file) {
     }
   });
 
+  // The pollster's filing with the Central Elections Committee is a second,
+  // official source beside the article: it must link the committee's own PDF
+  // on gov.il, carry its reference, and add up.
+  test("every CEC filing links gov.il over https, has a ref, and answered ≤ asked", () => {
+    if (file.filingsCheckedAt) assert.ok(file.filingsCheckedAt <= today, "filingsCheckedAt is in the future");
+    for (const p of file.polls) {
+      const f = p.filing;
+      if (!f) continue;
+      for (const r of [f, ...(f.refiled ?? [])]) {
+        assert.ok(r.ref.trim(), `${p.id}: filing without a ref`);
+        const { protocol, hostname } = new URL(r.url);
+        assert.equal(protocol, "https:", `${p.id}: filing ${r.ref} not https`);
+        assert.ok(hostname === "gov.il" || hostname.endsWith(".gov.il"), `${p.id}: filing ${r.ref} not on gov.il: ${hostname}`);
+      }
+      if (f.asked != null && f.answered != null) {
+        assert.ok(f.answered <= f.asked, `${p.id}: ${f.answered} answered of ${f.asked} asked`);
+      }
+      if (f.question) assert.ok(f.question.he.split(/\s+/).length <= 40, `${p.id}: the vote question runs over 40 words`);
+    }
+  });
+
   test("polls not entered are listed with a reason and a link", () => {
     for (const n of file.notEntered) {
       assert.match(n.published, ISO);

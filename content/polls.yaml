@@ -14,8 +14,21 @@
 # Scope: polls published from the day the candidate lists closed (8 September
 # 2026) onward — earlier polls scored lists that no longer exist. Review weekly
 # until the vote and bump lastReviewed.
+#
+# `filing` is the pollster's own filing with the Central Elections Committee —
+# the disclosure the Elections (Propaganda Methods) Law §16ה(ב)–(ג) asks of a
+# published poll: who commissioned and who conducted it, the population, how
+# many were asked and answered, the margin of error and the questions. Every
+# value was read from the committee's PDF at `url` (names without their street
+# addresses; the vote question verbatim in Hebrew). It is shown beside the
+# article's figures and never replaces them: sample, marginOfError, fieldwork
+# and seats stay the article's, and `filing.note` says, neutrally, where the two
+# differ. No filing date: the committee's list runs a day off. A poll without
+# `filing` shows "no filing found as of filingsCheckedAt" when it was published
+# by then — re-check the committee's list and bump the date on each review.
 lastReviewed: "2026-09-25"
 cutoff: "2026-09-08"
+filingsCheckedAt: "2026-09-27"
 # The legal electoral threshold: 3.25% of valid votes (Knesset Elections Law,
 # amendment of 2014) — ≈4 seats of 120.
 threshold: 3.25
@@ -117,6 +130,35 @@ polls:
     verification: "all 13 figures in the article's own list line and 4 blocs in the text (25/09/2026 06:00) — coalition 49, Zionist opposition 55, the Reservists–Economic union 4 and the Arab parties 12, each stated; methodology verbatim: 23–24 Sep, 4,217 asked, 610 respondents (14%), 18+, Jews and Arabs, ±4%; לזר מחקרים/ד\"ר מנחם לזר with Panel4ALL"
     sources:
       - { url: "https://www.maariv.co.il/news/elections-2026/article-1370546", title: "סקר מנדטים של מעריב | לראשונה מזה מספר חודשים: אחת המפלגות מצליחה לשבור את תקרת הזכוכית", publisher: "מעריב" }
+    filing:
+      ref: "4164"
+      url: "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election83/he/Survey_4164.pdf"
+      commissionedBy: { he: "עיתון מעריב", en: "Maariv newspaper", ar: "صحيفة معاريف", ru: "газета «Маарив»", es: "diario Maariv", fr: "journal Maariv" }
+      conductedBy: { he: "לזר מחקרים בראשות ד\"ר מנחם לזר", en: "Lazar Research, headed by Dr. Menahem Lazar", ar: "لازار للأبحاث برئاسة د. مناحيم لازار", ru: "Lazar Research под руководством д-ра Менахема Лазара", es: "Lazar Research, bajo la dirección del Dr. Menahem Lazar", fr: "Lazar Research, sous la direction du Dr Menahem Lazar" }
+      population:
+        he: "מדגם מייצג של אזרחי ישראל מגיל 18 ומעלה, יהודים וערבים כאחד"
+        en: "A representative sample of Israeli citizens aged 18 and over, Jews and Arabs alike"
+        ar: "عيّنة تمثيلية من مواطني إسرائيل من سن 18 فما فوق، يهودًا وعربًا على حدّ سواء"
+        ru: "Репрезентативная выборка граждан Израиля в возрасте от 18 лет, как евреев, так и арабов"
+        es: "Una muestra representativa de ciudadanos israelíes de 18 años o más, tanto judíos como árabes"
+        fr: "Un échantillon représentatif des citoyens israéliens de 18 ans et plus, Juifs comme Arabes"
+      asked: 4217
+      answered: 610
+      marginOfError: 4.4
+      question:
+        he: "אם היו מתקיימות היום בחירות לכנסת, לאיזו מפלגה היית מצביע?"
+        en: "If elections to the Knesset were held today, which party would you vote for?"
+        ar: "لو جرت انتخابات للكنيست اليوم، لأي حزب كنت ستصوّت؟"
+        ru: "Если бы выборы в Кнессет проходили сегодня, за какую партию вы бы проголосовали?"
+        es: "Si hoy se celebraran elecciones a la Knéset, ¿por qué partido votaría?"
+        fr: "Si des élections à la Knesset avaient lieu aujourd’hui, pour quel parti voteriez-vous ?"
+      note:
+        he: "בדיווח טעות הדגימה היא ±4.4%; בכתבה דווח ±4%."
+        en: "The filing gives a margin of error of ±4.4%; the article reported ±4%."
+        ar: "يذكر التقرير هامش خطأ قدره ±4.4%؛ وذكر المقال ±4%."
+        ru: "В отчёте указана погрешность ±4,4%; в статье — ±4%."
+        es: "El informe indica un margen de error de ±4,4 %; el artículo informó de ±4 %."
+        fr: "La déclaration indique une marge d’erreur de ±4,4 % ; l’article faisait état de ±4 %."
   - id: 2026-09-24-i24-direct-polls
     published: "2026-09-24"
     fieldwork: { from: "2026-09-24", to: "2026-09-24" }
@@ -268,6 +310,28 @@ polls:
     verification: "all 13 figures, the 4 below-threshold shares and the 3 blocs in the poll article text (22.09.26 21:07, read 24 Sep in the Browser pane); methodology block verbatim: מדגם ייעוץ ומחקר/מנו גבע, 22.9.2026, n=501 of 2,498, ±4.4%, online + phone"
     sources:
       - { url: "https://www.mako.co.il/news-israel-elections/2026/Article-fad59e819c9c0a1027.htm", title: "סקר המנדטים של חדשות 12: המפלגה ששוב עוברת את אחוז החסימה והשינויים בתוך הגושים", publisher: "N12" }
+    filing:
+      ref: "4162"
+      url: "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election81/he/Survey_4162.pdf"
+      commissionedBy: { he: "חברת החדשות (חדשות 12)", en: "The News Company (Channel 12)", ar: "شركة الأخبار (القناة 12)", ru: "Новостная компания (12-й канал)", es: "Compañía de Noticias (Canal 12)", fr: "Société des nouvelles (Chaîne 12)" }
+      conductedBy: { he: "מדגם יעוץ ומחקר בראשות מנו גבע", en: "Midgam Consulting and Research, headed by Mano Geva", ar: "مدغام للاستشارات والأبحاث برئاسة مانو غيفع", ru: "«Мидгам — консалтинг и исследования» под руководством Мано Гевы", es: "Midgam Consultoría e Investigación, bajo la dirección de Mano Geva", fr: "Midgam Conseil et Recherche, sous la direction de Mano Geva" }
+      population:
+        he: "בעלי זכות בחירה - כלל האוכלוסייה בישראל מגיל 18 ומעלה"
+        en: "Eligible voters — the whole population of Israel aged 18 and over"
+        ar: "أصحاب حق الاقتراع — عموم السكان في إسرائيل من سن 18 فما فوق"
+        ru: "Имеющие право голоса — всё население Израиля в возрасте от 18 лет"
+        es: "Personas con derecho a voto: toda la población de Israel de 18 años o más"
+        fr: "Les personnes ayant le droit de vote — l’ensemble de la population d’Israël âgée de 18 ans et plus"
+      asked: 2514
+      answered: 501
+      marginOfError: 4.4
+      question:
+        he: "אילו הבחירות לכנסת היו מתקיימות היום, לאיזו מפלגה היית מצביע?"
+        en: "If the Knesset elections were held today, which party would you vote for?"
+        ar: "لو جرت انتخابات الكنيست اليوم، لأي حزب كنت ستصوّت؟"
+        ru: "Если бы выборы в Кнессет проходили сегодня, за какую партию вы бы проголосовали?"
+        es: "Si las elecciones a la Knéset se celebraran hoy, ¿por qué partido votaría?"
+        fr: "Si les élections à la Knesset avaient lieu aujourd’hui, pour quel parti voteriez-vous ?"
   - id: 2026-09-18-maariv-lazar
     published: "2026-09-18"
     fieldwork: { from: "2026-09-16", to: "2026-09-17" }
@@ -300,6 +364,35 @@ polls:
     verification: "all 13 figures in the article's own list line and 3 blocs in the text (18/09/2026 06:00); methodology verbatim: 16–17 Sep, 4,089 asked, 600 respondents (15%), 18+, Jews and Arabs, ±4%; לזר מחקרים/ד\"ר מנחם לזר with Panel4ALL. Also indexed by themadad.com (18/09/2026, סוקר: מנחם לזר)"
     sources:
       - { url: "https://www.maariv.co.il/news/politics/article-1368599", title: "סקר מנדטים של מעריב | השפל הגדול של הליכוד נמשך: נתניהו קיבל בשורה רעה לקראת הבחירות", publisher: "מעריב" }
+    filing:
+      ref: "4158"
+      url: "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election77/he/Survey_4158.pdf"
+      commissionedBy: { he: "עיתון מעריב", en: "Maariv newspaper", ar: "صحيفة معاريف", ru: "газета «Маарив»", es: "diario Maariv", fr: "journal Maariv" }
+      conductedBy: { he: "לזר מחקרים בראשות ד\"ר מנחם לזר", en: "Lazar Research, headed by Dr. Menahem Lazar", ar: "لازار للأبحاث برئاسة د. مناحيم لازار", ru: "Lazar Research под руководством д-ра Менахема Лазара", es: "Lazar Research, bajo la dirección del Dr. Menahem Lazar", fr: "Lazar Research, sous la direction du Dr Menahem Lazar" }
+      population:
+        he: "מדגם מייצג של אזרחי ישראל מגיל 18 ומעלה, יהודים וערבים כאחד"
+        en: "A representative sample of Israeli citizens aged 18 and over, Jews and Arabs alike"
+        ar: "عيّنة تمثيلية من مواطني إسرائيل من سن 18 فما فوق، يهودًا وعربًا على حدّ سواء"
+        ru: "Репрезентативная выборка граждан Израиля в возрасте от 18 лет, как евреев, так и арабов"
+        es: "Una muestra representativa de ciudadanos israelíes de 18 años o más, tanto judíos como árabes"
+        fr: "Un échantillon représentatif des citoyens israéliens de 18 ans et plus, Juifs comme Arabes"
+      asked: 4089
+      answered: 600
+      marginOfError: 4.4
+      question:
+        he: "אם היו מתקיימות היום בחירות לכנסת, לאיזו מפלגה היית מצביע?"
+        en: "If elections to the Knesset were held today, which party would you vote for?"
+        ar: "لو جرت انتخابات للكنيست اليوم، لأي حزب كنت ستصوّت؟"
+        ru: "Если бы выборы в Кнессет проходили сегодня, за какую партию вы бы проголосовали?"
+        es: "Si hoy se celebraran elecciones a la Knéset, ¿por qué partido votaría?"
+        fr: "Si des élections à la Knesset avaient lieu aujourd’hui, pour quel parti voteriez-vous ?"
+      note:
+        he: "בדיווח טעות הדגימה היא ±4.4%; בכתבה דווח ±4%."
+        en: "The filing gives a margin of error of ±4.4%; the article reported ±4%."
+        ar: "يذكر التقرير هامش خطأ قدره ±4.4%؛ وذكر المقال ±4%."
+        ru: "В отчёте указана погрешность ±4,4%; в статье — ±4%."
+        es: "El informe indica un margen de error de ±4,4 %; el artículo informó de ±4 %."
+        fr: "La déclaration indique une marge d’erreur de ±4,4 % ; l’article faisait état de ±4 %."
   - id: 2026-09-17-channel14-nextdata
     published: "2026-09-17"
     fieldwork: { from: "2026-09-17", to: "2026-09-17" }
@@ -328,6 +421,21 @@ polls:
     verification: "all 11 figures and 3 blocs in the article text (17.09.26, re-read in the browser on 18 Sep); methodology verbatim: 17 September 2026, NEXT DATA, 817 respondents, analysis שלמה פילבר; no margin of error stated"
     sources:
       - { url: "https://www.c14.co.il/article/1706627", title: "אחרי הסערה עם רע״מ: איזנקוט נחלש, נתניהו פותח פער דרמטי", publisher: "ערוץ 14" }
+    filing:
+      ref: "4159"
+      url: "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election78/he/Survey_4159.pdf"
+      commissionedBy: { he: "ערוץ עכשיו 14", en: "Channel 14", ar: "القناة 14", ru: "14-й канал", es: "Canal 14", fr: "Chaîne 14" }
+      conductedBy: { he: "חברת Next Data", en: "Next Data", ar: "شركة Next Data", ru: "компания Next Data", es: "empresa Next Data", fr: "société Next Data" }
+      population:
+        he: "נדגמים בוגרים (בני 18+), המהווים מדגם מייצג של אוכלוסיית אזרחי ישראל הרשאים לבחור"
+        en: "Adult respondents (18+) forming a representative sample of Israeli citizens eligible to vote"
+        ar: "مستطلَعون بالغون (18+) يشكّلون عيّنة تمثيلية من المواطنين الإسرائيليين الذين يحق لهم التصويت"
+        ru: "Взрослые респонденты (18+), составляющие репрезентативную выборку граждан Израиля с правом голоса"
+        es: "Encuestados adultos (18+) que forman una muestra representativa de los ciudadanos israelíes con derecho a voto"
+        fr: "Des répondants adultes (18 ans et plus) formant un échantillon représentatif des citoyens israéliens ayant le droit de vote"
+      asked: 8331
+      answered: 817
+      marginOfError: 3.4
   - id: 2026-09-17-i24-direct-polls
     published: "2026-09-17"
     fieldwork: { from: "2026-09-17", to: "2026-09-17" }
@@ -358,6 +466,35 @@ polls:
     verification: "all 12 figures in the article's own list line ('הליכוד 27; ישר! 21; …') and 3 blocs in the text (17.09 19:32, re-read 18 Sep); methodology verbatim: דיירקט פולס/צוריאל שרון, 17 Sep 2026, digital system with panel, 519 adults, ±4.2% at 95%"
     sources:
       - { url: "https://www.i24news.tv/he/news/israel-elections-2026/polls/artc-5b0e5baa", title: "סקר i24NEWS: וינטר מתחזק - והפער בין הליכוד לאיזנקוט גדל | מפת המנדטים", publisher: "i24NEWS" }
+    filing:
+      ref: "4161"
+      url: "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election80/he/Survey_4161.pdf"
+      commissionedBy: { he: "חדשות המזרח התיכון I24 בע״מ", en: "Middle East News I24 Ltd.", ar: "أخبار الشرق الأوسط I24 م.ض.", ru: "«Новости Ближнего Востока I24» Ltd.", es: "Noticias de Oriente Medio I24 Ltd.", fr: "Nouvelles du Moyen-Orient I24 Ltd." }
+      conductedBy: { he: "דיירקט פולס בע\"מ בראשות צוריאל שרון", en: "Direct Polls Ltd., headed by Tzuriel Sharon", ar: "Direct Polls م.ض. برئاسة تسوريئيل شارون", ru: "Direct Polls Ltd. под руководством Цуриэля Шарона", es: "Direct Polls Ltd., bajo la dirección de Tzuriel Sharon", fr: "Direct Polls Ltd., sous la direction de Tzuriel Sharon" }
+      population:
+        he: "מדגם ארצי ומייצג של כלל האוכלוסייה בישראל בגילאי 18+, לרבות יהודים וערבים"
+        en: "A national, representative sample of Israel's whole population aged 18+, Jews and Arabs included"
+        ar: "عيّنة قُطرية تمثيلية لعموم السكان في إسرائيل من سن 18 فما فوق، بمن فيهم اليهود والعرب"
+        ru: "Общенациональная репрезентативная выборка всего населения Израиля в возрасте 18+, включая евреев и арабов"
+        es: "Una muestra nacional y representativa de toda la población de Israel de 18 años o más, incluidos judíos y árabes"
+        fr: "Un échantillon national et représentatif de l’ensemble de la population d’Israël âgée de 18 ans et plus, Juifs et Arabes compris"
+      asked: 8550
+      answered: 525
+      marginOfError: 4.2
+      question:
+        he: "אילו הבחירות לכנסת היו מתקיימות היום, למי הייתם מצביעים?"
+        en: "If the Knesset elections were held today, who would you vote for?"
+        ar: "لو جرت انتخابات الكنيست اليوم، لمن كنتم ستصوّتون؟"
+        ru: "Если бы выборы в Кнессет проходили сегодня, за кого бы вы проголосовали?"
+        es: "Si las elecciones a la Knéset se celebraran hoy, ¿a quién votarían?"
+        fr: "Si les élections à la Knesset avaient lieu aujourd’hui, pour qui voteriez-vous ?"
+      note:
+        he: "בדיווח השיבו 525; בכתבה דווח מדגם של 519."
+        en: "The filing lists 525 respondents; the article reported 519."
+        ar: "يذكر التقرير 525 مستجيبًا؛ وذكر المقال 519."
+        ru: "В отчёте указано 525 ответивших; в статье — 519."
+        es: "El informe indica 525 encuestados; el artículo informó de 519."
+        fr: "La déclaration indique 525 répondants ; l’article en annonçait 519."
   - id: 2026-09-17-israelhayom-kantar
     published: "2026-09-17"
     fieldwork: { from: "2026-09-16", to: "2026-09-17" }
@@ -385,6 +522,28 @@ polls:
     verification: "seats from the article's Infogram chart (b96c8d0d…, '17.9.26 סקר מנדטים'): 22(24) 20(21) 13(13) 9(9) 8(9) 8(7) 7(8) 7(7) 7(7) 6(6) 5(5) 4(4) 4(0); 7 figures also in the article text; methodology block verbatim: קנטאר/דודי חסיד, 16-17.9, n=551 of 2,489 asked, ±4.2%"
     sources:
       - { url: "https://www.israelhayom.co.il/news/politics/article/21444759", title: "איזנקוט נחלש, גוש נתניהו ממקסם את כוחו | סקר מנדטים", publisher: "ישראל היום" }
+    filing:
+      ref: "4160"
+      url: "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election79/he/Survey_4160.pdf"
+      commissionedBy: { he: "עיתון ישראל היום בע\"מ", en: "Israel Hayom Newspaper Ltd.", ar: "صحيفة يسرائيل هيوم م.ض.", ru: "газета «Исраэль ха-Йом» Ltd.", es: "diario Israel Hayom Ltd.", fr: "journal Israel Hayom Ltd." }
+      conductedBy: { he: "קאנטר ישראל", en: "Kantar Israel", ar: "كانتار إسرائيل", ru: "Kantar Israel", es: "Kantar Israel", fr: "Kantar Israel" }
+      population:
+        he: "מדגם ארצי ומייצג של האוכלוסייה בישראל בגילאי 18+ (יהודים וערבים)"
+        en: "A national, representative sample of Israel's population aged 18+ (Jews and Arabs)"
+        ar: "عيّنة قُطرية تمثيلية للسكان في إسرائيل من سن 18 فما فوق (يهود وعرب)"
+        ru: "Общенациональная репрезентативная выборка населения Израиля в возрасте 18+ (евреи и арабы)"
+        es: "Una muestra nacional y representativa de la población de Israel de 18 años o más (judíos y árabes)"
+        fr: "Un échantillon national et représentatif de la population d’Israël âgée de 18 ans et plus (Juifs et Arabes)"
+      asked: 2489
+      answered: 551
+      marginOfError: 4.2
+      question:
+        he: "אילו היו מתקיימות היום הבחירות לכנסת, והמפלגות המתמודדות יהיו המפלגות הבאות עם ראשי המפלגות שברשימה בפניך, עבור איזו מפלגה היית מצביע?"
+        en: "If the Knesset elections were held today, and the parties running were the following parties, with the party leaders on the list in front of you, which party would you vote for?"
+        ar: "لو جرت انتخابات الكنيست اليوم، وكانت الأحزاب المتنافسة هي الأحزاب التالية مع رؤساء الأحزاب الواردين في القائمة أمامك، لأي حزب كنت ستصوّت؟"
+        ru: "Если бы выборы в Кнессет проходили сегодня и в них участвовали следующие партии с лидерами из списка перед вами, за какую партию вы бы проголосовали?"
+        es: "Si hoy se celebraran las elecciones a la Knéset y los partidos que compiten fueran los siguientes, con los líderes de partido de la lista que tiene delante, ¿por qué partido votaría?"
+        fr: "Si les élections à la Knesset avaient lieu aujourd’hui et que les partis en lice étaient les suivants, avec les chefs de parti de la liste qui vous est présentée, pour quel parti voteriez-vous ?"
   - id: 2026-09-17-zman-tatika
     published: "2026-09-17"
     fieldwork: { from: "2026-09-16", to: "2026-09-17" }
@@ -445,6 +604,35 @@ polls:
     verification: "all 12 figures and 3 blocs in the article text (16.09 20:47, re-read 18 Sep); methodology verbatim: המדד (רוזנר, סלפקוב) with סטט-נט, פרויקט המדגם and אסקריא; conducted the day before (15 Sep), 886 respondents, ±3.3%"
     sources:
       - { url: "https://13tv.co.il/item/news/politics/politics/uo4p5-905360485/", title: "למרות שפל חסר תקדים בליכוד – מהפך בגושים לטובת נתניהו", publisher: "חדשות 13" }
+    filing:
+      ref: "4153"
+      url: "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election75/he/Survey_4153.pdf"
+      commissionedBy: { he: "חדשות 13", en: "Channel 13", ar: "القناة 13", ru: "13-й канал", es: "Canal 13", fr: "Chaîne 13" }
+      conductedBy: { he: "שמואל רוזנר עם חברת פאנל פרוייקט המדגם בהנהלת ד\"ר אריאל איילון, חברת סטטנט נט בהנהלת יוסף מקלדה, חברת אסקריא בהנהלת דודי דרור; יעוץ סטטיסטי: פרופ׳ דוד שטיינברג", en: "Shmuel Rosner with the panel company Midgam Project (managed by Dr. Ariel Ayalon), Stat-Net (managed by Yousef Makladeh) and Askaria (managed by Dudi Dror); statistical advice: Prof. David Steinberg", ar: "شموئيل روزنر مع شركة البانل «مشروع مدغام» بإدارة د. أرييل أيالون، وشركة ستات-نت بإدارة يوسف مقلدة، وشركة أسكاريا بإدارة دودي درور؛ استشارة إحصائية: البروفيسور دافيد شتاينبرغ", ru: "Шмуэль Рознер с панельной компанией Midgam Project (руководитель — д-р Ариэль Аялон), компанией Stat-Net (руководитель — Юсеф Макладе) и компанией Askaria (руководитель — Дуди Дрор); статистический консультант — проф. Давид Штайнберг", es: "Shmuel Rosner con la empresa de panel Midgam Project (dirigida por el Dr. Ariel Ayalon), la empresa Stat-Net (dirigida por Yousef Makladeh) y la empresa Askaria (dirigida por Dudi Dror); asesoría estadística: Prof. David Steinberg", fr: "Shmuel Rosner avec la société de panel Midgam Project (dirigée par le Dr Ariel Ayalon), la société Stat-Net (dirigée par Yousef Makladeh) et la société Askaria (dirigée par Dudi Dror) ; conseil statistique : Pr David Steinberg" }
+      population:
+        he: "מדגם שכבות מייצג של אוכלוסיית המדינה בגילאי 18+"
+        en: "A representative stratified sample of the country's population aged 18+"
+        ar: "عيّنة طبقية تمثيلية لسكان الدولة من سن 18 فما فوق"
+        ru: "Репрезентативная стратифицированная выборка населения страны в возрасте 18+"
+        es: "Una muestra estratificada y representativa de la población del país de 18 años o más"
+        fr: "Un échantillon stratifié et représentatif de la population du pays âgée de 18 ans et plus"
+      asked: 8097
+      answered: 1023
+      marginOfError: 3.1
+      question:
+        he: "אם הבחירות לכנסת היו מתקיימות היום, לאיזו מפלגה היית מצביע/ה?"
+        en: "If the Knesset elections were held today, which party would you vote for?"
+        ar: "لو جرت انتخابات الكنيست اليوم، لأي حزب كنت ستصوّت/ين؟"
+        ru: "Если бы выборы в Кнессет проходили сегодня, за какую партию вы бы проголосовали?"
+        es: "Si las elecciones a la Knéset se celebraran hoy, ¿por qué partido votaría?"
+        fr: "Si les élections à la Knesset avaient lieu aujourd’hui, pour quel parti voteriez-vous ?"
+      note:
+        he: "בדיווח השיבו 1,023, ומהם 886 נכללו בחישוב המנדטים — המספר שדווח בכתבה. טעות הדגימה בדיווח היא ±3.1% (בכתבה ±3.3%), והנתונים נאספו מ-15 בספטמבר בשעה 9:00 עד 16 בספטמבר בשעה 9:00 (בכתבה: 15 בספטמבר)."
+        en: "The filing lists 1,023 respondents, of whom 886 — the figure the article reported — were used for the seat calculation. It gives a margin of error of ±3.1% (the article: ±3.3%) and fieldwork from 9:00 on 15 Sep to 9:00 on 16 Sep (the article: 15 Sep)."
+        ar: "يذكر التقرير 1,023 مستجيبًا، أُدرج منهم 886 — وهو الرقم الذي ذكره المقال — في حساب المقاعد. وهامش الخطأ فيه ±3.1% (في المقال ±3.3%)، وجُمعت البيانات من الساعة 9:00 يوم 15 أيلول/سبتمبر حتى الساعة 9:00 يوم 16 أيلول/سبتمبر (في المقال: 15 أيلول/سبتمبر)."
+        ru: "В отчёте 1023 ответивших, из них 886 — число, приведённое в статье, — вошли в расчёт мандатов. Погрешность в отчёте ±3,1% (в статье ±3,3%), сбор данных — с 9:00 15 сентября до 9:00 16 сентября (в статье — 15 сентября)."
+        es: "El informe indica 1023 encuestados, de los cuales 886 —la cifra que publicó el artículo— se usaron para calcular los escaños. Da un margen de error de ±3,1 % (el artículo: ±3,3 %) y un trabajo de campo desde las 9:00 del 15 de septiembre hasta las 9:00 del 16 de septiembre (el artículo: 15 de septiembre)."
+        fr: "La déclaration indique 1 023 répondants, dont 886 — le chiffre publié par l’article — ont servi au calcul des sièges. Elle donne une marge d’erreur de ±3,1 % (l’article : ±3,3 %) et un terrain du 15 septembre à 9 h 00 au 16 septembre à 9 h 00 (l’article : le 15 septembre)."
   - id: 2026-09-15-channel14-nextdata
     published: "2026-09-15"
     fieldwork: { from: "2026-09-15", to: "2026-09-15" }
@@ -473,6 +661,28 @@ polls:
     verification: "all 11 figures and 3 blocs in the article text (15.09.26); methodology verbatim: NEXT DATA, 483 respondents, 15 September 2026, analysis שלמה פילבר; no margin of error stated"
     sources:
       - { url: "https://www.c14.co.il/article/1703304", title: "הציבור בוחן חלופות? המפלגות הקטנות מתחילות להרים ראש", publisher: "ערוץ 14" }
+    filing:
+      ref: "4150"
+      url: "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election73/he/Survey_4150.pdf"
+      commissionedBy: { he: "ערוץ עכשיו 14", en: "Channel 14", ar: "القناة 14", ru: "14-й канал", es: "Canal 14", fr: "Chaîne 14" }
+      conductedBy: { he: "חברת Next Data", en: "Next Data", ar: "شركة Next Data", ru: "компания Next Data", es: "empresa Next Data", fr: "société Next Data" }
+      population:
+        he: "נדגמים בוגרים (בני 18+), המהווים מדגם מייצג של אוכלוסיית אזרחי ישראל הרשאים לבחור"
+        en: "Adult respondents (18+) forming a representative sample of Israeli citizens eligible to vote"
+        ar: "مستطلَعون بالغون (18+) يشكّلون عيّنة تمثيلية من المواطنين الإسرائيليين الذين يحق لهم التصويت"
+        ru: "Взрослые респонденты (18+), составляющие репрезентативную выборку граждан Израиля с правом голоса"
+        es: "Encuestados adultos (18+) que forman una muestra representativa de los ciudadanos israelíes con derecho a voto"
+        fr: "Des répondants adultes (18 ans et plus) formant un échantillon représentatif des citoyens israéliens ayant le droit de vote"
+      asked: 13486
+      answered: 433
+      marginOfError: 4.7
+      note:
+        he: "בדיווח השיבו 433; בכתבה דווח מדגם של 483."
+        en: "The filing lists 433 respondents; the article reported 483."
+        ar: "يذكر التقرير 433 مستجيبًا؛ وذكر المقال 483."
+        ru: "В отчёте указано 433 ответивших; в статье — 483."
+        es: "El informe indica 433 encuestados; el artículo informó de 483."
+        fr: "La déclaration indique 433 répondants ; l’article en annonçait 483."
   - id: 2026-09-14-kan-kantar
     published: "2026-09-14"
     outlet: { he: "כאן חדשות", en: "Kan News", ar: "أخبار «كان»", ru: "Новости «Кан»", es: "Kan News", fr: "Kan News" }
@@ -503,6 +713,35 @@ polls:
     verification: "seats and blocs read from Kan's own infographic (whatsapp-image-2026-09-14-at-191436.jpeg); institute and sample from its methodology strip; 10 of 13 lists also stated in the article text"
     sources:
       - { url: "https://www.kan.org.il/content/kan-news/politic/1099439/", title: "סקר כאן חדשות: איזנקוט מוביל עם 24 מנדטים, נתניהו נחלש", publisher: "כאן חדשות" }
+    filing:
+      ref: "4146"
+      url: "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election70/he/Survey_4146.pdf"
+      commissionedBy: { he: "תאגיד השידור כאן", en: "Kan Broadcasting Corporation", ar: "هيئة البث «كان»", ru: "Вещательная корпорация «Кан»", es: "Corporación de Radiodifusión Kan", fr: "Société de radiodiffusion Kan" }
+      conductedBy: { he: "קאנטר ישראל", en: "Kantar Israel", ar: "كانتار إسرائيل", ru: "Kantar Israel", es: "Kantar Israel", fr: "Kantar Israel" }
+      population:
+        he: "מדגם ארצי ומייצג של האוכלוסייה בישראל בגילאי 18+ (יהודים וערבים)"
+        en: "A national, representative sample of Israel's population aged 18+ (Jews and Arabs)"
+        ar: "عيّنة قُطرية تمثيلية للسكان في إسرائيل من سن 18 فما فوق (يهود وعرب)"
+        ru: "Общенациональная репрезентативная выборка населения Израиля в возрасте 18+ (евреи и арабы)"
+        es: "Una muestra nacional y representativa de la población de Israel de 18 años o más (judíos y árabes)"
+        fr: "Un échantillon national et représentatif de la population d’Israël âgée de 18 ans et plus (Juifs et Arabes)"
+      asked: 2363
+      answered: 550
+      marginOfError: 4.2
+      question:
+        he: "אילו היו מתקיימות היום הבחירות לכנסת, והמפלגות המתמודדות יהיו המפלגות הבאות עם ראשי המפלגות שברשימה בפניך, עבור איזו מפלגה היית מצביע?"
+        en: "If the Knesset elections were held today, and the parties running were the following parties, with the party leaders on the list in front of you, which party would you vote for?"
+        ar: "لو جرت انتخابات الكنيست اليوم، وكانت الأحزاب المتنافسة هي الأحزاب التالية مع رؤساء الأحزاب الواردين في القائمة أمامك، لأي حزب كنت ستصوّت؟"
+        ru: "Если бы выборы в Кнессет проходили сегодня и в них участвовали следующие партии с лидерами из списка перед вами, за какую партию вы бы проголосовали?"
+        es: "Si hoy se celebraran las elecciones a la Knéset y los partidos que compiten fueran los siguientes, con los líderes de partido de la lista que tiene delante, ¿por qué partido votaría?"
+        fr: "Si les élections à la Knesset avaient lieu aujourd’hui et que les partis en lice étaient les suivants, avec les chefs de parti de la liste qui vous est présentée, pour quel parti voteriez-vous ?"
+      note:
+        he: "לפי הדיווח, הנתונים נאספו ב-14 בספטמבר בין 10:45 ל-16:00."
+        en: "Per the filing, fieldwork ran on 14 Sep from 10:45 to 16:00."
+        ar: "بحسب التقرير، جُمعت البيانات يوم 14 أيلول/سبتمبر من الساعة 10:45 حتى 16:00."
+        ru: "Согласно отчёту, данные собирались 14 сентября с 10:45 до 16:00."
+        es: "Según el informe, el trabajo de campo se hizo el 14 de septiembre, de 10:45 a 16:00."
+        fr: "Selon la déclaration, le terrain a eu lieu le 14 septembre, de 10 h 45 à 16 h 00."
   - id: 2026-09-14-n12-midgam
     published: "2026-09-14"
     fieldwork: { from: "2026-09-14", to: "2026-09-14" }
@@ -535,6 +774,28 @@ polls:
     sources:
       - { url: "https://www.mako.co.il/news-israel-elections/2026/Article-f91e6c26f80a0a1027.htm", title: "סקר המנדטים של חדשות 12: הליכוד וישר נחלשות, הנדל וזליכה עוברים לראשונה", publisher: "N12" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/Article-16f5b846bd3a0a1026.htm", title: "הצניחה של הליכוד, ישר, עוצמה יהודית וביחד", publisher: "N12" }
+    filing:
+      ref: "4147"
+      url: "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election72/he/Survey_4147.pdf"
+      commissionedBy: { he: "חברת החדשות (חדשות 12)", en: "The News Company (Channel 12)", ar: "شركة الأخبار (القناة 12)", ru: "Новостная компания (12-й канал)", es: "Compañía de Noticias (Canal 12)", fr: "Société des nouvelles (Chaîne 12)" }
+      conductedBy: { he: "מדגם יעוץ ומחקר בראשות מנו גבע", en: "Midgam Consulting and Research, headed by Mano Geva", ar: "مدغام للاستشارات والأبحاث برئاسة مانو غيفع", ru: "«Мидгам — консалтинг и исследования» под руководством Мано Гевы", es: "Midgam Consultoría e Investigación, bajo la dirección de Mano Geva", fr: "Midgam Conseil et Recherche, sous la direction de Mano Geva" }
+      population:
+        he: "בעלי זכות בחירה - כלל האוכלוסייה בישראל מגיל 18 ומעלה"
+        en: "Eligible voters — the whole population of Israel aged 18 and over"
+        ar: "أصحاب حق الاقتراع — عموم السكان في إسرائيل من سن 18 فما فوق"
+        ru: "Имеющие право голоса — всё население Израиля в возрасте от 18 лет"
+        es: "Personas con derecho a voto: toda la población de Israel de 18 años o más"
+        fr: "Les personnes ayant le droit de vote — l’ensemble de la population d’Israël âgée de 18 ans et plus"
+      asked: 2514
+      answered: 502
+      marginOfError: 4.4
+      question:
+        he: "אילו הבחירות לכנסת היו מתקיימות היום, לאיזו מפלגה היית מצביע?"
+        en: "If the Knesset elections were held today, which party would you vote for?"
+        ar: "لو جرت انتخابات الكنيست اليوم، لأي حزب كنت ستصوّت؟"
+        ru: "Если бы выборы в Кнессет проходили сегодня, за какую партию вы бы проголосовали?"
+        es: "Si las elecciones a la Knéset se celebraran hoy, ¿por qué partido votaría?"
+        fr: "Si les élections à la Knesset avaient lieu aujourd’hui, pour quel parti voteriez-vous ?"
   - id: 2026-09-11-maariv-lazar
     published: "2026-09-11"
     fieldwork: { from: "2026-09-09", to: "2026-09-10" }
@@ -565,6 +826,35 @@ polls:
     verification: "all 12 figures and 3 blocs in the article text (11/09/2026 06:01); methodology verbatim: 9–10 Sep, 4,329 asked, 601 respondents (14%), 18+, Jews and Arabs, ±4%; לזר מחקרים/ד\"ר מנחם לזר with Panel4ALL"
     sources:
       - { url: "https://www.maariv.co.il/news/politics/article-1365318", title: "סקר מנדטים של מעריב: הליכוד מתרסק לשפל היסטורי – אבל נתניהו מקבל חבל הצלה דרמטי", publisher: "מעריב" }
+    filing:
+      ref: "4144"
+      url: "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election67/he/Survey_4144.pdf"
+      commissionedBy: { he: "עיתון מעריב", en: "Maariv newspaper", ar: "صحيفة معاريف", ru: "газета «Маарив»", es: "diario Maariv", fr: "journal Maariv" }
+      conductedBy: { he: "לזר מחקרים בראשות ד\"ר מנחם לזר", en: "Lazar Research, headed by Dr. Menahem Lazar", ar: "لازار للأبحاث برئاسة د. مناحيم لازار", ru: "Lazar Research под руководством д-ра Менахема Лазара", es: "Lazar Research, bajo la dirección del Dr. Menahem Lazar", fr: "Lazar Research, sous la direction du Dr Menahem Lazar" }
+      population:
+        he: "מדגם מייצג של אזרחי ישראל מגיל 18 ומעלה, יהודים וערבים כאחד"
+        en: "A representative sample of Israeli citizens aged 18 and over, Jews and Arabs alike"
+        ar: "عيّنة تمثيلية من مواطني إسرائيل من سن 18 فما فوق، يهودًا وعربًا على حدّ سواء"
+        ru: "Репрезентативная выборка граждан Израиля в возрасте от 18 лет, как евреев, так и арабов"
+        es: "Una muestra representativa de ciudadanos israelíes de 18 años o más, tanto judíos como árabes"
+        fr: "Un échantillon représentatif des citoyens israéliens de 18 ans et plus, Juifs comme Arabes"
+      asked: 4329
+      answered: 601
+      marginOfError: 4.4
+      question:
+        he: "אם היו מתקיימות היום בחירות לכנסת, לאיזו מפלגה היית מצביע?"
+        en: "If elections to the Knesset were held today, which party would you vote for?"
+        ar: "لو جرت انتخابات للكنيست اليوم، لأي حزب كنت ستصوّت؟"
+        ru: "Если бы выборы в Кнессет проходили сегодня, за какую партию вы бы проголосовали?"
+        es: "Si hoy se celebraran elecciones a la Knéset, ¿por qué partido votaría?"
+        fr: "Si des élections à la Knesset avaient lieu aujourd’hui, pour quel parti voteriez-vous ?"
+      note:
+        he: "בדיווח טעות הדגימה היא ±4.4% וכחול לבן מקבלת 1.1%; בכתבה דווחו ±4% ו-1.3%."
+        en: "The filing gives a margin of error of ±4.4% and Blue and White 1.1%; the article reported ±4% and 1.3%."
+        ar: "يذكر التقرير هامش خطأ قدره ±4.4% ونسبة 1.1% لأزرق أبيض؛ وذكر المقال ±4% و1.3%."
+        ru: "В отчёте погрешность ±4,4%, а у «Кахоль-лаван» — 1,1%; в статье — ±4% и 1,3%."
+        es: "El informe indica un margen de error de ±4,4 % y un 1,1 % para Azul y Blanco; el artículo informó de ±4 % y 1,3 %."
+        fr: "La déclaration indique une marge d’erreur de ±4,4 % et 1,1 % pour Bleu et Blanc ; l’article faisait état de ±4 % et de 1,3 %."
   - id: 2026-09-10-zman-tatika
     published: "2026-09-10"
     fieldwork: { from: "2026-09-09", to: "2026-09-10" }
@@ -624,6 +914,35 @@ polls:
     verification: "all 12 figures and 3 blocs in the article text (09.09 20:30); methodology verbatim: המדד (שמואל רוזנר, נח סלפקוב) with סטט-נט, פרויקט המדגם and אסקריא; 1,119 respondents, ±2.9%"
     sources:
       - { url: "https://13tv.co.il/item/news/politics/politics/z10wm-905351997/", title: "אחרי סגירת הרשימות: נתניהו נחלש, שוויון במפת הגושים", publisher: "חדשות 13" }
+    filing:
+      ref: "4140"
+      url: "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election64/he/Survey4140.pdf"
+      commissionedBy: { he: "חדשות 13", en: "Channel 13", ar: "القناة 13", ru: "13-й канал", es: "Canal 13", fr: "Chaîne 13" }
+      conductedBy: { he: "שמואל רוזנר עם חברת פאנל פרוייקט המדגם בהנהלת ד\"ר אריאל איילון, חברת סטטנט נט בהנהלת יוסף מקלדה, חברת אסקריא בהנהלת דודי דרור", en: "Shmuel Rosner with the panel company Midgam Project (managed by Dr. Ariel Ayalon), Stat-Net (managed by Yousef Makladeh) and Askaria (managed by Dudi Dror)", ar: "شموئيل روزنر مع شركة البانل «مشروع مدغام» بإدارة د. أرييل أيالون، وشركة ستات-نت بإدارة يوسف مقلدة، وشركة أسكاريا بإدارة دودي درور", ru: "Шмуэль Рознер с панельной компанией Midgam Project (руководитель — д-р Ариэль Аялон), компанией Stat-Net (руководитель — Юсеф Макладе) и компанией Askaria (руководитель — Дуди Дрор)", es: "Shmuel Rosner con la empresa de panel Midgam Project (dirigida por el Dr. Ariel Ayalon), la empresa Stat-Net (dirigida por Yousef Makladeh) y la empresa Askaria (dirigida por Dudi Dror)", fr: "Shmuel Rosner avec la société de panel Midgam Project (dirigée par le Dr Ariel Ayalon), la société Stat-Net (dirigée par Yousef Makladeh) et la société Askaria (dirigée par Dudi Dror)" }
+      population:
+        he: "מדגם שכבות מייצג של אוכלוסיית המדינה בגילאי 18+"
+        en: "A representative stratified sample of the country's population aged 18+"
+        ar: "عيّنة طبقية تمثيلية لسكان الدولة من سن 18 فما فوق"
+        ru: "Репрезентативная стратифицированная выборка населения страны в возрасте 18+"
+        es: "Una muestra estratificada y representativa de la población del país de 18 años o más"
+        fr: "Un échantillon stratifié et représentatif de la population du pays âgée de 18 ans et plus"
+      asked: 8834
+      answered: 1119
+      marginOfError: 3.2
+      question:
+        he: "אם הבחירות לכנסת היו מתקיימות היום, לאיזו מפלגה היית מצביע/ה?"
+        en: "If the Knesset elections were held today, which party would you vote for?"
+        ar: "لو جرت انتخابات الكنيست اليوم، لأي حزب كنت ستصوّت/ين؟"
+        ru: "Если бы выборы в Кнессет проходили сегодня, за какую партию вы бы проголосовали?"
+        es: "Si las elecciones a la Knéset se celebraran hoy, ¿por qué partido votaría?"
+        fr: "Si les élections à la Knesset avaient lieu aujourd’hui, pour quel parti voteriez-vous ?"
+      note:
+        he: "בדיווח ישר! מקבלת 21 מנדטים ועמך ישראל 5, וטעות הדגימה היא ±3.2%; בכתבה דווחו 22, 4 ו-±2.9%. לפי הדיווח, הנתונים נאספו ב-9 בספטמבר בין 8:00 ל-15:30."
+        en: "The filing lists Yashar! with 21 seats and Amkha Yisrael with 5, and a margin of error of ±3.2%; the article reported 22, 4 and ±2.9%. Per the filing, fieldwork ran on 9 Sep from 8:00 to 15:30."
+        ar: "يذكر التقرير 21 مقعدًا لياشار! و5 مقاعد لعمخا يسرائيل، وهامش خطأ قدره ±3.2%؛ وذكر المقال 22 و4 و±2.9%. بحسب التقرير، جُمعت البيانات يوم 9 أيلول/سبتمبر من الساعة 8:00 حتى 15:30."
+        ru: "В отчёте у «Яшар!» 21 мандат, у «Амха Исраэль» — 5, погрешность ±3,2%; в статье — 22, 4 и ±2,9%. Согласно отчёту, данные собирались 9 сентября с 8:00 до 15:30."
+        es: "El informe da 21 escaños a ¡Yashar! y 5 a Amkha Yisrael, y un margen de error de ±3,2 %; el artículo informó de 22, 4 y ±2,9 %. Según el informe, el trabajo de campo se hizo el 9 de septiembre, de 8:00 a 15:30."
+        fr: "La déclaration donne 21 sièges à Yashar! et 5 à Amkha Israël, et une marge d’erreur de ±3,2 % ; l’article faisait état de 22, de 4 et de ±2,9 %. Selon la déclaration, le terrain a eu lieu le 9 septembre, de 8 h 00 à 15 h 30."
   - id: 2026-09-09-channel14-nextdata
     published: "2026-09-09"
     fieldwork: { from: "2026-09-09", to: "2026-09-09" }
@@ -652,6 +971,28 @@ polls:
     verification: "all 11 figures and 3 blocs in the article text (09.09.26); the outlet names the Joint List 'חד\"ש-תע\"ל-בל\"ד'; methodology line verbatim: NEXT DATA, 537 respondents, 9 September 2026, analysis שלמה פילבר; no margin of error stated"
     sources:
       - { url: "https://www.c14.co.il/article/1697000", title: "אפקט השריונים? השינוי במפת המנדטים אחרי המהלך של נתניהו", publisher: "ערוץ 14" }
+    filing:
+      ref: "4143"
+      url: "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election66/he/Survey_4143.pdf"
+      commissionedBy: { he: "ערוץ עכשיו 14", en: "Channel 14", ar: "القناة 14", ru: "14-й канал", es: "Canal 14", fr: "Chaîne 14" }
+      conductedBy: { he: "חברת Next Data", en: "Next Data", ar: "شركة Next Data", ru: "компания Next Data", es: "empresa Next Data", fr: "société Next Data" }
+      population:
+        he: "נדגמים בוגרים (בני 18+), המהווים מדגם מייצג של אוכלוסיית אזרחי ישראל הרשאים לבחור"
+        en: "Adult respondents (18+) forming a representative sample of Israeli citizens eligible to vote"
+        ar: "مستطلَعون بالغون (18+) يشكّلون عيّنة تمثيلية من المواطنين الإسرائيليين الذين يحق لهم التصويت"
+        ru: "Взрослые респонденты (18+), составляющие репрезентативную выборку граждан Израиля с правом голоса"
+        es: "Encuestados adultos (18+) que forman una muestra representativa de los ciudadanos israelíes con derecho a voto"
+        fr: "Des répondants adultes (18 ans et plus) formant un échantillon représentatif des citoyens israéliens ayant le droit de vote"
+      asked: 7862
+      answered: 537
+      marginOfError: 4.4
+      note:
+        he: "בדיווח רשימת המילואימניקים והכלכלית מקבלת 1.6%; בכתבה דווח 1.4%."
+        en: "The filing gives the Reservists and the Economic list 1.6%; the article reported 1.4%."
+        ar: "يذكر التقرير نسبة 1.6% لجنود الاحتياط والحزب الاقتصادي؛ وذكر المقال 1.4%."
+        ru: "В отчёте у списка «Резервисты и Экономическая партия» 1,6%; в статье — 1,4%."
+        es: "El informe da un 1,6 % a los Reservistas y la Económica; el artículo informó de un 1,4 %."
+        fr: "La déclaration donne 1,6 % aux Réservistes et à la liste Économique ; l’article faisait état de 1,4 %."
   - id: 2026-09-09-i24-direct-polls
     published: "2026-09-09"
     fieldwork: { from: "2026-09-09", to: "2026-09-09" }
@@ -682,6 +1023,28 @@ polls:
     verification: "all 12 figures and 3 blocs in the article text (09.09 20:24); methodology verbatim: דיירקט פולס/צוריאל שרון, 9 Sep 2026, digital system with panel, 1,054 adults, ±3.0% at 95%"
     sources:
       - { url: "https://www.i24news.tv/he/news/israel-elections-2026/polls/artc-a92f58d0", title: "סקר i24NEWS אחרי סגירת הרשימות: הליכוד שומרת על כוחה, וינטר נחלש | הנתונים המלאים", publisher: "i24NEWS" }
+    filing:
+      ref: "4138"
+      url: "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election61/he/Survey_4138.pdf"
+      commissionedBy: { he: "חדשות המזרח התיכון I24 בע״מ", en: "Middle East News I24 Ltd.", ar: "أخبار الشرق الأوسط I24 م.ض.", ru: "«Новости Ближнего Востока I24» Ltd.", es: "Noticias de Oriente Medio I24 Ltd.", fr: "Nouvelles du Moyen-Orient I24 Ltd." }
+      conductedBy: { he: "דיירקט פולס בע\"מ בראשות צוריאל שרון", en: "Direct Polls Ltd., headed by Tzuriel Sharon", ar: "Direct Polls م.ض. برئاسة تسوريئيل شارون", ru: "Direct Polls Ltd. под руководством Цуриэля Шарона", es: "Direct Polls Ltd., bajo la dirección de Tzuriel Sharon", fr: "Direct Polls Ltd., sous la direction de Tzuriel Sharon" }
+      population:
+        he: "מדגם ארצי ומייצג של כלל האוכלוסייה בישראל בגילאי 18+, לרבות יהודים וערבים"
+        en: "A national, representative sample of Israel's whole population aged 18+, Jews and Arabs included"
+        ar: "عيّنة قُطرية تمثيلية لعموم السكان في إسرائيل من سن 18 فما فوق، بمن فيهم اليهود والعرب"
+        ru: "Общенациональная репрезентативная выборка всего населения Израиля в возрасте 18+, включая евреев и арабов"
+        es: "Una muestra nacional y representativa de toda la población de Israel de 18 años o más, incluidos judíos y árabes"
+        fr: "Un échantillon national et représentatif de l’ensemble de la population d’Israël âgée de 18 ans et plus, Juifs et Arabes compris"
+      asked: 15700
+      answered: 1054
+      marginOfError: 3
+      question:
+        he: "אילו הבחירות לכנסת היו מתקיימות היום, למי הייתם מצביעים?"
+        en: "If the Knesset elections were held today, who would you vote for?"
+        ar: "لو جرت انتخابات الكنيست اليوم، لمن كنتم ستصوّتون؟"
+        ru: "Если бы выборы в Кнессет проходили сегодня, за кого бы вы проголосовали?"
+        es: "Si las elecciones a la Knéset se celebraran hoy, ¿a quién votarían?"
+        fr: "Si les élections à la Knesset avaient lieu aujourd’hui, pour qui voteriez-vous ?"
   - id: 2026-09-09-kan-kantar
     published: "2026-09-09"
     fieldwork: { from: "2026-09-09", to: "2026-09-09" }
@@ -714,6 +1077,30 @@ polls:
     verification: "all 13 figures and 4 blocs in the article text (9.9.26); methodology verbatim: 9.9.2026, Kantar, 2,300 invited, 554 respondents 18+, internet sample incl. Arab sector, ±4.2%"
     sources:
       - { url: "https://www.kan.org.il/content/kan-news/politic/1098105/", title: "הסקר הראשון אחרי סגירת הרשימות: איזנקוט ונתניהו מתחזקים, תיקו בין הגושים", publisher: "כאן חדשות" }
+    filing:
+      ref: "4137"
+      url: "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election60/he/Survey_4137.pdf"
+      commissionedBy: { he: "תאגיד השידור כאן", en: "Kan Broadcasting Corporation", ar: "هيئة البث «كان»", ru: "Вещательная корпорация «Кан»", es: "Corporación de Radiodifusión Kan", fr: "Société de radiodiffusion Kan" }
+      conductedBy: { he: "קאנטר ישראל", en: "Kantar Israel", ar: "كانتار إسرائيل", ru: "Kantar Israel", es: "Kantar Israel", fr: "Kantar Israel" }
+      population:
+        he: "מדגם ארצי ומייצג של האוכלוסייה בישראל בגילאי 18+ (יהודים וערבים)"
+        en: "A national, representative sample of Israel's population aged 18+ (Jews and Arabs)"
+        ar: "عيّنة قُطرية تمثيلية للسكان في إسرائيل من سن 18 فما فوق (يهود وعرب)"
+        ru: "Общенациональная репрезентативная выборка населения Израиля в возрасте 18+ (евреи и арабы)"
+        es: "Una muestra nacional y representativa de la población de Israel de 18 años o más (judíos y árabes)"
+        fr: "Un échantillon national et représentatif de la population d’Israël âgée de 18 ans et plus (Juifs et Arabes)"
+      asked: 2300
+      answered: 554
+      marginOfError: 4.2
+      question:
+        he: "אילו היו מתקיימות היום הבחירות לכנסת, והמפלגות המתמודדות יהיו המפלגות הבאות עם ראשי המפלגות שברשימה בפניך, עבור איזו מפלגה היית מצביע?"
+        en: "If the Knesset elections were held today, and the parties running were the following parties, with the party leaders on the list in front of you, which party would you vote for?"
+        ar: "لو جرت انتخابات الكنيست اليوم، وكانت الأحزاب المتنافسة هي الأحزاب التالية مع رؤساء الأحزاب الواردين في القائمة أمامك، لأي حزب كنت ستصوّت؟"
+        ru: "Если бы выборы в Кнессет проходили сегодня и в них участвовали следующие партии с лидерами из списка перед вами, за какую партию вы бы проголосовали?"
+        es: "Si hoy se celebraran las elecciones a la Knéset y los partidos que compiten fueran los siguientes, con los líderes de partido de la lista que tiene delante, ¿por qué partido votaría?"
+        fr: "Si les élections à la Knesset avaient lieu aujourd’hui et que les partis en lice étaient les suivants, avec les chefs de parti de la liste qui vous est présentée, pour quel parti voteriez-vous ?"
+      refiled:
+        - { ref: "4163", url: "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election82/he/Survey_4163.pdf" }
   - id: 2026-09-09-n12-midgam
     published: "2026-09-09"
     fieldwork: { from: "2026-09-09", to: "2026-09-09" }
@@ -744,6 +1131,28 @@ polls:
     sources:
       - { url: "https://www.mako.co.il/news-israel-elections/2026/Article-c27dc00e8c680a1026.htm", title: "סקר המנדטים הראשון של חדשות 12 אחרי סגירת הרשימות: וינטר וליברמן מתחזקים, הדמוקרטים נחלשים", publisher: "N12" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/Article-16f5b846bd3a0a1026.htm", title: "הצניחה של הליכוד, ישר, עוצמה יהודית וביחד", publisher: "N12" }
+    filing:
+      ref: "4145"
+      url: "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election69/he/Survey_4145.pdf"
+      commissionedBy: { he: "חברת החדשות (חדשות 12)", en: "The News Company (Channel 12)", ar: "شركة الأخبار (القناة 12)", ru: "Новостная компания (12-й канал)", es: "Compañía de Noticias (Canal 12)", fr: "Société des nouvelles (Chaîne 12)" }
+      conductedBy: { he: "מדגם יעוץ ומחקר בראשות מנו גבע", en: "Midgam Consulting and Research, headed by Mano Geva", ar: "مدغام للاستشارات والأبحاث برئاسة مانو غيفع", ru: "«Мидгам — консалтинг и исследования» под руководством Мано Гевы", es: "Midgam Consultoría e Investigación, bajo la dirección de Mano Geva", fr: "Midgam Conseil et Recherche, sous la direction de Mano Geva" }
+      population:
+        he: "בעלי זכות בחירה - כלל האוכלוסייה בישראל מגיל 18 ומעלה"
+        en: "Eligible voters — the whole population of Israel aged 18 and over"
+        ar: "أصحاب حق الاقتراع — عموم السكان في إسرائيل من سن 18 فما فوق"
+        ru: "Имеющие право голоса — всё население Израиля в возрасте от 18 лет"
+        es: "Personas con derecho a voto: toda la población de Israel de 18 años o más"
+        fr: "Les personnes ayant le droit de vote — l’ensemble de la population d’Israël âgée de 18 ans et plus"
+      asked: 2507
+      answered: 504
+      marginOfError: 4.4
+      question:
+        he: "אילו הבחירות לכנסת היו מתקיימות היום, לאיזו מפלגה היית מצביע?"
+        en: "If the Knesset elections were held today, which party would you vote for?"
+        ar: "لو جرت انتخابات الكنيست اليوم، لأي حزب كنت ستصوّت؟"
+        ru: "Если бы выборы в Кнессет проходили сегодня, за какую партию вы бы проголосовали?"
+        es: "Si las elecciones a la Knéset se celebraran hoy, ¿por qué partido votaría?"
+        fr: "Si les élections à la Knesset avaient lieu aujourd’hui, pour quel parti voteriez-vous ?"
   - id: 2026-09-09-walla-lazar
     published: "2026-09-09"
     fieldwork: { from: "2026-09-09", to: "2026-09-09" }
@@ -774,6 +1183,28 @@ polls:
     verification: "all 12 figures and 3 blocs in the report text (Maariv, 09/09/2026 14:26, same publishing group as Walla); methodology verbatim: 9 Sep 2026 for Walla by לזר מחקרים/ד\"ר מנחם לזר with Panel4All, 506 of 3,603 sampled, Jews and Arabs, ±4.4%"
     sources:
       - { url: "https://www.maariv.co.il/news/politics/article-1364694", title: "סקר מנדטים של וואלה: בלאגן בתחתית - וינטר עובר את אחוז החסימה ומרסק מפלגה אחרת", publisher: "מעריב" }
+    filing:
+      ref: "4139"
+      url: "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election63/he/Survey4139.pdf"
+      commissionedBy: { he: "וואלה תקשורת בע\"מ", en: "Walla Communications Ltd.", ar: "والا للاتصالات م.ض.", ru: "Walla Communications Ltd.", es: "Walla Communications Ltd.", fr: "Walla Communications Ltd." }
+      conductedBy: { he: "לזר מחקרים בראשות ד\"ר מנחם לזר", en: "Lazar Research, headed by Dr. Menahem Lazar", ar: "لازار للأبحاث برئاسة د. مناحيم لازار", ru: "Lazar Research под руководством д-ра Менахема Лазара", es: "Lazar Research, bajo la dirección del Dr. Menahem Lazar", fr: "Lazar Research, sous la direction du Dr Menahem Lazar" }
+      population:
+        he: "מדגם מייצג של אזרחי ישראל מגיל 18 ומעלה, יהודים וערבים כאחד"
+        en: "A representative sample of Israeli citizens aged 18 and over, Jews and Arabs alike"
+        ar: "عيّنة تمثيلية من مواطني إسرائيل من سن 18 فما فوق، يهودًا وعربًا على حدّ سواء"
+        ru: "Репрезентативная выборка граждан Израиля в возрасте от 18 лет, как евреев, так и арабов"
+        es: "Una muestra representativa de ciudadanos israelíes de 18 años o más, tanto judíos como árabes"
+        fr: "Un échantillon représentatif des citoyens israéliens de 18 ans et plus, Juifs comme Arabes"
+      asked: 3603
+      answered: 506
+      marginOfError: 4.4
+      question:
+        he: "אם הבחירות לכנסת היו מתקיימות היום למי היית מצביע?"
+        en: "If the Knesset elections were held today, who would you vote for?"
+        ar: "لو جرت انتخابات الكنيست اليوم، لمن كنت ستصوّت؟"
+        ru: "Если бы выборы в Кнессет проходили сегодня, за кого вы бы проголосовали?"
+        es: "Si las elecciones a la Knéset se celebraran hoy, ¿a quién votaría?"
+        fr: "Si les élections à la Knesset avaient lieu aujourd’hui, pour qui voteriez-vous ?"
   - id: 2026-09-08-maariv-lazar
     published: "2026-09-08"
     fieldwork: { from: "2026-09-07", to: "2026-09-08" }
@@ -812,3 +1243,32 @@ polls:
     verification: "all 12 figures and 4 blocs in the Jerusalem Post report by Maariv's polls correspondent Moshe Cohen (same publishing group; published 8 Sep 13:47); methodology verbatim: 7–8 Sep, 4,052 invited, 600 responded (15%), 18+, Jews and Arabs, ±4%; Lazar Research/Dr. Menahem Lazar with Panel4ALL"
     sources:
       - { url: "https://www.jpost.com/israel-election-2026/article-907949", title: "Eisenkot-led coalition has pathway to 61 seats without Arab parties for first time - poll", publisher: "The Jerusalem Post (Maariv poll)" }
+    filing:
+      ref: "4130"
+      url: "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election58/he/Survey%204130.pdf"
+      commissionedBy: { he: "עיתון מעריב", en: "Maariv newspaper", ar: "صحيفة معاريف", ru: "газета «Маарив»", es: "diario Maariv", fr: "journal Maariv" }
+      conductedBy: { he: "לזר מחקרים בראשות ד\"ר מנחם לזר", en: "Lazar Research, headed by Dr. Menahem Lazar", ar: "لازار للأبحاث برئاسة د. مناحيم لازار", ru: "Lazar Research под руководством д-ра Менахема Лазара", es: "Lazar Research, bajo la dirección del Dr. Menahem Lazar", fr: "Lazar Research, sous la direction du Dr Menahem Lazar" }
+      population:
+        he: "מדגם מייצג של אזרחי ישראל מגיל 18 ומעלה, יהודים וערבים כאחד"
+        en: "A representative sample of Israeli citizens aged 18 and over, Jews and Arabs alike"
+        ar: "عيّنة تمثيلية من مواطني إسرائيل من سن 18 فما فوق، يهودًا وعربًا على حدّ سواء"
+        ru: "Репрезентативная выборка граждан Израиля в возрасте от 18 лет, как евреев, так и арабов"
+        es: "Una muestra representativa de ciudadanos israelíes de 18 años o más, tanto judíos como árabes"
+        fr: "Un échantillon représentatif des citoyens israéliens de 18 ans et plus, Juifs comme Arabes"
+      asked: 4052
+      answered: 600
+      marginOfError: 4.4
+      question:
+        he: "אם היו מתקיימות היום בחירות לכנסת, לאיזו מפלגה היית מצביע?"
+        en: "If elections to the Knesset were held today, which party would you vote for?"
+        ar: "لو جرت انتخابات للكنيست اليوم، لأي حزب كنت ستصوّت؟"
+        ru: "Если бы выборы в Кнессет проходили сегодня, за какую партию вы бы проголосовали?"
+        es: "Si hoy se celebraran elecciones a la Knéset, ¿por qué partido votaría?"
+        fr: "Si des élections à la Knesset avaient lieu aujourd’hui, pour quel parti voteriez-vous ?"
+      note:
+        he: "בדיווח טעות הדגימה היא ±4.4%; בכתבה דווח ±4%."
+        en: "The filing gives a margin of error of ±4.4%; the article reported ±4%."
+        ar: "يذكر التقرير هامش خطأ قدره ±4.4%؛ وذكر المقال ±4%."
+        ru: "В отчёте указана погрешность ±4,4%; в статье — ±4%."
+        es: "El informe indica un margen de error de ±4,4 %; el artículo informó de ±4 %."
+        fr: "La déclaration indique une marge d’erreur de ±4,4 % ; l’article faisait état de ±4 %."

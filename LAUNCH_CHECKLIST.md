@@ -86,7 +86,7 @@ the owner reviews), **owner** (the maintainer), **lawyer**.
 | ✅ | LICENSE, README, CONTRIBUTING, Code of Conduct, SECURITY, PR template, CI | Claude | Licenses as before (owner, 27 Sep): code AGPL-3.0-or-later, the site's text CC BY-SA 4.0 |
 | ✅ | Purge the old database copies from git history | owner, then Claude | 28 Sep: history rewritten without the database (2.7 GB → 3 MB); a full backup bundle sits beside the project folder |
 | ✅ | Commit author emails | owner, Claude | 28 Sep: every commit shows `alonbn22 <maintainer@haknesset-sheli.invalid>`; no personal information in any file (scanned) |
-| ✅ | Public repository | owner, Claude | 28 Sep: a fresh repo, `alonbn22/HaknessetShelanu`, holds only the cleaned history (the old private repo kept old pull-request refs GitHub won't delete). Still to do: turn on private vulnerability reporting (SECURITY.md depends on it); decide what to do with the old private repo |
+| ✅ | Public repository | owner, Claude | 28 Sep: a fresh repo, `alonbn22/HaknessetShelanu`, holds only the cleaned history (the old private repo kept old pull-request refs GitHub won't delete). Private vulnerability reporting is on (28 Sep). Still to do: decide what to do with the old private repo |
 | ⬜ | Branch protection on `master` | owner | Require the CI check |
 
 ## Launch

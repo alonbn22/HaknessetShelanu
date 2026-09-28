@@ -26,9 +26,9 @@
 # differ. No filing date: the committee's list runs a day off. A poll without
 # `filing` shows "no filing found as of filingsCheckedAt" when it was published
 # by then — re-check the committee's list and bump the date on each review.
-lastReviewed: "2026-09-25"
+lastReviewed: "2026-09-28"
 cutoff: "2026-09-08"
-filingsCheckedAt: "2026-09-27"
+filingsCheckedAt: "2026-09-28"
 # The legal electoral threshold: 3.25% of valid votes (Knesset Elections Law,
 # amendment of 2014) — ≈4 seats of 120.
 threshold: 3.25
@@ -98,6 +98,38 @@ externalAverages:
       reservists: 2.6
       blue-white: 0.3
 polls:
+  - id: 2026-09-27-kan-kantar
+    published: "2026-09-27"
+    fieldwork: { from: "2026-09-27", to: "2026-09-27" }
+    outlet: { he: "כאן חדשות", en: "Kan News", ar: "أخبار «كان»", ru: "Новости «Кан»", es: "Kan News", fr: "Kan News" }
+    instituteId: kantar
+    institute: { he: "קנטאר", en: "Kantar", ar: "كانتار", ru: "Kantar", es: "Kantar", fr: "Kantar" }
+    sample: 552
+    marginOfError: 4.2
+    seats:
+      yashar: 23
+      likud: 21
+      together: 11
+      democrats: 9
+      yisrael-beiteinu: 9
+      shas: 7
+      utj: 7
+      otzma: 7
+      joint-list: 7
+      rz-zehut: 6
+      raam: 5
+      amkha: 4
+      reservists: 4
+    belowThreshold: [blue-white, haredi-public]
+    belowThresholdNote: "הכתבה: \"כחול לבן בראשות בני גנץ, הציבור החרדי בראשות מוטי לייטנר ומפלגת נעם בראשות אבי מעוז כולן לא עוברות את אחוז החסימה\" (נעם אינה בין 15 הרשימות שבמעקב)"
+    blocs:
+      - { label: { he: "גוש איזנקוט", en: "Eisenkot bloc", ar: "كتلة آيزنكوت", ru: "Блок Айзенкота", es: "Bloque de Eisenkot", fr: "Bloc Eisenkot" }, seats: 52 }
+      - { label: { he: "גוש נתניהו", en: "Netanyahu bloc", ar: "كتلة نتنياهو", ru: "Блок Нетаньяху", es: "Bloque de Netanyahu", fr: "Bloc Netanyahou" }, seats: 52 }
+      - { label: { he: "מפלגות ערביות", en: "Arab parties", ar: "الأحزاب العربية", ru: "Арабские партии", es: "Partidos árabes", fr: "Partis arabes" }, seats: 12 }
+      - { label: { he: "הנדל וזליכה", en: "Hendel and Zelekha", ar: "هندل وزليخا", ru: "Хендель и Зелеха", es: "Hendel y Zelekha", fr: "Hendel et Zelekha" }, seats: 4 }
+    verification: "seats and blocs read from Kan's own infographic (whatsapp-image-2026-09-27-at-194114.jpeg; sums to 120); 9 of 13 lists and the three below the threshold also stated in the article text; method from the article: Kantar, 27.9.2026, 2,118 invited, 552 answered, aged 18+, online sample including Arab respondents, ±4.2%"
+    sources:
+      - { url: "https://www.kan.org.il/content/kan-news/politic/1103667/", title: "סקר כאן חדשות: נתניהו מתחזק במנדט, איזנקוט ובנט נחלשים", publisher: "כאן חדשות" }
   - id: 2026-09-25-maariv-lazar
     published: "2026-09-25"
     fieldwork: { from: "2026-09-23", to: "2026-09-24" }

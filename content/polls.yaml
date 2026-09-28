@@ -26,6 +26,12 @@
 # differ. No filing date: the committee's list runs a day off. A poll without
 # `filing` shows "no filing found as of filingsCheckedAt" when it was published
 # by then — re-check the committee's list and bump the date on each review.
+#
+# A poll the outlet only broadcast is entered from the pollster's own filing
+# with the committee (a written publication by the institute that can be linked
+# and re-read — the rule `notEntered` already applies): the filing is then the
+# source, and `verification` says so. Channel 16's poll of 16 Sep 2026 is the
+# first (added 28 Sep 2026, filing 4151).
 lastReviewed: "2026-09-28"
 cutoff: "2026-09-08"
 filingsCheckedAt: "2026-09-28"
@@ -39,25 +45,14 @@ notEntered:
   - published: "2026-09-09"
     outlet: { he: "ערוץ 16", en: "Channel 16", ar: "القناة 16", ru: "16-й канал", es: "Canal 16", fr: "Chaîne 16" }
     institute: { he: "מאגר מוחות", en: "Maagar Mochot", ar: "مأغار موحوت", ru: "«Маагар Мохот»", es: "Maagar Mochot", fr: "Maagar Mochot" }
-    url: "https://www.ch16.co.il/vod.html?id=aab4640f-335f-44c1-8f41-c4fbf4671081"
+    url: "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election62/he/Survey_4134.pdf"
     reason:
-      he: "הסקר שודר במהדורה המרכזית בלבד. האתר מזין מספרים רק מפרסום כתוב או גרפי של הגוף המפרסם שאפשר לקשר אליו ולקרוא שוב (כתבה, אינפוגרפיקה, תרשים) — לא מפריים של שידור; לא נמצא פרסום כזה של הערוץ או המכון."
-      en: "Broadcast only in the main news edition. The site enters figures only from a written or graphic publication by the outlet that can be linked and re-read (an article, an infographic, a chart) — not from a frame of a broadcast; no such publication by the channel or the institute was found."
-      ar: "بُثّ في نشرة الأخبار الرئيسية فقط. يُدخل الموقع الأرقام فقط من منشور مكتوب أو رسومي للجهة الناشرة يمكن ربطه وإعادة قراءته (مقال، إنفوغرافيك، رسم بياني) — لا من لقطة بث؛ لم يُعثر على منشور كهذا من القناة أو المعهد."
-      ru: "Показан только в основном выпуске новостей. Сайт вносит цифры только из письменной или графической публикации издания, которую можно открыть по ссылке и перечитать (статья, инфографика, диаграмма), а не из кадра эфира; такой публикации канала или института не найдено."
-      es: "Emitida solo en la edición principal del informativo. El sitio introduce cifras únicamente a partir de una publicación escrita o gráfica del medio que se pueda enlazar y releer (un artículo, una infografía, un gráfico) — no a partir de un fotograma de una emisión; no se encontró ninguna publicación de ese tipo del canal ni del instituto."
-      fr: "Diffusé uniquement dans l’édition principale du journal. Le site ne saisit des chiffres qu’à partir d’une publication écrite ou graphique du média, vers laquelle on peut faire un lien et que l’on peut relire (un article, une infographie, un graphique) — pas d’une capture d’émission ; aucune publication de ce type de la chaîne ou de l’institut n’a été trouvée."
-  - published: "2026-09-16"
-    outlet: { he: "ערוץ 16", en: "Channel 16", ar: "القناة 16", ru: "16-й канал", es: "Canal 16", fr: "Chaîne 16" }
-    institute: { he: "מאגר מוחות (יצחק כץ)", en: "Maagar Mochot (Yitzhak Katz)", ar: "مأغار موحوت (يتسحاق كاتس)", ru: "«Маагар Мохот» (Ицхак Кац)", es: "Maagar Mochot (Yitzhak Katz)", fr: "Maagar Mochot (Yitzhak Katz)" }
-    url: "https://themadad.com/polls26/"
-    reason:
-      he: "רשום באינדקס הסקרים של 'המדד' (16.9.2026, סוקר: יצחק כץ), אך שודר בלבד; לא נמצא פרסום כתוב או גרפי של הערוץ או המכון שאפשר לקשר אליו — אותו כלל כמו לסקר הקודם של הערוץ."
-      en: "Indexed by HaMadad's poll archive (16 Sep 2026, pollster: Yitzhak Katz) but broadcast only; no linkable written or graphic publication by the channel or the institute was found — the same rule as for the channel's earlier poll."
-      ar: "مُدرج في أرشيف استطلاعات «هامداد» (16 أيلول/سبتمبر 2026، جهة الاستطلاع: يتسحاق كاتس) لكنه بُثّ فقط؛ لم يُعثر على منشور مكتوب أو رسومي من القناة أو المعهد يمكن ربطه — القاعدة نفسها كما في استطلاع القناة السابق."
-      ru: "Указан в архиве опросов «ХаМадад» (16.09.2026, социолог: Ицхак Кац), но только показан в эфире; письменной или графической публикации канала или института, на которую можно сослаться, не найдено — то же правило, что и для предыдущего опроса канала."
-      es: "Indexada en el archivo de encuestas de HaMadad (16 de septiembre de 2026, encuestador: Yitzhak Katz) pero solo emitida; no se encontró ninguna publicación escrita o gráfica enlazable del canal ni del instituto — la misma regla que para la encuesta anterior del canal."
-      fr: "Indexé dans les archives de sondages de HaMadad (16 septembre 2026, sondeur : Yitzhak Katz) mais seulement diffusé ; aucune publication écrite ou graphique de la chaîne ou de l’institut vers laquelle faire un lien n’a été trouvée — même règle que pour le sondage précédent de la chaîne."
+      he: "הדיווח של המכון לוועדת הבחירות המרכזית (מס' 4134) קובע שביצוע הסקר החל לפני השלמת הגשת הרשימות, ולכן אינו מקיף את כל הרשימות החדשות — הוא אינו בר השוואה לסקרים כאן. (הקישור לשידור הערוץ הוסר מאתרו.)"
+      en: "The institute's filing with the Central Elections Committee (no. 4134) says the survey began before the list submission was complete, so it does not cover all the new lists — it is not comparable with the polls here. (The channel's broadcast link has been removed from its site.)"
+      ar: "يذكر تقرير المعهد إلى لجنة الانتخابات المركزية (رقم 4134) أن الاستطلاع بدأ قبل اكتمال تقديم القوائم، ولذلك لا يشمل كل القوائم الجديدة — فهو غير قابل للمقارنة مع الاستطلاعات هنا. (أُزيل رابط بث القناة من موقعها.)"
+      ru: "В отчёте института в Центральную избирательную комиссию (№ 4134) сказано, что опрос начался до завершения подачи списков и поэтому не охватывает все новые списки — он несопоставим с опросами здесь. (Ссылка на эфир канала удалена с его сайта.)"
+      es: "El informe del instituto al Comité Central de Elecciones (n.º 4134) indica que la encuesta comenzó antes de completarse la presentación de listas, por lo que no abarca todas las listas nuevas: no es comparable con las encuestas de aquí. (El enlace a la emisión del canal se retiró de su sitio.)"
+      fr: "La déclaration de l’institut au Comité central des élections (n° 4134) indique que le sondage a commencé avant la fin du dépôt des listes et ne couvre donc pas toutes les nouvelles listes — il n’est pas comparable aux sondages présentés ici. (Le lien vers l’émission de la chaîne a été retiré de son site.)"
   - published: "2026-09-24"
     outlet: { he: "ערוץ 16", en: "Channel 16", ar: "القناة 16", ru: "16-й канал", es: "Canal 16", fr: "Chaîne 16" }
     institute: { he: "מאגר מוחות (יצחק כץ)", en: "Maagar Mochot (Yitzhak Katz)", ar: "مأغار موحوت (يتسحاق كاتس)", ru: "«Маагар Мохот» (Ицхак Кац)", es: "Maagar Mochot (Yitzhak Katz)", fr: "Maagar Mochot (Yitzhak Katz)" }
@@ -606,6 +601,60 @@ polls:
     verification: "all 11 figures from the article's own table (17/09/2026, re-read 18 Sep); blocs from the two bloc tables (also 'תומכי נתניהו 51 / מתנגדי נתניהו 69'); methodology verbatim: 16–17 Sep 2026, 500 Jewish and Arab respondents, ±4.4%"
     sources:
       - { url: "https://www.zman.co.il/725468/", title: "סקר זמן ישראל: וינטר לא עובר את אחוז החסימה ומחליש את גוש הימין", publisher: "זמן ישראל" }
+  - id: 2026-09-16-channel16-maagar-mochot
+    published: "2026-09-16"
+    fieldwork: { from: "2026-09-15", to: "2026-09-16" }
+    outlet: { he: "ערוץ 16", en: "Channel 16", ar: "القناة 16", ru: "16-й канал", es: "Canal 16", fr: "Chaîne 16" }
+    instituteId: maagar-mochot
+    institute: { he: "מאגר מוחות", en: "Maagar Mochot", ar: "مأغار موحوت", ru: "«Маагар Мохот»", es: "Maagar Mochot", fr: "Maagar Mochot" }
+    sample: 535
+    marginOfError: 4.2
+    seats:
+      yashar: 21
+      likud: 18
+      together: 16
+      otzma: 9
+      shas: 9
+      democrats: 9
+      utj: 7
+      yisrael-beiteinu: 7
+      joint-list: 6
+      raam: 5
+      rz-zehut: 5
+      amkha: 4
+      reservists: 4
+    belowThreshold: [blue-white, haredi-public]
+    belowThresholdNote: "הדיווח לוועדה: כחול לבן 0.7% מהקולות (0.9 מנדט), הציבור החרדי 1.2% — שתיהן מתחת לאחוז החסימה"
+    blocs:
+      - { label: { he: "גוש הקואליציה (כולל עמך ישראל)", en: "Coalition bloc (including Amkha Yisrael)", ar: "كتلة الائتلاف (بما في ذلك عمخا يسرائيل)", ru: "Коалиционный блок (включая «Амха Исраэль»)", es: "Bloque de la coalición (incluida Amkha Yisrael)", fr: "Bloc de la coalition (y compris Amkha Israël)" }, seats: 52 }
+      - { label: { he: "גוש האופוזיציה", en: "Opposition bloc", ar: "كتلة المعارضة", ru: "Оппозиционный блок", es: "Bloque de la oposición", fr: "Bloc de l’opposition" }, seats: 53 }
+      - { label: { he: "מפלגות ערביות", en: "Arab parties", ar: "الأحزاب العربية", ru: "Арабские партии", es: "Partidos árabes", fr: "Partis arabes" }, seats: 11 }
+      - { label: { he: "המילואימניקים והכלכלית", en: "The Reservists and the Economic list", ar: "جنود الاحتياط والاقتصادية", ru: "«Резервисты» и «Экономическая»", es: "Los Reservistas y la Económica", fr: "Les Réservistes et l’Économique" }, seats: 4 }
+    verification: "broadcast only on Channel 16; seats, blocs, sample, margin and fieldwork read from Maagar Mochot's own filing with the Central Elections Committee (ref 4151, Survey_4151.pdf, pp. 2–4); seats sum to 120"
+    sources:
+      - { url: "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election74/he/Survey_4151.pdf", title: "סקר דעת קהל — מאגר מוחות עבור ערוץ 16 (16.9.2026), דיווח לוועדת הבחירות המרכזית מס' 4151", publisher: "ועדת הבחירות המרכזית לכנסת" }
+    filing:
+      ref: "4151"
+      url: "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election74/he/Survey_4151.pdf"
+      commissionedBy: { he: "ערוץ 16", en: "Channel 16", ar: "القناة 16", ru: "16-й канал", es: "Canal 16", fr: "Chaîne 16" }
+      conductedBy: { he: "פרופ' יצחק כ\"ץ, מאגר מוחות בע\"מ", en: "Prof. Yitzhak Katz, Maagar Mochot Ltd.", ar: "البروفيسور يتسحاق كاتس، مأغار موحوت م.ض.", ru: "проф. Ицхак Кац, «Маагар Мохот» Лтд.", es: "Prof. Yitzhak Katz, Maagar Mochot Ltd.", fr: "Pr Yitzhak Katz, Maagar Mochot Ltd." }
+      population:
+        he: "האוכלוסייה הישראלית הבוגרת, גילי 18 ומעלה"
+        en: "Israel's adult population aged 18 and over"
+        ar: "السكان البالغون في إسرائيل من سن 18 فما فوق"
+        ru: "Взрослое население Израиля в возрасте 18 лет и старше"
+        es: "La población adulta de Israel de 18 años o más"
+        fr: "La population adulte d’Israël âgée de 18 ans et plus"
+      asked: 1878
+      answered: 535
+      marginOfError: 4.2
+      question:
+        he: "אם הבחירות לכנסת היו מתקיימות היום, לאיזו מפלגה היית מצביע? (הצגה ברוטציה)"
+        en: "If the Knesset elections were held today, which party would you vote for? (options shown in rotation)"
+        ar: "لو جرت انتخابات الكنيست اليوم، لأي حزب كنت ستصوّت؟ (عرض الخيارات بالتناوب)"
+        ru: "Если бы выборы в Кнессет проходили сегодня, за какую партию вы бы проголосовали? (варианты показаны по очереди)"
+        es: "Si hoy se celebraran las elecciones a la Knéset, ¿por qué partido votaría? (opciones en orden rotativo)"
+        fr: "Si les élections à la Knesset avaient lieu aujourd’hui, pour quel parti voteriez-vous ? (options présentées en rotation)"
   - id: 2026-09-16-channel13-consortium
     published: "2026-09-16"
     fieldwork: { from: "2026-09-15", to: "2026-09-15" }

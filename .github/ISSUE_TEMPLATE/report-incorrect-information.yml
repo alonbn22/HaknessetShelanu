@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for helping keep **הכנסת שלי / My Knesset** accurate.
+        Thanks for helping keep **הכנסת שלנו / Our Knesset** accurate.
         This opens a **ticket** that a maintainer reviews before anything is changed on the site.
   - type: input
     id: page

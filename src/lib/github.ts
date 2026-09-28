@@ -22,7 +22,7 @@ export async function fetchOpenTickets(limit = 50): Promise<Ticket[] | null> {
     const res = await fetch(
       `https://api.github.com/repos/${GITHUB_REPO}/issues?state=open&per_page=${limit}&sort=created&direction=desc`,
       {
-        headers: { Accept: "application/vnd.github+json", "User-Agent": "HaKnessetSheli" },
+        headers: { Accept: "application/vnd.github+json", "User-Agent": "HaknessetShelanu" },
         next: { revalidate: 300 }, // 5 min — stays well under the rate limit
         signal: AbortSignal.timeout(8000),
       },

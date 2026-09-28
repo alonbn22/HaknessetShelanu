@@ -4,7 +4,7 @@ import { getDb, schema } from "../../src/db";
 import { fetchRetry } from "./odata";
 
 const USER_AGENT =
-  "HaKnessetSheli/1.0 (https://github.com/alonbn22/HaKnessetSheli; civic transparency site)";
+  "HaknessetShelanu/1.0 (https://github.com/alonbn22/HaknessetShelanu; civic transparency site)";
 
 // One SPARQL query: everyone who ever held the position "Knesset member"
 // (plus anyone carrying a Knesset member website ID), with labels in our

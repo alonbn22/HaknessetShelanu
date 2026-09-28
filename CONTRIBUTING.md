@@ -228,7 +228,7 @@ npm run build
 ## Pull requests
 
 1. **Fork** the repository on GitHub and clone your fork:
-   `git clone --filter=blob:none https://github.com/<you>/HaKnessetSheli.git`
+   `git clone --filter=blob:none https://github.com/<you>/HaknessetShelanu.git`
 2. **Branch** from `master`, for example `git switch -c add-maariv-poll`.
 3. **Change one thing** per pull request. Small ones get reviewed faster.
 4. **Check**: run the gates.

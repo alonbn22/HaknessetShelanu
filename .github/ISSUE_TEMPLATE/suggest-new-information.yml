@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for contributing to **הכנסת שלי / My Knesset**.
+        Thanks for contributing to **הכנסת שלנו / Our Knesset**.
         This opens a **ticket** that a maintainer reviews. Suggestions are only published after they are verified against the source you provide.
   - type: input
     id: subject

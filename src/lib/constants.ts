@@ -62,7 +62,7 @@ export const VOTE_CANCELLED = 0;
 // GitHub repo that receives feedback tickets and backs the /tickets page.
 // Override per-deployment; NEXT_PUBLIC_ is inlined for client components too.
 export const GITHUB_REPO =
-  process.env.NEXT_PUBLIC_GITHUB_REPO || "alonbn22/HaKnessetSheli";
+  process.env.NEXT_PUBLIC_GITHUB_REPO || "alonbn22/HaknessetShelanu";
 
 // The site's contact address, set per deployment. Empty until the owner sets
 // it; pages then point to /tickets instead — never a placeholder address.

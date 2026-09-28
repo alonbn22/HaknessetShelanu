@@ -1,6 +1,6 @@
 # הכנסת שלנו · Our Knesset
 
-[![CI](https://github.com/alonbn22/HaKnessetSheli/actions/workflows/ci.yml/badge.svg)](https://github.com/alonbn22/HaKnessetSheli/actions/workflows/ci.yml)
+[![CI](https://github.com/alonbn22/HaknessetShelanu/actions/workflows/ci.yml/badge.svg)](https://github.com/alonbn22/HaknessetShelanu/actions/workflows/ci.yml)
 [![Code: AGPL-3.0](https://img.shields.io/badge/code-AGPL--3.0-blue.svg)](LICENSE)
 [![Text: CC BY-SA 4.0](https://img.shields.io/badge/text-CC%20BY--SA%204.0-lightgrey.svg)](#license)
 
@@ -81,8 +81,8 @@ translated yet is shown right-to-left.
 You need Node.js 24 (the version CI uses) and git.
 
 ```bash
-git clone --filter=blob:none https://github.com/alonbn22/HaKnessetSheli.git
-cd HaKnessetSheli
+git clone --filter=blob:none https://github.com/alonbn22/HaknessetShelanu.git
+cd HaknessetShelanu
 npm ci
 npm run db:pull
 npm run dev
@@ -99,7 +99,7 @@ works too.
 
 The site reads one SQLite file, `data/knesset.db` (about 81 MB, 20 MB to
 download). It isn't in git: it lives in the repository's
-[`data-latest` release](https://github.com/alonbn22/HaKnessetSheli/releases/tag/data-latest),
+[`data-latest` release](https://github.com/alonbn22/HaknessetShelanu/releases/tag/data-latest),
 which the daily sync updates. `npm run db:pull` downloads it (and checks its
 checksum); run it again whenever you want fresher data, with the dev server
 stopped. You don't need to run the data sync to work on the site.
@@ -113,7 +113,7 @@ Both are optional for local work.
 | Variable | What it does |
 |---|---|
 | `NEXT_PUBLIC_SITE_URL` | The public origin, no trailing slash. Used for the sitemap, robots.txt and share links. Set it in production. |
-| `NEXT_PUBLIC_GITHUB_REPO` | `owner/repo` for the ticket links. Defaults to `alonbn22/HaKnessetSheli`; set it on a fork. |
+| `NEXT_PUBLIC_GITHUB_REPO` | `owner/repo` for the ticket links. Defaults to `alonbn22/HaknessetShelanu`; set it on a fork. |
 
 Deploying: see [DEPLOY.md](DEPLOY.md).
 

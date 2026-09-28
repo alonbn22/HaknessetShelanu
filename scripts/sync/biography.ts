@@ -7,7 +7,7 @@ import { getDb, schema } from "../../src/db";
 import { fetchRetry } from "./odata";
 
 const USER_AGENT =
-  "HaKnessetSheli/1.0 (https://github.com/alonbn22/HaKnessetSheli; civic transparency site)";
+  "HaknessetShelanu/1.0 (https://github.com/alonbn22/HaknessetShelanu; civic transparency site)";
 const ENDPOINT = "https://query.wikidata.org/sparql";
 const BATCH = 40;
 

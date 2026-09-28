@@ -16,4 +16,4 @@ own article), not Wikipedia or an aggregator. Write "none" for a code-only chang
 - [ ] No Hebrew characters in `src/` (use `messages/`, or `\u` escapes in code)
 - [ ] The gates are green: `npm test`, `npx tsc --noEmit`, `npm run lint`, `npm run build`
 
-See [CONTRIBUTING.md](https://github.com/alonbn22/HaKnessetSheli/blob/master/CONTRIBUTING.md) for the rules behind each box.
+See [CONTRIBUTING.md](https://github.com/alonbn22/HaknessetShelanu/blob/master/CONTRIBUTING.md) for the rules behind each box.

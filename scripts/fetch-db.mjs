@@ -13,7 +13,7 @@ import fs from "node:fs";
 import path from "node:path";
 import zlib from "node:zlib";
 
-const REPO = process.env.DB_REPO ?? "alonbn22/HaKnessetSheli";
+const REPO = process.env.DB_REPO ?? "alonbn22/HaknessetShelanu";
 const TAG = "data-latest";
 const OUT = path.join(process.cwd(), "data", "knesset.db");
 

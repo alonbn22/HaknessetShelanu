@@ -2,6 +2,9 @@
 # API). Figures are widely-documented results; review before publishing.
 # turnout = % of eligible voters; winnerSeats = seats won by the largest list.
 # date is ISO. "pm" = who ultimately formed/led the government after the election.
+# Event colours: good/bad only for wars, attacks, disasters, peace agreements and
+# rescue operations; a contested political event (a law, a coalition move, a
+# person's legal matter) is neutral — the site doesn't grade politics.
 elections:
   - knesset: 25
     date: "2022-11-01"
@@ -18,7 +21,7 @@ elections:
       es: "La 25.ª Knéset fue elegida tras cinco elecciones en cuatro años y formó una coalición de derecha y religiosa de 64 escaños. Su legislatura estuvo marcada por la polémica reforma judicial y por la guerra de Espadas de Hierro, que comenzó el 7 de octubre de 2023."
       fr: "La 25e Knesset a été élue après cinq élections en quatre ans et a formé une coalition de droite et religieuse de 64 sièges. Sa législature a été marquée par la réforme judiciaire contestée et par la guerre des Épées de fer, qui a commencé le 7 octobre 2023."
     events:
-      - kind: bad
+      - kind: neutral
         date: "2023-01-04"
         text: { he: "השקת הרפורמה המשפטית עוררה גל מחאות המוני שנמשך חודשים.", en: "The launch of the judicial overhaul triggered months of mass protests.", ar: "أطلق الإعلان عن الإصلاح القضائي موجة احتجاجات جماهيرية استمرت شهورًا.", ru: "Запуск судебной реформы вызвал многомесячные массовые протесты.", es: "El lanzamiento de la reforma judicial desató meses de protestas masivas.", fr: "Le lancement de la réforme judiciaire a déclenché des mois de manifestations massives." }
       - kind: bad
@@ -33,7 +36,7 @@ elections:
       - kind: bad
         date: "2024-09-17"
         text: { he: "הסלמה בחזית הצפון מול חיזבאללה, מבצע הביפרים והתקיפות בלבנון.", en: "Escalation on the northern front with Hezbollah, the pager operation and strikes in Lebanon.", ar: "تصعيد على الجبهة الشمالية مع حزب الله، وعملية أجهزة النداء (البيجر)، والغارات في لبنان.", ru: "Эскалация на северном фронте с «Хизбаллой», операция с пейджерами и удары по Ливану.", es: "Escalada en el frente norte con Hezbolá, la operación de los buscapersonas y los ataques en Líbano.", fr: "Escalade sur le front nord avec le Hezbollah, l’opération des bipeurs et les frappes au Liban." }
-      - kind: good
+      - kind: neutral
         date: "2025-01-19"
         text: { he: "עסקאות לשחרור חטופים והפסקות אש לסירוגין בעזה.", en: "Hostage-release deals and intermittent ceasefires in Gaza.", ar: "صفقات للإفراج عن الرهائن ووقف متقطع لإطلاق النار في غزة.", ru: "Сделки об освобождении заложников и периодические прекращения огня в Газе.", es: "Acuerdos de liberación de rehenes y altos el fuego intermitentes en Gaza.", fr: "Accords de libération d’otages et cessez-le-feu intermittents à Gaza." }
     ended: { he: "הכנסת ה-25 השלימה קדנציה מלאה והתפזרה ב-17 ביולי 2026; הבחירות לכנסת ה-26 — 27 באוקטובר 2026.", en: "The 25th Knesset completed a full term and dispersed on July 17, 2026; the 26th Knesset election is on October 27, 2026.", ar: "أتمّ الكنيست الـ25 ولاية كاملة وحُلّ في 17 تموز/يوليو 2026؛ وانتخابات الكنيست الـ26 في 27 تشرين الأول/أكتوبر 2026.", ru: "Кнессет 25-го созыва отработал полный срок и был распущен 17 июля 2026 года; выборы в Кнессет 26-го созыва — 27 октября 2026 года.", es: "La 25.ª Knéset completó una legislatura entera y se disolvió el 17 de julio de 2026; las elecciones a la 26.ª Knéset son el 27 de octubre de 2026.", fr: "La 25e Knesset a achevé une législature complète et s’est dissoute le 17 juillet 2026 ; les élections à la 26e Knesset ont lieu le 27 octobre 2026." }
@@ -55,19 +58,21 @@ elections:
       es: "El «gobierno del cambio» unió a ocho partidos de derecha, centro e izquierda para sustituir a Netanyahu, con una rotación prevista entre Bennett y Lapid."
       fr: "Le « gouvernement du changement » a réuni huit partis de droite, du centre et de gauche pour remplacer Netanyahou, avec une rotation prévue entre Bennett et Lapid."
     events:
-      - kind: good
+      - kind: neutral
         date: "2021-06-13"
-        text: { he: "לראשונה מפלגה ערבית (רע\"ם) הצטרפה לקואליציה שלטת.", en: "For the first time an Arab party (Ra'am) joined a governing coalition.", ar: "لأول مرة انضم حزب عربي (القائمة الموحدة) إلى ائتلاف حاكم.", ru: "Впервые арабская партия (РААМ) вошла в правящую коалицию.", es: "Por primera vez un partido árabe (Ra'am) se unió a una coalición de gobierno.", fr: "Pour la première fois, un parti arabe (Ra'am) a rejoint une coalition gouvernementale." }
-      - kind: good
+        text: { he: "לראשונה מפלגה ערבית (רע\"ם) הייתה חברה רשמית בקואליציה השלטת.", en: "For the first time an Arab party (Ra'am) was a formal member of the governing coalition.", ar: "لأول مرة كان حزب عربي (القائمة الموحدة) عضوًا رسميًا في الائتلاف الحاكم.", ru: "Впервые арабская партия (РААМ) стала официальным членом правящей коалиции.", es: "Por primera vez un partido árabe (Ra'am) fue miembro formal de la coalición de gobierno.", fr: "Pour la première fois, un parti arabe (Ra'am) a officiellement fait partie de la coalition gouvernementale." }
+      - kind: neutral
         date: "2021-11-04"
         text: { he: "אישור תקציב מדינה ראשון מזה למעלה משלוש שנים.", en: "Passage of the first state budget in over three years.", ar: "إقرار أول ميزانية للدولة منذ أكثر من ثلاث سنوات.", ru: "Принятие первого государственного бюджета более чем за три года.", es: "Aprobación del primer presupuesto del Estado en más de tres años.", fr: "Adoption du premier budget de l’État en plus de trois ans." }
-      - kind: bad
+      - kind: neutral
         date: "2022-04-06"
         text: { he: "איבוד הרוב בכנסת לאחר פרישת חברי קואליציה.", en: "Loss of the Knesset majority after coalition members defected.", ar: "فقدان الأغلبية في الكنيست بعد انشقاق أعضاء من الائتلاف.", ru: "Потеря большинства в Кнессете после выхода депутатов из коалиции.", es: "Pérdida de la mayoría en la Knéset tras la deserción de miembros de la coalición.", fr: "Perte de la majorité à la Knesset après la défection de membres de la coalition." }
       - kind: bad
         date: "2021-05-10"
         text: { he: "מבצע \"שומר החומות\" מול חמאס בעזה ומהומות בערים מעורבות.", en: "Operation Guardian of the Walls against Hamas in Gaza and unrest in mixed cities.", ar: "عملية «حارس الأسوار» ضد حماس في غزة واضطرابات في المدن المختلطة.", ru: "Операция «Страж стен» против ХАМАС в Газе и беспорядки в смешанных городах.", es: "La operación Guardián de los Muros contra Hamás en Gaza y los disturbios en las ciudades mixtas.", fr: "L’opération Gardien des murailles contre le Hamas à Gaza et les troubles dans les villes mixtes." }
     ended: { he: "הכנסת התפזרה ביוני 2022 לאחר שאיבדה את הרוב; לפיד הפך לראש ממשלה מעבר.", en: "Dissolved in June 2022 after losing its majority; Lapid became caretaker PM.", ar: "حُلّ في حزيران/يونيو 2022 بعد فقدانه الأغلبية؛ وأصبح لبيد رئيس حكومة انتقالية.", ru: "Распущен в июне 2022 года после потери большинства; Лапид стал премьер-министром переходного правительства.", es: "Disuelta en junio de 2022 tras perder la mayoría; Lapid pasó a ser primer ministro en funciones.", fr: "Dissoute en juin 2022 après la perte de sa majorité ; Lapid est devenu Premier ministre de transition." }
+    sources:
+      - { url: "https://en.idi.org.il/israeli-elections-and-parties/parties/raam/", title: "Ra'am", publisher: "המכון הישראלי לדמוקרטיה" }
   - knesset: 23
     date: "2020-03-02"
     turnout: 71.5
@@ -86,7 +91,7 @@ elections:
       - kind: bad
         date: "2020-03-19"
         text: { he: "ניהול משבר מגפת הקורונה וסגרים חוזרים ונשנים.", en: "Managing the COVID-19 crisis and repeated lockdowns.", ar: "إدارة أزمة جائحة كورونا والإغلاقات المتكررة.", ru: "Борьба с кризисом COVID-19 и повторные локдауны.", es: "La gestión de la crisis de la COVID-19 y los confinamientos repetidos.", fr: "La gestion de la crise de la COVID-19 et les confinements répétés." }
-      - kind: bad
+      - kind: neutral
         date: "2020-12-22"
         text: { he: "אי-העברת תקציב מדינה הביאה לפיזור אוטומטי של הכנסת.", en: "Failure to pass a state budget triggered the Knesset's automatic dissolution.", ar: "أدى عدم إقرار ميزانية الدولة إلى حلّ الكنيست تلقائيًا.", ru: "Непринятие государственного бюджета привело к автоматическому роспуску Кнессета.", es: "La no aprobación de un presupuesto del Estado provocó la disolución automática de la Knéset.", fr: "L’échec de l’adoption d’un budget de l’État a entraîné la dissolution automatique de la Knesset." }
       - kind: good
@@ -108,7 +113,7 @@ elections:
       es: "En la repetición electoral Azul y Blanco pasó a ser el partido más grande, pero de nuevo ningún bando alcanzó una mayoría de 61 escaños ni logró formar gobierno."
       fr: "Lors du nouveau scrutin, Bleu et Blanc est devenu le plus grand parti, mais de nouveau aucun camp n’a atteint la majorité de 61 sièges ni réussi à former un gouvernement."
     events:
-      - kind: bad
+      - kind: neutral
         date: "2019-11-21"
         text: { he: "גם גנץ וגם נתניהו נכשלו בהרכבת ממשלה.", en: "Both Gantz and Netanyahu failed to form a government.", ar: "فشل كلٌّ من غانتس ونتنياهو في تشكيل حكومة.", ru: "И Ганц, и Нетаньяху не смогли сформировать правительство.", es: "Tanto Gantz como Netanyahu fracasaron en formar gobierno.", fr: "Gantz et Netanyahou ont tous deux échoué à former un gouvernement." }
     ended: { he: "פוזרה בדצמבר 2019 לאחר שלא הורכבה ממשלה — בחירות שלישיות.", en: "Dissolved in December 2019 after no government formed — a third election.", ar: "حُلّ في كانون الأول/ديسمبر 2019 بعد عدم تشكيل حكومة — انتخابات ثالثة.", ru: "Распущен в декабре 2019 года, так как правительство не было сформировано, — третьи выборы.", es: "Disuelta en diciembre de 2019 al no formarse gobierno — unas terceras elecciones.", fr: "Dissoute en décembre 2019 faute de gouvernement — une troisième élection." }
@@ -118,7 +123,7 @@ elections:
     winner: { he: "הליכוד", en: "Likud", ar: "الليكود", ru: "Ликуд", es: "Likud", fr: "Likoud" }
     winnerSeats: 35
     pm: { he: "לא הוקמה ממשלה", en: "No government formed", ar: "لم تُشكَّل حكومة", ru: "Правительство не сформировано", es: "No se formó gobierno", fr: "Aucun gouvernement formé" }
-    note: { he: "הכנסת פיזרה את עצמה לראשונה בהיסטוריה במקום להקים ממשלה.", en: "The Knesset dissolved itself for the first time ever instead of forming a government.", ar: "حلّ الكنيست نفسه لأول مرة في تاريخه بدلًا من تشكيل حكومة.", ru: "Кнессет впервые в истории самораспустился вместо формирования правительства.", es: "La Knéset se disolvió a sí misma por primera vez en la historia en lugar de formar gobierno.", fr: "La Knesset s’est dissoute elle-même pour la première fois de son histoire au lieu de former un gouvernement." }
+    note: { he: "הליכוד וכחול לבן זכו כל אחת ב-35 מושבים (לליכוד היו יותר קולות). הכנסת פיזרה את עצמה לראשונה בהיסטוריה במקום להקים ממשלה.", en: "Likud and Blue & White tied at 35 seats each (Likud had more votes). The Knesset dissolved itself for the first time ever instead of forming a government.", ar: "تعادل الليكود وأزرق أبيض بـ35 مقعدًا لكلٍّ منهما (وحصل الليكود على أصوات أكثر). حلّ الكنيست نفسه لأول مرة في تاريخه بدلًا من تشكيل حكومة.", ru: "Ликуд и «Кахоль-лаван» получили по 35 мандатов (у Ликуда было больше голосов). Кнессет впервые в истории самораспустился вместо формирования правительства.", es: "El Likud y Azul y Blanco empataron a 35 escaños (el Likud obtuvo más votos). La Knéset se disolvió a sí misma por primera vez en la historia en lugar de formar gobierno.", fr: "Le Likoud et Bleu et Blanc sont arrivés à égalité avec 35 sièges chacun (le Likoud a obtenu plus de voix). La Knesset s’est dissoute elle-même pour la première fois de son histoire au lieu de former un gouvernement." }
     summary:
       he: "אף שהליכוד והגוש הימני זכו ברוב, המשא ומתן הקואליציוני נכשל סביב חוק הגיוס, והכנסת בחרה להתפזר במקום לאפשר למישהו אחר להרכיב ממשלה."
       en: "Although Likud and the right won a majority, coalition talks collapsed over the conscription law, and the Knesset chose to dissolve itself rather than let anyone else try to form a government."
@@ -127,10 +132,12 @@ elections:
       es: "Aunque el Likud y la derecha obtuvieron mayoría, las negociaciones de coalición fracasaron por la ley del servicio militar, y la Knéset optó por disolverse antes que permitir que otro intentara formar gobierno."
       fr: "Bien que le Likoud et la droite aient obtenu la majorité, les négociations de coalition ont échoué sur la loi sur la conscription, et la Knesset a choisi de se dissoudre plutôt que de laisser quelqu’un d’autre tenter de former un gouvernement."
     events:
-      - kind: bad
+      - kind: neutral
         date: "2019-05-30"
         text: { he: "כישלון המו\"מ הקואליציוני בעיקר סביב חוק הגיוס.", en: "Collapse of coalition talks, chiefly over the conscription law.", ar: "انهيار المفاوضات الائتلافية، ولا سيما حول قانون التجنيد.", ru: "Срыв коалиционных переговоров — прежде всего из-за закона о призыве.", es: "Fracaso de las negociaciones de coalición, sobre todo por la ley del servicio militar.", fr: "Échec des négociations de coalition, principalement sur la loi sur la conscription." }
     ended: { he: "פוזרה במאי 2019 — לראשונה בהיסטוריה הכנסת פיזרה את עצמה במקום להקים ממשלה.", en: "Dissolved in May 2019 — the first time the Knesset dissolved itself instead of forming a government.", ar: "حُلّ في أيار/مايو 2019 — المرة الأولى التي يحلّ فيها الكنيست نفسه بدلًا من تشكيل حكومة.", ru: "Распущен в мае 2019 года — впервые Кнессет самораспустился вместо формирования правительства.", es: "Disuelta en mayo de 2019 — la primera vez que la Knéset se disolvió a sí misma en lugar de formar gobierno.", fr: "Dissoute en mai 2019 — la première fois que la Knesset s’est dissoute elle-même au lieu de former un gouvernement." }
+    sources:
+      - { url: "https://en.idi.org.il/israeli-elections-and-parties/elections/2019-1/", title: "The Elections for the 21st Knesset (9 April 2019): results", publisher: "המכון הישראלי לדמוקרטיה" }
   - knesset: 20
     date: "2015-03-17"
     turnout: 72.3
@@ -147,9 +154,6 @@ elections:
     events:
       - kind: neutral
         text: { he: "נפתחו חקירות משטרה בעניינו של ראש הממשלה נתניהו: תיק 1000 בדצמבר 2016, תיק 2000 בינואר 2017 ותיק 4000 בפברואר 2018. ב-2020 הוגש נגדו כתב אישום; הוא מכחיש את האשמות, משפטו נמשך, וחלה חזקת החפות.", en: "Police investigations into Prime Minister Netanyahu opened: Case 1000 in December 2016, Case 2000 in January 2017 and Case 4000 in February 2018. He was indicted in 2020; he denies the charges, his trial is ongoing, and the presumption of innocence applies.", ar: "فُتحت تحقيقات شرطية بشأن رئيس الحكومة نتنياهو: الملف 1000 في كانون الأول/ديسمبر 2016، والملف 2000 في كانون الثاني/يناير 2017، والملف 4000 في شباط/فبراير 2018. وقُدّمت ضده لائحة اتهام في 2020؛ وهو ينفي التهم، ومحاكمته مستمرة، وتسري قرينة البراءة.", ru: "Полиция начала расследования в отношении премьер-министра Нетаньяху: дело 1000 — в декабре 2016 года, дело 2000 — в январе 2017 года, дело 4000 — в феврале 2018 года. В 2020 году ему предъявили обвинение; он отрицает обвинения, суд продолжается, действует презумпция невиновности.", es: "Se abrieron investigaciones policiales sobre el primer ministro Netanyahu: el caso 1000 en diciembre de 2016, el caso 2000 en enero de 2017 y el caso 4000 en febrero de 2018. Fue acusado formalmente en 2020; niega los cargos, su juicio sigue en curso y rige la presunción de inocencia.", fr: "Des enquêtes de police visant le Premier ministre Netanyahou ont été ouvertes : l’affaire 1000 en décembre 2016, l’affaire 2000 en janvier 2017 et l’affaire 4000 en février 2018. Il a été mis en accusation en 2020 ; il nie les faits, son procès est en cours et la présomption d’innocence s’applique." }
-      - kind: neutral
-        date: "2017-01-01"
-        text: { he: "יציבות כלכלית והמשך צמיחה.", en: "Economic stability and continued growth.", ar: "استقرار اقتصادي واستمرار النمو.", ru: "Экономическая стабильность и продолжение роста.", es: "Estabilidad económica y crecimiento continuado.", fr: "Stabilité économique et poursuite de la croissance." }
       - kind: neutral
         date: "2018-07-19"
         text: { he: "חקיקת חוק יסוד: ישראל — מדינת הלאום של העם היהודי.", en: "Passage of Basic Law: Israel as the Nation-State of the Jewish People.", ar: "سنّ قانون أساس: إسرائيل – الدولة القومية للشعب اليهودي.", ru: "Принятие Основного закона: Израиль — национальное государство еврейского народа.", es: "Aprobación de la Ley Fundamental: Israel como Estado-nación del pueblo judío.", fr: "Adoption de la Loi fondamentale : Israël, État-nation du peuple juif." }
@@ -171,7 +175,7 @@ elections:
       es: "Por primera vez en años se formó una coalición sin los partidos jaredíes, centrada en «compartir la carga» (el reclutamiento de los jaredíes) y en el costo de la vida."
       fr: "Pour la première fois depuis des années, une coalition s’est formée sans les partis haredim, axée sur le « partage du fardeau » (conscription des haredim) et le coût de la vie."
     events:
-      - kind: good
+      - kind: neutral
         date: "2014-03-12"
         text: { he: "חקיקת חוק השוויון בנטל לגיוס בני ישיבות.", en: "Passage of the 'equal burden' law on yeshiva-student conscription.", ar: "سنّ قانون «المساواة في العبء» بشأن تجنيد طلاب المعاهد الدينية.", ru: "Принятие закона о «равном бремени» о призыве учащихся ешив.", es: "Aprobación de la ley de «carga igualitaria» sobre el reclutamiento de los estudiantes de yeshivá.", fr: "Adoption de la loi sur le « partage du fardeau » concernant la conscription des étudiants de yeshiva." }
       - kind: bad
@@ -193,7 +197,7 @@ elections:
       es: "Aunque Kadima (Livni) era el partido más grande, Netanyahu reunió una coalición de derecha y formó su segundo gobierno, que cumplió casi una legislatura entera."
       fr: "Bien que Kadima (Livni) fût le plus grand parti, Netanyahou a réuni une coalition de droite et formé son deuxième gouvernement, qui a accompli presque une législature complète."
     events:
-      - kind: bad
+      - kind: neutral
         date: "2011-07-14"
         text: { he: "מחאת קיץ 2011 (\"מחאת האוהלים\") על יוקר המחיה.", en: "The summer 2011 social-justice (\"tent\") protests over the cost of living.", ar: "احتجاجات صيف 2011 («احتجاج الخيام») على غلاء المعيشة.", ru: "Социальные протесты лета 2011 года («палаточный протест») против дороговизны жизни.", es: "Las protestas por la justicia social (las «tiendas») del verano de 2011 contra el costo de la vida.", fr: "Les manifestations pour la justice sociale (les « tentes ») de l’été 2011 contre le coût de la vie." }
       - kind: neutral
@@ -223,10 +227,13 @@ elections:
       - kind: neutral
         date: "2008-12-27"
         text: { he: "מבצע \"עופרת יצוקה\" ברצועת עזה.", en: "Operation Cast Lead in the Gaza Strip.", ar: "عملية «الرصاص المصبوب» في قطاع غزة.", ru: "Операция «Литой свинец» в секторе Газа.", es: "La operación Plomo Fundido en la Franja de Gaza.", fr: "L’opération Plomb durci dans la bande de Gaza." }
-      - kind: bad
+      - kind: neutral
         date: "2008-07-30"
-        text: { he: "חקירות שחיתות הביאו להתפטרות אולמרט.", en: "Corruption investigations led to Olmert's resignation.", ar: "أدت تحقيقات فساد إلى استقالة أولمرت.", ru: "Расследования коррупции привели к отставке Ольмерта.", es: "Las investigaciones por corrupción llevaron a la renuncia de Olmert.", fr: "Les enquêtes pour corruption ont conduit à la démission d’Olmert." }
-    ended: { he: "אולמרט התפטר על רקע חקירות שחיתות — לבחירות 2009.", en: "Olmert resigned amid corruption probes — to the 2009 election.", ar: "استقال أولمرت على خلفية تحقيقات فساد — إلى انتخابات 2009.", ru: "Ольмерт ушёл в отставку на фоне расследований коррупции — выборы 2009 года.", es: "Olmert renunció en medio de investigaciones por corrupción — hacia las elecciones de 2009.", fr: "Olmert a démissionné au milieu d’enquêtes pour corruption — d’où l’élection de 2009." }
+        text: { he: "על רקע חקירות פליליות הודיע אולמרט שיתפטר עם בחירת יו\"ר חדש לקדימה.", en: "Amid criminal investigations, Olmert announced he would resign once Kadima chose a new leader.", ar: "على خلفية تحقيقات جنائية، أعلن أولمرت أنه سيستقيل فور انتخاب رئيس جديد لكاديما.", ru: "На фоне уголовных расследований Ольмерт объявил, что уйдёт в отставку после избрания нового лидера «Кадимы».", es: "En medio de investigaciones penales, Olmert anunció que dimitiría cuando Kadima eligiera un nuevo líder.", fr: "Sur fond d’enquêtes pénales, Olmert a annoncé qu’il démissionnerait dès que Kadima aurait choisi un nouveau dirigeant." }
+    ended: { he: "אולמרט התפטר על רקע חקירות פליליות; ציפי לבני לא הצליחה להרכיב ממשלה, והבחירות הוקדמו לפברואר 2009.", en: "Olmert resigned amid criminal investigations; Tzipi Livni could not form a government, and early elections were held in February 2009.", ar: "استقال أولمرت على خلفية تحقيقات جنائية؛ ولم تنجح تسيبي ليفني في تشكيل حكومة، فجرت انتخابات مبكرة في شباط/فبراير 2009.", ru: "Ольмерт ушёл в отставку на фоне уголовных расследований; Ципи Ливни не смогла сформировать правительство, и в феврале 2009 года прошли досрочные выборы.", es: "Olmert dimitió en medio de investigaciones penales; Tzipi Livni no logró formar gobierno y en febrero de 2009 se celebraron elecciones anticipadas.", fr: "Olmert a démissionné sur fond d’enquêtes pénales ; Tzipi Livni n’a pas réussi à former un gouvernement, et des élections anticipées ont eu lieu en février 2009." }
+    sources:
+      - { url: "https://en.idi.org.il/articles/38887", title: "Dissolving the Knesset: A Historical Survey (Chen Friedberg and Assaf Shapira, 18 May 2022)", publisher: "המכון הישראלי לדמוקרטיה" }
+      - { url: "https://en.idi.org.il/israeli-elections-and-parties/elections/2009/", title: "About the 2009 Elections", publisher: "המכון הישראלי לדמוקרטיה" }
   - knesset: 16
     date: "2003-01-28"
     turnout: 67.8
@@ -244,9 +251,6 @@ elections:
       - kind: neutral
         date: "2005-08-15"
         text: { he: "תוכנית ההתנתקות — פינוי כל היישובים מרצועת עזה.", en: "The Disengagement — evacuation of all settlements from the Gaza Strip.", ar: "خطة فك الارتباط — إخلاء جميع المستوطنات من قطاع غزة.", ru: "Размежевание — эвакуация всех поселений из сектора Газа.", es: "La Desconexión — evacuación de todos los asentamientos de la Franja de Gaza.", fr: "Le désengagement — évacuation de toutes les implantations de la bande de Gaza." }
-      - kind: bad
-        date: "2003-09-01"
-        text: { he: "שיא פיגועי האינתיפאדה השנייה והקמת גדר ההפרדה.", en: "The peak of Second Intifada attacks and construction of the separation barrier.", ar: "ذروة هجمات الانتفاضة الثانية وبناء الجدار الفاصل.", ru: "Пик терактов Второй интифады и строительство разделительного барьера.", es: "El punto álgido de los atentados de la Segunda Intifada y la construcción de la barrera de separación.", fr: "Le pic des attentats de la Seconde Intifada et la construction de la barrière de séparation." }
     ended: { he: "שרון פיזר את הכנסת ועזב להקים את קדימה; לאחר מכן לקה בשבץ — בחירות 2006.", en: "Sharon dissolved the Knesset and left to found Kadima; he then suffered a stroke — 2006 election.", ar: "حلّ شارون الكنيست وغادر لتأسيس كاديما؛ ثم أُصيب بجلطة دماغية — انتخابات 2006.", ru: "Шарон распустил Кнессет и ушёл, чтобы создать «Кадиму»; затем он перенёс инсульт — выборы 2006 года.", es: "Sharon disolvió la Knéset y se marchó para fundar Kadima; después sufrió un derrame cerebral — elecciones de 2006.", fr: "Sharon a dissous la Knesset et est parti fonder Kadima ; il a ensuite été victime d’une attaque cérébrale — élection de 2006." }
   - knesset: 15
     date: "1999-05-17"
@@ -265,13 +269,17 @@ elections:
       - kind: neutral
         date: "2000-05-24"
         text: { he: "נסיגת צה\"ל מדרום לבנון.", en: "The IDF's withdrawal from southern Lebanon.", ar: "انسحاب الجيش الإسرائيلي من جنوب لبنان.", ru: "Вывод ЦАХАЛа из Южного Ливана.", es: "La retirada del ejército israelí del sur del Líbano.", fr: "Le retrait de l’armée israélienne du Sud-Liban." }
-      - kind: bad
+      - kind: neutral
         date: "2000-07-25"
         text: { he: "כישלון שיחות קמפ דייוויד.", en: "The collapse of the Camp David talks.", ar: "فشل محادثات كامب ديفيد.", ru: "Провал переговоров в Кэмп-Дэвиде.", es: "El fracaso de las conversaciones de Camp David.", fr: "L’échec des pourparlers de Camp David." }
       - kind: bad
         date: "2000-09-28"
         text: { he: "פרוץ האינתיפאדה השנייה.", en: "The outbreak of the Second Intifada.", ar: "اندلاع الانتفاضة الثانية.", ru: "Начало Второй интифады.", es: "El estallido de la Segunda Intifada.", fr: "Le déclenchement de la Seconde Intifada." }
-    ended: { he: "ברק התפטר; בבחירה ישירה מיוחדת ב-2001 ניצח שרון, אך הכנסת המשיכה עד 2003.", en: "Barak resigned; Sharon won a special direct PM election in 2001, but the Knesset continued until 2003.", ar: "استقال باراك؛ وفاز شارون في انتخابات مباشرة خاصة لرئاسة الحكومة في 2001، لكن الكنيست استمر حتى 2003.", ru: "Барак ушёл в отставку; в 2001 году Шарон победил на специальных прямых выборах премьер-министра, но Кнессет продолжал работу до 2003 года.", es: "Barak renunció; Sharon ganó una elección directa especial para primer ministro en 2001, pero la Knéset continuó hasta 2003.", fr: "Barak a démissionné ; Sharon a remporté une élection directe spéciale au poste de Premier ministre en 2001, mais la Knesset a siégé jusqu’en 2003." }
+    ended: { he: "ברק התפטר, ובבחירה מיוחדת לראשות הממשלה ב-2001 ניצח שרון. ב-2002 פיזר ראש הממשלה שרון את הכנסת — בחירות מוקדמות בינואר 2003.", en: "Barak resigned, and Sharon won a special election for prime minister in 2001. In 2002 Prime Minister Sharon dissolved the Knesset — early elections in January 2003.", ar: "استقال باراك، وفاز شارون في انتخابات خاصة لرئاسة الحكومة عام 2001. وفي 2002 حلّ رئيس الحكومة شارون الكنيست — انتخابات مبكرة في كانون الثاني/يناير 2003.", ru: "Барак ушёл в отставку, и в 2001 году Шарон победил на специальных выборах премьер-министра. В 2002 году премьер-министр Шарон распустил Кнессет — досрочные выборы в январе 2003 года.", es: "Barak dimitió y Sharon ganó en 2001 una elección especial para primer ministro. En 2002 el primer ministro Sharon disolvió la Knéset — elecciones anticipadas en enero de 2003.", fr: "Barak a démissionné, et Sharon a remporté en 2001 une élection spéciale au poste de Premier ministre. En 2002, le Premier ministre Sharon a dissous la Knesset — élections anticipées en janvier 2003." }
+    sources:
+      - { url: "https://en.idi.org.il/articles/38887", title: "Dissolving the Knesset: A Historical Survey (Chen Friedberg and Assaf Shapira, 18 May 2022)", publisher: "המכון הישראלי לדמוקרטיה" }
+      - { url: "https://en.idi.org.il/israeli-elections-and-parties/elections/1999/", title: "About the 1999 Elections", publisher: "המכון הישראלי לדמוקרטיה" }
+      - { url: "https://en.idi.org.il/israeli-elections-and-parties/elections/2003/", title: "About the 2003 Elections", publisher: "המכון הישראלי לדמוקרטיה" }
   - knesset: 14
     date: "1996-05-29"
     turnout: 79.3
@@ -288,9 +296,17 @@ elections:
       fr: "Les premières élections sous le système d’élection directe du Premier ministre. Netanyahou a battu Peres de justesse, quelques mois après l’assassinat de Rabin."
     events:
       - kind: neutral
-        date: "1997-01-15"
-        text: { he: "פרוטוקול חברון והסכם וואי — המשך תהליך אוסלו.", en: "The Hebron Protocol and Wye River Memorandum — continuing the Oslo process.", ar: "بروتوكول الخليل ومذكرة واي ريفر — استمرار مسار أوسلو.", ru: "Хевронский протокол и меморандум Уай-Ривер — продолжение процесса Осло.", es: "El Protocolo de Hebrón y el Memorando de Wye River — continuación del proceso de Oslo.", fr: "Le protocole de Hébron et le mémorandum de Wye River — poursuite du processus d’Oslo." }
-    ended: { he: "הכנסת הצביעה על פיזור עצמי ב-1998 על רקע התפרקות הקואליציה — בחירות 1999.", en: "The Knesset voted to dissolve in 1998 as the coalition fell apart — 1999 election.", ar: "صوّت الكنيست على حلّ نفسه في 1998 على خلفية تفكّك الائتلاف — انتخابات 1999.", ru: "В 1998 году Кнессет проголосовал за самороспуск на фоне распада коалиции — выборы 1999 года.", es: "La Knéset votó su disolución en 1998 al desmoronarse la coalición — elecciones de 1999.", fr: "La Knesset a voté sa dissolution en 1998 alors que la coalition se désagrégeait — élection de 1999." }
+        date: "1997-01-17"
+        text: { he: "פרוטוקול חברון — המשך תהליך אוסלו.", en: "The Hebron Protocol — continuing the Oslo process.", ar: "بروتوكول الخليل — استمرار مسار أوسلو.", ru: "Хевронский протокол — продолжение процесса Осло.", es: "El Protocolo de Hebrón — continuación del proceso de Oslo.", fr: "Le protocole de Hébron — poursuite du processus d’Oslo." }
+      - kind: neutral
+        date: "1998-10-23"
+        text: { he: "הסכם ואי (מזכר ואי ריבר) — המשך תהליך אוסלו.", en: "The Wye River Memorandum — continuing the Oslo process.", ar: "مذكرة واي ريفر — استمرار مسار أوسلو.", ru: "Меморандум Уай-Ривер — продолжение процесса Осло.", es: "El Memorando de Wye River — continuación del proceso de Oslo.", fr: "Le mémorandum de Wye River — poursuite du processus d’Oslo." }
+    ended: { he: "הכנסת פיזרה את עצמה בחוק שפורסם בינואר 1999 — בחירות מוקדמות במאי 1999.", en: "The Knesset dissolved itself by a law published in January 1999 — early elections in May 1999.", ar: "حلّ الكنيست نفسه بقانون نُشر في كانون الثاني/يناير 1999 — انتخابات مبكرة في أيار/مايو 1999.", ru: "Кнессет самораспустился законом, опубликованным в январе 1999 года, — досрочные выборы в мае 1999 года.", es: "La Knéset se disolvió mediante una ley publicada en enero de 1999 — elecciones anticipadas en mayo de 1999.", fr: "La Knesset s’est dissoute par une loi publiée en janvier 1999 — élections anticipées en mai 1999." }
+    sources:
+      - { url: "https://en.idi.org.il/articles/38887", title: "Dissolving the Knesset: A Historical Survey (Chen Friedberg and Assaf Shapira, 18 May 2022)", publisher: "המכון הישראלי לדמוקרטיה" }
+      - { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_IsraelLaw(2000624)", title: "חוק התפזרות הכנסת הארבע-עשרה (פורסם ב-10 בינואר 1999)", publisher: "Knesset OData" }
+      - { url: "https://peacemaker.un.org/sites/default/files/document/files/2024/05/il20ps970117protocol20concerning20the20redeployment20in20hebron.pdf", title: "Protocol Concerning the Redeployment in Hebron (17 January 1997)", publisher: "UN Peacemaker" }
+      - { url: "https://www.un.org/unispal/document/auto-insert-204357/", title: "Wye River Memorandum (23 October 1998)", publisher: "United Nations" }
   - knesset: 13
     date: "1992-06-23"
     turnout: 77.4
@@ -298,14 +314,14 @@ elections:
     winnerSeats: 44
     pm: { he: "יצחק רבין", en: "Yitzhak Rabin", ar: "يتسحاق رابين", ru: "Ицхак Рабин", es: "Isaac Rabin", fr: "Yitzhak Rabin" }
     summary:
-      he: "ממשלת רבין הובילה את תהליך אוסלו וחתמה על הסכם שלום עם ירדן. הקדנציה הסתיימה בטרגדיה עם רצח רבין."
-      en: "Rabin's government led the Oslo process and signed a peace treaty with Jordan. The term ended in tragedy with Rabin's assassination."
-      ar: "قادت حكومة رابين مسار أوسلو ووقّعت معاهدة سلام مع الأردن. وانتهت الولاية بمأساة اغتيال رابين."
-      ru: "Правительство Рабина возглавило процесс Осло и подписало мирный договор с Иорданией. Каденция закончилась трагедией — убийством Рабина."
-      es: "El gobierno de Rabin dirigió el proceso de Oslo y firmó un tratado de paz con Jordania. La legislatura terminó en tragedia con el asesinato de Rabin."
-      fr: "Le gouvernement Rabin a mené le processus d’Oslo et signé un traité de paix avec la Jordanie. La législature s’est terminée tragiquement par l’assassinat de Rabin."
+      he: "ממשלת רבין הובילה את תהליך אוסלו וחתמה על הסכם שלום עם ירדן. רבין נרצח בנובמבר 1995, ושמעון פרס עמד בראש הממשלה עד הבחירות ב-1996."
+      en: "Rabin's government led the Oslo process and signed a peace treaty with Jordan. Rabin was assassinated in November 1995, and Shimon Peres led the government until the 1996 election."
+      ar: "قادت حكومة رابين مسار أوسلو ووقّعت معاهدة سلام مع الأردن. اغتيل رابين في تشرين الثاني/نوفمبر 1995، وترأّس شمعون بيرس الحكومة حتى انتخابات 1996."
+      ru: "Правительство Рабина возглавило процесс Осло и подписало мирный договор с Иорданией. В ноябре 1995 года Рабин был убит, и до выборов 1996 года правительство возглавлял Шимон Перес."
+      es: "El gobierno de Rabin dirigió el proceso de Oslo y firmó un tratado de paz con Jordania. Rabin fue asesinado en noviembre de 1995, y Shimon Peres encabezó el gobierno hasta las elecciones de 1996."
+      fr: "Le gouvernement Rabin a mené le processus d’Oslo et signé un traité de paix avec la Jordanie. Rabin a été assassiné en novembre 1995, et Shimon Peres a dirigé le gouvernement jusqu’à l’élection de 1996."
     events:
-      - kind: good
+      - kind: neutral
         date: "1993-09-13"
         text: { he: "הסכמי אוסלו — הסכם הביניים עם אש\"ף.", en: "The Oslo Accords — the interim agreement with the PLO.", ar: "اتفاقيات أوسلو — الاتفاق المرحلي مع منظمة التحرير الفلسطينية.", ru: "Соглашения в Осло — промежуточное соглашение с ООП.", es: "Los Acuerdos de Oslo — el acuerdo interino con la OLP.", fr: "Les accords d’Oslo — l’accord intérimaire avec l’OLP." }
       - kind: good
@@ -320,7 +336,10 @@ elections:
       - kind: bad
         date: "1996-04-11"
         text: { he: "מבצע \"ענבי זעם\" בלבנון.", en: "Operation Grapes of Wrath in Lebanon.", ar: "عملية «عناقيد الغضب» في لبنان.", ru: "Операция «Гроздья гнева» в Ливане.", es: "La operación Uvas de la Ira en el Líbano.", fr: "L’opération Raisins de la colère au Liban." }
-    ended: { he: "השלימה כהונה כמעט מלאה — בחירות 1996.", en: "Served a nearly full term — 1996 election.", ar: "خدم ولاية شبه كاملة — انتخابات 1996.", ru: "Проработал почти полный срок — выборы 1996 года.", es: "Cumplió casi una legislatura entera — elecciones de 1996.", fr: "A siégé presque une législature complète — élection de 1996." }
+    ended: { he: "הכנסת פיזרה את עצמה בחוק — בחירות מוקדמות במאי 1996.", en: "Dissolved itself by law — early elections in May 1996.", ar: "حلّ الكنيست نفسه بقانون — انتخابات مبكرة في أيار/مايو 1996.", ru: "Самораспустился законом — досрочные выборы в мае 1996 года.", es: "Se disolvió por ley — elecciones anticipadas en mayo de 1996.", fr: "S’est dissoute par une loi — élections anticipées en mai 1996." }
+    sources:
+      - { url: "https://en.idi.org.il/articles/38887", title: "Dissolving the Knesset: A Historical Survey (Chen Friedberg and Assaf Shapira, 18 May 2022)", publisher: "המכון הישראלי לדמוקרטיה" }
+      - { url: "https://en.idi.org.il/israeli-elections-and-parties/elections/1992/", title: "About the 1992 Elections", publisher: "המכון הישראלי לדמוקרטיה" }
   - knesset: 12
     date: "1988-11-01"
     turnout: 79.7
@@ -338,7 +357,7 @@ elections:
       - kind: bad
         date: "1991-01-17"
         text: { he: "מלחמת המפרץ — ירי טילי סקאד על ישראל.", en: "The Gulf War — Scud missiles fired at Israel.", ar: "حرب الخليج — إطلاق صواريخ سكود على إسرائيل.", ru: "Война в Персидском заливе — обстрел Израиля ракетами «Скад».", es: "La Guerra del Golfo — misiles Scud lanzados contra Israel.", fr: "La guerre du Golfe — des missiles Scud tirés sur Israël." }
-      - kind: good
+      - kind: neutral
         date: "1991-10-30"
         text: { he: "ועידת מדריד וגל עלייה המוני מברית המועצות.", en: "The Madrid Conference and mass immigration from the USSR.", ar: "مؤتمر مدريد وهجرة جماعية من الاتحاد السوفييتي.", ru: "Мадридская конференция и массовая алия из СССР.", es: "La Conferencia de Madrid y la inmigración masiva desde la URSS.", fr: "La conférence de Madrid et l’immigration massive depuis l’URSS." }
       - kind: bad
@@ -364,7 +383,7 @@ elections:
       es: "Un gobierno de unidad nacional con rotación entre Peres (Alineamiento) y Shamir (Likud). Domó la inflación desbocada y redujo la presencia en el Líbano."
       fr: "Un gouvernement d’union nationale avec une rotation entre Peres (Alignement) et Shamir (Likoud). Il a maîtrisé une inflation galopante et réduit la présence au Liban."
     events:
-      - kind: good
+      - kind: neutral
         date: "1985-07-01"
         text: { he: "התוכנית הכלכלית לייצוב — בלימת ההיפר-אינפלציה.", en: "The Economic Stabilization Plan — halting hyperinflation.", ar: "خطة الاستقرار الاقتصادي — كبح التضخم المفرط.", ru: "Программа экономической стабилизации — остановка гиперинфляции.", es: "El Plan de Estabilización Económica — el freno a la hiperinflación.", fr: "Le plan de stabilisation économique — l’arrêt de l’hyperinflation." }
       - kind: good
@@ -502,7 +521,10 @@ elections:
       - kind: neutral
         date: "1967-06-05"
         text: { he: "מלחמת ששת הימים — תפיסת יו\"ש, עזה, סיני והגולן.", en: "The Six-Day War — capture of the West Bank, Gaza, Sinai and the Golan.", ar: "حرب الأيام الستة — السيطرة على الضفة الغربية وغزة وسيناء والجولان.", ru: "Шестидневная война — взятие под контроль Иудеи и Самарии (Западного берега), Газы, Синая и Голан.", es: "La Guerra de los Seis Días — la toma de Cisjordania, Gaza, el Sinaí y el Golán.", fr: "La guerre des Six Jours — la prise de la Cisjordanie, de Gaza, du Sinaï et du Golan." }
-    ended: { he: "אשכול נפטר בפברואר 1969 (מאיר החליפתו) — בחירות אוקטובר 1969.", en: "Eshkol died in February 1969 (Meir succeeded him) — October 1969 election.", ar: "توفي أشكول في شباط/فبراير 1969 (وخلفته مئير) — انتخابات تشرين الأول/أكتوبر 1969.", ru: "Эшколь умер в феврале 1969 года (его сменила Меир) — выборы в октябре 1969 года.", es: "Eshkol murió en febrero de 1969 (Meir lo sucedió) — elecciones de octubre de 1969.", fr: "Eshkol est mort en février 1969 (Meir lui a succédé) — élection d’octobre 1969." }
+    ended: { he: "השלימה כהונה מלאה — בחירות אוקטובר 1969. אשכול נפטר בפברואר 1969, וגולדה מאיר החליפה אותו.", en: "Served its full term — October 1969 election. Eshkol died in February 1969, and Golda Meir succeeded him.", ar: "أتمّ ولايته كاملة — انتخابات تشرين الأول/أكتوبر 1969. توفي أشكول في شباط/فبراير 1969، وخلفته غولدا مئير.", ru: "Проработал полный срок — выборы в октябре 1969 года. Эшколь умер в феврале 1969 года, и его сменила Голда Меир.", es: "Cumplió su legislatura entera — elecciones de octubre de 1969. Eshkol murió en febrero de 1969 y lo sucedió Golda Meir.", fr: "A accompli sa législature complète — élection d’octobre 1969. Eshkol est mort en février 1969, et Golda Meir lui a succédé." }
+    sources:
+      - { url: "https://en.idi.org.il/articles/38887", title: "Dissolving the Knesset: A Historical Survey (Chen Friedberg and Assaf Shapira, 18 May 2022)", publisher: "המכון הישראלי לדמוקרטיה" }
+      - { url: "https://en.idi.org.il/israeli-elections-and-parties/elections/1965/", title: "About the 1965 Elections", publisher: "המכון הישראלי לדמוקרטיה" }
   - knesset: 5
     date: "1961-08-15"
     turnout: 81.6
@@ -510,20 +532,24 @@ elections:
     winnerSeats: 42
     pm: { he: "דוד בן־גוריון", en: "David Ben-Gurion", ar: "دافيد بن غوريون", ru: "Давид Бен-Гурион", es: "David Ben-Gurión", fr: "David Ben Gourion" }
     summary:
-      he: "ממשלתו האחרונה של בן-גוריון, שהתפטר ב-1963 על רקע \"פרשת לבון\". משפט אייכמן התקיים בתקופה זו."
-      en: "Ben-Gurion's last government; he resigned in 1963 over the \"Lavon Affair.\" The Eichmann trial took place during this period."
-      ar: "حكومة بن غوريون الأخيرة؛ استقال في 1963 على خلفية «قضية لافون». وجرت محاكمة أيخمان في هذه الفترة."
-      ru: "Последнее правительство Бен-Гуриона; он ушёл в отставку в 1963 году из-за «дела Лавона». В этот период прошёл суд над Эйхманом."
-      es: "El último gobierno de Ben-Gurión; renunció en 1963 por el «asunto Lavon». El juicio a Eichmann tuvo lugar en este período."
-      fr: "Le dernier gouvernement de Ben Gourion ; il a démissionné en 1963 à cause de l’« affaire Lavon ». Le procès Eichmann a eu lieu durant cette période."
+      he: "ממשלתו האחרונה של בן-גוריון. ב-1963 התפטר מראשות הממשלה בנימוקים אישיים, על רקע פרשת לבון והקרע במפא\"י. משפט אייכמן התקיים בתקופה זו."
+      en: "Ben-Gurion's last government. He resigned as prime minister in 1963, citing personal reasons, amid the Lavon affair and a rift in Mapai. The Eichmann trial took place during this period."
+      ar: "حكومة بن غوريون الأخيرة. استقال من رئاسة الحكومة عام 1963 معلّلًا ذلك بأسباب شخصية، على خلفية قضية لافون والشرخ داخل مباي. وجرت محاكمة أيخمان في هذه الفترة."
+      ru: "Последнее правительство Бен-Гуриона. В 1963 году он ушёл с поста премьер-министра, сославшись на личные причины, на фоне дела Лавона и раскола в МАПАЙ. В этот период прошёл суд над Эйхманом."
+      es: "El último gobierno de Ben-Gurión. Dimitió como primer ministro en 1963, alegando motivos personales, en medio del asunto Lavon y de una división en el Mapai. El juicio a Eichmann tuvo lugar en este período."
+      fr: "Le dernier gouvernement de Ben Gourion. Il a quitté la tête du gouvernement en 1963, invoquant des raisons personnelles, sur fond d’affaire Lavon et de divisions au sein du Mapaï. Le procès Eichmann a eu lieu durant cette période."
     events:
       - kind: neutral
         date: "1961-04-11"
         text: { he: "משפט אדולף אייכמן בירושלים.", en: "The trial of Adolf Eichmann in Jerusalem.", ar: "محاكمة أدولف أيخمان في القدس.", ru: "Суд над Адольфом Эйхманом в Иерусалиме.", es: "El juicio a Adolf Eichmann en Jerusalén.", fr: "Le procès d’Adolf Eichmann à Jérusalem." }
-      - kind: bad
+      - kind: neutral
         date: "1963-06-16"
-        text: { he: "התפטרות בן-גוריון על רקע פרשת לבון; אשכול מונה לראש ממשלה.", en: "Ben-Gurion's resignation over the Lavon Affair; Eshkol became prime minister.", ar: "استقالة بن غوريون على خلفية قضية لافون؛ وتعيين أشكول رئيسًا للحكومة.", ru: "Отставка Бен-Гуриона из-за дела Лавона; премьер-министром стал Эшколь.", es: "La renuncia de Ben-Gurión por el asunto Lavon; Eshkol pasó a ser primer ministro.", fr: "La démission de Ben Gourion à cause de l’affaire Lavon ; Eshkol est devenu Premier ministre." }
-    ended: { he: "בן-גוריון פרש ממפא\"י (הקים את רפ\"י) — בחירות 1965.", en: "Ben-Gurion broke from Mapai (founding Rafi) — 1965 election.", ar: "انشقّ بن غوريون عن مباي (وأسّس رافي) — انتخابات 1965.", ru: "Бен-Гурион порвал с МАПАЙ (основав РАФИ) — выборы 1965 года.", es: "Ben-Gurión rompió con el Mapai (fundando Rafi) — elecciones de 1965.", fr: "Ben Gourion a rompu avec le Mapaï (fondant le Rafi) — élection de 1965." }
+        text: { he: "בן-גוריון התפטר מראשות הממשלה בנימוקים אישיים, על רקע פרשת לבון; אשכול מונה לראש ממשלה.", en: "Ben-Gurion resigned as prime minister, citing personal reasons, amid the Lavon affair; Eshkol became prime minister.", ar: "استقال بن غوريون من رئاسة الحكومة معلّلًا ذلك بأسباب شخصية، على خلفية قضية لافون؛ وأصبح أشكول رئيسًا للحكومة.", ru: "Бен-Гурион ушёл с поста премьер-министра, сославшись на личные причины, на фоне дела Лавона; премьер-министром стал Эшколь.", es: "Ben-Gurión dimitió como primer ministro, alegando motivos personales, en medio del asunto Lavon; Eshkol pasó a ser primer ministro.", fr: "Ben Gourion a quitté la tête du gouvernement, invoquant des raisons personnelles, sur fond d’affaire Lavon ; Eshkol est devenu Premier ministre." }
+    ended: { he: "השלימה כהונה מלאה — בחירות נובמבר 1965. לפניהן פרש בן-גוריון ממפא\"י והקים את רפ\"י.", en: "Served its full term — November 1965 election. Before it, Ben-Gurion left Mapai and founded Rafi.", ar: "أتمّ ولايته كاملة — انتخابات تشرين الثاني/نوفمبر 1965. وقبلها انشقّ بن غوريون عن مباي وأسّس رافي.", ru: "Проработал полный срок — выборы в ноябре 1965 года. Перед ними Бен-Гурион вышел из МАПАЙ и основал РАФИ.", es: "Cumplió su legislatura entera — elecciones de noviembre de 1965. Antes, Ben-Gurión rompió con el Mapai y fundó Rafi.", fr: "A accompli sa législature complète — élection de novembre 1965. Auparavant, Ben Gourion avait rompu avec le Mapaï et fondé le Rafi." }
+    sources:
+      - { url: "https://en.idi.org.il/articles/38887", title: "Dissolving the Knesset: A Historical Survey (Chen Friedberg and Assaf Shapira, 18 May 2022)", publisher: "המכון הישראלי לדמוקרטיה" }
+      - { url: "https://en.idi.org.il/israeli-elections-and-parties/elections/1965/", title: "About the 1965 Elections", publisher: "המכון הישראלי לדמוקרטיה" }
+      - { url: "https://www.walla.co.il/news/israel/2651048", title: "כשבן גוריון הודיע לשריו: \"אינני יכול להמשיך\"", publisher: "וואלה" }
   - knesset: 4
     date: "1959-11-03"
     turnout: 81.6
@@ -538,7 +564,7 @@ elections:
       es: "El Mapai en su apogeo con Ben-Gurión, pero la legislatura fue corta y cayó por el «asunto Lavon»."
       fr: "Le Mapaï à son apogée sous Ben Gourion, mais la législature a été courte et emportée par l’« affaire Lavon »."
     events:
-      - kind: bad
+      - kind: neutral
         date: "1960-12-01"
         text: { he: "התפרצות מחודשת של \"פרשת לבון\" שזעזעה את הקואליציה.", en: "A renewed eruption of the \"Lavon Affair\" that shook the coalition.", ar: "تجدّد «قضية لافون» التي هزّت الائتلاف.", ru: "Новое обострение «дела Лавона», потрясшее коалицию.", es: "Un nuevo estallido del «asunto Lavon» que sacudió la coalición.", fr: "Une nouvelle flambée de l’« affaire Lavon » qui a ébranlé la coalition." }
     ended: { he: "פוזרה ב-1961 על רקע פרשת לבון — בחירות מוקדמות.", en: "Dissolved in 1961 over the Lavon Affair — early elections.", ar: "حُلّ في 1961 على خلفية قضية لافون — انتخابات مبكرة.", ru: "Распущен в 1961 году из-за дела Лавона — досрочные выборы.", es: "Disuelta en 1961 por el asunto Lavon — elecciones anticipadas.", fr: "Dissoute en 1961 à cause de l’affaire Lavon — élections anticipées." }
@@ -574,7 +600,7 @@ elections:
       es: "Los años formativos del joven Estado. El acuerdo de reparaciones con Alemania desató protestas tormentosas."
       fr: "Les années fondatrices du jeune État. L’accord de réparations avec l’Allemagne a déclenché des manifestations houleuses."
     events:
-      - kind: bad
+      - kind: neutral
         date: "1952-01-07"
         text: { he: "הסכם השילומים מגרמניה ומחאות סוערות נגדו.", en: "The reparations agreement with Germany and fierce protests against it.", ar: "اتفاقية التعويضات مع ألمانيا والاحتجاجات العاصفة ضدها.", ru: "Соглашение о репарациях с Германией и бурные протесты против него.", es: "El acuerdo de reparaciones con Alemania y las duras protestas en su contra.", fr: "L’accord de réparations avec l’Allemagne et les vives protestations contre lui." }
     ended: { he: "השלימה כהונה — בחירות 1955.", en: "Served its term — 1955 election.", ar: "أتمّ ولايته — انتخابات 1955.", ru: "Проработал полный срок — выборы 1955 года.", es: "Cumplió su legislatura — elecciones de 1955.", fr: "A accompli sa législature — élection de 1955." }
@@ -593,10 +619,10 @@ elections:
       es: "La primera Knéset (inicialmente la Asamblea Constituyente) sentó las bases del Estado en plena inmigración masiva y austeridad."
       fr: "La première Knesset (d’abord l’Assemblée constituante) a posé les fondations de l’État en pleine immigration massive et austérité."
     events:
-      - kind: good
+      - kind: neutral
         date: "1950-07-05"
         text: { he: "חקיקת חוק השבות.", en: "The enactment of the Law of Return.", ar: "سنّ قانون العودة.", ru: "Принятие Закона о возвращении.", es: "La promulgación de la Ley del Retorno.", fr: "L’adoption de la loi du retour." }
-      - kind: bad
+      - kind: neutral
         date: "1949-04-01"
         text: { he: "תקופת הצנע וקליטת עלייה המונית.", en: "The austerity (tzena) period and mass-immigration absorption.", ar: "فترة التقشف («تسينع») واستيعاب الهجرة الجماعية.", ru: "Период жёсткой экономии («цена») и абсорбция массовой алии.", es: "El período de austeridad (tzena) y la absorción de la inmigración masiva.", fr: "La période d’austérité (tzena) et l’absorption de l’immigration massive." }
       - kind: neutral

@@ -5,12 +5,13 @@ import { formatDate } from "@/lib/format";
 export const dynamic = "force-dynamic";
 
 // Per-Knesset English Wikipedia article — the cited source for each term's
-// summary, events, and figures.
+// summary, events, and figures. Wikipedia titles the 21st, 22nd, 24th and 25th
+// with digits ("Twenty-first_Knesset" does not exist; checked 28 Sep 2026).
 const ORDINALS = [
   "First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth",
   "Ninth", "Tenth", "Eleventh", "Twelfth", "Thirteenth", "Fourteenth", "Fifteenth",
   "Sixteenth", "Seventeenth", "Eighteenth", "Nineteenth", "Twentieth",
-  "Twenty-first", "Twenty-second", "Twenty-third", "Twenty-fourth", "Twenty-fifth",
+  "21st", "22nd", "Twenty-third", "24th", "25th",
 ];
 const knessetWikiUrl = (n: number) =>
   ORDINALS[n - 1]

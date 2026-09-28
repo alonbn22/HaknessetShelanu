@@ -1,7 +1,7 @@
 # Launch checklist
 
 The work between now and the public launch of Our Knesset, ahead of the election on
-27 October 2026. Last updated 27 September 2026 (night).
+27 October 2026. Last updated 28 September 2026.
 
 ✅ done · 🔄 in progress · ⬜ to do. Owners: **Claude** (the AI agent, through commits
 the owner reviews), **owner** (the maintainer), **lawyer**.
@@ -63,8 +63,8 @@ the owner reviews), **owner** (the maintainer), **lawyer**.
 | ✅ | Database out of git: the `data-latest` release, a daily Action, a Vercel deploy hook | Claude | 70ffeab. `npm run db:pull` / `db:publish` |
 | ✅ | Next.js 16.3.6 (security release) | Claude | fd46de3 |
 | ✅ | Israel time zone | Claude | 67921f5 |
-| ⬜ | Vercel project, env vars, deploy hook secret | owner | See DEPLOY.md: `NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_CONTACT_EMAIL`, `GITHUB_TOKEN` while private, `VERCEL_DEPLOY_HOOK` |
-| ⬜ | GitHub Actions minutes | owner | The daily sync and CI can't run while the private repo's billing is failing; free once public |
+| ⬜ | Vercel project, env vars, deploy hook secret | owner | See DEPLOY.md: `NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_CONTACT_EMAIL`, `VERCEL_DEPLOY_HOOK` |
+| ✅ | GitHub Actions minutes | owner | The repo is public (28 Sep): free. CI runs on every push. The daily sync is switched off until the owner enables it |
 | ⬜ | Vercel log retention | owner | |
 
 ## Quality
@@ -84,9 +84,9 @@ the owner reviews), **owner** (the maintainer), **lawyer**.
 | | Item | Owner | Notes |
 |---|---|---|---|
 | ✅ | LICENSE, README, CONTRIBUTING, Code of Conduct, SECURITY, PR template, CI | Claude | Licenses as before (owner, 27 Sep): code AGPL-3.0-or-later, the site's text CC BY-SA 4.0 |
-| ⬜ | Purge the old database copies from git history | owner, then Claude | About 2.6 of the repository's 2.7 GiB. Rewrites every commit hash: do it before the repo goes public |
-| ⬜ | Check commit author emails | owner | If one shouldn't be public, fix it in the same history rewrite |
-| ⬜ | Make the repository public | owner | Then turn on private vulnerability reporting (SECURITY.md depends on it), and delete the Vercel `GITHUB_TOKEN` |
+| ✅ | Purge the old database copies from git history | owner, then Claude | 28 Sep: history rewritten without the database (2.7 GB → 3 MB); a full backup bundle sits beside the project folder |
+| ✅ | Commit author emails | owner, Claude | 28 Sep: every commit shows `alonbn22 <maintainer@haknesset-sheli.invalid>`; no personal information in any file (scanned) |
+| ✅ | Public repository | owner, Claude | 28 Sep: a fresh repo, `alonbn22/HaknessetShelanu`, holds only the cleaned history (the old private repo kept old pull-request refs GitHub won't delete). Still to do: turn on private vulnerability reporting (SECURITY.md depends on it); decide what to do with the old private repo |
 | ⬜ | Branch protection on `master` | owner | Require the CI check |
 
 ## Launch

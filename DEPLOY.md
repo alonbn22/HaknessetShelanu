@@ -40,9 +40,6 @@ The Hobby tier is free for non-commercial use, which this civic project is.
    - `NEXT_PUBLIC_CONTACT_EMAIL`: the site's contact address (the accessibility
      statement, privacy and terms pages). Without it they point to public GitHub
      issues.
-   - `GITHUB_TOKEN`: **only while the repo is private.** A fine-grained token with
-     read access to this repo's contents, so the build can download the database
-     release. Delete it once the repo is public.
 3. **Deploy hook** for the daily data: Project → Settings → Git → Deploy Hooks → create
    one for `master`, then add its URL to the GitHub repo as the Actions secret
    `VERCEL_DEPLOY_HOOK`.
@@ -66,8 +63,9 @@ Sync Knesset data → Run workflow):
 4. `npm run db:publish` uploads the new file and its checksum to `data-latest`.
 5. The deploy hook rebuilds the site with the new data.
 
-A failed run publishes nothing and GitHub emails the owner. On a private repo the job
-uses paid Actions minutes; on a public repo it's free.
+A failed run publishes nothing and GitHub emails the owner. The repo is public, so
+Actions minutes are free. The workflow is switched off until the owner turns it on
+(Actions → Sync Knesset data → Enable workflow).
 
 A **deliberate database change** (new table, backfill, a translation batch): apply it
 locally, run `npm run db:clean`, check the site, then `npm run db:publish`. Don't

@@ -53,8 +53,18 @@
 # from its constitution (the only statement of aims the party publishes); the
 # Haredi Public's full platform chapters and the Reservists' platform yield no
 # further cells (the Reservists' inquiry section wants an inquiry but takes no
-# side on the state-commission format).
-lastReviewed: "2026-09-24"
+# side on the state-commission format). 28 Sep 2026, weekly review (sources of
+# 24–28 Sep, plus ynet's 22 Sep questionnaire on the courts): Yashar on Arab
+# parties 0 → -1 (Eisenkot: today no Arab or haredi party meets his rules, which
+# apply to every party); Amkha on Arab parties -1 → -2 (its no. 2 on coalition
+# partnership); Blue and White on the Supreme Court -2 → 0 (its 2026 answer
+# backs limiting the court, its 2023 vote went the other way: a mixed record);
+# the Democrats' Arab-parties cell and Yashar's settlements cell now quote the
+# leader's and the list's own newer words; six new cells — Religious Zionism on
+# Arab parties; Amkha on a Palestinian state, settlements, the draft law and
+# the Supreme Court; Blue and White on settlements (+1: its answer does not
+# address sovereignty).
+lastReviewed: "2026-09-28"
 questions:
   - id: palestinian-state
     topic: security
@@ -254,6 +264,26 @@ questions:
           ru: "Карив: «В конце дипломатического процесса — а это займёт время — страна будет разделена между двумя народами, и рядом с Государством Израиль будет демилитаризованное палестинское государство в рамках регионального урегулирования»"
           es: "Kariv: «Al final del proceso diplomático —y llevará tiempo— la tierra se dividirá entre los dos pueblos y junto al Estado de Israel habrá un Estado palestino desmilitarizado dentro de un acuerdo regional»"
           fr: "Kariv : « Au terme du processus diplomatique — et cela prendra du temps —, la terre sera partagée entre les deux peuples et, à côté de l’État d’Israël, il y aura un État palestinien démilitarisé dans le cadre d’un arrangement régional »"
+      amkha:
+        value: -2
+        basis: statement
+        recordOf:
+          he: "תשובת עמך ישראל ל-ynet; ראש הרשימה עופר וינטר אמר ב-26.9 בראיון לכאן כי \"לא תקום פה שום מדינה אחרת חוץ ממדינת ישראל\""
+          en: "Amkha Yisrael's answer to ynet; list head Ofer Winter told Kan on 26 Sep that \"no other state will be established here except the State of Israel\""
+          ar: "ردّ عمخا يسرائيل على ynet؛ وقال رئيس القائمة عوفر فينتر لقناة «كان» في 26 أيلول/سبتمبر إنه «لن تقوم هنا أي دولة أخرى غير دولة إسرائيل»"
+          ru: "ответ «Амха Исраэль» для ynet; глава списка Офер Винтер сказал «Кан» 26 сентября, что «здесь не будет создано никакого другого государства, кроме Государства Израиль»"
+          es: "respuesta de Amkha Yisrael a ynet; el cabeza de lista, Ofer Winter, dijo a Kan el 26 de septiembre que «aquí no se establecerá ningún otro Estado salvo el Estado de Israel»"
+          fr: "réponse d’Amkha Israël à ynet ; la tête de liste, Ofer Winter, a déclaré à Kan le 26 septembre qu’« aucun autre État que l’État d’Israël ne sera établi ici »"
+        source: { url: "https://www.ynet.co.il/news/elections2026/article/yokra14910407", title: "פינוי או בינוי: מה התוכנית של כל מפלגה ליהודה ושומרון (28.9.2026)", publisher: "ynet" }
+        moreSources:
+          - { url: "https://www.kan.org.il/content/kan-news/politic/1103103/", title: "עופר וינטר: \"מכוון לתיק הביטחון, לא הכרענו באף זירה\" (26.9.2026)", publisher: "כאן חדשות" }
+        quote:
+          he: "תשובת עמך ישראל ל-ynet: \"עמדתנו היא שלעולם לא תקום לצדנו מדינה פלסטינית\""
+          en: "Amkha Yisrael's answer to ynet: \"Our position is that a Palestinian state will never be established alongside us\""
+          ar: "ردّ عمخا يسرائيل على ynet: «موقفنا هو أنه لن تقوم إلى جانبنا دولة فلسطينية أبدًا»"
+          ru: "Ответ «Амха Исраэль» для ynet: «Наша позиция: рядом с нами никогда не будет создано палестинское государство»"
+          es: "Respuesta de Amkha Yisrael a ynet: «Nuestra posición es que jamás se establecerá a nuestro lado un Estado palestino»"
+          fr: "Réponse d’Amkha Israël à ynet : « Notre position est qu’un État palestinien ne sera jamais établi à nos côtés »"
   - id: settlements-sovereignty
     topic: security
     lean: right
@@ -419,14 +449,36 @@ questions:
       yashar:
         value: 0
         basis: statement
-        source: { url: "https://www.israelhayom.co.il/magazine/hashavua/article/21288643", title: "איזנקוט חושף את החזון המדיני: \"שתי מדינות אחרי 7.10 - מחשבה הזויה\" (27.8.2026)", publisher: "ישראל היום" }
+        source: { url: "https://www.ynet.co.il/news/elections2026/article/yokra14910407", title: "פינוי או בינוי: מה התוכנית של כל מפלגה ליהודה ושומרון (28.9.2026)", publisher: "ynet" }
         quote:
-          he: "איזנקוט על מכרזי הבנייה ב-E1: \"לא כעת. זו טעות שעולה לנו במחיר בינלאומי\"; לדבריו פעילות שני השרים ואירועי האלימות של מתנחלים נגד פלסטינים \"מסכנים את ההתיישבות כולה\" (השאלה פתחה בקביעה \"אתה תומך בהתיישבות בשטחי C\"). על החלת ריבונות ישראלית לא דיבר (את המילה \"ריבונות\" אמר על צה\"ל, שלדבריו איבד את ריבונותו באזור)."
-          en: "Eisenkot on the E1 building tenders: \"Not now. It is a mistake that costs us an international price\"; the two ministers' conduct and settler violence against Palestinians \"endanger the entire settlement enterprise\" (the question opened with \"You support settlement in Area C\"). He did not address applying Israeli sovereignty (he used the word only about the IDF, which he said had lost its sovereignty in the area)."
-          ar: "آيزنكوت عن مناقصات البناء في منطقة E1: «ليس الآن. هذا خطأ يكلّفنا ثمنًا دوليًا»؛ وقال إن نشاط الوزيرين وأحداث عنف المستوطنين ضد الفلسطينيين «تعرّض الاستيطان كله للخطر» (افتُتح السؤال بعبارة «أنت تؤيد الاستيطان في المناطق (ج)»). ولم يتحدث عن فرض السيادة الإسرائيلية (استخدم كلمة «السيادة» فقط عن الجيش الإسرائيلي، الذي قال إنه فقد سيادته في المنطقة)."
-          ru: "Айзенкот о тендерах на строительство в E1: «Не сейчас. Это ошибка, за которую мы платим международную цену»; по его словам, действия двух министров и насилие поселенцев против палестинцев «ставят под угрозу все поселения» (вопрос начинался с утверждения «Вы поддерживаете поселения в зоне C»). О распространении израильского суверенитета он не говорил (слово «суверенитет» он употребил только применительно к ЦАХАЛу, который, по его словам, утратил суверенитет в этом районе)."
-          es: "Eisenkot sobre los concursos de construcción en E1: «Ahora no. Es un error que nos cuesta un precio internacional»; la actuación de los dos ministros y la violencia de colonos contra palestinos «ponen en peligro todos los asentamientos» (la pregunta comenzaba con «Usted apoya los asentamientos en el Área C»). No se refirió a aplicar la soberanía israelí (usó la palabra solo sobre el ejército, que según él perdió su soberanía en la zona)."
-          fr: "Eisenkot sur les appels d’offres de construction en E1 : « Pas maintenant. C’est une erreur qui nous coûte un prix international » ; l’action des deux ministres et la violence de colons contre des Palestiniens « mettent en danger toutes les implantations » (la question commençait par « Vous soutenez l’implantation en zone C »). Il n’a pas parlé d’appliquer la souveraineté israélienne (il n’a employé le mot qu’à propos de Tsahal, qui selon lui a perdu sa souveraineté dans la zone)."
+          he: "תשובת ישר! ל-ynet: \"ישר! תומכת בחיזוק גושי ההתיישבות ובהקמת יישובים חדשים באופן חוקי, בהתאם לאינטרסים הלאומיים של ישראל ולהמלצות מערכת הביטחון\"; ועל ריבונות: \"ישר! מתנגדת למהלכים שמשמעותם סיכון הרוב היהודי במדינת ישראל - דבר שיוביל למדינה דו-לאומית\" — עמדה מעורבת"
+          en: "Yashar's answer to ynet: \"Yashar! supports strengthening the settlement blocs and establishing new communities lawfully, in line with Israel's national interests and the security establishment's recommendations\"; and on sovereignty: \"Yashar! opposes moves that would put the Jewish majority in the State of Israel at risk — which would lead to a binational state\" — a mixed position"
+          ar: "ردّ ياشار! على ynet: «ياشار! تؤيد تعزيز الكتل الاستيطانية وإقامة بلدات جديدة بشكل قانوني، وفقًا للمصالح القومية لإسرائيل ولتوصيات المؤسسة الأمنية»؛ وعن السيادة: «ياشار! تعارض الخطوات التي تعني تعريض الأغلبية اليهودية في دولة إسرائيل للخطر — وهو ما سيؤدي إلى دولة ثنائية القومية» — موقف مختلط"
+          ru: "Ответ «Яшар!» для ynet: «„Яшар!“ поддерживает укрепление поселенческих блоков и создание новых населённых пунктов законным путём, в соответствии с национальными интересами Израиля и рекомендациями силовых структур»; о суверенитете: «„Яшар!“ выступает против шагов, ставящих под угрозу еврейское большинство в Государстве Израиль, — это привело бы к двунациональному государству» — неоднозначная позиция"
+          es: "Respuesta de ¡Yashar! a ynet: «¡Yashar! apoya reforzar los bloques de asentamientos y establecer nuevas localidades de forma legal, conforme a los intereses nacionales de Israel y a las recomendaciones del aparato de seguridad»; y sobre la soberanía: «¡Yashar! se opone a medidas que pongan en riesgo la mayoría judía en el Estado de Israel, lo que llevaría a un Estado binacional» — una postura mixta"
+          fr: "Réponse de Yashar! à ynet : « Yashar! soutient le renforcement des blocs d’implantations et la création de nouvelles localités de manière légale, conformément aux intérêts nationaux d’Israël et aux recommandations de l’appareil de sécurité » ; et sur la souveraineté : « Yashar! s’oppose aux mesures qui mettraient en danger la majorité juive dans l’État d’Israël — ce qui mènerait à un État binational » — une position mitigée"
+      amkha:
+        value: 2
+        basis: statement
+        source: { url: "https://www.ynet.co.il/news/elections2026/article/yokra14910407", title: "פינוי או בינוי: מה התוכנית של כל מפלגה ליהודה ושומרון (28.9.2026)", publisher: "ynet" }
+        quote:
+          he: "תשובת עמך ישראל ל-ynet: \"אנו מאמינים בזכותו של עם ישראל בארצו ותומכים בהקמת יישובים ביהודה ושומרון ובכל חבלי הארץ\"; ועל ריבונות: \"…על המדינה להעמיק את האחיזה בקרקע ולהחיל ריבונות ביהודה ושומרון ובכל מקום בארץ\""
+          en: "Amkha Yisrael's answer to ynet: \"We believe in the right of the people of Israel to its land and support establishing communities in Judea and Samaria and in every part of the land\"; and on sovereignty: \"…the state must deepen its hold on the land and apply sovereignty in Judea and Samaria and everywhere in the land\""
+          ar: "ردّ عمخا يسرائيل على ynet: «نؤمن بحق شعب إسرائيل في أرضه ونؤيد إقامة بلدات في يهودا والسامرة وفي كل أنحاء البلاد»؛ وعن السيادة: «…على الدولة أن تعمّق تمسّكها بالأرض وأن تفرض السيادة في يهودا والسامرة وفي كل مكان في البلاد»"
+          ru: "Ответ «Амха Исраэль» для ynet: «Мы верим в право народа Израиля на свою землю и поддерживаем создание населённых пунктов в Иудее и Самарии и во всех частях страны»; о суверенитете: «…государство должно укрепить свою опору на земле и распространить суверенитет на Иудею и Самарию и на всю страну»"
+          es: "Respuesta de Amkha Yisrael a ynet: «Creemos en el derecho del pueblo de Israel a su tierra y apoyamos establecer localidades en Judea y Samaria y en todas las regiones del país»; y sobre la soberanía: «…el Estado debe afianzar su presencia sobre el terreno y aplicar la soberanía en Judea y Samaria y en todo lugar del país»"
+          fr: "Réponse d’Amkha Israël à ynet : « Nous croyons au droit du peuple d’Israël sur sa terre et soutenons la création de localités en Judée-Samarie et dans toutes les régions du pays » ; et sur la souveraineté : « …l’État doit renforcer son emprise sur le terrain et appliquer la souveraineté en Judée-Samarie et partout dans le pays »"
+      blue-white:
+        value: 1
+        basis: statement
+        source: { url: "https://www.ynet.co.il/news/elections2026/article/yokra14910407", title: "פינוי או בינוי: מה התוכנית של כל מפלגה ליהודה ושומרון (28.9.2026)", publisher: "ynet" }
+        quote:
+          he: "תשובת כחול לבן ל-ynet: \"המפלגה תומכת בחיזוק ההתיישבות ביהודה ושומרון בדגש על הבקעה, יישובי גב ההר, דרום הר חברון וקו התפר… אין צורך בפינוי יישובים\" (התשובה אינה עוסקת בהחלת ריבונות)"
+          en: "Blue and White's answer to ynet: \"The party supports strengthening settlement in Judea and Samaria, with an emphasis on the Jordan Valley, the mountain-ridge communities, the southern Hebron Hills and the seam line… there is no need to evacuate communities\" (the answer does not address applying sovereignty)"
+          ar: "ردّ أزرق أبيض على ynet: «يؤيد الحزب تعزيز الاستيطان في يهودا والسامرة مع التركيز على الغور وبلدات ظهر الجبل وجنوب جبل الخليل وخط التماس… لا حاجة إلى إخلاء بلدات» (الردّ لا يتناول فرض السيادة)"
+          ru: "Ответ «Кахоль-лаван» для ynet: «Партия поддерживает укрепление поселений в Иудее и Самарии с упором на Иорданскую долину, населённые пункты горного хребта, южные Хевронские горы и линию шва… нет необходимости эвакуировать населённые пункты» (о распространении суверенитета в ответе не говорится)"
+          es: "Respuesta de Azul y Blanco a ynet: «El partido apoya reforzar los asentamientos en Judea y Samaria, con énfasis en el valle del Jordán, las localidades de la cresta montañosa, el sur de las colinas de Hebrón y la línea de separación… no hay necesidad de evacuar localidades» (la respuesta no aborda la aplicación de la soberanía)"
+          fr: "Réponse de Bleu et Blanc à ynet : « Le parti soutient le renforcement de l’implantation en Judée-Samarie, en particulier dans la vallée du Jourdain, les localités de la ligne de crête, le sud des collines d’Hébron et la ligne de jonction… il n’est pas nécessaire d’évacuer des localités » (la réponse ne traite pas de l’application de la souveraineté)"
   - id: econ-welfare
     topic: economy
     lean: left
@@ -1055,6 +1107,26 @@ questions:
           ru: "«Мы должны защитить того, кто действительно посвящает жизнь изучению Торы, и дать ему учиться спокойно, без угрозы ареста и санкций… каждый молодой харедим, который не посвящает жизнь изучению Торы, должен служить»."
           es: "«Debemos proteger a quien de verdad consagra su vida al estudio de la Torá y dejarle estudiar en paz, sin amenaza de detención ni sanciones… todo joven jaredí que no consagre su vida al estudio de la Torá debe servir.»"
           fr: "« Nous devons protéger celui qui consacre vraiment sa vie à l’étude de la Torah et le laisser étudier en paix, sans menace d’arrestation ni de sanctions… tout jeune haredi qui ne consacre pas sa vie à l’étude de la Torah doit servir. »"
+      amkha:
+        value: -1
+        basis: statement
+        recordOf:
+          he: "דברי ראש הרשימה עופר וינטר; הוא מתנגד לחוק פטור, אך ב-10.9 אמר ש\"חלק מבחורי הישיבה יוכרו כמשרתים\""
+          en: "the words of list head Ofer Winter; he opposes an exemption law, but on 10 Sep he said that \"some yeshiva students will be recognized as serving\""
+          ar: "كلام رئيس القائمة عوفر فينتر؛ هو يعارض قانون إعفاء، لكنه قال في 10 أيلول/سبتمبر إن «بعض طلاب المدارس الدينية سيُعترف بهم كخادمين»"
+          ru: "слова главы списка Офера Винтера; он против закона об освобождении, но 10 сентября сказал, что «часть учащихся ешив будет признана служащими»"
+          es: "palabras del cabeza de lista, Ofer Winter; se opone a una ley de exención, pero el 10 de septiembre dijo que «algunos estudiantes de yeshivá serán reconocidos como personas que sirven»"
+          fr: "propos de la tête de liste, Ofer Winter ; il s’oppose à une loi d’exemption, mais a déclaré le 10 septembre que « certains étudiants de yeshiva seront reconnus comme servant »"
+        source: { url: "https://www.kan.org.il/content/kan-news/politic/1103103/", title: "עופר וינטר: \"מכוון לתיק הביטחון, לא הכרענו באף זירה\" (26.9.2026)", publisher: "כאן חדשות" }
+        moreSources:
+          - { url: "https://www.makorrishon.co.il/news/politcal/article/369822", title: "\"תהיה הצבעת מחאה, אנחנו ההתחלה של השינוי הפוליטי הגדול\" — ריאיון עם עופר וינטר (10.9.2026)", publisher: "מקור ראשון" }
+        quote:
+          he: "וינטר: \"לא צריך חוק גיוס כי חוק הגיוס מחייב את כל מדינת ישראל. כשאומרים חוק גיוס, אומרים חוק פטור מגיוס\""
+          en: "Winter: \"There is no need for a draft law, because the draft law binds the whole State of Israel. When people say 'draft law', they mean a law exempting from the draft\""
+          ar: "فينتر: «لا حاجة إلى قانون تجنيد لأن قانون التجنيد مُلزم لكل دولة إسرائيل. عندما يقولون قانون تجنيد، فهم يقولون قانون إعفاء من التجنيد»"
+          ru: "Винтер: «Не нужен закон о призыве, потому что закон о призыве обязателен для всего Государства Израиль. Когда говорят „закон о призыве“, имеют в виду закон об освобождении от призыва»"
+          es: "Winter: «No hace falta una ley de reclutamiento, porque la ley de reclutamiento obliga a todo el Estado de Israel. Cuando se dice “ley de reclutamiento”, se dice ley de exención del reclutamiento»"
+          fr: "Winter : « Il n’y a pas besoin d’une loi sur la conscription, car la loi sur la conscription s’applique à tout l’État d’Israël. Quand on dit “loi sur la conscription”, on dit loi d’exemption de la conscription »"
   - id: core-curriculum
     topic: education
     lean: left
@@ -1703,24 +1775,25 @@ questions:
           es: "0 a favor, 24 en contra"
           fr: "0 pour, 24 contre"
       blue-white:
-        value: -2
-        basis: vote
-        voteId: 39566
+        value: 0
+        basis: statement
         recordOf:
-          he: "סיעת המחנה הממלכתי, שבה ישבו חברי כחול לבן עד 2025"
-          en: "the National Unity faction, in which Blue and White's members sat until 2025"
-          ar: "كتلة المعسكر الرسمي، التي كان أعضاء أزرق أبيض ضمنها حتى 2025"
-          ru: "фракция «Государственный лагерь», в которой члены «Кахоль-лаван» состояли до 2025 года"
-          es: "la facción Unidad Nacional, en la que estuvieron los miembros de Azul y Blanco hasta 2025"
-          fr: "la faction Unité nationale, dans laquelle siégeaient les membres de Bleu et Blanc jusqu’en 2025"
-        source: { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(39566)", title: "חוק-יסוד: השפיטה (תיקון מס' 3) — הצבעה במליאה, 2023-07-11 — קריאה ראשונה", publisher: "הכנסת" }
+          he: "תשובת כחול לבן ל-ynet; ב-2023 הצביעה סיעת המחנה הממלכתי, שבה ישבו חברי כחול לבן עד 2025, נגד תיקון עילת הסבירות (0 בעד, 12 נגד) — עמדה מעורבת"
+          en: "Blue and White's answer to ynet; in 2023 the National Unity faction, in which Blue and White's members sat until 2025, voted against the reasonableness amendment (0 for, 12 against) — a mixed record"
+          ar: "ردّ أزرق أبيض على ynet؛ وفي 2023 صوّتت كتلة المعسكر الرسمي، التي كان أعضاء أزرق أبيض ضمنها حتى 2025، ضد تعديل ذريعة المعقولية (مع: 0، ضد: 12) — سجلّ مختلط"
+          ru: "ответ «Кахоль-лаван» для ynet; в 2023 году фракция «Государственный лагерь», в которой члены «Кахоль-лаван» состояли до 2025 года, голосовала против поправки о критерии разумности (за: 0, против: 12) — неоднозначная позиция"
+          es: "respuesta de Azul y Blanco a ynet; en 2023 la facción Unidad Nacional, en la que estuvieron los miembros de Azul y Blanco hasta 2025, votó en contra de la enmienda de la razonabilidad (0 a favor, 12 en contra) — un historial mixto"
+          fr: "réponse de Bleu et Blanc à ynet ; en 2023, la faction Unité nationale, dans laquelle siégeaient les membres de Bleu et Blanc jusqu’en 2025, a voté contre l’amendement sur la raisonnabilité (0 pour, 12 contre) — un bilan mitigé"
+        source: { url: "https://www.ynet.co.il/news/elections2026/article/yokra14903844", title: "\"שלא יגידו 'לא ידענו'\": מה התוכנית של כל מפלגה בנושא שהצית מחאה חסרת תקדים (22.9.2026)", publisher: "ynet" }
+        moreSources:
+          - { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PlenumVote(39566)", title: "חוק-יסוד: השפיטה (תיקון מס' 3) — הצבעה במליאה, 2023-07-11 — קריאה ראשונה", publisher: "הכנסת" }
         quote:
-          he: "0 בעד, 12 נגד"
-          en: "0 for, 12 against"
-          ar: "مع: 0، ضد: 12"
-          ru: "за: 0, против: 12"
-          es: "0 a favor, 12 en contra"
-          fr: "0 pour, 12 contre"
+          he: "תשובת כחול לבן ל-ynet: \"נכון להיום הכוח של מערכת המשפט גדול מדי, ובעיקר בלתי-מוסדר, ומצד שני אסור להכניס פוליטיזציה לתוך החלטות משפטיות. התוכנית שלנו תסדיר מצד אחד את חוקי היסוד, ומצד שני תגביל את היכולת של בית המשפט להתערב בהחלטות הממשלה.\""
+          en: "Blue and White's answer to ynet: \"As of today the power of the justice system is too great, and above all unregulated; on the other hand, politicization must not enter legal decisions. Our plan will, on the one hand, regulate the Basic Laws and, on the other, limit the court's ability to intervene in government decisions.\""
+          ar: "ردّ أزرق أبيض على ynet: «حتى اليوم، قوة الجهاز القضائي كبيرة أكثر من اللازم، وخصوصًا غير منظّمة، ومن جهة أخرى يُمنع إدخال التسييس إلى القرارات القضائية. خطتنا ستنظّم من جهة قوانين الأساس، ومن جهة أخرى ستحدّ من قدرة المحكمة على التدخل في قرارات الحكومة.»"
+          ru: "Ответ «Кахоль-лаван» для ynet: «На сегодня власть судебной системы слишком велика и, главное, не урегулирована; с другой стороны, нельзя привносить политизацию в судебные решения. Наш план, с одной стороны, упорядочит основные законы, а с другой — ограничит возможность суда вмешиваться в решения правительства»"
+          es: "Respuesta de Azul y Blanco a ynet: «Hoy en día el poder del sistema judicial es demasiado grande y, sobre todo, no está regulado; por otro lado, no se debe introducir la politización en las decisiones judiciales. Nuestro plan, por un lado, regulará las Leyes Fundamentales y, por otro, limitará la capacidad del tribunal de intervenir en las decisiones del Gobierno.»"
+          fr: "Réponse de Bleu et Blanc à ynet : « Aujourd’hui, le pouvoir du système judiciaire est trop grand, et surtout non réglementé ; d’un autre côté, il ne faut pas introduire de politisation dans les décisions judiciaires. Notre plan, d’une part, réglementera les Lois fondamentales et, d’autre part, limitera la capacité de la Cour à intervenir dans les décisions du gouvernement. »"
       yashar:
         value: 0
         basis: platform
@@ -1743,6 +1816,17 @@ questions:
           ru: "«Судебная реформа: внешний независимый надзор за судебной системой; разделение функций юридического советника правительства; исправление системы сдержек и противовесов… мы будем продвигать исправления на основе широкого согласия»."
           es: "«Reforma judicial: supervisión externa e independiente del sistema de justicia; separación de las funciones del asesor jurídico del Gobierno; corrección de los contrapesos… impulsaremos correcciones con amplio consenso.»"
           fr: "« Réforme judiciaire : un contrôle externe et indépendant du système judiciaire ; la scission des fonctions du conseiller juridique du gouvernement ; la correction des contre-pouvoirs… nous ferons avancer des corrections dans un large consensus. »"
+      amkha:
+        value: 2
+        basis: statement
+        source: { url: "https://www.ynet.co.il/news/elections2026/article/yokra14903844", title: "\"שלא יגידו 'לא ידענו'\": מה התוכנית של כל מפלגה בנושא שהצית מחאה חסרת תקדים (22.9.2026)", publisher: "ynet" }
+        quote:
+          he: "תשובת עמך ישראל ל-ynet: \"האיזון בין הרשויות הופר ובית המשפט לקח לעצמו סמכויות-יתר. לכן ישנו צורך בתיקון שיאפשר לרצון העם לבוא לידי ביטוי באמצעות נציגיו… אחד מהתיקונים הנדרשים… הוא צמצום עילת הסבירות\""
+          en: "Amkha Yisrael's answer to ynet: \"The balance between the branches has been upset and the court has taken excessive powers for itself. So a correction is needed that lets the will of the people find expression through its representatives… one of the corrections needed… is narrowing the reasonableness standard\""
+          ar: "ردّ عمخا يسرائيل على ynet: «اختلّ التوازن بين السلطات وأخذت المحكمة لنفسها صلاحيات زائدة. لذلك هناك حاجة إلى تصحيح يتيح لإرادة الشعب أن تجد تعبيرها من خلال ممثليه… أحد التصحيحات المطلوبة… هو تقليص ذريعة المعقولية»"
+          ru: "Ответ «Амха Исраэль» для ynet: «Баланс между ветвями власти нарушен, и суд присвоил себе чрезмерные полномочия. Поэтому нужна поправка, которая позволит воле народа выражаться через его представителей… одна из необходимых поправок… — сужение критерия разумности»"
+          es: "Respuesta de Amkha Yisrael a ynet: «El equilibrio entre los poderes se ha roto y el tribunal se ha arrogado poderes excesivos. Por eso hace falta una corrección que permita que la voluntad del pueblo se exprese a través de sus representantes… una de las correcciones necesarias… es reducir el criterio de razonabilidad»"
+          fr: "Réponse d’Amkha Israël à ynet : « L’équilibre entre les pouvoirs a été rompu et la Cour s’est arrogé des pouvoirs excessifs. Il faut donc une correction qui permette à la volonté du peuple de s’exprimer par ses représentants… l’une des corrections nécessaires… est la réduction du critère de raisonnabilité »"
   - id: oct7-commission
     topic: institutions
     lean: left
@@ -2146,14 +2230,14 @@ questions:
       democrats:
         value: 2
         basis: statement
-        source: { url: "https://www.timesofisrael.com/golan-zionist-opposition-must-partner-with-arab-party-raam-to-topple-government/", title: "Golan: Zionist opposition must partner with Arab party Ra'am to topple government (5 May 2026)", publisher: "The Times of Israel" }
+        source: { url: "https://www.kan.org.il/content/kan-news/politic/1103282/", title: "יאיר גולן: \"מפלגה ערבית יכולה להיות בממשלה הבאה וזה נכון וראוי\" (27.9.2026)", publisher: "כאן חדשות" }
         quote:
-          he: "גולן: \"אם עלינו להסתמך על קולות רע\"ם כדי להפיל את הממשלה… רע\"ם היא שותפה ראויה.\""
-          en: "Golan: \"If we must rely on the votes of the Ra'am party to topple this failed government… then Ra'am is a worthy partner.\""
-          ar: "غولان: «إذا كان علينا الاعتماد على أصوات القائمة الموحدة لإسقاط هذه الحكومة الفاشلة… فإن القائمة الموحدة شريك جدير.»"
-          ru: "Голан: «Если нам придётся опереться на голоса РААМ, чтобы свалить это правительство… то РААМ — достойный партнёр»."
-          es: "Golan: «Si debemos apoyarnos en los votos del partido Ra’am para derribar a este Gobierno fallido… entonces Ra’am es un socio digno.»"
-          fr: "Golan : « Si nous devons nous appuyer sur les voix du parti Ra’am pour renverser ce gouvernement failli… alors Ra’am est un partenaire digne. »"
+          he: "גולן: \"אנחנו שוקדים בתוכנו לייצוג ערבי הולם, וגם חושבים שמפלגה ערבית יכולה להיות בממשלה. זה טבעי, נכון, ראוי, דמוקרטי\""
+          en: "Golan: \"We are working within our own ranks for fair Arab representation, and we also think an Arab party can be in the government. It is natural, right, proper, democratic\""
+          ar: "غولان: «نعمل داخل صفوفنا على تمثيل عربي لائق، ونعتقد أيضًا أن حزبًا عربيًا يمكن أن يكون في الحكومة. هذا طبيعي وصحيح ولائق وديمقراطي»"
+          ru: "Голан: «Мы работаем внутри своей партии над достойным арабским представительством и также считаем, что арабская партия может быть в правительстве. Это естественно, правильно, достойно, демократично»"
+          es: "Golan: «Trabajamos dentro de nuestras filas por una representación árabe adecuada, y también creemos que un partido árabe puede estar en el Gobierno. Es natural, correcto, apropiado, democrático»"
+          fr: "Golan : « Nous œuvrons en notre sein pour une représentation arabe adéquate, et nous pensons aussi qu’un parti arabe peut être au gouvernement. C’est naturel, juste, légitime, démocratique »"
       yisrael-beiteinu:
         value: -2
         basis: platform
@@ -2220,28 +2304,48 @@ questions:
           ru: "«Оцма Иегудит» ранее потребовала отстранить РААМ, утверждая, что партия поддерживает вооружённую борьбу против Израиля."
           es: "Otzma Yehudit ya había pedido la inhabilitación de Ra’am, alegando que el partido apoyó la lucha armada contra Israel."
           fr: "Otzma Yehoudit avait déjà demandé l’invalidation de Ra’am, alléguant que le parti avait soutenu la lutte armée contre Israël."
-      yashar:
-        value: 0
+      rz-zehut:
+        value: -2
         basis: statement
-        source: { url: "https://www.timesofisrael.com/eisenkot-denies-claim-he-promised-bedouin-leaders-hed-bring-raam-into-government/", title: "Eisenkot denies claim he promised Bedouin leaders he'd bring Ra'am into government — Yashar statement (16 Sep 2026)", publisher: "The Times of Israel" }
+        source: { url: "https://www.ynet.co.il/news/120andone/article/ryfakwwqfe", title: "בצלאל סמוטריץ': \"צריך לצאת למלחמה ביהודה ושומרון\" (27.9.2026)", publisher: "ynet" }
         quote:
-          he: "ישר!: שותפים לקואליציה יצטרכו לעמוד ב\"שלושת עקרונות היסוד המוכרים לציבור\" — \"הכרה בישראל כמדינה יהודית ודמוקרטית\", \"קבלת ערכי מגילת העצמאות\", \"שירות צבאי או אזרחי לכולם\" ו\"הכרה בחמאס כארגון טרור\" — בלי לומר אם מפלגות ערביות עומדות בהם"
-          en: "Yashar: coalition partners must meet \"the three fundamental principles that are well known to the public\" — \"recognition of Israel as a Jewish and democratic state\", \"acceptance of the values of the Declaration of Independence\", \"universal military or civil national service\" and \"recognition of Hamas as a terrorist organization\" — without saying whether Arab parties qualify"
-          ar: "ياشار!: على شركاء الائتلاف أن يستوفوا «المبادئ الأساسية الثلاثة المعروفة للجمهور» — «الاعتراف بإسرائيل دولة يهودية وديمقراطية»، «قبول قيم وثيقة الاستقلال»، «خدمة عسكرية أو مدنية للجميع» و«الاعتراف بحماس منظمة إرهابية» — دون أن تقول إن كانت الأحزاب العربية تستوفيها"
-          ru: "«Яшар!»: партнёры по коалиции должны соответствовать «трём основным принципам, хорошо известным общественности» — «признание Израиля еврейским и демократическим государством», «принятие ценностей Декларации независимости», «всеобщая военная или гражданская служба» и «признание ХАМАС террористической организацией» — не уточняя, соответствуют ли им арабские партии"
-          es: "¡Yashar!: los socios de coalición deben cumplir «los tres principios fundamentales bien conocidos por el público» — «el reconocimiento de Israel como Estado judío y democrático», «la aceptación de los valores de la Declaración de Independencia», «el servicio militar o civil para todos» y «el reconocimiento de Hamás como organización terrorista» — sin decir si los partidos árabes los cumplen"
-          fr: "Yashar! : les partenaires de coalition doivent respecter « les trois principes fondamentaux bien connus du public » — « la reconnaissance d’Israël comme État juif et démocratique », « l’acceptation des valeurs de la Déclaration d’indépendance », « un service militaire ou civil pour tous » et « la reconnaissance du Hamas comme organisation terroriste » — sans dire si les partis arabes y satisfont"
-      amkha:
+          he: "סמוטריץ', כשנשאל מה אמר לנתניהו כשניסה אחרי בחירות 2021 לשכנעו להקים ממשלה עם עבאס: \"צייצתי שלא יקום ולא יהיה\""
+          en: "Smotrich, asked what he told Netanyahu when, after the 2021 election, Netanyahu tried to persuade him to form a government with Abbas: \"I tweeted that it will never happen\""
+          ar: "سموتريتش، عندما سُئل عمّا قاله لنتنياهو حين حاول بعد انتخابات 2021 إقناعه بتشكيل حكومة مع عباس: «غرّدتُ أن ذلك لن يكون أبدًا»"
+          ru: "Смотрич на вопрос, что он ответил Нетаньяху, когда тот после выборов 2021 года пытался убедить его сформировать правительство с Аббасом: «Я написал в твиттере, что этого не будет никогда»"
+          es: "Smotrich, preguntado por lo que le dijo a Netanyahu cuando, tras las elecciones de 2021, este intentó convencerlo de formar un Gobierno con Abbas: «Tuiteé que eso no ocurrirá jamás»"
+          fr: "Smotrich, interrogé sur ce qu’il a répondu à Netanyahu lorsque celui-ci a tenté, après les élections de 2021, de le convaincre de former un gouvernement avec Abbas : « J’ai tweeté que cela n’arriverait jamais »"
+      yashar:
         value: -1
         basis: statement
-        source: { url: "https://www.israelhayom.co.il/israelnow/article/21282312", title: "עופר וינטר נגד מנסור עבאס: \"אסור שיוכל להיבחר לכנסת\" (26.8.2026)", publisher: "ישראל היום" }
+        source: { url: "https://www.mako.co.il/news-israel-elections/2026_q4/Article-195ef5f365ad0a1026.htm", title: "איזנקוט מצהיר ב\"פגוש את העיתונות\": רע\"ם לא תהיה חלק מהממשלה הבאה (26.9.2026)", publisher: "N12" }
         quote:
-          he: "וינטר על מנסור עבאס: \"מי שלא מכיר במדינת ישראל כמדינה יהודית - יכול ללכת לאיזו מדינה ערבית שהוא רוצה\"; אדם כזה \"אסור שיוכל להיבחר לכנסת ישראל\" (הדברים נאמרו על מנסור עבאס; וינטר לא דיבר על מפלגות ערביות בכלל או על שותפות בקואליציה)"
-          en: "Winter on Mansour Abbas: \"Whoever does not recognize the State of Israel as a Jewish state can go to whatever Arab country he wants\"; such a person \"must not be able to be elected to the Knesset of Israel\" (said about Mansour Abbas; Winter did not speak about Arab parties in general or about coalition partnership)"
-          ar: "فينتر عن منصور عباس: «من لا يعترف بدولة إسرائيل دولةً يهودية يمكنه أن يذهب إلى أي دولة عربية يريدها»؛ ومثل هذا الشخص «يجب ألّا يكون بإمكانه أن يُنتخب لكنيست إسرائيل» (قيلت هذه الكلمات عن منصور عباس؛ ولم يتحدث فينتر عن الأحزاب العربية عمومًا ولا عن الشراكة في ائتلاف)"
-          ru: "Винтер о Мансуре Аббасе: «Тот, кто не признаёт Государство Израиль еврейским государством, может отправляться в любую арабскую страну, какую пожелает»; такой человек «не должен иметь возможности быть избранным в Кнессет Израиля» (сказано о Мансуре Аббасе; об арабских партиях в целом и об участии в коалиции Винтер не говорил)"
-          es: "Winter sobre Mansour Abbas: «Quien no reconozca al Estado de Israel como Estado judío puede irse al país árabe que quiera»; una persona así «no debe poder ser elegida para la Knéset de Israel» (dicho sobre Mansour Abbas; Winter no habló de los partidos árabes en general ni de su participación en una coalición)"
-          fr: "Winter à propos de Mansour Abbas : « Celui qui ne reconnaît pas l’État d’Israël comme État juif peut aller dans le pays arabe de son choix » ; une telle personne « ne doit pas pouvoir être élue à la Knesset d’Israël » (propos tenus sur Mansour Abbas ; Winter n’a pas parlé des partis arabes en général ni d’une participation à une coalition)"
+          he: "איזנקוט: \"לגבי כל המפלגות האחרות, חרדיות או ערביות, אני קבעתי שלושה כללים ועוד אחד… אני לא רואה כרגע אף מפלגה ערבית או חרדית שמקבלת את הכללים האלה, כולל מנסור עבאס. לכן, הוא לא יהיה חלק מהממשלה הבאה.\" (אותם כללים חלים על כל מפלגה)"
+          en: "Eisenkot: \"For all the other parties, haredi or Arab, I set three rules plus one… At the moment I see no Arab or haredi party that accepts these rules, including Mansour Abbas. So he will not be part of the next government.\" (the same rules apply to every party)"
+          ar: "آيزنكوت: «بالنسبة لكل الأحزاب الأخرى، حريدية كانت أو عربية، وضعتُ ثلاث قواعد وقاعدة أخرى… لا أرى حاليًا أي حزب عربي أو حريدي يقبل هذه القواعد، بما في ذلك منصور عباس. لذلك لن يكون جزءًا من الحكومة القادمة.» (القواعد نفسها تسري على كل حزب)"
+          ru: "Айзенкот: «Для всех остальных партий, харедимных или арабских, я установил три правила и ещё одно… Сейчас я не вижу ни одной арабской или харедимной партии, которая принимала бы эти правила, включая Мансура Аббаса. Поэтому он не будет частью следующего правительства». (Те же правила действуют для любой партии.)"
+          es: "Eisenkot: «Para todos los demás partidos, jaredíes o árabes, fijé tres reglas y una más… Por ahora no veo ningún partido árabe o jaredí que acepte estas reglas, incluido Mansour Abbas. Por lo tanto, no formará parte del próximo Gobierno.» (las mismas reglas valen para todos los partidos)"
+          fr: "Eisenkot : « Pour tous les autres partis, haredim ou arabes, j’ai fixé trois règles plus une… Pour l’instant, je ne vois aucun parti arabe ou haredi qui accepte ces règles, y compris Mansour Abbas. Il ne fera donc pas partie du prochain gouvernement. » (les mêmes règles valent pour tout parti)"
+      amkha:
+        value: -2
+        basis: statement
+        recordOf:
+          he: "דברי יוסף חדאד, מס׳ 2 ברשימת עמך ישראל; ב-27.9 מתחה המפלגה ביקורת על דברי יאיר גולן שמפלגה ערבית יכולה להיות חלק מהממשלה"
+          en: "the words of Yoseph Haddad, no. 2 on the Amkha Yisrael list; on 27 Sep the party criticised Yair Golan's statement that an Arab party can be part of the government"
+          ar: "كلام يوسف حداد، رقم 2 في قائمة عمخا يسرائيل؛ وفي 27 أيلول/سبتمبر انتقد الحزب قول يائير غولان إن حزبًا عربيًا يمكن أن يكون جزءًا من الحكومة"
+          ru: "слова Йосефа Хаддада, № 2 в списке «Амха Исраэль»; 27 сентября партия раскритиковала слова Яира Голана о том, что арабская партия может быть частью правительства"
+          es: "palabras de Yoseph Haddad, n.º 2 de la lista Amkha Yisrael; el 27 de septiembre el partido criticó la afirmación de Yair Golan de que un partido árabe puede formar parte del Gobierno"
+          fr: "propos de Yoseph Haddad, n° 2 sur la liste Amkha Israël ; le 27 septembre, le parti a critiqué la déclaration de Yaïr Golan selon laquelle un parti arabe peut faire partie du gouvernement"
+        source: { url: "https://www.walla.co.il/news/israel/383955211", title: "יוסף חדאד על עבאס: \"הפך להיות המאמי הלאומי\" (24.9.2026)", publisher: "וואלה" }
+        moreSources:
+          - { url: "https://www.israelhayom.co.il/israelnow/article/21494792", title: "עמך ישראל נגד גולן — תגובה לדבריו על מפלגה ערבית בממשלה (27.9.2026)", publisher: "ישראל היום" }
+        quote:
+          he: "חדאד: \"מבחינת קואליציה אם מנסור עבאס שם זה פשוט אסון גדול מאוד לחברה הערבית הישראלית, לחברה הערבית כולה ולנציגי החברות הערביות\""
+          en: "Haddad: \"As far as a coalition goes, if Mansour Abbas is there, it is simply a very great disaster for Israeli Arab society, for Arab society as a whole and for the representatives of the Arab communities\""
+          ar: "حداد: «من ناحية الائتلاف، إذا كان منصور عباس هناك فهذه ببساطة كارثة كبيرة جدًا للمجتمع العربي الإسرائيلي، وللمجتمع العربي كله ولممثلي المجتمعات العربية»"
+          ru: "Хаддад: «Что касается коалиции, если там будет Мансур Аббас, это просто огромная беда для израильского арабского общества, для всего арабского общества и для представителей арабских общин»"
+          es: "Haddad: «En cuanto a la coalición, si Mansour Abbas está ahí, es sencillamente un desastre muy grande para la sociedad árabe israelí, para toda la sociedad árabe y para los representantes de las comunidades árabes»"
+          fr: "Haddad : « Pour ce qui est de la coalition, si Mansour Abbas y est, c’est tout simplement un très grand désastre pour la société arabe israélienne, pour toute la société arabe et pour les représentants des communautés arabes »"
 
   - id: gaza-emigration
     topic: security

@@ -32,9 +32,9 @@
 # and re-read — the rule `notEntered` already applies): the filing is then the
 # source, and `verification` says so. Channel 16's poll of 16 Sep 2026 is the
 # first (added 28 Sep 2026, filing 4151).
-lastReviewed: "2026-09-28"
+lastReviewed: "2026-09-30"
 cutoff: "2026-09-08"
-filingsCheckedAt: "2026-09-28"
+filingsCheckedAt: "2026-09-30"
 # The legal electoral threshold: 3.25% of valid votes (Knesset Elections Law,
 # amendment of 2014) — ≈4 seats of 120.
 threshold: 3.25
@@ -58,18 +58,18 @@ notEntered:
     institute: { he: "מאגר מוחות (יצחק כץ)", en: "Maagar Mochot (Yitzhak Katz)", ar: "مأغار موحوت (يتسحاق كاتس)", ru: "«Маагар Мохот» (Ицхак Кац)", es: "Maagar Mochot (Yitzhak Katz)", fr: "Maagar Mochot (Yitzhak Katz)" }
     url: "https://themadad.com/polls26/"
     reason:
-      he: "רשום באינדקס הסקרים של 'המדד' (24.9.2026, סוקר: יצחק כץ), אך שודר בלבד; באתר הערוץ יש רק וידאו, ולא נמצא פרסום כתוב או גרפי שאפשר לקשר אליו — אותו כלל כמו לסקרים הקודמים של הערוץ."
-      en: "Indexed by HaMadad's poll archive (24 Sep 2026, pollster: Yitzhak Katz) but broadcast only; the channel's site carries only video, and no linkable written or graphic publication was found — the same rule as for the channel's earlier polls."
-      ar: "مُدرج في أرشيف استطلاعات «هامداد» (24 أيلول/سبتمبر 2026، جهة الاستطلاع: يتسحاق كاتس) لكنه بُثّ فقط؛ موقع القناة يعرض الفيديو فقط، ولم يُعثر على منشور مكتوب أو رسومي يمكن ربطه — القاعدة نفسها كما في استطلاعات القناة السابقة."
-      ru: "Указан в архиве опросов «ХаМадад» (24.09.2026, социолог: Ицхак Кац), но только показан в эфире; на сайте канала есть только видео, письменной или графической публикации, на которую можно сослаться, не найдено — то же правило, что и для прежних опросов канала."
-      es: "Indexada en el archivo de encuestas de HaMadad (24 de septiembre de 2026, encuestador: Yitzhak Katz) pero solo emitida; el sitio del canal solo ofrece vídeo y no se encontró ninguna publicación escrita o gráfica enlazable — la misma regla que para las encuestas anteriores del canal."
-      fr: "Indexé dans les archives de sondages de HaMadad (24 septembre 2026, sondeur : Yitzhak Katz) mais seulement diffusé ; le site de la chaîne ne propose que de la vidéo et aucune publication écrite ou graphique vers laquelle faire un lien n’a été trouvée — même règle que pour les sondages précédents de la chaîne."
+      he: "רשום באינדקס הסקרים של 'המדד' (24.9.2026, סוקר: יצחק כץ), אך שודר בלבד; באתר הערוץ יש רק וידאו, ולא נמצא פרסום כתוב או גרפי שאפשר לקשר אליו — אותו כלל כמו לסקרים הקודמים של הערוץ. דיווח המכון לוועדה מ-29.9 (מס' 4173) חוזר על המנדטים שלו בטור השוואה, אך דיווח משלו — עם המדגם והמועדים — לא נמצא עד 30.9.2026."
+      en: "Indexed by HaMadad's poll archive (24 Sep 2026, pollster: Yitzhak Katz) but broadcast only; the channel's site carries only video, and no linkable written or graphic publication was found — the same rule as for the channel's earlier polls. The institute's 29 Sep filing (no. 4173) repeats its seat figures in a comparison column, but no filing of its own, with its sample and dates, was found as of 30 Sep 2026."
+      ar: "مُدرج في أرشيف استطلاعات «هامداد» (24 أيلول/سبتمبر 2026، جهة الاستطلاع: يتسحاق كاتس) لكنه بُثّ فقط؛ موقع القناة يعرض الفيديو فقط، ولم يُعثر على منشور مكتوب أو رسومي يمكن ربطه — القاعدة نفسها كما في استطلاعات القناة السابقة. يكرّر تقرير المعهد إلى اللجنة في 29 أيلول/سبتمبر (رقم 4173) أرقام مقاعده في عمود للمقارنة، لكن لم يُعثر حتى 30 أيلول/سبتمبر 2026 على تقرير خاص به يتضمن العيّنة والمواعيد."
+      ru: "Указан в архиве опросов «ХаМадад» (24.09.2026, социолог: Ицхак Кац), но только показан в эфире; на сайте канала есть только видео, письменной или графической публикации, на которую можно сослаться, не найдено — то же правило, что и для прежних опросов канала. Отчёт института от 29 сентября (№ 4173) повторяет его цифры мандатов в столбце для сравнения, но собственного отчёта с выборкой и датами на 30.09.2026 не найдено."
+      es: "Indexada en el archivo de encuestas de HaMadad (24 de septiembre de 2026, encuestador: Yitzhak Katz) pero solo emitida; el sitio del canal solo ofrece vídeo y no se encontró ninguna publicación escrita o gráfica enlazable — la misma regla que para las encuestas anteriores del canal. El informe del instituto del 29 de septiembre (n.º 4173) repite sus escaños en una columna de comparación, pero al 30 de septiembre de 2026 no se encontró un informe propio con su muestra y fechas."
+      fr: "Indexé dans les archives de sondages de HaMadad (24 septembre 2026, sondeur : Yitzhak Katz) mais seulement diffusé ; le site de la chaîne ne propose que de la vidéo et aucune publication écrite ou graphique vers laquelle faire un lien n’a été trouvée — même règle que pour les sondages précédents de la chaîne. La déclaration de l’institut du 29 septembre (n° 4173) reprend ses sièges dans une colonne de comparaison, mais aucune déclaration propre, avec son échantillon et ses dates, n’avait été trouvée au 30 septembre 2026."
 # Other published averages, for comparison — their numbers, their method, credited.
 externalAverages:
   - name: { he: "ממוצע המדד", en: "HaMadad average", ar: "متوسط «هامداد»", ru: "Среднее «ХаМадад»", es: "Promedio de HaMadad", fr: "Moyenne de HaMadad" }
     publisher: { he: "המדד", en: "HaMadad", ar: "هامداد", ru: "«ХаМадад»", es: "HaMadad", fr: "HaMadad" }
     url: "https://themadad.com/polls26/"
-    asOf: "2026-09-25"
+    asOf: "2026-09-29"
     method:
       he: "ממוצע משוקלל של כל סקרי המנדטים שפורסמו, כולל לפני סגירת הרשימות, כפי שמחשב אתר המדד."
       en: "A weighted average of every published seat poll, including those from before the lists closed, as computed by HaMadad."
@@ -78,21 +78,103 @@ externalAverages:
       es: "Un promedio ponderado de todas las encuestas de escaños publicadas, incluidas las anteriores al cierre de las listas, calculado por HaMadad."
       fr: "Une moyenne pondérée de tous les sondages en sièges publiés, y compris ceux d’avant la clôture des listes, calculée par HaMadad."
     values:
-      yashar: 22.4
-      likud: 20.9
-      together: 11.6
-      democrats: 9.5
-      yisrael-beiteinu: 8.5
-      shas: 7.6
-      otzma: 7.5
-      utj: 7.3
+      yashar: 22.1
+      likud: 21.8
+      together: 11.4
+      democrats: 9.2
+      shas: 8
+      yisrael-beiteinu: 7.9
+      otzma: 7.4
+      utj: 7.4
       joint-list: 7.2
-      rz-zehut: 5.7
-      raam: 5.2
+      rz-zehut: 5.9
+      raam: 5.1
       amkha: 4
-      reservists: 2.6
-      blue-white: 0.3
+      reservists: 2.7
+      blue-white: 0.2
 polls:
+  - id: 2026-09-29-channel16-maagar-mochot
+    published: "2026-09-29"
+    fieldwork: { from: "2026-09-29", to: "2026-09-29" }
+    outlet: { he: "ערוץ 16", en: "Channel 16", ar: "القناة 16", ru: "16-й канал", es: "Canal 16", fr: "Chaîne 16" }
+    instituteId: maagar-mochot
+    institute: { he: "מאגר מוחות", en: "Maagar Mochot", ar: "مأغار موحوت", ru: "«Маагар Мохот»", es: "Maagar Mochot", fr: "Maagar Mochot" }
+    sample: 550
+    marginOfError: 4.2
+    seats:
+      yashar: 21
+      likud: 19
+      together: 14
+      democrats: 9
+      otzma: 8
+      shas: 8
+      utj: 7
+      yisrael-beiteinu: 7
+      joint-list: 7
+      rz-zehut: 6
+      raam: 5
+      amkha: 5
+      reservists: 4
+    belowThreshold: [blue-white, haredi-public]
+    belowThresholdNote: "הדיווח לוועדה: כחול לבן 0.4% (0.5 מנדט), הציבור החרדי 0.6% (0.8 מנדט) — שתיהן מתחת לאחוז החסימה"
+    blocs:
+      - { label: { he: "גוש הקואליציה (כולל עמך ישראל)", en: "Coalition bloc (including Amkha Yisrael)", ar: "كتلة الائتلاف (بما في ذلك عمخا يسرائيل)", ru: "Коалиционный блок (включая «Амха Исраэль»)", es: "Bloque de la coalición (incluida Amkha Yisrael)", fr: "Bloc de la coalition (y compris Amkha Israël)" }, seats: 53 }
+      - { label: { he: "גוש האופוזיציה", en: "Opposition bloc", ar: "كتلة المعارضة", ru: "Оппозиционный блок", es: "Bloque de la oposición", fr: "Bloc de l’opposition" }, seats: 51 }
+      - { label: { he: "מפלגות ערביות", en: "Arab parties", ar: "الأحزاب العربية", ru: "Арабские партии", es: "Partidos árabes", fr: "Partis arabes" }, seats: 12 }
+      - { label: { he: "המילואימניקים והכלכלית", en: "The Reservists and the Economic list", ar: "جنود الاحتياط والاقتصادية", ru: "«Резервисты» и «Экономическая»", es: "Los Reservistas y la Económica", fr: "Les Réservistes et l’Économique" }, seats: 4 }
+    verification: "entered from Maagar Mochot's own filing with the Central Elections Committee, as for the channel's 16 Sep poll (ref 4173, Survey_4173.pdf, pp. 2–3; the seat table read from the rendered page, since the PDF's text layer scrambles its columns); seats sum to 120, the blocs to 120"
+    sources:
+      - { url: "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election88/he/Survey_4173.pdf", title: "סקר דעת קהל — מאגר מוחות עבור ערוץ 16 (29.9.2026), דיווח לוועדת הבחירות המרכזית מס' 4173", publisher: "ועדת הבחירות המרכזית לכנסת" }
+    filing:
+      ref: "4173"
+      url: "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election88/he/Survey_4173.pdf"
+      commissionedBy: { he: "ערוץ 16", en: "Channel 16", ar: "القناة 16", ru: "16-й канал", es: "Canal 16", fr: "Chaîne 16" }
+      conductedBy: { he: "פרופ' יצחק כ\"ץ, מאגר מוחות בע\"מ", en: "Prof. Yitzhak Katz, Maagar Mochot Ltd.", ar: "البروفيسور يتسحاق كاتس، مأغار موحوت م.ض.", ru: "проф. Ицхак Кац, «Маагар Мохот» Лтд.", es: "Prof. Yitzhak Katz, Maagar Mochot Ltd.", fr: "Pr Yitzhak Katz, Maagar Mochot Ltd." }
+      population:
+        he: "האוכלוסייה הישראלית הבוגרת, גילי 18 ומעלה"
+        en: "Israel's adult population aged 18 and over"
+        ar: "السكان البالغون في إسرائيل من سن 18 فما فوق"
+        ru: "Взрослое население Израиля в возрасте 18 лет и старше"
+        es: "La población adulta de Israel de 18 años o más"
+        fr: "La population adulte d’Israël âgée de 18 ans et plus"
+      asked: 2403
+      answered: 550
+      marginOfError: 4.2
+      question:
+        he: "אם הבחירות לכנסת היו מתקיימות היום, לאיזו מפלגה היית מצביע? (הצגה ברוטציה)"
+        en: "If the Knesset elections were held today, which party would you vote for? (options shown in rotation)"
+        ar: "لو جرت انتخابات الكنيست اليوم، لأي حزب كنت ستصوّت؟ (عرض الخيارات بالتناوب)"
+        ru: "Если бы выборы в Кнессет проходили сегодня, за какую партию вы бы проголосовали? (варианты показаны по очереди)"
+        es: "Si hoy se celebraran las elecciones a la Knéset, ¿por qué partido votaría? (opciones en orden rotativo)"
+        fr: "Si les élections à la Knesset avaient lieu aujourd’hui, pour quel parti voteriez-vous ? (options présentées en rotation)"
+  - id: 2026-09-28-channel14-nextdata
+    published: "2026-09-28"
+    fieldwork: { from: "2026-09-28", to: "2026-09-28" }
+    outlet: { he: "חדשות 14", en: "Channel 14", ar: "القناة 14", ru: "14-й канал", es: "Canal 14", fr: "Chaîne 14" }
+    instituteId: next-data
+    institute: { he: "NEXT DATA", en: "Next Data", ar: "Next Data", ru: "Next Data", es: "Next Data", fr: "Next Data" }
+    sample: 573
+    seats:
+      likud: 31
+      yashar: 21
+      shas: 10
+      democrats: 9
+      together: 9
+      utj: 8
+      rz-zehut: 7
+      otzma: 7
+      joint-list: 7
+      yisrael-beiteinu: 6
+      raam: 5
+    belowThreshold: [reservists, amkha, blue-white, haredi-public]
+    belowThresholdNote: "המילואימניקים-הכלכלית 2.1%, עמך ישראל 1.6%, כחול לבן 0.6%, הציבור החרדי 0.2%, נעם 0.2%"
+    blocs:
+      - { label: { he: "גוש הימין", en: "Right bloc", ar: "كتلة اليمين", ru: "Правый блок", es: "Bloque de derecha", fr: "Bloc de droite" }, seats: 63 }
+      - { label: { he: "גוש השמאל", en: "Left bloc", ar: "كتلة اليسار", ru: "Левый блок", es: "Bloque de izquierda", fr: "Bloc de gauche" }, seats: 45 }
+      - { label: { he: "המפלגות הערביות", en: "Arab parties", ar: "الأحزاب العربية", ru: "Арабские партии", es: "Partidos árabes", fr: "Partis arabes" }, seats: 12 }
+    verification: "all 11 figures, the 5 below-threshold shares and 3 blocs in the article text (28.09.26 20:28, read 30 Sep with curl); methodology per the article's closing line: NEXT DATA, 573 adults, conducted 28 Sep 2026, analysis שלמה פילבר; no margin of error stated; seats sum to 120"
+    sources:
+      - { url: "https://www.c14.co.il/article/1716250", title: "סקר המנדטים של חדשות 14 (28.9.2026)", publisher: "ערוץ 14" }
   - id: 2026-09-27-kan-kantar
     published: "2026-09-27"
     fieldwork: { from: "2026-09-27", to: "2026-09-27" }
@@ -216,6 +298,28 @@ polls:
     verification: "all 12 figures and 3 blocs in the article text (24.09 19:53); the section listing's teaser says ישר! 21, the article body 22 — the body is used, and only it sums to 120; methodology verbatim: דיירקט פולס/צוריאל שרון, 24 Sep 2026, digital system with panel, 537 adults 18+, ±4.2% at 95%"
     sources:
       - { url: "https://www.i24news.tv/he/news/israel-elections-2026/polls/artc-5d1d4577", title: "סקר i24NEWS: בן גביר מתחזק, וינטר וליברמן נחלשים | הנתונים המלאים", publisher: "i24NEWS" }
+    filing:
+      ref: "4165"
+      url: "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election84/he/Survey_4165.pdf"
+      commissionedBy: { he: "חדשות המזרח התיכון i24 בע״מ", en: "Middle East News i24 Ltd.", ar: "أخبار الشرق الأوسط i24 م.ض.", ru: "«Новости Ближнего Востока i24» Ltd.", es: "Noticias de Oriente Medio i24 Ltd.", fr: "Nouvelles du Moyen-Orient i24 Ltd." }
+      conductedBy: { he: "דיירקט פולס בע\"מ בראשות צוריאל שרון", en: "Direct Polls Ltd., headed by Tzuriel Sharon", ar: "Direct Polls م.ض. برئاسة تسوريئيل شارون", ru: "Direct Polls Ltd. под руководством Цуриэля Шарона", es: "Direct Polls Ltd., bajo la dirección de Tzuriel Sharon", fr: "Direct Polls Ltd., sous la direction de Tzuriel Sharon" }
+      population:
+        he: "מדגם ארצי ומייצג של כלל האוכלוסייה בישראל בגילאי 18+, לרבות יהודים וערבים"
+        en: "A national, representative sample of Israel's whole population aged 18+, Jews and Arabs included"
+        ar: "عيّنة قُطرية تمثيلية لعموم السكان في إسرائيل من سن 18 فما فوق، بمن فيهم اليهود والعرب"
+        ru: "Общенациональная репрезентативная выборка всего населения Израиля в возрасте 18+, включая евреев и арабов"
+        es: "Una muestra nacional y representativa de toda la población de Israel de 18 años o más, incluidos judíos y árabes"
+        fr: "Un échantillon national et représentatif de l’ensemble de la population d’Israël âgée de 18 ans et plus, Juifs et Arabes compris"
+      asked: 8850
+      answered: 537
+      marginOfError: 4.2
+      question:
+        he: "אילו הבחירות לכנסת היו מתקיימות היום, למי הייתם מצביעים?"
+        en: "If the Knesset elections were held today, who would you vote for?"
+        ar: "لو جرت انتخابات الكنيست اليوم، لمن كنتم ستصوّتون؟"
+        ru: "Если бы выборы в Кнессет проходили сегодня, за кого бы вы проголосовали?"
+        es: "Si las elecciones a la Knéset se celebraran hoy, ¿a quién votarían?"
+        fr: "Si les élections à la Knesset avaient lieu aujourd’hui, pour qui voteriez-vous ?"
   - id: 2026-09-24-zman-tatika
     published: "2026-09-24"
     fieldwork: { from: "2026-09-23", to: "2026-09-24" }
@@ -278,6 +382,35 @@ polls:
     verification: "all 13 figures, the 2 below-threshold lists and 4 blocs in the article text (23.09.26 20:47; JSON-LD articleBody read 24 Sep in the Browser pane); methodology per the closing line: המדד (רוזנר, סלפקוב) with סטט-נט (מקלדה), פרויקט המדגם (איילון), אסקריא (דרור), Hive, statistical advice Prof. David Steinberg; 1,503 respondents, ±2.5%; fieldwork dates not stated"
     sources:
       - { url: "https://13tv.co.il/item/news/politics/politics/hcp4l-905367553/", title: "סקר המנדטים של חדשות 13 (23.9.2026)", publisher: "חדשות 13" }
+    filing:
+      ref: "4169"
+      url: "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election86/he/Survey_4169.pdf"
+      commissionedBy: { he: "חדשות 13", en: "Channel 13", ar: "القناة 13", ru: "13-й канал", es: "Canal 13", fr: "Chaîne 13" }
+      conductedBy: { he: "שמואל רוזנר עם חברת פאנל פרוייקט המדגם בהנהלת ד\"ר אריאל איילון, חברת סטטנט נט בהנהלת יוסף מקלדה, חברת אסקריא בהנהלת דודי דרור; יעוץ סטטיסטי: פרופ׳ דוד שטיינברג", en: "Shmuel Rosner with the panel company Midgam Project (managed by Dr. Ariel Ayalon), Stat-Net (managed by Yousef Makladeh) and Askaria (managed by Dudi Dror); statistical advice: Prof. David Steinberg", ar: "شموئيل روزنر مع شركة البانل «مشروع مدغام» بإدارة د. أرييل أيالون، وشركة ستات-نت بإدارة يوسف مقلدة، وشركة أسكاريا بإدارة دودي درور؛ استشارة إحصائية: البروفيسور دافيد شتاينبرغ", ru: "Шмуэль Рознер с панельной компанией Midgam Project (руководитель — д-р Ариэль Аялон), компанией Stat-Net (руководитель — Юсеф Макладе) и компанией Askaria (руководитель — Дуди Дрор); статистический консультант — проф. Давид Штайнберг", es: "Shmuel Rosner con la empresa de panel Midgam Project (dirigida por el Dr. Ariel Ayalon), la empresa Stat-Net (dirigida por Yousef Makladeh) y la empresa Askaria (dirigida por Dudi Dror); asesoría estadística: Prof. David Steinberg", fr: "Shmuel Rosner avec la société de panel Midgam Project (dirigée par le Dr Ariel Ayalon), la société Stat-Net (dirigée par Yousef Makladeh) et la société Askaria (dirigée par Dudi Dror) ; conseil statistique : Pr David Steinberg" }
+      population:
+        he: "מדגם שכבות מייצג של אוכלוסיית המדינה בגילאי 18+"
+        en: "A representative stratified sample of the country's population aged 18+"
+        ar: "عيّنة طبقية تمثيلية لسكان الدولة من سن 18 فما فوق"
+        ru: "Репрезентативная стратифицированная выборка населения страны в возрасте 18+"
+        es: "Una muestra estratificada y representativa de la población del país de 18 años o más"
+        fr: "Un échantillon stratifié et représentatif de la population du pays âgée de 18 ans et plus"
+      asked: 13237
+      answered: 1698
+      marginOfError: 2.4
+      question:
+        he: "אם הבחירות לכנסת היו מתקיימות היום, לאיזו מפלגה היית מצביע/ה?"
+        en: "If the Knesset elections were held today, which party would you vote for?"
+        ar: "لو جرت انتخابات الكنيست اليوم، لأي حزب كنت ستصوّت/ين؟"
+        ru: "Если бы выборы в Кнессет проходили сегодня, за какую партию вы бы проголосовали?"
+        es: "Si las elecciones a la Knéset se celebraran hoy, ¿por qué partido votaría?"
+        fr: "Si les élections à la Knesset avaient lieu aujourd’hui, pour quel parti voteriez-vous ?"
+      note:
+        he: "בדיווח השיבו 1,698 (בכתבה: 1,503), וטעות הדגימה היא ±2.4% (בכתבה ±2.5%); הנתונים נאספו מ-22 בספטמבר בשעה 8:00 עד 23 בספטמבר בשעה 9:00 (בכתבה לא צוינו תאריכים)."
+        en: "The filing lists 1,698 respondents (the article: 1,503) and a margin of error of ±2.4% (the article: ±2.5%); fieldwork ran from 8:00 on 22 Sep to 9:00 on 23 Sep (the article gave no dates)."
+        ar: "يذكر التقرير 1,698 مستجيبًا (في المقال: 1,503)، وهامش خطأ ±2.4% (في المقال ±2.5%)؛ وجُمعت البيانات من الساعة 8:00 يوم 22 أيلول/سبتمبر حتى الساعة 9:00 يوم 23 أيلول/سبتمبر (لم يذكر المقال تواريخ)."
+        ru: "В отчёте 1698 ответивших (в статье — 1503) и погрешность ±2,4% (в статье ±2,5%); сбор данных — с 8:00 22 сентября до 9:00 23 сентября (в статье даты не указаны)."
+        es: "El informe indica 1698 encuestados (el artículo: 1503) y un margen de error de ±2,4 % (el artículo: ±2,5 %); el trabajo de campo fue desde las 8:00 del 22 de septiembre hasta las 9:00 del 23 de septiembre (el artículo no dio fechas)."
+        fr: "La déclaration indique 1 698 répondants (l’article : 1 503) et une marge d’erreur de ±2,4 % (l’article : ±2,5 %) ; le terrain s’est déroulé du 22 septembre à 8 h 00 au 23 septembre à 9 h 00 (l’article ne donnait pas de dates)."
   - id: 2026-09-23-channel14-nextdata
     published: "2026-09-23"
     fieldwork: { from: "2026-09-23", to: "2026-09-23" }
@@ -306,6 +439,28 @@ polls:
     verification: "all 11 figures, the 5 below-threshold shares and 3 blocs in the article text (23.09.26 20:48, read 24 Sep in the Browser pane); methodology per the article's disclaimer: NEXT DATA, 647 adults, conducted 23 Sep 2026, analysis שלמה פילבר; no margin of error stated"
     sources:
       - { url: "https://www.c14.co.il/article/1711606", title: "סקר המנדטים של חדשות 14 (23.9.2026)", publisher: "ערוץ 14" }
+    filing:
+      ref: "4171"
+      url: "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/knesset_election87/he/Survey_4171.pdf"
+      commissionedBy: { he: "ערוץ עכשיו 14", en: "Channel 14", ar: "القناة 14", ru: "14-й канал", es: "Canal 14", fr: "Chaîne 14" }
+      conductedBy: { he: "חברת Next Data", en: "Next Data", ar: "شركة Next Data", ru: "компания Next Data", es: "empresa Next Data", fr: "société Next Data" }
+      population:
+        he: "נדגמים בוגרים (בני 18+), המהווים מדגם מייצג של אוכלוסיית אזרחי ישראל הרשאים לבחור"
+        en: "Adult respondents (18+) forming a representative sample of Israeli citizens eligible to vote"
+        ar: "مستطلَعون بالغون (18+) يشكّلون عيّنة تمثيلية من المواطنين الإسرائيليين الذين يحق لهم التصويت"
+        ru: "Взрослые респонденты (18+), составляющие репрезентативную выборку граждан Израиля с правом голоса"
+        es: "Encuestados adultos (18+) que forman una muestra representativa de los ciudadanos israelíes con derecho a voto"
+        fr: "Des répondants adultes (18 ans et plus) formant un échantillon représentatif des citoyens israéliens ayant le droit de vote"
+      asked: 7260
+      answered: 535
+      marginOfError: 4.2
+      note:
+        he: "בדיווח השיבו 535 מתוך מדגם התחלתי של 647 (בכתבה: 647 בוגרים), וטעות הדגימה היא ±4.2% (בכתבה לא צוינה)."
+        en: "The filing lists 535 respondents out of an initial sample of 647 (the article: 647 adults) and a margin of error of ±4.2% (the article gave none)."
+        ar: "يذكر التقرير 535 مستجيبًا من عيّنة أولية قوامها 647 (في المقال: 647 بالغًا)، وهامش خطأ ±4.2% (لم يذكره المقال)."
+        ru: "В отчёте 535 ответивших из первоначальной выборки в 647 человек (в статье — 647 взрослых) и погрешность ±4,2% (в статье не указана)."
+        es: "El informe indica 535 encuestados de una muestra inicial de 647 (el artículo: 647 adultos) y un margen de error de ±4,2 % (el artículo no lo dio)."
+        fr: "La déclaration indique 535 répondants sur un échantillon initial de 647 (l’article : 647 adultes) et une marge d’erreur de ±4,2 % (l’article n’en donnait pas)."
   - id: 2026-09-22-n12-midgam
     published: "2026-09-22"
     fieldwork: { from: "2026-09-22", to: "2026-09-22" }

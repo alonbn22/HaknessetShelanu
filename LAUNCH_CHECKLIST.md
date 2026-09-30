@@ -20,7 +20,7 @@ repository's history (rewritten on 28 Sep, so older hashes elsewhere no longer r
 | ✅ | Compass: weekly review of 28 Sep (3 values changed, 2 re-sourced, 6 new) | Claude | 1029a3b. Next review about 5 Oct |
 | ✅ | Tooltips: no Hebrew source titles on non-Hebrew pages | Claude | 939a05e |
 | ✅ | Ballot letters and list names approved by the Central Elections Committee (27 Sep) | Claude | f873a92 |
-| ⬜ | Candidate rosters re-captured from the approved lists | Claude | When the committee publishes them; the rulings on Ra'am and the Joint List (due 4 Oct) may change two lists |
+| ✅ | Candidate rosters re-checked against the committee's 38 list pages (30 Sep) | Claude | 46b28fd: 31 unchanged, 7 candidates no longer listed. Re-check after the 4 Oct rulings and when the approved lists appear in Reshumot (the committee's index page says they will) |
 | ✅ | Polls reviewed on 30 Sep: 28 polls, 23 with the pollster's filing | Claude | 7ff946e, ce95f80, 57cedfe |
 | 🔄 | Disqualification appeals in the lists' notes | Claude | 3987e30 (appeals, 1 Oct hearing, the rejected requests against three other lists). Update with the rulings |
 | 🔄 | Unsupported-claims audit: fixes | Claude | Done: cfc2df3, dce31c9, ccee16c, 672ddd4, cbe55f9, 4150be9 (member links and statuses, the elections history, the site's statements about itself, dead links). In progress: the rest of the audit and verified sources for 145 member claims that cited only Wikipedia |

@@ -1,29 +1,22 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
+import { useDisclosure } from "@/lib/use-disclosure";
 import { navItems, isActive, isHighlighted } from "./nav-items";
 
 // Hamburger menu for small screens (desktop uses NavLinks).
 export function MobileNav() {
   const t = useTranslations("nav");
   const pathname = usePathname();
-  const [open, setOpen] = useState(false);
-
-  // Close on Escape (links close via their onClick, so no route-change effect needed).
-  useEffect(() => {
-    if (!open) return;
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setOpen(false);
-    };
-    document.addEventListener("keydown", onKey);
-    return () => document.removeEventListener("keydown", onKey);
-  }, [open]);
+  // Escape (focus back on the button), click-away and tabbing out close it;
+  // links close via their onClick, so no route-change effect is needed.
+  const { open, setOpen, root, trigger } = useDisclosure();
 
   return (
-    <div className="md:hidden">
+    <div ref={root} className="md:hidden">
       <button
+        ref={trigger}
         type="button"
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}

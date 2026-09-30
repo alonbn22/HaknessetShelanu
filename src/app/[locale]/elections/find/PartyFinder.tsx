@@ -100,12 +100,14 @@ export function PartyFinder({ groups, filters, lists }: { groups: FinderGroup[];
             </Button>
           )}
         </div>
-        <div aria-live="polite" className="space-y-4">
-          {active.length === 0 ? (
-            <p className="text-muted">{t("noChoices")}</p>
-          ) : (
+        <div className="space-y-4">
+          {/* The live region is the one-line count, which is always mounted: a
+              region around every card re-read all their quotes on each tick. */}
+          <p aria-live="polite" className={active.length === 0 ? "text-muted" : "font-medium"}>
+            {active.length === 0 ? t("noChoices") : t("resultsCount", { count: matches.length })}
+          </p>
+          {active.length > 0 && (
             <>
-              <p className="font-medium">{t("resultsCount", { count: matches.length })}</p>
               <ul className="space-y-3">
                 {matches.map((m) => {
                   const l = listOf.get(m.slug)!;

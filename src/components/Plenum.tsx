@@ -208,7 +208,9 @@ export function Plenum({
     if (next == null) return;
     e.preventDefault();
     setFocusIdx(next);
-    const target = containerRef.current?.querySelector<SVGAElement>(`[data-seat-index="${next}"]`);
+    // Each seat is drawn twice (arc and phone blocks, one of them display:none):
+    // look in the drawing the key was pressed in, not the first match.
+    const target = e.currentTarget.closest("svg")?.querySelector<SVGAElement>(`[data-seat-index="${next}"]`);
     target?.focus();
   };
   // Touch: the first tap opens the card instead of navigating.

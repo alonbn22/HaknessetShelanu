@@ -24,7 +24,8 @@
     "tickets": "Тикеты",
     "menu": "Меню",
     "compare": "Сравнение",
-    "more": "Ещё"
+    "more": "Ещё",
+    "language": "Язык"
   },
   "common": {
     "knessetNum": "Кнессет {num}-го созыва",

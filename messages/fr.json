@@ -24,7 +24,8 @@
     "tickets": "Signalements",
     "menu": "Menu",
     "compare": "Comparer",
-    "more": "Plus"
+    "more": "Plus",
+    "language": "Langue"
   },
   "common": {
     "knessetNum": "{num}e Knesset",

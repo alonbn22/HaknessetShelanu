@@ -1,6 +1,6 @@
 "use client";
 
-import { Fragment, useMemo, useState } from "react";
+import { Fragment, useEffect, useMemo, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { cx } from "@/lib/cx";
@@ -40,6 +40,12 @@ export function PartyQuiz({ questions, lists }: { questions: QuizQ[]; lists: Qui
   const [answers, setAnswers] = useState<Record<string, number | "skip">>({});
   const [important, setImportant] = useState<Record<string, boolean>>({});
   const [submitted, setSubmitted] = useState(false);
+  // The results appear below the button; take keyboard and screen-reader users
+  // there instead of leaving them on a button that no longer changes anything.
+  const resultsHeading = useRef<HTMLHeadingElement>(null);
+  useEffect(() => {
+    if (submitted) resultsHeading.current?.focus();
+  }, [submitted]);
 
   const answered = questions.filter((q) => typeof answers[q.id] === "number");
   const canSubmit = answered.length >= MIN_ANSWERS;
@@ -143,8 +149,10 @@ export function PartyQuiz({ questions, lists }: { questions: QuizQ[]; lists: Qui
       </div>
 
       {submitted && canSubmit && (
-        <section className="space-y-3" aria-live="polite">
-          <h2 className="text-xl font-semibold">{t("resultsTitle")}</h2>
+        <section className="space-y-3" aria-labelledby="quiz-results">
+          <h2 id="quiz-results" ref={resultsHeading} tabIndex={-1} className="text-xl font-semibold">
+            {t("resultsTitle")}
+          </h2>
           <p className="max-w-prose text-sm text-muted">{t("resultsHow", { n: answered.length })}</p>
           <ol className="space-y-2">
             {results.map((r, i) => {

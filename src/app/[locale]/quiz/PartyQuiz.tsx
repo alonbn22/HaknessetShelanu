@@ -162,7 +162,9 @@ export function PartyQuiz({ questions, lists }: { questions: QuizQ[]; lists: Qui
               const pct = Math.round(r.score * 100);
               const thin = r.compared < Math.ceil(answered.length * MIN_COVERAGE);
               return (
-                <li key={r.slug} className={cx("rounded-card border border-line bg-surface", thin && "opacity-70")}>
+                // Thin coverage is marked by a dashed edge and the note below, not
+                // by fading the row: opacity took its small text under 4.5:1.
+                <li key={r.slug} className={cx("rounded-card border border-line bg-surface", thin && "border-dashed")}>
                   <div className="grid grid-cols-[1.5rem_1fr_3.5rem] items-center gap-x-3 p-3 sm:grid-cols-[1.5rem_minmax(8rem,14rem)_1fr_3.5rem]">
                     <span className="text-center text-muted tabular-nums">{i + 1}</span>
                     <span className="flex min-w-0 items-center gap-2">

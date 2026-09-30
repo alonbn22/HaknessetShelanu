@@ -40,11 +40,12 @@ export function PartyEmblem({
   // Fallback: a colored tile with the faction name, for factions without an emblem.
   return (
     <div
-      className="rounded-lg flex items-center justify-center text-white font-bold text-center px-1.5 shrink-0"
+      className="rounded-lg flex items-center justify-center font-bold text-center px-1.5 shrink-0"
       style={{
         width: size,
         height: size,
         background: color,
+        color: inkOn(color),
         fontSize: Math.max(10, size / 7),
         lineHeight: 1.1,
       }}
@@ -55,4 +56,17 @@ export function PartyEmblem({
       <span aria-hidden>{label}</span>
     </div>
   );
+}
+
+// White or black, whichever reads better on the party colour: white on a light
+// brand colour measured 3.13:1 (Yesh Atid). One of the two always clears 4.5:1.
+function inkOn(hex: string): string {
+  const m = /^#([0-9a-f]{6})$/i.exec(hex);
+  if (!m) return "#fff";
+  const [r, g, b] = [0, 2, 4].map((i) => {
+    const c = parseInt(m[1].slice(i, i + 2), 16) / 255;
+    return c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4;
+  });
+  const l = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+  return 1.05 / (l + 0.05) >= (l + 0.05) / 0.05 ? "#fff" : "#000";
 }

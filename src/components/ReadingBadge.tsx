@@ -53,10 +53,12 @@ export function VoteMeaning({
   const kind = voteKind(forDesc, titleHe);
   if (kind === "other" && !forDesc) return null;
   return (
-    <div className="rounded-lg bg-emerald-50 border border-emerald-200 p-4 space-y-1">
+    // Tone tokens: the raw emerald-50 had no dark override, so its body text
+    // sat light-on-light (1.15:1) in dark mode.
+    <div className="rounded-lg bg-pass-soft border border-pass-line p-4 space-y-1">
       <div className="flex items-center justify-between gap-2">
-        <div className="text-sm font-semibold text-emerald-800">{t("meaning")}</div>
-        <span className="text-xs text-emerald-700">
+        <div className="text-sm font-semibold text-pass-ink">{t("meaning")}</div>
+        <span className="text-xs text-pass-ink">
           {isReading(kind) ? t("isBillReading") : t("notBillReading")}
         </span>
       </div>

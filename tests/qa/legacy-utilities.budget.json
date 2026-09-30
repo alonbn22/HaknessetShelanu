@@ -34,8 +34,7 @@
   "components/Footer.tsx": 2,
   "components/KeyDatesTimeline.tsx": 5,
   "components/MobileNav.tsx": 1,
-  "components/ReadingBadge.tsx": 30,
+  "components/ReadingBadge.tsx": 26,
   "components/SearchInput.tsx": 2,
-  "components/SeatsBar.tsx": 1,
-  "components/VoteResultBadge.tsx": 6
+  "components/SeatsBar.tsx": 1
 }

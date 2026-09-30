@@ -9,7 +9,8 @@ export default async function NotFound() {
 
   return (
     <section className="mx-auto max-w-2xl space-y-4 py-16 text-center">
-      <p className="text-6xl font-extrabold tabular-nums text-accent/25">404</p>
+      {/* Decorative (the heading says it); 60% ink clears 3:1 for large text in both themes, 25% did not. */}
+      <p aria-hidden className="text-6xl font-extrabold tabular-nums text-accent-ink/60">404</p>
       <h1 className="text-2xl font-bold">{t("title")}</h1>
       <p className="text-muted leading-relaxed">{t("body")}</p>
       <div className="flex flex-wrap justify-center gap-3 pt-2">

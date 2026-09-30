@@ -1,19 +1,15 @@
 import { useTranslations } from "next-intl";
-import { BADGE_BASE, BADGE_PASS, BADGE_FAIL } from "@/lib/badge";
+import { Badge } from "@/components/ui/Badge";
 
-const styles: Record<number, string> = {
-  1: BADGE_PASS,
-  2: BADGE_FAIL,
-  3: "bg-yellow-100 text-yellow-800",
-  4: "bg-gray-100 text-gray-600",
-  0: "bg-gray-100 text-gray-400 line-through",
-};
+// Tone tokens, not raw hues: "did not vote" was gray-600 on a gray-100 that
+// the dark retrofit repainted, 1.68:1 in dark mode.
+const tones: Record<number, "pass" | "fail" | "warn" | "neutral"> = { 1: "pass", 2: "fail", 3: "warn", 4: "neutral" };
 
 export function VoteResultBadge({ code }: { code: number }) {
   const t = useTranslations("voteResult");
   return (
-    <span className={`${BADGE_BASE} ${styles[code] ?? styles[0]}`}>
+    <Badge tone={tones[code] ?? "neutral"} className={tones[code] ? undefined : "line-through"}>
       {t(`r${code}` as "r0" | "r1" | "r2" | "r3" | "r4")}
-    </span>
+    </Badge>
   );
 }

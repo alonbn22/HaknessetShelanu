@@ -12,6 +12,7 @@ import { Meter } from "../../src/components/ui/Meter";
 import { Stat, StatGrid } from "../../src/components/ui/Stat";
 import { EmptyState } from "../../src/components/ui/EmptyState";
 import { TableFrame } from "../../src/components/ui/TableFrame";
+import { PartyEmblem } from "../../src/components/PartyEmblem";
 
 // Render smoke test for src/components/ui: each primitive renders, its variant
 // maps produce the intended static classes, and the accessibility attributes
@@ -62,6 +63,12 @@ test("Badge: every tone maps to its soft fill and ink", () => {
     assert.match(render(h(Badge, { tone, children: "x" })), new RegExp(`bg-${tone}-soft text-${tone}-ink`));
   }
   assert.match(render(h(Badge, { children: "x" })), /bg-neutral-soft/);
+});
+
+test("PartyEmblem fallback tile writes in whichever ink reads on the party colour", () => {
+  const tile = (color: string) => render(h(PartyEmblem, { factionId: 0, nameHe: "x", color, alt: "x" }));
+  assert.match(tile("#0f9bd7"), /color:#000/); // light blue: white measured 3.13:1
+  assert.match(tile("#1a1a2e"), /color:#fff/);
 });
 
 test("ToggleGroup: labelled group; ToggleButton emits aria-pressed and the selected fill", () => {

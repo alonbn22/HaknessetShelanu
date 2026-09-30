@@ -3,8 +3,9 @@ import { notFound } from "next/navigation";
 import { headers } from "next/headers";
 import { Heebo, Noto_Sans_Arabic, Noto_Sans, Frank_Ruhl_Libre } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { routing, rtlLocales } from "@/i18n/routing";
+import { CLIENT_NAMESPACES } from "@/i18n/client-namespaces";
 import { THEME_SCRIPT } from "@/lib/theme-script";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -123,6 +124,9 @@ export default async function LocaleLayout({
   // none and 'strict-dynamic' blocks them). We reuse the nonce on the theme
   // script below so hydration doesn't warn.
   const nonce = (await headers()).get("x-nonce") ?? undefined;
+  // Only what client components read; the full catalogue was ~64 KB of every page.
+  const messages = await getMessages();
+  const clientMessages = Object.fromEntries(CLIENT_NAMESPACES.map((ns) => [ns, messages[ns as keyof typeof messages]]));
 
   return (
     // suppressHydrationWarning: the pre-paint theme script toggles the `dark`
@@ -145,7 +149,7 @@ export default async function LocaleLayout({
         />
       </head>
       <body className="min-h-screen flex flex-col">
-        <NextIntlClientProvider>
+        <NextIntlClientProvider messages={clientMessages}>
           <ThemeSync />
           <a href="#main-content" className="skip-link">
             {t("skipToContent")}

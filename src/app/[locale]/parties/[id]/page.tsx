@@ -254,7 +254,7 @@ export default async function PartyPage({
                 </a>
               </div>
             )}
-            <div className="flex flex-wrap gap-x-3 gap-y-1">
+            <div className="flex flex-wrap gap-x-3 gap-y-2">
               {ownList?.logo && <SourceLinks sources={[ownList.logo.source]} label={t("election.logoCredit")} />}
               {listUrl2026 && (
                 <a

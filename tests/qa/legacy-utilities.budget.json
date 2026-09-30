@@ -28,7 +28,6 @@
   "app/[locale]/tickets/page.tsx": 10,
   "app/[locale]/votes/[id]/VoteRollCall.tsx": 14,
   "app/[locale]/votes/[id]/page.tsx": 9,
-  "app/[locale]/votes/page.tsx": 2,
   "components/AccessibilityMenu.tsx": 15,
   "components/FeedbackActions.tsx": 15,
   "components/Footer.tsx": 2,

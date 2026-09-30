@@ -48,7 +48,7 @@ export default async function SourcesPage({
               href={s.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-lg font-semibold text-accent hover:underline"
+              className="block w-fit text-lg font-semibold text-accent-ink hover:underline"
             >
               {s.name}
             </a>

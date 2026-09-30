@@ -327,9 +327,11 @@ export default async function HomePage() {
                     <tr key={v.id} className="hover:bg-surface-hover">
                       <td className="whitespace-nowrap px-3 py-2 tabular-nums text-muted">{formatDate(v.dateTime, locale)}</td>
                       <td className="px-3 py-2">
+                        {/* block: the title is the cell's own line, not a link
+                            inside running text (WCAG 1.4.1 link-in-text-block). */}
                         <Link
                           href={`/votes/${v.id}`}
-                          className="font-medium hover:underline"
+                          className="block font-medium hover:underline"
                           {...localizedAttrs(title)}
                         >
                           {title.text}

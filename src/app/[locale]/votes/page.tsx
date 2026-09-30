@@ -1,5 +1,5 @@
 import { getTranslations, getLocale } from "next-intl/server";
-import { Link } from "@/i18n/navigation";
+import { ToggleLink } from "@/components/ui/ToggleLink";
 import { VoteCard } from "@/components/VoteCard";
 import { Pagination } from "@/components/Pagination";
 import { VoteSearch } from "./VoteSearch";
@@ -34,15 +34,13 @@ export default async function VotesPage({
       <VoteSearch />
       {/* Filter: close votes (decided by a narrow margin — where attendance swung it). */}
       <div className="flex flex-wrap items-center gap-2 text-sm">
-        <Link
+        {/* A link, so aria-current, not aria-pressed (a button state). */}
+        <ToggleLink
           href={closeOnly ? { pathname: "/votes", query: q ? { q } : {} } : { pathname: "/votes", query: { ...(q ? { q } : {}), close: "1" } }}
-          className={`rounded-full px-3 py-1 font-medium transition-colors ${
-            closeOnly ? "bg-accent text-white" : "bg-black/5 text-muted hover:bg-black/10"
-          }`}
-          aria-pressed={closeOnly}
+          selected={closeOnly}
         >
           {t("votes.closeVotes")}
-        </Link>
+        </ToggleLink>
         {closeOnly && <span className="text-muted">{t("votes.closeVotesHint", { n: CLOSE_VOTE_MARGIN })}</span>}
       </div>
       {items.length === 0 ? (

@@ -116,7 +116,7 @@ export default async function ListPage({ params }: { params: Promise<{ slug: str
           {surplus && (
             <div>
               <div className="text-muted">{t("election.surplusWith")}</div>
-              <div className="font-semibold">
+              <div className="pb-1 font-semibold">
                 {surplusOther ? (
                   <Link href={`/elections/${surplusOther.slug}`} className="text-accent-ink underline">
                     {partyText(surplusOther.name, locale)}

@@ -374,7 +374,7 @@ export default async function ElectionsPage() {
                         <summary className="cursor-pointer font-semibold">
                           {te("candidates")} <span className="font-normal text-muted tabular-nums">({p.candidates.length})</span>
                         </summary>
-                        <ol className="mt-1 columns-2 gap-x-4 ps-4 leading-relaxed [&>li]:break-inside-avoid">
+                        <ol className="mt-1 columns-2 gap-x-4 ps-4 leading-6 [&>li]:break-inside-avoid">
                           {p.candidates.map((c, i) => (
                             <li key={c.he} value={i + 1} className="list-decimal">
                               {c.personId != null ? (
@@ -400,7 +400,7 @@ export default async function ElectionsPage() {
                     </p>
                     <Link
                       href={listHref(p)}
-                      className="block text-xs font-medium text-accent hover:underline"
+                      className="block py-1 text-xs font-medium text-accent hover:underline"
                     >
                       {te("morePartyInfo")} {rtlLocales.has(locale) ? "←" : "→"}
                     </Link>

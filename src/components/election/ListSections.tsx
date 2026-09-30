@@ -149,7 +149,7 @@ export async function ListSections({ slug }: { slug: string }) {
       <h2 className="text-xl font-semibold">
         {t("election.candidates")} <span className="text-base font-normal text-muted tabular-nums">({list.candidates.length})</span>
       </h2>
-      <ol className="columns-2 gap-x-6 ps-5 text-sm leading-relaxed sm:columns-3 [&>li]:break-inside-avoid">
+      <ol className="columns-2 gap-x-6 ps-5 text-sm leading-6 sm:columns-3 [&>li]:break-inside-avoid">
         {list.candidates.map((c, i) => (
           <li key={c.he} value={i + 1} className="list-decimal">
             {c.personId != null ? (

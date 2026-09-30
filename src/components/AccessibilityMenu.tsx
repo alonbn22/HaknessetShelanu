@@ -181,7 +181,9 @@ export function AccessibilityMenu() {
   }, [open]);
 
   return (
-    <>
+    // A landmark of its own: the dialog renders after the footer, and content
+    // outside every landmark is skipped by landmark navigation.
+    <aside aria-label={t("title")}>
       <button
         ref={triggerRef}
         type="button"
@@ -320,6 +322,6 @@ export function AccessibilityMenu() {
           </div>
         </div>
       )}
-    </>
+    </aside>
   );
 }

@@ -68,13 +68,12 @@ export default async function CommitteePage({
   ];
   const { cache, loc } = localizePage(heStrings, locale);
 
-  // The compact meeting row (date · type · location · item count · links).
-  // Shared between plain rows and the <summary> of expandable meetings.
+  // The compact meeting row (date · type · location · item count) and its
+  // links. The links never sit inside a <summary>: a summary is one button, so
+  // links in it are nested interactive controls (and too small a target).
   const summaryRow = (s: CommitteeSession, itemCount: number) => {
     const type = loc(s.typeDesc);
     const place = loc(s.location);
-    const broadcast = safeHttpUrl(s.broadcastUrl);
-    const agenda = safeHttpUrl(s.sessionUrl);
     return (
       <>
         <span className="whitespace-nowrap font-medium tabular-nums">
@@ -95,29 +94,36 @@ export default async function CommitteePage({
             {t("committees.agendaCount", { count: itemCount })}
           </span>
         )}
-        <span className="ms-auto flex gap-3">
-          {broadcast && (
-            <a
-              href={broadcast}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="whitespace-nowrap text-accent hover:underline"
-            >
-              {t("committees.broadcast")}
-            </a>
-          )}
-          {agenda && (
-            <a
-              href={agenda}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="whitespace-nowrap text-accent hover:underline"
-            >
-              {t("committees.agenda")}
-            </a>
-          )}
-        </span>
       </>
+    );
+  };
+  const sessionLinks = (s: CommitteeSession, className: string) => {
+    const broadcast = safeHttpUrl(s.broadcastUrl);
+    const agenda = safeHttpUrl(s.sessionUrl);
+    if (!broadcast && !agenda) return null;
+    return (
+      <span className={`flex gap-3 ${className}`}>
+        {broadcast && (
+          <a
+            href={broadcast}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whitespace-nowrap text-accent hover:underline"
+          >
+            {t("committees.broadcast")}
+          </a>
+        )}
+        {agenda && (
+          <a
+            href={agenda}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whitespace-nowrap text-accent hover:underline"
+          >
+            {t("committees.agenda")}
+          </a>
+        )}
+      </span>
     );
   };
 
@@ -131,12 +137,13 @@ export default async function CommitteePage({
           return (
             <li key={s.id} className="flex flex-wrap items-center gap-x-3 gap-y-1 px-4 py-3 text-sm">
               {summaryRow(s, 0)}
+              {sessionLinks(s, "ms-auto")}
             </li>
           );
         }
         return (
-          <li key={s.id} className="text-sm">
-            <details className="group">
+          <li key={s.id} className="flex items-start text-sm">
+            <details className="group min-w-0 flex-1">
               <summary className="flex cursor-pointer list-none flex-wrap items-center gap-x-3 gap-y-1 px-4 py-3 hover:bg-black/2 [&::-webkit-details-marker]:hidden">
                 {/* Direction-agnostic disclosure marker (RTL-safe). */}
                 <span aria-hidden className="select-none text-muted">
@@ -202,6 +209,7 @@ export default async function CommitteePage({
                 )}
               </div>
             </details>
+            {sessionLinks(s, "shrink-0 py-3 pe-4")}
           </li>
         );
       })}
@@ -224,7 +232,7 @@ export default async function CommitteePage({
           );
         })()}
         {committee.email && (
-          <a className="text-sm text-accent hover:underline" href={`mailto:${committee.email}`}>
+          <a className="text-sm text-accent-ink underline" href={`mailto:${committee.email}`}>
             {committee.email}
           </a>
         )}

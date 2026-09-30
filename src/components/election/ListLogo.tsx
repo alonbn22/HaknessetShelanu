@@ -20,6 +20,8 @@ export function ListLogo({
       width={maxWidth}
       height={height}
       unoptimized
+      // Most logos are on Commons, which sets a third-party cookie on credentialed requests.
+      crossOrigin="anonymous"
       className="shrink-0 rounded-lg object-contain p-1.5"
       style={{ height, width: "auto", maxWidth, backgroundColor: logo.plate === "dark" ? "#1e293b" : "#fff" }}
     />

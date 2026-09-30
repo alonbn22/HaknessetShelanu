@@ -1,10 +1,15 @@
-import Image from "next/image";
 import { canonicalCommonsUrl, commonsThumbUrl } from "@/lib/text";
 
-// Stored photos are mostly Commons' 500px thumbnails. Avatars small enough for
-// its standard 250px one to stay sharp on a 3x screen (up to 83px) ask for that
-// instead; bigger ones (the member page header) keep the stored image.
-const THUMB_WIDTH = 250;
+// Stored photos are mostly Commons' 500px thumbnails; Commons also pre-renders
+// 120px and 250px ones (and refuses other widths). Each avatar lists, for 1x,
+// 2x and 3x screens, the smallest of those that stays sharp, and the stored
+// image beyond 250px; the browser takes the one its screen needs. A 56px card
+// on a 2x phone loads the 120px file, not the 250px one.
+const THUMB_WIDTHS = [120, 250];
+const photoAt = (url: string | null, px: number) => {
+  const w = THUMB_WIDTHS.find((t) => px <= t);
+  return w ? commonsThumbUrl(url, w) : canonicalCommonsUrl(url);
+};
 
 // Client-safe (no DB/queries imports) so it can be used in client components too.
 export function MemberAvatar({
@@ -22,21 +27,28 @@ export function MemberAvatar({
   // Override, e.g. "" when the name is printed right beside the photo.
   alt?: string;
 }) {
-  const photoUrl =
-    size * 3 <= THUMB_WIDTH
-      ? commonsThumbUrl(person.photoUrl, THUMB_WIDTH)
-      : canonicalCommonsUrl(person.photoUrl);
-  if (photoUrl) {
+  const src = photoAt(person.photoUrl, size);
+  if (src) {
+    // Each URL once, at the highest density it covers: "…/120px-… 2x, …/250px-… 3x".
+    const densities = new Map([1, 2, 3].map((d) => [photoAt(person.photoUrl, size * d)!, d]));
     return (
-      <Image
-        src={photoUrl}
+      // A plain <img>: next/image drops srcSet when unoptimized, and these load
+      // straight from Commons, not via the optimizer (Wikimedia rate-limits
+      // server-side fetches).
+      // eslint-disable-next-line @next/next/no-img-element
+      <img
+        src={src}
+        srcSet={[...densities].map(([url, d]) => `${url} ${d}x`).join(", ")}
         alt={alt ?? name}
         width={size}
         height={size}
-        // Load Commons images directly, not via the Next optimizer (Wikimedia rate-limits server-side fetches).
-        unoptimized
+        loading="lazy"
+        decoding="async"
+        // No credentials: Commons sets a third-party cookie (WMF-Uniq) on
+        // every image; a CORS request neither sends nor stores it.
+        crossOrigin="anonymous"
         className="rounded-full object-cover shrink-0 bg-accent/10"
-        style={{ width: size, height: size }}
+        style={{ width: size, height: size, color: "transparent" }}
       />
     );
   }

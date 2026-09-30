@@ -104,6 +104,19 @@ test("commonsThumbUrl narrows Commons thumbnails and stays on the CSP-allowed ho
   assert.equal(commonsThumbUrl(null, 250), null);
 });
 
+test("MemberAvatar offers the smallest sharp Commons thumbnail for each screen density", async () => {
+  const { createElement } = await import("react");
+  const { renderToStaticMarkup } = await import("react-dom/server");
+  const { MemberAvatar } = await import("../../src/components/MemberAvatar");
+  const t = "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/A.jpg";
+  const html = (size: number) =>
+    renderToStaticMarkup(createElement(MemberAvatar, { person: { photoUrl: `${t}/500px-A.jpg` }, name: "A", size }));
+  assert.ok(html(36).includes(`src="${t}/120px-A.jpg" srcSet="${t}/120px-A.jpg 3x"`), html(36));
+  assert.ok(html(56).includes(`srcSet="${t}/120px-A.jpg 2x, ${t}/250px-A.jpg 3x"`), html(56));
+  assert.ok(html(112).includes(`srcSet="${t}/120px-A.jpg 1x, ${t}/250px-A.jpg 2x, ${t}/500px-A.jpg 3x"`), html(112));
+  assert.ok(html(56).includes('crossorigin="anonymous"'), "no credentials to Commons");
+});
+
 // Tailwind's font-weight utilities are just numbers; nothing checks that the
 // number is a weight the font actually ships. It once wasn't: the Heebo config
 // listed 300/400/500/700/800/900 while `font-semibold` (600) was the site's

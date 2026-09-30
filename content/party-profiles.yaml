@@ -1728,6 +1728,7 @@ profiles:
         - Défendre la démocratie et les droits humains
   - id: 1108 # New Hope – The National Right
     verified: "2026-09-19"
+    logo: { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Yamin_Mamlakhti.png/500px-Yamin_Mamlakhti.png", source: { url: "https://commons.wikimedia.org/wiki/File:Yamin_Mamlakhti.png", title: "File:Yamin_Mamlakhti.png — the National Right's logo from March 2024 (CC BY 4.0)", publisher: "Wikimedia Commons" } }
     updates:
       - date: "2024-03-12"
         text:

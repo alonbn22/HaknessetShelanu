@@ -26,6 +26,13 @@ export default async function PartiesPage() {
   // the joint list it runs within.
   const lists = getRunningLists();
   const ownList = (id: number) => [...lists.values()].find((l) => l.factionId === id);
+  // The card's logo: its own 2026 list's, else the faction's own (its profile).
+  const logoOf = (id: number, nameHe: string) => {
+    const list = ownList(id);
+    if (list?.logo) return { logo: list.logo, name: partyText(list.name, locale) };
+    const logo = getPartyProfile(id)?.logo;
+    return logo ? { logo, name: factionName(id, nameHe, locale) } : undefined;
+  };
   const list2026 = (id: number) => {
     const slug = getPartyProfile(id)?.election2026?.slug;
     return slug ? lists.get(slug) : undefined;
@@ -42,8 +49,8 @@ export default async function PartiesPage() {
             style={{ borderInlineStartColor: factionColor(f.id) }}
           >
             <div className="flex items-center gap-3">
-              {ownList(f.id)?.logo ? (
-                <ListLogo logo={ownList(f.id)!.logo!} alt={t("election.logoAlt", { name: partyText(ownList(f.id)!.name, locale) })} height={44} maxWidth={120} />
+              {logoOf(f.id, f.nameHe) ? (
+                <ListLogo logo={logoOf(f.id, f.nameHe)!.logo} alt={t("election.logoAlt", { name: logoOf(f.id, f.nameHe)!.name })} height={44} maxWidth={120} />
               ) : (
                 <PartyEmblem
                   factionId={f.id}
@@ -107,9 +114,9 @@ export default async function PartiesPage() {
                 </div>
               )}
             </div>
-            {ownList(f.id)?.logo && (
+            {logoOf(f.id, f.nameHe) && (
               <p className="relative mt-2 w-fit text-xs text-muted">
-                <SourceLinks sources={[ownList(f.id)!.logo!.source]} label={t("election.logoCredit")} />
+                <SourceLinks sources={[logoOf(f.id, f.nameHe)!.logo.source]} label={t("election.logoCredit")} />
               </p>
             )}
           </div>

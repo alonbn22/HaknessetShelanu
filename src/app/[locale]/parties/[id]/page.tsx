@@ -82,6 +82,9 @@ export default async function PartyPage({
   // The list that continues this faction in 2026: its election sections and
   // official logo live on this page (one page per party).
   const ownList = [...getRunningLists().values()].find((l) => l.factionId === factionId);
+  // The page's logo: its own 2026 list's, else the faction's own (its profile).
+  const logo = ownList?.logo ?? profile?.logo;
+  const logoName = ownList?.logo ? partyText(ownList.name, locale) : factionName(factionId, faction.nameHe, locale);
   const e2026Party = e2026?.slug ? outlook?.parties.find((p) => p.slug === e2026.slug) : undefined;
   const e2026Row =
     e2026?.listNumber != null
@@ -138,8 +141,8 @@ export default async function PartyPage({
         style={{ borderInlineStartColor: factionColor(factionId) }}
       >
         <div className="flex flex-wrap items-center gap-4">
-          {ownList?.logo ? (
-            <ListLogo logo={ownList.logo} alt={t("election.logoAlt", { name: partyText(ownList.name, locale) })} height={64} maxWidth={220} />
+          {logo ? (
+            <ListLogo logo={logo} alt={t("election.logoAlt", { name: logoName })} height={64} maxWidth={220} />
           ) : (
             <PartyEmblem
               factionId={factionId}
@@ -165,6 +168,13 @@ export default async function PartyPage({
             {t("votes.originalHebrew")}:{" "}
             <span dir="rtl" lang="he">{faction.nameHe}</span>
           </div>
+        )}
+        {/* The faction's own logo is credited here; a 2026 list's logo is
+            credited with the list, below. */}
+        {!ownList?.logo && logo && (
+          <p className="text-xs text-muted">
+            <SourceLinks sources={[logo.source]} label={t("election.logoCredit")} />
+          </p>
         )}
         <FactionStatusNote factionId={factionId} />
         {/* 2026: how the faction runs, with the CEC's list page as the source.

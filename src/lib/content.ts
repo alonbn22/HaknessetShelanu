@@ -31,6 +31,14 @@ export type LocalizedText = z.infer<typeof localizedText>;
 
 const sourceRef = z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() });
 
+// A party's official logo — a Wikimedia Commons file (the one image host the
+// CSP allows) or a copy in /public — always credited to where it came from.
+const logoSchema = z.object({
+  src: z.string().regex(/^(https:\/\/upload\.wikimedia\.org\/|\/assets\/)/, "logo src: Commons or /assets"),
+  plate: z.literal("dark").optional(), // a mark drawn for a dark background
+  source: sourceRef,
+});
+
 // One faction's side of the aisle, with the date it took effect and the
 // reports it rests on — so a page can say "outside the coalition since
 // 14 July 2025 · source" instead of a bare label.
@@ -218,6 +226,9 @@ const partyProfileSchema = z.object({
   ballotNote: localizedText.optional(),
   // Where a profile states a 2026 fact (leader, merger, running status).
   sources: z.array(z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() })).optional(),
+  // The faction's own logo, for a faction no 2026 list continues (the lists'
+  // logos live in content/election.yaml and win when both exist).
+  logo: logoSchema.optional(),
   // How the faction goes into the 2026 election, read from the CEC's list
   // pages: on its own list, inside a joint list, merged into another party,
   // or not at all. `slug` points at the registry card (content/election.yaml);
@@ -744,15 +755,7 @@ const electionPartySchema = z.object({
   // headlines there or in its platform, in its own order — chosen by that rule,
   // never by us. Absent = none published.
   website: httpUrl.optional(),
-  // The list's official logo — a Wikimedia Commons file (the one image host the
-  // CSP allows) or a copy in /public — always credited to where it came from.
-  logo: z
-    .object({
-      src: z.string().regex(/^(https:\/\/upload\.wikimedia\.org\/|\/assets\/)/, "logo src: Commons or /assets"),
-      plate: z.literal("dark").optional(), // a mark drawn for a dark background
-      source: z.object({ url: httpUrl, title: z.string(), publisher: z.string().optional() }),
-    })
-    .optional(),
+  logo: logoSchema.optional(), // the list's official logo
   promises: z
     .object({
       items: z.array(localizedText).min(1).max(4),

@@ -627,7 +627,7 @@
     "youSaid": "You",
     "listStance": "The list",
     "noStance": "no documented stance — not compared",
-    "voteRule": "How a Knesset vote becomes a number: when almost all of a faction voted the same way (nine in ten or more) — \"strongly\"; when the faction split — \"agree\" or \"disagree\"; if fewer than half the faction voted, the stance is shown weaker and says so. A vote by a predecessor faction (e.g. Yesh Atid for Together) is marked explicitly.",
+    "voteRule": "How a Knesset vote becomes a number: when almost all of a faction voted the same way (nine in ten or more) — \"strongly\"; when the faction split — \"agree\" or \"disagree\"; if fewer than half the faction voted, the stance is shown weaker and says so. A vote by a predecessor faction (e.g. Yesh Atid for Together) is marked explicitly. A faction that voted for one version of a measure and against a rival version (as on the climate law) has a mixed record, shown as 0.",
     "topicsNote": "What is here and what is not: 16 statements — security and foreign policy, the economy, religion and state, society and institutions. A statement enters the compass only if most lists (at least 8 of 15) have a documented stance on it. A statement on state intervention in housing and prices was left out for that reason — most platforms talk about competition and say nothing about supervision or public building, which is not a stance.",
     "noStanceAtAll": "no documented stance on any statement you answered — not compared",
     "whatIsThis": "What does this mean?",

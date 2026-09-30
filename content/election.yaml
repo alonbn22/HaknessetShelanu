@@ -355,7 +355,7 @@ parties:
       lettersStatus: approved
       submittedBy: ["הליכוד, תנועה לאומית ליברלית", "תקווה חדשה הימין הממלכתי"]
       published: "2026-09-08"
-      updated: "2026-09-09"
+      updated: "2026-09-29"
     leader: { he: "בנימין נתניהו", en: "Benjamin Netanyahu", ar: "بنيامين نتنياهو", ru: "Биньямин Нетаньяху", es: "Benjamín Netanyahu", fr: "Benyamin Netanyahou" }
     leaderPersonId: 965
     factionId: 1096
@@ -446,6 +446,7 @@ parties:
       lettersStatus: approved
       submittedBy: ["ביחד בראשות בנט מחזירים את התקווה", "יש עתיד - בראשות יאיר לפיד"]
       published: "2026-09-07"
+      updated: "2026-09-29"
     color: "#0097a7" # chart colour — no sitting faction to inherit one from
     leader: { he: "נפתלי בנט", en: "Naftali Bennett", ar: "نفتالي بينيت", ru: "Нафтали Беннет", es: "Naftali Bennett", fr: "Naftali Bennett" }
     leaderWiki: "https://en.wikipedia.org/wiki/Naftali_Bennett"
@@ -520,7 +521,7 @@ parties:
       lettersStatus: approved
       submittedBy: ["ישר לישראל עם איזנקוט", "יסודות ישראל"]
       published: "2026-09-07"
-      updated: "2026-09-10"
+      updated: "2026-09-29"
     color: "#c2185b" # chart colour — no sitting faction to inherit one from
     leader: { he: "גדי איזנקוט", en: "Gadi Eisenkot", ar: "غادي آيزنكوت", ru: "Гади Айзенкот", es: "Gadi Eisenkot", fr: "Gadi Eisenkot" }
     leaderPersonId: 30836
@@ -604,7 +605,7 @@ parties:
       lettersStatus: approved
       submittedBy: ["הדמוקרטים מיסודה של תנועת העבודה", "מרצ"]
       published: "2026-09-07"
-      updated: "2026-09-16"
+      updated: "2026-09-29"
     leader: { he: "יאיר גולן", en: "Yair Golan", ar: "يائير غولان", ru: "Яир Голан", es: "Yair Golan", fr: "Yaïr Golan" }
     leaderWiki: "https://en.wikipedia.org/wiki/Yair_Golan"
     factionId: 1100
@@ -683,7 +684,7 @@ parties:
       lettersStatus: approved
       submittedBy: ["כחול לבן חוסן לישראל"]
       published: "2026-09-08"
-      updated: "2026-09-16"
+      updated: "2026-09-29"
     leader: { he: "בני גנץ", en: "Benny Gantz", ar: "بيني غانتس", ru: "Бени Ганц", es: "Benny Gantz", fr: "Benny Gantz" }
     leaderPersonId: 30657
     factionId: 1110
@@ -745,6 +746,7 @@ parties:
       lettersStatus: approved
       submittedBy: ["ישראל ביתנו"]
       published: "2026-09-07"
+      updated: "2026-09-29"
     leader: { he: "אביגדור ליברמן", en: "Avigdor Liberman", ar: "أفيغدور ليبرمان", ru: "Авигдор Либерман", es: "Avigdor Liberman", fr: "Avigdor Liberman" }
     leaderPersonId: 427
     factionId: 1104
@@ -812,7 +814,7 @@ parties:
       lettersStatus: approved
       submittedBy: ["ש\"ס - התאחדות הספרדים העולמית שומרי תורה"]
       published: "2026-09-08"
-      updated: "2026-09-16"
+      updated: "2026-09-29"
     leader: { he: "אריה דרעי", en: "Aryeh Deri", ar: "أرييه درعي", ru: "Арье Дери", es: "Aryeh Deri", fr: "Aryeh Deri" }
     leaderPersonId: 2291
     factionId: 1095
@@ -852,6 +854,7 @@ parties:
       lettersStatus: approved
       submittedBy: ["אגודת החרדים - דגל התורה", "הסתדרות אגודת ישראל בארץ ישראל", "חומת תורת ישראל"]
       published: "2026-09-09"
+      updated: "2026-09-29"
     leader: { he: "יעקב אשר", en: "Yaakov Asher", ar: "يعقوب آشر", ru: "Яаков Ашер", es: "Yaakov Asher", fr: "Yaakov Asher" }
     leaderPersonId: 23641
     factionId: 1101
@@ -890,6 +893,7 @@ parties:
       lettersStatus: approved
       submittedBy: ["האיחוד הלאומי - תקומה", "זהות - תנועה ישראלית יהודית", "עתיד אחד - עתיד טוב לישראל"]
       published: "2026-09-08"
+      updated: "2026-09-29"
     leader: { he: "בצלאל סמוטריץ'", en: "Bezalel Smotrich", ar: "بتسلئيل سموتريتش", ru: "Бецалель Смотрич", es: "Bezalel Smotrich", fr: "Bezalel Smotrich" }
     leaderPersonId: 30055
     factionId: 1105 # the Smotrich faction of the 25th Knesset; 1097 is the defunct 2022 joint list
@@ -956,7 +960,7 @@ parties:
       lettersStatus: approved
       submittedBy: ["חזית יהודית לאומית", "ארץ ישראל שלנו - מפלגה יהודית מאוחדת לשלמות התורה העם והארץ"]
       published: "2026-09-07"
-      updated: "2026-09-09"
+      updated: "2026-09-29"
     leader: { he: "איתמר בן גביר", en: "Itamar Ben Gvir", ar: "إيتمار بن غفير", ru: "Итамар Бен-Гвир", es: "Itamar Ben Gvir", fr: "Itamar Ben Gvir" }
     leaderPersonId: 30811
     factionId: 1106
@@ -1034,7 +1038,7 @@ parties:
       lettersStatus: approved
       submittedBy: ["רשימת האיחוד הערבי"]
       published: "2026-09-07"
-      updated: "2026-09-09"
+      updated: "2026-09-28"
     leader: { he: "מנסור עבאס", en: "Mansour Abbas", ar: "منصور عباس", ru: "Мансур Аббас", es: "Mansour Abbas", fr: "Mansour Abbas" }
     leaderPersonId: 30713
     factionId: 1099
@@ -1078,7 +1082,7 @@ parties:
       lettersStatus: approved
       submittedBy: ["המפלגה הקומוניסטית הישראלית", "אלתג'מוע אלווטני אלדמוקרטי", "התנועה הערבית להתחדשות"]
       published: "2026-09-09"
-      updated: "2026-09-18"
+      updated: "2026-09-28"
     leader: { he: "ד\"ר יוסף ג'בארין", en: "Dr. Yousef Jabareen", ar: "د. يوسف جبارين", ru: "д-р Юсеф Джабарин", es: "Dr. Yousef Jabareen", fr: "Dr Yousef Jabareen" }
     leaderWiki: "https://en.wikipedia.org/wiki/Yousef_Jabareen"
     factionId: 1103
@@ -1164,7 +1168,7 @@ parties:
       lettersStatus: approved
       submittedBy: ["עמי חי לעד"]
       published: "2026-09-07"
-      updated: "2026-09-09"
+      updated: "2026-09-29"
     color: "#8d6e63" # chart colour — no sitting faction to inherit one from
     leader: { he: "עופר וינטר", en: "Ofer Winter", ar: "عوفر فينتر", ru: "Офер Винтер", es: "Ofer Winter", fr: "Ofer Winter" }
     leaderWiki: "https://en.wikipedia.org/wiki/Ofer_Winter"
@@ -1203,7 +1207,7 @@ parties:
       lettersStatus: approved
       submittedBy: ["המילואימניקים", "הכלכלית החדשה"]
       published: "2026-09-07"
-      updated: "2026-09-09"
+      updated: "2026-09-29"
     color: "#7b1fa2" # chart colour — no sitting faction to inherit one from
     leader: { he: "יועז הנדל", en: "Yoaz Hendel", ar: "يوعاز هندل", ru: "Йоаз Хендель", es: "Yoaz Hendel", fr: "Yoaz Hendel" }
     leaderWiki: "https://en.wikipedia.org/wiki/Yoaz_Hendel"
@@ -1270,6 +1274,7 @@ parties:
       lettersStatus: approved
       submittedBy: ["למען אחיי מפלגת כלל ישראל"]
       published: "2026-09-08"
+      updated: "2026-09-30"
     color: "#455a64" # chart colour — no sitting faction to inherit one from
     leader: { he: "פנחס מרדכי ליטנר", en: "Pinchas Mordechai (Moti) Litner", ar: "بنحاس مردخاي (موتي) ليتنر", ru: "Пинхас Мордехай (Моти) Литнер", es: "Pinchas Mordechai (Moti) Litner", fr: "Pinchas Mordechai (Moti) Litner" }
     note:
@@ -1651,7 +1656,7 @@ howToVote:
 # page, updated 28 Sep 2026; Maariv's report of the vote, 27 Sep 2026).
 submittedLists:
   source: { url: "https://www.gov.il/he/pages/candidates-lists-26", title: "רשימות המועמדים לכנסת ה-26 — ועדת הבחירות המרכזית", publisher: "ועדת הבחירות המרכזית לכנסת" }
-  asOf: "2026-09-28"
+  asOf: "2026-09-30"
   lists:
     - listNumber: 1
       letters: "רק"
@@ -1660,7 +1665,7 @@ submittedLists:
       head: { he: "נפתלי בנט" }
       submittedBy: ["ביחד בראשות בנט מחזירים את התקווה", "יש עתיד - בראשות יאיר לפיד"]
       slug: together
-      updated: "2026-09-07"
+      updated: "2026-09-29"
       candidates:
         - { he: "בנט נפתלי", en: "Naftali Bennett", ar: "نفتالي بينيت", ru: "Нафтали Беннет", party: "מפלגת ביחד בראשות בנט מחזירים את התקווה" }
         - { he: "לפיד יאיר", en: "Yair Lapid", ar: "يائير لابيد", ru: "Яир Лапид", party: "מפלגת יש עתיד - בראשות יאיר לפיד" }
@@ -1789,7 +1794,7 @@ submittedLists:
       head: { he: "גדי איזנקוט" }
       submittedBy: ["ישר לישראל עם איזנקוט", "יסודות ישראל"]
       slug: yashar
-      updated: "2026-09-10"
+      updated: "2026-09-29"
       candidates:
         - { he: "איזנקוט גד", party: "מפלגת ישר לישראל עם איזנקוט" }
         - { he: "כהן יורם", party: "מפלגת ישר לישראל עם איזנקוט" }
@@ -1917,7 +1922,7 @@ submittedLists:
       url: "https://www.gov.il/he/pages/sharshar_list3"
       head: { he: "איתן שוילי" }
       submittedBy: ["שרשר לאהבה ואחדות העם"]
-      updated: "2026-09-09"
+      updated: "2026-09-29"
       candidates:
         - { he: "שוילי איתן" }
         - { he: "שוילי תמר" }
@@ -1937,7 +1942,7 @@ submittedLists:
       url: "https://www.gov.il/he/pages/hashutafut-lekulam_iist"
       head: { he: "טלאל אלקרינאוי" }
       submittedBy: ["איחוד בני הברית - איתחאד אבנאא אלעהד - בראשות רב חובל בשארה שליאן"]
-      updated: "2026-09-09"
+      updated: "2026-09-29"
       candidates:
         - { he: "אלקרינאוי, טלאל" }
         - { he: "אבו עאנם עבדאללה" }
@@ -1952,7 +1957,7 @@ submittedLists:
       url: "https://www.gov.il/he/pages/pirates_list_5"
       head: { he: "אוהד יעקב שם טוב" }
       submittedBy: ["הפיראטים"]
-      updated: "2026-09-10"
+      updated: "2026-09-29"
       candidates:
         - { he: "שם טוב אוהד יעקב" }
         - { he: "כוזר ויסגרבר נועם" }
@@ -1975,7 +1980,6 @@ submittedLists:
         - { he: "חלמיש אהוד שחר" }
         - { he: "וינשטיין יואב דוד" }
         - { he: "נהיר דור-שמשון" }
-        - { he: "פוויץ יהודה אריה" }
         - { he: "גור אורי" }
         - { he: "רומנו נתנאל" }
         - { he: "אורן אור-מרדכי" }
@@ -1986,7 +1990,7 @@ submittedLists:
       head: { he: "עופר וינטר" }
       submittedBy: ["עמי חי לעד"]
       slug: amkha
-      updated: "2026-09-09"
+      updated: "2026-09-29"
       candidates:
         - { he: "ווינטר עופר" }
         - { he: "חדאד יוסף" }
@@ -2012,7 +2016,7 @@ submittedLists:
       url: "https://www.gov.il/he/pages/israel-tchila_list7"
       head: { he: "שרן מרים השכל" }
       submittedBy: ["ישראל תחילה - ביטחון, כלכלה, אחדות בעם ישראל"]
-      updated: "2026-09-07"
+      updated: "2026-09-29"
       candidates:
         - { he: "השכל שרן מרים", en: "Sharren Miriam Haskel", ar: "شارن مريام هسكل", ru: "Шарен Мирьям Аскель" }
         - { he: "דנינו רועי חיים" }
@@ -2032,7 +2036,7 @@ submittedLists:
       url: "https://www.gov.il/he/pages/gan-eden_list_8"
       head: { he: "ישוע ישראל בן דוד" }
       submittedBy: ["גן עדן"]
-      updated: "2026-09-10"
+      updated: "2026-09-30"
       candidates:
         - { he: "בן דוד ישוע ישראל" }
         - { he: "בן יששכר יעקב" }
@@ -2047,7 +2051,7 @@ submittedLists:
       url: "https://www.gov.il/he/pages/kol-ha-nashim_list9"
       head: { he: "עמיר ישראל שדמי" }
       submittedBy: ["קול הנשים"]
-      updated: "2026-09-09"
+      updated: "2026-09-29"
       candidates:
         - { he: "ישראל שדמי עמיר" }
         - { he: "בוהדנה אמה" }
@@ -2070,7 +2074,7 @@ submittedLists:
       url: "https://www.gov.il/he/pages/beyachad-natzliah_list10"
       head: { he: "אבי שקד" }
       submittedBy: ["ביחד נצליח"]
-      updated: "2026-09-09"
+      updated: "2026-09-29"
       candidates:
         - { he: "שקד אבי" }
         - { he: "עטאונה נעים" }
@@ -2088,7 +2092,7 @@ submittedLists:
       head: { he: "אביגדור ליברמן" }
       submittedBy: ["ישראל ביתנו"]
       slug: yisrael-beiteinu
-      updated: "2026-09-07"
+      updated: "2026-09-29"
       candidates:
         - { he: "ליברמן אביגדור", en: "Avigdor Liberman", ar: "أفيغدور ليبرمان", ru: "Авигдор Либерман" }
         - { he: "בן שטרית רפאל" }
@@ -2130,7 +2134,7 @@ submittedLists:
       url: "https://www.gov.il/he/pages/mishpat-tzedek_list12"
       head: { he: "רננה לריסה עמיר" }
       submittedBy: ["משפט צדק"]
-      updated: "2026-09-09"
+      updated: "2026-09-29"
       candidates:
         - { he: "עמיר רננה לריסה" }
         - { he: "עמיר גאולה" }
@@ -2140,14 +2144,13 @@ submittedLists:
         - { he: "וישנבצקי טטיאנה" }
         - { he: "קלמן אליהו חיים יפים" }
         - { he: "מאירסון דינה" }
-        - { he: "אייזנשטיין מיכאל" }
     - listNumber: 13
       letters: "נף"
       name: { he: "שמע בראשות נפתלי גולדמן" }
       url: "https://www.gov.il/he/pages/shama"
       head: { he: "נפתלי בורוך גולדמן" }
       submittedBy: ["שמע בראשות נפתלי גולדמן"]
-      updated: "2026-09-07"
+      updated: "2026-09-29"
       candidates:
         - { he: "גולדמן נפתלי בורוך" }
     - listNumber: 14
@@ -2157,7 +2160,7 @@ submittedLists:
       head: { he: "איתמר בן גביר" }
       submittedBy: ["חזית יהודית לאומית", "ארץ ישראל שלנו - מפלגה יהודית מאוחדת לשלמות התורה העם והארץ"]
       slug: otzma
-      updated: "2026-09-09"
+      updated: "2026-09-29"
       candidates:
         - { he: "בן גביר איתמר", en: "Itamar Ben Gvir", ar: "إيتمار بن غفير", ru: "Итамар Бен-Гвир", party: "מפלגת חזית יהודית לאומית" }
         - { he: "גוטליב רויטל טלי", party: "מפלגת חזית יהודית לאומית" }
@@ -2200,7 +2203,7 @@ submittedLists:
       url: "https://www.gov.il/he/pages/seder-chadash_list15"
       head: { he: "אביטל חי אופק" }
       submittedBy: ["סדר חדש לשינוי שיטת הבחירות"]
-      updated: "2026-09-17"
+      updated: "2026-09-29"
       candidates:
         - { he: "אופק אביטל חי" }
         - { he: "נאור לביא" }
@@ -2223,7 +2226,6 @@ submittedLists:
         - { he: "זינגר גונן נועם" }
         - { he: "גנוסיס סיני נדב" }
         - { he: "מיכאלוב אורי" }
-        - { he: "אשטון גולן" }
         - { he: "קומורובסקי אייל" }
         - { he: "אלישאיב ויאצ'סלב ירון" }
         - { he: "בר ציון אורי" }
@@ -2235,7 +2237,7 @@ submittedLists:
       head: { he: "יועז הנדל" }
       submittedBy: ["המילואימניקים", "הכלכלית החדשה"]
       slug: reservists
-      updated: "2026-09-09"
+      updated: "2026-09-29"
       candidates:
         - { he: "הנדל יועז", en: "Yoaz Hendel", ar: "يوعاز هيندل", ru: "Йоаз Хендель", party: "מפלגת המילואימניקים" }
         - { he: "זליכה ירון", party: "מפלגת הכלכלית החדשה" }
@@ -2251,7 +2253,6 @@ submittedLists:
         - { he: "בורנשטיין הילה", party: "מפלגת הכלכלית החדשה" }
         - { he: "גיטלר איתי", party: "מפלגת המילואימניקים" }
         - { he: "אלישע משה", party: "מפלגת הכלכלית החדשה" }
-        - { he: "בהט יונתן", party: "מפלגת המילואימניקים" }
         - { he: "פז מאור", party: "מפלגת הכלכלית החדשה" }
         - { he: "רום אלמוג", party: "מפלגת המילואימניקים" }
         - { he: "שבח דוד", party: "מפלגת הכלכלית החדשה" }
@@ -2273,7 +2274,6 @@ submittedLists:
         - { he: "נגר מנחם", party: "מפלגת המילואימניקים" }
         - { he: "מיקיטן יעקב-גל", party: "מפלגת הכלכלית החדשה" }
         - { he: "ליליאן ברק", party: "מפלגת הכלכלית החדשה" }
-        - { he: "שמיאן בר", party: "מפלגת הכלכלית החדשה" }
         - { he: "פורמן גיא", party: "מפלגת הכלכלית החדשה" }
         - { he: "עזיז זדה אמיר", party: "מפלגת הכלכלית החדשה" }
     - listNumber: 17
@@ -2283,7 +2283,7 @@ submittedLists:
       head: { he: "יאיר גולן" }
       submittedBy: ["הדמוקרטים מיסודה של תנועת העבודה", "מרצ"]
       slug: democrats
-      updated: "2026-09-16"
+      updated: "2026-09-29"
       candidates:
         - { he: "גולן יאיר", en: "Yair Golan", ar: "يائير جولان", ru: "Яир Голан", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
         - { he: "לזימי נעמה", en: "Naama Lazimi", ar: "نعماه لازيمي", ru: "Наама Лазими", party: "מפלגת הדמוקרטים מיסודה של תנועת העבודה" }
@@ -2411,7 +2411,7 @@ submittedLists:
       head: { he: "מנסור עבאס" }
       submittedBy: ["רשימת האיחוד הערבי"]
       slug: raam
-      updated: "2026-09-09"
+      updated: "2026-09-28"
       candidates:
         - { he: "עבאס מנסור", en: "Mansour Abbas", ar: "منصور عباس", ru: "Мансур Аббас" }
         - { he: "סגלוביץ יואב", en: "Yoav Segalovitz", ar: "يوآف سيغالوفيتس", ru: "Йоав Сегалович" }
@@ -2493,7 +2493,7 @@ submittedLists:
       head: { he: "אריה מכלוף דרעי" }
       submittedBy: ["ש\"ס - התאחדות הספרדים העולמית שומרי תורה"]
       slug: shas
-      updated: "2026-09-16"
+      updated: "2026-09-29"
       candidates:
         - { he: "דרעי אריה מכלוף", en: "Aryeh Machluf Deri", ar: "أرييه مخلوف درعي", ru: "Арье Дери" }
         - { he: "אזולאי ינון", en: "Yinon Azoulay", ar: "ينون أزولاي", ru: "Инон Азулай" }
@@ -2621,7 +2621,7 @@ submittedLists:
       head: { he: "פנחס מרדכי (מוטי) ליטנר" }
       submittedBy: ["למען אחיי מפלגת כלל ישראל"]
       slug: haredi-public
-      updated: "2026-09-08"
+      updated: "2026-09-30"
       candidates:
         - { he: "ליטנר פנחס מרדכי" }
         - { he: "פרדי אשר" }
@@ -2641,7 +2641,7 @@ submittedLists:
       url: "https://www.gov.il/he/pages/miflegat-am-israelit_list21"
       head: { he: "אלון גלעדי" }
       submittedBy: ["אני ואתה - מפלגת העם הישראלית"]
-      updated: "2026-09-08"
+      updated: "2026-09-29"
       candidates:
         - { he: "גלעדי אלון" }
         - { he: "גלעדי ז'ולסון מאיה" }
@@ -2656,7 +2656,7 @@ submittedLists:
       url: "https://www.gov.il/he/pages/brit-olam_list22"
       head: { he: "עופר פינחס ליפשיץ" }
       submittedBy: ["ברית עולם"]
-      updated: "2026-09-09"
+      updated: "2026-09-29"
       candidates:
         - { he: "ליפשיץ עופר פינחס" }
         - { he: "סבו לב" }
@@ -2675,7 +2675,7 @@ submittedLists:
       url: "https://www.gov.il/he/pages/tikun_list23"
       head: { he: "משה סלמוביץ" }
       submittedBy: ["התיקון"]
-      updated: "2026-09-09"
+      updated: "2026-09-29"
       candidates:
         - { he: "סלמוביץ משה" }
         - { he: "קבלאן יארה" }
@@ -2696,7 +2696,7 @@ submittedLists:
       url: "https://www.gov.il/he/pages/gush-tanachi_list24"
       head: { he: "דניס ליפקין" }
       submittedBy: ["מפלגת גה\"ת-גוש התנ\"כי"]
-      updated: "2026-09-09"
+      updated: "2026-09-29"
       candidates:
         - { he: "ליפקין דניס" }
         - { he: "קל ברכה" }
@@ -2708,7 +2708,7 @@ submittedLists:
       url: "https://www.gov.il/he/pages/betach_list25"
       head: { he: "סמיון גרפמן" }
       submittedBy: ["בט\"ח בטחון חברתי"]
-      updated: "2026-09-08"
+      updated: "2026-09-29"
       candidates:
         - { he: "גרפמן סמיון" }
         - { he: "חניס לובוב" }
@@ -2719,7 +2719,7 @@ submittedLists:
       url: "https://www.gov.il/he/pages/orot_list26"
       head: { he: "נסים לוק" }
       submittedBy: ["אורות השחר מפלגה של כולם"]
-      updated: "2026-09-09"
+      updated: "2026-09-29"
       candidates:
         - { he: "לוק נסים" }
         - { he: "הר שמש בניהו" }
@@ -2740,7 +2740,7 @@ submittedLists:
       url: "https://www.gov.il/he/pages/demokratura_list27"
       head: { he: "מיכאל טופצ'יאשוילי" }
       submittedBy: ["דמוקראטורה – מפלגה להגשמת הציונות וערכי הדמוקראטורה"]
-      updated: "2026-09-09"
+      updated: "2026-09-29"
       candidates:
         - { he: "טופצ'יאשוילי מיכאל" }
         - { he: "קיקוזשוילי גבריאל" }
@@ -2754,7 +2754,7 @@ submittedLists:
       url: "https://www.gov.il/he/pages/shachor_list28"
       head: { he: "אליהו אליעזר באומרינד" }
       submittedBy: ["תומכי יהדות בוכרה"]
-      updated: "2026-09-09"
+      updated: "2026-09-29"
       candidates:
         - { he: "באומרינד אליהו אליעזר" }
         - { he: "דגני דרור אליהו" }
@@ -2781,7 +2781,7 @@ submittedLists:
       head: { he: "בנימין נתניהו" }
       submittedBy: ["הליכוד, תנועה לאומית ליברלית", "תקווה חדשה הימין הממלכתי"]
       slug: likud
-      updated: "2026-09-09"
+      updated: "2026-09-29"
       candidates:
         - { he: "נתניהו בנימין", en: "Benjamin Netanyahu", ar: "بنيامين نتنياهو", ru: "Биньямин Нетаньяху", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
         - { he: "כהן אליהו", party: "מפלגת הליכוד, תנועה לאומית ליברלית" }
@@ -2910,7 +2910,7 @@ submittedLists:
       head: { he: "בנימין גנץ" }
       submittedBy: ["כחול לבן חוסן לישראל"]
       slug: blue-white
-      updated: "2026-09-16"
+      updated: "2026-09-29"
       candidates:
         - { he: "גנץ בנימין" }
         - { he: "תמנו פנינה (פנחש)", en: "Pnina Tameno", ar: "بنينا تمانو", ru: "Пнина Тамено" }
@@ -2930,7 +2930,6 @@ submittedLists:
         - { he: "פרץ בן" }
         - { he: "עמר שרונה" }
         - { he: "שלו וודיסלבסקי רות" }
-        - { he: "הרשקוביץ עירד" }
         - { he: "יוסף נאהי" }
         - { he: "אסייג דוד" }
         - { he: "מנטבר נעה" }
@@ -2959,7 +2958,7 @@ submittedLists:
       head: { he: "בצלאל יואל סמוטריץ'" }
       submittedBy: ["האיחוד הלאומי - תקומה", "זהות - תנועה ישראלית יהודית", "עתיד אחד - עתיד טוב לישראל"]
       slug: rz-zehut
-      updated: "2026-09-08"
+      updated: "2026-09-29"
       candidates:
         - { he: "סמוטריץ בצלאל יואל", en: "Bezalel Smotrich", ar: "بتسلئيل سموتريتش", ru: "Бецалель Смотрич", party: "מפלגת האיחוד הלאומי - תקומה" }
         - { he: "פייגלין משה זלמן", en: "Moshe Zalman Feiglin", ar: "موشيه زلمان فايغلين", ru: "Моше Фейглин", party: "מפלגת זהות- תנועה ישראלית יהודית" }
@@ -2991,7 +2990,6 @@ submittedLists:
         - { he: "דיסקין אברהם חיים אלבר", party: "מפלגת האיחוד הלאומי - תקומה" }
         - { he: "לייבלר שולמית אסתר", party: "מפלגת זהות- תנועה ישראלית יהודית" }
         - { he: "וולדיגר מיכל מרים", en: "Michal Miriam Woldiger", ar: "ميخال ميريام فولديغير", ru: "Михаль Мирьям Вольдигер", party: "מפלגת האיחוד הלאומי - תקומה" }
-        - { he: "לייבלר אברהם שמואל", party: "מפלגת זהות- תנועה ישראלית יהודית" }
         - { he: "שושן יוסף חיים", party: "מפלגת זהות- תנועה ישראלית יהודית" }
         - { he: "מענדלסון אלישע", party: "מפלגת זהות- תנועה ישראלית יהודית" }
         - { he: "נויבר פליקס", party: "מפלגת זהות- תנועה ישראלית יהודית" }
@@ -3001,7 +2999,7 @@ submittedLists:
       url: "https://www.gov.il/he/pages/chozrim-leshorashim_list32"
       head: { he: "יובל אלמלך" }
       submittedBy: ["חוזרים לשורשים"]
-      updated: "2026-09-09"
+      updated: "2026-09-29"
       candidates:
         - { he: "אלמלך יובל" }
         - { he: "אפל ישראל אביחי" }
@@ -3019,7 +3017,7 @@ submittedLists:
       url: "https://www.gov.il/he/pages/tzomet-beit-israel_list33"
       head: { he: "דסטה יברקן" }
       submittedBy: ["צומת - התנועה לציונות מתחדשת", "בית ימני חברתי ציוני לכלל עם ישראל"]
-      updated: "2026-09-09"
+      updated: "2026-09-29"
       candidates:
         - { he: "יברקן דסטה", party: "מפלגת בית ימני חברתי ציוני לכלל ישראל" }
         - { he: "גרין משה", party: "מפלגת צומת - התנועה לציונות מתחדשת" }
@@ -3039,7 +3037,7 @@ submittedLists:
       url: "https://www.gov.il/he/pages/tekuma_list34"
       head: { he: "אלקנא פדרמן" }
       submittedBy: ["תקומה"]
-      updated: "2026-09-09"
+      updated: "2026-09-29"
       candidates:
         - { he: "פדרמן אלקנא" }
         - { he: "נגר לוטם" }
@@ -3061,7 +3059,7 @@ submittedLists:
       head: { he: "יוסף ג'בארין" }
       submittedBy: ["המפלגה הקומוניסטית הישראלית", "אלתג'מוע אלווטני אלדמוקרטי", "התנועה הערבית להתחדשות"]
       slug: joint-list
-      updated: "2026-09-18"
+      updated: "2026-09-28"
       candidates:
         - { he: "גבארין יוסף", party: "מפלגת המפלגה הקומוניסטית הישראלית" }
         - { he: "טיבי אחמד", en: "Ahmad Tibi", ar: "أحمد طيبي", ru: "Ахмад Тиби", party: "מפלגת התנועה הערבית להתחדשות" }
@@ -3188,7 +3186,7 @@ submittedLists:
       url: "https://www.gov.il/he/pages/machane-israel_list36"
       head: { he: "שלמה אלבוים" }
       submittedBy: ["מחנה ישראל"]
-      updated: "2026-09-09"
+      updated: "2026-09-29"
       candidates:
         - { he: "אלבוים שלמה" }
         - { he: "אדלר ברוך מנדל" }
@@ -3205,7 +3203,7 @@ submittedLists:
       head: { he: "יעקב אשר" }
       submittedBy: ["אגודת החרדים - דגל התורה", "הסתדרות אגודת ישראל בארץ ישראל", "חומת תורת ישראל"]
       slug: utj
-      updated: "2026-09-09"
+      updated: "2026-09-29"
       candidates:
         - { he: "אשר יעקב", en: "Yaakov Asher", ar: "يعقوب آشير", ru: "Яаков Ашер", party: "מפלגת אגודת החרדים - דגל התורה" }
         - { he: "גולדקנופ יצחק יששכר", en: "Yitshak Goldknop", ar: "إسحاق غولدكنوب", ru: "Ицхак Иссахар Гольдкноп", party: "מפלגת הסתדרות אגודת ישראל בארץ ישראל" }
@@ -3333,7 +3331,7 @@ submittedLists:
       url: "https://www.gov.il/he/pages/noam_list38"
       head: { he: "אביגדור (אבי) מעוז" }
       submittedBy: ["לזוז", "אחריות לאומית - למען עתיד ילדינו"]
-      updated: "2026-09-09"
+      updated: "2026-09-29"
       candidates:
         - { he: "מעוז אביגדור", party: "מפלגת לזוז" }
         - { he: "טבול שמעון", party: "מפלגת לזוז" }

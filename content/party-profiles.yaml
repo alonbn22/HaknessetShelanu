@@ -187,6 +187,7 @@ profiles:
         - Opposition aux concessions territoriales
   - id: 1102 # Yesh Atid — in 2026 runs inside the joint list "Together" (ביחד) headed by Naftali Bennett
     verified: "2026-09-19"
+    logo: { src: "/assets/logos/yesh-atid.png", source: { url: "https://yeshatid.org.il/", title: "יש עתיד — הלוגו באתר המפלגה (2026)", publisher: "יש עתיד" } }
     updates:
       - date: "2025-08-13"
         text:
@@ -1886,6 +1887,7 @@ profiles:
         - Économie libérale
   - id: 1107 # Noam
     verified: "2026-09-19"
+    logo: { src: "/assets/logos/noam.png", plate: "dark", source: { url: "https://he.wikipedia.org/wiki/%D7%A7%D7%95%D7%91%D7%A5:%D7%A1%D7%9E%D7%9C_%D7%9E%D7%A4%D7%9C%D7%92%D7%AA_%D7%A0%D7%A2%D7%9D.jpeg", title: "קובץ:סמל מפלגת נעם.jpeg — הלוגו של נעם לישראל (2026)", publisher: "Hebrew Wikipedia" } }
     updates:
       - date: "2025-03-24"
         text:

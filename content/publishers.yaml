@@ -53,6 +53,7 @@ publishers:
   - { key: "חוק-יסוד: הממשלה (הכנסת)", en: "Basic Law: The Government (the Knesset)", ar: "قانون أساس: الحكومة (الكنيست)", ru: "Основной закон: Правительство (Кнессет)", es: "Ley Fundamental: El Gobierno (la Knéset)", fr: "Loi fondamentale : le Gouvernement (la Knesset)" }
   - { key: "חרדים10", en: "Haredim10", ar: "حريديم10", ru: "Haredim10", es: "Haredim10", fr: "Haredim10" }
   - { key: "ישר!", en: "Yashar!", ar: "ياشار!", ru: "Яшар!", es: "¡Yashar!", fr: "Yashar!" }
+  - { key: "יש עתיד", en: "Yesh Atid", ar: "يش عتيد", ru: "Еш Атид", es: "Yesh Atid", fr: "Yesh Atid" }
   - { key: "ישראל ביתנו", en: "Yisrael Beiteinu", ar: "إسرائيل بيتنا", ru: "Наш дом Израиль", es: "Yisrael Beiteinu", fr: "Israël Beiteinou" }
   - { key: "ישראל ביתנו (אתר המפלגה)", en: "Yisrael Beiteinu (party website)", ar: "إسرائيل بيتنا (موقع الحزب)", ru: "Наш дом Израиль (сайт партии)", es: "Yisrael Beiteinu (sitio del partido)", fr: "Israël Beiteinou (site du parti)" }
   - { key: "ישראל היום", en: "Israel Hayom", ar: "يسرائيل هيوم", ru: "«Исраэль ха-Йом»", es: "Israel Hayom", fr: "Israel Hayom" }

@@ -187,9 +187,10 @@ only reads it.
 4. No qualifying source? Leave the list out. Don't write `0`: zero is a stance
    ("neither", or an evenly split vote), not a blank.
 5. Adding a new statement? It needs `text`, `short` and `explainer` in six
-   languages, a `lean`, and sourced stances from at least half of the running
-   lists. The statements stay half right-leaning and half left-leaning, and they
-   alternate. The tests check all of this.
+   languages, `explainerSources` for every fact the explainer states (a law, a
+   ruling, a vote, official figures), a `lean`, and sourced stances from at
+   least half of the running lists. The statements stay half right-leaning and
+   half left-leaning, and they alternate. The tests check all of this.
 6. Update `lastReviewed`, run `npm test`, and link every new source in the pull
    request.
 

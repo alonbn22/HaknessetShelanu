@@ -33,6 +33,13 @@ test("every statement has its text, short label and plain-words explainer in all
     }
     // The explainer is background, not a verdict: it names both sides.
     assert.ok(q.explainer.he.length >= 80, `${q.id}: explainer too short to explain anything`);
+    // What it states as fact is sourced — never to Wikipedia, which is an index.
+    // Only an explainer that states no fact (just the two sides) goes without.
+    assert.ok(q.explainerSources?.length || q.id === "palestinian-state", `${q.id}: cite the explainer's facts in explainerSources`);
+    for (const s of q.explainerSources ?? []) {
+      assert.ok(/^https:\/\//.test(s.url) && s.title, `${q.id}: explainer source needs an https URL and a title`);
+      assert.ok(!/wikipedia\.org/.test(s.url), `${q.id}: Wikipedia is an index, not a source`);
+    }
   }
 });
 

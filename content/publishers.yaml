@@ -14,6 +14,7 @@ publishers:
   - { key: "Knesset OData", en: "The Knesset (OData)", ar: "الكنيست (OData)", ru: "Кнессет (OData)", es: "La Knéset (OData)", fr: "La Knesset (OData)" }
   - { key: "Movement for Quality Government in Israel", en: "Movement for Quality Government in Israel", ar: "الحركة من أجل جودة الحكم في إسرائيل", ru: "Движение за качество власти в Израиле", es: "Movimiento por la Calidad del Gobierno en Israel", fr: "Mouvement pour un gouvernement de qualité en Israël" }
   - { key: "Nevo (Official Gazette)", en: "Nevo (Official Gazette)", ar: "نيفو (الجريدة الرسمية)", ru: "«Нево» (официальный вестник)", es: "Nevo (Boletín Oficial)", fr: "Nevo (Journal officiel)" }
+  - { key: "OECD", en: "OECD", ar: "منظمة التعاون الاقتصادي والتنمية", ru: "ОЭСР", es: "OCDE", fr: "OCDE" }
   - { key: "The Israel Democracy Institute", en: "Israel Democracy Institute", ar: "المعهد الإسرائيلي للديمقراطية", ru: "Израильский институт демократии", es: "Instituto Israelí de la Democracia", fr: "Institut israélien de la démocratie" }
   - { key: "The Knesset", en: "The Knesset", ar: "الكنيست", ru: "Кнессет", es: "La Knéset", fr: "La Knesset" }
   - { key: "The Knesset (Ethics Committee)", en: "The Knesset (Ethics Committee)", ar: "الكنيست (لجنة الأخلاقيات)", ru: "Кнессет (комиссия по этике)", es: "La Knéset (Comisión de Ética)", fr: "La Knesset (commission d’éthique)" }
@@ -30,9 +31,11 @@ publishers:
   - { key: "הכנסת (OData)", en: "The Knesset (OData)", ar: "الكنيست (OData)", ru: "Кнессет (OData)", es: "La Knéset (OData)", fr: "La Knesset (OData)" }
   - { key: "הליכוד", en: "Likud", ar: "الليكود", ru: "Ликуд", es: "Likud", fr: "Likoud" }
   - { key: "הליכוד (ועדת הבחירות המרכזית של התנועה)", en: "Likud (the party's central elections committee)", ar: "الليكود (لجنة الانتخابات المركزية للحزب)", ru: "Ликуд (центральная избирательная комиссия партии)", es: "Likud (comité electoral central del partido)", fr: "Likoud (commission électorale centrale du parti)" }
+  - { key: "הלשכה המרכזית לסטטיסטיקה", en: "Central Bureau of Statistics", ar: "دائرة الإحصاء المركزية", ru: "Центральное статистическое бюро", es: "Oficina Central de Estadística", fr: "Bureau central des statistiques" }
   - { key: "המילואימניקים", en: "The Reservists", ar: "جنود الاحتياط", ru: "Резервисты", es: "Los Reservistas", fr: "Les Réservistes" }
   - { key: "המכון הישראלי לדמוקרטיה", en: "Israel Democracy Institute", ar: "المعهد الإسرائيلي للديمقراطية", ru: "Израильский институт демократии", es: "Instituto Israelí de la Democracia", fr: "Institut israélien de la démocratie" }
   - { key: "המפלגה הכלכלית", en: "The Economic Party", ar: "الحزب الاقتصادي", ru: "Экономическая партия", es: "El Partido Económico", fr: "Le Parti économique" }
+  - { key: "המשרד להגנת הסביבה", en: "Ministry of Environmental Protection", ar: "وزارة حماية البيئة", ru: "Министерство охраны окружающей среды", es: "Ministerio de Protección Ambiental", fr: "Ministère de la Protection de l’environnement" }
   - { key: "הציבור החרדי", en: "The Haredi Public", ar: "الجمهور الحريدي", ru: "Харедимная общественность", es: "El Público Jaredí", fr: "Le Public haredi" }
   - { key: "הציונות הדתית", en: "Religious Zionism", ar: "الصهيونية الدينية", ru: "Религиозный сионизм", es: "Sionismo Religioso", fr: "Sionisme religieux" }
   - { key: "הרשימה המשותפת", en: "The Joint List", ar: "القائمة المشتركة", ru: "Объединённый список", es: "La Lista Conjunta", fr: "La Liste commune" }

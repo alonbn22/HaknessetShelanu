@@ -521,6 +521,9 @@ const quizQuestionSchema = z.object({
   // statement is about and what each side argues — neutral, no verdict.
   short: localizedText,
   explainer: localizedText,
+  // The sources for what the explainer states as fact (a law, a ruling, a
+  // vote, official figures); the stances cite their own below.
+  explainerSources: z.array(stanceSourceSchema).optional(),
   stances: z.record(listSlug, quizStanceSchema),
 });
 const quizFileSchema = z.object({

@@ -5,6 +5,7 @@ import { getFactionMeta, getQuizFile, getRunningLists, listName, partyText, publ
 import { formatDate } from "@/lib/format";
 import { isHebrew } from "@/lib/text";
 import { MIN_ANSWERS } from "@/lib/quiz";
+import { SourceLinks } from "@/components/SourceLinks";
 import { PartyQuiz, type QuizList, type QuizQ } from "./PartyQuiz";
 
 export const dynamic = "force-dynamic";
@@ -14,6 +15,7 @@ export const dynamic = "force-dynamic";
 // as "no stated position". Nothing is stored or sent anywhere.
 export default async function QuizPage() {
   const t = await getTranslations("quiz");
+  const tc = await getTranslations("common");
   const locale = await getLocale();
   const file = getQuizFile();
   const registry = getRunningLists();
@@ -25,6 +27,7 @@ export default async function QuizPage() {
     text: partyText(q.text, locale),
     short: partyText(q.short, locale),
     explainer: partyText(q.explainer, locale),
+    explainerSources: q.explainerSources?.length ? <SourceLinks label={tc("source")} sources={q.explainerSources} /> : undefined,
     stances: Object.fromEntries(
       Object.entries(q.stances).map(([slug, s]) => [
         slug,

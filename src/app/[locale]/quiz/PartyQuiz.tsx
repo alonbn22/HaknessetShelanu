@@ -1,6 +1,6 @@
 "use client";
 
-import { Fragment, useEffect, useMemo, useRef, useState } from "react";
+import { Fragment, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { cx } from "@/lib/cx";
@@ -21,7 +21,15 @@ export type QuizStanceView = {
   sources: { url: string; publisher: string; publisherRtl: boolean }[];
   quote: string;
 };
-export type QuizQ = { id: string; text: string; short: string; explainer: string; stances: Record<string, QuizStanceView> };
+export type QuizQ = {
+  id: string;
+  text: string;
+  short: string;
+  explainer: string;
+  /** The explainer's source line, rendered on the server (SourceLinks is server-only). */
+  explainerSources?: ReactNode;
+  stances: Record<string, QuizStanceView>;
+};
 export type QuizList = { slug: string; name: string; color: string; href?: string };
 
 // The reader's scale is the lists' scale: -2..+2. "skip" is a real choice that
@@ -115,6 +123,7 @@ export function PartyQuiz({ questions, lists }: { questions: QuizQ[]; lists: Qui
               <details className="mt-2 text-sm">
                 <summary className="cursor-pointer text-accent-ink">{t("whatIsThis")}</summary>
                 <p className="mt-1 max-w-prose leading-relaxed text-muted">{q.explainer}</p>
+                {q.explainerSources && <p className="mt-1">{q.explainerSources}</p>}
               </details>
               <ToggleGroup label={q.text} className="mt-3">
                 {OPTIONS.map((o) => (

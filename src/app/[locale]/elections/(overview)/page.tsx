@@ -23,6 +23,7 @@ import { getFactionAvgParticipation, getFactionTallies } from "@/lib/queries";
 import { KeyDatesTimeline } from "@/components/KeyDatesTimeline";
 import { PollsSection } from "@/components/polls/PollsSection";
 import { SourceLinks } from "@/components/SourceLinks";
+import { KNESSET_DATA } from "@/components/KnessetDataSource";
 import { ListMakeup } from "@/components/election/ListMakeup";
 
 export const dynamic = "force-dynamic";
@@ -270,9 +271,7 @@ export default async function ElectionsPage() {
                       return (
                         <p className="text-xs text-muted">
                           {te("recordParticipation", { pct: formatNumber(avg, locale, 1) })}{" "}
-                          <Link href={`/parties/${p.factionId}`} className="underline hover:text-accent-ink">
-                            {tc("source")}: {tc("knesset")}
-                          </Link>
+                          <SourceLinks label={tc("source")} sources={[KNESSET_DATA.votes]} className="" />
                         </p>
                       );
                     })()}

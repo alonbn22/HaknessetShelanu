@@ -1,6 +1,7 @@
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { MemberAvatar } from "@/components/MemberCard";
+import { KnessetDataSource } from "@/components/KnessetDataSource";
 import { ComparePicker, type CompareOption } from "./ComparePicker";
 import {
   getCurrentMembers,
@@ -202,6 +203,8 @@ export default async function ComparePage({
               ))}
             </div>
           </div>
+          <p className="text-xs text-muted">{t("attendance.note")}</p>
+          <KnessetDataSource data={["votes", "bills", "positions"]} />
         </>
       )}
 

@@ -34,6 +34,7 @@ import {
   factionName,
   isServingMember,
   isCurrentMk,
+  vacatedSeatAsMinister,
 } from "@/lib/queries";
 import { localizePage, committeeLabel } from "@/lib/i18n-data";
 import { localizedAttrs, rtlAttrs, safeHttpUrl, canonicalCommonsUrl, commonsFilePage, licenseUrl } from "@/lib/text";
@@ -249,7 +250,9 @@ export default async function MemberPage({
           )}
           <div className="text-sm text-muted">
             {ministerNotMk
-              ? t(deputyNotMk ? "member.deputyMinisterNotMk" : "member.ministerNotMk")
+              ? vacatedSeatAsMinister(positions)
+                ? t(deputyNotMk ? "member.deputyMinisterNotMk" : "member.ministerNotMk")
+                : t("member.govNotMk")
               : serving
                 ? t("member.currentMk")
                 : t("member.formerMk")}
@@ -349,14 +352,18 @@ export default async function MemberPage({
 
           {bio.wikidataId && (
             <p className="text-xs text-muted">
-              <a
-                className="text-accent hover:underline"
-                href={`https://www.wikidata.org/wiki/${bio.wikidataId}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {t("member.bioSource")}
-              </a>
+              {t.rich("member.bioSource", {
+                link: (chunks) => (
+                  <a
+                    className="text-accent hover:underline"
+                    href={`https://www.wikidata.org/wiki/${bio.wikidataId}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {chunks}
+                  </a>
+                ),
+              })}
             </p>
           )}
         </section>

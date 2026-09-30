@@ -9,6 +9,7 @@ publishers:
   - { key: "Knesset", en: "The Knesset", ar: "الكنيست", ru: "Кнессет", es: "La Knéset", fr: "La Knesset" }
   - { key: "Knesset Channel", en: "Knesset Channel", ar: "قناة الكنيست", ru: "Канал Кнессета", es: "Canal de la Knéset", fr: "Chaîne de la Knesset" }
   - { key: "Knesset Channel (ערוץ הכנסת)", en: "Knesset Channel", ar: "قناة الكنيست", ru: "Канал Кнессета", es: "Canal de la Knéset", fr: "Chaîne de la Knesset" }
+  - { key: "היועץ המשפטי לממשלה", en: "Attorney General of Israel", ar: "المستشار القضائي للحكومة", ru: "Юридический советник правительства", es: "Asesor Jurídico del Gobierno", fr: "Conseiller juridique du gouvernement" }
   - { key: "Knesset Ethics Committee", en: "Knesset Ethics Committee", ar: "لجنة الأخلاقيات في الكنيست", ru: "Комиссия Кнессета по этике", es: "Comisión de Ética de la Knéset", fr: "Commission d’éthique de la Knesset" }
   - { key: "Knesset OData", en: "The Knesset (OData)", ar: "الكنيست (OData)", ru: "Кнессет (OData)", es: "La Knéset (OData)", fr: "La Knesset (OData)" }
   - { key: "Movement for Quality Government in Israel", en: "Movement for Quality Government in Israel", ar: "الحركة من أجل جودة الحكم في إسرائيل", ru: "Движение за качество власти в Израиле", es: "Movimiento por la Calidad del Gobierno en Israel", fr: "Mouvement pour un gouvernement de qualité en Israël" }

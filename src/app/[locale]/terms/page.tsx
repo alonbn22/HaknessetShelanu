@@ -32,7 +32,7 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
       </LegalSection>
 
       <LegalSection title={t("sourcesTitle")}>
-        <p>{t.rich("sources", { link: siteLink("/sources") })}</p>
+        <p>{t.rich("sources", { link: siteLink("/sources"), report: siteLink("/tickets") })}</p>
       </LegalSection>
 
       <LegalSection title={t("compassTitle")}>

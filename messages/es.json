@@ -45,7 +45,8 @@
     "minorityHead": "Gobierno en minoría",
     "minorityHeadSince": "Gobierno en minoría desde el {date}",
     "minorityNote": "La coalición tiene {coalition} diputados, menos que la mayoría de {majority}. Un Gobierno puede seguir en el cargo sin mayoría, pero le cuesta aprobar leyes; para sustituirlo por otro Gobierno hacen falta {majority} diputados.",
-    "lastChecked": "Última comprobación: {date}"
+    "lastChecked": "Última comprobación: {date}",
+    "dataAsOf": "datos al {date}"
   },
   "home": {
     "title": "Nuestra Knéset",
@@ -140,7 +141,7 @@
     "education": "Formación",
     "occupation": "Profesión",
     "military": "Servicio militar",
-    "bioSource": "Datos biográficos: Wikidata",
+    "bioSource": "Datos biográficos: <link>Wikidata</link>, una base de datos editada por la comunidad; los datos oficiales están en la página del diputado en el sitio de la Knéset.",
     "partyLine": "Voto con la facción",
     "partyLineDetail": "Votó con la mayoría de su facción en {withParty} de {total} votaciones registradas.",
     "rebellions": "{count, plural, one {# voto contra la línea de la facción} other {# votos contra la línea de la facción}}",
@@ -165,7 +166,8 @@
     "recordNone": "No hay elementos documentados en esta base de datos.",
     "neutralRecord": "En las noticias y en el cargo",
     "ministerNotMk": "Ministro/a en funciones; dejó su escaño en la Knéset en virtud de la Ley Noruega",
-    "deputyMinisterNotMk": "Viceministro/a en funciones; dejó su escaño en la Knéset en virtud de la Ley Noruega"
+    "deputyMinisterNotMk": "Viceministro/a en funciones; dejó su escaño en la Knéset en virtud de la Ley Noruega",
+    "govNotMk": "En funciones en el Gobierno; no es diputado/a de la Knéset"
   },
   "parties": {
     "title": "Facciones de la Knéset",
@@ -187,7 +189,7 @@
     "editorialNote": "Los resúmenes de posiciones los redacta este sitio con fines explicativos y pueden ser incompletos. No representan la postura oficial de la facción.",
     "ballot": "Letras de la papeleta",
     "ballotEra": "Letras de la papeleta de las elecciones de 2022 (25.ª Knéset). Las letras para 2026 se solicitaron al presentar las listas y las aprueba la Comisión Electoral Central; se actualizarán aquí tras la aprobación.",
-    "basedOn": "La posición en el espectro y las posturas se basan en:",
+    "basedOn": "El resumen, la posición en el espectro y las posturas se basan en:",
     "factionChair": "Presidente/a de la facción en la Knéset",
     "updates": "Novedades recientes",
     "updatesNote": "Elementos fechados de las noticias y de los registros oficiales; cada uno con su fuente.",
@@ -278,13 +280,13 @@
     "kind_committeeReferral": "Remisión a comisión",
     "kind_decision": "Aprobación de una moción o decisión",
     "explain_preliminary": "Lectura preliminar — la primera etapa de un proyecto de ley de iniciativa parlamentaria. Si se aprueba, pasa a comisión para prepararlo para la primera lectura.",
-    "explain_first": "Primera lectura — el pleno aprueba los principios del proyecto y lo envía a comisión para el trabajo detallado.",
+    "explain_first": "Primera lectura — el pleno debate el proyecto y lo vota; si se aprueba, pasa a una comisión que lo prepara para la segunda y la tercera lectura.",
     "explain_second": "Segunda lectura — votación de cada artículo y de las reservas, una vez que la comisión ha preparado el proyecto.",
     "explain_third": "Tercera lectura — la votación final; si se aprueba, el proyecto se convierte en ley.",
     "explain_second_third": "Segunda y tercera lectura — la aprobación definitiva del proyecto de ley.",
     "explain_agenda": "Moción para el orden del día — una solicitud de celebrar un debate en el pleno sobre un asunto público. No es un proyecto de ley y no tiene lecturas.",
     "explain_noConfidence": "Una moción de censura contra el Gobierno.",
-    "explain_reservation": "Votación sobre una reserva — una objeción a un artículo del proyecto durante la segunda lectura.",
+    "explain_reservation": "Votación sobre una reserva — una enmienda a un artículo del proyecto que la comisión rechazó y que se somete al pleno en la segunda lectura.",
     "explain_secondaryLegislation": "Aprobación de legislación secundaria (reglamentos u órdenes) dictada por el poder ejecutivo.",
     "explain_continuity": "Continuidad — continuar el proceso legislativo de un proyecto procedente de una Knéset anterior.",
     "explain_committeeReferral": "Remisión del proyecto de ley a una comisión para su debate.",
@@ -414,7 +416,7 @@
   },
   "terms": {
     "title": "Condiciones de uso",
-    "intro": "En resumen: este es un sitio informativo no oficial sobre la Knéset. Cada dato tiene su fuente, pero puede haber errores, así que compruebe los detalles importantes en la fuente.",
+    "intro": "En resumen: este es un sitio informativo no oficial sobre la Knéset. Enlazamos los datos con sus fuentes, pero puede haber errores, así que compruebe los detalles importantes en la fuente.",
     "unofficialTitle": "Un sitio no oficial",
     "unofficial": "«Nuestra Knéset» es un sitio no oficial. No está vinculado a la Knéset ni al Comité Central de Elecciones.",
     "infoTitle": "Solo información, sin garantías",
@@ -422,8 +424,8 @@
     "correctionsTitle": "Notificar errores y correcciones",
     "corrections": "¿Ha encontrado un error? Pulse «Notificar un error» en la página donde aparece, o abra una solicitud en la <link>página de solicitudes</link>.",
     "correctionsHow": "Nada cambia en el sitio de forma automática. Revisamos cada solicitud y corregimos el sitio cuando una fuente muestra un error. La información sobre personas solo se publica si la respalda una fuente fiable.",
-    "sourcesTitle": "Cada dato tiene su fuente",
-    "sources": "Cada dato del sitio va acompañado de su fuente, para que pueda comprobarlo usted mismo. Las principales fuentes de datos figuran en la <link>página de fuentes de datos</link>, y el contenido editorial cita sus fuentes junto a cada elemento.",
+    "sourcesTitle": "Fuentes",
+    "sources": "Nuestra regla: cada dato que publicamos enlaza a su fuente, para que pueda comprobarlo usted mismo. ¿Encontró un dato sin fuente? <report>Avísenos</report>. Las principales fuentes de datos figuran en la <link>página de fuentes de datos</link>, y el contenido editorial cita sus fuentes junto a cada elemento.",
     "compassTitle": "La brújula no es una recomendación de voto",
     "compass": "La <link>brújula electoral</link> muestra cuánto se acercan sus respuestas a las posiciones documentadas de las listas. No le dice a quién votar: esa decisión es suya.",
     "licensesTitle": "Licencias",
@@ -436,7 +438,7 @@
     "law": "El uso del sitio y estas condiciones se rigen por la ley israelí.",
     "contactTitle": "Contacto",
     "contact": "Preguntas sobre estas condiciones:",
-    "updated": "Última actualización: 27 de septiembre de 2026"
+    "updated": "Última actualización: 30 de septiembre de 2026"
   },
   "credits": {
     "title": "Créditos",
@@ -570,7 +572,7 @@
   "attendance": {
     "missedOfTotal": "{missed} de {total}",
     "totalVotesCol": "Ausencias / total",
-    "note": "La base son todas las votaciones celebradas durante el mandato del diputado.",
+    "note": "La participación es la proporción de votaciones en el pleno en las que el diputado votó (a favor, en contra o abstención) sobre todas las celebradas mientras ocupaba su escaño. El registro recoge votos, no presencia: no votar también puede ser una decisión deliberada.",
     "servingOnlyNote": "Esta lista muestra solo a los diputados actualmente en funciones. Quienes dejaron su escaño (por ejemplo, ministros en virtud de la Ley Noruega) no figuran aquí; sus cifras del tiempo en que ocuparon el escaño están en sus propias páginas.",
     "count": "{count, plural, one {# diputado en funciones} other {# diputados en funciones}}",
     "searchPlaceholder": "Buscar un diputado o una facción…"
@@ -701,14 +703,14 @@
     "title": "Presupuesto del Estado",
     "subtitle": "Adónde va el dinero — datos presupuestarios oficiales y detallados, con historial y búsqueda.",
     "provTitle": "¿De dónde salen los números?",
-    "provBody": "Todas las cifras provienen de los datos abiertos del Ministerio de Finanzas en data.gov.il: el presupuesto aprobado detallado (por ministerio, área, programa y partida) para 2009–2018, y los informes de ejecución del Contador General para los últimos años.",
+    "provBody": "Los totales anuales y las partidas provienen de los datos abiertos del Ministerio de Finanzas en data.gov.il: el presupuesto aprobado detallado (por ministerio, área, programa y partida) para 2009–2018, y los informes de ejecución del Contador General para los últimos años.",
     "provUnits": "El presupuesto detallado se muestra como gasto neto; las cifras de los últimos años son el presupuesto bruto aprobado según los informes de ejecución. Los nombres de las partidas están en hebreo, como en el original.",
-    "currentKnessetLabel": "Presupuestos de la 25.ª Knéset combinados (2023–2025)",
+    "currentKnessetLabel": "Presupuestos de la 25.ª Knéset combinados, 2023–2025 (el de 2026 aún no está en los datos)",
     "grossNote": "Suma de los presupuestos aprobados (brutos) de los años de la 25.ª Knéset.",
     "overTime": "El presupuesto a lo largo de los años",
     "net": "neto",
     "gross": "bruto",
-    "timelineNote": "2009–2018 son gasto neto (presupuesto detallado); desde 2019, presupuesto bruto aprobado (informes de ejecución), por lo que los años no son directamente comparables. 2020 falta en la fuente.",
+    "timelineNote": "2009–2018 son gasto neto (presupuesto detallado); desde 2019, presupuesto bruto aprobado (informes de ejecución), por lo que los años no son directamente comparables. No hay cifras de 2020 y 2021.",
     "itemized": "Presupuesto detallado — {year}",
     "dataNote": "Presupuesto aprobado de {year} del Ministerio de Finanzas, {count} partidas. Importes en miles de NIS.",
     "totalLabel": "Gasto total del presupuesto {year}",
@@ -730,7 +732,7 @@
     "colNet": "Presupuesto",
     "b": " mil millones",
     "m": " millones",
-    "note2026": "El presupuesto de 2026 y los presupuestos detallados desde 2019 aún no se han publicado como datos abiertos por partida; están en el portal de Presupuesto Abierto del Ministerio de Finanzas. Aquí se muestran los totales anuales de esos años.",
+    "note2026": "El presupuesto de 2026 aún no está en estos datos. Desde 2019 los datos abiertos dan el presupuesto por programa (bruto), no por partida; el detalle completo está en el portal de Presupuesto Abierto del Ministerio de Finanzas.",
     "source": "Fuente",
     "sourceName": "Datos abiertos del presupuesto del Ministerio de Finanzas (data.gov.il)",
     "outlookTitle": "Próximos presupuestos y novedades",
@@ -744,7 +746,7 @@
   "lobbyists": {
     "title": "Lobistas",
     "subtitle": "Quién hace lobby en la Knéset, para qué empresa y en nombre de qué clientes.",
-    "explainer": "Un lobista es una persona a la que se paga por promover los intereses de clientes — empresas, organizaciones o grupos — ante los diputados y las comisiones. Por ley, los lobistas deben registrarse en la Knéset y declarar a sus clientes. La lista siguiente se basa en el registro oficial de lobistas de la Knéset.",
+    "explainer": "Un lobista es una persona a la que se paga por promover los intereses de clientes — empresas, organizaciones o grupos — ante los diputados y las comisiones. Según la Ley de la Knéset, un lobista solo puede actuar en la Knéset con un permiso de una comisión presidida por el presidente de la Knéset, y debe indicar los clientes a los que representa. La lista siguiente se basa en el registro oficial de lobistas de la Knéset.",
     "statLobbyists": "Lobistas registrados",
     "statFirms": "Empresas de lobby",
     "statClients": "Clientes",

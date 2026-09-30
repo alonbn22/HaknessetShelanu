@@ -3,6 +3,8 @@ import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { MemberAvatar } from "@/components/MemberAvatar";
 import { ReadingBadge, VoteMeaning } from "@/components/ReadingBadge";
+import { SourceLinks } from "@/components/SourceLinks";
+import { KIND_SOURCES, voteKind } from "@/lib/votes-meta";
 import { FeedbackActions } from "@/components/FeedbackActions";
 import { VoteRollCall, type Voter } from "./VoteRollCall";
 import { formatDateTime } from "@/lib/format";
@@ -169,7 +171,15 @@ export default async function VotePage({
             <p className="text-xs text-muted pt-1">{t("votes.aboutNote")}</p>
           </div>
         )}
-        <VoteMeaning forDesc={vote.forDesc} titleHe={vote.titleHe} option={localOf(vote.forDesc)} />
+        <VoteMeaning
+          forDesc={vote.forDesc}
+          titleHe={vote.titleHe}
+          option={localOf(vote.forDesc)}
+          source={(() => {
+            const src = KIND_SOURCES[voteKind(vote.forDesc, vote.titleHe)];
+            return src && <p><SourceLinks label={t("common.source")} sources={[src]} /></p>;
+          })()}
+        />
       </section>
 
       {bill && (

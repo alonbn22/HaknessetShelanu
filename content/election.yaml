@@ -1410,17 +1410,20 @@ rules:
   - key: election-day
     label: { he: "יום הבחירות", en: "Election day", ar: "يوم الانتخابات", ru: "День выборов", es: "Día de las elecciones", fr: "Jour des élections" }
     detail:
-      he: "יום הבחירות הוא יום שבתון, אך התחבורה ושירותים ציבוריים פועלים כסדרם. הקלפיות פתוחות בדרך כלל 7:00–22:00 (ביישובים קטנים 8:00–20:00), ומי שבתור בשעת הסגירה מצביע."
-      en: "Election day is a public day of rest, but transport and public services operate. Polls are generally open 7:00–22:00 (8:00–20:00 in small communities), and anyone in line at closing still votes."
-      ar: "يوم الانتخابات يوم عطلة رسمية، لكن المواصلات والخدمات العامة تعمل. تفتح صناديق الاقتراع عادةً بين 7:00 و22:00 (بين 8:00 و20:00 في البلدات الصغيرة)، ومن يكون في الطابور عند الإغلاق يصوّت."
-      ru: "День выборов — официальный выходной, но транспорт и общественные службы работают. Участки обычно открыты с 7:00 до 22:00 (в небольших населённых пунктах — с 8:00 до 20:00), и все, кто стоит в очереди на момент закрытия, голосуют."
-      es: "El día de las elecciones es festivo, pero el transporte y los servicios públicos funcionan. Los centros de votación abren en general de 7:00 a 22:00 (de 8:00 a 20:00 en localidades pequeñas), y quien esté en la fila al cierre vota igualmente."
-      fr: "Le jour des élections est férié, mais les transports et les services publics fonctionnent. Les bureaux sont en général ouverts de 7 h à 22 h (de 8 h à 20 h dans les petites localités), et quiconque fait la queue à la fermeture peut encore voter."
+      he: "יום הבחירות הוא יום שבתון, אך התחבורה ושירותים ציבוריים פועלים כסדרם. הקלפיות פתוחות בדרך כלל 7:00–22:00 (ביישובים שבהם עד 350 בעלי זכות בחירה: 8:00–20:00), ומי שבתור בשעת הסגירה מצביע."
+      en: "Election day is a public day of rest, but transport and public services operate. Polls are generally open 7:00–22:00 (8:00–20:00 in localities with up to 350 eligible voters), and anyone in line at closing still votes."
+      ar: "يوم الانتخابات يوم عطلة رسمية، لكن المواصلات والخدمات العامة تعمل. تفتح صناديق الاقتراع عادةً بين 7:00 و22:00 (بين 8:00 و20:00 في البلدات التي لا يزيد عدد أصحاب حق الاقتراع فيها على 350)، ومن يكون في الطابور عند الإغلاق يصوّت."
+      ru: "День выборов — официальный выходной, но транспорт и общественные службы работают. Участки обычно открыты с 7:00 до 22:00 (в населённых пунктах, где не более 350 избирателей, — с 8:00 до 20:00), и все, кто стоит в очереди на момент закрытия, голосуют."
+      es: "El día de las elecciones es festivo, pero el transporte y los servicios públicos funcionan. Los centros de votación abren en general de 7:00 a 22:00 (de 8:00 a 20:00 en localidades con hasta 350 electores), y quien esté en la fila al cierre vota igualmente."
+      fr: "Le jour des élections est férié, mais les transports et les services publics fonctionnent. Les bureaux sont en général ouverts de 7 h à 22 h (de 8 h à 20 h dans les localités de 350 électeurs au plus), et quiconque fait la queue à la fermeture peut encore voter."
     status: confirmed
     sources:
       - url: "https://m.knesset.gov.il/EN/activity/documents/BasicLawsPDF/BasicLawTheKnesset.pdf"
         title: "Basic Law: The Knesset (art. 10)"
         publisher: "The Knesset"
+      - url: "https://www.nevo.co.il/law_html/law01/190_026.htm"
+        title: "חוק הבחירות לכנסת [נוסח משולב], התשכ\"ט-1969 — סעיף 72: זמן ההצבעה"
+        publisher: "Nevo"
   - key: government-formation
     label: { he: "הרכבת ממשלה אחרי הבחירות", en: "Forming a government", ar: "تشكيل الحكومة", ru: "Формирование правительства", es: "Formación del Gobierno", fr: "Formation du gouvernement" }
     detail:
@@ -1550,12 +1553,12 @@ howToVote:
   - key: htv-when
     label: { he: "מתי ואיפה", en: "When and where", ar: "متى وأين", ru: "Когда и где", es: "Cuándo y dónde", fr: "Quand et où" }
     detail:
-      he: "יום שלישי, 27 באוקטובר 2026 — יום שבתון. הקלפיות פתוחות 7:00–22:00 (ביישובים קטנים 8:00–20:00), ומי שבתור בשעת הסגירה מצביע. מ-6 באוקטובר נשלחת לכל בוחר הודעה עם מקום הקלפי שלו; רשימת מקומות הקלפי מתפרסמת ב-20 באוקטובר."
-      en: "Tuesday, 27 October 2026 — a public day of rest. Polls are open 7:00–22:00 (8:00–20:00 in small communities), and anyone in line at closing still votes. From 6 October every voter is sent a notice with their polling station; the list of stations is published on 20 October."
-      ar: "الثلاثاء، 27 تشرين الأول/أكتوبر 2026 — يوم عطلة رسمية. تفتح صناديق الاقتراع بين 7:00 و22:00 (بين 8:00 و20:00 في البلدات الصغيرة)، ومن يكون في الطابور عند الإغلاق يصوّت. ابتداءً من 6 تشرين الأول/أكتوبر تُرسَل إلى كل ناخب بطاقة إعلام بمكان صندوق الاقتراع؛ وتُنشر قائمة الصناديق في 20 تشرين الأول/أكتوبر."
-      ru: "Вторник, 27 октября 2026 года — официальный выходной. Участки открыты с 7:00 до 22:00 (в небольших населённых пунктах — с 8:00 до 20:00), и все, кто стоит в очереди на момент закрытия, голосуют. С 6 октября каждому избирателю отправляют уведомление с его участком; список участков публикуется 20 октября."
-      es: "Martes 27 de octubre de 2026 — día festivo. Los centros de votación abren de 7:00 a 22:00 (de 8:00 a 20:00 en localidades pequeñas), y quien esté en la fila al cierre vota igualmente. Desde el 6 de octubre cada votante recibe un aviso con su centro de votación; la lista de colegios se publica el 20 de octubre."
-      fr: "Mardi 27 octobre 2026 — jour férié. Les bureaux sont ouverts de 7 h à 22 h (de 8 h à 20 h dans les petites localités), et quiconque fait la queue à la fermeture peut encore voter. À partir du 6 octobre, chaque électeur reçoit un avis indiquant son bureau de vote ; la liste des bureaux est publiée le 20 octobre."
+      he: "יום שלישי, 27 באוקטובר 2026 — יום שבתון. הקלפיות פתוחות 7:00–22:00 (ביישובים שבהם עד 350 בעלי זכות בחירה: 8:00–20:00), ומי שבתור בשעת הסגירה מצביע. מ-6 באוקטובר נשלחת לכל בוחר הודעה עם מקום הקלפי שלו; רשימת מקומות הקלפי מתפרסמת ב-20 באוקטובר."
+      en: "Tuesday, 27 October 2026 — a public day of rest. Polls are open 7:00–22:00 (8:00–20:00 in localities with up to 350 eligible voters), and anyone in line at closing still votes. From 6 October every voter is sent a notice with their polling station; the list of stations is published on 20 October."
+      ar: "الثلاثاء، 27 تشرين الأول/أكتوبر 2026 — يوم عطلة رسمية. تفتح صناديق الاقتراع بين 7:00 و22:00 (بين 8:00 و20:00 في البلدات التي لا يزيد عدد أصحاب حق الاقتراع فيها على 350)، ومن يكون في الطابور عند الإغلاق يصوّت. ابتداءً من 6 تشرين الأول/أكتوبر تُرسَل إلى كل ناخب بطاقة إعلام بمكان صندوق الاقتراع؛ وتُنشر قائمة الصناديق في 20 تشرين الأول/أكتوبر."
+      ru: "Вторник, 27 октября 2026 года — официальный выходной. Участки открыты с 7:00 до 22:00 (в населённых пунктах, где не более 350 избирателей, — с 8:00 до 20:00), и все, кто стоит в очереди на момент закрытия, голосуют. С 6 октября каждому избирателю отправляют уведомление с его участком; список участков публикуется 20 октября."
+      es: "Martes 27 de octubre de 2026 — día festivo. Los centros de votación abren de 7:00 a 22:00 (de 8:00 a 20:00 en localidades con hasta 350 electores), y quien esté en la fila al cierre vota igualmente. Desde el 6 de octubre cada votante recibe un aviso con su centro de votación; la lista de colegios se publica el 20 de octubre."
+      fr: "Mardi 27 octobre 2026 — jour férié. Les bureaux sont ouverts de 7 h à 22 h (de 8 h à 20 h dans les localités de 350 électeurs au plus), et quiconque fait la queue à la fermeture peut encore voter. À partir du 6 octobre, chaque électeur reçoit un avis indiquant son bureau de vote ; la liste des bureaux est publiée le 20 octobre."
     status: confirmed
     sources:
       - url: "https://www.bechirot.gov.il/home/"
@@ -1564,6 +1567,9 @@ howToVote:
       - url: "https://m.knesset.gov.il/EN/activity/documents/BasicLawsPDF/BasicLawTheKnesset.pdf"
         title: "Basic Law: The Knesset (art. 10)"
         publisher: "The Knesset"
+      - url: "https://www.nevo.co.il/law_html/law01/190_026.htm"
+        title: "חוק הבחירות לכנסת [נוסח משולב], התשכ\"ט-1969 — סעיף 72: זמן ההצבעה"
+        publisher: "Nevo"
   - key: htv-who
     label: { he: "מי רשאי להצביע", en: "Who may vote", ar: "من يحق له التصويت", ru: "Кто может голосовать", es: "Quién puede votar", fr: "Qui peut voter" }
     detail:

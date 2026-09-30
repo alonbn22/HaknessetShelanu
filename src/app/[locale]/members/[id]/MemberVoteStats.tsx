@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { VoteResultBadge } from "@/components/VoteResultBadge";
+import { KnessetDataSource } from "@/components/KnessetDataSource";
 import { formatDate } from "@/lib/format";
 import { localizedAttrs } from "@/lib/text";
 import type { Localized } from "@/lib/i18n-data";
@@ -86,6 +87,8 @@ export async function MemberVoteStats({
       <p className="text-sm text-muted">
         {t("member.ofVotesHeld", { total: stats.votesHeld.toLocaleString(locale) })}
       </p>
+      <p className="text-xs text-muted">{t("attendance.note")}</p>
+      <KnessetDataSource data={["votes"]} />
       {discipline && (
         <div className="rounded-lg bg-black/3 px-4 py-3">
           <div className="flex items-baseline gap-2">

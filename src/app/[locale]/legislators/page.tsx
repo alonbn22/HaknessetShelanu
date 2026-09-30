@@ -1,6 +1,7 @@
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { MemberAvatar } from "@/components/MemberCard";
+import { KnessetDataSource } from "@/components/KnessetDataSource";
 import { getMostActiveLegislators, personName, factionName } from "@/lib/queries";
 import { rtlAttrs } from "@/lib/text";
 
@@ -17,6 +18,7 @@ export default async function LegislatorsPage() {
       <div>
         <h1 className="text-3xl font-bold">{t("title")}</h1>
         <p className="text-muted">{t("subtitle")}</p>
+        <KnessetDataSource data={["bills"]} />
       </div>
 
       <ol className="space-y-2">

@@ -22,6 +22,7 @@ import {
 } from "@/lib/content";
 import { FactionStatusNote } from "@/components/FactionStatusNote";
 import { SourceLinks } from "@/components/SourceLinks";
+import { KnessetDataSource } from "@/components/KnessetDataSource";
 import { formatDate } from "@/lib/format";
 import {
   getFaction,
@@ -322,9 +323,11 @@ export default async function PartyPage({
             <div>
               <div className="text-2xl font-bold text-accent">{profile.founded}</div>
               <div className="text-sm text-muted">{t("party.founded")}</div>
+              {profile.foundedSource && <SourceLinks label={t("common.source")} sources={[profile.foundedSource]} />}
             </div>
           )}
         </div>
+        {avgParticipation != null && <KnessetDataSource data={["votes"]} />}
       </section>
 
       {/* The list the faction runs in — its own, or the joint list it joined. */}

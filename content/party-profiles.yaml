@@ -149,6 +149,7 @@ profiles:
     leaderHe: בנימין נתניהו
     leaderEn: Benjamin Netanyahu
     founded: 1973
+    foundedSource: { url: "https://en.idi.org.il/israeli-elections-and-parties/parties/likud/", title: "Likud", publisher: "המכון הישראלי לדמוקרטיה" }
     website: https://www.likud.org.il
     wikipediaEn: https://en.wikipedia.org/wiki/Likud
     tags: [national-liberal, conservative, secular-right]
@@ -316,6 +317,7 @@ profiles:
     leaderHe: יאיר לפיד
     leaderEn: Yair Lapid
     founded: 2012
+    foundedSource: { url: "https://en.idi.org.il/israeli-elections-and-parties/parties/yesh-atid/", title: "Yesh Atid", publisher: "המכון הישראלי לדמוקרטיה" }
     website: https://www.yeshatid.org.il
     wikipediaEn: https://en.wikipedia.org/wiki/Yesh_Atid
     tags: [liberal, secular, centrist]
@@ -459,6 +461,7 @@ profiles:
     leaderHe: אריה דרעי
     leaderEn: Aryeh Deri
     founded: 1984
+    foundedSource: { url: "https://en.idi.org.il/israeli-elections-and-parties/parties/shas/", title: "Shas", publisher: "המכון הישראלי לדמוקרטיה" }
     wikipediaEn: https://en.wikipedia.org/wiki/Shas
     tags: [ultra-orthodox, sephardic, religious]
     summary:
@@ -597,7 +600,8 @@ profiles:
     ballotLetters: "כן"
     leaderHe: בני גנץ
     leaderEn: Benny Gantz
-    founded: 2019
+    founded: 2019 # as the Blue and White list (IDI); Gantz's Israel Resilience party dates from 2018
+    foundedSource: { url: "https://en.idi.org.il/israeli-elections-and-parties/parties/blue-and-white/", title: "Blue and White", publisher: "המכון הישראלי לדמוקרטיה" }
     wikipediaEn: https://en.wikipedia.org/wiki/Blue_and_White_(political_party)
     tags: [centrist, liberal-conservative, security]
     summary:
@@ -750,7 +754,8 @@ profiles:
       fr: "S’est présenté sur la liste commune « Sionisme religieux » (ט) en 2022."
     leaderHe: בצלאל סמוטריץ'
     leaderEn: Bezalel Smotrich
-    founded: 2021
+    founded: 2021 # the renewed name of National Union–Tkuma (IDI)
+    foundedSource: { url: "https://en.idi.org.il/israeli-elections-and-parties/parties/religious-zionist-party/", title: "Religious Zionist Party", publisher: "המכון הישראלי לדמוקרטיה" }
     website: https://zionutdatit.org.il/
     wikipediaEn: https://en.wikipedia.org/wiki/Religious_Zionist_Party
     tags: [religious-zionist, nationalist, conservative]
@@ -896,6 +901,7 @@ profiles:
     leaderHe: יעקב אשר
     leaderEn: Yaakov Asher
     founded: 1992
+    foundedSource: { url: "https://en.idi.org.il/israeli-elections-and-parties/parties/united-torah-judaism/", title: "United Torah Judaism", publisher: "המכון הישראלי לדמוקרטיה" }
     # 2026: the submitted list is headed by Yaakov Asher (Degel HaTorah);
     # Yitzhak Goldknopf, who headed the 2022 list and chairs Agudat Yisrael, is
     # second. The Knesset faction has had no chair since 17 Jul 2025 (OData).
@@ -1001,6 +1007,7 @@ profiles:
     leaderHe: אביגדור ליברמן
     leaderEn: Avigdor Liberman
     founded: 1999
+    foundedSource: { url: "https://en.idi.org.il/israeli-elections-and-parties/parties/yisrael-beitenu/", title: "Yisrael Beitenu", publisher: "המכון הישראלי לדמוקרטיה" }
     website: https://beytenu.org.il/
     wikipediaEn: https://en.wikipedia.org/wiki/Yisrael_Beiteinu
     tags: [nationalist, secular, russian-speaking]
@@ -1194,7 +1201,8 @@ profiles:
       fr: "S’est présenté au sein de la liste « Sionisme religieux » (ט) en 2022."
     leaderHe: איתמר בן גביר
     leaderEn: Itamar Ben-Gvir
-    founded: 2012
+    founded: 2012 # as Otzma LeYisrael; named Otzma Yehudit from 2015 (IDI)
+    foundedSource: { url: "https://en.idi.org.il/israeli-elections-and-parties/parties/otzma-leyisrael/", title: "Otzma LeYisrael", publisher: "המכון הישראלי לדמוקרטיה" }
     website: https://ozma-yeudit.co.il/
     wikipediaEn: https://en.wikipedia.org/wiki/Otzma_Yehudit
     tags: [far-right, religious-nationalist]
@@ -1356,6 +1364,7 @@ profiles:
     leaderHe: מנסור עבאס
     leaderEn: Mansour Abbas
     founded: 1996
+    foundedSource: { url: "https://en.idi.org.il/israeli-elections-and-parties/parties/raam/", title: "Ra'am", publisher: "המכון הישראלי לדמוקרטיה" }
     wikipediaEn: https://en.wikipedia.org/wiki/United_Arab_List
     tags: [arab, conservative]
     summary:
@@ -1516,7 +1525,8 @@ profiles:
     ballotLetters: "ום"
     leaderHe: יוסף ג'בארין
     leaderEn: Yousef Jabareen
-    founded: 2003 # first joint Hadash–Ta'al list (Israel Democracy Institute); Hadash itself dates from 1977
+    founded: 2019 # the current joint list (IDI); Hadash and Ta'al first ran together in 2003
+    foundedSource: { url: "https://en.idi.org.il/israeli-elections-and-parties/parties/hadash-taal/", title: "Hadash-Ta'al", publisher: "המכון הישראלי לדמוקרטיה" }
     # 2026: Hadash, Ta'al and Balad run again as the Joint List, headed by Hadash
     # chair Dr. Yousef Jabareen; Ahmad Tibi (Ta'al) is second.
     sources:
@@ -1676,7 +1686,8 @@ profiles:
     ballotLetters: "אמת"
     leaderHe: יאיר גולן
     leaderEn: Yair Golan
-    founded: 1968
+    founded: 2024 # the Labor–Meretz merger (IDI); Labor itself dates from 1968
+    foundedSource: { url: "https://en.idi.org.il/israeli-elections-and-parties/parties/the-democrats/", title: "The Democrats", publisher: "המכון הישראלי לדמוקרטיה" }
     wikipediaEn: https://en.wikipedia.org/wiki/The_Democrats_(Israel)
     tags: [social-democratic, zionist-left]
     summary:
@@ -1837,6 +1848,7 @@ profiles:
     leaderHe: גדעון סער
     leaderEn: Gideon Sa'ar
     founded: 2020
+    foundedSource: { url: "https://en.idi.org.il/israeli-elections-and-parties/parties/new-hope/", title: "New Hope", publisher: "המכון הישראלי לדמוקרטיה" }
     wikipediaEn: https://en.wikipedia.org/wiki/New_Hope_(Israel)
     tags: [national-liberal, conservative]
     summary:
@@ -1976,6 +1988,7 @@ profiles:
     leaderHe: אבי מעוז
     leaderEn: Avi Maoz
     founded: 2019
+    foundedSource: { url: "https://www.jpost.com/israel-elections/new-right-wing-religious-party-formed-to-fight-lgbt-rights-595756", title: "Anti-LGBT Noam Party set to run in September election (17 July 2019)", publisher: "The Jerusalem Post" }
     wikipediaEn: https://en.wikipedia.org/wiki/Noam_(political_party)
     tags: [religious, ultra-conservative]
     summary:

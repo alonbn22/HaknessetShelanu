@@ -45,7 +45,8 @@
     "minorityHead": "Gouvernement minoritaire",
     "minorityHeadSince": "Gouvernement minoritaire depuis le {date}",
     "minorityNote": "La coalition compte {coalition} députés, moins que la majorité de {majority}. Un gouvernement peut rester en fonction sans majorité, mais il lui est difficile de faire adopter des lois ; pour le remplacer par un autre gouvernement, il faut {majority} députés.",
-    "lastChecked": "Dernière vérification : {date}"
+    "lastChecked": "Dernière vérification : {date}",
+    "dataAsOf": "données au {date}"
   },
   "home": {
     "title": "Notre Knesset",
@@ -140,7 +141,7 @@
     "education": "Formation",
     "occupation": "Profession",
     "military": "Service militaire",
-    "bioSource": "Données biographiques : Wikidata",
+    "bioSource": "Données biographiques : <link>Wikidata</link>, une base de données éditée par la communauté ; les informations officielles figurent sur la page du député sur le site de la Knesset.",
     "partyLine": "Vote avec la faction",
     "partyLineDetail": "A voté avec la majorité de sa faction lors de {withParty} des {total} votes enregistrés.",
     "rebellions": "{count, plural, one {# vote contre la ligne de la faction} other {# votes contre la ligne de la faction}}",
@@ -165,7 +166,8 @@
     "recordNone": "Aucun élément documenté dans cette base.",
     "neutralRecord": "Actualité et fonctions",
     "ministerNotMk": "Ministre en exercice ; a quitté son siège à la Knesset en vertu de la « loi norvégienne »",
-    "deputyMinisterNotMk": "Vice-ministre en exercice ; a quitté son siège à la Knesset en vertu de la « loi norvégienne »"
+    "deputyMinisterNotMk": "Vice-ministre en exercice ; a quitté son siège à la Knesset en vertu de la « loi norvégienne »",
+    "govNotMk": "Membre du gouvernement ; pas député(e) à la Knesset"
   },
   "parties": {
     "title": "Factions de la Knesset",
@@ -187,7 +189,7 @@
     "editorialNote": "Les résumés de positions sont rédigés par ce site à des fins d’explication et peuvent être incomplets. Ils ne représentent pas la position officielle de la faction.",
     "ballot": "Lettres du bulletin",
     "ballotEra": "Lettres du bulletin des élections de 2022 (25e Knesset). Les lettres pour 2026 ont été demandées lors du dépôt des listes et doivent encore être approuvées définitivement par la Commission électorale centrale ; elles seront mises à jour ici après approbation.",
-    "basedOn": "La position sur l’échiquier et les prises de position s’appuient sur :",
+    "basedOn": "Le résumé, la position sur l’échiquier et les prises de position s’appuient sur :",
     "factionChair": "Président(e) de la faction à la Knesset",
     "updates": "Derniers développements",
     "updatesNote": "Éléments datés tirés de l’actualité et des registres officiels ; chacun avec sa source.",
@@ -278,13 +280,13 @@
     "kind_committeeReferral": "Renvoi en commission",
     "kind_decision": "Approbation d’une motion ou d’une décision",
     "explain_preliminary": "Lecture préliminaire — la première étape d’un projet de loi d’initiative parlementaire. S’il est adopté, le projet est renvoyé en commission pour préparer la première lecture.",
-    "explain_first": "Première lecture — la plénière approuve les principes du projet et le renvoie en commission pour un travail détaillé.",
+    "explain_first": "Première lecture — la plénière débat du projet et le vote ; s’il est adopté, il est renvoyé à une commission qui le prépare pour les deuxième et troisième lectures.",
     "explain_second": "Deuxième lecture — vote sur chaque article et sur les réserves, une fois le projet préparé par la commission.",
     "explain_third": "Troisième lecture — le vote final ; s’il est adopté, le projet devient loi.",
     "explain_second_third": "Deuxième et troisième lectures — l’approbation définitive du projet de loi.",
     "explain_agenda": "Motion à l’ordre du jour — une demande de débat en plénière sur une question publique. Ce n’est pas un projet de loi et il n’y a pas de lectures.",
     "explain_noConfidence": "Une motion de censure contre le gouvernement.",
-    "explain_reservation": "Vote sur une réserve — une objection à un article du projet de loi pendant la deuxième lecture.",
+    "explain_reservation": "Vote sur une réserve — un amendement à un article du projet rejeté par la commission et soumis à la plénière en deuxième lecture.",
     "explain_secondaryLegislation": "Approbation d’une législation secondaire (règlements ou arrêtés) prise par l’exécutif.",
     "explain_continuity": "Continuité — poursuite de la procédure législative d’un projet issu d’une Knesset précédente.",
     "explain_committeeReferral": "Renvoi du projet de loi à une commission pour examen.",
@@ -414,7 +416,7 @@
   },
   "terms": {
     "title": "Conditions d’utilisation",
-    "intro": "En bref : ce site d’information sur la Knesset n’est pas officiel. Chaque fait a sa source, mais des erreurs sont possibles : vérifiez les détails importants à la source.",
+    "intro": "En bref : ce site d’information sur la Knesset n’est pas officiel. Nous relions les faits à leurs sources, mais des erreurs sont possibles : vérifiez les détails importants à la source.",
     "unofficialTitle": "Un site non officiel",
     "unofficial": "« Notre Knesset » est un site non officiel. Il n’est lié ni à la Knesset ni à la Commission électorale centrale.",
     "infoTitle": "À titre d’information, sans garantie",
@@ -422,8 +424,8 @@
     "correctionsTitle": "Signaler une erreur, et corrections",
     "corrections": "Vous avez trouvé une erreur ? Cliquez sur « Signaler une information incorrecte » sur la page où elle apparaît, ou ouvrez un signalement sur la <link>page des signalements</link>.",
     "correctionsHow": "Rien ne change automatiquement sur le site. Nous examinons chaque demande et corrigeons le site lorsqu’une source montre une erreur. Les informations sur des personnes ne sont publiées que si une source fiable les étaye.",
-    "sourcesTitle": "Chaque fait a sa source",
-    "sources": "Chaque fait du site est accompagné de sa source, pour que vous puissiez le vérifier vous-même. Les principales sources des données sont listées sur la <link>page des sources des données</link>, et le contenu éditorial cite ses sources à côté de chaque élément.",
+    "sourcesTitle": "Sources",
+    "sources": "Notre règle : chaque fait que nous publions renvoie à sa source, pour que vous puissiez le vérifier vous-même. Vous avez trouvé un fait sans source ? <report>Signalez-le</report>. Les principales sources des données sont listées sur la <link>page des sources des données</link>, et le contenu éditorial cite ses sources à côté de chaque élément.",
     "compassTitle": "La boussole n’est pas un conseil de vote",
     "compass": "La <link>boussole électorale</link> montre à quel point vos réponses sont proches des positions documentées des listes. Elle ne vous dit pas pour qui voter : ce choix vous appartient.",
     "licensesTitle": "Licences",
@@ -436,7 +438,7 @@
     "law": "L’utilisation du site et les présentes conditions sont régies par le droit israélien.",
     "contactTitle": "Contact",
     "contact": "Questions sur ces conditions :",
-    "updated": "Dernière mise à jour : 27 septembre 2026"
+    "updated": "Dernière mise à jour : 30 septembre 2026"
   },
   "credits": {
     "title": "Crédits",
@@ -570,7 +572,7 @@
   "attendance": {
     "missedOfTotal": "{missed} sur {total}",
     "totalVotesCol": "Absences / total",
-    "note": "La base est l’ensemble des votes tenus pendant le mandat de l’élu(e).",
+    "note": "La participation est la part des votes en séance plénière auxquels le député a pris part (pour, contre ou abstention), sur l’ensemble des votes tenus pendant son mandat. Le registre consigne les votes, pas la présence : ne pas voter peut aussi être un choix délibéré.",
     "servingOnlyNote": "Cette liste ne comprend que les députés actuellement en exercice. Ceux qui ont quitté leur siège (par exemple les ministres en vertu de la « loi norvégienne ») n’y figurent pas ; leurs chiffres, pour la période où ils siégeaient, sont sur leur propre page.",
     "count": "{count, plural, one {# député en exercice} other {# députés en exercice}}",
     "searchPlaceholder": "Rechercher un député ou une faction…"
@@ -701,14 +703,14 @@
     "title": "Budget de l’État",
     "subtitle": "Où va l’argent — données budgétaires officielles et détaillées, avec historique et recherche.",
     "provTitle": "D’où viennent les chiffres ?",
-    "provBody": "Tous les chiffres proviennent des données ouvertes du ministère des Finances sur data.gov.il : le budget approuvé détaillé (par ministère, domaine, programme et ligne budgétaire) pour 2009–2018, et les rapports d’exécution du Comptable général pour les dernières années.",
+    "provBody": "Les totaux annuels et les lignes budgétaires proviennent des données ouvertes du ministère des Finances sur data.gov.il : le budget approuvé détaillé (par ministère, domaine, programme et ligne budgétaire) pour 2009–2018, et les rapports d’exécution du Comptable général pour les dernières années.",
     "provUnits": "Le budget détaillé est présenté en dépenses nettes ; les chiffres des dernières années sont le budget brut approuvé d’après les rapports d’exécution. Les noms des lignes sont en hébreu comme dans la source.",
-    "currentKnessetLabel": "Budgets de la 25e Knesset cumulés (2023–2025)",
+    "currentKnessetLabel": "Budgets de la 25e Knesset cumulés, 2023–2025 (celui de 2026 n’est pas encore dans les données)",
     "grossNote": "Somme des budgets approuvés (bruts) des années de la 25e Knesset.",
     "overTime": "Le budget au fil des ans",
     "net": "net",
     "gross": "brut",
-    "timelineNote": "2009–2018 : dépenses nettes (budget détaillé) ; à partir de 2019 : budget brut approuvé (rapports d’exécution), les années ne sont donc pas directement comparables. 2020 manque dans la source.",
+    "timelineNote": "2009–2018 : dépenses nettes (budget détaillé) ; à partir de 2019 : budget brut approuvé (rapports d’exécution), les années ne sont donc pas directement comparables. Il n’y a pas de chiffres ici pour 2020 et 2021.",
     "itemized": "Budget détaillé — {year}",
     "dataNote": "Budget approuvé {year} du ministère des Finances, {count} lignes budgétaires. Montants en milliers de shekels.",
     "totalLabel": "Dépenses totales du budget {year}",
@@ -730,7 +732,7 @@
     "colNet": "Budget",
     "b": " Md",
     "m": " M",
-    "note2026": "Le budget 2026 et les budgets détaillés à partir de 2019 n’ont pas encore été publiés en données ouvertes par ligne ; ils sont sur le portail Budget ouvert du ministère des Finances. Les totaux annuels de ces années sont affichés ici.",
+    "note2026": "Le budget 2026 n’est pas encore dans ces données. À partir de 2019, les données ouvertes donnent le budget par programme (brut), pas par ligne budgétaire ; le détail complet est sur le portail Budget ouvert du ministère des Finances.",
     "source": "Source",
     "sourceName": "Données budgétaires ouvertes du ministère des Finances (data.gov.il)",
     "outlookTitle": "Prochains budgets et actualités",
@@ -744,7 +746,7 @@
   "lobbyists": {
     "title": "Lobbyistes",
     "subtitle": "Qui fait du lobbying à la Knesset, pour quel cabinet et pour le compte de quels clients.",
-    "explainer": "Un lobbyiste est une personne rémunérée pour défendre les intérêts de clients — entreprises, organisations ou groupes — auprès des députés et des commissions. La loi oblige les lobbyistes à s’inscrire à la Knesset et à déclarer leurs clients. La liste ci-dessous s’appuie sur le registre officiel des lobbyistes de la Knesset.",
+    "explainer": "Un lobbyiste est une personne rémunérée pour défendre les intérêts de clients — entreprises, organisations ou groupes — auprès des députés et des commissions. Selon la loi sur la Knesset, un lobbyiste ne peut agir à la Knesset qu’avec l’autorisation d’une commission présidée par le président de la Knesset, et doit nommer les clients qu’il représente. La liste ci-dessous s’appuie sur le registre officiel des lobbyistes de la Knesset.",
     "statLobbyists": "Lobbyistes inscrits",
     "statFirms": "Cabinets de lobbying",
     "statClients": "Clients",

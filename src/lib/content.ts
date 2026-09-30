@@ -207,6 +207,7 @@ const partyProfileSchema = z.object({
   leaderHe: z.string().optional(),
   leaderEn: z.string().optional(),
   founded: z.number().optional(),
+  foundedSource: sourceRef.optional(), // shown under the year
   website: httpUrl.optional(),
   wikipediaEn: httpUrl.optional(),
   tags: z.array(z.string()).optional(),
@@ -469,6 +470,7 @@ const glossaryTermSchema = z.object({
   term: localizedText,
   def: localizedText,
   sourceUrl: httpUrl, // every term cites a trusted source — Wikipedia is an index, never the source
+  moreSources: z.array(httpUrl).optional(), // for a clause the first source doesn't cover
 });
 export type GlossaryTerm = z.infer<typeof glossaryTermSchema>;
 

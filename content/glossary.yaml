@@ -14,6 +14,8 @@ terms:
       es: El lado de la política que pone el acento en la igualdad social, un papel activo del Estado en la economía y los derechos individuales — en Israel, por lo general también en la apertura a un compromiso territorial.
       fr: Le camp politique qui met l’accent sur l’égalité sociale, un rôle actif de l’État dans l’économie et les droits individuels — en Israël, généralement aussi l’ouverture à un compromis territorial.
     sourceUrl: "https://www.britannica.com/topic/left"
+    # The Israel clause: the left–right axis here runs mainly on security and the territories (IDI).
+    moreSources: ["https://www.idi.org.il/articles/8921"]
   - category: spectrum
     term: { he: "מרכז", en: "Center", ar: "الوسط", ru: "Центр", es: Centro, fr: Centre }
     def:
@@ -34,6 +36,7 @@ terms:
       es: El lado de la política que pone el acento en el libre mercado, la tradición y la identidad nacional — en Israel, por lo general también en una postura de seguridad firme.
       fr: Le camp politique qui met l’accent sur le marché libre, la tradition et l’identité nationale — en Israël, généralement aussi une position sécuritaire ferme.
     sourceUrl: "https://www.britannica.com/topic/right"
+    moreSources: ["https://www.idi.org.il/articles/8921"]
   - category: spectrum
     term: { he: "מרכז־שמאל / מרכז־ימין", en: "Center-left / Center-right", ar: "يسار الوسط / يمين الوسط", ru: "Левоцентристы / правоцентристы", es: Centroizquierda / Centroderecha, fr: Centre gauche / Centre droit }
     def:
@@ -47,13 +50,14 @@ terms:
   - category: spectrum
     term: { he: "ימין קיצוני", en: "Far-right", ar: "اليمين المتطرف", ru: "Ультраправые", es: Extrema derecha, fr: Extrême droite }
     def:
-      he: "עמדות לאומיות נוקשות מאוד, לעיתים עם יחס שלילי למיעוטים או למוסדות. \"קיצוני\" מציין מרחק רב מהמרכז, לא בהכרח אלימות."
-      en: "Very hardline nationalist positions, sometimes hostile to minorities or institutions. \"Far\" means far from the center — not necessarily violent."
-      ar: "مواقف قومية متشددة جدًا، وأحيانًا مع موقف عدائي من الأقليات أو من المؤسسات. «متطرف» يعني بعيدًا جدًا عن الوسط، وليس بالضرورة عنيفًا."
-      ru: "Очень жёсткие националистические позиции, иногда с враждебным отношением к меньшинствам или институтам. «Ультра» означает большую удалённость от центра, а не обязательно насилие."
-      es: Posiciones nacionalistas muy duras, a veces hostiles a las minorías o a las instituciones. «Extrema» indica lejanía del centro — no necesariamente violencia.
-      fr: Des positions nationalistes très dures, parfois hostiles aux minorités ou aux institutions. « Extrême » signifie loin du centre — pas nécessairement violent.
-    sourceUrl: "https://www.idi.org.il/articles/4580"
+      he: "קבוצות ועמדות פוליטיות בקצה הימני של המפה, שדעותיהן קיצוניות מאוד. \"קיצוני\" מציין מרחק רב מהמרכז, לא בהכרח אלימות."
+      en: "Political groups and views at the right-hand end of the spectrum whose opinions are very extreme. \"Far\" means far from the center — not necessarily violent."
+      ar: "مجموعات ومواقف سياسية في الطرف اليميني من الخريطة، آراؤها متطرفة جدًا. «متطرف» يعني بعيدًا جدًا عن الوسط، وليس بالضرورة عنيفًا."
+      ru: "Политические группы и взгляды на правом краю спектра, чьи мнения очень радикальны. «Ультра» означает большую удалённость от центра, а не обязательно насилие."
+      es: Grupos y posiciones políticas en el extremo derecho del espectro, con opiniones muy radicales. «Extrema» indica lejanía del centro — no necesariamente violencia.
+      fr: Des groupes et des positions politiques à l’extrémité droite de l’échiquier, aux opinions très radicales. « Extrême » signifie loin du centre — pas nécessairement violent.
+    # A definition, not an opinion piece: the dictionary's "far left/right".
+    sourceUrl: "https://dictionary.cambridge.org/dictionary/english/far-left-right"
 
   # ---------- ideology ----------
   - category: ideology

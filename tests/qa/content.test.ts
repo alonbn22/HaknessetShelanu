@@ -30,7 +30,11 @@ test("glossary includes the Norwegian Law term", () => {
 });
 
 test("every glossary term cites a source that is not Wikipedia", () => {
-  for (const t of getGlossary()) assert.ok(!/wikipedia\.org/.test(t.sourceUrl), `${t.term.en}: Wikipedia is an index, not a source`);
+  for (const t of getGlossary()) {
+    for (const url of [t.sourceUrl, ...(t.moreSources ?? [])]) {
+      assert.ok(!/wikipedia\.org/.test(url), `${t.term.en}: Wikipedia is an index, not a source`);
+    }
+  }
 });
 
 // Editorial text that falls back to another language: `dir` is set only when

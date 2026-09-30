@@ -258,6 +258,8 @@ export default async function HomePage() {
               <p className="mt-2 text-xs text-muted">{figuresSource}</p>
             </div>
           ))}
+          {/* How participation is counted — and that not voting isn't absence. */}
+          <p className="text-xs text-muted md:col-span-2">{t("attendance.note")}</p>
         </section>
       )}
 

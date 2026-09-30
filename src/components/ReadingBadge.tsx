@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { localizedAttrs } from "@/lib/text";
 import { useTranslations } from "next-intl";
 import { voteKind, isReading, type VoteKind } from "@/lib/votes-meta";
@@ -43,11 +44,14 @@ export function VoteMeaning({
   forDesc,
   titleHe,
   option,
+  source,
 }: {
   forDesc: string | null;
   titleHe?: string | null;
   // The official option text in the page's language (the translation cache).
   option: { text: string; rtl: boolean; lang?: string };
+  // The explanation's source line (the page renders it: SourceLinks is server-only).
+  source?: ReactNode;
 }) {
   const t = useTranslations("reading");
   const kind = voteKind(forDesc, titleHe);
@@ -63,6 +67,7 @@ export function VoteMeaning({
         </span>
       </div>
       {kind !== "other" && <p className="text-sm">{t(`explain_${kind}`)}</p>}
+      {kind !== "other" && source}
       {option.text && (
         <p className="text-xs text-muted" {...localizedAttrs(option)}>
           {option.text}

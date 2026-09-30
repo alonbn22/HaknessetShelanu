@@ -427,6 +427,21 @@ export function isServingMember(positions: PositionRow[]): boolean {
   );
 }
 
+// The Norwegian-Law pattern: a seat in the current Knesset ended while the
+// person held a ministry. The records don't say why a seat ended, so without
+// this a minister appointed from outside the Knesset would be labelled as
+// having vacated a seat. (ISO strings of one format compare in date order.)
+export function vacatedSeatAsMinister(positions: PositionRow[]): boolean {
+  const seatEnds = positions
+    .filter((p) => p.knessetNum === CURRENT_KNESSET && MK_POSITION_IDS.includes(p.positionId) && p.finishDate)
+    .map((p) => p.finishDate!);
+  return seatEnds.some((end) =>
+    positions.some(
+      (m) => m.govMinistryNameHe != null && (m.startDate ?? "") <= end && (!m.finishDate || m.finishDate >= end),
+    ),
+  );
+}
+
 // ---------- vote stats ----------
 
 export type MkStats = typeof schema.mkVoteStats.$inferSelect;

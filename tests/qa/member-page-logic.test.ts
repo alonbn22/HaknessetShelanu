@@ -2,6 +2,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import {
   isServingMember,
+  vacatedSeatAsMinister,
   getMemberQuestionStats,
   getMemberRecentAgendas,
   getMemberRebellions,
@@ -73,6 +74,27 @@ test("a non-current position in the current Knesset does not count as serving", 
     isServingMember([pos({ knessetNum: CURRENT_KNESSET, isCurrent: false })]),
     false,
   );
+});
+
+// "Vacated the seat under the Norwegian Law" is shown only when the seat ended
+// while the person held a ministry — a later portfolio included (Eli Cohen left
+// the seat as foreign minister and now holds another ministry).
+test("Norwegian-Law label needs the seat to end during a ministry", () => {
+  const seatEnded = pos({ positionId: POSITION_MK_MALE, finishDate: "2023-02-15T00:00:00+02:00" });
+  const minister = (startDate: string, finishDate: string | null) =>
+    pos({ positionId: 39, govMinistryNameHe: "משרד", startDate, finishDate, isCurrent: finishDate == null });
+  assert.equal(vacatedSeatAsMinister([seatEnded, minister("2022-12-29T00:00:00+02:00", null)]), true);
+  assert.equal(
+    vacatedSeatAsMinister([
+      seatEnded,
+      minister("2022-12-29T00:00:00+02:00", "2024-01-01T00:00:00+02:00"),
+      minister("2024-01-01T00:00:00+02:00", null),
+    ]),
+    true,
+  );
+  // Appointed after leaving the Knesset, or never held a seat this Knesset.
+  assert.equal(vacatedSeatAsMinister([seatEnded, minister("2024-01-01T00:00:00+02:00", null)]), false);
+  assert.equal(vacatedSeatAsMinister([minister("2024-01-01T00:00:00+02:00", null)]), false);
 });
 
 // --- localizeMemberRecord ---

@@ -3,6 +3,8 @@ import { getTranslations, getLocale } from "next-intl/server";
 import { formatNumber } from "@/lib/format";
 import { Link } from "@/i18n/navigation";
 import { Pagination } from "@/components/Pagination";
+import { SourceLinks } from "@/components/SourceLinks";
+import { KNESSET_LEXICON } from "@/lib/votes-meta";
 import { LobbyistSearch } from "./LobbyistSearch";
 import { getLobbyistStats, getLobbyistsPage, hebrewSearchTerms, type LobbyistSort } from "@/lib/queries";
 import { getForeignAid, partyText } from "@/lib/content";
@@ -11,12 +13,21 @@ import { pageParam, queryParam } from "@/lib/params";
 
 export const dynamic = "force-dynamic";
 
+// The Knesset Law's lobbyist rules (permit, named clients), per the Knesset's
+// Lexicon, read on 28 Sep 2026.
+const LOBBYIST_LAW = {
+  url: "https://main.knesset.gov.il/About/Lexicon/Pages/lobbyist.aspx",
+  title: "Lobbyists in the Knesset (Knesset Law, amendment 25, 2008)",
+  publisher: KNESSET_LEXICON,
+};
+
 export default async function LobbyistsPage({
   searchParams,
 }: {
   searchParams: Promise<{ q?: string; page?: string; sort?: string }>;
 }) {
   const t = await getTranslations("lobbyists");
+  const tc = await getTranslations("common");
   const locale = await getLocale();
   const params = await searchParams;
   const page = pageParam(params.page);
@@ -64,6 +75,10 @@ export default async function LobbyistsPage({
       {/* What lobbyists are / what they do. */}
       <div className="rounded-xl border border-accent/20 bg-accent/5 p-4 text-sm leading-relaxed space-y-2">
         <p>{t("explainer")}</p>
+        {/* The Knesset Lexicon's page on the law's lobbyist rules. */}
+        <p>
+          <SourceLinks label={tc("source")} sources={[LOBBYIST_LAW]} />
+        </p>
         <p className="text-muted">{t("whatForNote")}</p>
       </div>
 

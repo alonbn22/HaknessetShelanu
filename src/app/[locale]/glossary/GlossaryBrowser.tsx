@@ -12,7 +12,7 @@ type Item = {
   term: string;
   termHe: string; // anchor key — stable across locales
   def: string;
-  source: string;
+  sources: string[];
 };
 
 // Anchor id for a term; search results deep-link with /glossary#g-<termHe>.
@@ -101,9 +101,15 @@ export function GlossaryBrowser({ items }: { items: Item[] }) {
               </dt>
               <dd className="mt-1.5 leading-relaxed text-foreground/90">{it.def}</dd>
               <dd className="mt-1.5 text-xs text-muted">
-                <a className="underline hover:text-accent" href={it.source} target="_blank" rel="noopener noreferrer">
-                  {t("source")}
-                </a>
+                {/* One source reads "Source"; several read "Source 1 · 2". */}
+                {it.sources.map((url, n) => (
+                  <span key={url}>
+                    {n > 0 && " · "}
+                    <a className="underline hover:text-accent" href={url} target="_blank" rel="noopener noreferrer">
+                      {n === 0 ? t("source") + (it.sources.length > 1 ? " 1" : "") : n + 1}
+                    </a>
+                  </span>
+                ))}
               </dd>
             </div>
           ))}

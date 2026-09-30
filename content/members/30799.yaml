@@ -19,6 +19,12 @@ claims:
         of the New Hope party (later National Right), led by Gideon Sa'ar.
     date: "2024-07-05"
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-positions/1088
+        title: "מישל בוסקילה — תפקידים בכנסת (אתר הכנסת)"
+        publisher: Knesset
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/1088
+        title: "מישל בוסקילה — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Michel_Buskila
         title: Michel Buskila
         publisher: Wikipedia
@@ -34,13 +40,20 @@ claims:
       he: חבר מועצת העיר אשקלון ומשנה לראש העיר
       en: Ashkelon city council member and deputy mayor
     description:
-      he: בטרם כניסתו לכנסת כיהן בוסקילה כחבר מועצת העיר אשקלון החל ממאי 2009 וכמשנה
-        לראש העיר אשקלון. הוא עמד בראש סניף הליכוד באשקלון.
-      en: Before entering the Knesset, Buskila served as a member of the Ashkelon city
-        council from May 2009 and as deputy mayor of Ashkelon. He led the Likud
-        branch in Ashkelon.
-    date: "2009-05-01"
+      he: "בטרם כניסתו לכנסת כיהן בוסקילה בשנים 2008–2022 כחבר מועצת העיר אשקלון וכיושב ראש סיעת הליכוד במועצה, ושימש משנה לראש העיר אשקלון."
+      en: "Before entering the Knesset, Buskila was a member of the Ashkelon city council from 2008 to 2022, heading the Likud faction on the council, and served as senior deputy mayor of Ashkelon."
+      ar: "قبل دخوله الكنيست كان بوسكيلا بين عامَي 2008 و2022 عضوًا في مجلس بلدية أشكلون ورئيسًا لكتلة الليكود في المجلس، وشغل منصب النائب الأول لرئيس بلدية أشكلون."
+      ru: "До избрания в Кнессет Бускила в 2008–2022 годах был членом городского совета Ашкелона и возглавлял фракцию Ликуда в совете, а также был первым заместителем мэра Ашкелона."
+      es: "Antes de entrar en la Knéset, Buskila fue concejal de Ashkelon de 2008 a 2022, al frente de la facción del Likud en el concejo, y teniente de alcalde primero de Ashkelon."
+      fr: "Avant d’entrer à la Knesset, Buskila a été conseiller municipal d’Ashkelon de 2008 à 2022, à la tête du groupe du Likoud au conseil, et premier adjoint au maire d’Ashkelon."
+    date: "2008"
     sources:
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/1088"
+        title: "מישל בוסקילה — פרטים אישיים (אתר הכנסת)"
+        publisher: "Knesset"
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-public-activity-publications/1088"
+        title: "מישל בוסקילה — פעילות ציבורית (אתר הכנסת)"
+        publisher: "Knesset"
       - url: https://en.wikipedia.org/wiki/Michel_Buskila
         title: Michel Buskila
         publisher: Wikipedia

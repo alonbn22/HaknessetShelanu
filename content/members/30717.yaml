@@ -31,17 +31,20 @@ claims:
       en: Military commendation for combat conduct and recognition as a disabled IDF
         veteran
     description:
-      he: סופר שירת כקצין בחטיבת הצנחנים (גדוד חרוב). בשנת 1996, במהלך מהומות מנהרת
-        הכותל, חילץ פצועים מקבר יוסף בשכם ונפצע קשה, והוכר כנכה צה"ל. על פועלו
-        ואומץ הלב שהפגין באירוע זכה בצל"ש אלוף.
-      en: Sofer served as an officer in the IDF Paratroopers Brigade (Harov
-        Battalion). In 1996, during the Western Wall Tunnel riots, he helped
-        evacuate casualties from Joseph's Tomb in Nablus and was severely
-        wounded, and was recognized as a disabled IDF veteran. For his conduct
-        and courage during the event he received a divisional-level (Aluf)
-        commendation.
+      he: "סופר התנדב לצנחנים והשלים קורס קציני חי״ר. בשנת 1996, כקצין בגדוד חרוב, חילץ פצועים מקבר יוסף בשכם במהלך מהומות מנהרת הכותל ונפצע קשה, ולימים הוכר כנכה צה״ל. על פועלו ואומץ הלב שהפגין באירוע זכה בצל״ש אלוף."
+      en: "Sofer volunteered for the Paratroopers and completed the infantry officers' course. In 1996, as an officer in the Haruv Battalion, he rescued wounded people from Joseph's Tomb in Nablus during the Western Wall Tunnel riots and was severely wounded; he was later recognized as a disabled IDF veteran. For his conduct and courage in the event he received a commendation from the head of the regional command (tzalash aluf)."
+      ar: "تطوّع سوفير في لواء المظليين وأنهى دورة ضباط المشاة. وفي عام 1996، حين كان ضابطًا في كتيبة «حاروف»، أنقذ جرحى من قبر يوسف في نابلس خلال أحداث نفق الحائط الغربي وأُصيب بجروح بالغة، واعتُرف به لاحقًا معاقًا من الجيش الإسرائيلي. وعلى عمله وشجاعته في الحادثة نال تنويهًا من قائد المنطقة العسكرية."
+      ru: "Софер добровольно пошёл в десантные войска и окончил курс пехотных офицеров. В 1996 году, будучи офицером батальона «Харув», он во время беспорядков из-за туннеля у Стены Плача вывозил раненых из гробницы Иосифа в Шхеме и был тяжело ранен; позднее он был признан инвалидом ЦАХАЛа. За свои действия и мужество он получил благодарность командующего округом."
+      es: "Sofer se presentó voluntario a los paracaidistas y completó el curso de oficiales de infantería. En 1996, como oficial del batallón Haruv, rescató heridos de la Tumba de José en Nablus durante los disturbios del túnel del Muro Occidental y resultó gravemente herido; más tarde fue reconocido como veterano discapacitado del ejército israelí. Por su actuación y su valor recibió una mención del jefe del mando regional."
+      fr: "Sofer s’est porté volontaire chez les parachutistes et a terminé le cours d’officiers d’infanterie. En 1996, officier du bataillon Haruv, il a évacué des blessés du tombeau de Joseph à Naplouse pendant les émeutes du tunnel du mur Occidental et a été grièvement blessé ; il a ensuite été reconnu invalide de Tsahal. Pour sa conduite et son courage, il a reçu une citation du commandant de région."
     date: "1996-09-25"
     sources:
+      - url: https://www.israelhayom.co.il/news/defense/article/15275010
+        title: "בנו של השר אופיר סופר נפצע בעזה - בפעם השנייה בתוך חודש"
+        publisher: Israel Hayom
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/977
+        title: "אופיר סופר — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
       - url: https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%A4%D7%99%D7%A8_%D7%A1%D7%95%D7%A4%D7%A8
         title: אופיר סופר
         publisher: Wikipedia (Hebrew)
@@ -60,6 +63,12 @@ claims:
         secretary-general of the Tkuma party.
     date: "2019-04-09"
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/977
+        title: "אופיר סופר — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-positions/977
+        title: "אופיר סופר — תפקידים בכנסת (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Ofir_Sofer
         title: Ofir Sofer
         publisher: Wikipedia

@@ -19,6 +19,15 @@ claims:
         city.
     date: "2008"
     sources:
+      - url: https://www.ynet.co.il/articles/0,7340,L-3625657,00.html
+        title: "יעקב אשר מבטיח: \"לא אבקש 100 ימי חסד\""
+        publisher: Ynet
+      - url: https://www.israelhayom.co.il/news/article/21359352
+        title: "מהאופוזיציה הפנימית לכס היו\"ר: האיש שינהיג את יהדות התורה"
+        publisher: Israel Hayom
+      - url: https://www.walla.co.il/news/politics/3867145
+        title: "אחרי 38 שנות גפני: מחליפו מסמן עידן חדש בדגל התורה I פרופיל"
+        publisher: Walla
       - url: https://en.wikipedia.org/wiki/Ya'akov_Asher
         title: Ya'akov Asher
         publisher: Wikipedia
@@ -35,6 +44,12 @@ claims:
         including the 25th Knesset.
     date: "2013"
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-positions/861
+        title: יעקב אשר — תפקידים בכנסת (אתר הכנסת)
+        publisher: Knesset
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/861
+        title: יעקב אשר — פרטים אישיים (אתר הכנסת)
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Ya'akov_Asher
         title: Ya'akov Asher
         publisher: Wikipedia

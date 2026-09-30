@@ -28,18 +28,27 @@ claims:
   - kind: positive
     category: volunteering
     title:
-      he: מייסדת ומנכ"לית ארגון "נשים נגד אלימות"
-      en: Founder and director of Women Against Violence
+      he: "ייסדה את ארגון ״נשים נגד אלימות״ ועמדה בראשו"
+      en: "Founded and headed Women Against Violence"
+      ar: "أسّست جمعية «نساء ضد العنف» وترأّستها"
+      ru: "Основала и возглавляла организацию «Женщины против насилия»"
+      es: "Fundó y dirigió Mujeres contra la Violencia"
+      fr: "A fondé et dirigé Femmes contre la violence"
     description:
-      he: בשנת 1992 ייסדה עאידה תומא-סלימאן את הארגון הפמיניסטי הערבי "נשים נגד
-        אלימות", הפועל למאבק באלימות נגד נשים בחברה הערבית בישראל, ושימשה
-        מנכ"לית הארגון מאז הקמתו.
-      en: In 1992 Aida Touma-Sliman founded the Arab feminist organization Women
-        Against Violence, which works against violence toward women in Arab
-        society in Israel, and has served as its director-general since its
-        founding.
+      he: "בשנת 1992 ייסדה עאידה תומא-סלימאן את הארגון הפמיניסטי הערבי ״נשים נגד אלימות״, הפועל למאבק באלימות נגד נשים בחברה הערבית בישראל, ועמדה בראשו יותר משני עשורים."
+      en: "In 1992 Aida Touma-Sliman founded the Arab feminist organization Women Against Violence, which works against violence toward women in Arab society in Israel, and headed it for more than two decades."
+      ar: "في عام 1992 أسّست عايدة توما-سليمان الجمعية النسوية العربية «نساء ضد العنف»، التي تعمل على مكافحة العنف ضد النساء في المجتمع العربي في إسرائيل، وترأّستها أكثر من عقدين."
+      ru: "В 1992 году Аида Тума-Сулейман основала арабскую феминистскую организацию «Женщины против насилия», которая борется с насилием в отношении женщин в арабском обществе Израиля, и руководила ею более двух десятилетий."
+      es: "En 1992 Aida Touma-Sliman fundó la organización feminista árabe Mujeres contra la Violencia, que lucha contra la violencia hacia las mujeres en la sociedad árabe de Israel, y la dirigió durante más de dos décadas."
+      fr: "En 1992, Aida Touma-Sliman a fondé l’organisation féministe arabe Femmes contre la violence, qui lutte contre la violence faite aux femmes dans la société arabe d’Israël, et l’a dirigée pendant plus de deux décennies."
     date: "1992"
     sources:
+      - url: https://elections.walla.co.il/item/2826855
+        title: "תכירו: האשה הראשונה של הרשימה המשותפת"
+        publisher: Walla
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/948
+        title: עאידה תומא סלימאן — פרטים אישיים (אתר הכנסת)
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Aida_Touma-Sliman
         title: Aida Touma-Sliman
         publisher: Wikipedia

@@ -59,19 +59,26 @@ claims:
   - kind: positive
     category: volunteering
     title:
-      he: רב קהילה ושליח חינוכי, ופעיל בקליטת עולים מצרפת
-      en: Community rabbi, educational emissary, and worker for the integration of
-        French immigrants
+      he: "רב קהילה בטולוז ומנהל מיזמים לעולים מצרפת"
+      en: "Community rabbi in Toulouse and manager of projects for immigrants from France"
+      ar: "حاخام جالية في تولوز ومدير مشاريع للمهاجرين من فرنسا"
+      ru: "Общинный раввин в Тулузе и руководитель проектов для репатриантов из Франции"
+      es: "Rabino comunitario en Toulouse y gestor de proyectos para inmigrantes de Francia"
+      fr: "Rabbin communautaire à Toulouse et responsable de projets pour les immigrants de France"
     description:
-      he: טייב כיהן כרב קהילה ויצא לשליחות חינוכית מטעם הסוכנות היהודית ומשרד החינוך
-        בעיר טולוז שבצרפת. בין השנים 2008–2020 ניהל בישראל מיזמים לקליטת עולים
-        מצרפת בעמותת "שלבים" של קרן וולפסון.
-      en: Taieb served as a community rabbi and as an educational emissary on behalf
-        of the Jewish Agency and the Education Ministry in Toulouse, France.
-        Between 2008 and 2020 he managed projects for the integration of French
-        immigrants in Israel through the Wolfson Foundation's Shalavim
-        organization.
+      he: "טייב כיהן כרב קהילה בטולוז שבצרפת בשנים 2006–2008. בשנים 2009–2020 היה מנהל פרויקטים בקרן וולפסון, וניהל בישראל, דרך עמותת ״שלבים״, מיזמים לקידום החינוכי של עולי צרפת."
+      en: "Taieb served as a community rabbi in Toulouse, France, from 2006 to 2008. From 2009 to 2020 he was a project manager at the Wolfson Foundation, running projects in Israel, through the Shalavim organization, that promote education for immigrants from France."
+      ar: "شغل طيب منصب حاخام جالية في تولوز بفرنسا بين عامَي 2006 و2008. وبين 2009 و2020 كان مدير مشاريع في صندوق وولفسون، وأدار في إسرائيل، عبر جمعية «شلافيم»، مشاريع للنهوض التربوي بالمهاجرين من فرنسا."
+      ru: "В 2006–2008 годах Таиб был общинным раввином в Тулузе (Франция). В 2009–2020 годах он руководил проектами в Фонде Вольфсона и через организацию «Шлавим» вёл в Израиле проекты по продвижению образования репатриантов из Франции."
+      es: "Taieb fue rabino comunitario en Toulouse (Francia) de 2006 a 2008. De 2009 a 2020 fue gestor de proyectos en la Fundación Wolfson y dirigió en Israel, a través de la organización Shalavim, proyectos para promover la educación de los inmigrantes de Francia."
+      fr: "Taieb a été rabbin communautaire à Toulouse, en France, de 2006 à 2008. De 2009 à 2020, il a été chef de projet à la Fondation Wolfson et a dirigé en Israël, par l’intermédiaire de l’association Shalavim, des projets de promotion éducative des immigrants de France."
     sources:
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-public-activity-publications/1043"
+        title: "יוסף טייב — פעילות ציבורית (אתר הכנסת)"
+        publisher: "Knesset"
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/1043"
+        title: "יוסף טייב — פרטים אישיים (אתר הכנסת)"
+        publisher: "Knesset"
       - url: https://en.wikipedia.org/wiki/Yosef_Taieb
         title: Yosef Taieb
         publisher: Wikipedia

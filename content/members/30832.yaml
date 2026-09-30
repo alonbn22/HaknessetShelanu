@@ -59,6 +59,12 @@ claims:
         for the Rights of the Child in the 25th Knesset, until he was replaced
         by MK Keti Shitrit in August 2025.
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-positions/1111
+        title: "אליהו רביבו — תפקידים בכנסת (אתר הכנסת)"
+        publisher: Knesset
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=CommitteeID%20eq%204209%20and%20PositionID%20eq%2041"
+        title: "יושבי ראש הוועדה המיוחדת לזכויות הילד (המידע הפתוח של הכנסת)"
+        publisher: Knesset OData
       - url: https://en.wikipedia.org/wiki/Eliyahu_Revivo
         title: Eliyahu Revivo
         publisher: English Wikipedia

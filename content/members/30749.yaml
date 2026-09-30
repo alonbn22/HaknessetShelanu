@@ -20,6 +20,12 @@ claims:
         the court ordered a re-run, held on 11 March 2014, which he again won.
     date: 2008-11-11
     sources:
+      - url: https://www.betshemesh.muni.il/100002/
+        title: "ראשי העיר לדורותיהם (עיריית בית שמש)"
+        publisher: Beit Shemesh Municipality
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-public-activity-publications/1029
+        title: "משה אבוטבול — פעילות ציבורית (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Moshe_Abutbul_(politician)
         title: Moshe Abutbul (politician)
         publisher: English Wikipedia
@@ -39,6 +45,12 @@ claims:
         lobby for the preservation of the Sabbath.
     date: 2019-10-03
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-positions/1029
+        title: "משה אבוטבול — תפקידים בכנסת (אתר הכנסת)"
+        publisher: Knesset
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030749"
+        title: "משה אבוטבול — תפקידים בכנסת ובממשלה (המידע הפתוח של הכנסת)"
+        publisher: Knesset OData
       - url: https://en.wikipedia.org/wiki/Moshe_Abutbul_(politician)
         title: Moshe Abutbul (politician)
         publisher: English Wikipedia

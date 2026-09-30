@@ -18,6 +18,12 @@ claims:
         until losing the 2007 mayoral election.
     date: "2001"
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-public-activity-publications/1001
+        title: "יצחק פינדרוס — פעילות ציבורית (אתר הכנסת)"
+        publisher: Knesset
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/1001
+        title: "יצחק פינדרוס — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Yitzhak_Pindrus
         title: Yitzhak Pindrus
         publisher: Wikipedia
@@ -34,6 +40,12 @@ claims:
         2016 he served as acting mayor of Jerusalem.
     date: "2008"
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-public-activity-publications/1001
+        title: "יצחק פינדרוס — פעילות ציבורית (אתר הכנסת)"
+        publisher: Knesset
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/1001
+        title: "יצחק פינדרוס — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Yitzhak_Pindrus
         title: Yitzhak Pindrus
         publisher: Wikipedia

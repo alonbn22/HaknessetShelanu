@@ -17,6 +17,12 @@ claims:
         and corruption.
     date: "2008"
     sources:
+      - url: https://www.davar1.co.il/695470/
+        title: "יואב סגלוביץ' מצטרף לרע\"ם ויוצב במקום השני ברשימה: \"לשבור את הפרדיגמה\""
+        publisher: Davar
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/995
+        title: "יואב סגלוביץ' — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Yoav_Segalovich
         title: Yoav Segalovitz - Wikipedia
         publisher: Wikipedia
@@ -32,10 +38,16 @@ claims:
       he: סגלוביץ' שירת כראש אגף החקירות והמודיעין במשטרת ישראל, אחד התפקידים הבכירים
         במשטרה, עד לפרישתו מהשירות בשנת 2013.
       en: Segalovich served as commander of the Investigations and Intelligence
-        Division of the Israel Police, one of the force's most senior posts,
-        until his retirement from the police in 2013.
+        Division of the Israel Police, one of the force's senior posts, until
+        his retirement from the police in 2013.
     date: "2013"
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/995
+        title: "יואב סגלוביץ' — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
+      - url: https://www.davar1.co.il/695470/
+        title: "יואב סגלוביץ' מצטרף לרע\"ם ויוצב במקום השני ברשימה: \"לשבור את הפרדיגמה\""
+        publisher: Davar
       - url: https://en.wikipedia.org/wiki/Yoav_Segalovich
         title: Yoav Segalovitz - Wikipedia
         publisher: Wikipedia

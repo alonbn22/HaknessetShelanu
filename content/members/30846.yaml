@@ -19,6 +19,15 @@ claims:
         Knesset on 15 November 2022.
     date: "2022-11-15"
     sources:
+      - url: https://www.timesofisrael.com/the-aggressive-grievance-politics-of-utjs-novice-chief-yitzhak-goldknopf/
+        title: The aggressive grievance politics of UTJ's novice chief Yitzhak Goldknopf
+        publisher: The Times of Israel
+      - url: https://www.timesofisrael.com/hasidic-faction-picks-replacement-for-litzman-to-serve-in-knesset/
+        title: Hasidic faction picks replacement for Litzman to serve in Knesset
+        publisher: The Times of Israel
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-positions/1099
+        title: "יצחק גולדקנופ — תפקידים בכנסת (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Yitzhak_Goldknopf
         title: Yitzhak Goldknopf
         publisher: Wikipedia
@@ -50,15 +59,26 @@ claims:
   - kind: positive
     category: achievement
     title:
-      he: מנכ"ל רשת גני הילדים בית יעקב ובית פתחיה
-      en: CEO of the Beit Yaakov and Beit Petahia early-education network
+      he: "ניהל את רשת גני הילדים בית יעקב וייסד את רשת פתחיה"
+      en: "Ran the Beit Yaakov kindergarten network and founded the Petachya network"
+      ar: "أدار شبكة رياض الأطفال «بيت يعقوب» وأسّس شبكة «بتاحيا»"
+      ru: "Руководил сетью детских садов «Бейт-Яаков» и основал сеть «Птахия»"
+      es: "Dirigió la red de jardines de infancia Beit Yaakov y fundó la red Petachya"
+      fr: "A dirigé le réseau de jardins d’enfants Beit Yaakov et fondé le réseau Petachya"
     description:
-      he: לפני כניסתו לפוליטיקה הארצית שימש גולדקנופ כמנכ"ל רשת גני הילדים והמעונות
-        בית יעקב ובית פתחיה, מוסדות חינוך לגיל הרך שירש מאביו.
-      en: Before entering national politics, Goldknopf was CEO of the Beit Yaakov and
-        Beit Petahia network of kindergartens and daycare centers,
-        early-childhood education institutions he inherited from his father.
+      he: "לפני כניסתו לפוליטיקה הארצית הצטרף גולדקנופ בראשית שנות ה-80 לאביו בניהול רשת גני הילדים והמעונות בית יעקב, ולאחר מות אביו ב-1988 עמד בראש הרשת. בשנת 1990 ייסד את מוסדות פתחיה, רשת לחינוך מיוחד."
+      en: "Before entering national politics, Goldknopf joined his father in the early 1980s in managing the Beit Yaakov network of kindergartens and daycare centers, and took it over after his father's death in 1988. In 1990 he founded the Petachya special-education network."
+      ar: "قبل دخوله السياسة القطرية انضمّ غولدكنوبف في مطلع الثمانينيات إلى والده في إدارة شبكة رياض الأطفال ودور الحضانة «بيت يعقوب»، وتولّى إدارتها بعد وفاة والده عام 1988. وفي عام 1990 أسّس مؤسسات «بتاحيا»، وهي شبكة للتعليم الخاص."
+      ru: "До прихода в общенациональную политику Гольдкнопф в начале 1980-х годов вместе с отцом руководил сетью детских садов и яслей «Бейт-Яаков», а после смерти отца в 1988 году возглавил её. В 1990 году он основал сеть специального образования «Птахия»."
+      es: "Antes de entrar en la política nacional, Goldknopf se unió a su padre a principios de los años ochenta en la gestión de la red de jardines de infancia y guarderías Beit Yaakov, y la asumió tras la muerte de su padre en 1988. En 1990 fundó la red de educación especial Petachya."
+      fr: "Avant d’entrer en politique nationale, Goldknopf a rejoint son père au début des années 1980 à la tête du réseau de jardins d’enfants et de crèches Beit Yaakov, qu’il a repris après la mort de son père en 1988. En 1990, il a fondé le réseau d’éducation spécialisée Petachya."
     sources:
+      - url: "https://www.timesofisrael.com/the-aggressive-grievance-politics-of-utjs-novice-chief-yitzhak-goldknopf/"
+        title: "The aggressive grievance politics of UTJ's novice chief Yitzhak Goldknopf"
+        publisher: "The Times of Israel"
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/1099"
+        title: "יצחק גולדקנופ — פרטים אישיים (אתר הכנסת)"
+        publisher: "Knesset"
       - url: https://en.wikipedia.org/wiki/Yitzhak_Goldknopf
         title: Yitzhak Goldknopf
         publisher: Wikipedia

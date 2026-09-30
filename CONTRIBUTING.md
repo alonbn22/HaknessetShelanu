@@ -25,8 +25,9 @@ live in plain text files (YAML and JSON).
   record, the Central Elections Committee, the text of a law or a ruling, a
   ministry, a party's own platform or site, or the news outlet's own article.
 - Wikipedia, poll trackers and other aggregators are good for *finding* a source.
-  Cite the source they point to, not them. (Some older member records still cite
-  Wikipedia; replacing those with the primary source is welcome work.)
+  Cite the source they point to, not them. A claim in a member record needs at
+  least one source beyond Wikipedia or Wikidata; a test enforces it, and lists the
+  two older claims that still wait for one.
 - Every source is an `https` link with a title. The tests check this.
 - Open every source yourself and check the exact figure or words, including when
   an AI tool found it for you.

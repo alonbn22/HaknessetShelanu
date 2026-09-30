@@ -47,17 +47,17 @@ claims:
       he: יזם הייטק ומשקיע מוקדם בצ'ק פוינט
       en: Tech entrepreneur and early investor in Check Point
     description:
-      he: לפני כניסתו לפוליטיקה היה ברקת יזם הייטק. ב-1988 הקים את חברת התוכנה BRM,
-        שהתמחתה בתוכנות אנטי-וירוס ולימים הפכה לחברת השקעות שהשקיעה בחברות כמו
-        צ'ק פוינט. על פי דירוג פורבס 2013 הוא נמנה עם הפוליטיקאים העשירים
-        בישראל.
-      en: Before entering politics, Barkat was a high-tech entrepreneur. In 1988 he
-        founded the software company BRM, which specialized in antivirus
-        software and later became a venture investment firm that invested in
-        companies such as Check Point. According to a 2013 Forbes ranking he was
-        among Israel's wealthiest politicians.
+      he: "לפני כניסתו לפוליטיקה היה ברקת יזם הייטק. בסוף שנות ה-80 הקים עם שותפים את חברת התוכנה BRM, שפיתחה תוכנת אנטי-וירוס ולימים הפכה לחברת השקעות. ב-1993 השקיעה BRM בחברת צ'ק פוינט בשלב הקמתה."
+      en: "Before entering politics, Barkat was a high-tech entrepreneur. In the late 1980s he and partners set up the software company BRM, which developed antivirus software and later became an investment firm. In 1993 BRM invested in Check Point as the company was being founded."
+      ar: "قبل دخوله السياسة كان بركات رائد أعمال في مجال التكنولوجيا المتقدمة. في أواخر ثمانينيات القرن الماضي أسس مع شركاء شركة البرمجيات BRM التي طورت برنامجًا لمكافحة الفيروسات ثم تحولت لاحقًا إلى شركة استثمار. وفي عام 1993 استثمرت BRM في شركة تشيك بوينت في مرحلة تأسيسها."
+      ru: "До прихода в политику Баркат был предпринимателем в сфере высоких технологий. В конце 1980-х годов он вместе с партнёрами основал софтверную компанию BRM, которая разработала антивирусную программу, а позднее стала инвестиционной компанией. В 1993 году BRM вложила средства в компанию Check Point на этапе её создания."
+      es: "Antes de entrar en política, Barkat fue emprendedor de alta tecnología. A finales de la década de 1980 fundó con socios la empresa de software BRM, que desarrolló un programa antivirus y más tarde se convirtió en una firma de inversión. En 1993 BRM invirtió en Check Point cuando la empresa se estaba fundando."
+      fr: "Avant d'entrer en politique, Barkat était entrepreneur dans la haute technologie. À la fin des années 1980, il a fondé avec des associés la société de logiciels BRM, qui a développé un antivirus avant de devenir une société d'investissement. En 1993, BRM a investi dans Check Point au moment de la création de l'entreprise."
     date: "1988-01-01"
     sources:
+      - url: https://en.globes.co.il/en/article-364076
+        title: Looking-out for Another Check Point
+        publisher: Globes
       - url: https://en.wikipedia.org/wiki/Nir_Barkat
         title: Nir Barkat
         publisher: Wikipedia

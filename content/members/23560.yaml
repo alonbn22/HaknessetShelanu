@@ -25,6 +25,12 @@ claims:
         Knesset terms.
     date: 2016-06-01
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/956
+        title: "יוליה מלינובסקי — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-positions/956
+        title: "יוליה מלינובסקי — תפקידים בכנסת (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Yulia_Malinovsky
         title: Yulia Malinovsky
         publisher: Wikipedia
@@ -44,6 +50,12 @@ claims:
         office.
     date: 2003-01-01
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/956
+        title: "יוליה מלינובסקי — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-public-activity-publications/956
+        title: "יוליה מלינובסקי — פעילות ציבורית (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Yulia_Malinovsky
         title: Yulia Malinovsky
         publisher: Wikipedia

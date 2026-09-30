@@ -37,14 +37,17 @@ claims:
       he: מועמד מוביל לראשות עיריית ירושלים בבחירות 2008
       en: Leading candidate for Mayor of Jerusalem in 2008
     description:
-      he: בבחירות לראשות עיריית ירושלים בנובמבר 2008 היה פרוש אחד משני המועמדים
-        המובילים. הוא הפסיד לניר ברקת, כאשר ברקת זכה בכ-55% מהקולות לעומת כ-44%
-        לפרוש.
-      en: In the November 2008 Jerusalem mayoral election, Porush was one of the two
-        front-runners. He lost to Nir Barkat, who won roughly 55% of the vote
-        compared with about 44% for Porush.
+      he: "בבחירות לראשות עיריית ירושלים בנובמבר 2008 היה פרוש אחד משני המועמדים המובילים, והפסיד לניר ברקת."
+      en: "In the November 2008 Jerusalem mayoral election, Porush was one of the two front-runners; he lost to Nir Barkat."
+      ar: "في انتخابات رئاسة بلدية القدس في تشرين الثاني/نوفمبر 2008 كان بوروش أحد المرشحَين الأوفر حظًا، وخسر أمام نير بركات."
+      ru: "На выборах мэра Иерусалима в ноябре 2008 года Поруш был одним из двух ведущих кандидатов; он проиграл Ниру Баркату."
+      es: "En las elecciones a la alcaldía de Jerusalén de noviembre de 2008, Porush fue uno de los dos candidatos principales; perdió frente a Nir Barkat."
+      fr: "Lors de l’élection municipale de Jérusalem de novembre 2008, Porush était l’un des deux principaux candidats ; il a perdu face à Nir Barkat."
     date: 2008-11-11
     sources:
+      - url: "https://www.ynetnews.com/articles/0,7340,L-3621698,00.html"
+        title: "Barkat celebrates victory in Jerusalem"
+        publisher: "Ynetnews"
       - url: https://en.wikipedia.org/wiki/Meir_Porush
         title: Meir Porush
         publisher: Wikipedia

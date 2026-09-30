@@ -68,6 +68,15 @@ claims:
         the most veteran figures in Israeli Haredi politics.
     date: "1988-11-21"
     sources:
+      - url: https://www.ynet.co.il/economy/article/rygltx88ge
+        title: "אין שקל שלא עבר דרכו: הח\"כ הוותיק ביותר עוזב (כרגע) את תפקיד חייו"
+        publisher: Ynet
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/35
+        title: "משה גפני — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%20526"
+        title: "משה גפני — תפקידים בכנסת ובממשלה (המידע הפתוח של הכנסת)"
+        publisher: Knesset OData
       - url: https://en.wikipedia.org/wiki/Moshe_Gafni
         title: Moshe Gafni
         publisher: Wikipedia

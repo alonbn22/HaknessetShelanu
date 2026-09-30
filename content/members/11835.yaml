@@ -30,6 +30,9 @@ claims:
       en: "Uri Maklev served as Deputy Minister of Transport and Road Safety in the thirty-fifth government of Israel, from 25 May 2020 to 13 June 2021, on behalf of United Torah Judaism."
     date: "2020-05-25"
     sources:
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2011835"
+        title: אורי מקלב — תפקידים בכנסת ובממשלה (המידע הפתוח של הכנסת)
+        publisher: Knesset OData
       - url: https://en.wikipedia.org/wiki/Ministry_of_Transport_and_Road_Safety
         title: Ministry of Transport and Road Safety
         publisher: Wikipedia
@@ -45,6 +48,12 @@ claims:
       he: "לפני כניסתו לכנסת, אורי מקלב כיהן כחבר מועצת עיריית ירושלים וכסגן ראש העיר בין השנים 1993 ל-2008, ובין היתר היה אחראי על תיק החינוך. הוא נכנס לכנסת ב-31 ביולי 2008 מטעם דגל התורה במסגרת הסכם רוטציה."
       en: "Before entering the Knesset, Uri Maklev served on the Jerusalem City Council and as a Deputy Mayor of Jerusalem from 1993 to 2008, holding responsibilities including the education portfolio. He entered the Knesset on 31 July 2008 for Degel HaTorah under a rotation agreement."
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/814
+        title: אורי מקלב — פרטים אישיים (אתר הכנסת)
+        publisher: Knesset
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-positions/814
+        title: אורי מקלב — תפקידים בכנסת (אתר הכנסת)
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Uri_Maklev
         title: Uri Maklev
         publisher: Wikipedia

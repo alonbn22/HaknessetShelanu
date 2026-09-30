@@ -20,12 +20,26 @@ claims:
   - kind: positive
     category: achievement
     title:
-      he: שירות צבאי בחיל האוויר
-      en: Military service in the Air Force
+      he: "שירות צבאי כמפקד צוות חילוץ מטוסים"
+      en: "Military service as commander of an aircraft rescue team"
+      ar: "الخدمة العسكرية قائدًا لفريق إنقاذ طائرات"
+      ru: "Военная служба командиром команды авиаспасателей"
+      es: "Servicio militar como jefe de un equipo de rescate de aeronaves"
+      fr: "Service militaire comme chef d’une équipe de secours aux aéronefs"
     description:
-      he: במהלך שירותו הצבאי בצה"ל פיקד ואטורי על צוות חילוץ מטוסים בחיל האוויר הישראלי.
-      en: During his national service in the Israel Defense Forces, Vaturi commanded an Israeli Air Force aircraft recovery team.
+      he: "ואטורי שירת בצה״ל כמפקד צוות חילוץ מטוסים, ולפי אתר הכנסת השתחרר בפברואר 1991 בדרגת רב-סמל ראשון."
+      en: "Vaturi served in the IDF as commander of an aircraft rescue team; according to the Knesset website he was discharged in February 1991 with the rank of first sergeant (rav samal rishon)."
+      ar: "خدم فاتوري في الجيش الإسرائيلي قائدًا لفريق إنقاذ طائرات، ووفقًا لموقع الكنيست سُرّح في شباط/فبراير 1991 برتبة رقيب أول (راف سمال ريشون)."
+      ru: "Ватури служил в ЦАХАЛе командиром команды авиаспасателей; по данным сайта Кнессета, он демобилизовался в феврале 1991 года в звании рав-самаль ришон (первый сержант)."
+      es: "Vaturi sirvió en el ejército israelí como jefe de un equipo de rescate de aeronaves; según el sitio de la Knéset, se licenció en febrero de 1991 con el grado de sargento primero (rav samal rishon)."
+      fr: "Vaturi a servi dans l’armée israélienne comme chef d’une équipe de secours aux aéronefs ; selon le site de la Knesset, il a été démobilisé en février 1991 avec le grade de sergent-chef (rav samal rishon)."
     sources:
+      - url: "https://www.mako.co.il/pzm-soldiers/Article-c66b9a8f47bc381026.htm"
+        title: "בחירות 2022: איפה המועמדים שירתו בצבא?"
+        publisher: "N12"
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/1045"
+        title: "ניסים ואטורי — פרטים אישיים (אתר הכנסת)"
+        publisher: "Knesset"
       - url: https://en.wikipedia.org/wiki/Nissim_Vaturi
         title: Nissim Vaturi
         publisher: Wikipedia

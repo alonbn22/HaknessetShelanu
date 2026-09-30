@@ -10,15 +10,23 @@ claims:
       he: חבר כנסת ותיק מטעם ישראל ביתנו
       en: Veteran Knesset member for Yisrael Beiteinu
     description:
-      he: חמד עמאר, פוליטיקאי דרוזי יליד שפרעם (1964), משמש חבר הכנסת מטעם מפלגת ישראל
-        ביתנו החל משנת 2009, לאחר שירות בצה"ל בשנים 1982-1986. הוא כיהן בכנסות
-        ה-18 עד ה-20 וממשיך לכהן מאז.
-      en: Hamad Amar, a Druze politician born in Shfaram (1964), has served as a
-        Knesset member for the Yisrael Beiteinu party since 2009, following IDF
-        service from 1982 to 1986. He served in the 18th through 20th Knessets
-        and has continued to serve since.
+      he: "חמד עמאר, פוליטיקאי דרוזי יליד שפרעם (1964), שירת בצה״ל בשנים 1982–1986. הוא נבחר לראשונה לכנסת מטעם ישראל ביתנו בשנת 2009, וכיהן בכנסות ה-18 עד ה-20 וה-22 עד ה-25; בשנים 2021–2022 כיהן כשר במשרד האוצר."
+      en: "Hamad Amar, a Druze politician born in Shfaram (1964), served in the IDF from 1982 to 1986. He was first elected to the Knesset for Yisrael Beiteinu in 2009 and served in the 18th–20th and 22nd–25th Knessets; in 2021–2022 he was a minister in the Finance Ministry."
+      ar: "حمد عمار، سياسي درزي من مواليد شفاعمرو (1964)، خدم في الجيش الإسرائيلي بين عامَي 1982 و1986. انتُخب لأول مرة إلى الكنيست عن حزب إسرائيل بيتنا عام 2009، وكان عضوًا في الكنيست من الدورة الـ18 إلى الـ20 ومن الـ22 إلى الـ25؛ وفي 2021–2022 شغل منصب وزير في وزارة المالية."
+      ru: "Хамад Амар, друзский политик, уроженец Шфарама (1964), служил в ЦАХАЛе в 1982–1986 годах. Впервые избран в Кнессет от партии «Наш дом Израиль» в 2009 году; был депутатом Кнессета 18–20-го и 22–25-го созывов; в 2021–2022 годах был министром в Министерстве финансов."
+      es: "Hamad Amar, político druso nacido en Shfaram (1964), sirvió en el ejército israelí de 1982 a 1986. Fue elegido por primera vez a la Knéset por Yisrael Beiteinu en 2009 y fue diputado en las legislaturas 18.ª a 20.ª y 22.ª a 25.ª; en 2021–2022 fue ministro en el Ministerio de Finanzas."
+      fr: "Hamad Amar, homme politique druze né à Shfaram (1964), a servi dans l’armée israélienne de 1982 à 1986. Élu pour la première fois à la Knesset pour Israël Beiteinou en 2009, il a siégé dans les 18e à 20e et 22e à 25e Knesset ; en 2021-2022, il a été ministre au ministère des Finances."
     date: 2009-02-24
     sources:
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-positions/837"
+        title: "חמד עמאר — תפקידים בכנסת (אתר הכנסת)"
+        publisher: "Knesset"
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2012938"
+        title: "חמד עמאר — תפקידים בכנסת ובממשלה (המידע הפתוח של הכנסת)"
+        publisher: "Knesset OData"
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/837"
+        title: "חמד עמאר — פרטים אישיים (אתר הכנסת)"
+        publisher: "Knesset"
       - url: https://en.wikipedia.org/wiki/Hamad_Amar
         title: Hamad Amar
         publisher: Wikipedia (English)

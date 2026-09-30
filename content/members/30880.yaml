@@ -45,6 +45,9 @@ claims:
       en: Boaron enlisted in the Israel Defense Forces and served three years as a
         combat soldier in the Golani Brigade.
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/1126
+        title: "אביחי אברהם בוארון — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Avihai_Boaron
         title: Avihai Boaron
         publisher: Wikipedia
@@ -63,6 +66,9 @@ claims:
         Israel Bar examinations, and opened an independent law firm in
         Jerusalem.
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/1126
+        title: "אביחי אברהם בוארון — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
       - url: https://he.wikipedia.org/wiki/%D7%90%D7%91%D7%99%D7%97%D7%99_%D7%91%D7%95%D7%90%D7%A8%D7%95%D7%9F
         title: אביחי בוארון
         publisher: Wikipedia (Hebrew)

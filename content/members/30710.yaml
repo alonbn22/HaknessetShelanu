@@ -12,6 +12,9 @@ claims:
       he: "אריאל קלנר שירת בצה\"ל כחובש קרבי בחטיבת גולני במהלך שירותו הצבאי."
       en: "Ariel Kallner served in the Israel Defense Forces as a combat medic in the Golani Brigade during his national service."
     sources:
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/987"
+        title: "אריאל קלנר — פרטים אישיים (אתר הכנסת)"
+        publisher: "Knesset"
       - url: "https://en.wikipedia.org/wiki/Ariel_Kallner"
         title: "Ariel Kallner"
         publisher: "Wikipedia"
@@ -27,6 +30,9 @@ claims:
       he: "קלנר למד בטכניון - מכון טכנולוגי לישראל, והשלים תואר שני במנהל עסקים (MBA) באוניברסיטת חיפה."
       en: "Kallner studied at the Technion - Israel Institute of Technology and earned an MBA from the University of Haifa."
     sources:
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/987"
+        title: "אריאל קלנר — פרטים אישיים (אתר הכנסת)"
+        publisher: "Knesset"
       - url: "https://en.wikipedia.org/wiki/Ariel_Kallner"
         title: "Ariel Kallner"
         publisher: "Wikipedia"
@@ -36,13 +42,24 @@ claims:
   - kind: positive
     category: achievement
     title:
-      he: "ייסד את ארגון 'חזון לאומי' וכיהן כיו\"ר תנועת הנוער של הליכוד"
-      en: "Founded Hazon Leumi and chaired the Likud Youth Movement"
+      he: "ייסד את 'חזון לאומי' וכיהן כיו״ר נשיאות ועידת צעירי הליכוד"
+      en: "Founded Hazon Leumi and chaired the Likud Young Guard conference presidium"
+      ar: "أسّس «حزون لئومي» وترأّس هيئة رئاسة مؤتمر شبيبة الليكود"
+      ru: "Основал «Хазон леуми» и возглавлял президиум конференции молодёжи Ликуда"
+      es: "Fundó Hazon Leumi y presidió la mesa de la conferencia de los jóvenes del Likud"
+      fr: "A fondé Hazon Leumi et présidé le bureau de la conférence des jeunes du Likoud"
     description:
-      he: "בשנת 2004 נבחר קלנר ליו\"ר תנועת הנוער של הליכוד, ובשנת 2013 ייסד את 'חזון לאומי - המרכז להנהגה ציונית', ארגון שמטרתו עיצוב הנהגת הדור הבא ברוח יהודית-ציונית-לאומית."
-      en: "Kallner was elected chair of the Likud Youth Movement in 2004 and in 2013 founded Hazon Leumi - The Center for Zionist Leadership, an organization aimed at shaping the next generation of leadership in a Jewish-Zionist-national spirit."
+      he: "בשנת 2013 ייסד קלנר את 'חזון לאומי – המרכז למנהיגות ציונית', ארגון שמטרתו עיצוב הנהגת הדור הבא ברוח יהודית-ציונית-לאומית, ועמד בראשו עד היבחרו לכנסת. בשנת 2014 נבחר ליושב-ראש נשיאות ועידת צעירי הליכוד ולחברות במזכירות התנועה."
+      en: "In 2013 Kallner founded Hazon Leumi – The Center for Zionist Leadership, an organization aimed at shaping the next generation of leadership in a Jewish-Zionist-national spirit, and headed it until his election to the Knesset. In 2014 he was elected chair of the presidium of the Likud Young Guard conference and a member of the party's secretariat."
+      ar: "في عام 2013 أسّس كالنر «حزون لئومي – المركز للقيادة الصهيونية»، وهي منظمة تهدف إلى إعداد قيادة الجيل القادم بروح يهودية صهيونية قومية، وترأّسها حتى انتخابه للكنيست. وفي عام 2014 انتُخب رئيسًا لهيئة رئاسة مؤتمر شبيبة الليكود وعضوًا في سكرتارية الحزب."
+      ru: "В 2013 году Кальнер основал «Хазон леуми — Центр сионистского лидерства», организацию, цель которой — формировать руководство следующего поколения в еврейско-сионистско-национальном духе, и возглавлял её до избрания в Кнессет. В 2014 году он был избран председателем президиума конференции молодёжи Ликуда и членом секретариата партии."
+      es: "En 2013 Kallner fundó Hazon Leumi – Centro para el Liderazgo Sionista, una organización destinada a formar el liderazgo de la próxima generación con un espíritu judío, sionista y nacional, y la dirigió hasta su elección a la Knéset. En 2014 fue elegido presidente de la mesa de la conferencia de los jóvenes del Likud y miembro de la secretaría del partido."
+      fr: "En 2013, Kallner a fondé Hazon Leumi – Centre pour le leadership sioniste, une organisation visant à former la direction de la prochaine génération dans un esprit juif, sioniste et national, qu’il a dirigée jusqu’à son élection à la Knesset. En 2014, il a été élu président du bureau de la conférence des jeunes du Likoud et membre du secrétariat du parti."
     date: "2013-01-01"
     sources:
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/987"
+        title: "אריאל קלנר — פרטים אישיים (אתר הכנסת)"
+        publisher: "Knesset"
       - url: "https://en.wikipedia.org/wiki/Ariel_Kallner"
         title: "Ariel Kallner"
         publisher: "Wikipedia"

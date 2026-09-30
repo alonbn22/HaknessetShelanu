@@ -19,6 +19,12 @@ claims:
         city as a teacher and school principal.
     date: "2003"
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-public-activity-publications/874
+        title: "מאיר כהן — פעילות ציבורית (אתר הכנסת)"
+        publisher: Knesset
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/874
+        title: "מאיר כהן — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Meir_Cohen_(politician)
         title: Meir Cohen (politician)
         publisher: Wikipedia
@@ -38,6 +44,12 @@ claims:
         2021 to 2022."
     date: "2013"
     sources:
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2023597"
+        title: "מאיר כהן — תפקידים בכנסת ובממשלה (המידע הפתוח של הכנסת)"
+        publisher: Knesset OData
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-positions/874
+        title: "מאיר כהן — תפקידים בכנסת (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Meir_Cohen_(politician)
         title: Meir Cohen (politician)
         publisher: Wikipedia
@@ -58,6 +70,12 @@ claims:
         War.
     date: "1973"
     sources:
+      - url: https://www.mako.co.il/pzm-magazine/Article-a60c75dd546cb41006.htm
+        title: "בחירות 2015: מה עשו המתמודדים לכנסת בצבא?"
+        publisher: Mako
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/874
+        title: "מאיר כהן — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Meir_Cohen_(politician)
         title: Meir Cohen (politician)
         publisher: Wikipedia

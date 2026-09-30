@@ -18,8 +18,14 @@ claims:
         'Norwegian Law.' He had previously served as director-general of the
         Otzma Yehudit party and as an aide to the head of the Samaria Regional
         Council.
-    date: 2023-02-08
+    date: "2023-02-07"
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-positions/1121
+        title: "צבי ידידיה סוכות — תפקידים בכנסת (אתר הכנסת)"
+        publisher: Knesset
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-public-activity-publications/1121
+        title: "צבי ידידיה סוכות — פעילות ציבורית (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Zvi_Sukkot
         title: Zvi Sukkot
         publisher: Wikipedia

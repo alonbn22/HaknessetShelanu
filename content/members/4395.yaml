@@ -40,6 +40,12 @@ claims:
         433 was established.
     date: 2006-05-04
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/771
+        title: אבי דיכטר — פרטים אישיים (אתר הכנסת)
+        publisher: Knesset
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%204395"
+        title: אבי דיכטר — תפקידים בכנסת ובממשלה (המידע הפתוח של הכנסת)
+        publisher: Knesset OData
       - url: https://en.wikipedia.org/wiki/Avi_Dichter
         title: Avi Dichter
         publisher: Wikipedia

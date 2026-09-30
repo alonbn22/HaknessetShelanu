@@ -17,6 +17,12 @@ claims:
         has since served as an MK and as chairman of the Shas faction.
     date: "2018-03-14"
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-positions/970
+        title: ינון אזולאי — תפקידים בכנסת (אתר הכנסת)
+        publisher: Knesset
+      - url: https://www.timesofisrael.com/shas-minister-resigns-from-knesset-will-be-replaced-by-son/
+        title: Shas minister resigns from Knesset, will be replaced by son
+        publisher: The Times of Israel
       - url: https://en.wikipedia.org/wiki/Yinon_Azulai
         title: Yinon Azulai
         publisher: Wikipedia
@@ -24,17 +30,28 @@ claims:
         title: ינון אזולאי
         publisher: Wikipedia (Hebrew)
   - kind: positive
-    category: volunteering
+    category: achievement
     title:
-      he: חובש ויועץ בכיר לשר אריה דרעי
-      en: Paramedic and senior advisor to Minister Aryeh Deri
+      he: "עוזר לשר אריה דרעי"
+      en: "Aide to Minister Aryeh Deri"
+      ar: "مساعد للوزير أرييه درعي"
+      ru: "Помощник министра Арье Дери"
+      es: "Asistente del ministro Aryeh Deri"
+      fr: "Assistant du ministre Aryeh Deri"
     description:
-      he: לצד פעילותו הציבורית, אזולאי הוא חובש ושימש כראש סניף איחוד הצלה לכיש. בנוסף
-        שימש כיועץ בכיר לשר אריה דרעי בשנים 2015-2017.
-      en: Alongside his public activity, Azulai is a paramedic and previously headed
-        the United Hatzalah (Ichud Hatzala) Lachish branch. He also served as a
-        senior advisor to Minister Aryeh Deri from 2015 to 2017.
+      he: "לפני כניסתו לכנסת במרץ 2018, במקומו של אביו דוד אזולאי, היה ינון אזולאי עוזרו של השר אריה דרעי."
+      en: "Before entering the Knesset in March 2018 in place of his father, David Azoulay, Yinon Azoulay was an aide to Minister Aryeh Deri."
+      ar: "قبل دخوله الكنيست في آذار/مارس 2018 بدلًا من والده دافيد أزولاي، كان ينون أزولاي مساعدًا للوزير أرييه درعي."
+      ru: "До прихода в Кнессет в марте 2018 года вместо своего отца Давида Азулая Инон Азулай был помощником министра Арье Дери."
+      es: "Antes de entrar en la Knéset en marzo de 2018 en sustitución de su padre, David Azulay, Yinon Azulay fue asistente del ministro Aryeh Deri."
+      fr: "Avant d’entrer à la Knesset en mars 2018 à la place de son père, David Azoulay, Yinon Azoulay était l’assistant du ministre Aryeh Deri."
     sources:
+      - url: "https://www.israelhayom.co.il/article/603647"
+        title: "השר אזולאי הובא למנוחות: \"איש נוח לכולם\""
+        publisher: "Israel Hayom"
+      - url: "https://www.timesofisrael.com/shas-minister-resigns-from-knesset-will-be-replaced-by-son/"
+        title: "Shas minister resigns from Knesset, will be replaced by son"
+        publisher: "The Times of Israel"
       - url: https://he.wikipedia.org/wiki/%D7%99%D7%A0%D7%95%D7%9F_%D7%90%D7%96%D7%95%D7%9C%D7%90%D7%99
         title: ינון אזולאי
         publisher: Wikipedia (Hebrew)

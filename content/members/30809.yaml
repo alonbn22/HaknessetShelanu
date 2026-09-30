@@ -12,8 +12,11 @@ claims:
     description:
       he: "לפני כניסתה לפוליטיקה הייתה גלית דיסטל אטבריאן סופרת ופובליציסטית. ספרה הראשון, \"ואם היו אומרים לך\" (2009), זכה לתמיכת מועצת הפיס לתרבות ולאמנות, וספרה השני, \"טווס בחדר מדרגות\" (2014), נכלל ברשימה הקצרה של המועמדים לפרס ספיר לספרות."
       en: "Before entering politics, Galit Distel Atbaryan was a novelist and columnist. Her first novel, \"And If They Told You\" (2009), was supported by the Pais Council for Culture and the Arts, and her second, \"Peacock in the Stairwell\" (2014), was shortlisted for the Sapir Prize for literature."
-    date: "2015"
+    date: "2014"
     sources:
+      - url: "https://www.ynet.co.il/articles/0,7340,L-4602981,00.html"
+        title: "לאה איני ואגור שיף מועמדים לפרס ספיר"
+        publisher: "Ynet"
       - url: "https://en.wikipedia.org/wiki/Galit_Distel-Atbaryan"
         title: "Galit Distel-Atbaryan"
         publisher: "Wikipedia"

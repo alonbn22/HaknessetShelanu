@@ -34,6 +34,12 @@ claims:
         2022.
     date: "2021-06-28"
     sources:
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030694"
+        title: "אלון שוסטר — תפקידים בכנסת ובממשלה (המידע הפתוח של הכנסת)"
+        publisher: Knesset OData
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/982
+        title: "אלון שוסטר — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Alon_Schuster
         title: Alon Schuster
         publisher: Wikipedia
@@ -51,6 +57,12 @@ claims:
       en: Before entering national politics, Schuster headed the Sha'ar HaNegev
         Regional Council for some 16 years, from 2002 to 2018.
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-public-activity-publications/982
+        title: "אלון שוסטר — פעילות ציבורית (אתר הכנסת)"
+        publisher: Knesset
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/982
+        title: "אלון שוסטר — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Alon_Schuster
         title: Alon Schuster
         publisher: Wikipedia

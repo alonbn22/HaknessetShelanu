@@ -19,6 +19,12 @@ claims:
         the Blue and White list) without being elected.
     date: 2022-11-15
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/1112
+        title: "נאור שירי — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-positions/1112
+        title: "נאור שירי — תפקידים בכנסת (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Naor_Shiri
         title: Naor Shiri
         publisher: Wikipedia
@@ -39,6 +45,12 @@ claims:
         Alumah company, which deals with education and culture. He performed his
         military service in the Israeli Navy.
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/1112
+        title: "נאור שירי — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-public-activity-publications/1112
+        title: "נאור שירי — פעילות ציבורית (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Naor_Shiri
         title: Naor Shiri
         publisher: Wikipedia

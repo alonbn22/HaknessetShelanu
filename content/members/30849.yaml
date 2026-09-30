@@ -19,6 +19,12 @@ claims:
         members.
     date: "2022-11-01"
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-positions/1108
+        title: "לימור סון הר מלך — תפקידים בכנסת (אתר הכנסת)"
+        publisher: Knesset
+      - url: https://www.ynetnews.com/article/hkmweqzumg
+        title: Women make up half of Israel, but their political representation is heading backward
+        publisher: Ynetnews
       - url: https://en.wikipedia.org/wiki/Limor_Son_Har-Melech
         title: Limor Son Har-Melech
         publisher: Wikipedia

@@ -14,6 +14,12 @@ claims:
       en: Miki Zohar, a member of the Likud party, was appointed Minister of Culture and Sport in Israel's 37th government on 29 December 2022, and continues in the post in the caretaker government following the dissolution of the 25th Knesset. He previously served as a Likud member of the Knesset from 2015, including roles as Deputy Speaker of the Knesset and coalition whip.
     date: "2022-12-29"
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-positions/922
+        title: "מכלוף מיקי זוהר — תפקידים בכנסת (אתר הכנסת)"
+        publisher: Knesset
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030058"
+        title: "מכלוף מיקי זוהר — תפקידים בכנסת ובממשלה (המידע הפתוח של הכנסת)"
+        publisher: Knesset OData
       - url: https://en.wikipedia.org/wiki/Miki_Zohar
         title: Miki Zohar
         publisher: Wikipedia
@@ -23,10 +29,23 @@ claims:
       he: יזם את חוק יום העלייה
       en: Initiated the Yom HaAliyah (Aliyah Day) law
     description:
-      he: כחבר כנסת, זוהר היה בין יוזמי החוק שקבע את יום העלייה כחג לאומי בלוח השנה הישראלי. הכנסת אישרה את החוק ב-21 ביוני 2016, וזוהי דוגמה לחקיקה שזכתה לתמיכה חוצת מפלגות מהקואליציה והאופוזיציה.
-      en: As a member of the Knesset, Zohar was among the initiators of the law adding Yom HaAliyah (Aliyah Day) as a national holiday to the Israeli calendar. The Knesset approved the law on 21 June 2016, in a cross-party effort supported by both coalition and opposition members.
+      he: "כחבר כנסת, זוהר היה בין יוזמי החוק שקבע את יום העלייה כיום ציון שנתי. הכנסת אישרה את החוק ב-21 ביוני 2016, וזוהי דוגמה לחקיקה שזכתה לתמיכה חוצת מפלגות מהקואליציה והאופוזיציה."
+      en: "As a member of the Knesset, Zohar was among the initiators of the law establishing Yom HaAliyah (Aliyah Day) as an annual day of observance. The Knesset approved the law on 21 June 2016, in a cross-party effort supported by both coalition and opposition members."
+      ar: "بصفته عضوًا في الكنيست، كان زوهار من بين المبادرين إلى القانون الذي حدّد «يوم الهجرة» (يوم هعلياه) يومَ إحياءٍ سنويًا. وأقرّ الكنيست القانون في 21 حزيران/يونيو 2016، في جهد عابر للأحزاب حظي بدعم أعضاء من الائتلاف والمعارضة."
+      ru: "Будучи депутатом Кнессета, Зоар был одним из инициаторов закона, установившего День алии (Йом ха-алия) ежегодным памятным днём. Кнессет принял закон 21 июня 2016 года; это была межпартийная инициатива, которую поддержали депутаты и от коалиции, и от оппозиции."
+      es: "Como diputado, Zohar estuvo entre los impulsores de la ley que estableció el Día de la Aliá (Yom HaAliyah) como jornada anual de conmemoración. La Knéset aprobó la ley el 21 de junio de 2016, en un esfuerzo multipartidista respaldado por diputados de la coalición y de la oposición."
+      fr: "En tant que député, Zohar a été l’un des initiateurs de la loi faisant du Jour de l’Alyah (Yom HaAliyah) une journée annuelle de commémoration. La Knesset a adopté la loi le 21 juin 2016, dans une démarche transpartisane soutenue par des députés de la coalition comme de l’opposition."
     date: "2016-06-21"
     sources:
+      - url: "https://www.nevo.co.il/law_html/law01/501_423.htm"
+        title: "חוק יום העלייה, התשע\"ו-2016"
+        publisher: "Nevo"
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Bill(566817)"
+        title: "חוק יום העלייה, התשע\"ו-2016 — הצעת חוק פ/1738 (המידע הפתוח של הכנסת)"
+        publisher: Knesset OData
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_BillInitiator?$filter=BillID%20eq%20566817"
+        title: "חוק יום העלייה, התשע\"ו-2016 — יוזמי הצעת החוק (המידע הפתוח של הכנסת)"
+        publisher: Knesset OData
       - url: https://en.wikipedia.org/wiki/Miki_Zohar
         title: Miki Zohar
         publisher: Wikipedia
@@ -42,6 +61,9 @@ claims:
       he: זוהר שירת בצבא ההגנה לישראל והשתחרר בדרגת סמל.
       en: Zohar served in the Israel Defense Forces, reaching the rank of sergeant.
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/922
+        title: "מכלוף מיקי זוהר — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Miki_Zohar
         title: Miki Zohar
         publisher: Wikipedia

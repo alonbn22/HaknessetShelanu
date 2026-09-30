@@ -10,14 +10,20 @@ claims:
       he: ראש עיריית הכרמל (2003–2008)
       en: Mayor of Carmel City (2003–2008)
     description:
-      he: אכרם חסון כיהן כראש העיר הראשון של עיר הכרמל בין השנים 2003 ל-2008, וכיהן גם
-        כחבר ועדת התכנון והבנייה של מחוז חיפה. קודם לכן שימש סגן ראש העיר דאלית
-        אל-כרמל.
-      en: Akram Hasson served as the first mayor of Carmel City from 2003 to 2008, and
-        was also a member of the Haifa District Planning and Building Committee.
-        He had earlier served as deputy mayor of Daliyat al-Karmel.
+      he: "אכרם חסון כיהן כראש עיריית עיר הכרמל בין השנים 2003 ל-2008, וכיהן גם כחבר ועדת התכנון והבנייה של מחוז חיפה. קודם לכן, בשנים 1989–1998, שימש ממלא מקום ראש מועצת דאלית אל-כרמל."
+      en: "Akram Hasson served as mayor of Carmel City from 2003 to 2008, and was also a member of the Haifa District Planning and Building Committee. He had earlier served as deputy head of the Daliyat al-Karmel local council (1989–1998)."
+      ar: "شغل أكرم حسون منصب رئيس بلدية مدينة الكرمل بين عامي 2003 و2008، وكان أيضًا عضوًا في اللجنة اللوائية للتنظيم والبناء في لواء حيفا. وقبل ذلك، بين عامي 1989 و1998، شغل منصب نائب رئيس المجلس المحلي في دالية الكرمل."
+      ru: "Акрам Хасон был мэром города Кармель (Ир-ха-Кармель) с 2003 по 2008 год, а также входил в окружную комиссию по планированию и строительству Хайфского округа. Ранее, в 1989–1998 годах, он был заместителем главы местного совета Далият-эль-Кармель."
+      es: "Akram Hasson fue alcalde de Carmel City (Ir HaCarmel) de 2003 a 2008 y fue también miembro de la Comisión de Planificación y Construcción del Distrito de Haifa. Anteriormente, entre 1989 y 1998, fue jefe adjunto del consejo local de Daliyat al-Karmel."
+      fr: "Akram Hasson a été maire de Carmel City (Ir HaCarmel) de 2003 à 2008 et a également siégé à la commission de planification et de construction du district de Haïfa. Auparavant, de 1989 à 1998, il avait été chef adjoint du conseil local de Daliyat al-Karmel."
     date: "2003"
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/854
+        title: "אכרם חסון — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-public-activity-publications/854
+        title: "אכרם חסון — פעילות ציבורית (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Akram_Hasson
         title: Akram Hasson
         publisher: Wikipedia (English)
@@ -38,6 +44,12 @@ claims:
         later he left to join the new Kulanu list for the elections.
     date: 2015-01-27
     sources:
+      - url: https://www.jpost.com/middle-east/article-863468
+        title: "MK Akram Hasson on Sharaa: ‘How can you accept a killer’ as president?"
+        publisher: The Jerusalem Post
+      - url: https://www.timesofisrael.com/liveblog_entry/giden-saar-resigns-from-knesset-under-norwegian-law-akram-hasson-to-take-his-place/
+        title: "Giden Sa'ar resigns from Knesset under Norwegian Law, Akram Hasson to take his place"
+        publisher: The Times of Israel
       - url: https://en.wikipedia.org/wiki/2015_Kadima_leadership_election
         title: 2015 Kadima leadership election
         publisher: Wikipedia (English)
@@ -59,6 +71,9 @@ claims:
         language.
     date: 2012-12
     sources:
+      - url: https://web.archive.org/web/20250124071453/https://www.jpost.com/national-news/druse-mk-wins-prize-for-helping-preserve-hebrew
+        title: Druse MK wins prize for helping preserve Hebrew
+        publisher: The Jerusalem Post
       - url: https://en.wikipedia.org/wiki/Akram_Hasson
         title: Akram Hasson
         publisher: Wikipedia (English)

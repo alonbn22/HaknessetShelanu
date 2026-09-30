@@ -24,6 +24,26 @@ test("there are curated member records", () => {
   assert.ok(ids.length >= 2, "expected several member records");
 });
 
+// Wikipedia and Wikidata are indexes, not sources: a claim about a person
+// needs at least one source beyond them. These two predate the rule and have
+// no other source yet (searched 28-30 Sep 2026); the list may only shrink.
+const WIKI = /^https:\/\/([a-z]+\.)?(m\.)?(wikipedia|wikidata)\.org\//;
+const WIKI_ONLY_KNOWN = new Set([
+  "30711:Military service in the 7th Armored Brigade",
+  "30876:Military service and public background",
+]);
+
+test("no member claim rests on Wikipedia alone, beyond the known few", () => {
+  const found = new Set<string>();
+  for (const id of ids) {
+    for (const c of getMemberRecord(id)!.claims) {
+      if (c.sources.every((s) => WIKI.test(s.url))) found.add(`${id}:${c.title.en ?? c.title.he}`);
+    }
+  }
+  assert.deepEqual([...found].filter((k) => !WIKI_ONLY_KNOWN.has(k)), [], "cite a source beyond Wikipedia");
+  assert.deepEqual([...WIKI_ONLY_KNOWN].filter((k) => !found.has(k)), [], "now sourced: drop it from the list");
+});
+
 for (const id of ids) {
   test(`member ${id}: every claim is sourced and well-formed`, () => {
     const rec = getMemberRecord(id);
@@ -35,7 +55,8 @@ for (const id of ids) {
         assert.ok(s.title, `${id}: source missing title`);
         // The Knesset site numbers members by its own id, not the OData
         // PersonID: a PersonID here opens an empty page or another member's.
-        const mk = s.url.match(/mk-personal-details\/(\d+)/);
+        // (Same for the member's other pages: roles, public activity.)
+        const mk = s.url.match(/\/mk\/apps\/mk\/mk-[a-z-]+\/(\d+)/);
         if (mk) {
           const site = getMember(id)?.mkSiteCode;
           assert.equal(Number(mk[1]), site, `${id}: Knesset member link must use site id ${site}, not ${mk[1]}`);

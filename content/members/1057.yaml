@@ -17,6 +17,12 @@ claims:
         HaHaredi, and in 1996 he became chairman of the Centre for Jewish
         Publicity.
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/754
+        title: "ישראל אייכלר — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-public-activity-publications/754
+        title: "ישראל אייכלר — פעילות ציבורית (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Yisrael_Eichler
         title: Yisrael Eichler
         publisher: Wikipedia
@@ -34,6 +40,15 @@ claims:
         and 2019-2026. During his service he chaired the parliamentary faction
         and headed the Labor and Welfare Committee."
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-positions/754
+        title: "ישראל אייכלר — תפקידים בכנסת (אתר הכנסת)"
+        publisher: Knesset
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%201057"
+        title: "ישראל אייכלר — תפקידים בכנסת ובממשלה (המידע הפתוח של הכנסת)"
+        publisher: Knesset OData
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/754
+        title: "ישראל אייכלר — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Yisrael_Eichler
         title: Yisrael Eichler
         publisher: Wikipedia

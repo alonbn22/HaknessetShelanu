@@ -21,6 +21,15 @@ claims:
         advisor to MK Sa'id al-Khurumi.
     date: 2022-11-15
     sources:
+      - url: https://www.mako.co.il/news-israel-elections/election_2022-knesset_25/Article-dc71a9173ffa771027.htm
+        title: "בחירות 2022: חברי הכנסת ה-25 מטעם רע\"ם"
+        publisher: N12
+      - url: https://www.ynet.co.il/news/article/byi9hw3ac
+        title: "פריימריז ברע\"מ ובבל\"ד בצל המבצע בעזה: נציג חדש לנגב"
+        publisher: Ynet
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-positions/1093
+        title: "ואליד אלהואשלה — תפקידים בכנסת (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Walid_al-Huashla
         title: Waleed Alhwashla
         publisher: Wikipedia
@@ -42,6 +51,12 @@ claims:
         Israel Football Association between 2000 and 2013, including officiating
         in the top divisions.
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/1093
+        title: "ואליד אלהואשלה — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
+      - url: https://www.knesset.tv/knesset-members/47338/
+        title: "חבר הכנסת ואליד אל הואשלה - אודות, וידאו, כתבות וחדשות - ערוץ כנסת"
+        publisher: Knesset Channel
       - url: https://en.wikipedia.org/wiki/Walid_al-Huashla
         title: Waleed Alhwashla
         publisher: Wikipedia
@@ -51,14 +66,23 @@ claims:
   - kind: positive
     category: achievement
     title:
-      he: "השכלה אקדמית: תואר ראשון ושני מאוניברסיטת חיפה"
-      en: "Academic background: BA and MA from the University of Haifa"
+      he: "השכלה אקדמית: תואר ראשון מהאוניברסיטה הפתוחה ותואר שני מאוניברסיטת חיפה"
+      en: "Academic background: BA from the Open University and MA from the University of Haifa"
+      ar: "الخلفية الأكاديمية: بكالوريوس من الجامعة المفتوحة وماجستير من جامعة حيفا"
+      ru: "Образование: бакалавр Открытого университета и магистр Хайфского университета"
+      es: "Formación académica: licenciatura por la Universidad Abierta y máster por la Universidad de Haifa"
+      fr: "Parcours universitaire : licence de l’Université ouverte et master de l’université de Haïfa"
     description:
-      he: אלהואשלה בעל תואר ראשון בלימודי המזרח התיכון ותואר שני במדע המדינה
-        מאוניברסיטת חיפה.
-      en: Al-Huashla holds a bachelor's degree in Middle Eastern studies and a
-        master's degree in political science from the University of Haifa.
+      he: "אלהואשלה בעל תואר ראשון בלימודי המזרח התיכון מהאוניברסיטה הפתוחה ותואר שני במדעי המדינה מאוניברסיטת חיפה."
+      en: "Al-Huashla holds a bachelor's degree in Middle Eastern studies from the Open University and a master's degree in political science from the University of Haifa."
+      ar: "يحمل الهواشلة شهادة بكالوريوس في دراسات الشرق الأوسط من الجامعة المفتوحة وشهادة ماجستير في العلوم السياسية من جامعة حيفا."
+      ru: "Аль-Хуашла — бакалавр ближневосточных исследований Открытого университета и магистр политологии Хайфского университета."
+      es: "Al-Huashla es licenciado en Estudios de Oriente Medio por la Universidad Abierta y máster en Ciencias Políticas por la Universidad de Haifa."
+      fr: "Al-Huashla est titulaire d’une licence en études du Moyen-Orient de l’Université ouverte et d’un master en sciences politiques de l’université de Haïfa."
     sources:
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/1093"
+        title: "ואליד אלהואשלה — פרטים אישיים (אתר הכנסת)"
+        publisher: "Knesset"
       - url: https://en.wikipedia.org/wiki/Walid_al-Huashla
         title: Waleed Alhwashla
         publisher: Wikipedia

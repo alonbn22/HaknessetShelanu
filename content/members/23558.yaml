@@ -23,9 +23,19 @@ claims:
       he: יושב ראש ועדת העלייה והקליטה
       en: Chairman of the Immigration and Absorption Committee
     description:
-      he: ביטן מונה במאי 2020 ליושב ראש ועדת העלייה והקליטה בכנסת ה-23, ועדה העוסקת במדיניות העלייה לישראל ובקליטת עולים.
-      en: Bitan was appointed in May 2020 as Chairman of the Immigration and Absorption Committee in the 23rd Knesset, a committee dealing with immigration to Israel and the integration of new immigrants.
+      he: "ביטן מונה ביוני 2020 ליושב ראש ועדת העלייה, הקליטה והתפוצות בכנסת ה-23, ועדה העוסקת במדיניות העלייה לישראל ובקליטת עולים."
+      en: "Bitan was appointed in June 2020 as chairman of the Immigration, Absorption and Diaspora Affairs Committee in the 23rd Knesset, a committee dealing with immigration to Israel and the integration of new immigrants."
+      ar: "عُيّن بيطان في حزيران/يونيو 2020 رئيسًا للجنة الهجرة والاستيعاب وشؤون الشتات في الكنيست الـ23، وهي لجنة تُعنى بسياسة الهجرة إلى إسرائيل واستيعاب المهاجرين الجدد."
+      ru: "В июне 2020 года Битан был назначен председателем Комиссии по алие, абсорбции и делам диаспоры Кнессета 23-го созыва, которая занимается политикой репатриации в Израиль и абсорбцией новых репатриантов."
+      es: "En junio de 2020 Bitan fue nombrado presidente de la Comisión de Inmigración, Absorción y Asuntos de la Diáspora de la 23.ª Knéset, que se ocupa de la inmigración a Israel y de la integración de los nuevos inmigrantes."
+      fr: "En juin 2020, Bitan a été nommé président de la commission de l’Immigration, de l’Intégration et de la Diaspora de la 23e Knesset, qui traite de l’immigration en Israël et de l’intégration des nouveaux immigrants."
     sources:
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-positions/914"
+        title: "דוד ביטן — תפקידים בכנסת (אתר הכנסת)"
+        publisher: "Knesset"
+      - url: "https://www.ynet.co.il/articles/0,7340,L-5741512,00.html"
+        title: "ח\"כ דוד ביטן ימונה ליו\"ר ועדת העלייה והקליטה"
+        publisher: "Ynet"
       - url: https://en.wikipedia.org/wiki/David_Bitan
         title: David Bitan
         publisher: Wikipedia
@@ -35,12 +45,26 @@ claims:
   - kind: positive
     category: achievement
     title:
-      he: עורך דין ופעיל ציבור ברישון לציון
-      en: Lawyer and local public servant in Rishon LeZion
+      he: "עורך דין ופעיל ציבור בראשון לציון"
+      en: "Lawyer and local public servant in Rishon LeZion"
+      ar: "محامٍ وناشط في الخدمة العامة في ريشون لتسيون"
+      ru: "Юрист и общественный деятель в Ришон-ле-Ционе"
+      es: "Abogado y servidor público local en Rishon LeZion"
+      fr: "Avocat et élu local à Rishon LeZion"
     description:
-      he: ביטן, יליד מרוקו שעלה לישראל בגיל חמש, סיים תואר במשפטים באוניברסיטת תל אביב בשנת 1987. הוא כיהן כחבר מועצת העיר רישון לציון משנת 1988 ולאחר מכן כסגן ראש העיר, לפני שהושבע כחבר כנסת בשנת 2015.
-      en: Bitan, born in Morocco and immigrating to Israel at age five, earned a law degree (LL.B) from Tel Aviv University in 1987. He served as a member of the Rishon LeZion City Council from 1988 and later as Deputy Mayor, before being sworn in as a Member of Knesset in 2015.
+      he: "ביטן, יליד מרוקו שעלה לישראל בגיל חמש, סיים תואר במשפטים באוניברסיטת תל אביב בשנת 1987. בשנים 1987–2005 כיהן כחבר מועצת העיר ראשון לציון, ולאחר מכן כסגן ראש העיר, לפני שהושבע כחבר כנסת בשנת 2015."
+      en: "Bitan, born in Morocco and immigrating to Israel at age five, earned a law degree (LL.B) from Tel Aviv University in 1987. He was a member of the Rishon LeZion City Council from 1987 to 2005 and later deputy mayor, before being sworn in as a Member of Knesset in 2015."
+      ar: "بيطان، المولود في المغرب والذي هاجر إلى إسرائيل في الخامسة من عمره، حصل على شهادة في الحقوق من جامعة تل أبيب عام 1987. كان عضوًا في مجلس بلدية ريشون لتسيون بين عامَي 1987 و2005، ثم نائبًا لرئيس البلدية، قبل أن يؤدي اليمين عضوًا في الكنيست عام 2015."
+      ru: "Битан, уроженец Марокко, репатриировавшийся в Израиль в пятилетнем возрасте, в 1987 году получил степень бакалавра права в Тель-Авивском университете. В 1987–2005 годах он был членом городского совета Ришон-ле-Циона, затем заместителем мэра, а в 2015 году был приведён к присяге как депутат Кнессета."
+      es: "Bitan, nacido en Marruecos e inmigrado a Israel a los cinco años, se licenció en Derecho (LL.B.) por la Universidad de Tel Aviv en 1987. Fue concejal de Rishon LeZion de 1987 a 2005 y después teniente de alcalde, antes de jurar como diputado de la Knéset en 2015."
+      fr: "Bitan, né au Maroc et immigré en Israël à l’âge de cinq ans, a obtenu une licence en droit (LL.B.) à l’université de Tel-Aviv en 1987. Il a été conseiller municipal de Rishon LeZion de 1987 à 2005, puis adjoint au maire, avant de prêter serment comme député en 2015."
     sources:
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/914"
+        title: "דוד ביטן — פרטים אישיים (אתר הכנסת)"
+        publisher: "Knesset"
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-public-activity-publications/914"
+        title: "דוד ביטן — פעילות ציבורית (אתר הכנסת)"
+        publisher: "Knesset"
       - url: https://en.wikipedia.org/wiki/David_Bitan
         title: David Bitan
         publisher: Wikipedia

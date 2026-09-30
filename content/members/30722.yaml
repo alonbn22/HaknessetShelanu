@@ -19,6 +19,12 @@ claims:
         RTVI from 2014, and, per English Wikipedia, also served as the BBC
         Russian Service correspondent in Israel.
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/994
+        title: "יבגני סובה — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-public-activity-publications/994
+        title: "יבגני סובה — פעילות ציבורית (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Evgeny_Sova
         title: Evgeny Sova
         publisher: Wikipedia
@@ -40,6 +46,12 @@ claims:
         Knesset.
     date: 2019-04
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/994
+        title: "יבגני סובה — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-positions/994
+        title: "יבגני סובה — תפקידים בכנסת (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Evgeny_Sova
         title: Evgeny Sova
         publisher: Wikipedia

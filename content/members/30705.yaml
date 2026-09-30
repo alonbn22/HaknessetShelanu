@@ -10,15 +10,23 @@ claims:
       he: חברת הכנסת מטעם הליכוד (2019–2020)
       en: Member of Knesset for Likud (2019–2020)
     description:
-      he: מיכל שיר נבחרה לכנסת ה-21 בבחירות אפריל 2019 ברשימת הליכוד, ונבחרה שוב לכנסת
-        ה-22 וה-23. לפני כניסתה לפוליטיקה עבדה לצד גדעון סער בתקופת כהונתו כיו"ר
-        הליכוד וכשר החינוך.
-      en: Michal Shir was elected to the 21st Knesset on the Likud list in the April
-        2019 election and was re-elected to the 22nd and 23rd Knessets. Before
-        entering politics she worked alongside Gideon Sa'ar during his time as
-        Likud chairman and Minister of Education.
+      he: "מיכל שיר נבחרה לכנסת ה-21 בבחירות אפריל 2019 ברשימת הליכוד, ונבחרה שוב לכנסת ה-22 וה-23. לפני כניסתה לפוליטיקה הארצית שימשה יועצת פוליטית לגדעון סער, מימיו הראשונים בליכוד ועד כהונתו כשר החינוך."
+      en: "Michal Shir was elected to the 21st Knesset on the Likud list in the April 2019 election and was re-elected to the 22nd and 23rd Knessets. Before entering national politics she was a political adviser to Gideon Sa'ar, from his early days in Likud through his term as Minister of Education."
+      ar: "انتُخبت ميخال شير للكنيست الـ21 في انتخابات نيسان/أبريل 2019 ضمن قائمة الليكود، وأُعيد انتخابها للكنيست الـ22 والـ23. وقبل دخولها السياسة القطرية عملت مستشارة سياسية لجدعون ساعر، منذ بداياته في الليكود وحتى ولايته وزيرًا للتربية والتعليم."
+      ru: "Михаль Шир была избрана в Кнессет 21-го созыва по списку Ликуда на выборах в апреле 2019 года и переизбрана в Кнессет 22-го и 23-го созывов. До прихода в общенациональную политику она была политическим советником Гидеона Саара — с его первых шагов в Ликуде и до его работы министром образования."
+      es: "Michal Shir fue elegida a la 21.ª Knéset en la lista del Likud en las elecciones de abril de 2019 y reelegida a la 22.ª y la 23.ª. Antes de entrar en la política nacional fue asesora política de Gideon Sa'ar, desde sus comienzos en el Likud hasta su etapa como ministro de Educación."
+      fr: "Michal Shir a été élue à la 21e Knesset sur la liste du Likoud lors du scrutin d’avril 2019, puis réélue aux 22e et 23e Knesset. Avant d’entrer en politique nationale, elle a été conseillère politique de Gideon Saar, de ses débuts au Likoud jusqu’à son mandat de ministre de l’Éducation."
     date: 2019-04-09
     sources:
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-positions/1004"
+        title: "מיכל שיר סגמן — תפקידים בכנסת (אתר הכנסת)"
+        publisher: "Knesset"
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030705"
+        title: "מיכל שיר סגמן — תפקידים בכנסת ובממשלה (המידע הפתוח של הכנסת)"
+        publisher: "Knesset OData"
+      - url: "https://www.ynet.co.il/articles/0,7340,L-5458936,00.html"
+        title: "ליכודניקית מגיל 15 שייעצה לסער: המועמדת שנתניהו לא רצה שתנצח"
+        publisher: "Ynet"
       - url: https://en.wikipedia.org/wiki/Michal_Shir
         title: Michal Shir
         publisher: Wikipedia

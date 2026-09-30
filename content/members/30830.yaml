@@ -17,6 +17,15 @@ claims:
         which won 14 seats.
     date: "2022-11-15"
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-positions/1090
+        title: אוהד טל — תפקידים בכנסת (אתר הכנסת)
+        publisher: Knesset
+      - url: https://www.maariv.co.il/elections-2022/article-955256
+        title: רשימת הציונות הדתית-עוצמה יהודית לבחירות לכנסת ה-25
+        publisher: Maariv
+      - url: https://www.haaretz.com/israel-news/elections/2022-11-03/ty-article/israel-election-final-results-netanyahu-jewish-far-right-win-power-fiasco-for-left/00000184-3e80-daf1-abc4-7f9a53f40000
+        title: "Israel election final results: Netanyahu, Jewish far right win power, fiasco for left"
+        publisher: Haaretz
       - url: https://en.wikipedia.org/wiki/Ohad_Tal
         title: Ohad Tal
         publisher: Wikipedia
@@ -71,6 +80,9 @@ claims:
         Director of World Mizrachi, and emissary of the Jewish Agency to the
         Netherlands.
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-public-activity-publications/1090
+        title: אוהד טל — פעילות ציבורית (אתר הכנסת)
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Ohad_Tal
         title: Ohad Tal
         publisher: Wikipedia

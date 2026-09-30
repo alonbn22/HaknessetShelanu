@@ -56,15 +56,23 @@ claims:
       he: פעילות ציבורית במאבק בהונאת קשישים
       en: Public-service work against fraud targeting the elderly
     description:
-      he: לפני כניסתה לפוליטיקה הארצית כיהנה מירב כהן כחברת מועצת עיריית ירושלים
-        (נבחרה ב-2011 מטעם תנועת התעוררות ירושלים) כאחראית תיק הנוער, וייסדה
-        עמותה הפועלת למאבק בהונאות המכוונות נגד אזרחים ותיקים.
-      en: Before her national political career, Meirav Cohen served on the Jerusalem
-        City Council (elected in 2011 as part of the Jerusalem Hitorerut party)
-        as youth portfolio holder, and founded a nonprofit that fights fraud
-        targeting elderly citizens.
+      he: "לפני כניסתה לפוליטיקה הארצית כיהנה מירב כהן בשנים 2011–2013 כחברת מועצת עיריית ירושלים מטעם תנועת התעוררות בירושלים, והחזיקה בתיק הנוער. מ-2018 היא מובילה בהתנדבות את מטה המאבק בעושק קשישים, הפועל נגד ניצול אזרחים ותיקים בידי חברות טלמרקטינג וגופים מסחריים."
+      en: "Before her national political career, Meirav Cohen served on the Jerusalem City Council from 2011 to 2013 for the Hitorerut (Awakening) movement, holding the youth portfolio. Since 2018 she has led, as a volunteer, the campaign headquarters against the exploitation of elderly people by telemarketing firms and other businesses."
+      ar: "قبل مسيرتها السياسية القطرية كانت ميراف كوهين بين عامَي 2011 و2013 عضوًا في مجلس بلدية القدس عن حركة «هيتعوريروت» (اليقظة)، وتولّت ملف الشباب. ومنذ 2018 تقود تطوعًا مقرّ النضال ضد استغلال المسنّين من قِبل شركات التسويق الهاتفي وجهات تجارية أخرى."
+      ru: "До общенациональной политической карьеры Мейрав Коэн в 2011–2013 годах была членом городского совета Иерусалима от движения «Итъорерут» («Пробуждение») и отвечала за работу с молодёжью. С 2018 года она на добровольных началах руководит штабом борьбы с эксплуатацией пожилых людей телемаркетинговыми и другими коммерческими компаниями."
+      es: "Antes de su carrera política nacional, Meirav Cohen fue concejal de Jerusalén de 2011 a 2013 por el movimiento Hitorerut (Despertar), a cargo de la cartera de juventud. Desde 2018 dirige como voluntaria la sede de la campaña contra la explotación de las personas mayores por empresas de telemarketing y otras empresas."
+      fr: "Avant sa carrière politique nationale, Meirav Cohen a été conseillère municipale de Jérusalem de 2011 à 2013 pour le mouvement Hitorerout (Réveil), chargée de la jeunesse. Depuis 2018, elle dirige bénévolement le quartier général de la lutte contre l’exploitation des personnes âgées par des sociétés de télémarketing et d’autres entreprises."
     date: "2011"
     sources:
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/1006"
+        title: "מירב כהן — פרטים אישיים (אתר הכנסת)"
+        publisher: "Knesset"
+      - url: https://www.themarker.com/consumer/2020-01-06/ty-article/0000017f-e491-d38f-a57f-e6d3eee30000
+        title: "ניצול הקשישים לא עוצר: תלונות על עוקץ ב-10 מיליון שקל הן רק קצה הקרחון"
+        publisher: TheMarker
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-public-activity-publications/1006
+        title: "מירב כהן — פעילות ציבורית (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Meirav_Cohen
         title: Meirav Cohen
         publisher: Wikipedia

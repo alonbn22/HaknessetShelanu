@@ -29,14 +29,19 @@ claims:
       he: קצין משטרה בכיר ומפקד מחוז ירושלים
       en: Senior police officer and Jerusalem District commander
     description:
-      he: לפני כניסתו לפוליטיקה שירת מיקי לוי שנים רבות במשטרת ישראל בדרגת ניצב, ועמד
-        בראש מחוז ירושלים בין השנים 2000 ל-2004. לאחר פרישתו כיהן כנציג המשטרה
-        בוושינגטון עד 2007.
-      en: Before entering politics, Mickey Levy served for many years in the Israel
-        Police at the rank of Nitzav (Commissioner), and headed the Jerusalem
-        District between 2000 and 2004. After retiring he served as the Israeli
-        police attaché in Washington, D.C. until 2007.
+      he: "לפני כניסתו לפוליטיקה שירת מיקי לוי שנים רבות במשטרת ישראל ופרש בדרגת ניצב. בשנים 2000–2004 עמד בראש מחוז ירושלים, ובשנים 2004–2007 כיהן כנספח המשטרה בארצות הברית."
+      en: "Before entering politics, Mickey Levy served for many years in the Israel Police, retiring with the rank of Nitzav (major general). He headed the Jerusalem District from 2000 to 2004 and was the Israel Police attaché in the United States from 2004 to 2007."
+      ar: "قبل دخوله السياسة خدم ميكي ليفي سنوات طويلة في شرطة إسرائيل وتقاعد برتبة نيتساف (لواء). ترأّس لواء القدس بين عامَي 2000 و2004، وشغل منصب ملحق الشرطة الإسرائيلية في الولايات المتحدة بين عامَي 2004 و2007."
+      ru: "До прихода в политику Мики Леви много лет служил в полиции Израиля и вышел в отставку в звании ницав (генерал-майор). В 2000–2004 годах он возглавлял Иерусалимский округ, а в 2004–2007 годах был атташе израильской полиции в США."
+      es: "Antes de entrar en política, Mickey Levy sirvió muchos años en la Policía de Israel y se retiró con el rango de nitzav (general de división). Dirigió el Distrito de Jerusalén de 2000 a 2004 y fue agregado de la Policía de Israel en Estados Unidos de 2004 a 2007."
+      fr: "Avant d’entrer en politique, Mickey Levy a servi de nombreuses années dans la police israélienne et a pris sa retraite avec le grade de nitzav (général de division). Il a dirigé le district de Jérusalem de 2000 à 2004 et a été l’attaché de la police israélienne aux États-Unis de 2004 à 2007."
     sources:
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/876"
+        title: "מיקי לוי — פרטים אישיים (אתר הכנסת)"
+        publisher: "Knesset"
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-public-activity-publications/876"
+        title: "מיקי לוי — פעילות ציבורית (אתר הכנסת)"
+        publisher: "Knesset"
       - url: https://en.wikipedia.org/wiki/Mickey_Levy
         title: Mickey Levy
         publisher: Wikipedia
@@ -55,6 +60,15 @@ claims:
         served as Deputy Minister of Finance between 2013 and 2014.
     date: "2013"
     sources:
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2023632"
+        title: "מיקי לוי — תפקידים בכנסת ובממשלה (המידע הפתוח של הכנסת)"
+        publisher: Knesset OData
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/876
+        title: "מיקי לוי — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-positions/876
+        title: "מיקי לוי — תפקידים בכנסת (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Mickey_Levy
         title: Mickey Levy
         publisher: Wikipedia
@@ -67,13 +81,17 @@ claims:
       he: אביר איכות השלטון
       en: Knight of Quality Government award
     description:
-      he: בשנת 2002, בעת עמידתו בראש מחוז ירושלים במשטרה, הוענק למיקי לוי עיטור 'אביר
-        איכות השלטון' מטעם התנועה לאיכות השלטון.
-      en: In 2002, while heading the Jerusalem Police District, Mickey Levy received
-        the 'Knight of Quality Government' award from the Movement for Quality
-        Government.
-    date: "2002"
+      he: "בשנת 2005 נכלל מיקי לוי, ניצב בדימוס ומפקד מחוז ירושלים לשעבר, בין מקבלי אות 'אביר איכות השלטון' של התנועה לאיכות השלטון."
+      en: "In 2005 Mickey Levy, a retired Nitzav and former Jerusalem District commander, was among the recipients of the Movement for Quality Government's 'Knight of Quality Government' award."
+      ar: "في عام 2005 كان ميكي ليفي، النيتساف المتقاعد والقائد السابق للواء القدس، من بين الحاصلين على وسام «فارس جودة الحكم» من الحركة من أجل جودة الحكم."
+      ru: "В 2005 году Мики Леви, ницав в отставке и бывший командующий Иерусалимским округом, стал одним из лауреатов награды «Рыцарь качества власти» Движения за качество власти."
+      es: "En 2005 Mickey Levy, nitzav retirado y excomandante del Distrito de Jerusalén, figuró entre los galardonados con el premio «Caballero de la Calidad del Gobierno» del Movimiento por la Calidad del Gobierno."
+      fr: "En 2005, Mickey Levy, nitzav à la retraite et ancien commandant du district de Jérusalem, a figuré parmi les lauréats de la distinction « Chevalier de la qualité du gouvernement » du Mouvement pour un gouvernement de qualité."
+    date: "2005"
     sources:
+      - url: "https://mqg.org.il/award_year/2005/"
+        title: "ארכיון 2005 — אבירי איכות השלטון"
+        publisher: "Movement for Quality Government in Israel"
       - url: https://en.wikipedia.org/wiki/Mickey_Levy
         title: Mickey Levy
         publisher: Wikipedia

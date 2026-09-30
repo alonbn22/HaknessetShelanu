@@ -7,16 +7,42 @@ claims:
   - kind: positive
     category: achievement
     title:
-      he: האישה הראשונה שמונתה ליושבת ראש ועדת הביטחון הלאומי של הכנסת
-      en: First woman appointed chair of the Knesset's National Security Committee
+      he: יושבת ראש ועדת ביטחון הפנים של הכנסת (2021–2022)
+      en: Chair of the Knesset's Internal Security Committee (2021–2022)
+      ar: رئيسة لجنة الأمن الداخلي في الكنيست (2021–2022)
+      ru: Председатель комиссии Кнессета по внутренней безопасности (2021–2022)
+      es: Presidenta de la Comisión de Seguridad Interior de la Knéset (2021–2022)
+      fr: Présidente de la commission de la Sécurité intérieure de la Knesset (2021–2022)
     description:
-      he: בשנת 2021 מונתה מירב בן ארי ליושבת ראש ועדת הביטחון הלאומי של הכנסת, והייתה
-        האישה הראשונה שמונתה לתפקיד זה.
-      en: In 2021 Meirav Ben-Ari was appointed chair of the Knesset's National
-        Security Committee, becoming the first woman to be appointed to that
-        position.
+      he: מ-11 באוגוסט 2021 ועד 15 בנובמבר 2022, בכנסת ה-24, כיהנה מירב בן ארי כיושבת
+        ראש ועדת ביטחון הפנים של הכנסת. בכנסת ה-25 נקראת ועדה זו הוועדה לביטחון
+        לאומי.
+      en: From 11 August 2021 to 15 November 2022, in the 24th Knesset, Meirav Ben-Ari
+        chaired the Knesset's Internal Security Committee. In the 25th Knesset this
+        committee is called the National Security Committee.
+      ar: من 11 أغسطس 2021 حتى 15 نوفمبر 2022، في الكنيست الرابع والعشرين، ترأست ميراف
+        بن آري لجنة الأمن الداخلي في الكنيست. وفي الكنيست الخامس والعشرين تُسمّى هذه
+        اللجنة لجنة الأمن القومي.
+      ru: С 11 августа 2021 года по 15 ноября 2022 года, в Кнессете 24-го созыва, Мерав
+        Бен-Ари возглавляла комиссию Кнессета по внутренней безопасности. В Кнессете
+        25-го созыва эта комиссия называется комиссией по национальной безопасности.
+      es: Del 11 de agosto de 2021 al 15 de noviembre de 2022, en la 24.ª Knéset, Meirav
+        Ben-Ari presidió la Comisión de Seguridad Interior de la Knéset. En la 25.ª
+        Knéset esta comisión se denomina Comisión de Seguridad Nacional.
+      fr: Du 11 août 2021 au 15 novembre 2022, sous la 24e Knesset, Meirav Ben-Ari a
+        présidé la commission de la Sécurité intérieure de la Knesset. Sous la 25e
+        Knesset, cette commission s’appelle commission de la Sécurité nationale.
     date: 2021-08-11
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-positions/915
+        title: "מירב בן ארי — תפקידים בכנסת (אתר הכנסת)"
+        publisher: Knesset
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030102"
+        title: "מירב בן ארי — תפקידים בכנסת ובממשלה (המידע הפתוח של הכנסת)"
+        publisher: Knesset OData
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_Committee?$filter=CategoryID%20eq%20750"
+        title: "ועדת ביטחון הפנים (הכנסת ה-24) והוועדה לביטחון לאומי (הכנסת ה-25) — רשומות הוועדות (המידע הפתוח של הכנסת)"
+        publisher: Knesset OData
       - url: https://en.wikipedia.org/wiki/Meirav_Ben-Ari
         title: Meirav Ben-Ari
         publisher: Wikipedia
@@ -31,6 +57,12 @@ claims:
       en: Ben-Ari served in the IDF Education and Youth Corps, with her last post
         being education officer of the Golani Brigade.
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/915
+        title: "מירב בן ארי — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
+      - url: https://www.mako.co.il/pzm-soldiers/Article-c66b9a8f47bc381026.htm
+        title: "בחירות 2022: איפה המועמדים שירתו בצבא?"
+        publisher: N12
       - url: https://en.wikipedia.org/wiki/Meirav_Ben-Ari
         title: Meirav Ben-Ari
         publisher: Wikipedia

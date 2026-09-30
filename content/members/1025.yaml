@@ -15,6 +15,9 @@ claims:
       en: Before entering national politics, Gila Gamliel was the first woman to serve
         as chair of the National Union of Israeli Students.
     sources:
+      - url: https://www.haaretz.co.il/misc/2002-08-25/ty-article/0000017f-da81-d432-a77f-df9bd3500000
+        title: "גילה גמליאל: האשה הראשונה בראשות התאחדות הסטודנטים"
+        publisher: Haaretz
       - url: https://en.wikipedia.org/wiki/Gila_Gamliel
         title: Gila Gamliel
         publisher: Wikipedia
@@ -53,13 +56,23 @@ claims:
       en: Selected as a World Economic Forum Young Global Leader (2010)
     description:
       he: ב-3 במרץ 2010 נבחרה גמליאל לתוכנית המנהיגים הצעירים העולמיים (Young Global
-        Leaders) של הפורום הכלכלי העולמי בדאבוס, והייתה לפוליטיקאית הישראלית
-        הראשונה שנבחרה לתוכנית.
+        Leaders) של הפורום הכלכלי העולמי בדאבוס.
       en: On 3 March 2010 Gamliel was selected for the World Economic Forum's Young
-        Global Leaders programme (Davos), reportedly the first Israeli politician
-        chosen for it.
+        Global Leaders programme (Davos).
+      ar: في 3 آذار/مارس 2010 اختيرت غمليئيل لبرنامج القادة الشباب العالميين (Young
+        Global Leaders) التابع للمنتدى الاقتصادي العالمي في دافوس.
+      ru: 3 марта 2010 года Гамлиэль была отобрана в программу «Молодые глобальные
+        лидеры» (Young Global Leaders) Всемирного экономического форума в Давосе.
+      es: El 3 de marzo de 2010 Gamliel fue seleccionada para el programa Jóvenes
+        Líderes Globales (Young Global Leaders) del Foro Económico Mundial de
+        Davos.
+      fr: Le 3 mars 2010, Gamliel a été sélectionnée pour le programme Jeunes leaders
+        mondiaux (Young Global Leaders) du Forum économique mondial de Davos.
     date: 2010-03-03
     sources:
+      - url: "https://www.weforum.org/people/gila-demri-gamliel/"
+        title: "Gila Demri Gamliel | World Economic Forum"
+        publisher: "World Economic Forum"
       - url: https://he.wikipedia.org/wiki/%D7%92%D7%99%D7%9C%D7%94_%D7%92%D7%9E%D7%9C%D7%99%D7%90%D7%9C
         title: גילה גמליאל
         publisher: Wikipedia (Hebrew)

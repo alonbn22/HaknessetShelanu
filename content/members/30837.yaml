@@ -25,12 +25,26 @@ claims:
   - kind: positive
     category: achievement
     title:
-      he: "קריירה משפטית בסיוע המשפטי למען נוער בסיכון וקטינים"
-      en: "Legal career in public legal aid for at-risk youth and minors"
+      he: "עורכת דין שייצגה נוער וקטינים בסיכון"
+      en: "Lawyer who represented at-risk youth and minors"
+      ar: "محامية مثّلت شبانًا وقاصرين في خطر"
+      ru: "Адвокат, представлявшая интересы подростков и несовершеннолетних из группы риска"
+      es: "Abogada que representó a jóvenes y menores en riesgo"
+      fr: "Avocate ayant représenté des jeunes et des mineurs en danger"
     description:
-      he: "ביטון, בעלת תואר שני במשפטים והוסמכה כעורכת דין ב-2008, עבדה החל מאותה שנה ועד היבחרה לכנסת בלשכת הסיוע המשפטי במחוז הדרום. במסגרת תפקידה ייצגה נוער בסיכון וקטינים, שימשה אפוטרופוס לדין בהליכי כשרות משפטית וייצגה הורים בהליכי הוצאת ילדים מהבית."
-      en: "Biton, who holds a master's degree in law and was licensed as an attorney in 2008, worked from that year until her election to the Knesset at the Southern District Legal Aid Bureau. In that role she represented at-risk youth and minors, served as a court-appointed guardian ad litem in legal-capacity proceedings, and represented parents in child-removal proceedings."
+      he: "ביטון, עורכת דין בעלת תואר שני במשפטים, עבדה 12 שנה כעורכת דין במשרד עצמאי. היא עסקה בין היתר בייצוג בני נוער וקטינים בסיכון, ושימשה אפוטרופוס מטעם הסיוע המשפטי במחוז הדרום."
+      en: "Biton, a lawyer with a master's degree in law, worked for 12 years as an attorney in private practice. Among other things she represented at-risk youth and minors, and served as a guardian on behalf of the Legal Aid Department in the Southern District."
+      ar: "بيتون، محامية حاصلة على ماجستير في الحقوق، عملت 12 عامًا محاميةً في مكتب مستقل. ومن جملة عملها مثّلت شبانًا وقاصرين في خطر، وعملت وصيّةً (أفوتروبوس) من قِبل قسم المساعدة القانونية في لواء الجنوب."
+      ru: "Битон, адвокат со степенью магистра права, 12 лет работала адвокатом в частной практике. В частности, она представляла интересы подростков и несовершеннолетних из группы риска и выступала опекуном от имени Службы правовой помощи в Южном округе."
+      es: "Biton, abogada con un máster en Derecho, trabajó 12 años como abogada en un despacho independiente. Entre otras cosas representó a jóvenes y menores en riesgo, y actuó como tutora por encargo del Departamento de Asistencia Jurídica en el Distrito Sur."
+      fr: "Biton, avocate titulaire d’un master en droit, a exercé pendant 12 ans en cabinet indépendant. Elle a notamment représenté des jeunes et des mineurs en danger, et a été tutrice pour le compte du département de l’aide juridique du district Sud."
     sources:
+      - url: "https://main.knesset.gov.il/mk/apps/mk/mk-public-activity-publications/1094"
+        title: "דבי ביטון — פעילות ציבורית (אתר הכנסת)"
+        publisher: "Knesset"
+      - url: "https://www.davar1.co.il/695658/"
+        title: "עוד שתיים בחוץ: דבי ביטון וטטיאנה מזרסקי לא יתמודדו ברשימת יש עתיד לכנסת הבאה"
+        publisher: "Davar"
       - url: "https://he.wikipedia.org/wiki/%D7%93%D7%91%D7%95%D7%A8%D7%94_%D7%91%D7%99%D7%98%D7%95%D7%9F"
         title: "דבורה ביטון"
         publisher: "Wikipedia (Hebrew)"

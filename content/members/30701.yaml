@@ -19,6 +19,12 @@ claims:
         office and as an adviser to Likud ministers.
     date: 2019-04-30
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/976
+        title: "אופיר כץ — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-positions/976
+        title: "אופיר כץ — תפקידים בכנסת (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Ofir_Katz
         title: Ofir Katz
         publisher: Wikipedia

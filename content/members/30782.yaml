@@ -22,6 +22,12 @@ claims:
         of Haifa.
     date: 2021-06-15
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-positions/1076
+        title: "טטיאנה מזרסקי — תפקידים בכנסת (אתר הכנסת)"
+        publisher: Knesset
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/1076
+        title: "טטיאנה מזרסקי — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Tania_Mazarsky
         title: Tania Mazarsky
         publisher: Wikipedia
@@ -42,6 +48,9 @@ claims:
         directing Leumit Health Care Services medical centers and founding a
         volunteer network supporting Holocaust survivors and the elderly.
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/1076
+        title: "טטיאנה מזרסקי — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
       - url: https://he.wikipedia.org/wiki/%D7%98%D7%98%D7%99%D7%90%D7%A0%D7%94_%D7%9E%D7%96%D7%A8%D7%A1%D7%A7%D7%99
         title: טטיאנה מזרסקי
         publisher: Hebrew Wikipedia
@@ -51,16 +60,41 @@ claims:
   - kind: positive
     category: award
     title:
-      he: מבין 50 הפעילים הציבוריים המשפיעים (ידיעות אחרונות, 2016)
-      en: Named among 50 most influential public activists (Yediot Ahronot, 2016)
+      he: נכללה ברשימת "50 הפעילים החברתיים של 2016" של ידיעות אחרונות
+      en: Included in Yedioth Ahronoth's "50 social activists of 2016" list
+      ar: أُدرجت في قائمة «50 ناشطًا اجتماعيًا لعام 2016» لصحيفة يديعوت أحرونوت
+      ru: Включена в список «50 общественных активистов 2016 года» газеты «Едиот
+        Ахронот»
+      es: Incluida en la lista «50 activistas sociales de 2016» de Yedioth Ahronoth
+      fr: Figure sur la liste « 50 militants sociaux de 2016 » du Yedioth Ahronoth
     description:
-      he: בשנת 2016 נכללה מזרסקי ברשימת 50 הפעילים הציבוריים המשפיעים של השנה מטעם
-        'ידיעות אחרונות', בעקבות פעילותה הקהילתית בכרמיאל ובתחום שירותי הבריאות.
-      en: In 2016 Mazarsky was named by the newspaper Yediot Ahronot as one of the 50
-        most influential Israeli public activists of the year, in recognition of
-        her community and health-services work in Karmiel.
+      he: בשנת 2016 נכללה מזרסקי ברשימת "50 הפעילים החברתיים של 2016" של 'ידיעות
+        אחרונות'. ברשימה צוין כי הקימה בכרמיאל מערך מתנדבים לסיוע לניצולי שואה
+        ולקשישים בודדים.
+      en: In 2016 Mazarsky was included in Yedioth Ahronoth's list of "50 social
+        activists of 2016". The list noted that she had set up a volunteer
+        network in Karmiel assisting Holocaust survivors and elderly people
+        living alone.
+      ar: في عام 2016 أُدرجت مازارسكي في قائمة «50 ناشطًا اجتماعيًا لعام 2016»
+        لصحيفة يديعوت أحرونوت. وذكرت القائمة أنها أسست في كرميئيل شبكة متطوعين
+        لمساعدة الناجين من المحرقة والمسنين الذين يعيشون بمفردهم.
+      ru: В 2016 году Мазарская была включена в список «50 общественных активистов
+        2016 года» газеты «Едиот Ахронот». В списке отмечалось, что она создала
+        в Кармиэле сеть волонтёров, помогающих пережившим Холокост и одиноким
+        пожилым людям.
+      es: En 2016 Mazarsky fue incluida en la lista «50 activistas sociales de 2016»
+        de Yedioth Ahronoth. La lista señalaba que había creado en Karmiel una red
+        de voluntarios que asiste a sobrevivientes del Holocausto y a personas
+        mayores que viven solas.
+      fr: En 2016, Mazarsky figurait sur la liste « 50 militants sociaux de 2016 » du
+        Yedioth Ahronoth. La liste indiquait qu’elle avait mis sur pied à Karmiel
+        un réseau de bénévoles venant en aide aux rescapés de la Shoah et aux
+        personnes âgées isolées.
     date: "2016"
     sources:
+      - url: https://www.yediot.co.il/articles/0,7340,L-4899461,00.html
+        title: "50 הפעילים החברתיים של 2016"
+        publisher: Yedioth Ahronoth
       - url: https://en.wikipedia.org/wiki/Tania_Mazarsky
         title: Tania Mazarsky
         publisher: Wikipedia

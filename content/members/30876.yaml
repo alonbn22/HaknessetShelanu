@@ -21,6 +21,12 @@ claims:
         and medium-sized businesses.
     date: 2023-02-15
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-positions/1123
+        title: אושר שקלים — תפקידים בכנסת (אתר הכנסת)
+        publisher: Knesset
+      - url: https://www.walla.co.il/news/breaking-news/3558421
+        title: "במסגרת החוק הנורבגי: ח\"כ מירי רגב ואלי כהן התפטרו מתפקידם"
+        publisher: Walla
       - url: https://en.wikipedia.org/wiki/Osher_Shekalim
         title: Osher Shekalim
         publisher: Wikipedia

@@ -18,6 +18,9 @@ claims:
         36th government, from 13 June 2021 until late December 2022.
     date: 2021-06-13
     sources:
+      - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030121"
+        title: "עודד פורר — תפקידים בכנסת ובממשלה (המידע הפתוח של הכנסת)"
+        publisher: Knesset OData
       - url: https://en.wikipedia.org/wiki/Oded_Forer
         title: Oded Forer
         publisher: Wikipedia
@@ -59,6 +62,12 @@ claims:
         Absorption.
     date: 2013-01-01
     sources:
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/951
+        title: "עודד פורר — פרטים אישיים (אתר הכנסת)"
+        publisher: Knesset
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-public-activity-publications/951
+        title: "עודד פורר — פעילות ציבורית (אתר הכנסת)"
+        publisher: Knesset
       - url: https://en.wikipedia.org/wiki/Oded_Forer
         title: Oded Forer
         publisher: Wikipedia

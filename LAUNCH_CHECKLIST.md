@@ -58,7 +58,8 @@ repository's history (rewritten on 28 Sep, so older hashes elsewhere no longer r
 |---|---|---|---|
 | ✅ | Accessibility statement rewritten (no placeholders; 60-day fix commitment) | Claude | ad5c928. Contact: see "Contact email" |
 | ✅ | Phones: no page wider than the screen at 375 px and 320 px, six languages | Claude | df3f8c9 (WCAG 1.4.10) |
-| 🔄 | WCAG 2.2 AA check | Claude | AccessLint on every page type, in both themes, plus a keyboard-only pass |
+| ✅ | WCAG 2.2 AA check | Claude | e703041, b91a7d3, 1f84f54 (30 Sep): AccessLint and axe at 0 on 28 pages and 30 open states, both themes, he/en/ar; keyboard pass 102/102 (menus return focus, the hall works by arrow keys on phones, the language menu is links, not a select) |
+| ⬜ | Visible labels on the search boxes | owner, Claude | The placeholder is the only visible label; DESIGN.md says it shouldn't be (WCAG 3.3.2). Needs a design call |
 | ⬜ | Screen-reader test with VoiceOver | owner | |
 
 ## Infrastructure
@@ -80,7 +81,7 @@ repository's history (rewritten on 28 Sep, so older hashes elsewhere no longer r
 | ✅ | Israeli-flag favicon | Claude | 393487f |
 | ✅ | Error pages: bilingual 404, global error, loading | Claude | 8a6e18b, 8c2227d |
 | ✅ | Images resized (725 KB → 116 KB); 250 px Commons thumbnails for avatars | Claude | ef5e98a, da47df3 |
-| 🔄 | Lighthouse, mobile | Claude | |
+| ✅ | Lighthouse, mobile | Claude | 53e0835, 6f41985 (30 Sep): accessibility, best practices and SEO 100 on 8 page types; performance 90–97; pages 9–11 KB lighter (client messages trimmed), member photos sized per screen, no Wikimedia cookie. Left: splitting `/elections` (8.4k elements) and per-route message bundles |
 | ✅ | Link check: internal links and cited sources | Claude | cbe55f9, 4150be9 (moved or dead sources replaced with verified ones or archived copies) |
 | ✅ | Form limits | Claude | Every `?q=` capped at 200 characters on the server |
 | ✅ | `npm audit fix` | Claude | f4608cb. The code that runs the site has no known vulnerabilities; 4 moderate advisories remain in development-only tools |

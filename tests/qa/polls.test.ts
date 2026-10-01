@@ -44,7 +44,7 @@ test("polls.yaml parses when present (loader returns null otherwise)", () => {
 
 if (file) {
   const ISO = /^\d{4}-\d{2}-\d{2}$/;
-  const today = new Date().toISOString().slice(0, 10);
+  const today = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Jerusalem" }) // the site keeps Israel time;
 
   test("the file is dated and scoped", () => {
     assert.match(file.lastReviewed, ISO);

@@ -19,7 +19,7 @@ import {
 
 const ids = (parse(fs.readFileSync(path.join(process.cwd(), "content", "party-profiles.yaml"), "utf8")) as { profiles: { id: number }[] }).profiles.map((p) => p.id);
 const outlook = getElectionOutlook();
-const today = new Date().toISOString().slice(0, 10);
+const today = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Jerusalem" }) // the site keeps Israel time;
 
 test("profiles parse and carry a verification date once they have developments", () => {
   for (const id of ids) {

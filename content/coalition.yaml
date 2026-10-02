@@ -143,7 +143,11 @@ statuses:
       fr: "Avi Maoz a quitté le gouvernement en mars 2025 et a annoncé le 16 juillet 2025 : « Je ne suis pas membre de la coalition. D’après mon calcul, il n’y a que 60 députés dans la coalition. »"
     sources:
       - { url: "https://www.timesofisrael.com/far-right-lawmaker-avi-maoz-quits-coalition-leaving-pm-with-a-minority-government/", title: "Far-right MK Avi Maoz quits coalition, leaving Netanyahu without Knesset majority (17 Jul 2025)", publisher: "The Times of Israel" }
-  1102: { status: opposition, since: "2022-12-29" }
+  1102:
+    status: opposition
+    since: "2022-12-29"
+    sources:
+      - { url: "https://main.knesset.gov.il/mk/government/Pages/CoalitionAgreements.aspx", title: "קווי יסוד והסכמים קואליציוניים — הממשלה ה-37: הסכמי הליכוד עם הציונות הדתית, עוצמה יהודית, נעם, ש\"ס, יהדות התורה והימין הממלכתי, ועקרונות ממשלת החירום; הסיעה אינה צד לאף אחד מהם", publisher: "הכנסת" }
   1110:
     status: opposition
     since: "2024-06-09"
@@ -157,10 +161,26 @@ statuses:
     sources:
       - { url: "https://www.timesofisrael.com/urging-elections-gantz-quits-wartime-government-accuses-pm-of-botching-war-effort/", title: "Gantz quits war government, says PM preventing ‘true victory’ over Hamas, urges elections (9 Jun 2024)", publisher: "The Times of Israel" }
       - { url: "https://main.knesset.gov.il/mk/apps/faction/faction-lobby?KnessetID=25&FactionID=1110", title: "כחול לבן - המחנה הממלכתי — מתאריך 08/07/2025", publisher: "הכנסת" }
-  1104: { status: opposition, since: "2022-12-29" }
-  1099: { status: opposition, since: "2022-12-29" }
-  1103: { status: opposition, since: "2022-12-29" }
-  1100: { status: opposition, since: "2022-12-29" }
+  1104:
+    status: opposition
+    since: "2022-12-29"
+    sources:
+      - { url: "https://main.knesset.gov.il/mk/government/Pages/CoalitionAgreements.aspx", title: "קווי יסוד והסכמים קואליציוניים — הממשלה ה-37: הסכמי הליכוד עם הציונות הדתית, עוצמה יהודית, נעם, ש\"ס, יהדות התורה והימין הממלכתי, ועקרונות ממשלת החירום; הסיעה אינה צד לאף אחד מהם", publisher: "הכנסת" }
+  1099:
+    status: opposition
+    since: "2022-12-29"
+    sources:
+      - { url: "https://main.knesset.gov.il/mk/government/Pages/CoalitionAgreements.aspx", title: "קווי יסוד והסכמים קואליציוניים — הממשלה ה-37: הסכמי הליכוד עם הציונות הדתית, עוצמה יהודית, נעם, ש\"ס, יהדות התורה והימין הממלכתי, ועקרונות ממשלת החירום; הסיעה אינה צד לאף אחד מהם", publisher: "הכנסת" }
+  1103:
+    status: opposition
+    since: "2022-12-29"
+    sources:
+      - { url: "https://main.knesset.gov.il/mk/government/Pages/CoalitionAgreements.aspx", title: "קווי יסוד והסכמים קואליציוניים — הממשלה ה-37: הסכמי הליכוד עם הציונות הדתית, עוצמה יהודית, נעם, ש\"ס, יהדות התורה והימין הממלכתי, ועקרונות ממשלת החירום; הסיעה אינה צד לאף אחד מהם", publisher: "הכנסת" }
+  1100:
+    status: opposition
+    since: "2022-12-29"
+    sources:
+      - { url: "https://main.knesset.gov.il/mk/government/Pages/CoalitionAgreements.aspx", title: "קווי יסוד והסכמים קואליציוניים — הממשלה ה-37: הסכמי הליכוד עם הציונות הדתית, עוצמה יהודית, נעם, ש\"ס, יהדות התורה והימין הממלכתי, ועקרונות ממשלת החירום; הסיעה אינה צד לאף אחד מהם", publisher: "הכנסת" }
 
 # How the coalition's size changed over the term, from the factions' own
 # announcements as reported (each step sourced). The figures other sites

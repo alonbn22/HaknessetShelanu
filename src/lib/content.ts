@@ -46,7 +46,7 @@ const factionStatusSchema = z.object({
   status: z.enum(["coalition", "opposition"]),
   since: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
   note: localizedText.optional(),
-  sources: z.array(sourceRef).optional(),
+  sources: z.array(sourceRef).min(1), // every side of the aisle cites its record
 });
 
 const coalitionSchema = z

@@ -64,6 +64,7 @@ export const VOTE_CANCELLED = 0;
 export const GITHUB_REPO =
   process.env.NEXT_PUBLIC_GITHUB_REPO || "alonbn22/HaknessetShelanu";
 
-// The site's contact address, set per deployment. Empty until the owner sets
-// it; pages then point to /tickets instead — never a placeholder address.
-export const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "";
+// The site's contact address: the project's own mailbox, public by design (the
+// accessibility statement, privacy and terms pages). A deployment may override
+// it; if it is ever emptied, pages point to /tickets instead.
+export const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || "haknessetshelanu@gmail.com";

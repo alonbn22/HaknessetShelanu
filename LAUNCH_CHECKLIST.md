@@ -44,7 +44,7 @@ repository's history (rewritten on 28 Sep, so older hashes elsewhere no longer r
 | ✅ | `/credits` page: photo authors and licenses; linked credits on member pages and the parties grid | Claude | aa87276, ad5c928 |
 | ✅ | `/privacy`, with the cookie policy | Claude | ad5c928. The lawyer reviews it |
 | ✅ | `/terms` | Claude | ad5c928. The lawyer reviews it |
-| ⬜ | Contact email | owner | Set `NEXT_PUBLIC_CONTACT_EMAIL`; until then the pages point to public GitHub issues |
+| ✅ | Contact email | owner, Claude | haknessetshelanu@gmail.com (2 Oct), the default in `src/lib/constants.ts`; also the private channel in CODE_OF_CONDUCT and SECURITY |
 
 ## Privacy
 
@@ -72,7 +72,7 @@ repository's history (rewritten on 28 Sep, so older hashes elsewhere no longer r
 | ✅ | Database out of git: the `data-latest` release, a daily Action, a Vercel deploy hook | Claude | b43c46d. `npm run db:pull` / `db:publish` |
 | ✅ | Next.js 16.3.6 (security release) | Claude | a58dd6d |
 | ✅ | Israel time zone | Claude | 2a40f7c |
-| ⬜ | Vercel project, env vars, deploy hook secret | owner | See DEPLOY.md: `NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_CONTACT_EMAIL`, `VERCEL_DEPLOY_HOOK` |
+| ⬜ | Vercel project, env vars, deploy hook secret | owner | See DEPLOY.md: `NEXT_PUBLIC_SITE_URL` (the free `*.vercel.app` address is fine to start), `VERCEL_DEPLOY_HOOK` |
 | ✅ | GitHub Actions minutes | owner | The repo is public (28 Sep): free. CI runs on every push. The daily sync is switched off until the owner enables it |
 | ⬜ | Vercel log retention | owner | |
 

@@ -13,8 +13,9 @@ maintainers see the report. Include what's affected (a URL or file), the steps t
 reproduce, and the impact you expect. We aim to acknowledge reports within a few
 days and to credit reporters who wish to be credited.
 
-If the button isn't there, open a public issue that only asks for a private
-contact, with no details of the problem.
+If the button isn't there, email
+[haknessetshelanu@gmail.com](mailto:haknessetshelanu@gmail.com) instead. Never put
+the details of a problem in a public issue.
 
 ## Scope
 

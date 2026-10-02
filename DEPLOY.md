@@ -37,9 +37,9 @@ The Hobby tier is free for non-commercial use, which this civic project is.
    the first build:
    - `NEXT_PUBLIC_SITE_URL`: the public origin, e.g. `https://example.org`. The
      sitemaps, `robots.txt`, canonical links and share cards are built with it.
-   - `NEXT_PUBLIC_CONTACT_EMAIL`: the site's contact address (the accessibility
-     statement, privacy and terms pages). Without it they point to public GitHub
-     issues.
+   - `NEXT_PUBLIC_CONTACT_EMAIL` (optional): overrides the site's contact address,
+     which defaults to the project mailbox, haknessetshelanu@gmail.com (the
+     accessibility statement, privacy and terms pages).
 3. **Deploy hook** for the daily data: Project → Settings → Git → Deploy Hooks → create
    one for `master`, then add its URL to the GitHub repo as the Actions secret
    `VERCEL_DEPLOY_HOOK`.
@@ -77,7 +77,7 @@ publish while the daily sync is running.
 
 See [LAUNCH_CHECKLIST.md](LAUNCH_CHECKLIST.md). In short:
 
-- [ ] `NEXT_PUBLIC_SITE_URL` and `NEXT_PUBLIC_CONTACT_EMAIL` set.
+- [ ] `NEXT_PUBLIC_SITE_URL` set (the contact address is built in).
 - [ ] The deploy hook secret set and one manual sync run end to end.
 - [ ] Log retention set to the shortest.
 - [ ] The work-in-progress banner removed.

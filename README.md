@@ -215,7 +215,8 @@ translation, write code. Start with [CONTRIBUTING.md](CONTRIBUTING.md), and plea
 follow the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 - Wrong information on the site? Use the report links on the site (they open a
-  ticket on GitHub), or open an issue with a source.
+  ticket on GitHub), open an issue with a source, or email
+  [haknessetshelanu@gmail.com](mailto:haknessetshelanu@gmail.com).
 - A security problem? Report it privately, never in a public issue. See
   [SECURITY.md](SECURITY.md).
 - Launch status: [LAUNCH_CHECKLIST.md](LAUNCH_CHECKLIST.md). Plans:

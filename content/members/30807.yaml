@@ -1,5 +1,5 @@
 personId: 30807
-lastReviewed: "2026-09-18"
+lastReviewed: "2026-10-03"
 claims:
   - kind: positive
     category: achievement
@@ -65,8 +65,8 @@ claims:
       he: נחקר במשטרה בחשד להדלפת פרוטוקול חסוי מוועדת החוץ והביטחון; התיק ממתין להכרעת הפרקליטות
       en: Questioned by police over alleged leak of a classified Foreign Affairs and Defense Committee protocol; case awaiting a prosecution decision
     description:
-      he: ב-7 באפריל 2025 נחקר ח"כ גלעד קריב תחת אזהרה ביחידת להב 433 בחשד להדלפת פרוטוקול מדיון חסוי של ועדת החוץ והביטחון מיוני 2023, בעקבות תלונה של יו"ר הכנסת אמיר אוחנה. קריב הכחיש כל עוולה, מסר כי "מעולם לא פגעתי בביטחון המדינה" וכי הציטוטים אושרו לפרסום בצנזורה, וטען שהתלונה פוליטית ופוגעת בחסינות הפרלמנטרית. ביולי 2025 הסתיימה החקירה והתיק הועבר לפרקליטות המדינה לבחינת הגשת כתב אישום. ב-9 ביולי 2026 עתר ארגון "לביא" לבג"ץ בדרישה שרשויות האכיפה יכריעו בתיק, בטענה לשיהוי; נכון לספטמבר 2026 לא הוגש כתב אישום ולא פורסמה החלטה סופית. חלה חזקת החפות.
-      en: On 7 April 2025, MK Gilad Kariv was questioned under caution by the Lahav 433 unit on suspicion of leaking a protocol from a June 2023 classified session of the Knesset Foreign Affairs and Defense Committee, following a complaint by Knesset Speaker Amir Ohana. Kariv denied any wrongdoing, stating he "never harmed Israel's security" and that the quoted material had been cleared by military censors, and called the complaint political and a breach of parliamentary immunity. In July 2025 the investigation concluded and the file was transferred to the State Attorney's Office to decide on an indictment. On 9 July 2026 the Lavi organization petitioned the High Court of Justice to compel the enforcement authorities to decide the case, alleging undue delay; as of September 2026 no indictment has been filed and no final decision has been published. The presumption of innocence applies.
+      he: ב-7 באפריל 2025 נחקר ח"כ גלעד קריב תחת אזהרה ביחידת להב 433 בחשד להדלפת פרוטוקול מדיון חסוי של ועדת החוץ והביטחון מיוני 2023, בעקבות תלונה של יו"ר הכנסת אמיר אוחנה. קריב הכחיש כל עוולה, מסר כי "מעולם לא פגעתי בביטחון המדינה" וכי הציטוטים אושרו לפרסום בצנזורה, וטען שהתלונה פוליטית ופוגעת בחסינות הפרלמנטרית. ביולי 2025 הסתיימה החקירה והתיק הועבר לפרקליטות המדינה לבחינת הגשת כתב אישום. ב-9 ביולי 2026 עתר ארגון "לביא" לבג"ץ בדרישה שרשויות האכיפה יכריעו בתיק, בטענה לשיהוי; ב-20 ביולי 2026 דחה בג"ץ את העתירה על הסף, בקובעו כי משך הזמן שחלף מאז סיום החקירה אינו קיצוני עד כדי הצדקת התערבותו. נכון לאוקטובר 2026 לא הוגש כתב אישום ולא פורסמה החלטה סופית. חלה חזקת החפות.
+      en: On 7 April 2025, MK Gilad Kariv was questioned under caution by the Lahav 433 unit on suspicion of leaking a protocol from a June 2023 classified session of the Knesset Foreign Affairs and Defense Committee, following a complaint by Knesset Speaker Amir Ohana. Kariv denied any wrongdoing, stating he "never harmed Israel's security" and that the quoted material had been cleared by military censors, and called the complaint political and a breach of parliamentary immunity. In July 2025 the investigation concluded and the file was transferred to the State Attorney's Office to decide on an indictment. On 9 July 2026 the Lavi organization petitioned the High Court of Justice to compel the enforcement authorities to decide the case, alleging undue delay; on 20 July 2026 the court dismissed the petition at the threshold, holding that the time since the investigation ended was not so extreme as to justify its intervention. As of October 2026 no indictment has been filed and no final decision has been published. The presumption of innocence applies.
     sources:
       - url: https://www.jpost.com/breaking-news/article-849149
         title: Israel Police summons MK Gilad Kariv over suspected protocol leak
@@ -83,6 +83,9 @@ claims:
       - url: https://www.israelhayom.co.il/news/politics/article/20948698
         title: "עתירה לבג\"ץ: \"להכריע מייד האם להעמיד לדין את ח\"כ גלעד קריב\""
         publisher: Israel Hayom
+      - url: "https://supremedecisions.court.gov.il/Home/Download?path=NetVerdicts%5C2026%5C7%5C20%5C2026-7-26148-1-2&fileName=ce64732b52764cddb5f3dcfb2d91aff0&type=4"
+        title: "בג\"ץ 26148-07-26 לביא נ' היועצת המשפטית לממשלה — פסק דין (20.7.2026)"
+        publisher: "בית המשפט העליון"
   - kind: neutral
     category: news
     date: "2026-07-20"

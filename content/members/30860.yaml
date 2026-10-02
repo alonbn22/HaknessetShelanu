@@ -1,7 +1,7 @@
 # PersonID 30860 (Tally Gotliv). Researched from reputable public sources; every
 # cited URL re-verified on 2026-09-18. Neutral language; legal status marked.
 personId: 30860
-lastReviewed: "2026-09-18"
+lastReviewed: "2026-10-03"
 claims:
   - kind: positive
     category: achievement
@@ -56,18 +56,18 @@ claims:
         publisher: "Wikipedia"
   - kind: negative
     category: investigation
-    status: indicted
-    date: "2026-06-17"
+    status: ongoing
+    date: "2026-09-24"
     title:
-      he: "כתב אישום על חשיפת זהות איש שב\"כ; הכנסת העניקה חסינות ועתירה לבג\"ץ תלויה ועומדת"
-      en: "Indicted over exposing a Shin Bet officer's identity; Knesset granted immunity and a High Court petition is pending"
-      ar: "لائحة اتهام بكشف هوية ضابط في الشاباك؛ الكنيست منحها الحصانة والتماس أمام محكمة العدل العليا قيد النظر"
-      ru: "Обвинение в раскрытии личности сотрудника ШАБАКа; Кнессет предоставил иммунитет, петиция в Высший суд рассматривается"
+      he: "היועמ\"שית החליטה להגיש נגדה כתב אישום על חשיפת זהות איש שב\"כ; הכנסת העניקה לה חסינות"
+      en: "Attorney General decided to indict her over exposing a Shin Bet officer's identity; the Knesset granted her immunity"
+      ar: "المستشارة القضائية للحكومة قررت تقديم لائحة اتهام ضدها بكشف هوية ضابط في الشاباك؛ الكنيست منحها الحصانة"
+      ru: "Юридический советник правительства решила предъявить ей обвинение в раскрытии личности сотрудника ШАБАКа; Кнессет предоставил ей иммунитет"
     description:
-      he: "ב-19 במאי 2026 החליטה היועצת המשפטית לממשלה להגיש כתב אישום נגד גוטליב בגין גילוי ופרסום מידע חסוי בניגוד לחוק שירות הביטחון הכללי, לאחר פרסום ברשתות החברתיות שחשף את זהותו של איש שב\"כ, בן זוגה של הפעילה שקמה ברסלר; חוות דעת שב\"כ קבעה כי הפרסום סיכן את חייו ואת משפחתו. ב-17 ביוני 2026 העניקה מליאת הכנסת לגוטליב חסינות מפני העמדה לדין (ברוב של 61-48 ו-62-48), ואיש השב\"כ עתר לבג\"ץ לביטול ההחלטה; נכון לספטמבר 2026 לא דווח על הכרעה בעתירה. גוטליב מכחישה ביצוע עבירה, אומרת כי פעלה במסגרת תפקידה הפרלמנטרי ורק שיתפה פרסום שכבר היה גלוי, וטוענת כי ההליך נגדה הוא רדיפה. חזקת החפות עומדת לה."
-      en: "On 19 May 2026 the Attorney General decided to indict Gotliv for disclosing and publishing classified information in violation of the General Security Service (Shin Bet) law, over a social-media post that exposed the identity of a Shin Bet officer, the partner of activist Shikma Bressler; a Shin Bet assessment found the post endangered him and his family. On 17 June 2026 the Knesset plenum granted Gotliv immunity from prosecution (by votes of 61-48 and 62-48), and the officer petitioned the High Court of Justice to overturn the decision; as of September 2026 no ruling on the petition has been reported. Gotliv denies wrongdoing, says she acted within her parliamentary role and only reshared an already-public post, and calls the proceedings persecution. The presumption of innocence applies."
-      ar: "في 19 مايو 2026 قررت المستشارة القضائية للحكومة تقديم لائحة اتهام ضد غوتليب بتهمة كشف ونشر معلومات سرية بالمخالفة لقانون الشاباك، على خلفية منشور كشف هوية ضابط في الشاباك. وفي 17 يونيو 2026 منحت الهيئة العامة للكنيست غوتليب حصانة من المحاكمة (61-48 و62-48)، وقدّم الضابط التماسًا إلى محكمة العدل العليا لإلغاء القرار؛ وحتى سبتمبر 2026 لم يُعلن عن قرار. تنفي غوتليب ارتكاب أي مخالفة وتقول إنها تصرفت ضمن دورها البرلماني. وتُطبَّق قرينة البراءة."
-      ru: "19 мая 2026 года юридический советник правительства решила предъявить Готлив обвинение в раскрытии и публикации секретной информации в нарушение закона о ШАБАКе из-за поста, раскрывшего личность сотрудника ШАБАКа. 17 июня 2026 года пленум Кнессета предоставил Готлив иммунитет от преследования (61-48 и 62-48), а сотрудник подал петицию в Высший суд справедливости об отмене решения; по состоянию на сентябрь 2026 года решение не сообщалось. Готлив отрицает вину и заявляет, что действовала в рамках депутатских полномочий. Действует презумпция невиновности."
+      he: "ב-19 במאי 2026 החליטה היועצת המשפטית לממשלה להגיש כתב אישום נגד גוטליב בגין גילוי ופרסום מידע חסוי בניגוד לחוק שירות הביטחון הכללי, לאחר פרסום ברשתות החברתיות שחשף את זהותו של איש שב\"כ, בן זוגה של הפעילה שקמה ברסלר; חוות דעת שב\"כ קבעה כי הפרסום סיכן את חייו ואת משפחתו. ב-17 ביוני 2026 העניקה מליאת הכנסת לגוטליב חסינות מפני העמדה לדין (ברוב של 61-48 ו-62-48), ואיש השב\"כ ושני ארגונים עתרו לבג\"ץ לביטול ההחלטה. לפי חוק החסינות, בתקופת כהונתה של הכנסת הזו לא יאשר היועץ המשפטי לממשלה הגשת כתב אישום בשל אותה אשמה. ב-24 בספטמבר 2026 ביטל בג\"ץ את הדיון בעתירות שנקבע ל-12 באוקטובר, משום שהחסינות פוקעת מאליה בתום כהונת הכנסת ה-25; העתירות לא נמחקו, הכנסת והממשלה יגישו הודעות עדכון בתוך 60 ימים מהשבעת הכנסת ה-26, ובית המשפט לא הביע עמדה לגוף הדברים. גוטליב מכחישה ביצוע עבירה, אומרת כי פעלה במסגרת תפקידה הפרלמנטרי ורק שיתפה פרסום שכבר היה גלוי, וטוענת כי ההליך נגדה הוא רדיפה. חזקת החפות עומדת לה."
+      en: "On 19 May 2026 the Attorney General decided to indict Gotliv for disclosing and publishing classified information in violation of the General Security Service (Shin Bet) law, over a social-media post that exposed the identity of a Shin Bet officer, the partner of activist Shikma Bressler; a Shin Bet assessment found the post endangered him and his family. On 17 June 2026 the Knesset plenum granted Gotliv immunity from prosecution (by votes of 61-48 and 62-48), and the officer and two organizations petitioned the High Court of Justice to overturn the decision. Under the immunity law, the Attorney General may not approve filing the indictment during this Knesset's term. On 24 September 2026 the High Court cancelled the hearing on the petitions set for 12 October, because the immunity lapses on its own when the 25th Knesset's term ends; it did not strike out the petitions, ordered the Knesset and the government to file updates within 60 days after the 26th Knesset is sworn in, and expressed no view on the merits. Gotliv denies wrongdoing, says she acted within her parliamentary role and only reshared an already-public post, and calls the proceedings persecution. The presumption of innocence applies."
+      ar: "في 19 مايو 2026 قررت المستشارة القضائية للحكومة تقديم لائحة اتهام ضد غوتليب بتهمة كشف ونشر معلومات سرية بالمخالفة لقانون الشاباك، على خلفية منشور كشف هوية ضابط في الشاباك. وفي 17 يونيو 2026 منحت الهيئة العامة للكنيست غوتليب حصانة من المحاكمة (61-48 و62-48)، وقدّم الضابط ومنظمتان التماسات إلى محكمة العدل العليا لإلغاء القرار. ووفق قانون الحصانة، لا يُصادق المستشار القضائي للحكومة على تقديم لائحة الاتهام خلال ولاية هذا الكنيست. وفي 24 سبتمبر 2026 ألغت محكمة العدل العليا جلسة الالتماسات المقررة في 12 أكتوبر، لأن الحصانة تنقضي تلقائيًا بانتهاء ولاية الكنيست الـ25؛ ولم تشطب الالتماسات، وأمرت الكنيست والحكومة بتقديم تحديثات خلال 60 يومًا من أداء الكنيست الـ26 اليمين، ولم تُبدِ رأيًا في جوهر القضية. تنفي غوتليب ارتكاب أي مخالفة وتقول إنها تصرفت ضمن دورها البرلماني. وتُطبَّق قرينة البراءة."
+      ru: "19 мая 2026 года юридический советник правительства решила предъявить Готлив обвинение в раскрытии и публикации секретной информации в нарушение закона о ШАБАКе из-за поста, раскрывшего личность сотрудника ШАБАКа. 17 июня 2026 года пленум Кнессета предоставил Готлив иммунитет от преследования (61-48 и 62-48), а сотрудник и две организации подали петиции в Высший суд справедливости об отмене решения. По закону об иммунитете юридический советник правительства не утверждает подачу обвинительного заключения в период полномочий этого Кнессета. 24 сентября 2026 года Высший суд справедливости отменил назначенное на 12 октября слушание по петициям, поскольку иммунитет истекает сам собой с окончанием полномочий Кнессета 25-го созыва; петиции не исключены из производства, Кнессет и правительство должны представить обновления в течение 60 дней после присяги Кнессета 26-го созыва, а суд не высказался по существу. Готлив отрицает вину и заявляет, что действовала в рамках депутатских полномочий. Действует презумпция невиновности."
     sources:
       - url: "https://www.mako.co.il/news-politics/2026_q2/Article-d32a6fa17104e91026.htm"
         title: "היועמ\"שית החליטה על הגשת כתב אישום נגד חברת הכנסת טלי גוטליב"
@@ -84,16 +84,19 @@ claims:
       - url: "https://www.jpost.com/israel-news/article-899729"
         title: "Shin Bet officer challenges Tally Gotliv immunity decision"
         publisher: "The Jerusalem Post"
+      - url: "https://supremedecisions.court.gov.il/Home/Download?path=NetVerdicts%5C2026%5C9%5C24%5C2026-6-54911-9-1&fileName=cbef517750534f21aed345f0c0823ffb&type=4"
+        title: "בג\"ץ 54911-06-26 ואח' — החלטה (24.9.2026)"
+        publisher: "בית המשפט העליון"
   - kind: negative
     category: controversy
     status: ongoing
-    date: "2026-06-17"
+    date: "2026-06-16"
     title:
-      he: "בית המשפט המחוזי דחה את טענת החסינות שלה בתביעת הדיבה של שקמה ברסלר"
-      en: "District Court rejected her immunity claim in Shikma Bressler's defamation suit"
+      he: "תביעת הדיבה של שקמה ברסלר: בית המשפט קיבל את טענת החסינות לגבי רוב הפרסומים, אך לא לגבי חשיפת זהות איש השב\"כ"
+      en: "Shikma Bressler's defamation suit: the court upheld her immunity for most of the posts, but not for exposing a Shin Bet officer's identity"
     description:
-      he: "ביוני 2026 דחה בית המשפט המחוזי מרכז-לוד את בקשתה של גוטליב לסלק על הסף תביעת לשון הרע בסך 2.6 מיליון שקל שהגישה נגדה הפעילה שקמה ברסלר, בגין טענות שייחסו לברסלר קשר לחמאס. השופט קבע כי החסינות המהותית מגינה על הבעת דעה אך לא על הפצת עובדות שח\"כ ידעה שאינן נכונות, וכי חבר כנסת אינו יכול להפר את החוק במודע. התביעה תתברר לגופה; גוטליב סירבה לחשוף את מקורותיה ואמרה כי תמשיך לעמוד על דבריה."
-      en: "In June 2026 the Central District Court in Lod rejected Gotliv's motion to dismiss a NIS 2.6 million defamation suit filed against her by activist Shikma Bressler over claims linking Bressler to Hamas. The judge ruled that substantive immunity protects the expression of opinions but not the dissemination of facts an MK knew to be untrue, and that a Knesset member cannot knowingly break the law. The suit will proceed to trial; Gotliv declined to reveal her sources and said she stands by her statements."
+      he: "ב-16 ביוני 2026 הכריע בית המשפט המחוזי מרכז-לוד בבקשתה של גוטליב לסלק על הסף תביעת לשון הרע בסך 2.6 מיליון שקל שהגישה נגדה הפעילה שקמה ברסלר. השופט רמי חיימוביץ קבע כי החסינות חלה על רוב הפרסומים שבתביעה – ההאשמות וההתקפות נגד ברסלר, שהיא דמות ציבורית – וסילק אותם. לגבי הפרסומים שחשפו את זהות בן זוגה כאיש שב\"כ קבע כי לא ניתן לקבוע בשלב המקדמי שהחסינות חלה, בהסתמך על פסיקה שלפיה חשיפה מכוונת של זהות איש ביטחון אינה מוגנת וחבר כנסת אינו רשאי להפר את החוק במודע; חלק זה של התביעה ממשיך להתברר. גוטליב טענה כי יש חשיבות ציבורית בחשיפת הקשר המשפחתי וכי הפרסום הוא חלק ממילוי תפקידה."
+      en: "On 16 June 2026 the Central District Court in Lod ruled on Gotliv's motion to dismiss a NIS 2.6 million defamation suit filed against her by activist Shikma Bressler. Judge Rami Haimovich upheld her parliamentary immunity for most of the posts in the suit — her accusations and attacks against Bressler, a public figure — and dismissed those parts. For the posts that identified Bressler's partner as a Shin Bet officer, he ruled that immunity could not be established at this preliminary stage, citing case law that intentionally disclosing a security official's identity is not protected and that a Knesset member may not knowingly break the law; that part of the suit continues. Gotliv argued that exposing the family connection was in the public interest and part of her parliamentary role."
     sources:
       - url: "https://www.the7eye.org.il/587475"
         title: "חבר כנסת אינו יכול ליטול את החוק לידיו: בית המשפט דחה את טענת החסינות של טלי גוטליב"
@@ -101,9 +104,9 @@ claims:
       - url: "https://www.i24news.tv/he/news/news/law/artc-ce4145e4"
         title: "הפרה במודע את החוק: ביהמ\"ש דחה את טענת החסינות של טלי גוטליב"
         publisher: "i24NEWS"
-      - url: "https://he.wikipedia.org/wiki/%D7%98%D7%9C%D7%99_%D7%92%D7%95%D7%98%D7%9C%D7%99%D7%91"
-        title: "טלי גוטליב"
-        publisher: "Wikipedia (Hebrew)"
+      - url: "https://www.timesofisrael.com/judge-in-libel-suit-says-mk-gotliv-cant-get-blanket-immunity-for-exposing-shin-bet-agent/"
+        title: "Judge in libel suit says MK Gotliv can't get blanket immunity for exposing Shin Bet agent"
+        publisher: "The Times of Israel"
   - kind: neutral
     category: news
     date: "2026-09-04"

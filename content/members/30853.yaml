@@ -1,7 +1,7 @@
 # PersonID 30853. Researched from reputable public sources and source-verified
 # (every cited URL re-fetched). Neutral language; legal status marked. Reviewed 2026-09-18.
 personId: 30853
-lastReviewed: "2026-09-18"
+lastReviewed: "2026-10-03"
 claims:
   - kind: positive
     category: achievement
@@ -73,11 +73,11 @@ claims:
     category: controversy
     status: ethics
     title:
-      he: ניגוד עניינים בקידום חוק מח"ש - קביעת ועדת האתיקה
-      en: Conflict of interest in advancing the Mahash bill - Ethics Committee finding
+      he: הבהרת ועדת האתיקה על ניגוד עניינים בקידום חוק מח"ש
+      en: Ethics Committee clarification on a conflict of interest in advancing the Mahash bill
     description:
-      he: ביולי 2023 קבעה ועדת האתיקה של הכנסת, בעקבות פנייה, כי קידום הצעת חוק על ידי חבר כנסת המנהל הליך משפטי נגד גורם הקשור להצעה מהווה ניגוד עניינים - בהתייחס לכך שסעדה קידם את חוק מח"ש בעודו מנהל תביעה נגד אותה מחלקה בטענת התעמרות. בעקבות הקביעה הודיע סעדה כי לא ימשיך לקדם את ההצעה וכי חבר כנסת אחר יקדם אותה.
-      en: In July 2023 the Knesset Ethics Committee, acting on a complaint, found that for an MK to advance a bill while pursuing legal proceedings against an entity connected to that bill constitutes a conflict of interest - referring to Saada advancing the Mahash bill while pursuing a lawsuit against that same department over a workplace-harassment claim. Following the finding, Saada announced he would no longer advance the bill and that another MK would do so instead.
+      he: "ב-30 ביולי 2023, בעקבות פנייתה של ח\"כ אפרת רייטן ליועצת המשפטית של הכנסת, פרסמה ועדת האתיקה של הכנסת הבהרה כללית, בלי לציין את שמו של סעדה, שלפיה קידום הצעת חוק על ידי חבר כנסת המנהל הליך משפטי נגד גורם הקשור להצעה ייחשב ניגוד עניינים; ההבהרה ניתנה לאור קידום חוק מח\"ש על ידי סעדה, שתבע את המחלקה בטענת התעמרות. סעדה מסר כי טענת ניגוד העניינים חסרת בסיס, אך כי פעל בהתאם להמלצות הוועדה, והודיע שחבר כנסת אחר יקדם את ההצעה."
+      en: "On 30 July 2023, following MK Efrat Rayten's approach to the Knesset's legal adviser, the Knesset Ethics Committee issued a general clarification — without naming Saada — that an MK who advances a bill while pursuing legal proceedings against a body connected to it would be in a conflict of interest; it was issued in light of Saada's Mahash bill, which he was advancing while suing that department over a workplace-harassment claim. Saada said the conflict-of-interest claim was baseless but that he had acted on the committee's recommendations, and announced that another MK would advance the bill."
     date: 2023-07-30
     sources:
       - url: https://www.haaretz.co.il/news/politi/2023-07-30/ty-article/00000189-a72d-d6a5-a3e9-f73d49e80000
@@ -150,3 +150,20 @@ claims:
       - url: "https://he.wikipedia.org/wiki/%D7%94%D7%91%D7%97%D7%99%D7%A8%D7%95%D7%AA_%D7%9C%D7%9B%D7%A0%D7%A1%D7%AA_%D7%94%D7%A2%D7%A9%D7%A8%D7%99%D7%9D_%D7%95%D7%A9%D7%A9"
         title: "הבחירות לכנסת העשרים ושש"
         publisher: "Wikipedia (Hebrew)"
+  - kind: negative
+    category: controversy
+    status: ethics
+    date: "2026-05-12"
+    title:
+      he: נזיפה חמורה ושלילת זכות הדיבור בוועדות מטעם ועדת האתיקה (2026)
+      en: Severe reprimand and a committee speaking ban from the Ethics Committee (2026)
+    description:
+      he: "ב-12 במאי 2026 קבעה ועדת האתיקה של הכנסת (החלטה 25/45), בכמה קובלנות, כי סעדה הפר את כללי האתיקה בהתבטאויות בראיונות ובהתנהלותו כממלא מקום יושב ראש ועדת החוקה בישיבות ב-5 וב-6 בינואר 2026, שבהן כינה את ח\"כ עופר כסיף \"נקלה\". הוועדה הטילה עליו נזיפה חמורה ושלילת זכות הדיבור בוועדות הכנסת בלבד לשלושה ימי ישיבות (18–20 במאי 2026), וציינה כי זו הפעם הראשונה שבה נדונו קובלנות בעניינו. לפי ההחלטה, לא התקבלה תגובתו לחלק מהקובלנות."
+      en: "On 12 May 2026 the Knesset Ethics Committee (decision 25/45), ruling on several complaints, found that Saada had breached the ethics rules in statements in media interviews and in his conduct as acting chair of the Constitution Committee at sessions on 5 and 6 January 2026, where he called MK Ofer Cassif \"despicable\". It imposed a severe reprimand and barred him from speaking in Knesset committees only, for three session days (18–20 May 2026), noting that it was the first time complaints against him had been heard. According to the decision, no response was received from him to some of the complaints."
+    sources:
+      - url: "https://main.knesset.gov.il/Activity/committees/Ethics/Decisions25/Decisions25-54.pdf"
+        title: "החלטה מס' 25/45 – החלטת ועדת האתיקה בקובלנות נגד חבר הכנסת משה סעדה (12.5.2026)"
+        publisher: "Knesset Ethics Committee"
+      - url: "https://www.mako.co.il/news-politics/2026_q2/Article-c04ce82d89c1e91027.htm"
+        title: "ועדת האתיקה הטילה עונשים על ואטורי, סעדה ולזימי"
+        publisher: "N12"

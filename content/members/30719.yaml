@@ -2,7 +2,7 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. Re-verified 2026-09-18.
 personId: 30719
-lastReviewed: "2026-10-02"
+lastReviewed: "2026-10-03"
 claims:
   - kind: positive
     category: achievement
@@ -96,13 +96,17 @@ claims:
       he: ב-9 ביולי 2025 החליטה ועדת האתיקה של הכנסת להשעות את כסיף לחודשיים נוספים
         (19 באוקטובר עד 19 בדצמבר 2025) מדיוני המליאה והוועדות, למעט הצבעות,
         ולעכב את שכרו לשבועיים, בעקבות 12 תלונות על התבטאויותיו נגד צה"ל
-        והממשלה במהלך המלחמה. כסיף כינה את ההחלטה "צנזורה ורדיפה פוליטית".
+        והממשלה במהלך המלחמה. כסיף כינה את ההחלטה "צנזורה ורדיפה פוליטית". ערעורו
+        למליאת הכנסת נדחה ב-21 ביולי 2025 ברוב של 85 מול 10, וב-21 באוקטובר 2025
+        דחה בג"ץ את עתירתו על הסף בשל שיהוי, בלי להכריע לגופו של עניין.
       en: On 9 July 2025 the Knesset Ethics Committee suspended Cassif for a further
         two months (19 October to 19 December 2025) from plenary and committee
         sessions, except for votes, and docked two weeks' pay, following 12
         complaints over his wartime statements against the IDF and the
         government. Cassif called the decision "political censorship and
-        persecution".
+        persecution". His appeal to the Knesset plenum was rejected on 21 July 2025
+        by 85 votes to 10, and on 21 October 2025 the High Court dismissed his
+        petition at the threshold because of delay, without ruling on the merits.
     date: 2025-07-09
     sources:
       - url: https://www.timesofisrael.com/knesset-panel-suspends-hadash-taal-mk-cassif-for-two-months-over-wartime-criticism/
@@ -111,6 +115,9 @@ claims:
       - url: https://www.ynetnews.com/article/byktyy3ble
         title: Knesset bans lawmaker Ofer Cassif for 2 months over repeated attacks on IDF soldiers
         publisher: Ynetnews
+      - url: "https://supremedecisions.court.gov.il/Home/Download?path=NetVerdicts%5C2025%5C10%5C21%5C2025-10-14202-1-2&fileName=0b686625dcd5405881fa96cd5d545f87&type=4"
+        title: "בג\"ץ 14202-10-25 כסיף נ' ועדת האתיקה של הכנסת — פסק דין (21.10.2025)"
+        publisher: "בית המשפט העליון"
   - kind: neutral
     category: news
     date: 2025-10-13

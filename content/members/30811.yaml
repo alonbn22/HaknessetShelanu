@@ -1,7 +1,7 @@
 # Itamar Ben-Gvir (PersonID 30811). Factual reporting from reputable public
 # sources, cited per claim. Neutral language; legal status marked. REVIEW before launch.
 personId: 30811
-lastReviewed: "2026-09-18"
+lastReviewed: "2026-10-03"
 claims:
   - kind: negative
     category: conviction
@@ -46,8 +46,8 @@ claims:
       he: "בג\"ץ הגביל את מעורבותו בפעילות המבצעית של המשטרה; היועצת המשפטית לממשלה דיווחה כי ההסדר לא קוים"
       en: "The High Court limited his involvement in operational policing; the Attorney General reported that the arrangement was not honored"
     description:
-      he: "ב-16 באפריל 2026 דחה בג\"ץ עתירות להורות על פיטוריו, אך הפך למחייב מסמך עקרונות המבחין בין קביעת מדיניות (מותרת) לבין מעורבות בפעילות מבצעית (אסורה): מינויים בכירים במשטרה מחייבים המלצת המפכ\"ל והודעה מראש ליועצת המשפטית לממשלה, והשר נדרש להימנע מהתבטאויות על שימוש בכוח נגד אזרחים ומכל מעורבות בשיטור הפגנות ובחקירות ספציפיות. ב-20 ביולי 2026 עדכנה היועצת המשפטית לממשלה את בית המשפט כי בן גביר סירב לאשר את הנוסח הסופי של המסמך וכי המאמצים למנוע פגיעה בעצמאות המשטרה נכשלו. בן גביר כינה את הניסיון להדיחו אבסורדי, הצהיר כי ימשיך למנות לפי מי שמיישם את המדיניות, וכתב כי היועצת תמשיך לנסות להפיל את ממשלת הימין."
-      en: "On 16 April 2026 the High Court of Justice declined to order his dismissal but made binding a principles document distinguishing policy-setting (permitted) from involvement in operational policing (prohibited): senior police appointments require the commissioner's recommendation and advance notice to the Attorney General, and the minister must refrain from statements on police use of force against civilians and from any involvement in protest policing or specific investigations. On 20 July 2026 the Attorney General updated the court that Ben-Gvir had refused to approve the final version of the document and that efforts to prevent harm to police independence had failed. Ben-Gvir called the attempt to remove him \"absurd\", said he would continue to make appointments \"according to who implements the policy\", and wrote that the Attorney General would \"keep trying to bring down the right-wing government\"."
+      he: "ב-16 באפריל 2026 דחה בג\"ץ עתירות להורות על פיטוריו, אך הפך למחייב מסמך עקרונות המבחין בין קביעת מדיניות (מותרת) לבין מעורבות בפעילות מבצעית (אסורה): מינויים בכירים במשטרה מחייבים המלצת המפכ\"ל והודעה מראש ליועצת המשפטית לממשלה, והשר נדרש להימנע מהתבטאויות על שימוש בכוח נגד אזרחים ומכל מעורבות בשיטור הפגנות ובחקירות ספציפיות. ב-20 ביולי 2026 עדכנה היועצת המשפטית לממשלה את בית המשפט כי בן גביר סירב לאשר את הנוסח הסופי של המסמך וכי המאמצים למנוע פגיעה בעצמאות המשטרה נכשלו. ב-5 באוגוסט 2026 השיבו ראש הממשלה והממשלה לבית המשפט כי מינויו נעשה כדין וכי אין עילה להדחתו. בן גביר כינה את הניסיון להדיחו אבסורדי, הצהיר כי ימשיך למנות לפי מי שמיישם את המדיניות, וכתב כי היועצת תמשיך לנסות להפיל את ממשלת הימין."
+      en: "On 16 April 2026 the High Court of Justice declined to order his dismissal but made binding a principles document distinguishing policy-setting (permitted) from involvement in operational policing (prohibited): senior police appointments require the commissioner's recommendation and advance notice to the Attorney General, and the minister must refrain from statements on police use of force against civilians and from any involvement in protest policing or specific investigations. On 20 July 2026 the Attorney General updated the court that Ben-Gvir had refused to approve the final version of the document and that efforts to prevent harm to police independence had failed. On 5 August 2026 the Prime Minister and the government told the court that his appointment was lawful and that there were no grounds to dismiss him. Ben-Gvir called the attempt to remove him \"absurd\", said he would continue to make appointments \"according to who implements the policy\", and wrote that the Attorney General would \"keep trying to bring down the right-wing government\"."
     sources:
       - url: "https://www.jpost.com/israel-news/article-893272"
         title: "High Court stops short of ousting Itamar Ben-Gvir, limits police influence"
@@ -58,6 +58,9 @@ claims:
       - url: "https://www.timesofisrael.com/ag-tells-court-efforts-to-stop-ben-gvir-from-undermining-police-independence-have-failed/"
         title: "AG tells court efforts to stop Ben Gvir from undermining police independence have failed"
         publisher: "The Times of Israel"
+      - url: "https://www.walla.co.il/news/politics/3858725"
+        title: "נתניהו לבג\"ץ: אין עילה להדיח את בן גביר - מינויו נעשה כדין (5.8.2026)"
+        publisher: "וואלה"
   - kind: negative
     category: controversy
     date: "2026-05-20"
@@ -106,3 +109,17 @@ claims:
       - url: "https://www.haaretz.com/israel-news/israel-politics/2026-09-18/ty-article/.premium/police-national-security-ministry-refusing-to-meet-amid-tensions-with-ben-gvir/000001a0-aff1-d3b8-a7f4-bffb69a40000"
         title: "Police, National Security Ministry Reps Refusing to Meet Amid Commissioner's Clash With Ben-Gvir"
         publisher: "Haaretz"
+  - kind: negative
+    category: controversy
+    status: ethics
+    date: "2026-05-12"
+    title:
+      he: הערה מטעם ועדת האתיקה על קידום עסק מסחרי (2026)
+      en: Ethics Committee remark for promoting a commercial business (2026)
+    description:
+      he: "ב-12 במאי 2026 קבעה ועדת האתיקה של הכנסת (החלטה 25/25), בקובלנה של התנועה לאיכות השלטון, כי בן גביר הפר את כללי האתיקה: סרטון שבו הוא נראה מבלה עם ילדיו בפארק שעשועים, שפורסם בחשבון סיעת עוצמה יהודית ובחשבון הפארק, עלה לכדי קידום פסול של גורם מסחרי. הוועדה הטילה עליו סנקציה של הערה. לפי ההחלטה, בן גביר לא הגיב לקובלנה."
+      en: "On 12 May 2026 the Knesset Ethics Committee (decision 25/25), ruling on a complaint by the Movement for Quality Government, found that Ben Gvir had breached the ethics rules: a video of him with his children at an amusement park, published on the Otzma Yehudit faction's account and on the park's, amounted to improper promotion of a commercial business. It imposed a formal remark. According to the decision, he did not respond to the complaint."
+    sources:
+      - url: "https://main.knesset.gov.il/Activity/committees/Ethics/Decisions25/Decisions25-52.pdf"
+        title: "החלטה מס' 25/25 – החלטת ועדת האתיקה בקובלנות שהוגשו בגין קידום גורמים מסחריים (12.5.2026)"
+        publisher: "Knesset Ethics Committee"

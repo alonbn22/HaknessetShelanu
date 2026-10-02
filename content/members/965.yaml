@@ -1,20 +1,20 @@
 personId: 965
-lastReviewed: "2026-09-18"
+lastReviewed: "2026-10-03"
 claims:
   - kind: negative
     category: investigation
     status: ongoing
-    date: "2026-09-06"
+    date: "2026-09-17"
     title:
       he: משפט פלילי בעניין שחיתות (תיקים 1000, 2000, 4000)
       en: Ongoing corruption trial (Cases 1000, 2000, 4000)
     description:
-      he: "נתניהו עומד למשפט באשמות שוחד, מרמה והפרת אמונים בשלושה תיקים (1000, 2000, 4000); כתב האישום הוגש ב-2020. ב-24 ביוני 2026 השלים את עדותו לאחר 98 דיונים, ובתחילת ספטמבר 2026 שב בית המשפט המחוזי בירושלים לדון בתיק לאחר פגרת הקיץ. בנובמבר 2025 הגיש נתניהו לנשיא הרצוג בקשת חנינה; ב-26 באפריל 2026 דחה הנשיא את ההכרעה בבקשה וקרא למיצוי הליך גישור להסדר טיעון. טרם ניתן פסק דין; נתניהו מכחיש את כל האשמות ומתאר את ההליך כמונע פוליטית, וחלה חזקת החפות."
-      en: "Netanyahu is on trial on charges of bribery, fraud and breach of trust across three cases (1000, 2000, 4000); the indictment was filed in 2020. On 24 June 2026 he concluded his testimony after 98 hearings, and in early September 2026 the Jerusalem District Court resumed the case after the summer recess. In November 2025 Netanyahu asked President Herzog for a pardon; on 26 April 2026 the president deferred a decision and called for mediation toward a plea agreement. No verdict has been reached; Netanyahu denies all charges and calls the proceedings politically motivated, and the presumption of innocence applies."
+      he: "נתניהו עומד למשפט באשמות שוחד, מרמה והפרת אמונים בשלושה תיקים (1000, 2000, 4000); כתב האישום הוגש ב-2020. ב-24 ביוני 2026 השלים את עדותו לאחר 98 דיונים, ובתחילת ספטמבר 2026 שב בית המשפט המחוזי בירושלים לדון בתיק לאחר פגרת הקיץ; ב-17 בספטמבר 2026 ביקשה ההגנה לזמן את היועץ המשפטי לממשלה לשעבר אביחי מנדלבליט לעדות מטעמה ב-11, ב-12 וב-18 עד 22 באוקטובר 2026. בנובמבר 2025 הגיש נתניהו לנשיא הרצוג בקשת חנינה; ב-26 באפריל 2026 דחה הנשיא את ההכרעה בבקשה וקרא למיצוי הליך גישור להסדר טיעון. טרם ניתן פסק דין; נתניהו מכחיש את כל האשמות ומתאר את ההליך כמונע פוליטית, וחלה חזקת החפות."
+      en: "Netanyahu is on trial on charges of bribery, fraud and breach of trust across three cases (1000, 2000, 4000); the indictment was filed in 2020. On 24 June 2026 he concluded his testimony after 98 hearings, and in early September 2026 the Jerusalem District Court resumed the case after the summer recess; on 17 September 2026 the defence asked the court to summon former Attorney General Avichai Mandelblit as a defence witness on 11, 12 and 18–22 October 2026. In November 2025 Netanyahu asked President Herzog for a pardon; on 26 April 2026 the president deferred a decision and called for mediation toward a plea agreement. No verdict has been reached; Netanyahu denies all charges and calls the proceedings politically motivated, and the presumption of innocence applies."
     sources:
-      - url: https://en.wikipedia.org/wiki/Trial_of_Benjamin_Netanyahu
-        title: Trial of Benjamin Netanyahu
-        publisher: Wikipedia
+      - url: https://www.ynet.co.il/news/article/b1vbygyfgx
+        title: "פרקליטי נתניהו: לזמן את מנדלבליט כעד הגנה | זה מוקד עדותו, רגע לפני הבחירות"
+        publisher: Ynet
       - url: https://www.jns.org/news/israel-news/netanyahu-concludes-testimony-as-corruption-trial-advances-to-next-stage
         title: Netanyahu concludes testimony as corruption trial advances to next stage
         publisher: JNS

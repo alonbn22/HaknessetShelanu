@@ -13,7 +13,6 @@ const localeNames: Record<Locale, string> = {
   ar: "العربية",
   ru: "Русский",
   es: "Español",
-  fr: "Français",
 };
 
 // A button and a list of links to this page in each language — the More

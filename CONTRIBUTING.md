@@ -64,10 +64,11 @@ the project to a lawsuit.
   roles.
 - When in doubt, leave it out, and ask in the pull request.
 
-### Six languages, Hebrew first
+### Hebrew first, in every site language
 
-The site speaks Hebrew, English, Arabic, Russian, Spanish and French. Hebrew is the
-source of truth; the other five follow it.
+The site speaks Hebrew, English, Arabic, Russian and Spanish; French is paused
+(its texts stay in the repo for its return). Hebrew is the source of truth; the
+other languages follow it.
 
 - **Interface text** (buttons, headings, labels) lives in `messages/he.json`,
   `en.json`, `ar.json`, `ru.json`, `es.json` and `fr.json`. All six files must have

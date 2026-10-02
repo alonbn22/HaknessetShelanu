@@ -20,7 +20,8 @@ vote, who shows up, what the committees are working on, and, for the election to
 the 26th Knesset on 27 October 2026, who is running and what each list says it
 stands for.
 
-It is Hebrew-first, with English, Arabic, Russian, Spanish and French. It is **not**
+It is Hebrew-first, with English, Arabic, Russian and Spanish (French is paused until
+the Knesset data text has French translations). It is **not**
 an official site of the Knesset, the government or the Central Elections Committee;
 where our data and theirs differ, theirs prevails.
 
@@ -56,9 +57,9 @@ where our data and theirs differ, theirs prevails.
 | 2026 election | `/elections`, `/elections/[slug]`, `/elections/lists`, `/elections/positions`, `/elections/history`, `/quiz` | Key dates; a page per running list (candidates, ballot letters, promises); every submitted list's full roster; seat polls from each outlet's own article and a poll-of-polls average; the lists' positions side by side; past elections; the election compass |
 | Reference | `/glossary`, `/search`, `/sources`, `/tickets`, `/accessibility` | A plain-language political dictionary, search across the site, the data sources, reporting an error, the accessibility statement |
 
-Every page is in all six languages. Data text from the Knesset (vote titles, bill
-and committee names) is machine-translated and labelled as such; Hebrew that isn't
-translated yet is shown right-to-left.
+Every page is in all the site's languages. Data text from the Knesset (vote titles,
+bill and committee names) is machine-translated in checked batches and labelled as
+such; Hebrew that isn't translated yet is shown right-to-left.
 
 ## Stack
 

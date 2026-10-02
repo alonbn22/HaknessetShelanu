@@ -36,8 +36,11 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - **No Hebrew literals in `src/`** (a test enforces it) — use `\u` escapes for
   Hebrew ranges/strings in code; `messages/*.json` and `content/` may contain
   Hebrew freely.
-- Every UI string goes into **all six** `messages/{he,en,ar,ru,es,fr}.json` with
-  identical key sets and identical ICU placeholders (a parity test enforces it).
+- Every UI string goes into `messages/<locale>.json` for **every locale in
+  `routing.locales`** (he, en, ar, ru, es) with identical key sets and identical
+  ICU placeholders (a parity test enforces it). French is paused since
+  3 Oct 2026: `messages/fr.json` and the content's `fr` fields stay for its
+  return but are not required meanwhile.
   Hebrew is the source of truth.
 - Data text (vote titles, bill/committee names…) is NOT translated in the sync
   or at request time: pages read the unified `translations` cache with

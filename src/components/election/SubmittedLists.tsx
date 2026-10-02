@@ -46,8 +46,10 @@ export function ListsTable({ lists, loc, names }: Props) {
             const head = headOf(l, locale, names);
             return (
               <tr key={l.listNumber} className="align-top">
-                <td className="whitespace-nowrap px-3 py-1.5 font-bold" dir="rtl" lang="he">
-                  {l.letters}
+                <td className="whitespace-nowrap px-3 py-1.5 font-bold">
+                  <span dir="rtl" lang="he">
+                    {l.letters}
+                  </span>
                 </td>
                 <td className="px-3 py-1.5">
                   {l.slug ? (

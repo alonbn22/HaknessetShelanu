@@ -2,7 +2,7 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. Re-verified 2026-09-18.
 personId: 30719
-lastReviewed: "2026-09-18"
+lastReviewed: "2026-10-02"
 claims:
   - kind: positive
     category: achievement
@@ -170,3 +170,31 @@ claims:
       - url: https://www.jpost.com/israel-election-2026/article-907154
         title: "Israel Election 2026: What do the Joint Arab List and Ra'am stand for?"
         publisher: The Jerusalem Post
+  - kind: neutral
+    category: news
+    date: 2026-10-02
+    title:
+      he: בית המשפט העליון לא אישר את פסילתו מהתמודדות בבחירות 2026
+      en: Supreme Court declined to approve his disqualification from the 2026 election
+    description:
+      he: ב-23 בספטמבר 2026 החליטה ועדת הבחירות המרכזית (19 נגד 5) לפסול את
+        מועמדותו של כסיף, לבקשת הליכוד; היועצת המשפטית לממשלה התנגדה לפסילה,
+        וכסיף דחה את הטענות. פסילת מועמד טעונה את אישור בית המשפט העליון, וב-2
+        באוקטובר 2026 החליט בית המשפט, בדעת רוב של שבעה שופטים נגד שניים (דוד
+        מינץ ואלכס שטיין), שלא לאשר את הפסילה. כסיף מתמודד בבחירות.
+      en: On 23 September 2026 the Central Elections Committee voted 19–5 to
+        disqualify Cassif's candidacy, at Likud's request; the Attorney General
+        opposed the disqualification and Cassif rejected the allegations. A
+        candidate's disqualification needs the Supreme Court's approval, and on
+        2 October 2026 the court, by a 7–2 majority (Justices David Mintz and
+        Alex Stein dissenting), declined to approve it. Cassif is running.
+    sources:
+      - url: https://www.jpost.com/israel-election-2026/article-910410
+        title: Supreme Court allows Cassif, Ra'am, Joint List to run
+        publisher: The Jerusalem Post
+      - url: https://www.walla.co.il/news/israel/383956056
+        title: "העליון קבע: רע\"ם, הרשימה המשותפת וכסיף יוכלו להשתתף בבחירות"
+        publisher: וואלה
+      - url: https://www.timesofisrael.com/election-panel-votes-to-bar-balad-chief-abu-shehadeh-over-alleged-support-for-terror/
+        title: Election panel votes to bar Balad chief Abu Shehadeh over alleged support for terror
+        publisher: The Times of Israel

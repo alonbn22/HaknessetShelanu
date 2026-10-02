@@ -913,7 +913,9 @@ const controversialLawSchema = z.object({
   year: z.number(),
   title: localizedText,
   summary: localizedText,
-  sourceUrl: httpUrl,
+  // Primary sources for the summary: the Knesset's record of the law, its
+  // text, a court ruling, IDI, an outlet's report. Never Wikipedia (a test).
+  sources: z.array(sourceRef).min(1),
   // The roll-call(s) behind the law where it falls inside the site's vote
   // record (the 25th Knesset): the election cards show how each sitting
   // faction voted. Laws that predate the record simply have none.

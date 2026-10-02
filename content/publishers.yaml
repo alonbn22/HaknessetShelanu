@@ -24,6 +24,7 @@ publishers:
   - { key: "gov.il / ועדת הבחירות המרכזית", en: "gov.il / Central Elections Committee", ar: "gov.il / لجنة الانتخابات المركزية", ru: "gov.il / Центральная избирательная комиссия", es: "gov.il / Comité Central de Elecciones", fr: "gov.il / Commission électorale centrale" }
   - { key: "אמס", en: "Ams", ar: "آمس", ru: "«Амс»", es: "Ams", fr: "Ams" }
   - { key: "ביחד", en: "Together", ar: "معًا", ru: "Вместе", es: "Juntos", fr: "Ensemble" }
+  - { key: "בית המשפט העליון", en: "Supreme Court of Israel", ar: "المحكمة العليا", ru: "Верховный суд Израиля", es: "Tribunal Supremo de Israel", fr: "Cour suprême d’Israël" }
   - { key: "דבר", en: "Davar", ar: "دافار", ru: "«Давар»", es: "Davar", fr: "Davar" }
   - { key: "הארץ", en: "Haaretz", ar: "هآرتس", ru: "«Гаарец»", es: "Haaretz", fr: "Haaretz" }
   - { key: "הדמוקרטים", en: "The Democrats", ar: "الديمقراطيون", ru: "Демократы", es: "Los Demócratas", fr: "Les Démocrates" }
@@ -64,6 +65,7 @@ publishers:
   - { key: "מק\"י", en: "Maki (the Israeli Communist Party)", ar: "ماكي (الحزب الشيوعي الإسرائيلي)", ru: "МАКИ (Коммунистическая партия Израиля)", es: "Maki (Partido Comunista Israelí)", fr: "Maki (Parti communiste israélien)" }
   - { key: "מקור ראשון", en: "Makor Rishon", ar: "ماكور ريشون", ru: "«Макор ришон»", es: "Makor Rishon", fr: "Makor Rishon" }
   - { key: "מרכז המחקר והמידע של הכנסת", en: "Knesset Research and Information Center", ar: "مركز الأبحاث والمعلومات في الكنيست", ru: "Исследовательско-информационный центр Кнессета", es: "Centro de Investigación e Información de la Knéset", fr: "Centre de recherche et d’information de la Knesset" }
+  - { key: "משרד ראש הממשלה", en: "Prime Minister’s Office", ar: "ديوان رئيس الحكومة", ru: "Канцелярия премьер-министра", es: "Oficina del Primer Ministro", fr: "Cabinet du Premier ministre" }
   - { key: "נעם לישראל (אתר המפלגה)", en: "Noam for Israel (party website)", ar: "نوعم لإسرائيل (موقع الحزب)", ru: "«Ноам за Израиль» (сайт партии)", es: "Noam por Israel (sitio del partido)", fr: "Noam pour Israël (site du parti)" }
   - { key: "סרוגים", en: "Srugim", ar: "سروغيم", ru: "«Сругим»", es: "Srugim", fr: "Srugim" }
   - { key: "עוצמה יהודית", en: "Otzma Yehudit", ar: "عوتسما يهوديت", ru: "Оцма Иегудит", es: "Otzma Yehudit", fr: "Otzma Yehoudit" }

@@ -31,7 +31,7 @@ relicense them; reuse must follow the upstream terms:
 | **Knesset Open Data (OData V4)** | members, factions, positions, votes, bills, committees, questions, agendas, the law book, lobbyists | Knesset public open data |
 | **Ministry of Finance via data.gov.il** | budget figures | data.gov.il open data |
 | **Wikidata** | multilingual names, biography facts (birth, education, military, career) | CC0 1.0 (public domain) |
-| **Wikipedia** | facts cited in member records / glossary / controversial-laws | CC BY-SA 4.0 — attributed via per-claim source links |
+| **Wikipedia** | links beside a primary source in member records; "further reading" in the election history (never a fact's only source) | CC BY-SA 4.0 — attributed via per-claim source links |
 | **Wikimedia Commons** | member photos | per-file license + author, shown on each profile |
 | **Machine translation** | Hebrew data text in other languages: earlier via Google Translate's unofficial endpoint (no longer used at run time), then batches translated with AI assistance and spot-checked | labeled "automatic translation" in the UI |
 

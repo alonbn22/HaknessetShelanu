@@ -13,10 +13,17 @@ import { CURRENT_KNESSET, VOTE_FOR, VOTE_AGAINST } from "../../src/lib/constants
 
 const laws = getControversialLaws();
 
-test("every controversial law is sourced over https and described in he+en", () => {
+// Wikipedia is an index for finding sources, never a law's source: each law
+// cites primary sources only (the Knesset, the law's text, a ruling, IDI, an
+// outlet's own report).
+test("every controversial law cites primary sources over https and is described in he+en", () => {
   assert.ok(laws.length >= 3);
   for (const law of laws) {
-    assert.ok(/^https:\/\//.test(law.sourceUrl), `${law.year}: source not https`);
+    assert.ok(law.sources.length > 0, `${law.year}: no source`);
+    for (const s of law.sources) {
+      assert.ok(/^https:\/\//.test(s.url), `${law.year}: source not https: ${s.url}`);
+      assert.ok(!/^https:\/\/([a-z]+\.)?(m\.)?wikipedia\.org\//.test(s.url), `${law.year}: Wikipedia is not a source: ${s.url}`);
+    }
     assert.ok(law.title.he && law.title.en && law.summary.he && law.summary.en, `${law.year}: missing he/en text`);
   }
 });

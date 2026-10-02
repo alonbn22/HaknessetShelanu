@@ -11,6 +11,7 @@ import { ReadingBadge } from "@/components/ReadingBadge";
 import { Badge } from "@/components/ui/Badge";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { TableFrame } from "@/components/ui/TableFrame";
+import { SourceLinks } from "@/components/SourceLinks";
 import {
   getDashboardStats,
   getVotingDays,
@@ -406,13 +407,13 @@ export default async function HomePage() {
                       <span className="text-xs tabular-nums text-muted">{law.year}</span>
                     </div>
                     <p className={`mt-1 text-sm leading-relaxed text-muted ${partyTextClass(law.summary, locale)}`} {...partyTextAttrs(law.summary, locale)}>{partyText(law.summary, locale)}</p>
+                    {/* The sources sit right under the claim they support. */}
+                    <p className="mt-1">
+                      <SourceLinks label={t("common.source")} sources={law.sources} />
+                    </p>
                   </div>
-                  {/* The source sits in the margin beside the claim it supports —
-                      and the roll-call, where the law is inside the record. */}
+                  {/* The roll-call sits in the margin, where the law is inside the record. */}
                   <span className="flex flex-col items-end gap-1 self-start text-xs">
-                    <a href={law.sourceUrl} target="_blank" rel="noopener noreferrer" className="whitespace-nowrap text-accent-ink underline">
-                      {t("common.source")}
-                    </a>
                     {law.votes.map((v) => (
                       <Link key={v.id} href={`/votes/${v.id}`} className="whitespace-nowrap text-accent-ink underline">
                         {t("home.lawVote")}

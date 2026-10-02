@@ -165,7 +165,7 @@ publishes the database to the `data-latest` release and triggers a deploy.
 
 ```bash
 npm run update              # everything
-npm run sync -- --members   # members, factions, roles, Wikidata, biographies
+npm run sync -- --members   # members, factions, roles, Wikidata, Knesset biographies
 npm run sync -- --votes     # votes and results, then totals and statistics
 npm run sync -- --activity  # committees, sittings, questions, agendas, the law book
 npm run sync -- --budget    # the state budget

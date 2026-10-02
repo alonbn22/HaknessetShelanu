@@ -31,7 +31,9 @@ export const persons = sqliteTable("persons", {
 // birth, education, occupations, military service, and a dated career timeline).
 // Free-text values are stored in Hebrew where available so they localize via the
 // unified on-the-fly translation cache. Sourced to the linked Wikidata entity.
-// No longer shown: the member page uses person_knesset_bio below.
+// Retired (2 Oct 2026): no longer synced or shown — the member page uses
+// person_knesset_bio below. Kept declared so `db:push --force` never drops it
+// by accident; drop it deliberately (remove this, db:push, db:publish).
 export const personBio = sqliteTable("person_bio", {
   personId: integer("person_id").primaryKey(),
   wikidataId: text("wikidata_id"), // QID the facts came from (e.g. Q123)

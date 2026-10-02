@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import { notFound } from "next/navigation";
 import { getTranslations, getLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
@@ -8,6 +7,7 @@ import { FeedbackActions } from "@/components/FeedbackActions";
 import { RecordSection } from "./RecordSection";
 import { MemberVoteStats } from "./MemberVoteStats";
 import { MemberActivity } from "./MemberActivity";
+import { MemberBio, knessetBioHebrew } from "./MemberBio";
 import { formatDate } from "@/lib/format";
 import { govDuty, govMinistry, officeLabel } from "@/lib/gov-terms";
 import { getMemberRecord, memberRecordHeStrings, localizeMemberRecord } from "@/lib/content";
@@ -29,7 +29,7 @@ import {
   getMemberRebellions,
   getMinistryNames,
   getMemberCommittees,
-  getMemberBio,
+  getKnessetBio,
   personName,
   factionName,
   isServingMember,
@@ -141,22 +141,12 @@ export default async function MemberPage({
   );
 
 
-  const bio = getMemberBio(personId);
-  // Roles section already shows career/positions, so bio keeps only background:
-  // born, education, occupation, military.
-  const bioParts = bio
-    ? [
-        bio.birthPlaceHe,
-        ...(bio.educationHe?.split(" · ") ?? []),
-        ...(bio.occupationsHe?.split(" · ") ?? []),
-        ...(bio.militaryHe?.split(" · ") ?? []),
-      ]
-    : [];
+  const knessetBio = getKnessetBio(personId);
 
   // Resolve the page's free-text Hebrew from the unified cache (a miss shows in
   // Hebrew).
   const dataHe = [
-    ...bioParts,
+    ...knessetBioHebrew(knessetBio),
     ...sponsoredBills.map((b) => b.nameHe),
     ...recentQuestions.map((q) => q.nameHe),
     ...recentAgendas.map((a) => a.nameHe),
@@ -192,14 +182,6 @@ export default async function MemberPage({
       leaderSeen.add(g.text);
       return true;
     });
-  // Localize a " · "-joined Hebrew list into per-item localized chunks.
-  const localList = (joined: string | null) =>
-    (joined ?? "")
-      .split(" · ")
-      .map((s) => s.trim())
-      .filter(Boolean)
-      .map(localOf);
-
   return (
     <div className="space-y-8">
       <section className="flex flex-wrap items-center gap-6 rounded-xl bg-white p-6 shadow-sm">
@@ -307,66 +289,8 @@ export default async function MemberPage({
         </div>
       </section>
 
-      {bio && (bio.dateOfBirth || bio.educationHe || bio.occupationsHe || bio.militaryHe) && (
-        <section className="rounded-xl bg-white p-6 shadow-sm space-y-4">
-          <h2 className="text-xl font-semibold">{t("member.bioTitle")}</h2>
-          <dl className="grid gap-x-4 gap-y-2 text-sm sm:grid-cols-[max-content_1fr]">
-            {(bio.dateOfBirth || bio.birthPlaceHe) && (
-              <>
-                <dt className="font-medium text-muted">{t("member.born")}</dt>
-                <dd className="flex flex-wrap gap-x-2">
-                  {bio.dateOfBirth && <span>{formatDate(bio.dateOfBirth, locale)}</span>}
-                  {bio.birthPlaceHe &&
-                    (() => {
-                      const b = localOf(bio.birthPlaceHe);
-                      return (
-                        <span dir={b.rtl ? "rtl" : undefined} lang={b.rtl ? "he" : undefined}>
-                          {bio.dateOfBirth ? "· " : ""}
-                          {b.text}
-                        </span>
-                      );
-                    })()}
-                </dd>
-              </>
-            )}
-            {[
-              { label: t("member.education"), items: localList(bio.educationHe) },
-              { label: t("member.occupation"), items: localList(bio.occupationsHe) },
-              { label: t("member.military"), items: localList(bio.militaryHe) },
-            ]
-              .filter((row) => row.items.length > 0)
-              .map((row) => (
-                <Fragment key={row.label}>
-                  <dt className="font-medium text-muted">{row.label}</dt>
-                  <dd className="flex flex-wrap gap-x-1.5">
-                    {row.items.map((it, i) => (
-                      <span key={i} dir={it.rtl ? "rtl" : undefined} lang={it.rtl ? "he" : undefined}>
-                        {i > 0 ? "· " : ""}
-                        {it.text}
-                      </span>
-                    ))}
-                  </dd>
-                </Fragment>
-              ))}
-          </dl>
-
-          {bio.wikidataId && (
-            <p className="text-xs text-muted">
-              {t.rich("member.bioSource", {
-                link: (chunks) => (
-                  <a
-                    className="text-accent hover:underline"
-                    href={`https://www.wikidata.org/wiki/${bio.wikidataId}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {chunks}
-                  </a>
-                ),
-              })}
-            </p>
-          )}
-        </section>
+      {knessetBio.length > 0 && member.mkSiteCode != null && (
+        <MemberBio rows={knessetBio} siteCode={member.mkSiteCode} locale={locale} localOf={localOf} />
       )}
 
       {stats && stats.votesHeld > 0 && (

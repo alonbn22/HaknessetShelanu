@@ -19,7 +19,7 @@
   "app/[locale]/members/[id]/MemberActivity.tsx": 10,
   "app/[locale]/members/[id]/MemberVoteStats.tsx": 7,
   "app/[locale]/members/[id]/RecordSection.tsx": 18,
-  "app/[locale]/members/[id]/page.tsx": 12,
+  "app/[locale]/members/[id]/page.tsx": 11,
   "app/[locale]/ministers/page.tsx": 7,
   "app/[locale]/parties/[id]/page.tsx": 3,
   "app/[locale]/parties/page.tsx": 3,

@@ -184,7 +184,8 @@ Every new table or index is declared in `src/db/schema.ts` first. See
 |---|---|---|
 | [Knesset open data](https://knesset.gov.il/OdataV4/ParliamentInfo/) | Members, factions, roles, plenum votes and each member's vote, bills, committees and their sittings, parliamentary questions, agenda motions, the law book, the lobbyist registry | The Knesset's open-data terms |
 | [Central Elections Committee](https://www.bechirot.gov.il/home/) | Running lists, candidates, ballot letters, election dates | The committee's terms |
-| [Wikidata](https://www.wikidata.org) | Names in other languages, biographies, links | CC0 (public domain) |
+| [The Knesset website](https://main.knesset.gov.il) | Members' background (birth, education, occupation, military service) from each member's page, and their names in other languages from its member directory | The Knesset's terms |
+| [Wikidata](https://www.wikidata.org) | Names in other languages, links | CC0 (public domain) |
 | [Wikimedia Commons](https://commons.wikimedia.org) | Members' photos and some party logos | Each file under its own license, mostly Creative Commons; member profiles show each photo's author and license |
 | [data.gov.il](https://data.gov.il) (Ministry of Finance) | The state budget | data.gov.il's open-data terms |
 | The parties' own sites | Platforms, promises, logos | The parties' own; credited and linked on the site |

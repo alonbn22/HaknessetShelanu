@@ -312,82 +312,19 @@ export function getPhotoCredits(): Person[] {
   return getDb().select().from(schema.persons).where(isNotNull(schema.persons.photoUrl)).all();
 }
 
-type CareerEntry = { title: string; start: string | null; end: string | null };
-export type CareerRange = { start: string | null; end: string | null };
-export type CareerRole = { title: string; ranges: CareerRange[] };
-export type MemberBio = {
-  wikidataId: string | null;
-  dateOfBirth: string | null;
-  birthPlaceHe: string | null;
-  educationHe: string | null;
-  occupationsHe: string | null;
-  militaryHe: string | null;
-  career: CareerRole[];
-};
+export type KnessetBioRow = typeof schema.personKnessetBio.$inferSelect;
 
-// Collapse raw tenures into one entry per role: merge contiguous terms, keep
-// non-consecutive stints (e.g. separate PM terms) distinct. Most-recent role first.
-function groupCareer(entries: CareerEntry[]): CareerRole[] {
-  const byTitle = new Map<string, CareerRange[]>();
-  for (const e of entries) {
-    const arr = byTitle.get(e.title) ?? [];
-    arr.push({ start: e.start, end: e.end });
-    byTitle.set(e.title, arr);
-  }
-  // Malformed date → NaN gap → not contiguous, so ranges stay separate (never
-  // wrongly merged). isFinite makes that explicit.
-  const contiguous = (prevEnd: string, nextStart: string) => {
-    const gapDays = (Date.parse(nextStart) - Date.parse(prevEnd)) / 86_400_000;
-    return Number.isFinite(gapDays) && gapDays <= 45; // election gap
-  };
-  const roles: CareerRole[] = [];
-  for (const [title, raw] of byTitle) {
-    raw.sort((a, b) => (a.start ?? "9999").localeCompare(b.start ?? "9999"));
-    const ranges: CareerRange[] = [];
-    for (const r of raw) {
-      const last = ranges[ranges.length - 1];
-      if (last && (last.end === null || (r.start && contiguous(last.end, r.start)))) {
-        if (r.end === null) last.end = null; // open/"present" wins
-        else if (last.end !== null && r.end > last.end) last.end = r.end;
-      } else {
-        ranges.push({ ...r });
-      }
-    }
-    roles.push({ title, ranges });
-  }
-  const latest = (r: CareerRole) =>
-    r.ranges.reduce((m, x) => (x.start && x.start > m ? x.start : m), "");
-  roles.sort((a, b) => latest(b).localeCompare(latest(a)));
-  return roles;
-}
-
-// Wikidata-sourced biography (born/education/military/career timeline). Returns
-// null if the member has no bio yet (or the table predates a sync).
-export function getMemberBio(personId: number): MemberBio | null {
+// A member's background as the Knesset publishes it, one row per language it
+// serves (he/en/ar/ru). Empty until the knesset-bio sync has made the table.
+export function getKnessetBio(personId: number): KnessetBioRow[] {
   try {
-    const row = getDb()
+    return getDb()
       .select()
-      .from(schema.personBio)
-      .where(eq(schema.personBio.personId, personId))
-      .get();
-    if (!row) return null;
-    let raw: CareerEntry[] = [];
-    try {
-      raw = row.careerJson ? (JSON.parse(row.careerJson) as CareerEntry[]) : [];
-    } catch {
-      raw = [];
-    }
-    return {
-      wikidataId: row.wikidataId,
-      dateOfBirth: row.dateOfBirth,
-      birthPlaceHe: row.birthPlaceHe,
-      educationHe: row.educationHe,
-      occupationsHe: row.occupationsHe,
-      militaryHe: row.militaryHe,
-      career: groupCareer(raw),
-    };
+      .from(schema.personKnessetBio)
+      .where(eq(schema.personKnessetBio.personId, personId))
+      .all();
   } catch {
-    return null; // table not present yet (pre-sync DB)
+    return []; // table not present yet (pre-sync DB)
   }
 }
 

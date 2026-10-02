@@ -5,7 +5,7 @@
 //
 //   npm run warm            warm every locale (en, ar, ru, es, fr)
 //   npm run warm -- en      warm only en
-import { and, inArray, isNotNull, sql } from "drizzle-orm";
+import { and, eq, inArray, isNotNull, sql } from "drizzle-orm";
 import { getDb, schema } from "../../src/db";
 import { gtxTranslate } from "./gtx";
 import { getElectionOutlook, getPolls } from "../../src/lib/content";
@@ -26,7 +26,6 @@ function gatherSources(): string[] {
     const t = (s ?? "").trim();
     if (t) set.add(t);
   };
-  const addJoined = (s?: string | null) => (s ?? "").split(" · ").forEach(add);
 
   for (const r of db.select({ a: schema.votes.titleHe, b: schema.votes.itemName }).from(schema.votes).all()) {
     add(r.a);
@@ -43,16 +42,14 @@ function gatherSources(): string[] {
     add(r.a);
     add(r.b);
   }
-  for (const r of db.select().from(schema.personBio).all()) {
-    add(r.birthPlaceHe);
-    addJoined(r.educationHe);
-    addJoined(r.occupationsHe);
-    addJoined(r.militaryHe);
-    try {
-      for (const c of JSON.parse(r.careerJson ?? "[]") as { title: string }[]) add(c.title);
-    } catch {
-      /* ignore malformed */
+  // Members' background, one item per line: the Knesset serves it in en/ar/ru
+  // itself, so these lines fill es/fr and its gaps. Absent before the first sync.
+  try {
+    for (const r of db.select().from(schema.personKnessetBio).where(eq(schema.personKnessetBio.lang, "he")).all()) {
+      for (const s of [r.birthPlace, r.education, r.professions, r.militaryService]) (s ?? "").split("\n").forEach(add);
     }
+  } catch {
+    /* table not created yet */
   }
   for (const r of db.select({ a: schema.lobbyists.permitType, b: schema.lobbyists.corporationName, c: schema.lobbyists.practiceFramework }).from(schema.lobbyists).all()) {
     add(r.a);

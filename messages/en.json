@@ -392,7 +392,7 @@
     "keepTitle": "What the site keeps about you",
     "keep": "Nothing. The site keeps no data about its visitors.",
     "logsTitle": "Our host's server logs",
-    "logs": "The site is hosted by Vercel. Vercel keeps standard server logs, which include IP addresses. We will set the shortest retention period for them.",
+    "logs": "The site is hosted by Vercel. Vercel keeps standard server logs, which include IP addresses, under its own <link>privacy notice</link>. We will set the shortest retention period our plan allows.",
     "cookiesTitle": "Cookie policy",
     "cookies": "The site uses no cookies. The language you choose is kept in the page address, not in a cookie.",
     "storage": "Your browser stores only two things, and only if you choose them. They are kept in localStorage, on your own device:",

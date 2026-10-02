@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { LegalContact, LegalSection, outLink, siteLink } from "@/components/LegalPage";
 
 const GITHUB_PRIVACY = "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement";
+const VERCEL_PRIVACY = "https://vercel.com/legal/privacy-notice";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -26,7 +27,7 @@ export default async function PrivacyPage({ params }: { params: Promise<{ locale
       </LegalSection>
 
       <LegalSection title={t("logsTitle")}>
-        <p>{t("logs")}</p>
+        <p>{t.rich("logs", { link: outLink(VERCEL_PRIVACY) })}</p>
       </LegalSection>
 
       <LegalSection id="cookies" title={t("cookiesTitle")}>

@@ -392,7 +392,7 @@
     "keepTitle": "Ce que le site conserve sur vous",
     "keep": "Rien. Le site ne conserve aucune donnée sur ses visiteurs.",
     "logsTitle": "Les journaux du serveur de notre hébergeur",
-    "logs": "Le site est hébergé par Vercel. Vercel conserve des journaux de serveur standard, qui contiennent des adresses IP. Nous fixerons pour eux la durée de conservation la plus courte.",
+    "logs": "Le site est hébergé par Vercel. Vercel conserve des journaux de serveur standard, qui contiennent des adresses IP, selon sa propre <link>notice de confidentialité</link>. Nous fixerons pour eux la durée de conservation la plus courte que permet notre offre.",
     "cookiesTitle": "Politique relative aux cookies",
     "cookies": "Le site n’utilise aucun cookie. La langue que vous choisissez est conservée dans l’adresse de la page, pas dans un cookie.",
     "storage": "Votre navigateur ne conserve que deux choses, et seulement si vous les choisissez. Elles sont enregistrées dans localStorage, sur votre propre appareil :",

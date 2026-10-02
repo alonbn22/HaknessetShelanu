@@ -392,7 +392,7 @@
     "keepTitle": "Qué guarda el sitio sobre usted",
     "keep": "Nada. El sitio no guarda ningún dato sobre sus visitantes.",
     "logsTitle": "Los registros del servidor de nuestro alojamiento",
-    "logs": "El sitio está alojado en Vercel. Vercel conserva registros de servidor estándar, que incluyen direcciones IP. Fijaremos para ellos el plazo de conservación más corto.",
+    "logs": "El sitio está alojado en Vercel. Vercel conserva registros de servidor estándar, que incluyen direcciones IP, conforme a su propio <link>aviso de privacidad</link>. Fijaremos para ellos el plazo de conservación más corto que permita nuestro plan.",
     "cookiesTitle": "Política de cookies",
     "cookies": "El sitio no usa cookies. El idioma que usted elige se guarda en la dirección de la página, no en una cookie.",
     "storage": "Su navegador guarda solo dos cosas, y solo si usted las elige. Se guardan en localStorage, en su propio dispositivo:",

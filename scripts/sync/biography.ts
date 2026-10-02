@@ -1,7 +1,7 @@
 // Structured biography per member from Wikidata (birth, education, occupations,
 // military, career timeline), keyed by the QID from the enrich step. Hebrew
-// free-text localizes via the unified translation cache. Sourced to the linked
-// Wikidata entity (shown + linked on the member page).
+// free-text localizes via the unified translation cache. No longer shown: the
+// member page uses the Knesset's own record (knesset-bio.ts).
 import { sql } from "drizzle-orm";
 import { getDb, schema } from "../../src/db";
 import { fetchRetry } from "./odata";

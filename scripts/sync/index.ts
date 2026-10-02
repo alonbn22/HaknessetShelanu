@@ -2,7 +2,7 @@
 //
 //   npm run update / npm run sync   update EVERYTHING
 //   npm run sync -- --members       members/factions/positions + Wikidata + bios
-//   npm run sync -- --bio           only Wikidata biographies
+//   npm run sync -- --bio           only biographies (Knesset member pages + Wikidata)
 //   npm run sync -- --votes         only votes + totals + stats
 //   npm run sync -- --stats         only recompute stats/totals
 //   npm run sync -- --budget / --activity / --lobbyists  the named section
@@ -21,6 +21,7 @@ import {
 } from "./members";
 import { enrichFromWikidata } from "./wikidata";
 import { syncBiography } from "./biography";
+import { syncKnessetBio } from "./knesset-bio";
 import { getDb } from "../../src/db";
 import { sql } from "drizzle-orm";
 import {
@@ -74,9 +75,13 @@ async function main() {
     markSyncState("members", new Date().toISOString());
   }
 
-  // Wikidata biographies (born/education/military/career timeline). Runs with
-  // members (uses the QIDs the enrich step just stored) or standalone via --bio.
+  // Biographies: the Knesset's own, from each member's page on the Knesset
+  // website (what the member page shows), then Wikidata's (person_bio, no
+  // longer shown). Runs with members (uses the site codes and QIDs just stored)
+  // or standalone via --bio. The Knesset step is soft unless run alone: its
+  // website being down must not fail a members sync.
   if (all || args.has("--members") || args.has("--bio")) {
+    await softSection("Knesset biography", syncKnessetBio, !args.has("--bio"));
     await softSection("biography", syncBiography, all);
   }
 

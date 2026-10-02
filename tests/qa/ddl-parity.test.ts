@@ -16,7 +16,7 @@ import { schema } from "../../src/db";
 const SYNC_DIR = path.join(process.cwd(), "scripts", "sync");
 const SYNC_FILES = [
   "committee-sessions.ts", "ministries.ts", "laws.ts",
-  "votes.ts", "stats.ts", "budget.ts", "lobbyists.ts", "biography.ts",
+  "votes.ts", "stats.ts", "budget.ts", "lobbyists.ts", "biography.ts", "knesset-bio.ts",
   "warm-translations.ts",
 ];
 
@@ -34,6 +34,7 @@ const TABLES: Record<string, unknown> = {
   lobbyists: schema.lobbyists,
   lobbyist_clients: schema.lobbyistClients,
   person_bio: schema.personBio,
+  person_knesset_bio: schema.personKnessetBio,
   israel_laws: schema.israelLaws,
   translations: schema.translations,
 };

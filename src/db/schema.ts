@@ -31,6 +31,7 @@ export const persons = sqliteTable("persons", {
 // birth, education, occupations, military service, and a dated career timeline).
 // Free-text values are stored in Hebrew where available so they localize via the
 // unified on-the-fly translation cache. Sourced to the linked Wikidata entity.
+// No longer shown: the member page uses person_knesset_bio below.
 export const personBio = sqliteTable("person_bio", {
   personId: integer("person_id").primaryKey(),
   wikidataId: text("wikidata_id"), // QID the facts came from (e.g. Q123)
@@ -43,6 +44,25 @@ export const personBio = sqliteTable("person_bio", {
   careerJson: text("career_json"),
   lastUpdated: text("last_updated"),
 });
+
+// A member's background as the Knesset publishes it on the member's page
+// (main.knesset.gov.il/mk/apps/mk/mk-personal-details/<mk_site_code>): one row
+// per language the Knesset serves (he, en, ar, ru), in its own words. Filled by
+// scripts/sync/knesset-bio.ts, which also creates it IF NOT EXISTS.
+export const personKnessetBio = sqliteTable(
+  "person_knesset_bio",
+  {
+    personId: integer("person_id").notNull(),
+    lang: text("lang").notNull(), // he | en | ar | ru
+    dateOfBirth: text("date_of_birth"), // ISO date, read off the Hebrew page
+    birthPlace: text("birth_place"),
+    education: text("education"), // one item per line
+    professions: text("professions"), // one item per line
+    militaryService: text("military_service"), // one item per line
+    lastUpdated: text("last_updated"),
+  },
+  (t) => [primaryKey({ columns: [t.personId, t.lang] })],
+);
 
 // Faction (KNS_Faction) per Knesset.
 export const factions = sqliteTable("factions", {

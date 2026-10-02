@@ -28,7 +28,7 @@
     "language": "Language"
   },
   "common": {
-    "knessetNum": "{num}th Knesset",
+    "knessetNum": "{num, selectordinal, one {#st} two {#nd} few {#rd} other {#th}} Knesset",
     "mandates": "{count, plural, one {1 seat} other {# seats}}",
     "coalition": "Coalition",
     "opposition": "Opposition",

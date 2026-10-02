@@ -58,7 +58,8 @@ for (const loc of LOCALES) {
     // interpolation breaks (e.g. a translator dropped {count}) — and the same
     // <tags> for t.rich(), else a link silently vanishes.
     const placeholders = (s: string) =>
-      [...s.matchAll(/\{(\w+)\}|<(\w+)>/g)].map((m) => m[1] ?? `<${m[2]}>`).sort().join(",");
+      // {name}, or the argument of {name, plural|select|selectordinal, …}
+      [...s.matchAll(/\{(\w+)(?:\}|\s*,)|<(\w+)>/g)].map((m) => m[1] ?? `<${m[2]}>`).sort().join(",");
     const vals = flatMap(load(loc));
     const mismatches = Object.entries(sourceVals)
       .filter(([k, sv]) => vals[k] != null && placeholders(sv) !== placeholders(vals[k]))

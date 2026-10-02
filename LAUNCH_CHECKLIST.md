@@ -8,7 +8,7 @@ the owner reviews), **owner** (the maintainer), **lawyer**. Commit links are to 
 repository's history (rewritten on 28 Sep, so older hashes elsewhere no longer resolve).
 
 > **Hard dates:** the Supreme Court rules on the disqualifications by **4 October**.
-> The legal poll blackout starts on **23 October 2026** (the code is ready). Election
+> The legal poll blackout starts when **Friday 23 October 2026** ends (the code is ready). Election
 > day is **27 October 2026**.
 
 ## Content and translations
@@ -32,7 +32,7 @@ repository's history (rewritten on 28 Sep, so older hashes elsewhere no longer r
 
 | | Item | Owner | Notes |
 |---|---|---|---|
-| ✅ | Poll blackout, 23–27 Oct 2026 (Elections (Propaganda Methods) Law, §16ה(ח)): a notice on every poll surface; no poll dated after Friday 23 Oct | Claude | 1ab8211; a test pins the window |
+| ✅ | Poll blackout from the end of Friday 23 Oct until the polls close on 27 Oct, 22:00 (Elections (Propaganda Methods) Law, §16ה(ח) — "בתום יום שישי שלפני פתיחת הקלפיות", checked against the CEC's copy of the section): a notice on every poll surface; no poll dated after Friday 23 Oct | Claude | 1ab8211, start corrected 2 Oct; a test pins the window |
 | ✅ | Poll disclosures (§16ה(ב)–(ג)): commissioned by, conducted by, population, asked and answered, margin of error, question, CEC filing | Claude | 1b74b67, 48e5c51. A poll without a filing says so, with the date last checked |
 | ⬜ | Lawyer questions | owner, lawyer | Kept in `private/FLAGS.md` (gitignored) |
 

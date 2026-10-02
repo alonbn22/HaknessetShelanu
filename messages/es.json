@@ -323,7 +323,7 @@
       "conformanceTitle": "Nivel de accesibilidad",
       "conformance": "Nivel de accesibilidad del sitio: la norma israelí IS 5568, nivel AA (la norma se basa en las WCAG 2.0, nivel AA). Construimos y comprobamos el sitio conforme a las WCAG 2.2, nivel AA.",
       "testingTitle": "Cómo lo comprobamos",
-      "testing": "Comprobamos el sitio con análisis automáticos de AccessLint y usándolo solo con el teclado.",
+      "testing": "Comprobamos el sitio con análisis automáticos (AccessLint y axe-core) en todos los tipos de página, en los temas claro y oscuro, en hebreo, inglés y árabe, y usándolo solo con el teclado. Última comprobación completa: 30 de septiembre de 2026.",
       "featuresTitle": "El menú de accesibilidad",
       "features": "Cada página tiene un botón de accesibilidad en la parte inferior de la pantalla. Abre un menú con estas opciones:",
       "featuresSaved": "Sus opciones se guardan solo en su navegador, en su dispositivo. Más detalles en la <link>política de cookies</link>.",
@@ -332,7 +332,7 @@
       "contactTitle": "Notificar un problema de accesibilidad",
       "contact": "¿Ha encontrado un problema de accesibilidad? Díganoslo:",
       "fix": "Corregiremos los problemas que se nos notifiquen en un plazo de 60 días.",
-      "updated": "Declaración actualizada el 27 de septiembre de 2026."
+      "updated": "Declaración actualizada el 2 de octubre de 2026."
     },
     "keyboardNav": "Navegación por teclado",
     "highlightHeadings": "Resaltar encabezados",

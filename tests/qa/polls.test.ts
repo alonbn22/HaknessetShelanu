@@ -27,11 +27,11 @@ const registry = getRunningLists();
 const slugs = [...registry.keys()];
 
 // Elections (Propaganda Methods) Law s. 16e(h): the blackout notice shows from
-// Friday 23 Oct 2026 00:00 (IDT) until the polls close at 22:00 (IST) on the
-// 27th, and no poll dated after that Friday may enter the file.
-test("the poll blackout runs from Friday 23 Oct 00:00 to the polls closing, Israel time", () => {
-  assert.equal(pollBlackout(new Date("2026-10-22T23:59:59+03:00")), false);
-  assert.equal(pollBlackout(new Date("2026-10-23T00:00:00+03:00")), true);
+// the end of Friday 23 Oct 2026 (midnight, IDT) until the polls close at 22:00
+// (IST) on the 27th, and no poll dated after that Friday may enter the file.
+test("the poll blackout runs from the end of Friday 23 Oct to the polls closing, Israel time", () => {
+  assert.equal(pollBlackout(new Date("2026-10-23T23:59:59+03:00")), false);
+  assert.equal(pollBlackout(new Date("2026-10-24T00:00:00+03:00")), true);
   assert.equal(pollBlackout(new Date("2026-10-25T12:00:00+02:00")), true);
   assert.equal(pollBlackout(new Date("2026-10-27T21:59:59+02:00")), true);
   assert.equal(pollBlackout(new Date("2026-10-27T22:00:00+02:00")), false);

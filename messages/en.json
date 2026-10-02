@@ -323,7 +323,7 @@
       "conformanceTitle": "Level of accessibility",
       "conformance": "The site's level of accessibility: Israeli Standard IS 5568, level AA (the standard is based on WCAG 2.0, level AA). We build and check the site against WCAG 2.2, level AA.",
       "testingTitle": "How we check",
-      "testing": "We check the site with automated AccessLint scans and by using it with a keyboard only.",
+      "testing": "We check the site with automated scans (AccessLint and axe-core) on every type of page, in the light and dark themes, in Hebrew, English and Arabic, and by using it with a keyboard only. The last full check: 30 September 2026.",
       "featuresTitle": "The accessibility menu",
       "features": "Every page has an accessibility button at the bottom of the screen. It opens a menu with these options:",
       "featuresSaved": "Your choices are saved only in your browser, on your device. Details in the <link>cookie policy</link>.",
@@ -332,7 +332,7 @@
       "contactTitle": "Reporting an accessibility problem",
       "contact": "Ran into an accessibility problem? Tell us:",
       "fix": "We will fix problems reported to us within 60 days.",
-      "updated": "Statement updated on 27 September 2026."
+      "updated": "Statement updated on 2 October 2026."
     },
     "keyboardNav": "Keyboard navigation",
     "highlightHeadings": "Highlight headings",

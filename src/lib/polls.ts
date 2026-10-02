@@ -33,11 +33,12 @@ export type PollAverage = {
 // Elections (Propaganda Methods) Law 1959, s. 16e(h): from the end of the
 // Friday before polling day until the polls close, no new poll results may be
 // published, and polls published earlier only with a prominent notice that
-// they are not current. We start at the Friday's first minute, Israel time,
-// to be safe (IDT until 25 Oct 2026, IST after); the last poll date allowed is
-// that Friday. Source: the CEC's copy of s. 16e (gov.il), Nevo.
+// they are not current. The period "begins at the end of the Friday before the
+// polls open" — so from midnight at the end of Friday 23 Oct, Israel time
+// (IDT until 25 Oct 2026, IST after); polls published that Friday are allowed.
+// Source: the CEC's copy of s. 16e (gov.il, updated 8 Aug 2022), Nevo.
 export const BLACKOUT = {
-  start: "2026-10-23T00:00:00+03:00",
+  start: "2026-10-24T00:00:00+03:00",
   end: "2026-10-27T22:00:00+02:00",
   lastPollDate: "2026-10-23",
 } as const;

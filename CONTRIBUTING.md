@@ -132,8 +132,9 @@ only reads it.
    broadcast (no text or graphic you can link to), add it under `notEntered` with a
    reason instead.
 2. Check the dates. The poll must be published on or after the file's `cutoff`.
-   Don't add or change polls from 23 October 2026 until voting ends on 27 October:
-   that is the legal blackout on polls (see
+   Polls published up to Friday 23 October 2026 may go in. Don't add or change
+   polls after that Friday ends until voting ends on 27 October (22:00): that is
+   the legal blackout on polls, Elections (Propaganda Methods) Law §16ה(ח) (see
    [LAUNCH_CHECKLIST.md](LAUNCH_CHECKLIST.md)).
 3. Copy the newest entry under `polls:` and edit each field:
    - `id`: `<published>-<outlet>-<institute>`, lowercase with dashes, starting with

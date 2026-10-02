@@ -141,7 +141,7 @@
     "education": "Education",
     "occupation": "Occupation",
     "military": "Military service",
-    "bioSource": "Source: <link>the Knesset (member page)</link>",
+    "bioSource": "Source: <link>the Knesset (member page)</link> — details provided to the Knesset website by the members or on their behalf",
     "partyLine": "Party-line voting",
     "partyLineDetail": "Voted with the faction majority on {withParty} of {total} recorded votes.",
     "rebellions": "{count, plural, one {# vote against the faction line} other {# votes against the faction line}}",

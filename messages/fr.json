@@ -141,7 +141,7 @@
     "education": "Formation",
     "occupation": "Profession",
     "military": "Service militaire",
-    "bioSource": "Source : <link>la Knesset (page du député)</link>",
+    "bioSource": "Source : <link>la Knesset (page du député)</link> — informations fournies au site de la Knesset par les députés eux-mêmes ou en leur nom",
     "partyLine": "Vote avec la faction",
     "partyLineDetail": "A voté avec la majorité de sa faction lors de {withParty} des {total} votes enregistrés.",
     "rebellions": "{count, plural, one {# vote contre la ligne de la faction} other {# votes contre la ligne de la faction}}",

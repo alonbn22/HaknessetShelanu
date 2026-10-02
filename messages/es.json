@@ -141,7 +141,7 @@
     "education": "Formación",
     "occupation": "Profesión",
     "military": "Servicio militar",
-    "bioSource": "Fuente: <link>la Knéset (página del diputado)</link>",
+    "bioSource": "Fuente: <link>la Knéset (página del diputado)</link> — datos facilitados al sitio de la Knéset por los propios diputados o en su nombre",
     "partyLine": "Voto con la facción",
     "partyLineDetail": "Votó con la mayoría de su facción en {withParty} de {total} votaciones registradas.",
     "rebellions": "{count, plural, one {# voto contra la línea de la facción} other {# votos contra la línea de la facción}}",

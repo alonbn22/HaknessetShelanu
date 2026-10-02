@@ -141,7 +141,7 @@
     "education": "השכלה",
     "occupation": "עיסוק",
     "military": "שירות צבאי",
-    "bioSource": "מקור: <link>הכנסת (דף חבר הכנסת)</link>",
+    "bioSource": "מקור: <link>הכנסת (דף חבר הכנסת)</link> — הפרטים נמסרו לאתר הכנסת על ידי חברי הכנסת או מטעמם",
     "partyLine": "הצבעה עם הסיעה",
     "partyLineDetail": "הצביע/ה עם רוב הסיעה ב-{withParty} מתוך {total} הצבעות מתועדות.",
     "rebellions": "{count, plural, one {הצבעה אחת נגד עמדת הסיעה} other {# הצבעות נגד עמדת הסיעה}}",

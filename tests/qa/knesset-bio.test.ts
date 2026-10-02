@@ -122,7 +122,10 @@ test("the member page's background block names the Knesset as its source, linked
   assert.doesNotMatch(en, /wikidata/i);
   const he = render("he");
   assert.match(he, /href="https:\/\/main\.knesset\.gov\.il\/mk\/apps\/mk\/mk-personal-details\/90"/);
-  assert.ok(he.includes(messages("he").member.bioSource.replace(/<link>.*<\/link>/, "")), "Hebrew source line");
+  const [heBefore, heAfter] = messages("he").member.bioSource.split(/<link>.*<\/link>/);
+  assert.ok(he.includes(heBefore), "Hebrew source line");
+  // The Knesset says members (or their staff) supply these details: the line says so.
+  assert.ok(heAfter.trim() && he.includes(heAfter), "who supplied the details");
   // Spanish: no Spanish from the Knesset, so its English, marked as English.
   assert.match(render("es"), /<li dir="ltr" lang="en">Captain in elite unit<\/li>/);
   // Every language: the source line's linked words, and no Wikidata.

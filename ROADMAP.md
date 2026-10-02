@@ -13,8 +13,9 @@ Ordered roughly by value/effort. Grounded in tables that already exist unless no
   in `content/election.yaml` `submittedLists[].candidates`**, captured from the
   CEC list pages on 20 Sep 2026 through the Browser pane (gov.il answers 403 to
   curl and Cloudflare-blocks CDP Chrome; `scratchpad/review/cec-capture.mjs` and
-  the batch files document the capture), rendered per list on `/elections#all-lists`
-  (first 20, the rest linked); the CEC's approved lists are reported for
+  the batch files document the capture), rendered in full per list on
+  `/elections/lists` (`/elections#all-lists` keeps a compact table of the lists and
+  links there); the CEC's approved lists are reported for
   2026-09-27 — re-capture after the notices (Blue and White's page changed on
   16 Sep, the Joint List's on 18 Sep).
   Individual candidates don't exist as official data before submission, so today

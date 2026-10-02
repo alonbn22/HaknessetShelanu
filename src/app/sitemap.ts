@@ -37,6 +37,7 @@ export default async function sitemap(props: { id: Promise<string> }): Promise<M
     { path: "/elections/history", priority: 0.5 },
     { path: "/elections/positions", priority: 0.6 },
     { path: "/elections/find", priority: 0.6 },
+    { path: "/elections/lists", priority: 0.6 },
     // Lists that continue a faction live on the faction's page (listed above).
     ...[...getRunningLists().values()].filter((l) => l.factionId == null).map((l) => ({ path: `/elections/${l.slug}`, priority: 0.7 })),
     ...members.map((id) => ({ path: `/members/${id}`, priority: 0.7 })),

@@ -53,7 +53,7 @@ where our data and theirs differ, theirs prevails.
 | Committees | `/committees`, `/committees/[id]` | Chairs, members, and every sitting's agenda and documents |
 | Budget and lobbying | `/budget`, `/lobbyists` | The state budget by ministry and budget line, the lobbyist registry |
 | Attendance | `/attendance` | Participation in votes (the Knesset doesn't publish physical attendance) |
-| 2026 election | `/elections`, `/elections/[slug]`, `/elections/positions`, `/elections/history`, `/quiz` | Key dates; a page per running list (candidates, ballot letters, promises); seat polls from each outlet's own article and a poll-of-polls average; the lists' positions side by side; past elections; the election compass |
+| 2026 election | `/elections`, `/elections/[slug]`, `/elections/lists`, `/elections/positions`, `/elections/history`, `/quiz` | Key dates; a page per running list (candidates, ballot letters, promises); every submitted list's full roster; seat polls from each outlet's own article and a poll-of-polls average; the lists' positions side by side; past elections; the election compass |
 | Reference | `/glossary`, `/search`, `/sources`, `/tickets`, `/accessibility` | A plain-language political dictionary, search across the site, the data sources, reporting an error, the accessibility statement |
 
 Every page is in all six languages. Data text from the Knesset (vote titles, bill

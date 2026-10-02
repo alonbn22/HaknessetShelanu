@@ -108,9 +108,12 @@ export default async function PartyPage({
   const approvalDate = outlook?.keyDates?.find((d) => d.key === "kd-approval")?.date;
   const approvalText = approvalDate ? formatDate(approvalDate, locale) : "";
   const e2026List = e2026?.slug ? getRunningLists().get(e2026.slug) : undefined;
-  // Its own list: the card on the elections page; a partner list: that list's page.
+  // Its own list: the card on the elections page; a partner list: that list's
+  // page; a list with neither: its roster on the page of every list.
   const listAnchor = !e2026List
-    ? "/elections#all-lists"
+    ? e2026Row
+      ? `/elections/lists#list-${e2026Row.listNumber}`
+      : "/elections#all-lists"
     : e2026List.slug === ownList?.slug
       ? `/elections#list-${e2026List.slug}`
       : listHref(e2026List);

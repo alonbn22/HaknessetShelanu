@@ -25,6 +25,8 @@ import { PollsSection } from "@/components/polls/PollsSection";
 import { SourceLinks } from "@/components/SourceLinks";
 import { KNESSET_DATA } from "@/components/KnessetDataSource";
 import { ListMakeup } from "@/components/election/ListMakeup";
+import { ListsTable } from "@/components/election/SubmittedLists";
+import { SectionHeading } from "@/components/ui/SectionHeading";
 
 export const dynamic = "force-dynamic";
 
@@ -41,25 +43,22 @@ export default async function ElectionsPage() {
   // Approval date from the timeline, so the "requested letters" caveat never hardcodes it.
   const approvalDateIso = outlook?.keyDates?.find((d) => d.key === "kd-approval")?.date;
   const approvalDateText = approvalDateIso ? formatDate(approvalDateIso, locale) : "";
-  // The CEC's names for lists and parties are data text: the unified cache
-  // translates them (people's names never — candidateName shows official ones).
+  // The CEC's names for lists are data text: the unified cache translates
+  // them (people's names never — candidateName shows official ones).
   const { loc } = localizePage(
     [
       ...(outlook?.parties ?? []).map((p) => p.cec?.listName.he),
-      ...(outlook?.submittedLists?.lists ?? []).flatMap((l) => [
-        l.name.he,
-        ...(l.submittedBy ?? []),
-        ...(l.candidates ?? []).map((c) => c.party),
-      ]),
+      ...(outlook?.submittedLists?.lists ?? []).map((l) => l.name.he),
     ],
     locale,
   );
   // People's names: the site's transliterations (never machine-translated, so
   // nothing is queued for them); official spellings win inside candidateName.
+  // Of the submitted rosters only the heads show here (/elections/lists has the rest).
   const names = localizeData(
     [
       ...(outlook?.parties ?? []).flatMap((p) => (p.candidates ?? []).map((c) => c.he)),
-      ...(outlook?.submittedLists?.lists ?? []).flatMap((l) => [l.head?.he, ...(l.candidates ?? []).map((c) => c.he)]),
+      ...(outlook?.submittedLists?.lists ?? []).map((l) => l.candidates?.[0]?.he),
     ],
     locale,
   );
@@ -411,109 +410,28 @@ export default async function ElectionsPage() {
           )}
 
           {/* Every list that submitted — the 15 cards above are the ones
-              pollsters name; the other 23 exist too. From the CEC index. */}
+              pollsters name; the other 23 exist too. From the CEC index:
+              letters, name and head here, every roster on /elections/lists. */}
           {outlook.submittedLists && outlook.submittedLists.lists.length > 0 && (
-            <details id="all-lists" className="rounded-lg bg-surface p-3 shadow-sm scroll-mt-24">
-              <summary className="cursor-pointer text-sm font-semibold">
+            <div id="all-lists" className="scroll-mt-24 space-y-2">
+              <SectionHeading
+                as="h3"
+                variant="eyebrow"
+                aside={
+                  <Link href="/elections/lists" className="inline-block py-1 text-sm font-medium text-accent-ink underline">
+                    {te("allCandidates")} {rtlLocales.has(locale) ? "←" : "→"}
+                  </Link>
+                }
+              >
                 {te("allLists", { count: outlook.submittedLists.lists.length })}
-              </summary>
-              <p className="mt-2 text-xs text-muted leading-relaxed">
-                {te("allListsIntro", { date: approvalDateText })}
-              </p>
-              <div className="mt-2 overflow-x-auto rounded-card border border-line">
-                <table className="w-full text-xs">
-                  <thead className="bg-surface-sunken text-start">
-                    <tr>
-                      <th className="px-2 py-1.5 text-start font-semibold">#</th>
-                      <th className="px-2 py-1.5 text-start font-semibold">{te("colLetters")}</th>
-                      <th className="px-2 py-1.5 text-start font-semibold">{te("colList")}</th>
-                      <th className="px-2 py-1.5 text-start font-semibold">{te("colHead")}</th>
-                      <th className="px-2 py-1.5 text-start font-semibold">{te("colSubmittedBy")}</th>
-                      <th className="px-2 py-1.5 text-start font-semibold">{te("colCandidates")}</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {outlook.submittedLists.lists.map((l) => (
-                      <tr key={l.listNumber} className="border-t border-line align-top">
-                        <td className="px-2 py-1.5 tabular-nums text-muted">{l.listNumber}</td>
-                        <td className="px-2 py-1.5 font-bold tracking-wide whitespace-nowrap" dir="rtl" lang="he">
-                          {l.letters}
-                        </td>
-                        <td className="px-2 py-1.5">
-                          {l.slug ? (
-                            <a href={`#list-${l.slug}`} className="underline hover:text-accent" {...localizedAttrs(loc(l.name.he))}>
-                              {loc(l.name.he).text}
-                            </a>
-                          ) : (
-                            <span {...localizedAttrs(loc(l.name.he))}>{loc(l.name.he).text}</span>
-                          )}{" "}
-                          <a
-                            href={l.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-muted underline"
-                            title={tp("cecPage")}
-                          >
-                            ↗
-                          </a>
-                        </td>
-                        <td className="px-2 py-1.5">
-                          {/* The head is candidate 1: an official spelling when there is one. */}
-                          {(() => {
-                            const first = l.candidates?.[0];
-                            const shown = first ? candidateName(first, locale, names) : undefined;
-                            const name = shown && shown !== first!.he ? shown : l.head?.he ?? "";
-                            return <span {...rtlAttrs(name)}>{name}</span>;
-                          })()}
-                        </td>
-                        <td className="px-2 py-1.5 text-muted">
-                          {(l.submittedBy ?? []).map((b, k) => (
-                            <span key={b}>
-                              {k > 0 && " · "}
-                              <span {...localizedAttrs(loc(b))}>{loc(b).text}</span>
-                            </span>
-                          ))}
-                        </td>
-                        <td className="min-w-[14rem] px-2 py-1.5">
-                          {/* The roster as the committee prints it (surname first), the
-                              first 20 here and the rest on the CEC page — the same for
-                              every list, polled or not. */}
-                          {l.candidates && l.candidates.length > 0 && (
-                            <details>
-                              <summary className="cursor-pointer whitespace-nowrap underline hover:text-accent">
-                                {te("rosterCount", { n: l.candidates.length })}
-                              </summary>
-                              <ol className="mt-1 list-decimal space-y-0.5 ps-5">
-                                {l.candidates.slice(0, 20).map((c, i) => (
-                                  <li key={i}>
-                                    <span {...rtlAttrs(candidateName(c, locale, names))}>{candidateName(c, locale, names)}</span>
-                                    {c.party && (
-                                      <span className="text-muted">
-                                        {" · "}
-                                        <span {...localizedAttrs(loc(c.party))}>{loc(c.party).text}</span>
-                                      </span>
-                                    )}
-                                  </li>
-                                ))}
-                              </ol>
-                              {l.candidates.length > 20 && (
-                                <a href={l.url} target="_blank" rel="noopener noreferrer" className="mt-1 inline-block text-muted underline">
-                                  {te("rosterAll", { n: l.candidates.length })}
-                                </a>
-                              )}
-                            </details>
-                          )}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-              {locale !== "he" && <p className="mt-2 text-xs text-muted">{te("namesTransliterated")}</p>}
-              <p className="mt-2 text-xs text-muted">
+              </SectionHeading>
+              <p className="text-xs leading-relaxed text-muted">{te("allListsIntro", { date: approvalDateText })}</p>
+              <ListsTable lists={outlook.submittedLists.lists} loc={loc} names={names} />
+              {locale !== "he" && <p className="text-xs text-muted">{te("namesTransliterated")}</p>}
+              <p className="text-xs text-muted">
                 {te("cecSourceLine")}{" "}
                 <a
-                  className="underline hover:text-accent"
+                  className="underline hover:text-accent-ink"
                   href={outlook.submittedLists.source.url}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -523,7 +441,7 @@ export default async function ElectionsPage() {
                 {" · "}
                 {tc("lastChecked", { date: formatDate(outlook.submittedLists.asOf, locale) })}
               </p>
-            </details>
+            </div>
           )}
 
           {/* Seat polls since the lists closed — after who is running, so a

@@ -125,9 +125,10 @@ async function main() {
     await syncLobbyists();
   }
 
-  // Data text (vote titles, law/committee/budget names) is translated by a
-  // separate batch into the unified cache (npm run warm); the site only reads
-  // it (src/lib/i18n-data.ts) and shows a miss in Hebrew.
+  // Data text (vote titles, law/committee/budget names) gets its other
+  // languages from checked batches imported into the unified cache
+  // (npm run translations:export / translations:import); the site only reads
+  // it (src/lib/i18n-data.ts) and shows a miss in Hebrew, marked.
 
   // Fold the WAL back into the main DB file so the committed data/knesset.db is
   // self-contained (the deploy/CI commits just that file).

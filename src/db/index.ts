@@ -11,7 +11,7 @@ let _db: ReturnType<typeof createDb> | null = null;
 // The site only reads, so it opens the committed file read-only: with the
 // rollback journal that `npm run db:clean` leaves, that needs no -wal/-shm
 // sidecars and works on a read-only filesystem (Vercel). Scripts that write
-// (sync, warm) run with DB_WRITE=1 for a read-write WAL handle.
+// (sync, translations:import) run with DB_WRITE=1 for a read-write WAL handle.
 function openSqlite() {
   if (process.env.DB_WRITE !== "1") {
     return new Database(DB_PATH, { readonly: true, fileMustExist: true });

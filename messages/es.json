@@ -383,7 +383,8 @@
     "notOfficial": "Este no es un sitio oficial de la Knéset ni del Gobierno.",
     "p_knesset": "Diputados, facciones, cargos, votaciones y resultados, proyectos de ley con sus documentos y promotores, comisiones, preguntas parlamentarias, propuestas para el orden del día, el libro de leyes y el registro de lobistas. Los nombres de los diputados en otros idiomas proceden del directorio de diputados del sitio web de la Knéset. Los datos biográficos de los diputados (nacimiento, formación, profesión, servicio militar) proceden de la página de cada diputado en el sitio web de la Knéset.",
     "p_wikidata": "Fotos (con la licencia y el crédito mostrados en la página) y enlaces a Wikipedia.",
-    "p_translate": "Traducción automática de los datos de la Knéset (títulos de votaciones, proyectos de ley, comisiones y más) del hebreo al inglés, árabe, ruso, español y francés.",
+    "p_translate": "Traducciones automáticas anteriores de los datos de la Knéset (títulos de votaciones, proyectos de ley, comisiones y más), hechas hasta septiembre de 2026. Ya no se utiliza.",
+    "p_translateAi": "Traducciones de los datos de la Knéset y de las líneas biográficas de los diputados a los idiomas del sitio desde septiembre de 2026, hechas por lotes con el modelo de inteligencia artificial Claude.",
     "p_finance": "El presupuesto del Estado detallado por ministerio, área, programa y partida presupuestaria (datos abiertos)."
   },
   "privacy": {

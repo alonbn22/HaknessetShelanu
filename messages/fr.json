@@ -383,7 +383,8 @@
     "notOfficial": "Ce site n’est pas un site officiel de la Knesset ni du gouvernement.",
     "p_knesset": "Députés, factions, fonctions, votes et résultats, projets de loi avec leurs documents et auteurs, commissions, questions parlementaires, motions à l’ordre du jour, recueil des lois et registre des lobbyistes. Les noms des députés dans d’autres langues proviennent de l’annuaire des députés du site de la Knesset. Les éléments biographiques des députés (naissance, formation, profession, service militaire) proviennent de la page de chaque député sur le site de la Knesset.",
     "p_wikidata": "Photos (avec la licence et le crédit affichés sur la page) et liens Wikipédia.",
-    "p_translate": "Traduction automatique des données de la Knesset (intitulés de votes, projets de loi, commissions, etc.) de l’hébreu vers l’anglais, l’arabe, le russe, l’espagnol et le français.",
+    "p_translate": "Traductions automatiques plus anciennes des données de la Knesset (intitulés de votes, projets de loi, commissions, etc.), réalisées jusqu’en septembre 2026. N’est plus utilisé.",
+    "p_translateAi": "Traductions des données de la Knesset et des lignes biographiques des députés dans les langues du site depuis septembre 2026, réalisées par lots par le modèle d’intelligence artificielle Claude.",
     "p_finance": "Le budget de l’État détaillé par ministère, domaine, programme et ligne budgétaire (données ouvertes)."
   },
   "privacy": {

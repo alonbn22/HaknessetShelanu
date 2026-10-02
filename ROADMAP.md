@@ -65,10 +65,12 @@ Ordered roughly by value/effort. Grounded in tables that already exist unless no
   `git reset --hard origin/master` and redo when the sync bot lands first (never
   rebase a binary). Encode that as a documented step/helper so a DB push that
   races the bot recovers deterministically.
-- [ ] **Batch-translation API upgrade** (needs a maintainer OK) — swap the
-  unofficial per-string `gtx` calls for the official batched Cloud Translation
-  API behind the lazy data-translation cache: fewer round-trips, a supported
-  endpoint. Needs a billing account, hence the sign-off.
+- [x] **No outside translation service** (3 Oct 2026) — the unofficial Google
+  endpoint (`gtx`) is gone: its terms forbid automated use. Data text gets its
+  other languages from checked batches (`npm run translations:export` /
+  `npm run translations:import`), and a test keeps Google Translate out of
+  `src/` and `scripts/`. LibreTranslate was tested on 27 Sep and rejected on
+  quality.
 
 ## Untapped API data — what more we could build
 
@@ -135,18 +137,17 @@ socio-economic indices by municipality (data.gov.il) for context.
 - **Disqualifications (from 23 Sep 2026)**: the CEC voted to bar Ra'am, the
   Joint List, Abu Shehadeh and Cassif, and on 24 Sep rejected the requests
   against Otzma Yehudit, Religious Zionism–Zehut and the Democrats (all on the
-  site since `dab94e9`, with the AG's positions and the responses). Follow the
-  Supreme Court: appeals by 29 Sep, rulings by 4 Oct (`kd-court`) — update the
-  seven faction pages concerned, the two election cards and the key dates with
-  each ruling, from the court's or the outlet's own text.
-- **Native Spanish/French data text** (26 Sep 2026): pages now fall back to
-  the cached English (`lang="en"`) where es/fr isn't cached, so no Hebrew
-  shows; native es (3,320 cached) and fr (none) still to fill. The free gtx
-  endpoint allows ~1,500 translations per window, then 429s for hours, pace
-  regardless — run `npm run warm -- es fr` once per window (it resumes),
-  `npm run db:clean`, commit the DB alone. English, and Arabic/Russian for
-  every label, name and title, were filled on 26 Sep (Arabic/Russian
-  committee agenda items still fall back to English).
+  site since `dab94e9`, with the AG's positions and the responses). Done:
+  the Supreme Court ruled on 2 Oct 2026 (Ra'am's and the Joint List's appeals
+  accepted, Cassif's disqualification not approved 7–2, Abu Shehadeh withdrew)
+  — on the faction pages, the election cards and the key dates (`2de4213`).
+- **Data text still untranslated** (3 Oct 2026, `translations:export`):
+  French 22,018 strings (they show the cached English, marked `lang="en"`),
+  English 779, Arabic 637, Russian 610, Spanish 9 (those show in Hebrew,
+  marked, or in English). Fill with checked batches:
+  `npm run translations:export -- out.json fr`, translate,
+  `npm run translations:import -- batch.json`, `npm run db:clean`,
+  `npm run db:publish`.
 - **People's names without an official spelling**: ~1,200 candidates who
   never sat in the Knesset and the 827 registered lobbyists show in Hebrew
   (MKs and their exact namesakes use the Knesset directory's spellings;

@@ -16,7 +16,8 @@ This version has breaking changes — APIs, conventions, and file structure may 
 - The site opens the DB **read-only** (Vercel's disk is read-only) and never
   writes at request time. That needs a rollback-journal file: `db:clean` ends
   with `journal_mode=DELETE` + `VACUUM`, and `db:publish` refuses a WAL file.
-  Scripts that write set `DB_WRITE=1` (already in `sync`, `update`, `warm`).
+  Scripts that write set `DB_WRITE=1` (already in `sync`, `update`,
+  `translations:import`).
 - A **deliberate DB change** (new index/table/backfill): code commit first,
   then materialize locally (`npm run db:push` + the relevant sync +
   `npm run db:clean`), check it, and `npm run db:publish`. Never publish while

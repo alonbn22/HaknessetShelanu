@@ -383,7 +383,8 @@
     "notOfficial": "This is not an official website of the Knesset or the government.",
     "p_knesset": "Members, factions, positions, votes & results, bills with their documents and sponsors, committees, parliamentary questions, agenda motions, the law book and the lobbyist registry. Members' names in other languages come from the member directory on the Knesset website. Members' background (birth, education, occupation, military service) comes from each member's page on the Knesset website.",
     "p_wikidata": "Photos (with license and credit shown on the page) and Wikipedia links.",
-    "p_translate": "Automatic translation of Knesset data (vote titles, bills, committees and more) from Hebrew into English, Arabic, Russian, Spanish and French.",
+    "p_translate": "Older automatic translations of Knesset data (vote titles, bills, committees and more), made until September 2026. No longer used.",
+    "p_translateAi": "Translations of Knesset data and of members' background lines into the site's languages since September 2026, made in batches by the Claude AI model.",
     "p_finance": "The detailed state budget by ministry, area, program and budget line (open data)."
   },
   "privacy": {

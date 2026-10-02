@@ -170,7 +170,8 @@ npm run sync -- --votes     # votes and results, then totals and statistics
 npm run sync -- --activity  # committees, sittings, questions, agendas, the law book
 npm run sync -- --budget    # the state budget
 npm run sync -- --stats     # recompute statistics only
-npm run warm                # pre-translate data text into the other languages
+npm run translations:export -- out.json es fr   # Hebrew data text still missing those languages
+npm run translations:import -- batch.json       # add a translated, checked batch to the cache
 npm run db:clean            # check integrity, switch to a rollback journal, compact (nothing may have the DB open)
 npm run db:publish          # upload data/knesset.db to the data-latest release (maintainers)
 ```

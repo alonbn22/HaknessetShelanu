@@ -20,6 +20,12 @@ const SOURCES = [
     licenseKey: "autoTransNote",
   },
   {
+    name: "Claude (Anthropic)",
+    url: "https://www.anthropic.com/claude",
+    powersKey: "p_translateAi",
+    licenseKey: "autoTransNote",
+  },
+  {
     name: "Ministry of Finance — data.gov.il",
     url: "https://data.gov.il",
     powersKey: "p_finance",

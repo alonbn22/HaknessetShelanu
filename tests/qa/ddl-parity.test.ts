@@ -17,7 +17,7 @@ const SYNC_DIR = path.join(process.cwd(), "scripts", "sync");
 const SYNC_FILES = [
   "committee-sessions.ts", "ministries.ts", "laws.ts",
   "votes.ts", "stats.ts", "budget.ts", "lobbyists.ts", "knesset-bio.ts",
-  "warm-translations.ts",
+  "translations.ts",
 ];
 
 // table name -> the drizzle schema object it must match.

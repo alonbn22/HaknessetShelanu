@@ -1,23 +1,26 @@
-// Pre-warm the unified translation cache so non-Hebrew locales ship fully
-// translated: the site itself never translates (a miss shows in Hebrew, marked).
-// Gathers every Hebrew free-text string the site renders and translates the
-// ones missing per locale (gtx). Safe to re-run. Then `npm run db:clean`.
+// The translation cache's two hand tools. Nothing here calls an outside
+// service: since 27 Sep 2026 (owner's decision) data text is never machine-
+// translated on the fly, and Google's unofficial endpoint, whose terms forbid
+// automated use, was removed on 3 Oct 2026. A miss shows in Hebrew, marked.
 //
-//   npm run warm            warm every locale (en, ar, ru, es, fr)
-//   npm run warm -- en      warm only en
-import { and, eq, inArray, isNotNull, sql } from "drizzle-orm";
+//   npm run translations:export -- <out.json> [en ar ru es fr]
+//       every Hebrew string the site shows that lacks one of those languages
+//   npm run translations:import -- <batch.json> [--overwrite]
+//       write a translated, checked batch into the cache; then `npm run db:clean`
+//
+// A batch is a JSON array of { he, en?, ar?, ru?, es?, fr? }. Export writes
+// `he`, the languages it `needs` and the cached English as a hint; the
+// translator fills the needed languages; import writes only empty cells unless
+// --overwrite, refuses a "translation" that still holds Hebrew, and adds the
+// French no-break spaces.
+import fs from "node:fs";
+import { eq, sql } from "drizzle-orm";
 import { getDb, schema } from "../../src/db";
-import { gtxTranslate } from "./gtx";
 import { getElectionOutlook, getPolls } from "../../src/lib/content";
 
 const ALL_LOCALES = ["en", "ar", "ru", "es", "fr"] as const;
 type Loc = (typeof ALL_LOCALES)[number];
-const COL = { en: schema.translations.en, ar: schema.translations.ar, ru: schema.translations.ru, es: schema.translations.es, fr: schema.translations.fr };
-const FIELD = { en: "en", ar: "ar", ru: "ru", es: "es", fr: "fr" } as const;
-// Gentle on the free endpoint: bursts (8 at once) got the IP throttled for hours.
-const CONCURRENCY = 2;
-const PAUSE_MS = 300;
-const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+type Row = { he: string } & Partial<Record<Loc, string>>;
 
 function gatherSources(): string[] {
   const db = getDb();
@@ -119,72 +122,64 @@ function gatherSources(): string[] {
   return [...set];
 }
 
-async function warmLocale(locale: Loc, all: string[]) {
-  const db = getDb();
-  const col = COL[locale];
-  const field = FIELD[locale];
-  // Which sources already have this locale cached?
-  const have = new Set<string>();
-  for (let i = 0; i < all.length; i += 400) {
-    const chunk = all.slice(i, i + 400);
-    db.select({ he: schema.translations.sourceHe })
-      .from(schema.translations)
-      .where(and(inArray(schema.translations.sourceHe, chunk), isNotNull(col)))
-      .all()
-      .forEach((r) => have.add(r.he));
-  }
-  const missing = all.filter((s) => !have.has(s));
-  console.log(`[${locale}] ${all.length} sources, ${missing.length} to translate`);
-
-  let i = 0;
-  let ok = 0;
-  let fails = 0; // in a row — gtx answers 429 for hours once it throttles
-  const worker = async () => {
-    while (i < missing.length) {
-      const src = missing[i++];
-      let tr = await gtxTranslate(src, { sl: "iw", tl: locale, timeoutMs: 8000 });
-      if (!tr) {
-        await sleep(30_000); // back off hard on failure / throttling, then retry once
-        tr = await gtxTranslate(src, { sl: "iw", tl: locale, timeoutMs: 8000 });
-      }
-      if (tr) {
-        db.insert(schema.translations)
-          .values({ sourceHe: src, [field]: tr })
-          .onConflictDoUpdate({ target: schema.translations.sourceHe, set: { [field]: tr } })
-          .run();
-        ok++;
-        fails = 0;
-      } else if (++fails >= 10) {
-        console.log(`  [${locale}] 10 failures in a row — the endpoint is throttling; stopping (re-run later, it resumes)`);
-        i = missing.length;
-      }
-      if (i % 200 === 0) console.log(`  [${locale}] ${i}/${missing.length} (${ok} translated)`);
-      await sleep(PAUSE_MS);
-    }
-  };
-  await Promise.all(Array.from({ length: CONCURRENCY }, worker));
-  console.log(`[${locale}] done — ${ok}/${missing.length} translated`);
+function cached() {
+  return new Map(getDb().select().from(schema.translations).all().map((r) => [r.sourceHe, r]));
 }
 
-async function main() {
-  const args = process.argv.slice(2).filter((a) => !a.startsWith("--"));
-  const locales = (args.length ? args : ALL_LOCALES).filter((l): l is Loc =>
-    (ALL_LOCALES as readonly string[]).includes(l),
-  );
-  const started = Date.now();
-  // This batch is the cache's only writer, so it self-heals the table (house
-  // rule: the same definition as src/db/schema.ts; ddl-parity.test.ts checks).
-  getDb().run(
+function exportBatch(out: string, locales: Loc[]) {
+  const have = cached();
+  const rows = gatherSources().flatMap((he) => {
+    const r = have.get(he);
+    const needs = locales.filter((l) => !r?.[l]);
+    return needs.length ? [{ he, needs, ...(r?.en ? { en: r.en } : {}) }] : [];
+  });
+  fs.writeFileSync(out, JSON.stringify(rows, null, 1) + "\n");
+  console.log(`${rows.length} strings need ${locales.join("/")} -> ${out}`);
+}
+
+const HEBREW = /[\u0590-\u05ff]/;
+const frenchSpaces = (s: string) => s.replace(/ ([;:!?»])/g, "\u00a0$1").replace(/« /g, "«\u00a0");
+
+function importBatch(file: string, overwrite: boolean) {
+  const db = getDb();
+  // The cache's only writer, so it self-heals the table (house rule: the same
+  // definition as src/db/schema.ts; ddl-parity.test.ts checks).
+  db.run(
     sql`CREATE TABLE IF NOT EXISTS translations (source_he text PRIMARY KEY NOT NULL, en text, ar text, ru text, es text, fr text)`,
   );
-  const all = gatherSources();
-  console.log(`Gathered ${all.length} distinct Hebrew strings; warming ${locales.join(", ")}`);
-  for (const loc of locales) await warmLocale(loc, all);
-  getDb().run(sql`PRAGMA wal_checkpoint(TRUNCATE)`);
-  console.log(`Warm finished in ${Math.round((Date.now() - started) / 1000)}s`);
+  const have = cached();
+  const rows = JSON.parse(fs.readFileSync(file, "utf8")) as Row[];
+  let cells = 0;
+  const refused: string[] = [];
+  for (const row of rows) {
+    const he = row.he?.trim();
+    if (!he) continue;
+    const cur = have.get(he);
+    const set: Partial<Record<Loc, string>> = {};
+    for (const l of ALL_LOCALES) {
+      const v = row[l]?.trim();
+      if (!v || (cur?.[l] && !overwrite)) continue;
+      if (HEBREW.test(v)) refused.push(`${he} [${l}]: ${v}`);
+      else set[l] = l === "fr" ? frenchSpaces(v) : v;
+    }
+    if (Object.keys(set).length === 0) continue;
+    if (cur) db.update(schema.translations).set(set).where(eq(schema.translations.sourceHe, he)).run();
+    else db.insert(schema.translations).values({ sourceHe: he, ...set }).run();
+    cells += Object.keys(set).length;
+  }
+  db.run(sql`PRAGMA wal_checkpoint(TRUNCATE)`);
+  console.log(`${rows.length} rows read, ${cells} cells written${overwrite ? " (overwrite)" : ""}.`);
+  if (refused.length) console.log(`Refused (still Hebrew):\n  ${refused.join("\n  ")}`);
+  console.log("Next: npm run db:clean, check the pages, then npm run db:publish.");
 }
 
-main().catch((err) => {
-  console.error(err);
+const [cmd, file, ...rest] = process.argv.slice(2);
+if (cmd === "export" && file) {
+  const asked = rest.filter((a): a is Loc => (ALL_LOCALES as readonly string[]).includes(a));
+  exportBatch(file, asked.length ? asked : [...ALL_LOCALES]);
+} else if (cmd === "import" && file) {
+  importBatch(file, rest.includes("--overwrite"));
+} else {
+  console.error("usage: translations.ts export <out.json> [locales…] | import <batch.json> [--overwrite]");
   process.exit(1);
-});
+}

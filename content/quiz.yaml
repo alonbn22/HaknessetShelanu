@@ -72,8 +72,16 @@
 # funded from vehicle licence fees, and privatization bills date from 2021;
 # Ra'am was the first Arab party formally in a coalition; the Law of Return
 # also covers the spouses of children and grandchildren; OECD figures on tax
-# and spending; IDI figures on Shabbat buses.
-lastReviewed: "2026-09-28"
+# and spending; IDI figures on Shabbat buses. 3 Oct 2026, weekly review
+# (sources of 28 Sep – 3 Oct): two lists published platforms — the Haredi
+# Public's economy chapter (econ-market +2: free economy, Ashdod Port
+# privatization, less regulation) and Amkha's foundations document
+# (econ-market +1: free market and fewer barriers, nothing on privatization or
+# tax cuts); Amkha's draft-law cell now cites that platform instead of its
+# list head's interview (still -1: universal service with Torah-learner
+# quotas). Not added: Amkha on an inquiry commission (it wants an
+# "independent" commission and does not say who appoints it).
+lastReviewed: "2026-10-03"
 questions:
   - id: palestinian-state
     topic: security
@@ -769,6 +777,28 @@ questions:
           es: "«Cancelar todos los planes de privatización de empresas públicas y servicios sociales; nacionalizar las empresas y servicios ya privatizados… una reforma fiscal que obligue a los dueños del capital… a pagar un impuesto sobre la renta real.»"
           fr: "« Annuler tous les plans de privatisation des entreprises publiques et des services sociaux ; nationaliser les entreprises et services déjà privatisés… une réforme fiscale qui obligera les détenteurs de capital… à payer un véritable impôt sur le revenu. »"
 
+      haredi-public:
+        value: 2
+        basis: platform
+        source: { url: "https://hatzibur-haharedi.org/%D7%9E%D7%A6%D7%A2/%D7%9B%D7%9C%D7%9B%D7%9C%D7%94", title: "הכלכלה שלנו — המצע של הציבור החרדי (פרק ט׳)", publisher: "הציבור החרדי" }
+        quote:
+          he: "\"אנחנו ימין כלכלי: משק חופשי, תחרות ומיסים נמוכים… הפרטת נמל אשדוד… צמצום ופישוט הרגולציה… והעברת פעילויות שאין הכרח שהמדינה תבצע בעצמה לשוק הפרטי ולחברה האזרחית.\""
+          en: "\"We are the economic right: a free economy, competition and low taxes… privatizing Ashdod Port… reducing and simplifying regulation… and transferring activities the state need not perform itself to the private market and civil society.\""
+          ar: "«نحن اليمين الاقتصادي: اقتصاد حر ومنافسة وضرائب منخفضة… خصخصة ميناء أسدود… تقليص التنظيم وتبسيطه… ونقل الأنشطة التي لا ضرورة لأن تؤديها الدولة بنفسها إلى السوق الخاصة والمجتمع المدني.»"
+          ru: "«Мы — экономические правые: свободная экономика, конкуренция и низкие налоги… приватизация Ашдодского порта… сокращение и упрощение регулирования… и передача частному рынку и гражданскому обществу функций, которые государству не обязательно выполнять самому»."
+          es: "«Somos la derecha económica: economía libre, competencia e impuestos bajos… privatizar el puerto de Asdod… reducir y simplificar la regulación… y traspasar al mercado privado y a la sociedad civil las actividades que el Estado no necesita realizar por sí mismo.»"
+          fr: "« Nous sommes la droite économique : économie libre, concurrence et impôts bas… privatisation du port d’Ashdod… réduction et simplification de la réglementation… et transfert au marché privé et à la société civile des activités que l’État n’a pas besoin d’assurer lui-même. »"
+      amkha:
+        value: 1
+        basis: platform
+        source: { url: "https://amchaisrael.co.il/foundations", title: "מסמך אבני היסוד של התנועה — עמך ישראל (כלכלה, יוקר המחיה ודיור; צעד 07)", publisher: "עמך ישראל" }
+        quote:
+          he: "\"נחתור לשוק חופשי ולשבירת מונופולים… נוביל מהלך להורדת יוקר המחיה באמצעות פירוק מוקדי ריכוזיות וכוח מונופוליסטיים, פתיחת השווקים לתחרות אמיתית, הסרת חסמי יבוא ורגולציה מיותרת.\""
+          en: "\"We will strive for a free market and the breaking of monopolies… We will lead a move to lower the cost of living by dismantling concentrations of economic and monopolistic power, opening markets to real competition, and removing import barriers and unnecessary regulation.\""
+          ar: "«سنسعى إلى سوق حرة وكسر الاحتكارات… سنقود خطوة لخفض غلاء المعيشة عبر تفكيك مراكز التركّز والقوة الاحتكارية، وفتح الأسواق لمنافسة حقيقية، وإزالة حواجز الاستيراد والتنظيم غير الضروري.»"
+          ru: "«Мы будем стремиться к свободному рынку и разрушению монополий… Мы проведём шаг по снижению стоимости жизни путём ликвидации центров концентрации и монопольной власти, открытия рынков для настоящей конкуренции и устранения импортных барьеров и лишнего регулирования»."
+          es: "«Aspiraremos a un mercado libre y a romper los monopolios… Impulsaremos una medida para bajar el coste de la vida desmantelando los focos de concentración y de poder monopolístico, abriendo los mercados a una competencia real y eliminando las barreras a la importación y la regulación innecesaria.»"
+          fr: "« Nous viserons un marché libre et la fin des monopoles… Nous mènerons une démarche pour réduire le coût de la vie en démantelant les pôles de concentration et de pouvoir monopolistique, en ouvrant les marchés à une véritable concurrence et en supprimant les barrières à l’importation et la réglementation superflue. »"
   - id: religion-state
     topic: religion-state
     lean: left
@@ -1133,24 +1163,16 @@ questions:
           fr: "« Nous devons protéger celui qui consacre vraiment sa vie à l’étude de la Torah et le laisser étudier en paix, sans menace d’arrestation ni de sanctions… tout jeune haredi qui ne consacre pas sa vie à l’étude de la Torah doit servir. »"
       amkha:
         value: -1
-        basis: statement
-        recordOf:
-          he: "דברי ראש הרשימה עופר וינטר; הוא מתנגד לחוק פטור, אך ב-10.9 אמר ש\"חלק מבחורי הישיבה יוכרו כמשרתים\""
-          en: "the words of list head Ofer Winter; he opposes an exemption law, but on 10 Sep he said that \"some yeshiva students will be recognized as serving\""
-          ar: "كلام رئيس القائمة عوفر فينتر؛ هو يعارض قانون إعفاء، لكنه قال في 10 أيلول/سبتمبر إن «بعض طلاب المدارس الدينية سيُعترف بهم كخادمين»"
-          ru: "слова главы списка Офера Винтера; он против закона об освобождении, но 10 сентября сказал, что «часть учащихся ешив будет признана служащими»"
-          es: "palabras del cabeza de lista, Ofer Winter; se opone a una ley de exención, pero el 10 de septiembre dijo que «algunos estudiantes de yeshivá serán reconocidos como personas que sirven»"
-          fr: "propos de la tête de liste, Ofer Winter ; il s’oppose à une loi d’exemption, mais a déclaré le 10 septembre que « certains étudiants de yeshiva seront reconnus comme servant »"
-        source: { url: "https://www.kan.org.il/content/kan-news/politic/1103103/", title: "עופר וינטר: \"מכוון לתיק הביטחון, לא הכרענו באף זירה\" (26.9.2026)", publisher: "כאן חדשות" }
-        moreSources:
-          - { url: "https://www.makorrishon.co.il/news/politcal/article/369822", title: "\"תהיה הצבעת מחאה, אנחנו ההתחלה של השינוי הפוליטי הגדול\" — ריאיון עם עופר וינטר (10.9.2026)", publisher: "מקור ראשון" }
+        basis: platform
+        source: { url: "https://amchaisrael.co.il/foundations", title: "מסמך אבני היסוד של התנועה — עמך ישראל (צעד 02 ופרק השירות)", publisher: "עמך ישראל" }
         quote:
-          he: "וינטר: \"לא צריך חוק גיוס כי חוק הגיוס מחייב את כל מדינת ישראל. כשאומרים חוק גיוס, אומרים חוק פטור מגיוס\""
-          en: "Winter: \"There is no need for a draft law, because the draft law binds the whole State of Israel. When people say 'draft law', they mean a law exempting from the draft\""
-          ar: "فينتر: «لا حاجة إلى قانون تجنيد لأن قانون التجنيد مُلزم لكل دولة إسرائيل. عندما يقولون قانون تجنيد، فهم يقولون قانون إعفاء من التجنيد»"
-          ru: "Винтер: «Не нужен закон о призыве, потому что закон о призыве обязателен для всего Государства Израиль. Когда говорят „закон о призыве“, имеют в виду закон об освобождении от призыва»"
-          es: "Winter: «No hace falta una ley de reclutamiento, porque la ley de reclutamiento obliga a todo el Estado de Israel. Cuando se dice “ley de reclutamiento”, se dice ley de exención del reclutamiento»"
-          fr: "Winter : « Il n’y a pas besoin d’une loi sur la conscription, car la loi sur la conscription s’applique à tout l’État d’Israël. Quand on dit “loi sur la conscription”, on dit loi d’exemption de la conscription »"
+          he: "\"נחוקק חוק יסוד: השירות, לפיו כל אזרח במדינת ישראל ישרת את המדינה… לרבות הפרמטרים לבחינה אובייקטיבית של מכסות לומדי התורה.\" ובהמשך: \"תישמר האפשרות למסלולים ייחודיים למצוינות תורנית, אך האחריות המשותפת והשירות תהיה הכלל ולא החריג.\""
+          en: "\"We will enact Basic Law: Service, under which every citizen of Israel will serve the state… including the parameters for an objective review of quotas of Torah learners.\" And: \"The option of special tracks for Torah excellence will be preserved, but shared responsibility and service will be the rule, not the exception.\""
+          ar: "«سنسنّ قانون أساس: الخدمة، الذي بموجبه يخدم كل مواطن في دولة إسرائيل الدولة… بما في ذلك معايير الفحص الموضوعي لحصص طلاب التوراة.» وفي البرنامج أيضًا: «سيُحافَظ على إمكانية مسارات خاصة للتميّز التوراتي، لكن المسؤولية المشتركة والخدمة ستكونان القاعدة لا الاستثناء.»"
+          ru: "«Мы примем Основной закон: служба, по которому каждый гражданин Государства Израиль будет служить государству… включая параметры объективной оценки квот изучающих Тору». И в программе: «Сохранится возможность особых треков для выдающихся знатоков Торы, но общая ответственность и служба будут правилом, а не исключением»."
+          es: "«Promulgaremos la Ley Fundamental: El Servicio, según la cual todo ciudadano del Estado de Israel servirá al Estado… incluidos los parámetros para un examen objetivo de los cupos de estudiantes de Torá.» Y también: «Se mantendrá la opción de vías especiales para la excelencia en la Torá, pero la responsabilidad compartida y el servicio serán la regla y no la excepción.»"
+          fr: "« Nous adopterons la Loi fondamentale : le Service, selon laquelle tout citoyen de l’État d’Israël servira l’État… y compris les paramètres d’un examen objectif des quotas d’étudiants de la Torah. » Et aussi : « La possibilité de filières spéciales pour l’excellence en Torah sera préservée, mais la responsabilité partagée et le service seront la règle et non l’exception. »"
+
   - id: core-curriculum
     topic: education
     lean: left

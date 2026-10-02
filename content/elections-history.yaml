@@ -1,5 +1,11 @@
 # History of Israeli Knesset elections. Editorial/curated (not from the Knesset
-# API). Figures are widely-documented results; review before publishing.
+# API). Every term's first source is the Knesset's own page for that Knesset
+# (election date, results by list, governments and their prime ministers); the
+# second is the turnout's source: the Central Elections Committee's table of past
+# turnout (1st–18th Knessets), the Knesset Research and Information Center's fact
+# sheet (21st–24th), or the Israel Democracy Institute's page for the election.
+# Checked figure by figure on 2 Oct 2026. Wikipedia is never a source here; the
+# page links each term's article only as further reading.
 # turnout = % of eligible voters; winnerSeats = seats won by the largest list.
 # date is ISO. "pm" = who ultimately formed/led the government after the election.
 # Event colours: good/bad only for wars, attacks, disasters, peace agreements and
@@ -41,6 +47,8 @@ elections:
         text: { he: "עסקאות לשחרור חטופים והפסקות אש לסירוגין בעזה.", en: "Hostage-release deals and intermittent ceasefires in Gaza.", ar: "صفقات للإفراج عن الرهائن ووقف متقطع لإطلاق النار في غزة.", ru: "Сделки об освобождении заложников и периодические прекращения огня в Газе.", es: "Acuerdos de liberación de rehenes y altos el fuego intermitentes en Gaza.", fr: "Accords de libération d’otages et cessez-le-feu intermittents à Gaza." }
     ended: { he: "הכנסת ה-25 השלימה קדנציה מלאה והתפזרה ב-17 ביולי 2026; הבחירות לכנסת ה-26 — 27 באוקטובר 2026.", en: "The 25th Knesset completed a full term and dispersed on July 17, 2026; the 26th Knesset election is on October 27, 2026.", ar: "أتمّ الكنيست الـ25 ولاية كاملة وحُلّ في 17 تموز/يوليو 2026؛ وانتخابات الكنيست الـ26 في 27 تشرين الأول/أكتوبر 2026.", ru: "Кнессет 25-го созыва отработал полный срок и был распущен 17 июля 2026 года; выборы в Кнессет 26-го созыва — 27 октября 2026 года.", es: "La 25.ª Knéset completó una legislatura entera y se disolvió el 17 de julio de 2026; las elecciones a la 26.ª Knéset son el 27 de octubre de 2026.", fr: "La 25e Knesset a achevé une législature complète et s’est dissoute le 17 juillet 2026 ; les élections à la 26e Knesset ont lieu le 27 octobre 2026." }
     sources:
+      - { url: "https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx?kns=25", title: "25th Knesset: results of the elections (1 November 2022) and its governments", publisher: "הכנסת" }
+      - { url: "https://en.idi.org.il/israeli-elections-and-parties/elections/2022/", title: "Elections for the 25th Knesset (1.11.2022): results and voter turnout", publisher: "המכון הישראלי לדמוקרטיה" }
       - { url: "https://en.wikipedia.org/wiki/2023_Israeli_judicial_reform", title: "2023 Israeli judicial reform", publisher: "Wikipedia" }
       - { url: "https://www.timesofisrael.com/after-days-of-indecision-netanyahu-gantz-agree-to-establish-emergency-war-government/", title: "After days of indecision, Netanyahu, Gantz agree to establish emergency war government (11 Oct 2023)", publisher: "The Times of Israel" }
   - knesset: 24
@@ -72,6 +80,8 @@ elections:
         text: { he: "מבצע \"שומר החומות\" מול חמאס בעזה ומהומות בערים מעורבות.", en: "Operation Guardian of the Walls against Hamas in Gaza and unrest in mixed cities.", ar: "عملية «حارس الأسوار» ضد حماس في غزة واضطرابات في المدن المختلطة.", ru: "Операция «Страж стен» против ХАМАС в Газе и беспорядки в смешанных городах.", es: "La operación Guardián de los Muros contra Hamás en Gaza y los disturbios en las ciudades mixtas.", fr: "L’opération Gardien des murailles contre le Hamas à Gaza et les troubles dans les villes mixtes." }
     ended: { he: "הכנסת התפזרה ביוני 2022 לאחר שאיבדה את הרוב; לפיד הפך לראש ממשלה מעבר.", en: "Dissolved in June 2022 after losing its majority; Lapid became caretaker PM.", ar: "حُلّ في حزيران/يونيو 2022 بعد فقدانه الأغلبية؛ وأصبح لبيد رئيس حكومة انتقالية.", ru: "Распущен в июне 2022 года после потери большинства; Лапид стал премьер-министром переходного правительства.", es: "Disuelta en junio de 2022 tras perder la mayoría; Lapid pasó a ser primer ministro en funciones.", fr: "Dissoute en juin 2022 après la perte de sa majorité ; Lapid est devenu Premier ministre de transition." }
     sources:
+      - { url: "https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx?kns=24", title: "24th Knesset: results of the elections (23 March 2021) and its governments", publisher: "הכנסת" }
+      - { url: "https://main.knesset.gov.il/EN/Documents/2022-10-24%20Fact%20sheet%2002%20-%2025th%20Knesset%20elections%20-%20updated.pdf", title: "Fact sheet: The 25th Knesset elections (October 2022) — voter turnout, 21st–24th Knessets", publisher: "מרכז המחקר והמידע של הכנסת" }
       - { url: "https://en.idi.org.il/israeli-elections-and-parties/parties/raam/", title: "Ra'am", publisher: "המכון הישראלי לדמוקרטיה" }
   - knesset: 23
     date: "2020-03-02"
@@ -99,6 +109,8 @@ elections:
         text: { he: "הסכמי אברהם — נחתמו עם איחוד האמירויות ובחריין; מרוקו וסודאן הצטרפו בחודשים שלאחר מכן.", en: "The Abraham Accords — signed with the UAE and Bahrain; Morocco and Sudan joined in the following months.", ar: "اتفاقيات أبراهام — وُقّعت مع الإمارات والبحرين؛ وانضم المغرب والسودان في الأشهر التالية.", ru: "«Авраамовы соглашения» — подписаны с ОАЭ и Бахрейном; Марокко и Судан присоединились в следующие месяцы.", es: "Los Acuerdos de Abraham — firmados con Emiratos Árabes Unidos y Baréin; Marruecos y Sudán se sumaron en los meses siguientes.", fr: "Les accords d’Abraham — signés avec les Émirats arabes unis et Bahreïn ; le Maroc et le Soudan les ont rejoints dans les mois suivants." }
     ended: { he: "פוזרה בדצמבר 2020 כי לא אושר תקציב מדינה במועד.", en: "Dissolved in December 2020 because no state budget was passed in time.", ar: "حُلّ في كانون الأول/ديسمبر 2020 لعدم إقرار ميزانية الدولة في موعدها.", ru: "Распущен в декабре 2020 года, так как государственный бюджет не был принят вовремя.", es: "Disuelta en diciembre de 2020 porque no se aprobó a tiempo un presupuesto del Estado.", fr: "Dissoute en décembre 2020 faute d’adoption à temps d’un budget de l’État." }
     sources:
+      - { url: "https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx?kns=23", title: "23rd Knesset: results of the elections (2 March 2020) and its governments", publisher: "הכנסת" }
+      - { url: "https://main.knesset.gov.il/EN/Documents/2022-10-24%20Fact%20sheet%2002%20-%2025th%20Knesset%20elections%20-%20updated.pdf", title: "Fact sheet: The 25th Knesset elections (October 2022) — voter turnout, 21st–24th Knessets", publisher: "מרכז המחקר והמידע של הכנסת" }
       - { url: "https://www.state.gov/the-abraham-accords/", title: "The Abraham Accords", publisher: "U.S. Department of State" }
       - { url: "https://www.state.gov/wp-content/uploads/2020/09/Bahrain_Israel-Agreement-signed-FINAL-15-Sept-2020-508.pdf", title: "Abraham Accords: Declaration of Peace, Cooperation, and Constructive Diplomatic and Friendly Relations (Israel and Bahrain, 15 September 2020)", publisher: "U.S. Department of State" }
       - { url: "https://www.state.gov/wp-content/uploads/2021/01/Joint-Declaration-US-Morrocco-Israel.pdf", title: "Joint Declaration of the Kingdom of Morocco, the United States of America and the State of Israel (Rabat, 22 December 2020)", publisher: "U.S. Department of State" }
@@ -122,6 +134,9 @@ elections:
         date: "2019-11-21"
         text: { he: "גם גנץ וגם נתניהו נכשלו בהרכבת ממשלה.", en: "Both Gantz and Netanyahu failed to form a government.", ar: "فشل كلٌّ من غانتس ونتنياهو في تشكيل حكومة.", ru: "И Ганц, и Нетаньяху не смогли сформировать правительство.", es: "Tanto Gantz como Netanyahu fracasaron en formar gobierno.", fr: "Gantz et Netanyahou ont tous deux échoué à former un gouvernement." }
     ended: { he: "פוזרה בדצמבר 2019 לאחר שלא הורכבה ממשלה — בחירות שלישיות.", en: "Dissolved in December 2019 after no government formed — a third election.", ar: "حُلّ في كانون الأول/ديسمبر 2019 بعد عدم تشكيل حكومة — انتخابات ثالثة.", ru: "Распущен в декабре 2019 года, так как правительство не было сформировано, — третьи выборы.", es: "Disuelta en diciembre de 2019 al no formarse gobierno — unas terceras elecciones.", fr: "Dissoute en décembre 2019 faute de gouvernement — une troisième élection." }
+    sources:
+      - { url: "https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx?kns=22", title: "22nd Knesset: results of the elections (17 September 2019) and its governments", publisher: "הכנסת" }
+      - { url: "https://main.knesset.gov.il/EN/Documents/2022-10-24%20Fact%20sheet%2002%20-%2025th%20Knesset%20elections%20-%20updated.pdf", title: "Fact sheet: The 25th Knesset elections (October 2022) — voter turnout, 21st–24th Knessets", publisher: "מרכז המחקר והמידע של הכנסת" }
   - knesset: 21
     date: "2019-04-09"
     turnout: 68.5
@@ -142,6 +157,8 @@ elections:
         text: { he: "כישלון המו\"מ הקואליציוני בעיקר סביב חוק הגיוס.", en: "Collapse of coalition talks, chiefly over the conscription law.", ar: "انهيار المفاوضات الائتلافية، ولا سيما حول قانون التجنيد.", ru: "Срыв коалиционных переговоров — прежде всего из-за закона о призыве.", es: "Fracaso de las negociaciones de coalición, sobre todo por la ley del servicio militar.", fr: "Échec des négociations de coalition, principalement sur la loi sur la conscription." }
     ended: { he: "פוזרה במאי 2019 — לראשונה בהיסטוריה הכנסת פיזרה את עצמה במקום להקים ממשלה.", en: "Dissolved in May 2019 — the first time the Knesset dissolved itself instead of forming a government.", ar: "حُلّ في أيار/مايو 2019 — المرة الأولى التي يحلّ فيها الكنيست نفسه بدلًا من تشكيل حكومة.", ru: "Распущен в мае 2019 года — впервые Кнессет самораспустился вместо формирования правительства.", es: "Disuelta en mayo de 2019 — la primera vez que la Knéset se disolvió a sí misma en lugar de formar gobierno.", fr: "Dissoute en mai 2019 — la première fois que la Knesset s’est dissoute elle-même au lieu de former un gouvernement." }
     sources:
+      - { url: "https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx?kns=21", title: "21st Knesset: results of the elections (9 April 2019) and its governments", publisher: "הכנסת" }
+      - { url: "https://main.knesset.gov.il/EN/Documents/2022-10-24%20Fact%20sheet%2002%20-%2025th%20Knesset%20elections%20-%20updated.pdf", title: "Fact sheet: The 25th Knesset elections (October 2022) — voter turnout, 21st–24th Knessets", publisher: "מרכז המחקר והמידע של הכנסת" }
       - { url: "https://en.idi.org.il/israeli-elections-and-parties/elections/2019-1/", title: "The Elections for the 21st Knesset (9 April 2019): results", publisher: "המכון הישראלי לדמוקרטיה" }
   - knesset: 20
     date: "2015-03-17"
@@ -164,6 +181,8 @@ elections:
         text: { he: "חקיקת חוק יסוד: ישראל — מדינת הלאום של העם היהודי.", en: "Passage of Basic Law: Israel as the Nation-State of the Jewish People.", ar: "سنّ قانون أساس: إسرائيل – الدولة القومية للشعب اليهودي.", ru: "Принятие Основного закона: Израиль — национальное государство еврейского народа.", es: "Aprobación de la Ley Fundamental: Israel como Estado-nación del pueblo judío.", fr: "Adoption de la Loi fondamentale : Israël, État-nation du peuple juif." }
     ended: { he: "פוזרה בדצמבר 2018 על רקע המחלוקת על חוק הגיוס — לבחירות מוקדמות.", en: "Dissolved in December 2018 amid the conscription-law dispute — to early elections.", ar: "حُلّ في كانون الأول/ديسمبر 2018 على خلفية الخلاف حول قانون التجنيد — إلى انتخابات مبكرة.", ru: "Распущен в декабре 2018 года на фоне спора о законе о призыве — досрочные выборы.", es: "Disuelta en diciembre de 2018 en medio de la disputa por la ley del servicio militar — hacia elecciones anticipadas.", fr: "Dissoute en décembre 2018 au milieu du conflit sur la loi sur la conscription — élections anticipées." }
     sources:
+      - { url: "https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx?kns=20", title: "20th Knesset: results of the elections (17 March 2015) and its governments", publisher: "הכנסת" }
+      - { url: "https://en.idi.org.il/israeli-elections-and-parties/elections/2015/", title: "Elections for the 20th Knesset (17.3.2015): results and voter turnout", publisher: "המכון הישראלי לדמוקרטיה" }
       - { url: "https://en.wikipedia.org/wiki/Trial_of_Benjamin_Netanyahu", title: "Trial of Benjamin Netanyahu", publisher: "Wikipedia" }
       - { url: "https://www.ynetnews.com/articles/0,7340,L-5122753,00.html", title: "Two suspected of offering bribes to close case against PM's wife (20 Feb 2018)", publisher: "Ynetnews" }
   - knesset: 19
@@ -187,6 +206,9 @@ elections:
         date: "2014-07-08"
         text: { he: "מבצע \"צוק איתן\" — מלחמה בת 50 יום מול חמאס בעזה.", en: "Operation Protective Edge — a 50-day war against Hamas in Gaza.", ar: "عملية «الجرف الصامد» — حرب استمرت 50 يومًا ضد حماس في غزة.", ru: "Операция «Нерушимая скала» — 50-дневная война против ХАМАС в Газе.", es: "La operación Margen Protector — una guerra de 50 días contra Hamás en Gaza.", fr: "L’opération Bordure protectrice — une guerre de 50 jours contre le Hamas à Gaza." }
     ended: { he: "התפרקה בדצמבר 2014 כשנתניהו פיטר את לפיד ולבני — לבחירות מוקדמות.", en: "Collapsed in December 2014 when Netanyahu dismissed Lapid and Livni — to early elections.", ar: "تفكّك الائتلاف في كانون الأول/ديسمبر 2014 حين أقال نتنياهو لبيد وليفني — إلى انتخابات مبكرة.", ru: "Коалиция распалась в декабре 2014 года, когда Нетаньяху уволил Лапида и Ливни, — досрочные выборы.", es: "Se derrumbó en diciembre de 2014 cuando Netanyahu destituyó a Lapid y Livni — hacia elecciones anticipadas.", fr: "Effondrement en décembre 2014 lorsque Netanyahou a limogé Lapid et Livni — élections anticipées." }
+    sources:
+      - { url: "https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx?kns=19", title: "19th Knesset: results of the elections (22 January 2013) and its governments", publisher: "הכנסת" }
+      - { url: "https://en.idi.org.il/israeli-elections-and-parties/elections/2013/", title: "Elections for the 19th Knesset (22.1.2013): results and voter turnout", publisher: "המכון הישראלי לדמוקרטיה" }
   - knesset: 18
     date: "2009-02-10"
     turnout: 64.7
@@ -212,6 +234,9 @@ elections:
         date: "2012-11-14"
         text: { he: "מבצע \"עמוד ענן\" מול חמאס בעזה.", en: "Operation Pillar of Defense against Hamas in Gaza.", ar: "عملية «عمود السحاب» ضد حماس في غزة.", ru: "Операция «Облачный столп» против ХАМАС в Газе.", es: "La operación Pilar Defensivo contra Hamás en Gaza.", fr: "L’opération Pilier de défense contre le Hamas à Gaza." }
     ended: { he: "הוקדמו הבחירות; הכנסת פוזרה ב-2012 על רקע אי-הסכמה על התקציב.", en: "Elections were brought forward; the Knesset dissolved in 2012 over a budget disagreement.", ar: "قُدّمت الانتخابات؛ وحُلّ الكنيست في 2012 على خلفية خلاف حول الميزانية.", ru: "Выборы были перенесены на более ранний срок; Кнессет был распущен в 2012 году из-за разногласий по бюджету.", es: "Las elecciones se adelantaron; la Knéset se disolvió en 2012 por un desacuerdo presupuestario.", fr: "Les élections ont été avancées ; la Knesset s’est dissoute en 2012 sur un désaccord budgétaire." }
+    sources:
+      - { url: "https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx?kns=18", title: "18th Knesset: results of the elections (10 February 2009) and its governments", publisher: "הכנסת" }
+      - { url: "https://www.gov.il/apps/elections/elections-knesset-19/heb/history/PercentVotes.html", title: "אחוז המצביעים בבחירות קודמות, הכנסת ה-1 עד ה-18 (אתר ועדת הבחירות המרכזית לכנסת ה-19)", publisher: "ועדת הבחירות המרכזית (gov.il)" }
   - knesset: 17
     date: "2006-03-28"
     turnout: 63.5
@@ -237,10 +262,14 @@ elections:
         text: { he: "על רקע חקירות פליליות הודיע אולמרט שיתפטר עם בחירת יו\"ר חדש לקדימה.", en: "Amid criminal investigations, Olmert announced he would resign once Kadima chose a new leader.", ar: "على خلفية تحقيقات جنائية، أعلن أولمرت أنه سيستقيل فور انتخاب رئيس جديد لكاديما.", ru: "На фоне уголовных расследований Ольмерт объявил, что уйдёт в отставку после избрания нового лидера «Кадимы».", es: "En medio de investigaciones penales, Olmert anunció que dimitiría cuando Kadima eligiera un nuevo líder.", fr: "Sur fond d’enquêtes pénales, Olmert a annoncé qu’il démissionnerait dès que Kadima aurait choisi un nouveau dirigeant." }
     ended: { he: "אולמרט התפטר על רקע חקירות פליליות; ציפי לבני לא הצליחה להרכיב ממשלה, והבחירות הוקדמו לפברואר 2009.", en: "Olmert resigned amid criminal investigations; Tzipi Livni could not form a government, and early elections were held in February 2009.", ar: "استقال أولمرت على خلفية تحقيقات جنائية؛ ولم تنجح تسيبي ليفني في تشكيل حكومة، فجرت انتخابات مبكرة في شباط/فبراير 2009.", ru: "Ольмерт ушёл в отставку на фоне уголовных расследований; Ципи Ливни не смогла сформировать правительство, и в феврале 2009 года прошли досрочные выборы.", es: "Olmert dimitió en medio de investigaciones penales; Tzipi Livni no logró formar gobierno y en febrero de 2009 se celebraron elecciones anticipadas.", fr: "Olmert a démissionné sur fond d’enquêtes pénales ; Tzipi Livni n’a pas réussi à former un gouvernement, et des élections anticipées ont eu lieu en février 2009." }
     sources:
+      - { url: "https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx?kns=17", title: "17th Knesset: results of the elections (28 March 2006) and its governments", publisher: "הכנסת" }
+      - { url: "https://www.gov.il/apps/elections/elections-knesset-19/heb/history/PercentVotes.html", title: "אחוז המצביעים בבחירות קודמות, הכנסת ה-1 עד ה-18 (אתר ועדת הבחירות המרכזית לכנסת ה-19)", publisher: "ועדת הבחירות המרכזית (gov.il)" }
       - { url: "https://en.idi.org.il/articles/38887", title: "Dissolving the Knesset: A Historical Survey (Chen Friedberg and Assaf Shapira, 18 May 2022)", publisher: "המכון הישראלי לדמוקרטיה" }
       - { url: "https://en.idi.org.il/israeli-elections-and-parties/elections/2009/", title: "About the 2009 Elections", publisher: "המכון הישראלי לדמוקרטיה" }
   - knesset: 16
     date: "2003-01-28"
+    # IDI: 3,200,773 votes of 4,720,079 eligible, 67.8%. The CEC's table prints
+    # 68.9 for 2003; shown here is the figure the votes and eligible voters give.
     turnout: 67.8
     winner: { he: "הליכוד", en: "Likud", ar: "الليكود", ru: "Ликуд", es: "Likud", fr: "Likoud" }
     winnerSeats: 38
@@ -257,6 +286,9 @@ elections:
         date: "2005-08-15"
         text: { he: "תוכנית ההתנתקות — פינוי כל היישובים מרצועת עזה.", en: "The Disengagement — evacuation of all settlements from the Gaza Strip.", ar: "خطة فك الارتباط — إخلاء جميع المستوطنات من قطاع غزة.", ru: "Размежевание — эвакуация всех поселений из сектора Газа.", es: "La Desconexión — evacuación de todos los asentamientos de la Franja de Gaza.", fr: "Le désengagement — évacuation de toutes les implantations de la bande de Gaza." }
     ended: { he: "שרון פיזר את הכנסת ועזב להקים את קדימה; לאחר מכן לקה בשבץ — בחירות 2006.", en: "Sharon dissolved the Knesset and left to found Kadima; he then suffered a stroke — 2006 election.", ar: "حلّ شارون الكنيست وغادر لتأسيس كاديما؛ ثم أُصيب بجلطة دماغية — انتخابات 2006.", ru: "Шарон распустил Кнессет и ушёл, чтобы создать «Кадиму»; затем он перенёс инсульт — выборы 2006 года.", es: "Sharon disolvió la Knéset y se marchó para fundar Kadima; después sufrió un derrame cerebral — elecciones de 2006.", fr: "Sharon a dissous la Knesset et est parti fonder Kadima ; il a ensuite été victime d’une attaque cérébrale — élection de 2006." }
+    sources:
+      - { url: "https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx?kns=16", title: "16th Knesset: results of the elections (28 January 2003) and its governments", publisher: "הכנסת" }
+      - { url: "https://en.idi.org.il/israeli-elections-and-parties/elections/2003/", title: "Elections for the 16th Knesset (28.1.2003): results and voter turnout", publisher: "המכון הישראלי לדמוקרטיה" }
   - knesset: 15
     date: "1999-05-17"
     turnout: 78.7
@@ -282,6 +314,8 @@ elections:
         text: { he: "פרוץ האינתיפאדה השנייה.", en: "The outbreak of the Second Intifada.", ar: "اندلاع الانتفاضة الثانية.", ru: "Начало Второй интифады.", es: "El estallido de la Segunda Intifada.", fr: "Le déclenchement de la Seconde Intifada." }
     ended: { he: "ברק התפטר, ובבחירה מיוחדת לראשות הממשלה ב-2001 ניצח שרון. ב-2002 פיזר ראש הממשלה שרון את הכנסת — בחירות מוקדמות בינואר 2003.", en: "Barak resigned, and Sharon won a special election for prime minister in 2001. In 2002 Prime Minister Sharon dissolved the Knesset — early elections in January 2003.", ar: "استقال باراك، وفاز شارون في انتخابات خاصة لرئاسة الحكومة عام 2001. وفي 2002 حلّ رئيس الحكومة شارون الكنيست — انتخابات مبكرة في كانون الثاني/يناير 2003.", ru: "Барак ушёл в отставку, и в 2001 году Шарон победил на специальных выборах премьер-министра. В 2002 году премьер-министр Шарон распустил Кнессет — досрочные выборы в январе 2003 года.", es: "Barak dimitió y Sharon ganó en 2001 una elección especial para primer ministro. En 2002 el primer ministro Sharon disolvió la Knéset — elecciones anticipadas en enero de 2003.", fr: "Barak a démissionné, et Sharon a remporté en 2001 une élection spéciale au poste de Premier ministre. En 2002, le Premier ministre Sharon a dissous la Knesset — élections anticipées en janvier 2003." }
     sources:
+      - { url: "https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx?kns=15", title: "15th Knesset: results of the elections (17 May 1999) and its governments", publisher: "הכנסת" }
+      - { url: "https://www.gov.il/apps/elections/elections-knesset-19/heb/history/PercentVotes.html", title: "אחוז המצביעים בבחירות קודמות, הכנסת ה-1 עד ה-18 (אתר ועדת הבחירות המרכזית לכנסת ה-19)", publisher: "ועדת הבחירות המרכזית (gov.il)" }
       - { url: "https://en.idi.org.il/articles/38887", title: "Dissolving the Knesset: A Historical Survey (Chen Friedberg and Assaf Shapira, 18 May 2022)", publisher: "המכון הישראלי לדמוקרטיה" }
       - { url: "https://en.idi.org.il/israeli-elections-and-parties/elections/1999/", title: "About the 1999 Elections", publisher: "המכון הישראלי לדמוקרטיה" }
       - { url: "https://en.idi.org.il/israeli-elections-and-parties/elections/2003/", title: "About the 2003 Elections", publisher: "המכון הישראלי לדמוקרטיה" }
@@ -308,6 +342,8 @@ elections:
         text: { he: "הסכם ואי (מזכר ואי ריבר) — המשך תהליך אוסלו.", en: "The Wye River Memorandum — continuing the Oslo process.", ar: "مذكرة واي ريفر — استمرار مسار أوسلو.", ru: "Меморандум Уай-Ривер — продолжение процесса Осло.", es: "El Memorando de Wye River — continuación del proceso de Oslo.", fr: "Le mémorandum de Wye River — poursuite du processus d’Oslo." }
     ended: { he: "הכנסת פיזרה את עצמה בחוק שפורסם בינואר 1999 — בחירות מוקדמות במאי 1999.", en: "The Knesset dissolved itself by a law published in January 1999 — early elections in May 1999.", ar: "حلّ الكنيست نفسه بقانون نُشر في كانون الثاني/يناير 1999 — انتخابات مبكرة في أيار/مايو 1999.", ru: "Кнессет самораспустился законом, опубликованным в январе 1999 года, — досрочные выборы в мае 1999 года.", es: "La Knéset se disolvió mediante una ley publicada en enero de 1999 — elecciones anticipadas en mayo de 1999.", fr: "La Knesset s’est dissoute par une loi publiée en janvier 1999 — élections anticipées en mai 1999." }
     sources:
+      - { url: "https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx?kns=14", title: "14th Knesset: results of the elections (29 May 1996) and its governments", publisher: "הכנסת" }
+      - { url: "https://www.gov.il/apps/elections/elections-knesset-19/heb/history/PercentVotes.html", title: "אחוז המצביעים בבחירות קודמות, הכנסת ה-1 עד ה-18 (אתר ועדת הבחירות המרכזית לכנסת ה-19)", publisher: "ועדת הבחירות המרכזית (gov.il)" }
       - { url: "https://en.idi.org.il/articles/38887", title: "Dissolving the Knesset: A Historical Survey (Chen Friedberg and Assaf Shapira, 18 May 2022)", publisher: "המכון הישראלי לדמוקרטיה" }
       - { url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_IsraelLaw(2000624)", title: "חוק התפזרות הכנסת הארבע-עשרה (פורסם ב-10 בינואר 1999)", publisher: "Knesset OData" }
       - { url: "https://peacemaker.un.org/sites/default/files/document/files/2024/05/il20ps970117protocol20concerning20the20redeployment20in20hebron.pdf", title: "Protocol Concerning the Redeployment in Hebron (17 January 1997)", publisher: "UN Peacemaker" }
@@ -343,6 +379,8 @@ elections:
         text: { he: "מבצע \"ענבי זעם\" בלבנון.", en: "Operation Grapes of Wrath in Lebanon.", ar: "عملية «عناقيد الغضب» في لبنان.", ru: "Операция «Гроздья гнева» в Ливане.", es: "La operación Uvas de la Ira en el Líbano.", fr: "L’opération Raisins de la colère au Liban." }
     ended: { he: "הכנסת פיזרה את עצמה בחוק — בחירות מוקדמות במאי 1996.", en: "Dissolved itself by law — early elections in May 1996.", ar: "حلّ الكنيست نفسه بقانون — انتخابات مبكرة في أيار/مايو 1996.", ru: "Самораспустился законом — досрочные выборы в мае 1996 года.", es: "Se disolvió por ley — elecciones anticipadas en mayo de 1996.", fr: "S’est dissoute par une loi — élections anticipées en mai 1996." }
     sources:
+      - { url: "https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx?kns=13", title: "13th Knesset: results of the elections (23 June 1992) and its governments", publisher: "הכנסת" }
+      - { url: "https://www.gov.il/apps/elections/elections-knesset-19/heb/history/PercentVotes.html", title: "אחוז המצביעים בבחירות קודמות, הכנסת ה-1 עד ה-18 (אתר ועדת הבחירות המרכזית לכנסת ה-19)", publisher: "ועדת הבחירות המרכזית (gov.il)" }
       - { url: "https://en.idi.org.il/articles/38887", title: "Dissolving the Knesset: A Historical Survey (Chen Friedberg and Assaf Shapira, 18 May 2022)", publisher: "המכון הישראלי לדמוקרטיה" }
       - { url: "https://en.idi.org.il/israeli-elections-and-parties/elections/1992/", title: "About the 1992 Elections", publisher: "המכון הישראלי לדמוקרטיה" }
   - knesset: 12
@@ -373,6 +411,8 @@ elections:
         text: { he: "מבצע שלמה — מבצע אווירי להעלאת יהודי אתיופיה.", en: "Operation Solomon — the airlift of Ethiopian Jews.", ar: "عملية «سليمان» — جسر جوي لنقل يهود إثيوبيا إلى إسرائيل.", ru: "Операция «Соломон» — воздушный мост для репатриации евреев Эфиопии.", es: "La operación Salomón — el puente aéreo de los judíos etíopes.", fr: "L’opération Salomon — le pont aérien des Juifs d’Éthiopie." }
     ended: { he: "הכנסת פיזרה את עצמה בחוק — בחירות מוקדמות ביוני 1992.", en: "Dissolved itself by law — early elections in June 1992.", ar: "حلّ الكنيست نفسه بقانون — انتخابات مبكرة في حزيران/يونيو 1992.", ru: "Самораспустился законом — досрочные выборы в июне 1992 года.", es: "Se disolvió por ley — elecciones anticipadas en junio de 1992.", fr: "S’est dissoute par une loi — élections anticipées en juin 1992." }
     sources:
+      - { url: "https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx?kns=12", title: "12th Knesset: results of the elections (1 November 1988) and its governments", publisher: "הכנסת" }
+      - { url: "https://www.gov.il/apps/elections/elections-knesset-19/heb/history/PercentVotes.html", title: "אחוז המצביעים בבחירות קודמות, הכנסת ה-1 עד ה-18 (אתר ועדת הבחירות המרכזית לכנסת ה-19)", publisher: "ועדת הבחירות המרכזית (gov.il)" }
       - { url: "https://en.idi.org.il/articles/38887", title: "Dissolving the Knesset: A Historical Survey (Chen Friedberg and Assaf Shapira, 18 May 2022)", publisher: "המכון הישראלי לדמוקרטיה" }
   - knesset: 11
     date: "1984-07-23"
@@ -398,6 +438,9 @@ elections:
         date: "1987-12-09"
         text: { he: "פרוץ האינתיפאדה הראשונה בשטחים בדצמבר 1987.", en: "The outbreak of the First Intifada in the territories in December 1987.", ar: "اندلاع الانتفاضة الأولى في الضفة الغربية وقطاع غزة في كانون الأول/ديسمبر 1987.", ru: "Начало Первой интифады на территориях в декабре 1987 года.", es: "El estallido de la Primera Intifada en los territorios en diciembre de 1987.", fr: "Le déclenchement de la Première Intifada dans les territoires en décembre 1987." }
     ended: { he: "השלימה כהונה — בחירות 1988.", en: "Served its term — 1988 election.", ar: "أتمّ ولايته — انتخابات 1988.", ru: "Проработал полный срок — выборы 1988 года.", es: "Cumplió su legislatura — elecciones de 1988.", fr: "A accompli sa législature — élection de 1988." }
+    sources:
+      - { url: "https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx?kns=11", title: "11th Knesset: results of the elections (23 July 1984) and its governments", publisher: "הכנסת" }
+      - { url: "https://www.gov.il/apps/elections/elections-knesset-19/heb/history/PercentVotes.html", title: "אחוז המצביעים בבחירות קודמות, הכנסת ה-1 עד ה-18 (אתר ועדת הבחירות המרכזית לכנסת ה-19)", publisher: "ועדת הבחירות המרכזית (gov.il)" }
   - knesset: 10
     date: "1981-06-30"
     turnout: 78.5
@@ -422,6 +465,9 @@ elections:
         date: "1982-09-16"
         text: { he: "טבח סברה ושתילה וועדת כהן בעקבותיו.", en: "The Sabra and Shatila massacre and the ensuing Kahan Commission.", ar: "مجزرة صبرا وشاتيلا ولجنة كاهان التي أعقبتها.", ru: "Резня в Сабре и Шатиле и созданная после неё комиссия Кахана.", es: "La masacre de Sabra y Chatila y la posterior Comisión Kahan.", fr: "Le massacre de Sabra et Chatila et la commission Kahan qui a suivi." }
     ended: { he: "בגין התפטר ב-1983 (שמיר החליפו) — בחירות מוקדמות 1984.", en: "Begin resigned in 1983 (Shamir succeeded) — early elections in 1984.", ar: "استقال بيغن في 1983 (وخلفه شامير) — انتخابات مبكرة في 1984.", ru: "Бегин ушёл в отставку в 1983 году (его сменил Шамир) — досрочные выборы в 1984 году.", es: "Beguin renunció en 1983 (lo sucedió Shamir) — elecciones anticipadas en 1984.", fr: "Begin a démissionné en 1983 (Shamir lui a succédé) — élections anticipées en 1984." }
+    sources:
+      - { url: "https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx?kns=10", title: "10th Knesset: results of the elections (30 June 1981) and its governments", publisher: "הכנסת" }
+      - { url: "https://www.gov.il/apps/elections/elections-knesset-19/heb/history/PercentVotes.html", title: "אחוז המצביעים בבחירות קודמות, הכנסת ה-1 עד ה-18 (אתר ועדת הבחירות המרכזית לכנסת ה-19)", publisher: "ועדת הבחירות המרכזית (gov.il)" }
   - knesset: 9
     date: "1977-05-17"
     turnout: 79.2
@@ -454,6 +500,8 @@ elections:
         text: { he: "הפצצת הכור הגרעיני בעיראק (מבצע אופרה).", en: "The bombing of Iraq's nuclear reactor (Operation Opera).", ar: "قصف المفاعل النووي العراقي (عملية «أوبرا»).", ru: "Бомбардировка иракского ядерного реактора (операция «Опера»).", es: "El bombardeo del reactor nuclear iraquí (operación Ópera).", fr: "Le bombardement du réacteur nucléaire irakien (opération Opéra)." }
     ended: { he: "הכנסת פיזרה את עצמה בחוק — בחירות מוקדמות ביוני 1981.", en: "Dissolved itself by law — early elections in June 1981.", ar: "حلّ الكنيست نفسه بقانون — انتخابات مبكرة في حزيران/يونيو 1981.", ru: "Самораспустился законом — досрочные выборы в июне 1981 года.", es: "Se disolvió por ley — elecciones anticipadas en junio de 1981.", fr: "S’est dissoute par une loi — élections anticipées en juin 1981." }
     sources:
+      - { url: "https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx?kns=9", title: "9th Knesset: results of the elections (17 May 1977) and its governments", publisher: "הכנסת" }
+      - { url: "https://www.gov.il/apps/elections/elections-knesset-19/heb/history/PercentVotes.html", title: "אחוז המצביעים בבחירות קודמות, הכנסת ה-1 עד ה-18 (אתר ועדת הבחירות המרכזית לכנסת ה-19)", publisher: "ועדת הבחירות המרכזית (gov.il)" }
       - { url: "https://en.idi.org.il/articles/38887", title: "Dissolving the Knesset: A Historical Survey (Chen Friedberg and Assaf Shapira, 18 May 2022)", publisher: "המכון הישראלי לדמוקרטיה" }
       - { url: "https://en.wikipedia.org/wiki/Operation_Opera", title: "Operation Opera", publisher: "Wikipedia" }
   - knesset: 8
@@ -482,6 +530,8 @@ elections:
         text: { he: "מבצע אנטבה — חילוץ חטופי המטוס באוגנדה.", en: "Operation Entebbe — the rescue of hijacked-flight hostages in Uganda.", ar: "عملية عنتيبي — تحرير رهائن الطائرة المخطوفة في أوغندا.", ru: "Операция в Энтеббе — освобождение заложников угнанного самолёта в Уганде.", es: "La operación Entebbe — el rescate de los rehenes de un vuelo secuestrado en Uganda.", fr: "L’opération Entebbe — le sauvetage des otages d’un vol détourné en Ouganda." }
     ended: { he: "הכנסת פיזרה את עצמה בחוק והבחירות הוקדמו למאי 1977: בדצמבר 1976 התפטרה ממשלת רבין בעקבות משבר קואליציוני עם המפד\"ל, ובאפריל 1977 פרש רבין מראשות רשימת המערך על רקע פרשת חשבון הדולרים, ושמעון פרס החליף אותו.", en: "The Knesset dissolved itself by law, bringing the election forward to May 1977: in December 1976 Rabin's government resigned after a coalition crisis with the National Religious Party, and in April 1977 Rabin stepped down as head of the Alignment list over the dollar-account affair; Shimon Peres replaced him.", ar: "حلّ الكنيست نفسه بقانون فقُدّمت الانتخابات إلى أيار/مايو 1977: ففي كانون الأول/ديسمبر 1976 استقالت حكومة رابين إثر أزمة ائتلافية مع الحزب الوطني الديني، وفي نيسان/أبريل 1977 تنحّى رابين عن رئاسة قائمة «المعراخ» على خلفية قضية حساب الدولارات، وحلّ محلّه شمعون بيريس.", ru: "Кнессет самораспустился законом, и выборы перенесли на май 1977 года: в декабре 1976 года правительство Рабина ушло в отставку после коалиционного кризиса с Национально-религиозной партией, а в апреле 1977 года Рабин оставил пост главы списка «Маараха» из-за дела о долларовом счёте; его сменил Шимон Перес.", es: "La Knéset se disolvió por ley y adelantó las elecciones a mayo de 1977: en diciembre de 1976 dimitió el gobierno de Rabin tras una crisis de coalición con el Partido Nacional Religioso, y en abril de 1977 Rabin dejó la cabeza de la lista del Alineamiento por el asunto de la cuenta en dólares; lo sustituyó Shimon Peres.", fr: "La Knesset s’est dissoute par une loi, avançant l’élection à mai 1977 : en décembre 1976, le gouvernement Rabin a démissionné après une crise de coalition avec le Parti national religieux, et en avril 1977 Rabin a quitté la tête de la liste de l’Alignement à cause de l’affaire du compte en dollars ; Shimon Peres l’a remplacé." }
     sources:
+      - { url: "https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx?kns=8", title: "8th Knesset: results of the elections (31 December 1973) and its governments", publisher: "הכנסת" }
+      - { url: "https://www.gov.il/apps/elections/elections-knesset-19/heb/history/PercentVotes.html", title: "אחוז המצביעים בבחירות קודמות, הכנסת ה-1 עד ה-18 (אתר ועדת הבחירות המרכזית לכנסת ה-19)", publisher: "ועדת הבחירות המרכזית (gov.il)" }
       - { url: "https://en.idi.org.il/articles/38887", title: "Dissolving the Knesset: A Historical Survey (Chen Friedberg and Assaf Shapira, 18 May 2022)", publisher: "המכון הישראלי לדמוקרטיה" }
       - { url: "https://en.idi.org.il/israeli-elections-and-parties/elections/1977/", title: "The 1977 elections", publisher: "המכון הישראלי לדמוקרטיה" }
       - { url: "https://en.wikipedia.org/wiki/1977_Israeli_legislative_election", title: "1977 Israeli legislative election", publisher: "Wikipedia" }
@@ -507,6 +557,8 @@ elections:
         text: { he: "הטבח בספורטאי ישראל באולימפיאדת מינכן.", en: "The massacre of Israeli athletes at the Munich Olympics.", ar: "مجزرة الرياضيين الإسرائيليين في أولمبياد ميونيخ.", ru: "Убийство израильских спортсменов на Олимпийских играх в Мюнхене.", es: "La masacre de los atletas israelíes en los Juegos Olímpicos de Múnich.", fr: "Le massacre des athlètes israéliens aux Jeux olympiques de Munich." }
     ended: { he: "השלימה כהונה מלאה; הבחירות, שנקבעו לאוקטובר 1973, נדחו בחודשיים, ל-31 בדצמבר, בשל מלחמת יום הכיפורים.", en: "Served its full term; the election, due in October 1973, was postponed by two months, to 31 December, because of the Yom Kippur War.", ar: "أتمّ ولايته كاملة؛ وأُجّلت الانتخابات، التي كانت مقرّرة في تشرين الأول/أكتوبر 1973، شهرين إلى 31 كانون الأول/ديسمبر بسبب حرب يوم الغفران.", ru: "Проработал полный срок; выборы, назначенные на октябрь 1973 года, перенесли на два месяца, на 31 декабря, из-за Войны Судного дня.", es: "Cumplió su legislatura entera; las elecciones, previstas para octubre de 1973, se aplazaron dos meses, al 31 de diciembre, por la guerra de Yom Kipur.", fr: "A accompli sa législature complète ; l’élection, prévue en octobre 1973, a été reportée de deux mois, au 31 décembre, à cause de la guerre du Kippour." }
     sources:
+      - { url: "https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx?kns=7", title: "7th Knesset: results of the elections (28 October 1969) and its governments", publisher: "הכנסת" }
+      - { url: "https://www.gov.il/apps/elections/elections-knesset-19/heb/history/PercentVotes.html", title: "אחוז המצביעים בבחירות קודמות, הכנסת ה-1 עד ה-18 (אתר ועדת הבחירות המרכזית לכנסת ה-19)", publisher: "ועדת הבחירות המרכזית (gov.il)" }
       - { url: "https://en.idi.org.il/articles/38887", title: "Dissolving the Knesset: A Historical Survey (Chen Friedberg and Assaf Shapira, 18 May 2022)", publisher: "המכון הישראלי לדמוקרטיה" }
       - { url: "https://main.knesset.gov.il/EN/Documents/2022-10-24%20Fact%20sheet%2002%20-%2025th%20Knesset%20elections%20-%20updated.pdf", title: "Fact sheet: The 25th Knesset elections (October 2022)", publisher: "מרכז המחקר והמידע של הכנסת" }
   - knesset: 6
@@ -528,10 +580,14 @@ elections:
         text: { he: "מלחמת ששת הימים — תפיסת יו\"ש, עזה, סיני והגולן.", en: "The Six-Day War — capture of the West Bank, Gaza, Sinai and the Golan.", ar: "حرب الأيام الستة — السيطرة على الضفة الغربية وغزة وسيناء والجولان.", ru: "Шестидневная война — взятие под контроль Иудеи и Самарии (Западного берега), Газы, Синая и Голан.", es: "La Guerra de los Seis Días — la toma de Cisjordania, Gaza, el Sinaí y el Golán.", fr: "La guerre des Six Jours — la prise de la Cisjordanie, de Gaza, du Sinaï et du Golan." }
     ended: { he: "השלימה כהונה מלאה — בחירות אוקטובר 1969. אשכול נפטר בפברואר 1969, וגולדה מאיר החליפה אותו.", en: "Served its full term — October 1969 election. Eshkol died in February 1969, and Golda Meir succeeded him.", ar: "أتمّ ولايته كاملة — انتخابات تشرين الأول/أكتوبر 1969. توفي أشكول في شباط/فبراير 1969، وخلفته غولدا مئير.", ru: "Проработал полный срок — выборы в октябре 1969 года. Эшколь умер в феврале 1969 года, и его сменила Голда Меир.", es: "Cumplió su legislatura entera — elecciones de octubre de 1969. Eshkol murió en febrero de 1969 y lo sucedió Golda Meir.", fr: "A accompli sa législature complète — élection d’octobre 1969. Eshkol est mort en février 1969, et Golda Meir lui a succédé." }
     sources:
+      - { url: "https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx?kns=6", title: "6th Knesset: results of the elections (2 November 1965) and its governments", publisher: "הכנסת" }
+      - { url: "https://www.gov.il/apps/elections/elections-knesset-19/heb/history/PercentVotes.html", title: "אחוז המצביעים בבחירות קודמות, הכנסת ה-1 עד ה-18 (אתר ועדת הבחירות המרכזית לכנסת ה-19)", publisher: "ועדת הבחירות המרכזית (gov.il)" }
       - { url: "https://en.idi.org.il/articles/38887", title: "Dissolving the Knesset: A Historical Survey (Chen Friedberg and Assaf Shapira, 18 May 2022)", publisher: "המכון הישראלי לדמוקרטיה" }
       - { url: "https://en.idi.org.il/israeli-elections-and-parties/elections/1965/", title: "About the 1965 Elections", publisher: "המכון הישראלי לדמוקרטיה" }
   - knesset: 5
     date: "1961-08-15"
+    # IDI: 1,037,030 votes of 1,271,285 eligible, 81.6%. The CEC's table prints 83.0,
+    # the same figure as 1965's, which its own eligible count doesn't support.
     turnout: 81.6
     winner: { he: "מפא\"י", en: "Mapai", ar: "مباي", ru: "МАПАЙ", es: "Mapai", fr: "Mapaï" }
     winnerSeats: 42
@@ -552,6 +608,8 @@ elections:
         text: { he: "בן-גוריון התפטר מראשות הממשלה בנימוקים אישיים, על רקע פרשת לבון; אשכול מונה לראש ממשלה.", en: "Ben-Gurion resigned as prime minister, citing personal reasons, amid the Lavon affair; Eshkol became prime minister.", ar: "استقال بن غوريون من رئاسة الحكومة معلّلًا ذلك بأسباب شخصية، على خلفية قضية لافون؛ وأصبح أشكول رئيسًا للحكومة.", ru: "Бен-Гурион ушёл с поста премьер-министра, сославшись на личные причины, на фоне дела Лавона; премьер-министром стал Эшколь.", es: "Ben-Gurión dimitió como primer ministro, alegando motivos personales, en medio del asunto Lavon; Eshkol pasó a ser primer ministro.", fr: "Ben Gourion a quitté la tête du gouvernement, invoquant des raisons personnelles, sur fond d’affaire Lavon ; Eshkol est devenu Premier ministre." }
     ended: { he: "השלימה כהונה מלאה — בחירות נובמבר 1965. לפניהן פרש בן-גוריון ממפא\"י והקים את רפ\"י.", en: "Served its full term — November 1965 election. Before it, Ben-Gurion left Mapai and founded Rafi.", ar: "أتمّ ولايته كاملة — انتخابات تشرين الثاني/نوفمبر 1965. وقبلها انشقّ بن غوريون عن مباي وأسّس رافي.", ru: "Проработал полный срок — выборы в ноябре 1965 года. Перед ними Бен-Гурион вышел из МАПАЙ и основал РАФИ.", es: "Cumplió su legislatura entera — elecciones de noviembre de 1965. Antes, Ben-Gurión rompió con el Mapai y fundó Rafi.", fr: "A accompli sa législature complète — élection de novembre 1965. Auparavant, Ben Gourion avait rompu avec le Mapaï et fondé le Rafi." }
     sources:
+      - { url: "https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx?kns=5", title: "5th Knesset: results of the elections (15 August 1961) and its governments", publisher: "הכנסת" }
+      - { url: "https://en.idi.org.il/israeli-elections-and-parties/elections/1961/", title: "Elections for the 5th Knesset (15.8.1961): results and voter turnout", publisher: "המכון הישראלי לדמוקרטיה" }
       - { url: "https://en.idi.org.il/articles/38887", title: "Dissolving the Knesset: A Historical Survey (Chen Friedberg and Assaf Shapira, 18 May 2022)", publisher: "המכון הישראלי לדמוקרטיה" }
       - { url: "https://en.idi.org.il/israeli-elections-and-parties/elections/1965/", title: "About the 1965 Elections", publisher: "המכון הישראלי לדמוקרטיה" }
       - { url: "https://www.walla.co.il/news/israel/2651048", title: "כשבן גוריון הודיע לשריו: \"אינני יכול להמשיך\"", publisher: "וואלה" }
@@ -573,6 +631,9 @@ elections:
         date: "1960-12-01"
         text: { he: "התפרצות מחודשת של \"פרשת לבון\" שזעזעה את הקואליציה.", en: "A renewed eruption of the \"Lavon Affair\" that shook the coalition.", ar: "تجدّد «قضية لافون» التي هزّت الائتلاف.", ru: "Новое обострение «дела Лавона», потрясшее коалицию.", es: "Un nuevo estallido del «asunto Lavon» que sacudió la coalición.", fr: "Une nouvelle flambée de l’« affaire Lavon » qui a ébranlé la coalition." }
     ended: { he: "פוזרה ב-1961 על רקע פרשת לבון — בחירות מוקדמות.", en: "Dissolved in 1961 over the Lavon Affair — early elections.", ar: "حُلّ في 1961 على خلفية قضية لافون — انتخابات مبكرة.", ru: "Распущен в 1961 году из-за дела Лавона — досрочные выборы.", es: "Disuelta en 1961 por el asunto Lavon — elecciones anticipadas.", fr: "Dissoute en 1961 à cause de l’affaire Lavon — élections anticipées." }
+    sources:
+      - { url: "https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx?kns=4", title: "4th Knesset: results of the elections (3 November 1959) and its governments", publisher: "הכנסת" }
+      - { url: "https://www.gov.il/apps/elections/elections-knesset-19/heb/history/PercentVotes.html", title: "אחוז המצביעים בבחירות קודמות, הכנסת ה-1 עד ה-18 (אתר ועדת הבחירות המרכזית לכנסת ה-19)", publisher: "ועדת הבחירות המרכזית (gov.il)" }
   - knesset: 3
     date: "1955-07-26"
     turnout: 82.8
@@ -591,6 +652,9 @@ elections:
         date: "1956-10-29"
         text: { he: "מבצע קדש — מלחמת סיני.", en: "The Sinai Campaign (Suez War).", ar: "حملة سيناء (حرب السويس).", ru: "Синайская кампания (Суэцкий кризис).", es: "La Campaña del Sinaí (guerra de Suez).", fr: "La campagne du Sinaï (guerre de Suez)." }
     ended: { he: "השלימה כהונה — בחירות 1959.", en: "Served its term — 1959 election.", ar: "أتمّ ولايته — انتخابات 1959.", ru: "Проработал полный срок — выборы 1959 года.", es: "Cumplió su legislatura — elecciones de 1959.", fr: "A accompli sa législature — élection de 1959." }
+    sources:
+      - { url: "https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx?kns=3", title: "3rd Knesset: results of the elections (26 July 1955) and its governments", publisher: "הכנסת" }
+      - { url: "https://www.gov.il/apps/elections/elections-knesset-19/heb/history/PercentVotes.html", title: "אחוז המצביעים בבחירות קודמות, הכנסת ה-1 עד ה-18 (אתר ועדת הבחירות המרכזית לכנסת ה-19)", publisher: "ועדת הבחירות המרכזית (gov.il)" }
   - knesset: 2
     date: "1951-07-30"
     turnout: 75.1
@@ -609,6 +673,9 @@ elections:
         date: "1952-01-07"
         text: { he: "הסכם השילומים מגרמניה ומחאות סוערות נגדו.", en: "The reparations agreement with Germany and fierce protests against it.", ar: "اتفاقية التعويضات مع ألمانيا والاحتجاجات العاصفة ضدها.", ru: "Соглашение о репарациях с Германией и бурные протесты против него.", es: "El acuerdo de reparaciones con Alemania y las duras protestas en su contra.", fr: "L’accord de réparations avec l’Allemagne et les vives protestations contre lui." }
     ended: { he: "השלימה כהונה — בחירות 1955.", en: "Served its term — 1955 election.", ar: "أتمّ ولايته — انتخابات 1955.", ru: "Проработал полный срок — выборы 1955 года.", es: "Cumplió su legislatura — elecciones de 1955.", fr: "A accompli sa législature — élection de 1955." }
+    sources:
+      - { url: "https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx?kns=2", title: "2nd Knesset: results of the elections (30 July 1951) and its governments", publisher: "הכנסת" }
+      - { url: "https://www.gov.il/apps/elections/elections-knesset-19/heb/history/PercentVotes.html", title: "אחוז המצביעים בבחירות קודמות, הכנסת ה-1 עד ה-18 (אתר ועדת הבחירות המרכזית לכנסת ה-19)", publisher: "ועדת הבחירות המרכזית (gov.il)" }
   - knesset: 1
     date: "1949-01-25"
     turnout: 86.9
@@ -634,3 +701,6 @@ elections:
         date: "1949-02-24"
         text: { he: "הסכמי שביתת הנשק שסיימו את מלחמת העצמאות.", en: "The Armistice Agreements that ended the War of Independence.", ar: "اتفاقيات الهدنة التي أنهت حرب 1948.", ru: "Соглашения о перемирии, завершившие Войну за независимость.", es: "Los Acuerdos de Armisticio que pusieron fin a la Guerra de la Independencia.", fr: "Les accords d’armistice qui ont mis fin à la guerre d’Indépendance." }
     ended: { he: "פוזרה ב-1951 על רקע משבר החינוך הדתי — בחירות מוקדמות.", en: "Dissolved in 1951 over the religious-education crisis — early elections.", ar: "حُلّ في 1951 على خلفية أزمة التعليم الديني — انتخابات مبكرة.", ru: "Распущен в 1951 году из-за кризиса вокруг религиозного образования — досрочные выборы.", es: "Disuelta en 1951 por la crisis de la educación religiosa — elecciones anticipadas.", fr: "Dissoute en 1951 à cause de la crise de l’éducation religieuse — élections anticipées." }
+    sources:
+      - { url: "https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx?kns=1", title: "1st Knesset: results of the elections (25 January 1949) and its governments", publisher: "הכנסת" }
+      - { url: "https://www.gov.il/apps/elections/elections-knesset-19/heb/history/PercentVotes.html", title: "אחוז המצביעים בבחירות קודמות, הכנסת ה-1 עד ה-18 (אתר ועדת הבחירות המרכזית לכנסת ה-19)", publisher: "ועדת הבחירות המרכזית (gov.il)" }

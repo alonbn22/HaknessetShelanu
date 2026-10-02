@@ -21,6 +21,23 @@ test("every Knesset term has summary, events and 'ended'", () => {
   }
 });
 
+// A term's figures (date, largest list, seats, turnout, PM) rest on primary
+// sources: the Knesset's own page for that Knesset at least. Wikipedia is
+// further reading, never a term's only source.
+test("every Knesset term cites its own Knesset page and a source beyond Wikipedia", () => {
+  for (const e of getElectionsHistory()) {
+    const urls = (e.sources ?? []).map((s) => s.url);
+    assert.ok(
+      urls.some((u) => !/^https:\/\/([a-z]+\.)?(m\.)?wikipedia\.org\//.test(u)),
+      `K${e.knesset}: no source beyond Wikipedia`,
+    );
+    assert.ok(
+      urls.includes(`https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx?kns=${e.knesset}`),
+      `K${e.knesset}: cite the Knesset's page for this Knesset`,
+    );
+  }
+});
+
 test("glossary includes the Norwegian Law term", () => {
   const terms = getGlossary();
   const found = terms.some(

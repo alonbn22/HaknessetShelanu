@@ -5,11 +5,12 @@ import { SourceLinks } from "@/components/SourceLinks";
 
 export const dynamic = "force-dynamic";
 
-// Per-Knesset English Wikipedia article — the cited source for each term's
-// summary, events, and figures; a term's own `sources` (primary sources for
-// how it ended, dated events) are cited after it. Wikipedia titles the 21st,
-// 22nd, 24th and 25th with digits ("Twenty-first_Knesset" does not exist;
-// checked 28 Sep 2026).
+// A term's own `sources` are its sources: first the Knesset's page for that
+// Knesset (date, results, governments), then the turnout's source, then
+// sources for how it ended and for dated events. Wikipedia is never a source:
+// the per-Knesset English article, and any Wikipedia page a term lists, show
+// apart as further reading. Wikipedia titles the 21st, 22nd, 24th and 25th
+// with digits ("Twenty-first_Knesset" does not exist; checked 28 Sep 2026).
 const ORDINALS = [
   "First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth",
   "Ninth", "Tenth", "Eleventh", "Twelfth", "Thirteenth", "Fourteenth", "Fifteenth",
@@ -20,8 +21,7 @@ const knessetWikiUrl = (n: number) =>
   ORDINALS[n - 1]
     ? `https://en.wikipedia.org/wiki/${ORDINALS[n - 1].replace(/ /g, "_")}_Knesset`
     : null;
-const KNESSET_HISTORY_URL =
-  "https://main.knesset.gov.il/en/about/history/Pages/KnessetHistory.aspx";
+const WIKIPEDIA = /^https:\/\/([a-z]+\.)?(m\.)?wikipedia\.org\//;
 
 // Every past Knesset election — kept off the upcoming-election page so that
 // page is about the vote ahead.
@@ -130,12 +130,17 @@ export default async function ElectionsHistoryPage() {
             <p className="mt-2">
               <SourceLinks
                 label={tc("source")}
+                sources={(e.sources ?? []).filter((s) => !WIKIPEDIA.test(s.url))}
+              />
+            </p>
+            <p className="mt-1">
+              <SourceLinks
+                label={t("furtherReading")}
                 sources={[
                   ...(knessetWikiUrl(e.knesset)
                     ? [{ url: knessetWikiUrl(e.knesset)!, title: `${ORDINALS[e.knesset - 1]} Knesset`, publisher: "Wikipedia" }]
                     : []),
-                  { url: KNESSET_HISTORY_URL, title: "Knesset history", publisher: tc("knesset") },
-                  ...(e.sources ?? []),
+                  ...(e.sources ?? []).filter((s) => WIKIPEDIA.test(s.url)),
                 ]}
               />
             </p>

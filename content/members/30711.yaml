@@ -55,22 +55,10 @@ claims:
       - url: "https://knesset.gov.il/OdataV4/ParliamentInfo/KNS_PersonToPosition?$filter=PersonID%20eq%2030711%20and%20KnessetNum%20eq%2025"
         title: "Knesset OData: positions of PersonID 30711 in the 25th Knesset"
         publisher: The Knesset
-  - kind: positive
-    category: achievement
-    title:
-      he: שירות צבאי בחטיבה השביעית
-      en: Military service in the 7th Armored Brigade
-    description:
-      he: במהלך שירותו בצה"ל שירת עמית הלוי בחטיבה השביעית (חטיבת השריון).
-      en: During his service in the Israel Defense Forces, Amit Halevi served in the
-        7th Armored Brigade (an armored brigade).
-    sources:
-      - url: https://en.wikipedia.org/wiki/Amit_Halevi
-        title: Amit Halevi
-        publisher: English Wikipedia
-      - url: https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%99%D7%AA_%D7%94%D7%9C%D7%95%D7%99
-        title: עמית הלוי
-        publisher: Hebrew Wikipedia
+  # A claim of service in the 7th Armored Brigade was cut on 2 Oct 2026: only
+  # Wikipedia (uncited) says it. His Knesset page leaves military service
+  # blank, and no outlet's profile of him (Ynet, Arutz 7, Makor Rishon, the
+  # Knesset Channel, JNS, Zman Yisrael) mentions his unit.
   - kind: negative
     category: controversy
     title:

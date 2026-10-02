@@ -65,24 +65,54 @@ claims:
     title:
       he: שירות צבאי ורקע ציבורי
       en: Military service and public background
+    # Re-sourced 2 Oct 2026. The Knesset gives his birth date and degrees,
+    # Maariv his home town, parents and degrees, the Knesset Channel his army
+    # unit and career. Cut as unsourced: born in Holon (the Knesset says
+    # "Israel"), service in 1992–1995, and the artillery corps — the Knesset
+    # Channel says anti-aircraft batteries.
     description:
-      he: שקלים, יליד חולון 1974 להורים שעלו מאיראן, שירת בצה"ל בחיל התותחנים בשנים
-        1992–1995. בעל תואר ראשון מאוניברסיטת בר-אילן בכלכלה, מדע המדינה
-        וסוציולוגיה ותואר שני בתקשורת פוליטית מבר-אילן, והיה פעיל בתחומי הפרסום
-        והשיווק לפני כניסתו לכנסת.
-      en: Shekalim, born in Holon in 1974 to parents who immigrated from Iran, served
-        in the IDF artillery corps from 1992 to 1995. He holds a bachelor's
-        degree from Bar-Ilan University in economics, political science and
-        sociology and a master's degree in political communication from
-        Bar-Ilan, and worked in advertising and marketing before entering the
-        Knesset.
+      he: שקלים נולד ב-1974, מתגורר בחולון ובן להורים ילידי איראן. שירת בצה"ל בסוללות
+        נ"מ. בעל תואר ראשון במדעי החברה (כלכלה, מדע המדינה וסוציולוגיה) ותואר שני
+        בתקשורת פוליטית מאוניברסיטת בר-אילן. עסק בתחום הכושר, ובהמשך הקים משרד
+        פרסום לניהול קמפיינים דיגיטליים.
+      en: Shekalim was born in 1974, lives in Holon and is the son of parents born in
+        Iran. He served in the IDF in anti-aircraft batteries. He holds a
+        bachelor's degree in social sciences (economics, political science and
+        sociology) and a master's degree in political communication from
+        Bar-Ilan University. He worked in fitness and later founded an
+        advertising agency that runs digital campaigns.
+      ar: وُلد شكاليم عام 1974، ويقيم في حولون، وهو ابن لوالدين وُلدا في إيران. خدم في
+        الجيش الإسرائيلي في بطاريات الدفاع الجوي. يحمل شهادة بكالوريوس في العلوم
+        الاجتماعية (الاقتصاد والعلوم السياسية وعلم الاجتماع) وشهادة ماجستير في
+        الاتصال السياسي من جامعة بار إيلان. عمل في مجال اللياقة البدنية، ثم أسّس
+        مكتب إعلانات يدير حملات رقمية.
+      ru: Шкалим родился в 1974 году, живёт в Холоне; его родители — уроженцы Ирана.
+        Служил в ЦАХАЛе в батареях ПВО. Имеет степень бакалавра общественных наук
+        (экономика, политология и социология) и степень магистра в области
+        политической коммуникации Университета Бар-Илан. Работал в сфере фитнеса,
+        а затем основал рекламное агентство, которое ведёт цифровые кампании.
+      es: Shekalim nació en 1974, vive en Holón y es hijo de padres nacidos en Irán.
+        Sirvió en el ejército israelí en baterías antiaéreas. Es licenciado en
+        ciencias sociales (economía, ciencia política y sociología) y tiene una
+        maestría en comunicación política por la Universidad Bar-Ilán. Trabajó en el
+        ámbito del fitness y después fundó una agencia de publicidad que gestiona
+        campañas digitales.
+      fr: Shekalim est né en 1974, vit à Holon et est le fils de parents nés en Iran.
+        Il a servi dans l’armée israélienne dans des batteries antiaériennes. Il est
+        titulaire d’une licence en sciences sociales (économie, science politique et
+        sociologie) et d’un master en communication politique de l’université
+        Bar-Ilan. Il a travaillé dans le fitness, puis a fondé une agence de
+        publicité qui gère des campagnes numériques.
     sources:
-      - url: https://he.wikipedia.org/wiki/%D7%90%D7%95%D7%A9%D7%A8_%D7%A9%D7%A7%D7%9C%D7%99%D7%9D
-        title: אושר שקלים
-        publisher: Hebrew Wikipedia
-      - url: https://en.wikipedia.org/wiki/Osher_Shekalim
-        title: Osher Shekalim
-        publisher: Wikipedia
+      - url: https://main.knesset.gov.il/mk/apps/mk/mk-personal-details/1123
+        title: חבר הכנסת אושר שקלים — פרטים אישיים (אתר הכנסת)
+        publisher: Knesset
+      - url: https://www.maariv.co.il/news/law/article-935007
+        title: "הכר את המועמד: אושר שקלים הוא האיש הפשוט שבא לעזור (28.7.2022)"
+        publisher: Maariv
+      - url: https://www.knesset.tv/knesset-members/51777/
+        title: חבר הכנסת אושר שקלים — קורות חיים (ערוץ כנסת)
+        publisher: Knesset Channel
   - kind: neutral
     category: news
     date: "2026-05-11"

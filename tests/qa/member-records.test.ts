@@ -25,23 +25,18 @@ test("there are curated member records", () => {
 });
 
 // Wikipedia and Wikidata are indexes, not sources: a claim about a person
-// needs at least one source beyond them. These two predate the rule and have
-// no other source yet (searched 28-30 Sep 2026); the list may only shrink.
+// needs at least one source beyond them. No exceptions: the last two were
+// re-sourced or cut on 2 Oct 2026.
 const WIKI = /^https:\/\/([a-z]+\.)?(m\.)?(wikipedia|wikidata)\.org\//;
-const WIKI_ONLY_KNOWN = new Set([
-  "30711:Military service in the 7th Armored Brigade",
-  "30876:Military service and public background",
-]);
 
-test("no member claim rests on Wikipedia alone, beyond the known few", () => {
-  const found = new Set<string>();
+test("no member claim rests on Wikipedia alone", () => {
+  const found: string[] = [];
   for (const id of ids) {
     for (const c of getMemberRecord(id)!.claims) {
-      if (c.sources.every((s) => WIKI.test(s.url))) found.add(`${id}:${c.title.en ?? c.title.he}`);
+      if (c.sources.every((s) => WIKI.test(s.url))) found.push(`${id}:${c.title.en ?? c.title.he}`);
     }
   }
-  assert.deepEqual([...found].filter((k) => !WIKI_ONLY_KNOWN.has(k)), [], "cite a source beyond Wikipedia");
-  assert.deepEqual([...WIKI_ONLY_KNOWN].filter((k) => !found.has(k)), [], "now sourced: drop it from the list");
+  assert.deepEqual(found, [], "cite a source beyond Wikipedia");
 });
 
 for (const id of ids) {

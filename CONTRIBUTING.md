@@ -26,8 +26,7 @@ live in plain text files (YAML and JSON).
   ministry, a party's own platform or site, or the news outlet's own article.
 - Wikipedia, poll trackers and other aggregators are good for *finding* a source.
   Cite the source they point to, not them. A claim in a member record needs at
-  least one source beyond Wikipedia or Wikidata; a test enforces it, and lists the
-  two older claims that still wait for one.
+  least one source beyond Wikipedia or Wikidata; a test enforces it.
 - Every source is an `https` link with a title. The tests check this.
 - Open every source yourself and check the exact figure or words, including when
   an AI tool found it for you.

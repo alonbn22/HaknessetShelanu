@@ -503,7 +503,7 @@
     "recordVoteAbsent": "({n} no votaron)",
     "recordVoteAs": "como la facción {faction}",
     "allLists": "Las {count} listas presentadas",
-    "allListsIntro": "En el orden del comité. Nombres de las listas y letras tal como el comité los aprobó el {date}; composiciones tal como se presentaron al presidente del comité el 7–8 de septiembre de 2026. Los cabezas de lista figuran como los imprime el comité.",
+    "allListsIntro": "En el orden del comité. Nombres de las listas y letras tal como el comité los aprobó el {date}; composiciones tal como las muestran las páginas de las listas en el sitio del comité (la fecha de actualización figura junto a cada lista), tras su presentación el 7–8 de septiembre de 2026. Los cabezas de lista figuran como los imprime el comité.",
     "allCandidates": "Todos los candidatos de cada lista",
     "colLetters": "Letras",
     "colList": "Lista",

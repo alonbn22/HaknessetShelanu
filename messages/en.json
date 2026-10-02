@@ -503,7 +503,7 @@
     "recordVoteAbsent": "({n} did not vote)",
     "recordVoteAs": "as the {faction} faction",
     "allLists": "All {count} submitted lists",
-    "allListsIntro": "In the committee’s order. List names and letters as the committee approved them on {date}; rosters as submitted to the committee chair on 7–8 September 2026. List heads are named as the committee prints them.",
+    "allListsIntro": "In the committee’s order. List names and letters as the committee approved them on {date}; rosters as the committee's list pages show them (each list's update date is given beside it), after they were submitted on 7–8 September 2026. List heads are named as the committee prints them.",
     "allCandidates": "All candidates on every list",
     "colLetters": "Letters",
     "colList": "List",

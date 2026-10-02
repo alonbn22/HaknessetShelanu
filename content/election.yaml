@@ -90,17 +90,20 @@ keyDates:
     date: "2026-10-04"
     label: { he: "מועד אחרון לפסיקת בית המשפט העליון בפסילות", en: "Supreme Court rulings on the disqualifications due", ar: "آخر موعد لقرارات المحكمة العليا بشأن الشطب", ru: "Крайний срок решений Верховного суда по отстранениям", es: "Plazo de los fallos del Tribunal Supremo sobre las inhabilitaciones", fr: "Date limite des arrêts de la Cour suprême sur les invalidations" }
     detail:
-      he: "לפי לוח הזמנים של ועדת הבחירות המרכזית, פסקי הדין של בית המשפט העליון בערעורים על פסילה או אישור של רשימות ובאישור פסילת מועמדים יימסרו לוועדה עד 4 באוקטובר 2026, והם סופיים."
-      en: "Per the Central Elections Committee's timetable, the Supreme Court's rulings on appeals against lists' disqualification or approval, and on approving candidates' disqualification, are due to the committee by October 4, 2026, and are final."
-      ar: "وفق الجدول الزمني للجنة الانتخابات المركزية، تُقدَّم قرارات المحكمة العليا في الاستئنافات على شطب القوائم أو المصادقة عليها، وفي المصادقة على شطب المرشحين، إلى اللجنة حتى 4 تشرين الأول/أكتوبر 2026، وهي نهائية."
-      ru: "По графику Центральной избирательной комиссии решения Верховного суда по апелляциям на отстранение или утверждение списков и об утверждении отстранения кандидатов поступают в комиссию до 4 октября 2026 года и являются окончательными."
-      es: "Según el calendario de la Comisión Electoral Central, los fallos del Tribunal Supremo sobre los recursos contra la inhabilitación o la aprobación de listas, y sobre la aprobación de la inhabilitación de candidatos, llegan a la comisión a más tardar el 4 de octubre de 2026 y son definitivos."
-      fr: "Selon le calendrier de la Commission électorale centrale, les arrêts de la Cour suprême sur les recours contre l’invalidation ou l’approbation de listes, et sur l’approbation de l’invalidation de candidats, parviennent à la commission au plus tard le 4 octobre 2026 et sont définitifs."
+      he: "לפי לוח הזמנים של ועדת הבחירות המרכזית, פסקי הדין של בית המשפט העליון בערעורים על פסילה או אישור של רשימות ובאישור פסילת מועמדים יימסרו לוועדה עד 4 באוקטובר 2026, והם סופיים. בית המשפט פסק בכל התיקים ב-2 באוקטובר 2026."
+      en: "Per the Central Elections Committee's timetable, the Supreme Court's rulings on appeals against lists' disqualification or approval, and on approving candidates' disqualification, are due to the committee by October 4, 2026, and are final. The court ruled on all the cases on October 2, 2026."
+      ar: "وفق الجدول الزمني للجنة الانتخابات المركزية، تُقدَّم قرارات المحكمة العليا في الاستئنافات على شطب القوائم أو المصادقة عليها، وفي المصادقة على شطب المرشحين، إلى اللجنة حتى 4 تشرين الأول/أكتوبر 2026، وهي نهائية. وقد أصدرت المحكمة أحكامها في جميع القضايا في 2 تشرين الأول/أكتوبر 2026."
+      ru: "По графику Центральной избирательной комиссии решения Верховного суда по апелляциям на отстранение или утверждение списков и об утверждении отстранения кандидатов поступают в комиссию до 4 октября 2026 года и являются окончательными. Суд вынес решения по всем делам 2 октября 2026 года."
+      es: "Según el calendario de la Comisión Electoral Central, los fallos del Tribunal Supremo sobre los recursos contra la inhabilitación o la aprobación de listas, y sobre la aprobación de la inhabilitación de candidatos, llegan a la comisión a más tardar el 4 de octubre de 2026 y son definitivos. El tribunal falló en todos los casos el 2 de octubre de 2026."
+      fr: "Selon le calendrier de la Commission électorale centrale, les arrêts de la Cour suprême sur les recours contre l’invalidation ou l’approbation de listes, et sur l’approbation de l’invalidation de candidats, parviennent à la commission au plus tard le 4 octobre 2026 et sont définitifs. La Cour a statué sur tous les dossiers le 2 octobre 2026."
     status: confirmed
     sources:
       - url: "https://www.gov.il/en/pages/candidates-lists-26"
         title: "Lists of Candidates — disqualification and appeal timetable (updated 3 Sep 2026)"
         publisher: "ועדת הבחירות המרכזית"
+      - url: "https://www.jpost.com/israel-election-2026/article-910410"
+        title: "Supreme Court allows Cassif, Ra'am, Joint List to run (2 Oct 2026)"
+        publisher: "The Jerusalem Post"
   - key: kd-voter-notice
     date: "2026-10-06"
     label: { he: "משלוח הודעה לבוחר", en: "Voter notices are sent", ar: "إرسال بطاقات الإعلام للناخبين", ru: "Рассылка уведомлений избирателям", es: "Envío de los avisos a los votantes", fr: "Envoi des avis aux électeurs" }

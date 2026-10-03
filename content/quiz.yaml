@@ -80,7 +80,12 @@
 # tax cuts); Amkha's draft-law cell now cites that platform instead of its
 # list head's interview (still -1: universal service with Torah-learner
 # quotas). Not added: Amkha on an inquiry commission (it wants an
-# "independent" commission and does not say who appoints it).
+# "independent" commission and does not say who appoints it). Also from the
+# review: the Joint List on religion and state (+1), from its answer to ynet's
+# 31 Aug questionnaire on Shabbat transport (civil marriage not addressed);
+# left absent — the Reservists on an inquiry commission (a "state" commission
+# whose make-up is to be agreed by all parties: a hybrid) and on the core
+# curriculum (a partner party's reward, not a condition).
 lastReviewed: "2026-10-03"
 questions:
   - id: palestinian-state
@@ -952,6 +957,17 @@ questions:
           ru: "«Мы будем продвигать инклюзивный и уважительный иудаизм — ответственно и через диалог, расширяя самостоятельность местных властей и общин в том, каким быть шаббату в общественном пространстве, в соответствии с их характером и ценностями»; «Мы будем добиваться закрепления гражданского союза в Израиле»"
           es: "«Promoveremos un judaísmo inclusivo y respetuoso, con responsabilidad y diálogo, ampliando la autonomía de las autoridades locales y las comunidades para dar forma al Shabat en el espacio público según su carácter y sus valores»; «Actuaremos para institucionalizar la unión civil en Israel»"
           fr: "« Nous promouvrons un judaïsme inclusif et respectueux, avec responsabilité et par le dialogue, en élargissant l’autonomie des collectivités locales et des communautés pour façonner le shabbat dans l’espace public selon leur caractère et leurs valeurs » ; « Nous agirons pour institutionnaliser l’union civile en Israël »"
+      joint-list:
+        value: 1
+        basis: statement
+        source: { url: "https://www.ynet.co.il/news/elections2026/article/yokra14883243", title: "\"מוקד פוליטי נפיץ\": עמדת המפלגות על תחבורה ציבורית בשבת (31.8.2026)", publisher: "ynet" }
+        quote:
+          he: "\"ברשימה המשותפת מסרו כי הם תומכים בהפעלת תחבורה ציבורית עירונית ובין-עירונית בשבת, לרבות מערכות הסעת המונים, תחבורה לנתב\"ג ותחבורה לבתי חולים, כחלק ממתן שירות בסיסי ושוויוני לכלל האוכלוסייה.\""
+          en: "\"The Joint List said it supports running urban and inter-city public transport on Shabbat, including mass transit, transport to Ben Gurion Airport and to hospitals, as part of providing a basic and equal service to the whole population.\""
+          ar: "«قالت القائمة المشتركة إنها تؤيد تشغيل المواصلات العامة داخل المدن وبينها يوم السبت، بما في ذلك منظومات النقل الجماعي والمواصلات إلى مطار بن غوريون وإلى المستشفيات، كجزء من تقديم خدمة أساسية ومتساوية لجميع السكان.»"
+          ru: "«В „Объединённом списке“ сообщили, что поддерживают работу городского и междугородного общественного транспорта в шаббат, включая системы массового транспорта, транспорт в аэропорт Бен-Гурион и в больницы, как часть базовой и равной услуги для всего населения»."
+          es: "«La Lista Conjunta afirmó que apoya el funcionamiento del transporte público urbano e interurbano en Shabat, incluidos los sistemas de transporte masivo, el transporte al aeropuerto Ben Gurión y a los hospitales, como parte de un servicio básico e igualitario para toda la población.»"
+          fr: "« La Liste commune a déclaré soutenir le fonctionnement des transports publics urbains et interurbains le jour du shabbat, y compris les réseaux de transport de masse, la desserte de l’aéroport Ben-Gourion et des hôpitaux, dans le cadre d’un service de base égal pour toute la population. »"
   - id: haredi-draft-law
     topic: religion-state
     lean: right

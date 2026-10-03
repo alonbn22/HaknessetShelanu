@@ -40,6 +40,7 @@ publishers:
   - { key: "הציבור החרדי", en: "The Haredi Public", ar: "الجمهور الحريدي", ru: "Харедимная общественность", es: "El Público Jaredí", fr: "Le Public haredi" }
   - { key: "הציונות הדתית", en: "Religious Zionism", ar: "الصهيونية الدينية", ru: "Религиозный сионизм", es: "Sionismo Religioso", fr: "Sionisme religieux" }
   - { key: "הרשימה המשותפת", en: "The Joint List", ar: "القائمة المشتركة", ru: "Объединённый список", es: "La Lista Conjunta", fr: "La Liste commune" }
+  - { key: "כיכר השבת", en: "Kikar HaShabbat", ar: "كيكار هشبات", ru: "«Кикар ха-Шаббат»", es: "Kikar HaShabbat", fr: "Kikar HaChabbat" }
   - { key: "וואלה", en: "Walla", ar: "والا", ru: "Walla", es: "Walla", fr: "Walla" }
   - { key: "ועדת הבחירות המרכזית", en: "Central Elections Committee", ar: "لجنة الانتخابات المركزية", ru: "Центральная избирательная комиссия", es: "Comité Central de Elecciones", fr: "Commission électorale centrale" }
   - { key: "ועדת הבחירות המרכזית (gov.il)", en: "Central Elections Committee (gov.il)", ar: "لجنة الانتخابات المركزية (gov.il)", ru: "Центральная избирательная комиссия (gov.il)", es: "Comité Central de Elecciones (gov.il)", fr: "Commission électorale centrale (gov.il)" }

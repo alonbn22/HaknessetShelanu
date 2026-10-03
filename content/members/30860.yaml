@@ -51,9 +51,6 @@ claims:
       - url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-735003"
         title: "Likud's Tally Gotliv sanctioned for blaming Chief Justice Hayut for terror attack"
         publisher: "The Jerusalem Post"
-      - url: "https://en.wikipedia.org/wiki/Tally_Gotliv"
-        title: "Tally Gotliv"
-        publisher: "Wikipedia"
   - kind: negative
     category: investigation
     status: ongoing

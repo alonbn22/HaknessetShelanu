@@ -1,7 +1,7 @@
 # PersonID 30758 (Iman Khatib-Yassin). Researched from reputable public
 # sources; every cited URL re-verified on 2026-09-18. Neutral language.
 personId: 30758
-lastReviewed: "2026-09-18"
+lastReviewed: "2026-10-03"
 claims:
   - kind: positive
     category: achievement
@@ -41,19 +41,16 @@ claims:
       he: "השעיה על ידי ועדת האתיקה של הכנסת בעקבות התבטאות על מתקפת 7 באוקטובר"
       en: "Suspended by the Knesset Ethics Committee over remarks on the October 7 attack"
     description:
-      he: "ב-15 בנובמבר 2023 השעתה ועדת האתיקה של הכנסת את ח'טיב יאסין לחודש, מתוכו שבועיים ללא שכר, לאחר שאמרה בריאיון ב-5 בנובמבר 2023 כי לא נשחטו תינוקות ולא נאנסו נשים, לפחות לא בתיעוד שהוצג לחברי הכנסת, במתקפת חמאס ב-7 באוקטובר 2023. הוועדה קבעה כי בדבריה הכחישה את הזוועות. ח'טיב יאסין התנצלה בפני הוועדה ובמליאת הכנסת, אמרה כי דבריה בעברית הובנו שלא כהלכה וכי לא התכוונה להמעיט בחומרת הטבח, וכי מעשי 7 באוקטובר מנוגדים לערכיה כאישה מוסלמית דתייה."
-      en: "On 15 November 2023 the Knesset Ethics Committee suspended Khatib-Yassin for one month, including two weeks without pay, after she said in a 5 November 2023 interview that babies were not slaughtered and women were not raped, at least not in the footage shown to members, during the 7 October 2023 Hamas attack. The committee found that her comments denied the atrocities. Khatib-Yassin apologised to the committee and the Knesset plenum, said her Hebrew remarks had been misunderstood and that she had not intended to belittle the massacre, and that the acts of 7 October were contrary to her values as a religious Muslim woman."
+      he: "ב-15 בנובמבר 2023 השעתה ועדת האתיקה של הכנסת את ח'טיב יאסין לחודש, מתוכו שבועיים ללא שכר, לאחר שאמרה בריאיון ב-5 בנובמבר 2023 כי לא נשחטו תינוקות ולא נאנסו נשים, לפחות לא בתיעוד, במתקפת חמאס ב-7 באוקטובר 2023. הוועדה קבעה כי בדבריה הכחישה את הזוועות. ח'טיב יאסין התנצלה ואמרה כי לא התכוונה להמעיט בחומרת הטבח ב-7 באוקטובר או להכחישו; היא התנצלה גם בפני הוועדה ובמליאת הכנסת ואמרה כי אירועי 7 באוקטובר מנוגדים לערכיה כאדם וכאישה מוסלמית דתייה."
+      en: "On 15 November 2023 the Knesset Ethics Committee suspended Khatib-Yassin for one month, including two weeks without pay, after she said in a 5 November 2023 interview that babies were not slaughtered and women were not raped, at least not in the footage, during the 7 October 2023 Hamas attack. The committee found that her comments denied the atrocities. Khatib-Yassin apologised, saying she had no intention to minimize or deny the 7 October massacre; she also apologised to the committee and in the Knesset plenum, saying the events of 7 October were strongly opposed to her values as a person and as a religious Muslim woman."
     date: "2023-11-15"
     sources:
+      - url: "https://www.timesofisrael.com/knesset-sanctions-2-arab-mks-for-denying-oct-7-atrocities-alleging-idf-war-crimes/"
+        title: "Knesset sanctions 2 Arab MKs for 'denying' Oct. 7 atrocities, alleging IDF war crimes"
+        publisher: "The Times of Israel"
       - url: "https://www.jpost.com/israel-news/politics-and-diplomacy/article-773329"
         title: "Knesset Ethics Committee sanctions Arab MKs for comments on Hamas war"
         publisher: "The Jerusalem Post"
-      - url: "https://en.wikipedia.org/wiki/Iman_Khatib-Yassin"
-        title: "Iman Khatib-Yassin"
-        publisher: "Wikipedia"
-      - url: "https://he.wikipedia.org/wiki/%D7%90%D7%99%D7%9E%D7%90%D7%9F_%D7%97'%D7%98%D7%99%D7%91-%D7%99%D7%90%D7%A1%D7%99%D7%9F"
-        title: "אימאן ח'טיב-יאסין"
-        publisher: "Wikipedia (Hebrew)"
   - kind: neutral
     category: news
     date: "2026-09-09"

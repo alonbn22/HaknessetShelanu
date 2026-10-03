@@ -2,7 +2,7 @@
 # (every cited URL re-fetched on the review date). Neutral language; legal
 # status marked. REVIEW before launch.
 personId: 30833
-lastReviewed: "2026-09-18"
+lastReviewed: "2026-10-03"
 claims:
   - kind: positive
     category: achievement
@@ -67,29 +67,14 @@ claims:
       he: ננזף וננקטו נגדו סנקציות בידי ועדת האתיקה של הכנסת
       en: Reprimanded and sanctioned by the Knesset Ethics Committee
     description:
-      he: בעקבות סרטון שבו לעג לחברי כנסת מהאופוזיציה — ובכלל זה השמעת קולות של כבשה
-        בהתייחסו לח"כ עופר כסיף ("צריך לדבר איתו כמו כבשה") ודברים על ח"כ אחמד
-        טיבי וח"כ מירב בן ארי — הטילה ועדת האתיקה של הכנסת על אלמוג כהן ב-6 במרץ
-        2023 נזיפה, הרחקה מנאומים במליאה ובוועדות למשך חמישה ימים ואיסור להגיש
-        הצעות חוק ושאילתות עד 2 באפריל 2023, בקובעה כי התנהגותו "גזענית
-        ושוביניסטית". כהן התנצל בפני בן ארי אך סירב להתנצל בפני חברי חד"ש-תע"ל.
-      en: After a video in which he mocked opposition MKs — including making sheep
-        noises in reference to MK Ofer Cassif ("you need to talk to him like a
-        sheep") and remarks about MKs Ahmad Tibi and Meirav Ben-Ari — the
-        Knesset Ethics Committee on 6 March 2023 imposed on Almog Cohen a
-        reprimand, a five-day ban on speaking in the plenum and committees and a
-        bar on submitting bills and queries until 2 April 2023, finding his
-        conduct "racist and chauvinist". Cohen apologized to Ben-Ari but refused
-        to apologize to the Hadash-Ta'al MKs.
-    date: 2023-03-06
+      he: "בעקבות סרטון שבו לעג לחברי כנסת מהאופוזיציה — ובכלל זה השמעת קולות של כבשה בהתייחסו לח\"כ עופר כסיף (\"צריך לדבר איתו כמו כבשה\") ודברים על ח\"כ אחמד טיבי וח\"כ מירב בן ארי — הטילה ועדת האתיקה של הכנסת על אלמוג כהן ב-5 במרץ 2023 נזיפה, הרחקה מנאומים במליאה ובוועדות למשך חמישה ימים ואיסור להגיש הצעות חוק ושאילתות עד 2 באפריל 2023, ואמרה כי חלק מדבריו עשויים להיראות \"גזעניים ושוביניסטיים\". כהן התנצל בפני בן ארי אך סירב להתנצל בפני חברי חד\"ש-תע\"ל."
+      en: "After a video in which he mocked opposition MKs — including making sheep noises in reference to MK Ofer Cassif (\"you need to talk to him like a sheep\") and remarks about MKs Ahmad Tibi and Meirav Ben-Ari — the Knesset Ethics Committee on 5 March 2023 imposed on Almog Cohen a reprimand, a five-day ban on speaking in the plenum and committees and a bar on submitting bills and queries until 2 April 2023, saying some of his comments could be seen as \"racist and chauvinist\". Cohen apologized to Ben-Ari but refused to apologize to the Hadash-Ta'al MKs."
+    date: 2023-03-05
     sources:
       - url: https://www.timesofisrael.com/knesset-ethics-panel-reprimands-far-right-mk-who-likened-arab-party-mks-to-sheep/
         title: Knesset ethics panel reprimands far-right MK who likened Arab party MKs
           to sheep
         publisher: The Times of Israel
-      - url: https://en.wikipedia.org/wiki/Almog_Cohen_(politician)
-        title: Almog Cohen (politician)
-        publisher: Wikipedia
   - kind: negative
     category: controversy
     status: ongoing

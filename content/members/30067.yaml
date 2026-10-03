@@ -2,7 +2,7 @@
 # adversarially source-verified (every cited URL re-fetched). Neutral language;
 # legal status marked. REVIEW before launch.
 personId: 30067
-lastReviewed: "2026-09-18"
+lastReviewed: "2026-10-03"
 claims:
   - kind: positive
     category: achievement
@@ -79,9 +79,6 @@ claims:
       - url: https://www.ynet.co.il/news/article/sy0ps11mna
         title: ועדת האתיקה של הכנסת הטילה סנקציות על הח"כיות חטיב יאסין ותומא סלימאן
         publisher: Ynet
-      - url: https://en.wikipedia.org/wiki/Aida_Touma-Sliman
-        title: Aida Touma-Sliman
-        publisher: Wikipedia
   - kind: neutral
     category: news
     date: "2026-05-16"

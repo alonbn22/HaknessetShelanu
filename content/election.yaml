@@ -407,12 +407,12 @@ parties:
     logo: { src: "https://upload.wikimedia.org/wikipedia/commons/5/50/Likud_Logo.svg", source: { url: "https://commons.wikimedia.org/wiki/File:Likud_Logo.svg", title: "File:Likud_Logo.svg", publisher: "Wikimedia Commons" } }
     promises:
       note:
-        he: "הליכוד לא פרסם מצע לבחירות 2026; אלה שלוש המטרות הראשונות בחוקת התנועה (נוסח יולי 2015)."
-        en: "Likud has published no platform for 2026; these are the first three goals in its party constitution (July 2015 version)."
-        ar: "لم ينشر الليكود برنامجًا لانتخابات 2026؛ هذه هي الأهداف الثلاثة الأولى في دستور الحزب (صيغة تموز/يوليو 2015)."
-        ru: "Ликуд не опубликовал программу к выборам 2026 года; это первые три цели из устава партии (редакция июля 2015 года)."
-        es: "El Likud no ha publicado un programa para 2026; estos son los tres primeros objetivos de la constitución del partido (versión de julio de 2015)."
-        fr: "Le Likoud n’a publié aucun programme pour 2026 ; voici les trois premiers objectifs de la constitution du parti (version de juillet 2015)."
+        he: "הליכוד לא פרסם מצע לבחירות 2026; אלה שלוש המטרות הראשונות בחוקת התנועה (נוסח יולי 2015). אתר הליכוד הוחלף בסוף ספטמבר 2026 והחוקה כבר אינה בו, ולכן היא מצוטטת מעותק בארכיון האינטרנט."
+        en: "Likud has published no platform for 2026; these are the first three goals in its party constitution (July 2015 version). Likud's website was replaced at the end of September 2026 and no longer carries the constitution, so it is cited from a copy in the Internet Archive."
+        ar: "لم ينشر الليكود برنامجًا لانتخابات 2026؛ هذه هي الأهداف الثلاثة الأولى في دستور الحزب (صيغة تموز/يوليو 2015). استُبدل موقع الليكود في أواخر أيلول/سبتمبر 2026 ولم يعد يتضمن الدستور، لذا يُقتبس من نسخة في أرشيف الإنترنت."
+        ru: "Ликуд не опубликовал программу к выборам 2026 года; это первые три цели из устава партии (редакция июля 2015 года). Сайт Ликуда был заменён в конце сентября 2026 года и больше не содержит устава, поэтому он цитируется по копии в Интернет-архиве."
+        es: "El Likud no ha publicado un programa para 2026; estos son los tres primeros objetivos de la constitución del partido (versión de julio de 2015). El sitio del Likud se sustituyó a finales de septiembre de 2026 y ya no incluye la constitución, por lo que se cita de una copia en Internet Archive."
+        fr: "Le Likoud n’a publié aucun programme pour 2026 ; voici les trois premiers objectifs de la constitution du parti (version de juillet 2015). Le site du Likoud a été remplacé fin septembre 2026 et ne contient plus la constitution ; elle est donc citée d’après une copie de l’Internet Archive."
       items:
         - he: "ריכוז העם היהודי בארץ ישראל וקיבוץ גלויותיו"
           en: "Gathering the Jewish people in the Land of Israel and the ingathering of its exiles"
@@ -433,7 +433,7 @@ parties:
           es: "La soberanía y la seguridad del Estado, y una paz verdadera con sus vecinos"
           fr: "La souveraineté et la sécurité de l’État, et une paix véritable avec ses voisins"
       sources:
-        - { url: "https://www.likud.org.il/about/%D7%97%D7%95%D7%A7%D7%AA-%D7%94%D7%9C%D7%99%D7%9B%D7%95%D7%93", title: "חוקת הליכוד (מעודכנת ליולי 2015), פרק ב׳: מטרות, סעיף 1 א–ג", publisher: "הליכוד" }
+        - { url: "https://web.archive.org/web/20260908133943/https://www.likud.org.il/images/huka/huka0716.pdf", title: "חוקת הליכוד (כפי תקפה ליום 1 ביולי 2015), פרק ב׳: מטרות, סעיף 1 א–ג — עותק בארכיון האינטרנט", publisher: "הליכוד" }
     sources:
       - { url: "https://www.gov.il/he/pages/halikud-tikvahadasha_iist29", title: "הליכוד עם בנימין נתניהו לראשות הממשלה — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://ch10.co.il/news/1100694/", title: "הרשימות נסגרו: מי יהיו 120 הח\"כים? אלו המתמודדים בבחירות לכנסת ה-26", publisher: "חרדים10" }
@@ -1126,33 +1126,33 @@ parties:
     logo: { src: "/assets/logos/joint-list.png", source: { url: "https://jointlist.org.il/he/", title: "המשותפת — הלוגו באתר הרשימה", publisher: "הרשימה המשותפת" } }
     promises:
       note:
-        he: "הרשימה המשותפת לא פרסמה מצע משותף; אלה שלושת העקרונות הראשונים של חד\"ש, המפלגה שבראשה."
-        en: "The Joint List has published no joint platform; these are the first three principles of Hadash, the party at its head."
-        ar: "لم تنشر القائمة المشتركة برنامجًا مشتركًا؛ هذه هي المبادئ الثلاثة الأولى للجبهة، الحزب الذي يترأس القائمة."
-        ru: "Объединённый список не публиковал общей программы; это первые три принципа Хадаш — партии, которая его возглавляет."
-        es: "La Lista Conjunta no ha publicado un programa común; estos son los tres primeros principios de Hadash, el partido que la encabeza."
-        fr: "La Liste commune n’a publié aucun programme commun ; voici les trois premiers principes du Hadash, le parti qui la conduit."
+        he: "מתוך התוכנית הכלכלית-חברתית, הראשונה משתי התוכניות שתחת \"מצע\" באתר הרשימה."
+        en: "From the list's socio-economic plan, the first of the two plans under \"Platform\" on its site."
+        ar: "من البرنامج الاقتصادي-الاجتماعي، الأول من البرنامجين تحت «البرنامج» في موقع القائمة."
+        ru: "Из социально-экономической программы — первой из двух программ в разделе «Платформа» на сайте списка."
+        es: "Del plan socioeconómico de la lista, el primero de los dos planes del apartado «Programa» de su sitio."
+        fr: "Extrait du plan socio-économique de la liste, le premier des deux plans de la rubrique « Programme » de son site."
       items:
-        - he: "שלום ישראלי-פלסטיני וישראלי-ערבי צודק, כולל ויציב"
-          en: "A just, comprehensive and stable Israeli-Palestinian and Israeli-Arab peace"
-          ar: "سلام إسرائيلي-فلسطيني وإسرائيلي-عربي شامل وعادل وثابت"
-          ru: "Справедливый, всеобъемлющий и прочный израильско-палестинский и израильско-арабский мир"
-          es: "Una paz israelí-palestina e israelí-árabe justa, integral y estable"
-          fr: "Une paix israélo-palestinienne et israélo-arabe juste, globale et stable"
-        - he: "הגנה על ענייני העובדים ועל זכויותיהם"
-          en: "Defend workers' interests and rights"
-          ar: "الدفاع عن قضايا العمال وحقوقهم"
-          ru: "Защита интересов и прав трудящихся"
-          es: "Defender los intereses y los derechos de los trabajadores"
-          fr: "Défendre les intérêts et les droits des travailleurs"
-        - he: "שוויון לאוכלוסייה הערבית בישראל"
-          en: "Equality for Israel's Arab population"
-          ar: "المساواة للجماهير العربية في إسرائيل"
-          ru: "Равенство для арабского населения Израиля"
-          es: "Igualdad para la población árabe de Israel"
-          fr: "L’égalité pour la population arabe d’Israël"
+        - he: "משקיעים בחיים - לא במלחמות"
+          en: "Investing in life – not in wars"
+          ar: "نستثمر في الحياة، لا في الحرب"
+          ru: "Вкладывать в жизнь, а не в войны"
+          es: "Invertir en la vida, no en las guerras"
+          fr: "Investir dans la vie, pas dans les guerres"
+        - he: "דיור הוא זכות"
+          en: "Housing is a right"
+          ar: "السكن حق"
+          ru: "Жильё — это право"
+          es: "La vivienda es un derecho"
+          fr: "Le logement est un droit"
+        - he: "חינוך חינם"
+          en: "Free education"
+          ar: "تعليم مجاني"
+          ru: "Бесплатное образование"
+          es: "Educación gratuita"
+          fr: "L’éducation gratuite"
       sources:
-        - { url: "https://hadash.org.il/", title: "העקרונות שלנו · مبادئنا (עמוד הבית, עקרונות 1–3)", publisher: "חד\"ש" }
+        - { url: "https://jointlist.org.il/he/economic-plan/", title: "התוכנית הכלכלית-חברתית — המשותפת (סעיפים 1–3)", publisher: "הרשימה המשותפת" }
     sources:
       - { url: "https://www.jpost.com/israel-election-2026/article-910410", title: "Supreme Court allows Cassif, Ra'am, Joint List to run (2 Oct 2026)", publisher: "The Jerusalem Post" }
       - { url: "https://www.walla.co.il/news/israel/383956056", title: "העליון קבע: רע\"ם, הרשימה המשותפת וכסיף יוכלו להשתתף בבחירות (2.10.2026)", publisher: "וואלה" }
@@ -1199,6 +1199,35 @@ parties:
       - { he: "רונן בודנרו" }
     # The list's own site and its first headlined commitments, read there 24–25 Sep 2026.
     website: "https://amchaisrael.co.il/"
+    promises:
+      note:
+        he: "מתוך \"מסמך אבני היסוד\" של עמך ישראל, המצע שלה: שלושת הראשונים מבין \"עשרה צעדים ראשונים\"."
+        en: "From Amkha Yisrael's \"foundations document\", its platform: the first three of its \"ten first steps\"."
+        ar: "من «وثيقة الأسس» لعمخا يسرائيل، وهي برنامجها: الثلاثة الأولى من «عشر خطوات أولى»."
+        ru: "Из «Документа об основах» «Амха Исраэль», её программы: первые три из «десяти первых шагов»."
+        es: "Del «documento de fundamentos» de Amkha Yisrael, su programa: los tres primeros de sus «diez primeros pasos»."
+        fr: "Extrait du « document des fondements » d’Amkha Israël, son programme : les trois premières de ses « dix premières mesures »."
+      items:
+        - he: "מעבר בתפיסת הביטחון מהכלה להכרעה, כולל הובלת הגירה מרצון של תושבי רצועת עזה"
+          en: "Shift the security doctrine from containment to decisive victory, including leading the voluntary emigration of Gaza Strip residents"
+          ar: "الانتقال في العقيدة الأمنية من الاحتواء إلى الحسم، بما في ذلك قيادة الهجرة الطوعية لسكان قطاع غزة"
+          ru: "Переход в концепции безопасности от сдерживания к решительной победе, включая руководство добровольной эмиграцией жителей сектора Газа"
+          es: "Pasar en la doctrina de seguridad de la contención a la victoria decisiva, incluida la dirección de la emigración voluntaria de los residentes de la Franja de Gaza"
+          fr: "Passer, en matière de sécurité, de l’endiguement à la victoire décisive, y compris en conduisant l’émigration volontaire des habitants de la bande de Gaza"
+        - he: "חוק יסוד: השירות – כל אזרח ישרת את המדינה, עם מכסות ללומדי תורה שייקבעו בפרמטרים אובייקטיביים"
+          en: "A Basic Law: Service under which every citizen serves the state, with quotas for Torah learners set by objective parameters"
+          ar: "قانون أساس: الخدمة، يخدم بموجبه كل مواطن الدولة، مع حصص لطلاب التوراة تُحدَّد وفق معايير موضوعية"
+          ru: "Основной закон: служба — каждый гражданин служит государству, с квотами для изучающих Тору по объективным параметрам"
+          es: "Una Ley Fundamental: El Servicio, según la cual todo ciudadano sirve al Estado, con cupos para estudiantes de Torá fijados con parámetros objetivos"
+          fr: "Une Loi fondamentale : le Service, selon laquelle tout citoyen sert l’État, avec des quotas d’étudiants de la Torah fixés selon des critères objectifs"
+        - he: "מערך דיפלומטיה והסברה בינלאומי ממלכתי ומקצועי, שיוביל את הסיפור הישראלי בעולם ויתמודד עם האנטישמיות"
+          en: "A state-run, professional international diplomacy and public-advocacy system to tell Israel's story abroad and confront antisemitism"
+          ar: "منظومة دبلوماسية ودعاية دولية رسمية ومهنية تقود الرواية الإسرائيلية في العالم وتواجه معاداة السامية"
+          ru: "Государственная профессиональная система международной дипломатии и разъяснительной работы, которая будет доносить позицию Израиля в мире и противостоять антисемитизму"
+          es: "Un sistema estatal y profesional de diplomacia y divulgación internacional que cuente la historia de Israel en el mundo y haga frente al antisemitismo"
+          fr: "Un dispositif public et professionnel de diplomatie et d’information internationale pour porter le récit israélien dans le monde et faire face à l’antisémitisme"
+      sources:
+        - { url: "https://amchaisrael.co.il/foundations", title: "מסמך אבני היסוד של התנועה — עשרה צעדים ראשונים (01–03)", publisher: "עמך ישראל" }
     # The list's own mark as hosted on Wikimedia Commons (a public-domain text logo),
     # compared by eye with what the list itself shows now (25 Sep 2026).
     logo: { src: "https://upload.wikimedia.org/wikipedia/commons/5/59/Amcha_Yisrael.svg", source: { url: "https://commons.wikimedia.org/wiki/File:Amcha_Yisrael.svg", title: "File:Amcha_Yisrael.svg", publisher: "Wikimedia Commons" } }

@@ -160,11 +160,14 @@ socio-economic indices by municipality (data.gov.il) for context.
   ones from the CEC index (updated 18 Sep 2026), labelled as such.
 - **List promises — re-check before launch** (read 24–25 Sep 2026 on each
   list's own site; `website`/`promises` in `content/election.yaml`):
-  Amkha's platform (amchaisrael.co.il/platform) is live but unlinked and
-  `noindex` — held until the party links it; Ra'am and Shas have no working
-  site; the Joint List's jointlist.org.il/he/platform/ redirects home (the
-  card uses Hadash's principles, labelled); RZ's "תוכנית המשפט" menu entry
-  is still unlinked (the /mishpat/ page is in its sitemap). Party logos: 14 —
+  re-checked 3 Oct 2026 — Amkha's platform is now linked and indexable
+  (amchaisrael.co.il/foundations; its first three "first steps" are on the
+  card); the Joint List published its own plans under "מצע" (the card now
+  uses the socio-economic plan instead of Hadash's principles); Likud's site
+  was replaced by a build its own robots.txt calls staging, so its
+  constitution is cited from the Internet Archive; Ra'am and Shas have no
+  working site and UTJ none for 2026; RZ's "תוכנית המשפט" menu entry is
+  still unlinked (the /mishpat/ page is in its sitemap). Party logos: 14 —
   10 from Wikimedia Commons, 4 copied from the parties' own sites into
   public/assets/logos (user's OK, 26 Sep 2026; the Haredi Public's PNG was
   extracted from its SVG wrapper); UTJ held — only its 2019–22 design was

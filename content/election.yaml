@@ -714,27 +714,34 @@ parties:
     # compared by eye with what the list itself shows now (25 Sep 2026).
     logo: { src: "https://upload.wikimedia.org/wikipedia/commons/8/8b/Blue_and_White_logo_2021.svg", source: { url: "https://commons.wikimedia.org/wiki/File:Blue_and_White_logo_2021.svg", title: "File:Blue_and_White_logo_2021.svg", publisher: "Wikimedia Commons" } }
     promises:
+      note:
+        he: "מתוך הגרסה העדכנית של מסמך \"עקרונות כחול לבן\" המקושר באתר המפלגה."
+        en: "From the latest version of the \"Blue and White principles\" document linked on the party's site."
+        ar: "من أحدث نسخة من وثيقة «مبادئ أزرق أبيض» المنشورة على موقع الحزب."
+        ru: "Из последней версии документа «Принципы „Кахоль-лаван“», размещённого на сайте партии."
+        es: "De la versión más reciente del documento «Principios de Azul y Blanco» enlazado en el sitio del partido."
+        fr: "Extrait de la dernière version du document « Principes de Bleu et Blanc » publié sur le site du parti."
       items:
-        - he: "ישראל מדינה יהודית ודמוקרטית, מדינת הלאום של העם היהודי"
-          en: "Israel as a Jewish and democratic state, the nation-state of the Jewish people"
-          ar: "إسرائيل دولة يهودية وديمقراطية، الدولة القومية للشعب اليهودي"
-          ru: "Израиль как еврейское и демократическое государство, национальное государство еврейского народа"
-          es: "Israel como Estado judío y democrático, el Estado-nación del pueblo judío"
-          fr: "Israël, État juif et démocratique, État-nation du peuple juif"
-        - he: "ביטחון האזרחים בכל מקום ובכל עת, לצד חיזוק הסכמי השלום"
-          en: "Citizens' security everywhere and at all times, alongside stronger peace agreements"
-          ar: "أمن المواطنين في كل مكان وفي كل وقت، إلى جانب تعزيز اتفاقيات السلام"
-          ru: "Безопасность граждан везде и всегда — вместе с укреплением мирных соглашений"
-          es: "La seguridad de los ciudadanos en todo lugar y momento, junto con el refuerzo de los acuerdos de paz"
-          fr: "La sécurité des citoyens partout et à tout moment, tout en renforçant les accords de paix"
-        - he: "הגנה על הדמוקרטיה, עצמאות מערכת המשפט והפרדת הרשויות; ביטחון הפנים כיעד מרכזי"
-          en: "Protect democracy, judicial independence and the separation of powers; internal security as a central goal"
-          ar: "حماية الديمقراطية واستقلال الجهاز القضائي وفصل السلطات؛ والأمن الداخلي هدفًا مركزيًا"
-          ru: "Защита демократии, независимости судебной системы и разделения властей; внутренняя безопасность как главная цель"
-          es: "Proteger la democracia, la independencia judicial y la separación de poderes; la seguridad interior como objetivo central"
-          fr: "Protéger la démocratie, l’indépendance de la justice et la séparation des pouvoirs ; la sécurité intérieure comme objectif central"
+        - he: "כחול לבן תהיה חלק רק מממשלה ציונית וחוצת גושים"
+          en: "Blue and White will only be part of a Zionist government that crosses blocs"
+          ar: "لن يكون أزرق أبيض جزءًا إلا من حكومة صهيونية عابرة للكتل"
+          ru: "«Кахоль-лаван» войдёт только в сионистское правительство, объединяющее блоки"
+          es: "Azul y Blanco solo formará parte de un gobierno sionista que trascienda los bloques"
+          fr: "Bleu et Blanc ne fera partie que d’un gouvernement sioniste transcendant les blocs"
+        - he: "לא נאפשר הקמת מדינה פלסטינית שתאיים על ישראל, ונחזק את ההתיישבות החוקית"
+          en: "We will not allow a Palestinian state that would threaten Israel to be established, and we will strengthen legal settlement"
+          ar: "لن نسمح بإقامة دولة فلسطينية تهدد إسرائيل، وسنعزّز الاستيطان القانوني"
+          ru: "Мы не допустим создания палестинского государства, которое угрожало бы Израилю, и укрепим законные поселения"
+          es: "No permitiremos la creación de un Estado palestino que amenace a Israel y reforzaremos los asentamientos legales"
+          fr: "Nous ne permettrons pas la création d’un État palestinien qui menacerait Israël, et nous renforcerons les implantations légales"
+        - he: "נחזיר את ביטחון הפנים: נאבק באלימות הגואה, נעשה סדר ברחובות ונעצור את ההשתלטות של ארגוני הפשיעה על ערי ישראל"
+          en: "We will restore internal security: fight rising violence, bring order to the streets and stop crime organizations from taking over Israel's cities"
+          ar: "سنعيد الأمن الداخلي: سنكافح العنف المتصاعد، ونعيد النظام إلى الشوارع، ونوقف سيطرة منظمات الإجرام على مدن إسرائيل"
+          ru: "Мы вернём внутреннюю безопасность: будем бороться с растущим насилием, наведём порядок на улицах и остановим захват городов Израиля преступными организациями"
+          es: "Devolveremos la seguridad interior: combatiremos la creciente violencia, pondremos orden en las calles y frenaremos el control de las ciudades de Israel por las organizaciones criminales"
+          fr: "Nous rétablirons la sécurité intérieure : lutter contre la montée de la violence, remettre de l’ordre dans les rues et mettre fin à la mainmise des organisations criminelles sur les villes d’Israël"
       sources:
-        - { url: "https://kachollavan.org.il/wp-content/uploads/2025/07/20527_3_A5_Hoveret_Ekronot_ONE_PAGE_A.pdf", title: "עקרונות כחול לבן (עקרונות 1–3)", publisher: "כחול לבן" }
+        - { url: "https://kachollavan.org.il/wp-content/uploads/2026/10/Ekronot-Memshalti_Atar_03.pdf", title: "עקרונות כחול לבן — עקרון להקמת הממשלה ועקרונות מדיניים", publisher: "כחול לבן" }
     sources:
       - { url: "https://www.gov.il/he/pages/kachol-lavan_list30", title: "כחול לבן — רשימת המועמדים כפי שהוגשה", publisher: "ועדת הבחירות המרכזית לכנסת" }
       - { url: "https://www.mako.co.il/news-israel-elections/2026/liveblog-5bc9483b18b70a1026.htm", title: "כל העדכונים מסגירת הרשימות לכנסת ה-26", publisher: "N12" }

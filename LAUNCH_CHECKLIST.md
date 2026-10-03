@@ -84,7 +84,7 @@ repository's history (rewritten on 28 Sep, so older hashes elsewhere no longer r
 | ✅ | Error pages: bilingual 404, global error, loading | Claude | 8a6e18b, 8c2227d |
 | ✅ | Images resized (725 KB → 116 KB); 250 px Commons thumbnails for avatars | Claude | ef5e98a, da47df3 |
 | ✅ | Lighthouse, mobile | Claude | 53e0835, 6f41985 (30 Sep): accessibility, best practices and SEO 100 on 8 page types; performance 90–97; pages 9–11 KB lighter (client messages trimmed), member photos sized per screen, no Wikimedia cookie. Left: splitting `/elections` (8.4k elements) and per-route message bundles |
-| ✅ | Link check: internal links and cited sources | Claude | cbe55f9, 4150be9 (moved or dead sources replaced with verified ones or archived copies) |
+| ✅ | Link check: internal links and cited sources | Claude | cbe55f9, 4150be9 (moved or dead sources replaced with verified ones or archived copies); 3 Oct 2026: the 413 sources added since 28 Sep re-checked — none dead or moved; the 19 pages behind bot walls opened and matched in a browser; 3 PDFs behind bot walls have Wayback copies |
 | ✅ | Form limits | Claude | Every `?q=` capped at 200 characters on the server |
 | ✅ | `npm audit fix` | Claude | f4608cb. The code that runs the site has no known vulnerabilities; 4 moderate advisories remain in development-only tools |
 

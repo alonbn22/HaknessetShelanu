@@ -27,6 +27,7 @@ repository's history (rewritten on 28 Sep, so older hashes elsewhere no longer r
 | ✅ | Audit leftovers | Claude | 2 Oct: every Knesset term and the five controversial laws cite primary sources (three law summaries corrected against the laws' text); the last two Wikipedia-only member claims fixed or cut, and a test now allows none; member backgrounds from the Knesset's own member pages; the 20th-Knesset event on the Netanyahu cases re-sourced. Optional still: a per-faction source for each coalition status |
 | ⬜ | Legal-status label on Netanyahu's record: `ongoing` or `indicted` | owner, lawyer | Both are accurate; the agent would not change a person's legal status without an explicit decision |
 | ✅ | Translation of new daily text: decided | owner | No automatic translation (27 Sep): new text shows marked as Hebrew until a reviewed batch. LibreTranslate tested and rejected on quality. Azure's free tier is the fallback option |
+| ✅ | Google Translate removed; French paused | owner, Claude | 3 Oct 2026: the unofficial Google script is gone (d8573a1; a test keeps it out of `src/` and `scripts/`); translations come from checked batches (`npm run translations:export` / `translations:import`). LibreTranslate re-tested and failed again. French paused at the owner's request (3809a21) until its ~22,000 data strings are translated; Spanish stays (complete). To restore French: add "fr" to `routing.locales` and the switcher, fill the gaps, run the parity tests |
 
 ## Election law
 
